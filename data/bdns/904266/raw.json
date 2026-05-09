@@ -1,0 +1,99 @@
+{
+  "id": 1105827,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA COLOMA DE GRAMENET",
+    "nivel3": "AYUNTAMIENTO DE SANTA COLOMA DE GRAMENET"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "904266",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "AYUDAS ECONOMICAS INDIVIDUALES PARA EL SERVICIO DE COMEDOR 0-4 AÑOS Y ESCOLARIZACIÓN INFANTIL CURSO 2026-2027",
+  "descripcionLeng": "AJUTS ECONÒMICS INDIVIDUALS PER EL SERVEI DE MENJADOR 0-4 ANYS I ESCORALITZACIÓ INFANTIL CURS 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "AYUDAS ECONOMICAS INDIVIDUALES PARA EL SERVICIO DE COMEDIR 0-4 AÑOS Y ESCOLARIZACIÓN INFANTIL CURSO 2026-2027",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-20977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-29",
+  "textInicio": "el ddía siguiente a la publicación en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1450755,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "3_1_EXTRACTE_convo_ajuts_0-4_Set-Des_26-27_CAT_BDNS.pdf",
+      "long": 226963,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1450757,
+      "descripcion": "Convocatòria català",
+      "nombreFic": "2_1_Convo_ajuts_0-4_anys_Set-Des_26-27_CAT_BDNS.pdf",
+      "long": 486838,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1450758,
+      "descripcion": "Reglament",
+      "nombreFic": "REG._gest._prest._ec._caracter_social_21_(v15.07.21)_BDNS.pdf",
+      "long": 1204371,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1450754,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "3_2_EXTRACTO_convo_ayudas_0-4_Sep-Dic_26-27_CAST_BDNS.pdf",
+      "long": 136514,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1450756,
+      "descripcion": "Convocatòria castellà",
+      "nombreFic": "2_2_Convo_ayudas_0-4_años_Sep-Dic_26_27_CAST_BDNS.pdf",
+      "long": 488274,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

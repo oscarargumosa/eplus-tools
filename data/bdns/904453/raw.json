@@ -1,0 +1,67 @@
+{
+  "id": 1106014,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "SECRETARÍA GENERAL DE CULTURA"
+  },
+  "sedeElectronica": "https://www.juntaex.es/w/0637922",
+  "codigoBDNS": "904453",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 67500,
+  "mrr": false,
+  "descripcion": "Ayudas 2026 destinadas a la Edición de libros de la CA de Extremadura, según Resolución de 24 de abril de 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Decreto 173/2016, de 25 de octubre, de bases reguladoras de concesión de ayudas destinadas a la edición de libros",
+  "urlBasesReguladoras": "http://doe.juntaex.es/pdfs/doe/2016/2090o/16040201.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA",
+  "textFin": "15 DÍAS HÁBILES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451228,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución de la Secretaría General por la que se aprueba la convocatoria de las Ayudas destinadas a la Edición de libros de la comunidad Autónoma de Extremadura en 2026.PDF",
+      "long": 979123,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

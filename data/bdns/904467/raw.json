@@ -1,0 +1,80 @@
+{
+  "id": 1106028,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GÜÍMAR",
+    "nivel3": "AYUNTAMIENTO DE GÜÍMAR"
+  },
+  "sedeElectronica": "https://guimar.sedelectronica.es/info.0",
+  "codigoBDNS": "904467",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "BASES DE CONVOCATORIA AYUDAS PARA LA ADQUISICIÓN DE LIBROS Y MATERIAL ESCOLAR CURSO ESCOLAR 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DE CONVOCATORIA AYUDAS PARA LA ADQUISICIÓN DE LIBROS Y MATERIAL ESCOLAR CURSO ESCOLAR 2026-2027",
+  "urlBasesReguladoras": "https://guimar.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación en el BOP",
+  "textFin": "VEINTE DÍAS NATURALES A CONTAR DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451246,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO CONVOCATORIA AYUDA DE LIBROS Y MATERIAL ESCOLAR. EJERCICIO 2026-2027 (BDNS).pdf",
+      "long": 258705,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451253,
+      "descripcion": "DECRETO DE APROBACIÓN BASES DE CONVOCATORIA",
+      "nombreFic": "DECRETO 2026-1936 [Decreto Aprobación de Bases Reguladoras y Convocatoria de Ayudas Libros y Material Escolar SSEG 3932_2026 (FIRMAS)].pdf",
+      "long": 500441,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451252,
+      "descripcion": "BASES Y ANEXOS CONVOCATORIA AYUDAS",
+      "nombreFic": "BASES DE CONVOCATORIA AYUDAS PARA LA ADQUISICIÓN DE LIBROS Y MATERIAL ESCOLAR CURSO ESCOLAR 2026-2027 (FIRMAS).pdf",
+      "long": 180277,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "897717",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / DIRECCIÓN GENERAL DE EMPLEO Y FORMACIÓN",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "DECRETO 202/2024, de 30 de diciembre, del Consell, por el que se aprueban las bases reguladoras de las ayudas dirigidas a complementar las prestaciones del Mecanismo RED de flexibilidad y estabilización del empleo para el sector de la automoción de la Com",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": "2026-01-01",
+  "deadline": "2026-06-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 22235715.32,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": "https:sede.gva.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897717",
+  "documents": [
+    {
+      "label": "Decreto 119-2025",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/datos/2024/12/31/pdf/2024_14136_es.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:41.096Z"
+}

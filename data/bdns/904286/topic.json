@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "904286",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DE HENARES / E.P.E. ALCALA DESARROLLO",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "Certificado sesión ordinaria del Consejo de Administración del EPE Alcalá Desarrollo de fecha 04/05/2026, por el que se aprueban las bases de la convocatoria de las ayudas de acción social 2025 ,para los trabajadores del EPE Alcalá Desarrollo.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-05-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "53",
+      "descripcion": "Actividades postales y de mensajería"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904286",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "alcaladesarrollo@ayto-alcaladehenares.es",
+  "text_inicio": "El día siguiente de la publicación del extracto de las bases en el BOCM",
+  "text_fin": "30 días naturales desde la publicación en el BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.283Z"
+}

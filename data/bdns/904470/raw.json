@@ -1,0 +1,216 @@
+{
+  "id": 1106031,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE ALCOY",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/alcoy",
+  "codigoBDNS": "904470",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Ayudas económicas destinadas al fomento del empleo. Ayudas a la Contratación. Anualidad 2026. Talento 45+",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Convocatoria de Ayudas económicas destinadas al fomento del empleo\nAyudas a la contratación. Anualidad 2026. Programa Talento 45+",
+  "urlBasesReguladoras": "https://www.camaraalcoy.net/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "09:00, Transcurridos 5 días hábiles desde el dia siguiente a la publicación en el BOP",
+  "textFin": "a las 12:00h",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451206,
+      "descripcion": "2026_45 _Anexo_VI_Declaración_Responsable_Minimis_Just",
+      "nombreFic": "2026_45+_Anexo_VI_Declaración_Responsable_Minimis_Just.pdf",
+      "long": 228442,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451202,
+      "descripcion": "2026_45 _Anexo_V_Certificación_Justificación",
+      "nombreFic": "2026_45+_Anexo_V_Certificación_Justificación.docx",
+      "long": 136407,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451198,
+      "descripcion": "2026_45 _Anexo_IV_Declaracion_Responsable_Trabajador",
+      "nombreFic": "2026_45+_Anexo_IV_Declaracion_Responsable_Trabajador.docx",
+      "long": 108425,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451207,
+      "descripcion": "2026_45 _Anexo_VII_Declaraciones_CB_SC",
+      "nombreFic": "2026_45+_Anexo_VII_Declaraciones_CB_SC.docx",
+      "long": 126582,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451195,
+      "descripcion": "2026_45 _Anexo_II_Declaracion_Responsable_Minimis",
+      "nombreFic": "2026_45+_Anexo_II_Declaracion_Responsable_Minimis.docx",
+      "long": 115037,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451190,
+      "descripcion": "2026_45 _Anexo_I_Solicitud_Ayuda",
+      "nombreFic": "2026_45+_Anexo_I_Solicitud_Ayuda_SOLO_LECTURA.docx",
+      "long": 144735,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451178,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Talento45+_Convocatoria_Ayudas (1) (1).pdf",
+      "long": 651703,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451267,
+      "descripcion": "2026_45 _Anexo_XII_Declaración_Fijos_Discontinuos",
+      "nombreFic": "2026_45+_Anexo_XII_Declaración_Fijos_Discontinuos.docx",
+      "long": 115299,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451196,
+      "descripcion": "2026_45 _Anexo_III_Información_Persona_Contratada",
+      "nombreFic": "2026_45+_Anexo_III_Información_Persona_Contratada.docx",
+      "long": 109477,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

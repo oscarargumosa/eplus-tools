@@ -1,0 +1,95 @@
+{
+  "id": 1106018,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/cordoba",
+  "codigoBDNS": "904457",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 53500,
+  "mrr": false,
+  "descripcion": "Convocatoria Xpande Digital 2026 - Cámara de Córdoba",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Convocatoria Programa Xpande Digital 2026",
+  "urlBasesReguladoras": "https://camaracordoba.com/programa-xpande-digital-2026-apertura-de-convocatoria/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-05",
+  "textInicio": "A las 09:00h desde el quinto día hábil siguiente a la publicación del extracto en el BOP de Córdoba",
+  "textFin": "A las 14:00h del 5 de junio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451158,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Xpande Digital 2026_signed.pdf",
+      "long": 830535,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451183,
+      "descripcion": "Anexo III. Declaración Responsable Empresa Solicitante",
+      "nombreFic": "Anexo III Declaración responsable empresa Xpande Digital.pdf",
+      "long": 336576,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451164,
+      "descripcion": "Anexo II. Tipología de Gastos Elegibles y Justificación de la Fase de Ayudas",
+      "nombreFic": "Anexo II. Tipología gastos elegibles y justificación.pdf",
+      "long": 296712,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451159,
+      "descripcion": "Anexo I. Descripción del Programa Xpande Digital",
+      "nombreFic": "Anexo I  Descripción del programa Xpande Digital.pdf",
+      "long": 452515,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

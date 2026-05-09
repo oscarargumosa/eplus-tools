@@ -1,0 +1,64 @@
+{
+  "id": 1105981,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALICANTE",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALACANT/ALICANTE"
+  },
+  "sedeElectronica": "https://diputacionalicante.sedelectronica.es",
+  "codigoBDNS": "904420",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 605000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 6 mayo 2026 de Junta de Gobierno Diputación de Alicante por el que convoca subvenciones consistentes en servicios de redacción de documentos técnicos y control relativo al abastecimiento y saneamiento municipal de agua, año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Ordenanza General para la Concesión de Subvenciones de la Excma. Diputación Provincial de Alicante, aprobada por el Pleno en sesión de 19/12/2025 (BOPA 11 de 19/01/2026).",
+  "urlBasesReguladoras": "https://sede.diputacionalicante.es/wp-content/uploads/2026/01/Ordenanza-General-de-concesion-de-subvenciones-Diputacion-de-Alicante.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-15",
+  "textInicio": "Día siguiente al de la publicación del extracto en BOP de Alicante",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451140,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260506 Acuerdo Junta Gobierno Aprob Convocatoria DSCH 2026.pdf",
+      "long": 547671,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

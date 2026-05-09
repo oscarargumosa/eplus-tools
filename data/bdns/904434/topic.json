@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "904434",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE TOLEDO / DIPUTACIÓN PROVINCIAL DE TOLEDO",
+  "nuts_codes": [
+    "ES425"
+  ],
+  "nuts_primary": "ES425",
+  "title": "Convocatoria subvenciones para el desarrollo Programa de Respiro Familiar para el cuidado de personas con necesidad de apoyo para las actividades básicas de la vida diaria en poblaciones entre 5.000 y 20.000 habitantes de la provincia de Toledo 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.1",
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904434",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputoledo.es/global/53/ver_pdf/36599",
+  "text_inicio": "A contar desde el día siguiente a la publicación del extracto de la Convocatoria en el BOP de Toledo",
+  "text_fin": "El mismo día de la publicación del extracto en el mes siguiente",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.309Z"
+}

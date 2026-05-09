@@ -1,0 +1,64 @@
+{
+  "id": 1105923,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SORIA",
+    "nivel3": "AYUNTAMIENTO DE SORIA"
+  },
+  "sedeElectronica": "https://soria.sedelectronica.es/info.0",
+  "codigoBDNS": "904362",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 144000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA REGULAR LA CONCESION DE SUBVENCIONES POR EL AYUNTAMIENTO DE SORIA DESTINADAS A LA AYUDA Y COOPERACION A REGIONES O PAISES EN VIAS DE DESARROLLO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES417 - Soria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS Y CONVOCATORIA PARA REGULAR LA CONCESION DE SUBVENCIONES POR EL AYUNTAMIENTO DE SORIA DESTINADAS A LA AYUDA Y COOPERACION A REGIONES O PAISES EN VIAS DE DESARROLLO 2026.",
+  "urlBasesReguladoras": "https://soria.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al dçia siguiente publicación BOP",
+  "textFin": "un mes desde la publicación BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1450996,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convocatoria ayudas en vias de desarrollo 2026.pdf",
+      "long": 834573,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

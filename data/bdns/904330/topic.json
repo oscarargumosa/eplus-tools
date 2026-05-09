@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "904330",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAUZAL, EL / AYUNTAMIENTO DE SAUZAL, EL",
+  "nuts_codes": [
+    "ES709"
+  ],
+  "nuts_primary": "ES709",
+  "title": "Convocatoria pública del Concurso Ruta de la Tapa de El Sauzal \"El Senderista Gastronómico\" 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-05-08",
+  "open_date": null,
+  "deadline": "2026-05-25",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 70,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": "(https://elsauzal.sedelectronica.es)",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904330",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.elsauzal.es/wp-content/uploads/2024/04/Anuncio-B.O.P.-47-2024-17-04-2024-de-Aprobacion-Definitiva-de-la-Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "Día siguiente a la publicación de la Convocatoria en el Boletín Oficial de la Provincia",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.294Z"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "904229",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SOPELA / AYUNTAMIENTO DE SOPELA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Convocatoria 2026 subvenciones municipales destinadas a financiar actividades deportivas en el municipio de Sopela.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-07",
+  "open_date": "2026-05-19",
+  "deadline": "2026-06-18",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904229",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bizkaia.eus/es/bob/resultados?_IYBIWBCC_formDate=1778157870468&p_p_id=IYBIWBCC&_IYBIWBCC_mvcRenderCommandName=%2Fsearch%2Ffiltros&_IYBIWBCC_cve=&_IYBIWBCC_text=&_IYBIWBCC_bobNum=&_IYBIWBCC_bobYear=&_IYBIWBCC_fromDate=01%2F12%2F2025&_IYBIWBCC_d",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.263Z"
+}

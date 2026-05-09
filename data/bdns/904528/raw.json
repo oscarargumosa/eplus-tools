@@ -1,0 +1,55 @@
+{
+  "id": 1106089,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VIGO",
+    "nivel3": "AYUNTAMIENTO DE VIGO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "904528",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 205000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS SUBVENCIONES PARA LA ORGANIZACIÓN DE FERIAS  SECTORIALES CON SEDE EN VIGO QUE FOMENTEN LA CONTRATACIÓN DE PERSONAS EN SITUACIÓN DE DESEMPLEO 2026",
+  "descripcionLeng": "CONVOCATORIA DAS SUBVENCIÓNS PARA ORGANIZACIÓN DE FEIRAS  SECTORIAIS CON SEDE EN VIGO QUE FOMENTEN A CONTRATACIÓN DE PERSOAS EN SITUACIÓN DE DESEMPREGO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Organización de convenciones y ferias de muestras",
+      "codigo": "82.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "SUBVENCIONES PARA LA ORGANIZACIÓN DE FERIAS  SECTORIALES CON SEDE EN VIGO QUE FOMENTEN LA CONTRATACIÓN DE PERSONAS EN SITUACIÓN DE DESEMPLEO 2026",
+  "urlBasesReguladoras": "https://sede.vigo.org/expedientes/usuarios/login.jsp?lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de publicación del Extracto de la convocatoria en el BOPPO.",
+  "textFin": "10 díaz hábiles siguientes al de publicación del Extracto de la convocatoria en el BOPPO.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

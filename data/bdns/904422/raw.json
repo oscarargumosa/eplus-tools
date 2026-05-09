@@ -1,0 +1,64 @@
+{
+  "id": 1105983,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+    "nivel3": "DIRECCIÓN GENERAL DE PLANIFICACIÓN Y GESTIÓN EDUCATIVA"
+  },
+  "sedeElectronica": "https://sede.educacionyfp.gob.es",
+  "codigoBDNS": "904422",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1440605,
+  "mrr": false,
+  "descripcion": "Resolución de 6 de mayo de 2026 de la Secretaria de Estado de Educación por la que se convocan ayudas para la adquisición de libros de texto y material didáctico e informático para alumnos matriculados en centro docentes en el exterior, en las ciudades de",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de la concesión de becas y ayudas del Ministerio de Educación.",
+  "urlBasesReguladoras": "https://www.boe.es/boe/dias/2005/06/15/pdfs/A20638-20640.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 de mayo de 2026 a las 8:00, hora peninsular",
+  "textFin": "30 de julio de 2026 a las 15:00, hora peninsular",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451144,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Libros 2026_27.Firmada.pdf",
+      "long": 216548,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

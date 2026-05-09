@@ -1,0 +1,72 @@
+{
+  "id": 1105838,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "INSTITUT PER AL DESENVOLUPAMENT DE LES COMARQUES DE L'EBRE (IDECE)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "904277",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3700,
+  "mrr": false,
+  "descripcion": "Resolución EMT//2026, de 7 de febrero, por la que se aprueba la convocatoria derivada de las bases reguladoras de los Premios IDECE, para fomentar la proyección de Les Terres de l'Ebre",
+  "descripcionLeng": "Resolució EMT/ /2026, per la qual s'aprova la convocatòria derivada de les bases reguladores dels Premis IDECE, per fomentar la projecció de les Terres de l'Ebre",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "RESOLUCIÓN VEH/1013/2021, de 9 de abril, por la que se aprueban las bases reguladoras de los Premios IDECE, para fomentar la proyección de les Terres de l'Ebre",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/?documentId=898102",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-31",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "31 de julio de 2021",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1450799,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resolucio_sig_Cat_CA.pdf",
+      "long": 376005,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1450798,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "resolucioCastella.pdf",
+      "long": 227510,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,79 @@
+{
+  "source": "bdns",
+  "source_id": "904302",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / CONSEJERÍA DE TRANSICIÓN ECOLÓGICA Y ENERGÍA",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "CONV. 2026 SUBVENCIONES PARA LA TRANSICIÓN VERDE",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-05-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6220923,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "81.1",
+      "descripcion": "Servicios integrales a edificios e instalaciones"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904302",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.gobiernodecanarias.org/boc/2024/157/2532.html",
+  "text_inicio": "Se iniciará el segundo día después de la publicación del extracto en el BOC",
+  "text_fin": "Finalizará a los 20 días hábiles.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.000000",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 38 AYUDAS A LA INVERSIÓN DESTINADAS A MEDIDAS DE EFICIENCIA ENERGÉTICA DISTINTAS DE LOS EDIFICIOS."
+    },
+    {
+      "descripcion": "ART. 38BIS AYUDAS A LA INVERSIÓN DESTINADAS A MEDIDAS DE EFICIENCIA ENERGÉTICA EN EDIFICIOS."
+    },
+    {
+      "descripcion": "ART. 41 AYUDAS A LA INVERSIÓN PARA LA PROMOCIÓN DE LA ENERGÍA PROCEDENTE DE FUENTES RENOVABLES, DEL HIDRÓGENO RENOVABLE Y DE LA COGENERACIÓN DE ALTA EFICIENCIA."
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.287Z"
+}

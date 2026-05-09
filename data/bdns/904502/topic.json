@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "904502",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLVÍ DE ROSANES / AYUNTAMIENTO DE CASTELLVÍ DE ROSANES",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "X2026000636 CONVOCATORIA AYUDAS DESTINADAS A PALIAR GASTOS DE LA VIVIENDA HABITUAL DE PERSONAS CON EL TITULO DE FAMILIA MONOPARENTAL O MONOMARENTAL 2025",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904502",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anunci/3730007/aprovacio-inicial-de-les-bases-especifiques-reguladores-de-les-ajudes-destinades-a-pal-liar-despeses-de-l-habitatge-a-persones-fisiques-amb-el-titol-de-familia-monoparental-o-monomarental-per-a-l-any-2025-ajuntament-de-castellvi-de-rosanes",
+  "text_inicio": "Des de la publicacion del extracto en el BOP",
+  "text_fin": "Hasta el 12 de julio de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-09T04:09:44.321Z"
+}

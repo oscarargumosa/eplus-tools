@@ -1,0 +1,72 @@
+{
+  "id": 1105984,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RAFELBUNYOL",
+    "nivel3": "AYUNTAMIENTO DE RAFELBUNYOL"
+  },
+  "sedeElectronica": "http://www.rafelbunyol.es/es/content/sede-electronica",
+  "codigoBDNS": "904423",
+  "fechaRecepcion": "2026-05-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS AYUDAS EN REGIMEN DE CONCURRENCIA COMPETITIVA PARA EL ACCESO A LAS AYUDAS DEL PROGRAMA “UN FUTUR EN LA MOTXILLA\"",
+  "descripcionLeng": "CONVOCATÒRIA D'AJUDES EN RÈGIM DE CONCURRÈNCIA COMPETITIVA PER A L'ACCÉS D'AJUDES DEL PROGRAMA “UN FUTUR EN LA MOTXILLA”",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA EL ACCESO DE AYUDAS DEL PROGRAMA “Un futur en la motxilla “.",
+  "urlBasesReguladoras": "https://gobiernoabierto.rafelbunyol.es/t/normativa",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al día siguiente de la publicación del extracto en el BOP ",
+  "textFin": "diez días hábiles desde el inicio de la solicitud",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451125,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA VAL.pdf",
+      "long": 205795,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    },
+    {
+      "id": 1451124,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA CAST.pdf",
+      "long": 212932,
+      "datMod": "2026-05-08",
+      "datPublicacion": "2026-05-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
