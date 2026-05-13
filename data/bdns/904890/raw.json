@@ -1,0 +1,72 @@
+{
+  "id": 1106451,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALLGORGUINA",
+    "nivel3": "AYUNTAMIENTO DE VALLGORGUINA"
+  },
+  "sedeElectronica": "https://vallgorguina.eadministracio.cat/info.0",
+  "codigoBDNS": "904890",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5250,
+  "mrr": false,
+  "descripcion": "Convocatoria ayudas casal de verano y monitor de apoyo 2026",
+  "descripcionLeng": "Convocatòria ajuts casal d'estiu i vetllador 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de ayudas para gastos del Casal de verano para niños y adolescentes con discapacidad del\nmunicipio de Vallgorguina",
+  "urlBasesReguladoras": "http://bop.diba.cat/anuncio/1365925/aprovacio-definitivadeles- bases-reguladores-per-a-la-concessio-d-ajuts-per-alesdespeses- de-casal-d-estiu-per-a-infants-i-adolescentsambdiscapacitat- ajuntament-de-vallgorguina",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-19",
+  "fechaFinSolicitud": "2026-06-06",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452495,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260511_Uns altres_Anuncio - Convocatoria de subvenciones para casales de verano y ayuda de monitor_a de apoyo 2026.pdf",
+      "long": 360795,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452497,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260511_Uns altres_Anunci - Convocatòria de subvencions i casals d estiu i vetllador_a de 2026 (1).pdf",
+      "long": 457150,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

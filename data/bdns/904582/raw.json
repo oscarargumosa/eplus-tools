@@ -1,0 +1,83 @@
+{
+  "id": 1106143,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "904582",
+  "fechaRecepcion": "2026-05-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "Orden de 8 de mayo de 2026, de la Consejería de Cultura, Turismo y Deporte, por la que se convocan subvenciones destinadas a Entidades sin Animo de Lucro, para financiar actuaciones turísticas singulares de repercusión regional para la Comunidad de CyL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de agencias de viajes y operadores turísticos",
+      "codigo": "79.1"
+    },
+    {
+      "descripcion": "Campings y aparcamientos para caravanas",
+      "codigo": "55.3"
+    },
+    {
+      "descripcion": "Hoteles y alojamientos similares",
+      "codigo": "55.1"
+    },
+    {
+      "descripcion": "Restaurantes y puestos de comidas",
+      "codigo": "56.1"
+    },
+    {
+      "descripcion": "Servicios de bebidas",
+      "codigo": "56.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Orden CYT/310/2024, de 11 de abril por la que se establecen las bases reguladoras para la concesión de subvenciones destinadas a entidades sin ánimo de lucro para financiar actuaciones turísticas singulares de repercusión regional para la Comunidad de CyL",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2024/04/18/pdf/BOCYL-D-18042024-8.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación en el Bocyl",
+  "textFin": "Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1451590,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden Convocatoria ESAL 2026.pdf",
+      "long": 333441,
+      "datMod": "2026-05-11",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

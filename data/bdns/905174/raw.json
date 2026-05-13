@@ -1,0 +1,68 @@
+{
+  "id": 1106735,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD MIGUEL HERNÁNDEZ DE ELCHE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "905174",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40267,
+  "mrr": false,
+  "descripcion": "PROGRAMA DE MOVILIDAD INTERNACIONAL ERASMUS + MODALIDAD PRÁCTICAS DE CORTA Y LARGA DURACIÓN PARA ESTUDIANTES DE GRADO, MÁSTER Y DOCTORADO DEL CURSO ACADÉMICO CURSO 2026/2027 (Código Subvención 11-131-4-2026-0097-S)",
+  "descripcionLeng": "PROGRAMA DE MOBILITAT INTERNACIONAL ERASMUS + MODALITAT PRÀCTIQUES DE CURTA I LLARGA DURACIÓ PER A ESTUDIANTS DE GRAU, MÀSTER I DOCTORAT DEL CURS ACADÈMIC CURS 2026/2027 (codi de subvenció 11-131-4-2026-0097-S)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Base reguladora de la convocatoria PROGRAMA DE MOVILIDAD INTERNACIONAL ERASMUS + MODALIDAD PRÁCTICAS DE CORTA Y LARGA DURACIÓN PARA ESTUDIANTES DE GRADO, MÁSTER Y DOCTORADO DEL CURSO ACADÉMICO CURSO 2026/2027 (Código Subvención 11-131-4-2026-0097-S)",
+  "urlBasesReguladoras": "https://boumh.umh.es/files/2026/05/RR_01102_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la fecha de publicación del extracto de esta convocatoria en el DOGV",
+  "textFin": "10 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1453383,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RR_01102_2026 BOUMH sf.pdf",
+      "long": 733732,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

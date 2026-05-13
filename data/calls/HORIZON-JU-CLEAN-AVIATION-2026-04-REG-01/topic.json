@@ -29,8 +29,8 @@
     "HORIZON-JU-Clean-Aviation-2026-01"
   ],
   "crossCuttingPriorities": [
-    "DigitalAgenda",
-    "AI"
+    "AI",
+    "DigitalAgenda"
   ],
   "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
   "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43774?topic=HORIZON-JU-CLEAN-AVIATION-2026-04-REG-01",
@@ -401,5 +401,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-05-12T04:02:08.784Z"
+  "fetchedAt": "2026-05-13T04:04:06.499Z"
 }

@@ -1,0 +1,64 @@
+{
+  "id": 1106627,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BENICARLÓ",
+    "nivel3": "AYUNTAMIENTO DE BENICARLÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "905066",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria para la concesión de subvenciones por parte del Ayuntamiento de Benicarló a asociaciones de Benicarló destinadas a la realización de acciones para el fomento de la práctica del Tiro y Arrastre año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Bases para la concesión de subvenciones por parte del ayuntamiento de Benicarló a asociaciones de Benicarló destinadas a la realización de acciones para el fomento de la práctica del Tiro y Arrastre año 2026",
+  "urlBasesReguladoras": "https://www.ajuntamentdebenicarlo.org/r2h/files/32323.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente a la publicación del anuncio de la convocatoria y bases en el BOP",
+  "textFin": "15 días hábiles a partir del día siguiente a la publicación del anuncio de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1453078,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anunci aprovació bases i convocatòria de la subvenció en concurrència Tir i Arrossegament 2026 - SEFYCU 6825397.pdf",
+      "long": 273305,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1106677,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SEGOVIA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE SEGOVIA"
+  },
+  "sedeElectronica": "https://sede.dipsegovia.es",
+  "codigoBDNS": "905116",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8350,
+  "mrr": false,
+  "descripcion": "EXTRACTO DE LA CONVOCATORIA DEL XXXIV TORNEO INTERPUEBLOS 2026. REGULACIÓN, ORGANIZACIÓN Y PREMIOS, APROBADA POR ACUERDO DE LA JUNTA DE GOBIERNO DE LA CORPORACIÓN EN SESIÓN ORDINARIA DE  12 DE MAYO DE 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES416 - Segovia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "EXTRACTO DE LA CONVOCATORIA DEL XXXIV TORNEO INTERPUEBLOS 2026. REGULACIÓN, ORGANIZACIÓN Y PREMIOS, APROBADA POR ACUERDO DE LA JUNTA DE GOBIERNO DE LA CORPORACIÓN EN SESIÓN ORDINARIA DE  12 DE MAYO DE 2026.",
+  "urlBasesReguladoras": "https://www.dipsegovia.es/subvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-01",
+  "textInicio": "Desde el día siguiente a la publicación de extracto en el B.O.P.",
+  "textFin": "1 de junio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1453221,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260512_Otros_Bases de convocatoria_Convocatoria Interpueblos 2026.pdf",
+      "long": 399786,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "904909",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL / DIRECCIÓN PROVINCIAL DEL SEPE DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "Programa de Fomento de Empleo Agrario DP de Córdoba, del ejercicio 2026 para proyectos generadores de empleo estable.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-05-12",
+  "open_date": null,
+  "deadline": "2026-06-19",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6417498.09,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.sepe.gob.es/portalSede/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/904909",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.boe.es/boe/dias/1997/06/24/pdfs/A19351-19361.pdf",
+  "text_inicio": "DÍA SIGUIENTE A LA PUBLICACIÓN EN EL BOE",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-13T04:07:33.814Z"
+}

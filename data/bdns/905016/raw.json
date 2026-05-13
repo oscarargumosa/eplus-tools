@@ -1,0 +1,76 @@
+{
+  "id": 1106577,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "AGUAS DE GALICIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "905016",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2531286.66,
+  "mrr": false,
+  "descripcion": "Resol. por la que se aprueban bases reg. conces. subv. concurrencia no compet. actuac. minim.pdas. agua en aytos. y entidades locales menores CA Galicia, cofinanc. 70% FEDER marco programa Galicia FEDER 2021-2027, conv. 2026 plurianual",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Captación, depuración y distribución de agua",
+      "codigo": "36"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Resol. por la que se aprueban bases reg. conces. subv. concurrencia no compet. actuac. minim.pdas. agua en aytos. y entidades locales menores CA Galicia, cofinanc. 70% FEDER marco programa Galicia FEDER 2021-2027, conv. 2026 plurianual",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a las 9.00h del día 27 de mayo de 2026 ",
+  "textFin": "a las 14.00h del día 29 de junio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452901,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "25. Resolución convocatoria AU301E 2026 VF_gal  ASINADA 04.05.2026_20260512_120051.pdf",
+      "long": 1845138,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452900,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "25. Resolución convocatoria AU301E 2026 VF_es_20260512_115342.pdf",
+      "long": 312151,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

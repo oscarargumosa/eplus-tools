@@ -1,0 +1,115 @@
+{
+  "id": 1106637,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BETXÍ",
+    "nivel3": "AYUNTAMIENTO DE BETXÍ"
+  },
+  "sedeElectronica": "https://betxi.sedelectronica.es/",
+  "codigoBDNS": "905076",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Concesión de subvenciones destinadas a la rehabilitación de fachadas que dan a vial público en inmuebles ubicados en el casco antiguo de Betxí, así como en inmuebles con interés patrimonial del término municipal de Betxí, ejercicio 2026",
+  "descripcionLeng": "Concessió de subvencions destinades a la rehabilitació de façanes que donen a vial públic en immobles ubicats en el casc antic de Betxí, així com en immobles amb interés patrimonial del terme municipal de Betxí, exercici 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    },
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    },
+    {
+      "descripcion": "Actividades de construcción especializada en ingeniería civil",
+      "codigo": "43.5"
+    },
+    {
+      "descripcion": "Actividades de construcción especializada en la construcción de edificios",
+      "codigo": "43.4"
+    },
+    {
+      "descripcion": "Actividades de limpieza",
+      "codigo": "81.2"
+    },
+    {
+      "descripcion": "Actividades inmobiliarias ",
+      "codigo": "68"
+    },
+    {
+      "descripcion": "Construcción de edificios",
+      "codigo": "41"
+    },
+    {
+      "descripcion": "Construcción de otros proyectos de ingeniería civil",
+      "codigo": "42.9"
+    },
+    {
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción",
+      "codigo": "43.2"
+    },
+    {
+      "descripcion": "Otras actividades de construcción especializada",
+      "codigo": "43.9"
+    },
+    {
+      "descripcion": "Servicios técnicos de arquitectura e ingeniería y otras actividades relacionadas con el asesoramiento técnico",
+      "codigo": "71.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de la subvención destinada a la rehabilitación de fachadas recayentes a vial público en inmuebles ubicados en el casco antiguo de Betxí, así como en inmuebles con interés patrimonial del termino municipal de Betxí",
+  "urlBasesReguladoras": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=148224&idioma=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Publicación del extracto de la convocatoria en el Boletín Oficial de la Provincia",
+  "textFin": "Un mes contado a partir del día siguiente al de la publicación del extracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452997,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "extracte convocatoria façanes cat.pdf",
+      "long": 156951,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452995,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "extracte convocatoria façanes esp.pdf",
+      "long": 175224,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

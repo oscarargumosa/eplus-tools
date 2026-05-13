@@ -1,0 +1,80 @@
+{
+  "id": 1106494,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ROCA DEL VALLÈS, LA",
+    "nivel3": "AYUNTAMIENTO DE ROCA DEL VALLÈS, LA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "904933",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "BEQUES SUPORT ESCOLARITAT CURS 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORES PER A LA CONCESSIO DE BEQUES PEL SUPORT A L¿ESCOLARITAT, SUPORT A LES SORTIDES EDUCATIVES I DE CONVIVÈNCIA ESCOLAR, D¿ACTIVITATS DE LLEURE, ACTIVITATS D¿ESTIU I DE TRANSPORT ESCOLAR DE L¿AJUNTAMENT DE LA ROCA DEL VALLES",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3759477/aprovacio-inicial-de-les-bases-reguladores-per-a-la-concessio-de-beques-pel-suport-a-l-escolaritat-suport-a-les",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-10",
+  "fechaFinSolicitud": "2026-05-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452616,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento_convocatoria_en_español_Becas_apoyo_escolarización_curso_2026-2027.pdf",
+      "long": 277248,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452618,
+      "descripcion": "Suport escolaritat curs 2026-2027",
+      "nombreFic": "DECRET_1058-2026_-_SUPORT_ESCOLARITAT_CURS_26-27.pdf",
+      "long": 384744,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452617,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Document_convocatòria_en_català_Beques_suport_escolaritat_curs_2026-2027.pdf",
+      "long": 279576,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

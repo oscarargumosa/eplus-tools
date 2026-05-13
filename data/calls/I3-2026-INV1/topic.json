@@ -1,0 +1,150 @@
+{
+  "identifier": "I3-2026-INV1",
+  "ccm2Id": "51181644",
+  "callIdentifier": "I3-2026-INV1",
+  "callTitle": "Interregional Innovation Investments Strand 1",
+  "title": "I3-2026-INV1 - Interregional Innovation Investments Strand 1",
+  "programme": "I3",
+  "programmeCode": "44416173",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-05-13",
+  "deadline": "2026-11-12",
+  "deadlineModel": "single-stage",
+  "actionType": "I3 Project Grants",
+  "actionCode": "I3-PJG",
+  "mgaCode": "I3-AG",
+  "budget": {
+    "total_eur": 28200000,
+    "by_year": {
+      "2026": 28200000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "I3-2026-INV1",
+    "I3-2026-INV1",
+    "Business coaching and mentoring",
+    "Business development",
+    "Business environment (legal and administrative)",
+    "Business management",
+    "Business models",
+    "Business plan",
+    "Business strategies",
+    "Business support services",
+    "Evaluation of programmes/projects",
+    "Innovation methodologies",
+    "Regional development",
+    "SME support",
+    "Smart Specialisation strategies",
+    "Supply chain management"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact EISMEA-I3-INSTRUMENT-CALLS@ec.europa.eu.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44022?topic=I3-2026-INV1",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/I3-2026-INV1",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/i3/wp-call/2026/call-fiche_i3-2026-inv1_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (I3)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/i3/temp-form/af/af_i3_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table (I3)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/i3/temp-form/af/detailed-budget-table_i3_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "S3 Compliance Declaration (I3)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/i3/temp-form/af/s3-compliance-declaration_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "I3 MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/i3/agr-contr/mga_i3_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "I3 Instrument Work Programme",
+      "url": "https://eismea.ec.europa.eu/programmes/interregional-innovation-investments-i3-instrument_en#policy-background-documents",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "ERDF Regulation 2021/1058",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R1058",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-13T04:04:06.533Z"
+}

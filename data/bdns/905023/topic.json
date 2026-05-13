@@ -1,0 +1,83 @@
+{
+  "source": "bdns",
+  "source_id": "905023",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE IGUALDAD / INSTITUTO DE LAS MUJERES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolucion de la Directora del Instituto de las Mujeres, por la que se convoca la concesion de subvenciones ,destinadas a apoyar al movimiento asociativo y fundacional de ambito estatal 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1850000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://igualdad.sede.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/905023",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo II Memoria Explicativa de la Entidad 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo VI Datos Bancarios 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo IV Declaracion responsable 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo V Declaracion responsable 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo III Memoria Explicativa 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2007/02/23/tas535",
+  "text_inicio": "Dia posterior a la publicacion del extracto de la convocatoria en el BOE",
+  "text_fin": "Quince dias habiles tras el inicio",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-13T04:07:33.883Z"
+}

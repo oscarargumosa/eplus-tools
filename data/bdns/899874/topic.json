@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "899874",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALLADOLID / AYUNTAMIENTO DE VALLADOLID",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "CONVOCATORIA PÚBLICA PARA CONCESIÓN DE BECAS A LAS FAMILIAS PARA LA ADQUISICIÓN DE MATERIAL ESCOLAR PARA ALUMNOS QUE CURSEN ESTUDIOS DE SEGUNDO CICLO DE EDUCACIÓN INFANTIL, EDUCACIÓN PRIMARIA Y EDUCACIÓN SECUNDARIA OBLIGATORIA DURANTE EL CURSO 2026/2027.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": "2026-05-20",
+  "deadline": "2026-06-16",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 65100,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899874",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.valladolid.gob.es/es/tablonoficial/ ayuntamiento-valladolid-tablon-oficial/planestrategico- subvenciones-2026-2028",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-13T04:07:31.607Z"
+}

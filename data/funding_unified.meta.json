@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-05-12T04:05:34.199Z",
-  "total": 3615,
+  "generatedAt": "2026-05-13T04:07:35.515Z",
+  "total": 3767,
   "bySource": {
-    "sedia": 671,
-    "bdns": 2859,
-    "salto": 85
+    "sedia": 673,
+    "bdns": 3007,
+    "salto": 87
   },
   "byCategory": {
-    "call_for_proposals": 3530,
-    "training": 85
+    "call_for_proposals": 3680,
+    "training": 87
   },
   "byLevel": {
-    "eu": 756,
-    "ccaa": 639,
-    "estado": 114,
-    "local": 1849,
-    "otros": 257
+    "eu": 760,
+    "ccaa": 688,
+    "estado": 120,
+    "local": 1932,
+    "otros": 267
   },
   "byStatus": {
-    "open": 3285,
-    "forthcoming": 329,
-    "closed": 1
+    "open": 3437,
+    "forthcoming": 328,
+    "closed": 2
   },
   "byProgramme": {
     "European Solidarity Corps": 1,
@@ -35,9 +35,9 @@
     "EU Anti-Fraud": 8,
     "NDICI / EuropeAid": 40,
     "Horizon Europe": 490,
-    "Concurrencia competitiva - canónica": 2513,
-    "Concesión directa - canónica": 346,
-    "Erasmus+ Youth (SALTO)": 85,
+    "Concurrencia competitiva - canónica": 2656,
+    "Concesión directa - canónica": 351,
+    "Erasmus+ Youth (SALTO)": 87,
     "UCPM": 2,
     "Single Market Programme": 3,
     "ESF+": 2,
@@ -49,9 +49,10 @@
     "EaSI / SOCPL": 2,
     "Connecting Europe Facility": 5,
     "RENEWFM": 1,
-    "LIFE": 31
+    "LIFE": 31,
+    "I3": 2
   },
   "curatedEnrichmentCount": 1,
-  "sumBudgetEur": 289554077541.69995,
-  "summaryEsPendingCount": 756
+  "sumBudgetEur": 289759834569.9199,
+  "summaryEsPendingCount": 760
 }

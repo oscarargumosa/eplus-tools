@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "905142",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT VICENÇ DE MONTALT / AYUNTAMIENTO DE SANT VICENÇ DE MONTALT",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "DECRETO DE 8 DE MAYO DE LAS BASES REGULADORAS DE LA CONVOCATORIA PARA LA CONCESIÓN DE BECAS PARA LAS ACTIVIDADES DE VERANO-2026 DEL AYUNTAMIENTO DE SANT VICENÇ DE MONTALT",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.svmontalt.cat",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/905142",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "DECRET CONVOCATORIA DE BEQUES PER A LES ACTIVITATS D'ESTIU-2026 DE L'AJUNTAMENT DE SANT VICENÇ DE MONTALT",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.svmontalt.cat/ARXIUS/2016/ORDENANCES2017/ordenanA_a_38_subvencions.pdf",
+  "text_inicio": "Primer día hábil a partir de la publicación en el B.O.P.B.",
+  "text_fin": "Diez días hábiles a partir de la publicación en el B.O.P.B.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-13T04:07:33.909Z"
+}

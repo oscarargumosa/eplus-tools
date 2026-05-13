@@ -1,0 +1,83 @@
+{
+  "id": 1106570,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "DIRECCIÓN GENERAL DE EMPLEO Y FORMACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "905009",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 140000,
+  "mrr": false,
+  "descripcion": "Resolución 11/05/26 Director General de LABORA Servicio Valenciano de Empleo y Formación, por la que se convocan las subvenciones públicas destinadas a la integración sociolaboral de personas trabajadoras en situación de exclusión social en empresas de",
+  "descripcionLeng": "Resolució 11/05/26 director general de Labora Servici Valencià d’Ocupació i Formació, per la qual es convoquen les subvencions públiques destinades a la integració sociolaboral de persones treballadores en situació d’exclusió social en empreses d’inserc",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de 11 de marzo de 2026, por la que se establecen las bases reguladoras de las subvenciones destinadas a la integración sociolaboral de personas trabajadoras en situación de exclusión social en empresas de inserción y en empresas ordinarias de t",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2026/03/13/pdf/2026_8191_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-18",
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452855,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria Promotoras y empresa ordinaria 2026_incluye reparo intervención_firmado.pdf",
+      "long": 351147,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452857,
+      "descripcion": "Extracto firmado",
+      "nombreFic": "Extracto de la Convocatoria de promotoras y empresas ordinarias 2026_cs_firmado.pdf",
+      "long": 267990,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452856,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatoria Promotoras y empresa ordinaria 2026_26-002827_trad_reparo intervención_firmado.pdf",
+      "long": 366282,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

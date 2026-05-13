@@ -1,0 +1,112 @@
+{
+  "id": 1106584,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE IGUALDAD",
+    "nivel3": "INSTITUTO DE LAS MUJERES"
+  },
+  "sedeElectronica": "https://igualdad.sede.gob.es/",
+  "codigoBDNS": "905023",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1850000,
+  "mrr": false,
+  "descripcion": "Resolucion de la Directora del Instituto de las Mujeres, por la que se convoca la concesion de subvenciones ,destinadas a apoyar al movimiento asociativo y fundacional de ambito estatal 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Orden de Bases TAS/535/2007 de 23 de febrero (BOE de 10 marzo) por la que se aprueban las Bases Reguladoras para concesion de subvenciones ,ayudas y becas pot  el Instituo de la Mujer",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2007/02/23/tas535",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia posterior a la publicacion del extracto de la convocatoria en el BOE",
+  "textFin": "Quince dias habiles tras el inicio",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1452858,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA 2026 MOV ASOC  y Anexos.pdf.xsig.pdf",
+      "long": 866643,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452869,
+      "descripcion": "Anexo I Solicitud 2026",
+      "nombreFic": "Anexo I- Solicitud 2026 .pdf",
+      "long": 118693,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452873,
+      "descripcion": "Anexo II Memoria Explicativa de la Entidad 2026",
+      "nombreFic": "Anexo_II_ Memotoia Explicativa de la Entidad 2026.pdf",
+      "long": 714301,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452880,
+      "descripcion": "Anexo VI Datos Bancarios 2026",
+      "nombreFic": "Anexo_VI- Datos Bancariios 2026.pdf",
+      "long": 120610,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452875,
+      "descripcion": "Anexo IV Declaracion responsable 2026",
+      "nombreFic": "Anexo_IV-Declaracion responsable 2026.pdf",
+      "long": 107334,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452876,
+      "descripcion": "Anexo V Declaracion responsable 2026",
+      "nombreFic": "Anexo_V-Declaracion Responsable 2026.pdf",
+      "long": 103320,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1452874,
+      "descripcion": "Anexo III Memoria Explicativa 2026",
+      "nombreFic": "Anexo_III- Memoria Explicativa 2026.pdf",
+      "long": 152572,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

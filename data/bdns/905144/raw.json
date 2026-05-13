@@ -1,0 +1,92 @@
+{
+  "id": 1106705,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PAMPLONA/IRUÑA",
+    "nivel3": "AYUNTAMIENTO DE PAMPLONA/IRUÑA"
+  },
+  "sedeElectronica": "https://sedeelectronica.pamplona.es",
+  "codigoBDNS": "905144",
+  "fechaRecepcion": "2026-05-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 105000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA DE SUBVENCIONES EN RÉGIMEN DE EVALUACIÓN INDIVIDUALIZADA, PARA LA REALIZACIÓN DE PROYECTOS DE AYUDA HUMANITARIA Y DE EMERGENCIA, AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES220 - Navarra"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "CONVOCATORIA PÚBLICA DE SUBVENCIONES EN RÉGIMEN DE EVALUACIÓN INDIVIDUALIZADA, PARA LA REALIZACIÓN DE PROYECTOS DE AYUDA HUMANITARIA Y DE EMERGENCIA, AÑO 2026",
+  "urlBasesReguladoras": "https://sedeelectronica.pamplona.es/buscadortramites.aspx?cat=3&subcat=2&pagina=0&enlace=LiConcAyudasSubvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación de la Convocatoria en el BON",
+  "textFin": "30 de septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1453278,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CC_Subvención.pdf",
+      "long": 1013975,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1453282,
+      "descripcion": "ANEXOS EUSKERA",
+      "nombreFic": "ANEXOS EUSKERA.pdf",
+      "long": 1484540,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1453281,
+      "descripcion": "ANEXOS CASTELLANO",
+      "nombreFic": "anexos castellano.pdf",
+      "long": 4427478,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    },
+    {
+      "id": 1453279,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Bases AHE 2026 euskera.pdf",
+      "long": 754123,
+      "datMod": "2026-05-12",
+      "datPublicacion": "2026-05-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
