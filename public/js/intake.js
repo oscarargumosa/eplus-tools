@@ -51,6 +51,7 @@ const Intake = (() => {
   /* ── National Agency → proposal language mapping ──────────────── */
   const NA_LANG = {
     EACEA:'en',
+    EISMEA:'en',
     AT01:'de',
     BE01:'fr', BE02:'nl', BE03:'de', BE04:'fr', BE05:'nl',
     BG01:'bg', HR01:'hr', CY01:'el', CZ01:'cs', DK01:'da',

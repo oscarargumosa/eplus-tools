@@ -15,7 +15,7 @@ async function upsertProgram(data, id) {
   if (id) {
     const allowed = ['program_id','name','action_type','deadline','deadline_time','start_date_min','start_date_max',
       'duration_min_months','duration_max_months','eu_grant_max','cofin_pct','indirect_pct',
-      'min_partners','notes','call_summary','active','form_template_id','intake_template','budget_template'];
+      'min_partners','max_partners','notes','call_summary','active','form_template_id','intake_template','budget_template'];
     const sets = [], params = [];
     for (const k of allowed) {
       if (k in data) { sets.push(`${k}=?`); params.push(data[k] ?? null); }

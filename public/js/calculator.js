@@ -368,10 +368,13 @@ const Calculator = (() => {
   }
   function getPartnerDayRate(pid, profileId) {
     const rates = state.workerRates.filter(w => w.pid === pid);
-    if (profileId) { const r = rates.find(w => w.id === profileId); if (r) return r.rate; }
+    if (profileId) { const r = rates.find(w => String(w.id) === String(profileId)); if (r) return r.rate; }
     if (rates.length > 0) return Math.round(rates.reduce((s,w)=>s+w.rate,0)/rates.length);
     return getWorkerRateDefault();
   }
+  // Stable deterministic workerRate id — survives reloads.
+  // Two categories with same name for same partner would collide; addWorkerRate handles that.
+  function wrId(pid, category) { return pid + '::' + category; }
   function getFinancials(actualTotal) {
     const p = state.project;
     if (!p) return { maxGrant:500000, euGrant:0, cofinPct:80, totalProject:0, ownFunds:0, indirectPct:7 };
@@ -506,7 +509,7 @@ const Calculator = (() => {
         state.partnerRates[p.id] = getPerdiemRef(p.country);
         const staffRates = getStaffRatesForCountry(p.country);
         staffRates.forEach(sr => {
-          state.workerRates.push({ id: ++state.wrCounter, pid: p.id, category: sr.label, rate: sr.rate });
+          state.workerRates.push({ id: wrId(p.id, sr.label), pid: p.id, category: sr.label, rate: sr.rate });
         });
       });
 
@@ -710,12 +713,12 @@ const Calculator = (() => {
         </div>
         <table class="calc-table">
           <tbody>
-            ${rates.map(w => `<tr>
-              <td class="w-5/12"><input type="text" value="${w.category}" class="w-full px-2 py-1 text-sm border border-outline-variant/30 rounded" onchange="Calculator._setWorkerRate(${w.id},'category',this.value)"></td>
-              <td class="text-right"><input type="number" value="${w.rate}" min="0" onchange="Calculator._setWorkerRate(${w.id},'rate',this.value)"><span class="text-[11px] text-on-surface-variant ml-1">\u20AC/day</span></td>
+            ${rates.map(w => { const idJs = String(w.id).replace(/\\/g, '\\\\').replace(/'/g, "\\'"); return `<tr>
+              <td class="w-5/12"><input type="text" value="${w.category}" class="w-full px-2 py-1 text-sm border border-outline-variant/30 rounded" onchange="Calculator._setWorkerRate('${idJs}','category',this.value)"></td>
+              <td class="text-right"><input type="number" value="${w.rate}" min="0" onchange="Calculator._setWorkerRate('${idJs}','rate',this.value)"><span class="text-[11px] text-on-surface-variant ml-1">\u20AC/day</span></td>
               <td class="text-right"><span class="text-sm font-bold text-primary/70">\u20AC${(w.rate * 22).toLocaleString('en')}</span><span class="text-[10px] text-on-surface-variant/50 ml-1">/PM</span></td>
-              <td class="w-8 text-center"><button onclick="Calculator._removeWorkerRate(${w.id})" class="text-error hover:text-error-container text-lg leading-none">&times;</button></td>
-            </tr>`).join('')}
+              <td class="w-8 text-center"><button onclick="Calculator._removeWorkerRate('${idJs}')" class="text-error hover:text-error-container text-lg leading-none">&times;</button></td>
+            </tr>`; }).join('')}
           </tbody>
         </table>
         <div class="px-3 py-2 bg-surface-container">
@@ -2299,19 +2302,33 @@ const Calculator = (() => {
   }
 
   function setWorkerRate(id, field, value) {
-    const w = state.workerRates.find(x => x.id === id);
+    const w = state.workerRates.find(x => String(x.id) === String(id));
     if (!w) return;
-    w[field] = field === 'rate' ? (parseFloat(value)||0) : value;
+    if (field === 'rate') {
+      w.rate = parseFloat(value) || 0;
+    } else if (field === 'category') {
+      // Renaming category: keep the same id (which is pid::oldName) so existing
+      // task profileIds keep matching. The displayed text changes; the link survives.
+      w.category = value;
+    } else {
+      w[field] = value;
+    }
+    scheduleSave();
   }
   function addWorkerRate(pid) {
-    state.workerRates.push({ id: ++state.wrCounter, pid, category:'New category', rate:100 });
+    // Find a non-colliding name (pid + name forms the id)
+    let base = 'New category', name = base, n = 1;
+    while (state.workerRates.some(w => w.pid === pid && w.category === name)) { name = base + ' ' + (++n); }
+    state.workerRates.push({ id: wrId(pid, name), pid, category: name, rate: 100 });
     const el = $('calc-worker-rates');
     if (el) el.innerHTML = buildWorkerRatesHTML();
+    scheduleSave();
   }
   function removeWorkerRate(id) {
-    state.workerRates = state.workerRates.filter(w => w.id !== id);
+    state.workerRates = state.workerRates.filter(w => String(w.id) !== String(id));
     const el = $('calc-worker-rates');
     if (el) el.innerHTML = buildWorkerRatesHTML();
+    scheduleSave();
   }
 
   /* ── Extra destinations ──────────────────────────────────────── */
@@ -2687,7 +2704,7 @@ const Calculator = (() => {
     const s = act.io_staff[pid].staff[si];
     if (!s) return;
     if (field === 'days') s.days = parseFloat(value) || 0;
-    else if (field === 'profileId') s.profileId = value ? parseInt(value) : null;
+    else if (field === 'profileId') s.profileId = value || null;
     else s[field] = value;
     const el = $('calc-act-fields-' + actId);
     if (el) el.innerHTML = buildIOFields(act, wi);
@@ -2817,7 +2834,7 @@ const Calculator = (() => {
       state.partnerRates[p.id] = getPerdiemRef(p.country);
       const staffRates = getStaffRatesForCountry(p.country);
       staffRates.forEach(sr => {
-        state.workerRates.push({ id: ++state.wrCounter, pid: p.id, category: sr.label, rate: sr.rate });
+        state.workerRates.push({ id: wrId(p.id, sr.label), pid: p.id, category: sr.label, rate: sr.rate });
       });
     });
 
@@ -2854,9 +2871,18 @@ const Calculator = (() => {
             // Merge: saved rates + defaults for new partners
             state.partnerRates = { ...state.partnerRates, ...saved.partnerRates };
           }
-          // Worker rates: always use fresh Data E+ categories
-          // Ignore saved workerRates entirely — they may contain stale categories
-          // (Data E+ is the single source of truth for staff categories and zone rates)
+          // Worker rates: keep fresh Data E+ category list, but preserve
+          // user-edited rates and any custom categories the user added.
+          if (saved.workerRates && saved.workerRates.length) {
+            state.workerRates = state.workerRates.map(fresh => {
+              const m = saved.workerRates.find(s => s.pid === fresh.pid && s.category === fresh.category);
+              return m ? { ...fresh, rate: m.rate } : fresh;
+            });
+            saved.workerRates.forEach(s => {
+              const exists = state.workerRates.some(fresh => fresh.pid === s.pid && fresh.category === s.category);
+              if (!exists) state.workerRates.push({ id: wrId(s.pid, s.category), pid: s.pid, category: s.category, rate: s.rate });
+            });
+          }
           if (saved.routes && Object.keys(saved.routes).length) state.routes = { ...state.routes, ...saved.routes };
           if (saved.extraDests && saved.extraDests.length) {
             state.extraDests = saved.extraDests.map((ed, i) => ({ id: '_ed' + (i + 1), ...ed }));
@@ -2870,6 +2896,31 @@ const Calculator = (() => {
               activities: (wp.activities || []).map(a => ({ ...a, id: ++actId }))
             }));
             state.actCounter = actId;
+
+            // Heal orphan profileIds: tasks created before workerRate ids became deterministic
+            // had numeric profileIds that no longer match. Re-bind to the partner's first
+            // category so dropdown and calc agree, instead of dropdown=first / calc=average.
+            const validIds = new Set(state.workerRates.map(w => String(w.id)));
+            let orphanCount = 0;
+            state.wps.forEach(wp => (wp.activities || []).forEach(act => {
+              if (!act.io_staff) return;
+              for (const pid of Object.keys(act.io_staff)) {
+                const slot = act.io_staff[pid];
+                if (!slot || !slot.staff) continue;
+                const first = state.workerRates.find(w => w.pid === pid);
+                slot.staff.forEach(st => {
+                  if (st.profileId == null) return;
+                  if (!validIds.has(String(st.profileId))) {
+                    st.profileId = first ? first.id : null;
+                    orphanCount++;
+                  }
+                });
+              }
+            }));
+            if (orphanCount > 0) {
+              console.log('[Calc] healed', orphanCount, 'orphan task profileIds (re-bound to partner first category)');
+              scheduleSave();
+            }
           }
           console.log('[Calc] loaded saved state from server — wps:', state.wps.length, 'total acts:', state.wps.reduce((s,w)=>s+w.activities.length,0));
         }

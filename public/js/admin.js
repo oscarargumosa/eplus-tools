@@ -653,10 +653,10 @@ const Admin = (() => {
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Subir documento nuevo</h4>
           <form id="conv-doc-upload-form" class="space-y-3">
-            <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required
+            <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
               class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
             <div class="grid grid-cols-3 gap-3">
-              <input type="text" id="conv-doc-title" placeholder="Titulo (opcional)"
+              <input type="text" id="conv-doc-title" placeholder="Titulo (auto desde nombre del archivo)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
               <select id="conv-doc-type" class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
                 <option value="programme_guide">Programme Guide</option>
@@ -676,10 +676,12 @@ const Admin = (() => {
                 <span class="text-[10px] text-on-surface-variant/60">(disponible para todas las calls)</span>
               </label>
             </div>
-            <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-              <span class="material-symbols-outlined text-sm">cloud_upload</span> Subir y vectorizar
+            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              <span class="material-symbols-outlined text-sm">cloud_upload</span>
+              <span id="conv-doc-submit-label">Subir y vectorizar</span>
             </button>
           </form>
+          <div id="conv-doc-progress" class="hidden mt-3 pt-3 border-t border-outline-variant/20"></div>
         </div>
 
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest flex flex-col">
@@ -696,43 +698,126 @@ const Admin = (() => {
     // Load docs
     convLoadDocs();
 
-    // Bind upload
+    // Auto-fill title from filename when 1 file is picked; clear when N>1
+    const stripExt = n => n.replace(/\.[^.]+$/, '');
+    document.getElementById('conv-doc-file')?.addEventListener('change', (e) => {
+      const files = e.target.files;
+      const titleEl = document.getElementById('conv-doc-title');
+      if (!titleEl) return;
+      if (files.length === 1) {
+        titleEl.value = stripExt(files[0].name);
+        titleEl.disabled = false;
+        titleEl.placeholder = 'Titulo (auto desde nombre del archivo)';
+      } else if (files.length > 1) {
+        titleEl.value = '';
+        titleEl.disabled = true;
+        titleEl.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+      }
+    });
+
+    // Bind upload (loop for multi-file with per-file progress)
     document.getElementById('conv-doc-upload-form')?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const file = document.getElementById('conv-doc-file').files[0];
-      if (!file) return;
+      const files = Array.from(document.getElementById('conv-doc-file').files);
+      if (!files.length) return;
 
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('title', document.getElementById('conv-doc-title').value || file.name);
+      const titleOverride = files.length === 1 ? document.getElementById('conv-doc-title').value : '';
       const tags = document.getElementById('conv-doc-tags').value;
       const isTransversal = document.getElementById('conv-doc-transversal').checked;
       const tagList = tags ? tags.split(',').map(t => t.trim()).filter(Boolean) : [];
       if (isTransversal && !tagList.includes('transversal')) tagList.push('transversal');
-      fd.append('tags', tagList.join(','));
-      fd.append('doc_type', 'call');
-      fd.append('program_id', ev.programId);
+      const docType = document.getElementById('conv-doc-type').value;
 
-      try {
-        const res = await fetch('/v1/documents/official', {
-          method: 'POST',
-          headers: { 'Authorization': 'Bearer ' + API.getToken() },
-          body: fd
-        });
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-        // Link to call_documents
-        const docType = document.getElementById('conv-doc-type').value;
-        const label = document.getElementById('conv-doc-title').value || file.name;
-        await API.post(`/admin/data/programs/${ev.programId}/docs`, {
-          document_id: json.data.id,
-          doc_type: docType,
-          label: label
-        });
-        Toast.show('Documento subido y vinculado', 'ok');
-        document.getElementById('conv-doc-upload-form').reset();
-        convLoadDocs();
-      } catch (err) { Toast.show('Error: ' + err.message, 'error'); }
+      const progEl = document.getElementById('conv-doc-progress');
+      const submitBtn = document.getElementById('conv-doc-submit-btn');
+      const submitLbl = document.getElementById('conv-doc-submit-label');
+      const fileInput = document.getElementById('conv-doc-file');
+      const titleInput = document.getElementById('conv-doc-title');
+
+      progEl.classList.remove('hidden');
+      progEl.innerHTML = `
+        <div id="conv-prog-summary" class="text-xs font-bold text-on-surface-variant mb-2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+          <span>Procesando 0 / ${files.length}</span>
+        </div>
+        <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+          ${files.map((f, i) => `
+            <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-white/40" data-prog-idx="${i}">
+              <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+              <span class="flex-1 truncate" title="${esc(f.name)}">${esc(f.name)}</span>
+              <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+            </div>`).join('')}
+        </div>`;
+
+      const updateRow = (i, status, label) => {
+        const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+        if (!row) return;
+        const icon = row.querySelector('.prog-icon');
+        const stat = row.querySelector('.prog-status');
+        if (status === 'uploading') {
+          icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+          stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+          row.classList.add('bg-primary/5');
+        } else if (status === 'done') {
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+          stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+          row.classList.remove('bg-primary/5'); row.classList.add('bg-green-50');
+        } else if (status === 'failed') {
+          icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+          stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+          row.classList.remove('bg-primary/5'); row.classList.add('bg-red-50');
+        }
+      };
+
+      submitBtn.disabled = true;
+      fileInput.disabled = true;
+      if (titleInput) titleInput.disabled = true;
+
+      let ok = 0, fail = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        submitLbl.textContent = `Subiendo ${i + 1} / ${files.length}...`;
+        document.getElementById('conv-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+        updateRow(i, 'uploading');
+        const title = titleOverride || stripExt(file.name);
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('title', title);
+        fd.append('tags', tagList.join(','));
+        fd.append('doc_type', 'call');
+        fd.append('program_id', ev.programId);
+        try {
+          const res = await fetch('/v1/documents/official', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + API.getToken() },
+            body: fd
+          });
+          const json = await res.json();
+          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+          await API.post(`/admin/data/programs/${ev.programId}/docs`, {
+            document_id: json.data.id,
+            doc_type: docType,
+            label: title
+          });
+          ok++;
+          updateRow(i, 'done');
+        } catch (err) {
+          fail++;
+          updateRow(i, 'failed', err.message.slice(0, 40));
+        }
+      }
+
+      const summary = document.getElementById('conv-prog-summary');
+      summary.innerHTML = fail
+        ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+
+      submitBtn.disabled = false;
+      fileInput.disabled = false;
+      if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Titulo (auto desde nombre del archivo)'; }
+      submitLbl.textContent = 'Subir y vectorizar';
+      document.getElementById('conv-doc-upload-form').reset();
+      convLoadDocs();
     });
 
     // Pick existing documents modal
@@ -1290,6 +1375,8 @@ const Admin = (() => {
     { value: 'foundation',  label: 'Foundation' },
     { value: 'for_profit',  label: 'For-profit organisation' },
     { value: 'social_enterprise', label: 'Social enterprise' },
+    { value: 'dmo',         label: 'DMO (Destination Management Organisation — turismo)' },
+    { value: 'bso',         label: 'BSO (Business Support Organisation — apoyo a empresas)' },
   ];
 
   function eligShowView(v) {
@@ -2431,6 +2518,9 @@ KEY EVALUATOR FOCUS:
       { code: 'KA220-ADU', name: 'Cooperation Partnerships in Adult Education' },
       { code: 'KA220-YOU', name: 'Cooperation Partnerships in Youth' },
     ]},
+    { group: 'EISMEA — Single Market Programme', items: [
+      { code: 'SMP-COSME-2026-TOURSME-01', name: 'Sustainable Competitiveness in Tourism — Supporting Tourism SMEs (SMP-GFS)' },
+    ]},
   ];
 
   function openActionTypePicker() {
@@ -2599,6 +2689,10 @@ KEY EVALUATOR FOCUS:
             <input type="number" id="cd-partners" value="${prog.min_partners || 2}" min="1" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
           </div>
           <div class="flex flex-col gap-1">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Max partners</label>
+            <input type="number" id="cd-partners-max" value="${prog.max_partners ?? ''}" min="1" placeholder="Sin límite" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
+          </div>
+          <div class="flex flex-col gap-1">
             <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Start date from</label>
             <input type="date" id="cd-start-min" value="${fmtDate(prog.start_date_min)}" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
           </div>
@@ -2668,6 +2762,7 @@ KEY EVALUATOR FOCUS:
           cofin_pct: document.getElementById('cd-cofin').value || null,
           indirect_pct: document.getElementById('cd-indirect').value || null,
           min_partners: document.getElementById('cd-partners').value || 2,
+          max_partners: document.getElementById('cd-partners-max').value || null,
           start_date_min: document.getElementById('cd-start-min').value || null,
           start_date_max: document.getElementById('cd-start-max').value || null,
           duration_min_months: document.getElementById('cd-dur-min').value || null,
@@ -3203,32 +3298,114 @@ KEY EVALUATOR FOCUS:
     cancel.addEventListener('click', () => modal.classList.add('hidden'));
     modal.addEventListener('click', e => { if (e.target === modal) modal.classList.add('hidden'); });
 
+    const stripExt = n => n.replace(/\.[^.]+$/, '');
+    const fileInput = document.getElementById('admin-doc-file');
+    const titleInput = document.getElementById('admin-doc-title');
+    fileInput?.addEventListener('change', () => {
+      const files = fileInput.files;
+      if (!titleInput) return;
+      if (files.length === 1) {
+        titleInput.value = stripExt(files[0].name);
+        titleInput.disabled = false;
+        titleInput.placeholder = 'Auto desde nombre del archivo';
+      } else if (files.length > 1) {
+        titleInput.value = '';
+        titleInput.disabled = true;
+        titleInput.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+      }
+    });
+
     form.addEventListener('submit', async e => {
       e.preventDefault();
-      const fileInput = document.getElementById('admin-doc-file');
-      const file = fileInput.files[0];
-      if (!file) return;
+      const files = Array.from(fileInput.files);
+      if (!files.length) return;
 
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('title', document.getElementById('admin-doc-title').value || file.name);
-      fd.append('description', document.getElementById('admin-doc-desc').value);
-      fd.append('tags', document.getElementById('admin-doc-tags').value);
-      fd.append('ownerType', 'platform');
+      const titleOverride = files.length === 1 ? titleInput.value : '';
+      const description = document.getElementById('admin-doc-desc').value;
+      const tags = document.getElementById('admin-doc-tags').value;
 
-      try {
-        const res = await fetch('/v1/documents/official', {
-          method: 'POST',
-          headers: { 'Authorization': 'Bearer ' + API.getToken() },
-          body: fd
-        });
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-        Toast.show('Documento subido', 'ok');
-        modal.classList.add('hidden');
-        form.reset();
-        loadPlatformDocs();
-      } catch (e) { Toast.show('Error: ' + e.message, 'error'); }
+      const progEl = document.getElementById('admin-doc-progress');
+      const submitBtn = document.getElementById('admin-doc-submit-btn');
+      const submitLbl = document.getElementById('admin-doc-submit-label');
+      const escTxt = s => { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; };
+
+      progEl.classList.remove('hidden');
+      progEl.innerHTML = `
+        <div id="admin-prog-summary" class="text-xs font-bold mb-2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+          <span>Procesando 0 / ${files.length}</span>
+        </div>
+        <div class="space-y-1.5 max-h-40 overflow-y-auto pr-1">
+          ${files.map((f, i) => `
+            <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-surface-container-low" data-prog-idx="${i}">
+              <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+              <span class="flex-1 truncate" title="${escTxt(f.name)}">${escTxt(f.name)}</span>
+              <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+            </div>`).join('')}
+        </div>`;
+
+      const updateRow = (i, status, label) => {
+        const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+        if (!row) return;
+        const icon = row.querySelector('.prog-icon');
+        const stat = row.querySelector('.prog-status');
+        if (status === 'uploading') {
+          icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+          stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+        } else if (status === 'done') {
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+          stat.textContent = label || 'subido'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+        } else if (status === 'failed') {
+          icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+          stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+        }
+      };
+
+      submitBtn.disabled = true;
+      fileInput.disabled = true;
+      if (titleInput) titleInput.disabled = true;
+
+      let ok = 0, fail = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        submitLbl.textContent = `Subiendo ${i + 1}/${files.length}...`;
+        document.getElementById('admin-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+        updateRow(i, 'uploading');
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('title', titleOverride || stripExt(file.name));
+        fd.append('description', description);
+        fd.append('tags', tags);
+        fd.append('ownerType', 'platform');
+        try {
+          const res = await fetch('/v1/documents/official', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + API.getToken() },
+            body: fd
+          });
+          const json = await res.json();
+          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+          ok++;
+          updateRow(i, 'done');
+        } catch (err) {
+          fail++;
+          updateRow(i, 'failed', err.message.slice(0, 40));
+        }
+      }
+
+      const summary = document.getElementById('admin-prog-summary');
+      summary.innerHTML = fail
+        ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s)</span>`;
+
+      submitBtn.disabled = false;
+      fileInput.disabled = false;
+      if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Auto desde nombre del archivo'; }
+      submitLbl.textContent = 'Subir';
+      form.reset();
+      loadPlatformDocs();
+      // Auto-close modal after 2s if all OK; keep open if there were failures
+      if (!fail) setTimeout(() => { modal.classList.add('hidden'); progEl.classList.add('hidden'); progEl.innerHTML = ''; }, 1800);
     });
   }
 
@@ -3623,20 +3800,22 @@ KEY EVALUATOR FOCUS:
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest mb-5">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Upload document</h4>
           <form id="call-doc-upload-form" class="space-y-3">
-            <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required
+            <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
               class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
             <div class="grid grid-cols-2 gap-3">
-              <input type="text" id="call-doc-title" placeholder="Title (optional, defaults to filename)"
+              <input type="text" id="call-doc-title" placeholder="Title (auto from filename)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
               <input type="text" id="call-doc-tags" placeholder="Tags (comma separated)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
             </div>
             <textarea id="call-doc-desc" rows="2" placeholder="Description..."
               class="w-full px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"></textarea>
-            <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-              <span class="material-symbols-outlined text-sm">cloud_upload</span> Upload & vectorize
+            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              <span class="material-symbols-outlined text-sm">cloud_upload</span>
+              <span id="call-doc-submit-label">Upload & vectorize</span>
             </button>
           </form>
+          <div id="call-doc-progress" class="hidden mt-3 pt-3 border-t border-outline-variant/20"></div>
         </div>
 
         <!-- Document list -->
@@ -3645,38 +3824,120 @@ KEY EVALUATOR FOCUS:
       // Load docs linked to programs using this template
       formsLoadCallDocs();
 
-      // Bind upload
+      // Auto-fill title from filename when 1 file picked
+      const stripExt = n => n.replace(/\.[^.]+$/, '');
+      document.getElementById('call-doc-file')?.addEventListener('change', (e) => {
+        const files = e.target.files;
+        const titleEl = document.getElementById('call-doc-title');
+        if (!titleEl) return;
+        if (files.length === 1) {
+          titleEl.value = stripExt(files[0].name);
+          titleEl.disabled = false;
+          titleEl.placeholder = 'Title (auto from filename)';
+        } else if (files.length > 1) {
+          titleEl.value = '';
+          titleEl.disabled = true;
+          titleEl.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+        }
+      });
+
+      // Bind upload (loop for multi-file with per-file progress)
       document.getElementById('call-doc-upload-form').addEventListener('submit', async (e) => {
         e.preventDefault();
-        const fileInput = document.getElementById('call-doc-file');
-        const file = fileInput.files[0];
-        if (!file) return;
+        const files = Array.from(document.getElementById('call-doc-file').files);
+        if (!files.length) return;
 
         // Find first program linked to this template
         const programs = await API.get('/admin/data/programs');
         const linked = programs.find(p => p.form_template_id === fm.templateId);
         if (!linked) { Toast.show('No programme linked to this template', 'error'); return; }
 
-        const fd = new FormData();
-        fd.append('file', file);
-        fd.append('title', document.getElementById('call-doc-title').value || file.name);
-        fd.append('description', document.getElementById('call-doc-desc').value);
-        fd.append('tags', document.getElementById('call-doc-tags').value);
-        fd.append('doc_type', 'call');
-        fd.append('program_id', linked.id);
+        const titleOverride = files.length === 1 ? document.getElementById('call-doc-title').value : '';
+        const description = document.getElementById('call-doc-desc').value;
+        const tags = document.getElementById('call-doc-tags').value;
 
-        try {
-          const res = await fetch('/v1/documents/official', {
-            method: 'POST',
-            headers: { 'Authorization': 'Bearer ' + API.getToken() },
-            body: fd
-          });
-          const json = await res.json();
-          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-          Toast.show('Document uploaded & vectorizing...', 'ok');
-          document.getElementById('call-doc-upload-form').reset();
-          formsLoadCallDocs();
-        } catch (err) { Toast.show('Error: ' + err.message, 'error'); }
+        const progEl = document.getElementById('call-doc-progress');
+        const submitBtn = document.getElementById('call-doc-submit-btn');
+        const submitLbl = document.getElementById('call-doc-submit-label');
+        const fileInput = document.getElementById('call-doc-file');
+        const titleInput = document.getElementById('call-doc-title');
+
+        progEl.classList.remove('hidden');
+        progEl.innerHTML = `
+          <div id="call-prog-summary" class="text-xs font-bold text-on-surface-variant mb-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+            <span>Procesando 0 / ${files.length}</span>
+          </div>
+          <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+            ${files.map((f, i) => `
+              <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-white/40" data-prog-idx="${i}">
+                <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+                <span class="flex-1 truncate" title="${esc(f.name)}">${esc(f.name)}</span>
+                <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+              </div>`).join('')}
+          </div>`;
+
+        const updateRow = (i, status, label) => {
+          const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+          if (!row) return;
+          const icon = row.querySelector('.prog-icon');
+          const stat = row.querySelector('.prog-status');
+          if (status === 'uploading') {
+            icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+            stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+          } else if (status === 'done') {
+            icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+            stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+          } else if (status === 'failed') {
+            icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+            stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+          }
+        };
+
+        submitBtn.disabled = true;
+        fileInput.disabled = true;
+        if (titleInput) titleInput.disabled = true;
+
+        let ok = 0, fail = 0;
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          submitLbl.textContent = `Uploading ${i + 1}/${files.length}...`;
+          document.getElementById('call-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+          updateRow(i, 'uploading');
+          const fd = new FormData();
+          fd.append('file', file);
+          fd.append('title', titleOverride || stripExt(file.name));
+          fd.append('description', description);
+          fd.append('tags', tags);
+          fd.append('doc_type', 'call');
+          fd.append('program_id', linked.id);
+          try {
+            const res = await fetch('/v1/documents/official', {
+              method: 'POST',
+              headers: { 'Authorization': 'Bearer ' + API.getToken() },
+              body: fd
+            });
+            const json = await res.json();
+            if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+            ok++;
+            updateRow(i, 'done');
+          } catch (err) {
+            fail++;
+            updateRow(i, 'failed', err.message.slice(0, 40));
+          }
+        }
+
+        const summary = document.getElementById('call-prog-summary');
+        summary.innerHTML = fail
+          ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+          : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+
+        submitBtn.disabled = false;
+        fileInput.disabled = false;
+        if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Title (auto from filename)'; }
+        submitLbl.textContent = 'Upload & vectorize';
+        document.getElementById('call-doc-upload-form').reset();
+        formsLoadCallDocs();
       });
     }
   }

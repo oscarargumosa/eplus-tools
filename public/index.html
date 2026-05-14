@@ -810,6 +810,7 @@ tailwind.config = {
                 <select id="intake-f-na" class="flex-1 px-3 py-2.5 rounded-lg bg-white border border-outline-variant text-on-surface font-body text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
                   <optgroup label="— European Commission —">
                     <option value="EACEA">EACEA — European Education and Culture Executive Agency</option>
+                    <option value="EISMEA">EISMEA — European Innovation Council and SMEs Executive Agency</option>
                   </optgroup>
                   <optgroup label="Austria">
                     <option value="AT01">AT01 — OeAD-GmbH – Agentur für Bildung und Internationalisierung</option>
@@ -1896,13 +1897,13 @@ tailwind.config = {
                 <form id="admin-doc-upload-form" class="space-y-4">
                   <div>
                     <label class="block text-sm font-medium text-on-surface mb-1">Archivo</label>
-                    <input type="file" id="admin-doc-file" accept=".pdf,.docx,.xlsx,.txt,.csv" required
+                    <input type="file" id="admin-doc-file" accept=".pdf,.docx,.xlsx,.txt,.csv" required multiple
                       class="block w-full text-sm text-on-surface file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-bold file:bg-sidebar file:text-secondary-fixed hover:file:opacity-90"/>
-                    <p class="text-xs text-on-surface-variant mt-1">PDF, DOCX, XLSX, TXT, CSV — max 20MB</p>
+                    <p class="text-xs text-on-surface-variant mt-1">PDF, DOCX, XLSX, TXT, CSV — max 20MB · puedes seleccionar varios</p>
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-on-surface mb-1">Título</label>
-                    <input type="text" id="admin-doc-title" placeholder="Título del documento"
+                    <input type="text" id="admin-doc-title" placeholder="Auto desde nombre del archivo"
                       class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none"/>
                   </div>
                   <div>
@@ -1915,9 +1916,12 @@ tailwind.config = {
                     <input type="text" id="admin-doc-tags" placeholder="ej: guía, KA2, erasmus (separados por coma)"
                       class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none"/>
                   </div>
+                  <div id="admin-doc-progress" class="hidden pt-2 border-t border-outline-variant/20"></div>
                   <div class="flex justify-end gap-3 pt-2">
                     <button type="button" id="btn-cancel-admin-upload" class="px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors">Cancelar</button>
-                    <button type="submit" class="px-4 py-2.5 rounded-lg text-sm font-bold bg-sidebar text-secondary-fixed hover:opacity-90 transition-opacity">Subir</button>
+                    <button id="admin-doc-submit-btn" type="submit" class="px-4 py-2.5 rounded-lg text-sm font-bold bg-sidebar text-secondary-fixed hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed">
+                      <span id="admin-doc-submit-label">Subir</span>
+                    </button>
                   </div>
                 </form>
               </div>
