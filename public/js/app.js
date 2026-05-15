@@ -316,6 +316,7 @@ const App = (() => {
     if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
     if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
     if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
+    if (route === 'master' && typeof Master !== 'undefined') Master.render();
     if (route === 'evaluator' && typeof Evaluator !== 'undefined') Evaluator.init();
     if (route === 'budget' && typeof Budget !== 'undefined') Budget.init();
   }

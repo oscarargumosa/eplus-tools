@@ -359,6 +359,12 @@ tailwind.config = {
           <span class="material-symbols-outlined text-[20px]" style="color:#a78bfa">edit_document</span>
           Escribir
         </a>
+        <a href="#master"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="master">
+          <span class="material-symbols-outlined text-[20px]" style="color:#16A34A">auto_stories</span>
+          Perfeccionar
+        </a>
         <a href="#evaluator"
           class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
           data-route="evaluator">
@@ -1544,6 +1550,13 @@ tailwind.config = {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <!-- ══ PANEL MASTER (Perfeccionar) ═════════════════════════ -->
+      <section id="panel-master" class="panel">
+        <div class="max-w-7xl mx-auto py-8 px-4" id="master-content">
+          <!-- Renderizado por public/js/master.js -->
         </div>
       </section>
 
@@ -2775,6 +2788,7 @@ tailwind.config = {
 <script src="/js/intake-tasks.js"></script>
 <script src="/js/intake-gantt.js"></script>
 <script src="/js/developer.js"></script>
+<script src="/js/master.js"></script>
 <script src="/js/evaluator.js"></script>
 <script src="/js/budget.js"></script>
 <script src="/js/voice-input.js"></script>
