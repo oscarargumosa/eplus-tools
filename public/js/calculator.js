@@ -60,6 +60,9 @@ const Calculator = (() => {
 
   function scheduleSave() {
     if (!currentProjectId) return;
+    // Never autosave against a temporary id — would 403 and risk masking real loads.
+    // The save fires only when openProject/loadFromServer has bound a real BD id.
+    if (String(currentProjectId).startsWith('intake-temp-')) return;
     clearTimeout(saveTimer);
     saveTimer = setTimeout(doSave, 2000);
   }

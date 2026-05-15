@@ -107,11 +107,26 @@ const Intake = (() => {
     initialized = true;
     renderStepNav();
     bindEvents();
-    setStep(0);
-    loadPrograms();
+    // Auto-reopen the last active project after a refresh, so the user lands
+    // on their work instead of an empty Intake with default fallbacks (€625k target).
+    let reopened = false;
+    try {
+      const lastId = localStorage.getItem('lastProjectId');
+      if (lastId && lastId.length === 36) { // sane UUID, not intake-temp-...
+        reopened = true;
+        loadPrograms().then(() => loadFromServer(lastId, 0));
+      }
+    } catch {}
+    if (!reopened) {
+      setStep(0);
+      loadPrograms();
+    }
   }
 
   function startNew() {
+    // Forget any auto-reopen target so a refresh during "new project" doesn't
+    // bounce back to the previous one.
+    try { localStorage.removeItem('lastProjectId'); } catch {}
     // Ensure initialized (render nav + bind events) but don't call setStep with stale step
     if (!initialized) {
       initialized = true;
@@ -394,6 +409,9 @@ const Intake = (() => {
       setStep(targetStep != null ? targetStep : 0);
       Toast.show('Proyecto cargado: ' + project.name, 'ok');
     } catch (err) {
+      // If the auto-reopened project no longer exists (deleted, perms changed),
+      // forget it so we don't loop on every refresh.
+      try { localStorage.removeItem('lastProjectId'); } catch {}
       Toast.show('Error al cargar: ' + (err.message || err), 'err');
     }
   }
@@ -403,6 +421,7 @@ const Intake = (() => {
     try {
       await API.del('/intake/projects/' + id);
       if (currentProjectId === id) currentProjectId = null;
+      try { if (localStorage.getItem('lastProjectId') === id) localStorage.removeItem('lastProjectId'); } catch {}
       Toast.show('Proyecto eliminado', 'ok');
       loadServerProjects();
     } catch (err) {
@@ -1898,6 +1917,9 @@ const Intake = (() => {
   }
 
   async function openProject(id) {
+    // Remember as the active project so a refresh reopens it instead of
+    // showing the empty Intake (which used to fall back to defaults €625k target).
+    try { localStorage.setItem('lastProjectId', id); } catch {}
     // Initialize intake without resetting step
     if (!initialized) {
       initialized = true;
