@@ -1147,6 +1147,58 @@ async function saveFullState(projectId, data) {
       }
     }
 
+    // 0b. Snapshot de tablas dependientes con CASCADE sobre work_packages:
+    //     deliverables, milestones, wp_tasks, wp_task_participants,
+    //     deliverable_tasks. Sin esto, el DELETE de work_packages las
+    //     borra en cascada y se pierde todo el trabajo del Writer.
+    //     Cada fila guarda su wp_order para poder reubicarla al nuevo
+    //     work_package_id tras el re-INSERT de WPs.
+    const [savedDelivs] = await conn.execute(
+      `SELECT d.*, w.order_index AS wp_order
+         FROM deliverables d
+         JOIN work_packages w ON w.id = d.work_package_id
+        WHERE d.project_id = ?`,
+      [projectId]
+    );
+    const [savedMiles] = await conn.execute(
+      `SELECT m.*, w.order_index AS wp_order
+         FROM milestones m
+         JOIN work_packages w ON w.id = m.work_package_id
+        WHERE m.project_id = ?`,
+      [projectId]
+    );
+    const [savedWpTasks] = await conn.execute(
+      `SELECT t.*, w.order_index AS wp_order
+         FROM wp_tasks t
+         JOIN work_packages w ON w.id = t.work_package_id
+        WHERE t.project_id = ?`,
+      [projectId]
+    );
+    let savedWpTaskParts = [];
+    if (savedWpTasks.length) {
+      const tIds = savedWpTasks.map(t => t.id);
+      const tph = tIds.map(() => '?').join(',');
+      const [rows] = await conn.execute(
+        `SELECT * FROM wp_task_participants WHERE task_id IN (${tph})`,
+        tIds
+      );
+      savedWpTaskParts = rows;
+    }
+    let savedDelivTasks = [];
+    if (savedDelivs.length) {
+      const dIds = savedDelivs.map(d => d.id);
+      const dph = dIds.map(() => '?').join(',');
+      const [rows] = await conn.execute(
+        `SELECT * FROM deliverable_tasks WHERE deliverable_id IN (${dph})`,
+        dIds
+      );
+      savedDelivTasks = rows;
+    }
+
+    // Map { order_index → newWpId } que se rellena durante el re-INSERT
+    // de WPs (paso 6). Lo usamos al final para reubicar las dependencias.
+    const wpOrderToNewId = {};
+
     // 1. Delete existing data (reverse dependency order)
     if (partnerIds.length) {
       const ph = partnerIds.map(() => '?').join(',');
@@ -1258,6 +1310,7 @@ async function saveFullState(projectId, data) {
       for (let wi = 0; wi < data.wps.length; wi++) {
         const wp = data.wps[wi];
         const wpId = genUUID();
+        wpOrderToNewId[wi] = wpId; // para reubicar deliverables/milestones/wp_tasks al final
         // Preservar campos del Writer si el state del Designer no los trae.
         // El Designer no incluye summary/objectives/duration_*; sin esto se
         // perdería el trabajo del Writer al re-aprobar Diseñar.
@@ -1302,8 +1355,56 @@ async function saveFullState(projectId, data) {
       }
     }
 
+    // 7. Restaurar dependencias del Writer que CASCADE habría borrado:
+    //    deliverables, milestones, wp_tasks (+wp_task_participants) y
+    //    deliverable_tasks. Re-insertamos cada fila con su mismo id
+    //    original y reasignamos work_package_id al nuevo wpId basado
+    //    en el order_index original.
+    async function reinsertRow(tableName, row) {
+      delete row.wp_order;
+      const cols = Object.keys(row);
+      const placeholders = cols.map(() => '?').join(',');
+      try {
+        await conn.execute(
+          `INSERT INTO ${tableName} (${cols.map(c => '`' + c + '`').join(',')}) VALUES (${placeholders})`,
+          cols.map(c => row[c])
+        );
+      } catch (e) {
+        console.warn(`[saveFullState] reinsert ${tableName} skip: ${e.code || e.message}`);
+      }
+    }
+
+    for (const d of savedDelivs) {
+      const newWpId = wpOrderToNewId[d.wp_order];
+      if (newWpId == null) continue;
+      d.work_package_id = newWpId;
+      await reinsertRow('deliverables', d);
+    }
+    for (const m of savedMiles) {
+      const newWpId = wpOrderToNewId[m.wp_order];
+      if (newWpId == null) continue;
+      m.work_package_id = newWpId;
+      // El deliverable_id se preserva porque restauramos deliverables con
+      // su id original arriba. Si el deliverable original no se restauró
+      // (porque su WP ya no existe), la FK ON DELETE SET NULL deja el
+      // milestone con deliverable_id NULL al insertarlo, lo cual es OK.
+      await reinsertRow('milestones', m);
+    }
+    for (const t of savedWpTasks) {
+      const newWpId = wpOrderToNewId[t.wp_order];
+      if (newWpId == null) continue;
+      t.work_package_id = newWpId;
+      await reinsertRow('wp_tasks', t);
+    }
+    for (const wtp of savedWpTaskParts) {
+      await reinsertRow('wp_task_participants', wtp);
+    }
+    for (const dt of savedDelivTasks) {
+      await reinsertRow('deliverable_tasks', dt);
+    }
+
     await conn.commit();
-    console.log(`[saveFullState] ${projectId} OK — ${data.wps?.length || 0} WPs, ${data.wps?.reduce((s, w) => s + (w.activities?.length || 0), 0) || 0} activities`);
+    console.log(`[saveFullState] ${projectId} OK — ${data.wps?.length || 0} WPs, ${data.wps?.reduce((s, w) => s + (w.activities?.length || 0), 0) || 0} activities · restored: ${savedDelivs.length} deliv, ${savedMiles.length} miles, ${savedWpTasks.length} wp_tasks`);
   } catch (err) {
     await conn.rollback();
     console.error(`[saveFullState] ${projectId} ROLLBACK — ${err.code || ''}: ${err.message}`);

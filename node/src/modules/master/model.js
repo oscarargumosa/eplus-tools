@@ -338,13 +338,15 @@ async function listProjectCagDocuments(projectId) {
  *
  * @param {string} projectId
  * @param {object} [opts]
- * @param {number} [opts.maxChars=320000]  ~80k tokens para el bundle.
- *   El resto del contexto consume ~110k (design enriched ~78k,
- *   system+criteria+writer+interviews+chapter spec ~25k, output ~8k)
- *   → deja ~10k de margen sobre los 200k de Sonnet 4.
+ * @param {number} [opts.maxChars=200000]  ~50k tokens para el bundle.
+ *   Tras añadir criterios FULL + reglas transversales + section_specific
+ *   block + wp_explicit_items, el resto del contexto consume ~140k
+ *   (design enriched ~78k, criteria ~15k, reglas ~3k, section ~3k,
+ *   wp items ~3k, system+writer+interviews+chapter spec ~25k, output
+ *   ~6k) → deja ~10k de margen sobre los 200k de Sonnet 4.
  */
 async function loadProjectCagBundle(projectId, opts = {}) {
-  const maxChars = opts.maxChars || 320_000;
+  const maxChars = opts.maxChars || 200_000;
 
   // Solo docs marcados explícitamente como CAG (sort_order <= 0). El resto
   // (sort_order >= 1, default) se queda en RAG y no consume budget.
@@ -426,9 +428,127 @@ async function getDiagnosisWithItems(diagnosisId) {
   return { ...diag[0], items };
 }
 
+/* ── Quality context loader ──────────────────────────────────── */
+/**
+ * Carga TODO el contexto de calidad de la convocatoria del proyecto:
+ *  - Reglas transversales (writing_style, additional_rules, ai_detection_rules)
+ *    desde call_eligibility.
+ *  - Eval tree completo (eval_sections → eval_questions → eval_criteria)
+ *    con todos los campos narrativos (intent/elements/example_strong/avoid +
+ *    general_context/writing_guidance/connects_from/connects_to/global_rule).
+ *  - Indexado por código de subsección para inyectar el bloque concreto al
+ *    compilar cada capítulo.
+ *
+ * Devuelve { transversal: {writing_style, additional_rules, ai_detection_rules},
+ *            criteriaIndex: { '1.1': {...question + criteria}, '1.2': {...}, ... },
+ *            criteriaFullText: 'cadena formateada con TODO el tree' }
+ */
+async function loadProjectQualityContext(projectId) {
+  // Resolver el program_id real (intake_programs.id) vía type/action_type
+  const [[link]] = await pool.query(
+    `SELECT ip.id AS program_id, ip.action_type, ip.program_id AS public_code
+       FROM projects p
+       JOIN intake_programs ip ON ip.action_type = p.type
+      WHERE p.id = ? LIMIT 1`,
+    [projectId]
+  );
+  if (!link) {
+    return {
+      transversal: { writing_style: '', additional_rules: '', ai_detection_rules: '' },
+      criteriaIndex: {},
+      criteriaFullText: '(no se ha podido vincular el proyecto con una convocatoria conocida)',
+      callCode: '',
+    };
+  }
+
+  // 1. Reglas transversales por call
+  const [[trans]] = await pool.query(
+    `SELECT writing_style, additional_rules, ai_detection_rules
+       FROM call_eligibility WHERE program_id = ?`,
+    [link.program_id]
+  );
+  const transversal = {
+    writing_style: (trans && trans.writing_style) || '',
+    additional_rules: (trans && trans.additional_rules) || '',
+    ai_detection_rules: (trans && trans.ai_detection_rules) || '',
+  };
+
+  // 2. Eval tree
+  const [sections] = await pool.query(
+    `SELECT id, title, form_ref, max_score, eval_notes, sort_order
+       FROM eval_sections WHERE program_id = ? ORDER BY sort_order, form_ref`,
+    [link.program_id]
+  );
+  const criteriaIndex = {};
+  const treeChunks = [];
+
+  for (const sec of sections) {
+    const [questions] = await pool.query(
+      `SELECT id, code, title, description, general_context, connects_from,
+              connects_to, global_rule, word_limit, page_limit, writing_guidance,
+              max_score, threshold
+         FROM eval_questions WHERE section_id = ? ORDER BY sort_order, code`,
+      [sec.id]
+    );
+    if (questions.length === 0) continue;
+
+    const secHeader = `SECTION ${sec.form_ref || ''} — ${sec.title}` +
+      (sec.eval_notes ? `\nSECTION NOTES: ${sec.eval_notes}` : '') +
+      (sec.max_score ? ` (max score: ${sec.max_score})` : '');
+    treeChunks.push('═'.repeat(70) + '\n' + secHeader + '\n' + '═'.repeat(70));
+
+    for (const q of questions) {
+      const [criteria] = await pool.query(
+        `SELECT title, max_score, mandatory, priority, intent, elements,
+                example_weak, example_strong, avoid, meaning, structure, relations, rules
+           FROM eval_criteria WHERE question_id = ? ORDER BY id`,
+        [q.id]
+      );
+      const blockParts = [];
+      blockParts.push(`\n▸ ${q.code} — ${q.title}`);
+      if (q.description) blockParts.push(`Description: ${q.description}`);
+      if (q.general_context) blockParts.push(`GENERAL CONTEXT (qué busca el evaluador en esta pregunta):\n${q.general_context}`);
+      if (q.writing_guidance) blockParts.push(`WRITING GUIDANCE (cómo escribir esta pregunta para esta call):\n${q.writing_guidance}`);
+      if (q.connects_from) blockParts.push(`SE APOYA EN:\n${q.connects_from}`);
+      if (q.connects_to) blockParts.push(`ALIMENTA A:\n${q.connects_to}`);
+      if (q.global_rule) blockParts.push(`REGLA GLOBAL DE ESTA PREGUNTA:\n${q.global_rule}`);
+      if (q.word_limit || q.page_limit) {
+        const lims = [];
+        if (q.word_limit) lims.push(`${q.word_limit} palabras`);
+        if (q.page_limit) lims.push(`${q.page_limit} páginas`);
+        blockParts.push(`LÍMITE OFICIAL (en formulario final): ${lims.join(' · ')}`);
+      }
+      if (criteria.length) {
+        blockParts.push(`CRITERIOS DE EVALUACIÓN (${criteria.length}):`);
+        criteria.forEach((c, i) => {
+          const tags = [c.priority || '', c.mandatory ? 'OBLIGATORIO' : '', c.max_score ? `${c.max_score}pts` : ''].filter(Boolean).join(' · ');
+          blockParts.push(`  ─ Criterio ${i+1}: ${c.title} [${tags}]`);
+          if (c.intent)         blockParts.push(`     INTENCIÓN: ${c.intent}`);
+          if (c.elements)       blockParts.push(`     ELEMENTOS: ${c.elements}`);
+          if (c.example_strong) blockParts.push(`     EJEMPLO FUERTE: ${c.example_strong}`);
+          if (c.example_weak)   blockParts.push(`     EJEMPLO DÉBIL (no hagas esto): ${c.example_weak}`);
+          if (c.avoid)          blockParts.push(`     EVITAR: ${c.avoid}`);
+        });
+      }
+      const block = blockParts.join('\n');
+      criteriaIndex[q.code] = { question: q, criteria, block };
+      treeChunks.push(block);
+    }
+  }
+
+  return {
+    transversal,
+    criteriaIndex,
+    criteriaFullText: treeChunks.join('\n\n') || '(no hay criterios cargados en Plus Data para esta convocatoria)',
+    callCode: link.action_type || link.public_code || '',
+  };
+}
+
 /* ── exports ─────────────────────────────────────────────────── */
 
 module.exports = {
+  // quality context
+  loadProjectQualityContext,
   // master_documents
   listMasterDocumentsByProject,
   getMasterDocument,

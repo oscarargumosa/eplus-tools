@@ -57,6 +57,9 @@ function loadTemplate(promptKey) {
 }
 
 function parseTemplate(raw, promptKey) {
+  // Normaliza line endings — los templates editados en Windows vienen
+  // con CRLF y el regex del frontmatter es sensible al separador.
+  raw = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   // Frontmatter delimitado por --- al inicio
   const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!fmMatch) {

@@ -38,6 +38,7 @@ router.get   ('/documents/:id/chapters', requireAuth, ctrl.listChapters);
 router.post  ('/documents/:id/chapters', requireAuth, ctrl.createChapter);
 router.patch ('/chapters/:id',           requireAuth, ctrl.updateChapter);
 router.delete('/chapters/:id',           requireAuth, ctrl.deleteChapter);
+router.post  ('/chapters/:id/refine',    requireAuth, ctrl.refineChapter);
 
 /* ── Exports ─────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/exports', requireAuth, ctrl.listExports);

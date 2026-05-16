@@ -353,23 +353,18 @@ async function compileMasterV1(req, res) {
     ).catch(() => [[]]);
     const writerDraft = writerRows.map(r => `=== ${r.section_id} ===\n${r.body || ''}`).join('\n\n');
 
-    // Criterios de evaluación (si están)
-    const [evalRows] = await pool.query(
-      `SELECT es.code, es.title, es.max_score, eq.code AS q_code, eq.title AS q_title
-       FROM projects p
-       LEFT JOIN eval_sections es ON es.programme_id = p.program_id
-       LEFT JOIN eval_questions eq ON eq.section_id = es.id
-       WHERE p.id = ?
-       ORDER BY es.code, eq.code`,
-      [projectId]
-    ).catch(() => [[]]);
-    const evalCriteria = evalRows.length
-      ? evalRows.map(r => `${r.code} ${r.title} (max ${r.max_score})${r.q_code ? `\n  - ${r.q_code} ${r.q_title}` : ''}`).join('\n')
-      : 'No specific evaluation criteria loaded for this call. Use general EU evaluation patterns (Relevance, Quality, Impact, Partnership).';
+    // Contexto de calidad: criterios de evaluación FULL (con intent/elements/
+    // example_strong/avoid + general_context + writing_guidance + connects)
+    // y reglas transversales de la convocatoria (writing_style,
+    // additional_rules, ai_detection_rules).
+    const qCtx = await model.loadProjectQualityContext(projectId);
 
     const vars = {
-      call_code: '',
-      criteria: evalCriteria,
+      call_code: qCtx.callCode || '',
+      criteria: qCtx.criteriaFullText,
+      call_writing_style: qCtx.transversal.writing_style || '(no specific writing style defined for this call)',
+      call_additional_rules: qCtx.transversal.additional_rules || '(no additional rules)',
+      call_ai_detection_rules: qCtx.transversal.ai_detection_rules || '(no specific anti-AI-detection rules)',
       call_documents: cagBundle,
       enriched_context: enrichedContext,
       writer_draft: writerDraft || '(no writer draft yet)',
@@ -402,64 +397,155 @@ async function compileMasterV1(req, res) {
       [projectId]
     );
 
+    // Pre-cargar tasks/milestones/deliverables por WP para inyectar el
+    // listado COMPLETO al capítulo de ese WP (no diluido en enriched_context).
+    async function getWpItemsBlock(wpId, wpCode, wpTitle) {
+      const [tasks] = await pool.query(
+        `SELECT t.id, t.title, t.description, t.is_subcontracted,
+                GROUP_CONCAT(DISTINCT CONCAT(pa.name, ' [', wtp.role, ']') SEPARATOR ' · ') AS participants
+           FROM wp_tasks t
+           LEFT JOIN wp_task_participants wtp ON wtp.task_id = t.id
+           LEFT JOIN partners pa ON pa.id = wtp.partner_id
+          WHERE t.work_package_id = ?
+          GROUP BY t.id
+          ORDER BY t.sort_order, t.created_at`,
+        [wpId]
+      ).catch(() => [[]]);
+      const [miles] = await pool.query(
+        `SELECT title, description, due_month, means_of_verification
+           FROM milestones WHERE work_package_id = ?
+           ORDER BY due_month, sort_order`,
+        [wpId]
+      ).catch(() => [[]]);
+      const [delivs] = await pool.query(
+        `SELECT code, title, description, type, dissemination_level, due_month, format
+           FROM deliverables WHERE work_package_id = ?
+           ORDER BY due_month, sort_order`,
+        [wpId]
+      ).catch(() => [[]]);
+
+      const parts = [`### EXPLICIT ITEMS OF ${wpCode} ${wpTitle} — develop one narrative paragraph for each`];
+      parts.push(`\n#### TASKS (${tasks.length}) — Activities and division of work`);
+      if (!tasks.length) parts.push('(none defined yet — flag as NEEDS ENRICHMENT)');
+      tasks.forEach((t, i) => {
+        parts.push(`\nTASK ${i+1}: ${t.title || '(no title)'}`);
+        if (t.description) parts.push(`  Description: ${t.description}`);
+        if (t.participants) parts.push(`  Participants: ${t.participants}`);
+        if (t.is_subcontracted) parts.push(`  ⚠️ Subcontracted — justify why and how Best-Value-for-Money is ensured`);
+      });
+
+      parts.push(`\n#### MILESTONES (${miles.length})`);
+      if (!miles.length) parts.push('(none defined yet — flag as NEEDS ENRICHMENT)');
+      miles.forEach((m, i) => {
+        parts.push(`\nMILESTONE ${i+1}: ${m.title || '(no title)'}`);
+        if (m.due_month) parts.push(`  Due: M${m.due_month}`);
+        if (m.description) parts.push(`  Description: ${m.description}`);
+        if (m.means_of_verification) parts.push(`  Means of verification: ${m.means_of_verification}`);
+      });
+
+      parts.push(`\n#### DELIVERABLES (${delivs.length})`);
+      if (!delivs.length) parts.push('(none defined yet — flag as NEEDS ENRICHMENT)');
+      delivs.forEach((d, i) => {
+        parts.push(`\nDELIVERABLE ${i+1}${d.code ? ' ['+d.code+']' : ''}: ${d.title || '(no title)'}`);
+        if (d.type) parts.push(`  Type: ${d.type}`);
+        if (d.dissemination_level) parts.push(`  Dissemination: ${d.dissemination_level}`);
+        if (d.due_month) parts.push(`  Due: M${d.due_month}`);
+        if (d.format) parts.push(`  Format: ${d.format}`);
+        if (d.description) parts.push(`  Description: ${d.description}`);
+      });
+      return parts.join('\n');
+    }
+
+    // CHAPTER_PLAN con target_words por capítulo (suman ~120 págs · ~250 words/pág)
+    // y section_code para mapear con qCtx.criteriaIndex.
+    const wpsPerWpWords = Math.max(2500, Math.round(4500 / Math.max(1, wpRows.length)) * 1.5); // ~12-18 págs/WP
+
     const CHAPTER_PLAN = [
-      { key: 'ch_summary', type: 'summary', title: 'Project Summary — Resumen ejecutivo ampliado',
+      { key: 'ch_summary', type: 'summary', section_code: 'PS', target_words: 600,
+        title: 'Project Summary — Resumen ejecutivo ampliado',
         focus: 'Extended executive overview: acronym, full title, what the project does, why it matters now, target groups, expected change, consortium spine, expected impact. Self-contained 2-page brief that an evaluator can read in 5 min and grasp the proposal.' },
 
-      // 1. RELEVANCE
-      { key: 'ch_1_1_background', type: 'relevance', title: '1.1 — Contexto y objetivos generales',
-        focus: 'Background and rationale of the project. How it is relevant to the SCOPE of the call. How it addresses the GENERAL OBJECTIVES of the call. Project contribution to the call PRIORITIES (if applicable). Connect explicitly to the call document quoted in {{call_documents}}.' },
-      { key: 'ch_1_2_needs', type: 'relevance', title: '1.2 — Análisis de necesidades y objetivos específicos',
+      // 1. RELEVANCE — total ~12-15 págs (3.500 words split)
+      { key: 'ch_1_1_background', type: 'relevance', section_code: '1.1', target_words: 1200,
+        title: '1.1 — Contexto y objetivos generales',
+        focus: 'Background and rationale of the project. How it is relevant to the SCOPE of the call. How it addresses the GENERAL OBJECTIVES of the call. Project contribution to the call PRIORITIES (if applicable).' },
+      { key: 'ch_1_2_needs', type: 'relevance', section_code: '1.2', target_words: 1400,
+        title: '1.2 — Análisis de necesidades y objetivos específicos',
         focus: 'Sound needs analysis aligned with the specific objectives of the call. What issue/challenge/gap the project addresses. Each project-specific objective stated CLEARLY, MEASURABLE, REALISTIC and ACHIEVABLE within the duration; for each one, the indicators of achievement (unit of measurement, baseline, target).' },
-      { key: 'ch_1_3_complementarity', type: 'relevance', title: '1.3 — Complementariedad, innovación y valor añadido europeo',
-        focus: 'How the project builds on results of past activities in the field; innovative aspects (if any). Complementarity with activities by other organisations. Trans-national dimension; impact across the EU; potential to use results in other countries; cross-border cooperation among Programme and Partner countries. Precise references to any prior or ongoing projects this proposal builds on.' },
+      { key: 'ch_1_3_complementarity', type: 'relevance', section_code: '1.3', target_words: 1100,
+        title: '1.3 — Complementariedad, innovación y valor añadido europeo',
+        focus: 'How the project builds on results of past activities in the field; innovative aspects (if any). Complementarity with activities by other organisations. Trans-national dimension; impact across the EU; potential to use results in other countries; cross-border cooperation among Programme and Partner countries.' },
 
-      // 2.1 QUALITY — Project design and implementation
-      { key: 'ch_2_1_1_concept', type: 'quality', title: '2.1.1 — Concepto y metodología',
+      // 2.1 QUALITY — total ~22-25 págs
+      { key: 'ch_2_1_1_concept', type: 'quality', section_code: '2.1.1', target_words: 1400,
+        title: '2.1.1 — Concepto y metodología',
         focus: 'Approach and methodology behind the project. Why they are the most suitable for achieving the objectives. Theory of change, design principles, methodological choices, conceptual articulation across WPs.' },
-      { key: 'ch_2_1_2_management', type: 'quality', title: '2.1.2 — Gestión del proyecto, aseguramiento de calidad, seguimiento y evaluación',
-        focus: 'Measures to ensure high-quality, on-time implementation. Methods for quality control, planning, monitoring. Evaluation methods and indicators (quantitative and qualitative) — including unit of measurement, baseline, target. Make explicit how progress will be measured and reported.' },
-      { key: 'ch_2_1_3_staff', type: 'quality', title: '2.1.3 — Equipos, personal y expertos del proyecto',
-        focus: 'Describe project teams and how they work together. List ALL key staff (budget category A) by function/profile — ONE NARRATIVE PARAGRAPH PER PERSON: name and function, organisation, role/tasks in this project, professional profile and expertise, why this person is the right fit. NO TABLES. Close with a paragraph explaining how the teams complement each other.' },
-      { key: 'ch_2_1_4_cost_effectiveness', type: 'quality', title: '2.1.4 — Coste-eficacia y gestión financiera',
-        focus: 'Measures to ensure that the proposed results and objectives are achieved in the MOST COST-EFFECTIVE way. Arrangements for financial management — how resources will be allocated and managed within the consortium. Do NOT compare costs per WP and do NOT include numbers; explain qualitatively why the budget is cost-effective.' },
-      { key: 'ch_2_1_5_risk', type: 'quality', title: '2.1.5 — Gestión de riesgos',
-        focus: 'Critical risks, uncertainties, difficulties for implementation. ONE NARRATIVE PARAGRAPH PER RISK: description, work package(s) affected, impact (high/medium/low), likelihood (high/medium/low) even after mitigation, proposed mitigation measures, contingency. NO TABLES. Close with a paragraph on the overall risk posture and how the consortium will react to unforeseen events.' },
+      { key: 'ch_2_1_2_management', type: 'quality', section_code: '2.1.2', target_words: 1300,
+        title: '2.1.2 — Gestión del proyecto, aseguramiento de calidad, seguimiento y evaluación',
+        focus: 'Measures to ensure high-quality, on-time implementation. Quality control, monitoring, planning. Evaluation methods and indicators (quantitative+qualitative) — unit of measurement, baseline, target.' },
+      { key: 'ch_2_1_3_staff', type: 'quality', section_code: '2.1.3', target_words: 1500,
+        title: '2.1.3 — Equipos, personal y expertos del proyecto',
+        focus: 'Describe project teams and how they work together. List ALL key staff (budget category A) by function/profile — ONE NARRATIVE PARAGRAPH PER PERSON: name and function, organisation, role/tasks in this project, professional profile and expertise. NO TABLES. Close with a paragraph on team complementarity.' },
+      { key: 'ch_2_1_4_cost_effectiveness', type: 'quality', section_code: '2.1.4', target_words: 700,
+        title: '2.1.4 — Coste-eficacia y gestión financiera',
+        focus: 'Measures to ensure most cost-effective achievement. Financial management arrangements. Do NOT include numbers; explain qualitatively why the budget is cost-effective.' },
+      { key: 'ch_2_1_5_risk', type: 'quality', section_code: '2.1.5', target_words: 1400,
+        title: '2.1.5 — Gestión de riesgos',
+        focus: 'Critical risks. ONE PARAGRAPH PER RISK: description, WP affected, impact (H/M/L), likelihood (H/M/L) post-mitigation, mitigation measures, contingency. NO TABLES.' },
 
-      // 2.2 QUALITY — Partnership and cooperation arrangements
-      { key: 'ch_2_2_1_consortium_setup', type: 'consortium', title: '2.2.1 — Configuración del consorcio',
-        focus: 'Participants (Beneficiaries, Affiliated Entities, Associated Partners, others). For each partner: a narrative paragraph with role, expertise contributed, complementarity, valid role and adequate resources. NO TABLES. Close with a paragraph on how the partners come together as a whole greater than the sum of parts.' },
-      { key: 'ch_2_2_2_consortium_management', type: 'consortium', title: '2.2.2 — Gestión del consorcio y toma de decisiones',
-        focus: 'Management structures and decision-making mechanisms. How decisions will be taken; communication channels (frequency, format); planning and control methods. Adapt the level of detail to the complexity and scale of the project.' },
+      // 2.2 QUALITY — total ~8-12 págs
+      { key: 'ch_2_2_1_consortium_setup', type: 'consortium', section_code: '2.2.1', target_words: 1500,
+        title: '2.2.1 — Configuración del consorcio',
+        focus: 'Participants and how they work together. For each partner: a narrative paragraph with role, expertise contributed, complementarity, valid role and adequate resources. NO TABLES. Close with a paragraph on the consortium as a whole.' },
+      { key: 'ch_2_2_2_consortium_management', type: 'consortium', section_code: '2.2.2', target_words: 1000,
+        title: '2.2.2 — Gestión del consorcio y toma de decisiones',
+        focus: 'Management structures and decision-making. How decisions are taken; communication (frequency, format); planning and control methods.' },
 
-      // 3. IMPACT
-      { key: 'ch_3_1_impact', type: 'impact', title: '3.1 — Impacto y ambición',
-        focus: 'Expected SHORT-, MEDIUM- and LONG-term effects. Target groups (concrete, not abstract) and HOW they will benefit. What will change for them. Quantitative KPIs where possible. Tie the impact narrative back to objectives stated in 1.2.' },
-      { key: 'ch_3_2_dissemination', type: 'impact', title: '3.2 — Comunicación, diseminación y visibilidad',
-        focus: 'Communication and dissemination activities to promote results and maximise impact: to whom, in what format, how many, through which channels and why those channels. Reaching target groups, stakeholders, policymakers, general public. Plan for ensuring EU funding visibility (acknowledgement, logos, recommended phrasing).' },
-      { key: 'ch_3_3_sustainability', type: 'impact', title: '3.3 — Sostenibilidad y continuación',
-        focus: 'Follow-up after EU funding ends. How impact will be sustained. What needs to be done, by whom, with what resources. Which parts of the project should be continued or maintained and how. Possible synergies/complementarities with other (EU-funded) activities that can build on the results.' },
+      // 3. IMPACT — total ~14-18 págs
+      { key: 'ch_3_1_impact', type: 'impact', section_code: '3.1', target_words: 1600,
+        title: '3.1 — Impacto y ambición',
+        focus: 'Expected SHORT-, MEDIUM-, LONG-term effects. Target groups (concrete) and HOW they benefit. What changes for them. Quantitative KPIs where possible. Tie back to objectives stated in 1.2.' },
+      { key: 'ch_3_2_dissemination', type: 'impact', section_code: '3.2', target_words: 1300,
+        title: '3.2 — Comunicación, diseminación y visibilidad',
+        focus: 'Communication/dissemination to maximise impact: to whom, format, volume, channels and why. Reaching target groups, stakeholders, policymakers, general public. EU funding visibility plan.' },
+      { key: 'ch_3_3_sustainability', type: 'impact', section_code: '3.3', target_words: 1300,
+        title: '3.3 — Sostenibilidad y continuación',
+        focus: 'Follow-up after EU funding ends. How impact is sustained. What needs to be done, by whom, with what resources. Continuation plan. Synergies with other (EU-funded) activities building on results.' },
 
       // 4. WORK PLAN
-      { key: 'ch_4_1_workplan', type: 'workplan', title: '4.1 — Plan de trabajo (visión general)',
-        focus: 'Overall structure of the work plan: list of WPs at a glance, their interdependencies, the project rhythm (kick-off, mid-term review, final), how WPs articulate towards the project objectives stated in 1.2. PROSE, no Gantt — the Gantt is rendered separately from data.' },
+      { key: 'ch_4_1_workplan', type: 'workplan', section_code: '4.1', target_words: 600,
+        title: '4.1 — Plan de trabajo (visión general)',
+        focus: 'Overall structure of the work plan: list of WPs at a glance, interdependencies, project rhythm (kick-off, mid-term, final), articulation with objectives. PROSE, no Gantt.' },
 
-      // 4.2 — Work Packages (dynamic, one chapter per WP)
+      // 4.2 — Work Packages (dynamic, one chapter per WP, ~12-18 págs each)
       ...wpRows.map(wp => ({
         key: `ch_4_2_wp_${(wp.code || '').toLowerCase().replace(/[^a-z0-9_]+/g, '_') || wp.id.slice(0, 6)}`,
         type: 'wp',
+        section_code: '4.2',
+        target_words: Math.round(wpsPerWpWords),
         title: `4.2 — ${wp.code || ''} ${wp.title}`,
-        focus: `Develop Work Package "${wp.code} ${wp.title}" in full narrative form. Cover: WP objectives (expected outcomes), lead beneficiary and rationale, duration, articulation with other WPs. Then THREE NARRATIVE SUBSECTIONS — Activities, Milestones, Deliverables — each with ONE paragraph per task / milestone / deliverable belonging to this WP. For each task: what is done, by which partner, role (COO/BEN/AE/AP/OTHER), in-kind contributions or subcontracting (and its justification). For each milestone: what it marks, success criteria, due date (project month), means of verification. For each deliverable: what it is, format, language, dissemination level (PU/SEN/…), due date, how it will be used after delivery. NO TABLES — pure prose with light Markdown headings ## Activities, ## Milestones, ## Deliverables.`,
+        focus: `Develop Work Package "${wp.code} ${wp.title}" in full narrative form. Cover: WP objectives, lead beneficiary and rationale, duration, articulation with other WPs. Then THREE NARRATIVE SUBSECTIONS — Activities, Milestones, Deliverables — with ONE PARAGRAPH PER ITEM listed in the EXPLICIT ITEMS block below. Do NOT skip any item. No tables — use ## Activities, ## Milestones, ## Deliverables as light headings.`,
         ref_entity_type: 'work_package',
         ref_entity_id: wp.id,
+        _wpData: { id: wp.id, code: wp.code, title: wp.title },
       })),
 
       // 5. OTHER
-      { key: 'ch_5_1_ethics', type: 'other', title: '5.1 — Ética',
-        focus: 'Ethics issues that may arise during implementation and measures to address them. Gender mainstreaming. Children\'s rights if applicable. Data protection. Inclusion. If the project has none of these dimensions, say so explicitly — "Not applicable" is a valid answer in this subsection.' },
-      { key: 'ch_5_2_security', type: 'other', title: '5.2 — Seguridad',
-        focus: 'Security issues if applicable (sensitive data, critical infrastructure, dual-use). Most civil projects answer "Not applicable" here. If applicable, describe and propose mitigation.' },
+      { key: 'ch_5_1_ethics', type: 'other', section_code: '5.1', target_words: 500,
+        title: '5.1 — Ética',
+        focus: 'Ethics issues during implementation and measures. Gender mainstreaming. Children\'s rights if applicable. Data protection. Inclusion. If none apply, say so explicitly.' },
+      { key: 'ch_5_2_security', type: 'other', section_code: '5.2', target_words: 300,
+        title: '5.2 — Seguridad',
+        focus: 'Security issues if applicable (sensitive data, critical infrastructure, dual-use). Most civil projects answer "Not applicable".' },
     ];
+
+    // Pre-cargar items por cada WP (paralelo)
+    const wpItemsBlocks = {};
+    for (const ch of CHAPTER_PLAN) {
+      if (ch.type === 'wp' && ch._wpData) {
+        wpItemsBlocks[ch.key] = await getWpItemsBlock(ch._wpData.id, ch._wpData.code, ch._wpData.title);
+      }
+    }
 
     if (wantStream) {
       sseSend('plan', { total: CHAPTER_PLAN.length, chapters: CHAPTER_PLAN.map(c => ({ key: c.key, title: c.title })) });
@@ -520,18 +606,29 @@ async function compileMasterV1(req, res) {
         ? previousSummaries.map((p, j) => `[${j + 1}] ${p.title}\n${(p.body || '').substring(0, 200)}...`).join('\n\n')
         : '(none yet — this is the first chapter)';
 
+      // Bloque específico de la subsección (criterios + guidance + connects)
+      const sectionBlock = (ch.section_code && qCtx.criteriaIndex[ch.section_code])
+        ? qCtx.criteriaIndex[ch.section_code].block
+        : '(no specific criteria block loaded for this section)';
+
+      // Para capítulos de WP, lista explícita de tasks/milestones/deliverables
+      const wpItems = wpItemsBlocks[ch.key] || '';
+
       const chapterVars = {
         ...vars,
         chapter_key: ch.key,
         chapter_type: ch.type,
         chapter_title: ch.title,
         chapter_focus: ch.focus,
+        section_specific_block: sectionBlock,
+        wp_explicit_items: wpItems,
+        target_words: String(ch.target_words || 1000),
         previous_chapters_summary: previousSummary,
       };
 
       try {
         const result = await cag.runPrompt('01b_compile_single_chapter', chapterVars, {
-          maxTokens: 8000,
+          maxTokens: 6000,
           temperature: 0.4,
           ctx: { projectId, userId },
           endpoint: `/v1/master/documents/:id/compile-v1#${ch.key}`,
@@ -674,19 +771,10 @@ async function runDiagnosis(req, res) {
     // Design snapshot conciso para cross-checks
     const designSnapshot = await developerModel.buildEnrichedContext(projectId, userId);
 
-    // Eval criteria
-    const [evalRows] = await pool.query(
-      `SELECT es.code, es.title, es.max_score, eq.code AS q_code, eq.title AS q_title
-       FROM projects p
-       LEFT JOIN eval_sections es ON es.programme_id = p.program_id
-       LEFT JOIN eval_questions eq ON eq.section_id = es.id
-       WHERE p.id = ? ORDER BY es.code, eq.code`,
-      [projectId]
-    ).catch(() => [[]]);
-    const criteria = evalRows.map(r => `${r.code} ${r.title} (max ${r.max_score})${r.q_code ? `\n  - ${r.q_code} ${r.q_title}` : ''}`).join('\n');
+    // Contexto de calidad: criterios FULL + reglas transversales de la call
+    const qCtx = await model.loadProjectQualityContext(projectId);
 
-    // Cargar bundle CAG (call docs + project docs core) para que el
-    // diagnose contraste el Master contra el reglamento oficial.
+    // Cargar bundle CAG (call docs + project docs core)
     const cagDocs = await model.loadProjectCagBundle(projectId);
     const cagBundle = cagDocs.length
       ? cagDocs.map(d => {
@@ -697,8 +785,8 @@ async function runDiagnosis(req, res) {
       : '(no call or project documents with extracted text available)';
 
     const vars = {
-      call_code: '',
-      criteria: criteria || 'Use general EU evaluation patterns.',
+      call_code: qCtx.callCode || '',
+      criteria: qCtx.criteriaFullText,
       call_documents: cagBundle,
       master_document: masterText,
       design_snapshot: designSnapshot,
@@ -804,6 +892,169 @@ async function runDiagnosis(req, res) {
   }
 }
 
+/* ── Refine chapter (chat-based, Paso 9) ────────────────────────
+   POST /v1/master/chapters/:id/refine
+   Body: { message, mode? = 'free' | 'validate' | 'rewrite' }
+   - 'free':     el usuario escribe libre, el LLM responde + opcional proposed_edit
+   - 'validate': fuerza al LLM a validar el capítulo contra criterios y listar gaps
+   - 'apply':    body { new_body } → guarda el nuevo body en master_chapters
+*/
+async function refineChapter(req, res) {
+  try {
+    const chapterId = req.params.id;
+    const userId = req.user.id;
+    const { message, mode = 'free', new_body = null, apply = false } = req.body || {};
+
+    const chapter = await model.getChapter(chapterId);
+    if (!chapter) return bad(res, 404, 'Chapter not found');
+
+    // Apply directo: persistimos new_body en el chapter y registramos el evento.
+    if (apply && new_body) {
+      await model.updateChapter(chapterId, { body: new_body }, { actor: 'ai' });
+      return ok(res, { applied: true, char_count: new_body.length });
+    }
+
+    if (!message || typeof message !== 'string') {
+      return bad(res, 400, 'message is required');
+    }
+
+    const masterDoc = await model.getMasterDocument(chapter.master_doc_id);
+    if (!masterDoc) return bad(res, 404, 'Master document not found');
+    const projectId = masterDoc.project_id;
+
+    const qCtx = await model.loadProjectQualityContext(projectId);
+    const designSnapshot = await developerModel.buildEnrichedContext(projectId, userId);
+    const cagDocs = await model.loadProjectCagBundle(projectId);
+    const cagBundle = cagDocs.length
+      ? cagDocs.map(d => `═════ ${d.origin === 'call' ? 'CALL DOC' : 'PROJECT DOC'}: ${d.title} ═════\n${d.body_text}`).join('\n\n')
+      : '(no docs)';
+
+    // Bloque de criterios específico de la subsección del capítulo
+    const sectionCode = extractSectionCodeFromKey(chapter.chapter_key);
+    const sectionBlock = sectionCode && qCtx.criteriaIndex[sectionCode]
+      ? qCtx.criteriaIndex[sectionCode].block
+      : '(no specific criteria for this section)';
+
+    // Otros capítulos del Master (para coherencia)
+    const allChapters = await model.listChapters(chapter.master_doc_id);
+    const otherChaptersSummary = allChapters
+      .filter(c => c.id !== chapterId)
+      .map(c => `### ${c.title}\n${(c.body || '').substring(0, 1200)}${(c.body || '').length > 1200 ? '... [truncated]' : ''}`)
+      .join('\n\n---\n\n');
+
+    // Historial de mensajes anteriores del chat para este capítulo
+    const [threads] = await pool.query(
+      `SELECT id FROM chat_threads WHERE project_id = ? AND phase = 'perfect' AND is_archived = 0 ORDER BY created_at LIMIT 1`,
+      [projectId]
+    );
+    let threadId = threads[0]?.id;
+    if (!threadId) {
+      const genUUID = require('../../utils/uuid');
+      threadId = genUUID();
+      await pool.query(
+        `INSERT INTO chat_threads (id, project_id, user_id, phase) VALUES (?, ?, ?, 'perfect')`,
+        [threadId, projectId, userId]
+      );
+    }
+    const [history] = await pool.query(
+      `SELECT role, content, anchor_id, anchor_label FROM chat_messages
+       WHERE thread_id = ? AND (anchor_id = ? OR anchor_id IS NULL)
+       ORDER BY created_at ASC LIMIT 20`,
+      [threadId, chapterId]
+    );
+
+    // Prompt user effective según mode
+    let effectiveMessage = message;
+    if (mode === 'validate') {
+      effectiveMessage = `Por favor valida este capítulo contra los criterios oficiales de evaluación de su subsección (los recibes arriba). Para cada criterio, responde con TRES bullets: (1) ¿lo cumple este capítulo?, (2) qué gaps detectas, (3) propuesta concreta de mejora citando texto exacto a añadir/cambiar. Sé exhaustivo y rigurioso. Si encuentras mejoras mayores, emite también el bloque proposed_edit con la versión revisada COMPLETA del capítulo.`;
+    } else if (mode === 'rewrite') {
+      effectiveMessage = `Reescribe el capítulo completo siguiendo esta instrucción: "${message}". Mantén todos los hechos concretos del original. Devuelve el proposed_edit con la nueva versión completa.`;
+    }
+
+    // Construir vars para el prompt 08
+    const vars = {
+      call_code: qCtx.callCode || '',
+      criteria: qCtx.criteriaFullText,
+      call_writing_style: qCtx.transversal.writing_style || '',
+      call_additional_rules: qCtx.transversal.additional_rules || '',
+      call_ai_detection_rules: qCtx.transversal.ai_detection_rules || '',
+      call_documents: cagBundle,
+      enriched_context: designSnapshot,
+      current_chapter_title: chapter.title,
+      current_chapter_key: chapter.chapter_key,
+      current_chapter_body: chapter.body || '',
+      section_specific_block: sectionBlock,
+      other_chapters_summary: otherChaptersSummary || '(no other chapters yet)',
+      chat_history: history.map(h => `[${h.role}] ${h.content}`).join('\n\n') || '(start of conversation)',
+      anchor_kind: 'chapter',
+      anchor_label: chapter.title,
+      anchor_id: chapterId,
+      user_message: effectiveMessage,
+    };
+
+    // Persistir mensaje del usuario
+    const genUUID2 = require('../../utils/uuid');
+    await pool.query(
+      `INSERT INTO chat_messages (id, thread_id, role, content, anchor_kind, anchor_id, anchor_label) VALUES (?, ?, 'user', ?, 'chapter', ?, ?)`,
+      [genUUID2(), threadId, message, chapterId, chapter.title]
+    );
+
+    // Llamar al LLM
+    const result = await cag.runPrompt('08_chat_refinement', vars, {
+      maxTokens: 6000,
+      temperature: 0.5,
+      ctx: { projectId, userId },
+      endpoint: `/v1/master/chapters/:id/refine`,
+    });
+
+    const replyText = result.text || '';
+
+    // Parse opcional de proposed_edit
+    let proposedEdit = null;
+    const editMatch = replyText.match(/```(?:json )?proposed_edit\s*([\s\S]*?)```/);
+    if (editMatch) {
+      try { proposedEdit = JSON.parse(editMatch[1].trim()); } catch (_) { /* ignore parse fail */ }
+    }
+
+    // Persistir mensaje del assistant
+    const assistantMsgId = genUUID2();
+    await pool.query(
+      `INSERT INTO chat_messages (id, thread_id, role, content, anchor_kind, anchor_id, anchor_label, llm_model, llm_input_tokens, llm_output_tokens, llm_cached_tokens) VALUES (?, ?, 'assistant', ?, 'chapter', ?, ?, ?, ?, ?, ?)`,
+      [
+        assistantMsgId, threadId, replyText, chapterId, chapter.title,
+        result.model,
+        (result.usage?.input_tokens || 0) + (result.usage?.cache_creation_input_tokens || 0),
+        result.usage?.output_tokens || 0,
+        result.usage?.cache_read_input_tokens || 0,
+      ]
+    );
+
+    ok(res, {
+      message_id: assistantMsgId,
+      reply: replyText,
+      proposed_edit: proposedEdit,
+      thread_id: threadId,
+      cost_usd: result.costUsd,
+      duration_ms: result.durationMs,
+    });
+  } catch (e) {
+    console.error('[refineChapter] error:', e);
+    bad(res, 500, e.message || String(e));
+  }
+}
+
+// Helper: extrae el código de subsección (1.1, 2.1.3, 4.2, etc.) de la key.
+function extractSectionCodeFromKey(chapterKey) {
+  if (!chapterKey) return null;
+  if (chapterKey === 'ch_summary') return 'PS';
+  // ch_1_1_background → 1.1
+  // ch_2_1_3_staff → 2.1.3
+  // ch_4_2_wp_wp1 → 4.2
+  const m = chapterKey.match(/^ch_(\d)_(\d)(?:_(\d))?_/);
+  if (!m) return null;
+  return [m[1], m[2], m[3]].filter(Boolean).join('.');
+}
+
 /* ── Subida de documentos canónicos de la convocatoria (CAG sources) ── */
 
 /* ── Stubs restantes (devolverán 501 hasta que se conecten) ─── */
@@ -847,6 +1098,7 @@ module.exports = {
   // LLM-powered (CAG)
   compileMasterV1,
   runDiagnosis,
+  refineChapter,
   // placeholders LLM (501 hasta conectar)
   regenerateWithUnifiedContext: notImplemented,
   computeScoreEstimate: notImplemented,

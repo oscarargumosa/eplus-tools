@@ -689,8 +689,11 @@ async function listCallDocuments(programId) {
  */
 async function getCagInventory(programId) {
   const docs = await listCallDocuments(programId);
-  const BUDGET_TOKENS = 80_000;
-  const BUDGET_CHARS = 320_000;
+  // Ajustado: tras añadir criterios FULL + reglas transversales al prompt
+  // del Master el bundle CAG no puede superar ~50k tokens para que quepa
+  // todo el contexto en los 200k del modelo Sonnet 4.
+  const BUDGET_TOKENS = 50_000;
+  const BUDGET_CHARS = 200_000;
   // Categorías por sort_order:
   //   -1       → forzado al top del CAG
   //    0       → marcado para CAG

@@ -225,7 +225,7 @@
           ` : `
             <div class="space-y-2" id="master-chapters-list">
               ${chapters.map((ch, i) => `
-                <details class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg" ${i === 0 ? 'open' : ''}>
+                <details class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg" ${i === 0 ? 'open' : ''} data-chapter-id="${esc(ch.id)}">
                   <summary class="px-4 py-3 cursor-pointer flex items-center justify-between hover:bg-surface-container-low">
                     <div class="flex items-center gap-2">
                       <span class="text-[10px] font-mono text-on-surface-variant uppercase">${esc(ch.chapter_type)}</span>
@@ -233,7 +233,20 @@
                     </div>
                     <span class="text-[10px] text-on-surface-variant">${fmtChars(ch.char_count)}</span>
                   </summary>
-                  <div class="px-4 py-3 border-t border-outline-variant/10 prose prose-sm max-w-none whitespace-pre-wrap">${esc(ch.body || '(vacío)')}</div>
+                  <div class="border-t border-outline-variant/10 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-0">
+                    <div class="px-4 py-3 prose prose-sm max-w-none whitespace-pre-wrap" id="master-chapter-body-${esc(ch.id)}">${esc(ch.body || '(vacío)')}</div>
+                    <div class="border-l border-outline-variant/10 bg-surface-container-low p-3 flex flex-col" style="min-height:320px">
+                      <div class="flex items-center justify-between mb-2">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Chat de refinamiento</span>
+                        <button onclick="Master._validateChapter('${esc(ch.id)}')" class="text-[10px] font-semibold text-primary hover:underline" title="Lanza una validación del capítulo contra todos los criterios oficiales">Validar contra criterios</button>
+                      </div>
+                      <div id="master-chat-${esc(ch.id)}" class="flex-1 overflow-y-auto space-y-2 mb-2 text-xs" style="max-height:400px"></div>
+                      <textarea id="master-chat-input-${esc(ch.id)}" placeholder="Sugiere una mejora, pregunta algo, o pide reescribir..." class="w-full px-2 py-2 text-xs border border-outline-variant/30 rounded resize-none" rows="2" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();Master._sendChatMessage('${esc(ch.id)}')}"></textarea>
+                      <div class="flex justify-end mt-1">
+                        <button onclick="Master._sendChatMessage('${esc(ch.id)}')" class="px-3 py-1 rounded text-[10px] font-bold bg-primary text-white hover:bg-primary/90">Enviar</button>
+                      </div>
+                    </div>
+                  </div>
                 </details>
               `).join('')}
             </div>
@@ -877,6 +890,77 @@
     }
   }
 
+  /* ── Chat refinement por capítulo ───────────────────────────── */
+
+  function _renderChatBubble(chapterId, role, text, proposedEdit) {
+    const cont = document.getElementById('master-chat-' + chapterId);
+    if (!cont) return;
+    const isUser = role === 'user';
+    const bubble = document.createElement('div');
+    bubble.className = isUser ? 'flex justify-end' : 'flex justify-start';
+    bubble.innerHTML = `
+      <div class="max-w-[90%] px-2 py-1.5 rounded ${isUser ? 'bg-primary text-white' : 'bg-white border border-outline-variant/30 text-on-surface'}">
+        <div class="whitespace-pre-wrap">${esc(text).replace(/```[\s\S]*?```/g, '<em class="opacity-70">[propuesta de edición ↓]</em>')}</div>
+        ${proposedEdit ? `
+          <div class="mt-2 pt-2 border-t border-outline-variant/30 flex gap-2 items-center">
+            <button onclick="Master._applyEdit('${esc(chapterId)}', this)" data-edit='${esc(JSON.stringify(proposedEdit))}' class="px-2 py-1 rounded text-[10px] font-bold bg-green-600 text-white hover:bg-green-700">Aplicar al Master</button>
+            <span class="text-[10px] text-on-surface-variant italic">${esc(proposedEdit.rationale || '')}</span>
+          </div>
+        ` : ''}
+      </div>`;
+    cont.appendChild(bubble);
+    cont.scrollTop = cont.scrollHeight;
+  }
+
+  async function _sendChatMessage(chapterId, modeOverride) {
+    const input = document.getElementById('master-chat-input-' + chapterId);
+    let msg = modeOverride === 'validate'
+      ? 'Por favor valida este capítulo contra los criterios de evaluación oficiales.'
+      : (input?.value || '').trim();
+    if (!msg) return;
+    if (!modeOverride) input.value = '';
+    _renderChatBubble(chapterId, 'user', msg);
+    const typing = document.createElement('div');
+    typing.id = 'master-chat-typing-' + chapterId;
+    typing.className = 'flex justify-start';
+    typing.innerHTML = '<div class="px-2 py-1.5 rounded bg-surface-container border border-outline-variant/30 text-[10px] italic text-on-surface-variant"><span class="spinner"></span> Pensando...</div>';
+    document.getElementById('master-chat-' + chapterId).appendChild(typing);
+
+    try {
+      const res = await API.post(`/master/chapters/${chapterId}/refine`, { message: msg, mode: modeOverride || 'free' });
+      const data = res.data || res;
+      typing.remove();
+      _renderChatBubble(chapterId, 'assistant', data.reply || '(sin respuesta)', data.proposed_edit);
+    } catch (e) {
+      typing.remove();
+      _renderChatBubble(chapterId, 'assistant', 'Error: ' + (e.message || e));
+    }
+  }
+
+  async function _validateChapter(chapterId) {
+    await _sendChatMessage(chapterId, 'validate');
+  }
+
+  async function _applyEdit(chapterId, buttonEl) {
+    let edit;
+    try { edit = JSON.parse(buttonEl.dataset.edit); } catch (_) { return; }
+    const newBody = edit.new_body;
+    if (!newBody) { showToast('Sin contenido nuevo', 'edit_kind=' + edit.edit_kind + ' no soportado todavía', 'error'); return; }
+    buttonEl.disabled = true; buttonEl.textContent = 'Aplicando...';
+    try {
+      await API.post(`/master/chapters/${chapterId}/refine`, { apply: true, new_body: newBody });
+      // Refrescar el body en pantalla sin recargar todo
+      const bodyEl = document.getElementById('master-chapter-body-' + chapterId);
+      if (bodyEl) bodyEl.textContent = newBody;
+      buttonEl.textContent = '✓ Aplicado';
+      buttonEl.className = buttonEl.className.replace('bg-green-600 hover:bg-green-700', 'bg-on-surface-variant cursor-not-allowed');
+      showToast('Capítulo actualizado', 'Master refrescado en pantalla', 'success');
+    } catch (e) {
+      buttonEl.disabled = false; buttonEl.textContent = 'Aplicar al Master';
+      showToast('Error al aplicar', e.message || String(e), 'error');
+    }
+  }
+
   Master.render = render;
   Master.createNewMaster = createNewMaster;
   Master.openMaster = openMaster;
@@ -884,6 +968,9 @@
   Master.compileV1 = compileV1;
   Master.runDiagnosis = runDiagnosis;
   Master.downloadMarkdown = downloadMarkdown;
+  Master._sendChatMessage = _sendChatMessage;
+  Master._validateChapter = _validateChapter;
+  Master._applyEdit = _applyEdit;
 
   window.Master = Master;
 })();
