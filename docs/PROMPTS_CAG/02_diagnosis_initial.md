@@ -72,14 +72,28 @@ Output format: a single JSON object with the structure below.
 === EVALUATION CRITERIA (call: {{call_code}}) ===
 {{criteria}}
 
+=== DESIGN SNAPSHOT (concise, for cross-checks) ===
+{{design_snapshot}}
+<!-- CACHE_BREAKPOINT -->
 === MASTER DOCUMENT V1 ===
 {{master_document}}
 
-=== DESIGN SNAPSHOT (concise, for cross-checks) ===
-{{design_snapshot}}
-
 === INSTRUCTIONS ===
-Produce the diagnosis JSON. Group by classification.
+Produce the diagnosis JSON with the EXACT shape:
+{
+  "diagnosis_kind": "initial",
+  "summary": "<one paragraph executive overview>",
+  "items": [
+    { "classification": "narrative" | "economic", "severity": "info" | "warning" | "critical",
+      "title": "...", "detail": "...", "suggestion": "...",
+      "anchor_kind": "chapter"|"wp"|"activity"|"partner"|"budget_line"|null,
+      "anchor_id": "...", "anchor_label": "..." }
+  ]
+}
+
+DO NOT split items into separate "narrative" and "economic" arrays.
+ALL items go in a single "items" array, classified by their own classification field.
+Output the raw JSON, no markdown code fences.
 ```
 
 ## Output JSON schema

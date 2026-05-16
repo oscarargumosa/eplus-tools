@@ -667,7 +667,21 @@ async function runDiagnosis(req, res) {
         return bad(res, 502, `LLM output not parseable. Raw: ${result.text.substring(0, 500)}`);
       }
 
-      const items = Array.isArray(result.parsed.items) ? result.parsed.items : [];
+      // Tolerancia de shape para el output del diagnóstico:
+      //   A) { items: [...] }                         ← shape esperada
+      //   B) { narrative: [...], economic: [...] }    ← LLM agrupa por classification
+      //   C) [...]                                    ← LLM devuelve solo array
+      let items = [];
+      if (Array.isArray(result.parsed.items)) {
+        items = result.parsed.items;
+      } else if (Array.isArray(result.parsed.narrative) || Array.isArray(result.parsed.economic)) {
+        items = [
+          ...(result.parsed.narrative || []).map(x => ({ ...x, classification: 'narrative' })),
+          ...(result.parsed.economic || []).map(x => ({ ...x, classification: 'economic' })),
+        ];
+      } else if (Array.isArray(result.parsed)) {
+        items = result.parsed;
+      }
       for (let i = 0; i < items.length; i++) {
         const it = items[i];
         await pool.query(

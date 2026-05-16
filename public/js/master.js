@@ -727,7 +727,15 @@
     const panel = document.getElementById('master-diagnosis-panel');
     if (!panel) return;
 
-    const items = diag.items || [];
+    // Tolerancia de shape: items[], o narrative[]+economic[], o array directo
+    let items = [];
+    if (Array.isArray(diag.items)) items = diag.items;
+    else if (Array.isArray(diag.narrative) || Array.isArray(diag.economic)) {
+      items = [
+        ...(diag.narrative || []).map(x => ({ ...x, classification: 'narrative' })),
+        ...(diag.economic || []).map(x => ({ ...x, classification: 'economic' })),
+      ];
+    } else if (Array.isArray(diag)) items = diag;
     const narrative = items.filter(i => i.classification === 'narrative');
     const economic = items.filter(i => i.classification === 'economic');
 
