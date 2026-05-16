@@ -31,7 +31,10 @@ router.post ('/data/programs/:programId/generate-eval', guard, ctrl.generateEval
 /* ── Call documents (per programme) ──────────────────────────── */
 router.get   ('/data/programs/:programId/docs',           guard, ctrl.listCallDocuments);
 router.get   ('/data/programs/:programId/available-docs', guard, ctrl.availableCallDocuments);
+router.get   ('/data/programs/:programId/cag-inventory',  guard, ctrl.getCagInventory);
 router.post  ('/data/programs/:programId/docs',           guard, ctrl.createCallDocument);
+router.post  ('/data/programs/:programId/docs/reorder',   guard, ctrl.reorderCallDocuments);
+router.patch ('/data/call-docs/:id',                      guard, ctrl.updateCallDocumentOrder);
 router.delete('/data/call-docs/:id',                      guard, ctrl.deleteCallDocument);
 
 /* ── Países ───────────────────────────────────────────────────── */

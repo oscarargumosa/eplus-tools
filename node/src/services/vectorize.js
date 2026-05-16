@@ -75,6 +75,17 @@ async function processDocument(documentId, meta, sourceId) {
       return;
     }
 
+    // 2b. Persist full text on documents.body_text for CAG (Master compile/diagnose).
+    //     RAG (chunks) and CAG (body_text) live side by side from the same extraction.
+    if (documentId) {
+      const chars = text.length;
+      const tokensEst = Math.ceil(chars / 4);
+      await db.execute(
+        'UPDATE documents SET body_text = ?, body_text_chars = ?, tokens_estimated = ? WHERE id = ?',
+        [text, chars, tokensEst, documentId]
+      );
+    }
+
     // 3. Chunk
     const chunks = chunkText(text);
     console.log(`[VECTORIZE] ${chunks.length} chunks from ${label}`);

@@ -667,18 +667,118 @@ async function generateEvalFromTemplate(programId, templateId) {
 async function listCallDocuments(programId) {
   const [rows] = await pool.query(
     `SELECT cd.*, d.title AS doc_title, d.file_type, d.file_size_bytes, d.status AS doc_status,
-            d.tags, d.created_at AS doc_created_at
+            d.tags, d.created_at AS doc_created_at,
+            d.body_text_chars, d.tokens_estimated, d.storage_path
      FROM call_documents cd
      JOIN documents d ON d.id = cd.document_id
      WHERE cd.program_id = ?
      ORDER BY cd.sort_order, cd.created_at`,
     [programId]
   );
-  // Parse tags JSON
   rows.forEach(r => {
     if (typeof r.tags === 'string') try { r.tags = JSON.parse(r.tags); } catch(_) { r.tags = []; }
   });
   return rows;
+}
+
+/**
+ * Inventario CAG de una convocatoria: lista de docs con peso y orden,
+ * más el total acumulado y el budget cap (~80k tokens del bundle CAG).
+ * Refleja exactamente lo que el pipeline cargaría al compilar el Master
+ * de un proyecto de esta convocatoria si el usuario no aporta nada.
+ */
+async function getCagInventory(programId) {
+  const docs = await listCallDocuments(programId);
+  const BUDGET_TOKENS = 80_000;
+  const BUDGET_CHARS = 320_000;
+  // Categorías por sort_order:
+  //   -1       → forzado al top del CAG
+  //    0       → marcado para CAG
+  //    1..998  → default / RAG (no entra al CAG)
+  //    9999    → solo RAG explícito
+  let acc = 0;
+  // Ordenamos por sort_order ASC para calcular cumulative solo entre los <=0
+  const orderedForCag = [...docs].sort((a, b) => (a.sort_order ?? 1) - (b.sort_order ?? 1));
+  const annotated = orderedForCag.map(d => {
+    const so = d.sort_order ?? 1;
+    const chars = d.body_text_chars || 0;
+    let category, wouldFit, cumulative;
+    if (so >= 9999) {
+      category = 'rag_only_explicit';
+      wouldFit = false;
+      cumulative = null;
+    } else if (so >= 1) {
+      category = 'rag_default';
+      wouldFit = false;
+      cumulative = null;
+    } else if (so < 0) {
+      // forzado
+      const fits = (acc + chars) <= BUDGET_CHARS;
+      if (fits) acc += chars;
+      category = 'cag_forced';
+      wouldFit = fits;
+      cumulative = fits ? acc : null;
+    } else {
+      // so === 0
+      const fits = (acc + chars) <= BUDGET_CHARS;
+      if (fits) acc += chars;
+      category = 'cag_selected';
+      wouldFit = fits;
+      cumulative = fits ? acc : null;
+    }
+    return { ...d, category, would_fit_in_cag: wouldFit, cumulative_chars: cumulative };
+  });
+  return {
+    docs: annotated,
+    budget_tokens: BUDGET_TOKENS,
+    budget_chars: BUDGET_CHARS,
+    used_chars: acc,
+    used_tokens: Math.ceil(acc / 4),
+    remaining_chars: Math.max(0, BUDGET_CHARS - acc),
+  };
+}
+
+async function updateCallDocumentOrder(id, sortOrder) {
+  await pool.query(
+    'UPDATE call_documents SET sort_order = ? WHERE id = ?',
+    [sortOrder, id]
+  );
+}
+
+/**
+ * Reordena docs de una convocatoria. Acepta dos shapes:
+ *   { ids: [id1, id2, ...] }                   → asigna sort_order = posición.
+ *   { items: [{id, sort_order}, ...] }         → respeta sort_order específico
+ *     (para marcar 9999 = Solo RAG, etc.).
+ */
+async function reorderCallDocuments(programId, payload) {
+  const conn = await pool.getConnection();
+  try {
+    await conn.beginTransaction();
+    let n = 0;
+    if (Array.isArray(payload?.items)) {
+      for (const it of payload.items) {
+        const [r] = await conn.query(
+          'UPDATE call_documents SET sort_order = ? WHERE id = ? AND program_id = ?',
+          [parseInt(it.sort_order, 10) || 0, it.id, programId]
+        );
+        n += r.affectedRows || 0;
+      }
+    } else {
+      const ids = Array.isArray(payload?.ids) ? payload.ids : payload;
+      if (!Array.isArray(ids)) return 0;
+      for (let i = 0; i < ids.length; i++) {
+        const [r] = await conn.query(
+          'UPDATE call_documents SET sort_order = ? WHERE id = ? AND program_id = ?',
+          [i, ids[i], programId]
+        );
+        n += r.affectedRows || 0;
+      }
+    }
+    await conn.commit();
+    return n;
+  } catch (e) { await conn.rollback(); throw e; }
+  finally { conn.release(); }
 }
 
 async function createCallDocument(programId, documentId, docType, label) {
@@ -858,5 +958,6 @@ module.exports = {
   listFormInstances, createFormInstance, getFormInstance,
   getFormValues, saveFormValues, updateFormInstance, deleteFormInstance,
   listCallDocuments, createCallDocument, deleteCallDocument, availableCallDocuments,
+  getCagInventory, updateCallDocumentOrder, reorderCallDocuments,
   duplicateProgram, listProgramsWithCounts, generateEvalFromTemplate
 };

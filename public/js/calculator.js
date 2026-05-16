@@ -1490,11 +1490,15 @@ const Calculator = (() => {
         const pax = act.pax || 2;
         const days = act.days || 3;
         let travel = 0, aloj = 0;
+        // Si el host es un extra_destination, todos los partners usan su perdiem
+        const hostExtraDest = state.extraDests.find(d => d.id === act.host);
+        const destPerdiemTotal = hostExtraDest ? ((hostExtraDest.aloj || 0) + (hostExtraDest.mant || 0)) : null;
         const activePartners = state.partners.filter(p => (act.participants||{})[p.id] !== false);
         activePartners.forEach(p => {
           const isHost = p.id === act.host;
           if (!isHost) travel += getRouteCost(p.id, act.host) * pax;
-          aloj += pax * days * getPartnerPerdiemTotal(p.id);
+          const pdTotal = destPerdiemTotal != null ? destPerdiemTotal : getPartnerPerdiemTotal(p.id);
+          aloj += pax * days * pdTotal;
         });
         return { total: travel + aloj, viaje: travel, aloj };
       }
@@ -1875,8 +1879,17 @@ const Calculator = (() => {
                 const rc = getRouteCost(p.id, act.host);
                 add('C1_travel', wi, act.label, pax, rc, rc * pax);
               }
-              add('C1_accom', wi, act.label, pax * days, pd.aloj||0, pax * days * (pd.aloj||0));
-              add('C1_subs',  wi, act.label, pax * days, pd.mant||0, pax * days * (pd.mant||0));
+              // Perdiem del DESTINO, no del partner que viaja:
+              //   - Si el host es un extra_destination (Bruselas, etc.),
+              //     usa el perdiem del extra_dest.
+              //   - Si el host es un partner, sigue el comportamiento previo
+              //     (perdiem del partner que viaja, ya que cada uno conoce
+              //     sus propias tarifas para alojarse en su país).
+              const hostExtraDest = state.extraDests.find(d => d.id === act.host);
+              const destAccom = hostExtraDest ? (hostExtraDest.aloj || 0) : (pd.aloj || 0);
+              const destSubs  = hostExtraDest ? (hostExtraDest.mant || 0) : (pd.mant || 0);
+              add('C1_accom', wi, act.label, pax * days, destAccom, pax * days * destAccom);
+              add('C1_subs',  wi, act.label, pax * days, destSubs,  pax * days * destSubs);
               break;
             }
             case 'io': {
@@ -2360,8 +2373,18 @@ const Calculator = (() => {
   }
 
   function setExtraDest(idx, field, value) {
-    if (state.extraDests[idx]) {
-      state.extraDests[idx][field] = value;
+    const ed = state.extraDests[idx];
+    if (!ed) return;
+    ed[field] = value;
+    // Cuando el usuario rellena/cambia country, autocompletar aloj y mant
+    // desde la tabla de perdiems-país. Sin esto el backend persiste 0/0
+    // y el budget v2 calcula accom+subs=0 en mobilities hacia este destino.
+    if (field === 'country' && value) {
+      const ref = getPerdiemRef(value);
+      if (ref) {
+        ed.aloj = ref.aloj;
+        ed.mant = ref.mant;
+      }
     }
   }
 
@@ -2896,10 +2919,42 @@ const Calculator = (() => {
               if (!exists) state.workerRates.push({ id: wrId(s.pid, s.category), pid: s.pid, category: s.category, rate: s.rate });
             });
           }
-          if (saved.routes && Object.keys(saved.routes).length) state.routes = { ...state.routes, ...saved.routes };
+          // Map para traducir uuid del extra_dest (cómo viene en saved.routes
+          // desde BD) al id frontend (_edN) que usaremos para las keys de
+          // state.routes. Sin esto, las routes hacia extra_dests cargadas
+          // de BD nunca matchean la key que el frontend genera al renderizar.
+          const edDbToFront = {};
           if (saved.extraDests && saved.extraDests.length) {
-            state.extraDests = saved.extraDests.map((ed, i) => ({ id: '_ed' + (i + 1), ...ed }));
+            state.extraDests = saved.extraDests.map((ed, i) => {
+              const frontId = '_ed' + (i + 1);
+              if (ed.db_id) edDbToFront[ed.db_id] = frontId;
+              const out = { id: frontId, ...ed };
+              if (out.country && (!out.aloj || !out.mant)) {
+                const ref = getPerdiemRef(out.country);
+                if (ref) {
+                  out.aloj = out.aloj || ref.aloj;
+                  out.mant = out.mant || ref.mant;
+                }
+              }
+              delete out.db_id;
+              return out;
+            });
             state.extraDestCounter = saved.extraDests.length;
+          }
+          // Traduce las keys de saved.routes: si un endpoint es el uuid de un
+          // extra_dest, sustitúyelo por su id frontend (_edN).
+          if (saved.routes && Object.keys(saved.routes).length) {
+            const translatedRoutes = {};
+            for (const [key, val] of Object.entries(saved.routes)) {
+              const parts = key.split('_').filter(Boolean);
+              const ep = parts.map(p => edDbToFront[p] || p);
+              // Reordena canónicamente y normaliza prefijo del _edN
+              const aa = ep[0] || '';
+              const bb = ep[1] || '';
+              const nk = (aa < bb) ? aa + '_' + bb : bb + '_' + aa;
+              translatedRoutes[nk] = val;
+            }
+            state.routes = { ...state.routes, ...translatedRoutes };
           }
           if (saved.wps && saved.wps.length) {
             // Restore WPs with sequential activity IDs
@@ -3104,8 +3159,12 @@ const Calculator = (() => {
                 const routeCost = getRouteCost(p.id, act.host);
                 add('C1_travel', wi, act.label, pax, routeCost, routeCost * pax);
               }
-              add('C1_accom', wi, act.label, pax * days, pd.aloj||0, pax * days * (pd.aloj||0));
-              add('C1_subs',  wi, act.label, pax * days, pd.mant||0, pax * days * (pd.mant||0));
+              // Perdiem del destino (extra_dest si aplica), no del partner que viaja
+              const hostExtraDest = state.extraDests.find(d => d.id === act.host);
+              const destAccom = hostExtraDest ? (hostExtraDest.aloj || 0) : (pd.aloj || 0);
+              const destSubs  = hostExtraDest ? (hostExtraDest.mant || 0) : (pd.mant || 0);
+              add('C1_accom', wi, act.label, pax * days, destAccom, pax * days * destAccom);
+              add('C1_subs',  wi, act.label, pax * days, destSubs,  pax * days * destSubs);
               break;
             }
             case 'io': {

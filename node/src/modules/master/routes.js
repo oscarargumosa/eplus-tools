@@ -22,13 +22,9 @@
    ═══════════════════════════════════════════════════════════════ */
 
 const express = require('express');
-const multer = require('multer');
 const router = express.Router();
 const { requireAuth } = require('../../middleware/auth');
 const ctrl = require('./controller');
-
-// Multipart upload — 30 MB cap (PDFs típicos de calls están bajo eso)
-const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 30 * 1024 * 1024 } });
 
 /* ── Documents ───────────────────────────────────────────────── */
 router.get   ('/projects/:projectId/documents', requireAuth, ctrl.listMasterDocuments);
@@ -57,9 +53,10 @@ router.post ('/threads/:id/messages',             requireAuth, ctrl.appendMessag
 router.get ('/calls/:callId/form-templates', requireAuth, ctrl.listFormTemplates);
 router.get ('/form-templates/:id',           requireAuth, ctrl.getFormTemplateFull);
 
-/* ── Call documents (CAG sources) ────────────────────────────── */
-router.get  ('/calls/:callId/documents', requireAuth, ctrl.listCallDocuments);
-router.post ('/calls/:callId/documents', requireAuth, upload.single('file'), ctrl.uploadCallDocument);
+/* ── CAG document sources (read-only inventory) ──────────────── */
+// Uploads pasan por Admin → Plus Data (call docs) o Writer → Relevancia
+// (project docs). Aquí solo se inventaría qué se cargaría al CAG.
+router.get  ('/projects/:projectId/cag-documents', requireAuth, ctrl.listCagDocumentsForProject);
 
 /* ── Diagnoses (read-only) ───────────────────────────────────── */
 router.get ('/documents/:id/diagnoses', requireAuth, ctrl.listDiagnoses);

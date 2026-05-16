@@ -919,7 +919,8 @@ const Admin = (() => {
   async function convLoadDocs() {
     const container = document.getElementById('conv-docs-list');
     try {
-      const docs = await API.get(`/admin/data/programs/${ev.programId}/docs`);
+      const inv = await API.get(`/admin/data/programs/${ev.programId}/cag-inventory`);
+      const docs = inv.docs || [];
       if (!docs.length) {
         container.innerHTML = `<div class="text-center py-8 text-on-surface-variant/50">
           <span class="material-symbols-outlined text-4xl opacity-30">folder_off</span>
@@ -928,24 +929,229 @@ const Admin = (() => {
         return;
       }
       const TYPE_ICONS = { programme_guide: '\ud83d\udcd5', call_document: '\ud83d\udcd8', annex: '\ud83d\udcce', template: '\ud83d\udcc4', faq: '\u2753', other: '\ud83d\udcc1' };
-      container.innerHTML = docs.map(d => {
-        const size = d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB` : '';
+
+      const BUDGET_CHARS  = inv.budget_chars  || 320000;
+      const BUDGET_TOKENS = inv.budget_tokens || 80000;
+      const RAG_ONLY_SENTINEL = 9999;
+
+      const headerHtml = `
+        <div class="mb-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-xs font-bold text-on-surface uppercase tracking-wide">Presupuesto CAG (Documento Maestro)</p>
+            <p id="cag-budget-readout" class="text-xs font-mono text-on-surface-variant">— / ${BUDGET_TOKENS.toLocaleString('es-ES')} tokens</p>
+          </div>
+          <div class="w-full h-2 rounded-full bg-outline-variant/20 overflow-hidden">
+            <div id="cag-budget-bar" class="h-full bg-primary transition-all" style="width: 0%"></div>
+          </div>
+          <p class="text-[11px] text-on-surface-variant mt-2">
+            <strong>Sólo los docs con prioridad 0 o "Forzar CAG" entran al contexto del LLM</strong> al compilar el Maestro.
+            La barra de arriba mide exactamente eso. El resto (prioridad ≥ 1, default) se queda en RAG y no consume budget.
+            Cambia un doc de 1 → 0 para meterlo al CAG; márcalo "Solo RAG" si quieres dejarlo fuera explícitamente.
+            Los cambios se previsualizan en vivo; pulsa "Guardar prioridades" para persistir.
+          </p>
+        </div>`;
+
+      const docsHtml = docs.map(d => {
+        const size = d.body_text_chars
+          ? `${(d.body_text_chars || 0).toLocaleString('es-ES')} chars \u00b7 ${(d.tokens_estimated || 0).toLocaleString('es-ES')} tokens`
+          : (d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB (sin extraer)` : '');
         const statusIcon = d.doc_status === 'active' ? 'check_circle' : d.doc_status === 'processing' ? 'sync' : 'pending';
         const statusColor = d.doc_status === 'active' ? 'text-green-500' : d.doc_status === 'processing' ? 'text-blue-500' : 'text-gray-400';
-        const tags = (d.tags || []).map(t => `<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-medium">${esc(t)}</span>`).join(' ');
-        return `<div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-outline-variant/20 mb-2 hover:border-primary/30 transition-colors">
+        const initialOrder = d.sort_order ?? 0;
+        const isRagOnly = initialOrder >= RAG_ONLY_SENTINEL;
+        const isForced  = initialOrder < 0;
+        const chars = d.body_text_chars || 0;
+        const tokens = d.tokens_estimated || 0;
+        return `<div class="conv-doc-row flex items-center gap-3 p-3 rounded-xl bg-white border border-outline-variant/20 mb-2 hover:border-primary/30 transition-colors"
+                     data-id="${d.id}" data-chars="${chars}" data-tokens="${tokens}">
+          <input type="number" min="-1" max="${RAG_ONLY_SENTINEL}" class="conv-doc-order w-14 text-center font-mono text-sm border border-outline-variant/40 rounded-lg py-1.5"
+                 value="${initialOrder}" ${(isRagOnly || isForced) ? 'disabled' : ''}
+                 title="Prioridad (menor número = más prioritario; ${RAG_ONLY_SENTINEL} = nunca CAG)">
           <span class="text-xl">${TYPE_ICONS[d.doc_type] || '\ud83d\udcc1'}</span>
           <div class="flex-1 min-w-0">
             <p class="text-sm font-bold text-on-surface truncate">${esc(d.label || d.doc_title)}</p>
-            <p class="text-xs text-on-surface-variant">${d.doc_type} · ${d.file_type || ''} · ${size}</p>
-            ${tags ? `<div class="flex gap-1 mt-1">${tags}</div>` : ''}
+            <p class="text-xs text-on-surface-variant">${d.doc_type} \u00b7 ${d.file_type || ''} \u00b7 ${size}</p>
           </div>
-          <span class="material-symbols-outlined ${statusColor}" title="${d.doc_status}">${statusIcon}</span>
+          <label class="conv-doc-force-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar este doc al top del CAG (entra primero antes que cualquier prioridad numerica)">
+            <input type="checkbox" class="conv-doc-force accent-green-600" ${isForced ? 'checked' : ''}>
+            <span class="text-green-700">Forzar CAG</span>
+          </label>
+          <label class="conv-doc-ragonly-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar a que este doc se quede solo en RAG y nunca entre al CAG">
+            <input type="checkbox" class="conv-doc-ragonly accent-amber-500" ${isRagOnly ? 'checked' : ''}>
+            <span class="text-amber-700">Solo RAG</span>
+          </label>
+          <span class="conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap"></span>
+          <span class="material-symbols-outlined ${statusColor} text-base" title="${d.doc_status}">${statusIcon}</span>
+          ${d.storage_path
+            ? `<a href="${esc(d.storage_path)}" target="_blank" rel="noopener" class="text-on-surface-variant/40 hover:text-primary transition-colors" title="Abrir documento en nueva pestaña">
+                 <span class="material-symbols-outlined text-lg">open_in_new</span>
+               </a>`
+            : ''}
           <button class="conv-doc-del text-on-surface-variant/30 hover:text-error transition-colors" data-id="${d.id}">
             <span class="material-symbols-outlined text-lg">delete</span>
           </button>
         </div>`;
       }).join('');
+
+      container.innerHTML = headerHtml + docsHtml + `
+        <div class="flex justify-end items-center gap-3 mt-3">
+          <span id="conv-docs-save-status" class="text-xs text-on-surface-variant"></span>
+          <button id="conv-docs-save-order" class="text-xs font-semibold text-primary hover:underline">
+            Guardar prioridades
+          </button>
+        </div>`;
+
+      const barEl     = container.querySelector('#cag-budget-bar');
+      const readoutEl = container.querySelector('#cag-budget-readout');
+
+      const BADGE_BASE = 'conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap';
+
+      function recalcAndRepaint() {
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        rows.sort((a, b) => {
+          const av = parseInt(a.querySelector('.conv-doc-order').value, 10);
+          const bv = parseInt(b.querySelector('.conv-doc-order').value, 10);
+          const aN = Number.isFinite(av) ? av : 1;
+          const bN = Number.isFinite(bv) ? bv : 1;
+          return aN - bN || a.dataset.id.localeCompare(b.dataset.id);
+        });
+        let accFit = 0;       // lo que realmente entra al CAG (cabe)
+        let accAttempted = 0; // lo que el usuario quiso meter (cabe + no cabe)
+        let overflowCount = 0;
+        for (const row of rows) {
+          const ragOnly = row.querySelector('.conv-doc-ragonly').checked;
+          const forced  = row.querySelector('.conv-doc-force').checked;
+          const ordVal  = parseInt(row.querySelector('.conv-doc-order').value, 10);
+          const ord     = Number.isFinite(ordVal) ? ordVal : 1;
+          const chars   = parseInt(row.dataset.chars, 10) || 0;
+          const badge   = row.querySelector('.conv-doc-fitbadge');
+
+          if (ragOnly || ord >= 9999) {
+            badge.textContent = 'SOLO RAG';
+            badge.className = BADGE_BASE + ' bg-amber-100 text-amber-700';
+          } else if (chars === 0) {
+            badge.textContent = 'SIN TEXTO';
+            badge.className = BADGE_BASE + ' bg-gray-100 text-gray-400';
+          } else if (forced || ord < 0) {
+            accAttempted += chars;
+            if ((accFit + chars) <= BUDGET_CHARS) {
+              accFit += chars;
+              badge.textContent = 'FORZADO';
+              badge.className = BADGE_BASE + ' bg-emerald-100 text-emerald-700 ring-1 ring-emerald-300';
+            } else {
+              overflowCount++;
+              badge.textContent = 'NO CABE';
+              badge.className = BADGE_BASE + ' bg-red-100 text-red-700';
+            }
+          } else if (ord === 0) {
+            accAttempted += chars;
+            if ((accFit + chars) <= BUDGET_CHARS) {
+              accFit += chars;
+              badge.textContent = 'EN CAG';
+              badge.className = BADGE_BASE + ' bg-green-100 text-green-700';
+            } else {
+              overflowCount++;
+              badge.textContent = 'NO CABE';
+              badge.className = BADGE_BASE + ' bg-red-100 text-red-700';
+            }
+          } else {
+            badge.textContent = 'RAG';
+            badge.className = BADGE_BASE + ' bg-blue-50 text-blue-700';
+          }
+        }
+        const parent = rows[0]?.parentNode;
+        if (parent) for (const r of rows) parent.appendChild(r);
+
+        // La barra y el contador muestran lo INTENTADO (lo que pediste meter al CAG).
+        // Si pasas del 100%, se pone roja para avisarte de que hay overflow.
+        const usedTokens = Math.ceil(accAttempted / 4);
+        const usedPctRaw = (accAttempted / BUDGET_CHARS) * 100;
+        const usedPct = Math.round(usedPctRaw);
+        if (readoutEl) {
+          const overflowNote = overflowCount > 0
+            ? ` · ${overflowCount} doc(s) no caben`
+            : '';
+          readoutEl.textContent = `${usedTokens.toLocaleString('es-ES')} / ${BUDGET_TOKENS.toLocaleString('es-ES')} tokens (${usedPct}%${overflowNote})`;
+          readoutEl.className = 'text-xs font-mono ' + (usedPctRaw > 100 ? 'text-error font-bold' : 'text-on-surface-variant');
+        }
+        if (barEl) {
+          barEl.style.width = Math.min(100, usedPct) + '%';
+          barEl.className = 'h-full transition-all ' + (usedPctRaw > 100 ? 'bg-error' : usedPctRaw > 90 ? 'bg-amber-500' : 'bg-primary');
+        }
+      }
+
+      // ── Auto-save con debounce ─────────────────────────────────
+      const statusEl = container.querySelector('#conv-docs-save-status');
+      let saveTimer = null;
+      let inFlight = false;
+      let queuedAfterFlight = false;
+
+      async function flushSave() {
+        if (inFlight) { queuedAfterFlight = true; return; }
+        inFlight = true;
+        if (statusEl) { statusEl.textContent = 'Guardando…'; statusEl.className = 'text-xs text-on-surface-variant'; }
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        const items = rows.map(r => ({
+          id: r.dataset.id,
+          sort_order: parseInt(r.querySelector('.conv-doc-order').value, 10) || 0,
+        }));
+        try {
+          await API.post(`/admin/data/programs/${ev.programId}/docs/reorder`, { items });
+          if (statusEl) { statusEl.textContent = 'Guardado ✓'; statusEl.className = 'text-xs text-green-600 font-semibold'; }
+          setTimeout(() => { if (statusEl && statusEl.textContent === 'Guardado ✓') statusEl.textContent = ''; }, 1500);
+        } catch (e) {
+          if (statusEl) { statusEl.textContent = 'Error al guardar: ' + e.message; statusEl.className = 'text-xs text-error font-semibold'; }
+        } finally {
+          inFlight = false;
+          if (queuedAfterFlight) { queuedAfterFlight = false; flushSave(); }
+        }
+      }
+
+      function scheduleSave() {
+        if (statusEl) { statusEl.textContent = 'Cambios sin guardar…'; statusEl.className = 'text-xs text-amber-600 font-semibold'; }
+        if (saveTimer) clearTimeout(saveTimer);
+        saveTimer = setTimeout(flushSave, 600);
+      }
+
+      // Bind events: cada cambio → recalc visual + scheduleSave
+      container.querySelectorAll('.conv-doc-order').forEach(inp => {
+        inp.addEventListener('input', () => { recalcAndRepaint(); scheduleSave(); });
+      });
+      container.querySelectorAll('.conv-doc-ragonly').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const row = cb.closest('.conv-doc-row');
+          const orderInput = row.querySelector('.conv-doc-order');
+          const forceCb = row.querySelector('.conv-doc-force');
+          if (cb.checked) {
+            if (forceCb && forceCb.checked) forceCb.checked = false;
+            orderInput.value = RAG_ONLY_SENTINEL;
+            orderInput.disabled = true;
+          } else {
+            orderInput.disabled = false;
+            orderInput.value = 1;
+          }
+          recalcAndRepaint();
+          scheduleSave();
+        });
+      });
+
+      container.querySelectorAll('.conv-doc-force').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const row = cb.closest('.conv-doc-row');
+          const orderInput = row.querySelector('.conv-doc-order');
+          const ragCb = row.querySelector('.conv-doc-ragonly');
+          if (cb.checked) {
+            if (ragCb && ragCb.checked) ragCb.checked = false;
+            orderInput.value = -1;
+            orderInput.disabled = true;
+          } else {
+            orderInput.disabled = false;
+            orderInput.value = 1;
+          }
+          recalcAndRepaint();
+          scheduleSave();
+        });
+      });
 
       container.querySelectorAll('.conv-doc-del').forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -957,10 +1163,28 @@ const Admin = (() => {
           } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
         });
       });
+
+      const saveBtn = container.querySelector('#conv-docs-save-order');
+      saveBtn?.addEventListener('click', async () => {
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        const items = rows.map(r => ({
+          id: r.dataset.id,
+          sort_order: parseInt(r.querySelector('.conv-doc-order').value, 10) || 0,
+        }));
+        try {
+          await API.post(`/admin/data/programs/${ev.programId}/docs/reorder`, { items });
+          Toast.show('Prioridades guardadas', 'ok');
+          convLoadDocs();
+        } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
+      });
+
+      // Pintar estado inicial
+      recalcAndRepaint();
     } catch (e) { container.innerHTML = `<p class="text-sm text-error">${e.message}</p>`; }
   }
 
-  /* ══ OLD CONVOCATORIAS TABLE (kept for backwards compat) ════ */
+
+  /* OLD CONVOCATORIAS TABLE (kept for backwards compat) ════ */
 
   async function loadPrograms() {
     setLoading('admin-programs-tbody');

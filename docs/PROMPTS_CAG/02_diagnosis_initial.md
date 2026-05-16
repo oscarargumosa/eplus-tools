@@ -72,6 +72,9 @@ Output format: a single JSON object with the structure below.
 === EVALUATION CRITERIA (call: {{call_code}}) ===
 {{criteria}}
 
+=== CALL & PROJECT DOCUMENTS (official sources the project must honour) ===
+{{call_documents}}
+
 === DESIGN SNAPSHOT (concise, for cross-checks) ===
 {{design_snapshot}}
 <!-- CACHE_BREAKPOINT -->

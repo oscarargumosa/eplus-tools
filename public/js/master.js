@@ -168,6 +168,12 @@
 
       const noChapters = chapters.length === 0;
 
+      // Inventario CAG del proyecto (qué docs entrarían al contexto del LLM)
+      let cagInv = null;
+      try {
+        cagInv = await API.get(`/master/projects/${doc.project_id}/cag-documents`);
+      } catch (_) { /* no-op */ }
+
       cont.innerHTML = `
         <div class="bg-white border border-outline-variant/20 rounded-2xl p-6">
           <div class="flex items-center justify-between mb-4">
@@ -186,6 +192,29 @@
               }
             </div>
           </div>
+
+          ${cagInv ? `
+            <details class="mb-4 bg-surface-container-lowest border border-outline-variant/20 rounded-lg" ${noChapters ? 'open' : ''}>
+              <summary class="px-4 py-3 cursor-pointer flex items-center justify-between hover:bg-surface-container-low">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-base text-on-surface-variant">folder_open</span>
+                  <span class="font-bold text-sm">Documentos en contexto (CAG)</span>
+                </div>
+                <span class="text-[10px] font-mono text-on-surface-variant">${(cagInv.docs || []).length} docs · ${(cagInv.total_tokens_estimated || 0).toLocaleString('es-ES')} tokens</span>
+              </summary>
+              <div class="px-4 py-3 border-t border-outline-variant/10 space-y-1.5">
+                ${(cagInv.docs || []).length === 0
+                  ? `<p class="text-xs text-on-surface-variant italic">No hay documentos con texto extraído para esta convocatoria. El Maestro se compilará sólo con el Diseño del proyecto.</p>`
+                  : (cagInv.docs || []).map(d => `
+                      <div class="flex items-center gap-3 text-xs">
+                        <span class="px-1.5 py-0.5 rounded ${d.origin === 'project' ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-700'} text-[10px] font-bold whitespace-nowrap">${d.origin === 'project' ? 'PROYECTO' : 'CONVOCATORIA'}</span>
+                        <span class="flex-1 truncate font-medium text-on-surface">${esc(d.title)}</span>
+                        <span class="font-mono text-[10px] text-on-surface-variant whitespace-nowrap">${(d.tokens_estimated || 0).toLocaleString('es-ES')} tok</span>
+                      </div>
+                    `).join('')}
+              </div>
+            </details>
+          ` : ''}
 
           ${noChapters ? `
             <div class="border-2 border-dashed border-outline-variant/30 rounded-xl p-6 text-center">

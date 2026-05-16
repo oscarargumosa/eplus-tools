@@ -61,11 +61,14 @@ Aim for 10-30 findings.
 === EVALUATION CRITERIA (full) ===
 {{criteria}}
 
-=== MASTER DOCUMENT V2 ===
-{{master_document}}
+=== CALL & PROJECT DOCUMENTS (official sources the project must honour) ===
+{{call_documents}}
 
 === DESIGN SNAPSHOT (for cross-checks) ===
 {{design_snapshot}}
+<!-- CACHE_BREAKPOINT -->
+=== MASTER DOCUMENT V2 ===
+{{master_document}}
 
 === INSTRUCTIONS ===
 Produce advanced diagnosis JSON. Flag everything that could improve

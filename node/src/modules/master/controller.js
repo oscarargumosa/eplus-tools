@@ -222,12 +222,14 @@ async function getFormTemplateFull(req, res) {
   } catch (e) { bad(res, 500, e.message); }
 }
 
-/* ── Call documents (CAG sources) ────────────────────────────── */
+/* ── CAG document sources (read-only inventory) ──────────────── */
 
-async function listCallDocuments(req, res) {
+async function listCagDocumentsForProject(req, res) {
   try {
-    const docs = await model.listCallDocuments(req.params.callId);
-    ok(res, docs);
+    const docs = await model.listProjectCagDocuments(req.params.projectId);
+    const totalChars = docs.reduce((acc, d) => acc + (d.body_text_chars || 0), 0);
+    const totalTokens = docs.reduce((acc, d) => acc + (d.tokens_estimated || 0), 0);
+    ok(res, { docs, total_chars: totalChars, total_tokens_estimated: totalTokens });
   } catch (e) { bad(res, 500, e.message); }
 }
 
@@ -318,20 +320,16 @@ async function compileMasterV1(req, res) {
     // Construir el contexto enriquecido del proyecto (sin truncar — ver fix)
     const enrichedContext = await developerModel.buildEnrichedContext(projectId, userId);
 
-    // Cargar documentos adjuntos del proyecto (CAG: solo si tienen body_text extraído).
-    // Marcados 'core' van primero. Si un doc no tiene body_text extraído, se ignora
-    // (extracción on-demand en endpoint futuro).
-    const [docRows] = await pool.query(
-      `SELECT d.id, d.title, d.doc_type, d.file_type, d.body_text, pd.doc_purpose
-       FROM documents d
-       JOIN project_documents pd ON pd.document_id = d.id
-       WHERE pd.project_id = ? AND d.status = 'active' AND d.body_text IS NOT NULL AND LENGTH(d.body_text) > 100
-       ORDER BY FIELD(pd.doc_purpose, 'core', 'support'), d.created_at`,
-      [projectId]
-    ).catch(() => [[]]);
-    const projectDocsText = docRows.length
-      ? docRows.map(d => `═════ ATTACHED DOC: ${d.title} (${d.doc_type || 'unknown'}) ═════\n${d.body_text}`).join('\n\n')
-      : '';
+    // Cargar documentos CAG: call docs (programme guide, call PDF…) vinculados a
+    // la convocatoria + project docs core subidos por el usuario.
+    const cagDocs = await model.loadProjectCagBundle(projectId);
+    const cagBundle = cagDocs.length
+      ? cagDocs.map(d => {
+          const header = d.origin === 'call' ? 'CALL DOCUMENT' : 'PROJECT DOCUMENT';
+          const kind = d.source_kind ? ` · ${d.source_kind}` : '';
+          return `═════ ${header}: ${d.title}${kind} ═════\n${d.body_text}`;
+        }).join('\n\n')
+      : '(no call or project documents with extracted text available)';
 
     // Cargar interviews del Prep Studio
     const [interviewRows] = await pool.query(
@@ -369,16 +367,11 @@ async function compileMasterV1(req, res) {
       ? evalRows.map(r => `${r.code} ${r.title} (max ${r.max_score})${r.q_code ? `\n  - ${r.q_code} ${r.q_title}` : ''}`).join('\n')
       : 'No specific evaluation criteria loaded for this call. Use general EU evaluation patterns (Relevance, Quality, Impact, Partnership).';
 
-    // Si hay docs adjuntos al proyecto, los añadimos al enriched_context.
-    // Van al final del bloque, después del Diseño, claramente delimitados.
-    const fullEnrichedContext = projectDocsText
-      ? `${enrichedContext}\n\n═══ ATTACHED PROJECT DOCUMENTS (${docRows.length}) ═══\n\n${projectDocsText}`
-      : enrichedContext;
-
     const vars = {
       call_code: '',
       criteria: evalCriteria,
-      enriched_context: fullEnrichedContext,
+      call_documents: cagBundle,
+      enriched_context: enrichedContext,
       writer_draft: writerDraft || '(no writer draft yet)',
       interviews: interviews || '(no interviews yet)',
     };
@@ -398,28 +391,74 @@ async function compileMasterV1(req, res) {
       sseSend('status', { phase: 'started', message: 'Cargado el contexto, contactando con el modelo...' });
     }
 
-    // Plan de capítulos del Master (10 capítulos fijos).
+    // Plan de capítulos del Master — estructura literal del formulario
+    // EACEA "ERASMUS BB and LS Type II" (universal para calls gestionadas
+    // por EACEA). 17 capítulos fijos + 1 capítulo por cada WP del proyecto.
+    // Cada capítulo es PROSA — sin tablas (las tablas las arma el exporter
+    // desde Calculator/Intake).
+    const [wpRows] = await pool.query(
+      `SELECT id, code, title, order_index FROM work_packages
+       WHERE project_id = ? ORDER BY order_index, code`,
+      [projectId]
+    );
+
     const CHAPTER_PLAN = [
-      { key: 'ch_1_executive_summary', type: 'summary', title: 'Resumen Ejecutivo',
-        focus: 'High-level overview of the whole project: what it does, why it matters, with whom, and what change it produces. Should read as a self-contained 2-page executive briefing.' },
-      { key: 'ch_2_relevance',         type: 'qa',      title: 'Por qué este proyecto: contexto, problema, necesidades, grupos objetivo',
-        focus: 'Establish the problem with evidence; describe target groups concretely; connect to EU and call priorities. The "why this, why now, why us".' },
-      { key: 'ch_3_approach',          type: 'qa',      title: 'Enfoque y metodología',
-        focus: 'How the project will operate: theory of change, methodology, design principles, innovation. Distinct from work packages — this is the HOW at a conceptual level.' },
-      { key: 'ch_4_wps',               type: 'wp',      title: 'Paquetes de Trabajo — desarrollo narrativo completo',
-        focus: 'Each WP developed in narrative form: objectives, activities, tasks, deliverables, milestones, responsible partner, timeline. Multi-page chapter — the heart of the Master.' },
-      { key: 'ch_5_consortium',        type: 'partner', title: 'Consorcio: capacidad y rol de cada partner',
-        focus: 'One section per partner explaining role, capacity, prior EU experience, key staff justification, and complementarity with the rest of the consortium.' },
-      { key: 'ch_6_impact',            type: 'impact',  title: 'Impacto esperado y difusión',
-        focus: 'Concrete expected impact on target groups, sector, territory and EU policy. Quantitative KPIs where possible. Dissemination strategy with channels and audiences.' },
-      { key: 'ch_7_sustainability',    type: 'qa',      title: 'Sostenibilidad y explotación post-proyecto',
-        focus: 'What happens after M48. Who owns the outputs, who maintains them, financial sustainability, governance after the funded period. The "second life" of the project.' },
-      { key: 'ch_8_budget',            type: 'budget',  title: 'Justificación narrativa del presupuesto',
-        focus: 'Qualitative rationale of why each major budget area exists at the scale it does. Reference the work plan, not raw numbers. Cost-effectiveness arguments.' },
-      { key: 'ch_9_quality',           type: 'qa',      title: 'Aseguramiento de calidad y gestión de riesgos',
-        focus: 'Quality control mechanisms, monitoring, evaluation, internal audit, risk register with mitigation. Demonstrate the team has thought through what could go wrong.' },
-      { key: 'ch_10_alignment',        type: 'qa',      title: 'Alineación estratégica con prioridades de la convocatoria y estrategias UE',
-        focus: 'Map the project explicitly to call priorities and to relevant EU strategies (Farm to Fork, Green Deal, etc. as applicable). Make the evaluator s job easy.' },
+      { key: 'ch_summary', type: 'summary', title: 'Project Summary — Resumen ejecutivo ampliado',
+        focus: 'Extended executive overview: acronym, full title, what the project does, why it matters now, target groups, expected change, consortium spine, expected impact. Self-contained 2-page brief that an evaluator can read in 5 min and grasp the proposal.' },
+
+      // 1. RELEVANCE
+      { key: 'ch_1_1_background', type: 'relevance', title: '1.1 — Contexto y objetivos generales',
+        focus: 'Background and rationale of the project. How it is relevant to the SCOPE of the call. How it addresses the GENERAL OBJECTIVES of the call. Project contribution to the call PRIORITIES (if applicable). Connect explicitly to the call document quoted in {{call_documents}}.' },
+      { key: 'ch_1_2_needs', type: 'relevance', title: '1.2 — Análisis de necesidades y objetivos específicos',
+        focus: 'Sound needs analysis aligned with the specific objectives of the call. What issue/challenge/gap the project addresses. Each project-specific objective stated CLEARLY, MEASURABLE, REALISTIC and ACHIEVABLE within the duration; for each one, the indicators of achievement (unit of measurement, baseline, target).' },
+      { key: 'ch_1_3_complementarity', type: 'relevance', title: '1.3 — Complementariedad, innovación y valor añadido europeo',
+        focus: 'How the project builds on results of past activities in the field; innovative aspects (if any). Complementarity with activities by other organisations. Trans-national dimension; impact across the EU; potential to use results in other countries; cross-border cooperation among Programme and Partner countries. Precise references to any prior or ongoing projects this proposal builds on.' },
+
+      // 2.1 QUALITY — Project design and implementation
+      { key: 'ch_2_1_1_concept', type: 'quality', title: '2.1.1 — Concepto y metodología',
+        focus: 'Approach and methodology behind the project. Why they are the most suitable for achieving the objectives. Theory of change, design principles, methodological choices, conceptual articulation across WPs.' },
+      { key: 'ch_2_1_2_management', type: 'quality', title: '2.1.2 — Gestión del proyecto, aseguramiento de calidad, seguimiento y evaluación',
+        focus: 'Measures to ensure high-quality, on-time implementation. Methods for quality control, planning, monitoring. Evaluation methods and indicators (quantitative and qualitative) — including unit of measurement, baseline, target. Make explicit how progress will be measured and reported.' },
+      { key: 'ch_2_1_3_staff', type: 'quality', title: '2.1.3 — Equipos, personal y expertos del proyecto',
+        focus: 'Describe project teams and how they work together. List ALL key staff (budget category A) by function/profile — ONE NARRATIVE PARAGRAPH PER PERSON: name and function, organisation, role/tasks in this project, professional profile and expertise, why this person is the right fit. NO TABLES. Close with a paragraph explaining how the teams complement each other.' },
+      { key: 'ch_2_1_4_cost_effectiveness', type: 'quality', title: '2.1.4 — Coste-eficacia y gestión financiera',
+        focus: 'Measures to ensure that the proposed results and objectives are achieved in the MOST COST-EFFECTIVE way. Arrangements for financial management — how resources will be allocated and managed within the consortium. Do NOT compare costs per WP and do NOT include numbers; explain qualitatively why the budget is cost-effective.' },
+      { key: 'ch_2_1_5_risk', type: 'quality', title: '2.1.5 — Gestión de riesgos',
+        focus: 'Critical risks, uncertainties, difficulties for implementation. ONE NARRATIVE PARAGRAPH PER RISK: description, work package(s) affected, impact (high/medium/low), likelihood (high/medium/low) even after mitigation, proposed mitigation measures, contingency. NO TABLES. Close with a paragraph on the overall risk posture and how the consortium will react to unforeseen events.' },
+
+      // 2.2 QUALITY — Partnership and cooperation arrangements
+      { key: 'ch_2_2_1_consortium_setup', type: 'consortium', title: '2.2.1 — Configuración del consorcio',
+        focus: 'Participants (Beneficiaries, Affiliated Entities, Associated Partners, others). For each partner: a narrative paragraph with role, expertise contributed, complementarity, valid role and adequate resources. NO TABLES. Close with a paragraph on how the partners come together as a whole greater than the sum of parts.' },
+      { key: 'ch_2_2_2_consortium_management', type: 'consortium', title: '2.2.2 — Gestión del consorcio y toma de decisiones',
+        focus: 'Management structures and decision-making mechanisms. How decisions will be taken; communication channels (frequency, format); planning and control methods. Adapt the level of detail to the complexity and scale of the project.' },
+
+      // 3. IMPACT
+      { key: 'ch_3_1_impact', type: 'impact', title: '3.1 — Impacto y ambición',
+        focus: 'Expected SHORT-, MEDIUM- and LONG-term effects. Target groups (concrete, not abstract) and HOW they will benefit. What will change for them. Quantitative KPIs where possible. Tie the impact narrative back to objectives stated in 1.2.' },
+      { key: 'ch_3_2_dissemination', type: 'impact', title: '3.2 — Comunicación, diseminación y visibilidad',
+        focus: 'Communication and dissemination activities to promote results and maximise impact: to whom, in what format, how many, through which channels and why those channels. Reaching target groups, stakeholders, policymakers, general public. Plan for ensuring EU funding visibility (acknowledgement, logos, recommended phrasing).' },
+      { key: 'ch_3_3_sustainability', type: 'impact', title: '3.3 — Sostenibilidad y continuación',
+        focus: 'Follow-up after EU funding ends. How impact will be sustained. What needs to be done, by whom, with what resources. Which parts of the project should be continued or maintained and how. Possible synergies/complementarities with other (EU-funded) activities that can build on the results.' },
+
+      // 4. WORK PLAN
+      { key: 'ch_4_1_workplan', type: 'workplan', title: '4.1 — Plan de trabajo (visión general)',
+        focus: 'Overall structure of the work plan: list of WPs at a glance, their interdependencies, the project rhythm (kick-off, mid-term review, final), how WPs articulate towards the project objectives stated in 1.2. PROSE, no Gantt — the Gantt is rendered separately from data.' },
+
+      // 4.2 — Work Packages (dynamic, one chapter per WP)
+      ...wpRows.map(wp => ({
+        key: `ch_4_2_wp_${(wp.code || '').toLowerCase().replace(/[^a-z0-9_]+/g, '_') || wp.id.slice(0, 6)}`,
+        type: 'wp',
+        title: `4.2 — ${wp.code || ''} ${wp.title}`,
+        focus: `Develop Work Package "${wp.code} ${wp.title}" in full narrative form. Cover: WP objectives (expected outcomes), lead beneficiary and rationale, duration, articulation with other WPs. Then THREE NARRATIVE SUBSECTIONS — Activities, Milestones, Deliverables — each with ONE paragraph per task / milestone / deliverable belonging to this WP. For each task: what is done, by which partner, role (COO/BEN/AE/AP/OTHER), in-kind contributions or subcontracting (and its justification). For each milestone: what it marks, success criteria, due date (project month), means of verification. For each deliverable: what it is, format, language, dissemination level (PU/SEN/…), due date, how it will be used after delivery. NO TABLES — pure prose with light Markdown headings ## Activities, ## Milestones, ## Deliverables.`,
+        ref_entity_type: 'work_package',
+        ref_entity_id: wp.id,
+      })),
+
+      // 5. OTHER
+      { key: 'ch_5_1_ethics', type: 'other', title: '5.1 — Ética',
+        focus: 'Ethics issues that may arise during implementation and measures to address them. Gender mainstreaming. Children\'s rights if applicable. Data protection. Inclusion. If the project has none of these dimensions, say so explicitly — "Not applicable" is a valid answer in this subsection.' },
+      { key: 'ch_5_2_security', type: 'other', title: '5.2 — Seguridad',
+        focus: 'Security issues if applicable (sensitive data, critical infrastructure, dual-use). Most civil projects answer "Not applicable" here. If applicable, describe and propose mitigation.' },
     ];
 
     if (wantStream) {
@@ -524,13 +563,31 @@ async function compileMasterV1(req, res) {
           throw new Error(`Chapter ${ch.key}: parse fail or empty body`);
         }
 
+        // El plan usa tipos descriptivos (relevance, quality, consortium,
+        // workplan, other) que no caben en el ENUM de la BD. Mapeamos al
+        // enum existente (summary/wp/partner/impact/budget/qa/custom) sin
+        // perder la pista (el chapter_key conserva la jerarquía EACEA).
+        const TYPE_MAP = {
+          summary: 'summary',
+          relevance: 'qa',
+          quality: 'qa',
+          workplan: 'qa',
+          consortium: 'partner',
+          impact: 'impact',
+          wp: 'wp',
+          other: 'custom',
+        };
+        const dbChapterType = TYPE_MAP[ch.type] || 'custom';
+
         const savedCh = await model.createChapter({
           masterDocId,
           chapterKey: parsedCh.chapter_key || ch.key,
-          chapterType: parsedCh.chapter_type || ch.type,
+          chapterType: dbChapterType,
           title: parsedCh.title || ch.title,
           body: parsedCh.body || '',
           sortOrder: i,
+          refEntityType: ch.ref_entity_type || null,
+          refEntityId: ch.ref_entity_id || null,
         });
 
         const len = (parsedCh.body || '').length;
@@ -628,9 +685,21 @@ async function runDiagnosis(req, res) {
     ).catch(() => [[]]);
     const criteria = evalRows.map(r => `${r.code} ${r.title} (max ${r.max_score})${r.q_code ? `\n  - ${r.q_code} ${r.q_title}` : ''}`).join('\n');
 
+    // Cargar bundle CAG (call docs + project docs core) para que el
+    // diagnose contraste el Master contra el reglamento oficial.
+    const cagDocs = await model.loadProjectCagBundle(projectId);
+    const cagBundle = cagDocs.length
+      ? cagDocs.map(d => {
+          const header = d.origin === 'call' ? 'CALL DOCUMENT' : 'PROJECT DOCUMENT';
+          const kind = d.source_kind ? ` · ${d.source_kind}` : '';
+          return `═════ ${header}: ${d.title}${kind} ═════\n${d.body_text}`;
+        }).join('\n\n')
+      : '(no call or project documents with extracted text available)';
+
     const vars = {
       call_code: '',
       criteria: criteria || 'Use general EU evaluation patterns.',
+      call_documents: cagBundle,
       master_document: masterText,
       design_snapshot: designSnapshot,
     };
@@ -737,75 +806,6 @@ async function runDiagnosis(req, res) {
 
 /* ── Subida de documentos canónicos de la convocatoria (CAG sources) ── */
 
-/**
- * Sube un PDF o DOCX a una convocatoria, extrae el texto, lo guarda en
- * call_documents.body_text para que esté disponible para el pipeline CAG.
- *
- * Multipart: req.file con campo "file". req.body con doc_kind, title,
- * language, is_core.
- */
-async function uploadCallDocument(req, res) {
-  try {
-    if (!req.file) return bad(res, 400, 'file is required (multipart/form-data, field "file")');
-    if (req.user.role !== 'admin') return bad(res, 403, 'admin role required');
-
-    const callId = req.params.callId;
-    const { doc_kind, title, language = 'en', is_core = '1' } = req.body || {};
-
-    if (!doc_kind || !title) {
-      return bad(res, 400, 'doc_kind and title are required');
-    }
-
-    const allowedKinds = ['call_pdf', 'programme_guide', 'annotated_grant', 'eval_criteria', 'reference', 'annex'];
-    if (!allowedKinds.includes(doc_kind)) {
-      return bad(res, 400, `doc_kind must be one of: ${allowedKinds.join(', ')}`);
-    }
-
-    // Extraer texto según mimetype
-    const mime = req.file.mimetype || '';
-    const filename = req.file.originalname || 'unnamed';
-    let bodyText = '';
-
-    if (mime === 'application/pdf' || filename.toLowerCase().endsWith('.pdf')) {
-      const pdfParse = require('pdf-parse');
-      const result = await pdfParse(req.file.buffer);
-      bodyText = result.text || '';
-    } else if (mime.includes('officedocument.wordprocessingml') || filename.toLowerCase().endsWith('.docx')) {
-      const mammoth = require('mammoth');
-      const result = await mammoth.extractRawText({ buffer: req.file.buffer });
-      bodyText = result.value || '';
-    } else if (mime.startsWith('text/') || filename.toLowerCase().endsWith('.txt') || filename.toLowerCase().endsWith('.md')) {
-      bodyText = req.file.buffer.toString('utf8');
-    } else {
-      return bad(res, 415, `Unsupported file type: ${mime}. Use PDF, DOCX, TXT or MD.`);
-    }
-
-    const charCount = bodyText.length;
-    const tokenCountEst = Math.ceil(charCount / 3.5);
-
-    const id = genUUID();
-    await pool.query(
-      `INSERT INTO call_documents
-         (id, call_id, doc_kind, title, source_filename, language,
-          body_text, char_count, token_count_est, is_core, uploaded_by_user_id)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      [id, callId, doc_kind, title, filename, language,
-       bodyText, charCount, tokenCountEst,
-       is_core === '0' || is_core === false ? 0 : 1,
-       req.user.id]
-    );
-
-    ok(res, {
-      id, call_id: callId, doc_kind, title,
-      char_count: charCount, token_count_est: tokenCountEst,
-      preview: bodyText.substring(0, 400),
-    });
-  } catch (e) {
-    console.error('[uploadCallDocument] error:', e);
-    bad(res, 500, e.message);
-  }
-}
-
 /* ── Stubs restantes (devolverán 501 hasta que se conecten) ─── */
 
 async function notImplemented(req, res) {
@@ -839,13 +839,11 @@ module.exports = {
   // form templates
   listFormTemplates,
   getFormTemplateFull,
-  // call documents
-  listCallDocuments,
+  // CAG document sources (read-only inventory)
+  listCagDocumentsForProject,
   // diagnoses
   listDiagnoses,
   getDiagnosis,
-  // upload call documents (CAG sources)
-  uploadCallDocument,
   // LLM-powered (CAG)
   compileMasterV1,
   runDiagnosis,

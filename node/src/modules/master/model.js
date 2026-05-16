@@ -278,27 +278,132 @@ async function listMappingForTemplate(formTemplateId) {
   return rows;
 }
 
-/* ── call_documents (CAG core sources) ───────────────────────── */
+/* ── CAG document sources ────────────────────────────────────── */
+// Documentos con texto completo (documents.body_text) que se cargan al
+// contexto del LLM en compile/diagnose. Dos orígenes:
+//   1) Convocatoria (Admin → Plus Data → Call Documents): vinculados a la
+//      intake_programs vía call_documents (v053). Compartidos por todos los
+//      proyectos de esa convocatoria.
+//   2) Proyecto (usuario subió en Writer → Relevancia, con doc_purpose='core').
+//      Privados del proyecto.
+// El RAG vectorizado vive en paralelo en document_chunks y lo consume el
+// Writer cascade; aquí solo nos interesa el texto completo.
 
-async function listCallDocuments(callId) {
-  const [rows] = await pool.query(
-    `SELECT id, call_id, doc_kind, title, source_filename, language,
-            page_count, char_count, token_count_est, is_core,
-            uploaded_by_user_id, created_at, updated_at
-     FROM call_documents
-     WHERE call_id = ?
-     ORDER BY is_core DESC, doc_kind, title`,
-    [callId]
+async function listProjectCagDocuments(projectId) {
+  const [callDocs] = await pool.query(
+    `SELECT d.id, d.title, d.file_type, d.body_text_chars, d.tokens_estimated,
+            cd.doc_type AS source_kind, 'call' AS origin
+     FROM projects p
+     JOIN intake_programs ip ON ip.action_type = p.type
+     JOIN call_documents cd ON cd.program_id = ip.id
+     JOIN documents d ON d.id = cd.document_id
+     WHERE p.id = ?
+       AND d.body_text IS NOT NULL
+       AND CHAR_LENGTH(d.body_text) > 0
+     ORDER BY FIELD(cd.doc_type, 'call_document', 'programme_guide', 'annex', 'template', 'faq', 'other'),
+              cd.sort_order, d.title`,
+    [projectId]
   );
-  return rows;
+  const [projectDocs] = await pool.query(
+    `SELECT d.id, d.title, d.file_type, d.body_text_chars, d.tokens_estimated,
+            d.doc_type AS source_kind, 'project' AS origin
+     FROM project_documents pd
+     JOIN documents d ON d.id = pd.document_id
+     WHERE pd.project_id = ?
+       AND pd.doc_purpose = 'core'
+       AND d.body_text IS NOT NULL
+       AND CHAR_LENGTH(d.body_text) > 0
+     ORDER BY pd.added_at`,
+    [projectId]
+  );
+  return [...callDocs, ...projectDocs];
 }
 
-async function getCallDocumentBody(id) {
-  const [rows] = await pool.query(
-    `SELECT id, body_text, char_count, token_count_est FROM call_documents WHERE id = ?`,
-    [id]
+/**
+ * Carga los documentos CAG de un proyecto con prioridad combinada + cap único.
+ *
+ * Política (modelo C — flexible):
+ *   - Cap único de ~180k tokens (720k chars) para el bundle completo.
+ *   - Si el usuario no sube nada, el admin puede ocupar todo el cap.
+ *   - Si el usuario sube docs core en Writer → Relevancia, esos entran
+ *     primero y desplazan a los del admin con sort_order más alto.
+ *
+ * Orden de prioridad:
+ *   1. project_documents.doc_purpose='core' (más reciente primero) —
+ *      el usuario manda en su proyecto.
+ *   2. call_documents ordenados por sort_order ASC (admin decide).
+ *
+ * Dedupe por título normalizado (filtra los "(2)", "(3)" del mismo PDF).
+ * El último doc que excede el cap se trunca, el resto se descarta.
+ *
+ * @param {string} projectId
+ * @param {object} [opts]
+ * @param {number} [opts.maxChars=320000]  ~80k tokens para el bundle.
+ *   El resto del contexto consume ~110k (design enriched ~78k,
+ *   system+criteria+writer+interviews+chapter spec ~25k, output ~8k)
+ *   → deja ~10k de margen sobre los 200k de Sonnet 4.
+ */
+async function loadProjectCagBundle(projectId, opts = {}) {
+  const maxChars = opts.maxChars || 320_000;
+
+  // Solo docs marcados explícitamente como CAG (sort_order <= 0). El resto
+  // (sort_order >= 1, default) se queda en RAG y no consume budget.
+  const [callRows] = await pool.query(
+    `SELECT d.id, d.title, d.body_text, cd.doc_type AS source_kind, 'call' AS origin
+     FROM projects p
+     JOIN intake_programs ip ON ip.action_type = p.type
+     JOIN call_documents cd ON cd.program_id = ip.id
+     JOIN documents d ON d.id = cd.document_id
+     WHERE p.id = ?
+       AND d.body_text IS NOT NULL
+       AND CHAR_LENGTH(d.body_text) > 0
+       AND cd.sort_order <= 0
+     ORDER BY cd.sort_order ASC, d.title`,
+    [projectId]
   );
-  return rows[0] || null;
+  const [ownRows] = await pool.query(
+    `SELECT d.id, d.title, d.body_text, d.doc_type AS source_kind, 'project' AS origin
+     FROM project_documents pd
+     JOIN documents d ON d.id = pd.document_id
+     WHERE pd.project_id = ?
+       AND pd.doc_purpose = 'core'
+       AND d.body_text IS NOT NULL
+       AND CHAR_LENGTH(d.body_text) > 0
+     ORDER BY pd.added_at DESC`,
+    [projectId]
+  );
+
+  // Orden combinado: docs del usuario primero (recientes ganan), luego
+  // call docs por sort_order (admin decide). Si el usuario sube algo
+  // crítico, desplaza el último doc del admin que ya no quepa.
+  const ordered = [...ownRows, ...callRows];
+
+  const seenTitles = new Set();
+  const out = [];
+  let totalChars = 0;
+  for (const d of ordered) {
+    const titleKey = (d.title || '').toLowerCase().replace(/\s*\(\d+\)\s*$/, '').trim();
+    if (titleKey && seenTitles.has(titleKey)) continue;
+    seenTitles.add(titleKey);
+
+    const remaining = maxChars - totalChars;
+    if (remaining <= 0) break;
+
+    const body = d.body_text || '';
+    if (body.length <= remaining) {
+      out.push(d);
+      totalChars += body.length;
+    } else {
+      out.push({
+        ...d,
+        body_text: body.slice(0, remaining) + `\n\n[…truncado a ${remaining} chars para encajar en el bundle CAG…]`,
+        truncated: true,
+      });
+      totalChars = maxChars;
+      break;
+    }
+  }
+  return out;
 }
 
 /* ── Diagnoses ───────────────────────────────────────────────── */
@@ -351,9 +456,9 @@ module.exports = {
   getFormTemplate,
   listFormQuestions,
   listMappingForTemplate,
-  // call documents
-  listCallDocuments,
-  getCallDocumentBody,
+  // CAG document sources (call + project core)
+  listProjectCagDocuments,
+  loadProjectCagBundle,
   // diagnoses
   listDiagnoses,
   getDiagnosisWithItems,

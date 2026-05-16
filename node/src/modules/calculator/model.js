@@ -1106,6 +1106,47 @@ async function saveFullState(projectId, data) {
     );
     const partnerIds = partners.map(p => p.id);
 
+    // 0. Snapshot de campos que SOLO toca el Writer/Developer y que el
+    //    DELETE+INSERT siguiente machacaría si no los preservamos.
+    //    Bug raíz: el state del Designer no incluye summary/objectives/
+    //    description (esos son del Writer); al re-aprobar Diseñar el
+    //    INSERT los ponía a NULL y se perdía el trabajo del Writer.
+    const wpPreserveByOrder = {};
+    const actPreserveByTypeLabel = {};   // primary key: wp_order|type|label|subtype
+    const actPreserveByPosition = {};    // fallback key: wp_order|act_order
+    {
+      const [existingWPs] = await conn.execute(
+        'SELECT id, order_index, summary, objectives, duration_from_month, duration_to_month FROM work_packages WHERE project_id = ? ORDER BY order_index',
+        [projectId]
+      );
+      for (const wp of existingWPs) {
+        wpPreserveByOrder[wp.order_index] = {
+          summary: wp.summary,
+          objectives: wp.objectives,
+          duration_from_month: wp.duration_from_month,
+          duration_to_month: wp.duration_to_month,
+        };
+      }
+      if (existingWPs.length) {
+        const wpIds = existingWPs.map(w => w.id);
+        const wpPh = wpIds.map(() => '?').join(',');
+        const [existingActs] = await conn.execute(
+          `SELECT a.id, a.wp_id, a.type, a.label, a.subtype, a.description, a.order_index, w.order_index AS wp_order
+           FROM activities a JOIN work_packages w ON w.id = a.wp_id
+           WHERE w.project_id = ?
+           ORDER BY w.order_index, a.order_index`,
+          [projectId]
+        );
+        for (const a of existingActs) {
+          if (!a.description) continue;
+          const kTL = `${a.wp_order}|${a.type}|${a.label || ''}|${a.subtype || ''}`;
+          const kPos = `${a.wp_order}|${a.order_index}`;
+          if (!(kTL in actPreserveByTypeLabel)) actPreserveByTypeLabel[kTL] = a.description;
+          if (!(kPos in actPreserveByPosition)) actPreserveByPosition[kPos] = a.description;
+        }
+      }
+    }
+
     // 1. Delete existing data (reverse dependency order)
     if (partnerIds.length) {
       const ph = partnerIds.map(() => '?').join(',');
@@ -1153,20 +1194,9 @@ async function saveFullState(projectId, data) {
       }
     }
 
-    // 4. Insert routes
-    if (data.routes) {
-      for (const [key, route] of Object.entries(data.routes)) {
-        const [a, b] = key.split('_');
-        await conn.execute(
-          'INSERT INTO routes (id, project_id, endpoint_a, endpoint_b, distance_km, eco_travel, custom_rate) VALUES (?, ?, ?, ?, ?, ?, ?)',
-          [genUUID(), projectId, a, b, route.km || 0, route.green ? 1 : 0, route.custom_rate != null ? route.custom_rate : null]
-        );
-      }
-    }
-
-    // 5. Insert extra destinations — keep a map { frontendId(_edN) → dbUuid } so
-    //    activities that reference extra_dests as host (Brussels Event, etc.) can
-    //    be persisted with the correct uuid in host_extra_dest_id.
+    // 4. Insert extra destinations FIRST (antes que routes) — necesitamos el
+    //    mapping { frontendId(_edN) → dbUuid } para traducir los endpoints
+    //    de las routes que apuntan a extra_dests (ej. Brussels Event).
     const extraDestIdMap = {};
     if (data.extraDests && data.extraDests.length) {
       let edIdx = 0;
@@ -1182,23 +1212,87 @@ async function saveFullState(projectId, data) {
       }
     }
 
+    // 5. Insert routes — el frontend genera el key con routeKey(a,b) =
+    //    (a<b ? a+'_'+b : b+'_'+a). Si un endpoint es '_edN' (extra_dest)
+    //    aparece primero porque '_' < '0-9a-f'. Entonces key='_edN_UUID'.
+    //    Un split('_') ingenuo daría ['', 'edN', 'UUID'] y rompe todo.
+    //
+    //    Parser robusto: identifica los dos endpoints sabiendo que un
+    //    endpoint válido es o un UUID (36 chars con 4 guiones) o '_edN'.
+    const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    const EDN_RE  = /^_?ed\d+$/i;
+    function isValidEndpoint(s) { return !!s && (UUID_RE.test(s) || EDN_RE.test(s)); }
+    function parseRouteKey(key) {
+      for (let i = 1; i < key.length - 1; i++) {
+        if (key[i] !== '_') continue;
+        const a = key.substring(0, i);
+        const b = key.substring(i + 1);
+        if (isValidEndpoint(a) && isValidEndpoint(b)) return [a, b];
+      }
+      return null;
+    }
+    function translateEndpoint(ep) {
+      if (!ep) return null;
+      if (UUID_RE.test(ep)) return ep;                      // partner UUID — tal cual
+      if (extraDestIdMap[ep]) return extraDestIdMap[ep];    // _edN exacto
+      if (extraDestIdMap['_' + ep]) return extraDestIdMap['_' + ep]; // edN → _edN
+      if (ep.startsWith('_') && extraDestIdMap[ep.slice(1)]) return extraDestIdMap[ep.slice(1)];
+      return null;
+    }
+    if (data.routes) {
+      for (const [key, route] of Object.entries(data.routes)) {
+        const parsed = parseRouteKey(key);
+        if (!parsed) continue; // key malformada → descarta
+        const a = translateEndpoint(parsed[0]);
+        const b = translateEndpoint(parsed[1]);
+        if (!a || !b) continue;
+        await conn.execute(
+          'INSERT INTO routes (id, project_id, endpoint_a, endpoint_b, distance_km, eco_travel, custom_rate) VALUES (?, ?, ?, ?, ?, ?, ?)',
+          [genUUID(), projectId, a, b, route.km || 0, route.green ? 1 : 0, route.custom_rate != null ? route.custom_rate : null]
+        );
+      }
+    }
+
     // 6. Insert work packages + activities + details
     if (data.wps && data.wps.length) {
       for (let wi = 0; wi < data.wps.length; wi++) {
         const wp = data.wps[wi];
         const wpId = genUUID();
+        // Preservar campos del Writer si el state del Designer no los trae.
+        // El Designer no incluye summary/objectives/duration_*; sin esto se
+        // perdería el trabajo del Writer al re-aprobar Diseñar.
+        const preserved = wpPreserveByOrder[wi] || {};
+        const finalSummary    = (wp.summary    != null && wp.summary    !== '') ? wp.summary    : (preserved.summary    || null);
+        // objectives y duration_* hoy no se insertan aquí (mantenemos lo que
+        // ya hay en BD): para eso movemos a UPDATE tras el INSERT.
         await conn.execute(
           'INSERT INTO work_packages (id, project_id, order_index, code, title, summary, category, leader_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-          [wpId, projectId, wi, `WP${wi + 1}`, wp.name || wp.desc || `WP${wi + 1}`, wp.summary || null, wp._cat || null, wp.leader || null]
+          [wpId, projectId, wi, `WP${wi + 1}`, wp.name || wp.desc || `WP${wi + 1}`, finalSummary, wp._cat || null, wp.leader || null]
         );
+        // Restaurar también objectives + duration_* si los teníamos
+        if (preserved.objectives != null || preserved.duration_from_month != null || preserved.duration_to_month != null) {
+          await conn.execute(
+            'UPDATE work_packages SET objectives = ?, duration_from_month = ?, duration_to_month = ? WHERE id = ?',
+            [preserved.objectives || null, preserved.duration_from_month, preserved.duration_to_month, wpId]
+          );
+        }
 
         if (wp.activities && wp.activities.length) {
           for (let ai = 0; ai < wp.activities.length; ai++) {
             const act = wp.activities[ai];
             const actId = genUUID();
+            // Preservar description de actividades: match primero por
+            // (wp_order, type, label, subtype) y fallback por (wp_order, position).
+            let preservedDesc = null;
+            if (!act.desc) {
+              const kTL = `${wi}|${act.type}|${act.label || ''}|${act.subtype || ''}`;
+              const kPos = `${wi}|${ai}`;
+              preservedDesc = actPreserveByTypeLabel[kTL] || actPreserveByPosition[kPos] || null;
+            }
+            const finalDesc = (act.desc != null && act.desc !== '') ? act.desc : preservedDesc;
             await conn.execute(
               `INSERT INTO activities (id, wp_id, type, label, subtype, description, date_start, date_end, online, order_index, gantt_start_month, gantt_end_month) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-              [actId, wpId, act.type, act.label || '', act.subtype || null, act.desc || null,
+              [actId, wpId, act.type, act.label || '', act.subtype || null, finalDesc,
                act.date_start || null, act.date_end || null, act.online ? 1 : 0, ai,
                act._gantt_start || null, act._gantt_end || null]
             );
@@ -1393,7 +1487,9 @@ async function loadFullState(projectId) {
   const [edRows] = await db.execute(
     'SELECT id, name, country, accommodation_rate, subsistence_rate FROM extra_destinations WHERE project_id = ? ORDER BY order_index, id', [projectId]
   );
-  const extraDests = edRows.map(r => ({ name: r.name, country: r.country || '', aloj: Number(r.accommodation_rate), mant: Number(r.subsistence_rate) }));
+  // db_id es el uuid real en BD — el frontend lo necesita para traducir
+  // las keys de routes (que en BD usan el uuid pero en el state usan _edN).
+  const extraDests = edRows.map(r => ({ db_id: r.id, name: r.name, country: r.country || '', aloj: Number(r.accommodation_rate), mant: Number(r.subsistence_rate) }));
   // El frontend hidrata extraDests con id '_ed1', '_ed2', ... (ver calculator.js:2901
   // donde map (ed, i) => '_ed' + (i + 1)), empieza en 1, no en 0. Aquí seguimos esa
   // convención para que el dropdown encuentre el match al renderizar.
