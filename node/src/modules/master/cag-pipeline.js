@@ -139,13 +139,12 @@ async function runPrompt(promptKey, vars = {}, opts = {}) {
 
   // System prompt: siempre cacheable (es estable por prompt y por sesión)
   const systemText = tpl.systemTemplate;
-
-  // User prompt: parte variable; podemos añadir bloques cacheables extra
-  // (call documents, master document) ANTES del user prompt final para
-  // maximizar cache hits entre prompts del mismo proyecto.
-  const userText = substitute(tpl.userTemplate, vars);
-
   const systemBlocks = [{ content: systemText, cache: true }];
+
+  // User prompt: si contiene <!-- CACHE_BREAKPOINT -->, partir en 2 bloques.
+  // El primero (cacheable) lleva las partes pesadas y estables (criteria, design,
+  // writer draft, interviews). El segundo (variable) lleva los datos por capítulo.
+  const userTextFull = substitute(tpl.userTemplate, vars);
   const userBlocks = [];
 
   if (opts.cacheableUserBlocks && Array.isArray(opts.cacheableUserBlocks)) {
@@ -155,12 +154,25 @@ async function runPrompt(promptKey, vars = {}, opts = {}) {
       }
     }
   }
-  userBlocks.push({ content: userText, cache: false });
+
+  const cacheMarker = '<!-- CACHE_BREAKPOINT -->';
+  if (userTextFull.includes(cacheMarker)) {
+    const parts = userTextFull.split(cacheMarker);
+    // Todas las partes intermedias se marcan cacheables; solo la última es variable.
+    for (let i = 0; i < parts.length - 1; i++) {
+      if (parts[i].trim()) userBlocks.push({ content: parts[i], cache: true });
+    }
+    userBlocks.push({ content: parts[parts.length - 1], cache: false });
+  } else {
+    userBlocks.push({ content: userTextFull, cache: false });
+  }
 
   // Pre-llamada: log estimación de tokens
   const estimatedInput = estimateTokens(systemText) +
     userBlocks.reduce((s, b) => s + estimateTokens(b.content || ''), 0);
-  console.log(`[cag] runPrompt(${promptKey}) — input ≈ ${estimatedInput} tokens (${userBlocks.length} user blocks, ${userBlocks.filter(b => b.cache).length} cacheable)`);
+  const cacheableTokens = estimateTokens(systemText) +
+    userBlocks.filter(b => b.cache).reduce((s, b) => s + estimateTokens(b.content || ''), 0);
+  console.log(`[cag] runPrompt(${promptKey}) — input ≈ ${estimatedInput} tokens (${userBlocks.length} user blocks, ${userBlocks.filter(b => b.cache).length} cacheable, ~${cacheableTokens} cacheable tokens)`);
 
   const response = await callWithCache({
     systemBlocks,
@@ -169,6 +181,7 @@ async function runPrompt(promptKey, vars = {}, opts = {}) {
     temperature: opts.temperature ?? 0.4,
     ctx: opts.ctx || {},
     endpoint: opts.endpoint || `cag:${promptKey}`,
+    onText: opts.onText,
   });
 
   // Try to extract JSON from output

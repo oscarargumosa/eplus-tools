@@ -78,17 +78,17 @@ listed above. Each entry has the following shape:
 ## User prompt (variable per project)
 
 ```
-=== EVALUATION CRITERIA (call: <call_code>) ===
-<criteria as structured markdown from call_documents/eval_criteria>
+=== EVALUATION CRITERIA (call: {{call_code}}) ===
+{{criteria}}
 
 === PROJECT DESIGN ===
-<full enriched bundle from buildEnrichedContext(), no truncation>
+{{enriched_context}}
 
 === WRITER DRAFT (first cascade pass) ===
-<all writer_sections concatenated by section_id order>
+{{writer_draft}}
 
 === COORDINATOR'S OWN WORDS (from Prep Studio interviews) ===
-<all writer_interviews grouped by tab>
+{{interviews}}
 
 === INSTRUCTIONS ===
 Compile the Master Document v1 following the structure in your system

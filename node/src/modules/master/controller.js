@@ -116,6 +116,51 @@ async function listExports(req, res) {
   } catch (e) { bad(res, 500, e.message); }
 }
 
+/**
+ * Exporta el Master entero como Markdown (vista amplia, para revisión humana).
+ * Devuelve text/markdown como body. Si ?download=1, fuerza descarga.
+ */
+async function exportMasterAsMarkdown(req, res) {
+  try {
+    const masterDocId = req.params.id;
+    const doc = await model.getMasterDocument(masterDocId);
+    if (!doc) return bad(res, 404, 'master_document not found');
+    const chapters = await model.listChapters(masterDocId);
+
+    const [projRows] = await pool.query('SELECT name FROM projects WHERE id = ?', [doc.project_id]);
+    const projectName = projRows[0]?.name || 'Proyecto';
+
+    let md = `# Documento Maestro — ${projectName}\n\n`;
+    md += `*Versión: ${doc.version_tag}${doc.version_label ? ' — ' + doc.version_label : ''}*  \n`;
+    md += `*Idioma: ${doc.language}*  \n`;
+    md += `*Estado: ${doc.status}*  \n`;
+    md += `*Total caracteres: ${doc.total_chars}*  \n`;
+    md += `*Generado: ${new Date(doc.updated_at).toLocaleString('es')}*\n\n`;
+    md += `---\n\n`;
+    md += `## Índice\n\n`;
+    for (let i = 0; i < chapters.length; i++) {
+      md += `${i + 1}. [${chapters[i].title}](#cap-${i + 1})\n`;
+    }
+    md += `\n---\n\n`;
+    for (let i = 0; i < chapters.length; i++) {
+      const ch = chapters[i];
+      md += `\n<a id="cap-${i + 1}"></a>\n\n`;
+      md += `# ${i + 1}. ${ch.title}\n\n`;
+      md += (ch.body || '(vacío)') + '\n\n---\n';
+    }
+
+    if (req.query.download === '1') {
+      const safeName = projectName.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 40);
+      res.setHeader('Content-Disposition', `attachment; filename="master_${safeName}_${doc.version_tag}.md"`);
+    }
+    res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+    res.send(md);
+  } catch (e) {
+    console.error('[exportMasterAsMarkdown] error:', e);
+    bad(res, 500, e.message);
+  }
+}
+
 async function markExportReady(req, res) {
   try {
     const row = await model.markExportReady(req.params.id);
@@ -215,24 +260,78 @@ async function getDiagnosis(req, res) {
  */
 async function compileMasterV1(req, res) {
   const masterDocId = req.params.id;
+  const wantStream = req.query.stream === '1';
+
+  // Helper para SSE
+  let sseStarted = false;
+  function sseStart() {
+    if (sseStarted) return;
+    sseStarted = true;
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.setHeader('X-Accel-Buffering', 'no'); // disable proxy buffering
+    res.flushHeaders?.();
+  }
+  function sseSend(eventType, dataObj) {
+    if (!wantStream) return;
+    if (!sseStarted) sseStart();
+    res.write(`event: ${eventType}\n`);
+    res.write(`data: ${JSON.stringify(dataObj)}\n\n`);
+  }
+  function sseEnd(finalObj, status = 200) {
+    if (!wantStream) return false;
+    sseSend('done', finalObj);
+    res.end();
+    return true;
+  }
+  function sseErrorEnd(message, status = 500) {
+    if (!wantStream) return false;
+    sseSend('error', { message, status });
+    res.end();
+    return true;
+  }
+
   try {
     const masterDoc = await model.getMasterDocument(masterDocId);
-    if (!masterDoc) return bad(res, 404, 'master_document not found');
+    if (!masterDoc) {
+      if (wantStream) return sseErrorEnd('master_document not found', 404);
+      return bad(res, 404, 'master_document not found');
+    }
 
     const projectId = masterDoc.project_id;
     const userId = req.user.id;
     const { dryRun = false, force = false } = req.body || {};
 
-    // Idempotencia: si ya tiene capítulos compilados, no rehacer salvo force
-    if (!force) {
-      const existing = await model.listChapters(masterDocId);
-      if (existing.length > 0) {
-        return bad(res, 409, 'Master document already has chapters. Use { force: true } to recompile.');
-      }
+    // Política:
+    //   - force=true  → borrar capítulos existentes y compilar todos
+    //   - force=false → modo "resume": solo compilar los capítulos faltantes
+    //                   (si ya hay 3 capítulos, genera del 4 al 10)
+    const existingChapters = await model.listChapters(masterDocId);
+    const existingKeys = new Set();
+    if (force) {
+      for (const ch of existingChapters) await model.deleteChapter(ch.id);
+    } else {
+      for (const ch of existingChapters) existingKeys.add(ch.chapter_key);
     }
 
     // Construir el contexto enriquecido del proyecto (sin truncar — ver fix)
     const enrichedContext = await developerModel.buildEnrichedContext(projectId, userId);
+
+    // Cargar documentos adjuntos del proyecto (CAG: solo si tienen body_text extraído).
+    // Marcados 'core' van primero. Si un doc no tiene body_text extraído, se ignora
+    // (extracción on-demand en endpoint futuro).
+    const [docRows] = await pool.query(
+      `SELECT d.id, d.title, d.doc_type, d.file_type, d.body_text, pd.doc_purpose
+       FROM documents d
+       JOIN project_documents pd ON pd.document_id = d.id
+       WHERE pd.project_id = ? AND d.status = 'active' AND d.body_text IS NOT NULL AND LENGTH(d.body_text) > 100
+       ORDER BY FIELD(pd.doc_purpose, 'core', 'support'), d.created_at`,
+      [projectId]
+    ).catch(() => [[]]);
+    const projectDocsText = docRows.length
+      ? docRows.map(d => `═════ ATTACHED DOC: ${d.title} (${d.doc_type || 'unknown'}) ═════\n${d.body_text}`).join('\n\n')
+      : '';
 
     // Cargar interviews del Prep Studio
     const [interviewRows] = await pool.query(
@@ -270,10 +369,16 @@ async function compileMasterV1(req, res) {
       ? evalRows.map(r => `${r.code} ${r.title} (max ${r.max_score})${r.q_code ? `\n  - ${r.q_code} ${r.q_title}` : ''}`).join('\n')
       : 'No specific evaluation criteria loaded for this call. Use general EU evaluation patterns (Relevance, Quality, Impact, Partnership).';
 
+    // Si hay docs adjuntos al proyecto, los añadimos al enriched_context.
+    // Van al final del bloque, después del Diseño, claramente delimitados.
+    const fullEnrichedContext = projectDocsText
+      ? `${enrichedContext}\n\n═══ ATTACHED PROJECT DOCUMENTS (${docRows.length}) ═══\n\n${projectDocsText}`
+      : enrichedContext;
+
     const vars = {
       call_code: '',
       criteria: evalCriteria,
-      enriched_context: enrichedContext,
+      enriched_context: fullEnrichedContext,
       writer_draft: writerDraft || '(no writer draft yet)',
       interviews: interviews || '(no interviews yet)',
     };
@@ -287,50 +392,197 @@ async function compileMasterV1(req, res) {
     // Marcar como compiling
     await model.updateMasterDocument(masterDocId, { status: 'compiling' });
 
-    const result = await cag.runPrompt('01_compile_master_v1', vars, {
-      maxTokens: 60000,
-      temperature: 0.4,
-      ctx: { projectId, userId },
-      endpoint: '/v1/master/documents/:id/compile-v1',
-    });
-
-    if (!result.parsed || !Array.isArray(result.parsed.chapters)) {
-      await model.updateMasterDocument(masterDocId, { status: 'draft' });
-      return bad(res, 502, `LLM output not parseable as expected schema. Raw: ${result.text.substring(0, 500)}`);
+    // Iniciar SSE si el cliente lo pidió
+    if (wantStream) {
+      sseStart();
+      sseSend('status', { phase: 'started', message: 'Cargado el contexto, contactando con el modelo...' });
     }
 
-    // Persistir capítulos
+    // Plan de capítulos del Master (10 capítulos fijos).
+    const CHAPTER_PLAN = [
+      { key: 'ch_1_executive_summary', type: 'summary', title: 'Resumen Ejecutivo',
+        focus: 'High-level overview of the whole project: what it does, why it matters, with whom, and what change it produces. Should read as a self-contained 2-page executive briefing.' },
+      { key: 'ch_2_relevance',         type: 'qa',      title: 'Por qué este proyecto: contexto, problema, necesidades, grupos objetivo',
+        focus: 'Establish the problem with evidence; describe target groups concretely; connect to EU and call priorities. The "why this, why now, why us".' },
+      { key: 'ch_3_approach',          type: 'qa',      title: 'Enfoque y metodología',
+        focus: 'How the project will operate: theory of change, methodology, design principles, innovation. Distinct from work packages — this is the HOW at a conceptual level.' },
+      { key: 'ch_4_wps',               type: 'wp',      title: 'Paquetes de Trabajo — desarrollo narrativo completo',
+        focus: 'Each WP developed in narrative form: objectives, activities, tasks, deliverables, milestones, responsible partner, timeline. Multi-page chapter — the heart of the Master.' },
+      { key: 'ch_5_consortium',        type: 'partner', title: 'Consorcio: capacidad y rol de cada partner',
+        focus: 'One section per partner explaining role, capacity, prior EU experience, key staff justification, and complementarity with the rest of the consortium.' },
+      { key: 'ch_6_impact',            type: 'impact',  title: 'Impacto esperado y difusión',
+        focus: 'Concrete expected impact on target groups, sector, territory and EU policy. Quantitative KPIs where possible. Dissemination strategy with channels and audiences.' },
+      { key: 'ch_7_sustainability',    type: 'qa',      title: 'Sostenibilidad y explotación post-proyecto',
+        focus: 'What happens after M48. Who owns the outputs, who maintains them, financial sustainability, governance after the funded period. The "second life" of the project.' },
+      { key: 'ch_8_budget',            type: 'budget',  title: 'Justificación narrativa del presupuesto',
+        focus: 'Qualitative rationale of why each major budget area exists at the scale it does. Reference the work plan, not raw numbers. Cost-effectiveness arguments.' },
+      { key: 'ch_9_quality',           type: 'qa',      title: 'Aseguramiento de calidad y gestión de riesgos',
+        focus: 'Quality control mechanisms, monitoring, evaluation, internal audit, risk register with mitigation. Demonstrate the team has thought through what could go wrong.' },
+      { key: 'ch_10_alignment',        type: 'qa',      title: 'Alineación estratégica con prioridades de la convocatoria y estrategias UE',
+        focus: 'Map the project explicitly to call priorities and to relevant EU strategies (Farm to Fork, Green Deal, etc. as applicable). Make the evaluator s job easy.' },
+    ];
+
+    if (wantStream) {
+      sseSend('plan', { total: CHAPTER_PLAN.length, chapters: CHAPTER_PLAN.map(c => ({ key: c.key, title: c.title })) });
+    }
+
+    let lastSseAt = 0;
+    let pendingChunkText = '';
+    function flushPendingChunk(chapterKey) {
+      if (pendingChunkText && wantStream) {
+        sseSend('chunk', { text: pendingChunkText, chapter_key: chapterKey });
+        pendingChunkText = '';
+        lastSseAt = Date.now();
+      }
+    }
+
+    const fs = require('fs');
+    const path = require('path');
+    const tmpDir = path.join(__dirname, '..', '..', '..', '..', 'tmp');
+    const sessionTag = Date.now();
+
     let totalChars = 0;
-    for (let i = 0; i < result.parsed.chapters.length; i++) {
-      const ch = result.parsed.chapters[i];
-      await model.createChapter({
-        masterDocId,
-        chapterKey: ch.chapter_key || `ch_${i + 1}`,
-        chapterType: ch.chapter_type || 'custom',
-        title: ch.title || `Capítulo ${i + 1}`,
-        body: ch.body || '',
-        sortOrder: i,
-      });
-      totalChars += (ch.body || '').length;
+    let totalCostUsd = 0;
+    let totalDurationMs = 0;
+    let totalInputTokens = 0;
+    let totalOutputTokens = 0;
+    const createdChapters = [];
+    const previousSummaries = []; // para alimentar al siguiente capítulo
+
+    // Si estamos en modo resume, los capítulos ya existentes alimentan
+    // previousSummaries para que los nuevos sean coherentes con ellos.
+    if (!force && existingChapters.length > 0) {
+      for (const ex of existingChapters) {
+        previousSummaries.push({ title: ex.title || '', body: ex.body || '' });
+        createdChapters.push({ key: ex.chapter_key, title: ex.title, char_count: ex.char_count || 0 });
+        totalChars += ex.char_count || 0;
+      }
+      if (wantStream) {
+        for (const ex of existingChapters) {
+          sseSend('chapter_already_exists', { chapter_key: ex.chapter_key, title: ex.title, char_count: ex.char_count || 0 });
+        }
+      }
+    }
+
+    for (let i = 0; i < CHAPTER_PLAN.length; i++) {
+      const ch = CHAPTER_PLAN[i];
+
+      // Skip si ya existe (modo resume)
+      if (existingKeys.has(ch.key)) {
+        continue;
+      }
+
+      if (wantStream) {
+        sseSend('chapter_started', { index: i, total: CHAPTER_PLAN.length, chapter_key: ch.key, title: ch.title });
+      }
+
+      // Resumen de capítulos previos (solo títulos + primeras 200 chars de body)
+      const previousSummary = previousSummaries.length
+        ? previousSummaries.map((p, j) => `[${j + 1}] ${p.title}\n${(p.body || '').substring(0, 200)}...`).join('\n\n')
+        : '(none yet — this is the first chapter)';
+
+      const chapterVars = {
+        ...vars,
+        chapter_key: ch.key,
+        chapter_type: ch.type,
+        chapter_title: ch.title,
+        chapter_focus: ch.focus,
+        previous_chapters_summary: previousSummary,
+      };
+
+      try {
+        const result = await cag.runPrompt('01b_compile_single_chapter', chapterVars, {
+          maxTokens: 8000,
+          temperature: 0.4,
+          ctx: { projectId, userId },
+          endpoint: `/v1/master/documents/:id/compile-v1#${ch.key}`,
+          onText: wantStream
+            ? (delta) => {
+                pendingChunkText += delta;
+                const now = Date.now();
+                if (now - lastSseAt >= 50) flushPendingChunk(ch.key);
+              }
+            : undefined,
+        });
+        flushPendingChunk(ch.key);
+
+        // Persistir raw del capítulo SIEMPRE
+        try {
+          fs.writeFileSync(path.join(tmpDir, `master_chapter_${masterDocId}_${ch.key}_${sessionTag}.txt`), result.text || '', 'utf8');
+        } catch (_) {}
+
+        // Parse del capítulo: tolerante a 3 shapes posibles del LLM:
+        //   A) { chapter_key, chapter_type, title, body, ... } ← shape esperada
+        //   B) { chapters: [{...A}] } ← LLM se confunde y mete en array
+        //   C) [{...A}] ← LLM devuelve array directo
+        let parsedCh = result.parsed;
+        if (parsedCh && Array.isArray(parsedCh)) parsedCh = parsedCh[0];
+        else if (parsedCh && Array.isArray(parsedCh.chapters) && parsedCh.chapters.length) {
+          parsedCh = parsedCh.chapters[0];
+        }
+        if (!parsedCh || typeof parsedCh !== 'object' || !parsedCh.body) {
+          throw new Error(`Chapter ${ch.key}: parse fail or empty body`);
+        }
+
+        const savedCh = await model.createChapter({
+          masterDocId,
+          chapterKey: parsedCh.chapter_key || ch.key,
+          chapterType: parsedCh.chapter_type || ch.type,
+          title: parsedCh.title || ch.title,
+          body: parsedCh.body || '',
+          sortOrder: i,
+        });
+
+        const len = (parsedCh.body || '').length;
+        totalChars += len;
+        totalCostUsd += result.costUsd || 0;
+        totalDurationMs += result.durationMs || 0;
+        const inT = (result.usage?.input_tokens || 0) + (result.usage?.cache_creation_input_tokens || 0) + (result.usage?.cache_read_input_tokens || 0);
+        const outT = result.usage?.output_tokens || 0;
+        totalInputTokens += inT;
+        totalOutputTokens += outT;
+
+        previousSummaries.push({ title: parsedCh.title || ch.title, body: parsedCh.body || '' });
+        createdChapters.push({ key: ch.key, title: parsedCh.title || ch.title, char_count: len });
+
+        if (wantStream) {
+          sseSend('chapter_done', {
+            index: i, total: CHAPTER_PLAN.length,
+            chapter_key: ch.key, title: parsedCh.title || ch.title,
+            char_count: len, cost_usd: result.costUsd, duration_ms: result.durationMs,
+            cache_read_tokens: result.usage?.cache_read_input_tokens || 0,
+          });
+        }
+      } catch (chapErr) {
+        console.error(`[compileMasterV1] chapter ${ch.key} failed:`, chapErr.message);
+        if (wantStream) {
+          sseSend('chapter_failed', { index: i, chapter_key: ch.key, error: chapErr.message });
+        }
+        // Seguimos al siguiente capítulo — los anteriores ya están persistidos.
+      }
     }
 
     await model.updateMasterDocument(masterDocId, {
-      status: 'ready',
+      status: createdChapters.length > 0 ? 'ready' : 'draft',
       total_chars: totalChars,
     });
 
-    ok(res, {
+    const summary = {
       master_doc_id: masterDocId,
-      chapters_created: result.parsed.chapters.length,
+      chapters_created: createdChapters.length,
+      chapters_failed: CHAPTER_PLAN.length - createdChapters.length,
       total_chars: totalChars,
-      cost_usd: result.costUsd,
-      duration_ms: result.durationMs,
-      usage: result.usage,
-    });
+      cost_usd: totalCostUsd,
+      duration_ms: totalDurationMs,
+      usage: { input_tokens: totalInputTokens, output_tokens: totalOutputTokens },
+    };
+
+    if (wantStream) return sseEnd(summary);
+    ok(res, summary);
   } catch (e) {
     console.error('[compileMasterV1] error:', e);
-    // Restaurar estado a draft si falló
     try { await model.updateMasterDocument(masterDocId, { status: 'draft' }); } catch (_) {}
+    if (wantStream) return sseErrorEnd(e.message, e.status || 500);
     bad(res, e.status || 500, e.message);
   }
 }
@@ -565,6 +817,7 @@ module.exports = {
   // exports
   listExports,
   markExportReady,
+  exportMasterAsMarkdown,
   // chat
   getOrCreateMainThread,
   listMessages,

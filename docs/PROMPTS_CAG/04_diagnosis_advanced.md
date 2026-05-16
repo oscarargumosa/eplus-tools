@@ -59,19 +59,13 @@ Aim for 10-30 findings.
 
 ```
 === EVALUATION CRITERIA (full) ===
-<eval_criteria body_text>
-
-=== CALL SPECIFIC RULES (sections from call PDF & annotated grant) ===
-<extracted lump sum mechanics, eligibility, financial rules>
+{{criteria}}
 
 === MASTER DOCUMENT V2 ===
-<all chapters from latest master_documents version>
+{{master_document}}
 
 === DESIGN SNAPSHOT (for cross-checks) ===
-<work_packages, activities, partners, budget summary>
-
-=== PREVIOUS DIAGNOSIS (for context, optional) ===
-<initial diagnosis items list (titles only) so you know what was fixed>
+{{design_snapshot}}
 
 === INSTRUCTIONS ===
 Produce advanced diagnosis JSON. Flag everything that could improve

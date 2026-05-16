@@ -281,6 +281,7 @@ const App = (() => {
       create:           'Diseñar',
       intake:           'Diseñar',
       developer:        'Escribir',
+      master:           'Perfeccionar',
       calculator:       'Calculator',
       planner:          'Planner',
       evaluator:        'Evaluar',

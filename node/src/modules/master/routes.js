@@ -46,6 +46,7 @@ router.delete('/chapters/:id',           requireAuth, ctrl.deleteChapter);
 /* ── Exports ─────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/exports', requireAuth, ctrl.listExports);
 router.post ('/exports/:id/mark-ready',      requireAuth, ctrl.markExportReady);
+router.get  ('/documents/:id/export.md',     requireAuth, ctrl.exportMasterAsMarkdown);
 
 /* ── Chat ────────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/threads/main', requireAuth, ctrl.getOrCreateMainThread);

@@ -69,14 +69,14 @@ Output format: a single JSON object with the structure below.
 ## User prompt (variable)
 
 ```
-=== EVALUATION CRITERIA (call: <call_code>) ===
-<criteria summary>
+=== EVALUATION CRITERIA (call: {{call_code}}) ===
+{{criteria}}
 
 === MASTER DOCUMENT V1 ===
-<full master_document with all chapters joined>
+{{master_document}}
 
 === DESIGN SNAPSHOT (concise, for cross-checks) ===
-<work_packages structure with activity types and budget shares per WP>
+{{design_snapshot}}
 
 === INSTRUCTIONS ===
 Produce the diagnosis JSON. Group by classification.

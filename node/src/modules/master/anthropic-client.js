@@ -137,8 +137,21 @@ async function callWithCache({
     messages: [{ role: 'user', content: userContent.length ? userContent : [{ type: 'text', text: ' ' }] }],
   };
 
+  // Anthropic SDK rechaza llamadas no-stream si max_tokens > 8192 (timeout 10 min).
+  // Auto-switch a streaming "collected" cuando esto pase, manteniendo la API del caller.
+  // Si el caller pasa onText, también va a streaming aunque maxTokens sea bajo —
+  // útil para SSE / visualización en tiempo real.
+  const needsStreaming = stream || maxTokens > 8192 || typeof arguments[0]?.onText === 'function';
+
+  if (needsStreaming && !stream) {
+    return await callWithCacheStreaming(client, payload, {
+      ctx: fullCtx, model, t0, endpoint,
+      onText: arguments[0]?.onText,
+    });
+  }
+
   if (stream) {
-    // Streaming mode: caller iterates events. Logging happens at the end.
+    // Streaming mode raw: caller iterates events. Logging happens at the end.
     const events = await client.messages.create({ ...payload, stream: true });
     return {
       events,
@@ -167,6 +180,70 @@ async function callWithCache({
   } catch (err) {
     logUsage({ ctx: fullCtx, model, usage: null, status: 'error', durationMs: Date.now() - t0, endpoint });
     // Mejor error message para 429 (rate limit) y 5xx
+    if (err.status === 429) {
+      const e = new Error('Anthropic rate limit reached. Try again in a few seconds.');
+      e.code = 'RATE_LIMITED';
+      e.status = 429;
+      throw e;
+    }
+    if (err.status >= 500) {
+      const e = new Error('Anthropic temporarily unavailable. Try again later.');
+      e.code = 'UPSTREAM_ERROR';
+      e.status = 502;
+      throw e;
+    }
+    throw err;
+  }
+}
+
+/* ── Streaming collected: usa streaming pero acumula y devuelve
+   el mismo shape que callWithCache normal. Necesario para
+   llamadas con max_tokens > 8192 (límite del SDK Anthropic). ── */
+
+async function callWithCacheStreaming(client, payload, { ctx, model, t0, endpoint, onText }) {
+  let fullText = '';
+  let finalUsage = null;
+  let stopReason = null;
+
+  try {
+    const streamObj = await client.messages.stream(payload);
+
+    streamObj.on('text', (textDelta) => {
+      fullText += textDelta;
+      if (typeof onText === 'function') {
+        try { onText(textDelta, fullText); } catch (_) { /* swallow UI errors */ }
+      }
+    });
+
+    // Esperar a que termine el stream
+    const final = await streamObj.finalMessage();
+    finalUsage = final.usage;
+    stopReason = final.stop_reason;
+
+    const inputTokens = (finalUsage?.input_tokens || 0) +
+                        (finalUsage?.cache_creation_input_tokens || 0) +
+                        (finalUsage?.cache_read_input_tokens || 0);
+    const cachedTokens = finalUsage?.cache_read_input_tokens || 0;
+    const outputTokens = finalUsage?.output_tokens || 0;
+
+    logUsage({
+      ctx, model,
+      usage: finalUsage,
+      status: 'success',
+      durationMs: Date.now() - t0,
+      endpoint,
+    });
+
+    return {
+      text: fullText,
+      usage: finalUsage,
+      stopReason,
+      model,
+      durationMs: Date.now() - t0,
+      costUsd: estimateCostUsd({ inputTokens, cachedTokens, outputTokens }),
+    };
+  } catch (err) {
+    logUsage({ ctx, model, usage: finalUsage, status: 'error', durationMs: Date.now() - t0, endpoint });
     if (err.status === 429) {
       const e = new Error('Anthropic rate limit reached. Try again in a few seconds.');
       e.code = 'RATE_LIMITED';
