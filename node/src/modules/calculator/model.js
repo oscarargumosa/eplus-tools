@@ -393,7 +393,9 @@ async function deleteActivity(id) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other':
       await db.execute('DELETE FROM activity_generic_costs WHERE activity_id = ?', [id]);
       break;
@@ -480,7 +482,9 @@ async function getActivityDetail(activityId) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const [generic] = await db.execute(
         'SELECT id, activity_id, partner_id, active, note, amount, project_pct, lifetime_pct FROM activity_generic_costs WHERE activity_id = ?',
@@ -588,7 +592,9 @@ async function createActivityDetail(activityId, data) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const { partner_id, active, note, amount, project_pct, lifetime_pct } = data;
       const id = genUUID();
@@ -807,7 +813,9 @@ async function updateActivityDetail(activityId, detailId, data) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const { note, amount, project_pct, lifetime_pct, active } = data;
       const updates = [];
@@ -1035,7 +1043,9 @@ async function getBudgetSummary(projectId) {
         case 'artistic':
         case 'extraordinary':
         case 'equipment':
+        case 'goods':
         case 'consumables':
+        case 'fstp':
         case 'other': {
           // Generic costs
           const [generics] = await db.execute(

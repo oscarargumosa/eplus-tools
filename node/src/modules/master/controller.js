@@ -14,6 +14,7 @@ const cag = require('./cag-pipeline');
 const developerModel = require('../developer/model');
 const pool = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
+const { ENFORCE_CAPS, FIELD_CHAR_LIMITS, getFieldLimit, truncate, estimatePages } = require('../exporter/field-limits');
 
 function ok(res, data) { res.json({ ok: true, data }); }
 function bad(res, status, error) { res.status(status).json({ ok: false, error }); }
@@ -250,6 +251,96 @@ async function getDiagnosis(req, res) {
   } catch (e) { bad(res, 500, e.message); }
 }
 
+/**
+ * PATCH /v1/master/diagnosis-items/:id
+ * Body: { state }
+ *   state ∈ open | resolved | dismissed
+ *   - resolved → marca como abordado (vía chat o aplicación manual)
+ *   - dismissed → marca como descartado por el usuario
+ *   - open → reabre el item
+ */
+async function patchDiagnosisItemState(req, res) {
+  try {
+    const itemId = req.params.id;
+    const { state } = req.body || {};
+    if (!['open', 'resolved', 'dismissed'].includes(state)) {
+      return bad(res, 400, 'state must be one of: open, resolved, dismissed');
+    }
+    const userId = req.user.id;
+    const resolvedAt = state === 'open' ? null : new Date();
+    const resolvedBy = state === 'open' ? null : userId;
+    const [result] = await pool.query(
+      `UPDATE master_diagnosis_items
+         SET state = ?, resolved_at = ?, resolved_by_user_id = ?
+       WHERE id = ?`,
+      [state, resolvedAt, resolvedBy, itemId]
+    );
+    if (!result.affectedRows) return bad(res, 404, 'diagnosis_item not found');
+    const [[item]] = await pool.query(
+      `SELECT * FROM master_diagnosis_items WHERE id = ?`,
+      [itemId]
+    );
+    ok(res, item);
+  } catch (e) { bad(res, 500, e.message); }
+}
+
+/**
+ * POST /v1/master/diagnoses/:id/items
+ * Body: { classification?, severity?, title, detail?, suggestion?, anchor_kind?, anchor_id?, anchor_label? }
+ * Crea un item personalizado en un diagnosis existente (el usuario quiere
+ * abordar algo que el diagnóstico automático no detectó).
+ */
+async function createCustomDiagnosisItem(req, res) {
+  try {
+    const diagnosisId = req.params.id;
+    const [[diag]] = await pool.query(
+      `SELECT id FROM master_diagnoses WHERE id = ?`,
+      [diagnosisId]
+    );
+    if (!diag) return bad(res, 404, 'diagnosis not found');
+
+    const {
+      classification = 'narrative',
+      severity = 'warning',
+      title,
+      detail = null,
+      suggestion = null,
+      anchor_kind = null,
+      anchor_id = null,
+      anchor_label = null,
+    } = req.body || {};
+
+    if (!title || !title.trim()) return bad(res, 400, 'title is required');
+    if (!['narrative', 'economic'].includes(classification)) {
+      return bad(res, 400, 'classification must be narrative or economic');
+    }
+    if (!['info', 'warning', 'critical'].includes(severity)) {
+      return bad(res, 400, 'severity must be info, warning or critical');
+    }
+
+    const [[maxRow]] = await pool.query(
+      `SELECT COALESCE(MAX(sort_order), -1) + 1 AS next_order
+         FROM master_diagnosis_items WHERE diagnosis_id = ?`,
+      [diagnosisId]
+    );
+
+    const id = genUUID();
+    await pool.query(
+      `INSERT INTO master_diagnosis_items
+         (id, diagnosis_id, classification, severity, title, detail, suggestion,
+          anchor_kind, anchor_id, anchor_label, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [id, diagnosisId, classification, severity, title.trim(),
+       detail, suggestion, anchor_kind, anchor_id, anchor_label, maxRow.next_order]
+    );
+    const [[item]] = await pool.query(
+      `SELECT * FROM master_diagnosis_items WHERE id = ?`,
+      [id]
+    );
+    ok(res, item);
+  } catch (e) { bad(res, 500, e.message); }
+}
+
 /* ── LLM-powered endpoints (CAG pipeline) ─────────────────────── */
 
 /**
@@ -320,6 +411,28 @@ async function compileMasterV1(req, res) {
     // Construir el contexto enriquecido del proyecto (sin truncar — ver fix)
     const enrichedContext = await developerModel.buildEnrichedContext(projectId, userId);
 
+    // Resumen ejecutivo del proyecto (lo que el usuario rellena en Step 5 del Intake).
+    // Vive en projects.interview_summary + projects.description y es la voz del
+    // coordinador sobre el proyecto, no el desglose técnico — debe alimentar
+    // SIEMPRE al compile como variable propia, no diluida en enriched_context.
+    const [projRows] = await pool.query(
+      `SELECT name, acronym, interview_summary, description FROM projects WHERE id = ? LIMIT 1`,
+      [projectId]
+    );
+    let projectExecutiveSummary = '(no executive summary provided yet)';
+    if (projRows.length) {
+      const p = projRows[0];
+      const parts = [];
+      if (p.acronym || p.name) parts.push(`PROJECT: ${p.acronym ? p.acronym + ' — ' : ''}${p.name || ''}`.trim());
+      if (p.interview_summary && p.interview_summary.trim()) {
+        parts.push(`\nUSER-WRITTEN PROJECT SUMMARY (Intake Step 5):\n${p.interview_summary.trim()}`);
+      }
+      if (p.description && p.description.trim()) {
+        parts.push(`\nADDITIONAL DESCRIPTION:\n${p.description.trim()}`);
+      }
+      if (parts.length > 1) projectExecutiveSummary = parts.join('\n');
+    }
+
     // Cargar documentos CAG: call docs (programme guide, call PDF…) vinculados a
     // la convocatoria + project docs core subidos por el usuario.
     const cagDocs = await model.loadProjectCagBundle(projectId);
@@ -366,6 +479,7 @@ async function compileMasterV1(req, res) {
       call_additional_rules: qCtx.transversal.additional_rules || '(no additional rules)',
       call_ai_detection_rules: qCtx.transversal.ai_detection_rules || '(no specific anti-AI-detection rules)',
       call_documents: cagBundle,
+      project_executive_summary: projectExecutiveSummary,
       enriched_context: enrichedContext,
       writer_draft: writerDraft || '(no writer draft yet)',
       interviews: interviews || '(no interviews yet)',
@@ -764,18 +878,35 @@ async function runDiagnosis(req, res) {
       return bad(res, 409, 'Master document has no chapters yet. Compile first.');
     }
 
-    const masterText = chapters
+    // Caps agresivos: el diagnóstico debe caber en 200k tokens junto con
+    // los criterios oficiales (~15k tokens). Reservamos ~50k tokens para
+    // master_document (lo que se diagnostica), 30k para CAG bundle (call
+    // docs + project docs) y 25k para el design snapshot.
+    const TOKEN = 4; // ~4 chars / token (estimación conservadora)
+    const MASTER_CAP_CHARS    = 50_000 * TOKEN; // 200k chars
+    const CAG_CAP_CHARS       = 30_000 * TOKEN; // 120k chars
+    const DESIGN_CAP_CHARS    = 25_000 * TOKEN; // 100k chars
+
+    function trimWithNote(text, maxChars, label) {
+      if (!text) return text || '';
+      if (text.length <= maxChars) return text;
+      return text.slice(0, maxChars) + `\n\n[…${label} truncado: ${text.length - maxChars} chars omitidos para encajar en la ventana del modelo…]`;
+    }
+
+    const masterTextFull = chapters
       .map(c => `## ${c.title}\n\n${c.body || ''}`)
       .join('\n\n---\n\n');
+    const masterText = trimWithNote(masterTextFull, MASTER_CAP_CHARS, 'Master document');
 
     // Design snapshot conciso para cross-checks
-    const designSnapshot = await developerModel.buildEnrichedContext(projectId, userId);
+    const designSnapshotFull = await developerModel.buildEnrichedContext(projectId, userId);
+    const designSnapshot = trimWithNote(designSnapshotFull, DESIGN_CAP_CHARS, 'Design snapshot');
 
     // Contexto de calidad: criterios FULL + reglas transversales de la call
     const qCtx = await model.loadProjectQualityContext(projectId);
 
-    // Cargar bundle CAG (call docs + project docs core)
-    const cagDocs = await model.loadProjectCagBundle(projectId);
+    // Cargar bundle CAG (call docs + project docs core), con cap propio
+    const cagDocs = await model.loadProjectCagBundle(projectId, { maxChars: CAG_CAP_CHARS });
     const cagBundle = cagDocs.length
       ? cagDocs.map(d => {
           const header = d.origin === 'call' ? 'CALL DOCUMENT' : 'PROJECT DOCUMENT';
@@ -1043,6 +1174,112 @@ async function refineChapter(req, res) {
   }
 }
 
+/**
+ * POST /v1/master/chapters/:id/propose-rewrite
+ * Body: { instruction, attempt? }
+ * Devuelve { rationale, new_body, cost_usd, duration_ms } — sin chat.
+ * Prompt 10_propose_rewrite garantiza JSON limpio.
+ */
+async function proposeRewrite(req, res) {
+  try {
+    const chapterId = req.params.id;
+    const userId = req.user.id;
+    const { instruction, attempt = 1 } = req.body || {};
+    if (!instruction || typeof instruction !== 'string' || !instruction.trim()) {
+      return bad(res, 400, 'instruction is required');
+    }
+
+    const chapter = await model.getChapter(chapterId);
+    if (!chapter) return bad(res, 404, 'Chapter not found');
+
+    const masterDoc = await model.getMasterDocument(chapter.master_doc_id);
+    if (!masterDoc) return bad(res, 404, 'Master document not found');
+    const projectId = masterDoc.project_id;
+
+    const qCtx = await model.loadProjectQualityContext(projectId);
+    const sectionCode = extractSectionCodeFromKey(chapter.chapter_key);
+    const sectionBlock = sectionCode && qCtx.criteriaIndex[sectionCode]
+      ? qCtx.criteriaIndex[sectionCode].block
+      : '(no specific criteria for this section)';
+
+    const attemptNote = attempt > 1
+      ? `=== NOTE: VARIANT #${attempt} ===\nThis is variant number ${attempt}. Generate a DISTINCT alternative from any previous output: different angle, structure, emphasis or rhetorical strategy.`
+      : '';
+
+    // Cap del chapter body para mantener latencia razonable (~50k chars máx)
+    const chapterBody = chapter.body || '';
+    const cappedBody = chapterBody.length > 200000
+      ? chapterBody.slice(0, 200000) + '\n\n[…truncado…]'
+      : chapterBody;
+
+    const vars = {
+      section_specific_block: sectionBlock,
+      call_writing_style: qCtx.transversal.writing_style || '(no specific style)',
+      chapter_title: chapter.title || '',
+      chapter_body: cappedBody,
+      instruction: instruction.trim(),
+      attempt_note: attemptNote,
+    };
+
+    const result = await cag.runPrompt('10_propose_rewrite', vars, {
+      maxTokens: 8000,
+      temperature: 0.55,
+      ctx: { projectId, userId },
+      endpoint: '/v1/master/chapters/:id/propose-rewrite',
+    });
+
+    // Intentar parse del JSON estructurado
+    let rationale = '';
+    let new_body = '';
+    if (result.parsed && typeof result.parsed === 'object' && !Array.isArray(result.parsed)) {
+      rationale = result.parsed.rationale || '';
+      new_body = result.parsed.new_body || '';
+    }
+
+    // Fallback: si parse falla, intentar regex sobre el texto crudo
+    if (!new_body && result.text) {
+      const raw = result.text.trim();
+      // Caso A: JSON con bloque ```json envolvente
+      const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
+      const candidate = fenced ? fenced[1] : raw;
+      try {
+        const obj = JSON.parse(candidate);
+        if (obj && typeof obj === 'object') {
+          rationale = obj.rationale || rationale;
+          new_body = obj.new_body || new_body;
+        }
+      } catch (_) {
+        // Caso B: extraer new_body con regex tolerante
+        const bodyMatch = candidate.match(/"new_body"\s*:\s*"((?:\\.|[^"\\])*)"/);
+        if (bodyMatch) {
+          try { new_body = JSON.parse('"' + bodyMatch[1] + '"'); }
+          catch (_) { new_body = bodyMatch[1].replace(/\\n/g, '\n').replace(/\\"/g, '"'); }
+        }
+        const ratMatch = candidate.match(/"rationale"\s*:\s*"((?:\\.|[^"\\])*)"/);
+        if (ratMatch && !rationale) {
+          try { rationale = JSON.parse('"' + ratMatch[1] + '"'); }
+          catch (_) { rationale = ratMatch[1]; }
+        }
+      }
+    }
+
+    if (!new_body || new_body.length < 100) {
+      console.warn('[proposeRewrite] empty/short new_body. Raw output preview:', (result.text || '').substring(0, 500));
+      return bad(res, 502, 'La IA no devolvió un texto reescrito utilizable. Reintenta o ajusta la instrucción.');
+    }
+
+    ok(res, {
+      rationale,
+      new_body,
+      cost_usd: result.costUsd,
+      duration_ms: result.durationMs,
+    });
+  } catch (e) {
+    console.error('[proposeRewrite] error:', e);
+    bad(res, e.status || 500, e.message || String(e));
+  }
+}
+
 // Helper: extrae el código de subsección (1.1, 2.1.3, 4.2, etc.) de la key.
 function extractSectionCodeFromKey(chapterKey) {
   if (!chapterKey) return null;
@@ -1156,8 +1393,10 @@ async function compressToForm(req, res) {
         : '(no specific criteria block)';
       const chapterBody = chaptersByKey[mappedKey].body || '';
 
+      // Fallback al cap centralizado de field-limits si el template no lo define.
+      const effectiveMaxChars = field.max_chars || getFieldLimit(field.id) || null;
       const limitParts = [];
-      if (field.max_chars) limitParts.push(`${field.max_chars} caracteres`);
+      if (effectiveMaxChars) limitParts.push(`${effectiveMaxChars} caracteres`);
       if (field.max_words) limitParts.push(`${field.max_words} palabras`);
       if (field.max_pages) limitParts.push(`${field.max_pages} páginas`);
       const limitLabel = limitParts.join(' · ') || 'sin límite especificado';
@@ -1176,9 +1415,10 @@ async function compressToForm(req, res) {
         target_language: target_language,
       };
 
-      // Cap output generoso: queremos JSON + body completo, mejor pasarse
-      // a corto que cortar el JSON a la mitad y reventar el parse.
-      const maxTokens = field.max_chars ? Math.min(6000, Math.ceil(field.max_chars / 3) + 500) : 5000;
+      // Cap output: ajusta a 3 chars/token + margen para envoltura JSON.
+      // 8.000 tokens permite emitir hasta ~22.000 chars (el cap mayor de
+      // FIELD_CHAR_LIMITS es 20.000 para s1_2_text).
+      const maxTokens = effectiveMaxChars ? Math.min(8000, Math.ceil(effectiveMaxChars / 3) + 800) : 5500;
       try {
         const result = await cag.runPrompt('06_form_compression', vars, {
           maxTokens,
@@ -1212,7 +1452,13 @@ async function compressToForm(req, res) {
           errors.push({ field_id: field.id, error: 'output sin answer_body parseable (ver server log)' });
           continue;
         }
-        const answerBody = parsed.answer_body;
+        // Truncado defensivo SOLO si ENFORCE_CAPS=true. Por defecto la IA
+        // puede devolver textos más largos del cap — priorizamos calidad de
+        // contenido sobre límite de páginas (el usuario recorta a mano luego).
+        const answerBodyRaw = parsed.answer_body;
+        const answerBody = (ENFORCE_CAPS && effectiveMaxChars)
+          ? truncate(answerBodyRaw, effectiveMaxChars)
+          : answerBodyRaw;
         // Persistir en form_field_values (upsert)
         const [[existing]] = await pool.query(
           'SELECT id FROM form_field_values WHERE instance_id = ? AND field_id = ? LIMIT 1',
@@ -1259,6 +1505,276 @@ async function compressToForm(req, res) {
   } catch (e) {
     console.error('[compressToForm] error:', e);
     bad(res, 500, e.message || String(e));
+  }
+}
+
+/**
+ * POST /v1/master/documents/:id/compress-field/:fieldId
+ * Re-comprime UN solo field del formulario. Reutiliza la misma lógica
+ * de compressToForm pero solo para un field — útil cuando el usuario
+ * edita un capítulo del Master y quiere refrescar el campo del formulario
+ * derivado, sin volver a comprimir los 16 campos.
+ */
+async function compressSingleField(req, res) {
+  try {
+    const masterDocId = req.params.id;
+    const fieldId = req.params.fieldId;
+    const userId = req.user.id;
+
+    const masterDoc = await model.getMasterDocument(masterDocId);
+    if (!masterDoc) return bad(res, 404, 'master_document not found');
+    const projectId = masterDoc.project_id;
+
+    // Localizar template activo
+    const [[template]] = await pool.query(
+      `SELECT id, name, slug, template_json FROM form_templates WHERE active = 1 ORDER BY year DESC, name LIMIT 1`
+    );
+    if (!template) return bad(res, 404, 'No form template found');
+    let templateJson;
+    try { templateJson = typeof template.template_json === 'string' ? JSON.parse(template.template_json) : template.template_json; }
+    catch (e) { return bad(res, 500, 'form_template.template_json no parseable'); }
+
+    const fields = extractFormFields(templateJson);
+    const field = fields.find(f => f.id === fieldId);
+    if (!field) return bad(res, 404, `field ${fieldId} not found in template`);
+
+    const qCtx = await model.loadProjectQualityContext(projectId);
+    const chapters = await model.listChapters(masterDocId);
+    const chaptersByKey = Object.fromEntries(chapters.map(c => [c.chapter_key, c]));
+    const mappedKey = mapFieldToChapter(field.id, chaptersByKey);
+    if (!mappedKey || !chaptersByKey[mappedKey]) {
+      return bad(res, 422, `no master chapter mapped for field ${fieldId}`);
+    }
+
+    // Form instance
+    let [[instance]] = await pool.query(
+      'SELECT id FROM form_instances WHERE project_id = ? AND template_id = ? LIMIT 1',
+      [projectId, template.id]
+    );
+    if (!instance) {
+      const newInstanceId = genUUID();
+      await pool.query(
+        `INSERT INTO form_instances (id, user_id, template_id, program_id, project_id, title, status)
+         SELECT ?, ?, ?, ip.id, ?, ?, 'in_progress'
+           FROM projects p
+           JOIN intake_programs ip ON ip.action_type = p.type
+          WHERE p.id = ? LIMIT 1`,
+        [newInstanceId, userId, template.id, projectId, masterDoc.version_label || 'Form ' + template.name, projectId]
+      );
+      instance = { id: newInstanceId };
+    }
+
+    const sectionCode = extractSectionCodeFromKey(mappedKey);
+    const sectionBlock = sectionCode && qCtx.criteriaIndex[sectionCode]
+      ? qCtx.criteriaIndex[sectionCode].block
+      : '(no specific criteria block)';
+    const chapterBody = chaptersByKey[mappedKey].body || '';
+    const effectiveMaxChars = field.max_chars || getFieldLimit(field.id) || null;
+    const limitParts = [];
+    if (effectiveMaxChars) limitParts.push(`${effectiveMaxChars} caracteres`);
+    if (field.max_words) limitParts.push(`${field.max_words} palabras`);
+    if (field.max_pages) limitParts.push(`${field.max_pages} páginas`);
+
+    const vars = {
+      call_code: qCtx.callCode || '',
+      call_writing_style: qCtx.transversal.writing_style || '',
+      call_ai_detection_rules: qCtx.transversal.ai_detection_rules || '',
+      section_specific_block: sectionBlock,
+      source_chapters: `### ${chaptersByKey[mappedKey].title}\n\n${chapterBody}`,
+      field_id: field.id,
+      question_text: field.question_text || field.label || '',
+      question_hint: field.hint || '(no hint)',
+      question_kind: field.kind || 'narrative',
+      limit_label: limitParts.join(' · ') || 'sin límite especificado',
+      target_language: (req.body && req.body.target_language) || 'es',
+    };
+    const maxTokens = effectiveMaxChars ? Math.min(8000, Math.ceil(effectiveMaxChars / 3) + 800) : 5500;
+
+    const result = await cag.runPrompt('06_form_compression', vars, {
+      maxTokens, temperature: 0.3,
+      ctx: { projectId, userId },
+      endpoint: `/v1/master/documents/:id/compress-field/${field.id}`,
+    });
+
+    // Extraer answer_body (tolerante)
+    let answerBody = '';
+    const parsed = result.parsed;
+    if (parsed && parsed.answer_body) {
+      answerBody = parsed.answer_body;
+    } else if (result.text) {
+      const raw = result.text.trim();
+      const cleaned = raw.replace(/^```(?:json|markdown|md)?\s*/i, '').replace(/```\s*$/, '').trim();
+      if (cleaned.length > 100 && !cleaned.startsWith('{')) answerBody = cleaned;
+    }
+    if (!answerBody) {
+      return bad(res, 502, 'La IA no devolvió contenido utilizable para este campo. Reintenta.');
+    }
+
+    // Truncado defensivo SOLO si ENFORCE_CAPS=true (por defecto false).
+    if (ENFORCE_CAPS && effectiveMaxChars) answerBody = truncate(answerBody, effectiveMaxChars);
+
+    // Upsert form_field_values
+    const meta = JSON.stringify({
+      char_count: answerBody.length,
+      word_count: answerBody.split(/\s+/).filter(Boolean).length,
+      missing_facts: parsed?.missing_facts || [],
+      notes: parsed?.notes_for_reviewer || '',
+      manually_edited: false,
+      last_compressed_at: new Date().toISOString(),
+    });
+    const [[existing]] = await pool.query(
+      'SELECT id FROM form_field_values WHERE instance_id = ? AND field_id = ? LIMIT 1',
+      [instance.id, field.id]
+    );
+    if (existing) {
+      await pool.query(
+        `UPDATE form_field_values SET value_text = ?, value_json = ?, updated_at = NOW() WHERE id = ?`,
+        [answerBody, meta, existing.id]
+      );
+    } else {
+      await pool.query(
+        `INSERT INTO form_field_values (id, instance_id, field_id, section_path, value_text, value_json) VALUES (?, ?, ?, ?, ?, ?)`,
+        [genUUID(), instance.id, field.id, field.section_path || null, answerBody, meta]
+      );
+    }
+
+    ok(res, {
+      field_id: field.id,
+      value_text: answerBody,
+      char_count: answerBody.length,
+      max_chars: effectiveMaxChars,
+      cost_usd: result.costUsd,
+      duration_ms: result.durationMs,
+      mapped_chapter_key: mappedKey,
+    });
+  } catch (e) {
+    console.error('[compressSingleField] error:', e);
+    bad(res, e.status || 500, e.message || String(e));
+  }
+}
+
+/**
+ * POST /v1/master/documents/:id/seed-form-from-master
+ * Copia cada capítulo del Master directamente al campo del formulario
+ * truncándolo al cap. SIN llamadas al LLM, instantáneo, $0 coste.
+ *
+ * Útil para previsualizar el formulario con contenido real antes de
+ * decidir si re-comprimir con IA o editar a mano. El resultado es el
+ * mismo texto del Master truncado — no es "compresión" inteligente
+ * (no resume), pero llena los campos con prosa real del proyecto.
+ */
+async function seedFormFromMaster(req, res) {
+  try {
+    const masterDocId = req.params.id;
+    const userId = req.user.id;
+
+    const masterDoc = await model.getMasterDocument(masterDocId);
+    if (!masterDoc) return bad(res, 404, 'master_document not found');
+    const projectId = masterDoc.project_id;
+
+    const chapters = await model.listChapters(masterDocId);
+    if (!chapters.length) return bad(res, 409, 'Master has no chapters. Compile first.');
+    const byKey = {};
+    for (const c of chapters) byKey[c.chapter_key] = c.body || '';
+
+    // Localizar template activo
+    const [[template]] = await pool.query(
+      `SELECT id, name, slug, template_json FROM form_templates WHERE active = 1 ORDER BY year DESC, name LIMIT 1`
+    );
+    if (!template) return bad(res, 404, 'No form template found');
+    let templateJson;
+    try { templateJson = typeof template.template_json === 'string' ? JSON.parse(template.template_json) : template.template_json; }
+    catch (e) { return bad(res, 500, 'form_template.template_json no parseable'); }
+
+    const fields = extractFormFields(templateJson);
+
+    // Localizar o crear form_instance
+    let [[instance]] = await pool.query(
+      'SELECT id FROM form_instances WHERE project_id = ? AND template_id = ? LIMIT 1',
+      [projectId, template.id]
+    );
+    if (!instance) {
+      const newInstanceId = genUUID();
+      await pool.query(
+        `INSERT INTO form_instances (id, user_id, template_id, program_id, project_id, title, status)
+         SELECT ?, ?, ?, ip.id, ?, ?, 'in_progress'
+           FROM projects p
+           JOIN intake_programs ip ON ip.action_type = p.type
+          WHERE p.id = ? LIMIT 1`,
+        [newInstanceId, userId, template.id, projectId, masterDoc.version_label || 'Form ' + template.name, projectId]
+      );
+      instance = { id: newInstanceId };
+    }
+
+    // Mapping field → chapter_key (mismo que mapFieldToChapter pero forzando match)
+    const processableFields = fields.filter(f => !/^s6_/.test(f.id));
+    const results = [];
+    const errors = [];
+    const chaptersByKey = byKey;
+
+    for (const field of processableFields) {
+      const mappedKey = mapFieldToChapter(field.id, chaptersByKey);
+      if (!mappedKey || !chaptersByKey[mappedKey]) {
+        errors.push({ field_id: field.id, error: 'no master chapter mapped' });
+        continue;
+      }
+      const body = chaptersByKey[mappedKey] || '';
+      if (!body.trim()) {
+        errors.push({ field_id: field.id, error: 'master chapter is empty' });
+        continue;
+      }
+
+      // Truncar al cap del field (FIELD_CHAR_LIMITS de field-limits.js)
+      const effectiveMaxChars = field.max_chars || getFieldLimit(field.id) || null;
+      const cleaned = effectiveMaxChars ? truncate(body, effectiveMaxChars) : body;
+
+      const meta = JSON.stringify({
+        char_count: cleaned.length,
+        word_count: cleaned.split(/\s+/).filter(Boolean).length,
+        seeded_from_master: true,
+        seeded_from_chapter: mappedKey,
+        seeded_at: new Date().toISOString(),
+      });
+
+      const [[existing]] = await pool.query(
+        'SELECT id FROM form_field_values WHERE instance_id = ? AND field_id = ? LIMIT 1',
+        [instance.id, field.id]
+      );
+      if (existing) {
+        await pool.query(
+          'UPDATE form_field_values SET value_text = ?, value_json = ?, updated_at = NOW() WHERE id = ?',
+          [cleaned, meta, existing.id]
+        );
+      } else {
+        await pool.query(
+          'INSERT INTO form_field_values (id, instance_id, field_id, section_path, value_text, value_json) VALUES (?, ?, ?, ?, ?, ?)',
+          [genUUID(), instance.id, field.id, field.section_path || null, cleaned, meta]
+        );
+      }
+      results.push({
+        field_id: field.id,
+        chapter_key: mappedKey,
+        char_count: cleaned.length,
+        max_chars: effectiveMaxChars,
+        was_truncated: body.length > cleaned.length,
+      });
+    }
+
+    await pool.query('UPDATE form_instances SET status = "complete" WHERE id = ?', [instance.id]);
+
+    ok(res, {
+      instance_id: instance.id,
+      project_id: projectId,
+      template: { id: template.id, name: template.name },
+      total_fields: processableFields.length,
+      seeded: results.length,
+      errors: errors.length,
+      results,
+      error_details: errors,
+    });
+  } catch (e) {
+    console.error('[seedFormFromMaster] error:', e);
+    bad(res, e.status || 500, e.message || String(e));
   }
 }
 
@@ -1314,7 +1830,11 @@ function mapFieldToChapter(fieldId, chaptersByKey) {
   if (fieldId === 'summary_text') {
     return Object.keys(chaptersByKey).find(k => k === 'ch_summary');
   }
-  const m = fieldId.match(/^s(\d+)_(\d+)(?:_(\d+))?_text$/);
+  // Match: s{section}_{sub}[_{subsub}]_*  → ch_{section}_{sub}[_{subsub}]_*
+  // Cubre s1_1_text, s2_1_3_staff_table, s2_1_5_risk_table, s5_2_text, etc.
+  // Los _staff_table y _risk_table se rellenan con narrativa libre — el exporter
+  // los usa como "narrativa fuera de la tabla" (s2_1_3_outside_text, etc.).
+  const m = fieldId.match(/^s(\d+)_(\d+)(?:_(\d+))?_/);
   if (!m) return null;
   const code = [m[1], m[2], m[3]].filter(Boolean).join('_');
   const prefix = 'ch_' + code + '_';
@@ -1361,11 +1881,16 @@ module.exports = {
   // diagnoses
   listDiagnoses,
   getDiagnosis,
+  patchDiagnosisItemState,
+  createCustomDiagnosisItem,
   // LLM-powered (CAG)
   compileMasterV1,
   runDiagnosis,
   refineChapter,
+  proposeRewrite,
   compressToForm,
+  compressSingleField,
+  seedFormFromMaster,
   // placeholders LLM (501 hasta conectar)
   regenerateWithUnifiedContext: notImplemented,
   computeScoreEstimate: notImplemented,

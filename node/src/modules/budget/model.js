@@ -608,6 +608,19 @@ async function createFromIntake(userId, projectId) {
             }
             break;
           }
+
+          // ── Financial Support to Third Parties → D/D1 ──
+          // Cascade funding / sub-grants. Línea presupuestaria separada en EACEA
+          // (categoría D1), no se suma al C3/Other ni a Subcontracting.
+          case 'fstp': {
+            const [gcosts] = await conn.query('SELECT * FROM activity_generic_costs WHERE activity_id = ? AND active = 1', [act.id]);
+            for (const gc of gcosts) {
+              const benId = partnerToBen[gc.partner_id];
+              if (!benId) continue;
+              await addToCostLine(conn, budgetId, benId, bwpId, 'D', 'D1', 'Financial support to third parties', 1, Number(gc.amount || 0));
+            }
+            break;
+          }
         }
       }
     }

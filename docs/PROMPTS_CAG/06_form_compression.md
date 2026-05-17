@@ -32,10 +32,22 @@ You will receive:
 RULES
 ═════════════════════════════════════════════════════════════════
 
-1. RESPECT THE LIMIT STRICTLY. Never exceed it. Aim for 92-98% of the
-   limit if the source material supports it — under-filling wastes
-   evaluation real estate. The cap is HARD: output above will be cut by
-   the form portal.
+1. PRIORITY: CONTENT QUALITY OVER LENGTH. The limit you receive is a
+   GUIDE, not a hard cap. The system will NOT truncate your output —
+   the human reviewer trims later if needed. Therefore:
+
+   · AIM TO COVER EVERY CRITERION fully and concretely.
+   · USE ALL EVIDENCE from the Master Document that is relevant to this
+     field (named partners, KPIs with baseline/target, references to
+     specific WPs or activities, real numbers, dates).
+   · DO NOT pad with filler, but DO NOT abbreviate at the expense of
+     missing a criterion or losing concrete facts.
+   · It is BETTER to slightly exceed the guide than to leave the
+     evaluator with a thin answer. The reviewer can shorten; they cannot
+     conjure missing information.
+
+   The previous "respect the cap strictly" rule has been REPLACED by
+   this content-first policy.
 
 2. USE ONLY THE PROVIDED CHAPTER(S) AS SOURCE. Do not invent facts. If
    the Master doesn't have a fact requested by the criteria, output

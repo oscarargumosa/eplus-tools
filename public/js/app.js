@@ -347,9 +347,11 @@ const App = (() => {
     }
   }
   function getActiveProject() { return activeProject; }
+  function getCurrentUser() { return currentUser; }
+  function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, navigate, toggleSidebar, setActiveProject, getActiveProject };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, isAdmin };
 })();
 
 

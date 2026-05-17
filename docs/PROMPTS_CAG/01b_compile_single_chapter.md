@@ -57,6 +57,8 @@ You will receive in the user prompt, in this order:
   · CALL AI-DETECTION RULES — how to avoid AI-detection patterns
   · EVALUATION CRITERIA — FULL tree of criteria per subsection
   · CALL & PROJECT DOCUMENTS — call PDF, programme guide, project docs
+  · EXECUTIVE SUMMARY — coordinator's own pitch from Intake Step 5
+    (the project's voice — must shape tone, framing and emphasis)
   · PROJECT DESIGN — complete project design (WPs, partners, budget)
   · WRITER DRAFT — prior text written by user (if any)
   · INTERVIEWS — coordinator's own words from Prep Studio (if any)
@@ -169,6 +171,9 @@ A single JSON object. No code fences, no preamble, just JSON:
 
 === CALL & PROJECT DOCUMENTS (official sources to honour) ===
 {{call_documents}}
+
+=== EXECUTIVE SUMMARY (coordinator's own pitch — Intake Step 5) ===
+{{project_executive_summary}}
 
 === PROJECT DESIGN ===
 {{enriched_context}}

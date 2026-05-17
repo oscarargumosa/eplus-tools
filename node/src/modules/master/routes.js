@@ -38,7 +38,8 @@ router.get   ('/documents/:id/chapters', requireAuth, ctrl.listChapters);
 router.post  ('/documents/:id/chapters', requireAuth, ctrl.createChapter);
 router.patch ('/chapters/:id',           requireAuth, ctrl.updateChapter);
 router.delete('/chapters/:id',           requireAuth, ctrl.deleteChapter);
-router.post  ('/chapters/:id/refine',    requireAuth, ctrl.refineChapter);
+router.post  ('/chapters/:id/refine',          requireAuth, ctrl.refineChapter);
+router.post  ('/chapters/:id/propose-rewrite', requireAuth, ctrl.proposeRewrite);
 
 /* ── Exports ─────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/exports', requireAuth, ctrl.listExports);
@@ -59,16 +60,20 @@ router.get ('/form-templates/:id',           requireAuth, ctrl.getFormTemplateFu
 // (project docs). Aquí solo se inventaría qué se cargaría al CAG.
 router.get  ('/projects/:projectId/cag-documents', requireAuth, ctrl.listCagDocumentsForProject);
 
-/* ── Diagnoses (read-only) ───────────────────────────────────── */
-router.get ('/documents/:id/diagnoses', requireAuth, ctrl.listDiagnoses);
-router.get ('/diagnoses/:id',           requireAuth, ctrl.getDiagnosis);
+/* ── Diagnoses ───────────────────────────────────────────────── */
+router.get  ('/documents/:id/diagnoses', requireAuth, ctrl.listDiagnoses);
+router.get  ('/diagnoses/:id',           requireAuth, ctrl.getDiagnosis);
+router.post ('/diagnoses/:id/items',     requireAuth, ctrl.createCustomDiagnosisItem);
+router.patch('/diagnosis-items/:id',     requireAuth, ctrl.patchDiagnosisItemState);
 
 /* ── LLM pipelines ───────────────────────────────────────────── */
 router.post('/documents/:id/compile-v1',          requireAuth, ctrl.compileMasterV1);
 router.post('/documents/:id/regenerate',          requireAuth, ctrl.regenerateWithUnifiedContext);
 router.post('/documents/:id/diagnose',            requireAuth, ctrl.runDiagnosis);
 router.post('/documents/:id/score',               requireAuth, ctrl.computeScoreEstimate);
-router.post('/documents/:id/compress-to-form',    requireAuth, ctrl.compressToForm);
+router.post('/documents/:id/compress-to-form',         requireAuth, ctrl.compressToForm);
+router.post('/documents/:id/compress-field/:fieldId',  requireAuth, ctrl.compressSingleField);
+router.post('/documents/:id/seed-form-from-master',    requireAuth, ctrl.seedFormFromMaster);
 router.post('/documents/:id/coherence-pass',      requireAuth, ctrl.coherencePass);
 
 module.exports = router;

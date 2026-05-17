@@ -163,6 +163,8 @@ const Calculator = (() => {
       subtypes: ['Printed materials','Educational materials','Visibility materials','Workshop materials','Event materials','Participant kits / welcome packs'] },
     consumables:{ label:'Consumables',           icon:'science',         color:'#0F766E', bg:'rgba(15,118,110,.08)',mobility:false, depreciation:true, descHint:'What materials or supplies do you need? What are they for and which project activities require them?',
       subtypes: ['Printing consumables','Workshop consumables','Office consumables','Hygiene / cleaning consumables','Catering consumables','Technical consumables'] },
+    fstp:       { label:'Financial Support to Third Parties', icon:'volunteer_activism', color:'#C2410C', bg:'rgba(194,65,12,.08)', mobility:false, depreciation:false, descHint:'Describe the cascade/sub-grant scheme. Who are the third parties, how do they get selected, what amount can each receive, and what activities are funded?',
+      subtypes: ['Cascade funding (open call)','Sub-grants to NGOs / associations','Mini-grants to youth-led initiatives','Re-granting to community groups','Voucher scheme for SMEs','Pilot grants for grassroots actions'] },
     other:      { label:'Other Costs',           icon:'add_circle',      color:'#6B7280', bg:'rgba(107,114,128,.08)',mobility:false, depreciation:true, descHint:'Tell us about this cost. What does it cover, why is it needed and how did you estimate the amount?',
       subtypes: ['Translation / interpretation costs','External expert / trainer costs','Venue / space rental costs','Hosting / software / platform costs','Travel / accommodation support costs','Evaluation / administrative support costs'] },
   };
@@ -1211,8 +1213,45 @@ const Calculator = (() => {
       case 'website': case 'artistic':
         return buildNoteAmountFields(act, wi);
 
+      case 'fstp':
+        return buildFstpFields(act, wi);
+
       default: return '';
     }
+  }
+
+  /* ── FSTP fields (sub-grants / cascade funding) ───────────────
+     Per-partner row: a quién va, descripción del sub-grant, importe,
+     % cofinanciación al proyecto, total cargado al budget. Sin %Life
+     porque no es un activo amortizable. */
+
+  function buildFstpFields(act, wi) {
+    if (!act.note_partners) act.note_partners = {};
+    state.partners.forEach(p => {
+      if (!act.note_partners[p.id]) act.note_partners[p.id] = { active:false, note:'', amount:0, project_pct:100, lifetime_pct:100 };
+      const np = act.note_partners[p.id];
+      if (np.project_pct == null) np.project_pct = 100;
+      if (np.lifetime_pct == null) np.lifetime_pct = 100; // fijo a 100 para FSTP — no se muestra
+    });
+    const rows = state.partners.map((p, i) => {
+      const np = act.note_partners[p.id];
+      const charged = np.active ? calcDepreciation(np) : 0;
+      return `<tr style="opacity:${np.active?1:.4}">
+        <td><label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','active',this.checked)">
+          <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
+        </label></td>
+        <td><input type="text" value="${np.note||''}" placeholder="Beneficiary / scheme..." class="w-full text-xs" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','note',this.value)"></td>
+        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-24" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','amount',this.value)"></td>
+        <td class="text-right"><input type="number" value="${np.project_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','project_pct',this.value)"></td>
+        <td class="text-right font-mono font-semibold text-sm">${charged > 0 ? euros(charged) : '—'}</td>
+      </tr>`;
+    }).join('');
+
+    return `<div class="text-xs text-on-surface-variant mb-2"><strong>Charged = Investment × % project share</strong> · Línea presupuestaria D1 (Financial Support to Third Parties).</div>
+    <div class="overflow-x-auto"><table class="calc-table"><thead><tr>
+      <th class="text-left">Partner managing</th><th>Beneficiary / description</th><th class="text-right">Investment €</th><th class="text-right">% Project</th><th class="text-right">Charged</th>
+    </tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 
   /* ── Mobility fields ────────────────────────────────────────── */
@@ -1548,6 +1587,14 @@ const Calculator = (() => {
         state.partners.forEach(p => { const np = act.note_partners[p.id]; if (np?.active) total += calcDepreciation(np); });
         return { total };
       }
+      case 'fstp': {
+        // Mismo cálculo que depreciation (amount × project_pct × lifetime_pct),
+        // pero lifetime_pct se fuerza a 100 desde el form → equivale a amount × project_pct.
+        if (!act.note_partners) return { total:0 };
+        let total = 0;
+        state.partners.forEach(p => { const np = act.note_partners[p.id]; if (np?.active) total += calcDepreciation(np); });
+        return { total };
+      }
       case 'website': case 'artistic': {
         if (!act.note_partners) return { total:0 };
         let total = 0;
@@ -1759,11 +1806,15 @@ const Calculator = (() => {
         <button class="calc-res-tab active" onclick="Calculator._switchResTab('partner')">By Partner</button>
         <button class="calc-res-tab" onclick="Calculator._switchResTab('wp')">By WP</button>
         <button class="calc-res-tab" onclick="Calculator._switchResTab('summary')">Summary</button>
+        <button class="calc-res-tab" onclick="Calculator._switchResTab('form_b')" title="Tablas oficiales del Form Part B (EACEA)">
+          <span class="material-symbols-outlined text-[14px] align-middle mr-0.5">verified</span>Form Part B
+        </button>
       </div>
 
       <div id="calc-res-partner">${buildResPartner(wpResults, directCosts, indirect, subtotal, totalProject, indirectPct)}</div>
       <div id="calc-res-wp" style="display:none">${buildResWP(wpResults, directCosts, indirect, subtotal, indirectPct)}</div>
       <div id="calc-res-summary" style="display:none">${buildResSummary(wpResults, directCosts, indirect, subtotal, totalProject, indirectPct)}</div>
+      <div id="calc-res-form_b" style="display:none"><div class="text-sm text-on-surface-variant py-12 text-center"><span class="material-symbols-outlined animate-spin align-middle">progress_activity</span> Pulsa <strong>Form Part B</strong> para cargar las tablas oficiales.</div></div>
 
       <!-- Financing bar is now integrated in the hero above -->
 
@@ -1927,6 +1978,11 @@ const Calculator = (() => {
             case 'goods': case 'other': {
               const np = act.note_partners?.[p.id]; if (np?.active) add('C3_other', wi, act.label, 1, calcDepreciation(np), calcDepreciation(np)); break;
             }
+            case 'fstp': {
+              const np = act.note_partners?.[p.id];
+              if (np?.active) add('D1', wi, act.label, 1, calcDepreciation(np), calcDepreciation(np));
+              break;
+            }
           }
         });
       });
@@ -1938,7 +1994,8 @@ const Calculator = (() => {
       const C2 = sm('C2');
       const C3 = sm('C3_cons') + sm('C3_meet') + sm('C3_comms') + sm('C3_web') + sm('C3_art') + sm('C3_other');
       const C = C1 + C2 + C3;
-      return { lines:L, A1, A, C1, C2, C3, C, directTotal: A + C };
+      const D = sm('D1');
+      return { lines:L, A1, A, C1, C2, C3, C, D, directTotal: A + C + D };
     }
 
     // ── Render helper: expandable sub-line with activity detail ──
@@ -1992,7 +2049,9 @@ const Calculator = (() => {
       const C2 = sumItems(lines.C2);
       const C3 = sumItems(lines.C3_cons) + sumItems(lines.C3_meet) + sumItems(lines.C3_comms) + sumItems(lines.C3_web) + sumItems(lines.C3_art) + sumItems(lines.C3_other);
       const C = C1 + C2 + C3;
-      const directTotal = A + C;
+      const D1 = sumItems(lines.D1 || []);
+      const D = D1;
+      const directTotal = A + C + D;
       const indAmt = directTotal * indPctVal / 100;
       const grandTotal = directTotal + indAmt;
 
@@ -2044,11 +2103,16 @@ const Calculator = (() => {
                 ${subRow('Website', lines.C3_web, c)}
                 ${subRow('Artistic Fees', lines.C3_art, c)}
                 ${subRow('Other', lines.C3_other, c)}
-                <tr class="font-bold border-b border-outline-variant/20 text-on-surface-variant/60" style="background:${c}06">
+                <tr class="font-bold border-b border-outline-variant/20${D > 0 ? '' : ' text-on-surface-variant/60'}" style="background:${c}06">
                   <td class="py-2 px-3" colspan="3">D. Other cost categories</td>
-                  <td class="text-right py-2 px-3 font-mono">${dash}</td>
+                  <td class="text-right py-2 px-3 font-mono">${D > 0 ? euros(D) : dash}</td>
                 </tr>
-                <tr class="border-b border-outline-variant/10 text-on-surface-variant/50"><td class="py-0.5 pl-5">D.1 Financial support to third parties</td><td class="text-right px-2">${dash}</td><td class="text-right px-2">${dash}</td><td class="text-right px-3">${dash}</td></tr>
+                <tr class="border-b border-outline-variant/10 font-semibold">
+                  <td class="py-1 pl-5">D.1 Financial support to third parties</td>
+                  <td colspan="2"></td>
+                  <td class="text-right font-mono px-3">${D1 > 0 ? euros(D1) : dash}</td>
+                </tr>
+                ${(lines.D1 && lines.D1.length) ? subRow('Sub-grants / cascade funding', lines.D1, c) : ''}
                 <tr class="font-bold border-y-2 border-outline-variant/30" style="background:${c}0c">
                   <td class="py-2 px-3" colspan="3">TOTAL DIRECT COSTS (A+B+C+D)</td>
                   <td class="text-right py-2 px-3 font-mono">${euros(directTotal)}</td>
@@ -2087,8 +2151,9 @@ const Calculator = (() => {
           C3_web: filterByWP(b.lines.C3_web, wi),
           C3_art: filterByWP(b.lines.C3_art, wi),
           C3_other: filterByWP(b.lines.C3_other, wi),
+          D1: filterByWP(b.lines.D1 || [], wi),
         };
-        const wpDirect = sumWorkers(wpLines.A1_workers) + sumItems(wpLines.C1_travel) + sumItems(wpLines.C1_accom) + sumItems(wpLines.C1_subs) + sumItems(wpLines.C2) + sumItems(wpLines.C3_cons) + sumItems(wpLines.C3_meet) + sumItems(wpLines.C3_comms) + sumItems(wpLines.C3_web) + sumItems(wpLines.C3_art) + sumItems(wpLines.C3_other);
+        const wpDirect = sumWorkers(wpLines.A1_workers) + sumItems(wpLines.C1_travel) + sumItems(wpLines.C1_accom) + sumItems(wpLines.C1_subs) + sumItems(wpLines.C2) + sumItems(wpLines.C3_cons) + sumItems(wpLines.C3_meet) + sumItems(wpLines.C3_comms) + sumItems(wpLines.C3_web) + sumItems(wpLines.C3_art) + sumItems(wpLines.C3_other) + sumItems(wpLines.D1);
         if (wpDirect === 0) return '';
 
         const wpIndAmt = wpDirect * indPct / 100;
@@ -2516,6 +2581,14 @@ const Calculator = (() => {
       state.partners.forEach(p => {
         act.note_partners[p.id] = ACT_TYPES[type]?.depreciation ? { active:true, note:'', amount:0, project_pct:100, lifetime_pct:100 } : { active:true, note:'', amount:0 };
       });
+    } else if (type === 'fstp') {
+      // FSTP usa el mismo schema que depreciation (project_pct + lifetime_pct=100 fijo)
+      // pero arranca inactivo por defecto: el usuario debe activar explícitamente
+      // los partners que gestionan sub-grants (no todos lo hacen).
+      act.note_partners = {};
+      state.partners.forEach(p => {
+        act.note_partners[p.id] = { active:false, note:'', amount:0, project_pct:100, lifetime_pct:100 };
+      });
     } else if (type === 'io') {
       act.io_partner_days = {}; act.io_partner_profiles = {};
       state.partners.forEach(p => { act.io_partner_days[p.id] = 40; });
@@ -2822,10 +2895,285 @@ const Calculator = (() => {
 
   function switchResTab(name) {
     document.querySelectorAll('.calc-res-tab').forEach(t => t.classList.remove('active'));
-    ['summary','wp','partner'].forEach(n => { const el = $('calc-res-'+n); if (el) el.style.display = 'none'; });
-    document.querySelector(`.calc-res-tab:nth-child(${name==='partner'?1:name==='wp'?2:3})`).classList.add('active');
+    ['summary','wp','partner','form_b'].forEach(n => { const el = $('calc-res-'+n); if (el) el.style.display = 'none'; });
+    const tabIdx = name==='partner'?1 : name==='wp'?2 : name==='summary'?3 : 4;
+    document.querySelector(`.calc-res-tab:nth-child(${tabIdx})`)?.classList.add('active');
     const el = $('calc-res-'+name);
     if (el) el.style.display = 'block';
+    // Lazy-load del tab Form Part B: solo carga al pulsar
+    if (name === 'form_b' && el && el.dataset.loaded !== '1') {
+      loadFormBTables(el);
+    }
+  }
+
+  async function loadFormBTables(host) {
+    if (!currentProjectId) { host.innerHTML = '<div class="text-sm text-red-600">No hay proyecto activo.</div>'; return; }
+    host.innerHTML = '<div class="text-sm text-on-surface-variant py-12 text-center"><svg class="animate-spin h-5 w-5 inline text-primary" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Cargando tablas oficiales…</div>';
+    try {
+      const res = await API.get(`/budget/projects/${currentProjectId}/eacea-tables`);
+      const data = res.data || res;
+      host.innerHTML = renderFormBTables(data);
+      host.dataset.loaded = '1';
+    } catch (e) {
+      host.innerHTML = `<div class="text-sm text-red-600 py-6">Error: ${escHtml(e.message || String(e))}</div>`;
+    }
+  }
+
+  function escHtml(s) {
+    if (s == null) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function fmtEur(n) {
+    if (!n || Number(n) === 0) return '—';
+    return Math.round(Number(n)).toLocaleString('es-ES');
+  }
+  function fmtPm(n) {
+    if (!n || Number(n) === 0) return '—';
+    const v = Number(n);
+    return v % 1 === 0 ? String(v) : v.toFixed(1).replace('.0','');
+  }
+  function fmtInt(n) {
+    if (!n || Number(n) === 0) return '—';
+    return String(Math.round(Number(n)));
+  }
+
+  function renderFormBTables(data) {
+    const indirectPct = Number(data.indirect_pct || 0);
+    const wps = data.wps || [];
+    const byPartner = data.by_partner || [];
+    const staff = data.staff_effort || { rows: [], totals_by_wp: [], grand_total_pm: 0 };
+    const summary = data.summary || {};
+
+    // Header summary
+    const summaryHtml = `
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-4">
+        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Total proyecto</div>
+          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${fmtEur(summary.grand_total_amount)} €</div>
+        </div>
+        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Person-Months totales</div>
+          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${fmtPm(summary.grand_total_pm)} PM</div>
+        </div>
+        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Partners</div>
+          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${byPartner.length}</div>
+        </div>
+        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Indirect %</div>
+          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${indirectPct}%</div>
+        </div>
+      </div>
+    `;
+
+    return `
+      ${summaryHtml}
+      <div class="mb-2 p-3 rounded-lg bg-primary/5 border border-primary/20 text-xs text-on-surface">
+        <span class="material-symbols-outlined text-base align-middle text-primary">verified</span>
+        <strong>Tablas oficiales EACEA</strong> — estos son los datos que se inyectan en el formulario al exportarlo. Cualquier cambio en Calculator (actividades, costes, partners) se refleja aquí automáticamente.
+      </div>
+      ${renderStaffEffortTable(staff)}
+      ${wps.map(w => renderWpBudgetEacea(w, indirectPct)).join('')}
+      ${renderByPartnerEacea(byPartner)}
+    `;
+  }
+
+  function renderStaffEffortTable(staff) {
+    if (!staff || !staff.rows || !staff.rows.length) return '';
+    const headerWps = staff.rows[0].cells.map(c => `<th class="px-2 py-1.5 text-right font-bold text-[10px] uppercase whitespace-nowrap" title="${escHtml(c.wp_title || '')}">${escHtml(c.wp_code)}</th>`).join('');
+    return `
+      <div class="mt-4 border border-outline-variant/30 rounded-lg overflow-hidden">
+        <div class="px-3 py-2 bg-surface-container-low flex items-center justify-between">
+          <span class="text-sm font-bold"><span class="material-symbols-outlined text-base align-middle mr-1">groups</span>Staff effort per participant</span>
+          <span class="text-xs text-on-surface-variant">Total: <strong>${fmtPm(staff.grand_total_pm)} PM</strong></span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-[11px]">
+            <thead class="bg-surface-container-lowest">
+              <tr class="text-on-surface-variant">
+                <th class="px-3 py-2 text-left font-bold text-[10px] uppercase">Participant</th>
+                ${headerWps}
+                <th class="px-3 py-2 text-right font-bold text-[10px] uppercase bg-primary/5">Total PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${staff.rows.map(r => `<tr class="border-t border-outline-variant/10">
+                <td class="px-3 py-2"><span class="font-semibold">${escHtml(r.partner_acronym)}</span>${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}<div class="text-[10px] text-on-surface-variant/70 truncate max-w-[200px]">${escHtml(r.partner_name)}</div></td>
+                ${r.cells.map(c => {
+                  const isZero = !c.pm || Number(c.pm) === 0;
+                  const cls = isZero ? 'text-on-surface-variant/40' : (c.is_leader ? 'font-extrabold text-primary' : 'font-mono');
+                  return `<td class="px-2 py-2 text-right ${cls}">${fmtPm(c.pm)}</td>`;
+                }).join('')}
+                <td class="px-3 py-2 text-right font-mono font-bold bg-primary/5">${fmtPm(r.total_pm)}</td>
+              </tr>`).join('')}
+              <tr class="border-t-2 border-outline-variant/30 bg-surface-container-low font-bold">
+                <td class="px-3 py-2 uppercase text-[10px]">Total per WP</td>
+                ${staff.totals_by_wp.map(t => `<td class="px-2 py-2 text-right font-mono">${fmtPm(t.pm)}</td>`).join('')}
+                <td class="px-3 py-2 text-right font-mono font-extrabold bg-primary/10">${fmtPm(staff.grand_total_pm)}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderWpBudgetEacea(wp, indirectPct) {
+    const rows = wp.rows || [];
+    const tot = wp.totals || {};
+    const numCell = (v, isInt) => {
+      const z = !v || Number(v) === 0;
+      return `<td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${z ? 'text-on-surface-variant/40' : ''}">${z ? '—' : (isInt ? fmtInt(v) : fmtEur(v))}</td>`;
+    };
+    return `
+      <div class="mt-4 border border-outline-variant/30 rounded-lg overflow-hidden">
+        <div class="px-3 py-2 bg-surface-container-low flex items-center justify-between">
+          <span class="text-sm font-bold"><span class="material-symbols-outlined text-base align-middle mr-1">account_balance_wallet</span>${escHtml(wp.code || '?')} · ${escHtml(wp.title || '')}</span>
+          <span class="text-xs text-on-surface-variant">Total WP: <strong>${fmtEur(tot.total)} €</strong> · ${fmtPm(tot.person_months)} PM</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-[10.5px]">
+            <thead class="bg-surface-container-lowest">
+              <tr class="text-on-surface-variant">
+                <th class="px-1.5 py-1 text-left font-bold text-[9.5px] uppercase">Participant</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Costs (PM)</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">A. Personnel</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">B. Subc.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.1a Travel €</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Travels</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Persons</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.1c Subsist.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.2 Equip.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.3 Other</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">D.1 FSTP</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">E. Indirect</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Total €</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map(r => `<tr class="border-t border-outline-variant/10">
+                <td class="px-1.5 py-1.5 whitespace-nowrap">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-amber-200 text-amber-900 px-1 rounded">leader</span>' : ''}</td>
+                <td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${(!r.person_months ? 'text-on-surface-variant/40' : (r.is_leader ? 'font-extrabold' : ''))}">${fmtPm(r.person_months)}</td>
+                ${numCell(r.a_personnel)}
+                ${numCell(r.b_subcontracting)}
+                ${numCell(r.c1a_travel)}
+                ${numCell(r.travels, true)}
+                ${numCell(r.persons_travelling, true)}
+                ${numCell(r.c1c_subsistence)}
+                ${numCell(r.c2_equipment)}
+                ${numCell(r.c3_other)}
+                ${numCell(r.d1_third_parties)}
+                ${numCell(r.e_indirect)}
+                <td class="px-1.5 py-1.5 text-right font-mono font-bold">${fmtEur(r.total)}</td>
+              </tr>`).join('')}
+              <tr class="border-t-2 border-outline-variant/30 bg-surface-container-low font-bold">
+                <td class="px-1.5 py-1.5 uppercase text-[10px]">Total</td>
+                <td class="px-1.5 py-1.5 text-right font-mono">${fmtPm(tot.person_months)}</td>
+                ${numCell(tot.a_personnel)}
+                ${numCell(tot.b_subcontracting)}
+                ${numCell(tot.c1a_travel)}
+                ${numCell(tot.travels, true)}
+                ${numCell(tot.persons_travelling, true)}
+                ${numCell(tot.c1c_subsistence)}
+                ${numCell(tot.c2_equipment)}
+                ${numCell(tot.c3_other)}
+                ${numCell(tot.d1_third_parties)}
+                ${numCell(tot.e_indirect)}
+                <td class="px-1.5 py-1.5 text-right font-mono font-extrabold">${fmtEur(tot.total)}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderByPartnerEacea(byPartner) {
+    if (!byPartner || !byPartner.length) return '';
+    const numCell = (v, isInt) => {
+      const z = !v || Number(v) === 0;
+      return `<td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${z ? 'text-on-surface-variant/40' : ''}">${z ? '—' : (isInt ? fmtInt(v) : fmtEur(v))}</td>`;
+    };
+    const grand = byPartner.reduce((g, p) => {
+      const t = p.totals || {};
+      g.pm += Number(t.person_months) || 0;
+      g.a += Number(t.a_personnel) || 0;
+      g.b += Number(t.b_subcontracting) || 0;
+      g.c1a += Number(t.c1a_travel) || 0;
+      g.travels += Number(t.travels) || 0;
+      g.persons += Number(t.persons_travelling) || 0;
+      g.c1c += Number(t.c1c_subsistence) || 0;
+      g.c2 += Number(t.c2_equipment) || 0;
+      g.c3 += Number(t.c3_other) || 0;
+      g.d1 += Number(t.d1_third_parties) || 0;
+      g.indirect += Number(t.e_indirect) || 0;
+      g.total += Number(t.total) || 0;
+      return g;
+    }, { pm:0, a:0, b:0, c1a:0, travels:0, persons:0, c1c:0, c2:0, c3:0, d1:0, indirect:0, total:0 });
+    return `
+      <div class="mt-4 border border-outline-variant/30 rounded-lg overflow-hidden">
+        <div class="px-3 py-2 bg-surface-container-low flex items-center justify-between">
+          <span class="text-sm font-bold"><span class="material-symbols-outlined text-base align-middle mr-1">groups</span>Estimated budget — Resources (per participant, project total)</span>
+          <span class="text-xs text-on-surface-variant">Total: <strong>${fmtEur(grand.total)} €</strong></span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-[10.5px]">
+            <thead class="bg-surface-container-lowest">
+              <tr class="text-on-surface-variant">
+                <th class="px-1.5 py-1 text-left font-bold text-[9.5px] uppercase">Participant</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Costs (PM)</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">A. Personnel</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">B. Subc.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.1a Travel €</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Travels</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Persons</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.1c Subsist.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.2 Equip.</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">C.3 Other</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">D.1 FSTP</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">E. Indirect</th>
+                <th class="px-1.5 py-1 text-right font-bold text-[9.5px] uppercase">Total €</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${byPartner.map(p => {
+                const t = p.totals || {};
+                return `<tr class="border-t border-outline-variant/10">
+                  <td class="px-1.5 py-1.5 whitespace-nowrap">${escHtml(p.acronym)}${p.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}</td>
+                  <td class="px-1.5 py-1.5 text-right font-mono">${fmtPm(t.person_months)}</td>
+                  ${numCell(t.a_personnel)}
+                  ${numCell(t.b_subcontracting)}
+                  ${numCell(t.c1a_travel)}
+                  ${numCell(t.travels, true)}
+                  ${numCell(t.persons_travelling, true)}
+                  ${numCell(t.c1c_subsistence)}
+                  ${numCell(t.c2_equipment)}
+                  ${numCell(t.c3_other)}
+                  ${numCell(t.d1_third_parties)}
+                  ${numCell(t.e_indirect)}
+                  <td class="px-1.5 py-1.5 text-right font-mono font-bold">${fmtEur(t.total)}</td>
+                </tr>`;
+              }).join('')}
+              <tr class="border-t-2 border-outline-variant/30 bg-surface-container-low font-bold">
+                <td class="px-1.5 py-1.5 uppercase text-[10px]">Total</td>
+                <td class="px-1.5 py-1.5 text-right font-mono">${fmtPm(grand.pm)}</td>
+                ${numCell(grand.a)}
+                ${numCell(grand.b)}
+                ${numCell(grand.c1a)}
+                ${numCell(grand.travels, true)}
+                ${numCell(grand.persons, true)}
+                ${numCell(grand.c1c)}
+                ${numCell(grand.c2)}
+                ${numCell(grand.c3)}
+                ${numCell(grand.d1)}
+                ${numCell(grand.indirect)}
+                <td class="px-1.5 py-1.5 text-right font-mono font-extrabold">${fmtEur(grand.total)}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
   }
 
   function setGanttView(mode) { ganttView = mode; renderGantt(getRouteContainer()); }
