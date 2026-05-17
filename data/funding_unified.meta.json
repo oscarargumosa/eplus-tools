@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-05-16T04:05:15.192Z",
+  "generatedAt": "2026-05-17T04:06:46.512Z",
   "total": 4067,
   "bySource": {
     "sedia": 673,
-    "bdns": 3301,
-    "salto": 93
+    "bdns": 3302,
+    "salto": 92
   },
   "byCategory": {
-    "call_for_proposals": 3974,
-    "training": 93
+    "call_for_proposals": 3975,
+    "training": 92
   },
   "byLevel": {
-    "eu": 766,
-    "ccaa": 749,
+    "eu": 765,
+    "ccaa": 750,
     "estado": 130,
     "local": 2120,
     "otros": 302
   },
   "byStatus": {
-    "open": 3764,
+    "open": 3757,
     "forthcoming": 302,
-    "closed": 1
+    "closed": 8
   },
   "byProgramme": {
     "European Solidarity Corps": 1,
@@ -35,9 +35,9 @@
     "EU Anti-Fraud": 8,
     "NDICI / EuropeAid": 40,
     "Horizon Europe": 490,
-    "Concurrencia competitiva - canónica": 2924,
+    "Concurrencia competitiva - canónica": 2925,
     "Concesión directa - canónica": 377,
-    "Erasmus+ Youth (SALTO)": 93,
+    "Erasmus+ Youth (SALTO)": 92,
     "UCPM": 2,
     "Single Market Programme": 3,
     "ESF+": 2,
@@ -53,6 +53,6 @@
     "I3": 2
   },
   "curatedEnrichmentCount": 1,
-  "sumBudgetEur": 290214889671.21985,
-  "summaryEsPendingCount": 766
+  "sumBudgetEur": 290218122671.21985,
+  "summaryEsPendingCount": 765
 }
