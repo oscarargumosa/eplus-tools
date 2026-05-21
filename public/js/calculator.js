@@ -1177,11 +1177,7 @@ const Calculator = (() => {
 
     switch (act.type) {
       case 'mgmt':
-        return `<div class="grid grid-cols-3 gap-2">
-          <div><label class="text-[11px] text-on-surface-variant">€/month applicant</label><input type="number" value="${act.rate_applicant||500}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'rate_applicant',this.value)"></div>
-          <div><label class="text-[11px] text-on-surface-variant">€/month partners</label><input type="number" value="${act.rate_partner||250}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'rate_partner',this.value)"></div>
-          <div class="text-[11px] text-on-surface-variant self-end pb-2">Duration: <strong>${mo} months</strong></div>
-        </div>`;
+        return buildMgmtFields(act, wi);
 
       case 'io':
         return buildIOFields(act, wi);
@@ -1346,6 +1342,75 @@ const Calculator = (() => {
   }
 
   /* ── IO fields ──────────────────────────────────────────────── */
+
+  /* ── Management fields (IO-style: per-worker breakdown) ─────────
+   * Sustituye al modelo flat-rate antiguo (rate_applicant + rate_partner).
+   * Estructura idéntica a io_staff: act.mgmt_staff[partner_id] = {
+   *   active, staff: [{ profileId, days, tasks }] }
+   * Default al abrir: 1 fila por partner con el primer perfil de su catálogo
+   * y 20 días. Si el activity tenía rates legacy, ya no se usan para coste
+   * (deja la UI predecible — los días son ahora el ratio editable).
+   */
+  function buildMgmtFields(act, wi) {
+    if (!act.mgmt_staff) {
+      act.mgmt_staff = {};
+      state.partners.forEach(p => {
+        const rates = state.workerRates.filter(w => w.pid === p.id);
+        act.mgmt_staff[p.id] = {
+          active: true,
+          staff: [{ profileId: rates[0]?.id || null, days: 20, tasks: '' }]
+        };
+      });
+    }
+
+    let totalCost = 0;
+    state.partners.forEach(p => {
+      const ps = act.mgmt_staff[p.id];
+      if (!ps || !ps.active) return;
+      ps.staff.forEach(s => { totalCost += (s.days || 0) * getPartnerDayRate(p.id, s.profileId); });
+    });
+
+    const blocks = state.partners.map((p, i) => {
+      const ps = act.mgmt_staff[p.id] || { active: false, staff: [] };
+      const rates = state.workerRates.filter(w => w.pid === p.id);
+      const color = WP_COLORS[i % WP_COLORS.length];
+      const bg = WP_BG[i % WP_BG.length];
+      let pTotal = 0;
+      if (ps.active) ps.staff.forEach(s => { pTotal += (s.days || 0) * getPartnerDayRate(p.id, s.profileId); });
+
+      const staffRows = ps.staff.map((s, si) => {
+        const rate = getPartnerDayRate(p.id, s.profileId);
+        const profOpts = `<option value="">Select profile...</option>` + rates.map(w =>
+          `<option value="${w.id}" ${String(w.id)===String(s.profileId)?'selected':''}>${w.category} — €${w.rate}/day</option>`).join('');
+        return `<div class="flex gap-2 items-start mb-2 ${!ps.active?'opacity-40 pointer-events-none':''}">
+          <div class="flex-1 space-y-1">
+            <select class="text-xs w-full px-2 py-1.5 rounded-lg border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'profileId',this.value)">${profOpts}</select>
+            <div class="flex gap-2">
+              <div class="w-20"><label class="text-[9px] text-on-surface-variant">Days</label>
+                <input type="number" value="${s.days}" min="0" class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'days',this.value)"></div>
+              <div class="flex-1"><label class="text-[9px] text-on-surface-variant">Tasks</label>
+                <input type="text" value="${s.tasks||''}" placeholder="Brief description of management tasks..." class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'tasks',this.value)"></div>
+            </div>
+            <div class="text-[10px] font-mono" style="color:${color}">${s.days} days × €${rate} = ${euros(s.days*rate)}</div>
+          </div>
+          <button onclick="Calculator._removeMgmtStaff(${wi},${act.id},'${p.id}',${si})" class="text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none">×</button>
+        </div>`;
+      }).join('');
+
+      return `<div class="rounded-xl border border-outline-variant/20 overflow-hidden mb-2">
+        <div class="flex items-center gap-2 px-3 py-2" style="background:${bg}">
+          <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" onchange="Calculator._setMgmtPartnerActive(${wi},${act.id},'${p.id}',this.checked)">
+          <span class="text-xs font-bold flex-1" style="color:${color}">${p.name||'P'+(i+1)}</span>
+          <span class="text-[10px] font-mono font-semibold" style="color:${color}">${ps.active?euros(pTotal):'—'}</span>
+        </div>
+        ${ps.active?`<div class="px-3 py-2">${staffRows}
+          <button onclick="Calculator._addMgmtStaff(${wi},${act.id},'${p.id}')" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
+        </div>`:''}
+      </div>`;
+    }).join('');
+
+    return `<div class="text-xs text-on-surface-variant mb-2">Coste salarial de gestión por partner. Selecciona el perfil de trabajador, los días dedicados y describe las tareas. <span class="font-mono font-semibold text-primary">${euros(totalCost)}</span></div>${blocks}`;
+  }
 
   function buildIOFields(act, wi) {
     if (!act.io_staff) {
@@ -1520,8 +1585,22 @@ const Calculator = (() => {
 
     switch (act.type) {
       case 'mgmt': {
-        const app = (act.rate_applicant||500) * mo;
-        const partners = (act.rate_partner||250) * mo * (n - 1);
+        // New IO-style cost model: per partner → list of workers (profile + days).
+        // Backwards-compat: legacy rate_applicant/rate_partner are only used as a
+        // bootstrap default when no mgmt_staff exists yet (handled in buildMgmtFields).
+        let total = 0;
+        if (act.mgmt_staff) {
+          Object.entries(act.mgmt_staff).forEach(([pid, ps]) => {
+            if (!ps || !ps.active) return;
+            (ps.staff || []).forEach(s => {
+              total += (s.days || 0) * getPartnerDayRate(pid, s.profileId);
+            });
+          });
+          return { total };
+        }
+        // Fallback: legacy flat-rate model (renders 0 if rates absent).
+        const app = (act.rate_applicant || 0) * mo;
+        const partners = (act.rate_partner || 0) * mo * (n - 1);
         return { total: app + partners, app, partners };
       }
       case 'meeting': case 'ltta': {
@@ -1617,14 +1696,14 @@ const Calculator = (() => {
       const el = $(`calc-act-result-${act.id}`);
       if (!el) return;
 
-      if (act.type === 'mgmt') {
-        const appCost = (act.rate_applicant||500) * mo;
-        const partnerCost = (act.rate_partner||250) * mo;
+      if (act.type === 'mgmt' && act.mgmt_staff) {
+        // IO-style summary: one line per active partner with their total days×rate.
         const rows = state.partners.map((p, i) => {
-          const isApp = i === 0;
-          const cost = isApp ? appCost : partnerCost;
-          const rate = isApp ? (act.rate_applicant||500) : (act.rate_partner||250);
-          return `<div class="flex justify-between text-xs py-0.5"><span class="text-on-surface-variant">${p.name||'P'+(i+1)} <span class="text-[10px] text-on-surface-variant/50">${rate}/mo × ${mo}mo</span></span><span class="font-mono font-semibold">${euros(cost)}</span></div>`;
+          const ps = act.mgmt_staff[p.id];
+          if (!ps || !ps.active) return '';
+          let pTotal = 0, daySum = 0;
+          ps.staff.forEach(s => { pTotal += (s.days||0) * getPartnerDayRate(p.id, s.profileId); daySum += (s.days||0); });
+          return `<div class="flex justify-between text-xs py-0.5"><span class="text-on-surface-variant">${p.name||'P'+(i+1)} <span class="text-[10px] text-on-surface-variant/50">${daySum} days</span></span><span class="font-mono font-semibold">${euros(pTotal)}</span></div>`;
         }).join('');
         el.innerHTML = `${rows}<div class="flex justify-between text-sm font-bold pt-1 mt-1 border-t border-outline-variant/10" style="color:${color}"><span>Total</span><span>${euros(res.total)}</span></div>`;
 
@@ -1809,12 +1888,16 @@ const Calculator = (() => {
         <button class="calc-res-tab" onclick="Calculator._switchResTab('form_b')" title="Tablas oficiales del Form Part B (EACEA)">
           <span class="material-symbols-outlined text-[14px] align-middle mr-0.5">verified</span>Form Part B
         </button>
+        <button class="calc-res-tab" onclick="Calculator._switchResTab('print')" title="Informe completo PDF para compartir con socios">
+          <span class="material-symbols-outlined text-[14px] align-middle mr-0.5">print</span>Imprimir presupuesto
+        </button>
       </div>
 
       <div id="calc-res-partner">${buildResPartner(wpResults, directCosts, indirect, subtotal, totalProject, indirectPct)}</div>
       <div id="calc-res-wp" style="display:none">${buildResWP(wpResults, directCosts, indirect, subtotal, indirectPct)}</div>
       <div id="calc-res-summary" style="display:none">${buildResSummary(wpResults, directCosts, indirect, subtotal, totalProject, indirectPct)}</div>
       <div id="calc-res-form_b" style="display:none"><div class="text-sm text-on-surface-variant py-12 text-center"><span class="material-symbols-outlined animate-spin align-middle">progress_activity</span> Pulsa <strong>Form Part B</strong> para cargar las tablas oficiales.</div></div>
+      <div id="calc-res-print" style="display:none">${buildResPrintIntro()}</div>
 
       <!-- Financing bar is now integrated in the hero above -->
 
@@ -1915,10 +1998,16 @@ const Calculator = (() => {
         wp.acts.forEach(act => {
           switch (act.type) {
             case 'mgmt': {
-              // Mgmt cost: distribute to the FIRST profile (coordinator) using mgmt flat rate
-              const rate = pi === 0 ? (act.rate_applicant||500) : (act.rate_partner||250);
-              const coordProfile = partnerRates[0];
-              addWorker(coordProfile ? coordProfile.id : '_other', wi, 'Project Management', mo, rate, rate * mo);
+              // New IO-style mgmt: each staff entry → A1 worker line by profile.
+              if (act.mgmt_staff && act.mgmt_staff[p.id] && act.mgmt_staff[p.id].active) {
+                act.mgmt_staff[p.id].staff.forEach(s => {
+                  if (!s.days || s.days <= 0) return;
+                  const profId = s.profileId || (partnerRates[0]?.id);
+                  const rate = getPartnerDayRate(p.id, profId);
+                  const label = s.tasks ? `Mgmt — ${s.tasks.slice(0, 60)}` : 'Project Management';
+                  addWorker(profId || '_other', wi, label, s.days, rate, s.days * rate);
+                });
+              }
               break;
             }
             case 'meeting': case 'ltta': {
@@ -2843,6 +2932,44 @@ const Calculator = (() => {
     if (el) el.innerHTML = buildIOFields(act, wi);
     recalcWP(wi);
   }
+
+  /* ── Management staff handlers (mirror of IO) ───────────────── */
+  function setMgmtStaff(wi, actId, pid, si, field, value) {
+    const act = state.wps[wi].activities.find(a => a.id === actId);
+    if (!act || !act.mgmt_staff || !act.mgmt_staff[pid]) return;
+    const s = act.mgmt_staff[pid].staff[si];
+    if (!s) return;
+    if (field === 'days') s.days = parseFloat(value) || 0;
+    else if (field === 'profileId') s.profileId = value || null;
+    else s[field] = value;
+    const el = $('calc-act-fields-' + actId);
+    if (el) el.innerHTML = buildMgmtFields(act, wi);
+    recalcWP(wi);
+  }
+  function addMgmtStaff(wi, actId, pid) {
+    const act = state.wps[wi].activities.find(a => a.id === actId);
+    if (!act || !act.mgmt_staff || !act.mgmt_staff[pid]) return;
+    act.mgmt_staff[pid].staff.push({ profileId: null, days: 10, tasks: '' });
+    const el = $('calc-act-fields-' + actId);
+    if (el) el.innerHTML = buildMgmtFields(act, wi);
+  }
+  function removeMgmtStaff(wi, actId, pid, si) {
+    const act = state.wps[wi].activities.find(a => a.id === actId);
+    if (!act || !act.mgmt_staff || !act.mgmt_staff[pid]) return;
+    act.mgmt_staff[pid].staff.splice(si, 1);
+    const el = $('calc-act-fields-' + actId);
+    if (el) el.innerHTML = buildMgmtFields(act, wi);
+    recalcWP(wi);
+  }
+  function setMgmtPartnerActive(wi, actId, pid, active) {
+    const act = state.wps[wi].activities.find(a => a.id === actId);
+    if (!act || !act.mgmt_staff) return;
+    if (!act.mgmt_staff[pid]) act.mgmt_staff[pid] = { active: true, staff: [{ profileId: null, days: 20, tasks: '' }] };
+    act.mgmt_staff[pid].active = active;
+    const el = $('calc-act-fields-' + actId);
+    if (el) el.innerHTML = buildMgmtFields(act, wi);
+    recalcWP(wi);
+  }
   // Legacy compatibility
   function setIODays(wi, actId, pid, value) {
     const act = state.wps[wi].activities.find(a => a.id === actId);
@@ -2895,16 +3022,535 @@ const Calculator = (() => {
 
   function switchResTab(name) {
     document.querySelectorAll('.calc-res-tab').forEach(t => t.classList.remove('active'));
-    ['summary','wp','partner','form_b'].forEach(n => { const el = $('calc-res-'+n); if (el) el.style.display = 'none'; });
-    const tabIdx = name==='partner'?1 : name==='wp'?2 : name==='summary'?3 : 4;
+    ['summary','wp','partner','form_b','print'].forEach(n => { const el = $('calc-res-'+n); if (el) el.style.display = 'none'; });
+    const tabIdx = name==='partner'?1 : name==='wp'?2 : name==='summary'?3 : name==='form_b'?4 : 5;
     document.querySelector(`.calc-res-tab:nth-child(${tabIdx})`)?.classList.add('active');
     const el = $('calc-res-'+name);
     if (el) el.style.display = 'block';
-    // Lazy-load del tab Form Part B: solo carga al pulsar
+    // Lazy-load del tab Form Part B
     if (name === 'form_b' && el && el.dataset.loaded !== '1') {
       loadFormBTables(el);
     }
+    // Lazy-load del tab Imprimir presupuesto
+    if (name === 'print' && el && el.dataset.loaded !== '1') {
+      loadPrintView(el);
+    }
   }
+
+  function buildResPrintIntro() {
+    return `
+      <div class="print-tab-shell">
+        <div class="print-tab-toolbar">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-on-surface-variant">Vista previa del informe</div>
+            <div class="font-headline font-bold text-primary text-base">Imprimir presupuesto · Informe completo</div>
+          </div>
+          <div class="flex gap-2">
+            <button type="button" onclick="Calculator._refreshPrintView()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Volver a generar el informe con los últimos datos">
+              <span class="material-symbols-outlined text-[16px]">refresh</span>Actualizar
+            </button>
+            <button type="button" onclick="Calculator._openPrintView()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Abrir el informe en una pestaña nueva">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>Pestaña nueva
+            </button>
+            <button type="button" onclick="Calculator._printIframe()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">
+              <span class="material-symbols-outlined text-[16px]">print</span>Imprimir / Guardar PDF
+            </button>
+          </div>
+        </div>
+        <div class="print-tab-frame-wrap">
+          <iframe id="calc-print-iframe" class="print-tab-frame" title="Vista previa del informe de presupuesto"></iframe>
+        </div>
+      </div>
+    `;
+  }
+
+  /* ── Vista imprimible PDF ──────────────────────────────────────
+   * Construye un documento HTML auto-contenido (cover + 1 página/partner +
+   * 1 página/WP + Form Part B). Se carga dentro de un iframe en la propia
+   * pestaña, y el botón Imprimir llama a iframe.contentWindow.print().
+   */
+  async function loadPrintView(host) {
+    const iframe = host.querySelector('#calc-print-iframe');
+    if (!iframe) return;
+    if (!currentProjectId) { iframe.srcdoc = '<div style="font-family:sans-serif;padding:24px;color:#b00">No hay proyecto activo.</div>'; return; }
+    iframe.srcdoc = '<div style="font-family:Poppins,sans-serif;padding:32px;color:#6b6b80">Generando informe…</div>';
+    try {
+      const res = await API.get(`/budget/projects/${currentProjectId}/eacea-tables`);
+      const eacea = res.data || res;
+      iframe.srcdoc = buildPrintDocument(eacea, /*autoPrint=*/false);
+      host.dataset.loaded = '1';
+    } catch (e) {
+      iframe.srcdoc = `<div style="font-family:sans-serif;padding:24px;color:#b00">Error: ${escHtml(e.message || String(e))}</div>`;
+    }
+  }
+
+  function refreshPrintView() {
+    const host = document.getElementById('calc-res-print');
+    if (!host) return;
+    host.dataset.loaded = '';
+    loadPrintView(host);
+  }
+
+  function printIframe() {
+    const iframe = document.getElementById('calc-print-iframe');
+    if (!iframe || !iframe.contentWindow) { Toast.show('Vista previa no cargada todavía', 'err'); return; }
+    try {
+      iframe.contentWindow.focus();
+      iframe.contentWindow.print();
+    } catch (e) {
+      Toast.show('Error al imprimir: ' + (e.message || e), 'err');
+    }
+  }
+
+  async function openPrintView() {
+    if (!currentProjectId) { Toast.show('No hay proyecto activo', 'err'); return; }
+    let eacea = null;
+    try {
+      const res = await API.get(`/budget/projects/${currentProjectId}/eacea-tables`);
+      eacea = res.data || res;
+    } catch (e) {
+      Toast.show('Error cargando tablas EACEA: ' + (e.message || e), 'err');
+      return;
+    }
+    const html = buildPrintDocument(eacea, /*autoPrint=*/true);
+    const w = window.open('', '_blank');
+    if (!w) { Toast.show('Permite ventanas emergentes para esta página', 'err'); return; }
+    w.document.open();
+    w.document.write(html);
+    w.document.close();
+  }
+
+  function buildPrintDocument(eacea, autoPrint) {
+    const p = state.project || {};
+    const partners = state.partners || [];
+    const indirectPct = Number(eacea.indirect_pct || 0);
+    const summary = eacea.summary || {};
+    const byPartner = eacea.by_partner || [];
+    const wpsEacea = eacea.wps || [];
+    const staff = eacea.staff_effort || { rows: [], totals_by_wp: [], grand_total_pm: 0 };
+    const totalProject = Number(summary.grand_total_amount || 0);
+
+    const today = new Date().toLocaleDateString('es-ES', { day:'2-digit', month:'long', year:'numeric' });
+    const projName = escHtml(p.name || p.full_name || 'Proyecto Erasmus+');
+    const projType = escHtml(p.type || '—');
+    const projMonths = p.duration_months || 24;
+
+    // ── Cover ──
+    const coverHtml = `
+      <section class="page cover-page">
+        <div class="cover-header">
+          <div class="cover-logo">E+</div>
+          <div class="cover-date">${today}</div>
+        </div>
+        <div class="cover-center">
+          <div class="cover-label">Informe de presupuesto</div>
+          <h1 class="cover-title">${projName}</h1>
+          ${p.full_name && p.full_name !== p.name ? `<div class="cover-fullname">${escHtml(p.full_name)}</div>` : ''}
+          <div class="cover-meta">
+            <div><span class="cover-meta-label">Tipo de proyecto</span><span class="cover-meta-value">${projType}</span></div>
+            <div><span class="cover-meta-label">Duración</span><span class="cover-meta-value">${projMonths} meses</span></div>
+            <div><span class="cover-meta-label">Partners</span><span class="cover-meta-value">${partners.length}</span></div>
+            <div><span class="cover-meta-label">EU grant solicitado</span><span class="cover-meta-value">${euros(totalProject)}</span></div>
+          </div>
+        </div>
+        <div class="cover-partners">
+          <div class="cover-partners-title">Consorcio · ${fmtPm(summary.grand_total_pm)} PM · indirect ${indirectPct}%</div>
+          <ol class="cover-partners-list${partners.length > 6 ? ' cols-3' : ''}">
+            ${partners.map((pp, i) => {
+              const role = pp.role === 'applicant' ? 'Coordinator' : 'Partner';
+              return `<li><span class="be">${'BE' + String(i+1).padStart(2,'0')}</span><span class="pname">${escHtml(pp.name || pp.legal_name || 'Partner')}</span><span class="prole">${role}</span></li>`;
+            }).join('')}
+          </ol>
+        </div>
+      </section>
+    `;
+
+    // ── Per-partner pages ──
+    const partnerPages = byPartner.map((bp, idx) => {
+      const t = bp.totals || {};
+      const color = WP_COLORS[idx % WP_COLORS.length];
+      const cells = (row, isInt) => {
+        const cls = !row || Number(row) === 0 ? 'zero' : '';
+        return `<td class="num ${cls}">${!row || Number(row) === 0 ? '—' : (isInt ? fmtInt(row) : fmtEur(row))}</td>`;
+      };
+      const wpRows = (bp.by_wp || []).filter(w => Number(w.total) > 0).map(w => `
+        <tr>
+          <td class="wp-cell"><span class="wp-dot" style="background:${color}"></span>${escHtml(w.code || '?')}</td>
+          <td class="num">${fmtPm(w.person_months)}</td>
+          ${cells(w.a_personnel)}
+          ${cells(w.b_subcontracting)}
+          ${cells(w.c1a_travel)}
+          ${cells(w.travels, true)}
+          ${cells(w.persons_travelling, true)}
+          ${cells(w.c1c_subsistence)}
+          ${cells(w.c2_equipment)}
+          ${cells(w.c3_other)}
+          ${cells(w.d1_third_parties)}
+          ${cells(w.e_indirect)}
+          <td class="num total-cell">${fmtEur(w.total)}</td>
+        </tr>
+      `).join('');
+
+      return `
+        <section class="page partner-page">
+          <header class="page-header">
+            <div class="page-header-left">
+              <span class="page-tag" style="background:${color}">BE${String(idx+1).padStart(2,'0')}</span>
+              <div>
+                <div class="page-title">${escHtml(bp.acronym || 'Partner')}${bp.is_coordinator ? ' <span class="badge-coord">Coordinator</span>' : ''}</div>
+                <div class="page-subtitle">${escHtml(bp.name || '')}</div>
+              </div>
+            </div>
+            <div class="page-header-right">
+              <div class="kpi-label">Total partner</div>
+              <div class="kpi-value">${fmtEur(t.total)} €</div>
+              <div class="kpi-sub">${fmtPm(t.person_months)} PM · ${pct(t.total, totalProject)} del proyecto</div>
+            </div>
+          </header>
+
+          <div class="section-title">Desglose por Work Package</div>
+          <table class="eacea-table">
+            <thead>
+              <tr>
+                <th>WP</th><th>PM</th><th>A. Personnel</th><th>B. Subc.</th>
+                <th>C.1a Travel</th><th>Travels</th><th>Persons</th><th>C.1c Subsist.</th>
+                <th>C.2 Equip.</th><th>C.3 Other</th><th>D.1 FSTP</th><th>E. Indirect</th><th>Total €</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${wpRows || '<tr><td colspan="13" class="empty">Sin actividades asignadas a este partner</td></tr>'}
+              <tr class="totals">
+                <td>Total</td>
+                <td class="num">${fmtPm(t.person_months)}</td>
+                ${cells(t.a_personnel)}
+                ${cells(t.b_subcontracting)}
+                ${cells(t.c1a_travel)}
+                ${cells(t.travels, true)}
+                ${cells(t.persons_travelling, true)}
+                ${cells(t.c1c_subsistence)}
+                ${cells(t.c2_equipment)}
+                ${cells(t.c3_other)}
+                ${cells(t.d1_third_parties)}
+                ${cells(t.e_indirect)}
+                <td class="num total-cell">${fmtEur(t.total)}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="section-title">Resumen por categoría EACEA</div>
+          <div class="category-grid">
+            <div class="cat-card"><div class="cat-label">A. Personnel</div><div class="cat-value">${fmtEur(t.a_personnel)}</div></div>
+            <div class="cat-card"><div class="cat-label">B. Subcontracting</div><div class="cat-value">${fmtEur(t.b_subcontracting)}</div></div>
+            <div class="cat-card"><div class="cat-label">C.1a Travel</div><div class="cat-value">${fmtEur(t.c1a_travel)}</div></div>
+            <div class="cat-card"><div class="cat-label">C.1c Subsistence</div><div class="cat-value">${fmtEur(t.c1c_subsistence)}</div></div>
+            <div class="cat-card"><div class="cat-label">C.2 Equipment</div><div class="cat-value">${fmtEur(t.c2_equipment)}</div></div>
+            <div class="cat-card"><div class="cat-label">C.3 Other</div><div class="cat-value">${fmtEur(t.c3_other)}</div></div>
+            <div class="cat-card"><div class="cat-label">D.1 FSTP</div><div class="cat-value">${fmtEur(t.d1_third_parties)}</div></div>
+            <div class="cat-card"><div class="cat-label">E. Indirect ${indirectPct}%</div><div class="cat-value">${fmtEur(t.e_indirect)}</div></div>
+          </div>
+
+          <footer class="page-footer">${projName} · Partner ${idx+1}/${byPartner.length}</footer>
+        </section>
+      `;
+    }).join('');
+
+    // ── Per-WP pages ──
+    const wpPages = wpsEacea.map((wp, wi) => {
+      const color = WP_COLORS[wi % WP_COLORS.length];
+      const tot = wp.totals || {};
+      const cells = (row, isInt) => {
+        const cls = !row || Number(row) === 0 ? 'zero' : '';
+        return `<td class="num ${cls}">${!row || Number(row) === 0 ? '—' : (isInt ? fmtInt(row) : fmtEur(row))}</td>`;
+      };
+      const partnerRows = (wp.rows || []).map(r => `
+        <tr>
+          <td class="partner-cell">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="badge-coord-sm">coord</span>' : ''}${r.is_leader ? ' <span class="badge-leader">leader</span>' : ''}</td>
+          <td class="num">${fmtPm(r.person_months)}</td>
+          ${cells(r.a_personnel)}
+          ${cells(r.b_subcontracting)}
+          ${cells(r.c1a_travel)}
+          ${cells(r.travels, true)}
+          ${cells(r.persons_travelling, true)}
+          ${cells(r.c1c_subsistence)}
+          ${cells(r.c2_equipment)}
+          ${cells(r.c3_other)}
+          ${cells(r.d1_third_parties)}
+          ${cells(r.e_indirect)}
+          <td class="num total-cell">${fmtEur(r.total)}</td>
+        </tr>
+      `).join('');
+
+      return `
+        <section class="page wp-page">
+          <header class="page-header">
+            <div class="page-header-left">
+              <span class="page-tag" style="background:${color}">${escHtml(wp.code || ('WP'+(wi+1)))}</span>
+              <div>
+                <div class="page-title">${escHtml(wp.title || '')}</div>
+                <div class="page-subtitle">Leader: ${escHtml(wp.leader_acronym || '—')}${wp.duration_from_month != null ? ' · M' + wp.duration_from_month + '–M' + wp.duration_to_month : ''}</div>
+              </div>
+            </div>
+            <div class="page-header-right">
+              <div class="kpi-label">Total WP</div>
+              <div class="kpi-value">${fmtEur(tot.total)} €</div>
+              <div class="kpi-sub">${fmtPm(tot.person_months)} PM · ${pct(tot.total, totalProject)} del proyecto</div>
+            </div>
+          </header>
+
+          <div class="section-title">Desglose por partner</div>
+          <table class="eacea-table">
+            <thead>
+              <tr>
+                <th>Partner</th><th>PM</th><th>A. Personnel</th><th>B. Subc.</th>
+                <th>C.1a Travel</th><th>Travels</th><th>Persons</th><th>C.1c Subsist.</th>
+                <th>C.2 Equip.</th><th>C.3 Other</th><th>D.1 FSTP</th><th>E. Indirect</th><th>Total €</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${partnerRows || '<tr><td colspan="13" class="empty">Sin partners asignados a este WP</td></tr>'}
+              <tr class="totals">
+                <td>Total WP</td>
+                <td class="num">${fmtPm(tot.person_months)}</td>
+                ${cells(tot.a_personnel)}
+                ${cells(tot.b_subcontracting)}
+                ${cells(tot.c1a_travel)}
+                ${cells(tot.travels, true)}
+                ${cells(tot.persons_travelling, true)}
+                ${cells(tot.c1c_subsistence)}
+                ${cells(tot.c2_equipment)}
+                ${cells(tot.c3_other)}
+                ${cells(tot.d1_third_parties)}
+                ${cells(tot.e_indirect)}
+                <td class="num total-cell">${fmtEur(tot.total)}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer class="page-footer">${projName} · ${escHtml(wp.code || '')} ${wi+1}/${wpsEacea.length}</footer>
+        </section>
+      `;
+    }).join('');
+
+    // ── Form Part B summary page ──
+    const staffHeaders = (staff.rows[0]?.cells || []).map(c => `<th class="num small" title="${escHtml(c.wp_title || '')}">${escHtml(c.wp_code)}</th>`).join('');
+    const staffBody = (staff.rows || []).map(r => `
+      <tr>
+        <td class="partner-cell">${escHtml(r.partner_acronym)}${r.is_coordinator ? ' <span class="badge-coord-sm">coord</span>' : ''}</td>
+        ${(r.cells || []).map(c => {
+          const z = !c.pm || Number(c.pm) === 0;
+          const lead = c.is_leader ? ' leader' : '';
+          return `<td class="num small${z ? ' zero' : ''}${lead}">${fmtPm(c.pm)}</td>`;
+        }).join('')}
+        <td class="num total-cell">${fmtPm(r.total_pm)}</td>
+      </tr>
+    `).join('');
+    const staffTotals = `
+      <tr class="totals">
+        <td>Total per WP</td>
+        ${(staff.totals_by_wp || []).map(t => `<td class="num small">${fmtPm(t.pm)}</td>`).join('')}
+        <td class="num total-cell">${fmtPm(staff.grand_total_pm)}</td>
+      </tr>
+    `;
+
+    const grand = byPartner.reduce((g, bp) => {
+      const t = bp.totals || {};
+      g.pm += Number(t.person_months) || 0;
+      g.a += Number(t.a_personnel) || 0;
+      g.b += Number(t.b_subcontracting) || 0;
+      g.c1a += Number(t.c1a_travel) || 0;
+      g.travels += Number(t.travels) || 0;
+      g.persons += Number(t.persons_travelling) || 0;
+      g.c1c += Number(t.c1c_subsistence) || 0;
+      g.c2 += Number(t.c2_equipment) || 0;
+      g.c3 += Number(t.c3_other) || 0;
+      g.d1 += Number(t.d1_third_parties) || 0;
+      g.ind += Number(t.e_indirect) || 0;
+      g.total += Number(t.total) || 0;
+      return g;
+    }, { pm:0, a:0, b:0, c1a:0, travels:0, persons:0, c1c:0, c2:0, c3:0, d1:0, ind:0, total:0 });
+
+    const cells = (row, isInt) => {
+      const cls = !row || Number(row) === 0 ? 'zero' : '';
+      return `<td class="num ${cls}">${!row || Number(row) === 0 ? '—' : (isInt ? fmtInt(row) : fmtEur(row))}</td>`;
+    };
+
+    const formBPage = `
+      <section class="page formb-page">
+        <header class="page-header">
+          <div class="page-header-left">
+            <span class="page-tag formb-tag">EACEA</span>
+            <div>
+              <div class="page-title">Form Part B — Estimated Budget</div>
+              <div class="page-subtitle">Tablas oficiales que se inyectan en el formulario .docx</div>
+            </div>
+          </div>
+          <div class="page-header-right">
+            <div class="kpi-label">Total proyecto</div>
+            <div class="kpi-value">${fmtEur(totalProject)} €</div>
+            <div class="kpi-sub">${fmtPm(summary.grand_total_pm)} PM</div>
+          </div>
+        </header>
+
+        <div class="section-title">Staff effort per participant (Person Months)</div>
+        <table class="eacea-table compact">
+          <thead>
+            <tr>
+              <th>Participant</th>
+              ${staffHeaders}
+              <th class="num total-cell">Total PM</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${staffBody}
+            ${staffTotals}
+          </tbody>
+        </table>
+
+        <div class="section-title">Estimated budget — Resources (per participant, project total)</div>
+        <table class="eacea-table">
+          <thead>
+            <tr>
+              <th>Participant</th><th>PM</th><th>A. Personnel</th><th>B. Subc.</th>
+              <th>C.1a Travel</th><th>Travels</th><th>Persons</th><th>C.1c Subsist.</th>
+              <th>C.2 Equip.</th><th>C.3 Other</th><th>D.1 FSTP</th><th>E. Indirect</th><th>Total €</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${byPartner.map(bp => {
+              const t = bp.totals || {};
+              return `<tr>
+                <td class="partner-cell">${escHtml(bp.acronym)}${bp.is_coordinator ? ' <span class="badge-coord-sm">coord</span>' : ''}</td>
+                <td class="num">${fmtPm(t.person_months)}</td>
+                ${cells(t.a_personnel)}
+                ${cells(t.b_subcontracting)}
+                ${cells(t.c1a_travel)}
+                ${cells(t.travels, true)}
+                ${cells(t.persons_travelling, true)}
+                ${cells(t.c1c_subsistence)}
+                ${cells(t.c2_equipment)}
+                ${cells(t.c3_other)}
+                ${cells(t.d1_third_parties)}
+                ${cells(t.e_indirect)}
+                <td class="num total-cell">${fmtEur(t.total)}</td>
+              </tr>`;
+            }).join('')}
+            <tr class="totals">
+              <td>Total</td>
+              <td class="num">${fmtPm(grand.pm)}</td>
+              ${cells(grand.a)}
+              ${cells(grand.b)}
+              ${cells(grand.c1a)}
+              ${cells(grand.travels, true)}
+              ${cells(grand.persons, true)}
+              ${cells(grand.c1c)}
+              ${cells(grand.c2)}
+              ${cells(grand.c3)}
+              ${cells(grand.d1)}
+              ${cells(grand.ind)}
+              <td class="num total-cell">${fmtEur(grand.total)}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <footer class="page-footer">${projName} · Form Part B (EACEA)</footer>
+      </section>
+    `;
+
+    return printDocumentHtml(projName, coverHtml + partnerPages + wpPages + formBPage, autoPrint);
+  }
+
+  function printDocumentHtml(title, body, autoPrint) {
+    const autoPrintScript = autoPrint
+      ? `<script>window.addEventListener('load', () => { setTimeout(() => window.print(), 400); });<\/script>`
+      : '';
+    return `<!DOCTYPE html><html lang="es"><head>
+<meta charset="UTF-8">
+<title>${title} — Informe de presupuesto</title>
+<style>${PRINT_CSS}</style>
+</head><body>${body}${autoPrintScript}
+</body></html>`;
+  }
+
+  const PRINT_CSS = `
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif; color: #1f2233; background: #f4f4f8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    @page { size: A4 landscape; margin: 12mm 10mm; }
+    .page { width: 277mm; min-height: 190mm; padding: 10mm 12mm; background: #fff; margin: 8mm auto; box-shadow: 0 2px 12px rgba(0,0,0,0.08); page-break-after: always; display: flex; flex-direction: column; }
+    .page:last-child { page-break-after: auto; }
+
+    /* ── Cover page ── */
+    .cover-page { background: linear-gradient(135deg, #1b1464 0%, #2a1f8a 100%); color: #fff; padding: 12mm 14mm; justify-content: space-between; page-break-inside: avoid; overflow: hidden; }
+    .cover-header { display: flex; justify-content: space-between; align-items: center; }
+    .cover-logo { font-family: 'Poppins'; font-weight: 900; font-size: 24pt; color: #fbff12; letter-spacing: -2px; line-height: 1; }
+    .cover-date { font-size: 8.5pt; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; }
+    .cover-center { text-align: center; padding: 3mm 0 2mm; }
+    .cover-label { font-size: 9pt; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; margin-bottom: 3mm; }
+    .cover-title { font-size: 42pt; font-weight: 900; line-height: 1; margin: 0 0 3mm; letter-spacing: -2px; color: #fbff12; }
+    .cover-fullname { font-size: 14pt; font-weight: 500; font-style: italic; opacity: 0.95; max-width: 230mm; margin: 0 auto 5mm; line-height: 1.3; }
+    .cover-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; max-width: 220mm; margin: 0 auto; }
+    .cover-meta > div { border-left: 2px solid rgba(251, 255, 18, 0.5); padding-left: 3.5mm; text-align: left; }
+    .cover-meta-label { display: block; font-size: 7.5pt; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; margin-bottom: 1.5mm; }
+    .cover-meta-value { display: block; font-size: 13pt; font-weight: 700; line-height: 1.2; }
+    .cover-partners { margin-top: 4mm; flex: 1; display: flex; flex-direction: column; min-height: 0; }
+    .cover-partners-title { font-size: 9pt; text-transform: uppercase; letter-spacing: 3px; opacity: 0.7; margin-bottom: 3mm; padding-bottom: 2mm; border-bottom: 1px solid rgba(251, 255, 18, 0.3); }
+    .cover-partners-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 6mm; align-content: start; }
+    .cover-partners-list.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .cover-partners-list li { display: flex; align-items: center; gap: 3mm; font-size: 9.5pt; padding: 1.3mm 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .cover-partners-list .be { background: #fbff12; color: #1b1464; font-weight: 800; padding: 0.5mm 2mm; border-radius: 1.5mm; font-size: 7.5pt; flex-shrink: 0; }
+    .cover-partners-list .pname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cover-partners-list .prole { font-size: 7.5pt; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; flex-shrink: 0; }
+
+    /* ── Content pages ── */
+    .page-header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 4mm; border-bottom: 2px solid #1b1464; margin-bottom: 5mm; }
+    .page-header-left { display: flex; align-items: center; gap: 4mm; flex: 1; min-width: 0; }
+    .page-tag { display: inline-flex; align-items: center; justify-content: center; min-width: 14mm; padding: 2mm 3mm; background: #1b1464; color: #fff; font-weight: 800; font-size: 10pt; border-radius: 2mm; letter-spacing: 0.5px; }
+    .formb-tag { background: #fbff12 !important; color: #1b1464 !important; }
+    .page-title { font-size: 16pt; font-weight: 800; line-height: 1.2; color: #1b1464; }
+    .page-subtitle { font-size: 9pt; color: #6b6b80; margin-top: 1mm; }
+    .page-header-right { text-align: right; }
+    .kpi-label { font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; color: #6b6b80; }
+    .kpi-value { font-size: 20pt; font-weight: 800; color: #1b1464; line-height: 1; margin: 1mm 0; }
+    .kpi-sub { font-size: 8pt; color: #6b6b80; }
+
+    .badge-coord { display: inline-block; font-size: 8pt; font-weight: 700; background: rgba(27, 20, 100, 0.1); color: #1b1464; padding: 0.5mm 2mm; border-radius: 2mm; margin-left: 2mm; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
+    .badge-coord-sm { display: inline-block; font-size: 6.5pt; font-weight: 700; background: rgba(27, 20, 100, 0.1); color: #1b1464; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
+    .badge-leader { display: inline-block; font-size: 6.5pt; font-weight: 700; background: #fff3c4; color: #7a5800; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
+
+    .section-title { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 2px; color: #6b6b80; font-weight: 700; margin: 5mm 0 2mm; }
+
+    .eacea-table { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
+    .eacea-table.compact { font-size: 8pt; }
+    .eacea-table thead { background: #eef0f7; }
+    .eacea-table th { padding: 2mm; text-align: right; font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.3px; color: #4a4a60; white-space: nowrap; }
+    .eacea-table th:first-child { text-align: left; }
+    .eacea-table td { padding: 1.8mm 2mm; border-bottom: 1px solid #ecedf2; }
+    .eacea-table td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: 'JetBrains Mono', Consolas, monospace; }
+    .eacea-table td.num.small { font-size: 7.5pt; }
+    .eacea-table td.zero { color: #c5c5d0; }
+    .eacea-table td.leader { background: rgba(251, 255, 18, 0.15); font-weight: 700; color: #1b1464; }
+    .eacea-table td.total-cell { font-weight: 800; color: #1b1464; }
+    .eacea-table td.partner-cell { font-weight: 600; }
+    .eacea-table tr.totals { background: #f8f8fc; border-top: 2px solid #1b1464; font-weight: 700; }
+    .eacea-table tr.totals td:first-child { text-transform: uppercase; font-size: 8pt; letter-spacing: 0.5px; color: #1b1464; }
+    .eacea-table td.empty { text-align: center; padding: 6mm 0; color: #b0b0c0; font-style: italic; }
+    .wp-cell { white-space: nowrap; }
+    .wp-dot { display: inline-block; width: 2.5mm; height: 2.5mm; border-radius: 50%; vertical-align: middle; margin-right: 1.5mm; }
+
+    .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 3mm; }
+    .cat-card { background: #f8f8fc; border-radius: 2mm; padding: 3mm; border-left: 3px solid #1b1464; }
+    .cat-label { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.8px; color: #6b6b80; font-weight: 600; }
+    .cat-value { font-size: 13pt; font-weight: 800; color: #1b1464; margin-top: 1mm; font-variant-numeric: tabular-nums; }
+
+    .page-footer { margin-top: auto; padding-top: 4mm; border-top: 1px solid #ecedf2; font-size: 7.5pt; color: #b0b0c0; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
+
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; padding: 8mm 10mm; }
+    }
+    @media screen { body::before { content: 'Pulsa Ctrl+P · Guardar como PDF'; position: fixed; top: 0; left: 0; right: 0; background: #1b1464; color: #fbff12; padding: 6px; text-align: center; font-weight: 700; font-size: 11pt; z-index: 1000; }
+      body { padding-top: 36px; }
+    }
+  `;
 
   async function loadFormBTables(host) {
     if (!currentProjectId) { host.innerHTML = '<div class="text-sm text-red-600">No hay proyecto activo.</div>'; return; }
@@ -3051,8 +3697,10 @@ const Calculator = (() => {
               </tr>
             </thead>
             <tbody>
-              ${rows.map(r => `<tr class="border-t border-outline-variant/10">
-                <td class="px-1.5 py-1.5 whitespace-nowrap">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-amber-200 text-amber-900 px-1 rounded">leader</span>' : ''}</td>
+              ${rows.map(r => {
+                const roles = Array.isArray(r.by_role) ? r.by_role.filter(x => Number(x.a_personnel) > 0) : [];
+                const mainRow = `<tr class="border-t border-outline-variant/10">
+                <td class="px-1.5 py-1.5 whitespace-nowrap font-semibold">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-amber-200 text-amber-900 px-1 rounded">leader</span>' : ''}</td>
                 <td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${(!r.person_months ? 'text-on-surface-variant/40' : (r.is_leader ? 'font-extrabold' : ''))}">${fmtPm(r.person_months)}</td>
                 ${numCell(r.a_personnel)}
                 ${numCell(r.b_subcontracting)}
@@ -3065,7 +3713,15 @@ const Calculator = (() => {
                 ${numCell(r.d1_third_parties)}
                 ${numCell(r.e_indirect)}
                 <td class="px-1.5 py-1.5 text-right font-mono font-bold">${fmtEur(r.total)}</td>
-              </tr>`).join('')}
+              </tr>`;
+                const subRows = roles.map(rr => `<tr class="border-t border-outline-variant/5 bg-surface-container-lowest/50 text-on-surface-variant">
+                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${escHtml(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmtEur(rr.rate)} €/día)</span>` : ' <span class="text-[9px] text-amber-700">(sin tarifa)</span>'}</td>
+                <td class="px-1.5 py-0.5 text-right font-mono text-[10px]">${fmtPm(rr.person_months)}</td>
+                <td class="px-1.5 py-0.5 text-right font-mono text-[10px]">${fmtEur(rr.a_personnel)}</td>
+                <td colspan="10" class="px-1.5 py-0.5"></td>
+              </tr>`).join('');
+                return mainRow + subRows;
+              }).join('')}
               <tr class="border-t-2 border-outline-variant/30 bg-surface-container-low font-bold">
                 <td class="px-1.5 py-1.5 uppercase text-[10px]">Total</td>
                 <td class="px-1.5 py-1.5 text-right font-mono">${fmtPm(tot.person_months)}</td>
@@ -3493,8 +4149,14 @@ const Calculator = (() => {
         wp.acts.forEach(act => {
           switch (act.type) {
             case 'mgmt': {
-              const rate = pi === 0 ? (act.rate_applicant||500) : (act.rate_partner||250);
-              add('A1_coord', wi, act.label, mo, rate, rate * mo);
+              if (act.mgmt_staff && act.mgmt_staff[p.id] && act.mgmt_staff[p.id].active) {
+                act.mgmt_staff[p.id].staff.forEach(s => {
+                  if (!s.days || s.days <= 0) return;
+                  const rate = getPartnerDayRate(p.id, s.profileId);
+                  const label = s.tasks ? `${act.label} — ${s.tasks.slice(0, 50)}` : act.label;
+                  add('A1_coord', wi, label, s.days, rate, s.days * rate);
+                });
+              }
               break;
             }
             case 'meeting': case 'ltta': {
@@ -3696,6 +4358,10 @@ const Calculator = (() => {
     _addIOStaff: (...a) => { addIOStaff(...a); scheduleSave(); },
     _removeIOStaff: (...a) => { removeIOStaff(...a); scheduleSave(); },
     _setIOPartnerActive: (...a) => { setIOPartnerActive(...a); scheduleSave(); },
+    _setMgmtStaff: (...a) => { setMgmtStaff(...a); scheduleSave(); },
+    _addMgmtStaff: (...a) => { addMgmtStaff(...a); scheduleSave(); },
+    _removeMgmtStaff: (...a) => { removeMgmtStaff(...a); scheduleSave(); },
+    _setMgmtPartnerActive: (...a) => { setMgmtPartnerActive(...a); scheduleSave(); },
     _setIODays: (...a) => { setIODays(...a); scheduleSave(); },
     _setIOProfile: (...a) => { setIOProfile(...a); scheduleSave(); },
     _setME: (...a) => { setME(...a); scheduleSave(); },
@@ -3747,6 +4413,9 @@ const Calculator = (() => {
       }
     },
     _switchResTab: switchResTab,
+    _openPrintView: openPrintView,
+    _refreshPrintView: refreshPrintView,
+    _printIframe: printIframe,
     _setGanttView: setGanttView,
     _ganttToggle: ganttToggle,
     _ganttCollapseAll: ganttCollapseAll,

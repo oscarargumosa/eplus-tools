@@ -6,6 +6,7 @@
 
 const { loadFormBContext } = require('./model');
 const { renderFormBDocx } = require('./render-form-b');
+const { translateContext } = require('./translate');
 const {
   ENFORCE_CAPS, FIELD_CHAR_LIMITS, TABLE_CELL_LIMITS,
   capNarrative, capTableRows, truncate, estimatePages,
@@ -18,16 +19,86 @@ function bad(res, status, error) { res.status(status).json({ ok: false, error })
 
 /* ── DOCX render (binary) ───────────────────────────────────────────── */
 
+/**
+ * Heuristic content-language detector for ES vs EN vs FR vs DE vs IT vs PT.
+ * Counts stopword hits in the first ~3 narrative strings (summary, intake,
+ * first WP summary). Returns a 2-letter code or '' if undecided.
+ *
+ * Lives here (not in translate.js) because it's only used to fix the
+ * mismatch between projects.proposal_lang and actual stored content.
+ */
+function detectContentLang(ctx) {
+  const STOPWORDS = {
+    es: ['que', 'de', 'la', 'el', 'en', 'y', 'a', 'los', 'del', 'se', 'las', 'por', 'un', 'para', 'con', 'no', 'una', 'su', 'al', 'lo', 'como', 'más', 'pero', 'sus', 'le', 'ya', 'o', 'este', 'sí', 'porque', 'esta', 'son', 'entre', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'hay', 'donde', 'quien', 'desde', 'todo', 'nos', 'durante', 'todos', 'uno', 'les', 'ni', 'contra', 'otros', 'ese', 'eso', 'ante', 'ellos', 'esto'],
+    en: ['the', 'of', 'and', 'to', 'in', 'a', 'is', 'that', 'for', 'it', 'with', 'as', 'was', 'on', 'are', 'be', 'by', 'this', 'have', 'from', 'or', 'at', 'an', 'but', 'not', 'they', 'which', 'their', 'will', 'all', 'has', 'were', 'been', 'these', 'when', 'who', 'each', 'about', 'how', 'than', 'into', 'them', 'some'],
+    fr: ['le', 'de', 'la', 'et', 'les', 'des', 'en', 'un', 'une', 'du', 'que', 'qui', 'dans', 'pour', 'pas', 'sur', 'au', 'aux', 'ce', 'sont', 'avec', 'sans', 'son', 'sa', 'ses', 'leur', 'leurs', 'plus', 'tout', 'tous', 'cette', 'mais', 'ou', 'où', 'comme', 'aussi'],
+    de: ['der', 'die', 'das', 'und', 'ist', 'von', 'den', 'zu', 'mit', 'ein', 'eine', 'auf', 'für', 'als', 'sich', 'auch', 'werden', 'sind', 'aus', 'nicht', 'oder', 'nach', 'wie', 'noch', 'aber', 'durch', 'über', 'bei', 'ihre', 'ihr', 'sein'],
+    it: ['di', 'che', 'la', 'il', 'le', 'un', 'una', 'per', 'in', 'con', 'su', 'da', 'come', 'se', 'ma', 'sono', 'anche', 'più', 'nel', 'della', 'dei', 'delle', 'tra', 'fra', 'questo', 'questa', 'questi', 'queste'],
+    pt: ['de', 'que', 'o', 'a', 'os', 'as', 'um', 'uma', 'do', 'da', 'dos', 'das', 'em', 'no', 'na', 'nos', 'nas', 'para', 'com', 'por', 'pelos', 'pelas', 'sem', 'mais', 'mas', 'como', 'também', 'são', 'foi'],
+  };
+  const samples = [];
+  const pushSample = (s) => { if (typeof s === 'string' && s.trim().length > 50) samples.push(s); };
+  if (ctx.writer && typeof ctx.writer === 'object') {
+    pushSample(ctx.writer.summary_text);
+    pushSample(ctx.writer.s1_1_text);
+  }
+  if (ctx.context) {
+    pushSample(ctx.context.problem);
+    pushSample(ctx.context.approach);
+  }
+  (ctx.wps || []).slice(0, 2).forEach(wp => {
+    pushSample(wp.summary);
+    pushSample(wp.writerText);
+    pushSample(wp.masterNarrative);
+  });
+  if (!samples.length) return '';
+  const text = samples.join(' ').toLowerCase().slice(0, 6000);
+  const tokens = text.match(/[a-záéíóúñàèìòùâêîôûäëïöüçß]+/gi) || [];
+  if (tokens.length < 40) return '';
+  const scores = {};
+  for (const [lang, words] of Object.entries(STOPWORDS)) {
+    const set = new Set(words);
+    let hits = 0;
+    for (const t of tokens) if (set.has(t)) hits++;
+    scores[lang] = hits / tokens.length;
+  }
+  const best = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
+  return best && best[1] >= 0.04 ? best[0] : '';
+}
+
 exports.exportFormPartBDocx = async (req, res, next) => {
   try {
     const ctx = await loadFormBContext(req.params.projectId, req.user.id);
+
+    // Idioma de descarga: si difiere del idioma de trabajo, traducimos in situ.
+    // Sin query param → descarga en el idioma de trabajo (sin coste de IA).
+    const declaredLang = (ctx.project.proposal_lang || '').toLowerCase();
+    const detectedLang = detectContentLang(ctx);
+    const srcLang = detectedLang || declaredLang;
+    const targetLang = String(req.query.lang || '').toLowerCase().trim();
+    if (detectedLang && declaredLang && detectedLang !== declaredLang) {
+      console.warn(`[exporter] proposal_lang='${declaredLang}' but content looks like '${detectedLang}' — using detected`);
+    }
+    let langSuffix = '';
+    if (targetLang && targetLang !== srcLang) {
+      try {
+        await translateContext(ctx, srcLang || 'en', targetLang);
+        langSuffix = `_${targetLang}`;
+      } catch (translateErr) {
+        // No reventamos la descarga si la traducción falla: avisamos por log y
+        // devolvemos el doc en idioma original con un header de aviso.
+        console.error('[exporter] translation failed:', translateErr.message);
+        res.setHeader('X-Translation-Error', String(translateErr.message).slice(0, 200));
+      }
+    }
+
     const buffer = await renderFormBDocx(ctx);
     const safeName = (ctx.project.name || 'project').replace(/[^a-z0-9._-]/gi, '_');
     res.setHeader(
       'Content-Type',
       'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
     );
-    res.setHeader('Content-Disposition', `attachment; filename="${safeName}_FormPartB.docx"`);
+    res.setHeader('Content-Disposition', `attachment; filename="${safeName}_FormPartB${langSuffix}.docx"`);
     res.setHeader('Cache-Control', 'no-store');
     res.send(buffer);
   } catch (err) { next(err); }

@@ -198,6 +198,18 @@ const TASK_TEMPLATES = [
       { key: 'evaluation_admin', label: 'Evaluation / administrative support costs', title: 'Provision of Evaluation and Administrative Support', description: 'This task covers additional support needed for evaluation, reporting, documentation, or administrative coordination within the project. It helps strengthen quality assurance and organisational capacity. It supports smooth implementation and accountability.' },
     ]
   },
+  {
+    category: 'financial_support_third_parties',
+    label: 'Financial Support to Third Parties',
+    icon: 'volunteer_activism',
+    subtypes: [
+      { key: 'cascade_open_call', label: 'Cascade funding (open call)', title: 'Implementation of the Cascade Funding Scheme', description: 'This task focuses on the design, launch, and management of the cascade-funding mechanism (D.1 FSTP) to support third parties through an open call. It includes drafting the call documentation, defining eligibility and award criteria, running a transparent selection process, signing sub-grant agreements, monitoring funded activities, and reporting financial and qualitative results. It ensures compliant redistribution of EU funds to extend the project\'s reach to the broader ecosystem.' },
+      { key: 'subgrants_smes', label: 'Sub-grants to SMEs', title: 'Provision of Sub-grants to SMEs', description: 'This task focuses on awarding direct financial support to SMEs participating in the project ecosystem. It includes defining eligible SMEs, allocation rules, award amounts, simplified reporting requirements, and tracking the use of funds. It supports concrete uptake of project results by businesses in the target sector.' },
+      { key: 'subgrants_ngos', label: 'Sub-grants to NGOs / civil society', title: 'Provision of Sub-grants to NGOs and Civil Society', description: 'This task focuses on awarding financial support to NGOs and civil-society organisations to scale the project\'s social or community impact. It includes call documentation, selection, sub-grant agreements, mentoring of awardees, and impact monitoring. It supports broader participation and grassroots transfer of project outcomes.' },
+      { key: 'innovation_vouchers', label: 'Innovation vouchers', title: 'Implementation of Innovation Vouchers', description: 'This task focuses on issuing innovation vouchers to third parties for the purchase of specialised expertise, testing, or innovation services aligned with the project. It includes voucher rules, eligible services, award process, and reporting. It supports knowledge transfer and innovation uptake.' },
+      { key: 'cascade_other', label: 'Other cascade scheme', title: 'Implementation of the Cascade Support Scheme', description: 'This task covers the design and implementation of any other cascade-support mechanism not captured by the standard categories. It includes scheme rules, selection process, agreements, monitoring, and reporting. It ensures transparent and compliant distribution of D.1 financial support.' },
+    ]
+  },
 ];
 
 module.exports = TASK_TEMPLATES;

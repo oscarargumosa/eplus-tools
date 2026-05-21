@@ -36,59 +36,64 @@ const BACKUP_PATH = path.join(TPL_DIR, 'form_part_b_eacea_template.original.docx
 // Mapping placeholders en el orden de aparición en cada fila.
 // Cada celda tiene runs partidos en Word; reemplazamos secuencialmente.
 //
-// Fila 3 (partner row) contiene en este orden:
-//   [name]
-//   X person months         → A. Personnel column? no — es la columna "Costs"
-//   X EUR                   → A. Personnel
-//   X EUR                   → B. Subcontracting
-//   X travels               → C.1a Travel (count)
-//   X persons travelling    → C.1b Accommodation (persons travelling)
-//   X EUR                   → (subtotal C.1a/b/c)
-//   X EUR                   → C.2 Equipment
-//   X EUR                   → C.3 Other
-//   X EUR                   → (D — header €)
-//   X EUR                   → D.1 Financial support €
-//   X grants                → D.1 (number of grants — opcional, lo dejamos vacío)
-//   X EUR                   → E. Indirect costs €
-//   X EUR                   → (total directos)
-//   X EUR                   → Total costs €
+// Estructura real del template EACEA (verificada con tmp/inspect-template.js).
+// La tabla tiene 15 grid-columns. La row de partner (row 3) tiene 15 celdas;
+// la primera contiene [name], el resto 14 markers. La row Total (row 6) tiene
+// los mismos 14 markers en cells 1..14, PERO cell 11 contiene DOS markers
+// ("X grants" y "X prizes") → 15 markers en total.
 //
-// El template de EACEA tiene más sub-columnas de las que el header anuncia.
-// Mapeamos a los placeholders que producirá render-form-b.js.
+// Mapeo grid-column → header oficial → marker en row 3:
+//   col 0  Participant                        [name]              → {sbp_acronym}
+//   col 1  A. Personnel (sub: PM count)       X person months     → {sbp_pm}
+//   col 2  A. Personnel (€)                   X EUR               → {sbp_a}
+//   col 3  B. Subcontracting (€)              X EUR               → {sbp_b}
+//   col 4  C.1a Travel (# travels)            X travels           → {sbp_travels}
+//   col 5  C.1a Travel (# persons travelling) X persons travel…   → {sbp_persons}
+//   col 6  C.1a Travel (€)                    X EUR               → {sbp_c1a}
+//   col 7  C.1b Accommodation (€)             X EUR               → {sbp_c1b}
+//   col 8  C.1c Subsistence (€)               X EUR               → {sbp_c1c}
+//   col 9  C.2 Equipment (€)                  X EUR               → {sbp_c2}
+//   col 10 C.3 Other (€)                      X EUR               → {sbp_c3}
+//   col 11 D.1 FSTP (# grants)                X grants            → {sbp_grants}
+//   col 12 D.1 FSTP (€)                       X EUR               → {sbp_d1}
+//   col 13 E. Indirect costs (€)              X EUR               → {sbp_indirect}
+//   col 14 Total costs (€)                    X EUR               → {sbp_total}
+//
+// Total row además: cell 11 contiene "X grants" Y "X prizes" → 15 markers.
 
 const PARTNER_ROW_PLACEHOLDERS = [
-  '{sbp_pm}',           // X person months
-  '{sbp_a}',            // X EUR — A. Personnel
-  '{sbp_b}',            // X EUR — B. Subcontracting
-  '{sbp_travels}',      // X travels
-  '{sbp_persons}',      // X persons travelling
-  '{sbp_c1c}',          // X EUR — C.1c Subsistence
-  '{sbp_c2}',           // X EUR — C.2 Equipment
-  '{sbp_c3}',           // X EUR — C.3 Other
-  '{sbp_d_total}',      // X EUR — D total
-  '{sbp_d1}',           // X EUR — D.1 FSTP
-  '',                   // X grants (left blank — number of grants)
-  '{sbp_indirect}',     // X EUR — E. Indirect
-  '{sbp_subtotal}',     // X EUR — subtotal directos
-  '{sbp_total}',        // X EUR — Total costs
+  '{sbp_pm}',           // col 1  X person months
+  '{sbp_a}',            // col 2  X EUR — A. Personnel
+  '{sbp_b}',            // col 3  X EUR — B. Subcontracting
+  '{sbp_travels}',      // col 4  X travels
+  '{sbp_persons}',      // col 5  X persons travelling
+  '{sbp_c1a}',          // col 6  X EUR — C.1a Travel
+  '{sbp_c1b}',          // col 7  X EUR — C.1b Accommodation
+  '{sbp_c1c}',          // col 8  X EUR — C.1c Subsistence
+  '{sbp_c2}',           // col 9  X EUR — C.2 Equipment
+  '{sbp_c3}',           // col 10 X EUR — C.3 Other
+  '{sbp_grants}',       // col 11 X grants — # grants
+  '{sbp_d1}',           // col 12 X EUR — D.1 FSTP €
+  '{sbp_indirect}',     // col 13 X EUR — E. Indirect
+  '{sbp_total}',        // col 14 X EUR — Total costs
 ];
 
 const TOTAL_ROW_PLACEHOLDERS = [
-  '{tot_pm}',           // X person months
-  '{tot_a}',            // X EUR — A. Personnel
-  '{tot_b}',            // X EUR — B. Subcontracting
-  '{tot_travels}',      // X travels
-  '{tot_persons}',      // X persons travelling
-  '{tot_c1c}',          // X EUR — C.1c Subsistence
-  '{tot_c2}',           // X EUR — C.2 Equipment
-  '{tot_c3}',           // X EUR — C.3 Other
-  '{tot_d_total}',      // X EUR — D total
-  '{tot_d1}',           // X EUR — D.1 FSTP
-  '',                   // X grants
-  '',                   // X prizes
-  '{tot_indirect}',     // X EUR — E. Indirect
-  '{tot_subtotal}',     // X EUR — subtotal directos
-  '{tot_total}',        // X EUR — Total costs
+  '{tot_pm}',           // col 1  X person months
+  '{tot_a}',            // col 2  X EUR — A. Personnel
+  '{tot_b}',            // col 3  X EUR — B. Subcontracting
+  '{tot_travels}',      // col 4  X travels
+  '{tot_persons}',      // col 5  X persons travelling
+  '{tot_c1a}',          // col 6  X EUR — C.1a Travel
+  '{tot_c1b}',          // col 7  X EUR — C.1b Accommodation
+  '{tot_c1c}',          // col 8  X EUR — C.1c Subsistence
+  '{tot_c2}',           // col 9  X EUR — C.2 Equipment
+  '{tot_c3}',           // col 10 X EUR — C.3 Other
+  '{tot_grants}',       // col 11 X grants
+  '{tot_prizes}',       // col 11 X prizes (mismo cell, segundo marker)
+  '{tot_d1}',           // col 12 X EUR — D.1 FSTP €
+  '{tot_indirect}',     // col 13 X EUR — E. Indirect
+  '{tot_total}',        // col 14 X EUR — Total costs
 ];
 
 // Helper: reemplaza el contenido textual de los runs en orden secuencial

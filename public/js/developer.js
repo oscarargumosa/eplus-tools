@@ -1338,7 +1338,7 @@ const Developer = (() => {
         <div class="flex items-center justify-between mb-4">
           <div>
             <h3 class="font-headline text-base font-bold">Tareas del proyecto</h3>
-            <p class="text-xs text-on-surface-variant">Desglose de tareas, entregables y milestones por actividad.</p>
+            <p class="text-xs text-on-surface-variant">Desglose de tareas, entregables y milestones por actividad. <strong>Líder y participantes</strong> se derivan del presupuesto del WP.</p>
           </div>
         </div>
         <div id="prep-tasks-container"></div>
@@ -1354,7 +1354,39 @@ const Developer = (() => {
           await Calculator.initFromIntake(projData, partnerList || []);
         } catch (e) { console.error('tasks calc init:', e); }
       }
-      IntakeTasks.render(document.getElementById('prep-tasks-container'), pid);
+
+      // Fetch leader/budget context: WP leaders + eligible partners per WP +
+      // wp_tasks per WP (so we can show their codes T1.1, T1.2, … in the UI).
+      let leaderCtx = null;
+      try {
+        const [eaceaRes, partnersRes] = await Promise.all([
+          API.get(`/budget/projects/${pid}/eacea-tables`),
+          API.get(`/developer/projects/${pid}/partners`),
+        ]);
+        const eacea = eaceaRes.data || eaceaRes;
+        const partners = partnersRes.data || partnersRes || [];
+        const wpsCtx = (eacea.wps || []).map(wp => ({
+          id: wp.wp_id,
+          code: wp.code,
+          title: wp.title,
+          leader_id: wp.leader_id || null,
+          leader_acronym: wp.leader_acronym || null,
+          eligible_partner_ids: (wp.rows || []).filter(r => Number(r.total) > 0).map(r => r.partner_id),
+        }));
+        // Fetch wp_tasks per WP — used to surface T-codes in the rendering.
+        const wpTaskLists = await Promise.all(wpsCtx.map(wp =>
+          API.get(`/developer/wp/${wp.id}/tasks`).catch(() => [])
+        ));
+        wpsCtx.forEach((wp, i) => {
+          const list = wpTaskLists[i];
+          wp.wp_tasks = (Array.isArray(list) ? list : (list?.data || [])).map(t => ({
+            id: t.id, code: t.code, title: t.title, sort_order: t.sort_order,
+          }));
+        });
+        leaderCtx = { showLeaders: true, partners, wps: wpsCtx };
+      } catch (e) { console.warn('[Tareas] leader ctx skipped:', e?.message || e); }
+
+      IntakeTasks.render(document.getElementById('prep-tasks-container'), pid, leaderCtx);
     } else {
       el.querySelector('#prep-tasks-container').innerHTML = `
         <div class="bg-amber-50 rounded-2xl border border-amber-200 p-8 text-center">
@@ -1893,14 +1925,57 @@ const Developer = (() => {
 
   let _dmsV2Cached = null;  // kept for back-compat with banner CTA detection
 
+  /**
+   * Modal previo a la generación: deja al usuario fijar el número total de
+   * deliverables del proyecto. Mínimo 8, máximo 15 (cap EACEA), default 15.
+   * Devuelve el número elegido o null si se cancela.
+   */
+  function _promptTargetCount(hasExisting) {
+    return new Promise(resolve => {
+      const overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;animation:overlayIn .15s ease;';
+      overlay.innerHTML = `
+        <div style="background:#fff;border-radius:14px;max-width:480px;width:90vw;padding:28px;box-shadow:0 12px 40px rgba(0,0,0,.3);font-family:Poppins,sans-serif;">
+          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#1b1464;">Plan profesional · Entregables y Milestones</h3>
+          <p style="margin:0 0 18px 0;font-size:13px;color:#787682;line-height:1.5;">
+            ${hasExisting
+              ? 'Esto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible).'
+              : 'El asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45s.'}
+          </p>
+          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#1b1464;margin-bottom:6px;">Número total de deliverables del proyecto</label>
+          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(27,20,100,.15);border-radius:10px;color:#1b1464;text-align:center;outline:none;" />
+          <p style="margin:8px 0 0 0;font-size:11px;color:#787682;line-height:1.5;">
+            <strong>Mín 8</strong> · <strong>Máx 15</strong> (cap absoluto EACEA — superarlo puede llevar a rechazo del proyecto). Se repartirán proporcionalmente entre los WPs según el número de actividades de cada uno. Todas las tareas con financiación quedarán cubiertas por al menos un entregable.
+          </p>
+          <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:22px;">
+            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(27,20,100,.2);background:#fff;color:#1b1464;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
+            <button id="dms-target-ok" style="padding:10px 22px;border-radius:10px;border:0;background:#1b1464;color:#fbff12;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
+          </div>
+        </div>`;
+      document.body.appendChild(overlay);
+      const inp = overlay.querySelector('#dms-target-input');
+      inp.focus(); inp.select();
+      const close = (val) => { overlay.remove(); resolve(val); };
+      overlay.querySelector('#dms-target-cancel').onclick = () => close(null);
+      overlay.querySelector('#dms-target-ok').onclick = () => {
+        const n = parseInt(inp.value, 10);
+        if (!n || n < 8 || n > 15) { inp.style.borderColor = '#ba1a1a'; return; }
+        close(n);
+      };
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(null); });
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'Enter') overlay.querySelector('#dms-target-ok').click();
+        if (e.key === 'Escape') close(null);
+      });
+    });
+  }
+
   // One-shot: confirm → generate (3-pass + critic) → auto-apply → reload cards.
   // No preview UI in between; the cards themselves ARE the editable surface.
   async function _prepDmsGenerateAndApply(pid) {
     const hasExisting = document.querySelectorAll('[data-prep-d-row]').length > 0;
-    const msg = hasExisting
-      ? '¿Generar plan profesional?\n\nEsto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible automáticamente).'
-      : '¿Generar plan profesional de Entregables + Milestones?\n\nEl asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45 segundos.';
-    if (!confirm(msg)) return;
+    const targetCount = await _promptTargetCount(hasExisting);
+    if (!targetCount) return;
 
     // Loading overlay on the content area
     const host = document.getElementById('prep-del-content');
@@ -1913,7 +1988,7 @@ const Developer = (() => {
 
     let critic = null;
     try {
-      const res = await API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, {});
+      const res = await API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, { target_count: targetCount });
       const data = res?.data || res;
       critic = data.critic;
       // Auto-apply immediately with the full payload (plan + copy + critic for score persistence)
@@ -1937,7 +2012,8 @@ const Developer = (() => {
   }
 
   async function _prepDmsV2Preview(pid) {
-    if (!confirm('Generar plan profesional de Entregables + Milestones.\n\nEsta acción analiza todo el proyecto (tareas, actividades, partners) y produce un plan validado. Verás el resultado antes de guardarlo. ¿Continuar?')) return;
+    const targetCount = await _promptTargetCount(true);
+    if (!targetCount) return;
 
     const previewBox = document.getElementById('prep-dms-preview');
     previewBox.classList.remove('hidden');
@@ -1952,7 +2028,7 @@ const Developer = (() => {
     try {
       // Fetch current state in parallel for diff
       const [res, currentD, currentM] = await Promise.all([
-        API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, {}),
+        API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, { target_count: targetCount }),
         API.get(`/developer/projects/${pid}/deliverables`).catch(() => []),
         API.get(`/developer/projects/${pid}/milestones`).catch(() => []),
       ]);
@@ -4106,10 +4182,42 @@ const Developer = (() => {
         </div>
 
         <!-- Actions -->
-        <div class="flex justify-end gap-3 flex-wrap">
+        <div class="flex justify-end gap-3 flex-wrap items-end">
           <button onclick="Developer._phase(2)" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors">
             <span class="material-symbols-outlined text-sm">edit_note</span> Seguir editando
           </button>
+          <div class="flex flex-col gap-1">
+            <label for="export-lang" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Idioma de descarga</label>
+            <select id="export-lang" class="px-3 py-2.5 rounded-xl bg-white border border-outline-variant text-on-surface text-sm focus:border-primary outline-none">
+              <option value="">Mismo que idioma de trabajo</option>
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="it">Italiano</option>
+              <option value="pt">Português</option>
+              <option value="nl">Nederlands</option>
+              <option value="pl">Polski</option>
+              <option value="ro">Română</option>
+              <option value="el">Ελληνικά</option>
+              <option value="cs">Čeština</option>
+              <option value="da">Dansk</option>
+              <option value="fi">Suomi</option>
+              <option value="sv">Svenska</option>
+              <option value="hu">Magyar</option>
+              <option value="bg">Български</option>
+              <option value="hr">Hrvatski</option>
+              <option value="sk">Slovenčina</option>
+              <option value="sl">Slovenščina</option>
+              <option value="et">Eesti</option>
+              <option value="lv">Latviešu</option>
+              <option value="lt">Lietuvių</option>
+              <option value="is">Íslenska</option>
+              <option value="no">Norsk</option>
+              <option value="sr">Srpski</option>
+              <option value="tr">Türkçe</option>
+            </select>
+          </div>
           <button id="btn-export-form-b" onclick="Developer._exportFormB()" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-white bg-on-surface hover:bg-on-surface/90 shadow-lg transition-all">
             <span class="material-symbols-outlined text-sm">description</span> Exportar Application Form (Part B) — DOCX
           </button>
@@ -4155,10 +4263,16 @@ const Developer = (() => {
     if (!currentProject?.id) return;
     const btn = document.getElementById('btn-export-form-b');
     const original = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando…'; }
+    const targetLang = (document.getElementById('export-lang')?.value || '').trim();
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = targetLang
+        ? '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Traduciendo y generando…'
+        : '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando…';
+    }
     try {
       const token = API.getToken();
-      const url = `/v1/exporter/projects/${currentProject.id}/form-part-b.docx`;
+      const url = `/v1/exporter/projects/${currentProject.id}/form-part-b.docx${targetLang ? `?lang=${encodeURIComponent(targetLang)}` : ''}`;
       const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
       let res = await fetch(url, { credentials: 'include', headers });
       if (res.status === 401) {
@@ -4171,7 +4285,8 @@ const Developer = (() => {
       const blob = await res.blob();
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `${(currentProject.name || 'project').replace(/[^a-z0-9._-]/gi, '_')}_FormPartB.docx`;
+      const suffix = targetLang ? `_${targetLang}` : '';
+      a.download = `${(currentProject.name || 'project').replace(/[^a-z0-9._-]/gi, '_')}_FormPartB${suffix}.docx`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -5041,6 +5156,10 @@ const Developer = (() => {
         </div>
       </div>
       ${rows.length ? `
+      <div class="text-[11px] text-on-surface-variant/80 mb-2 px-2 py-1.5 bg-blue-50 border border-blue-200 rounded-md flex items-start gap-1.5">
+        <span class="material-symbols-outlined text-base text-blue-700">info</span>
+        <span><strong>Líder y participantes</strong> se derivan automáticamente del presupuesto: solo las entidades con importe asignado en este WP pueden liderar o participar en sus tasks. Ajusta el presupuesto en <em>Diseñar</em> para cambiar la elegibilidad.</span>
+      </div>
       <div class="overflow-x-auto">
         <table class="w-full text-xs border-collapse">
           <thead class="bg-primary/5">
@@ -5048,7 +5167,8 @@ const Developer = (() => {
               <th class="text-left p-2 border border-outline-variant/30 w-16">Task No</th>
               <th class="text-left p-2 border border-outline-variant/30 w-48">Task Name</th>
               <th class="text-left p-2 border border-outline-variant/30">Description</th>
-              <th class="text-left p-2 border border-outline-variant/30 w-56">Participants</th>
+              <th class="text-left p-2 border border-outline-variant/30 w-44">Líder</th>
+              <th class="text-left p-2 border border-outline-variant/30 w-56">Participantes (presupuesto)</th>
               <th class="text-left p-2 border border-outline-variant/30 w-40">In-kind / Subcontracting</th>
               <th class="border border-outline-variant/30 w-8"></th>
             </tr>
@@ -5064,32 +5184,45 @@ const Developer = (() => {
       el.addEventListener('change', handler);
       if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') el.addEventListener('blur', handler);
     });
+    host.querySelectorAll('[data-task-lead]').forEach(sel => {
+      sel.addEventListener('change', () => _wpSaveTask(sel.dataset.taskLead, 'lead_partner_id', sel.value || null, sel));
+    });
     host.querySelectorAll('[data-task-del]').forEach(b => b.addEventListener('click', () => _wpDelTask(b.dataset.taskDel, wpId, partners, wpCode)));
-    host.querySelectorAll('[data-task-part-toggle]').forEach(cb => cb.addEventListener('change', () => _wpToggleParticipant(cb.dataset.taskPartToggle, cb.dataset.partnerId, cb.checked, wpId, partners, wpCode)));
-    host.querySelectorAll('[data-task-part-role]').forEach(sel => sel.addEventListener('change', () => _wpSetParticipantRole(sel.dataset.taskPartRole, sel.dataset.partnerId, sel.value, wpId, partners, wpCode)));
   }
 
   function _wpTaskRow(t, partners, wpNum, autoIdx) {
     const code = t.code || `T${wpNum}.${autoIdx}`;
-    const partsByPartner = Object.fromEntries((t.participants || []).map(p => [p.partner_id, p]));
-    const partsHtml = partners.length
-      ? `<details class="text-[11px]"><summary class="cursor-pointer text-primary font-semibold">${(t.participants || []).length} partner(s)</summary>
-          <div class="mt-1 space-y-1">
-            ${partners.map(p => {
-              const cur = partsByPartner[p.id];
-              const checked = cur ? 'checked' : '';
-              const role = cur?.role || 'BEN';
-              return `<div class="flex items-center gap-1">
-                <input type="checkbox" data-task-part-toggle="${esc(t.id)}" data-partner-id="${esc(p.id)}" ${checked}>
-                <span class="flex-1 truncate">${esc(p.name || '')}</span>
-                <select data-task-part-role="${esc(t.id)}" data-partner-id="${esc(p.id)}" ${cur ? '' : 'disabled'} class="text-[10px] border border-outline-variant/30 rounded px-1 py-0.5 bg-white">
-                  ${WP_TASK_ROLES.map(r => `<option value="${r}" ${role === r ? 'selected' : ''}>${r}</option>`).join('')}
-                </select>
-              </div>`;
-            }).join('')}
-          </div>
-        </details>`
-      : '<span class="text-[10px] italic text-on-surface-variant/60">Añade partners al proyecto</span>';
+    const eligibleSet = new Set(t.eligible_partner_ids || []);
+    const eligiblePartners = partners.filter(p => eligibleSet.has(p.id));
+    const currentLead = t.lead_partner_id || '';
+
+    // Leader select: only eligible partners
+    const leadHtml = eligiblePartners.length
+      ? `<select data-task-lead="${esc(t.id)}" class="w-full px-1 py-1 text-[11px] bg-transparent border border-outline-variant/30 rounded focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30">
+          <option value="">— Sin líder —</option>
+          ${eligiblePartners.map(p => {
+            const sel = currentLead === p.id ? 'selected' : '';
+            return `<option value="${esc(p.id)}" ${sel}>${esc(p.name || '')}</option>`;
+          }).join('')}
+        </select>`
+      : '<span class="text-[10px] italic text-on-surface-variant/60">Sin partners con presupuesto en este WP</span>';
+
+    // Participants list: budget-driven, locked
+    const partsHtml = eligiblePartners.length
+      ? `<div class="flex flex-wrap gap-1">
+          ${eligiblePartners.map(p => {
+            const isLead = p.id === currentLead;
+            const cls = isLead
+              ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
+              : 'bg-primary/10 text-primary border-primary/20';
+            const icon = isLead ? 'workspace_premium' : 'check_circle';
+            const title = isLead ? 'Líder de la task' : 'Recibe presupuesto en este WP · participa obligatoriamente';
+            return `<span class="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 rounded border ${cls}" title="${esc(title)}">
+              <span class="material-symbols-outlined text-[11px]">${icon}</span>${esc(p.name || '')}
+            </span>`;
+          }).join('')}
+        </div>`
+      : '<span class="text-[10px] italic text-on-surface-variant/60">Sin partners con presupuesto en este WP. Asigna importes en Diseñar.</span>';
 
     return `<tr class="align-top">
       <td class="p-1.5 border border-outline-variant/30 font-mono text-[11px] text-on-surface-variant">
@@ -5101,6 +5234,7 @@ const Developer = (() => {
       <td class="p-1.5 border border-outline-variant/30">
         <textarea data-no-voice="1" data-task-fld="description" data-task-id="${esc(t.id)}" rows="2" class="w-full px-1 py-0.5 bg-transparent border-0 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30 rounded resize-none">${esc(t.description || '')}</textarea>
       </td>
+      <td class="p-1.5 border border-outline-variant/30">${leadHtml}</td>
       <td class="p-1.5 border border-outline-variant/30">${partsHtml}</td>
       <td class="p-1.5 border border-outline-variant/30">
         <input data-task-fld="in_kind_subcontracting" data-task-id="${esc(t.id)}" value="${esc(t.in_kind_subcontracting || '')}" placeholder="No / Yes (qué)" class="w-full px-1 py-0.5 bg-transparent border-0 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30 rounded">

@@ -36,6 +36,7 @@ const ACT_TYPE_TO_TEMPLATE_CAT = {
   goods: 'other_goods',
   consumables: 'consumables',
   other: 'other_costs',
+  fstp: 'financial_support_third_parties',
 };
 
 function _findTemplateBySubtypeLabel(category, subtypeLabel) {
@@ -1659,14 +1660,21 @@ async function seedWpTasksFromProject(wpId) {
   );
 
   const [savedTasks] = await db.execute(
-    `SELECT category, subtype, title, description, wp_id FROM project_tasks
+    `SELECT category, subtype, title, description, partner_id, wp_id FROM project_tasks
       WHERE project_id = ? ORDER BY sort_order, created_at`,
     [wp.project_id]
   );
 
+  // Determine the WP leader as a sensible default if a task has no explicit leader.
+  // Falls back to NULL if WP has no leader assigned.
+  const wpLeaderId = (await db.execute(
+    `SELECT leader_id FROM work_packages WHERE id = ? LIMIT 1`, [wpId]
+  ))[0][0]?.leader_id || null;
+
   const seedRows = [];
 
   // 1. WP1 only: management selections (dedup by subtype to handle stale duplicates)
+  // Mgmt tasks accept ANY project partner as leader — no budget check.
   if (wi === '0') {
     const seenSub = new Set();
     for (const t of savedTasks) {
@@ -1677,6 +1685,8 @@ async function seedWpTasksFromProject(wpId) {
       seedRows.push({
         title: t.title || tmpl?.title || 'Project management task',
         description: _shortDescription(t.description || tmpl?.description),
+        lead_partner_id: t.partner_id || wpLeaderId,
+        is_management: true,
       });
     }
   }
@@ -1694,6 +1704,8 @@ async function seedWpTasksFromProject(wpId) {
     seedRows.push({
       title: saved?.title || tmpl.title,
       description: _shortDescription(saved?.description || tmpl.description),
+      lead_partner_id: saved?.partner_id || wpLeaderId,
+      is_management: false,
     });
   }
 
@@ -1704,16 +1716,26 @@ async function seedWpTasksFromProject(wpId) {
     seedRows.push({
       title: t.title || 'Custom task',
       description: _shortDescription(t.description),
+      lead_partner_id: t.partner_id || wpLeaderId,
+      is_management: false,
     });
+  }
+
+  // Validate lead_partner_id against budget eligibility for non-mgmt tasks.
+  // Management tasks (WP1 mgmt checklist) intentionally allow any partner.
+  const { eligibleIds } = await getEligiblePartnersForWp(wpId);
+  for (const r of seedRows) {
+    if (r.is_management) continue;
+    if (r.lead_partner_id && !eligibleIds.has(r.lead_partner_id)) r.lead_partner_id = null;
   }
 
   // Code prefix derived from wp.code or order
   const wpNum = parseInt(String(wp.code || '').replace(/[^0-9]/g, '')) || ((wp.order_index ?? 0) + 1);
   for (let i = 0; i < seedRows.length; i++) {
     await db.execute(
-      `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, sort_order)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      [genUUID(), wpId, wp.project_id, `T${wpNum}.${i + 1}`, seedRows[i].title, seedRows[i].description, i]
+      `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, lead_partner_id, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [genUUID(), wpId, wp.project_id, `T${wpNum}.${i + 1}`, seedRows[i].title, seedRows[i].description, seedRows[i].lead_partner_id, i]
     );
   }
   return seedRows.length;
@@ -2128,6 +2150,221 @@ async function resyncWpTasks(wpId, userId) {
   return await seedWpTasksFromProject(wpId);
 }
 
+/**
+ * Best-effort sync: project_tasks.partner_id → wp_tasks.lead_partner_id.
+ *
+ * The two tables are not linked by FK. When the user assigns a task leader
+ * in *Escribir → Tareas* it lands on project_tasks.partner_id; meanwhile
+ * the DMS generator reads wp_tasks.lead_partner_id. This function bridges
+ * the two by matching on three signals:
+ *   1) Exact template-title match within the same WP.
+ *   2) Activity-derived ordering: i-th non-mgmt project_task in a WP →
+ *      i-th non-mgmt wp_task in the same WP (best fallback).
+ *   3) WP1 management items: project_management subtype → wp_task whose
+ *      title matches the template's title for that subtype.
+ *
+ * Only UPDATEs wp_tasks rows whose lead_partner_id IS NULL — never
+ * overwrites a manually-set leader.
+ *
+ * Idempotent. Cheap enough to run lazily on every DMS generation.
+ */
+async function syncWpTaskLeadersFromProjectTasks(projectId) {
+  const [pts] = await db.execute(
+    `SELECT id, category, subtype, wp_id, title, partner_id
+       FROM project_tasks
+      WHERE project_id = ? AND partner_id IS NOT NULL
+      ORDER BY sort_order, created_at`,
+    [projectId]
+  );
+  if (!pts.length) return { applied: 0 };
+
+  const [wps] = await db.execute(
+    `SELECT id, order_index FROM work_packages WHERE project_id = ? ORDER BY order_index`,
+    [projectId]
+  );
+
+  let applied = 0;
+
+  for (const wp of wps) {
+    const wi = String(wp.order_index ?? 0);
+    const [wpTasks] = await db.execute(
+      `SELECT id, title, sort_order FROM wp_tasks
+        WHERE work_package_id = ? AND lead_partner_id IS NULL
+        ORDER BY sort_order, created_at`,
+      [wp.id]
+    );
+    if (!wpTasks.length) continue;
+
+    const assigned = new Set();
+
+    // Pass 1: title match against the template's stock title.
+    // Catches wp_tasks whose title comes verbatim from the template.
+    const wpPts = pts.filter(pt => String(pt.wp_id) === wi || (wi === '0' && pt.category === 'project_management'));
+    for (const wpt of wpTasks) {
+      if (assigned.has(wpt.id)) continue;
+      const wptTitle = (wpt.title || '').toLowerCase().trim();
+      if (!wptTitle) continue;
+      for (const pt of wpPts) {
+        const tmpl = _findTemplateBySubtypeKey(pt.category, pt.subtype);
+        if (!tmpl) continue;
+        const tmplTitle = (tmpl.title || '').toLowerCase().trim();
+        if (!tmplTitle) continue;
+        if (wptTitle === tmplTitle) {
+          await db.execute(`UPDATE wp_tasks SET lead_partner_id = ? WHERE id = ? AND lead_partner_id IS NULL`, [pt.partner_id, wpt.id]);
+          assigned.add(wpt.id);
+          applied++;
+          break;
+        }
+      }
+    }
+
+    // Pass 2: activity-order fallback. Walk WP activities in order and pair
+    // the i-th non-mgmt activity's project_task with the i-th still-unmatched
+    // non-mgmt wp_task. This catches AI-generated wp_tasks whose titles drift
+    // from the template but maintain the activity order.
+    const [acts] = await db.execute(
+      `SELECT id, type, subtype FROM activities WHERE wp_id = ? ORDER BY order_index`,
+      [wp.id]
+    );
+    const activityPartners = [];
+    for (const act of acts) {
+      if (act.type === 'mgmt') continue;
+      const category = ACT_TYPE_TO_TEMPLATE_CAT[act.type];
+      if (!category) { activityPartners.push(null); continue; }
+      const tmpl = _findTemplateBySubtypeLabel(category, act.subtype);
+      if (!tmpl) { activityPartners.push(null); continue; }
+      const pt = wpPts.find(t => t.category === category && t.subtype === tmpl.key);
+      activityPartners.push(pt?.partner_id || null);
+    }
+    const unmatched = wpTasks.filter(t => !assigned.has(t.id));
+    for (let i = 0; i < unmatched.length && i < activityPartners.length; i++) {
+      const pid = activityPartners[i];
+      if (!pid) continue;
+      await db.execute(`UPDATE wp_tasks SET lead_partner_id = ? WHERE id = ? AND lead_partner_id IS NULL`, [pid, unmatched[i].id]);
+      assigned.add(unmatched[i].id);
+      applied++;
+    }
+  }
+
+  return { applied };
+}
+
+/**
+ * Compute the set of project partner IDs that have any budget cost > 0
+ * in a given WP. Eligibility rule: solo los partners que reciben importe
+ * en el presupuesto del WP pueden liderar/participar en las tasks del WP.
+ *
+ * El matching budget_beneficiaries → partners es por (1) name/acronym y
+ * (2) fallback posicional (sort_order ↔ order_index) — necesario porque
+ * al renombrar un partner en Diseñar, la fila de budget_beneficiaries
+ * conserva el nombre antiguo hasta que se rehace el presupuesto.
+ *
+ * Returns { eligibleIds: Set<string>, projectId: string }.
+ */
+async function getEligiblePartnersForWp(wpId) {
+  const [wpRows] = await db.execute(
+    `SELECT id, project_id, code, order_index FROM work_packages WHERE id = ? LIMIT 1`,
+    [wpId]
+  );
+  if (!wpRows.length) return { eligibleIds: new Set(), projectId: null };
+  const wp = wpRows[0];
+
+  const [partners] = await db.execute(
+    `SELECT id, name, legal_name, order_index FROM partners WHERE project_id = ? ORDER BY order_index, id`,
+    [wp.project_id]
+  );
+  const partnerByKey = {};
+  for (const p of partners) {
+    if (p.name) partnerByKey[p.name.toLowerCase().trim()] = p.id;
+    if (p.legal_name) partnerByKey[p.legal_name.toLowerCase().trim()] = p.id;
+  }
+
+  const [budgets] = await db.execute(
+    `SELECT id FROM budget_projects WHERE project_id = ? LIMIT 1`,
+    [wp.project_id]
+  );
+  if (!budgets.length) return { eligibleIds: new Set(), projectId: wp.project_id };
+  const budgetId = budgets[0].id;
+
+  const [bwps] = await db.execute(
+    `SELECT id, label FROM budget_work_packages WHERE budget_id = ? ORDER BY number`,
+    [budgetId]
+  );
+  let bwp = bwps.find(b => b.label && wp.code && b.label.startsWith(wp.code + ' '));
+  if (!bwp) bwp = bwps[Math.max(0, wp.order_index || 0)] || null;
+  if (!bwp) return { eligibleIds: new Set(), projectId: wp.project_id };
+
+  // Build the full ordered list of beneficiaries so we can fall back to
+  // positional matching for partners renamed after the budget was synced.
+  const [allBenefs] = await db.execute(
+    `SELECT bb.id, bb.acronym, bb.name, bb.sort_order, bb.number,
+            COALESCE(SUM(bc.total_cost), 0) AS total_in_wp
+       FROM budget_beneficiaries bb
+       LEFT JOIN budget_costs bc ON bc.beneficiary_id = bb.id AND bc.budget_id = bb.budget_id AND bc.wp_id = ?
+      WHERE bb.budget_id = ?
+      GROUP BY bb.id
+      ORDER BY bb.sort_order, bb.number`,
+    [bwp.id, budgetId]
+  );
+
+  const eligibleIds = new Set();
+  for (let i = 0; i < allBenefs.length; i++) {
+    const r = allBenefs[i];
+    if (Number(r.total_in_wp) <= 0) continue;
+    // 1) Try name/acronym match
+    let id = partnerByKey[(r.acronym || '').toLowerCase().trim()]
+          || partnerByKey[(r.name || '').toLowerCase().trim()];
+    // 2) Fallback: positional match (i-th beneficiary → i-th project partner)
+    if (!id && partners[i]) id = partners[i].id;
+    if (id) eligibleIds.add(id);
+  }
+  return { eligibleIds, projectId: wp.project_id };
+}
+
+/**
+ * Reconcile wp_task_participants for every task in a WP so the participants
+ * match the budget-based eligibility (regla: si la entidad recibe importe en
+ * el presupuesto del WP, participa obligatoriamente; si no, queda fuera).
+ * Idempotent.
+ */
+async function syncTaskParticipantsToEligibility(wpId, eligibleIds) {
+  const [tasks] = await db.execute(
+    `SELECT id FROM wp_tasks WHERE work_package_id = ?`,
+    [wpId]
+  );
+  if (!tasks.length) return;
+  const eligibleArr = [...eligibleIds];
+
+  for (const t of tasks) {
+    // Remove participants no longer eligible
+    if (eligibleArr.length) {
+      const placeholders = eligibleArr.map(() => '?').join(',');
+      await db.execute(
+        `DELETE FROM wp_task_participants WHERE task_id = ? AND partner_id NOT IN (${placeholders})`,
+        [t.id, ...eligibleArr]
+      );
+    } else {
+      await db.execute(`DELETE FROM wp_task_participants WHERE task_id = ?`, [t.id]);
+    }
+    // Add eligible partners that are not yet listed
+    for (const pid of eligibleArr) {
+      await db.execute(
+        `INSERT INTO wp_task_participants (id, task_id, partner_id, role)
+         VALUES (?, ?, ?, 'BEN')
+         ON DUPLICATE KEY UPDATE role = role`,
+        [genUUID(), t.id, pid]
+      );
+    }
+    // Clear lead_partner_id if the current leader is no longer eligible
+    await db.execute(
+      `UPDATE wp_tasks SET lead_partner_id = NULL
+        WHERE id = ? AND lead_partner_id IS NOT NULL
+          AND lead_partner_id NOT IN (${eligibleArr.length ? eligibleArr.map(() => '?').join(',') : 'NULL'})`,
+      eligibleArr.length ? [t.id, ...eligibleArr] : [t.id]
+    );
+  }
+}
+
 async function listWpTasks(wpId) {
   let [tasks] = await db.execute(
     `SELECT * FROM wp_tasks WHERE work_package_id = ? ORDER BY sort_order, created_at`,
@@ -2142,6 +2379,19 @@ async function listWpTasks(wpId) {
       );
     }
   }
+
+  // Sync participants to budget-based eligibility BEFORE reading them so the
+  // returned list is always coherent with the budget.
+  const { eligibleIds } = await getEligiblePartnersForWp(wpId);
+  if (tasks.length) {
+    await syncTaskParticipantsToEligibility(wpId, eligibleIds);
+    // Re-read tasks in case lead_partner_id was cleared
+    [tasks] = await db.execute(
+      `SELECT * FROM wp_tasks WHERE work_package_id = ? ORDER BY sort_order, created_at`,
+      [wpId]
+    );
+  }
+
   if (!tasks.length) return [];
   const taskIds = tasks.map(t => t.id);
   const placeholders = taskIds.map(() => '?').join(',');
@@ -2158,20 +2408,27 @@ async function listWpTasks(wpId) {
   for (const p of parts) {
     (partsByTask[p.task_id] ||= []).push(p);
   }
-  return tasks.map(t => ({ ...t, participants: partsByTask[t.id] || [] }));
+  const eligibleIdsArr = [...eligibleIds];
+  return tasks.map(t => ({
+    ...t,
+    participants: partsByTask[t.id] || [],
+    eligible_partner_ids: eligibleIdsArr,
+  }));
 }
 
 async function createWpTask(wpId, userId, data) {
   const wp = await _assertWp(wpId, userId);
   const id = genUUID();
+  const leadId = data.lead_partner_id || null;
   await db.execute(
-    `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, in_kind_subcontracting, sort_order)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, lead_partner_id, in_kind_subcontracting, sort_order)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       id, wpId, wp.project_id,
       data.code || null,
       data.title || 'New task',
       data.description || null,
+      leadId,
       data.in_kind_subcontracting || null,
       data.sort_order || 0,
     ]
@@ -2204,7 +2461,10 @@ async function _assertTask(taskId, userId) {
 
 async function updateWpTask(taskId, userId, data) {
   await _assertTask(taskId, userId);
-  const allowed = ['code', 'title', 'description', 'in_kind_subcontracting', 'sort_order'];
+  // Note: lead_partner_id is NOT validated against budget eligibility here.
+  // The UI enforces eligibility for ordinary tasks; project-management tasks
+  // (WP1 mgmt checklist) intentionally allow ANY project partner as leader.
+  const allowed = ['code', 'title', 'description', 'in_kind_subcontracting', 'sort_order', 'lead_partner_id'];
   const sets = [];
   const vals = [];
   for (const k of allowed) {
@@ -2769,6 +3029,28 @@ async function getPrepConsorcio(projectId, userId) {
         p.staff_project_role[sc.staff_id] = sc.project_role || '';
       }
 
+      // Auto-select-by-default: every key_staff of the organization that
+      // doesn't yet have a project_partner_staff row is treated as selected.
+      // We persist this decision as an explicit row (selected=1) so downstream
+      // consumers (listStaffTable, Form Part B exporter, AI prompts) all see
+      // the staff member. INSERT IGNORE keeps it idempotent and never clobbers
+      // a row the user explicitly deselected (those already exist with
+      // selected=0 from a previous toggle).
+      const orgKeyStaff = p.organization && Array.isArray(p.organization.key_staff)
+        ? p.organization.key_staff : [];
+      const trackedIds = new Set(staffCustom.map(sc => sc.staff_id));
+      for (const ks of orgKeyStaff) {
+        if (trackedIds.has(ks.id)) continue;
+        try {
+          await db.execute(
+            `INSERT IGNORE INTO project_partner_staff (id, project_id, partner_id, staff_id, selected)
+             VALUES (?, ?, ?, ?, 1)`,
+            [genUUID(), projectId, p.id, ks.id]
+          );
+          p.staff_selected[ks.id] = true;
+        } catch (e) { /* non-fatal: row will be created on next save attempt */ }
+      }
+
       // Load PIF variants for this organization
       const [variants] = await db.execute(
         'SELECT id, category, category_label, source, updated_at FROM org_pif_variants WHERE organization_id = ? ORDER BY category',
@@ -3010,9 +3292,13 @@ async function toggleEuProject(projectId, partnerId, projectIdentifier, selected
 }
 
 async function saveStaffCustomSkills(projectId, partnerId, staffId, customSkills) {
+  // Force selected=1 on insert so editing skills before toggling never
+  // creates a row that's accidentally deselected (column default is 0).
+  // The ON DUPLICATE KEY clause only touches custom_skills, so this is
+  // a no-op for already-existing rows.
   await db.execute(
-    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, custom_skills)
-     VALUES (?, ?, ?, ?, ?)
+    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, selected, custom_skills)
+     VALUES (?, ?, ?, ?, 1, ?)
      ON DUPLICATE KEY UPDATE custom_skills = VALUES(custom_skills)`,
     [genUUID(), projectId, partnerId, staffId, customSkills || null]
   );
@@ -3028,9 +3314,10 @@ async function toggleStaffSelected(projectId, partnerId, staffId, selected) {
 }
 
 async function setStaffProjectRole(projectId, partnerId, staffId, projectRole) {
+  // Same default-selected protection as saveStaffCustomSkills.
   await db.execute(
-    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, project_role)
-     VALUES (?, ?, ?, ?, ?)
+    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, selected, project_role)
+     VALUES (?, ?, ?, ?, 1, ?)
      ON DUPLICATE KEY UPDATE project_role = VALUES(project_role)`,
     [genUUID(), projectId, partnerId, staffId, projectRole || null]
   );
@@ -3202,7 +3489,9 @@ async function getProjectMeta(projectId) {
   const [rows] = await db.execute('SELECT type, proposal_lang, national_agency FROM projects WHERE id = ? LIMIT 1', [projectId]);
   if (!rows.length) return { programId: null, lang: 'en', langName: 'English' };
   const [programs] = await db.execute('SELECT ip.id FROM intake_programs ip WHERE ip.action_type = ? LIMIT 1', [rows[0].type]);
-  const lang = NA_LANG[rows[0].national_agency] || rows[0].proposal_lang || 'en';
+  // proposal_lang es la fuente única (idioma de trabajo del usuario).
+  // NA queda como fallback histórico para proyectos sin idioma explícito.
+  const lang = rows[0].proposal_lang || NA_LANG[rows[0].national_agency] || 'en';
   return { programId: programs[0]?.id || null, lang, langName: LANG_NAMES_META[lang] || 'English' };
 }
 
@@ -3912,6 +4201,7 @@ module.exports = {
   aiFillWp,
   resyncWpTasks,
   seedWpTasksFromProject,
+  syncWpTaskLeadersFromProjectTasks,
   listStaffTable,
   updateStaffTableRow,
   listProjectRisks,

@@ -1428,6 +1428,7 @@ async function deleteActivityDetails(conn, actId, type) {
   switch (type) {
     case 'mgmt':
       await conn.execute('DELETE FROM activity_management_partners WHERE activity_id = ?', [actId]);
+      await conn.execute('DELETE FROM activity_management_staff WHERE activity_id = ?', [actId]);
       await conn.execute('DELETE FROM activity_management WHERE activity_id = ?', [actId]);
       break;
     case 'meeting': case 'ltta':
@@ -1458,10 +1459,33 @@ async function insertActivityDetails(conn, actId, act, partnerIds, extraDestIdMa
 
   switch (act.type) {
     case 'mgmt': {
+      // Legacy flat-rate row kept for back-compat (downstream queries still
+      // join on it). Rates carry no semantic weight under the new model.
       await conn.execute(
         'INSERT INTO activity_management (id, activity_id, rate_applicant, rate_partner) VALUES (?, ?, ?, ?)',
         [genUUID(), actId, act.rate_applicant || 0, act.rate_partner || 0]
       );
+      // New IO-style per-worker staff table (canonical source of truth for
+      // Management personnel cost: days × profile rate, with optional tasks
+      // description).
+      if (act.mgmt_staff) {
+        for (const [pid, ps] of Object.entries(act.mgmt_staff)) {
+          if (!ps.active || !validPid(pid)) continue;
+          for (const s of (ps.staff || [])) {
+            await conn.execute(
+              'INSERT INTO activity_management_staff (id, activity_id, partner_id, days, worker_category, tasks_text) VALUES (?, ?, ?, ?, ?, ?)',
+              [genUUID(), actId, pid, s.days || 0, s.profileId || null, s.tasks || null]
+            );
+          }
+          // Mirror IO behaviour: also flag active partners in the legacy
+          // activity_management_partners table so downstream consumers that
+          // still join on it stay in sync.
+          await conn.execute(
+            'INSERT INTO activity_management_partners (activity_id, partner_id, active) VALUES (?, ?, 1) ON DUPLICATE KEY UPDATE active = 1',
+            [actId, pid]
+          );
+        }
+      }
       break;
     }
     case 'meeting': case 'ltta': {
@@ -1650,8 +1674,31 @@ async function loadFullState(projectId) {
 async function loadActivityDetails(a, actId, type, extraDestUuidToEdN = {}) {
   switch (type) {
     case 'mgmt': {
+      // Legacy rates kept for any code that still reads them, but they're
+      // no longer the source of truth.
       const [rows] = await db.execute('SELECT rate_applicant, rate_partner FROM activity_management WHERE activity_id = ?', [actId]);
       if (rows[0]) { a.rate_applicant = Number(rows[0].rate_applicant); a.rate_partner = Number(rows[0].rate_partner); }
+
+      // New canonical source: per-worker staff table.
+      const [staffRows] = await db.execute(
+        'SELECT partner_id, days, worker_category, tasks_text FROM activity_management_staff WHERE activity_id = ?',
+        [actId]
+      );
+      if (staffRows.length) {
+        a.mgmt_staff = {};
+        for (const r of staffRows) {
+          if (!a.mgmt_staff[r.partner_id]) a.mgmt_staff[r.partner_id] = { active: true, staff: [] };
+          a.mgmt_staff[r.partner_id].staff.push({
+            days: Number(r.days) || 0,
+            profileId: r.worker_category,
+            tasks: r.tasks_text || '',
+          });
+        }
+      }
+      // If there are no new-format rows but legacy rates exist, leave the
+      // legacy fields populated on the activity; the frontend will lazily
+      // build a default mgmt_staff from those rates the first time the user
+      // opens the activity (see Calculator.buildMgmtFields).
       break;
     }
     case 'meeting': case 'ltta': {

@@ -53,6 +53,7 @@ const dir = require('../../utils/directory-api');
 const mysqlModel = require('./model');
 const overrides = require('./overrides');
 const scores = require('./scores');
+const localOrgs = require('./local-orgs');
 
 /* ── Mapping de la respuesta de /search a la shape MySQL {rows, meta} ── */
 
@@ -125,20 +126,56 @@ function flattenEntityFull(full) {
 
 async function listEntities(args = {}) {
   const limit = args.limit;
-  const resp = await dir.search({
-    q: args.q,
-    country: args.country,
-    category: args.category,
-    tier: args.tier,
-    language: args.language,
-    cms: args.cms,
-    has_email: args.has_email,
-    has_phone: args.has_phone,
-    sort: args.sort,
-    page: args.page,
-    limit: args.limit,
-  });
+
+  // VPS directory + local orgs en paralelo. Local nunca debe romper si VPS cae
+  // y viceversa: ambas degradan independientemente.
+  const [resp, localRows] = await Promise.all([
+    dir.search({
+      q: args.q,
+      country: args.country,
+      category: args.category,
+      tier: args.tier,
+      language: args.language,
+      cms: args.cms,
+      has_email: args.has_email,
+      has_phone: args.has_phone,
+      sort: args.sort,
+      page: args.page,
+      limit: args.limit,
+    }).catch(e => {
+      console.warn('[directory] VPS search failed:', e.message);
+      return { results: [], count: 0, limit: limit || 24, offset: 0 };
+    }),
+    localOrgs.searchLocalAsEntities({
+      q: args.q,
+      country: args.country,
+      limit: limit || 50,
+    }).catch(e => {
+      console.warn('[directory] local search failed:', e.message);
+      return [];
+    }),
+  ]);
+
   const normalized = normalizeSearchResponse(resp, limit);
+
+  // Dedupe: una org local con el mismo PIC que un row del VPS se descarta
+  // (el row del VPS lleva más metadatos y el override lo enriquecerá).
+  if (localRows.length) {
+    const vpsPics = new Set(
+      normalized.rows.map(r => r && r.pic ? String(r.pic) : null).filter(Boolean)
+    );
+    const filteredLocals = localRows.filter(l => !(l.pic && vpsPics.has(String(l.pic))));
+    if (filteredLocals.length) {
+      // Local primero para que las orgs propias del usuario sean lo primero
+      // que ve en directorio + picker.
+      normalized.rows = [...filteredLocals, ...normalized.rows];
+      normalized.meta.total = (normalized.meta.total || 0) + filteredLocals.length;
+      normalized.meta.pages = normalized.meta.limit > 0
+        ? Math.ceil(normalized.meta.total / normalized.meta.limit)
+        : 0;
+    }
+  }
+
   normalized.rows = await overrides.applyToList(normalized.rows);
   normalized.rows = await scores.attachToList(normalized.rows);
   return normalized;
@@ -148,6 +185,13 @@ async function listEntities(args = {}) {
 
 async function getEntityById(oid) {
   if (!oid) return null;
+  // Orgs locales con OID sintético "local-<uuid>" no existen en el VPS.
+  if (localOrgs.isLocalOid(oid)) {
+    const ent = await localOrgs.getLocalEntityByOid(oid);
+    if (!ent) return null;
+    const overridden = await overrides.applyToEntity(ent);
+    return scores.attachToEntity(overridden);
+  }
   try {
     const full = await dir.getEntityFull(oid);
     const flat = flattenEntityFull(full);
@@ -163,12 +207,18 @@ async function getEntityById(oid) {
 
 async function listSimilar(oid, limit = 3) {
   if (!oid) return [];
+  // Local-only orgs: derivamos seed desde MySQL para poder buscar similares.
   let seed;
-  try {
-    seed = await dir.getEntityFull(oid);
-  } catch (e) {
-    if (e.status === 404) return [];
-    throw e;
+  if (localOrgs.isLocalOid(oid)) {
+    seed = await localOrgs.getLocalEntityByOid(oid);
+    if (!seed) return [];
+  } else {
+    try {
+      seed = await dir.getEntityFull(oid);
+    } catch (e) {
+      if (e.status === 404) return [];
+      throw e;
+    }
   }
   if (!seed) return [];
 

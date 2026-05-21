@@ -88,6 +88,19 @@ exports.getOrg = async (req, res) => {
   } catch (e) { err(res, e.message, 500); }
 };
 
+/* ── Adopt entity from directory ─────────────────────────────── */
+exports.fromEntity = async (req, res) => {
+  try {
+    const oid = (req.body && req.body.oid) ? String(req.body.oid).trim() : '';
+    if (!oid) return err(res, 'oid required', 400);
+    const out = await m.upsertFromEntity(oid);
+    ok(res, out);
+  } catch (e) {
+    const status = /not found/i.test(e.message) ? 404 : 500;
+    err(res, e.message, status);
+  }
+};
+
 /* ── Child resources ─────────────────────────────────────────── */
 
 exports.listChildren = async (req, res) => {

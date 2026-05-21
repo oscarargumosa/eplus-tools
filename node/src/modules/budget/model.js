@@ -428,17 +428,35 @@ async function createFromIntake(userId, projectId) {
       for (const act of activities) {
         switch (act.type) {
 
-          // ── Management → A/A1 Project Coordinator ──────────────
-          // Calculator: applicant = rate_applicant × months, each partner = rate_partner × months
+          // ── Management → A/A1 Personnel by worker category ───────────
+          // Same per-worker-profile model as IO: each row in
+          // activity_management_staff → one A.A1 cost line of days × profile
+          // daily rate. Falls back to the legacy flat-rate model only when
+          // no new staff rows exist (very old projects pre-migration 108).
           case 'mgmt': {
-            const [mgmt] = await conn.query('SELECT * FROM activity_management WHERE activity_id = ?', [act.id]);
-            if (mgmt[0]) {
-              const months = proj.duration_months || 24;
-              for (const p of partners) {
-                const benId = partnerToBen[p.id];
+            const [staff] = await conn.query('SELECT * FROM activity_management_staff WHERE activity_id = ?', [act.id]);
+            if (staff.length) {
+              for (const s of staff) {
+                const benId = partnerToBen[s.partner_id];
                 if (!benId) continue;
-                const monthlyRate = p.role === 'applicant' ? Number(mgmt[0].rate_applicant) : Number(mgmt[0].rate_partner);
-                await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', 'Project Coordinator', months, monthlyRate);
+                const days = Number(s.days) || 0;
+                if (days <= 0) continue;
+                const wr = resolveWorkerRate(s.worker_category);
+                const rate = wr ? Number(wr.rate) : 0;
+                const lineItem = wr ? mapWorkerToLineItem(wr.category) : 'Project Coordinator';
+                await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', lineItem, days, rate);
+              }
+            } else {
+              // Legacy fallback (old projects with rate_applicant/rate_partner).
+              const [mgmt] = await conn.query('SELECT * FROM activity_management WHERE activity_id = ?', [act.id]);
+              if (mgmt[0]) {
+                const months = proj.duration_months || 24;
+                for (const p of partners) {
+                  const benId = partnerToBen[p.id];
+                  if (!benId) continue;
+                  const monthlyRate = p.role === 'applicant' ? Number(mgmt[0].rate_applicant) : Number(mgmt[0].rate_partner);
+                  await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', 'Project Coordinator', months, monthlyRate);
+                }
               }
             }
             break;

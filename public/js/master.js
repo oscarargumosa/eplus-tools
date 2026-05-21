@@ -887,6 +887,38 @@
           <div class="flex items-center gap-2 flex-wrap justify-end">
             <button onclick="Master._seedFromMaster('${esc(doc.id)}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all" title="Copia el contenido del Master a cada campo sin llamar al LLM (gratis, instantáneo)"><span class="material-symbols-outlined text-sm">content_copy</span>Rellenar desde Master (sin IA)</button>
             <button onclick="Master._recompressAll('${esc(doc.id)}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors" title="Re-genera cada campo con IA (cuesta dinero, 2-5 min)"><span class="material-symbols-outlined text-sm">refresh</span>Re-comprimir con IA</button>
+            <div class="flex flex-col gap-0.5">
+              <label for="master-export-lang" class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant">Idioma descarga</label>
+              <select id="master-export-lang" class="px-2 py-1.5 rounded-lg bg-white border border-outline-variant text-on-surface text-xs focus:border-primary outline-none">
+                <option value="">Mismo que trabajo</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+                <option value="ro">Română</option>
+                <option value="el">Ελληνικά</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="fi">Suomi</option>
+                <option value="sv">Svenska</option>
+                <option value="hu">Magyar</option>
+                <option value="bg">Български</option>
+                <option value="hr">Hrvatski</option>
+                <option value="sk">Slovenčina</option>
+                <option value="sl">Slovenščina</option>
+                <option value="et">Eesti</option>
+                <option value="lv">Latviešu</option>
+                <option value="lt">Lietuvių</option>
+                <option value="is">Íslenska</option>
+                <option value="no">Norsk</option>
+                <option value="sr">Srpski</option>
+                <option value="tr">Türkçe</option>
+              </select>
+            </div>
             <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
           </div>
         </div>
@@ -1071,7 +1103,7 @@
           </table>
         </div>
         <div class="px-3 py-2 bg-surface-container-lowest text-[10px] text-on-surface-variant italic">
-          Cálculo: IO days + mobility person-days + 10% mgmt overhead, dividido entre 22 días/mes. WP-leader marcado en <strong class="text-primary">bold</strong>.
+          Cálculo: PM = A.Personnel € / (tarifa-día del rol × 22). Cada rol usa su propia tarifa (Manager / Profesional / Técnico / Auxiliar), no una media. WP-leader marcado en <strong class="text-primary">bold</strong>.
         </div>
       </div>
     `;
@@ -1272,8 +1304,10 @@
               </tr>
             </thead>
             <tbody>
-              ${rowsWithMoney.map(r => `<tr class="border-t border-outline-variant/10">
-                <td class="px-1.5 py-1.5 text-on-surface whitespace-nowrap">${esc(r.acronym || r.name || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}</td>
+              ${rowsWithMoney.map(r => {
+                const roles = Array.isArray(r.by_role) ? r.by_role.filter(x => Number(x.a_personnel) > 0) : [];
+                const mainRow = `<tr class="border-t border-outline-variant/10">
+                <td class="px-1.5 py-1.5 text-on-surface whitespace-nowrap font-semibold">${esc(r.acronym || r.name || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}</td>
                 ${numCell(r.person_months)}
                 ${numCell(r.a_personnel)}
                 ${numCell(r.b_subcontracting)}
@@ -1286,7 +1320,15 @@
                 ${numCell(r.d1_third_parties)}
                 ${numCell(r.e_indirect)}
                 <td class="px-1.5 py-1.5 text-right font-mono font-bold text-[10.5px]">${fmt(r.total)}</td>
-              </tr>`).join('')}
+              </tr>`;
+                const subRows = roles.map(rr => `<tr class="border-t border-outline-variant/5 bg-surface-container-lowest/50 text-on-surface-variant">
+                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${esc(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmt(rr.rate)} €/día)</span>` : ' <span class="text-[9px] text-amber-700">(sin tarifa)</span>'}</td>
+                ${numCell(rr.person_months)}
+                ${numCell(rr.a_personnel)}
+                <td colspan="10" class="px-1.5 py-0.5"></td>
+              </tr>`).join('');
+                return mainRow + subRows;
+              }).join('')}
               <tr class="border-t-2 border-outline-variant/30 bg-surface-container-low font-bold">
                 <td class="px-1.5 py-1.5 text-on-surface uppercase text-[10px]">Total</td>
                 ${numCell(totals.pm, {bold:true})}
@@ -1305,7 +1347,7 @@
             </tbody>
           </table>
         </div>
-        <div class="px-3 py-1.5 bg-surface-container-lowest text-[10px] text-on-surface-variant italic">Indirect ${budget.indirect_pct || 0}% sobre directos · datos del Calculator/Designer · PM = Person-Months (IO + mobility + 10% mgmt overhead).</div>
+        <div class="px-3 py-1.5 bg-surface-container-lowest text-[10px] text-on-surface-variant italic">Indirect ${budget.indirect_pct || 0}% sobre directos · datos del Calculator/Designer · PM = A.Personnel € / (tarifa-día del rol × 22) — un PM por rol con su tarifa propia.</div>
       </div>
     `;
   }
@@ -2029,9 +2071,14 @@
 
   async function _downloadFormDocx(projectId) {
     if (!projectId) { showToast('Falta project_id', '', 'error'); return; }
+    const targetLang = (document.getElementById('master-export-lang')?.value || '').trim();
     try {
+      if (targetLang) {
+        showToast('Traduciendo y generando…', 'Puede tardar 1-3 min', 'info');
+      }
       const token = (typeof API !== 'undefined' && API.getToken) ? API.getToken() : '';
-      const res = await fetch(`/v1/exporter/projects/${projectId}/form-part-b.docx`, {
+      const url = `/v1/exporter/projects/${projectId}/form-part-b.docx${targetLang ? `?lang=${encodeURIComponent(targetLang)}` : ''}`;
+      const res = await fetch(url, {
         headers: token ? { 'Authorization': 'Bearer ' + token } : {},
         credentials: 'include',
       });
@@ -2041,13 +2088,14 @@
         return;
       }
       const blob = await res.blob();
-      const url = URL.createObjectURL(blob);
+      const objUrl = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url;
-      a.download = `Form_Part_B_${projectId.substring(0,8)}.docx`;
+      a.href = objUrl;
+      const suffix = targetLang ? `_${targetLang}` : '';
+      a.download = `Form_Part_B_${projectId.substring(0,8)}${suffix}.docx`;
       document.body.appendChild(a); a.click(); a.remove();
-      URL.revokeObjectURL(url);
-      showToast('Form Part B descargado', '', 'success');
+      URL.revokeObjectURL(objUrl);
+      showToast('Form Part B descargado', targetLang ? `Traducido a ${targetLang}` : '', 'success');
     } catch (e) {
       showToast('Error al descargar', e.message || String(e), 'error');
     }

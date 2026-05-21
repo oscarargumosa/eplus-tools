@@ -28,6 +28,9 @@ router.post('/mine/logo', auth, uploadLogo.single('logo'), ctrl.uploadLogo);
 /* ── ORS lookup (prefill new-org form) ───────────────────────── */
 router.post('/ors-lookup', auth, ctrl.orsLookup);
 
+/* ── Adopt entity from directory (Intake consortium lupa) ───── */
+router.post('/from-entity', auth, ctrl.fromEntity);
+
 /* ── Coords (self-geolocate / pin manual) ───────────────────── */
 router.patch('/:id/coords', auth, ctrl.updateCoords);
 

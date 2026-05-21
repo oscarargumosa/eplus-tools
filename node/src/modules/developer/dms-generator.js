@@ -37,9 +37,70 @@
 const db = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
 const ai = require('../../utils/ai');
-const { seedWpTasksFromProject } = require('./model');
+const { seedWpTasksFromProject, syncWpTaskLeadersFromProjectTasks } = require('./model');
 
 const HARD_CAP = 15;
+const HARD_MIN = 8;
+const DEFAULT_TARGET = 15;
+
+/**
+ * Per-WP deliverable quota derived from non-mgmt activities + a fixed
+ * management-summary slot in WP1.
+ *
+ * @param ctx  Loaded project context from _loadProjectContext.
+ * @param targetCount  User-requested total deliverables (clamped to [8, 15]).
+ * @returns { target, quota: { [wp_id]: count }, mgmtSlotWpId: string|null }
+ */
+function _computeQuota(ctx, targetCount) {
+  const target = Math.max(HARD_MIN, Math.min(HARD_CAP, Number(targetCount) || DEFAULT_TARGET));
+  const wps = ctx.wps || [];
+  const acts = ctx.activities || [];
+
+  // Count non-mgmt activities per WP.
+  const nonMgmtByWp = {};
+  for (const a of acts) {
+    if (a.type === 'mgmt') continue;
+    nonMgmtByWp[a.wp_id] = (nonMgmtByWp[a.wp_id] || 0) + 1;
+  }
+  const totalNonMgmt = Object.values(nonMgmtByWp).reduce((s, n) => s + n, 0);
+
+  // WP1 receives a fixed slot for the management-summary deliverable
+  // (only if there are mgmt activities in WP1 — otherwise it's pointless).
+  const wp1 = wps[0] || null;
+  const wp1HasMgmt = wp1 ? acts.some(a => a.wp_id === wp1.id && a.type === 'mgmt') : false;
+  const mgmtSlot = (wp1 && wp1HasMgmt) ? 1 : 0;
+  const remaining = Math.max(0, target - mgmtSlot);
+
+  // Proportional allocation of the remaining budget, with min 1 per WP.
+  const quota = {};
+  for (const wp of wps) {
+    const c = nonMgmtByWp[wp.id] || 0;
+    const raw = totalNonMgmt > 0 ? Math.round((remaining * c) / totalNonMgmt) : 0;
+    quota[wp.id] = Math.max(1, raw);
+  }
+  if (wp1 && mgmtSlot) quota[wp1.id] = (quota[wp1.id] || 0) + mgmtSlot;
+
+  // Adjust residual so the sum equals target exactly. Trim from the WP with
+  // the most slots first; pad onto the WP with the most non-mgmt activities.
+  let sum = Object.values(quota).reduce((s, n) => s + n, 0);
+  let safety = 50;
+  while (sum > target && safety-- > 0) {
+    const sorted = wps.slice().sort((a, b) => (quota[b.id] || 0) - (quota[a.id] || 0));
+    const wp = sorted[0];
+    const min = (wp1 && wp.id === wp1.id && mgmtSlot) ? 1 + mgmtSlot : 1;
+    if ((quota[wp.id] || 0) > min) { quota[wp.id]--; sum--; }
+    else break;
+  }
+  safety = 50;
+  while (sum < target && safety-- > 0) {
+    const sorted = wps.slice().sort((a, b) => (nonMgmtByWp[b.id] || 0) - (nonMgmtByWp[a.id] || 0));
+    const wp = sorted[0];
+    quota[wp.id] = (quota[wp.id] || 0) + 1;
+    sum++;
+  }
+
+  return { target, quota, mgmtSlotWpId: mgmtSlot ? wp1.id : null };
+}
 const MAX_REPAIR_ATTEMPTS = 2;
 const PASS1_TOKENS = 8000;
 const PASS2_TOKENS = 8000;
@@ -124,8 +185,16 @@ async function _loadProjectContext(projectId, userId) {
     await seedWpTasksFromProject(row.id);
   }
 
+  // Propagate leader assignments saved in *Escribir → Tareas* (project_tasks)
+  // to wp_tasks rows that still have NULL lead_partner_id. Without this, the
+  // deterministic leader rule below falls back to the WP leader even when
+  // the user already assigned a specific partner to the originating task.
+  try { await syncWpTaskLeadersFromProjectTasks(projectId); }
+  catch (e) { console.warn('[dms-generator] leader sync skipped:', e?.message || e); }
+
   const [tasks] = await db.execute(
     `SELECT t.id, t.work_package_id, t.code, t.title, t.description, t.sort_order,
+            t.lead_partner_id,
             wp.code AS wp_code
        FROM wp_tasks t
        JOIN work_packages wp ON wp.id = t.work_package_id
@@ -170,9 +239,14 @@ async function _loadProjectContext(projectId, userId) {
 // Pass 1 — Structural plan
 // ───────────────────────────────────────────────────────────────────
 
-function _buildPass1Prompt(ctx) {
+function _buildPass1Prompt(ctx, opts) {
   const { project, partners, wps, tasks, activities, intake, programmeHint } = ctx;
   const duration = project.duration_months || 24;
+  const quotaInfo = opts && opts.quotaInfo ? opts.quotaInfo : _computeQuota(ctx, DEFAULT_TARGET);
+  const quotaLines = wps.map(wp => {
+    const isWp1Mgmt = quotaInfo.mgmtSlotWpId === wp.id;
+    return `  - WP_ID="${wp.id}" (${wp.code}): EXACTLY ${quotaInfo.quota[wp.id] || 0} deliverables${isWp1Mgmt ? ' (including 1 management-summary deliverable that groups ALL project_management tasks + the kick-off meeting task)' : ''}`;
+  }).join('\n');
 
   const partnerLines = partners.map(p =>
     `  - partner_id="${p.id}" | ${p.name || p.legal_name} (${p.country || '?'}) [${p.role}]`
@@ -219,14 +293,16 @@ ${actLines}`;
 You receive the FULL project (all WPs, all tasks, all activities with months, all partners). You produce ONE coherent JSON plan covering the whole project. This is structural only; copywriting comes later.
 
 HARD CONSTRAINTS — violating any is a failure:
-1. Total deliverables ≤ ${HARD_CAP}.
-2. Every deliverable cites at least one task_id from the provided TASKS list. You may group several tasks into one deliverable when they share an output.
-3. due_month of a deliverable ≥ the latest end_month of its source activities for that WP, AND within the WP's [duration_from_month, duration_to_month] range.
-4. Every milestone EITHER closes one deliverable (deliverable_id present) OR is one of two allowed special MS: kickoff (M1, WP1) and final-closure (M${duration}, last WP). No other free-floating milestones.
-5. Milestones are numbered MS1, MS2, … globally with NO gaps, ordered by due_month ascending.
-6. Lead partner distribution: the coordinator (role='applicant') leads ≤ 50% of deliverables. Distribute the rest by partner expertise / country relevance.
-7. ≥ 1 dissemination_level='PU' deliverable in the dissemination WP.
+1. Total deliverables = EXACTLY ${quotaInfo.target}. Per-WP quota (mandatory, NO deviation allowed):
+${quotaLines}
+2. Every deliverable cites at least one task_id from the provided TASKS list of the SAME WP. You MUST group several tasks under one deliverable so the quota fits.
+3. ZERO ORPHAN TASKS. Every task_id in the input MUST appear in at least one deliverable.task_ids array. Tasks are grouped naturally: a single deliverable is typically a report or output evidencing several related tasks.
+4. due_month of a deliverable ≥ the latest end_month of its source activities for that WP, AND within the WP's [duration_from_month, duration_to_month] range.
+5. Every milestone EITHER closes one deliverable (deliverable_id present) OR is one of two allowed special MS: kickoff (M1, WP1) and final-closure (M${duration}, last WP). No other free-floating milestones.
+6. Milestones are numbered MS1, MS2, … globally with NO gaps, ordered by due_month ascending.
+7. ≥ 1 dissemination_level='PU' deliverable in the dissemination/communication WP.
 8. No two deliverables with the same code.
+9. Lead partner assignment is handled by a downstream deterministic rule — you may propose any, it will be overridden by the rule (task-leader consensus → WP leader → coordinator).
 
 PROGRAMME HINT: ${programmeHint}.
 
@@ -430,11 +506,53 @@ Score now. Reminder: dissemination_level codes (PU, SEN, R-UE/EU-R, C-UE/EU-C, S
 // Deterministic validator + auto-repair
 // ───────────────────────────────────────────────────────────────────
 
-function _validateAndRepair(plan, ctx) {
+/**
+ * Apply the agreed deliverable-leader rule.
+ * @returns partner_id or null when nothing resolves (caller will use last-resort fallback).
+ */
+function _resolveDeliverableLeader(d, ctx) {
+  const { taskById, wpById, coordinator, partnerById } = ctx;
+  // 1) Consensus among linked tasks: all task leaders identical → use that partner.
+  const taskLeaders = (d.task_ids || [])
+    .map(id => taskById[id]?.lead_partner_id)
+    .filter(pid => pid && partnerById[pid]);
+  if (taskLeaders.length) {
+    const allSame = taskLeaders.every(pid => pid === taskLeaders[0]);
+    if (allSame) return taskLeaders[0];
+  }
+  // 2) WP leader.
+  const wp = wpById[d.wp_id];
+  if (wp && wp.leader_id && partnerById[wp.leader_id]) return wp.leader_id;
+  // 3) Project coordinator.
+  if (coordinator && partnerById[coordinator.id]) return coordinator.id;
+  return null;
+}
+
+/**
+ * Milestones inherit responsibility from their linked deliverable when present;
+ * otherwise fall back to WP leader → coordinator.
+ */
+function _resolveMilestoneLeader(m, ctx, plannedDeliverableByCode) {
+  const { wpById, coordinator, partnerById } = ctx;
+  // 1) Linked deliverable → use its (already resolved) leader.
+  if (m.deliverable_id_ref) {
+    const d = plannedDeliverableByCode[m.deliverable_id_ref];
+    if (d && d.lead_partner_id && partnerById[d.lead_partner_id]) return d.lead_partner_id;
+  }
+  // 2) WP leader.
+  const wp = wpById[m.wp_id];
+  if (wp && wp.leader_id && partnerById[wp.leader_id]) return wp.leader_id;
+  // 3) Project coordinator.
+  if (coordinator && partnerById[coordinator.id]) return coordinator.id;
+  return null;
+}
+
+function _validateAndRepair(plan, ctx, opts) {
   const errors = [];
   const fixes = [];
   const { partners, wps, tasks, activities } = ctx;
   const duration = ctx.project.duration_months || 24;
+  const quotaInfo = opts && opts.quotaInfo ? opts.quotaInfo : _computeQuota(ctx, DEFAULT_TARGET);
 
   const partnerById = Object.fromEntries(partners.map(p => [p.id, p]));
   const taskById    = Object.fromEntries(tasks.map(t => [t.id, t]));
@@ -458,9 +576,26 @@ function _validateAndRepair(plan, ctx) {
     return { ok: false, errors, fixes, plan };
   }
 
-  // Cap
+  // Hard cap (absolute)
   if (plan.deliverables.length > HARD_CAP) {
-    errors.push({ field: 'deliverables', error: `count ${plan.deliverables.length} exceeds cap ${HARD_CAP}` });
+    errors.push({ field: 'deliverables', error: `count ${plan.deliverables.length} exceeds absolute cap ${HARD_CAP}` });
+  }
+  // Total target
+  if (plan.deliverables.length !== quotaInfo.target) {
+    errors.push({ field: 'deliverables', error: `count ${plan.deliverables.length} != target ${quotaInfo.target}` });
+  }
+  // Per-WP quota
+  const deliveriesByWp = {};
+  for (const d of plan.deliverables) {
+    if (!d.wp_id) continue;
+    deliveriesByWp[d.wp_id] = (deliveriesByWp[d.wp_id] || 0) + 1;
+  }
+  for (const wp of wps) {
+    const expected = quotaInfo.quota[wp.id] || 0;
+    const got = deliveriesByWp[wp.id] || 0;
+    if (got !== expected) {
+      errors.push({ field: 'wp_quota', error: `WP ${wp.code}: expected ${expected} deliverables, got ${got}` });
+    }
   }
 
   // Validate each
@@ -502,33 +637,51 @@ function _validateAndRepair(plan, ctx) {
       }
     }
 
-    if (!partnerById[d.lead_partner_id]) {
+    // ── Deterministic deliverable-leader rule ──────────────────────
+    // Regla (acordada con Oscar):
+    //   1) Si todas las tasks vinculadas (d.task_ids) comparten el mismo líder
+    //      → ese partner lidera la deliverable.
+    //   2) Si no hay consenso (o no hay tasks con líder) → líder del WP.
+    //   3) Si el WP no tiene líder asignado → coordinador del proyecto.
+    // Sobrescribe la elección de la IA siempre que la regla dé un resultado
+    // diferente — así el responsable queda predecible y libre de ambigüedad.
+    const ruleLeader = _resolveDeliverableLeader(d, { taskById, wpById, coordinator, partnerById });
+    if (ruleLeader && ruleLeader !== d.lead_partner_id) {
+      fixes.push({ code: d.code, field: 'lead_partner_id', from: d.lead_partner_id, to: ruleLeader, reason: 'rule: task-lead / WP-leader / coordinator' });
+      d.lead_partner_id = ruleLeader;
+    } else if (!partnerById[d.lead_partner_id]) {
+      // Rule couldn't resolve (no tasks, no WP leader, no coordinator). Last-resort fallback.
       const fallback = coordinator?.id || partners[0]?.id || null;
-      fixes.push({ code: d.code, field: 'lead_partner_id', from: d.lead_partner_id, to: fallback, reason: 'invalid partner' });
+      fixes.push({ code: d.code, field: 'lead_partner_id', from: d.lead_partner_id, to: fallback, reason: 'last-resort fallback' });
       d.lead_partner_id = fallback;
     }
   }
 
-  // Lead concentration: redistribute if coordinator > 50%
-  if (coordinator && plan.deliverables.length >= 4) {
-    const cooLed = plan.deliverables.filter(d => d.lead_partner_id === coordinator.id);
-    const maxAllowed = Math.ceil(plan.deliverables.length * 0.5);
-    if (cooLed.length > maxAllowed) {
-      const others = partners.filter(p => p.id !== coordinator.id);
-      // Move excess deliverables (prefer content/dissemination ones — those with PU level)
-      const movable = cooLed
-        .filter(d => d.dissemination_level === 'PU')
-        .sort((a, b) => a.due_month - b.due_month);
-      let toMove = cooLed.length - maxAllowed;
-      let i = 0;
-      for (const d of movable) {
-        if (toMove <= 0) break;
-        const newLead = others[i % others.length];
-        if (!newLead) break;
-        fixes.push({ code: d.code, field: 'lead_partner_id', from: d.lead_partner_id, to: newLead.id, reason: 'redistribute coordinator concentration' });
-        d.lead_partner_id = newLead.id;
-        toMove--; i++;
+  // ── Zero orphan tasks (auto-repair) ──
+  // Every wp_task must appear in at least one deliverable.task_ids of the
+  // same WP. Auto-assign each orphan to the deliverable in its WP whose
+  // due_month is the closest match (preferring later/equal months).
+  const citedTaskIds = new Set();
+  for (const d of plan.deliverables) {
+    for (const tid of (d.task_ids || [])) citedTaskIds.add(tid);
+  }
+  const orphanTasks = tasks.filter(t => !citedTaskIds.has(t.id));
+  for (const t of orphanTasks) {
+    // Prefer a deliverable in the same WP. Among those, the one with the
+    // largest due_month (because deliverables typically close their tasks).
+    const candidates = plan.deliverables.filter(d => d.wp_id === t.work_package_id);
+    let target = null;
+    if (candidates.length) {
+      target = candidates.slice().sort((a, b) => (b.due_month || 0) - (a.due_month || 0))[0];
+    }
+    if (target) {
+      target.task_ids = Array.isArray(target.task_ids) ? target.task_ids : [];
+      if (!target.task_ids.includes(t.id)) {
+        target.task_ids.push(t.id);
+        fixes.push({ code: target.code, field: 'task_ids', from: '(orphan)', to: t.code || t.id, reason: `orphan task ${t.code || ''} auto-assigned to closest D in WP` });
       }
+    } else {
+      errors.push({ task_id: t.id, error: `orphan task "${t.code || t.id}" — no deliverable in WP to attach it to` });
     }
   }
 
@@ -574,9 +727,17 @@ function _validateAndRepair(plan, ctx) {
       errors.push({ code: m.code, error: `unknown kind '${m.kind}'` });
     }
 
-    if (!partnerById[m.lead_partner_id]) {
+    // ── Deterministic milestone-leader rule ────────────────────────
+    // Misma filosofía que en deliverables: si la milestone cierra una
+    // deliverable concreta, hereda su líder; si no, líder del WP; si no,
+    // coordinador del proyecto.
+    const ruleMsLeader = _resolveMilestoneLeader(m, { wpById, coordinator, partnerById }, dByCode);
+    if (ruleMsLeader && ruleMsLeader !== m.lead_partner_id) {
+      fixes.push({ code: m.code, field: 'lead_partner_id', from: m.lead_partner_id, to: ruleMsLeader, reason: 'rule: linked-deliverable / WP-leader / coordinator' });
+      m.lead_partner_id = ruleMsLeader;
+    } else if (!partnerById[m.lead_partner_id]) {
       const fallback = coordinator?.id || partners[0]?.id || null;
-      fixes.push({ code: m.code, field: 'lead_partner_id', from: m.lead_partner_id, to: fallback, reason: 'invalid partner' });
+      fixes.push({ code: m.code, field: 'lead_partner_id', from: m.lead_partner_id, to: fallback, reason: 'last-resort fallback' });
       m.lead_partner_id = fallback;
     }
   }
@@ -758,7 +919,7 @@ async function _persist(projectId, userId, plan, copy, critic, ctx) {
  * Generate a preview (no persistence). Returns the validated plan,
  * pretty copy, validator report and EACEA critic verdict.
  */
-async function generatePreview(projectId, userId) {
+async function generatePreview(projectId, userId, opts) {
   const ctx = await _loadProjectContext(projectId, userId);
   if (!ctx.wps.length) {
     const err = new Error('Project has no work packages');
@@ -769,12 +930,16 @@ async function generatePreview(projectId, userId) {
     err.status = 400; throw err;
   }
 
+  // Compute the per-WP deliverable quota up-front; reused for prompt + validator.
+  const quotaInfo = _computeQuota(ctx, opts && opts.targetCount);
+  const valOpts = { quotaInfo };
+
   // ── Pass 1: structural plan ──
-  const p1 = _buildPass1Prompt(ctx);
+  const p1 = _buildPass1Prompt(ctx, valOpts);
   let plan = await _callAndParse(p1.system, p1.user, PASS1_TOKENS, 'plan', projectId, userId);
 
   // Validate + auto-repair
-  let v = _validateAndRepair(plan, ctx);
+  let v = _validateAndRepair(plan, ctx, valOpts);
 
   // Surgical retry if hard errors remain. Pass the canonical UUID lists
   // again so the AI cannot keep substituting codes for ids.
@@ -801,7 +966,7 @@ ${JSON.stringify(v.errors, null, 2)}
 
 Return the corrected JSON now.`;
     plan = await _callAndParse(repairSystem, repairUser, PASS1_TOKENS, `plan-repair-${attempts}`, projectId, userId);
-    v = _validateAndRepair(plan, ctx);
+    v = _validateAndRepair(plan, ctx, valOpts);
   }
 
   if (!v.ok) {
@@ -855,6 +1020,8 @@ Return the corrected JSON now.`;
     validator: { fixes: v.fixes, repair_attempts: attempts },
     critic,
     cap: HARD_CAP,
+    target: quotaInfo.target,
+    quota_by_wp: ctx.wps.map(wp => ({ wp_id: wp.id, code: wp.code, count: quotaInfo.quota[wp.id] || 0 })),
   };
 }
 
@@ -870,8 +1037,13 @@ async function applyPreview(projectId, userId, payload) {
     err.status = 400; throw err;
   }
 
-  // Re-validate before persist (defensive — clients may have tampered)
-  const v = _validateAndRepair(payload.plan, ctx);
+  // Re-validate before persist using the same per-WP quota that was used
+  // for the preview. Infer the target from the plan's own deliverable count
+  // (clamped to [HARD_MIN, HARD_CAP]) so re-validation aligns with what the
+  // user accepted.
+  const inferredTarget = payload.plan.deliverables?.length || DEFAULT_TARGET;
+  const quotaInfo = _computeQuota(ctx, inferredTarget);
+  const v = _validateAndRepair(payload.plan, ctx, { quotaInfo });
   if (!v.ok) {
     const err = new Error(`Plan failed re-validation: ${JSON.stringify(v.errors)}`);
     err.status = 400; throw err;

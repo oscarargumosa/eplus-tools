@@ -692,7 +692,8 @@ exports.getDeliverableSummary = async (req, res, next) => {
 // Runs the 3-pass holistic generator and returns a preview without persisting.
 exports.dmsPreviewV2 = async (req, res, next) => {
   try {
-    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id);
+    const targetCount = Number((req.body && req.body.target_count) || 0) || null;
+    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id, { targetCount });
     res.json({ ok: true, data });
   } catch (err) { next(err); }
 };

@@ -363,13 +363,13 @@ function buildPlaceholders(ctx) {
 
 // ── Estimated budget — Resources (project-wide) ────────────────────────
 //
-// El template parcheado tiene:
+// El template parcheado tiene 15 grid-columns, una por concepto del EACEA:
 //   {#summary_by_partner}{sbp_acronym} {sbp_pm} {sbp_a} {sbp_b} {sbp_travels}
-//     {sbp_persons} {sbp_c1c} {sbp_c2} {sbp_c3} {sbp_d_total} {sbp_d1}
-//     {sbp_indirect} {sbp_subtotal} {sbp_total}{/summary_by_partner}
-//   Total {tot_pm} {tot_a} {tot_b} {tot_travels} {tot_persons} {tot_c1c}
-//     {tot_c2} {tot_c3} {tot_d_total} {tot_d1} {tot_indirect}
-//     {tot_subtotal} {tot_total}
+//     {sbp_persons} {sbp_c1a} {sbp_c1b} {sbp_c1c} {sbp_c2} {sbp_c3}
+//     {sbp_grants} {sbp_d1} {sbp_indirect} {sbp_total}{/summary_by_partner}
+//   Total {tot_pm} {tot_a} {tot_b} {tot_travels} {tot_persons} {tot_c1a}
+//     {tot_c1b} {tot_c1c} {tot_c2} {tot_c3} {tot_grants} {tot_prizes}
+//     {tot_d1} {tot_indirect} {tot_total}
 //
 // Construimos el array summary_by_partner agregando los totales por partner
 // sobre todos los WPs.
@@ -423,7 +423,7 @@ function buildSummaryByPartner(ctx) {
     return (a.acronym || '').localeCompare(b.acronym || '');
   });
 
-  // Loop rows (1 por partner)
+  // Loop rows (1 por partner) — una columna por concepto EACEA (sin subtotales).
   const summary_by_partner = partnersList.map(p => ({
     sbp_acronym:  p.acronym + (p.is_coordinator ? ' (coord.)' : ''),
     sbp_pm:       fmtPm(p.pm),
@@ -431,13 +431,14 @@ function buildSummaryByPartner(ctx) {
     sbp_b:        fmtEur(p.b),
     sbp_travels:  fmtInt(p.travels),
     sbp_persons:  fmtInt(p.persons),
-    sbp_c1c:      fmtEur(p.c1c + p.c1a + p.c1b_accom), // C.1 subtotal (subsistence + travel + accom)
+    sbp_c1a:      fmtEur(p.c1a),
+    sbp_c1b:      fmtEur(p.c1b_accom),
+    sbp_c1c:      fmtEur(p.c1c),
     sbp_c2:       fmtEur(p.c2),
     sbp_c3:       fmtEur(p.c3),
-    sbp_d_total:  fmtEur(p.d1),  // D total = D1 (no hay D2)
+    sbp_grants:   '', // # grants — no lo trackeamos
     sbp_d1:       fmtEur(p.d1),
     sbp_indirect: fmtEur(p.indirect),
-    sbp_subtotal: fmtEur(p.total - p.indirect), // subtotal directos
     sbp_total:    fmtEur(p.total),
   }));
 
@@ -456,13 +457,15 @@ function buildSummaryByPartner(ctx) {
     tot_b:        fmtEur(grand.b),
     tot_travels:  fmtInt(grand.travels),
     tot_persons:  fmtInt(grand.persons),
-    tot_c1c:      fmtEur(grand.c1c + grand.c1a + grand.c1b_accom),
+    tot_c1a:      fmtEur(grand.c1a),
+    tot_c1b:      fmtEur(grand.c1b_accom),
+    tot_c1c:      fmtEur(grand.c1c),
     tot_c2:       fmtEur(grand.c2),
     tot_c3:       fmtEur(grand.c3),
-    tot_d_total:  fmtEur(grand.d1),
+    tot_grants:   '',
+    tot_prizes:   '',
     tot_d1:       fmtEur(grand.d1),
     tot_indirect: fmtEur(grand.indirect),
-    tot_subtotal: fmtEur(grand.total - grand.indirect),
     tot_total:    fmtEur(grand.total),
   };
 }

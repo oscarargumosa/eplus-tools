@@ -13,6 +13,7 @@ const IntakeTasks = (() => {
   let customTasks = {};
   let savedTasks = [];
   let saveTimers = {};
+  let leaderCtx = null; // { showLeaders, partners, wps[] }
 
   function esc(s) {
     if (!s) return '';
@@ -24,12 +25,14 @@ const IntakeTasks = (() => {
     io:'intellectual_output', me:'multiplier_event', local_ws:'local_workshop',
     campaign:'dissemination', website:'website', artistic:'artistic_fees',
     equipment:'equipment', goods:'other_goods', consumables:'consumables', other:'other_costs',
+    fstp:'financial_support_third_parties',
   };
 
   const ACT_ICONS = {
     meeting:'groups', ltta:'flight_takeoff', io:'menu_book', me:'campaign',
     local_ws:'school', campaign:'share', website:'language', artistic:'palette',
     equipment:'devices', goods:'inventory_2', consumables:'eco', other:'more_horiz',
+    fstp:'volunteer_activism',
   };
 
   function findTemplate(category, subtypeLabel) {
@@ -45,9 +48,10 @@ const IntakeTasks = (() => {
   function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
 
   /* ── Main ──────────────────────────────────────────────────── */
-  async function render(el, pid) {
+  async function render(el, pid, ctx) {
     container = el;
     projectId = pid;
+    leaderCtx = ctx && ctx.showLeaders ? ctx : null;
     if (!container) return;
 
     if (!templates) {
@@ -66,7 +70,7 @@ const IntakeTasks = (() => {
         savedTasks.filter(t => t.category === 'custom').forEach(t => {
           const wi = parseInt(t.subtype) || 0;
           if (!customTasks[wi]) customTasks[wi] = [];
-          customTasks[wi].push({ id: t.id, title: t.title, description: t.description });
+          customTasks[wi].push({ id: t.id, title: t.title, description: t.description, partner_id: t.partner_id || null });
         });
       } catch (e) { /* ignore */ }
     }
@@ -151,14 +155,18 @@ const IntakeTasks = (() => {
 
       <div class="ml-7 border-l-3 pl-6 space-y-4" style="border-color:${c}25">`;
 
-    // WP1 management checklist
-    if (wi === 0) h += renderMgmt(c);
+    // Task-code counter: mirrors the seed iteration order (mgmt → activities → custom)
+    // so the codes T1.1, T1.2, … line up with wp_tasks when available.
+    let taskIdx = 0;
+
+    // WP1 management checklist (renderMgmt assigns its own codes internally)
+    if (wi === 0) h += renderMgmt(c, () => taskIdx++);
 
     // Activities → Tasks (stacked)
-    for (const act of acts) h += renderActTask(act, wi, c);
+    for (const act of acts) h += renderActTask(act, wi, c, taskIdx++);
 
     // Custom tasks
-    for (let ci = 0; ci < custs.length; ci++) h += renderCustom(custs[ci], wi, ci, c);
+    for (let ci = 0; ci < custs.length; ci++) h += renderCustom(custs[ci], wi, ci, c, taskIdx++);
 
     // Add button
     h += `
@@ -174,7 +182,7 @@ const IntakeTasks = (() => {
   }
 
   /* ── WP1 Management checklist ──────────────────────────────── */
-  function renderMgmt(c) {
+  function renderMgmt(c, advanceIdx) {
     const cat = (templates||[]).find(x => x.category === 'project_management');
     if (!cat) return '';
 
@@ -192,34 +200,164 @@ const IntakeTasks = (() => {
     for (let i = 0; i < cat.subtypes.length; i++) {
       const sub = cat.subtypes[i];
       const on = mgmtEnabled.has(sub.key);
+      const savedMgmt = on
+        ? savedTasks.find(t => t.category === 'project_management' && t.subtype === sub.key)
+        : null;
+      // Reserve a T-code slot for enabled mgmt items (they become wp_tasks).
+      const tCode = on && typeof advanceIdx === 'function' ? taskCodeFor(0, advanceIdx()) : '';
+      const leaderHtml = on
+        ? `<div class="ml-8 -mt-1 mb-1">${renderLeaderBlock(0, savedMgmt ? { partner_id: savedMgmt.partner_id } : null, savedMgmt ? `data-tid="${esc(savedMgmt.id)}"` : `data-cat="project_management" data-sub="${esc(sub.key)}" data-wi="0"`, { allPartners: true })}</div>`
+        : '';
       h += `
-        <label class="mgmt-check flex items-start gap-3 px-5 py-4 cursor-pointer transition-all hover:bg-surface-container-lowest" data-sub="${sub.key}" style="${on?`background:${c}05`:''}">
-          <div class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center transition-all ${on?'text-white shadow-sm':'border-2 border-outline-variant/40 bg-white'}" style="${on?`background:${c}`:''}">
-            ${on?'<span class="material-symbols-outlined text-xs">check</span>':''}
-          </div>
-          <input type="checkbox" class="mgmt-cb sr-only" data-sub="${sub.key}" ${on?'checked':''}>
-          <div class="flex-1 min-w-0">
-            <span class="text-xs font-bold ${on?'text-on-surface':'text-on-surface/80'}">${i+1}. ${esc(sub.label)}</span>
-            <p class="text-[11px] text-on-surface-variant mt-1 leading-relaxed">${esc(sub.description)}</p>
-          </div>
-        </label>`;
+        <div data-mgmt-row="${esc(sub.key)}" style="${on?`background:${c}05`:''}">
+          <label class="mgmt-check flex items-start gap-3 px-5 py-4 cursor-pointer transition-all hover:bg-surface-container-lowest" data-sub="${esc(sub.key)}">
+            <div class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center transition-all ${on?'text-white shadow-sm':'border-2 border-outline-variant/40 bg-white'}" style="${on?`background:${c}`:''}">
+              ${on?'<span class="material-symbols-outlined text-xs">check</span>':''}
+            </div>
+            <input type="checkbox" class="mgmt-cb sr-only" data-sub="${esc(sub.key)}" ${on?'checked':''}>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2">
+                ${tCode ? `<span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-primary/10 text-primary">${esc(tCode)}</span>` : ''}
+                <span class="text-xs font-bold ${on?'text-on-surface':'text-on-surface/80'}">${i+1}. ${esc(sub.label)}</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant mt-1 leading-relaxed">${esc(sub.description)}</p>
+            </div>
+          </label>
+          ${leaderHtml}
+        </div>`;
     }
     h += '</div></div>';
     return h;
   }
 
+  /* ── Leader/participants helpers ──────────────────────────── */
+  function wpForIndex(wi) {
+    if (!leaderCtx || !leaderCtx.wps) return null;
+    return leaderCtx.wps[wi] || null;
+  }
+  // Map a (wi, taskIndex) pair to the corresponding T-code (T1.1, T1.2, …)
+  // from wp_tasks if available, falling back to a deterministic guess so the
+  // UI never shows an empty code chip.
+  function taskCodeFor(wi, idxInWp) {
+    const wp = wpForIndex(wi);
+    if (wp && Array.isArray(wp.wp_tasks) && wp.wp_tasks[idxInWp]?.code) {
+      return wp.wp_tasks[idxInWp].code;
+    }
+    return `T${wi + 1}.${idxInWp + 1}`;
+  }
+  function eligiblePartnersFor(wi, opts) {
+    if (!leaderCtx || !leaderCtx.partners) return [];
+    // Management tasks (WP1 checklist) allow ANY project partner as leader,
+    // regardless of WP budget. For all other tasks, restrict to partners
+    // with budget > 0 in the WP.
+    if (opts && opts.allPartners) return leaderCtx.partners;
+    const wp = wpForIndex(wi);
+    if (!wp) return [];
+    const eligible = new Set(wp.eligible_partner_ids || []);
+    return leaderCtx.partners.filter(p => eligible.has(p.id));
+  }
+  function partnerName(pid) {
+    if (!leaderCtx || !leaderCtx.partners || !pid) return '';
+    const p = leaderCtx.partners.find(x => x.id === pid);
+    return p ? (p.name || p.acronym || '') : '';
+  }
+  function effectiveLeaderId(savedPartnerId, wi) {
+    // If user already chose a leader, respect it. Otherwise default to WP leader.
+    if (savedPartnerId) return savedPartnerId;
+    const wp = wpForIndex(wi);
+    return wp && wp.leader_id ? wp.leader_id : '';
+  }
+
+  /**
+   * Bloque común que muestra: líder de la WP (info) + selector de líder de
+   * la tarea + chips de participantes (derivados del presupuesto).
+   * Se renderiza al pie de cada tarjeta de tarea cuando leaderCtx está activo.
+   *
+   * @param wi              Índice del WP
+   * @param saved           Fila de project_tasks (si ya existe), o null
+   * @param leaderKeyAttrs  HTML attrs adicionales para el <select> (data-* para identificar la task al guardar)
+   */
+  function renderLeaderBlock(wi, saved, leaderKeyAttrs, opts) {
+    if (!leaderCtx) return '';
+    const allPartners = !!(opts && opts.allPartners);
+    const wp = wpForIndex(wi);
+    const eligible = eligiblePartnersFor(wi, opts);
+    const currentLead = effectiveLeaderId(saved?.partner_id, wi);
+    const wpLeaderTxt = wp && wp.leader_acronym
+      ? `<span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary" title="Líder de este Work Package"><span class="material-symbols-outlined text-[12px]">military_tech</span>WP lidera: ${esc(wp.leader_acronym)}</span>`
+      : '<span class="text-[10px] italic text-on-surface-variant/60">WP sin líder asignado</span>';
+
+    const emptyMsg = allPartners
+      ? 'Sin partners en el proyecto'
+      : 'Sin partners con presupuesto en este WP';
+    const leaderSelect = eligible.length
+      ? `<select class="task-leader-edit text-[11px] font-semibold px-2 py-1 rounded-lg border border-outline-variant/30 bg-white focus:outline-none focus:ring-2 focus:ring-primary/15" ${leaderKeyAttrs}>
+          <option value="">— Sin líder —</option>
+          ${eligible.map(p => `<option value="${esc(p.id)}" ${p.id === currentLead ? 'selected' : ''}>${esc(p.name || p.acronym || '')}</option>`).join('')}
+        </select>`
+      : `<span class="text-[10px] italic text-on-surface-variant/60">${emptyMsg}</span>`;
+
+    const partsLabel = allPartners ? 'Participantes' : 'Participantes (presupuesto)';
+    const chipTitleNonLead = allPartners
+      ? 'Participa en la tarea de gestión'
+      : 'Participa (recibe presupuesto en este WP)';
+    const partsChips = eligible.length
+      ? eligible.map(p => {
+          const isLead = p.id === currentLead;
+          const cls = isLead
+            ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
+            : 'bg-primary/5 text-primary border-primary/15';
+          const icon = isLead ? 'workspace_premium' : 'check_circle';
+          return `<span class="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 rounded border ${cls}" title="${isLead ? 'Líder de la task' : chipTitleNonLead}">
+            <span class="material-symbols-outlined text-[11px]">${icon}</span>${esc(p.name || p.acronym || '')}
+          </span>`;
+        }).join('')
+      : '';
+    const emptyParticipantsMsg = allPartners
+      ? 'Añade partners al proyecto para activar esta lista.'
+      : 'Asigna importes en Diseñar para activar partners.';
+
+    return `
+      <div class="mt-3 pt-3 border-t border-outline-variant/15 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-on-surface-variant">Liderazgo</span>
+            ${wpLeaderTxt}
+          </div>
+          <label class="text-[10px] text-on-surface-variant block mb-0.5">${allPartners ? 'Líder de esta tarea (cualquier socio)' : 'Líder de esta tarea'}</label>
+          ${leaderSelect}
+        </div>
+        <div>
+          <div class="text-[9.5px] font-bold uppercase tracking-wider text-on-surface-variant mb-1.5">${partsLabel}</div>
+          ${partsChips
+            ? `<div class="flex flex-wrap gap-1">${partsChips}</div>`
+            : `<span class="text-[10px] italic text-on-surface-variant/60">${emptyParticipantsMsg}</span>`}
+        </div>
+      </div>`;
+  }
+
   /* ── Activity → Task (stacked, full width) ─────────────────── */
-  function renderActTask(act, wi, c) {
+  function renderActTask(act, wi, c, taskIdx) {
     const category = TYPE_MAP[act.type];
     const sub = act.subtype || '';
     const tmpl = findTemplate(category, sub);
     const icon = ACT_ICONS[act.type] || 'task';
 
-    // Find saved edited version
-    const saved = savedTasks.find(t => t.category === category && t.subtype === (tmpl?.key||'') && t.wp_id === String(wi));
-    const title = saved?.title || tmpl?.title || '';
+    // Render the body whenever we have at least a category mapping, even if
+    // the specific subtype template is missing. The fallback subKey uses
+    // the activity subtype label slug so the row persists per task instance.
+    const subKey = tmpl?.key || (sub ? sub.toLowerCase().replace(/[^a-z0-9]+/g, '_').slice(0, 60) : '');
+    const renderableBody = !!category;
+    const saved = renderableBody
+      ? savedTasks.find(t => t.category === category && t.subtype === subKey && t.wp_id === String(wi))
+      : null;
+    const title = saved?.title || tmpl?.title || act.label || '';
     const desc = saved?.description || tmpl?.description || '';
+    const headline = tmpl
+      ? `<span class="text-[10px] font-bold uppercase tracking-wider text-green-600">Tarea recomendada</span>`
+      : `<span class="text-[10px] font-bold uppercase tracking-wider text-amber-600">Tarea (sin plantilla específica — edítala libremente)</span>`;
 
+    const tCode = typeof taskIdx === 'number' ? taskCodeFor(wi, taskIdx) : '';
     return `
       <div class="rounded-2xl overflow-hidden shadow-sm" style="border:1.5px solid ${c}15">
         <!-- Activity badge -->
@@ -227,18 +365,20 @@ const IntakeTasks = (() => {
           <div class="w-7 h-7 rounded-lg flex items-center justify-center" style="background:${c}15">
             <span class="material-symbols-outlined text-sm" style="color:${c}">${icon}</span>
           </div>
+          ${tCode ? `<span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded" style="background:${c}15;color:${c}">${esc(tCode)}</span>` : ''}
           <span class="text-xs font-bold" style="color:${c}">${esc(act.label)}</span>
           ${sub ? `<span class="text-[10px] font-semibold px-2 py-0.5 rounded-full" style="background:${c}10;color:${c}">${esc(sub)}</span>` : ''}
         </div>
         <!-- Task (editable, full width) -->
         <div class="px-5 py-4 bg-white">
-          ${tmpl ? `
+          ${renderableBody ? `
             <div class="flex items-center gap-1.5 mb-2">
-              <span class="material-symbols-outlined text-xs text-green-500">task_alt</span>
-              <span class="text-[10px] font-bold uppercase tracking-wider text-green-600">Tarea recomendada</span>
+              <span class="material-symbols-outlined text-xs ${tmpl ? 'text-green-500' : 'text-amber-500'}">task_alt</span>
+              ${headline}
             </div>
-            <input type="text" class="task-title-edit w-full text-sm font-bold text-on-surface px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none transition-all mb-2" value="${esc(title)}" data-wi="${wi}" data-cat="${category}" data-sub="${tmpl?.key||''}">
-            <textarea class="task-desc-edit w-full text-xs text-on-surface-variant leading-relaxed px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none resize-vertical min-h-[80px] transition-all" rows="3" data-wi="${wi}" data-cat="${category}" data-sub="${tmpl?.key||''}">${esc(desc)}</textarea>
+            <input type="text" class="task-title-edit w-full text-sm font-bold text-on-surface px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none transition-all mb-2" value="${esc(title)}" data-wi="${wi}" data-cat="${category}" data-sub="${esc(subKey)}">
+            <textarea class="task-desc-edit w-full text-xs text-on-surface-variant leading-relaxed px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none resize-vertical min-h-[80px] transition-all" rows="3" data-wi="${wi}" data-cat="${category}" data-sub="${esc(subKey)}">${esc(desc)}</textarea>
+            ${renderLeaderBlock(wi, saved, `data-wi="${wi}" data-cat="${category}" data-sub="${esc(subKey)}"`)}
           ` : `
             <div class="py-4 text-center text-[10px] text-on-surface-variant/40">Elige un subtipo en la actividad para ver la tarea recomendada</div>
           `}
@@ -247,7 +387,8 @@ const IntakeTasks = (() => {
   }
 
   /* ── Custom task (editable + deletable) ────────────────────── */
-  function renderCustom(task, wi, ci, c) {
+  function renderCustom(task, wi, ci, c, taskIdx) {
+    const tCode = typeof taskIdx === 'number' ? taskCodeFor(wi, taskIdx) : '';
     return `
       <div class="rounded-2xl overflow-hidden shadow-sm group" style="border:1.5px solid ${c}15">
         <div class="px-5 py-2.5 flex items-center justify-between" style="background:${c}06">
@@ -255,6 +396,7 @@ const IntakeTasks = (() => {
             <div class="w-7 h-7 rounded-lg flex items-center justify-center" style="background:${c}15">
               <span class="material-symbols-outlined text-sm" style="color:${c}">edit_note</span>
             </div>
+            ${tCode ? `<span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded" style="background:${c}15;color:${c}">${esc(tCode)}</span>` : ''}
             <span class="text-xs font-bold" style="color:${c}">Tarea personalizada</span>
           </div>
           <button class="delete-custom w-7 h-7 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 hover:bg-error/10 hover:text-error text-on-surface-variant/30 transition-all" data-wi="${wi}" data-ci="${ci}" data-tid="${task.id}">
@@ -264,6 +406,7 @@ const IntakeTasks = (() => {
         <div class="px-5 py-4 bg-white">
           <input type="text" class="custom-title w-full text-sm font-bold text-on-surface px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none transition-all mb-2" value="${esc(task.title)}" placeholder="Título de la tarea..." data-tid="${task.id}">
           <textarea class="custom-desc w-full text-xs text-on-surface-variant leading-relaxed px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none resize-vertical min-h-[60px] transition-all" rows="2" placeholder="Descripción..." data-tid="${task.id}">${esc(task.description)}</textarea>
+          ${renderLeaderBlock(wi, { partner_id: task.partner_id }, `data-tid="${task.id}"`)}
         </div>
       </div>`;
   }
@@ -279,21 +422,28 @@ const IntakeTasks = (() => {
       });
     });
     container.querySelectorAll('.mgmt-cb').forEach(cb => {
-      cb.addEventListener('change', () => {
-        if (cb.checked) mgmtEnabled.add(cb.dataset.sub);
-        else mgmtEnabled.delete(cb.dataset.sub);
-        saveMgmt();
+      cb.addEventListener('change', async () => {
+        const sub = cb.dataset.sub;
+        if (cb.checked) mgmtEnabled.add(sub); else mgmtEnabled.delete(sub);
+        // Persist immediately (per-item, so partner_id assignment can chain
+        // without race with the bulk debounce).
+        await toggleMgmtItemImmediate(sub, cb.checked);
         rerender();
       });
     });
 
     container.querySelectorAll('.mgmt-toggle-all').forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', async () => {
         const cat = templates.find(x => x.category === 'project_management');
         if (!cat) return;
-        if (cat.subtypes.every(s => mgmtEnabled.has(s.key))) mgmtEnabled.clear();
-        else cat.subtypes.forEach(s => mgmtEnabled.add(s.key));
+        const enableAll = !cat.subtypes.every(s => mgmtEnabled.has(s.key));
+        if (enableAll) cat.subtypes.forEach(s => mgmtEnabled.add(s.key));
+        else mgmtEnabled.clear();
+        // Apply each toggle immediately so partner_ids on the surviving rows
+        // are preserved by the existing diff logic in saveMgmt.
         saveMgmt();
+        // Wait a tick so the debounced saveMgmt has fired by next render
+        setTimeout(rerender, 600);
         rerender();
       });
     });
@@ -325,6 +475,52 @@ const IntakeTasks = (() => {
         Calculator._applyWPTitle(wi, sel.value);
       });
     });
+
+    // Leader select (per task — works for both template tasks and custom tasks)
+    container.querySelectorAll('.task-leader-edit').forEach(sel => {
+      sel.addEventListener('change', () => saveTaskLeader(sel));
+    });
+  }
+
+  async function saveTaskLeader(sel) {
+    if (!projectId) return;
+    const newPid = sel.value || null;
+    const tid = sel.dataset.tid; // present for custom tasks AND management tasks (data-tid path)
+    if (tid) {
+      try {
+        await API.patch('/intake/tasks/' + tid, { partner_id: newPid });
+        // Update both caches so the re-render reflects the change instantly:
+        //   - savedTasks: source of truth for renderActTask / renderMgmt
+        //   - customTasks: derived cache used by renderCustom
+        const savedHit = savedTasks.find(x => x.id === tid);
+        if (savedHit) savedHit.partner_id = newPid;
+        for (const wi of Object.keys(customTasks)) {
+          const arr = customTasks[wi];
+          const ix = arr.findIndex(x => x.id === tid);
+          if (ix >= 0) { arr[ix].partner_id = newPid; break; }
+        }
+        rerender();
+      } catch (e) { Toast.show('No se pudo guardar el líder: ' + (e.message || e), 'err'); }
+      return;
+    }
+    // Template task: ensure persisted row exists, then patch partner_id
+    const cat = sel.dataset.cat, sub = sel.dataset.sub, wi = sel.dataset.wi;
+    if (!cat || !wi) return;
+    const card = sel.closest('.bg-white');
+    const title = card?.querySelector('.task-title-edit')?.value || '';
+    const desc = card?.querySelector('.task-desc-edit')?.value || '';
+    let existing = savedTasks.find(t => t.category === cat && t.subtype === sub && t.wp_id === wi);
+    try {
+      if (!existing) {
+        const res = await API.post(`/intake/projects/${projectId}/tasks`, { category: cat, subtype: sub, wp_id: wi, title, description: desc, partner_id: newPid });
+        existing = { id: res.data?.id || res.id, category: cat, subtype: sub, wp_id: wi, title, description: desc, partner_id: newPid };
+        savedTasks.push(existing);
+      } else {
+        await API.patch('/intake/tasks/' + existing.id, { partner_id: newPid });
+        existing.partner_id = newPid;
+      }
+      rerender();
+    } catch (e) { Toast.show('No se pudo guardar el líder: ' + (e.message || e), 'err'); }
   }
 
   function rerender() {
@@ -393,21 +589,80 @@ const IntakeTasks = (() => {
     }, 800);
   }
 
+  /**
+   * Create or delete a single management project_task immediately so the UI
+   * has the saved row id available right after the checkbox toggle (the
+   * leader select needs it to PATCH partner_id). Avoids the race that the
+   * old bulk debounce had.
+   */
+  async function toggleMgmtItemImmediate(subKey, enabled) {
+    if (!projectId) return;
+    try {
+      const existing = savedTasks.find(x => x.category === 'project_management' && x.subtype === subKey);
+      if (enabled) {
+        if (existing) return;
+        const tmpl = _findTemplateBySubKey('project_management', subKey);
+        const res = await API.post(`/intake/projects/${projectId}/tasks`, {
+          category: 'project_management',
+          subtype: subKey,
+          wp_id: '0',
+          title: tmpl?.title || tmpl?.label || subKey,
+          description: tmpl?.description || '',
+        });
+        savedTasks.push({
+          id: res.data?.id || res.id,
+          category: 'project_management',
+          subtype: subKey,
+          wp_id: '0',
+          title: tmpl?.title || tmpl?.label || subKey,
+          description: tmpl?.description || '',
+          partner_id: null,
+        });
+      } else {
+        if (!existing) return;
+        await API.del('/intake/tasks/' + existing.id);
+        savedTasks = savedTasks.filter(x => x.id !== existing.id);
+      }
+    } catch (e) {
+      console.error('[Tasks] toggleMgmt:', e);
+      if (typeof Toast !== 'undefined') Toast.show('Error guardando la tarea: ' + (e.message || e), 'err');
+    }
+  }
+
+  function _findTemplateBySubKey(catKey, subKey) {
+    const cat = (templates || []).find(c => c.category === catKey);
+    if (!cat) return null;
+    return cat.subtypes.find(s => s.key === subKey) || null;
+  }
+
   let mgmtTimer = null;
   function saveMgmt() {
     if (mgmtTimer) clearTimeout(mgmtTimer);
     mgmtTimer = setTimeout(async () => {
       if (!projectId) return;
       try {
-        for (const t of savedTasks.filter(x => x.category === 'project_management')) {
-          await API.del('/intake/tasks/' + t.id);
+        // Diff against current saved set: only delete deselected items and
+        // only create newly selected ones — preserves partner_id and other
+        // edits on still-enabled mgmt tasks.
+        const existing = savedTasks.filter(x => x.category === 'project_management');
+        const wanted = new Set(mgmtEnabled);
+        const existingByKey = new Map(existing.map(t => [t.subtype, t]));
+
+        // Delete subs no longer wanted
+        for (const t of existing) {
+          if (!wanted.has(t.subtype)) {
+            await API.del('/intake/tasks/' + t.id);
+          }
         }
-        savedTasks = savedTasks.filter(x => x.category !== 'project_management');
-        if (mgmtEnabled.size) {
+        savedTasks = savedTasks.filter(x => x.category !== 'project_management' || wanted.has(x.subtype));
+
+        // Create newly enabled subs
+        const toCreate = [...wanted].filter(k => !existingByKey.has(k));
+        if (toCreate.length) {
           const res = await API.post(`/intake/projects/${projectId}/tasks/generate`, {
-            activities: [...mgmtEnabled].map(k => ({ category: 'project_management', subtype: k }))
+            activities: toCreate.map(k => ({ category: 'project_management', subtype: k }))
           });
-          (res.data||[]).forEach(c => savedTasks.push(c));
+          (res.data || []).forEach(c => savedTasks.push(c));
         }
       } catch (e) { console.error('[Tasks] saveMgmt:', e); }
     }, 500);
