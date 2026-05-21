@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "906802",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TARRAGONA / AYUNTAMIENTO DE TARRAGONA",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "Convocatòria 2026_AJUTS TGN COMERÇ EN MARXA",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": "2026-06-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "74",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    }
+  ],
+  "apply_url": "https://seu.tarragona.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_TGN_SUBVENCIONS_TRAMIT",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906802",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Convocatòria de Subvenció",
+      "url": null
+    },
+    {
+      "label": "Convocatoria de Subvención (cast.)",
+      "url": null
+    },
+    {
+      "label": "Resolució signatura regidoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://aplicacions.dipta.cat/bopt/web/anuncio/345572/bases-reguladores-per-a-la-concessio-d-ajuts-per-a-l-obertura-d-establiments-comercials-a-la-ciutat-de-tarragona-ajuts-comerc-en-marxa-aprovacio-inicial-ajuntament-tarragona",
+  "text_inicio": "Des de l'endemà de la publicació de la convocatòria al BOPT",
+  "text_fin": "Fins el 30/06/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.416Z"
+}

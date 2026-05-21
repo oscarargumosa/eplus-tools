@@ -1,0 +1,72 @@
+{
+  "id": 1108361,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GRANADILLA DE ABONA",
+    "nivel3": "AYUNTAMIENTO DE GRANADILLA DE ABONA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906800",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Aprobación convocatoria para la concesión de subvenciones con destino a asociaciones de tercera edad del municipio de Granadilla de Abona que desarrollen actividades de ámbito cultural, recreativas y de ocio y tiempo libre",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "APROBACIÓN CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES CON DESTINO A ASOCIACIONES DE TERCERA EDAD DEL MUNICIPIO DE GRANADILLA DE ABONA QUE DESARROLLEN ACTIVIDADES DE ÁMBITO CULTURAL,RECREATIVAS Y DE OCIO Y TIEMPO LIBRE",
+  "urlBasesReguladoras": "HTTPS://www.bopsantacruzdetenerife.es/boletines/2024/26-6-24/26-6-24.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACIÓN EN EL BOP",
+  "textFin": "20 DÍAS HÁBILES A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACIÓN DEL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458055,
+      "descripcion": "Anuncio",
+      "nombreFic": "Anuncio.PDF",
+      "long": 110307,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458054,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución concejal delegado con FIscalización.PDF",
+      "long": 216086,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

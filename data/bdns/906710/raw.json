@@ -1,0 +1,72 @@
+{
+  "id": 1108271,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906710",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 400000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones para programaciones estables de actividades de artes visuales de carácter profesional",
+  "descripcionLeng": "Convocatòria de subvencions per a programacions estables d'activitats d'arts visuals de caràcter professional",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Segunda modificación de las bases específicas que deben regir la concesión de subvenciones para programaciones estables de actividades de artes visuales de carácter profesional (CLT055)",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9657/2148375.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-29",
+  "fechaFinSolicitud": "2026-06-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1457730,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CrrgtConvoCLT055_signed_CA.pdf",
+      "long": 129758,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1457729,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CrrgtConvoCLT055ES.pdf",
+      "long": 123060,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

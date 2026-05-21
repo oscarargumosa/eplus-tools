@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "906728",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÁCERES / INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES",
+  "nuts_codes": [
+    "ES432"
+  ],
+  "nuts_primary": "ES432",
+  "title": "BASES REGULADORAS Y CONVOCATORIA DE AYUDAS EXTRAORDINARIAS DE APOYO SOCIAL PARA CONTINGENCIAS DEL TÉRMINO MUNICIPAL DE CÁCERES PARA EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": "2026-11-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 482173.84,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906728",
+  "documents": [
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ayto-caceres.es/noticias/subvencion",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE CACERES",
+  "text_fin": "30 DE NOVIEMBRE DE 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.391Z"
+}

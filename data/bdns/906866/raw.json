@@ -1,0 +1,72 @@
+{
+  "id": 1108427,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CUBELLES",
+    "nivel3": "AYUNTAMIENTO DE CUBELLES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906866",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 DE SUBVENCIONES PARA LA REALIZACIÓN DE PROYECTOS Y/O ACTIVIDADES DEL ÁMBITO DE LA JUVENTUD",
+  "descripcionLeng": "CONVOCATÒRIA 2026 DE SUBVENCIONS PER A LA REALITZACIÓ DE PROJECTES I/O ACTIVITATS DE L’ÀMBIT DE LA JOVENTUT",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES ESPECÍFIQUES REGULADORES DE LA CONCESSIÓ DE SUBVENCIONS PER A PROJECTES I ACTIVITATS DE L’ÀMBIT DE JOVENTUT",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3926948/aprovacio-inicial-de-les-bases-especifiques-reguladores-de-la-concessio-de-subvencions-per-a-projectes-i-activitats-en-l-ambit-de-joventut-i-convocatoria-per-a-l-any-2026-ajuntament-de-cubelles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " Día siguiente a la  publicación de la convocatoria en el BOPB",
+  "textFin": " 10 días hábiles desde el día siguiente a la  publicación de la convocatoria en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458255,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Annex I Convocatòria català JOV.pdf",
+      "long": 958229,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458253,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anexo I Convocatoria castellano JOV.pdf",
+      "long": 364313,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

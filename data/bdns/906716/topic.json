@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "906716",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PAMPLONA/IRUÑA / AYUNTAMIENTO DE PAMPLONA/IRUÑA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "Convocatoria de Subvenciones en Régimen de Evaluación Individualizada para subvencionar honorarios técnicos de redacción y gestión de Planes de Intervención Global (PIG), según la sección cuarta del capítulo VI del Decreto Foral 61/2023. Año 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": "2026-10-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 135000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.9",
+      "descripcion": "Otras actividades de construcción especializada"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.pamplona.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906716",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.pamplona.es/buscadortramites.aspx?cat=3&subcat=2&pagina=0&enlace=LiConcAyudasSubvenciones",
+  "text_inicio": "Al día siguiente de su publicación en el BON",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.383Z"
+}

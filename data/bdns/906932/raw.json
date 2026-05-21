@@ -1,0 +1,96 @@
+{
+  "id": 1108493,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906932",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6824,
+  "mrr": false,
+  "descripcion": "ORDEN CONVOCATORIA PREMIOS DOLORES ESCRIBANO 2025/2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN 1900/2019 13 JUNIO M.BASES REGULAD.PREMIOS DOLORES ESCRIBANO",
+  "urlBasesReguladoras": "http://www.bocm.es/boletin/CM_Orden_BOCM/2019/06/18/BOCM-20190618-33.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DIA SIGUIENTE DE PUBLICAR EL EXTRACTO DE CONVOCATORIA EN BOCM",
+  "textFin": "DIEZ DIAS A PARTIR DEL DIA SEGUIENTE DE PUBLICAR DEL EXTRACTO DE CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458843,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  ORDEN ANONIMIZADA.pdf",
+      "long": 911017,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458844,
+      "descripcion": "Otros documentos  ORDEN 2560/2009",
+      "nombreFic": "Otros documentos  ORDEN 2560/2009.pdf",
+      "long": 79888,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458847,
+      "descripcion": "Otros documentos  ORDEN 1185/2016",
+      "nombreFic": "Otros documentos  ORDEN 1185/2016.pdf",
+      "long": 158119,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458846,
+      "descripcion": "Otros documentos  ORDEN 1625/2017",
+      "nombreFic": "Otros documentos  ORDEN 1625/2017.pdf",
+      "long": 87927,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458845,
+      "descripcion": "Otros documentos  ORDEN 1900/2019",
+      "nombreFic": "Otros documentos  ORDEN 1900/2019.pdf",
+      "long": 106697,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

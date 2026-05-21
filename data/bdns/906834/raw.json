@@ -1,0 +1,72 @@
+{
+  "id": 1108395,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VIELHA E MIJARAN",
+    "nivel3": "AYUNTAMIENTO DE VIELHA E MIJARAN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906834",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA EL OTORGAMIENTO DE SUBVENCIONES AYUNTAMIENTO DE VIELHA E MIJARAN",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    },
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES513 - Lleida"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS SUBVENCIONES AYUNTAMIENTO DE VIELHA E MIJARAN EJERCICIO 2026",
+  "urlBasesReguladoras": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/74/20267402938.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación de la convocatoria en el BOP",
+  "textFin": "30 días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458103,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20250403_Uns altres_Bases ok (5).pdf",
+      "long": 273398,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

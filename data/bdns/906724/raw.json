@@ -1,0 +1,72 @@
+{
+  "id": 1108285,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HOSPITALET DE LLOBREGAT, L'",
+    "nivel3": "AYUNTAMIENTO DE HOSPITALET DE LLOBREGAT, L'"
+  },
+  "sedeElectronica": "https://seuelectronica2.l-h.cat/siac/Publicaciones.aspx?t=SS&lang=ES-ca",
+  "codigoBDNS": "906724",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 435717,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES PARTICULARES PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA EN EL ÁMBITO DE BIENESTAR SOCIAL Y SALUD PARA EL EJERCICIO 2026.",
+  "descripcionLeng": "CONVOCATÒRIA I BASES PARTICULARS PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA EN L’ÀMBIT DE BENESTAR SOCIAL I SALUT PER A L’EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES PARTICULARES PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA EN EL ÁMBITO DE BIENESTAR SOCIAL Y SALUD PARA EL EJERCICIO 2026.",
+  "urlBasesReguladoras": "http://bop.diba.cat/anuncio/3926029/convocatoria-i-bases-particulars-per-a-la-concessio-de-subvencions-en-l-ambit-de-benestar-social-i-salut-per-a-l-exercici-economic-2026-ajuntament-de-l-hospitalet-de-llobregat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente de la publicación del extracto de la convocatoria en el BOP Barcelona",
+  "textFin": "Veinte días hábiles a contar desde el día siguiente de la publicación del extracto en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1457749,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "03. BENESTAR SOCIAL I SALUT_Acord JGL _CAT.pdf",
+      "long": 532717,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1457748,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "03. BENESTAR SOCIAL I SALUT_Acord JGL _CAS.pdf",
+      "long": 479352,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

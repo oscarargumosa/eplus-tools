@@ -1,0 +1,100 @@
+{
+  "id": 1108363,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TARRAGONA",
+    "nivel3": "AYUNTAMIENTO DE TARRAGONA"
+  },
+  "sedeElectronica": "https://seu.tarragona.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_TGN_SUBVENCIONS_TRAMIT",
+  "codigoBDNS": "906802",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatòria 2026_AJUTS TGN COMERÇ EN MARXA",
+  "descripcionLeng": "Convocatoria 2026_AYUDAS TGN COMERCIO EN MARCHA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades profesionales, científicas y técnicas",
+      "codigo": "74"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases per la concessió d'ajuts per l'obertura d'establiments comercials a la ciutat de Tarragona",
+  "urlBasesReguladoras": "https://aplicacions.dipta.cat/bopt/web/anuncio/345572/bases-reguladores-per-a-la-concessio-d-ajuts-per-a-l-obertura-d-establiments-comercials-a-la-ciutat-de-tarragona-ajuts-comerc-en-marxa-aprovacio-inicial-ajuntament-tarragona",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-30",
+  "textInicio": "Des de l'endemà de la publicació de la convocatòria al BOPT",
+  "textFin": "Fins el 30/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458068,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria de Subvención (cast.).PDF",
+      "long": 143765,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458069,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria de Subvenció.PDF",
+      "long": 154055,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458070,
+      "descripcion": "Convocatòria de Subvenció",
+      "nombreFic": "Convocatòria de Subvenció.PDF",
+      "long": 154055,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458071,
+      "descripcion": "Convocatoria de Subvención (cast.)",
+      "nombreFic": "Convocatoria de Subvención (cast.).PDF",
+      "long": 143765,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458072,
+      "descripcion": "Resolució signatura regidoria",
+      "nombreFic": "Resolució signatura regidoria.PDF",
+      "long": 141554,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

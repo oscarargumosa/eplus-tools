@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "906868",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CUENCA / DIPUTACIÓN PROVINCIAL DE CUENCA",
+  "nuts_codes": [
+    "ES423"
+  ],
+  "nuts_primary": "ES423",
+  "title": "SUBVENCIONES COOPERACIÓN INTERNACIONAL 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906868",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANUNCIO APROBACIÓN NORMAS Y CONVOCATORIA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipucuenca.es/documents/12423/560665/ORDENANZA+REGULADORA+DE+SUBVENCIONES.pdf",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP DE CUENCA",
+  "text_fin": "EL VIGÉSIMO DÍA HÁBIL CONTADO A PARTIR DEL PRIMER DÍA DE PERIODO DE SOLICITUD",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.443Z"
+}

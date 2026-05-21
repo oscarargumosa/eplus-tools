@@ -1,0 +1,72 @@
+{
+  "id": 1108412,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT JULIÀ DE RAMIS",
+    "nivel3": "AYUNTAMIENTO DE SANT JULIÀ DE RAMIS"
+  },
+  "sedeElectronica": "https://seu-e.cat/ca/web/santjuliaderamis/tramits-i-gestions",
+  "codigoBDNS": "906851",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 3226588.89,
+  "mrr": false,
+  "descripcion": "Aprobación inicial de las bases reguladoras de las ayudas municipales para actividades de ocio de verano dirigidas a niños y jóvenes con diversidad funcional",
+  "descripcionLeng": "Aprovació inicial de les bases reguladores dels ajuts municipals per a activitats de lleure d’estiu adreçades a infants i joves amb diversitat funcional",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprobación inicial de las bases reguladoras de las ayudas municipales para actividades de ocio de verano dirigidas a niños y jóvenes con diversidad funcional",
+  "urlBasesReguladoras": "https://tauler.seu-e.cat/inici?idEns=1716930008",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "LA QUE DETERMINE ANUALMENTE LA CONVOCATORIA ",
+  "textFin": "LA QUE DETERMINIE ANUALMENTE LA CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458190,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "cat.docx",
+      "long": 53423,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458189,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "cast.docx",
+      "long": 36538,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -22,7 +22,14 @@
   },
   {
     "section": "Call document and annexes:",
-    "label": "Calculator (EDIP CPA LS)",
+    "label": "Calculator (EDIP CPA LS",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/calculator_edip-cpa-ls_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": ")",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/calculator_edip-edpci-csa-ls_en.xlsx",
     "ext": ".xlsx",
     "is_downloadable": true

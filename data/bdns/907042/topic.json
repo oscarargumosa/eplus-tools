@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "907042",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PAÍS VASCO / DEPARTAMENTO DE TURISMO, COMERCIO Y CONSUMO",
+  "nuts_codes": [
+    "ES21"
+  ],
+  "nuts_primary": "ES21",
+  "title": "CTP 2026 Ayudas a la comercialización turística y a la promoción",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": "2026-05-21",
+  "deadline": "2026-06-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 934000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "https://www.euskadi.eus/ayuda_subvencion/2026/ctp-2026/web01-tramite/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/907042",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2025005538",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 212358,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026002118",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.462Z"
+}

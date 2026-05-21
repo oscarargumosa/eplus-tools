@@ -1,0 +1,79 @@
+{
+  "id": 1108292,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT DE JUSTÍCIA I QUALITAT DEMOCRÀTICA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906731",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 650000,
+  "mrr": false,
+  "descripcion": "Subvenciones en materia de asuntos religiosos, correspondiente al ejercicio presupuestario 2026, para actuaciones llevadas a cabo durante el año 2025",
+  "descripcionLeng": "Subvencions en matèria d'afers religiosos, corresponent a l'exercici pressupostari 2026, per a actuacions dutes a terme durant l'any 2025.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "Prestación de servicios a la comunidad en general",
+      "codigo": "84.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDEN PRE/81/2023, de 12 de abril, por la que se aprueban las bases reguladoras del procedimiento para la concesión de subvenciones en materia de asuntos religiosos.",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=957691",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "15 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1457765,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "AR2601_Resolució _signada_CA.pdf",
+      "long": 296275,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1457764,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "AR2601_castella_revisada_linguista_revMQ_convo_DGAR.pdf",
+      "long": 133713,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

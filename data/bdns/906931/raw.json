@@ -1,0 +1,64 @@
+{
+  "id": 1108492,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HERMIGUA",
+    "nivel3": "AYUNTAMIENTO DE HERMIGUA"
+  },
+  "sedeElectronica": "www.hermigua.sedelectronica.es",
+  "codigoBDNS": "906931",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA PERSONAS MAYORES DE 65 AÑOS, RESIDENTES EN EL MUNICIPIO DE HERMIGUA, Y QUE NO PERCIBAN NINGÚN TIPO DE PENSIÓN, EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES706 - La Gomera"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "SUBVENCIONES PARA PERSONAS MAYORES DE 65 AÑOS, RESIDENTES EN EL MUNICIPIO DE HERMIGUA, Y QUE NO PERCIBAN NINGÚN TIPO DE PENSIÓN, EJERCICIO 2026.",
+  "urlBasesReguladoras": "www.hermigua.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE SU PUBLICACION EN EL BOLETIN OFICIAL DE LA PROVINCIA DE SANTA CRUZ DE TENERIFE",
+  "textFin": "QUINCE DIAS HABILES A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458829,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RESOLUCION ALCALDÍA AYUDAS A MAYORES.pdf",
+      "long": 469472,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

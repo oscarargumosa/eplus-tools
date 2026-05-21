@@ -1,0 +1,80 @@
+{
+  "id": 1108405,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT CUGAT DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE SANT CUGAT DEL VALLÈS"
+  },
+  "sedeElectronica": "https://seu.santcugat.cat/seu/ProcedimientoTabs.aspx?tab=1&idProc=32&idnct=516&x=1JgdC3+u0q2knQfgqCBymw ",
+  "codigoBDNS": "906844",
+  "fechaRecepcion": "2026-05-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 110000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LA AYUDA ECONÓMICA A LA VIVIENDA 2026 (EXP. 16804/2026)",
+  "descripcionLeng": "CONVOCATÒRIA DE L'AJUT ECONÒMIC A L'HABITATGE 2026 (EXP. 16804/2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases Reguladoras espcíficas de la ayuda económica a la vivienda 2026 (expediente 16804/2026)",
+  "urlBasesReguladoras": "https://seu.santcugat.cat/seu/ProcedimientoTabs.aspx?tab=1&idProc=32&idnct=516&x=1JgdC3+u0q2knQfgqCBymw",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-01",
+  "fechaFinSolicitud": "2026-07-15",
+  "textInicio": "1 de junio de 2026 (incluido)",
+  "textFin": "15 de julio de 2026 (incluido)",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1458139,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1_Acuerdo_aprobación_bases_convocatoria_castellano_2026.pdf",
+      "long": 685497,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458142,
+      "descripcion": "Extracto-resumen acuerdo aprobación ayuda vivienda 2026",
+      "nombreFic": "estracto_firmado.pdf",
+      "long": 320872,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    },
+    {
+      "id": 1458141,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "acord_jgl_ajuts_habitatge_2026.pdf",
+      "long": 789363,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

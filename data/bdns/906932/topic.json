@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "906932",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "ORDEN CONVOCATORIA PREMIOS DOLORES ESCRIBANO 2025/2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6824,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.3",
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906932",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 2560/2009",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 1185/2016",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 1625/2017",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 1900/2019",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.bocm.es/boletin/CM_Orden_BOCM/2019/06/18/BOCM-20190618-33.PDF",
+  "text_inicio": "A PARTIR DEL DIA SIGUIENTE DE PUBLICAR EL EXTRACTO DE CONVOCATORIA EN BOCM",
+  "text_fin": "DIEZ DIAS A PARTIR DEL DIA SEGUIENTE DE PUBLICAR DEL EXTRACTO DE CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-21T04:05:12.459Z"
+}

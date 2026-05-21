@@ -1,0 +1,64 @@
+{
+  "id": 1105056,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "INSTITUTO ARAGONÉS DE LA JUVENTUD (IAJ)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903495",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Orden DBF/…/2026, de 19 de mayo, por la que se convoca el Certamen “IX Premio Jóvenes Creadores Aragoneses” para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Orden CDS/514/2019 de 8 de mayo, modificada mediante la Orden CDS/176/2021, de 4 de marzo, la Orden BSF/1519/2024, de 14 de noviembre y la Orden BSF/666/2026, de 22 de abril.",
+  "urlBasesReguladoras": "www.aragon.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "al día siguiente de su publicación en BOA",
+  "textFin": "30/09/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1457689,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CSVAQ3Z8TL7LS1G0XFIL ORDEN DE CONVOCATORIA.pdf",
+      "long": 597527,
+      "datMod": "2026-05-20",
+      "datPublicacion": "2026-05-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
