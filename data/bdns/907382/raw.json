@@ -1,0 +1,72 @@
+{
+  "id": 1108943,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CUENCA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CUENCA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "907382",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 400000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES CUENCA INCLUSIVA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES423 - Cuenca"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://www.dipucuenca.es/documents/12423/560665/ORDENANZA+REGULADORA+DE+SUBVENCIONES.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DÍA HÁBIL SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "VIGÉSIMO DÍA HÁBIL SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460003,
+      "descripcion": "ANUNCIO APROBACIÓN NORMAS Y CONVOCATORIA SUBVENCIONES",
+      "nombreFic": "ANUNCIO_CONVOCATORIA_SUBVENCIONES_CUENCA_INCLUSIVA_2026_-_SEFYCU_6862349.pdf",
+      "long": 841437,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460002,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Decreto_Nº_3614_de_19_05_2026__Decreto_aprobación_normas_y_convocatoria_subvenciones_Cuenca_Inclusiva_2026__-_SEGRA_1016414.pdf",
+      "long": 357643,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

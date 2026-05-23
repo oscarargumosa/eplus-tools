@@ -1,0 +1,88 @@
+{
+  "id": 1109027,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "907466",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 425000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA 2026 DE AYUDAS INDIVIDUALES DE APOYO SOC.SALUD MENTAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "AYUD.INDIV.APOYO SOC.A PERS.INTEG.PROG.REHABILIT.Y REINSERC.SOCIAL 2017",
+  "urlBasesReguladoras": "http://www.bocm.es/boletin/CM_Orden_BOCM/2017/06/21/BOCM-20170621-12.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE PUBLICACIÓN EXTRACTO CONVOCATORIA",
+  "textFin": "15 DÍAS HÁBILES A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460313,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  ORDEN CONVOCATORIA AYUDAS ENFERMOS MENTALES.pdf",
+      "long": 845099,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460316,
+      "descripcion": "Otros documentos  2ª MODIFICACION BBRR",
+      "nombreFic": "Otros documentos  2ª MODIFICACION BBRR.pdf",
+      "long": 113564,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460315,
+      "descripcion": "Otros documentos  MODIFICACION BBRR",
+      "nombreFic": "Otros documentos  MODIFICACION BBRR.pdf",
+      "long": 356118,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460314,
+      "descripcion": "Otros documentos  BASES REGULADORAS",
+      "nombreFic": "Otros documentos  BASES REGULADORAS.pdf",
+      "long": 300040,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

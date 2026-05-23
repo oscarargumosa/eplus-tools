@@ -1,0 +1,76 @@
+{
+  "id": 1108931,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE GRANADA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE GRANADA"
+  },
+  "sedeElectronica": "https://sede.dipgra.es/opencms/opencms/sede",
+  "codigoBDNS": "907370",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 220000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A PROYECTOS DE COOPERACIÓN INTERNACIONAL Y DE EDUCACIÓN PARA LA CIUDADANÍA GLOBAL PARA EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    },
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Bases de Ejecución Presupuestaria 2026",
+  "urlBasesReguladoras": "https://www.dipgra.es/diputacion/delegaciones/economia-y-atencion-al-alcalde/servicio-gestion-presupuestaria-y-contable/presupuesto-general-00001/presupuestos-por-ejercicio-y-organismo/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Primer día hábil tras su publicación en Boletín Oficial de la Provincia",
+  "textFin": "El vigésimo día hábil tras su publicación en Boletín Oficial de la Provincia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1459970,
+      "descripcion": "Solicitud L1y3",
+      "nombreFic": "Anexo I_editable_L1y3_2026.pdf",
+      "long": 2870013,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1459969,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado_nA_11_Junta_de_Gobierno_12_05_2026.pdf",
+      "long": 3852493,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "906713",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSEJO INSULAR DE MENORCA / CONSELL INSULAR DE MENORCA",
+  "nuts_codes": [
+    "ES533"
+  ],
+  "nuts_primary": "ES533",
+  "title": "Acuerdo del Consejo Ejecutivo de 27.04.2026, relativo a las bases que rigen la concesión de ayudas para entidades privadas sin ánimo de lucro para financiar programas de atención social llevados a cabo durante el año 2026 y la convocatoria correspondiente",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 550000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "www.cime.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/906713",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12222/711017/acuerdo-del-consejo-ejecutivo-en-sesion-de-caracte",
+  "text_inicio": "Desde el día siguiente de haberse publicado la convocatoria en el BOIB",
+  "text_fin": "30 días naturales desde el día siguiente a la publicación de la convocatoria en el BOIB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-23T04:06:23.356Z"
+}

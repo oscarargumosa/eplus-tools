@@ -1,0 +1,87 @@
+{
+  "source": "bdns",
+  "source_id": "907505",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DEL INTERIOR / D.G. DE LA GUARDIA CIVIL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 19 de mayo de 2026, por la que se convocan subvenciones a las asociaciones profesionales de guardias civiles para el año 2026",
+  "title_lang": "es",
+  "summary": "Seguridad Ciudadana e Instituciones Penitenciarias",
+  "status": "open",
+  "publication_date": "2026-05-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 237300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.guardiacivil.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/907505",
+  "documents": [
+    {
+      "label": "ANEXO B",
+      "url": null
+    },
+    {
+      "label": "MODELO DE SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO C",
+      "url": null
+    },
+    {
+      "label": "ANEXO E",
+      "url": null
+    },
+    {
+      "label": "ANEXO D",
+      "url": null
+    },
+    {
+      "label": "BASES REGULADORAS",
+      "url": null
+    },
+    {
+      "label": "INSTRUCCIONES CUMPLIMENTACIÓN SOLICITUDES",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2013/09/18/int1715/con",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOE ",
+  "text_fin": "Diez días hábiles a partir del día siguiente a la publicación en BOE del extracto de convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-23T04:06:23.621Z"
+}

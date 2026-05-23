@@ -1,0 +1,67 @@
+{
+  "id": 1108990,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE INDUSTRIA Y TURISMO",
+    "nivel3": "DIRECCIÓN GENERAL DE PROGRAMAS INDUSTRIALES"
+  },
+  "sedeElectronica": "https://sede.serviciosmin.gob.es",
+  "codigoBDNS": "907429",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 11900000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 del Mecanismo de compensación a los Consumidores Electrointensivos de cargos por financiación de la retribución específica a renovables y cogeneración de alta eficiencia y por la financiación adicional en los territorios no peninsulares.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Real Decreto 1106/2020, de 15 de diciembre, por el que se regula el Estatuto de los consumidores electrointensivos - Título III",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-16350",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-25",
+  "fechaFinSolicitud": "2026-06-19",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": "SA.102006",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.102006",
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460136,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden convocatoria ayudas electrointensivos 2026.pdf",
+      "long": 450023,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

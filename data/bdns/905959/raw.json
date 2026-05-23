@@ -1,0 +1,72 @@
+{
+  "id": 1107520,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CALAÑAS",
+    "nivel3": "AYUNTAMIENTO DE CALAÑAS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "905959",
+  "fechaRecepcion": "2026-05-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 150,
+  "mrr": false,
+  "descripcion": "BASES DEL CONCURSO PARA LA ELECCIÓN DEL CARTEL DE LA FERIA DE CALAÑAS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES615 - Huelva"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DEL CONCURSO PARA LA ELECCIÓN DEL CARTEL DE LA FERIA DE CALAÑAS 2026",
+  "urlBasesReguladoras": "https://calanas.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "06/05/2026",
+  "textFin": "04/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1455478,
+      "descripcion": "Instancia General",
+      "nombreFic": "20230615_Modelo[C-1] - INSTANCIA GENERAL (1).pdf",
+      "long": 211695,
+      "datMod": "2026-05-15",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1455475,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260505_Otros_BASES CONCURSO DE CARTELES DE FERIA 2026.pdf",
+      "long": 210590,
+      "datMod": "2026-05-15",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

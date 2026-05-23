@@ -1,0 +1,72 @@
+{
+  "id": 1109051,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA OLIVA",
+    "nivel3": "AYUNTAMIENTO DE SANTA OLIVA"
+  },
+  "sedeElectronica": "https://santaoliva.eadministracio.cat",
+  "codigoBDNS": "907490",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas a la escolarización obligatoria para familias de Santa Oliva. Transporte escolar curso 2025/2026",
+  "descripcionLeng": "Convocatòria d'ajuts a l' escolarització obligatòria per a famílies de Santa Oliva. Transport escolar curs 2025/2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Ordenança reguladora de les bases generals per a la concessió d'ajuts a l'escolarització obligatòria per a famílies. Text íntegre. Aprovació definitiva.",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anuncio/68490/ordenanca-reguladora-de-les-bases-generals-per-a-la-concessio-d-ajuts-a-l-escolaritzacio-obligatoria-per-a-families-text-integre-aprovacio-definitiva-ajuntament-santa-oliva",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "25/05/2026",
+  "textFin": "19/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460367,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260522_Uns altres_Anunci convocatòria ajuts transport escolar curs 25-26.pdf",
+      "long": 213329,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460366,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260522_Uns altres_Anuncio convocatoria ayudas transporte escolar curso 25-26.pdf",
+      "long": 169437,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

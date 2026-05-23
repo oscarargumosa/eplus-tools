@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "907476",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CARDONA / AYUNTAMIENTO DE CARDONA",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA NO COMPETITIVA EN EL MARC DE LES BASES REGULADORES PER AL PAGAMENT DEL LLOGUER EN IMMOBLES DE CARDONA A PERSONES MAJORS DE 65 ANYS.",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-05-22",
+  "open_date": "2026-04-01",
+  "deadline": "2026-11-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "68.2",
+      "descripcion": "Alquiler de bienes inmobiliarios por cuenta propia"
+    }
+  ],
+  "apply_url": "https://www.cardona.cat/seu-electronica",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/907476",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3794330/aprovacio-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-destinades-a-financar-el-lloguer-d-immobles-que-constitueixin-l-habitatge-habitual-de-persones-majors-de-65-anys-versio-en-catala-i-castella-ajuntament-de-cardona",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-23T04:06:23.612Z"
+}

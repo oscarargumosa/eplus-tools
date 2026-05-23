@@ -1,0 +1,100 @@
+{
+  "id": 1109045,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "907484",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 34000,
+  "mrr": false,
+  "descripcion": "DGBCE/26 PREMIOS EXTRAORDINARIOS FORMACIÓN PROF. GRADO BÁSICO  25-26",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN 2136/2025, DE 26 DE JUNIO, DE LA CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES, POR LA QUE SE APRUEBAN LAS BASES REGULADORAS DE LOS PREMIOS EXTRAORDINARIOS PARA LOS CICLOS FORMATIVOS DE GRADO BÁSICO Y MEDIO DE FORMACIÓN PROFESIONAL EN EL ÁMBITO D",
+  "urlBasesReguladoras": "https://www.comunidad.madrid/transparencia/sites/default/files/orden_2136_bocm_ 09.07.2025.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM.",
+  "textFin": "A LOS 7 DÍAS HÁBILES A CONTAR DESDE EL INICIO.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460368,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS.pdf",
+      "long": 2283351,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460369,
+      "descripcion": "Otros documentos  BOCM PES 2026-28",
+      "nombreFic": "Otros documentos  BOCM PES 2026-28.pdf",
+      "long": 884260,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460372,
+      "descripcion": "Anexos  3759FR2_26",
+      "nombreFic": "Anexos  3759FR2_26.pdf",
+      "long": 85098,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460371,
+      "descripcion": "Anexos  3759FR1_26",
+      "nombreFic": "Anexos  3759FR1_26.pdf",
+      "long": 85090,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460370,
+      "descripcion": "Anexos  3759F1_26",
+      "nombreFic": "Anexos  3759F1_26.pdf",
+      "long": 134256,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

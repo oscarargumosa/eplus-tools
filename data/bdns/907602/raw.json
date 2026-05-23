@@ -1,0 +1,72 @@
+{
+  "id": 1109163,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE VIGO",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "907602",
+  "fechaRecepcion": "2026-05-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14421.3,
+  "mrr": false,
+  "descripcion": "Resolución Rectoral por la que se convocan Becas \"Alén do Miño\" para la realización de prácticas académicas externas en el marco del programa Eures Transfronterizo Galicia – Norte de Portugal, curso 2025/2026",
+  "descripcionLeng": "Resolución Reitoral pola que se convocan Bolsas “Alén do Miño” para a realización de prácticas académicas externas no marco do programa Eures Transfronteirizo Galicia – Norte de Portugal, curso 2025/2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución Rectoral por la que se convocan Becas \"Alén do Miño\" para la realización de prácticas académicas externas en el marco del programa Eures Transfronterizo Galicia – Norte de Portugal, curso 2025/2026",
+  "urlBasesReguladoras": "https://secretaria.uvigo.gal/uv/web/convocatoria/public/show/1866",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-25",
+  "fechaFinSolicitud": "2026-06-18",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460630,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260522_Conv_Prác_AléndMiño.pdf",
+      "long": 558928,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    },
+    {
+      "id": 1460629,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Conv_Prác_AléndMiño_cast.pdf",
+      "long": 532656,
+      "datMod": "2026-05-22",
+      "datPublicacion": "2026-05-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
