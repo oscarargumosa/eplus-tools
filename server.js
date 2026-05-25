@@ -94,6 +94,44 @@ app.get('/v1/config', (req, res) => {
   });
 });
 
+// TEMP diagnóstico directory-api — eliminar tras debug
+app.get('/v1/_diag/directory', async (req, res) => {
+  const out = { ts: new Date().toISOString() };
+  const baseUrl = process.env.DIRECTORY_API_BASE_URL || 'https://directorio.eufundingschool.com/api';
+  const key = process.env.DIRECTORY_API_KEY || '';
+  out.baseUrl = baseUrl;
+  out.keyLength = key.length;
+  out.keyFirst4 = key.slice(0, 4);
+  out.keyLast4 = key.slice(-4);
+  out.keyHasQuotes = key.startsWith("'") || key.startsWith('"') || key.endsWith("'") || key.endsWith('"');
+  out.nodeEnv = process.env.NODE_ENV || '(unset)';
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 4000);
+    const r = await fetch(`${baseUrl.replace(/\/$/, '')}/stats`, {
+      headers: { 'X-API-Key': key, Accept: 'application/json' },
+      signal: ctrl.signal,
+    });
+    clearTimeout(t);
+    out.fetchStatus = r.status;
+    const text = await r.text();
+    out.fetchBodyPreview = text.slice(0, 300);
+  } catch (e) {
+    out.fetchError = e?.message || String(e);
+    out.fetchErrorCode = e?.code || e?.name || null;
+  }
+  try {
+    const dir = require('./node/src/utils/directory-api');
+    const s = await dir.getGlobalStats();
+    out.dirCallOk = true;
+    out.dirCallSample = { total_entities: s?.total_entities, total_projects: s?.total_projects };
+  } catch (e) {
+    out.dirCallOk = false;
+    out.dirCallError = e?.message || String(e);
+  }
+  res.json(out);
+});
+
 app.use('/v1/auth', require('./node/src/modules/auth/routes'));
 app.use('/v1/intake', require('./node/src/modules/intake/routes'));
 app.use('/v1/calculator', require('./node/src/modules/calculator/routes'));
