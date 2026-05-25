@@ -94,6 +94,31 @@ app.get('/v1/config', (req, res) => {
   });
 });
 
+// TEMP diagnóstico projects 500 — eliminar tras debug
+app.get('/v1/_diag/projects', async (req, res) => {
+  const db = require('./node/src/utils/db');
+  const out = { ts: new Date().toISOString() };
+  try {
+    const [cols] = await db.query("SHOW COLUMNS FROM projects");
+    out.columns = cols.map(c => c.Field);
+  } catch (e) { out.columnsError = e?.message || String(e); }
+  try {
+    const sql = `
+      SELECT id, user_id, name, full_name, type, description, proposal_lang, start_date, duration_months,
+             deadline, eu_grant, cofin_pct, indirect_pct, status, is_sandbox, created_at, updated_at
+      FROM projects
+      LIMIT 1
+    `;
+    const [rows] = await db.query(sql);
+    out.selectOk = true;
+    out.rowsReturned = rows.length;
+  } catch (e) {
+    out.selectOk = false;
+    out.selectError = e?.message || String(e);
+    out.selectCode = e?.code || null;
+  }
+  res.json(out);
+});
 
 app.use('/v1/auth', require('./node/src/modules/auth/routes'));
 app.use('/v1/intake', require('./node/src/modules/intake/routes'));
