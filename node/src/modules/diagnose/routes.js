@@ -43,6 +43,7 @@ router.get('/stats',                             guard, ctrl.getStats);
 router.post('/run',                              requireAuth, ctrl.runDiagnosis);
 router.get('/runs/:runId',                       requireAuth, ctrl.getRun);
 router.get('/runs/project/:projectId/latest',    requireAuth, ctrl.getLatestRunForProject);
+router.get('/projects/:projectId/workspace',     requireAuth, ctrl.getProjectWorkspace);
 
 /* ── Import proposal (Fase 3) ────────────────────────────────────────── */
 // Door B (audit) / Door C (recycling): user uploads an external Form Part B.
@@ -55,5 +56,18 @@ router.post('/paste-proposal',                   requireAuth, ctrl.pasteProposal
 // project (sets projects.source_evaluation_id) so Pass D directs improvement.
 router.post('/upload-letter',                    requireAuth, upload.single('file'), ctrl.uploadLetter);
 router.post('/paste-letter',                     requireAuth, ctrl.pasteLetter);
+
+/* ── Improvement actions (Fase 5) ────────────────────────────────────── */
+// Generate a Sonnet 4 proposal for a single finding (on demand)
+router.post('/findings/:findingId/propose',      requireAuth, ctrl.proposeForFinding);
+// Inspect / accept / reject / modify a generated proposal
+router.get('/actions/:actionId',                 requireAuth, ctrl.getAction);
+router.post('/actions/:actionId/accept',         requireAuth, ctrl.acceptAction);
+router.post('/actions/:actionId/reject',         requireAuth, ctrl.rejectAction);
+router.post('/actions/:actionId/modify',         requireAuth, ctrl.modifyAction);
+
+/* ── Versioning + rollback (Fase 5) ──────────────────────────────────── */
+router.get('/projects/:projectId/versions',      requireAuth, ctrl.listVersions);
+router.post('/projects/:projectId/rollback',     requireAuth, ctrl.rollbackToVersion);
 
 module.exports = router;

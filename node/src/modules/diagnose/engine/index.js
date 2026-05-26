@@ -138,6 +138,29 @@ async function getRunWithFindings(runId) {
      ORDER BY sort_order`,
     [runId]
   );
+
+  // Attach the latest improvement_action (if any) per finding
+  if (findings.length > 0) {
+    const findingIds = findings.map(f => f.id);
+    const [actions] = await pool.query(
+      `SELECT id, finding_id, where_field_id, change_type,
+              before_text, after_text, rationale, risk,
+              estimated_score_delta, state, applied_version_id,
+              created_at, applied_at
+       FROM improvement_actions
+       WHERE finding_id IN (?)
+       ORDER BY created_at DESC`,
+      [findingIds]
+    );
+    const byFinding = {};
+    for (const a of actions) {
+      if (!byFinding[a.finding_id]) byFinding[a.finding_id] = a;  // latest first
+    }
+    for (const f of findings) {
+      f.latest_action = byFinding[f.id] || null;
+    }
+  }
+
   return { ...run, findings };
 }
 

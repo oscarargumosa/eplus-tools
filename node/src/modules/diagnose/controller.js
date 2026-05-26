@@ -3,6 +3,8 @@ const model = require('./model');
 const engine = require('./engine');
 const importer = require('./import/import-proposal');
 const letterImporter = require('./import/import-letter');
+const proposer = require('./engine/proposer');
+const applicator = require('./engine/applicator');
 
 function ok(res, data) {
   return res.json({ ok: true, data });
@@ -89,6 +91,86 @@ exports.getLatestRunForProject = async (req, res, next) => {
     const run = await engine.getLatestRunForProject(req.params.projectId);
     if (!run) return ok(res, null);
     ok(res, run);
+  } catch (e) { next(e); }
+};
+
+// Return the current form_field_values + template structure for the Diagnose
+// split-layout (Fase 5). Lets the UI render the editor with the section nav.
+exports.getProjectWorkspace = async (req, res, next) => {
+  try {
+    const projectId = req.params.projectId;
+    const pool = require('../../utils/db');
+
+    // Load project + form instance
+    const [projectRows] = await pool.query(
+      `SELECT p.id, p.name, p.full_name, p.origin, p.source_evaluation_id,
+              fi.id AS instance_id, fi.program_id, fi.template_id,
+              ip.program_id AS programme_code, ip.name AS programme_name
+       FROM projects p
+       LEFT JOIN form_instances fi ON fi.project_id = p.id
+       LEFT JOIN intake_programs ip ON fi.program_id = ip.id
+       WHERE p.id = ?
+       ORDER BY fi.updated_at DESC
+       LIMIT 1`,
+      [projectId]
+    );
+    if (projectRows.length === 0) return bad(res, 'NOT_FOUND', 'Project not found', 404);
+    const proj = projectRows[0];
+
+    // Load field values
+    let fields = [];
+    if (proj.instance_id) {
+      const [rows] = await pool.query(
+        `SELECT field_id, section_path, value_text, value_json
+         FROM form_field_values
+         WHERE instance_id = ?`,
+        [proj.instance_id]
+      );
+      fields = rows;
+    }
+
+    // Load template structure for section nav (subset of template_json)
+    let templateSections = [];
+    if (proj.template_id) {
+      const [tRows] = await pool.query(
+        `SELECT template_json FROM form_templates WHERE id = ?`,
+        [proj.template_id]
+      );
+      if (tRows[0]?.template_json) {
+        try {
+          const tpl = JSON.parse(tRows[0].template_json);
+          templateSections = (tpl.sections || []).map(s => ({
+            id: s.id,
+            number: s.number,
+            title: s.title,
+            subsections: (s.subsections || []).map(ss => ({
+              id: ss.id,
+              number: ss.number,
+              title: ss.title,
+              field_ids: (ss.fields || []).map(f => f.id),
+            })),
+          }));
+        } catch (e) { /* malformed json — ignore */ }
+      }
+    }
+
+    ok(res, {
+      project: {
+        id: proj.id,
+        name: proj.name,
+        full_name: proj.full_name,
+        origin: proj.origin,
+        source_evaluation_id: proj.source_evaluation_id,
+      },
+      instance: proj.instance_id ? {
+        id: proj.instance_id,
+        program_id: proj.program_id,
+        programme_code: proj.programme_code,
+        programme_name: proj.programme_name,
+      } : null,
+      template_sections: templateSections,
+      fields,
+    });
   } catch (e) { next(e); }
 };
 
@@ -207,3 +289,79 @@ async function triggerPatternRebuild() {
   });
   child.unref();
 }
+
+/* ── Improvement actions (Fase 5) — propose / accept / reject ───────── */
+
+exports.proposeForFinding = async (req, res, next) => {
+  try {
+    const findingId = req.params.findingId;
+    if (!findingId) return bad(res, 'BAD_REQUEST', 'findingId is required.');
+    const action = await proposer.proposeForFinding(findingId, req.user?.id);
+    ok(res, action);
+  } catch (e) {
+    if (/not found|empty — nothing|no target field/i.test(e.message)) {
+      return bad(res, 'BAD_REQUEST', e.message);
+    }
+    next(e);
+  }
+};
+
+exports.getAction = async (req, res, next) => {
+  try {
+    const action = await applicator.loadAction(req.params.actionId);
+    if (!action) return bad(res, 'NOT_FOUND', 'Action not found', 404);
+    ok(res, action);
+  } catch (e) { next(e); }
+};
+
+exports.acceptAction = async (req, res, next) => {
+  try {
+    const r = await applicator.applyAction(req.params.actionId, req.user?.id);
+    ok(res, r);
+  } catch (e) {
+    if (/not found|does not modify|not found in this project|before.*text was not found|whitespace is collapsed/i.test(e.message)) {
+      return bad(res, 'BAD_REQUEST', e.message);
+    }
+    next(e);
+  }
+};
+
+exports.rejectAction = async (req, res, next) => {
+  try {
+    const r = await applicator.rejectAction(req.params.actionId, req.user?.id);
+    ok(res, r);
+  } catch (e) {
+    if (/not found/i.test(e.message)) return bad(res, 'NOT_FOUND', e.message, 404);
+    next(e);
+  }
+};
+
+exports.modifyAction = async (req, res, next) => {
+  try {
+    const { after } = req.body || {};
+    if (typeof after !== 'string') return bad(res, 'BAD_REQUEST', '"after" string is required.');
+    const r = await applicator.modifyAction(req.params.actionId, after, req.user?.id);
+    ok(res, r);
+  } catch (e) { next(e); }
+};
+
+/* ── Versioning (Fase 5) ─────────────────────────────────────────────── */
+
+exports.listVersions = async (req, res, next) => {
+  try {
+    const rows = await applicator.listVersions(req.params.projectId);
+    ok(res, rows);
+  } catch (e) { next(e); }
+};
+
+exports.rollbackToVersion = async (req, res, next) => {
+  try {
+    const { versionId } = req.body || {};
+    if (!versionId) return bad(res, 'BAD_REQUEST', 'versionId is required.');
+    const r = await applicator.rollbackToVersion(req.params.projectId, versionId, req.user?.id);
+    ok(res, r);
+  } catch (e) {
+    if (/not found|malformed/i.test(e.message)) return bad(res, 'BAD_REQUEST', e.message);
+    next(e);
+  }
+};
