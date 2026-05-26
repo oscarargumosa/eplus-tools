@@ -2,6 +2,7 @@
 const model = require('./model');
 const engine = require('./engine');
 const importer = require('./import/import-proposal');
+const letterImporter = require('./import/import-letter');
 
 function ok(res, data) {
   return res.json({ ok: true, data });
@@ -135,3 +136,74 @@ exports.pasteProposal = async (req, res, next) => {
     next(e);
   }
 };
+
+/* ── Upload evaluator letter (Fase 4) — Door C reciclaje ─────────────── */
+
+exports.uploadLetter = async (req, res, next) => {
+  try {
+    if (!req.file) return bad(res, 'BAD_REQUEST', 'A file is required (multipart field "file").');
+    const { programId, projectId, proposalNumber, proposalAcronym, result } = req.body || {};
+    if (!programId) return bad(res, 'BAD_REQUEST', 'programId is required.');
+
+    const out = await letterImporter.importLetterFromFile(
+      req.file.buffer,
+      req.file.originalname,
+      programId,
+      {
+        projectId: projectId || null,
+        userId: req.user?.id,
+        proposalNumber,
+        proposalAcronym,
+        result,
+      }
+    );
+
+    // Trigger pattern library refresh in the background (don't await)
+    triggerPatternRebuild().catch(err => console.warn('Pattern rebuild failed:', err.message));
+
+    ok(res, out);
+  } catch (e) {
+    if (/not found|required/i.test(e.message)) {
+      return bad(res, 'BAD_REQUEST', e.message);
+    }
+    next(e);
+  }
+};
+
+exports.pasteLetter = async (req, res, next) => {
+  try {
+    const { programId, projectId, text, proposalNumber, proposalAcronym, result } = req.body || {};
+    if (!programId) return bad(res, 'BAD_REQUEST', 'programId is required.');
+    if (!text || typeof text !== 'string' || text.length < 100) {
+      return bad(res, 'BAD_REQUEST', 'text must be at least 100 characters.');
+    }
+    const out = await letterImporter.importLetterFromText(text, programId, {
+      projectId: projectId || null,
+      userId: req.user?.id,
+      proposalNumber,
+      proposalAcronym,
+      result,
+    });
+    triggerPatternRebuild().catch(err => console.warn('Pattern rebuild failed:', err.message));
+    ok(res, out);
+  } catch (e) {
+    if (/not found|required|at least/i.test(e.message)) {
+      return bad(res, 'BAD_REQUEST', e.message);
+    }
+    next(e);
+  }
+};
+
+// Background helper: kick off the pattern library rebuild script.
+// Non-blocking. If a real job queue exists later, route through there.
+async function triggerPatternRebuild() {
+  const { spawn } = require('child_process');
+  const path = require('path');
+  const script = path.join(__dirname, '..', '..', '..', '..', 'scripts', 'diagnose', 'build-pattern-library.js');
+  const child = spawn(process.execPath, [script], {
+    detached: true,
+    stdio: 'ignore',
+    cwd: path.dirname(path.dirname(path.dirname(path.dirname(path.dirname(__dirname))))),
+  });
+  child.unref();
+}

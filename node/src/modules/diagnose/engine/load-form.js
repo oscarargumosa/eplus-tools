@@ -12,7 +12,8 @@ async function loadProjectForm(projectId) {
   const [projectRows] = await pool.query(
     `SELECT p.id, p.user_id, p.name, p.full_name, p.type, p.proposal_lang,
             p.national_agency, p.duration_months, p.eu_grant, p.cofin_pct,
-            p.status, p.origin, p.calc_state, p.interview_summary
+            p.status, p.origin, p.calc_state, p.interview_summary,
+            p.source_evaluation_id
      FROM projects p
      WHERE p.id = ?`,
     [projectId]

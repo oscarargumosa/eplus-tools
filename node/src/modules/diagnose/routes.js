@@ -50,4 +50,10 @@ router.get('/runs/project/:projectId/latest',    requireAuth, ctrl.getLatestRunF
 router.post('/upload-proposal',                  requireAuth, upload.single('file'), ctrl.uploadProposal);
 router.post('/paste-proposal',                   requireAuth, ctrl.pasteProposal);
 
+/* ── Upload evaluator letter (Fase 4) ────────────────────────────────── */
+// Door C premium: user uploads the EACEA evaluator letter for an existing
+// project (sets projects.source_evaluation_id) so Pass D directs improvement.
+router.post('/upload-letter',                    requireAuth, upload.single('file'), ctrl.uploadLetter);
+router.post('/paste-letter',                     requireAuth, ctrl.pasteLetter);
+
 module.exports = router;

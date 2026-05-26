@@ -16,6 +16,10 @@ const ImportProposal = (() => {
     result: null,
     error: null,
     pasteFields: {},         // for paste mode
+    // Letter upload (Phase 4):
+    letterUploading: false,
+    letterUploaded: null,    // parserReport when uploaded
+    letterError: null,
   };
 
   function init() {
@@ -25,6 +29,9 @@ const ImportProposal = (() => {
     state.file = null;
     state.result = null;
     state.error = null;
+    state.letterUploading = false;
+    state.letterUploaded = null;
+    state.letterError = null;
     render();
     loadPrograms();
   }
@@ -251,16 +258,109 @@ const ImportProposal = (() => {
         </div>
       ` : ''}
 
+      <!-- Step 4 (optional): evaluator letter -->
+      <div class="bg-gradient-to-br from-primary/5 to-tertiary/5 border-2 border-primary/30 rounded-2xl p-5 mb-6">
+        <div class="flex items-start gap-3 mb-3">
+          <span class="material-symbols-outlined text-primary text-2xl">stars</span>
+          <div class="flex-1">
+            <h3 class="font-bold text-on-surface">¿Tienes la carta del evaluador?</h3>
+            <p class="text-xs text-on-surface-variant mt-1">
+              <strong>Diagnóstico premium dirigido.</strong> Si tu proyecto ya fue evaluado por EACEA y tienes la carta, súbela aquí.
+              El sistema extrae cada finding del ponente y lo localiza en la sección exacta de tu Form para que sepas qué arreglar.
+            </p>
+          </div>
+        </div>
+
+        ${state.letterUploaded ? `
+          <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-3 text-sm text-green-700">
+            <span class="material-symbols-outlined text-sm align-middle mr-1">check_circle</span>
+            Carta cargada: <strong>${state.letterUploaded.findingsInserted}</strong> findings extraídos
+            (${state.letterUploaded.negativeCount} negativos, ${state.letterUploaded.positiveCount} positivos).
+          </div>
+        ` : state.letterUploading ? `
+          <div class="text-center py-4">
+            <span class="material-symbols-outlined animate-spin text-primary">progress_activity</span>
+            <p class="text-xs text-on-surface-variant mt-2">Parseando carta del evaluador…</p>
+          </div>
+        ` : `
+          <div id="ip-letter-drop" class="border-2 border-dashed border-primary/40 rounded-xl p-5 text-center cursor-pointer hover:bg-primary/5 transition-colors"
+               ondragover="event.preventDefault(); this.classList.add('bg-primary/10')"
+               ondragleave="this.classList.remove('bg-primary/10')"
+               ondrop="ImportProposal.onLetterDrop(event)"
+               onclick="document.getElementById('ip-letter-file').click()">
+            <span class="material-symbols-outlined text-2xl text-primary mb-1">description</span>
+            <p class="text-sm text-on-surface">Arrastra el PDF/Word de tu carta EACEA</p>
+            <p class="text-[11px] text-on-surface-variant mt-1">Opcional · Calidad premium del diagnóstico</p>
+          </div>
+          <input id="ip-letter-file" type="file" accept=".pdf,.docx,.txt" class="hidden" onchange="ImportProposal.onLetterSelect(event)" />
+        `}
+
+        ${state.letterError ? `
+          <div class="mt-3 text-xs text-error">${esc(state.letterError)}</div>
+        ` : ''}
+      </div>
+
       <div class="flex gap-3">
         <button onclick="ImportProposal.goDiagnose('${esc(r.projectId)}')" class="flex-1 px-5 py-3 bg-primary text-white rounded-xl text-sm font-bold hover:bg-primary/90 shadow-md">
           <span class="material-symbols-outlined text-sm align-middle mr-1">monitoring</span>
-          Ir al diagnóstico
+          Ir al diagnóstico${state.letterUploaded ? ' dirigido' : ''}
         </button>
         <button onclick="ImportProposal.init()" class="px-5 py-3 bg-surface border border-outline-variant/40 rounded-xl text-sm font-medium">
           Importar otro
         </button>
       </div>
     `;
+  }
+
+  /* ── Letter upload (Fase 4) ─────────────────────────────────── */
+
+  async function uploadLetter(file) {
+    if (!state.result?.projectId) {
+      state.letterError = 'Primero importa el proyecto.';
+      render();
+      return;
+    }
+    state.letterUploading = true;
+    state.letterError = null;
+    render();
+
+    const fd = new FormData();
+    fd.append('file', file);
+    fd.append('programId', state.programId);
+    fd.append('projectId', state.result.projectId);
+
+    try {
+      const resp = await fetch('/v1/diagnose/upload-letter', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + (window.API?.token || localStorage.getItem('token')) },
+        body: fd,
+      });
+      const data = await resp.json();
+      if (!data.ok) throw new Error(data.error?.message || 'Letter upload failed');
+      state.letterUploaded = data.data.parserReport;
+      state.letterUploading = false;
+      render();
+    } catch (e) {
+      state.letterUploading = false;
+      state.letterError = e.message || String(e);
+      render();
+    }
+  }
+
+  function onLetterSelect(ev) {
+    const f = ev.target.files?.[0];
+    if (f) uploadLetter(f);
+  }
+  function onLetterDrop(ev) {
+    ev.preventDefault();
+    const f = ev.dataTransfer.files?.[0];
+    if (!f) return;
+    if (!/\.(pdf|docx|txt)$/i.test(f.name)) {
+      state.letterError = 'Solo PDF, DOCX o TXT.';
+      render();
+      return;
+    }
+    uploadLetter(f);
   }
 
   /* ── Public handlers ────────────────────────────────────────── */
@@ -306,6 +406,8 @@ const ImportProposal = (() => {
     onNameChange,
     onFileSelect,
     onDrop,
+    onLetterSelect,
+    onLetterDrop,
     goDiagnose,
     togglePaste,
   };

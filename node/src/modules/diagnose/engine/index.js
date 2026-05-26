@@ -8,6 +8,7 @@ const { loadProjectForm } = require('./load-form');
 const { runPassA } = require('./pass-a-universal');
 const { runPassB } = require('./pass-b-programme');
 const { runPassC } = require('./pass-c-coherence');
+const { runPassD } = require('./pass-d-letter');
 const { computeScores, computeVerdict } = require('./triage');
 
 const SEVERITY_RANK = { critical: 6, high: 5, medium_high: 4, medium: 3, medium_low: 2, low: 1, positive: 0 };
@@ -31,13 +32,14 @@ async function runDiagnosis(projectId, { userId } = {}) {
   );
 
   try {
-    // Run passes
-    const [a, b, c] = await Promise.all([
+    // Run passes — D only fires if the project has a linked evaluator letter
+    const [a, b, c, d] = await Promise.all([
       runPassA(form),
       runPassB(form),
       runPassC(form),
+      runPassD(form),
     ]);
-    const allFindings = [...a, ...b, ...c];
+    const allFindings = [...a, ...b, ...c, ...d];
 
     // Sort by severity desc (critical first) then by source_pass
     allFindings.sort((x, y) => {
@@ -74,6 +76,9 @@ async function runDiagnosis(projectId, { userId } = {}) {
     const criticalCount = allFindings.filter(f => f.severity === 'critical').length;
     const highCount = allFindings.filter(f => f.severity === 'high').length;
 
+    const hasLetterInput = (d && d.length > 0) ? 1 : 0;
+    const letterId = hasLetterInput ? (form.project?.source_evaluation_id || null) : null;
+
     await pool.query(
       `UPDATE diagnosis_runs
        SET status = 'ready',
@@ -83,6 +88,8 @@ async function runDiagnosis(projectId, { userId } = {}) {
            total_findings = ?,
            critical_findings = ?,
            high_findings = ?,
+           has_letter_input = ?,
+           letter_id = ?,
            finished_at = NOW()
        WHERE id = ?`,
       [
@@ -92,6 +99,8 @@ async function runDiagnosis(projectId, { userId } = {}) {
         allFindings.length,
         criticalCount,
         highCount,
+        hasLetterInput,
+        letterId,
         runId,
       ]
     );

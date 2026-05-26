@@ -179,6 +179,19 @@ const Diagnose = (() => {
         </button>
       </div>
 
+      ${run.has_letter_input ? `
+        <div class="bg-primary/10 border-2 border-primary/40 rounded-2xl p-4 mb-4 flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary text-2xl">stars</span>
+          <div class="flex-1">
+            <div class="font-bold text-primary text-sm">Diagnóstico dirigido por carta EACEA</div>
+            <div class="text-xs text-on-surface-variant mt-1">
+              ${findings.filter(f => f.source_pass === 'D').length} findings vienen directamente del ponente que evaluó el proyecto.
+              Resolverlos primero es la prioridad antes de re-presentar.
+            </div>
+          </div>
+        </div>
+      ` : ''}
+
       <!-- Verdict card -->
       <div class="border ${verdictInfo.cls} rounded-2xl p-5 mb-6">
         <div class="flex items-start gap-4">
@@ -244,12 +257,22 @@ const Diagnose = (() => {
     };
     const sev = sevColors[f.severity] || sevColors.medium;
     const passLabels = { A: 'Ley universal', B: 'Programa', C: 'Coherencia', D: 'Carta evaluador' };
+    const fromLetter = f.source_pass === 'D';
+    const cardCls = fromLetter
+      ? 'bg-primary/5 border-2 border-primary/30'
+      : 'bg-surface border border-outline-variant/30';
 
     return `
-      <div class="bg-surface border border-outline-variant/30 rounded-xl p-4 mb-2">
+      <div class="${cardCls} rounded-xl p-4 mb-2">
         <div class="flex items-start gap-3">
           <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${sev.cls} whitespace-nowrap mt-0.5">${sev.label}</span>
           <div class="flex-1 min-w-0">
+            ${fromLetter
+              ? `<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold mb-1">
+                   <span class="material-symbols-outlined text-[12px]">stars</span>
+                   Según evaluador EACEA
+                 </div>`
+              : ''}
             <div class="text-sm font-medium text-on-surface">${esc(f.finding_text)}</div>
             ${f.applies_to_section
               ? `<div class="text-[11px] text-primary mt-1"><strong>Sección:</strong> ${esc(f.applies_to_section)}</div>`
@@ -258,7 +281,7 @@ const Diagnose = (() => {
               ? `<div class="text-xs text-on-surface-variant mt-2 italic">→ ${esc(f.suggested_action)}</div>`
               : ''}
             ${f.evidence_quote
-              ? `<details class="text-[11px] text-on-surface-variant/80 mt-2"><summary class="cursor-pointer">Evidencia</summary><blockquote class="border-l-2 border-outline-variant/40 pl-3 mt-1 italic">${esc(f.evidence_quote)}</blockquote></details>`
+              ? `<details class="text-[11px] text-on-surface-variant/80 mt-2"><summary class="cursor-pointer">${fromLetter ? 'Cita literal del ponente' : 'Evidencia'}</summary><blockquote class="border-l-2 ${fromLetter ? 'border-primary/40' : 'border-outline-variant/40'} pl-3 mt-1 italic">${esc(f.evidence_quote)}</blockquote></details>`
               : ''}
             <div class="flex items-center gap-2 mt-2 text-[10px] text-on-surface-variant/70">
               <span>${passLabels[f.source_pass] || f.source_pass}</span>
