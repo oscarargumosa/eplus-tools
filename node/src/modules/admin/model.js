@@ -1,6 +1,10 @@
 /* ── Admin Model — reference data tables ─────────────────────────── */
 const pool = require('../../utils/db');
 const uuid = require('../../utils/uuid');
+const fs = require('fs');
+const path = require('path');
+
+const FUNDING_FEED_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.json');
 
 /* ══ intake_programs ═════════════════════════════════════════════ */
 
@@ -45,6 +49,50 @@ async function upsertProgram(data, id) {
 
 async function deleteProgram(id) {
   await pool.query('DELETE FROM intake_programs WHERE id=?', [id]);
+}
+
+async function importProgramFromFeed(sourceId) {
+  const raw = fs.readFileSync(FUNDING_FEED_PATH, 'utf8');
+  const all = JSON.parse(raw);
+  const item = all.find(r => r.source_id === sourceId || r.call_id === sourceId);
+  if (!item) {
+    const err = new Error(`Call not found in feed: ${sourceId}`);
+    err.code = 'NOT_FOUND';
+    err.status = 404;
+    throw err;
+  }
+  const actionType = item.source_id || sourceId;
+
+  const [existing] = await pool.query(
+    'SELECT id FROM intake_programs WHERE action_type=? LIMIT 1', [actionType]
+  );
+  if (existing.length) {
+    return { id: existing[0].id, action_type: actionType, already_existed: true };
+  }
+
+  const slug = ('imp_' + actionType.toLowerCase().replace(/[^a-z0-9]+/g, '_')).slice(0, 60);
+  const summary = (item.summary_es || item.summary_en || '').slice(0, 4000) || null;
+
+  const newId = await upsertProgram({
+    program_id: slug,
+    name: (item.title || actionType).slice(0, 200),
+    action_type: actionType,
+    deadline: item.deadline || null,
+    eu_grant_max: item.budget_per_project_max_eur || null,
+    cofin_pct: item.cofinancing_pct || null,
+    duration_min_months: item.duration_months || null,
+    duration_max_months: item.duration_months || null,
+    call_summary: summary,
+    active: 0,
+  });
+  return { id: newId, action_type: actionType, already_existed: false };
+}
+
+async function listActiveActionTypes() {
+  const [rows] = await pool.query(
+    'SELECT action_type FROM intake_programs WHERE active=1 AND action_type IS NOT NULL'
+  );
+  return rows.map(r => r.action_type);
 }
 
 /* ══ ref_countries ════════════════════════════════════════════════ */
@@ -946,7 +994,7 @@ async function listProgramsWithCounts() {
 }
 
 module.exports = {
-  listPrograms, upsertProgram, deleteProgram,
+  listPrograms, upsertProgram, deleteProgram, importProgramFromFeed, listActiveActionTypes,
   listCountries, upsertCountry, deleteCountry,
   listPerdiem, upsertPerdiem, deletePerdiem,
   listWorkerCategories, upsertWorkerCategory, deleteWorkerCategory,

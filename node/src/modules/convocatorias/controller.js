@@ -2,9 +2,25 @@
    Lista unificada (SEDIA + SALTO + BDNS), 647 calls. */
 const fs   = require('fs');
 const path = require('path');
+const adminModel = require('../admin/model');
 
 const DATA_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.json');
 const META_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.meta.json');
+
+// In-memory cache of action_types active in intake_programs. Refreshed every 30s.
+let activeActionCache = null;
+let activeActionCacheUntil = 0;
+async function getActiveActionTypes() {
+  if (activeActionCache && Date.now() < activeActionCacheUntil) return activeActionCache;
+  try {
+    const arr = await adminModel.listActiveActionTypes();
+    activeActionCache = new Set(arr);
+    activeActionCacheUntil = Date.now() + 30_000;
+  } catch {
+    activeActionCache = new Set();
+  }
+  return activeActionCache;
+}
 
 let cache = null;
 let cacheMtime = 0;
@@ -59,9 +75,10 @@ function toCard(c) {
   };
 }
 
-exports.list = (req, res, next) => {
+exports.list = async (req, res, next) => {
   try {
     const all = loadData();
+    const activeSet = await getActiveActionTypes();
     const status   = (req.query.status   || '').trim().toLowerCase();
     const programme= (req.query.programme|| '').trim().toLowerCase();
     const source   = (req.query.source   || '').trim().toLowerCase();
@@ -95,7 +112,11 @@ exports.list = (req, res, next) => {
     }
 
     const total = rows.length;
-    const items = rows.slice(offset, offset + limit).map(toCard);
+    const items = rows.slice(offset, offset + limit).map(c => {
+      const card = toCard(c);
+      card.available_in_efs = activeSet.has(c.source_id) || activeSet.has(c.call_id);
+      return card;
+    });
 
     res.json({
       ok: true,

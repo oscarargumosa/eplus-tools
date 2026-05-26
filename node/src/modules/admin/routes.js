@@ -21,6 +21,7 @@ const guard = [requireAuth, requireAdminOrScribe];
 router.get   ('/data/programs/full',   guard, ctrl.listProgramsWithCounts);
 router.get   ('/data/programs',        guard, ctrl.listPrograms);
 router.post  ('/data/programs',        guard, ctrl.upsertProgram);
+router.post  ('/data/programs/import-from-feed', guard, ctrl.importProgramFromFeed);
 router.post  ('/data/programs/:id/duplicate', guard, ctrl.duplicateProgram);
 router.patch ('/data/programs/:id',    guard, ctrl.upsertProgram);
 router.delete('/data/programs/:id',    guard, ctrl.deleteProgram);

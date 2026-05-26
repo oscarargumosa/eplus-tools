@@ -193,9 +193,14 @@ const Admin = (() => {
 
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
-          <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-            <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
-          </button>
+          <div class="flex items-center gap-2">
+            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+              <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
+            </button>
+            <button id="conv-import-feed" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-primary bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 transition-colors">
+              <span class="material-symbols-outlined text-sm">download</span> Importar de catálogo EU
+            </button>
+          </div>
           <span class="text-xs text-on-surface-variant">${programs.length} convocatoria${programs.length !== 1 ? 's' : ''}</span>
         </div>
         <div class="grid grid-cols-1 gap-2">
@@ -235,6 +240,7 @@ const Admin = (() => {
         </div>`;
 
       document.getElementById('conv-new-program')?.addEventListener('click', () => convNewProgram());
+      document.getElementById('conv-import-feed')?.addEventListener('click', () => convImportFromFeed());
       list.querySelectorAll('.conv-card').forEach(card => {
         card.addEventListener('click', e => {
           if (e.target.closest('.conv-del') || e.target.closest('.conv-dup')) return;
@@ -273,6 +279,99 @@ const Admin = (() => {
       // No pre-load eval template — admin links form template first, then generates eval from it
       convOpenProgram(id, name);
     } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
+  }
+
+  async function convImportFromFeed() {
+    let modal = document.getElementById('conv-import-modal');
+    if (modal) modal.remove();
+    modal = document.createElement('div');
+    modal.id = 'conv-import-modal';
+    modal.className = 'fixed inset-0 z-50 bg-black/40 flex items-start justify-center p-6 overflow-y-auto';
+    modal.innerHTML = `
+      <div class="bg-white rounded-2xl shadow-2xl w-full max-w-3xl mt-10 max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+          <div>
+            <h3 class="font-headline text-base font-bold text-primary">Importar de catálogo EU</h3>
+            <p class="text-xs text-on-surface-variant mt-0.5">Busca el código o título de la convocatoria. Se importará como INACTIVA y abrirá el editor.</p>
+          </div>
+          <button id="conv-import-close" class="text-on-surface-variant hover:text-error">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="px-6 py-3 border-b border-outline-variant/20">
+          <input id="conv-import-search" type="text" placeholder="Ej: ERASMUS-EDU-2026-PEX-COVE o Centres of Vocational"
+            class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 focus:border-primary focus:outline-none text-sm" autofocus />
+        </div>
+        <div id="conv-import-list" class="flex-1 overflow-y-auto px-3 py-3">
+          <p class="text-sm text-on-surface-variant text-center py-10"><span class="spinner"></span> Cargando catálogo...</p>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+
+    const closeFn = () => modal.remove();
+    document.getElementById('conv-import-close').addEventListener('click', closeFn);
+    modal.addEventListener('click', e => { if (e.target === modal) closeFn(); });
+
+    let allCalls = [];
+    try {
+      const res = await API.get('/convocatorias?limit=2000');
+      allCalls = (res.items || []).filter(c => c.source !== 'salto');
+    } catch (e) {
+      document.getElementById('conv-import-list').innerHTML = `<p class="text-sm text-error text-center py-10">Error: ${esc(e.message || e)}</p>`;
+      return;
+    }
+
+    const renderList = (filter) => {
+      const f = filter.toLowerCase();
+      const filtered = !f ? allCalls.slice(0, 200)
+        : allCalls.filter(c =>
+            (c.source_id || '').toLowerCase().includes(f) ||
+            (c.title || '').toLowerCase().includes(f) ||
+            (c.programme || '').toLowerCase().includes(f)
+          ).slice(0, 200);
+
+      const listEl = document.getElementById('conv-import-list');
+      if (filtered.length === 0) {
+        listEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-10">Sin resultados</p>';
+        return;
+      }
+      listEl.innerHTML = `
+        <div class="text-[10px] text-on-surface-variant px-2 mb-2">${filtered.length} resultado${filtered.length !== 1 ? 's' : ''}${f ? '' : ' (mostrando primeros 200)'}</div>
+        ${filtered.map(c => {
+          const dlBadge = c.deadline
+            ? `<span class="text-[10px] text-on-surface-variant">DL ${c.deadline.slice(0, 10)}</span>` : '';
+          const efsBadge = c.available_in_efs
+            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-bold">YA EN EFS</span>' : '';
+          const grant = c.budget_per_project_max_eur
+            ? `<span class="text-[10px] text-on-surface-variant">€${Number(c.budget_per_project_max_eur).toLocaleString('en')}</span>` : '';
+          return `
+          <button class="conv-import-row group w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-surface-container transition-colors" data-source-id="${esc(c.source_id || c.call_id)}">
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-semibold text-on-surface group-hover:text-primary truncate">${esc(c.title || '—')}</div>
+              <div class="flex items-center gap-2 mt-0.5 text-[10px] text-on-surface-variant font-mono">${esc(c.source_id || c.call_id)}</div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">${grant} ${dlBadge} ${efsBadge}</div>
+          </button>`;
+        }).join('')}`;
+      listEl.querySelectorAll('.conv-import-row').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const sid = btn.dataset.sourceId;
+          btn.disabled = true; btn.style.opacity = '0.5';
+          try {
+            const result = await API.post('/admin/data/programs/import-from-feed', { source_id: sid });
+            closeFn();
+            Toast.show(result.already_existed ? 'Ya existía, abriendo...' : 'Convocatoria importada (INACTIVA)', 'ok');
+            convOpenProgram(result.id, sid);
+          } catch (e) {
+            Toast.show('Error: ' + (e.message || e), 'err');
+            btn.disabled = false; btn.style.opacity = '1';
+          }
+        });
+      });
+    };
+
+    renderList('');
+    document.getElementById('conv-import-search').addEventListener('input', e => renderList(e.target.value));
   }
 
   async function convOpenProgram(programId, programName, prog) {

@@ -72,6 +72,21 @@ const Convocatorias = (() => {
     return `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${m.class}">${escapeHtml(m.label)}</span>`;
   }
 
+  function availabilityBadge(item) {
+    if (!item.available_in_efs) return '';
+    const code = escapeHtml(item.source_id || item.call_id || '');
+    return `<button type="button"
+      class="conv-create-project inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border bg-emerald-50 text-emerald-700 border-emerald-300 hover:bg-emerald-100 transition-colors"
+      data-action-type="${code}"
+      data-title="${escapeHtml(item.title || '')}"
+      data-deadline="${escapeHtml(item.deadline || '')}"
+      data-grant="${escapeHtml(String(item.budget_per_project_max_eur || ''))}"
+      title="Crear un proyecto vinculado a esta convocatoria">
+      <span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">check_circle</span>
+      Convocatoria disponible → Crear proyecto
+    </button>`;
+  }
+
   /* ── lifecycle ───────────────────────────────────────────── */
 
   async function init() {
@@ -153,9 +168,54 @@ const Convocatorias = (() => {
     }
 
     document.getElementById('convocatorias-list')?.addEventListener('click', (e) => {
+      // Create-project button — intercept BEFORE generic card click.
+      const btn = e.target.closest('.conv-create-project');
+      if (btn) {
+        e.stopPropagation();
+        createProjectFromCall(btn);
+        return;
+      }
       const card = e.target.closest('[data-call-id]');
       if (card) openDetail(card.dataset.callId);
     });
+  }
+
+  async function createProjectFromCall(btn) {
+    const actionType = btn.dataset.actionType;
+    const title      = btn.dataset.title || actionType;
+    const deadline   = btn.dataset.deadline || null;
+    const grantStr   = btn.dataset.grant || '';
+    const grant      = grantStr ? parseFloat(grantStr) : null;
+
+    // If not logged in: redirect to login with redirect hint.
+    const token = (window.API && API.getToken && API.getToken());
+    if (!token) {
+      sessionStorage.setItem('post_login_create_call', JSON.stringify({ actionType, title, deadline, grant }));
+      location.hash = '#auth';
+      return;
+    }
+
+    btn.disabled = true;
+    const originalHtml = btn.innerHTML;
+    btn.innerHTML = '<span class="spinner inline-block"></span> Creando…';
+    try {
+      const project = await API.post('/intake/projects', {
+        name: title.slice(0, 200),
+        type: actionType,
+        deadline: deadline || null,
+        eu_grant: grant || 0,
+      });
+      const pid = project?.id || project?.data?.id;
+      // Navigate to My Projects and open the new one.
+      location.hash = '#my-projects';
+      if (pid && typeof window.Intake !== 'undefined' && typeof Intake.openProject === 'function') {
+        setTimeout(() => Intake.openProject(pid), 200);
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.innerHTML = originalHtml;
+      alert('Error creando proyecto: ' + (err.message || err));
+    }
   }
 
   /* ── render ─────────────────────────────────────────────── */
@@ -243,7 +303,7 @@ const Convocatorias = (() => {
       class="bg-surface rounded-2xl border border-outline-variant/30 p-5 hover:shadow-lg hover:border-primary/40 transition-all cursor-pointer flex flex-col gap-3">
 
       <div class="flex items-start gap-2 justify-between flex-wrap">
-        ${sourceBadge(item.source)}
+        ${availabilityBadge(item) || sourceBadge(item.source)}
         ${deadlinePill(item)}
       </div>
 
