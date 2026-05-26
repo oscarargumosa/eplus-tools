@@ -379,6 +379,84 @@ const Convocatorias = (() => {
     </div>`;
   }
 
+  function renderSummaryTable(item) {
+    // 20-row structured summary table (per Oscar's spec). Uses AI-extracted
+    // fields when feed lacks them.
+    const fmt = (v) => (v === null || v === undefined || v === '' || (Array.isArray(v) && v.length === 0)) ? null : v;
+    const money = (n) => n ? `€${Number(n).toLocaleString('es-ES')}` : null;
+    const pct = (n) => n != null ? `${n}%` : null;
+    const list = (arr) => Array.isArray(arr) && arr.length ? arr.join(' · ') : null;
+
+    const rows = [
+      ['Programa',                            fmt(item.programme)],
+      ['Código de la convocatoria',           fmt(item.source_id)],
+      ['Objetivo principal',                  fmt(item.main_objective)],
+      ['Presupuesto total',                   money(item.budget_total_eur)],
+      ['Presupuesto por proyecto',            money(item.budget_per_project_max_eur) || money(item.budget_per_project_min_eur)],
+      ['Nº estimado de proyectos',            fmt(item.expected_grants)],
+      ['% financiación europea',              pct(item.cofinancing_pct)],
+      ['Cofinanciación requerida',            item.cofinancing_pct != null ? `${100 - Number(item.cofinancing_pct)}% del solicitante` : null],
+      ['Deadline',                            fmt(fmtDate(item.deadline))],
+      ['Duración del proyecto',               item.duration_months ? `${item.duration_months} meses` : null],
+      ['Tipo de convocatoria',                fmt(item.call_type) || fmt(item.deadline_model)],
+      ['Dirección General / Agencia',         fmt(item.managing_agency)],
+      ['Plataforma de presentación',          fmt(item.submission_platform) || 'EU Funding & Tenders Portal'],
+      ['Nº mínimo de socios',                 fmt(item.min_partners) || fmt(item.min_countries)],
+      ['Países mínimos requeridos',           fmt(item.min_countries)],
+      ['Tipos de socios elegibles',           list(item.eligible_entity_types)],
+      ['Tipo de coordinador permitido',       list(item.coordinator_types_allowed)],
+      ['Actividades financiables',            list(item.eligible_activities)],
+      ['Público objetivo',                    fmt(item.audience_ai) || fmt(item.audience)],
+      ['Prioridades temáticas',               list(item.themes_ai) || list(item.crossCuttingPriorities)],
+    ];
+    const present = rows.filter(([, v]) => v !== null);
+    if (!present.length) return '';
+    return `
+      <div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Tabla resumen</div>
+        <table class="w-full text-sm">
+          <tbody>
+            ${present.map(([k, v]) => `
+              <tr class="border-b border-outline-variant/15 last:border-b-0">
+                <td class="py-2 pr-3 text-on-surface-variant text-[12px] font-semibold w-1/3 align-top">${escapeHtml(k)}</td>
+                <td class="py-2 text-on-surface text-[13px] align-top">${escapeHtml(String(v))}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
+  }
+
+  function renderFaq(item) {
+    if (!item.faq || !item.faq.length) return '';
+    return `
+      <div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Preguntas frecuentes</div>
+        <div class="space-y-1.5">
+          ${item.faq.map((f, i) => `
+            <details class="group rounded-lg bg-surface-container-low border border-outline-variant/15 px-3 py-2.5 ${i === 0 ? 'open' : ''}" ${i === 0 ? 'open' : ''}>
+              <summary class="cursor-pointer text-sm font-semibold text-on-surface flex items-center gap-2 list-none">
+                <span class="material-symbols-outlined text-[16px] text-primary transition-transform group-open:rotate-90">chevron_right</span>
+                <span class="flex-1">${escapeHtml(f.q || '')}</span>
+              </summary>
+              <div class="mt-2 ml-6 text-[13px] text-on-surface whitespace-pre-wrap">${escapeHtml(f.a || '')}</div>
+            </details>`).join('')}
+        </div>
+      </div>`;
+  }
+
+  function renderListSection(label, arr, icon = 'list') {
+    if (!Array.isArray(arr) || !arr.length) return '';
+    return `
+      <div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2 flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[14px]">${icon}</span>${escapeHtml(label)}
+        </div>
+        <ul class="space-y-1 list-disc list-inside text-[13px] text-on-surface">
+          ${arr.map(it => `<li>${escapeHtml(it)}</li>`).join('')}
+        </ul>
+      </div>`;
+  }
+
   function renderDetail(item) {
     const programme = [item.programme, item.sub_programme].filter(Boolean).join(' · ');
     const summary   = item.summary_es || item.summary_en || '';
@@ -428,23 +506,19 @@ const Convocatorias = (() => {
 
         ${summary ? `<p class="text-sm text-on-surface-variant">${escapeHtml(summary)}</p>` : ''}
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface-container-low rounded-xl">
-          ${row('Identificador', item.source_id)}
-          ${row('Estado', item.status)}
-          ${row('Apertura', fmtDate(item.open_date))}
-          ${row('Deadline', fmtDate(item.deadline))}
-          ${row('Presupuesto total', budget)}
-          ${row('Por proyecto', projRange)}
-          ${row('Subvenciones esperadas', item.expected_grants)}
-          ${row('Cofinanciación', item.cofinancing_pct ? `${item.cofinancing_pct}%` : null)}
-          ${row('Duración', item.duration_months ? `${item.duration_months} meses` : null)}
-          ${row('Países elegibles', (item.eligible_countries || []).join(', '))}
-        </div>
+        ${renderSummaryTable(item)}
+
+        ${renderListSection('Actividades financiables', item.eligible_activities, 'check_circle')}
+        ${renderListSection('Gastos elegibles', item.eligible_costs, 'paid')}
+        ${renderListSection('Gastos NO permitidos', item.non_eligible_costs, 'block')}
+        ${renderListSection('Resultados esperados', item.expected_outcomes, 'rocket_launch')}
+
+        ${renderFaq(item)}
 
         ${priorities ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Prioridades transversales</div><div class="flex flex-wrap gap-1.5">${priorities}</div></div>` : ''}
         ${keywords ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Palabras clave</div><div class="flex flex-wrap gap-1.5">${keywords}</div></div>` : ''}
 
-        ${docs ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Documentos</div><ul class="list-disc list-inside space-y-1">${docs}</ul></div>` : ''}
+        ${docs ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Documentos oficiales</div><ul class="list-disc list-inside space-y-1">${docs}</ul></div>` : ''}
 
         <div class="pt-4 border-t border-outline-variant/20">
           <button type="button" id="conv-chat-open"

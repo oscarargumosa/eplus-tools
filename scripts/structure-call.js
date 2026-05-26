@@ -37,6 +37,24 @@ const LIMIT = (() => { const a = args.find(x => x.startsWith('--limit=')); retur
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// IMPORTANT: keep this list in sync with the UI. Order matters — preserved verbatim.
+const FAQ_QUESTIONS = [
+  '¿Para qué sirve realmente esta convocatoria?',
+  '¿Qué problema europeo intenta resolver?',
+  '¿Cuántos proyectos suelen financiar?',
+  '¿Cuánto dinero hay disponible en total?',
+  '¿Cuánto puede pedir cada proyecto?',
+  '¿La subvención cubre el 100%?',
+  '¿Qué porcentaje tengo que cofinanciar?',
+  '¿Qué gastos se pueden incluir?',
+  '¿Qué gastos NO están permitidos?',
+  '¿Cuántos socios necesito?',
+  '¿De qué países deben ser los socios?',
+  '¿Qué tipo de entidades tienen más posibilidades?',
+  '¿Qué actividades espera Europa que hagamos?',
+  '¿Qué resultados esperan obtener?',
+];
+
 const SYSTEM_PROMPT = `Eres un experto en convocatorias EU (Erasmus+, Horizon, ESF+, Digital Europe, CERV, LIFE, etc.).
 Te paso el texto de un "call document" oficial. Extrae los campos clave a JSON.
 
@@ -45,29 +63,42 @@ REGLAS:
 - Si un campo no aparece literalmente en el texto, devuelve null. No inventes.
 - Los importes en euros: número decimal sin separadores ni símbolos.
 - Cofinanciación / max funding rate: porcentaje 0-100.
-- Idioma del scope_summary_es y de las preguntas/respuestas del FAQ: SIEMPRE español, claro y directo.
-- El FAQ debe responder las dudas reales que tendría alguien que quiere preparar la propuesta: presupuesto, deadline, quién puede aplicar, mínimo de socios, duración, qué hay que entregar, criterios de evaluación.
-- 5 a 8 entradas en el FAQ.
+- Idioma de los strings (main_objective, scope_summary_es, audience, FAQ, etc.): SIEMPRE español, claro y directo, accesible para alguien que NO es experto en fondos europeos.
+
+EL FAQ ES FIJO. Responde EXACTAMENTE estas 14 preguntas, en este orden, sin añadir ni quitar ninguna. Si para alguna no encuentras respuesta clara en el texto, responde "El documento no lo especifica" — no inventes:
+${FAQ_QUESTIONS.map((q, i) => `  ${i + 1}. ${q}`).join('\n')}
 
 SCHEMA:
 {
+  "programme": string|null,                 // ej "Horizon Europe", "Erasmus+", "ESF+", "LIFE", "Digital Europe"
+  "call_code": string|null,                 // identificador oficial de la call (ej "ERASMUS-EDU-2026-PEX-COVE")
+  "main_objective": string|null,            // 1 frase: qué busca conseguir la call
+  "managing_agency": string|null,           // ej "EACEA", "EISMEA", "CINEA", "REA", "ERCEA", "HaDEA", "Comisión DG EAC"
+  "submission_platform": string|null,       // ej "EU Funding & Tenders Portal", "SEDIA portal"
+  "call_type": string|null,                 // ej "Project Grant - Single Stage", "Lump Sum II", "Two-stage RIA", "Coordination & Support Action"
+  "budget_total_eur": number|null,
   "budget_per_project_max_eur": number|null,
   "budget_per_project_min_eur": number|null,
-  "budget_total_eur": number|null,
   "expected_grants": number|null,
-  "cofinancing_pct": number|null,
+  "cofinancing_pct": number|null,           // % de la UE (ej 80 = UE financia 80%)
+  "applicant_cofinancing_pct": number|null, // % que pone el solicitante (ej 20)
   "duration_months_min": number|null,
   "duration_months_max": number|null,
-  "min_partners": number|null,
-  "min_countries": number|null,
   "deadline": "YYYY-MM-DD"|null,
   "deadline_model": "single-stage"|"two-stage"|"multiple cut-off"|null,
-  "eligible_entity_types": string[],   // ej: ["NGO", "Public body", "University", "SME"]
+  "min_partners": number|null,
+  "min_countries": number|null,
+  "eligible_entity_types": string[],        // ej: ["ONG", "Universidad", "Administración pública", "PYME"]
+  "coordinator_types_allowed": string[],    // tipos que pueden LIDERAR el consorcio. [] si no se restringe
   "eligible_countries_summary": string|null,
-  "audience": string|null,             // a quién va dirigido (max 200 chars)
-  "scope_summary_es": string,          // resumen ejecutivo en español, 3-5 frases, qué propone la call y para qué
-  "themes": string[],                  // 2-5 temas/tags clave para búsqueda
-  "faq": [ { "q": string, "a": string } ]
+  "audience": string|null,                  // a quién va dirigido (1-2 frases)
+  "eligible_activities": string[],          // 3-8 bullets cortos de qué se puede hacer con la subvención
+  "eligible_costs": string[],               // 3-8 bullets cortos: qué gastos son elegibles
+  "non_eligible_costs": string[],           // 2-6 bullets: qué gastos NO están permitidos
+  "expected_outcomes": string[],            // 2-5 bullets: resultados esperados por la UE
+  "scope_summary_es": string,               // resumen ejecutivo, 3-5 frases, qué propone la call y para qué
+  "themes": string[],                       // 3-6 prioridades temáticas / tags
+  "faq": [ { "q": string, "a": string } ]   // EXACTAMENTE las 14 Q de arriba, en orden, con respuestas claras
 }`;
 
 function hashText(s) { return crypto.createHash('sha256').update(s).digest('hex').slice(0, 16); }
@@ -76,7 +107,7 @@ async function callClaude(text) {
   const trimmed = text.slice(0, MAX_INPUT_CHARS);
   const res = await client.messages.create({
     model: MODEL,
-    max_tokens: 2500,
+    max_tokens: 4000,
     system: SYSTEM_PROMPT,
     messages: [{ role: 'user', content: `TEXTO DEL CALL:\n\n${trimmed}\n\nDevuelve solo el JSON.` }],
   });
