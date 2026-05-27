@@ -459,16 +459,19 @@ const Convocatorias = (() => {
       );
     }
 
-    // Secondary sort comparator (deadline/budget/title)
+    // Secondary sort comparator (deadline/recent/opening/budget/title)
+    const nullsLast = (av, bv, asc = true) => {
+      if (!av && !bv) return 0;
+      if (!av) return 1;
+      if (!bv) return -1;
+      return asc ? String(av).localeCompare(String(bv)) : String(bv).localeCompare(String(av));
+    };
     const secondary = (a, b) => {
-      if (state.sort === 'deadline') {
-        if (!a.deadline && !b.deadline) return 0;
-        if (!a.deadline) return 1;
-        if (!b.deadline) return -1;
-        return a.deadline.localeCompare(b.deadline);
-      }
-      if (state.sort === 'budget') return (Number(b.budget_total_eur) || 0) - (Number(a.budget_total_eur) || 0);
-      if (state.sort === 'title')  return (a.title || '').localeCompare(b.title || '');
+      if (state.sort === 'deadline') return nullsLast(a.deadline, b.deadline, true);   // próximas primero
+      if (state.sort === 'recent')   return nullsLast(a.publication_date, b.publication_date, false); // recientes primero
+      if (state.sort === 'opening')  return nullsLast(a.open_date, b.open_date, true);  // próximas a abrir primero
+      if (state.sort === 'budget')   return (Number(b.budget_total_eur) || 0) - (Number(a.budget_total_eur) || 0);
+      if (state.sort === 'title')    return (a.title || '').localeCompare(b.title || '');
       return 0;
     };
     // Primary sort: convocatorias YA disponibles en EFS aparecen primero.
@@ -624,6 +627,8 @@ const Convocatorias = (() => {
       ['Nº estimado de proyectos',            fmt(item.expected_grants)],
       ['% financiación europea',              pct(item.cofinancing_pct)],
       ['Cofinanciación requerida',            item.cofinancing_pct != null ? `${100 - Number(item.cofinancing_pct)}% del solicitante` : null],
+      ['Fecha de publicación',                fmt(fmtDate(item.publication_date))],
+      ['Fecha de apertura',                   fmt(fmtDate(item.open_date))],
       ['Deadline',                            fmt(fmtDate(item.deadline))],
       ['Duración del proyecto',               item.duration_months ? `${item.duration_months} meses` : null],
       ['Tipo de convocatoria',                fmt(item.call_type) || fmt(item.deadline_model)],

@@ -86,6 +86,7 @@ function toCard(c, structured) {
     has_ai_summary: !!(s?.scope_summary_es && !c.summary_es),
     status: c.status,
     open_date: c.open_date,
+    publication_date: c.publication_date,
     deadline: c.deadline,
     deadline_model: pick(c.deadline_model, s?.deadline_model),
     budget_total_eur: pick(c.budget_total_eur, s?.budget_total_eur),

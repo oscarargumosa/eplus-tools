@@ -85,6 +85,18 @@ function hardExec(label, cmd, args) {
     process.exit(2);
   }
 
+  // ── 2b. PDF + LLM enrichment for any NEW calls ────────────────────
+  // All four scripts below are idempotent: they skip what's already on disk.
+  // Cost: $0 if no new calls, ~$0.10/new call (structure + embed).
+  // For this to actually reach the container in production, data/call_structured/
+  // and data/call_vectors/ MUST be symlinks to the mounted volume:
+  //   ln -s /data/eplus-shared/call_structured data/call_structured
+  //   ln -s /data/eplus-shared/call_vectors    data/call_vectors
+  results.fetch_pdfs       = softExec('Fetch new call PDFs',         'node', ['scripts/fetch-call-pdfs.js']);
+  results.extract_texts    = softExec('Extract text from PDFs',      'node', ['scripts/extract-call-text.js']);
+  results.structure_calls  = softExec('LLM-structure new calls',     'node', ['scripts/structure-call.js']);
+  results.embed_calls      = softExec('Embed new calls',             'node', ['scripts/embed-calls.js']);
+
   // ── 3. Anything to commit? ───────────────────────────────────────
   const status = execCapture('git', ['status', '--porcelain', 'data/']);
   if (!status.ok) {

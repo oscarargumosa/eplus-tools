@@ -21,7 +21,18 @@ Pipeline orchestrator: `scripts/refresh-all.js`.
 | 3 | `scripts/sedia/sync.js`             | `data/calls/` (EU funding calls from F&T Portal)        | yes |
 | 4 | `scripts/bdns/sync.js`              | `data/bdns/` (Spanish public subsidies from BDNS)       | yes |
 | 5 | `scripts/funding/build-unified.js`  | `data/funding_unified.json` (cross-source merged)       | yes |
-| 6 | `git commit + push origin data-auto`| only if `data/` diff is non-empty                       | no  |
+| 6a | `scripts/fetch-call-pdfs.js`       | downloads PDF for any NEW SEDIA call → `data/call_pdfs/` | yes |
+| 6b | `scripts/extract-call-text.js`     | text-extracts new PDFs → `data/call_extracts/`          | yes |
+| 6c | `scripts/structure-call.js`        | Claude LLM extraction (30 fields + FAQ) → `data/call_structured/` (symlinked to volume) | yes |
+| 6d | `scripts/embed-calls.js`           | OpenAI embeddings → `data/call_vectors/` (symlinked to volume) | yes |
+| 7  | `git commit + push origin data-auto`| only if `data/` diff is non-empty                       | no  |
+
+All 6a-d steps are idempotent (skip what's already on disk). Cost: $0 if no
+new calls, ~$0.10 per new call (Anthropic Sonnet + OpenAI embeddings).
+
+**For 6c-d to actually reach the live container**, `data/call_structured/` and
+`data/call_vectors/` inside the cron repo MUST be symlinks to the Coolify
+volume mount `/data/eplus-shared/...` (see VPS setup below).
 
 "Soft fail" = the orchestrator logs the failure and continues. If ALL scrapers
 fail (network outage, etc.) the orchestrator aborts before commit so the
@@ -89,9 +100,23 @@ else
   git checkout data-auto
 fi
 
-# 4. Smoke test the orchestrator manually
+# 4. Wire enrichment outputs to the Coolify volume so the live app sees them
+#    (one-time, otherwise the cron writes to its own checkout and the
+#     container never picks up new structured/vectors data)
+rm -rf data/call_structured data/call_vectors
+ln -s /data/eplus-shared/call_structured data/call_structured
+ln -s /data/eplus-shared/call_vectors    data/call_vectors
+
+# 4b. Copy the API keys the LLM steps need into .env (gitignored)
+cat <<'EOF' > .env
+ANTHROPIC_API_KEY=<copia el valor de la .env de la app Coolify>
+OPENAI_API_KEY=<copia el valor de la .env de la app Coolify>
+EOF
+chmod 600 .env
+
+# 5. Smoke test the orchestrator manually
 node scripts/refresh-all.js
-# Expect: scrapers run, commit + push if data/ changed.
+# Expect: scrapers run, then 6a-d skip everything (nothing new), commit + push if data/ changed.
 
 # 5. As root: install systemd units
 sudo cp /opt/eplus-tools-cron/infra/systemd/eplus-data-refresh.service /etc/systemd/system/
