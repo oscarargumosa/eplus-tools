@@ -57,6 +57,7 @@ async function runDiagnosis(projectId, { userId } = {}) {
     if (allFindings.length > 0) {
       const rows = allFindings.map((f, idx) => [
         uuidv4(), runId, f.source_pass, f.pattern_id || null,
+        f.source_eval_finding_id || null,
         f.criterion || null, f.severity || 'medium',
         f.finding_text, f.evidence_quote || null,
         f.applies_to_section || null, f.suggested_action || null,
@@ -64,8 +65,9 @@ async function runDiagnosis(projectId, { userId } = {}) {
       ]);
       await pool.query(
         `INSERT INTO diagnosis_findings
-         (id, run_id, source_pass, pattern_id, criterion, severity,
-          finding_text, evidence_quote, applies_to_section, suggested_action,
+         (id, run_id, source_pass, pattern_id, source_eval_finding_id,
+          criterion, severity, finding_text, evidence_quote,
+          applies_to_section, suggested_action,
           estimated_score_delta, state, sort_order)
          VALUES ?`,
         [rows]
@@ -130,7 +132,8 @@ async function getRunWithFindings(runId) {
   }
 
   const [findings] = await pool.query(
-    `SELECT id, source_pass, pattern_id, criterion, severity,
+    `SELECT id, source_pass, pattern_id, source_eval_finding_id,
+            criterion, severity,
             finding_text, evidence_quote, applies_to_section,
             suggested_action, estimated_score_delta, state, sort_order
      FROM diagnosis_findings

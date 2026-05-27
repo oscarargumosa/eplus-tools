@@ -70,6 +70,17 @@ async function applyAction(actionId, userId) {
     [action.finding_id]
   );
 
+  // 6. If this finding came from an evaluator letter (Pass D), mark the
+  // original evaluation_findings row as addressed so future Pass D runs
+  // do not re-surface it.
+  await pool.query(
+    `UPDATE evaluation_findings ef
+     JOIN diagnosis_findings df ON ef.id = df.source_eval_finding_id
+     SET ef.addressed_at = NOW()
+     WHERE df.id = ? AND ef.addressed_at IS NULL`,
+    [action.finding_id]
+  );
+
   return { actionId, versionId, alreadyApplied: false };
 }
 
@@ -84,6 +95,17 @@ async function rejectAction(actionId, userId) {
   );
   await pool.query(
     `UPDATE diagnosis_findings SET state = 'dismissed' WHERE id = ?`,
+    [action.finding_id]
+  );
+  // If this was a Pass D finding (from evaluator letter), mark addressed
+  // too — the user has explicitly dismissed it, so we don't want it to
+  // resurface on the next re-run. To reconsider later, the user can
+  // re-upload the letter.
+  await pool.query(
+    `UPDATE evaluation_findings ef
+     JOIN diagnosis_findings df ON ef.id = df.source_eval_finding_id
+     SET ef.addressed_at = NOW()
+     WHERE df.id = ? AND ef.addressed_at IS NULL`,
     [action.finding_id]
   );
   return { actionId };

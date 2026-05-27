@@ -57,11 +57,13 @@ async function runPassD(form) {
   const sourceEvalId = form.project?.source_evaluation_id;
   if (!sourceEvalId) return [];
 
-  // Load letter findings (negatives only; positives don't feed Pass D)
+  // Load letter findings (negatives only, NOT already addressed by a previous fix)
   const [findings] = await pool.query(
     `SELECT id, criterion, sub_criterion, severity, finding_text, fragment_quote, applies_to_section
      FROM evaluation_findings
-     WHERE letter_id = ? AND is_positive = 0
+     WHERE letter_id = ?
+       AND is_positive = 0
+       AND addressed_at IS NULL
      ORDER BY
        FIELD(severity, 'critical', 'high', 'medium_high', 'medium', 'medium_low', 'low'),
        sort_order`,
@@ -82,6 +84,7 @@ async function runPassD(form) {
     return {
       source_pass: 'D',
       pattern_id: null,
+      source_eval_finding_id: f.id,   // link back to the evaluation_findings row
       criterion: normalizeCriterionLabel(f.criterion),
       severity: f.severity || 'medium',
       finding_text: findingText,
