@@ -814,6 +814,8 @@ async function getWritingRules(programId) {
 // ── Get eval guidance for a specific section ────────────────
 
 async function getEvalGuidanceForSection(sectionFieldId) {
+  const empty = { guidance: '', mandatoryConstraint: '', wordLimit: null };
+
   // Map field ID to form_ref pattern
   const refMap = {
     's1_1_text': 'sec_1', 's1_2_text': 'sec_1', 's1_3_text': 'sec_1',
@@ -824,29 +826,103 @@ async function getEvalGuidanceForSection(sectionFieldId) {
     's5_1_text': 'sec_5', 's5_2_text': 'sec_5',
     'summary_text': 'summary',
   };
-  const formRef = refMap[sectionFieldId];
-  if (!formRef) return '';
+  let formRef = refMap[sectionFieldId];
+  // Per-WP fields (s4_2_wp_<wpId>) share guidance with 4.2 work-package question
+  if (!formRef && typeof sectionFieldId === 'string' && sectionFieldId.startsWith('s4_2_wp_')) {
+    formRef = refMap['s4_2_text'];
+  }
+  if (!formRef) return empty;
 
-  // Get section + questions
+  // Get section
   const [sections] = await db.execute(
     'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ?', [formRef]
   );
-  if (!sections.length) return '';
-
+  if (!sections.length) return empty;
   const sec = sections[0];
-  const [questions] = await db.execute(
-    'SELECT title, code FROM eval_questions WHERE section_id = ? ORDER BY sort_order', [sec.id]
-  );
 
-  // Find the specific sub-question matching this field
-  const subNum = sectionFieldId.match(/s(\d+)_(\d+)/);
+  // Derive target question code from field id (s2_1_1_text → "2.1.1", s4_2_wp_* → "4.2")
+  let targetCode = null;
+  if (typeof sectionFieldId === 'string' && sectionFieldId.startsWith('s4_2_wp_')) {
+    targetCode = '4.2';
+  } else {
+    const m = sectionFieldId.match(/^s(\d+(?:_\d+)*)_text$/);
+    if (m) targetCode = m[1].replace(/_/g, '.');
+  }
+
+  // Get questions of the section with the full narrative brief fields
+  const [allQuestions] = await db.execute(
+    `SELECT id, code, title, description, general_context, connects_from, connects_to,
+            global_rule, word_limit, page_limit
+     FROM eval_questions WHERE section_id = ? ORDER BY sort_order`,
+    [sec.id]
+  );
+  if (!allQuestions.length) return empty;
+
+  // Prefer the question whose code matches the field; fall back to all questions of the section
+  const focused = targetCode ? allQuestions.filter(q => q.code === targetCode) : [];
+  const useQuestions = focused.length ? focused : allQuestions;
+
+  // Fetch criteria for the selected questions, sorted by priority (alta > media > baja) then sort_order
+  const qIds = useQuestions.map(q => q.id);
+  const criteriaByQ = {};
+  if (qIds.length) {
+    const placeholders = qIds.map(() => '?').join(',');
+    const [criteria] = await db.execute(
+      `SELECT question_id, title, priority, mandatory,
+              intent, elements, example_strong, avoid, sort_order
+       FROM eval_criteria
+       WHERE question_id IN (${placeholders})
+       ORDER BY question_id, FIELD(priority, 'alta', 'media', 'baja'), sort_order`,
+      qIds
+    );
+    for (const c of criteria) {
+      (criteriaByQ[c.question_id] = criteriaByQ[c.question_id] || []).push(c);
+    }
+  }
+
+  // Compose the guidance + collect mandatory constraints and word_limit
   let guidance = `EVALUATION SECTION: ${sec.title}`;
   if (sec.max_score > 0) guidance += ` (max ${sec.max_score} points)`;
-  guidance += '\n\nEVALUATORS WILL ASSESS:';
-  for (const q of questions) {
-    guidance += `\n• ${q.title}`;
+
+  const mandatoryConstraints = [];
+  let wordLimit = null;
+
+  for (const q of useQuestions) {
+    guidance += `\n\n### Question ${q.code}: ${q.title}`;
+    if (q.general_context) {
+      guidance += `\n\nCONTEXT — what the evaluator looks for:\n${q.general_context}`;
+    }
+    if (q.connects_from) {
+      guidance += `\n\nGROUND THIS ANSWER IN (prior sections you must respect):\n${q.connects_from}`;
+    }
+    if (q.connects_to) {
+      guidance += `\n\nDOWNSTREAM SECTIONS WILL BUILD ON THIS:\n${q.connects_to}\nWhat you commit here will be reused later — be consistent and concrete.`;
+    }
+    if (q.global_rule) {
+      mandatoryConstraints.push(`[${q.code}] ${q.global_rule}`);
+    }
+    if (!wordLimit && q.word_limit) wordLimit = q.word_limit;
+
+    const crits = criteriaByQ[q.id] || [];
+    if (crits.length) {
+      guidance += `\n\nCRITERIA THE EVALUATOR SCORES (priority order):`;
+      for (const c of crits) {
+        const pri = c.priority ? ` [${c.priority}]` : '';
+        const star = c.mandatory ? ' ★MANDATORY' : '';
+        guidance += `\n\n  • ${c.title}${pri}${star}`;
+        if (c.intent) guidance += `\n    INTENT — ${c.intent}`;
+        if (c.elements) guidance += `\n    MUST INCLUDE — ${c.elements}`;
+        if (c.example_strong) guidance += `\n    STRONG EXAMPLE — ${c.example_strong}`;
+        if (c.avoid) guidance += `\n    AVOID — ${c.avoid}`;
+      }
+    }
   }
-  return guidance;
+
+  return {
+    guidance,
+    mandatoryConstraint: mandatoryConstraints.join('\n'),
+    wordLimit,
+  };
 }
 
 // ── Get previously generated sections for consistency ───────
@@ -976,7 +1052,14 @@ async function generateSection(instanceId, sectionId, projectContext, programId,
     projId ? retrieveResearchChunks(ragQuery, projId, 6) : Promise.resolve(''),
   ]);
 
-  console.log(`[Writer] writingRules loaded: style=${writingRules.writing_style ? writingRules.writing_style.length + ' chars' : 'NULL'}, ai=${writingRules.ai_detection_rules ? writingRules.ai_detection_rules.length + ' chars' : 'NULL'}, evalGuidance=${evalGuidance ? evalGuidance.length + ' chars' : 'NONE'}, RAG=${ragChunks ? ragChunks.length + ' chars' : 'NONE'}, prevSections=${previousSections ? previousSections.length + ' chars' : 'NONE'}`);
+  const evalGuidanceLen = evalGuidance && evalGuidance.guidance ? evalGuidance.guidance.length : 0;
+  const evalConstraintLen = evalGuidance && evalGuidance.mandatoryConstraint ? evalGuidance.mandatoryConstraint.length : 0;
+  console.log(`[Writer] writingRules loaded: style=${writingRules.writing_style ? writingRules.writing_style.length + ' chars' : 'NULL'}, ai=${writingRules.ai_detection_rules ? writingRules.ai_detection_rules.length + ' chars' : 'NULL'}, evalGuidance=${evalGuidanceLen ? evalGuidanceLen + ' chars' : 'NONE'}, mandatoryRule=${evalConstraintLen ? evalConstraintLen + ' chars' : 'NONE'}, wordLimit=${evalGuidance?.wordLimit || 'default'}, RAG=${ragChunks ? ragChunks.length + ' chars' : 'NONE'}, prevSections=${previousSections ? previousSections.length + ' chars' : 'NONE'}`);
+
+  // Use word_limit from eval_questions when defined, otherwise fall back to the generic hint
+  const lengthHint = evalGuidance?.wordLimit
+    ? `LENGTH: target ~${evalGuidance.wordLimit} words (call-defined limit). Quality over filler.`
+    : 'LENGTH: 500-700 words. Quality over quantity.';
 
   // Build system prompt — writing rules FIRST (highest priority)
   let system = `You are a real project coordinator writing a funding proposal. You are NOT an AI assistant — you are a practitioner who has spent months designing this project with your partners. You write from lived experience, not from templates.
@@ -984,7 +1067,7 @@ async function generateSection(instanceId, sectionId, projectContext, programId,
 PERSONA: You are the project coordinator at ${coordinatorName || 'the lead organisation'}. You know every partner personally. You have visited their offices, discussed the project over coffee, argued about methodology in video calls. Write like that person — with conviction, specificity, and occasional imperfection.
 
 SECTION TO WRITE: "${sectionTitle}"
-LENGTH: 500-700 words. Quality over quantity.
+${lengthHint}
 OUTPUT: Only the section text. No title, no numbering, no meta-commentary.
 
 ══ LANGUAGE (MANDATORY) ══
@@ -1045,8 +1128,14 @@ The output MUST be plain prose. Pasting markdown into the EACEA form gives it aw
     user += `\n\n══ WRITE THIS SPECIFIC WORK PACKAGE (NOT THE OTHERS) ══\n${wpFocusBlock}\nWrite a narrative that describes this WP concretely: its objective, the sequence of its activities, who leads and who contributes, expected outputs/deliverables, and how the timing fits the project. Reference other WPs only when coherence demands it. Do NOT summarise the whole workplan — only this WP.`;
   }
 
-  if (evalGuidance) {
-    user += `\n\n══ WHAT THE EVALUATOR SCORES IN THIS SECTION ══\n${evalGuidance}\nAddress ALL of these points, but naturally woven into the narrative — not as a checklist.`;
+  // Mandatory constraints (eval_questions.global_rule) — non-negotiable rules from the call
+  if (evalGuidance && evalGuidance.mandatoryConstraint) {
+    user += `\n\n══ MANDATORY CONSTRAINTS — DO NOT VIOLATE (call requirements) ══\n${evalGuidance.mandatoryConstraint}`;
+  }
+
+  // Evaluator guidance — intent/elements/example_strong/avoid per criterion + connects_from/to
+  if (evalGuidance && evalGuidance.guidance) {
+    user += `\n\n══ WHAT THE EVALUATOR SCORES IN THIS SECTION ══\n${evalGuidance.guidance}\nAddress ALL of these criteria, but woven naturally into the narrative — not as a checklist. The STRONG EXAMPLE shows the level of specificity expected; do not copy it, write your project's equivalent.`;
   }
 
   // RAG — but limit to most relevant chunks to avoid dilution
@@ -4151,6 +4240,7 @@ module.exports = {
   refineApplyPhase,
   retrieveRelevantChunks,
   getWritingRules,
+  getEvalGuidanceForSection,
   // Prep Studio v2
   getPrepConsorcio,
   linkPartnerOrg,
