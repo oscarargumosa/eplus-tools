@@ -1,0 +1,64 @@
+{
+  "id": 1110748,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE BADAJOZ",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE BADAJOZ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "909187",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 150000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES A ASOCIACIONES DE MUJERES Y FEDERACIONES DE ASOCIACIONES DE MUJERES PARA EL DESARROLLO DE ACCIONES QUE FOMENTEN LA IGUALDAD DE OPORTUNIDADES ENTRE MUJERES Y HOMBRES Y FACILITEN LA PARTICIPACION SOCIAL DE LAS MUJERES RURALES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES431 - Badajoz"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA SUBVENCIONES A ASOCIACIONES DE MUJERES Y FEDERACIONES DE ASOCIACIONES DE MUJERES PARA EL DESARROLLO DE ACCIONES QUE FOMENTEN LA IGUALDAD DE OPORTUNIDADES ENTRE MUJERES Y HOMBRES Y FACILITEN  LA PARTICIPACION SOCIAL DE LAS MUJERES RURALES 2026",
+  "urlBasesReguladoras": "http://www.dip-badajoz.es/diputacion/subvenciones/index.php",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "30 días naturales a partir del siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464756,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "05._Bis_Decreto_y_Bases_Convocatoria_Igualdad_Mujeres_Rurales_2026_firmado-comprimido.pdf",
+      "long": 298658,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

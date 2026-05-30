@@ -1,0 +1,76 @@
+{
+  "id": 1109302,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "LA RIOJA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "907741",
+  "fechaRecepcion": "2026-05-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Conv. ayudas sociales de permanencia UR curso 25/26",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES230 - La Rioja"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "regula el procedimiento de concesión de ayudas sociales de permanencia en la Universidad de La Rioja",
+  "urlBasesReguladoras": "https://ias1.larioja.org/cex/sistemas/GenericoServlet?servlet=cex.sistemas.dyn.portal.ImgServletSis&code=oumCvWIgBUF6lChv9ZDgP_hXhSM_FmcHbhvPnHNbRXjApHyqPVxRsoD-HW0E2YV6LEXZYSr1AOFH%0Aqw5OHdNZ89IS76hYgCq2S13w34QVisg%3D",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a su publicación en el BOR",
+  "textFin": "A los veinte días hábiles desde su publicación en BOR",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1460986,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BOFr_65.pdf",
+      "long": 258042,
+      "datMod": "2026-05-25",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 212944,
+      "titulo": "Resolución 42/2026, de 22 de mayo, de la Consejería de Educación y Empleo, por la que se convocan ayudas sociales de permanencia en la Universidad de La Rioja durante el curso 2025/2026 (extracto)",
+      "tituloLeng": null,
+      "texto": "<p>BDNS: 907741</p><p>De conformidad con lo previsto en los artículos 17.3.b) y 20.8.a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica el extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones (https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/907741).</p><p>Primero. Convocatoria: Se convocan ayudas sociales de permanencia en la Universidad de La Rioja durante el curso 2025/2026.</p><p>Segundo. Beneficiarios: estudiantes que se encuentren realizando estudios oficiales de Grado en la Universidad de La Rioja en el curso 2025/2026 y con créditos matriculados en terceras, cuartas y sucesivas matrículas que, en la fecha de cierre de presentación de solicitudes, cumplan los requisitos establecidos en las bases reguladoras.</p><p>Quedan excluidos del ámbito de aplicación de estas ayudas los supuestos previstos en el apartado segundo de la resolución de convocatoria.</p><p>Tercero. Objeto: financiación parcial de terceras, cuartas y sucesivas matrículas de los alumnos, que, cumpliendo los requisitos establecidos en la Orden EDU/30/2018, de 29 de mayo, estén matriculados en la Universidad de La Rioja en el curso 2025/2026. Estas ayudas se convocan en régimen de concesión directa.</p><p>Cuarto. Bases reguladoras: Orden EDU/30/2018, de 29 de mayo, de la Consejería de Educación, Formación y Empleo, por la que se regula el procedimiento de concesión de ayudas sociales de permanencia en la Universidad de La Rioja (BOR de 6 de junio).</p><p>Quinto. Cuantía total de la subvención: 50.000 euros.</p><p>Sexto. La presentación de la solicitud deberá ser firmada electrónicamente por el solicitante.</p><p>Séptimo. Plazo de presentación de solicitudes: veinte días hábiles a contar desde el día siguiente a la publicación del presente extracto en el BOR.</p><p>Octavo. Otros datos de interés:</p><p>Solicitud: se realizará mediante el formulario accesible por vía telemática a través de la sede electrónica del Gobierno de La Rioja (https://web.larioja.org/oficina-electronica/tramite?n=24434).</p><p>Documentación: la prevista en el apartado octavo de la resolución de convocatoria.</p><p>Requisitos de concesión: los previstos en los apartados tercero y cuarto de la resolución de convocatoria.</p><p>Forma de abono: conforme a lo establecido en el apartado decimotercero de la resolución de convocatoria.</p>",
+      "textoLeng": null,
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=40637821-1-PDF-577668",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

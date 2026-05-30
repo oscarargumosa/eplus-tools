@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "909281",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "CONV AYUDAS PARA EQUIPAM CIENTÍF-TÉCN DE REDLAB 2026 E INFRAESTR CM FEDER",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-05-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 4300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/909281",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin-completo/bocm-20241018/249/i.-comunidad-de-madrid/c%29-otras- disposiciones/consejer%C3%ADa-de-educaci%C3%B3n%2C-ciencia--y-universidades",
+  "text_inicio": "EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN EN EL BOCM DEL EXTRACTO DE LA CONVOCATORIA",
+  "text_fin": "15 DÍAS HÁBILES A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOC EN EL BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-30T04:07:00.882Z"
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1110826,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBACETE",
+    "nivel3": "AYUNTAMIENTO DE ALBACETE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "909265",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones para entidades urbanísticas de conservación en 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES421 - Albacete"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Convocatoria y bases reguladoras de subvenciones para entidades urbanísticas de conservación en 2026",
+  "urlBasesReguladoras": "https://albacete.sedipualba.es/segex/documentoexpediente.aspx?id=21913117&abrir=True",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto en el BOP Albacete",
+  "textFin": "10 días naturales a partir del día siguiente a la publicación del extracto en el BOP Albacete",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464923,
+      "descripcion": "TEXTO INTEGRO DE LA CONVOCATORIA",
+      "nombreFic": "Convocatoria y bases reguladoras de Subvenciones para Entidades Urbanísticas de Conservación 2026 - SEFYCU 5923386.pdf",
+      "long": 471738,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464921,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "17- ACUERDO JGL 21-MAYO-2026 (PROMOC.ECONOMICA) - SEFYCU 5991833.pdf",
+      "long": 255087,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -10,7 +10,7 @@
   "status": "open",
   "statusCode": "31094502",
   "opening": "2026-04-01",
-  "deadline": "2026-06-03",
+  "deadline": "2026-06-09",
   "deadlineModel": "single-stage",
   "actionType": "PPPA Project Grants",
   "actionCode": "PPPA-PJG",
@@ -98,5 +98,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-05-29T04:01:54.893Z"
+  "fetchedAt": "2026-05-30T04:03:39.721Z"
 }

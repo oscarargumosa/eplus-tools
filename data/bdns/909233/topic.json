@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "909233",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALL D'UIXÓ, LA / AYUNTAMIENTO DE VALL D'UIXÓ, LA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Convocatoria 2026 jubilados y pensionistas. Concesiones y pago",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-29",
+  "open_date": "2026-06-03",
+  "deadline": "2026-07-01",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://sede.lavallduixo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO&DETALLE=6269006458068670207121",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/909233",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lavallduixo.es/sites/L01121264/files/2023-07/ORDENANZA%20DEL%20OTORGAMIENTO%20DE%20SUBVENCIONES%20_0.pdf",
+  "text_inicio": "20 días hábiles siguientes al de la publicación del extracto de la convocatoria en el BOP.",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-30T04:07:00.866Z"
+}

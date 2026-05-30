@@ -1,0 +1,64 @@
+{
+  "id": 1110827,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE TOLEDO",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE TOLEDO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "909266",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 420000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras y Convocatoria Subv. Armonización y Respiro familiar contratación personal para acoger, atender y cuidar escolares en los C.E.I., C.E.P  y C.R.A. y C.E.E. ubicados en las Entidades Locales provincia de Toledo. Curso Escolar 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES425 - Toledo"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases 54 a 63 de ejecucción del Presupuesto de Gastos de la Diputación Provincial de Toledo",
+  "urlBasesReguladoras": "https://www.diputoledo.es/global/ver-pdf/36599",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto en el B.O.P. de Toledo",
+  "textFin": "15 días después contados desde el día siguiente a la publicación extracto en el B.O.P. de Toledo",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464938,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases y Convocatoria Armonización y Respiro familiar acogimiento escolares CEIP, CRA y CEE 2026.pdf",
+      "long": 600810,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1110753,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONT-ROIG DEL CAMP",
+    "nivel3": "AYUNTAMIENTO DE MONT-ROIG DEL CAMP"
+  },
+  "sedeElectronica": "https://mont-roig.eadministracio.cat/info.0",
+  "codigoBDNS": "909192",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones para el fomento de las actividades, actuaciones y programas culturales que organizan las entidades locales de Mont-roig del Camp, para el año 2026",
+  "descripcionLeng": "convocatòria per la concessió de subvencions per al foment de les activitats, actuacions i programes culturals que organitzen les entitats locals de Mont-roig del Camp, per a l’any 2026, ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases específicas de subvenciones de Cultura, aprobadas por el Pleno del 13 de abril de 2016 (publicadas en el BOPT núm. 162 del 08/25/16 y en www.mont-roig.cat).",
+  "urlBasesReguladoras": "https://mont-roig.cat/govern-obert/transparencia/convocatories-de-subvencions-i-ajuts/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-30",
+  "textInicio": "A partir de su publicación en el BOPT",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464762,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Publicacio convocatoria culturals BDNS_Catala.docx",
+      "long": 46937,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464761,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Publicacion convocatoria culturales BDNS_Castella.docx",
+      "long": 47746,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

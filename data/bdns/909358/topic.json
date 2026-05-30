@@ -1,0 +1,60 @@
+{
+  "source": "bdns",
+  "source_id": "909358",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE LA RIOJA",
+  "nuts_codes": [
+    "ES23"
+  ],
+  "nuts_primary": "ES23",
+  "title": "Convocatoria de ayudas Erasmus+ para la movilidad internacional del personal técnico, de gestión y de administración y servicios en el marco de la alianza EU-GIFT",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5748,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.unirioja.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/909358",
+  "documents": [],
+  "bases_reguladoras_url": "https://www.unirioja.es/administracion-y-servicios/oficina-de-relaciones-internacionales-y-responsabilidad-social/movilidad-pas/",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la Convocatoria en el BOR",
+  "text_fin": "Siete días naturales a partir del día siguiente a la publicación de la Convocatoria en el BOR",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-30T04:07:00.889Z"
+}

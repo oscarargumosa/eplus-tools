@@ -1,0 +1,72 @@
+{
+  "id": 1110698,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "909137",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Orden de 21 de mayo de 2026 por la que se establecen las bases reguladoras para la concesión, en régimen de concurrencia competitiva, del Premio Elías Valiña para distinguir la labor revitalizador de los valores propios de los Caminos de Santiago, y se co",
+  "descripcionLeng": "Orde do 21 de maio de 2026 pola que se establecen as bases reguladoras para a concesión, en réxime de concorrencia competitiva, do Premio Elías Valiña para distinguir o labor revitalizador dos valores propios dos Camiños de Santiago, e se convoca a súa XX",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Prestación de servicios a la comunidad en general",
+      "codigo": "84.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Orden de 21 de mayo de 2026 por la que se establecen las bases reguladoras para la concesión, en régimen de concurrencia competitiva, del Premio Elías Valiña para distinguir la labor revitalizador de los valores propios de los Caminos de Santiago, y se co",
+  "urlBasesReguladoras": "https://xunta.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-03",
+  "fechaFinSolicitud": "2026-07-03",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464597,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "G0766-210526-0002_gal_20260529_103124.pdf",
+      "long": 96263,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464596,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "G0766-210526-0002_cas_20260529_103105.pdf",
+      "long": 96545,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

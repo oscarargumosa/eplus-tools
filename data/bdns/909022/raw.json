@@ -1,0 +1,72 @@
+{
+  "id": 1110583,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HOSPITALET DE LLOBREGAT, L'",
+    "nivel3": "AYUNTAMIENTO DE HOSPITALET DE LLOBREGAT, L'"
+  },
+  "sedeElectronica": "https://seuelectronica2.l-h.cat/siac/Publicaciones.aspx?t=SS&lang=ca-ES",
+  "codigoBDNS": "909022",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25850,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES PARTICULARES PARA LA CONCESIÓN DE SUBVENCIONES, EN RÉGIMEN DE CONCURENCIA COMPETITIVA, EN EL ÁMBITO  DE MERCADOS PARA EL EJERCICIO 2026",
+  "descripcionLeng": "CONVOCATÒRIA I LES BASES PARTICULARS PER A LA CONCESSIÓ DESUBVENCIONS, EN RÈGIM DE CONCURRÈNCIA COMPETITIVA, EN L'ÀMBIT DE MERCATS PER A L'EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES PARTICULARES PARA LA CONCESIÓN DE SUBVENCIONES, EN RÉGIMEN DE CONCURENCIA COMPETITIVA, EN EL ÁMBITO  DE MERCADOS PARA EL EJERCICIO 2026",
+  "urlBasesReguladoras": "http://bop.diba.cat/anuncio/3948789/aprovacio-definitiva-de-les-bases-particulars-que-regulen-la-concessio-de-subvencions-en-regim-de-concurrencia-competitiva-en-l-ambit-dels-mercats-per-a-l-exercici-2026-ajuntament-de-l-hospitalet-de-llobregat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente de la publicación del extracto de la convocatoria en el BOP Barcelona",
+  "textFin": "Veinte días hábiles a contar desde el día siguiente de la publicación del extracto en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464265,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "01. MERCATS_Acord JGL _CAT.pdf",
+      "long": 525042,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464262,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01. MERCATS_Acord JGL _CAS.pdf",
+      "long": 461652,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

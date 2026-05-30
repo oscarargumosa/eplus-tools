@@ -1,0 +1,80 @@
+{
+  "id": 1110630,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SECUITA, LA",
+    "nivel3": "AYUNTAMIENTO DE SECUITA, LA"
+  },
+  "sedeElectronica": "https://lasecuita.eadministracio.cat/info.0",
+  "codigoBDNS": "909069",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones económicas de carácter social para el acceso de niños/as y jóvenes al casal de verano del municipio de La Secuita",
+  "descripcionLeng": "Convocatòria de subvencions econòmiques de caire social per a l'accés d'infants i joves al casal d’estiu del municipi de La Secuita",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones económicas de carácter social para el acceso de jóvenes al casal de verano del municipio de La Secuita",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/360372/bases-per-a-la-concessio-de-subvencions-economiques-de-caire-social-per-a-l-acces-d-infants-i-joves-al-casal-d-estiu-del-municipi-aprovacio-inicial-ajuntament-secuita-la",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-08-10",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464379,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria en catala.pdf",
+      "long": 310608,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464382,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "modelo de solicitud 2026.pdf",
+      "long": 329176,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464395,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria en castella.pdf",
+      "long": 278920,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

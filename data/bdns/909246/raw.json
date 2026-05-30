@@ -1,0 +1,83 @@
+{
+  "id": 1110807,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRENT",
+    "nivel3": "AYUNTAMIENTO DE TORRENT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "909246",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES EN MATERIA DE EDUCACIÓN 2025 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "SUBVENCIONES EN MATERIA DE EDUCACIÓN CURSO 2025 2026",
+  "urlBasesReguladoras": "https://torrent.es/ayudas-y-subvenciones/todas-las-ayudas-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Subvenciones en materia de educación",
+  "textFin": "Subvenciones en materia de educación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1464870,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CERTIFICADO_DE_ACUERDO_-SUBV_EN_MATERIA_DE_EDUCACIÓN_Y_AMPAS_2025-2026.pdf",
+      "long": 732642,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464872,
+      "descripcion": "Bases reguladoras",
+      "nombreFic": "Bases_subvenciones_en_materia_educativa_2025-2026._Pie_diligencia.pdf",
+      "long": 401435,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1464871,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Bases_subvencions_en_matèria_educativa_2025-2026._Peu_diligència.pdf",
+      "long": 492547,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

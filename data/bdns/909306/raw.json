@@ -1,0 +1,84 @@
+{
+  "id": 1110867,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELNOU",
+    "nivel3": "AYUNTAMIENTO DE CASTELNOU"
+  },
+  "sedeElectronica": "https://castelnou.sedelectronica.es/info.0",
+  "codigoBDNS": "909306",
+  "fechaRecepcion": "2026-05-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE CONSERVACIÓN Y REHABILITACIÓN DE LA EDIFICACIÓN Y MEJORA DE LA ACCESIBILIDAD, CASTELNOU (TERUEL) AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Subvención para la Conservación y Rehabilitación de la Edificación, y a la Mejora de la Accesibilidad,  Castelnou,  Año 2026",
+  "urlBasesReguladoras": "https://castelnou.sedelectronica.es/transparency",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Fecha de publicación en el BOP de Teruel",
+  "textFin": "Plazo de 2 meses desde la publicación de la convocatoria en el BOP de Teruel",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1465033,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anexo I - Bases Reguladoras Subvención Conservación y Rehabilitacion de la Edificacion y Mejora de la Accesibilidad 2026.pdf",
+      "long": 272128,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1465037,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "Anexo solicitud SUBVENCION EN MATERIA DE CONSERVACIÓN Y REHABILITACIÓN DE LA EDIFICACIÓN Y MEJORA DE LA ACCESIBILIDAD AÑO 2026.pdf",
+      "long": 546954,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    },
+    {
+      "id": 1465036,
+      "descripcion": "Decreto 2026/0073 de 19 de mayo de 2026 . Tramitacion subvencion",
+      "nombreFic": "DECRETO 2026-0073 de 19 mayo 2026 de tramitación de subvenciones para conservación y rehabilitacion de viviendas y mejora de la accesibilidad. Castelnou. 2026.pdf",
+      "long": 631374,
+      "datMod": "2026-05-29",
+      "datPublicacion": "2026-05-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
