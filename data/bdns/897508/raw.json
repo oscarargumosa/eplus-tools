@@ -1,0 +1,84 @@
+{
+  "id": 1099069,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'INTERIOR I SEGURETAT PÚBLICA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897508",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800000,
+  "mrr": false,
+  "descripcion": "Subvención dirigida a entidades locales municipales y supramunicipales sin policía local porimpulsar la instalación de dispositivos de videovigilanciapolicial, para aumentar la seguridad de la población",
+  "descripcionLeng": "Subvenció adreada a entitats municipals i supramunicipals sense policia local perimpulsar la installació de dispositius de videovigilànciapolicial, per tal d'augmentar la seguretat de la població",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Seguridad Ciudadana e Instituciones Penitenciarias",
+  "descripcionBasesReguladoras": "Orden ISP/4/2026, de 19 de enero, por la que se aprueban las bases que tienen que regir la concesión de subvenciones para la adquisición, la instalación y el mantenimiento de dispositivos de videovigilancia en ayuntamientos sin policía local",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1034761",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "20 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432648,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Res. convocatòria signada_CA_2.pdf",
+      "long": 509699,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1432647,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatòria corregida serveis lingüístics CAST_1.pdf",
+      "long": 421697,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208443,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1041615",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

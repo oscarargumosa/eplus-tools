@@ -1,0 +1,76 @@
+{
+  "id": 1101158,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GANDIA",
+    "nivel3": "AYUNTAMIENTO DE GANDIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899597",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 26000,
+  "mrr": false,
+  "descripcion": "2026 - Convocatoria de subvenciones por concurrencia competitiva destinadas a Premios Literarios 'Ciudad de Gandia 2026'.",
+  "descripcionLeng": "2026 -  convocatoria de subvencions per concurrència competitiva destinades a Premis Literaris Ciutat de Gandia 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "2026 - Convocatoria de subvenciones por concurrencia competitiva destinadas a Premios Literarios 'Ciudad de Gandia 2026'.",
+  "urlBasesReguladoras": "https://bop.dival.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-17",
+  "fechaFinSolicitud": "2026-06-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437576,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260414_Certificat_LCAJGCG 2026-0180 [Cert. punto 15 Exp 15930-2026. Aprobación de bases y convocatoria por concurrencia competitiva para otorgamiento de los Premios Literarios Ciudad de Gandía 2026] (1).pdf",
+      "long": 889668,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209310,
+      "titulo": "2026 - Convocatoria subvenciones por concurrencia competitiva destinadas a Premios Literarios ´Cuidad de Gandia 2026´",
+      "tituloLeng": "2026 - Convocatoria subvencions per concurrencia competitiva destinades a Premios Literarios ´Cuidad de Gandia 2026´",
+      "texto": "<p>El objeto de las presentes bases es definir las condiciones y el procedimiento a seguir para participar en la convocatoria de Premios Literarios que el Ayuntamiento de Gandia destina a promover la creación literaria en la lengua de nuestros Clásicos y difundirla en el municipio.Las modalidades de premios son las siguientes:* Premio Ausiàs March de Poesía: premio al mejor poemario original presentado.* Premio Joanot Martorell de Narrativa: premio al mejor original presentado de narrativa.</p>",
+      "textoLeng": "<p>L'objecte de les presents bases és definir les condicions i el procediment a seguir per a participar en la convocatòria de Premis Literaris que l'Ajuntament de Gandia destina a promoure la creació literària en la llengua dels nostres Clàssics i difondre-la en el municipi.Les modalitats de premis són les següents:* Premi Ausiàs March de Poesia: premi al millor poemari original presentat.* Premi Joanot Martorell de Narrativa: premi al millor original presentat de narrativa.</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04609&lang=es",
+      "cve": "BOPV-2026/04609",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

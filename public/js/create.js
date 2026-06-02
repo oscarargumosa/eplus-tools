@@ -165,7 +165,7 @@ const CreateProject = (() => {
       link.classList.toggle('active', link.dataset.route === 'intake');
     });
     location.hash = 'intake';
-    document.getElementById('topbar-title').textContent = 'Presupuestar';
+    document.getElementById('topbar-title').textContent = 'Diseñar';
   }
 
   async function uploadDocx(e) {

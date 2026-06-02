@@ -1,0 +1,92 @@
+{
+  "id": 1098631,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA COLOMA DE GRAMENET",
+    "nivel3": "AYUNTAMIENTO DE SANTA COLOMA DE GRAMENET"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897070",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "Convocatoria otorgar subv. régimen de concurrencia competitiva a entidades sin ánimo de lucro para el fomento del asociacionismo y realizar proyectos de promoción y desarrollo del comercio local en el marco del Circuito de Comercio para el 2024 y 2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de consultoría de gestión empresarial",
+      "codigo": "70.2"
+    },
+    {
+      "descripcion": "Relaciones públicas y comunicación",
+      "codigo": "73.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladora para otorgar subv. en régimen concurrencia competitiva entidades sin ánimo lucro para fomentar el asociacionismo y la realización de proyectos de promo,desarrollo del comercio local en el marco del CCS de Sta Coloma de Gr para 2022 y 2023",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3210227/aprovacio-definitiva-de-les-bases-reguladores-per-a-l-atorgament-de-subvencions-a-entitats-sense-anim-de-lucre-per-al-foment-de-l-associacionisme-i-la-realitzacio-de-projectes-de-promocio-i-desenvolupament-del-comerc-lo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-08",
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": "al dia següent de la publicació de la convocatòria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429622,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_2026_CASTELLÀ.pdf",
+      "long": 402984,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429625,
+      "descripcion": "bdns catalan",
+      "nombreFic": "BDNS_2026_CATALÀ.pdf",
+      "long": 383741,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429624,
+      "descripcion": "bdns castellano",
+      "nombreFic": "BDNS_CASTELLANO_2026.pdf",
+      "long": 189501,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429623,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_2026_CATALÀ_ENTITATS_COMERÇ.pdf",
+      "long": 406943,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

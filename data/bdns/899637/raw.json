@@ -1,0 +1,104 @@
+{
+  "id": 1101198,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ÁVILA",
+    "nivel3": "AYUNTAMIENTO DE ÁVILA"
+  },
+  "sedeElectronica": "AYUNTAMIENTO DE ÁVILA - sede.avila.es",
+  "codigoBDNS": "899637",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA ORGANIZACIONES NO GUBERNAMENTALES DE DESARROLLO EN ORDEN A LA REALIZACIÓN DE ACCIONES SOCIALES DESTINADAS A LA POBLACIÓN DE PAÍSES EN VÍAS DE DESARROLLO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS SUBVENCIONES PARA ORGANIZACIONES NO GUBERNAMENTALES DE DESARROLLO EN ORDEN A LA REALIZACIÓN DE ACCIONES SOCIALES DESTINADAS A LA POBLACIÓN DE PAÍSES EN VÍAS DE\nDESARROLLO.",
+  "urlBasesReguladoras": "https://www.diputacionavila.es/bops/2021/18-05-2021/18-05-2021_107521.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación en el BOP",
+  "textFin": "30 días naturales desde la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437679,
+      "descripcion": "DECLARACIÓN RESPONSABLE DE LA CERTEZA Y CORRECTA EJECUCIÓN DEL PROYECTO",
+      "nombreFic": "ANEXO IV_DECLARACION RESPONSABLE DE LA CERTEZA Y CORRECTA EJECUCION DEL PROYECTO_Subvenciones ONGs 2026.pdf",
+      "long": 94642,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437676,
+      "descripcion": "CUENTA JUSTIFICATIVA",
+      "nombreFic": "ANEXO III_CUENTA JUSTIFICATIVA_Subvenciones ONGs 2026.pdf",
+      "long": 126803,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437683,
+      "descripcion": "DECLARACIÓN RESPONSABLE DE CONSUMIDOR FINAL",
+      "nombreFic": "ANEXO V_DECLARACION RESPONSABLE CONSUMIDOR FINAL_Subvenciones ONGs 2026.pdf",
+      "long": 93136,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437673,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "ANEXO I_SOLICITUD_Subvenciones ONGs 2026.pdf",
+      "long": 93824,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437672,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES Subvenciones ONGs 2026.pdf",
+      "long": 160019,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437674,
+      "descripcion": "DECLARACIÓN RESPONSABLE DE PERSONAS JURÍDICAS",
+      "nombreFic": "ANEXO II_DECLARACION RESPONSABLE PERSONA JURIDICA_Subvenciones ONGs 2026.pdf",
+      "long": 100709,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

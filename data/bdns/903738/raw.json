@@ -1,0 +1,64 @@
+{
+  "id": 1105299,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GANDIA",
+    "nivel3": "AYUNTAMIENTO DE GANDIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903738",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30600,
+  "mrr": false,
+  "descripcion": "2026 - BASES REGULADORAS Y CONVOCATORIA DEL PROCESO DE SELECCIÓN Y DE CONCESIÓN DE BECAS A PERSONAS BENEFICIARIAS PARTICIPANTES EN LOS ITINERARIOS DEL DISPOSITIVO NEXOS: ALIANZAS PARA EL EMPLEO TERRITORIAL. CONECTANDO OPORTUNIDADES, PERSONAS Y TERRITORIO.",
+  "descripcionLeng": "2026 - BASES REGULADORES I CONVOCATÒRIA DEL PROCÉS DE SELECCIÓ I DE CONCESSIÓ DE BEQUES A PERSONES BENEFICIÀRIES PARTICIPANTS EN ELS ITINERARIS DEL DISPOSITIU NEXES: ALIANCES PER A L'OCUPACIÓ TERRITORIAL. CONNECTANT OPORTUNITATS, PERSONES I TERRITORI.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Desempleo",
+  "descripcionBasesReguladoras": "2026 - BASES REGULADORAS Y CONVOCATORIA DEL PROCESO DE SELECCIÓN Y DE CONCESIÓN DE BECAS A PERSONAS BENEFICIARIAS PARTICIPANTES EN LOS ITINERARIOS DEL DISPOSITIVO NEXOS: ALIANZAS PARA EL EMPLEO TERRITORIAL. CONECTANDO OPORTUNIDADES, PERSONAS Y TERRITORIO.",
+  "urlBasesReguladoras": "https://bop.dival.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-20",
+  "fechaFinSolicitud": "2026-06-03",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449298,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260429_Certificat_LCAJGCG 2026-0220 [Cert. punt 12 - Exp.13744-2026. Aprovació de les bases i la convocatòria per a la concessió de beques a persones participants en el projecte «NeXos»].pdf",
+      "long": 891976,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

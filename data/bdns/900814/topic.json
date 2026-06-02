@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900814",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / LA RIOJA / CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+  "nuts_codes": [
+    "ES230"
+  ],
+  "nuts_primary": "ES230",
+  "title": "SUBVENCIONES A ENTIDADES LOCALES EN MATERIA ADICCIONES",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 120000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "86",
+      "descripcion": "Actividades sanitarias"
+    }
+  ],
+  "apply_url": "http://www.larioja.org",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900814",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://web.larioja.org/normativa?n=dyn-na03190",
+  "text_inicio": "Al día siguiente de la publicación en el BOR",
+  "text_fin": "Un mes computado a partir del día siguiente a la publicación de la convocatoria en el  B.O.R",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210399,
+      "titulo": "Resolución de 21 de abril de 2026, de la Consejería de Salud y Políticas Sociales, por la que se convocan subvenciones en régimen de concurrencia competitiva, a las Entidades Locales de la Comunidad Autónoma de La Rioja para la realización de planes, programas o actuaciones de prevención de adicciones y promoción y educación para la salud en la comunidad (extracto)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto</p><p>Incentivar la ejecución de planes, programas o actuaciones de prevención de adicciones y promoción y educación para la salud en la comunidad, durante el ejercicio 2026.</p><p>Segundo. Bases Reguladoras.</p><p>Orden SAL/25/2022 (publicada en el B.O.R. el 24/05/2022), de 19 de mayo de la Consejería de Salud, modificada en sus artículos 9 y 13 por la Orden SPS/39/2025, de 18 de junio, (publicada en el B.O.R. el 20/06/2025) por la que se aprueban las bases reguladoras de la concesión de subvenciones, en régimen de concurrencia competitiva, a las entidades locales de la Comunidad Autónoma de La Rioja para la realización de planes, programas o actuaciones de prevención de adicciones y promoción y educación para la salud en la comunidad.</p><p>Tercero. Beneficiarios.</p><p>Entidades Locales de la Comunidad Autónoma de La Rioja que hayan realizado o vayan a realizar, en sus respectivos territorios y durante el año 2026, planes, programas o actuaciones a los que se refiere la citada Orden SAL/25/2022, de 19 de mayo, (B.O.R. nº 98, de 24/05/2022), por la que se aprueban las bases reguladoras, modificada en sus artículos 9 y 13 por la Orden SPS/39/2025 de 18 de junio (B.O.R. nº 117, de 20/06/2025).</p><p>Cuarto. Cuantía</p><p>El importe total de la convocatoria para el año 2026 es de ciento veinte mil euros (120.000,00 euros). Imputación presupuestaria: 2026/06.03.3133.461.00.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Un mes contado a partir del día siguiente a aquel en que tenga lugar la publicación del extracto de la resolución de convocatoria en el Boletín Oficial de La Rioja.</p><p>Sexto. Otros datos de interés.</p><p>Convocatoria. El texto íntegro de la resolución de convocatoria estará disponible en la página web del Gobierno de La Rioja www.larioja.org desde el enlace de la oficina electrónica, apartado Salud.</p><p>Procedimiento de concesión: Se tramitará en régimen de concurrencia competitiva, de acuerdo con lo que establece el artículo 22.1 del Decreto 14/2006, de 16 de febrero, regulador del régimen jurídico de subvenciones en el Sector Público de la Comunidad Autónoma de La Rioja.</p><p>Solicitudes: El modelo de solicitud se puede obtener accediendo a la página web del Gobierno de La Rioja www.larioja.org desde el enlace de la oficina electrónica, apartado Salud.</p><p>Documentación: Junto con la solicitud, las Entidades Locales interesadas deberán presentar la documentación establecida en el artículo ocho de las bases reguladoras.</p><p>Criterios de concesión: Los previstos en el artículo trece de las bases reguladoras.</p><p>Forma de pago: Según lo previsto en el artículo quince de las bases reguladoras.</p><p>Plazo y forma de justificación: Conforme a lo dispuesto en el artículo catorce de las bases reguladoras.</p>",
+      "textoLeng": null,
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=40238132-1-PDF-577082",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.882Z"
+}

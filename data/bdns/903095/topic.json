@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903095",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALMERÍA / DIPUTACIÓN PROVINCIAL DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "CONVOCATORIA DE SUBVENCIONES DESTINADAS A LA EDICIÓN Y PUBLICACIÓN DE OBRAS SELECCIONADAS POR EL INSTITUTO DE ESTUDIOS ALMERIENSES, PARA EL EJERCICIO 2026 DECRETO 452 DE 4 DE MAYO",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": "2026-05-07",
+  "deadline": "2026-06-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "www.dipame.org",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903095",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipalme.org/Servicios/cmsdipro/index.nsf/tablon.xsp?p=dipalme&documentId=EB8219B625756308C1258287002C69C0",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.040Z"
+}

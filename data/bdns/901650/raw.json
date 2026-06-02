@@ -1,0 +1,76 @@
+{
+  "id": 1103211,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AVILÉS",
+    "nivel3": "AYUNTAMIENTO DE AVILÉS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901650",
+  "fechaRecepcion": "2026-04-27",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A LOS IES Y CENTROS PUBLICOS INTEGRADOS DE FORMACION PROFESIONAL DE AVILES PARA PROYECTOS INMERSION LINGÜISTICA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONCURRENCIA COMPETITIVA",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2019/06/04/2019-05178.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOPA",
+  "textFin": "15 DÍAS HÁBILES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442967,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Decreto_2569_2026.pdf",
+      "long": 374361,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210110,
+      "titulo": "SUBVENCIONES A LOS IES Y CENTROS PUBLICOS INTEGRADOS DE FORMACION PROFESIONAL DE AVILES PARA PROYECTOS INMERSION LINGÜISTICA 2026",
+      "tituloLeng": null,
+      "texto": "<p>Extracto de la Resolución 2569/2026, de fecha 9 de abril de 2026, de la Concejalía de Educación, por la que se convocan subvenciones en régimen de concurrencia competitiva a Institutos públicos de Educación Secundaria (IES) y Centros Integrados de Formación Profesional públicos (CFIP) del municipio de Avilés</p><p></p><p>Primero.- Objeto:</p><p>Fomentar que los IES y CIFP públicos sean espacios para la participación de la comunidad educativa, la convivencia ciudadana y la cohesión social, reforzando y potenciando el apoyo a las iniciativas de los centros educativos para con aquellos estudiantes que se encuentren en riesgo de exclusión social, y por cuyas circunstancias económicas familiares no puedan participar en igualdad de condiciones en proyectos educativos que impliquen gasto, como son, en este caso, las actividades de inmersión lingüística, y por tanto, apoyar económicamente la participación en las actividades en inmersión lingüística que se impulsen desde los centros educativos para que los IES y CIFP públicos puedan dotar a las familias con escasos recursos económicos de medios necesarios para su participación.</p><p></p><p>Segundo.- Beneficiarios:</p><p>Podrán concurrir a esta convocatoria los Institutos públicos de Educación Secundaria y Centros Integrados de Formación Profesional públicos del municipio de Avilés.</p><p></p><p>Tercero.- Bases Reguladoras:</p><p>Ordenanza General de Subvenciones del Ayuntamiento de Avilés, publicada en el BOPA nº 106 de 4 de junio de 2019.</p><p></p><p>Cuarto.- Importe:</p><p>El importe máximo de esta subvención asciende a 20.000 €.</p><p></p><p>Quinto.- Lugar y Plazo de presentación de solicitudes:</p><p>Las solicitudes deberán presentarse necesariamente a través de medios electrónicos, acompañadas de la documentación indicada en la convocatoria. Para ello, las entidades solicitantes deberán acceder a https://sedeelectronica.aviles.es, seleccionar la convocatoria de subvención específica y completar la tramitación electrónica de la misma.</p><p>El plazo de presentación de las solicitudes será de 15 días hábiles contados a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial del Principado de Asturias.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/2026/05/05/2026-03465.pdf",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

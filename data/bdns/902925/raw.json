@@ -1,0 +1,76 @@
+{
+  "id": 1104486,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
+    "nivel3": "DIRECCIÓN PROVINCIAL DEL SEPE DE MURCIA"
+  },
+  "sedeElectronica": "https://sede.sepe.gob.es/portalSede/procedimientos-y-servicios/empresas/empleo/programa-fomento-empleo-agrario.html",
+  "codigoBDNS": "902925",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 6055379.36,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PROGRAMA DE FOMENTO DE EMPLEO AGRARIO 2026 DP SEPE MURCIA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "AFECTACIÓN AL PROGRAMA DE FOMENTO DE EMPLEO AGRARIO DE CRÉDITOS EN ZONAS RURALES DEPRIMIDAS",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-13739",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-04",
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN BOE",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446716,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA SUBVENCION PFEA 2026 .pdf",
+      "long": 297947,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210669,
+      "titulo": "Extracto de la Resolución de la Dirección Provincial del Servicio Público de Empleo Estatal en Murcia por la que se convocan subvenciones para la ejecución de proyectos de obras y servicios de interés general y social, de garantía de rentas, con cargo al Programa de Fomento de Empleo Agrario en 2026, en el ámbito exclusivo de la provincia de Murcia.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Corporaciones locales o entidades dependientes o vinculadas a una Administración Local, pertenecientes a la provincia de Murcia, que gocen de capacidad técnica y de gestión suficiente para la ejecución del correspondiente proyecto.</p><p>Segundo. Objeto:</p><p>Financiar los costes salariales y cotizaciones empresariales a la Seguridad Social correspondientes a las contrataciones por las Corporaciones locales de trabajadores desempleados, preferentemente eventuales agrarios, cuando dichas contrataciones tengan por objeto la ejecución de proyectos de interés general y social, cuya finalidad sea garantizar un complemento de renta a través de la distribución del empleo disponible, de acuerdo a lo establecido en el artículo 6 del Real Decreto 939/1997, de 20 de junio.</p><p> </p><p>Tercero. Normativa aplicable:</p><p>- Real Decreto 939/1997, de 20 de junio (BOE de 24 de junio).</p><p>- Real Decreto 357/2006, de 24 de marzo (BOE de 7 de abril)</p><p>- Real Decreto 818/2021, de 28 de septiembre (BOE de 29 de septiembre)</p><p>- Ley 3/2023, de 28 de febrero (BOE de 1 de marzo)</p><p>- Ley 38/2003, de 17 de noviembre</p><p>- Orden TES/1077/2023, de 28 de septiembre</p><p>- Resolución de 17 de abril de 2024, de la Dirección General del Servicio Público de Empleo Estatal.</p><p>- Resolución de 12 de abril de 2004, del Servicio Público de Empleo Estatal</p><p>Cuarto. Cuantía:</p><p>6.055.379,36 euros.</p><p>Concesión de subvenciones supeditada a la existencia de crédito adecuado y suficiente en el Presupuesto de Gastos 2026 en el momento de la concesión.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>Desde el día siguiente a la publicación del extracto de esta convocatoria en el BOE hasta el día 4 de junio de 2026.</p><p>Presentación a través de la Sede Electrónica del SEPE  (https://sede.sepe.gob.es/portalSede/procedimientos-y-servicios/empresas/empleo/programa-fomento-empleo-agrario.html), siendo el único lugar de presentación admitido. Se deberá completar el formulario establecido al efecto, lo cual conllevará su registro electrónico en los términos y con las formalidades que se establecen en la presente convocatoria.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-14188",
+      "cve": "BOE-B-2026-14188",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

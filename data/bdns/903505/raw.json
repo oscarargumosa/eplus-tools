@@ -1,0 +1,81 @@
+{
+  "id": 1105066,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "AGENCIA DE LA VIVIENDA DE CATALUÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903505",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "PRÉSTAMO"
+    },
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2665230291.03,
+  "mrr": false,
+  "descripcion": "Resolución TER//2026, de 28 de abril, por la que se abre la convocatoria para la concesión de ayudas, en régimen de concurrencia pública no competitiva, para la promoción de viviendas con protección oficial en suelos inscritos en reserva pública solares",
+  "descripcionLeng": "Resolució TER//2026, de 28 d’abril, per la qual s'obre la convocatòria per a la concessió d’ajuts, en règim de concurrència pública no competitiva, per a la promoció d’habitatges amb protecció oficial en sòls inscrits a la reserva pública de solars",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Resolución TER/2515/2025, de 1 de julio, por la que se aprueban las BBRR para la concesión de ayudas, en régimen de concurrencia pública no competitiva, para la promoción de viviendas con protección oficial suelos inscritos reserva pública solares",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1018551",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-30",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448623,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "260428 CAT_CONV_Ajuts_ReservaPublicaSolars_2026.pdf",
+      "long": 363449,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448622,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "260428 CAST_CONV_Ajuts_ReservaPublicaSolars_2026.pdf",
+      "long": 124534,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

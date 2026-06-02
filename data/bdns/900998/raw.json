@@ -1,0 +1,64 @@
+{
+  "id": 1102559,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GIJÓN",
+    "nivel3": "AYUNTAMIENTO DE GIJÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900998",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1315000,
+  "mrr": false,
+  "descripcion": "Convocatoria pública de subvenciones para la ejecución de proyectos de cooperación al desarrollo, educación para el desarrollo y sensibilización correspondiente al año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Convocatoria pública de subvenciones para la ejecución de proyectos de cooperación al desarrollo, educación para el desarrollo y sensibilización correspondiente al año 2026",
+  "urlBasesReguladoras": "https://sedeelectronica.gijon.es:443/sta/docs/GetDocumentServlet?CUD=16336765437566706243&HASH_CUD=08e7a9997e97daf0aaae05b8024ee4c943b1f335",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día hábil siguiente al de la publicación del extracto en BOPA",
+  "textFin": "Treinta días hábiles a partir del día hábil siguiente al de la publicación del extracto en BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441268,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Propuesta convocatoria 2026.pdf",
+      "long": 299615,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

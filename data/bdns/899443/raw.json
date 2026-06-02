@@ -1,0 +1,84 @@
+{
+  "id": 1101004,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTCADA I REIXAC",
+    "nivel3": "AYUNTAMIENTO DE MONTCADA I REIXAC"
+  },
+  "sedeElectronica": "https://seu.montcada.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO&DETALLE=6269099671663484905000",
+  "codigoBDNS": "899443",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Acuerdo del 7/04/2026 de la Junta de Gobierno Local de aprobación de la convocatoria de subvenciones a entidades sin ánimo de lucro y centros educativos para dar soporte a proyectos relacionados con la conmemoración de aniversarios",
+  "descripcionLeng": "Acord de 7/04/2026 de la Junta de Govern Local d'aprovació de la convocatòria de subvencions a entitats sense ànim de lucre i centres educatius per donar suport a projectes relacionats amb la commemoració d'aniversaris.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladores de les convocatòries de subvencions en règim de concurrència competitiva a entitats sense ànim de lucre i centres educatius per a la realització de projectes, activitats i serveis.",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3910638/aprovacio-de-les-bases-generals-reguladores-de-les-convocatories-per-a-la-concessio-de-subvencions-en-regim-de-concurrencia-competitiva-a-entitats-sense-anim-de-lucre-i-centres-educatius-per-a-la-realitzacio-de-projecte",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-17",
+  "fechaFinSolicitud": "2026-05-08",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437139,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convocatoria anual aniversarios CASTELLANO.pdf",
+      "long": 465927,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437140,
+      "descripcion": "Modelo solicitud",
+      "nombreFic": "Aniv. Formulari memo?ria.pdf",
+      "long": 144652,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437137,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA_ANUAL_ANIVERSARIS.pdf",
+      "long": 487133,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

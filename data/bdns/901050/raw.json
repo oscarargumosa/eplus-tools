@@ -1,0 +1,72 @@
+{
+  "id": 1102611,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE PRESIDENCIA, JUSTICIA Y DEPORTES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901050",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 150000,
+  "mrr": false,
+  "descripcion": "ORDEN del 13 de abril 2026, por la que se aprueban las bases reguladoras de la concesión de subvenciones, en régimen de concurrencia competitiva, para la ejecución de microproyectos de cooperación para el desarrollo en el exterior promovidos por los agent",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Prestación de servicios a la comunidad en general",
+      "codigo": "84.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXX - Regiones o países no europeos, no contemplados en NUTS"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "ORDEN del 13 de abril 2026, por la que se aprueban las bases reguladoras de la concesión de subvenciones, en régimen de concurrencia competitiva, para la ejecución de microproyectos de cooperación para el desarrollo en el exterior promovidos por los agent",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?fecha=20260423&ruta=Indice75_es.html&lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-29",
+  "fechaFinSolicitud": "2026-05-28",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441395,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Texto de la orden con anexos_Galego_20260423_123114.pdf",
+      "long": 487686,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441394,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto de la orden con anexos_Castellano_20260423_123048.pdf",
+      "long": 517501,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

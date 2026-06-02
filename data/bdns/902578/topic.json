@@ -1,0 +1,93 @@
+{
+  "source": "bdns",
+  "source_id": "902578",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALL D'UIXÓ, LA / AYUNTAMIENTO DE VALL D'UIXÓ, LA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Conceción de subvenciones en régimen de concurrencia competitiva destinada a entidades culturales locales",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 23000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902578",
+  "documents": [
+    {
+      "label": "ANNEX_IV_PRESSUPOST INGRESSOS_I_DESPESES (amor a les arts).pdf",
+      "url": null
+    },
+    {
+      "label": "AUTOBAREMACIÓN.pdf",
+      "url": null
+    },
+    {
+      "label": "ANNEX_VI_JUSTIFICACIO MEMORIA (amor a les arts).pdf",
+      "url": null
+    },
+    {
+      "label": "ANNEX_VII_JUSTIFICACIO (amor a les arts).pdf",
+      "url": null
+    },
+    {
+      "label": "ANNEX_III_PROJECTE-MEMORIA ACTIVITAT (amor a les arts) CORREGIR FORMATO.pdf",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "ANNEX_II_CERTIFICAT_SECRETARI (amor a les arts).pdf",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lavallduixo.es/sites/L01121264/files/2023-07/ORDENANZA%20DEL%20OTORGAMIENTO%20DE%20SUBVENCIONES%20_0.pdf",
+  "text_inicio": "Al día siguiente de la publicación en el Boletín Oficial de la Província",
+  "text_fin": "20 días a contar desde el día siguiente a la publicación en el Boletín Oficial de la Província",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.784Z"
+}

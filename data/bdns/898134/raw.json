@@ -1,0 +1,187 @@
+{
+  "id": 1099695,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "DIRECCIÓN GENERAL DE DESARROLLO RURAL"
+  },
+  "sedeElectronica": "https://aradoacceso.juntaex.es/Paginas/Login)",
+  "codigoBDNS": "898134",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "Ayudas 2026  Enfoque Leader a inversiones en la creación y desarrollo de empresas y actividades no agrícolas en zonas rurales (Intervención 7119 PEPAC), s/ I Convo (PEPAC 2023-2027) G.A.L. ADISGATA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "Artes gráficas y reproducción de soportes grabados",
+      "codigo": "18"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "Confección de prendas de vestir",
+      "codigo": "14"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "Extracción de antracita, hulla, y lignito",
+      "codigo": "05"
+    },
+    {
+      "descripcion": "Fabricación de maquinaria y equipo n.c.o.p.",
+      "codigo": "28"
+    },
+    {
+      "descripcion": "Fabricación de material y equipo eléctrico",
+      "codigo": "27"
+    },
+    {
+      "descripcion": "Fabricación de muebles",
+      "codigo": "31"
+    },
+    {
+      "descripcion": "Fabricación de otro material de transporte",
+      "codigo": "30"
+    },
+    {
+      "descripcion": "Fabricación de otros productos minerales no metálicos",
+      "codigo": "23"
+    },
+    {
+      "descripcion": "Fabricación de productos informáticos, electrónicos y ópticos",
+      "codigo": "26"
+    },
+    {
+      "descripcion": "Fabricación de productos metálicos, excepto maquinaria y equipo",
+      "codigo": "25"
+    },
+    {
+      "descripcion": "Fabricación de vehículos de motor, remolques y semirremolques",
+      "codigo": "29"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "Industria del cuero y productos relacionados de otros materiales",
+      "codigo": "15"
+    },
+    {
+      "descripcion": "Industria del papel",
+      "codigo": "17"
+    },
+    {
+      "descripcion": "Industria textil",
+      "codigo": "13"
+    },
+    {
+      "descripcion": "Otras industrias manufactureras",
+      "codigo": "32"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "Seguros, reaseguros y planes de pensiones, excepto seguridad social obligatoria",
+      "codigo": "65"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Decreto 78/2024, de 23 de julio, por el que se regula el sistema de ayudas bajo metodología LEADER y el procedimiento de gestión, en el marco del Plan Estratégico de la Política Agrícola Común de España 2023-2027",
+  "urlBasesReguladoras": "https://doe.juntaex.es/pdfs/doe/2024/1460o/24040124.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-23",
+  "textInicio": "El día siguiente a la publicación en el DOE",
+  "textFin": null,
+  "ayudaEstado": "SA.00000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.00000",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 60 AYUDAS DESTINADAS A PROYECTOS DE DLP"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433038,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria.PDF",
+      "long": 1539526,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208526,
+      "titulo": "EXTRACTO de la Resolución de la Asamblea General de la Asociación para el Desarrollo Integral de la Sierra de Gata de la I convocatoria de ayudas para aplicación de la Estrategia de Desarrollo Local Participativo y la metodología LEADER 23-27 para proyectos productivos de acciones de inversiones en la creación y desarrollo de empresas y actividades no agrícolas en zonas rurales.",
+      "tituloLeng": null,
+      "texto": "<p>De conformidad con lo previsto en los artículos 17.3 b y 20.8 a de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se p</p><p>ublica el extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones (http: //ww</p><p>w.infosubvenciones.gob.es).\n\nPrimero. Objeto.\n\nEl presente extracto tiene como objeto establecer la convocatoria de la línea de ayud</p><p>a a proyectos englobados en la actuación inversiones en la creación y desarrollo de empresas y actividades no agrícolas en zonas rur</p><p>ales. \n\nEsta convocatoria se publica al amparo del Decreto 78/2024, de 23 de julio, por el que se regula el sistema de ayudas bajo m</p><p>etodología LEADER y el procedimiento de gestión, en el marco del Plan Estratégico de la Política Agrícola Común de España 2023-2027.</p><p>\n\nLa convocatoria será de aplicación en el ámbito geográfico de la comarca de Sierra de Gata de Extremadura, cuyos términos municipa</p><p>les son los siguientes: Acebo, Cadalso, Cilleros, Descargamaría, Eljas, Gata (con la entidad local menor de la Moheda de Gata), Hern</p><p>án-Pérez, Hoyos, Moraleja, Perales del Puerto, Robledillo de Gata, San Martín de Trevejo, Santibáñez el Alto, Torre de Don Miguel, T</p><p>orrecilla de los Ángeles, Valverde del Fresno, Vegaviana, Villamiel (con la pedanía de Trevejo), Villanueva de la Sierra y Villasbue</p><p>nas de Gata.\n\nEl sistema de ayudas en el marco del eje Leader tiene como finalidad la aplicación de estrategias innovadoras mediante</p><p> la metodología LEADER, contribuyendo de esta manera al desarrollo sostenible a largo plazo de los territorios rurales, además de co</p><p>ntribuir a la mejora de la gobernanza y movilización del potencial de desarrollo endógeno de las zonas rurales.\n\nSegundo. Personas d</p><p>estinatarias finales de las ayudas.\n\nTendrán la consideración de personas beneficiarias y/o destinatarias finales de las ayudas, las</p><p> personas físicas y/o jurídicas o sus agrupaciones, incluidas las comunidades de bienes, a las que para cada una de las actuaciones</p><p>previstas en el Decreto 78/2024 se les reconozca tal condición. En el caso de empresas tan solo podrán ser beneficiarias, aquellas q</p><p>ue cumplan los requisitos establecidos por la Comisión para ser micro, pequeñas y medianas empresas conforme a la recomendación de l</p><p>a Comisión 2003/361/CE.\n\nTercero. Bases reguladoras.\n\nDecreto 78/2024, de 23 de julio, por el que se regula el sistema de ayudas baj</p><p>o metodología LEADER y el procedimiento de gestión, en el marco del Plan Estratégico de la Política Agrícola Común de España 2023-20</p><p>27.\n\nCuarto. Cuantía.\n\nPara la convocatoria de las ayudas indicadas, se destinará un montante de 500.000,00 euros que se abonarán co</p><p>n cargo a la aplicación presupuestaria 120030000/G/314A/78000/FR23771900/20230313, de acuerdo con las disponibilidades de crédito co</p><p>nsignadas en los Presupuestos Generales de la Comunidad Autónoma.   \n                     \nSe podrá subvencionar hasta el 65 % de la</p><p> inversión auxiliable y con el límite máximo de 195.000,00 € por proyecto. \n          \nQuinto. Plazo de presentación de solicitudes.</p><p>\n\nEl plazo de presentación de solicitudes de ayudas será a partir del día siguiente a la publicación del extracto de la convocatoria</p><p> en el Diario Oficial de Extremadura hasta el 23 de julio del 2026, ambos inclusive.</p>",
+      "textoLeng": null,
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/740o/26060834.pdf",
+      "cve": null,
+      "desDiarioOficial": "DOE. D.O. DE EXTREMADURA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

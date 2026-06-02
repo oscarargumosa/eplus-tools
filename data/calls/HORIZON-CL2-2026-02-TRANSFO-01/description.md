@@ -1,0 +1,48 @@
+## Expected Outcome
+
+Project should contribute to all of the following expected outcomes:
+- Research funders, policymakers and research communities in the social sciences and humanities (SSH) are provided with a multi-annual R&I programme on social transformations and resilience, responding to megatrends like climate change and biodiversity loss, digitalisation, demographic changes and unexpected shocks.
+- Research investments on social protection and essential services, future of work, education and skills, and a fair transition to climate neutrality are increased.
+- Stakeholders, including social partners and civil society, and policymakers are provided with evidence-based knowledge, tools and innovative solutions, which contribute to new policies and strategies for strengthening resilience, fairness, inclusiveness and social cohesion at European, national and regional level.
+
+## Scope
+
+Europe is undergoing critical social transformations driven by macro drivers of change, such as climate change, biodiversity loss, digitalisation and demographic change, which have been accelerated by events, such as the COVID-19 pandemic and Russia’s war of aggression against Ukraine. These transformations bring challenges and opportunities such as changing skills demands and labour shortages, new digital and intergenerational divides, increasing inequalities and threats to social cohesion, and rising costs of social protection, among others. The magnitude of these social transformations as well as the heterogeneity in welfare systems and labour markets call for combined inter- and transdisciplinary knowledge and resource sharing, and long-term concerted actions, on the basis of a Strategic Research and Innovation Agenda (SRIA).
+
+Proposals for the co-funded Social Transformations and Resilience (STR) partnership should aim at creating a 7-year research and innovation programme[1] which will make use of the potential of SSH to build resilience, ensure fairness and inclusiveness and foster social cohesion in the light of changes in climate, the environment, technology, demography and unexpected shocks. To this end, proposals should pool the necessary financial resources from the participating national (or regional) research programmes, with a view to implementing joint calls for transnational proposals resulting in grants to third parties.
+
+Innovations and scientific results achieved are expected to contribute to reaching EU priorities in the European Pillar of Social Rights, the EU Green Deal, to strengthening the European Research Area (ERA) and the European Education Area (EEA) and to contribute to designing better national, regional and local policies, in line with their respective strategies.
+
+An additional objective is to contribute to the implementation of United Nations Sustainable Development Goals number 1 (No Poverty), 4 (Quality Education), 5 (Gender Equality), 8 (Decent Work and Economic Growth), 10 (Reducing Inequalities), 11 (Sustainable Cities and Communities), 13 (Climate Action), and 16 (Peace, Justice and Strong Institutions).
+
+To achieve these objectives, the partnership is expected to launch annual transnational calls for proposals and additional activities in four interconnected impact areas:
+- Supporting the modernisation of social protection systems and essential services
+- Shaping the future of work
+- Fostering education and skills development
+- Contributing to a fair transition to climate neutrality
+
+The STR partnership is expected to organise activities along the following six operational objectives:
+- Collect data and evidence to measure social transformations, drawing from a variety of qualitative and quantitative methods in the social sciences and humanities, and use these to inform the development of evidence-based public policies and strategies.
+- Promote comparative studies to identify and share best practices and failures at regional, national and EU level.
+- Construct new, innovative ways to connect researchers with policymakers, stakeholders, citizens and social innovators in working together, communicating needs and results.
+- Develop social and individual experimentations at all levels (subnational, national, European) to better understand the impact of social transformations and public policies.
+- Encourage the development of new analytical, methodological and epistemological tools to better understand social transformations and resilience.
+- Build capacity among the R&I community and policymakers to adjust and strengthen social infrastructures and services in light of unexpected shocks.
+
+Proposals should build on the work of ERA-NETs CHANSE, as well as other relevant networks and initiatives, such as HERA and NORFACE, the Trans-Atlantic Platform for Social Sciences and Humanities (T-AP) and the Joint Programming Initiative More Years, Better Lives (JPI MYBL). By bringing together different stakeholders in academia, policymakers, social partners and trade associations, civil society and international organisations, the partnership should create a critical mass of knowledge and resources to implement a long-term SRIA.
+
+The partnership should engage with the following stakeholders: (i) National research funding agencies and ministries in research and higher education; (ii) ministries responsible for labour, social affairs, employment, climate and environment, where possible, as well as other relevant public authorities in the four impact areas; (iii) researchers from the social sciences and humanities and transdisciplinary fields; (iv) social partners, citizens’ organisations and NGOs at local, national and EU level, such as trade unions, employer associations, practitioners and non-profit organisations advocating for the rights of disadvantaged groups; (v) private sector, which may include employment agencies, providers of essential services, social entrepreneurs, and private education institutions.
+
+As the partnership touches upon fundamental aspects of peoples’ lives (work, social protection, education, and a fair green transition), it is instrumental to involve relevant actors, interest groups and potential end-users of the research results in the partnership’s activities. Gender and intersectional aspects should be considered throughout all activities and joint calls.
+
+EU agencies (e.g. Eurofound, ELA, CEDEFOP[2]) which deal with issues related to the four impact areas, such as working conditions, vocational education and training, and labour law, as well as international organisations such as the ILO and the OECD, need to be considered as stakeholders, as they can provide important inputs and resources to the partnership. Collaboration with existing research infrastructures (e.g. European Social Survey, SHARE, CLARIN, CESSDA, Eurostat) is encouraged. This should aim at facilitating access to data (e.g. on social security) and making use of relevant datasets in the projects that will be funded under this partnership.
+
+The partnership is open to all EU Member States and countries associated to Horizon Europe and will remain open to third countries wishing to join. Partners are expected to contribute financially and/or through eligible activities[3], depending on the level of ambition of the proposed activities. The partnership should be open to new partners throughout its lifetime. Importantly, the EU contribution will not be increased.
+
+To ensure coherence and complementarity of activities and leverage knowledge and joint activities, the partnership is expected to establish synergies with relevant Horizon Europe projects under relevant Clusters of Pillar II, partnerships - such as the Driving Urban Transitions (DUT) partnership or the Clean Energy Transition (CET) partnership, the Biodiversa+ partnership, the Missions - such as the Mission on climate-neutral and smart cities or the Mission on Climate Adaptation - and the New European Bauhaus Facility, among others.
+
+[1]  With an additional three years to wind down, i.e. administer and report on FSTP projects launched with the last calls.
+
+[2]  In line with rules for Horizon Europe on working with EU’s Decentralised Agencies.
+
+[3] Any eligible activity that is distinct from and complements the financial support to third parties/joint transnational calls and contributes to the objectives of the partnership.

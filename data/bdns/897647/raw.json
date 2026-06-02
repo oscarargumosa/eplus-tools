@@ -1,0 +1,79 @@
+{
+  "id": 1099208,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILA-SECA",
+    "nivel3": "AYUNTAMIENTO DE VILA-SECA"
+  },
+  "sedeElectronica": "https://vila-seca.eadministracio.cat/info.0",
+  "codigoBDNS": "897647",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Subvenciones de concurrencia no competitiva para obras de arreglo de viviendas vacías para destinarlo al alquiler dentro de la bolsa de viviendas de la Oficina Municipal 2026",
+  "descripcionLeng": "Subvencions de concurrencia no competitiva per a obres d'arranjament d'habitatges buits per a destinar-los al lloguer dins de la borsa\nd'habitatges de l'Oficina Municipal 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladores per a la concessió de subvencions per a obres d’arranjament d’habitatges buits per destinar-los al lloguer dins la\nborsa d’habitatges de l’oficina municipal.",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/350261/basesreguladores- per-a-la-concessio-de-subvencions-per-a-obresd- arranjament-d-habitatges-buits-per-destinar-los-al-lloguerdins- la-borsa-d-habitatges-de-l-oficina-municipal-aprovaciodefinitiva- ajuntament-vil",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Al día siguiente de la publicación en el Boletín Oficial de la Provincia de Tarragona",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431608,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260316_CONVOCATÒRIA PÚBLICA MUNICIPAL 2026 - Català.pdf",
+      "long": 277749,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431606,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260316_CONVOCATÒRIA PÚBLICA MUNICIPAL 2026 - Castellà.pdf",
+      "long": 213269,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

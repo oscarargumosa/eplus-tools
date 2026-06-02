@@ -1,0 +1,72 @@
+{
+  "id": 1102454,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARENYS DE MUNT",
+    "nivel3": "AYUNTAMIENTO DE ARENYS DE MUNT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900893",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "2026-CONVOCATORIA SUBVENCION EN REGIMEN DE CONCURRENCIA COMPTETITIVA PARA PROMOVER LA ACTIVIDAD DEPORTIVA EN EL MUNICIPIO.",
+  "descripcionLeng": "2026- CONVOCATÌRA SUBVENCIÓ EN RÈGIM DE CONCURRÈNCIA COMPETITIVA PER A PROMOURE L'ACTIVITAT ESPORTIVA EN EL MUNICIPI. \n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES ESPECIFICAS REGULADORAS DE SUBVENCIONES PARA PROMOVER LA ACTIVIDAD DEPORTIVA EN EL MUNICIPIO",
+  "urlBasesReguladoras": "https://bop-diba-cat.translate.goog/anunci/3798890/aprovacio-definitiva-de-les-bases-especifiques-reguladores-de-subvencions-per-promoure-l-activitat-esportiva-en-el-municipi-ajuntament-d-arenys-de-munt?_x_tr_sl=ca&_x_tr_tl=es&_x_tr_hl=esie%3DUTF-8",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-31",
+  "textInicio": "al día siguiente al de la publicación de del extracto de esta convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441013,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Cert. Ple 17-02-2026 aprov. mod. bases subv. esports i cultura.pdf",
+      "long": 227914,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441012,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convocatòria subv Con Comp Esports 2026 abril-castellano.pdf",
+      "long": 177364,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

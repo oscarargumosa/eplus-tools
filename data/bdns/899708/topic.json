@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "899708",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / URRETXU / AYUNTAMIENTO DE URRETXU",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "Subvenciones para el fomento de la actividad agroganadera de las Explotaciones Agrarias de Urretxu",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": "2026-11-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899708",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "BASES GENERALES",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.urretxu.eus/eu/component/rsfiles/download-file/files?path=i_subvenciones/2026-DirulaguntzenOinarriak/2026-DL26-AbelzaintzaNekazaritza.pdf",
+  "text_inicio": "A partir de la publicación en el Boletín Oficial de Gipuzkoa",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209286,
+      "titulo": "Subvenciones para el fomento de la actividad agroganadera de las Explotaciones Agrarias de Urretxu",
+      "tituloLeng": "Urretxuko Nekazaritzako Ustiategien abeltzaintza – nekazaritza jarduera mantentzeko diru-laguntzak",
+      "texto": "<p>1.Objeto de la subvención.</p><p>El objeto de esta convocatoria: promocionar e impulsar el primer sector y en concreto el mantenimiento de la actividad agroganadera de Urretxu, para la conservación del paisaje de campiña del municipio.</p><p>2.Importe de la subvención.</p><p>El importe máximo de la suma de las subvenciones a conceder asciende a la cantidad de 20.000 €, con cargo a la partida 1.7100.481.419.00.01.26 (881).</p><p> </p><p>3. Plazo de presentación de solicitudes. El plazo de presentación de solicitudes será hasta el 15 de noviembre y desde el día siguiente a la publicación del anuncio en el BOLETÍN OFICIAL de Gipuzkoa. La información detallada se encuentra a disposición de las personas o colectivos interesados en la siguiente páginas web: Ayuntamiento: https://www.urretxu.eus/es/subvenciones</p>",
+      "textoLeng": "<p>1.Dirulaguntzaren xedea.</p><p>Deialdi honen xedea da: lehenengo sektorea bultzatzea eta zehazki Urretxuko nekazaritza - abeltzaintza jarduera mantentzea, herriko landa zabaleko paisaia kontserbatzeko.</p><p>2. Dirulaguntzaren zenbatekoa.</p><p>Emango diren dirulaguntzen batura, gehienez ere 20.000 eurokoa izango da 1.7100.481.419.00.01.26 (881). kontu-sailaren kontura.</p><p>3. Eskaerak aurkezteko epea.</p><p>Eskaerak aurkezteko epea azaroaren 15 arte izango da,  deialdiaren iragarkia Gipuzkoako ALDIZKARI OFIZIALEAN argitaratu eta biharamunetik hasita. Pertsona edo kolektibo interesdunek ondorengo web orrian aurkitu dezakete informazio zehatza: https://www.urretxu.eus/eu/dirulaguntzak</p>",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/30/c2602534.pdf",
+      "cve": "GAO-I-2026-02534",
+      "desDiarioOficial": "B.O. DE GIPUZKOA",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.248Z"
+}

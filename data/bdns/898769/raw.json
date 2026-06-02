@@ -1,0 +1,76 @@
+{
+  "id": 1100330,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CULLERA",
+    "nivel3": "AYUNTAMIENTO DE CULLERA"
+  },
+  "sedeElectronica": "cullera.sedipualba.es",
+  "codigoBDNS": "898769",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6500,
+  "mrr": false,
+  "descripcion": "Convocatoria de concesión de subvención en régimen de concurrencia competitiva a personas físicas empadronadas en Cullera, para colaborar en los gastos derivados  del curso de salvamento y socorrismo impartido en Cullera por la FSSCV, año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases Específicas Reguladoras de la Concesión de Subvenciones destinadas a la realización de Cursos de Salvamento y Socorrismo impartidos en el Centre Municipal d’Esports  de Cullera por la Federación de Salvamento y Socorrismo de la Comunitat Valenciana",
+  "urlBasesReguladoras": "https://cullera.sedipualba.es/tablondeanuncios/anuncio.aspx?id=77187",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-30",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435097,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "3. Res convocatoria.pdf",
+      "long": 317235,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208794,
+      "titulo": "Anuncio del Ayuntamiento de Cullera relativo al extracto de la Resolución de fecha 9 de abril de 2026 por la que se convoca la Concesión de Subvención en régimen de concurrencia competitiva a las personas físicas empadronadas en Cullera  para colaborar en la financiación de los gastos derivados de la realización del curso de salvamento y socorrismo impartido en Cullera por la Federación de Salvamento y Socorrismo de la Comunidad Valenciana.",
+      "tituloLeng": null,
+      "texto": "<p>Por Resolución número 1197 de fecha 9 de abril de 2026 se convoca la Concesión de Subvención en régimen de concurrencia competitiva a las personas físicas empadronadas en Cullera para colaborar en la financiación de los gastos derivados de la realización del curso de salvamento y socorrismo impartido en Cullera por la Federación de Salvamento y Socorrismo de la Comunidad Valenciana.</p><p>Más información en la pagina web https://cullera.sedipualba.es/firma/documento.aspx?csv=JQAACFEDAAH4MFE34P43&modo=abrir, en el teléfono 961725913 o en el e-mail: esports@cullera.es</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04406&lang=es",
+      "cve": "BOPV-2026/04406",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -250,8 +250,122 @@ async function updateOrgCoords(orgId, lat, lng, source) {
   );
 }
 
+/* ── Backfill OID via directory-api lookup por PIC ──────────────
+   Cuando una org se crea con PIC pero sin OID, intenta resolver el
+   OID consultando el directorio público. Idempotente. Tolerante a
+   fallos (si el directorio no responde, simplemente no hace nada). */
+async function backfillOidFromPic(orgId) {
+  const [[row]] = await pool.query(
+    `SELECT id, oid, pic, organization_name FROM organizations WHERE id = ? LIMIT 1`,
+    [orgId]
+  );
+  if (!row || !row.pic || row.oid) return null;
+  try {
+    const dir = require('../../utils/directory-api');
+    // El directory-api no expone búsqueda directa por PIC ni endpoint by-pic.
+    // Estrategia: buscar por nombre y filtrar por PIC exacto en los resultados.
+    const name = (row.organization_name || '').trim();
+    if (!name) return null;
+    const resp = await dir.search({ q: name, limit: 25 });
+    const list = (resp && Array.isArray(resp.results)) ? resp.results : [];
+    const match = list.find(r => String(r.pic) === String(row.pic) && r.oid);
+    if (!match || !match.oid) return null;
+    await pool.query(`UPDATE organizations SET oid = ? WHERE id = ? AND oid IS NULL`, [match.oid, orgId]);
+    return match.oid;
+  } catch (e) {
+    return null;
+  }
+}
+
+/* ══ Adopt entity from directory ═════════════════════════════════
+   Convierte una entidad del directorio (entities backend; MySQL view
+   v_entities_public o directory-api proxy según ENTITIES_BACKEND) en
+   una organization local, deduplicando por oid. Devuelve el id +
+   campos canónicos para enganchar al partner del intake.
+   ─────────────────────────────────────────────────────────────── */
+
+async function upsertFromEntity(oid) {
+  // Fast-path: el oid "local-<uuid>" se refiere a una org ya existente en
+  // MySQL (creada manualmente o adoptada antes). Devolvemos esa fila sin
+  // pasar por el directorio público.
+  if (typeof oid === 'string' && oid.startsWith('local-')) {
+    const localId = oid.slice('local-'.length);
+    const [[r]] = await pool.query(
+      'SELECT id, organization_name, country, city FROM organizations WHERE id = ? AND active = 1 LIMIT 1',
+      [localId]
+    );
+    if (!r) throw new Error('Local organization not found');
+    return r;
+  }
+
+  // Carga el entity via el backend activo (mysql o directory_api).
+  // Lazy-require para evitar ciclo (entities/backend.js no requiere orgs).
+  const entitiesBackend = require('../entities/backend');
+  const entity = await entitiesBackend.getEntityById(oid);
+  if (!entity) throw new Error('Entity not found in directory');
+
+  // Dedup: si ya existe una org local enganchada a este oid, reusar.
+  const [[existing]] = await pool.query(
+    'SELECT id, organization_name, country, city FROM organizations WHERE oid = ? LIMIT 1',
+    [oid]
+  );
+  if (existing) return existing;
+
+  // ISO2 → nombre del país (organizations.country guarda nombre, no código).
+  let countryName = null;
+  if (entity.country_code) {
+    const [[c]] = await pool.query(
+      'SELECT name_en FROM ref_countries WHERE iso2 = ? LIMIT 1',
+      [String(entity.country_code).toUpperCase()]
+    );
+    if (c) countryName = c.name_en;
+  }
+
+  // category → org_type (best-effort, NULL si no hay mapeo)
+  const orgTypeMap = {
+    hei: 'university', university: 'university',
+    ngo: 'ngo', nonprofit: 'ngo', association: 'ngo',
+    public: 'public_body', government: 'public_body', public_body: 'public_body',
+    business: 'enterprise', company: 'enterprise', sme: 'enterprise',
+    research: 'research',
+  };
+  const orgType = orgTypeMap[String(entity.category || '').toLowerCase()] || null;
+
+  const parseList = (v) => {
+    if (Array.isArray(v)) return v;
+    if (typeof v === 'string') { try { const x = JSON.parse(v); return Array.isArray(x) ? x : []; } catch { return []; } }
+    return [];
+  };
+  const emails = parseList(entity.emails);
+  const phones = parseList(entity.phones);
+
+  const payload = {
+    organization_name: entity.display_name || entity.legal_name || entity.name || '',
+    legal_name_latin:  entity.legal_name || null,
+    oid:               entity.oid,
+    pic:               entity.pic || null,
+    org_type:          orgType,
+    country:           countryName || entity.country_code || null,
+    city:              entity.city || null,
+    website:           entity.website || null,
+    email:             emails[0] || null,
+    telephone1:        phones[0] || null,
+    description:       entity.description || null,
+    logo_url:          entity.logo_url || null,
+    is_public:         0,
+  };
+
+  const id = await upsertOrg(payload);
+  return {
+    id,
+    organization_name: payload.organization_name,
+    country:           payload.country,
+    city:              payload.city,
+  };
+}
+
 module.exports = {
   getOrgById, getOrgByUserId, getOrgsByUserId, upsertOrg, linkUserToOrg, deleteOrg,
   listOrgs, listChildren, upsertChild, deleteChild, isOrgOwner,
-  orsLookup, updateOrgCoords,
+  orsLookup, updateOrgCoords, backfillOidFromPic, upsertFromEntity,
 };

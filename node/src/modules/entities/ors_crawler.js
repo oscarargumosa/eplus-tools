@@ -9,11 +9,35 @@ const ALPHABET = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
 const MIN_PREFIX_LENGTH = 2; // ORS API returns 500 for single-char prefixes
 const GLOBAL_TAX_ID = 'ALL'; // marker for the single global sweep (ORS API ignores the country filter)
 
-// Validity type mapping
+// Validity type mapping (verified against webgate.ec.europa.eu portal, 2026-04-29)
 const VALIDITY_MAP = {
-  '42284353': 'certified',
-  '42284356': 'waiting',
+  '42284356': 'na_certified',             // NA Certified — only fully validated state
+  '42284353': 'waiting_na_certification', // Waiting for NA Certification — docs submitted, in review
+  '42284359': 'waiting_confirmation',     // Waiting for Confirmation (declared, no docs yet)
+  '42284365': 'registered',               // Registered (just signed up, identical to declared in practice)
+  '42284362': 'invalidated',              // Invalidated — cannot apply for projects
 };
+
+// Status bucket for UI (4 buckets, see docs/STATUS_BUCKETS.md)
+const STATUS_BUCKET_MAP = {
+  na_certified: 'certified',
+  waiting_na_certification: 'in_review',
+  waiting_confirmation: 'declared',
+  registered: 'declared',
+  invalidated: 'invalid',
+};
+
+function getStatusBucket(label) {
+  return STATUS_BUCKET_MAP[label] || null;
+}
+
+function isCertified(label) {
+  return label === 'na_certified';
+}
+
+function canApply(label) {
+  return label != null && label !== 'invalidated';
+}
 
 /**
  * Resolve ISO country code from taxonomy ID using cached country list.
@@ -77,12 +101,15 @@ async function upsertEntity(raw, taxToISO) {
   const countryISO = rawTaxId && taxToISO ? (taxToISO.get(rawTaxId) || null) : null;
 
   const validityLabel = VALIDITY_MAP[raw.validityType] || (raw.validityType ? 'unknown' : null);
+  const statusBucket = getStatusBucket(validityLabel);
+  const certified = isCertified(validityLabel);
+  const applies = canApply(validityLabel);
 
   await pool.execute(
     `INSERT INTO entities (oid, pic, legal_name, business_name, country_code, country_tax_id,
        city, website, website_show, vat, registration_no, validity_type, validity_label,
-       go_to_link, source, raw_json)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'ors_api', ?)
+       status_bucket, is_certified, can_apply, go_to_link, source, raw_json)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'ors_api', ?)
      ON DUPLICATE KEY UPDATE
        pic = VALUES(pic),
        legal_name = VALUES(legal_name),
@@ -96,6 +123,9 @@ async function upsertEntity(raw, taxToISO) {
        registration_no = VALUES(registration_no),
        validity_type = VALUES(validity_type),
        validity_label = VALUES(validity_label),
+       status_bucket = VALUES(status_bucket),
+       is_certified = VALUES(is_certified),
+       can_apply = VALUES(can_apply),
        go_to_link = VALUES(go_to_link),
        raw_json = VALUES(raw_json),
        last_seen_at = NOW()`,
@@ -113,6 +143,9 @@ async function upsertEntity(raw, taxToISO) {
       (raw.registration || '').trim() || null,
       (raw.validityType || '').trim() || null,
       validityLabel,
+      statusBucket,
+      certified ? 1 : 0,
+      applies ? 1 : 0,
       (raw.goTolink || '').trim() || null,
       JSON.stringify(raw),
     ]
@@ -328,4 +361,9 @@ module.exports = {
   buildISOToTaxMap,
   upsertEntity,
   GLOBAL_TAX_ID,
+  VALIDITY_MAP,
+  STATUS_BUCKET_MAP,
+  getStatusBucket,
+  isCertified,
+  canApply,
 };

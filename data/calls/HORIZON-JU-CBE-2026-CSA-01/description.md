@@ -1,0 +1,23 @@
+## Expected Outcome
+
+Successful proposals will contribute to updated EU Bioeconomy Strategy, the Clean Industrial Deal, the European Chemical Industry Action Plan and the upcoming Circular Economy Act.
+
+Projects results are expected to contribute to the following expected outcomes:
+- Identification of technical, market and regulatory barriers and possible solutions for industry to ‘switch to bio-based’.
+- Contribution to filling the gap between bio-based sectors and the broader industrial landscape.
+
+## Scope
+
+While the share of bio-based products and processes in traditionally non-bio-based markets has been growing substantially in recent years, many non-bio-based, partially bio-based and more traditional bio-based industries (such as food industry) still perceive market and regulatory situations as uncertain and may therefore be reluctant to invest in new bio-based value chains. These uncertainties may relate to cost competition versus fossil-based counterparts, first-mover hesitation, lack of investment attractiveness, regulatory issues, uncertainties in feedstock quality and availability, lack of knowledge, shortage of relevant skills, etc.. Notwithstanding these challenges, industries recognise the opportunity of ‘switching to bio-based’ to improve their sustainability profile and meet consumers’ expectations.
+
+Proposals under this topic should:
+- Perform a consultation among non-bio-based and partially bio-based industries to identify barriers preventing them to adopt/diversify bio-based feedstock and processes in their operations. Include at least 3 industrial sectors that are critical for the green transition. Make sure to include a representative sample of industries with different size (including SMEs and startups) and position in the value chain and covering regions with different specialisations.
+- Analyse the outcomes from the consultation to identify barriers to bio-based transition and propose possible solutions. Validate the results with end users/consumers to include their perspectives.
+- Identify case studies and success stories showcasing best practises leading to adoption of bio-based solutions and assess their replication potential in the non-bio-based and partially bio-based sectors in scope.
+- Create a forum bringing together bio-based industries, feedstock providers, non-bio-based and partially bio-based industries, investors, policymakers, demand-side actors (e.g., large retailers, end-users, public procurers, etc.) as well as existing or upcoming stakeholders’ groups under the CBE JU, to facilitate the dialogue among the stakeholders and identify possible pathways for cooperation.
+- Develop and publish sectoral and cross-sectoral roadmaps towards the ‘switch to bio-based’ for the (at least 3) targeted non-bio-based or partially bio-based industrial sectors, also identifying de-risking opportunities.
+
+In addition to the specific requirements applicable for the type of action, as described in section 2.2.3.1 of the CBE JU Annual Work Programme 2026[1], proposals under this topic should: :
+- Ensure complementarities with past and ongoing R&I projects addressing similar challenges, including projects funded under Horizon 2020/Horizon Europe, BBI JU/CBE JU projects as well as COST actions.
+
+[1] https://www.cbe.europa.eu/reference-documents

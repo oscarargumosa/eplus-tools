@@ -1,0 +1,75 @@
+{
+  "source": "bdns",
+  "source_id": "899196",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DEFENSA / MAPER (DIRECCION DE ASISTENCIA AL PERS)",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Orden de 06 de abril de 2026, por la que se convocan las Subvenciones de ayudas de acción social para Asociaciones, Fundaciones, Instituciones y Organismos relacionados con el Ejército del Aire y del Espacio para el año 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": "2026-05-17",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 98200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.defensa.gob.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899196",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2021/02/05/def125",
+  "text_inicio": "El día siguiente al de la publicación del extracto de la resolución de convocatoria en el BOE.",
+  "text_fin": "Quince (15) días hábiles, desde el día siguiente al de la publicación del extracto en el BOE.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209027,
+      "titulo": "Extracto de Orden de 06 de abril de 2026, por la que se convocan las Subvenciones de ayudas de acción social para Asociaciones, Fundaciones, Instituciones y Organismos relacionados con el Ejército del Aire y del Espacio para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrán optar a estas subvenciones las entidades relacionadas con el Ejército del Aire y del Espacio (EA) que acrediten su carácter altruista, sin ánimo de lucro, no reivindicativo, y que no desarrollen actividades de cualquier índole, incompatibles con la neutralidad política que legalmente viene impuesta a las Fuerzas Armadas (FAS) y con los valores democráticos y constitucionales.</p><p>Segundo. Objeto:</p><p>Conceder subvenciones de ayudas de acción social a entidades cuyos fines estén relacionados con el personal militar retirado, cónyuges viudos y huérfanos, adscritos a la acción social del Ejército del Aire y del Espacio, y que dediquen las subvenciones a apoyar a aquellos que se encuentren en situación de discapacidad, de gran necesidad o con bajos ingresos.</p><p>Tercero. Bases Reguladoras:</p><p>Conforme a lo dispuesto en la Orden DEF/125/2021, de 5 de febrero, por la que se establecen las bases reguladoras para la concesión de subvenciones de ayudas de acción social a entidades relacionadas con las Fuerzas Armadas (BOE núm. 39, de 15 de febrero de 2021), modificada por la Disposición Final Primera de la Orden DEF/599/2021, de 9 de junio (BOE núm. 142, de 15 de junio de 2021).</p><p>Cuarto. Cuantía:</p><p>El crédito presupuestado al que se imputa el gasto es de 98.200 euros, con cargo a la aplicación 1401121M248500, de “Apoyo a Organismos e Instituciones relacionadas con las FAS”.</p><p>Quinto. Plazo de presentación de las solicitudes:</p><p>Se establecen quince (15) días hábiles, a contar desde el día siguiente al de la publicación del extracto de la resolución de convocatoria en el Boletín Oficial del Estado, como plazo de finalización de presentación de solicitudes.</p><p>Sexto: Otros datos:</p><p>Las solicitudes, junto con la documentación preceptiva que justifique el cumplimiento de los requisitos de la convocatoria y que aporte la información necesaria para la valoración y ponderación, deberán ser presentados por la entidad solicitante mediante medios electrónicos, en la sede electrónica central del Ministerio de Defensa (https://sede.defensa.gob.es) o en la sede electrónica del Registro General del Cuartel General del EA, e irán dirigidos a la Subdirección de Asistencia al Personal del EA.</p><p>La cuantía individual de las subvenciones se concederá, hasta agotar el crédito presupuestado, en proporción directa a la valoración final obtenida por cada entidad, en base a los criterios objetivos de valoración y su ponderación, que hacen referencia, en general, al número de asociados de la entidad adscritos a la acción social del EA y a las actividades de la entidad relacionadas con este personal que tenga la condición de retirado, cónyuges viudos y huérfanos, y que esté en situación de discapacidad, de gran necesidad o con bajos ingresos.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11873",
+      "cve": "BOE-B-2026-11873",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.861Z"
+}

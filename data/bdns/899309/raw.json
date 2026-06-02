@@ -1,0 +1,92 @@
+{
+  "id": 1100870,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GALAPAGAR",
+    "nivel3": "AYUNTAMIENTO DE GALAPAGAR"
+  },
+  "sedeElectronica": "https://sede.galapagar.es/",
+  "codigoBDNS": "899309",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000,
+  "mrr": false,
+  "descripcion": "FESTIVAL GRUPOS JÓVENES GALAPAGAR 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE GALAPAGAR",
+  "urlBasesReguladoras": "https://sede.galapagar.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-17",
+  "textInicio": "Desde el día siguiente al de su publicación en el BOCM",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436760,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Festival Grupos Jóvenes Galapagar 2026.pdf",
+      "long": 581487,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1436763,
+      "descripcion": "Ordenanza General de Subvenciones del Ayuntamiento de Galapagar",
+      "nombreFic": "Ga Ord. Gral. subvenciones Galapagar BOCM 106 de 05-05-2008.pdf",
+      "long": 119081,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1436761,
+      "descripcion": "Acuerdo JGL 15-04-2026 Aprobación Bases Convocatoria y Subvención",
+      "nombreFic": "Acuerdo JGL 15-04-2026 aprobación bases.pdf",
+      "long": 645322,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209317,
+      "titulo": "Extracto del acuerdo de 15 de abril de 2026, de la Junta de Gobierno Local, por el que se convoca el “Festival de grupos jóvenes, Galapagar 2026”.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrán participar en el Festival, solistas y grupos de música cuyas edades estén comprendidas entre 14 y 35 años (ambos inclusive) en la fecha de cierre del plazo de inscripción.</p><p>Para optar al premio especial, grupo local, será necesario que al menos una de las personas integrantes esté empadronada en el municipio de Galapagar.</p><p>Las personas participantes no podrán estar vinculadas a contratos discográficos en vigor en el momento de la inscripción.</p><p>Segundo. Objeto.</p><p>Premios para fomentar la música juvenil, ofreciendo un espacio a artistas solistas y bandas jóvenes noveles y que puedan tener de este modo la oportunidad de dar a conocer su trabajo y promocionar los diversos estilos de música que realizan.</p><p>Tercero. Bases reguladoras.</p><p>Ordenanza General de Subvenciones del Ayuntamiento de Galapagar, publicada en el Boletín Oficial de la Comunidad de Madrid el 5 de mayo de 2008.</p><p>Cuarto. Cuantía.</p><p>La cuantía total de los premios asciende a 1000 euros desglosados de la siguiente manera:</p><p>- Primer premio “Mejor Grupo del Certamen”:  300 €.</p><p>- Segundo premio “Mejor Directo / Mejor Actuación”: 250 €.</p><p>- Tercer premio “Mejor Tema Original”: 200 €.</p><p>- Cuarto premio “Premio Especial, Grupo Local de Galapagar”: 150 €.</p><p>- Quinto premio “Talento emergente / Grupo Revelación”: 100 €.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación será desde el día siguiente de su publicación en la sede electrónica del Ayuntamiento de Galapagar hasta el 17 de mayo de 2026.</p><p>Una vez acabado el plazo de presentación, un jurado formado al efecto realizará una primera selección de 5 solistas/grupos que participarán en el Festival.</p><p>El día 20 de junio, el Ayuntamiento de Galapagar organizará el Festival de Grupos Jóvenes con las personas/grupos seleccionados.</p><p>Los dos mejores grupos/ solista, actuarán en un segundo concierto que se celebrará 5 de septiembre abriendo el concierto de un grupo profesional.</p><p>Sexto. Otros datos.</p><p>La persona solista o grupo deberá cumplimentar el formulario de inscripción a través de la web de la Concejalía de Juventud www.plangalapagar.es.</p>",
+      "textoLeng": null,
+      "url": "http://www.bocm.es",
+      "cve": "BOCM-20260427-72",
+      "desDiarioOficial": "BOCM. B.O. DE LA COMUNIDAD DE MADRID",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

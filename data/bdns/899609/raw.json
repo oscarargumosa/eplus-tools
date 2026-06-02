@@ -1,0 +1,75 @@
+{
+  "id": 1101170,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN FORAL DE BIZKAIA",
+    "nivel3": "DIPUTACIÓN FORAL DE BIZKAIA"
+  },
+  "sedeElectronica": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "codigoBDNS": "899609",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 88000,
+  "mrr": false,
+  "descripcion": "Área 2. Actuaciones impulsadas por asociaciones de artesanía",
+  "descripcionLeng": "2. arloa: Artisautza-elkarteek bultzaturiko jarduerak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Decreto Foral de la Diputación Foral de Bizkaia por el que se convocan subvenciones para la promoción de la Artesanía para el año 2026. Área 2: Actuaciones impulsadas por asociaciones de artesanía.",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-442_cas.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-05-15",
+  "textInicio": "Inicio del plazo de presentación de solicitudes",
+  "textFin": "Fin del plazo de presentación de solicitudes",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437613,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "7-00 Proyecto Decreto foral Artesanía 2026 para CG_1774958113456_20260331_015523.pdf",
+      "long": 818848,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437612,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "7-00 Proyecto Decreto foral Artesanía 2026 para CG_1774958113456_20260331_015523.pdf",
+      "long": 818848,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

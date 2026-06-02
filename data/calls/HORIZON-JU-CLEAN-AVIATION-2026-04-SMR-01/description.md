@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of an optimized systems platform enabling the next-generation Ultra-Efficient SMR aircraft. The topic aims to integrate high-performance computing, electrical power and data architectures into a unified, certifiable platform, supporting advanced functions such as active control, hybridisation and predictive maintenance by means of a representative ground demonstration at TRL6 validating performance, safety and cybersecurity, with clear pathways to CRL4 and future maturation towards aircraft integration and EIS 2035. See the topic description document published with this call for full details.

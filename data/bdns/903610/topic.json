@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "903610",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO / FUNDACIÓN BIODIVERSIDAD",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Extracto de la Resolución de 5 de mayo de 2026 de la Fundación Biodiversidad, F.S.P., por la que se aprueba la convocatoria, en régimen de concurrencia competitiva, para becas de formación de cambio climático.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": "2026-06-08",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3840,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903610",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://fundacion-biodiversidad.es/wp-content/uploads/2022/09/Bases-Reguladoras-becas-Fundacion-Biodiversidad.pdf",
+  "text_inicio": "Al día siguiente de la publicación del extracto en BOE.",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.209Z"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "900576",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MAJADAHONDA / AYUNTAMIENTO DE MAJADAHONDA",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "Convocatoria de ayudas del Ayuntamiento de Majadahonda a familias empadronadas y residentes en la localidad por nacimiento de hijo o adopción en el año 2025.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 441703,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.majadahonda.org/portal/entidades.do?ent_id=2&idioma=1",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900576",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Certificado Acuerdo JGL",
+      "url": null
+    },
+    {
+      "label": "Anexo II Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Formulario de solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.majadahonda.org/documents/36614/1381876/BOCM-20210518-48-ordenanza-ayudas-hijos.pdf/b1109b83-cbbc-4f74-513a-fad6537d3a1c",
+  "text_inicio": "20 días hábiles desde el día siguiente a la publicación en el BOCM",
+  "text_fin": "20 días hábiles desde el día siguiente a la publicación en el BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.766Z"
+}

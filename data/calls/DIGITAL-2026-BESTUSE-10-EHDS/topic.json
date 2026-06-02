@@ -1,0 +1,154 @@
+{
+  "identifier": "DIGITAL-2026-BESTUSE-10-EHDS",
+  "ccm2Id": "51144435",
+  "callIdentifier": "DIGITAL-2026-BESTUSE-10",
+  "callTitle": "Accelerating Best Use of Technologies",
+  "title": "Building capacity to deploy the EEHRxF and digital  health services and systems to support the rights of  citizens and reuse of health data under EHDS",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-04-21",
+  "deadline": "2026-10-01",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL Grants for Financial Support",
+  "actionCode": "DIGITAL-GFS",
+  "mgaCode": "DIGITAL-AG",
+  "budget": {
+    "total_eur": 48800000,
+    "by_year": {
+      "2026": 48800000
+    },
+    "expected_grants": 15,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "DIGITAL-2026-BESTUSE-10-EHDS",
+    "DIGITAL-2026-BESTUSE-10",
+    "Civil society organisations",
+    "Continuing professional training",
+    "Creation of processes and new forms of cooperation",
+    "Curricular education activities with enterprises",
+    "Data Security and Privacy",
+    "Data reuse",
+    "Digital Services and Platforms",
+    "Education",
+    "Education and Training",
+    "Europe's innovation potential",
+    "Health and Ecosystem Services",
+    "Health care",
+    "Health data",
+    "Health information",
+    "Health sciences",
+    "IT skills and competence",
+    "Identification of skills needs",
+    "Knowledge transfer",
+    "Learning outcomes",
+    "Life sciences",
+    "Privacy",
+    "Public administration",
+    "Public administration innovation",
+    "Public sector information",
+    "Public sector innovation",
+    "Quality of education/educational products",
+    "Regulation",
+    "Stakeholder management",
+    "Teaching materials",
+    "Training of trainers (multiplication)",
+    "Transfer of educational results/products to new sectors",
+    "eHealth"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please Write to us\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43861?topic=DIGITAL-2026-BESTUSE-10-EHDS",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/wp-call/2026/call-fiche_digital-2026-bestuse-10_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (DEP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/temp-form/af/af_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "DEP MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/agr-contr/mga_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Work Programmes",
+      "url": "https://digital-strategy.ec.europa.eu/en/activities/work-programmes-digital",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Regulation 2021/964",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:27.142Z"
+}

@@ -1,0 +1,45 @@
+## Objective
+
+Objective:
+
+Themes & priorities:
+
+Applicants are invited to select one or several of the following priorities:
+
+Priority 1: Increasing risk awareness and preparedness of the population
+
+Population plays an important role in disaster prevention and preparedness and citizens are usually the first responders to disasters. National, sub-national and local authorities should cooperate, together with the private sector and civil society organisations, to i) increase disaster risk awareness and understanding of the population, ii) foster a culture of risk prevention and preparedness to risks, iii) create favourable conditions for individuals to actively engage in disaster risk reduction/DRM activities, iv) communicate appropriately during emergencies, v) fighting disinformation and information manipulation in the DRM domain.
+
+Evidence-based risk information and communication, as well as education activities, targeted to the public – including vulnerable groups and persons with disabilities– are effective tools to raise risk awareness, preparedness and contribute to response measures. A good understanding of everyone’s role in case of emergency will improve adherence to public warnings and instructions.
+
+This priority correlates with the Union disaster resilience goal No. 2: ‘Prepare - Increasing risk awareness and preparedness of the population’.
+
+Priority 2: Enhancing from early warning to early action
+
+Early warning systems are key elements for disaster risk reduction and climate change adaptation in view of the recent extreme weather events and cascading impacts across sectors. Taking into account climate scenarios, and other new risks, the importance of advanced multi-hazard and risk warnings has never been more widely acknowledged. Although in Europe there is considerable experience with early warning systems, especially for weather and climate-related hazards, recent disasters have shown that more effort and collaboration is necessary to bring the alert to the right decision level and up to the individual citizens. This call will support proposals that aim to strengthen the understanding between forecasting institutions and public authorities at various levels (national, regional, local) in order to enable a more rapid action through public warning mechanisms and arrangements, before or after a disaster strikes.
+
+This priority correlates with the Union disaster resilience goal No. 3: ‘Alert - Enhancing early warning’.
+
+Priority 3: Ensuring a robust civil protection system by strenghtening institutional capacity
+
+Ensuring a robust civil protection system plays a crucial part in efficiently meeting the demands placed on civil protection and DRM authorities, in particular during and after a disaster, when society needs them most. Challenges related to emerging risks, increasing complexities during disasters, changing parameters as a result of climate change and the ever-growing risk of concurrent disasters or prolonged emergencies, require institutions with a role in DRM to adapt and prepare themselves accordingly.
+
+Activities should focus on advancing preparedness, within and between organisations, sectors and borders, especially in the context of applying lessons identified in previous emergencies to existing structures and processes. A “whole of society” approach should be applied by further developing cooperation between public bodies, private sector, communities and other stakeholders. In addition, ‘preparedness by design’ should be embedded in across policies and investments. Proposals should also facilitate the transfer of knowledge or integration of science and innovation, including AI based tools, in the work of civil protection and other relevant authorities. In addition, this priority will focus on developing skills, expanding relevant knowledge, and improving capacity and performance of organisations or functional groups. As a result, the gained knowledge and experience should be applied nationally, bilaterally or internationally in a way that benefits the UCPM in the disaster risk prevention, preparedness or response activities.
+
+Activities that can be funded
+
+Under Priority 1 (Increasing risk awareness and preparedness of the population), this call for proposals co-finances activities that aim to enhance risk awareness, understanding and preparedness of the population, including through increasing the overall level of risk awareness, prevention and preparedness of individuals and communities , improving public access to disaster risk information, and enhancing the culture of risk prevention, self-protection, readiness and pro-active engagement of citizens. Proposals aiming to increase the availability of tools, trainings, and guidelines on raising citizens’ awareness on disaster risks, and on fighting disinformation and information manipulation in the DRM domain, are also eligible.
+
+Under Priority 2 (Enhancing from early warning to early action), this call for proposals will co-finance activities that aim to adapt warning protocols to the operational needs of emergency responders and society at large, as well as proposals that strengthen public warning and alert systems. Proposals should also demonstrate that they build on previous efforts or that there is a clear and evidenced identified gap for the action. Joint capacity building activities of forecasting organisations, public administration, critical infrastructure managers, or other relevant organisations, are key to making early warning relevant and understandable for all. Proposals that promote the use of new technologies, such as Artificial Intelligence or Machine Learning, are also encouraged and the same applies for proposals that link up forecasting tools with wildfire behaviour analysis in order to serve national or regional operational needs.
+
+Under Priority 3 (Ensuring a robust civil protection system by strengthening institutional capacity), this call for proposals will co-finance integrated projects that aim to strengthen the ability of institutions tasked with civil protection or DRM to effectively prepare for future disasters and to embed the preparedness-by-design principle across policies and investments. The focus of the activities should lie on expanding knowledge, skills, procedures, and tools in order to strengthen capacity at organisational level. Projects can focus on any or all of the following elements: gathering of knowledge and good practices from different DRM stakeholders, integrating input from science and research institutions into knowledge sharing activities relevant for DRM, elaboration of methodologies for skill and knowledge transfer. Activities may also focus on integrating lessons learnt from recent emergencies into capacity strengthening initiatives.
+
+## Scope
+
+The Knowledge for Action in Prevention and Preparedness (KAPP) call for proposals aim to identify projects that contribute to strengthening the cooperation among UCPM countries and between the UCPM and third parties in preventing natural and human-induced disasters, as well as enhancing institutional preparedness and individual capacity initiatives. The KAPP calls' objective is to enhance the systemic relevance of the Union Civil Protection Mechanism (UCPM) and support the implementation of the Union disaster resilience goals and the Preparedness Union Strategy.
+
+KAPP Prevention and Preparedness call aims to identify projects that aim to contribute to strengthening the cooperation among the UCPM countries and between the UCPM and third countries for the prevention of natural and human-induced disasters, or to increase the preparedness of the UCPM and its stakeholders by providing funding for institutional preparedness and individual capacity strengthening initiatives.
+
+While cross-border cooperation is relatively well-established in the area of emergency response, cross-border and multi-country cooperation during the prevention and preparedness phases can be further enhanced. Notwithstanding, the response phase could also benefit from streamlined communication protocols and interoperable systems that overcome language barriers in emergency situations.
+
+Disasters know no borders. The ongoing and emerging risks posed by natural and human-induced hazards are cross-border due to their spatial dimension (e.g., earthquakes, fires, severe weather, floods and space weather), as well as the volatility and scale of their impacts (e.g., pandemics, impact of climate change on zoonotic diseases, nuclear/industrial accidents, marine pollution). The human, economic and environmental impacts triggered by these disasters, as well as their likelihood of occurrence exist irrespective of national borders. Emerging technologies such as Artificial Intelligence provide a novel opportunity to address these challenges in a more effective and efficient manner.

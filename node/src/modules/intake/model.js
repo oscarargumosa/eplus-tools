@@ -520,6 +520,20 @@ async function updateTask(id, data) {
   if (!fields.length) return;
   params.push(id);
   await db.query(`UPDATE project_tasks SET ${fields.join(', ')} WHERE id = ?`, params);
+
+  // Propagate partner_id changes to the corresponding wp_tasks.lead_partner_id
+  // so the DMS generator (which reads from wp_tasks) sees the new leader
+  // without waiting for the lazy sync inside the generator.
+  if (data.partner_id !== undefined) {
+    try {
+      const [rows] = await db.query(`SELECT project_id FROM project_tasks WHERE id = ?`, [id]);
+      const projectId = rows[0]?.project_id;
+      if (projectId) {
+        const { syncWpTaskLeadersFromProjectTasks } = require('../developer/model');
+        await syncWpTaskLeadersFromProjectTasks(projectId);
+      }
+    } catch (e) { /* non-fatal: generator's own lazy sync will catch up */ }
+  }
 }
 
 async function deleteTask(id) {

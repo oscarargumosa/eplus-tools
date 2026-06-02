@@ -1,0 +1,64 @@
+{
+  "id": 1098621,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALAU-SOLITÀ I PLEGAMANS",
+    "nivel3": "AYUNTAMIENTO DE PALAU-SOLITÀ I PLEGAMANS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897060",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 677.88,
+  "mrr": false,
+  "descripcion": "Premis Microrelats Terror Palau Tremola 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenança general de subvencions Ajuntament Palau-solità i Plegamans",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3159658/aprovacio-inicial-de-l-ordenanca-general-de-subvencions-i-les-bases-reguladores-de-les-subvencions-a-entitats-sense-afany-de-lucre-ajuntament-de-palau-solita-i-plegamans",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-23",
+  "fechaFinSolicitud": "2026-05-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429604,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CAST_Bases_microrelats_de_terror_Palau_Tremola_2026_Palau-solità_i_Plegamans.pdf",
+      "long": 278024,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

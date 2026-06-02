@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "897219",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CARTAGENA / AYUNTAMIENTO DE CARTAGENA",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "SS CONVOCATORIA EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, PARA LA CONCESIÓN DE SUBVENCIONES A ORGANIZACIONES NO GUBERNAMENTALES DE COOPERACIÓN AL DESARROLLO. Partida: COOPERACIÓN INTERNACIONAL",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 86000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    },
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897219",
+  "documents": [
+    {
+      "label": "BASES DE LA CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://hacienda.cartagena.es/gestion/documentos/92042.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación de la convocatoria en el BORM",
+  "text_fin": "Hasta quince días hábiles después de su publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208053,
+      "titulo": "Extracto del acuerdo de la Junta de Gobierno Local 18 de marzo de 2026 del Ayuntamiento de Cartagena, relativo a la concesión de subvenciones en régimen de concurrencia competitiva del Área de Política Social, Igualdad y Familias para el año 2026 a organizaciones no gubernamentales de cooperación al desarrollo con sede o delegación en el municipio.\nPartida Cooperación Internacional",
+      "tituloLeng": null,
+      "texto": "<p>La presente convocatoria tiene por objeto establecer, en régimen de concurrencia competitiva, la concesión por el Excmo. Ayuntamiento de Cartagena a través de Servicios Sociales, Área de Política Social, Igualdad y Familia, las subvenciones destinadas a Organizaciones no Gubernamentales de Desarrollo (en adelante, ONGD) con sede o delegación en el Municipio para la ejecución de:</p><p>    • Proyectos de Cooperación Internacional en países recogidos en el informe del Programa de las Naciones Unidas para el Desarrollo (PNUD) como países de Índice de Desarrollo Humano Bajo, que soliciten gastos corrientes para la concesión de subvención.</p><p>    • Acciones encaminadas a trabajar sobre los objetivos de desarrollo sostenible (ODS), de la Agenda 2030 para erradicar la pobreza y favorecer un desarrollo sostenible e igualitario.</p><p>Las bases reguladoras de esta convocatoria están recogidas en el Título II,Capítulo V, art. 45 de las Bases de Ejecución del Presupuesto Municipal vigentes,que puede obtenerse en la página web del Ayuntamiento de Cartagena, www.cartagena.es </p><p>Las subvenciones se concederán con cargo a las siguiente partida del presupuesto municipal para 2025, aprobado en Pleno de 30 de octubre de 2024 , por los importes que a continuación se indican.</p><p>2026 04001 2316 49000 Cooperación Internacional: Importe Total: 86.000 €</p><p>El plazo de presentación de solicitudes es de quince días hábiles, a contar desde el día siguiente al de la publicación de la Convocatoria en el Boletín Oficial de la Región de Murcia. La solicitud, irá dirigida al Área de Política Social, Igualdad y Familia del Excmo. Ayuntamiento de Cartagena, y se presentará acompañada de la documentación recogida en el punto de 5.2. de la Convocatoria, por vía telemática a través de la Sede Electrónica Municipal. https://cartagena.sedipualba.es/catalogoservicios.aspx</p>",
+      "textoLeng": null,
+      "url": "https://www.borm.es/services/anuncio/ano/2026/numero/1576/pdf",
+      "cve": "A-100426-1576",
+      "desDiarioOficial": "BORM. B.O. DE LA REGIÓN DE MURCIA",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.906Z"
+}

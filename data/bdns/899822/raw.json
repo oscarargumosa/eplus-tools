@@ -1,0 +1,86 @@
+{
+  "id": 1101383,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE CULTURA",
+    "nivel3": "INSTITUTO DE LA CINEMATOGRAFÍA Y DE LAS ARTES AUDIOVISUALES"
+  },
+  "sedeElectronica": "https://sede.mcu.gob.es/SedeApp/SecuredArea/MiSitio/inicio",
+  "codigoBDNS": "899822",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "Resolución de 16 de abril de 2026, del Organismo Autónomo Instituto de la Cinematografía y de las Artes Audiovisuales, por la que se convocan ayudas a la distribución internacional de películas cinematográficas españolas correspondiente al año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción cinematográfica, de vídeo y de programas de televisión, grabación de sonido y edición musical",
+      "codigo": "59"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Orden CUL/2912/2010, de 10 de noviembre, por la que se establecen las bases reguladoras para la concesión de subvenciones públicas en régimen de concurrencia competitiva del Ministerio de Cultura y de sus organismos públicos.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2010/11/10/cul2912",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la resolución de convocatoria en el BOE",
+  "textFin": "Un mes a partir del día siguiente a la publicación del extracto de la resolución en el BOE",
+  "ayudaEstado": "SA.116473",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.116473",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 54 REGÍMENES DE AYUDA PARA OBRAS AUDIOVISUALES"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438168,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RES convocatoria DISTINT 26.pdf.xsig.pdf",
+      "long": 270486,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209348,
+      "titulo": "Extracto de la Resolución de 16 de abril de 2026, del Organismo Autónomo Instituto de la Cinematografía y de las Artes Audiovisuales, por la que se convocan ayudas a la distribución internacional de películas cinematográficas españolas correspondiente al año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto.</p><p>Ayudas a las agencias de ventas internacionales independientes para incentivar la circulación y distribución internacional de películas cinematográficas españolas, siempre que hayan suscrito al menos un contrato con un distribuidor extranjero para distribuir una película española en, al menos, un territorio fuera de España y que contemple el estreno de la película en salas de exhibición cinematográficas u online, a través de plataformas digitales de video bajo demanda (plataformas VOD).</p><p> </p><p>La agencia de ventas internacionales debe haber adquirido los derechos de explotación de la película en cualquier momento antes de la publicación de la resolución y las actividades de promoción y distribución internacional deben estar esencialmente comprendidas entre el 1 de septiembre de 2025 y la fecha de publicación del extracto de esta convocatoria en el Boletín Oficial del Estado.</p><p> </p><p>Segundo. Beneficiarios.</p><p>Agencias de ventas internacionales independientes, de conformidad con lo dispuesto en el apartado primero de la resolución, que cumplan los requisitos establecidos en el apartado cuarto de la misma.</p><p> </p><p>Tercero. Bases reguladoras.</p><p>Orden CUL/2912/2010, de 10 de noviembre, por la que se establecen las bases reguladoras para la concesión de subvenciones públicas en régimen de concurrencia competitiva del Ministerio de Cultura y de sus organismos públicos.</p><p> </p><p>Cuarto. Cuantía.</p><p>El importe total de esta convocatoria asciende a la cantidad de 500.000 euros. La cuantía individual de cada ayuda no podrá superar el 50% de los gastos subvencionables y el importe máximo de la ayuda será de 120.000 euros.</p><p> </p><p>Quinto. Plazos de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de un mes a partir del día siguiente de la publicación de este extracto en el Boletín Oficial del Estado.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-13099",
+      "cve": "BOE-B-2026-13099",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-25"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

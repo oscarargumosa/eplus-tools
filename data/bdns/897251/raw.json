@@ -1,0 +1,96 @@
+{
+  "id": 1098812,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PETRER",
+    "nivel3": "AYUNTAMIENTO DE PETRER"
+  },
+  "sedeElectronica": "https://petrer.sedelectronica.es/info.0",
+  "codigoBDNS": "897251",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 DE SUBVENCIONES A ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO DE PETRER, PARA EL FOMENTO DE PROYECTOS Y ACTIVIDADES CULTURALES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA 2026 DE SUBVENCIONES A ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO DE PETRER, PARA EL FOMENTO DE PROYECTOS Y ACTIVIDADES CULTURALES",
+  "urlBasesReguladoras": "https://petrer.es/anuncio-bases-subvenciones-a-asociaciones-y-entidades-sin-animo-de-lucro-de-petrer-anualidad-2026/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-10",
+  "fechaFinSolicitud": "2026-05-11",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1430109,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260326 Bases convocatoria subvenciones fomento proyectos y actividades culturales.pdf",
+      "long": 1151352,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1430114,
+      "descripcion": "Resto de anexos",
+      "nombreFic": "Resto de anexos.pdf",
+      "long": 388313,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1430112,
+      "descripcion": "Solicitud",
+      "nombreFic": "Solicitud.pdf",
+      "long": 74741,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208072,
+      "titulo": "CONVOCATORIA 2026 DE SUBVENCIONES A ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO DE PETRER, PARA EL FOMENTO DE PROYECTOS Y ACTIVIDADES CULTURALES",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios: Asociaciones y entidades sin ánimo de lucro, cuya finalidad sea la de promover y financiar proyectos y actividades culturales, inscritas en el Registro Municipal de Asociaciones del Ayuntamiento de Petrer.</p><p>Segundo: Objeto: Promover y financiar proyectos y actividades culturales que incidan directamente en la población de Petrer.</p><p>Tercero: Bases reguladoras aprobadas por la Junta de Gobierno Local del Excmo. Ayuntamiento de Petrer, en sesión celebrada el 26 de marzo de 2026.</p><p>Cuarto: Cuantía: 15.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes: Un mes a contar desde el día siguiente al de la publicación de este extracto en el Boletín Oficial de la Provincia de Alicante.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/09_66/2026_002473.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

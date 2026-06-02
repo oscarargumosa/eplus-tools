@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "899417",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESPLUGUES DE LLOBREGAT / AYUNTAMIENTO DE ESPLUGUES DE LLOBREGAT",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA DE LAS SUBVENCIONES PARA EL AUTOEMPLEO Y PARA FAVORECER LA INSTALACIÓN DE ACTIVIDADES ECONÓMICAS EN ESPLUGUES DE LLOBREGAT (AÑO 2026)",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": "2026-03-23",
+  "deadline": "2026-10-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://entitats.esplugues.cat/serveis-i-recursos/subvencions",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899417",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anunci/3926062/aprovacio-de-les-bases-reguladores-de-les-subvencions-per-a-l-autoocupacio-i-per-afavorir-la-instal-lacio-d-activitats-economiques-a-esplugues-de-llobregat-2026-2027-versio-en-catala-i-castella-ajuntament-d-esplugues-de-",
+  "text_inicio": "NO PROCEDE",
+  "text_fin": "NO PROCEDE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.023Z"
+}

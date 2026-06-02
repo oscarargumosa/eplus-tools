@@ -1,0 +1,26 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- environment and society at large benefit from recyclable plastic products which can be recycled back into high value applications;
+- industrial value chains introduce circular plastic products on the market through enhanced design for recycling and solutions for effective sorting and recycling on a large scale;
+- industrial value chains are equipped with improved characterisation of waste from complex plastic materials to enable its recycling.
+
+## Scope
+
+The topic supports the European Green Deal, the Regulation on Packaging and Packaging Waste, the Waste Shipment Regulation, the Ecodesign for Sustainable Products Regulation and its working plan, the upcoming Circular Economy Act and contributes to Europe’s efforts to develop a single market for sustainable products. It also contributes to the new EU bioeconomy strategy, the Life Sciences Strategy and the EU Biotech Act and is relevant to the European Commission’s communication: ‘Building the future with nature: Boosting Biotechnology and Biomanufacturing in the EU’.
+
+Proposals should:
+- advance novel biotech solutions for recycling of complex plastic materials and products (multi-material/multi-layer/composites), namely in the sectors of packaging, construction, renewable energy infrastructure and transport;
+- propose recommendations towards fit-for-purpose regulatory risk assessments for novel materials and recycling technologies (i.e. hazard identification, methodological updates) and take into account the Safe-and-Sustainable-by-Design framework;
+- consider the latest solutions in material innovation while developing novel recycling solutions e.g. by application of microbes and enzymes for enhanced degradation of plastics;
+- demonstrate the solutions on a pilot scale involving the whole value chain.
+
+Successful proposals are expected to evaluate the feasibility, effectiveness and impact of the demonstrated solutions using robust evaluation methods (including lifecycle assessments such as product environmental footprint, where relevant) and present data and evidence about the economic, environmental and social costs and benefits of the developed solutions.
+
+Industrial value chains are expected to take part in the proposed consortia to enable a demonstration of the proposed solution and involve all relevant stakeholders.
+
+Clustering with other relevant Horizon Europe projects is encouraged.
+
+## null
+
+Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.

@@ -1,0 +1,87 @@
+{
+  "id": 1101466,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AYALA/AIARA",
+    "nivel3": "AYUNTAMIENTO DE AYALA/AIARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899905",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 38000,
+  "mrr": false,
+  "descripcion": "CONCESIÓN DE SUBVENCIONES EN MATERIA CULTURAL, DEPORTIVA Y SOCIAL, AÑO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza General Reguladora de la concesión de subvenciones municipales",
+  "urlBasesReguladoras": "https://www.araba.eus/botha/Boletines/2010/063/2010_063_03665.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "textFin": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438448,
+      "descripcion": "3.01 SOLICITUD DE SUBVENCION PARA ACTIVIDADES EN MATERIA CULTURAL DEPORTIVA Y SOCIAL",
+      "nombreFic": "3.01 SOLICITUD DE SUBVENCION PARA ACTIVIDADES EN MATERIA CULTURAL DEPORTIVA Y SOCIAL.pdf",
+      "long": 470729,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438446,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "02. DECRETO_ALCALDIA._Aprobacion_de_convocatoria_y_de_las_bases_reguladoras_de_la_subvenciones_en_el_cultural, deportivo y social del año 2026.pdf",
+      "long": 591632,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209406,
+      "titulo": "Extracto del Decreto de Alcaldía 2026-235 de fecha 17 de abril de 2026 del Ayuntamiento de Ayala por el que se aprueban las bases de la convocatoria de ayudas para la concesión de subvenciones en materia cultural, deportiva y social, año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p>Podrá solicitar subvención: cualquier asociación sin ánimo de lucro y/o particular que esté interesada en promover o realizar programas o actividades de carácter cultural, deportivo y social que tengan por objeto el fomento de actuaciones de utilidad pública o interés social para todo el municipio de Ayala, durante este año 2026, que reúnan los requisitos fijados en las bases.</p><p>También podrán ser beneficiarios la AMPA de la Ikastola Etxaurren, y los Centros de enseñanza con sede en Ayala, siempre que persigan los mismos fines de la presente convocatoria.</p><p>También podrán acceder a la subvención para la celebración del Olentzero y Maridomingi, San Juan, Santa Águeda y la celebración de la cabalgata de Reyes las Juntas Administrativas, siempre que se ajusten a los mismos fines de la presente convocatoria.</p><p>Segundo: Objeto</p><p>Desarrollo de programas complementarios a los municipales consistentes en actividades de carácter cultural, deportivo y social que, promovidas por las y los solicitantes tengan por objeto el fomento de actuaciones de actividad pública o interés social para la población de Ayala, contribuyendo así a alcanzar los objetivos previstos por las áreas del Ayuntamiento en sus diferentes ámbitos de actuación.</p><p>Tercero: Bases Reguladoras</p><p>Se publicarán en el Boletín Oficial del Territorio Histórico de Álava y en la BNDS.</p><p>Así mismo, las bases y el modelo de solicitud normalizado están disponibles en la página web del Ayuntamiento de Ayala: www.aiarakoudala.eus.</p><p>Cuarto: Cuantía</p><p>La dotación económica de la presente convocatoria es de 38.000 €.</p><p>El importe máximo que una asociación podrá solicitar para actividades y proyectos a lo largo del año 2026 no podrá superar los 6.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes</p><p>Un mes a partir de la publicación de la presente convocatoria en el Boletín Oficial del Territorio Histórico de Álava.</p><p>Sexto: Otros datos</p><p>Se deberán presentar cumplimentados todos los anexos correspondientes a la solicitud y cuando se presente la justificación, los correspondientes a la justificación.</p><p>La justificación deberá presentarse antes del 20 de enero del 2027 (incluido).</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/049/2026_049_01171_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

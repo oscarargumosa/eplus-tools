@@ -1,0 +1,72 @@
+{
+  "id": 1100530,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTORNÈS DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE MONTORNÈS DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898969",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas sociales en el ámbito de actividades extraescolares curso 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras de ayudas sociales para ámbitos educativos, deportivos y de servicios sociales",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3260185/aprovacio-definitiva-de-l-ordenanca-reguladora-de-la-concessio-de-subvencions-i-de-les-bases-especifiques-reguladores-ajuntament-de-montornes-del-valles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des del dia següent a la publicació al BOPB",
+  "textFin": "Vint dies hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439452,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria_català.pdf",
+      "long": 852400,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439451,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria_castellano.pdf",
+      "long": 674816,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

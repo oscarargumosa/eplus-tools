@@ -1,0 +1,76 @@
+{
+  "id": 1099011,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es",
+  "codigoBDNS": "897450",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 210000,
+  "mrr": false,
+  "descripcion": "Orden 25 de marzo de 2026, de la Consejería de Educación, por la que se convocan ayudas para centros privados concertados de EE destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN EDU/767/2016, de 30 de agosto, por la que se establecen las bases reguladoras de las ayudas para centros privados concertados de educación especial destinadas a financiar el transporte de alumnos pluridiscapacitados con movilidad reducida",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2016/09/08/pdf/BOCYL-D-08092016-1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-11",
+  "fechaFinSolicitud": "2026-05-12",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431181,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden Convocatoria ayuda transporte pluridiscapacidad 2026.pdf",
+      "long": 319965,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208150,
+      "titulo": "EXTRACTO de la Orden de 25 de marzo de 2026, de la Consejería de Educación, por la que se convocan ayudas para centros privados concertados de educación especial destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado durante el curso académico 2025/2026.",
+      "tituloLeng": null,
+      "texto": "<p>Asimismo, la convocatoria puede consultarse en la sede electrónica de la Administración de la Comunidad de Castilla y León (https://www.tramitacastillayleon.jcyl.es) utilizando el identificador BDNS.</p><p>Primero. Objeto</p><p>Convocar, en régimen de concesión directa, al amparo del artículo 22.2 b) de la Ley 38/2003 de 17 de noviembre, General de Subvenciones, ayudas para centros privados concertados de educación especial destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado para el curso académico 2025/2026.</p><p>Segundo. Beneficiarios.</p><p>Podrán ser beneficiarios de estas ayudas los centros privados concertados de educación especial de la Comunidad de Castilla y León que cumplan las siguientes condiciones:</p><p>Escolarizar, durante el curso académico 2025/2026, alumnado con pluridiscapacidad con movilidad reducida para los que se precise transporte adaptado.</p><p>Mantener suscrito, durante el curso académico 2025/2026 un concierto educativo en los niveles en que esté escolarizado el alumnado con pluridiscapacidad transportado.</p><p>Gestionar la contratación de rutas de transporte escolar mediante vehículos adaptados para el alumnado con pluridiscapacidad con movilidad reducida por medio de recursos de su propiedad o por contrato de arrendamiento de vehículos con empresas especializadas del sector.</p><p>Tercero. Bases reguladoras.</p><p>Orden EDU/767/2016, de 30 de agosto, publicada en el Boletín Oficial de Castilla y León nº 174, de 8 de septiembre.</p><p>Cuarto. Cuantía.</p><p>La cuantía global máxima de las ayudas es de doscientos diez mil euros (210.000 €).</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de veinte días hábiles contados a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de Castilla y León.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/10/pdf/BOCYL-D-10042026-68-4.pdf",
+      "cve": "BOCYL-D-10042026-68-4",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

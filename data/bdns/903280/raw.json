@@ -1,0 +1,90 @@
+{
+  "id": 1104841,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARIA AUTONÓMICA DE INDUSTRIA, COMERCIO Y CONSUMO"
+  },
+  "sedeElectronica": "https://cindi.gva.es/es/web/internacionalizacion/ayudas-y-subvenciones",
+  "codigoBDNS": "903280",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15361000,
+  "mrr": false,
+  "descripcion": "Ayudas al Impulso a la internacionalización de empresas exportadoras de la Comunitat Valenciana para el ejercicio 2026",
+  "descripcionLeng": "Ajudes a l’impuls a la internacionalització d'empreses exportadores de la Comunitat Valenciana per a l'exercici 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Resolución de 2 de mayo de 2025, por la que se establecen las bases reguladoras para la concesión de ayudas en materia de internacionalización.",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2025/05/12/pdf/2025_14866_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-11",
+  "fechaFinSolicitud": "2026-06-15",
+  "textInicio": "El plazo de presentación de solicitudes será desde el día 11 de mayo de 2026",
+  "textFin": "El plazo de presentación de solicitudes finaliza el 15 de junio de 2026.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447872,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "EXTRACTO Resolución convocatoria INTPRM 2026_cas.docx",
+      "long": 300140,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447874,
+      "descripcion": "Resolución convocatoria 2026",
+      "nombreFic": "Resolución INTPRM 2026 firmada.pdf",
+      "long": 469262,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447873,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "EXTRACTO Resolución convocatoria INTPRM 2026_val.docx",
+      "long": 16005,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

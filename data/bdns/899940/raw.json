@@ -1,0 +1,204 @@
+{
+  "id": 1101501,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899940",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 495000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES ASOCIACIONES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA COVOCATORIA EN EL BOP",
+  "textFin": "VEINTE DÍAS HÁBILES DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438570,
+      "descripcion": "ANEXO VII",
+      "nombreFic": "ANEXO_VII.pdf",
+      "long": 171348,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438569,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "ANEXO_VI.pdf",
+      "long": 145772,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438568,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO_V.pdf",
+      "long": 150127,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438574,
+      "descripcion": "ANEXO XI",
+      "nombreFic": "ANEXO_XI.pdf",
+      "long": 122511,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438573,
+      "descripcion": "ANEXO X",
+      "nombreFic": "ANEXO_X.pdf",
+      "long": 156667,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438572,
+      "descripcion": "ANEXO IX",
+      "nombreFic": "ANEXO_IX.pdf",
+      "long": 147939,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438571,
+      "descripcion": "ANEXO VIII",
+      "nombreFic": "ANEXO_VIII.pdf",
+      "long": 154904,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438576,
+      "descripcion": "ANEXO XII-B",
+      "nombreFic": "ANEXO_XII-B.pdf",
+      "long": 161599,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438577,
+      "descripcion": "ANEXO XII-C",
+      "nombreFic": "ANEXO_XII-C.pdf",
+      "long": 118540,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438575,
+      "descripcion": "ANEXO XII-A",
+      "nombreFic": "ANEXO_XII-A.pdf",
+      "long": 148787,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438567,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO_IV.pdf",
+      "long": 166135,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438566,
+      "descripcion": "ANEXO III-B",
+      "nombreFic": "ANEXO_III-B.pdf",
+      "long": 204090,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438565,
+      "descripcion": "ANEXO III-A",
+      "nombreFic": "ANEXO_III-A.pdf",
+      "long": 204970,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438564,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO_II.pdf",
+      "long": 143681,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438578,
+      "descripcion": "ANEXO XIII",
+      "nombreFic": "ANEXO_XIII.pdf",
+      "long": 125612,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438562,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certif.nºSP1_(JG_10-04-2026).Aprobación_bases_subv.Proyec.Acción_Social_y_Ser.Soc.Entidades_privadas_-_SEFYCU_6735124.pdf",
+      "long": 917035,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438563,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO_I.pdf",
+      "long": 159006,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209416,
+      "titulo": "EXTRACTO DE LA CONVOCATORIA DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, A PROYECTOS DE ACCIÓN SOCIAL Y SERVICIOS SOCIALES REALIZADOS POR ENTIDADES PRIVADAS SIN ÁNIMO DE LUCRO, 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero.  Beneficiarios</p><p>Entidades sin ánimo de lucro que reúnan, a la finalización del plazo de presentación de solicitudes, los requisitos exigidos en la Base Cuarta de la Convocatoria.</p><p>Segundo.  Objeto.</p><p>Constituye el objeto de esta convocatoria la determinación del régimen jurídico de las subvenciones otorgadas por la Diputación Provincial de León, en régimen de concurrencia competitiva, destinadas a entidades privadas sin ánimo de lucro que desarrollen su actividad en el campo de la acción social y los servicios sociales y en el ámbito territorial correspondiente a los municipios de menos de 20.000 habitantes de la provincia de León.</p><p>Las actuaciones a desarrollar en esta convocatoria están incluidas en el Plan Estratégico de Subvenciones de la Diputación Provincial de León (años 2026 a 2028) aprobado por acuerdo del Pleno de 28 de noviembre de 2025, de conformidad con la exigencia del art. 8.1 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, contribuyendo mediante la finalidad de estas subvenciones al cumplimiento de los objetivos previstos en el mismo.</p><p>La finalidad de estas subvenciones consiste en potenciar actuaciones, actividades y/o proyectos que complementen la actuación de la Diputación en el ámbito de los servicios sociales y sociosanitarios, que contribuyan a la satisfacción de las necesidades individuales y sociales básicas de las personas, con el fin de lograr o incrementar su bienestar social y calidad de vida, en el contexto de la Ley 16/2010, de 20 de diciembre, de Servicios Sociales de Castilla y León. </p><p>La subvención puede estar destinada bien a proyectos con un objetivo específico dirigidos a un grupo determinado de beneficiarios de municipios de la provincia de León de menos de 20 000 habitantes, determinando un presupuesto concreto y su período de ejecución (subvención de proyecto específico), o bien a financiar la actividad global de las entidades solicitantes de ámbito provincial cuando no sea posible disgregar sus actuaciones en un proyecto concreto (subvención de apoyo global), estando la entidades de ámbito supraprovincial excluidas del acceso a la subvención en la modalidad de apoyo al funcionamiento general de la entidad. </p><p>Se consideran prioritarias aquellas actuaciones, ya sean realizadas con carácter general o mediante un proyecto concreto, destinadas a grupos de población especialmente vulnerables, ya sean personas sin hogar, afectadas por discapacidad, enfermedad o alteración susceptible de terapia, mayores, minorías étnicas, inmigrantes en situación de desprotección, menores en riesgo, mujeres en situación de vulnerabilidad etc. pudiendo estar orientados a sectores como:</p><p>-\tMayores, y dependencia, incluyendo a personas afectadas por discapacidad.</p><p>-\tInclusión social, ya sea favoreciendo la inclusión o previniendo la exclusión.</p><p>-\tIgualdad de oportunidades y prevención y/o atención a víctimas de violencia de género.</p><p>-\tFamilia e Infancia, atendiendo cualquier forma de desprotección, desamparo etc.</p><p>-\tAdicciones, previniendo y/o tratando cualquiera de sus formas con o sin sustancias. </p><p>Quedan excluidos de esta convocatoria los proyectos que incurran en alguna de las siguientes circunstancias:</p><p>-\tAquellos cuyo contenido corresponda exclusivamente al ámbito sanitario y/o educativo.</p><p>-\tAquellos que dupliquen los servicios sociales que ofrecen las diferentes Administraciones Públicas.</p><p>-\tLos presentados por entidades que puedan ser beneficiarias de subvención de la Diputación de León para la misma finalidad por otra vía.</p><p>-\tLos destinados a la organización de actividades exclusivamente lúdicas, turísticas, culturales o programas de vacaciones o deportivos.</p><p>-\tAquellos cuyo ámbito territorial exceda el de la convocatoria.</p><p>-\tLos proyectos destinados al estudio, a la investigación y a la participación de los miembros de la entidad en congresos y jornadas.</p><p>-\tLos proyectos que no estén en concordancia con los objetivos definidos en esta base pese al interés público y general que puedan representar.</p><p>-\tLos presentados por Entidades que estén integradas en alguna Federación o Agrupación que reciba subvención nominativa o directa de la Diputación de León y cuyos proyectos no queden perfectamente diferenciados.</p><p>Los proyectos subvencionados deben realizarse entre los días 1 de enero y el día 31 de diciembre de 2026, sin posibilidad de prórroga.</p><p>Tercero. - Régimen Jurídico.</p><p>Las subvenciones objeto de la presente Convocatoria se regirán, además de por lo previsto en las presentes Bases, por lo dispuesto en las Bases Generales Reguladoras de la Concesión de Subvenciones en régimen de concurrencia competitiva de la Diputación Provincial de León, aprobadas por acuerdo del Pleno de 27 de febrero de 2008 y publicadas en el BOP N.º 45/2008, de 5 de marzo (en adelante BGS). Asimismo, se estará a lo dispuesto en la Ordenanza General de Subvenciones de la Diputación de León, en su redacción dada por acuerdo plenario de 27 de julio de 2022 (BOP N.º 206/2022, de 27 de octubre), en adelante OGS y en las Bases de Ejecución del Presupuesto General de la Diputación de 2026.</p><p>En lo no regulado expresamente por la Diputación de León, se estará a lo dispuesto por la Ley 38/2003, de 17 de noviembre, General de Subvenciones, y por el R.D. 887/2006, de 21 de julio, por el que se aprueba el Reglamento de desarrollo de la citada Ley, y en las restantes normas de derecho administrativo, aplicándose en su defecto las normas de derecho privado.</p><p>Cuarto.  Cuantía.</p><p>Cuantía Total: 495.000,00 â¿¬, de los cuales 247.500,00 â¿¬ serán con cargo a la aplicación presupuestaria 501-23100-48000 denominada \"Subvenciones de carácter social\", del presupuesto de 2026, y 247.500,00 â¿¬ correspondientes a la anualidad de 2027, con cargo a la misma aplicación presupuestaria, quedando supeditado el gasto, respecto a esta última anualidad, al crédito que para dicho ejercicio autorice el respectivo presupuesto.</p><p>Cuantía por proyecto: 25.000,00 â¿¬, no pudiendo superar esta cantidad el 90% del coste total del proyecto.</p><p>Quinto.  Plazo de presentación de solicitudes.</p><p>Veinte días hábiles computados a partir del siguiente al de la fecha de publicación del presente extracto en el Boletín Oficial de la Provincia.</p><p>Sexto. Otros datos de interés.</p><p>- Presentación de solicitudes. Las solicitudes se presentarán en la sede electrónica de la Diputación de León, ya que como establece el artículo 14.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las personas jurídicas estarán obligadas a relacionarse por medios electrónicos para la realización de cualquier trámite de un procedimiento administrativo. Y para ello es necesario que los solicitantes dispongan de un certificado electrónico de representante de la persona jurídica que solicita la subvención, utilizando los formularios específicos que se incluyen como Anexos a estas Bases. El modelo de solicitud y resto de anexos se facilitarán a través de la página web de la Diputación de León, https://www.dipuleon.es/ciudadania/servicios-sociales/cooperacion-al-desarrollo-y-fomento-de-asociaciones/entidades-sin-animo-de-lucro/, donde aparecerá la presente Convocatoria y los Anexos de manera íntegra. Para cualquier aclaración referente a esta Convocatoria podrán dirigirse a la Sección de Cooperación al Desarrollo y Fomento de Asociaciones a través del correo electrónico cooperaciondesarrollo.asociaciones@dipuleon.es. </p><p>- Documentación a presentar con la solicitud. La prevista en la Base Novena de la convocatoria.</p><p>- Gastos subvencionables. Los previstos en las Bases Séptima y Octava de la convocatoria.</p><p>- Obligaciones de los beneficiarios: Las previstas en la Base Quinta de la convocatoria.</p><p>- Criterios de Valoración. Los Previstos en la Base Undécima de la convocatoria.</p><p>- Justificación. La fecha límite para la presentación de la justificación es el 28 de febrero de 2027, aportando la documentación exigida en la Base Decimoquinta.</p><p>- Forma de pago. Se realizará una vez que se haya justificado el gasto y se acredite el cumplimiento de los requisitos señalados en el artículo 18 de la Ordenanza General de Subvenciones y en la base 5.ª de las BGS.</p><p>- Posibilidad de anticipo. Con el fin de facilitar la realización del objeto de la subvención, tras la resolución de la convocatoria podrá abonarse, previa solicitud expresa por parte de la entidad beneficiaria, un anticipo por importe de hasta el 50% de la cantidad concedida. El 50% restante estará supeditado a la remisión y aceptación de la justificación exigida en la base Decimoquinta.  La solicitud se efectuará en modelo normalizado que se adjunta (ANEXO VII) (Base Decimotercera) debiendo aportar, asimismo la Ficha de Terceros exigida para el pago de la subvención en el artículo 18 de la OGS a las entidades que se presentan a esta convocatoria y, al ser entidades sin ánimo de lucro que ejecutan proyectos de interés social, se les exime de la presentación de garantías para este pago anticipado. En aquellos casos que no soliciten pago anticipado, el abono de la subvención se efectuará una vez que sea aceptada la documentación justificativa.</p><p>- Compatibilidad con otras ayudas. La concesión de la subvención será compatible con otras otorgadas para la misma finalidad, siempre que el importe total de las mismas no supere el presupuesto del proyecto subvencionado. A tal efecto, los solicitantes deberán declarar todas las ayudas solicitadas o concedidas para ese proyecto.</p><p>- Órgano competente para resolver. Corresponde la competencia para la aprobación de las Bases a la Junta de Gobierno, por delegación del Pleno de la Corporación (Acuerdo de 14 de septiembre de 2023), que resolverá definitivamente la convocatoria en un plazo que no excederá de seis meses desde la fecha de publicación del extracto de la convocatoria. La resolución definitiva se notificará a los interesados y será expuesta en el Tablón de Anuncios del centro gestor.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dipuleon.es/publica/buscador-anuncios/anuncio/Extracto-de-la-convocatoria-de-subvenciones-a-proyectos-de-accion-social-y-servicios-sociales-realizados-por-entidades-privadas-sin-animo-de-lucro-2026-BDNS-899940/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE LEÓN",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

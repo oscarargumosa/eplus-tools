@@ -1,0 +1,84 @@
+{
+  "id": 1099797,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE IGUALDAD",
+    "nivel3": "INSTITUTO DE LAS MUJERES"
+  },
+  "sedeElectronica": "https://igualdad.sede.gob.es/",
+  "codigoBDNS": "898236",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 770000,
+  "mrr": false,
+  "descripcion": "Resolución de 10 de abril de 2026, de la Dirección del Instituto de las Mujeres, por la que se convoca la concesión de las subvenciones públicas destinadas a la realización de Investigaciones Feministas, para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Orden IGD/1299/2025, de 3 de noviembre, por la que se establecen las bases reguladoras para la concesión de subvenciones en régimen de concurrencia competitiva por el Instituto de las Mujeres, O.A., en el ámbito universitario.",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-23113",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto en el BOE",
+  "textFin": "10 días hábiles desde la publicación del extracto en el BOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433603,
+      "descripcion": "Orden de bases",
+      "nombreFic": "IGD-1299-2025 BOE-A-2025-23113.pdf",
+      "long": 336763,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433600,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01 Resolucion de 300326 INVESTIGACIONES FEMINISTAS 26.pdf.xsig.pdf",
+      "long": 1138280,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208578,
+      "titulo": "Extracto de la Resolución de 10 de abril de 2026, de la Dirección del Instituto de las Mujeres, por la que se convoca la concesión de las subvenciones públicas destinadas a la realización de Investigaciones Feministas, para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p>Podrán ser solicitantes y beneficiarias de las subvenciones objeto de la presente convocatoria las Universidades Públicas cuya creación y reconocimiento se efectúe conforme al artículo 4.1.a) de la Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario.</p><p>Segundo: Objeto</p><p>Realizar Investigaciones Feministas originales e inéditas, así como impulsar la investigación aplicada en la materia.</p><p>Tercero: Bases reguladoras.</p><p>Por Orden IGD/1299/2025, de 3 de noviembre, se establecen las bases reguladoras para la concesión de subvenciones en régimen de concurrencia competitiva por el Instituto de las Mujeres, O.A., en el ámbito universitario.</p><p>Cuarto: Cuantía.</p><p>La financiación de los proyectos de Investigaciones Feministas de la presente convocatoria se hará con cargo a la aplicación 30.101.232B.457.01 por una cuantía de 770.000 € (setecientos setenta mil euros) del vigente presupuesto de gastos del Instituto de las Mujeres, O.A. del año 2026.</p><p>La anterior cuantía se distribuirá entre los proyectos seleccionados, y el importe destinado a cada uno de ellos no podrá ser superior a 25.000 euros.</p><p>Quinto: Plazo. Presentación de solicitudes.</p><p>Diez días hábiles, contados a partir del día siguiente al de la publicación del extracto de la Resolución de convocatoria de las Subvenciones en el Boletín Oficial del Estado.</p><p>La presentación se realizará en la sede electrónica del Ministerio de Igualdad cuya dirección es https://igualdad.sede.gob.es</p><p>Sexto: Otros datos.</p><p>El texto completo de esta convocatoria y sus anexos, están disponibles en la página Web del Instituto de las Mujeres.</p><p>(http://www.inmujeres.gob.es/servRecursos/convocatorias.do)</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11560",
+      "cve": "BOE-B-2026-11560",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

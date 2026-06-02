@@ -1,0 +1,75 @@
+{
+  "id": 1102920,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARRASATE/MONDRAGÓN",
+    "nivel3": "AYUNTAMIENTO DE ARRASATE/MONDRAGÓN"
+  },
+  "sedeElectronica": "www.arrasate.eus",
+  "codigoBDNS": "901359",
+  "fechaRecepcion": "2026-04-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA REALIZACIÓN DE PROGRAMAS ANUALES PARA LAS DIFERENTES ASOCIACIONES CULTURALES.",
+  "descripcionLeng": "KULTURA ELKARTEEI DIRULAGUNTZAK, URTEKO PROGRAMAK EGIN DITZATEN.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza municipal para la concesión y gestión de subvenciones",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/16/c2601976.htm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia seguiente a su publicación en el boletin oficial correspondiente",
+  "textFin": "un mes desde su publicacion en el boletin oficial correspondiente",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442089,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "KULTURA SAILA.pdf",
+      "long": 140860,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    },
+    {
+      "id": 1442088,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "KULTURA SAILA.pdf",
+      "long": 140860,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

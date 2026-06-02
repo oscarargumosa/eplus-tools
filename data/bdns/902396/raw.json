@@ -1,0 +1,72 @@
+{
+  "id": 1103957,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARRASATE/MONDRAGÓN",
+    "nivel3": "AYUNTAMIENTO DE ARRASATE/MONDRAGÓN"
+  },
+  "sedeElectronica": "www.arrasate.eus",
+  "codigoBDNS": "902396",
+  "fechaRecepcion": "2026-04-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA ASOCIACIONES QUE DESARROLLAN SU ACTIVIDAD EN EL ÁMBITO DE LA ACCIÓN SOCIAL 2026",
+  "descripcionLeng": "DEIALDIA  DIRU LAGUNTZAK EMATEKO 2026AN GIZARTE EKINTZAREN EREMUAN DIHARDUTEN ELKARTEEI",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza municipal para la concesión y gestión de subvenciones",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/16/c2601976.htm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el siguiente dia de su publicación en el boletin oficial correspondiente",
+  "textFin": "30 días hábiles contados a partir de la publicación de la presente convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1445217,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "3.3 Ongizate.pdf",
+      "long": 180611,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    },
+    {
+      "id": 1445215,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "3.3 Ongizate.pdf",
+      "long": 180611,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

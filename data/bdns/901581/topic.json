@@ -1,0 +1,93 @@
+{
+  "source": "bdns",
+  "source_id": "901581",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PONTEAREAS / AYUNTAMIENTO DE PONTEAREAS",
+  "nuts_codes": [
+    "ES114"
+  ],
+  "nuts_primary": "ES114",
+  "title": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES DE APOYO A LA CULTURA – ANUALIDAD 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://ponteareas.sedelectronica.gal/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901581",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Anexo I. Formulario Único",
+      "url": null
+    },
+    {
+      "label": "Anexo II. Memoria de actividades",
+      "url": null
+    },
+    {
+      "label": "Ficha de terceiros",
+      "url": null
+    },
+    {
+      "label": "Anexo III. Relación de facturas (Conta xustificativa)",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://portal.ponteareas.gal/axudas-subvencions/",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL ESTRACTO DE LA CONVOCATORIA EN EL BOP",
+  "text_fin": "20 DIAS DESPUES DE LA PUBLICACIÓN DEL ESTRACTO DE LA CONVOCATORIA EN EL BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210067,
+      "titulo": "BASES REGULADORAS DE SUBVENCIONES DE APOYO A LA CULTURA – ANUALIDAD 2026",
+      "tituloLeng": "BASES REGULADORAS DA CONVOCATORIA DE SUBVENCIÓNS DE APOIO Á CULTURA – ANUALIDADE 2026",
+      "texto": "<p>Se hace público para general conocimiento que por Resolución del 1º Teniente de alcaldesa, de fecha 23 de abril de 2026, se aprobaron las bases para:</p><p>SUBVENCIONES DE APOYO A LA CULTURA – ANUALIDAD 2026</p><p>Por lo que se exponen al público para que los interesados puedan presentar su solicitud a partir del día siguiente de la publicación en el Boletín Oficial de la Provincia de Pontevedra (BOPPO) del extracto remitido por la Base de Datos Nacional de Subvenciones (BDNS), en el plazo de 20 días hábiles.</p>",
+      "textoLeng": "<p>Fáise público para xeral coñecemento que por Resolución do 1º Tenente de alcaldesa, de data 23 de xaneiro de 2026, as bases para:</p><p>SUBVENCIÓNS DE APOIO Á CULTURA – ANUALIDADE 2026</p><p>Polo que se expoñen ao público para que os interesados poidan presentar a súa solicitude a partir do día seguinte á publicación no Boletín Oficial da Provincia de Pontevedra (BOPPO) do extracto remitido pola Base de Datos Nacional de Subvencións (BDNS), no prazo de 20 días hábiles.</p>",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/04/29/2026034457",
+      "cve": "MNB4FKGOC953HDJQ",
+      "desDiarioOficial": "B.O.P. DE PONTEVEDRA",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.262Z"
+}

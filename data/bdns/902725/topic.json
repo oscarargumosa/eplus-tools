@@ -1,0 +1,93 @@
+{
+  "source": "bdns",
+  "source_id": "902725",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÁCERES / INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES",
+  "nuts_codes": [
+    "ES432"
+  ],
+  "nuts_primary": "ES432",
+  "title": "PLAN DE SUBVENCIONES  FOMENTO DE LA IGUALDAD, LUCHA CONTRA LA DISCRIMINACIÓN POR LA ORIENTACIÓN SEXUAL Y DE INTERVENCION SOCIAL DEL COLECTIVO LÉSBICO, GAY, TRANSEXUAL, BISEXUAL E INTERSEXUAL (LGBTI) DE LA CIUDAD DE CÁCERES PARA EL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902725",
+  "documents": [
+    {
+      "label": "ANEXO_VII.pdf",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI.pdf",
+      "url": null
+    },
+    {
+      "label": "ANEXO_V.pdf",
+      "url": null
+    },
+    {
+      "label": "ANEXO_IV.pdf",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANEXO_II.pdf",
+      "url": null
+    },
+    {
+      "label": "ANEXO_I.pdf",
+      "url": null
+    },
+    {
+      "label": "Cartel inf Subv LGTBI 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO III.pdf",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ayto-caceres.es/ayuntamiento/publicaciones/ayudas-y-subvenciones/",
+  "text_inicio": "EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.P. DE CACERES",
+  "text_fin": "20 DIAS HABILES SIGUIENTES A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP CC",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.841Z"
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "899629",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ÍSCAR / AYUNTAMIENTO DE ÍSCAR",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "Convocatoria para la concesión de subvenciones a Asociaciones Culturales de Íscar, año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899629",
+  "documents": [
+    {
+      "label": "Anexo III Declaración responsable otras subvenciones",
+      "url": null
+    },
+    {
+      "label": "Anexo V Justificación",
+      "url": null
+    },
+    {
+      "label": "Anexo IV Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo II Proyecto de Actividades",
+      "url": null
+    },
+    {
+      "label": "Decreto de convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://iscar.sedelectronica.es/info.0",
+  "text_inicio": "20 días naturales a contar desde el siguiente a la publicación en el BOP",
+  "text_fin": "20 días naturales a contar desde el siguiente a la publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.193Z"
+}

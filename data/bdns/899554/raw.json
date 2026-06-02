@@ -1,0 +1,80 @@
+{
+  "id": 1101115,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CUERVO DE SEVILLA, EL",
+    "nivel3": "AYUNTAMIENTO DE CUERVO DE SEVILLA, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899554",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800,
+  "mrr": false,
+  "descripcion": "CONCURSO CARROZAS DE ROMERÍA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES61 - ANDALUCIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DEL CONCURSO DE CARROZAS DE LA LXVI ROMERÍA EN HONOR A LA STMA. VIRGEN DEL ROSARIO DE EL CUERVO DE SEVILLA",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-209205-de-la-convocatoria-del-concurso-de-carrozas-de-la-Romeria-2026-BDNS-codigo-899554/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-27",
+  "fechaFinSolicitud": "2026-05-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437457,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES_REGULADORAS_DEL_CONCURSO_CARROZAS_ROMERIA_2026 FIRMADA.pdf",
+      "long": 529773,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209205,
+      "titulo": "CONCURSO DE CARROZAS DE ROMERÍA 2026 EL CUERVO DE SEVILLA",
+      "tituloLeng": null,
+      "texto": "<p>Normas del concurso:</p><p>Todas las carrozas deberán haberse inscrito previamente en el Registro del Ayuntamiento, entregando junto a la solicitud, la documentación requerida en la misma y el justificante del abono de la inscripción, estando abierto el plazo de inscripción desde el 27 de abril a las 8 horas hasta el 15 de mayo a las 14 horas, ambos inclusive. El primer día de inscripción (27 de abril) sólo se admitirán solicitudes de forma presencial.</p><p>El jurado: Los miembros que compongan el jurado serán nombrados por decreto de Alcaldía y serán hechos públicos antes de iniciar sus labores, los cuáles otorgarán los premios que se establecen de acuerdo con la decoración y ornamentación de las carrozas.</p><p>El jurado podrá declarar desiertos aquellos premios que estime conveniente, de acuerdo con su criterio, siendo en todo caso su decisión inapelable.</p><p>Se faculta al jurado para resolver todas aquellas cuestiones no previstas en estas bases.</p><p>La participación en esta convocatoria supone la plena aceptación y conformidad con estas normas.</p><p>Serán beneficiarios de premios aquellas carrozas que debidamente inscritas, sean designadas por el jurado nombrado a tal efecto, los premios serán: UN premio especial a la mejor carroza, consistente en premio en metálico de trescientos euros (300’00 €) y tener el derecho de ser la primera en la comitiva de vuelta a la iglesia el domingo y en la salida del año 2027 hacia la ermita, a partir de ella se colocarán las restantes por orden de inscripción, y CINCO premios de cien euros (100’00 €) a las carrozas mejor engalanadas independientemente del tamaño de las mismas.</p>",
+      "textoLeng": null,
+      "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-209205-de-la-convocatoria-del-concurso-de-carrozas-de-la-Romeria-2026-BDNS-codigo-899554/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

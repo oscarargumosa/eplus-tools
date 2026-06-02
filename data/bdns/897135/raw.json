@@ -1,0 +1,92 @@
+{
+  "id": 1098696,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTIAGO DE COMPOSTELA",
+    "nivel3": "AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA"
+  },
+  "sedeElectronica": "www.concellodesantiago.gal",
+  "codigoBDNS": "897135",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES REGULADORAS DEL PREMIO SELIC DE CREACCION LITERARIA 2026",
+  "descripcionLeng": "CONVOCATORIA E BASES REGULADORAS DO PREMIO SELIC DE CREACIÓN LITERARIA 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DEL PREMIO SELIC DE CREACCIÓN LITERARIA 2026",
+  "urlBasesReguladoras": "www.concellodesantiago.gal",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "dia siguiente a la publicación de la convocatoria en el BOP de A Coruña",
+  "textFin": "10 de septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437786,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 630837,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437788,
+      "descripcion": "Modelo de Convocatoria de Subvención",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 630415,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437787,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 630415,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209264,
+      "titulo": "CONVOCATORIA Y BASES REGULADORAS DE LOS PREMIOS SELIC DE CREACCIÓN LITERARIA 2026",
+      "tituloLeng": "CONVOCATORIA E BASES REGULADORAS DOS PREMIOS SELIC DE CREACCIÓN LITERARIA 2026",
+      "texto": "<p>CONVOCATORIA Y BASES REGULADORAS DE LOS PREMIOS SELIC DE CREACCIÓN LITERARIA 2026</p>",
+      "textoLeng": "<p>Bases do Premio SELIC de creación literaria 2026\nPrimeira\nCo obxecto de incrementar a presenza de Santiago de Compostela na literatura escrita en galego, o Concello de Santiago de Compostela convoca un premio para obras escritas en galego nos xéneros de narrativa, poesía, teatro e ensaio.\nO prazo de presentación das obras abrirase ao día seguinte da publicación da convocatoria no BOP.\nSegunda\nO premio terá unha dotación de 6.000 euros.\nOs textos deberán ser inéditos e terán a cidade de Santiago de Compostela como marco da acción ou referencia fundamental da obra. O premio conleva a publicación na colección SELIC que edita o Concello de Santiago, renunciando os autores/as a percibiren dereitos de autoría por esta publicación.\nTerceira\nAs obras que opten aos premios deberán ter as seguintes extensións: narrativa e ensaio un mínimo de 150.000 caracteres (incluídos espazos), poesía un mínimo de 350 versos e teatro un mínimo de 40.000 caracteres (incluídos espazos). Os premios estarán suxeitos ás retencións fiscais que correspondan.\nCuarta\nO xurado estará composto por cinco persoas representativas do sistema literario galego. Actuará como secretario/a, con voz e sen voto, un/ha funcionario/a do Concello de Santiago de Compostela.\nQuinta\nO xurado poderá declarar deserto o premio e non terá en consideración aqueles orixinais que non se axusten estritamente ás presentes bases nin os que foran premiados noutros certames literarios.\nSexta\nO prazo de recepción de orixinais remata o 10 de setembro de 2026. Remitiranse ao Concello de Santiago de Compostela (Apartado de correos 10. 15.780 Santiago de Compostela).\nSétima\nA obra orixinal achegarase en arquivo dixital con formato doc, docx ou odt. nun lápis de memoria e un exemplar en papel, coas páxinas numeradas, sen encadernar nin grampar. Acompañarase dun sobre pechado identificado mediante lema ou pseudónimo que conterá: Título da obra, nome e apelidos do/a autor/a, domicilio, DNI, breve currículo, correo electrónico e teléfono de contacto.\nOs arquivos que cheguen infectados de virus comportarán a descualificación da obra.\nOitava\nO veredicto do xurado será inapelable e farase público no mes de decembro deste ano.\nNovena\nOs orixinais serán custodiados durante un mes no Teatro Principal de Santiago para que os participantes que queiran poidan recollelos. Tamén poderán ser devoltos por mensaxería a portes debidos.\nDécima\nA participación no Premio SELIC de creación literaria supón a aceptación das presentes bases.</p>",
+      "url": "https://bop.dacoruna.gal/bopportal/descargarPdf.do?fecha=20260422&numRegistro=2026/0000002433.pdf",
+      "cve": "2026/2433",
+      "desDiarioOficial": "B.O.P. DE A CORUÑA",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

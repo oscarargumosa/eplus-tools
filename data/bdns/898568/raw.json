@@ -1,0 +1,72 @@
+{
+  "id": 1100129,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TUDELA",
+    "nivel3": "AYUNTAMIENTO DE TUDELA"
+  },
+  "sedeElectronica": "sede.tudela.es",
+  "codigoBDNS": "898568",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 202400,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones a ONGD para proyectos de cooperación 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales",
+      "codigo": "99"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES220 - Navarra"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones a ONGD para proyectos de cooperación 2026",
+  "urlBasesReguladoras": "https://sede.tudela.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "30 días naturales a contar desde el día siguiente al de la publicación de la convocatoria en BON",
+  "textFin": "Tras finalizar el plazo anterior",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434471,
+      "descripcion": "Bases de Convocatoria ONGD 2026",
+      "nombreFic": "Bases de Convocatoria ONGD 2026.PDF",
+      "long": 254180,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1434470,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases de Convocatoria ONGD 2026.PDF",
+      "long": 254180,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

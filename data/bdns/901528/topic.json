@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "901528",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SOTOBAÑADO Y PRIORATO / AYUNTAMIENTO DE SOTOBAÑADO Y PRIORATO",
+  "nuts_codes": [
+    "ES414"
+  ],
+  "nuts_primary": "ES414",
+  "title": "Convocatoria pública para la concesión de subvenciones a establecimientos de hostelería tales como bares, restaurantes o cafeterías, ubicados en el municipio de Sotobañado y Priorato (Palencia)",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": "https://sotobanadoypriorato.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901528",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sotobanadoypriorato.sedelectronica.es/transparency/7a1c94ad-8f56-4493-97c4-20dd3cda9656/",
+  "text_inicio": "Con la publicación del anuncio de la Convocatoria en el BOP de Palencia",
+  "text_fin": "Veinte días hábiles desde el siguiente al anuncio en el BOP de Palencia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.249Z"
+}

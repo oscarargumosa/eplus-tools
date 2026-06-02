@@ -17,6 +17,8 @@
     "cheerio": "^1.2.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "docx": "^9.6.1",
+    "docxtemplater": "^3.68.7",
     "dotenv": "^16.6.1",
     "express": "^4.21.0",
     "express-rate-limit": "^7.4.0",
@@ -30,6 +32,7 @@
     "openai": "^6.34.0",
     "pdf-parse": "^2.4.5",
     "pg": "^8.20.0",
+    "pizzip": "^3.2.0",
     "resend": "^6.12.2",
     "uuid": "^10.0.0",
     "xlsx": "^0.18.5"

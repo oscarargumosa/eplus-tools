@@ -8,6 +8,11 @@ const ok  = (res, data) => res.json({ ok: true, data });
 exports.listPrograms  = wrap(async (req, res) => { ok(res, await m.listPrograms()); });
 exports.upsertProgram = wrap(async (req, res) => { ok(res, { id: await m.upsertProgram(req.body, req.params.id || null) }); });
 exports.deleteProgram = wrap(async (req, res) => { await m.deleteProgram(req.params.id); ok(res, null); });
+exports.importProgramFromFeed = wrap(async (req, res) => {
+  const sourceId = (req.body?.source_id || '').trim();
+  if (!sourceId) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'source_id required' } });
+  ok(res, await m.importProgramFromFeed(sourceId));
+});
 
 /* ── Countries ────────────────────────────────────────────────── */
 exports.listCountries  = wrap(async (req, res) => { ok(res, await m.listCountries(req.query)); });
@@ -67,6 +72,22 @@ exports.createCallDocument  = wrap(async (req, res) => {
 });
 exports.deleteCallDocument  = wrap(async (req, res) => { await m.deleteCallDocument(req.params.id); ok(res, null); });
 exports.availableCallDocuments = wrap(async (req, res) => { ok(res, await m.availableCallDocuments(req.params.programId)); });
+
+/* ── CAG inventory & priority ─────────────────────────────────── */
+exports.getCagInventory = wrap(async (req, res) => { ok(res, await m.getCagInventory(req.params.programId)); });
+exports.updateCallDocumentOrder = wrap(async (req, res) => {
+  const sortOrder = parseInt(req.body.sort_order, 10);
+  if (!Number.isFinite(sortOrder)) return res.status(400).json({ ok: false, error: 'sort_order is required (number)' });
+  await m.updateCallDocumentOrder(req.params.id, sortOrder);
+  ok(res, null);
+});
+exports.reorderCallDocuments = wrap(async (req, res) => {
+  const hasIds = Array.isArray(req.body.ids);
+  const hasItems = Array.isArray(req.body.items);
+  if (!hasIds && !hasItems) return res.status(400).json({ ok: false, error: 'ids[] or items[] is required' });
+  const n = await m.reorderCallDocuments(req.params.programId, req.body);
+  ok(res, { updated: n });
+});
 
 /* ── Duplicate programme ─────────────────────────────────────── */
 exports.duplicateProgram = wrap(async (req, res) => { ok(res, await m.duplicateProgram(req.params.id)); });

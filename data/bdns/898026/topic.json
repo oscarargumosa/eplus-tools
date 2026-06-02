@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "898026",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / FUENTE ÁLAMO DE MURCIA / AYUNTAMIENTO DE FUENTE ÁLAMO DE MURCIA",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "CONVOCATORIA DEL XXXII FESTIVAL PEDRO POP LAS PALAS 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://ayto-fuentealamo.es/sedeelectronica/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898026",
+  "documents": [
+    {
+      "label": "CERTIFICADO JGL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/#/home/anuncio/16-04-2013/5704",
+  "text_inicio": "Desde el día siguiente a la publicación",
+  "text_fin": "31/05/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208466,
+      "titulo": "Extracto de la Convocatoria del XXXII Festival Pedro Pop Las Palas",
+      "tituloLeng": null,
+      "texto": "<p>Primera.- Objeto, presupuesto y beneficiarios. Se convoca para el ejercicio 2026 en la modalidad de concesión en régimen de concurrencia competitiva, el XXXII Festival Pedro Pop Las Palas de Fuente Álamo de Murcia con la finalidad de promocionar grupos de música (pop-rock), generar un espacio de encuentro e intercambio entre músicos y mísicas, fomentar el desarrollo personal y grupal a través de la creatividad y mostrar a la población en general la creación cultural. Podrán participar a esta convocatoria los grupos y cantantes solistas, no profesionales, mayores de edad y que no hayan sido premiados en la anterior edición.</p><p>Segunda.- Características. Cada concursante solista o grupo, tendrán que presentar dos temas enmarcados en los estilos pop y/o rock, teniendo en cuenta que no tengan contrato en vigor con compañía discográfica alguna.</p><p>Tercera.- Plazo presentación de solicitudes. El plazo de presentación de solicitudes se iniciará el día siguiente a la publicación del extracto de la convocatoria en el BORM y finalizará el 31 de mayo de 2026.</p><p>Cuarta.- Premios. Se otorgarán los siguientes premios:</p><p>Primer premio: 1.000 €</p><p>Segundo premio: 500 €</p><p> </p>",
+      "textoLeng": null,
+      "url": "https://www.borm.es/services/anuncio/ano/2026/numero/1636/pdf",
+      "cve": "A-140426-1636",
+      "desDiarioOficial": "BORM. B.O. DE LA REGIÓN DE MURCIA",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.368Z"
+}

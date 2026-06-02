@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "902242",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ARROYOMOLINOS / AYUNTAMIENTO DE ARROYOMOLINOS",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "BASES PARA EL OTORGAMIENTO DE PRESTACIONES ECONOMICAS PUNTUALES DE PAGO UNICO (AYUDAS COMPLEMENTARIAS) PARA LA MEJORA DE LAS CONDICIONES DE HABITABILIDAD DE LA VIVIENDA DE PERSONAS MAYORES Y/O CON DISCAPACIDAD EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.ayto-arroyomolinos.org/eAdmin/Sede.do",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902242",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO V",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ayto-arroyomolinos.org/",
+  "text_inicio": "Día siguiente a la publicación de la convocatoria en el Boletín Oficial de la Comunidad de Madrid",
+  "text_fin": "Veinte días hábiles a partir del día siguiente al de publicación de la convocatoria en el Boletín ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.599Z"
+}

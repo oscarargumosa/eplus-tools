@@ -1,0 +1,72 @@
+{
+  "id": 1099920,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CIUDAD AUTÓNOMA DE MELILLA",
+    "nivel3": "PRESIDENCIA, ADMINISTRACIONES PÚBLICAS E IGUALDAD"
+  },
+  "sedeElectronica": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+  "codigoBDNS": "898359",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 180000,
+  "mrr": false,
+  "descripcion": "AYUDAS ECONÓMICAS PARA LIBROS DE TEXTO, MATERIAL, TRANSPORTE ESCOLAR, OTROS GASTOS OCASIONADOS DURANTE EL PERIODO DE PRÁCTICAS Y TASAS POR EXPEDICIÓN DEL TÍTULO, PARA LOS ALUMNOS DE SEGUNDO CURSO DE LOS CICLOS DE FORMACIÓN PROFESIONAL DE GRADO...2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES64 - CIUDAD AUTONOMA DE MELILLA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE AYUDAS DE LA CIUDAD AUTÓNOMA DE MELILLA PARA LIBROS DE TEXTO, MATERIAL, TRANSPORTE ESCOLAR, OTROS GASTOS OCASIONADOS DURANTE EL PERIODO DE PRÁCTICAS Y TASAS POR EXPEDICIÓN DEL TÍTULO, PARA LOS ALUMNOS DE SEGUNDO CURSO DE LOS CICLOS",
+  "urlBasesReguladoras": "https://bomemelilla.es/bome/BOME-BX-2023-13/articulo/38",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-05-21",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433991,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "2_26763_1.pdf",
+      "long": 320030,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433983,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Notificacion_de_resolucion_Registro_de_Salida_-_ML000000040014000200575.pdf",
+      "long": 274657,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

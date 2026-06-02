@@ -1,0 +1,104 @@
+{
+  "id": 1100362,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NAVALMORALES, LOS",
+    "nivel3": "AYUNTAMIENTO DE NAVALMORALES, LOS"
+  },
+  "sedeElectronica": "www.losnavalmorales.es",
+  "codigoBDNS": "898801",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA LA REALIZACIÓN DE ACTIVIDADES CULTURALES, DEPORTIVAS, SOCIALES Y/O EDUCATIVAS, DURANTE EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES425 - Toledo"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA LA REALIZACIÓN DE ACTIVIDADES CULTURALES, DEPORTIVAS, SOCIALES Y/O EDUCATIVAS DURANTE EL AÑO 2026",
+  "urlBasesReguladoras": "https://losnavalmorales.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación de la convocatoria en B.O.P. de Toledo",
+  "textFin": "Dos meses desde la publicación de la convocatoria en B.O.P. de Toledo",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435145,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA 2026.pdf",
+      "long": 388836,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435152,
+      "descripcion": "ANEXO I. MODELO DE SOLICITUD",
+      "nombreFic": "MODELO DE SOLICITUD.pdf",
+      "long": 280270,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435160,
+      "descripcion": "ANEXO V. CUENTA JUSTIFICATIVA",
+      "nombreFic": "ANEXO V. CUENTA JUSTIFICATIVA.pdf",
+      "long": 267351,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435156,
+      "descripcion": "ANEXO III. SOLICITUD DE PAGO",
+      "nombreFic": "ANEXO III. SOLICITUD DE PAGO.pdf",
+      "long": 266386,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435159,
+      "descripcion": "ANEXO IV. DECLARACION EJECUCION",
+      "nombreFic": "ANEXO IV. DECLARACION RESPONSABLE.pdf",
+      "long": 260130,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435155,
+      "descripcion": "ANEXO II. DECLARACION RESPONSABLE",
+      "nombreFic": "ANEXO II. DECLARACION RESPONSABLE.pdf",
+      "long": 341496,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

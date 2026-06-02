@@ -1,0 +1,76 @@
+{
+  "id": 1099632,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE BAIX PENEDÈS",
+    "nivel3": "CONSELL COMARCAL DE BAIX PENEDÈS"
+  },
+  "sedeElectronica": "https://ccbp.eadministracio.cat/",
+  "codigoBDNS": "898071",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5764151.89,
+  "mrr": false,
+  "descripcion": "Convocatoria para el otorgamiento de ayudas de carácter individual para la utilización del servicio de comedor escolar (AIM), curso 2026-2027",
+  "descripcionLeng": "Convocatòria per l’atorgament dels ajuts de caràcter individual per la utilització del servei de menjador escolar (AIM), curs 2026-2027.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES QUE REGIRAN LAS AYUDAS INDIVIDUALES DE COMEDOR PARA ALUMNADO DE EDUCACIÓN INFANTIL Y ENSEÑANZAS OBLIGATORIAS EN CENTROS EDUCATIVOS SOSTENIDOS CON FONDO PÚBLICOS, PARA EL CURSO 2026-2027.",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/358208/bases-d-ajuts-individuals-de-menjador-per-l-alumnat-d-educacio-infantil-i-ensenyaments-obligatoris-curs-2026-2027-aprovacio-consell-comarcal-baix-penedes",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432891,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Extracte del Ple ajuts menjador curs 2026-2027.pdf",
+      "long": 156212,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1432890,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Extracto del Pleno  ayudas comedor curso 2026-2027.pdf",
+      "long": 151101,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

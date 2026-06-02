@@ -1,0 +1,80 @@
+{
+  "id": 1099019,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILADECANS",
+    "nivel3": "AYUNTAMIENTO DE VILADECANS"
+  },
+  "sedeElectronica": "https://seuelectronica.viladecans.cat/es/ ",
+  "codigoBDNS": "897458",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 51550,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS 2026 DESTINADAS A LA REDUCCIÓN, EL RECICLAJE Y LA MEJORA DE LA SEPARACIÓN DE RESIDUOS DEL SECTOR COMERCIAL DE VILADECANS QUE EJERCE LA ACTIVIDAD EN LOCALES DE HASTA 60 METROS CUADRADOS",
+  "descripcionLeng": "CONVOCATÒRIA D'AJUTS 2026 DESTINATS A LA REDUCCIÓ, RECICLATGE I MILLORA DE LA SEPARACIÓ DE RESIDUS DEL SECTOR COMERCIAL DE VILADECANS QUE EXERCEIX L’ACTIVITAT EN LOCALS DE FINS A 60 METRES QUADRATS",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladores específiques d’ajuts destinats a la reducció, reciclatge i millora de la separació de residus del sector comercial de Viladecans.",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3918582/aprovacio-definitiva-de-les-bases-reguladores-especifiques-d-ajuts-destinats-a-la-reduccio-reciclatge-i-millora-de-la-separacio-de-residus-del-sector-comercial-ajuntament-de-viladecans",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-29",
+  "textInicio": "Endemà de la publicació de l’extracte al BOPB.",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431230,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria_CAT.pdf",
+      "long": 125555,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431229,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_CAST.pdf",
+      "long": 125687,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

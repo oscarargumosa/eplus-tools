@@ -1,0 +1,71 @@
+{
+  "id": 1101526,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANARIAS",
+    "nivel3": "CONSEJERÍA DE POLÍTICA TERRITORIAL, COHESIÓN TERRITORIAL Y AGUAS"
+  },
+  "sedeElectronica": "https://sede.gobiernodecanarias.org/sede/",
+  "codigoBDNS": "899965",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8500000,
+  "mrr": false,
+  "descripcion": "Subvención plantas potabilizadoras en Canarias",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Captación, depuración y distribución de agua",
+      "codigo": "36"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones destinadas a la financiación del funcionamiento de plantas potabilizadoras de agua situadas en Canarias y se efectúa la convocatoria",
+  "urlBasesReguladoras": "https://www.gobiernodecanarias.org/boc/",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Subvención para el funcionamiento de las plantas potabilizadoras de agua en Canarias",
+  "textFin": null,
+  "ayudaEstado": "SA.107583",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.107583",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 15 AYUDAS REGIONALES DE FUNCIONAMIENTO."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438622,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria castellano.PDF",
+      "long": 336353,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

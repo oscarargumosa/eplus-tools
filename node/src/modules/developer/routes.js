@@ -88,6 +88,7 @@ router.delete('/tasks/:id',                                requireAuth, ctrl.del
 router.put   ('/tasks/:id/participants/:partnerId',        requireAuth, ctrl.setTaskParticipant);
 router.delete('/tasks/:id/participants/:partnerId',        requireAuth, ctrl.removeTaskParticipant);
 router.get   ('/wp/:wpId/budget',                          requireAuth, ctrl.getWpBudget);
+router.post  ('/projects/:projectId/budget/refresh',       requireAuth, ctrl.refreshProjectBudget);
 router.get   ('/projects/:projectId/partners',             requireAuth, ctrl.listProjectPartners);
 router.post  ('/wp/:wpId/ai-fill',                         requireAuth, ctrl.aiFillWp);
 router.post  ('/wp/:wpId/tasks/resync',                    requireAuth, ctrl.resyncWpTasks);
@@ -111,6 +112,18 @@ router.get   ('/projects/:projectId/dms/snapshots',     requireAuth, ctrl.dmsLis
 router.post  ('/dms/snapshots/:id/restore',             requireAuth, ctrl.dmsRestoreSnapshot);
 router.get   ('/projects/:projectId/dms/ai-history',    requireAuth, ctrl.dmsAiHistory);
 router.get   ('/projects/:projectId/dms/export.csv',    requireAuth, ctrl.dmsExportCsv);
+
+// 2.1.3 Project teams — editable staff table (rows = project_partner_staff selected=1)
+router.get   ('/projects/:projectId/staff-table',       requireAuth, ctrl.listStaffTable);
+router.patch ('/staff-table/:ppsId',                    requireAuth, ctrl.updateStaffTable);
+
+// 2.1.5 Project risks — CRUD + AI bulk generator
+router.get   ('/projects/:projectId/risks',             requireAuth, ctrl.listRisks);
+router.post  ('/projects/:projectId/risks',             requireAuth, ctrl.createRisk);
+router.post  ('/projects/:projectId/risks/ai-generate', requireAuth, ctrl.aiGenerateRisks);
+router.post  ('/projects/:projectId/risks/ai-evaluate', requireAuth, ctrl.aiEvaluateRisks);
+router.patch ('/risks/:id',                             requireAuth, ctrl.updateRisk);
+router.delete('/risks/:id',                             requireAuth, ctrl.deleteRisk);
 
 // Comments thread on D / MS rows
 router.get   ('/projects/:projectId/dms/comments',  requireAuth, ctrl.dmsListComments);

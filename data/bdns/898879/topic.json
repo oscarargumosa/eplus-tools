@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "898879",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA DE MEDIO RURAL Y POLÍTICA AGRARIA",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "Resolución XXXX , por la que aprueba la convocatoria de ayudas acogidas al régimen \"de mínimis\" y destinadas a las explotaciones apícolas",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://sede.asturias.es/-/dboid-6269000017249595107573?redirect=%2Fbuscador%3F_pa_sede_buscadorgeneral_web_portlet_mini_BuscadorGeneralMiniPortlet_formDate%3D1614977781869%26p_r_p_searchText%3DAYUDAS%2BRENTABILIDAD%2BAPICOLAS%26p_auth%3D",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898879",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2019/03/14/2019-02290.pdf",
+  "text_inicio": "A PARTIR DEL DIA SIGUIENTE AL DE LA PUBLICACIÓN",
+  "text_fin": "20 dias contados  apartir del dia siguiente al de",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [
+    {
+      "descripcion": "Productos apícolas (parte XXII)"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208849,
+      "titulo": "Extracto de la Resolución de xxxx, por la que se aprueba la convocatoria de ayudas acogidas al régimen \"de minimis\" destinadas a las explotaciones apícolas, para el año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. -Beneficiarios:</p><p>Personas físicas o jurídicas titulares de explotaciones apícolas.</p><p>Segundo. -Finalidad:</p><p>Mejorar la rentabilidad de las explotaciones apícolas, mermada por la presencia de Vespa velutina y las condiciones climatológicas adversas, contribuyendo así a su modernización y desarrollo por su importante papel económico y también ecológico para el medio y la población.</p><p>Tercero. -Bases reguladoras:</p><p>Resolución de 6 de marzo de 2019, de la Consejería de Desarrollo Rural y Recursos Naturales, por la que se aprueban las bases reguladoras de ayudas acogidas al régimen de mínimis y destinadas a las explotaciones apícolas (BOPA 14/03/2019).</p><p>Cuarto. -Importe:</p><p>El importe total por el que se convocan las ayudas es de 80.000 €.</p><p>Quinto. -Plazo de presentación de solicitudes:</p><p>20 días hábiles contados a partir del día siguiente al de publicación en el Boletín Oficial del Principado de Asturias del presente extracto.</p><p>Sexto. -Otros datos:</p><p>En la sede electrónica del Principado de Asturias (https://sede.asturias.es) está publicada la ficha de información pública que se podrá localizar introduciendo el código AYUD0162T01 en el buscador de la cabecera (situado en la parte superior derecha de la página) y accediendo al enlace \"Ayudas para la mejora de la rentabilidad de las explotaciones apícolas\". A través de este enlace se visualiza una página en cuyo apartado \"Documentación relacionada\", se encontrará el texto íntegro de la resolución de la convocatoria, el formulario normalizado de solicitud y los modelos de cada uno de los anexos. En el apartado \"Normativa básica\", se encuentra el texto íntegro de la resolución de las bases reguladoras de las ayudas.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-03065&p_r_p_dispositionReference=2026-03065&p_r_p_dispositionDate=21%2F04%2F2026",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.724Z"
+}

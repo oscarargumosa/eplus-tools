@@ -1,0 +1,96 @@
+{
+  "id": 1105433,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SOTO Y AMÍO",
+    "nivel3": "AYUNTAMIENTO DE SOTO Y AMÍO"
+  },
+  "sedeElectronica": "https://aytosotoyamio.sedelectronica.es",
+  "codigoBDNS": "903872",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 3200,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES DIRIGIDAS ASOCIACIONES CULTURALES PARA LA REALIZACIÓN DE PROGRAMAS DE ACTIVIDADES DE INTERÉS CULTURAL 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA DE SUBVENCIONES DIRIGIDAS ASOCIACIONES CULTURALES PARA LA REALIZACIÓN DE PROGRAMAS DE ACTIVIDADES DE INTERÉS CULTURAL 2026",
+  "urlBasesReguladoras": "https://aytosotoyamio.sedelectronica.es/transparency/456e9336-1527-477e-9e36-ca7e47e1245d/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE LEÓN",
+  "textFin": "15 DÍAS HABILES DESDE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE LEÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449560,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "202605~1.PDF",
+      "long": 897761,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449562,
+      "descripcion": "ANEXO I SOLICITUD DE SUBVENCIÓN",
+      "nombreFic": "20260504_Otros_ANEXO I SOLICITUD DE SUBVENCIÓN.docx",
+      "long": 98692,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449580,
+      "descripcion": "ANEXO IV CUENTA JUSTIFICATIVA CON APORTACIÓN DE JUSTIFICANTE DE GASTO",
+      "nombreFic": "20260504_Otros_ANEXO IV CUENTA JUSTIFICATIVA CON APORTACIÓN DE JUSTIFICANTE DE GASTO.docx",
+      "long": 99824,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449577,
+      "descripcion": "ANEXO III MEMORIA DESCRIPTIVA DE LA ACTIVIDAD CULTURAL",
+      "nombreFic": "20260504_Otros_ANEXO III MEMORIA DESCRIPTIVA DE LA ACTIVIDAD CULTURAL.docx",
+      "long": 97553,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449576,
+      "descripcion": "ANEXO II DECLARACIÓN RESPONSABLE",
+      "nombreFic": "20260504_Otros_ANEXO II DECLARACIÓN RESPONSABLE.docx",
+      "long": 98112,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

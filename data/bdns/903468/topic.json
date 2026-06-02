@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903468",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE OURENSE / DIPUTACIÓN PROVINCIAL DE OURENSE",
+  "nuts_codes": [
+    "ES113"
+  ],
+  "nuts_primary": "ES113",
+  "title": "BASES REGULADORAS DE LA CONVOCATORIA DEL CONCURSO PÚBLICO PARA LA CONCESIÓN DE SUBVENCIONES PARA OBRAS DE REFORMA DE VIVIENDAS Y ADQUISICIÓN DE EQUIPAMIENTO TÉCNICO DIRIGIDO A PERSONAS MAYORES DE 65 AÑOS CORRESPONDIENTE AL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": "2026-05-13",
+  "deadline": "2026-06-13",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "www.depourense.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903468",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.depourense.es",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.164Z"
+}

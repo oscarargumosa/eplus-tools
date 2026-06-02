@@ -1,0 +1,76 @@
+{
+  "id": 1101425,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LEIOA",
+    "nivel3": "AYUNTAMIENTO DE LEIOA"
+  },
+  "sedeElectronica": "https://udaletxean.leioa.eus/",
+  "codigoBDNS": "899864",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1050,
+  "mrr": false,
+  "descripcion": "Extracto de Resolución 2026002977, de fecha de 20 de abril, de la Alcaldía del Ayuntamiento de Leoa, por la que se convocan las subvenciones de carácter ordinario para rótulos, vinilos de los escaparates y carteles fijos comerciales que que tengan presenc",
+  "descripcionLeng": "2026ko ekitaldian euskararen presentzia duten errotuluetarako, erakusleihoetako biniloetarako eta kartel finkoetarako ohiko dirulaguntzen deialdia egiten duen Leioako Udaleko Alkatetzaren apirilaren 20ko 2026002977 Ebazpenaren laburpena.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "Servicios de comidas y bebidas",
+      "codigo": "56"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Subvenciones para para rótulos, vinilos de los escaparates y carteles fijos comerciales que para rótulos, vinilos de los escaparates y carteles fijos comerciales que tengan presencia de euskera durante el ejercicio 2026",
+  "urlBasesReguladoras": "https://udaletxean.leioa.eus/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": "A partir del día de la publicación en el Boletín Oficial de Bizkaia",
+  "textFin": "Treinta de noviembre de dos mil ventiseis",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438362,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución.PDF",
+      "long": 326057,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438363,
+      "descripcion": "Resolución",
+      "nombreFic": "Resolución.PDF",
+      "long": 326057,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

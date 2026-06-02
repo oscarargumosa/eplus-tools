@@ -1,0 +1,107 @@
+{
+  "id": 1100718,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PAÍS VASCO",
+    "nivel3": "DEPARTAMENTO DE TURISMO, COMERCIO Y CONSUMO"
+  },
+  "sedeElectronica": "https://www.euskadi.eus/ayuda_subvencion/2026/emet-2026/web01-tramite/es/",
+  "codigoBDNS": "899157",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1285000,
+  "mrr": false,
+  "descripcion": "2026 EMET",
+  "descripcionLeng": "2026ko Ekintzailetzarako eta turismo-enpresen lehiakortasunaren hobekuntza",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades administrativas de oficina y otras actividades auxiliares a las empresas",
+      "codigo": "82"
+    },
+    {
+      "descripcion": "Actividades de agencias de viajes, operadores turísticos, servicios de reservas y actividades relacionadas ",
+      "codigo": "79"
+    },
+    {
+      "descripcion": "Actividades de alquiler",
+      "codigo": "77"
+    },
+    {
+      "descripcion": "Depósito, almacenamiento y actividades auxiliares del transporte ",
+      "codigo": "52"
+    },
+    {
+      "descripcion": "Servicios de alojamiento",
+      "codigo": "55"
+    },
+    {
+      "descripcion": "Servicios de comidas y bebidas",
+      "codigo": "56"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORDEN de 31 de marzo de 2026, del consejero de Turismo, Comercio y Consumo, por la que se regulan y convocan, para el ejercicio 2026, las ayudas de apoyo al emprendimiento y a la mejora de la competit",
+  "urlBasesReguladoras": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026001586",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-16",
+  "fechaFinSolicitud": "2026-05-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436183,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Documento convocatoria (euskera).PDF",
+      "long": 466911,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1436182,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria (castellano).PDF",
+      "long": 471240,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208994,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026001586",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

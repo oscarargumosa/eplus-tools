@@ -1,0 +1,29 @@
+# Postgres local que replica erasmus-pg del VPS para Claude Local.
+# Solo dev/test — no expuesto fuera de 127.0.0.1.
+# Uso: docker compose -f infra/docker-compose.local.yml up -d
+# Restaurar dump: ver scripts/sync-prod-pg-to-local.sh
+
+services:
+  pg-erasmus:
+    image: postgres:16-alpine
+    container_name: erasmus-pg-local
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: erasmus
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dev
+    ports:
+      # 5433 para no chocar con cualquier otro Postgres local en 5432
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - pgdata-erasmus:/var/lib/postgresql/data
+      - ./pg-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d erasmus"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  pgdata-erasmus:
+    name: eplus-pgdata-erasmus

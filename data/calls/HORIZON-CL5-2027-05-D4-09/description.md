@@ -1,0 +1,21 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- Based on the results of the project, at least one industrial sector with a significant heating demand in the EU and Associated Countries develops pathways and business models to measurably increase the industrial excess/waste heat recovery and conversion to power.
+- Measurable improvement of industrial excess/waste heat recovery and conversion to power, possibly combined with energy storage, in terms of energy efficiency, flexibility of electricity production, climate and environment protection, reliability and safety, physical and cyber security, and profitability.
+
+## Scope
+
+Better use of process excess/waste heat represents a significant source of energy savings for industries. The conversion of excess heat back to electricity, would improve energy efficiency, mitigate the increase of electricity consumption due to industrial electrification, as well as offer flexible electricity generation to stabilise the grid, if combined with thermal and/or electrical energy storage.
+
+Projects must address all the following items:
+- Develop and validate novel excess/waste heat recovery and conversion systems.
+- Demonstrate physically within one or more operational industrial site(s), the recovery of industrial excess/waste heat, possibly combined with energy storage, and its conversion to mechanical or electrical power.
+- Maximise the replicability and deployment of the concept/solution in the EU and Associated Countries’ plants in the same industrial sector. Already before starting the design phase, the needs of most EU and Associated Countries’ factories in the same industrial sector(s) should be surveyed and analysed in order to design a solution that can be adapted to meet most of them.
+- Identify common components, optimise and define a standardised version of them.
+- Develop open technical and economical guidelines and open tools for integrating such systems into SCADA (Supervisory Control and Data Acquisition) and EMS (Energy Management System) infrastructures of existing plants, and for developing innovative business model of heat valorisation as a flexible electricity generation offered to stabilise the power grid.
+- Disseminate results notably (but not only) to the relevant communities in cluster 4 ‘Digital, Industry and Space’ private-public partnerships.
+
+## null
+
+Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B. Activities may start at any TRL.

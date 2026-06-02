@@ -1,0 +1,83 @@
+{
+  "id": 1100440,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE MEDIO RURAL Y POLÍTICA AGRARIA"
+  },
+  "sedeElectronica": "https://sede.asturias.es/-/dboid-6269000017249595107573?redirect=%2Fbuscador%3F_pa_sede_buscadorgeneral_web_portlet_mini_BuscadorGeneralMiniPortlet_formDate%3D1614977781869%26p_r_p_searchText%3DAYUDAS%2BRENTABILIDAD%2BAPICOLAS%26p_auth%3D",
+  "codigoBDNS": "898879",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "Resolución XXXX , por la que aprueba la convocatoria de ayudas acogidas al régimen \"de mínimis\" y destinadas a las explotaciones apícolas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Resolución por la que se aprueban bases reguladoras de ayudas acogidas al régimen de mínimis y destinadas a las explotaciones apícolas",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa/2019/03/14/2019-02290.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DIA SIGUIENTE AL DE LA PUBLICACIÓN",
+  "textFin": "20 dias contados  apartir del dia siguiente al de",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Productos apícolas (parte XXII)"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1435378,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_Consejeria_Medio_Rural_y_Politica_Agraria_Firma_Consejero (40).pdf",
+      "long": 316205,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208849,
+      "titulo": "Extracto de la Resolución de xxxx, por la que se aprueba la convocatoria de ayudas acogidas al régimen \"de minimis\" destinadas a las explotaciones apícolas, para el año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. -Beneficiarios:</p><p>Personas físicas o jurídicas titulares de explotaciones apícolas.</p><p>Segundo. -Finalidad:</p><p>Mejorar la rentabilidad de las explotaciones apícolas, mermada por la presencia de Vespa velutina y las condiciones climatológicas adversas, contribuyendo así a su modernización y desarrollo por su importante papel económico y también ecológico para el medio y la población.</p><p>Tercero. -Bases reguladoras:</p><p>Resolución de 6 de marzo de 2019, de la Consejería de Desarrollo Rural y Recursos Naturales, por la que se aprueban las bases reguladoras de ayudas acogidas al régimen de mínimis y destinadas a las explotaciones apícolas (BOPA 14/03/2019).</p><p>Cuarto. -Importe:</p><p>El importe total por el que se convocan las ayudas es de 80.000 €.</p><p>Quinto. -Plazo de presentación de solicitudes:</p><p>20 días hábiles contados a partir del día siguiente al de publicación en el Boletín Oficial del Principado de Asturias del presente extracto.</p><p>Sexto. -Otros datos:</p><p>En la sede electrónica del Principado de Asturias (https://sede.asturias.es) está publicada la ficha de información pública que se podrá localizar introduciendo el código AYUD0162T01 en el buscador de la cabecera (situado en la parte superior derecha de la página) y accediendo al enlace \"Ayudas para la mejora de la rentabilidad de las explotaciones apícolas\". A través de este enlace se visualiza una página en cuyo apartado \"Documentación relacionada\", se encontrará el texto íntegro de la resolución de la convocatoria, el formulario normalizado de solicitud y los modelos de cada uno de los anexos. En el apartado \"Normativa básica\", se encuentra el texto íntegro de la resolución de las bases reguladoras de las ayudas.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-03065&p_r_p_dispositionReference=2026-03065&p_r_p_dispositionDate=21%2F04%2F2026",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

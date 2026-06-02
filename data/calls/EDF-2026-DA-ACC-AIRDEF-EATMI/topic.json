@@ -1,0 +1,206 @@
+{
+  "identifier": "EDF-2026-DA-ACC-AIRDEF-EATMI",
+  "ccm2Id": "50379667",
+  "callIdentifier": "EDF-2026-DA-ACC",
+  "callTitle": "Development actions implemented through actual cost grants (accelerated call)",
+  "title": "High-end endo-atmospheric interception",
+  "programme": "European Defence Fund",
+  "programmeCode": "44181033",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-02-11",
+  "deadline": "2026-09-29",
+  "deadlineModel": "single-stage",
+  "actionType": "EDF Development Actions",
+  "actionCode": "EDF-DA",
+  "mgaCode": "EDF-AG",
+  "budget": {
+    "total_eur": 100000000,
+    "by_year": {
+      "2026": 100000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "EDF-2026-DA-ACC-AIRDEF-EATMI",
+    "EDF-2026-DA-ACC"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact DEFIS-EDF-PROPOSALS@ec.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43472?topic=EDF-2026-DA-ACC-AIRDEF-EATMI",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-2026-DA-ACC-AIRDEF-EATMI",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/wp-call/2026/call-fiche_edf-2026-da-acc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (EDF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/af_edf_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table (EDF DA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/detailed-budget-table_edf-da_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Participant information (EDF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/participant-information_edf_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "List of infrastructure, facilities, assets and resources (EDF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/list-of-infrastructures-facilities-assets-and-resources_edf_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Cofinancing declaration (EDF DA, DA LS AND ASAP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/cofinancing-declaration_edf-da-da-ls-and-asap_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Actual indirect cost methodology declaration (EDF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/actual-indirect-cost-methodology-declaration_edf-da_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Harmonised capability declaration (EDF DA AND DA LS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/harmonised-capability-declaration_edf-da-and-da-ls_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Declaration on procurement intent and common specifications (EDF DA AND DA LS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/declaration-on-procurement-intent-and-common-specifications_edf-da-and-da-ls_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Ownership control declaration",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/ownership-control-declaration_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Ownership control guarantee",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/gap/ownership-control-guarantee_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "PRS declaration (EDF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/prs-declaration_edf_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "EDF, ASAP and EDIRPA MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/agr-contr/mga_edf-asap-and-edirpa_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EDF Annual Work Programme",
+      "url": "https://ec.europa.eu/defence-industry-space/eu-defence-industry/european-defence-fund-edf_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EDF Regulation 2021/697",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021R0697&qid=1695904986927",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EDF Programme Security Instruction (PSI)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/guidance/psi_edf_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Guidelines on FSTP implementation - WP2026",
+      "url": "https://eudis.europa.eu/system/files/2026-04/Guidelines%20on%20FSTP%20implementation%20-%20WP2026.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-06T19:11:40.577Z"
+}

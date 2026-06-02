@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "898489",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE CULTURA / DIRECCIÓN GENERAL DEL LIBRO, DEL CÓMIC Y DE LA LECTURA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 12 de marzo de 2026 de la Secretaría de Estado de Cultura por la que se convoca el concurso de proyectos de animación a la lectura María Moliner en municipios de menos de 50.000 habitantes, correspondiente al año 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": "2026-04-16",
+  "deadline": "2026-05-07",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https://cultura.sede.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898489",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-17455",
+  "text_inicio": "Día siguiente a la publicación del extracto en el BOE",
+  "text_fin": "15 días hábiles desde el siguiente a la publicación de la convocatoria en BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208693,
+      "titulo": "Extracto de la Resolución de 12 de marzo de 2026 de la Secretaría de Estado de Cultura por la que se convoca el concurso de proyectos de animación a la lectura María Moliner en municipios de menos de 50.000 habitantes, correspondiente al año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Ayuntamientos de menos de 50.000 habitantes que tengan una biblioteca pública.</p><p>Segundo. Objeto.</p><p>Incentivar las acciones de animación a la lectura dirigidas a todos los vecinos, con especial atención a colectivos con dificultades para el acceso a la lectura, en cualquiera de las lenguas oficiales de España, así como aquellas con reconocimiento jurídico en los estatutos de autonomía de las Comunidades Autónomas, y realizadas por bibliotecas públicas de municipios con menos de 50.000 habitantes.</p><p>Tercero. Bases reguladoras.</p><p>Orden CUL/2912/2010, de 10 de noviembre, por la que se establecen las bases reguladoras para la concesión de las subvenciones públicas del Ministerio de Cultura en régimen de concurrencia competitiva.</p><p>Cuarto. Cuantía.</p><p>El importe total de la convocatoria es de 1.100.000 euros. Las diez bibliotecas que hayan obtenido la mejor puntuación recibirán un premio de 10.000 euros. Los 360 proyectos siguientes por orden de puntuación recibirán un premio por un importe individual de 2.777,77 euros. En total, se darán hasta un máximo de 370 premios.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Quince días hábiles contados a partir del día siguiente al de la publicación del extracto de esta convocatoria en el «Boletín Oficial del Estado».</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11644",
+      "cve": "BOE-B-2026-11644",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.585Z"
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1105068,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA CRUZ DE TENERIFE",
+    "nivel3": "AYUNTAMIENTO DE SANTA CRUZ DE TENERIFE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903507",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 513000,
+  "mrr": false,
+  "descripcion": "Acuerdo de la Junta de Gobierno de la Ciudad de Santa Cruz de Tenerife, en sesión Ordinaria celebrada el día 27 de abril de 2026, del Área de Gobierno de Políticas Sociales, por la que se convoca CONCESIÓN DE SUBVENCIONES DE COOPERACIÓN SOCIAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ley 38/2003 de 17 de noviembre General de Subvenciones",
+  "urlBasesReguladoras": "https://intranet.aytosc.es/fileadmin/user_upload/Intranet/Presupuestos/2026/2._BASES_DE_EJECUCION__DEL_PRESUPUESTO_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448572,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado_de_acuerdo_de_la_Junta_de_Gobierno_de_la_Ciudad.pdf",
+      "long": 1174614,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

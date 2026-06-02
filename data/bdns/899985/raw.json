@@ -1,0 +1,76 @@
+{
+  "id": 1101546,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PUERTOLLANO",
+    "nivel3": "AYUNTAMIENTO DE PUERTOLLANO"
+  },
+  "sedeElectronica": "https://puertollano.sedelectronica.es",
+  "codigoBDNS": "899985",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "AYUDAS PARA INICIO DE ACTIVIDAD DE EMPRESARIOS AUTÓNOMOS EMPRENDEDORES AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "AYUDAS PARA INICIO DE ACTIVIDAD DE EMPRESARIOS AUTÓNOMOS EMPRENDEDORES AÑO 2026",
+  "urlBasesReguladoras": "https://www.puertollano.es/empleos/servicios/154114/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "AL DÍA SIGUIENTE DE SU PUBLICACIÓN EN EL BOP DE CIUDAD REAL",
+  "textFin": "15 DE OCTUBRE DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438654,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "10. DECRETO 2026-2103 [Bases convocatoria].pdf",
+      "long": 1066229,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209435,
+      "titulo": "BASES REGULADORAS DE AYUDAS PARA INICIO DE ACTIVIDAD DE EMPRESARIOS AUTÓNOMOS EMPRENDEDORES AÑO 2026",
+      "tituloLeng": null,
+      "texto": "<p>Visto el  Decreto nº 2026-2103 de fecha 13 de abril de 2026 de la Concejal Delegada de Promoción Económica, por la que se aprueba la convocatoria de ayudas de Inicio de Actividad de empresarios autónomos emprendedores en el municipio de Puertollano:</p><p>Primero.- Beneficiarios: las personas desempleadas que se constituyan como trabajadores autónomos a título individual o como miembros de una Comunidad de Bienes, Sociedad Civil o Sociedad Limitada, dándose de alta en el Régimen Especial de Trabajadores Autónomos,</p><p>Segundo.- Objeto: Concesión de ayudas para subvencionar los gastos de inicio de actividad abonados por emprendedores autónomos (individuales y societarios) de Puertollano</p><p>Tercero.- Cuantía: Hasta 3.500 euros</p><p>Inversiones iniciales (maquinaria, mobiliario equipos informáticos, adecuación local,  etc…).Importe máximo subvencionable: 1.750,00 €.</p><p>Gastos de Inicio de Actividad Importe máximo subvencionable: 1.750,00 €.</p><p>Cuarta.- Criterios de adjudicación: Los establecidos en el Decreto nº 2026-2103 de fecha 13 de abril de 2026 que regulan las bases de esta convocatoria.</p><p>Quinta.- Plazo de presentación de solicitudes: Hasta el 15 de octubre de 2026</p><p>Sexto.- Forma de presentación: Las solicitudes derivadas de esta convocatoria y el resto de trámites que procedan, se habrán de efectuar por vía telemática o presencialmente en el Registro del Ayuntamiento.</p><p>El texto completo del Decreto con las bases de la convocatoria se puede consultar en la página web: https://www.puertollano.es/empleos/servicios/154114/</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7502873",
+      "cve": "kLQ/Fiuy+wjJXZrS0tVM",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

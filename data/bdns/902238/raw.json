@@ -1,0 +1,84 @@
+{
+  "id": 1103799,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CEE",
+    "nivel3": "AYUNTAMIENTO DE CEE"
+  },
+  "sedeElectronica": "sede.cee.gal",
+  "codigoBDNS": "902238",
+  "fechaRecepcion": "2026-04-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Certamen de Poesía \"Batallón Literario da Costa da Morte\"",
+  "descripcionLeng": "Certame de Poesía \"Batallón Literario da Costa da Morte\"",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Certamen de Poesía \"Batallón Literario da Costa da Morte\"",
+  "urlBasesReguladoras": "sede.cee.gal",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia siguiente de su publicación en BOP",
+  "textFin": "27/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1444602,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "galego bases e anexos bartallon.pdf",
+      "long": 504552,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1444599,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "bases y anexos batallon castellano.pdf",
+      "long": 428890,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210388,
+      "titulo": "Bases I Certamen de Poesía \"Batallón Literario de A Costa da Morte\"",
+      "tituloLeng": "Bases I Certame de Poesía \"Batallón Literario de A Costa da Morte\"",
+      "texto": "<p>De conformidad con lo previsto en los artículos 17.3b y 20.8.a de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica el extracto de la convocatoria. El texto completo puede consultarse en la Base de Datos Nacional de Subvenciones y en el Ayuntamiento de Cee (www.cee.gal)</p><p>1. Finalidad y objeto.</p><p>El objeto de esta convocatoria viene a desarrollar las actuaciones de promoción de las manifestaciones culturales en beneficio del desarrollo cultural local, definidas en el ámbito del artículo 25.2. apartado m) de la Ley 7/1985 Reguladora de las bases de Régimen local.</p><p>2. Beneficiarios.</p><p>Todas las autoras y autores mayores de edad que lo deseen, siempre que su original esté escrito en lengua gallega.</p><p>3. Bases reguladoras.</p><p>Las aprobadas por resolución de la Alcaldesa de Cee: EXPEDIENTE DECRETO: 2026/G003/000431 de 27 de abril de 2026.</p><p> </p><p>4. Crédito presupuestario.</p><p>En el Presupuesto Municipal para el año 2026 consta, en la partida presupuestaria 340/489.01, una consignación de 3.000 € para el premio.</p><p> </p><p>5. Lugar y plazo de presentación de solicitudes.</p><p>5.1. Las solicitudes se presentarán en el registro general del Ayuntamiento de Cee en horario de 9:00 la 13:30 horas de lunes a viernes, o por cualquier de las formas previstas en el artículo 16.4 de la Ley 39/2015, de 1 de octubre, de procedimiento administrativo común de las administraciones.</p><p>5.2. El plazo de presentación de solicitudes comenzará a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de A Coruña y rematará el 27 de junio (incluído). Cada persona autora solo podrá enviar un trabajo al certamen (si enviara más de uno será descalificada).</p>",
+      "textoLeng": "<p>De conformidade co previsto nos artigos 17.3 b) e 20.8 a) da Lei 38/2003, do 17 de novembro, xeral de subvencións, publícase o extracto da bases cuxo texto completo se pode consultar na Base da datos nacional de subvencións (http://www.pap.minhap.gob.es/bdnstrans/index) e no Concello de Cee (www.cee.gal)</p><p> </p><p>1. Finalidade e obxecto.</p><p>O obxecto desta convocatoria vén a desenvolver as actuacións de promoción das manifestacións culturais en beneficio do desenvolvemento cultural local, definidas no ámbito do artigo 25.2. apartado m) da Lei 7/1985 Reguladora das bases de Réxime local.</p><p>2. Beneficiarios.</p><p>Todas as autoras e autores maiores de idade que o desexen, sempre que o seu orixinal estea escrito en lingua galega.</p><p>3. Bases reguladoras.</p><p>As aprobadas por resolución da Alcaldesa de Cee: EXPEDIENTE DECRETO: 2026/G003/000431 de 27 de abril de 2026.</p><p>4. Crédito orzamentario.</p><p>No Orzamento Municipal para o ano 2026 consta, na partida orzamentaria 340/489.01, unha consignación de 3.000 € para o premio.</p><p> </p><p>5. Lugar e prazo de presentación de solicitudes.</p><p>5.1. As solicitudes presentaranse no rexistro xeral do Concello de Cee en horario de 9:00 a 13:30 horas de luns a venres, ou por calquera das formas previstas no artigo 16.4 da Lei 39/2015, de 1 de outubro, de procedemento administrativo común das administracións.</p><p>5.2. O prazo de presentación de solicitudes comenzará a partir do día seguinte ao da publicación deste extracto no Boletín Oficial da Coruña e rematará o 27 de xuño (incluído). Cada persoa autora só poderá enviar un traballo ao certame (se enviase máis dun será descualificada).</p>",
+      "url": "https://bop.dacoruna.gal/bopportal/descargarPdf.do?fecha=20260505&numRegistro=2026/0000002733.pdf",
+      "cve": "2026/2733",
+      "desDiarioOficial": "B.O.P. DE A CORUÑA",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

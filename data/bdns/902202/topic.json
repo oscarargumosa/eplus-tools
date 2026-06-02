@@ -1,0 +1,101 @@
+{
+  "source": "bdns",
+  "source_id": "902202",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE TENERIFE / CABILDO INSULAR DE TENERIFE",
+  "nuts_codes": [
+    "ES709"
+  ],
+  "nuts_primary": "ES709",
+  "title": "Acuerdo 22 abril 2026, del Consejo de Gobierno Insular, por el que se aprueba la convocatoria de ayudas con destino al control de la trazabilidad en vendimia de los vinos de calidad Tenerife, ejercicio 2026.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902202",
+  "documents": [
+    {
+      "label": "ANEXO I:  DOCUMENTACION A PRESENTAR",
+      "url": null
+    },
+    {
+      "label": "ANEXO II:DOCUMENTACIÓN JUSTIFICATIVA A PRESENTAR POR LOS BENEFICIARIOS",
+      "url": null
+    },
+    {
+      "label": "ANEXO III: MODELO CARTEL",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV A): DECLARACIÓN DE EL/LA VITICULTOR/A",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV B): DECLARACIÓN DE EL/ LA BODEGUERO/A",
+      "url": null
+    },
+    {
+      "label": "documento contable",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI: CUADRO RESUMEN CURSOS IMPARTIDOS",
+      "url": null
+    },
+    {
+      "label": "MODELO DE SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "acuerdo",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO V: MODELO DE HOJAS DE FIRMAS Y ASISTENCIA A CURSOS",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es",
+  "text_inicio": "día siguiente a la publicación del extracto en el diario oficial",
+  "text_fin": "20 días siguientes a la publicación en el diario oficial",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.588Z"
+}

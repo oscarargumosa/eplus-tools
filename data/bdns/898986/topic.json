@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "898986",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN / DIRECCIÓN GENERAL DE ESPAÑOLES EN EL EXTERIOR Y DE ASUNTOS CONSULARES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Orden AUC de 14 de abril de 2026 por la que se convoca la concesión de subvenciones para la asistencia jurídica a ciudadanos españoles que afronten condenas de pena de muerte, para el ejercicio 2026.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898986",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2013/08/21/aec1586",
+  "text_inicio": "Al día siguiente de la publicación del Extracto",
+  "text_fin": "Un mes desde la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209558,
+      "titulo": "Extracto de la Orden de 14 de abril de 2026 por la que se convoca la concesión de subvenciones para la asistencia jurídica a ciudadanos españoles que afronten condenas de pena de muerte para el ejercicio 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrán ser beneficiarias de estas ayudas la propia persona física de nacionalidad española que se enfrente a la pena de muerte y otras personas físicas, españolas o extranjeras, o entidades sin ánimo de lucro, domiciliadas en España o en el extranjero.</p><p>Segundo. Finalidad:</p><p>El objeto de las subvenciones es la concesión de ayudas económicas destinadas a coadyuvar a la defensa jurídica de ciudadanos españoles sometidos a juicio en el extranjero acusados de delitos que en el ordenamiento aplicable se puedan castigar con pena de muerte. También podrán ser utilizadas estas subvenciones en los procesos de revisión o repetición de juicios, de recursos de sentencias condenatorias o de solicitud de indulto o conmutación de pena a favor de aquellos que ya hayan sido condenados a la pena de muerte.</p><p>Tercero. Bases reguladoras:</p><p>Orden AEC/1586/2013, de 21 de agosto, publicada en el BOE número 208, de 30 de agosto de 2013.</p><p>Cuarto. Importe:</p><p>El importe total máximo será de 30.000 euros.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>El plazo de presentación de las solicitudes será de un mes contado a partir del día siguiente al de la publicación del presente extracto en el Boletín Oficial del Estado.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-12558",
+      "cve": "BOE-B-2026-12558",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.773Z"
+}

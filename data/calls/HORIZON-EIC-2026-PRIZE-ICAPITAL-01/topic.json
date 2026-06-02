@@ -1,0 +1,164 @@
+{
+  "identifier": "HORIZON-EIC-2026-PRIZE-ICAPITAL-01",
+  "ccm2Id": "51083908",
+  "callIdentifier": "HORIZON-EIC-2026-PRIZE-ICAPITAL",
+  "callTitle": "The European Capital of Innovation Award HORIZON-EIC-2026-PRIZE-ICAPITAL",
+  "title": "The European Capital of Innovation Award iCapital Category HORIZON-EIC-2026-ICAPITAL",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-05-05",
+  "deadline": "2026-08-04",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Recognition Prize",
+  "actionCode": "HORIZON-RPr",
+  "mgaCode": "HORIZON-PR",
+  "budget": {
+    "total_eur": 3600000,
+    "by_year": {
+      "2026": 3600000
+    },
+    "expected_grants": 3,
+    "min_contribution_eur": 100000,
+    "max_contribution_eur": 1000000
+  },
+  "keywords": [
+    "HORIZON-EIC-2026-PRIZE-ICAPITAL-01",
+    "HORIZON-EIC-2026-PRIZE-ICAPITAL"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43929?topic=HORIZON-EIC-2026-PRIZE-ICAPITAL-01",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EIC-2026-PRIZE-ICAPITAL-01",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "Search Funding & Tenders",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;freeTextSearchKeyword=;typeCodes=0,1;statusCodes=31094501,31094502,31094503;programCode=null;programDivisionCode=null;focusAreaCode=null;crossCuttingPriorityCode=null;callCode=Default;sortQuery=openingDate;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "2. Eligible participants",
+      "label": "[1]",
+      "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftn1",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "2. Eligible participants",
+      "label": "Associated Countries to Horizon Europe",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "2. Eligible participants",
+      "label": "[2]",
+      "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftn2",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "2. Eligible participants",
+      "label": "[1]",
+      "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftnref1",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "2. Eligible participants",
+      "label": "[2]",
+      "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftnref2",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "4. Financial and operational capacity and exclusion",
+      "label": "rules of contest",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/roc_horizon-eic-2026-prize-icapital_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "4. Financial and operational capacity and exclusion",
+      "label": "Annex C",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5b. Evaluation and award: Submission and evaluation processes",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents:",
+      "label": "Rules of contest",
+      "url": ": https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/roc_horizon-eic-2026-prize-icapital_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EIC Work Programme 2026",
+      "url": "https://eic.ec.europa.eu/eic-2026-work-programme_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2026-2027 – 10. European Innovation Ecosystems (EIE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-10-european-innovation-ecosystems_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:27.796Z"
+}

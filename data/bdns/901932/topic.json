@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "901932",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BREÑA BAJA / AYUNTAMIENTO DE BREÑA BAJA",
+  "nuts_codes": [
+    "ES707"
+  ],
+  "nuts_primary": "ES707",
+  "title": "CONVOCATORIA DE AYUDAS AL FOMENTO DE LA REHABILITACIÓN DE VIVIENDAS DE TITULARIDAD PRIVADA, DENTRO DEL PROGRAMA PARA COMBATIR LA DESPOBLACIÓN EN EL MEDIO RURAL DEL PLAN DE VIVIENDA DE CANARIAS, DEL AYUNTAMIENTO DE BREÑA BAJA. ANUALIDAD 2024.",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 126613.04,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901932",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "text_inicio": "Al día siguiente de lapublicación de la convocatoria en el BOP Santa Cruz de Tenerife",
+  "text_fin": "20 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.417Z"
+}

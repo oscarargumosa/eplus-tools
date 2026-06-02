@@ -1,0 +1,80 @@
+{
+  "id": 1100205,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "COLLBATÓ",
+    "nivel3": "AYUNTAMIENTO DE COLLBATÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898644",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA BECAS ESPORTBATÓ 2026",
+  "descripcionLeng": "CONVOCATÒRIA BEQUES ESPORTBATÓ 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORES BEQUES ESPORTBATÓ EXERCICIS 2025, 2026, 2027",
+  "urlBasesReguladoras": "https://cido.diba.cat/subvencions/19631046/beques-esportbato-exercicis-2025-2026-i-2027-ajuntament-de-collbato",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "textFin": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434608,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "EXTRACTE_CASTELLÀ_ESPORTBATO.pdf",
+      "long": 117279,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1434610,
+      "descripcion": "CERT. JGL APROVACIÓ CONVOCATORIA BEQUES ESPORTBATÓ 2024-2025 1_26",
+      "nombreFic": "CERT._JGL_APROVACIÓ_CONVOCATORIA_BEQUES_ESPORTBATÓ_2024-2025_1_26.pdf",
+      "long": 127648,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1434609,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "EXTRACTE_CATALA_ESPORTBATO.pdf",
+      "long": 118030,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

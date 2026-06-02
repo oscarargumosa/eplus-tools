@@ -1,0 +1,75 @@
+{
+  "source": "bdns",
+  "source_id": "902710",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN / SUBSECRETARÍA DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Subvenciones directas a organizaciones profesionales agrarias declaradas más representativas en el ámbito estatal para actividades de representación y colaboración institucional",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": "2026-05-06",
+  "deadline": "2026-05-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 4300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01",
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas"
+    }
+  ],
+  "apply_url": "https://sede.mapa.gob.es/portal/site/seMAPA/procedimientos-intermedio?cross_search=theme_type&type_id=2&theme_id=1",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902710",
+  "documents": [
+    {
+      "label": "Orden de Bases OPAs mas representativas 230725 BOE-A-2025-15301",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2025/07/21/apa787",
+  "text_inicio": "A partir del día siguiente a su publicación",
+  "text_fin": "15 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210568,
+      "titulo": "Extracto de la Orden de 29 de abril de 2026, por la que se convoca para el año 2026 la concesión de subvenciones directas a organizaciones profesionales agrarias declaradas más representativas en el ámbito estatal para actividades de representación y colaboración institucional",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiaros</p><p>Podrán ser beneficiarios de las subvenciones las organizaciones y entidades  previstas en el artículo 2.1. de la Orden de bases reguladoras de dichas ayudas.</p><p>Segundo.- Objeto de la Convocatoria</p><p>Se convoca para el ejercicio 2026, en régimen de concesión directa, la concesión de subvenciones dirigidas a las organizaciones profesionales agrarias que hayan sido declaradas más representativas en el ámbito estatal por la Subsecretaría de Agricultura, Pesca y Alimentación, para actividades de representación y colaboración institucional en instituciones agrarias de la Unión Europea y nacionales, conforme a la regla décima de la disposición adicional sexta de la Ley 1/2025, de 1 de abril, de prevención de las pérdidas y el desperdicio alimentario. Dichas subvenciones se destinarán únicamente a las actuaciones realizadas en el período señalado en el artículo 9. 4. de la Orden de Bases reguladoras, y acreditar su realización antes del 20 de noviembre de 2026 mediante la presentación de la correspondiente  justificación conforme a lo señalado en el artículo 10 de la Orden de Bases reguladoras.</p><p>Tercero.- Bases reguladoras</p><p>La Orden APA/787/2025, de 21 de julio (“Boletín Oficial del Estado” número 176 de 23 de julio de 2025), establece las bases reguladoras para la concesión de estas ayudas.</p><p> </p><p>Cuarto.- Financiación de las ayudas</p><p>La financiación de las subvenciones previstas en esta orden se efectuará con cargo a los conceptos presupuestarios 21.01.411M.486, cuya cuantía total máxima será de cuatro millones trescientos mil euros (4.300.000,00 €).</p><p> </p><p>Quinto.- Solicitudes y Plazo de presentación</p><p>Las solicitudes se presentarán en el plazo de quince días hábiles, contados a partir del día siguiente a la fecha de publicación de este extracto en el “Boletín Oficial del Estado”, en el Registro Electrónico del Ministerio de Agricultura, Pesca y Alimentación, a través de su sede electrónica (https://sede.mapa.gob.es/portal/site/seMAPA/procedimientos-intermedio?cross_search=theme_type&type_id=2&theme_id=1) según los artículos 14 y 16 de la Ley 39/2015, de 1 de octubre, de Procedimiento Administrativo Común de las Administraciones Públicas.</p><p>Sexto.- Criterio de adjudicación.</p><p>La distribución de los fondos y sus cuantías se llevará a cabo de conformidad con lo dispuesto en el artículo 3 de la Orden de bases, y con lo estipulado en el apartado Cuarto de la Orden de convocatoria para 2026.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-14189",
+      "cve": "BOE-B-2026-14189",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.830Z"
+}

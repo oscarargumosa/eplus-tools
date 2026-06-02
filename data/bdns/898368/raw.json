@@ -1,0 +1,76 @@
+{
+  "id": 1099929,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SEVILLA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE SEVILLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898368",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 32000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DEL CONCURSO ANUAL DE MONOGRAFÍAS “ARCHIVO HISPALENSE” 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DEL CONCURSO ANUAL DE MONOGRAFÍAS “ARCHIVO HISPALENSE” 2026.",
+  "urlBasesReguladoras": "dipusevilla.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-26",
+  "textInicio": "el día siguiente a la publicación del extracto",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433998,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "11.RES. 2002 DE 31 DE MARZO DE APROBACION DE BASES ARCHIVO HISPALENSE.pdf",
+      "long": 101314,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208648,
+      "titulo": "EXTRACTO DE LA RESOLUCIÓN DE PRESIDENCIA Nº 2002, DE 31 DE MARZO DE 2026, DONDE SE APROBARON LAS BASES DEL CONCURSO ANUAL DE MONOGRAFÍAS “ARCHIVO HISPALENSE 2026”.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p> </p><p>Podrán participar cuantas personas lo deseen como autor/a individual o colectivo.</p><p> </p><p>Segundo: Objeto</p><p>La Diputación Provincial de Sevilla convoca el concurso anual “ARCHIVO HISPALENSE” correspondiente al año 2026 para otorgar cuatro premios y sus cuatro accésits a monografías sobre temas de Historia, Literatura, Arte y Ciencias Sociales relativos a Sevilla y su provincia.</p><p> </p><p>Tercero: Bases Reguladoras</p><p>Las Bases Reguladoras del Citado Concurso se encuentran publicadas en el Boletín Oficial de la Provincia, en el Tablón Electrónico y el Portal de Transparencia de la Diputación de Sevilla.</p><p> </p><p>Cuarto: Cuantía</p><p>Cada premio está dotado con 5.000,00 € y sus correspondientes accésits con 3.000,00 € cada uno (cantidades a las que se aplicarán las retenciones previstas en la legislación tributaria).</p><p> </p><p>Quinto: Plazo de presentación de solicitudes</p><p>El plazo de presentación de los trabajos terminará el día 26 de junio de 2026.</p><p> </p><p>Sexto: Otros</p><p>Los trabajos deberán presentarse junto con una solicitud donde figure el título e indicación expresa del nombre y datos de contacto (dirección, teléfono y correo electrónico) y breve currículum del autor/a, indicando la sección a la que se concurre: Historia, Literatura, Arte o Ciencias Sociales, y acompañándose, además, de una hoja justificativa de la temática elegida, en razón de su contenido. Se hará constar el nombre del director/a del trabajo, si lo hubiere.</p><p>Los trabajos junto con la solicitud se entregarán en el Registro General de la Diputación Provincial de Sevilla, Área de Cultura y Ciudadanía, con el siguiente epígrafe: ”Para el concurso de monografías ARCHIVO HISPALENSE 2026\".</p><p>Los que se envíen por correo certificado, deberán llevar la siguiente dirección: Diputación Provincial de Sevilla, Servicio de Archivo y Publicaciones, Avda. Menéndez Pelayo, 32; 41071 Sevilla y con iguales indicaciones que los presentados directamente.</p><p> </p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

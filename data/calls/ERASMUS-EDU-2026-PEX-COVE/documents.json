@@ -1,0 +1,114 @@
+[
+  {
+    "section": "1. Admissibility Conditions: Proposal page limit and layout",
+    "label": "Erasmus + Programme Guide 2026.",
+    "url": "https://erasmus-plus.ec.europa.eu/erasmus-programme-guide",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (ERASMUS BB and LSII)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/temp-form/af/af_erasmus-bb-lsii_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Detailed budget table (ERASMUS LSII)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/temp-form/af/detailed-budget-table_erasmus-lsii_en.xlsm",
+    "ext": ".xlsm",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Information on Partnerships and Activities (ERASMUS COVE)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/temp-form/af/information-on-partnerships-and-activities_erasmus-cove_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "ERASMUS Programme Guide",
+    "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Lump Sum MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Call document (Official Journal of the European Union)",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3AC%2F2025%2F06080&qid=1763997947513",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "ERASMUS+ Work Programme",
+    "url": "https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "ERASMUS Regulation 2021/817",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0817",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "How to manage your lump sum grants",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/how-to-manage-your-lump-sum-grants_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  }
+]

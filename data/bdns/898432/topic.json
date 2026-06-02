@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "898432",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE HACIENDA / CONSORCIO DE LA CIUDAD DE CUENCA",
+  "nuts_codes": [
+    "ES423"
+  ],
+  "nuts_primary": "ES423",
+  "title": "Convocatoria subvenciones en régimen de concurrencia competitiva para el desarrollo de las actividades culturales y turísticas en la ciudad de Cuenca a instituciones públicas y a entidades privadas participadas de las administraciones públicas en Cuenca",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 931781.26,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898432",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/boe/dias/2024/01/10/pdfs/BOE-A-2024-615.pdf",
+  "text_inicio": "Al día siguiente de la publicación de la Convocatoria del BOE ",
+  "text_fin": "15 días naturales después de la convocatoria del BOE ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208677,
+      "titulo": "Extracto de Resolución de 9 de abril de 2026 de la Comisión Ejecutiva del Consorcio de la Ciudad de Cuenca por la que se aprueba la Convocatoria de las subvenciones a conceder en régimen de concurrencia competitiva para el desarrollo de las actividades culturales y turísticas en la ciudad de Cuenca a instituciones públicas y a entidades privadas participadas de las administraciones públicas, ambas en el ámbito de la ciudad de Cuenca",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto.</p><p> </p><p>Las subvenciones a tramitar, en régimen de concurrencia competitiva, tienen por objeto el desarrollo de las actividades culturales y turísticas en la ciudad de Cuenca a instituciones públicas y a entidades privadas participadas de las administraciones públicas, ambas en el ámbito de la ciudad de Cuenca, para el periodo 2026 y se aplicarán a las siguientes actividades:</p><p> </p><p>Ayudas al desarrollo de las actividades culturales y turísticas en la ciudad de Cuenca con trayectoria en su realización en la ciudad.</p><p>Ayudas a la puesta en marcha de proyectos innovadores que prioricen su actuación de creación artística y cultural en el casco antiguo.</p><p> </p><p>Segundo. Beneficiarios.</p><p> </p><p>Podrán ser beneficiarios de las ayudas las instituciones públicas y entidades privadas participadas de las administraciones públicas.</p><p> </p><p>Tercero. Créditos.</p><p> </p><p>El presupuesto destinado a financiar la presente convocatoria asciende a 931.781,26 € con cargo a la aplicación presupuestaria 334-48901 Otras transferencias corrientes, del Presupuesto de Gastos del Consorcio para el año 2026. Dicha cuantía supone la cantidad total máxima a disponer, que no podrá superarse en ningún caso.</p><p> </p><p>Cuarto. Bases reguladoras.</p><p> </p><p>Aprobadas por Acuerdo del Consejo de Administración del Consorcio de la Ciudad de Cuenca con fecha de 12 de diciembre de 2023, publicado en el Boletín del Estado de 10 de enero de 2024.</p><p> </p><p>Quinto. Plazo de ejecución de las actividades.</p><p> </p><p>El plazo para la ejecución de las actividades subvencionables empezará el día 1 de enero de 2026 y finalizará el 31 de diciembre de 2026.</p><p> </p><p> </p><p> </p><p>Sexto. Lugar de presentación de solicitudes.</p><p> </p><p>Las solicitudes con la documentación complementaria que se acompañe, según las Bases reguladoras, se presentarán en el registro electrónico del Consorcio de la Ciudad de Cuenca.</p><p> </p><p>Séptimo.  Plazo de presentación de solicitudes.</p><p> </p><p>El plazo para la presentación de solicitudes será de quince días naturales a partir del día siguiente a la publicación de este Extracto de resolución de la convocatoria en el Boletín Oficial del Estado.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11624",
+      "cve": "BOE-B-2026-11624",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.572Z"
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1105118,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABRA",
+    "nivel3": "AYUNTAMIENTO DE CABRA"
+  },
+  "sedeElectronica": "A través de la sede electrónica del Ayuntamiento de Cabra: https://sede.eprinsa.es/cabra/tramites/procedimiento/1226/regristro-electronico",
+  "codigoBDNS": "903557",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA PROYECTOS DE EDUCACIÓN PARA LA COOPERACIÓN DEL ILMO. AYUNTAMIENTO DE CABRA PARA EL EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES POR LAS QUE HA DE REGIRSE LA CONVOCATORIA DE SUBVENCIONES PARA PROYECTOS DE EDUCACIÓN PARA LA COOPERACIÓN DEL ÁREA DE POLÍTICAS SOCIALES DEL ILMO. AYUNTAMIENTO DE CABRA.",
+  "urlBasesReguladoras": "https://bop.dipucordoba.es/visor-pdf/17-06-2025/BOP-A-2025-1817.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "30 días naturales, contados a partir del día siguiente a la publicación de convocatoria en el BOP ",
+  "textFin": "30 días naturales, contados a partir del día siguiente a la publicación de convocatoria en el BOP ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448726,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOC. SUBVENCIONES PROY. EDUCACION COOPERACION.pdf",
+      "long": 1324739,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

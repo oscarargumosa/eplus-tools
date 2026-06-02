@@ -1,0 +1,27 @@
+## Expected Outcome
+
+The successful proposal is expected to further contribute to the expected outcomes specified in topic HORIZON-CL6-2024-GOVERNANCE-02-01: European Partnership of Agriculture of Data, for continuation of the activities in line with already agreed outcomes.
+
+## Scope
+
+The objective of this action is to continue to provide support to the European partnership of Agriculture of Data identified in the Horizon Europe Strategic Plan 2021-2024 and first implemented under the topic HORIZON-CL6-2024-GOVERNANCE-02-01: European Partnership of Agriculture of Data, and in particular to fund additional activities (which may also be undertaken by additional partners) in view of its intended scope and duration, and in accordance with Article 24(2) of the Horizon Europe Regulation.
+
+The consortium which applied to and received funding under HORIZON-CL6-2024-GOVERNANCE-02-01: European Partnership of Agriculture of Data is uniquely placed to submit a proposal to continue the envisioned partnership. Not only did this consortium submit the proposal leading to the identification of the partnership in the Horizon Europe strategic planning 2021-2024, it has also been implementing the partnership through a co-funded call launched in year 2024 and a number of internal activities, including research projects, based on this planning and further to topic HORIZON-CL6-2024-GOVERNANCE-02-01. In this context, the current consortium has unique expertise in relation to the objectives of the partnership, the activities to be implemented in particular through financial support to third parties and internal activities clearly required/envisioned pursuant to the initial proposal/partnership. In practice, another consortium could not continue the activities of the partnership underway without significant disruption to the ongoing activities, if at all.
+
+The partnership should seek to include additional partners, in particular from Member States and Associated countries not yet in the consortium funded under HORIZON-CL6-2024-GOVERNANCE-02-01.
+
+While the award of a grant to continue the Partnership in accordance with this call should be based on a proposal submitted by the coordinator of the consortium funded under HORIZON-CL6-2024-GOVERNANCE-02-01 and the additional activities (which may include additional partners) to be funded by the grant should be subject to an evaluation, this evaluation should take into account the existing context and the scope of the initial evaluation as relevant, and related obligations enshrined in the grant agreement. Taking into account that the present action is a continuation of the existing topic and foresees an amendment to an existing grant agreement, the proposal should present additional activities (including additional partners) to be covered by the award primarily in terms of grant agreement revisions.
+
+The proposal submitted to this call should align with the partnership’s co-created strategic research and innovation agenda. Through its activities, the partnership should deliver and give rise to ready-to-use tools, solutions and innovations, seek uptake of results by farmers/agricultural producers, advisors, policy-makers, public administrations and all relevant stakeholders, and provide science-based policy advisory activities. The proposal should focus on additional priority activities and when duly justified, on continuation of on-going activities.
+
+The partnership should create an “umbrella effect” through taking stock, linking and, assessing Research and Innovation (R&I) initiatives and use cases. It should leverage on nationally funded research activities to create critical mass and synergies across borders and also support defragmentation of the European data landscape. It should also pool the necessary financial resources from the participating national (or regional) research programmes with a view to organising and implementing joint calls for transnational proposals resulting in grants to third parties, for which it should factor ample time to run and report on the co-funded projects.
+
+Proposals are encouraged to consider, where relevant, the data, expertise and services offered by European research infrastructures [1]in the environment, food and digital domains.
+
+Specific additional activities to enhance the partnership’s collaborations at international level, should also be described.
+
+## null
+
+The total indicative budget for the topic is EUR 60 million committed in annual instalments over years 2026-2027 (EUR 23 million from the 2026 budget and EUR 37 million from the 2027 budget). The total indicative budget for the duration of the partnership is EUR 90 million.
+
+[1] The catalogue of European Strategy Forum on Research Infrastructures (ESFRI) research infrastructures portfolio can be browsed from ESFRI website https://ri-portfolio.esfri.eu/.

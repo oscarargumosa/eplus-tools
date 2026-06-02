@@ -1,0 +1,19 @@
+## Expected Outcome
+
+Project results are expected to contribute to some or all of the following expected outcomes:
+- Creation of an integrated ecosystem for secure and resilient communication systems to support civil security operations across Europe;
+- Advancement of next-generation capabilities, ensuring robust, scalable, and interoperable communication systems for critical civil security functions relevant for the future EU Critical Communication System (EUCCS).
+
+## Scope
+
+The European Union Critical Communication System (EUCCS) is a flagship initiative aiming at gradual development of a unified, secure, and interoperable communication infrastructure to support critical public safety and civil security operations across Europe. Aims to provide law enforcement, first responders, emergency services, and other critical sectors with reliable, real-time communication capabilities, even in challenging or high-risk environments. This topic aims to streamline the creation of an integrated ecosystem for secure and resilient communication systems that support civil security operations across Europe. It aims to advance next-generation capabilities, ensuring robust, scalable, and interoperable communication systems tailored to the critical civil security functions that will be required for the future EUCCS, taking into consideration the ongoing migration of the EU towards post-quantum cryptography.
+
+The action funded under this topic will develop secure communication devices and applications that meet the unique needs of practitioners across various disciplines. These solutions will go beyond current technologies, enabling specialized, ruggedized devices that support hands-free capabilities, including wearable sensors, haptics, and augmented reality to enhance situational awareness. Devices will be designed to ensure communication in environments lacking cellular infrastructure and will be built with high standards of security, including addressing cryptographic security via post-quantum cryptography, and trustworthiness while also ensuring an inclusive and gender-sensitive approach to meet the diverse needs of all users. The action funded under this topic should support relevant standardisation processes where possible.
+
+The solutions should be mission-critical, offering high availability, resilience, data exchange and authentication both secured via state-of-the-art post-quantum cryptographic protocols, even in areas with limited or no commercial network coverage. They must be fully compatible with the EUCCS, leveraging 3GPP Mission Critical Services (MCX) and open APIs to create a versatile and interoperable ecosystem. By working closely with first responders and utilizing open platforms, the project will ensure that the developed solutions address the specific operational needs of responders, facilitating effective cross-agency and pan-European collaboration.
+
+Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Strengthened Security Research and Innovation Destination.
+
+## Technology Readiness Level - Technology readiness level expected from completed projects
+
+Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

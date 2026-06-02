@@ -1,0 +1,76 @@
+{
+  "id": 1100675,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CIUDAD REAL",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CIUDAD REAL"
+  },
+  "sedeElectronica": "https://sede.dipucr.es/",
+  "codigoBDNS": "899114",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 400000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones a Municipios y Eatims. de la provincia de Ciudad Real para la Organización de Eventos y Espectáculos Taurinos 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "SERVICIO DE SUBVENCIONES.- Convocatoria de Subvenciones a Municipios y Eatims. de la provincia de Ciudad Real para la Organización de Eventos y Espectáculos Taurinos 2026.",
+  "urlBasesReguladoras": "https://dipucr.transparencialocal.gob.es/es_ES/buscar/contenido/articulo/articulo-30519-aprobacion-definitiva-de-modificacion-del-reglamento-regulador-del-plan-de-asistencia-economica-y-cooperacion-municipal ",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 días hábiles contados a partir del siguiente a la fecha de publicación en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436099,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado de acuerdos.pdf",
+      "long": 268059,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208981,
+      "titulo": "SERVICIO DE SUBVENCIONES.- Convocatoria de Subvenciones a Municipios y Eatims. de la provincia de Ciudad Real para la Organización de Eventos y Espectáculos Taurinos 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Extracto del acuerdo de la Junta de Gobierno de la Diputación Provincial de Ciudad Real, de 14 de abril de 2026, por la que se aprueba la convocatoria de ayudas para la organización de eventos y espectáculos taurinos 2026, dirigida a Municipios y Eatims. de la provincia de Ciudad Real.\n</p><p>Primero.- Beneficiarios: \n</p><p>Podrán acogerse a esta convocatoria todos los municipios, sus organismos autónomos y las entidades de ámbito territorial inferior al municipio (Eatims) de la provincia, que lo soliciten de acuerdo con el contenido de la misma y del Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal.\n</p><p>\tSegundo.- Objeto:\n</p><p>\tEs objeto de la presente convocatoria fomentar que los Municipios y Eatims de la provincia de Ciudad Real puedan contar con recursos dinamizadores de su vida social y económica, mediante la financiación de la organización de eventos y espectáculos taurinos durante 2026.\n</p><p>\tTercero.- Bases reguladoras:\t\n</p><p>\tLas bases reguladoras están establecidas en el Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal, aprobado por el Pleno de la Diputación Provincial en sesión de 29 de abril de 2022 y publicado en el Boletín Oficial de la Provincia  nº 121, de 24 de junio siguiente. \n</p><p>\tCuarta.- Criterios de adjudicación:\n</p><p>La cuantía máxima que puede obtener cada Municipio y Eatim vendrá determinada por aplicación de los criterios establecidos en la base novena de la convocatoria.\n</p><p>\tQuinta.- Plazo de presentación de solicitudes:\n</p><p>\tEl plazo de presentación de las solicitudes será de veinte días hábiles, contados a partir del día siguiente a la fecha de publicación de la convocatoria en el Boletín Oficial de la Provincia.\n</p><p>\tSexto.- Otros datos:\n</p><p>\tLas solicitudes derivadas de esta convocatoria y el resto de trámites que procedan, se habrán de efectuar exclusivamente por vía telemática.\t\n</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7496059",
+      "cve": "hzPk3J18i2FjBooLJenr",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

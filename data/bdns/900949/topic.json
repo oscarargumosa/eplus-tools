@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900949",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAN MILLÁN/DONEMILIAGA / AYUNTAMIENTO DE SAN MILLÁN/DONEMILIAGA",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "Convocatoria de ayudas para financiar iniciativas de carácter sociocultural y deportivo desarrolladas por asociaciones, clubes deportivos y/o personas físicas en el año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900949",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://donemiliaga.eus/",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOTHA",
+  "text_fin": "24/07/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209815,
+      "titulo": "Extracto de acuerdo de 10 de marzo de 2026 por la que se convocan ayudas para financiar iniciativas de carácter sociocultural y deportivo desarrolladas por asociaciones, clubes deportivos y/o personas físicas en el año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Objeto de la convocatoria:</p><p>Contribuir al desarrollo de programas y actividades de carácter sociocultural y deportivo que tengan lugar en el ámbito local o sean consideradas de interés para el municipio y complementen la intervención municipal durante el año 2026.</p><p>Áreas subvencionables:</p><p>1. Promoción sociocultural.</p><p>-   Ayudas para actividades socioculturales (actos tradicionales, talleres de ocio y tiempo libre, conferencias y ciclos monográficos, así como cualquier otra actividad o acción sociocultural participativa).</p><p>2. Promoción deportiva.</p><p>- Ayudas para actividades deportivas (competiciones, marchas deportivas, campeonatos, así como cualquier otra actividad relacionada con el deporte).</p><p>No serán subvencionables:</p><p>Las actividades específicas que se subvencionen por la vía de ayudas a fiestas patronales, convenios, etc.</p><p>Las actividades que impliquen una discriminación directa o indirecta por razón de sexo.</p><p>Los gastos ocasionados por comidas o productos alimenticios, salvo que dichos productos se destinen directamente al avituallamiento de la actividad deportiva y siempre y cuando esté justificado debidamente.</p><p>La adquisición de bienes muebles e inmuebles y material de oficina fungible, salvo aquel material que estrictamente sea necesario para el desarrollo de la actividad objeto de subvención, previa valoración técnica de la necesidad de este.</p><p>Los gastos derivados del funcionamiento (alquiler de inmuebles, nóminas personales, combustible.......).</p><p>Personas beneficiarias:</p><p>1.- Asociaciones y clubes deportivos, sin ánimo de lucro, debidamente registrados en base a la Ley 7/2007 de 22 de junio de Asociaciones de Euskadi, que se encuentren entre los siguientes:</p><p>Asociaciones y clubes deportivos con sede y ámbito estrictamente municipal que desarrollan programas o actividades.</p><p>Asociaciones y clubes deportivos que, aun no estando radicados en el municipio acometan programas sociales, culturales, o deportivos que tengan implantación municipal, o un ámbito de actuación colindante al municipio y cuenten con un número mínimo de 3 o más personas socias/os locales.</p><p>2.- Personas físicas empadronadas en el municipio de San Millán que realicen actividades que se encuentren en la situación que legitima la concesión.</p><p>3.- Agrupaciones de personas físicas empadronadas en el municipio, qué aun careciendo de personalidad jurídica, tengan un número importante de personas empadronadas en el municipio, y que puedan llevar a cabo proyectos o actividades que sean objeto de subvención, complementen la actividad municipal y sean considerados de interés público y social para el municipio.</p><p>Bases reguladoras:</p><p>Aprobadas por el Ayuntamiento Pleno de San Millán en sesión de fecha 10 de marzo de 2026.</p><p>Cuantía de la ayuda:</p><p>Las partidas presupuestarias a las que se imputa las subvenciones son la partida 231.481.000 (club de jubilados) por importe de 2.672,25 euros, la partida 334.482.000 (subvenciones culturales) por importe de 1.710,00 euros, la partida 341.482.002 (subvenciones actividades deportivas) por importe de 4.810,00 euros.</p><p>Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes finalizará el 24 de julio del 2026.</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/051/2026_051_01213_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.958Z"
+}

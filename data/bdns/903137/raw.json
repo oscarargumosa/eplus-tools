@@ -1,0 +1,104 @@
+{
+  "id": 1104698,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "903137",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "PLAN DE SUBVENCIONES DE EDUCACION PARA LA CIUDADANIA GLOBAL. EPCG .",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "PLAN DE SUBVENCIONES DE EDUCACION PARA LA CIUDADANIA GLOBAL. EPCG . 2026",
+  "urlBasesReguladoras": "https://www.ayto-caceres.es/ayuntamiento/publicaciones/ayudas-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.P. DE CACERES",
+  "textFin": "20 DIAS HABILES SIGUIENTES A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP CC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447289,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases ECG 2026.PDF",
+      "long": 291359,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447290,
+      "descripcion": "ANEXO IV.pdf",
+      "nombreFic": "ANEXO IV.pdf.PDF",
+      "long": 297787,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447294,
+      "descripcion": "cartelINF.pdf",
+      "nombreFic": "cartelINF.pdf.PDF",
+      "long": 2466065,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447292,
+      "descripcion": "ANEXO II.pdf",
+      "nombreFic": "ANEXO II.pdf.PDF",
+      "long": 235331,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447293,
+      "descripcion": "ANEXO I.pdf",
+      "nombreFic": "ANEXO I.pdf.PDF",
+      "long": 258101,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447291,
+      "descripcion": "ANEXO III.pdf",
+      "nombreFic": "ANEXO III.pdf.PDF",
+      "long": 243372,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

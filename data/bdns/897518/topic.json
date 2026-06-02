@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "897518",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MANCOMUNIDAD BETERRI-BURUNTZA / MANCOMUNIDAD BETERRI-BURUNTZA",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "Convocatoria de ayudas de la Mancomunidad a agentes del tercer sector para la contratación de personas desempleadas, en el marco del programa ALE 2026 de Lanbide",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 92500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "Sede electrónica de la Mancomunidad Beterri Buruntza",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897518",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://beterriburuntza.eus/es/subvenciones/tee-2025-subvenciones-para-la-contratacion-de-entidades-del-tercer-sector/",
+  "text_inicio": "Desde el día siguiente a la publicación en el Boletín Oficial de Gipuzkoa",
+  "text_fin": "20 días hábiles desde la publicación en el Boletín Oficial de Gipuzkoa",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208177,
+      "titulo": "Convocatoria de ayudas de la Mancomunidad a agentes del tercer sector para la contratación de personas desempleadas, en el marco del programa ALE 2026 de Lanbide",
+      "tituloLeng": "Lanbideren TEE 2026 programaren esparruan, hirugarren sektoreko eragileei laguntzak emateko deialdia, langabetuak kontratatzeko",
+      "texto": "<p>La Presidenta de la Mancomunidad de Beterri-Buruntza aprobó con fecha 1 de abril de 2026 y nº de resolución 2026/51 la convocatoria y bases específicas para la presentación de proyectos de colaboración y selección de entidades del tercer sector que cumplan con los requisitos establecidos por Lanbide para la promoción del empleo a través de la contratación de personas en situación de desempleo.</p>",
+      "textoLeng": "<p>Beterri-Buruntza Mankomunitateko Lehendakariak 2026ko apirilaren 1ean, 2026/51 zenbakiko ebazpen bidez, onartu ditu dirulaguntza deialdi eta oinarri espezifikoak Lanbidek enplegua sustatzeko ezarritako baldintzak betetzen dituzten hirugarren sektoreko erakundeei zuzendua, langabezian dauden pertsonak kontratatzeko proiektuak aurkezteko</p>",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/24/c2602324.pdf",
+      "cve": "GAO-I-2026-02324",
+      "desDiarioOficial": "B.O. DE GIPUZKOA",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.060Z"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "903886",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT JULIÀ DEL LLOR I BONMATÍ / AYUNTAMIENTO DE SANT JULIÀ DEL LLOR I BONMATÍ",
+  "nuts_codes": [
+    "ES512"
+  ],
+  "nuts_primary": "ES512",
+  "title": "Convocatoria de ayuda para material escolar curso 2026-2027 de Sant Julià del Llor i Bonmatí",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": "2026-06-01",
+  "deadline": "2026-06-19",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.stjuliabonmati.cat",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903886",
+  "documents": [
+    {
+      "label": "bases",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://seu-e.cat/ca/web/santjuliadellloribonmati/govern-obert-i-transparencia/accio-de-govern-i-normativa/accio-de-govern-i-grups-politics/tauler-d-edictes-i-anuncis",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 211065,
+      "titulo": "Convocatoria de becas de material escolar curso 2026/27 de Sant Julià del Llor i Bonmatí",
+      "tituloLeng": null,
+      "texto": "<p>EDICTO</p><p>Extracto del acuerdo del Decreto de Alcaldía 314/26 de 5 de mayo, de aprobar la convocatoria reguladora de las ayudas para material escolar del ayuntamiento de Sant Julià del Llor y Bonmatí para el curso 2026-2027 por las familias de alumnos de la Escuela Sant Jordi, que vayan a cursar de 3º a 6º de primaria.</p><p>BDNS (Identif.): 903886</p><p>De conformidad con lo que prevén los artículos 17.3.b y 20.8.a de la Ley 38/2003, de 17 de noviembre, general de subvenciones, se publica el extracto de la convocatoria cuyo texto completo se puede consultar en la Base de Datos Nacional de Subvenciones https://webpub2.igae.hacienda.gob.es/teseonet/publicacion/gestion/nuevo?idcov=1105447&intermediado=1</p><p>Descripción</p><p>Resolución de 25 de marzo del 2026, se aprobó inicialmente las bases específicas reguladoras de las ayudas para material escolar del Ayuntamiento de Sant Julià del Llor y Bonmatí para el curso 2026-2027 por las familias de alumnos de la Escuela Sant Jordi.</p><p>La convocatoria se publicará en el mostrador electrónico de la web del Ayuntamiento de Sant Julià del Llor i Bonmatí y BOP de Girona.</p><p>Objeto</p><p>El objeto de estas bases es regir la convocatoria para el otorgamiento de ayudas para la adquisición de material escolar a los alumnos empadronados en Sant Julià del Llor y Bonmatí matriculados en la escuela pública del municipio, que vayan a cursar de 3º a 6º, i  que se encuentren en una situación familiar especial con necesidades sociales y/o económicas de acuerdo con las bases específicas reguladoras aprobadas por Junta de Gobierno Local en la sesión de 25 de marzo del 2026, publicadas en el Boletín Oficial de la Provincia de Girona (BOPG) número 62 de 31 de marzo del 2026.</p><p>Se entenderá por material escolar todo aquel que sea imprescindible para el normal desarrollo de la actividad lectiva del alumno/a y que venga determinado antes del inicio del curso por la dirección y/o el claustro de la escuela.</p><p>Beneficiarios</p><p>Serán beneficiarios los alumnos empadronados en Sant Julià del Llor y Bonmatí matriculados en la escuela pública del municipio i que se encuentren en una situación familiar especial con necesidades sociales y/o económicas.</p><p>Los solicitantes de las ayudas de material escolar serán los padres, madres o tutores legales de las personas beneficiarias.</p><p>Cuantía</p><p>El importe máximo de la ayuda por alumno será de 100€.</p><p>Plazo</p><p>Para el curso escolar 2026/27, el plazo de presentación de solicitudes para las ayudas de material escolar será del de juny al 19 de juny del 2026.</p><p>fecha y firma electrònica.</p><p> </p><p> </p>",
+      "textoLeng": null,
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/88/20268803863.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE GIRONA",
+      "datPublicacion": "2026-05-11"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.349Z"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900963",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAN MILLÁN/DONEMILIAGA / AYUNTAMIENTO DE SAN MILLÁN/DONEMILIAGA",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "Convocatoria 2026 de ayuda por nacimiento, adopción, régimen de acogida en el municipio de San Millán",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900963",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://donemiliaga.eus/",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOTHA",
+  "text_fin": "14/07/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209821,
+      "titulo": "Extracto de acuerdo de 10 de marzo de 2026 por el que se convocan ayudas por nacimiento, adopción, régimen de acogida en el municipio de San Millán",
+      "tituloLeng": null,
+      "texto": "<p>Objeto de la convocatoria:</p><p>Concesión de subvenciones para el nacimiento, adopción, régimen de acogida de niñas/os en el municipio de San Millán, con el objeto de fomentar el relevo generacional en los pueblos que conforman el municipio.</p><p>Personas beneficiarias:</p><p>Madres, padres, tutores legales, familias de acogida, empadronadas y residentes en este municipio de San Millán de forma continuada durante los dos años anteriores al nacimiento o adopción.</p><p>Requisitos</p><p>-           Niñas/os nacidas/os y empadronadas/os en el municipio de San Millán, entre el 1 de enero y el 31 de diciembre de 2025, ambos inclusive.</p><p>-           Niñas/os adoptadas/os, y en régimen de acogida que se encuentren empadronados en el municipio de San Millán entre el 1 de enero y el 31 de diciembre de 2025, ambos inclusive.</p><p>La persona solicitante, beneficiaria de la ayuda, debe estar empadronada en el municipio durante dos años consecutivos anteriores al nacimiento, adopción, régimen de acogida, pudiendo desempadronarse por un periodo máximo de 4 meses dentro del periodo de dos años y mantener el empadronamiento de la persona solicitante y del/a niña/o durante, al menos, dos años posteriores al nacimiento o adopción. La persona solicitante que sea de nuevo empadronamiento en el municipio y no lleve dos años empadronada podrá solicitar la ayuda con el compromiso de mantener el empadronamiento de ella y el niño/niña durante, al menos, dos años posteriores al nacimiento o adopción.</p><p>Bases reguladoras:</p><p>Aprobadas por el Ayuntamiento Pleno de San Millán en sesión de fecha 10 de marzo de 2026.</p><p>Cuantía de la ayuda:</p><p> </p><p>La cuantía de la subvención será con cargo a la aplicación presupuestaria 231 480001, por importe de 1000,00 euros. La cuantía de la ayuda será de 600,00 euros.</p><p> </p><p> </p><p>Plazo de presentación de solicitudes:</p><p>El plazo de presentación finalizará el 14 de Julio de 2026.</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/051/2026_051_01216_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.969Z"
+}

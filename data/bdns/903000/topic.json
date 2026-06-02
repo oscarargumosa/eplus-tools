@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "903000",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN / SECRETARÍA DE ESTADO DE ASUNTOS EXTERIORES Y GLOBALES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de la Secretaría de Estado de Asuntos Exteriores y Globales por la que se convocan subvenciones correspondientes al año 2026 para la realización de actividades dirigidas a la divulgación, promoción y protección de los derechos humanos",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-03",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 484000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903000",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/boe/dias/2018/04/26/pdfs/BOE-A-2018-5699.pdf",
+  "text_inicio": "Día siguiente a la publicación del extracto en el BOE",
+  "text_fin": "Transcurridos 15 días hábiles desde la fecha de inicio del plazo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210693,
+      "titulo": "Extracto de la Resolución de 30 de abril de 2026, de la Secretaría de Estado de Asuntos Exteriores y Globales, por la que se anuncia la convocatoria para la concesión de subvenciones correspondientes al año 2026, para la realización de actividades dirigidas a la divulgación, promoción y protección de los derechos humanos.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Personas jurídicas, sin ánimo de lucro, públicas o privadas, que tengan nacionalidad española o se hayan constituido conforme al derecho español, o que, habiéndose constituido conforme al derecho de un tercer Estado, tengan establecida sede en España y tengan reconocida capacidad jurídica conforme al derecho español, que tengan experiencia previa acreditada en actividades de derechos humanos o cuyos objetivos sean la difusión, promoción o protección de los derechos humanos, especialmente en los ámbitos preferentes del Apartado 8 a) de esta convocatoria y dispongan de los medios y capacidad suficientes para realizar las actividades y garantizar el cumplimiento de los objetivos previstos.</p><p>Segundo. Objeto.</p><p>Contribuir al desarrollo, la mejora del conocimiento y el fortalecimiento de los derechos humanos, mediante la realización de proyectos independientes del funcionamiento corriente de la entidad, de ámbito nacional o internacional, de interés para España.</p><p>Tercero. Bases reguladoras.</p><p>Orden AEC/415/2018, de 18 de abril (BOE de 26 de abril de 2018).</p><p>Cuarto. Cuantía.</p><p>Cuantía máxima: 484.000 euros, repartida entre todos los solicitantes que resulten beneficiarios. El importe máximo a solicitar en esta convocatoria por cada proyecto no podrá exceder de 20.000 euros. El importe máximo de la subvención concedida no podrá exceder de 20.000 euros.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>15 días hábiles a partir del día siguiente al de la publicación del presente extracto en el Boletín Oficial del Estado.</p><p>Sexto. Ámbitos de actuación.</p><p>Se valorarán preferentemente aquellos proyectos que incidan en alguno de los ámbitos siguientes: lucha contra la pena de muerte; la lucha contra el racismo, la xenofobia y otras formas conexas de intolerancia; derechos de las personas con discapacidad; empresas y derechos humanos; derechos económicos, sociales y culturales; derechos humanos al agua potable y al saneamiento; defensores de derechos humanos; no discriminación por razón de género, de orientación sexual y de identidad de género; derechos del niño; derechos de las víctimas del terrorismo; trata de seres humanos; tecnologías de la información, inteligencia artificial y derechos humanos.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-14177",
+      "cve": "BOE-B-2026-14177",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.981Z"
+}

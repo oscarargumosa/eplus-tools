@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900698",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MADRID / CONSORCIO DE REHABILITACIÓN Y EQUIPAMIENTO DE TEATROS DE MADRID",
+  "nuts_codes": [
+    "ES300"
+  ],
+  "nuts_primary": "ES300",
+  "title": "Convocatoria de subvenciones destinadas a la rehabilitación y mejora de los teatros de Madrid del año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 453549.91,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://sede.madrid.es/portal/site/tramites/menuitem.c61bb691882ed9d32e202e2084f1a5a0/?vgnextoid=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextchannel=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900698",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2013/11/22/BOCM-20131122-34.PDF",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "text_fin": "15 DIAS HÁBILES A PARTIR DEL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209716,
+      "titulo": "Extracto de la Convocatoria de subvenciones destinadas a la rehabilitación y mejora de los teatros de Madrid del año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto.</p><p>1. Esta convocatoria, que se tramita en régimen de concurrencia competitiva, tiene como objetivo prioritario la financiación de inversiones en obras y dotación de equipamientos encaminadas a la mejora de las condiciones de seguridad y de accesibilidad de los teatros y salas de artes escénicas ubicados en la Villa de Madrid.</p><p>2. También serán objeto de estas ayudas otras inversiones en obras de rehabilitación y mejora, como las encaminadas a la mejora de la eficiencia energética del edificio o de sus instalaciones, las obras de mejora de la acústica e insonorización y la restauración de bienes culturales inmuebles protegidos, siempre que el teatro, conforme al proyecto presentado, tenga suficientemente cubiertas las medidas de seguridad y accesibilidad exigidas en la normativa de aplicación.</p><p>3. Podrán ser objeto de subvención las inversiones en obras y dotación de equipamientos escénicos, incluido el necesario o para la realización de actividades de circo en los teatros.</p><p></p><p></p><p>Segundo. Beneficiarios.</p><p>Los solicitantes de las ayudas podrán ser personas tanto físicas como jurídicas, que sean propietarios o arrendatarios de salas de teatro dedicadas a la exhibición escénica en el término municipal de Madrid, con una antigüedad mínima de dos años de actividad y que hayan realizado al menos 100 funciones en los últimos dos años o acrediten un proyecto de reapertura tras el cese en su actividad.</p><p></p><p>Tercero. Normativa reguladora.</p><p>Ordenanza de Bases Reguladoras Generales para la concesión de Subvenciones por el Ayuntamiento de Madrid y sus Organismos Públicos de 30 de octubre de 2013, publicada en www.madrid.es.</p><p></p><p>Cuarto. Cuantía.</p><p>El importe total de esta convocatoria es de 453.549,91 euros.</p><p></p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Las solicitudes podrán presentarse en un plazo de 15 días hábiles a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial de la Comunidad de Madrid.</p><p></p><p>Sexto. Otros datos.</p><p>La financiación podrá concederse a las actuaciones que hayan sido ejecutadas durante el periodo comprendido entre el 1 de septiembre de 2025 y el 31 de agosto de 2026 y que no hayan sido objeto de subvención anterior.</p><p></p><p>Séptimo. Publicación.</p><p>Se publicará un extracto de la convocatoria en el Boletín Oficial de la Comunidad de Madrid y el texto íntegro en el Boletín Oficial del Ayuntamiento de Madrid y en la sede electrónica del Ayuntamiento de Madrid (https://sede.madrid.es). La publicidad de las convocatorias en el Boletín Oficial de la Comunidad de Madrid se llevará a cabo a través de la Base de Datos Nacional de Subvenciones, de conformidad con lo establecido en el artículo 20.8 a) de la Ley 38/2003, de 17 de noviembre.</p><p></p>",
+      "textoLeng": null,
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/04/30/BOCM-20260430-49.PDF",
+      "cve": "BOCM-20260430-49",
+      "desDiarioOficial": "BOCM. B.O. DE LA COMUNIDAD DE MADRID",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.845Z"
+}

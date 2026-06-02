@@ -1,0 +1,115 @@
+{
+  "id": 1101709,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE CIENCIA, EMPRESAS, FORMACIÓN Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900148",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800000,
+  "mrr": false,
+  "descripcion": "Audas para el impulso empresarial de autónomos, microempresas, pequeñas y medianas empresas con establecimiento permanente en el Principado de Asturias",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    },
+    {
+      "descripcion": "Actividades de intermediación para reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas",
+      "codigo": "95.4"
+    },
+    {
+      "descripcion": "Actividades de intermediación para servicios de apoyo a las empresas n.c.o.p.",
+      "codigo": "82.4"
+    },
+    {
+      "descripcion": "Actividades de intermediación para servicios de construcción especializada",
+      "codigo": "43.6"
+    },
+    {
+      "descripcion": "Actividades de intermediación para servicios personales",
+      "codigo": "96.4"
+    },
+    {
+      "descripcion": "Actividades de reventa de telecomunicaciones y servicios de intermediación para telecomunicaciones",
+      "codigo": "61.2"
+    },
+    {
+      "descripcion": "Actividades de servicios de intermediación para el comercio al por menor",
+      "codigo": "47.9"
+    },
+    {
+      "descripcion": "Intermediarios del comercio al por mayor",
+      "codigo": "46.1"
+    },
+    {
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p.",
+      "codigo": "82.9"
+    },
+    {
+      "descripcion": "Otras actividades de asistencia en establecimientos residenciales",
+      "codigo": "87.9"
+    },
+    {
+      "descripcion": "Otras actividades sanitarias",
+      "codigo": "86.9"
+    },
+    {
+      "descripcion": "Servicios de intermediación para el alquiler de bienes tangibles y de activos intangibles no financieros",
+      "codigo": "77.5"
+    },
+    {
+      "descripcion": "Servicios de intermediación para las actividades postales y de mensajería",
+      "codigo": "53.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Bases reguladoras ayudas para el impulso empresarial de autónomos, microempresas, pequeñas y medianas empresas con establecimiento permanente en el Principado de Asturias",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2025/06/17/2025-04826.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "día siguiente a la publicación extracto BOPA",
+  "textFin": "10 días hábiles a partir siguiente publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439035,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_Consejeria_Ciencia__Industria_y_Empleo_con_anexos_firma_Consejero (12).pdf",
+      "long": 345360,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

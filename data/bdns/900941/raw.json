@@ -1,0 +1,76 @@
+{
+  "id": 1102502,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AVILÉS",
+    "nivel3": "AYUNTAMIENTO DE AVILÉS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900941",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 13500,
+  "mrr": false,
+  "descripcion": "Ayudas a entidades para desarrollo de proyectos en el ámbito de la juventud",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONCURRENCIA COMPETITIVA",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2019/06/04/2019-05178.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOPA",
+  "textFin": "1 MES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441147,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Decreto_2483_2026.pdf",
+      "long": 467551,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209811,
+      "titulo": "SUBVENCION A PROYECTOS EN EL AMBITO DE LA JUVENTUD",
+      "tituloLeng": null,
+      "texto": "<p>Extracto de la Resolución de Alcaldía, de 7 de abril de 2026, por la que se convocan subvenciones de apoyo a proyectos y entidades juveniles</p><p></p><p>Primero. Objeto</p><p> </p><p>Favorecer el desarrollo de las asociaciones y entidades que, mediante sus proyectos y actuaciones, realizan una defensa y promoción de los intereses del sector de población joven del municipio de Avilés. </p><p>Se podrán presentar solicitudes de subvención en las siguientes modalidades: </p><p>a) Modalidad de mantenimiento, para la financiación de gastos derivados del funcionamiento general de la entidad. </p><p>b) Modalidad de proyectos, para la financiación de actividades cuyos destinatarios sean jóvenes de Avilés</p><p></p><p>Segundo. Beneficiarios</p><p></p><p>En la modalidad de mantenimiento, asociaciones juveniles constituidas legalmente como tales. En la modalidad de proyectos, entidades de interés social ubicadas en el municipio de Avilés que desarrollen proyectos y actividades cuyos destinatarios sean jóvenes o colectivos de jóvenes del municipio de Avilés. </p><p></p><p>Tercero. Bases reguladoras: Ordenanza general municipal de subvenciones (BOPA de 4 de junio de 2019). </p><p></p><p>Cuarto. Importe: 13.500 euros. </p><p></p><p>Quinto. Lugar y plazo de presentación de solicitudes: Las solicitudes deberán presentarse de forma telemática. Para ello las entidades solicitantes deberán cumplimentar el formulario web habilitado al efecto en la sede electrónica del Ayuntamiento de Avilés (https://sedeelectronica.aviles.es/). </p><p></p><p>El plazo será de un mes a contar a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial del Principado de Asturias.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/2026/04/30/2026-03345.pdf",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

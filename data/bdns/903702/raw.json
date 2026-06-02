@@ -1,0 +1,172 @@
+{
+  "id": 1105263,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONDA",
+    "nivel3": "AYUNTAMIENTO DE ONDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903702",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "CONCESIÓN SUBVENCIONES A ONGD's LOCALES PARA AYUDAS AL DESARROLLO DURANTE EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS DE LA CONVOCATORIA PARA LA CONCESIÓN DE\nSUBVENCIONES PARA ONGD LOCALES PARA AYUDAS AL DESARROLLO DURANTE EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://www.onda.es/ond/web_php/index.php?contenido=descripcion&id_boto=322#Cooperaci%C3%B3n%20al%20desarrollo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO EN EL BOP DE CASTELLÓN",
+  "textFin": "DIEZ DÍAS HÁBILES CONTADOS A PARTIR DEL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP DE CS",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449176,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES_OGDS_2026_CASTELLANO.pdf",
+      "long": 445911,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449177,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES_ONGDS_2026_VALENCIA.pdf",
+      "long": 465308,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449179,
+      "descripcion": "ACUERDO CONVOCATORIA",
+      "nombreFic": "ACORD_1.26_JGL_20260504.pdf",
+      "long": 365265,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449181,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANNEX_I_DECLARACION_RESPONSABLE.pdf",
+      "long": 172435,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449182,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANNEX_II_PROJECTE.pdf",
+      "long": 169678,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449185,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANNEX_III_PRESSUPOST_PROJECTE.pdf",
+      "long": 172730,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449204,
+      "descripcion": "ANEXO PAGO 70%",
+      "nombreFic": "SOLICITUD_PAGAMENT_70_.pdf",
+      "long": 210454,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449189,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANNEX_V_COMPROMIS_DIFUSIO.pdf",
+      "long": 172833,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449191,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "ANNEX_VI_AUTORITZACIO_HISENDA_LOCAL.pdf",
+      "long": 164136,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449193,
+      "descripcion": "ANEXO VII",
+      "nombreFic": "ANNEX_VII_DECLARACIO_JURADA_OBLIGACIONS_COMPLIDES.pdf",
+      "long": 169628,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449196,
+      "descripcion": "ANEXO VIII",
+      "nombreFic": "ANNEX_VIII_DECLARACION_RESPONSABLE_PRESIDENT_DADES_VERACES_I_COMPTE_JUSTIFICATIU.pdf",
+      "long": 242584,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449198,
+      "descripcion": "ANEXO IX",
+      "nombreFic": "ANNEX_IX_DECLARACIO_PRESIDENT_SUBVENCIONS_REBUDES.pdf",
+      "long": 192213,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449200,
+      "descripcion": "SOLICITUD PAGO 100%",
+      "nombreFic": "SOLICITUD_PAGAMENT_100_.pdf",
+      "long": 212784,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449187,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANNEX_IV_DECLARACIO_JURADA_SUBVENCIONS_REBUDES_I_NO_DEPENDENCIA.pdf",
+      "long": 193021,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

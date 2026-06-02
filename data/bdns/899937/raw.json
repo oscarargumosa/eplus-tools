@@ -1,0 +1,92 @@
+{
+  "id": 1101498,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GALAPAGAR",
+    "nivel3": "AYUNTAMIENTO DE GALAPAGAR"
+  },
+  "sedeElectronica": "https://sede.galapagar.es/",
+  "codigoBDNS": "899937",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 204072.23,
+  "mrr": false,
+  "descripcion": "Ordenanza municipal reguladora de las prestaciones económicas de emergencia social y prestaciones materiales del servicio de ayuda a domicilio y del servicio de teleasistencia domiciliaria del Ayuntamiento de Galapagar",
+  "descripcionLeng": "Ordenanza municipal reguladora de las prestaciones económicas de emergencia social y prestaciones materiales del servicio de ayuda a domicilio y del servicio de teleasistencia domiciliaria del Ayuntamiento de Galapagar",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA AYUDAS SERVICIOS SOCIALES",
+  "urlBasesReguladoras": "https://sede.galapagar.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de su publicación en el BOCM",
+  "textFin": "Periodo de solicitud permanentemente abierto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438474,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BOCM-20260122-Núm.18 Ordenanza Servicios Sociales.pdf",
+      "long": 449467,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438533,
+      "descripcion": "Edicto aprobación y publicación",
+      "nombreFic": "Edicto aprobación definitiva Ordenanza SS SS.pdf",
+      "long": 2058262,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438478,
+      "descripcion": "Decreto de Aprobación Ordenanza",
+      "nombreFic": "DA 5054-2025 de 04.12.2025.pdf",
+      "long": 348240,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209415,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "BOCM-20260122-55",
+      "cve": null,
+      "desDiarioOficial": "BOCM. B.O. DE LA COMUNIDAD DE MADRID",
+      "datPublicacion": "2026-01-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

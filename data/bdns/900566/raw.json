@@ -1,0 +1,88 @@
+{
+  "id": 1102127,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BASAURI",
+    "nivel3": "AYUNTAMIENTO DE BASAURI"
+  },
+  "sedeElectronica": "https://sede.basauri.eus/es/",
+  "codigoBDNS": "900566",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía nº 1706/2026 del 17 de abril de 2026 por el se aprueba la “convocatoria para la concesión de subvenciones municipales de concurrencia competitiva en el ámbito de Igualdad para la Promoción de la Igualdad de Oportunidades entre mujeres",
+  "descripcionLeng": "2026ko apirilaren 17ko 1706/2026 Alkatetza Dekretua, Berdintasuneko 2026ko emakumeen eta gizonen arteko aukera berdintasuna sustatzeko lehiarako dirulaguntzak emateko deialdia”.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Aprobación definitiva de la Ordenanza General de Subvenciones del Ayuntamiento de Basauri",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2024/08/06/II-4206_cas.pdf?hash=1e8127524f52a714651bb1ade6",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Bizkaia",
+  "textFin": "1 mes",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440114,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio_en_BOB_Alkatea.pdf",
+      "long": 101149,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440117,
+      "descripcion": "DIRULAGUNTZEN DEIALDIA: EMAKUMEEN ETA GIZONEN ARTEKO AUKERA-BERDINTASUNAREN SUSTAPENA",
+      "nombreFic": "ERANSKINA (6).pdf",
+      "long": 268326,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440116,
+      "descripcion": "CONVOCATORIA DE LAS SUBVENCIONES: PROMOCION de la IGUALDAD de OPORTUNIDADES de MUJERES Y HOMBRES",
+      "nombreFic": "ANEXO (6).pdf",
+      "long": 622582,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440115,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anuncio_en_BOB_Alkatea.pdf",
+      "long": 101149,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

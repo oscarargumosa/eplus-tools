@@ -1,0 +1,79 @@
+{
+  "id": 1102398,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+    "nivel3": "SUBSECRETARÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES"
+  },
+  "sedeElectronica": "https://sede.educacion.gob.es/portada.html",
+  "codigoBDNS": "900837",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 360000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para cursos de formación en España dirigidos a profesorado extranjero de español y de materias impartidas en español que ejerce en el exterior 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "BE - BELGIQUE-BELGIË "
+    },
+    {
+      "descripcion": "BG - BULGARIA"
+    },
+    {
+      "descripcion": "FR - FRANCE"
+    },
+    {
+      "descripcion": "IE0 - IRELAND"
+    },
+    {
+      "descripcion": "PT - PORTUGAL"
+    },
+    {
+      "descripcion": "UK - UNITED KINGDOM"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden ECI/1305/2005, de 20 de abril, de bases reguladoras de la concesión de subvenciones públicas en régimen de concurrencia competitiva",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2005/04/20/eci1305",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días naturales a partir del día siguiente a la publicación del extracto de esta Resolución en BOE",
+  "textFin": "15 días naturales después de su publicación en BOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440723,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_cursos_ES_UNED UIMP_2026_F.pdf",
+      "long": 256283,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

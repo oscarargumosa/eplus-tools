@@ -1,0 +1,129 @@
+{
+  "identifier": "EUBA-2024-PLANTS-04",
+  "ccm2Id": "47381424",
+  "callIdentifier": "EUBA-2024-PLANTS-04",
+  "callTitle": "Support for the revision of the guidance document on terrestrial ecotoxicology (SANCO/10329/2002) including the development of an approach for indirect effects",
+  "title": "Support for the revision of the guidance document on terrestrial ecotoxicology (SANCO/10329/2002) including the development of an approach for indirect effects",
+  "programme": "EUBA",
+  "programmeCode": "45532249",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-10-31",
+  "deadline": "2025-01-30",
+  "deadlineModel": "single-stage",
+  "actionType": "EUBA Type of Action",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": {
+    "total_eur": 1000000,
+    "by_year": {
+      "2025": 1000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "EUBA-2024-PLANTS-04",
+    "EUBA-2024-PLANTS-04"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/EUBA-2024-PLANTS-04.json",
+  "documents": [
+    {
+      "section": "2. Eligible Countries",
+      "label": "https://efsa.force.com/competentorganisations/s/",
+      "url": "https://efsa.force.com/competentorganisations/s/",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call documents",
+      "label": "Call for proposals",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/EUBAEFSA-2024-PLANTS-04-Corrigendum-1-call-.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Annex 1a. Draft FPA Agreement",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/Annex%201a_FPA%20Multi%20and%20Mono%20EUBA-EFSA-2024-PLANTS-04.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Annex 1b. Draft Specific Agreement",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/Annex%201b_Draft%20Specific%20Agreement%20EUBA-EFSA-2024-PLANTS-04.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Clarification 1",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/Clarification-1-EUBA-EFSA-PLANTS-2024-04.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Clarification 2",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/EUBA-EFSA-PLANTS-2024-04%20%20Clarification%202.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Clarification 3",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/EUBA-EFSA-PLANTS-2024-04%20%20Clarification%203%20(1).pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call documents",
+      "label": "Corrigendum 1",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/EUBAEFSA-2024-PLANTS-04-Corrigendum-1.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "EU Financial Regulation 2018/1046",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32018R1046&qid=1535046024012",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-05-06T19:11:40.424Z"
+}

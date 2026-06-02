@@ -1,0 +1,18 @@
+## Expected Outcome
+
+Proposals are expected to contribute to one or more of the following:
+- New primitives beyond Quantum Key Distribution (QKD) for future hybrid classical-quantum and quantum networks either as quantum equivalents of classical primitives or as new primitives for new practical applications, also in the relativistic setting when relevant, or as new primitives and protocols with modular, realistic integration of solutions from different cryptographic approaches, with focus on beyond-QKD applications and with gradual release on trust in hardware;
+- Analysis of the applicability and strength of the results compared to their best classical-only counterpart, critical analysis of the formal assumptions and of performance, security proofs;
+- Investigation of fundamental aspects of quantum information processing tasks, their eventual limits; and/or the connection between quantum computing and cryptography for insights for stronger cryptographic foundations;
+- Roadmap for quantum cryptography and networks functionalities.
+
+## Scope
+
+The action supports research on new primitives and protocols beyond QKD for security and trust-based applications, by combining different cryptographic approaches and by exploiting insights from quantum information science, to demonstrate compelling quases of quantum cryptographic advantage and obtain foundational results on the unique features of quantum protocols. The goal is to build on the basis of insights from the field of real-world, applied cryptography and the vision from the quantum domain on future entanglement-based networks, the foundations of a new cryptography, that will support mid-term hybrid classical-quantum and further in the future almost fully quantum networks. The design of such new foundations may need entirely new paradigms whose design requires different expertise.
+
+The proposal should target some of the following areas and lead to a roadmap:
+- Development of quantum primitives which have classical equivalent, of new quantum primitives not possible classically (or without trusted hardware), and of alternative solutions improving quantum cryptography protocols using classical cryptography solutions (in particular PQC), by flexibly incorporating various cryptographic components, with some beneficial aspects such as performance improvements (run time, energy usage, less requirements on HW etc.)
+- Analysis of the applicability and strength of the results compared to their best classical-only counterpart, critical analysis of the formal assumptions, rigorous security proofs, case-by-case analysis of composable security and of performance.Connection between quantum information processing tasks and holography, and transfer to the cryptographic context, such as, among others, non-local quantum computation for position-verification schemes and spoofing schemes as means of establishing trust, via foundational insights on entanglement and quantum correlations; connection between quantum computing and cryptography providing stronger cryptographic foundations.
+- Development of a quantum cryptography roadmap, which identifies challenges for the technical realisation and scaling of applications and presenting the implications for the best hardware and architecture settings for both near-term and long-term applications of quantum networks.
+
+Proposals should include, in a balanced manner, quantum scientists and researchers from PQC with experience on real-world, applied cryptography and with interest in quantum protocols and new paradigms for future networks.

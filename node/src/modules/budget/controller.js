@@ -1,6 +1,7 @@
 /* ── Budget Controller ────────────────────────────────────────── */
 const m = require('./model');
 const { exportBudgetBuffer } = require('./export');
+const { buildEaceaTables } = require('./eacea-tables');
 
 const ok  = (res, data) => res.json({ ok: true, data });
 const err = (res, msg, status = 400) =>
@@ -154,6 +155,17 @@ exports.getByProject = async (req, res) => {
     if (!b) return err(res, 'No budget for this project', 404);
     ok(res, b);
   } catch (e) { err(res, e.message, 500); }
+};
+
+/* ── EACEA Form Part B tables (single source of truth) ───────
+   Used by Calculator (Resumen → Form Part B tab), Developer
+   (Escribir), Master (Perfeccionar → Preparar formulario) and
+   the .docx exporter. */
+exports.getEaceaTables = async (req, res) => {
+  try {
+    const t = await buildEaceaTables(req.params.projectId, req.user.id);
+    ok(res, t);
+  } catch (e) { err(res, e.message, e.status || 500); }
 };
 
 /* ── Create from intake ─────────────────────────────────────── */

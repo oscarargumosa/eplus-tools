@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "897891",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / QUART DE POBLET / AYUNTAMIENTO DE QUART DE POBLET",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "CONVOCATORIA DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, PARA ENTIDADES SOCIALES PARA EL DESARROLLO DE PROYECTOS DE INTERÉS SOCIAL EN EL MUNICIPIO DE QUART DE POBLET PARA 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-09",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 38000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://quartdepoblet.sedipualba.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897891",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BASES REGULADORAS",
+      "url": null
+    },
+    {
+      "label": "CERTIFICADO ACUERDO JGL",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208364,
+      "titulo": "CONVOCATORIA DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, PARA ENTIDADES SOCIALES PARA EL DESARROLLO DE PROYECTOS DE INTERÉS SOCIAL EN EL MUNICIPIO DE QUART DE POBLET PARA 2026",
+      "tituloLeng": "CONVOCATÒRIA DE SUBVENCIONS, EN RÈGIM DE CONCURRÈNCIA COMPETITIVA, PER A ENTITATS SOCIALS PER AL DESENROTLLAMENT DE PROJECTES D'INTERÉS SOCIAL EN EL MUNICIPI DE QUART DE POBLET PER A 2026",
+      "texto": "<p>1. OBJETO La presente convocatoria tiene por objeto regular la concesión de subvenciones, en régimen de concurrencia competitiva, según lo establecido en el artículo 22 de la ley 38/2003, de 17 de noviembre, General de Subvenciones, por parte del Ayuntamiento de Quart de Poblet en concepto de colaboración en aquellos gastos inherentes al desarrollo de proyectos de acción social a entidades sociales sin ánimo de lucro, que tengan como objetivo fomentar la inclusión, integración social y/o el desarrollo personal de personas en situación o en riesgo de exclusión social, en el ámbito territorial de Quart de Poblet.</p><p>2. BASES REGULADORAS Las bases por las que se rige esta convocatoria son las bases reguladoras de subvenciones en concurrencia competitiva para entidades sociales de Quart de Poblet por el desarrollo de proyectos de intervención social, aprobadas por la Junta de Gobierno Local del Ayuntamiento de Quart de Poblet el 25 de febrero de 2025.</p>",
+      "textoLeng": "<p>1. OBJECTE La present convocatòria té per objecte regular la concessió de subvencions, en règim de concurrència competitiva, segons el que s'establix en l'article 22 de la llei 38/2003, de 17 de novembre, General de Subvencions, per part de l'Ajuntament de Quart de Poblet en concepte de col·laboració en aquells gastos inherents al desenrotllament de projectes d'acció social a entitats socials sense ànim de lucre, que tinguen com a objectiu fomentar la inclusió, integració social i/o el desenrotllament personal de persones en situació o en risc d'exclusió social, en l'àmbit territorial de Quart de Poblet.</p><p>2. BASES REGULADORES Les bases per les quals es regix esta convocatòria són les bases reguladores de subvencions en concurrència competitiva per a entitats socials de Quart de Poblet pel desenrotllament de projectes d'intervenció social, aprovades per la Junta de Govern Local de l'Ajuntament de Quart de Poblet el 25 de febrer de 2025.</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04275&lang=es",
+      "cve": "BOPV-2026/04275",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.250Z"
+}

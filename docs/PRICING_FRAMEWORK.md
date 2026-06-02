@@ -559,3 +559,66 @@ Cuando una sesión nueva arranque y el tema sea pricing, cohortes, calendario o 
 ---
 
 *Documento elaborado en sesión interactiva 2026-04-28. Actualizar este archivo cada vez que se cierre una de las decisiones abiertas en §15 o se modifique la curva en §11.*
+
+---
+
+## 17. El Máster como producto del ecosistema (añadido 2026-04-30)
+
+*Ideas surgidas en sesión de pensamiento estratégico Oscar + Claude VPS.*
+
+### 17.1 Decisión de producto
+
+Se está diseñando un **Máster en Gestión de Proyectos Erasmus+** (título propio, 15 ECTS, 6 meses, online, ~2.200€). Es el único máster en el mercado español dedicado exclusivamente a Erasmus+ — todos los competidores cubren "proyectos europeos en general" y diluyen Erasmus+ en 1-2 módulos.
+
+Estructura pedagógica:
+- Bloque 0: El ecosistema Erasmus+ (fundamentos)
+- Bloque 1: KA1 — Movilidad
+- Bloque 2: KA2 — Asociaciones de cooperación (módulo central, 4 ECTS)
+- Bloque 3: KA3 — Apoyo a la reforma política
+- Bloque 4: Especializaciones (CBHE, CB VET, CB Youth, Sport)
+- Bloque 5: Implementación, reporting y auditoría
+- TFM: Propuesta real sobre convocatoria abierta
+
+### 17.2 Lógica de compra diferente a los slots
+
+El PRICING_FRAMEWORK está construido sobre la lógica: **el cliente llega con una call en mente → compra un slot → ejecuta con la herramienta → deadline.**
+
+El máster opera sobre una lógica distinta: **el cliente quiere formarse en Erasmus+ como profesión → aprende todo el ecosistema → 6 meses → sale preparado.**
+
+Son dos motivaciones de compra que no se cancelan pero tampoco son idénticas:
+
+| | Slot por cohorte | Máster |
+|---|---|---|
+| Motivación | Tengo una call concreta y una deadline | Quiero construir una carrera o profesionalizar mi equipo |
+| Horizonte | Semanas (deadline del proyecto) | 6 meses |
+| Perfil | Organización con proyecto en curso | Profesional o equipo que quiere sistematizar |
+| Precio | 1% del presupuesto del proyecto | ~2.200€ fijo |
+| Output | Propuesta presentada | Competencia profesional + TFM real |
+
+### 17.3 El máster como fábrica de clientes recurrentes
+
+Un alumni del máster emerge como el cliente ideal para el modelo de slots:
+- Ya conoce qué cohortes le interesan (no necesita educarse desde cero en cada slot)
+- Sabe usar la herramienta (no abandona en la curva de aprendizaje)
+- Confía en EU Funding School como su referencia → compra slots año tras año
+
+**El máster no es el producto principal — es la fábrica de clientes recurrentes de alta calidad.**
+
+### 17.4 Tensión real: doble pago por formación
+
+El slot ya incluye Academia (8 clases live por cohorte). Si un alumni del máster compra un slot, paga dos veces por formación.
+
+**Solución propuesta:** los alumni del máster acceden al slot **sin la Academia** (solo herramienta + IA + soporte de la cohorte). Esto coincide con el "descuento de repetición" del §11.5, que ya está marcado como pendiente de cerrar. Propuesta concreta: **alumni del máster = descuento automático del 40-50% en cualquier slot**, equivalente al peso de la Academia en el bundle.
+
+### 17.5 Riesgo a vigilar
+
+El máster a 2.200€ cubre todo el ecosistema Erasmus+. Para quien tiene una deadline concreta, el slot de esa cohorte ya cubre la misma formación más la herramienta y el acompañamiento — y a veces por menos precio (KA210 SSCP a 300€, Sport Coop a 600€). El máster podría percibirse como "más caro y más lento."
+
+**Conclusión:** el máster tiene sentido como producto siempre que su buyer NO sea el mismo que el buyer del slot. Si alguien quiere presentar una call concreta, el slot es la respuesta. Si alguien quiere construir una carrera o profesionalizar un equipo de forma sistemática, el máster es la respuesta. Los canales de captación deben reflejar esto.
+
+### 17.6 Decisiones abiertas relacionadas con el máster
+
+- Precio exacto del máster (referencia: 1.800–2.400€, con early bird y pago fraccionado)
+- % de descuento en slots para alumni del máster
+- Si el TFM puede contar como "primer slot" y descontar su coste del primer slot real
+- Timing de lanzamiento respecto al ciclo de cohortes 2026-2027

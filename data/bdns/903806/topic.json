@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "903806",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE JUSTICIA, ADMINISTRACIÓN LOCAL Y FUNCIÓN PÚBLICA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolucion de 6 de mayo de 2026, por la que se convocan subvenciones a los colegios de procuradores de los tribunales de Andalucía, para la financiación de las medidas necesarias para designar procurador/a que represente de forma gratuita a víctimas de vi",
+  "title_lang": "es",
+  "summary": "Justicia",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": "2026-06-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 255000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "69.1",
+      "descripcion": "Actividades jurídicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903806",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/boja/2024/150/8",
+  "text_inicio": "A partir del día siguiente al de la publicación en el BOJA  presente",
+  "text_fin": "30 de junio de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.303Z"
+}

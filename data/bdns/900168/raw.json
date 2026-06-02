@@ -1,0 +1,80 @@
+{
+  "id": 1101729,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLIÇÀ DE VALL",
+    "nivel3": "AYUNTAMIENTO DE LLIÇÀ DE VALL"
+  },
+  "sedeElectronica": "https://seu.llissadevall.cat/ABSIS/EAD/webspublicacion/seu/catala/emiservicio/41E6BF9D755E4825AF8E6B49E85B5079.asp",
+  "codigoBDNS": "900168",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para la adquisición de libros de texto, material escolar y/o licencias digitales para la educación básica",
+  "descripcionLeng": "Convocatòria d'ajudes per a l'adquisició de llibres de text, material escolar i/o llicències digitals per a l'educació bàsica",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de ayudas para la adquisición de libros de texto, material escolar y/o licencias digitales para la educación básica",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3800919/aprovacio-definitiva-de-les-bases-generals-reguladores-d-ajuts-per-a-l-adquisicio-de-llibres-de-text-material-escolar-i-o-llicencies-digitals-per-a-l-educacio-basica-ajuntament-de-llica-de-vall",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-30",
+  "textInicio": "Desde el día siguiente a la fecha de publicación de la convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439139,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria español.pdf",
+      "long": 255555,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439140,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Conocatòria en català.pdf",
+      "long": 313317,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439154,
+      "descripcion": "Acuerdo JGL 23/03/2026 de aprobación de la convocatoria",
+      "nombreFic": "Acord JGL 23 03 2026 - Aprovació convocatòria.pdf",
+      "long": 280641,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

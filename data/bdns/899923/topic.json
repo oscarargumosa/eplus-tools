@@ -1,0 +1,105 @@
+{
+  "source": "bdns",
+  "source_id": "899923",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EJEA DE LOS CABALLEROS / AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "SUBVENCIONES EN MATERIA DE IGUALDAD DE GÉNERO 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "www.ejea.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899923",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO II PROYECTO MEMORIA PRESUPUESTO",
+      "url": null
+    },
+    {
+      "label": "ANEXO III DECLARACIÓN DELITOS SEXUALES",
+      "url": null
+    },
+    {
+      "label": "MODELO REPRESENTACIÓN",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-A RELACIÓN GASTOS PAGOS",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-B DECLARACIÓN SUBVENCIONES",
+      "url": null
+    },
+    {
+      "label": "FICHA DE TERCEROS",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV MEMORIA ECONÓMICA JUSTIFICATIVA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ejea.es/subvenciones-igualdad-2026/",
+  "text_inicio": "El día siguiente al de publicación del extracto de la convocatoria en el BOP Zaragoza",
+  "text_fin": "Quince días hábiles desde el día siguiente a la publicación del extracto en el BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209766,
+      "titulo": "EXTRACTO del Decreto de Alcaldía de fecha 16 de abril de 2026 por el que se aprueba la convocatoria de subvenciones en materia de igualdad de género para el ejercicio 2026 del Ayuntamiento de Ejea de los Caballeros.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. –Entidades beneficiarias. Podrán beneficiarse de estas subvenciones las Asociaciones de Mujeres y Organizaciones Mixtas sin Ánimo de Lucro, inscritas en el Registro de Entidades Ciudadanas, que realicen programas o actividades en el municipio de Ejea de los Caballeros destinadas a la promoción de la igualdad entre mujeres y hombres.</p><p>Segundo. - Objeto y finalidad. Fomentar y promocionar la actividad asociativa e involucrar a las asociaciones en el impulso de la igualdad entre mujeres y hombres en la vida local, en sintonía con el articulado de la Ordenanza Municipal para la Igualdad.</p><p>Tercero. - Bases reguladoras /Criterios Reguladores. La Alcaldía-Presidencia del Ayuntamiento de Ejea de los Caballeros, con fecha 16 de abril de 2026, aprobó los criterios específicos reguladores para la concesión de subvenciones en materia de igualdad para el año 2026.</p><p>Cuarto. - Importe. El crédito presupuestario destinado a la presente convocatoria es de 7.000€ con cargo a la aplicación presupuestaria 23102/48909 y con número de retención: nº 12026000006443 del presupuesto municipal para el ejercicio 2026.</p><p>Quinto. - Plazo de presentación de solicitudes. - El plazo para la presentación de solicitudes será de quince días hábiles contados a partir del siguiente al de la publicación de un extracto de estas normas en el Boletín Oficial de Aragón (Sección de la Provincia de Zaragoza).</p><p>La convocatoria íntegra será publicada en la Web del Ayuntamiento de Ejea (www.ejea.es).</p><p>El impreso de solicitud, así como el resto de modelos normalizados a cumplimentar por el solicitante, se pondrán a disposición de los interesados en la página web del Ayuntamiento de Ejea de los Caballeros https://www.ejea.es/subvenciones-en-materia-de-igualdad-2026/</p>",
+      "textoLeng": null,
+      "url": "https://boletin.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=892281&numBop=97",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ZARAGOZA",
+      "datPublicacion": "2026-05-02"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.401Z"
+}

@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of a cryo-cooled motor inverter power electronics at TRL5, for a fully electric hydrogen fuel cell powered aircraft. This topic aims to demonstrate their reliability and performance, enabling the development of more efficient, compact and scalable cryogenic electric propulsion systems. See the topic description document published with this call for full details.

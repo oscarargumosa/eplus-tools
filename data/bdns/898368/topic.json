@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "898368",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DEL CONCURSO ANUAL DE MONOGRAFÍAS “ARCHIVO HISPALENSE” 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": "2026-06-26",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 32000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898368",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "dipusevilla.es",
+  "text_inicio": "el día siguiente a la publicación del extracto",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208648,
+      "titulo": "EXTRACTO DE LA RESOLUCIÓN DE PRESIDENCIA Nº 2002, DE 31 DE MARZO DE 2026, DONDE SE APROBARON LAS BASES DEL CONCURSO ANUAL DE MONOGRAFÍAS “ARCHIVO HISPALENSE 2026”.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p> </p><p>Podrán participar cuantas personas lo deseen como autor/a individual o colectivo.</p><p> </p><p>Segundo: Objeto</p><p>La Diputación Provincial de Sevilla convoca el concurso anual “ARCHIVO HISPALENSE” correspondiente al año 2026 para otorgar cuatro premios y sus cuatro accésits a monografías sobre temas de Historia, Literatura, Arte y Ciencias Sociales relativos a Sevilla y su provincia.</p><p> </p><p>Tercero: Bases Reguladoras</p><p>Las Bases Reguladoras del Citado Concurso se encuentran publicadas en el Boletín Oficial de la Provincia, en el Tablón Electrónico y el Portal de Transparencia de la Diputación de Sevilla.</p><p> </p><p>Cuarto: Cuantía</p><p>Cada premio está dotado con 5.000,00 € y sus correspondientes accésits con 3.000,00 € cada uno (cantidades a las que se aplicarán las retenciones previstas en la legislación tributaria).</p><p> </p><p>Quinto: Plazo de presentación de solicitudes</p><p>El plazo de presentación de los trabajos terminará el día 26 de junio de 2026.</p><p> </p><p>Sexto: Otros</p><p>Los trabajos deberán presentarse junto con una solicitud donde figure el título e indicación expresa del nombre y datos de contacto (dirección, teléfono y correo electrónico) y breve currículum del autor/a, indicando la sección a la que se concurre: Historia, Literatura, Arte o Ciencias Sociales, y acompañándose, además, de una hoja justificativa de la temática elegida, en razón de su contenido. Se hará constar el nombre del director/a del trabajo, si lo hubiere.</p><p>Los trabajos junto con la solicitud se entregarán en el Registro General de la Diputación Provincial de Sevilla, Área de Cultura y Ciudadanía, con el siguiente epígrafe: ”Para el concurso de monografías ARCHIVO HISPALENSE 2026\".</p><p>Los que se envíen por correo certificado, deberán llevar la siguiente dirección: Diputación Provincial de Sevilla, Servicio de Archivo y Publicaciones, Avda. Menéndez Pelayo, 32; 41071 Sevilla y con iguales indicaciones que los presentados directamente.</p><p> </p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.552Z"
+}

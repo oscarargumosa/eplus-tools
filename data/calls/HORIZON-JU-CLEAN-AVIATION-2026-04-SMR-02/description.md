@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of an Ultra-Efficient Rear Fuselage and Empennage (RFE) and its integrated industrial system for the Ultra-Efficient SMR Aircraft. This topic targets the delivery of a RFE full component assembly alongside an Industrial system including advanced manufacturing and assembly processed supporting the high-rate production of such structural components at TRL6, with an aim to significantly reduce the weight at component level and increase competitiveness through co-development of product and production processes, ensuring a clear route towards certification, exploitation and industrialisation for EIS 2035. See the topic description document published with this call for full details.

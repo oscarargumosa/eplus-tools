@@ -1,0 +1,148 @@
+{
+  "id": 1099231,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GETAFE",
+    "nivel3": "AYUNTAMIENTO DE GETAFE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897670",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 215000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES A ENTIDADES SOCIALES SIN FIN DE LUCRO QUE DESARROLLEN ACTIVIDADES DE ACCIÓN SOCIAL 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES300 - Madrid"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE CONCESIÓN DE SUBVENCIONES",
+  "urlBasesReguladoras": "http://www.bocm.es/boletin/CM_Orden_BOCM/2013/05/13/BOCM-20130513-55.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 DIAS HABILES A PARTIR DEL SIGUIENTE A PUBLLICACION EXTRACTO CONVOCATORIA EN BOCM",
+  "textFin": "FIN 20 DIAS HABILES A PARTIR DEL SIGUIENTE A PUBLICACION EXTRACTO CONVOCATORIA EN BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431684,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA.pdf",
+      "long": 438608,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431685,
+      "descripcion": "ANEXO II.1",
+      "nombreFic": "ANEXO_II.1.pdf",
+      "long": 961390,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431686,
+      "descripcion": "ANEXO 1",
+      "nombreFic": "ANEXO_I.pdf",
+      "long": 1321258,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431687,
+      "descripcion": "ANEXO II-2",
+      "nombreFic": "ANEXO_II-2.pdf",
+      "long": 642652,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431688,
+      "descripcion": "ANEXO II-3",
+      "nombreFic": "ANEXO_II-3.pdf",
+      "long": 63479,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431694,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "ANEXO_VI.pdf",
+      "long": 60964,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431690,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO_III.pdf",
+      "long": 57878,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431691,
+      "descripcion": "ANEXO IV-1 DECLARACION RESPONSABLE",
+      "nombreFic": "ANEXO_IV_.1_DECLARACIÓN_RESPONSABLE_CUMPLIM._OBLIG._TRIB._Y_SEG._SOCIAL.pdf",
+      "long": 716385,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431692,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO_IV.pdf",
+      "long": 415720,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431693,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO_V.pdf",
+      "long": 87237,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431689,
+      "descripcion": "ANEXO II-4 PRESUPUESTO",
+      "nombreFic": "ANEXO_II-4__PRESUPUESTO.pdf",
+      "long": 57682,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

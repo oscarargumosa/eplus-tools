@@ -1,0 +1,136 @@
+{
+  "identifier": "HORIZON-EIC-2026-STEP",
+  "ccm2Id": "49662814",
+  "callIdentifier": "HORIZON-EIC-2026-STEP",
+  "callTitle": "EIC STEP Scale Up",
+  "title": "EIC STEP Scale Up",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2025-11-06",
+  "deadline": "2026-11-25",
+  "deadlineModel": "",
+  "actionType": "HORIZON EIC Equity Only",
+  "actionCode": "HORIZON-EIC-EQU",
+  "mgaCode": "HORIZON-EQU",
+  "budget": {
+    "total_eur": 300000000,
+    "by_year": {
+      "2026": 300000000
+    },
+    "expected_grants": 10,
+    "min_contribution_eur": 10000000,
+    "max_contribution_eur": 30000000
+  },
+  "keywords": [
+    "HORIZON-EIC-2026-STEP",
+    "HORIZON-EIC-2026-STEP"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/42573?topic=HORIZON-EIC-2026-STEP",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EIC-2026-STEP",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "STEP regulation,",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202400795",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "Guidance note",
+      "url": "https://strategic-technologies.europa.eu/document/download/e204ce9e-0407-4f03-82f8-6f518ce12886_en?filename=C_2024_3148_F1_COMMUNICATION_FROM_COMMISSION_EN_V6_P1_3408774.PDF",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "EIC Work Programme 2026",
+      "url": "EIC Work Programme 2026",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "2. Eligible Countries",
+      "label": "EIC Work Programme 2026.",
+      "url": "https://eic.ec.europa.eu/document/download/52598755-1351-4b54-b46b-e2682d0a3aec_en?filename=EIC-Work-Programme-2026.pdf",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Standard application form (HE EIC STEP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-eic-step_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "HE Programme Guide",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Information on financial support to third parties (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-financial-support-to-third-parties_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Information on clinical studies (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-clinical-studies_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2023–2025 – 13. General Annexes",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2023-2024/wp-13-general-annexes_horizon-2023-2024_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-06T19:11:40.388Z"
+}

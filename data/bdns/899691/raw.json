@@ -1,0 +1,64 @@
+{
+  "id": 1101252,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLA DE MAZO",
+    "nivel3": "AYUNTAMIENTO DE VILLA DE MAZO"
+  },
+  "sedeElectronica": "WWW.SEDELECTRONICA.VILLADEMAZO.ES",
+  "codigoBDNS": "899691",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 46750,
+  "mrr": false,
+  "descripcion": "SUBVENCION SECTOR PRIMARIO VILLA DE MAZO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES707 - La Palma"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "BASES GENERALES REGULADORAS DE LA CONCESION  DE SUBVENCIONES EN REGIMEN DE CONCURRENCIA COMPETITIVA EN EL AYUNTAMIETNO DE VILLA DE MAZO(BOP S/C DE TENERIFE 108 DE FECHA 6/9/2024)",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP de S/C TFE.",
+  "textFin": "QUINCE DIAS HABILES A PARTIR DE LA FECHA DE INICIO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437796,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260413_Certificado_RESOLUCIONES ALCALDIA 2026 2026-0333 [APROBACIÓN DE LA CONVOCATORIA] (1).pdf",
+      "long": 1023480,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

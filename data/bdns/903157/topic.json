@@ -1,0 +1,76 @@
+{
+  "source": "bdns",
+  "source_id": "903157",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ASPE / AYUNTAMIENTO DE ASPE",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Acuerdo de la Junta de Gobierno Local, en sesión celebrada el día 21 de abril de 2026, por el que se aprueba la convocatoria del XXVIII Premio de pintura “Pastor Calpena”.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://aspe.es/sede-electronica/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903157",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "SOLICITUD",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/28_78/2026_002898.pdf",
+  "text_inicio": "14,15 y 16 de octubre de 2026 de 10 a 14 horas y de 16 a 20 horas.",
+  "text_fin": "17 de octubre de 2026 de 10 a 13 horas.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210780,
+      "titulo": "Extracto del Acuerdo de la Junta de Gobierno Local, en sesión celebrada el día 21 de abril de 2026, por el que se aprueba la convocatoria del XXVIII Premio de pintura “Pastor Calpena”.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Pueden participar todas las personas artistas nacidas o residentes en España a partir de los 18 años de edad cumplidos a lo largo de 2026.</p><p> </p><p>Segundo. Finalidad:</p><p>Concesión de premios a fin de incentivar la creación en el campo de las artes plásticas.</p><p> </p><p>Tercero. Bases reguladoras:</p><p>Bases XXVIII Premio de pintura “Pastor Calpena”. Publicadas en el Boletín Oficial de la Provincia de Alicante nº. 78, de fecha 28 de abril de 2026.</p><p> </p><p>Cuarto. Importe:</p><p>Cuantía máxima: 10.000,00 €., repartido de la siguiente manera: un primer premio dotado con 4.000 €; un segundo premio dotado con 3.000 €; un tercer premio dotado con 2.000 €; y un cuarto premio dotado con 1.000 €. Al menos uno de ellos recaerá en una obra presentada con la técnica de acuarela. Al menos uno de los premios recaerá en un nacido o residente en Aspe. Para acreditar la residencia en Aspe la administración accederá de oficio a su comprobación por lo que no es necesario presentar certificado de empadronamiento. En el caso que el premio recaiga sobre una persona nacida en Aspe no residente, deberá acreditar dicha situación en el momento que presente la documentación para el abono del premio. El jurado podrá dejar de aplicar alguno de los premios si lo estima oportuno. Las obras ganadoras pasarán a ser propiedad del Ayuntamiento de Aspe.</p><p> </p><p>Quinto. Plazo de presentación de solicitudes:</p><p>Las obras deberán ser entregadas exclusivamente en el teatro Wagner, calle Castelar, 10. 03680 ASPE (Alicante), teléfono 965.493.945, los días 14, 15 y 16 de octubre de 2026, de 10 h a 14 h y de 16 h a 20 h y el sábado 17 de octubre de 10 h a 13 h.</p><p>Dentro del plazo de presentación de las obras, la persona que desee participar deberá presentar por registro de entrada o sede electrónica del ayuntamiento de Aspe una solicitud genérica indicando que desean participar en el XXVIII Premio Nacional de Pintura Pastor Calpena adjuntando su boletín de inscripción cumplimentado y firmado. No se aceptarán solicitudes que se realicen sin adjuntar el boletín de inscripción debidamente cumplimentado. El modelo de boletín de inscripción lo pueden descargar del siguiente link: https://aspe.es/listado-de-modelos/</p><p> </p><p>Cada artista puede presentar una obra, que irá sin firmar. Junto a la obra, en el interior de un sobre con un lema en su exterior se introducirán dos copias del justificante del registro de entrada obtenido en su presentación junto a dos copias del boletín de inscripción cumplimentado y firmado. Una de las copias quedará en poder del Ayuntamiento de Aspe y la otra, sellada por la organización, será para la persona participante como justificante de la entrega de su obra.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.065Z"
+}

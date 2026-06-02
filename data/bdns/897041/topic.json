@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897041",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ÚBEDA / AYUNTAMIENTO DE ÚBEDA",
+  "nuts_codes": [
+    "ES616"
+  ],
+  "nuts_primary": "ES616",
+  "title": "Decreto 1207/2026, de 30 de marzo, de aprobación de convocatoria y bases reguladoras de la III Feria de Innovación y emprendimiento Empresarial de la Formación Profesional Superior en Úbeda",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897041",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipujaen.es/edicto/88094/N",
+  "text_inicio": "Al día siguiente de la publicación del anuncio de la convocatoria en BOP",
+  "text_fin": "Quince días naturales desde la publicación del anuncio de la convocatoria en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 207958,
+      "titulo": "Decreto 1207/2026, de 30 de marzo, de aprobación de convocatoria y bases reguladoras de la III Feria de Innovación y Emprendimiento Empresarial de la Formación Profesional Superior en Úbeda",
+      "tituloLeng": null,
+      "texto": "<p>Primero. - Beneficiarios: Personas físicas matriculadas en alguno de los ciclos de formación profesional que se imparten en el IES Los Cerros, Sagrada Familia o Escuela de Arte “Casa de las Torres” de Úbeda.</p><p>Segundo. - Finalidad:  Incentivar al alumnado que cursa estudios de Formación Profesional Superior en el aprendizaje y desarrollo de actitudes relacionadas con el emprendimiento y la innovación empresarial y Mejora publicitaria y de difusión de la oferta académica de los centros educativos de Formación Profesional de Úbeda.</p><p>Tercero. - Bases reguladoras: Ordenanza General de Subvenciones del Ayuntamiento de Úbeda (BOP Jaén, nº 30, de 15 de febrero de 2021 y su corrección de errores en BOP 215, de 11 de noviembre de 2021).</p><p>Cuarto. - Importe: La dotación presupuestaria es de 3.200 euros (por persona integrante del grupo: primer premio, 300 euros; segundo premio, 200 euros; tercer premio, 150 euros, cuarto premio, 100 euros y quinto premio, 50 euros.) </p><p>Quinto. - Plazo de presentación de solicitudes: Quince días hábiles desde el día siguiente al de la publicación del anuncio en el BOP Jaén. </p>",
+      "textoLeng": null,
+      "url": "http://bop.dipujaen.es/validaCVE?cve=BOP-2026-1621",
+      "cve": "BOP-2026-1621",
+      "desDiarioOficial": "B.O.P. DE JAÉN",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.774Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": 1103431,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ERRENTERIA",
+    "nivel3": "AYUNTAMIENTO DE ERRENTERIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901870",
+  "fechaRecepcion": "2026-04-27",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones del área de Servicios Sociales correspondientes al año 2026. Línea de subvención 7.2: Proyectos de promoción de la salud desarrollados en centros educativos del municipio, curso 2026-2027",
+  "descripcionLeng": "2026. urtean emango diren Gizarte Zerbitzuak saileko dirulaguntzen deialdia. 7.2. Diru-laguntza lerroa: Udalerriko ikastetxeetan osasuna sustatzeko garatutako proiektuetarako dirulaguntzak 2026-2027 ikasturtean.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Convocatoria para la concesión de subvenciones del área de Servicios Sociales correspondientes al año 2026. Línea de subvención 7.2: Proyectos de promoción de la salud desarrollados en centros educativos del municipio, curso 2026-2027",
+  "urlBasesReguladoras": "http://www.pap.minhafp.gob.es/bdnstrans/GE/es/index",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-01",
+  "fechaFinSolicitud": "2026-06-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1444690,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DeialdiaStua.pdf",
+      "long": 177365,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1444695,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DeialdiaStua.pdf",
+      "long": 177365,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1443542,
+      "descripcion": "Bases generales",
+      "nombreFic": "UDAL OINARRI OROKORRAK.pdf",
+      "long": 250165,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1443546,
+      "descripcion": "Decreto convocatoria",
+      "nombreFic": "DekretuaStua.pdf",
+      "long": 423524,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

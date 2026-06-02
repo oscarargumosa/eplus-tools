@@ -1,0 +1,70 @@
+{
+  "source": "bdns",
+  "source_id": "902763",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ROQUETES / AYUNTAMIENTO DE ROQUETES",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DIRIGIDAS AL FOMENTO DE LA ACTIVIDAD SOCIAL Y A LA MEJORA DEL SERVICIO A LAS PERSONAS EN EL MUNICIPIO DE ROQUETES, AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 4000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://actio.dipta.cat/catalegserveis/id/4313310007/servei/AT064_ATENC_00001?origen=seu",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902763",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipta.cat/bopt/web/anunci/340252/bases-per-a-la-concessio-de-subvencions-adrecades-al-foment-i-la-participacio-ciutadana-en-l-activitat-social-i-la-millora-de-la-qualitat-de-vida-aprovacio-definitiva-ajuntament-roquetes",
+  "text_inicio": "A partir del día siguiente al de su publicación del extracto de la convocatoria en el BOPT",
+  "text_fin": "El vigésimo día hábil posterior al de inicio del período de solicitud",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.859Z"
+}

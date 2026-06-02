@@ -1,0 +1,79 @@
+{
+  "id": 1101151,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE CULTURA",
+    "nivel3": "INSTITUTO DE LA CINEMATOGRAFÍA Y DE LAS ARTES AUDIOVISUALES"
+  },
+  "sedeElectronica": "https://sede.mcu.gob.es/SedeApp/SecuredArea/MiSitio/inicio",
+  "codigoBDNS": "899590",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2880000,
+  "mrr": false,
+  "descripcion": "Resolución de 16 de abril de 2026, de la Dirección General del Instituto de la Cinematografía y de las Artes Audiovisuales, O.A., por la que se convocan ayudas a entidades sin ánimo de lucro para el programa Cine Escuela del curso escolar 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Orden CUL/2912/2010, de 10 de noviembre, por la que se establecen las bases reguladoras para la concesión de subvenciones públicas en régimen de concurrencia competitiva del Ministerio de Cultura y de sus organismos públicos.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2010/11/10/cul2912",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la resolución de convocatoria en el BOE",
+  "textFin": "15 días a partir del día siguiente a la publicación del extracto de la resolución en el BOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437556,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Convocatoria CINE ESCUELA 2026.pdf.xsig.pdf",
+      "long": 363067,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209231,
+      "titulo": "Extracto de la Resolución de 16 de abril de 2026, del Organismo Autónomo Instituto de la Cinematografía y de las Artes Audiovisuales, por la que se convocan ayudas a entidades sin ánimo de lucro para el programa Cine Escuela del curso escolar 2026-2027.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto.</p><p>Apoyar la realización de actividades de fomento del audiovisual entre los jóvenes, mediante la asistencia a proyecciones en salas de cine y un trabajo pedagógico previo y posterior en los centros educativos, en el marco del programa Cine Escuela del Ministerio de Cultura.</p><p>Las actividades financiables del proyecto deberán desarrollarse durante el curso escolar 2026-2027.</p><p> </p><p>Segundo. Beneficiarios.</p><p>Entidades sin ánimo de lucro, de conformidad con lo dispuesto en el apartado primero de la resolución, que cumplan los requisitos establecidos en el apartado cuarto de la misma.</p><p> </p><p>Tercero. Bases reguladoras.</p><p>Orden CUL/2912/2010, de 10 de noviembre, por la que se establecen las bases reguladoras para la concesión de subvenciones públicas en régimen de concurrencia competitiva del Ministerio de Cultura y de sus organismos públicos.</p><p> </p><p>Cuarto. Cuantía.</p><p>El importe total de esta convocatoria asciende a la cantidad de 2.880.000 euros. El importe de la ayuda individual no podrá superar la totalidad de los gastos subvencionables inherentes a la elaboración y ejecución de los proyectos presentados.</p><p> </p><p>Quinto. Plazos de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de quince días a partir del día siguiente de la publicación de este extracto en el Boletín Oficial del Estado.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-13408",
+      "cve": "BOE-B-2026-13408",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,92 @@
+{
+  "id": 1100541,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URRETXU",
+    "nivel3": "AYUNTAMIENTO DE URRETXU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898980",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 98000,
+  "mrr": false,
+  "descripcion": "Subvenciones para realización de programas anuales y/o programas especiales para las diferentes asociaciones culturales.",
+  "descripcionLeng": "Kultura elkarteei urteko egitarauak edo/eta ekintza bereziak garatzeko dirulaguntzak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Subvenciones para realización de programas anuales y/o programas especiales para las diferentes asociaciones culturales.",
+  "urlBasesReguladoras": "https://www.urretxu.eus/eu/component/rsfiles/download-file/files?path=i_subvenciones/2026-DirulaguntzenOinarriak/2026-DL01-SSK-Elkarteak.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación de la convocatoria en el BOGipuzkoa",
+  "textFin": "30 días naturales a partir del día siguiente a la publicación de la convocatoria en el BOGipuzkoa",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435703,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Oinarriak elkarteak eta jaiak.pdf",
+      "long": 545569,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1435704,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Oinarriak elkarteak eta jaiak.pdf",
+      "long": 545569,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1435708,
+      "descripcion": "BASES GENERALES",
+      "nombreFic": "OINARRI OROKORRAK 2026.pdf",
+      "long": 380284,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208906,
+      "titulo": "Subvenciones para realización de programas anuales y/o programas especiales para las diferentes asociaciones culturales.",
+      "tituloLeng": "Kultura elkarteei urteko egitarauak edo/eta ekintza bereziak garatzeko dirulaguntzak",
+      "texto": "<p>1.Objeto de la subvención.</p><p>El objeto de esta convocatoria: fomentar la actividad cultural y festiva en Urretxu, mediante la concesión de ayudas económicas a asociaciones sin ánimo de lucro,</p><p>2.Importe de la subvención.</p><p>El importe máximo de la suma de las subvenciones a conceder asciende a la cantidad de 98.000 €, con cargo a la partida 1.6000.481.334.00.01.26 (172)</p><p>3. Plazo de presentación de solicitudes. El plazo de presentación de solicitudes será de 30 días naturales desde el día siguiente a la publicación del anuncio en el BOLETÍN OFICIAL de Gipuzkoa. La información detallada se encuentra a disposición de las personas o colectivos interesados en la siguiente páginas web: Ayuntamiento: https://www.urretxu.eus/es/subvenciones</p>",
+      "textoLeng": "<p>1.Dirulaguntzaren xedea.</p><p>Deialdi honen xedea da: Urretxuko kultura- eta jai-jarduera sustatzea, irabazi-asmorik gabeko elkarteei dirulaguntzak emanez.</p><p>2. Dirulaguntzaren zenbatekoa.</p><p>Emango diren dirulaguntzen batura, gehienez ere 98.000 eurokoa izango da 1.6000.481.334.00.01.26 (172) kontu-sailaren kontura.</p><p>3. Eskaerak aurkezteko epea.</p><p>Eskaerak aurkezteko epea 30 egun naturalak,  deialdiaren iragarkia Gipuzkoako ALDIZKARI OFIZIALEAN argitaratu eta biharamunetik hasita. Pertsona edo kolektibo interesdunek ondorengo web orrian aurkitu dezakete informazio zehatza: https://www.urretxu.eus/eu/dirulaguntzak</p>",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/30/c2602465.pdf",
+      "cve": "GAO-I-2026-02465",
+      "desDiarioOficial": "B.O. DE GIPUZKOA",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "903162",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "DGBCE/26 PREMIOS EXTRAORDINARIOS EDUCACION PRIMARIA 2025-2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6250,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903162",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos  1.2.3 3758FR2_26",
+      "url": null
+    },
+    {
+      "label": "Anexos  1.2.4 3758FR3_26",
+      "url": null
+    },
+    {
+      "label": "Anexos  1.2.1 3758F1_26",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  BOCAM PES2026012",
+      "url": null
+    },
+    {
+      "label": "Anexos  1.2.2 3758FR1_26",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/04/22/BOCM-20250422-12.PDF",
+  "text_inicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOCM",
+  "text_fin": "A LOS DIEZ DIAS HABILES A CONTAR DESDE EL INICIO",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.068Z"
+}

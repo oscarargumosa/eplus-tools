@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of an advanced airframe, including the wing, fuselage, empennage, and key enabling systems, for the Ultra-Efficient Regional Aircraft concept based on hybrid-electric propulsion. The topic targets a 10% CO2 reduction contribution from airframe technologies compared to 2020 State of the Art, and covers ground demonstrations to TRL6, supporting an entry into service by 2035. See the topic description document published with this call for full details.

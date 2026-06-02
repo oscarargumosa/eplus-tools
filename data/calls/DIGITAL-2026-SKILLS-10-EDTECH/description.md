@@ -1,0 +1,20 @@
+## Expected Outcome
+
+Deliverables:​​​​​​
+- Three open calls for pilots (at least one call per year) launched and managed providing financial support to third parties to at least 20 EdTech start-ups/SMEs from across Member States and eligible countries. A minimum of 60% of the total budget should be spent on Financial Support for Third Parties (FSTP) and the maximum amount per third party can amount up to 150.000 EUR to allow short pilots testing in real education or training environments;
+- Developed and implemented a yearly 12-months incubation and acceleration programme providing a mix of mentoring, networking services, consultancy, training and/or business and access-to-market support to the selected companies;
+- Short pilots implemented in real education and training environments to gather impact assessment data of the selected solutions. Human-centric design methods involving users and strong linkages with learning design methodologies are recommended for the piloting phase.
+- European-wide communication and awareness raising activities;
+- At least one big event per year organised to reach a large number of investors, market partners, ministries of education (or other ministries), education establishments, learning content providers, training providers, and other stakeholders in the field.
+
+## Objective
+
+During recent years, the education and training landscape has been significantly impacted by rapid technological advancements. Innovations like generative artificial intelligence (GenAI), robotics, or extended Reality, to name a few examples, have significant power to reshape the way we teach and learn. There is a crucial need to support the Education Technology (EdTech) sector in Europe, and in particular European start-ups and SMEs, to develop innovative solutions and technologies meeting European values in terms of ethics, inclusion, accessibility, privacy, security and strong pedagogical foundations. This is particularly crucial given the fast-developing technological landscape. This topic is expected to contribute to the nurturing of an EdTech ecosystem in Europe that drives innovation, creates jobs, and fuels economic growth, while also ensuring pedagogically driven solutions that reach clear educational outcomes. The purpose of this topic is therefore to assist European EdTech startups and SMEs in transforming concepts for educational solutions into products ready for the market. This topic will also help support the effective and ethical application of GenAI technologies to education and training, in alignment with the objectives of the GENAI4EU initiative.[1]
+
+This call will contribute to the Digital Education Action Plan (2021-2027) and in particular its objective to support the private actors in the digital education ecosystem. This action should also take into consideration previous work done by the Digital Education Hub Accelerator.
+
+1 The ‘GenAI4EU' initiative aims to support the development of novel use cases and emerging applications in Europe's 14 industrial ecosystems, as well as the public sector. Application areas include robotics, health, biotech, manufacturing, mobility, climate and virtual worlds (Commission launches AI innovation package).
+
+## Scope
+
+The scope is to encompass the establishment of an EdTech-specific environment for nurturing and accelerating growth, providing both business guidance and access to markets for chosen startups and SMEs. Additionally, the scope involves streamlining the integration of the supported solutions into the educational and/or training landscape, which includes schools, universities, training facilities, and other informal learning environments. This integration is crucial for empowering end-users, particularly teachers/trainers and students, along with other stakeholders, in the development and application of educational solutions. Furthermore, testing of these solutions in real educational or training settings should be included for obtaining impact assessment data through short-cycle piloting.

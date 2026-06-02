@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "899948",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALDEPEÑAS / AYUNTAMIENTO DE VALDEPEÑAS",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": "2026-04-22",
+  "deadline": "2026-06-10",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 785,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://www.valdepenas.es/festejos/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899948",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.valdepenas.es/festejos/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209419,
+      "titulo": "Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026",
+      "tituloLeng": null,
+      "texto": "<p>Podrán participar en este Concurso todas las personas mayores de edad que lo deseen.El tema será las FIESTAS DE LA VENDIMIA Y EL VINO DE VALDEPEÑAS y la técnica es de libre elección.Se admitirán dos trabajos, como máximo, por cada participante.Cada uno de los trabajos presentados deberá llevar reseñado “LXXIII FIESTAS DE LA VENDIMIA Y EL VINO. VALDEPEÑAS 2026. Declaradas de Interés Turístico”.Las dimensiones de los trabajos presentados deberán ser de 70 x 50 cms</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7502877",
+      "cve": "kLQ/Fiuy+wjJXZrS0tVM",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.411Z"
+}

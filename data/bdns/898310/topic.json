@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898310",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALLADOLID / AYUNTAMIENTO DE VALLADOLID",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "CONVOCATORIA DE SUBVENCIONES A ENTIDADES SIN ÁNIMO DE LUCRO EN MATERIA DE INFANCIA 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 16800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898310",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.valladolid.gob.es/es/tablon-oficial/ayuntamiento-valladolid-tablon-oficial/plan-estrategico-subvenciones-2026-2028",
+  "text_inicio": "DÍA SIGUIENTE A SU PUBLICACIÓN EN EL BOLETÍN OFICIAL DE LA PROVINCI",
+  "text_fin": "UN MES DESDE EL DÍA SIGUIENTE A SU PUBLICACIÓN EN EL BOLETÍN OFICIAL DE LA PROVINCIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.511Z"
+}

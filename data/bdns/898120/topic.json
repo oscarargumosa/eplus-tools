@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "898120",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / NAVAS DEL REY / AYUNTAMIENTO DE NAVAS DEL REY",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "2026-0276 de 13 de febrero de 2026 de la Alcaldía (Ayuntamiento Navas del Rey) por la que se convoca patrocinio para la difusión y publicidad del escudo municipal en los eventos deportivos en los que participa como jugador profesional de pádel.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898120",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://gestiona-09.espublico.com/dossierh.14?x=g8bvrxvPIIr1GVxxNlXAh1WOH1T6u8yIokNwsMfTgnsEuuPGvwGAN7RkkMveUnyjbSQj0alKUiJ4mPDPcMhd-Xbau6QnlD4zI-I6erXLrw9o-RzKuFuz0UFdZBYsSIlO0yfA9AkiFSvjvFRQdTVKv0r*LBarsbCxraHmRuDImgc",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.407Z"
+}

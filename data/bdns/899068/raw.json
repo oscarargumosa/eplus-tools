@@ -1,0 +1,64 @@
+{
+  "id": 1100629,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUADALAJARA",
+    "nivel3": "AYUNTAMIENTO DE GUADALAJARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899068",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "BASES CONVOCATORIA DE SUBVENCIONES A ENTIDADES Y/O ASOCIACIONES SIN ÁNIMO DE LUCRO PARA LA REALIZACIÓN DE ACTIVIDADES DESTINADAS A CONSEGUIR LA IGUALDAD REAL Y EFECTIVA DE LAS MUJERES Y HOMBRES DURANTE EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES424 - Guadalajara"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES CONVOCATORIA DE SUBVENCIONES A ENTIDADES Y/O ASOCIACIONES SIN ÁNIMO DE LUCRO PARA LA REALIZACIÓN DE ACTIVIDADES DESTINADAS A CONSEGUIR LA IGUALDAD REAL Y EFECTIVA DE LAS MUJERES Y HOMBRES DURANTE EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://www.guadalajara.es/es/ayuntamiento/servicios/igualdad/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-20",
+  "fechaFinSolicitud": "2026-05-08",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435953,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases de convocatoria Subvención Igualdad 26.pdf",
+      "long": 339349,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

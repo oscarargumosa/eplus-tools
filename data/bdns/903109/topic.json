@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "903109",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ASPE / AYUNTAMIENTO DE ASPE",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Acuerdo de la Junta de Gobierno Local de fecha 21 de abril de 2026, por el que se aprueba la convocatoria del VIII certamen de pintura rápida.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": "2026-09-01",
+  "deadline": "2026-09-25",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://aspe.es/sede-electronica/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903109",
+  "documents": [
+    {
+      "label": "SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/28_78/2026_002898.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210752,
+      "titulo": "Extracto del Acuerdo de la Junta de Gobierno Local de fecha 21 de abril de 2026, por el que se aprueba la convocatoria del VIII certamen de pintura rápida.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Mayores de 18 años cumplidos en el año 2026 o menores acompañados por un mayor de edad que se acredite.</p><p> </p><p>Segundo. Finalidad:</p><p>Incentivar la creación en el campo de las artes plásticas.</p><p> </p><p>Tercero. Bases reguladoras:</p><p>Bases del VIII certamen de pintura rápida. Publicadas en el Boletín Oficial de la Provincia de Alicante nº. 78, de fecha 28 de abril de 2026.</p><p> </p><p>Cuarto. Importe:</p><p>Cuantía máxima: 3.600€</p><p>CATEGORÍA ADULTOS.  Mayores de 18 años cumplidos en el año 2026. Se conceden tres premios, dotados, respectivamente con 1.500, 1.000 y 500 euros más diploma.</p><p> </p><p>CATEGORÍA ARTISTA LOCAL. Sólo podrán acceder a este premio artistas locales mayores de 18 años cumplidos en el año 2026 empadronados en Aspe con un mínimo de 3 meses de antigüedad. Se concede un único premio de 500 euros más diploma. Para participar en esta modalidad deberán hacerlo constar expresamente en el boletín de inscripción (La administración accederá de oficio a su comprobación por lo que no es necesario presentar certificado de empadronamiento). Las personas que se presenten a la categoría de artista local también podrán participar en la categoría de adultos.</p><p> </p><p>CATEGORÍA JUVENIL/INFANTIL. Podrán participar todas las personas menores de 18 años inscritas que a su vez recibirán un diploma de participación en el VIII Certamen de Pintura Rápida. Se concede 1 premio consistente en un set de material de pintura valorado en 100 €. Las personas menores de 14 años que deseen participar deberán asistir acompañadas por una persona mayor de edad que se acredite.</p><p> </p><p> </p><p>Quinto. Plazo de presentación de solicitudes:</p><p> La inscripción para participar en el premio será gratuita y deberá realizarse por registro de entrada o sede electrónica del ayuntamiento de Aspe a través de una solicitud genérica indicando que desea participar en el VIII Premio de Pintura Rápida Villa de Aspe y adjuntando el boletín de inscripción cumplimentado y firmado. No se aceptarán solicitudes que se realicen sin adjuntar el boletín de inscripción debidamente cumplimentado y firmado. El plazo de inscripción será del 1 al 25 de septiembre. El boletín de inscripción del premio de pintura rápida pueden descargarlo de la web del ayuntamiento de Aspe a través del siguiente link: www.aspe.es/listado-de-modelos/</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.045Z"
+}

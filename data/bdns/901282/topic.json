@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "901282",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LEIOA / AYUNTAMIENTO DE LEIOA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "GIZARTE LARRIALDIETARAKO LAGUNTZAK 2026ko EKITALDIRAKO/ AYUDAS DE EMERGECIA SOCIAL PARA EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": "2026-01-01",
+  "deadline": "2026-11-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 552610,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://udaletxean.leioa.eus/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901282",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Resolución",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "GIZARTE LARRIALDIETARAKO LAGUNTZAK 2026ko EKITALDIRAKO",
+  "text_inicio": "El plazo de solicitud estará abierto durante todo 2026, una vez publicado el extracto en el BOB",
+  "text_fin": "El plazo de presentación de solicitudes terminará el 15 de noviembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.078Z"
+}

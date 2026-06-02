@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "903959",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA DE CIENCIA, EMPRESAS, FORMACIÓN Y EMPLEO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Subvenciones a entidades locales del Principado de Asturias para impulso de Servicios de Dinamización Tecnológica Local durante el año 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1800000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "60.3",
+      "descripcion": "Actividades de las agencias de noticias y otras actividades de distribución de contenidos"
+    },
+    {
+      "codigo": "63.9",
+      "descripcion": "Actividades de portales de búsqueda en la web y otras actividades de servicios de información"
+    },
+    {
+      "codigo": "60.2",
+      "descripcion": "Actividades de programación de televisión, emisión y distribución de vídeos"
+    },
+    {
+      "codigo": "63.1",
+      "descripcion": "Infraestructura informática, procesamiento de datos, hosting y actividades relacionadas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903959",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Resolución modificación bases SDTL",
+      "url": null
+    },
+    {
+      "label": "Resolución bases convocatoria SDTL",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2022/09/14/2022-06909.pdf",
+  "text_inicio": "20 DÍAS HÁBILES",
+  "text_fin": "20 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE PUBLICACIÓN",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.388Z"
+}

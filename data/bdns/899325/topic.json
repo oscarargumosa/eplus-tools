@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "899325",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILANOVA I LA GELTRÚ / AYUNTAMIENTO DE VILANOVA I LA GELTRÚ",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA 2026 DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DESTINADAS A ENTIDADES",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": "2026-04-23",
+  "deadline": "2026-05-07",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 358780.67,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899325",
+  "documents": [
+    {
+      "label": "CERTIFICADO DE ACUERDO",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.vilanova.cat",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209090,
+      "titulo": "CONVOCATORIA 2026 DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DESTINADAS A ENTIDADES",
+      "tituloLeng": "CONVOCATÒRIA 2026 DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA DESTINADES A ENTITATS",
+      "texto": "<p>Beneficiaros de la subvención: Subvenciones destinadas a entidades de Vilanova i la Geltrú.Objeto de la subvención o ayuda: el fomento de las actividades que realizan las entidades del municipio. El objetivo específico de cada una de las subvenciones se concreta en la convocatoria.Bases reguladoras: aprobadas por el Pleno del día 15 de enero de 2024Importe: 215.268,40 € del presupuesto municipal 2026 y 143.512,27 € del presupuesto municipal 2027, en total 358.780,67€.Plazo de presentación de solicitudes: 10 días hábiles a partir del siguiente de la publicación de esta convocatoria en el Boletín Oficial de la Provincia.</p>",
+      "textoLeng": "<p>Beneficiaris de la subvenció: Subvencions destinades a entitats de Vilanova i la Geltrú.Objectiu de la subvenció o ajut: el foment de les activitats que realitzen les entitats del municipi. L’objectiu específic de cadascuna de les subvencions es concreta a la convocatòria.Bases reguladores: aprovades pel Ple del dia 15 de gener de 2024Import: 215.268,40 € del pressupost municipal 2026 i 143.512,27 € del pressupost municipal 2027, en total 358.780,67€.Termini de presentació de sol·licituds: 10 dies hàbils a partir de l’endemà de la publicació d’aquesta convocatòria al Butlletí Oficial de la Província.</p>",
+      "url": "https://bop.diba.cat/anunci/3931019/convocatoria-de-subvencions-destinades-a-entitats-versio-en-catala-i-castella-ajuntament-de-vilanova-i-la-geltru",
+      "cve": "202610077344",
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.952Z"
+}

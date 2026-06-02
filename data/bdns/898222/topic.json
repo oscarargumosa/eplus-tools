@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "898222",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE PALENCIA / DIPUTACIÓN PROVINCIAL DE PALENCIA",
+  "nuts_codes": [
+    "ES414"
+  ],
+  "nuts_primary": "ES414",
+  "title": "Convocatoria de subvenciones a Ayuntamientos de la provincia de Palencia para apertura de Oficinas Municipales de Turismo y Puntos de Información Turística",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 65000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://sede.diputaciondepalencia.es/ ",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898222",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputaciondepalencia.es/system/files/publicacion-pdf/20160530/ordenanza_general_subvenciones_mayo_2014.pdf",
+  "text_inicio": "DÍA SIGUIENTE AL DE PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "text_fin": "QUINCE DÍAS HÁBILES A CONTAR DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208576,
+      "titulo": "Extracto del Decreto de fecha 10 de abril de 2026 de la Presidenta de la Diputación Provincial de Palencia, por el que se convocan subvenciones destinadas a Ayuntamientos de la Provincia de Palencia para Apertura de Oficinas Municipales de Turismo y Puntos de Información Turística",
+      "tituloLeng": null,
+      "texto": "<p>CONVOCATORIA DE SUBVENCIONES A AYUNTAMIENTOS DE LA PROVINCIA DE PALENCIA PARA APERTURA DE OFICINAS MUNICIPALES DE TURISMO Y PUNTOS DE INFORMACIÓN TURÍSTICA.</p><p> </p><p>Primero.- Beneficiarios.-</p><p>Ayuntamientos de municipios de la provincia de Palencia con una población inferior a 20.000 habitantes que gestionen Oficinas Municipales de Turismo y Puntos de Información Turística o en cuya localidad se ubique un punto de información turística.</p><p> </p><p>Segundo.- Objeto.-</p><p>Colaborar económicamente con la Red Provincial de Puntos de Información Turística, en la financiación del gasto corriente –gastos de personal, y funcionamiento– derivado de la apertura de Oficinas Municipales de Turismo y Puntos de Información Turística ubicados en su localidad, siendo obligatoria la apertura del punto de información el fin de semana, es decir, sábado y domingo.</p><p> </p><p>Tercero.- Actuaciones subvencionables.-</p><p>-Retribuciones o remuneraciones del personal de atención al público de la oficina de turismo o punto de información turística.</p><p>-Cuotas correspondientes a la Seguridad Social relativas a la contratación del personal de atención al público de la oficina de turismo o punto de información turística.</p><p>-Gastos de funcionamiento (tales como electricidad, teléfono, conexión a Internet o similares), así como otros gastos imprescindibles para la prestación del servicio de atención al público.</p><p>-Los Ayuntamientos beneficiarios de las subvenciones previstas en estas bases podrán presentar como justificación de las mismas las subvenciones concedidas a los CITs, asociaciones y entidades turísticas sin ánimo de lucro para colaborar en la apertura de puntos de información turística o en su caso, las facturas emitidas por dichas entidades en concepto de prestación del servicio de información turística contratado por el Ayuntamiento.</p><p> </p><p>Cuarto.- Cuantía.-</p><p>El crédito total para esta convocatoria es de 65.000,00 €. El importe de la subvención será el indicado en las bases. </p><p> </p><p>Quinto.- Plazo de presentación de solicitudes.-</p><p>El plazo para la presentación de las solicitudes será de quince días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el Boletín Oficial de la Provincia, prorrogándose dicho plazo hasta el primer día hábil siguiente, cuando el último día sea sábado, domingo o festivo.</p><p> </p><p>Sexto.-</p><p>Los anexos y demás documentación correspondiente a la presente convocatoria estarán a disposición de los interesados en la sede electrónica de la Diputación Provincial de Palencia (https://sede.diputaciondepalencia.es).</p>",
+      "textoLeng": null,
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20260415-bop-45-Ordinario.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE PALENCIA",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.470Z"
+}

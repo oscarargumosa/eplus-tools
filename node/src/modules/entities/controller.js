@@ -2,7 +2,7 @@
    Entities Controller — Partner Engine endpoints
    ═══════════════════════════════════════════════════════════════ */
 
-const m = require('./model');
+const m = require('./backend');
 
 const ok  = (res, data) => res.json({ ok: true, data });
 const err = (res, msg, status = 400) =>
@@ -30,6 +30,30 @@ exports.listSimilar = async (req, res) => {
     const limit = parseInt(req.query.limit, 10) || 3;
     ok(res, await m.listSimilar(req.params.oid, limit));
   } catch (e) { err(res, e.message, 500); }
+};
+
+/* ── Lista completa de proyectos UE de la entidad ────────────────
+   Pass-through al directory-api (que tiene los 317k proyectos en
+   erasmus-pg). El front lo usa en Mi Organización → Experiencia
+   y para futuras vistas de "todos los proyectos por OID". */
+exports.listEntityProjects = async (req, res) => {
+  try {
+    const dir = require('../../utils/directory-api');
+    const limit  = Math.min(parseInt(req.query.limit, 10)  || 300, 1000);
+    const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
+    const resp = await dir.getEntityProjects(req.params.oid, { limit, offset });
+    const projects = Array.isArray(resp?.projects)
+      ? resp.projects
+      : (Array.isArray(resp) ? resp : []);
+    ok(res, {
+      count: typeof resp?.count === 'number' ? resp.count : projects.length,
+      limit,
+      offset,
+      projects,
+    });
+  } catch (e) {
+    err(res, e.message, e.status >= 400 && e.status < 500 ? e.status : 500);
+  }
 };
 
 /* ── Geo markers para el Atlas 3D mundial ────────────────────── */

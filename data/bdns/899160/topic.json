@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "899160",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALBAL / AYUNTAMIENTO DE ALBAL",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Extracto de la resolución 617 de 07/04/2026 por la que se convoca la concesión del remanente de ayuda económica estatal (Real decreto-Ley 7/2024) destinada a personas con daños en vivienda habitual ocasionados por la DANA.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 528510.74,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899160",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://albal.es/content-albal/uploads/2026/04/CONVOCATORIA-DLILIGENCIADA-REMANENTE-MINISTERIO-SEFYCU-7988089.pdf",
+  "text_inicio": "Desde el día siguiente de la publicación de la convocatoria en el BOPV",
+  "text_fin": "Diez días hábiles contados desde el día siguiente de la publicación de la convocatoria en el BOPV",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209552,
+      "titulo": "Extracto de la resolución 617 de 07/04/2026 por la que se convoca la concesión del remanente de ayuda económica estatal (Real decreto-Ley 7/2024) destinada a personas con daños en vivienda habitual ocasionados por la DANA.",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- BeneficiariosTendrán la consideración de personas beneficiarias las personas físicas afectadas residentes en el municipio de Albal y que hayan sufrido daños en su vivienda habitual, mobiliario, enseres, electrodomésticos, ocasionados por las inundaciones acaecidas el 29 de octubre de 2024 que cumplan los requisitos que se establecen en la convocatoria y en la Ley 28/2003, general de Subvenciones.Segundo.- Finalidad y objeto de las ayudas.La presente convocatoria tiene como objeto regular el procedimiento y requisitos para la concesión directa del remanente de la ayuda económica estatal a las personas físicas residentes en el municipio de Albal y que hayan sufrido daños en su vivienda habitual, mobiliario, enseres, electrodomésticos, ocasionados por las inundaciones acontecidas el día 29 de octubre de 2024, a consecuencia del temporal de lluvia y viento producido por la DANA, por importe de 528.510,74 €.Tercero.- Bases reguladorasEn sesión plenaria de 30 de marzo de 2026 se aprobaron BASES ESPECIFICAS DEL PROCEDIMIENTO DE CONCESIÓN DIRECTA DEL REMANENTE DE LA AYUDA ECONÓMICA ESTATAL (REAL DECRETO-LEY 7/2024, DE 11 DE NOVIEMBRE) PARA PERSONAS FÍSICAS BENEFICIARIAS POR DAÑOS EN VIVIENDA HABITUAL OCASIONADOS POR LA DANA.https://albal.es/content-albal/uploads/2026/04/CONVOCATORIA-DLILIGENCIADA-REMANENTE-MINISTERIO-SEFYCU-7988089.pdfCuarto. Dotación presupuestariaQuinientos veintiocho mil quinientos diez euros con setenta y cuatro céntimos (528.510,74 €.) con cargo a la aplicación presupuestaria N.º 410 2311 480699, S. SOCIALES: AYUDAS MINISTERIO.Quinto.- Plazo de presentación de solicitudesEl plazo de presentación de solicitudes se extenderá entre el día siguiente a la publicación en el Boletín Oficial de la Provincia de la pertinente convocatoria, y los siguientes 10 días hábiles.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04753&lang=es",
+      "cve": "BOPV-2026/04753",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.847Z"
+}

@@ -1,0 +1,18 @@
+## Expected Outcome
+
+Project results are expected to contribute to all the following expected outcomes:
+- Improved energy security of the energy system by offering cost-effective and efficient solutions for additional diverse and flexible energy storage capacities.
+- Improve the sustainability and circularity of energy storage systems.
+- Enhanced economic viability of energy storage by utilizing existing infrastructures.
+
+## Scope
+
+Demonstration of novel or improved technological solutions for cost-efficient, circular and sustainable energy storage, which contribute to grid flexibility and make use of existing obsolete or outdated energy or other infrastructures. Proposals should integrate the synergies between novel or improved energy storage technologies and retrofitting of obsolete or outdated infrastructures, like e.g. old hydropower dams and basins, decommissioned power plants, former industrial facilities, coal mines, fossil fuel infrastructure etc. by optimizing at the same time storage capacity and efficiency as well as circularity and socioeconomic and environmental sustainability, which should be addressed, e.g. by stakeholder outreach and consideration of possible environmental impacts. Furthermore, proposals should follow secure by design approach and integrate built-in security in the energy systems.
+
+Selected projects are expected to contribute to the BRIDGE initiative[1] and actively participate in its activities.
+
+## null
+
+Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
+
+[1] https://bridge-smart-grid-storage-systems-digital-projects.ec.europa.eu/

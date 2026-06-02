@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "898658",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COLLBATÓ / AYUNTAMIENTO DE COLLBATÓ",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA SUBVENCIONES CONCURRENCIA 2026 - DEPORTES",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898658",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "CERT. JGL APROVACIÓ CONVOCATÒRIA SUBVENCIONS CONCURRÈNCIA 2026 ESPORTS 4_26",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3589778/aprovacio-definitiva-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-en-materia-de-foment-de-la-cultura-educacio-esports-igualtat-i-diversitat-per-a-l-exercici-2024-2025-2026-i-2027-ajuntament-de-collbato",
+  "text_inicio": "Los solicitantes podrán presentar las solicitudes en el plazo de veinte días desde el día siguiente",
+  "text_fin": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.640Z"
+}

@@ -1,0 +1,99 @@
+{
+  "id": 1105179,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE CASTELLÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/castellon",
+  "codigoBDNS": "903618",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22046.28,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS A PYMES DE LA PROVINCIA DE CASTELLÓN PARA LA PARTICIPACION EN MISIÓN COMERCIAL A EGIPTO, DEL 19 AL 23 DE JULIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS A PYMES DE LA PROVINCIA DE CASTELLÓN PARA LA PARTICIPACION EN MISIÓN COMERCIAL A EGIPTO, DEL 19 AL 23 DE JULIO 2026",
+  "urlBasesReguladoras": "https://www.camaracastellon.com/es/mc-egipto",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Transcurridos  2 días hábiles desde el día siguiente a la publicación",
+  "textFin": "Hasta el 22 de mayo a las 14:00h ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448842,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Convocatoria de ayudas Pyme Global-MD Egipto.pdf",
+      "long": 383867,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448847,
+      "descripcion": "Anexo III Modelo solicitud admisión",
+      "nombreFic": "2026_Anexo III_Modelo de Solicitud admisión segundo participante.pdf",
+      "long": 1275212,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448846,
+      "descripcion": "Anexo II Declaración responsable",
+      "nombreFic": "2026_Anexo II_Declaración responsable empresa Pyme Global.pdf",
+      "long": 456612,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448844,
+      "descripcion": "Anexo I Tipologia  gastos elegibles",
+      "nombreFic": "2026_Anexo I_Tipologia Gastos Elegibles y Justificación empresa beneficiaria.pdf",
+      "long": 417484,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

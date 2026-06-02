@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "902152",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA Y LEÓN / CONSEJERÍA DE MEDIO AMBIENTE, VIVIENDA Y ORDENACIÓN DEL TERRITORIO",
+  "nuts_codes": [
+    "ES41"
+  ],
+  "nuts_primary": "ES41",
+  "title": "Orden de 28 de abril de la Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio por la que se convocan subvenciones destinadas a la financiación de actuaciones innovadoras de educación ambiental en Castilla y León",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": "2026-05-01",
+  "deadline": "2026-06-01",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 328000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    }
+  ],
+  "apply_url": "https://www.tramitacastillayleon.jcyl.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902152",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2025/12/15/pdf/BOCYL-D-15122025-15.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210344,
+      "titulo": "Extracto de la Orden de 28 de abril 2026, de la Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio, por la que se convocan, subvenciones destinadas a la financiación de actuaciones innovadoras de educación ambiental",
+      "tituloLeng": null,
+      "texto": "<p>Asimismo, la convocatoria puede consultarse en la sede electrónica de la Administración de la Comunidad de Castilla y León (https://www.tramitacastillayleon.jcyl.es) utilizando el identificador BDNS.</p><p>Primero.- Objeto.</p><p>Convocar, en régimen de concurrencia competitiva, subvenciones destinadas a la financiación de actuaciones innovadoras en materia de educación ambiental en Castilla y León.</p><p>Segundo.- Beneficiarios.</p><p>1. Podrán obtener la condición de beneficiarios de las subvenciones que se convocan en la presente orden:</p><p>Ayuntamientos y mancomunidades de menos de 20.000 habitantes de Castilla y León.</p><p>Para la determinación de la población se tomarán como referencia las cifras oficiales de población resultantes de la revisión del Padrón Municipal a 1 de enero de 2025 del Instituto Nacional de Estadística. En el caso de las mancomunidades se determinará mediante la suma de la población de todos los municipios que la integren.</p><p>Entidades y asociaciones sin ánimo de lucro, de ámbito privado, válidamente constituidas, que tengan en Castilla y León su domicilio social. Podrán ser beneficiarias igualmente las que acrediten disponer de un centro de trabajo en Castilla y León desde el que desarrollen programas o actividades de educación ambiental dirigidas a la población de la Comunidad Autónoma.</p><p>2. Las entidades beneficiarias estarán sujetas a las obligaciones que, con carácter general, se establecen en el artículo 14 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones.</p><p>Tercero.- Bases reguladoras.</p><p>Mediante ORDEN MAV/1408/2025, de 4 de diciembre, por la que se aprueban las bases reguladoras para la concesión de subvenciones destinadas a la financiación de actuaciones innovadoras de educación ambiental en Castilla y León, publicada en el Boletín Oficial de Castilla y León n.º 240, de 15 de diciembre de 2025, se establecieron las bases reguladoras de esta convocatoria.</p><p>Cuarto.- Cuantía.</p><p>Las subvenciones que se otorguen de esta convocatoria lo serán con cargo a los Presupuestos Generales de la Comunidad de Castilla y León por un importe de 328.000 euros</p><p>El crédito correspondiente a esta convocatoria podrá ser ampliado en una cuantía adicional no superior al 100% de los créditos inicialmente convocados, cuya aplicación a la concesión de las subvenciones no requerirá de una nueva convocatoria ni ampliación ni apertura de plazo para la presentación de solicitudes, de acuerdo con el artículo 16.3 de la Ley 5/2008, de 25 de septiembre. </p><p>Quinto.- Plazo de presentación de solicitudes.</p><p>El plazo para la presentación de las solicitudes será de un mes desde el día siguiente a la publicación de este extracto de la convocatoria en el Boletín Oficial de Castilla y León.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/30/pdf/BOCYL-D-30042026-81-15.pdf",
+      "cve": "BOCYL-D-30042026-81-15",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.548Z"
+}

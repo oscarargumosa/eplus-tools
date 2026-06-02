@@ -1,0 +1,64 @@
+{
+  "id": 1102015,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BERRIOPLANO/BERRIOBEITI",
+    "nivel3": "AYUNTAMIENTO DE BERRIOPLANO"
+  },
+  "sedeElectronica": "https://sedeelectronica.berrioplano.es/",
+  "codigoBDNS": "900454",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA CONCEJOS PERTENECIENTES AL MUNICIPIO DE BERRIOPLANO, CON FINES DE MANTENIMIENTO Y EXPLOTACIÓN DEL PATRIMONIO FORESTAL Y LA CONSERVACION MEDIOAMBIENTAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Silvicultura y explotación forestal",
+      "codigo": "02"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "SUBVENCIONES PARA CONCEJOS PERTENECIENTES AL AYUNTAMIENTO DE BERRIOPLANO, CON FINES DE MANTENIMIENTO Y EXPLOTACIÓN DEL PATRIMONIO FORESTAL Y LA CONSERVACION MEDIOAMBIENTAL",
+  "urlBasesReguladoras": "www.berrioplano.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "22/04/2026",
+  "textFin": "22/05/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439827,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA SUBVENCION CONCEJOS ACTUAC. FORESTALES.pdf",
+      "long": 582661,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

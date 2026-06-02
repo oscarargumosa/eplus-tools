@@ -1,0 +1,88 @@
+{
+  "id": 1099876,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898315",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Orden de 31 de marzo de 2026 por la que se establecen las bases reguladoras y se convocan ayudas de movilidad complementarias en el marco del programa Erasmus+, para enseñanzas artísticas superiores en centros públicos de Galicia 2025/26 ",
+  "descripcionLeng": "Orde de 31 de marzo de 2026 pola que se establecen as bases reguladoras e se convocan axudas de mobilidade complementarias no marco do programa Erasmus+, para ensinanzas artísticas superiores nos centros públicos de Galicia 2025/26",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN BASES REGULADORAS Y CONVOCATORIA DE AYUDAS COMPLEMENTARIAS ERASMUS+ PARA ALUMNADO DE ENSEÑANZAS ARTÍSTICAS SUPERIORES CURSO 25-26",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dende o día seguinte á publicación da convocatoria",
+  "textFin": "Un mes desde o día seguinte á publicación da convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433896,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Orden ED322A 25-26_DOG_ESP_20260413_111015.pdf",
+      "long": 255644,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433899,
+      "descripcion": "ANEXOS EN GALEGO",
+      "nombreFic": "G0761-310326-0002_gal_20260413_111423.pdf",
+      "long": 102625,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433898,
+      "descripcion": "ANEXOS EN CASTELÁN",
+      "nombreFic": "G0761-310326-0002_cas_20260413_111308.pdf",
+      "long": 106578,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433897,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Orde ED322A 25-26 GAL DOG_20260413_111059.pdf",
+      "long": 253927,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

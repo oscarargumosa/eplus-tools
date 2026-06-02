@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897861",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCOBENDAS / AYUNTAMIENTO DE ALCOBENDAS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVOCATORIA PARA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA A OTORGAR POR EL AYUNTAMIENTO DE ALCOBENDAS A ASOCIACIONES DEL ÁMBITO DE LA PROTECCIÓN SOCIAL Y MAYORES PARA 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 23651,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": "www.alcobendas.org",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897861",
+  "documents": [
+    {
+      "label": "Extracto del decreto Nº 5528 de 07 de ABRIL de 2026",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.alcobendas.org/sites/default/files/2021-01/Ordenanza%20Municipal%20Reguladora%20de%20las%20Subvenciones%20de%20Fomento%20el%20Asociacionismo%20y%20la%20Participaci%C3%B3n%20Ciudadana%20del%20Ayuntamiento%20de%20Alcobendas.pdf",
+  "text_inicio": "Día siguiente a su publicación en BOCM de este extracto",
+  "text_fin": "15 días naturales a partir del día siguiente a su publicación en BOCM de este extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208340,
+      "titulo": "Extracto del decreto Nº 5528 de 07 de ABRIL de 2026 del Ayuntamiento de  Alcobendas por el que se convoca las subvenciones del ámbito protección social y mayores  para 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Extracto del decreto Nº 5528 de 07 de ABRIL de 2026 del Ayuntamiento de Alcobendas por el que se convoca las subvenciones del ámbito protección social y mayores para 2026. \n\nPrimero. Beneficiarios:  Podrán solicitar subvención las asociaciones y entidades sin ánimo de lucro inscritas en el Registro de Asociaciones, Fundaciones y entidades análogas \ndel Ayuntamiento de Alcobendas, que tengan un fin social y que desarrollen proyectos en el ámbito de Protección Social y Mayores.  \n\nSegundo. Finalidad: \n\n• Protección Social: \no Actividades promovidas por asociaciones dirigidas a la atención de personas con discapacidad y específicamente las de rehabilitación, apoyo \npsicosocial y grupos de autoayuda. \no Actividades que favorezcan su integración y participación en la vida social, así como las que promuevan la autonomía personal, bienestar social de las familias y calidad de vida de las personas con discapacidad. \n\n• Mayores: \no Actividades que promuevan el asociacionismo y la participación de las personas mayores en la vida social del municipio. \no Actividades que potencien la convivencia, socialización, creatividad, desarrollo personal, bienestar social y calidad de vida de los mayores asociados.  \n\nTercero. Bases reguladoras: Ordenanza Municipal Reguladora de las Subvenciones de Fomento del Asociacionismo y la Participación Ciudadana del Ayuntamiento de Alcobendas \n(BOCM 20/02/2009).  \n\nCuarto. Cuantía: importe de veintitrés mil seiscientos cincuenta y un euros (23.651,00 €). \n\nQuinto. Las solicitudes de subvención y el resto de documentación exigida por la Ordenanza a la que se hace referencia en el Base 2 de esta Convocatoria se presentarán,  dentro del plazo de 15 días naturales, a partir del día siguiente de la publicación de esta convocatoria del Ayuntamiento de Alcobendas en el BOCM y en la Base de Datos Nacional de Subvenciones. Se informará de esta convocatoria en la página web del Ayuntamiento de Alcobendas, www.alcobendas.org.</p>",
+      "textoLeng": null,
+      "url": "https://www.bocm.es/bocm-20260421-34",
+      "cve": null,
+      "desDiarioOficial": "BOCM. B.O. DE LA COMUNIDAD DE MADRID",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.224Z"
+}

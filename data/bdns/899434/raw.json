@@ -1,0 +1,76 @@
+{
+  "id": 1100995,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ELORRIO",
+    "nivel3": "AYUNTAMIENTO DE ELORRIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899434",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Subvención del Ayuntamiento de Elorrio para el uso del transporte público urbano de viajeros y viajeras realizado en vehículos de turismo, programa Auzo-taxi 2026 (expediente 2026-00636)",
+  "descripcionLeng": "Elorrioko Udalak herri barruan kotxez garraiatzeko zerbitzu publikoa erabiltzeagatik, Auzo-taxi 2026 programarako dirulaguntza  (2026-00636 espedientea)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Subvenciones para el programa Auzo-taxi",
+  "urlBasesReguladoras": "https://www.elorrio.eus/es-ES/Ayuntamiento/Secretaria/Subvenciones/Accion_Social/Paginas/SubvencionesparaelprogramaAuzo-taxi.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial de Bizkaia.",
+  "textFin": "31 de diciembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437122,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "0 BAO iragarkirako_2026-00636 ESP.pdf",
+      "long": 576651,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437123,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "0 BAO iragarkirako_2026-00636 EUS.pdf",
+      "long": 547998,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

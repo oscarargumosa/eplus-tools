@@ -1,0 +1,72 @@
+{
+  "id": 1103461,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SEGOVIA",
+    "nivel3": "INSTITUTO MUNICIPAL DE DEPORTES DEL AYUNTAMIENTO DE SEGOVIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901900",
+  "fechaRecepcion": "2026-04-27",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas a deportistas individuales con motivo del desarrollo de su actividad deportiva durante el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES416 - Segovia"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Ordenanza de Bases Reguladora Generales para la Concesión de subvenciones del Ayuntamiento de Segovia (BOP Segovia nº 31, de fecha 12 de marzo de 2025)",
+  "urlBasesReguladoras": "https://www.imdsg.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente publicación Boletín Oficial de la Provincia de Segovia",
+  "textFin": "Quince días naturales contados desde el siguiente a la publicación de las bases en el BOP Segovia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443691,
+      "descripcion": "Modelos solicitud conv ayuda dep individuales 2026",
+      "nombreFic": "00 01 Anexo I Modelo solicitud ay dep indv 26.docx.pdf",
+      "long": 516479,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443690,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "00 00 Bases Convocatoria Ayuda dep ind 26.pdf",
+      "long": 333442,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

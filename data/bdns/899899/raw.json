@@ -1,0 +1,72 @@
+{
+  "id": 1101460,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE LA PALMA",
+    "nivel3": "EXCMO. CABILDO INSULAR DE LA PALMA"
+  },
+  "sedeElectronica": "https://sedeelectronica.cabildodelapalma.es",
+  "codigoBDNS": "899899",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA SUBVENCION ADQUISICIÓN DE VEHÍCULOS PARA SU DESTINO A TAXIS ELÉCTRICOS O HÍBRIDOS ENCHUFABLES EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción, transporte y distribución de energía eléctrica",
+      "codigo": "35.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES707 - La Palma"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "BBRR CONCESIÓN  SUBV  PARA ASQUISICIÓN DE VEHÍCULOS PARA SU DESTINO A TAXIS ELÉCTRICOS O HÍBRIDOS ENCHUFABLES",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/boletines/2021/31-05-21/31-05-21.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al día siguiente de la publicación del extracto de convocatoria en el BOP",
+  "textFin": "20 días hábiles desde el día siguiente al de la publicación extracto de convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438451,
+      "descripcion": "Resolución Consejero/a de Industria y Energía",
+      "nombreFic": "Resolución Consejero/a de Industria y Energía.PDF",
+      "long": 312105,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438450,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento Convocatoria.PDF",
+      "long": 155505,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

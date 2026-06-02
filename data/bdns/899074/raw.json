@@ -1,0 +1,88 @@
+{
+  "id": 1100635,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN SEBASTIÁN DE LOS REYES",
+    "nivel3": "AYUNTAMIENTO DE SAN SEBASTIÁN DE LOS REYES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899074",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras y convocatoria de ayudas de comedor escolar y ayudas destinadas a la compra de material escolar para el curso 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras y convocatoria de ayudas de comedor escolar y ayudas destinadas a la compra de material escolar para el curso 2026/2027",
+  "urlBasesReguladoras": "https://www.bocm.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Ayudas comedor y material escolar",
+  "textFin": "Ayudas comedor y material escolar",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437934,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Diligencias_bases.pdf",
+      "long": 553423,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437937,
+      "descripcion": "Declaración jurada",
+      "nombreFic": "Anexo_III_-_Declaración_jurada.pdf",
+      "long": 121504,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437936,
+      "descripcion": "Consentimiento AEAT",
+      "nombreFic": "Anexo_II_-_Consentimiento_AEAT.pdf",
+      "long": 122370,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437935,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "Anexo_I_-_Solicitud.pdf",
+      "long": 179538,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

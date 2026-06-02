@@ -1,0 +1,28 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- EU and national policymakers promote and protect human rights and gender equality globally by developing and implementing effective mechanisms for investigating and prosecuting international crimes, and cooperation frameworks with third countries to ensure humanitarian assistance, security, and respect for international law.
+- Organisations in the EU Enlargement, Neighbourhood[1] and low- and lower middle-income countries empower groups in a vulnerable situation and excluded or marginalized individuals, including, by promoting and protecting human rights and gender equality, providing essential services, and advocating for policy changes that advance equality and social justice, through enhanced capacity, awareness, strengthened partnerships, and effective reporting of human rights abuses.
+- EU and national policymakers integrate human rights considerations into trade policies and practices, ensuring that trade agreements, supply chains, and labour standards promote human dignity, equality, fairness and well-being, and prevent human rights abuses.
+
+## Scope
+
+The promotion of human rights and gender and age equality is a pressing concern for the European Union in today's multipolar world, where vulnerable groups in a vulnerable situation and excluded or marginalized individuals, including ethnic and religious minorities, people with disabilities, migrants, as well as women, and LGBTIQ people, face persecution, discrimination, and violence. The EU's response to these issues is influenced also by the complexities of global governance, trade, human rights and rule of law, and geopolitical interests.
+
+The EU's values and human rights are being tested in a global context, where trade policies, supply chains, and labour rights are increasingly intertwined. The impact of sanctions and trade, conditionality, and other measures on human rights is unclear, and the role of national and international courts and international organisations in promoting accountability is uncertain and increasingly contested.
+
+Moreover, the EU's external actions and Member States’ foreign policies have internal consequences, for instance undermining their democratic reputation and values if they are perceived as inconsistent or hypocritical, or producing negative impacts on European enterprises in terms of access to markets or to critical raw materials. For groups, such as refugees, women, LGBTIQ people, elderly persons, and indigenous peoples, who are already subject to various types of exclusion and discrimination and who might be further disenfranchised by the EU's foreign policy, this is particularly problematic.
+
+There is a need for research (including by SSH disciplines) to better understand these complex relationships and to identify innovative approaches to promoting and protecting human rights and gender equality. This includes examining the impact of trade policies and investments policies on human rights (including Global Gateway infrastructure investment strategy), and on the perception of the EU as a values-based actor, developing effective diplomatic strategies and cooperation frameworks, and investigating the role of national courts and international organisations in promoting accountability.
+
+Proposals may also incorporate participatory research approaches to enhance inclusivity and stakeholder engagement.
+
+Proposals are encouraged to identify other relevant EU-funded projects related to EU democracy support, civil society engagement, and international cooperation on sustainable peace and democratic governance, and to explore potential collaboration opportunities with them.
+
+The geographical scope of this research should include the EU Neighbourhood[2] and low- and lower middle-income countries[3], with a focus on the Western Balkan and the accession countries. International cooperation is strongly encouraged.
+
+[1] In the context of this call, the “EU Neighbourhood” is understood as the group of countries covered by the European Neighbourhood Policy (ENP), which includes countries to the East (Armenia, Azerbaijan, Belarus, Georgia, Moldova, and Ukraine) and to the South (Algeria, Egypt, Israel, Jordan, Lebanon, Libya, Morocco, Palestine, Syria, and Tunisia). For more information: https://enlargement.ec.europa.eu/european-neighbourhood-policy_en and https://north-africa-middle-east-gulf.ec.europa.eu/what-we-do/southern-neighbourhood_en
+
+[2]  In the context of this call, the “EU Neighbourhood” is understood as the group of countries covered by the European Neighbourhood Policy (ENP), which includes countries to the East (Armenia, Azerbaijan, Belarus, Georgia, Moldova, and Ukraine) and to the South (Algeria, Egypt, Israel, Jordan, Lebanon, Libya, Morocco, Palestine, Syria, and Tunisia). For more information: https://enlargement.ec.europa.eu/european-neighbourhood-policy_en and https://north-africa-middle-east-gulf.ec.europa.eu/what-we-do/southern-neighbourhood_en
+
+[3]  In the context of this call “low-income and low-middle income countries” are understood as the low to middle income non-associated third countries in the list of participating countries according to the Horizon Europe rules for participation and proposal procedure. Source: European Commission, “List of Participating Countries in Horizon Europe,” Version 5.3 (24.01.2024), p. 3. Available at: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf

@@ -1,0 +1,84 @@
+{
+  "id": 1100828,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALGORFA",
+    "nivel3": "AYUNTAMIENTO DE ALGORFA"
+  },
+  "sedeElectronica": "https://algorfa.sedelectronica.es/",
+  "codigoBDNS": "899267",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 26 de marzo de 2026, del Pleno del Excmo. Ayuntamiento de Algorfa por el que se convocan ayudas destinadas a alumnos de Algorfa que cursen estudios universitarios en el Curso 2025/2026, para coadyuvar a los gastos derivados del transporte.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA DE AYUDAS A ALUMNOS RESIDENTES EN EL MUNICIPIO DE ALGORFA PARA EL TRANSPORTE A LOS CENTROS UNIVERSITARIOS DURANTE EL CURSO 2025/2026. ANUALIDAD 2026.",
+  "urlBasesReguladoras": "https://algorfa.sedelectronica.es/board/975b37c8-f59b-11de-b600-00237da12c6a/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "UN MES DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436644,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES Convocatoria de ayudas Transporte Universitario Anualidad 2026 Curso 2025-2026.pdf",
+      "long": 240276,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436646,
+      "descripcion": "Anexo I",
+      "nombreFic": "Anexo I-Solicitud.docx",
+      "long": 79583,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436704,
+      "descripcion": "Acuerdo de aprobación",
+      "nombreFic": "CERTIFICADO 2026-0063 [Certificado Pleno 26-03-2026].pdf",
+      "long": 382031,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

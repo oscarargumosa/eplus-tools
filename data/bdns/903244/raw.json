@@ -1,0 +1,81 @@
+{
+  "id": 1104805,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ESPLUGUES DE LLOBREGAT",
+    "nivel3": "AYUNTAMIENTO DE ESPLUGUES DE LLOBREGAT"
+  },
+  "sedeElectronica": "https://sede.esplugues.cat/portal/literal.do?opc_id=10094&pes_cod=8&ent_id=1&idioma=1",
+  "codigoBDNS": "903244",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7050,
+  "mrr": false,
+  "descripcion": "Concurso Subvenciones Carnaval 2026",
+  "descripcionLeng": "Concurs Subvencions Carnaval 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BBRR SUBVENCIONS 2026",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3900342/aprovacio-inicial-de-les-bases-especifiques-reguladores-de-l-atorgament-de-subvencions-ajuntament-d-esplugues-de-llobregat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-11",
+  "fechaFinSolicitud": "2026-05-22",
+  "textInicio": "APERTURA SUBVENCIONES 2026",
+  "textFin": "CIERRE SUBVENCIONES 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447722,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_CONCURS_SUBVENCIONS_CARNAVAL_2026_cat.docx",
+      "long": 32013,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447721,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_CONCURS_SUBVENCIONS_CARNAVAL_2026_cas.docx",
+      "long": 30721,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

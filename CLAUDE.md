@@ -1,5 +1,18 @@
 # E+ Tools — Reglas para Claude Code
 
+## Tareas pendientes
+
+Lista canónica de trabajo pendiente coordinado entre sesiones: **`docs/PENDING.md`**.
+Cuando Oscar pregunte "¿qué tareas tenemos pendientes?", abrir ese fichero antes de cualquier otra cosa. Cuando se cierre una tarea, mover a §3 con fecha. Cuando se planifique una nueva, añadir a §1 o §2 con doc canónico en `docs/` si aplica.
+
+## Buzones Local <-> VPS
+
+Comunicación asíncrona entre Claude Local (PC) y Claude VPS:
+- `docs/handoffs/PARA_VPS.md` — Local escribe, VPS lee
+- `docs/handoffs/PARA_LOCAL.md` — VPS escribe, Local lee
+
+**Al arrancar sesión, leer ambos ficheros.** Cuando se responda, añadir entrada con cabecera `## YYYY-MM-DD · <asunto>` al final del fichero correspondiente; las entradas viejas se conservan como histórico. No borrar mensajes recibidos: marcar como respondidos referenciando la entrada en la respuesta. Igual patrón que el buzón con Ana en `designer-projects/`.
+
 ## Protocolo de ramas
 
 Este repo tiene dos Claudes trabajando en paralelo, cada uno en su rama:

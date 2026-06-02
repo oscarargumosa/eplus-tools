@@ -1,0 +1,64 @@
+{
+  "id": 1102286,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL INSULAR D’EIVISSA",
+    "nivel3": "CONSELL INSULAR DE IBIZA"
+  },
+  "sedeElectronica": "seu.conselldeivissa.es",
+  "codigoBDNS": "900725",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 130000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para la concesión de ayudas económicas para el mantenimiento y la gestión de las bibliotecas de la Red de Bibliotecas del Consejo Insular de Ibiza entre el 1 de octubre de 2025 y el 30 de septiembre de 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES531 - Eivissa y Formentera"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "PLAN ESTRATÉGICO DE SUBVENCIONES DEL CONSEJO INSULAR DE IBIZA PARA EL PERÍODO 2026-2028",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2026/12212/710417/aprobacion-del-plan-estrategico-de-subvenciones-de",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-24",
+  "fechaFinSolicitud": "2026-05-11",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440518,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "PLA ESTRATEGIC DE SUBVENCIONS 2026-2028.pdf",
+      "long": 551957,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

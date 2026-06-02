@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "902040",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE HUELVA",
+  "nuts_codes": [
+    "ES615"
+  ],
+  "nuts_primary": "ES615",
+  "title": "Convocatoria de Ayudas para cursar estudios de español como Lengua Extranjera en la Summer School Huelva 2026.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 8800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://app.santanderopenacademy.com/es/program/summerschool-huelva- 2026",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902040",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.juntadeandalucia.es/boja/2026/59/s51",
+  "text_inicio": "Al día siguiente de la publicación de la presente convocatoria en BOJA.",
+  "text_fin": "20 días hábiles siguientes a su publicación en BOJA.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.470Z"
+}

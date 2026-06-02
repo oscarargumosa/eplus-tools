@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "898713",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / QUART DE POBLET / AYUNTAMIENTO DE QUART DE POBLET",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "BASES DE BECAS INDIVIDUALES A DEPORTISTAS JÓVENES DE QUART DE POBLET EN EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898713",
+  "documents": [
+    {
+      "label": "Certificado de Acuerdo de Junta de Gobierno Local",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208776,
+      "titulo": "CONVOCATORIA DE BECAS INDIVIDUALES A DEPORTISTAS JÓVENES DE QUART DE POBLET EN EL EJERCICIO 2026",
+      "tituloLeng": null,
+      "texto": "<p>El objeto de la presente convocatoria es la concesión de becas individuales a deportistas jóvenes de Quart de Poblet en el ejercicio 2026, el crédito presupuestario para la presente convocatoria es de 10.000€ que se encuentra previsto en la partida 341.481.00 del presupuesto del Ayuntamiento de Quart de Poblet para el ejercicio de 2025.</p><p>El Plazo de presentación de solicitudes: 20 días naturales a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de la Provincia.</p><p>En Quart de Poblet, la Alcaldesa, Cristina Mora Luján.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04846&lang=es",
+      "cve": "BOPV-2026/04846",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.657Z"
+}

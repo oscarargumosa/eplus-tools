@@ -1,0 +1,72 @@
+{
+  "id": 1102955,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AZKOITIA",
+    "nivel3": "AYUNTAMIENTO DE AZKOITIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901394",
+  "fechaRecepcion": "2026-04-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Conceder subvenciones a clubes deportivos y asociaciones sin ánimo de lucro de Azkoitia para la participación en competiciones extraordinarias fuera de la CAPV.",
+  "descripcionLeng": "Irabazi-asmorik gabeko Azkoitiko kirol talde zein elkarteei diru-laguntzak ematea EAE-tik kanpoko ez-ohiko txapelketetan parte-hartzeko. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases específicas para la concesión de subvenciones por actividad habitual a las asociaciones deportivas del Municipio de Azkoitia.",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/02/25/c2501168.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2027-02-28",
+  "textInicio": "al día siguiente de su publicación en el boletín oficial de Gipuzkoa",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442181,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Iragarkia Punt 3.pdf",
+      "long": 173932,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    },
+    {
+      "id": 1442179,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Iragarkia Punt 3.pdf",
+      "long": 173932,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

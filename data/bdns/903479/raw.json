@@ -1,0 +1,72 @@
+{
+  "id": 1105040,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILA-SECA",
+    "nivel3": "AYUNTAMIENTO DE VILA-SECA"
+  },
+  "sedeElectronica": "https://vila-seca.eadministracio.cat/info.0",
+  "codigoBDNS": "903479",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DEL AREA DE SERVICIOS AL TERRITORIO PARA EL AÑO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS DE L’ÀREA DE SERVEIS AL TERRITORI PER A L’ANY 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de construcción especializada",
+      "codigo": "43"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "1. Pintura y rehabilitación de fachadas. 2 Supresión de barreras arquitectónicas, instalación de ascensores o sillas salvaescaleras. 3.Instalación de placas fotovoltaicas y sus equipos. 4.Instalación de placas fotovoltaicas para autoconsumo",
+  "urlBasesReguladoras": "https://seu-e.cat/ca/web/vilaseca/govern-obert-i-transparencia/contractes-convenis-i-subvencions/convenis-i-subvencions/procediment-per-a-la-sol-licitud-de-subvencions-186",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación de la convocatoria",
+  "textFin": "31/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448562,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260504_Certificat d'acord.pdf",
+      "long": 1138557,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448561,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260505_CERTIFICADO CASTELLANO.pdf",
+      "long": 269760,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

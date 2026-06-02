@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "899447",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AYALA/AIARA / AYUNTAMIENTO DE AYALA/AIARA",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "CONCESIÓN DE AYUDAS A FAMILIAS PARA EL PAGO DE LAS CUOTAS DE SOCIO (INDIVIDUAL O FAMILIAR) DE LOS POLIDEPORTIVOS MUNICIPALES DE LOS AYUNTAMIENTOS DE LA CAPV, AÑO 2026",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://udalenegoitza.araba.eus/aiara/web/inicioWebc.do?opcion=noreg&entidad=AYALA",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899447",
+  "documents": [
+    {
+      "label": "3.03 SOLICITUD DE SUBVENCION A LAS FAMILIAS PARA EL PAGO DE LAS CUOTAS DE SOCIO DE LOS POLIDEPORTIVOS MUNICIPALES",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.araba.eus/botha/Boletines/2020/010/2020_010_00133_C.pdf",
+  "text_inicio": "Treinta días (30) naturales a partir de la publicación de las bases en el BOTHA",
+  "text_fin": "Treinta días (30) naturales a partir de la publicación de las bases en el BOTHA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209156,
+      "titulo": "Extracto del Decreto de fecha 16 de abril de 2026 dictado por el Alcalde del Ayuntamiento de Ayala por el que se convocan ayudas a familias para el pago de las cuotas de socio/a (individual o familiar) de los polideportivos municipales de los ayuntamientos de la Comunidad Autónoma del País Vasco, año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: beneficiarios</p><p>Personas empadronadas en el municipio de Ayala en el momento de la inscripción en la actividad y que haya estado empadronadas en el municipio de Ayala desde al menos un periodo no interrumpido de seis meses anteriores a la fecha de inicio de la actividad a subvencionar y que cumplan los requisitos fijados en las bases.</p><p>En el caso de los menores, la persona solicitante de la ayuda será el padre, madre o tutor legal del menor que realice la actividad a subvencionar.</p><p>Segundo: objeto</p><p>La presente convocatoria tiene por objeto ayudar a sufragar los gastos ocasionados durante el año 2025 por el pago de cuotas que las personas empadronadas en Ayala abonan por ser socios con carácter individual o familiar de cualquier polideportivo municipal de alguno de los ayuntamientos de la CAPV y que no sean ofrecidas por el Ayuntamiento de Ayala.</p><p>En ningún caso estarán incluidas las actividades deportivas u otros usos que se presten en las instalaciones.</p><p>Tercero: bases reguladoras</p><p>Las bases reguladoras de la concesión de estas subvenciones han sido aprobadas por Decreto de Alcaldía número 2026-228 de fecha 16 de abril de 2026, siendo publicadas en el BOTHA.</p><p>Asimismo, las bases reguladoras de la concesión de estas subvenciones están contenidas en la ordenanza reguladora de la concesión de ayudas a familias para el pago de las cuotas de socio (individual o familiar) de los polideportivos municipales de los ayuntamientos de la CAPV, aprobada por el Ayuntamiento de Ayala y publicada en el BOTHA número 10, del 27 de enero de 2020.</p><p>Las bases y el modelo de solicitud normalizado están disponible en la página web del Ayuntamiento de Ayala: www.aiarakoudala.eus.</p><p>Cuarto: cuantía</p><p>La dotación económica de la presente convocatoria es de 1.000 euros.</p><p>El importe objeto de subvención será como máximo del 100 por cien de la diferencia entre las tarifas que el Ayuntamiento u organismo dependiente aplique a los empadronados de su municipio y al beneficiario.</p><p>Quinto: plazo de presentación de solicitudes</p><p>El plazo para la presentación de solicitudes será de treinta días (30) naturales a partir de la publicación de las bases en el BOTHA.</p><p>Sexto: otros datos</p><p>Se deberán presentar cumplimentados todos los anexos correspondientes a la solicitud.</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/047/2026_047_01142_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.045Z"
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "903566",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALL D'UIXÓ, LA / AYUNTAMIENTO DE VALL D'UIXÓ, LA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Convocatoria de subvenciones en régimen de concurrencia competitiva destinadas a entidades deportivas locales para fomentar la práctica del deporte base en el municipio y promover su práctica en todas sus categorías (ejercicio 2026)",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 42800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903566",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "3. ANNEX_I_SOL.LICITUD_AUTORRELLENABLE_2026.pdf",
+      "url": null
+    },
+    {
+      "label": "4. ANNEX_II_CERTIFICAT_SECRETARI.pdf",
+      "url": null
+    },
+    {
+      "label": "8. ANNEX_VI_JUSTIFICACIO_2026.pdf",
+      "url": null
+    },
+    {
+      "label": "6. ANNEX_IV_PRESSUPOST_INGRESSOS_I_DESPESES.pdf",
+      "url": null
+    },
+    {
+      "label": "7. ANNEX_V_JUSTIFICACIO_MEMORIA_2026.pdf",
+      "url": null
+    },
+    {
+      "label": "5. ANNEX_III_RESUM_PROJECTE-MEMORIA_ACTIVITAT_2025-26.pdf",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lavallduixo.es/sites/L01121264/files/2023-07/ORDENANZA%20DEL%20OTORGAMIENTO%20DE%20SUBVENCIONES%20_0.pdf",
+  "text_inicio": "a partir del día siguiente de la publicación en el Boletín Oficial de la Provincia",
+  "text_fin": "15 días",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.195Z"
+}

@@ -1,0 +1,269 @@
+{
+  "identifier": "HORIZON-HLTH-2026-02-DISEASE-12",
+  "ccm2Id": "50136668",
+  "callIdentifier": "HORIZON-HLTH-2026-02",
+  "callTitle": "Partnerships in Health (2026/1)",
+  "title": "European Partnership on Rare Diseases (ERDERA) (Phase 2)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-02-10",
+  "deadline": "2026-09-15",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Programme Cofund Actions",
+  "actionCode": "HORIZON-COFUND",
+  "mgaCode": "HORIZON-AG",
+  "budget": {
+    "total_eur": 91300000,
+    "by_year": {
+      "2026": 48700000,
+      "2027": 42600000
+    },
+    "expected_grants": 1,
+    "min_contribution_eur": 91300000,
+    "max_contribution_eur": 91300000
+  },
+  "keywords": [
+    "HORIZON-HLTH-2026-02-DISEASE-12",
+    "HORIZON-HLTH-2026-02",
+    "Anticancer therapy",
+    "Biobanks",
+    "Biomarkers",
+    "Cancer and its biological basis",
+    "Cardiac and Cardiovascular systems",
+    "Child health",
+    "Chronic diseases",
+    "Clinical data",
+    "Clinical information",
+    "Clinical management",
+    "Clinical medicine",
+    "Clinical neurology",
+    "Clinical research",
+    "Clinical targets",
+    "Clinical trials",
+    "Cohort studies",
+    "Collective Awareness Platforms",
+    "Comparative effectiveness research",
+    "Congenital heart disease",
+    "Degenerative diseases",
+    "Dermatology and venereal diseases",
+    "Electronic patient files",
+    "Endocrinology",
+    "Endocrinology and metabolism (including diabetes, hormones)",
+    "Epidemiology",
+    "Ethics in medical sciences",
+    "Gene therapy, cell therapy, regenerative medicine",
+    "General and internal medicine",
+    "Genomics, comparative genomics, functional genomics",
+    "Global health",
+    "Haematology",
+    "Health care",
+    "Health care sciences and services (including hospital administration, health care financing)",
+    "Health data",
+    "Health management systems",
+    "Health policies",
+    "Health policy and services",
+    "Health sciences",
+    "Health services, health care research",
+    "Health-related biotechnology",
+    "Healthcare system",
+    "Human genetics",
+    "Immunology",
+    "Integrated care",
+    "Interventional clinical trials",
+    "Medical biotechnology",
+    "Medical biotechnology related ethics",
+    "Medical statistics",
+    "Meta-analysis",
+    "Metabolism, biological basis of metabolism related disorders",
+    "Nephropathy",
+    "Neurodegenerative disorders",
+    "Neurological disorders (e.g. Alzheimer's disease, Huntington's disease, Parkinson's disease)",
+    "Neuropathy",
+    "Neurosciences (including psychophysiology)",
+    "Non-communicable diseases (except for neural/psychiatric and immunity-related)",
+    "Oncology",
+    "Ophthalmology",
+    "Other clinical medicine subjects",
+    "Otorhinolaryngology",
+    "Paediatrics",
+    "Patient care",
+    "Patient stratification",
+    "Pediatric cardiology",
+    "Personalised medicine",
+    "Public health",
+    "Quality of health care",
+    "Quality-of-life",
+    "Rare diseases",
+    "Registries",
+    "Research integrity and research misconduct",
+    "Respiratory systems",
+    "Risk factors",
+    "Social biomedical sciences (includes family planning, sexual health, psycho-oncology, political and social effects of biomedical research)",
+    "Social structure, inequalities, social mobility, interethnic relations",
+    "Technologies involving identifying the functioning of DNA, proteins and enzymes and how they influence the onset of disease and maintenance of well-being (gene-based diagnostics and therapeutic interventions (pharmacogenomics, gene-based",
+    "Technologies involving the manipulation of cells, tissues, organs or the whole organism (assisted reproduction)",
+    "Tissue banks",
+    "Translational medicine",
+    "Transplantation",
+    "Urology and nephrology"
+  ],
+  "crossCuttingPriorities": [
+    "SocietalEngagement",
+    "SSH",
+    "EoscAndFairData",
+    "PART-COFUND",
+    "SocInnov",
+    "INCO",
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43442?topic=HORIZON-HLTH-2026-02-DISEASE-12",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-HLTH-2026-02-DISEASE-12",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions, proposal page limit and layout",
+      "label": "Annex A",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "2. Eligible Countries",
+      "label": "Horizon Europe Programme Guide",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5b. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "Standard application form (HE COFUND top-up)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-cofund-top-up_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "Standard evaluation form (HE COFUND)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/ef/ef_he-cofund_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "HE MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "Information on clinical studies (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-clinical-studies_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "Information on financial support to third parties (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-financial-support-to-third-parties_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and additional documents:",
+      "label": "Annual work programme (HE COFUND)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/annual-work-programme_he-cofund_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "HE Main Work Programme 2026-2027 – 4. Health",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-4-health_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "HE Framework Programme 2021/695",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0695",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "HE Specific Programme Decision 2021/764",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021D0764",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Decision authorising the use of lump sum contributions under the Horizon Europe Programme",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-decision_he_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:26.766Z"
+}

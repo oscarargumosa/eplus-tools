@@ -1,0 +1,67 @@
+{
+  "id": 1100014,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
+    "nivel3": "ENTIDAD PÚBLICA EMPRESARIAL CONSEJO INSULAR DE LA ENERGÍA"
+  },
+  "sedeElectronica": "https://energiagrancanaria.sedelectronica.es/info.0",
+  "codigoBDNS": "898453",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA EL FOMENTO DE LA MOVILIDAD SOSTENIBLE DE EMISIONES CERO EN GRAN CANARIA 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Cabildo de Gran Canaria",
+  "urlBasesReguladoras": "https://cabildo.grancanaria.com/documents/10180/8506129/Ordenanza+General+de+Subvenciones+del+Cabildo+de+Gran+Canaria/33077d88-3822-4049-bca7-af8199d49ef4",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de esta convocatoria en el BOP Las Palmas",
+  "textFin": "Hasta el 31 de diciembre de 2026, o bien hasta el agotamiento del crédito disponible",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434226,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026.04.10. Convocatoria y Bases subvenciones MOVILIDAD SOSTENIBLE_2026.pdf",
+      "long": 416655,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

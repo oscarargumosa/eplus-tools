@@ -1,0 +1,76 @@
+{
+  "id": 1099768,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE OVIEDO",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://intranet.uniovi.es/convocatorias/estudiantes",
+  "codigoBDNS": "898207",
+  "fechaRecepcion": "2026-04-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de ayudas de matrícula destinadas a estudiantes del Programa de Doctorado en Género y Diversidad de la Universidad de Oviedo, curso académico 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución de 14 de mayo de 2025 de bases reguladoras para la concesión de ayudas de matrícula destinadas a estudiantes del Programa de Doctorado en Género y Diversidad y financiadas por el Instituto de las Mujeres",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2025/05/27/2025-04041.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOPA",
+  "textFin": "Diez días hábiles desde el día siguiente a la publicación del presente extracto en BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433538,
+      "descripcion": "FORMULARIOS DE SOLICITUD",
+      "nombreFic": "2_ANEXOS-FORMULARIOS DE DOCTORADO.docx",
+      "long": 99075,
+      "datMod": "2026-04-11",
+      "datPublicacion": "2026-04-11"
+    },
+    {
+      "id": 1433537,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1_Resolución ayudas matrícula Instituto de las mujeres (31-03-2026).pdf",
+      "long": 496139,
+      "datMod": "2026-04-11",
+      "datPublicacion": "2026-04-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

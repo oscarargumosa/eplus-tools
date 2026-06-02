@@ -1,0 +1,29 @@
+## Expected Outcome
+
+Project results are expected to contribute to all the following expected outcomes, driving transformative change for biodiversity and nature positive economic practices:
+- overall, the economic case for biodiversity protection, restoration, sustainable use and the delivery of ecosystem services upon which all life depends, is strengthened including through robust assessments of the cost of inaction;
+- businesses are better able to mainstream biodiversity considerations in decision-making, fostering transformative business models that enhance inclusion for biodiversity, particularly for start-ups and SMEs, including nature-based enterprises[1]. Leveraging synergies in business action on climate to strengthen overall resilience also needs to be considered;
+- policy and decision makers benefit from improved knowledge to drive transformative policy including fiscal reforms to align economic incentives with nature positive investments and scalable biodiversity finance mechanisms (including blended finance, green bonds, nature credits, ecosystem service markets, etc.);
+- to ensure clear evaluation frameworks for effectiveness, policy and decision makers have access to improved measurement and reporting of economic and business impacts, dependencies, and efforts on biodiversity.
+
+## Scope
+
+Current economic systems are often driven by growth models and competitive pressures that prioritise short-term profits and speed over the long-term health of ecosystems. These systems also fail to account for environmental externalities, making nature positive solutions appear less affordable than they truly are. This has led to the exploitation of natural resources, habitat destruction, and loss of biodiversity, which in turn has significant negative impacts on both the environment and human well-being. Safeguarding biodiversity and ecosystem services is not just important, it is essential to preserving life on Earth, as they underpin the very systems that sustain all human and natural life. As these systems continue, the consequences are becoming increasingly clear: climate change, soil degradation, water scarcity, pollution and species extinction, all of which undermine the foundations of human society, business, and future prosperity. A nature positive economy, on the other hand, focuses on restoring and enhancing the natural systems that support life on Earth, ultimately benefiting and improving the resilience of our economy.
+
+The topic should work to achieve the objectives and the implementation of the European Green Deal, the EU biodiversity strategy for 2030, the ‘Roadmap towards nature Credits’, EU Sustainable Finance Policy including the EU Taxonomy for Sustainable Activities, the Kunming-Montreal Global Biodiversity Framework (GBF, and notably targets 14, 15, 18 and 19) and the Task Force on Nature Related Financial Disclosures (TNFD).
+
+Proposals should:
+- support decision-making for a nature positive economy by addressing knowledge and practice gaps, advancing transparent and standardised biodiversity metrics, improving accessibility of assessment methods and data, integrating economic risks related to biodiversity loss into corporate strategies and reporting. Where possible lessons learned should inform and scale-up initiatives to achieve a nature positive economy also beyond the European context;
+- improve the knowledge on effective biodiversity incentives including through fiscal reforms and phasing out harmful subsidies to support the development of policies and financial strategies for nature positive investments;
+- pilot innovative financial mechanisms and valuation approaches in real-world business contexts, including instruments for mobilising private finance such as nature credits, to strengthen the business case for biodiversity protection, restoration and sustainable use, including through Nature-based Solutions;
+- carry out demonstration actions to help integrate research into policy and practice and to demonstrate operational pathways for long term transformative change and for the acceleration of nature positive economy;
+- use and build on available biodiversity data sources, including from biodiversity monitoring schemes, for the purpose of developing corporate strategies and sustainability metrics in the private sector. This includes considering the potential of AI;
+- develop, analyse and/or promote ways of making sustainability reporting more accessible, efficient, and accurate for businesses of all sizes and particularly for start-ups and SMEs, with a view to promote an equitable and manageable compliance framework. Leveraging AI, digital automation and sector specific insights is encouraged.
+
+Proposals should seek to address some knowledge gaps identified by the relevant IPBES assessments and if appropriate, provide recommendations to policy makers.
+
+Proposals should create synergies with and build on results of other relevant EU-funded projects on biodiversity, economics and finance, and ensure cooperation with the European partnership Biodiversa+. To this end, proposals should include dedicated tasks and appropriate resources for coordination measures.
+
+Proposals should foresee appropriate resources to ensure close cooperation with the EC Knowledge Centre for Biodiversity (KCBD) and its Science Service. Proposals should also foresee links with voluntary market initiatives, e.g., the TNFD or others. Proposals must follow a multi-actor approach, engaging researchers, businesses, financial institutions, public authorities, policy makers, and civil society to co-develop and apply solutions.
+
+[1]  For more information on nature-based enterprises please refer to page 6 and 8 of the European Commission Expert Publication (2022): The vital role of nature-based solutions in a nature positive economy: https://op.europa.eu/en/publication-detail/-/publication/85aeb571-c69c-11ec-b6f4-01aa75ed71a1

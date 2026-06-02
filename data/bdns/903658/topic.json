@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "903658",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GIJÓN / AYUNTAMIENTO DE GIJÓN",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Acuerdo  adoptado por la Junta de Gobierno Local del Ayuntamiento de Gijón/Xixón en sesión de 5 de mayo de 2026, por el que se aprueba la convocatoria de ayudas dirigidas al sector del taxi de la ciudad de Gijón/Xixón, 2026",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.gijon.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903658",
+  "documents": [
+    {
+      "label": "Anexo II",
+      "url": null
+    },
+    {
+      "label": "Acuerdo de Junta de Gobierno",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo III",
+      "url": null
+    },
+    {
+      "label": "Anexo V",
+      "url": null
+    },
+    {
+      "label": "Anexo IV",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.gijon.es/es/publicaciones/ordenanza-subvenciones",
+  "text_inicio": "Siguiente día hábil al de la publicación del extracto de la convocatoria en el BOPA",
+  "text_fin": "A los 20 días naturales a partir del día siguiente hábil al de la publicación del extracto en BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.244Z"
+}

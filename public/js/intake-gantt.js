@@ -22,21 +22,24 @@ const IntakeGantt = (() => {
   const ACT_ICONS = {
     meeting:'groups', ltta:'flight_takeoff', io:'menu_book', me:'campaign', mgmt:'settings',
     local_ws:'school', campaign:'share', website:'language', artistic:'palette',
-    equipment:'devices', goods:'inventory_2', consumables:'eco', other:'more_horiz',
+    equipment:'devices', goods:'inventory_2', consumables:'eco',
+    fstp:'volunteer_activism', other:'more_horiz',
   };
 
   const ACT_TYPES_LABEL = {
     mgmt:'Management', meeting:'Transnational Meeting', ltta:'LTTA / Mobility',
     io:'Intellectual Output', me:'Multiplier Event', local_ws:'Local Workshop',
     campaign:'Dissemination', website:'Website', artistic:'Artistic Fees',
-    equipment:'Equipment', goods:'Other Goods', consumables:'Consumables', other:'Other Costs',
+    equipment:'Equipment', goods:'Other Goods', consumables:'Consumables',
+    fstp:'Financial Support to Third Parties', other:'Other Costs',
   };
 
   const TYPE_MAP = {
     mgmt:'project_management', meeting:'transnational_meeting', ltta:'ltta_mobility',
     io:'intellectual_output', me:'multiplier_event', local_ws:'local_workshop',
     campaign:'dissemination', website:'website', artistic:'artistic_fees',
-    equipment:'equipment', goods:'other_goods', consumables:'consumables', other:'other_costs',
+    equipment:'equipment', goods:'other_goods', consumables:'consumables',
+    fstp:'financial_support_third_parties', other:'other_costs',
   };
 
   function findTaskTitle(category, subtypeLabel) {

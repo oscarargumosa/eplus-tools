@@ -1,0 +1,112 @@
+{
+  "id": 1105127,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALL D'UIXÓ, LA",
+    "nivel3": "AYUNTAMIENTO DE VALL D'UIXÓ, LA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903566",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 42800,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones en régimen de concurrencia competitiva destinadas a entidades deportivas locales para fomentar la práctica del deporte base en el municipio y promover su práctica en todas sus categorías (ejercicio 2026)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Sanidad",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DEL OTORGAMIENTO DE SUBVENCIONES Y AYUDAS PARA ACTIVIDADES EN DIVERSOS ÁMBITOS DE LA VALL D’UIXÓ",
+  "urlBasesReguladoras": "https://www.lavallduixo.es/sites/L01121264/files/2023-07/ORDENANZA%20DEL%20OTORGAMIENTO%20DE%20SUBVENCIONES%20_0.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir del día siguiente de la publicación en el Boletín Oficial de la Provincia",
+  "textFin": "15 días",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448745,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención 2 firmas.PDF",
+      "long": 219347,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448746,
+      "descripcion": "3. ANNEX_I_SOL.LICITUD_AUTORRELLENABLE_2026.pdf",
+      "nombreFic": "3. ANNEX_I_SOL.LICITUD_AUTORRELLENABLE_2026.pdf.PDF",
+      "long": 102979,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448747,
+      "descripcion": "4. ANNEX_II_CERTIFICAT_SECRETARI.pdf",
+      "nombreFic": "4. ANNEX_II_CERTIFICAT_SECRETARI.pdf.PDF",
+      "long": 90828,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448751,
+      "descripcion": "8. ANNEX_VI_JUSTIFICACIO_2026.pdf",
+      "nombreFic": "8. ANNEX_VI_JUSTIFICACIO_2026.pdf.PDF",
+      "long": 206445,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448749,
+      "descripcion": "6. ANNEX_IV_PRESSUPOST_INGRESSOS_I_DESPESES.pdf",
+      "nombreFic": "6. ANNEX_IV_PRESSUPOST_INGRESSOS_I_DESPESES.pdf.PDF",
+      "long": 124349,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448750,
+      "descripcion": "7. ANNEX_V_JUSTIFICACIO_MEMORIA_2026.pdf",
+      "nombreFic": "7. ANNEX_V_JUSTIFICACIO_MEMORIA_2026.pdf.PDF",
+      "long": 145099,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448748,
+      "descripcion": "5. ANNEX_III_RESUM_PROJECTE-MEMORIA_ACTIVITAT_2025-26.pdf",
+      "nombreFic": "5. ANNEX_III_RESUM_PROJECTE-MEMORIA_ACTIVITAT_2025-26.pdf.PDF",
+      "long": 102537,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

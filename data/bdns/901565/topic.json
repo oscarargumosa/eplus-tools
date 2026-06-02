@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "901565",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOGENTE/MOIXENT / AYUNTAMIENTO DE MOGENTE/MOIXENT",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "RESOLUCIÓN DE LA CONCEJALÍA-DELEGADA DE EDUCACIÓN Y CULTURA POR LA QUE SE APRUEBAN LAS BASES PARA LA CONCESIÓN DE\nBECAS PARA EL FOMENTO DEL EMPLEO EN EL AYUNTAMIENTO DE MOIXENT EN EL MARCO DEL VII PROGRAMA \"MOIXENT ET BECA\n2026\"",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5686.72,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": "https://moixent.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901565",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://moixent.sedelectronica.es/preview-document/0e54f3b2-4c05-4fb7-acd5-b72aacfadc34/",
+  "text_inicio": "Desde el siguiente al de la publicación del extracto de las bases en el BOP",
+  "text_fin": "10 días naturales contados a partir del día siguiente al de la publicación del extracto en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210062,
+      "titulo": "Anuncio del Ayuntamiento de Moixent sobre extracto de las bases para la concesión de becas para el fomento del empleo en el Ayuntamiento de Moixent en el marco del VII Programa “Moixent et beca 2026”, aprobada por Decreto de la Concejalía-delegada de Educación y Cultura número 608, de 24 de abril de 2026. BDNS Identificador 901565",
+      "tituloLeng": null,
+      "texto": "<p>Primero. ObjetoEl Ayuntamiento de Moixent pretende impulsar la formación complementaria de jóvenes estudiantes mediante la concesión de cuatro becas a estudiantes mayores de 16 años que cursan alguno de los estudios oficiales relativos a las siguientes áreas de actividad:</p><p>Actividades físicas y deportivas (1 beca)</p><p>Administración (2 becas)</p><p>Educación/Juventud (1beca)</p><p>Segundo. Dotación</p><p>Cada una de las becas estarán dotadas con un importe de 700€, más seguridad social (a abonar en periodos vencidos). En aquellos supuestos que impliquen un período inferior al mes natural, será la parte proporcional correspondiente.</p><p>Tercero. Duración de la beca</p><p>El periodo de duración de las becas será de dos meses cada una, iniciándose éste el 1 de julio de 2026 y finalizando el 31 de agosto de 2026.</p><p>Cuarto. Plazo de presentación de solicitudesEl plazo de presentación será de 10 días naturales contados a partir del día siguiente al de la publicación de un extracto de las bases en el Boletín Oficial de la Provincia.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04958&lang=es",
+      "cve": "BOPV-2026/04958",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.257Z"
+}

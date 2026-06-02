@@ -1,0 +1,91 @@
+{
+  "id": 1098562,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE TENERIFE",
+    "nivel3": "CABILDO INSULAR DE TENERIFE"
+  },
+  "sedeElectronica": "www.tenerife.es",
+  "codigoBDNS": "897001",
+  "fechaRecepcion": "2026-04-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "Acuerdo 1 de abril 2026, del Consejo de Gobierno Insular, por el que se aprueba la convocatoria de subvenciones con destino a la mejora de la comercialización de los túnidos capturados por embarcaciones con puerto base en Canarias”, para el ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Ley 38/2003, de 17 de noviembre General de Subvenciones",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": "Día siguiente a la publicación del extracto en el Diario Oficial",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429442,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ACUERDO BASES Y CONVOCATORIA TUNIDOS 2026.pdf",
+      "long": 480266,
+      "datMod": "2026-04-06",
+      "datPublicacion": "2026-04-06"
+    },
+    {
+      "id": 1429446,
+      "descripcion": "Bases",
+      "nombreFic": "BASES TÚNIDOS ACTUALIZADAS.pdf",
+      "long": 347869,
+      "datMod": "2026-04-06",
+      "datPublicacion": "2026-04-06"
+    },
+    {
+      "id": 1429445,
+      "descripcion": "Linea Subvención",
+      "nombreFic": "17-03-26_Subvenc_Transf_concedida_.pdf",
+      "long": 108620,
+      "datMod": "2026-04-06",
+      "datPublicacion": "2026-04-06"
+    },
+    {
+      "id": 1429443,
+      "descripcion": "Documento contable A",
+      "nombreFic": "A_2026003179_SUBVENCIONES_COMERCIALIZACION_TUINIDOS.pdf",
+      "long": 114013,
+      "datMod": "2026-04-06",
+      "datPublicacion": "2026-04-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

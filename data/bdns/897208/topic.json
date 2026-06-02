@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "897208",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PALMAS DE GRAN CANARIA, LAS / AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "RES 141, 07/04/2026, DE LA PRESIDENCIA DEL IMD, POR LA QUE SE RESUELVE AUTORIZAR EL GASTO, APROBAR LA CONVOCATORIA Y ANEXOS CORRESPONDIENTES A LA CONVOCATORIA DE SUBV DEL IMD, EN REGIMEN DE CC, DESTINADAS A CD QUE PARTICIPEN EN COMP 3ª CATEG NACIONAL",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 70000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    }
+  ],
+  "apply_url": "GESTOR DE SUBVENCIONES DEL IMD: https://imdsubvenciones.laspalmasgc.es/portal_subvenciones/modules.php?mod=portal&file=index",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897208",
+  "documents": [
+    {
+      "label": "BASES ESPECIFICAS",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://deporteslaspalmasgc.com",
+  "text_inicio": "AL DIA SIGUIENTE DE LA PUBLICACION DE LA CONVOCATORIA EN EL BOP LAS PALMAS",
+  "text_fin": "10 DIAS HABILES DESDE EL SIGUIENTE A LA PUBLICACION DE LA CONVOCATORIA EN EL BOP LAS PALMAS",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.902Z"
+}

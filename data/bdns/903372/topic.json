@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903372",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE MURCIA",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Convocatoria de ayudas económicas en el marco del programa Erasmus+ Prácticas para estudiantes que realicen prácticas en la enseñanza de un idioma como lengua extranjera en centros de la Universidad de Murcia durante el curso 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 130200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "https://sede.um.es/registro2/PR-SG-002/acceso.seam?from=default&cid=262",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903372",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.um.es/sede/documento/tablon/2026/04/27/resolucion-del-rector-por-la-que-se-convocan-ayudas-economicas-en-el-marco-del-programa-erasmus-practicas-para/144387.pdf",
+  "text_inicio": "Día siguiente al de la publicación del extracto de la convocatoria en el BORM",
+  "text_fin": "Abierto hasta asignación de todas las ayudas ofertadas",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.135Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": 1105085,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT PERE DE RIBES",
+    "nivel3": "AYUNTAMIENTO DE SANT PERE DE RIBES"
+  },
+  "sedeElectronica": "http://www.santperederibes.cat/seuelectronica",
+  "codigoBDNS": "903524",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras y convocatoria de subvenciones para proyectos de mejora de locales de entidades culturales de Sant Pere de Ribes 2026",
+  "descripcionLeng": "Bases reguladores i convocatòria de les subvencions per a projectes de millora de locals d'entitats culturals de Sant Pere de Ribes 2026\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras y convocatoria de subvenciones para proyectos de mejora de locales de entidades culturales de Sant Pere de Ribes 2026",
+  "urlBasesReguladoras": "https://www.santperederibes.cat/municipi/culturaifestes/subvencions",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente publicación BOPB",
+  "textFin": "15 dias naturales a contar des del dia siguiente de su publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448654,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases_subvencions_entitats_per_a_inversions_2026_Cast_Diligenciades.pdf",
+      "long": 431433,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448658,
+      "descripcion": "Extracte_Cat_bases_subvencions_millora_locals_entitats_2026",
+      "nombreFic": "Extracte_Cat_bases_subvencions_millora_locals_entitats_2026.pdf",
+      "long": 799452,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448656,
+      "descripcion": "Extracte_Cast_bases_subvencions_millora_locals_entitats_2026",
+      "nombreFic": "Extracte_Cast_bases_subvencions_millora_locals_entitats_2026.pdf",
+      "long": 799615,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448655,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases_subvencions_entitats_per_a_inversions_2026_Diligenciades.pdf",
+      "long": 436052,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

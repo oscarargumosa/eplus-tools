@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "900384",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESPLUGA DE FRANCOLÍ, L' / AYUNTAMIENTO DE ESPLUGA DE FRANCOLÍ, L'",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "CONVOCATORIA DE CONCESSIÓN DE SUBVENCIONES A ENTIDADES, PARTICULARES, ASOCIACIONES Y/O COLECTIVOS SIN ÁNIMO DE LUCRO DE L’ESPLUGA DE FRANCOLÍ, AÑO 2024",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://seu-e.cat/ca/web/esplugadefrancoli",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900384",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "file:///C:/Users/aalfageme/Downloads/I_20160711_2016_05422.pdf",
+  "text_inicio": "AL DIA SIGUIENTE DE LA PUBLICACIÓN EN EL BOPT",
+  "text_fin": "1 MES DESDE LA PUBLICACIÓN EN EL BOPT",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.629Z"
+}

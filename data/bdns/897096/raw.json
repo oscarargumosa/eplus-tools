@@ -1,0 +1,75 @@
+{
+  "id": 1098657,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN FORAL DE BIZKAIA",
+    "nivel3": "DIPUTACIÓN FORAL DE BIZKAIA"
+  },
+  "sedeElectronica": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "codigoBDNS": "897096",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "DECRETO FORAL 27/2026, de 1 de abril, de la Diputación Foral de Bizkaia, por el que se aprueban las bases reguladoras y la convocatoria de subvenciones forales para la promoción de investigaciones arqueológicas y paleontológicas en Bizkaia en 2026",
+  "descripcionLeng": "Bizkaiko Foru Aldundiaren, apirilaren 1eko 27/2026  FORU DEKRETUA. Honen bidez, onetsi egiten dira 2026. urtean zehar Bizkaian ikerketa arkeologiko eta pal eontologikoak sustatzeko foru diru-laguntzen oinarri arautzaileak eta deialdia",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "DECRETO FORAL 27/2026, de 1 de abril, de la Diputación Foral de Bizkaia, por el que se aprueban las bases reguladoras y la convocatoria de subvenciones forales para la promoción de investigaciones arqueológicas y paleontológicas en Bizkaia en 2026",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/15/I-420_cas.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de la publicación en el BOB",
+  "textFin": "Veinte días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447256,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "DLD_OND_2026_INVESTIG_ARQUEOL_KTS_1773151789577_20260324_015659.pdf",
+      "long": 494121,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447255,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DLD_OND_2026_INVESTIG_ARQUEOL_KTS_1773151789577_20260324_015659.pdf",
+      "long": 494121,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

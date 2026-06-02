@@ -1,0 +1,57 @@
+{
+  "identifier": "ESC-HUMAID-2021-QUAL-LABEL-FP",
+  "ccm2Id": "43963824",
+  "callIdentifier": "ESC-HUMAID-2021-QUAL-LABEL",
+  "callTitle": "Quality Label Humanitarian Aid Strand",
+  "title": "Quality Label Humanitarian Aid - Full Procedure",
+  "programme": "European Solidarity Corps",
+  "programmeCode": "43254037",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2021-06-09",
+  "deadline": "2021-09-21",
+  "deadlineModel": "multiple cut-off",
+  "actionType": "ESC Quality Label",
+  "actionCode": "ESC-CERT",
+  "mgaCode": "ESC-CERT",
+  "budget": {
+    "total_eur": null,
+    "by_year": {},
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "ESC-HUMAID-2021-QUAL-LABEL-FP",
+    "ESC-HUMAID-2021-QUAL-LABEL"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact: EACEA-SOLIDARITY-CORPS@ec.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Please be aware that the Manual is currently drafted for the H2020 Programme and may not entirely fit for other programmes. However, a revision is being completed to make it corporate.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/21015?topic=ESC-HUMAID-2021-QUAL-LABEL-FP",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/ESC-HUMAID-2021-QUAL-LABEL-FP.json",
+  "documents": [
+    {
+      "section": "",
+      "label": "european_solidarity_corps_guide_2021.pdf (europa.eu)",
+      "url": "https://europa.eu/youth/sites/default/files/european_solidarity_corps_guide_2021.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "",
+      "label": "corrigendum",
+      "url": "https://europa.eu/youth/sites/default/files/european_solidarity_corps_guide_2021_corrigendum.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "",
+      "label": "EUR-Lex - C2021/132/06 - EN - EUR-Lex (europa.eu)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.132.01.0006.01.ENG&toc=OJ%3AC%3A2021%3A132%3ATOC",
+      "ext": "",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:23.944Z"
+}

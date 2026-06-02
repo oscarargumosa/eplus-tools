@@ -44,6 +44,7 @@ const Admin = (() => {
       case 'all-docs':      loadAllDocs(); break;
       case 'platform-docs': loadPlatformDocs(); break;
       case 'library':       loadAdminLibrary(); break;
+      case 'patterns':      loadPatterns(); break;
     }
   }
 
@@ -192,9 +193,14 @@ const Admin = (() => {
 
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
-          <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-            <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
-          </button>
+          <div class="flex items-center gap-2">
+            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+              <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
+            </button>
+            <button id="conv-import-feed" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-primary bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 transition-colors">
+              <span class="material-symbols-outlined text-sm">download</span> Importar de catálogo EU
+            </button>
+          </div>
           <span class="text-xs text-on-surface-variant">${programs.length} convocatoria${programs.length !== 1 ? 's' : ''}</span>
         </div>
         <div class="grid grid-cols-1 gap-2">
@@ -234,6 +240,7 @@ const Admin = (() => {
         </div>`;
 
       document.getElementById('conv-new-program')?.addEventListener('click', () => convNewProgram());
+      document.getElementById('conv-import-feed')?.addEventListener('click', () => convImportFromFeed());
       list.querySelectorAll('.conv-card').forEach(card => {
         card.addEventListener('click', e => {
           if (e.target.closest('.conv-del') || e.target.closest('.conv-dup')) return;
@@ -272,6 +279,99 @@ const Admin = (() => {
       // No pre-load eval template — admin links form template first, then generates eval from it
       convOpenProgram(id, name);
     } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
+  }
+
+  async function convImportFromFeed() {
+    let modal = document.getElementById('conv-import-modal');
+    if (modal) modal.remove();
+    modal = document.createElement('div');
+    modal.id = 'conv-import-modal';
+    modal.className = 'fixed inset-0 z-50 bg-black/40 flex items-start justify-center p-6 overflow-y-auto';
+    modal.innerHTML = `
+      <div class="bg-white rounded-2xl shadow-2xl w-full max-w-3xl mt-10 max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+          <div>
+            <h3 class="font-headline text-base font-bold text-primary">Importar de catálogo EU</h3>
+            <p class="text-xs text-on-surface-variant mt-0.5">Busca el código o título de la convocatoria. Se importará como INACTIVA y abrirá el editor.</p>
+          </div>
+          <button id="conv-import-close" class="text-on-surface-variant hover:text-error">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="px-6 py-3 border-b border-outline-variant/20">
+          <input id="conv-import-search" type="text" placeholder="Ej: ERASMUS-EDU-2026-PEX-COVE o Centres of Vocational"
+            class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 focus:border-primary focus:outline-none text-sm" autofocus />
+        </div>
+        <div id="conv-import-list" class="flex-1 overflow-y-auto px-3 py-3">
+          <p class="text-sm text-on-surface-variant text-center py-10"><span class="spinner"></span> Cargando catálogo...</p>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+
+    const closeFn = () => modal.remove();
+    document.getElementById('conv-import-close').addEventListener('click', closeFn);
+    modal.addEventListener('click', e => { if (e.target === modal) closeFn(); });
+
+    let allCalls = [];
+    try {
+      const res = await API.get('/convocatorias?limit=2000');
+      allCalls = (res.items || []).filter(c => c.source !== 'salto');
+    } catch (e) {
+      document.getElementById('conv-import-list').innerHTML = `<p class="text-sm text-error text-center py-10">Error: ${esc(e.message || e)}</p>`;
+      return;
+    }
+
+    const renderList = (filter) => {
+      const f = filter.toLowerCase();
+      const filtered = !f ? allCalls.slice(0, 200)
+        : allCalls.filter(c =>
+            (c.source_id || '').toLowerCase().includes(f) ||
+            (c.title || '').toLowerCase().includes(f) ||
+            (c.programme || '').toLowerCase().includes(f)
+          ).slice(0, 200);
+
+      const listEl = document.getElementById('conv-import-list');
+      if (filtered.length === 0) {
+        listEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-10">Sin resultados</p>';
+        return;
+      }
+      listEl.innerHTML = `
+        <div class="text-[10px] text-on-surface-variant px-2 mb-2">${filtered.length} resultado${filtered.length !== 1 ? 's' : ''}${f ? '' : ' (mostrando primeros 200)'}</div>
+        ${filtered.map(c => {
+          const dlBadge = c.deadline
+            ? `<span class="text-[10px] text-on-surface-variant">DL ${c.deadline.slice(0, 10)}</span>` : '';
+          const efsBadge = c.available_in_efs
+            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-bold">YA EN EFS</span>' : '';
+          const grant = c.budget_per_project_max_eur
+            ? `<span class="text-[10px] text-on-surface-variant">€${Number(c.budget_per_project_max_eur).toLocaleString('en')}</span>` : '';
+          return `
+          <button class="conv-import-row group w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-surface-container transition-colors" data-source-id="${esc(c.source_id || c.call_id)}">
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-semibold text-on-surface group-hover:text-primary truncate">${esc(c.title || '—')}</div>
+              <div class="flex items-center gap-2 mt-0.5 text-[10px] text-on-surface-variant font-mono">${esc(c.source_id || c.call_id)}</div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0">${grant} ${dlBadge} ${efsBadge}</div>
+          </button>`;
+        }).join('')}`;
+      listEl.querySelectorAll('.conv-import-row').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const sid = btn.dataset.sourceId;
+          btn.disabled = true; btn.style.opacity = '0.5';
+          try {
+            const result = await API.post('/admin/data/programs/import-from-feed', { source_id: sid });
+            closeFn();
+            Toast.show(result.already_existed ? 'Ya existía, abriendo...' : 'Convocatoria importada (INACTIVA)', 'ok');
+            convOpenProgram(result.id, sid);
+          } catch (e) {
+            Toast.show('Error: ' + (e.message || e), 'err');
+            btn.disabled = false; btn.style.opacity = '1';
+          }
+        });
+      });
+    };
+
+    renderList('');
+    document.getElementById('conv-import-search').addEventListener('input', e => renderList(e.target.value));
   }
 
   async function convOpenProgram(programId, programName, prog) {
@@ -653,10 +753,10 @@ const Admin = (() => {
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Subir documento nuevo</h4>
           <form id="conv-doc-upload-form" class="space-y-3">
-            <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required
+            <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
               class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
             <div class="grid grid-cols-3 gap-3">
-              <input type="text" id="conv-doc-title" placeholder="Titulo (opcional)"
+              <input type="text" id="conv-doc-title" placeholder="Titulo (auto desde nombre del archivo)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
               <select id="conv-doc-type" class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
                 <option value="programme_guide">Programme Guide</option>
@@ -676,10 +776,12 @@ const Admin = (() => {
                 <span class="text-[10px] text-on-surface-variant/60">(disponible para todas las calls)</span>
               </label>
             </div>
-            <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-              <span class="material-symbols-outlined text-sm">cloud_upload</span> Subir y vectorizar
+            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              <span class="material-symbols-outlined text-sm">cloud_upload</span>
+              <span id="conv-doc-submit-label">Subir y vectorizar</span>
             </button>
           </form>
+          <div id="conv-doc-progress" class="hidden mt-3 pt-3 border-t border-outline-variant/20"></div>
         </div>
 
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest flex flex-col">
@@ -696,43 +798,126 @@ const Admin = (() => {
     // Load docs
     convLoadDocs();
 
-    // Bind upload
+    // Auto-fill title from filename when 1 file is picked; clear when N>1
+    const stripExt = n => n.replace(/\.[^.]+$/, '');
+    document.getElementById('conv-doc-file')?.addEventListener('change', (e) => {
+      const files = e.target.files;
+      const titleEl = document.getElementById('conv-doc-title');
+      if (!titleEl) return;
+      if (files.length === 1) {
+        titleEl.value = stripExt(files[0].name);
+        titleEl.disabled = false;
+        titleEl.placeholder = 'Titulo (auto desde nombre del archivo)';
+      } else if (files.length > 1) {
+        titleEl.value = '';
+        titleEl.disabled = true;
+        titleEl.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+      }
+    });
+
+    // Bind upload (loop for multi-file with per-file progress)
     document.getElementById('conv-doc-upload-form')?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const file = document.getElementById('conv-doc-file').files[0];
-      if (!file) return;
+      const files = Array.from(document.getElementById('conv-doc-file').files);
+      if (!files.length) return;
 
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('title', document.getElementById('conv-doc-title').value || file.name);
+      const titleOverride = files.length === 1 ? document.getElementById('conv-doc-title').value : '';
       const tags = document.getElementById('conv-doc-tags').value;
       const isTransversal = document.getElementById('conv-doc-transversal').checked;
       const tagList = tags ? tags.split(',').map(t => t.trim()).filter(Boolean) : [];
       if (isTransversal && !tagList.includes('transversal')) tagList.push('transversal');
-      fd.append('tags', tagList.join(','));
-      fd.append('doc_type', 'call');
-      fd.append('program_id', ev.programId);
+      const docType = document.getElementById('conv-doc-type').value;
 
-      try {
-        const res = await fetch('/v1/documents/official', {
-          method: 'POST',
-          headers: { 'Authorization': 'Bearer ' + API.getToken() },
-          body: fd
-        });
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-        // Link to call_documents
-        const docType = document.getElementById('conv-doc-type').value;
-        const label = document.getElementById('conv-doc-title').value || file.name;
-        await API.post(`/admin/data/programs/${ev.programId}/docs`, {
-          document_id: json.data.id,
-          doc_type: docType,
-          label: label
-        });
-        Toast.show('Documento subido y vinculado', 'ok');
-        document.getElementById('conv-doc-upload-form').reset();
-        convLoadDocs();
-      } catch (err) { Toast.show('Error: ' + err.message, 'error'); }
+      const progEl = document.getElementById('conv-doc-progress');
+      const submitBtn = document.getElementById('conv-doc-submit-btn');
+      const submitLbl = document.getElementById('conv-doc-submit-label');
+      const fileInput = document.getElementById('conv-doc-file');
+      const titleInput = document.getElementById('conv-doc-title');
+
+      progEl.classList.remove('hidden');
+      progEl.innerHTML = `
+        <div id="conv-prog-summary" class="text-xs font-bold text-on-surface-variant mb-2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+          <span>Procesando 0 / ${files.length}</span>
+        </div>
+        <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+          ${files.map((f, i) => `
+            <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-white/40" data-prog-idx="${i}">
+              <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+              <span class="flex-1 truncate" title="${esc(f.name)}">${esc(f.name)}</span>
+              <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+            </div>`).join('')}
+        </div>`;
+
+      const updateRow = (i, status, label) => {
+        const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+        if (!row) return;
+        const icon = row.querySelector('.prog-icon');
+        const stat = row.querySelector('.prog-status');
+        if (status === 'uploading') {
+          icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+          stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+          row.classList.add('bg-primary/5');
+        } else if (status === 'done') {
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+          stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+          row.classList.remove('bg-primary/5'); row.classList.add('bg-green-50');
+        } else if (status === 'failed') {
+          icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+          stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+          row.classList.remove('bg-primary/5'); row.classList.add('bg-red-50');
+        }
+      };
+
+      submitBtn.disabled = true;
+      fileInput.disabled = true;
+      if (titleInput) titleInput.disabled = true;
+
+      let ok = 0, fail = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        submitLbl.textContent = `Subiendo ${i + 1} / ${files.length}...`;
+        document.getElementById('conv-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+        updateRow(i, 'uploading');
+        const title = titleOverride || stripExt(file.name);
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('title', title);
+        fd.append('tags', tagList.join(','));
+        fd.append('doc_type', 'call');
+        fd.append('program_id', ev.programId);
+        try {
+          const res = await fetch('/v1/documents/official', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + API.getToken() },
+            body: fd
+          });
+          const json = await res.json();
+          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+          await API.post(`/admin/data/programs/${ev.programId}/docs`, {
+            document_id: json.data.id,
+            doc_type: docType,
+            label: title
+          });
+          ok++;
+          updateRow(i, 'done');
+        } catch (err) {
+          fail++;
+          updateRow(i, 'failed', err.message.slice(0, 40));
+        }
+      }
+
+      const summary = document.getElementById('conv-prog-summary');
+      summary.innerHTML = fail
+        ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+
+      submitBtn.disabled = false;
+      fileInput.disabled = false;
+      if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Titulo (auto desde nombre del archivo)'; }
+      submitLbl.textContent = 'Subir y vectorizar';
+      document.getElementById('conv-doc-upload-form').reset();
+      convLoadDocs();
     });
 
     // Pick existing documents modal
@@ -834,7 +1019,8 @@ const Admin = (() => {
   async function convLoadDocs() {
     const container = document.getElementById('conv-docs-list');
     try {
-      const docs = await API.get(`/admin/data/programs/${ev.programId}/docs`);
+      const inv = await API.get(`/admin/data/programs/${ev.programId}/cag-inventory`);
+      const docs = inv.docs || [];
       if (!docs.length) {
         container.innerHTML = `<div class="text-center py-8 text-on-surface-variant/50">
           <span class="material-symbols-outlined text-4xl opacity-30">folder_off</span>
@@ -843,24 +1029,229 @@ const Admin = (() => {
         return;
       }
       const TYPE_ICONS = { programme_guide: '\ud83d\udcd5', call_document: '\ud83d\udcd8', annex: '\ud83d\udcce', template: '\ud83d\udcc4', faq: '\u2753', other: '\ud83d\udcc1' };
-      container.innerHTML = docs.map(d => {
-        const size = d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB` : '';
+
+      const BUDGET_CHARS  = inv.budget_chars  || 320000;
+      const BUDGET_TOKENS = inv.budget_tokens || 80000;
+      const RAG_ONLY_SENTINEL = 9999;
+
+      const headerHtml = `
+        <div class="mb-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-xs font-bold text-on-surface uppercase tracking-wide">Presupuesto CAG (Documento Maestro)</p>
+            <p id="cag-budget-readout" class="text-xs font-mono text-on-surface-variant">— / ${BUDGET_TOKENS.toLocaleString('es-ES')} tokens</p>
+          </div>
+          <div class="w-full h-2 rounded-full bg-outline-variant/20 overflow-hidden">
+            <div id="cag-budget-bar" class="h-full bg-primary transition-all" style="width: 0%"></div>
+          </div>
+          <p class="text-[11px] text-on-surface-variant mt-2">
+            <strong>Sólo los docs con prioridad 0 o "Forzar CAG" entran al contexto del LLM</strong> al compilar el Maestro.
+            La barra de arriba mide exactamente eso. El resto (prioridad ≥ 1, default) se queda en RAG y no consume budget.
+            Cambia un doc de 1 → 0 para meterlo al CAG; márcalo "Solo RAG" si quieres dejarlo fuera explícitamente.
+            Los cambios se previsualizan en vivo; pulsa "Guardar prioridades" para persistir.
+          </p>
+        </div>`;
+
+      const docsHtml = docs.map(d => {
+        const size = d.body_text_chars
+          ? `${(d.body_text_chars || 0).toLocaleString('es-ES')} chars \u00b7 ${(d.tokens_estimated || 0).toLocaleString('es-ES')} tokens`
+          : (d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB (sin extraer)` : '');
         const statusIcon = d.doc_status === 'active' ? 'check_circle' : d.doc_status === 'processing' ? 'sync' : 'pending';
         const statusColor = d.doc_status === 'active' ? 'text-green-500' : d.doc_status === 'processing' ? 'text-blue-500' : 'text-gray-400';
-        const tags = (d.tags || []).map(t => `<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-medium">${esc(t)}</span>`).join(' ');
-        return `<div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-outline-variant/20 mb-2 hover:border-primary/30 transition-colors">
+        const initialOrder = d.sort_order ?? 0;
+        const isRagOnly = initialOrder >= RAG_ONLY_SENTINEL;
+        const isForced  = initialOrder < 0;
+        const chars = d.body_text_chars || 0;
+        const tokens = d.tokens_estimated || 0;
+        return `<div class="conv-doc-row flex items-center gap-3 p-3 rounded-xl bg-white border border-outline-variant/20 mb-2 hover:border-primary/30 transition-colors"
+                     data-id="${d.id}" data-chars="${chars}" data-tokens="${tokens}">
+          <input type="number" min="-1" max="${RAG_ONLY_SENTINEL}" class="conv-doc-order w-14 text-center font-mono text-sm border border-outline-variant/40 rounded-lg py-1.5"
+                 value="${initialOrder}" ${(isRagOnly || isForced) ? 'disabled' : ''}
+                 title="Prioridad (menor número = más prioritario; ${RAG_ONLY_SENTINEL} = nunca CAG)">
           <span class="text-xl">${TYPE_ICONS[d.doc_type] || '\ud83d\udcc1'}</span>
           <div class="flex-1 min-w-0">
             <p class="text-sm font-bold text-on-surface truncate">${esc(d.label || d.doc_title)}</p>
-            <p class="text-xs text-on-surface-variant">${d.doc_type} · ${d.file_type || ''} · ${size}</p>
-            ${tags ? `<div class="flex gap-1 mt-1">${tags}</div>` : ''}
+            <p class="text-xs text-on-surface-variant">${d.doc_type} \u00b7 ${d.file_type || ''} \u00b7 ${size}</p>
           </div>
-          <span class="material-symbols-outlined ${statusColor}" title="${d.doc_status}">${statusIcon}</span>
+          <label class="conv-doc-force-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar este doc al top del CAG (entra primero antes que cualquier prioridad numerica)">
+            <input type="checkbox" class="conv-doc-force accent-green-600" ${isForced ? 'checked' : ''}>
+            <span class="text-green-700">Forzar CAG</span>
+          </label>
+          <label class="conv-doc-ragonly-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar a que este doc se quede solo en RAG y nunca entre al CAG">
+            <input type="checkbox" class="conv-doc-ragonly accent-amber-500" ${isRagOnly ? 'checked' : ''}>
+            <span class="text-amber-700">Solo RAG</span>
+          </label>
+          <span class="conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap"></span>
+          <span class="material-symbols-outlined ${statusColor} text-base" title="${d.doc_status}">${statusIcon}</span>
+          ${d.storage_path
+            ? `<a href="${esc(d.storage_path)}" target="_blank" rel="noopener" class="text-on-surface-variant/40 hover:text-primary transition-colors" title="Abrir documento en nueva pestaña">
+                 <span class="material-symbols-outlined text-lg">open_in_new</span>
+               </a>`
+            : ''}
           <button class="conv-doc-del text-on-surface-variant/30 hover:text-error transition-colors" data-id="${d.id}">
             <span class="material-symbols-outlined text-lg">delete</span>
           </button>
         </div>`;
       }).join('');
+
+      container.innerHTML = headerHtml + docsHtml + `
+        <div class="flex justify-end items-center gap-3 mt-3">
+          <span id="conv-docs-save-status" class="text-xs text-on-surface-variant"></span>
+          <button id="conv-docs-save-order" class="text-xs font-semibold text-primary hover:underline">
+            Guardar prioridades
+          </button>
+        </div>`;
+
+      const barEl     = container.querySelector('#cag-budget-bar');
+      const readoutEl = container.querySelector('#cag-budget-readout');
+
+      const BADGE_BASE = 'conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap';
+
+      function recalcAndRepaint() {
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        rows.sort((a, b) => {
+          const av = parseInt(a.querySelector('.conv-doc-order').value, 10);
+          const bv = parseInt(b.querySelector('.conv-doc-order').value, 10);
+          const aN = Number.isFinite(av) ? av : 1;
+          const bN = Number.isFinite(bv) ? bv : 1;
+          return aN - bN || a.dataset.id.localeCompare(b.dataset.id);
+        });
+        let accFit = 0;       // lo que realmente entra al CAG (cabe)
+        let accAttempted = 0; // lo que el usuario quiso meter (cabe + no cabe)
+        let overflowCount = 0;
+        for (const row of rows) {
+          const ragOnly = row.querySelector('.conv-doc-ragonly').checked;
+          const forced  = row.querySelector('.conv-doc-force').checked;
+          const ordVal  = parseInt(row.querySelector('.conv-doc-order').value, 10);
+          const ord     = Number.isFinite(ordVal) ? ordVal : 1;
+          const chars   = parseInt(row.dataset.chars, 10) || 0;
+          const badge   = row.querySelector('.conv-doc-fitbadge');
+
+          if (ragOnly || ord >= 9999) {
+            badge.textContent = 'SOLO RAG';
+            badge.className = BADGE_BASE + ' bg-amber-100 text-amber-700';
+          } else if (chars === 0) {
+            badge.textContent = 'SIN TEXTO';
+            badge.className = BADGE_BASE + ' bg-gray-100 text-gray-400';
+          } else if (forced || ord < 0) {
+            accAttempted += chars;
+            if ((accFit + chars) <= BUDGET_CHARS) {
+              accFit += chars;
+              badge.textContent = 'FORZADO';
+              badge.className = BADGE_BASE + ' bg-emerald-100 text-emerald-700 ring-1 ring-emerald-300';
+            } else {
+              overflowCount++;
+              badge.textContent = 'NO CABE';
+              badge.className = BADGE_BASE + ' bg-red-100 text-red-700';
+            }
+          } else if (ord === 0) {
+            accAttempted += chars;
+            if ((accFit + chars) <= BUDGET_CHARS) {
+              accFit += chars;
+              badge.textContent = 'EN CAG';
+              badge.className = BADGE_BASE + ' bg-green-100 text-green-700';
+            } else {
+              overflowCount++;
+              badge.textContent = 'NO CABE';
+              badge.className = BADGE_BASE + ' bg-red-100 text-red-700';
+            }
+          } else {
+            badge.textContent = 'RAG';
+            badge.className = BADGE_BASE + ' bg-blue-50 text-blue-700';
+          }
+        }
+        const parent = rows[0]?.parentNode;
+        if (parent) for (const r of rows) parent.appendChild(r);
+
+        // La barra y el contador muestran lo INTENTADO (lo que pediste meter al CAG).
+        // Si pasas del 100%, se pone roja para avisarte de que hay overflow.
+        const usedTokens = Math.ceil(accAttempted / 4);
+        const usedPctRaw = (accAttempted / BUDGET_CHARS) * 100;
+        const usedPct = Math.round(usedPctRaw);
+        if (readoutEl) {
+          const overflowNote = overflowCount > 0
+            ? ` · ${overflowCount} doc(s) no caben`
+            : '';
+          readoutEl.textContent = `${usedTokens.toLocaleString('es-ES')} / ${BUDGET_TOKENS.toLocaleString('es-ES')} tokens (${usedPct}%${overflowNote})`;
+          readoutEl.className = 'text-xs font-mono ' + (usedPctRaw > 100 ? 'text-error font-bold' : 'text-on-surface-variant');
+        }
+        if (barEl) {
+          barEl.style.width = Math.min(100, usedPct) + '%';
+          barEl.className = 'h-full transition-all ' + (usedPctRaw > 100 ? 'bg-error' : usedPctRaw > 90 ? 'bg-amber-500' : 'bg-primary');
+        }
+      }
+
+      // ── Auto-save con debounce ─────────────────────────────────
+      const statusEl = container.querySelector('#conv-docs-save-status');
+      let saveTimer = null;
+      let inFlight = false;
+      let queuedAfterFlight = false;
+
+      async function flushSave() {
+        if (inFlight) { queuedAfterFlight = true; return; }
+        inFlight = true;
+        if (statusEl) { statusEl.textContent = 'Guardando…'; statusEl.className = 'text-xs text-on-surface-variant'; }
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        const items = rows.map(r => ({
+          id: r.dataset.id,
+          sort_order: parseInt(r.querySelector('.conv-doc-order').value, 10) || 0,
+        }));
+        try {
+          await API.post(`/admin/data/programs/${ev.programId}/docs/reorder`, { items });
+          if (statusEl) { statusEl.textContent = 'Guardado ✓'; statusEl.className = 'text-xs text-green-600 font-semibold'; }
+          setTimeout(() => { if (statusEl && statusEl.textContent === 'Guardado ✓') statusEl.textContent = ''; }, 1500);
+        } catch (e) {
+          if (statusEl) { statusEl.textContent = 'Error al guardar: ' + e.message; statusEl.className = 'text-xs text-error font-semibold'; }
+        } finally {
+          inFlight = false;
+          if (queuedAfterFlight) { queuedAfterFlight = false; flushSave(); }
+        }
+      }
+
+      function scheduleSave() {
+        if (statusEl) { statusEl.textContent = 'Cambios sin guardar…'; statusEl.className = 'text-xs text-amber-600 font-semibold'; }
+        if (saveTimer) clearTimeout(saveTimer);
+        saveTimer = setTimeout(flushSave, 600);
+      }
+
+      // Bind events: cada cambio → recalc visual + scheduleSave
+      container.querySelectorAll('.conv-doc-order').forEach(inp => {
+        inp.addEventListener('input', () => { recalcAndRepaint(); scheduleSave(); });
+      });
+      container.querySelectorAll('.conv-doc-ragonly').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const row = cb.closest('.conv-doc-row');
+          const orderInput = row.querySelector('.conv-doc-order');
+          const forceCb = row.querySelector('.conv-doc-force');
+          if (cb.checked) {
+            if (forceCb && forceCb.checked) forceCb.checked = false;
+            orderInput.value = RAG_ONLY_SENTINEL;
+            orderInput.disabled = true;
+          } else {
+            orderInput.disabled = false;
+            orderInput.value = 1;
+          }
+          recalcAndRepaint();
+          scheduleSave();
+        });
+      });
+
+      container.querySelectorAll('.conv-doc-force').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const row = cb.closest('.conv-doc-row');
+          const orderInput = row.querySelector('.conv-doc-order');
+          const ragCb = row.querySelector('.conv-doc-ragonly');
+          if (cb.checked) {
+            if (ragCb && ragCb.checked) ragCb.checked = false;
+            orderInput.value = -1;
+            orderInput.disabled = true;
+          } else {
+            orderInput.disabled = false;
+            orderInput.value = 1;
+          }
+          recalcAndRepaint();
+          scheduleSave();
+        });
+      });
 
       container.querySelectorAll('.conv-doc-del').forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -872,10 +1263,28 @@ const Admin = (() => {
           } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
         });
       });
+
+      const saveBtn = container.querySelector('#conv-docs-save-order');
+      saveBtn?.addEventListener('click', async () => {
+        const rows = Array.from(container.querySelectorAll('.conv-doc-row'));
+        const items = rows.map(r => ({
+          id: r.dataset.id,
+          sort_order: parseInt(r.querySelector('.conv-doc-order').value, 10) || 0,
+        }));
+        try {
+          await API.post(`/admin/data/programs/${ev.programId}/docs/reorder`, { items });
+          Toast.show('Prioridades guardadas', 'ok');
+          convLoadDocs();
+        } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
+      });
+
+      // Pintar estado inicial
+      recalcAndRepaint();
     } catch (e) { container.innerHTML = `<p class="text-sm text-error">${e.message}</p>`; }
   }
 
-  /* ══ OLD CONVOCATORIAS TABLE (kept for backwards compat) ════ */
+
+  /* OLD CONVOCATORIAS TABLE (kept for backwards compat) ════ */
 
   async function loadPrograms() {
     setLoading('admin-programs-tbody');
@@ -1290,6 +1699,8 @@ const Admin = (() => {
     { value: 'foundation',  label: 'Foundation' },
     { value: 'for_profit',  label: 'For-profit organisation' },
     { value: 'social_enterprise', label: 'Social enterprise' },
+    { value: 'dmo',         label: 'DMO (Destination Management Organisation — turismo)' },
+    { value: 'bso',         label: 'BSO (Business Support Organisation — apoyo a empresas)' },
   ];
 
   function eligShowView(v) {
@@ -2431,6 +2842,9 @@ KEY EVALUATOR FOCUS:
       { code: 'KA220-ADU', name: 'Cooperation Partnerships in Adult Education' },
       { code: 'KA220-YOU', name: 'Cooperation Partnerships in Youth' },
     ]},
+    { group: 'EISMEA — Single Market Programme', items: [
+      { code: 'SMP-COSME-2026-TOURSME-01', name: 'Sustainable Competitiveness in Tourism — Supporting Tourism SMEs (SMP-GFS)' },
+    ]},
   ];
 
   function openActionTypePicker() {
@@ -2599,6 +3013,10 @@ KEY EVALUATOR FOCUS:
             <input type="number" id="cd-partners" value="${prog.min_partners || 2}" min="1" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
           </div>
           <div class="flex flex-col gap-1">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Max partners</label>
+            <input type="number" id="cd-partners-max" value="${prog.max_partners ?? ''}" min="1" placeholder="Sin límite" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
+          </div>
+          <div class="flex flex-col gap-1">
             <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Start date from</label>
             <input type="date" id="cd-start-min" value="${fmtDate(prog.start_date_min)}" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
           </div>
@@ -2668,6 +3086,7 @@ KEY EVALUATOR FOCUS:
           cofin_pct: document.getElementById('cd-cofin').value || null,
           indirect_pct: document.getElementById('cd-indirect').value || null,
           min_partners: document.getElementById('cd-partners').value || 2,
+          max_partners: document.getElementById('cd-partners-max').value || null,
           start_date_min: document.getElementById('cd-start-min').value || null,
           start_date_max: document.getElementById('cd-start-max').value || null,
           duration_min_months: document.getElementById('cd-dur-min').value || null,
@@ -3203,32 +3622,114 @@ KEY EVALUATOR FOCUS:
     cancel.addEventListener('click', () => modal.classList.add('hidden'));
     modal.addEventListener('click', e => { if (e.target === modal) modal.classList.add('hidden'); });
 
+    const stripExt = n => n.replace(/\.[^.]+$/, '');
+    const fileInput = document.getElementById('admin-doc-file');
+    const titleInput = document.getElementById('admin-doc-title');
+    fileInput?.addEventListener('change', () => {
+      const files = fileInput.files;
+      if (!titleInput) return;
+      if (files.length === 1) {
+        titleInput.value = stripExt(files[0].name);
+        titleInput.disabled = false;
+        titleInput.placeholder = 'Auto desde nombre del archivo';
+      } else if (files.length > 1) {
+        titleInput.value = '';
+        titleInput.disabled = true;
+        titleInput.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+      }
+    });
+
     form.addEventListener('submit', async e => {
       e.preventDefault();
-      const fileInput = document.getElementById('admin-doc-file');
-      const file = fileInput.files[0];
-      if (!file) return;
+      const files = Array.from(fileInput.files);
+      if (!files.length) return;
 
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('title', document.getElementById('admin-doc-title').value || file.name);
-      fd.append('description', document.getElementById('admin-doc-desc').value);
-      fd.append('tags', document.getElementById('admin-doc-tags').value);
-      fd.append('ownerType', 'platform');
+      const titleOverride = files.length === 1 ? titleInput.value : '';
+      const description = document.getElementById('admin-doc-desc').value;
+      const tags = document.getElementById('admin-doc-tags').value;
 
-      try {
-        const res = await fetch('/v1/documents/official', {
-          method: 'POST',
-          headers: { 'Authorization': 'Bearer ' + API.getToken() },
-          body: fd
-        });
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-        Toast.show('Documento subido', 'ok');
-        modal.classList.add('hidden');
-        form.reset();
-        loadPlatformDocs();
-      } catch (e) { Toast.show('Error: ' + e.message, 'error'); }
+      const progEl = document.getElementById('admin-doc-progress');
+      const submitBtn = document.getElementById('admin-doc-submit-btn');
+      const submitLbl = document.getElementById('admin-doc-submit-label');
+      const escTxt = s => { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; };
+
+      progEl.classList.remove('hidden');
+      progEl.innerHTML = `
+        <div id="admin-prog-summary" class="text-xs font-bold mb-2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+          <span>Procesando 0 / ${files.length}</span>
+        </div>
+        <div class="space-y-1.5 max-h-40 overflow-y-auto pr-1">
+          ${files.map((f, i) => `
+            <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-surface-container-low" data-prog-idx="${i}">
+              <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+              <span class="flex-1 truncate" title="${escTxt(f.name)}">${escTxt(f.name)}</span>
+              <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+            </div>`).join('')}
+        </div>`;
+
+      const updateRow = (i, status, label) => {
+        const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+        if (!row) return;
+        const icon = row.querySelector('.prog-icon');
+        const stat = row.querySelector('.prog-status');
+        if (status === 'uploading') {
+          icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+          stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+        } else if (status === 'done') {
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+          stat.textContent = label || 'subido'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+        } else if (status === 'failed') {
+          icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+          stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+        }
+      };
+
+      submitBtn.disabled = true;
+      fileInput.disabled = true;
+      if (titleInput) titleInput.disabled = true;
+
+      let ok = 0, fail = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        submitLbl.textContent = `Subiendo ${i + 1}/${files.length}...`;
+        document.getElementById('admin-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+        updateRow(i, 'uploading');
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('title', titleOverride || stripExt(file.name));
+        fd.append('description', description);
+        fd.append('tags', tags);
+        fd.append('ownerType', 'platform');
+        try {
+          const res = await fetch('/v1/documents/official', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + API.getToken() },
+            body: fd
+          });
+          const json = await res.json();
+          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+          ok++;
+          updateRow(i, 'done');
+        } catch (err) {
+          fail++;
+          updateRow(i, 'failed', err.message.slice(0, 40));
+        }
+      }
+
+      const summary = document.getElementById('admin-prog-summary');
+      summary.innerHTML = fail
+        ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s)</span>`;
+
+      submitBtn.disabled = false;
+      fileInput.disabled = false;
+      if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Auto desde nombre del archivo'; }
+      submitLbl.textContent = 'Subir';
+      form.reset();
+      loadPlatformDocs();
+      // Auto-close modal after 2s if all OK; keep open if there were failures
+      if (!fail) setTimeout(() => { modal.classList.add('hidden'); progEl.classList.add('hidden'); progEl.innerHTML = ''; }, 1800);
     });
   }
 
@@ -3623,20 +4124,22 @@ KEY EVALUATOR FOCUS:
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest mb-5">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Upload document</h4>
           <form id="call-doc-upload-form" class="space-y-3">
-            <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required
+            <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
               class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
             <div class="grid grid-cols-2 gap-3">
-              <input type="text" id="call-doc-title" placeholder="Title (optional, defaults to filename)"
+              <input type="text" id="call-doc-title" placeholder="Title (auto from filename)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
               <input type="text" id="call-doc-tags" placeholder="Tags (comma separated)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
             </div>
             <textarea id="call-doc-desc" rows="2" placeholder="Description..."
               class="w-full px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"></textarea>
-            <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
-              <span class="material-symbols-outlined text-sm">cloud_upload</span> Upload & vectorize
+            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              <span class="material-symbols-outlined text-sm">cloud_upload</span>
+              <span id="call-doc-submit-label">Upload & vectorize</span>
             </button>
           </form>
+          <div id="call-doc-progress" class="hidden mt-3 pt-3 border-t border-outline-variant/20"></div>
         </div>
 
         <!-- Document list -->
@@ -3645,38 +4148,120 @@ KEY EVALUATOR FOCUS:
       // Load docs linked to programs using this template
       formsLoadCallDocs();
 
-      // Bind upload
+      // Auto-fill title from filename when 1 file picked
+      const stripExt = n => n.replace(/\.[^.]+$/, '');
+      document.getElementById('call-doc-file')?.addEventListener('change', (e) => {
+        const files = e.target.files;
+        const titleEl = document.getElementById('call-doc-title');
+        if (!titleEl) return;
+        if (files.length === 1) {
+          titleEl.value = stripExt(files[0].name);
+          titleEl.disabled = false;
+          titleEl.placeholder = 'Title (auto from filename)';
+        } else if (files.length > 1) {
+          titleEl.value = '';
+          titleEl.disabled = true;
+          titleEl.placeholder = `${files.length} archivos — se usará el nombre de cada uno`;
+        }
+      });
+
+      // Bind upload (loop for multi-file with per-file progress)
       document.getElementById('call-doc-upload-form').addEventListener('submit', async (e) => {
         e.preventDefault();
-        const fileInput = document.getElementById('call-doc-file');
-        const file = fileInput.files[0];
-        if (!file) return;
+        const files = Array.from(document.getElementById('call-doc-file').files);
+        if (!files.length) return;
 
         // Find first program linked to this template
         const programs = await API.get('/admin/data/programs');
         const linked = programs.find(p => p.form_template_id === fm.templateId);
         if (!linked) { Toast.show('No programme linked to this template', 'error'); return; }
 
-        const fd = new FormData();
-        fd.append('file', file);
-        fd.append('title', document.getElementById('call-doc-title').value || file.name);
-        fd.append('description', document.getElementById('call-doc-desc').value);
-        fd.append('tags', document.getElementById('call-doc-tags').value);
-        fd.append('doc_type', 'call');
-        fd.append('program_id', linked.id);
+        const titleOverride = files.length === 1 ? document.getElementById('call-doc-title').value : '';
+        const description = document.getElementById('call-doc-desc').value;
+        const tags = document.getElementById('call-doc-tags').value;
 
-        try {
-          const res = await fetch('/v1/documents/official', {
-            method: 'POST',
-            headers: { 'Authorization': 'Bearer ' + API.getToken() },
-            body: fd
-          });
-          const json = await res.json();
-          if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
-          Toast.show('Document uploaded & vectorizing...', 'ok');
-          document.getElementById('call-doc-upload-form').reset();
-          formsLoadCallDocs();
-        } catch (err) { Toast.show('Error: ' + err.message, 'error'); }
+        const progEl = document.getElementById('call-doc-progress');
+        const submitBtn = document.getElementById('call-doc-submit-btn');
+        const submitLbl = document.getElementById('call-doc-submit-label');
+        const fileInput = document.getElementById('call-doc-file');
+        const titleInput = document.getElementById('call-doc-title');
+
+        progEl.classList.remove('hidden');
+        progEl.innerHTML = `
+          <div id="call-prog-summary" class="text-xs font-bold text-on-surface-variant mb-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-base animate-spin text-primary">sync</span>
+            <span>Procesando 0 / ${files.length}</span>
+          </div>
+          <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+            ${files.map((f, i) => `
+              <div class="flex items-center gap-2 text-xs px-2 py-1.5 rounded-lg bg-white/40" data-prog-idx="${i}">
+                <span class="prog-icon material-symbols-outlined text-on-surface-variant/50 text-base">schedule</span>
+                <span class="flex-1 truncate" title="${esc(f.name)}">${esc(f.name)}</span>
+                <span class="prog-status text-[10px] text-on-surface-variant/70 font-medium">en cola</span>
+              </div>`).join('')}
+          </div>`;
+
+        const updateRow = (i, status, label) => {
+          const row = progEl.querySelector(`[data-prog-idx="${i}"]`);
+          if (!row) return;
+          const icon = row.querySelector('.prog-icon');
+          const stat = row.querySelector('.prog-status');
+          if (status === 'uploading') {
+            icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
+            stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+          } else if (status === 'done') {
+            icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
+            stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+          } else if (status === 'failed') {
+            icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
+            stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
+          }
+        };
+
+        submitBtn.disabled = true;
+        fileInput.disabled = true;
+        if (titleInput) titleInput.disabled = true;
+
+        let ok = 0, fail = 0;
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          submitLbl.textContent = `Uploading ${i + 1}/${files.length}...`;
+          document.getElementById('call-prog-summary').querySelector('span:last-child').textContent = `Procesando ${i + 1} / ${files.length} — ${file.name}`;
+          updateRow(i, 'uploading');
+          const fd = new FormData();
+          fd.append('file', file);
+          fd.append('title', titleOverride || stripExt(file.name));
+          fd.append('description', description);
+          fd.append('tags', tags);
+          fd.append('doc_type', 'call');
+          fd.append('program_id', linked.id);
+          try {
+            const res = await fetch('/v1/documents/official', {
+              method: 'POST',
+              headers: { 'Authorization': 'Bearer ' + API.getToken() },
+              body: fd
+            });
+            const json = await res.json();
+            if (!json.ok) throw new Error(json.error?.message || 'Upload failed');
+            ok++;
+            updateRow(i, 'done');
+          } catch (err) {
+            fail++;
+            updateRow(i, 'failed', err.message.slice(0, 40));
+          }
+        }
+
+        const summary = document.getElementById('call-prog-summary');
+        summary.innerHTML = fail
+          ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
+          : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+
+        submitBtn.disabled = false;
+        fileInput.disabled = false;
+        if (titleInput) { titleInput.disabled = false; titleInput.placeholder = 'Title (auto from filename)'; }
+        submitLbl.textContent = 'Upload & vectorize';
+        document.getElementById('call-doc-upload-form').reset();
+        formsLoadCallDocs();
       });
     }
   }
@@ -4199,5 +4784,201 @@ KEY EVALUATOR FOCUS:
     }
   });
 
-  return { init, openEdit, confirmDelete };
+  /* ═════════════════════════════════════════════════════════════════
+     Pattern Library (Diagnose & Improve, TASK-007)
+     ════════════════════════════════════════════════════════════════ */
+
+  let _patternsCache = null;
+  let _lettersCache = null;
+  let _patternsStatsCache = null;
+
+  async function loadPatterns() {
+    const tbody = document.getElementById('patterns-tbody');
+    const lettersTbody = document.getElementById('patterns-letters-tbody');
+    if (tbody) tbody.innerHTML = '<tr><td colspan="6" class="py-6 text-center text-on-surface-variant text-sm">Cargando…</td></tr>';
+    if (lettersTbody) lettersTbody.innerHTML = '<tr><td colspan="6" class="py-6 text-center text-on-surface-variant text-sm">Cargando…</td></tr>';
+
+    try {
+      const [stats, patterns, letters] = await Promise.all([
+        API.get('/diagnose/stats'),
+        API.get('/diagnose/patterns'),
+        API.get('/diagnose/letters'),
+      ]);
+      _patternsStatsCache = stats;
+      _patternsCache = patterns;
+      _lettersCache = letters;
+
+      renderPatternsStats(stats);
+      renderProgrammeFilter(stats.programmes || []);
+      renderPatternsTable();
+      renderLettersTable(letters);
+
+      // bind filters once
+      const scopeSel = document.getElementById('patterns-filter-scope');
+      const progSel = document.getElementById('patterns-filter-programme');
+      if (scopeSel && !scopeSel.dataset.bound) {
+        scopeSel.dataset.bound = '1';
+        scopeSel.addEventListener('change', renderPatternsTable);
+      }
+      if (progSel && !progSel.dataset.bound) {
+        progSel.dataset.bound = '1';
+        progSel.addEventListener('change', renderPatternsTable);
+      }
+    } catch (e) {
+      if (tbody) tbody.innerHTML = `<tr><td colspan="6" class="py-6 text-center text-error text-sm">Error: ${e.message || e}</td></tr>`;
+    }
+  }
+
+  function renderPatternsStats(stats) {
+    const wrap = document.getElementById('patterns-stats');
+    if (!wrap) return;
+    const by = stats.patterns_by_scope || {};
+    const card = (label, value, hint) =>
+      `<div class="bg-surface border border-outline-variant/30 rounded-xl p-3">
+         <div class="text-2xl font-bold text-on-surface">${value}</div>
+         <div class="text-xs text-on-surface-variant">${label}</div>
+         ${hint ? `<div class="text-[10px] text-on-surface-variant/70 mt-1">${hint}</div>` : ''}
+       </div>`;
+    wrap.innerHTML =
+      card('Cartas', stats.letters_total || 0) +
+      card('Findings', stats.findings_total || 0) +
+      card('Patrones', stats.patterns_active || 0) +
+      card('Universales', by.universal || 0, 'N≥2 cartas en ≥2 programas') +
+      card('Por programa', by.programme || 0, 'N≥2 en mismo programa');
+  }
+
+  function renderProgrammeFilter(programmes) {
+    const sel = document.getElementById('patterns-filter-programme');
+    if (!sel) return;
+    const opts = ['<option value="">Todos los programas</option>']
+      .concat((programmes || []).map(p =>
+        `<option value="${p.programme_code}">${escapeHTML(p.programme_name || p.programme_code)}</option>`));
+    sel.innerHTML = opts.join('');
+  }
+
+  function renderPatternsTable() {
+    const tbody = document.getElementById('patterns-tbody');
+    if (!tbody) return;
+    const patterns = _patternsCache?.data || _patternsCache || [];
+    const scope = document.getElementById('patterns-filter-scope')?.value || '';
+    const prog = document.getElementById('patterns-filter-programme')?.value || '';
+
+    const filtered = patterns.filter(p => {
+      if (scope && p.scope !== scope) return false;
+      if (prog) {
+        if (p.scope === 'universal') return true;
+        if (p.programme_code !== prog) return false;
+      }
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="py-6 text-center text-on-surface-variant text-sm">Sin patrones con esos filtros.</td></tr>';
+      return;
+    }
+
+    const scopeBadge = (s) => {
+      const colors = {
+        universal: 'bg-primary/10 text-primary',
+        programme: 'bg-tertiary/10 text-tertiary',
+        emergent:  'bg-on-surface-variant/15 text-on-surface-variant',
+      };
+      return `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold ${colors[s] || ''}">${s.toUpperCase()}</span>`;
+    };
+    const sevBadge = (s) => {
+      const colors = {
+        critical:    'bg-error/15 text-error',
+        high:        'bg-error/10 text-error',
+        medium_high: 'bg-orange-500/10 text-orange-700',
+        medium:      'bg-yellow-500/10 text-yellow-800',
+        medium_low:  'bg-yellow-500/5 text-yellow-700',
+        low:         'bg-on-surface-variant/10 text-on-surface-variant',
+        positive:    'bg-green-500/10 text-green-700',
+      };
+      return `<span class="px-2 py-0.5 rounded text-[10px] font-medium ${colors[s] || ''}">${s}</span>`;
+    };
+
+    tbody.innerHTML = filtered.map(p => `
+      <tr class="border-t border-outline-variant/20">
+        <td class="p-3 align-top">${scopeBadge(p.scope)}</td>
+        <td class="p-3 align-top text-xs text-on-surface-variant">${escapeHTML(p.programme_name || (p.scope === 'universal' ? '— todos —' : '—'))}</td>
+        <td class="p-3 align-top">
+          <div class="font-medium text-on-surface">${escapeHTML(p.pattern_text)}</div>
+          ${p.writer_rule_text ? `<div class="text-xs text-on-surface-variant mt-1 italic">→ ${escapeHTML(p.writer_rule_text)}</div>` : ''}
+        </td>
+        <td class="p-3 align-top text-xs text-on-surface-variant">${escapeHTML(p.criterion || '—')}</td>
+        <td class="p-3 align-top text-center font-bold">${p.occurrences_count}</td>
+        <td class="p-3 align-top">${sevBadge(p.severity_avg)}</td>
+      </tr>
+    `).join('');
+  }
+
+  function renderLettersTable(lettersResp) {
+    const tbody = document.getElementById('patterns-letters-tbody');
+    if (!tbody) return;
+    const letters = lettersResp?.data || lettersResp || [];
+    if (letters.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="py-6 text-center text-on-surface-variant text-sm">Sin cartas cargadas.</td></tr>';
+      return;
+    }
+    const resultBadge = (r) => {
+      const map = {
+        awarded:             { txt: 'Concedido',    cls: 'bg-green-500/10 text-green-700' },
+        rejected_threshold:  { txt: 'No threshold', cls: 'bg-error/15 text-error' },
+        rejected_ranking:    { txt: 'No ranking',   cls: 'bg-orange-500/10 text-orange-700' },
+        unknown:             { txt: 'Desconocido',  cls: 'bg-on-surface-variant/10 text-on-surface-variant' },
+      };
+      const x = map[r] || map.unknown;
+      return `<span class="px-2 py-0.5 rounded text-[10px] font-medium ${x.cls}">${x.txt}</span>`;
+    };
+    tbody.innerHTML = letters.map(l => `
+      <tr class="border-t border-outline-variant/20">
+        <td class="p-3 align-top font-bold">${escapeHTML(l.proposal_acronym || '—')}</td>
+        <td class="p-3 align-top text-xs">${escapeHTML(l.programme_name || l.programme_code || '—')}</td>
+        <td class="p-3 align-top text-xs">${l.total_score != null ? `${l.total_score} / ${l.total_threshold || '—'}` : '<span class="text-on-surface-variant">—</span>'}</td>
+        <td class="p-3 align-top">${resultBadge(l.result)}</td>
+        <td class="p-3 align-top text-xs text-on-surface-variant">${escapeHTML(l.source_format)}</td>
+        <td class="p-3 align-top text-center">
+          <span class="font-bold">${l.findings_count}</span>
+          <span class="text-[10px] text-on-surface-variant">(+${l.positives_count} pos)</span>
+        </td>
+      </tr>
+    `).join('');
+  }
+
+  function escapeHTML(s) {
+    if (s == null) return '';
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // Opens the convocatorias editor directly. Works whether the Admin section
+  // is already mounted or being navigated to. Used by Convocatorias tab to
+  // jump to the editor after importing a call from the public feed.
+  async function openConvocatoria(programId, programName) {
+    if (!programId) return;
+    // Make sure the admin DOM is ready and the convocatorias section is loaded.
+    if (typeof activeSection !== 'undefined') activeSection = 'convocatorias';
+    document.querySelectorAll('.admin-section').forEach(s => s.classList.add('hidden'));
+    const sec = document.getElementById('admin-sec-convocatorias');
+    if (sec) sec.classList.remove('hidden');
+    // Highlight the convocatorias tab if visible
+    document.querySelectorAll('.admin-tab').forEach(b => {
+      const isThis = b.dataset.section === 'convocatorias';
+      b.classList.toggle('border-b-2', isThis);
+      b.classList.toggle('border-secondary-fixed', isThis);
+      b.classList.toggle('text-primary', isThis);
+      b.classList.toggle('font-bold', isThis);
+      b.classList.toggle('text-on-surface-variant', !isThis);
+    });
+    // Fetch program meta so we can pass `prog` to convOpenProgram
+    try {
+      const programs = await API.get('/admin/data/programs/full');
+      const prog = programs.find(p => p.id === programId);
+      convOpenProgram(programId, programName || prog?.name || '', prog);
+    } catch (e) {
+      convOpenProgram(programId, programName || '');
+    }
+  }
+
+  return { init, openEdit, confirmDelete, openConvocatoria };
 })();

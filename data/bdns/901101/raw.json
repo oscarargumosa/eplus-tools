@@ -1,0 +1,84 @@
+{
+  "id": 1102662,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SABADELL",
+    "nivel3": "AJUNTAMENT DE SABADELL"
+  },
+  "sedeElectronica": "https://seu.sabadell.cat/seuelectronica/p/portada_cat.asp",
+  "codigoBDNS": "901101",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Convocatoria de otorgamiento de subvenciones destinadas a implantar la Agenda 21 Escolar en los centros educativos del municipio para el curso escolar 2026-2027.",
+  "descripcionLeng": "Convocatòria d'atorgament de subvencions destinades a desenvolupar l'Agenda 21 Escolar als centres educatius del municipi per al curs escolar 2026-2027.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases específicas reguladoras de las subvenciones destinadas a implantar la Agenda 21 en los centros educativos del término municipales de Sabadell.",
+  "urlBasesReguladoras": "https://seu.sabadell.cat/opensiac/action/eppublicaciondetalle?method=verDetallePublicacion&idPublicacion=8135",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de la publicación de este extracto en el BOPB.",
+  "textFin": "Treinta días hábiles a partir del día siguiente al de la publicación del extracto al BOPB.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441529,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "28_Annex_1_Convocatoria_2026-2027_copia_autentica.pdf",
+      "long": 308803,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441528,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "28_Convocatoria_subvenciones_A21E_2026-2027_CASTELLANO.pdf",
+      "long": 273683,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209878,
+      "titulo": "Extracto de los acuerdos del concejal de Transición Ecológica, decreto 4681/2026 de fecha 24 de marzo de 2026, por los que se convocan subvenciones para implantar la Agenda 21 en los centros educativos del término municipal de Sabadell para el curso escolar 2026-2027.",
+      "tituloLeng": "Extracte dels acords del regidor de Transició Ecològica, decret 4681/2026 de data 24 de març de 2026, pels que es convoquen subvencions per implantar l'Agenda 21 als centres educatius del terme municipal de Sabadell per al curs escolar 2026-2027.",
+      "texto": "<p>Primer. beneficiaris: Poden sol·licitar aquestes subvencions tots els centres educatius públics, els concertats ubicats al terme municipal de Sabadell i les escoles d'ensenyament pre-escolar no obligatori privades amb base associativa. Segon. finalitat: La realització d'actuacions educatives dirigides a la introducció o aplicació d'actuacions i polítiques de sostenibilitat a nivell de centre escolar i el seu entorn que es duguin a terme en el curs escolar de la convocatòria. Tercer. Bases reguladores. Ordenança General de Subvencions aprovada pel Ple de l'Ajuntament de Sabadell en data 23 de desembre del 2008 i publicada al BOP de Barcelona número 10 de 12 de gener del 2009. Bases específiques aprovades pel Ple Municipal el 9 de desembre de 2009 (BOP de Barcelona núm. 62, de 13 de març de 2010) i modificades el 3 d'abril de 2012 (BOP de Barcelona núm. De registre 022012008742, de 25 d'abril de 2012) i que han estat objecte d'un text refós aprovat mitjançant Decret 4948/2012, de 24 de maig de 2012, del Tinent d'Alcalde de l'Àrea d'Urbanisme i Espai Públic, publicat a la seu electrònica municipal. Quart. import: La dotació màxima per a aquesta convocatòria serà de 12.000,00 euros. Cinquè. Termini de presentació de sol·licituds: Trenta dies a partir del dia següent al de la publicació d'aquest extracte al BOP de Barcelona. Sisè. Altres dades. Per a la tramitació de les sol·licituds serà preceptiu que s'aporti la documentació que es detalla en l'apartat 6 del text refós de la bases específiques anteriorment esmentat. </p>",
+      "textoLeng": "<p>Primer. beneficiaris: Poden sol·licitar aquestes subvencions tots els centres educatius públics, els concertats ubicats al terme municipal de Sabadell i les escoles d'ensenyament pre-escolar no obligatori privades amb base associativa. Segon. finalitat: La realització d'actuacions educatives dirigides a la introducció o aplicació d'actuacions i polítiques de sostenibilitat a nivell de centre escolar i el seu entorn que es duguin a terme en el curs escolar de la convocatòria. Tercer. Bases reguladores. Ordenança General de Subvencions aprovada pel Ple de l'Ajuntament de Sabadell en data 23 de desembre del 2008 i publicada al BOP de Barcelona número 10 de 12 de gener del 2009. Bases específiques aprovades pel Ple Municipal el 9 de desembre de 2009 (BOP de Barcelona núm. 62, de 13 de març de 2010) i modificades el 3 d'abril de 2012 (BOP de Barcelona núm. De registre 022012008742, de 25 d'abril de 2012) i que han estat objecte d'un text refós aprovat mitjançant Decret 4948/2012, de 24 de maig de 2012, del Tinent d'Alcalde de l'Àrea d'Urbanisme i Espai Públic, publicat a la seu electrònica municipal. Quart. import: La dotació màxima per a aquesta convocatòria serà de 12.000,00 euros. Cinquè. Termini de presentació de sol·licituds: Trenta dies a partir del dia següent al de la publicació d'aquest extracte al BOP de Barcelona. Sisè. Altres dades. Per a la tramitació de les sol·licituds serà preceptiu que s'aporti la documentació que es detalla en l'apartat 6 del text refós de la bases específiques anteriorment esmentat.</p>",
+      "url": "http://bop.diba.cat/anunci/3934164/convocatoria-de-subvencions-per-implantar-l-agenda-21-als-centres-educatius-del-terme-municipal-de-sabadell-per-al-curs-escolar-2026-2027-versio-en-catala-i-castella-ajuntament-de-sabadell",
+      "cve": "CVE 202610081980",
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

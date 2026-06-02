@@ -1,0 +1,44 @@
+## Expected Outcome
+
+- Increased adoption of open science and research data management practices in line with the FAIR principles by researchers and across research infrastructures (RIs) in Europe.
+- Increased uptake of the EOSC Federation by researchers through the long-term sustainable provision in the Federation of scientific services and high-quality, FAIR research data, and their integration in scientific workflows addressing current gaps and needs of research communities.
+- Research communities, as well as ESFRI and other European research infrastructures increase their alignment with EOSC standards and policies, and their capacity to integrate in the EOSC Federation.
+
+## Scope
+
+This topic aims to further increase across Europe the adoption of open science and research data management practices in line with the FAIR principles, and to support the development of a user-focused and science-driven EOSC Federation.
+
+It capitalises on the previous work by Science Clusters in enabling open science practices, FAIR implementation and managing open calls for multi-disciplinary science projects. It also builds on the experience by several RIs and other organisations as active participants in building the EOSC Federation, either through the establishment of EOSC nodes or the onboarding of resources to EOSC nodes[1], to support the engagement of underrepresented RIs and research communities into the EOSC ecosystem.
+
+Proposals should cover both the following activities:
+
+1) Accelerate FAIR adoption and the contribution to and use of EOSC resources by multiple research communities through open science projects.
+
+This activity should be implemented through open calls that provide grants to third parties for open science projects through a cascading grant mechanism. The open calls should encourage, where applicable, cross-RI and/or cross-domain collaborations, including for data access, use and reuse.
+
+Open science projects should address questions of high scientific impact, adopting best practices for FAIR data and service management and demonstrating their benefits. Their activities may include developing, annotating, curating and making FAIR high-value datasets, developing direct pipelines to integrate large-scale experimental data in repositories federated in EOSC, operationalising data access for AI-based applications, reusing existing datasets, enhancing existing and developing new vocabularies, data standards, metadata mappings and crosswalks, developing software, tools and services, or supporting open science community building.
+
+They should cover a broad range of (academic and/or industrial) research communities and scientific disciplines, including those less represented in the EOSC Federation. They should make use of resources available in the EOSC Federation and adopt existing EOSC policies and standards[2], where possible. Projects should strive to ensure the sustained, beyond the projects’ duration, integration, deployment and operation of relevant outcomes in the EOSC Federation.
+
+At least EUR 29 million of the EU contribution to this topic should be used in this activity[3]. The financial support to third parties for the open science projects must be provided in the form of grants that should be between EUR 100 000 and 250 000 per grant for a duration of 12 to 24 months. The consortium shall put in place adequate measures to support the integration of the open science projects’ results into the EOSC Federation. These could include mentoring, training and any other activities providing effective linkage to the EOSC Federation and EOSC Nodes, as needed for the specific nature of each project.
+
+2) Support the integration of thematic research and RI communities in the EOSC Federation
+
+The following activities should be included:
+- Coordinating, aligning and networking existing community-based competence centres on FAIR and open science practices developed within the EOSC ecosystem.
+- Developing training programmes, modules and material on FAIR and open science practices tailored to the specific needs of different thematic research communities. This activity should include feedback mechanisms to ensure that the training services are responsive to the evolving needs of EOSC user communities.
+- Developing frameworks for the provision and continuous evolution of high-impact services and data repositories onboarded to the EOSC Federation, fostering interoperability and integration of data and resources from diverse scientific domains and promoting their sharing through the EOSC Federation.
+- Establishing mechanisms for the integration and long-term sustainable provision of all relevant outcomes into the EOSC Federation, as well as for continuous feedback and adaptation, ensuring evolving requirements of researchers and RIs are met within the EOSC ecosystem.
+- Engaging underrepresented thematic research and RI communities to increase their integration in EOSC.
+
+Proposals are expected to cooperate and align with activities of the EOSC Partnership and to coordinate with relevant initiatives and projects, including actions awarded under topics HORIZON-INFRA-2025-01-EOSC-01, HORIZON-INFRA-2025-01-EOSC-02 and HORIZON-INFRA-2027-01-EOSC-01. This may include the upgrade, deployment and adoption where appropriate of existing community-endorsed pilot, tools, services and standards developed by past and ongoing INFRAEOSC projects. To this extent, proposals should provide for dedicated activities and earmark appropriate resources.
+
+In this topic the integration of the gender dimension (sex and gender analysis) in research and innovation content is not a mandatory requirement. This topic implements the co-programmed European Partnership for the European Open Science Cloud[4].
+
+[1] Relevant information and documentation about the EOSC Federation can be found in the EOSC Federation Handbook and other relevant documentation adopted by the EOSC Federation.
+
+[2] As described in the EOSC Federation Handbook and other relevant documentation potentially adopted by the EOSC Federation.
+
+[3] Including reasonable administrative and management costs related to the open calls for the financial support to third parties.
+
+[4] https://eosc.eu/partnership/

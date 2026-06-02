@@ -1,0 +1,84 @@
+{
+  "id": 1104576,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLIÇÀ DE VALL",
+    "nivel3": "AYUNTAMIENTO DE LLIÇÀ DE VALL"
+  },
+  "sedeElectronica": "https://seu.llissadevall.cat/ABSIS/EAD/webspublicacion/seu/catala/emiservicio/41E6BF9D755E4825AF8E6B49E85B5079.asp",
+  "codigoBDNS": "903015",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas escolares y extraescolares para el curso 2026-2027",
+  "descripcionLeng": "Convocatòria d'ajudes escolars i extraescolars pel curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de ayudas sociales atorgadas por el área de Bienestar Social",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3080229/aprovacio-definitiva-i-publicacio-del-text-integre-de-les-bases-generals-reguladores-per-a-la-concessio-d-ajuts-socials-atorgats-per-l-area-de-serveis-socials-ajuntament-de-llica-de-vall",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-30",
+  "textInicio": "Desde el día siguiente a la fecha de publicación de la convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446866,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria español.pdf",
+      "long": 397312,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1446868,
+      "descripcion": "Resolución de aprobación de convocatoria",
+      "nombreFic": "Resolució aprovació convocatòria.pdf",
+      "long": 361901,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1446867,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria català.pdf",
+      "long": 396976,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

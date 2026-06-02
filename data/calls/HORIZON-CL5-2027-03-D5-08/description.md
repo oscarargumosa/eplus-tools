@@ -1,0 +1,11 @@
+## Expected Outcome
+
+Project results are expected to contribute to both of the following expected outcomes:
+- Additive manufacturing including high performance polymers, composites and metals, offering significantly improved performance compared to state-of-the-art. Entire process including design / manufacturing / characterization and testing / certification.
+- Sustainable aircraft circular design and manufacturing processes of individual high-value components towards further developing the innovation pipeline from system demonstration to deployment stage in the EU and Associated Countries.
+
+## Scope
+
+This topic focuses on:
+- Additive design and manufacturing of aircraft and engine structural components have already transformed the industry and are expected to be the key to the EU competitiveness. Geopolitical aspects for raw materials reinforce the importance of additive manufacturing, while the European RTOs and industry recognised that there is a substantial untapped potential towards even higher energy efficiency, savings in critical raw materials and higher quality parts. The main objective of this topic is to resolve existing challenges in the AD/AM of metal, high performance/value polymer and composite parts, related to residual stresses, non-equilibrium phase transformations, joining, defects and reproducibility among others.
+- Building on previous research efforts (i.e. H2020-SUSTAINair) and EREA’s Future Sky initiatives on circular aviation, proposals should focus to real, challenging and competitive industrial use cases for circular design of individual components, joining technologies, improved maintenance and repair technologies to extend aircraft lifetime and improved recovery of high-quality recycling materials. Especially as regards engines and safety critical systems, real-time condition monitoring and inspection methods have the potential to improve repairability by determining an optimized degradation status, allowing smart repairs on-wing and on-site that reduce or postpone the need for material- and energy-intense overhauls or replacements.

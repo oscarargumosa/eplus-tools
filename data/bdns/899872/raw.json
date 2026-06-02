@@ -1,0 +1,72 @@
+{
+  "id": 1101433,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "POZOBLANCO",
+    "nivel3": "AYUNTAMIENTO DE POZOBLANCO"
+  },
+  "sedeElectronica": "https://sede.eprinsa.es/pozoblanco",
+  "codigoBDNS": "899872",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 700,
+  "mrr": false,
+  "descripcion": "Resolución de Alcaldía nº 2026/00001575 de fecha 17/04/2026 por la que se convoca Subvención de Concurrencia Competitiva para la participación en el III Concurso \"Nuestros balcones, ventanas y espacios comunitarios 2026\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "En sesión ordinaria de Pleno, celebrada el 28 de octubre de 2013, se aprobó inicialmente la Ordenanza General reguladora de la\nconcesión de Subvenciones.",
+  "urlBasesReguladoras": "htps..//pozoblanco.es/wp-content/uploads/2014/10/Ordenanza-reguladora-concesion-de-subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de su publicación en el BOP",
+  "textFin": "29/04/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438380,
+      "descripcion": "BASES III CONCURSO BALCONES 2026",
+      "nombreFic": "BASES III CONCURSO NUESTROS BALCONES COCHERAS PATIOS 2026.pdf",
+      "long": 235754,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438376,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO III CONCURSO BALCONES 2026.pdf",
+      "long": 167251,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -44,5 +44,6 @@ router.get('/',                   ctrl.listEntities);
 /* ── Ficha y similares (público) ─────────────────────────────── */
 router.get('/:oid',               ctrl.getEntity);
 router.get('/:oid/similar',       ctrl.listSimilar);
+router.get('/:oid/projects',      ctrl.listEntityProjects);
 
 module.exports = router;

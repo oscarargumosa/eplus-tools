@@ -1,0 +1,176 @@
+{
+  "identifier": "DIGITAL-2026-BESTUSE-10-NETWORKSICs",
+  "ccm2Id": "51144508",
+  "callIdentifier": "DIGITAL-2026-BESTUSE-10",
+  "callTitle": "Accelerating Best Use of Technologies",
+  "title": "Ensuring comprehensive geographical coverage of the Network of Safer Internet Centres (SICs)",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-04-21",
+  "deadline": "2026-10-01",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL Simple Grants",
+  "actionCode": "DIGITAL-SIMPLE",
+  "mgaCode": "DIGITAL-AG",
+  "budget": {
+    "total_eur": 48800000,
+    "by_year": {
+      "2026": 48800000
+    },
+    "expected_grants": 15,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "DIGITAL-2026-BESTUSE-10-NETWORKSICs",
+    "DIGITAL-2026-BESTUSE-10",
+    "Artificial intelligence, intelligent systems, multi agent systems",
+    "Civil society organisations",
+    "Combating violence against children,  young people and women",
+    "Communication",
+    "Communication network",
+    "Computer and information sciences",
+    "Computer sciences - Operating systems (software development only)",
+    "Computing",
+    "Continuing professional training",
+    "Curriculum design and development",
+    "Cybersecurity",
+    "Cybersecurity Domains",
+    "Cybersecurity-aware culture (e.g. including children education)",
+    "Data Security and Privacy",
+    "Data protection",
+    "Digital Rights Management (DRM)",
+    "Education",
+    "Education and Training",
+    "Education-enterprises partnerships",
+    "Enhancing personal skills",
+    "Europe's innovation potential",
+    "Gamification",
+    "Gaming technology",
+    "Higher education",
+    "IT skills and competence",
+    "Identification of skills needs",
+    "Inclusive Education",
+    "Innovation",
+    "Involvement of children",
+    "Knowledge triangle between education",
+    "Learning outcomes",
+    "Media literacy",
+    "Network technologies / Internetworking",
+    "Networks (communication networks, sensor networks, networks of robots, etc.)",
+    "New skills and competences for teachers",
+    "New technologies for Audio-Visual sector - Media",
+    "Personal development",
+    "Personalised prevention",
+    "Privacy",
+    "Privacy by design",
+    "Quality of education/educational products",
+    "Rights of the child",
+    "Social Media",
+    "Teaching materials",
+    "Telecommunications",
+    "Theories, techniques and tools for the identification, collection, attribution, acquisition, analysis and preservation of digital evidence",
+    "Training",
+    "Training of trainers (multiplication)",
+    "Trust",
+    "Trust management architectures, mechanisms and policies",
+    "Trustworthy ICT",
+    "Virtual Reality",
+    "Vocational training",
+    "Youth policy"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please Write to us\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43862?topic=DIGITAL-2026-BESTUSE-10-NETWORKSICs",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-NETWORKSICs",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/wp-call/2026/call-fiche_digital-2026-bestuse-10_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (DEP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/temp-form/af/af_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "DEP MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/agr-contr/mga_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Work Programmes",
+      "url": "https://digital-strategy.ec.europa.eu/en/activities/work-programmes-digital",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Regulation 2021/964",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:27.131Z"
+}

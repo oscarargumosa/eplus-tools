@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "901542",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALBACETE / DIPUTACIÓN PROVINCIAL DE ALBACETE",
+  "nuts_codes": [
+    "ES421"
+  ],
+  "nuts_primary": "ES421",
+  "title": "Decreto nº 1922 de 20-04-2026, por el que se aprueba la convocatoria  de ayudas individuales de transporte escolar para el alumnado matriculado en centros docentes públicos no universitarios de la Junta de Comunidades de \nC-M, para el curso 2025/2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https://sede.dipualba.es/subvenciones/lista_convocatorias_todas.aspx",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901542",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipualba.es/bop/ficheros/2020/65/BOP%2065-20-P-6.PDF",
+  "text_inicio": "A partir del día siguiente a la publicación en el BOP de la provincia de Albacete",
+  "text_fin": "Treinta días naturales a partir del día siguiente a la publicación en BOP de la provincia Albacete",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210056,
+      "titulo": "Extracto del Decreto Presidencial  nº 1922, de 20/04/2026, por el que se aprueba la convocatoria de ayudas individuales de transporte escolar para el alumnado matriculado en centros docentes públicos no universitarios titularidad de la Junta de Comunidades de Castilla La Mancha, durante el curso académico 2025-2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios:</p><p>Personas físicas que tengan la condición de alumnos residentes en la provincia de Albacete, matriculados en los niveles educativos de Bachillerato y ciclos formativos de grado medio y grado superior que no hagan uso gratuito de las plazas de transporte escolar de la JCCM.</p><p>Segundo.- Objeto:</p><p>Las ayudas que se concedan irán destinadas a compensar los gastos de desplazamiento por sus propios medios del alumnado al centro docente donde cursa estudios, en sus dos modalidades, diario o de fin de semana, durante el período comprendido entre los meses de septiembre de 2025 a junio de 2026.</p><p>Tercero.- Bases reguladoras:</p><p>Ordenanza reguladora de las bases de ayudas individuales de transporte escolar para el alumnado matriculado en centros docentes públicos no universitarios, titularidad de la Junta de Comunidades de Castilla La Mancha, aprobada por acuerdo del Pleno de la Excma. Diputación Provincial de Albacete, de 17 de abril de 2020, publicada en el BOP nº 65, de 17 de junio de 2020.</p><p>Cuarto.- Cuantía:</p><p>El importe total de la convocatoria será de 100.000.- euros. Serán admitidos todos los solicitantes que, reuniendo los requisitos establecidos en la convocatoria y en las bases reguladoras, presenten la solicitud en el plazo establecido.</p><p>Quinto.- Plazo de presentación de solicitudes:</p><p>Treinta días naturales, a partir del siguiente a la publicación de este extracto en el Boletín Oficial de la provincia de Albacete.</p><p>Sexto.- Otros datos:</p><p>Las solicitudes de ayuda individual de transporte escolar serán formuladas por el alumnado que cumpla los requisitos indicados en el artículo 2º; debiendo cumplimentar el formulario electrónico de solicitud disponible en la sede electrónica de la Diputación Provincial de Albacete: www.dipualba.es, apartado “Subvenciones/Convocatorias en plazo de solicitud”, así como a través del apartado “Trámites Generales” de la misma web.</p><p>El citado formulario podrá presentarse, voluntariamente, mediante firma electrónica avanzada en el Registro Electrónico, si se dispone de certificado de firma electrónica o, alternativamente, mediante sistema de firma biométrica en los registros de cualquiera de los ayuntamientos de la provincia, una vez que la solicitud haya sido cumplimentada según se indica en el párrafo precedente. Para ello será obligatorio, igualmente, incluir una dirección de correo electrónico y, opcionalmente, un número de teléfono móvil en el formulario de solicitud.</p><p> </p>",
+      "textoLeng": null,
+      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/297241",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALBACETE",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.254Z"
+}

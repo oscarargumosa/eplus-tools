@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "899452",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALDAIA / AYUNTAMIENTO DE ALDAIA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Ayudas unidad de convivencia o familiares personas fallecidas DANA",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899452",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.aldaia.es/es/subvenciones",
+  "text_inicio": "\"30 días naturales desde publicación extracto en BOP\"",
+  "text_fin": "\"30 días naturales desde publicación extracto en BOP\"",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209243,
+      "titulo": "AYUDAS ECONÓMICAS DIRECTAS POR EL FALLECIMIENTO DE FAMILIARES O CONVIVIENTES CAUSADO POR LA DANA EN EL MUNICIPIO DE ALDAIA.",
+      "tituloLeng": null,
+      "texto": "<p>EXTRACTO DE LA CONVOCATORIA DE AYUDAS ECONÓMICAS DIRECTAS POR EL FALLECIMIENTO DE FAMILIARES O CONVIVIENTES CAUSADO POR LA DANA EN EL MUNICIPIO DE ALDAIA.</p><p>Primero. Beneficiarios: Personas físicas (familiares o convivientes) de las personas fallecidas a consecuencia de la DANA en el municipio de Aldaia, según el orden de prelación establecido en la Base Quinta.</p><p>Segundo. Objeto: Concesión directa de ayudas económicas para paliar el impacto derivado de la pérdida de familiares o convivientes por la catástrofe de la DANA.</p><p>Tercero. Bases Reguladoras: Aprobadas por Resolución de Alcaldía nº 2026/1258 de fecha 09/04/2026 del Ayuntamiento de Aldaia.</p><p>Cuarto. Cuantía: Importe de 10.000 euros por cada familiar difunto. El presupuesto total máximo de la convocatoria es de 60.000 euros, financiado con fondos estatales (Real Decreto-ley 7/2024).</p><p>Quinto. Plazo de presentación de solicitudes: 30 días naturales a contar desde el día siguiente al de la publicación de este extracto en el Boletín Oficial de la Provincia (BOP) de Valencia.</p><p>Sexto. Otros datos: Se exime a los beneficiarios de la obligación de hallarse al corriente en sus obligaciones tributarias y con la Seguridad Social. El texto íntegro de la convocatoria puede consultarse en la Base de Datos Nacional de Subvenciones.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04604&lang=es",
+      "cve": "BOPV-2026/04604",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.050Z"
+}

@@ -1,0 +1,96 @@
+{
+  "id": 1101117,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE MÁLAGA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE MÁLAGA"
+  },
+  "sedeElectronica": "https://sede.malaga.es/",
+  "codigoBDNS": "899556",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "Resolución de Presidencia 2026/2601 de 14 de abril, referente a Aprobación de la convocatoria de concesión de ayudas económicas para la adecuación funcional de viviendas para personas con discapacidad o mayores de 65 años. Anualidad 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Acuerdo de Pleno de 20 de marzo de 2024 aprobación definitiva de la Ordenanza General de Subvenciones de la Diputación Provincial de Málaga.",
+  "urlBasesReguladoras": "https://www.bopmalaga.es/edicto.php?edicto=20240430-01616-2024-00",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación de esta convocatoria en el BOPMA",
+  "textFin": "Un mes a partir del día siguiente a su publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446977,
+      "descripcion": "Rectificación error",
+      "nombreFic": "20260428 Rectificación 2026-2601 convocatoria adecuación vivienda.pdf",
+      "long": 215660,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1440605,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "ANEXO I_Solicitud.pdf",
+      "long": 384881,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440607,
+      "descripcion": "Anexo II Autorización",
+      "nombreFic": "ANEXO II_Modelo autorizar obras.pdf",
+      "long": 131228,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440609,
+      "descripcion": "Anexo III Declaración responsable",
+      "nombreFic": "ANEXO III_Declaración responsable.pdf",
+      "long": 114700,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1437486,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260414 Convocatoria adecuación funcional viviendas 2026.pdf",
+      "long": 430030,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

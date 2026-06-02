@@ -1,0 +1,13 @@
+## Scope
+
+Main battle tanks (MBTs), with their unique combination of protection, mobility and firepower, remain a key element of land military manoeuvre, particularly in the context of conventional warfare. Existing MBT fleets in EU Member States and EDF associated countries are ageing, and new MBT technologies need to be developed and their operational effectiveness in all future scenarios thoroughly tested in order to maintain the current technological edge.
+
+This topic therefore aims to follow up and complement previous activities for the development of future MBT systems. These will need to be based on enhanced operational capabilities in all kinds of environments, e.g. in terms of higher multi-spectrum protection and survivability, advanced all-terrain mobility, superior firepower, long-range threat detection and advanced command and control systems, the ability to operate with a reduced crew and, in the future, unmanned, improved logistical sustainability and affordability of manufacturing costs, which are key to the ability to deploy large numbers of platforms in a short time if required.
+
+This topic contributes to the STEP objectives as defined in the STEP Regulation in the target investment area of defence technologies.
+
+Targeted types of activities: Studies, design, system prototyping, testing and qualification, not excluding upstream and downstream activities eligible for development actions.
+
+Indicative budget: EUR 125 000 000 for this topic under the EDF-2026-DA call.
+
+Indicative number of proposals to be funded: One proposal is to be funded for this topic.

@@ -1,0 +1,88 @@
+{
+  "id": 1099321,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TOMELLOSO",
+    "nivel3": "AYUNTAMIENTO DE TOMELLOSO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897760",
+  "fechaRecepcion": "2026-04-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Bases que han de regir el XVI Certamen Nacional de Monólogos de Humor \"En Tomelloso, todos contamos\".",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    },
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases que han de regir el XVI Certamen Nacional de Monólogos de Humor \"En Tomelloso, todos contamos\".",
+  "urlBasesReguladoras": "https://etablon.dipucr.es:4443/eTablon/tablon.jsf?entidad=0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-08",
+  "fechaFinSolicitud": "2026-06-05",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432047,
+      "descripcion": "Anuncio Tablón Edictos del Ayuntamiento de Tomelloso",
+      "nombreFic": "eTablon - Publicación_2392934.pdf",
+      "long": 223111,
+      "datMod": "2026-04-09",
+      "datPublicacion": "2026-04-09"
+    },
+    {
+      "id": 1432045,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO_2392365.pdf",
+      "long": 182950,
+      "datMod": "2026-04-09",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208295,
+      "titulo": "Resolución de Alcaldía-Presidencia de fecha 7 de abril de 2026, por la que se aprueban las Bases que han de regir el XVI Certamen Nacional de Monólogos de Humor \"En Tomelloso, todos contamos\".",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Objeto: El Ayuntamiento de Tomelloso, organiza y patrocina este certamen de monólogos, con el fin de promocionar la narracción oral en su vertiente de humor, característica ésta primordial de la idiosincrasia tomellosera.</p><p>Segundo.- Beneficiarios: Podrá participar cualquier monologuista amateur a partir de 18 años y residente en España. Solo se podrá participar individualmente.</p><p>Tercero.- Bases Reguladoras: La presente convocatoria se regirá por las Bases aprobadas mediante resolución de Alcaldía-Presidencia publicada en el tablón de edictos de este Ayuntamiento, con fecha 8 de abril de 2026.</p><p>Cuarto.- Cuantía: Se establecen los siguientes premios:</p><p>Primer premio: 1.500.-€ y diploma.</p><p>Segundo premio: 1.000.-€ y diploma.</p><p>Tercer premio: 500.-€ y diploma.</p><p>Quinto.- El plazo de inscripción en el certamen finalizará el viernes 5 de junio de 2026, y se realizará según lo previsto en las bases.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7481418",
+      "cve": "hoCqsghiMNL3CLGzyoiz",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

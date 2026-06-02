@@ -1,0 +1,7 @@
+## Expected Outcome
+
+Expected results: (i) conduct of high-profile research, including in the area of comparative law; (ii) original high-quality articles published in academic and scientific publications and (iii) raised awareness among stakeholders, including the judiciary and other branches of the legal profession, of the continued need to protect the financial interests of the EU.
+
+## Scope
+
+Conduct of relevant, high-profile research on topics related to the protection of the financial interests of the EU against fraud, corruption or any other irregularities, including in the area of comparative law. Dissemination of relevant information through periodical publications.

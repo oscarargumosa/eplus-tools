@@ -37,6 +37,7 @@ const Organizations = (() => {
         myOrg = await API.get(`/organizations/${id}`);
         fillForm(myOrg);
         loadAllChildren();
+        setTimeout(() => initOrgMap(), 100);
       } catch (e) { Toast.show(e.message || 'Error', 'error'); }
     });
     document.getElementById('myorg-btn-new-org')?.addEventListener('click', () => {
@@ -188,6 +189,7 @@ const Organizations = (() => {
       myOrg = await API.get(`/organizations/${targetId}`);
       fillForm(myOrg);
       loadAllChildren();
+      setTimeout(() => initOrgMap(), 100);
     } catch (e) {
       console.error('loadMyOrgs', e);
       // Fallback to old single-org endpoint
@@ -326,9 +328,278 @@ const Organizations = (() => {
   async function loadAllChildren() {
     if (!myOrg?.id) return;
     loadChildTable('accreditations');
-    loadChildTable('eu-projects');
     loadChildTable('key-staff');
     loadChildTable('stakeholders');
+    loadAllProjects(); // unifica manuales + directorio
+  }
+
+  /* ── Proyectos europeos (tabla unificada) ─────────────────────────
+     Una sola tabla que mezcla:
+       1. Directorio Erasmus+ (kind=auto, read-only) — los 164 oficiales.
+       2. Extras manuales (kind=manual, editables/borrables) — proyectos que
+          el directorio no tiene (no-Erasmus+, pre-OID, otros financiadores).
+     De-dup por project_identifier ↔ project_id_or_contract: si un manual
+     tiene el mismo ID que uno del directorio, gana el del directorio.
+     Orden: año DESC, tie-break directorio antes que manual del mismo año. */
+
+  let _allProjects = [];
+
+  async function loadAllProjects() {
+    const tbody = document.getElementById('org-projects-unified-tbody');
+    const badge = document.getElementById('org-projects-unified-count');
+    if (!tbody || !myOrg?.id) return;
+
+    // 1) Manuales (BD local)
+    let manuals = [];
+    try {
+      manuals = await API.get(`/organizations/${myOrg.id}/eu-projects`) || [];
+    } catch (e) { console.error('loadAllProjects:manuals', e); }
+    // Alimentar tabla legacy oculta para que openEditForm/deleteChild encuentren los <tr> reales
+    renderChildTable('eu-projects', manuals);
+
+    // 2) Directorio Erasmus+ (si hay OID)
+    let auto = [];
+    let autoError = null;
+    if (myOrg.oid) {
+      try {
+        const res = await API.get(`/entities/${encodeURIComponent(myOrg.oid)}/projects?limit=500`);
+        const data = (res && res.data) || res || {};
+        auto = data.projects || [];
+      } catch (e) {
+        autoError = e.message || 'error desconocido';
+        console.warn('loadAllProjects:auto', autoError);
+      }
+    }
+
+    // 3) De-dup: descartar manuales que ya estén en el directorio
+    const autoIds = new Set(auto.map(p => p.project_identifier).filter(Boolean));
+    const manualsKept = manuals.filter(m => {
+      const mid = m.project_id_or_contract;
+      return !mid || !autoIds.has(mid);
+    });
+
+    // 4) Unificar adaptando ambas formas
+    const unified = [
+      ...auto.map(p => ({
+        kind: 'auto',
+        programme: p.programme || (String(p.project_identifier || '').match(/-(KA\d+|HORIZON|CERV|LIFE|CEF|DIGITAL|CREA|EDF|ESC)-/i)?.[1]) || null,
+        year: p.funding_year || (p.start_date ? new Date(p.start_date).getFullYear() : null),
+        contract_id: p.project_identifier,
+        role: p.role,
+        title: p.project_title,
+        raw: p,
+      })),
+      ...manualsKept.map(m => ({
+        kind: 'manual',
+        manual_id: m.id,
+        programme: m.programme,
+        year: parseInt(m.year, 10) || null,
+        contract_id: m.project_id_or_contract,
+        role: m.role,
+        title: m.title,
+        raw: m,
+      })),
+    ];
+    unified.sort((a, b) => {
+      const ya = a.year || 0, yb = b.year || 0;
+      if (ya !== yb) return yb - ya;
+      return a.kind === b.kind ? 0 : (a.kind === 'auto' ? -1 : 1);
+    });
+
+    _allProjects = unified;
+
+    if (badge) badge.textContent = String(unified.length);
+
+    // Banner de error si el directorio falló — para que el bug sea visible
+    // (sin él, "auto=[]" silencioso parece que la entidad no tiene proyectos UE).
+    let errorBanner = '';
+    if (autoError && myOrg.oid) {
+      const hint = /404|not found/i.test(autoError)
+        ? 'El servidor todavía no tiene el endpoint /v1/entities/:oid/projects. Reinicia node server.js para que cargue las rutas nuevas.'
+        : `Detalle: ${autoError}`;
+      errorBanner = `<tr><td colspan="6" class="px-4 py-3 bg-amber-50 border-b border-amber-200 text-sm text-amber-900">
+        <span class="material-symbols-outlined text-[16px] align-middle mr-1">warning</span>
+        No se pudo cargar el directorio Erasmus+ para OID ${esc(myOrg.oid)}. ${esc(hint)}
+      </td></tr>`;
+    }
+
+    if (!unified.length) {
+      const hint = myOrg.oid
+        ? 'No hay proyectos. Pulsa "+ Añadir extra" para registrar uno manualmente.'
+        : 'Todavía no hemos resuelto el OID de tu organización en el directorio Erasmus+. Guarda los datos generales para que el sistema lo resuelva automáticamente, o pulsa "+ Añadir extra" para registrar proyectos a mano.';
+      tbody.innerHTML = `${errorBanner}<tr><td colspan="6" class="py-4 text-center text-on-surface-variant text-sm italic">${esc(hint)}</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = errorBanner + unified.map((p, i) => renderUnifiedProjectRow(p, i)).join('');
+    bindUnifiedProjectActions(tbody);
+  }
+
+  function renderUnifiedProjectRow(p, idx) {
+    const role    = p.role || '';
+    const roleClr = role === 'coordinator' ? 'bg-secondary-fixed text-primary'
+                  : role === 'partner'     ? 'bg-purple-100 text-purple-800'
+                  :                          'bg-gray-100 text-gray-700';
+    const isManual = p.kind === 'manual';
+    const title    = p.title || '(sin título)';
+
+    const actions = isManual
+      ? `<button data-action="view"   data-idx="${idx}" class="text-on-surface-variant hover:text-primary p-1 rounded hover:bg-primary/10 transition-colors" title="Ver"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+         <button data-action="edit"   data-idx="${idx}" class="text-on-surface-variant hover:text-primary p-1 rounded hover:bg-primary/10 transition-colors" title="Editar"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+         <button data-action="delete" data-idx="${idx}" class="text-on-surface-variant hover:text-red-600 p-1 rounded hover:bg-red-50 transition-colors" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>`
+      : `<button data-action="view"   data-idx="${idx}" class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:bg-primary/10 px-2 py-1 rounded transition-colors"><span class="material-symbols-outlined text-[16px]">visibility</span> Ver</button>`;
+
+    return `
+      <tr class="border-t border-outline-variant/20 hover:bg-surface-container-low/30">
+        <td class="px-3 py-2.5 text-sm text-on-surface">${esc(p.programme || '—')}</td>
+        <td class="px-3 py-2.5 text-sm font-bold text-primary">${esc(p.year || '')}</td>
+        <td class="px-3 py-2.5 text-xs font-mono text-on-surface-variant">${esc(p.contract_id || '')}</td>
+        <td class="px-3 py-2.5 text-sm">
+          ${role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${roleClr}">${esc(role)}</span>` : '<span class="text-on-surface-variant/40 italic">—</span>'}
+        </td>
+        <td class="px-3 py-2.5 text-sm text-on-surface" style="max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+          <span title="${esc(title)}">${esc(title)}</span>
+          ${isManual ? `<span class="ml-2 inline-flex items-center text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-surface-container border border-outline-variant/30 text-on-surface-variant">Manual</span>` : ''}
+        </td>
+        <td class="px-3 py-2 text-right whitespace-nowrap">${actions}</td>
+      </tr>`;
+  }
+
+  function bindUnifiedProjectActions(tbody) {
+    tbody.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx, 10);
+        const p = _allProjects[idx];
+        if (!p) return;
+        const action = btn.dataset.action;
+        if (action === 'view') return openProjectDetail(p);
+        if (p.kind !== 'manual') return; // edit/delete solo para manuales
+        if (action === 'edit') {
+          // Reusar openEditForm legacy: opera sobre los <tr> de la tabla oculta
+          // y al guardar dispara loadChildTable('eu-projects') → loadAllProjects().
+          const legacyTr = document.querySelector(`#org-eu-projects-tbody tr[data-child-id="${p.manual_id}"]`);
+          if (!legacyTr) return Toast.show('No se pudo abrir el editor', 'error');
+          openEditForm('eu-projects', p.manual_id, p.raw, legacyTr);
+          // Hacer visible la tabla legacy temporalmente para que se vea el form
+          legacyTr.parentElement.classList.remove('hidden');
+          legacyTr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else if (action === 'delete') {
+          deleteChild('eu-projects', p.manual_id);
+        }
+      });
+    });
+  }
+
+  function fmtMoney(n) {
+    if (n == null) return null;
+    const v = Number(n);
+    if (!isFinite(v) || v <= 0) return null;
+    return v.toLocaleString('es-ES', { maximumFractionDigits: 0 }) + ' €';
+  }
+  function fmtDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return iso;
+    return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' });
+  }
+
+  function renderProjectDetailHtml(p) {
+    if (p.kind === 'auto') {
+      const r = p.raw;
+      const grant = fmtMoney(r.eu_grant_eur);
+      const role  = r.role || '';
+      const roleClr = role === 'coordinator' ? 'bg-secondary-fixed text-primary'
+                    : role === 'partner'     ? 'bg-purple-100 text-purple-800'
+                    :                          'bg-gray-100 text-gray-700';
+      const cellRow = (label, value) => (value == null || value === '') ? '' :
+        `<div class="flex flex-col gap-0.5"><span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">${esc(label)}</span><span class="text-sm text-on-surface">${esc(value)}</span></div>`;
+      return `
+        <div class="space-y-5">
+          <div>
+            <div class="flex items-center gap-2 flex-wrap mb-2">
+              ${role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${roleClr}">${esc(role)}</span>` : ''}
+              ${r.is_good_practice ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">★ Good practice</span>` : ''}
+              ${r.programme ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">${esc(r.programme)}</span>` : ''}
+            </div>
+            <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${esc(r.project_title || '')}</h2>
+            ${r.project_identifier ? `<div class="text-[12px] font-mono text-on-surface-variant mt-1">${esc(r.project_identifier)}</div>` : ''}
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface-container-low rounded-xl">
+            ${cellRow('Acción', r.action_type)}
+            ${cellRow('Año', r.funding_year)}
+            ${cellRow('Inicio', fmtDate(r.start_date))}
+            ${cellRow('Fin', fmtDate(r.end_date))}
+            ${cellRow('Subvención UE', grant)}
+            ${cellRow('Coordinador', [r.coordinator_name, r.coordinator_country].filter(Boolean).join(' · '))}
+          </div>
+          ${r.project_summary ? `<div>
+            <div class="flex items-baseline justify-between mb-1">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Resumen</span>
+              <span class="text-[10px] text-on-surface-variant/60 italic">extracto · ${(r.project_summary || '').length} car.</span>
+            </div>
+            <p class="text-sm text-on-surface whitespace-pre-line">${esc(r.project_summary)}</p>
+          </div>` : ''}
+          ${r.project_identifier ? `<div class="pt-3 border-t border-outline-variant/20">
+            <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/${encodeURIComponent(r.project_identifier)}"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1b1464] text-[#fbff12] text-sm font-bold hover:bg-[#1b1464]/80 transition-colors">
+              <span>Ver detalle completo en Erasmus+ Project Results Platform</span>
+              <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
+            </a>
+          </div>` : ''}
+        </div>`;
+    }
+    // manual
+    const r = p.raw;
+    const cellRow = (label, value) => (value == null || value === '') ? '' :
+      `<div class="flex flex-col gap-0.5"><span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">${esc(label)}</span><span class="text-sm text-on-surface">${esc(value)}</span></div>`;
+    return `
+      <div class="space-y-5">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap mb-2">
+            <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-surface-container border border-outline-variant/30 text-on-surface-variant">Manual</span>
+            ${r.role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-100 text-gray-700">${esc(r.role)}</span>` : ''}
+          </div>
+          <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${esc(r.title || '(sin título)')}</h2>
+          ${r.project_id_or_contract ? `<div class="text-[12px] font-mono text-on-surface-variant mt-1">${esc(r.project_id_or_contract)}</div>` : ''}
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface-container-low rounded-xl">
+          ${cellRow('Programa', r.programme)}
+          ${cellRow('Año', r.year)}
+        </div>
+      </div>`;
+  }
+
+  function openProjectDetail(p) {
+    const overlay = document.getElementById('org-project-drawer-overlay');
+    const content = document.getElementById('org-project-drawer-content');
+    if (!overlay || !content) return;
+
+    content.innerHTML = renderProjectDetailHtml(p);
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    if (!document._orgProjectDrawerCloseBound) {
+      document._orgProjectDrawerCloseBound = true;
+      overlay.addEventListener('click', (e) => {
+        if (!e.target.closest('#org-project-drawer-panel')) closeProjectDetail();
+      });
+      document.getElementById('org-project-drawer-close')
+        ?.addEventListener('click', closeProjectDetail);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) closeProjectDetail();
+      });
+      window.addEventListener('hashchange', () => {
+        if (!overlay.classList.contains('hidden')) closeProjectDetail();
+      });
+    }
+  }
+
+  function closeProjectDetail() {
+    const overlay = document.getElementById('org-project-drawer-overlay');
+    if (!overlay || overlay.classList.contains('hidden')) return;
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
   }
 
   /* ── Pin de ubicación (Leaflet) ───────────────────────────── */
@@ -454,6 +725,8 @@ const Organizations = (() => {
 
   async function loadChildTable(type) {
     if (!myOrg?.id) return;
+    // 'eu-projects' tiene su propio cargador unificado (manuales + directorio)
+    if (type === 'eu-projects') return loadAllProjects();
     try {
       const rows = await API.get(`/organizations/${myOrg.id}/${type}`);
       renderChildTable(type, rows);

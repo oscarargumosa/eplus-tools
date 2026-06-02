@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900948",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE HACIENDA / CONSORCIO DE LA CIUDAD DE SANTIAGO DE COMPOSTELA",
+  "nuts_codes": [
+    "ES111"
+  ],
+  "nuts_primary": "ES111",
+  "title": "Resolución por la que se hace público acuerdo de 13 abril 2026 del Consejo Administración Consorcio de Santiago se aprueban las bases reguladoras de la subvención directa en especie para la rehabilitación del centro socio cultural de Vidán en 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 120000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": "https://www.consorciodesantiago.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900948",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.consorciodesantiago.org/sites/default/files/resolucion_gerencia_acuerdo_csc_vidan_2026_-_sefycu_6773067.pdf",
+  "text_inicio": "Desde la publicación del extracto en el BOE",
+  "text_fin": "Quince días desde la fecha de inicio de la solicitud",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210012,
+      "titulo": "Extracto de la resolución por la que se hace público el Acuerdo de 13 de abril de 2026 del Consejo de Administración del Consorcio de la Ciudad de Santiago de Compostela por el que se aprueban las bases reguladoras de la subvención directa en especie para la rehabilitación del centro socio cultural de Vidán en 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>El beneficiario deberá estar al corriente del cumplimiento de las obligaciones tributarias y de la seguridad social, y cumplir con los requisitos establecidos en el artículo 13 de la Ley 38/2003, del 17 de noviembre, General de subvenciones.</p><p>Segundo. Objeto</p><p>El objeto de la convocatoria es colaborar con el Ayuntamiento de Santiago de Compostela en la intervención de rehabilitación del centro sociocultural de Vidán en 2026.</p><p>Tercero. Bases reguladoras</p><p>Acuerdo de 13 de abril de 2026 del consejo de administración del consorcio de la ciudad de Santiago de Compostela por el que se aprueban las bases reguladoras de la subvención directa en especie del consorcio de la ciudad de Santiago de Compostela al ayuntamiento de Santiago de Compostela para la rehabilitación del centro socio cultural de Vidán en el ejercicio 2026.</p><p>Cuarto: Cuantía.</p><p>Esta subvención se imputa al presupuesto de 2026 del consorcio de la ciudad de Santiago de Compostela con un importe que asciende a ciento veinte mil euros (120.000,00 euros).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>El plazo máximo de presentación es de quince días hábiles desde la publicación de este extracto en el BOE. Para el caso de que el último día de presentación de solicitudes fuera inhábil o sábado, el plazo se prorrogaría hasta el siguiente día hábil.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-13393",
+      "cve": "BOE-B-2026-13393",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.956Z"
+}

@@ -174,7 +174,8 @@ exports.savePartnerCustomText = async (req, res, next) => {
 // PUT /v1/developer/projects/:projectId/prep/consorcio/:partnerId/toggle-eu-project
 exports.toggleEuProject = async (req, res, next) => {
   try {
-    await model.toggleEuProject(req.params.projectId, req.params.partnerId, req.body.eu_project_id, req.body.selected);
+    const id = req.body.project_identifier || req.body.eu_project_id;
+    await model.toggleEuProject(req.params.projectId, req.params.partnerId, id, req.body.selected);
     res.json({ ok: true });
   } catch (err) { next(err); }
 };
@@ -632,6 +633,13 @@ exports.getWpBudget = async (req, res, next) => {
   } catch (err) { next(err); }
 };
 
+exports.refreshProjectBudget = async (req, res, next) => {
+  try {
+    const data = await model.refreshProjectBudget(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
 exports.listProjectPartners = async (req, res, next) => {
   try {
     const data = await model.listProjectPartners(req.params.projectId, req.user.id);
@@ -684,7 +692,8 @@ exports.getDeliverableSummary = async (req, res, next) => {
 // Runs the 3-pass holistic generator and returns a preview without persisting.
 exports.dmsPreviewV2 = async (req, res, next) => {
   try {
-    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id);
+    const targetCount = Number((req.body && req.body.target_count) || 0) || null;
+    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id, { targetCount });
     res.json({ ok: true, data });
   } catch (err) { next(err); }
 };
@@ -797,6 +806,60 @@ exports.dmsUpdateComment = async (req, res, next) => {
 exports.dmsDeleteComment = async (req, res, next) => {
   try {
     const data = await dmsGenerator.deleteComment(req.params.id, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// GET /v1/developer/projects/:projectId/staff-table
+exports.listStaffTable = async (req, res, next) => {
+  try {
+    const data = await model.listStaffTable(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// PATCH /v1/developer/staff-table/:ppsId
+exports.updateStaffTable = async (req, res, next) => {
+  try {
+    const data = await model.updateStaffTableRow(req.params.ppsId, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// 2.1.5 Project risks — CRUD
+exports.listRisks = async (req, res, next) => {
+  try {
+    const data = await model.listProjectRisks(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.createRisk = async (req, res, next) => {
+  try {
+    const data = await model.createProjectRisk(req.params.projectId, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.updateRisk = async (req, res, next) => {
+  try {
+    const data = await model.updateProjectRisk(req.params.id, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.deleteRisk = async (req, res, next) => {
+  try {
+    const data = await model.deleteProjectRisk(req.params.id, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.aiGenerateRisks = async (req, res, next) => {
+  try {
+    const data = await model.aiGenerateProjectRisks(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.aiEvaluateRisks = async (req, res, next) => {
+  try {
+    const data = await model.aiEvaluateProjectRisks(req.params.projectId, req.user.id);
     res.json({ ok: true, data });
   } catch (err) { next(err); }
 };

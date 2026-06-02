@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "899479",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN / SECRETARÍA DE ESTADO PARA LA UNIÓN EUROPEA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de la SEUE por la que se anuncia la convocatoria para la concesión de subvenciones destinadas a la celebración de acciones de comunicación y actividades divulgativas, sobre asuntos relacionados con el ámbito de sus competencias.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sede.maec.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899479",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2014/02/18/aec240",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la Resolución de la convocatoria en BOE",
+  "text_fin": "15 días hábiles a partir del día siguiente a publicación del Extracto de Resolución de convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209167,
+      "titulo": "Extracto de la Resolución de 16 de abril de 2026, de la Secretaría de Estado para la Unión Europea, por la que se anuncia la convocatoria para la concesión de subvenciones correspondientes al año 2026, para la celebración de acciones de comunicación y actividades divulgativas, sobre asuntos relacionados con el ámbito de sus competencias",
+      "tituloLeng": null,
+      "texto": "<p> Primero. Beneficiarios</p><p>      Personas físicas o jurídicas, públicas o privadas, nacionales y extranjeras, legalmente constituidas que, en todo caso, reúnan y estén en disposición de acreditar que su actividad carece de fines de lucro, el cumplimiento de las obligaciones tributarias y de la Seguridad Social, que dispongan de los medios y capacidad para realizar las actividades y garantizar el cumplimiento de los objetivos y no se encuentren comprendidos en ninguno de los supuestos contenidos en el artículo 13, apartados 2 y 3 de la Ley 38/2003, de 17 de noviembre.</p><p>     Segundo. Objeto</p><p>     Financiar la celebración de actividades divulgativas y acciones de comunicación sobre la Unión Europea que tengan lugar durante el año 2026, desde el momento en el que se conozca la concesión hasta el 31 de octubre de 2026. En particular, se valorarán prioritariamente aquellas actividades divulgativas y acciones de comunicación relacionadas con el 40º aniversario de la adhesión de España a la entonces Comunidades Europeas, así como alguna de las áreas temáticas que se mencionan a continuación: ciclo institucional 2024-2029; futuro de la UE; competitividad y Mercado Interior; Triple Transición (Verde, Digital y Social); cohesión económica, social y territorial; igualdad; participación democrática en la Unión; política de Migración y Asilo; seguridad y defensa; ampliación de la UE y reformas internas necesarias para garantizar el funcionamiento eficaz de la UE; relaciones exteriores de la Unión Europea, con especial atención a América Latina y el Caribe, Vecindad Sur y África; Marco Financiero Plurianual.</p><p>     Tercero. Bases reguladoras</p><p>     Orden AEC/240/2014, de 18 de febrero, por la que se establecen las bases reguladoras para la concesión de subvenciones para la celebración de acciones de comunicación y actividades divulgativas, sobre asuntos relacionados con el ámbito de las competencias de la Secretaría de Estado para la Unión Europea (BOE nº 45, de 21 de febrero).</p><p>     Cuarto. Cuantía</p><p>     Cuantía máxima: 600.000,00 euros, repartida entre todos los solicitantes que resulten beneficiarios.</p><p>     Quinto. Plazo de presentación de solicitudes</p><p>     15 días hábiles a partir del siguiente al de la publicación del presente extracto en el Boletín Oficial del Estado.</p><p>     Sexto. Otros datos</p><p>     El pago de la subvención se realizará en el ejercicio 2026, una vez realizada y justificada la actividad objeto de la subvención y la aplicación de fondos, en la forma que se indica en el apartado 12 de la convocatoria.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-12084",
+      "cve": "BOE-B-2026-12084",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-18"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.064Z"
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1104933,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE MURCIA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.um.es/registro2/PR-SG-002/acceso.seam?from=default&cid=262",
+  "codigoBDNS": "903372",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 130200,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas económicas en el marco del programa Erasmus+ Prácticas para estudiantes que realicen prácticas en la enseñanza de un idioma como lengua extranjera en centros de la Universidad de Murcia durante el curso 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas económicas en el marco del programa Erasmus+ Prácticas para estudiantes que realicen prácticas en la enseñanza de un idioma como lengua extranjera en centros de la Universidad de Murcia durante el curso 2026/2027",
+  "urlBasesReguladoras": "https://sede.um.es/sede/documento/tablon/2026/04/27/resolucion-del-rector-por-la-que-se-convocan-ayudas-economicas-en-el-marco-del-programa-erasmus-practicas-para/144387.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación del extracto de la convocatoria en el BORM",
+  "textFin": "Abierto hasta asignación de todas las ayudas ofertadas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448222,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA ERASMUS PRÁCTICAS.pdf",
+      "long": 1185957,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

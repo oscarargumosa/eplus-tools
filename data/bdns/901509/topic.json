@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "901509",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALBACETE / DIPUTACIÓN PROVINCIAL DE ALBACETE",
+  "nuts_codes": [
+    "ES421"
+  ],
+  "nuts_primary": "ES421",
+  "title": "Decreto nº 1916 de 20-04-2026, por el que se aprueba la convocatoria de ayudas a entes locales territoriales para el desarrollo de programas de clubes de lectura, durante el año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https://sede.dipualba.es/subvenciones/lista_convocatorias_todas.aspx",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901509",
+  "documents": [
+    {
+      "label": "CRITERIOS DE VALORACIÓN",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipualba.es/bop/ficheros/2016/77/BOP%2077-16-P-14.PDF",
+  "text_inicio": "A partir del día siguiente a la publicación en el BOP de la provincia de Albacete",
+  "text_fin": "Treinta días naturales a partir del día siguiente a la publicación en BOP de la provincia Albacete",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210040,
+      "titulo": "Extracto del Decreto Presidencial n.º 1916, de 20/04/2026, por el que se aprueba la convocatoria de ayudas a entes locales territoriales para el desarrollo de programas de clubes de lectura, durante el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios:</p><p>Entidades locales territoriales de la provincia de Albacete y sus entes dependientes.</p><p>Segundo.- Objeto:</p><p>Las ayudas que se concedan irán destinadas exclusivamente a financiar gastos de personal, durante el período comprendido entre el 1 de noviembre de 2025 hasta el 31 de octubre de 2026.</p><p>Tercero.- Bases reguladoras:</p><p>Ordenanza reguladora de las bases de ayudas a entidades locales territoriales para programas de clubes de lectura, aprobada por acuerdo del Pleno de la Excma. Diputación Provincial de Albacete, de 10 de mayo de 2016, publicada en el BOP nº 77, de 4 de julio de 2016.</p><p>Cuarto.- Cuantía:</p><p>El importe total de la convocatoria será de 40.000,00 euros. Serán admitidos todos los solicitantes que, reuniendo los requisitos establecidos en la convocatoria y en las bases reguladoras, presenten la solicitud en el plazo establecido.</p><p>Quinto.- Plazo de presentación de solicitudes:</p><p>Treinta días naturales, a partir del siguiente a la publicación de este extracto en el Boletín Oficial de la provincia de Albacete.</p><p>Sexto.- Otros datos:</p><p>Los interesados deberán cumplimentar el formulario electrónico de solicitud, que estará disponible durante el plazo de presentación de solicitudes, en la sede electrónica de la Diputación de Albacete www.dipualba.es, apartado subvenciones; firmándolo con la firma electrónica de la entidad. Asimismo, deberán presentar mediante archivo adjunto memoria de actividades realizadas durante el ejercicio anterior y programa de actividades previstas para el año en curso.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/297238",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALBACETE",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.233Z"
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903032",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLANUEVA DE LA TORRE / AYUNTAMIENTO DE VILLANUEVA DE LA TORRE",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "BASES Y CONVOCATORIA DE LOS PREMIOS PARA EL II CONCURSO MUNICIPAL DE AUTOS-LOCOS DE LAS FIESTAS PATRONALES VILLANUEVA DE LA TORRE 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": "2026-06-18",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://villanuevadelatorre.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903032",
+  "documents": [
+    {
+      "label": "DECRETO",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://webpub2.igae.hacienda.gob.es/teseonet/planes/mantenimiento?idPlan=1987",
+  "text_inicio": "DESDE EL DIA SIGUIENTE A SU PUBLICACION EN BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.003Z"
+}

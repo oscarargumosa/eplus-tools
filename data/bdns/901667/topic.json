@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "901667",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SEGOVIA / INSTITUTO MUNICIPAL DE DEPORTES DEL AYUNTAMIENTO DE SEGOVIA",
+  "nuts_codes": [
+    "ES416"
+  ],
+  "nuts_primary": "ES416",
+  "title": "Convocatoria de subvenciones para la realización de actividades deportivas durante la temporada 2025/2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 225000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": "www.segovia.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901667",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo II Modelos justificación",
+      "url": null
+    },
+    {
+      "label": "Anexo I Modelos solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.imdsg.es",
+  "text_inicio": "Al día siguiente publicación Boletín Oficial de la Provincia de Segovia",
+  "text_fin": "Quince días hábiles contados desde el siguiente a la publicación de las bases en el BOP Segovia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.308Z"
+}

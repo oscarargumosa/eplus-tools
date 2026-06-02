@@ -1,0 +1,76 @@
+{
+  "id": 1101872,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE CONCA DE BARBERÀ",
+    "nivel3": "CONSELL COMARCAL DE LA CONCA DE BARBERÀ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900311",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 1392000,
+  "mrr": false,
+  "descripcion": "Bases que han de regir para la concesión de ayudas de carácter individual para la asistencia a los comedores escolares",
+  "descripcionLeng": "Bases que han de regir per a la concessió d'ajuts de caràcter individual per a l'assistència als menjadors escolars",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases para la concesión de las ayudas para la asisténcia a comedores escolares",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/192754/bases-per-a-la-concessio-d-ajuts-per-a-l-assistencia-a-menjadors-escolars-aprovacio-definitiva-consell-comarcal-conca-de-barbera-la",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente de la publicación del anuncio en el BOPT",
+  "textFin": "Un mes despues del dia siguiente de la publicación del anuncio en el BOPT",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439472,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "1. ANUNCI convocatòria en català_signat (1).pdf",
+      "long": 447829,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439470,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1.1. ANUNCIO convocatoria en castellà_signat.pdf",
+      "long": 447653,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

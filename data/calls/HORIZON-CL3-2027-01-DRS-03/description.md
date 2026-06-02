@@ -1,0 +1,34 @@
+## Expected Outcome
+
+Project results are expected to contribute to some or all of the following expected outcomes:
+- Development of decision support systems for disaster crises, utilizing near real-time data from the ground to enhance situational awareness and response;
+- Creation of systems designed to bolster civil preparedness, that enhance operational efficiency and response times, ensuring timely and effective management of various disaster scenarios including from early warning to early action
+- Integration of advanced data analysis and decision-making tools to support authorities and first responders in disaster situations.
+
+## Scope
+
+This topic focuses on enhancing existing decision support systems for disaster crises by integrating emerging technologies to improve civil preparedness and crisis management. The objective is to advance the capabilities of existing systems, making them more reliable, adaptable, and efficient through the incorporation of trustworthy AI technologies that ensure transparency, accountability, and ethical decision-making processes. Projects should aim to enable quicker and more informed responses during disaster scenarios.
+
+Proposals should focus on creating advanced systems designed to strengthen civil preparedness, helping authorities and responders manage various disaster situations in a timely and effective manner. These systems should leverage cutting-edge AI-driven tools to process large volumes of data, providing actionable insights that improve decision-making during critical moments, such as from early warning to early action. Emphasis should be placed on integrating advanced data analysis and predictive modelling to anticipate disaster developments and guide interventions, while ensuring that the systems are transparent, explainable, and built on principles of trustworthiness, inclusive and gender sensitive and ethical AI use and on secure AI deployments.
+
+Projects should conduct a stakeholder or market analysis and a roadmap or plan for uptake of the developed methodologies, findings, and technologies to the industry, the research and innovation community, and/or the relevant authorities.
+
+Additionally, test centres should play a key role in this research by increasing their capacity to trial and validate emerging technologies, supporting more effective civil preparedness and crisis response capabilities.
+
+The expected outcome is to create systems that not only enhance operational efficiency and response times but also foster better collaboration among stakeholders, including local authorities, emergency services, and other relevant actors. This includes integrating drones with state emergency vehicles, smart traffic systems, and law enforcement to enhance data driven disaster preparedness and emergency response, ensuring effective coordination and faster decision-making for local authorities.
+
+Projects should also contribute to improving the usability and accessibility of decision-support systems for diverse users, ensuring they are easily integrated into disaster management frameworks and can be used effectively in different crisis situations. The solutions should align with EU guidelines on AI ethics[1] and resilience-building, ensuring they complement existing civil protection and crisis management initiatives while driving innovation in disaster risk reduction. The Preparedness Union Strategy is a key document in this regard. Analysing the capacity gaps of the UCPM[2] and finding synergies with projects from operational grants, such as the Knowledge for Action in Prevention & Preparedness (KAPP)[3], is recommended.
+
+In this topic the integration of the gender dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
+
+Where applicable, proposals should leverage the data and services available through European Research Infrastructures federated under the European Open Science Cloud, Copernicus, Destination Earth as well as data from relevant Data Spaces. Particular efforts should be made to ensure that the data produced in the context of this topic is FAIR (Findable, Accessible, Interoperable and Re-usable).
+
+## null
+
+Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
+
+[1] AI Act: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+
+[2] https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025DC0286
+
+[3] Knowledge for Action in Prevention and Preparedness (KAPP) - European Commission - https://civil-protection-humanitarian-aid.ec.europa.eu/funding-evaluations/financing-civil-protection/cp-calls-proposals/knowledge-action-prevention-and-preparedness-kapp-0_en

@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+    color: #191c1e;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  /* PORTADA */
+  .cover {
+    background: #1b1464;
+    color: white;
+    min-height: 100vh;
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+  }
+
+  .cover-logo {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fbff12;
+    margin-bottom: 10px;
+  }
+
+  .cover-logo span { color: white; }
+
+  .cover-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  .cover-tag {
+    background: #fbff12;
+    color: #1b1464;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: fit-content;
+  }
+
+  .cover h1 {
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+
+  .cover h1 .accent { color: #fbff12; }
+
+  .cover h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 50px;
+  }
+
+  .cover-pills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .pill.yellow {
+    background: #fbff12;
+    color: #1b1464;
+    border-color: #fbff12;
+    font-weight: 700;
+  }
+
+  .cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+  }
+
+  .cover-footer .edition {
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .cover-footer .url {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* PAGES */
+  .page {
+    padding: 50px 70px;
+    page-break-after: always;
+    min-height: 100vh;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fbff12;
+    padding-bottom: 14px;
+    margin-bottom: 36px;
+  }
+
+  .page-header .section-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #474551;
+  }
+
+  .page-header .logo-small {
+    font-size: 9px;
+    font-weight: 700;
+    color: #1b1464;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  h2.section-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #1b1464;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+
+  h2.section-title .accent { color: #c7afdf; }
+
+  .section-intro {
+    font-size: 11px;
+    color: #474551;
+    margin-bottom: 30px;
+    max-width: 680px;
+    line-height: 1.7;
+  }
+
+  /* VISION BOXES */
+  .vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .vision-box {
+    background: white;
+    border-radius: 16px;
+    padding: 24px 20px;
+    border: 1px solid #eeeeee;
+  }
+
+  .vision-box .number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fbff12;
+    -webkit-text-stroke: 2px #1b1464;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .vision-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1b1464;
+    margin-bottom: 6px;
+  }
+
+  .vision-box .desc {
+    font-size: 10px;
+    color: #474551;
+    line-height: 1.5;
+  }
+
+  /* PILLAR CARDS */
+  .pillar {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .pillar-header {
+    background: #1b1464;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pillar-header .pillar-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fbff12;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .pillar-header h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    flex: 1;
+    margin: 0 16px;
+  }
+
+  .pillar-header .ects-badge {
+    background: #fbff12;
+    color: #1b1464;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
+  .pillar-body {
+    padding: 20px 24px;
+  }
+
+  .pillar-desc {
+    font-size: 10px;
+    color: #474551;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .modules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .module-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-radius: 10px;
+  }
+
+  .module-dot {
+    width: 6px;
+    height: 6px;
+    background: #fbff12;
+    border: 1.5px solid #1b1464;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .module-item .mod-title {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1b1464;
+    margin-bottom: 2px;
+  }
+
+  .module-item .mod-sub {
+    font-size: 9px;
+    color: #474551;
+  }
+
+  /* PROFILE PAGE */
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  .profile-box {
+    background: white;
+    border-radius: 14px;
+    padding: 22px 20px;
+    border: 1px solid #eeeeee;
+  }
+
+  .profile-box h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1b1464;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .profile-box ul {
+    list-style: none;
+  }
+
+  .profile-box ul li {
+    font-size: 10px;
+    color: #474551;
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .profile-box ul li:last-child { border-bottom: none; }
+
+  .profile-box ul li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #1b1464;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* CREDIT TABLE */
+  .credit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+  }
+
+  .credit-table th {
+    background: #1b1464;
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .credit-table th:last-child { text-align: center; }
+
+  .credit-table td {
+    padding: 10px 14px;
+    font-size: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #191c1e;
+  }
+
+  .credit-table td:last-child {
+    text-align: center;
+    font-weight: 700;
+    color: #1b1464;
+  }
+
+  .credit-table tr:nth-child(even) td { background: #f8f8f8; }
+
+  .credit-table tr.total td {
+    background: #fbff12;
+    color: #1b1464;
+    font-weight: 700;
+    font-size: 11px;
+    border-bottom: none;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .timeline-month {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    padding: 14px 10px;
+    text-align: center;
+  }
+
+  .timeline-month .month-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: #474551;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .timeline-month .month-content {
+    font-size: 9px;
+    color: #1b1464;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .timeline-month .month-tag {
+    background: #1b1464;
+    color: #fbff12;
+    font-size: 8px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  .timeline-month.highlight {
+    background: #1b1464;
+  }
+
+  .timeline-month.highlight .month-label { color: rgba(255,255,255,0.6); }
+  .timeline-month.highlight .month-content { color: white; }
+
+  /* DIFFERENTIATORS */
+  .diff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .diff-box {
+    background: white;
+    border-radius: 14px;
+    padding: 20px 16px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+  }
+
+  .diff-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .diff-box h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1b1464;
+    margin-bottom: 8px;
+  }
+
+  .diff-box p {
+    font-size: 9px;
+    color: #474551;
+    line-height: 1.5;
+  }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #1b1464;
+    border-radius: 16px;
+    padding: 28px 32px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .quote-box .quote-mark {
+    font-size: 48px;
+    color: #fbff12;
+    line-height: 0.8;
+    margin-bottom: 12px;
+    font-weight: 900;
+  }
+
+  .quote-box p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+  }
+
+  /* BACK COVER */
+  .back-cover {
+    background: #1b1464;
+    min-height: 100vh;
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .back-cover h2 {
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .back-cover h2 span { color: #fbff12; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .contact-item {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 16px;
+  }
+
+  .contact-item .c-label {
+    font-size: 9px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .contact-item .c-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .back-footer {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    font-size: 9px;
+    color: rgba(255,255,255,0.4);
+  }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="cover">
+  <div class="cover-logo">EU FUNDING <span>SCHOOL</span></div>
+  <div class="cover-main">
+    <div class="cover-tag">Programa de Formación Avanzada</div>
+    <h1>MÁSTER EN<br><span class="accent">PROYECTOS</span><br>EUROPEOS</h1>
+    <h2>Erasmus+ · Diseño, Escritura y Gestión de Propuestas</h2>
+    <div class="cover-pills">
+      <div class="pill yellow">15 ECTS</div>
+      <div class="pill">6 meses</div>
+      <div class="pill">100% online</div>
+      <div class="pill">Título Propio</div>
+      <div class="pill">6 pilares formativos</div>
+      <div class="pill">+40 clases</div>
+    </div>
+  </div>
+  <div class="cover-footer">
+    <div class="edition">Edición 2026–2027 · Plan de estudios v1.0</div>
+    <div class="url">eufundingschool.com</div>
+  </div>
+</div>
+
+<!-- PÁGINA 1: VISIÓN GENERAL -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Visión General del Programa</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <h2 class="section-title">EL PROGRAMA<br><span class="accent">EN NÚMEROS</span></h2>
+  <p class="section-intro">Un programa diseñado desde la práctica real. No desde la teoría académica, sino desde el conocimiento directo de qué buscan los evaluadores europeos, cómo funcionan las guías y qué hace que una propuesta sea concedida.</p>
+
+  <div class="vision-grid">
+    <div class="vision-box">
+      <div class="number">15</div>
+      <div class="label">Créditos ECTS</div>
+      <div class="desc">375 horas de formación distribuidas en 6 meses. Equivalente a un título propio universitario de posgrado.</div>
+    </div>
+    <div class="vision-box">
+      <div class="number">6</div>
+      <div class="label">Pilares Formativos</div>
+      <div class="desc">Desde leer una guía europea hasta gestionar un proyecto concedido, pasando por todas las plataformas y formularios.</div>
+    </div>
+    <div class="vision-box">
+      <div class="number">+40</div>
+      <div class="label">Clases y Módulos</div>
+      <div class="desc">Vídeos cortos (5–15 min) reutilizables entre programas. Cada clase es una unidad de conocimiento independiente.</div>
+    </div>
+    <div class="vision-box">
+      <div class="number">8</div>
+      <div class="label">Tipos de Proyectos</div>
+      <div class="desc">KA2, CBHE, EMJM, KA3, Sport, VET, Youth, EPSD. Módulos específicos para cada familia de convocatoria.</div>
+    </div>
+    <div class="vision-box">
+      <div class="number">47</div>
+      <div class="label">Convocatorias 2026</div>
+      <div class="desc">El contenido está alineado con las 47 topics activos de Erasmus+ 2026, actualizables cada año de guía.</div>
+    </div>
+    <div class="vision-box">
+      <div class="number">6</div>
+      <div class="label">Meses de duración</div>
+      <div class="desc">Ritmo intensivo pero compatible con trabajo. 10–12 horas semanales de estudio + sesiones en vivo quincenales.</div>
+    </div>
+  </div>
+
+  <div class="quote-box">
+    <div class="quote-mark">"</div>
+    <p>La mayoría de los profesionales que trabajan con financiación europea aprenden solos, por ensayo y error. Este máster existe para que el conocimiento que tardas 5 años en adquirir lo tengas en 6 meses.</p>
+  </div>
+</div>
+
+<!-- PÁGINA 2: PERFIL DEL ALUMNO -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">A Quién Va Dirigido</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <h2 class="section-title">PERFIL DEL<br><span class="accent">ALUMNO IDEAL</span></h2>
+  <p class="section-intro">El máster está diseñado para profesionales que ya trabajan en el entorno europeo o quieren hacerlo. No hace falta ser experto, pero sí tener motivación real de trabajar con fondos europeos.</p>
+
+  <div class="profile-grid">
+    <div class="profile-box">
+      <h4>¿Quién eres?</h4>
+      <ul>
+        <li>Técnico/a de proyectos en una ONG o asociación</li>
+        <li>Responsable de relaciones internacionales en una universidad</li>
+        <li>Consultor/a freelance de fondos europeos</li>
+        <li>Gestor/a en una entidad pública (municipio, diputación)</li>
+        <li>Profesional que quiere cambiar de sector hacia Europa</li>
+        <li>Responsable de formación en una empresa</li>
+        <li>Investigador/a que busca financiación para proyectos</li>
+      </ul>
+    </div>
+    <div class="profile-box">
+      <h4>¿Qué te frustra ahora?</h4>
+      <ul>
+        <li>Las guías son largas y técnicas — no sabes qué es relevante</li>
+        <li>Cada convocatoria parece un mundo diferente</li>
+        <li>No sabes cómo encontrar socios adecuados</li>
+        <li>El formulario de candidatura es confuso y técnico</li>
+        <li>Tu propuesta quedó bien evaluada pero no llegó al corte</li>
+        <li>La gestión del proyecto concedido te desborda</li>
+        <li>No entiendes bien las reglas de gasto y justificación</li>
+      </ul>
+    </div>
+    <div class="profile-box">
+      <h4>¿Qué quieres conseguir?</h4>
+      <ul>
+        <li>Escribir propuestas que se aprueben</li>
+        <li>Entender el sistema europeo de cabo a rabo</li>
+        <li>Tener un método replicable para cada convocatoria</li>
+        <li>Gestionar proyectos concedidos sin errores</li>
+        <li>Posicionarte como experto/a en tu organización</li>
+        <li>Ofrecer servicios de consultoría con criterio</li>
+        <li>Un título que acredite tu competencia</li>
+      </ul>
+    </div>
+    <div class="profile-box">
+      <h4>¿Qué nivel de entrada necesitas?</h4>
+      <ul>
+        <li>Educación superior (grado o equivalente)</li>
+        <li>Inglés B2 (las guías son en inglés)</li>
+        <li>Haber leído al menos una guía Erasmus+ (recomendado)</li>
+        <li>No se requiere experiencia previa en proyectos EU</li>
+        <li>Motivación para trabajar 10-12h/semana durante 6 meses</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 3: PILARES 1 y 2 -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Plan de Estudios — Pilares 1 y 2</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <h2 class="section-title">PLAN DE<br><span class="accent">ESTUDIOS</span></h2>
+  <p class="section-intro">Seis pilares que cubren el ciclo completo de vida de un proyecto europeo: desde entender el marco normativo hasta gestionar el proyecto una vez concedido.</p>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 01</div>
+      <h3>El Marco Europeo — Leer e Interpretar las Guías</h3>
+      <div class="ects-badge">2.5 ECTS · 62h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">El punto de partida de cualquier propuesta. Aprendes a leer las guías como lo hacen los evaluadores: sabiendo qué importa, qué es accesorio y dónde están las trampas ocultas.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 1 · Arquitectura de las guías Erasmus+</div>
+            <div class="mod-sub">Estructura, secciones, cómo navegar sin perderse</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 2 · El ciclo completo de una convocatoria</div>
+            <div class="mod-sub">Call → Submission → Evaluation → Grant Agreement</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 3 · Criterios de elegibilidad</div>
+            <div class="mod-sub">Quién puede aplicar, requisitos de consorcio, países elegibles</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 4 · Criterios de evaluación (Award Criteria)</div>
+            <div class="mod-sub">Cómo puntúan los evaluadores, qué buscan en cada sección</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 5 · EACEA vs Agencias Nacionales</div>
+            <div class="mod-sub">Diferencias prácticas, cómo contactar, qué esperar de cada gestor</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 6 · Análisis de guías en tiempo real</div>
+            <div class="mod-sub">Taller práctico: diseccionar una guía real de la temporada actual</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 02</div>
+      <h3>El Ecosistema de Programas Erasmus+</h3>
+      <div class="ects-badge">3 ECTS · 75h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">Cada tipo de proyecto tiene su propia lógica, su perfil de consorcio ideal y sus criterios específicos. Este pilar te da dominio sobre los 8 principales programas.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo KA2 · Cooperation Partnerships</div>
+            <div class="mod-sub">KA220 y KA210 — el programa más amplio de Erasmus+</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo CBHE · Capacity Building Higher Ed</div>
+            <div class="mod-sub">El programa más competitivo — 67 topics, 11 regiones del mundo</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo EMJM · Erasmus Mundus</div>
+            <div class="mod-sub">Másteres conjuntos internacionales de alto nivel</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo CB VET · Capacity Building Vocational</div>
+            <div class="mod-sub">Formación profesional y vocacional en países socios</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo CB Youth · Capacity Building Youth</div>
+            <div class="mod-sub">Proyectos de juventud con organizaciones de países socios</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo Sport · Cooperation & Events</div>
+            <div class="mod-sub">Proyectos deportivos — Cooperation Partnerships y Events</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo KA3 · Apoyo a la Política Europea</div>
+            <div class="mod-sub">European Youth Together y otras acciones KA3</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Módulo EPSD · Partnerships School Dev.</div>
+            <div class="mod-sub">Alianzas europeas para el desarrollo escolar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 4: PILARES 3 y 4 -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Plan de Estudios — Pilares 3 y 4</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 03</div>
+      <h3>Plataformas y Formularios Europeos</h3>
+      <div class="ects-badge">2.5 ECTS · 62h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">El ecosistema digital europeo es complejo y cambia cada año. Este pilar te hace competente en todas las plataformas que usarás como profesional del sector.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 1 · EU Login (ECAS) y gestión de identidad</div>
+            <div class="mod-sub">Cómo crear y gestionar tu cuenta EU, roles y permisos</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 2 · Beneficiary Register (ORS/BRiS)</div>
+            <div class="mod-sub">Registro de organizaciones, PIC number, documentación</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 3 · Funding & Tenders Portal</div>
+            <div class="mod-sub">Búsqueda de convocatorias, submisión de candidaturas</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 4 · El formulario de candidatura: Part A</div>
+            <div class="mod-sub">Datos administrativos, consorcio, presupuesto resumen</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 5 · El formulario de candidatura: Part B</div>
+            <div class="mod-sub">La narrativa — aquí se gana o se pierde la propuesta</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 6 · Sistemas de reporting post-concesión</div>
+            <div class="mod-sub">eReport, Funding & Tenders reporting, documentación requerida</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 04</div>
+      <h3>Escribir una Propuesta Ganadora</h3>
+      <div class="ects-badge">3.5 ECTS · 87h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">El núcleo del programa. El arte y la técnica de construir una propuesta que convence a los evaluadores. Desde la idea inicial hasta el presupuesto detallado, con metodología propia.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 1 · Arquitectura narrativa de una propuesta</div>
+            <div class="mod-sub">El hilo conductor — cómo construir coherencia entre secciones</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 2 · Relevance & Context (LA1/LA2)</div>
+            <div class="mod-sub">Cómo justificar el problema y conectar con las prioridades EU</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 3 · Objetivos, Resultados y LA3</div>
+            <div class="mod-sub">Learning Agreements, outputs medibles, indicadores de logro</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 4 · Work Plan, WPs y Gantt</div>
+            <div class="mod-sub">Estructura de paquetes de trabajo, hitos y cronograma</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 5 · Impacto y diseminación</div>
+            <div class="mod-sub">Cómo demostrar impacto real y planificar la difusión</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 6 · Presupuesto Erasmus+</div>
+            <div class="mod-sub">Reglas de gasto, categorías, unit costs, justificación</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 7 · Formación de consorcio</div>
+            <div class="mod-sub">Cómo buscar socios, roles en el consorcio, acuerdos de partnership</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Taller · Revisión de propuesta real</div>
+            <div class="mod-sub">Sesión en vivo: análisis y feedback de una propuesta del alumno</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 5: PILARES 5 y 6 -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Plan de Estudios — Pilares 5 y 6</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 05</div>
+      <h3>Gestión y Ejecución de Proyectos Concedidos</h3>
+      <div class="ects-badge">2 ECTS · 50h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">Conseguir el proyecto es solo la mitad del camino. La otra mitad es gestionarlo correctamente durante 2-3 años sin cometer errores que cuesten dinero o reputación.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 1 · Grant Agreement y sus obligaciones</div>
+            <div class="mod-sub">Qué firmas, qué implica, plazos y condiciones generales</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 2 · Gestión financiera del proyecto</div>
+            <div class="mod-sub">Control de gastos, elegibilidad, reglas de justificación</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 3 · Reporting intermedio y final</div>
+            <div class="mod-sub">Cómo preparar informes, qué documentación adjuntar</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 4 · Auditorías y control externo</div>
+            <div class="mod-sub">Cómo prepararse, qué conservar, cómo responder a observaciones</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 5 · Gestión del consorcio internacional</div>
+            <div class="mod-sub">Coordinación de socios, reuniones, resolución de conflictos</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 6 · Visibilidad y comunicación obligatoria EU</div>
+            <div class="mod-sub">Logotipos, menciones, publicaciones, redes sociales del proyecto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-header">
+      <div class="pillar-num">Pilar 06</div>
+      <h3>Legislación y Compliance Europeo</h3>
+      <div class="ects-badge">1.5 ECTS · 37h</div>
+    </div>
+    <div class="pillar-body">
+      <p class="pillar-desc">El marco legal que rodea los proyectos europeos. Las reglas que si no conoces, te exponen a devoluciones, sanciones y exclusiones de futuras convocatorias.</p>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 1 · Doble financiación (Double Funding)</div>
+            <div class="mod-sub">Qué es, cómo detectarla, cómo evitarla y cómo declararla</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 2 · Conflicto de intereses</div>
+            <div class="mod-sub">Definición, casuística real, obligación de declaración</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 3 · GDPR en proyectos europeos</div>
+            <div class="mod-sub">Protección de datos de participantes, formularios, transferencias internacionales</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 4 · Principios transversales EU</div>
+            <div class="mod-sub">No discriminación, sostenibilidad, inclusión — cómo integrarlos en la propuesta</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-dot"></div>
+          <div>
+            <div class="mod-title">Clase 5 · Irregularidades y correcciones</div>
+            <div class="mod-sub">Qué ocurre cuando hay un error, cómo notificar, consecuencias</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 6: CRÉDITOS Y TIMELINE -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Distribución de Créditos y Calendario</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <h2 class="section-title">CRÉDITOS Y<br><span class="accent">CALENDARIO</span></h2>
+  <p class="section-intro">Los 15 ECTS se distribuyen en 375 horas de trabajo del alumno: clases grabadas, talleres en vivo, lecturas de guías reales y el proyecto final de propuesta.</p>
+
+  <table class="credit-table">
+    <thead>
+      <tr>
+        <th>Pilar</th>
+        <th>Contenido</th>
+        <th>Clases</th>
+        <th>Horas alumno</th>
+        <th>ECTS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Pilar 1</strong></td>
+        <td>El Marco Europeo — Leer las Guías</td>
+        <td>6 clases</td>
+        <td>62h</td>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <td><strong>Pilar 2</strong></td>
+        <td>El Ecosistema de Programas Erasmus+</td>
+        <td>8 módulos</td>
+        <td>75h</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <td><strong>Pilar 3</strong></td>
+        <td>Plataformas y Formularios Europeos</td>
+        <td>6 clases</td>
+        <td>62h</td>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <td><strong>Pilar 4</strong></td>
+        <td>Escribir una Propuesta Ganadora</td>
+        <td>7 clases + taller</td>
+        <td>87h</td>
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td><strong>Pilar 5</strong></td>
+        <td>Gestión de Proyectos Concedidos</td>
+        <td>6 clases</td>
+        <td>50h</td>
+        <td>2.0</td>
+      </tr>
+      <tr>
+        <td><strong>Pilar 6</strong></td>
+        <td>Legislación y Compliance Europeo</td>
+        <td>5 clases</td>
+        <td>37h</td>
+        <td>1.5</td>
+      </tr>
+      <tr class="total">
+        <td><strong>TOTAL</strong></td>
+        <td><strong>6 pilares · +40 clases y módulos</strong></td>
+        <td><strong>+40</strong></td>
+        <td><strong>375h</strong></td>
+        <td><strong>15 ECTS</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" style="margin-top:30px">CALENDARIO<br><span class="accent">6 MESES</span></h2>
+  <p class="section-intro" style="margin-bottom:20px">Ritmo de 10-12 horas semanales, compatible con trabajo. Una sesión en vivo quincenal con el grupo.</p>
+
+  <div class="timeline">
+    <div class="timeline-month highlight">
+      <div class="month-label">Mes 1</div>
+      <div class="month-content">Marco Europeo<br>Guías</div>
+      <div class="month-tag">Pilar 1</div>
+    </div>
+    <div class="timeline-month">
+      <div class="month-label">Mes 2</div>
+      <div class="month-content">Ecosistema<br>de Programas</div>
+      <div class="month-tag">Pilar 2</div>
+    </div>
+    <div class="timeline-month">
+      <div class="month-label">Mes 3</div>
+      <div class="month-content">Plataformas<br>y Formularios</div>
+      <div class="month-tag">Pilar 3</div>
+    </div>
+    <div class="timeline-month highlight">
+      <div class="month-label">Mes 4</div>
+      <div class="month-content">Escribir la<br>Propuesta</div>
+      <div class="month-tag">Pilar 4</div>
+    </div>
+    <div class="timeline-month">
+      <div class="month-label">Mes 5</div>
+      <div class="month-content">Gestión del<br>Proyecto</div>
+      <div class="month-tag">Pilar 5 + 6</div>
+    </div>
+    <div class="timeline-month">
+      <div class="month-label">Mes 6</div>
+      <div class="month-content">Proyecto Final<br>+ Defensa</div>
+      <div class="month-tag">TFM</div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 7: DIFERENCIADORES -->
+<div class="page">
+  <div class="page-header">
+    <div class="section-label">Por Qué EU Funding School</div>
+    <div class="logo-small">EU Funding School</div>
+  </div>
+
+  <h2 class="section-title">POR QUÉ<br><span class="accent">ELEGIRNOS</span></h2>
+  <p class="section-intro">Hay muchos cursos sobre fondos europeos. Pocos están construidos desde dentro del sistema, con conocimiento directo de cómo evalúan los evaluadores y qué hace que una propuesta sea concedida.</p>
+
+  <div class="diff-grid">
+    <div class="diff-box">
+      <div class="diff-icon">🎯</div>
+      <h4>Contenido actualizado cada año</h4>
+      <p>Las guías Erasmus+ cambian cada año. Nuestro contenido se actualiza con cada nueva publicación. No estudias guías de hace 3 años.</p>
+    </div>
+    <div class="diff-box">
+      <div class="diff-icon">🧩</div>
+      <h4>Módulos reutilizables</h4>
+      <p>Cada clase es una unidad independiente. Si haces un curso de KA2, las clases base ya las tienes cubiertas. El conocimiento se acumula.</p>
+    </div>
+    <div class="diff-box">
+      <div class="diff-icon">🛠️</div>
+      <h4>Herramientas propias incluidas</h4>
+      <p>Acceso a la plataforma E+ Tools para escribir y calcular tu propuesta mientras estudias. No es teoría — es práctica real.</p>
+    </div>
+    <div class="diff-box">
+      <div class="diff-icon">🌍</div>
+      <h4>Conocimiento de 8 programas</h4>
+      <p>No solo KA2. Desde CBHE hasta Sport, desde EMJM hasta KA3. La visión completa del ecosistema Erasmus+.</p>
+    </div>
+    <div class="diff-box">
+      <div class="diff-icon">👥</div>
+      <h4>Sesiones en vivo quincenales</h4>
+      <p>Cada dos semanas, sesión de grupo con el experto. Preguntas reales, casos reales, feedback directo sobre tu propuesta.</p>
+    </div>
+    <div class="diff-box">
+      <div class="diff-icon">📄</div>
+      <h4>Título propio acreditado</h4>
+      <p>Certificación que puedes añadir a tu CV y LinkedIn. Reconocida por el sector como aval de competencia real, no solo teórica.</p>
+    </div>
+  </div>
+
+  <div class="quote-box">
+    <div class="quote-mark">"</div>
+    <p>Este máster no te enseña sobre Europa. Te enseña a trabajar dentro de Europa. La diferencia está en cada propuesta que escribas a partir de hoy.</p>
+  </div>
+</div>
+
+<!-- CONTRAPORTADA -->
+<div class="back-cover">
+  <div>
+    <div class="cover-tag" style="background:#fbff12;color:#1b1464;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:6px 16px;border-radius:20px;display:inline-block;margin-bottom:30px;">¿Listo para empezar?</div>
+    <h2>RESERVA TU<br><span>PLAZA AHORA</span></h2>
+    <p style="color:rgba(255,255,255,0.7);font-size:12px;max-width:500px;line-height:1.7;margin-top:16px;">Las plazas son limitadas por cohorte. El máster arranca con la primera convocatoria de octubre 2026. Si quieres que te avisemos cuando se abra la inscripción, apúntate a la lista de espera.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="c-label">Web</div>
+        <div class="c-value">eufundingschool.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="c-label">Duración</div>
+        <div class="c-value">6 meses · octubre 2026</div>
+      </div>
+      <div class="contact-item">
+        <div class="c-label">Créditos</div>
+        <div class="c-value">15 ECTS · Título Propio</div>
+      </div>
+      <div class="contact-item">
+        <div class="c-label">Modalidad</div>
+        <div class="c-value">100% online + sesiones en vivo</div>
+      </div>
+    </div>
+  </div>
+  <div class="back-footer">
+    EU Funding School · Máster en Proyectos Europeos Erasmus+ · Edición 2026-2027 · Plan de estudios v1.0 · eufundingschool.com
+  </div>
+</div>
+
+</body>
+</html>

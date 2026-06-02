@@ -1,0 +1,120 @@
+{
+  "id": 1104904,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÓRDOBA",
+    "nivel3": "AYUNTAMIENTO DE CÓRDOBA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903343",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 201562.5,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A PROYECTOS DE EDUCACIÓN PARA EL DESARROLLO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "MARCO GENERAL QUE REGULA TODAS LAS AYUDAS Y SUBVENCIONES DEL AYUNTAMIENTO DE CÓRDOBA",
+  "urlBasesReguladoras": "https://www.cordoba.es/el-ayuntamiento/ordenanzas-bandos-y-otros/ordenanzas-y-reglamentos-municipales-no-fiscales-/subvenciones-y-patrocinios",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de su publicación en BOP",
+  "textFin": "20 días hábiles, desde el día siguiente de su publicación en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447965,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "552-26 Bases Convocatoria Subvenciones Educación al Desarrollo 2026.pdf",
+      "long": 137397,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447999,
+      "descripcion": "BASES CONVOCATORIA EDUCACIÓN AL DESARROLLO 2026",
+      "nombreFic": "BASES CONVOCATORIA SUBVENCIONES EDUCACIÓN AL DESARROLLO 2026.pdf",
+      "long": 318035,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448088,
+      "descripcion": "ANEXO I",
+      "nombreFic": "Anexo I.pdf",
+      "long": 608285,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448096,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "Anexo VI.pdf",
+      "long": 162167,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448090,
+      "descripcion": "ANEXO III",
+      "nombreFic": "Anexo III.pdf",
+      "long": 110949,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448092,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "Anexo IV.pdf",
+      "long": 243590,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448094,
+      "descripcion": "ANEXO V",
+      "nombreFic": "Anexo V.pdf",
+      "long": 127044,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448089,
+      "descripcion": "ANEXO II",
+      "nombreFic": "Anexo II.pdf",
+      "long": 124285,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

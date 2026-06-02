@@ -1,0 +1,136 @@
+{
+  "identifier": "UCPM-2026-KAPP-PVPP",
+  "ccm2Id": "49889546",
+  "callIdentifier": "UCPM-2026-KAPP-PVPP",
+  "callTitle": "Knowledge for Action in Prevention and Preparedness",
+  "title": "Knowledge for Action in Prevention and Preparedness (KAPP)",
+  "programme": "UCPM",
+  "programmeCode": "43298203",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-02-18",
+  "deadline": "2026-05-19",
+  "deadlineModel": "single-stage",
+  "actionType": "UCPM Project Grants",
+  "actionCode": "UCPM-PJG",
+  "mgaCode": "UCPM-AG",
+  "budget": {
+    "total_eur": 10600000,
+    "by_year": {
+      "2026": 10600000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "UCPM-2026-KAPP-PVPP",
+    "UCPM-2026-KAPP-PVPP"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact ECHO-CP-P&P@ec.europa.eu.\n\nNon-IT related questions, please send an email to ECHO-CP-P&P@ec.europa.eu.\n\nIndividual questions on the Portal Submission System, please contact the IT Helpdesk.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43535?topic=UCPM-2026-KAPP-PVPP",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/UCPM-2026-KAPP-PVPP",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ucpm/wp-call/2026/call-fiche_ucpm-2026-kapp-pvpp_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (UCPM Prevention and Preparedness)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ucpm/temp-form/af/af_ucpm-pp_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table (UCPM)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ucpm/temp-form/af/detailed-budget-table_ucpm_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Letter of support (UCPM)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ucpm/temp-form/af/letter-of-support_ucpm_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "UCPM MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ucpm/agr-contr/general-mga_ucpm_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "UCPM Work Programmes",
+      "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/funding-evaluations/financing-civil-protection/work-programmes-response-decisions_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "UCPM Decision 1313/2013",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013D1313",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:24.939Z"
+}

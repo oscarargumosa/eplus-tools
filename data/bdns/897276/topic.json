@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "897276",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PETRER / AYUNTAMIENTO DE PETRER",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA 2026 DE SUBVENCIONES DESTINADAS A SUFRAGAR GASTOS DE ACTIVIDADES Y/O PERSONAL A ASOCIACIONES Y ENTIDADES PRIVADAS SIN FINES DE LUCRO, QUE ACTÚEN EN LOS SECTORES DE LA ATENCIÓN PRIMARIA DE LOS SERVICIOS SOCIALES DE PETRER",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": "2026-04-10",
+  "deadline": "2026-05-11",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 60500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://petrer.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897276",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Resto de anexos",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://petrer.es/bases-y-convocatoria-para-la-concesion-de-subvenciones-a-asociaciones-y-entidades-privadas-sin-fines-de-lucro-destinadas-a-sufragar-gastos-de-actividades-y-o-personal-por-la-concejalia-de-igualdad-y-3/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208086,
+      "titulo": "CONVOCATORIA 2026 DE SUBVENCIONES DESTINADAS A SUFRAGAR GASTOS DE ACTIVIDADES Y/O PERSONAL A ASOCIACIONES Y ENTIDADES PRIVADAS SIN FINES DE LUCRO, QUE ACTÚEN EN LOS SECTORES DE LA ATENCIÓN PRIMARIA DE LOS SERVICIOS SOCIALES DE PETRER",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios/as: Las asociaciones y entidades de iniciativa social que presten sus servicios a usuarios/as del municipio de Petrer, que tengan como finalidad principal promover la inserción social y fomentar e impulsar la iniciativa social, el asociacionismo y el voluntariado social.</p><p>Segundo: Objeto: Regular la concesión de subvenciones, en régimen de concurrencia competitiva, por el Ayuntamiento de Petrer, a asociaciones y entidades de iniciativa social del ámbito del municipio de Petrer, para la realización de actuaciones preventivas, formativas, de sensibilización, promoción e inserción, en el desarrollo de programas y servicios que complementen las actividades de competencia de Servicios Sociales.</p><p>Tercero: Bases reguladoras aprobadas por la Junta de Gobierno Local del Excmo. Ayuntamiento de Petrer, en sesión celebrada el 2 de abril de 2026.</p><p>Cuarto: Cuantía: 60.500,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes: Un mes a contar desde el día siguiente al de la publicación del extracto de estas bases y convocatoria en el Boletín Oficial de la Provincia de Alicante.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/09_66/2026_002476.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.951Z"
+}

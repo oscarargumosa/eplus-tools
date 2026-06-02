@@ -241,7 +241,7 @@ async function listSimilar(oid, limit = 3) {
    Devuelve solo (oid, lat, lng, name, country, tier_code) para
    pintar 165k puntos sin saturar el payload. Tier compactado a int. */
 
-async function listGeoMarkers({ country, tier } = {}) {
+async function listGeoMarkersRaw({ country, tier } = {}) {
   const where = ['e.geocoded_lat IS NOT NULL'];
   const params = [];
   if (country) { where.push('e.country_code = ?'); params.push(String(country).toUpperCase()); }
@@ -255,7 +255,7 @@ async function listGeoMarkers({ country, tier } = {}) {
     where.push('v.quality_tier = ?');
     params.push(tier);
     [rows] = await pool.query(
-      `SELECT v.oid, v.geocoded_lat AS lat, v.geocoded_lng AS lng,
+      `SELECT v.oid, e.pic, v.geocoded_lat AS lat, v.geocoded_lng AS lng,
               v.country_code AS cc, v.display_name AS name, v.quality_tier AS tier
        FROM v_entities_public v
        JOIN entities e ON e.oid = v.oid
@@ -268,6 +268,7 @@ async function listGeoMarkers({ country, tier } = {}) {
     [rows] = await pool.query(
       `SELECT
          e.oid,
+         e.pic,
          e.geocoded_lat AS lat,
          e.geocoded_lng AS lng,
          e.country_code AS cc,
@@ -317,17 +318,24 @@ async function listGeoMarkers({ country, tier } = {}) {
     );
   }
 
-  // Compact rows para minimizar payload (~50 bytes/entity)
-  // Tier code: 1=premium, 2=good, 3=acceptable, 4=minimal, 0=unenriched
-  const tierCode = { premium: 1, good: 2, acceptable: 3, minimal: 4, unenriched: 0 };
+  return rows;
+}
+
+/* Compacta markers a {o,a,g,c,n,t} para minimizar payload (~50 bytes/marker). */
+const _GEO_TIER_CODE = { premium: 1, good: 2, acceptable: 3, minimal: 4, unenriched: 0, owner: 5 };
+function compactGeoMarkers(rows) {
   return rows.map(r => ({
     o: r.oid,
     a: Number(r.lat),
     g: Number(r.lng),
     c: r.cc,
     n: r.name,
-    t: tierCode[r.tier] ?? 0,
+    t: _GEO_TIER_CODE[r.tier] ?? 0,
   }));
+}
+
+async function listGeoMarkers(args = {}) {
+  return compactGeoMarkers(await listGeoMarkersRaw(args));
 }
 
 /* ── Stats (lectura del cache) ───────────────────────────────── */
@@ -363,6 +371,8 @@ module.exports = {
   getEntityById,
   listSimilar,
   listGeoMarkers,
+  listGeoMarkersRaw,
+  compactGeoMarkers,
   getStat,
   getFilterFacets,
 };

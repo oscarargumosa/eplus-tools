@@ -1,0 +1,105 @@
+{
+  "source": "bdns",
+  "source_id": "897670",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GETAFE / AYUNTAMIENTO DE GETAFE",
+  "nuts_codes": [
+    "ES300"
+  ],
+  "nuts_primary": "ES300",
+  "title": "CONVOCATORIA SUBVENCIONES A ENTIDADES SOCIALES SIN FIN DE LUCRO QUE DESARROLLEN ACTIVIDADES DE ACCIÓN SOCIAL 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 215000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    },
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897670",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANEXO II.1",
+      "url": null
+    },
+    {
+      "label": "ANEXO 1",
+      "url": null
+    },
+    {
+      "label": "ANEXO II-2",
+      "url": null
+    },
+    {
+      "label": "ANEXO II-3",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-1 DECLARACION RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    },
+    {
+      "label": "ANEXO V",
+      "url": null
+    },
+    {
+      "label": "ANEXO II-4 PRESUPUESTO",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.bocm.es/boletin/CM_Orden_BOCM/2013/05/13/BOCM-20130513-55.PDF",
+  "text_inicio": "20 DIAS HABILES A PARTIR DEL SIGUIENTE A PUBLLICACION EXTRACTO CONVOCATORIA EN BOCM",
+  "text_fin": "FIN 20 DIAS HABILES A PARTIR DEL SIGUIENTE A PUBLICACION EXTRACTO CONVOCATORIA EN BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.134Z"
+}

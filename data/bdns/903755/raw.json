@@ -1,0 +1,80 @@
+{
+  "id": 1105316,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "https://sede.gva.es",
+  "codigoBDNS": "903755",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600000,
+  "mrr": false,
+  "descripcion": "Subvenciones de actividades de asociaciones de familias del alumnado, sus federaciones y confederaciones",
+  "descripcionLeng": "Subvencions d'activitats d'associacions de famílies de l'alumnat, les seues federacions i confederacions",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓ de 16 d’abril de 2025, per la qual s’aproven les bases reguladores per a la concessió de subvencions dirigides a les associacions de famílies d’alumnat, associacions d’alumnat, les seues federacions i confederacions",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2025/04/24/pdf/2025_12561_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-09",
+  "fechaFinSolicitud": "2026-05-22",
+  "textInicio": "Dia siguiente de la publicación",
+  "textFin": "10 dias hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449334,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución bases reguladoras para subvencion Asociaciones 2025 castellano.pdf",
+      "long": 726264,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449336,
+      "descripcion": "resolució de concessió",
+      "nombreFic": "02. Resolución convocatoria AFA AMPACO AMPAFE 2026 rev FISCALITZAT_firmado.pdf",
+      "long": 1121980,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449335,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resolucio convocatoria AFA AMPACO AMPAFE 2026_26-003961_trad VAL_firmado.pdf",
+      "long": 414521,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

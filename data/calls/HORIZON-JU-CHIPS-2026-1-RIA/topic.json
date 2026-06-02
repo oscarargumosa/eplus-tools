@@ -1,0 +1,131 @@
+{
+  "identifier": "HORIZON-JU-CHIPS-2026-1-RIA",
+  "ccm2Id": "50464627",
+  "callIdentifier": "HORIZON-JU-CHIPS-2026-1-RIA",
+  "callTitle": "HORIZON-JU-CHIPS-2026-1-RIA",
+  "title": "RIA Global call according to SRIA 2026",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-02-03",
+  "deadline": "2026-05-07",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": "HORIZON-JU-RIA",
+  "mgaCode": "HORIZON-AG",
+  "budget": {
+    "total_eur": 50000000,
+    "by_year": {
+      "2026": 50000000
+    },
+    "expected_grants": 8,
+    "min_contribution_eur": 1000000,
+    "max_contribution_eur": 12000000
+  },
+  "keywords": [
+    "HORIZON-JU-CHIPS-2026-1-RIA",
+    "HORIZON-JU-CHIPS-2026-1-RIA"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nFor help related to this call, please contact calls@chips-ju.europa.eu\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nPartner Search help you find a partner organisation for your proposal.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43401?topic=HORIZON-JU-CHIPS-2026-1-RIA",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-JU-CHIPS-2026-1-RIA",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "Call documents section",
+      "url": "https://www.chips-ju.europa.eu/File/download.aspx?entity=shv_call&attribute=shv_calldocumentfile&ID=51c0058c-9bda-f011-8544-7c1e5276d834",
+      "ext": ".aspx",
+      "is_downloadable": false
+    },
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "Chips JU website's Call page",
+      "url": "https://www.chips-ju.europa.eu/CallDetails/?id=51c0058c-9bda-f011-8544-7c1e5276d834",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "Appendix 7 of the Chips JU Workprogramme",
+      "url": "https://www.chips-ju.europa.eu/File/download.aspx?entity=shv_call&attribute=shv_mawpappendix4v8&ID=51c0058c-9bda-f011-8544-7c1e5276d834",
+      "ext": ".aspx",
+      "is_downloadable": false
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "HE Programme Guide",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "HE MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Information on financial support to third parties (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-financial-support-to-third-parties_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Information on clinical studies (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-clinical-studies_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:28.208Z"
+}

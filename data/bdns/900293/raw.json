@@ -1,0 +1,72 @@
+{
+  "id": 1101854,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT CUGAT SESGARRIGUES",
+    "nivel3": "AYUNTAMIENTO DE SANT CUGAT SESGARRIGUES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900293",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONS PER ASSOCIACIONS I/O ENTITATS PER A L¿EXERCICI 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "LES BASES REGULADORES DE SUBVENCIONS PER A ENTITATS I ASSOCIACIONS EXERCICI 2026",
+  "urlBasesReguladoras": "https://bop.diba.cat/anuncio/3907683/aprovacio-de-les-bases-que-regiran-les-subvencions-mitjancant-concurrencia-competitiva-destinades-a-entitats-i-associacions-per-a-l-exercici-2026-ajuntament-de-sant-cugat-sesgarrigues",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El termini de presentació de sol·licituds serà d¿un mes a comptar des de la publicació de la convoca",
+  "textFin": "El termini de presentació de sol·licituds serà d¿un mes a comptar des de la publicació de la convoca",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439465,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "ANUNCI_ANUNCI_CONVOCATORIA_SUBVENCIONS_ENTITATS_10042026Â -Â ANUNCI_(TD08-010).pdf",
+      "long": 176802,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439464,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ANUNCI_ANUNCI_CONVOCATORIA_SUBVENCIONS_ENTIATS_CASTELLA_10042026Â -Â ANUNCI_(TD08-010).pdf",
+      "long": 176824,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

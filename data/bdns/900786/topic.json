@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "900786",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALENCIA / FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Subvención, en régimen de concesión directa, a la Asociación Valenciana de Jóvenes Empresarios para el desarrollo de actividades divulgativas y de dinamización del ecosistema emprendedor durante 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "74.9",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas n.c.o.p."
+    }
+  ],
+  "apply_url": "https://www.valenciainnovationcapital.com ",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900786",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Resolución aprobación convenio AJEV 2026",
+      "url": null
+    },
+    {
+      "label": "Autorización JGL_AJEV 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://valenciainnovationcapital.com/wp-content/uploads/2026/04/260420-R80-26-Resolucion-aprobacion-convenio-AJEV-2026_firmado.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209743,
+      "titulo": "Subvención nominativa a la Asociación Valenciana de Jóvenes Empresarios para el desarrollo de actividades divulgativas y de dinamización del ecosistema emprendedor durante 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Objeto.</p><p>Canalizar la subvención nominativa concedida por la Fundación a favor de la Asociación Valenciana de Jóvenes Empresarios (AJEV) para la ejecución, durante el ejercicio 2026, del programa “Actividades Divulgativas AJEV 2026”, orientado a la dinamización del ecosistema emprendedor valenciano, la innovación empresarial, el emprendimiento tecnológico y la promoción del liderazgo femenino, mediante la realización de actividades divulgativas, formativas y de conexión empresarial, en coherencia con los objetivos estratégicos de València Innovation Capital.</p><p>Segundo. Bases reguladoras</p><p>Las bases reguladoras de la subvención se contienen en el convenio de colaboración suscrito entre la Fundación y AJEV, de conformidad con lo dispuesto en los artículos 22.2.a) y 28.1 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, en el Real Decreto 887/2006, de 21 de julio, por el que se aprueba su Reglamento, y en los artículos 22 y 23 de la Ordenanza General de Subvenciones del Ayuntamiento de València.</p><p>Tercero. Cuantía</p><p>La cuantía de la subvención asciende a quince mil euros (15.000,00 €), con cargo al presupuesto de la Fundación correspondiente al ejercicio 2026.</p><p>Cuarto. Plazo</p><p>La vigencia del convenio se extiende desde la fecha de la última firma electrónica hasta el 31 de diciembre de 2026, con efectos retroactivos al 1 de enero de 2026, exclusivamente a los efectos de la imputación de las actividades y gastos subvencionables.</p><p>Quinto. Otros datos</p><p>La subvención tiene carácter nominativo y se concede en régimen de concesión directa, de conformidad con lo previsto en el artículo 22.2.a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones.El abono de la subvención se realizará previa presentación y validación de la correspondiente cuenta justificativa, en los términos establecidos en el convenio de colaboración y en la normativa de aplicación.</p><p>No se prevén pagos anticipados ni pagos a cuenta, efectuándose el abono únicamente tras la correcta justificación de los gastos subvencionables.</p><p>La subvención será compatible con otras ayudas, ingresos o recursos que financien la misma actividad, siempre que no se supere el coste total de la actuación subvencionada, en los términos previstos en el convenio</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04811&lang=es",
+      "cve": "BOPV-2026/04811",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.874Z"
+}

@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    PhaseTabs — Unified horizontal sub-navigation component
    Single visual pattern for the sub-steps of every phase
-   (Presupuestar, Escribir, Evaluar). Each phase calls render()
+   (Diseñar, Escribir, Evaluar). Each phase calls render()
    with its own list of sub-steps and a callback.
 
    Usage:

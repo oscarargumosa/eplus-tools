@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "897687",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE LA PALMA / EXCMO. CABILDO INSULAR DE LA PALMA",
+  "nuts_codes": [
+    "ES707"
+  ],
+  "nuts_primary": "ES707",
+  "title": "CONVOCATORIA AYUDAS A LA MOVILIDAD DE ESTUDIANTES PALMEROS FUERA DE LA ISLA DE LA PALMA. CURSO 2025-2026.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 368000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.cabildodelapalma.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897687",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "text_inicio": "DIA SIGUIENTE DE LA PUBLICACION DE UN EXTRACTO DE LA CONVOCATORIA EN EL BOP SANTA CRUZ DE TENERIFE",
+  "text_fin": "UN MES DESDE EL DIA SIGUIENTE DE LA PUBLICACION DEl EXTRACTO DE LA CONVOCATORIA EN BOP S/C TENERIFE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.144Z"
+}

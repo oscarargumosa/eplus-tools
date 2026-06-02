@@ -1,0 +1,104 @@
+{
+  "id": 1102063,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONDA",
+    "nivel3": "AYUNTAMIENTO DE ONDA"
+  },
+  "sedeElectronica": "https://seu.onda.es/OpenSEA/login.jsp",
+  "codigoBDNS": "900502",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 700,
+  "mrr": false,
+  "descripcion": "Concurso del cartel anunciador de la Fira d'Onda",
+  "descripcionLeng": "Concurs del cartell anunciador de la Fira d'Onda",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases del concurso de cartel anunciador de la Fira d'Onda",
+  "urlBasesReguladoras": "https://www.onda.es/ond/web_php/index.php?contenido=descripcion&id_boto=320&lang=1",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-17",
+  "textInicio": "Desde la publicación del extracto",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439920,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "03 BORRADOR Bases concurso de carteles cast 2026.pdf",
+      "long": 260573,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1439921,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "03 ESBORRANY Bases concurs de cartells val 2026.pdf",
+      "long": 251304,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1439940,
+      "descripcion": "solicitud",
+      "nombreFic": "Solicitud_presentacion_carteles feria.pdf",
+      "long": 107030,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1439934,
+      "descripcion": "Anexo I",
+      "nombreFic": "Anexo I - CAST 2026.pdf",
+      "long": 130753,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1439936,
+      "descripcion": "Anexo II",
+      "nombreFic": "Anexo II - CAST 2026.pdf",
+      "long": 133163,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1439926,
+      "descripcion": "Acuerdo de aprobación de las bases",
+      "nombreFic": "07 ACORD_1.26_JGL_20260417.pdf",
+      "long": 357534,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

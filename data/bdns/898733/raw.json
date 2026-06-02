@@ -1,0 +1,96 @@
+{
+  "id": 1100294,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "QUART DE POBLET",
+    "nivel3": "AYUNTAMIENTO DE QUART DE POBLET"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898733",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "ANULADA CONVOCATORIA DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA ENTIDADES Y CLUBES DEPORTIVOS DE QUART DE POBLET POR DESARROLLO DE ESCUELAS INICIACIÓN DEPORTIVA y DEPORTE BASE Y PARTICIPACIÓN EN COMPETICIONES FEDERADAS EN EL EJERCICIO 2026",
+  "descripcionLeng": "ANULADA ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BASES DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA ENTIDADES Y CLUBES DEPORTIVOS DE QUART DE POBLET POR DESARROLLO DE ESCUELAS INICIACIÓN DEPORTIVA Y DEPORTE BASE Y PARTICIPACIÓN EN COMPETICIONES FEDERADAS EN EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1444445,
+      "descripcion": "Certificado Anulación Convocatoria Por Error Material",
+      "nombreFic": "Informe anulación publicación Convocatoria BOP 76_Clubes - SEFYCU 8070296.pdf",
+      "long": 900262,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1434980,
+      "descripcion": "Certificado Aprobación Junta de Gobierno Local",
+      "nombreFic": "Certificado acuerdo JGL - SEFYCU 7966217.pdf",
+      "long": 335196,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1434979,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Subvenciones por Concurrencia Competitiva Clubes Deportivos.pdf",
+      "long": 635564,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208780,
+      "titulo": "CONVOCATORIA DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA ENTIDADES Y CLUBES DEPORTIVOS DE QUART DE POBLET POR DESARROLLO DE ESCUELAS INICIACIÓN DEPORTIVA y DEPORTE BASE Y PARTICIPACIÓN EN COMPETICIONES FEDERADAS EN EL EJERCICIO 2026",
+      "tituloLeng": null,
+      "texto": "<p>El objeto de la presente convocatoria es la subvenciones en concurrencia competitiva para entidades y clubes deportivos de quart de poblet por desarrollo de escuelas iniciación deportiva y deporte base y participación en competiciones federadas en el ejercicio 2026, el crédito presupuestario para la presente convocatoria es de 90.000€ que se encuentra previsto en la partida 489.00&#8208;341 del presupuesto del Ayuntamiento de Quart de Poblet para el ejercicio de 2026.</p><p>El Plazo de presentación de solicitudes: 20 días naturales a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de la Provincia.</p><p>En Quart de Poblet, la Alcaldesa, Cristina Mora Luján.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04404&lang=es",
+      "cve": "BOPV-2026/04404",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

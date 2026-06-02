@@ -279,8 +279,11 @@ const App = (() => {
       'my-projects':    'Mis Proyectos',
       'my-evaluations': 'Mis Evaluaciones',
       create:           'Diseñar',
-      intake:           'Presupuestar',
+      intake:           'Diseñar',
       developer:        'Escribir',
+      master:           'Diagnóstico',
+      diagnose:         'Diagnóstico',
+      'import-proposal':'Importar proyecto',
       calculator:       'Calculator',
       planner:          'Planner',
       evaluator:        'Evaluar',
@@ -288,6 +291,8 @@ const App = (() => {
       partners:         'Partners',
       'my-documents':   'My Documents',
       research:         'Research',
+      movilidades:      'Movilidades',
+      convocatorias:    'Convocatorias',
       'my-org':         'Mi Organización',
       organizations:    'Partner Engine',
       shortlists:       'Mi Pool',
@@ -311,7 +316,11 @@ const App = (() => {
     if (route === 'shortlists' && typeof Shortlists !== 'undefined') Shortlists.init();
     if (route === 'atlas-stats' && typeof AtlasStats !== 'undefined') AtlasStats.init();
     if (route === 'research' && typeof Research !== 'undefined') Research.init();
+    if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
+    if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
     if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
+    if (route === 'diagnose' && typeof Diagnose !== 'undefined') Diagnose.init();
+    if (route === 'import-proposal' && typeof ImportProposal !== 'undefined') ImportProposal.init();
     if (route === 'evaluator' && typeof Evaluator !== 'undefined') Evaluator.init();
     if (route === 'budget' && typeof Budget !== 'undefined') Budget.init();
   }
@@ -341,9 +350,11 @@ const App = (() => {
     }
   }
   function getActiveProject() { return activeProject; }
+  function getCurrentUser() { return currentUser; }
+  function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, navigate, toggleSidebar, setActiveProject, getActiveProject };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, isAdmin };
 })();
 
 

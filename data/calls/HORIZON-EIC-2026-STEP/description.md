@@ -1,0 +1,21 @@
+## Expected Outcome
+
+The EIC STEP Scale Up call offers a total indicative budget of EUR 300 million for 2026, which is expected to rise to EUR 900 million for the period 2025-2027. Any unused amount from this budget will be allocated with priority to the EIC Accelerator Open call.
+
+The support will be in the form of equity-only investments managed by the EIC Fund. Applicants to this call will not receive a grant component. It provides significant financial support, and applicants should apply for an investment of a minimum of EUR 10 million and maximum of EUR 30 million, to co-invest in a funding round in the range of EUR 50 to 150 million, and at least three to five times the amount of the requested EIC contribution. The specific terms of each investment are considered and negotiated on a case-by-case basis in accordance with the EIC Fund Investment Guidelines. This ensures the investment is tailored to your company's needs while aligning with EIC's objectives.
+
+EIC STEP Scale Up is designed to fill the funding gap for companies to invest in the scale up of high-risk innovations and where the amount needed for the scale up cannot be fully financed by other investors, including InvestEU direct and indirect financial products provided by implementing partners. Applicants are encouraged to consider in particular complementarity with Venture Debt from InvestEU implementing partners in order to meet their financing needs.
+
+When implementing investments, the EIC Fund will ensure that supported companies keep most of their value, including their IP, in the EU or in the Associated Countries in order to contribute to their economic growth and job creation. Where necessary, the EIC Fund will be requested to take appropriate safeguard measures for individual companies on a case-by-case basis in order to protect European interests as defined in the Investment Guidelines.
+
+Beyond funding, your company will benefit from a strong support system that fosters your continued growth within Europe through Business Acceleration Services (details available in Section VII). Applicants to the EIC STEP Scale Up call who meet the evaluation thresholds will also be awarded a Sovereignty (STEP) Seal, to facilitate and provide possibility of the access to funding and support from other EU programmes and other funders and investors.
+
+## Objective
+
+The EIC STEP Scale Up call presents a unique opportunity for ambitious scale up companies (SMEs and small mid-caps) with game-changing innovations in Europe's critical technology areas. It offers a powerful combination of financial and strategic support designed to propel your groundbreaking solution to the forefront of these sectors.
+
+The companies selected under the EIC STEP Scale Up call shall receive investments ranging from EUR 10 to EUR 30 million. This investment can significantly accelerate the development and market launch of your technology, product, or service. With this funding, you'll gain the power to disrupt established markets and forge new ones across Europe, potentially achieving significant global impact. Crucially, this investment is designed to catalyse major funding rounds in the range of EUR 50 to 150 million, and at least 3-5 times the EIC investment.
+
+This call is part of the implementation of the Strategic Technologies for Europe Platform (STEP) which supports the development or manufacturing of critical technologies throughout the Union or safeguarding and strengthening their respective value chains. Besides, support from the EIC, the projects may be eligible for support under other EU programmes included in STEP.
+
+In 2026 support for start-ups in semiconductor technologies and quantum technologies will be pursued in particular through the STEP Scale Up call which foresees larger investments targeting strategic technologies including in support of the Chips Act. The EIC Accelerator Open call remains available in general for startups and SMEs including for quantum and semiconductor technologies.

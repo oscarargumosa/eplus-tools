@@ -1,0 +1,76 @@
+{
+  "id": 1099128,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILADECANS",
+    "nivel3": "AYUNTAMIENTO DE VILADECANS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897567",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIÓN, EN RÉGIMEN DE CONCURRENCIA NO COMPETITIVA, DE AYUDAS POR TITULARES DE VIVIENDAS DESTINADAS A ARRENDAMIENTO GESTIONADAS Y VISADOS POR LA OFICINA LOCAL DE VIVIENDA MUNICIPAL",
+  "descripcionLeng": "CONVOCATORIA DE SUBVENCIÓ, EN RÈGIM DE CONCURRÈNCIA NO COMPETITIVA, D’AJUTS PER TITULARS D’HABITATGES DESTINATS A ARRENDAMENT GESTIONATS I VISATS PER L’OFICINA LOCAL D’HABITATGE MUNICIPAL",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades postales y de mensajería",
+      "codigo": "53"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORES DE SUBVENCIONES A LA VIVIENDA HABITUAL Y TITULARES DE VIVIENDAS DESTINADAS AL ARRENDAMIENTO GESTIONADAS Y VISADAS POR LA OFICINA LOCAL DE VIVIENDA MUNICIPAL",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3233843/aprovacio-de-les-bases-de-subvencions-a-l-habitatge-habitual-i-titulars-d-habitatges-destinats-a-arrendament-gestionats-i-visats-per-l-oficina-local-d-habitatge-municipal-ajuntament-de-viladecans",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-14",
+  "fechaFinSolicitud": "2026-05-14",
+  "textInicio": "Desde la fecha de publicación de la convocatoria",
+  "textFin": "un mes",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431484,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci convocatoria bilingüe signat.pdf",
+      "long": 193339,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431482,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anunci convocatoria bilingüe signat.pdf",
+      "long": 193339,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

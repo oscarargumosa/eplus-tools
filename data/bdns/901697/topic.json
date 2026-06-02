@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "901697",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE SALAMANCA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Convocatoria de becas en el marco del Programa de Becas China Three Gorges, para realizar estudios de Máster en universidades chinas, durante los cursos 2026/2027 y 2027/2028.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": "2026-05-04",
+  "deadline": "2026-06-11",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.sede.usal.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901697",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://internacional.usal.es/wp-content/uploads/sites/194/2026/04/bases-reguladoras-concesion-becas-estudiantes-usal-26sept2017.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210135,
+      "titulo": "Extracto de la convocatoria de 21 de abril de 2026, por la que se convocan becas en el marco del Programa de Becas China Three Gorges, para realizar estudios de Máster en universidades chinas, durante los cursos 2026/2027 y 2027/2028.",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios</p><p>Podrán solicitar estas becas los estudiantes matriculados en programas de máster oficial de la Universidad de Salamanca y alumnos de último curso de grado que hayan tenido contacto con la lengua y la cultura china.</p><p>Segundo.- Objeto</p><p>Convocar becas para realizar estudios de Máster en universidades chinas, con el fin de potenciar la movilidad internacional de los estudiantes de la Universidad de Salamanca.</p><p>Tercero.- Bases reguladoras</p><p>Resolución de 26 de septiembre de 2017 del Rectorado de la Universidad de Salamanca, por la que se publican las Bases reguladoras de la concesión de becas y ayudas a los estudiantes de la Universidad de Salamanca.</p><p>Cuarto.- Cuantía</p><p>La cuantía global máxima del crédito consignado es de treinta mil euros (30.000 €).</p><p>Quinto.- Plazo de presentación de solicitudes</p><p>Desde el día 4 de mayo hasta el día 11 de junio de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/29/pdf/BOCYL-D-29042026-80-7.pdf",
+      "cve": "BOCYL-D-29042026-80-7",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.317Z"
+}

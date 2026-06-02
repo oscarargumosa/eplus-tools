@@ -1,0 +1,76 @@
+{
+  "id": 1099892,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOLINA DE SEGURA",
+    "nivel3": "AYUNTAMIENTO DE MOLINA DE SEGURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898331",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES REGULADORAS DEL XXIII PREMIO SETENIL 2026 AL MEJOR LIBRO DE RELATOS PUBLICADO EN ESPAÑA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES620 - Murcia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES GENERALES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES Y PREMIOS DEL AYUNTAMIENTO DE MOLINA DE SEGURA PARA EL AÑO 2026",
+  "urlBasesReguladoras": "https://sedeelectronica.molinadesegura.es/subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en BORM",
+  "textFin": "30/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433919,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado_acuerdo - 2026-04-13T105102.710.pdf",
+      "long": 164893,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208634,
+      "titulo": "Extracto del Acuerdo de 30 de marzo de 2026 de la Junta de Gobierno Local del Ayuntamiento de Molina de Segura, por el que se aprueba la convocatoria y bases del XXIII Premio Setenil 2026, al mejor libro de relatos publicado en España.",
+      "tituloLeng": null,
+      "texto": "<p>De conformidad con lo previsto en los artículos 17.3. b) y 20.8. a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica un extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones http://www.pap.minhap.gob.es/bdnstrans/index</p><p>Primero. Beneficiarios.</p><p>Autores de nacionalidad española que hayan publicado en España libros de relatos entre las fechas 23 de abril de 2025 (Día del Libro) y 22 de abril de 2026.</p><p>Segundo. Objeto.</p><p>Contribuir a reforzar el reconocimiento del relato como género literario en España.</p><p>Tercero. Bases reguladoras.</p><p>Bases Generales reguladoras de la convocatoria de subvenciones y premios del Ayuntamiento de Molina de segura, incluidas como Anexo I del Presupuesto de 2026. (https://sedeelectronica.molinadesegura.es/subvenciones/)</p><p>Cuarto. Cuantía.</p><p>El premio se concederá con cargo a la aplicación presupuestaria 03/3440/48602036 “PREMIO SETENIL: LIBRO DE RELATOS”, prevista en el presupuesto de gastos para el ejercicio 2026, por un importe máximo de 10.000,00 €.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes se iniciará a partir del día siguiente de la publicación de esta convocatoria en el BORM y finalizará el 30 de junio de 2026 a las 24h.</p>",
+      "textoLeng": null,
+      "url": "https://www.borm.es/services/anuncio/ano/2026/numero/1673/pdf",
+      "cve": "A-160426-1673",
+      "desDiarioOficial": "BORM. B.O. DE LA REGIÓN DE MURCIA",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

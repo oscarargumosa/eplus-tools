@@ -1,0 +1,31 @@
+[Unit]
+Description=E+ Tools daily data refresh (SALTO + SEDIA + BDNS + funding unifier)
+Documentation=file:///opt/eplus-tools-cron/docs/REFRESH_PIPELINE.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=eplusbot
+Group=eplusbot
+WorkingDirectory=/opt/eplus-tools-cron
+ExecStart=/usr/bin/node scripts/refresh-all.js
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=30min
+
+# Hardening (defaults that don't break anything)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/eplus-tools-cron
+# read-only (not true) so SSH can read ~/.ssh/{id_ed25519,known_hosts} for git push.
+# Confirmed in 2026-05-07 setup: ProtectHome=true broke `git push` with
+# "hostkeys_foreach failed for /home/eplusbot/.ssh/known_hosts: Permission denied".
+ProtectHome=read-only
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+LockPersonality=true

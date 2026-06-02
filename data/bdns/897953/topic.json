@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "897953",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLACAÑAS / AYUNTAMIENTO DE VILLACAÑAS",
+  "nuts_codes": [
+    "ES425"
+  ],
+  "nuts_primary": "ES425",
+  "title": "CONVOCATORIA Y BASES PARA LA CONCESIÓN DE SUBVENCIONES Y AYUDAS ECONÓMICAS EN APOYO DE INICIATIVAS DE ASOCIACIONES 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://sedevillacanas.absiscloud.com",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897953",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://simplifica01.absiscloud.com/absis/ead/tra/eadtramitaweb/dlg/tablonanuncios/portal/dlgVerDetalleAnuncio.aspx?sesionId=306246d6d-abfa-46f8-8ae0-82ad0298f1ecPyIzMjY8MjNiOTE9Jmo9PTc9NWQ0Yig-PjhoJzJtbj1sdjUxMT02MDc4Ozo7PUhPS0RTQ05NUUc&numint=E983B627B1",
+  "text_inicio": "El plazo será de 15 días hábiles computados a partir del día siguiente al de publicación en el BOP",
+  "text_fin": "El plazo será de 15 días hábiles computados a partir del día siguiente al de publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.316Z"
+}

@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "901313",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES / CENTRO DE ESTUDIOS POLÍTICOS Y CONSTITUCIONALES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 23 de abril de 2026, del Centro de Estudios Políticos y Constitucionales, por la\nque se convoca el Premio “Francisco Tomás y Valiente” 2026.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901313",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2024/10/07/pjc1087",
+  "text_inicio": "Al día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
+  "text_fin": "Un mes, a contar desde el día siguiente a la publicación del extracto de la convocatoria en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209941,
+      "titulo": "Extracto de la resolución de 23 de abril de 2026, del Centro de Estudios Políticos y Constitucionales, por la que se convoca el Premio “Francisco Tomás y Valiente” 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Personas beneficiarias</p><p>Podrán personarse al premio las personas físicas, españolas o extranjeras, que sean autoras de obra científica, original e inédita, que verse sobre cualesquiera aspectos históricos o actuales, de la Constitución Española y de la Justicia Constitucional, tanto desde un enfoque estrictamente teórico como a partir de experiencias determinadas de un ordenamiento nacional o de varios, en perspectiva comparada., que cumplan lo previsto en el apartado siguiente.</p><p>Segundo. Objeto</p><p>Convocar el premio “Francisco Tomás y Valiente” de ensayos sobre Constitución y justicia constitucional, instituido conjuntamente por el Tribunal Constitucional y el Centro de Estudios Políticos y Constitucionales, correspondiente al año 2026, cuya convocatoria se efectúa en régimen de concurrencia competitiva.</p><p>La extensión de las obras originales será libre. Las obras podrán ser escritas en cualquiera de las lenguas oficiales españolas, acompañada de traducción en lengua castellana.</p><p>Tercero. Bases reguladoras</p><p>Orden PJC/1087/2024, de 7 de octubre (BOE nº 244, de 9 de octubre), por la que se aprueban bases reguladoras para la concesión del Premio “Francisco Tomas y Valiente” por el Tribunal Constitucional y el Centro de Estudios Políticos y Constitucionales.</p><p>Cuarto. Cuantía</p><p>El premio conlleva una dotación de doce mil euros (12.000 €).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>El plazo para la presentación de las candidaturas será de un mes, a contar desde el día siguiente a la publicación del extracto de la convocatoria en el \"Boletín Oficial del Estado\".</p><p>Sexto. Otros datos</p><p>Lugar de presentación de solicitudes:</p><p>La presentación de las obras que opten al Premio se realizará en el Registro General del CEPC, Plaza de la Marina Española 9, Madrid – 28013, DIR3 EA0040767, o en cualquiera de los lugares previstos en el artículo 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p><p>La documentación a aportar y otra información de interés se encuentra reflejada en la convocatoria, publicada en la página web www.cepc.gob.es.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-12991",
+      "cve": "BOE-B-2026-12991",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-25"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.108Z"
+}

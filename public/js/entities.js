@@ -395,10 +395,11 @@ const Entities = (() => {
         </div>
 
         <div class="space-y-1.5">
-          ${scoreBar('Profesionalidad', o.score_professionalism)}
-          ${scoreBar('Listo para EU',   o.score_eu_readiness)}
-          ${scoreBar('Vitalidad web',   o.score_vitality)}
+          ${scoreBar('Personal',    o.score_personal,    { max: 10 })}
+          ${scoreBar('Experiencia', o.score_experience,  { max: 10 })}
+          ${scoreBar('Alianzas',    o.score_alliances,   { max: 10 })}
         </div>
+        ${o.is_newcomer ? `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-primary bg-secondary-fixed px-2 py-0.5 rounded-full mt-1"><span class="material-symbols-outlined text-[12px]">auto_awesome</span>Newcomer</span>` : ''}
 
         ${cms ? `<div class="flex items-center gap-1.5 text-[10px] text-on-surface-variant/60 -mt-1">
           <span class="material-symbols-outlined text-[12px]">code</span>
@@ -409,18 +410,19 @@ const Entities = (() => {
   }
 
   /* ── Barra horizontal etiquetada (sustituye los donuts P/E/V) ─ */
-  function scoreBar(label, value) {
-    const v = (value == null ? 0 : Math.max(0, Math.min(100, value)));
-    const fillColor = v >= 70 ? '#fbff12' : v >= 40 ? '#fbff12' : '#c7afdf';
-    const opacity   = v >= 70 ? '1' : v >= 40 ? '0.65' : '0.55';
+  function scoreBar(label, value, opts = {}) {
+    const max = opts.max || 100;
+    const v = (value == null ? 0 : Math.max(0, Math.min(max, value)));
+    const pct = max > 0 ? (v / max) * 100 : 0;
+    const display = max === 10 ? `${v}/10` : `${v}`;
     return `
       <div class="grid grid-cols-[1fr_auto] gap-x-2 items-center">
         <div class="flex items-center justify-between text-[11px]">
           <span class="font-medium text-on-surface-variant">${esc(label)}</span>
-          <span class="font-bold text-primary tabular-nums">${v}</span>
+          <span class="font-bold text-primary tabular-nums">${display}</span>
         </div>
         <span class="col-span-2 block h-1.5 bg-surface-container rounded-full overflow-hidden">
-          <span class="block h-full rounded-full transition-all" style="width:${v}%; background:${fillColor}; opacity:${opacity}"></span>
+          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#1b1464"></span>
         </span>
       </div>
     `;
@@ -581,7 +583,7 @@ const Entities = (() => {
       <!-- Bloque scores con donuts ApexCharts -->
       <section class="px-6 lg:px-8 pb-6">
         <div class="bg-surface-container-low rounded-2xl p-5">
-          <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant mb-4">Scores de calidad</h3>
+          <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant mb-4">Personal · Experiencia · Alianzas</h3>
           <div class="grid grid-cols-3 gap-4">
             <div id="ficha-donut-prof" class="ficha-donut-wrap"></div>
             <div id="ficha-donut-eu"   class="ficha-donut-wrap"></div>
@@ -617,12 +619,29 @@ const Entities = (() => {
         </div>
       </section>
 
-      <!-- EU Programs -->
-      ${o.eu_programs && Object.keys(o.eu_programs).length ? `
+      <!-- Proyectos ejecutados -->
+      ${Array.isArray(o.recent_projects) && o.recent_projects.length ? `
         <section class="px-6 lg:px-8 pb-6">
-          <div class="bg-accent-warm/30 rounded-2xl p-5">
-            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-primary mb-3">Programas EU</h3>
-            <pre class="text-xs text-primary/80 whitespace-pre-wrap">${esc(JSON.stringify(o.eu_programs, null, 2))}</pre>
+          <div class="flex items-end justify-between mb-3">
+            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant">Proyectos ejecutados</h3>
+            <span class="text-[11px] text-on-surface-variant">
+              ${o.total_projects ? `Mostrando ${o.recent_projects.length} de ${formatNumber(o.total_projects)}` : `${o.recent_projects.length}`}
+            </span>
+          </div>
+          <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden">
+            ${o.recent_projects.map(p => renderProjectRow(p)).join('')}
+          </ul>
+        </section>` : ''}
+
+      <!-- Socios habituales -->
+      ${Array.isArray(o.top_copartners) && o.top_copartners.length ? `
+        <section class="px-6 lg:px-8 pb-6">
+          <div class="flex items-end justify-between mb-3">
+            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant">Socios habituales</h3>
+            <span class="text-[11px] text-on-surface-variant">${o.top_copartners.length} top copartners</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            ${o.top_copartners.map(c => renderCopartnerCard(c)).join('')}
           </div>
         </section>` : ''}
 
@@ -654,6 +673,51 @@ const Entities = (() => {
     if (value == null || value === '') return '';
     return `<div class="flex gap-3"><dt class="text-on-surface-variant w-24 shrink-0">${esc(label)}</dt><dd class="font-medium text-on-surface flex-1 break-words">${esc(value)}</dd></div>`;
   }
+  function renderProjectRow(p) {
+    const title = p.project_title || p.title || p.project_identifier || '(sin título)';
+    const year = p.funding_year || (p.start_date ? new Date(p.start_date).getFullYear() : null);
+    const grant = p.eu_grant_eur ? Math.round(parseFloat(p.eu_grant_eur)) : null;
+    const role = p.role || null;
+    const action = p.action_type || null;
+    const isGood = p.is_good_practice;
+    const roleBg = role === 'coordinator' ? 'bg-secondary-fixed text-primary' : 'bg-accent-warm/40 text-primary';
+    return `
+      <li class="px-4 py-3 hover:bg-surface-container/40 transition-colors">
+        <div class="flex items-start gap-3">
+          <div class="min-w-0 flex-1">
+            <div class="text-sm font-semibold text-primary leading-snug truncate" title="${esc(title)}">${esc(title)}</div>
+            <div class="flex flex-wrap items-center gap-1.5 mt-1.5 text-[11px]">
+              ${role ? `<span class="${roleBg} px-1.5 py-0.5 rounded font-bold uppercase">${esc(role)}</span>` : ''}
+              ${action ? `<span class="text-on-surface-variant">${esc(action)}</span>` : ''}
+              ${isGood ? `<span class="text-amber-700 font-bold uppercase">★ Good practice</span>` : ''}
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            ${year ? `<div class="text-sm font-bold text-primary">${year}</div>` : ''}
+            ${grant ? `<div class="text-[11px] text-on-surface-variant">${formatNumber(grant)} €</div>` : ''}
+          </div>
+        </div>
+      </li>`;
+  }
+  function renderCopartnerCard(c) {
+    const oid = c.copartner_pic || c.oid || null;
+    const name = c.name || c.display_name || '(sin nombre)';
+    const cc = (c.country_code || '').toUpperCase();
+    const shared = parseInt(c.shared_projects, 10) || 0;
+    const orgType = c.org_type || c.category || null;
+    return `
+      <div class="bg-white rounded-xl border border-outline-variant/25 p-3 ${oid ? 'cursor-pointer hover:border-primary/50' : ''}"
+           ${oid ? `data-action="open-entity" data-oid="${esc(oid)}"` : ''}>
+        <div class="flex items-start justify-between gap-2 mb-1.5">
+          <div class="text-sm font-semibold text-primary truncate" title="${esc(name)}">${esc(name)}</div>
+          <div class="text-[11px] font-bold text-primary bg-secondary-fixed px-1.5 py-0.5 rounded shrink-0">${shared} proy.</div>
+        </div>
+        <div class="text-[11px] text-on-surface-variant flex flex-wrap gap-1.5">
+          ${cc ? `<span class="font-medium">${cc}</span>` : ''}
+          ${orgType ? `<span class="truncate">${esc(orgType)}</span>` : ''}
+        </div>
+      </div>`;
+  }
   function renderContactList(items, icon, hrefPrefix) {
     if (!items || !items.length) return '';
     return `<ul class="space-y-1 mb-3">
@@ -683,18 +747,13 @@ const Entities = (() => {
     document.getElementById('entity-ficha-close')?.addEventListener('click', closeFicha);
 
     // Render donuts via ApexCharts
-    if (typeof ApexCharts !== 'undefined') {
-      renderDonut('ficha-donut-prof', 'Profesionalidad', o.score_professionalism);
-      renderDonut('ficha-donut-eu',   'EU readiness',    o.score_eu_readiness);
-      renderDonut('ficha-donut-vit',  'Vitalidad',       o.score_vitality);
-    } else {
-      // ApexCharts no cargado todavía, retry
-      setTimeout(() => {
-        renderDonut('ficha-donut-prof', 'Profesionalidad', o.score_professionalism);
-        renderDonut('ficha-donut-eu',   'EU readiness',    o.score_eu_readiness);
-        renderDonut('ficha-donut-vit',  'Vitalidad',       o.score_vitality);
-      }, 500);
-    }
+    const drawDonuts = () => {
+      renderDonut('ficha-donut-prof', 'Personal',    o.score_personal,   { max: 10 });
+      renderDonut('ficha-donut-eu',   'Experiencia', o.score_experience, { max: 10, newcomer: o.is_newcomer });
+      renderDonut('ficha-donut-vit',  'Alianzas',    o.score_alliances,  { max: 10 });
+    };
+    if (typeof ApexCharts !== 'undefined') drawDonuts();
+    else setTimeout(drawDonuts, 500);
 
     // Load similares
     loadSimilar(o.oid);
@@ -708,6 +767,8 @@ const Entities = (() => {
           Shortlists.toggle(oid, btn);
         } else if (action === 'contact' && typeof Shortlists !== 'undefined') {
           Shortlists.openContactTemplate(oid);
+        } else if (action === 'open-entity' && oid) {
+          openFicha(oid);
         } else {
           Toast.show('Disponible en próxima sesión', 'ok');
         }
@@ -715,14 +776,18 @@ const Entities = (() => {
     });
   }
 
-  function renderDonut(targetId, label, value) {
+  function renderDonut(targetId, label, value, opts = {}) {
     if (typeof ApexCharts === 'undefined') return;
     const el = document.getElementById(targetId);
     if (!el) return;
-    const v = value == null ? 0 : Math.max(0, Math.min(100, value));
-    const opts = {
+    const max = opts.max || 100;
+    const v = value == null ? 0 : Math.max(0, Math.min(max, value));
+    const pct = max > 0 ? (v / max) * 100 : 0;
+    const isMax10 = max === 10;
+    const valueText = isMax10 ? `${Math.round(v)}/10` : `${Math.round(v)}`;
+    const chartOpts = {
       chart: { type: 'radialBar', height: 160, sparkline: { enabled: true } },
-      series: [v],
+      series: [pct],
       colors: ['#fbff12'],
       plotOptions: {
         radialBar: {
@@ -730,7 +795,7 @@ const Entities = (() => {
           track: { background: '#eeeeee', strokeWidth: '90%' },
           dataLabels: {
             name: { show: true, color: '#474551', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
-            value: { show: true, color: '#1b1464', fontSize: '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: (val) => Math.round(val) },
+            value: { show: true, color: '#1b1464', fontSize: isMax10 ? '22px' : '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
           },
         },
       },
@@ -738,7 +803,15 @@ const Entities = (() => {
       labels: [label],
       tooltip: { enabled: false },
     };
-    new ApexCharts(el, opts).render();
+    new ApexCharts(el, chartOpts).render();
+    // Newcomer badge sobre el donut de Experiencia si aplica
+    if (opts.newcomer) {
+      el.style.position = 'relative';
+      const badge = document.createElement('div');
+      badge.className = 'absolute -top-1 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-primary bg-secondary-fixed px-2 py-0.5 rounded-full whitespace-nowrap z-10';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[11px]">auto_awesome</span>Newcomer';
+      el.appendChild(badge);
+    }
   }
 
   async function loadSimilar(oid) {

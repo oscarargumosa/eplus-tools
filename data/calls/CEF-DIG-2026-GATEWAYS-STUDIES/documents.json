@@ -1,0 +1,86 @@
+[
+  {
+    "section": "Conditions",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Conditions",
+    "label": "Call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/wp-call/2026/call-fiche_cef-dig-2026-gateways_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "Application form (Part A and B)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/af_cef-dig_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "Detailed budget table per Work Package",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/detailed-budget-table-per-wp_cef_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "Timetable (Gantt chart)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/timetable-gantt-chart_cef_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "Letters of support (MS agreement)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/letter-of-support-ms-agreement_cef_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "Ownership Control Declaration",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/ownership-control-declaration_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application form and annexes:",
+    "label": "CEF Model Grant Agreement (MGA)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/agr-contr/mga_cef_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents",
+    "label": "Guidance on participation in EU calls with ownership and control restrictions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/guidance-on-participation-in-eu-calls-with-ownership-and-control-restrictions_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents",
+    "label": "Connecting Europe Facility (CEF) Multianual Work Programme (2024-2027)",
+    "url": "https://digital-strategy.ec.europa.eu/en/library/connecting-europe-facility-cef-multiannual-work-programme-2024-2027",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents",
+    "label": "Connecting Europe Facility Regulation 2021/1153",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=uriserv:OJ.L_.2021.249.01.0038.01.ENG",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  }
+]

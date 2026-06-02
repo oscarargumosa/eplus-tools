@@ -1,0 +1,104 @@
+{
+  "id": 1102707,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GIJÓN",
+    "nivel3": "AYUNTAMIENTO DE GIJÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901146",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA DE SUBVENCIONES DE LA FMSS EN RÉGIMEN DE CONCURRENCIA COMPETITIVA PARA ASOCIACIONES DE PERSONAS JUBILADAS Y PENSIONISTAS QUE TIENEN CEDIDO UN LOCAL MUNICIPAL COMO CENTRO DE MAYORES, NO INCLUIDAS DENTRO DE LA RED DEL PRINCIPADO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Ayuntamiento de Gijón/Xixón (Bopa 28-II-2023)",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2023/02/28/2023-01157.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación del extracto de la Convocatoria del BOPA",
+  "textFin": "20 días naturales desde el día siguiente al de la publicación en BOPA extracto de la Convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441496,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA SUBVENCIONES HOGARES DE MAYORES 2026.pdf",
+      "long": 420544,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441511,
+      "descripcion": "RESOLUCIÓN APROBACIÓN CONVOCATORIA",
+      "nombreFic": "RESOLUCIÓN APROBACIÓN CONVOCATORIA.pdf",
+      "long": 378633,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441515,
+      "descripcion": "ANEXO I SOLICITUD",
+      "nombreFic": "ANEXO I SOLICITUD.pdf",
+      "long": 185892,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441517,
+      "descripcion": "ANEXO II PROYECTO Y PRESUPUESTO HOGARES MAYORES",
+      "nombreFic": "ANEXO II PROYECTO Y PRESUPUESTO HOGARES MAYORES.pdf",
+      "long": 92944,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441519,
+      "descripcion": "ANEXO III MEMORIA ACTIVIDAD",
+      "nombreFic": "ANEXO III MEMORIA ACTIVIDAD.pdf",
+      "long": 71466,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441522,
+      "descripcion": "ANEXO IV MEMORIA ECONÓMICA",
+      "nombreFic": "ANEXO IV MEMORIA ECONOMICA.pdf",
+      "long": 125412,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "902210",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GUADALAJARA / AYUNTAMIENTO DE GUADALAJARA",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "CONVOCATORIA POR LA QUE SE REGULA EL PROCEDIMIENTO PARA LA CONCESIÓN DE SUBVENCIONES A LAS ASOCIACIONES VECINALES DEL MUNICIPIO DE GUADALAJARA PARA EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902210",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Modelo - 1129. Declaración para la justificación de subvenciones concedidas para asociaciones sin ánimo de lucro programas de participación ciudadana",
+      "url": null
+    },
+    {
+      "label": "Modelo - 1128. Solicitud de subvención para asociaciones sin ánimo de lucro programas de participación ciudadana",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://boletin.dguadalajara.es/boletin/index.php/1-anuncio/3151-Excmo-ayuntamiento-de%C2%A0guadalajara",
+  "text_inicio": " Día siguiente a la publicación del extracto en el BOP de Guadalajara",
+  "text_fin": "10 días hábiles tras la publicación del extracto en BOP de Guadalajara",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.592Z"
+}

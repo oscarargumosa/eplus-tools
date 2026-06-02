@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897070",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANTA COLOMA DE GRAMENET / AYUNTAMIENTO DE SANTA COLOMA DE GRAMENET",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Convocatoria otorgar subv. régimen de concurrencia competitiva a entidades sin ánimo de lucro para el fomento del asociacionismo y realizar proyectos de promoción y desarrollo del comercio local en el marco del Circuito de Comercio para el 2024 y 2025",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": "2026-04-08",
+  "deadline": "2026-07-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "70.2",
+      "descripcion": "Otras actividades de consultoría de gestión empresarial"
+    },
+    {
+      "codigo": "73.3",
+      "descripcion": "Relaciones públicas y comunicación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897070",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "bdns catalan",
+      "url": null
+    },
+    {
+      "label": "bdns castellano",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3210227/aprovacio-definitiva-de-les-bases-reguladores-per-a-l-atorgament-de-subvencions-a-entitats-sense-anim-de-lucre-per-al-foment-de-l-associacionisme-i-la-realitzacio-de-projectes-de-promocio-i-desenvolupament-del-comerc-lo",
+  "text_inicio": "al dia següent de la publicació de la convocatòria en el BOPB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.802Z"
+}

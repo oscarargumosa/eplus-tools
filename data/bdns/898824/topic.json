@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "898824",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DERECHOS SOCIALES, CONSUMO Y AGENDA 2030 / DIRECCIÓN GENERAL DE CONSUMO",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Subvenciones Juntas Arbitrales de Consumo 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2430660,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898824",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/boe/dias/2006/07/11/pdfs/A26256-26259.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación en el B.O.E.",
+  "text_fin": "10 días naturales a partir del día siguiente a la publicación en el B.O.E.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208831,
+      "titulo": "Extracto de la Orden del Ministerio de Derechos Sociales, Consumo y Agenda 2030, de 14 de abril de 2026, por la que se convocan subvenciones para el fomento de actividades de las Juntas Arbitrales de Consumo para el ejercicio 2026, de conformidad con las bases reguladoras aprobadas por Orden SCO/3703/2005, de 25 de noviembre y modificadas por la Orden SCO/2237/2006, de 26 de junio.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarias</p><p>Las Juntas Arbitrales de Consumo cuyo convenio se encuentre en vigor en el momento de la solicitud y que en el presente desarrollen las funciones arbitrales previstas en el citado convenio podrán ser declaradas beneficiarias.</p><p>Dado que carecen de personalidad jurídica las Juntas Arbitrales de Consumo, la preceptora de la subvención será la Administración Pública correspondiente a la que se encuentre vinculada la Junta Arbitral de Consumo beneficiaria.</p><p>Segundo.  Objeto</p><p>Convocar, en régimen de concurrencia competitiva, la concesión de ayudas para apoyar e impulsar el desarrollo del Sistema Arbitral de Consumo, financiando actividades que tengan como fin la gestión y administración del arbitraje de consumo, así como las funciones atribuidas a dichas juntas mediante el artículo 6 del Real Decreto 713/2024, de 23 de julio, por el que se aprueba el Reglamento que regula el Sistema Arbitral de Consumo.</p><p>Tercero. Bases reguladoras</p><p>Orden SCO/3703/2005, de 25 de noviembre, por la que se establecen las bases reguladoras de la concesión de subvenciones para el fomento de actividades de las Juntas Arbitrales de Consumo, (publicada en el Boletín Oficial del Estado núm. 285, de fecha 29 de noviembre de 2005), modificada por la Orden SCO/2237/2006 de 26 de junio (publicada en el Boletín Oficial del Estado núm.164, de fecha 11 de julio de 2006)</p><p>Cuarto. Cuantía</p><p>El importe de la subvención asciende a 1.230.180,00 euros para las Juntas Arbitrales de ámbito territorial autonómico y 1.200.480,00 euros para las Juntas Arbitrales de ámbito local, adjudicándose cada una de dichas cuantías entre sus respectivas destinatarias en la forma en que se establece en el artículo 5 de la Orden de bases reguladoras, y en el artículo 5 de la Orden de convocatoria. Conforme establece el artículo 5 de la Orden de bases reguladoras referida en el apartado anterior, un cuarenta por ciento del importe de los créditos se repartirá, respectivamente, de forma lineal entre las Juntas Arbitrales que presenten solicitud. La adjudicación del sesenta por ciento restante del importe de los créditos presupuestarios se realizará mediante la distribución establecida en el artículo 6 de la citada Orden de bases reguladoras, atendiendo a indicadores de la actividad del funcionamiento de la Junta Arbitral solicitante en el ejercicio de 2025.</p><p>Quinto. Plazo de presentación de solicitudes</p><p>El plazo de presentación de solicitudes será de diez días naturales contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el «Boletín Oficial del Estado».</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11758",
+      "cve": "BOE-B-2026-11758",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.705Z"
+}

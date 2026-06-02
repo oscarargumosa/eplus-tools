@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "902031",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CAUDETE / AYUNTAMIENTO DE CAUDETE",
+  "nuts_codes": [
+    "ES421"
+  ],
+  "nuts_primary": "ES421",
+  "title": "SELECCIÓN DE PARTICIPANTES ADULTOS INSCRITOS EN LOS CURSOS DE LA UNIVERSIDAD POPULAR DE CAUDETE (YOGA) PARA MOVILIDAD DE GRUPO A TOULOUSE (FRANCIA) EN EL MARCO DEL PROYECTO 2025-1-ES01-KA121-ADU-000327115 ACREDITACIÓN ERASMUS PERSONAS ADULTAS",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 8146,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.caudete.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902031",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://caudete.org",
+  "text_inicio": "5 días naturales siguientes a la publicación de extracto de  la convocatoria en B.O.P. ALBACETE",
+  "text_fin": "5 días naturales siguientes a la publicación de extracto de  la convocatoria en B.O.P. ALBACETE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.466Z"
+}

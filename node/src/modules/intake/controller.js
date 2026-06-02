@@ -533,6 +533,29 @@ LANGUAGE: Respond in the same language the user writes in. Default to ${proposal
 ${context}
 ═══ END DATA ═══`;
 
+/**
+ * Limpia el markdown generado por el LLM para el Project Summary.
+ * - Quita listas/headings que rompen la estética prosa.
+ * - Mantiene **bold** (lo renderiza el front).
+ * - Quita italicos `*x*` (suelen colarse y se ven feos).
+ * - Normaliza saltos: garantiza línea en blanco entre párrafos y
+ *   colapsa secuencias largas de \n.
+ */
+function sanitizeSummaryMarkdown(text) {
+  if (!text || typeof text !== 'string') return '';
+  let out = text
+    // Strip leading "#" headings (we don't render them, leave the title text)
+    .replace(/^[ \t]{0,3}#{1,6}[ \t]+/gm, '')
+    // Strip list bullets/numbered lists at line start
+    .replace(/^[ \t]{0,3}([*+\-]|\d+[.)])[ \t]+/gm, '')
+    // Strip stray italics `*x*` (single asterisks NOT part of a `**x**` pair)
+    .replace(/(^|[^*])\*(?!\*)([^*\n]+?)\*(?!\*)/g, '$1$2');
+
+  // Normalize excessive blank lines (3+ → 2) and trim
+  out = out.replace(/\r\n/g, '\n').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  return out;
+}
+
 const SUMMARY_SYSTEM = (context, proposalLang) => `You are an expert Erasmus+ proposal writer. Write a compelling Project Summary (250-400 words) combining the interview insights with the full project data.
 
 The interview gave you the HUMAN elements: the real problem, the coordinator's vision, the innovation, the personal motivation. The PROJECT DATA gives you the TECHNICAL elements: partners, activities, WPs, budget, timeline. Merge both into a single coherent summary.
@@ -555,6 +578,12 @@ RULES:
 - Avoid: "this innovative project", "in today's rapidly changing world", "the importance of", "aims to foster"
 - The first sentence must hook the evaluator with a concrete observation or striking fact
 - Mention the call priorities and how the project addresses them
+
+FORMAT (very important — readers care about visual structure):
+- Open with a single section heading "**Project Summary**" on its own line, followed by a blank line, then the opening paragraph.
+- Wrap WP titles in markdown bold the FIRST time each one is referenced, e.g. **WP1 Project Management and Coordination** — then refer to them in plain prose afterwards.
+- Separate each major content block (context, objectives, activities, methodology, results, sustainability) with a blank line so each becomes its own paragraph. Do NOT cram everything into one wall of text.
+- Use ONLY markdown bold (\`**text**\`) — never use italics (\`*text*\`), headings (\`#\`), or list bullets. The output must read as clean prose with bold accents and clear paragraph breaks.
 
 ═══ PROJECT DATA ═══
 ${context}
@@ -640,7 +669,8 @@ async function interviewNext(req, res, next) {
         .join('\n\n');
 
       const summaryPrompt = `Based on this interview, write the Project Summary:\n\n${transcript}`;
-      const summary = await callClaudeSingle(SUMMARY_SYSTEM(context, proposalLang), summaryPrompt, 2048);
+      const rawSummary = await callClaudeSingle(SUMMARY_SYSTEM(context, proposalLang), summaryPrompt, 2048);
+      const summary = sanitizeSummaryMarkdown(rawSummary);
 
       await model.saveInterviewSummary(projectId, summary);
 

@@ -1,0 +1,92 @@
+{
+  "id": 1102137,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MAJADAHONDA",
+    "nivel3": "AYUNTAMIENTO DE MAJADAHONDA"
+  },
+  "sedeElectronica": "https://sede.majadahonda.org/portal/entidades.do?ent_id=2&idioma=1",
+  "codigoBDNS": "900576",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 441703,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas del Ayuntamiento de Majadahonda a familias empadronadas y residentes en la localidad por nacimiento de hijo o adopción en el año 2025.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza por la que se establecen las Bases Reguladoras para la concesión de ayudas por nacimiento o adopción de hijo (CHEQUE BEBÉ)",
+  "urlBasesReguladoras": "https://transparencia.majadahonda.org/documents/36614/1381876/BOCM-20210518-48-ordenanza-ayudas-hijos.pdf/b1109b83-cbbc-4f74-513a-fad6537d3a1c",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 días hábiles desde el día siguiente a la publicación en el BOCM",
+  "textFin": "20 días hábiles desde el día siguiente a la publicación en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440130,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "08.- CONVOCATORIA NACIDOS 2025 Firmado.pdf",
+      "long": 428624,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1440140,
+      "descripcion": "Certificado Acuerdo JGL",
+      "nombreFic": "17.- CERTIFICADO ACUERDO JGL Firmado.pdf",
+      "long": 436565,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1440136,
+      "descripcion": "Anexo II Declaración Responsable",
+      "nombreFic": "10.- ANEXO II DECLARACIÓN RESPONSABLE 2025 Firmado.pdf",
+      "long": 56731,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1440133,
+      "descripcion": "Formulario de solicitud",
+      "nombreFic": "09.- ANEXO I FORMULARIO SOLICITUD 2025 Firmado.pdf",
+      "long": 148182,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

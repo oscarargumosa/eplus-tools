@@ -13,33 +13,13 @@ const VoiceInput = (() => {
   let chunks    = [];
 
   /* ── Get the target write language from the project ──────────── */
-  const NA_LANG = {
-    EACEA:'en', AT01:'de',
-    BE01:'fr', BE02:'nl', BE03:'de', BE04:'fr', BE05:'nl',
-    BG01:'bg', HR01:'hr', CY01:'el', CZ01:'cs', DK01:'da',
-    EE01:'et', FI01:'fi',
-    FR01:'fr', FR02:'fr',
-    DE01:'de', DE02:'de', DE03:'de', DE04:'de',
-    EL01:'el', EL02:'el', HU01:'hu', IS01:'is',
-    IE01:'en', IE02:'en',
-    IT01:'it', IT02:'it', IT03:'it',
-    LV01:'lv', LV02:'lv', LI01:'de',
-    LT01:'lt', LT02:'lt', LU01:'fr', MT01:'en',
-    NL01:'nl', NL02:'nl', NO01:'no', NO02:'no',
-    PL01:'pl', PT01:'pt', PT02:'pt', RO01:'ro', RS01:'sr',
-    SK01:'sk', SK02:'sk', SI01:'sl', SI02:'sl',
-    ES01:'es', ES02:'es', SE01:'sv', SE02:'sv', TR01:'tr',
-  };
-
+  // El idioma de trabajo se decide en el selector de Intake Step 1 (`#intake-f-lang`)
+  // y se persiste en `projects.proposal_lang`. Developer.js hidrata `window.__projectLang`
+  // al cargar un proyecto. La NA es metadato; no la usamos para inferir idioma aquí.
   function getWriteLang() {
-    // 1. From Intake form selector (if on intake page)
     const langEl = document.getElementById('intake-f-lang');
     if (langEl && langEl.value) return langEl.value;
-    // 2. From current project's NA (set by Developer.js / App when project loads)
-    if (window.__projectNA && NA_LANG[window.__projectNA]) return NA_LANG[window.__projectNA];
-    // 3. From cached proposal_lang if set
     if (window.__projectLang) return window.__projectLang;
-    // 4. Fallback: default to English
     return 'en';
   }
 

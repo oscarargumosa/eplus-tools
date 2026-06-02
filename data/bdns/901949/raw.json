@@ -1,0 +1,80 @@
+{
+  "id": 1103510,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE MEDIO RURAL Y POLÍTICA AGRARIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901949",
+  "fechaRecepcion": "2026-04-27",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Resolución de 16 de abril de 2026, de la Consejería de Medio Rural y Política Agraria, por la que se aprueba la convocatoria de subvenciones a las entidades sin ánimo de lucro, con destino a la celebración de certámenes de productos agroalimentarios",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    },
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Resolución de 6 de julio de 2018, de la Consejería de Desarrollo Rural y Recursos Naturales, bases reguladoras, a entidades sin ánimo de lucro, AYUDAS PARA LA CELEBRACION DE CERTAMENES DE PRODUCTOS AGROALIMENTARIOS PRINCIPADO ASTURIAS",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa/2018/07/13/2018-07300.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde día siguiente al de publicación del extracto",
+  "textFin": "30 días naturales siguiente a publicar extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443785,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "4. Resolución firma Consejero.pdf",
+      "long": 312036,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210254,
+      "titulo": "Extracto de la Resolución de 16  de abril de 2026, de la Consejería de Medio Rural y Política Agraria, por la que se aprueba la convocatoria de 2026, de subvenciones a las entidades sin ánimo de lucro, con destino a la celebración de certámenes de productos agroalimentarios en el Principado de Asturias.",
+      "tituloLeng": null,
+      "texto": "<p>Extracto de la Resolución de 16 de abril de 2026, de la Consejería de Medio Rural y Política Agraria, por la que se aprueba la convocatoria de 2026, de subvenciones a las entidades sin ánimo de lucro, con destino a la celebración de certámenes de productos agroalimentarios en el Principado de Asturias.</p><p>Primero.- Beneficiarios.</p><p>Las entidades sin ánimo de lucro del Principado de Asturias, que ejecuten las actividades para las que se dirigen las mismas, en el territorio del Principado de Asturias. Están excluidas expresamente, las administraciones públicas.</p><p>Segundo.- Objeto.</p><p>Concesión de subvenciones a las entidades sin ánimo de lucro, para contribuir a la financiación de gastos ocasionados por la celebración de certámenes de productos agroalimentarios.</p><p>Tercero.- Bases reguladoras.</p><p>Bases reguladoras aprobadas por Resolución de 6 de julio de 2018, de la Consejería de Desarrollo Rural y Recursos Naturales, (BOPA 13-07-2018).</p><p>Cuarto.- Cuantía.</p><p>Cuantía total: 25.000,00 Euros.</p><p>Quinto.- Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de 30 días naturales, contados a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial del Principado de Asturias.</p><p>Sexto.- Otros datos.</p><p>En la sede electrónica del Principado de Asturias (https://miprincipado.asturias.es) está publicada la Ficha de Información Pública, en la que se encontrará información complementaria, el formulario normalizado de solicitud y la posibilidad de iniciar electrónicamente la solicitud.</p><p>La Ficha de Información Pública se podrá localizar introduciendo el código AYUD0090T01 en el buscador de la cabecera (situado en la parte superior derecha de la página).</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-03496&p_r_p_dispositionReference=2026-03496&p_r_p_dispositionDate=05%2F05%2F2026",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

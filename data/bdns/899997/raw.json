@@ -1,0 +1,64 @@
+{
+  "id": 1101558,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BOADILLA DEL MONTE",
+    "nivel3": "AYUNTAMIENTO DE BOADILLA DEL MONTE"
+  },
+  "sedeElectronica": "https://carpetaciudadano.aytoboadilla.org/eAdmin/Sede.do",
+  "codigoBDNS": "899997",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2800,
+  "mrr": false,
+  "descripcion": "Convocatoria de Premios 2026: “Compra en Boadilla, apoya a Boadilla” del Ayuntamiento de Boadilla del Monte.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Ayuntamiento de Boadilla del Monte aprobada por el Pleno el 18 de diciembre de 2020 y publicada en el Boletín Oficial de la Comunidad de Madrid Nº.63, de 16 de marzo de 2021",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2021/03/16/BOCM-20210316-59.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": "En cualquier momento a partir del día siguiente a la publicación de la convocatoria en el BOCM",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438677,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES CONVOCATORIA COMPRAR EN BOADILLA 2026.pdf",
+      "long": 1293816,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

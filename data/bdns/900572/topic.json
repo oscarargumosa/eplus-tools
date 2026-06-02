@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "900572",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PETRER / AYUNTAMIENTO DE PETRER",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA DE AYUDAS A LA ADQUISICIÓN DE VIVIENDAS Y SOLARES Y CONSTRUCCIÓN Y REHABILITACIÓN DE VIVIENDAS EN EL CASCO HISTÓRICO DE PETRER DURANTE EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": "2026-04-24",
+  "deadline": "2026-09-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://petrer.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900572",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Resto de anexos",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://petrer.es/wp-content/uploads/2026/04/BASES-AYUDAS-ADQUISION-Y-REHABILITACION-VIVIENDAS-CASCO-HISTORICO-2026-1.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209668,
+      "titulo": "CONVOCATORIA DE AYUDAS A LA ADQUISICIÓN DE VIVIENDAS Y SOLARES Y CONSTRUCCIÓN Y REHABILITACIÓN DE VIVIENDAS EN EL CASCO HISTÓRICO DE PETRER DURANTE EL EJERCICIO 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios:</p><p>- Para las ayudas de compra de vivienda o solar: Las personas físicas mayores de edad que estén en condiciones de suscribir una escritura pública de adquisición.</p><p>- Para las ayudas a la construcción o rehabilitación: Las personas físicas mayores de edad que sean propietarias de los solares o viviendas objeto de actuación y, en caso de actuación sobre vivienda, además quienes dispongan de autorización expresa de los que lo sean, para ejecutar obras en calidad de arrendatarios o usuarios.</p><p>Segundo: Objeto: Regular ayudas para las actuaciones de adquisición de viviendas y solares, así como la construcción y rehabilitación de viviendas en el casco histórico del municipio de Petrer.</p><p>Tercero: Bases reguladoras aprobadas por la Junta de Gobierno Local del Excmo. Ayuntamiento de Petrer, en sesión celebrada el 16 de abril de 2026.</p><p>Cuarto: Cuantía: 80.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes: Abierto hasta el 30 de septiembre de 2026, inclusive, a partir de la publicación del extracto de esta convocatoria en el Boletín Oficial de la Provincia de Alicante.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/24_76/2026_002874.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.763Z"
+}

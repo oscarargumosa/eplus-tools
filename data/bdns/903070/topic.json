@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "903070",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE LEÓN",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "CONVOCATORIA PERMANENTE DE AYUDAS A LA MOVILIDAD ERASMUS+ CON FINES DE DOCENCIA DEL PDI Y DE FORMACIÓN DEL PDI Y DEL PTGAS Y BASES REGULADORAS. Cursos 2025-2026 y 2026-2027 \n(Proyecto Erasmus+ 2025)",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 106492,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "https://unileon.moveon4.de/form/5b0d322f3d5d666620e87eea/spa",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903070",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2024/11/08/pdf/BOCYL-D08112024-28.pdf",
+  "text_inicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA",
+  "text_fin": "Hasta el 1 de marzo de 2027 o hasta que se agote el presupuesto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210776,
+      "titulo": "Extracto de la Convocatoria permanente de ayudas a la movilidad Erasmus+ con fines de docencia del PDI y de formación del PDI y del PTGAS y Bases reguladoras. Cursos 2025-2026 y 2026-2027",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Personal Docente e Investigador (PDI) y Personal Técnico, de Gestión y Administración y Servicios (PTGAS) en nomina de la Universidad de León.</p><p>Segundo. Objeto.</p><p>Favorecer el aprendizaje a lo largo de la vida laboral de los empleados de la ULE, fomentar su proceso de internacionalización, aprendizaje de buenas prácticas, mejorar la calidad de los servicios universitarios y fortalecimiento de relaciones con universidades socias.</p><p>Tercero. Bases Reguladoras.</p><p>Resolución de 4 de noviembre de 2024, publicada en el B.O.C. y L. de 8 de noviembre de 2024.</p><p>https://bocyl.jcyl.es/boletines/2024/11/08/pdf/BOCYL-D-08112024-28.pdf</p><p>Cuarto. Cuantía</p><p>Cada ayuda a la movilidad concedida consistirá en una aportación por días de actividad de la movilidad física para manutención y alojamiento y una ayuda para gastos de viaje dependiendo dela distancia entre el lugar de trabajo habitual y el lugar en el que se desarrolle la actividad correspondiente y de si el viaje es considerado ecológico o no. Las cuantías se detallan en el Anexo I de la convocatoria.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Abierta en el tiempo desde el día de su publicación hasta el 1 de marzo de 2027 o hasta que se agote el presupuesto.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/05/06/pdf/BOCYL-D-06052026-84-10.pdf",
+      "cve": "BOCYL-D-06052026-84-10",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.031Z"
+}

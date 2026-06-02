@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "899334",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "PLAN CORRESPONSABLES 2025 PARA ACTUACIONES EN MATERIA DE CONCILIACIÓN Y/O CORRESPONSABILIDAD EN EL MARCO DE LA RESOLUCIÓN “III CIUDADANÍA Y ESPACIOS CORRESPONSABLES EN LA PROVINCIA DE SEVILLA DESTINADO A ENTIDADES LOCALES MENORES DE 20.000 HABITANTES.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1065547.17,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Sede electrónica Diputación Provincial de Sevilla",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899334",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Resolución 2230/2026 BBRR Y CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "Extracto de la Convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anuncio BOP BBRR Y CONVOCATORIA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://portal.dipusevilla.es/vfirma/code/N7aXonPSRk3WxrS8Vw%2BdAQ%3D%3D",
+  "text_inicio": "A partir del día siguiente al de la publicación del extracto de la convocatoria en el BOP de Sevilla",
+  "text_fin": "20 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.956Z"
+}

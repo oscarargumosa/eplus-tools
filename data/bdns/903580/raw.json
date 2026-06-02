@@ -1,0 +1,72 @@
+{
+  "id": 1105141,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SALAMANCA",
+    "nivel3": "DIPUTACIÓN DE SALAMANCA"
+  },
+  "sedeElectronica": "https://sede.diputaciondesalamanca.gob.es",
+  "codigoBDNS": "903580",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 320000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCION PARA EL DESARROLLO DEL PROGRAMA PROVINCIAL DE PLANEAMIENTO URBANISTICO 2026, DESTINADO A MUNICIPIOS DE LA PROVINCIA DE SALAMANCA CON POBLACION INFERIOR A 20.000 HABITANTES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades jurídicas",
+      "codigo": "69.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES415 - Salamanca"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ordenanza General Reguladora de Concesión de Subvenciones",
+  "urlBasesReguladoras": "http://www.lasalina.es/presidencia/informacion/normativa/ordenanzasyreglamentos/presidencia/index.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOLETIN OFICIAL DE LA PROVINCIA",
+  "textFin": "30 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448754,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026PREATM003_CONVOCATORIA_Acuerdo_110_JG_300426.pdf",
+      "long": 145780,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448757,
+      "descripcion": "BASES DE LA CONVOCATORIA",
+      "nombreFic": "2026PREATM003_CONVOCATORIA_Y_BASES_.pdf",
+      "long": 691374,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

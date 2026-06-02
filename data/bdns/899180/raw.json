@@ -1,0 +1,136 @@
+{
+  "id": 1100741,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BERRIOZAR",
+    "nivel3": "AYUNTAMIENTO DE BERRIOZAR"
+  },
+  "sedeElectronica": "https://sedeelectronica.berriozar.es/",
+  "codigoBDNS": "899180",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 28500,
+  "mrr": false,
+  "descripcion": "Extracto de convocatoria de subvenciones a asociaciones de Berriozar para la realización de actividades culturales, deportivas, igualdad, euskera y fiestas durante el año 2026",
+  "descripcionLeng": "2026. urtean Kultura, kirol, berdintasun, euskara eta jaietako jarduerak egiteko Berriozarko elkarteei diru-laguntzak emateko deialdiaren laburpena.\n\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES220 - Navarra"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Extracto de convocatoria de subvenciones a asociaciones de Berriozar para la realización de actividades culturales, deportivas, igualdad, euskera y fiestas durante el año 2026",
+  "urlBasesReguladoras": "https://sedeelectronica.berriozar.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde su publicación en el BON",
+  "textFin": "20 días naturales a partir del día siguiente a la fecha de  publicación  de la convocatoria BON",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436316,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Subvencion_asociaciones_2026.pdf",
+      "long": 1105353,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436319,
+      "descripcion": "Anexo 2",
+      "nombreFic": "Anexo II.pdf",
+      "long": 61783,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436318,
+      "descripcion": "Anexo 1",
+      "nombreFic": "Anexo I.pdf",
+      "long": 83230,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436317,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Subvencion_asociaciones_2026.pdf",
+      "long": 1105353,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436324,
+      "descripcion": "Anexo memoria 2",
+      "nombreFic": "Anexo Memoria V2.pdf",
+      "long": 65642,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436323,
+      "descripcion": "Anexo memoria 1",
+      "nombreFic": "Anexo Memoria V1.pdf",
+      "long": 49331,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436322,
+      "descripcion": "Anexo 5",
+      "nombreFic": "Anexo V.pdf",
+      "long": 75018,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436321,
+      "descripcion": "anexo 4",
+      "nombreFic": "Anexo IV.pdf",
+      "long": 65531,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436325,
+      "descripcion": "Anexo memoria 3",
+      "nombreFic": "Anexo Memoria V3.pdf",
+      "long": 45158,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436320,
+      "descripcion": "Anexo 3",
+      "nombreFic": "Anexo III.pdf",
+      "long": 63386,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

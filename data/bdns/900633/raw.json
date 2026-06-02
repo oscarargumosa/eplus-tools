@@ -1,0 +1,97 @@
+{
+  "id": 1102194,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900633",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000000,
+  "mrr": false,
+  "descripcion": "Ayudas destinadas a subvencionar las instalaciones de plantas de biogás y tratamientos de los digeridos",
+  "descripcionLeng": "Ajuts destinats a subvencionar les installacions de plantes de biogàs i tractaments dels digerits",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las ayudas destinadas a subvencionar las instalaciones de plantas de biogás y tratamiento del material orgánico obtenido como resultado de la digestión anaerobia (digeridos).",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=972261",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "02 Mesos",
+  "ayudaEstado": "SA.110469",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.110469",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 41 AYUDAS A LA INVERSIÓN PARA LA PROMOCIÓN DE LA ENERGÍA PROCEDENTE DE FUENTES RENOVABLES, DEL HIDRÓGENO RENOVABLE Y DE LA COGENERACIÓN DE ALTA EFICIENCIA."
+    },
+    {
+      "descripcion": "ART. 47 AYUDAS A LA INVERSIÓN PARA LA EFICIENCIA EN EL USO DE LOS RECURSOS Y PARA APOYAR LA TRANSICIÓN HACIA UNA ECONOMÍA CIRCULAR."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443895,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCIÓN BIOGAS.pdf",
+      "long": 111905,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1443896,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "RESOLUCIÓ BIOGAS.pdf",
+      "long": 549698,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210269,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1042918",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

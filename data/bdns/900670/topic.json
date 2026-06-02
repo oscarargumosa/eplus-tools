@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "900670",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANTIAGO DE COMPOSTELA / AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Premios Festival Internacional de Cinema Curtocircuíto 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": "2026-04-22",
+  "deadline": "2026-06-01",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://shortfilmdepot.com/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900670",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://curtocircuito.org",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209705,
+      "titulo": "Extracto bases de la convocatoria de los Premios Festival Internacional de Cine Curtocircuito 2026",
+      "tituloLeng": "Extracto bases da convocatoria do Premio Auditorio de Galicia para artistas noveis 2025",
+      "texto": "<p>Bases de la convocatoria de los Premios del Festival Internacional de Cinema Curtociruito 2026</p>",
+      "textoLeng": "<p>Bases da convocatoria dos Premios do Festival Internacional de Cinema Curtociruito 2026</p>",
+      "url": "https://bop.dacoruna.gal/bopportal/descargarPdf.do?fecha=20260427&numRegistro=2026/0000002573.pdf",
+      "cve": "2026/2573",
+      "desDiarioOficial": "B.O.P. DE A CORUÑA",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.823Z"
+}

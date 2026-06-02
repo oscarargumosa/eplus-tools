@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903108",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÓRDOBA / INSTITUTO MUNICIPAL DE DESARROLLO ECONÓMICO Y EMPLEO DE CÓRDOBA (IMDEEC)",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "CONVOCATORIA DE INCENTIVOS A AUTÓNOMOS, EMPRESAS Y ENTIDADES QUE REALICEN PLANES DE FORMACIÓN E INSERCIÓN LABORAL QUE LLEVEN APAREJADA CONTRATACIÓN DE PERSONAS EN SITUACIÓN DE DESEMPLEO 2026 -FORMA Y CONTRATA 2026-.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": "2026-05-08",
+  "deadline": "2026-05-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 450000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://sede.cordoba.es/cordoba",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903108",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.cordoba.es/cordoba/tablon-de-anuncios/",
+  "text_inicio": "PARA TODAS LAS LINEAS",
+  "text_fin": "PARA TODAS LAS LINEAS",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.044Z"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1100104,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "QUINTO",
+    "nivel3": "AYUNTAMIENTO DE QUINTO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898543",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2950,
+  "mrr": false,
+  "descripcion": "Certamen Punto Final VI Edición",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Certamen Punto Final VI Edición",
+  "urlBasesReguladoras": "https://quinto.sedelectronica.es/transparency/4e981a7c-3ad9-4a7e-9fae-0943aade27d8/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de las bases en el BOP",
+  "textFin": "30/08/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434413,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260413_BASES PUNTO FINAL VI EDICION.pdf",
+      "long": 440497,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208703,
+      "titulo": "Certamen Punto Final V Edición",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Personas beneficiarias: Podrán acogerse a las subvenciones cualquier persona mayor de edad independientemente de su nacionalidad con residencia en España.</p><p>Segundo. Objeto: Concurso de Cortometrajes, Concurso de Fotografía y Concurso de Cuentos.</p><p>Tercero: Bases publicadas en https://certamenpuntofinal.quinto.es/bases/.</p><p>Cuarto: Cuantía de la ayuda:</p><p>- Premios Cortometrajes: Primer premio 700€ + trofeo, segundo premio 500€ + trofeo, tercer premio 300€ + trofeo y premio especial del público 75 €.</p><p>- Permios Fotografía: Primer premio 300€ + trofeo, segundo premio 200€ + trofeo, tercer premio 100€ + trofeo y premio especial del público 75 €.</p><p>- Premios Cuentos:  Primer premio 300€ + trofeo, segundo premio 200€ + trofeo, tercer premio 100€ + trofeo y premio especial del público 75 €.</p><p>Quinto: Otros</p><p>El jurado clasificador estará compuesto por personas del ámbito cultural del Ayuntamiento de Quinto y personas relacionadas con la actividad cinematográfica, fotográfica y literaria. Las listas con los finalistas de las tres categorías se publicarán en la página web de Punto Final https://certamenpuntofinal.quinto.es/ .</p>",
+      "textoLeng": null,
+      "url": "https://boletin.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=891695&numBop=86",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ZARAGOZA",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

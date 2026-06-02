@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of the integrated hydrogen fuel system, from the hydrogen tank pressure management system to the hydrogen distribution and conditioning system, for a fully electric hydrogen fuel cell powered aircraft. This topic targets the demonstration of the critical distribution and hydrogen conditioning components, at TRL5, and the on-ground demonstration of the integrated fuel distribution system, at TRL4. See the topic description document published with this call for full details.

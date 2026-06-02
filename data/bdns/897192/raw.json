@@ -1,0 +1,76 @@
+{
+  "id": 1098753,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLINARS DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE LLINARS DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897192",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE PRESTACIONES SOCIALES DE CARÁCTER ECONÓMICO EN RÉGIMEN DE CONCUERRENCIA COMPETITIVA PARA LA PARTICIPACIÓN DE NIÑOS/AS Y JÓVENES EN LOS CASALES DE VERANO MUNICIPALES PARA EL AÑO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE  PRESTACIONS SOCIALS DE CARÀCTER ECONÒMIC EN RÈGIM DE CONCURRÈNCIA COMPETITIVA PER A LA PARTICIPACIÓ D’INFANTS I JOVES EN ELS CASALS MUNICIPALS PER A L’ANY ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA OTORGAR AYUDAS PARA LA PARTICIPACIÓN DE NIÑOS/AS Y JÓVENES EN LOS CASALES DE VERANO MUNICIPALES",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3028980/bases-reguladores-per-a-la-concessio-de-prestacions-socials-de-caracter-economic-en-regim-de-concurrencia-competitiva-per-a-la-participacio-d-infants-i-joves-en-els-casals-municipals-ajuntament-de-llinars-del-valles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el diario oficial",
+  "textFin": "A los diez días de su publicación en diario oficial",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429996,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas Casales de verano 2026.pdf",
+      "long": 123795,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429995,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas Casales de verano 2026.pdf",
+      "long": 123795,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

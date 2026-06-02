@@ -1,0 +1,26 @@
+## Expected Outcome
+
+the project results are expected to contribute to all of the following outcomes:
+- access to cutting-edge infrastructure for researchers and research teams from Euratom and Associated Countries to EU and international state-of-the-art nuclear research infrastructures;
+- enhancing the network developed under the OFFERR project for optimised use of nuclear research infrastructures identified in the EU, thus supporting the implementation of the Euratom programme’s objectives and the establishment of the European Research Area (ERA) in the nuclear safety and radiation protection field;
+- strengthened cross-border collaboration in nuclear safety and radiation protection research in the EU, a significant increase in transnational nuclear research and the fostering of shared expertise and resources;
+- preservation of critical facilities, possibly increasing their number to ensure the long-term availability of key experimental facilities for research into safety, security, safeguards, radioactive waste management and radiation protection (e.g. materials testing research reactors in operation, irradiation infrastructure, hot cells and laboratories, mechanical and thermal hydraulic test facilities, light water reactor sustainability, fuel cycle research and development, advanced modelling and simulation (including digital twins) and safety of advanced reactor technology programmes) or innovative solutions and research approaches;
+- synergies with ongoing initiatives to complement (wherever applicable and beneficial) on-going Euratom projects and European Partnerships (e.g. EURAD-2, CONNECT-NM and PIANOFORTE), providing open access to the most advanced research infrastructures, large-scale and small-scale facilities, and expertise.
+
+## Scope
+
+ensuring access to EU and international research infrastructures is key to scientific progress in the nuclear field (including radiation protection, which is one of the foundation blocks of the European Research Area). Euratom support will be provided to cover the costs of transnational access for researchers or research teams from Member States and Associated States to EU and international state-of-the-art nuclear research infrastructures in other countries.
+
+Users will be provided with access (at no cost to the researcher) to world-class nuclear research facilities; technical expertise from experienced scientists and engineers; and assistance with experiment design, assembly, safety analysis and examination.
+
+The objective is to promote and enhance access to infrastructures that provide essential and unique services to the EU research community and are typically beyond the reach of individual laboratories. This will advance research in all the areas (except for fusion research, which is undertaken by the European Partnership in fusion research) covered in Annex I of the Council Regulation establishing the Euratom Programme.
+
+The Commission encourages international cooperation with non-EU countries and international organisations within the scope of this action (partly in order to avoid any duplication with the OECD/NEA’s FIDES initiative), while encouraging investigating their complementarities. Support for researchers from non-EU stakeholders (including academia, research centres and industrial laboratories), non-EU countries and international organisations is envisaged where such access would be part of the promotion of international cooperation with the countries or international organisations concerned and researchers from Euratom Member States would have equivalent access to their infrastructures.
+
+Based on the lessons learnt from former and current user facility projects, a framework and a set of common rules will be further improved for the future sustainable operation of a network of ‘Euratom User Facilities’. Dedicated support for the mobility of learners and/or linkage with the proposal submitted for topic HORIZON-EURATOM-2026-01-03 could be an advantage.
+
+The active participation of major infrastructure operators will be required in order to achieve these objectives. The support scheme should operate through open calls and offer infrastructure access; technical expertise from experienced scientists and engineers; and assistance with experiment design, assembly, safety analysis and examination.
+
+Proposals could pool the necessary financial resources from the participating national (or regional) research programmes with a view to implementing transnational proposals that result in grants to third parties to implement activities of this action.
+
+The proposal should include an option for the JRC to use the future project’s operational environment (as a centralised platform supported by Euratom for facilitating the access to the JRC’s nuclear research infrastructures) for the implementation of the dedicated complementing coordination and support action between DG JRC and DG RTD on open access to the JRC’s nuclear infrastructures.

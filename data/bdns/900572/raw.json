@@ -1,0 +1,92 @@
+{
+  "id": 1102133,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PETRER",
+    "nivel3": "AYUNTAMIENTO DE PETRER"
+  },
+  "sedeElectronica": "https://petrer.sedelectronica.es/info.0",
+  "codigoBDNS": "900572",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS A LA ADQUISICIÓN DE VIVIENDAS Y SOLARES Y CONSTRUCCIÓN Y REHABILITACIÓN DE VIVIENDAS EN EL CASCO HISTÓRICO DE PETRER DURANTE EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS A LA ADQUISICIÓN DE VIVIENDAS Y SOLARES Y CONSTRUCCIÓN Y REHABILITACIÓN DE VIVIENDAS EN EL CASCO HISTÓRICO DE PETRER DURANTE EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://petrer.es/wp-content/uploads/2026/04/BASES-AYUDAS-ADQUISION-Y-REHABILITACION-VIVIENDAS-CASCO-HISTORICO-2026-1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-24",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440099,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260416 Bases y convocatoria subvenciones adquisición viviendas casco histórico.pdf",
+      "long": 3258249,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440101,
+      "descripcion": "Resto de anexos",
+      "nombreFic": "anexos 1-3-4-5 (intervencion BDNS).pdf",
+      "long": 1878411,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440100,
+      "descripcion": "Solicitud",
+      "nombreFic": "Anexo 2 Solicitud Subvencion - 2026.pdf",
+      "long": 1097200,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209668,
+      "titulo": "CONVOCATORIA DE AYUDAS A LA ADQUISICIÓN DE VIVIENDAS Y SOLARES Y CONSTRUCCIÓN Y REHABILITACIÓN DE VIVIENDAS EN EL CASCO HISTÓRICO DE PETRER DURANTE EL EJERCICIO 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios:</p><p>- Para las ayudas de compra de vivienda o solar: Las personas físicas mayores de edad que estén en condiciones de suscribir una escritura pública de adquisición.</p><p>- Para las ayudas a la construcción o rehabilitación: Las personas físicas mayores de edad que sean propietarias de los solares o viviendas objeto de actuación y, en caso de actuación sobre vivienda, además quienes dispongan de autorización expresa de los que lo sean, para ejecutar obras en calidad de arrendatarios o usuarios.</p><p>Segundo: Objeto: Regular ayudas para las actuaciones de adquisición de viviendas y solares, así como la construcción y rehabilitación de viviendas en el casco histórico del municipio de Petrer.</p><p>Tercero: Bases reguladoras aprobadas por la Junta de Gobierno Local del Excmo. Ayuntamiento de Petrer, en sesión celebrada el 16 de abril de 2026.</p><p>Cuarto: Cuantía: 80.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes: Abierto hasta el 30 de septiembre de 2026, inclusive, a partir de la publicación del extracto de esta convocatoria en el Boletín Oficial de la Provincia de Alicante.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/24_76/2026_002874.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

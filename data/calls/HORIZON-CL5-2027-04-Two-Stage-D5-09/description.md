@@ -1,0 +1,16 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- Airframe / cabin noise for new aircraft design;
+- Engine noise sources and installation effects;
+- Noise perception/annoyance and mitigation methodologies.
+
+## Scope
+
+The topic aims to deliver advanced and validated numerical and experimental aero-acoustic methodologies for the noise prediction of new ultraefficient aircraft designs, primarily for large passenger aircraft with new open fan engine architectures and ultra-high by-pass ratio architectures.
+
+The topic should reinforce fundamental understanding, fill gaps and propose new/updated technologies towards enabling open fan designs and techno bricks for significantly reduced cabin noise. Mayor emphasis is expected to be put to existing/new experimental data and procedures, multi-disciplinary design and optimisation, aerodynamics, aeroacoustics and noise reduction integrated metamaterials/structures.
+
+In addition, the proposals may also provide even better noise footprint assessments and better annoyance understanding and mitigation methodologies.
+
+The topic should build upon lessons learnt and gaps identified from H2020.CS2-LPA-01-D01 as well as complementing the projects resulted from HORIZON-CL5-2022-D5-01-12.

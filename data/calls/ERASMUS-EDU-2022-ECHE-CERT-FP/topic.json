@@ -1,0 +1,50 @@
+{
+  "identifier": "ERASMUS-EDU-2022-ECHE-CERT-FP",
+  "ccm2Id": "44774210",
+  "callIdentifier": "ERASMUS-EDU-2022-ECHE-CERT",
+  "callTitle": "Erasmus Charter for Higher Education 2022",
+  "title": "Erasmus Charter for Higher Education",
+  "programme": "Erasmus+",
+  "programmeCode": "43353764",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2022-02-23",
+  "deadline": "2022-05-03",
+  "deadlineModel": "multiple cut-off",
+  "actionType": "ERASMUS ECHE Charter",
+  "actionCode": "ERASMUS-CERT",
+  "mgaCode": "ERASMUS-CERT",
+  "budget": {
+    "total_eur": null,
+    "by_year": {},
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "ERASMUS-EDU-2022-ECHE-CERT-FP",
+    "ERASMUS-EDU-2022-ECHE-CERT"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact: EACEA-ECHE@ec.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Please be aware that the Manual is currently drafted for the H2020 Programme and may not entirely fit for other programmes. However, a revision is being completed to make it corporate.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/24156?topic=ERASMUS-EDU-2022-ECHE-CERT-FP",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2022-ECHE-CERT-FP",
+  "documents": [
+    {
+      "section": "",
+      "label": "Call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/wp-call/2022/call-fiche_erasmus-edu-2022-eche-cert_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "",
+      "label": "tandard proposal template",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/temp-form/af/af_erasmus-eche-certificate_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:25.438Z"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "899554",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CUERVO DE SEVILLA, EL / AYUNTAMIENTO DE CUERVO DE SEVILLA, EL",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "CONCURSO CARROZAS DE ROMERÍA 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": "2026-04-27",
+  "deadline": "2026-05-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899554",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-209205-de-la-convocatoria-del-concurso-de-carrozas-de-la-Romeria-2026-BDNS-codigo-899554/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209205,
+      "titulo": "CONCURSO DE CARROZAS DE ROMERÍA 2026 EL CUERVO DE SEVILLA",
+      "tituloLeng": null,
+      "texto": "<p>Normas del concurso:</p><p>Todas las carrozas deberán haberse inscrito previamente en el Registro del Ayuntamiento, entregando junto a la solicitud, la documentación requerida en la misma y el justificante del abono de la inscripción, estando abierto el plazo de inscripción desde el 27 de abril a las 8 horas hasta el 15 de mayo a las 14 horas, ambos inclusive. El primer día de inscripción (27 de abril) sólo se admitirán solicitudes de forma presencial.</p><p>El jurado: Los miembros que compongan el jurado serán nombrados por decreto de Alcaldía y serán hechos públicos antes de iniciar sus labores, los cuáles otorgarán los premios que se establecen de acuerdo con la decoración y ornamentación de las carrozas.</p><p>El jurado podrá declarar desiertos aquellos premios que estime conveniente, de acuerdo con su criterio, siendo en todo caso su decisión inapelable.</p><p>Se faculta al jurado para resolver todas aquellas cuestiones no previstas en estas bases.</p><p>La participación en esta convocatoria supone la plena aceptación y conformidad con estas normas.</p><p>Serán beneficiarios de premios aquellas carrozas que debidamente inscritas, sean designadas por el jurado nombrado a tal efecto, los premios serán: UN premio especial a la mejor carroza, consistente en premio en metálico de trescientos euros (300’00 €) y tener el derecho de ser la primera en la comitiva de vuelta a la iglesia el domingo y en la salida del año 2027 hacia la ermita, a partir de ella se colocarán las restantes por orden de inscripción, y CINCO premios de cien euros (100’00 €) a las carrozas mejor engalanadas independientemente del tamaño de las mismas.</p>",
+      "textoLeng": null,
+      "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-209205-de-la-convocatoria-del-concurso-de-carrozas-de-la-Romeria-2026-BDNS-codigo-899554/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.113Z"
+}

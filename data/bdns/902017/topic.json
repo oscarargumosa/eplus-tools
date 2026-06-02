@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "902017",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE BURGOS",
+  "nuts_codes": [
+    "ES412"
+  ],
+  "nuts_primary": "ES412",
+  "title": "Resolución del Rector de la Universidad de Burgos, a través del Vicerrectorado de Estudiantes y a iniciativa del consejo de Estudiantes de la Universidad de Burgos, convoca los \"I Premios del Consejo de Estudiantes de la Universidad de Burgos\"",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": "2026-05-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://www.ubu.es/formularios/i-convocatoria-de-premios-del-consejo-de-estudiantes-de-la-universidad-de-burgos-ceubu",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902017",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2020/01/15/pdf/BOCYL-D-15012020-3.pdf",
+  "text_inicio": "Desde el día siguiente de la publicación del extracto de esta convocatoria en el BCYL",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210288,
+      "titulo": "EXTRACTO de la Convocatoria de 21 de abril de 2026, del Rector de la Universidad de Burgos, por la que se convocan los “I premios del Consejo de estudiantes de la Universidad de Burgos”",
+      "tituloLeng": null,
+      "texto": "<p>Primero.– Beneficiarios.Podrá participar en la presente convocatoria el estudiantado matriculado en enseñanzas oficiales de grado y máster de la Universidad de Burgos en el curso académico 2025/2026.Las propuestas de iniciativa deberán ser presentadas a título individual o colectivo por estudiantes de la Universidad de Burgos, designándose, en su caso, una persona representante del grupo.Las iniciativas propuestas deberán cumplir los siguientes requisitos:a) Estar orientadas a su desarrollo en el ámbito de la Universidad de Burgos.b) Enmarcarse en alguna de las líneas establecidas en el objeto de la convocatoria: representación estudiantil, mentoría o sostenibilidad.c) Estar abiertas a la participación o al disfrute del conjunto de la comunidad universitaria, sin perjuicio de que puedan dirigirse de manera específica a determinados colectivos pertenecientes a esta.d) No haber sido premiadas anteriormente en otras convocatorias de la Universidad de Burgos por el mismo objeto.Segundo.– Objeto.Se convocan los Premios del Consejo de Estudiantes de la Universidad de Burgos, dirigidos a poner en valor el esfuerzo, la iniciativa y el compromiso con la mejora de la vida universitaria y con los valores que inspiran la acción colectiva dentro de la Universidad de Burgos.Tercero.– Bases reguladoras.Resolución de 18 de diciembre de 2019, del Rectorado de la Universidad de Burgos, por la que se publican las bases reguladoras de la concesión de becas y ayudas de la Universidad de Burgos (BOCYL 15 de enero de 2020)Cuarto.– Cuantía.La cuantía total del crédito consignado es de seiscientos euros (600,00 €).Quinto.– Plazo de presentación de solicitudes.Desde el día siguiente a su publicación del extracto de esta convocatoria en el BOCYL hasta el 15 de mayo de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/30/pdf/BOCYL-D-30042026-81-16.pdf",
+      "cve": "BOCYL-D-30042026-81-16",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.456Z"
+}

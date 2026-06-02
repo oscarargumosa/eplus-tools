@@ -1,0 +1,29 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- Provide policymakers, education practitioners and citizens with a solid understanding of how social media, video gaming and other leisure uses of digital tools relate to the educational outcomes of young people, including through their impact on well-being and mental health.
+- Generate rigorous, policy-relevant evidence about policies and practices aiming to inform and regulate young people’s use of digital tools for non-educational purposes, such as smartphones, at school.
+- Develop actionable advice for policymakers and citizens about how to promote young people’s healthy use of digital tools for leisure, both at school and outside school.
+- Describe and quantify the relationships of using digital tools for leisure and communication with students’ motivation, study habits, attention span and concentration, time management, engagement, social integration and overall well-being.
+
+## Scope
+
+The increasing prevalence of digital devices in young people’s life has raised concerns about the potential impacts of the use of digital tools for leisure and communication on primary-, secondary- and higher education students’ well-being and educational outcomes[1]. “Digital distraction” is emerging inter alia as a potential threat to academic performance and several countries have started to regulate the use of smartphones at school.
+
+There is still limited evidence on the interrelation between the use of digital tools for leisure in-school or out-of-school and educational performance, in both primary and secondary education, because most of the existing literature is purely correlational, or only focuses on effects on well-being. Moreover, most existing research is from extra-EU contexts, which may limit the transferability of findings to EU education and training systems.
+
+Several interrelated research questions remain to be addressed, such as:
+- Which types of digital device use do pupils perform during school and do their digital activities differ depending on different contexts (i.e., during class, during breaks or between classes)?
+- How do different activities (e.g. playing games vs. chatting with a parent), on different devices, with different time durations of use, relate to students’ attention span and concentration as well as general school motivation?
+- How does frequent smartphone, social media use and other online leisure activities (such as video games) impact students’ attention span, concentration, memory and relational capacities?
+-
+- How can schools, educators and parents balance the use of those tools to enhance, rather than hinder, educational performance and students’ well-being?
+- What is the potential for addiction when using digital tools and what are the decisive factors for this on the part of the design of tools on the one hand and on the part of the users on the other?
+- How can digital leisure activities contribute to skills development, such as problem-solving and digital literacy and what is the transferability of these skills into education? How do these benefits compare with potential harm?
+- What is the role of parents and educators in guiding digital leisure activities? Explore parental digital literacy and its impact on the use of digital devices by the youth.
+
+Proposals should explore the complex, context-dependent ways in which different forms of digital leisure affect attention, motivation, creativity, learning habits, critical thinking, and socio-emotional skills. They should consider variations across age groups, socio-economic backgrounds, cultural contexts, and types of digital engagement and include students with disabilities.
+
+Proposals should apply rigorous experimental and/or quasi-experimental methods for their analysis and could complement them with experience sampling research, survey research methods and qualitative research methods. Close cooperation with educational authorities, educational institutions and educators in analysing existing policies and practices is essential. Proposals should also include the opinions of young people and other relevant stakeholders, such as media literacy organisations, for example, in the form surveys, interviews, consultations, as part of the data collection. Proposals could apply interdisciplinary approaches (including from SSH disciplines), combining insights from economics, sociology, neurosciences, communication science (media psychology) and pedagogy. Clustering and cooperation with other selected projects under this call and other relevant projects are strongly encouraged.
+
+[1] Cf. European Commission initiative on ‘A comprehensive approach to mental health’ or the call for evidence for an EU Action Plan Against Cyberbullying’.

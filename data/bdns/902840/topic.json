@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "902840",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALICANTE / DIPUTACIÓN PROVINCIAL DE ALACANT/ALICANTE",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA SUBVENCIONES DINERARIAS PARA LA CONSERVACIÓN Y MEJORA DE LOS PARAJES NATURALES MUNICIPALES EN MUNICIPIOS DE LA PROVINCIA DE ALICANTE, ANUALIDAD 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 120000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "O",
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES"
+    }
+  ],
+  "apply_url": "https://diputacionalicante.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902840",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/05/05_82/2026_003236.pdf",
+  "text_inicio": "A partir del día siguiente de la publicación del extracto",
+  "text_fin": "20 días naturales a contar desde el día siguiente al de la publicación del extracto ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210619,
+      "titulo": "EXTRACTO DEL DECRETO DE LA SRA. DIPUTADA DE MEDIO AMBIENTE, ENERGÍA Y RESIDUOS SÓLIDOS URBANOS N.º 1847 DE FECHA 27 DE ABRIL DE 2026 POR EL QUE SE APRUEBA LA CONVOCATORIA SUBVENCIONES DINERARIAS PARA LA CONSERVACIÓN Y MEJORA DE LOS PARAJES NATURALES MUNICIPALES EN MUNICIPIOS DE LA PROVINCIA DE ALICANTE, ANUALIDAD 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios:</p><p>Podrán optar a la Convocatoria los municipios de la provincia de Alicante que tengan en el ámbito territorial declarados Parajes Naturales Municipales, según la normativa de aplicación del Consell de la Generalitat.</p><p>Segundo.- Objeto:</p><p>La finalidad de la presente convocatoria es la realización de actuaciones de conservación y mejora de los Parajes Naturales Municipales de municipios de la provincia de Alicante.</p><p>Tercero.- Bases reguladoras:</p><p>Ordenanza General de Subvenciones aprobada por el Pleno en sesión de fecha 19.12.2025 y publicada en el BOP número 11 de fecha 19.01.2026.</p><p>Cuarto.- Cuantía:</p><p>Para la presente convocatoria de subvenciones se prevé una dotación económica de 120.000,00 euros.</p><p>Quinto.- Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes será de 20 días naturales a contar desde el día siguiente al de la publicación del extracto de la presente convocatoria en el Boletín Oficial de la Provincia de Alicante, que se realizará a través de la Base de Datos Nacional de Subvenciones, una vez que Diputación le haya comunicado el texto de la convocatoria y la información requerida para su publicación, tal y como dispone el artículo 20.8.a) de la LGS.</p><p>Sexto.- Otros datos:</p><p>La tramitación y presentación de la solicitud, junto con la documentación requerida en esta convocatoria, se realizará únicamente a través de la Sede Electrónica de la Diputación Provincial de Alicante. Se deberá adjuntar a la solicitud la siguiente documentación:</p><p>- Memoria descriptiva de la actividad para la que se solicita la subvención.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/05/05_82/2026_003242.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.890Z"
+}
