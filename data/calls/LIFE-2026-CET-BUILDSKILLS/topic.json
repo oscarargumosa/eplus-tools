@@ -105,6 +105,13 @@
     },
     {
       "section": "Additional documents:",
+      "label": "Frequently Asked Questions",
+      "url": "https://cinea.ec.europa.eu/document/download/2400db92-5bf4-4dbe-b524-3049bc5f0c04_en?filename=250717_LIFE_2025_CET_FAQs_published.pdf",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
       "label": "LIFE Multiannual Work Programme 2025-2027",
       "url": "https://circabc.europa.eu/ui/group/73d306c9-1ee6-4e70-81f0-56fecf4cd18c/library/ce976713-0506-4fd0-b19a-6f4dc6c23fe6",
       "ext": "",
@@ -160,5 +167,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-03T04:06:01.139Z"
+  "fetchedAt": "2026-06-04T04:05:08.339Z"
 }

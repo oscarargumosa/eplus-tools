@@ -1,0 +1,74 @@
+{
+  "id": 1112008,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ANDALUCÍA",
+    "nivel3": "CONSEJERÍA DE AGRICULTURA, PESCA, AGUA Y DESARROLLO RURAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910447",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2100000,
+  "mrr": false,
+  "descripcion": "Orden de la Dirección General de Pesca, Acuicultura y Economía Azul, por la que se convocan ayudas a proyectos acogidos a las Estrategias de Desarrollo Local Participativo de los Grupos de Acción Local del sector pesquero y acuícola andaluz",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Pesca y acuicultura",
+      "codigo": "03"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES61 - ANDALUCIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden de 13 de marzo de 2024, por la que se establecen las bb.rr. para la conc. de las ayudas a proyectos acogidos a las Estrategias de Desar.Local Participativo, de los Grupos de Acción Local del Sector Pesquero y Acuícola And.-Marco FEMPA 2021-27",
+  "urlBasesReguladoras": "https://juntadeandalucia.es/eboja/2024/56/BOJA24-056-00033-42005-01_00298799.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en BOJA",
+  "textFin": "10 días hábiles desde el día siguiente a la publicación en BOJA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1469043,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "TextoConvocatoria.pdf",
+      "long": 1703563,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1112000,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AZPEITIA",
+    "nivel3": "AYUNTAMIENTO DE AZPEITIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910439",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 89500,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES DEL ÁREA DE SERVICIOS SOCIALES 2026",
+  "descripcionLeng": "GIZARTE ZERBITZUEN ARLOKO 2026KO DIRULAGUNTZAK",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "SUBVENCIONES DEL ÁREA DE SERVICIOS SOCIALES 2026",
+  "urlBasesReguladoras": "https://www.azpeitia.eus/tramiteak/dirulaguntza-programak",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-01",
+  "textInicio": "A partir del día siguiente a la publicación en el Boletín Oficial de Gipuzkoa",
+  "textFin": "15 días después a partir del día siguiente a la publicación en el Boletín Oficial de Gipuzkoa",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1469020,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "OINARRIAK.pdf",
+      "long": 768369,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1469019,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "OINARRIAK.pdf",
+      "long": 768369,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

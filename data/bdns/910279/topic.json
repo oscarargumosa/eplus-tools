@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "910279",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SORIA / DIPUTACIÓN PROVINCIAL DE SORIA",
+  "nuts_codes": [
+    "ES417"
+  ],
+  "nuts_primary": "ES417",
+  "title": "CONVOCATORIA SUBVENCIONES DESTINADAS AL DESARROLO DE PROYECTOS CINEMATOGRÁFICOS EN LA PROVINCIA DE SORIA",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": "2026-06-04",
+  "deadline": "2026-07-02",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA",
+  "eligible_orgs": [
+    "GRAN EMPRESA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90.1",
+      "descripcion": "Actividades de creación artística"
+    }
+  ],
+  "apply_url": "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_1152_93e5070e%232E%23pdf",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910279",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipsoria.es/sites/dipsoria/files/public/paginas/archivos/ordenanza_general_reguladora_de_la_concesion_de_subvenciones.pdf",
+  "text_inicio": "Al día siguiente de la publicación en el B.O.P.",
+  "text_fin": "A los veinte días hábiles siguientes a su publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-04T04:08:32.652Z"
+}

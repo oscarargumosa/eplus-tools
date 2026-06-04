@@ -1,0 +1,88 @@
+{
+  "id": 1111805,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE EDUCACIÓN, CIENCIA, UNIVERSIDADES E FORMACIÓN PROFESIONAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910244",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "Orden de 27 de mayo de 2026 por la que se establecen las bases reguladoras y se convocan los premios extraordinarios de educación secundaria obligatoria al rendimiento académico correspondientes al curso 2025/26 (código de procedimiento ED311D).",
+  "descripcionLeng": "Orde do 27 de maio de 2026 pola que se establecen as bases reguladoras e se convocan os premios extraordinarios de educación secundaria obrigatoria ao rendemento académico correspondentes ao curso 2025/26 (código de procedemento ED311D).",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden de 27 de mayo de 2026 por la que se establecen las bases reguladoras y se convocan los premios extraordinarios de educación secundaria obligatoria al rendimiento académico correspondientes al curso 2025/26 (código de procedimiento ED311D).",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-09",
+  "fechaFinSolicitud": "2026-07-08",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468499,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "premiosESOrend_2526_orde_convocatoria_C_20260603_094514.pdf",
+      "long": 612593,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468502,
+      "descripcion": "ANEXO EN GALEGO",
+      "nombreFic": "ED311D-G_20260603_094701.pdf",
+      "long": 2052161,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468501,
+      "descripcion": "ANEXO EN CASTELLANO",
+      "nombreFic": "ED311D-C_20260603_094637.pdf",
+      "long": 2117293,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468500,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "premiosESOrend_2526_orde_convocatoria_G_20260603_094554.pdf",
+      "long": 516698,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

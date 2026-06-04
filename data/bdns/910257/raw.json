@@ -1,0 +1,68 @@
+{
+  "id": 1111818,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.uco.es/",
+  "codigoBDNS": "910257",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 37354,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas Erasmus+ (Acción KA1). Movilidad de personal con fines docentes “Staff Mobility for Teaching Assignment”. Cursos 25/26 y 26/27",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Reglamento 39/2024 sobre las Bases Reguladoras para la concesión de becas y ayudas para movilidad de la Universidad de Córdoba",
+  "urlBasesReguladoras": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2024/01473",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente de la publicación del extracto de la convocatoria en el BOUCO.",
+  "textFin": "10 días hábiles desde el siguiente a la publicación del extracto de la convocatoria en el BOUCO.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468524,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1_Convocatoria firmada de ayudas Erasmus_ (Acción KA1)_30  Movil.pdf",
+      "long": 314730,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "910355",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSITAT DE VALÈNCIA (ESTUDI GENERAL)",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Premios a las mejores ideas y desarrollos en el análisis de los datos vinculados al plan de impulso territorial a equipamientos culturales (PITEC) de la Cátedra ESPACIOS para la Cultura, la Creatividad y la Innovación.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    }
+  ],
+  "apply_url": "https://www.uv.es/sede-electronica/es/sede-electronica-uv.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910355",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ir.uv.es/BS8i2iL",
+  "text_inicio": "Inicia al día siguiente de la publicación en el DOGV",
+  "text_fin": "Finaliza a los 10 días hábiles a partir del día siguiente de la publicación del extracto en el DOGV",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-04T04:08:32.681Z"
+}

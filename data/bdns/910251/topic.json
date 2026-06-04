@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "910251",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CÓRDOBA / DIPUTACIÓN PROVINCIAL DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "PLAN PROVINCIAL ESPECIFICO PLANES MUNICIPALES CONTRA EL VNO",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": "2026-06-05",
+  "deadline": "2026-06-18",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 299990,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910251",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipucordoba.es/visor-pdf/03-06-2026/BOP-A-2026-1899.pdf",
+  "text_inicio": "DIA SIGUIENTE PUBLICACION EXTRACTO BOP",
+  "text_fin": "DIEZ DÍAS HÁBILES",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-04T04:08:32.638Z"
+}

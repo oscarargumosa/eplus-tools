@@ -1,0 +1,228 @@
+{
+  "id": 1111920,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AGUILAR DE CAMPOO",
+    "nivel3": "AYUNTAMIENTO DE AGUILAR DE CAMPOO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910359",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES AYUDAS AL AUTOEMPLEO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES414 - Palencia"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BASES AYUDAS AL AUTOEMPLEO 2026",
+  "urlBasesReguladoras": "https://aguilardecampoo.sedelectronica.es/transparency/1574e3db-71a0-4098-b90d-abfd93a8a135/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación en el Boletín Oficial de la Provincia de Palencia",
+  "textFin": "30 de septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468801,
+      "descripcion": "ANEXO I",
+      "nombreFic": "Anexo I - Solicitud.pdf",
+      "long": 90256,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468803,
+      "descripcion": "ANEXO III",
+      "nombreFic": "Anexo III - Declaración otras ayudas.pdf",
+      "long": 111035,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468805,
+      "descripcion": "ANEXO V",
+      "nombreFic": "Anexo V - Plan General de Empresa.pdf",
+      "long": 187742,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468804,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "Anexo IV - Autorización AEAT y SS.pdf",
+      "long": 164187,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468799,
+      "descripcion": "CONVOCATORIA",
+      "nombreFic": "Acuerdo JGL 20.05.26 convocatoria subvenciones autoempleo 2026.pdf",
+      "long": 319640,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468800,
+      "descripcion": "BASES AYUDA",
+      "nombreFic": "Bases Autoempleo - Boletín Oficial de la Provincia de Palencia.pdf",
+      "long": 75731,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468798,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Acuerdo JGL 20.05.26 convocatoria subvenciones autoempleo 2026.pdf",
+      "long": 319640,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468809,
+      "descripcion": "ANEXO VI C",
+      "nombreFic": "Anexo VI - c) Ficha gastos de Seguridad Social.pdf",
+      "long": 100429,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468806,
+      "descripcion": "ANEXO VI A",
+      "nombreFic": "Anexo VI - a) Ficha de inversiones.pdf",
+      "long": 120537,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468802,
+      "descripcion": "ANEXO II",
+      "nombreFic": "Anexo II - Declaración responsable.pdf",
+      "long": 120612,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468807,
+      "descripcion": "ANEXO VI B",
+      "nombreFic": "Anexo VI - b) Ficha gastos subvencionables.pdf",
+      "long": 120697,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "910412",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OVIEDO / AYUNTAMIENTO DE OVIEDO",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "CONVOCATORIA  AYUDAS COMPLEMENTO DE VULNERABILIDAD EN LA SUBVENCIÓN DEL ENTORNO RESIDENCIAL DE REHAB PROGRAMADA DE VENTANIELLES Y GUILLÉN LAFUERZA FASE I-B, PLAN DE RECUPERACIÓN, TRANSFORMACIÓN Y RESILIENCIA FINANCIADO POR UNIÓN EUROPEA-NEXTGENERATIONEU",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 384821.57,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43",
+      "descripcion": "Actividades de construcción especializada"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910412",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo I - Declaración responsable comunicación de propietarios",
+      "url": null
+    },
+    {
+      "label": "Anexo V - Declaración responsable de ausencia de conflicto de intereses",
+      "url": null
+    },
+    {
+      "label": "Anexo III - Documento endoso",
+      "url": null
+    },
+    {
+      "label": "Anexo IV - Declaración de compromiso en relación con las actuaciones del plan",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo II - Comunicación datos unidad convivencia de propietarios-usufructurarios",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.oviedo.es/documents/25047/1519956/Bases+subvenciones+rehabilitaci%C3%B3n+de+fachadas+y+accesibilidad.pdf/48daf44e-e12a-4d0d-9aab-229e949ab467",
+  "text_inicio": "AL DÍA SIGUIENTE A LA PUBLICACIÓN EN BOPA",
+  "text_fin": "DOS MESES A CONTAR DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN EN BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-04T04:08:32.695Z"
+}

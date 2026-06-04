@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "910288",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES / DIRECCIÓN GENERAL DE EVALUACIÓN Y COOPERACIÓN TERRITORIAL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de la Secretaría de Estado de Educación, de 1 de junio de 2026, por la que se convoca el Reconocimiento a Centros Educativos Sostenibles.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 75000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.educacion.gob.es/portada.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910288",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2005-7751",
+  "text_inicio": "Desde el día siguiente al de la publicación de su extracto en el BOE",
+  "text_fin": "Veinte días hábiles desde el día siguiente al de la  publicación de su extracto en BOE a las 12:00 h",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-04T04:08:32.656Z"
+}

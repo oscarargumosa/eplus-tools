@@ -1,0 +1,72 @@
+{
+  "id": 1111765,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LA RÀPITA",
+    "nivel3": "AYUNTAMIENTO DE LA RÀPITA"
+  },
+  "sedeElectronica": "larapita.cat",
+  "codigoBDNS": "910204",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500,
+  "mrr": false,
+  "descripcion": "Convocatoria del premio de narrativa \"Sebastià Juan Arbó\" 2026",
+  "descripcionLeng": "Convocatòria del premi de narrativa \"Sebastià Juan Arbó\" 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística",
+      "codigo": "90.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras del premio de narrativa Sebastià Juan Arbó",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/265095/bases-del-premi-de-narrativa-sebastia-j-arbo-text-aprovacio-definitiva-ajuntament-rapita-la",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente de su publicación en el BOPT",
+  "textFin": "17/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468357,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria del premi de narrativa Sebastià Juan Arbó.pdf",
+      "long": 222501,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468356,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria del premio de narrativa Sebastià Juan Arbó.pdf",
+      "long": 236267,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

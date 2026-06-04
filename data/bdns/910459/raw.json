@@ -1,0 +1,84 @@
+{
+  "id": 1112020,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CIUDAD REAL",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CIUDAD REAL"
+  },
+  "sedeElectronica": "www.dipucr.es",
+  "codigoBDNS": "910459",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 265000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones destinadas a la modernización e innovación de los establecimientos destinados al pequeño comercio y la hostelería, en municipios, eatim y núcleos de pob. de la provincia de Ciudad Real, menores de 2.000 habitantes, año 2026\n",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de efectos personales y artículos de uso doméstico",
+      "codigo": "95.2"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de ordenadores y equipos de comunicación",
+      "codigo": "95.1"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de vehículos de motor y motocicletas",
+      "codigo": "95.3"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Convocatoria de Subvenciones destinadas a la modernización e innovación de los establecimientos destinados al pequeño comercio y la hostelería, en municipios, eatim y núcleos de pob. de la provincia de Ciudad Real, menores de 2.000 habitantes, año 2026",
+  "urlBasesReguladoras": "www.dipucr.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación de esta Convocatoria en el Boletín Oficial de la Provincia",
+  "textFin": "Treinta días naturales, contados a partir del día siguiente a la fecha de publicación en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1469057,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado de acuerdos.pdf",
+      "long": 755827,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

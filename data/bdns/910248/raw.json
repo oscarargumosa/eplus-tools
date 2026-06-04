@@ -1,0 +1,96 @@
+{
+  "id": 1111809,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DAIMIEL",
+    "nivel3": "AYUNTAMIENTO DE DAIMIEL"
+  },
+  "sedeElectronica": "www.daimiel.es",
+  "codigoBDNS": "910248",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 13000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE BECAS PARA MATERIAL ESCOLAR. CURSO 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE BECAS PARA MATERIAL ESCOLAR. CURSO 2026-2027",
+  "urlBasesReguladoras": "https://www.daimiel.es/es/becas-material-escolar-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-09",
+  "fechaFinSolicitud": "2026-07-06",
+  "textInicio": "09/06/2026",
+  "textFin": "06/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468480,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria de becas material escolar. Curso 2026-2027.pdf",
+      "long": 348354,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468489,
+      "descripcion": "BECAS MATERIAL ESCOLAR. CURSO 2026-2027",
+      "nombreFic": "ANEXOS. BECAS MATERIAL ESCOLAR 2026-2027.pdf",
+      "long": 204693,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468494,
+      "descripcion": "BAREMO CONVOCATORIA DE BECAS MATERIAL ESCOLAR. CURSO 2026-2027",
+      "nombreFic": "BAREMO. CONVOCATORIA BECAS MATERIAL ESCOLAR. CURSO 2026-2027.pdf",
+      "long": 195481,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468490,
+      "descripcion": "BASES DE CONVOCATORIA BECAS MATERIAL ESCOLAR. CURSO 2026-2027",
+      "nombreFic": "BASES CONVOCATORIA BECAS MATERIAL ESCOLAR. CURSO 2026-2027.pdf",
+      "long": 204285,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468488,
+      "descripcion": "BECAS MATERIAL ESCOLAR. CURSO 2026-2027",
+      "nombreFic": "MODELO SOLICITUD. BECAS MATERIAL ESCOLAR. CURSO 2026-2027.pdf",
+      "long": 239918,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

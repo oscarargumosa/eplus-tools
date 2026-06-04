@@ -10,7 +10,7 @@ Applications will have to clearly state the involvement of the applicants in the
 
 The amounts of the prizes are specified in section 3. They are not linked to the costs incurred by the winner.
 
-2. EDCTP3 Prizes 2025 and related award criteria
+2. EDCTP3 Prizes 2026 and related award criteria
 
 The prizes will be awarded to the entry that, in the opinion of the independent expert jury, demonstrates having best addressed the cumulative criteria specified under the respective descriptions below.
 

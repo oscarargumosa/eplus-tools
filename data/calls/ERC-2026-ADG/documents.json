@@ -56,6 +56,13 @@
     "is_downloadable": false
   },
   {
+    "section": "Application and evaluation forms and model grant agreement (MGA):",
+    "label": "Standard application form (HE ERC ADG)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-erc-adg_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
     "section": "Additional documents:",
     "label": "EU Financial Regulation 2024/2509",
     "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",

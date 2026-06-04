@@ -1,0 +1,120 @@
+{
+  "id": 1108056,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906495",
+  "fechaRecepcion": "2026-05-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 140000,
+  "mrr": false,
+  "descripcion": "SUBV. OBRAS PATRIMONIO INDUSTRIAL DE LA MINERÍA DEL CARBÓN",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES CONCURRENCIA COMPETITIVA 2020",
+  "urlBasesReguladoras": "https://www.dipuleon.es/file;jsessionid=FA9DBCB94D1AC779A344F4CE0645D2AD/31SgncDu9RU",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Primer día hábil siguiente a publicación extracto en BOP",
+  "textFin": "20 días hábles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468405,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 36094,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468406,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO_I__PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 23938,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468407,
+      "descripcion": "ANEXO I BIS",
+      "nombreFic": "ANEXO_I_BIS_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 21783,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468412,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO_V_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 22107,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468409,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO_II_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 23178,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468410,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO_III_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 25308,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468411,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO_IV_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 22464,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    },
+    {
+      "id": 1468408,
+      "descripcion": "ANEXO I TER",
+      "nombreFic": "ANEXO_I_TER_PATRIMONIO_INDUSTRIAL26.docx",
+      "long": 21727,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
