@@ -1,0 +1,88 @@
+{
+  "id": 1112982,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SALT",
+    "nivel3": "AYUNTAMIENTO DE SALT"
+  },
+  "sedeElectronica": "https://www.seu-e.cat/ca/web/salt/seu-electronica",
+  "codigoBDNS": "911421",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 66000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones AMPAS/AFAS y entidades que realizan actividades culturales, deportivas, sociales y de salud, medioambientales y festivas de interés público local, para el ejercicio 2026.",
+  "descripcionLeng": "Convocatòria de subvencions a AMPES/AFES i entitats entitats que realitzen activitats culturals, esportives, socials i de salut, mediambientals i festives d'interès públic local, per l'exercici 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    },
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS SUBVENCIONES QUE OTORGA EL AYUNTAMIENTO DE SALT A AMPAS/AFAS Y ENTIDADES QUE REALIZAN ACTIVIDADES CULTURALES, DEPORTIVAS, SOCIALES Y DE SALUD, MEDIOAMBIENTALES Y FESTIVAS DE INTERÉS PÚBLICO LOCAL",
+  "urlBasesReguladoras": "https://www.seu-e.cat/ca/web/salt/seu-electronica",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente de la publicación de la convocatoria en el BOP de Girona.",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471600,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2 Decret de la convocatòria signat Català.pdf",
+      "long": 302809,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471599,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "3 Traducció al castellà del decret de la convocatòria diligència de secretaria.pdf",
+      "long": 27744,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

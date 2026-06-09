@@ -1,0 +1,71 @@
+{
+  "id": 1111788,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
+    "nivel3": "DIRECCIÓN GENERAL DE DESARROLLO RURAL, INNOVACIÓN Y FORMACIÓN AGROALIMENTARIA"
+  },
+  "sedeElectronica": "https://sede.mapa.gob.es/portal/site/seMAPA/ficha-procedimiento?procedure_suborg_responsable=23&procedure_etiqueta_pdu=null&procedure_id=762&by=theme",
+  "codigoBDNS": "910227",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1200000,
+  "mrr": false,
+  "descripcion": "Resolución de 4 de junio, por la que se convocan para el ejercicio 2026, las subvenciones destinadas al programa Cultiva, relativo a estancias formativas de jóvenes agricultores en explotaciones modelo",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Real Decreto 425/2021, de 15 de junio, que establece las bases reguladoras de subvenciones destinadas a la organización del Programa Cultiva, modificado por: R.D. 607/2023 de 11 de julio, R.D. 921/2024 de17 de septiembre, R.D.1039/2025 y el R.D.393/2026.",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/pdf/2021/BOE-A-2021-10964-consolidado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación del extracto en el BOE",
+  "textFin": "10 días hábiles contados a partir del día siguiente al de la publicación del extracto en el BOE",
+  "ayudaEstado": "SA.118857",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.118857",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 21 AYUDAS DESTINADAS AL INTERCAMBIO DE CONOCIMIENTOS Y ACTIVIDADES DE INFORMACIÓN"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1470218,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolucion Convocatoria CULTIVA 2026.pdf",
+      "long": 448840,
+      "datMod": "2026-06-05",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

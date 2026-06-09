@@ -1,0 +1,76 @@
+{
+  "id": 1112891,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LASARTE-ORIA",
+    "nivel3": "AYUNTAMIENTO DE LASARTE-ORIA"
+  },
+  "sedeElectronica": "https://www.lasarte-oria.eus",
+  "codigoBDNS": "911330",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 2026/954 de fecha 23 de abril de 2026  del Ayuntamiento de Lasarte-Oria por el que se aprueba la convocatoria de las subvenciones por aprender euskera del año 2026",
+  "descripcionLeng": "Lasarte-Oriako Udaleko 2026/954 Alkate Dekretua, 2026ko apirilaren 23koa, euskara ikasteagatik 2026ko dirulaguntzaren deialdia onesten duena",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones del Area de Euskera / Euskara Saileko dirulaguntzak arautzeko oinarriak",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/17/c2602062.htm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2025-09-01",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471219,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BDNS_Deialdia_sinatuta.pdf",
+      "long": 855707,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471218,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BDNS_Deialdia_sinatuta.pdf",
+      "long": 855707,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

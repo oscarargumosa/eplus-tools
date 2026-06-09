@@ -1,0 +1,72 @@
+{
+  "id": 1112913,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE PRESIDENCIA"
+  },
+  "sedeElectronica": "generalitat_en_red@gva.es",
+  "codigoBDNS": "911352",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA VICEPRESIDENCIA SEGUNDA Y CONSELLERIA DE PRESIDENCIA, POR LA CUAL SE CONVOCAN LAS SUBVENCIONES DESTINADAS AL FOMENTO DE LA REALIZACIÓN DE ACTUACIONES EN EDIFICIOS, ESPACIOS E INFRAESTRUCTURAS MUNICIPALES EN LOS MUNICIPIOS EN RIESGO DE DES",
+  "descripcionLeng": "RESOLUCIÓ DE LA VICEPRESIDÈNCIA SEGONA I CONSELLERIA DE PRESIDÈNCIA, PER LA QUAL ES CONVOQUEN LES SUBVENCIONS DESTINADES AL FOMENT DE LA REALITZACIÓ D'ACTUACIONS EN EDIFICIS, ESPAIS I INFRAESTRUCTURES MUNICIPALS EN ELS MUNICIPIS EN RISC DE DESPOBLAMENT DE",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "DECRETO 12/2025, de 23 de octubre, del President de la Generalitat, por el que se aprueban las bases reguladoras para la concesión de subvenciones para el fomento de la realización de actuaciones en edificios, espacios e infraestructuras municipales en lo",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2025/45321",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-15",
+  "fechaFinSolicitud": "2026-06-29",
+  "textInicio": "Dia siguiente publicación en el DOGV",
+  "textFin": "10 días hábiles desde el día siguiente a la publicación en el DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471314,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "4. RESOLUCIO CONVOCATORIA ESPAMU 2026_26-005239_trad_firmado.pdf",
+      "long": 508212,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471313,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "4. RESOLUCION CONVOCATORIA ESPAMU 2026 cast_firmado.pdf",
+      "long": 511647,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

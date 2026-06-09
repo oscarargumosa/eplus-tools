@@ -1,0 +1,84 @@
+{
+  "id": 1112841,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ERANDIO",
+    "nivel3": "AYUNTAMIENTO DE ERANDIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911280",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2200,
+  "mrr": false,
+  "descripcion": "Decreto 1472/2026, de 25 de mayo, aprobar la convocatoria de subvenciones 2026 para jóvenes del municipio que hayan realizado y superado el examen teórico para la obtención del carné de conducir en euskera.",
+  "descripcionLeng": "1472/2026 Dekretua, 2026ko maiatzaren 25ekoa. dirulaguntzen 2026ko deialdia onartzeko agindua eman du, gidabaimena lortzeko azterketa teorikoa euskaraz egin eta gainditu duten udalerriko gazteei zuzenduta.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Decreto 1472/2026, de 25 de mayo, aprobar la convocatoria de subvenciones 2026 para jóvenes del municipio que hayan realizado y superado el examen teórico para la obtención del carné de conducir en euskera.",
+  "urlBasesReguladoras": "https://www.erandio.eus/es-ES/Documents/Udala/dirulaguntzak/2026/Euskara%20Zerbitzua/2026%20dekretua%20gidabaimena_ELEBITAN.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-20",
+  "fechaFinSolicitud": "2026-09-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471130,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026 dekretua gidabaimena_ELEBITAN.pdf",
+      "long": 114781,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471132,
+      "descripcion": "EXTRACTO DEL DECRETO",
+      "nombreFic": "2026 gidabaimena_laburpena_elebi.docx",
+      "long": 23195,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471131,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026 dekretua gidabaimena_ELEBITAN.pdf",
+      "long": 114781,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

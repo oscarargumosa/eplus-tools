@@ -1,0 +1,72 @@
+{
+  "id": 1112733,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911172",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 270000,
+  "mrr": false,
+  "descripcion": "Resolución EMT/   /2026, de de, por la que se abre la convocatoria para el año 2026 en relación a las becas para las personas participantes en las casas de oficios del Programa de apoyo a los territorios con mayores necesidades de reequilibrio",
+  "descripcionLeng": "Resolució EMT/   /2026, de de , per la qual s'obre la convocatòria per a l'any 2026 en relació a les beques per a les persones participants a les cases d'oficis del Programa de suport als territoris amb majors necessitats de reequilibri territorial",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORDEN EMT/229/2023, de 17 de octubre, por la que se regula el régimen de ayudas y becas a las personas trabajadoras desempleadas que participan en acciones de formación profesional y las ayudas para empresas y/o entidades que acogen alumnado para la",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9024/1996318.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "30 de noviembre de 2021",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1470764,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "SOC0782026_ Resolució definitiva_Beques Barris 2026_1.pdf",
+      "long": 359015,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1470763,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ES_SOC0782026_Resolución Definitiva_Beques Barris 2026_2.pdf",
+      "long": 194401,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

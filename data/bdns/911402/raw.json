@@ -1,0 +1,96 @@
+{
+  "id": 1112963,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PARRES",
+    "nivel3": "AYUNTAMIENTO DE PARRES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911402",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA  SUBVENCIONES PARA EL XXI CERTAMEN DE PINTURA VILLA DE ARRIONDAS, EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA  SUBVENCIONES PARA EL XXI CERTAMEN DE PINTURA VILLA DE ARRIONDAS, EJERCICIO 2026",
+  "urlBasesReguladoras": "https://www.ayto-parres.es/noticia/-/asset_publisher/bb7c8be44268/content/not-sub-ayu#.Xplii0AzaUk",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-19",
+  "textInicio": "Desde el día siguiente a la fecha de publicación en BOPA",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471495,
+      "descripcion": "Ordenanza general de subvenciones",
+      "nombreFic": "ordenanza subvenciones_bases.pdf",
+      "long": 1331731,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471492,
+      "descripcion": "Modelo solicitud",
+      "nombreFic": "SOLICITUD 2026.pdf",
+      "long": 197201,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471494,
+      "descripcion": "Modelo ficha acreedor",
+      "nombreFic": "anexo 1b ficha acreedor.pdf",
+      "long": 118128,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471491,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Extracto Convocatoria.pdf",
+      "long": 62762,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471493,
+      "descripcion": "Anexo aceptación premio",
+      "nombreFic": "Anexo_aceptación_premio_2026.pdf",
+      "long": 65546,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

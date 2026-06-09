@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "910227",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN / DIRECCIÓN GENERAL DE DESARROLLO RURAL, INNOVACIÓN Y FORMACIÓN AGROALIMENTARIA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 4 de junio, por la que se convocan para el ejercicio 2026, las subvenciones destinadas al programa Cultiva, relativo a estancias formativas de jóvenes agricultores en explotaciones modelo",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-06-03",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://sede.mapa.gob.es/portal/site/seMAPA/ficha-procedimiento?procedure_suborg_responsable=23&procedure_etiqueta_pdu=null&procedure_id=762&by=theme",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910227",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/pdf/2021/BOE-A-2021-10964-consolidado.pdf",
+  "text_inicio": "El día siguiente al de la publicación del extracto en el BOE",
+  "text_fin": "10 días hábiles contados a partir del día siguiente al de la publicación del extracto en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.118857",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 21 AYUDAS DESTINADAS AL INTERCAMBIO DE CONOCIMIENTOS Y ACTIVIDADES DE INFORMACIÓN"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-09T04:07:43.086Z"
+}

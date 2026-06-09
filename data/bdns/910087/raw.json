@@ -1,0 +1,88 @@
+{
+  "id": 1111648,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es",
+  "codigoBDNS": "910087",
+  "fechaRecepcion": "2026-06-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000000,
+  "mrr": false,
+  "descripcion": "Orden 2 de junio de 2026, de la Consejería de Educación, se convocan ayudas por utilización del comedor escolar, dirigidas al alumnado que curse enseñanzas de primer ciclo de infantil en los cursos adheridos a oferta gratuita de plazas. Curso 2025/2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de los hogares como productores de bienes y servicios para uso propio",
+      "codigo": "98"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden EDU/1859/2022, de 14 de diciembre, de bases reguladoras de ayudas de comedor escolar dirigidas al alumnado de primer ciclo de educación infantil en cursos gratuitos, en centros sostenidos con fondos públicos, privados o de titularidad de EELL",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2022/12/27/pdf/BOCYL-D-27122022-14.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "17/06/2026",
+  "textFin": "30/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1467986,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "8.1.3 Orden convocatoria ayudas comedor escolar para BDNS.pdf",
+      "long": 405788,
+      "datMod": "2026-06-02",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1467992,
+      "descripcion": "Corrección Errores Modificación Bases",
+      "nombreFic": "Corrección Errores Modificación Bases.pdf",
+      "long": 689062,
+      "datMod": "2026-06-02",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1467990,
+      "descripcion": "Modificación Bases Reguladoras",
+      "nombreFic": "Modificación Bases.pdf",
+      "long": 814775,
+      "datMod": "2026-06-02",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1467989,
+      "descripcion": "Bases Reguladoras",
+      "nombreFic": "Orden Bases.pdf",
+      "long": 865238,
+      "datMod": "2026-06-02",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

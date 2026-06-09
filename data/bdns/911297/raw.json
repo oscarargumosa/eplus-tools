@@ -1,0 +1,84 @@
+{
+  "id": 1112858,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ERANDIO",
+    "nivel3": "AYUNTAMIENTO DE ERANDIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911297",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "Decreto 1473/2026, de 25 de mayo,aprobar la convocatoria de subvenciones para la instalación de webs, imagen corporativa y rótulos en euskera en los comercios del municipio, para el año 2026.",
+  "descripcionLeng": "1473/2026 Dekretua, 2026ko maiatzaren 25ekoa,dirulaguntzen 2026ko deialdia onartzeko agindua eman du, Udalerriko merkataritzan euskarazko webguneak, irudi korporatiboa eta errotuluak instalatzeari dagokionez.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Decreto 1473/2026, de 25 de mayo,aprobar la convocatoria de subvenciones para la instalación de webs, imagen corporativa y rótulos en euskera en los comercios del municipio, para el año 2026.",
+  "urlBasesReguladoras": "https://www.erandio.eus/es-ES/Documents/Udala/dirulaguntzak/2026/Euskara%20Zerbitzua/2026%20dekretua%20errotulazioa.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-20",
+  "fechaFinSolicitud": "2026-09-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471153,
+      "descripcion": "EXTRACTO DEL DECRETO",
+      "nombreFic": "2026 errotulazioa_laburpena_elebi.docx",
+      "long": 22791,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471149,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026 dekretua errotulazioa.pdf",
+      "long": 127127,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471150,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026 dekretua errotulazioa.pdf",
+      "long": 127127,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

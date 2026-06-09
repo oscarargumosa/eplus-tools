@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "911295",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALBACETE / DIPUTACIÓN PROVINCIAL DE ALBACETE",
+  "nuts_codes": [
+    "ES421"
+  ],
+  "nuts_primary": "ES421",
+  "title": "CONVOCATORIA DE SUBVENCIONES PARA AYUDAS A LA INVESTIGACIÓN CIENTÍFICA “JUAN CARLOS IZPISÚA BELMONTE”, POR PARTE DE LOS SERVICIOS SANITARIOS Y SOCIALES DE LA EXCMA. DIPUTACIÓN PROVINCIAL DE ALBACETE, CORRESPONDIENTE AL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 145000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "www.dipualba.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/911295",
+  "documents": [
+    {
+      "label": "Informe de fiscalización",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.dipualba.es/subvenciones/convocatoria.aspx?id=3196",
+  "text_inicio": "20 días naturales a partir del día siguiente de la publicación en el BOP de Albacete",
+  "text_fin": "20 días naturales a partir del día siguiente de la publicación en el BOP de Albacete",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-09T04:07:43.475Z"
+}

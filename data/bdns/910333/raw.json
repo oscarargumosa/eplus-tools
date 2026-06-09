@@ -1,0 +1,68 @@
+{
+  "id": 1111894,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRELODONES",
+    "nivel3": "AYUNTAMIENTO DE TORRELODONES"
+  },
+  "sedeElectronica": "https://sede.torrelodones.es/info.0",
+  "codigoBDNS": "910333",
+  "fechaRecepcion": "2026-06-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 196600,
+  "mrr": false,
+  "descripcion": "ACUERDO JGL DEL 2 DE JUNIO DE 2026 POR LA QUE SE CONVOCAN AYUDAS SOCIALES 2026 (AYUDAS GASTOS DE COMEDOR - AYUDAS GASTOS ESCUELA INFANTIL- AYUDAS VIVIENDA HABITUAL - AYUDAS PARA TRATAMIENTOS A MENORES CON DISCAPACIDAD- AYUDAS POR NACIMIENYO Y/O ADOPCION)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE AYUDAS DE SERVICIOS SOCIALES 2026",
+  "urlBasesReguladoras": "www.bocm.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente de la publicación del extracto de las  bases en el Boletín Oficial de la Comunidad ",
+  "textFin": "20 días hábiles desde el día siguiente de la publicación del extracto de las bases en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1468711,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260602_Certificado_Certificado de acuerdos_CERTIFICADO 2026-0215 [Certificado de acuerdo].pdf",
+      "long": 604729,
+      "datMod": "2026-06-03",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

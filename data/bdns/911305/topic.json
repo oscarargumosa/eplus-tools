@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "911305",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "APROBANDO LAS BB.RR Y LA CONVOCATORIA DE SUBVENCIONES DEL ÁREA DE CONCERTACIÓN, “IMPULSO A LA COLABORACIÓN CON ASOCIACIONES, UNIONES,AGRUPACIONES Eª, SINDICATOS Y ENTIDADES PRIVADAS SIN ÁNIMO DE LUCRO,ASÍ COMO MMDES.PROV. DE SEVILLA, AÑO 2026-27.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 276000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/911305",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://portal.dipusevilla.es/vfirma/code/6h0mKO64cxfnFBV2yxXJqg%3D%3D",
+  "text_inicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BOP Sevilla",
+  "text_fin": "A los 20 días hábiles a contar desde el día siguiente al de la publicación BOP Sevilla",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-09T04:07:43.479Z"
+}

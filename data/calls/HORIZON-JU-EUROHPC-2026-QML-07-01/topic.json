@@ -55,6 +55,13 @@
       "is_downloadable": true
     },
     {
+      "section": "EuroHPC Joint Undertaking Work Programme",
+      "label": "Work Programme 2026",
+      "url": "https://www.eurohpc-ju.europa.eu/document/download/b9dc0409-bcea-474a-b09a-33a8b19ac44f_en?filename=EuroHPC%20JU%20GB%20Decision%2054.2025_%20Work%20Programme%202026.pdf",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
       "section": "Application and evaluation forms and model grant agreement (MGA):",
       "label": "Reference Documents page",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/reference-documents?programmePeriod=2021-2027&frameworkProgramme=43108390",
@@ -391,5 +398,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-08T04:02:02.977Z"
+  "fetchedAt": "2026-06-09T04:04:24.264Z"
 }

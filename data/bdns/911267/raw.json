@@ -1,0 +1,80 @@
+{
+  "id": 1112828,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORREFARRERA",
+    "nivel3": "AYUNTAMIENTO DE TORREFARRERA"
+  },
+  "sedeElectronica": "www.torrefarrera.cat",
+  "codigoBDNS": "911267",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 750,
+  "mrr": false,
+  "descripcion": "Bases y convoctoria del concurso popular de cazuelas de Torrefarrera 2026",
+  "descripcionLeng": "Bases i convocatòria del concurs popular de cassoles de Torrefarrera 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES513 - Lleida"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases y convoctoria del concurso popular de cazuelas de Torrefarrera 2026",
+  "urlBasesReguladoras": "https://www.torrefarrera.cat/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-28",
+  "fechaFinSolicitud": "2026-06-13",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471094,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases y convocatoria -concurs cassoles 2026- (1).pdf",
+      "long": 187921,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471098,
+      "descripcion": "Anunci aprovació bases i convocatòria del concurs popular de cassoles de Torrefarrera 2026",
+      "nombreFic": "Anunci aprovació Bases i convocatòria (3).pdf",
+      "long": 185182,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471096,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases i convocatòria concurs cassoles 2026 (1).pdf",
+      "long": 188007,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

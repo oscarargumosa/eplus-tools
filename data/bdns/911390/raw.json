@@ -1,0 +1,80 @@
+{
+  "id": 1112951,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTPEDOR",
+    "nivel3": "AYUNTAMIENTO DE SANTPEDOR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911390",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ESCOLARES MUNICIPALES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA AL ALUMNADO EN LOS NIVELES DE ENSEÑAMIENTO OBLIGATORIO Y SEGUNDO CICLO DE EDUCACIÓN INFANTIL ESCOLARIZADOS EN CENTROS EDUCATIVOS DE SANTPEDOR CURSO 26-27",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES ESPECIFICAS PARA LA CONCESIÓN DE AYUDAS ESCOLARES MUNICIPALES A ALUMNOS CON NECESIDADES SOCIOECONÓMICAS",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3679908/aprovacio-definitiva-de-la-modificacio-de-les-bases-especifiques-per-a-la-concessio-d-ajuts-escolars-municipals-a-alumnes-amb-necessitats-socioeconomiques-ajuntament-de-santpedor",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-08",
+  "fechaFinSolicitud": "2026-07-03",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471399,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA_CASTELLÀ.pdf",
+      "long": 663033,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471401,
+      "descripcion": "ACUERDO APROBACION CONVOCATORIA JGL",
+      "nombreFic": "ACORD_JGL.pdf",
+      "long": 284322,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471400,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIA_CATALA.pdf",
+      "long": 592637,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

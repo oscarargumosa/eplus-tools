@@ -1,0 +1,64 @@
+{
+  "id": 1112866,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SEVILLA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE SEVILLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911305",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 276000,
+  "mrr": false,
+  "descripcion": "APROBANDO LAS BB.RR Y LA CONVOCATORIA DE SUBVENCIONES DEL ÁREA DE CONCERTACIÓN, “IMPULSO A LA COLABORACIÓN CON ASOCIACIONES, UNIONES,AGRUPACIONES Eª, SINDICATOS Y ENTIDADES PRIVADAS SIN ÁNIMO DE LUCRO,ASÍ COMO MMDES.PROV. DE SEVILLA, AÑO 2026-27.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "APROBANDO LAS BB.RR Y LA CONVOCATORIA DE SUBVENCIONES DEL ÁREA DE CONCERTACIÓN, “IMPULSO A LA COLABORACIÓN CON ASOCIACIONES, UNIONES,AGRUPACIONES Eª, SINDICATOS Y ENTIDADES PRIVADAS SIN ÁNIMO DE LUCRO,ASÍ COMO MMDES.PROV. DE SEVILLA, AÑO 2026-27.",
+  "urlBasesReguladoras": "https://portal.dipusevilla.es/vfirma/code/6h0mKO64cxfnFBV2yxXJqg%3D%3D",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BOP Sevilla",
+  "textFin": "A los 20 días hábiles a contar desde el día siguiente al de la publicación BOP Sevilla",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471142,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Res. 3547-2026 BBRR y Convocatoria.pdf",
+      "long": 310538,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

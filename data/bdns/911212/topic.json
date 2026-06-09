@@ -1,0 +1,97 @@
+{
+  "source": "bdns",
+  "source_id": "911212",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE CASTILLA-LA MANCHA",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "Convocatoria de 6 becas de colaboración para la iniciación a la investigación para estudiantes de máster y de doctorado vinculados a grupos de investigación del Instituto de Biomedicina de la Universidad de Castilla-La Mancha. Curso Académico 2026-27",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-08",
+  "open_date": "2026-06-08",
+  "deadline": "2026-06-26",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 18455.28,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/911212",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-Supervisor-a",
+      "url": null
+    },
+    {
+      "label": "ANEXO VIII-Declaracion jurada benefic",
+      "url": null
+    },
+    {
+      "label": "ANEXO VII-Modelo renuncia",
+      "url": null
+    },
+    {
+      "label": "ANEXO IX-Masteres y Programas de Doctorado",
+      "url": null
+    },
+    {
+      "label": "ANEXO V-Curriculum solicitante",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI-Informe final",
+      "url": null
+    },
+    {
+      "label": "ANEXO III-modelo solicitud",
+      "url": null
+    },
+    {
+      "label": "ANEXO II-Planificación actividades",
+      "url": null
+    },
+    {
+      "label": "ANEXO I-Plan formación",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.uclm.es/centros-investigacion/InstitutodeBiomedicina/Convocatorias",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-09T04:07:43.444Z"
+}

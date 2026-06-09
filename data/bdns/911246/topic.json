@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "911246",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN / SECRETARÍA GENERAL DE PESCA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Orden por  la que  se  convoca, para  el  año  2026,  la  concesión de  subvenciones  al  fomento del asociacionismo a entidades asociativas representativas del sector pesquero.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-06-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 550000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://sede.mapa.gob.es/portal/site/seMAPA/procedimientos-intermedio?cross_search=theme_type&type_id=2&theme_id=12",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/911246",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo III orden",
+      "url": null
+    },
+    {
+      "label": "Anexos II orden",
+      "url": null
+    },
+    {
+      "label": "Anexos Orden",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10833",
+  "text_inicio": "Día siguiente publicación extracto en BOE",
+  "text_fin": "15 días hábiles tras inicio solicitud",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-09T04:07:43.460Z"
+}

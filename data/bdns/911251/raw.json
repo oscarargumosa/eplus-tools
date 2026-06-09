@@ -1,0 +1,72 @@
+{
+  "id": 1112812,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BELLVEI",
+    "nivel3": "AYUNTAMIENTO DE BELLVEI"
+  },
+  "sedeElectronica": "https://bellvei.eadministracio.cat/info.0",
+  "codigoBDNS": "911251",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3300,
+  "mrr": false,
+  "descripcion": "Convocatoria Subvenciones Transporte Escolar Escuela La Muntanyeta - Urb Baronia de Mar - Bellvei, Curs 2025/2026",
+  "descripcionLeng": "Convocatòria Subvencions Transport Escolar, Escola La Muntanyeta - Urb Baronia de Mar - Bellvei, Curs 2025/2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación primaria",
+      "codigo": "85.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las ayudas en el transporte escolar de la Urb. Baronia de Mar al Ceip La Munyanyeta de Bellvei",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/42909/modificacio-de-l-ordenanca-reguladora-de-subvencions-en-transport-escolar-text-aprovacio-definitiva-ajuntament-bellvei",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-14",
+  "textInicio": "dia siguiente de la publicación en el boletín oficial de la provincia de Tarragona",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1470992,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260603_Uns altres_Annex I Bases de Subvencions Transport Escolar Baronia Mar - Bellvei, Curs 2025_2026.pdf",
+      "long": 185062,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1470990,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases convocatoria transporte escolar baronia escuela bellvei.pdf",
+      "long": 98360,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

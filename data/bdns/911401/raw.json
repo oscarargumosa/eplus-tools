@@ -1,0 +1,88 @@
+{
+  "id": 1112962,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911401",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 761711.15,
+  "mrr": false,
+  "descripcion": "Resolución 03/06/2026 de la Conselleria de Educación, Cultura y Universidades por la que se convocan las subv. para el manten de los gabi psicop escolares dep de aytos, mancomunidades de municipios y entidades locales me",
+  "descripcionLeng": "Resolució 03/06/2026 Conselleria d'Educació,Cutura, Universitats i Ocupació per la qual se convoquen les subv. per al manteniment gabinets psicoped. escolars depend. de ajunt., mancom.de municipis i ent. locals menors Com. Valenciana exerc. 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden 45/2016 Conselleria de Educación, Investigación, Cultura y Deporte se establecen las bases reguladoras subvenciones mantenimiento gabinetes psicopedagógicos escolares dependientes ayuntamientos mancomunidades municipios y entidades local C.Valencia",
+  "urlBasesReguladoras": "http://www.dogv.gva.es/datos/2016/08/08/pdf/2016_6446.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a su publicación",
+  "textFin": "15 días hábiles desde el siguiente a su publicación.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471486,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución GABINETES PSICO DEFINITIVA.pdf",
+      "long": 424383,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471489,
+      "descripcion": "Modificacion bases 2018",
+      "nombreFic": "Orde de bases modificació 2018.pdf",
+      "long": 277642,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471488,
+      "descripcion": "Orden de bases 2016",
+      "nombreFic": "Orden bases.pdf",
+      "long": 355780,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    },
+    {
+      "id": 1471487,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resolució GABINETS PSICO DEFINITIVA_firmado.pdf",
+      "long": 506363,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
