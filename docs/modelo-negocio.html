@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E+ Tools · Modelo de Negocio</title>
+<style>
+  :root{
+    --azul:#1a4ed8; --azul-osc:#10307f; --oro:#c8911a; --oro-claro:#fff7e6;
+    --gris:#5b6472; --gris-cl:#f4f6fb; --linea:#e3e8f0; --verde:#1f9d63; --tinta:#16202e;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--tinta);background:#eef1f7;line-height:1.5;}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 22px 60px;}
+  header.hero{background:linear-gradient(120deg,var(--azul-osc),var(--azul));color:#fff;
+       border-radius:18px;padding:30px 34px;box-shadow:0 8px 26px rgba(16,48,127,.25);}
+  header.hero h1{margin:0 0 4px;font-size:28px;letter-spacing:-.5px;}
+  header.hero p{margin:0;opacity:.9;font-size:15px;}
+  header.hero .meta{margin-top:14px;font-size:12.5px;opacity:.8;}
+  h2{font-size:19px;margin:38px 0 14px;display:flex;align-items:center;gap:9px;
+     padding-bottom:8px;border-bottom:2px solid var(--linea);}
+  h2 .ico{font-size:21px;}
+  .sub{color:var(--gris);font-size:13px;margin:-6px 0 16px;}
+
+  /* PLANES */
+  .planes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .plan{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:20px 18px;
+        box-shadow:0 3px 10px rgba(20,32,46,.05);display:flex;flex-direction:column;}
+  .plan.elite{border:2px solid var(--oro);background:var(--oro-claro);position:relative;}
+  .plan.elite::after{content:"⭐ Top";position:absolute;top:-11px;right:14px;background:var(--oro);
+        color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;}
+  .plan .nom{font-size:20px;font-weight:800;letter-spacing:-.3px;}
+  .plan.plus .nom{color:var(--azul);} .plan.pro .nom{color:var(--azul-osc);} .plan.elite .nom{color:var(--oro);}
+  .plan .precio{font-size:30px;font-weight:800;margin:6px 0 2px;}
+  .plan .precio small{font-size:14px;font-weight:600;color:var(--gris);}
+  .plan ul{list-style:none;margin:14px 0 0;padding:0;font-size:13.5px;flex:1;}
+  .plan li{padding:6px 0 6px 22px;position:relative;border-top:1px dashed var(--linea);}
+  .plan li:first-child{border-top:none;}
+  .plan li::before{content:"✔";position:absolute;left:0;color:var(--verde);font-weight:700;}
+  .plan li.no::before{content:"✕";color:#c0392b;}
+
+  /* TABLAS */
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;
+        box-shadow:0 3px 10px rgba(20,32,46,.05);font-size:13.5px;}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--linea);}
+  th{background:var(--gris-cl);font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--gris);}
+  tr:last-child td{border-bottom:none;}
+  td .tag{font-weight:700;color:var(--azul);}
+  .precio-col{font-weight:800;white-space:nowrap;}
+
+  /* CARDS servicios */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .card{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--azul);
+        border-radius:10px;padding:14px 16px;box-shadow:0 3px 10px rgba(20,32,46,.05);}
+  .card.oro{border-left-color:var(--oro);}
+  .card h4{margin:0 0 4px;font-size:15px;}
+  .card .p{font-weight:800;color:var(--azul);font-size:15px;}
+  .card.oro .p{color:var(--oro);}
+  .card p{margin:6px 0 0;font-size:13px;color:var(--gris);}
+
+  /* calendario */
+  .cal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center;}
+  .cal .d{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:14px 8px;}
+  .cal .d b{display:block;color:var(--azul);font-size:13px;}
+  .cal .d span{font-size:14px;font-weight:700;}
+  .season{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
+  .season .s{background:var(--gris-cl);border-radius:10px;padding:12px 14px;font-size:13px;}
+  .season .s b{display:block;color:var(--azul-osc);margin-bottom:3px;}
+
+  .callout{background:var(--oro-claro);border:1px solid #f0d9a0;border-radius:12px;padding:16px 18px;font-size:13.5px;}
+  .callout b{color:var(--oro);}
+  .tbd{background:#fff4f4;border:1px solid #f3c9c9;border-radius:12px;padding:14px 18px;font-size:13.5px;}
+  .tbd b{color:#c0392b;}
+  .note{font-size:12px;color:var(--gris);margin-top:6px;}
+  footer{margin-top:40px;text-align:center;font-size:12px;color:var(--gris);}
+  @media(max-width:720px){.planes,.grid2,.cal,.season{grid-template-columns:1fr;}}
+  @media print{body{background:#fff;}.wrap{max-width:100%;}header.hero{box-shadow:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>E+ Tools · Modelo de Negocio</h1>
+    <p>Plataforma + agencia para escribir proyectos Erasmus+ y de gran presupuesto</p>
+    <div class="meta">Decisión cerrada · 4 de junio de 2026 · Ciclo anual <b>junio → junio</b></div>
+  </header>
+
+  <!-- PLANES -->
+  <h2><span class="ico">🗂️</span> 3 Planes (misma pantalla · anuales jun→jun)</h2>
+  <div class="planes">
+    <div class="plan plus">
+      <div class="nom">Plus</div>
+      <div class="precio">1.200€ <small>/año</small></div>
+      <ul>
+        <li>Formación (1 tipo a elegir)</li>
+        <li><b>Tú escribes 1 proyecto</b> (KA2 / KA3 / CB / Sport)</li>
+        <li>Escritura SaaS hasta <b>500.000€</b></li>
+        <li class="no">Asesoría mensual</li>
+        <li class="no">Gran presupuesto</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <div class="nom">Pro</div>
+      <div class="precio">4.000€ <small>/año</small></div>
+      <ul>
+        <li>Formación (los 4 tipos)</li>
+        <li><b>Tú escribes 4 proyectos</b> (KA2+KA3+CB+Sport)</li>
+        <li>Escritura SaaS hasta <b>500.000€</b></li>
+        <li class="no">Asesoría mensual</li>
+        <li class="no">Gran presupuesto</li>
+      </ul>
+    </div>
+    <div class="plan elite">
+      <div class="nom">Élite</div>
+      <div class="precio">15.000€ <small>/año</small></div>
+      <ul>
+        <li>Asesoría mensual (reunión ~1,5h)</li>
+        <li>Escritura SaaS <b>cualquier tamaño</b></li>
+        <li>Acceso gran presupuesto (Horizon/LIFE/COSME)</li>
+        <li><b>Entidad Socia</b> incluida</li>
+        <li>Invitación <b>gratis</b> al encuentro presencial</li>
+        <li class="no">NO incluye que escribamos por ti</li>
+      </ul>
+      <div class="note">Cupo inicial: <b>20 plazas</b> (=300.000€/año), ampliable.</div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <h2><span class="ico">🛠️</span> Servicios à la carte</h2>
+  <p class="sub">Fuera de la pantalla de planes. Cada uno con su tarifa. La escritura se cobra por UNA sola vía por trabajo.</p>
+  <div class="grid2">
+    <div class="card">
+      <h4>Escríbelo tú <span class="p">· hasta 0,5%</span></h4>
+      <p>Pay-as-you-go. Tú escribes con la plataforma. 0,5% es un máximo de referencia (baja en proyectos grandes, p.ej. 0,2% en uno de 4M€).</p>
+    </div>
+    <div class="card oro">
+      <h4>Llave en mano <span class="p">· 2–4%</span></h4>
+      <p>Lo escribimos nosotros (según tipo, socios y colaboración). Requiere filtro previo (formulario o consultoría) para no escribir proyectos perdedores.</p>
+    </div>
+    <div class="card">
+      <h4>Consultoría <span class="p">· 150€/h</span></h4>
+      <p>Asesoramiento puntual por horas.</p>
+    </div>
+    <div class="card oro">
+      <h4>Entidad Socia <span class="p">· 900€/año</span></h4>
+      <p>Te incluimos de socio en mín. <b>2 propuestas (&gt;120k€)</b> de cualquier tipo, o <b>devolución</b>. Garantía de inclusión, NO de aprobación. Cupo limitado. Incluida en Élite.</p>
+    </div>
+  </div>
+
+  <!-- GATING -->
+  <h2><span class="ico">🔒</span> Gating de escritura (por tamaño de proyecto)</h2>
+  <table>
+    <tr><th>Plan</th><th>Qué puede escribir en el SaaS</th></tr>
+    <tr><td class="tag">Plus / Pro</td><td>Solo proyectos <b>≤ 500.000€</b>. Para mayores → subir a Élite <b>o</b> pagar pay-as-you-go.</td></tr>
+    <tr><td class="tag">Élite</td><td><b>Cualquier proyecto, cualquier tamaño</b> (gran presupuesto: Horizon/LIFE/COSME/CERV…), quizá con descuento en tarifas.</td></tr>
+  </table>
+  <p class="note">⚠️ <b>Élite ≠ Entidad Socia.</b> Élite = derecho a ESCRIBIR/liderar proyectos grandes. Entidad Socia = ir de SOCIO en proyectos de otros (participación + visibilidad). No se solapan.</p>
+
+  <!-- ENCUENTRO -->
+  <h2><span class="ico">🤝</span> Encuentro presencial anual</h2>
+  <div class="callout">
+    Evento de trabajo conjunto de <b>4 días o una semana (lun–vie)</b>: se escriben proyectos y se generan
+    <b>consorcios de alto valor</b> in situ.<br>
+    · <b>Élite:</b> invitación <b>gratuita</b>. &nbsp; · <b>Plus/Pro/externos:</b> entrada de pago.<br>
+    · Época recomendada: <b>junio–julio</b> (antes de publicarse las calls) → la gente sale con consorcios formados e idea madura, lista para la temporada fuerte. Imán de conversión Plus/Pro → Élite.
+  </div>
+
+  <!-- CALENDARIO -->
+  <h2><span class="ico">📅</span> Calendario de formación (grupal · 1-a-muchos)</h2>
+  <div class="cal">
+    <div class="d"><b>Lunes</b><span>KA2</span></div>
+    <div class="d"><b>Martes</b><span>KA3</span></div>
+    <div class="d"><b>Miércoles</b><span>Capacity Building</span></div>
+    <div class="d"><b>Jueves</b><span>Sport</span></div>
+  </div>
+  <div class="season">
+    <div class="s"><b>Jun–Jul</b>Captación + formación de base (estrategia, ideas, socios). Élite a plena potencia + encuentro presencial.</div>
+    <div class="s"><b>Sep–Dic</b>Formación de temporada: escribir la call publicada en nov/dic.</div>
+    <div class="s"><b>Ene–Mar</b>Sprint de escritura hacia los deadlines de marzo.</div>
+  </div>
+
+  <!-- TBD -->
+  <h2><span class="ico">📌</span> Pendiente de definir</h2>
+  <div class="tbd">
+    <b>1.</b> % exacto del <b>descuento Élite</b> en las tarifas de escritura.<br>
+    <b>2.</b> Coste/condiciones finales de <b>Entidad Socia</b> más allá de la oferta inicial de 900€.
+  </div>
+
+  <footer>E+ Tools · Documento interno de modelo de negocio · Generado el 04/06/2026</footer>
+</div>
+</body>
+</html>

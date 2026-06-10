@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>E+ Tools · Modelo de Negocio</title>
+<style>
+  @page{size:A4 portrait;margin:7mm;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Segoe UI",Arial,sans-serif;color:#16202e;font-size:9px;line-height:1.32;}
+  :root{--azul:#1a4ed8;--osc:#10307f;--oro:#c8911a;--oroc:#fff7e6;--gris:#5b6472;--linea:#dfe5ef;--verde:#1f9d63;--gc:#f4f6fb;}
+  .hero{background:linear-gradient(120deg,#10307f,#1a4ed8);color:#fff;border-radius:10px;padding:9px 13px;display:flex;justify-content:space-between;align-items:center;}
+  .hero h1{font-size:16px;letter-spacing:-.3px;}
+  .hero p{font-size:9px;opacity:.9;}
+  .hero .meta{font-size:8.5px;opacity:.85;text-align:right;}
+  h2{font-size:10.5px;margin:9px 0 5px;padding-bottom:3px;border-bottom:1.5px solid var(--linea);display:flex;gap:5px;}
+  /* PLANES */
+  .planes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+  .plan{border:1px solid var(--linea);border-radius:8px;padding:8px 9px;}
+  .plan.elite{border:1.5px solid var(--oro);background:var(--oroc);}
+  .plan .nom{font-size:13px;font-weight:800;}
+  .plan.plus .nom{color:var(--azul);}.plan.pro .nom{color:var(--osc);}.plan.elite .nom{color:var(--oro);}
+  .plan .precio{font-size:16px;font-weight:800;margin:1px 0 4px;}
+  .plan .precio small{font-size:9px;color:var(--gris);font-weight:600;}
+  .plan ul{list-style:none;}
+  .plan li{padding:2px 0 2px 13px;position:relative;border-top:1px dashed var(--linea);font-size:8.5px;}
+  .plan li:first-child{border-top:none;}
+  .plan li::before{content:"✔";position:absolute;left:0;color:var(--verde);font-weight:700;}
+  .plan li.no::before{content:"✕";color:#c0392b;}
+  .plan .cupo{font-size:7.8px;color:var(--gris);margin-top:4px;}
+  /* SERVICIOS */
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .card{border:1px solid var(--linea);border-left:3px solid var(--azul);border-radius:7px;padding:7px 9px;}
+  .card.oro{border-left-color:var(--oro);}
+  .card h4{font-size:9.5px;}
+  .card .p{font-weight:800;color:var(--azul);}.card.oro .p{color:var(--oro);}
+  .card p{font-size:8px;color:var(--gris);margin-top:3px;}
+  /* TABLA gating */
+  table{width:100%;border-collapse:collapse;font-size:8.5px;border:1px solid var(--linea);border-radius:6px;overflow:hidden;}
+  th,td{padding:4px 8px;text-align:left;border-bottom:1px solid var(--linea);}
+  th{background:var(--gc);font-size:7.5px;text-transform:uppercase;letter-spacing:.3px;color:var(--gris);}
+  tr:last-child td{border-bottom:none;}
+  .tag{font-weight:800;color:var(--azul);}
+  .twocol{display:grid;grid-template-columns:1.15fr 1fr;gap:10px;align-items:start;}
+  .callout{background:var(--oroc);border:1px solid #f0d9a0;border-radius:7px;padding:7px 9px;font-size:8.3px;}
+  .callout b{color:var(--oro);}
+  .note{font-size:7.8px;color:var(--gris);margin-top:3px;}
+  /* CALENDARIO */
+  .cal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;text-align:center;}
+  .cal .d{border:1px solid var(--linea);border-radius:6px;padding:5px 3px;}
+  .cal .d b{display:block;color:var(--azul);font-size:8px;}
+  .cal .d span{font-size:8.5px;font-weight:700;}
+  .season{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:6px;}
+  .season .s{background:var(--gc);border-radius:6px;padding:5px 7px;font-size:7.8px;}
+  .season .s b{color:var(--osc);}
+  .tbd{background:#fff4f4;border:1px solid #f3c9c9;border-radius:7px;padding:6px 9px;font-size:8.3px;}
+  .tbd b{color:#c0392b;}
+  footer{margin-top:8px;text-align:center;font-size:7px;color:var(--gris);}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div><h1>E+ Tools · Modelo de Negocio</h1><p>Plataforma + agencia · proyectos Erasmus+ y de gran presupuesto</p></div>
+    <div class="meta">Decisión cerrada · 04/06/2026<br>Ciclo anual <b>junio → junio</b></div>
+  </div>
+
+  <h2>🗂️ 3 Planes · misma pantalla · anuales (jun→jun)</h2>
+  <div class="planes">
+    <div class="plan plus"><div class="nom">Plus</div><div class="precio">1.200€<small>/año</small></div>
+      <ul><li>Formación (1 tipo a elegir)</li><li><b>Tú escribes 1 proyecto</b> (KA2/KA3/CB/Sport)</li><li>Escritura SaaS hasta <b>500k€</b></li><li class="no">Asesoría mensual / gran presupuesto</li></ul></div>
+    <div class="plan pro"><div class="nom">Pro</div><div class="precio">4.000€<small>/año</small></div>
+      <ul><li>Formación (los 4 tipos)</li><li><b>Tú escribes 4 proyectos</b> (KA2+KA3+CB+Sport)</li><li>Escritura SaaS hasta <b>500k€</b></li><li class="no">Asesoría mensual / gran presupuesto</li></ul></div>
+    <div class="plan elite"><div class="nom">Élite ⭐</div><div class="precio">15.000€<small>/año</small></div>
+      <ul><li>Asesoría mensual (~1,5h)</li><li>Escritura SaaS <b>cualquier tamaño</b> (Horizon/LIFE/COSME)</li><li><b>Entidad Socia</b> incluida</li><li>Invitación <b>gratis</b> al encuentro</li><li class="no">No incluye que escribamos por ti</li></ul>
+      <div class="cupo">Cupo inicial: <b>20 plazas</b> (=300k€/año), ampliable.</div></div>
+  </div>
+
+  <h2>🛠️ Servicios à la carte · escritura cobrada por UNA sola vía por trabajo</h2>
+  <div class="grid4">
+    <div class="card"><h4>Escríbelo tú <span class="p">· ≤0,5%</span></h4><p>Pay-as-you-go. Tú escribes con la plataforma. Máx de referencia (baja en grandes, p.ej. 0,2% en 4M€).</p></div>
+    <div class="card oro"><h4>Llave en mano <span class="p">· 2–4%</span></h4><p>Lo escribimos nosotros. Filtro previo (formulario/consultoría) para no escribir perdedores.</p></div>
+    <div class="card"><h4>Consultoría <span class="p">· 150€/h</span></h4><p>Asesoramiento puntual por horas.</p></div>
+    <div class="card oro"><h4>Entidad Socia <span class="p">· 900€/año</span></h4><p>Socio en mín. 2 propuestas (&gt;120k€) o devolución. Inclusión, no aprobación. Incluida en Élite.</p></div>
+  </div>
+
+  <div class="twocol" style="margin-top:9px;">
+    <div>
+      <h2 style="margin-top:0;">🔒 Gating de escritura (por tamaño)</h2>
+      <table>
+        <tr><th>Plan</th><th>Qué puede escribir en el SaaS</th></tr>
+        <tr><td class="tag">Plus / Pro</td><td>Solo <b>≤ 500.000€</b>. Mayores → Élite o pay-as-you-go.</td></tr>
+        <tr><td class="tag">Élite</td><td><b>Cualquier tamaño</b> (gran presupuesto), quizá con descuento.</td></tr>
+      </table>
+      <p class="note">⚠️ <b>Élite ≠ Entidad Socia:</b> Élite = ESCRIBIR proyectos grandes. Entidad Socia = ir de SOCIO en proyectos de otros.</p>
+    </div>
+    <div>
+      <h2 style="margin-top:0;">🤝 Encuentro presencial anual</h2>
+      <div class="callout"><b>4 días / 1 semana (lun–vie)</b> de trabajo: escribir proyectos + montar <b>consorcios de alto valor</b>.<br>· Élite: <b>gratis</b>. · Plus/Pro/externos: de pago.<br>· Recomendado <b>jun–jul</b> (antes de las calls) → salen con consorcio formado. Imán de conversión a Élite.</div>
+    </div>
+  </div>
+
+  <h2>📅 Calendario de formación (grupal · 1-a-muchos)</h2>
+  <div class="cal">
+    <div class="d"><b>Lunes</b><span>KA2</span></div><div class="d"><b>Martes</b><span>KA3</span></div>
+    <div class="d"><b>Miércoles</b><span>Capacity Building</span></div><div class="d"><b>Jueves</b><span>Sport</span></div>
+  </div>
+  <div class="season">
+    <div class="s"><b>Jun–Jul:</b> captación + formación de base (estrategia/ideas/socios). Élite a tope + encuentro.</div>
+    <div class="s"><b>Sep–Dic:</b> formación de temporada (escribir la call publicada en nov/dic).</div>
+    <div class="s"><b>Ene–Mar:</b> sprint de escritura hacia los deadlines de marzo.</div>
+  </div>
+
+  <h2>📌 Pendiente de definir</h2>
+  <div class="tbd"><b>1.</b> % del descuento Élite en tarifas de escritura. &nbsp;&nbsp; <b>2.</b> Coste/condiciones finales de Entidad Socia más allá de los 900€.</div>
+
+  <footer>E+ Tools · Documento interno de modelo de negocio · 04/06/2026</footer>
+</body>
+</html>
