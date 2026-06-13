@@ -1,0 +1,88 @@
+{
+  "id": 1114154,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OLEIROS",
+    "nivel3": "AYUNTAMIENTO DE OLEIROS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912593",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "SUBVENCIÓN A CLUBS DEPORTIVOS DE OLEIROS PARA LA ADQUISICIÓN DE EQUIPAMENTO DEPORTIVO EN EL AÑO 2026",
+  "descripcionLeng": "SUBVENCIÓNS A CLUBS DEPORTIVOS DE OLEIROS PARA A ADQUISICIÓN DE EQUIPAMENTO DEPORTIVO NO ANO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DAS BASES DE SUBVENCIÓNS DO CONCELLO DE OLEIROS",
+  "urlBasesReguladoras": "https://bop.dicoruna.es/bopportal/publicado/2021/01/18/202 1_0000000196.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Ao día seguinte da publicación do extracto no BOP",
+  "textFin": "15 días hábiles desde o día seguinte a publicación do extracto no BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474682,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "04. Resolucion aprobacion convocatoria.pdf",
+      "long": 1402027,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474700,
+      "descripcion": "FORMULARIO 3.CERTIFICACIÓN DE GASTOS",
+      "nombreFic": "Formulario 3 certificación de gastos.pdf",
+      "long": 409012,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474699,
+      "descripcion": "FORMULARIO 2. XUSTIFICACIÓN",
+      "nombreFic": "Formulario 2_xustificación.pdf",
+      "long": 393521,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474694,
+      "descripcion": "FORMULARIO 1. SOLICITUDE",
+      "nombreFic": "Formulario 1_solicitude.pdf",
+      "long": 437851,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

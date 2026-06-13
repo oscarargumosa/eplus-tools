@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "912753",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COMARCA COMUNIDAD DE TERUEL / COMARCA DE COMUNIDAD DE TERUEL",
+  "nuts_codes": [
+    "ES242"
+  ],
+  "nuts_primary": "ES242",
+  "title": "CONVOCATORIA DE SUBVENCIONES PARA EL MANTENIMIENTO DE LA ESTRUCTURA COMERCIAL Y SERVICIOS BÁSICOS EN EL MEDIO RURAL DE LA COMARCA COMUNIDAD DE TERUEL DURANTE EL EJERCICIO 2026.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "86",
+      "descripcion": "Actividades sanitarias"
+    },
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "56",
+      "descripcion": "Servicios de comidas y bebidas"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    }
+  ],
+  "apply_url": "https://comarcateruel.sedelectronica.es/dossier.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912753",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "236ws.dpteruel.es/estatico/boletines/2025/30mayo.pdf",
+  "text_inicio": "Desde día siguiente de la publicación en BOPTE",
+  "text_fin": "15 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.078Z"
+}

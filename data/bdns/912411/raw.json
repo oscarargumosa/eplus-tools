@@ -1,0 +1,72 @@
+{
+  "id": 1113972,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CASTILLA-LA MANCHA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912411",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0.01,
+  "mrr": false,
+  "descripcion": "Convocatoria Erasmus+ KA131 de corta duración para la movilidad saliente de personal para realizar un programa intensivo combinado (BIP) donde la UCLM participa como institución socia 2026 – Fase 3",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Normativa específica del programa Erasmus+, normativa de movilidad internacional de la UCLM y bases reguladoras que forman parte del texto íntegro de la convocatoria.",
+  "urlBasesReguladoras": "https://www.uclm.es/global/promotores/organos-de-gobierno/vicerrectorado-de-politica-internacional-y-alianzas-globales/ori_publicaciones/2026-06-11-convocatoria-ka131-pbe-2026-f3",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-11",
+  "fechaFinSolicitud": "2026-06-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474284,
+      "descripcion": "Anexo I - Procedimiento de solicitud",
+      "nombreFic": "1222_PBE_Convocatoria_Anexo_I F3-2026.pdf",
+      "long": 697886,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474283,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1222_PBE_Convocatoria F3-2026.pdf",
+      "long": 287337,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,71 @@
+{
+  "id": 1114295,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
+    "nivel3": "CABILDO INSULAR DE GRAN CANARIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912734",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 130000,
+  "mrr": false,
+  "descripcion": "GC CONVOCATORIA DE SUBVENCIONES A LOS PRODUCTORES DEL SECTOR ORNAMENTAL DE GRAN CANARIA PARA EL AÑO 2026 DE LA CONSEJERÍA DE SECTOR PRIMARIO, SOBERANÍA ALIMENTARIA Y SEGURIDAD HÍDRICA DEL CABILDO DE GRAN CANARIA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas",
+      "codigo": "01"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL CABILDO DE GRAN CANARIA.",
+  "urlBasesReguladoras": "https://cabildogc.grancanaria.com/documents/10180/11297340/Ordenanza+General+de+Subvenciones+del+Cabildo+de+Gran+Canaria/33077d88-3822-4049-bca7-af8199d49ef4",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-18",
+  "fechaFinSolicitud": "2026-07-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Árboles y otras plantas vivos, bulbos, raíces y similares, flores cortadas y follaje ornamental (parte XIII)"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1475008,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONV ORNAMENTALES 2026 DEFINITIVA.pdf",
+      "long": 965594,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

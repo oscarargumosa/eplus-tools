@@ -1,0 +1,64 @@
+{
+  "id": 1114384,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912823",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Convocatoria subvenciones AMPAS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución de 25 de mayo de 2016, de la Consejería de Educación y Cultura, por la que se aprueban las bases reguladoras de la concesión de subvenciones a asociaciones, federaciones y confederaciones de madres y padres de alumnado del Principado de Asturia",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa-sumario?_pa_sede_bopa_web_portlet_SedeBopaSearchDateWeb_formDate=1658143956275&p_r_p_summaryDate=30%2F05%2F2016&p_r_p_summaryIsSearch=true&p_auth=",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": "Día siguiente a la publicación del extracto",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475284,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_Consejeria_Educacion_Firma_Consejero - 2026-06-11T082527.980.pdf",
+      "long": 343195,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

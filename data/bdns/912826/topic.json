@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "912826",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA / AYUNTAMIENTO DE CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Ayudas al alquiler para jóvenes (2026)",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": "2026-08-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 405000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912826",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://e-ajuntament.castello.es/dossierh.42?x=s6kjNAfV6t0mVjE1pEGRJl*wDd-pGS-NUORHwc4gmwpTDxrvXXQnxGv0GlXOW9bPyQBX4MZ8JpH0gFcbAta4L91Q24RD9TBtcLqXGBicALUJnlmcw12CNgSUgSYDvMqDCOQcytymRQP8Ov-De*AopX4g3QLrdsXdmI-7U5w2654",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP Castellón",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.113Z"
+}

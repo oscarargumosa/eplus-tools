@@ -1,0 +1,72 @@
+{
+  "id": 1112959,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MORATA DE TAJUÑA",
+    "nivel3": "AYUNTAMIENTO DE MORATA DE TAJUÑA"
+  },
+  "sedeElectronica": "https://ayuntamientodemorata.sedelectronica.es/",
+  "codigoBDNS": "911398",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 16000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de ayudas sociales otorgadas por el Ayuntamiento de Morata de Tajuña para la colaboración en el pago del Impuesto de bienes Inmuebles de naturaleza urbana de la vivienda habitual para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS AYUDAS OTORGADAS POR EL AYUNTAMIENTO DE MORATA DE TAJUÑA PARA LA COLABORACIÓN EN EL PAGO DEL IMPUESTO DE BIENES INMUEBLES DE NATURALEZA URBANA DE LA VIVIENDA HABITUAL",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2023/05/04/BOCM-20230504-81.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde publicación del extracto en BOCM",
+  "textFin": "45 días naturales después de la publicación del extracto en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471426,
+      "descripcion": "Solicitud Ayuda IBI 2026",
+      "nombreFic": "Solicitud Ayuda IBI 2026.pdf",
+      "long": 929299,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1471425,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA Ayudas IBI 2026.pdf",
+      "long": 296497,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

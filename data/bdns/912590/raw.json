@@ -1,0 +1,88 @@
+{
+  "id": 1114151,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE VALENCIA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE VALENCIA"
+  },
+  "sedeElectronica": "https://www.sede.dival.es/",
+  "codigoBDNS": "912590",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES SMART CITIES 2025 - IOM",
+  "descripcionLeng": "CONVOCATORIA SUBVENCIONES SMART CITIES 2025 - IOM",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "CONVOCATORIA SUBVENCIONES SMART CITIES 2025 - IOM",
+  "urlBasesReguladoras": "https://www.dival.es/sites/default/files/portal-de-transparencia/2024%2003%2022%20OGS.%20Consolidada.CAS_.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE D ELA FECHA DE PUBLICACION DEL EXTRACTO EN EL BOP",
+  "textFin": "15 DÍAS A CONTAR DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474739,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "cl_SERVICIOWEB_RLOPREVIAS.pdf",
+      "long": 11033,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474742,
+      "descripcion": " DVAPROD/2025 - Q/2025/251",
+      "nombreFic": "cl_SERVICIOWEB_RLOPREVIAS.pdf",
+      "long": 11033,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474741,
+      "descripcion": "Informe de fiscalización",
+      "nombreFic": "cl_documento.pdf",
+      "long": 8263,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474740,
+      "descripcion": "DECRETO",
+      "nombreFic": "documento (7).pdf",
+      "long": 57161,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

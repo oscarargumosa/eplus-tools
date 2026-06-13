@@ -1,0 +1,76 @@
+{
+  "id": 1114389,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PERELLÓ, EL, ENTIDAD LOCAL MENOR",
+    "nivel3": "PERELLÓ, EL, ENTIDAD LOCAL MENOR"
+  },
+  "sedeElectronica": "https://elperello.sedelectronica.es/",
+  "codigoBDNS": "912828",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "BASES CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES\n“EL PERELLÓ TE BECA 2026”",
+  "descripcionLeng": "BASES CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS\n“EL PERELLÓ ET BECA 2026”",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BASES EL PERELLÓ TE BECA. AYUDAS A ESTUDIANTES DE EL PERELLÓ",
+  "urlBasesReguladoras": "https://elperello.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en sede electrónica",
+  "textFin": "10 días naturales a partir de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475298,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES EL PERELLÓ ET BECA VALENCIÀ.pdf",
+      "long": 318054,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475297,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES EL PERELLÓ TE BECA CASTELLANO.pdf",
+      "long": 333135,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

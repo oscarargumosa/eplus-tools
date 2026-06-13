@@ -1,0 +1,76 @@
+{
+  "id": 1114379,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PERELLÓ, EL, ENTIDAD LOCAL MENOR",
+    "nivel3": "PERELLÓ, EL, ENTIDAD LOCAL MENOR"
+  },
+  "sedeElectronica": "https://elperello.sedelectronica.es/",
+  "codigoBDNS": "912818",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0,
+  "mrr": false,
+  "descripcion": "BASES Y CONVOCATORIA BECAS ESTUDIOS MUSICALES",
+  "descripcionLeng": "BASES I CONVOCATÒRIA BEQUES ESTUDIS MUSICALS",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BECAS ESTUDIOS MUSICALES",
+  "urlBasesReguladoras": "https://elperello.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "15 días hábiles a partir del siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475278,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES BECAS MÚSICA VALENCIANO.pdf",
+      "long": 257115,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475277,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES BECAS MÚSICA CASTELLANO.pdf",
+      "long": 398863,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1113968,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANISES",
+    "nivel3": "AYUNTAMIENTO DE MANISES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912407",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS AL TRANSPORTE PARA ESTUDIANTES\nUNIVERSITARIOS, DE ENSEÑANZAS ARTÍSTICAS SUPERIORES, FORMACIÓN\nPROFESIONAL BÁSICA Y CICLOS FORMATIVOS DE GRADO MEDIO Y SUPERIOR\n",
+  "descripcionLeng": "CONVOCATÒRIA D'AJUDES AL TRANSPORT PER A ESTUDIANTS\nUNIVERSITARIS, D'ENSENYANCES ARTÍSTIQUES SUPERIORS, FORMACIÓ\nPROFESSIONAL BÀSICA I CICLES FORMATIUS DE GRAU MITJÀ I SUPERIOR",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Plan Estratégico de Subvenciones 2024-2026 del Ayuntamiento de Manises",
+  "urlBasesReguladoras": "https://wwwmanises.es/gestion-presupuestaria/pagina/ordenanzas-subvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El plazo de presentación de solicitudes por la concesión de estas ayudas será de 10 días hábiles a\nc",
+  "textFin": "Trancurridos diez dias hábiles desde el día siguiente a la publicación en el BOPV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474271,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CERTI. AYUDA TRANSPORTE ESCOLAR 2025-2026 - SEFYCU 8179015.pdf",
+      "long": 340348,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1113973,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALDAIA",
+    "nivel3": "AYUNTAMIENTO DE ALDAIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912412",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 95000,
+  "mrr": false,
+  "descripcion": "Ayudas vehículos adaptados y elementos de transporte individual personas afectadas DANA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ayudas para vehículos adaptados o elementos de transporte individual de personas físicas con movilidad reducida afectadas por la DANA al amparo de la resolución de la Secretaría General del Real Patronato art. 51 del Real Decreto-Ley 8/2024 de 28 de novie",
+  "urlBasesReguladoras": "https://www.oficinavirtual.aldaia.es/portalCiudadano/sede/catalogoTramites.do?opcion=detalle&idApl=4&pes_cod=-2&ent_id=2&idioma=1",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-18",
+  "textInicio": "Al día siguiente de su publicación en BOP ",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474266,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO - 2026_2072 WORD.docx",
+      "long": 48248,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

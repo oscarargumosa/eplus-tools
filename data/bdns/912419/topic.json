@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "912419",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MADRID / ÁREA DE GOBIERNO DE POLÍTICAS DE VIVIENDA",
+  "nuts_codes": [
+    "ES300"
+  ],
+  "nuts_primary": "ES300",
+  "title": "Convocatoria pública de subvenciones con destino a actuaciones de rehabilitación de los edificios residenciales en los Barrios Poblado Dirigido Fuencarral-Santa Marta. Plan Transforma tu Barrio 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.2",
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción"
+    }
+  ],
+  "apply_url": "https://sede.madrid.es/portal/site/tramites/menuitem.c61bb691882ed9d32e202e2084f1a5a0/?vgnextoid=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextchannel=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912419",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2013/11/22/BOCM-20131122-34.PDF",
+  "text_inicio": "EL DIA SIGUIENTE A LA PUBLICACIÓN EN EL BOCM",
+  "text_fin": "A LOS CUATRO MESES DE SU PUBLICACIÓN",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:14.945Z"
+}

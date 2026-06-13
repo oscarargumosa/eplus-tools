@@ -1,0 +1,96 @@
+{
+  "id": 1114007,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OURENSE",
+    "nivel3": "CONSELLO MUNICIPAL DE DEPORTES"
+  },
+  "sedeElectronica": "https://deportesourense.sedelectronica.gal/info.0",
+  "codigoBDNS": "912446",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 640000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES EN MATERIA DEPORTIVA TEMPORADA 2025-2026",
+  "descripcionLeng": "CONVOCATORIA DE SUBVENCIÓNS EN MATERIA DEPORTIVA TEMPADA 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES113 - Ourense"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES AYUNTAMIENTO DE OURENSE",
+  "urlBasesReguladoras": "https://sede.ourense.gob.es/public/publications/list/municipalregulations/ORDE/details/50040757",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE CONVOCATORIA EN EL BOP",
+  "textFin": "LINEA 1 HASTA EL 02/11/2026, LINEAS 2 Y 3, A LOS 30 DÍAS NATURALES SIGUIENTES AL DE LA PUBLICACIÓN ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474349,
+      "descripcion": "ANEXOS 2026",
+      "nombreFic": "20250605_Outros_ANEXOS 2026.pdf",
+      "long": 910581,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474347,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260611_Certificado_CR 2026-06-11 APROBACIÓN CONVOCATORIA DE SUBVENCIÓNS EN MATERIA DEPORTIVA DO CMD PARA O 2026  EXP. 348-2026 - Galego.pdf",
+      "long": 370449,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474355,
+      "descripcion": "BASES GALEGO",
+      "nombreFic": "20250627_Outros_BOP Ourense número 122, Venres, 27 de xuño de 2025 - BASES SUBVENCIÓNS GALEGO.pdf",
+      "long": 355218,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474354,
+      "descripcion": "BASES CASTELLANO",
+      "nombreFic": "20250627_Outros_BOP Ourense número 122, Viernes, 27 de junio de 2025 - BASES SUBVENCIONES CASTELLANO.pdf",
+      "long": 388748,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474346,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260612_Certificado_CR 2026-06-11 APROBACIÓN CONVOCATORIA DE SUBVENCIÓNES EN MATERIA DEPORTIVA DEL CMD PARA EL 2026  EXP. 348-2026 - Castellano.pdf",
+      "long": 246622,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

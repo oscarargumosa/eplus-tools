@@ -1,0 +1,96 @@
+{
+  "id": 1114058,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "AGENCIA GALLEGA DE DESARROLLO RURAL (AGADER)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912497",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 51000,
+  "mrr": false,
+  "descripcion": "Resolución pola que se aproban as bases reguladoras dos premios ao desenvolvemento rural de Galicia e se convoca a décimo sétima edición ",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    },
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    },
+    {
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas",
+      "codigo": "01"
+    },
+    {
+      "descripcion": "Industria alimentaria",
+      "codigo": "10"
+    },
+    {
+      "descripcion": "Otras actividades sanitarias",
+      "codigo": "86.9"
+    },
+    {
+      "descripcion": "Silvicultura y explotación forestal",
+      "codigo": "02"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Resolución pola que se aproban as bases reguladoras dos premios ao desenvolvemento rural de Galicia e se convoca a décimo sétima edición (Reglamento (UE) núm. 2023/2831 de la Comisión, de 13 de diciembre de 2023)",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-17",
+  "fechaFinSolicitud": "2026-07-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474500,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "6 BasesPremios2026_CAS_20260612_103909.pdf",
+      "long": 237015,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

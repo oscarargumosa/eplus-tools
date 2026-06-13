@@ -1,0 +1,72 @@
+{
+  "id": 1114101,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIPOLLET",
+    "nivel3": "AYUNTAMIENTO DE RIPOLLET"
+  },
+  "sedeElectronica": "https://www.ripollet.cat",
+  "codigoBDNS": "912540",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "Convocatoria de las subvenciones 2026 en régimen de concurrencia competitiva para el pago de cuotas hipotecarias del año 2025",
+  "descripcionLeng": "Convocatòria de les subvencions 2026 en règim de concurrència competitiva per al pagament de quotes hipotecàries de l'any 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Bases reguladoras para la convocatoria de subvenciones 2026 en régimen de concurrencia competitiva para el pago de cuotas hipotecarias del año 2025",
+  "urlBasesReguladoras": "https://seu.ripollet.cat/absis/idi/arx/idiarxabsaweb/asp/verificadorfirma.asp?nodeabsisini=002&codigoVerificacion=bfd745ea5a1043a49ab596e481d293ae001",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia siguiente de la publicación en el BOPB",
+  "textFin": "20 dias hábiles desde el día siguiente de la publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474626,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Edicte convocatòria quotes hipotecàries.pdf",
+      "long": 388561,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474625,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Edicto convocatoria cuotas hipotecarias.pdf",
+      "long": 334115,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

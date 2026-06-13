@@ -1,0 +1,76 @@
+{
+  "id": 1114314,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "COMARCA COMUNIDAD DE TERUEL",
+    "nivel3": "COMARCA DE COMUNIDAD DE TERUEL"
+  },
+  "sedeElectronica": "https://comarcateruel.sedelectronica.es/dossier.0",
+  "codigoBDNS": "912753",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA EL MANTENIMIENTO DE LA ESTRUCTURA COMERCIAL Y SERVICIOS BÁSICOS EN EL MEDIO RURAL DE LA COMARCA COMUNIDAD DE TERUEL DURANTE EL EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades sanitarias",
+      "codigo": "86"
+    },
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "Servicios de comidas y bebidas",
+      "codigo": "56"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES DE SUBVENCIONES PARA EL MANTENIMIENTO DE LA ESTRUCTURA COMERCIAL Y SERVICIOS BÁSICOS EN EL MEDIO RURAL DE LA COMARCA COMUNIDAD DE TERUEL DURANTE EL EJERCICIO 2026.",
+  "urlBasesReguladoras": "236ws.dpteruel.es/estatico/boletines/2025/30mayo.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde día siguiente de la publicación en BOPTE",
+  "textFin": "15 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475022,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO CONVOCATORIA DE SUBVENCIONES ESTRUCTURA COMERCIAL Y SERVICIOS BASICOS.pdf",
+      "long": 951358,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

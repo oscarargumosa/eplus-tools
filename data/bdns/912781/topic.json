@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "912781",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / CONSEJERÍA DE ECONOMÍA, INDUSTRIA, COMERCIO Y AUTÓNOMOS",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "Transformación Sector Comercial - Canarias destino Comercial Inteligente 2026-2027",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 494775,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.1",
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales"
+    },
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/10845",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912781",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/10845",
+  "text_inicio": "El plazo de presentación de solicitudes empieza el día siguiente a la publicación del extracto",
+  "text_fin": "El plazo de presentación de solicitudes finaliza transcurrido un mes desde la fecha de inicio",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.093Z"
+}

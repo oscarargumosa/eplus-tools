@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "912776",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DOÑA MENCÍA / AYUNTAMIENTO DE DOÑA MENCÍA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "Convocatoria de Subvenciones Municipales con destino a actividades deportivas (Ejercicio 2026)",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912776",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Anexo V",
+      "url": null
+    },
+    {
+      "label": "Anexo VIII",
+      "url": null
+    },
+    {
+      "label": "Anexo VI",
+      "url": null
+    },
+    {
+      "label": "Anexo VII",
+      "url": null
+    },
+    {
+      "label": "Anexo IX",
+      "url": null
+    },
+    {
+      "label": "Anexo I a III",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.eprinsa.es/dmencia/tramites",
+  "text_inicio": "Día siguiente publicación anuncio en Boletín Oficial de la Provincia (BOP)",
+  "text_fin": "Diez días hábiles desde la publicación del anuncio en el Boletín Oficial de la Provincia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.085Z"
+}

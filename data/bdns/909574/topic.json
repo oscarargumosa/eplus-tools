@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "909574",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD COMPLUTENSE DE MADRID",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "RESOLUCIÓN POR LA QUE SE CONVOCAN AYUDAS DE MOVILIDAD INTERNACIONAL AL PROGRAMA ERASMUS+ KA131 CURSO 2025/2026 PARA ESTUDIANTES DE LA UNIVERSIDAD COMPLUTENSE DE MADRID",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 459766.68,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/909574",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bouc.ucm.es/pdf/5213.pdf",
+  "text_inicio": "10 días hábiles desde el día siguiente a la publicación en el BOCM",
+  "text_fin": "transcurridos los 10 días hábiles tras la publicación en el BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:13.853Z"
+}

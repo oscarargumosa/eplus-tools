@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "912593",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OLEIROS / AYUNTAMIENTO DE OLEIROS",
+  "nuts_codes": [
+    "ES111"
+  ],
+  "nuts_primary": "ES111",
+  "title": "SUBVENCIÓN A CLUBS DEPORTIVOS DE OLEIROS PARA LA ADQUISICIÓN DE EQUIPAMENTO DEPORTIVO EN EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912593",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "FORMULARIO 3.CERTIFICACIÓN DE GASTOS",
+      "url": null
+    },
+    {
+      "label": "FORMULARIO 2. XUSTIFICACIÓN",
+      "url": null
+    },
+    {
+      "label": "FORMULARIO 1. SOLICITUDE",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dicoruna.es/bopportal/publicado/2021/01/18/202 1_0000000196.pdf",
+  "text_inicio": "Ao día seguinte da publicación do extracto no BOP",
+  "text_fin": "15 días hábiles desde o día seguinte a publicación do extracto no BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.016Z"
+}

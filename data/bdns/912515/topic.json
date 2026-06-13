@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "912515",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ELORRIO / AYUNTAMIENTO DE ELORRIO",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Subvención del Ayuntamiento de Elorrio para la subvención por el consumo de energía eléctrica del alumbrado público en zonas rurales del año 2025.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912515",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Alta de terceras partes",
+      "url": null
+    },
+    {
+      "label": "Modelo de solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.elorrio.eus/es-ES/Ayuntamiento/Secretaria/Subvenciones/Paginas/default.aspx",
+  "text_inicio": "A partir del día siguiente de la publicación del anuncio en el Boletín Oficial de Bizkaia (BOB).",
+  "text_fin": "Hasta el 18 de septiembre de 2026, inclusive",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:14.973Z"
+}

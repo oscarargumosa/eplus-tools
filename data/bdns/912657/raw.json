@@ -1,0 +1,104 @@
+{
+  "id": 1114218,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLANERA",
+    "nivel3": "AYUNTAMIENTO DE LLANERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912657",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "Extracto anuncio subvenciones a asociaciones de madres y padres de alumnos/as del concejo de Llanera año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones a asociaciones de madres y padres de alumnos/as del concejo de Llanera año 2026",
+  "urlBasesReguladoras": "https://sede.llanera.es/firma/documento.aspx?csv=WFCAACWQHXK24KRNHF7Z&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOPA",
+  "textFin": "30 días hábiles a partir del día siguiente a la publicación del extracto en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474860,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado JGL Subvención AMPAS.pdf",
+      "long": 466879,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474863,
+      "descripcion": "Bases",
+      "nombreFic": "Bases reguladoras.pdf",
+      "long": 488775,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474872,
+      "descripcion": "Cuenta justificativa",
+      "nombreFic": "Anexo IV - Cuenta justificativa.pdf",
+      "long": 96842,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474868,
+      "descripcion": "Declaración responsable",
+      "nombreFic": "Anexo II Declaración responsable.pdf",
+      "long": 115690,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474870,
+      "descripcion": "Ficha de acreedor",
+      "nombreFic": "Anexo III - Ficha de acreedor.pdf",
+      "long": 115654,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474865,
+      "descripcion": "Solicitud",
+      "nombreFic": "Anexo I - Solicitud.pdf",
+      "long": 175234,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

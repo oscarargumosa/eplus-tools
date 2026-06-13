@@ -1,0 +1,79 @@
+{
+  "source": "bdns",
+  "source_id": "912809",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PAÍS VASCO / INSTITUTO VASCO ETXEPARE EUSKAL INSTITUTUA / BASQUE INSTITUTE",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "TRADUCCIÓN LITERARIA 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": "2026-06-04",
+  "deadline": "2026-07-03",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 63000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    }
+  ],
+  "apply_url": "https://www.euskadi.eus/ayuda_subvencion/2026/at-_traduccion_literaria/web01-tramite/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912809",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=dc2XhQn2lP0rdp1cBcO4Es3euzuHTI4T76sLUI0CCAWnOrMtslIv!-1473578910!1280457137?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026002383",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 214525,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=dc2XhQn2lP0rdp1cBcO4Es3euzuHTI4T76sLUI0CCAWnOrMtslIv!-1473578910!1280457137?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026002383",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-06-03"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:15.106Z"
+}

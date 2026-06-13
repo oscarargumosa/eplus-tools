@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "912445",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / POBLA DE VALLBONA, LA / AYUNTAMIENTO DE POBLA DE VALLBONA, LA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria subvenciones concurrencia competitiva destinadas a entidades sin ánimo de lucro para desarrollar proyectos y actividades sociales de dependencia y diversidad funcional, ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-12",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2794.41,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.1",
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad"
+    }
+  ],
+  "apply_url": "https://seu.lapobladevallbona.es/sta/CarpetaPublic/?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912445",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lapobladevallbona.es/fileadmin/user_upload/ordenances/castella_ordenances/cast_ordenanzas_generales_y_reglamentos/ordenanza_subvenciones_y_premios_firmado_castellano.pdf",
+  "text_inicio": "Será de un mes, contado a partir del día siguiente al de la publicación en BOP de Valencia",
+  "text_fin": "Será de un mes, contado a partir del día siguiente al de la publicación en BOP de Valencia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-13T04:08:14.952Z"
+}

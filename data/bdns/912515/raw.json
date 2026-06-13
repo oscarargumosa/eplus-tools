@@ -1,0 +1,96 @@
+{
+  "id": 1114076,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ELORRIO",
+    "nivel3": "AYUNTAMIENTO DE ELORRIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912515",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Subvención del Ayuntamiento de Elorrio para la subvención por el consumo de energía eléctrica del alumbrado público en zonas rurales del año 2025.",
+  "descripcionLeng": "Elorrioko landa-eremuetan argiteria publikoan energia elektrikoa kontsumitzeagatiko udal-dirulaguntza. 2025. urtea. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ordenanza General Municipal de Subvenciones",
+  "urlBasesReguladoras": "https://www.elorrio.eus/es-ES/Ayuntamiento/Secretaria/Subvenciones/Paginas/default.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación del anuncio en el Boletín Oficial de Bizkaia (BOB).",
+  "textFin": "Hasta el 18 de septiembre de 2026, inclusive",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474533,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "08 Iragarkia BAO.pdf",
+      "long": 731549,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474534,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "08 Iragarkia BAO.pdf",
+      "long": 731549,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474539,
+      "descripcion": "Declaración responsable",
+      "nombreFic": "04 Eranskina III.pdf",
+      "long": 287921,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474536,
+      "descripcion": "Alta de terceras partes",
+      "nombreFic": "03 Eranskina II.pdf",
+      "long": 342113,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474535,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "02 Eranskina I.pdf",
+      "long": 472429,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

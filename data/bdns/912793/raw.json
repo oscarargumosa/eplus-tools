@@ -1,0 +1,112 @@
+{
+  "id": 1114354,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DOÑA MENCÍA",
+    "nivel3": "AYUNTAMIENTO DE DOÑA MENCÍA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912793",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones municipales con destino a actividades de igualdad ( Ejercicio 2026)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones municipales con destino a actividades de igualdad",
+  "urlBasesReguladoras": "https://sede.eprinsa.es/dmencia/tramites",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente publicación anuncio en Boletín Oficial de la Provincia (BOP)",
+  "textFin": "Diez días hábiles desde la publicación del anuncio en el Boletín Oficial de la Provincia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475190,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Subvenciones.pdf",
+      "long": 217204,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475192,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Extracto Igualdad.pdf",
+      "long": 138323,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475195,
+      "descripcion": "Anexos I a III",
+      "nombreFic": "Anexo I-III.pdf",
+      "long": 1311199,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475199,
+      "descripcion": "Anexo IX",
+      "nombreFic": "Anexo IX.pdf",
+      "long": 1304240,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475197,
+      "descripcion": "Anexo VII",
+      "nombreFic": "Anexo VII.pdf",
+      "long": 1435354,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475198,
+      "descripcion": "Anexo VIII",
+      "nombreFic": "Anexo VII.pdf",
+      "long": 1435354,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1475196,
+      "descripcion": "Anexo IV",
+      "nombreFic": "Anexo IV (sólo para líneas de Cultura, Juventud, Igualdad y Bienestar Social).pdf",
+      "long": 1173953,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

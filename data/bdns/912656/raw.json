@@ -1,0 +1,72 @@
+{
+  "id": 1114217,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCÁZARES, LOS",
+    "nivel3": "AYUNTAMIENTO DE ALCÁZARES, LOS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912656",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIÓN A DEPORTISTAS INDIVIDUALES DEL MUNICIPIO DE LOS ALCÁZARES AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL REGULADORA DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://losalcazares.es/wp-content/uploads/2025/11/General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a su publicación en el B.O.R.M.",
+  "textFin": "Quince días naturales a contar desde el día siguiente a su publicación en el B.O.R.M.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474858,
+      "descripcion": "Certificado de Acuerdo de la Junta de Gobierno Local",
+      "nombreFic": "30902_CertificadoJGL_56193_258211_18.pdf",
+      "long": 169477,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474856,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2._CONVOCATORIA_CONCESION_DE_SUBVENCIONES_A_DEPORTISTAS_INDIVIDUALES_DEL_MUNICIPIO_DE_LOS_ALCAZARES_84752_258211_9.pdf",
+      "long": 171584,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

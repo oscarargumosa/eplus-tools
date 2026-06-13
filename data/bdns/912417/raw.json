@@ -1,0 +1,95 @@
+{
+  "id": 1113978,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE HACIENDA Y FINANCIACIÓN"
+  },
+  "sedeElectronica": "https://sede.gva.es",
+  "codigoBDNS": "912417",
+  "fechaRecepcion": "2026-06-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15768.84,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de 11 de junio de 2026, de la Vicepresidencia Segunda y Conselleria de Presidencia, por la que se convocan dos becas en la Dirección General de Fondos Europeos, durante un periodo de doce meses.",
+  "descripcionLeng": "RESOLUCIÓ d'11 de juny de 2026, de la Vicepresidència Segona i Conselleria de Presidència, por la qual es convoquen dos beques en la Direcció General de Fons Europeus, durant un periode de dotze mesos.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "DECRETO 20/2024, de 9 de septiembre, por el cual se establecen las bases reguladoras para la concesión de becas para la realización de prácticas profesionales en dependencias de órganos superiores y de centros directivos de Presidencia Generalitat",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/eli/es-vc/d/2024/09/09/20/dof/spa/html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-01",
+  "fechaFinSolicitud": "2026-07-20",
+  "textInicio": "01/07/2026",
+  "textFin": "20/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    },
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1474849,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA DOS BECAS DGFFEE 2026 PRESIDENCIA_CAS firmada.pdf",
+      "long": 512750,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474852,
+      "descripcion": "EXTRACTE",
+      "nombreFic": "EXTRACTE EN VAL.docx",
+      "long": 16059,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474851,
+      "descripcion": "EXTRACTO",
+      "nombreFic": "EXTRACTO EN CAS.docx",
+      "long": 15666,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    },
+    {
+      "id": 1474850,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIA DOS BEQUES DGFFEE 2026 PRESIDENCIA_VAL.pdf",
+      "long": 417976,
+      "datMod": "2026-06-12",
+      "datPublicacion": "2026-06-12"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
