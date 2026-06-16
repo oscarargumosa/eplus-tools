@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "913139",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / AGENCIA DE CIENCIA, COMPETITIVIDAD EMPRESARIAL E INNOVACIÓN",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Resolución de 12/06/2026 de la Agencia de Ciencia, Competitividad Empresarial e Innovación Asturiana, de Convocatoria de ayudas Margarita Salas Postdoctoral de incorporación investigador doctor y formación de doctores en centros de fuera de Asturias",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 800000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "http://www.idepa.es/registro",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913139",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2024/07/10/2024-05987.pdf",
+  "text_inicio": "Día natural siguiente a la publicación del extracto en el BOPA",
+  "text_fin": "A las 14:00 horas del día 31/07/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.264Z"
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1114659,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GETAFE",
+    "nivel3": "AYUNTAMIENTO DE GETAFE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913098",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1450000,
+  "mrr": false,
+  "descripcion": "Ayudas de apoyo escolar, destinadas a familias con alumnos y alumnas escolarizadas en centros educativos sostenidos con fondos públicos curso 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES300 - Madrid"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE CONCESIÓN DE SUBVENCIONES",
+  "urlBasesReguladoras": "http://www.bocm.es/boletin/CM_Orden_BOCM/2013/05/13/BOCM-20130513-55.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación de las bases en el BOCM",
+  "textFin": "20 días hábiles desde el siguiente a la publicación de las Bases en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476033,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES_AYUDAS_APOYO_ESCOLAR_2026_2027.pdf",
+      "long": 995180,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

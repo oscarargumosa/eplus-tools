@@ -1,0 +1,86 @@
+{
+  "source": "bdns",
+  "source_id": "912021",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE LEÓN / DIPUTACIÓN PROVINCIAL DE LEÓN",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "SUBVENCIONES A ASOCIACIONES JUVENILES",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 19000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.2",
+      "descripcion": "Otras actividades recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912021",
+  "documents": [
+    {
+      "label": "Anexo III. Proyecto descriptivo de la actuación solicitada",
+      "url": null
+    },
+    {
+      "label": "Anexo V. Memoria descriptiva de la actuación subvencionada",
+      "url": null
+    },
+    {
+      "label": "Anexo II. Estructura asociativa de las entidades juveniles solicitantes",
+      "url": null
+    },
+    {
+      "label": "Anexo VI. Liquidación de gastos de combustible e indemnizaciones por desplazamiento",
+      "url": null
+    },
+    {
+      "label": "Anexo IV. Memoria económica cuenta justificativa",
+      "url": null
+    },
+    {
+      "label": "Anexo I. Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE LEÓN",
+  "text_fin": "20 DÍAS HÁBILES",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:32.888Z"
+}

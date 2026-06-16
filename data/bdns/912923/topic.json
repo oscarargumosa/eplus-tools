@@ -1,0 +1,110 @@
+{
+  "source": "bdns",
+  "source_id": "912923",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE LEÓN / DIPUTACIÓN PROVINCIAL DE LEÓN",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "FOMENTO DE ACTIVIDADES FÍSICO DEPORTIVAS 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 180000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912923",
+  "documents": [
+    {
+      "label": "Anexo X. Gastos de Combustible",
+      "url": null
+    },
+    {
+      "label": "Anexo IX. Gastos de Viaje",
+      "url": null
+    },
+    {
+      "label": "Anexo V Deportistas. Justificación. Beneficiarios Tipo C",
+      "url": null
+    },
+    {
+      "label": "Anexo A. Proyecto. Beneficiarios Tipo A",
+      "url": null
+    },
+    {
+      "label": "Anexo V BIS. Justificación. Beneficiarios Tipo A",
+      "url": null
+    },
+    {
+      "label": "Anexo I. Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo XI. Gastos de Manutención y Alojamiento",
+      "url": null
+    },
+    {
+      "label": "Anexo II. Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo V. Justificación. Beneficiarios Tipo B",
+      "url": null
+    },
+    {
+      "label": "Anexo C.Proyecto. Beneficiarios Tipo C",
+      "url": null
+    },
+    {
+      "label": "Anexo B. Proyecto. Beneficiarios Tipo B",
+      "url": null
+    },
+    {
+      "label": "Anexo III. Solicitud de Abono",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "DÍA SIGUIENTE PUBLICACIÓN BOP",
+  "text_fin": "20 DÍAS HÁBILES PUBLICACIÓN BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.216Z"
+}

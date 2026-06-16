@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "912918",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CÓRDOBA / INSTITUTO PROVINCIAL DE DESARROLLO ECONOMICO",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "CONVOCATORIA SUBVENCIONES PARA EL MANTENIMIENTO Y CONSOLIDACION DE PROYECTOS EMPRESARIALES DEL SECTOR DE LA MODA DE LA PROVINCIA DE CORDOBA \"CORDOBADMODA\"",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "14.1",
+      "descripcion": "Confección de prendas de vestir de punto"
+    },
+    {
+      "codigo": "32.1",
+      "descripcion": "Fabricación de artículos de joyería, bisutería y similares"
+    },
+    {
+      "codigo": "15.2",
+      "descripcion": "Fabricación de calzado"
+    }
+  ],
+  "apply_url": "https://sede.eprinsa.es/iprodeco/tramites",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912918",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANEXO V DESISTIMIENTO DE LA SOLICITUD/RENUNCIA A LA SUBVENCION PROPUESTA O CONCEDIDA Y DEVOLUCION VOLUNTARIA, EN SU CAS",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV RELACIONA CLASIFICADA DE GASTOS E INGRESOS",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.eprinsa.es/iprodeco/tablon-de-edictos",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP de Córdoba.",
+  "text_fin": "15 días hábiles a partir del día siguiente al de la publicación del extracto de la Convocatoria en e",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.212Z"
+}

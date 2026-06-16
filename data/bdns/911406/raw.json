@@ -1,0 +1,84 @@
+{
+  "id": 1112967,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ERANDIO",
+    "nivel3": "AYUNTAMIENTO DE ERANDIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "911406",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 1332/2026 por el que se aprueba la convocatoria 2026 de concesión de subvenciones del Área de Deportes del Ayuntamiento de Erandio, destinadas a deportistas individuales de rendimiento mediante concurrencia competitiva.",
+  "descripcionLeng": "Alkatetzaren 1332/2026 Dekretua  horren bidez, Erandioko Udaleko Kirol Arloaren dirulaguntzak emateko 2026ko deialdia onartu da, errendimenduko banakako kirolariei zuzenduta, norgehiagoka bidez.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Decreto de Alcaldía 1332/2026 por el que se aprueba la convocatoria 2026 de concesión de subvenciones del Área de Deportes del Ayuntamiento de Erandio, destinadas a deportistas individuales de rendimiento mediante concurrencia competitiva.",
+  "urlBasesReguladoras": "https://www.erandio.eus/es-ES/Documents/Udala/dirulaguntzak/2026/Kirolak/902-Decreto%20Bases%20Espec%C3%ADficas%202026%20dialdia%20deportistas%20individuales%20ELEBITA%20Sin_.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Un mes desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Bizkaia.",
+  "textFin": "Un mes desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de Bizkaia.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1471571,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Errendimendu kirolariak oinarriak 2026 cast.pdf",
+      "long": 140069,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-15"
+    },
+    {
+      "id": 1471573,
+      "descripcion": "DECRETO",
+      "nombreFic": "902-Decreto Bases Específicas 2026 dialdia deportistas individuales ELEBITA Sin_.pdf",
+      "long": 519799,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-15"
+    },
+    {
+      "id": 1471572,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Errendimendu kirolariak oinarriak 2026 eusk.pdf",
+      "long": 138162,
+      "datMod": "2026-06-08",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

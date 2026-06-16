@@ -1,0 +1,72 @@
+{
+  "id": 1114544,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "UTEBO",
+    "nivel3": "AYUNTAMIENTO DE UTEBO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912983",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Ayudas a la accesibilidad  en elementos comunes de edificios, año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES243 - Zaragoza"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza General por la que se aprueban las bases reguladoras para la concesión de subvenciones del Ayuntamiento de Utebo",
+  "urlBasesReguladoras": "http://bop.dpz.es/BOPZ",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la  publicación del extracto de la convocatoria en el BOPZ",
+  "textFin": "20 días desde el día siguiente a la publicación del extracto de la convocatoria en el BOPZ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475728,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO DE ALCALDIA 2026-1320 - Ayudas a la accesibilidad en elementos comunes de edficios.pdf",
+      "long": 1462298,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    },
+    {
+      "id": 1475869,
+      "descripcion": "Extracto Resolución",
+      "nombreFic": "EXTRACTO BDNS CONVOCATORIA AYUDAS A LA ACCESIBILIDAD EN ELEMENTOS COMUNES EN EDIFICIOS.pdf",
+      "long": 156092,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

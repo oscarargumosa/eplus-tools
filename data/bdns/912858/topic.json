@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "912858",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ELDA / AYUNTAMIENTO DE ELDA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "ACUERDO JGL 2/6/2026.- APROBACIÓN DE LAS BASES PARA LA CONCESIÓN BECAS TRANSPORTE PÚBLICO PARA ESTUDIANTES UNIVERSITARIOS O DE FORMACIÓN PROFESIONAL CURSO 2025-2026",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": "2026-06-15",
+  "deadline": "2026-07-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "49.3",
+      "descripcion": "Otro transporte terrestre de pasajeros"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912858",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.dip-alicante.es/bop2/pdftotal/2026/06/05_105/2026_004351.pdf",
+  "text_inicio": "JGL 02/06/2026 APROBACIÓN BASES PARA LA CONCESIÓN BECAS TRANSPORTE PÚBLICO PARA ESTUDIANTES UNIV",
+  "text_fin": "JGL 02/06/2026 APROBACIÓN BASES PARA LA CONCESIÓN BECAS TRANSPORTE PÚBLICO PARA ESTUDIANTES UNIV",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.191Z"
+}

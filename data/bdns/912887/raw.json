@@ -1,0 +1,85 @@
+{
+  "id": 1114448,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912887",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "PRÉSTAMO"
+    },
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1050000,
+  "mrr": false,
+  "descripcion": "Resolución de convocatoria para la concesión de ayudas a proyectos y planes editoriales, en régimen de concurrencia competitiva, en las modalidades de aportaciones reintegrables y subvenciones",
+  "descripcionLeng": "Resolució de convocatòria per a la concessió d'ajuts a projectes i plans editorials, en règim de concurrència competitiva, en les modalitats d'aportacions reintegrables i subvencions",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos",
+      "codigo": "58.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "bases específicas que regirán la concesión de ayudas, en las modalidades de aportaciones reintegrables y subvenciones, a proyectos y planes editoriales",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/8889/1967354.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-25",
+  "fechaFinSolicitud": "2026-07-23",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": "SA.114912",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.114912",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 53 AYUDAS A LA CULTURA Y LA CONSERVACIÓN DEL PATRIMONIO"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475458,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2AR Projectes i plans editorials_catsigned.pdf",
+      "long": 221317,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    },
+    {
+      "id": 1475457,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2AR Projectes i plans editorials_cast.pdf",
+      "long": 118112,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

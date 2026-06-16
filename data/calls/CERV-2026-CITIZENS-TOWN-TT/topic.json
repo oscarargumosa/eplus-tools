@@ -43,8 +43,8 @@
     "Town twinning"
   ],
   "crossCuttingPriorities": [
-    "AI",
-    "DigitalAgenda"
+    "DigitalAgenda",
+    "AI"
   ],
   "supportInfoText": "For help related to this call, please contact  EACEA-CERV@ec.europa.eu or the CERV contact point of your country (the contact details available: CERV National Contact Points).\n\nFunding & Tenders Portal FAQ – Submission of proposals)\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
   "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43954?topic=CERV-2026-CITIZENS-TOWN-TT",
@@ -142,5 +142,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-15T04:03:26.231Z"
+  "fetchedAt": "2026-06-16T04:03:00.396Z"
 }

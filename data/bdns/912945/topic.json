@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "912945",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EIBAR / AYUNTAMIENTO DE EIBAR",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "CONVOCATORIA DE SUBVENCIONES MEDIANTE EL PROCEDIMIENTO DE CONCESIÓN DIRECTA EN RÉGIMEN DE EVALUACIÓN INDIVIDUALIZADA CORRES-PONDIENTE AL PROGRAMA “UMEAK ESKOLARA 2026”",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": "2026-09-14",
+  "deadline": "2026-10-16",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 215639.4,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912945",
+  "documents": [
+    {
+      "label": "Eskaera / Solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.eibar.eus/eu/udala/sailak/arlo-ekonomikoa/kontratazioen-eta-diru-laguntzen-unitatea/diru-laguntzetarako-plan-estrategikoa/dirulaguntzen-eranskina-mai-26.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.224Z"
+}

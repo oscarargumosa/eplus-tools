@@ -1,0 +1,64 @@
+{
+  "id": 1114704,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913143",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Acuerdo del Pleno del Consejo Social del 29/05/2026, por el que se aprueban las bases reguladoras y la convocatoria del PREMIO A LA TRAYECTORIA DE JÓVENES INVESTIGADORES/AS, modalidad I. de los XXV PREMIOS DEL CONSEJO SOCIAL -convocatoria 2026-",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Acuerdo del Pleno del Consejo Social del 29/05/2026, por el que se aprueban las bases reguladoras y la convocatoria del PREMIO A LA TRAYECTORIA DE JÓVENES INVESTIGADORES/AS, modalidad I. de los XXV PREMIOS DEL CONSEJO SOCIAL -convocatoria 2026-",
+  "urlBasesReguladoras": "https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/BOUGR/327/Bolet%C3%ADn%20Oficial%20de%20la%20Universidad%20de%20Granada%20n%C2%BA%20327_5.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-21",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476150,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Boletín Oficial de la Universidad de Granada nº 327_5.pdf",
+      "long": 1060091,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

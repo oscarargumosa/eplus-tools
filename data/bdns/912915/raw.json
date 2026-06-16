@@ -1,0 +1,64 @@
+{
+  "id": 1114476,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CULLERA",
+    "nivel3": "AYUNTAMIENTO DE CULLERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912915",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS DESTINADAS A LA MOVILIDAD DE ESTUDIANTES DEL PROGRAMA ERASMUS CURSO 25/26",
+  "descripcionLeng": "CONVOCATÒRIA DE CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA D´AJUDES DESTINADES A LA MOBILITAT D'ESTUDIANTS DEL PROGRAMA ERASMUS CURS 25/26",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS REGULADORAS PARA LA CONVOCATORIA DE CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS DESTINADAS A LA MOVILIDAD\nDE ESTUDIANTES DEL PROGRAMA ERASMUS",
+  "urlBasesReguladoras": "https://cullera.sedipualba.es/tablondeanuncios/anuncio.aspx?id=79476",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " 10 días hábiles a contar desde el día siguiente a la publicación de la convocatoria en el BOP",
+  "textFin": "Al finalizar los 10 días de la publicación de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475515,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 2074 de 11_06_2026 _Resolución convocatoria Programa ERASMUS, curso 25_26_ - SEGRA 1185663.pdf",
+      "long": 341402,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

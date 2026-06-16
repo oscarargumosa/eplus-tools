@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "912379",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE CULTURA / DIRECCIÓN GENERAL DE DERECHOS CULTURALES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "ORDEN DEL MINISTERIO DE CULTURA POR LA QUE SE CONVOCA EL PROCEDIMIENTO PARA LA CONCESIÓN DE LAS AYUDAS DEL PROGRAMA BONO CULTURAL JOVEN 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-11",
+  "open_date": "2026-06-20",
+  "deadline": "2026-10-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 160000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://bonoculturajoven.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912379",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10885",
+  "text_inicio": "Desde el día de la publicación del extracto de la convocatoria en el BOE",
+  "text_fin": "23:59 horas (hora peninsular española) del 31 de octubre de 2026.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.006Z"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "912851",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / INSTITUTO DE LA MUJER DE EXTREMADURA",
+  "nuts_codes": [
+    "ES43"
+  ],
+  "nuts_primary": "ES43",
+  "title": "Subvenciones 2026 a mujeres, para facilitar la recuperación integral de las mujeres víctimas de violencia de género, según Decreto 115/2026 que la convoca.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-15",
+  "open_date": null,
+  "deadline": "2026-09-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1759773,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "98",
+      "descripcion": "Actividades de los hogares como productores de bienes y servicios para uso propio"
+    }
+  ],
+  "apply_url": "https://www.juntaex.es/w/5485",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/912851",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/",
+  "text_inicio": "Día siguiente a publicación en el DOE",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-16T04:06:33.188Z"
+}
