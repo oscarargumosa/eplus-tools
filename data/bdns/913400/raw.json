@@ -1,0 +1,80 @@
+{
+  "id": 1114961,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCORISA",
+    "nivel3": "AYUNTAMIENTO DE ALCORISA"
+  },
+  "sedeElectronica": "https://alcorisa.sedelectronica.es/",
+  "codigoBDNS": "913400",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE CONCESIÓN DE SUBVENCIONES PARA AYUDAS A LA NATALIDAD ALCORISA 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza general de subvenciones. Plan estratégico de subvenciones.",
+  "urlBasesReguladoras": "https://alcorisa.sedelectronica.es/transparency/c4b7f9caa1be- 4678-ac45-3d4db1704f33/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde publicación extracto",
+  "textFin": "15 días hábiles, desde el siguiente al de la  publicación del extracto de la convocatoria.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476796,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260604_Convocatoria natalidad 2026.pdf",
+      "long": 173003,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476801,
+      "descripcion": "Ficha de terceros",
+      "nombreFic": "20260211_Ficha de terceros.pdf",
+      "long": 56641,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476799,
+      "descripcion": "Solicitud",
+      "nombreFic": "20260604_Anexo A. Solicitud..pdf",
+      "long": 88569,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,10 +1,17 @@
 [
   {
     "section": "1. Admissibility conditions: Proposal page limit and layout",
-    "label": "Annex A",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
-    "ext": ".pdf",
-    "is_downloadable": true
+    "label": "EIC Work Programme",
+    "url": "https://eic.ec.europa.eu/eic-2026-work-programme_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "52598755-1351-4b54-b46b-e2682d0a3aec_en",
+    "url": "https://eic.ec.europa.eu/document/download/52598755-1351-4b54-b46b-e2682d0a3aec_en?filename=EIC-Work-Programme-2026.pdf",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "2. Eligible countries",
@@ -22,10 +29,10 @@
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
-    "label": "Reference Documents page",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/reference-documents?programmePeriod=2021-2027&frameworkProgramme=43108390",
-    "ext": "",
-    "is_downloadable": false
+    "label": "Standard application form (HE CSA)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-csa_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
@@ -43,21 +50,7 @@
   },
   {
     "section": "Additional documents:",
-    "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
-    "ext": ".pdf",
-    "is_downloadable": true
-  },
-  {
-    "section": "Additional documents:",
-    "label": "EIC Work Programme 2026",
-    "url": "https://eic.ec.europa.eu/eic-2026-work-programme_en",
-    "ext": "",
-    "is_downloadable": false
-  },
-  {
-    "section": "Additional documents:",
-    "label": "HE Framework Programme and Rules for Participation Regulation 2021/695",
+    "label": "HE Framework Programme 2021/695",
     "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0695",
     "ext": "",
     "is_downloadable": true

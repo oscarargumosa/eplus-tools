@@ -1,0 +1,112 @@
+{
+  "id": 1114890,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "EIVISSA",
+    "nivel3": "AYUNTAMIENTO DE EIVISSA"
+  },
+  "sedeElectronica": "https://eivissa.sedelectronica.es/info.0",
+  "codigoBDNS": "913329",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Acuerdo del día 15 de junio de 2026 de la Junta de Gobierno Local del Ayuntamiento de Ibiza que aprueba la convocatoria de subvenciones destinadas a las asociaciones de familias de los centros educativos del municipio de Eivissa 2026",
+  "descripcionLeng": "Acord de dia 15 de juny de 2026 de la Junta de Govern Local de l’Ajuntament d’Eivissa pel qual s’aprova la convocatòria de subvencions destinades a les associacions de famílies dels centres educatius del municipi d’Eivissa per a l’any 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES531 - Eivissa y Formentera"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprobación definitiva de las bases específicas reguladoras de las subvenciones destinadas a asociaciones de familias de alumnos de los centros educativos del municipio de Eivissa",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2024/83/1165016",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días hábiles a partir del siguiente al de la publicación de esta convocatoria en el BOIB",
+  "textFin": "15 días hábiles a partir del siguiente al de la publicación de esta convocatoria en el BOIB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476628,
+      "descripcion": "M-313 ANNEX 2 Declaració responsable català",
+      "nombreFic": "M-313 ANNEX 2 Declaració responsable català.pdf",
+      "long": 147236,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476620,
+      "descripcion": "M-313 ANEXO 2 Declaración responsable castellano",
+      "nombreFic": "M-313 ANEXO 2 Declaración responsable castellano.pdf",
+      "long": 148133,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476630,
+      "descripcion": "M-314 ANEXO 3 Relación de gastos castellano",
+      "nombreFic": "M-314 ANEXO 3 Relación de gastos castellano.pdf",
+      "long": 149599,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476618,
+      "descripcion": "M-312 ANEXO 1 Memoria justificativa castellano",
+      "nombreFic": "M-312 ANEXO 1 Memoria justificativa castellano.pdf",
+      "long": 183065,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476617,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "FASE 2_SUB-02_P02 - Convocatòria reguladora subvencions AFAS (català).pdf",
+      "long": 543114,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476616,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "FASE 2_SUB-02_P02 - Convocatorial reguladora subvenciones AFAS (castellano).pdf",
+      "long": 480614,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476619,
+      "descripcion": "M-312 ANNEX 1 Memòria justificativa català",
+      "nombreFic": "M-312 ANNEX 1 Memòria justificativa català.pdf",
+      "long": 179531,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

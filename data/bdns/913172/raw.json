@@ -1,0 +1,96 @@
+{
+  "id": 1114733,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CAMPORROBLES",
+    "nivel3": "AYUNTAMIENTO DE CAMPORROBLES"
+  },
+  "sedeElectronica": "https://camporrobles.sedelectronica.es/",
+  "codigoBDNS": "913172",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "Bases de la convocatoria de subvenciones para el tratamiento y embellecimiento de fachadas de inmuebles ubicados en los núcleos\nurbanos de Camporrobles y La Loberuela (“Embellece Camporrobles”)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases de la convocatoria de subvenciones para el tratamiento y embellecimiento de fachadas de inmuebles ubicados en los núcleos\nurbanos de Camporrobles y La Loberuela (“Embellece Camporrobles”)",
+  "urlBasesReguladoras": "https://camporrobles.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia siguiente de la publicación de la convocatoria en el BOP",
+  "textFin": "30 días naturales, contados a partir del día siguiente de la publicación de la convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476201,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Embellece Camporrobles 2026.pdf",
+      "long": 289226,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476202,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I - SOLICITUD SUBVENCION.pdf",
+      "long": 235928,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476206,
+      "descripcion": "Anexo IV",
+      "nombreFic": "ANEXO IV - PLAN EMBELLECE CAMPORROBLES (CONDICIONES TÉCNICAS).pdf",
+      "long": 818660,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476204,
+      "descripcion": "Anexo III",
+      "nombreFic": "ANEXO III - PLAN EMBELLECE CAMPORROBLES_PRESUPUESTO.pdf",
+      "long": 191479,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476203,
+      "descripcion": "Anexo II",
+      "nombreFic": "ANEXO II - PLANTILLA DE EJECUCIÓN DE OBRAS.pdf",
+      "long": 466675,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

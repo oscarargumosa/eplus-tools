@@ -1,0 +1,72 @@
+{
+  "id": 1114881,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MATARÓ",
+    "nivel3": "AYUNTAMIENTO DE MATARÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913320",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 1500,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para el transporte escolar para alumnado de educación infantil y primaria para el curso 2026-2027.",
+  "descripcionLeng": "Convocatòria d'ajuts per al transport escolar per a alumnat d'educació infantil i primària per al curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Bases generales reguladoras del procedimiento de concesión de ayudas para el transporte escolar para alumnado de educación infantil y primaria.",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3599329/aprovacio-inicial-de-les-bases-generals-reguladores-del-procediment-de-concessio-d-ajuts-per-al-transport-escolar-per-a-alumnat-d-educacio-infantil-i-primaria-ajuntament-de-mataro",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2027-07-31",
+  "textInicio": "dos meses a contar des de la fecha en què el título deje de ser válido",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476607,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "decret_amb_convo_transport_26-27.pdf",
+      "long": 176629,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476606,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CAST_decret_amb_convo_transport_26-27.pdf",
+      "long": 487400,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

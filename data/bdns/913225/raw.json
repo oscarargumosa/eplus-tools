@@ -1,0 +1,64 @@
+{
+  "id": 1114786,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HERMIGUA",
+    "nivel3": "AYUNTAMIENTO DE HERMIGUA"
+  },
+  "sedeElectronica": "www.hermigua.sedelectronica.es",
+  "codigoBDNS": "913225",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 49337.19,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas al fomento de la rehabilitación de viviendas de titularidad privada, dentro del programa para combatir la despoblación en el medio rural del Plan de Vivienda de Canarias 2020-2025, anualidad de 2024",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES706 - La Gomera"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas al fomento de la rehabilitación de viviendas de titularidad privada, dentro del programa para combatir la despoblación en el medio rural del Plan de Vivienda de Canarias 2020-2025, anualidad de 2024",
+  "urlBasesReguladoras": "www.hermigua.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE SU PUBLICACION EN EL BOLETIN OFICIAL DE LA PROVINCIA DE SANTA CRUZ DE TENERIFE",
+  "textFin": "QUINCE DIAS HABILES A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476347,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260615_Resolución_Resolución_RESOLUCION 2026-0505 [RESOLUCIÓN APROBACIÓN CONVOCATORIA Y BASES  SUBVENCIONES REHABILITACIÓN VIVIENDAS PRIVADAS (ANUALIDAD 2024)] (3).pdf",
+      "long": 778559,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,168 @@
+{
+  "id": 1114913,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN BARTOLOMÉ DE TIRAJANA",
+    "nivel3": "AYUNTAMIENTO DE SAN BARTOLOMÉ DE TIRAJANA"
+  },
+  "sedeElectronica": "www.maspalomas.com",
+  "codigoBDNS": "913352",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 95000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DIRIGIDAS A ASOCIACIONES SIN ÁNIMO DE LUCRO, FEDERACIONES Y CONFEDERACIONES DE VECINOS QUE FOMENTEN EL MOVIMIENTO ASOCIATIVO Y LA CONVIVENCIA CIUDADANA DEL MUNICIPIO CON CARGO AL EJER",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA MUNICIPAL DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://www.maspalomas.com/images/stories/documents/NormativaMunicipal/OrdenanzasReguladoras/2006/NM_OMR_2006_0519_OrdenanzaDeSubvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el Boletín Oficial de la Provincia de Las Palmas ",
+  "textFin": "20 días naturales, después de su publicación en el BOP Las Palmas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476676,
+      "descripcion": "Anexo XI. Certificado Subvención recibida",
+      "nombreFic": "ANEXO XI CERTIFICADO SUBVENCIÓN RECIBIDA.pdf",
+      "long": 129635,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476675,
+      "descripcion": "Anexo X. Memoria Económica Gastos de Personal",
+      "nombreFic": "ANEXO X MEMORIA ECONÓMICA PERSONAL.pdf",
+      "long": 84072,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476674,
+      "descripcion": "anexo IX. Memoria Económica Gastos Generales",
+      "nombreFic": "ANEXO IX MEMORIA ECONOMICA GASTOS GENERALES.pdf",
+      "long": 57744,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476666,
+      "descripcion": "Anexo VIII. Memoria Justificativa del Proyecto",
+      "nombreFic": "AENXO VIII MEMORIA JUSTIFICATIVA DEL PROYECTO.docx",
+      "long": 138538,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476677,
+      "descripcion": "anexo XII. Presupuesto final de la actividad",
+      "nombreFic": "ANEXO XII PRESUPUESTO FINAL DE LA ACTIVIDAD.pdf",
+      "long": 229627,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476651,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "11 RESOLUCI_N APROBACI_N BASES_~EAD71BC_new.pdf",
+      "long": 1668267,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476665,
+      "descripcion": "Anexo VII. Autorización solicitud no deudor Ayuntamiento",
+      "nombreFic": "ANEXO VII AUTORIZACIÓN SOLICITUD NO DEUDOR DEL AYUNTAMIENTO.pdf",
+      "long": 80496,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476664,
+      "descripcion": "Anexo VI. Declaración Responsable",
+      "nombreFic": "ANEXO VI DECLARACIÓN RESPONSABLE.pdf",
+      "long": 185514,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476662,
+      "descripcion": "anexo IV: Presupuesto Inicial",
+      "nombreFic": "ANEXO IV PRESUPUESTO INICIAL.pdf",
+      "long": 25131,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476660,
+      "descripcion": "Anexo III. Proyecto a subvencionar",
+      "nombreFic": "ANEXO III PROYECTO A SUBVENCIONAR.pdf",
+      "long": 82111,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476657,
+      "descripcion": "Anexo II. Certificado acreditativo personalidad jurídica",
+      "nombreFic": "ANEXO II CERTIFICADO_ACREDITATIVO_PERSONALIDAD_2.pdf",
+      "long": 77005,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476656,
+      "descripcion": "solicitud de subvención oficial",
+      "nombreFic": "ANEXO I SOLICITUD DE SUBVENCIÓN.pdf",
+      "long": 167350,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476655,
+      "descripcion": "BASES DE LA CONVOCATORIA",
+      "nombreFic": "06 BASES CONVOCATORIA SUBV PC 2026_~EADDB9C_new.pdf",
+      "long": 1705944,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476663,
+      "descripcion": "Anexo V. Declaración sobre subvenciones solicitadas para misma finalidad",
+      "nombreFic": "ANEXO V DECLARACION SOBRE SUBVENCIONES SOLICITADAS PARA LA MISMA FINALIDAD.pdf",
+      "long": 87283,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

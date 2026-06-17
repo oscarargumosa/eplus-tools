@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "911474",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE HUELVA",
+  "nuts_codes": [
+    "ES615"
+  ],
+  "nuts_primary": "ES615",
+  "title": "Convocatoria de becas del \"Programa Universidad/ Ayudas al estudio/ Cursos de Verano\" del Banco Santander para estudiantado matriculado en la Universidad de Huelva en los Cursos de Verano 2026.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://www.santanderopenacademy.com/es/index.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/911474",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.juntadeandalucia.es/boja/2023/227/6",
+  "text_inicio": "Al día siguiente de la publicación de la presente convocatoria en BOJA.",
+  "text_fin": "Un mes a partir del día siguiente de la publicación de la convocatoria en el BOJA.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 214703,
+      "titulo": "Extracto de la Resolución Rectoral de 08 de junio de 2026, de la Universidad de Huelva, por la que se convocan becas del Programa Universidad «Ayudas al Estudio – Cursos de Verano» del Banco Santander para estudiantado matriculado en la Universidad de Huelva en los Cursos de Verano 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Convocatoria.El artículo 32 del Reglamento de Enseñanzas de Formación Permanente de la Universidad de Huelva (BOJA de 12 de mayo de2023, modificado en el BOJA de 7 de mayo de 2024) establece que la Universidad de Huelva, a través del Servicio de TítulosPropios, establecerá un programa de becas para el estudiantado basado en la igualdad de oportunidades y la transparencia, siendo elobjeto de esta convocatoria promover y facilitar el acceso a los Cursos de Verano 2026 ofertados por la Universidad de Huelvamediante la concesión de ayudas dirigidas a estudiantes con menores recursos económicos destinadas a sufragar el importe de lamatrícula, rigiéndose por el principio de equidad.El importe individual de la ayuda para cada persona beneficiaria corresponderá al precio de matrícula del Curso de Verano 2026 enel que se haya inscrito: 80 euros (Curso de 25 horas), 60 euros (Encuentro de 20 horas) o 45 euros (Encuentro de 15 horas).Esta convocatoria se realiza bajo la modalidad de concurrencia competitiva.Segundo. Bases Reguladoras.Resolución Rectoral de 28 de noviembre de 2023, de la Universidad de Huelva, por la que se establecen las Bases reguladoras parala concesión de becas al alumnado de Enseñanzas de Formación Permanente (BOJA de 1 de diciembre de 2023, modificada en elBOJA de 18 de julio de 2024).Tercero. Financiación.Las partidas presupuestarias destinadas al abono de estas becas serán:&#8722; Centro de Gasto 801802 – Programa 321S – Clasificación Económica 481.99 – importe total: 2.000 €.Cuarto. Personas beneficiarias.Podrá optar a estas ayudas el estudiantado de la Universidad de Huelva que cumpla con todos los requisitos detallados acontinuación:1º- Formalización de matrícula en cualquiera de los Cursos de Verano 2026, organizados y gestionados por el Servicio de TítulosPropios de la Universidad de Huelva.2º- Abono de la totalidad de la matrícula del Curso de Verano 2026 en que se hubiese matriculado.3º- Inscripción en la convocatoria a través de la plataforma del Banco Santanderhttps://www.santanderopenacademy.com/es/index.htmlQuinto. Plazo de presentación de solicitudes.El plazo de presentación de solicitudes será de un mes a contar desde el día siguiente a la publicación del extracto de la convocatoriaen el BOJA.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-17T04:07:45.843Z"
+}

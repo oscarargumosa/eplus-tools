@@ -1,0 +1,72 @@
+{
+  "id": 1114750,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOLLINA",
+    "nivel3": "AYUNTAMIENTO DE MOLLINA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913189",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1540,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE PREMIOS DEL CONCURSO DE CARROZAS FERIA DE AGOSTO AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES POR EL AYUNTAMIENTO DE MOLLINA",
+  "urlBasesReguladoras": "https://mollina.sedelectronica.es/transparency/8eb8214e-c772-40e1-8683-c344d2f64703/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de la publicación del extracto de la presente convocatoria en el BOP Málaga",
+  "textFin": "Día 12 de agosto de 2026 a las 13:00 horas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476240,
+      "descripcion": "RESOLUCIÓN APROBACIÓN CONVOCATORIA",
+      "nombreFic": "20260609_Resolución_Decreto_DECRETO 2026-0502 [Resolución_Decreto_ [Resolución de Alcaldía]]]-1.pdf",
+      "long": 182680,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476235,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260422_Otros_4. Anexo I Convocatoria para la Concesión de Subvenciones(1).pdf",
+      "long": 179131,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

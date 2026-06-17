@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "913329",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EIVISSA / AYUNTAMIENTO DE EIVISSA",
+  "nuts_codes": [
+    "ES531"
+  ],
+  "nuts_primary": "ES531",
+  "title": "Acuerdo del día 15 de junio de 2026 de la Junta de Gobierno Local del Ayuntamiento de Ibiza que aprueba la convocatoria de subvenciones destinadas a las asociaciones de familias de los centros educativos del municipio de Eivissa 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://eivissa.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913329",
+  "documents": [
+    {
+      "label": "M-313 ANNEX 2 Declaració responsable català",
+      "url": null
+    },
+    {
+      "label": "M-313 ANEXO 2 Declaración responsable castellano",
+      "url": null
+    },
+    {
+      "label": "M-314 ANEXO 3 Relación de gastos castellano",
+      "url": null
+    },
+    {
+      "label": "M-312 ANEXO 1 Memoria justificativa castellano",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "M-312 ANNEX 1 Memòria justificativa català",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/pdf/es/2024/83/1165016",
+  "text_inicio": "15 días hábiles a partir del siguiente al de la publicación de esta convocatoria en el BOIB",
+  "text_fin": "15 días hábiles a partir del siguiente al de la publicación de esta convocatoria en el BOIB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-17T04:07:46.526Z"
+}

@@ -1,0 +1,88 @@
+{
+  "id": 1114818,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "EIVISSA",
+    "nivel3": "AYUNTAMIENTO DE EIVISSA"
+  },
+  "sedeElectronica": "https://eivissa.sedelectronica.es/info.0",
+  "codigoBDNS": "913257",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Acuerdo del día 15 de junio de 2026 de la Junta de Gobierno del Ayuntamiento de Ibiza que aprueba la convocatoria de premios a los mejores expedientes de bachillerato y ciclos formativos de grado medio curso 2025-2026",
+  "descripcionLeng": "Acord de dia 15 de juny de 2026 de la Junta de Govern de l’Ajuntament d’Eivissa pel qual s’aprova la convocatòria de premis als millors expedients de batxillerat i cicles formatius de grau mitjà del curs 2025-2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES531 - Eivissa y Formentera"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprobación definitiva de las bases específicas reguladoras de los premios a los mejores expedientes académicos de bachillerato y ciclos formativos de grado medio del Ayuntamiento de Eivissa",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2026/68/1220679",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " Diez días hábiles, contados a partir del día siguiente al de la publicación de la presente convocat",
+  "textFin": " Diez días hábiles, contados a partir del día siguiente al de la publicación de la presente convocat",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476440,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria de premios a los mejores expedientes académicos de bachillerato y ciclos formativos de grado medio 2025-2026..pdf",
+      "long": 301192,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476444,
+      "descripcion": "M-141 Sol·licitud",
+      "nombreFic": "M-141 Sol·licitud Premi millor expedient acadèmic per correu administratiu.pdf",
+      "long": 121386,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476442,
+      "descripcion": "M-141 Solicitud",
+      "nombreFic": "M-141 Solicitud Premio mejor expediente académico por correo administrativo.pdf",
+      "long": 130657,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476441,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria premis millors expedients acadèmics batxillerat i cicles formatius grau mitjà 2025-2026.pdf",
+      "long": 273060,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

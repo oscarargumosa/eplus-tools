@@ -1,0 +1,88 @@
+{
+  "id": 1115028,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILANOVA I LA GELTRÚ",
+    "nivel3": "AYUNTAMIENTO DE VILANOVA I LA GELTRÚ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913467",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DIRIGIDAS A CENTROS DOCENTES SOSTENIDOS CON FONDOS PÚBLICOS DE EDUCACIÓN SECUNDARIA OBLIGATORIA DE VILANOVA Y LA GELTRÚ, PARA LA REALIZACIÓN DE SALIDAS ÁMBITO DE MEMORIA HISTORICA",
+  "descripcionLeng": "CONVOCATÒRIA 2026 DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA ADREÇADES ALS CENTRES DOCENTS SOSTINGUTS AMB FONS PÚBLICS D’EDUCACIÓ SECUNDÀRIA OBLIGATÒRIA DE VILANOVA I LA GELTRÚ PER A LA REALITZACIÓ DE SORTIDES DINS L´AMBIT DE LA MEMÒRIA HISTÒRICA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones en régimen de concurrencia competitiva dirigidas a los centros docentes sostenidos con fondos públicos de educación secundaria obligatoria de Vilanova i la Geltrú, para la realización de salidas en el ámbito de la memoria",
+  "urlBasesReguladoras": "www.vilanova.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-23",
+  "fechaFinSolicitud": "2026-07-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476954,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_castella.pdf",
+      "long": 768550,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476957,
+      "descripcion": "DECRETO",
+      "nombreFic": "Decret_AR-132.pdf",
+      "long": 240715,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476956,
+      "descripcion": "DECRETO",
+      "nombreFic": "Decret_AR-131.pdf",
+      "long": 958823,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476955,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria-1.pdf",
+      "long": 766554,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

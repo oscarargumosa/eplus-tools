@@ -1,0 +1,103 @@
+{
+  "id": 1114805,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "DIRECCIÓN GENERAL DE MEDIO NATURAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913244",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 154560,
+  "mrr": false,
+  "descripcion": "ORDEN MAT/ /2026, de 10 de junio, del Consejero de Medio Ambiente y Turismo, por la que se convocan subvenciones públicas en el área de influencia socio-económica del Parque Nacional de Ordesa y Monte Perdido, de acuerdo con lo previsto en el Real Decreto",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES241 - Huesca"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Real Decreto 1229/2005, de 13 de octubre, por el que se regulan las subvenciones públicas con cargo a los Presupuestos Generales del Estado en las áreas de influencia socioeconómica de los Parques Nacionales,",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-16999",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a su publicación en el Boletín Oficial de Aragón",
+  "textFin": "Treinta días naturales a partir del siguiente a su publicación en el BOA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476396,
+      "descripcion": "Modelo de solicitud de pago",
+      "nombreFic": "Modelo_I_2026_Solicitud de pago (rev SRJ)_.pdf",
+      "long": 193300,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476393,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden_convocatoria_Ordesa_CSVKG6MPIV1LF1X0XFIL.pdf",
+      "long": 466879,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476398,
+      "descripcion": "Modelo de renuncia",
+      "nombreFic": "Modelo_III_2026_Renuncia (rev SRJ)_.pdf",
+      "long": 193707,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476400,
+      "descripcion": "Instrucciones publicidad",
+      "nombreFic": "Modelo_IV_2026_Instrucciones Publicidad (rev SRJ)_.pdf",
+      "long": 413499,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476397,
+      "descripcion": "Documentos en poder de la Administración",
+      "nombreFic": "Modelo_II_2026_Docs_Admón (rev SRJ)_.pdf",
+      "long": 186806,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

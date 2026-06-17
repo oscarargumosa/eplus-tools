@@ -1,0 +1,64 @@
+{
+  "id": 1115034,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD MIGUEL HERNÁNDEZ DE ELCHE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913473",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3600,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA EXTRAORDINARIA DE AYUDAS DE LA FUNDACIÓN PEDRO Y NOHEMÍ PAREJO MARTÍNEZ PARA ESTUDIANTADO EN RIESGO DE EXCLUSIÓN SOCIAL DURANTE EL CURSO ACADÉMICO 2025-2026",
+  "descripcionLeng": "CONVOCATÒRIA EXTRAORDINÀRIA D'AJUDES DE LA FUNDACIÓ PEDRO I NOHEMÍ PAREJO MARTÍNEZ PER A ESTUDIANTAT EN RISC D'EXCLUSIÓ SOCIAL DURANT EL CURS ACADÈMIC 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Base reguladora de la convocatoria CONVOCATORIA EXTRAORDINARIA DE AYUDAS DE LA FUNDACIÓN PEDRO Y NOHEMÍ PAREJO MARTÍNEZ PARA ESTUDIANTADO EN RIESGO DE EXCLUSIÓN SOCIAL DURANTE EL CURSO ACADÉMICO 2025-2026",
+  "urlBasesReguladoras": "https://boumh.umh.es/files/2026/06/RR_01490_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la fecha de publicación del extracto de esta convocatoria en el DOGV",
+  "textFin": "10 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476965,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RR_01490_2026 BOUMH.pdf",
+      "long": 420079,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

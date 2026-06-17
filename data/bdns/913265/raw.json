@@ -1,0 +1,72 @@
+{
+  "id": 1114826,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LANCIEGO/LANTZIEGO",
+    "nivel3": "AYUNTAMIENTO DE LANCIEGO/LANTZIEGO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913265",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1200,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS MUNICIPALES DEL AYUNTAMIENTO DE LANCIEGO-LANTZIEGO PARA EL CURSO 2025-26 CON OBJETO DE FINANCIAR LOS GASTOS DE MATRICULA EN CENTROS OFICIALES U HOMOLOGADOS DE EUSKERA, INCLUYENDO LOS CENTROS DE AUTOAPRENDIZAJE.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS MUNICIPALES DEL AYUNTAMIENTO DE LANCIEGO-LANTZIEGO PARA EL CURSO 2025-26 CON OBJETO DE FINANCIAR LOS GASTOS DE MATRICULA EN CENTROS OFICIALES U HOMOLOGADOS DE EUSKERA, INCLUYENDO LOS CENTROS DE AUTOAPRENDIZAJE.CONVOCATORIA DE AYUDAS",
+  "urlBasesReguladoras": "https://www.lanciego.org/media/attachments/2026/06/16/bases-reguladoras-subvencion.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACION EN EL BOTHA",
+  "textFin": "15 DIAS A  PARTIR DEL DIA SIGUIENTE A LA PUBLICACION EN EL BOTHA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476451,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "EXTRACTO CONVOCATORIA.pdf",
+      "long": 151027,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476454,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "Solicitud_BECAS EUSKERA 2025-26.pdf",
+      "long": 163865,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

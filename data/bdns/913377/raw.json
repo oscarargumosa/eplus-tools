@@ -1,0 +1,72 @@
+{
+  "id": 1114938,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN PEDRO DEL PINATAR",
+    "nivel3": "AYUNTAMIENTO DE SAN PEDRO DEL PINATAR"
+  },
+  "sedeElectronica": "https://sede.sanpedrodelpinatar.es/",
+  "codigoBDNS": "913377",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases para la concesión de subvenciones a Asociaciones Pinatarenses que colaboren con el Plan de Ayuda Alimentaria en el Ambito Local para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES620 - Murcia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria y bases para la concesión de subvenciones a Asociaciones Pinatarenses que colaboren con el Plan de Ayuda Alimentaria en el Ambito Local para el año 2026",
+  "urlBasesReguladoras": "https://sede.sanpedrodelpinatar.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_TABLON&KEY=3223500907167373707601",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BORM",
+  "textFin": "Quince días naturales a partir de la publicación del extracto de la convocatoria en el BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476730,
+      "descripcion": "Acuerdo de la Convocatoria",
+      "nombreFic": "2.Certificado_acuerdo_FASE_II - 2026-06-12T101139.163.pdf",
+      "long": 202931,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476726,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1.CONVOCATORIA_CONCESION_SUBVENCIONES_CESTA_SOLIDARIA_2026 (1).pdf",
+      "long": 258209,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

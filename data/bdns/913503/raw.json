@@ -1,0 +1,72 @@
+{
+  "id": 1115064,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONFORTE DE LEMOS",
+    "nivel3": "AYUNTAMIENTO DE MONFORTE DE LEMOS"
+  },
+  "sedeElectronica": "www.monfortedelemos.es",
+  "codigoBDNS": "913503",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A ASOCIACIONES CULTURALES, LÚDICAS, RECREATIVAS O FORMATIVAS INSCRITAS EN EL REGISTRO MUNICIPAL DE ASOCIACIONES PARA ACTIVIDADES REALIZADAS EN EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A ASOCIACIONES CULTURALES, LÚDICAS, RECREATIVAS O FORMATIVAS INSCRITAS EN EL REGISTRO MUNICIPAL DE ASOCIACIONES PARA ACTIVIDADES REALIZADAS EN EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://www.monfortedelemos.es/sites/default/files/pdf/convocatorias_becas_subvenciones/CASTELAN_BASES_SUBV_ASOCS_LUDICAS_E_CULTURAIS_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-13",
+  "textInicio": "A partir del día siguiente a la publicación del anuncio en el BOP de Lugo",
+  "textFin": "15 días hábiles a partir del día siguiente a la publicación del anuncio en el BOP de Lugo",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1477080,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "GALEGO_BASES SUBVS ASOCS LÚDICAS E CULTURAIS 2026.pdf",
+      "long": 762191,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1477079,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CASTELAN_BASES SUBV ASOCS  LÚDICAS E CULTURAIS 2026.pdf",
+      "long": 882787,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

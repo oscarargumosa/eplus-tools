@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "913398",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "BASES Y CONVOCATORIA POR LAS QUE SE REGULA LA AYUDA FINANCIERA A LOS MUNICIPIOS DE LA PROVINCIA DE SEVILLA PARA LA GESTIÓN, PROMOCIÓN, CONSTRUCCIÓN Y VENTA DE VIVIENDA PÚBLICA EN RÉGIMEN DE VENTA.(AFIVI 2026)",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-06-16",
+  "open_date": null,
+  "deadline": "2026-10-09",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "L",
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": "https://sedeelectronicadipusevilla.es/opencms/system/modules/sede/elements/secciones/index ",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913398",
+  "documents": [
+    {
+      "label": "Acuerdo Plenario",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronicadipusevilla.es/tablon-1.0/servlet/obtenerDocumentoUrlPermanente?pid=3783f2ce4bb4b0448920ae66cf2b29e8d23bfb3964cfcd17ad4f7a5f15679a7ce2b7a845407a245c",
+  "text_inicio": "El día siguiente a la publicación del extracto de la convocatoria en BOP ",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-17T04:07:46.546Z"
+}

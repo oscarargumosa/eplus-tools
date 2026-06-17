@@ -1,0 +1,125 @@
+{
+  "source": "bdns",
+  "source_id": "913480",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / AGENCIA DE CIENCIA, COMPETITIVIDAD EMPRESARIAL E INNOVACIÓN",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Resolución de 15/06/2026 de la Agencia de Ciencia, Competitividad Empresarial e Innovación Asturiana, que aprueba la convocatoria para las ayudas a Proyectos de Inversión Empresarial en el ámbito del Principado de Asturias, año 2025.",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-06-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "39",
+      "descripcion": "Actividades de descontaminación y otros servicios de gestión de residuos"
+    },
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "38",
+      "descripcion": "Actividades de recogida, tratamiento y eliminación de residuos "
+    },
+    {
+      "codigo": "52",
+      "descripcion": "Depósito, almacenamiento y actividades auxiliares del transporte "
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "08",
+      "descripcion": "Otras industrias extractivas"
+    },
+    {
+      "codigo": "55",
+      "descripcion": "Servicios de alojamiento"
+    },
+    {
+      "codigo": "56.2",
+      "descripcion": "Servicios de catering y otros servicios de comidas"
+    },
+    {
+      "codigo": "71",
+      "descripcion": "Servicios técnicos de arquitectura e ingeniería; ensayos y análisis técnicos"
+    }
+  ],
+  "apply_url": "http://www.idepa.es/registro",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913480",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Primera modificación de las BBRR.pdf",
+      "url": null
+    },
+    {
+      "label": "Publicación BOPA Prórroga Bases PIE.PDF",
+      "url": null
+    },
+    {
+      "label": "Resolución de adaptación FEDER al período de programación 2021-2027.pdf",
+      "url": null
+    },
+    {
+      "label": "Resolución de adaptación al MAPA.pdf",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2017/05/26/2017-05747.pdf",
+  "text_inicio": "Día natural siguiente a la publicación del extracto en el BOPA",
+  "text_fin": "14:00 horas del día 31/07/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.113776",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS REGIONALES A LA INVERSIÓN "
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-17T04:07:46.573Z"
+}

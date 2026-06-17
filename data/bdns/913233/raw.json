@@ -1,0 +1,76 @@
+{
+  "id": 1114794,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALMAR DE TROYA, EL",
+    "nivel3": "AYUNTAMIENTO DE PALMAR DE TROYA, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913233",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 275,
+  "mrr": false,
+  "descripcion": "XI CONCURSO DE CARTEL ANUNCIADOR DE FERIA Y FIESTAS NTRA. SRA. DEL CARMEN DE EL PALMAR DE TROYA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "XI CONCURSO DE CARTEL ANUNCIADOR DE FERIA Y FIESTAS NTRA. SRA. DEL CARMEN DE EL PALMAR DE TROYA 2026",
+  "urlBasesReguladoras": "https://transparencia.elpalmardetroya.es/es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-17",
+  "fechaFinSolicitud": "2026-07-07",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476381,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "7. PROPUESTA APROB DE LAS BASES Bases XI Concurso  Cartel....report.pdf",
+      "long": 772501,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 214724,
+      "titulo": "BASES DEL XI CONCURSO DE CARTEL ANUNCIADOR DE FERIA Y FIESTAS NTRA. SRA. DEL CARMEN DE EL PALMAR DE TROYA",
+      "tituloLeng": null,
+      "texto": "<p>Objeto y finalidad Las presentes bases tienen por objeto establecer las normas que han de regir el concurso del cartel anunciador de la Feria y Fiestas Patronales de El Palmar de Troya 2026, las obligaciones derivadas de la participación en el mismo, así como del premio que se otorgará.</p><p>Participantes Podrán participar todas las personas, con edad comprendidas entre 10 y 60 años, ambos inclusive siendo responsabilidad de quienes las presenten al Concurso cualquier reclamación que pueda producirse en relación con la autoría de las mismas y su posible plagio.</p><p>Presentación y plazo Los carteles se podrán presentar 15 días hábiles desde el día siguiente a la publicación en el «Boletín Oficial» de la provincia del extracto de la convocatoria, en la oficina de registro sita en C/ Geranio s/n de El Palmar de Troya, en horario de registro de 9:00 a 14:00 h.</p><p>La forma de presentación se recogen en el texto de las bases.</p><p>Premios Se concederán tres premios con la intención de fomentar la participación en el concurso</p><p>. — 1er. Premio: 150 euros</p><p>. — 2º. Premio: 75 euros.</p><p>— 3º. Premio: 50 euros.</p><p>Publicación Las presentes bases se publicarán en el tablón de anuncios del Ayuntamiento de El Palmar de Troya (C/ Geranio, s/n), en el tablón electrónico y en la página web de este Ayuntamiento https://www.elpalmardetroya.es/es/</p>",
+      "textoLeng": null,
+      "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-del-XI-Concurso-del-cartel-anunciador-de-la-feria-y-fiestas-patronales-2026/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

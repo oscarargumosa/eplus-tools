@@ -1,0 +1,116 @@
+{
+  "id": 1114931,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALL D'EN BAS, LA",
+    "nivel3": "AYUNTAMIENTO DE VALL D'EN BAS, LA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913370",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 51200,
+  "mrr": false,
+  "descripcion": "Subvenciones al desarrollo de actividades y servicios al municipio de la Vall d’en Bas",
+  "descripcionLeng": "Subvencions al desenvolupament d'activitats i serveis al municipi de la Vall d'en Bas",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladores per a la sol·licitud i atorgament de subvencions per al desenvolupament d'activitats i serveis al municipi",
+  "urlBasesReguladoras": "https://ssl4.ddgi.cat/bopV1/pdf/2025/109/202510905043.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": "A partir de l'endemà de la publicació de l'extracte de la convocatòria en el BOP de Girona",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476704,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ENTITATS CAST.pdf",
+      "long": 221657,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476711,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ENTITATS CAT.pdf",
+      "long": 252073,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476713,
+      "descripcion": "Sol·licitud",
+      "nombreFic": "SOL·LICITUD.pdf",
+      "long": 173051,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476718,
+      "descripcion": "Annex 3 - Pressupost global",
+      "nombreFic": "ANNEX 3 - PRESSUPOST GLOBAL.pdf",
+      "long": 159272,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476716,
+      "descripcion": "Annex 1 - Entitats esportives",
+      "nombreFic": "ANNEX 1 - ENTITATS ESPORTIVES.pdf",
+      "long": 154675,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476717,
+      "descripcion": "Annex 2 - Entitats no esportives",
+      "nombreFic": "ANNEX 2 - ENTITATS NO ESPORTIVES.pdf",
+      "long": 142121,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476715,
+      "descripcion": "Compte justificatiu",
+      "nombreFic": "COMPTE JUSTIFICATIU.pdf",
+      "long": 161873,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

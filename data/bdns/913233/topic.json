@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "913233",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PALMAR DE TROYA, EL / AYUNTAMIENTO DE PALMAR DE TROYA, EL",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "XI CONCURSO DE CARTEL ANUNCIADOR DE FERIA Y FIESTAS NTRA. SRA. DEL CARMEN DE EL PALMAR DE TROYA 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-16",
+  "open_date": "2026-06-17",
+  "deadline": "2026-07-07",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 275,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913233",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.elpalmardetroya.es/es/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 214724,
+      "titulo": "BASES DEL XI CONCURSO DE CARTEL ANUNCIADOR DE FERIA Y FIESTAS NTRA. SRA. DEL CARMEN DE EL PALMAR DE TROYA",
+      "tituloLeng": null,
+      "texto": "<p>Objeto y finalidad Las presentes bases tienen por objeto establecer las normas que han de regir el concurso del cartel anunciador de la Feria y Fiestas Patronales de El Palmar de Troya 2026, las obligaciones derivadas de la participación en el mismo, así como del premio que se otorgará.</p><p>Participantes Podrán participar todas las personas, con edad comprendidas entre 10 y 60 años, ambos inclusive siendo responsabilidad de quienes las presenten al Concurso cualquier reclamación que pueda producirse en relación con la autoría de las mismas y su posible plagio.</p><p>Presentación y plazo Los carteles se podrán presentar 15 días hábiles desde el día siguiente a la publicación en el «Boletín Oficial» de la provincia del extracto de la convocatoria, en la oficina de registro sita en C/ Geranio s/n de El Palmar de Troya, en horario de registro de 9:00 a 14:00 h.</p><p>La forma de presentación se recogen en el texto de las bases.</p><p>Premios Se concederán tres premios con la intención de fomentar la participación en el concurso</p><p>. — 1er. Premio: 150 euros</p><p>. — 2º. Premio: 75 euros.</p><p>— 3º. Premio: 50 euros.</p><p>Publicación Las presentes bases se publicarán en el tablón de anuncios del Ayuntamiento de El Palmar de Troya (C/ Geranio, s/n), en el tablón electrónico y en la página web de este Ayuntamiento https://www.elpalmardetroya.es/es/</p>",
+      "textoLeng": null,
+      "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-del-XI-Concurso-del-cartel-anunciador-de-la-feria-y-fiestas-patronales-2026/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-17T04:07:46.500Z"
+}

@@ -1,0 +1,274 @@
+{
+  "identifier": "SMP-FOOD-2026-FW-FEBA-PJ-IBA",
+  "ccm2Id": "51424863",
+  "callIdentifier": "SMP-FOOD-2026-FW-FEBA-PJ-IBA",
+  "callTitle": "EU Support to European Food Bank Federation’s capacity building",
+  "title": "Support European Food Bank Federation’s capacity building - 2026-2027",
+  "programme": "Single Market Programme",
+  "programmeCode": "43252476",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2026-06-16",
+  "deadline": "2026-09-30",
+  "deadlineModel": "single-stage",
+  "actionType": "SMP Project Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": {
+    "total_eur": null,
+    "by_year": {},
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "SMP-FOOD-2026-FW-FEBA-PJ-IBA",
+    "SMP-FOOD-2026-FW-FEBA-PJ-IBA"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact please add a contact e-mail or url\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and submission to reporting on your ongoing project. Valid for all 2021-2027 programmes.\n\nEnterprise Europe Network – Contact your Network national contact for advice to business with special focus on SMEs. The support includes guidance on EU research funding.\n\nIntellectual Property Helpdesk – Contact the IP Helpdesk for advice on the IP elements of your grant agreement.",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/SMP-FOOD-2026-FW-FEBA-PJ-IBA",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "document publication form",
+      "url": "https://t-rex.net1.cec.eu.int/call-publication-form/",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (COMP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-comp_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (CONS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cons_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (CONS OG)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cons-og_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (COSME)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cosme_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (COSME EEN)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cosme-een_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (ESS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-ess_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (FOOD)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-food_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (STAND)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-stand_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (STAND OG)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-stand-og_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard proposal template (SURV EUTF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-surv-eutf_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (CONS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (CONS Low Value)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons-low-value_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (CONS OG)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons-og_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (COSME)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (COSME GFS 75%)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme-grants-for-financial-support-75-percent_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (COSME EEN)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme-een_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (ESS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-ess_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (FOOD)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-food_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget template (STAND OG)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-stand-og_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Calculator (ESS LS IFS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/calculator_smp-ess-ls-ifs_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Communication Work Plan (COSME ONE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/communication-work-plan_smp-cosme-een_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Request for unit cost grid validation (SME ESS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/request-for-unit-cost-grid-validation_smp-ess_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "SMP MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/agr-contr/general-mga_smp_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Lump Sum MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Operating Grants MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/og-mga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "SMP Work Programmes",
+      "url": "https://commission.europa.eu/publications/single-market-programme-legal-texts-and-factsheets_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "SMP Regulation 2021/690: Single Market Programme establishment act",
+      "url": "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32021R0690",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-17T04:04:28.480Z"
+}

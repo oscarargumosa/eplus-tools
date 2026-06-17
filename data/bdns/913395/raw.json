@@ -1,0 +1,64 @@
+{
+  "id": 1114956,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "SECRETARÍA GENERAL DE EDUCACIÓN, CULTURA Y DEPORTES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913395",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 10960000,
+  "mrr": false,
+  "descripcion": "Resolución de 16/06/2026, de la Consejería de Educación, Cultura y Deportes, por la que se convoca la concesión directa de ayudas consistentes en el uso de libros de texto y de comedor escolar para el alumnado matriculado en centros docentes no universita",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Decreto 47/2025 de 1 de julio, que regula la concesión directa de ayudas consistentes en el uso de libros de texto por el alumnado de Educación Primaria y Secundaria Obligatoria y de comedor escolar para Educación Infantil  y primaria en CLM",
+  "urlBasesReguladoras": "https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2025/07/02/html/2025_5390.html&tipo=rutaDocm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1:día siguiente a publicación 2: 1 de septiembre  3:durante curso por traslado ocambio familiar",
+  "textFin": "1:10 habiles siguientes a pub 2: 1ªquincena sept  3:durante curso por traslado ocambio familiar",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476794,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026-06-16 RESOLUCION CONVOCATORIA AYUDAS CURSO 2026_2027_110101.PDF",
+      "long": 398011,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

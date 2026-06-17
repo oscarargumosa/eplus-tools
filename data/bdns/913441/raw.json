@@ -1,0 +1,92 @@
+{
+  "id": 1115002,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARROYO DE LA ENCOMIENDA",
+    "nivel3": "AYUNTAMIENTO DE ARROYO DE LA ENCOMIENDA"
+  },
+  "sedeElectronica": "www.aytoarroyo.es/sede-electrónica",
+  "codigoBDNS": "913441",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 36000,
+  "mrr": false,
+  "descripcion": "Resolución de 14 de abril 2026, de la Concejal Delegada de Deportes del Ayuntamiento de Arroyo de la E., convoca la concesión de subvenc. a clubes federados deportes colectivos de Arroyo de la E., para competic.oficiales 25-26, a nivel nacional o internac",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    },
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza General de subvenciones del Ayuntamiento de Arroyo de la Encomienda, aprobada por acuerdo del Pleno de fecha 24 de febrero de 2021, publicada en el B.P de Valladolid nº 88, de 11 de mayo de 2021.",
+  "urlBasesReguladoras": "www.aytoarroyo.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación convocatoria en el BOP",
+  "textFin": "Transcurridos diez días hábiles contados a partir del siguiente a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1476895,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1.- Convocatoria.pdf",
+      "long": 666436,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476899,
+      "descripcion": "Anexo II",
+      "nombreFic": "Anexo II Subvención Competición Nacional o Internacional.pdf",
+      "long": 99631,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476897,
+      "descripcion": "Anexo I",
+      "nombreFic": "Anexo I Subvención Competición Nacional o Internacional.pdf",
+      "long": 112598,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    },
+    {
+      "id": 1476896,
+      "descripcion": "Solicitud",
+      "nombreFic": "Solicitud Subvención Competición Nacional o Internacional.pdf",
+      "long": 105692,
+      "datMod": "2026-06-16",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
