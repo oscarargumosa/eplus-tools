@@ -1,0 +1,80 @@
+{
+  "id": 1109610,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "sece.uco.es",
+  "codigoBDNS": "908049",
+  "fechaRecepcion": "2026-05-26",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 32000,
+  "mrr": false,
+  "descripcion": "Resolución Vicerrectorado de Internacionalización, de 22/05/2026, por la que se aprueba la Convocatoria de Becas Erasmus+ (Acción KA1) Movilidad de Prácticas “SMT- Student Mobility\nfor Traineeships” Estudiantes de Grado y Máster. Curso 2025/26 2ªEdición",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo CG, de 31/10/2024, que aprueba el Reglamento 39/2024, sobre las Bases Reguladoras para la concesión en régimen de\nconcurrencia competitiva de becas y ayudas concedidas para movilidad nacional e internacional de la Universidad de Córdoba.",
+  "urlBasesReguladoras": "nacional e internacional de la Universidad de Córdoba.",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOUCO",
+  "textFin": "Diez días hábiles posteriores al del inicio",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1461799,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 25-26_2ªEdición.Fda.pdf",
+      "long": 413425,
+      "datMod": "2026-05-26",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 214979,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00737",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

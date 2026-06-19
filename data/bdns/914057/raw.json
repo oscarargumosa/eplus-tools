@@ -1,0 +1,155 @@
+{
+  "id": 1115618,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "DIRECCIÓN GENERAL DE DESARROLLO RURAL"
+  },
+  "sedeElectronica": "https://aradoacceso.juntaex.es/Paginas/Login)",
+  "codigoBDNS": "914057",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Ayudas 2026  Enfoque Leader a inversiones en acciones a renovación de poblaciones en las zonas rurales.(Intervención 7119 PEPAC), s/ II Convo (PEPAC 2023-2027) G.A.L. ADICOMT",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "Artes gráficas y reproducción de soportes grabados",
+      "codigo": "18"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "Confección de prendas de vestir",
+      "codigo": "14"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "Extracción de antracita, hulla, y lignito",
+      "codigo": "05"
+    },
+    {
+      "descripcion": "Fabricación de maquinaria y equipo n.c.o.p.",
+      "codigo": "28"
+    },
+    {
+      "descripcion": "Fabricación de material y equipo eléctrico",
+      "codigo": "27"
+    },
+    {
+      "descripcion": "Fabricación de muebles",
+      "codigo": "31"
+    },
+    {
+      "descripcion": "Fabricación de productos informáticos, electrónicos y ópticos",
+      "codigo": "26"
+    },
+    {
+      "descripcion": "Fabricación de productos metálicos, excepto maquinaria y equipo",
+      "codigo": "25"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "Industria del cuero y productos relacionados de otros materiales",
+      "codigo": "15"
+    },
+    {
+      "descripcion": "Industria del papel",
+      "codigo": "17"
+    },
+    {
+      "descripcion": "Industria textil",
+      "codigo": "13"
+    },
+    {
+      "descripcion": "Otras industrias manufactureras",
+      "codigo": "32"
+    },
+    {
+      "descripcion": "Seguros, reaseguros y planes de pensiones, excepto seguridad social obligatoria",
+      "codigo": "65"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Decreto 78/2024, de 23 de julio, por el que se regula el sistema de ayudas bajo metodología LEADER y el procedimiento de gestión, en el marco del Plan Estratégico de la Política Agrícola Común de España 2023-2027",
+  "urlBasesReguladoras": "https://doe.juntaex.es/pdfs/doe/2024/1460o/24040124.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación en el DOE",
+  "textFin": "2 meses",
+  "ayudaEstado": "SA.00000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.00000",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 60 AYUDAS DESTINADAS A PROYECTOS DE DLP"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478609,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria.PDF",
+      "long": 1771375,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

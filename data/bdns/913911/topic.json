@@ -1,0 +1,1072 @@
+{
+  "source": "bdns",
+  "source_id": "913911",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Orden del 3 de junio de 2026 por la que se establecen las bases reguladoras del programa ES-Transforma en cooperativas o sociedades laborales y se procede a su convocatoria para la anualidad 2026. (Convocatorias asociadas 907322 e 907330)",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-06-18",
+  "open_date": null,
+  "deadline": "2026-09-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1990800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.3",
+      "descripcion": "Acabado de edificios"
+    },
+    {
+      "codigo": "13.3",
+      "descripcion": "Acabado de textiles"
+    },
+    {
+      "codigo": "82.1",
+      "descripcion": "Actividades administrativas y auxiliares de oficina"
+    },
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    },
+    {
+      "codigo": "66.1",
+      "descripcion": "Actividades auxiliares a los servicios financieros, excepto seguros y fondos de pensiones"
+    },
+    {
+      "codigo": "66.2",
+      "descripcion": "Actividades auxiliares a seguros y fondos de pensiones"
+    },
+    {
+      "codigo": "52.2",
+      "descripcion": "Actividades auxiliares del transporte"
+    },
+    {
+      "codigo": "59.1",
+      "descripcion": "Actividades cinematográficas, de vídeo y de programas de televisión"
+    },
+    {
+      "codigo": "79.1",
+      "descripcion": "Actividades de agencias de viajes y operadores turísticos"
+    },
+    {
+      "codigo": "01.6",
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha"
+    },
+    {
+      "codigo": "09.1",
+      "descripcion": "Actividades de apoyo a la extracción de petróleo y gas natural"
+    },
+    {
+      "codigo": "09.9",
+      "descripcion": "Actividades de apoyo a otras industrias extractivas"
+    },
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "69.2",
+      "descripcion": "Actividades de contabilidad, teneduría de libros, auditoría y asesoría fiscal"
+    },
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    },
+    {
+      "codigo": "39",
+      "descripcion": "Actividades de descontaminación y otros servicios de gestión de residuos"
+    },
+    {
+      "codigo": "74.1",
+      "descripcion": "Actividades de diseño especializado"
+    },
+    {
+      "codigo": "74.2",
+      "descripcion": "Actividades de fotografía"
+    },
+    {
+      "codigo": "66.3",
+      "descripcion": "Actividades de gestión de fondos"
+    },
+    {
+      "codigo": "59.2",
+      "descripcion": "Actividades de grabación de sonido y edición musical"
+    },
+    {
+      "codigo": "64.3",
+      "descripcion": "Actividades de inversión colectiva, de fondos y de entidades financieras similares"
+    },
+    {
+      "codigo": "81.3",
+      "descripcion": "Actividades de jardinería"
+    },
+    {
+      "codigo": "92",
+      "descripcion": "Actividades de juegos de azar y apuestas"
+    },
+    {
+      "codigo": "78.1",
+      "descripcion": "Actividades de las agencias de colocación"
+    },
+    {
+      "codigo": "78.2",
+      "descripcion": "Actividades de las empresas de trabajo temporal y otra provisión de recursos humanos"
+    },
+    {
+      "codigo": "70.1",
+      "descripcion": "Actividades de las sedes centrales"
+    },
+    {
+      "codigo": "81.2",
+      "descripcion": "Actividades de limpieza"
+    },
+    {
+      "codigo": "82.2",
+      "descripcion": "Actividades de los centros de llamadas"
+    },
+    {
+      "codigo": "94.1",
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales"
+    },
+    {
+      "codigo": "63.9",
+      "descripcion": "Actividades de portales de búsqueda en la web y otras actividades de servicios de información"
+    },
+    {
+      "codigo": "60.2",
+      "descripcion": "Actividades de programación de televisión, emisión y distribución de vídeos"
+    },
+    {
+      "codigo": "60.1",
+      "descripcion": "Actividades de radiodifusión y distribución de audio"
+    },
+    {
+      "codigo": "47.9",
+      "descripcion": "Actividades de servicios de intermediación para el comercio al por menor"
+    },
+    {
+      "codigo": "88.1",
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad"
+    },
+    {
+      "codigo": "64.2",
+      "descripcion": "Actividades de sociedades holding y de sociedades instrumentales de financiación"
+    },
+    {
+      "codigo": "61.1",
+      "descripcion": "Actividades de telecomunicaciones por cable, inalámbricas y por satélite"
+    },
+    {
+      "codigo": "74.3",
+      "descripcion": "Actividades de traducción e interpretación"
+    },
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    },
+    {
+      "codigo": "86.1",
+      "descripcion": "Actividades hospitalarias"
+    },
+    {
+      "codigo": "68.3",
+      "descripcion": "Actividades inmobiliarias por cuenta de terceros"
+    },
+    {
+      "codigo": "68.1",
+      "descripcion": "Actividades inmobiliarias por cuenta propia y promoción inmobiliaria"
+    },
+    {
+      "codigo": "69.1",
+      "descripcion": "Actividades jurídicas"
+    },
+    {
+      "codigo": "86.2",
+      "descripcion": "Actividades médicas y odontológicas"
+    },
+    {
+      "codigo": "53.1",
+      "descripcion": "Actividades postales sometidas a la obligación del servicio universal"
+    },
+    {
+      "codigo": "94.2",
+      "descripcion": "Actividades sindicales"
+    },
+    {
+      "codigo": "75",
+      "descripcion": "Actividades veterinarias"
+    },
+    {
+      "codigo": "03.2",
+      "descripcion": "Acuicultura"
+    },
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    },
+    {
+      "codigo": "55.2",
+      "descripcion": "Alojamientos turísticos y otros alojamientos de corta estancia"
+    },
+    {
+      "codigo": "68.2",
+      "descripcion": "Alquiler de bienes inmobiliarios por cuenta propia"
+    },
+    {
+      "codigo": "77.2",
+      "descripcion": "Alquiler de efectos personales y artículos de uso doméstico"
+    },
+    {
+      "codigo": "77.3",
+      "descripcion": "Alquiler de otra maquinaria, equipos y bienes tangibles"
+    },
+    {
+      "codigo": "77.1",
+      "descripcion": "Alquiler de vehículos de motor"
+    },
+    {
+      "codigo": "77.4",
+      "descripcion": "Arrendamiento de la propiedad intelectual y productos similares, excepto obras protegidas por derechos de autor"
+    },
+    {
+      "codigo": "18.1",
+      "descripcion": "Artes gráficas y servicios relacionados con estas"
+    },
+    {
+      "codigo": "16.1",
+      "descripcion": "Aserrado y cepillado de la madera; transformación y acabado de la madera"
+    },
+    {
+      "codigo": "87.1",
+      "descripcion": "Asistencia en establecimientos residenciales con cuidados sanitarios"
+    },
+    {
+      "codigo": "87.3",
+      "descripcion": "Asistencia en establecimientos residenciales para personas mayores o con discapacidad física"
+    },
+    {
+      "codigo": "87.2",
+      "descripcion": "Asistencia en establecimientos residenciales para personas que padecen una enfermedad mental o una drogodependencia o que han recibido un diagnóstico al respecto"
+    },
+    {
+      "codigo": "55.3",
+      "descripcion": "Campings y aparcamientos para caravanas"
+    },
+    {
+      "codigo": "36",
+      "descripcion": "Captación, depuración y distribución de agua"
+    },
+    {
+      "codigo": "01.7",
+      "descripcion": "Caza, captura de animales y servicios relacionados"
+    },
+    {
+      "codigo": "46.4",
+      "descripcion": "Comercio al por mayor de artículos de uso doméstico"
+    },
+    {
+      "codigo": "46.5",
+      "descripcion": "Comercio al por mayor de equipos para las tecnologías de la información y las comunicaciones"
+    },
+    {
+      "codigo": "46.2",
+      "descripcion": "Comercio al por mayor de materias primas agrarias y de animales vivos"
+    },
+    {
+      "codigo": "46.6",
+      "descripcion": "Comercio al por mayor de otra maquinaria, equipos y suministros"
+    },
+    {
+      "codigo": "46.3",
+      "descripcion": "Comercio al por mayor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "46.9",
+      "descripcion": "Comercio al por mayor no especializado"
+    },
+    {
+      "codigo": "47.6",
+      "descripcion": "Comercio al por menor de artículos culturales y recreativos"
+    },
+    {
+      "codigo": "47.3",
+      "descripcion": "Comercio al por menor de combustible para la automoción"
+    },
+    {
+      "codigo": "47.4",
+      "descripcion": "Comercio al por menor de equipos para las tecnologías de la información y las comunicaciones"
+    },
+    {
+      "codigo": "47.5",
+      "descripcion": "Comercio al por menor de otros artículos de uso doméstico"
+    },
+    {
+      "codigo": "47.7",
+      "descripcion": "Comercio al por menor de otros artículos, excepto vehículos de motor y motocicletas"
+    },
+    {
+      "codigo": "47.2",
+      "descripcion": "Comercio al por menor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "47.1",
+      "descripcion": "Comercio al por menor no especializado"
+    },
+    {
+      "codigo": "14.2",
+      "descripcion": "Confección de otras prendas de vestir y accesorios"
+    },
+    {
+      "codigo": "14.1",
+      "descripcion": "Confección de prendas de vestir de punto"
+    },
+    {
+      "codigo": "30.3",
+      "descripcion": "Construcción aeronáutica y espacial y su maquinaria"
+    },
+    {
+      "codigo": "42.1",
+      "descripcion": "Construcción de carreteras y vías férreas"
+    },
+    {
+      "codigo": "41",
+      "descripcion": "Construcción de edificios"
+    },
+    {
+      "codigo": "42.9",
+      "descripcion": "Construcción de otros proyectos de ingeniería civil"
+    },
+    {
+      "codigo": "42.2",
+      "descripcion": "Construcción de redes"
+    },
+    {
+      "codigo": "30.1",
+      "descripcion": "Construcción naval"
+    },
+    {
+      "codigo": "19.1",
+      "descripcion": "Coquerías"
+    },
+    {
+      "codigo": "23.7",
+      "descripcion": "Corte, tallado y acabado de la piedra"
+    },
+    {
+      "codigo": "01.1",
+      "descripcion": "Cultivos no perennes"
+    },
+    {
+      "codigo": "01.2",
+      "descripcion": "Cultivos perennes"
+    },
+    {
+      "codigo": "43.1",
+      "descripcion": "Demolición y preparación de terrenos"
+    },
+    {
+      "codigo": "52.1",
+      "descripcion": "Depósito y almacenamiento"
+    },
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    },
+    {
+      "codigo": "58.2",
+      "descripcion": "Edición de programas informáticos"
+    },
+    {
+      "codigo": "85.1",
+      "descripcion": "Educación preprimaria"
+    },
+    {
+      "codigo": "85.2",
+      "descripcion": "Educación primaria"
+    },
+    {
+      "codigo": "85.3",
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria"
+    },
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    },
+    {
+      "codigo": "71.2",
+      "descripcion": "Ensayos y análisis técnicos"
+    },
+    {
+      "codigo": "73.2",
+      "descripcion": "Estudios de mercado y realización de encuestas de opinión pública"
+    },
+    {
+      "codigo": "02.2",
+      "descripcion": "Explotación de la madera"
+    },
+    {
+      "codigo": "05.1",
+      "descripcion": "Extracción de antracita y hulla"
+    },
+    {
+      "codigo": "06.1",
+      "descripcion": "Extracción de crudo de petróleo"
+    },
+    {
+      "codigo": "06.2",
+      "descripcion": "Extracción de gas natural"
+    },
+    {
+      "codigo": "05.2",
+      "descripcion": "Extracción de lignito"
+    },
+    {
+      "codigo": "07.1",
+      "descripcion": "Extracción de minerales de hierro"
+    },
+    {
+      "codigo": "07.2",
+      "descripcion": "Extracción de minerales metálicos no férreos"
+    },
+    {
+      "codigo": "08.1",
+      "descripcion": "Extracción de piedra, arena y arcilla"
+    },
+    {
+      "codigo": "10.4",
+      "descripcion": "Fabricación de aceites y grasas vegetales y animales"
+    },
+    {
+      "codigo": "27.5",
+      "descripcion": "Fabricación de aparatos domésticos"
+    },
+    {
+      "codigo": "25.6",
+      "descripcion": "Fabricación de artículos de cuchillería y cubertería, herramientas y ferretería"
+    },
+    {
+      "codigo": "32.3",
+      "descripcion": "Fabricación de artículos de deporte"
+    },
+    {
+      "codigo": "32.1",
+      "descripcion": "Fabricación de artículos de joyería, bisutería y similares"
+    },
+    {
+      "codigo": "20.4",
+      "descripcion": "Fabricación de artículos de lavado, limpieza y abrillantamiento"
+    },
+    {
+      "codigo": "17.2",
+      "descripcion": "Fabricación de artículos de papel y de cartón"
+    },
+    {
+      "codigo": "11",
+      "descripcion": "Fabricación de bebidas"
+    },
+    {
+      "codigo": "27.3",
+      "descripcion": "Fabricación de cables y dispositivos de cableado"
+    },
+    {
+      "codigo": "15.2",
+      "descripcion": "Fabricación de calzado"
+    },
+    {
+      "codigo": "29.2",
+      "descripcion": "Fabricación de carrocerías para vehículos de motor; fabricación de remolques y semirremolques"
+    },
+    {
+      "codigo": "23.5",
+      "descripcion": "Fabricación de cemento, cal y yeso"
+    },
+    {
+      "codigo": "25.2",
+      "descripcion": "Fabricación de cisternas, grandes depósitos y contenedores de metal"
+    },
+    {
+      "codigo": "26.1",
+      "descripcion": "Fabricación de componentes electrónicos y circuitos impresos ensamblados"
+    },
+    {
+      "codigo": "23.6",
+      "descripcion": "Fabricación de elementos de hormigón, cemento y yeso"
+    },
+    {
+      "codigo": "25.1",
+      "descripcion": "Fabricación de elementos metálicos para la construcción"
+    },
+    {
+      "codigo": "27.4",
+      "descripcion": "Fabricación de equipos de iluminación"
+    },
+    {
+      "codigo": "26.6",
+      "descripcion": "Fabricación de equipos de radiación, electromédicos y electroterapéuticos"
+    },
+    {
+      "codigo": "26.3",
+      "descripcion": "Fabricación de equipos de telecomunicaciones"
+    },
+    {
+      "codigo": "21.2",
+      "descripcion": "Fabricación de especialidades farmacéuticas"
+    },
+    {
+      "codigo": "20.6",
+      "descripcion": "Fabricación de fibras artificiales y sintéticas"
+    },
+    {
+      "codigo": "26.5",
+      "descripcion": "Fabricación de instrumentos de verificación de medidas y relojes"
+    },
+    {
+      "codigo": "32.2",
+      "descripcion": "Fabricación de instrumentos musicales"
+    },
+    {
+      "codigo": "26.7",
+      "descripcion": "Fabricación de instrumentos ópticos, soportes magnéticos y ópticos y equipos fotográficos"
+    },
+    {
+      "codigo": "32.5",
+      "descripcion": "Fabricación de instrumentos y suministros médicos y odontológicos"
+    },
+    {
+      "codigo": "32.4",
+      "descripcion": "Fabricación de juegos y juguetes"
+    },
+    {
+      "codigo": "30.2",
+      "descripcion": "Fabricación de locomotoras y material ferroviario"
+    },
+    {
+      "codigo": "28.3",
+      "descripcion": "Fabricación de maquinaria agraria y forestal"
+    },
+    {
+      "codigo": "28.1",
+      "descripcion": "Fabricación de maquinaria de uso general"
+    },
+    {
+      "codigo": "28.4",
+      "descripcion": "Fabricación de maquinaria para el conformado de metales y de máquinas herramienta"
+    },
+    {
+      "codigo": "27.1",
+      "descripcion": "Fabricación de motores, generadores y transformadores eléctricos, y de aparatos de distribución y control eléctrico"
+    },
+    {
+      "codigo": "31",
+      "descripcion": "Fabricación de muebles"
+    },
+    {
+      "codigo": "26.2",
+      "descripcion": "Fabricación de ordenadores y equipos periféricos"
+    },
+    {
+      "codigo": "28.2",
+      "descripcion": "Fabricación de otra maquinaria de uso general"
+    },
+    {
+      "codigo": "28.9",
+      "descripcion": "Fabricación de otra maquinaria para usos específicos"
+    },
+    {
+      "codigo": "30.9",
+      "descripcion": "Fabricación de otro material de transporte n.c.o.p."
+    },
+    {
+      "codigo": "27.9",
+      "descripcion": "Fabricación de otro material y equipo eléctrico"
+    },
+    {
+      "codigo": "10.8",
+      "descripcion": "Fabricación de otros productos alimenticios"
+    },
+    {
+      "codigo": "23.4",
+      "descripcion": "Fabricación de otros productos cerámicos"
+    },
+    {
+      "codigo": "24.3",
+      "descripcion": "Fabricación de otros productos de primera transformación del acero"
+    },
+    {
+      "codigo": "25.9",
+      "descripcion": "Fabricación de otros productos metálicos"
+    },
+    {
+      "codigo": "20.5",
+      "descripcion": "Fabricación de otros productos químicos"
+    },
+    {
+      "codigo": "13.9",
+      "descripcion": "Fabricación de otros productos textiles"
+    },
+    {
+      "codigo": "17.1",
+      "descripcion": "Fabricación de pasta papelera, papel y cartón"
+    },
+    {
+      "codigo": "20.2",
+      "descripcion": "Fabricación de pesticidas, desinfectantes y otros productos agroquímicos"
+    },
+    {
+      "codigo": "27.2",
+      "descripcion": "Fabricación de pilas y acumuladores eléctricos"
+    },
+    {
+      "codigo": "20.3",
+      "descripcion": "Fabricación de pinturas, barnices y revestimientos similares, tintas de imprenta y masillas"
+    },
+    {
+      "codigo": "23.9",
+      "descripcion": "Fabricación de productos abrasivos y productos minerales no metálicos n.c.o.p."
+    },
+    {
+      "codigo": "24.1",
+      "descripcion": "Fabricación de productos básicos de hierro, acero y ferroaleaciones"
+    },
+    {
+      "codigo": "23.3",
+      "descripcion": "Fabricación de productos cerámicos para la construcción"
+    },
+    {
+      "codigo": "23.2",
+      "descripcion": "Fabricación de productos cerámicos refractarios"
+    },
+    {
+      "codigo": "22.1",
+      "descripcion": "Fabricación de productos de caucho"
+    },
+    {
+      "codigo": "16.2",
+      "descripcion": "Fabricación de productos de madera, corcho, cestería y espartería"
+    },
+    {
+      "codigo": "10.6",
+      "descripcion": "Fabricación de productos de molinería, almidones y productos amiláceos"
+    },
+    {
+      "codigo": "10.7",
+      "descripcion": "Fabricación de productos de panadería y pastas alimenticias"
+    },
+    {
+      "codigo": "22.2",
+      "descripcion": "Fabricación de productos de plástico"
+    },
+    {
+      "codigo": "26.4",
+      "descripcion": "Fabricación de productos electrónicos de consumo"
+    },
+    {
+      "codigo": "21.1",
+      "descripcion": "Fabricación de productos farmacéuticos de base"
+    },
+    {
+      "codigo": "10.5",
+      "descripcion": "Fabricación de productos lácteos y hielo comestible"
+    },
+    {
+      "codigo": "10.9",
+      "descripcion": "Fabricación de productos para la alimentación animal"
+    },
+    {
+      "codigo": "20.1",
+      "descripcion": "Fabricación de productos químicos básicos, compuestos nitrogenados, fertilizantes, plásticos y caucho sintético en formas primarias"
+    },
+    {
+      "codigo": "29.3",
+      "descripcion": "Fabricación de repuestos y accesorios de vehículos de motor"
+    },
+    {
+      "codigo": "13.2",
+      "descripcion": "Fabricación de tejidos textiles"
+    },
+    {
+      "codigo": "24.2",
+      "descripcion": "Fabricación de tubos, tuberías, perfiles huecos y sus accesorios, de acero"
+    },
+    {
+      "codigo": "29.1",
+      "descripcion": "Fabricación de vehículos de motor"
+    },
+    {
+      "codigo": "30.4",
+      "descripcion": "Fabricación de vehículos militares de combate"
+    },
+    {
+      "codigo": "23.1",
+      "descripcion": "Fabricación de vidrio y productos de vidrio"
+    },
+    {
+      "codigo": "65.3",
+      "descripcion": "Fondos de pensiones"
+    },
+    {
+      "codigo": "25.4",
+      "descripcion": "Forja y modelado de metales y metalurgia de polvos"
+    },
+    {
+      "codigo": "24.5",
+      "descripcion": "Fundición de metales"
+    },
+    {
+      "codigo": "55.1",
+      "descripcion": "Hoteles y alojamientos similares"
+    },
+    {
+      "codigo": "12",
+      "descripcion": "Industria del tabaco"
+    },
+    {
+      "codigo": "08.9",
+      "descripcion": "Industrias extractivas n.c.o.p."
+    },
+    {
+      "codigo": "32.9",
+      "descripcion": "Industrias manufactureras n.c.o.p."
+    },
+    {
+      "codigo": "63.1",
+      "descripcion": "Infraestructura informática, procesamiento de datos, hosting y actividades relacionadas"
+    },
+    {
+      "codigo": "33.2",
+      "descripcion": "Instalación de máquinas y equipos industriales"
+    },
+    {
+      "codigo": "43.2",
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción"
+    },
+    {
+      "codigo": "64.1",
+      "descripcion": "Intermediación monetaria"
+    },
+    {
+      "codigo": "46.1",
+      "descripcion": "Intermediarios del comercio al por mayor"
+    },
+    {
+      "codigo": "72.1",
+      "descripcion": "Investigación y desarrollo experimental en ciencias naturales y técnicas"
+    },
+    {
+      "codigo": "72.2",
+      "descripcion": "Investigación y desarrollo experimental en ciencias sociales y humanidades"
+    },
+    {
+      "codigo": "82.3",
+      "descripcion": "Organización de convenciones y ferias de muestras"
+    },
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    },
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    },
+    {
+      "codigo": "82.9",
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "87.9",
+      "descripcion": "Otras actividades de asistencia en establecimientos residenciales"
+    },
+    {
+      "codigo": "43.9",
+      "descripcion": "Otras actividades de construcción especializada"
+    },
+    {
+      "codigo": "70.2",
+      "descripcion": "Otras actividades de consultoría de gestión empresarial"
+    },
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    },
+    {
+      "codigo": "61.9",
+      "descripcion": "Otras actividades de telecomunicaciones"
+    },
+    {
+      "codigo": "53.2",
+      "descripcion": "Otras actividades postales y de mensajería"
+    },
+    {
+      "codigo": "74.9",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas n.c.o.p."
+    },
+    {
+      "codigo": "93.2",
+      "descripcion": "Otras actividades recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "86.9",
+      "descripcion": "Otras actividades sanitarias"
+    },
+    {
+      "codigo": "46.8",
+      "descripcion": "Otro comercio al por mayor especializado"
+    },
+    {
+      "codigo": "49.3",
+      "descripcion": "Otro transporte terrestre de pasajeros"
+    },
+    {
+      "codigo": "55.9",
+      "descripcion": "Otros alojamientos"
+    },
+    {
+      "codigo": "79.9",
+      "descripcion": "Otros servicios de reservas y actividades relacionadas con los mismos"
+    },
+    {
+      "codigo": "64.9",
+      "descripcion": "Otros servicios financieros, excepto seguros y fondos de pensiones"
+    },
+    {
+      "codigo": "03.1",
+      "descripcion": "Pesca"
+    },
+    {
+      "codigo": "13.1",
+      "descripcion": "Preparación e hilado de fibras textiles"
+    },
+    {
+      "codigo": "15.1",
+      "descripcion": "Preparación, teñido y curtido de cueros y pieles; fabricación de artículos de marroquinería, viaje y de guarnicionería y talabartería"
+    },
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    },
+    {
+      "codigo": "10.1",
+      "descripcion": "Procesado y conservación de carne y elaboración de productos cárnicos"
+    },
+    {
+      "codigo": "10.3",
+      "descripcion": "Procesado y conservación de frutas y hortalizas"
+    },
+    {
+      "codigo": "10.2",
+      "descripcion": "Procesado y conservación de pescados, crustáceos y moluscos"
+    },
+    {
+      "codigo": "01.5",
+      "descripcion": "Producción agrícola combinada con la producción ganadera"
+    },
+    {
+      "codigo": "35.2",
+      "descripcion": "Producción de gas y distribución por tubería de combustibles gaseosos"
+    },
+    {
+      "codigo": "24.4",
+      "descripcion": "Producción de metales preciosos y de otros metales no férreos"
+    },
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    },
+    {
+      "codigo": "35.1",
+      "descripcion": "Producción, transporte y distribución de energía eléctrica"
+    },
+    {
+      "codigo": "62",
+      "descripcion": "Programación, consultoría y otras actividades relacionadas con la informática"
+    },
+    {
+      "codigo": "01.3",
+      "descripcion": "Propagación de plantas"
+    },
+    {
+      "codigo": "73.1",
+      "descripcion": "Publicidad"
+    },
+    {
+      "codigo": "65.2",
+      "descripcion": "Reaseguros"
+    },
+    {
+      "codigo": "38.1",
+      "descripcion": "Recogida de residuos "
+    },
+    {
+      "codigo": "37",
+      "descripcion": "Recogida y tratamiento de aguas residuales"
+    },
+    {
+      "codigo": "02.3",
+      "descripcion": "Recolección de productos silvestres, excepto madera"
+    },
+    {
+      "codigo": "19.2",
+      "descripcion": "Refino de petróleo y de combustibles fósiles"
+    },
+    {
+      "codigo": "95.2",
+      "descripcion": "Reparación y mantenimiento de efectos personales y artículos de uso doméstico"
+    },
+    {
+      "codigo": "95.1",
+      "descripcion": "Reparación y mantenimiento de ordenadores y equipos de comunicación"
+    },
+    {
+      "codigo": "33.1",
+      "descripcion": "Reparación y mantenimiento de productos metálicos, maquinaria y equipos"
+    },
+    {
+      "codigo": "95.3",
+      "descripcion": "Reparación y mantenimiento de vehículos de motor y motocicletas"
+    },
+    {
+      "codigo": "18.2",
+      "descripcion": "Reproducción de soportes grabados"
+    },
+    {
+      "codigo": "56.1",
+      "descripcion": "Restaurantes y puestos de comidas"
+    },
+    {
+      "codigo": "84.3",
+      "descripcion": "Seguridad social obligatoria"
+    },
+    {
+      "codigo": "65.1",
+      "descripcion": "Seguros"
+    },
+    {
+      "codigo": "02.4",
+      "descripcion": "Servicios de apoyo a la silvicultura"
+    },
+    {
+      "codigo": "56.3",
+      "descripcion": "Servicios de bebidas"
+    },
+    {
+      "codigo": "56.2",
+      "descripcion": "Servicios de catering y otros servicios de comidas"
+    },
+    {
+      "codigo": "80",
+      "descripcion": "Servicios de investigación y seguridad"
+    },
+    {
+      "codigo": "81.1",
+      "descripcion": "Servicios integrales a edificios e instalaciones"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    },
+    {
+      "codigo": "71.1",
+      "descripcion": "Servicios técnicos de arquitectura e ingeniería y otras actividades relacionadas con el asesoramiento técnico"
+    },
+    {
+      "codigo": "02.1",
+      "descripcion": "Silvicultura y otras actividades forestales"
+    },
+    {
+      "codigo": "35.3",
+      "descripcion": "Suministro de vapor y aire acondicionado "
+    },
+    {
+      "codigo": "51.2",
+      "descripcion": "Transporte aéreo de mercancías y transporte espacial"
+    },
+    {
+      "codigo": "51.1",
+      "descripcion": "Transporte aéreo de pasajeros"
+    },
+    {
+      "codigo": "49.4",
+      "descripcion": "Transporte de mercancías por carretera y servicios de mudanza"
+    },
+    {
+      "codigo": "49.2",
+      "descripcion": "Transporte de mercancías por ferrocarril"
+    },
+    {
+      "codigo": "50.4",
+      "descripcion": "Transporte de mercancías por vías navegables interiores"
+    },
+    {
+      "codigo": "49.1",
+      "descripcion": "Transporte de pasajeros por ferrocarril"
+    },
+    {
+      "codigo": "50.3",
+      "descripcion": "Transporte de pasajeros por vías navegables interiores"
+    },
+    {
+      "codigo": "50.2",
+      "descripcion": "Transporte marítimo de mercancías"
+    },
+    {
+      "codigo": "50.1",
+      "descripcion": "Transporte marítimo de pasajeros"
+    },
+    {
+      "codigo": "49.5",
+      "descripcion": "Transporte por tubería"
+    },
+    {
+      "codigo": "25.5",
+      "descripcion": "Tratamiento, revestimiento y mecanizado de metales"
+    },
+    {
+      "codigo": "38.2",
+      "descripcion": "Valorización de residuos"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913911",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.xunta.gal/diario-oficial-galicia",
+  "text_inicio": "El quinto día hábil posterior al día de la publicación de esta orden en el Diario Oficial de Galicia",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.397Z"
+}

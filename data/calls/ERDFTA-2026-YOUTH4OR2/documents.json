@@ -15,6 +15,27 @@
   },
   {
     "section": "Call document and annexes:",
+    "label": "Call document_fr",
+    "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_fr.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Call document_es",
+    "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_es.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Call document_pt",
+    "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_pt.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
     "label": "Standard application form (ERDF-TA)",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erdf-ta/temp-form/af/af_erdf-ta_en.pdf",
     "ext": ".pdf",

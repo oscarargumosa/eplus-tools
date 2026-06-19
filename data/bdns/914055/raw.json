@@ -1,0 +1,64 @@
+{
+  "id": 1115616,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "DIRECCIÓN GENERAL DE INNOVACIÓN Y PROMOCIÓN AGROALIMENTARIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "914055",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "ORDEN AGA/.../2026, de 16 de junio de 2026, por la que se convocan subvenciones\ndestinadas al apoyo de la calidad diferenciada de productos alimenticios en la\nprovincia de Teruel, para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN AGA/562/2026, de 7 de abril, por la que se modifica la Orden AGA/1478/2023, de 17 de octubre, por la que se aprueban las bases reguladoras para la concesión de ayudas destinadas al apoyo de la calidad diferenciada de productos alimentarios en la pro",
+  "urlBasesReguladoras": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1444605470303&type=pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación de la presente orden en el Boletín Oficial de Aragón",
+  "textFin": "15 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BOA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478547,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden convocatoria FITE 2026.pdf",
+      "long": 501487,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

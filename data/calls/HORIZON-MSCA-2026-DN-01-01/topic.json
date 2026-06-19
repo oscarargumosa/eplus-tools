@@ -70,8 +70,22 @@
     },
     {
       "section": "Specific conditions",
-      "label": "Call Information Event",
-      "url": "https://research-innovation-community.ec.europa.eu/events/2XY6YtKZvqh6A65ty9isjR/overview",
+      "label": "recording",
+      "url": "https://www.youtube.com/watch?v=FRmrrqWUN_4",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Specific conditions",
+      "label": "Presentation",
+      "url": "https://circabc.europa.eu/ui/group/0d6109dc-828d-4995-b5ac-e28e88ec5d49/library/e5133bba-6db8-482b-959e-71650c25087a/details",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Specific conditions",
+      "label": "Frequently Asked Questions",
+      "url": "https://circabc.europa.eu/ui/group/0d6109dc-828d-4995-b5ac-e28e88ec5d49/library/08b10e0d-1dfd-41ae-9ab7-c1becbbafbc4/details",
       "ext": "",
       "is_downloadable": false
     },
@@ -188,5 +202,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-18T04:02:18.514Z"
+  "fetchedAt": "2026-06-19T04:04:36.103Z"
 }

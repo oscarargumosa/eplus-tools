@@ -1,0 +1,64 @@
+{
+  "id": 1115461,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN ROQUE",
+    "nivel3": "AYUNTAMIENTO DE SAN ROQUE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913900",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 120000,
+  "mrr": false,
+  "descripcion": "SUBVENCIÓN PARA ESCUELAS DEPORTIVAS TEMPORADA 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES612 - Cádiz"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "SUBVENCIÓN PARA ESCUELAS DEPORTIVAS TEMPORADA 26-27",
+  "urlBasesReguladoras": "https://transparencia.sanroque.es/portal-de-transparencia/normativa-municipal/procedimientos-libre-concurrencia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACIÓN EN EL BOP DE CÁDIZ",
+  "textFin": "30 DÍAS NATURALES TRAS PUBLICACIÓN EN BOP CÁDIZ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478233,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES_REGUALDORAS_DEL_PROCEDIMIENTO_DE_ADJUDICACIÓN_DE_LAS_ESCUELAS_DEPORTIVAS_DE_BASE_PARA_LA_TEMPORADA_2026_2027_Y_LA_CONCESIÓN_DE_SUBVENCIONES_PARA_SU_DESARROLLO.pdf",
+      "long": 749076,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

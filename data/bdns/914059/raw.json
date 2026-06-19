@@ -1,0 +1,80 @@
+{
+  "id": 1115620,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANSILLA DE LAS MULAS",
+    "nivel3": "AYUNTAMIENTO DE MANSILLA DE LAS MULAS"
+  },
+  "sedeElectronica": "https://ayto-mansilla.sedelectronica.es/info.0",
+  "codigoBDNS": "914059",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 11600,
+  "mrr": false,
+  "descripcion": "Resolución de 17 de junio de 2026 de la Alcaldia por la que se convocan subvenciones destinadas a asociaciones sin ánimo de lucro de ambito municipal de  Mansilla de las Mulas para la realización de actividades culturales, educativas y deportivas.Año 2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases de la convocatoria publica para la concesión de subvenciones destinadas a asociaciones sin animo de lucro de ambito municipal de Mansilla de las Mulas para la realización de actividades culturales,educativas y deportivas.Año 2025",
+  "urlBasesReguladoras": "http://www.aytomansilladelasmulas.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia siguiente a la publicacion de la convocatoria en el Boletin Oficial de la Provincia",
+  "textFin": "15 dias naturales desde inicio del plazo de solicitud",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478586,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolucion aprobando bases y convocatoria.pdf",
+      "long": 345801,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    },
+    {
+      "id": 1478589,
+      "descripcion": "Anexos",
+      "nombreFic": "_Anexos.pdf",
+      "long": 241078,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    },
+    {
+      "id": 1478587,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "Modelo de solicitud.pdf",
+      "long": 209989,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "914082",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TORELLÓ / AYUNTAMIENTO DE TORELLÓ",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "SUBVENCIONES PARA LA REALIZACIÓN DE ACTIVIDADES EXTRAESCOLARES PARA EL CURSO 2026-2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-18",
+  "open_date": null,
+  "deadline": "2026-09-09",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 42000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914082",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "CERTIFICAT ACORD JGL DEL 15/06/2026",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anunci/3413965/aprovacio-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-per-a-la-realitzacio-d-activitats-extraescolars-d-infants-i-joves-versio-en-catala-i-castella-ajuntament-de-torello",
+  "text_inicio": "A partir del dia siguiente de la publicación del anuncio en el BOPB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.431Z"
+}

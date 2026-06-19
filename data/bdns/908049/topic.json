@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "908049",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "Resolución Vicerrectorado de Internacionalización, de 22/05/2026, por la que se aprueba la Convocatoria de Becas Erasmus+ (Acción KA1) Movilidad de Prácticas “SMT- Student Mobility\nfor Traineeships” Estudiantes de Grado y Máster. Curso 2025/26 2ªEdición",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-26",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 32000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "sece.uco.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/908049",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "nacional e internacional de la Universidad de Córdoba.",
+  "text_inicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOUCO",
+  "text_fin": "Diez días hábiles posteriores al del inicio",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 214979,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00737",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-06-16"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:53.418Z"
+}

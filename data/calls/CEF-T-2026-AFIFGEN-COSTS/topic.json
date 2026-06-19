@@ -1,0 +1,150 @@
+{
+  "identifier": "CEF-T-2026-AFIFGEN-COSTS",
+  "ccm2Id": "51468086",
+  "callIdentifier": "CEF-T-2026-AFIFGEN",
+  "callTitle": "CEF 2 Transport - Alternative Fuels Infrastructure Facility - General envelope",
+  "title": "Alternative Fuel Infrastructure Facility: Road & Air Transport - works",
+  "programme": "Connecting Europe Facility",
+  "programmeCode": "43251567",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-06-18",
+  "deadline": "2026-10-06",
+  "deadlineModel": "single-stage",
+  "actionType": "CEF Infrastructure Projects",
+  "actionCode": "CEF-INFRA",
+  "mgaCode": "CEF-AG",
+  "budget": {
+    "total_eur": 130000000,
+    "by_year": {
+      "2026": 130000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "CEF-T-2026-AFIFGEN-COSTS",
+    "CEF-T-2026-AFIFGEN"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact CINEA-CEF-TRANSPORT-CALLS@ec.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44881?topic=CEF-T-2026-AFIFGEN-COSTS",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CEF-T-2026-AFIFGEN-COSTS",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/wp-call/2026/call-fiche_cef-t-2026-afifgen_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "2. Eligible countries",
+      "label": ".",
+      "url": " https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/wp-call/2026/call-fiche_cef-t-2026-afifgen_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/af_cef-t_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table per WP",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/detailed-budget-table-per-wp_cef_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Letter of support/MS agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/letter-of-support-ms-agreement_cef_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Environmental compliance file",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/environmental-compliance-file_cef-t-cef-e_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Financial Approval Letter",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/temp-form/af/non-ip-financial-approval-letter_cef-t-afif_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Amended Work Programme 2021-2027 - 5 June 2026",
+      "url": "https://transport.ec.europa.eu/transport-themes/infrastructure-and-investment/connecting-europe-facility/reference-documents-work_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "CEF Regulation 2021/1153",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=uriserv:OJ.L_.2021.249.01.0038.01.ENG",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-19T04:04:36.122Z"
+}

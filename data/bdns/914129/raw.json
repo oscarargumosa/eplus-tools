@@ -1,0 +1,64 @@
+{
+  "id": 1115690,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MEDINA DEL CAMPO",
+    "nivel3": "AYUNTAMIENTO DE MEDINA DEL CAMPO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "914129",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "BASES DEL CONCURSO DE IDEAS “III BECA RODRIGO DE DUEÑAS: EL FUTURO DE MEDINA, MI FUTURO.",
+  "descripcionLeng": "Concurso diseñado para incentivar la creatividad y el talento local, con el objetivo de generar propuestas que aborden los retos y oportunidades de Medina del Campo en los próximos años, potenciando a su vez el protagonismo de la juventud en la planificac",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DEL CONCURSO DE IDEAS “III BECA RODRIGO DE DUEÑAS: EL FUTURO DE MEDINA, MI FUTURO”.",
+  "urlBasesReguladoras": "https://www.ayto-medinadelcampo.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a su publiación en el tablón de anuncios del Ayuntamiento",
+  "textFin": "15 de septiembre de 2026.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478745,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES_Y_CONVOCATORIA_CONCURSO_DE_IDEAS__III_BECA_RODRIGO_DE_DUE_AS__EL_FUTURO_DE_MEDINA__MI_FUTURO_.pdf",
+      "long": 189709,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

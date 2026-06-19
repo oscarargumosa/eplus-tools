@@ -33,50 +33,8 @@
   "documents": [
     {
       "section": "1. Admissibility conditions: Proposal page limit and layout",
-      "label": "document publication form",
-      "url": "https://t-rex.net1.cec.eu.int/call-publication-form/",
-      "ext": "",
-      "is_downloadable": false
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (COMP)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-comp_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (CONS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cons_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (CONS OG)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cons-og_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (COSME)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cosme_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (COSME EEN)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-cosme-een_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (ESS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-ess_en.pdf",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/wp-call/2026/call-fiche_smp-food-2026-fw-stakeholders-pj_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -89,76 +47,6 @@
     },
     {
       "section": "Call document and annexes:",
-      "label": "Standard proposal template (STAND)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-stand_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (STAND OG)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-stand-og_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Standard proposal template (SURV EUTF)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/af_smp-surv-eutf_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (CONS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons_en.xlsx",
-      "ext": ".xlsx",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (CONS Low Value)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons-low-value_en.xlsx",
-      "ext": ".xlsx",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (CONS OG)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cons-og_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (COSME)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (COSME GFS 75%)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme-grants-for-financial-support-75-percent_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (COSME EEN)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-cosme-een_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Detailed budget template (ESS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-ess_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
       "label": "Detailed budget template (FOOD)",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-food_en.xlsm",
       "ext": ".xlsm",
@@ -166,50 +54,8 @@
     },
     {
       "section": "Call document and annexes:",
-      "label": "Detailed budget template (STAND OG)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/detailed-budget-table_smp-stand-og_en.xlsm",
-      "ext": ".xlsm",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Calculator (ESS LS IFS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/calculator_smp-ess-ls-ifs_en.xlsx",
-      "ext": ".xlsx",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Communication Work Plan (COSME ONE)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/communication-work-plan_smp-cosme-een_en.docx",
-      "ext": ".docx",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Request for unit cost grid validation (SME ESS)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/temp-form/af/request-for-unit-cost-grid-validation_smp-ess_en.docx",
-      "ext": ".docx",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
       "label": "SMP MGA",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/smp/agr-contr/general-mga_smp_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Lump Sum MGA",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Call document and annexes:",
-      "label": "Operating Grants MGA",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/og-mga_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -270,5 +116,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-17T04:04:28.477Z"
+  "fetchedAt": "2026-06-19T04:04:36.041Z"
 }

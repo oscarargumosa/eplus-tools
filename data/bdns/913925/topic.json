@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "913925",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE VALLADOLID / DIPUTACIÓN PROVINCIAL DE VALLADOLID",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "Acuerdo de Pleno nº 100/26 de 29/05/26 por el que se aprueba convocatoria subv. aytos provincia Valladolid para adquisición material escolar alumnado matriculado segundo ciclo educación infantil 2026/2027",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-18",
+  "open_date": null,
+  "deadline": "2026-09-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 201000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913925",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Acuerdo aprobación convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo II",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputaciondevalladolid.es/documents/10181/1090769/ORDENANZA+GENERAL+DE+SUBVENCIONES/d5d6fb94-fd7a-444b-bb18-6c50ffec90e0",
+  "text_inicio": "A partir del día siguiente a su publicación en el BOP",
+  "text_fin": "Hasta las 14:00 horas",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.403Z"
+}

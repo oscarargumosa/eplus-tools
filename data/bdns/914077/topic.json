@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "914077",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MÁLAGA / AYUNTAMIENTO DE MÁLAGA",
+  "nuts_codes": [
+    "ES617"
+  ],
+  "nuts_primary": "ES617",
+  "title": "CONVOCATORIA GENERAL DEL ÁREA DE DEPORTE PARA CLUBES Y ENTIDADES DEPORTIVAS SIN ÁNIMO DE LUCRO, AÑO 2.026. LINEA 1 PARA GASTOS DERIVADOS DE LA PARTICIPACIÓN DE CLUBES MALAGUEÑOS EN COMPETICIONES POR EQUIPOS DE CATEGORÍAS MÁXIMAS",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-06-18",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 11500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914077",
+  "documents": [
+    {
+      "label": "CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.pap.minhap.gob.es/bdnstrans/GE/es/index",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOPMA",
+  "text_fin": "A LOS 20 DÍAS NATURALES A CONTAR DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.431Z"
+}

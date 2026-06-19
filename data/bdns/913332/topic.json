@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "913332",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EJEA DE LOS CABALLEROS / AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "BASES DEL CONCURSO DEL CARTEL ANUNCIADOR DE LAS FIESTAS EN HONOR DE NUESTRA SEÑORA LA VIRGEN DE LA OLIVA DE EJEA DE LOS CABALLEROS 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-06-16",
+  "open_date": "2026-06-01",
+  "deadline": "2026-06-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "www.ejea.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/913332",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ejea.es/bases_concurso_cartel_fiestas_oliva_2026/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.203Z"
+}

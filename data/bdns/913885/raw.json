@@ -1,0 +1,72 @@
+{
+  "id": 1115446,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LUCENA",
+    "nivel3": "AYUNTAMIENTO DE LUCENA"
+  },
+  "sedeElectronica": "www.lucena.es",
+  "codigoBDNS": "913885",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Decreto aprobación de CONVOCATORIA PARA LA CONCESIÓN DE BECAS DEL AYUNTAMIENTO DE LUCENA Y FUNDACIÓN ESCUELA DE ORGANIZACIÓN INDUSTRIAL (EOI) PARA PROGRAMAS MASTER O CURSOS SUPERIORES O EJECUTIVOS DE LA EOI, EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza General Reguladora de las Bases de concesión de subvenciones del Ayuntamiento de Lucena",
+  "urlBasesReguladoras": "https://bop.dipucordoba.es/visor-pdf/31-07-2025/BOP-A-2025-2604.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a publicación extracto de la presente Convocatoria en BOP Córdoba",
+  "textFin": "20 días a contar desde la publicación del extracto de convocatoria en BOP Córdoba",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478184,
+      "descripcion": "Oferta académica Becas Máster EOI 2026 2027",
+      "nombreFic": "2026 Oferta Académica Becas Master EOI Ayto Lucena.pdf",
+      "long": 92741,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    },
+    {
+      "id": 1478182,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto aprobac Convocatoria Becas Máster EOI 2026 2027.pdf",
+      "long": 987811,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1115474,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BERJA",
+    "nivel3": "AYUNTAMIENTO DE BERJA"
+  },
+  "sedeElectronica": "AYUNTAMIENTO DE BERJA. berja.es",
+  "codigoBDNS": "913913",
+  "fechaRecepcion": "2026-06-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES CON DESTINO A ESCUELAS DEPORTIVAS DE ININCIAICÓN, ASI COMO CLUBES O ASOCIACIONES DEPORTIVAS DEL MUNICIPIO DE BERJA CON DESTINO A DESARROLLAR SU LABOR EN LA TEMPORADA 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES CON DESTINO A ESCUELAS DEPORTIVAS DE INICIACIÓN, ASI COMO A CLUBES O ASOCIACIONES DEPORTIVAS DEL MUNICIPIO DE BERJA CON DESTINO A DESARROLAR SU LABOR EN LA TEMPORADA 2025-2026",
+  "urlBasesReguladoras": "https://www.berja.es/Servicios/cmsdipro/index.nsf/tablon.xsp?p=Berja&documentId=AA63E8AA15D122A5C1258E1900236F25",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE AL DE LA PUBLICACION EN EL BOP.",
+  "textFin": "A LOS DIEZ DÍAS HABILES CONTADOS A PARTIR DEL DIA SIGUIENTE AL DE LA PUBLICACIÓN EN BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1478257,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICADO PUNTO 7.1 APROB BASES ESCUELAS DEPORT Y DEPORTISTAS INDIV PLENO 01-06-2026.pdf",
+      "long": 189979,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

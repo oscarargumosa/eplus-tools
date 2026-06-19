@@ -1,0 +1,144 @@
+{
+  "source": "bdns",
+  "source_id": "914067",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE DESARROLLO RURAL",
+  "nuts_codes": [
+    "ES431"
+  ],
+  "nuts_primary": "ES431",
+  "title": "Ayudas 2026  Enfoque Leader a inversiones en la creación y desarrollo de empresas y actividades no agrícolas en zonas rurales (Intervención 7119 PEPAC), s/ II Convo (PEPAC 2023-2027) G.A.L. LA SERENA",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-06-18",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 400000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    },
+    {
+      "codigo": "18",
+      "descripcion": "Artes gráficas y reproducción de soportes grabados"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "14",
+      "descripcion": "Confección de prendas de vestir"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "05",
+      "descripcion": "Extracción de antracita, hulla, y lignito"
+    },
+    {
+      "codigo": "28",
+      "descripcion": "Fabricación de maquinaria y equipo n.c.o.p."
+    },
+    {
+      "codigo": "27",
+      "descripcion": "Fabricación de material y equipo eléctrico"
+    },
+    {
+      "codigo": "31",
+      "descripcion": "Fabricación de muebles"
+    },
+    {
+      "codigo": "26",
+      "descripcion": "Fabricación de productos informáticos, electrónicos y ópticos"
+    },
+    {
+      "codigo": "25",
+      "descripcion": "Fabricación de productos metálicos, excepto maquinaria y equipo"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "15",
+      "descripcion": "Industria del cuero y productos relacionados de otros materiales"
+    },
+    {
+      "codigo": "17",
+      "descripcion": "Industria del papel"
+    },
+    {
+      "codigo": "13",
+      "descripcion": "Industria textil"
+    },
+    {
+      "codigo": "32",
+      "descripcion": "Otras industrias manufactureras"
+    },
+    {
+      "codigo": "65",
+      "descripcion": "Seguros, reaseguros y planes de pensiones, excepto seguridad social obligatoria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914067",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/pdfs/doe/2024/1460o/24040124.pdf",
+  "text_inicio": "El día siguiente a la publicación en el DOE",
+  "text_fin": "1 mes",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.00000",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 60 AYUDAS DESTINADAS A PROYECTOS DE DLP"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-19T04:07:55.430Z"
+}
