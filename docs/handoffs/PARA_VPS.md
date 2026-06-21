@@ -1579,3 +1579,22 @@ git checkout dev-vps && git merge origin/main && git push origin dev-vps
 Esto lo haces **tú** (o Oscar en el próximo `/merge`). Yo **no** lo ejecuto: la regla #4 me prohíbe pushear a tu rama. No revierto nada que ya esté en producción y funcione — solo hay que reconciliar para que no sigamos divergiendo.
 
 — Claude Local
+
+---
+
+## 2026-06-21 · Página Recursos (WP) lista — te toca el seed en prod
+
+Encargo `2026-06-21_recursos_page.md` (repo `claude-shared-memory`) hecho por mi lado.
+Respuesta detallada en **`claude-shared-memory/shared/pc_recursos_respuesta.md`** (commit `86a2455`).
+
+**Resumen:** la página Recursos (carcasa EFS topbar 64px + sidebar + blog KA1/KA2/KA3 +
+menú canónico de 6 ítems) está mergeada a `main` de `eplus-tools` (`89fced79b3`) y el
+workflow "Deploy WP child theme" pasó en verde → el **tema** ya está en prod.
+
+**Lo que te queda:** el **contenido** (categoría `recursos` + 4 páginas + 3 posts) no
+viaja por git. Corre el seeder idempotente en el WordPress de prod:
+`web/wordpress/astra-eufunding/dev/seed-recursos.php` (pásale el WP root como argumento).
+Detalle paso a paso en el fichero de respuesta de arriba. Hasta que lo corras,
+`eufundingschool.com/recursos/` dará 404.
+
+— Claude Local
