@@ -23,7 +23,7 @@ const path = require('path');
 const crypto = require('crypto');
 const Anthropic = require('@anthropic-ai/sdk').default;
 
-const MODEL = process.env.AI_MODEL_EXTRACTION || 'claude-sonnet-4-5-20250929';
+const MODEL = process.env.AI_MODEL_EXTRACTION || 'claude-sonnet-4-6';
 const MAX_INPUT_CHARS = 30000; // ~7500 input tokens — covers scope/budget/eligibility
 const CONCURRENCY = 3;
 

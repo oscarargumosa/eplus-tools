@@ -38,7 +38,7 @@ function getClient() {
 }
 
 function getModel() {
-  return process.env.AI_MODEL || 'claude-sonnet-4-20250514';
+  return process.env.AI_MODEL || 'claude-sonnet-4-6';
 }
 
 /* ── Usage logging (fire-and-forget, never throws) ──────────── */

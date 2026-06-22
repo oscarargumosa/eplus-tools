@@ -14,7 +14,7 @@ const STRUCTURED_DIR  = path.join(__dirname, '..', '..', '..', '..', 'data', 'ca
 const FUNDING_PATH    = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.json');
 
 const EMBED_MODEL = 'text-embedding-3-small';
-const CHAT_MODEL  = process.env.AI_MODEL_RAG || 'claude-sonnet-4-5-20250929';
+const CHAT_MODEL  = process.env.AI_MODEL_RAG || 'claude-sonnet-4-6';
 
 // Sharded vector store: one file per call in data/call_vectors/<sid>.json.
 // We load each call lazily on first use; chunks are kept in a flat array

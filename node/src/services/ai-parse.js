@@ -8,7 +8,7 @@ const evalModel = require('../modules/evaluator/model');
 const aiContext = require('../utils/aiContext');
 const { logUsage } = require('../utils/ai');
 
-const MODEL = process.env.AI_MODEL || 'claude-sonnet-4-20250514';
+const MODEL = process.env.AI_MODEL || 'claude-sonnet-4-6';
 
 /* ── Initialize client (lazy load SDK) ───────────────────────── */
 function getClient() {
