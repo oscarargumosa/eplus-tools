@@ -23,6 +23,7 @@ const IntakeTasks = (() => {
   const TYPE_MAP = {
     mgmt:'project_management', meeting:'transnational_meeting', ltta:'ltta_mobility',
     io:'intellectual_output', me:'multiplier_event', local_ws:'local_workshop',
+    personal_work:'personal_work',
     campaign:'dissemination', website:'website', artistic:'artistic_fees',
     equipment:'equipment', goods:'other_goods', consumables:'consumables', other:'other_costs',
     fstp:'financial_support_third_parties',
@@ -30,7 +31,7 @@ const IntakeTasks = (() => {
 
   const ACT_ICONS = {
     meeting:'groups', ltta:'flight_takeoff', io:'menu_book', me:'campaign',
-    local_ws:'school', campaign:'share', website:'language', artistic:'palette',
+    local_ws:'school', personal_work:'psychology', campaign:'share', website:'language', artistic:'palette',
     equipment:'devices', goods:'inventory_2', consumables:'eco', other:'more_horiz',
     fstp:'volunteer_activism',
   };
