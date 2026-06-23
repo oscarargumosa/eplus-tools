@@ -97,6 +97,8 @@
 <nav class="tabs">
   <button class="tab on" data-view="catalogo">📚 Catálogo de fuentes</button>
   <button class="tab" data-view="curriculo">🎓 Currículo / Plan formativo</button>
+  <button class="tab" data-view="sas">🛠️ Módulo SAS (plataforma)</button>
+  <button class="tab" data-view="eacea">📝 Curso EACEA (Part B)</button>
 </nav>
 
 <div id="view-catalogo">
@@ -130,6 +132,16 @@
 <div id="view-curriculo" style="display:none">
   <div class="cur-head" id="cur-head"></div>
   <div id="cur-body"></div>
+</div>
+
+<div id="view-sas" style="display:none">
+  <div class="cur-head" id="sas-head"></div>
+  <div id="sas-body"></div>
+</div>
+
+<div id="view-eacea" style="display:none">
+  <div class="cur-head" id="eacea-head"></div>
+  <div id="eacea-body"></div>
 </div>
 
 <footer>Generado 2026-06-23 · 116 fuentes · fuente: <code>docs/KNOWLEDGE_BASE_E+.md</code> · El estado editado se guarda localmente (localStorage); exporta para no perderlo.</footer>
@@ -477,8 +489,9 @@ const ST_LABEL={tenemos:"Tenemos material",parcial:"Parcial",crear:"A crear"};
 
 function switchView(v){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view===v));
-  document.getElementById('view-catalogo').style.display=v==='catalogo'?'':'none';
-  document.getElementById('view-curriculo').style.display=v==='curriculo'?'':'none';
+  ['catalogo','curriculo','sas','eacea'].forEach(name=>{
+    document.getElementById('view-'+name).style.display=v===name?'':'none';
+  });
 }
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>switchView(t.dataset.view));
 
@@ -490,7 +503,7 @@ function lessonRow(l){
   </div>`;
 }
 function modCard(m){
-  const tag=m.b?`Bloque ${m.b}`:`Especialidad ${m.esp} · ${ESP[m.esp]||''}`;
+  const tag=m.tag?m.tag:(m.b?`Bloque ${m.b}`:`Especialidad ${m.esp} · ${ESP[m.esp]||''}`);
   return `<div class="modcard">
     <h3><span class="mc-code">${m.c}</span> ${m.t} <span class="mc-bloque">${tag}</span>${m.nivel?`<span class="mc-nivel">${m.nivel}</span>`:''}</h3>
     ${m.ls.map(lessonRow).join('')}
@@ -522,6 +535,167 @@ function renderCurriculo(){
   });
 }
 renderCurriculo();
+
+/* ===================== MÓDULO SAS (la plataforma, paso a paso) ===================== */
+const SAS_NOTA = "El Módulo SAS sigue, en el mismo orden, el recorrido que la plataforma usa para ayudarte a escribir un proyecto: desde elegir convocatoria hasta presentarlo. La idea: cada fase de la plataforma tendrá un vídeo breve que la explica y anima a registrarse en estos cursos para profundizar. Casi todo es contenido propio (vuestra plataforma no la enseña nadie más) → mayoría «A crear». Esto es un borrador a partir de tu lluvia de ideas — revísalo y corrígeme (sobre todo lo marcado con ¿?).";
+const SAS = [
+ {c:"SAS-1",t:"Antes de empezar",tag:"Paso 1 · Plataforma",ls:[
+  {t:"¿Cómo elegir el proyecto correcto entre todas las convocatorias?",s:"crear"},
+  {t:"Registra tu organización en el directorio (la «neorganización»)",s:"crear"},
+  {t:"Completa todos los datos de tu organización",s:"crear"},
+  {t:"Pide a tus potenciales socios que registren sus datos en el directorio",s:"crear",n:"Así toda la información está disponible luego en el proyecto."},
+  {t:"Cómo organizar un consorcio para tu proyecto",s:"parcial",src:["kb-0077"]}
+ ]},
+ {c:"SAS-2",t:"Los números base del proyecto",tag:"Paso 2 · Economía",ls:[
+  {t:"La banda oficial de kilómetros y los viajes ecológicos",s:"crear",src:["kb-0019"]},
+  {t:"Cómo calcular los precios de transporte",s:"crear"},
+  {t:"Per diem / dietas",s:"crear",src:["kb-0019"]},
+  {t:"Salarios profesionales: cost pm y posiciones laborales",s:"crear",src:["kb-0018"]}
+ ]},
+ {c:"SAS-3",t:"La estructura: paquetes de trabajo y actividades",tag:"Paso 3 · Estructura",ls:[
+  {t:"El esqueleto de los paquetes de trabajo (WP)",s:"parcial",src:["kb-0018"]},
+  {t:"Actividad · Management",s:"crear"},
+  {t:"Actividad · Transnational meetings",s:"crear"},
+  {t:"Actividad · LTTA / staff mobilities (learning, teaching, training)",s:"crear"},
+  {t:"Actividad · Intellectual outputs",s:"crear"},
+  {t:"Actividad · Multiplier events",s:"crear"},
+  {t:"Actividad · Local workshops",s:"crear"},
+  {t:"Actividad · Personnel work",s:"crear"},
+  {t:"Actividad · Dissemination",s:"crear"},
+  {t:"Actividad · Website",s:"crear"},
+  {t:"Actividad · Artistic (trabajo artístico)",s:"crear",n:"¿«Artistic Fish»? confírmame el concepto exacto."},
+  {t:"Actividad · Equipment / equipamiento",s:"crear"},
+  {t:"Actividad · Consumables / otros gastos",s:"crear"},
+  {t:"Actividad · Apoyo financiero a terceras partes (FSTP)",s:"crear",src:["kb-0100"]},
+  {t:"Actividad · Otros costes",s:"crear"}
+ ]},
+ {c:"SAS-4",t:"Presupuestar el proyecto",tag:"Paso 4 · Presupuesto",ls:[
+  {t:"Cómo se presupuesta un proyecto EACEA (agencias europeas)",s:"parcial",src:["kb-0018","kb-0078"]},
+  {t:"Cómo se presupuesta en los formularios de Agencia Nacional",s:"crear",src:["kb-0037"]},
+  {t:"Presupuesto coherente, actividad a actividad",s:"crear"}
+ ]},
+ {c:"SAS-5",t:"Planificar en el tiempo",tag:"Paso 5 · Planificación",ls:[
+  {t:"El Gantt del proyecto: planificar cada actividad",s:"crear"},
+  {t:"Adecuar los perfiles de trabajadores y entidades a los objetivos",s:"crear"}
+ ]},
+ {c:"SAS-6",t:"Narrar y justificar",tag:"Paso 6 · Narrativa",ls:[
+  {t:"La relevancia del proyecto: el apartado estrella del evaluador",s:"parcial",src:["kb-0095","kb-0078"]},
+  {t:"Definir con claridad cada actividad metida en el presupuesto",s:"crear"},
+  {t:"Relación de tareas por actividad: quién lidera y quién participa",s:"crear"}
+ ]},
+ {c:"SAS-7",t:"Tareas, deliverables y milestones",tag:"Paso 7 · El trío clave",ls:[
+  {t:"Las tareas: qué son y cómo se definen",s:"crear"},
+  {t:"Los deliverables (entregables): qué son",s:"crear"},
+  {t:"Los milestones (hitos): qué son",s:"crear"},
+  {t:"Cómo se relacionan tareas ↔ deliverables ↔ milestones",s:"crear",n:"Casi un módulo en sí mismo."},
+  {t:"Los códigos del formulario EACEA: tipo de entregable, nivel de difusión, numeración y plazos",s:"parcial",src:["kb-0017"]}
+ ]},
+ {c:"SAS-8",t:"Escribir el formulario, pregunta a pregunta",tag:"Paso 8 · Redacción",ls:[
+  {t:"Cada convocatoria, su formulario: una clase por pregunta",s:"crear",n:"Base de datos: docs/form_part_b_eacea.json (ya en el repo)."},
+  {t:"EACEA · Relevancia (una clase por cada pregunta)",s:"parcial",src:["kb-0095","kb-0090"]},
+  {t:"EACEA · Calidad del diseño y la implementación",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Calidad del partenariado",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Impacto",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Work packages (descripción de cada uno)",s:"parcial",src:["kb-0079"]},
+  {t:"Adaptar la redacción a los formularios de Agencia Nacional",s:"crear",src:["kb-0037","kb-0041"]}
+ ]},
+ {c:"SAS-9",t:"Presentación oficial",tag:"Paso 9 · Submission",ls:[
+  {t:"Comprueba el registro: OID y PIC number actualizados",s:"parcial",src:["kb-0008"]},
+  {t:"Las firmas de las declaraciones de honor de todos los socios",s:"crear"},
+  {t:"Presentar el proyecto en la plataforma europea",s:"parcial",src:["kb-0024"]}
+ ]},
+ {c:"SAS-10",t:"El presupuesto final",tag:"Paso 10 · Cierre",ls:[
+  {t:"Cómo se presenta el presupuesto una vez escrito todo el proyecto",s:"crear"}
+ ]}
+];
+
+function renderSAS(){
+  let nLes=0,nTen=0,nPar=0,nCre=0;
+  SAS.forEach(m=>m.ls.forEach(l=>{nLes++;l.s==='tenemos'?nTen++:l.s==='parcial'?nPar++:nCre++;}));
+  document.getElementById('sas-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${SAS.length}</b> bloques</span>
+      <span class="pill"><b>${nLes}</b> clases</span>
+      <span class="pill"><span class="dot tenemos"></span>Tenemos material <b>${nTen}</b></span>
+      <span class="pill"><span class="dot parcial"></span>Parcial <b>${nPar}</b></span>
+      <span class="pill"><span class="dot crear"></span>A crear <b>${nCre}</b></span>
+    </div>
+    <p class="cur-note">${SAS_NOTA}</p>`;
+  document.getElementById('sas-body').innerHTML=SAS.map(modCard).join('');
+  document.querySelectorAll('#sas-body .lsrc').forEach(el=>el.onclick=()=>{
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderSAS();
+
+/* ===================== CURSO EACEA — Part B, pregunta a pregunta ===================== */
+const EACEA_NOTA = "Curso de redacción del formulario EACEA Part B (proyectos centralizados: KA220, KA3, Capacity Building, Deporte…). Una clase por cada pregunta del formulario: cómo responderla con los indicadores y lo que el evaluador espera leer. El 📋 indica qué pide LITERALMENTE el formulario; el contenido de «cómo responder» es nuestro (de ahí el azul «A crear»). Apoyo experto: la rúbrica del evaluador (kb-0095) y los Tips de EACEA (kb-0090). Estructura extraída de un Part B real (Sustrai); encaja con docs/form_part_b_eacea.json del repo, que ya tiene el detalle para automatizar. Reutilizable en todos los cursos de vía EACEA.";
+const EACEA = [
+ {c:"PS",t:"Project Summary",tag:"Resumen",ls:[
+  {t:"Project Summary / Abstract",s:"crear",n:"📋 Resumen del proyecto (se toma del Abstract de la Part A). Clase: cómo escribir un abstract que enganche dentro del límite de caracteres."}
+ ]},
+ {c:"1",t:"RELEVANCE",tag:"Criterio · Relevance",ls:[
+  {t:"1.1 Background and general objectives",s:"crear",src:["kb-0095","kb-0078"],n:"📋 Describe el contexto y la justificación. ¿Cómo encaja en el scope de la convocatoria? ¿Cómo aborda los objetivos generales? ¿Contribución a las prioridades?"},
+  {t:"1.2 Needs analysis and specific objectives",s:"crear",src:["kb-0095","kb-0097"],n:"📋 Análisis de necesidades sólido alineado con los objetivos específicos. ¿Qué problema/reto/gap aborda? Objetivos claros, medibles, realistas y alcanzables; por cada uno: indicador con unidad, valor base y valor objetivo."},
+  {t:"1.3 Complementarity & innovation — European added value",s:"crear",src:["kb-0095"],n:"📋 Cómo se apoya en actividades previas; aspectos innovadores; complementariedad con otras acciones; dimensión transnacional; interés para la UE; uso de resultados en otros países; cooperación transfronteriza; referencias a proyectos previos."}
+ ]},
+ {c:"2.1",t:"QUALITY · Diseño e implementación",tag:"Criterio · Quality of design & implementation",ls:[
+  {t:"2.1.1 Concept and methodology",s:"crear",src:["kb-0095"],n:"📋 Expón el enfoque y la metodología. Explica por qué son los más adecuados para lograr los objetivos."},
+  {t:"2.1.2 Project management, QA, monitoring & evaluation",s:"crear",src:["kb-0095"],n:"📋 Medidas para asegurar calidad y plazos; métodos de calidad/seguimiento/planificación/control; métodos de evaluación e indicadores (cuant. y cual.) con unidad, base y objetivo."},
+  {t:"2.1.3 Project teams, staff and experts",s:"crear",n:"📋 Describe los equipos y cómo trabajarán juntos; lista el personal por función/perfil (project manager, expertos senior/junior, formadores, técnico, administrativo…) y sus tareas; CVs si se requieren."},
+  {t:"2.1.4 Cost effectiveness and financial management",s:"crear",src:["kb-0018"],n:"📋 Medidas para lograr resultados de forma coste-eficiente; gestión financiera; cómo se asignan y gestionan los recursos en el consorcio."},
+  {t:"2.1.5 Risk management",s:"crear",n:"📋 Riesgos críticos, incertidumbres y dificultades + medidas de mitigación; para cada riesgo: impacto y probabilidad (alto/medio/bajo)."}
+ ]},
+ {c:"2.2",t:"QUALITY · Partenariado y cooperación",tag:"Criterio · Quality of partnership",ls:[
+  {t:"2.2.1 Consortium set-up",s:"crear",src:["kb-0095"],n:"📋 Describe a los participantes (Beneficiarios, Entidades Afiliadas, Socios Asociados) y cómo trabajarán juntos. ¿Cómo reúnen la experiencia necesaria? ¿Cómo se complementan?"},
+  {t:"2.2.2 Consortium management and decision-making",s:"crear",n:"📋 Estructuras de gestión y mecanismos de toma de decisiones; cómo se decide y se asegura la comunicación regular y eficaz; planificación y control."}
+ ]},
+ {c:"3",t:"IMPACT",tag:"Criterio · Impact",ls:[
+  {t:"3.1 Impact and ambition",s:"crear",src:["kb-0095"],n:"📋 Efectos esperados a corto, medio y largo plazo. ¿Quiénes son los grupos destinatarios? ¿Cómo se benefician concretamente y qué cambia para ellos?"},
+  {t:"3.2 Communication, dissemination and visibility",s:"crear",src:["kb-0026"],n:"📋 Actividades de comunicación y difusión para promover resultados y maximizar impacto (a quién, formato, cuántos); cómo llegar a destinatarios/stakeholders/policymakers/público; elección de canales; visibilidad de la financiación UE."},
+  {t:"3.3 Sustainability and continuation",s:"crear",n:"📋 Seguimiento tras el fin de la financiación; cómo se sostiene el impacto; qué se continúa/mantiene; recursos necesarios; uso de los resultados."}
+ ]},
+ {c:"4",t:"WORK PLAN, WORK PACKAGES, ACTIVITIES, RESOURCES & TIMING",tag:"Plan de trabajo",ls:[
+  {t:"4.1 Work plan",s:"crear",n:"📋 Descripción breve de la estructura global del plan de trabajo (lista de WPs o diagrama PERT)."},
+  {t:"4.2 Work packages (por cada WP)",s:"parcial",src:["kb-0079"],n:"📋 Objetivos específicos a los que se vincula el WP; tareas (nombre + número); participantes (COO/BEN/AE/AP, líder en negrita)."},
+  {t:"· Staff effort",s:"crear",n:"📋 Persona/mes por WP, con el líder en negrita. (n/a en Lump Sum)."},
+  {t:"· Subcontracting",s:"crear",n:"📋 Tareas subcontratadas y por qué (frente a ejecución directa). (n/a en Lump Sum prefijado)."},
+  {t:"· Events, meetings and mobility",s:"crear",n:"📋 Tipo, ubicación, nº de personas asistentes, etc."},
+  {t:"· Timetable",s:"crear",n:"📋 Cronograma / Gantt de todo el proyecto."}
+ ]},
+ {c:"5",t:"OTHER",tag:"Otros",ls:[
+  {t:"5.1 Ethics",s:"crear",n:"📋 Cómo aseguras la perspectiva de género (gender mainstreaming) y los derechos de la infancia en las actividades."},
+  {t:"5.2 Security",s:"crear",n:"📋 Aspectos sensibles de seguridad (si aplica)."}
+ ]},
+ {c:"6",t:"DECLARATIONS & ANNEXES",tag:"Cierre",ls:[
+  {t:"6. Declarations",s:"crear",n:"📋 Declaraciones (incluida la prohibición estricta de doble financiación del presupuesto UE)."},
+  {t:"Anexo · List of previous projects",s:"crear",n:"📋 Lista de tus proyectos de los últimos 4 años (si lo pide la convocatoria)."}
+ ]}
+];
+
+function renderEACEA(){
+  let nLes=0,nCre=0,nPar=0,nTen=0;
+  EACEA.forEach(m=>m.ls.forEach(l=>{nLes++;l.s==='tenemos'?nTen++:l.s==='parcial'?nPar++:nCre++;}));
+  document.getElementById('eacea-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${EACEA.length}</b> apartados</span>
+      <span class="pill"><b>${nLes}</b> clases (1 por pregunta)</span>
+      <span class="pill"><span class="dot parcial"></span>Parcial <b>${nPar}</b></span>
+      <span class="pill"><span class="dot crear"></span>A crear <b>${nCre}</b></span>
+    </div>
+    <p class="cur-note">${EACEA_NOTA}</p>`;
+  document.getElementById('eacea-body').innerHTML=EACEA.map(modCard).join('');
+  document.querySelectorAll('#eacea-body .lsrc').forEach(el=>el.onclick=()=>{
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderEACEA();
 </script>
 </body>
 </html>
