@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Base de Conocimiento E+ — Catálogo de fuentes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1b1464; --yellow:#fbff12; --lav:#e9e7fb; --lav2:#f5f4fc;
+    --green:#1f9d55; --amber:#c97a09; --blue:#2563eb; --gray:#9098a8;
+    --ink:#1d1d29; --soft:#6b6f80; --line:#e4e2f0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--lav2);font-size:14px}
+  a{color:var(--navy)}
+  header{background:var(--navy);color:#fff;padding:22px 28px 18px}
+  header h1{margin:0;font-size:22px;font-weight:600;letter-spacing:.2px}
+  header h1 span{color:var(--yellow)}
+  header p{margin:6px 0 0;color:#c9c6ea;font-size:12.5px;max-width:880px;line-height:1.5}
+  .counters{display:flex;flex-wrap:wrap;gap:10px;padding:14px 28px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  .pill{display:flex;align-items:center;gap:7px;background:var(--lav);border-radius:30px;padding:6px 14px;font-size:12.5px;font-weight:500}
+  .pill b{font-weight:700}
+  .pill .dot{width:9px;height:9px;border-radius:50%}
+  .dot.copiar{background:var(--green)} .dot.mejorar{background:var(--amber)}
+  .dot.crear{background:var(--blue)} .dot.descartar{background:var(--gray)}
+  .toolbar{padding:14px 28px;display:flex;flex-direction:column;gap:12px;background:#fff;border-bottom:1px solid var(--line)}
+  .searchrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  input[type=search]{flex:1;min-width:240px;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:13.5px}
+  input[type=search]:focus{outline:none;border-color:var(--navy)}
+  .btn{border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:9px 14px;font:inherit;font-size:12.5px;font-weight:500;cursor:pointer}
+  .btn:hover{border-color:var(--navy)}
+  .btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .filtergroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .filtergroup .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--soft);font-weight:600;margin-right:4px;min-width:78px}
+  .chip{border:1.5px solid var(--line);background:#fff;border-radius:30px;padding:4px 11px;font-size:12px;cursor:pointer;user-select:none;transition:.12s}
+  .chip:hover{border-color:var(--navy)}
+  .chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .wrap{padding:0 28px 60px}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin-top:18px;box-shadow:0 1px 3px rgba(27,20,100,.06)}
+  th{background:var(--navy);color:#fff;text-align:left;padding:11px 12px;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;position:sticky;top:0}
+  td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top;font-size:13px;line-height:1.45}
+  tr:hover td{background:var(--lav2)}
+  .ttl{font-weight:600;color:var(--navy);display:block;text-decoration:none;max-width:340px}
+  .ttl:hover{text-decoration:underline}
+  .url{font-size:11px;color:var(--soft);word-break:break-all;display:block;margin-top:2px;max-width:340px}
+  .notas{color:var(--soft);font-size:12px;max-width:320px}
+  .tag{display:inline-block;background:var(--lav);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:600;margin:1px}
+  .tag.esp{background:#efe9fb;color:#5b3fb0}
+  .qual{font-weight:700;color:var(--navy)}
+  .star{color:var(--yellow);text-shadow:0 0 1px #b9a700;letter-spacing:-1px}
+  .estado{border:none;border-radius:30px;padding:5px 12px;font-size:11.5px;font-weight:600;cursor:pointer;color:#fff;white-space:nowrap}
+  .estado.copiar{background:var(--green)} .estado.mejorar{background:var(--amber)}
+  .estado.crear{background:var(--blue)} .estado.descartar{background:var(--gray)}
+  .estado.sin{background:#fff;color:var(--soft);border:1.5px dashed var(--line)}
+  .idioma{font-size:11px;color:var(--soft);font-weight:600}
+  .empty{padding:40px;text-align:center;color:var(--soft)}
+  .hint{font-size:11.5px;color:var(--soft);margin-left:auto}
+  .count-shown{font-weight:700;color:var(--navy)}
+  footer{padding:18px 28px;color:var(--soft);font-size:11.5px;border-top:1px solid var(--line);background:#fff}
+</style>
+</head>
+<body>
+<header>
+  <h1>Base de Conocimiento <span>E+</span> — Catálogo de fuentes</h1>
+  <p>Trabajo interno de investigación. Mapa de qué existe sobre cómo escribir proyectos Erasmus+ para decidir qué <b>copiamos / mejoramos / creamos / descartamos</b>. Haz clic en el <b>estado</b> de cada fila para cambiarlo (se guarda en tu navegador); luego pulsa <b>Exportar</b> para pasarme tus decisiones. Sin universidades / Educación Superior / Jean Monnet.</p>
+</header>
+
+<div class="counters" id="counters"></div>
+
+<div class="toolbar">
+  <div class="searchrow">
+    <input type="search" id="q" placeholder="Buscar por título, notas, URL…">
+    <button class="btn" id="reset">Limpiar filtros</button>
+    <button class="btn primary" id="export">⤓ Exportar decisiones (JSON)</button>
+  </div>
+  <div class="filtergroup" id="f-bloque"><span class="lbl">Bloque</span></div>
+  <div class="filtergroup" id="f-esp"><span class="lbl">Especialidad</span></div>
+  <div class="filtergroup" id="f-tipo"><span class="lbl">Tipo</span></div>
+  <div class="filtergroup" id="f-idioma"><span class="lbl">Idioma</span></div>
+  <div class="filtergroup" id="f-estado"><span class="lbl">Estado</span></div>
+</div>
+
+<div class="wrap">
+  <div style="margin-top:14px;font-size:12.5px;color:var(--soft)">Mostrando <span class="count-shown" id="shown">0</span> de <span id="total">0</span> fuentes</div>
+  <table>
+    <thead><tr>
+      <th>Título / URL</th><th>Idi.</th><th>Tipo</th><th>Bloque</th><th>Esp.</th><th>Cal.</th><th>Estado</th><th>Notas</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div class="empty" id="empty" style="display:none">Ninguna fuente coincide con los filtros.</div>
+</div>
+
+<footer>Generado 2026-06-23 · 116 fuentes · fuente: <code>docs/KNOWLEDGE_BASE_E+.md</code> · El estado editado se guarda localmente (localStorage); exporta para no perderlo.</footer>
+
+<script>
+const BLOQUES = {
+ A:"Fundamentos",B:"Ecosistema/actores",C:"Antes de escribir",D:"Formulario",
+ E:"Criterios eval.",F:"Técnicas redacción",G:"Presupuesto",H:"Impacto/difusión",
+ I:"Gestión post",J:"Errores comunes"};
+const ESP = {1:"KA1 Juventud",2:"KA1 Adultos",3:"KA1 Escolar",4:"KA1 FP/VET",
+ 5:"KA2 Coop (KA220)",6:"KA2 Small-scale (KA210)",7:"KA3/Políticas",8:"Capacity Building",9:"Deporte"};
+
+const DATA = [
+{id:"kb-0001",t:"Erasmus+ Programme Guide 2026 (web, 24 idiomas)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/erasmus-programme-guide-2026",i:"EN/ES",tipo:"Oficial UE",b:"A,B,C,D,E,G",e:"Transversal",q:5,s:"mejorar",n:"Documento madre. Reinterpretar, no copiar literal."},
+{id:"kb-0002",t:"Programme Guide 2026 (PDF completo, ~700 pp)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",i:"EN",tipo:"Oficial UE",b:"A,D,E,G",e:"Transversal",q:5,s:"descartar",n:"Mismo contenido que la web; para citar/extraer. Incluye CB VET (pp.332-342)."},
+{id:"kb-0003",t:"Part A — Información general / Introducción",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Estructura del programa, KA1/KA2/KA3, objetivos. Base de Fundamentos."},
+{id:"kb-0004",t:"Prioridades del programa (4 horizontales)",u:"https://erasmus-plus.ec.europa.eu/about-erasmus/programme-priorities",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Inclusión, digital, verde, participación. Obligatorias en todo proyecto."},
+{id:"kb-0005",t:"Priorities of the Erasmus+ Programme (Part A)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a/priorities-of-the-erasmus-programme",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:4,s:"mejorar",n:"Versión Programme-Guide con matices sectoriales."},
+{id:"kb-0006",t:"Who implements the Programme (Comisión/EACEA/NAs)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a/priorities-of-the-erasmus-programme/implements",i:"EN/ES",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"mejorar",n:"Mapa de actores: quién hace qué."},
+{id:"kb-0007",t:"National Agencies (directorio)",u:"https://erasmus-plus.ec.europa.eu/about-erasmus/contacts/national-agencies",i:"EN/ES",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"descartar",n:"Lista oficial de AN; enlazar, no copiar (cambia)."},
+{id:"kb-0008",t:"Step 1: Registration (ORS/OID, Part C)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/registration",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:5,s:"mejorar",n:"Cómo registrar la organización (OID) antes de aplicar."},
+{id:"kb-0009",t:"Registering your organisation (ORS)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply/registering-your-organisation",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:4,s:"mejorar",n:"Alta en ORS con documentación requerida."},
+{id:"kb-0010",t:"Organisation Registration System (portal ORS)",u:"https://webgate.ec.europa.eu/erasmus-esc/organisation-registration",i:"EN",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"descartar",n:"Herramienta viva (se obtiene el OID); enlazar."},
+{id:"kb-0011",t:"How to apply (hub)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply",i:"EN/ES",tipo:"Oficial UE",b:"C",e:"Transversal",q:5,s:"mejorar",n:"Itinerario idea→solicitud. Esqueleto natural de un curso."},
+{id:"kb-0012",t:"Part C — Information for applicants",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c",i:"EN/ES",tipo:"Oficial UE",b:"C,E",e:"Transversal",q:5,s:"mejorar",n:"Admisibilidad, elegibilidad, capacidad y evaluación."},
+{id:"kb-0013",t:"Part C — Compliance with programme criteria",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/compliance",i:"EN/ES",tipo:"Oficial UE",b:"C,E",e:"Transversal",q:4,s:"mejorar",n:"Checklist de criterios formales."},
+{id:"kb-0014",t:"Part C — Fill in and submit the application form",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/submission",i:"EN/ES",tipo:"Oficial UE",b:"D",e:"Transversal",q:4,s:"mejorar",n:"Mecánica de cumplimentación y envío."},
+{id:"kb-0015",t:"Part C — What happens once submitted (evaluación)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/what-happens-submission",i:"EN/ES",tipo:"Oficial UE",b:"E",e:"Transversal",q:4,s:"mejorar",n:"Comité de evaluación y expertos; contexto del scoring."},
+{id:"kb-0016",t:"Part D — Glossary (common terms)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-d/glossary-common-terms",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Glosario oficial. Base para nuestro glosario coherente con la jerga del evaluador."},
+{id:"kb-0017",t:"Documents and guidelines (templates Part B)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines",i:"EN/ES",tipo:"Oficial UE",b:"D",e:"Transversal",q:5,s:"mejorar",n:"Repositorio de formularios-plantilla 2026 por acción."},
+{id:"kb-0018",t:"Handbook on the KA2 lump sum funding model (EC PDF)",u:"https://wikis.ec.europa.eu/download/attachments/75759701/Handbook%20on%20KA2%20lump%20sums.pdf",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"mejorar",n:"Manual oficial lump sums KA2: work packages, 20% gestión, coherencia."},
+{id:"kb-0019",t:"Lump sums & unit costs decision — E+ 2021-2027 (PDF)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/guidance/ls-and-unit-cost-decision_erasmus_en.pdf",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"copiar",n:"Decisión legal con tablas de importes a tanto alzado (KA1 y Sport)."},
+{id:"kb-0020",t:"Beneficiary module guide (EC wiki NAITDOC)",u:"https://wikis.ec.europa.eu/spaces/NAITDOC/pages/90281389/Beneficiary+module+guide",i:"EN",tipo:"Oficial UE",b:"I",e:"Transversal",q:5,s:"mejorar",n:"Guía oficial del Beneficiary Module: encode actividades, informes."},
+{id:"kb-0021",t:"How to submit the beneficiary report (NAITDOC)",u:"https://wikis.ec.europa.eu/display/NAITDOC/How+to+submit+the+beneficiary+report+in+Beneficiary+module",i:"EN",tipo:"Oficial UE",b:"I",e:"Transversal",q:4,s:"mejorar",n:"Procedimiento de envío del informe a la AN."},
+{id:"kb-0022",t:"Budget in KA122 applications (EC Public Wiki)",u:"https://wikis.ec.europa.eu/display/NAITDOC/Budget+in+KA122+applications",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"copiar",n:"Reglas presupuestarias detalladas de proyectos cortos KA122."},
+{id:"kb-0023",t:"EU Funding & Tenders Portal (SEDIA, home)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",i:"EN",tipo:"Oficial UE",b:"B,D",e:"Transversal",q:5,s:"descartar",n:"Punto de envío para acciones centralizadas EACEA. Enlazar."},
+{id:"kb-0024",t:"F&T Online Manual — Submit a proposal",u:"https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867927/Submit+a+proposal",i:"EN",tipo:"Oficial UE",b:"D",e:"Transversal",q:4,s:"mejorar",n:"Manual del sistema de envío electrónico (acciones EACEA)."},
+{id:"kb-0025",t:"F&T Online Manual — Award criteria",u:"https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867948/Award+criteria",i:"EN",tipo:"Oficial UE",b:"E",e:"Transversal",q:4,s:"copiar",n:"Manual oficial de criterios de adjudicación y umbrales."},
+{id:"kb-0026",t:"SALTO-YOUTH (portal)",u:"https://www.salto-youth.net/",i:"EN",tipo:"Oficial UE",b:"B,C,F,H",e:"Transversal",q:5,s:"mejorar",n:"Red de centros de recursos UE; cantera de metodología no-formal."},
+{id:"kb-0027",t:"SALTO Toolbox — Basic steps for writing a project",u:"https://www.salto-youth.net/tools/toolbox/tool/basic-steps-for-writing-a-project.1646/",i:"EN",tipo:"Oficial UE",b:"C,F",e:"Transversal",q:4,s:"mejorar",n:"Pasos idea→proyecto. Base de antes de escribir."},
+{id:"kb-0028",t:"SALTO Toolbox — Erasmus+ Quality Handbook",u:"https://www.salto-youth.net/tools/toolbox/tool/erasmus-quality-handbook.1626/",i:"EN",tipo:"Oficial UE",b:"C,F,H,I",e:"Transversal",q:5,s:"copiar",n:"Manual de calidad fase a fase; tips para newcomers. Sin sesgo."},
+{id:"kb-0029",t:"SALTO Otlas — Partner Finding Tool",u:"https://www.salto-youth.net/tools/otlas-partner-finding/",i:"EN",tipo:"Oficial UE",b:"C",e:"Transversal",q:4,s:"descartar",n:"Buscador oficial de socios (14k+ orgs); enlazar."},
+{id:"kb-0030",t:"Youthpass (SALTO)",u:"https://www.salto-youth.net/rc/training-and-cooperation/youthpass/",i:"EN",tipo:"Oficial UE",b:"H,I",e:"Transversal",q:4,s:"descartar",n:"Reconocimiento del aprendizaje no formal; impacto/calidad."},
+{id:"kb-0031",t:"EPALE — Erasmus+ for Adult Education",u:"https://epale.ec.europa.eu/en/erasmus-adult-education",i:"EN/ES",tipo:"Oficial UE",b:"B,C,H",e:"Transversal",q:4,s:"mejorar",n:"Plataforma adultos + partner search; ecosistema y difusión."},
+{id:"kb-0032",t:"European School Education Platform / eTwinning",u:"https://school-education.ec.europa.eu/en/etwinning",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:4,s:"mejorar",n:"Comunidad escolar UE; búsqueda de socios y formación."},
+{id:"kb-0033",t:"EPALE — ¿Cómo escribir una buena propuesta E+?",u:"https://epale.ec.europa.eu/es/resource-centre/content/como-escribir-una-buena-propuesta-de-proyecto-erasmus",i:"ES",tipo:"Oficial UE",b:"C,D,F",e:"Transversal",q:4,s:"copiar",n:"Guía práctica oficial EN ESPAÑOL: proceso colaborativo, coherencia interna. Sin sesgo."},
+{id:"kb-0034",t:"SEPIE — Convocatoria 2026 Educación Escolar",u:"http://sepie.es/educacion-escolar/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E,F",e:"3",q:4,s:"copiar",n:"Hub con formularios comentados, guías e indicaciones técnicas KA1/KA2 escolar."},
+{id:"kb-0035",t:"SEPIE — Convocatoria 2026 Formación Profesional",u:"http://sepie.es/formacion-profesional/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E,F",e:"4",q:4,s:"copiar",n:"Hub VET: formularios comentados KA121/KA122-VET y jornadas."},
+{id:"kb-0036",t:"SEPIE — Convocatoria 2026 Educación de Adultos",u:"http://sepie.es/educacion-adultos/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"2",q:4,s:"copiar",n:"Hub adultos: formulario comentado y guía KA121/KA122-ADU."},
+{id:"kb-0037",t:"SEPIE — Formulario comentado KA122-VET 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/formulario_comentado_ka122vet_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"4",q:5,s:"copiar",n:"ORO: form anotado pregunta a pregunta. Técnicas de redacción del eForm VET."},
+{id:"kb-0038",t:"SEPIE — Formulario comentado KA121-VET 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/formulario_comentado_ka121vet_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F,I",e:"4",q:5,s:"copiar",n:"Form comentado para acreditados VET; objetivos (máx.5) y plan."},
+{id:"kb-0039",t:"SEPIE — Formulario comentado KA122-SCH 2025 (PDF)",u:"http://sepie.es/doc/convocatoria/2025/EE/formulario_comentado_ka122_sch_2025.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"3",q:5,s:"copiar",n:"Versión escolar del form anotado; qué escribir en cada apartado."},
+{id:"kb-0040",t:"SEPIE — Formulario comentado KA220 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka2/1_formulario_comentado_ka220_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"5",q:5,s:"copiar",n:"Guía sección a sección del KA220 2026 con orientaciones de redacción."},
+{id:"kb-0041",t:"SEPIE — Formulario comentado KA210 2026 (PDF)",u:"https://sepie.es/doc/convocatoria/2026/ka2/1_formulario_comentado_KA210_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"6",q:5,s:"copiar",n:"Guía sección a sección del KA210 con consejos de redacción."},
+{id:"kb-0042",t:"SEPIE — Guía básica KA220-ADU 2025 (PDF)",u:"http://sepie.es/doc/convocatoria/2025/EA/guia_basica_ka220_adu_2025.pdf",i:"ES",tipo:"Agencia Nacional",b:"D",e:"5",q:4,s:"copiar",n:"Guía básica KA220: calendario, requisitos, criterios."},
+{id:"kb-0043",t:"SEPIE — Indicaciones técnicas para solicitantes 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/1_indicaciones_tecnicas_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,J",e:"Transversal",q:4,s:"copiar",n:"Procedimiento, firma electrónica de declaraciones y erratas a evitar."},
+{id:"kb-0044",t:"SEPIE — FAQ proyectos corta duración KA122-VET (PDF)",u:"http://sepie.es/doc/convocatoria/2025/FP/preguntas_frecuentes_ka122vet.pdf",i:"ES",tipo:"Agencia Nacional",b:"C,J",e:"4",q:4,s:"copiar",n:"FAQ que aclara dudas recurrentes (errores comunes)."},
+{id:"kb-0045",t:"SEPIE — KA2 Asociaciones para la cooperación",u:"http://sepie.es/asociaciones-cooperacion/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E",e:"5",q:3,s:"mejorar",n:"Landing KA2 multisectorial; índice, contenido disperso."},
+{id:"kb-0046",t:"INJUVE — Programas E+ Juventud y Deporte (portada)",u:"https://www.injuve.es/erasmusplus",i:"ES",tipo:"Agencia Nacional",b:"B,D",e:"1",q:4,s:"copiar",n:"Hub AN de Juventud: guías, formularios y documentación KA1/KA2 youth."},
+{id:"kb-0047",t:"INJUVE — Convocatoria 2026 Juventud y Deporte",u:"https://programaseuropeos.injuve.es/erasmus/erasmus-juventud-y-deporte-convocatoria-2026",i:"ES",tipo:"Agencia Nacional",b:"A,B,D",e:"1",q:5,s:"copiar",n:"Convocatoria viva: plazos, prioridades, formularios juventud/deporte."},
+{id:"kb-0048",t:"INJUVE — Guías y documentación E+ Juventud",u:"https://www.injuve.es/erasmusplus/noticia/guias-y-documentacion-del-programa-erasmus-plus-juventud",i:"ES",tipo:"Agencia Nacional",b:"D,H,I",e:"1",q:4,s:"copiar",n:"Plantillas de convenio, anexos KA1/KA2 y guía de difusión de resultados."},
+{id:"kb-0049",t:"INJUVE — Formación a solicitantes (TCA/NET, KA2 Sin Secretos)",u:"https://programaseuropeos.injuve.es/en/formacion",i:"ES/EN",tipo:"Agencia Nacional",b:"F,C",e:"1",q:4,s:"copiar",n:"Cursos de redacción y diseño de proyecto. (No siempre queda como doc reutilizable.)"},
+{id:"kb-0050",t:"INJUVE — Acreditaciones juventud (KA150)",u:"https://programaseuropeos.injuve.es/en/erasmus/accreditations-youth-field",i:"ES/EN",tipo:"Agencia Nacional",b:"C",e:"1",q:4,s:"mejorar",n:"Acreditación juventud explicada por la AN española."},
+{id:"kb-0051",t:"Léargas (IRL) — Applying for Erasmus+ Partnerships",u:"https://www.leargas.ie/application-process/projects/applying-for-erasmus-partnerships/",i:"EN",tipo:"Agencia Nacional",b:"D,E",e:"5",q:3,s:"mejorar",n:"Proceso KA2 + feedback de evaluadores; poca técnica concreta."},
+{id:"kb-0052",t:"Léargas (IRL) — Handbook lump sum KA2 (Call 2025)",u:"https://www.leargas.ie/resource/handbook-on-the-lump-sum-funding-model-ka2-partnerships-for-cooperation-call-2025/",i:"EN",tipo:"Agencia Nacional",b:"G,D,I",e:"5",q:5,s:"copiar",n:"Manual del modelo lump sum: imprescindible para presupuesto y ciclo de vida KA2."},
+{id:"kb-0053",t:"Léargas (IRL) — KA220 Application Clinic 2026",u:"https://www.leargas.ie/event/erasmus-ka220-application-clinic-for-cooperation-partnerships-2026/",i:"EN",tipo:"Agencia Nacional",b:"F,C",e:"5",q:3,s:"mejorar",n:"Clínica de solicitudes KA220; valor según materiales publicados."},
+{id:"kb-0054",t:"Léargas (IRL) — KA220 application roadmap (PDF)",u:"https://www.leargas.ie/wp-content/uploads/2024/04/Leargas_KA2roadmap_2024-1.pdf",i:"EN",tipo:"Agencia Nacional",b:"C,D",e:"5",q:3,s:"mejorar",n:"Roadmap visual del proceso; bueno para estructura."},
+{id:"kb-0055",t:"OEAD (AUT) — Erasmus+ VET overview",u:"https://erasmusplus.oead.at/en/berufsbildung/ueberblick",i:"EN/DE",tipo:"Agencia Nacional",b:"A,B,D",e:"4",q:4,s:"copiar",n:"VET con Final Checks (consultas sobre el borrador de solicitud)."},
+{id:"kb-0056",t:"Agence Erasmus+ France/ÉF — Appel à propositions 2026",u:"https://agence.erasmusplus.fr/programme-erasmus/appel-a-propositions/",i:"FR",tipo:"Agencia Nacional",b:"A,D",e:"Transversal",q:4,s:"copiar",n:"Convocatoria + webinars Ready for Erasmus+! de acompañamiento."},
+{id:"kb-0057",t:"Agence E+ Jeunesse (FR) — Webinaires accompagnement 2026",u:"https://www.erasmusplus-jeunesse.fr/annonce_webinaires_accompagnement_2026",i:"FR",tipo:"Agencia Nacional",b:"F,D",e:"1",q:4,s:"copiar",n:"Incluye KA2: comment rédiger une candidature de qualité + formulaire commenté."},
+{id:"kb-0058",t:"AN E+ Portugal — Guia de apoio Projetos KA2",u:"https://erasmusmais.pt/guia-de-apoio-projetos-ka2/",i:"PT",tipo:"Agencia Nacional",b:"D,G,I",e:"5",q:4,s:"copiar",n:"Guía de ciclo de vida KA2 (candidatura→gestión→relatórios) con PDF."},
+{id:"kb-0059",t:"JUGEND für Europa (DE) — Erasmus+ Jugend (hub)",u:"https://www.jugendfuereuropa.de/erasmus-jugend",i:"DE",tipo:"Agencia Nacional",b:"B,D",e:"1",q:4,s:"copiar",n:"AN de Juventud alemana: KA1/KA2 youth y consultas (Sprechstunden)."},
+{id:"kb-0060",t:"Specific guidance for KA1 VET projects (OPH, Finlandia)",u:"https://www.oph.fi/en/programmes/specific-guidance-erasmus-ka1-projects-vocational-education-and-training-vet",i:"EN",tipo:"Agencia Nacional",b:"C",e:"4",q:4,s:"copiar",n:"Guía práctica VET de la AN finlandesa; buen detalle operativo."},
+{id:"kb-0061",t:"Léargas / VET Mobility Projects (IRL)",u:"https://www.leargas.ie/erasmus-plus/mobility-projects/vet/",i:"EN",tipo:"Agencia Nacional",b:"A",e:"4",q:4,s:"copiar",n:"Descripción clara de tipos de movilidad VET."},
+{id:"kb-0062",t:"KA1 — Learning Mobility of Individuals (índice)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1",i:"EN",tipo:"Oficial UE",b:"A",e:"1,2,3,4",q:5,s:"copiar",n:"Raíz del Programme Guide para toda la KA1."},
+{id:"kb-0063",t:"KA1 — What is a mobility project?",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/what-is-a-mobility-project",i:"EN",tipo:"Oficial UE",b:"A",e:"1,2,3,4",q:5,s:"copiar",n:"Lógica del proyecto de movilidad común a los 4 sectores."},
+{id:"kb-0064",t:"KA1 — Learning Mobility (intro, principios)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/introduction",i:"EN/ES",tipo:"Oficial UE",b:"A,C",e:"1,2,3,4",q:4,s:"mejorar",n:"Principios transversales: educativa/transnacional/estructurada/estratégica."},
+{id:"kb-0065",t:"Youth Exchanges (intercambios juveniles)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",i:"EN",tipo:"Oficial UE",b:"E",e:"1",q:5,s:"copiar",n:"Criterios, duración y reglas de intercambios juveniles."},
+{id:"kb-0066",t:"Mobility projects for youth workers",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers",i:"EN",tipo:"Oficial UE",b:"E",e:"1",q:5,s:"copiar",n:"Desarrollo profesional de trabajadores juveniles."},
+{id:"kb-0067",t:"Youth participation activities",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-participation",i:"EN",tipo:"Oficial UE",b:"A",e:"1",q:5,s:"copiar",n:"Formato grass-root flexible de participación cívica."},
+{id:"kb-0068",t:"DiscoverEU Inclusion Action",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/discovereu-action",i:"EN",tipo:"Oficial UE",b:"A",e:"1",q:5,s:"copiar",n:"Acción DiscoverEU para jóvenes con menos oportunidades (18-21)."},
+{id:"kb-0069",t:"Erasmus accreditation in the field of youth (KA150)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/accreditation-youth",i:"EN",tipo:"Oficial UE",b:"C",e:"1",q:5,s:"copiar",n:"Vía de acreditación en juventud (distinta de KA151/KA152)."},
+{id:"kb-0070",t:"Mobility for accredited orgs (youth, KA151)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-accredited-youth",i:"EN",tipo:"Oficial UE",b:"C",e:"1",q:4,s:"copiar",n:"Reglas para organizaciones ya acreditadas en juventud."},
+{id:"kb-0071",t:"Mobility for adult learners and staff",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/adult-learners-and-staff",i:"EN",tipo:"Oficial UE",b:"A",e:"2",q:5,s:"copiar",n:"Sección oficial del sector adultos."},
+{id:"kb-0072",t:"Mobility for pupils and staff in school education",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-school",i:"EN",tipo:"Oficial UE",b:"A",e:"3",q:5,s:"copiar",n:"Sección oficial del sector escolar."},
+{id:"kb-0073",t:"Mobility for learners and staff in VET",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-vet",i:"EN",tipo:"Oficial UE",b:"A",e:"4",q:5,s:"copiar",n:"Sección oficial VET; incluye ErasmusPro y movilidad de grupo."},
+{id:"kb-0074",t:"Erasmus accreditation in VET, school and adult",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/erasmus-accreditation-vet-school-adult",i:"EN",tipo:"Oficial UE",b:"C",e:"2,3,4",q:5,s:"copiar",n:"Acreditación y Erasmus Plan para los 3 sectores de educación."},
+{id:"kb-0075",t:"Call 2026 KA122-SCH Short-term projects (PDF)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/Call%202026%20Short-term%20projects%20for%20mobility%20of%20learners%20and%20staff%20in%20school%20education%20(KA122-SCH)_watermark.pdf",i:"EN",tipo:"Oficial UE",b:"D",e:"3",q:5,s:"copiar",n:"Formato oficial de solicitud KA122 escolar 2026."},
+{id:"kb-0076",t:"SALTO — Youthpass (qué es)",u:"https://www.salto-youth.net/rc/training-and-cooperation/youthpass/",i:"EN",tipo:"Oficial UE",b:"H",e:"1",q:4,s:"copiar",n:"Reconocimiento de aprendizaje; impacto y validación (juventud)."},
+{id:"kb-0077",t:"KA2 — Partnerships for Cooperation (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/partnerships-cooperation",i:"EN/ES",tipo:"Oficial UE",b:"A,C,G",e:"5,6",q:5,s:"mejorar",n:"Define Cooperation vs Small-scale, actividades tipo y prioridades 2026."},
+{id:"kb-0078",t:"Cooperation partnerships — Programme Guide (KA220)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/cooperation-partnerships",i:"EN/ES",tipo:"Oficial UE",b:"D,E,G",e:"5",q:5,s:"copiar",n:"Canónica: elegibilidad, prioridades, criterios y lump sums (120k/250k/400k)."},
+{id:"kb-0079",t:"Template application form KA220-YOU",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/template-application-form-cooperation-partnerships-in-youth-ka220-you-0",i:"EN",tipo:"Oficial UE",b:"D",e:"5",q:5,s:"copiar",n:"Plantilla oficial con las secciones reales del Part B."},
+{id:"kb-0080",t:"Small-scale partnerships — Programme Guide (KA210)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/small-scale-partnerships",i:"EN/ES",tipo:"Oficial UE",b:"D,E,G",e:"6",q:5,s:"copiar",n:"Canónica: criterios (30/30/20/20, umbral 60) y lump sums 30k/60k."},
+{id:"kb-0081",t:"Template application form KA210-YOU 2026",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/2026-template-application-form-small-scale-partnerships-in-youth-ka210-you",i:"EN",tipo:"Oficial UE",b:"D",e:"6",q:4,s:"copiar",n:"Landing del formulario 2026 de juventud; remite al eForm."},
+{id:"kb-0082",t:"Template application form KA210-SCH 2026",u:"https://erasmus-plus.ec.europa.eu/document/2026-template-application-form-small-scale-partnerships-in-school-education-ka210-sch",i:"EN",tipo:"Oficial UE",b:"D",e:"6",q:4,s:"copiar",n:"Plantilla 2026 educación escolar; mapear secciones por sector."},
+{id:"kb-0083",t:"KA3 — Support to policy development (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-3",i:"EN",tipo:"Oficial UE",b:"A",e:"7",q:4,s:"copiar",n:"Índice oficial de KA3 con las 6 categorías de acciones."},
+{id:"kb-0084",t:"European Youth Together (Part B / KA3)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-3/youth-together",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"7",q:5,s:"copiar",n:"Canónica: elegibilidad, criterios (30/30/20/20) y lump sum 80% hasta 500k€."},
+{id:"kb-0085",t:"European Youth Together — topic page (F&T)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-youth-2024-youth-tog",i:"EN",tipo:"Oficial UE",b:"D",e:"7",q:5,s:"copiar",n:"Convocatoria: plantilla Part B (70 pp), presupuesto y plazos."},
+{id:"kb-0086",t:"Call fiche Civil Society Cooperation (PDF)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/wp-call/2023/call-fiche_erasmus-2023-csc-og-sga_en.pdf",i:"EN",tipo:"Oficial UE",b:"D",e:"7",q:4,s:"mejorar",n:"Ficha de Civil Society Cooperation (operating grants); ejemplo de estructura KA3."},
+{id:"kb-0087",t:"Capacity building in the field of youth (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-youth",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"8",q:5,s:"copiar",n:"Canónica CB Youth: regiones, prioridades, criterios, lump sum 300k/450k€."},
+{id:"kb-0088",t:"Capacity building in VET (CB VET) — action page",u:"https://erasmus-plus.ec.europa.eu/opportunities/organisations/cooperation-among-organisations-and-institutions/capacity-building-vet",i:"EN",tipo:"Oficial UE",b:"A,D",e:"8",q:4,s:"copiar",n:"Resumen CB VET: consorcio mín.4 orgs/3 países, 1-3 años, qué financia."},
+{id:"kb-0089",t:"Capacity Building in VET 2026: how to apply? (EACEA)",u:"https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en",i:"EN",tipo:"Oficial UE",b:"D",e:"8",q:5,s:"copiar",n:"Convocatoria 2026: Part B máx.40 pp, grant máx.500k€, deadline y tips."},
+{id:"kb-0090",t:"Tips for applicants — ERASMUS-EDU-2025-CB-VET (PDF)",u:"https://www.eacea.ec.europa.eu/document/download/80f30c0e-3c7d-492f-83cf-59e843e379fc_en?filename=Tips+for+applicants+-+ERASMUS-EDU-2025-CB-VET.pdf",i:"EN",tipo:"Oficial UE",b:"E,F,J",e:"8",q:5,s:"copiar",n:"GUÍA OFICIAL DE REDACCIÓN: errores frecuentes y cómo puntuar alto por criterio."},
+{id:"kb-0091",t:"SALTO — Useful links for CB youth applicants (PDF)",u:"https://www.salto-youth.net/downloads/4-17-3647/Useful%20links%20for%20applicants%20of%20Capacity-building%20in%20the%20field%20of%20youth.pdf",i:"EN",tipo:"Oficial UE",b:"C",e:"8",q:4,s:"mejorar",n:"Recopilatorio de enlaces de apoyo CB Youth; actualizar a convocatoria vigente."},
+{id:"kb-0092",t:"Not-for-profit European Sport Events (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/sport",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"9",q:5,s:"copiar",n:"Canónica eventos deporte: criterios (100 pts) y lump sums 200k/300k/450k."},
+{id:"kb-0093",t:"Cooperation Partnerships – Sport Actions",u:"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-organisations/sport-actions/cooperation-partnerships",i:"EN",tipo:"Oficial UE",b:"A",e:"9",q:4,s:"mejorar",n:"Acción de deporte: objetivos, actividades, prioridades sectoriales."},
+{id:"kb-0094",t:"Small-scale Partnerships – Sport Actions",u:"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-organisations/sport-actions/small-scale-partnerships",i:"EN",tipo:"Oficial UE",b:"A",e:"9",q:4,s:"mejorar",n:"Pequeña escala en deporte (newcomers, base); no detalla lump sums/criterios."},
+{id:"kb-0095",t:"Guide for Experts on Quality Assessment 2025 (PDF)",u:"https://www.erasmusplus.it/wp-content/uploads/2025/02/IV.1a-Erasmus-Plus-Guide-for-experts-on-quality-assessment_2025.pdf",i:"EN",tipo:"Oficial UE",b:"E",e:"Transversal",q:5,s:"copiar",n:"LA RÚBRICA REAL con la que puntúan los evaluadores. Fuente primaria. Sin sesgo."},
+{id:"kb-0096",t:"Guide for Experts on Quality Assessment 2023 (PDF)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2023-11/IV.1a%20-%20E+Guide%20for%20experts%20on%20quality%20assessment_2023_corr_final.pdf",i:"EN",tipo:"Oficial UE",b:"E,F,J",e:"Transversal",q:5,s:"mejorar",n:"Versión 2023 (dominio madre). No asumir lo no escrito."},
+{id:"kb-0097",t:"Uni-Graz — How to write a good E+ proposal (PDF)",u:"https://static.uni-graz.at/fileadmin/bib/downloads/koop_projekte/projekte/bibwww_recommends_good_e_proposal.pdf",i:"EN",tipo:"Académico",b:"C,D,F,H",e:"Transversal",q:4,s:"copiar",n:"Recomendaciones concretas: objetivos medibles, target groups cuantificados. Sin sesgo."},
+{id:"kb-0098",t:"Youth Networks — E+ Project Quality Assessment Guide",u:"https://youthnetworks.net/erasmus-project-quality-assessment-guide/",i:"EN",tipo:"Blog/Consultora",b:"E,H",e:"1",q:4,s:"copiar",n:"Cómo se evalúa la calidad; perspectiva de assessment. Sesgo bajo."},
+{id:"kb-0099",t:"SALTO — Mastering the Art of Writing your First KA1",u:"https://www.salto-youth.net/tools/toolbox/tool/mastering-the-art-of-writing-and-funding-your-first-ka1-project-a-comprehensive-course.3645/",i:"EN",tipo:"Oficial UE",b:"C,D,F",e:"1",q:4,s:"copiar",n:"Curso gratuito 14 pasos para primer KA1 (OID, PIF, problema-relevancia). Sin sesgo."},
+{id:"kb-0100",t:"Future Needs — KA2 proposal writing handbook",u:"https://futureneeds.eu/erasmus-ka2-proposal-writing-practical-handbook-for-applicants/",i:"EN",tipo:"Blog/Consultora",b:"D,F,G,J",e:"5",q:4,s:"copiar",n:"Muy concreto sobre lump-sum y WPs; errores reales. SESGO COMERCIAL."},
+{id:"kb-0101",t:"Euneos — Evaluation criteria for E+ proposals",u:"https://www.euneoscourses.eu/what-are-the-evaluation-criteria-for-erasmus-funding-proposals/",i:"EN",tipo:"Blog/Consultora",b:"E",e:"Transversal",q:4,s:"copiar",n:"Desglosa los 4 criterios + umbrales. SESGO COMERCIAL."},
+{id:"kb-0102",t:"Euneos — How to write a successful E+ proposal",u:"https://www.euneoscourses.eu/how-to-write-a-successful-erasmus-funding-proposal/",i:"EN",tipo:"Blog/Consultora",b:"C,D,F,H",e:"Transversal",q:4,s:"copiar",n:"Técnica divide la pregunta en sub-preguntas + bullets para el evaluador. SESGO."},
+{id:"kb-0103",t:"Erasmus.courses — KA121 vs KA122 strong proposal",u:"https://erasmus.courses/blog/how-to-write-a-successful-erasmus-project-proposal-ka121-ka122/",i:"EN",tipo:"Blog/Consultora",b:"C,F,H",e:"1",q:4,s:"copiar",n:"Cadena necesidades→objetivos→actividades→resultados con indicadores. SESGO."},
+{id:"kb-0104",t:"Europa Media — Common mistakes writing a proposal",u:"https://europamediatrainings.com/blog/post/586/common-mistakes-when-writing-a-proposal",i:"EN",tipo:"Blog/Consultora",b:"J,F",e:"Transversal",q:4,s:"copiar",n:"Errores de redacción a nivel proposal EU. SESGO (trainings)."},
+{id:"kb-0105",t:"Zeus Consulting — 12 Common EU Grant Mistakes",u:"https://zeusconsulting.com/insights/eu-funding-proposal-mistakes",i:"EN",tipo:"Blog/Consultora",b:"J",e:"Transversal",q:4,s:"copiar",n:"Errores densos: objetivos vagos, mismatch narrativa-presupuesto. SESGO."},
+{id:"kb-0106",t:"GrowthProjects — E+ Lump Sum Grants (KA210/KA220)",u:"https://www.growthprojects.eu/erasmus-lump-sum-grant/",i:"EN",tipo:"Blog/Consultora",b:"G",e:"6",q:3,s:"mejorar",n:"Checklist para elegir tramo lump sum y errores. SESGO COMERCIAL."},
+{id:"kb-0107",t:"AUPEX — Cómo preparar una propuesta KA2 (adultos)",u:"https://erasmusplus.aupex.org/movilidades/propuesta-proyecto-alianzas-erasmus-ka2/",i:"ES",tipo:"Blog/Consultora",b:"C,D,F",e:"2",q:3,s:"mejorar",n:"Guía paso a paso KA2 adultos EN ESPAÑOL; selección de socios, máx 5 objetivos."},
+{id:"kb-0108",t:"Adiper — Errores comunes proyectos europeos",u:"https://www.adiper.es/errores-comunes-al-presentar-proyectos-europeos-y-como-evitarlos/",i:"ES",tipo:"Blog/Consultora",b:"J,C,H",e:"Transversal",q:3,s:"mejorar",n:"6 errores EN ESPAÑOL; práctico pero genérico. Sesgo leve."},
+{id:"kb-0109",t:"COMPASSS (CERMI) — 6 recomendaciones diseño E+",u:"https://compasss.cermi.es/blog/6-recomendaciones-para-disenar-tu-proyecto-erasmus-2023",i:"ES",tipo:"Blog/Consultora",b:"C,F,E",e:"Transversal",q:3,s:"mejorar",n:"Consejos de diseño (palabras clave, valor añadido). Enfoque inclusión."},
+{id:"kb-0110",t:"LinkedIn (Martinelli) — Cómo escribir un buen E+",u:"https://es.linkedin.com/pulse/c%C3%B3mo-escribir-un-buen-proyecto-erasmus-plus-aqu%C3%AD-unos-martinelli",i:"ES",tipo:"Blog/Consultora",b:"C,F,H",e:"Transversal",q:3,s:"mejorar",n:"Post práctico EN ESPAÑOL: socios de confianza, objetivos medibles. Sin sesgo directo."},
+{id:"kb-0111",t:"Erasmusly — Preparing Guide KA210 (ebook)",u:"https://www.erasmusly.com/preparing-guide-for-erasmus-ka210-project-proposals-ebook-41509.html",i:"EN",tipo:"Académico",b:"C,D,G,H,J",e:"6",q:3,s:"mejorar",n:"Ebook KA210: estructura, checklist partnership, budgeting. SESGO (ebook de pago)."},
+{id:"kb-0112",t:"Youth Networks — Small-Scale Partnerships E+",u:"https://youthnetworks.net/small-scale-partnerships-erasmus/",i:"EN",tipo:"Blog/Consultora",b:"C,D,E",e:"6",q:3,s:"mejorar",n:"Guía KA210 + criterios de calidad. Sesgo bajo."},
+{id:"kb-0113",t:"Lina Edu — KA2 Tips & Tricks for Schools",u:"https://linaedu.eu/erasmus-ka2-tips-trick-for-schools/",i:"EN",tipo:"Blog/Consultora",b:"C,F,J",e:"3",q:3,s:"mejorar",n:"Trucos KA2 para centros escolares. Sesgo moderado."},
+{id:"kb-0114",t:"GrowthProjects — E+ Proposal Writing Service",u:"https://www.growthprojects.eu/erasmus-proposal-writing-service-how-experts-help-you-win-funding/",i:"EN",tipo:"Blog/Consultora",b:"E,F",e:"Transversal",q:3,s:"mejorar",n:"El gap 60→85+ puntos y lenguaje que el evaluador reconoce. SESGO fuerte."},
+{id:"kb-0115",t:"portal365.org — 10 Common Mistakes in Proposals",u:"https://portal365.org/en/posts/10%20Common%20Mistakes%20in%20Writing%20Project%20Proposals%20and%20How%20to%20Avoid%20Them",i:"EN",tipo:"Blog/Consultora",b:"J",e:"Transversal",q:3,s:"mejorar",n:"10 errores genéricos; útil como checklist base. Sesgo bajo."},
+{id:"kb-0116",t:"Teacher Academy — E+ KA1 how does it work",u:"https://www.teacheracademy.eu/erasmus-plus/ka1/",i:"EN",tipo:"Blog/Consultora",b:"F",e:"2,3",q:3,s:"mejorar",n:"Divulgativa, movilidad de personal docente. SESGO (cursos)."}
+];
+
+const ESTADOS = ["copiar","mejorar","crear","descartar","sin"];
+const STORE = "kb_estados_v1";
+let overrides = JSON.parse(localStorage.getItem(STORE) || "{}");
+DATA.forEach(d => { if(overrides[d.id]) d.s = overrides[d.id]; });
+
+const filters = {bloque:new Set(),esp:new Set(),tipo:new Set(),idioma:new Set(),estado:new Set(),q:""};
+
+function uniq(key,split){const s=new Set();DATA.forEach(d=>{(split?String(d[key]).split(","):[d[key]]).forEach(v=>s.add(v.trim()))});return [...s];}
+
+function chipBar(containerId,values,fkey,labelFn){
+  const c=document.getElementById(containerId);
+  values.forEach(v=>{
+    const el=document.createElement("span");el.className="chip";el.textContent=labelFn?labelFn(v):v;
+    el.onclick=()=>{el.classList.toggle("on");filters[fkey].has(v)?filters[fkey].delete(v):filters[fkey].add(v);render();};
+    c.appendChild(el);
+  });
+}
+chipBar("f-bloque","ABCDEFGHIJ".split(""),"bloque",v=>v+" · "+BLOQUES[v]);
+chipBar("f-esp",["Transversal","1","2","3","4","5","6","7","8","9"],"esp",v=>ESP[v]?v+" "+ESP[v]:v);
+chipBar("f-tipo",["Oficial UE","Agencia Nacional","Blog/Consultora","Académico"],"tipo");
+chipBar("f-idioma",["ES","EN","EN/ES","ES/EN","FR","PT","EN/DE"],"idioma");
+chipBar("f-estado",["copiar","mejorar","crear","descartar"],"estado");
+
+document.getElementById("q").oninput=e=>{filters.q=e.target.value.toLowerCase();render();};
+document.getElementById("reset").onclick=()=>{
+  Object.keys(filters).forEach(k=>k==="q"?filters.q="":filters[k].clear());
+  document.getElementById("q").value="";
+  document.querySelectorAll(".chip.on").forEach(c=>c.classList.remove("on"));
+  render();
+};
+document.getElementById("export").onclick=()=>{
+  const out=DATA.map(d=>({id:d.id,titulo:d.t,url:d.u,idioma:d.i,tipo:d.tipo,bloque:d.b,especialidad:d.e,calidad:d.q,estado:d.s==="sin"?"":d.s,notas:d.n}));
+  const blob=new Blob([JSON.stringify(out,null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="sources.json";a.click();
+};
+
+function matchMulti(field,set,split){
+  if(!set.size)return true;
+  const vals=split?String(field).split(",").map(x=>x.trim()):[field];
+  return vals.some(v=>set.has(v));
+}
+function passes(d){
+  if(!matchMulti(d.b,filters.bloque,true))return false;
+  if(!matchMulti(d.e,filters.esp,true))return false;
+  if(filters.tipo.size&&!filters.tipo.has(d.tipo))return false;
+  if(filters.idioma.size&&!filters.idioma.has(d.i))return false;
+  if(filters.estado.size&&!filters.estado.has(d.s))return false;
+  if(filters.q){const hay=(d.t+" "+d.n+" "+d.u+" "+d.id).toLowerCase();if(!hay.includes(filters.q))return false;}
+  return true;
+}
+function stars(q){return '<span class="star">'+'★'.repeat(q)+'</span>'+'☆'.repeat(5-q);}
+function tags(str,cls){return str.split(",").map(x=>`<span class="tag ${cls||''}">${x.trim()}</span>`).join("");}
+function estadoLabel(s){return s==="sin"?"sin decidir":s;}
+
+function cycle(d){
+  const i=ESTADOS.indexOf(d.s);d.s=ESTADOS[(i+1)%ESTADOS.length];
+  overrides[d.id]=d.s;localStorage.setItem(STORE,JSON.stringify(overrides));
+  render();
+}
+
+function render(){
+  const tb=document.getElementById("rows");tb.innerHTML="";
+  let shown=0;
+  DATA.forEach(d=>{
+    if(!passes(d))return;shown++;
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td><a class="ttl" href="${d.u}" target="_blank" rel="noopener">${d.t}</a><span class="url">${d.u}</span></td>
+      <td><span class="idioma">${d.i}</span></td>
+      <td>${d.tipo}</td>
+      <td>${tags(d.b)}</td>
+      <td>${d.e==="Transversal"?'<span class="tag">Transv.</span>':tags(d.e,"esp")}</td>
+      <td class="qual" title="${d.q}/5">${stars(d.q)}</td>
+      <td></td>
+      <td class="notas">${d.n}</td>`;
+    const est=document.createElement("button");
+    est.className="estado "+d.s;est.textContent=estadoLabel(d.s);
+    est.title="Clic para cambiar el estado";est.onclick=()=>cycle(d);
+    tr.children[6].appendChild(est);
+    tb.appendChild(tr);
+  });
+  document.getElementById("shown").textContent=shown;
+  document.getElementById("total").textContent=DATA.length;
+  document.getElementById("empty").style.display=shown?"none":"block";
+  renderCounters();
+}
+function renderCounters(){
+  const c=document.getElementById("counters");c.innerHTML="";
+  const counts={copiar:0,mejorar:0,crear:0,descartar:0,sin:0};
+  DATA.forEach(d=>counts[d.s]++);
+  const add=(label,cls,n)=>{const p=document.createElement("span");p.className="pill";p.innerHTML=(cls?`<span class="dot ${cls}"></span>`:"")+`${label} <b>${n}</b>`;c.appendChild(p);};
+  add("Total","",DATA.length);
+  add("Copiar","copiar",counts.copiar);
+  add("Mejorar","mejorar",counts.mejorar);
+  add("Crear","crear",counts.crear);
+  add("Descartar","descartar",counts.descartar);
+  if(counts.sin)add("Sin decidir","",counts.sin);
+}
+render();
+</script>
+</body>
+</html>
