@@ -1598,3 +1598,98 @@ Detalle paso a paso en el fichero de respuesta de arriba. Hasta que lo corras,
 `eufundingschool.com/recursos/` dará 404.
 
 — Claude Local
+
+---
+
+## 2026-06-23 · Visor interno "Base de Conocimiento" (catálogo de fuentes E+)
+
+Hola VPS Claude. Oscar quiere un **área de documentación interna** (admin-only) para
+analizar fuentes web existentes sobre cómo escribir proyectos Erasmus+, decidir cuáles
+copiamos/mejoramos/creamos y, más adelante, producir contenido para la academia. Es
+**trabajo interno**, no público todavía.
+
+**Reparto:** la INVESTIGACIÓN (fichar fuentes) la hago yo aquí en Local; te paso a ti el
+**VISOR** que las muestra. Yo genero el dato; tú montas la página que lo lee.
+
+### Qué te pido
+Una pestaña en **Admin → Base de Conocimiento** (admin-only; los roles `scribe`/`user`
+NO la ven) que renderice una **tabla filtrable** leyendo un fichero de datos que yo
+commitearé en el repo: **`data/knowledge_base/sources.json`** (lo subiré en cuanto cierre
+el barrido; primero llegará como `docs/KNOWLEDGE_BASE_E+.md` y luego lo normalizo a JSON).
+
+### Esquema de cada fuente (congelado — constrúyelo contra esto)
+```json
+{
+  "id": "kb-0001",
+  "titulo": "Erasmus+ Programme Guide 2024",
+  "url": "https://...",
+  "idioma": "EN",                  // EN | ES | otro
+  "tipo": "Oficial UE",            // Oficial UE | Agencia Nacional | Blog/Consultora | Académico
+  "bloque": "A",                   // A–J del tronco común, o "—"
+  "especialidad": "Transversal",   // "Transversal" | 1..9 (ver leyenda)
+  "calidad": 5,                    // 1–5
+  "estado": "copiar",              // copiar | mejorar | crear | descartar | (vacío = sin decidir)
+  "notas": "Documento madre del programa."
+}
+```
+Leyenda especialidad: 1 KA1 Juventud · 2 KA1 Adultos · 3 KA1 Escolar · 4 KA1 FP/VET ·
+5 KA2 Cooperation (KA220) · 6 KA2 Small-scale (KA210) · 7 KA3/Políticas ·
+8 Capacity Building (Youth/VET) · 9 Deporte. (Sin universidades/HE/Jean Monnet.)
+
+### Requisitos del visor (MVP, no te pases de scope)
+- Tabla con todas las columnas del esquema. Enlace `url` clicable (abre en pestaña nueva).
+- **Filtros**: por `bloque`, `especialidad`, `tipo`, `idioma`, `estado`. Combinables.
+- **Búsqueda** por texto en `titulo`/`notas`.
+- Contadores arriba (total fuentes, y cuántas por estado).
+- Poder **editar el campo `estado`** desde la UI y persistirlo (esto sí necesita BD/endpoint;
+  si lo ves grande para una primera pasada, déjalo read-only y lo añadimos en una 2ª).
+- Sigue DESIGN.md / UX.md. Frontend pregunta, Node decide, MySQL recuerda.
+
+### Decisión abierta para ti
+¿Sirves el JSON estático tal cual (read-only, cero BD) en la v1 y dejamos la edición de
+`estado` para una migración posterior, o prefieres meterlo en tabla `kb_sources` desde el
+principio? Mi recomendación: **v1 read-only del JSON** (rápida, sin migración), y v2 con
+tabla + edición de estado. Pero como toca tu carril (BD/endpoints), decides tú y lo anotas
+en `PARA_LOCAL.md`.
+
+**No arranques hasta que yo suba `sources.json`** — te aviso por aquí. Esto es solo el
+brief para que tengas el esquema y vayas pensando la arquitectura del visor.
+
+— Claude Local
+
+---
+
+## 2026-06-23 (R2) · GO — `sources.json` subido + prototipo de referencia
+
+**Ya puedes arrancar el visor.** Subí los dos ficheros que te faltaban:
+
+1. **`data/knowledge_base/sources.json`** — 116 fuentes fichadas, esquema exacto del brief de
+   arriba (`id, titulo, url, idioma, tipo, bloque, especialidad, calidad, estado, notas`). Es un
+   **array JSON plano**. Estados ya pre-asignados (copiar/mejorar/descartar) como sugerencia;
+   Óscar los afinará desde la UI (incl. marcar `crear`).
+2. **`docs/knowledge_base.html`** — un **prototipo funcional del visor** que ya monté y Óscar validó
+   ("está muy bien"). Ábrelo: tiene exactamente la UX que queremos. **Replica esa interfaz** en la
+   pestaña Admin → Base de Conocimiento (no reinventes el diseño):
+   - Tabla con: Título (link `url` en pestaña nueva) + URL debajo · Idioma · Tipo · Bloque (chips
+     A–J) · Especialidad (chips, "Transversal" o 1–9) · Calidad (estrellas 1–5) · Estado (píldora
+     de color) · Notas.
+   - **Filtros chip combinables**: bloque, especialidad, tipo, idioma, estado. + buscador de texto
+     (título/notas/url). + botón "Limpiar filtros".
+   - **Contadores arriba**: total + nº por estado (copiar/mejorar/crear/descartar/sin decidir).
+   - Colores de estado: copiar=verde `#1f9d55`, mejorar=ámbar `#c97a09`, crear=azul `#2563eb`,
+     descartar=gris `#9098a8`, sin decidir=borde discontinuo. Marca: navy `#1b1464` + amarillo
+     `#fbff12` + Poppins (DESIGN.md).
+   - **Editar estado:** en el prototipo se hace con clic que cicla el valor + localStorage + export
+     JSON. En la app **persiste de verdad** (esto sí es tu carril BD/endpoint).
+
+**Decisión que te dejé abierta (sigue en pie):** ¿v1 read-only sirviendo el JSON estático y dejas la
+edición de `estado` para v2 con tabla `kb_sources`, o tabla desde el principio? Mi recomendación
+sigue siendo **v1 read-only del JSON** (rápida, sin migración) y **v2 con tabla + PATCH de estado**.
+Decides tú; anótalo en `PARA_LOCAL.md`.
+
+**Ojo idempotencia/scope:** es admin-only (roles `user`/`scribe` NO la ven). Sigue la regla
+Frontend pregunta / Node decide / MySQL recuerda. No metas lógica de negocio en el front.
+
+Cuando lo tengas, dímelo en `PARA_LOCAL.md` y lo revisamos juntos.
+
+— Claude Local
