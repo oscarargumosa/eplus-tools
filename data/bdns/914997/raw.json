@@ -1,0 +1,64 @@
+{
+  "id": 1116558,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "CONSEJERÍA DE PRESIDENCIA, JUVENTUD, ACCIÓN EXTERIOR Y EMERGENCIAS"
+  },
+  "sedeElectronica": "https://sede.carm.es/web/servlet/pagina?IDCONTENIDO=4543&IDTIPO=240&RASTRO=c$m40288",
+  "codigoBDNS": "914997",
+  "fechaRecepcion": "2026-06-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800750,
+  "mrr": false,
+  "descripcion": "Orden de 23 de junio de 2026 de la Consejería de Presidnecia, Juventud, Accion Exterior y Emergencias por la que s econvocan subvenciones a los Ayuntamientos para colaborar en los gastos de personal integrante de la unidades de protección civil",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Seguridad Ciudadana e Instituciones Penitenciarias",
+  "descripcionBasesReguladoras": "Orden de 8 de noviembre de 2024, de la Consejeria de Presidencia, Portavocia, Accion Exterio y Emergencias por la que se establecen las bases reguladoras de las subvenciones para colaborar en los gastos de la Unidades Basicas de Proteccion Civil Municipal",
+  "urlBasesReguladoras": "https://www.borm.es/services/anuncio/ano/2024/numero/5540/pdf?id=831571",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde las 10:00 horas del día siguiente al de la publicación en el BORM",
+  "textFin": "10 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480931,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ORDEN 23 JUNIO CPJAEE CONVOCATORIA UBPC 2026.pdf",
+      "long": 982747,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

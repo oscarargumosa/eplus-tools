@@ -29,8 +29,8 @@
     "CEF-DIG-2026-CABLE-REPAIR-CAPACITIES"
   ],
   "crossCuttingPriorities": [
-    "DigitalAgenda",
-    "AI"
+    "AI",
+    "DigitalAgenda"
   ],
   "supportInfoText": "For help related to this call, please contact  HaDEA CEF DIGITAL CALLS\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
   "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44924?topic=CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS",
@@ -46,7 +46,7 @@
     {
       "section": "Call document and annexes:",
       "label": "Call document",
-      "url": " https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/wp-call/2026/call-fiche_cef-dig-2026-cable-repair-capacities_en.pdf",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cef/wp-call/2026/call-fiche_cef-dig-2026-cable-repair-capacities_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -135,5 +135,5 @@
       "is_downloadable": true
     }
   ],
-  "fetchedAt": "2026-06-23T04:03:10.751Z"
+  "fetchedAt": "2026-06-24T04:03:28.894Z"
 }

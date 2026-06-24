@@ -1,0 +1,64 @@
+{
+  "id": 1114773,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "CONSEJERÍA DE TURISMO, CULTURA Y DEPORTES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "913212",
+  "fechaRecepcion": "2026-06-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 254000,
+  "mrr": false,
+  "descripcion": "ORDEN DE LA CONSEJERÍA DE TURISM O, CULTURA Y DEPORTES POR LA QUESE AUTORIZA EL GASTO Y SE APRUEBA LA CONVOCATORIA EN RÉGIMEN DE ESPECIAL CONCURRENCIA PARA DESTINOS ADHERIDOS A SOSTENIBILIDAD, INTELIGENCIA Y CALIDAD TURÍSTICA EN EL ECOSISTEMA DEL DESTINO",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Orden de la Consejería de Turismo, Cultura, Juventud yDeportes, por la que se modifica la Orden de 2 de junio de 2025, de la Consejería de Turismo, Cultura, Juventud y Deportes, por la que se aprueban las bases reguladoras para la concesión de subvencion",
+  "urlBasesReguladoras": "https://www.borm.es/#/home/anuncio/16-04-2026/1669",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "el día siguiente a la publicación del extracto de la convocatoria en el BORM",
+  "textFin": "15 días a partir del día siguiente a la publicación del extracto en la convocatoria en el BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480994,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden CONV SICTED 2026_DEFINITIVA (COPIA).pdf",
+      "long": 1242051,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

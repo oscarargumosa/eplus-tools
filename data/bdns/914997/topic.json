@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "914997",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE PRESIDENCIA, JUVENTUD, ACCIÓN EXTERIOR Y EMERGENCIAS",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Orden de 23 de junio de 2026 de la Consejería de Presidnecia, Juventud, Accion Exterior y Emergencias por la que s econvocan subvenciones a los Ayuntamientos para colaborar en los gastos de personal integrante de la unidades de protección civil",
+  "title_lang": "es",
+  "summary": "Seguridad Ciudadana e Instituciones Penitenciarias",
+  "status": "open",
+  "publication_date": "2026-06-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 800750,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/web/servlet/pagina?IDCONTENIDO=4543&IDTIPO=240&RASTRO=c$m40288",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914997",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2024/numero/5540/pdf?id=831571",
+  "text_inicio": "Desde las 10:00 horas del día siguiente al de la publicación en el BORM",
+  "text_fin": "10 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BORM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-24T04:06:50.347Z"
+}

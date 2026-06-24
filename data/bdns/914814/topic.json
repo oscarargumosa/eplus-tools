@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "914814",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE LA GOMERA / CABILDO INSULAR DE LA GOMERA",
+  "nuts_codes": [
+    "ES706"
+  ],
+  "nuts_primary": "ES706",
+  "title": "Decreto de fecha 22/06/2026 de la Presidencia del Excmo. Cabildo Insular de La Gomera por el que se aprueba la convocatoria pública mediante concurrencia competitiva de las ayudas sanitarias y extraordinarias anualidad 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914814",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/boletines/2026/17-6-26/17-6-26.pdf",
+  "text_inicio": "al dia siguiente a la publicación del extracto de la convocatoria en el BOP Santa cruz de Tenerife",
+  "text_fin": "el treintavo día siguiente a la publicación del extracto en el BOP de Santa cruz de Tenerife",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-24T04:06:50.299Z"
+}

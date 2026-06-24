@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "914964",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD REY JUAN CARLOS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "RESOLUCIÓN URJC CONVOCATORIA DE BECAS PARA EL PROGRAMA MÁSTER ERASMUS MUNDUS JOINT EN ECOLOGÍA DEL CAMBIO GLOBAL Y GESTIÓN DE LA BIODIVERSIDAD EN EL MARCO DE LA ACCIÓN ERASMUS MUNDUS FINANCIADA UNIÓN EUROPEA CURSO 2027-2028 Y 2028-2029 TERCERA EDICIÓN",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-23",
+  "open_date": "2026-09-28",
+  "deadline": "2027-01-04",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 840000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://globe-master.eu/apply/#Applynow",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914964",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.urjc.es/tablon-de-anuncios",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAG -  FONDO EUROPEO DE ADAPTACIÓN A LA GLOBALIZACIÓN"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-24T04:06:50.341Z"
+}

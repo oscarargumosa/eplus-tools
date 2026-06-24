@@ -1,0 +1,99 @@
+{
+  "id": 1116554,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN MARTÍN DEL REY AURELIO",
+    "nivel3": "AYUNTAMIENTO DE SAN MARTÍN DEL REY AURELIO"
+  },
+  "sedeElectronica": "https://www.smra.org",
+  "codigoBDNS": "914993",
+  "fechaRecepcion": "2026-06-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES DE DEPORTES 2026 SAN MARTIN DEL REY AURELIO",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE LAS SUBVENCIONES DE DEPORTES 2026 SAN MARTIN DEL REY AURELIO",
+  "urlBasesReguladoras": "https://smra.sede.e-ayuntamiento.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente a la publicación en el BOPA",
+  "textFin": "A LOS 15 DÍAS NATURALES DE LA PUBLICACIÓN EN EL BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480920,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resoluc Alcaldia aprobando convocatorias subvenciones dptes 2026 (1).pdf",
+      "long": 223136,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480923,
+      "descripcion": "BASES AYUDAS A JOVENES DEPORTISTAS DE SAN MARTIN DEL REY AURELIO PARA EL EJERCICIO DE 2026",
+      "nombreFic": "CONVOC AYUDAS DPTAS  EXPDTE (1).pdf",
+      "long": 185634,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480927,
+      "descripcion": "MODELO SOLICITUD",
+      "nombreFic": "FORMULARIO SUBV DEP CONCEJALI?A DEPORTE 2026 V2   OK.pdf",
+      "long": 1199171,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480926,
+      "descripcion": "BASES SUBVENCIONES CON DESTINO A ENTIDADES DEPORTIVAS PARA IMPULSAR EL PROGRAMA DE ESCUELAS DEPORTIVAS Y PROMOVER LA ORGANIZACIÓN DE EVENTOS DEPORTIVOS EN EL MUNICPIO DE SAN MARTIN DEL REY AURELIO EN 2026",
+      "nombreFic": "CONVOC ENTIDADES DPVAS  EXPDTE (1).pdf",
+      "long": 210298,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480924,
+      "descripcion": "BASES SUBVENCIONES PARA EL FOMENTO DEL FUTBOL BASE DE SAN MARTIN DEL REY AURELIO 2026",
+      "nombreFic": "CONVOCAT F. BASE EXPDTE (1).pdf",
+      "long": 227783,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

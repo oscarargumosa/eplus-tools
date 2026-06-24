@@ -10,7 +10,7 @@
   "status": "open",
   "statusCode": "31094502",
   "opening": "2026-06-02",
-  "deadline": "2027-01-19",
+  "deadline": "2026-09-30",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON JU Coordination and Support Actions",
   "actionCode": "HORIZON-JU-CSA",
@@ -394,5 +394,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-06-23T04:03:10.282Z"
+  "fetchedAt": "2026-06-24T04:03:28.899Z"
 }

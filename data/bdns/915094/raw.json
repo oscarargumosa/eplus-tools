@@ -1,0 +1,64 @@
+{
+  "id": 1116655,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
+    "nivel3": "SUBSECRETARÍA DE TRABAJO Y ECONOMÍA SOCIAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915094",
+  "fechaRecepcion": "2026-06-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 32000000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el ejercicio 2026 de concesión de subvenciones a las organizaciones sindicales más representativas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades sindicales",
+      "codigo": "94.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Orden TAS/1303/2007, de 26 de abril, por la que se establecen las bases reguladoras para la concesión de subvenciones a las organizaciones sindicales en proporción a su representatividad por la realización de actividades de carácter sindical",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-9817",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "INDICADO EN LA CONVOCATORIA Y SU EXTRACTO",
+  "textFin": "INDICADO EN LA CONVOCATORIA Y SU EXTRACTO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1481198,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Propuesta Resolución Convocatoria .pdf",
+      "long": 225543,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

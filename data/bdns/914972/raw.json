@@ -1,0 +1,72 @@
+{
+  "id": 1116533,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA COLOMA DE CERVELLÓ",
+    "nivel3": "AYUNTAMIENTO DE SANTA COLOMA DE CERVELLÓ"
+  },
+  "sedeElectronica": "Tràmits/Tramita amb nosaltres/Ajuts i subvencions",
+  "codigoBDNS": "914972",
+  "fechaRecepcion": "2026-06-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "convocatoria para las subvenciones destinadas a pago de los gastos básicos de los hogares, dirigidos a personas con niveles de renta bajos 2026",
+  "descripcionLeng": "Convocatòria per a les subvencions destinades al pagament de les despeses bàsiques de la llar adreçades a persones amb nivells de renda baixos 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas para la concesión de subvenciones en régimen de concurrencia competitiva para le pago de gastos básicos del hogar dirigidas a personas con nivel de renta bajos, para el 2026",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3933494",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-01",
+  "fechaFinSolicitud": "2026-07-24",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480838,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "12_DEC_1099_AprovacioDefinitiva_BasesDespesesLlar_20260619.pdf",
+      "long": 720155,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480884,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "12_DEC_1099_AprovacioDefinitiva_BasesDespesesLlar_20260619.pdf",
+      "long": 720155,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

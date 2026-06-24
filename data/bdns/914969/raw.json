@@ -1,0 +1,72 @@
+{
+  "id": 1116530,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE PRESIDENCIA, JUSTICIA Y DEPORTES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "914969",
+  "fechaRecepcion": "2026-06-23",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3264568.96,
+  "mrr": false,
+  "descripcion": "ORDEN de 17 de junio de 2026, por la que se establecen las bases reguladoras para la concesión de plazas, en régimen de concurrencia competitiva, de tecnificación y rendimiento deportivo para el Centro Gallego de Tecnificación Deportiva para la temporada ",
+  "descripcionLeng": "Orde de 17 de xuño de 2026 pola que se establecen as bases reguladoras para a concesión de prazas, en réxime de concorrencia competitiva, de tecnificación e rendemento deportivo para o Centro Galego de Tecnificación Deportiva para a temporada 2026/27, e s",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDEN de 17 de junio de 2026, por la que se establecen las bases reguladoras para la concesión de plazas, en régimen de concurrencia competitiva, de tecnificación y rendimiento deportivo para el Centro Gallego de Tecnificación Deportiva para la temporada ",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?fecha=20260623&ruta=Indice116_es.html&lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-30",
+  "fechaFinSolicitud": "2026-07-29",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480898,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Orde Tecnificación e Rendemento Deportivo_PR952A.2026_20260623_124128.pdf",
+      "long": 927170,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480897,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Orden Tecnificación y Rendimiento Deportivo_PR952A_2026_20260623_124100.pdf",
+      "long": 917460,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

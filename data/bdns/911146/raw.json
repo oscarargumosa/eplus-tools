@@ -1,0 +1,80 @@
+{
+  "id": 1112707,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALMERÍA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALMERÍA"
+  },
+  "sedeElectronica": "WWW.DIPALME.ORG",
+  "codigoBDNS": "911146",
+  "fechaRecepcion": "2026-06-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES EN EL AÑO 2026, PARA AYUDAS A LA NATALIDAD Y ADOPCIÓN EN MUNICIPIOS CON POBLACIÓN NO SUPERIOR A 1.000 HABITANTES DE LA PROVINCIA DE ALMERIA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ayudas a la natalidad y adopción en municipios de menos de 1000 habitantes de la provincia de Almería",
+  "urlBasesReguladoras": "www.dipalme.org",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-25",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480609,
+      "descripcion": "extracto",
+      "nombreFic": "EXTRACTO SUBV NACIMIENTO Y ADOPCION 11 JUNIO.report (2).pdf",
+      "long": 163233,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1480725,
+      "descripcion": "acuerdo urg 11 Aprobación de bases de convocatoria",
+      "nombreFic": "Acuerdo_urgente_11_1782197282503.pdf",
+      "long": 153314,
+      "datMod": "2026-06-23",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1478088,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES Y ANEXO UNIDOS.report.pdf",
+      "long": 589296,
+      "datMod": "2026-06-18",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1116089,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONTINYENT",
+    "nivel3": "AYUNTAMIENTO DE ONTINYENT"
+  },
+  "sedeElectronica": "https://ontinyent.sedipualba.es/",
+  "codigoBDNS": "914528",
+  "fechaRecepcion": "2026-06-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de ayudas económicas destinadas a la compra de bicicletas eléctricas, bicicletas urbanas y kits de conversión de bicicletas urbanas en eléctricas",
+  "descripcionLeng": "Convocatòria per a la concessió d'ajudes econòmiques destinades a la compra de bicicletes eléctriques, bicicletes urbanes i kits de conversió de bicicletes urbanes en elèctriques",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las bases que rigen la convocatoria de concesión de ayudas económicas destinadas a la compra de bicicletas eléctricas, bicicletas urbanas y kits de conversión de bicicletas urbanas en eléctricas",
+  "urlBasesReguladoras": "www.ontinyent.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des del día siguiente a la publicación del extracto de la convocatoria en el BOP de Valencia",
+  "textFin": "31/08/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1479743,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria ajudes compra bicicletes elèctriques, urbanes i kits de conversió 2026.pdf",
+      "long": 313648,
+      "datMod": "2026-06-22",
+      "datPublicacion": "2026-06-23"
+    },
+    {
+      "id": 1479742,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas compra bicicletas eléctricas, urbanas y kits de conversión 2026.pdf",
+      "long": 313193,
+      "datMod": "2026-06-22",
+      "datPublicacion": "2026-06-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
