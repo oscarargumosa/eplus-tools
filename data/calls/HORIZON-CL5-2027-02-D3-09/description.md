@@ -92,7 +92,7 @@ Duration
 
 The estimated project duration is around 5 years.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

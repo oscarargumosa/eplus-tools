@@ -1,0 +1,104 @@
+{
+  "id": 1117140,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "915579",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 130000,
+  "mrr": false,
+  "descripcion": "Plan de Subvenciones de Acción Social 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Plan de Subvenciones de Acción Social 2026",
+  "urlBasesReguladoras": "https://www.ayto-caceres.es/ayuntamiento/publicaciones/ayudas-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.P. DE CACERES",
+  "textFin": "15 DIAS HABILES SIGUIENTES A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP CC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482575,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 275069,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482576,
+      "descripcion": "Anexo_I",
+      "nombreFic": "Anexo_I.PDF",
+      "long": 252954,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482577,
+      "descripcion": "Anexo_II",
+      "nombreFic": "Anexo_II.PDF",
+      "long": 251901,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482578,
+      "descripcion": "Anexo_III",
+      "nombreFic": "Anexo_III.PDF",
+      "long": 264243,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482579,
+      "descripcion": "Anexo_IV",
+      "nombreFic": "Anexo_IV.PDF",
+      "long": 355115,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482580,
+      "descripcion": "Anexo_V",
+      "nombreFic": "Anexo_V.PDF",
+      "long": 298524,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

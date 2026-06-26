@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "915461",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CALATAYUD / AYUNTAMIENTO DE CALATAYUD",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE CONCURRENCIA COMPETITIVA, CON DESTINO A LA REALIZACIÓN DE PROYECTOS DEPORTIVOS ANUALES DE ENTIDADES DEPORTIVAS SIN ÁNIMO DE LUCRO DE CALATAYUD, AÑO 2025.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-06-25",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 48800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/915461",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://calatayud.sedelectronica.es/preview-document/f58928df-4ce7-4d48-b4b5-19665daadf9f/",
+  "text_inicio": "Desde la publicación del extracto de la convocatoria en el BOPZ",
+  "text_fin": "QUINCE DIAS HÁBILES a contar desde el siguiente a la publicación en BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-26T04:05:27.787Z"
+}

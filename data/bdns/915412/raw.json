@@ -1,0 +1,84 @@
+{
+  "id": 1116973,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE AGRICULTURA, GANADERÍA Y PESCA"
+  },
+  "sedeElectronica": "https://www.gva.es/es/inicio/procedimientos?id_proc=18624&version=amp",
+  "codigoBDNS": "915412",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 542000,
+  "mrr": false,
+  "descripcion": "Convocatoria  para el ejercicio 2026 ayudas EDLP FEMPA  (no MINIMIS)",
+  "descripcionLeng": "Convocatòria a per a l'exercici 2026 ajudes EDLP FEMPA (no MINIMIS)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Pesca",
+      "codigo": "03.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden 10/2024 de 4 de octubre de 2024 de la Conselleria de Agricultura, Agua, Ganadería y Pesca",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2024/10/08/pdf/2024_10313_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en el DOGV del extracto de la Resolución",
+  "textFin": "30 días hábiles desde el inicio",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482106,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "1_Resolucion Convocatoria EDLP FEMPA 2026 GALP rev03_firmado.pdf",
+      "long": 395984,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482108,
+      "descripcion": "EXTRACTO",
+      "nombreFic": "4 Extracto Orden Basesconvocatoria_cas_2026_firmado.pdf",
+      "long": 217726,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482107,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "3_Resolucion Convocatoria EDLP FEMPA 2026 GALP rev03_26-005594_trad.docx",
+      "long": 103086,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

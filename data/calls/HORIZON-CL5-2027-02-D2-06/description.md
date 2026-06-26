@@ -27,7 +27,7 @@ JRC will assure that all the other applicants receive the same information on th
 
 This topic implements the co-programmed European Partnership on Batteries (Batt4EU). As such, projects resulting from this topic will be expected to report on the results to the European Partnership on Batteries (Batt4EU) in support of the monitoring of its KPIs.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

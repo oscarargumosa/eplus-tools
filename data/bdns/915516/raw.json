@@ -1,0 +1,72 @@
+{
+  "id": 1117077,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "OVICE",
+  "codigoBDNS": "915516",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Resolución de la directora general de Innovación e Inclusión Educativa, por la que se convocan ayudas económicas, en concepto de subvención, para contribuir a la financiación de los gastos de ejecución del proyecto de innovación “Guardabosc”, dirigidas a",
+  "descripcionLeng": "Resolució de la directora general d’Innovació i Inclusió Educativa, per la qual es convoquen ajudes econòmiques, en concepte de subvenció, per a contribuir al finançament dels gastos d’execució del projecte d’innovació Guardabosc, dirigides als centres ed",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de 2 de octubre de 2025, de la Conselleria de Educación, Cultura, Universidades y Empleo, por la que se aprueban las bases reguladoras para la concesión de ayudas económicas, en concepto de subvención, para contribuir a la financiación de los g",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2025/41786",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-30",
+  "fechaFinSolicitud": "2026-07-13",
+  "textInicio": "30/06/2026",
+  "textFin": "13/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482440,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resolució_convocatòria_Guardabosc_centres_noGVA 2026-27_val.pdf",
+      "long": 357328,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482439,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución_Guardabosc_centres_noGVA_2026-2027_fiscalitzada.pdf",
+      "long": 752171,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

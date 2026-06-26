@@ -1,0 +1,95 @@
+{
+  "id": 1117149,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
+    "nivel3": "FUNDACIÓN ESPAÑOLA PARA LA CIENCIA Y LA TECNOLOGÍA"
+  },
+  "sedeElectronica": "https://convocatoriamariadeguzman.fecyt.es/",
+  "codigoBDNS": "915588",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000000,
+  "mrr": false,
+  "descripcion": "Convocatoria del procedimiento de concesión de ayudas por la Fundación Española para la Ciencia y la Tecnología F.S.P., en régimen de concurrencia competitiva, para el fomento de la investigación científica de excelencia: María de Guzmán 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Orden CIN/1285/2022, de 17 de diciembre, por la que se aprueban la bases reguladoras de las ayudas de la FECYT,en régimen de concurrencia competitiva, para la realización de actividades en el ámbito del fomento de la investigación científica de excelencia",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-22456",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-01",
+  "fechaFinSolicitud": "2026-09-25",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482590,
+      "descripcion": "Resolución de publicación",
+      "nombreFic": "report_20260624_Resolución_publicación_Convocatoria_MdG_2026.pdf",
+      "long": 965519,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482587,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "report_20260624_Convocatoria_MdG_2026.pdf",
+      "long": 828080,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1116296,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "sede.uco.es",
+  "codigoBDNS": "914735",
+  "fechaRecepcion": "2026-06-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 36500,
+  "mrr": false,
+  "descripcion": "Resolución del Vicerrector de Estudiantes, Acceso y Empleabilidad, de fecha 22 de junio de 2026, por la que se publica la convocatoria del Programa Becas Santander Complemento a las Prácticas 2026 (Edición I).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo de Consejo de Gobierno, en sesión ordinaria de 30 de abril de 2026, por el que se aprueba la modificación del Reglamento 43/2025, sobre las Bases Reguladoras del Programa Becas Santander Complemento a las Prácticas.",
+  "urlBasesReguladoras": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00565",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-25",
+  "fechaFinSolicitud": "2026-07-08",
+  "textInicio": "25 de junio de 2026",
+  "textFin": "08 de julio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1480270,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "FIRMADA_Conv_Santander_Compl_Práct_2026.pdf.pdf",
+      "long": 294263,
+      "datMod": "2026-06-22",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 215521,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00779",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-06-24"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

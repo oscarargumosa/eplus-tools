@@ -1,0 +1,91 @@
+{
+  "id": 1117045,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PAÍS VASCO",
+    "nivel3": "DEPARTAMENTO DE TURISMO, COMERCIO Y CONSUMO"
+  },
+  "sedeElectronica": "https://www.euskadi.eus/ayuda_subvencion/2026/mec_2026/web01-tramite/es/",
+  "codigoBDNS": "915484",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4654000,
+  "mrr": false,
+  "descripcion": "MEC-2026",
+  "descripcionLeng": "2026-MEC",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de programación, radiodifusión, agencias de noticias y otras actividades de distribución de contenidos",
+      "codigo": "60"
+    },
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORDEN de 29 de abril de 2026, del consejero de Turismo, Comercio y Consumo, por la que se convoca, para el ejercicio 2026, el programa de apoyo a la modernización de establecimientos comerciales y de",
+  "urlBasesReguladoras": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=Ee3u4VLyzonUYKfw80kA6uoOQoa0zJPM5a04EbAzbUU_cqthwmoJ!532159159!-753162228?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026002364",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482352,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Documento convocatoria (euskera).PDF",
+      "long": 383760,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482351,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria (castellano).PDF",
+      "long": 419110,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 215546,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=Ee3u4VLyzonUYKfw80kA6uoOQoa0zJPM5a04EbAzbUU_cqthwmoJ!532159159!-753162228?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026002364",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-06-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -20,6 +20,6 @@ The proposal is expected to include a clear go/no go milestone before entering t
 
 The use of the European Research Infrastructure for concentrated solar power EU-SOLARIS is encouraged but not mandatory.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7 by the end of the project – see General Annex B. Activities may start at any TRL.

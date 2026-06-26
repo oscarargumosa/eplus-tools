@@ -26,7 +26,7 @@ The use of the European Research Infrastructure for CO2 Capture, Utilisation, Tr
 
 International cooperation with participating countries of the Mission Innovation Carbon Dioxide Removal Mission[1] is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

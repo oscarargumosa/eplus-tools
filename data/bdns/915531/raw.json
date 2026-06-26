@@ -1,0 +1,68 @@
+{
+  "id": 1117092,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTILLANA DEL MAR",
+    "nivel3": "AYUNTAMIENTO DE SANTILLANA DEL MAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915531",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONOMICAS POR EXCELENCIA ACADÉMICA EN EL ÚLTIMO CURSO DE LOS CICLOS DE EDUCACIÓN SECUNDARIA OBLIGATORIA (ESO) Y DE BACHILLER, EN EL CURSO ACADÉMICO 2025-2026,",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases subvención excelencia académica 2026",
+  "urlBasesReguladoras": "https://santillanadelmar.sedelectronica.es/preview-document/ac20c5ba-e997-4ae0-b020-55ecde63ad58/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles a partir de la publicación en el BOC",
+  "textFin": "10 días hábiles después de la publicación den el BOC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482453,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases reguladoras de la concesión ayudas a la excelencia académica 2026.pdf",
+      "long": 300665,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

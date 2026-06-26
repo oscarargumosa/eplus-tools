@@ -1,0 +1,72 @@
+{
+  "id": 1117055,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIBEIRA",
+    "nivel3": "AYUNTAMIENTO DE RIBEIRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915494",
+  "fechaRecepcion": "2026-06-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "AYUDAS INDIVIDUALES PARA FAVORECER LA AUTONOMÍA PERSONAL, LA MEJORA DE LA ACCESIBILIDAD Y EL APOYO AL RESPIRO FAMILIAR.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES EJECUCIÓN PRESUPUESTO.",
+  "urlBasesReguladoras": "https://bop.dacoruna.gal/bopportal/publicado/2025/12/29/2025_0000008596.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "DOS MESES DESPUES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1482362,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "bases.pdf",
+      "long": 378519,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    },
+    {
+      "id": 1482361,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "bases.pdf",
+      "long": 378519,
+      "datMod": "2026-06-25",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

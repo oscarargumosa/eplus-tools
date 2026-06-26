@@ -27,7 +27,7 @@ Lesson learned from the implementation of European Renewable Energy Valleys proj
 
 Proven access to necessary land and / or permits for operation at the time of application and / or convincing risk management regarding delayed availability of land or permits are expected in the proposal.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

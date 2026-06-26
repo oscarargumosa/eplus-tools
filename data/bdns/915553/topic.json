@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "915553",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / AGENCIA EMPRESARIAL PARA LA TRANSFORMACIÓN Y EL DESARROLLO ECONÓMICO",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "RESOLUCION DE 11 DE JUNIO de 2026, de la Agencia Empresarial de Transformación y Desarrollo Económico (TRADE) sobre subvenciones destinadas a entidades locales andaluzas en riesgo de exclusión financiera",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-06-25",
+  "open_date": null,
+  "deadline": "2026-10-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://ws050.juntadeandalucia.es/vea/faces/vi/procedimientoDetalle.xhtml",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/915553",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/eboja/2024/10/BOJA24-010-00013-40050-01_00295232.pdf",
+  "text_inicio": "comenzará el día siguiente a la publicación del extracto de la convocatoria en el BOJA",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-26T04:05:27.814Z"
+}

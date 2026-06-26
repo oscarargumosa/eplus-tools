@@ -1,13 +1,13 @@
 [
   {
-    "section": "1. Admissibility Conditions: Proposal page limit and layout",
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
     "label": "Annex A",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
     "ext": ".pdf",
     "is_downloadable": true
   },
   {
-    "section": "2. Eligible Countries",
+    "section": "2. Eligible countries",
     "label": "Horizon Europe Programme Guide",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
     "ext": ".pdf",
@@ -22,10 +22,10 @@
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
-    "label": "Standard application form (HE RIA, IA)",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia_en.pdf",
-    "ext": ".pdf",
-    "is_downloadable": true
+    "label": "Reference Documents page",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/reference-documents?programmePeriod=2021-2027&frameworkProgramme=43108390",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
@@ -36,16 +36,9 @@
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
-    "label": "Lump Sum MGA",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+    "label": "HE MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
     "ext": ".pdf",
-    "is_downloadable": true
-  },
-  {
-    "section": "Application and evaluation forms and model grant agreement (MGA):",
-    "label": "Detailed budget table (HE LS)",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/detailed-budget-table_he-ls-euratom_en.xlsm",
-    "ext": ".xlsm",
     "is_downloadable": true
   },
   {
@@ -53,13 +46,6 @@
     "label": "Information on clinical studies (HE)",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-clinical-studies_he_en.docx",
     "ext": ".docx",
-    "is_downloadable": true
-  },
-  {
-    "section": "Application and evaluation forms and model grant agreement (MGA):",
-    "label": "Guidance: \"Lump sums - what do I need to know?\"",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-funding-what-do-i-need-to-know_he_en.pdf",
-    "ext": ".pdf",
     "is_downloadable": true
   },
   {
@@ -78,7 +64,7 @@
   },
   {
     "section": "Additional documents:",
-    "label": "HE Framework Programme 2021/695",
+    "label": "HE Framework Programme and Rules for Participation Regulation 2021/695",
     "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0695",
     "ext": "",
     "is_downloadable": true
@@ -95,13 +81,6 @@
     "label": "EU Financial Regulation 2024/2509",
     "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
     "ext": "",
-    "is_downloadable": true
-  },
-  {
-    "section": "Additional documents:",
-    "label": "Decision authorising the use of lump sum contributions under the Horizon Europe Programme",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-decision_he_en.pdf",
-    "ext": ".pdf",
     "is_downloadable": true
   },
   {
