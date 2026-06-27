@@ -504,7 +504,8 @@ const App = (() => {
       shortlists:       'Mi Pool',
       'atlas-stats':    'Atlas',
       analysis:         'Análisis — Experiencia',
-      admin:            'Admin — Data E+'
+      admin:            'Admin — Data E+',
+      engagement:       'Engagement'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
 
@@ -518,6 +519,7 @@ const App = (() => {
         Intake.init();
       }
       if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
+      if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
       if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
       if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
       if (route === 'my-org' && typeof Organizations !== 'undefined') Organizations.initMyOrg();

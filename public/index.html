@@ -454,6 +454,12 @@ tailwind.config = {
             <span class="material-symbols-outlined text-[20px]">leaderboard</span>
             Análisis
           </a>
+          <a href="#engagement"
+            class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+            data-route="engagement">
+            <span class="material-symbols-outlined text-[20px]">monitoring</span>
+            Engagement
+          </a>
         </div>
       </div>
 
@@ -1501,6 +1507,61 @@ tailwind.config = {
         <div id="guest-funnel-content"></div>
       </section>
 
+      <!-- ══ PANEL ENGAGEMENT (TASK-009, admin-only) — analítica conductual ══ -->
+      <section id="panel-engagement" class="panel">
+        <div class="max-w-6xl mx-auto py-8 px-4">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary-fixed text-xl">monitoring</span>
+            </div>
+            <div>
+              <h1 class="font-headline text-2xl font-extrabold text-primary tracking-tight">Engagement</h1>
+              <p class="text-xs text-on-surface-variant">Conducta de visitantes (first-party). Lo que la gente hace, no lo que dice. Solo administradores.</p>
+            </div>
+          </div>
+          <div id="eng-kpis" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6"></div>
+          <div class="grid lg:grid-cols-2 gap-6 mb-6">
+            <div>
+              <h3 class="text-sm font-bold text-on-surface mb-2">Secciones más vistas</h3>
+              <div class="overflow-x-auto rounded-lg border border-outline-variant/30">
+                <table class="w-full text-sm">
+                  <thead class="bg-surface-container-low text-[11px] uppercase tracking-wide text-on-surface-variant">
+                    <tr><th class="text-left px-3 py-2">Sección</th><th class="text-right px-3 py-2">Vistas</th><th class="text-right px-3 py-2">Tiempo activo</th></tr>
+                  </thead>
+                  <tbody id="eng-sections"></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-sm font-bold text-on-surface mb-2">Interés por programa <span class="font-normal text-on-surface-variant">(convocatorias abiertas)</span></h3>
+                <div id="eng-programmes" class="flex flex-wrap gap-2"></div>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-on-surface mb-2">Muros de login disparados <span class="font-normal text-on-surface-variant">(demanda frustrada)</span></h3>
+                <div id="eng-gates" class="flex flex-wrap gap-2"></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-on-surface mb-2">Visitantes recientes</h3>
+          <div class="overflow-x-auto rounded-lg border border-outline-variant/30">
+            <table class="w-full text-sm">
+              <thead class="bg-surface-container-low text-[11px] uppercase tracking-wide text-on-surface-variant">
+                <tr>
+                  <th class="text-left px-3 py-2">Quién</th>
+                  <th class="text-left px-3 py-2">Tipo</th>
+                  <th class="text-right px-3 py-2">Eventos</th>
+                  <th class="text-right px-3 py-2">Secciones</th>
+                  <th class="text-right px-3 py-2">Tiempo</th>
+                  <th class="text-left px-3 py-2">Última vez</th>
+                </tr>
+              </thead>
+              <tbody id="eng-visitors"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <!-- ══ PANEL CONVOCATORIAS (funding_unified.json — SEDIA + SALTO + BDNS) ══ -->
       <section id="panel-convocatorias" class="panel">
         <div class="max-w-7xl mx-auto py-8 px-4">
@@ -1796,68 +1857,8 @@ tailwind.config = {
             <button data-section="library" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap">Biblioteca</button>
             <button data-section="patterns" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap">Patrones Evaluadores</button>
             <button data-section="inspector" id="admin-nav-inspector" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap hidden">Inspector IA</button>
-            <button data-section="engagement" id="admin-nav-engagement" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap hidden">Engagement</button>
           </div>
 
-          <!-- ── Engagement (TASK-009, admin-only) — analítica conductual ───── -->
-          <div id="admin-sec-engagement" class="admin-section hidden">
-            <div class="flex items-center gap-3 mb-5">
-              <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span class="material-symbols-outlined text-secondary-fixed text-xl">monitoring</span>
-              </div>
-              <div>
-                <h2 class="text-lg font-bold text-primary">Engagement</h2>
-                <p class="text-xs text-on-surface-variant">Conducta de visitantes (first-party). Lo que la gente hace, no lo que dice.</p>
-              </div>
-            </div>
-
-            <!-- KPIs -->
-            <div id="eng-kpis" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6"></div>
-
-            <div class="grid lg:grid-cols-2 gap-6 mb-6">
-              <!-- Secciones -->
-              <div>
-                <h3 class="text-sm font-bold text-on-surface mb-2">Secciones más vistas</h3>
-                <div class="overflow-x-auto rounded-lg border border-outline-variant/30">
-                  <table class="w-full text-sm">
-                    <thead class="bg-surface-container-low text-[11px] uppercase tracking-wide text-on-surface-variant">
-                      <tr><th class="text-left px-3 py-2">Sección</th><th class="text-right px-3 py-2">Vistas</th><th class="text-right px-3 py-2">Tiempo activo</th></tr>
-                    </thead>
-                    <tbody id="eng-sections"></tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- Interés por programa (call_opened) + muros -->
-              <div class="space-y-6">
-                <div>
-                  <h3 class="text-sm font-bold text-on-surface mb-2">Interés por programa <span class="font-normal text-on-surface-variant">(convocatorias abiertas)</span></h3>
-                  <div id="eng-programmes" class="flex flex-wrap gap-2"></div>
-                </div>
-                <div>
-                  <h3 class="text-sm font-bold text-on-surface mb-2">Muros de login disparados <span class="font-normal text-on-surface-variant">(demanda frustrada)</span></h3>
-                  <div id="eng-gates" class="flex flex-wrap gap-2"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Visitantes recientes -->
-            <h3 class="text-sm font-bold text-on-surface mb-2">Visitantes recientes</h3>
-            <div class="overflow-x-auto rounded-lg border border-outline-variant/30">
-              <table class="w-full text-sm">
-                <thead class="bg-surface-container-low text-[11px] uppercase tracking-wide text-on-surface-variant">
-                  <tr>
-                    <th class="text-left px-3 py-2">Quién</th>
-                    <th class="text-left px-3 py-2">Tipo</th>
-                    <th class="text-right px-3 py-2">Eventos</th>
-                    <th class="text-right px-3 py-2">Secciones</th>
-                    <th class="text-right px-3 py-2">Tiempo</th>
-                    <th class="text-left px-3 py-2">Última vez</th>
-                  </tr>
-                </thead>
-                <tbody id="eng-visitors"></tbody>
-              </table>
-            </div>
-          </div>
 
           <!-- ── Prompt Inspector (TASK-008, admin-only) ───── -->
           <div id="admin-sec-inspector" class="admin-section hidden">
@@ -3064,12 +3065,13 @@ tailwind.config = {
 <script src="/js/track.js?v=20260627t"></script>
 <script src="/js/auth.js"></script>
 <script src="/js/components/phase-tabs.js"></script>
-<script src="/js/app.js?v=20260627t"></script>
+<script src="/js/app.js?v=20260627w"></script>
 <script src="/js/my-projects.js"></script>
 <script src="/js/my-evaluations.js"></script>
 <script src="/js/create.js"></script>
 <script src="/js/intake.js?v=20260627a"></script>
-<script src="/js/admin.js?v=20260627u"></script>
+<script src="/js/admin.js?v=20260627w"></script>
+<script src="/js/engagement.js?v=20260627t"></script>
 <script src="/js/calculator.js?v=20260627a"></script>
 <script src="/js/organizations.js?v=20260627a"></script>
 <script src="/js/entities.js?v=20260627t"></script>
