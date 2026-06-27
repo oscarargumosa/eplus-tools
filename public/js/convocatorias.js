@@ -901,6 +901,7 @@ const Convocatorias = (() => {
     if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'el detalle de esta convocatoria' })) return;
     const item = allItems.find(i => String(i.call_id) === String(callId));
     if (!item) return;
+    if (typeof Track !== 'undefined') Track.event('call_opened', { route: 'convocatorias', ref_id: callId, programme: item.programme });
     const overlay = document.getElementById('convocatorias-drawer-overlay');
     const content = document.getElementById('convocatorias-drawer-content');
     if (!overlay || !content) return;

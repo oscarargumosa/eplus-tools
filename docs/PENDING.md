@@ -96,6 +96,29 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 ## 2 · Pendientes sin bloqueante (cuando se quiera)
 
+### TASK-009 — Captación + Cualificación de leads (Interés × Capacidad) + tracking conductual
+**Status:** DISEÑO APROBADO (2026-06-27) · **FASE 1 IMPLEMENTADA Y VERIFICADA** (2026-06-27, sin commit) · Fases 2-3 pendientes
+**Owner:** Local Claude (eplus-tools)
+**Doc canónico:** `docs/LEAD_QUALIFICATION_PLAN.md`
+**Fecha plan:** 2026-06-27
+**Origen:** sesión 2026-06-27, tras shippear login-wall / guest-funnel a main.
+
+**Fundación YA en prod:** sistema login-wall + guest-funnel (invitado navega todo; muro al abrir tarjeta; embudo de venta en secciones de cuenta). `public/js/app.js` (`requireLogin`, `renderGuestFunnel`, `FUNNEL_COPY`, `ensurePublicShell`), gates en convocatorias/entities/movilidades, `optionalAuth` en middleware.
+
+**Qué incluye:**
+- **Registro mínimo** (email/nombre/pass) = la captura. Cualificación en **onboarding post-registro** (saltable con nudge), NO en el registro. Sin soft-capture de email (descartado).
+- **Marco Interés × Capacidad** → lead tiers → cohortes/Pricing v2. Capacidad: experiencia (ninguna/socio/coordinó KA1-2-3-CB), entidad (tipo + tamaño empresa), rol (decisor?). Interés: aprender / escalar / acceder a fondos.
+- **Tracking conductual first-party propio** vía los 3 puntos de paso (`navigate`/`openDetail`+`openFicha`/`requireLogin`). Tablas `events` + `user_engagement`. `device_id` cose conducta de invitado → usuario al registrarse.
+- **Teléfono fuera del registro** → en flujo "reservar reunión" + opcional onboarding.
+- **A GHL solo hitos/agregados** (tags/custom fields), no el stream crudo. GHL=marketing / Resend=transaccional.
+
+**Fases:**
+1. ✅ **HECHA (2026-06-27)** — `device_id` + tracker + `events` + `POST /v1/events`. Migración `120_events_table.sql`, módulo `node/src/modules/events/`, `public/js/track.js` (cola + sendBeacon + tiempo activo Page Visibility), hooks en `app.js` (session_start/section_view/section_time/gate_hit), `convocatorias.js` (call_opened+programme), `entities.js` (entity_opened), `movilidades.js` (mobility_opened). `optionalAuth` → user_id si logueado, device_id siempre. Verificado E2E (invitado y logueado, whitelist, tiempo activo). **Pendiente:** commit/MERGE. Hard-refresh (Ctrl+F5) para cargar el index.html nuevo.
+2. Onboarding + tabla de perfil + mapeo a GHL + lead tier (empezar por modelo de datos).
+3. Scoring conductual (rollup `user_engagement`, coser device→user en registro `UPDATE events SET user_id WHERE device_id`, push hitos a GHL). Eventos `project_started`/`search` ya en el whitelist, falta cablearlos.
+
+**Decisiones abiertas (no bloqueantes):** preguntas/orden exactos del onboarding · esquema final tags GHL · retención `events` + base legal RGPD · scoring cron vs on-demand.
+
 ### TASK-008 — Libro de Hechos del Proyecto + Inspector de Prompts
 **Status:** IMPLEMENTADO (F1–F5) · pendiente verificación en UI por Oscar · sin commit/push
 **Owner:** Local Claude (eplus-tools)

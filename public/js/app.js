@@ -278,6 +278,8 @@ const App = (() => {
      llamante aborte la apertura.                                    */
   function requireLogin(opts = {}) {
     if (currentUser || (typeof API !== 'undefined' && API.getToken())) return true;
+    // Señal de interés purísima: quería abrir algo y le frenó el muro.
+    if (typeof Track !== 'undefined') Track.event('gate_hit', { route: currentRoute, what: opts.what });
     showLoginWall(opts);
     return false;
   }
@@ -371,6 +373,9 @@ const App = (() => {
   // detalle de movilidad), no al navegar entre secciones.
   const PUBLIC_ROUTES = ['convocatorias', 'organizations', 'atlas-stats', 'movilidades'];
 
+  // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
+  const ADMIN_ROUTES = ['analysis'];
+
   function updateWorkspace(route) {
     const isEntidades = ENTITY_ROUTES.includes(route);
     document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades);
@@ -391,6 +396,12 @@ const App = (() => {
 
   /* ── SPA Navigation ────────────────────────────────────────── */
   function navigate(route, pushHash = true, newProject = false) {
+    // Guardia admin: rutas privadas (analytics interno) solo para admin/scribe.
+    // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
+    if (ADMIN_ROUTES.includes(route) && !isAdmin()) {
+      route = currentUser ? 'my-projects' : 'convocatorias';
+      if (pushHash) location.hash = route;
+    }
     // Invitado: navega libremente por todas las secciones. Las de
     // contenido (PUBLIC_ROUTES) muestran sus tarjetas; las de cuenta
     // muestran un embudo de venta (CTAs) en vez de su contenido real.
@@ -465,6 +476,9 @@ const App = (() => {
     // Switch sidebar workspace (Proyectos vs Entidades) + topbar active tab
     updateWorkspace(route);
 
+    // Behavioral tracking: vista de sección + tiempo activo (TASK-009).
+    if (typeof Track !== 'undefined') Track.enterSection(route);
+
     // Update topbar title
     const titles = {
       dashboard:        'Dashboard',
@@ -489,6 +503,7 @@ const App = (() => {
       organizations:    'Directorio',
       shortlists:       'Mi Pool',
       'atlas-stats':    'Atlas',
+      analysis:         'Análisis — Experiencia',
       admin:            'Admin — Data E+'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
@@ -509,6 +524,7 @@ const App = (() => {
       if (route === 'organizations' && typeof Entities !== 'undefined') Entities.init();
       if (route === 'shortlists' && typeof Shortlists !== 'undefined') Shortlists.init();
       if (route === 'atlas-stats' && typeof AtlasStats !== 'undefined') AtlasStats.init();
+    if (route === 'analysis' && typeof Analysis !== 'undefined') Analysis.init();
       if (route === 'research' && typeof Research !== 'undefined') Research.init();
       if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
       if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
@@ -574,6 +590,7 @@ const Toast = (() => {
 
 /* ═══ Boot ═════════════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof Track !== 'undefined') Track.init();
   App.init();
 
   /* ── Auth tab buttons ─────────────────────────────────────── */

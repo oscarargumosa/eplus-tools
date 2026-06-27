@@ -87,3 +87,11 @@ exports.getFacets = async (req, res) => {
     ok(res, await m.getFilterFacets());
   } catch (e) { err(res, e.message, 500); }
 };
+
+/* ── Rankings (analítica de experiencia: inversión / proyectos) ── */
+exports.rankings = (req, res) => {
+  try {
+    const rankings = require('./rankings');
+    ok(res, rankings.query(req.query));
+  } catch (e) { err(res, e.message, 500); }
+};

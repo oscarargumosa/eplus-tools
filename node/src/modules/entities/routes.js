@@ -6,6 +6,15 @@ const smart = require('./smart.controller');
 const handoff = require('./handoff.controller');
 const { requireAuth } = require('../../middleware/auth');
 
+/* ── Guardia admin: el ranking analítico es privado (área admin) ── */
+function requireAdminOrScribe(req, res, next) {
+  const role = req.user && req.user.role;
+  if (role !== 'admin' && role !== 'scribe') {
+    return res.status(403).json({ ok: false, error: { code: 'FORBIDDEN', message: 'Admin only' } });
+  }
+  next();
+}
+
 /* ── Geo markers para Atlas 3D (público, antes de /:oid) ─────── */
 router.get('/geo',                ctrl.listGeoMarkers);
 
@@ -19,6 +28,9 @@ router.get('/stats/tiers',        ctrl.statTiers);
 
 /* ── Facets (opciones de filtros) ────────────────────────────── */
 router.get('/facets',             ctrl.getFacets);
+
+/* ── Rankings de experiencia (privado, admin/scribe; antes de /:oid) ── */
+router.get('/rankings',           requireAuth, requireAdminOrScribe, ctrl.rankings);
 
 /* ── Smart Shortlist (IA matching, auth) ────────────────────── */
 router.post('/smart-shortlist', requireAuth, smart.smartShortlist);

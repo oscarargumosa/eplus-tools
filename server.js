@@ -114,6 +114,7 @@ app.use('/v1/voice',       require('./node/src/modules/voice/routes'));
 app.use('/v1/sandbox',     require('./node/src/modules/sandbox/routes'));
 app.use('/v1/exporter',    require('./node/src/modules/exporter/routes'));
 app.use('/v1/subscribers', require('./node/src/modules/subscribers/routes'));
+app.use('/v1/events',      require('./node/src/modules/events/routes'));
 app.use('/v1/vps',         require('./node/src/modules/vps/routes'));
 app.use('/v1/master',      require('./node/src/modules/master/routes'));
 app.use('/v1/diagnose',    require('./node/src/modules/diagnose/routes'));

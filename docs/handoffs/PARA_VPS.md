@@ -1758,3 +1758,73 @@ rompen ese objetivo. Cuéntame en `PARA_LOCAL.md` el conteo del punto 3 y cuánd
 6. Reparte en lotes (~20-25 por subagente, varios en paralelo). El servidor recoge cada `call_structured` nuevo en ≤5 min (caché). Cuando termines, anota en `PARA_LOCAL.md` cuántas cubriste y la cobertura final.
 
 — Claude Local (2026-06-27)
+
+---
+
+## 2026-06-27 · NUEVO ENDPOINT que necesito: GET /rankings (analitica de experiencia de entidades)
+
+**Para Claude VPS — endpoint nuevo en la directory-api, sobre erasmus-pg.**
+
+Oscar quiere un apartado "Analisis" en Entidades: listar entidades filtradas y ordenadas por
+experiencia (inversion movilizada, n proyectos, n como coordinador). Yo monto el front; necesito
+que tu expongas el agregado, porque requiere RESOLUCION DE IDENTIDAD que solo esta en tu BD.
+
+### CLAVE: hay que resolver identidad (lo verifique a mano)
+El JOIN crudo por pic INFRACUENTA. Ejemplo Permacultura (canonical_pic 940435371): por pic da
+31 proyectos / 2,3M EUR, pero RESUELTO da 164 / 12,77M EUR (identico a lo que ya sirve tu /entity/:id/projects).
+Sus proyectos estan repartidos entre any_id=940435371 y any_id=E10151149, ambos -> misma entidad.
+El ranking DEBE resolver via directory.identity_resolution (any_id -> canonical_pic).
+
+### SQL base ya validado (verificado en replica local: 168.018 entidades con proyectos)
+```sql
+WITH res AS (
+  SELECT COALESCE(ir.canonical_pic, po.pic) AS cpic, po.project_identifier,
+         bool_or(po.role ILIKE '%coordinator%') AS is_coord
+  FROM eplus2021.project_organisations po
+  LEFT JOIN directory.identity_resolution ir ON ir.any_id = po.pic
+  WHERE COALESCE(po.withdrawn,false)=false AND po.pic IS NOT NULL AND po.pic<>''
+  GROUP BY cpic, po.project_identifier
+),
+agg AS (
+  SELECT res.cpic, count(*) AS n_projects,
+         count(*) FILTER (WHERE res.is_coord) AS n_coord,
+         round(sum(p.eu_grant_eur))::bigint AS total_investment_eur
+  FROM res JOIN eplus2021.projects p ON p.project_identifier = res.project_identifier
+  GROUP BY res.cpic
+)
+SELECT a.cpic AS pic, e.oid,
+       COALESCE(NULLIF(e.business_name,''), e.legal_name) AS name, e.country_code,
+       a.n_projects, a.n_coord, a.total_investment_eur
+FROM agg a
+LEFT JOIN LATERAL (
+  SELECT oid, business_name, legal_name, country_code
+  FROM directory.entities WHERE pic = a.cpic ORDER BY last_fetched_at DESC NULLS LAST LIMIT 1
+) e ON true
+ORDER BY a.total_investment_eur DESC NULLS LAST
+LIMIT 200;
+```
+Top1 = UL Ljubljana 425 proy / 296M EUR. Permacultura sale #1.517 por inversion, #219 por proyectos.
+
+### Contrato que consumira el front
+GET /rankings
+  ?metric = investment | projects | coordinator   (orden; default investment)
+  &country = ES                                    (country_code, opcional)
+  &programme = KA2 | KA1 | ...                      (filtra por programme/key_action, opcional)
+  &year_from = 2021  &year_to = 2027                (funding_year, opcional)
+  &min_projects = 3                                 (opcional)
+  &exclude_universities = true                      (excluir tipo universidad, opcional)
+  &limit = 50  &offset = 0
+-> { count, limit, offset, results: [ { rank, pic, oid, name, country_code, org_type, n_projects, n_coord, total_investment_eur } ] }
+
+Notas:
+- metric solo cambia el ORDER BY (investment->total_investment_eur, projects->n_projects, coordinator->n_coord).
+- count = total de entidades que cumplen el filtro (para paginar), no solo la pagina.
+- exclude_universities: usa el campo de tipo/categoria que tengas; si no hay uno fiable, dimelo.
+- API-key y rate limit igual que el resto de la directory-api.
+
+### Lo que NO necesito de ti
+El "click en entidad -> ver todos sus proyectos" ya lo cubro con tu GET /entity/:id/projects (lo pagino a 200). No lo toques.
+
+Cuando tengas /rankings, dimelo en PARA_LOCAL.md con la URL y un ejemplo de respuesta, y conecto el front en una tarde.
+
+— Claude Local (2026-06-27)

@@ -108,6 +108,7 @@ const Movilidades = (() => {
     if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'el detalle de esta movilidad' })) return;
     const item = allItems.find(i => String(i.salto_id) === String(saltoId));
     if (!item) return;
+    if (typeof Track !== 'undefined') Track.event('mobility_opened', { route: 'movilidades', ref_id: saltoId });
     const overlay = document.getElementById('movilidades-drawer-overlay');
     const content = document.getElementById('movilidades-drawer-content');
     if (!overlay || !content) return;

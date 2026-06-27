@@ -477,6 +477,7 @@ const Entities = (() => {
     // Muro de login: el invitado explora el Directorio/Atlas, pero abrir
     // la ficha de una organización exige cuenta (lead-gen).
     if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'la ficha de esta organización' })) return;
+    if (typeof Track !== 'undefined') Track.event('entity_opened', { route: 'organizations', ref_id: oid });
     const overlay = document.getElementById('entity-ficha-overlay');
     const content = document.getElementById('entity-ficha-content');
     if (!overlay || !content) return;
@@ -641,11 +642,13 @@ const Entities = (() => {
             <span class="text-[11px] text-on-surface-variant">${o.total_projects ? `${formatNumber(o.total_projects)} en total` : ''}</span>
           </div>
           <div id="ficha-proj-stats" class="mb-4"></div>
-          ${Array.isArray(o.recent_projects) && o.recent_projects.length ? `
-          <div class="text-[11px] font-semibold text-on-surface-variant mb-2">Algunos ejemplos</div>
-          <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden">
-            ${o.recent_projects.slice(0, 6).map(p => renderProjectRow(p)).join('')}
-          </ul>` : ''}
+          <div id="ficha-proj-list">
+            ${Array.isArray(o.recent_projects) && o.recent_projects.length ? `
+            <div class="text-[11px] font-semibold text-on-surface-variant mb-2">Algunos ejemplos</div>
+            <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden">
+              ${o.recent_projects.slice(0, 6).map(p => renderProjectRow(p)).join('')}
+            </ul>` : ''}
+          </div>
         </section>` : ''}
 
       <!-- Registro: representantes · acreditaciones · stakeholders -->
@@ -892,9 +895,26 @@ const Entities = (() => {
       }
       if (!all.length) { host.innerHTML = ''; return; }
       host.innerHTML = renderFichaProjStats(all);
+      const listHost = document.getElementById('ficha-proj-list');
+      if (listHost) listHost.innerHTML = renderFichaProjList(all);
     } catch (e) {
       host.innerHTML = '';
     }
+  }
+
+  /* ── Lista completa de proyectos de la entidad (todos, no solo ejemplos) ── */
+  function renderFichaProjList(projects) {
+    const sorted = [...projects].sort((a, b) => {
+      const ya = a.funding_year || (a.start_date ? new Date(a.start_date).getFullYear() : 0);
+      const yb = b.funding_year || (b.start_date ? new Date(b.start_date).getFullYear() : 0);
+      if (yb !== ya) return yb - ya;
+      return (Number(b.eu_grant_eur) || 0) - (Number(a.eu_grant_eur) || 0);
+    });
+    return `
+      <div class="text-[11px] font-semibold text-on-surface-variant mb-2">Todos los proyectos (${projects.length})</div>
+      <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden max-h-[440px] overflow-y-auto">
+        ${sorted.map(p => renderProjectRow(p)).join('')}
+      </ul>`;
   }
   function renderProjectRow(p) {
     const title = p.project_title || p.title || p.project_identifier || '(sin título)';
