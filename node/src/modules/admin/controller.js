@@ -1,4 +1,6 @@
 /* ── Admin Controller ─────────────────────────────────────────── */
+const fs = require('fs');
+const path = require('path');
 const m = require('./model');
 const wrap = require('../../utils/asyncHandler');
 
@@ -121,6 +123,23 @@ exports.listGenerations = wrap(async (req, res) => {
 });
 exports.getGeneration  = wrap(async (req, res) => { ok(res, await dev.getGeneration(req.params.id)); });
 exports.listProjectFactsAdmin = wrap(async (req, res) => { ok(res, await dev.listProjectFacts(req.params.projectId, req.query.status || null)); });
+
+/* ── Base de Conocimiento E+ (visor admin-only, v1 read-only) ──────
+   Sirve el catálogo estático de fuentes desde data/knowledge_base/
+   sources.json. v1 NO persiste estado (sin tabla kb_sources): es un
+   visor de solo lectura. La edición de estado queda para v2. */
+const KB_SOURCES_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'knowledge_base', 'sources.json');
+
+exports.listKnowledgeBaseSources = wrap(async (req, res) => {
+  let raw;
+  try {
+    raw = fs.readFileSync(KB_SOURCES_PATH, 'utf8');
+  } catch (err) {
+    return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Knowledge base sources file not found' } });
+  }
+  const sources = JSON.parse(raw);
+  ok(res, sources);
+});
 
 exports.listPromptBlocks = wrap(async (req, res) => { ok(res, await dev.listPromptBlocks()); });
 exports.getPromptBlock   = wrap(async (req, res) => { ok(res, await dev.getPromptBlockFull(req.params.name, req.query.program_id || null)); });

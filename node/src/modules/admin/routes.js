@@ -112,6 +112,9 @@ router.delete('/data/forms/instances/:id',          guard, ctrl.deleteFormInstan
 router.get  ('/inspector/generations',        adminGuard, ctrl.listGenerations);
 router.get  ('/inspector/generations/:id',    adminGuard, ctrl.getGeneration);
 router.get  ('/inspector/projects/:projectId/facts', adminGuard, ctrl.listProjectFactsAdmin);
+/* ── Base de Conocimiento E+ (visor admin-only, v1 read-only) ──── */
+router.get  ('/knowledge-base/sources',       adminGuard, ctrl.listKnowledgeBaseSources);
+
 router.get  ('/prompt-blocks',                adminGuard, ctrl.listPromptBlocks);
 router.get  ('/prompt-blocks/:name',          adminGuard, ctrl.getPromptBlock);
 router.put  ('/prompt-blocks/:name',          adminGuard, ctrl.upsertPromptBlock);

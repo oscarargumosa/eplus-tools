@@ -15,7 +15,11 @@ const Admin = (() => {
     // Inspector nav is admin-only (scribes excluded) — IP protection.
     try {
       const role = (window.App && App.getCurrentUser && App.getCurrentUser()?.role) || null;
-      if (role === 'admin') document.getElementById('admin-nav-inspector')?.classList.remove('hidden');
+      if (role === 'admin') {
+        document.getElementById('admin-nav-inspector')?.classList.remove('hidden');
+        // Base de Conocimiento: visor admin-only (scribes excluidos).
+        document.getElementById('admin-nav-knowledge-base')?.classList.remove('hidden');
+      }
     } catch (_) {}
     loadSection('convocatorias');
   }
@@ -51,6 +55,7 @@ const Admin = (() => {
       case 'library':       loadAdminLibrary(); break;
       case 'patterns':      loadPatterns(); break;
       case 'inspector':     loadInspector(); break;
+      case 'knowledge-base': loadKnowledgeBase(); break;
     }
   }
 
@@ -5161,6 +5166,156 @@ KEY EVALUATOR FOCUS:
     } catch (e) {
       box.innerHTML = `<p class="text-xs text-error py-2">Error: ${esc(e.message || '')}</p>`;
     }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     Base de Conocimiento E+ — Visor admin-only (v1 read-only)
+     Replica la vista "Catálogo de fuentes" de docs/knowledge_base.html.
+     Lee el catálogo estático vía GET /admin/knowledge-base/sources.
+     v1 NO edita ni persiste estado (eso queda para v2 con tabla
+     kb_sources). Solo lectura: filtros + búsqueda + contadores.
+     ═══════════════════════════════════════════════════════════════ */
+  const KB_BLOQUES = {
+    A:'Fundamentos', B:'Ecosistema/actores', C:'Antes de escribir', D:'Formulario',
+    E:'Criterios eval.', F:'Técnicas redacción', G:'Presupuesto', H:'Impacto/difusión',
+    I:'Gestión post', J:'Errores comunes'
+  };
+  const KB_ESP = {
+    1:'KA1 Juventud', 2:'KA1 Adultos', 3:'KA1 Escolar', 4:'KA1 FP/VET',
+    5:'KA2 Coop (KA220)', 6:'KA2 Small-scale (KA210)', 7:'KA3/Políticas',
+    8:'Capacity Building', 9:'Deporte'
+  };
+  let kbData = null;        // array de fuentes (cacheado tras la 1ª carga)
+  let kbBuilt = false;      // chips/listeners ya montados
+  const kbFilters = { bloque:new Set(), esp:new Set(), tipo:new Set(), idioma:new Set(), estado:new Set(), q:'' };
+
+  async function loadKnowledgeBase() {
+    const loadingEl = document.getElementById('kb-loading');
+    if (kbData) { kbRender(); return; }   // ya cargado: solo re-render
+    if (loadingEl) loadingEl.style.display = 'block';
+    try {
+      const sources = await API.get('/admin/knowledge-base/sources');
+      // Normaliza al formato interno del visor (igual que el prototipo).
+      kbData = (sources || []).map(d => ({
+        id:d.id, t:d.titulo, u:d.url, i:d.idioma, tipo:d.tipo,
+        b:d.bloque, e:d.especialidad, q:d.calidad,
+        s:(d.estado || '') === '' ? 'sin' : d.estado, n:d.notas
+      }));
+      if (loadingEl) loadingEl.style.display = 'none';
+      kbBuildControls();
+      kbRender();
+    } catch (e) {
+      if (loadingEl) {
+        loadingEl.style.display = 'block';
+        loadingEl.textContent = 'Error cargando las fuentes: ' + (e.message || '');
+      }
+    }
+  }
+
+  function kbBuildControls() {
+    if (kbBuilt) return;
+    kbBuilt = true;
+    const chipBar = (containerId, values, fkey, labelFn) => {
+      const c = document.getElementById(containerId);
+      if (!c) return;
+      values.forEach(v => {
+        const el = document.createElement('span');
+        el.className = 'kb-chip';
+        el.textContent = labelFn ? labelFn(v) : v;
+        el.addEventListener('click', () => {
+          el.classList.toggle('on');
+          kbFilters[fkey].has(v) ? kbFilters[fkey].delete(v) : kbFilters[fkey].add(v);
+          kbRender();
+        });
+        c.appendChild(el);
+      });
+    };
+    chipBar('kb-f-bloque', 'ABCDEFGHIJ'.split(''), 'bloque', v => v + ' · ' + KB_BLOQUES[v]);
+    chipBar('kb-f-esp', ['Transversal','1','2','3','4','5','6','7','8','9'], 'esp', v => KB_ESP[v] ? v + ' ' + KB_ESP[v] : v);
+    chipBar('kb-f-tipo', ['Oficial UE','Agencia Nacional','Blog/Consultora','Académico'], 'tipo');
+    chipBar('kb-f-idioma', ['ES','EN','EN/ES','ES/EN','FR','PT','EN/DE'], 'idioma');
+    chipBar('kb-f-estado', ['copiar','mejorar','crear','descartar'], 'estado');
+
+    const qEl = document.getElementById('kb-q');
+    if (qEl) qEl.addEventListener('input', e => { kbFilters.q = e.target.value.toLowerCase(); kbRender(); });
+    const resetEl = document.getElementById('kb-reset');
+    if (resetEl) resetEl.addEventListener('click', () => {
+      Object.keys(kbFilters).forEach(k => k === 'q' ? (kbFilters.q = '') : kbFilters[k].clear());
+      if (qEl) qEl.value = '';
+      document.querySelectorAll('#admin-sec-knowledge-base .kb-chip.on').forEach(c => c.classList.remove('on'));
+      kbRender();
+    });
+  }
+
+  function kbMatchMulti(field, set, split) {
+    if (!set.size) return true;
+    const vals = split ? String(field).split(',').map(x => x.trim()) : [field];
+    return vals.some(v => set.has(v));
+  }
+  function kbPasses(d) {
+    if (!kbMatchMulti(d.b, kbFilters.bloque, true)) return false;
+    if (!kbMatchMulti(d.e, kbFilters.esp, true)) return false;
+    if (kbFilters.tipo.size && !kbFilters.tipo.has(d.tipo)) return false;
+    if (kbFilters.idioma.size && !kbFilters.idioma.has(d.i)) return false;
+    if (kbFilters.estado.size && !kbFilters.estado.has(d.s)) return false;
+    if (kbFilters.q) {
+      const hay = (d.t + ' ' + d.n + ' ' + d.u + ' ' + d.id).toLowerCase();
+      if (!hay.includes(kbFilters.q)) return false;
+    }
+    return true;
+  }
+  function kbStars(q) { q = Number(q) || 0; return '<span class="kb-star">' + '★'.repeat(q) + '</span>' + '☆'.repeat(5 - q); }
+  function kbTags(str, cls) { return String(str || '').split(',').map(x => `<span class="kb-tag ${cls || ''}">${esc(x.trim())}</span>`).join(''); }
+  function kbEstadoLabel(s) { return s === 'sin' ? 'sin decidir' : s; }
+
+  function kbRender() {
+    const tb = document.getElementById('kb-rows');
+    if (!tb || !kbData) return;
+    tb.innerHTML = '';
+    let shown = 0;
+    kbData.forEach(d => {
+      if (!kbPasses(d)) return;
+      shown++;
+      const tr = document.createElement('tr');
+      const espCell = d.e === 'Transversal' ? '<span class="kb-tag">Transv.</span>' : kbTags(d.e, 'esp');
+      tr.innerHTML = `
+        <td><a class="kb-ttl" href="${esc(d.u)}" target="_blank" rel="noopener">${esc(d.t)}</a><span class="kb-url">${esc(d.u)}</span></td>
+        <td><span class="kb-idioma">${esc(d.i)}</span></td>
+        <td>${esc(d.tipo)}</td>
+        <td>${kbTags(d.b)}</td>
+        <td>${espCell}</td>
+        <td class="kb-qual" title="${esc(String(d.q))}/5">${kbStars(d.q)}</td>
+        <td><span class="kb-estado ${esc(d.s)}">${esc(kbEstadoLabel(d.s))}</span></td>
+        <td class="kb-notas">${esc(d.n)}</td>`;
+      tb.appendChild(tr);
+    });
+    const shownEl = document.getElementById('kb-shown');
+    const totalEl = document.getElementById('kb-total');
+    if (shownEl) shownEl.textContent = shown;
+    if (totalEl) totalEl.textContent = kbData.length;
+    const emptyEl = document.getElementById('kb-empty');
+    if (emptyEl) emptyEl.style.display = shown ? 'none' : 'block';
+    kbRenderCounters();
+  }
+
+  function kbRenderCounters() {
+    const c = document.getElementById('kb-counters');
+    if (!c || !kbData) return;
+    c.innerHTML = '';
+    const counts = { copiar:0, mejorar:0, crear:0, descartar:0, sin:0 };
+    kbData.forEach(d => { if (counts[d.s] !== undefined) counts[d.s]++; });
+    const add = (label, cls, n) => {
+      const p = document.createElement('span');
+      p.className = 'kb-pill';
+      p.innerHTML = (cls ? `<span class="kb-dot ${cls}"></span>` : '') + `${label} <b>${n}</b>`;
+      c.appendChild(p);
+    };
+    add('Total', '', kbData.length);
+    add('Copiar', 'copiar', counts.copiar);
+    add('Mejorar', 'mejorar', counts.mejorar);
+    add('Crear', 'crear', counts.crear);
+    add('Descartar', 'descartar', counts.descartar);
+    if (counts.sin) add('Sin decidir', '', counts.sin);
   }
 
   return { init, openEdit, confirmDelete, openConvocatoria };

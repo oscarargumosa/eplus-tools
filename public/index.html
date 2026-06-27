@@ -1790,6 +1790,49 @@ tailwind.config = {
             <button data-section="library" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap">Biblioteca</button>
             <button data-section="patterns" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap">Patrones Evaluadores</button>
             <button data-section="inspector" id="admin-nav-inspector" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap hidden">Inspector IA</button>
+            <button data-section="knowledge-base" id="admin-nav-knowledge-base" class="px-4 py-2.5 text-sm border-b-2 border-transparent text-on-surface-variant transition-colors hover:text-primary whitespace-nowrap hidden">Base de Conocimiento</button>
+          </div>
+
+          <!-- ── Base de Conocimiento E+ (visor admin-only, v1 read-only) ───── -->
+          <div id="admin-sec-knowledge-base" class="admin-section hidden">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-secondary-fixed text-xl">menu_book</span>
+              </div>
+              <div>
+                <h2 class="text-lg font-bold text-primary">Base de Conocimiento E+</h2>
+                <p class="text-sm text-on-surface-variant">Catálogo de fuentes sobre cómo escribir proyectos Erasmus+ · solo admin · solo lectura (v1)</p>
+              </div>
+            </div>
+
+            <!-- Counters -->
+            <div class="kb-counters" id="kb-counters"></div>
+
+            <!-- Toolbar: search + filters -->
+            <div class="kb-toolbar">
+              <div class="kb-searchrow">
+                <input type="search" id="kb-q" placeholder="Buscar por título, notas, URL…">
+                <button class="kb-btn" id="kb-reset">Limpiar filtros</button>
+                <span class="kb-hint">Mostrando <span class="kb-count-shown" id="kb-shown">0</span> de <span id="kb-total">0</span> fuentes</span>
+              </div>
+              <div class="kb-filtergroup" id="kb-f-bloque"><span class="kb-lbl">Bloque</span></div>
+              <div class="kb-filtergroup" id="kb-f-esp"><span class="kb-lbl">Especialidad</span></div>
+              <div class="kb-filtergroup" id="kb-f-tipo"><span class="kb-lbl">Tipo</span></div>
+              <div class="kb-filtergroup" id="kb-f-idioma"><span class="kb-lbl">Idioma</span></div>
+              <div class="kb-filtergroup" id="kb-f-estado"><span class="kb-lbl">Estado</span></div>
+            </div>
+
+            <!-- Table -->
+            <div class="kb-wrap">
+              <table class="kb-table">
+                <thead><tr>
+                  <th>Título / URL</th><th>Idi.</th><th>Tipo</th><th>Bloque</th><th>Esp.</th><th>Cal.</th><th>Estado</th><th>Notas</th>
+                </tr></thead>
+                <tbody id="kb-rows"></tbody>
+              </table>
+              <div class="kb-empty" id="kb-empty" style="display:none">Ninguna fuente coincide con los filtros.</div>
+              <div class="kb-empty" id="kb-loading" style="display:none">Cargando fuentes…</div>
+            </div>
           </div>
 
           <!-- ── Prompt Inspector (TASK-008, admin-only) ───── -->
