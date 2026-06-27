@@ -96,6 +96,22 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 ## 2 · Pendientes sin bloqueante (cuando se quiera)
 
+### TASK-010 — Ecosistema Call Center + Escribas (las dos máquinas conectadas)
+**Status:** PENSAMIENTO ESTRATÉGICO CAPTURADO (2026-06-27) · pendiente de validar y aterrizar
+**Owner:** Oscar (negocio) + Local Claude (modelo/doc)
+**Doc canónico:** `docs/CALL_CENTER_ECOSYSTEM.md`
+**Fecha:** 2026-06-27
+
+**Qué es:** un solo sistema con dos máquinas que se alimentan. **Call center** (3 trabajadores + 5-6 voluntarios, CRM Centralize/GHL) = motor de demanda: recluta socios premium, vende SaaS, capta para actividades en Cantabria, engorda la red europea (3.600 llamadas/año, ~€500k neto-ish). **Escribas** = motor de oferta: escriben proyectos de €250k con el SaaS para socios premium que pagan €1.000-1.200/año por entrar (superávit €30-42k/escriba). El call center llena los slots que las escribas monetizan.
+
+**Unit economics validada con Oscar** (cifras netas, no brutas). Conversión SaaS base 2,5%. Tasa de aprobación modelada al 10% al escalar (histórico real 35%) para proteger viabilidad.
+
+**Cuello de botella real:** no es escribir, es la **demanda de plazas de socio de pago** (90-120/escriba/año a 30 proyectos) → la genera el call center.
+
+**ORDEN MAESTRO DE PRIORIDADES (decidido 2026-06-27, §0.5 del doc):** Fase 1 PRODUCTO (SaaS en profundidad: escribir + evaluar + Academia 4 cursos) → Fase 2 VENDER (motor demanda: 1-3 personas para llamadas + campañas + publicidad) → Fase 3 ESCRIBIR (escribas actuales + mejores alumnos). Producto → demanda → oferta. Las ideas nuevas se encajan dentro de estas fases, no las adelantan.
+
+**Próximos pasos (pendiente decisión Oscar):** definir tipos de llamada de la secuencia · mapeo 7 objetivos → campos/pipeline Centralize · plan de capacidad de entrega agregada · modelo financiero con columna de costes · diseñar piloto (1-2 callers + 1 escriba, 4-6 sem).
+
 ### TASK-009 — Captación + Cualificación de leads (Interés × Capacidad) + tracking conductual
 **Status:** DISEÑO APROBADO (2026-06-27) · **FASE 1 IMPLEMENTADA Y VERIFICADA** (2026-06-27, sin commit) · Fases 2-3 pendientes
 **Owner:** Local Claude (eplus-tools)
