@@ -4565,6 +4565,36 @@ async function improveActivityDescription(projectId, activityId, userMessage) {
   return result;
 }
 
+// Consortium-level "connection point" note: how the partners came together /
+// what shared trajectory links them. Empty draft → generate; existing text → improve.
+// Persistence is the caller's job (saved as a writer_interviews answer); this is pure compute.
+async function improveConsortiumConnection(projectId, userId, currentText) {
+  const ctx = await getProjectContext(projectId, userId);
+  const projectText = ctx ? buildProjectContext(ctx) : '';
+  const { langName } = await getProjectMeta(projectId);
+  const hasText = !!(currentText && currentText.trim());
+
+  const system = `You are helping an Erasmus+ project coordinator write an internal note that answers: "What is the connection point between the partner organisations — how did they come together to form THIS project, and what shared trajectory, common ground or previous cooperation links them?"
+
+This is NOT a formal proposal answer; it is an internal definition that later feeds the writing of the Partnership sections (e.g. "How did you form your partnership?").
+
+══ PROJECT & CONSORTIUM CONTEXT ══
+${projectText}
+
+══ LANGUAGE ══
+IMPORTANT: Write EVERYTHING in ${langName}.
+
+══ YOUR TASK ══
+${hasText
+  ? 'Read the coordinator\'s current draft (below) and rewrite it into a stronger, more concrete version (120-200 words). Keep their facts and intent; make the shared origin and common trajectory specific and credible. Do not invent facts that contradict the context.\n\n══ CURRENT DRAFT ══\n' + currentText
+  : 'Write a 120-200 word first draft. Using the consortium context, propose a plausible, concrete connection point: how the organisations know each other, what shared interest / network / previous cooperation brought them together, and what common trajectory links them. Keep it grounded in the partners and project shown above; mark anything the coordinator must confirm with [confirmar].'}
+
+Write ONLY the note text, no headers or meta-commentary.` + NARRATIVE_FORMAT_RULES;
+
+  const text = await callAI(system, hasText ? 'Improve the draft.' : 'Write the first draft.', 'generate');
+  return { text: (text || '').trim() };
+}
+
 /* ── Writer Phase 4: project-level Deliverables & Milestones ──
    Hard cap of 15 deliverables per project (EU evaluator-friendly limit).
    Order intentionally inverted from the EACEA form: deliverables drive
@@ -4850,6 +4880,7 @@ module.exports = {
   generateActivityDescriptionDraft,
   improveWpSummary,
   improveActivityDescription,
+  improveConsortiumConnection,
   // Writer Phase 2 — per-WP structured tables
   listMilestones,
   createMilestone,

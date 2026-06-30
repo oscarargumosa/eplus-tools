@@ -59,6 +59,7 @@ router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-role', requireA
 router.post('/projects/:projectId/prep/consorcio/:partnerId/extra-staff', requireAuth, ctrl.addExtraStaff);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.updateExtraStaff);
 router.delete('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.removeExtraStaff);
+router.post('/projects/:projectId/prep/consorcio/connection/improve', requireAuth, ctrl.improveConsortiumConnection);
 router.get('/projects/:projectId/prep/presupuesto', requireAuth, ctrl.getPrepPresupuesto);
 router.get('/projects/:projectId/prep/relevancia', requireAuth, ctrl.getPrepRelevancia);
 router.put('/projects/:projectId/prep/relevancia/context', requireAuth, ctrl.updatePrepRelevanciaContext);

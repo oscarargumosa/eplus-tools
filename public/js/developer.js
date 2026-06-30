@@ -541,10 +541,14 @@ const Developer = (() => {
   /* ── Sub-tab: Consorcio ──────────────────────────────────────── */
   async function renderPrepConsorcio(el) {
     const pid = currentProject.id;
-    const data = await API.get('/developer/projects/' + pid + '/prep/consorcio').catch(() => ({ partners: [] }));
+    const [data, interview] = await Promise.all([
+      API.get('/developer/projects/' + pid + '/prep/consorcio').catch(() => ({ partners: [] })),
+      API.get('/developer/projects/' + pid + '/interview').catch(() => []),
+    ]);
     prepCache.consorcio = data;
     const partners = data.partners || [];
     const workerCategories = data.workerCategories || [];
+    const connectionAnswer = ((interview || []).find(q => q.question_key === 'consortium_connection') || {}).answer_text || '';
 
     el.innerHTML = `
       <div class="space-y-4">
@@ -732,7 +736,60 @@ const Developer = (() => {
             <div id="prep-interview-consorcio-${p.id}"></div>
           </div>`;
         }).join('') : '<p class="text-sm text-on-surface-variant italic py-4">No hay socios en este proyecto. Anade socios en el Intake.</p>'}
+
+        ${partners.length ? `
+        <!-- Consortium-level: connection point / shared trajectory -->
+        <div class="bg-white rounded-2xl border border-outline-variant/20 p-5" data-no-voice="0">
+          <div class="flex items-center justify-between mb-1">
+            <label class="text-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-lg text-primary">hub</span> Punto de conexion del consorcio</label>
+            <button onclick="Developer._improveConnection()" id="prep-conn-improve" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-sm">auto_awesome</span> ${connectionAnswer.trim() ? 'Mejorar con IA' : 'Generar con IA'}
+            </button>
+          </div>
+          <p class="text-xs text-on-surface-variant mb-2">Cual es el punto de conexion entre las entidades? Como llegaron a formar este proyecto y que trayectoria comun o cooperacion previa comparten? (Alimenta la seccion "Como formasteis el partenariado").</p>
+          <textarea id="prep-consorcio-connection" class="w-full px-3 py-2 text-sm bg-surface-container-lowest border border-outline-variant/20 rounded-lg resize-none overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary/15 min-h-[100px]" placeholder="Describe como se conocieron las entidades, que red o experiencia comun las une, y como surgio este proyecto..." oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'">${esc(connectionAnswer)}</textarea>
+        </div>` : ''}
       </div>`;
+
+    // Connection field: autosave (debounced) + voice dictation
+    setTimeout(() => {
+      const ta = document.getElementById('prep-consorcio-connection');
+      if (!ta) return;
+      ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px';
+      if (typeof VoiceInput !== 'undefined') VoiceInput.attach(ta);
+      let timer;
+      ta.addEventListener('input', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          API.put('/developer/projects/' + pid + '/interview/consortium_connection', { answer: ta.value }).catch(() => {});
+        }, 1200);
+      });
+    }, 50);
+  }
+
+  async function improveConnection() {
+    const ta = document.getElementById('prep-consorcio-connection');
+    if (!ta) return;
+    const btn = document.getElementById('prep-conn-improve');
+    const original = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando...'; }
+    try {
+      const res = await API.post('/developer/projects/' + currentProject.id + '/prep/consorcio/connection/improve', { text: ta.value });
+      const data = res.data || res;
+      if (data.text) {
+        ta.value = data.text;
+        ta.dispatchEvent(new Event('input', { bubbles: true }));
+        setTimeout(() => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }, 50);
+        ta.classList.add('ring-2', 'ring-green-400/40');
+        setTimeout(() => ta.classList.remove('ring-2', 'ring-green-400/40'), 2000);
+        await API.put('/developer/projects/' + currentProject.id + '/interview/consortium_connection', { answer: data.text }).catch(() => {});
+        Toast.show('Texto mejorado', 'ok');
+      }
+    } catch (e) {
+      Toast.show('Error: ' + e.message, 'err');
+    } finally {
+      if (btn) { btn.disabled = false; btn.innerHTML = original || '<span class="material-symbols-outlined text-sm">auto_awesome</span> Mejorar con IA'; }
+    }
   }
 
   /* ── Sub-tab: Presupuesto ─────────────────────────────────────── */
@@ -6013,6 +6070,7 @@ const Developer = (() => {
     _selectVariant: selectVariant,
     _generateVariant: generateVariant,
     _saveCustomText: saveCustomText,
+    _improveConnection: improveConnection,
     _saveStaffSkills: saveStaffSkills,
     _toggleStaff: toggleStaff,
     _setStaffRole: setStaffRole,

@@ -373,6 +373,16 @@ exports.improveActivityDescription = async (req, res, next) => {
   }
 };
 
+exports.improveConsortiumConnection = async (req, res, next) => {
+  try {
+    const data = await model.improveConsortiumConnection(req.params.projectId, req.user.id, (req.body?.text || '').trim());
+    res.json({ ok: true, data });
+  } catch (err) {
+    console.error('[improveConsortiumConnection] ERROR:', err?.message || err, err?.stack);
+    next(err);
+  }
+};
+
 // POST /v1/developer/instances/:id/generate
 exports.generateDraft = async (req, res, next) => {
   try {
