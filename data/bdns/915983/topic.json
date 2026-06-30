@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "915983",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / SECRETARÍA AUTONÓMICA DE HACIENDA Y FINANCIACIÓN",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Resolución de la Conselleria de Economía, Hacienda y Administración Pública por la que se convocan en el ejercicio 2026 subvenciones para el fomento de la formación, la investigación y la transf. de conocimiento entre el SUV y la AP en economía pública.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": "2026-07-08",
+  "deadline": "2026-08-04",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 318000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72.2",
+      "descripcion": "Investigación y desarrollo experimental en ciencias sociales y humanidades"
+    }
+  ],
+  "apply_url": "https://sede.gva.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/915983",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://dogv.gva.es/datos/2021/02/16/pdf/2021_1150.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.205Z"
+}

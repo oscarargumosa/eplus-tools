@@ -1,0 +1,64 @@
+{
+  "id": 1117462,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASAS-IBÁÑEZ",
+    "nivel3": "AYUNTAMIENTO DE CASAS-IBÁÑEZ"
+  },
+  "sedeElectronica": "https://casasibanez.sedipualba.es",
+  "codigoBDNS": "915901",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1915,
+  "mrr": false,
+  "descripcion": "Bases del Concurso de carrozas y comparsas de la feria 2026 en Casas Ibáñez en relación con lo establecido en la ley 38/2003 para los procedimientos de concurrencia competitiva de acuerdo con los artículos 17, 18, 20 y 22.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES421 - Albacete"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Concurso de carrozas y comparsas de la feria 2026 en Casas Ibáñez en relación con lo establecido en la ley 38/2003 para los procedimientos de concurrencia competitiva de acuerdo con los artículos 18, 20 y 22.",
+  "urlBasesReguladoras": "https://casasibanez.sedipualba.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a publicación en Boletín Oficial Provincial.",
+  "textFin": "18 de agosto de 2026 a las 14:00",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483468,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 1100 de 25_06_2026 _RESOLUCION BASES CONCURSO CARROZAS FERIA 2026_ - SEGRA 925264.pdf",
+      "long": 662111,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

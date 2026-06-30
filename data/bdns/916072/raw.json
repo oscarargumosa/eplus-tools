@@ -1,0 +1,72 @@
+{
+  "id": 1117633,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PARETS DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE PARETS DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916072",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "2026 - SUBVENCIONS CONCURRENCIA COMPETITIVA ENTITATS CULTURALS",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORES CONCURRENCIA COMPETITIVA ENTITATS",
+  "urlBasesReguladoras": "https://bop.diba.cat/scripts/ftpisa.aspx?fnew?bop2019&02/022019002132.pdf&1",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir de l`endemà de de la publicació de la convocatòria en el Butlletí Oficial de la Província",
+  "textFin": "durant 21 dies naturals",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1484035,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Certificat_dacord_(Entitats_culturals).pdf",
+      "long": 2054125,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1484034,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CAST_(Entidades_culturales).pdf",
+      "long": 162587,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "910559",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / SERVICIO CÁNTABRO DE EMPLEO",
+  "nuts_codes": [
+    "ES13"
+  ],
+  "nuts_primary": "ES13",
+  "title": "Orden IND/27/2026, de 29 de junio, por la que se aprueba la convocatoria de subvenciones para el año 2026 correspondiente a la puesta en marcha de diecisiete lanzaderas de empleo y emprendimiento solidario, en el ámbito de la C. Autónoma de Cantabria",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-06-04",
+  "open_date": "2026-07-06",
+  "deadline": "2026-07-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 669375,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sede.cantabria.es/sede/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/910559",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=422477",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:44.274Z"
+}

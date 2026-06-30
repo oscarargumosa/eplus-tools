@@ -1,0 +1,77 @@
+{
+  "id": 1117497,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE VALLADOLID",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://portal.sede.uva.es/procedimientos/pas",
+  "codigoBDNS": "915936",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 438750,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PROVISIONAL DE AYUDAS FINANCIERAS\nERASMUS+ KA131 PARA LA MOVILIDAD DEL PERSONAL TÉCNICO, DE\nGESTIÓN Y DE ADMINISTRACIÓN Y SERVICIOS (PTGAS)\nDE LA UNIVERSIDAD DE VALLADOLID\nCURSO ACADÉMICO 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES414 - Palencia"
+    },
+    {
+      "descripcion": "ES416 - Segovia"
+    },
+    {
+      "descripcion": "ES417 - Soria"
+    },
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las Convocatorias de\nayudas de movilidad Erasmus destinas al Personal de la Universidad de Valladolid y a\nProfesionales de empresas ubicadas en Estados miembros de la UE y terceros países\nasociados al programa (TPAP), aprobadas por Ac",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2019/10/07/pdf/BOCYL-D-07102019-7.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-17",
+  "fechaFinSolicitud": "2026-07-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483547,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Ayudas Erasmus KA131  PTGAS 2026  2027_PUBLICADO_OK.pdf.pdf",
+      "long": 420385,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

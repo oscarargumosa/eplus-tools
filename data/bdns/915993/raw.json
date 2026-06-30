@@ -1,0 +1,64 @@
+{
+  "id": 1117554,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE GRANADA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE GRANADA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915993",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DE SUBVENCIONES A ENTIDADES LOCALES DIRIGIDAS A LA ORGANIZACIÓN DE EVENTOS DEPORTIVOS LOCALES EN LA\nPROVINCIA DE GRANADA DURANTE 2026. (EXPTE. MOAD 2026/PES_01/009348).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES DE EJECUCIÓN PRESUPUESTARIA 2026",
+  "urlBasesReguladoras": "https://www.dipgra.es/export/sites/diputaciongranada/diputacion/delegaciones/economia-y-atencion-al-alcalde/.galleries/DIPUTACION-Delegaciones-Economia-y-Patrimonio-Economia/DIPUTACION-Delegaciones-Economia-y-Patrimonio-Economia-Presupuestos",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Primer día hábil desde el día siguiente de su publicación en BOP",
+  "textFin": "Díez días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483727,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado_nA_6_subsanado_Junta_de_Gobierno_16_06_2026.pdf",
+      "long": 631742,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

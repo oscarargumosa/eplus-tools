@@ -1,0 +1,151 @@
+{
+  "id": 1117625,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/granada",
+  "codigoBDNS": "916064",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24075,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PYME GLOBAL 2026 PARTICIPACIÓN VISITA FERIA SIAL PARIS 2026 PARA EMPRESAS DE LA DEMARCACIÓN TERRITORIAL DE LA CÁMARA DE COMERCIO,INDUSTRIA, SERVICIOS Y NAVEGACIÓN DE GRANADA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA PYME GLOBAL 2026 PARTICIPACIÓN VISITA FERIA SIAL PARIES 2026 PARA EMPRESAS DE LA DEMARCACIÓN TERRITORIAL DE LA CÁMARA DE COMERCIO,INDUSTRIA, SERVICIOS Y NAVEGACIÓN DE GRANADA",
+  "urlBasesReguladoras": "https://www.camaragranada.org/subservicio/subvenciones-y-programas/ayudas-a-empresas-pymes-y-autonomos/programa-pyme-global",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-18",
+  "textInicio": "A LAS NUEVE HORAS DEL DÍA HÁBIL SIGUIENTE A LA PUBLICACIÓN BOP GRANADA",
+  "textFin": "A LAS 14:00 HORAS ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483987,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria de ayudas Pyme Global SIAL PARIS 2026.pdf",
+      "long": 524446,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483991,
+      "descripcion": "Anexo II. Declaraciones Responables",
+      "nombreFic": "Anexo II_Declaración responsable empresa Pyme Global SIAL PARIS 2026.pdf",
+      "long": 368484,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483990,
+      "descripcion": "Anexo I. Tipología Gastos Elegibles y Justificación",
+      "nombreFic": "Anexo I_Tipologia Gastos Elegibles y Justificación empresa beneficiaria SIAL PARIS 2026.pdf",
+      "long": 499509,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

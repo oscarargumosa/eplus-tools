@@ -1,0 +1,88 @@
+{
+  "id": 1117561,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMERÍA",
+    "nivel3": "AYUNTAMIENTO DE ALMERÍA"
+  },
+  "sedeElectronica": "https://almeriaciudad.es/integracion-social/participacion-ciudadana",
+  "codigoBDNS": "916000",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 81000,
+  "mrr": false,
+  "descripcion": "ACUERDO JGL DE APROBACIÓN DE LA CONVOCATORIA DE SUBVENCIONES PARA PROMOCIÓN DEL TEJIDO ASOCIATIVO VECINAL PARA EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "PRESUPUESTO GENERAL DEL EXCMO. AYUNTAMIENTO DE ALMERÍA (BOP Nº 244, DE 22/12/2025)",
+  "urlBasesReguladoras": "https://app.dipalme.org/bop/publico.zul",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-07",
+  "fechaFinSolicitud": "2026-07-27",
+  "textInicio": "AL DÍA SIGUIENTE HÁBIL DE LA PUBLICACIÓN DEL EXTRACTO D ELA CONVOCATORIA EN EL BOP DE ALMERÍA",
+  "textFin": "15 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483739,
+      "descripcion": "ORDENANZA GENERAL DE SUBVENCIONES",
+      "nombreFic": "ORDENANZA GENERAL DE SUBVENCIONES.pdf",
+      "long": 855088,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483741,
+      "descripcion": "PLAN ESTRATÉGICO DE SUBVENCIONES 2025-2027",
+      "nombreFic": "PES 2025-2027 COMPLETO firmado.pdf",
+      "long": 1397062,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483736,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01 Certificado_acuerdo 19-06-26.pdf",
+      "long": 485808,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483738,
+      "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA PROMOCIÓN DEL TEJIDO ASOCIATIVO VECINAL 2026",
+      "nombreFic": "02 DOCUMENTO_CONVOCATORIA_2026 Fdo.pdf",
+      "long": 487573,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

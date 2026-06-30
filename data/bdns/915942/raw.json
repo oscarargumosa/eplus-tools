@@ -1,0 +1,99 @@
+{
+  "id": 1117503,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLAJOYOSA/VILA JOIOSA, LA",
+    "nivel3": "AYUNTAMIENTO DE VILLAJOYOSA/VILA JOIOSA, LA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915942",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Convocatoria concesión de ayudas en régimen de concurrencia competitiva destinadas a actuaciones de rehabilitación y conservación de edificios de viviendas. Ejercicio 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Construcción de edificios",
+      "codigo": "41"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "Convocatoria concesión de ayudas en régimen de concurrencia competitiva destinadas a actuaciones de rehabilitación y conservación de edificios de viviendas. Ejercicio 2026.",
+  "urlBasesReguladoras": "www.villajoyosa.com",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el siguiente a la publicación del extracto en el BOP",
+  "textFin": "1 mes a contar desde el día siguiente a la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483556,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260625_CERTIFICADO 2026-0054 [Certificado de acuerdo].pdf",
+      "long": 2326948,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483577,
+      "descripcion": "Mantenimiento de terceros",
+      "nombreFic": "FICHA MANTENIMIENTO TERCEROS.pdf",
+      "long": 51542,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483576,
+      "descripcion": "Anexo III",
+      "nombreFic": "anexo III.docx",
+      "long": 16304,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483574,
+      "descripcion": "Anexo I",
+      "nombreFic": "anexo I.docx",
+      "long": 20691,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483575,
+      "descripcion": "Anexo II",
+      "nombreFic": "anexo II.docx",
+      "long": 15893,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

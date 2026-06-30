@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "915930",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / SECRETARÍA AUTONÓMICA DE AGRICULTURA, GANADERÍA Y PESCA",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "RESOLUCIÓN de 23 de junio de 2026, de la DG Producción Agrícola y Ganadera por la que se convocan para el ejercicio 2026 las ayudas compensatorias por los costes de prevención y erradicación de salmonelosis en avicultura en la C.V.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": "2026-07-01",
+  "deadline": "2026-07-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 850000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "http://www.gva.es/es/proc3268",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/915930",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Extracto convocatoria castellao",
+      "url": null
+    },
+    {
+      "label": "Extracte convocatoria Valencià",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/datos/2023/06/29/pdf/2023_7245.pdf",
+  "text_inicio": "a partir del día siguiente de la publicación del extracto de la convocatoria en el DOGV",
+  "text_fin": "15 días hábiles desde la fecha de inicio de solicitud",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.55291",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA -  REG (UE) 702/2014, DE 25 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 27.1. AB AYUDAS AL SECTOR GANADERO"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.180Z"
+}

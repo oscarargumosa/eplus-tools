@@ -1,0 +1,80 @@
+{
+  "id": 1117496,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILANOVA I LA GELTRÚ",
+    "nivel3": "AYUNTAMIENTO DE VILANOVA I LA GELTRÚ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "915935",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 95390,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DESTINADAS A PROYECTOS DE COOPERACIÓN INTERNACIONAL AL DESARROLLO",
+  "descripcionLeng": "CONVOCATÒRIA 2026 DE SUBVENCIONS EN REGIM DE CONCURRÈNCIA COMPETITIVA DESTINADES A PROJECTES DE COOPERACIÓ INTERNACIONAL AL DESENVOLUPAMENT",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones en régimen de concurrencia competitiva destinadas destinades a proectos de cooperación internacional de Vilanova i la Geltrú",
+  "urlBasesReguladoras": "www.vilanova.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-06",
+  "fechaFinSolicitud": "2026-07-17",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483551,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA cooperación.pdf",
+      "long": 1118982,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483554,
+      "descripcion": "CERTIFICADO DE ACUERDO",
+      "nombreFic": "Certificat_d_acord-52.pdf",
+      "long": 1426287,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483552,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA cooperacio.pdf",
+      "long": 1215306,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

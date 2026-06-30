@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "915433",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ROZAS DE MADRID, LAS / AYUNTAMIENTO DE ROZAS DE MADRID, LAS",
+  "nuts_codes": [
+    "ES300"
+  ],
+  "nuts_primary": "ES300",
+  "title": "BASES PARA LA CONVOCATORIA DE CONCESIÓN DE PRESTACIONES ECONÓMICAS DE ESCUELAS INFANTILES DEL MUNICIPIO DE LAS ROZAS DE MADRID 2026 -2027",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-25",
+  "open_date": "2026-07-06",
+  "deadline": "2026-08-03",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "sede.lasrozas.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/915433",
+  "documents": [
+    {
+      "label": "ANEXO I SOLICITUD  -- ANEXO II DECLARACION RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lasrozas.es/sanidad-y-servicios sociales/ayudas",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:45.988Z"
+}

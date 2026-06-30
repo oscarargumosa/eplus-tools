@@ -1,0 +1,83 @@
+{
+  "source": "bdns",
+  "source_id": "916071",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESCATRÓN / AYUNTAMIENTO DE ESCATRÓN",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA PÚBLICA DE SUBVENCIONES EN MATERIA DE COOPERACIÓN AL DESARROLLO 2026.",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 18000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "https://escatron.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916071",
+  "documents": [
+    {
+      "label": "Anexo III Declaración Responsable Subvenciones",
+      "url": null
+    },
+    {
+      "label": "Anexo V Aceptación",
+      "url": null
+    },
+    {
+      "label": "Anexo II Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Anexo VI Justificación",
+      "url": null
+    },
+    {
+      "label": "Anexo IV Ficha Datos Económicos",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.dpz.es/BOPZ/UploadServlet?ruta=Boletines\\2015\\142\\bop.pdf#page=11",
+  "text_inicio": "El día siguiente de la publicación de la convocatoria en el Boletín Oficial Provincia Zaragoza",
+  "text_fin": "20 días hábiles desde la publicación de la convocatoria en el BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.230Z"
+}

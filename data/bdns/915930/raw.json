@@ -1,0 +1,95 @@
+{
+  "id": 1117491,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE AGRICULTURA, GANADERÍA Y PESCA"
+  },
+  "sedeElectronica": "http://www.gva.es/es/proc3268",
+  "codigoBDNS": "915930",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 850000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de 23 de junio de 2026, de la DG Producción Agrícola y Ganadera por la que se convocan para el ejercicio 2026 las ayudas compensatorias por los costes de prevención y erradicación de salmonelosis en avicultura en la C.V.",
+  "descripcionLeng": "RESOLUCIÓ de 23 de juny de 2026, de la DG de Producció Agrícola i Ramadera per la qual es convoquen per a l'exercici 2026, les ajudes compensatòries pels costos de prevenció i erradicació de salmonel·losi en avicultura, en l'àmbit de la CV",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN 17/2023, DE 23 DE JUNIO, DE LA CONSELLERIA DE A.D.R.E.C. Y T.E. POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS DE LAS AYUDAS COMPENSATORIAS POR LOS COSTES DE PREVENCION Y ERRADICACION DE SALMONELOSIS EN AVICULTURA",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2023/06/29/pdf/2023_7245.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-01",
+  "fechaFinSolicitud": "2026-07-22",
+  "textInicio": "a partir del día siguiente de la publicación del extracto de la convocatoria en el DOGV",
+  "textFin": "15 días hábiles desde la fecha de inicio de solicitud",
+  "ayudaEstado": "SA.55291",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.55291",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA -  REG (UE) 702/2014, DE 25 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 27.1. AB AYUDAS AL SECTOR GANADERO"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483542,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "1.  resolución ayuda salmo 2026_firmado.pdf",
+      "long": 350690,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483545,
+      "descripcion": "Extracto convocatoria castellao",
+      "nombreFic": "3.Extracto resolución salmo 2026_firmado.pdf",
+      "long": 249000,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483544,
+      "descripcion": "Extracte convocatoria Valencià",
+      "nombreFic": "4. 16.06.26. Extracto resolucin salmo 2026_26-005763_trad_firmado.pdf",
+      "long": 274649,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483543,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2. resolucin_ayuda_salmo_2026_26-005761_orig_tr_firmado.pdf",
+      "long": 380779,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

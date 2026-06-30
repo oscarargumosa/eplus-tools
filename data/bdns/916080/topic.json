@@ -1,0 +1,88 @@
+{
+  "source": "bdns",
+  "source_id": "916080",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LLANERA / AYUNTAMIENTO DE LLANERA",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Acuerdo Junta de Gobierno Local aprobación de la convocatoria y bases reguladoras para la concesión de subvenciones en el marco del Programa apoyo al Sector Primario de Llanera,  anualidad 2026.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "www.sede.llanera.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916080",
+  "documents": [
+    {
+      "label": "Anexo III Ficha de acreedor",
+      "url": null
+    },
+    {
+      "label": "Formulario solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo I Conceptos subvencionados",
+      "url": null
+    },
+    {
+      "label": "Anexo VI Listado de establecimientos adheridos",
+      "url": null
+    },
+    {
+      "label": "Anexo IV Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Anexo V Cuenta justificativa",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.llanera.es/firma/documento.aspx?csv=WFCAADATHHLCJMHL29YW&modo=abrir",
+  "text_inicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOPA",
+  "text_fin": "30 días naturales a partir del día siguiente a la publicación del extracto de la convocatoria.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1407/2013 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.235Z"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "916000",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALMERÍA / AYUNTAMIENTO DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "ACUERDO JGL DE APROBACIÓN DE LA CONVOCATORIA DE SUBVENCIONES PARA PROMOCIÓN DEL TEJIDO ASOCIATIVO VECINAL PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": "2026-07-07",
+  "deadline": "2026-07-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 81000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://almeriaciudad.es/integracion-social/participacion-ciudadana",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916000",
+  "documents": [
+    {
+      "label": "ORDENANZA GENERAL DE SUBVENCIONES",
+      "url": null
+    },
+    {
+      "label": "PLAN ESTRATÉGICO DE SUBVENCIONES 2025-2027",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "CONVOCATORIA DE SUBVENCIONES PARA PROMOCIÓN DEL TEJIDO ASOCIATIVO VECINAL 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://app.dipalme.org/bop/publico.zul",
+  "text_inicio": "AL DÍA SIGUIENTE HÁBIL DE LA PUBLICACIÓN DEL EXTRACTO D ELA CONVOCATORIA EN EL BOP DE ALMERÍA",
+  "text_fin": "15 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.212Z"
+}

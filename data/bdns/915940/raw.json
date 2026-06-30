@@ -1,0 +1,96 @@
+{
+  "id": 1117501,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "915940",
+  "fechaRecepcion": "2026-06-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 48500,
+  "mrr": false,
+  "descripcion": "BASES QUE HAN DE REGIR LA CONCESION DE SUBVENCIONES EN REGIMEN DE CONCESIÓN DIRECTA PARA FAVORECER LA CONCILIACIÓN FAMILIAR, PERSONAL Y LABORAL EN EL MUNICIPIO DE CÁCERES AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "SUBVENCIONES EN REGIMEN DE CONCESIÓN DIRECTA PARA FAVORECER LA CONCILIACIÓN FAMILIAR, PERSONAL Y LABORAL EN EL MUNICIPIO DE CÁCERES AÑO 2026",
+  "urlBasesReguladoras": "https://www.ayto-caceres.es/noticias/subvencion",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": "DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE CACERES",
+  "textFin": "30 DE NOVIEMBRE DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1483562,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "bases bop.pdf",
+      "long": 184483,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483563,
+      "descripcion": "ANEXO I",
+      "nombreFic": "mod-545 Solicitud ayuda  Concilia Anexo I.pdf",
+      "long": 241129,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483567,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "mod-548 Declara Resp ayuda Concilia Anexo IV.pdf",
+      "long": 140215,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483565,
+      "descripcion": "AEXO III",
+      "nombreFic": "mod-547 Declara ayuda  Concilia Anexo III.pdf",
+      "long": 168935,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    },
+    {
+      "id": 1483564,
+      "descripcion": "ANEXO II",
+      "nombreFic": "mod-546 Autoriza ayuda  Concilia Anexo II.pdf",
+      "long": 125368,
+      "datMod": "2026-06-29",
+      "datPublicacion": "2026-06-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "916041",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD REY JUAN CARLOS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "RESOLUCIÓN UNIVERSIDAD REY JUAN CARLOS POR LA QUE SE APRUEBA Y SE HACE PÚBLICA LA CONVOCATORIA Y SUS CORRESPONDIENTES BASES REGULADORAS PARA LA CONCESIÓN, MEDIANTE PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA, DE AYUDAS A DEPORTISTAS PARA EL CURSO 2025/26",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-06-29",
+  "open_date": null,
+  "deadline": "2026-07-20",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.urjc.es/convocatorias",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916041",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.urjc.es/tablon-de-anuncios",
+  "text_inicio": "Al día siguiente de la publicación del extracto en el BOCM",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-06-30T04:05:46.220Z"
+}
