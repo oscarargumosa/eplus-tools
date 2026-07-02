@@ -192,7 +192,7 @@ function efs_topbar_fallback_menu( $args = array() ) {
 	$items = array(
 		array( 'Recursos',            home_url( '/recursos/' ),                            $is_recursos ),
 		array( 'Academia',            'https://campus.eufundingschool.com',                false ),
-		array( 'Servicios y precios', home_url( '/academia/' ),                            is_page( 'academia' ) ),
+		array( 'Join the Club',       home_url( '/academia/' ),                            is_page( 'academia' ) ),
 		array( 'Proyectos',           'https://intake.eufundingschool.com/',               false ),
 		array( 'Convocatorias',       'https://intake.eufundingschool.com/#convocatorias', false ),
 		array( 'Movilidades',         'https://intake.eufundingschool.com/#movilidades',   false ),
