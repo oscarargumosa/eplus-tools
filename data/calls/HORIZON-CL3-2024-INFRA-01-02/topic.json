@@ -17,11 +17,10 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Management of urban areas\",\"Terrorism\",\"Security\",\"Security Analysis\",\"Policy and Support\",\"Critical infrastructure, emergency systems, securi\",\"Foresight\",\"Artificial Intelligence\",\"Protection of public spaces\",\"Digital Agenda\",\"Social sciences and humanities\",\"security systems\",\"local authorities\",\"security forces and emergency services (police, firefighters, paramedics ...)\",\"best practices\",\"Security Union Strategy\",\"urban infrastructures\",\"resilience of an urban and peri-urban environment\"]"
+    "[\"Management of urban areas\",\"Terrorism\",\"Security\",\"Policy and Support\",\"Security Analysis\",\"Critical infrastructure, emergency systems, securi\",\"Foresight\",\"Protection of public spaces\",\"Digital Agenda\",\"Social sciences and humanities\",\"security systems\",\"local authorities\",\"security forces and emergency services (police, firefighters, paramedics ...)\",\"best practices\",\"Security Union Strategy\",\"urban infrastructures\",\"resilience of an urban and peri-urban environment\"]"
   ],
   "crossCuttingPriorities": [
     "FORESIGHT",
-    "AI",
     "DigitalAgenda",
     "SSH"
   ],
@@ -29,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-INFRA-01-02.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.094Z"
+  "fetchedAt": "2026-07-02T04:03:18.693Z"
 }

@@ -1,0 +1,88 @@
+{
+  "id": 1118021,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT PERE DE RIBES",
+    "nivel3": "AYUNTAMIENTO DE SANT PERE DE RIBES"
+  },
+  "sedeElectronica": "http://www.santperederibes.cat/seuelectronica",
+  "codigoBDNS": "916460",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para la concesión de subvención para proyectos de atención a la emergencia habitacional en Sant Pere de Ribes 2026",
+  "descripcionLeng": "Bases reguladores per a la concessió de subvenció per a projectes d'atenció a l'emergència habitacional a Sant Pere de Ribes 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvención para proyectos de atención a la emergencia habitacional en Sant Pere de Ribes 2026",
+  "urlBasesReguladoras": "https://www.santperederibes.cat/municipi/serveissocials",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente publicación BOPB",
+  "textFin": "15 dias habiles a contar des del dia siguiente de su publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485188,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases castellà_emergencia_habitacional.pdf",
+      "long": 515455,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485195,
+      "descripcion": "Extracto",
+      "nombreFic": "Extracte català_Signat.docx.pdf",
+      "long": 687851,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485191,
+      "descripcion": "Extracto",
+      "nombreFic": "Extracto castellà_Signat.pdf",
+      "long": 676749,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485189,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases català_emergencia_habitacional.pdf",
+      "long": 733320,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-21",
   "deadlineModel": "two-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Other engineering and technologies\",\"Energy\",\"Mechanical engineering\",\"Sustainable innovation\",\"Technological innovation\",\"Product innovation\",\"Digital Agenda\",\"Chemical engineering\",\"Process innovation\",\"Design innovation\",\"Industrial dynamics\",\"Environmental engineering\",\"air quality\",\"design\",\"exhaust\",\"pollutant\",\"zero-pollution\",\"zero-waste\",\"greenhouse gas\",\"soil quality\",\"water quality\",\"energy efficiency\",\"Circular Bio-based Europe JU\",\"biorefinery\",\"symbiosis\",\"bio-based\",\"CBE\",\"vapour\",\"noise\",\"Circular Bio-based Europe\",\"noise emissions\",\"hazardous substance\",\"odour\",\"Digital\",\"carbon removal\",\"heat\"]"
+    "[\"Other engineering and technologies\",\"Energy\",\"Mechanical engineering\",\"Sustainable innovation\",\"Technological innovation\",\"Product innovation\",\"Digital Agenda\",\"Chemical engineering\",\"Design innovation\",\"Process innovation\",\"Industrial dynamics\",\"Environmental engineering\",\"air quality\",\"design\",\"exhaust\",\"pollutant\",\"zero-pollution\",\"zero-waste\",\"greenhouse gas\",\"soil quality\",\"water quality\",\"energy efficiency\",\"Circular Bio-based Europe JU\",\"biorefinery\",\"symbiosis\",\"bio-based\",\"CBE\",\"vapour\",\"noise\",\"Circular Bio-based Europe\",\"noise emissions\",\"hazardous substance\",\"odour\",\"Digital\",\"carbon removal\",\"heat\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-ZEROPOLLUTION-02-2-two-stage.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.184Z"
+  "fetchedAt": "2026-07-02T04:03:18.646Z"
 }

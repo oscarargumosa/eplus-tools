@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-28",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Forest adaptation to climate change\",\"Forest resilience\",\"Common agricultural policy (CAP)\",\"Agro-forestry\",\"Forest biodiversity\",\"Knowledge transfer\",\"Digital Agenda\",\"Forest management planning\",\"knowledge and innovation\",\"CAP\",\"Focus Groups\",\"EU advisory network dedicated to forestry\",\"EU Forest Strategy for 2030\",\"Common Agricultural Policy\",\"Innovation brokers\",\"MAA\",\"Thematic networks related to forestry\",\"AKIS\",\"Knowledge creation\",\"Sustainble forest management\",\"Foresters\",\"Agricultural Knoledge and Innovation Systems\",\"EIP-AGRI\",\"Peer-to-peer consulting\",\"multi-actor approach\",\"operational group\"]"
+    "[\"Forest adaptation to climate change\",\"Forest resilience\",\"Agro-forestry\",\"Common agricultural policy (CAP)\",\"Forest biodiversity\",\"Knowledge transfer\",\"Digital Agenda\",\"Forest management planning\",\"knowledge and innovation\",\"CAP\",\"Focus Groups\",\"EU advisory network dedicated to forestry\",\"EU Forest Strategy for 2030\",\"Common Agricultural Policy\",\"Innovation brokers\",\"MAA\",\"Thematic networks related to forestry\",\"AKIS\",\"Knowledge creation\",\"Sustainble forest management\",\"Foresters\",\"Agricultural Knoledge and Innovation Systems\",\"EIP-AGRI\",\"Peer-to-peer consulting\",\"multi-actor approach\",\"operational group\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-GOVERNANCE-01-12.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.035Z"
+  "fetchedAt": "2026-07-02T04:03:18.655Z"
 }

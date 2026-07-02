@@ -35,7 +35,7 @@
   "documents": [
     {
       "section": "1. Admissibility conditions: Proposal page limit and layout",
-      "label": "call document",
+      "label": "ca",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/wp-call/2026/call-fiche_rfcs-2026-bt-steel-smap-dual-use_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
@@ -132,5 +132,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-07-01T04:05:47.460Z"
+  "fetchedAt": "2026-07-02T04:03:20.747Z"
 }

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-09-12",
   "deadline": "2024-01-16",
   "deadlineModel": "single-stage",
@@ -17,12 +17,12 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Renewable energy sources - general\",\"innovation\",\"solar energy\",\"fet\",\"emerging technology\",\"oes\",\"renewable energy\",\"wind\",\"geothermal energy\",\"ocean energy\",\"bioenergy\"]"
+    "[\"Renewable energy sources - general\",\"solar energy\",\"innovation\",\"oes\",\"fet\",\"emerging technology\",\"geothermal energy\",\"ocean energy\",\"renewable energy\",\"wind\",\"bioenergy\"]"
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D3-01-10.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.194Z"
+  "fetchedAt": "2026-07-02T04:03:18.622Z"
 }

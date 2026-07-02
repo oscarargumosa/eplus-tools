@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "916452",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / INSTITUTO DE FOMENTO DE LA REGIÓN DE MURCIA (INFO)",
+  "nuts_codes": [
+    "ES620"
+  ],
+  "nuts_primary": "ES620",
+  "title": "Resolución de 1 de julio de 2026, del Director del Instituto de Fomento de la Región de Murcia, por delegación, de convocatoria para la concesión de Becas de Internacionalización.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 395000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": "https://sede.institutofomentomurcia.es/infodirecto",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916452",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Orden  22 octubre 2019",
+      "url": null
+    },
+    {
+      "label": "BB.RR",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://borm.es/services/anuncio/ano/2026/numero/1767/pdf?id=842449",
+  "text_inicio": "Desde las 9 horas del día siguiente de la publicación del extracto en el BORM.",
+  "text_fin": "Hasta 15 días hábiles a partir del siguiente a la publicación de extracto de esta convocatoria.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.837Z"
+}

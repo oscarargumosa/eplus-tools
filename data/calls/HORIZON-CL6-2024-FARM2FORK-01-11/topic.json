@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Food traceability\",\"Africa\",\"International Cooperation\",\"Food and beverages\",\"Africa\",\"Societal Engagement\",\"Digital Agenda\",\"Social Innovation\",\"Economics, Econometrics\",\"Mediterranean\",\"EOSC and FAIR data\",\"Food safety\",\"International trade\",\"food trade\",\"food supply\",\"traceability\",\"trade\",\"food 2030\",\"climate-neutral\",\"Africa\",\"EU-Africa\",\"ICT\"]"
+    "[\"Food traceability\",\"Africa\",\"International Cooperation\",\"Food and beverages\",\"Africa\",\"Societal Engagement\",\"Digital Agenda\",\"Social Innovation\",\"Social sciences and humanities\",\"Economics, Econometrics\",\"Mediterranean\",\"EOSC and FAIR data\",\"Food safety\",\"International trade\",\"food trade\",\"food supply\",\"traceability\",\"trade\",\"food 2030\",\"climate-neutral\",\"Africa\",\"EU-Africa\",\"ICT\"]"
   ],
   "crossCuttingPriorities": [
     "Africa",
@@ -25,6 +25,7 @@
     "SocietalEngagement",
     "DigitalAgenda",
     "SocInnov",
+    "SSH",
     "MEDIT",
     "EoscAndFairData"
   ],
@@ -32,5 +33,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-FARM2FORK-01-11.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.167Z"
+  "fetchedAt": "2026-07-02T04:03:18.630Z"
 }

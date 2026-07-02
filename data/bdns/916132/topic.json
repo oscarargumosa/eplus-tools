@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "916132",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DEFENSA / D.G. DE RECLUTAMIENTO Y ENSEÑANZA MILITAR",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 1 de julio, de la Subsecretaria de Defensa, por la que se aprueba la convocatoria de becas y ayudas para facilitar la\nobtención de titulaciones del sistema educativo español para el curso 2026-2027",
+  "title_lang": "es",
+  "summary": "Defensa",
+  "status": "open",
+  "publication_date": "2026-06-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.defensa.gob.es/acceda/index",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916132",
+  "documents": [
+    {
+      "label": "Normas adicionales concesión becas",
+      "url": null
+    },
+    {
+      "label": "Formulario a anexar en la solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/boe/dias/2023/07/19/pdfs/BOE-A-2023- 16694.pdf",
+  "text_inicio": "Dia siguiente a la publicación de este extracto",
+  "text_fin": "Quince días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.740Z"
+}

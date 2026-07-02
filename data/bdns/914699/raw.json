@@ -1,0 +1,80 @@
+{
+  "id": 1116260,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AGAETE",
+    "nivel3": "AYUNTAMIENTO DE AGAETE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "914699",
+  "fechaRecepcion": "2026-06-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 15403,
+  "mrr": false,
+  "descripcion": "AYUDAS ECONÓMICAS DE EMERGENCIA SOCIAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS DE EMERGENCIA SOCIAL CON CARGO A PARTE DE LOS FONDOS DE CONVENIO DE COLABORACIÓN CON EL CABILDO DE GRAN CANARIA.",
+  "urlBasesReguladoras": "https://transparencia.grancanaria.com/documents/150668/4213870/4.2a+Modelo+de+Convenio+2025+y+anexos+%281%29.pdf/30970f39-2ac4-f97a-f941-2a7152c73b96?t=1749801361712",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP.",
+  "textFin": "Hasta el agotamiento de la dotación presupuestaria, cerrándose en todo caso el 16.10.2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485550,
+      "descripcion": "Resolución 2026-736.  Aprobación de convocatoria ayuda de emergencia Cabildo",
+      "nombreFic": "DECRETO 2026-0736 [Resolución PR_2026_1017 - Aprobación convocatoria ayudas de emergencia Cabildo.pdf",
+      "long": 756572,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1480207,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convenio de colaboración ayudas de emergencia social.pdf",
+      "long": 683033,
+      "datMod": "2026-06-22",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1480218,
+      "descripcion": "Notificación resolución distribución de fondos 2026",
+      "nombreFic": "Notificación Resolución distribución fondos 2026 TR_CGC-26-4999_AYTO_AGAETE_.report (1).pdf",
+      "long": 114395,
+      "datMod": "2026-06-22",
+      "datPublicacion": "2026-07-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

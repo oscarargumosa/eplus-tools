@@ -1,0 +1,88 @@
+{
+  "id": 1118063,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "QUART DE POBLET",
+    "nivel3": "AYUNTAMIENTO DE QUART DE POBLET"
+  },
+  "sedeElectronica": "https://quartdepoblet.sedipualba.es/",
+  "codigoBDNS": "916502",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS ECONÓMICAS A PERSONAS PROPIETARIAS DE VIVIENDA HABITUAL EN SITUACION DE VULNERABILIDAD ECONÓMICA PARA EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL REGULADORA DE LAS BASES DE CONCESIÓN DE LAS SUBVENCIONES",
+  "urlBasesReguladoras": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485336,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOC APVH 2026.pdf",
+      "long": 840848,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485356,
+      "descripcion": "Certificado JGL Bases Reguladoras 25-06-2024",
+      "nombreFic": "Certificado_acuerdo_JGL_-_SEFYCU_5346199.pdf",
+      "long": 335642,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485345,
+      "descripcion": "Bases Reguladoras",
+      "nombreFic": "BASES_DEFINITIVAS_AE_PROPIETARIOS_-_SEFYCU_5206272.pdf",
+      "long": 512763,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485343,
+      "descripcion": "Certificado JGL aprobación convocatoria 26-05-2026",
+      "nombreFic": "Certificado acuerdo JGL 26-05-2026.pdf",
+      "long": 367099,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

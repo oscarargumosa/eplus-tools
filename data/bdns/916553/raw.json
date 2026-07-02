@@ -1,0 +1,76 @@
+{
+  "id": 1118114,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "DIRECCIÓN GENERAL DE AGRICULTURA Y GANADERÍA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916553",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Subv. 2026 a titulares de explotaciones agrarias para fomentar la participación en regímenes de calidad a titulares de explotaciones agrarias para fomentar la participación en regímenes de calidad de los alimentos. s/ Resolución de 30 de junio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Cultivos no perennes",
+      "codigo": "01.1"
+    },
+    {
+      "descripcion": "Cultivos perennes",
+      "codigo": "01.2"
+    },
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Decreto 75/2023, de 12 de julio, de bases reguladoras de las ayudas para promover la participación en los regímenes de calidad de los productos agrícolas y alimenticios en Extremadura y se efectúa la primera convocatoria para el ejercicio 2023",
+  "urlBasesReguladoras": "https://doe.juntaex.es/pdfs/doe/2023/1460o/23040144.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DIA SIGUIENTE AL DE SU PUBLICACIÓN EN EL DOE",
+  "textFin": "QUINCE DIAS NATURALES A CONTAR DESDE SU PUBLICACIÓN EN EL DOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485474,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución de 30 de junio de 2026, de la Secretaría General de la Consejería de Agricultura, Ganadería y Medio Natural, ayudas para promover la participación en los regímenes de calidad de los productos agrícolas y alimenticios en la CA Extremadura 20.PDF",
+      "long": 587791,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

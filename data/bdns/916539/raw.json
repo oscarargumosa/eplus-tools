@@ -1,0 +1,76 @@
+{
+  "id": 1118100,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916539",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22000000,
+  "mrr": false,
+  "descripcion": "Resolución EMT/ /2026, de de, por la que se abre la convocatoria de subvenciones para el año 2026 en relación con las actuaciones del programa Trabajo y Formación, para la participación de las entidades locales destinada a las personas de más de 52",
+  "descripcionLeng": "Resolució EMT/  /2026, de  de  , per la qual s'obre la convocatòria de subvencions per a l'any 2026 en relació amb les actuacions del programa Treball i Formació, per a la participació de les entitats locals destinada a les persones de més de 52 anys",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORDEN EMT/89/2024, de 24 de abril, por la que se aprueban las bases reguladoras para la concesión de subvenciones del Programa Trabajo y Formación (SOC - Trabajo y Formación).",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9152/2025723.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-17",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485443,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "SOC0692026_TRFO-EELL-MG52_2026_Resolució_2.pdf",
+      "long": 955602,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    },
+    {
+      "id": 1485442,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ES_SOC0692026_Resolució_TRFO-EELL_2026.pdf",
+      "long": 599128,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

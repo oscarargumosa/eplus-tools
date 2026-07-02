@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "916524",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE GUADALAJARA / DIPUTACIÓN PROVINCIAL DE GUADALAJARA",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "JG DE 29/06/2026 QUE APRUEBA LA CONVOCATORIA DE SUBVENCIONES PARA LA PROMOCIÓN Y FOMENTO DE LA ACTIVIDAD CULTURAL DE LAS BANDAS DE MÚSICA Y ASOCIACIONES MUSICALES DE LA PROVINCIA DE GUADALAJARA DURANTE EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 120000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916524",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boletin.dguadalajara.es/boletin/index.php/2-anuncios/60080-ORDENANZA-GENERAL-DE-SUBVENCIONES",
+  "text_inicio": "Dia siguiente a la publicación en el BOP",
+  "text_fin": "15 dias habiles desde el dia siguiente al de la publicacion en el bop",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.853Z"
+}

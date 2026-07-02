@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "916430",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DE GUADAÍRA / AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Acuerdo Junta de Gobierno Local, 26 de junio de 2026, aprobación convocatoria para la concesión de subvenciones en régimen de concurrencia competitiva para sufragar gastos realizados, a entidades locales que participan en competiciones federadas, 25/26.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-07-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916430",
+  "documents": [
+    {
+      "label": "Certificado Junta Gobierno Local",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipusevilla.es/bop/download-bop.pdf?id=319f2bec-9217-11eb-8dd2-0050569fe27b",
+  "text_inicio": "Desde el día siguiente de la publicación del extracto de la convocatoria en el BOP de Sevilla.",
+  "text_fin": "Hasta 20 días hábiles desde día siguiente publicación del extracto convocatoria en el BOP de Sevilla",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.830Z"
+}

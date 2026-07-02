@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-21",
   "deadlineModel": "two-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Environmental health\",\"Societal Engagement\",\"Hydrology, water and soil pollution\",\"Computer and information sciences\",\"Artificial Intelligence\",\"Urban water management\",\"Catchment scale water management\",\"Water quality monitoring\",\"Water cycle\",\"Digital services\",\"Pollution (water, soil), waste disposal and treatm\",\"Water systems monitoring\",\"Ocean sustainability and blue economy\",\"Integrated management of water\",\"Digital Agenda\",\"contaminants of emerging concerns\",\"digital twins\",\"combined sewer\",\"real-time monitoring\",\"risk-based management\",\"stakeholders engagement\",\"antimicrobial resistence\",\"modelling tools\",\"digital solutions\",\"sensors\",\"diffuse pollution\",\"system monitoring\",\"organic pollutants\",\"urban runoff\",\"artificial intelligence\",\"zero pollution\",\"river basin\",\"big data management\",\"integrated water quality monitoring\",\"storm water overflows\",\"water authorities\",\"EU water policy\",\"Harmonised monitoring framework\",\"urban water\",\"earth observation\",\"microplastics\"]"
+    "[\"Environmental health\",\"Societal Engagement\",\"Hydrology, water and soil pollution\",\"Computer and information sciences\",\"Artificial Intelligence\",\"Urban water management\",\"Catchment scale water management\",\"Water quality monitoring\",\"Water cycle\",\"Digital services\",\"Water systems monitoring\",\"Pollution (water, soil), waste disposal and treatm\",\"Ocean sustainability and blue economy\",\"Integrated management of water\",\"Digital Agenda\",\"contaminants of emerging concerns\",\"digital twins\",\"combined sewer\",\"real-time monitoring\",\"risk-based management\",\"stakeholders engagement\",\"antimicrobial resistence\",\"modelling tools\",\"digital solutions\",\"sensors\",\"system monitoring\",\"diffuse pollution\",\"organic pollutants\",\"urban runoff\",\"artificial intelligence\",\"zero pollution\",\"river basin\",\"big data management\",\"integrated water quality monitoring\",\"storm water overflows\",\"water authorities\",\"EU water policy\",\"Harmonised monitoring framework\",\"urban water\",\"earth observation\",\"microplastics\"]"
   ],
   "crossCuttingPriorities": [
     "SocietalEngagement",
@@ -29,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-ZEROPOLLUTION-02-1-two-stage.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.183Z"
+  "fetchedAt": "2026-07-02T04:03:18.659Z"
 }

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-09-19",
   "deadline": "2024-02-07",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Technology management\",\"Digital Agenda\",\"IPR management\",\"Industrial dynamics\",\"Social sciences and humanities\",\"Social Innovation\",\"Innovation management\",\"SME\",\"technology uptake\",\"start-up\",\"supply chain\"]"
+    "[\"Technology management\",\"Digital Agenda\",\"IPR management\",\"Industrial dynamics\",\"Social sciences and humanities\",\"Social Innovation\",\"Innovation management\",\"technology uptake\",\"SME\",\"start-up\",\"supply chain\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-RESILIENCE-01-41.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.127Z"
+  "fetchedAt": "2026-07-02T04:03:18.777Z"
 }

@@ -17,10 +17,9 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Terrorism\",\"Security\",\"Artificial Intelligence\",\"Digital Agenda\",\"Policy and Support\",\"Social sciences and humanities\",\"Real time data analytics\",\"Resilience aspects\",\"Critical infrastructure, emergency systems, securi\",\"Protection of areas and infrastructures\",\"Simulation for decision making (real time simulati\",\"Security Analysis\",\"privacy impact\",\"infrastructures\",\"public and private actors\",\"Earth Observation\",\"cloud data\",\"infrastructure networks\",\"big data\",\"infrastructure operation detection and response systems\",\"geolocation data\",\"smart cities\",\"real-time analysis\",\"supply-chain\",\"Security Union Strategy\",\"cyber-resilience\"]"
+    "[\"Terrorism\",\"Security\",\"Digital Agenda\",\"Policy and Support\",\"Social sciences and humanities\",\"Real time data analytics\",\"Resilience aspects\",\"Critical infrastructure, emergency systems, securi\",\"Security Analysis\",\"Protection of areas and infrastructures\",\"Simulation for decision making (real time simulati\",\"privacy impact\",\"infrastructures\",\"public and private actors\",\"cloud data\",\"Earth Observation\",\"infrastructure networks\",\"big data\",\"infrastructure operation detection and response systems\",\"geolocation data\",\"smart cities\",\"real-time analysis\",\"supply-chain\",\"Security Union Strategy\",\"cyber-resilience\"]"
   ],
   "crossCuttingPriorities": [
-    "AI",
     "DigitalAgenda",
     "SSH"
   ],
@@ -28,5 +27,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-INFRA-01-03.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.092Z"
+  "fetchedAt": "2026-07-02T04:03:18.693Z"
 }

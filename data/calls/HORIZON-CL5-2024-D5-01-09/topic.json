@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,12 +17,12 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Sustainable transport - general\",\"toolbox, impact assessment\",\"research policy\",\"aviation\",\"Synergies with Horizon Europe Partnerships (Clean Aviation, SESAR, Clean Hydrogen), EASA and Eurocontrol\"]"
+    "[\"Sustainable transport - general\",\"Synergies with Horizon Europe Partnerships (Clean Aviation, SESAR, Clean Hydrogen), EASA and Eurocontrol\",\"toolbox, impact assessment\",\"aviation\",\"research policy\"]"
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-09.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.077Z"
+  "fetchedAt": "2026-07-02T04:03:18.788Z"
 }

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-09-19",
   "deadline": "2024-02-07",
   "deadlineModel": "single-stage",
@@ -17,9 +17,10 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Other engineering and technologies\",\"Civil engineering\",\"Energy Efficiency\",\"Chemical engineering\",\"Industrial dynamics\",\"Social sciences and humanities\",\"Social Innovation\",\"Digital Agenda\",\"Environmental engineering\",\"regional planning\",\"energy efficiency\",\"Industry 5.0\",\"circular economy\",\"energy-intensive industries\",\"hubs for circularity\"]"
+    "[\"Other engineering and technologies\",\"Civil engineering\",\"Energy Efficiency\",\"Chemical engineering\",\"Industrial dynamics\",\"Co-programmed European Partnerships\",\"Social sciences and humanities\",\"Social Innovation\",\"Digital Agenda\",\"Environmental engineering\",\"regional planning\",\"energy efficiency\",\"Industry 5.0\",\"circular economy\",\"energy-intensive industries\",\"hubs for circularity\"]"
   ],
   "crossCuttingPriorities": [
+    "PART-COPROGR",
     "SSH",
     "SocInnov",
     "DigitalAgenda"
@@ -28,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-TWIN-TRANSITION-01-38.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.049Z"
+  "fetchedAt": "2026-07-02T04:03:18.830Z"
 }

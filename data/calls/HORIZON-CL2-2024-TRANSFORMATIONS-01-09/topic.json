@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-04",
   "deadline": "2024-02-07",
   "deadlineModel": "single-stage",
@@ -17,17 +17,17 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Social Innovation\",\"Social sciences and humanities\",\"Societal Engagement\",\"Social economics\",\"EOSC and FAIR data\",\"socioeconomic inclusion\",\"people with disabilities\",\"Care sector\",\"Social rights\",\"rural areas\",\"long-term care\",\"social exclusion disadvantaged groups\",\"HORIZON-CL2-2024-TRANSFORMATIONS-01-09\",\"European Pillar\",\"Social economy\",\"Pillar of Social Rights\"]"
+    "[\"Social Innovation\",\"Societal Engagement\",\"Social sciences and humanities\",\"EOSC and FAIR data\",\"Social economics\",\"people with disabilities\",\"socioeconomic inclusion\",\"Care sector\",\"rural areas\",\"Social rights\",\"long-term care\",\"social exclusion disadvantaged groups\",\"HORIZON-CL2-2024-TRANSFORMATIONS-01-09\",\"Social economy\",\"Pillar of Social Rights\",\"European Pillar\"]"
   ],
   "crossCuttingPriorities": [
     "SocInnov",
-    "SSH",
     "SocietalEngagement",
+    "SSH",
     "EoscAndFairData"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL2-2024-TRANSFORMATIONS-01-09.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.041Z"
+  "fetchedAt": "2026-07-02T04:03:18.642Z"
 }

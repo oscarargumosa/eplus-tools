@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "914699",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AGAETE / AYUNTAMIENTO DE AGAETE",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "AYUDAS ECONÓMICAS DE EMERGENCIA SOCIAL",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-06-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15403,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/914699",
+  "documents": [
+    {
+      "label": "Resolución 2026-736.  Aprobación de convocatoria ayuda de emergencia Cabildo",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Notificación resolución distribución de fondos 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.grancanaria.com/documents/150668/4213870/4.2a+Modelo+de+Convenio+2025+y+anexos+%281%29.pdf/30970f39-2ac4-f97a-f941-2a7152c73b96?t=1749801361712",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP.",
+  "text_fin": "Hasta el agotamiento de la dotación presupuestaria, cerrándose en todo caso el 16.10.2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.251Z"
+}

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-11-15",
   "deadline": "2024-03-19",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Physical sciences\",\"Quantum optics and quantum information\",\"Digital Agenda\",\"telecommunications\",\"quantum metrology\",\"quantum sensing\",\"navigation\",\"electronics industry\",\"security\",\"imaging and recognition\",\"industrialisation\",\"biology\",\"construction\",\"transportation\",\"RF sensing and processing\",\"health\",\"mining\",\"precise localisation and timing\",\"aerospace\",\"materials\",\"quantum technologies\",\"automotive\",\"radars energy\",\"high TRL\",\"prospection\",\"metrology\",\"energy transformation\"]"
+    "[\"Physical sciences\",\"Quantum optics and quantum information\",\"Digital Agenda\",\"quantum metrology\",\"telecommunications\",\"navigation\",\"electronics industry\",\"security\",\"imaging and recognition\",\"quantum sensing\",\"construction\",\"transportation\",\"biology\",\"industrialisation\",\"RF sensing and processing\",\"health\",\"mining\",\"materials\",\"precise localisation and timing\",\"aerospace\",\"quantum technologies\",\"automotive\",\"prospection\",\"metrology\",\"energy transformation\",\"radars energy\",\"high TRL\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-DIGITAL-EMERGING-01-45.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.101Z"
+  "fetchedAt": "2026-07-02T04:03:18.722Z"
 }

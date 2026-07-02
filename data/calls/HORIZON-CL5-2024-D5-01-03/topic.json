@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Sustainable transport - general\",\"Digital Agenda\",\"Co-programmed European Partnerships\",\"energy density\",\"scalability\",\"vehicle control units\",\"digital twin\",\"solid state cells\",\"cooling system concepts\",\"battery pack design\",\"fast-charging capabilities\",\"battery integration\",\"data communication\",\"access to battery information\",\"safety\",\"thermal management systems\",\"modularity\"]"
+    "[\"Sustainable transport - general\",\"Digital Agenda\",\"Co-programmed European Partnerships\",\"battery integration\",\"vehicle control units\",\"battery pack design\",\"digital twin\",\"scalability\",\"access to battery information\",\"safety\",\"thermal management systems\",\"solid state cells\",\"fast-charging capabilities\",\"energy density\",\"modularity\",\"data communication\",\"cooling system concepts\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda",
@@ -27,5 +27,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-03.json",
   "documents": [],
-  "fetchedAt": "2026-07-01T04:05:45.085Z"
+  "fetchedAt": "2026-07-02T04:03:18.786Z"
 }

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "916437",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CIUDAD AUTÓNOMA DE MELILLA / CONSEJERÍA DE MEDIO AMBIENTE Y NATURALEZA",
+  "nuts_codes": [
+    "ES64"
+  ],
+  "nuts_primary": "ES64",
+  "title": "BASES REGULADORAS Y CONVOCATORIA DE LA SUBVENCIÓN PARA LA RENOVACIÓN DE LA FLOTA DE EUROTAXIS 2026",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-07-01",
+  "open_date": null,
+  "deadline": "2026-07-17",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916437",
+  "documents": [
+    {
+      "label": "SOLICITUD DE SUBVENCIÓN PARA LA RENOVACIÓN EUROTAXI",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bomemelilla.es/",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOME",
+  "text_fin": "DIECISIETE DE JULIO DE DOS MIL VEINTISEIS",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-02T04:06:43.832Z"
+}
