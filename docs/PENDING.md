@@ -8,6 +8,20 @@
 
 ## 1 · En curso · bloqueadas en pre-requisito
 
+### TASK-011 — Payment & Design Capacity System
+**Status:** PLAN ESCRITO · esperando decisiones abiertas de Oscar (§11 del plan) para arrancar F1
+**Owner:** Local Claude (eplus-tools)
+**Doc canónico:** `docs/DESIGN_CAPACITY_SYSTEM.md`
+**Fecha plan:** 2026-07-02
+
+**Qué es:** modelo de cobro definitivo. El usuario compra **Design Capacity** (capacidad acumulada en € de presupuesto, no caduca), consumida por **banda presupuestaria** al pulsar "Activate Proposal" (= el launch actual). Supersede la mecánica del monedero 1% (`PRICING_v2_CREDITS.md`). Precios = los 3 paquetes de "Join the Club" (500k/1.200€ · 2M/4.000€ · 10M/15.000€).
+
+**Decisiones de arquitectura firmes:** saldo derivado (no almacenado) = `comprado − Σ bandas activadas + boosts` · hook único en `launchProject` (`intake/controller.js:142`) · 1 activación por proyecto (resubmissions no reconsumen) · bandas = importes lump-sum del catálogo · nivel = paquete más alto comprado · cobro real desacoplado (F1 con grant de admin).
+
+**Fases:** F1 núcleo sin cobro real (migración 121 + módulo `capacity/` + hook + admin grant + modal) → F2 dashboard/upgrade screens → F3 checkout real (pasarela + fiscal) → F4 gating niveles + School → F5 Professional Status (fuera de scope).
+
+**Bloqueante:** decisiones abiertas §11 (semántica de nivel, banda en budget-based, grandfathering, pasarela de pago, tramos/precio de boosts).
+
 ### TASK-007 — Diagnose & Improve (replanteo de Perfeccionar)
 **Status:** APROBADO el diseño · LISTO PARA EMPEZAR Fase 1
 **Owner:** Local Claude (eplus-tools)

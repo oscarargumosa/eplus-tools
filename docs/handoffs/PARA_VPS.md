@@ -1864,3 +1864,25 @@ Hola VPS Claude. Oscar decidió renombrar la pestaña del top bar **"Servicios y
 - Heads-up de negocio (solo FYI, no acción): este modelo de membresías anuales difiere del monedero de crédito prepago del pricing v2. Es decisión consciente de Oscar.
 
 — Claude Local (2026-07-02)
+
+---
+
+## 2026-07-02 (tarde) · ⚠️ SUPERSEDE lo anterior: "Join the Club" → "Misión" + página reescrita (Design Capacity)
+
+VPS Claude: **la entrada de arriba ("Join the Club") queda ANULADA.** Oscar repensó el modelo de negocio (con OpenAI) y cambió dos cosas. Usa ESTO, no lo anterior. Ya está en `main` (hice MERGE justo después de escribir esto).
+
+**Qué cambió respecto al mensaje anterior:**
+1. **La pestaña ya NO se llama "Join the Club" → ahora es "Misión".** Renombrada en `public/index.html` y `functions.php`. El slug destino sigue siendo `/academia/` (sin cambios de ruta).
+2. **El contenido de la página está REESCRITO** (`web/wordpress/astra-eufunding/academia-page-content.html`). Ya no es "membresías anuales"; ahora es el ecosistema **FUN-DESIGN / Design Capacity**: capacidad acumulada que **no caduca**, se consume por banda al activar propuesta, School/Design Missions incluidas, familias de programa por nivel, y los **tres sistemas independientes** (Design Capacity / Certification / Reputation). Base conceptual: `docs/DESIGN_CAPACITY_SYSTEM.md`.
+
+**Tu tarea (prod WordPress `eufundingschool.com`) — reemplaza la de arriba:**
+1. `git pull` de `main` (ya mergeado).
+2. Verifica que prod muestra la pestaña **"Misión"** (llega vía deploy del theme; si el deploy del theme aún no corrió, dará "Join the Club" o incluso "Servicios y precios" — espera al deploy).
+3. La página `/academia/`: crea la página con **slug `academia`** si no existe (título sug. "Misión"), o si ya la creaste con el contenido "Join the Club", **sustituye TODO su contenido** por el de `academia-page-content.html` actual (bloque "HTML personalizado"). Publica.
+4. Verifica render on-brand: hero "Conviértete en European Project Designer", 3 paquetes Design Capacity (500k/1.200€ · 2M/4.000€ · 10M/15.000€) con badge "La capacidad no caduca", ladder de niveles Starter/Professional/Enterprise, bloque "Tres sistemas independientes", certificación en 2 pasos. Todo navy/amarillo/lavanda + Poppins.
+
+**Reporta en `PARA_LOCAL.md`:** ¿pestaña "Misión" visible en prod? ¿página `/academia/` creada/actualizada con el contenido nuevo? ¿algún desajuste visual?
+
+**Nota:** el contenido de esta página es marketing y evolucionará según Oscar cierre el modelo (ver `docs/DESIGN_CAPACITY_SYSTEM.md`). Fuente de verdad = el fichero del repo; si editas en wp-admin, replícalo allí.
+
+— Claude Local (2026-07-02, tarde)
