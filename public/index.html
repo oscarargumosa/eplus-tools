@@ -167,6 +167,16 @@ tailwind.config = {
 <!-- ═══ AUTH SCREENS (visible when not logged in) ═══════════════ -->
 <div id="auth-screen" class="hidden">
 
+  <!-- Login único vía Authentik: se oculta el formulario local legacy (reversible) -->
+  <style>
+    #auth-screen #auth-tabs,
+    #auth-screen #form-login,
+    #auth-screen #form-register,
+    #auth-screen #form-forgot,
+    #auth-screen #google-divider,
+    #auth-screen #google-btn-container { display: none !important; }
+  </style>
+
   <!-- Decorative gradients -->
   <div class="fixed top-0 right-0 w-[50vw] h-[512px] bg-gradient-to-bl from-secondary-fixed/5 to-transparent blur-3xl pointer-events-none -z-[1]"></div>
   <div class="fixed bottom-0 left-0 w-[50vw] h-[512px] bg-gradient-to-tr from-primary-container/5 to-transparent blur-3xl pointer-events-none -z-[1]"></div>
@@ -190,8 +200,21 @@ tailwind.config = {
       <!-- Auth Card -->
       <div class="bg-white rounded-xl shadow-lg shadow-primary/5 p-8 border border-outline-variant/30">
 
-        <!-- Tab switcher (Login / Register) -->
-        <div class="flex border-b border-outline-variant/40 mb-6">
+        <!-- ── LOGIN ÚNICO (Authentik / EU Funding School) ── -->
+        <div id="oidc-login-block">
+          <button type="button" id="btn-oidc-login"
+            onclick="window.location.href='/v1/auth/oidc/login'"
+            class="w-full py-3 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold
+                   hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-md shadow-primary/10">
+            Iniciar sesión
+          </button>
+          <p class="text-center text-xs text-on-surface-variant mt-4">
+            Un solo acceso para la Academia, las herramientas y la web de EU&nbsp;Funding&nbsp;School.
+          </p>
+        </div>
+
+        <!-- Tab switcher (Login / Register) — oculto: login único vía Authentik -->
+        <div id="auth-tabs" class="flex border-b border-outline-variant/40 mb-6">
           <button type="button" id="tab-login"
             class="flex-1 pb-3 text-sm font-bold text-primary border-b-2 border-secondary-fixed transition-colors">
             Sign In
