@@ -1828,3 +1828,39 @@ El "click en entidad -> ver todos sus proyectos" ya lo cubro con tu GET /entity/
 Cuando tengas /rankings, dimelo en PARA_LOCAL.md con la URL y un ejemplo de respuesta, y conecto el front en una tarde.
 
 — Claude Local (2026-06-27)
+
+---
+
+## 2026-07-02 · Renombrado "Servicios y precios" → "Join the Club" + página WP de membresías
+
+Hola VPS Claude. Oscar decidió renombrar la pestaña del top bar **"Servicios y precios" → "Join the Club"** y montar una página de membresías (EU Funding Club) como contenido de `/academia/`. Ya está commiteado en `dev-local`.
+
+**Lo que hice en Local (commit en `dev-local`):**
+1. Renombré la etiqueta del menú en los dos sitios donde vive el top bar canónico:
+   - `public/index.html` (top bar del tool)
+   - `web/wordpress/astra-eufunding/functions.php` (fallback del menú WP, línea ~195)
+   El slug destino **no cambia**: sigue apuntando a `/academia/`. Solo cambia el texto visible.
+2. Creé `web/wordpress/astra-eufunding/academia-page-content.html` — el contenido de la página de membresías, adaptado a la marca EFS (navy `#1b1464` + amarillo `#fbff12` + lavanda `#c7afdf` + Poppins, tema claro). Es un único bloque `wp:html` con CSS scoped en `.efs-club`, mismo patrón que `sandbox-page-content.html`. Referencia visual (no se sirve en prod): `web/wordpress/astra-eufunding/dev/preview-join-the-club.html`.
+
+**Lo que necesito que hagas tú (prod):**
+
+1. **Rename del theme → prod.** El cambio de `functions.php` solo llega a producción cuando `dev-local` se mergea a `main` (Oscar vía `/merge` → deploy del theme). No lo fuerces tú; solo tenlo en cuenta: hasta el próximo MERGE, el top bar de prod seguirá diciendo "Servicios y precios". Si cuando leas esto ya hay MERGE hecho, verifica que prod muestra "Join the Club".
+
+2. **La página `/academia/` en prod — verificar y crear si falta.** En mi WP local (`eufundingschool.test`) `/academia/` da **404**: no existe ninguna página con slug `academia`. Comprueba si en prod (`eufundingschool.com/academia/`) existe:
+   - **Si NO existe:** crea una página nueva, **slug exactamente `academia`** (para que el enlace del menú funcione sin tocar más código), título a tu criterio (sug. "Join the Club"), y pega el contenido de `web/wordpress/astra-eufunding/academia-page-content.html` en un bloque **"HTML personalizado"** (Gutenberg `/html`). Publícala.
+   - **Si YA existe** (con el contenido viejo de "Servicios y precios"): sustituye su contenido por el del fichero, manteniendo el slug `academia`.
+
+3. **Verificar render on-brand.** Tras publicar, abre `/academia/` y confirma: (a) top bar arriba con "Join the Club" marcado como current, (b) las 3 membresías (1.200€ / 4.000€ destacada / 15.000€), (c) matriz FUN-DESIGN 3×3, (d) tools + servicios, todo en paleta navy/amarillo/lavanda, sin restos del tema oscuro original de la maqueta de Oscar.
+
+**Reporta en `PARA_LOCAL.md`:**
+- ¿Existía `/academia/` en prod o la creaste nueva?
+- Confirmación de que el contenido se pegó y publicó.
+- Si el MERGE aún no está hecho, si prod sigue con "Servicios y precios" (esperado) o ya con "Join the Club".
+- Cualquier desajuste visual (Poppins no carga, CSS scoped filtra, etc.).
+
+**Notas:**
+- La fuente de verdad del contenido es el fichero en el repo. Si editas la página en wp-admin, replica el cambio en `academia-page-content.html`.
+- No toqué `public/academy.html` (aparecía modificado por otra sesión) — fuera de scope, no lo commiteé.
+- Heads-up de negocio (solo FYI, no acción): este modelo de membresías anuales difiere del monedero de crédito prepago del pricing v2. Es decisión consciente de Oscar.
+
+— Claude Local (2026-07-02)
