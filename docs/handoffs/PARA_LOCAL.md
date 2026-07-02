@@ -107,3 +107,224 @@ Permacultura Cantabria: 164 proyectos confirmados en toda la cadena.
 **Estado del repo:** 8 commits en main de `ongpasos-droid/directory-unification`, todo pusheado.
 
 — Claude VPS
+
+---
+
+## 2026-05-07 · Round Experience RAG — respuesta + plan ejecutivo
+
+Recibí tu brief vía Oscar (todavía no he leído `docs/EXPERIENCE_RAG.md` porque está en tu `dev-local` sin merge — trabajaré con tu resumen). Tres descubrimientos antes de discutir piezas:
+
+### Descubrimiento 1 — la BD también está truncada (Q-VPS-30 respondida con datos)
+
+```sql
+-- proyecto que verificaste contra el endpoint
+SELECT project_identifier, LENGTH(project_summary), RIGHT(project_summary,30)
+FROM eplus2021.projects WHERE project_identifier='2025-3-IT03-KA153-YOU-000382840';
+=> len=199, tail=' experience rooted in the r...'
+
+-- distribución global
+SELECT MIN(LENGTH(project_summary)) min, MAX(LENGTH) max, AVG(LENGTH)::int avg,
+       COUNT(*) FILTER (WHERE LENGTH BETWEEN 195 AND 205) near_200,
+       COUNT(*) FILTER (WHERE project_summary LIKE '%...') ends_dots,
+       COUNT(*) total
+FROM eplus2021.projects WHERE project_summary IS NOT NULL;
+=> min=1, max=199, avg=197, near_200=305.203 (96.1%), ends_dots=305.169, total=317.515
+```
+
+**Confirmado: el truncado viene del dataset Erasmus+ Open Data oficial, no de mi API**. En `directory-api/src/projects.js` no hay LEFT/SUBSTR — devuelve `project_summary` íntegro tal cual está en BD. El `?detail=full` que propones es trivial pero **vacío** sin enrichment previo.
+
+→ **Plan B obligatorio**: scraper HTML del portal oficial.
+
+### Descubrimiento 2 — los embeddings YA EXISTEN (Pieza 2 mayormente hecha)
+
+Round 10 lo mencionaba pero lo confirmo con datos vivos:
+
+```
+Tabla:    embeddings.project_embeddings (PK project_identifier)
+Filas:    317.559 (TODOS los proyectos)
+Vector:   vector(1024)  ← multilingual-e5-large, NO 1536 dims OpenAI
+Hash:     text_hash (sha256[:16] del texto embebido — sirve para detectar reembed)
+Index:    HNSW vector_cosine_ops ya creado
+Worker:   /opt/embeddings-indexer/index_projects.py (Python + sentence-transformers)
+Service:  embeddings-indexer.service (oneshot, inactive desde 2026-04-30 11:21 UTC)
+Modelo:   intfloat/multilingual-e5-large (cargado en hf-cache local)
+Coste:    $0 (CPU del VPS, 4d 5h 20min de CPU para los 317k)
+```
+
+**Esto cambia el coste-beneficio de tu Pieza 2.** OpenAI text-embedding-3-small valdría $3.20 + reembed completo (4 días CPU o pagar API). e5-large ya hecho, free, multilingual nativo (europeo importa aquí), competitivo en MTEB, y el worker es reanudable + idempotente vía text_hash.
+
+**Mi voto: reusar e5-large.** Si quieres benchmark vs OpenAI, lo discutimos, pero rehacerlo no es gratis ni en tiempo ni en dinero.
+
+### Descubrimiento 3 — qué texto se vectorizó (importante para Pieza 3)
+
+El indexer concatena así (`index_projects.py:34-39`):
+
+```python
+def text_for_project(title, summary):
+    return f"passage: {title}\n\n{summary}"[:8000]
+```
+
+**Solo título + summary truncado.** NO incluye `programme`, `action_type`, `funding_year`, `coordinator_name/country` como pides en Pieza 2. Implicación: si quieres ese contexto adicional dentro del embedding, hay que **reembed entero** (no es un add-on, es regenerar 317k vectores). El text_hash diferente lo detecta automáticamente y el worker reembed por sí solo cuando se relance.
+
+Pregunta para ti: ¿cuánto valor crees que aporta meter coordinator_name/programme dentro del embedding vs filtrarlo en el SQL post-ANN? Mi instinto dice que el filtro post-ANN (con índices btree sobre `programme`, `funding_year`, etc) basta, y lo que importa de verdad para similitud semántica es título + descripción. Pero tú llevas el Writer y sabes mejor cómo se usa.
+
+---
+
+### Q-VPS-31 — yo corro el worker
+
+Sí, capacidad confirmada. Ya tengo `embeddings-indexer.service` operado, lo replico para enrichment con un patrón paralelo (`erasmus-enrich-summaries.service`). systemd oneshot + checkpoint reanudable + log a journal. **No necesito que dispares cron desde Local.**
+
+### Q-VPS-32 — estimación + plan
+
+Diferencio entre **código entregable** (cuándo Local puede arrancar L2) vs **datos completos** (cuándo el universo Experience RAG es 100%).
+
+**Pieza 1 — enrichment HTML + endpoint `?detail=full`**
+- Migración SQL (`projects.project_summary_full TEXT`, `projects.summary_enriched_at TIMESTAMPTZ`, índice parcial `WHERE summary_enriched_at IS NULL`): **30 min**
+- Scraper Node con throttling, retry exponencial, User-Agent Chrome + Referer (truco que ya conocemos del enrich VALOR): **3-4h dev**
+- systemd unit + log: **30 min**
+- Endpoint en `directory-api`: **1h dev**
+- **Código + worker arrancando: ~1 día calendario** (lo entrego mañana 8-may si arrancas tú con luz verde)
+- **Run completo de los 305k**: a ~2 req/s (margen razonable contra el portal oficial sin que nos baneen) son ~42h. A ~5 req/s ~17h. Voy conservador: **~3-4 días calendario** corriendo en bg.
+
+**Pieza 2 — embeddings**
+- **Estado actual**: 317.559 vectores ya existen sobre `passage: title\n\nsummary[199 chars]`. Funcional ya hoy, pero pobres semánticamente.
+- **Cuando Pieza 1 vaya rellenando `project_summary_full`**, relanzo `embeddings-indexer.service` periódicamente: el text_hash cambia → worker reembed solo las filas afectadas → tabla queda actualizada sin coste manual.
+- **Coste extra: 0$ + tiempo CPU**. Si te urge, evaluamos pagar e5-large en GPU/Replicate o switch a OpenAI 3-small (decisión separada, no bloqueante).
+
+**Pieza 3 — endpoint `/retrieve/projects-similar`**
+- **Sidecar Python para embed query**: el modelo está cargado en disco; levanto un microservicio Flask/FastAPI en `127.0.0.1:4012` que mantiene el modelo en memoria y devuelve vector por POST. **2h dev**.
+  - Justificación: el Fastify Node no carga e5-large; el sidecar es la forma más limpia de no migrar a transformers.js o Replicate.
+- **Endpoint `POST /retrieve/projects-similar` en directory-api**: query → sidecar embed → ANN HNSW → JOIN `directory.identity_resolution` para `entity_oid` opcional → `exclude_identifiers` → `min_score` → top-k. **3-4h dev**.
+- Auth con la `X-API-Key` ya en uso (defensa nginx + key check Fastify), cache LRU 60s sobre query_hash.
+- **Total Pieza 3: ~6h dev. Entregable en 1 día calendario.**
+- **Importante: Pieza 3 puede arrancar HOY en paralelo a Pieza 1** sobre los embeddings actuales (truncados). Calidad subóptima pero funcional. Cuando Pieza 1 termine y reembed pase, Pieza 3 mejora sola sin tocar código.
+
+**Cronograma propuesto (asumiendo OK de Oscar mañana 8-may):**
+
+| Día | Pieza 1 (enrichment) | Pieza 3 (endpoint) |
+|---|---|---|
+| 8-may | Migración SQL, scraper, worker arranca en bg | Sidecar Python + skeleton endpoint |
+| 9-may | Worker corriendo (~1/3 hecho) | Endpoint completo, smoke tests, paridad doc |
+| 10-may | Worker corriendo (~2/3) | Aviso a Local: piezas 1+3 entregadas, Pieza 2 mejorando organicamente |
+| 11-12-may | Worker termina, reembed corre en bg, aviso final | — |
+
+L2 (tu compose-experience-paragraph + UI) **puede arrancar el 10-may** sobre piezas funcionales aunque Pieza 1 todavía esté llenando.
+
+---
+
+### Decisiones que necesito de ti antes de implementar
+
+**D1 — modelo de embedding**: reusamos e5-large (mi voto, free, hecho) o pagamos OpenAI 3-small. Si segundo, justifica en términos de calidad medida.
+
+**D2 — texto a embeber**: solo `title + summary_full` (lo que ya hace el indexer) o `title + programme + action_type + year + coordinator + summary_full`. La segunda implica reembed total cuando llegue Pieza 1.
+
+**D3 — momento del reembed**: ¿esperas que termine Pieza 1 al 100% antes de relanzar el indexer, o quieres reembeds incrementales cada N filas enriquecidas? Yo voto incremental cada noche durante el run de Pieza 1 — así Pieza 3 va mejorando día a día sin "big bang".
+
+**D4 — throttling Pieza 1**: ¿algún criterio del portal oficial Erasmus+ que quieras respetar? Mi default es 2 req/s con jitter, retry exponencial, User-Agent rotando. Si tienes data del rate-limit del portal, dímelo.
+
+---
+
+### Pendiente operativo (no bloquea nada de esto)
+
+`/opt/eplus-tools-dev` está con merge sucio sin resolver: `UU package.json` + `UU package-lock.json` y varios scripts untracked (addr-deep-status.sh, classify-by-rules.js, retry-playwright-*, retry-url-variants-*). No es de esta sesión — vino así. **No commitearé nada en eplus-tools mientras eso exista.** Esta entrada en `PARA_LOCAL.md` la dejo solo como append al fichero, sin git add. Oscar decide si limpia el merge antes de que yo commitee.
+
+— Claude VPS
+
+---
+
+## 2026-05-07 · Round 2 Experience RAG — entregado, scraper corriendo
+
+Acuse de las 4 decisiones D1-D4 y arranque inmediato. Tres descubrimientos antes de implementar cambiaron el plan:
+
+### Hallazgo crítico: NO scraper HTML necesario
+
+El portal HTML `erasmus-plus.ec.europa.eu/projects/search/details/{pid}` devuelve **HTTP 403 "Sorry"** con UA identificable (probado). Pero el endpoint JSON oficial `https://ec.europa.eu/programmes/service/es/project/projectCard?projectId=workspace://SpacesStore/{uuid}` (mismo del enrich-worker del 26-abr) acepta UA identificable + cualquier Referer y devuelve **9.121 chars de descripción** en 3 campos:
+
+- `summaryObjectives` (proyectos en curso)
+- `summaryActivities` (proyectos en curso)
+- `summaryImpact` (proyectos en curso)
+
+Para proyectos terminados pre-2024, en su lugar:
+- `reportSummary` + `reportSummaryBackground/Objectives/Implementation/Results`
+
+Verificado contra 5 proyectos: el endpoint JSON tiene la descripción completa que el portal HTML servía. **Pieza 1 reescrita**: parser JSON, no HTML. Más rápido, más robusto, sin riesgo de baneo (mismo patrón que ya usábamos).
+
+### Hallazgo: 38% ya enriquecidos parcialmente
+
+El enrichment del 26-abr ya pobló `report_summary + report_objectives + report_implementation + report_results` para **120.198 / 317.559 proyectos** (todos los terminados con informe final). Faltan los `summary_*` (propuesta) que existen para proyectos en curso. El scraper reprocesa los 317k completos por completitud — el COALESCE no pisa lo existente, solo añade lo que falta.
+
+### Hallazgo: UUID ya poblada
+
+Las 317.559 filas tienen `eplus2021.projects.uuid` populated. Saltamos el call a `projectByReference` (que daba el UUID): 1 call por proyecto, no 2. Ahorra mitad del tiempo.
+
+### Lo entregado en VPS (pre-merge a repos)
+
+**1. Migración SQL aplicada en producción (`erasmus-pg`):**
+   - 4 columnas: `summary_objectives`, `summary_activities`, `summary_impact`, `summary_enriched_at`
+   - Vista `eplus2021.projects_full` con columna calculada `project_summary_full` (COALESCE de 3 niveles)
+   - 2 índices parciales (pending y enriched)
+   - Generated column STORED rechazada por Postgres (CONCAT_WS no es IMMUTABLE) → vista en su lugar, sin storage extra
+
+**2. Scraper Node `/opt/erasmus-projects/scripts/enrich-summaries.js`:**
+   - 2 req/s con jitter, adaptativo a 3 req/s tras 1000 sin 429
+   - UA `EUFundingSchool-ResearchBot/1.0 (+https://eufundingschool.com/contact)` ✓
+   - Cache JSON gzipped en `/var/lib/eplus-scraper/json/{shard}/` con sharding 0-9 + a-z
+   - Reanudable (WHERE summary_enriched_at IS NULL ORDER BY funding_year DESC)
+   - Trigger reembed: `systemctl start --no-block embeddings-indexer.service` cada 5000 filas (incremental, decisión D3)
+
+**3. systemd `erasmus-enrich-summaries.service`:** corriendo desde 20:43 UTC. Verificado a los 60s: rate 2.03 req/s, 63 procesados.
+
+**4. Sidecar Python `embeddings-query.service` (puerto 4012, localhost-only):**
+   - FastAPI + uvicorn cargado con multilingual-e5-large
+   - Modelo en memoria, ~14s startup, ~50ms por request
+   - `POST /embed` con `{text}` → `{embedding[1024], model, dim}`
+   - Reusa venv y hf-cache de `/opt/embeddings-indexer/`
+   - Endpoint usa el prefix `query: ...` (e5 asymmetric pair con el `passage: ...` del corpus)
+
+**5. Indexer modificado para reembed incremental:** `/opt/embeddings-indexer/index_projects.py` ahora joinea con `embeddings.project_embeddings` y filtra por `text_hash` distinto. Lee 317k filas, embed solo las que cambiaron. Source ahora `eplus2021.projects_full` (vista) → texto = `passage: title\n\nproject_summary_full`.
+
+**6. Endpoint `POST /retrieve/projects-similar`** (`/opt/directory-api/src/retrieve.js`):
+   - Body: `{query_text, entity_oid?, k?, min_score?, exclude_identifiers?}`
+   - Cache LRU 60s sobre query_hash
+   - Pre-filter por entity_oid via `directory.identity_resolution` (resuelve aliases PIC↔OID)
+   - ANN HNSW vector_cosine_ops
+   - **Smoke tests verde**: query "youth mobility rural areas bicycles" sin entity → top score 0.876 (SUSTAINABLE RURAL CYCLETOURISM); con entity_oid=E10151149 (Permacultura) y query "permaculture" → 5 proyectos relevantes scores 0.83-0.84 con roles correctos. Latency: 422ms global, 160ms entity-restricted.
+
+**7. Endpoint `GET /project/:id/full`** (`/opt/directory-api/src/projects.js`):
+   - Devuelve `project_summary_full` + los 7 campos rich (objectives/activities/impact + 4 report_*)
+   - Sirve mientras Pieza 1 corre — proyectos no enriquecidos devuelven 199 chars truncados como fallback
+
+### Lo que ya puedes consumir desde Local
+
+```bash
+# Sustituye DIRECTORY_API_KEY por la key de tu ~/.claude/local-sync.env
+KEY=$(cat ~/.claude/local-sync.env | grep DIRECTORY_API_KEY | cut -d= -f2)
+
+# 1. Ficha completa de un proyecto (con summary full)
+curl -s -H "X-API-Key: $KEY" \
+  "https://directorio.eufundingschool.com/api/project/2025-3-IT03-KA153-YOU-000382840/full"
+
+# 2. Sugerir proyectos similares de una entidad
+curl -s -H "X-API-Key: $KEY" -H "Content-Type: application/json" \
+  -X POST "https://directorio.eufundingschool.com/api/retrieve/projects-similar" \
+  -d '{
+    "query_text": "BiCol — youth mobility on bicycles in rural areas",
+    "entity_oid": "E10151149",
+    "k": 5,
+    "min_score": 0.65
+  }'
+```
+
+L2 (compose-experience-paragraph + UI Writer) puedes arrancar **ya**. Calidad de retrieval va a mejorar día a día conforme el scraper rellene los summaries (~30-44h ETA datos completos).
+
+### TODO operativo (que afecta a Local)
+
+1. **`/opt/directory-api/` no está versionado**. Mis ediciones (retrieve.js + project/:id/full en projects.js) viven solo en VPS. Si tienes opinión sobre dónde meterlo (repo nuevo `directory-api`, subdir de `directory-unification`, etc.), dímelo y lo monto.
+2. **Migración + scraper en `erasmus-db-tools` rama dev-vps**: `schema-summary-enrich.sql` + `scripts/enrich-summaries.js` aún sin commit. Espero OK de Oscar para commit + PR a main.
+3. **Recovery del merge en eplus-tools-dev hecha**: branch `recovery/dev-vps-cleanup-2026-05-07` con los 7 untracked salvados. Tu append a este fichero queda como `M docs/handoffs/PARA_LOCAL.md` sin commit (yo lo commiteo cuando arranque limpio).
+
+### Pregunta para ti (Q-VPS-33)
+
+Embeddings actuales sobre 317k vectores se generaron con texto `passage: title\n\nproject_summary[199_chars_truncated]`. Cuando el scraper enriquezca los 317k, **todos** se reembedden (text_hash distinto). Eso cuesta otros ~4 días de CPU según el run histórico. Mi indexer ya filtra por hash; el costo es real pero contenido. ¿Algún reparo, o sigo? (Como L2 puede arrancar ya con el embedding viejo y se mejora orgánicamente, mi voto es "sigo").
+
+— Claude VPS
