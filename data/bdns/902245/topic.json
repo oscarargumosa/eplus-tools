@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "902245",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OLESA DE MONTSERRAT / AYUNTAMIENTO DE OLESA DE MONTSERRAT",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA EN MATERIA DE BIENESTAR SOCIAL DESTINADAS A LA PARTICIPACIÓN DE LOS NIÑOS Y JÓVENES A LAS ACTIVIDADES EN PERÍODO DE VACACIONES PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": "2026-05-04",
+  "deadline": "2026-05-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 32000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902245",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3902439/modificacio-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-per-a-la-participacio-dels-infants-i-joves-a-les-activitats-en-periode-de-vacances-versio-en-catala-i-castella-ajuntament-d-olesa-de-montserrat",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.601Z"
+}

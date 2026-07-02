@@ -1,0 +1,80 @@
+{
+  "id": 1100375,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBACETE",
+    "nivel3": "AYUNTAMIENTO DE ALBACETE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898814",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1600,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DEL XXIII CERTAMEN LITERARIO DE POESIA Y PROSA PARA PERSONAS MAYORES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES421 - Albacete"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases del Certamen Literario de Poesía y Prosa para personas mayores",
+  "urlBasesReguladoras": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/256620",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto en el BOP Albacete",
+  "textFin": "30 días naturales desde la publicación del extracto en el BOP Albacete",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435203,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "31- ACUERDO JGL 26-MARZO-2026 (PARTICIPACION) - SEFYCU 5903197.pdf",
+      "long": 254133,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435209,
+      "descripcion": "MODIFICACION BASES GENERALES",
+      "nombreFic": "BOP 26-20-P-12.pdf",
+      "long": 231720,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435204,
+      "descripcion": "TEXTO INTEGRO DE LA CONVOCATORIA",
+      "nombreFic": "Convocatoria del XXIII Certamen Literario de Poesía y Prosa - SEFYCU 5875897.pdf",
+      "long": 523625,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

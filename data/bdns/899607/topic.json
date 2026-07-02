@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "899607",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GODELLA / AYUNTAMIENTO DE GODELLA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Resolución Nº 417 de 16_04_2026 _RESOLUCIÓN APROBACIÓN BASES CONCURSO ALMUERZOS GODELLA 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": "ttps:// sede.godella.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899607",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.godella.es/tablondeanuncios/",
+  "text_inicio": "a partir del día siguiente de la publicación en el BOP",
+  "text_fin": "10 días hábiles desde publicación en  BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209237,
+      "titulo": "Convocatoria del Concurso de Almuerzos de Godella 2026",
+      "tituloLeng": "Convocatòria del Concurs d'Esmorzars de Godella 2026",
+      "texto": "<p>Dirigido: Locales de hostelería del término municipal de Godella.</p><p>Objeto: Concurso de almuerzos de Godella para promover la hostelería local entre la ciudadanía del municipio de Godella.</p><p>Premios: Único (400 €).</p><p>(Consultar bases integras en Sede Electrónica - Ayuntamiento de Godella).</p>",
+      "textoLeng": "<p>Dirigit: Locals d'hostaleria del terme municipal de Godella.</p><p>Objecte: Concurs d'esmorzars de Godella per a promoure l'hostaleria local entre la ciutadania del municipi de Godella.</p><p>Premis: Únic (400 €).</p><p>(Consultar bases integres en Seu Electrònica - Ajuntament de Godella).</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04603&lang=es",
+      "cve": "BOPV-2026/04603",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.168Z"
+}

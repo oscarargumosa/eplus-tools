@@ -1,0 +1,15 @@
+## Expected Impact
+
+The results of the activities should contribute to support common procurement, leading to strengthening the cooperation among Member States and associated countries, as well as to greater interoperability. Furthermore, they should contribute to the building up of strategic stockpile of ammunition, missiles, including their components, or to the increase of existing ones, as well as to the development of low-cost unmanned systems for guided strikes adapted to modern warfare scenarios.
+
+## Objective
+
+This topic aims at actions supporting the common procurement of ammunition (including small arms ammunition, tank and anti-tank ammunitions, artillery ammunition, guided ammunitions), missiles (all types of missiles) and other explosive weapons (including hand grenade, land and naval mines, mortar, rockets, unmanned systems (aerial, ground, surface and underwater vehicles controlled remotely or operating autonomously using advanced software and sensors) able to perform guided strikes (including attack or kamikaze drones, FPV loitering munitions), torpedoes), or parts thereof, contributing to replenishment of stocks.
+
+## Scope
+
+Common procurement actions under this topic shall consist of activities related to the cooperation of legal entities in the procurement of ammunition, missiles, and other explosive weapons, at any point in the life cycle of such defence products, including for the purpose of establishing, managing and maintaining defence industrial readiness pools. Where relevant (e.g. unmanned systems for guided strikes), procurement contracts are expected to include provisions allowing to rapidly upgrade the procured systems based on evolving lessons identified from the battlefield.
+
+To achieve the expected impact, the estimated value of a common procurement proposed for actions under this topic shall be of at least EUR 20 000 000 aiming to commonly procure defence products to fill the capability gaps and reinforce cooperation among Member States and associated countries. The procurement shall be based on a binding agreement to be signed by the participating Member States and associated countries with a procurement agent appointed by those Member States and associated countries. Such procurement agent may be contracting authorities of Member States or associated countries, the European Defence Agency (EDA), a Structure for European Armament Programme (SEAP) or other international organisation, including the Organisation for Joint Armament Cooperation (OCCAR) or the NATO Support and Procurement Agency (NSPA). The cooperation shall be newly created in the context of the application to the call topic or based on an existing framework, provided that the activities under such cooperation framework did not start before 5 March 2024 and have not been completed before the signature of the grant agreement. Eligible actions are common procurement of systems, parts thereof or variants of systems. The common procurement can be organised as a framework contract.
+
+Actions shall be completed no later than 31 December 2033.

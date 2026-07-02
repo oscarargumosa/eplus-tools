@@ -1,0 +1,63 @@
+{
+  "id": "LS.5",
+  "code": "UD-LS.5",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "G — Presupuesto",
+  "title": "Los tramos del lump sum, la cofinanciación y el principio de no-beneficio",
+  "subtitle": "Qué importes puedes elegir, por qué la UE no paga el 100 % del proyecto y qué pasa con el dinero que sobra al final.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "3.2 y 3.3 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "No sabes qué importe pedir, te da miedo «pasarte» o «quedarte corto», y te angustia la idea de tener que devolver dinero si al final del proyecto sobra algo del presupuesto.",
+    "comprender": "Que el importe no se inventa (eliges un tramo de una lista cerrada), que la UE nunca cubre el 100 % del coste real (cofinanciación) y que en lump sum no se controla el «beneficio»: lo que sobra, si completaste todo, te lo quedas.",
+    "objetivo": "Elegir el tramo correcto para tu acción, explicar la cofinanciación sin presupuesto detallado y entender por qué no tienes que devolver fondos no gastados si cumpliste.",
+    "confusion": "Creer que tienes que demostrar con facturas o un presupuesto cerrado que el proyecto «cuesta» más que la subvención, y temer que te reclamen el dinero sobrante como si fuera un beneficio ilícito.",
+    "importa": "Porque los evaluadores tienen que convencerse de que el valor de tus actividades supera el lump sum: si la descripción no transmite ese valor, el tramo parece injustificado y pierdes puntos."
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "kind": "content",
+      "title": "1. Por dónde empieza el dinero: eliges, no inventas",
+      "html": "<p>En el modelo a tanto alzado (<em>lump sum</em>) de KA2 no rellenas una cifra a mano. La Comisión publica en la <b>Guía del Programa</b> una lista cerrada de importes predefinidos, y tú <b>eliges uno</b> según el tipo de acción que vas a presentar. Ni más, ni menos, ni una cifra intermedia: solo los valores de la tabla.</p><p>Esto tiene una ventaja enorme: te quita de encima la angustia de «calcular el presupuesto justo». La conversación deja de ser <em>cuánto cuesta</em> y pasa a ser <em>qué tramo encaja con el trabajo que vas a hacer</em>. Vamos a ver primero los tramos exactos y luego dos principios que casi nadie entiende a la primera: la <b>cofinanciación</b> y el <b>no-beneficio</b>.</p>"
+    },
+    {
+      "id": "tramos",
+      "kind": "content",
+      "title": "2. La tabla de tramos exacta",
+      "html": "<p>Estos son los importes predefinidos por tipo de proyecto, tal cual aparecen en la Guía del Programa. No hay valores intermedios: eliges <b>uno</b> de la lista que corresponda a tu acción.</p><div class=\"tiers\"><div class=\"tier\"><span class=\"tier-tag\">Small-scale Partnerships (KA210)</span><div class=\"tier-vals\"><b>30.000 €</b><span>o</span><b>60.000 €</b></div></div><div class=\"tier\"><span class=\"tier-tag\">Cooperation Partnerships (KA220)</span><div class=\"tier-vals\"><b>120.000 €</b><span>·</span><b>250.000 €</b><span>·</span><b>400.000 €</b></div></div><div class=\"tier\"><span class=\"tier-tag\">European Partnerships for School Development</span><div class=\"tier-vals\"><b>400.000 €</b><span>(fijo)</span></div></div></div><table><thead><tr><th>Acción</th><th>Tramos disponibles</th></tr></thead><tbody><tr><td>Small-scale Partnerships</td><td>30.000 € · 60.000 €</td></tr><tr><td>Cooperation Partnerships</td><td>120.000 € · 250.000 € · 400.000 €</td></tr><tr><td>European Partnerships for School Development</td><td>400.000 € (importe único)</td></tr></tbody></table><div class=\"callout callout-key\">Las <b>European Partnerships for School Development</b> no eligen tramo: tienen un <b>único importe fijo de 400.000 €</b>. Las otras dos acciones sí escogen entre las opciones de su fila.</div>"
+    },
+    {
+      "id": "cofinanciacion",
+      "kind": "content",
+      "title": "3. Cofinanciación: la UE no paga el 100 %",
+      "html": "<p>Todas las subvenciones financiadas con el presupuesto de la UE cumplen el <b>principio de cofinanciación</b>. En cristiano: la subvención <b>no aporta el total de los recursos</b> necesarios para llevar a cabo el proyecto. Se da por hecho que tu organización y tus socios ponen también algo de su parte (tiempo, estructura, recursos propios).</p><p>Ahora viene lo importante, y lo que más alivia: <b>no tienes que demostrar esa cofinanciación con un presupuesto detallado.</b> No hay que enseñar facturas ni rellenar tablas de gasto que prueben que el proyecto «cuesta más» que la ayuda.</p><div class=\"callout callout-good\">El cumplimiento de la cofinanciación se valora <b>a partir de la descripción de las actividades</b>, no de un presupuesto de costes.</div><p>¿Y entonces cómo se comprueba? Así: <b>los evaluadores deben quedar convencidos de que el valor de las actividades planificadas es mayor que el lump sum predefinido.</b> Si describes un trabajo ambicioso, real y bien dimensionado, el evaluador «ve» que ese trabajo vale más que la cifra que pides, y la cofinanciación queda implícita.</p><div class=\"callout callout-key\">Traducción para tu redacción: <b>tu descripción de actividades ES la prueba de la cofinanciación.</b> Cuanto más concreto y valioso parezca lo que vas a hacer, más fácil le pones al evaluador convencerse de que el proyecto vale más que el importe solicitado.</div>"
+    },
+    {
+      "id": "noprofit",
+      "kind": "content",
+      "title": "4. No-beneficio: el dinero que sobra es tuyo (si cumpliste)",
+      "html": "<p>En los proyectos de costes reales existe el <b>principio de no-beneficio</b>: no puedes «ganar dinero» con la subvención, y si sobra, se devuelve. Mucha gente arrastra ese miedo al lump sum. La buena noticia:</p><div class=\"callout callout-good\">Según la Guía del Programa, la <b>verificación del principio de no-beneficio NO se aplica</b> a los proyectos financiados con lump sum.</div><p>¿Por qué? Porque el importe se <b>fija en el momento de la solicitud</b> y su idoneidad <b>no puede cuestionarse después</b> con controles posteriores. Durante el reporting y los controles, el importe solo puede discutirse en función de <b>la entrega y la calidad de los resultados acordados</b>, no del gasto. La propia forma de aprobar el presupuesto ya garantiza el no-beneficio, sin necesidad de volver a verificarlo.</p><p>La consecuencia práctica es la que te quita el miedo:</p><div class=\"callout callout-key\">Si el proyecto se implementa <b>por completo</b> pero al terminar <b>sobran fondos</b>, <b>NO tienes que devolverlos</b>. No se consideran beneficio, <b>siempre que se completen todos los work packages aprobados y se logren los resultados.</b></div><p>Es decir: el «ahorro» bien gestionado se queda contigo. Lo único que se paga contra resultados es el cumplimiento de los WP, no el detalle de en qué te gastaste cada euro.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Puedo pedir una cifra intermedia que me cuadre.»</b> → No: solo existen los importes de la tabla. Eliges uno cerrado, no inventas.</li><li><span class=\"err-x\">✗</span> <b>«Tengo que demostrar con un presupuesto detallado que el proyecto cuesta más que la ayuda.»</b> → No: la cofinanciación se valora por la <em>descripción de actividades</em>, no por facturas ni tablas de gasto.</li><li><span class=\"err-x\">✗</span> <b>«European Partnerships for School Development puede elegir entre varios tramos.»</b> → No: tiene un importe único y fijo de 400.000 €.</li><li><span class=\"err-x\">✗</span> <b>«Si me sobra dinero al final tendré que devolverlo.»</b> → No, si completaste todos los WP y lograste los resultados: el sobrante no se considera beneficio y te lo quedas.</li><li><span class=\"err-x\">✗</span> <b>«Cuanto más alto el tramo, mejor nota.»</b> → No: el evaluador debe creer que el <em>valor de las actividades</em> supera el lump sum; un tramo inflado sin trabajo que lo respalde resta puntos.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026)</td><td>Sección <b>3.2</b> (importes del lump sum y tabla de tramos) y sección <b>3.3</b> (cofinanciación y principio de no-beneficio).</td></tr></tbody></table>"
+    }
+  ]
+}

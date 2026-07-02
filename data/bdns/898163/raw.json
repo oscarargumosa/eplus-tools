@@ -1,0 +1,183 @@
+{
+  "id": 1099724,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE MURCIA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/murcia",
+  "codigoBDNS": "898163",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 104860,
+  "mrr": false,
+  "descripcion": "Convocatoria Programa PYME INNOVA 2026 - Cámara Murcia",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convocatoria PYME INNOVA 2026",
+  "urlBasesReguladoras": "https://www.camaramurcia.es/programa-pyme-innova-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-21",
+  "fechaFinSolicitud": "2026-06-15",
+  "textInicio": "A las 9:00h, transcurridos 5 días hábiles desde el día siguiente a la publicación en el BORM",
+  "textFin": "15 de junio de 2026 a las 14:00h, o cuando se agote el presupuesto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433069,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Convocatoria Pyme Innova_ORDINARIA_Murcia.pdf",
+      "long": 264970,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1433073,
+      "descripcion": "Anexo III Declaración responsable empresa",
+      "nombreFic": "2026_Anexo III Declaración responsable empresa Pyme Innova_v2.pdf",
+      "long": 337880,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1433072,
+      "descripcion": "Anexo II Tipología y Justificación de Gastos Elegibles Fase II",
+      "nombreFic": "2026_Anexo II Tipología y Justificación de Gastos Elegibles Fase II.pdf",
+      "long": 413360,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1433070,
+      "descripcion": "Anexo I Descripción Pyme Innova",
+      "nombreFic": "2026_Anexo I Descripción Pyme Innova.pdf",
+      "long": 273987,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208546,
+      "titulo": "Programa PYME INNOVA 2026 - Cámara Murcia",
+      "tituloLeng": null,
+      "texto": "<p>La Cámara de Comercio, Industria, Servicios y Navegación de Murcia informa de la Convocatoria Pública de ayudas para el desarrollo de Planes de implantación de soluciones innovadoras en el marco del Programa Pyme Innova, cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER) de la Unión Europea.</p><p>Primero– Beneficiarios</p><p>Pymes de la demarcación territorial de la Cámara de Comercio de Murcia, que se encuentren dadas de alta en el Censo del IAE.</p><p>Segundo– Objeto</p><p>Promover la participación de las pymes en el Programa Pyme Innova para desarrollar planes de implantación de soluciones innovadoras, subvencionados en un 60% a través del Programa Plurirregional de España FEDER 2021-2027 (POPE).</p><p>Tercero– Convocatoria</p><p>El texto completo de esta convocatoria está a disposición de las empresas en la sede electrónica de la Cámara de Murcia. Además, puede consultarse a través de la web https://www.camaramurcia.es/programa-pyme-innova-2026  </p><p>En dicha dirección podrá descargarse, junto con la convocatoria, la documentación necesaria para realizar la solicitud.</p><p>Cuarto– Cuantía</p><p>La cuantía total de las ayudas económicas para pymes a otorgar con cargo a esta convocatoria de 62.916,00 €, sobre un presupuesto de 104.860,00 € para la ejecución de la Fase II de Implantación por parte de las pymes beneficiarias.</p><p>La cuantía máxima de ayuda por empresa será de 4.494,00 € sobre un presupuesto máximo elegible de 7.490,00 € (7.000,00 € de coste directo + 490,00 € de costes indirectos asociados), que será prefinanciado en su totalidad por la empresa beneficiaria y cofinanciado posteriormente por FEDER en un 60%.</p><p>Estas ayudas forman parte de Programa Pyme Innova, cuyo presupuesto máximo de ejecución es de 125.309,10 €, en el marco del \"Programa Plurirregional de España FEDER 2021-2027 y que incluye los servicios gratuitos de diagnóstico y seguimiento.</p><p>Quinto– Plazo de presentación de solicitudes</p><p>El plazo para la presentación de solicitudes en la referida Sede se abre a las 09:00h, una vez transcurridos 5 días hábiles desde el día siguiente a la publicación de este anuncio y hasta las 14:00h del día 15 de junio 2026. si bien el plazo podrá acortarse en caso de agotarse el presupuesto.</p>",
+      "textoLeng": null,
+      "url": "https://www.borm.es/services/anuncio/ano/2026/numero/1640/pdf",
+      "cve": "A-140426-1640",
+      "desDiarioOficial": "BORM. B.O. DE LA REGIÓN DE MURCIA",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

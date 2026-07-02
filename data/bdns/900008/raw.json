@@ -1,0 +1,72 @@
+{
+  "id": 1101569,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRE DE L'ESPANYOL, LA",
+    "nivel3": "AYUNTAMIENTO DE TORRE DE L'ESPANYOL, LA"
+  },
+  "sedeElectronica": "https://seu-e.cat/ca/web/torredelespanyol/govern-obert-i-transparencia/serveis-i-tramits/tramits/instancia-generica",
+  "codigoBDNS": "900008",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "Convocatoria 02/2026 para la concesión de ayudas para mejorar la imagen de los inmuebles del casco urbano de La Torre de l'Espanyol",
+  "descripcionLeng": "Convocatòria de subvencions Núm. 02/2026 per a la millora imatge dels immobles del cas urbà de La Torre de l'Espanyol,",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Bases de concesión de aydas  para mejorar la imagen de los inmuebles del casco urbàno de La Torre de l'Espanyol",
+  "urlBasesReguladoras": "https://tauler.seu-e.cat/detall?idEns=4315200000&idEdicte=244211",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-03-26",
+  "fechaFinSolicitud": "2026-12-11",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438720,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "02 anunci_26_ IMMOBLES_CAT_sig.pdf",
+      "long": 230076,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438719,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "02- anuncio IMMOBLES-cas 26_sig.pdf",
+      "long": 230973,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

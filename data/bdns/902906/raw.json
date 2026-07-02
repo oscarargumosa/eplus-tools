@@ -1,0 +1,112 @@
+{
+  "id": 1104467,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GRIÑÓN",
+    "nivel3": "AYUNTAMIENTO DE GRIÑÓN"
+  },
+  "sedeElectronica": "https://grinon.sedelectronica.es/board",
+  "codigoBDNS": "902906",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1700,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA CERTAMEN Nº XII PREMIO CONCURSO DE PINTURA RÁPIDA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA CERTAMEN Nº XII PREMIO CONCURSO DE PINTURA RÁPIDA 2026",
+  "urlBasesReguladoras": "https://grinon.sedelectronica.es/board",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde las 9:00 horas del día 23 de mayo de 2026",
+  "textFin": "Hasta las 11:00 horas del día 23 de mayo de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446648,
+      "descripcion": "BASES CONVOCATORIA",
+      "nombreFic": "BASES CERTAMEN XII PINTURA RÁPIDA.pdf",
+      "long": 450804,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446653,
+      "descripcion": "ANEXO III DECLARACIÓN RESPONSABLE",
+      "nombreFic": "ANEXO III DECLARACIÓN RESPONSABLE.docx",
+      "long": 41284,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446646,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1386 [DECRETO APROBACION BASES CONVOCATORIA CERTAMEN CONCURSO PINTURA RAPIDA Nº XII].pdf",
+      "long": 802740,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446658,
+      "descripcion": "ANEXO V FICHA DE TERCERO",
+      "nombreFic": "ANEXO V FICHA DE TERCERO.docx",
+      "long": 39880,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446657,
+      "descripcion": "ANEXO IV AUTORIZACIÓN COLECTIVA",
+      "nombreFic": "ANEXO IV AUTORIZACIÓN COLECTIVA.docx",
+      "long": 40165,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446650,
+      "descripcion": "ANEXO I MODELO SOLICITUD",
+      "nombreFic": "ANEXO I SOLICITUD.docx",
+      "long": 38801,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446651,
+      "descripcion": "ANEXO II AUTORIZACIÓN",
+      "nombreFic": "ANEXO II AUTORIZACIÓN.docx",
+      "long": 38404,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-MISS-2023-OCEAN-01-01",
+  "ccm2Id": "45741726",
+  "callIdentifier": "HORIZON-MISS-2023-OCEAN-01",
+  "callTitle": "",
+  "title": "European Blue Parks – Protection and restoration of marine habitats",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Marine Knowledge and Research\",\"Ecosystem-Based Approach\",\"EOSC and FAIR data\",\"Marine and Ocean Management\",\"Environmental change and society\",\"Marine Conservation\",\"Marine Ecosystems Restoration\",\"Environment, resources and sustainability\",\"Marine Protected Areas/Mpas\",\"Marine biodiversity monitoring\",\"Marine biodiversity\",\"Marine Strategy Framework Directive\",\"Marine ecosystems and processes\",\"Ocean sustainability and blue economy\",\"Marine biodiversity indicators\",\"Marine ecosystem management\",\"Societal Engagement\",\"Global and transnational governance, international\",\"Marine biodiversity conservation\",\"Marine, Coastal And Ocean Pollution\",\"Marine Reserves\",\"Mission ocean and waters\",\"sea bed\",\"strictly protected marine areas\",\"Trans-European nature network\",\"Mission ocean\",\"degraded marine habitats\",\"Mission restore our ocean and waters by 2030\",\"degraded ecosystems\",\"Blue Parks\",\"Marine Protected Areas\",\"ecological corridors\",\"sea bed restoration\",\"rare marine species\",\"sea bed protection\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EoscAndFairData",
+    "OCEAN",
+    "SocietalEngagement"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-OCEAN-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.401Z"
+}

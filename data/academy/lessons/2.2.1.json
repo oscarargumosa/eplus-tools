@@ -1,0 +1,58 @@
+{
+  "id": "2.2.1",
+  "code": "Part B · 2.2.1",
+  "module": "EACEA",
+  "moduleTitle": "Quality of partnership",
+  "bloque": "C — Antes de escribir",
+  "title": "2.2.1 Configuración del consorcio",
+  "subtitle": "Cómo describir quién forma tu asociación y por qué juntos tenéis lo que hace falta para que el proyecto funcione.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.2.1",
+    "Criterio": "Quality of partnership (20 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Tienes una lista de socios que conociste por contactos o disponibilidad, y ahora hay que explicar al evaluador por qué están ahí. El miedo: que parezca un grupo de amigos en vez de un equipo elegido a propósito.",
+    "comprender": "Que el consorcio no se describe socio a socio como un directorio, sino como un sistema: cada miembro aporta algo que los demás no tienen, y juntos cubren todo lo que el proyecto necesita.",
+    "objetivo": "Saber describir a beneficiarios, entidades afiliadas y socios asociados, y demostrar con evidencia que la combinación de socios reúne la experiencia necesaria y se complementa sin solapamientos.",
+    "confusion": "Pensar que «cuantos más socios y más prestigiosos, mejor». No: lo que puntúa es la complementariedad y el porqué de cada uno, no el número ni los logos.",
+    "importa": "Porque este es el criterio Quality of partnership (20 pts). Si el evaluador no entiende por qué está cada socio, lee «relleno» y baja la nota aunque los socios sean buenos."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\"><b>📋 Lo que pide la sección 2.2.1.</b> Describe a los participantes de tu asociación: <b>Beneficiarios</b> (los socios de pleno derecho que firman el convenio), <b>Entidades Afiliadas</b> (vinculadas legalmente a un beneficiario) y <b>Socios Asociados</b> (colaboran sin recibir fondos). Y, sobre todo, explica <em>cómo trabajarán juntos</em>: ¿cómo reúne el consorcio la experiencia necesaria para hacer el proyecto? ¿cómo se complementan los socios entre sí?</div><p>La pregunta tiene dos capas. La primera es descriptiva: <b>quién es quién</b>. La segunda, la que de verdad puntúa, es argumentativa: <b>por qué este grupo concreto</b> y no otro. El evaluador no quiere una lista de organizaciones; quiere ver un equipo diseñado para la tarea.</p><p>La regla mental que resume todo el apartado:</p><div class=\"callout callout-good\"><b>Cada socio debe tener un porqué.</b> Si puedes quitar un socio del proyecto y nada cambia, ese socio sobra o está mal explicado.</div>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador lee este apartado buscando una sola cosa: <b>¿este consorcio puede hacer lo que promete?</b> Para convencerle, traduce cada socio de «quién es» a «qué papel cumple y con qué prueba».</p><p>La diferencia entre una respuesta floja y una fuerte es <b>evidencia frente a afirmación</b>:</p><table class=\"cmp\"><thead><tr><th>Afirmación (flojo)</th><th>Evidencia (puntúa)</th></tr></thead><tbody><tr><td>«El socio X tiene mucha experiencia.»</td><td>«El socio X ha coordinado 4 proyectos KA2 sobre competencias digitales y aporta la metodología de formación que usaremos en el WP3.»</td></tr><tr><td>«Los socios se complementan.»</td><td>«X aporta el conocimiento sectorial, Y la capacidad de pilotaje en aula y Z el alcance europeo para difusión: ninguno cubre los tres por sí solo.»</td></tr></tbody></table><p>Tres movimientos que suben la nota:</p><ol class=\"obj\"><li><b>Mapa de roles, no directorio.</b> Para cada socio: qué aporta de único, en qué WP lidera o participa, y qué pasaría si no estuviera. Conecta cada socio con una necesidad real del proyecto.</li><li><b>Demuestra complementariedad.</b> Enseña que los perfiles no se solapan: experiencia sectorial + capacidad pedagógica + alcance geográfico + acceso al grupo destinatario. Cada hueco del proyecto tiene un socio que lo cubre.</li><li><b>Distingue bien los tres tipos.</b> Beneficiarios (firman, reciben fondos, hacen el trabajo), Entidades Afiliadas (vinculadas legalmente a un beneficiario, refuerzan su capacidad) y Socios Asociados (colaboran sin financiación: dan acceso, validan, difunden). Cada socio asociado también necesita su porqué.</li></ol><div class=\"callout callout-key\">El consorcio se juzga como un <em>sistema</em>: la pregunta no es «¿son buenos los socios?», sino «¿juntos cubren todo lo que el proyecto necesita, sin piezas que sobren ni huecos sin tapar?».</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Mini-ejemplo de un proyecto KA220 sobre competencias verdes en FP. Fíjate en que cada fila responde «¿por qué este socio?»:</p><table class=\"cmp\"><thead><tr><th>Socio (tipo)</th><th>Qué aporta de único</th><th>Sin él faltaría…</th></tr></thead><tbody><tr><td>Centro FP (Beneficiario · coordinador)</td><td>Acceso directo a alumnado y aula para pilotar</td><td>El entorno real donde probar los materiales</td></tr><tr><td>Universidad (Beneficiario)</td><td>Validación metodológica e investigación</td><td>El rigor que da credibilidad a los resultados</td></tr><tr><td>PYME del sector (Beneficiario)</td><td>Conocimiento de las competencias que pide el mercado</td><td>La conexión con la demanda real de empleo</td></tr><tr><td>Red europea (Socio Asociado)</td><td>Canal de difusión en 12 países, sin recibir fondos</td><td>El alcance para multiplicar el impacto</td></tr></tbody></table><p>Y un checklist rápido antes de dar el apartado por bueno:</p><ul class=\"bullets\"><li>¿Cada socio tiene una frase que explica <b>qué aporta que los demás no</b>?</li><li>¿He dicho <b>en qué WP</b> participa o lidera cada uno?</li><li>¿Queda claro que <b>juntos cubren todo</b> el proyecto (sin huecos)?</li><li>¿Distingo bien <b>beneficiario / afiliada / asociado</b> y justifico también los asociados?</li><li>¿Podría quitar algún socio sin que se note? Si sí, lo reescribo o lo quito.</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Listo cada socio con su descripción corporativa y ya está.»</b> → Eso es un directorio, no un consorcio. El evaluador quiere el <em>papel</em> de cada uno en este proyecto, no su folleto.</li><li><span class=\"err-x\">✗</span> <b>«Cuantos más socios y más prestigiosos, mejor nota.»</b> → No. Puntúa la complementariedad y el porqué; un socio sin función clara resta credibilidad.</li><li><span class=\"err-x\">✗</span> <b>«Todos los socios hacen un poco de todo.»</b> → Eso delata solapamiento y falta de diseño. Cada uno debe cubrir algo que los demás no.</li><li><span class=\"err-x\">✗</span> <b>«Los socios asociados no hay que justificarlos porque no cobran.»</b> → Sí: también necesitan un porqué (acceso, validación, difusión). Si no aportan nada concreto, sobran.</li><li><span class=\"err-x\">✗</span> <b>«Confundo beneficiario con socio asociado.»</b> → Son figuras distintas con derechos distintos. Mézclalo y el evaluador duda de que entiendas el programa.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 2.2.1</b></td><td>El texto literal de la pregunta: beneficiarios, afiliadas, asociados y complementariedad.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Qué mira el evaluador en Quality of partnership (20 pts) y cómo reparte la puntuación.</td></tr><tr><td><b>kb-0090</b> Tips de redacción</td><td>Buenas prácticas para describir consorcios: roles, complementariedad y evidencia frente a afirmación.</td></tr></tbody></table>"
+    }
+  ]
+}

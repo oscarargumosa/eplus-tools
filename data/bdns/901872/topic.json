@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "901872",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AMPUDIA / AYUNTAMIENTO DE AMPUDIA",
+  "nuts_codes": [
+    "ES414"
+  ],
+  "nuts_primary": "ES414",
+  "title": "AYUDAS DESTINADAS A LA MEJORA DE LA EFICIENCIA ENERGÉTICA Y SOSTENIBILIDAD EN VIVIENDAS EN AMPUDIA Y VALORIA DEL ALCOR, año 2026",
+  "title_lang": "es",
+  "summary": "Infraestructuras",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": "2026-09-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "www.ampudia.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901872",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I, Solicitud de subvencion",
+      "url": null
+    },
+    {
+      "label": "BASES COMPLETAS",
+      "url": null
+    },
+    {
+      "label": "ANEXO III, Relacion de pagos",
+      "url": null
+    },
+    {
+      "label": "ANEXIO IV, Declaracion jurada",
+      "url": null
+    },
+    {
+      "label": "ANEXO II, Ficha de Tercero-Banco",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputaciondepalencia.es/system/files/bop/2013/20130419-bop-47-ordinario.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOP de Palencia",
+  "text_fin": "Hasta el 30 de septiembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.381Z"
+}

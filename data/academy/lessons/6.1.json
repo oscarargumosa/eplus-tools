@@ -1,0 +1,58 @@
+{
+  "id": "6.1",
+  "code": "Part B · 6.1",
+  "module": "EACEA",
+  "moduleTitle": "Cierre",
+  "bloque": "D — Anatomía del formulario",
+  "title": "6. Declaraciones (declaration of honour)",
+  "subtitle": "Las declaraciones del solicitante, incluida la prohibición estricta de doble financiación del presupuesto de la UE: qué declaras, quién firma y la regla explicada con un ejemplo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "15–30 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 6 (Declaration of Honour)",
+    "Criterio": "Requisito formal",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Llegas a la declaración de honor, ves un bloque de texto legal en inglés y firmas sin leerlo, como aceptas los términos de cualquier app. Te parece puro trámite administrativo.",
+    "comprender": "Que al firmar estás declarando bajo tu responsabilidad legal una serie de cosas verificables, y que una de ellas, la prohibición de doble financiación, puede tumbar tu proyecto si la incumples.",
+    "objetivo": "Saber qué declaras exactamente, quién debe firmar (el representante legal), y entender la regla de no doble financiación con un ejemplo claro para no caer en ella sin darte cuenta.",
+    "confusion": "Creer que la doble financiación es solo «cobrar dos veces el mismo proyecto entero». En realidad incluye financiar la misma actividad o coste con dos fuentes de la UE, aunque sean proyectos distintos.",
+    "importa": "Porque la declaración de honor es una condición de admisibilidad: si falta la firma del representante legal correcto, la propuesta puede ser rechazada, y si declaras algo falso, el reembolso de fondos y la exclusión de futuras convocatorias están sobre la mesa."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Qué te pide este apartado.</b> Que el solicitante firme una <b>Declaración de Honor</b> (<em>Declaration of Honour</em>): un conjunto de afirmaciones legales que asumes bajo tu responsabilidad. Entre ellas, la prohibición <b>estricta de doble financiación</b> del presupuesto de la UE.</div><p>La <b>Declaración de Honor</b> es el compromiso formal con el que cierras la propuesta. Al firmarla, declaras, entre otras cosas, que:</p><ul><li>La <b>información de la solicitud es veraz</b> y completa.</li><li>La organización <b>no está en situación de exclusión</b> (no tiene condenas, fraude, quiebra, deudas con Hacienda…).</li><li>Tiene la <b>capacidad financiera y operativa</b> para ejecutar el proyecto.</li><li>El proyecto <b>no recibe ni recibirá otra financiación de la UE</b> para las mismas actividades o costes: la regla de <b>no doble financiación</b>.</li></ul><p>No es marketing: es un documento legal. Lo que firmas, lo respondes.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo cumplimentarlo bien",
+      "html": "<p><b>Quién firma.</b> La declaración debe firmarla el <b>representante legal</b> de la organización solicitante (la persona con poder para obligar a la entidad), no el coordinador del proyecto ni quien redactó la propuesta. Si firma quien no debe, la propuesta puede ser inadmisible.</p><p><b>La regla de no doble financiación, en claro.</b> La UE puede financiar tu proyecto, pero <b>nunca dos veces el mismo coste o la misma actividad con dinero europeo</b>. No importa que sean dos programas distintos: si el euro ya lo paga la UE por un lado, no puede pagarlo por otro.</p><div class=\"callout callout-warn\"><b>Ejemplo.</b> Tu organización tiene un proyecto <b>KA220</b> que financia una guía metodológica. No puedes presentar esa <em>misma</em> guía, con los <em>mismos</em> costes, dentro de otro proyecto financiado por, por ejemplo, el <b>FSE+</b> o por otro Erasmus+. Eso es doble financiación y está prohibido. Sí puedes tener dos proyectos europeos distintos si financian <b>actividades y costes diferentes</b>.</div><p>Para cumplir bien:</p><ol class=\"obj\"><li>Asegúrate de que firma el <b>representante legal correcto</b> (coherente con el registro de la organización en el Portal).</li><li>Verifica que <b>ninguna actividad o coste</b> de tu proyecto está ya cubierto por otra subvención de la UE.</li><li>Si tienes proyectos UE en marcha, <b>delimita</b> claramente que este no solapa sus costes (esto enlaza con el anexo de proyectos previos).</li></ol>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Checklist",
+      "html": "<p>Antes de cerrar la declaración:</p><ol class=\"obj\"><li>¿Va a firmarla el <b>representante legal</b> de la entidad, no otra persona?</li><li>¿Coinciden sus datos con los del <b>registro de la organización</b> (Portal / OID)?</li><li>¿Has confirmado que <b>ninguna actividad o coste</b> recibe ya financiación de la UE?</li><li>Si tienes otros proyectos UE, ¿está claro que <b>no solapan</b> con este?</li><li>¿La información de toda la propuesta es <b>veraz</b> (la estás respaldando con tu firma)?</li><li>¿Tu organización está <b>libre de causas de exclusión</b>?</li><li>¿Has leído de verdad lo que declaras, en lugar de firmar a ciegas?</li></ol>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Lo firma el coordinador del proyecto.»</b> → Debe firmarlo el representante legal de la entidad; si no, puede ser inadmisible.</li><li><span class=\"err-x\">✗</span> <b>«Doble financiación es cobrar dos veces el proyecto entero.»</b> → También lo es financiar la misma actividad o coste con dos fuentes de la UE, aunque sean proyectos distintos.</li><li><span class=\"err-x\">✗</span> <b>«Es un texto legal de relleno, firmo sin leer.»</b> → Declaras bajo responsabilidad legal; lo falso puede implicar reembolso y exclusión de futuras convocatorias.</li><li><span class=\"err-x\">✗</span> <b>«Reutilizo el mismo entregable ya financiado por otro proyecto UE.»</b> → Es doble financiación prohibida; cada coste solo puede pagarlo la UE una vez.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 6 (Declaration of Honour)</b></td><td>El texto literal de las declaraciones y el bloque de firma del representante legal.</td></tr><tr><td><b>Erasmus+ Programme Guide</b></td><td>Criterios de exclusión y de admisibilidad; obligación de firma del representante legal.</td></tr><tr><td><b>Reglamento Financiero de la UE</b></td><td>Principio de no doble financiación: un mismo coste no puede financiarse dos veces con el presupuesto de la UE.</td></tr><tr><td><b>Convocatoria EACEA específica</b></td><td>Confirma quién debe firmar y las consecuencias de declaración falsa para la acción concreta.</td></tr></tbody></table>"
+    }
+  ]
+}

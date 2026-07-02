@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-BM-01-04",
+  "ccm2Id": "45763271",
+  "callIdentifier": "HORIZON-CL3-2023-BM-01",
+  "callTitle": "",
+  "title": "Interoperability of systems and equipment at tactical level; between equipment and databases; and/or between databases of threats and materials",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Systems Engineering and Design Management\",\"Customs authorities\",\"Security\",\"Artificial Intelligence\",\"Global Satellite Navigation System (GNSS) / Servic\",\"Artificial Intelligence \\u0026 Decision support\",\"Systems-Services Functions\",\"Digital Agenda\",\"Border and external security\",\"Systems Engineering and Integrated Systems Design\",\"Technologies-Components\",\"Interoperability\",\"Border and coastguards\",\"Equipments and sub systems\",\"Interoperable secured communications (Security sys\",\"Digital data\",\"trade facilitation\",\"threats\",\"customs control equipment\",\"data\",\"customs controls\",\"interoperability\",\"cross-border\",\"spectra\",\"EU customs practitioners\",\"illicit materials\",\"risk management\",\"Security Union Strategy\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-BM-01-04.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.265Z"
+}

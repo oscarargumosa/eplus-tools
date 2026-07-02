@@ -1,0 +1,19 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- Development of solutions integrating 5G networks, supported by advanced signal processing techniques (e.g. AI-Enhanced Signal Processing) to improve the accuracy of PNT systems, as GNSS backup solutions to enhance resilience in contested environments, including filtering noise and interference from signals to enhance the precision of location data, and appropriate post-quantum cryptographic measures to enhance resilience against emerging threats.
+- Integration with Other Technologies: Development of solutions leveraging Internet of Things (sensors, communication signals, AI-enhanced processing), and other sensing techniques to provide redundant and resilient navigation solutions and to enhance capabilities and applications, especially at low altitude airspace.
+- E-conspicuity: Definition of mobile communication performance requirements for e-conspicuity, assessment of network performance and determination of minimum availability requirements for mobile telephony for collision to support collision avoidance for a drone and manned aircraft.
+- Analysis of policy and regulatory aspects to better understand the legal and regulatory issues surrounding the deployment and use of PNT systems, including concerns related to privacy, spectrum management, international cooperation, and harmonisation of regulatory frameworks and shared technologies.
+
+## Scope
+
+Today’s Position, Navigation and Timing (PNT) services are primarily provided through Global Navigation Satellite Systems (GNSS) that tend to have weak signals and are vulnerable to jamming and spoofing.
+
+This topic addresses alternative PNT methods that are essential to provide fallback options in case of GNSS signal loss or degradation. Great benefit is expected through integration of PNT technology with rapidly emerging technologies, such as 5G/6G and Internet of Things (IoT). The aim is to investigate innovative solutions for PNT – including the impact on the regulatory framework, integrating advanced 5G technologies and IoT to act as complementary, redundant, secure and resilient navigation solutions for aviation, including UAS, in challenging environments.
+
+The topic also addresses e-conspicuity, aiming to enhance pilot awareness notably at lower altitudes in U-space airspace in order to reduces collision risk in general aviation, where most small aircraft rely on see-and-avoid. Mobile telephony, with minimum network performance requirements, can provide a safe, affordable communication solution for U-space entry and flight safety.
+
+## null
+
+Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.

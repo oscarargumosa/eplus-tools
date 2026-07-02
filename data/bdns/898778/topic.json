@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898778",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MONTORNÈS DEL VALLÈS / AYUNTAMIENTO DE MONTORNÈS DEL VALLÈS",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Convocatoria de ayudas de actividades de verano de ocio 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 35000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898778",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anunci/3260185/aprovacio-definitiva-de-l-ordenanca-reguladora-de-la-concessio-de-subvencions-i-de-les-bases-especifiques-reguladores-ajuntament-de-montornes-del-valles",
+  "text_inicio": "Des del dia següent de la publicació al BOPB",
+  "text_fin": "fins final període d`inscripció o primera setmana de juliol",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.686Z"
+}

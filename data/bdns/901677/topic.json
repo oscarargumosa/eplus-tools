@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "901677",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE BURGOS / DIPUTACIÓN PROVINCIAL DE BURGOS",
+  "nuts_codes": [
+    "ES412"
+  ],
+  "nuts_primary": "ES412",
+  "title": "CONVOCATORIA 2026- SUBVENCIONES, EN CONCURRENCIA COMPETITIVA, FINANCIADAS INTEGRAMENTE POR LA EXCMA. DIPUTACIÓN DE BURGOS, PARA LA CONCESIÓN DE AYUDAS A ESTABLECIMIENTOS DE HOSTELERÍA Y COMERCIOS MINORISTAS, MAXIMO DOS ESTABLECIMIENTOS EN CADA SECTOR",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 400000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "56",
+      "descripcion": "Servicios de comidas y bebidas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901677",
+  "documents": [
+    {
+      "label": "Acuerdo aprobación Convocatoria Hostelería y Comercio 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.burgos.es/diputacion/informacion/documentos/ordenanza-general-de-subvenciones",
+  "text_inicio": "Desde el día siguiente a la publicación extracto en BOP",
+  "text_fin": "En el plazo de veinte días naturales contados a partir del día siguiente a la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.312Z"
+}

@@ -1,0 +1,35 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- increased support on green bioprocessing, safe and sustainable blue bio-based products;
+- increased understanding of safety, effectiveness and regulatory bottlenecks of blue bio-based products;
+- increased commitment to biodiversity preservation and conservation ensuring that the biodiscovery of new compounds does not lead to unsustainable harvesting from the wild and promoting sustainable use of genetic diversity.
+
+## Scope
+
+The European industry must transition to a greener, more sustainable model to enhance its competitiveness against other business models and foster the production of novel high-value sustainable products. Achieving this requires a shift towards a bio-based system, which leverages biological processes to deliver products that contribute to climate change mitigation by reducing environmental impact and can compete with and eventually replace traditional models. For instance, the current use of hazardous chemicals in various industries, such as the textile and polymer industries, requires the development of more sustainable and environmentally friendly alternatives.
+
+In this context, the vast and largely untapped diversity of marine organisms—including fungi, algae, and invertebrates—presents a valuable source of biomolecules with unique properties. These marine-derived compounds hold significant potential across a range of applications, for example from construction materials, chemical processes to bioplastics and textiles. Supporting research and innovation in blue biotechnology fosters the transition toward greener, high-performance products across multiple industries.
+
+Proposals should address the following:
+- develop safe and sustainable blue bio-based products, by exploring the use of the unique physical, chemical and biochemical properties of biomolecules from marine organisms (e.g., adhesion, structural organization, fluorescence, luminescence). Proposals in scope include novel adhesion agents or bonding products, biochemicals to replace hazardous chemicals, antifouling paintings and coatings, replacement for synthetic surfactants, biomarkers, biosensors, enzymes. Proposals aiming to develop molecules with important economic or societal impact are encouraged. The applications in health biotechnology, as well as the biofuel/bioenergy area are excluded, to avoid overlaps with Horizon Europe Clusters 1 and 5, respectively;
+- incorporate the use of synthetic and engineering biology approaches and foresee the necessary links with the digital technologies and tools (AI/ML, bioinformatics);
+- include the assessment of the costs and benefits compared to conventional alternatives in the market. Proposals should look into regulatory, market and value chain bottlenecks;
+- assess the safety, environmental sustainability and effectiveness of the developed bio-based products derived from marine environments compared to the equivalent material on the market;
+- develop recommendations for policy makers and industrial actors, considering the available scientifically sound assessment of risks and benefits of the developed solutions.
+
+Proposals should cover the innovation chain from research, to development, and proof of concept. Legal aspects linked to securing clear access to marine resources, including related infrastructures and bio-resources banks and collections, their sustainable use as well as access and benefit sharing aspects, should be properly considered. Marine resources can be obtained sustainably from natural environments, as well as from publicly or privately accessible collections. The harvesting or utilization of sentient marine animals, including invertebrates, must be carefully evaluated to ensure that ethical and moral considerations are adequately addressed.
+
+Proposals are encouraged to consider, where relevant, the data, expertise and services offered by European research infrastructures[1], such as EMSO ERIC, EU-OPENSCREEN, ELIXIR, EMBRC ERIC, IBISBA. Efforts should be made to ensure that the data produced in the context of this topic is FAIR (Findable, Accessible, Interoperable and Re-usable). Proposals should ensure adequate involvement of all relevant stakeholders to maximize the impact and use of the developed products, including but not limited to economic and financial actors. International cooperation, for example with Latin America and Caribbean countries, is encouraged.
+
+Proposals are expected to establish synergies and links with relevant projects funded under the Horizon Europe CL6 Work Programmes 2021-2025[2] and with actions supported by the Circular Bio-based Europe Joint Undertaking (CBE JU) and the Sustainable Blue Partnership (SBEP) ensuring that any potential overlaps or duplications are avoided.
+
+Projects under this topic are relevant to the EU policies related to the new EU bioeconomy strategy, the European Life Sciences Strategy, the EU Biotech Act, the EU Algae Initiative, the European Ocean Pact, the EU strategy on research and technology infrastructures, and the new approach for a sustainable blue economy.
+
+## null
+
+Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
+
+[1] The catalogue of European Strategy Forum on Research Infrastructures (ESFRI) research infrastructures portfolio can be browsed from ESFRI website https://ri-portfolio.esfri.eu/
+
+[2]  E.g. HORIZON-CL6-2021-CIRCBIO-01-09, HORIZON-CL6-2022-CIRCBIO-01-07, HORIZON-CL6-2023-CircBio-01-11, HORIZON-CL6-2024-CircBio-01-10, HORIZON-CL6-2025-01-CIRCBIO-14.

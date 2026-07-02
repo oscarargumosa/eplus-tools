@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "899864",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LEIOA / AYUNTAMIENTO DE LEIOA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Extracto de Resolución 2026002977, de fecha de 20 de abril, de la Alcaldía del Ayuntamiento de Leoa, por la que se convocan las subvenciones de carácter ordinario para rótulos, vinilos de los escaparates y carteles fijos comerciales que que tengan presenc",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": "2026-11-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1050,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "56",
+      "descripcion": "Servicios de comidas y bebidas"
+    }
+  ],
+  "apply_url": "https://udaletxean.leioa.eus/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899864",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Resolución",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://udaletxean.leioa.eus/",
+  "text_inicio": "A partir del día de la publicación en el Boletín Oficial de Bizkaia",
+  "text_fin": "Treinta de noviembre de dos mil ventiseis",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.354Z"
+}

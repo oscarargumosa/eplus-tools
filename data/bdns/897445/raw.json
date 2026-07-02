@@ -1,0 +1,76 @@
+{
+  "id": 1099006,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTORNÈS DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE MONTORNÈS DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897445",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 16000,
+  "mrr": false,
+  "descripcion": "Convocatoria para proyectos y actividades culturales 2026 (Cultura)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras para entidades sin ánimo de lucro",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3755576/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-de-la-concessio-de-subvencions-a-entitats-i-associacions-sense-anim-de-lucre-ajuntament-de-montornes-del-valles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des del dia següent publicació BOPB",
+  "textFin": "Vint dies naturals",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431192,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria_català.pdf",
+      "long": 345771,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431191,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria_en_castellano.pdf",
+      "long": 278312,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

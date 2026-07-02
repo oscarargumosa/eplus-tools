@@ -1,0 +1,72 @@
+{
+  "id": 1104029,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE RELACIONES INSTITUCIONALES Y TRANSPARENCIA"
+  },
+  "sedeElectronica": "gva.es",
+  "codigoBDNS": "902468",
+  "fechaRecepcion": "2026-04-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 220000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de 28 de abril de 2026, de la Dirección General de Deporte, por la que se convocan subvenciones destinadas a fomentar el deporte universitario y contribuir a la organización del Campeonato Autonómico de D.U. de la C.V(CADU),temporada 2025-2026",
+  "descripcionLeng": "RESOLUCIÓ de 28 d’ abril, del director general d'Esport, per la qual es convoquen subvencions destinades a fomentar l'esport universitari i contribuir a l'organització del Campionat Autonòmic d'Esport Universitari de la C.V (CAEU), temporada 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden 40/2017 de 18 de octubre de la Conselleria de Educación, Investigación, Cultura y Deporte por la que se aprueban las bases reguladoras de subvenciones destinadas a fomentar el deporte universitario y contribuir a la organización de",
+  "urlBasesReguladoras": "http://www.dogv.gva.es/datos/2017/10/26/pdf/2017_9342.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente de la publicación DOGV",
+  "textFin": "20 días hábiles desde el día siguiente a la publicación en el DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448528,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "03_resoluc_convoc_cadu_2026_v_26-003150_modif_firmado.pdf",
+      "long": 285218,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448527,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "03_resoluc_convoc_cadu_2026_c_modif_firmado.pdf",
+      "long": 283347,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

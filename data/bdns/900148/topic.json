@@ -1,0 +1,112 @@
+{
+  "source": "bdns",
+  "source_id": "900148",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA DE CIENCIA, EMPRESAS, FORMACIÓN Y EMPLEO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Audas para el impulso empresarial de autónomos, microempresas, pequeñas y medianas empresas con establecimiento permanente en el Principado de Asturias",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 800000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    },
+    {
+      "codigo": "95.4",
+      "descripcion": "Actividades de intermediación para reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas"
+    },
+    {
+      "codigo": "82.4",
+      "descripcion": "Actividades de intermediación para servicios de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "43.6",
+      "descripcion": "Actividades de intermediación para servicios de construcción especializada"
+    },
+    {
+      "codigo": "96.4",
+      "descripcion": "Actividades de intermediación para servicios personales"
+    },
+    {
+      "codigo": "61.2",
+      "descripcion": "Actividades de reventa de telecomunicaciones y servicios de intermediación para telecomunicaciones"
+    },
+    {
+      "codigo": "47.9",
+      "descripcion": "Actividades de servicios de intermediación para el comercio al por menor"
+    },
+    {
+      "codigo": "46.1",
+      "descripcion": "Intermediarios del comercio al por mayor"
+    },
+    {
+      "codigo": "82.9",
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "87.9",
+      "descripcion": "Otras actividades de asistencia en establecimientos residenciales"
+    },
+    {
+      "codigo": "86.9",
+      "descripcion": "Otras actividades sanitarias"
+    },
+    {
+      "codigo": "77.5",
+      "descripcion": "Servicios de intermediación para el alquiler de bienes tangibles y de activos intangibles no financieros"
+    },
+    {
+      "codigo": "53.3",
+      "descripcion": "Servicios de intermediación para las actividades postales y de mensajería"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900148",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2025/06/17/2025-04826.pdf",
+  "text_inicio": "día siguiente a la publicación extracto BOPA",
+  "text_fin": "10 días hábiles a partir siguiente publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.508Z"
+}

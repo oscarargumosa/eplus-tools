@@ -1,0 +1,68 @@
+{
+  "id": 1099123,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBATERA",
+    "nivel3": "AYUNTAMIENTO DE ALBATERA"
+  },
+  "sedeElectronica": "https://albatera.sedelectronica.es",
+  "codigoBDNS": "897562",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS Y CONVOCATORIA DE AYUDAS AL TRANSPORTE PARA ESTUDIANTES UNIVERSITARIOS Y DE CICLOS FORMATIVOS\nCURSO 2025/2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "BASES REGULADORAS Y CONVOCATORIA DE AYUDAS AL TRANSPORTE PARA ESTUDIANTES UNIVERSITARIOS Y DE CICLOS FORMATIVOS\nCURSO 2025/2026",
+  "urlBasesReguladoras": "https://albatera.sedelectronica.es/board",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Días siguiente a la publicación anuncio y extracto convocatoria en el Boletín Oficial provincia ",
+  "textFin": "UN MES, contado a partir del día siguiente de publicación del anuncio.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431475,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260325_Otros_Bases_Bases becas transporte 2025-26.pdf",
+      "long": 448281,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

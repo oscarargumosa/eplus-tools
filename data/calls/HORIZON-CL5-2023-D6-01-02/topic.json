@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-CL5-2023-D6-01-02",
+  "ccm2Id": "45644791",
+  "callIdentifier": "HORIZON-CL5-2023-D6-01",
+  "callTitle": "",
+  "title": "Generation of scenarios for development, training, virtual testing and validation of CCAM systems (CCAM Partnership)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-04",
+  "deadline": "2023-09-05",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"International Cooperation\",\"Co-programmed European Partnerships\",\"Artificial Intelligence\",\"Sustainable transport - general\",\"Digital Agenda\",\"EOSC and FAIR data\",\"digital twin\",\"testing\",\"scenarios\",\"automation\",\"validation\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD",
+    "PART-COPROGR",
+    "AI",
+    "DigitalAgenda",
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2023-D6-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.228Z"
+}

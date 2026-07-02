@@ -1,0 +1,109 @@
+{
+  "id": 1099503,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897942",
+  "fechaRecepcion": "2026-04-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 865000,
+  "mrr": false,
+  "descripcion": "Resolución de convocatoria para la concesión de subvenciones, en régimen de concurrencia competitiva, al emprendimiento cultural",
+  "descripcionLeng": "Resolució de convocatòria per a la concessió de subvencions, en règim deconcurrència competitiva, a l'emprenedoria cultural",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    },
+    {
+      "descripcion": "Actividades de programación, radiodifusión, agencias de noticias y otras actividades de distribución de contenidos",
+      "codigo": "60"
+    },
+    {
+      "descripcion": "Comercio al por menor de otros artículos, excepto vehículos de motor y motocicletas",
+      "codigo": "47.7"
+    },
+    {
+      "descripcion": "Edición",
+      "codigo": "58"
+    },
+    {
+      "descripcion": "Producción cinematográfica, de vídeo y de programas de televisión, grabación de sonido y edición musical",
+      "codigo": "59"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "bases específicas que deben regir la concesión de subvenciones al emprendimiento cultural",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9636/2143185.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-21",
+  "fechaFinSolicitud": "2026-06-22",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449447,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Emprenedoria cultural + modif catsigned redistribució despesa.pdf",
+      "long": 347820,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449446,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Emprenedoria cultural + modif cast redistribució despesa.pdf",
+      "long": 199492,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209366,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1042266",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

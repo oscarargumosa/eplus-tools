@@ -1,0 +1,76 @@
+{
+  "id": 1099877,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898316",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DEL RECTOR DE LA UNIVERSIDAD DE GRANADA DE 13 DE ABRIL DE 2026 POR LA QUE SE CONVOCAN AYUDAS A LA FORMACIÓN DEL PERSONAL\nTÉCNICO, DE GESTIÓN Y DE ADMINISTRACIÓN Y SERVICIOS (PTGAS).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN DEL RECTOR DE LA UNIVERSIDAD DE GRANADA DE 13 DE ABRIL DE 2026 POR LA QUE SE CONVOCAN AYUDAS A LA FORMACIÓN DEL PERSONAL\nTÉCNICO, DE GESTIÓN Y DE ADMINISTRACIÓN Y SERVICIOS (PTGAS).",
+  "urlBasesReguladoras": "https://gerencia.ugr.es/rrhh-organizacion/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-16",
+  "fechaFinSolicitud": "2026-06-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434936,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución ayudas formación 2026.pdf",
+      "long": 242601,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208877,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/BOUGR/319/319-1%20Ayudas%20Formaci%C3%B3n%20del%20PTGAS%202026.pdf",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

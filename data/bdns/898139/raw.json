@@ -1,0 +1,68 @@
+{
+  "id": 1099700,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE OVIEDO",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://intranet.uniovi.es/convocatorias/estudiantado",
+  "codigoBDNS": "898139",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 39964.5,
+  "mrr": false,
+  "descripcion": "Resolución de 10 de abril de 2026 del Vicerrector de Estudiantes por la que se aprueba  la Convocatoria de 10 becas del programa”Campus Rural\" para la realización de prácticas académicas externas en municipios de menos de 5000 habitantes en régimen de con",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Reglamento de prácticas de la Universidad de Oviedo, aprobado por el Consejo de Gobierno en la sesión de 14 de octubre de 2014 (BOPA 31-X-2014), respetando los términos y condiciones generales recogidos en el Programa “Campus Rural”, convocatoria 2026",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa/2014/10/31/2014-17539.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del dia siguiente a la publicación BOPA",
+  "textFin": "Ver convocatoria 10 días hábiles siguientes a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433043,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "10-4-26 RESOLUCIÓN Becas Campus Rural 2026.pdf",
+      "long": 1006100,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL6-2024-FARM2FORK-02-3-two-stage",
+  "ccm2Id": "45653776",
+  "callIdentifier": "HORIZON-CL6-2024-FARM2FORK-02",
+  "callTitle": "",
+  "title": "Tools to increase the effectiveness of EU import controls for plant health",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Agriculture, Rural Development, Fisheries\",\"Digital Agenda\",\"Plant pests\",\"Pest control equipment\",\"Agricultural engineering, food safety\",\"innovative solutions\",\"plant health diagnostic\",\"plant pest\",\"plant health\",\"sensors\",\"import control\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-FARM2FORK-02-3-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.388Z"
+}

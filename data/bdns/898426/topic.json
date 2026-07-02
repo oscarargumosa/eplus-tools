@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898426",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LOECHES / AYUNTAMIENTO DE LOECHES",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVOCATORIA DE AYUDAS SOCIALES DESTINADAS A PERSONAS DE LOECHES EN RIESGO DE POBREZA Y/O EXCLUSIÓN SOCIAL 2026.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://loeches.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898426",
+  "documents": [
+    {
+      "label": "Decreto",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "BOCM B.O. DE LA COMUNIDAD DE MADRID",
+  "text_inicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOCM",
+  "text_fin": "20 DÍAS HÁBILES",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.570Z"
+}

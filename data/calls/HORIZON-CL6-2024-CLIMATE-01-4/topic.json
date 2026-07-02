@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL6-2024-CLIMATE-01-4",
+  "ccm2Id": "45656453",
+  "callIdentifier": "HORIZON-CL6-2024-CLIMATE-01",
+  "callTitle": "",
+  "title": "Land use change and local / regional climate",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Bioenergy\",\"Agriculture related to crop production, soil biolo\",\"Carbon sequestration in forest (mitigation)\",\"Regional / Local Planning\",\"Biodiversity conservation\",\"Forest biodiversity\",\"EOSC and FAIR data\",\"Earth Observation / Services and applications\",\"Climate change mitigation\",\"modelling\",\"LULUCF\",\"land use\",\"land management\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CLIMATE-01-4.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.587Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1105017,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "POBLA DE MAFUMET, LA",
+    "nivel3": "AYUNTAMIENTO DE LA POBLA DE MAFUMET"
+  },
+  "sedeElectronica": "https://poblamafumet.eadministracio.cat/info.4",
+  "codigoBDNS": "903456",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA INCENTIVOS A EMPRESAS Y EMPRENDEDORES PARA EL FOMENTO DEL EMPLEO",
+  "descripcionLeng": "CONVOCATÒRIA INCENTIUS A EMPRESES I EMPRENEDORS PER A LA PROMOCIÓ DE L’OCUPACIÓ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Incentivos a empresas y emprendedores para la promoción del empleo",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/346641/modificacio-de-les-bases-reguladores-per-a-la-concessio-d-incentius-a-empreses-i-emprenedors-per-a-la-promocio-de-l-ocupacio-aprovacio-definitiva-ajuntament-pobla-de-mafumet-la",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": "Desde el dia siguiente de la publicación en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448430,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA INCENTIUS OCUPACIÓ 2026 cat.pdf",
+      "long": 110470,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448429,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA INCENTIUS OCUPACIÓ 2026 cast.pdf",
+      "long": 109681,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

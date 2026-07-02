@@ -1,0 +1,63 @@
+{
+  "id": "LS.12",
+  "code": "UD-LS.12",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "A — Fundamentos",
+  "title": "Asociaciones Europeas para el Desarrollo Escolar: qué cambia",
+  "subtitle": "Las European Partnerships for School Development heredan las reglas de Cooperation… pero con 8 diferencias que conviene tener clarísimas antes de empezar a escribir.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–45 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "6 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Te dicen «es como una KA220 pero para colegios» y te lanzas a copiar tu plantilla de Cooperation… hasta que descubres que la misión viene predefinida, las tareas vienen en lista, el presupuesto y la duración son fijos y el formulario está «del revés». Lo que parecía un atajo se convierte en un proyecto rechazado.",
+    "comprender": "Que las European Partnerships for School Development aplican los principios de la sección 5 (Cooperation), pero con 8 diferencias muy específicas que cambian quién lidera, qué eliges, cómo se estructura el formulario y dónde está el foco.",
+    "objetivo": "Conocer y reconocer las 8 diferencias completas frente a una Cooperation Partnership normal, para no diseñar el proyecto con las reglas equivocadas.",
+    "confusion": "Tratarla como una KA220 idéntica: elegir prioridades propias, repartir el liderazgo libremente, producir resultados nuevos como objetivo central o seguir el orden clásico del formulario. Todo eso está cambiado aquí.",
+    "importa": "Porque varias de estas diferencias son condiciones de elegibilidad o de puntuación (autoridades escolares al frente, WP de impacto a largo plazo obligatorio, Impacto pesa 35/100). Saltártelas no es un matiz: te deja fuera o te baja la nota."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. La base: heredan de Cooperation, pero con excepciones",
+      "html": "<p>Lo primero que hay que dejar claro: los <b>principios y la metodología descritos en la sección 5 (Cooperation Partnerships) aplican también</b> a las European Partnerships for School Development. Esto incluye, en particular, la <b>estructura de work packages y actividades, el presupuesto, la evaluación del informe, la puntuación y el cálculo de la subvención</b>. Todo lo que aprendiste en LS.10 y LS.11 sigue siendo tu base.</p><div class=\"callout callout-key\"><b>La regla mental.</b> Parte de tu conocimiento de KA220 como cimiento, y encima aplica las <b>8 diferencias</b> que vienen a continuación. No reinventes; ajusta.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Diferencias 1 a 4: lo que NO eliges tú",
+      "html": "<p>Las primeras cuatro diferencias tienen que ver con que aquí <b>vienen muchas cosas predefinidas</b>:</p><ol class=\"obj\"><li><b>Misión y prioridades predefinidas.</b> La misión y los objetivos de política están definidos de antemano en el Programme Guide. <b>No eliges tus propias prioridades</b> como en Cooperation.</li><li><b>Lista predefinida de tareas.</b> Hay una lista cerrada de tareas entre las que tienes que elegir al diseñar tu asociación. Debes seleccionar <b>al menos tres tareas, cubriendo ambas categorías</b> de tareas. En el formulario, <b>cada tarea corresponde a un work package</b>.</li><li><b>Presupuesto y duración fijos.</b> El presupuesto del proyecto está predefinido en <b>400.000 €</b> y la duración es fija de <b>tres años</b>. Para tener éxito, hay que <b>alcanzar esa escala mínima</b>: no es un proyecto pequeño.</li><li><b>No todas las organizaciones son iguales.</b> Las <b>autoridades escolares deben liderar</b> el proyecto. Esto afecta tanto a la organización solicitante como a las autoridades escolares socias en los otros países participantes.</li></ol><div class=\"callout callout-warn\">Las diferencias 3 y 4 son condiciones duras: si no alcanzas la escala de 400.000 € / 3 años, o si quien lidera no es una autoridad escolar, el proyecto no encaja en la acción.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Diferencias 5 y 6: el WP extra y el formulario «del revés»",
+      "html": "<ol class=\"obj\" start=\"5\"><li><b>Un WP obligatorio adicional: el Long-term impact plan.</b> Además del WP de gestión, estas asociaciones incluyen un <b>segundo work package obligatorio</b>: el <b>plan de impacto a largo plazo</b>. Cubre la planificación para <b>extender los resultados del proyecto más allá de su duración</b>, asegurando que los beneficiarios reflexionen y empiecen a trabajar en ese aspecto <em>antes</em> de que el proyecto acabe.</li><li><b>Formulario parcialmente «invertido».</b> La estructura del formulario está parcialmente invertida: <b>Impact va ANTES que Project implementation</b>. Esto resalta el papel clave del criterio de adjudicación «Impact», que <b>pesa 35/100 puntos</b>. El flujo del formulario te guía a reflexionar primero sobre qué problemas o retos quieres abordar y por qué (análisis de necesidades e impacto), después los pasos (resultados) necesarios, y solo entonces identificar las acciones más adecuadas y el presupuesto que necesitará cada una.</li></ol><div class=\"callout callout-key\">Que «Impact» valga 35 de 100 y vaya el primero no es casualidad: estas asociaciones se diseñan <em>desde el impacto hacia atrás</em>. Si escribes el formulario en el orden clásico (actividades primero, impacto al final), estarás luchando contra su lógica.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. Diferencias 7 y 8: el foco en USAR resultados",
+      "html": "<ol class=\"obj\" start=\"7\"><li><b>Foco en el USO de resultados, no en producir nuevos.</b> Estas asociaciones se centran en el <b>uso de resultados y en maximizar el impacto</b>, no en producir resultados nuevos. <b>Producir algo nuevo</b> como parte del proyecto es <b>opcional</b>; lo que es <b>obligatorio es aplicar resultados o prácticas, ya sean nuevos o ya existentes</b>.</li><li><b>Criterios de adjudicación referenciados en cada pregunta.</b> Los criterios de adjudicación se referencian <b>explícitamente en cada pregunta</b> del formulario. Algunos criterios (especialmente «Impact») se <b>evalúan a través de varias secciones</b> (across sections), y tienes que seguir la guía del formulario que indica cómo enlazar las distintas respuestas en un todo coherente.</li></ol><div class=\"callout callout-good\">La diferencia 7 cambia la mentalidad: aquí no te premian por inventar un producto nuevo y brillante, sino por <b>aplicar lo que ya funciona</b> (tuyo o de otros) y demostrar que mejora la enseñanza y el aprendizaje en los colegios.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Elijo mis prioridades como en KA220.»</b> → No: la misión y las prioridades vienen predefinidas en el Programme Guide.</li><li><span class=\"err-x\">✗</span> <b>«Cualquier socio puede liderar.»</b> → Deben liderar las autoridades escolares, tanto el solicitante como los socios en otros países.</li><li><span class=\"err-x\">✗</span> <b>«Pido el tramo y la duración que me convengan.»</b> → Son fijos: 400.000 € y 3 años. Hay que alcanzar esa escala.</li><li><span class=\"err-x\">✗</span> <b>«Solo necesito el WP de gestión más mis WP de actividades.»</b> → Falta el WP obligatorio del Long-term impact plan.</li><li><span class=\"err-x\">✗</span> <b>«Relleno el formulario en el orden clásico, con Impacto al final.»</b> → Está invertido: Impact va antes que Implementation y pesa 35/100.</li><li><span class=\"err-x\">✗</span> <b>«Mi proyecto vale porque produce un resultado nuevo.»</b> → Producir algo nuevo es opcional; lo obligatorio es aplicar resultados nuevos o existentes y maximizar su impacto.</li><li><span class=\"err-x\">✗</span> <b>«Elijo una tarea de la lista y ya.»</b> → Hay que elegir al menos tres tareas y cubrir ambas categorías; cada tarea es un WP.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026), sección 6</td><td>Confirma que los principios de la sección 5 (Cooperation) aplican también a las European Partnerships for School Development, y lista las 8 diferencias específicas: misión/prioridades predefinidas, lista predefinida de tareas (≥3 cubriendo ambas categorías, cada tarea = un WP), presupuesto fijo de 400.000 € y duración de 3 años, liderazgo de autoridades escolares, WP obligatorio adicional «Long-term impact plan», formulario invertido (Impact antes que Implementation, 35/100 puntos), foco en uso de resultados (producir nuevos opcional, aplicar nuevos o existentes obligatorio), y criterios de adjudicación referenciados en cada pregunta con Impact evaluado across sections.</td></tr></tbody></table>"
+    }
+  ]
+}

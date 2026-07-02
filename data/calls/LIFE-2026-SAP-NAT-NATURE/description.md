@@ -1,0 +1,13 @@
+## Expected Impact
+
+Applicants are expected to define, calculate, explain and achieve ambitious and credible impacts in terms of conservation benefit, ensuring at the same time long term sustainability and replication (see sections 2 and 9 of the Call document).
+
+## Objective
+
+To contribute to European Union objectives for the protection, maintenance and restoration of the Union’s natural capital in its marine, freshwater and terrestrial ecosystems
+
+## Scope
+
+The present Call topic targets Standard Action Projects (SAP) aimed at achieving the objectives of the LIFE Nature and Biodiversity sub-programme by supporting the development, implementation, monitoring and enforcement of EU legislation and policy on nature and biodiversity, as defined in sections 1 and 2 of the Call document.
+
+Projects focussing exclusively on governance and information are excluded from this Call topic and covered by the related Call topic LIFE-2026-SAP-NAT-GOV.

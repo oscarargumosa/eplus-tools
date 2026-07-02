@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-MISS-2023-CLIMA-01-01",
+  "ccm2Id": "45740695",
+  "callIdentifier": "HORIZON-MISS-2023-CLIMA-01",
+  "callTitle": "",
+  "title": "Testing and demonstrating transformative solutions increasing climate resilience of the agriculture and/or forestry sector.",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-10",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Forest adaptation to climate change\",\"Agroecology\",\"Forestry\",\"Forest resilience\",\"Ecosystem services provided by soils\",\"Climatic research\",\"Ecosystem management\",\"Climatology and climate change\",\"Nature-based solutions\",\"Social Innovation\",\"Habitat and species restoration and rehabilitation\",\"Agriculture, Rural Development, Fisheries\",\"Agriculture, Forestry, and Fisheries\",\"Forest ecosystem services\",\"Fight against threats to the Environment\",\"Climate change adaptation\",\"EOSC and FAIR data\",\"Green and blue infrastructure\",\"smart farming\",\"ecosystems restoration\",\"build climate resilience\",\"climate resilience\",\"agriculture systems\",\"innovative solutions\",\"innovative solutions for climate resilience\",\"systemic approach\",\"transformative change\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SocInnov",
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.272Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1104955,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FASNIA",
+    "nivel3": "AYUNTAMIENTO DE FASNIA"
+  },
+  "sedeElectronica": "https://ayuntamientodefasnia.sedelectronica.es/info.0",
+  "codigoBDNS": "903394",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS INDIVIDUALES A PERSONAS MAYORES Y\nPERSONAS CON DISCAPACIDAD AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES POR LAS QUE SE REGULA LA GESTIÓN MUNICIPAL DE AYUDAS INDIVIDUALES NO PERIÓDICAS DE EMERGENCIA SOCIAL Y\nLAS DESTINADAS A PERSONAS MAYORES Y PERSONAS CON DISCAPACIDAD",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/boletines/2018/15-6- 18/15-6-18.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "01/01/2026",
+  "textFin": "30/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448266,
+      "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA",
+      "nombreFic": "20260428_BASES REGULADORAS_BOP nº 72_2018.pdf",
+      "long": 1407749,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448264,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260429_Resolución_Decreto de Alcaldía _ Decreto de Presidencia _4- DECRETO 2026-0595 [Decreto de la Alcaldía (Convocatoria)].pdf",
+      "long": 419608,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

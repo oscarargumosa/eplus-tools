@@ -1,0 +1,28 @@
+## Expected Outcome
+
+Project results are expected to contribute to some or all of the following outcomes:
+- Improved understanding of systemic vulnerabilities of critical entities including physical, digital, operational, and cross-sectoral dimensions, in the face of compound natural and human-made disaster risks;
+- Verification of existing measures countering potential NaTech risks;
+- Demonstration of advanced technological solutions that enhance the ability of public and private providers of critical services to prepare for, respond to, and recover from complex, multi-hazard scenarios, including cascading or hybrid NaTech events;
+- Deployment of common platforms and operational tools for dynamic risk assessment, decision support, between public authorities, first responders, and critical infrastructure operators during disruptive events;
+- Strengthened multi-level and cross-border cooperation frameworks for integrated emergency and continuity management, ensuring seamless coordination across sectors, governance levels, and jurisdictions.
+
+## Scope
+
+Recent compound and cascading disasters have demonstrated the urgent need to reinforce the resilience of critical entities against a wide spectrum of hazards, including both human-induced incidents, natural events such as floods, wildfires, earthquakes, and storms, and natural hazard triggered technological (NaTech) accidents, including hybrid scenarios. The vulnerability of key infrastructures is exacerbated by their growing interdependencies and the systemic propagation of risks across sectors and borders. In this context, ensuring the monitoring, protection and continuity of essential services has become fundamental to preserving and enhancing societal resilience.
+
+This topic aims to support the development and demonstration of targeted high-tech capabilities that address specific preparedness, operational, and recovery gaps in the resilience of critical entities[1] under multi-hazard and NaTech conditions. It calls for moving beyond generic resilience frameworks toward sector-specific, interoperable, and modular technological and governance solutions that can be deployed and tested in realistic operational settings.
+
+Proposals should be grounded in existing risk assessments and draw on lessons learned from recent disruptive events. They are expected to deliver measurable improvements in both technological and organisational resilience through the identification and prioritisation of critical capability gaps, especially where cascading and cross-sectoral risks are likely to arise. In parallel, adaptive continuity planning and decision-making tools should be designed to enhance situational awareness, support dynamic response coordination, and maintain service continuity in fast-evolving crisis scenarios.
+
+Proposals should also demonstrate cross-border, multi-actor coordination mechanisms through simulations or testing in real operational environments, involving public authorities, emergency responders, and critical service operators or representative environments where critical infrastructure is particularly exposed to multi-hazard risks.
+
+International cooperation is encouraged, particularly in regions with cross-border infrastructure or shared vulnerabilities. Actions should take due account of the relevant EU legal and policy frameworks and are expected to address all applicable considerations expressed in the Introductions of the Resilient Infrastructure and Disaster-Resilient Society for Europe Destinations.
+
+Coordination among the successful proposals from this topic and projects funded under HORIZON-CL3-2025-01-INFRA-01: Open topic for improved preparedness for, response to and recovery from large-scale disruptions of critical infrastructures and HORIZON-CL3-2025-01-INFRA-02: Open topic for role of the human factor for resilience of European critical entities, and HORIZON-CL3-2024-DRS-01-04: Hi-tech capacities for crisis response and recovery after a natural-technological (NaTech) disaster should be envisaged in order to avoid duplication, share resources and exploit complementarities and opportunities for increased impact.
+
+## Technology Readiness Level - Technology readiness level expected from completed projects
+
+Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B.
+
+[1] Including, but not limited to, infrastructures addressed by the revised EU Maritime Security Strategy (JOIN/2023/8) and the European Port Strategy.

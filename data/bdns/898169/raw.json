@@ -1,0 +1,92 @@
+{
+  "id": 1099730,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
+    "nivel3": "INSTITUTO DE ATENCION SOCIAL Y SOCIO-SANITARIO"
+  },
+  "sedeElectronica": "https://ias.sedelectronica.es/",
+  "codigoBDNS": "898169",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 208000,
+  "mrr": false,
+  "descripcion": "Resolución del 09 de abril de 2026, de la Presidenta del Instituto de Atención Social y Sociosanitaria, por la que se convocan Subvenciones de Concurrencia Competitiva en el ámbito de la Accesibilidad Universal a entidades sin ánimo de lucro, 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Convocatoria de Subvenciones de concurrencia competitiva en el ámbito de la Accesibilidad Universal a entidades sin ánimo de lucro de Gran Canaria 2026",
+  "urlBasesReguladoras": "https://ias.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433172,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES Y ANEXOS CONVOCATORIA SUBVENCIONES A ENTIDADES SIN ÁNIMO DE LUCRO ACCESIBILIDAD 2026.pdf",
+      "long": 1019045,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433185,
+      "descripcion": "Decreto Presidencia Nombramiento Instructor procedimiento 2026 - 0039",
+      "nombreFic": "DECRETO PRESIDENCIA NOMBRAMIENTO DE INSTRUCTOR 2026-0039.pdf",
+      "long": 781843,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433182,
+      "descripcion": "Decreto Presidencia Aprobación Bases y publicación",
+      "nombreFic": "DECRETO DE PRESIDENCIA CONVOCATORIA ACCES. UNIVERSAL ENTIDADES SIN ÁNIMO DE LUCRO 2026-0160 .pdf",
+      "long": 1839583,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433181,
+      "descripcion": "Plan Estratégico de Subvenciones IAS Cabildo de Gran Canaria 2026",
+      "nombreFic": "Plan Estratégico de Subvenciones IAS 2026.pdf",
+      "long": 256355,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,96 @@
+{
+  "id": 1099674,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "QUART DE POBLET",
+    "nivel3": "AYUNTAMIENTO DE QUART DE POBLET"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898113",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 70000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL REGULADORA DE LAS BASES DE CONCESIÓN DE SUBVENCIONES DE QUART DE POBLET.",
+  "urlBasesReguladoras": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432992,
+      "descripcion": "BASES ESPECÍFICAS REGULADORAS DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET",
+      "nombreFic": "1 - BASES REGULADORAS AYUDA COMEDOR ESCOLAR.pdf",
+      "long": 749767,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1432989,
+      "descripcion": "CERTIFICADO ACUERDO JGL",
+      "nombreFic": "Certificado Acuerdo JGL 31-03-2026.pdf",
+      "long": 369492,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1432985,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2 - CONVOCATORIA AYUDAS CE 26-27.pdf",
+      "long": 1043499,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208513,
+      "titulo": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+      "tituloLeng": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+      "texto": "<p>1. OBJETO El objeto de la presente convocatoria es regular las condiciones y el procedimiento a seguir, en régimen de concurrencia competitiva, de las ayudas para el pago del comedor escolar del curso escolar 2026-2027, de aquellas familias empadronadas en Quart de Poblet con hijos/as escolarizados/as en centros educativos del municipio de Quart de Poblet, de modalidad pública y/o concertada. Dado que la naturaleza y finalidad de estas ayudas es garantizar la atención adecuada de los niños/as y adolescentes en situación de especial vulnerabilidad, se establece la excepción del cumplimiento de las condiciones de las personas beneficiarias, que establece el artículo 13.2 de la Ley General de Subvenciones.</p><p>2. BASES REGULADORAS La presente convocatoria se rige por las bases reguladoras de las ayudas para comedores escolares del municipio de Quart de Poblet, aprobadas por la Junta de Gobierno Local del Ayuntamiento de Quart de Poblet el 27 de febrero de 2024</p>",
+      "textoLeng": "<p>1. OBJECTE L'objecte de la present convocatòria és regular les condicions i el procediment a seguir, en règim de concurrència competitiva, de les ajudes per al pagament del menjador escolar del curs escolar 2026-2027, d'aquelles famílies empadronades a Quart de Poblet amb fills/as escolaritzats/as en centres educatius del municipi de Quart de Poblet, de modalitat pública i/o concertada. Atés que la naturalesa i finalitat d'estes ajudes és garantir l'atenció adequada dels xiquets/as i adolescents en situació d'especial vulnerabilitat, s'establix l'excepció del compliment de les condicions de les persones beneficiàries, que establix l'article 13.2 de la Llei General de Subvencions.</p><p>2. BASES REGULADORES La present convocatòria es regix per les bases reguladores de les ajudes per a menjadors escolars del municipi de Quart de Poblet, aprovades per la Junta de Govern Local de l'Ajuntament de Quart de Poblet el 27 de febrer de 2024</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04325&lang=es",
+      "cve": "BOPV-2026/04325",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

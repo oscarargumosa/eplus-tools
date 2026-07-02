@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900376",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "SUBV. ESFL  MANTTO SERVICIOS Y PROGRAMAS 2026 ATT.PERS.DIS  -- Línea 4",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1637500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900376",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  BBRR",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  modificación",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  modificación 2",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.bocm.es/boletin/CM_Orden_BOCM/2017/07/03/BOCM-20170703-16.PDF",
+  "text_inicio": "DÍA SIGUIENTE PUBLICACIÓN EXTRACTO CONVOCATORIA",
+  "text_fin": "15 DÍAS HÁBILES SIGUIENTES A PUBLICACIÓN EXTRACTO CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.622Z"
+}

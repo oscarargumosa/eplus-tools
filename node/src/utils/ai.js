@@ -41,7 +41,7 @@ async function logUsage({ ctx, model, usage, status, durationMs }) {
 /** Single-turn Claude call (system + one user message) */
 async function callClaude(systemPrompt, userPrompt, maxTokens = 4096) {
   const client = getClient();
-  const model = process.env.AI_MODEL || 'claude-sonnet-4-20250514';
+  const model = process.env.AI_MODEL || 'claude-sonnet-4-6';
   const ctx = aiContext.get();
   const t0 = Date.now();
   try {
@@ -63,7 +63,7 @@ async function callClaude(systemPrompt, userPrompt, maxTokens = 4096) {
 /** Multi-turn Claude call (system + message history) */
 async function callClaudeChat(systemPrompt, messages, maxTokens = 2048) {
   const client = getClient();
-  const model = process.env.AI_MODEL || 'claude-sonnet-4-20250514';
+  const model = process.env.AI_MODEL || 'claude-sonnet-4-6';
   const ctx = aiContext.get();
   const t0 = Date.now();
   try {

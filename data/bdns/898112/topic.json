@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "898112",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE UNIVERSIDAD, INVESTIGACIÓN E INNOVACIÓN",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "RESOLUCIÓN DE 13 DE ABRIL DE 2026 DE LA DIRECCIÓN GENERAL DE PLANIFICACIÓN DE LA INVESTIGACIÓN POR LA QUE SE CONVOCAN PARA 2026 SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DESTINADAS A FINANCIAR EL DESARROLLO DE PROYECTOS DE INVESTIGACIÓN APLICAD",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": "2026-04-20",
+  "deadline": "2026-05-19",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3750085,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://juntadeandalucia.es/servicios/sede/tramites/procedimientos/detalle/25844.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898112",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/eboja/2024/82/BOJA24-082-00043-43790-01_00300740.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208507,
+      "titulo": "Extracto de la Resoluciónde la Dirección General de Planificación de la Investigación por la que se convocan para 2026 subvenciones en régimen de concurrencia competitiva, destinadas a financiar el desarrollo de proyectos de invest",
+      "tituloLeng": null,
+      "texto": "<p>Recursos Naturales, Energía y Medio Ambiente (RNM), Tecnologías de la Información y la Comunicación (TIC) y Tecnologías de la producción y la construcción (TEP) y no exceder de 200.000 euros en las áreas de Ciencias sociales, económicas y jurídicas (SEJ) y Humanidades y creación artística (HUM). La cuantía de las subvenciones podrá alcanzar hasta el 100% del coste de la actividad.</p><p>5. De acuerdo con el artículo 12 de las bases reguladoras, las subvenciones otorgadas en la presente convocatoria serán incompatibles con otras ayudas concedidas para la misma finalidad, y otorgadas por otras administraciones públicas o entes privados, nacionales o internacionales.</p><p></p><p>QUINTO. Solicitudes y plazo de presentación</p><p>1. De acuerdo con lo previsto en el artículo 19 de las bases reguladoras, las solicitudes se presentarán exclusivamente de forma telemática, a través de la Sede Electrónica General de la Administración de la Junta de Andalucía, creada mediante la Orden de la Consejería de la Presidencia, Administración Pública e Interior de 25 de abril de 2022, a través del acceso disponible en la siguiente dirección electrónica:</p><p>https://juntadeandalucia.es/servicios/sede/tramites/procedimientos/detalle/25844.html.</p><p>2. Las solicitudes se presentarán, según los modelos de formulario de solicitud que se incluyen en la convocatoria, de forma exclusivamente electrónica en los registros referidos en el artículo 19 de las bases reguladoras. Junto con la solicitud habrá de presentarse una memoria descriptiva del proyecto que se ajustará al modelo incluido en el apéndice I de las bases reguladoras.</p><p>3. Las solicitudes podrán presentarse desde el 15 de abril de 2026 a las 9:00 (hora peninsular) hasta el 14 de mayo de 2026 a las 18:00 horas (hora peninsular).</p><p></p><p>SEXTO. Obligaciones de la entidad beneficiaria</p><p>La entidad beneficiaria deberá cumplir con todas las obligaciones establecidas en el artículo 7 de las bases reguladoras.</p><p></p><p>SÉPTIMO. Criterios de evaluación.</p><p>Los criterios de evaluación de las solicitudes se establecen en el artículo 24 de las bases reguladoras y se aplicarán según lo dispuesto en su Apéndice II.</p><p></p><p>OCTVO. Otros datos.</p><p>El acceso a las solicitudes para su presentación, la normativa de aplicación y demás datos necesarios que afectan a la presente convocatoria pueden consultarse en el Catálogo de Procedimientos y Servicios de la página web de la Junta de Andalucía en la dirección</p><p>https://juntadeandalucia.es/servicios/sede/tramites/procedimientos/detalle/25844.html</p>",
+      "textoLeng": null,
+      "url": "https://juntadeandalucia.es/boja/2026/73/2",
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.403Z"
+}

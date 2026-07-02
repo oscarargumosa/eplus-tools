@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "899161",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLBISBAL / AYUNTAMIENTO DE CASTELLBISBAL",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Convocatoria para la concesión de subvenciones en régimen de pública concurrencia para el impulso de la actividad comercial de Castellbisbal. Año 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 8000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899161",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anuncio/1409817/aprovacio-definitiva-de-la-modificacio-de-l-ordenanca-general-de-subvencions-ajuntament-de-castellbisbal",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.848Z"
+}

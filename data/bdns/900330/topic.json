@@ -1,0 +1,103 @@
+{
+  "source": "bdns",
+  "source_id": "900330",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / CONSEJERÍA DE TRANSICIÓN ECOLÓGICA Y ENERGÍA",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "ORDEN DEL CTELCCPT POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS Y LA CONVOCATORIA DE SUBVENCIONES PARA EL FOMENTO DEL AUTOCONSUMO COMPARTIDO Y DLLO DE CDADES ENERGÉTICAS EN DIF. SECTORES EN EL MARCO DE LA ESTRAT.DE ENERGÍA SOST. (P2, L1) PRTR (C7 I2)",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": "2023-01-11",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 665441.69,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.3",
+      "descripcion": "Acabado de edificios"
+    },
+    {
+      "codigo": "43.5",
+      "descripcion": "Actividades de construcción especializada en ingeniería civil"
+    },
+    {
+      "codigo": "43.4",
+      "descripcion": "Actividades de construcción especializada en la construcción de edificios"
+    },
+    {
+      "codigo": "81.2",
+      "descripcion": "Actividades de limpieza"
+    },
+    {
+      "codigo": "42.9",
+      "descripcion": "Construcción de otros proyectos de ingeniería civil"
+    },
+    {
+      "codigo": "43.2",
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción"
+    },
+    {
+      "codigo": "43.9",
+      "descripcion": "Otras actividades de construcción especializada"
+    },
+    {
+      "codigo": "35",
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900330",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.gobiernodecanarias.org/boc/",
+  "text_inicio": "11/01/2023",
+  "text_fin": "12/05/2023",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.000000",
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 38 AYUDAS A LA INVERSIÓN DESTINADAS A MEDIDAS DE EFICIENCIA ENERGÉTICA DISTINTAS DE LOS EDIFICIOS."
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": true,
+  "fetchedAt": "2026-05-07T12:06:47.598Z"
+}

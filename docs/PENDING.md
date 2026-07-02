@@ -8,6 +8,48 @@
 
 ## 1 · En curso · bloqueadas en pre-requisito
 
+### TASK-007 — Diagnose & Improve (replanteo de Perfeccionar)
+**Status:** APROBADO el diseño · LISTO PARA EMPEZAR Fase 1
+**Owner:** Local Claude (eplus-tools)
+**Doc canónico:** `docs/DIAGNOSE_AND_IMPROVE_PLAN.md`
+**Fecha plan:** 2026-05-25
+**Reemplaza:** `PROJECT_MASTER_ARCHITECTURE.md` y `PROJECT_MASTER_IMPLEMENTATION_PLAN.md` (quedan obsoletos)
+
+**Qué incluye:**
+- **Eliminar el Master** como artefacto intermedio. Form Part B pasa a ser el documento canónico.
+- **Pestaña "Diagnóstico"** como puerta única que acepta 3 puertas: greenfield, audit, reciclaje. Funciona como triaje (rediseñar/perfeccionar/exportar).
+- **Pattern library de evaluadores EACEA** como activo defensible del producto. Seed corpus: 4 cartas analizadas (CoVE, FOCUS, RISE, DANCE+).
+- **Catálogo controlado**: cada proyecto y carta atados a `call_id` del Admin Data E+.
+- **Perfeccionar dirigido** con ediciones puntuales + diff visible + accept/reject por cambio.
+
+**4 leyes universales EACEA confirmadas con N=4 cartas:**
+1. Sustainability sin financiación post-proyecto concreta
+2. Methodology con huecos de detalle
+3. Inconsistencias objectives↔activities↔WP descriptions
+4. Temas transversales mencionados pero no traducidos a tareas
+
+**Decisiones cerradas (2026-05-25):**
+- Borrar Masters existentes (borrador interno, sin clientes externos)
+- Diagnóstico gratis limitado + Perfeccionar de pago
+- MVP: todos los calls EACEA Form Part B cargados en Admin Data E+
+- Formato input: Word EACEA + paste por sección. PDFs sueltos descartados
+- Carta evaluador: opcional. Con carta = diagnóstico dirigido premium
+
+**Plan por fases (10–12 semanas total):**
+1. **Fase 1** (1.5–2 sem): Backend DB + parser cartas + seed corpus cargado
+2. **Fase 2** (2 sem): Diagnóstico sin carta sobre proyectos de la app
+3. **Fase 3** (1.5 sem): Upload de proyecto externo (Word EACEA + paste)
+4. **Fase 4** (2 sem): Upload carta + diagnóstico dirigido
+5. **Fase 5** (2–3 sem): Perfeccionar dirigido con diff y versionado
+6. **Fase 6** (1 sem): Leyes universales como reglas duras del Writer
+
+**Pendiente de decisión (no bloqueante):**
+- Anonymización seed corpus
+- Nombre comercial del producto
+- Política de retención de cartas
+- Tier (Premium-only o también Standard)
+- Disclaimer RGPD
+
 ### TASK-001 — Refactor del directorio de entidades
 **Status:** APROBADO el diseño · BLOQUEADO en pre-requisito
 **Owner del bloqueo:** Oscar
@@ -54,20 +96,100 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 ## 2 · Pendientes sin bloqueante (cuando se quiera)
 
-### TASK-003 — Réplica local de Postgres `erasmus-pg`
-**Status:** EN CURSO · esperando respuesta VPS Claude
-**Doc canónico:** `docs/handoffs/PARA_VPS.md` (2026-05-05)
-**Fecha plan:** 2026-05-05
+### TASK-010 — Ecosistema Call Center + Escribas (las dos máquinas conectadas)
+**Status:** PENSAMIENTO ESTRATÉGICO CAPTURADO (2026-06-27) · pendiente de validar y aterrizar
+**Owner:** Oscar (negocio) + Local Claude (modelo/doc)
+**Doc canónico:** `docs/CALL_CENTER_ECOSYSTEM.md`
+**Fecha:** 2026-06-27
 
-**Por qué:** unificar BD que será pública en Live. La BD pesa 6.9 GB (no los 150 GB que Oscar temía — esos eran disco total VPS). Viable replicar.
+**Qué es:** un solo sistema con dos máquinas que se alimentan. **Call center** (3 trabajadores + 5-6 voluntarios, CRM Centralize/GHL) = motor de demanda: recluta socios premium, vende SaaS, capta para actividades en Cantabria, engorda la red europea (3.600 llamadas/año, ~€500k neto-ish). **Escribas** = motor de oferta: escriben proyectos de €250k con el SaaS para socios premium que pagan €1.000-1.200/año por entrar (superávit €30-42k/escriba). El call center llena los slots que las escribas monetizan.
 
-**Ámbito acordado parcialmente con VPS Claude:**
-- Postgres 16 en Docker local (`infra/docker-compose.local.yml` pendiente).
-- Excluir `directory.eacea_*` matviews del primer dump (origen no documentado, posible WIP).
-- Aplicar antes del dump: migración 012 (fuzzy OID↔OID via identity_resolution, **aditiva** con matview v2 paralela), 013 (merge 288 colisiones), UNIQUE(pic), REINDEX SCHEMA directory.
-- Vehículo de transporte: endpoint VPS auth (no B2). Pendiente que VPS Claude lo levante.
+**Unit economics validada con Oscar** (cifras netas, no brutas). Conversión SaaS base 2,5%. Tasa de aprobación modelada al 10% al escalar (histórico real 35%) para proteger viabilidad.
 
-**Bloqueante actual:** respuesta de VPS Claude a Q-Local-1 (B2 vs endpoint) y a propuesta de matview v2 reversible.
+**Cuello de botella real:** no es escribir, es la **demanda de plazas de socio de pago** (90-120/escriba/año a 30 proyectos) → la genera el call center.
+
+**ORDEN MAESTRO DE PRIORIDADES (decidido 2026-06-27, §0.5 del doc):** Fase 1 PRODUCTO (SaaS en profundidad: escribir + evaluar + Academia 4 cursos) → Fase 2 VENDER (motor demanda: 1-3 personas para llamadas + campañas + publicidad) → Fase 3 ESCRIBIR (escribas actuales + mejores alumnos). Producto → demanda → oferta. Las ideas nuevas se encajan dentro de estas fases, no las adelantan.
+
+**Próximos pasos (pendiente decisión Oscar):** definir tipos de llamada de la secuencia · mapeo 7 objetivos → campos/pipeline Centralize · plan de capacidad de entrega agregada · modelo financiero con columna de costes · diseñar piloto (1-2 callers + 1 escriba, 4-6 sem).
+
+### TASK-009 — Captación + Cualificación de leads (Interés × Capacidad) + tracking conductual
+**Status:** DISEÑO APROBADO (2026-06-27) · **FASE 1 IMPLEMENTADA Y VERIFICADA** (2026-06-27, sin commit) · Fases 2-3 pendientes
+**Owner:** Local Claude (eplus-tools)
+**Doc canónico:** `docs/LEAD_QUALIFICATION_PLAN.md`
+**Fecha plan:** 2026-06-27
+**Origen:** sesión 2026-06-27, tras shippear login-wall / guest-funnel a main.
+
+**Fundación YA en prod:** sistema login-wall + guest-funnel (invitado navega todo; muro al abrir tarjeta; embudo de venta en secciones de cuenta). `public/js/app.js` (`requireLogin`, `renderGuestFunnel`, `FUNNEL_COPY`, `ensurePublicShell`), gates en convocatorias/entities/movilidades, `optionalAuth` en middleware.
+
+**Qué incluye:**
+- **Registro mínimo** (email/nombre/pass) = la captura. Cualificación en **onboarding post-registro** (saltable con nudge), NO en el registro. Sin soft-capture de email (descartado).
+- **Marco Interés × Capacidad** → lead tiers → cohortes/Pricing v2. Capacidad: experiencia (ninguna/socio/coordinó KA1-2-3-CB), entidad (tipo + tamaño empresa), rol (decisor?). Interés: aprender / escalar / acceder a fondos.
+- **Tracking conductual first-party propio** vía los 3 puntos de paso (`navigate`/`openDetail`+`openFicha`/`requireLogin`). Tablas `events` + `user_engagement`. `device_id` cose conducta de invitado → usuario al registrarse.
+- **Teléfono fuera del registro** → en flujo "reservar reunión" + opcional onboarding.
+- **A GHL solo hitos/agregados** (tags/custom fields), no el stream crudo. GHL=marketing / Resend=transaccional.
+
+**Fases:**
+1. ✅ **HECHA (2026-06-27)** — `device_id` + tracker + `events` + `POST /v1/events`. Migración `120_events_table.sql`, módulo `node/src/modules/events/`, `public/js/track.js` (cola + sendBeacon + tiempo activo Page Visibility), hooks en `app.js` (session_start/section_view/section_time/gate_hit), `convocatorias.js` (call_opened+programme), `entities.js` (entity_opened), `movilidades.js` (mobility_opened). `optionalAuth` → user_id si logueado, device_id siempre. Verificado E2E (invitado y logueado, whitelist, tiempo activo). **Pendiente:** commit/MERGE. Hard-refresh (Ctrl+F5) para cargar el index.html nuevo.
+2. Onboarding + tabla de perfil + mapeo a GHL + lead tier (empezar por modelo de datos).
+3. Scoring conductual (rollup `user_engagement`, coser device→user en registro `UPDATE events SET user_id WHERE device_id`, push hitos a GHL). Eventos `project_started`/`search` ya en el whitelist, falta cablearlos.
+
+**Decisiones abiertas (no bloqueantes):** preguntas/orden exactos del onboarding · esquema final tags GHL · retención `events` + base legal RGPD · scoring cron vs on-demand.
+
+### TASK-008 — Libro de Hechos del Proyecto + Inspector de Prompts
+**Status:** IMPLEMENTADO (F1–F5) · pendiente verificación en UI por Oscar · sin commit/push
+**Owner:** Local Claude (eplus-tools)
+**Doc canónico:** `docs/CANONICAL_FACTS_AND_PROMPT_INSPECTOR.md`
+**Fecha plan:** 2026-05-30 · **Implementado:** 2026-05-30
+**Origen:** sesión 2026-05-29 (Writer 3 palancas) — el A/B SUSTRAI reveló drift WP-leader entre runs
+
+**Implementado 2026-05-30 (las 5 fases):**
+- Migración `117_facts_ledger_and_prompt_inspector.js` (ai_generations.segments + section_id, tablas `project_facts` y `prompt_blocks`). Aplicada en local.
+- `model.js`: `buildCanonicalFacts()` (hechos duros derivados + soft canónicos), `getPromptBlock()`, `_logWriterGen()`, `extractCandidateFacts()` (Haiku), CRUD facts, inspector (`listGenerations`/`getGeneration`), prompt_blocks CRUD. `generateSection()` refactor: inyecta canonical facts antes de YOUR PROJECT, captura segmentos nombrados, loguea a `ai_generations`, dispara extracción de candidatos.
+- Endpoints: developer `/projects/:id/facts` (GET/POST/PATCH, ownership); admin `/inspector/generations`, `/inspector/generations/:id`, `/prompt-blocks`, `/prompt-blocks/:name` (PUT) — todos bajo `requireAdminOnly` (scribes excluidos).
+- Frontend: admin.js pestaña "Inspector IA" (admin-only, generaciones desglosadas por segmento + editor de bloques versionado); developer.js panel "Datos que la IA mantiene coherentes" (confirmar/descartar candidatos, no bloqueante).
+- Verificado sin coste: buildCanonicalFacts deriva €/WP+socios+WP→leader (NOVA), inspector lee segmentos, bucle candidate→confirmar→inyección OK.
+- **Pendiente:** que Oscar genere una sección real en el Writer y confirme log + extracción en vivo; decidir commit/MERGE.
+
+**Decisiones resueltas (2026-05-30):** granularidad = segmentos nombrados con contenido · alcance = las 5 fases · validación de hechos blandos en ambas superficies (usuario en Writer, admin en inspector) · extractor = LLM barato (Haiku 4.5).
+
+**Qué incluye:**
+- **Libro de hechos del proyecto** (facts ledger): hechos duros DERIVADOS en runtime de Diseñar/Planner/Calculator (socios, €/WP, actividades, deliverables, tareas, hitos) inyectados como invariables en CADA pregunta del Writer. Regla dura: derivar, no duplicar.
+- **Hechos blandos + compuerta de validación**: datos emergentes de la redacción entran como `candidate`, solo pasan a `canonical` tras validación. Evita canonizar alucinaciones (lección PIC/LoI inventados del A/B).
+- **Inspector de prompts admin-only**: reutiliza tabla `ai_generations` (migr 093) — hoy solo la escribe `dms-generator.js`, NO el Writer cascade. Cablear `generateSection()` para loguear. Vista Admin con prompt desglosado + historial de runs + comparar drift.
+- **Principio rector DOS SUPERFICIES**: usuario final solo ve SUS datos en lenguaje normal (nunca prompts); Oscar (admin) ve todo. IP protegida: el prompt NUNCA se serializa al navegador, inspector blindado `role=admin`, bloques en BD server-side.
+
+**Plan por fases:**
+1. **F1** (~0.5d): log `generateSection()` → `ai_generations` con segmentos nombrados
+2. **F2** (~1d): `buildCanonicalFacts()` derivado + inyección + re-run A/B (mata drift)
+3. **F3** (~1.5d): inspector admin-only (vista + endpoint `role=admin`)
+4. **F4** (~2d): tabla `project_facts` + extractor candidatos + UI usuario no bloqueante
+5. **F5** (~2d, opcional): externalizar bloques hardcoded a `prompt_blocks` + versionado
+
+**Decisiones abiertas (no bloqueantes):** granularidad log (segmentos vs strings crudos), alcance de la tanda, propósito inspector (auditar vs iterar en vivo), quién valida hechos blandos, extractor candidatos (regla vs LLM).
+
+### TASK-006 — Experience RAG (auto-redacción de Capacity con proyectos pasados)
+**Status:** DISEÑADO · BLOQUEADO en VPS Claude (Pieza 1)
+**Owner del bloqueo:** VPS Claude (Pieza 1+2+3) · Local Claude (Pieza 4 cuando llegue)
+**Doc canónico:** `docs/EXPERIENCE_RAG.md`
+**Handoff:** `docs/handoffs/PARA_VPS.md` 2026-05-07
+**Fecha plan:** 2026-05-07
+
+**Caso de uso:** cuando el usuario redacta un proyecto nuevo en el Writer, la app le sugiere automáticamente 4-5 proyectos pasados de su entidad relevantes para el actual y le auto-redacta el párrafo de Capacity / Relevant Experience. "Tu app conoce mejor tu palmarés que tú mismo".
+
+**Tres piezas en VPS:**
+1. **Resumen completo del proyecto** — hoy `directory-api` trunca `project_summary` a ~199 chars. VPS verifica si la BD tiene el texto íntegro; si no, scraper offline al portal Erasmus+ Project Results Platform. Bloquea todo lo demás.
+2. **Vectorización 317k proyectos** — pgvector + `text-embedding-3-small` OpenAI (~$3.20 una vez, ~2 GB storage).
+3. **Endpoint retrieve** — `POST /retrieve/projects-similar { entity_oid, query_text, k, exclude_identifiers }`.
+
+**Una pieza en Local Claude (cuando VPS termine las 3):**
+4. Botón "✨ Sugerir proyectos pasados relevantes" en Writer → Capacity, modal con checkboxes, párrafo auto-redactado por LLM.
+
+**Decisiones cerradas:**
+- Vectorizar todos los 317k (no solo los de la entidad del usuario).
+- Modelo: `text-embedding-3-small` multilingüe, sin traducción previa.
+- Usuario revisa antes de aceptar el párrafo.
+
+**Decisiones abiertas en VPS:** Q-VPS-30 (¿BD tiene summary completo?), Q-VPS-31 (¿VPS corre el embedding worker?), Q-VPS-32 (timing).
 
 ### TASK-002 — Sync prod -> Laragon local (datos para test offline)
 **Status:** LISTO_PARA_EMPEZAR
@@ -90,12 +212,114 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 **Decisión cerrada (2026-05-05):**
 Oscar planteó si copiar 150 GB completos. Descartado: la BD que pesa 150 GB es la Postgres `erasmus-pg` (proyectos EU), no la MySQL `eplus_tools` (que pesa <500 MB). Para test offline basta con MySQL completo + Directory API on-demand para proyectos EU.
 
+### TASK-004 — Movilidades SALTO → erasmuscantabria.com
+**Status:** FASE 1 HECHA · ARQUITECTURA DECIDIDA 2026-05-07 · LISTO PARA IMPLEMENTAR (5 piezas)
+**Doc canónico:** `docs/SALTO_NEWS_PIPELINE.md` + `docs/handoffs/SESSION_HANDOFF_2026-05-07_movilidades.md`
+**Mockup:** `erasmuscantabria/design-templates/05-cursos-mockup.html` (commit local `4a19179`)
+**Fecha plan:** 2026-05-06 · actualizado 2026-05-07
+
+**Qué incluye:**
+- **Fase 1 ✅** scraper + enrich completos: 77 ofertas en `data/salto/trainings.json` con 30+ campos. Distribución: 61 free · 12 paid · 2 mixed · 2 unknown.
+- **Fase 2** Endpoint `/v1/movilidades` en eplus-tools (módulo `node/src/modules/movilidades/`).
+- **Fase 3** mu-plugin `ec-movilidades.php` → CPT `movilidad` + taxonomías + 18 meta fields. URL `/oportunidades/<slug>/`.
+- **Fase 4** Theme child `astra-erasmuscantabria` con `archive-movilidad.php` (grid B) + `single-movilidad.php` (detalle C).
+- **Fase 5** Sync script Node + systemd timer 06:30 + WP page update.
+
+**Decisiones tomadas (2026-05-07):**
+- Taxonomía Oscar: **Oportunidades = movilidades** (SALTO) · **Subvenciones = funding calls** (TASK-005). No mezclar.
+- CPT `movilidad` extensible a futuras fuentes (ESC, DiscoverEU)
+- URL `/oportunidades/<slug>/` single · `/oportunidades/movilidades/` archive
+- Layout B (grid blanca/lavanda) + C (detalle propio sidebar lavanda)
+- Modo trabajo POR REPO · sin SSH directo · sin ACF (meta nativos)
+- Atribución "vía SALTO" obligatoria
+
+**Limitación SALTO:** sin API ni RSS · `robots.txt` desautoriza `b_offset`. Compliant: página 1 + URLs detalle conocidas.
+
+**Comando para arrancar:** `hola, continuar con las movilidades SALTO`
+
+### TASK-005 — BD unificada de financiación (EU + España)
+**Status:** FASE 1 (SEDIA) HECHA · resto LISTO_PARA_EMPEZAR · 2 decisiones de Oscar pendientes
+**Owner:** Local Claude (eplus-tools) — consolidado el 2026-05-06
+**Fecha plan:** 2026-05-06
+**Origen:** scope traspasado por Cantabria Claude (`docs/handoffs/FROM_CANTABRIA_FINAL_2026-05-06.md`)
+
+**Qué incluye:**
+- **Fase 1 ✅ SEDIA EU calls** (hecha 2026-05-06): `scripts/sedia/sync.js` + `data/calls/` con 542 calls extraídos (Open + Forthcoming). 9 programas con cobertura: Horizon Europe (406), EDF (36), NDICI/EuropeAid (34), LIFE (16), Digital (11), EUAF (7), CEF (5), Pilot Projects (4), Creative Europe (4), CERV (3), Erasmus+ (2), resto.
+- **Fase 2 ✅ BDNS España** (hecha 2026-05-07): `scripts/bdns/sync.js` + `data/bdns/` con 28 calls extraídos en muestra de 2 días. Endpoints + 31-field schema + heurística `isOpen()` por capas (deadline > start > texto > flag). Rate limit real (concurrency=3 + 200ms + exp backoff retry).
+- **Fase 2.5 ✅ Unifier cross-source** (hecha 2026-05-07): `scripts/funding/build-unified.js` + `data/funding_unified.json` con 647 records (542 SEDIA + 28 BDNS + 77 SALTO). Schema unificado, UUIDs deterministic, sort por estado+deadline.
+- **Fase 3 BOE Datos Abiertos** (pendiente): `boe.es/datosabiertos/`, complementario al BDNS para texto íntegro de bases reguladoras.
+- **Fase 4 BOC Cantabria** (pendiente): RSS + scraping HTML para regional Cantabria (lag vs BDNS).
+- **Fase 5 SEPIE / INJUVE** (pendiente, condicional): solo si la BD necesita plazos por agencia nacional Erasmus+ que SEDIA central no detalla.
+- **Fase 6 ❌ DESCARTADA — Schema Postgres**: Oscar eligió arquitectura B' (dump JSON estático), no Postgres + API REST. La Fase 6 original queda para v2 si la web crece.
+- **Fase 7 ❌ DESCARTADA — API REST**: idem, B' no requiere endpoint backend. La web consume `data/funding_unified.json` vía `raw.githubusercontent.com` (CORS habilitado).
+- **Fase 8 ✅ Refresh diario** (hecha 2026-05-07): `scripts/refresh-all.js` orquesta SALTO scrape+enrich + SEDIA + BDNS + unifier; commit+push a rama dedicada `data-auto`. Systemd timer en VPS host (`/etc/systemd/system/eplus-data-refresh.{service,timer}`), 06:00 Europe/Madrid. Smoke test E2E confirmado (commit `5e20ba63` en data-auto). Doc canónico: `docs/REFRESH_PIPELINE.md`. **Política de publicación**: cron escribe SOLO a `data-auto`, nunca a main/dev-local/dev-vps. Para llegar a Live, hace falta merger `data-auto` en `/merge`.
+- **Fase 9 Backfill traducción ES** (pendiente, opcional): correr Sonnet 4.6 sobre `summary_en` de SEDIA/SALTO (619 records) para poblar `summary_es`. Coste estimado: ~$0.50.
+- **Fase 10 Curado manual catálogo** (pendiente): completar `data/erasmus_plus_2026_calls.clean.json` con LIFE 16 calls + el resto que vaya saliendo, para que el `curated_enrichment` ratio suba.
+
+**Decisiones de Oscar (2026-05-07):**
+1. ✅ **Arquitectura B'** — dump JSON estático, no API REST. Sirve vía `raw.githubusercontent.com` con CORS habilitado.
+2. ⏳ **3 campos faltantes SEDIA** — pendiente decisión final. Default actual: catálogo curado para Erasmus+ (1/47 matched, resto forthcoming) + LIFE manual + "Ver call document" para Horizon/EDF en v1.
+3. ⏳ **Idioma** — pendiente confirmar. Default actual: SEDIA mantiene `summary_en`, BDNS nativo ES, flag `summary_es_pending: true` para 619/647 records.
+
+**Schema preliminar acordado con Cantabria Claude (Round 1+2):**
+```sql
+funding_call(
+  call_id              UUID,           -- generado en ETL para evitar colisiones cross-source
+  source_id            VARCHAR,        -- ID nativo (SEDIA identifier, BDNS codigoBDNS)
+  source               VARCHAR,        -- 'sedia' | 'bdns' | 'boe' | 'boc_cantabria' | 'sepie' | 'injuve'
+  source_lang          VARCHAR(8),     -- 'en' | 'es' | 'fr' ...
+  level                VARCHAR,        -- 'eu' | 'national' | 'regional' | 'local'
+  programme            VARCHAR,
+  sub_programme        VARCHAR,
+  publishing_authority_code VARCHAR,   -- BDNS vpd, SEDIA programmeDivision, BOE sección
+  nuts_code            VARCHAR,        -- ES13 = Cantabria, etc.
+  title                TEXT,
+  title_lang           VARCHAR(8),
+  summary              TEXT,           -- 2-3 frases en ES (traducir si origen EN)
+  status               VARCHAR,        -- 'forthcoming' | 'open' | 'closed'
+  publication_date     DATE,
+  open_date            DATE,
+  deadline             DATE,
+  deadline_model       VARCHAR,        -- 'single-stage' | 'two-stage' | 'continuous' | 'multiple-national'
+  deadlines_extra      JSONB,          -- array para multi-deadline
+  budget_total_eur     DECIMAL(14,2),
+  budget_per_project_min_eur DECIMAL(14,2),
+  budget_per_project_max_eur DECIMAL(14,2),
+  expected_grants      INT,
+  cofinancing_pct      INT,            -- 80, no 0.80
+  duration_months      INT,
+  audience             TEXT,           -- ES, quién puede pedirlo
+  eligible_orgs        JSONB,          -- ['VET','SME','NGO',...]
+  eligible_countries   JSONB,          -- ['ES','EU27',...]
+  apply_url            TEXT,
+  details_url          TEXT,
+  documents            JSONB,          -- [{label, url}]
+  tags                 JSONB,
+  mrr_flag             BOOLEAN,        -- true = PRTR/Next Generation EU
+  raw                  JSONB,          -- respuesta cruda de la fuente
+  first_seen_at        TIMESTAMPTZ,
+  last_seen_at         TIMESTAMPTZ,
+  source_updated_at    TIMESTAMPTZ
+);
+```
+
+**Conocimiento heredado de Cantabria Claude (no perder):**
+- BDNS encoding bug: respuestas en UTF-8 mal mappeado de Latin-1. Decode con `Buffer.from(text, 'latin1').toString('utf8')`.
+- BDNS `vpd=A07` NO es Cantabria, devolvió Castilla y León. Hay que descubrir el código real iterando.
+- BDNS `abiertas=true` y `region=ES13` se ignoran como query param. Filtrar post-fetch.
+- BDNS incluye municipales y universitarias (más amplio de lo esperado).
+- BDNS `presupuestoTotal` puede venir null (no filtrar agresivo por > 0).
+- SEDIA `grantsTenders.json` static (122 MB) no contiene Erasmus+ 2026 todavía — la search API va más al día.
+
+**Bonus**: Cantabria Claude se reenfoca a web pública (`erasmuscantabria.com` en Hetzner+Coolify). Cuando esté la API, mandar handoff de vuelta `FROM_LOCAL_API_READY.md` con base URL + endpoints + auth + schema.
+
 ---
 
 ## 3 · Recientemente cerrado
 
 | Fecha | Tarea | Commit/PR |
 |---|---|---|
+| 2026-05-06 | TASK-003 cerrada: réplica local Postgres `erasmus-pg` operativa. Test E2E con dump base 1.5 GB completado (288.294 entities · 317.559 projects · Permacultura Cantabria E10151149 = 164 proyectos). | dump-base-20260505-1828 |
 | 2026-04-29 | Hotfix migration 091: batch UPDATEs para no romper healthcheck Coolify (502 Bad Gateway en intake.eufundingschool.com) | `7cfe7cc` en main |
 
 ---

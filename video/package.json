@@ -1,0 +1,43 @@
+{
+  "name": "eufunding-video",
+  "version": "1.0.0",
+  "description": "EU Funding School — Video lesson generator with Remotion",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio --port 3100",
+    "render": "remotion render KA-Lines out/ka-lines.mp4",
+    "render:example": "remotion render Example out/example.mp4",
+    "render:still": "remotion still KA-Lines out/ka-lines-thumb.png",
+    "tts": "node scripts/generate-audio.js",
+    "tts:ka-lines": "node scripts/generate-audio.js --lesson ka-lines",
+    "images": "node scripts/fetch-images.js",
+    "music": "node scripts/fetch-music.js"
+  },
+  "dependencies": {
+    "@remotion/captions": "^4.0.261",
+    "@remotion/cli": "4.0.261",
+    "@remotion/google-fonts": "^4.0.261",
+    "@remotion/install-whisper-cpp": "^4.0.261",
+    "@remotion/layout-utils": "^4.0.261",
+    "@remotion/lottie": "^4.0.261",
+    "@remotion/media-utils": "^4.0.261",
+    "@remotion/motion-blur": "^4.0.261",
+    "@remotion/noise": "^4.0.261",
+    "@remotion/paths": "^4.0.261",
+    "@remotion/player": "4.0.261",
+    "@remotion/shapes": "^4.0.261",
+    "@remotion/transitions": "^4.0.261",
+    "dotenv": "^17.4.2",
+    "openai": "^6.34.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.261"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.261",
+    "@remotion/renderer": "4.0.261",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.0"
+  }
+}

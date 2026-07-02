@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897649",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ARUCAS / AYUNTAMIENTO DE ARUCAS",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "CERTAMEN DE PINTURA RÁPIDA AL AIRE LIBRE \"BARRIOS Y PUEBLOS CON HISTORIA DE ARUCAS: MONTAÑA DE CARDONES, SANTIDAD Y BAÑADEROS\" 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2550,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897649",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BASES REGULADORAS",
+      "url": null
+    },
+    {
+      "label": "ANEXO II - INSCRIPCIÓN AL CERTAMEN PARA MENORES",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - INSCRIPCIÓN AL CERTAMEN DE PINTURA RÁPIDA 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.arucas.org",
+  "text_inicio": "LOS DÍAS INDICADOS EN LA CONVOCATORIA PARA CADA CERTAMEN",
+  "text_fin": "LOS DÍA INDICADO EN LA CONVOCATOIRA PARA CADA CERTEMAN",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.122Z"
+}

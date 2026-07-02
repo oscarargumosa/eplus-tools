@@ -1,0 +1,83 @@
+{
+  "id": 1102001,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTROVERDE",
+    "nivel3": "AYUNTAMIENTO DE CASTROVERDE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900440",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18250,
+  "mrr": false,
+  "descripcion": "CONCESIÓN DE SUBVENCIONES A ENTIDADES ASOCIATIVAS, AGRUPACIONES Y ASOCIACIONES DE VECINOS PARA LA REALIZACIÓN DE OBRAS Y ESTABLECIMIENTO, AMPLIACIÓN Y AVANCE DE SERVICIOS DE INTERÉS VECINAL. EJERCICIO 2026.",
+  "descripcionLeng": "CONCESIÓN DE SUBVENCIÓNS A ENTIDADES ASOCIATIVAS, AGRUPACIÓNS E ASOCIACIÓNS DE VECIÑOS PARA A REALIZACIÓN DE OBRAS E ESTABLECEMENTO, AMPLIACIÓN E MELLORA DE SERVIZOS DE INTERESE VECIÑAL. EXERCICIO 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES PARA LA CONCESIÓN DE SUBVENCIONES A ENTIDADES ASOCIATIVAS, AGRUPACIONES Y ASOCIACIONES DE VECINOS PARA LA REALIZACIÓN DE OBRAS Y ESTABLECIMIENTO, AMPLIACIÓN Y AVANCE DE SERVICIOS DE INTERÉS VECINAL. EJERCICIO 2026.",
+  "urlBasesReguladoras": "https://concellodecastroverde.gal/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE ESTAS EN EL BOLETÍN OFICIAL DE LA PROVINCIA DE LUGO ",
+  "textFin": "PLAZO DE 30 DÍAS NATURALES DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE ESTAS EN EL BOLETÍN OFICIAL DE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439774,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES VECIÑAIS 2026.pdf",
+      "long": 512879,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439773,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES VECINALES 2026 CASTELLANO.pdf",
+      "long": 417179,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

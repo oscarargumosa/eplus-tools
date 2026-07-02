@@ -47,11 +47,100 @@ const AtlasStats = (() => {
     if (!cached)   await loadData();
     if (!geoCache) await loadGeo();
     bindToggle();
+    bindSearch();
     renderKpis();
     renderTierDonut();
     renderBars();
     renderMap();
     renderTierFilters();
+  }
+
+  /* ── Buscador (entidad / ciudad) ─────────────────────────── */
+  function bindSearch() {
+    const input = document.getElementById('atlas-search-input');
+    const drop  = document.getElementById('atlas-search-results');
+    const wrap  = document.getElementById('atlas-search-wrapper');
+    if (!input || !drop || input._bound) return;
+    input._bound = true;
+
+    let lastReqId = 0;
+    let debounceTimer = null;
+    const debounce = (fn, ms) => (...args) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => fn(...args), ms);
+    };
+
+    async function doSearch() {
+      const q = input.value.trim();
+      if (q.length < 2) { drop.classList.add('hidden'); drop.innerHTML = ''; return; }
+      const reqId = ++lastReqId;
+      try {
+        const resp = await API.get(`/entities?q=${encodeURIComponent(q)}&limit=8`);
+        if (reqId !== lastReqId) return;
+        const rows = (resp && resp.rows) || [];
+        if (!rows.length) {
+          drop.innerHTML = '<div class="px-3 py-2 text-xs text-on-surface-variant">Sin resultados</div>';
+          drop.classList.remove('hidden');
+          return;
+        }
+        drop.innerHTML = rows.map(r => {
+          const oid  = r.oid || '';
+          const name = r.name || r.display_name || '(sin nombre)';
+          const sub  = [r.city, r.country_code].filter(Boolean).join(' · ');
+          return `
+            <button type="button" class="atlas-search-item w-full text-left px-3 py-2 hover:bg-secondary-fixed/40 border-b border-outline-variant/20 last:border-b-0"
+              data-oid="${esc(oid)}" data-name="${esc(name)}">
+              <div class="text-sm font-semibold text-primary truncate">${esc(name)}</div>
+              <div class="text-[11px] text-on-surface-variant truncate">${esc(sub)}</div>
+            </button>`;
+        }).join('');
+        drop.classList.remove('hidden');
+      } catch (e) {
+        drop.innerHTML = `<div class="px-3 py-2 text-xs text-error">${esc(e.message || 'Error')}</div>`;
+        drop.classList.remove('hidden');
+      }
+    }
+
+    const debounced = debounce(doSearch, 300);
+    input.addEventListener('input', debounced);
+    input.addEventListener('focus', () => { if (input.value.trim().length >= 2) doSearch(); });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { drop.classList.add('hidden'); input.blur(); }
+    });
+    document.addEventListener('click', (e) => {
+      if (wrap && !wrap.contains(e.target)) drop.classList.add('hidden');
+    });
+
+    drop.addEventListener('click', async (e) => {
+      const btn = e.target.closest('.atlas-search-item');
+      if (!btn) return;
+      const oid  = btn.dataset.oid;
+      const name = btn.dataset.name;
+      drop.classList.add('hidden');
+      input.value = name;
+      await flyToEntity(oid);
+    });
+  }
+
+  async function flyToEntity(oid) {
+    if (!map || !oid) return;
+    const m = (geoCache || []).find(x => x && x.o === oid);
+    if (m && m.a != null && m.g != null) {
+      map.flyTo({ center: [Number(m.g), Number(m.a)], zoom: 13, duration: 1200 });
+      return;
+    }
+    try {
+      const e = await API.get(`/entities/${encodeURIComponent(oid)}`);
+      const lat = parseFloat(e?.lat ?? e?.geocoded_lat);
+      const lng = parseFloat(e?.lng ?? e?.geocoded_lng);
+      if (Number.isFinite(lat) && Number.isFinite(lng)) {
+        map.flyTo({ center: [lng, lat], zoom: 13, duration: 1200 });
+      } else if (typeof Toast !== 'undefined') {
+        Toast.show('La entidad no tiene coordenadas', 'error');
+      }
+    } catch (err) {
+      if (typeof Toast !== 'undefined') Toast.show(err.message || 'Error', 'error');
+    }
   }
 
   /* ── Toggle 2D / 3D ──────────────────────────────────────── */
@@ -117,8 +206,8 @@ const AtlasStats = (() => {
     if (totalRowEl && total) totalRowEl.textContent = formatNumber(total);
     const cards = [
       kpi('Entidades vivas', total, 'public', 'primary', 'En la base de datos enriquecida.'),
-      kpi('Con email contacto', g.with_email, 'mail', 'lavender',
-        total ? Math.round((g.with_email/total)*100) + '% del total.' : ''),
+      kpi('Proyectos ejecutados', g.total_projects, 'rocket_launch', 'lavender',
+        'Proyectos Erasmus+ históricos en la base de datos.'),
       kpi('Países cubiertos', g.countries || new Set((geoCache||[]).map(m=>m.c)).size,
         'flag', 'yellow', 'Toda la UE + países asociados.'),
       kpi('Premium tier', tierPremium, 'workspace_premium', 'primary', 'Top 9% por completitud.'),

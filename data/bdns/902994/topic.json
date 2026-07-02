@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "902994",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE BARCELONA / DIPUTACIÓN PROVINCIAL DE BARCELONA",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "SUBVENCIONES DESTINADAS A FINANCIAR CICLOS Y FESTIVALES ARTÍSTICOS ORGANIZADOS POR EMPRESAS PRIVADAS DEL SECTOR CULTURAL, DURANTE EL AÑO 2026 POR UN IMPORTE DE 175.000 EUROS.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": "2026-05-28",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 175000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902994",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diba.cat/documents/446885/0/Ordenan%C3%A7a+General+Subvencions+17.pdf/01e71b5c-561b-4c94-a7a9-584247c623e5",
+  "text_inicio": "El día siguiente a la fecha de publicación del extracto en el BOPB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.975Z"
+}

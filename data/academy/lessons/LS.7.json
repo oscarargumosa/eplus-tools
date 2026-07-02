@@ -1,0 +1,69 @@
+{
+  "id": "LS.7",
+  "code": "UD-LS.7",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "I — Gestión post-aprobación",
+  "title": "Gestionar el presupuesto y pedir modificaciones (amendments)",
+  "subtitle": "Qué puedes cambiar libremente durante el proyecto, cuándo necesitas una enmienda formal y las dos reglas de oro: equivalencia de contenido y de presupuesto.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "3.5 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Una vez aprobado el proyecto, la vida cambia: un socio se cae, una actividad ya no tiene sentido, hay que mover dinero entre paquetes… y no sabes qué puedes tocar tú solo y qué requiere permiso oficial.",
+    "comprender": "Que hay flexibilidad para gestionar el lump sum mientras actividades y resultados se mantengan, pero que cambiar el reparto del importe o el contenido significativo del proyecto exige una amendment (enmienda) que evalúa la Agencia Nacional.",
+    "objetivo": "Distinguir qué cambios puedes hacer sin permiso, cuáles necesitan amendment, y aplicar las reglas de equivalencia de contenido y de presupuesto antes de mover nada.",
+    "confusion": "Pensar que el presupuesto aprobado es intocable, o lo contrario: creer que puedes redistribuir el dinero entre paquetes a tu antojo sin avisar a nadie.",
+    "importa": "Porque un cambio mal hecho convierte una actividad en inelegible y deja de pagarse; consultar a la Agencia Nacional antes de cambiar protege tu subvención."
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "kind": "content",
+      "title": "1. Tienes flexibilidad… con un límite claro",
+      "html": "<p>Una vez que la subvención está concedida, los beneficiarios tienen <b>flexibilidad para gestionar el lump sum</b>. No estás amarrado a cada coma del plan. Pero esa flexibilidad tiene una condición innegociable:</p><div class=\"callout callout-key\">Puedes gestionar el lump sum con libertad <b>siempre que las actividades se implementen como se previó en la propuesta y los resultados esperados sigan siendo los mismos.</b></div><p>Mientras el <em>qué</em> (actividades y resultados) se mantenga, tienes margen en el <em>cómo</em>. El problema aparece cuando lo que cambia toca el reparto del dinero o el contenido sustancial del proyecto. Ahí entra una palabra que conviene dominar: <b>amendment</b> (enmienda al convenio de subvención).</p>"
+    },
+    {
+      "id": "cuando-amendment",
+      "kind": "content",
+      "title": "2. Cuándo necesitas una amendment",
+      "html": "<p>El Handbook marca dos situaciones que <b>sí</b> requieren formalizar una enmienda:</p><ul><li><b>Cambiar el reparto de los shares del lump sum.</b> Si quieres formalizar un cambio en cómo se reparte el importe entre los work packages, eso <b>requiere una amendment.</b></li><li><b>Cambios de contenido significativos.</b> Si tienes que implementar <b>cambios de contenido importantes</b> en el proyecto, necesitas solicitar una <b>amendment del convenio de subvención</b>. Según el cambio, puede ser necesario modificar también la asignación presupuestaria.</li></ul><p>¿Quién decide? <b>La Agencia Nacional evalúa la solicitud de amendment</b> y, si la aprueba, pasa a formar parte del convenio de subvención.</p><div class=\"callout callout-warn\">Hay un límite que ninguna amendment puede cruzar: los cambios solicitados <b>no pueden cuestionar la decisión de concesión</b> ni romper de otro modo el <b>principio de igualdad de trato</b> entre solicitantes. No puedes convertir, vía enmienda, un proyecto en otro distinto al que se aprobó.</div>"
+    },
+    {
+      "id": "equivalencia",
+      "kind": "content",
+      "title": "3. Las dos reglas de oro: content equivalent y budget equivalent",
+      "html": "<p>Cuando quieras cambiar actividades planificadas, los cambios son posibles a través de una amendment <b>siempre que cumplan dos condiciones a la vez:</b></p><ol class=\"obj\"><li><b>Content equivalent (equivalencia de contenido).</b> La actividad nueva o modificada <b>contribuye a los objetivos y resultados</b> del proyecto. No vale sustituir por algo que no empuje hacia las mismas metas.</li><li><b>Budget equivalent (equivalencia de presupuesto).</b> La actividad modificada tiene un <b>coste comparable</b> al de la actividad originalmente planificada. No puedes cambiar una actividad barata por una mucho más cara (o al revés) sin romper el equilibrio.</li></ol><div class=\"callout callout-key\">Regla mental: un cambio legítimo <b>mantiene el rumbo (contenido) y mantiene el precio (presupuesto)</b>. Si conserva ambas equivalencias, encaja; si rompe una, está en riesgo.</div><p>Y como cada caso real puede ser muy distinto, el Handbook insiste en algo que deberías tatuarte:</p><div class=\"callout callout-good\"><b>Consulta SIEMPRE a la Agencia Nacional</b> antes de hacer el cambio, para evitar que la actividad acabe rechazada como inelegible.</div>"
+    },
+    {
+      "id": "completado",
+      "kind": "content",
+      "title": "4. Solo se cambia lo que aún no está hecho",
+      "html": "<p>Hay una restricción temporal sencilla pero crítica:</p><div class=\"callout callout-warn\">El beneficiario solo puede introducir cambios en un work package o actividad <b>si ese WP/actividad NO está ya completado.</b></div><p>La lógica es de puro sentido común: no puedes «modificar» algo que ya ocurrió y se terminó. Una vez completado un paquete, se evalúa tal cual se hizo. Por eso, si intuyes que una actividad va a necesitar cambios, gestiónalos <b>antes</b> de ejecutarla, no después.</p>"
+    },
+    {
+      "id": "reporting",
+      "kind": "content",
+      "title": "5. Cómo se traduce esto en el reporting",
+      "html": "<p>En la fase de informe (reporting), el importe que reportas por cada actividad o work package es <b>el mismo que se asignó en la solicitud o en la amendment</b>. No reinventas cifras al final: reportas lo que quedó fijado, ya fuera en la solicitud original o en una enmienda aprobada.</p><div class=\"callout callout-key\">Las <b>reducciones de la subvención</b> dependen <b>únicamente</b> de dos cosas: el <b>nivel de logro</b> de los objetivos del WP/actividad y la <b>calidad de los resultados.</b> No del gasto, no del detalle de costes.</div><p>Esto cierra el círculo del modelo lump sum: gestionas con flexibilidad, formalizas los cambios importantes con amendment, y al final te miden por lo que lograste y cómo de bien lo lograste.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Puedo mover dinero entre paquetes sin avisar a nadie.»</b> → No: formalizar un cambio en el reparto de los shares requiere una amendment.</li><li><span class=\"err-x\">✗</span> <b>«Cualquier cambio necesita amendment.»</b> → No: tienes flexibilidad mientras actividades y resultados se mantengan; la amendment es para reparto del importe o cambios de contenido significativos.</li><li><span class=\"err-x\">✗</span> <b>«Basta con que la nueva actividad apunte a los mismos objetivos.»</b> → Falta la otra mitad: también tiene que ser budget equivalent (coste comparable).</li><li><span class=\"err-x\">✗</span> <b>«Puedo cambiar un WP aunque ya lo haya terminado.»</b> → No: solo se cambia un WP/actividad si NO está completado.</li><li><span class=\"err-x\">✗</span> <b>«Mejor cambio primero y aviso a la Agencia después.»</b> → No: se recomienda consultar SIEMPRE a la Agencia Nacional antes, para no acabar con la actividad rechazada como inelegible.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026)</td><td>Sección <b>3.5</b> (gestión del presupuesto y amendments al convenio: flexibilidad, cuándo se requiere enmienda, content/budget equivalent, cambio solo de WP no completados, reporting).</td></tr></tbody></table>"
+    }
+  ]
+}

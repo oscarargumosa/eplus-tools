@@ -1,0 +1,81 @@
+{
+  "id": "M1.4",
+  "code": "M1.4 · Fundamentos",
+  "module": "M1",
+  "moduleTitle": "Fundamentos: ¿Qué es Erasmus+?",
+  "bloque": "B — Ecosistema y actores",
+  "title": "Quién es quién: Comisión, EACEA y Agencias Nacionales",
+  "subtitle": "El mapa de actores de Erasmus+ explicado fácil, y la pregunta que de verdad te importa: ¿a quién presento yo mi proyecto?",
+  "meta": {
+    "Nivel": "Iniciación",
+    "Duración": "10–20 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección + tabla de decisión",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "narration": "Te voy a contar un miedo muy común, a ver si te suena. Acabas de aterrizar en el mundo Erasmus+ y te bombardean con nombres: la Comisión, la agencia EACEA, las agencias nacionales, el SEPIE, el INJUVE... Suena a sopa de letras, y aparece ese temor de presentar tu proyecto en el sitio equivocado. Porque eso, ojo, sí pasa: presentar en la ventanilla que no es significa quedarte fuera sin que nadie llegue siquiera a leer tu proyecto. Así que vamos a ordenar esto, que es mucho más fácil de lo que parece.\n\nLa primera niebla no son los formularios, son los nombres. Pero son menos actores de los que crees y cada uno tiene un papel clarísimo. Te doy una imagen. Imagina Erasmus+ como un gran festival de música, con sedes por toda Europa. Hay un organizador general que decide el cartel y las reglas. Hay una oficina central que gestiona los conciertos más grandes y especiales, los que se ven en todo el continente. Y hay oficinas locales en cada ciudad que organizan los conciertos de su zona. Tú, según el tipo de concierto que quieras montar, hablas con la central o con la local. Nunca con las dos a la vez.\n\nVamos a los tres papeles. La Comisión Europea es la dueña del programa. Define la política, decide las prioridades, marca las reglas y publica la guía oficial. Es quien dice: esto es Erasmus+ y así funciona. Pero atención, esto es clave: tú no le presentas tu proyecto a la Comisión. Ella manda, no gestiona ventanillas. Luego está la agencia europea, la EACEA, que es la oficina central de gestión. Se ocupa de las acciones centralizadas: las más grandes, transnacionales o especializadas, que tiene sentido gestionar desde un único punto para toda Europa, como el capacity building, algunas de ka tres, el deporte a nivel europeo o las acciones Jean Monnet. Y por último, las agencias nacionales: las oficinas locales, una o varias en cada país. Gestionan las acciones descentralizadas, que son la mayoría de las que hará un recién llegado: casi toda la ka uno, movilidad, y la ka dos, cooperación. Son tu interlocutor de cercanía, en tu idioma y con tu calendario. En una frase: la Comisión manda, la agencia europea gestiona lo centralizado y las agencias nacionales gestionan lo de tu país.\n\nY todo el mapa se reduce a una sola pregunta sobre tu acción: ¿es descentralizada o centralizada? Si es descentralizada, de las normales y de tu país, se gestiona en tu país y va a tu agencia nacional; ahí caen la mayoría de ka uno y ka dos. Si es centralizada, grande, europea o especial, se gestiona desde Bruselas a través de la agencia europea. No hay tercera ventanilla. Y hay una diferencia muy práctica también en dónde haces clic: las centralizadas se solicitan en el portal de la Unión Europea, el de financiación; las descentralizadas, en el sistema de tu agencia nacional. No memorices toda la casuística, memoriza el reflejo: ante cualquier acción nueva, pregúntate primero descentralizada o centralizada, y la respuesta se ilumina sola.\n\nUn apunte concreto para España, porque agencia nacional suena abstracto hasta que le pones nombre. Aquí no hay una sola, hay dos, repartidas por sectores. El SEPIE es tu agencia si trabajas en educación: escolar, formación profesional, personas adultas o educación superior. Y el INJUVE es tu agencia si tu proyecto es de juventud o de deporte en el ámbito descentralizado. Atajo mental: ¿aulas, formación profesional, adultos o universidad? SEPIE. ¿Juventud o deporte? INJUVE. Eso sí, esto solo aplica a las descentralizadas; si tu acción es centralizada, ni uno ni otro: vas directo a la agencia europea por el portal de la Unión. Ya tienes el mapa de actores y sabes a qué ventanilla te diriges. En la siguiente lección cerramos el módulo con el glosario esencial, todas esas palabrejas traducidas al cristiano. Te espero ahí.",
+  "frame": {
+    "dolor": "Acabas de aterrizar en el mundo Erasmus+ y te bombardean con siglas: Comisión, EACEA, NA, SEPIE, INJUVE… Suena a sopa de letras y te entra el miedo de presentar tu proyecto en el sitio equivocado.",
+    "comprender": "Que detrás de Erasmus+ hay tres tipos de actores con papeles distintos (uno manda, otro gestiona lo grande y centralizado, otros gestionan lo de cada país) y que tú solo necesitas saber a cuál te diriges según tu acción.",
+    "objetivo": "Tener el mapa mental de quién hace qué y saber decidir, mirando una tabla, si tu proyecto se presenta a la Agencia Nacional o a la EACEA.",
+    "confusion": "Pensar que todos los proyectos se presentan en el mismo sitio, o creer que la Comisión Europea recibe tu solicitud directamente. No: depende de si tu acción es descentralizada o centralizada.",
+    "importa": "Porque presentar en la ventanilla equivocada significa quedarte fuera sin que nadie lea tu proyecto. Acertar el actor es el primer paso para que tu candidatura ni siquiera se descarte por una cuestión de forma."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "idea",
+      "title": "Por qué esta lección existe",
+      "html": "<p>Cuando empiezas con Erasmus+, la primera niebla no son los formularios: son los <b>nombres</b>. La Comisión, la EACEA, las Agencias Nacionales, el SEPIE, el INJUVE… Parece que necesitas un diccionario solo para saber a quién le hablas.</p><p>La buena noticia: <b>son menos actores de los que parece y cada uno tiene un papel muy claro.</b> En cuanto los ves como un equipo con tareas repartidas, la sopa de letras se ordena sola.</p><div class=\"callout callout-key\"><b>Analogía que usaremos.</b> Imagina Erasmus+ como un <em>gran festival de música</em> con sedes por toda Europa. Hay un <b>organizador general</b> que decide el cartel y las reglas (la Comisión), una <b>oficina central</b> que gestiona los conciertos más grandes y especiales que se ven en todo el continente (la EACEA), y <b>oficinas locales</b> en cada ciudad que organizan los conciertos de su zona (las Agencias Nacionales). Tú, según el tipo de concierto que quieras montar, hablas con la oficina central o con la local. Nunca con las dos a la vez.</div>"
+    },
+    {
+      "id": "objetivos",
+      "kind": "objetivos",
+      "title": "Qué sabrás hacer al terminar",
+      "html": "<p>Al terminar esta lección serás capaz de:</p><ol class=\"obj\"><li><b>Nombrar</b> los tres tipos de actor del programa (Comisión, EACEA, Agencias Nacionales) y decir en una frase qué hace cada uno.</li><li><b>Distinguir</b> entre acciones <em>descentralizadas</em> (las gestiona tu país) y <em>centralizadas</em> (las gestiona la EACEA desde Bruselas).</li><li><b>Decidir</b>, mirando una tabla, a quién y dónde se presenta tu proyecto según el tipo de acción.</li><li><b>Identificar</b> en España quién es tu Agencia Nacional según tu sector: <b>SEPIE</b> o <b>INJUVE</b>.</li></ol>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. Los tres actores, sin agobios",
+      "html": "<p>Quítate de la cabeza la idea de que hay veinte organismos. Para empezar, solo hay <b>tres papeles</b> que entender:</p><p><b>La Comisión Europea</b> es la <em>dueña</em> del programa. Define la política, decide las prioridades, marca las reglas y publica el <em>Programme Guide</em> (la guía oficial del programa). Es quien dice <em>«esto es Erasmus+ y así funciona»</em>. Pero, ojo: <b>tú no le presentas tu proyecto a la Comisión.</b> Ella manda, no gestiona ventanillas.</p><p>La <b>EACEA</b> (European Education and Culture Executive Agency) es la <em>oficina central</em> de gestión. Se ocupa de las acciones <b>centralizadas</b>: las más grandes, transnacionales o especializadas, que tiene sentido gestionar desde un único punto para toda Europa. Pensemos en <b>Capacity Building</b>, algunas <b>KA3</b>, <b>Deporte</b> a nivel europeo o <b>Jean Monnet</b>.</p><p>Las <b>Agencias Nacionales (NA)</b> son las <em>oficinas locales</em>: hay una (o varias) en cada país. Gestionan las acciones <b>descentralizadas</b>, que son <em>la mayoría</em> de las que hará un recién llegado: casi toda la <b>KA1</b> (movilidad) y la <b>KA2</b> (cooperación). Son tu interlocutor de cercanía: en tu idioma, con tu calendario nacional.</p><div class=\"callout callout-good\"><b>En una frase:</b> la Comisión <em>manda</em>, la EACEA <em>gestiona lo centralizado</em>, las Agencias Nacionales <em>gestionan lo de tu país</em>.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. La palabra clave: ¿centralizado o descentralizado?",
+      "html": "<p>Todo el mapa se reduce a una sola pregunta sobre <em>tu</em> acción: <b>¿es descentralizada o centralizada?</b> De la respuesta depende a quién te diriges.</p><p>Una acción <b>descentralizada</b> se gestiona <em>en cada país</em>. La recibe, evalúa y financia la <b>Agencia Nacional</b> de tu país. Aquí caen la mayoría de KA1 y KA2: son las puertas de entrada más habituales.</p><p>Una acción <b>centralizada</b> se gestiona <em>desde un único punto europeo</em>, la <b>EACEA</b> en Bruselas. Aquí están las acciones más grandes o especializadas (Capacity Building, Deporte europeo, Jean Monnet, algunas KA3).</p><div class=\"callout callout-key\">Regla mental: <b>si tu acción es \"de las normales y de tu país\" → Agencia Nacional. Si es \"grande, europea o especial\" → EACEA.</b> No hay tercera ventanilla.</div><p>Y otra diferencia muy práctica: <b>dónde</b> haces clic para presentar. Las acciones centralizadas se solicitan en el <b>portal de la UE</b> (Funding &amp; Tenders / SEDIA). Las descentralizadas se solicitan en el sistema de la <b>Agencia Nacional</b> de tu país.</p>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. La tabla que de verdad te importa",
+      "html": "<p>Esta es la chuleta. Antes de tocar nada, localiza tu acción aquí y sabrás a quién presentas y dónde:</p><table class=\"cmp\"><thead><tr><th>Tipo de acción</th><th>Quién la gestiona</th><th>Dónde se solicita</th></tr></thead><tbody><tr><td><b>KA1 — Movilidad</b> (mayoría)</td><td>Agencia Nacional (descentralizada)</td><td>Sistema de la NA de tu país</td></tr><tr><td><b>KA2 — Cooperación</b> (KA210 / KA220)</td><td>Agencia Nacional (descentralizada)</td><td>Sistema de la NA de tu país</td></tr><tr><td><b>Capacity Building</b></td><td>EACEA (centralizada)</td><td>Portal UE · Funding &amp; Tenders / SEDIA</td></tr><tr><td><b>Deporte</b> (acciones europeas)</td><td>EACEA (centralizada)</td><td>Portal UE · Funding &amp; Tenders / SEDIA</td></tr><tr><td><b>Jean Monnet</b></td><td>EACEA (centralizada)</td><td>Portal UE · Funding &amp; Tenders / SEDIA</td></tr><tr><td><b>KA3</b> (algunas acciones)</td><td>EACEA (centralizada)</td><td>Portal UE · Funding &amp; Tenders / SEDIA</td></tr></tbody></table><div class=\"callout callout-warn\">No memorices toda la tabla: memoriza el <b>reflejo</b>. Ante cualquier acción nueva, pregúntate primero «¿descentralizada o centralizada?» y la columna correcta se ilumina sola.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. En España: SEPIE e INJUVE",
+      "html": "<p>«Agencia Nacional» suena abstracto hasta que le pones nombre. En España no hay una sola NA: hay <b>dos</b>, repartidas por sectores. Saber cuál es la tuya es saber a quién llamar.</p><ul class=\"bullets\"><li><b>SEPIE</b> — Servicio Español para la Internacionalización de la Educación. Es tu Agencia Nacional si trabajas en <b>educación</b>: educación <em>escolar</em>, <em>Formación Profesional (FP)</em>, <em>educación de personas adultas</em> y <em>educación superior</em>.</li><li><b>INJUVE</b> — Instituto de la Juventud. Es tu Agencia Nacional si tu proyecto es de <b>juventud</b> o de <b>deporte</b> en el ámbito descentralizado.</li></ul><div class=\"callout callout-good\"><b>Atajo mental:</b> ¿tu proyecto va de aulas, FP, adultos o universidad? → <b>SEPIE</b>. ¿Va de juventud o deporte? → <b>INJUVE</b>.</div><p>Recuerda que esto solo aplica a las acciones <em>descentralizadas</em>. Si tu acción es centralizada (Capacity Building, Jean Monnet…), ni SEPIE ni INJUVE: vas directo a la <b>EACEA</b> por el portal de la UE.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Mi proyecto se lo presento a la Comisión Europea.»</b> → No. La Comisión es la dueña del programa y marca las reglas, pero <em>no recibe candidaturas</em>. Tú presentas a la NA o a la EACEA.</li><li><span class=\"err-x\">✗</span> <b>«Todos los proyectos se presentan en el mismo sitio.»</b> → No. Depende de si la acción es descentralizada (NA, en tu país) o centralizada (EACEA, portal UE).</li><li><span class=\"err-x\">✗</span> <b>«En España la Agencia Nacional es solo el SEPIE.»</b> → No. Hay dos: <b>SEPIE</b> (educación) e <b>INJUVE</b> (juventud y deporte).</li><li><span class=\"err-x\">✗</span> <b>«Una KA2 se presenta en la EACEA.»</b> → No. KA2 es descentralizada: va a tu <b>Agencia Nacional</b>. A la EACEA van las acciones centralizadas.</li><li><span class=\"err-x\">✗</span> <b>«EACEA y Agencia Nacional son lo mismo con otro nombre.»</b> → No. La EACEA gestiona lo centralizado para toda Europa; la NA gestiona lo descentralizado de tu país.</li></ul>"
+    },
+    {
+      "id": "siguiente",
+      "kind": "content",
+      "title": "Y ahora, ¿por dónde sigo?",
+      "html": "<p>Ya tienes el mapa de actores y sabes a qué ventanilla te diriges. El siguiente paso es aprender <em>cómo</em> se presenta por cada vía, porque el camino NA y el camino EACEA tienen formularios y lógicas distintas.</p><div class=\"callout callout-link\">🔗 Si tu proyecto va por la <b>Agencia Nacional</b> (la mayoría de KA2), tu siguiente parada es <b>«El Handbook KA2 desgranado»</b>. Si va por la vía <b>centralizada</b> de la EACEA, ve al <b>«Curso EACEA Part B»</b>.</div>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0006</b></td><td>Reparto de competencias entre Comisión, EACEA y Agencias Nacionales; acciones centralizadas vs descentralizadas.</td></tr><tr><td><b>kb-0007</b></td><td>Mapa de acciones por Key Action y vía de presentación (portal UE / NA); referencia de SEPIE e INJUVE en España.</td></tr></tbody></table>"
+    }
+  ]
+}

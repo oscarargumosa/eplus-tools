@@ -1,0 +1,111 @@
+{
+  "id": 1099279,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PONTEAREAS",
+    "nivel3": "AYUNTAMIENTO DE PONTEAREAS"
+  },
+  "sedeElectronica": "https://ponteareas.sedelectronica.gal/info.0",
+  "codigoBDNS": "897718",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "LVIII CONCURSO DE GAITAS DEL PAÍS – PONTEAREAS 2026",
+  "descripcionLeng": "LVIII CONCURSO DE GAITAS DO PAÍS – PONTEAREAS 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "LVIII CONCURSO DE GAITAS DO PAÍS – PONTEAREAS 2026",
+  "urlBasesReguladoras": "https://portal.ponteareas.gal/axudas-subvencions/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-11",
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL ESTRACTO DE LA CONVOCATORIA EN EL BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431793,
+      "descripcion": "Solicitude para grupos que pertencen a unha asociación",
+      "nombreFic": "Anexo I. ASOCIACIÓNS. concurso de gaitas 2026.pdf",
+      "long": 3134778,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431795,
+      "descripcion": "Autorización para menores de idade. Concurso de Gaitas",
+      "nombreFic": "Anexo II Autorización a Menores de idade. Concurso de Gaitas 2026.pdf",
+      "long": 3062300,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431796,
+      "descripcion": "Comprobar débedas individual. Concurso de Gaitas",
+      "nombreFic": "Anexo III Autorización individual. Comprobar débedas. Concurso de Gaitas 2026.pdf",
+      "long": 3077217,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431794,
+      "descripcion": "Solicitude para grupos que non pertencen a unha asociación",
+      "nombreFic": "Anexo I. GRUPOS. concurso de gaitas 2026.pdf",
+      "long": 3128825,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431790,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases do LVIII Concurso de Gaitas do País, Ponteareas 2026glg.pdf",
+      "long": 258625,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431789,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases do LVIII Concurso de Gaitas do País, Ponteareas 2026spa.pdf",
+      "long": 129072,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

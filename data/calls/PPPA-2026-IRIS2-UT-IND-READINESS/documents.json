@@ -1,0 +1,100 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/wp-call/2026/call-fiche_pppa-2026-iris2-ut-indready_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5a. Evaluation and award: Submission and evaluation processes",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard PPPA Application Form",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/temp-form/af/af_pppa_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard Detailed Budget Table",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/temp-form/af/detailed-budget-table_pppa_en.xlsm",
+    "ext": ".xlsm",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Declaration of ownership and control",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/ownership-control-declaration_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Lump Sum MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "COMMISSION DECISION of 24.6.2025 on the financing of the pilot projects and preparatory actions in the space area and the adoption of the work programme for 2025",
+    "url": "https://defence-industry-space.ec.europa.eu/document/ecfa046d-478d-49c4-844d-8c187601c909_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Annex on the financing of the pilot projects and preparatory actions in the space area and the adoption of the work programme for 2025, C(2025) 3868",
+    "url": "https://defence-industry-space.ec.europa.eu/document/3f1da0e8-0426-4cd2-ae3f-e20fc79282f5_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  }
+]

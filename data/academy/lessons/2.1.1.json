@@ -1,0 +1,58 @@
+{
+  "id": "2.1.1",
+  "code": "Part B · 2.1.1",
+  "module": "EACEA",
+  "moduleTitle": "Quality of design and implementation",
+  "bloque": "F — Técnicas de redacción",
+  "title": "2.1.1 Concepto y metodología",
+  "subtitle": "Cómo explicar el enfoque y la metodología de tu proyecto y demostrar que son los más adecuados para lograr tus objetivos.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.1.1",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Te piden \"el concepto y la metodología\" y no sabes si quieren un resumen del proyecto, una lista de actividades o una teoría pedagógica. Acabas escribiendo una descripción genérica que podría valer para cualquier proyecto.",
+    "comprender": "Que esta pregunta no pide describir QUÉ haces, sino explicar CÓMO lo haces y POR QUÉ ese cómo es la mejor manera de alcanzar los objetivos que prometiste en la Parte 1.",
+    "objetivo": "Saber construir la cadena lógica objetivos → enfoque → metodología → actividades, de modo que cada actividad se vea como consecuencia natural del problema que quieres resolver.",
+    "confusion": "Creer que \"metodología\" es nombrar marcos sofisticados (design thinking, aprendizaje basado en retos…). La metodología es la lógica que conecta lo que haces con lo que quieres conseguir, tenga nombre célebre o no.",
+    "importa": "Porque es la primera pregunta del criterio que vale 30 puntos. Si el evaluador no entiende aquí por qué tu plan es el adecuado, leerá el resto del proyecto con desconfianza."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El formulario, en su apartado 2.1.1, te pide literalmente esto:</p><div class=\"callout callout-key\"><b>📋 Expón el enfoque (<em>approach</em>) y la metodología del proyecto. Explica por qué son los más adecuados para lograr los objetivos.</b></div><p>Tres palabras que conviene separar, porque la gente las confunde:</p><ul><li><b>Enfoque</b> = la idea-marco, la apuesta de fondo. \"Vamos a partir de las necesidades reales del alumnado en vez de imponer un currículo cerrado.\" Es tu manera de mirar el problema.</li><li><b>Metodología</b> = el método de trabajo concreto. \"Diagnóstico participativo → co-creación con socios → pilotaje → evaluación iterativa → escalado.\" Es la secuencia lógica que seguirás.</li><li><b>Adecuación</b> = la justificación. <em>Por qué</em> ese enfoque y ese método son la mejor vía hacia <em>tus</em> objetivos, y no otra cualquiera.</li></ul><p>La palabra clave de toda la pregunta es <b>«más adecuados»</b>. No te piden que tu metodología sea bonita o moderna: te piden que demuestres que es la <em>correcta para este proyecto concreto</em>.</p>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador no busca un ensayo pedagógico. Busca una <b>cadena lógica</b> que pueda seguir sin esfuerzo. Esa cadena tiene cuatro eslabones:</p><ol class=\"obj\"><li><b>Objetivo</b> (lo que prometiste en la Parte 1).</li><li><b>Enfoque</b> que eliges para alcanzarlo.</li><li><b>Metodología</b> (la secuencia de pasos que materializa ese enfoque).</li><li><b>Actividades</b> que se derivan de la metodología (y que luego desarrollas en los work packages).</li></ol><p>Si el evaluador puede trazar una línea recta desde tu objetivo hasta cada actividad, has ganado la pregunta. Si las actividades parecen elegidas \"porque sí\", la has perdido.</p><div class=\"callout callout-good\"><b>Evidencia, no afirmación.</b> No escribas \"usaremos una metodología participativa e innovadora\". Eso es una afirmación vacía. Escribe <em>qué</em> harás participativo, <em>con quién</em>, en <em>qué momento</em> y <em>por qué</em> eso responde mejor al problema. La adecuación se demuestra con decisiones concretas, no con adjetivos.</div><p>Dos técnicas que suben la nota:</p><ul><li><b>Justifica por contraste.</b> \"Optamos por co-crear los materiales con los centros en lugar de encargarlos a un experto externo, porque el problema detectado es la baja apropiación del profesorado.\" Mostrar la alternativa que descartaste demuestra que pensaste el diseño.</li><li><b>Ancla en el diagnóstico.</b> Cada elección metodológica debería poder rastrearse hasta una necesidad real que ya describiste en \"Relevancia\". El método nace del problema, no de la moda.</li></ul>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Comparemos una respuesta floja y una sólida para un proyecto cuyo objetivo es <em>mejorar la competencia digital del profesorado de FP</em>.</p><table class=\"cmp\"><thead><tr><th>Floja (afirmación)</th><th>Sólida (evidencia + cadena lógica)</th></tr></thead><tbody><tr><td>\"Aplicaremos una metodología innovadora y centrada en el alumno, con un enfoque participativo y colaborativo entre todos los socios.\"</td><td>\"Como el diagnóstico mostró que el profesorado abandona las herramientas digitales tras la formación inicial, nuestro enfoque es <b>aprender-haciendo en el aula real</b>, no en talleres aislados. La metodología sigue cuatro fases: (1) diagnóstico de competencias por centro; (2) co-diseño de secuencias didácticas con cada profesor; (3) pilotaje acompañado en sus propias clases con mentoría entre pares; (4) evaluación y ajuste. Elegimos la mentoría entre pares en vez de cursos externos porque el problema no es el desconocimiento técnico, sino la falta de transferencia al aula.\"</td></tr></tbody></table><p>Checklist de una respuesta que puntúa:</p><ul><li>☐ El objetivo aparece nombrado y la metodología se presenta como su consecuencia.</li><li>☐ El método está en <b>fases o pasos</b> claros, no en un párrafo nebuloso.</li><li>☐ Al menos una elección metodológica está <b>justificada por contraste</b> con la alternativa descartada.</li><li>☐ Las actividades que luego habrá en los WP <b>ya se intuyen</b> aquí: no hay sorpresas.</li><li>☐ Todo se ancla en necesidades reales del diagnóstico, no en tendencias.</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Describo el proyecto y ya está.»</b> → Describir QUÉ haces no es explicar CÓMO ni POR QUÉ. El evaluador quiere la lógica que une objetivos y actividades, no un resumen.</li><li><span class=\"err-x\">✗</span> <b>«Cuantos más nombres de metodologías de moda, mejor.»</b> → Acumular etiquetas (design thinking, gamificación, ABP…) sin usarlas suena a relleno. Una metodología bien justificada gana a cinco mencionadas de pasada.</li><li><span class=\"err-x\">✗</span> <b>«Metodología innovadora y participativa.»</b> → Adjetivos sin evidencia. Innovador y participativo respecto a qué, con quién y por qué. Si no lo demuestras, no cuenta.</li><li><span class=\"err-x\">✗</span> <b>«La metodología va por un lado y las actividades por otro.»</b> → Si las actividades de tus WP no se derivan visiblemente del método que describes aquí, el evaluador detecta incoherencia y baja la nota de todo el criterio.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · 2.1.1</b></td><td>El texto literal de la pregunta: enfoque, metodología y su adecuación a los objetivos.</td></tr><tr><td><b>kb-0095</b> Rúbrica del evaluador</td><td>Confirma que en \"Quality of design and implementation\" se valora la coherencia objetivos→método→actividades y que las afirmaciones sin evidencia no puntúan.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomendaciones prácticas: justificar elecciones, anclar en el diagnóstico y evitar el lenguaje genérico.</td></tr></tbody></table>"
+    }
+  ]
+}

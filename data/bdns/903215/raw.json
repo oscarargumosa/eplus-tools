@@ -1,0 +1,107 @@
+{
+  "id": 1104776,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ASTIGARRAGA",
+    "nivel3": "AYUNTAMIENTO DE ASTIGARRAGA"
+  },
+  "sedeElectronica": "www.astigarraga.eus",
+  "codigoBDNS": "903215",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases específicas para las  subvenciones destinadas al fomento de la  cultura y las fiestas en Astigarraga.",
+  "descripcionLeng": "Kultura eta Jaien arloko jarduerak sustatzeko dirulaguntzen deialdia eta oinarri espezifikoak. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas en régimen de concurrencia: Área de Cultura y Fiestas.",
+  "urlBasesReguladoras": "https://www.astigarraga.eus/eu/-/kultura-jaiak-eta-ospakizunak-sustatzeko-dirulaguntzak_2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la publicación de la convocatoria en el Boletín Oficial de Gipuzkoa (BOG)",
+  "textFin": "Quince días naturales a partir del día siguiente al de la publicación de la convocatoria.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447569,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Oinarriak Kultura eta Jai arloko lehia bidezko dirulaguntzak.pdf",
+      "long": 331747,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447571,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Oinarriak Kultura eta Jai arloko lehia bidezko dirulaguntzak.pdf",
+      "long": 331747,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447579,
+      "descripcion": "Documento que indica el grado de cumplimiento de los criterios lingüísticos",
+      "nombreFic": "E097.pdf",
+      "long": 159974,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447574,
+      "descripcion": "Ficha de la actividad",
+      "nombreFic": "E096 JARDUERA FITXA dirulaguntza eskatzeko.pdf",
+      "long": 172541,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447576,
+      "descripcion": "Ficha de valoración de género",
+      "nombreFic": "E036.pdf",
+      "long": 123325,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1447572,
+      "descripcion": "Solicitud",
+      "nombreFic": "E088 Lehia bidezko ESKAERA.pdf",
+      "long": 195287,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

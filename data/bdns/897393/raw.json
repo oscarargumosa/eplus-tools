@@ -1,0 +1,88 @@
+{
+  "id": 1098954,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "DIRECCIÓN GENERAL DE PLANIFICACIÓN, EVALUACIÓN Y FARMACIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897393",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45000,
+  "mrr": false,
+  "descripcion": "Actividades en materia de consumo para los ejercicios de 2025 y 2026",
+  "descripcionLeng": "Activitats en matèria de consum per als exercicis de 2025 i 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Sanidad",
+  "descripcionBasesReguladoras": "Ordre 18/2025, de 7 de juliol, de la consellera de Salut per la qual s’estableixen les bases reguladores per concedir subvencions en matèria de salut pública, de salut mental, de drogodependències i altres addiccions, i de consum",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/eli/es-ib/o/2025/07/07/18/dof/spa/html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "el termini de presentació de sol·licituds és de 15 dies hàbils comptadors dia següent BOIB",
+  "textFin": "el termini de presentació de sol·licituds és de 15 dies hàbils comptadors dia següent BOIB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1445046,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Document BDNS (català).PDF",
+      "long": 615108,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    },
+    {
+      "id": 1445045,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Document BDNS (castellà).PDF",
+      "long": 595197,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208122,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/ca/2026/12264/714475/resolucio-de-la-consellera-de-salut-per-la-qual-s-",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

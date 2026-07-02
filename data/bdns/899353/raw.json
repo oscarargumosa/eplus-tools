@@ -1,0 +1,160 @@
+{
+  "id": 1100914,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILA-SECA",
+    "nivel3": "AYUNTAMIENTO DE VILA-SECA"
+  },
+  "sedeElectronica": "https://vila-seca.eadministracio.cat/info.0",
+  "codigoBDNS": "899353",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Subvenciones, en régimen de concurrencia no competitiva para para la creación y el establecimiento de nuevas empresas en el municipio de Vila-seca (L2: Empresas lideradas por mujeres)",
+  "descripcionLeng": "Subvencions, en règim de concurrència no competitiva per a per a la creació i l’establiment de noves empreses al municipi de Vila-seca (L2: Empreses liderades per dones)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Bases Reguladores de la subvenció per a la creació i l’establiment de noves empreses del municipi",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/350260/bases-reguladores-per-a-la-concessio-de-subvencions-en-regim-de-concurrencia-no-competitiva-per-a-la-creacio-i-l-establiment-de-noves-empreses-al-municipi-aprovacio-definitiva-ajuntament-vila-seca",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria al BOP Tarragona",
+  "textFin": "durante el plazo de 15 días hábiles siguiente a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436868,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260303_CONVOCATORIA EMPRENEDORIA 2026 - Castellà (1).pdf",
+      "long": 247340,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436877,
+      "descripcion": "Memòria d’activitat",
+      "nombreFic": "Memoria d.pdf",
+      "long": 177107,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436869,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260303_CONVOCATORIA EMPRENEDORIA 2026 - Català (2).pdf",
+      "long": 255429,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898015",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE OVIEDO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "RESOLUCIÓN DE 09 DE ABRIL DE 2026 DE LA VICERRECTORA DE LA UNIVERSIDAD DE OVIEDO POR LA QUE SE AUTORIZA EL GASTO Y SE APRUEBA LA CONVOCATORIA PÚBLICA DE AYUDAS ECONÓMICAS DESTINADAS A FINANCIAR LA DIFUSIÓN DE RESULTADOS DE LA INVESTIGACIÓN - 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": null,
+  "deadline": "2026-07-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Convocatorias de investigación - Universidad de Oviedo - uniovi.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898015",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2025-01026&p_r_p",
+  "text_inicio": "Primer día hábil siguiente a la publicación en el BOPA",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.358Z"
+}

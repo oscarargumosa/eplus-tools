@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898212",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CÓRDOBA / DIPUTACIÓN PROVINCIAL DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "Convocatoria de subvenciones del Banco de Recursos Provincial de Sensibilización y Educación 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": "2026-05-04",
+  "deadline": "2026-05-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    }
+  ],
+  "apply_url": "https://sede.eprinsa.es/diputacion",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898212",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cooperacioninternacional.dipucordoba.es/convocatoria-de-subvenciones-para-ayuntamientos-y-elas-banco-de-recursos/",
+  "text_inicio": "uno de mayo de dos mil veintiséis",
+  "text_fin": "treinta de mayo de dos mil veintiséis",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.467Z"
+}

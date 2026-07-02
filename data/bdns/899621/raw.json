@@ -1,0 +1,72 @@
+{
+  "id": 1101182,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE TARRAGONA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE TARRAGONA"
+  },
+  "sedeElectronica": "https://seuelectronica.dipta.cat",
+  "codigoBDNS": "899621",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 170000,
+  "mrr": false,
+  "descripcion": "Becas alumnos Escuelas y Conservatorios de Música de la Diputación de Tarragona",
+  "descripcionLeng": "Beques alumnat Escoles i Conservatoris de Música",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases generales de subvenciones de la Diputació de Tarragona y de sus Organismos Autónomos",
+  "urlBasesReguladoras": "https://www.diputaciodetarragona.cat/ebop/index.php?op=anunci&id=1723&ebop_any=2019",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-23",
+  "fechaFinSolicitud": "2026-06-10",
+  "textInicio": "Desde el día siguiente a la publicación en el BOPT.",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442348,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA BEQUES MÚSICA CASTELLÀ.PDF",
+      "long": 372689,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    },
+    {
+      "id": 1442349,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA BEQUES MÚSICA CATALÀ.PDF",
+      "long": 334415,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

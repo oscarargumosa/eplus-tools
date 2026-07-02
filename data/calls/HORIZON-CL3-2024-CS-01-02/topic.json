@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL3-2024-CS-01-02",
+  "ccm2Id": "45763985",
+  "callIdentifier": "HORIZON-CL3-2024-CS-01",
+  "callTitle": "",
+  "title": "Post-quantum cryptography transition",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"Post-quantum cryptography\",\"Security\",\"Cryptology (Cryptography and Cryptanalysis) \",\"Cybersecurity Research Domains \",\"Measurement and assessment of security levels.\",\"Internet of Things, embedded/pervasive systems\",\"Cyber security\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-CS-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.474Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1102021,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE VIGO",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900460",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Resolución rectoral por la que se publica la convocatoria del programa becas \"Santander Excelencia 360º \" en la Universidad de Vigo en el curso 2025/2026",
+  "descripcionLeng": "Resolución reitoral pola que se publica a convocatoria do programa bolsas “Santander Excelencia 360º” na Universidade de Vigo no curso 2025/2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución rectoral por la que se publica la convocatoria del programa becas \"Santander Excelencia 360º \" en la Universidad de Vigo en el curso 2025/2026",
+  "urlBasesReguladoras": "https://secretaria.uvigo.gal/uv/web/convocatoria/public/show/1822",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-05-07",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439838,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260421_Convoc_Santander_360º_25_26.pdf",
+      "long": 495889,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439837,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convoc_Santander_360º_25_26 - castellano.pdf",
+      "long": 439900,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

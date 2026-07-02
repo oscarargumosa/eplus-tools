@@ -1,0 +1,80 @@
+{
+  "id": 1100766,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CANILLAS DE ACEITUNO",
+    "nivel3": "AYUNTAMIENTO DE CANILLAS DE ACEITUNO"
+  },
+  "sedeElectronica": "https://canillasdeaceituno.sedelectronica.es",
+  "codigoBDNS": "899205",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7500,
+  "mrr": false,
+  "descripcion": "Extracto Resolución de Alcaldía nº 2026-0130, de fecha 16/04/2026, para la concesión de ayudas destinadas a sufragar gastos de material escolar o material didáctico para el alumnado empadronado en el municipio de Canillas de Aceituno",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE MATERIAL ESCOLAR Y/O DIDÁCTICO PARA EL ALUMNADO DEL CENTRO PÚBLICO DE EDUCACIÓN INFANTIL, PRIMARIA Y SECUNDARIA CEIP VIRGEN DE LA CABEZA",
+  "urlBasesReguladoras": "https://canillasdeaceituno.sedelectronica.es/doc/3MDYZD57A2ATZN9ARQPC7ZECL",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la presente convocatoria en el BOP",
+  "textFin": "20 DÍAS HÁBILES a partir de la publicación en el BOPMA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436418,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260416_Resolución_DECRETO 2026-0130 [CONVOCATORIA 2026 AYUDAS MATERIAL ESCOLAR ].pdf",
+      "long": 364663,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436424,
+      "descripcion": "Bases reguladoras",
+      "nombreFic": "20260306_Otros_Bases de concesión de subvenciones material escolar.pdf",
+      "long": 232585,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436421,
+      "descripcion": "Solicitud y declaración responsable",
+      "nombreFic": "20260223_ANEXO SOLICITUD AYUDAS MATERIAL ESCOLAR.pdf",
+      "long": 733764,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

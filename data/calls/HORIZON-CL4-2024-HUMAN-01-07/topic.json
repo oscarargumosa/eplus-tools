@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL4-2024-HUMAN-01-07",
+  "ccm2Id": "45703902",
+  "callIdentifier": "HORIZON-CL4-2024-HUMAN-01",
+  "callTitle": "",
+  "title": "Collaborative intelligence – combining the best of machine and human (AI Data and Robotics Partnership) (RIA)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-15",
+  "deadline": "2024-03-19",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Machine learning, statistical data processing and\",\"Social sciences and humanities\",\"Digital Agenda\",\"Open data\",\"Machine translation\",\"Computer graphics, computer vision, multi media, c\",\"Computer graphics\",\"Software engineering, operating systems, computer\",\"Semantic web technologies\",\"Multi media\",\"Co-programmed European Partnerships\",\"Data curation\",\"Web and information systems, database systems, inf\",\"Human computer interaction\",\"Artificial Intelligence\",\"Computer sciences, information science and bioinfo\",\"Gender in computer sciences\",\"Cognitive science\",\"Gender in engineering and technology\",\"Linked open data\",\"Wearable technologies\",\"Ontologies, neural networks, genetic programming,\",\"Artificial intelligence, intelligent systems, mult\",\"Ethics in engineering and technologies\",\"Natural language processing\",\"Data visualization\",\"Networks (communication networks, sensor networks,\",\"Computer vision\",\"collaborative decision making\",\"decision support systems\",\"human-machine collaboration and interaction\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "DigitalAgenda",
+    "PART-COPROGR",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-HUMAN-01-07.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.461Z"
+}

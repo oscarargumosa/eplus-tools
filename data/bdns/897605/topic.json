@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "897605",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE TERUEL / DIPUTACIÓN PROVINCIAL DE TERUEL",
+  "nuts_codes": [
+    "ES242"
+  ],
+  "nuts_primary": "ES242",
+  "title": "APROBACIÓN CONVOCATORIA DE SUBVENCIONES PARA CURSOS DE FORMACIÓN DE BANDAS DE MÚSICA DE LA PROVINCIA DE TERUEL 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": "2026-04-13",
+  "deadline": "2026-05-12",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 75000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://dpteruel.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897605",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://236ws.dpteruel.es/estatico/boletines/2024/29mayo.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.091Z"
+}

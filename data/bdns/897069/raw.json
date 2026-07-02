@@ -1,0 +1,92 @@
+{
+  "id": 1098630,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PAMPLONA/IRUÑA",
+    "nivel3": "AYUNTAMIENTO DE PAMPLONA/IRUÑA"
+  },
+  "sedeElectronica": "https://sedeelectronica.pamplona.es",
+  "codigoBDNS": "897069",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA PARA AYUDAS A INDUSTRIAS CULTURALES, ARTÍSTICAS Y CREATIVAS PARA LA REALIZACIÓN Y PROGRAMACIÓN DE ACTIVIDADES CULTURALES Y ARTÍSTCAS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES220 - Navarra"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA PARA AYUDAS A INDUSTRIAS CULTURALES, ARTÍSTICAS Y CREATIVAS PARA LA REALIZACIÓN Y PROGRAMACIÓN DE ACTIVIDADES CULTURALES Y ARTÍSTCAS 2026",
+  "urlBasesReguladoras": "https://sedeelectronica.pamplona.es/buscadortramites.aspx?cat=3&subcat=2&pagina=0&enlace=LiConcAyudasSubvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publciación del extracto de la convocatoria en el BON",
+  "textFin": "Un mes, a partir de la publicación del extracto de la convocatoria en el BON",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429618,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CC_Subvención.PDF",
+      "long": 981380,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429621,
+      "descripcion": "Anexos Euskera",
+      "nombreFic": "Anexos sub industrias euskera.pdf",
+      "long": 7239000,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429620,
+      "descripcion": "Anexos castellano",
+      "nombreFic": "Anexos Subv Industrias.PDF",
+      "long": 5779552,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1429619,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "KULT_26045_12_CC_Subvención_EUS.pdf",
+      "long": 948801,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

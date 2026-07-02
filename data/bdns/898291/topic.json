@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898291",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Orde de 30 de marzo de 2026 de la Consellería de Cultura, Lengua y Juventud por la que se establecen las bases reguladoras para la concesión de subvenciones para la participación de profesionales de la creación literaria gallega en residencias literarias ",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": "2026-05-18",
+  "deadline": "2026-06-17",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898291",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "htttps://www.xunta.gal",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.494Z"
+}

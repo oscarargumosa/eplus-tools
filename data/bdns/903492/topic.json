@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "903492",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TINEO / AYUNTAMIENTO DE TINEO",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "CONVOCATORIA SUBVENCIONES PARA EL CONCURSO DE CABALLOS DE PURA RAZA ESPAÑOLA Y CRUZADOS",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6850,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.tineo.es/action/tramites?method=enter",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903492",
+  "documents": [
+    {
+      "label": "FICHA DE INSCRIPCIÓN",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.tineo.es/otras-ordenanzas-y-reglamentos",
+  "text_inicio": "DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOPA",
+  "text_fin": "26/06/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.170Z"
+}

@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "903567",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE AGRICULTURA, PESCA, AGUA Y DESARROLLO RURAL",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "Orden de 5 de mayo de 2026, por la que se convocan las ayudas previstas en la orden de 2 de septiembre de 2022,  a la parada temporal de la flota con puerto base en Andalucía de la modalidad de cerco que faena en el caladero Mediterráneo, PO FEMPA",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 800000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "03.3",
+      "descripcion": "Actividades de apoyo a la pesca y la acuicultura"
+    },
+    {
+      "codigo": "03.1",
+      "descripcion": "Pesca"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903567",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.juntadeandalucia.es/eboja/2022/173/BOJA22-173-00027-14064-01_00267344.pdf",
+  "text_inicio": "Día siguiente hábil a la publicación BOJA",
+  "text_fin": "Décimo día hábil a contar desde el siguiente a la publicación BOJA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.196Z"
+}

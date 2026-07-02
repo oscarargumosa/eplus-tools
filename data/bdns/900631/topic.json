@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "900631",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TERUEL / AYUNTAMIENTO DE TERUEL",
+  "nuts_codes": [
+    "ES242"
+  ],
+  "nuts_primary": "ES242",
+  "title": "CONVOCATORIA SUBVENCIONES DE AYUDAS AL ALQUILER PARA FAMILIAS MONOPARENTALES PARA EL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": "2026-04-28",
+  "deadline": "2026-09-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "68",
+      "descripcion": "Actividades inmobiliarias "
+    }
+  ],
+  "apply_url": "https://sede.teruel.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900631",
+  "documents": [
+    {
+      "label": "Acuerdo aprobación convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.teruel.es/wp-content/uploads/documentos/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "A partir del día siguiente al de la publicación del extracto de la convocatoria en el B.O.P.",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209690,
+      "titulo": "CONVOCATORIA SUBVENCIONES DE AYUDAS AL ALQUILER PARA FAMILIAS MONOPARENTALES PARA EL AÑO 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrá solicitar y ser beneficiaria de la subvención objeto de esta convocatoria la persona física, mayor de edad, que sea titular de un contrato de arrendamiento de vivienda y que cumpla los siguientes requisitos a la fecha de publicación de la convocatoria:</p><p>A. Tener la Resolución de reconocimiento de familia monoparental o carné de familia monoparental en vigor.</p><p>B. Poseer la nacionalidad española, o la de alguno de los Estados miembros de la Unión Europea o del Espacio Económico Europeo, Suiza, o contar con autorización de estancia o residencia legal en España y NIE en vigor. Todas las personas que integran la unidad de convivencia deberán cumplir esta condición en el momento de la solicitud.</p><p>C. Ser titular de un contrato de arrendamiento de vivienda sita en el término municipal de Teruel y que la vivienda arrendada constituya el domicilio habitual y permanente de los integrantes de la familia monoparental reconocida por Resolución del órgano competente del Gobierno de Aragón. Arrendador y arrendatario no podrán mantener entre sí relación de parentesco de primer grado.</p><p>D. La persona titular del contrato de arrendamiento y el resto de integrantes de la familia monoparental deberán estar empadronados en la vivienda arrendada en la fecha de la publicación de la convocatoria en el Boletín Oficial de la Provincia de Teruel.</p><p>E. Acreditar unos ingresos anuales del titular del contrato de arrendamiento inferiores a 4,5 veces el valor del IPREM en 12 pagas (32 400€ brutos anuales).</p><p>Segundo. Finalidad:</p><p>El objeto de la presente convocatoria es facilitar el acceso a una vivienda en régimen de alquiler a las familias monoparentales, mediante la concesión de subvenciones en régimen de concurrencia competitiva simplificada.</p><p>Tercero. Bases reguladoras:</p><p>La Ordenanza General Reguladora de las Bases de Concesión de Subvenciones por el Ayuntamiento de Teruel, fue aprobada inicialmente por el Ayuntamiento Pleno el día 7 de julio de 2025 y publicada su aprobación definitiva en el Boletín Oficial de la Provincia de Teruel n.º 168 del día 5 de septiembre de 2025, entrando en vigor el 29 de septiembre de 2025.</p><p>Cuarto. Importe:</p><p>Cuantía máxima total de las subvenciones convocadas es de 10.000,00 €.</p><p>Quinto. Presentación de solicitudes:</p><p>Las solicitudes se presentarán mediante el modelo normalizado que estará a disposición en la sede electrónica del Ayuntamiento de Teruel.</p><p>El plazo de presentación de las solicitudes se iniciará a partir del día siguiente al de la publicación de la presente convocatoria en el Boletín Oficial de la Provincia de Teruel, hasta el día 15 de septiembre de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://236ws.dpteruel.es/DPT/bopt.nsf/0/3F1566D2E22DDC9FC1258DE3003C02AB",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE TERUEL",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.796Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "4.4",
+  "code": "Part B · 4.4",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.4 Subcontratación (subcontracting)",
+  "subtitle": "Qué tareas se subcontratan y por qué frente a ejecutarlas tú; por qué en lump sum prefijado suele ir n/a; y cuándo subcontratar tiene sentido (y sus riesgos).",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.4",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Ves un campo de \"subcontratación\" y dudas: ¿tengo que externalizar algo? ¿Si no lo hago pierdo puntos? ¿Y si lo hago me penalizan por no tener capacidad propia?",
+    "comprender": "Que subcontratar es encargar una tarea concreta a un tercero externo al consorcio, y que el formulario quiere saber qué externalizas y por qué, no obligarte a hacerlo.",
+    "objetivo": "Saber cuándo tiene sentido subcontratar frente a ejecutar directamente, por qué en lump sum prefijado este campo suele ir n/a, y cómo justificarlo si lo usas.",
+    "confusion": "Pensar que subcontratar es lo mismo que repartir trabajo entre socios. No: el trabajo entre socios es ejecución directa del consorcio; subcontratar es pagar a alguien de fuera.",
+    "importa": "Porque un proyecto que subcontrata su núcleo (lo que justifica la subvención) le dice al evaluador que el consorcio no tiene la capacidad que dice tener. Subcontratar mal hunde la nota."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.4.</b> Qué <b>tareas, si las hay, se subcontratan</b> a terceros externos al consorcio, y <b>por qué</b> se externalizan en lugar de ejecutarlas los propios socios. La <b>subcontratación</b> es encargar a una empresa o persona de fuera (no socia) la ejecución de una parte concreta del trabajo.</div><p>Cuidado con una confusión muy frecuente: <b>repartir trabajo entre los socios NO es subcontratar</b>. Cuando el BEN2 lidera el WP3, eso es <em>ejecución directa</em> del consorcio. Subcontratar es cuando pagas a una agencia de diseño, un evaluador externo o un traductor que <em>no forma parte</em> de la asociación.</p><p>En KA2 a tanto alzado, donde el importe es <b>cerrado y prefijado</b>, este campo <b>suele ir como n/a</b>: el modelo no separa una partida de subcontratación facturable, así que muchas solicitudes no detallan subcontratos o los marcan como no aplicables.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La regla mental: <b>el corazón de tu proyecto lo hace tu consorcio; lo periférico y muy especializado puede subcontratarse</b>.</p><ol class=\"obj\"><li><b>Por defecto, n/a.</b> Si tu consorcio puede hacer el trabajo, no inventes subcontratos. En lump sum prefijado es lo más habitual y lo más limpio.</li><li><b>Subcontrata solo lo periférico y especializado.</b> Casos razonables: una auditoría financiera externa, el diseño gráfico profesional de una publicación, el desarrollo técnico de una plataforma que ningún socio sabe programar, traducción jurada. Tareas de apoyo, no el núcleo.</li><li><b>Nunca subcontrates el núcleo.</b> Si externalizas la creación del currículo, la investigación o la coordinación, le dices al evaluador que el consorcio no tiene la competencia que presume. Eso contradice toda la sección de capacidad.</li><li><b>Justifica siempre el porqué.</b> Si subcontratas, explica por qué es más eficiente o por qué requiere una competencia que el consorcio no posee. Una subcontratación sin razón parece un agujero por donde se va el dinero.</li></ol><div class=\"callout callout-warn\"><b>Riesgo:</b> mucha subcontratación = poca capacidad propia = menos puntos en \"Quality of the partnership\". Subcontrata con moderación o no subcontrates.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Una decisión sana de qué se ejecuta directamente y qué (si acaso) se subcontrata:</p><table class=\"cmp\"><thead><tr><th>Tarea</th><th>Decisión</th><th>Por qué</th></tr></thead><tbody><tr><td>Diseño del currículo</td><td><b>Ejecución directa</b> (BEN2)</td><td>Es el núcleo del proyecto y la razón de ser del consorcio.</td></tr><tr><td>Pilotaje con grupos</td><td><b>Ejecución directa</b> (BEN1, BEN3)</td><td>Requiere a los socios en contacto con sus públicos reales.</td></tr><tr><td>Maquetación profesional de la guía</td><td>Subcontratable</td><td>Competencia técnica específica que ningún socio domina; tarea periférica.</td></tr><tr><td>Auditoría financiera externa</td><td>Subcontratable</td><td>Por definición debe hacerla un tercero independiente.</td></tr></tbody></table><p>Y si tu consorcio cubre todo lo periférico también, la respuesta perfectamente válida del formulario es:</p><div class=\"callout callout-good\"><b>\"Subcontratación: n/a. Todas las tareas se ejecutan directamente por los socios del consorcio, que cuentan con la capacidad necesaria.\"</b> Esto, lejos de penalizar, refuerza tu sección de capacidad.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Repartir trabajo entre socios es subcontratar.»</b> → No. Eso es ejecución directa del consorcio. Subcontratar es pagar a un tercero externo no socio.</li><li><span class=\"err-x\">✗</span> <b>«Subcontrato el desarrollo del producto principal.»</b> → Suicida: contradice tu capacidad. El núcleo lo hace el consorcio o el consorcio no debería existir.</li><li><span class=\"err-x\">✗</span> <b>«Tengo que subcontratar algo para rellenar el campo.»</b> → Falso. n/a es una respuesta legítima y frecuente en lump sum prefijado.</li><li><span class=\"err-x\">✗</span> <b>«Subcontrato y no explico por qué.»</b> → Una subcontratación sin justificación parece dinero que se escapa. Siempre el porqué.</li><li><span class=\"err-x\">✗</span> <b>«Subcontrato a un socio asociado (AP).»</b> → Confusión de roles. El AP es parte del proyecto (apoyo no financiado), no un proveedor externo a contratar.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.4</td><td>Pide qué tareas se subcontratan y por qué; campo a menudo n/a en lump sum prefijado.</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Define subcontratación frente a ejecución directa del consorcio y su tratamiento en lump sum.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Relaciona el exceso de subcontratación con menor capacidad propia (\"Quality of the partnership\").</td></tr></tbody></table>"
+    }
+  ]
+}

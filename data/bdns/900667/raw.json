@@ -1,0 +1,178 @@
+{
+  "id": 1102228,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "INSTITUT VALENCIÀ DE FINANCES"
+  },
+  "sedeElectronica": "https://prestamos.ivf.es",
+  "codigoBDNS": "900667",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "PRÉSTAMO"
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 8000000,
+  "mrr": false,
+  "descripcion": "LÍNEA DE FINANCIACIÓN PRÉSTAMOS BONIFICADOS IVF LIQUIDEZ ANTICRISIS 2026",
+  "descripcionLeng": "LÍNIA DE FINANÇAMENT PRÉSTECS BONIFICATS LIQUIDESA ANTICRISI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Normas Generales aprobadas por el Consejo General del IVF por acuerdo de fecha 23/01/2019 (DOGV núm. 8487, 15/02/2019). Modificado por acuerdo del Consejo General del IVF de fecha 3/10/2019 (DOGV 8681, 20/11/2019)",
+  "urlBasesReguladoras": "//dogv.gva.es/datos/2019/11/20/pdf/2019_10859.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Las solicitudes podrán presentarse desde el día siguiente a la publicación en el DOCV",
+  "textFin": "Se podrán presentar solicitudes hasta el 31 de diciembre de 2026 o hasta que se agote el presupuesto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440587,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria Línea Bonificada IVF Liquidez Anticrisis 2026 DEF_firmado.pdf",
+      "long": 1482760,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440590,
+      "descripcion": "Extracte",
+      "nombreFic": "Extracto Convocatoria préstamos bonificados IVF Anticrisis 2026_tr.pdf",
+      "long": 217317,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440589,
+      "descripcion": "Extracto",
+      "nombreFic": "Extracto Convocatoria préstamos bonificados IVF Anticrisis 2026.pdf",
+      "long": 216761,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440588,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatoria Línea Bonificada IVF Anticrisis 2026 DEF_trad.pdf",
+      "long": 1392149,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209702,
+      "titulo": "Convocatoria para el otorgamiento de “PRÉSTAMOS BONIFICADOS IVF LIQUIDEZ ANTICRISIS 2026”",
+      "tituloLeng": "Convocatòria per a l'atorgament de “PRÉSTECS BONIFICATS IVF LIQUIDESA ANTICRISI 2026”",
+      "texto": "<p>De conformidad con lo previsto en los artículos 17.3.b y 20.8.a de la Ley 38/2003, de 17 de noviembre, general de subvenciones, se publica el extracto de la Convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones (http://www.pap.minhap.gob.es/bdnstrans/index), y en la página web del Institut Valencià de Finances (http://www.ivf.gva.es y http://www.prestamos.ivf.es)\n</p><p>\n</p><p>Primero. - Beneficiarios\n</p><p>1.\tPodrán ser beneficiarios de la financiación bonificada al amparo de la presente convocatoria las empresas que cumplan los siguientes requisitos:\n</p><p>a)\tTendrá, al menos, un establecimiento o sucursal radicado en la Comunitat Valenciana. \n</p><p>b)\tDeberá acreditar en el momento de la solicitud una antigüedad mínima de dos años y contar como mínimo con un empleado o un trabajador autónomo societario. \n</p><p>c)\tContará con todas las licencias, autorizaciones y permisos necesarios para el desarrollo de su actividad y cumplir la normativa nacional y comunitaria que resulte aplicable. \n</p><p>d)\tAcreditará estar al corriente de cumplimiento de las obligaciones tributarias ante el Estado y la Generalitat, así como de las obligaciones ante la Seguridad Social. Las deudas que estén aplazadas, fraccionadas o cuya ejecución esté suspendida, se considera que cumplen el requisito de estar al corriente de las obligaciones.\n</p><p>e)\tNo estará sujeto a una orden de recuperación pendiente, tras una decisión previa de la Comisión Europea que haya declarado una ayuda ilegal e incompatible con el mercado común.\n</p><p>f)\tNo se encontrará en ninguna de las siguientes circunstancias previstas en el artículo 13 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones (en adelante, LGS):\n</p><p>i.\tHaber sido condenada mediante sentencia firme a la pena de pérdida de la posibilidad de obtener subvenciones o ayudas públicas o por delitos de prevaricación, cohecho, malversación de caudales públicos, tráfico de influencias, fraudes y exacciones ilegales o delitos urbanísticos.\n</p><p>ii.\tHaber solicitado la declaración de concurso voluntario, haber sido declarado insolvente en cualquier procedimiento, hallarse declarado en concurso, salvo que en éste haya adquirido la eficacia un convenio, estar sujeto a intervención judicial o haber sido inhabilitado conforme al Real Decreto Legislativo 1/2020, de 5 de mayo, por el que se aprueba el texto refundido de la Ley Concursal, sin que haya concluido el período de inhabilitación fijado en la sentencia de calificación del concurso.\n</p><p>iii.\tHaber dado lugar, por causa de la que hubiese sido declarado culpable, a la resolución firme de cualquier contrato celebrado con la Administración.\n</p><p>iv.\tEstar incursos los administradores de las sociedades mercantiles o aquellas personas físicas que ostenten la representación legal de otras personas jurídicas, en alguno de los supuestos de la Ley 3/2015, de 30 de marzo, reguladora del ejercicio del alto cargo de la Administración General del Estado, de la Ley 53/1984, de 26 de diciembre, de incompatibilidades del Personal al Servicio de las Administraciones Públicas, o tratarse de cualquiera de los cargos electivos regulados en la Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General, en los términos establecidos en la misma o en la normativa autonómica que regule estas materias.\n</p><p>v.\tTener la residencia fiscal en un país o territorio calificado reglamentariamente como paraíso fiscal.\n</p><p>vi.\tNo hallarse al corriente de pago de obligaciones por reintegro de subvenciones en los términos que reglamentariamente se determinen.\n</p><p>vii.\tHaber sido sancionado mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones conforme a las leyes que así lo establezcan.\n</p><p>viii.\tNo podrán acceder a la condición de beneficiarios las agrupaciones previstas en el artículo 11.3 de la LGS, párrafo segundo cuando concurra alguna de las prohibiciones anteriores en cualquiera de sus miembros.\n</p><p>ix.\tLas prohibiciones de obtener subvenciones afectarán también a aquellas empresas de las que, por razón de las personas que las rigen o de otras circunstancias, pueda presumirse que son continuación o que derivan, por transformación, fusión o sucesión, de otras empresas en las que hubiesen concurrido aquéllas.\n</p><p>2.\tEl beneficiario no puede estar afectado, por cualquier de las situaciones siguientes:\n</p><p>a.\tIncidencias con entidades financieras en CIRBE y/o en registros de impagados. \n</p><p>b.\tFondos propios negativos a fecha del último cierre contable (salvo que el solicitante pueda acreditar que la referida situación de desequilibrio patrimonial ha sido subsanada a la fecha de presentación de la solicitud de financiación).\n</p><p>c.\tPérdidas continuadas en los últimos dos ejercicios (salvo que la operación disponga o esté en disposición de obtener un aval de AFIN-SGR por el 100% del valor nominal y los intereses ordinarios).\n</p><p>3.\tNo podrán ser beneficiarias de la financiación bonificada otorgada por el IVF en el marco de esta Convocatoria, las entidades de derecho público, las universidades públicas, los organismos autónomos, las empresas públicas, las sociedades mercantiles públicas entendiendo por tales aquellas en las que más de la mitad del capital social pertenezca directa o indirectamente a una Administración pública, las Fundaciones públicas, y las sociedades participadas mayoritariamente por éstas.\n</p><p>4.\tEl cumplimiento de los requisitos del presente artículo debe acreditarse mediante la firma de la Declaración Responsable que se adjunta como Anexo. El hecho de presentar esta Declaración Responsable facultará al IVF para hacer, en cualquier momento, telemáticamente o por otros medios, las comprobaciones por muestreo o exhaustivas necesarias para verificar la conformidad de los datos consignados en dichas declaraciones.\n</p><p>Segundo. - Objeto de la Convocatoria\n</p><p>Constituye el objeto de la presente Convocatoria la concesión de préstamos bonificados para la financiación de necesidades de circulante a personas jurídicas con el objeto de dotarles de liquidez para hacer frente a la actual crisis internacional originada por la guerra en Irán, especialmente por los efectos adversos derivados del incremento de los costes energéticos, la inflación, la inestabilidad en los mercados internacionales y las disrupciones en la cadena logística y comercial.\n</p><p>Tercero. - Normas reguladoras\n</p><p>La convocatoria constituye las propias normas reguladoras y en lo no previsto en ellas será de aplicación las Normas Generales aprobadas por el Consejo General del Institut Valencià de Finances mediante Acuerdo de fecha 23 de enero de 2019, publicado en el Diario Oficial de la Generalitat Valenciana núm. 8487, de fecha 15 de febrero de 2019, modificado por acuerdo del Consejo General del IVF de fecha 3 de octubre de 2019, publicado en el Diario Oficial de la Generalitat Valenciana, de fecha 20 de noviembre de 2019.\n</p><p>Cuarto. - Cuantía\n</p><p>Al amparo de la presente convocatoria el Institut Valencià de Finances (en adelante, el “IVF”), podrá otorgar financiación a terceros incorporando a las operaciones de préstamo concedidas un componente de bonificación, en forma de rebaja del tipo de interés con respecto al tipo de interés de mercado.\n</p><p>La línea de financiación objeto de esta convocatoria cuenta con una dotación de 100.000.000 euros destinada a la concesión de préstamos bonificados a las empresas beneficiarias. La bonificación se financiará con cargo a la subvención de capital concedida por la Conselleria de Economía, Hacienda y Administración Pública, a través de la correspondiente línea presupuestaria para la financiación de proyectos empresariales entre los que se encuentra, entre otras, la presente Convocatoria, con una dotación para el ejercicio 2026 de 8.000.000 euros (en adelante, la “Dotación Presupuestaria”). \n</p><p>Quinto. - Plazo de presentación de solicitudes\n</p><p>Las solicitudes podrán presentarse desde el día siguiente de la publicación de la Convocatoria en el Diario Oficial de la Generalitat Valenciana y en la página web del IVF\n</p><p>\n</p><p>Sexto. - Otros datos\n</p><p>1.\tDocumentación: la prevista en el artículo octavo de la Convocatoria.\n</p><p>2.\tCaracterísticas de la financiación: las previstas en el artículo décimo de la Convocatoria.\n</p><p>3.\tLa solicitud de financiación se realizará mediante los formularios de cumplimentación electrónica previstos en la Convocatoria, siendo obligatoria su presentación online a través de los medios disponibles en la página web del IVF (https://prestamos.ivf.es).\n</p><p>4.\tLos beneficiarios deberán reunir los requisitos establecidos en el artículo tercero y cuarto de la Convocatoria.\n</p><p>5.\tLos gastos financiables son los previstos en el artículo undécimo de la convocatoria.\n</p>",
+      "textoLeng": "<p>De conformitat amb el que es preveu en els articles 17.3.b i 20.8.a de la Llei 38/2003, de 17 de novembre, general de subvencions, es publica l'extracte de la Convocatòria el text complet de la qual pot consultar-se en la Base de dades Nacional de Subvencions (http://www.pap.minhap.gob.es/bdnstrans/index), i en la pàgina web de l’Institut Valencià de Finances (http://www.ivf.gva.es i http://www.prestamos.ivf.es)\n</p><p>\n</p><p>Primer. - Beneficiari\n</p><p>1.\tPodran ser beneficiaris del finançament bonificat a l’empara de la present convocatòria les empreses que complisquen els requisits següents:\n</p><p>a)\tTindrà, almenys, un establiment o sucursal radicat en la Comunitat Valenciana. \n</p><p>b)\tHaurà d’acreditar en el moment de la sol·licitud una antiguitat mínima de dos anys i comptar com a mínim amb un empleat o un treballador autònom societari. \n</p><p>c)\tComptarà amb totes les llicències, autoritzacions i permisos necessaris per al desenrotllament de la seua activitat i complir la normativa nacional i comunitària que resulte aplicable. \n</p><p>d)\tAcreditarà estar al corrent del compliment de les obligacions tributàries davant de l’Estat i la Generalitat, així com de les obligacions davant de la Seguretat Social. Els deutes que estiguen ajornats, fraccionats o l’execució dels quals estiga suspesa, es considera que complixen el requisit d’estar al corrent de les obligacions.\n</p><p>e)\tNo estarà subjecte a una orde de recuperació pendent, després d’una decisió prèvia de la Comissió Europea que haja declarat una ajuda il·legal i incompatible amb el mercat comú.\n</p><p>f)\tNo es trobarà en cap de les següents circumstàncies previstes en l’article 13 de la Llei 38/2003, de 17 de novembre, general de subvencions (d’ara en avant, LGS):\n</p><p>i.\tHaver sigut condemnada mitjançant una sentència ferma a la pena de pèrdua de la possibilitat d’obtindre subvencions o ajudes públiques o per delictes de prevaricació, suborn, malversació de cabals públics, tràfic d’influències, fraus i exaccions il·legals o delictes urbanístics.\n</p><p>ii.\tHaver sol·licitat la declaració de concurs voluntari, haver sigut declarat insolvent en qualsevol procediment, trobar-se declarat en concurs, llevat que en este haja adquirit l’eficàcia un conveni, estar subjecte a una intervenció judicial o haver sigut inhabilitat conforme al Reial decret legislatiu 1/2020, de 5 de maig, pel qual s’aprova el text refós de la Llei concursal, sense que haja conclòs el període d’inhabilitació fixat en la sentència de qualificació del concurs.\n</p><p>iii.\tHaver donat lloc, per una causa de la qual haja sigut declarat culpable, a la resolució ferma de qualsevol contracte subscrit amb l’Administració.\n</p><p>iv.\tEstar incursos els administradors de les societats mercantils, o les persones físiques que tinguen la representació legal d’altres persones jurídiques, en algun dels supòsits de la Llei 3/2015, de 30 de març, reguladora de l’exercici de l’alt càrrec de l’Administració general de l’Estat; de la Llei 53/1984, de 26 de desembre, d’incompatibilitats del personal al servici de les administracions públiques, o tractar-se de qualsevol dels càrrecs electius regulats en la Llei orgànica 5/1985, de 19 de juny, del règim electoral general, en els termes que establix esta o la normativa autonòmica que regule estes matèries.\n</p><p>v.\tTindre la residència fiscal en un país o un territori qualificat reglamentàriament com a paradís fiscal.\n</p><p>vi.\tNo estar al corrent de pagament d’obligacions per reintegrament de subvencions en els termes que es determinen reglamentàriament.\n</p><p>vii.\tHaver sigut sancionat mitjançant una resolució ferma amb la pèrdua de la possibilitat d’obtindre subvencions d’acord amb les lleis que així ho establisquen.\n</p><p>viii.\tNo podran accedir a la condició de beneficiàries les agrupacions que preveu l’article 11.3 de l’LGS, paràgraf segon, quan concórrega alguna de les prohibicions anteriors en qualsevol dels membres.\n</p><p>ix.\tLes prohibicions d’obtindre subvencions afectaran també les empreses de les quals, per raó de les persones que les regixen o d’altres circumstàncies, puga presumir-se que són continuació o que deriven (per transformació, fusió o successió) d’altres empreses en què hagen concorregut aquelles.\n</p><p>2.\tEl beneficiari no pot estar afectat per qualsevol de les situacions següents:\n</p><p>a.\tIncidències amb entitats financeres en CIRBE i/o en registres d’impagats. \n</p><p>b.\tFons propis negatius a data de l’últim tancament comptable (llevat que el sol·licitant puga acreditar que la referida situació de desequilibri patrimonial ha sigut esmenada a la data de presentació de la sol·licitud de finançament).\n</p><p>c.\tPèrdues continuades en els últims dos exercicis (llevat que l’operació dispose o estiga en disposició d’obtindre un aval d’AFIN-SGR pel 100 % del valor nominal i els interessos ordinaris).\n</p><p>3.\tNo podran ser beneficiaris del finançament bonificat atorgat per l’IVF en el marc d’esta convocatòria les entitats de dret públic, les universitats públiques, els organismes autònoms, les empreses públiques, les societats mercantils públiques, entenent per tals aquells en què més de la mitat del capital social pertanga directament o indirectament a una administració pública, les fundacions públiques, i les societats participades majoritàriament per estes.\n</p><p>4.\tEl compliment dels requisits del present article ha d’acreditar-se mitjançant la firma de la declaració responsable que s’adjunta com a annex. El fet de presentar esta declaració responsable facultarà l’IVF per a fer, en qualsevol moment, telemàticament o per altres mitjans, les comprovacions per mostreig o exhaustives necessàries per a verificar la conformitat de les dades consignades en estes declaracions.\n</p><p>Segon. - Objecte de la convocatòria\n</p><p>Constituïx l’objecte de la present convocatòria la concessió de préstecs bonificats per al finançament de necessitats de circulant a persones jurídiques a fi de dotar-los de liquiditat per a fer front a l’actual crisi internacional originada per la guerra a l’Iran, especialment pels efectes adversos derivats de l’increment dels costos energètics, la inflació, la inestabilitat en els mercats internacionals i les disrupcions en la cadena logística i comercial.\n</p><p>Tercer. - Normes reguladores\n</p><p>La convocatòria constituïx les pròpies normes reguladores i en el no previst en elles serà aplicable les Normes Generals aprovades pel Consell General de l’Institut Valencià de Finances mitjançant Acord de data 23 de gener de 2019, publicat en el Diari Oficial de la Generalitat Valenciana núm. 8487, de data 15 de febrer de 2019, modificat per acord del Consell General de l'IVF de data 3 d'octubre de 2019, publicat en el Diari Oficial de la Generalitat Valenciana, de data 20 de novembre de 2019.\n</p><p>Quart. - Quantia\n</p><p>A l’empara de la present convocatòria, l’Institut Valencià de Finances (d’ara en avant, l’IVF) podrà atorgar finançament a tercers incorporant a les operacions de préstec concedides un component de bonificació, en forma de rebaixa del tipus d’interés respecte al tipus d’interés de mercat.\n</p><p>La línia de finançament objecte d’esta convocatòria disposa d’una dotació de 100.000.000 euros destinada a la concessió de préstecs bonificats a les empreses beneficiàries. La bonificació es finançarà amb càrrec a la subvenció de capital concedida per la Conselleria d’Economia, Hisenda i Administració Pública, per mitjà de la corresponent línia pressupostària per al finançament de projectes empresarials entre els quals es troba, entre altres, la present convocatòria, amb una dotació per a l’exercici 2026 de 8.000.000 euros (d’ara en avant, la dotació pressupostària). \n</p><p>Cinqué. - Termini de presentació de sol·licituds\n</p><p>Les sol·licituds podran presentar-se des de l'endemà de la publicació de la Convocatòria en el Diari Oficial de la Generalitat Valenciana i en la pàgina web de l'IVF.\n</p><p>Sisé. – Altres dades\n</p><p>1.\tDocumentació: la prevista en l'article vuit de la Convocatòria.\n</p><p>2.\tCaracterístiques del finançament: les previstes en l'article deu de la Convocatòria.\n</p><p>3.\tLa sol·licitud de finançament es realitzarà mitjançant els formularis d'emplenament electrònic previstos en la Convocatòria, sent obligatòria la seua presentació en línia a través dels mitjans disponibles en la pàgina web de l'IVF (https://prestamos.ivf.es).\n</p><p>4.\tEls beneficiaris hauran de reunir els requisits establits en l'article tercer i quart de la Convocatòria.\n</p><p>5.\tEls gastos finançables són els previstos en l'article undècim de la convocatòria.\n</p><p>\n</p>",
+      "url": "https://dogv.gva.es/va/resultat-dogv?signatura=2026/11962",
+      "cve": "DOGV-V-2026-11962",
+      "desDiarioOficial": "DOCV. D.O. DE LA COMUNITAT VALENCIANA",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

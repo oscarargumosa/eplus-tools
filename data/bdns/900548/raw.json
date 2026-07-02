@@ -1,0 +1,84 @@
+{
+  "id": 1102109,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CORNELLÀ DE LLOBREGAT",
+    "nivel3": "AYUNTAMIENTO DE CORNELLÀ DE LLOBREGAT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900548",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1600,
+  "mrr": false,
+  "descripcion": "ACUERDO JGL DE 20/03/2026 DE APROBACIÓN BASE XXII CONCURSO FOTOGRAFIA AMATEUR",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES XXII CONCURSO DE FOTOGRAFIA AMATEUR DE MEDI AMBIENT 2026",
+  "urlBasesReguladoras": "https://www.cornella.cat/ca/viure-a-cornella/cornella-natura/cornella-natura/noticies/xxii-concurs-de-fotografia-amateur-de-medi-ambient",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EL MISMO DIA DE LA PUBLICACIÓN DE LAS PRESENTES BASES EN EL BOP",
+  "textFin": "8 DE JUNIO DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440049,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Extracte per BDNS 2026 Català rect.docx",
+      "long": 14856,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1440048,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Extracto para BDNS 2026 Castellano.docx",
+      "long": 60249,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210246,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://bop.diba.cat/anunci/3915228/aprovacio-de-les-bases-del-xxii-concurs-de-fotografia-amateur-de-medi-ambient-2026-i-la-seva-convocatoria-ajuntament-de-cornella-de-llobregat",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-04-01"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

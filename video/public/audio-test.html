@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Audio Test</title></head>
+<body style="background:#06003e;color:white;font-family:sans-serif;padding:40px">
+  <h1>Direct Audio Test</h1>
+  <p>Click play on each one:</p>
+
+  <h3>1. Direct MP3 (relative path)</h3>
+  <audio controls src="audio/ka-lines/slide-00.mp3"></audio>
+
+  <h3>2. Direct MP3 (with static hash)</h3>
+  <audio controls src="/static-0270edbec325/audio/ka-lines/slide-00.mp3"></audio>
+
+  <h3>3. Inline beep (to test browser audio)</h3>
+  <button onclick="new AudioContext().resume().then(()=>{const c=new AudioContext();const o=c.createOscillator();o.connect(c.destination);o.start();setTimeout(()=>o.stop(),500)})">
+    Play Beep
+  </button>
+</body>
+</html>

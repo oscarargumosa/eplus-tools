@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-MISS-2023-OCEAN-SOIL-01-01",
+  "ccm2Id": "45742664",
+  "callIdentifier": "HORIZON-MISS-2023-OCEAN-SOIL-01",
+  "callTitle": "",
+  "title": "Mission Ocean and Waters and Mission A Soil Deal for Europe – Joint demonstration of approaches and solutions to address nutrient pollution in the landscape-river-sea system in the Mediterranean sea basin",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Ecosystem services provided by soils\",\"Hydrology, water and soil pollution\",\"Fresh water ecosystems\",\"Eutrophication\",\"Africa\",\"Environmental sciences\",\"International Cooperation\",\"Ecosystem services provided by catchment areas\",\"Wastewater treatment\",\"Soil contamination\",\"Soil protection\",\"Ocean sustainability and blue economy\",\"Brakish water ecosystems\",\"EOSC and FAIR data\",\"Catchment scale planning\",\"Marine Ecosystems\",\"Soil pollution (FN/I3)\",\"Pollution (water, soil), waste disposal and treatm\",\"Water Framework Directive\",\"Mediterranean\",\"Soil science\",\"Fresh water ecology\",\"Marine Environment\",\"water pollution from nutrients\",\"nutrients\",\"reduction of fertilizer use\",\"nutrient pollution\",\"Mission soil\",\"Mission Soil Deal for Europe\",\"Mission restore our ocean and waters by 2030\",\"Mission ocean\",\"Mission ocean and waters\",\"reduction of nutrient pollution\",\"joint topic soil ocean\"]"
+  ],
+  "crossCuttingPriorities": [
+    "Africa",
+    "EC-WORLD",
+    "OCEAN",
+    "EoscAndFairData",
+    "MEDIT"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-OCEAN-SOIL-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.248Z"
+}

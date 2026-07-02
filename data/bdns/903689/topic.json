@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "903689",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OIARTZUN / AYUNTAMIENTO DE OIARTZUN",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "Subvenciones para el fomento del pequeño comercio en Oiartzun. Convocatoria año 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 35000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    }
+  ],
+  "apply_url": "https://udal.egoitza.gipuzkoa.eus/WAS/AYTO/USCServicioCiudadanoVer15WEB/home.do?De=EU063",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903689",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "Eskaera orria/Hoja solicitud",
+      "url": null
+    },
+    {
+      "label": "I Eranskina",
+      "url": null
+    },
+    {
+      "label": "II Eranskina",
+      "url": null
+    },
+    {
+      "label": "Anexo II",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.oiartzun.eus/es/Subvenciones/Convocatorias_en_curso/20260429/Subvenciones_para_el_fomento_del_pequeno_comercio_en_Oiartzun_para_2026",
+  "text_inicio": "Desde el día siguiente a la publicación de la presente convocatoria en el Boletín Oficial de Gipuzko",
+  "text_fin": "asta el 31 de diciembre de 2026 inclusive",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.260Z"
+}

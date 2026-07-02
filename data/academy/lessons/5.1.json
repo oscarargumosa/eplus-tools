@@ -1,0 +1,58 @@
+{
+  "id": "5.1",
+  "code": "Part B · 5.1",
+  "module": "EACEA",
+  "moduleTitle": "Otros",
+  "bloque": "D — Anatomía del formulario",
+  "title": "5.1 Ética (ethics)",
+  "subtitle": "Cómo aseguras la perspectiva de género y los derechos de la infancia en las actividades del proyecto, redactado de forma concreta y no genérica.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "15–30 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 5.1",
+    "Criterio": "Requisito formal",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Llegas al apartado de ética cansado, con la propuesta casi terminada, y lo despachas con una frase genérica de «respetaremos la igualdad de género». Sientes que es un trámite y le dedicas treinta segundos.",
+    "comprender": "Que aquí el formulario te pregunta cómo, en concreto, integras la perspectiva de género (gender mainstreaming) y los derechos de la infancia en tus actividades reales, no en abstracto.",
+    "objetivo": "Saber qué espera leer el evaluador en este campo y redactarlo conectado a tus actividades, paquetes de trabajo y grupos destinatarios, no con declaraciones de buenas intenciones.",
+    "confusion": "Creer que basta con escribir que tu proyecto «no discrimina». La igualdad pasiva no es lo que se pide: se pide una integración activa y demostrable en el diseño.",
+    "importa": "Porque aunque la ética no puntúe como criterio de calidad, una respuesta vacía o ausente da imagen de descuido, y si trabajas con menores sin acreditar salvaguarda puedes hacer la propuesta inadmisible o levantar una bandera roja en la evaluación."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Qué te pregunta este campo.</b> Cómo aseguras la <b>perspectiva de género</b> (<em>gender mainstreaming</em>) y el respeto de los <b>derechos de la infancia</b> en las actividades de tu proyecto. En la práctica, es donde demuestras que has pensado las cuestiones éticas <em>antes</em> de empezar, no después.</div><p>El apartado de <b>Ética</b> del Part B no te pide una declaración filosófica. Te pide que expliques, de forma operativa, <b>cómo</b> tu proyecto integra dos ejes que la UE considera transversales a todo lo que financia:</p><ul><li><b>Igualdad de género.</b> No solo «no discriminar», sino integrar la perspectiva de género en el diseño: en quién participa, en cómo se reparten roles, en los contenidos, en los datos que recoges.</li><li><b>Derechos de la infancia y protección de menores.</b> Especialmente relevante si tu proyecto trabaja con niños, niñas o adolescentes (educación escolar, juventud, deporte de base…).</li></ul><p>Es un campo de texto, no una casilla. Y lo que escribas debe sonar a <em>tu</em> proyecto, no a una plantilla copiada.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo cumplimentarlo bien",
+      "html": "<p>La regla de oro: <b>concreto y conectado a tus actividades</b>. Por cada eje, no digas que lo respetas; di <em>qué haces</em> para asegurarlo. Compara:</p><table class=\"cmp\"><thead><tr><th>Genérico (débil)</th><th>Concreto (fuerte)</th></tr></thead><tbody><tr><td>«El proyecto respetará la igualdad de género.»</td><td>«Garantizaremos paridad en los grupos de participantes de las formaciones (WP3) y recogeremos datos desagregados por sexo para evaluar el alcance.»</td></tr><tr><td>«Protegeremos a los menores.»</td><td>«Todo el personal en contacto con los menores del programa piloto aportará certificado de antecedentes; aplicaremos una política de salvaguarda y consentimiento informado de las familias.»</td></tr></tbody></table><p>Pasos para redactarlo bien:</p><ol class=\"obj\"><li><b>Identifica dónde toca cada eje tu proyecto.</b> ¿Qué WP o actividad implica género o infancia? Nómbralos.</li><li><b>Di la medida concreta.</b> Paridad, datos desagregados, lenguaje inclusivo en materiales, accesibilidad, consentimiento, salvaguarda…</li><li><b>Conecta con tu plan.</b> Si recoges datos desagregados por sexo, eso debe coincidir con tu sistema de evaluación e indicadores.</li></ol><div class=\"callout callout-good\"><b>Si tu proyecto NO trabaja con menores</b>, dilo claramente («el proyecto no implica trabajo directo con menores») y centra la respuesta en la perspectiva de género. No inventes una salvaguarda que no aplica.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Checklist",
+      "html": "<p>Antes de dar por buena tu respuesta de ética, comprueba:</p><ol class=\"obj\"><li>¿Has dicho <b>cómo</b> integras la perspectiva de género, no solo que la respetas?</li><li>¿Has nombrado <b>actividades o WP concretos</b> donde se aplica?</li><li>Si trabajas con menores, ¿has descrito <b>medidas de salvaguarda</b> reales (antecedentes, consentimiento, política de protección)?</li><li>Si <b>no</b> trabajas con menores, ¿lo has declarado explícitamente?</li><li>¿Mencionas <b>datos desagregados por sexo</b> u otra evidencia medible?</li><li>¿Es coherente con el resto de la propuesta (grupos destinatarios, evaluación, indicadores)?</li><li>¿Has evitado el copia-pega genérico que serviría para cualquier proyecto?</li></ol>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Con una frase de respeto a la igualdad ya cumplo.»</b> → Se pide integración activa y concreta, no una declaración pasiva de no discriminación.</li><li><span class=\"err-x\">✗</span> <b>«La ética no puntúa, así que la dejo en blanco.»</b> → Un campo vacío proyecta descuido; con menores, puede ser causa de bandera roja o inadmisibilidad.</li><li><span class=\"err-x\">✗</span> <b>«Copio el párrafo de ética de otra propuesta.»</b> → El evaluador detecta la plantilla genérica al instante; debe sonar a tu proyecto y tus actividades.</li><li><span class=\"err-x\">✗</span> <b>«Mi proyecto no toca menores, pero pongo salvaguarda por si acaso.»</b> → Inventar medidas que no aplican resta credibilidad; mejor declarar que no aplica.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 5 (Others)</b></td><td>El campo de ética: perspectiva de género y derechos de la infancia. Texto literal de la pregunta.</td></tr><tr><td><b>Erasmus+ Programme Guide</b></td><td>Prioridades horizontales del programa: inclusión, igualdad de género y participación. Marco que justifica por qué se pregunta.</td></tr><tr><td><b>Convocatoria EACEA específica</b></td><td>Si la acción trabaja con menores (juventud, escolar, deporte de base), refuerza la exigencia de salvaguarda.</td></tr></tbody></table>"
+    }
+  ]
+}

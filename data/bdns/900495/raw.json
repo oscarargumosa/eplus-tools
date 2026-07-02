@@ -1,0 +1,84 @@
+{
+  "id": 1102056,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GROVE, O",
+    "nivel3": "AYUNTAMIENTO DE GROVE, O"
+  },
+  "sedeElectronica": "https://concellodogrove.sedelectronica.gal/",
+  "codigoBDNS": "900495",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 750,
+  "mrr": false,
+  "descripcion": "XV Concurso de fotografía por el Día Internacional de las Mujeres",
+  "descripcionLeng": "XV Concurso de fotografía polo Día Internacional das Mulleres",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "XV CONCURSO FOTOGRAFÍA POR EL DÍA INTERNACIONAL DE LAS MUJERES",
+  "urlBasesReguladoras": "https://concellodogrove.es/upload/userfiles/suneditor/files/93332dBAS_XV_Premio_deFotografia_Castellano.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "19 febrero 2026",
+  "textFin": "19 de marzo de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439912,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BAS XV Premio deFotografia_Galego.pdf",
+      "long": 213213,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439911,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BAS XV Premio deFotografia_Castellano.pdf",
+      "long": 197286,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209625,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/02/18/2026008045",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE PONTEVEDRA",
+      "datPublicacion": "2026-02-18"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

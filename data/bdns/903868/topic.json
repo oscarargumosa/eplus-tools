@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903868",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MONTBLANC / AYUNTAMIENTO DE MONTBLANC",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "CONVOCATORIA SUBVENCIONES CULTURALES Y EDUCATIVAS 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 33400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903868",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipta.cat/bopt/web/anunci/347039/modificacio-de-les-bases-reguladores-de-les-subvencions-culturals-i-educatives-aprovacio-definitiva-ajuntament-montblanc",
+  "text_inicio": "Desde el día siguiente de la publicación al BOPT",
+  "text_fin": "Hasta que hayan transcurrido 15 días desde el día siguiente de la publicación al BOPT",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.332Z"
+}

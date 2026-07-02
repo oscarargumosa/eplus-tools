@@ -95,6 +95,19 @@ const TASK_TEMPLATES = [
     ]
   },
   {
+    category: 'personal_work',
+    label: 'Personal Work',
+    icon: 'psychology',
+    subtypes: [
+      { key: 'one_to_one_mentoring', label: 'One-to-one mentoring', title: 'Delivery of the One-to-One Mentoring', description: 'This task covers the design and delivery of individual mentoring sessions between a qualified mentor and a participant. It includes goal-setting, structured sessions, and progress documentation. It supports personalised learning, self-awareness, and skill development.' },
+      { key: 'personal_accompaniment', label: 'Personal accompaniment', title: 'Delivery of the Personal Accompaniment', description: 'This task focuses on providing continuous individualised support to each participant throughout the project. It includes follow-up, barrier removal, pathway adaptation, and ongoing reflection. It supports inclusion, retention, and personalised quality.' },
+      { key: 'coaching_pathway', label: 'Coaching pathway', title: 'Delivery of the Coaching Pathway', description: 'This task covers the implementation of a structured coaching process with each participant. It includes goal-setting, action planning, accountability sessions, and reflective practice. It supports the achievement of concrete personal or professional objectives related to the project theme.' },
+      { key: 'reflective_journaling', label: 'Reflective journaling', title: 'Implementation of the Reflective Journaling Practice', description: 'This task introduces reflective journaling as a personal work practice across the project. It includes prompts, structured exercises, and milestones designed to deepen self-awareness and document the learning journey. It supports introspection, evaluation, and personal evidence collection.' },
+      { key: 'individual_portfolio', label: 'Individual portfolio', title: 'Production of the Individual Portfolio', description: 'This task covers the production by each participant of a personal portfolio compiling their work, reflections, and evidence of competence development throughout the project. It supports recognition of learning, personal growth, and the participant\'s future use of their experience.' },
+      { key: 'personal_creation_project', label: 'Personal creation project', title: 'Delivery of the Personal Creation Project', description: 'This task focuses on supporting each participant to design and develop an individual creation project aligned with the project theme. It includes guidance sessions, peer feedback, and a final presentation. It supports creativity, personal contribution, and ownership of project outputs.' },
+    ]
+  },
+  {
     category: 'dissemination',
     label: 'Dissemination',
     icon: 'share',
@@ -183,6 +196,18 @@ const TASK_TEMPLATES = [
       { key: 'hosting_software', label: 'Hosting / software / platform costs', title: 'Provision of Hosting, Software, and Platform Services', description: 'This task covers the digital services needed to support project implementation, such as website hosting, online tools, software licences, or digital subscriptions. It supports communication, learning, content management, and project coordination.' },
       { key: 'travel_support', label: 'Travel / accommodation support costs', title: 'Provision of Travel and Accommodation Support', description: 'This task focuses on covering additional support needs related to participant mobility and attendance. It helps ensure that participants can access activities under suitable conditions. It is particularly useful in inclusive, international, or mobility-based contexts.' },
       { key: 'evaluation_admin', label: 'Evaluation / administrative support costs', title: 'Provision of Evaluation and Administrative Support', description: 'This task covers additional support needed for evaluation, reporting, documentation, or administrative coordination within the project. It helps strengthen quality assurance and organisational capacity. It supports smooth implementation and accountability.' },
+    ]
+  },
+  {
+    category: 'financial_support_third_parties',
+    label: 'Financial Support to Third Parties',
+    icon: 'volunteer_activism',
+    subtypes: [
+      { key: 'cascade_open_call', label: 'Cascade funding (open call)', title: 'Implementation of the Cascade Funding Scheme', description: 'This task focuses on the design, launch, and management of the cascade-funding mechanism (D.1 FSTP) to support third parties through an open call. It includes drafting the call documentation, defining eligibility and award criteria, running a transparent selection process, signing sub-grant agreements, monitoring funded activities, and reporting financial and qualitative results. It ensures compliant redistribution of EU funds to extend the project\'s reach to the broader ecosystem.' },
+      { key: 'subgrants_smes', label: 'Sub-grants to SMEs', title: 'Provision of Sub-grants to SMEs', description: 'This task focuses on awarding direct financial support to SMEs participating in the project ecosystem. It includes defining eligible SMEs, allocation rules, award amounts, simplified reporting requirements, and tracking the use of funds. It supports concrete uptake of project results by businesses in the target sector.' },
+      { key: 'subgrants_ngos', label: 'Sub-grants to NGOs / civil society', title: 'Provision of Sub-grants to NGOs and Civil Society', description: 'This task focuses on awarding financial support to NGOs and civil-society organisations to scale the project\'s social or community impact. It includes call documentation, selection, sub-grant agreements, mentoring of awardees, and impact monitoring. It supports broader participation and grassroots transfer of project outcomes.' },
+      { key: 'innovation_vouchers', label: 'Innovation vouchers', title: 'Implementation of Innovation Vouchers', description: 'This task focuses on issuing innovation vouchers to third parties for the purchase of specialised expertise, testing, or innovation services aligned with the project. It includes voucher rules, eligible services, award process, and reporting. It supports knowledge transfer and innovation uptake.' },
+      { key: 'cascade_other', label: 'Other cascade scheme', title: 'Implementation of the Cascade Support Scheme', description: 'This task covers the design and implementation of any other cascade-support mechanism not captured by the standard categories. It includes scheme rules, selection process, agreements, monitoring, and reporting. It ensures transparent and compliant distribution of D.1 financial support.' },
     ]
   },
 ];

@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL6-2024-BIODIV-01-1",
+  "ccm2Id": "45657366",
+  "callIdentifier": "HORIZON-CL6-2024-BIODIV-01",
+  "callTitle": "",
+  "title": "Invasive alien species",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Robotics for environment\",\"Marine Strategy Framework Directive\",\"Social sciences and humanities\",\"Environmental stressors\",\"International Cooperation\",\"Marine Environment\",\"Coastal ecosystems\",\"Digital Agenda\",\"Environmental protection\",\"Marine Ecosystems\",\"Surveillance of environment in order to alert\",\"Invasive Alien Marine Species\",\"Taxonomy\",\"Ocean sustainability and blue economy\",\"Early warning systems\",\"EU biodiversity strategy for 2030\",\"early detection\",\"protected species\",\"Artificial Intelligence\",\"biodiversity loss\",\"European Alien Species Information Network\",\"EASIN\",\"biodiversity strategy\",\"driver of biodiversity loss\",\"invasive alien species\",\"citizen science\",\"robotics\",\"IAS\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "EC-WORLD",
+    "DigitalAgenda",
+    "OCEAN"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-01-1.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.326Z"
+}

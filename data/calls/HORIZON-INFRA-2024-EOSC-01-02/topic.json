@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-INFRA-2024-EOSC-01-02",
+  "ccm2Id": "45747867",
+  "callIdentifier": "HORIZON-INFRA-2024-EOSC-01",
+  "callTitle": "",
+  "title": "Supporting the EOSC Partnership in further consolidating the coordination and sustainability of the EOSC ecosystem",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-12-06",
+  "deadline": "2024-03-12",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"eInfrastructure\",\"Co-programmed European Partnerships\",\"Digital Agenda\",\"International Cooperation\",\"EOSC and FAIR data\",\"open science\",\"mutual learning\",\"cascading grants\"]"
+  ],
+  "crossCuttingPriorities": [
+    "PART-COPROGR",
+    "DigitalAgenda",
+    "EC-WORLD",
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-INFRA-2024-EOSC-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.412Z"
+}

@@ -1,0 +1,84 @@
+{
+  "id": 1099089,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CALAFELL",
+    "nivel3": "AYUNTAMIENTO DE CALAFELL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897528",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE LAS PRESTACIONES SOCIALES DE CARÁCTER ECONÓMICO Y LAS AYUDAS DE URGENCIA SOCIAL DEL AYUNTAMIENTO DE CALAFELL PARA EL AÑO 2026.",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE LES PRESTACIONS SOCIALS DE CARÀCTER ECONÒMIC I DELS AJUTS D’URGÈNCIA SOCIAL DE L’AJUNTAMENT DE CALAFELL PER A L’ANY 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORES DE LES PRESTACIONS SOCIALS DE CARÀCTER ECONÒMIC I DELS AJUTS D?URGÈNCIA SOCIAL DE L?AJUNTAMENT DE CALAFELL",
+  "urlBasesReguladoras": "https://www.diputaciodetarragona.cat/ebop/index.php?op=dwn&tipus=i&data=20240621&anyp=2024&num=05453&v=i",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Desde el dia siguiente a la publicación en el BOPT",
+  "textFin": "Hasta el 30 de noviembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431382,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA_AUS_2026_CASTELLANO.pdf",
+      "long": 186785,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431384,
+      "descripcion": "ANUNCIO CONVOCATORIA AYUDAS URGENCIA SOCIAL AYUNTAMIENTO DE CALAFELL 2026",
+      "nombreFic": "ANUNCI_ANUNCIO_exposicio_publica_convocatoria_AUS_2026.pdf",
+      "long": 297035,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    },
+    {
+      "id": 1431383,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_AUS_2026_CATALÀ.pdf",
+      "long": 197861,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

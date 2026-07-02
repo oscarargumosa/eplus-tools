@@ -1,0 +1,26 @@
+## Expected Outcome
+
+The general objective of the call is to further develop the social enterprise finance market by supporting the social finance intermediaries to provide the needed capital to social enterprises and mission-driven enterprises.
+
+In this direction, the call builds upon previous similar calls and aims above all to support social finance intermediaries who undertake long-term risk capital investments in social enterprises and mission-driven enterprises. Therefore, the key objective of the present call of proposals is to catalyse risk capital investments below EUR 1 000 000 that otherwise would not happen in the area of social enterprise finance. The call aims to support the transaction costs for these low value investment tickets and thus to help to overcome the identified market failure / mismatch in the social investment market.
+
+The present call also encourages the European (trans-national) and innovative dimension of social finance schemes and support towards emerging social finance markets, e.g. via cross-border investments and cooperation, dissemination of good practices, etc.
+
+Under this call for proposals, the transaction costs support scheme will take the form of a grant, and it can be combined with financial instruments as means to address the mismatch of needed and sustainable ticket sizes.
+
+By transaction costs, this call for proposals understands the different costs linked to these investments, such as due diligence related costs, legal advice fees, travel costs, business development support costs, support towards establishing an impact measurement and management plan or system, etc.
+
+## Scope
+
+The action grants are aimed at financial intermediaries that undertake long-term risk capital investments in ticket sizes of less than EUR 1 000 000 in social enterprises and mission-driven enterprises in EU Member States and ESF+ Associated Countries.
+
+The long-term capital investment can take the form of:
+- equity, understood as the provision of capital to a firm, invested directly or indirectly in return for total or partial ownership of that firm and where the equity investor may assume some management control of the firm and may share the firm’s profits.
+- quasi-equity, understood as a type of financing that ranks between equity and debt, having a higher risk than senior debt and a lower risk than common equity. Quasi-equity investments can be structured as debt, typically unsecured and subordinated and in some cases convertible into equity, or as preferred equity.
+- or hybrid financing, understood as any flexible form of repayable finance combining the characteristics/features of at least two of the three financing instruments: grant, debt, and equity.
+
+The action grants should serve to cover part of the transaction costs for these small investment tickets and thus help overcome a market failure in the social enterprise finance market.
+
+The long-term risk capital investment can reach per investee at maximum EUR 1 000 000 over a period of 18 months.
+
+This means that if a second investment in the same social enterprise or mission-driven enterprise takes place within less than 18 months from the first investment and this raises the cumulative amount invested above the limit of EUR 1 000 000, the costs of the activities related to the first investment become ineligible for grant support, and any related payments already made by the Commission will be subject to recovery.

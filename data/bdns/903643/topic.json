@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903643",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SEGORBE / AYUNTAMIENTO DE SEGORBE",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Concesión de subvenciones para el \"Embellecimiento de las fachadas del casco antiguo de Segorbe\", ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": "2026-05-07",
+  "deadline": "2026-11-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903643",
+  "documents": [
+    {
+      "label": "Bases de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipcas.es/PortalBOP/boletin.do?fechaPublicacion=21/01/2016",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.234Z"
+}

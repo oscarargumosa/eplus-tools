@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "900233",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA / PATRONATO MUNICIPAL DE DEPORTES DE CASTELLÓN",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Resolución de 15 de abril de 2026 del Consejo Rector del PMD de Castellón de la Plana por la que se aprueba la convocatoria de subvenciones para clubes de élite nacional de la ciudad, para la temporada 2025/2026 o 2026.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 588000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": "https://sede-deportes.castello.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900233",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.castello.es/es/subvenciones",
+  "text_inicio": "dia siguiente a la publicación BOP",
+  "text_fin": "quince días naturales desde publicación en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.551Z"
+}

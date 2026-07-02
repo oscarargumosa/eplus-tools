@@ -1,0 +1,84 @@
+{
+  "id": 1100984,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FUENSALDAÑA",
+    "nivel3": "AYUNTAMIENTO DE FUENSALDAÑA"
+  },
+  "sedeElectronica": "https://fuensaldana.sedelectronica.es/info.0",
+  "codigoBDNS": "899423",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Ayudas por nacimiento de hijos durante el año 2025, a conceder en el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ayudas por nacimiento de hijos durante el año 2025, a conceder en el año 2026",
+  "urlBasesReguladoras": "https://fuensaldana.sedelectronica.es/transparency/a29fd9d2-5109-407a-a816-25947423fba4/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente hábil al de la publicación del extracto de la convocatoria en el B.O.P.",
+  "textFin": "15 días hábiles , desde el día siguiente al de la publicación del extracto de la convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437113,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases de convocatoria_Bases nacimiento hijos 2025.pdf",
+      "long": 497668,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437120,
+      "descripcion": "Anexo II",
+      "nombreFic": "20260408_Otros_Anexo II.pdf",
+      "long": 279751,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437119,
+      "descripcion": "Anexo I",
+      "nombreFic": "20260408_Otros_Anexo I.pdf",
+      "long": 306008,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,68 @@
+{
+  "id": 1105323,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CALP",
+    "nivel3": "AYUNTAMIENTO DE CALP"
+  },
+  "sedeElectronica": "https://calp.sedelectronica.es/catalog/t/af664899-3035-4966-a77f-8e3b2efcda74",
+  "codigoBDNS": "903762",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS PARA EL FOMENTO DE FORMACIÓN CULTURAL EN CALP, (ANUALIDAD SEPTIEMBRE DE 2025 - JULIO DE 2026)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS CONCESIÓN DE AYUDAS PARA EL FOMENTO DE LA FORMACIÓN CULTURAL EN CALP (ANUALIDAD SEPTIEMBRE DE 2025 - JULIO DE 2026)",
+  "urlBasesReguladoras": "https://www.dip-alicante.es/bop2/pdftotal/2025/07/18_135/2025_005224.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-10",
+  "textInicio": "Día posterior a la publicación de la convocatoria en el BOP.",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449327,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260504_Resolución_DECRETO TA07 2026-0103 [Resolución PR_2026_3414 - Convocatoria concesión ayudas fomento cultural anualidad 2026 (Fase A).pdf",
+      "long": 1519539,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,22 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- Evidence base is improved for effective prevention, treatment and harm reduction of synthetic drugs and stimulants in Europe;
+- Relevant European security practitioners, notably Police Authorities, Civil Society Organisations and Non-Governmental Organisations, are equipped with skills, tools and technology aimed at reducing the violence and offences associated with use and marketing of these substances, as well as at combatting drug trafficking from its origin to destination (i.e., through the entire supply chain);
+- Increased understanding of relevant European security practitioners and policymakers regarding the influence of external drivers of change of societal, technological, legal, economic and ethical nature to the availability and use of different types of synthetic drugs and drug markets.
+
+## Scope
+
+This topic asks for proposals that seek to develop effective and evidence-based responses to the growing prevalence of synthetic drugs and stimulants, such as cocaine and crack cocaine, within the EU. As these substances increasingly influence the drug landscape, the urgent need for enhanced understanding and strategies in their prevention, treatment, and harm reduction has never been clearer. Amongst other, there is also a lack of pharmacological data for the emerging drugs, needed to do proper risk assessments and interventions of these drugs in Europe. Key focus areas include:
+- Evidence-based approaches, strengthening the evidence base to inform effective prevention strategies, treatment modalities, and harm reduction practices targeted at synthetic drugs and stimulants. This includes identifying best practices in current interventions and evaluating their efficacy.
+- Reducing violence and offending exploring strategies to mitigate the violence and criminal behaviour associated with the use and marketing of synthetic drugs. This involves understanding the socio-economic and cultural factors, including the gender, age, or other social factors, that contribute to these phenomena and proposing targeted interventions.
+- Improving technologies and tools to combat drug trafficking from its origin to destination (i.e., through the entire supply chain).
+- External drivers of change, analysing the impact of geopolitical situations, legal frameworks, and societal factors on the availability and consumption of various drugs, and addressing how international crises affect organised crime and drug markets in the EU. This includes investigating the repercussions of global developments on local drug dynamics and identifying adaptive response strategies.
+
+In light of the underdeveloped evidence base surrounding synthetic drugs, proposals should aim to foster collaboration among researchers, policymakers, and security practitioners to create a comprehensive and effective response to this pressing issue in Europe, previous research, including but not limited to research by other Framework Programmes’ projects. Coordination among the successful proposals from this topic should be envisaged to avoid duplication and to exploit complementarities as well as opportunities for increased impact. To ensure the active involvement of and timely feedback from relevant security practitioners, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term outcomes, performed by the practitioners involved in the project.
+
+Activities proposed within this topic should address, in a balanced way, both technological and societal dimensions of the issue under consideration. The proposals funded under this topic are expected to engage with the Europol Innovation Lab during the lifetime of the project, including validating the outcomes, with the aim of facilitating future uptake of innovations for the law enforcement community. Similarly, the proposals funded under this topic are expected to engage with the EU Drugs Agency during the lifetime of the project, including validating the outcomes. Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Fighting Crime and Terrorism Destination.
+
+## null
+
+Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

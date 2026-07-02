@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "900468",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / HOSTALETS DE PIEROLA, ELS / AYUNTAMIENTO DE HOSTALETS DE PIEROLA, ELS",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA CONCESIÓN SUBVENCIONES RÉGIMEN CONCURRENCIA COMPETITIVA EN EL MARCO DE LAS BASES REGULADORAS ESPECÍFICAS PARA EL OTORGAMIENTO DE SUBVENCIONES A ENTIDADES CULTURALES,DEPORTIVAS Y FESTIVAS SIN ÁNIMO DE LUCRO DE ELS HOSTALETS DE PIEROLA AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 91000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900468",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3595867/aprovacio-de-la-modificacio-de-les-bases-per-a-la-concessio-de-subvencions-a-entitats-culturals-esportives-i-festives-sense-anim-de-lucre-ajuntament-dels-hostalets-de-pierola",
+  "text_inicio": "EL DIA SIGUIENTE DE LA PUBLICACION EN EL BOPB Y EN LA SEDE ELECTRONICA DEL AYUNTAMIENTO",
+  "text_fin": "DIEZ DIAS HABILES A CONTAR DEL DIA SIGUIENTE DE LA PUBLICACION EN EL BOPB Y EN LA SEDE ELECTRONICA D",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.690Z"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1099944,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLACAÑAS",
+    "nivel3": "AYUNTAMIENTO DE VILLACAÑAS"
+  },
+  "sedeElectronica": "https://sedevillacanas.absiscloud.com/",
+  "codigoBDNS": "898383",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 34000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES PARA LA CONCESIÓN DE SUBVENCIONES Y AYUDAS ECONÓMICAS COOPERACIÓN INTERNACIONAL 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES425 - Toledo"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES PARA LA CONCESIÓN DE SUBVENCIONES Y AYUDAS ECONÓMICAS COOPERACIÓN INTERNACIONAL 2026",
+  "urlBasesReguladoras": "https://simplifica01.absiscloud.com/absis/ead/tra/eadtramitaweb/dlg/tablonanuncios/portal/dlgVerDetalleAnuncio.aspx?sesionId=342edd0c9-292c-43bc-af6a-031669d6bc6cPTw9IGdkYjA9NzQwJGw*OTwjOyE5Ni5mNTY-JWw8Mj01OWomNjczZTU2NTg5O05NSVpdUUxLV0U&numint=8188E500B6",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El plazo será de 15 días hábiles computados a partir del día siguiente al de publicación en el BOP",
+  "textFin": "El plazo será de 15 días hábiles computados a partir del día siguiente al de publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434016,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvenciones Cooperacion Internacional 2026.pdf",
+      "long": 570238,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1434021,
+      "descripcion": "Declaración Responsable",
+      "nombreFic": "Anexo II Declaracion Responsable Cooperacion 2026.docx",
+      "long": 52565,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1434018,
+      "descripcion": "Solicitud",
+      "nombreFic": "Anexo I Solicitud Cooperacion 2026.docx",
+      "long": 52351,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

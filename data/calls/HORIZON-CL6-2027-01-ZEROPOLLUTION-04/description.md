@@ -1,0 +1,23 @@
+## Expected Outcome
+
+The successful proposal funded under this topic will provide guidelines to industrial operators as well as administrators for contributing to the objectives of the Industrial and Livestock Rearing Emissions Directive, the Clean Industrial Deal and the Zero-pollution Action Plan, addressing technical goals in the scope of the Communication on boosting biotechnology and biomanufacturing in the EU and in the new EU bioeconomy strategy.
+
+Project results are expected to contribute to all of the following expected outcomes:
+- innovative circular industrial bio-based systems – including biotechnologies and biomanufacturing – within the EU bioeconomy are deployed to decrease the environmental footprint of industries, not harm biodiversity and address climate neutrality.
+
+## Scope
+
+Industrial bio-based systems – made by the supply chain of bio-based feedstock and the industrial value chains - are key elements for the establishment of a fossil-free economy in the EU and Associated Countries (AC). Innovative industrial bio-based systems - also enabled by biotechnology applications - have the capacity to deliver products and services with improved environmental performances. To support the deployment of the best among such systems, it is necessary to create a framework which facilitate the benchmarking. The European Innovation Centre for Industrial Transformation and Emissions (INCITE) - based on the recently revised Industrial and Livestock Rearing Emission Directive (IED 2.0) - collects information on innovative techniques, including emerging[1] and transformative techniques, and assesses their level of development and their environmental performance, including their cost-effectiveness and their trade-offs.
+
+Proposals should:
+- establish a forum of experts and stakeholders in the bioeconomy and in industrial bio-based systems, including representatives from academia, industry, and government. Members of the forum should be part of the project consortium and should cover, at least, the specific sectors as described in the bullet point below;
+- animate the work of the forum to:   select and collect data on emerging techniques (as defined in Art. 3.14 of the IED 2.0) along the whole supply and value chain of industrial bio-based systems, on a worldwide basis, but especially those being tested or used in the EU and ACs. Assess their level of development and environmental performance, including their cost-effectiveness and trade-offs. Industrial bio-based systems in scope of this topic do not include food/feed, biofuels/bioenergy and health and medical devices;align the selection, the collection of relevant data and the assessment of such techniques with the approach of the European Innovation Centre for Industrial Transformation and Emissions (INCITE) and with the EU Bioeconomy Monitoring (Knowledge Centre for Bioeconomy);give emphasis on relevant emerging techniques including, but not limited to, specific sectors: i) pulp & paper and bio-based chemicals, including the treatments and further conversion of industrial residues and waste from these sectors, ii) mechanical and chemical recycling of bio-based plastic, iii) bioremediation applications - also enabled by biotechnology - to remediate and regenerate polluted ecosystems. The scope of bioremediation applications should include landfills and mining;include data on climate change mitigation/adaptation and on the capacity for biodiversity protection and enhancement of the selected techniques, where relevant;align the collection of life cycle assessment (LCA) information, according to the Environmental Footprint recommendation, and the methodological guidance of the voluntary Safe and Sustainable by Design (SSbD) Framework[2], where applicable;
+- integrate the collected information and data into the Sevilla process through INCITE and into the EU Bioeconomy Monitoring (Knowledge Centre for Bioeconomy).
+
+International cooperation is encouraged, for example in the collection of data on emerging techniques.
+
+Synergies with projects funded under the topics on bioeconomy in the current and past Cluster 6 work programmes, and with projects assessing the best practices in the biofuels/bioenergy sectors under Cluster 5 work programmes are encouraged.
+
+[1]  ‘Emerging technique’ means a novel technique for an industrial activity that, if commercially developed, could provide either a higher general level of protection of human health and the environment or at least the same level of protection of human health and the environment and higher cost savings than existing best available techniques, Art 3 IED 2.0.
+
+[2] https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022H2510

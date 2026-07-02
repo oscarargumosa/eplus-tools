@@ -1,0 +1,96 @@
+{
+  "id": 1104121,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CARLET",
+    "nivel3": "AYUNTAMIENTO DE CARLET"
+  },
+  "sedeElectronica": "https://carlet.sedelectronica.es",
+  "codigoBDNS": "902560",
+  "fechaRecepcion": "2026-04-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6600,
+  "mrr": false,
+  "descripcion": "XXVI Concurs Nacional de Piano Ciutat de Carlet 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORES DEL XXVI CONCURS NACIONAL DE PIANO “CIUTAT DE CARLET” 2026 (publicat en BDNS 898859)",
+  "urlBasesReguladoras": "https://carlet.sedelectronica.es/transparency/4a0875a4-604c-47cc-9d1d-ab0bef5846b2/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-31",
+  "textInicio": "Des de l'endemà de la publicació de la convocatòria en el BOP València",
+  "textFin": "fins al 31 de maig de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1445661,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Edicto concurso de piano.pdf",
+      "long": 223925,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    },
+    {
+      "id": 1445687,
+      "descripcion": "Resolució",
+      "nombreFic": "Resolució convocatòria concurs de piano.pdf",
+      "long": 600210,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    },
+    {
+      "id": 1445657,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Edicte convocatòria concurs de Piano.pdf",
+      "long": 209454,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210533,
+      "titulo": "Extracto de la convocatoria del XXVI Concurso Nacional de Piano “Ciutat de Carlet” 2026",
+      "tituloLeng": "Extracte de la convocatòria del XXVI Concurs Nacional de Piano “*Ciutat de Carlet” 2026",
+      "texto": "<p>Se publica el extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones, con el código BDNS 898859, así como en el Portal de Transparencia del Ayuntamiento de Carlet: https://carlet.sedelectronica.es/transparency/4a0875a4-604c-47cc-9d1d-ab0bef5846b2/.</p><p>La convocatoria ha sido aprobada por Resolución de Alcaldía 2026-1327, de 29 de abril de 2026, de acuerdo con las bases reguladoras aprobadas por la Junta de Gobierno Local en sesión de 2 de abril de 2026.</p><p>Las solicitudes podrán presentarse desde el día siguiente a la publicación del extracto en el Boletín Oficial de la Provincia de València y hasta el 31 de mayo de 2026</p>",
+      "textoLeng": "<p>Es publica l'extracte de la convocatòria el text complet de la qual pot consultar-se en la Base de dades Nacional de Subvencions, amb el codi *BDNS 898859, així com en el Portal de Transparència de l'Ajuntament de Carlet: https://carlet.sedelectronica.es/transparency/4a0875a4-604c-47cc-9d1d-ab0bef5846b2/.</p><p>La convocatòria ha sigut aprovada per Resolució d'Alcaldia 2026-1327, de 29 d'abril de 2026, d'acord amb les bases reguladores aprovades per la Junta de Govern Local en sessió de 2 d'abril de 2026.</p><p>Les sol·licituds podran presentar-se des de l'endemà de la publicació de l'extracte en el Butlletí Oficial de la Província de València i fins al 31 de maig de 2026 </p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/05156&lang=es",
+      "cve": "BOPV-2026/05156",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

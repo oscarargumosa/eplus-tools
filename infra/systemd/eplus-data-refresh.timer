@@ -1,0 +1,17 @@
+[Unit]
+Description=Daily trigger for E+ Tools data refresh (06:00 Europe/Madrid)
+
+[Timer]
+# 06:00 CET / CEST (timezone-aware, no DST drift)
+OnCalendar=*-*-* 06:00:00 Europe/Madrid
+
+# If the VPS was off at 06:00, run on next boot (catch-up)
+Persistent=true
+
+# Stagger up to 5 min to avoid hitting upstream APIs at the exact same minute
+RandomizedDelaySec=300
+
+Unit=eplus-data-refresh.service
+
+[Install]
+WantedBy=timers.target

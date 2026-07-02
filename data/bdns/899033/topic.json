@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "899033",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE CULTURA, DEPORTE Y TURISMO",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Subvenciones para actuaciones de desarrollo y de marketing turístico realizadas por asociaciones turísticas, entidades locales y consorcios turísticos de Navarra durante el año 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 394630.92,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    },
+    {
+      "codigo": "01.5",
+      "descripcion": "Producción agrícola combinada con la producción ganadera"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899033",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.navarra.es/es/tramites/on/-/line/subvenciones-de-desarrollo-y-marketing-turistico-para-asociaciones-turisticas-entes-locales-y-consorcios?back=true&pageBackId=5722676",
+  "text_inicio": "El día siguiente al de la publicación de la convocatoria en BON",
+  "text_fin": "15 días hábiles desde el día siguiente de la publicación BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.788Z"
+}

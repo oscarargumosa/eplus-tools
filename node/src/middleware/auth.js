@@ -61,4 +61,30 @@ function requireAuth(req, res, next) {
   }
 }
 
-module.exports = { requireAuth, signToken, signRefreshToken, verifyRefreshToken, SECRET };
+/* ── Express middleware — optional auth ───────────────────────────
+   Sets req.user when a valid token is present, otherwise continues
+   as anonymous (req.user = null). Used by teaser-public endpoints
+   that serve a trimmed payload to logged-out visitors.            */
+function optionalAuth(req, res, next) {
+  const header = req.headers.authorization;
+  if (header && header.startsWith('Bearer ')) {
+    try {
+      const payload = jwt.verify(header.slice(7), SECRET());
+      req.user = {
+        id:           payload.sub,
+        email:        payload.email,
+        name:         payload.name,
+        role:         payload.role,
+        subscription: payload.subscription
+      };
+      aiContext.set({ userId: payload.sub, role: payload.role });
+    } catch (err) {
+      req.user = null;
+    }
+  } else {
+    req.user = null;
+  }
+  next();
+}
+
+module.exports = { requireAuth, optionalAuth, signToken, signRefreshToken, verifyRefreshToken, SECRET };

@@ -1,0 +1,112 @@
+{
+  "id": 1105218,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "INSTITUTO MUNICIPAL DE ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "903657",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "Plan de Subvenciones Asociaciones de Mujer 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Plan de Subvenciones Asociaciones de Mujeres 2026",
+  "urlBasesReguladoras": "https://www.ayto-caceres.es/ayuntamiento/publicaciones/ayudas-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.P. DE CACERES",
+  "textFin": "15 DIAS HABILES SIGUIENTES A LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP CC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449057,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 275706,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449058,
+      "descripcion": "ANEXO I.pdf",
+      "nombreFic": "ANEXO I.pdf.PDF",
+      "long": 193245,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449059,
+      "descripcion": "ANEXO II.pdf",
+      "nombreFic": "ANEXO II.pdf.PDF",
+      "long": 213396,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449063,
+      "descripcion": "Cartel inf SUBV Mujer 2026",
+      "nombreFic": "Cartel inf SUBV Mujer 2026.PDF",
+      "long": 2561617,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449061,
+      "descripcion": "ANEXO IV.pdf",
+      "nombreFic": "ANEXO IV.pdf.PDF",
+      "long": 309836,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449062,
+      "descripcion": "ANEXO V.pdf",
+      "nombreFic": "ANEXO V.pdf.PDF",
+      "long": 183847,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449060,
+      "descripcion": "ANEXO III.pdf",
+      "nombreFic": "ANEXO III.pdf.PDF",
+      "long": 203994,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

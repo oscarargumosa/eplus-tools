@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "900401",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA-LA MANCHA / DIRECCIÓN GENERAL DE VIVIENDA",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "Orden de 15/04/2026, de la Consejería de Fomento, por la que se establecen las bases reguladoras y se efectúa la convocatoria de las ayudas al alquiler de vivienda en Castilla-La Mancha. 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": "2026-06-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "L",
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS"
+    }
+  ],
+  "apply_url": "https://www.jccm.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900401",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https//www.jccm.es",
+  "text_inicio": "Desde el día siguiente a la publicación de la convocatoria",
+  "text_fin": "Hasta 15 de junio de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.648Z"
+}

@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "898590",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCORA, L' / AYUNTAMIENTO DE ALCORA, L'",
+  "nuts_codes": [
+    "ES300",
+    "ES522"
+  ],
+  "nuts_primary": "ES300",
+  "title": "Convocatoria subvenciones ONG's 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://lalcora.sedelectronica.es/preview-document/140498a4-1050-4618-9198-b21220d44e05/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898590",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://lalcora.sedelectronica.es/preview-document/03adc2c3-439d-4f71-9ac2-1530a34cd1ae/",
+  "text_inicio": "Día siguiente a la publicación del extracto en el BOP",
+  "text_fin": "10 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.608Z"
+}

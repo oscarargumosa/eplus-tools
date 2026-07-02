@@ -1,0 +1,72 @@
+{
+  "id": 1102588,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ESTELLA-LIZARRA",
+    "nivel3": "AYUNTAMIENTO DE ESTELLA-LIZARRA"
+  },
+  "sedeElectronica": "AYUNTAMIENTO DE ESTELLA-LIZARRA",
+  "codigoBDNS": "901027",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS ECONÓMICAS PARA LA REALIZACIÓN DE CAMPAMENTOS DE VERANO EN EUSKERA 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS ECONÓMICAS PARA LA REALIZACIÓN DE CAMPAMENTOS DE VERANO EN EUSKERA 2026.",
+  "urlBasesReguladoras": "https://www.estella-lizarra.com/wp-content/uploads/2026/04/Bases-Campamentos-verano-euskera-2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-01",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "1 de septiembre de 2026",
+  "textFin": "30 de septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441343,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Kanpaldietarako beka deialdia-2026.pdf",
+      "long": 303005,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441339,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Campamentos verano euskera, 2026.pdf",
+      "long": 301801,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

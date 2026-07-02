@@ -1,0 +1,76 @@
+{
+  "id": 1099121,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE DEFENSA",
+    "nivel3": "EJÉRCITO DE TIERRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897560",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 237311.8,
+  "mrr": false,
+  "descripcion": "Resolución 550/MADOC/PC-2026027, de 8 de abril 2026, del Teniente General Jefe del Mando de Adiestramiento y Doctrina por la que se convocan las ayudas económicas para la formación de idiomas del personal militar del Ejército de Tierra, para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Defensa",
+  "descripcionBasesReguladoras": "Orden DEF/638/2023, de 8 de junio, por la que se establecen las bases reguladoras para la concesión de ayudas para la formación de idiomas para personal militar del Ejército de Tierra.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2023/06/08/def638",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431446,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "260408-RESOLUCION-CONVOCATORIA_IDIOMAS_2026.pdf",
+      "long": 292199,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208201,
+      "titulo": "Extracto de la Resolución de 8 de abril de 2026, del Mando de Adiestramiento y Doctrina, por la que se convocan ayudas económicas para la formación de idiomas para personal militar del Ejército de Tierra para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Podrán a optar a solicitar las ayudas el personal del ET en activo, de los Cuerpos Comunes destinados en la estructura del ET y alumnos de formación de Centros Docentes Militares dependientes del ET.</p><p>Segundo. Objeto. </p><p>Conceder ayudas económicas, en régimen de concurrencia competitiva, a aquel personal que haya cursado, a título particular, estudios en los idiomas declarados de interés para las FAS, en el periodo comprendido entre el 1 de septiembre de 2023 y el 1 de septiembre de 2025, para el primer periodo de adjudicación y entre el 1 de septiembre de 2024 y el 1 de septiembre de 2026, para el segundo periodo de adjudicación, siempre que se haya mejorado o mantenido el nivel SLP en vigor al inicio de la formación y no se hayan recibido ayudas económicas de cualquier tipo por estos cursos y certificados.</p><p>Tercero. Bases reguladoras.</p><p>Aprobadas por Orden DEF/638/2023 de 8 de junio, por la que se establecen las bases reguladoras para la concesión de ayudas para la formación de idiomas para personal militar del ET, publicada en el BOE nº 146 de 20 de junio.</p><p>Cuarto. Cuantía.</p><p>La dotación económica es de 237.311,8 euros, con un máximo de 500 euros por persona e idioma. De la cuantía establecida, 107.955 euros están destinados al primer periodo de adjudicación y 129.356,8 euros al segundo periodo de adjudicación.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación será de quince (15) días hábiles contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficilal del Ministerio de Defensa para el primer periodo de adjudicación, y del 1 de septiembre al 30 de octubre de 2026 para el segundo periodo de adjudicación.</p><p>Sexto. Otros datos.</p><p>Incompatible con cualquier otra subvención, ayudas, ingresos o recursos para la misma finalidad, incluidas las ayudas de idiomas del Plan de Acción Social del Personal Militar del Ministerio de Defensa para el año 2023 (BOD nº 65), 2024 (BOD nº 65), 2025 (BOD nº 47) y 2026 (BOD nº 39).</p><p>La resolución de la convocatoria de las ayudas se encuentra, además de en la BDNS https://www.infosubvenciones.es/bdnstrans/index, en la Web del MADOC https://ejercito.defensa.gob.es/unidades/Granada/madoc/Ayudas_idiomas/index.html.</p><p>Las ayudas se solicitarán obligatoriamente mediante la aplicación que figura en la intranet del MINISDEF.</p><p>https://colabora.mdef.es/et/MADOC/BECAS/SitePages/Inicio.aspx</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-10999",
+      "cve": "BOE-B-2026-10999",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

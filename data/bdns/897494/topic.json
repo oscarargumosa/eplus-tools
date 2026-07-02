@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "897494",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLVÍ DE ROSANES / AYUNTAMIENTO DE CASTELLVÍ DE ROSANES",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "X2026000628 CONVOCATORIA CONCESION SUBVENCIONES COOPERACION Y DESARROLLO 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897494",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop-gestio.diba.cat/anuncis/show/3117279/eyJpZE9yZ2FuaXNtZSI6MzI3LCJpZEdydXBQdWJsaWNhY2lvIjozMjd9",
+  "text_inicio": "Desde la Publicación de la Convocatoria en el BOP",
+  "text_fin": "10 dies desde la pubicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.049Z"
+}

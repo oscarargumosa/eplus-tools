@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL3-2023-FCT-01-01",
+  "ccm2Id": "45763426",
+  "callIdentifier": "HORIZON-CL3-2023-FCT-01",
+  "callTitle": "",
+  "title": "Processing of large, complex and unstructured datasets resulting from criminal investigations, while reconciling big data analysis and data protection",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Design, implementation, operation data management\",\"Digital Agenda\",\"Data protection\",\"Fight against crime and terrorism\",\"Information management\",\"Education and training of police authorities\",\"Big data\",\"Data protection and privacy\",\"Police authorities\",\"ethical rules\",\"security practitioners\",\"terrorists\",\"novel technologies\",\"police authorities\",\"crime\",\"data\",\"criminals\",\"Security Union Strategy\",\"fundamental rights\",\"privacy\",\"Capabilities\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-FCT-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.356Z"
+}

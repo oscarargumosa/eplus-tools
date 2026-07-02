@@ -1,0 +1,64 @@
+{
+  "id": 1104385,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUADALAJARA",
+    "nivel3": "AYUNTAMIENTO DE GUADALAJARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "902824",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA DE SUBVENCIONES DE LA CONCEJALIA DE JUVENTUD PARA ASOCIACIONES JUVENILES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES424 - Guadalajara"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones públicas del Excmo. ayto Guadalajara",
+  "urlBasesReguladoras": "https://boletin.dguadalajara.es/boletin/index.php/1-anuncio/3151-Excmo-ayuntamiento-de%C2%A0guadalajara",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-05",
+  "fechaFinSolicitud": "2026-05-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446361,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases de la convocatoria - Subvenciones para asociaciones juveniles 2026-2.pdf",
+      "long": 275776,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

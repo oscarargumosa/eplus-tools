@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "899801",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA DE MOVILIDAD, COOPERACIÓN LOCAL Y GESTIÓN DE EMERGENCIAS",
+  "nuts_codes": [
+    "ES2"
+  ],
+  "nuts_primary": "ES2",
+  "title": "CONVOCATORIA APOYO A LAS PARROQUIAS RURALES DEL PRINCIPADO DE ASTURIAS 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 63000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899801",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2025-10386&",
+  "text_inicio": "DÍA SIGUIENTE PUBLICACIÓN EN BOPA DE CONVOCATORIA",
+  "text_fin": "15 DÍAS DESDE PUBLICACIÓN DE CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209331,
+      "titulo": "CONVOCATORIA APOYO A LAS PARROQUIAS RURALES DEL PRINCIPADO DE ASTURIAS 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero.-Beneficiarios:</p><p>Parroquias rurales del Principado de Asturias existentes y formalmente constituidas a la fecha de la entrada en vigor de la Ley 27/2013, de 27 de diciembre, de racionalización y sostenibilidad de la Administración Local.</p><p>Segundo.-Finalidad:</p><p>Sufragar gastos ordinarios de administración y de gestión de los servicios generales de las parroquias que cumplan los requisitos para ser beneficiarias.</p><p>Tercero.-Bases reguladoras:</p><p>Resolución de 3 de diciembre de 2025, de la Consejería de Movilidad, Medio Ambiente y Gestión de emergencias, por la que se aprueban las bases reguladoras de la concesión de subvenciones a las parroquias rurales asturianas destinadas a gastos de administración y gestión de los servicios generales y de inversión.</p><p>Cuarto.-Importe:</p><p>Línea 1. \"Apoyo a gastos ordinarios de administración y de gestión de los servicios generales de la parroquia\": 63.000 euros.</p><p>Quinto.-Plazo de presentación de solicitudes:</p><p>Quince días hábiles a partir del siguiente a la publicación del extracto de la presente convocatoria en el Boletín Oficial del Principado de Asturias.</p><p>Sexto.-Otros datos:</p><p>En la sede electrónica del Principado de Asturias (https://sede.asturias.es) están publicadas las fichas de servicio que se podrán localizar introduciendo el código AYUD0043T02 en el buscador de la cabecera (situado en la parte superior derecha de la página) en la que se encontrará el texto íntegro de la resolución, información com plementaria, el formulario normalizado de la solicitud y la posibilidad de iniciar electrónicamente la solicitud.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-03216&p_r_p_dispositionReference=2026-03216&p_r_p_dispositionDate=27%2F04%2F2026",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.291Z"
+}

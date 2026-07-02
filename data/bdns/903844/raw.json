@@ -1,0 +1,89 @@
+{
+  "id": 1105405,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA MARGARIDA DE MONTBUI",
+    "nivel3": "AYUNTAMIENTO DE SANTA MARGARIDA DE MONTBUI"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903844",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS SOCIALES A FAMILIAS PARA ACTIVIDADES DE VERANO EN EL AMBITO DEL OCIO 2026",
+  "descripcionLeng": "CONVOCATORIA DE SUBVENCIONS PER A L`ATORGAMENT D`AJUTS SOCIALS A FAMILIES PER A ACTIVITATS D`ESTIU EN L`AMBIT DEL LLEURE 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "MODIFICACIÓ de les bases generals per a l`atorgament d`ajuts socials a famílies per activitats d`estiu en l`¡ambit del lleure",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3756343/aprovacio-inicial-de-la-modificacio-de-les-bases-generals-per-a-l-atorgament-d-ajuts-socials-a-families-per-a-activitats-d-estiu-en-l-ambit-del-lleure-ajuntament-de-santa-margarida-de-montbui",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación en el BOPB",
+  "textFin": "10 días nataurales desde el día siguiente de su publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449527,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificat_dacord_convocatòria_4_05_2026.pdf",
+      "long": 626134,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449529,
+      "descripcion": "Edicte català convocatòria",
+      "nombreFic": "3._EDICTE_CONVOCATÒRIA_AJUTS_LLEURE.pdf",
+      "long": 294519,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449528,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Certificat_dacord_convocatòria_4_05_2026.pdf",
+      "long": 626134,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

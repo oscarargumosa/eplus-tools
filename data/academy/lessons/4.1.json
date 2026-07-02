@@ -1,0 +1,58 @@
+{
+  "id": "4.1",
+  "code": "Part B · 4.1",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.1 El plan de trabajo (visión global)",
+  "subtitle": "Cómo dar una panorámica clara de cómo encajan tus work packages antes de describir cada uno por dentro.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.1",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Llegas a la sección 4 y el formulario te pide \"describir el plan de trabajo\" antes de dejarte rellenar los WP uno a uno. Te quedas en blanco porque no sabes qué nivel de detalle toca aquí ni qué se repite luego.",
+    "comprender": "Que 4.1 es la foto de conjunto: una descripción breve de cómo se estructura el proyecto en work packages y cómo se encadenan, no el detalle de cada paquete (eso va después).",
+    "objetivo": "Saber redactar una panorámica del plan de trabajo que liste tus WP, diga qué hace cada uno en una línea y muestre cómo se conectan (la lógica o el diagrama PERT).",
+    "confusion": "Creer que aquí ya hay que volcar tareas, presupuestos y participantes. No: aquí solo das la visión global; el detalle WP a WP es la sección siguiente.",
+    "importa": "Porque el evaluador lee esta panorámica primero y se forma una impresión de si tu proyecto está bien arquitecturado. Un plan de trabajo que se entiende de un vistazo gana puntos antes de entrar en detalle."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.1.</b> Una <b>descripción breve de la estructura global del plan de trabajo</b>: la lista de tus work packages y cómo encajan entre sí. El formulario te invita a apoyarte, si quieres, en un <b>diagrama PERT</b> (un esquema visual que muestra el orden y las dependencias entre paquetes).</div><p>Piensa en esta sección como el <b>índice comentado</b> de tu plan de trabajo. Antes de que el evaluador entre paquete por paquete, tú le das la <em>foto de conjunto</em>: cuántos WP hay, qué hace cada uno en una frase y en qué orden ocurren.</p><p>Un proyecto KA2 a tanto alzado se organiza siempre en <b>work packages</b> (WP, paquetes de trabajo). El primero, <b>WP1, es siempre Gestión del proyecto</b>. Los demás (WP2, WP3…) son paquetes de <em>implementación</em> que producen los resultados y se vinculan a tus objetivos específicos.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador quiere ver, en pocas líneas, que tu proyecto tiene una <b>arquitectura lógica</b>. Para conseguirlo:</p><ol class=\"obj\"><li><b>Lista tus WP con una frase cada uno.</b> Nombre del WP + qué produce. Nada de párrafos largos: una línea por paquete.</li><li><b>Muestra la secuencia.</b> Deja claro qué va antes y qué después. Lo normal: WP1 (gestión) recorre todo el proyecto en paralelo; los WP de contenido van encadenados (investigación → desarrollo → pilotaje → difusión).</li><li><b>Enseña las dependencias.</b> Si el WP4 (difusión) necesita el resultado del WP3 (producto), dilo. Eso demuestra que pensaste el flujo, no que apilaste cajas sueltas.</li><li><b>Conecta cada WP con un objetivo.</b> En una panorámica basta con insinuarlo (\"WP2, ligado al objetivo específico 1…\"); el detalle va en 4.2.</li></ol><div class=\"callout callout-good\"><b>Regla de oro:</b> si alguien lee solo el 4.1, debe poder dibujar tu proyecto en una servilleta. Esa es la prueba de que tu panorámica funciona.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Imagina un KA220 de educación de adultos sobre competencias digitales. Una panorámica clara se vería así:</p><table class=\"cmp\"><thead><tr><th>WP</th><th>En una frase</th></tr></thead><tbody><tr><td><b>WP1 · Gestión</b></td><td>Coordina, hace seguimiento y asegura la calidad durante los 24 meses (transversal).</td></tr><tr><td><b>WP2 · Investigación</b></td><td>Mapea necesidades formativas y produce un informe de diagnóstico. <em>Alimenta al WP3.</em></td></tr><tr><td><b>WP3 · Desarrollo</b></td><td>Crea el currículo y los materiales formativos a partir del diagnóstico. <em>Alimenta al WP4.</em></td></tr><tr><td><b>WP4 · Pilotaje</b></td><td>Prueba los materiales con 60 adultos en 3 países. <em>Valida antes de difundir.</em></td></tr><tr><td><b>WP5 · Difusión</b></td><td>Comparte resultados y celebra el evento multiplicador final.</td></tr></tbody></table><p>Y la frase que cierra la panorámica: <em>\"El WP1 acompaña todo el ciclo; los WP2 a WP5 se encadenan de forma secuencial, cada uno entregando el insumo que el siguiente necesita, de modo que el conocimiento generado (WP2) se convierte en producto (WP3), se valida (WP4) y se difunde (WP5).\"</em></p><div class=\"callout callout-key\">Eso es un <b>PERT en palabras</b>: orden + dependencias. Si añades el diagrama visual, mejor; pero la lógica tiene que estar en el texto sí o sí.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Aquí ya describo cada WP a fondo.»</b> → No: 4.1 es la panorámica. El detalle (tareas, participantes, entregables) va en 4.2 y se duplicaría inútilmente.</li><li><span class=\"err-x\">✗</span> <b>«Pongo los WP como una lista sin relación entre ellos.»</b> → Cajas sueltas no son un plan. El evaluador quiere ver <em>secuencia y dependencias</em>, no un inventario.</li><li><span class=\"err-x\">✗</span> <b>«Me invento un WP de gestión en medio.»</b> → WP1 es <em>siempre</em> Gestión y es transversal. No se intercala con los de implementación.</li><li><span class=\"err-x\">✗</span> <b>«Hago un diagrama PERT precioso pero no explico la lógica en el texto.»</b> → El diagrama es opcional y de apoyo; la lógica del flujo debe quedar clara también en palabras.</li><li><span class=\"err-x\">✗</span> <b>«Tengo 9 WP para parecer ambicioso.»</b> → Demasiados paquetes fragmentan el proyecto y disparan la gestión. Para KA2, entre 3 y 5 WP suele ser lo sano.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.1</td><td>Pide la descripción breve de la estructura global del plan de trabajo (lista de WP / diagrama PERT).</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Estructura oficial del work plan: WP1 gestión + WP de implementación vinculados a objetivos.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Criterio \"Quality of design and implementation\": valora coherencia y claridad del plan de trabajo global.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "900022",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / FONT D'EN CARRÒS, LA / AYUNTAMIENTO DE FONT D'EN CARRÒS, LA",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Resolución de 16 de abril de 2026 de aprobación de las bases y la convocatoria de las ayudas a conceder por el ayuntamiento de la\nFont d'en Carròs para la adquisición de vacunes no cubiertas por el sistema de Salud Pública",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": "2026-04-20",
+  "deadline": "2026-12-01",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 0,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "86",
+      "descripcion": "Actividades sanitarias"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900022",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://lafontdencarros.sede.dival.es/segex/expediente.aspx?id=2780743&vista=Documento&d=55953408&returnUrl=https%3a%2f%2flafontdencarros.sede.dival.es%2fsegex%2fexpediente.aspx%3fid%3d2780743%26vista%3dDocumentos%26c%3d20412497%26sc%3d211.2",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.445Z"
+}

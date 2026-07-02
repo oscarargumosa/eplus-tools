@@ -1,0 +1,28 @@
+{
+  "identifier": "DIGITAL-EUROHPC-JU-2023-ACADEMY-02-01",
+  "ccm2Id": "46357137",
+  "callIdentifier": "DIGITAL-EUROHPC-JU-2023-ACADEMY-02",
+  "callTitle": "",
+  "title": "EuroHPC Virtual Training Academy",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-11-07",
+  "deadline": "2024-06-06",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL JU Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Education and Training\",\"Education\",\"IT skills and competence\",\"High-performance computing (HPC)\",\"High performance computing\",\"High Performance Computing\",\"Digital Skills\",\"EuroHPC\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/DIGITAL-EUROHPC-JU-2023-ACADEMY-02-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.655Z"
+}

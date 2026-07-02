@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "902467",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DEFENSA / EJÉRCITO DE TIERRA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución 550/MADOC/PC-2026021, de 29 de abril de 2026, del Jefe del Mando de Adiestramiento y Doctrina por la que se convocan las ayudas para la realización del Máster en Prevención de Riesgos Laborales por personal del ET o integrado en su estructura",
+  "title_lang": "es",
+  "summary": "Defensa",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 8000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902467",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2023/12/22/def1431",
+  "text_inicio": "Día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "text_fin": "Quince (15) días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210466,
+      "titulo": "Extracto de la Resolución de 29 de abril de 2026 del Mando de Adiestramiento y Doctrina por la que se convocan ayudas Máster Prevención de Riesgos Laborales.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios. </p><p>Podrán solicitar las ayudas los oficiales del ET o de los cuerpos comunes integrados en su estructura, en situación de servicio activo, incluidos en alguna de las prioridades relacionadas en el artículo 4 de la convocatoria.</p><p>Segundo. Objeto.</p><p>El objeto de esta convocatoria es la concesión de ayudas para la realización de un Máster Universitario en Prevención de Riesgos Laborales para el personal del Ejército de Tierra (ET), contemplado en la correspondiente línea de subvención del Plan Estratégico de Subvenciones del Ministerio de Defensa para el periodo 2024-2026, Orden Ministerial 13/2024, de 20 de mayo, modificada por la Orden Ministerial 10/2025, de 9 de abril. </p><p>Tercero. Bases reguladoras.</p><p>Aprobadas por Orden de Defensa/1431/2023, de 22 de diciembre, por la que se establecen las bases reguladoras para la concesión de ayudas para la realización de Máster Universitario en Prevención de Riesgos Laborales, para el personal del Ejército de Tierra o integrado en su estructura, publicada en el BOE nº 2 de 2 de enero de 2024.</p><p>Cuarto. Cuantía.</p><p>La dotación económica es de 8.000 euros, con un máximo de 4.000 euros por persona.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Quince (15) días hábiles contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el «Boletín Oficial del Estado».</p><p>Sexto. Otros datos.</p><p>Las ayudas concedidas al amparo de la presente convocatoria son incompatibles con la percepción de cualquier otra subvención, ayudas, ingresos o recursos para la misma finalidad.</p><p>La resolución de la convocatoria de las ayudas se encuentra, además de en la BDNS   https://www.infosubvenciones.es/bdnstrans/GE/es/index, en la Web del MADOC https://ejercito.defensa.gob.es/unidades/Granada/madoc/Becas_y_ayudas/index.html</p><p>Las ayudas se solicitarán obligatoriamente mediante la aplicación que figura en la intranet del MINISDEF https://colabora.mdef.es/et/MADOC/BECAS/SitePages/Inicio.aspx</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-13592",
+      "cve": "BOE-B-2026-13592",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.701Z"
+}

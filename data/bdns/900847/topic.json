@@ -1,0 +1,88 @@
+{
+  "source": "bdns",
+  "source_id": "900847",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE INDUSTRIA Y DE TRANSICION ECOLOGICA Y DIGITAL EMPRESARIAL",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Resolución 11E/2026 de 20 de abril, del Director General de Comercio y Consumo, por la que se aprueba la convocatoria de subvenciones para la promoción de empresas artesanas de Navarra 2026.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": "2026-09-14",
+  "deadline": "2026-10-02",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "14",
+      "descripcion": "Confección de prendas de vestir"
+    },
+    {
+      "codigo": "32.1",
+      "descripcion": "Fabricación de artículos de joyería, bisutería y similares"
+    },
+    {
+      "codigo": "15.2",
+      "descripcion": "Fabricación de calzado"
+    },
+    {
+      "codigo": "23.4",
+      "descripcion": "Fabricación de otros productos cerámicos"
+    },
+    {
+      "codigo": "23.2",
+      "descripcion": "Fabricación de productos cerámicos refractarios"
+    },
+    {
+      "codigo": "16.2",
+      "descripcion": "Fabricación de productos de madera, corcho, cestería y espartería"
+    },
+    {
+      "codigo": "23.1",
+      "descripcion": "Fabricación de vidrio y productos de vidrio"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900847",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.navarra.es/es/tramites/on/-/line/subvenciones-para-la-promocion-de-empresas-artesanas",
+  "text_inicio": "desde el 14 de septiembre de 2026",
+  "text_fin": "2 de octubre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.911Z"
+}

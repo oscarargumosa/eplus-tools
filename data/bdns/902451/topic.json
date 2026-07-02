@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "902451",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ONTINYENT / AYUNTAMIENTO DE ONTINYENT",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "CONVOCATORIA PUBLICA DEL AYUNTAMIENTO DE ONTINYENT PARA LA CONCESIÓN DE AYUDAS DE APOYO A LA FAMILIA, INFANCIA Y ADOLESCENCIA EN PERIODO ESTIVAL",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": "2026-05-11",
+  "deadline": "2026-05-29",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 38884.81,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902451",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "(http://www.pap.minhap.gob.es/bdnstrans/index)",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.687Z"
+}

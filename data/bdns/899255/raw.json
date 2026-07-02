@@ -1,0 +1,64 @@
+{
+  "id": 1100816,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CÓRDOBA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CÓRDOBA"
+  },
+  "sedeElectronica": "www.dipucordoba.es/tramites",
+  "codigoBDNS": "899255",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "XV PREMIO DE ÁLBUM ILUSTRADO",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "XV PREMIO DE ÁLBUM ILUSTRADO",
+  "urlBasesReguladoras": "https://dipucordoba.es/cultura",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1 día después de publicación en BOP",
+  "textFin": "Dos meses  después de su publicación en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436623,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "G:\\dipu\\Cultura\\Año 2026\\PREMIOS LITERARIOS\\ÁLBUM ILUSTRADO GEX 2137\\Inicio de expediente\\Bases Premio Álbum Ilustrado 2026.pdf",
+      "long": 247866,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

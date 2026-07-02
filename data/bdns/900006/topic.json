@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900006",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE OVIEDO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Resolución de la Vicerrectora de Investigación de la Universidad de Oviedo para la contratación de personal con carácter temporal (contrato predoctoral) para la realización de Proyectos de Investigación Científica y Técnica con cargo a fondos de Investig.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 92693.7,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Contratos proyectos I+D - Universidad de Oviedo - uniovi.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900006",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2023/09/29/2023-08547.pdf",
+  "text_inicio": "Primer día hábil siguiente a la publicación en el BOPA",
+  "text_fin": "7 días hábiles a partir del siguiente de la publicación en el BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209444,
+      "titulo": "Extracto de la Resolución de la Vicerrectora de Investigación de la Universidad de Oviedo para la contratación de personal investigador y técnico de apoyo, con carácter temporal,  (contrato predoctoral). Convocatoria Marzo extra 6 -2026",
+      "tituloLeng": null,
+      "texto": "<p>Primera.- ObjetoLa presente convocatoria tiene por objeto la selección de personal para la contratación laboral temporal según la relación y características que se especifican en el Anexo I que contiene las plazas ofertadas.</p><p>Segunda.- Requisitos de los aspirantesLos aspirantes a los contratos deberán cumplir los siguientes requisitos mínimos:- Tener nacionalidad española o, cualquiera otra a la que las normas del Estado atribuyan iguales derechos a efectos laborales en la Administración Pública.- Cumplir las condiciones académicas o de titulación requeridas en la presente resolución y los requisitos específicos señalados en el anexo correspondiente de cada plaza.- Estar matriculado o admitido en un programa oficial de Doctorado de la Universidad de Oviedo en el momento de la formalización del contrato.La suscripción de contratos con extranjeros de países no miembros de la U.E. o que no estén incluidos en el ámbito de aplicación de los Tratados Internacionales celebrados por la U.E y ratificados por España en los que sea de aplicación la libre circulación de trabajadores, se condiciona a que los aspirantes tengan concedida excepción de permiso de trabajo y residencia legal en España.</p><p>Tercera.- Forma y Plazo de presentación de solicitudesLos aspirantes deberán presentar la documentación requerida en un plazo de 7 días hábiles, a partir del día siguiente al de la publicación de la presente Resolución en la página web de la Universidad de Oviedo.Los aspirantes deberán presentar la siguiente documentación:- Formulario de solicitud. Con objeto de facilitar su tramitación, la Universidad pone a disposición de los interesados una aplicación telemática que permite la presentación automática de la solicitud, en la página web de la Universidad de Oviedo.- Copia escaneada del D.N.I./N.I.E./Pasaporte.- Copia escaneada de la titulación requerida, así como del resto de la documentación específica exigida (anverso y reverso).- Currículum o relación de méritos, en formato pdf.</p><p>.- Aceptación de la cesión de datos entre las Administraciones Públicas implicadas para dar cumplimiento a lo previsto en la normativa europea que es de aplicación y de conformidad con la Ley Orgánica 3/2018, de 5 de diciembre de Protección de Datos Personales y garantía de los derechos digitales.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/2026/04/27/2026-03232.pdf",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.434Z"
+}

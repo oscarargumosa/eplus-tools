@@ -1,0 +1,28 @@
+{
+  "identifier": "ISF-2022-TF1-AG-DATA",
+  "ccm2Id": "45627622",
+  "callIdentifier": "ISF-2022-TF1-AG-DATA",
+  "callTitle": "",
+  "title": "DATA",
+  "programme": "ISF",
+  "programmeCode": "43252368",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-07-04",
+  "deadlineModel": "single-stage",
+  "actionType": "ISF Project Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"dataset\",\"artificial intelligence\",\"european data space for innovation\",\"algorithm\",\"data\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/ISF-2022-TF1-AG-DATA.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.234Z"
+}

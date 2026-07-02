@@ -1,0 +1,86 @@
+{
+  "source": "bdns",
+  "source_id": "901370",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LASARTE-ORIA / AYUNTAMIENTO DE LASARTE-ORIA",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "Subvención para impulsar la participación de la mujer en el deporte federado 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://www.lasarte-oria.eus/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901370",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Eskaera",
+      "url": null
+    },
+    {
+      "label": "Finantziazioa",
+      "url": null
+    },
+    {
+      "label": "Memoria ekonomikoa",
+      "url": null
+    },
+    {
+      "label": "Aurrekontua",
+      "url": null
+    },
+    {
+      "label": "Memoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://egoitza.gipuzkoa.eus/gaobog/ castell/bog/2018/01/26/bc180126.htm#85",
+  "text_inicio": "A partir del día siguiente a su publicación en el Boletín Oficial de Gipuzkoa",
+  "text_fin": "Treinta días hábiles desde el día siguiente a su publicación en el Boletín Oficial de Gipuzkoa",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.146Z"
+}

@@ -1,0 +1,136 @@
+{
+  "identifier": "PPPA-2026-IRIS2-UT-IND-READINESS",
+  "ccm2Id": "51331826",
+  "callIdentifier": "PPPA-2026-IRIS2-UT-INDREADY",
+  "callTitle": "Innovative User Terminals for European Secure Satellite Communication Service",
+  "title": "Industrial Readiness for Affordable Ka-band User Terminals",
+  "programme": "Pilot Projects",
+  "programmeCode": "43637601",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-05-27",
+  "deadline": "2026-08-26",
+  "deadlineModel": "single-stage",
+  "actionType": "Pilot Projects and Preparatory Actions",
+  "actionCode": "PPPA",
+  "mgaCode": "PPPA",
+  "budget": {
+    "total_eur": 20000000,
+    "by_year": {
+      "2025": 20000000
+    },
+    "expected_grants": 2,
+    "min_contribution_eur": 7000000,
+    "max_contribution_eur": 20000000
+  },
+  "keywords": [
+    "PPPA-2026-IRIS2-UT-IND-READINESS",
+    "PPPA-2026-IRIS2-UT-INDREADY"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact DEFIS-GOVSATCOM@ec.europa.eu - Please note that the deadline for addressing queries related to this call for proposals to the Q&A functional mailbox is Wednesday 12 August 2026 at 17:00 (Brussels Local Time)\n\nPlease read carefully all provisions below before the preparation of your application.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44494?topic=PPPA-2026-IRIS2-UT-IND-READINESS",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/PPPA-2026-IRIS2-UT-IND-READINESS",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/wp-call/2026/call-fiche_pppa-2026-iris2-ut-indready_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard PPPA Application Form",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/temp-form/af/af_pppa_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard Detailed Budget Table",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/pppa/temp-form/af/detailed-budget-table_pppa_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Declaration of ownership and control",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/ownership-control-declaration_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Lump Sum MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "COMMISSION DECISION of 24.6.2025 on the financing of the pilot projects and preparatory actions in the space area and the adoption of the work programme for 2025",
+      "url": "https://defence-industry-space.ec.europa.eu/document/ecfa046d-478d-49c4-844d-8c187601c909_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Annex on the financing of the pilot projects and preparatory actions in the space area and the adoption of the work programme for 2025, C(2025) 3868",
+      "url": "https://defence-industry-space.ec.europa.eu/document/3f1da0e8-0426-4cd2-ae3f-e20fc79282f5_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:07.195Z"
+}

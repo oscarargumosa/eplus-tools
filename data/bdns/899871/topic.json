@@ -1,0 +1,64 @@
+{
+  "source": "bdns",
+  "source_id": "899871",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE CULTURA, DEPORTE Y TURISMO",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Subvención a las pymes turísticas para fomentar la calidad e innovación en la comunicación y promoción de productos y servicios turísticos.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899871",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.navarra.es/es/tramites/on/-/line/subvenciones-a-las-pymes-turisticas-para-fomentar-la-calidad-e-innovacion-en-la-comunicacion-y-promocion-de-productos-y-servicios-turisticos",
+  "text_inicio": "El día siguiente al de la publicación de la convocatoria en el BON",
+  "text_fin": "Quince días hábiles desde el día siguiente al de la publicación en BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.360Z"
+}

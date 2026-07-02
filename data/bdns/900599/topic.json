@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "900599",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE PALENCIA / DIPUTACIÓN PROVINCIAL DE PALENCIA",
+  "nuts_codes": [
+    "ES414"
+  ],
+  "nuts_primary": "ES414",
+  "title": "CONVOCATORIA DE BECAS A DEPORTISTAS DE LA PROVINCIA DE PALENCIA",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 38000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.diputaciondepalencia.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900599",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputaciondepalencia.es/system/files/bop/2014/20140709-bop-82-ordinario.pdf",
+  "text_inicio": "Día siguiente al de publicación en el BOP",
+  "text_fin": "20 días naturales a contar desde el siguiente al de publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.782Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2.1.2",
+  "code": "Part B · 2.1.2",
+  "module": "EACEA",
+  "moduleTitle": "Quality of design and implementation",
+  "bloque": "I — Gestión post-aprobación",
+  "title": "2.1.2 Gestión, control de calidad, seguimiento y evaluación",
+  "subtitle": "Cómo demostrar que sabrás llevar el proyecto a buen puerto: calidad, plazos, presupuesto e indicadores que prueban el avance.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–45 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.1.2",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Esta pregunta junta cuatro cosas (gestión, calidad, seguimiento, evaluación) y la mayoría las despacha con un párrafo vago: \"haremos reuniones periódicas y evaluaremos el proyecto\". Suena a relleno y el evaluador lo nota.",
+    "comprender": "Que aquí demuestras que tienes un SISTEMA para no salirte de plazo, presupuesto y calidad, y un método de evaluación con indicadores medibles, no buenas intenciones.",
+    "objetivo": "Saber describir tus mecanismos de gestión y control, y construir indicadores correctos: cada uno con su unidad, su valor base (de partida) y su valor objetivo (meta), tanto cuantitativos como cualitativos.",
+    "confusion": "Confundir seguimiento con evaluación. Seguimiento es vigilar la marcha mientras ocurre (¿vamos a tiempo?); evaluación es juzgar si lograste lo prometido (¿funcionó?). Son cosas distintas y el formulario pide las dos.",
+    "importa": "Porque la Agencia financia con dinero público y necesita creer que el consorcio sabe gestionarlo. Un plan de calidad y unos indicadores sólidos dan confianza; su ausencia hace que el proyecto parezca improvisado."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El apartado 2.1.2 reúne en una sola pregunta cuatro responsabilidades que la Agencia espera ver cubiertas:</p><div class=\"callout callout-key\"><b>📋 Describe las medidas para asegurar la calidad y el cumplimiento de plazos y presupuesto. Detalla tus métodos de control de calidad, seguimiento, planificación y control. Y expón tus métodos de evaluación e indicadores (cuantitativos y cualitativos), indicando para cada uno su unidad, su valor base (<em>baseline</em>) y su valor objetivo (<em>target</em>).</b></div><p>Desglosado, te pide cuatro bloques:</p><ul><li><b>Gestión</b> — cómo coordinas el consorcio, tomas decisiones y aseguras que se cumplen plazos y presupuesto.</li><li><b>Control de calidad</b> — qué estándares aplicas a los resultados y cómo verificas que se cumplen.</li><li><b>Seguimiento (<em>monitoring</em>)</b> — cómo vigilas la marcha del proyecto <em>mientras ocurre</em> para detectar desvíos a tiempo.</li><li><b>Evaluación</b> — cómo juzgas <em>al final</em> (e intermedio) si lograste los objetivos, con <b>indicadores</b> medibles.</li></ul>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La diferencia entre un \"haremos reuniones periódicas\" y una respuesta que puntúa es la <b>concreción operativa</b>: nombres de instrumentos, frecuencias, responsables.</p><p><b>Para la parte de gestión y seguimiento</b>, da detalles verificables:</p><ul><li>Estructura de decisión (p. ej. un comité de dirección que se reúne cada 3 meses).</li><li>Herramientas concretas (un cronograma con hitos, un plan de calidad, plantillas de informe interno).</li><li>Cómo controlas plazos y presupuesto: revisión de hitos, reasignación si un WP se retrasa.</li></ul><div class=\"callout callout-good\"><b>Seguimiento ≠ evaluación.</b> El seguimiento es el GPS que te avisa si te desvías durante el viaje. La evaluación es comprobar al llegar si llegaste al destino correcto. El formulario quiere los dos: mecanismos en vivo y juicio final.</div><p><b>Para los indicadores</b>, esta es la parte donde más gente falla. Un indicador correcto tiene SIEMPRE cuatro piezas:</p><ol class=\"obj\"><li><b>Qué mides</b> (el indicador).</li><li><b>Unidad</b> (personas, %, nº de productos, puntuación 1–5…).</li><li><b>Valor base / baseline</b> — de dónde partes (muchas veces 0, pero declararlo es obligatorio).</li><li><b>Valor objetivo / target</b> — la meta que te comprometes a alcanzar.</li></ol><p>Incluye indicadores <b>cuantitativos</b> (cuántos) y <b>cualitativos</b> (qué calidad / qué cambio). Y que sean <b>realistas</b>: un objetivo inflado (\"formaremos a 5.000 docentes\" en un proyecto pequeño) resta credibilidad en vez de sumar ambición.</p>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Así se ve una <b>tabla de indicadores</b> bien construida (cada fila con unidad, base y objetivo):</p><table class=\"cmp\"><thead><tr><th>Indicador</th><th>Tipo</th><th>Unidad</th><th>Base</th><th>Objetivo</th></tr></thead><tbody><tr><td>Docentes formados en la metodología</td><td>Cuantitativo</td><td>nº personas</td><td>0</td><td>120</td></tr><tr><td>Centros que pilotan los materiales</td><td>Cuantitativo</td><td>nº centros</td><td>0</td><td>8</td></tr><tr><td>Satisfacción de los participantes</td><td>Cualitativo</td><td>media 1–5 (encuesta)</td><td>—</td><td>≥ 4,2</td></tr><tr><td>Mejora percibida de competencia digital</td><td>Cualitativo</td><td>% que declara mejora</td><td>0 %</td><td>≥ 75 %</td></tr></tbody></table><p>Y un <b>mini-plan de calidad y seguimiento</b> en tres líneas:</p><ul><li><b>Calidad:</b> cada entregable pasa por revisión cruzada de un socio distinto al que lo produce, según una rúbrica acordada en el WP1.</li><li><b>Seguimiento:</b> comité de coordinación trimestral + informe interno de progreso por WP; semáforo verde/ámbar/rojo sobre plazos y presupuesto.</li><li><b>Evaluación:</b> evaluación intermedia (mes 12) y final (mes 24) frente a los indicadores de la tabla, con un evaluador interno responsable.</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Haremos reuniones periódicas y evaluaremos el proyecto.»</b> → Genérico y vacío. Di con qué frecuencia, con qué herramienta, quién es responsable y qué se decide.</li><li><span class=\"err-x\">✗</span> <b>«Indicador: alto impacto en la comunidad educativa.»</b> → Eso no es un indicador, es un deseo. Falta unidad, base y objetivo. Sin las cuatro piezas, no cuenta.</li><li><span class=\"err-x\">✗</span> <b>«Seguimiento y evaluación es lo mismo.»</b> → No. Seguimiento es vigilar en vivo (¿vamos a tiempo?); evaluación es juzgar resultados (¿funcionó?). El formulario pide los dos por separado.</li><li><span class=\"err-x\">✗</span> <b>«Solo indicadores cuantitativos.»</b> → Faltan los cualitativos. Contar participantes no demuestra calidad ni cambio. Combina ambos.</li><li><span class=\"err-x\">✗</span> <b>«Objetivos enormes para parecer ambiciosos.»</b> → Targets irreales restan credibilidad. Mejor metas realistas y bien justificadas.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · 2.1.2</b></td><td>El texto literal: medidas de calidad, plazos y presupuesto, métodos de seguimiento y la exigencia de indicadores con unidad, base y objetivo.</td></tr><tr><td><b>kb-0095</b> Rúbrica del evaluador</td><td>Confirma que se valora la existencia de un sistema de control real y de indicadores medibles; lo genérico no puntúa.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomienda distinguir seguimiento de evaluación, combinar indicadores cuantitativos y cualitativos y mantener targets realistas.</td></tr></tbody></table>"
+    }
+  ]
+}

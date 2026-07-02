@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL5-2023-D3-02-13",
+  "ccm2Id": "45646794",
+  "callIdentifier": "HORIZON-CL5-2023-D3-02",
+  "callTitle": "",
+  "title": "Operation, Performance and Maintenance of PV Systems",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-04",
+  "deadline": "2023-09-05",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"RePowerEU\",\"Renewable energy sources - general\",\"Photovoltaics\",\"Digital Agenda\",\"Artificial Intelligence\",\"renewable electricity\",\"PV\",\"Photovoltaics\",\"digitalisation\",\"system integration\"]"
+  ],
+  "crossCuttingPriorities": [
+    "RePowerEU",
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2023-D3-02-13.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.305Z"
+}

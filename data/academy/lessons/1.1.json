@@ -1,0 +1,58 @@
+{
+  "id": "1.1",
+  "code": "Part B · 1.1",
+  "module": "EACEA",
+  "moduleTitle": "Relevance",
+  "bloque": "C — Antes de escribir",
+  "title": "1.1 Contexto y objetivos generales",
+  "subtitle": "Cómo justificar que tu proyecto encaja en el scope de la convocatoria, aborda los objetivos generales del programa y contribuye a sus prioridades.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 1.1 — Contexto y objetivos generales",
+    "Criterio": "Relevance (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Sabes lo que quieres hacer, pero no sabes cómo \"conectarlo\" con el programa europeo. Escribes sobre tu idea y te olvidas de demostrar que encaja en lo que la convocatoria pide, así que el evaluador no ve el enganche.",
+    "comprender": "Que Relevance no premia que tu proyecto sea bueno en abstracto, sino que sea bueno PARA ESTA convocatoria: tienes que demostrar que cae dentro de su scope, que sirve a los objetivos generales del programa y que contribuye a sus prioridades.",
+    "objetivo": "Redactar la sección 1.1 anclando tu proyecto a tres cosas concretas: el scope de la convocatoria, los objetivos generales y al menos una prioridad (horizontal o específica), con justificación explícita en cada caso.",
+    "confusion": "Confundir \"hablar de tu proyecto\" con \"justificar su relevancia\". Mencionar una prioridad de pasada no cuenta: hay que explicar CÓMO la abordas, no solo nombrarla.",
+    "importa": "Porque Relevance vale 30 de 100 puntos (el bloque más grande) y tiene umbral mínimo. Un proyecto excelente mal alineado con la convocatoria puede caer aquí antes de que se valore nada más."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>La sección <b>1.1</b> te pide describir el <b>contexto</b> y la <b>justificación</b> de tu proyecto, y ponerlo en relación con el programa. En concreto, el formulario pregunta tres cosas que conviene leer por separado:</p><div class=\"callout callout-key\"><ul class=\"bullets\"><li><b>¿Cómo encaja en el <em>scope</em> de la convocatoria?</b> Es decir, ¿pertenece tu proyecto al tipo de acción y al ámbito que esta convocatoria financia?</li><li><b>¿Cómo aborda los <em>objetivos generales</em></b> de la acción/programa?</li><li><b>¿Cómo contribuye a las <em>prioridades</em></b>, tanto las <b>horizontales</b> (comunes a todo Erasmus+) como las <b>específicas</b> del sector o la acción?</li></ul></div><p>Dicho de forma sencilla: aquí no se trata de contar tu idea, sino de <b>demostrar el enganche</b> entre tu idea y lo que esta convocatoria concreta quiere financiar. Es la sección de \"¿por qué este proyecto, aquí, ahora?\".</p>"
+    },
+    {
+      "id": "como-responder",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador de Relevance está comprobando una cosa: <b>que tu proyecto es relevante PARA ESTA convocatoria</b>, no relevante en general. Por eso la respuesta ganadora hace explícito el enganche en cada uno de los tres frentes.</p><div class=\"callout callout-good\"><b>Regla de oro:</b> por cada prioridad u objetivo que menciones, explica <em>cómo</em> lo abordas con una actividad o resultado concreto. <b>Nombrar no es justificar.</b></div><p>Estructura recomendada para la respuesta:</p><ol class=\"obj\"><li><b>Contexto (el porqué).</b> Sitúa el problema en su realidad: sector, territorio, colectivo. Cita evidencia mínima (un dato, una tendencia, una política). Esto prepara la justificación.</li><li><b>Encaje en el scope.</b> Una afirmación clara de que tu proyecto es del tipo que esta convocatoria financia, y por qué. Evita ambigüedad: el evaluador no debe dudar de si tu proyecto \"pinta algo\" aquí.</li><li><b>Objetivos generales.</b> Vincula tu objetivo general con los objetivos del programa/acción. Muestra la línea recta entre lo que tú persigues y lo que Erasmus+ persigue.</li><li><b>Prioridades.</b> Elige las que de verdad abordas (mejor pocas y bien que muchas de pasada). Para cada una: nómbrala, di por qué la eliges y <b>qué harás concretamente</b> para servirla.</li></ol><div class=\"callout callout-warn\">Error caro: \"marcar\" muchas prioridades para parecer ambicioso. El evaluador penaliza la dispersión. Aborda en profundidad las que tu proyecto sirve de verdad.</div><p>Lenguaje de evaluador: usa <b>verbos de acción y evidencia</b> (\"el proyecto desarrolla…\", \"forma a…\", \"produce…\"), no fórmulas vacías (\"el proyecto está totalmente alineado con las prioridades del programa\"). La alineación se <em>demuestra</em>, no se <em>declara</em>.</p>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Mismo proyecto inventado, <b>DIGI-YOUTH</b> (KA220-YOU, competencias digitales en el trabajo con jóvenes). Así se vería una respuesta 1.1 bien armada, bloque a bloque:</p><div class=\"callout callout-good\"><p><b>Contexto.</b> El trabajo con jóvenes en Europa atraviesa una transición digital desigual. Diversos estudios del sector señalan que una parte significativa de los profesionales no se siente preparada para integrar herramientas digitales en su práctica, lo que abre una brecha entre cómo se comunican los jóvenes y cómo trabajan con ellos las organizaciones.</p><p><b>Encaje en el scope.</b> DIGI-YOUTH es una asociación de cooperación (KA220) en el ámbito de la juventud, orientada a desarrollar e implantar prácticas innovadoras y resultados transferibles, exactamente el tipo de proyecto que esta acción financia.</p><p><b>Objetivos generales.</b> El proyecto contribuye al objetivo del programa de mejorar la calidad del trabajo con jóvenes, capacitando a los profesionales para una práctica más inclusiva y actual.</p><p><b>Prioridades.</b> Aborda la prioridad horizontal de <em>transformación digital</em> mediante el desarrollo de competencias digitales reales (no solo discurso): un marco de competencias, un curso modular y una guía. Y aborda la prioridad sectorial de <em>calidad e innovación en el trabajo con jóvenes</em>, pilotando el modelo con 60 profesionales en 4 países.</p></div><p>Fíjate en que <b>cada prioridad va acompañada de su \"cómo\"</b>: no dice \"contribuye a la transformación digital\" a secas, sino que enumera lo que producirá para servirla.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Cuento mi proyecto y ya se entiende que es relevante.»</b> → No. La relevancia hay que demostrarla explícitamente contra el scope, los objetivos y las prioridades de ESTA convocatoria.</li><li><span class=\"err-x\">✗</span> <b>«Marco todas las prioridades posibles por si acaso.»</b> → Penaliza por dispersión. Mejor pocas, profundas y con su \"cómo\".</li><li><span class=\"err-x\">✗</span> <b>«Menciono la prioridad y listo.»</b> → Nombrar no es justificar. Hay que explicar con qué actividad o resultado la abordas.</li><li><span class=\"err-x\">✗</span> <b>«Hablo de objetivos generales sin contexto.»</b> → Sin un contexto/problema real que los sostenga, los objetivos suenan a copia-pega. El contexto da credibilidad.</li><li><span class=\"err-x\">✗</span> <b>«Digo que estoy \"plenamente alineado con el programa\".»</b> → Declarar alineación no puntúa; demostrarla con evidencia y acciones concretas, sí.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B oficial (EACEA)</b></td><td>El enunciado literal de la sección 1.1: scope, objetivos generales y prioridades (horizontales y específicas).</td></tr><tr><td><b>kb-0095</b> Guide for Experts (rúbrica del evaluador)</td><td>Cómo se puntúa Relevance (30 pts) y qué busca el evaluador al juzgar el encaje con la convocatoria.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomendaciones prácticas: abordar las prioridades en profundidad y demostrar la alineación, no declararla.</td></tr></tbody></table>"
+    }
+  ]
+}

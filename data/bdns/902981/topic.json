@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "902981",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / SERVICIO CANARIO DE EMPLEO",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "SUBV. CONCILIACIÓN VIDA FAMILIAR Y LABORAL PERSONAS TRABAJADORAS AUTÓNOMAS",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": "2026-10-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/10923",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902981",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.gobiernodecanarias.org/boc/2026/073/1186.html",
+  "text_inicio": "Día siguiente de la publicación del extracto de la presente convocatoria en el BOC",
+  "text_fin": "15 de octubre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.973Z"
+}

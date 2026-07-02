@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "902353",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSELL COMARCAL DE MONTSIÀ / CONSELL COMARCAL DE MONTSIÀ",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "Convocatoria de ayudas individuales de comedor escolar (AIM) 2026-2027 del Consell Comarcal del Montsià",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 953744.59,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902353",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://aplicacions.dipta.cat/bopt/web/anuncio/358746/bases-per-a-la-concessio-d-ajuts-individuals-per-a-l-assistencia-a-menjadors-escolars-aim-per-necessitats-socioeconomiques-i-geografiques-curs-2026-2027-aprovacio-definitiva-consell-comarcal-montsia",
+  "text_inicio": "02/05/2026",
+  "text_fin": "30/04/2027",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.636Z"
+}

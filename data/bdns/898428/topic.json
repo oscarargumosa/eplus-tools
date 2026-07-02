@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "898428",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOLAR, EL / AYUNTAMIENTO DE MOLAR, EL",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS PARA EL SERVICIO DE TELEASISTENCIA EN EL MUNICIPIO DEL MOLAR. AÑO 2025",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1950,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://actio.dipta.cat/catalegserveis/id/4308590004/servei/AT123_ATENC_00001?origen=seu",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898428",
+  "documents": [
+    {
+      "label": "MODELO SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "MODELO DECLARACIÓ RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "DECRETO CONVOCATORIA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipta.cat/bopt/web/anunci/273883/bases-per-a-l-atorgament-de-subvencions-per-financar-el-servei-de-teleassistencia-domiciliaria-text-integre-aprovacio-definitiva-ajuntament-molar-el",
+  "text_inicio": "Fecha de publicación en el Boletín Oficial de la Provincia de Tarragona",
+  "text_fin": "20 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.571Z"
+}

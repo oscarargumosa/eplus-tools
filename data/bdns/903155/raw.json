@@ -1,0 +1,68 @@
+{
+  "id": 1104716,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALQUERIES, LES/ALQUERÍAS DEL NIÑO PERDIDO",
+    "nivel3": "AYUNTAMIENTO DE ALQUERIES, LES/ALQUERÍAS DEL NIÑO PERDIDO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903155",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA MUNICIPAL PARA LA CONCESION DE LAS PRESTACIONES ECONOMICAS INDIVIDUALIZADAS (PEIS) DE AYUNTAMIENTO DE ALQUERIAS DEL NIÑO PERDIDO",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA MUNICIPAL PARA LA CONCESION DE LAS PRESTACIONES ECONOMICAS INDIVIDUALIZADAS (PEIS) DE AYUNTAMIENTO DE ALQUERIAS DEL NIÑO PERDIDO",
+  "urlBasesReguladoras": "https://lesalqueries.sedelectronica.es/preview-document/4d1f1bd4-d25b-4a11-ae64-00afacd094de/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "01/01/2026",
+  "textFin": "30/11/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447408,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RESOLUCION BASES CONVOCATORIA.pdf",
+      "long": 476110,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1102510,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAN MILLÁN/DONEMILIAGA",
+    "nivel3": "AYUNTAMIENTO DE SAN MILLÁN/DONEMILIAGA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900949",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para financiar iniciativas de carácter sociocultural y deportivo desarrolladas por asociaciones, clubes deportivos y/o personas físicas en el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas para financiar iniciativas de carácter sociocultural y deportivo desarrolladas por asociaciones, clubes deportivos y/o personas físicas en el año 2026",
+  "urlBasesReguladoras": "https://donemiliaga.eus/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en el BOTHA",
+  "textFin": "24/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441162,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES CONVOCATORIA SUBVENCION ASOCIACIONES 2026.pdf",
+      "long": 176789,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209815,
+      "titulo": "Extracto de acuerdo de 10 de marzo de 2026 por la que se convocan ayudas para financiar iniciativas de carácter sociocultural y deportivo desarrolladas por asociaciones, clubes deportivos y/o personas físicas en el año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Objeto de la convocatoria:</p><p>Contribuir al desarrollo de programas y actividades de carácter sociocultural y deportivo que tengan lugar en el ámbito local o sean consideradas de interés para el municipio y complementen la intervención municipal durante el año 2026.</p><p>Áreas subvencionables:</p><p>1. Promoción sociocultural.</p><p>-   Ayudas para actividades socioculturales (actos tradicionales, talleres de ocio y tiempo libre, conferencias y ciclos monográficos, así como cualquier otra actividad o acción sociocultural participativa).</p><p>2. Promoción deportiva.</p><p>- Ayudas para actividades deportivas (competiciones, marchas deportivas, campeonatos, así como cualquier otra actividad relacionada con el deporte).</p><p>No serán subvencionables:</p><p>Las actividades específicas que se subvencionen por la vía de ayudas a fiestas patronales, convenios, etc.</p><p>Las actividades que impliquen una discriminación directa o indirecta por razón de sexo.</p><p>Los gastos ocasionados por comidas o productos alimenticios, salvo que dichos productos se destinen directamente al avituallamiento de la actividad deportiva y siempre y cuando esté justificado debidamente.</p><p>La adquisición de bienes muebles e inmuebles y material de oficina fungible, salvo aquel material que estrictamente sea necesario para el desarrollo de la actividad objeto de subvención, previa valoración técnica de la necesidad de este.</p><p>Los gastos derivados del funcionamiento (alquiler de inmuebles, nóminas personales, combustible.......).</p><p>Personas beneficiarias:</p><p>1.- Asociaciones y clubes deportivos, sin ánimo de lucro, debidamente registrados en base a la Ley 7/2007 de 22 de junio de Asociaciones de Euskadi, que se encuentren entre los siguientes:</p><p>Asociaciones y clubes deportivos con sede y ámbito estrictamente municipal que desarrollan programas o actividades.</p><p>Asociaciones y clubes deportivos que, aun no estando radicados en el municipio acometan programas sociales, culturales, o deportivos que tengan implantación municipal, o un ámbito de actuación colindante al municipio y cuenten con un número mínimo de 3 o más personas socias/os locales.</p><p>2.- Personas físicas empadronadas en el municipio de San Millán que realicen actividades que se encuentren en la situación que legitima la concesión.</p><p>3.- Agrupaciones de personas físicas empadronadas en el municipio, qué aun careciendo de personalidad jurídica, tengan un número importante de personas empadronadas en el municipio, y que puedan llevar a cabo proyectos o actividades que sean objeto de subvención, complementen la actividad municipal y sean considerados de interés público y social para el municipio.</p><p>Bases reguladoras:</p><p>Aprobadas por el Ayuntamiento Pleno de San Millán en sesión de fecha 10 de marzo de 2026.</p><p>Cuantía de la ayuda:</p><p>Las partidas presupuestarias a las que se imputa las subvenciones son la partida 231.481.000 (club de jubilados) por importe de 2.672,25 euros, la partida 334.482.000 (subvenciones culturales) por importe de 1.710,00 euros, la partida 341.482.002 (subvenciones actividades deportivas) por importe de 4.810,00 euros.</p><p>Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes finalizará el 24 de julio del 2026.</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/051/2026_051_01213_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

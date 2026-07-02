@@ -1,0 +1,22 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- advisors are better equipped with up-to-date knowledge, skills and tools to support young generation in entering into and successfully running the farming business, while taking into account the consequences of climate change and biodiversity loss;
+- an attractive, high-quality training offer and advice suited to the evolving skills demands of the new generation attract young, talented farm entrepreneurs and lead to a new wave of innovative agricultural businesses.
+
+## Scope
+
+Generational renewal is a prerequisite for European farming systems to remain resilient and competitive in the medium and long term. The actions funded under this topic is relevant to the EU policies related to the EU Vision for Agriculture and Food and the objective to shape an attractive farming and agri-food sector for future generations. To accomplish this, it is important to provide active support and specialised trainings for newcomers and young farmers. Advisors are best placed to accompany, monitor and mentor new farmers in the different stages of setting up and managing new farms. In addition, they can support new farmers in building social networks from a professional point of view and provide guidance on the different needs of takeovers and new farms. They can also contribute to advance gender equality and inclusion in this sector.
+
+A novelty in the current CAP strategic plans is that advisors should be integrated within the AKIS as well as be impartial, competent and up to date on scientific and innovation developments[1]. They should be able to translate the knowledge and provide concrete, targeted and practical solutions for farmers adapted to specific local circumstances.
+
+Proposals should:
+- foster in-depth exchange of knowledge and experiences among advisors across the EU on the needs of young farmers and new entrants to successfully enter and run an agricultural business in the long-term;
+- develop and widely share diverse useful resources, tools and approaches, including learning materials and courses, new business strategies/plans, cross-border visits, internships and other initiatives that should empower advisors to effectively support young and/or new farmers in addressing the identified needs for taking over / entering and staying in the farming sector;
+- equip advisors to deliver guidance and support throughout the various stages of farm establishment. This should include offering guidance on various preparatory steps such as securing land, exploring financing options, and crafting business strategies. Advisors should also help farmers navigate practical elements like technology use, financial management, legal matters, and sustainable farming practices addressing among others climate change and biodiversity loss. Additionally, they should address challenges that arise in the early years of farm development. Special attention should be given to promoting generational transfer, helping older farmers plan for and facilitate farm succession;
+- involve advisors in an innovative EU-wide communication and awareness-rising campaigns to reposition farming as an attractive and rewarding career choice for the young generations;
+- ensure collaborations with national or regional authorities and AKIS ecosystems to promote the project outputs and ensure that they will be updated and maintained in the long-term beyond the project duration.
+
+The proposals must implement the multi-actor approach and ensure adequate involvement of all relevant stakeholders. Minimum 50% of the number of the people involved in the project should be impartial advisors spending at least half of their time on giving advice to farmers. A plan for financial sustainability and maintenance of the EU advisory network in the long-term beyond the project duration should be included in the proposal.
+
+[1]  In line with the Article 15(3) of Regulation (EU) 2021/2115, Member States shall ensure that the advice given is impartial and that advisors are suitably qualified, appropriately trained and have no conflict of interest.

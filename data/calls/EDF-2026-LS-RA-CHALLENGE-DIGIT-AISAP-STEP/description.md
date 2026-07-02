@@ -1,0 +1,15 @@
+## Scope
+
+Assisting soldiers with robots and drones that can provide accurate tactical situational awareness by using AI becomes essential for soldier protection. This call topic aims to follow on and complement previous activities in the field of hidden threat detection and explore solutions involving various combinations of intelligent robots, drones and sensing technologies for advanced detection and recognition of threats, in view of their avoidance or neutralisation.
+
+These solutions should be tested under realistic scenarios in a comparable and objective manner to reach up to Technical Readiness Level (TRL) 6. For that purpose, each consortium supported through this call topic will benefit from a common testing environment set up as part of a technological challenge and will have to participate in the experiment campaigns organised with this objective.
+
+Beyond defence technologies, this topic also contributes to the STEP objectives as defined in the STEP Regulation in the target investment area of deep and digital technologies.
+
+Targeted types of activities: Generating knowledge, not excluding upstream and downstream activities eligible for research actions.
+
+Indicative budget: EUR 23 000 000 for this topic under the EDF-2026-LS-RA-CHALLENGE call.
+
+Indicative number of proposals to be funded: Several proposals may be funded for this topic.
+
+Range of the financial contribution of the EU per proposal: The requested funding cannot exceed EUR 4 600 000.

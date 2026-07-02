@@ -1,0 +1,111 @@
+{
+  "source": "bdns",
+  "source_id": "903615",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO / FUNDACIÓN BIODIVERSIDAD",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Convocatoria de la Fundación Biodiversidad, F.S.P., en régimen de concurrencia competitiva, para becas de formación relacionadas con los fines de la Fundación Biodiversidad.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 302400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "O",
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES"
+    },
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "K",
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903615",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://fundacion-biodiversidad.es/wp-content/uploads/2022/09/Bases-Reguladoras-becas-Fundacion-Biodiversidad.pdf",
+  "text_inicio": "Día siguiente a la publicación del extracto en BOE",
+  "text_fin": "20 días hábiles desde la publicación del extracto en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.214Z"
+}

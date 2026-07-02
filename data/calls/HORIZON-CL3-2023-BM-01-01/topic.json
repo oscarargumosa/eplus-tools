@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-BM-01-01",
+  "ccm2Id": "45763159",
+  "callIdentifier": "HORIZON-CL3-2023-BM-01",
+  "callTitle": "",
+  "title": "Capabilities for border surveillance and situational awareness",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Artificial Intelligence\",\"Maritime surrounding areas surveillance\",\"Maritime Security And Surveillance\",\"Border and external security\",\"Border surveillance\",\"Border and coastguards\",\"Secure Societies\",\"Integrated Surveillance Systems\",\"Security\",\"Control and surveillance of areas\",\"Organised crime\",\"Maritime safety\",\"Global Satellite Navigation System (GNSS) / Servic\",\"Control and track cross border goods and materials\",\"Digital Agenda\",\"data\",\"border surveillance capabilities\",\"protection by design\",\"monitor border crossings\",\"fight against illegal activities\",\"Security Union Strategy\",\"safety of people and operators\",\"fundamental rights\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-BM-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.327Z"
+}

@@ -1,0 +1,18 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- professionals, consumers and educators adopt innovative repair and refurbishment practices in specific product value chains (electronics, furniture, textiles and footwear), enabling significant reductions in waste, environmental impacts and biodiversity loss, while driving cost savings and job creation in the repair and refurbishment sector;
+- professionals, consumers, local partners, social economy actors and educators have access to high-quality training programs that provide them with technical, business and social skills to repair and refurbish products, thus promoting sustainable consumption and production patterns, climate change adaptation and mitigation, reduction of waste and emissions and enhancing resilience of product value chains.
+
+## Scope
+
+As the EU strives to reduce waste and promote sustainable consumption, as outlined in the European Green Deal, the Clean Industrial Deal and the upcoming Circular Economy Act, extending product lifecycles through repair and refurbishment practices has become a key approach for achieving a circular economy and extending products’ lifecycles. To support this transition, there is a growing need for innovative capacity-building initiatives that equip professionals, consumers, local authorities and educators with the skills and knowledge required to repair and refurbish products. These practices can contribute to the extension of product lifecycles, thus reducing environmental and climate impacts and contributing for the development of a single market for sustainable products.
+
+Proposals should:
+- develop and test innovative, modular and scalable training programs for professionals, consumers, local partners, social economy actors and educators, focusing on the repair and refurbishment of one or more of the following product categories: electronics (including household appliances), furniture, textiles and footwear. These training programs should create engaging, accessible and effective learning experiences that support the development of repair and refurbishment skills;
+- develop and test new services for repair and refurbishment, as well as strategies for their uptake, considering the potential to reduce biodiversity impacts, support climate change adaptation and mitigation, and promote sustainable consumption patterns. The focus should be on making them accessible and affordable to all consumers, including those with disabilities or with limited access, financial resources or technical expertise. To achieve this, the strategies should investigate various approaches: such as affordable, accessible and convenient repair services, community-based repair initiatives, and knowledge and expertise sharing mechanisms and digital platforms;
+- evaluate the feasibility, effectiveness and impact of these new services and strategies using robust evaluation methods (including lifecycle assessments such as Product Environmental Footprint, where relevant) and present data and evidence about the economic, environmental and social costs and benefits of the developed strategies.
+
+The topic supports EU policies, particularly the European Green Deal, the Ecodesign for Sustainable Products Regulation, the upcoming Circular Economy Act and Europe’s efforts to develop a single market for sustainable products.
+
+This topic requires the effective contribution of SSH disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related research activities.

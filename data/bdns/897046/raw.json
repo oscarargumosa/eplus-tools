@@ -1,0 +1,80 @@
+{
+  "id": 1098607,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ÚBEDA",
+    "nivel3": "AYUNTAMIENTO DE ÚBEDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897046",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "Decreto 1119/2026, de 25 de marzo de 2026, de aprobación de la convocatoria de subvenciones para el desarrollo del Programa de Inclusión contra la Discriminación de Género, 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES616 - Jaén"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE ÚBEDA (BOP 30, de 15/02/2021 y corrección de errores en BOP 215, DE 11/11/2021)",
+  "urlBasesReguladoras": "https://bop.dipujaen.es/edicto/88094/N",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación del anuncio de la convocatoria en BOP",
+  "textFin": "Veinte días hábiles desde la publicación del anuncio de la convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429539,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO PROGRAMA INCLUSIÓN VG.pdf",
+      "long": 758989,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 207973,
+      "titulo": "Extracto del Decreto 1119/2026, de 25 de marzo de 2026 del Ayuntamiento de Úbeda, por el que se aprueba la convocatoria de subvenciones para el desarrollo del Programa de Inclusión contra la Discriminación de Género",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios: Mujeres usuarias del Centro Municipal de Información a la Mujer del Ayuntamiento de Úbeda que cumplan los requisitos que se especifican en el programa.Segundo.- Finalidad: Proveer una ayuda económica para mujeres usuarias del Centro Municipal de Información a la Mujer, inscritas previamente en el sistema SIAM y que se encuentren en especial situación de vulnerabilidadTercero.- Bases reguladoras: Ordenanza General de Subvenciones del Ayuntamiento de Úbeda (BOP Jaén, nº 30, de 15 de febrero de 2021 y su corrección de errores en BOP 215, de 11 de noviembre de 2021).</p><p>Cuarto.- Importe: La dotación presupuestaria es de 8.000 euros. La subvención por beneficiaria incluida en el programa es de 500 euros. Quinto.- Plazo de presentación de solicitudes: Veinte días hábiles desde el día siguiente a la fecha de publicación de este extracto en el BOP de Jaén. </p>",
+      "textoLeng": null,
+      "url": "http://bop.dipujaen.es/validaCVE?cve=BOP-2026-1620",
+      "cve": "BOP-2026-1620",
+      "desDiarioOficial": "B.O.P. DE JAÉN",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

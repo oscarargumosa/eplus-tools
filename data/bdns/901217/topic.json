@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "901217",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MUSKIZ / AYUNTAMIENTO DE MUSKIZ",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "SUBVENCIONES PARA PERSONAS Y ENTIDADES SIN ÁNIMO DE LUCRO PARA LA REALIZACIÓN DE PROGRAMAS Y ACTIVIDADES CULTURALES Y/O JUVENILES EN MUSKIZ DURANTE EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": "2026-10-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "www.muskiz.org",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901217",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.muskiz.org",
+  "text_inicio": "Tras su publicación en el B.O. de Bizkaia",
+  "text_fin": "15 días naturales a contar desde la fecha de publicación de la convocatoria en el B.O. de Bizkaia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.057Z"
+}

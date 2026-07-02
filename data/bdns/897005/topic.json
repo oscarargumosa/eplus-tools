@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897005",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / SERVICIO CANARIO DE EMPLEO",
+  "nuts_codes": [
+    "ES7"
+  ],
+  "nuts_primary": "ES7",
+  "title": "RESOLUCIÓN DE LA PRESIDENCIA DEL SCE, POR LA QUE SE APRUEBA LA CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LAS UNIDADES DE APOYO A LA ACTIVIDAD PROFESIONAL, EN EL MARCO DE LOS SERVICIOS DE AJUSTE PERSONAL Y SOCIAL DE LOS CEE (2026)",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.1",
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897005",
+  "documents": [
+    {
+      "label": "BDNS Anexos Documento libre publicación.PDF",
+      "url": null
+    },
+    {
+      "label": "BDNS Modelo de solicitud.PDF",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.gobiernodecanarias.org/boc/2023/009/001.html",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.117278",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 34 AYUDAS AL EMPLEO. PARA COMPENSAR LOS COSTES ADICIONALES DEL EMPLEO DE TRABAJADORES CON DISCAPACIDAD."
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.750Z"
+}

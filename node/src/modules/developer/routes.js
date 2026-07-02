@@ -24,6 +24,10 @@ router.post('/instances/:id/refine', requireAuth, ctrl.refineField);
 router.post('/instances/:id/refine/evaluate', requireAuth, ctrl.refineEvaluate);
 router.post('/instances/:id/refine/apply', requireAuth, ctrl.refineApply);
 
+// National-Agency copy-paste report (on-screen Q/A + Word export)
+router.get('/instances/:id/eform-answers', requireAuth, ctrl.getEformAnswers);
+router.get('/instances/:id/eform-export.docx', requireAuth, ctrl.exportEformDocx);
+
 // Eval criteria (read-only)
 router.get('/eval-criteria', requireAuth, ctrl.getEvalCriteria);
 
@@ -55,6 +59,7 @@ router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-role', requireA
 router.post('/projects/:projectId/prep/consorcio/:partnerId/extra-staff', requireAuth, ctrl.addExtraStaff);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.updateExtraStaff);
 router.delete('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.removeExtraStaff);
+router.post('/projects/:projectId/prep/consorcio/connection/improve', requireAuth, ctrl.improveConsortiumConnection);
 router.get('/projects/:projectId/prep/presupuesto', requireAuth, ctrl.getPrepPresupuesto);
 router.get('/projects/:projectId/prep/relevancia', requireAuth, ctrl.getPrepRelevancia);
 router.put('/projects/:projectId/prep/relevancia/context', requireAuth, ctrl.updatePrepRelevanciaContext);
@@ -88,6 +93,7 @@ router.delete('/tasks/:id',                                requireAuth, ctrl.del
 router.put   ('/tasks/:id/participants/:partnerId',        requireAuth, ctrl.setTaskParticipant);
 router.delete('/tasks/:id/participants/:partnerId',        requireAuth, ctrl.removeTaskParticipant);
 router.get   ('/wp/:wpId/budget',                          requireAuth, ctrl.getWpBudget);
+router.post  ('/projects/:projectId/budget/refresh',       requireAuth, ctrl.refreshProjectBudget);
 router.get   ('/projects/:projectId/partners',             requireAuth, ctrl.listProjectPartners);
 router.post  ('/wp/:wpId/ai-fill',                         requireAuth, ctrl.aiFillWp);
 router.post  ('/wp/:wpId/tasks/resync',                    requireAuth, ctrl.resyncWpTasks);
@@ -111,6 +117,23 @@ router.get   ('/projects/:projectId/dms/snapshots',     requireAuth, ctrl.dmsLis
 router.post  ('/dms/snapshots/:id/restore',             requireAuth, ctrl.dmsRestoreSnapshot);
 router.get   ('/projects/:projectId/dms/ai-history',    requireAuth, ctrl.dmsAiHistory);
 router.get   ('/projects/:projectId/dms/export.csv',    requireAuth, ctrl.dmsExportCsv);
+
+// 2.1.3 Project teams — editable staff table (rows = project_partner_staff selected=1)
+router.get   ('/projects/:projectId/staff-table',       requireAuth, ctrl.listStaffTable);
+router.patch ('/staff-table/:ppsId',                    requireAuth, ctrl.updateStaffTable);
+
+// 2.1.5 Project risks — CRUD + AI bulk generator
+router.get   ('/projects/:projectId/risks',             requireAuth, ctrl.listRisks);
+router.post  ('/projects/:projectId/risks',             requireAuth, ctrl.createRisk);
+router.post  ('/projects/:projectId/risks/ai-generate', requireAuth, ctrl.aiGenerateRisks);
+router.post  ('/projects/:projectId/risks/ai-evaluate', requireAuth, ctrl.aiEvaluateRisks);
+router.patch ('/risks/:id',                             requireAuth, ctrl.updateRisk);
+router.delete('/risks/:id',                             requireAuth, ctrl.deleteRisk);
+
+// TASK-008 — Facts ledger (user surface: own data only, never prompts)
+router.get   ('/projects/:projectId/facts',          requireAuth, ctrl.listFacts);
+router.post  ('/projects/:projectId/facts',          requireAuth, ctrl.upsertFact);
+router.patch ('/projects/:projectId/facts/:factId',  requireAuth, ctrl.setFactStatus);
 
 // Comments thread on D / MS rows
 router.get   ('/projects/:projectId/dms/comments',  requireAuth, ctrl.dmsListComments);

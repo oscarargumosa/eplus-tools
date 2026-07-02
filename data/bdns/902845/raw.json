@@ -1,0 +1,72 @@
+{
+  "id": 1104406,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LA RÀPITA",
+    "nivel3": "AYUNTAMIENTO DE LA RÀPITA"
+  },
+  "sedeElectronica": "larapita.cat",
+  "codigoBDNS": "902845",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 17000,
+  "mrr": false,
+  "descripcion": "Bases de la convocatoria 2026 de concesión de ayudas dinerarias directas a personas y/o familias para hacer frente a situaciones de riesgo económico y/o social.",
+  "descripcionLeng": "Bases de la convocatòtria 2026 d'atorgament d'ajuts dineraris directes per a persones i/o famililes per fer front a situacions de risc econòmic i/o social.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras de las ayudas dinerarias directas para personas o famílilas para hacer frente a situaciones de riesgo econòmico i/o social",
+  "urlBasesReguladoras": "https://larapita.cat/ajuts-i-subvencions/ajuts-dineraris-directes-a-persones-o-families-per-fer-front-a-situacions-de-risc-economic-i-o-socials/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente de su publicación en el BOPT",
+  "textFin": "30/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446408,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases convocatoria 2026 ayudas dinerarias.pdf",
+      "long": 431637,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446429,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "bases convocatoria 2026 ajuts dineraris.pdf",
+      "long": 340531,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

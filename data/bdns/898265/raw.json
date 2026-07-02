@@ -1,0 +1,148 @@
+{
+  "id": 1099826,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "INSTITUTO LEONES DE CULTURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898265",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 27/03/2026 del C.R. del ILC. por el que se convocan subvenciones para Contratació-Nombramiento Personal Museos 2026",
+  "descripcionLeng": "Acuerdo de 27/03/2026 del C.R. del ILC, por el que se convocan subvenciones para Contratación-Nombramiento de Personal Museos 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES. CONCURRENCIA COMPETITIVA 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto en el BOP",
+  "textFin": "20 días hábiles a partir del siguiente a la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433759,
+      "descripcion": "Anexo V_Certificado_medidas_difusión_Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_V_Certificado_medidas_difusión_Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 114711,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433760,
+      "descripcion": "Anexo VI_Recursos Gráficos_Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_VI_Recursos_Gráficos_Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 77588,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433761,
+      "descripcion": "Guía_comprensión_fácil_Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Guía_comprensión_fácil_Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 149754,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433762,
+      "descripcion": "Guía_comprensión_fácil_Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Modelo_cartel_Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 92001,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433758,
+      "descripcion": "Anexo IV_Memoria Económica_ Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_IV_Memoria_Económica__Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 92906,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433754,
+      "descripcion": "FORMULARIO WEB Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "FORMULARIO_WEB_Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 160959,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433755,
+      "descripcion": "Anexo I_Certificado solicitud_ Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_I_Certificado_solicitud__Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 92769,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433756,
+      "descripcion": "Anexo II_Solicitud_Abono_ Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_II_Solicitud_Abono__Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 108610,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433757,
+      "descripcion": "Anexo III_Solicitud_Anticipo_ Contratación-nombramiento Personal Museos 26",
+      "nombreFic": "Anexo_III_Solicitud_Anticipo__Contratación-nombramiento_Personal_Museos_26.pdf",
+      "long": 144002,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433753,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "00_EXTRACTO_convocatoria_Equipamiento_Espacios_Culturales_2026.pdf",
+      "long": 458556,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208601,
+      "titulo": "EXTRACTO DEL ACUERDO DEL CONSEJO RECTOR DEL INSTITUTO LEONÉS DE CULTURA DE 27 DE MARZO DE 2026, POR EL QUE SE CONVOCAN SUBVENCIONES PARA LA CONTRATACIÓN/NOMBRAMIENTO DE PERSONAL PARA MUSEOS Y COLECCIONES MUSEOGRÁFICAS DE ENTIDADES LOCALES DE LA PROVINCIA DE LEÓN, AÑO 2026.EXTRACTO DEL ACUERDO DEL CONSEJO RECTOR DEL INSTITUTO LEONÉS DE CULTURA DE 27 DE MARZO DE 2026, POR EL QUE SE CONVOCAN SUBVENCIONES PARA LA CONTRATACIÓN/NOMBRAMIENTO DE PERSONAL PARA MUSEOS Y COLECCIONES MUSEOGRÁFICAS DE ENTIDA",
+      "tituloLeng": null,
+      "texto": "<p>La convocatoria completa se podrá consultar en la página web del Instituto Leonés de Cultura:</p><p>https://www.institutoleonesdecultura.es/convocatorias/</p><p>Primero.- Beneficiarios</p><p>Podrán obtener la condición de beneficiarios de la convocatoria para la contratación/nombramiento de personal para museos de la provincia de León para el año 2026, quienes reúnan los requisitos establecidos en la Base 3.ª de las BGS y no se encuentren incursos en ninguna de las exclusiones contempladas en el artículo 13 de la LGS. En concreto, las entidades locales de la provincia que sean titulares de museos o colecciones museográficas, ubicados todos ellos en municipios menores de 20.000 habitantes, con preferencia de aquellos que estén autorizados o en trámite de autorizarse, según estipula el artículo 15 de la Ley 2/2014, de 28 de marzo, de Centros Museísticos de Castilla y León. </p><p>No podrán ser beneficiarios aquellos que lo sean de subvenciones nominativas o directas mediante convenios de colaboración con la Diputación Provincial de León o el Instituto Leonés de Cultura, para el desarrollo de actuaciones en el mismo sector de actividad y que se dirijan a los mismos objetivos.</p><p>Segundo.- Objeto</p><p>Financiación de los gastos en materia de nóminas del personal a cargo del museo, director o responsable. Con ello se pretende contribuir al normal funcionamiento de estos museos o colecciones museográficas, facilitar las condiciones adecuadas para el desempeño de su función museística, así como apoyar la consecución de los requisitos necesarios para su autorización, su inscripción en el Directorio de Centros Museísticos de Castilla y León y su inclusión en la Red Museística de Castilla y León, referidas en la Ley 2/2014, de 28 de marzo, de Centros Museísticos de Castilla y León (BOE n.º 98, de 23 de abril de 2014), en el Decreto 31/2016, de 7 de septiembre, por el que se crea y regula el Directorio de Centros Museísticos de Castilla y León (BOCYL n.º 176, de 12 de septiembre de 2016) y en la Orden CYT/328/2017, de 21 de abril, por la que se desarrolla el procedimiento de autorización de centros museísticos (BOCYL de 12 de mayo de 2017). </p><p>Quedan excluidos los centros de interpretación o cualquier institución que no custodie, conserve o exhiba objetos o colecciones de bienes culturales originales.</p><p>En todos los casos, el periodo mínimo subvencionable será 400 horas laborales en total, que podrán ser repartidas en jornada completa, media jornada, fines de semana, etc.</p><p>Tercero.- Régimen jurídico</p><p>?\tBases Generales Reguladoras de la concesión de subvenciones, aprobadas por acuerdo del Pleno de la Diputación de León de fecha 27 de febrero de 2008, publicadas en el BOP n.º 45/2008, de 5 de marzo.</p><p>?\tOrdenanza General de Subvenciones en redacción aprobada por el Pleno de la Excma. Diputación Provincial de León el día 27 de julio de 2022, y publicada en el BOP n.º 206 de 27 de octubre de 2022.</p><p>Cuarto.- Cuantía</p><p>Total 75.000,00 â¿¬</p><p>La subvención se determinará en función de lo previsto en la base 9.ª, sin superar el 80% de los gastos de la contratación del personal (impuestos incluidos). Por lo tanto, las entidades beneficiarias deberán aportar como financiación propia, o generada por otras vías, un mínimo de un 20% del importe total de la actividad subvencionada.</p><p>Se podrá subvencionar hasta el 80% de los gastos derivados de la contratación o nombramiento de personal para atender el museo o la colección museográfica, con un máximo por contratación/nombramiento y por beneficiario de 4.000,00 â¿¬.</p><p>Quinto.- Plazo de presentación de solicitudes</p><p>Veinte días hábiles a partir del siguiente al de la publicación del presente extracto en el Boletín Oficial de la Provincia de León por conducto de la Base de Datos Nacional de Subvenciones.</p><p>Sexto.-  Otros datos de interés</p><p>Plazo de ejecución: 1 de diciembre de 2025 hasta el 30 de noviembre de 2026.</p><p>Gastos subvencionables: Son gastos subvencionables los estrictamente necesarios derivados de la contratación o nombramiento de personal, tanto los costes salariales como los de Seguridad Social. </p><p>A estos efectos, no se deben computar las situaciones con derecho a retribución en las que no se presta servicio efectivo, como las ausencias o las incapacidades temporales, ni las situaciones recogidas en el artículo 37.3 del texto refundido de la Ley del Estatuto de los Trabajadores. En esos casos, del importe de los gastos de personal reembolsables deberá excluirse también la parte proporcional de las cotizaciones a la Seguridad Social que proceda.</p><p>Se entienden como gastos subvencionables las nóminas del personal contratado o nombrado para la dirección o para ejercer la responsabilidad organizativa del museo, catalogación o restauración de piezas, funciones de guía, etc.</p><p>Se considerará gasto realizado el que haya sido efectivamente pagado con anterioridad a la finalización del período de justificación, debiéndose acreditar el pago efectivo de todos los gastos realizados, excepto los gastos de Seguridad Social e IRPF en aquellos supuestos en los que la fecha de liquidación sea posterior a la fecha límite de justificación. En dichos supuestos, la entidad beneficiaria está obligada a presentar el justificante de pago de acuerdo con lo exigido en la Base Décima (Anexo IV).</p><p>Subcontratación: El beneficiario no podrá subcontratar con terceros la actividad subvencionada.</p><p>Criterios de valoración: La subvención se adjudicará teniendo en cuenta los siguientes criterios y su ponderación:</p><p>?\tDesarrollo de actividades para el fomento de la participación de la sociedad en las actividades del museo o colección museográfica hasta (hasta 30 puntos) </p><p>?\tTrayectoria del museo (hasta 15 puntos) </p><p>?\tPersonal contratado para el museo fuera de esta convocatoria (hasta 15 puntos) </p><p>?\tReconocimiento e Integración o Propuesta de integración en la Red Museística de Castilla y León (hasta 20 puntos)</p><p>?\tImplantación digital del museo o colección museográfica en el campo digital. (hasta 20 puntos)</p><p>Compatibilidad con otras subvenciones: Sí.</p><p>Solicitudes: Las solicitudes se presentarán obligatoriamente a través del formulario de la Sede Electrónica del ILC (https://sede.institutoleonesdecultura.es/) mediante el trámite relativo a la presente convocatoria localizado en \"Trámites destacados\" o, de no encontrarse allí, accediendo a \"Catálogo de trámites\", debiéndose seleccionar el ámbito y área según corresponda:</p><p>?\tPara ayuntamientos: </p><p>Ámbito: ?Servicios relacionados con ayuntamientos\". </p><p>?\tPara juntas vecinales: </p><p>Ámbito: ?Servicios relacionados con juntas vecinales\". </p><p>Los anexos se podrán descargar en el siguiente enlace: https://www.institutoleonesdecultura.es/convocatorias/, a la web del ILC.</p><p>Documentación: La prevista en la base octava de la convocatoria.</p><p>Forma de justificación: Mediante la presentación de la documentación prevista en la base décima de la convocatoria.</p><p>Plazo máximo de justificación: 15 de diciembre de 2026.</p><p></p><p></p><p>Forma de pago: Se efectuará una vez justificada la realización del gasto y acreditados los requisitos señalados en el art. 18 de la Ordenanza General de Subvenciones y en la Base 5ª de las BGS.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dipuleon.es/publica/buscador-anuncios/anuncio/Extracto-de-la-convocatoria-de-subvenciones-destinadas-a-la-contratacion-nombramiento-de-personal-para-museos-y-colecciones-museograficas-de-Entidades-Locales-de-la-provincia-de-Leon-2026-BDNS-898265/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE LEÓN",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

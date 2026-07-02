@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-HLTH-2024-DISEASE-03-08-two-stage",
+  "ccm2Id": "45700426",
+  "callIdentifier": "HORIZON-HLTH-2024-DISEASE-03-two-stage",
+  "callTitle": "",
+  "title": "Comparative effectiveness research for healthcare interventions in areas of high public health need",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-04-26",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Social Innovation\",\"Quality of health care\",\"Wellbeing\",\"Health services, health care research\",\"Health policy and services\",\"Health policies\",\"Clinical trials\",\"Personalised interventions\",\"Clinical research\",\"Social sciences and humanities\",\"healthcare interventions\",\"comparative effectiveness research\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SocInnov",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-DISEASE-03-08-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.499Z"
+}

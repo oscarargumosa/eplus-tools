@@ -1,0 +1,24 @@
+## Expected Outcome
+
+The objective of this topic is strengthening the European research infrastructure landscape as a pillar of Europe’s innovation-based competitiveness and reinforcing its role in the overarching policy priority of making Europe the top region for deep-tech startups and scaleups. Project results are expected to contribute to several of the following expected outcomes:
+- Enhanced scientific and technological competitiveness of European research infrastructures, through the co-development of innovative technologies and solutions that improve the performance of RI services, addressing common needs across different types of research infrastructures, where applicable.
+- Increased cooperation and coordination between European research infrastructures, and between them and other public and private research performing organisations, in order to create a coherent and supportive ecosystem for deep-tech innovation in Europe.
+- A strengthened role of research infrastructures as centres of gravity for deep-tech innovation ecosystems.
+- Strengthened EU innovation capacity and technological sovereignty.
+
+## Scope
+
+The topic focuses on supporting research infrastructures in developing and implementing innovative technologies and solutions improving the performance of their scientific services, while fostering cooperation with other research organisations, industry, and start-ups and scaleups to maximise the spillover effects of new RI technologies. Proposals should address all of the following aspects:
+- Co-creation of advanced technologies that address research infrastructures needs, considering resource efficiency and environmental impacts as well as technological sovereignty.
+- Development of partnerships and collaborations between research infrastructures and different types of research performing organisations including industry, to co-create technological solutions and promote their uptake and exploitation outside of the science market.
+- Shared understanding of the commercial potential of innovative technologies, and support from RI technology transfer teams as early as necessary.
+
+Developments for the specific use case of research infrastructures are expected to go beyond TRL 4. When proposed developments have the potential to lead to applications beyond the specific use case of research infrastructures, the TRL of these additional developments should go up to TRL 3-4. Proposers should clearly describe which TRL will be reached at the end of the project for each proposed development.
+
+Projects are expected to share experiences about co-creation models with the project funded under HORIZON-INFRA-2025-01-DEV-05, area 3.
+
+Proposals may include PCP[1] subcontracting activities as described in part H of the General Annexes of the work programme. This option encourages the use of public procurements for the competitive development of new specific solutions, whilst opening market opportunities for industry and researchers active in the EU and Associated Countries. By establishing the procurement process in consecutive phases, the PCP activity can support the development of competing designs, prototypes, and solution testing. This ensures that investment risks do not prevent tackling specific scientific and technological issues and allows a problem to be approached from different angles and to test different solutions.
+
+In this topic the integration of the gender dimension (sex and gender analysis) in research and innovation content is not a mandatory requirement.
+
+[1] 'Pre-commercial procurement' is defined as procurement of R&D services involving risk-benefit sharing under market conditions and competitive development in phases. PCP focuses on the R&D phase before wide commercialisation. 'Risk-benefit sharing under market conditions' refers to the PCP approach in which procurers share with suppliers at market price the risks and the benefits related to the IPR resulting from the R&D. 'Competitive development in phases' refers to the competitive approach to buy the R&D from several competing R&D providers in parallel and to compare and identify the best value for money solutions on the market to address the PCP challenge. To reduce the investment risk for the procurer, reward the most competitive solutions and facilitate the participation of smaller innovative companies, the R&D is also split into phases (solution design, prototyping, original development and validation / testing of the first products), with the number of competing R&D providers being reduced after each phase.

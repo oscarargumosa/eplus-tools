@@ -1,0 +1,84 @@
+{
+  "id": 1101678,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE PONTEVEDRA",
+    "nivel3": "DEPORTES"
+  },
+  "sedeElectronica": "http://sede.depo.es",
+  "codigoBDNS": "900117",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600000,
+  "mrr": false,
+  "descripcion": "DEPORTE FEDERADO COMPETICIÓN DE ÁMBITO NÁUTICO (REMO-VELA-PIRAGÜISMO)",
+  "descripcionLeng": "DEPORTE FEDERADO COMPETICIÓN DE ÁMBITO NÁUTICO (REMO-VELA-PIRAGÜISMO)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "DEPORTE FEDERADO COMPETICIÓN DE ÁMBITO NÁUTICO (REMO-VELA-PIRAGÜISMO)",
+  "urlBasesReguladoras": "https://bdns.depo.es/?EJVSUR",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-23",
+  "fechaFinSolicitud": "2026-05-21",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438972,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "BASES NAUTICOS_rev gal gab1.pdf",
+      "long": 447109,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438971,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES NAUTICOS_rev_cast gab1.pdf",
+      "long": 297473,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209480,
+      "titulo": "EXTRACTO DEL ACUERDO DE LA JUNTA DE GOBIERNO DE LA DIPUTACIÓN DE PONTEVEDRA DE 17 DE ABRIL DE 2026 POR LA QUE SE CONVOCAN SUBVENCIONES A CLUBES DEPORTIVOS DE LA PROVINCIA DE PONTEVEDRA EN LAS MODALIDADES NÁUTICAS DE PIRAGÜISMO, REMO Y VELA QUE PARTICIPAN EN COMPETICIONES OFICIALES EN EL 2026",
+      "tituloLeng": "EXTRACTO DO ACORDO DA XUNTA DE GOBERNO DA DEPUTACIÓN DE PONTEVEDRA DE 17 DE ABRIL DE 2026 POLO QUE SE CONVOCAN SUBVENCIÓNS A CLUBS DEPORTIVOS DA PROVINCIA DE PONTEVEDRA NAS MODALIDADES NÁUTICAS DE PIRAGÜISMO, REMO E VELA QUE PARTICIPAN EN COMPETICIÓNS OFICIAIS NO ANO 2026",
+      "texto": "<p>1. Entidades beneficiarias Podrán ser beneficiarios de esta convocatoria los clubes deportivos sin ánimo de lucro, legalmente constituidos y con domicilio fiscal en la provincia de Pontevedra, que participen en competiciones oficiales de cualquier ámbito territorial en las modalidades deportivas de piragüismo, remo y vela. 2. Objeto Estas bases tienen por objeto regular el procedimiento de concesión de las subvenciones a clubes deportivos de la provincia de Pontevedra en las modalidades de piragüismo, remo y vela que participan en competiciones oficiales de cualquier ámbito territorial. La finalidad de estas ayudas es colaborar en la financiación de los gastos derivados de su actividad competitiva durante la temporada 2025-2026 o a lo largo del año 2026. 3. Bases Reguladoras Las bases reguladoras de la subvención a clubs deportivos de la provincia de Pontevedra en las modalidades náuticas de piragüismo, remo y vela que participan en competiciones oficiales en el año 2026 se aprobaron en la Junta de Gobierno de la Diputación de Pontevedra el 17 de abril de 2026. 4. Financiación La concesión de las subvenciones estará sujeta a la disponibilidad presupuestaria y se convocará con cargo a la aplicación 26/340.3410.489.22 del Presupuesto de la Diputación para el año 2026 por un importe total de seiscientos mil (600.000,00) euros 5. Plazo de Presentación El plazo de presentación de solicitudes será de veinte (20) días hábiles, contados a partir del día siguiente al de la publicación de la convocatoria y de su extracto en el Boletín Oficial de la Provincia de Pontevedra (BOPPO) y en la Base de Datos Nacional de Subvenciones (BDNS). 6. Otros datos de interés - Presentación: a través del formulario normalizado disponible en la Sede electrónica de la Diputación de Pontevedra. - Procedimiento de concesión: concurrencia competitiva. - Gastos subvencionables: los establecidos en la base quinta. - Criterios de valoración: los establecidos en la base decimotercera. - Justificación: los establecidos en la base décimo sétima. - Medidas de difusión: las establecidas en la base decimo oitava.</p>",
+      "textoLeng": "<p>1. Entidades beneficiarias Poderán ser beneficiarios desta convocatoria os clubs deportivos sen ánimo de lucro, legalmente constituídos e con domicilio fiscal na provincia de Pontevedra, que participen en competicións oficiais de calquera ámbito territorial nas modalidades deportivas de piragüismo, remo e vela. 2. Obxecto Estas bases teñen por obxecto regular o procedemento de concesión das subvencións a clubs deportivos da provincia de Pontevedra que participen, con algún equipo ou deportista, en competicións oficiais de ámbito estatal recollidas nesta normativa. A finalidade destas axudas é colaborar no financiamento dos gastos derivados da súa actividade competitiva durante a tempada 2025-2026 ou ao longo do ano 2026. 3. Bases Reguladoras As bases reguladoras da subvención a clubs deportivos da provincia de Pontevedra nas modalidades náuticas de piragüismo, remo e vela que participan en competicións oficiais no ano 2026 aprobáronse na Xunta de Goberno da Deputación de Pontevedra o 17 de abril de 2026. 4. Financiamento A concesión das subvencións estará suxeita á dispoñibilidade orzamentaria e convocarase con cargo á aplicación 26/340.3410.489.22 do Orzamento da Deputación para o ano 2026 por un importe total de seiscentos mil (600.000,00) euros. 5. Prazo de Presentación O prazo de presentación de solicitudes será de vinte (20) días hábiles, contados a partir do día seguinte ao da publicación da convocatoria e do seu extracto no Boletín Oficial da Provincia de Pontevedra (BOPPO) e na Base de Datos Nacional de Subvencións (BDNS). 6. Outros datos de interese - Presentación: a través do formulario normalizado dispoñible na Sede electrónica da Deputación de Pontevedra. - Procedemento de concesión: concorrencia competitiva. - Gastos subvencionables: os establecidos na base quinta. - Criterios de valoración: os establecidos na base décimo terceira. - Xustificación: os establecidos na base décimo sétima. - Medidas de difusión: as establecidas na base décimo oitava.</p>",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/04/22/2026032939",
+      "cve": "21QFACUJNH9ECOS3",
+      "desDiarioOficial": "B.O.P. DE PONTEVEDRA",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

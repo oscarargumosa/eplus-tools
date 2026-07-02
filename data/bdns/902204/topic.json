@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "902204",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SEVILLA / AYUNTAMIENTO DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Acuerdo J. Gob. de 20/04/26 por el que se aprueba convocatoria pública de subvenciones en régimen de c. competitiva, por Área de Barrios y Colectivos de A. Preferente, Derechos Sociales...través del S. de la Mujer, a entidades privadas sin ánimo de lucro.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 455000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902204",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipusevilla.es/export/bop/200507/14.pdf",
+  "text_inicio": "A partir del día siguiente a la publicación en el BOP.",
+  "text_fin": "15 días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en el BOP.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.589Z"
+}

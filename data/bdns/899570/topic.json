@@ -1,0 +1,78 @@
+{
+  "source": "bdns",
+  "source_id": "899570",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESTERIBAR / AYUNTAMIENTO DE ESTERIBAR",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "CONVOCATORIA PARA CONCESIÓN DE AYUDAS A COLECTIVOS, ASOCIACIONES DE VECINOS/AS DE ESTERIBAR PARA LA REALIZACIÓN DE FIESTAS PATRONALES DE PUEBLOS TUTELADOS POR EL AYUNTAMIENTO ESTERIBAR AÑO 2026 Y A CONCEJOS QUE NO DISPONGAN DE UN ESPACIO CUBIERTO ADECUADO",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 24000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://esteribar.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899570",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://esteribar.org/ESP.subvenciones.html",
+  "text_inicio": "Desde la publicación del correspondiente anuncio indicativo en el BON",
+  "text_fin": "3 meses a contar desde la publicación del correspondiente anuncio indicativo en el BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209219,
+      "titulo": "Extracto de Acuerdo de Pleno, de 26 de marzo de 2026, por la que se aprueban las bases reguladoras de la convocatoria concesión de subvenciones para fiestas patronales concejos tutelados año 2026. BDNS (Identificación): 899570",
+      "tituloLeng": "Osoko Bilkuraren 2026ko martxoaren 26ko Erabakiaren laburpena. Horren bidez, tutoretzapeko kontzejuen 2026ko jaietarako dirulaguntzak emateko deialdiaren oinarri arautzaileak onartzen dira. BDNS (Identifikazioa): 899570",
+      "texto": "<p>De conformidad con lo previsto en los artículos 17.3.b y 20.8.a de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica el extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones (https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899570)</p><p>Las ayudas tendrán como objetivo promover y apoyar las fiestas patronales de los pueblos integrados en el Ayuntamiento de Esteribar (Pueblos tutelados) por el Ayuntamiento de Esteribar durante el año 2026.</p>",
+      "textoLeng": "<p>Diru-laguntza orokorrei buruzko azaroaren 17ko 38/2003 Legearen 17.3.b eta 20.8.a artikuluetan ezarritakoaren arabera, deialdiaren laburpena argitaratzen da. Horren testu osoa datu base nazionalean aurki daiteke. Diru-laguntzak (https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899570)</p><p>Laguntzen helburua izanen da 2026an Esteribarko Udalak babestutako herrietako zaindarien jaiak sustatzea eta babestea.</p>",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/82/34",
+      "cve": null,
+      "desDiarioOficial": "BON. B.O. DE NAVARRA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.133Z"
+}

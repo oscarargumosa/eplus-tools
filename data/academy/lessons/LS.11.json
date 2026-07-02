@@ -1,0 +1,69 @@
+{
+  "id": "LS.11",
+  "code": "UD-LS.11",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "E — Criterios de evaluación",
+  "title": "KA220: el informe final y la puntuación por work package",
+  "subtitle": "Cómo se evalúa una Cooperation Partnership al cierre: media ponderada por WP, escala de reducción propia y las tres reglas para no perder dinero (proyecto, WP y actividad).",
+  "meta": {
+    "Nivel": "Avanzado",
+    "Duración": "40–50 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "5.2 y 5.3 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "En KA220 te juegas mucho dinero (hasta 400.000 €) y la mecánica de cómo se calcula la nota final asusta: media ponderada, WP que sí puntúan y WP que no, dos niveles de reducción distintos… es fácil perderse y firmar sin saber cómo te van a pagar.",
+    "comprender": "Que en KA220 cada work package se evalúa por separado, y la nota global del proyecto es la MEDIA PONDERADA de los WP según su peso presupuestario (el WP de gestión no puntúa). De esa nota global salen distintos escenarios de cobro según una escala propia, distinta de la de KA210.",
+    "objetivo": "Saber qué se reporta en cada bloque del informe, cómo se calcula la media ponderada (con el ejemplo exacto que da 67), qué dice la escala de reducción de KA220 y cuándo la reducción es a nivel proyecto, a nivel WP o a nivel actividad.",
+    "confusion": "Pensar que la escala de KA220 es igual que la de KA210 (no lo es), o que las reducciones a nivel proyecto y a nivel WP pueden aplicarse a la vez (nunca). También creer que el WP de gestión se puntúa.",
+    "importa": "Porque entender que cada WP se puntúa por separado cambia cómo escribes: un WP flojo te puede recortar solo su parte, o arrastrar la nota global por debajo de 70 y recortarte el proyecto entero. Saber el mecanismo te dice dónde reforzar."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. La estructura del informe final de KA220",
+      "html": "<p>El informe final de una Cooperation Partnership <b>sigue la estructura del formulario de solicitud</b>, que a su vez está organizado según los criterios de calidad que evaluarán los expertos al cierre del proyecto. La estructura global del informe es de tres bloques:</p><ol class=\"obj\"><li><b>Project management</b> (gestión del proyecto)</li><li><b>Project implementation</b> (implementación del proyecto)</li><li><b>Impact and follow-up</b> (impacto y seguimiento)</li></ol><div class=\"callout callout-key\">Igual que en KA210, el informe es un espejo de la solicitud. Pero aquí la estructura es explícitamente la de estos tres bloques, que es importante porque marca qué cuentas en cada sitio.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Qué se reporta en cada bloque",
+      "html": "<p>Cada uno de los tres bloques pide cosas distintas:</p><table><thead><tr><th>Bloque</th><th>Qué tienes que reportar</th></tr></thead><tbody><tr><td><b>Project management</b><br>(Gestión)</td><td>Aspectos de la <b>cooperación entre socios</b>: acuerdos de trabajo, <b>reparto de tareas y coordinación</b>, y respeto del <b>calendario</b> del proyecto.</td></tr><tr><td><b>Project implementation</b><br>(Implementación)</td><td>El <b>logro de los objetivos</b> fijados en la solicitud, apoyándote en los <b>indicadores cuantitativos y cualitativos</b> definidos al solicitar. Tienes que <b>comparar la evidencia de los resultados logrados con los resultados esperados</b> declarados en la solicitud (esperado vs logrado).</td></tr><tr><td><b>Impact and follow-up</b><br>(Impacto y seguimiento)</td><td>Cómo los resultados se <b>pusieron a disposición</b> y produjeron beneficios para las organizaciones y otros stakeholders; la <b>sostenibilidad e impacto a largo plazo</b>; y, si hubo, las <b>sinergias y complementariedades</b> con otros instrumentos financieros (explicando cómo contribuiste a sus objetivos).</td></tr></tbody></table><p>Además, como en KA210, se te invita a hacer un <b>ejercicio de lecciones aprendidas</b> (incluyendo una comparación entre los indicadores propuestos en la solicitud y los resultados logrados, los éxitos, los problemas y las mejoras futuras).</p><div class=\"callout callout-good\"><b>Subir resultados a la Project Results Platform.</b> Tienes que poner tus resultados a disposición pública en la plataforma vía el Beneficiary Module, como prueba de implementación. La descripción de resultados debe <b>referenciar documentos de evidencia</b>: actas de reuniones, materiales de cursos, entregables, publicaciones, fotos, etc. Todos los resultados y evidencias se entregan con el informe final; si no se consideran suficientes, los evaluadores pueden pedir evidencia adicional.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. La media ponderada: cómo se calcula la nota global",
+      "html": "<p>Aquí está la gran diferencia con KA210. En KA220, <b>cada work package se evalúa por separado</b> según criterios de calidad específicos definidos en el grant agreement. Y la <b>puntuación global del proyecto se calcula como la MEDIA PONDERADA</b> de las puntuaciones de cada WP, ponderada por su <b>cuota de presupuesto</b>.</p><div class=\"callout callout-warn\"><b>El WP de gestión NO se puntúa.</b> Como no produce outputs concretos ni tiene indicadores específicos, su resultado <b>va embebido</b> en el nivel de logro de los demás WP (la nota global ya es un buen indicador de la calidad de la gestión). Y su <b>importe final será como máximo el 20 % del total</b> calculado tras cualquier reducción aplicable.</div><p>Veámoslo con el <b>ejemplo exacto del Handbook</b>. Cada WP (excepto gestión) aporta a la nota global en proporción a su presupuesto:</p><table><thead><tr><th>Work Package</th><th>Cuota de presupuesto</th><th>Puntuación (1–100)</th></tr></thead><tbody><tr><td><b>WP1</b> · Gestión</td><td>20 %</td><td>n/a (no se puntúa)</td></tr><tr><td><b>WP2</b></td><td>25 %</td><td>50</td></tr><tr><td><b>WP3</b></td><td>25 %</td><td>80</td></tr><tr><td><b>WP4</b></td><td>30 %</td><td>70</td></tr></tbody></table><div class=\"callout callout-key\"><b>Media ponderada</b> = [ (50 × 25) + (80 × 25) + (70 × 30) ] / 80 = <b>66,875 → 67</b><br>(redondeado al entero más próximo). Fíjate en que el denominador es <b>80</b>, no 100: el WP1 de gestión (20 %) <em>no entra</em> en el cálculo, por eso solo se suman los pesos de WP2+WP3+WP4 = 25+25+30 = 80.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. La escala de reducción de KA220 (¡distinta de KA210!)",
+      "html": "<p>Para cada WP se calcula por separado el porcentaje de su presupuesto que se paga tras la evaluación de calidad, según esta escala. <b>Atención: es DIFERENTE de la de KA210.</b> Compáralas mentalmente:</p><table><thead><tr><th>Puntuación</th><th>% que cobras — KA220</th></tr></thead><tbody><tr><td>70 – 100</td><td><b>100 %</b></td></tr><tr><td>55 – 69</td><td>90 %</td></tr><tr><td>40 – 54</td><td>60 %</td></tr><tr><td>10 – 39</td><td>30 %</td></tr><tr><td>0 – 9</td><td><b>0 %</b></td></tr></tbody></table><div class=\"callout callout-warn\">El umbral del 100 % en KA220 es <b>70</b> (en KA210 era 60). Y el tramo intermedio paga <b>60 %</b> (en KA210 pagaba 70 %). No mezcles las dos escalas: cada acción tiene la suya.</div>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. Tres niveles de reducción (proyecto, WP, actividad)",
+      "html": "<p>Lo más sutil de KA220 es <em>dónde</em> se aplica la reducción. Hay tres niveles, y la regla de oro es que <b>los niveles proyecto y WP nunca se aplican a la vez</b>.</p><p><b>Nivel PROYECTO — si la nota global es inferior a 70.</b> La reducción se aplica sobre el importe total de la subvención, según la escala de arriba. Siguiendo el ejemplo (nota global 67): cae en el tramo 55-69, así que se paga el 90 %.</p><div class=\"callout callout-key\"><b>Ejemplo nivel proyecto:</b> nota global 67 → se paga el 90 % → 400.000 € × 0,9 = <b>360.000 €</b>. La AN aplica un 10 % de reducción sobre toda la subvención.</div><p><b>Nivel WORK PACKAGE — si la nota global es suficiente (≥ 70) pero algún WP individual queda por debajo de 70.</b> Entonces la reducción se aplica solo a los WP que no llegan al umbral, usando la misma escala; los demás se pagan al 100 %.</p><div class=\"callout callout-key\"><b>Ejemplo nivel WP:</b> nota global 74 (supera el umbral), pero WP2 tiene un 50. Por tanto, solo se paga el <b>60 % del presupuesto de WP2</b> (tramo 40-54), mientras que el resto de WP se pagan íntegros.</div><div class=\"callout callout-warn\">Resumen de la regla: si la nota global está <b>por debajo de 70</b> → reducción a nivel proyecto. Si está <b>por encima de 70</b> → reducción solo a nivel de WP individuales. <b>Nunca se aplican ambos niveles a la vez</b> en el mismo proyecto.</div><p><b>Nivel ACTIVIDAD.</b> Si no se puede completar una actividad, hay que justificarlo en el informe final. Si la actividad <b>no se realiza y no se sustituye</b> por otra equivalente (en contribución a los objetivos y en presupuesto), la AN <b>rechaza el importe</b> asignado a esa actividad. El WP se evalúa entonces <b>solo con las actividades restantes</b>, y los evaluadores deciden si la falta de esa actividad afecta a la calidad del WP en su conjunto.</p><p><b>Incumplimiento de obligaciones.</b> Además, la subvención se puede reducir si hay errores sustanciales, irregularidades, fraude o incumplimiento grave de otras obligaciones (información falsa, no facilitar información requerida, o no respetar los valores básicos de la UE: dignidad humana, libertad, democracia, igualdad, Estado de derecho y derechos humanos, incluidos los de las minorías).</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«La escala de KA220 es la misma que la de KA210.»</b> → No: en KA220 el 100 % empieza en 70 y el tramo intermedio paga 60 %, distinto de KA210.</li><li><span class=\"err-x\">✗</span> <b>«El WP de gestión también se puntúa.»</b> → No se puntúa; su resultado va embebido en los demás y su importe final es máx. 20 % tras reducción.</li><li><span class=\"err-x\">✗</span> <b>«Pueden recortarme a nivel proyecto y a nivel WP a la vez.»</b> → Nunca. O uno (global &lt; 70) o el otro (global ≥ 70 con WP flojos), jamás los dos.</li><li><span class=\"err-x\">✗</span> <b>«La media ponderada incluye el WP de gestión.»</b> → No: el WP de gestión no entra en el cálculo (en el ejemplo el denominador es 80, no 100).</li><li><span class=\"err-x\">✗</span> <b>«Un WP flojo solo afecta a su propio dinero.»</b> → Depende: si hunde la nota global por debajo de 70, te recorta el proyecto ENTERO.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026), secciones 5.2 y 5.3</td><td>Estructura del informe final de KA220 (Project management / implementation / Impact and follow-up) y qué se reporta en cada bloque. Mecánica de evaluación: cada WP por separado, media ponderada por cuota de presupuesto, WP de gestión sin puntuar (importe final máx. 20 %), ejemplo exacto de media ponderada (= 67). Escala de reducción de KA220 (70-100→100 %; 55-69→90 %; 40-54→60 %; 10-39→30 %; 0-9→0 %). Reducción a nivel proyecto (ej. 400.000 × 0,9 = 360.000 €), a nivel WP (global 74, WP2=50 → 60 %), a nivel actividad e incumplimiento de obligaciones.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL3-2024-INFRA-01-01",
+  "ccm2Id": "45946070",
+  "callIdentifier": "HORIZON-CL3-2024-INFRA-01",
+  "callTitle": "",
+  "title": "Open Topic",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Policy and Support\",\"Protection of areas and infrastructures\",\"Technologies-Components\",\"Critical Infrastructure Protection (CIP)\",\"Security\",\"Operators of critical infrastructure\",\"Threats and vulnerabilities modelling\",\"Security Management and Governance\",\"Resilience aspects\",\"Digital Agenda\",\"Earth Observation / Services and applications\",\"Terrorism\",\"operators\",\"Critical infrastructure\",\"monitoring\",\"resilience\",\"Security\",\"natural and human-made hazards\",\"Earth Observation\",\"data sources\",\"threat\",\"risk assessment\",\"Terrorism\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-INFRA-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.484Z"
+}

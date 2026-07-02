@@ -1,0 +1,64 @@
+{
+  "id": 1100482,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OLIVARES",
+    "nivel3": "AYUNTAMIENTO DE OLIVARES"
+  },
+  "sedeElectronica": "https://sede.olivares.es",
+  "codigoBDNS": "898921",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2800,
+  "mrr": false,
+  "descripcion": "XII CERTAMEN DE CANCIÓN ESPAÑOLA \"OLIVO DE PLATA\" 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DEL XII CERTAMEN DE CANCIÓN ESPAÑOLA \"OLIVO DE PLATA\" 2026",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-del-XII-Certamen-de-cancion-espanola-Olivo-de-Plata-2026/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-13",
+  "textInicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435545,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICADO_BASES_OLIVO_PLATA.pdf",
+      "long": 199505,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

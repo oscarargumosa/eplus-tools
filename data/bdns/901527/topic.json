@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "901527",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OÑATI / AYUNTAMIENTO DE OÑATI",
+  "nuts_codes": [
+    "ES21"
+  ],
+  "nuts_primary": "ES21",
+  "title": "Subvenciones a las organizaciones juveniles y a la creación.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": "2026-04-24",
+  "deadline": "2026-05-25",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    }
+  ],
+  "apply_url": "https://udal.egoitza.gipuzkoa.eus/WAS/AYTO/USCServicioCiudadanoVer15WEB/home.do?ayto=059",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901527",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Modelo solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.oñati.eus/eu/tramiteak/diru-laguntzak/gazteria-arloko-diru-laguntzak/gazteen-emanzipaziorako-diru-laguntza-oinarriak.pdf",
+  "text_inicio": "veinticuatro de abril del dos mil veintiseis",
+  "text_fin": "veinticinco de mayo de dos mil veintiseis",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.248Z"
+}

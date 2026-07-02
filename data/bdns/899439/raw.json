@@ -1,0 +1,96 @@
+{
+  "id": 1101000,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AMPUDIA",
+    "nivel3": "AYUNTAMIENTO DE AMPUDIA"
+  },
+  "sedeElectronica": "http://www.ampudia.es",
+  "codigoBDNS": "899439",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 110000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvención a los residentes en el Centro de Mayores \"Domingo Gómez Lesmes\" de Ampudia, AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES414 - Palencia"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Convocatoria de Subvención a los residentes en el Centro de Mayores \"Domingo Gómez Lesmes\" de Ampudia, AÑO 2026",
+  "urlBasesReguladoras": "https://www.diputaciondepalencia.es/system/files/bop/20130419-bop-47-ordinario.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de la publicación en el BOP ",
+  "textFin": "HASTA EL 31 DE DICIEMBRE DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437156,
+      "descripcion": "ANEXO III FICHA DE TERCEROS",
+      "nombreFic": "ANEXO III FICHA DE TERCERO BANCO.pdf",
+      "long": 216579,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437148,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260413_DECRETO 2026-0116 [4 Decreto.CONVOC.CONCESION SUBV.RESIDENCIA 2026].pdf",
+      "long": 477870,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437157,
+      "descripcion": "BASES REGULADORAS",
+      "nombreFic": "20260416_5 BASES CONVOCATORIA SUBV.RESIDENCIA 2026.pdf",
+      "long": 339847,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437149,
+      "descripcion": "MODELO SOLICITUD",
+      "nombreFic": "ANEXO I SOLICITUD MODELO 2026.pdf",
+      "long": 231150,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1437154,
+      "descripcion": "ANEXO II DECLARACION JURADA",
+      "nombreFic": "ANEXO II DECLARACIÓN JURADA 2026.pdf",
+      "long": 132844,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "898873",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / QUART DE POBLET / AYUNTAMIENTO DE QUART DE POBLET",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria de Ayudas a los Estudios de Música y Danza, curso 2025-2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://quartdepoblet.sedipualba.es/default.aspx",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898873",
+  "documents": [
+    {
+      "label": "V-Bases Reguladores Ajudes BMD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Certificado acuerdo JGL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "C-Bases Reguladoras Ayudas BMD",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://quartdepoblet.es/areas/educacion/articulo/ajudes-a-l'estudi-de-musica-i-dansa?locale=es",
+  "text_inicio": "Día siguiente a la publicación de la convocatoria en el B.O.P. de Valencia",
+  "text_fin": "20 días a partir de la publicación de la convocatoria en el B.O.P. de Valencia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208850,
+      "titulo": "Convocatoria de Ayudas a los Estudios de Música y Danza, curso 2025-2026",
+      "tituloLeng": "Convocatòria d'Ajudes als Estudis de Música i Dansa, curs 2025-2026",
+      "texto": "<p>El objeto de esta convocatoria es regular el procedimiento de la concesión de becas, en concepto de ayuda económica y en régimen de concurrencia competitiva, para la promoción y fomento del aprendizaje, el perfeccionamiento, la práctica y la creatividad artística del alumnado de Quart de Poblet que durante el curso 2025/2026, realice estudios profesionales de grado elemental, profesional y/o superior de música o danza en Conservatorios, Escuelas o Centros públicos o autorizados, así como aquel alumnado que se encuentre cursando preparatorio de pruebas oficiales a partir de haber superado el grado elemental.</p><p>El importe correspondiente a las ayudas que se convocan se hará efectivo con cargo al crédito aprobado en la partida presupuestaria 48100-326 del Presupuesto General para el ejercicio de 2026, e incluida en el Plan Estratégico de Subvenciones, por un importe de 15.000 €.</p><p>El plazo de presentación de solitudes será de veinte días naturales a contar desde el día siguiente a la publicación de las bases y convocatoria en el BOP.</p>",
+      "textoLeng": "<p>L'objecte d'aquesta convocatòria és regular el procediment de la concessió de beques, en concepte d'ajuda econòmica i en règim de concurrència competitiva, per a la promoció i foment de l'aprenentatge, el perfeccionament, la pràctica i la creativitat artística de l'alumnat de Quart de Poblet que durant el curs 2025/2026, realitze estudis professionals de grau elemental, professional i/o superior de música o dansa en Conservatoris, Escoles o Centres públics o autoritzats, així com aquell alumnat que es trobe cursant preparatori de proves oficials a partir d'haver superat el grau elemental.</p><p>L'import corresponent a les ajudes que es convoquen es farà efectiu amb càrrec al crèdit aprovat en la partida pressupostària 48100-326 del Pressupost General per a l'exercici de 2026, i inclosa en el Pla Estratègic de Subvencions, per un import de 15.000 €.</p><p>El termini de presentació de sol·licituds serà de vint dies naturals a comptar des de l'endemà de la publicació de les bases i convocatòria en el BOP.</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04408&lang=es",
+      "cve": "BOPV-2026/04408",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.721Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1101590,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRE DE L'ESPANYOL, LA",
+    "nivel3": "AYUNTAMIENTO DE TORRE DE L'ESPANYOL, LA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900029",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 11100,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones No 01 /2026, “Format@kt’ajudo” para la adquisición de material y transporte escolar durante el curso escolar aprobada por la Junta de Govern en fecha 26/03/2026",
+  "descripcionLeng": "Convocatòria de subvencions Núm.01/2026 “Format@kt’ajudo”, per a l'adquisició de material i transport escolar durant el curs escolar aprovada per Junta de Govern de data 26 de març de 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases de subvenciones para la adquisición de material y transporte durante el curso escolar Format@kt’ajudo",
+  "urlBasesReguladoras": "https://tauler.seu-e.cat/detall?idEns=4315200000&idEdicte=244171",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-03-26",
+  "fechaFinSolicitud": "2026-06-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438781,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Publicaci_cat_estudiant_2026_0000207.pdf",
+      "long": 236907,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438778,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Publicaci_cast_estudiants_2026_0000207.pdf",
+      "long": 160492,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,96 @@
+{
+  "id": 1105461,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PAMPLONA/IRUÑA",
+    "nivel3": "AYUNTAMIENTO DE PAMPLONA/IRUÑA"
+  },
+  "sedeElectronica": "https://sedeelectronica.pamplona.es",
+  "codigoBDNS": "903900",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE EVALUACIÓN INDIVIDUALIZADA PARA EL FOMENTO DE ESTABLECIMIENTOS Y ACTIVIDADES TURÍSTICAS SOSTENIBLES 2026",
+  "descripcionLeng": "DIRULAGUNTZA-DEIALDIA, BANAKAKO EBALUAZIO-ARAUBIDEAN, 2026AN ESTABLEZIMENDU ETA TURISMO-JARDUERA JASANGARRIAK SUSTATZE ALDERA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Servicios de alojamiento",
+      "codigo": "55"
+    },
+    {
+      "descripcion": "Servicios de comidas y bebidas",
+      "codigo": "56"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Aprobación definitiva de la ordenanza general de subvenciones del Excelentísimo Ayuntamiento de Pamplona",
+  "urlBasesReguladoras": "https://bon.navarra.es/es/anuncio/-/texto/2006/21/23",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación de esta convocatoria en el Boletín Oficial de Navarra",
+  "textFin": "Hasta el 14 noviembre 2026, siempre que haya existencia de crédito en la partida presupuestaria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449600,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CCSubvención.pdf",
+      "long": 661380,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449611,
+      "descripcion": "Anexos en euskera",
+      "nombreFic": "Anexos EUS.pdf",
+      "long": 947944,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449608,
+      "descripcion": "Anexos en castellano",
+      "nombreFic": "Anexos.pdf",
+      "long": 949408,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449601,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CC Subvención EUS.pdf",
+      "long": 655826,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

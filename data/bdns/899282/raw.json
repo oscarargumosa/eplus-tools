@@ -1,0 +1,76 @@
+{
+  "id": 1100843,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "LA RIOJA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO"
+  },
+  "sedeElectronica": "https://web.larioja.org/oficina-electronica/tramite?n=02447",
+  "codigoBDNS": "899282",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 180000,
+  "mrr": false,
+  "descripcion": "Subvs a Aytos. y entidades sin fines de lucro activ Educación Personas Adultas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES230 - La Rioja"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden 11/2009, de 10 de marzo, de Consejería de Educación, Cultura y Deporte establecen bases reguladoras para concesión de subvenciones a corporaciones Locales y entidades públicas y privadas, sin fines de lucro, para Activ. Educ. Pers Adultas.",
+  "urlBasesReguladoras": "https://ias1.larioja.org/boletin/boletin/bor_mostrar_anuncio.jsp?referencia=714679-1-HTML-395958-X",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a publicación extracto convocatoria en BOR",
+  "textFin": "10 días hábiles siguientes al siguiente a publicación extracto Convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436693,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026_EPA_03_RESOLUC_Aprov_Convocat_2026_EPA._Firmada.pdf",
+      "long": 599827,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209549,
+      "titulo": "Resolución 36/2026 de 16 de abril, de la Consejería de Educación y Empleo, por la que se convocan subvenciones a Corporaciones Locales y a Entidades públicas y privadas sin fines de lucro para la realización de actividades en el marco de la Educación de Personas Adultas para el curso escolar 2025/2026 (extracto)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. - Beneficiarios</p><p>Corporaciones locales y entidades públicas y privadas sin fines de lucro para la realización de actividades, en el marco de la educación de personas adultas.</p><p>Segundo. - Objeto</p><p>Subvenciones para la realización de actividades, en el marco de la educación de personas adultas, entre el 1 de septiembre de 2025 y el 31 de julio de 2026.</p><p>Tercero. - Bases reguladoras</p><p>Orden 11/2009, de 10 de marzo, de la Consejería de Educación, Cultura y Deporte por la que se establecen las bases reguladoras para la concesión de subvenciones a Corporaciones Locales y entidades públicas y privadas, sin fines de lucro, para la realización de actividades en el marco de la educación de personas adultas.</p><p>Cuarto. - Importe</p><p>La cuantía total es de 180.000 euros, de los que 100.000 euros se destinarán a las Corporaciones locales de la Comunidad Autónoma de La Rioja, y 80.000 euros a Entidades públicas y privadas sin ánimo de lucro, legalmente constituidas en el ámbito de la Comunidad Autónoma de La Rioja.</p><p>Los módulos de subvención se establecen indivisibles en 2.000 euros cada uno, pudiéndose conceder más de un módulo a cada corporación o entidad solicitante, si las actividades proyectadas lo requiriesen, a juicio de la Comisión de Valoración.</p><p>Quinto. - Plazo de presentación de solicitudes</p><p>El plazo de presentación de solicitudes es de diez días hábiles a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de La Rioja.</p><p>Sexto. - Otros datos de interés</p><p>Solicitudes: estarán disponibles en la sede electrónica del Gobierno de La Rioja, en el apartado Oficina Electrónica  https://web.larioja.org/oficina-electronica/tramite?n=02447</p><p>Las solicitudes se presentarán por vía telemática.</p><p>Documentación: es la prevista en la base tercera de la resolución de convocatoria.</p><p>Forma de pago: El abono de la subvención se realizará en un único pago, una vez finalizado el proyecto de actuación y previa presentación de la documentación justificativa.</p><p>Plazo de justificación: Según lo previsto en la base octava de la convocatoria será hasta el 9 de octubre de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=40055689-1-PDF-576756",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

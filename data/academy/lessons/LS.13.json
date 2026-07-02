@@ -1,0 +1,87 @@
+{
+  "id": "LS.13",
+  "code": "UD-LS.13",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "I — Gestión post-aprobación",
+  "title": "Seguimiento, controles y auditorías: qué te pueden pedir",
+  "subtitle": "Qué vigila la Agencia Nacional después de aprobarte el proyecto, qué documentación tienes que guardar y por qué en lump sum nadie te va a auditar las facturas (pero sí la realidad de lo que hiciste).",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "7 del Handbook (Monitoring, checks and audits)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Una vez te aprueban, aparece el miedo a «que vengan a revisarte»: no sabes si te van a pedir facturas, partes de horas o pruebas de cada actividad, así que o guardas papeles a ciegas o no guardas nada.",
+    "comprender": "Que en lump sum hay tres cosas distintas que la gente confunde —seguimiento (monitoring), controles (checks) y auditorías (audits)— y que NINGUNA te va a auditar el gasto: todas miran si hiciste el trabajo y lograste los resultados.",
+    "objetivo": "Distinguir monitoring de checks y de audits, saber qué documentación debes conservar para demostrar la realidad de tus actividades, y entender en qué casos sí pueden pedirte ver registros financieros.",
+    "confusion": "Creer que «no auditan el gasto» significa «no tengo que guardar nada» o «no pueden pedirme nada financiero». Pueden pedir ver tus registros para comprobar que las actividades fueron reales y descartar fraude.",
+    "importa": "Porque lo que te paguen al final y lo que te cierren el proyecto depende del informe final y de poder demostrar que cada WP se hizo de verdad. Sin evidencias, un WP entregado «de palabra» puede rechazarse."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "content",
+      "title": "Tres palabras que la gente mezcla: monitoring, checks y audits",
+      "html": "<p>Cuando te aprueban un KA2, entras en la fase de vida del proyecto en la que la Agencia Nacional puede mirar cómo lo llevas. Y aquí casi todo el mundo mete en el mismo saco tres cosas que son <b>muy distintas</b>:</p><ul><li><b>Monitoring (seguimiento):</b> la Agencia se interesa por cómo va tu proyecto para <em>ayudarte</em>. No es un control financiero.</li><li><b>Checks (controles):</b> verificaciones administrativas sobre tu documentación y tus resultados. El más importante es el del informe final.</li><li><b>Audits (auditorías):</b> revisiones más profundas que pueden ocurrir <em>después</em> de cerrar el proyecto.</li></ul><div class=\"callout callout-key\">La idea que vertebra toda esta lección: <b>bajo lump sum, ninguna de las tres revisa si gastaste bien el dinero euro a euro.</b> Todas miran si <em>hiciste el trabajo</em> y <em>lograste los resultados</em> que prometiste. La justificación ya no es contable, es de realidad.</div>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. Monitoring: la Agencia que viene a ayudarte (no a auditarte)",
+      "html": "<p>Cualquier proyecto <b>puede ser monitorizado</b> por la Agencia Nacional. El propósito de este ejercicio es comprobar si la <b>implementación del proyecto va bien</b> y, sobre todo, <b>darte apoyo y consejo</b> como beneficiario.</p><p>La forma más habitual de monitoring es una <b>visita de seguimiento</b> en las instalaciones del beneficiario, pero existen otras opciones:</p><ul><li>Seguimiento <b>a distancia por teléfono</b>.</li><li>Seguimiento <b>online</b>.</li><li>A través de una <b>encuesta específica</b>, etc.</li></ul><div class=\"callout callout-good\"><b>Importante:</b> un ejercicio de monitoring <b>no es una auditoría</b>, y la Agencia Nacional <b>no comprobará documentos financieros</b> en él. Es una conversación sobre cómo va el proyecto, no una revisión de papeles.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. La base de cualquier control: lo que prometiste en la solicitud",
+      "html": "<p>Aquí está la pieza clave. La <b>base para los controles y las auditorías</b> son los <b>resultados esperados y los indicadores de resultado</b> (si aplican) que incluiste en el formulario de solicitud y que la Agencia Nacional aprobó.</p><p>Sobre esa base, los auditores verifican tres cosas:</p><ol class=\"obj\"><li>La <b>implementación real</b> de las actividades.</li><li>El <b>logro de los resultados</b>.</li><li>La <b>fiabilidad de la información</b> presentada en los informes.</li></ol><p>Y esto incluye también el cumplimiento de las reglas sobre:</p><ul><li><b>Propiedad intelectual.</b></li><li><b>Ética e integridad.</b></li><li><b>Visibilidad de la financiación de la UE</b> (los logos, las menciones, etc.).</li></ul><div class=\"callout callout-key\">Por eso lo que escribiste en la solicitud no es papel mojado tras la aprobación: <b>es exactamente la vara de medir</b> con la que te van a comprobar después.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. ¿Y lo financiero? Lo que SÍ y lo que NO te pueden pedir",
+      "html": "<p>Las reglas para controles, revisiones, auditorías e investigaciones de las subvenciones a tanto alzado son <b>las mismas</b> que para las subvenciones basadas en costes unitarios y costes reales, en lo que respecta a <b>obligaciones generales e implementación del proyecto</b>. Pero hay una diferencia capital:</p><div class=\"callout callout-good\">No se realizarán <b>comprobaciones financieras de los costes reales</b> ni de los recursos gastados durante el control del informe final ni en otros controles y auditorías.</div><p>De ahí se deriva lo siguiente, que conviene leer despacio porque tiene un «sin embargo»:</p><ul><li>El beneficiario <b>no tiene que aportar registros financieros exactos</b> para justificar el pago de la subvención.</li><li><b>Sin embargo</b>, la Agencia Nacional y otros auditores <b>SÍ pueden pedir ver tus registros financieros</b> o documentación similar como parte de comprobar la <b>realidad de la implementación</b>, una <b>investigación de fraude</b> o procedimientos similares.</li><li>Además, debes cumplir las <b>normas internas y nacionales de conservación de registros</b> y otras obligaciones legales.</li></ul><div class=\"callout callout-warn\"><b>El matiz que cambia todo:</b> «no auditan el gasto» NO significa «no pueden mirar nada financiero». Pueden pedir tus registros para comprobar que las actividades ocurrieron de verdad y descartar fraude. Lo que no harán es cuadrar tus facturas con el lump sum.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. ¿Cuándo te pueden reducir la subvención?",
+      "html": "<p>Una reducción de la subvención <b>no puede basarse únicamente</b> en reconciliar (cuadrar) los costes reales de implementación con el importe a tanto alzado concedido. Es decir: que hayas «gastado menos» de lo que te dieron no es, por sí solo, motivo de recorte.</p><p>Pero <b>sí</b> puede reducirse la subvención por:</p><ul><li><b>Irregularidades</b> identificadas.</li><li><b>Fraude.</b></li><li><b>Incumplimiento</b> de otras obligaciones del convenio de subvención.</li></ul><p>Y además: cualquier <b>work package o actividad que sea inelegible</b> bajo el convenio de subvención <b>también se rechazará</b>.</p>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. Qué documentación tienes que guardar (la parte práctica)",
+      "html": "<p>Los beneficiarios deben conservar la <b>Data Sheet</b> y toda la documentación relevante que <b>demuestre la realidad de las actividades</b>, al menos hasta el límite temporal fijado en el convenio de subvención.</p><div class=\"callout callout-key\">No hay documentación especial que debas guardar <em>específicamente</em> por ser lump sum. Igual que en otras subvenciones de la UE, debes guardar documentación que demuestre que los work packages se <b>llevaron a cabo: cómo, cuándo, dónde y por quién.</b></div><p>Ejemplos de documentos que prueban la realidad de la implementación:</p><ul><li>Grabaciones y análisis de indicadores de impacto.</li><li><b>Agendas de reuniones</b> y <b>listas de asistencia</b>.</li><li><b>Materiales de formación.</b></li><li><b>Publicaciones</b> y otros resultados tangibles del proyecto.</li><li><b>Fotos y vídeos</b> tomados durante un evento.</li><li><b>Grabaciones de eventos y reuniones online.</b></li></ul>"
+    },
+    {
+      "id": "s6",
+      "kind": "content",
+      "title": "6. Los cuatro niveles de CONTROLES (checks)",
+      "html": "<p>El convenio de subvención describe <b>cuatro niveles de controles</b>:</p><table><thead><tr><th>Control</th><th>Qué es</th></tr></thead><tbody><tr><td><b>Final report check</b><br>(control del informe final)</td><td>Se hace a <b>TODOS los proyectos</b>. Evalúa la calidad y cantidad de los resultados para <b>fijar el importe final</b>, <b>emitir el pago final</b> (o una orden de recuperación si procede) y <b>cerrar administrativamente</b> el convenio.</td></tr><tr><td><b>Desk check</b><br>(control de gabinete)</td><td>Control administrativo. Verifica la existencia, corrección y conformidad de la documentación del proyecto con los requisitos regulatorios y contractuales, desde la oficina.</td></tr><tr><td><b>On-the-spot check</b><br>(control in situ)</td><td>Control administrativo realizado sobre el terreno, comprobando esa misma documentación y conformidad.</td></tr><tr><td><b>System check</b><br>(control de sistema)</td><td>Control administrativo orientado al sistema/procedimientos.</td></tr></tbody></table><div class=\"callout callout-good\">La clave: el <b>final report check se hace SIEMPRE y a todos</b> —es el que fija cuánto cobras y cierra el proyecto—. Los otros tres son <b>administrativos</b> y se centran en verificar la existencia, corrección y conformidad de tu documentación con los requisitos regulatorios y contractuales.</div>"
+    },
+    {
+      "id": "s7",
+      "kind": "content",
+      "title": "7. Las AUDITORÍAS (audits): después de cerrar",
+      "html": "<p>Tras el <b>cierre del convenio de subvención</b>, cualquier proyecto puede ser seleccionado para una <b>auditoría</b>, ya sea por el <b>órgano de auditoría independiente</b> de la Agencia Nacional o por la <b>Comisión Europea</b>.</p><p>El alcance de las auditorías puede variar y se te comunica con la debida antelación, junto con la información práctica y logística necesaria. Como ocurre con los controles de la Agencia, estas auditorías <b>cumplen el principio de lump sum</b>: la documentación que te pedirán estará <b>principalmente relacionada con la implementación de las actividades y la producción de resultados</b>. Los auditores pueden pedir ver tus registros financieros con el objetivo de <b>comprobar la realidad de las actividades</b>.</p><div class=\"callout callout-warn\"><b>El caso especial (y tranquilizador).</b> Ocasionalmente, en el contexto de una <b>revisión periódica del sistema</b> de lump sums, los auditores pueden pedir documentación que pruebe los <b>costes reales</b> incurridos en algunas actividades. Pero esa documentación se pide para comprobar <b>el sistema global</b> de tanto alzado, <b>no tu proyecto en particular</b>. Cualquier hallazgo de esas auditorías (salvo casos de fraude) solo sirve para <b>evaluar la eficacia del modelo de financiación</b>, <b>sin consecuencias financieras para ti</b>.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El monitoring es una auditoría disfrazada.»</b> → No. El monitoring es apoyo y consejo; <em>no se revisan documentos financieros</em> en él.</li><li><span class=\"err-x\">✗</span> <b>«Como es lump sum, no tengo que guardar nada.»</b> → Falso. Debes conservar la Data Sheet y evidencias de que el trabajo se hizo (agendas, listas de asistencia, materiales, fotos, grabaciones).</li><li><span class=\"err-x\">✗</span> <b>«No pueden pedirme nada financiero.»</b> → Sí pueden, pero para comprobar la <em>realidad</em> de las actividades o investigar fraude, no para cuadrar tu gasto con la subvención.</li><li><span class=\"err-x\">✗</span> <b>«Si gasté menos de lo concedido, me recortarán.»</b> → No por eso solo. La reducción se basa en irregularidades, fraude o incumplimiento, no en reconciliar costes con el lump sum.</li><li><span class=\"err-x\">✗</span> <b>«Todos los controles fijan cuánto cobro.»</b> → Solo el <em>final report check</em> fija el importe final y cierra el proyecto; los demás son administrativos.</li><li><span class=\"err-x\">✗</span> <b>«Si me piden costes reales en una auditoría, me van a recortar.»</b> → Si es por la revisión periódica del sistema, es para evaluar el modelo, no tu proyecto, y (salvo fraude) sin consecuencias financieras.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the KA2 lump sum funding model · Sección 7</td><td>Texto íntegro sobre monitoring, controles (cuatro niveles) y auditorías: qué se revisa, qué documentación conservar y cuándo puede reducirse la subvención.</td></tr></tbody></table>"
+    }
+  ]
+}

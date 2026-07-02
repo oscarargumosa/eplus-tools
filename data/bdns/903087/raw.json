@@ -1,0 +1,137 @@
+{
+  "id": 1104648,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903087",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "DEPORTE FEDERADO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE PUBLICACIÓN BOP",
+  "textFin": "20 DÍAS HÁBILES PUBLICACIÓN BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447185,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "5._Certif.nº3_(JG_17-04-26)._Aprobación_convocatoria_y_bases_Deporte_Provincial_Federado_25-26_-_SEFYCU_6765434.pdf",
+      "long": 709293,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447186,
+      "descripcion": "Anexo I. Solicitud (Solicitud)",
+      "nombreFic": "2._ANEXO_I._SOLICITUD_(SOLICITUD).pdf",
+      "long": 218520,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447187,
+      "descripcion": "Anexo II. Declaración Responsable (Solicitud)",
+      "nombreFic": "3._ANEXO_II._DECLARACIÓN_RESPONSABLE_(SOLICITUD).pdf",
+      "long": 157684,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447189,
+      "descripcion": "Anexo A. Proyecto de la Actividad (Solicitud)",
+      "nombreFic": "4._ANEXO_A._PROYECTO_DE_LA_ACTIVIDAD_(SOLICITUD).pdf",
+      "long": 155236,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447194,
+      "descripcion": "Anexo VII. Solicitud de Anticipo (Justificación)",
+      "nombreFic": "9._ANEXO_VII._SOLICITUD_DE_ANTICIPO_(JUSTIFICACIÓN).pdf",
+      "long": 163663,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447191,
+      "descripcion": "Anexo IV. Gastos de Viaje (Justificación)",
+      "nombreFic": "6._ANEXO_IV._GASTOS_DE_VIAJE_(JUSTIFICACIÓN).pdf",
+      "long": 171690,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447192,
+      "descripcion": "Anexo V. Memoria Económica de Actuación Cuenta Justificativa (Justificación)",
+      "nombreFic": "7._ANEXO_V._MEMORIA_ECONÓMICA_DE_ACTUACIÓN_CUENTA_JUSTIFICATIVA_(JUSTIFICACIÓN).pdf",
+      "long": 237817,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447193,
+      "descripcion": "Anexo VI. Gasto de Combustible (Justifiación)",
+      "nombreFic": "8._ANEXO_VI._GASTO_DE_COMBUSTIBLE_(JUSTIFICACIÓN).pdf",
+      "long": 106005,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447190,
+      "descripcion": "Anexo III. Solicitud de Abono (Justificación)",
+      "nombreFic": "5._ANEXO_III._SOLICITUD_DE_ABONO_(JUSTIFICACIÓN).pdf",
+      "long": 114766,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

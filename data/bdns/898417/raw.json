@@ -1,0 +1,72 @@
+{
+  "id": 1099978,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELLBISBAL",
+    "nivel3": "AYUNTAMIENTO DE CASTELLBISBAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898417",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatoria en régimen de concurrencia competitiva para la concesión de subvenciones de proyectos de cooperación y desarrollo destinados a entidades sin ánimo de lucro 2026 (exp. 2026/7/TBA)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria en régimen de concurrencia competitiva para la concesión de subvenciones de proyectos de cooperación y desarrollo destinados a entidades sin ánimo de lucro 2026 (exp. 2026/7/TBA)",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3650446/aprovacio-inicial-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-en-regim-de-concurrencia-competitiva-per-a-projectes-de-cooperacio-i-desenvolupament-destinades-a-entitats-privades-sense-anim-de-lucre-ajuntament-de-castellbisbal",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-20",
+  "fechaFinSolicitud": "2026-05-22",
+  "textInicio": "Des de las 9:00 horas del día 20/4/2026.",
+  "textFin": "Hasta las 14:00 horas de día 22/5/2026.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434186,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "DOC_2026-7-TBA_ID4877212_-_Convocatòria_de_subvencions.PDF",
+      "long": 387591,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1434185,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DOC_2026-7-TBA_ID4897197_-_Convocatòria_lengua_castellana_.PDF",
+      "long": 380352,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

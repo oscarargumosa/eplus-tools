@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-MISS-2023-SOIL-01-04",
+  "ccm2Id": "45742182",
+  "callIdentifier": "HORIZON-MISS-2023-SOIL-01",
+  "callTitle": "",
+  "title": "Innovations to prevent and combat desertification",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Soil science\",\"Agronomy\",\"Desertification\",\"Forestry\",\"Social innovation\",\"Mediterranean\",\"Habitat and species restoration and rehabilitation\",\"Knowledge management\",\"International Cooperation\",\"restoration\",\"water scarcity\",\"climate change\",\"drylands\",\"desertification\",\"land degradation\",\"erosion\",\"land abandonment\"]"
+  ],
+  "crossCuttingPriorities": [
+    "MEDIT",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-SOIL-01-04.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.294Z"
+}

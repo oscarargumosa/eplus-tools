@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-JU-CBE-2023-IA-03",
+  "ccm2Id": "45961795",
+  "callIdentifier": "HORIZON-JU-CBE-2023",
+  "callTitle": "",
+  "title": "Improve fermentation processes (including downstream purification) to final bio-based products",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-04-26",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Biotechnology (non-medical), bioreactors, applied\",\"Bioprocessing technologies (industrial processes r\",\"Circular economy\",\"Industrial chemistry\",\"Bio-based products (products that are manufactured\",\"Societal Engagement\",\"downstream processes\",\"industrial fermentation\",\"biomass\",\"safe and sustainable by design\",\"optimisation of industrial processes\",\"cost-effective production\",\"industrial processes\",\"unstable products\",\"social acceptance\",\"biocatalysis\",\"reactor design\",\"fermentation processes\",\"bio-based feedstock\",\"purification processes\",\"zero pollution\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SocietalEngagement"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-JU-CBE-2023-IA-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.221Z"
+}

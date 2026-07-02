@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-EUROHPC-JU-2022-TECH-03-01",
+  "ccm2Id": "45816029",
+  "callIdentifier": "HORIZON-EUROHPC-JU-2022-TECH-03",
+  "callTitle": "",
+  "title": "Framework Partnership Agreement (FPA) for developing a large-scale European initiative for High Performance Computing (HPC) ecosystem based on RISC-V",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-26",
+  "deadline": "2023-08-31",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Framework Partnerships",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Computer hardware and architecture\",\"High performance computing\",\"Digital Agenda\",\"High Performance Computing\",\"EuroHPC\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-EUROHPC-JU-2022-TECH-03-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.271Z"
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "Search Funding & Tenders",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search;freeTextSearchKeyword=;typeCodes=0,1;statusCodes=31094501,31094502,31094503;programCode=null;programDivisionCode=null;focusAreaCode=null;crossCuttingPriorityCode=null;callCode=Default;sortQuery=openingDate;orderBy=asc;onlyTenders=false;topicListKey=topicSearchTablePageState",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "2. Eligible participants",
+    "label": "[1]",
+    "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftn1",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "2. Eligible participants",
+    "label": "Associated Countries to Horizon Europe",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "2. Eligible participants",
+    "label": "[2]",
+    "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftn2",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "2. Eligible participants",
+    "label": "[1]",
+    "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftnref1",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "2. Eligible participants",
+    "label": "[2]",
+    "url": "https://webgate.ec.testa.eu/egrants/cap/#_ftnref2",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "4. Financial and operational capacity and exclusion",
+    "label": "rules of contest",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/roc_horizon-eic-2026-prize-icapital_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "4. Financial and operational capacity and exclusion",
+    "label": "Annex C",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5b. Evaluation and award: Submission and evaluation processes",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EIC Work Programme 2026",
+    "url": "https://eic.ec.europa.eu/eic-2026-work-programme_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "HE Main Work Programme 2026-2027 – 10. European Innovation Ecosystems (EIE)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-10-european-innovation-ecosystems_horizon-2026-2027_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  }
+]

@@ -393,7 +393,9 @@ async function deleteActivity(id) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other':
       await db.execute('DELETE FROM activity_generic_costs WHERE activity_id = ?', [id]);
       break;
@@ -480,7 +482,9 @@ async function getActivityDetail(activityId) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const [generic] = await db.execute(
         'SELECT id, activity_id, partner_id, active, note, amount, project_pct, lifetime_pct FROM activity_generic_costs WHERE activity_id = ?',
@@ -588,7 +592,9 @@ async function createActivityDetail(activityId, data) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const { partner_id, active, note, amount, project_pct, lifetime_pct } = data;
       const id = genUUID();
@@ -807,7 +813,9 @@ async function updateActivityDetail(activityId, detailId, data) {
     case 'artistic':
     case 'extraordinary':
     case 'equipment':
+    case 'goods':
     case 'consumables':
+    case 'fstp':
     case 'other': {
       const { note, amount, project_pct, lifetime_pct, active } = data;
       const updates = [];
@@ -1035,7 +1043,9 @@ async function getBudgetSummary(projectId) {
         case 'artistic':
         case 'extraordinary':
         case 'equipment':
+        case 'goods':
         case 'consumables':
+        case 'fstp':
         case 'other': {
           // Generic costs
           const [generics] = await db.execute(
@@ -1106,6 +1116,99 @@ async function saveFullState(projectId, data) {
     );
     const partnerIds = partners.map(p => p.id);
 
+    // 0. Snapshot de campos que SOLO toca el Writer/Developer y que el
+    //    DELETE+INSERT siguiente machacaría si no los preservamos.
+    //    Bug raíz: el state del Designer no incluye summary/objectives/
+    //    description (esos son del Writer); al re-aprobar Diseñar el
+    //    INSERT los ponía a NULL y se perdía el trabajo del Writer.
+    const wpPreserveByOrder = {};
+    const actPreserveByTypeLabel = {};   // primary key: wp_order|type|label|subtype
+    const actPreserveByPosition = {};    // fallback key: wp_order|act_order
+    {
+      const [existingWPs] = await conn.execute(
+        'SELECT id, order_index, summary, objectives, duration_from_month, duration_to_month FROM work_packages WHERE project_id = ? ORDER BY order_index',
+        [projectId]
+      );
+      for (const wp of existingWPs) {
+        wpPreserveByOrder[wp.order_index] = {
+          summary: wp.summary,
+          objectives: wp.objectives,
+          duration_from_month: wp.duration_from_month,
+          duration_to_month: wp.duration_to_month,
+        };
+      }
+      if (existingWPs.length) {
+        const wpIds = existingWPs.map(w => w.id);
+        const wpPh = wpIds.map(() => '?').join(',');
+        const [existingActs] = await conn.execute(
+          `SELECT a.id, a.wp_id, a.type, a.label, a.subtype, a.description, a.order_index, w.order_index AS wp_order
+           FROM activities a JOIN work_packages w ON w.id = a.wp_id
+           WHERE w.project_id = ?
+           ORDER BY w.order_index, a.order_index`,
+          [projectId]
+        );
+        for (const a of existingActs) {
+          if (!a.description) continue;
+          const kTL = `${a.wp_order}|${a.type}|${a.label || ''}|${a.subtype || ''}`;
+          const kPos = `${a.wp_order}|${a.order_index}`;
+          if (!(kTL in actPreserveByTypeLabel)) actPreserveByTypeLabel[kTL] = a.description;
+          if (!(kPos in actPreserveByPosition)) actPreserveByPosition[kPos] = a.description;
+        }
+      }
+    }
+
+    // 0b. Snapshot de tablas dependientes con CASCADE sobre work_packages:
+    //     deliverables, milestones, wp_tasks, wp_task_participants,
+    //     deliverable_tasks. Sin esto, el DELETE de work_packages las
+    //     borra en cascada y se pierde todo el trabajo del Writer.
+    //     Cada fila guarda su wp_order para poder reubicarla al nuevo
+    //     work_package_id tras el re-INSERT de WPs.
+    const [savedDelivs] = await conn.execute(
+      `SELECT d.*, w.order_index AS wp_order
+         FROM deliverables d
+         JOIN work_packages w ON w.id = d.work_package_id
+        WHERE d.project_id = ?`,
+      [projectId]
+    );
+    const [savedMiles] = await conn.execute(
+      `SELECT m.*, w.order_index AS wp_order
+         FROM milestones m
+         JOIN work_packages w ON w.id = m.work_package_id
+        WHERE m.project_id = ?`,
+      [projectId]
+    );
+    const [savedWpTasks] = await conn.execute(
+      `SELECT t.*, w.order_index AS wp_order
+         FROM wp_tasks t
+         JOIN work_packages w ON w.id = t.work_package_id
+        WHERE t.project_id = ?`,
+      [projectId]
+    );
+    let savedWpTaskParts = [];
+    if (savedWpTasks.length) {
+      const tIds = savedWpTasks.map(t => t.id);
+      const tph = tIds.map(() => '?').join(',');
+      const [rows] = await conn.execute(
+        `SELECT * FROM wp_task_participants WHERE task_id IN (${tph})`,
+        tIds
+      );
+      savedWpTaskParts = rows;
+    }
+    let savedDelivTasks = [];
+    if (savedDelivs.length) {
+      const dIds = savedDelivs.map(d => d.id);
+      const dph = dIds.map(() => '?').join(',');
+      const [rows] = await conn.execute(
+        `SELECT * FROM deliverable_tasks WHERE deliverable_id IN (${dph})`,
+        dIds
+      );
+      savedDelivTasks = rows;
+    }
+
+    // Map { order_index → newWpId } que se rellena durante el re-INSERT
+    // de WPs (paso 6). Lo usamos al final para reubicar las dependencias.
+    const wpOrderToNewId = {};
+
     // 1. Delete existing data (reverse dependency order)
     if (partnerIds.length) {
       const ph = partnerIds.map(() => '?').join(',');
@@ -1153,24 +1256,61 @@ async function saveFullState(projectId, data) {
       }
     }
 
-    // 4. Insert routes
-    if (data.routes) {
-      for (const [key, route] of Object.entries(data.routes)) {
-        const [a, b] = key.split('_');
+    // 4. Insert extra destinations FIRST (antes que routes) — necesitamos el
+    //    mapping { frontendId(_edN) → dbUuid } para traducir los endpoints
+    //    de las routes que apuntan a extra_dests (ej. Brussels Event).
+    const extraDestIdMap = {};
+    if (data.extraDests && data.extraDests.length) {
+      let edIdx = 0;
+      for (const ed of data.extraDests) {
+        if (!ed.name) continue;
+        const newId = genUUID();
+        extraDestIdMap[ed.id] = newId;
         await conn.execute(
-          'INSERT INTO routes (id, project_id, endpoint_a, endpoint_b, distance_km, eco_travel, custom_rate) VALUES (?, ?, ?, ?, ?, ?, ?)',
-          [genUUID(), projectId, a, b, route.km || 0, route.green ? 1 : 0, route.custom_rate != null ? route.custom_rate : null]
+          'INSERT INTO extra_destinations (id, project_id, name, country, accommodation_rate, subsistence_rate, order_index) VALUES (?, ?, ?, ?, ?, ?, ?)',
+          [newId, projectId, ed.name, ed.country || null, ed.aloj || 0, ed.mant || 0, edIdx]
         );
+        edIdx++;
       }
     }
 
-    // 5. Insert extra destinations
-    if (data.extraDests && data.extraDests.length) {
-      for (const ed of data.extraDests) {
-        if (!ed.name) continue;
+    // 5. Insert routes — el frontend genera el key con routeKey(a,b) =
+    //    (a<b ? a+'_'+b : b+'_'+a). Si un endpoint es '_edN' (extra_dest)
+    //    aparece primero porque '_' < '0-9a-f'. Entonces key='_edN_UUID'.
+    //    Un split('_') ingenuo daría ['', 'edN', 'UUID'] y rompe todo.
+    //
+    //    Parser robusto: identifica los dos endpoints sabiendo que un
+    //    endpoint válido es o un UUID (36 chars con 4 guiones) o '_edN'.
+    const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    const EDN_RE  = /^_?ed\d+$/i;
+    function isValidEndpoint(s) { return !!s && (UUID_RE.test(s) || EDN_RE.test(s)); }
+    function parseRouteKey(key) {
+      for (let i = 1; i < key.length - 1; i++) {
+        if (key[i] !== '_') continue;
+        const a = key.substring(0, i);
+        const b = key.substring(i + 1);
+        if (isValidEndpoint(a) && isValidEndpoint(b)) return [a, b];
+      }
+      return null;
+    }
+    function translateEndpoint(ep) {
+      if (!ep) return null;
+      if (UUID_RE.test(ep)) return ep;                      // partner UUID — tal cual
+      if (extraDestIdMap[ep]) return extraDestIdMap[ep];    // _edN exacto
+      if (extraDestIdMap['_' + ep]) return extraDestIdMap['_' + ep]; // edN → _edN
+      if (ep.startsWith('_') && extraDestIdMap[ep.slice(1)]) return extraDestIdMap[ep.slice(1)];
+      return null;
+    }
+    if (data.routes) {
+      for (const [key, route] of Object.entries(data.routes)) {
+        const parsed = parseRouteKey(key);
+        if (!parsed) continue; // key malformada → descarta
+        const a = translateEndpoint(parsed[0]);
+        const b = translateEndpoint(parsed[1]);
+        if (!a || !b) continue;
         await conn.execute(
-          'INSERT INTO extra_destinations (id, project_id, name, country, accommodation_rate, subsistence_rate) VALUES (?, ?, ?, ?, ?, ?)',
-          [genUUID(), projectId, ed.name, ed.country || null, ed.aloj || 0, ed.mant || 0]
+          'INSERT INTO routes (id, project_id, endpoint_a, endpoint_b, distance_km, eco_travel, custom_rate) VALUES (?, ?, ?, ?, ?, ?, ?)',
+          [genUUID(), projectId, a, b, route.km || 0, route.green ? 1 : 0, route.custom_rate != null ? route.custom_rate : null]
         );
       }
     }
@@ -1180,29 +1320,101 @@ async function saveFullState(projectId, data) {
       for (let wi = 0; wi < data.wps.length; wi++) {
         const wp = data.wps[wi];
         const wpId = genUUID();
+        wpOrderToNewId[wi] = wpId; // para reubicar deliverables/milestones/wp_tasks al final
+        // Preservar campos del Writer si el state del Designer no los trae.
+        // El Designer no incluye summary/objectives/duration_*; sin esto se
+        // perdería el trabajo del Writer al re-aprobar Diseñar.
+        const preserved = wpPreserveByOrder[wi] || {};
+        const finalSummary    = (wp.summary    != null && wp.summary    !== '') ? wp.summary    : (preserved.summary    || null);
+        // objectives y duration_* hoy no se insertan aquí (mantenemos lo que
+        // ya hay en BD): para eso movemos a UPDATE tras el INSERT.
         await conn.execute(
           'INSERT INTO work_packages (id, project_id, order_index, code, title, summary, category, leader_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-          [wpId, projectId, wi, `WP${wi + 1}`, wp.name || wp.desc || `WP${wi + 1}`, wp.summary || null, wp._cat || null, wp.leader || null]
+          [wpId, projectId, wi, `WP${wi + 1}`, wp.name || wp.desc || `WP${wi + 1}`, finalSummary, wp._cat || null, wp.leader || null]
         );
+        // Restaurar también objectives + duration_* si los teníamos
+        if (preserved.objectives != null || preserved.duration_from_month != null || preserved.duration_to_month != null) {
+          await conn.execute(
+            'UPDATE work_packages SET objectives = ?, duration_from_month = ?, duration_to_month = ? WHERE id = ?',
+            [preserved.objectives || null, preserved.duration_from_month, preserved.duration_to_month, wpId]
+          );
+        }
 
         if (wp.activities && wp.activities.length) {
           for (let ai = 0; ai < wp.activities.length; ai++) {
             const act = wp.activities[ai];
             const actId = genUUID();
+            // Preservar description de actividades: match primero por
+            // (wp_order, type, label, subtype) y fallback por (wp_order, position).
+            let preservedDesc = null;
+            if (!act.desc) {
+              const kTL = `${wi}|${act.type}|${act.label || ''}|${act.subtype || ''}`;
+              const kPos = `${wi}|${ai}`;
+              preservedDesc = actPreserveByTypeLabel[kTL] || actPreserveByPosition[kPos] || null;
+            }
+            const finalDesc = (act.desc != null && act.desc !== '') ? act.desc : preservedDesc;
             await conn.execute(
               `INSERT INTO activities (id, wp_id, type, label, subtype, description, date_start, date_end, online, order_index, gantt_start_month, gantt_end_month) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-              [actId, wpId, act.type, act.label || '', act.subtype || null, act.desc || null,
+              [actId, wpId, act.type, act.label || '', act.subtype || null, finalDesc,
                act.date_start || null, act.date_end || null, act.online ? 1 : 0, ai,
                act._gantt_start || null, act._gantt_end || null]
             );
-            await insertActivityDetails(conn, actId, act, partnerIds);
+            await insertActivityDetails(conn, actId, act, partnerIds, extraDestIdMap);
           }
         }
       }
     }
 
+    // 7. Restaurar dependencias del Writer que CASCADE habría borrado:
+    //    deliverables, milestones, wp_tasks (+wp_task_participants) y
+    //    deliverable_tasks. Re-insertamos cada fila con su mismo id
+    //    original y reasignamos work_package_id al nuevo wpId basado
+    //    en el order_index original.
+    async function reinsertRow(tableName, row) {
+      delete row.wp_order;
+      const cols = Object.keys(row);
+      const placeholders = cols.map(() => '?').join(',');
+      try {
+        await conn.execute(
+          `INSERT INTO ${tableName} (${cols.map(c => '`' + c + '`').join(',')}) VALUES (${placeholders})`,
+          cols.map(c => row[c])
+        );
+      } catch (e) {
+        console.warn(`[saveFullState] reinsert ${tableName} skip: ${e.code || e.message}`);
+      }
+    }
+
+    for (const d of savedDelivs) {
+      const newWpId = wpOrderToNewId[d.wp_order];
+      if (newWpId == null) continue;
+      d.work_package_id = newWpId;
+      await reinsertRow('deliverables', d);
+    }
+    for (const m of savedMiles) {
+      const newWpId = wpOrderToNewId[m.wp_order];
+      if (newWpId == null) continue;
+      m.work_package_id = newWpId;
+      // El deliverable_id se preserva porque restauramos deliverables con
+      // su id original arriba. Si el deliverable original no se restauró
+      // (porque su WP ya no existe), la FK ON DELETE SET NULL deja el
+      // milestone con deliverable_id NULL al insertarlo, lo cual es OK.
+      await reinsertRow('milestones', m);
+    }
+    for (const t of savedWpTasks) {
+      const newWpId = wpOrderToNewId[t.wp_order];
+      if (newWpId == null) continue;
+      t.work_package_id = newWpId;
+      await reinsertRow('wp_tasks', t);
+    }
+    for (const wtp of savedWpTaskParts) {
+      await reinsertRow('wp_task_participants', wtp);
+    }
+    for (const dt of savedDelivTasks) {
+      await reinsertRow('deliverable_tasks', dt);
+    }
+
     await conn.commit();
-    console.log(`[saveFullState] ${projectId} OK — ${data.wps?.length || 0} WPs, ${data.wps?.reduce((s, w) => s + (w.activities?.length || 0), 0) || 0} activities`);
+    console.log(`[saveFullState] ${projectId} OK — ${data.wps?.length || 0} WPs, ${data.wps?.reduce((s, w) => s + (w.activities?.length || 0), 0) || 0} activities · restored: ${savedDelivs.length} deliv, ${savedMiles.length} miles, ${savedWpTasks.length} wp_tasks`);
   } catch (err) {
     await conn.rollback();
     console.error(`[saveFullState] ${projectId} ROLLBACK — ${err.code || ''}: ${err.message}`);
@@ -1216,6 +1428,7 @@ async function deleteActivityDetails(conn, actId, type) {
   switch (type) {
     case 'mgmt':
       await conn.execute('DELETE FROM activity_management_partners WHERE activity_id = ?', [actId]);
+      await conn.execute('DELETE FROM activity_management_staff WHERE activity_id = ?', [actId]);
       await conn.execute('DELETE FROM activity_management WHERE activity_id = ?', [actId]);
       break;
     case 'meeting': case 'ltta':
@@ -1240,27 +1453,56 @@ async function deleteActivityDetails(conn, actId, type) {
   }
 }
 
-async function insertActivityDetails(conn, actId, act, partnerIds) {
+async function insertActivityDetails(conn, actId, act, partnerIds, extraDestIdMap = {}) {
   // partnerIds = valid partner IDs for this project (used to filter FK references)
   const validPid = pid => !partnerIds || partnerIds.includes(pid);
 
   switch (act.type) {
     case 'mgmt': {
+      // Legacy flat-rate row kept for back-compat (downstream queries still
+      // join on it). Rates carry no semantic weight under the new model.
       await conn.execute(
         'INSERT INTO activity_management (id, activity_id, rate_applicant, rate_partner) VALUES (?, ?, ?, ?)',
         [genUUID(), actId, act.rate_applicant || 0, act.rate_partner || 0]
       );
+      // New IO-style per-worker staff table (canonical source of truth for
+      // Management personnel cost: days × profile rate, with optional tasks
+      // description).
+      if (act.mgmt_staff) {
+        for (const [pid, ps] of Object.entries(act.mgmt_staff)) {
+          if (!ps.active || !validPid(pid)) continue;
+          for (const s of (ps.staff || [])) {
+            await conn.execute(
+              'INSERT INTO activity_management_staff (id, activity_id, partner_id, days, worker_category, tasks_text) VALUES (?, ?, ?, ?, ?, ?)',
+              [genUUID(), actId, pid, s.days || 0, s.profileId || null, s.tasks || null]
+            );
+          }
+          // Mirror IO behaviour: also flag active partners in the legacy
+          // activity_management_partners table so downstream consumers that
+          // still join on it stay in sync.
+          await conn.execute(
+            'INSERT INTO activity_management_partners (activity_id, partner_id, active) VALUES (?, ?, 1) ON DUPLICATE KEY UPDATE active = 1',
+            [actId, pid]
+          );
+        }
+      }
       break;
     }
     case 'meeting': case 'ltta': {
-      const hostValid = act.host && validPid(act.host);
-      if (!hostValid) {
-        console.warn(`[saveFullState] activity ${act.label}: host '${act.host}' not in partners, skipping mobility details`);
+      // Host can be either a partner uuid or an extra_destination frontend id (_edN).
+      const isPartner = act.host && validPid(act.host);
+      const extraDestUuid = act.host && extraDestIdMap[act.host];
+      if (!isPartner && !extraDestUuid) {
+        console.warn(`[saveFullState] activity ${act.label}: host '${act.host}' is neither a valid partner nor a known extra_destination, skipping mobility details`);
         break;
       }
       await conn.execute(
-        'INSERT INTO activity_mobility (id, activity_id, host_partner_id, host_active, pax_per_partner, duration_days, local_pax, local_transport, mat_cost_per_pax) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
-        [genUUID(), actId, act.host, act.host_active !== false ? 1 : 0, act.pax || 2, act.days || 3, act.local_pax || 0, act.local_transport || 0, act.mat_cost || 0]
+        'INSERT INTO activity_mobility (id, activity_id, host_partner_id, host_extra_dest_id, host_active, pax_per_partner, duration_days, local_pax, local_transport, mat_cost_per_pax) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        [genUUID(), actId,
+         isPartner ? act.host : null,
+         isPartner ? null : extraDestUuid,
+         act.host_active !== false ? 1 : 0,
+         act.pax || 2, act.days || 3, act.local_pax || 0, act.local_transport || 0, act.mat_cost || 0]
       );
       // Participant toggles — only valid partner IDs
       if (act.participants) {
@@ -1374,11 +1616,20 @@ async function loadFullState(projectId) {
     routes[key] = { km: r.distance_km || 0, green: !!r.eco_travel, custom_rate: r.custom_rate != null ? Number(r.custom_rate) : null };
   }
 
-  // Extra destinations
+  // Extra destinations — preservamos el uuid de BD para poder mapear host_extra_dest_id
+  // al _edN del state. El frontend identifica cada extra_dest por su posición (_ed0, _ed1...).
+  // Ordenamos por order_index (migración 102) para garantizar el mismo orden que en el save.
   const [edRows] = await db.execute(
-    'SELECT name, country, accommodation_rate, subsistence_rate FROM extra_destinations WHERE project_id = ?', [projectId]
+    'SELECT id, name, country, accommodation_rate, subsistence_rate FROM extra_destinations WHERE project_id = ? ORDER BY order_index, id', [projectId]
   );
-  const extraDests = edRows.map(r => ({ name: r.name, country: r.country || '', aloj: Number(r.accommodation_rate), mant: Number(r.subsistence_rate) }));
+  // db_id es el uuid real en BD — el frontend lo necesita para traducir
+  // las keys de routes (que en BD usan el uuid pero en el state usan _edN).
+  const extraDests = edRows.map(r => ({ db_id: r.id, name: r.name, country: r.country || '', aloj: Number(r.accommodation_rate), mant: Number(r.subsistence_rate) }));
+  // El frontend hidrata extraDests con id '_ed1', '_ed2', ... (ver calculator.js:2901
+  // donde map (ed, i) => '_ed' + (i + 1)), empieza en 1, no en 0. Aquí seguimos esa
+  // convención para que el dropdown encuentre el match al renderizar.
+  const extraDestUuidToEdN = {};
+  edRows.forEach((r, idx) => { extraDestUuidToEdN[r.id] = `_ed${idx + 1}`; });
 
   // Work packages + activities + details
   const [wpRows] = await db.execute(
@@ -1404,7 +1655,7 @@ async function loadFullState(projectId) {
         _gantt_end: act.gantt_end_month || null,
       };
       // Load type-specific details
-      await loadActivityDetails(a, act.id, act.type);
+      await loadActivityDetails(a, act.id, act.type, extraDestUuidToEdN);
       activities.push(a);
     }
     wps.push({
@@ -1420,17 +1671,49 @@ async function loadFullState(projectId) {
   return { partnerRates, workerRates, routes, extraDests, wps };
 }
 
-async function loadActivityDetails(a, actId, type) {
+async function loadActivityDetails(a, actId, type, extraDestUuidToEdN = {}) {
   switch (type) {
     case 'mgmt': {
+      // Legacy rates kept for any code that still reads them, but they're
+      // no longer the source of truth.
       const [rows] = await db.execute('SELECT rate_applicant, rate_partner FROM activity_management WHERE activity_id = ?', [actId]);
       if (rows[0]) { a.rate_applicant = Number(rows[0].rate_applicant); a.rate_partner = Number(rows[0].rate_partner); }
+
+      // New canonical source: per-worker staff table.
+      const [staffRows] = await db.execute(
+        'SELECT partner_id, days, worker_category, tasks_text FROM activity_management_staff WHERE activity_id = ?',
+        [actId]
+      );
+      if (staffRows.length) {
+        a.mgmt_staff = {};
+        for (const r of staffRows) {
+          if (!a.mgmt_staff[r.partner_id]) a.mgmt_staff[r.partner_id] = { active: true, staff: [] };
+          a.mgmt_staff[r.partner_id].staff.push({
+            days: Number(r.days) || 0,
+            profileId: r.worker_category,
+            tasks: r.tasks_text || '',
+          });
+        }
+      }
+      // If there are no new-format rows but legacy rates exist, leave the
+      // legacy fields populated on the activity; the frontend will lazily
+      // build a default mgmt_staff from those rates the first time the user
+      // opens the activity (see Calculator.buildMgmtFields).
       break;
     }
     case 'meeting': case 'ltta': {
-      const [rows] = await db.execute('SELECT host_partner_id, host_active, pax_per_partner, duration_days, local_pax, local_transport, mat_cost_per_pax FROM activity_mobility WHERE activity_id = ?', [actId]);
+      const [rows] = await db.execute('SELECT host_partner_id, host_extra_dest_id, host_active, pax_per_partner, duration_days, local_pax, local_transport, mat_cost_per_pax FROM activity_mobility WHERE activity_id = ?', [actId]);
       if (rows[0]) {
-        a.host = rows[0].host_partner_id; a.pax = rows[0].pax_per_partner; a.days = rows[0].duration_days;
+        // Host puede ser un partner uuid o un extra_destination uuid. Si es extra_dest,
+        // lo mapeamos al _edN que el frontend espera. Si por algún motivo el uuid no
+        // está en el mapa (extra_dest borrado tras el save), devolvemos null para que
+        // el frontend no intente referenciar algo inexistente.
+        if (rows[0].host_extra_dest_id) {
+          a.host = extraDestUuidToEdN[rows[0].host_extra_dest_id] || null;
+        } else {
+          a.host = rows[0].host_partner_id;
+        }
+        a.pax = rows[0].pax_per_partner; a.days = rows[0].duration_days;
         a.local_pax = rows[0].local_pax; a.local_transport = Number(rows[0].local_transport); a.mat_cost = Number(rows[0].mat_cost_per_pax);
       }
       const [parts] = await db.execute('SELECT partner_id, active FROM activity_mobility_participants WHERE activity_id = ?', [actId]);

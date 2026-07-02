@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "900972",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CENDEA DE OLZA/OLTZA ZENDEA / AYUNTAMIENTO DE CENDEA DE OLZA/OLTZA ZENDEA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "AYUDAS INDIVIDUALES DIRIGIDAS A PROPORCIONAR UN MEDIO ALTERNATIVO DE TRANSPORTE ACCESIBLE PARA PERSONAS AFECTADAS POR DIFICULTADES DE MOVILIDAD, AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": "2026-12-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://ayuntamientoolza.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900972",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ayuntamientoolza.sedelectronica.es/preview-document/3e38d7b8-1037-4aad-b2a5-93705fe6e807/",
+  "text_inicio": "A la fecha del día siguiente a la publicación en el Boletín Oficial de Navarra (BON)",
+  "text_fin": "Plazo abierto todo el año",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.975Z"
+}

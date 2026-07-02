@@ -1,0 +1,76 @@
+{
+  "id": 1104769,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SEGOVIA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE SEGOVIA"
+  },
+  "sedeElectronica": "https://sede.dipsegovia.es/info.0",
+  "codigoBDNS": "903208",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5200000,
+  "mrr": false,
+  "descripcion": "Plan Extraordinario de Inversiones (PEI) 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES416 - Segovia"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DEL PLAN EXTRAORDINARIO DE INVERSIONES (PEI) 2026-2027.",
+  "urlBasesReguladoras": "https://www.dipsegovia.es/la-institucion/servicios/subvenciones-planes-provinciales",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-30",
+  "textInicio": "día siguiente a la publicación en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447568,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases de convocatoria Plan Extraordinario de Inversiones (PEI) 2026_2027 (5).pdf",
+      "long": 1163040,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

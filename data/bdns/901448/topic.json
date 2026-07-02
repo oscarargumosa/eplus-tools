@@ -1,0 +1,117 @@
+{
+  "source": "bdns",
+  "source_id": "901448",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCOBENDAS / AYUNTAMIENTO DE ALCOBENDAS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "Subvenciones en concurrencia competitiva para el Impulso del sector de turismo en Alcobendas. (comercio, pequeñas empresas y autónomos)",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 285000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "52.2",
+      "descripcion": "Actividades auxiliares del transporte"
+    },
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "81.3",
+      "descripcion": "Actividades de jardinería"
+    },
+    {
+      "codigo": "81.2",
+      "descripcion": "Actividades de limpieza"
+    },
+    {
+      "codigo": "73",
+      "descripcion": "Actividades de publicidad, estudios de mercado y relaciones públicas "
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "77.1",
+      "descripcion": "Alquiler de vehículos de motor"
+    },
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "63",
+      "descripcion": "Infraestructura informática, tratamiento de datos, alojamiento de datos y otras actividades de servicios de información"
+    },
+    {
+      "codigo": "82.3",
+      "descripcion": "Organización de convenciones y ferias de muestras"
+    },
+    {
+      "codigo": "55",
+      "descripcion": "Servicios de alojamiento"
+    },
+    {
+      "codigo": "56",
+      "descripcion": "Servicios de comidas y bebidas"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    },
+    {
+      "codigo": "61",
+      "descripcion": "Telecomunicaciones"
+    }
+  ],
+  "apply_url": "www.alcobendas.org",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901448",
+  "documents": [
+    {
+      "label": "Modelo de Extracto de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.alcobendas.org/sites/default/files/2021-01/Ordenanza%20de%20las%20bases%20reguladoras%20generales%20para%20la%20concesi%C3%B3n%20de%20subvenciones%20en%20materia%20de%20desarrollo%20econ%C3%B3mico%2C%20fomento%20del%20empleo%20y%20comercio.pdf",
+  "text_inicio": "El día siguiente de su publicación en el BOCAM",
+  "text_fin": "20 días naturales desde el día siguiente a su publicación en el BOCAM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.197Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1100536,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD COMPLUTENSE DE MADRID",
+    "nivel3": null
+  },
+  "sedeElectronica": "ucm.es",
+  "codigoBDNS": "898975",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45000,
+  "mrr": false,
+  "descripcion": "Convocatoria de 15 Ayudas de Formación en COFARES para estudiantes de Grado y Doble Grado de la Facultad de Farmacia de la Universidad Complutense de Madrid en el curso 2025-26 en el marco de la Cátedra Extraordinaria “Logística farmacéutica COFARES”",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Convocatoria de 15 Ayudas de Formación en COFARES para estudiantes de Grado y Doble Grado de la Facultad de Farmacia de la Universidad Complutense de Madrid en el curso 2025-26 en el marco de la Cátedra Extraordinaria “Logística farmacéutica COFARES”",
+  "urlBasesReguladoras": "https://farmacia.ucm.es/becas",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 días hábiles a partir del día siguiente a la publicación de la convocatoria en el BOCAM",
+  "textFin": "20 días hábiles después de la publicación de la convocatoria en el BOCAM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436535,
+      "descripcion": "Extracto Convocatoria para publicación en diario oficial CAM",
+      "nombreFic": "Extracto Resolución.pdf",
+      "long": 115904,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1435681,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria COFARES 2025-6 final FIRMADO.pdf",
+      "long": 146751,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

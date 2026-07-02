@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "899338",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "SUBV. A MUNICIPIOS C.M.PARA EQUIPAM., OBRAS Y MEJORAS LOCALES JUVENILES",
+  "title_lang": "es",
+  "summary": "Infraestructuras",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 450000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899338",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 559/2022 Modificación BB.RR.",
+      "url": null
+    },
+    {
+      "label": "Otros documentos  ORDEN 3551/2019 BB.RR",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2022/04/04/BOCM-20220404-23.PDF",
+  "text_inicio": "DESDE EL DÍA SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.C.M",
+  "text_fin": "15 DÍAS HABILES DESDE EL SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN B.O.C.M",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.959Z"
+}

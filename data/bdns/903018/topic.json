@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903018",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CÓRDOBA / DIPUTACIÓN PROVINCIAL DE CÓRDOBA",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "CONVOCATORIA SUBVENCIONES AYTOS PROYECTOIS PROTECCIÓN CIVIL ALVPC 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": "2026-05-08",
+  "deadline": "2026-05-21",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 175000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://sede.dipucordoba.es/diputacion/tramites/procedimiento/8876/solicitud-generica",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903018",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipucordoba.es/uploads/attachments/28839/ordenanzaactividadsubvencional.pdf",
+  "text_inicio": "al dia siguiente de la publicación de las bases en el BOP",
+  "text_fin": "cuando se procede al pago",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.994Z"
+}

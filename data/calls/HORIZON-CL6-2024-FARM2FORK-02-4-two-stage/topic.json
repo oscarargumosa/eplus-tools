@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL6-2024-FARM2FORK-02-4-two-stage",
+  "ccm2Id": "45653806",
+  "callIdentifier": "HORIZON-CL6-2024-FARM2FORK-02",
+  "callTitle": "",
+  "title": "Tackling outbreaks of plant pests",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"International Cooperation\",\"Integrated pest management\",\"Agriculture related to crop production, soil biolo\",\"Phytopathology\",\"Tree health\",\"Plant cropping systems\",\"Plant pests\",\"Ecological intensification\",\"Soilborne pests\",\"Agriculture, Rural Development, Fisheries\",\"Pest control equipment\",\"Soilborne pathogens\",\"Plant viruses\",\"Plant diseases\",\"Agricultural engineering, food safety\",\"Biological control\",\"IPM\",\"early-detection\",\"priority pest\",\"pesticide reduction\",\"union quarantine plant pest\",\"plant protection\",\"crop protection\",\"non-chemical control\",\"plant health surveillance\",\"sustainable agriculture\",\"phytosanitary measures\",\"biological control\",\"pesticide\",\"plant health\",\"resistance breeding\",\"plant pest outbreak\",\"integrated pest management\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-FARM2FORK-02-4-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.383Z"
+}

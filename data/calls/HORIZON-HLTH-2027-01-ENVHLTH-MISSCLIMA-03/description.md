@@ -1,0 +1,42 @@
+## Expected Outcome
+
+This topic aims at supporting activities that are enabling or contributing to one or several expected impacts of destination “Living and working in a health-promoting environment” and the EU Mission on Adaptation to Climate Change. To that end, proposals under this topic should aim to deliver results that are directed at, tailored towards and contributing to most of the following expected outcomes:
+- Populations, public authorities and healthcare systems benefit from innovative solutions and technologies to increase surveillance and prevention and reduce climatic and environmental health risks.
+- Policymakers and public authorities develop and implement environment, climate change and health policies and interventions supported by nearly fit-for-use solutions that can be further upscaled and deployed.
+
+## Scope
+
+Enhancing the adaptive capacity and resilience of healthcare systems and communities is crucial to prevent and reduce the health impacts of climate change. However, many of the urgently needed technologies, tools, systems and solutions are still at an early developmental stage, relying on further support for development and testing. Proposals under this topic are expected to close this gap and build on innovations being developed in the field, supported through, among others, EU Research and Innovation (R&I) funding. In this context, Pre-commercial Procurement (PCP) projects can drive innovation and speed up the development of technologies for health adaptation to climate change by supporting the research and development of solutions to increase the resilience and preparedness of healthcare systems, communities and individuals against climate change. By focusing on early-stage solutions, PCP fosters collaboration between public sector buyers (e.g. public authorities, local authorities, health organisations) and private developers to create climate adaptation technologies, systems and solutions in the context of human health. These solutions will accelerate the transition to more climate-resilient healthcare systems and societies.
+
+PCP actions target consortia of procurers with similar needs that want to jointly procure the development of innovative solutions for supporting adaptation efforts. This topic does not provide direct funding to developers, industry or research organisations to perform Research and Development (R&D). They will be able to respond to the call for tenders launched by consortia of procurers funded under this topic.
+
+Proposals under this topic should support the development of innovative solutions, tools and models to enhance surveillance, prediction, prevention, risk management and diagnosis (e.g. testing), supporting the adaptation, resilience, and preparedness of healthcare systems and populations to climatic and climate-related environmental health risks.
+
+More specifically proposals can support any of the areas listed below:
+- Geospatial technologies and decision-support frameworks that help local authorities and healthcare providers track at “high resolution” and better manage direct and indirect health risks related to climate change.
+- Real-time risk surveillance and early-warning technologies and monitoring tools that provide critical information for timely decision-making and responses related to the health risks of climate change.
+- Technologies and solutions that facilitate the transition to climate-resilient healthcare facilities and services. Activities targeting the general infrastructure (e.g. ventilation, construction or refurbishment) are out of scope.
+- Technologies, tools, procedures and solutions for health risk management, prevention and resilience, enhancing strategies and interventions for health adaptation to climate change in communities and occupational settings.
+- Innovative tools reducing risk and exposure to climate related environmental factors that exacerbate health risks.
+
+This topic considers tools and technologies that could be developed and tested to support adaptation at both the community and healthcare system levels[1]. This approach would comprehensively address the needs of health authorities and those of local authorities and public organisations involved in risk management. Consortium composition could include diverse stakeholders such as hospitals, primary healthcare providers, domestic care services, municipalities, civil protection entities and government agencies. The focus can extend beyond climate variables to include other related environmental and ecological factors (for example air pollution) that interact with climate change and impact public health.
+
+Proposals are encouraged to consider, where relevant, the data, expertise and services offered by European research infrastructures[2] in the environment, climate and health domain.
+
+Continuous dialogue between demand and supply side is required for the success of PCPs, therefore the effective involvement of end users should be considered in the proposal.
+
+Involvement of procurement decision makers is needed to ensure that end solution(s) are adopted by healthcare systems and/or local authorities and public organisations increasing the societal impact of the related research activities. Therefore, procurers should declare in the proposal their interest to purchase at least one solution resulting from the PCP in case the PCP delivers successful solutions and indicate whether they will i) procure the solution(s) as part of the PCP or ii) in a separate follow-up procurement after the PCP. In the first case, procurers can implement the project as a fast-track PCP (see section H of the General Annexes of this Work Programme for further details) and foresee the budget to purchase at least one solution during the PCP. In the second case, the procurers should include in the proposal a deliverable that prepares the follow-up procurement to purchase successful solution(s) after the PCP.
+
+This topic is co-financed by the EU Mission on Adaptation to climate change[3] and supports the follow up to the 2023 Communication on the Missions[4]. Projects are encouraged to channel their activities through the Mission Implementation Platform[5] and the Mission’s Community of Practice[6].
+
+[1] For digital technologies concerned, appropriate measures for the security of the communications between the intended parties should be considered, in particular based on the use of post-quantum cryptography.
+
+[2] The catalogue of European Strategy Forum on Research Infrastructures (ESFRI) research infrastructures portfolio can be browsed on the ESFRI website: https://ri-portfolio.esfri.eu
+
+[3] https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe/adaptation-climate-change_en
+
+[4] https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023DC0457&qid=1693304388860
+
+[5] Initially established by MIP4Adapt (https://climate-adapt.eea.europa.eu/en/mission/the-mission/about-mip4adapt, https://fedarene.org/project/mip4adapt) and extended under the contract CINEA/2025/OP/0014.
+
+[6] https://climate-adapt.eea.europa.eu/en/mission/community-of-practice

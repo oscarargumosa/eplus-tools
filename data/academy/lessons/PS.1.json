@@ -1,0 +1,58 @@
+{
+  "id": "PS.1",
+  "code": "Part B · PS.1",
+  "module": "EACEA",
+  "moduleTitle": "Resumen del proyecto",
+  "bloque": "D — Anatomía del formulario",
+  "title": "Project Summary: el abstract que engancha",
+  "subtitle": "Cómo escribir el resumen que el evaluador lee primero: contexto, objetivos, actividades, resultados e impacto en pocas líneas y dentro del límite de caracteres.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B Resumen (Project Summary / Abstract Part A)",
+    "Criterio": "Resumen (Part A) — no puntúa solo, pero condiciona la primera impresión de todo el formulario",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Dejas el resumen para el final, cansado, y lo rellenas de cualquier manera con frases sobrantes de otras secciones. Pero es lo PRIMERO que lee el evaluador y le da la primera impresión de todo tu proyecto.",
+    "comprender": "Que el Project Summary (que se toma del Abstract de la Part A) es un escaparate: en pocas líneas tiene que contar el proyecto entero (problema, objetivos, actividades, resultados e impacto) de forma que el evaluador entienda de qué va antes de leer una sola página de detalle.",
+    "objetivo": "Escribir un abstract que enganche dentro del límite de caracteres, con una estructura fija (contexto-problema → objetivos → actividades → resultados → impacto) que el evaluador pueda escanear en 30 segundos.",
+    "confusion": "Creer que el resumen es \"de relleno\" o que se redacta libre. En realidad tiene estructura, límite de caracteres y se publica si el proyecto se aprueba: es tu carta de presentación pública.",
+    "importa": "Porque marca la primera impresión y el marco mental con el que el evaluador lee el resto. Un resumen confuso predispone en contra; uno claro hace que todo lo demás se entienda mejor."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El formulario te pide un <b>resumen del proyecto</b> (<em>Project Summary</em>). En las acciones centralizadas EACEA este resumen se toma del <b>Abstract</b> que rellenaste en la <b>Part A</b> del formulario, y se reutiliza como cabecera de la Part B.</p><div class=\"callout callout-key\"><b>Lo que pide, en una frase:</b> describe en pocas líneas <em>de qué va tu proyecto</em> — qué problema aborda, qué objetivos persigue, qué vas a hacer, qué resultados producirás y qué impacto tendrá. Todo dentro de un <b>límite de caracteres</b> cerrado.</div><p>Tres cosas que conviene saber desde el principio:</p><ul class=\"bullets\"><li>Es <b>lo primero que lee el evaluador</b>. Antes de entrar en Relevance, partnership o presupuesto, lee tu resumen y se hace una idea mental de tu proyecto.</li><li>Tiene <b>límite de caracteres</b> (suele rondar los <b>2.000 caracteres</b>; comprueba siempre el límite exacto que muestra tu formulario). No es un campo libre: cabe lo justo.</li><li>Si el proyecto se aprueba, este resumen se <b>publica</b> en la plataforma de resultados de Erasmus+. Es texto público, no una nota interna.</li></ul>"
+    },
+    {
+      "id": "como-responder",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El resumen no tiene una rúbrica propia con puntos, pero <b>condiciona cómo se lee todo lo demás</b>. El evaluador llega cansado, con muchas propuestas que revisar, y decide en segundos si tu proyecto \"se entiende\" o \"está confuso\". Tu trabajo es que lo entienda <b>sin esfuerzo</b>.</p><p>La forma más segura de lograrlo es seguir una <b>estructura fija</b> de cinco bloques, en este orden:</p><ol class=\"obj\"><li><b>Contexto y problema</b> — ¿qué reto o necesidad real existe? Una o dos frases que sitúen al evaluador. Sin esto, todo lo demás flota.</li><li><b>Objetivos</b> — ¿qué quieres conseguir? El objetivo general y, si cabe, los 2-3 específicos.</li><li><b>Actividades</b> — ¿qué vais a hacer concretamente? Las líneas de trabajo principales, no la lista completa.</li><li><b>Resultados</b> — ¿qué producirás de tangible? Los entregables clave (una guía, una herramienta, formaciones, un curso…).</li><li><b>Impacto</b> — ¿qué cambia y para quién? A quién beneficia y qué huella deja más allá del proyecto.</li></ol><div class=\"callout callout-good\"><b>Lenguaje de evaluador:</b> escribe en términos de <em>evidencia y concreción</em>, no de promesas vagas. \"Formaremos a 60 jóvenes trabajadores de 4 países\" comunica más que \"contribuiremos a mejorar las competencias del sector juvenil europeo\".</div><p>Tres reglas de oro de redacción:</p><ul class=\"bullets\"><li><b>Frases cortas.</b> Un resumen no es el sitio para subordinadas de cuatro líneas. Sujeto-verbo-objeto.</li><li><b>Cifras concretas.</b> Número de socios, de participantes, de países, de resultados. Las cifras dan credibilidad y hacen escaneable el texto.</li><li><b>Coherencia total</b> con el resto del formulario. Si el resumen dice \"3 objetivos\" y la sección 1.2 lista 4, pierdes confianza desde la primera línea.</li></ul>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Proyecto inventado pero plausible — una <b>KA220-YOU</b> sobre competencias digitales en el trabajo con jóvenes. Fíjate cómo cada frase ocupa uno de los cinco bloques:</p><div class=\"callout callout-good\"><p><b>[Contexto-problema]</b> Las organizaciones juveniles europeas se enfrentan a una brecha digital creciente: muchos profesionales del trabajo con jóvenes carecen de las competencias para usar herramientas digitales en su práctica diaria, lo que limita su capacidad de llegar a los jóvenes donde están.</p><p><b>[Objetivos]</b> El proyecto DIGI-YOUTH busca fortalecer las competencias digitales de los profesionales del sector juvenil en 4 países. Sus objetivos específicos son: (1) diseñar un marco de competencias digitales adaptado al trabajo con jóvenes; (2) formar a 60 trabajadores juveniles; (3) crear recursos abiertos reutilizables.</p><p><b>[Actividades]</b> Durante 24 meses, el consorcio elaborará un marco de competencias, desarrollará un curso modular y pilotará la formación con dos talleres internacionales y sesiones locales en cada país socio.</p><p><b>[Resultados]</b> Los principales resultados serán un marco de competencias digitales, un curso abierto (OER) con 6 módulos y una guía práctica para organizaciones.</p><p><b>[Impacto]</b> Al menos 60 profesionales mejorarán sus competencias y, a través de ellos, más de 250 jóvenes accederán a una intervención más actual. Los recursos abiertos permitirán que otras organizaciones de toda la UE repliquen el modelo.</p></div><p>Observa: cabe en torno a los 2.000 caracteres, no tiene relleno, lleva cifras (4 países, 60, 250, 6 módulos, 24 meses) y se lee de un tirón. El evaluador termina sabiendo exactamente de qué va el proyecto.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El resumen es de relleno, lo dejo para el final.»</b> → Es lo primero que lee el evaluador y fija la primera impresión de todo el formulario. Trátalo como el escaparate, no como la trastienda.</li><li><span class=\"err-x\">✗</span> <b>«Copio frases sueltas de otras secciones.»</b> → Sale un texto deshilachado. Reescríbelo como una pieza completa con principio (problema) y final (impacto).</li><li><span class=\"err-x\">✗</span> <b>«Cuanto más genérico y ambicioso, mejor.»</b> → Las generalidades (\"mejorar Europa\") no comunican nada. Concreta con cifras y resultados tangibles.</li><li><span class=\"err-x\">✗</span> <b>«Me extiendo todo lo que necesite.»</b> → Hay límite de caracteres. Si te pasas, el formulario te corta; prioriza los cinco bloques esenciales.</li><li><span class=\"err-x\">✗</span> <b>«Es un campo interno, da igual cómo quede.»</b> → Si se aprueba, este resumen se publica en la plataforma de resultados de Erasmus+. Es texto público.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B oficial (EACEA)</b></td><td>El campo Project Summary / Abstract y su vínculo con la Part A; el límite de caracteres aplicable.</td></tr><tr><td><b>kb-0095</b> Guide for Experts (rúbrica del evaluador)</td><td>Cómo lee el evaluador y por qué la claridad inicial condiciona la valoración del conjunto.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomendaciones de redacción: concreción, cifras, coherencia con el resto del formulario y carácter público del resumen.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- Enhanced understanding of the state of play of the safeguarding of Intangible Cultural Heritage (ICH), in the Context set by the 2003 UNESCO Convention, and an overview of successful methods for documenting and ensuring the transmission of ICH, including digital, audio-visual, and advanced technologies.
+- Recognition of the significance and value of ICH in different social, cultural and economic contexts, and with attention to biodiversity preservation and links between ICH and the natural environment.
+- Empowered communities take ownership and responsibility for safeguarding their ICH, with a focus on how inter-generational transmission is ensured, and on youth involvement and informal education.
+- Innovative policy solutions are available, for the safeguarding of ICH and for mobilising ICH as a resource for fostering social and economic innovation, biodiversity protection and restoration.
+
+## Scope
+
+Intangible cultural heritage (ICH) refers to ‘the practices, representations, expressions, knowledge, skills—as well as the instruments, objects, artefacts and cultural spaces’ that are ‘transmitted from generation to generation’ and are ‘constantly recreated’ – as defined by the United Nations Educational, Scientific and Cultural Organisation (UNESCO) Convention for the Safeguarding of the Intangible Cultural Heritage (ICH Convention)[1]. ICH is an essential part of a community's identity and is a vital component of its cultural and biological diversity.
+
+The ICH Convention was adopted in 2003, by 148 countries and it recognizes the importance of ICH as a driving force for social cohesion, cultural diversity, and sustainable development.
+
+However, the nature of ICH, as living heritage, to continually transform and evolve, makes it particularly challenging to keep alive. Therefore, safeguarding ICH encounters very different challenges than the built heritage sector. ICH is rooted in territories and communities and is essential for identity building and maintaining social cohesion and a harmonious relation to the natural environment. It is a source for creativity and innovation, and a critical factor for new competitive scenarios.
+
+Transmission, education and intergenerational dialogue play a key role in this context, and there is an urgent need to research and foster participatory approaches, especially involving oral cultures and transmission. Different case-studies should explore various approaches to the safeguarding of ICH, considering the specific nature of competences, knowledge and cultural practices of creators and knowledge holders, with a focus on intergenerational transmission.
+
+Proposals should contribute to defining the specificities of intangible cultural heritage. Additionally, they could examine and quantify the contribution of ICH to creativity, innovation, cultural and biological diversity, and economic benefits. Proposals should also contribute to the rethinking of cultural policies for the safeguarding of ICH including exploring links and correlations between cultural and biological diversity.
+
+Proposed research projects could address in depth the following research questions:
+- What is the state of play of the safeguarding of ICH in Europe, following the UNESCO 2003 Convention?
+- What are the main threats and challenges to the erosion and loss of ICH in Europe?
+- What are the most effective strategies for securing ICH safeguarding initiatives?
+- How can advanced digital technologies be leveraged for the safeguarding & transmission of ICH?
+- How can ICH provide inspiration for innovative approaches to existing societal challenges (e.g. competitiveness, intergenerational dialogue democratic values, biodiversity protection and restoration [2])
+- What role can community-led initiatives play in safeguarding ICH, and how can communities be supported and empowered to safeguard it?
+
+The role of advanced digital technologies to support ICH safeguarding and transmission should be considered, as appropriately.
+
+The proposals should comprise transdisciplinary scientific collaborations involving, for instance and not exhaustive, heritage and museum studies, cultural anthropology, ethnology, media studies, theatre studies, literary studies, musicology etc. Available results of existing research on intangible cultural heritage should be taken into consideration, while identification of needs for further research in the field should be promoted.
+
+Proposals should build on existing knowledge, activities, networks and platforms, notably the ones funded by the EU, for example paying attention to the future digital tools and platforms provided by the European Collaborative Cloud for Cultural Heritage (ECCCH), and the Common European Data Space for Cultural Heritage.
+
+Furthermore, links should be established and complementarities sought with closely related actions, such as relevant R&I actions funded by Horizon Europe or Horizon 2020. In particular, proposals should establish links to, and where appropriate build on findings from, projects funded under the topics HORIZON-CL2-2025-HERITAGE-02: Innovative approaches to intangible cultural heritage for societal resilience.
+
+[1]  https://ich.unesco.org/en/convention
+
+[2] As defined in the EU Nature Restoration Regulation https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en.

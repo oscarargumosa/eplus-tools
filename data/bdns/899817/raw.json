@@ -1,0 +1,72 @@
+{
+  "id": 1101378,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALICANTE/ALACANT",
+    "nivel3": "AYUNTAMIENTO DE ALICANTE/ALACANT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899817",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A DEPORTISTAS CENTRO DE TECNIFICACIÓN CHESTE (VALENCIA) 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "CONVOCATORIA SUBVENCIONES A DEPORTISTAS CENTRO DE TECNIFICACIÓN CHESTE 2026",
+  "urlBasesReguladoras": "https://www.alicante.es/es/contenidos/presupuesto-general-ayuntamiento-alicante-ejercicio-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el B.O.P.",
+  "textFin": "Quince días naturales a partir del día siguiente de la publicación del extracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438171,
+      "descripcion": "Bases convocatoria Cheste 2026",
+      "nombreFic": "03_BASES_COMPLETAS_FIRMADAS_Cheste_2026.pdf",
+      "long": 347601,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438170,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "07_DECRETO_APROBACIÓN_BASES_Y_CONVOCATORIA_FIRMADO_Cheste_2026.pdf",
+      "long": 193486,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

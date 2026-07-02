@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL4-2024-SPACE-01-73",
+  "ccm2Id": "45704802",
+  "callIdentifier": "HORIZON-CL4-2024-SPACE-01",
+  "callTitle": "",
+  "title": "Space technologies for European non-dependence and competitiveness",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-21",
+  "deadline": "2024-02-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Space Segment\",\"EEE Component technologies (Magnetic component inc\",\"Optical engineering, photonics, lasers\",\"Optoelectronics\",\"RF Payload and Systems\",\"Digital Agenda\",\"Lasers and laser optics\",\"Telecommunications\",\"Satellite communication payload and systems\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-SPACE-01-73.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.469Z"
+}

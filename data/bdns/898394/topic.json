@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "898394",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE JUVENTUD E INFANCIA / DIRECCIÓN GENERAL DE DERECHOS DE LA INFANCIA Y DE LA ADOLESCENCIA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "RESOLUCIÓN DE 7 DE ABRIL DE 2026, DE LA SECRETARÍA DE ESTADO DE JUVENTUD E INFANCIA, POR LA QUE SE CONVOCA EL PREMIO NACIONAL DEL JUGUETE CORRESPONDIENTE AL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "La Sede del Ministerio de Juventud e Infancia.",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898394",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2025/07/23/pjc810",
+  "text_inicio": "Al día siguiente de su publicación en BOE. ",
+  "text_fin": "Un mes a partir del día siguiente a la publicación del extracto. ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208664,
+      "titulo": "Extracto de la Resolución de 7 de abril de 2026, de la Secretaría de Estado de Juventud e Infancia, por la que se convoca el Premio Nacional del Juguete correspondiente al año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Personas físicas; personas jurídicas; agrupaciones de personas físicas o jurídicas; comunidades de bienes; cualquier otro tipo de unidad económica o patrimonio separado que, aun careciendo de personalidad jurídica, haya llevado a cabo actividades que puedan motivar la concesión del Premio.</p><p>Segundo. Objeto:</p><p>La finalidad del premio es contribuir a la promoción de las industrias culturales y a la promoción y defensa de los derechos y la diversidad de la infancia y la adolescencia.</p><p>Tercero. Bases reguladoras:</p><p>Orden PJC/810/2025, de 23 de julio, por la que se regulan las bases del Premio Nacional del Juguete y por la que se modifica la Orden de 22 de junio de 1995, por la que se regulan los Premios Nacionales del Ministerio de Cultura, publicada en «BOE» núm. 178, de 25 de julio de 2025.</p><p>Cuarto. Cuantía:</p><p>La dotación económica del premio será de treinta mil euros (30.000,00 €) de forma única.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>El plazo para la presentación de las candidaturas y la documentación necesaria será de un mes a contar a partir del día siguiente a la publicación de este extracto en el «Boletín Oficial del Estado».</p><p>Sexto. Otros datos:</p><p>La documentación técnica que deberá acompañar a la solicitud en todo caso incluirá:</p><p>a) Memoria justificativa con una explicación sucinta de: materiales empleados en la fabricación del juguete o juego y embalaje o empaquetado; creatividad del juguete o juego; requisitos de igualdad y no discriminación; valores de inclusión y cultura de paz; carácter pedagógico del juguete o juego; adaptabilidad y accesibilidad.</p><p>b) Ejemplar del juguete o juego.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11646",
+      "cve": "BOE-B-2026-11646",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.558Z"
+}

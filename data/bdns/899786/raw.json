@@ -1,0 +1,64 @@
+{
+  "id": 1101347,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE TERUEL",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE TERUEL"
+  },
+  "sedeElectronica": "https://dpteruel.sedelectronica.es",
+  "codigoBDNS": "899786",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 120000,
+  "mrr": false,
+  "descripcion": "APROBACIÓN CONVOCATORIA SUBVENCIONES PARA LA ORGANIZACIÓN DE FESTIVALES TURÍSTICOS PROVINCIALES ORGANIZADOS POR ASOCIACIONES CULTURALES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza general de subvenciones por la que se aprueban las Bases Reguladoras para la concesión de subvenciones por la Diputación Provincial de Teruel -BOPTe nº102, de 29/5/2024",
+  "urlBasesReguladoras": "https://236ws.dpteruel.es/estatico/boletines/2024/29mayo.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-05-21",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438055,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1393 aprobación Convocatoria subvenciones Festivales turisticos provinciales 2026.pdf",
+      "long": 723520,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

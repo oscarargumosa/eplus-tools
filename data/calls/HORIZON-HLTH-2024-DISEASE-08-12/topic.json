@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-HLTH-2024-DISEASE-08-12",
+  "ccm2Id": "45701712",
+  "callIdentifier": "HORIZON-HLTH-2024-DISEASE-08",
+  "callTitle": "",
+  "title": "Pandemic preparedness and response: Maintaining the European partnership for pandemic preparedness",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-26",
+  "deadline": "2024-04-11",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Protozoa\",\"Preparedness\",\"Virulence\",\"Viral Haemorrhagic Fevers\",\"Social sciences and humanities\",\"Pathogen agents\",\"Risk factors\",\"Clinical trials\",\"SARS\",\"Transmission\",\"Smallpox\",\"Registries\",\"Cohort studies\",\"Viruses\",\"West Nile\",\"Emergent diseases\",\"Influenza\",\"Bacteria\",\"Crimean Congo Haemorrhagic Fever\",\"Disease control\",\"Chikingunya\",\"Emerging Epidemics\",\"Surveillance\",\"Risk assessment\",\"Hepatitis\",\"Vector control\",\"Dengue\",\"Public health policies\",\"Transmission mechanism\",\"Severe acute respiratory syndrome\",\"Partnership\",\"Pandemic preparedness\",\"Medical Countermeasures\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-DISEASE-08-12.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.505Z"
+}

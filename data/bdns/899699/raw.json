@@ -1,0 +1,92 @@
+{
+  "id": 1101260,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URRETXU",
+    "nivel3": "AYUNTAMIENTO DE URRETXU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899699",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Subvenciones a quienes pongan en euskera la aplicación de facturación TicketBai en los establecimientos de Urretxu",
+  "descripcionLeng": "Urretxuko establezimenduetan “TicketBai” fakturazio aplikazioa euskaraz jartzen dutenei dirulaguntzak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Subvenciones a quienes pongan en euskera la aplicación de facturación TicketBai en los establecimientos de Urretxu",
+  "urlBasesReguladoras": "https://www.urretxu.eus/eu/component/rsfiles/download-file/files?path=i_subvenciones/2026-DirulaguntzenOinarriak/2026-DL25-TicketBai.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": "A partir de la publicación en el Boletín Oficial de Gipuzkoa",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437810,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Oinarriak DL_TICKETBAI 2026.pdf",
+      "long": 445909,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437812,
+      "descripcion": "BASES GENERALES",
+      "nombreFic": "OINARRI OROKORRAK 2026.pdf",
+      "long": 380284,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437811,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Oinarriak DL_TICKETBAI 2026.pdf",
+      "long": 445909,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209277,
+      "titulo": "Subvenciones a quienes pongan en euskera la aplicación de facturación TicketBai en los establecimientos de Urretxu",
+      "tituloLeng": "Urretxuko establezimenduetan “TicketBai” fakturazio aplikazioa euskaraz jartzen dutenei dirulaguntzak",
+      "texto": "<p>1.Objeto de la subvención.</p><p>El objeto de esta convocatoria: impulsar la adaptación del software en euskera en la aplicación de facturación «TicketBAI», con el fin de poder emitir tickets de compra en euskera.</p><p>2.Importe de la subvención.</p><p>El importe máximo de la suma de las subvenciones a conceder asciende a la cantidad de 2.000 €, con cargo a la partida1.6000.471.335.00.02.26 (865)</p><p> </p><p>3. Plazo de presentación de solicitudes. El plazo de presentación de solicitudes será hasta el 31 de octubre y desde el día siguiente a la publicación del anuncio en el BOLETÍN OFICIAL de Gipuzkoa. La información detallada se encuentra a disposición de las personas o colectivos interesados en la siguiente páginas web: Ayuntamiento: https://www.urretxu.eus/es/subvenciones</p>",
+      "textoLeng": "<p>1.Dirulaguntzaren xedea.</p><p>Deialdi honen xedea da: «TicketBAI» fakturazio-aplikazioak erosketa- tiketak euskaraz igorri ahal izan ditzan softwarea egokitzea bultzatu nahi da.</p><p>2. Dirulaguntzaren zenbatekoa.</p><p>Emango diren dirulaguntzen batura, gehienez ere 2.000 eurokoa izango da 1.6000.471.335.00.02.26 (865) kontu-sailaren kontura.</p><p>3. Eskaerak aurkezteko epea.</p><p>Eskaerak aurkezteko epea  urriaren 31arte izango da,  deialdiaren iragarkia Gipuzkoako ALDIZKARI OFIZIALEAN argitaratu eta biharamunetik hasita. Pertsona edo kolektibo interesdunek ondorengo web orrian aurkitu dezakete informazio zehatza: https://www.urretxu.eus/eu/dirulaguntzak</p>",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/30/c2602533.pdf",
+      "cve": "GAO-I-2026-02533",
+      "desDiarioOficial": "B.O. DE GIPUZKOA",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

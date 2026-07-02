@@ -1,0 +1,76 @@
+{
+  "id": 1104563,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "sede.uco.es",
+  "codigoBDNS": "903002",
+  "fechaRecepcion": "2026-05-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Resolución 30/04/2026, del Vicerrectorado de Estudiantes y Cultura de la UCO, por la que se convocan ayudas de la Junta de Andalucía para la adquisición de niveles de competencia lingüística en estudios oficiales de Grado para el curso 2025/2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo de C.G., de 28/05/2025, por el que se aprueba la modificación del Reglamento 39/2020, sobre las Bases Reguladoras de las ayudas para la adquisición de niveles de competencia lingüística en estudios oficiales de Grado.",
+  "urlBasesReguladoras": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2025/00766",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-06",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "06 de mayo de 2026",
+  "textFin": "hasta el día 15 de octubre de 2026 incluido",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446852,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Conv Ayudas competencia lingüística Fda.pdf",
+      "long": 1068926,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210884,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00554",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

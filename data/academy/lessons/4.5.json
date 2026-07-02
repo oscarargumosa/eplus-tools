@@ -1,0 +1,58 @@
+{
+  "id": "4.5",
+  "code": "Part B · 4.5",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.5 Eventos, reuniones y movilidad",
+  "subtitle": "Cómo describir cada evento, reunión o movilidad (tipo, ubicación, asistentes) de forma que el evaluador vea su necesidad y su coherencia con los objetivos.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.5",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Tienes que listar reuniones, eventos y movilidades con fechas, lugares y número de personas, y temes que parezca \"turismo subvencionado\" o un listado mecánico sin alma.",
+    "comprender": "Que cada evento debe leerse como una pieza necesaria del proyecto: existe porque un objetivo o una tarea lo requiere, no porque toque viajar.",
+    "objetivo": "Saber describir tipo de evento, ubicación y número de asistentes de modo que su necesidad y su conexión con los objetivos sea evidente para el evaluador.",
+    "confusion": "Creer que cuantas más reuniones presenciales pongas, mejor. No: cada desplazamiento debe justificarse; lo que sobra parece gasto injustificado.",
+    "importa": "Porque los eventos son lo más visible y lo más fácil de cuestionar. Una movilidad sin razón clara es la grieta por la que el evaluador empieza a dudar de todo el plan."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.5.</b> El listado de <b>eventos, reuniones y movilidades</b> del proyecto, indicando por cada uno: el <b>tipo</b> (reunión de gestión, evento de formación, evento multiplicador, movilidad de participantes…), la <b>ubicación</b> (país/ciudad o socio anfitrión), el <b>número de personas asistentes</b> y, según el formulario, fechas aproximadas o el WP al que pertenece.</div><p>Aquí entran tres familias distintas que conviene no mezclar:</p><ul class=\"bullets\"><li><b>Reuniones de gestión</b> (transnacionales): el consorcio se junta para coordinar. Suelen vivir en el WP1.</li><li><b>Eventos de proyecto</b>: formaciones, eventos multiplicadores, jornadas de difusión. Viven en los WP de implementación.</li><li><b>Movilidades</b>: desplazamientos de participantes (aprendices, formadores) cuando la acción los contempla.</li></ul>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La pregunta que el evaluador se hace ante cada línea es: <b>\"¿esto por qué existe?\"</b>. Tu trabajo es que la respuesta sea obvia.</p><ol class=\"obj\"><li><b>Ata cada evento a un objetivo o tarea.</b> No basta \"reunión en Lisboa\": di \"reunión de arranque para alinear la metodología del WP2\". El para qué justifica el viaje.</li><li><b>Dimensiona los asistentes con criterio.</b> ¿2 personas por socio en una reunión de gestión? Razonable. ¿15 personas volando a un kick-off? Sospechoso. El número debe encajar con la finalidad.</li><li><b>Reparte ubicaciones con lógica, no por turno.</b> Que las sedes tengan sentido (cerca del público objetivo, donde está el piloto), no \"rotamos para que todos viajen\".</li><li><b>Equilibra presencial y online.</b> Demuestra que no abusas de desplazamientos: las reuniones de seguimiento pueden ser virtuales; lo presencial se reserva para lo que de verdad lo necesita (kick-off, eventos con público).</li><li><b>Coherencia con el calendario.</b> El evento de difusión va al final; el kick-off, al principio. Esto enlaza con tu Gantt (4.6).</li></ol><div class=\"callout callout-good\"><b>Test rápido:</b> tapa la columna \"ubicación\" y lee solo \"tipo + finalidad + asistentes\". Si cada línea se justifica sola, vas bien. Si alguna solo se sostiene por \"toca viajar\", recórtala.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Un listado de eventos donde cada fila se defiende sola:</p><table class=\"cmp\"><thead><tr><th>Tipo</th><th>Ubicación</th><th>Asistentes</th><th>Por qué (necesidad)</th></tr></thead><tbody><tr><td>Reunión de arranque (kick-off)</td><td>Lisboa (COO)</td><td>8 (2 por socio)</td><td>Alinear metodología y plan de calidad al inicio (WP1).</td></tr><tr><td>Reunión de seguimiento</td><td><em>Online</em></td><td>8</td><td>Control de avance a medio proyecto; no requiere viaje.</td></tr><tr><td>Evento de formación</td><td>Cracovia (BEN2)</td><td>20 formadores</td><td>Capacitar a los formadores que pilotarán el currículo (WP3→WP4).</td></tr><tr><td>Evento multiplicador</td><td>Cada país socio</td><td>30 por sede</td><td>Difundir resultados al público objetivo local (WP5).</td></tr><tr><td>Reunión de cierre</td><td>Lisboa (COO)</td><td>8</td><td>Evaluar resultados y acordar sostenibilidad (WP1).</td></tr></tbody></table><div class=\"callout callout-key\">Observa el patrón: <b>cada evento nombra su WP y su finalidad</b>, hay una mezcla sana de presencial y online, y los números de asistentes encajan con el propósito (8 para coordinar, 20–30 cuando hay público). Eso es lo que convierte una lista en un plan creíble.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Cuantas más reuniones presenciales, mejor.»</b> → Al revés: cada viaje hay que justificarlo. El exceso parece gasto injustificado y \"turismo\".</li><li><span class=\"err-x\">✗</span> <b>«Reunión en [ciudad]» sin decir para qué.»</b> → Una ubicación no es una razón. Cada evento necesita finalidad y vínculo con un objetivo o tarea.</li><li><span class=\"err-x\">✗</span> <b>«Mando 15 personas al kick-off.»</b> → Número desproporcionado para coordinar. Los asistentes deben encajar con la función del evento.</li><li><span class=\"err-x\">✗</span> <b>«Todas las reuniones presenciales.»</b> → Pierdes la oportunidad de demostrar eficiencia. El seguimiento rutinario puede ser online.</li><li><span class=\"err-x\">✗</span> <b>«El evento de difusión va al principio.»</b> → Incoherente con el flujo: no difundes lo que aún no has producido. Debe encajar con tu Gantt.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.5</td><td>Pide el listado de eventos/reuniones/movilidad con tipo, ubicación y nº de asistentes.</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Estructura del listado de eventos y su asignación a work packages.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>\"Quality of design and implementation\": valora que los eventos sean necesarios, proporcionados y coherentes con los objetivos.</td></tr></tbody></table>"
+    }
+  ]
+}

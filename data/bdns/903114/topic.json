@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903114",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE EDUCACION",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Ayudas a Ayuntamientos, SSB o Mancomunidades de Servicios Sociales para contratación de promotor/a escolar o mediador/a sociocultural que intervenga en los proyectos de inclusión socioeducativa que se desarrollen en centros públicos. Curso 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903114",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bon.navarra.es/es/anuncio/-/texto/2025/260/0",
+  "text_inicio": "A partir de la fecha de publicación",
+  "text_fin": "15 días hábiles siguientes a la publicación en BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.048Z"
+}

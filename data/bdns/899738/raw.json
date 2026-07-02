@@ -1,0 +1,143 @@
+{
+  "id": 1101299,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA E INTERIOR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899738",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 85000,
+  "mrr": false,
+  "descripcion": "FEAGA AYUDAS A LA PRODUCCIÓN Y COMERCIALIZACIÓN DE LA MIEL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Fabricación de bebidas",
+      "codigo": "11"
+    },
+    {
+      "descripcion": "Industria alimentaria",
+      "codigo": "10"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN 888/2023, DE LA CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA E INTERIOR POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS DE LAS AYUDAS PARA LA MEJORA DE LAS CONDICIONES GENERALES DE PRODUCCIÓN Y COMERCIALIZACIÓN DE LOS PRODUCTOS APÍCOLAS EN LA COMUNIDAD",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2023/10/19/BOCM-20231019-24.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-28",
+  "fechaFinSolicitud": "2026-05-27",
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "textFin": "UN MES DESDE EL INICIO DEL PLAZO DE PRESENTACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAGA - FONDO EUROPEO AGRÍCOLA DE GARANTÍA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443317,
+      "descripcion": "Anexos  2232FO6_26 Cuadro justificante de gastos",
+      "nombreFic": "Anexos  2232FO6_26 Cuadro justificante de gastos.pdf",
+      "long": 101868,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443315,
+      "descripcion": "Anexos  2232FO4_26 OTORGAMIENTO DE LA REPRESENTACIÓN",
+      "nombreFic": "Anexos  2232FO4_26 OTORGAMIENTO DE LA REPRESENTACIÓN.pdf",
+      "long": 46052,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443318,
+      "descripcion": "Anexos  2232FR1_26 Solicitud de pago",
+      "nombreFic": "Anexos  2232FR1_26 Solicitud de pago.pdf",
+      "long": 198930,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443314,
+      "descripcion": "Anexos  2232FO1_26 ANEXO 1: Información técnica, económica y a efectos de transparencia",
+      "nombreFic": "Anexos  2232FO1_26 ANEXO 1: Información técnica, económica y a efectos de transparencia.pdf",
+      "long": 381225,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443319,
+      "descripcion": "Otros documentos  Extracto de la Orden 1365/2026 publicado",
+      "nombreFic": "Otros documentos  Extracto de la Orden 1365/2026 publicado.pdf",
+      "long": 90917,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443316,
+      "descripcion": "Anexos  2232FO5_26 ALIMENTACIÓN SUPLEMENTARIA",
+      "nombreFic": "Anexos  2232FO5_26 ALIMENTACIÓN SUPLEMENTARIA.pdf",
+      "long": 101865,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443312,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  ORDEN 1365/2026 anonimizada.pdf",
+      "long": 4989122,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1443313,
+      "descripcion": "Modelo de Solicitud  Anexo 2232F1_26",
+      "nombreFic": "Modelo de Solicitud  Anexo 2232F1_26.pdf",
+      "long": 140921,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209303,
+      "titulo": "EXTRACTO de la Orden 1365/2026 de la Consejería de Medio Ambiente, Agricultura e Interior, por la que se convocan para 2026 las ayudas para la mejora de las condiciones generales de producción y comercialización de los productos apícolas en la Comunidad de Madrid cofinanciadas por el Fondo Europeo Agrícola de Garantía (FEAGA) y por Administración General del Estado.",
+      "tituloLeng": null,
+      "texto": "<p>BDNS ():</p><p>De conformidad con lo previsto en los artículos 17.3.b) y 20.8.a) de la Ley 38/2003, de 17</p><p>de noviembre, General de Subvenciones, se publica el Extracto de Convocatoria cuyo texto</p><p>completo puede consultarse en la BDNS</p><p>(https://www.pap.hacienda.gob.es/bdnstrans/GE/es/convocatorias).</p><p>Primero. Beneficiarios.</p><p></p><p>Las personas físicas, jurídicas o entes sin personalidad jurídica, titulares de</p><p>explotaciones apícolas ubicadas en la Comunidad de Madrid, así como las agrupaciones de</p><p>apicultores, incluyendo cooperativas apícolas y organizaciones representativas, con</p><p>personalidad jurídica propia, integradas en su mayoría por apicultores ubicados en la</p><p>Comunidad de Madrid.</p><p></p><p>Segundo. Objeto.</p><p></p><p>Estas ayudas se destinan a la realización de las acciones e inversiones materiales e</p><p>inmateriales del sector apícola contempladas del Real Decreto 906/2022, de 25 de octubre</p><p>por el que se regula la Intervención Sectorial Apícola en el marco del Plan Estratégico de</p><p>la Política Agrícola Común, en la Comunidad de Madrid.</p><p></p><p>Las acciones e inversiones estarán incluidos en las siguientes líneas o tipos de</p><p>intervención:</p><p></p><p>-\tServicios de asesoramiento, asistencia técnica, formación, información e intercambio</p><p>de las mejores prácticas para apicultores y organizaciones de apicultores.</p><p>-\tInversiones en activos materiales e inmateriales (lucha contra los invasores,</p><p>Prevención de daños fenómenos climáticos, repoblación, trashumancia, inversiones)</p><p>-\tActuaciones para prestar ayudas a los laboratorios.</p><p>-\tPromoción, comunicación y comercialización destinadas a sensibilizar a los</p><p>consumidores sobre la calidad de los productos.</p><p>-\tActuaciones para aumentar la calidad de los productos apícolas.</p><p>Tercero. Bases reguladoras.</p><p></p><p>La presente convocatoria de ayudas se regula por la Orden 888/2023, de 9 de octubre, de la</p><p>Consejería de Medio Ambiente, Agricultura e Interior por la que se establecen las bases</p><p>reguladoras de las ayudas para la mejora de las condiciones generales de producción y</p><p>comercialización de los productos apícolas en la Comunidad de Madrid cofinanciadas por el</p><p>Fondo Europeo Agrícola de Garantía (FEAGA) y por Administración General del Estado.</p><p></p><p>Cuarto.  Cuantía y financiación de las ayudas.</p><p></p><p>La Comunidad de Madrid efectuará los pagos correspondientes con cargo al Programa 411A,</p><p>Partida 77303, de los Presupuestos Generales de la Comunidad de Madrid para 2026, por un</p><p>importe de 85.000 euros, distribuyéndose por solicitudes y por las diferentes líneas de</p><p>ayuda hasta agotar el crédito disponible.</p><p>Estas ayudas podrán ser cofinanciadas en un 50 % por FEAGA, y en un 25% por la</p><p>Administración General del Estado, Ministerio de Agricultura, Pesca y Alimentación (MAPA).</p><p>Quinto.  Plazo de presentación de solicitudes.</p><p></p><p>Un mes contado a partir del día siguiente a la publicación de este extracto en el Boletín</p><p>Oficial de la Comunidad de Madrid.</p><p>Sexto. Información Complementaria.</p><p>En caso de presentación de solicitudes por un importe de ayuda superior al crédito</p><p>inicialmente aprobado, se podrá disponer de una cuantía adicional de 42.500 euros sin</p><p>necesidad de nueva convocatoria, de conformidad con lo previsto en el artículo 58.2 del</p><p>Real Decreto 887/2006, de 21 de julio y, en su caso, en la Ley de Presupuestos Generales</p><p>de la Comunidad de Madrid  vigente para 2025, quedando condicionada la efectividad de la</p><p>cuantía adicional a la declaración de disponibilidad del crédito. La publicidad de los</p><p>créditos adicionales disponibles no implicará la apertura de un nuevo plazo de</p><p>presentación de solicitudes.</p><p></p>",
+      "textoLeng": null,
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/04/27/BOCM-20260427-18.PDF",
+      "cve": null,
+      "desDiarioOficial": "BOCM. B.O. DE LA COMUNIDAD DE MADRID",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

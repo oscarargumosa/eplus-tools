@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-JU-GH-EDCTP3-2023-01-01",
+  "ccm2Id": "46015116",
+  "callIdentifier": "HORIZON-JU-GH-EDCTP3-2023-01",
+  "callTitle": "",
+  "title": "Global Health EDCTP3 Training Networks - Clinical Research Fellowships",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-10",
+  "deadline": "2023-06-29",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Infectious diseases\",\"Social sciences and humanities\",\"Clinical research\",\"Public health\",\"International Cooperation\",\"Clinical trials\",\"Societal Engagement\",\"Global health\",\"Africa\",\"clinical research capacity\",\"clinical trials\",\"edctp\",\"Africa\",\"sub-Saharan Africa\",\"clinical research\",\"edctp3\",\"health\",\"training\",\"neglected infectious diseases\",\"global health\",\"infectious diseases\",\"fellowships\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "EC-WORLD",
+    "SocietalEngagement",
+    "Africa"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-JU-GH-EDCTP3-2023-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.358Z"
+}

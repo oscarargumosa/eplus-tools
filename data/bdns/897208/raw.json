@@ -1,0 +1,76 @@
+{
+  "id": 1098769,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALMAS DE GRAN CANARIA, LAS",
+    "nivel3": "AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA"
+  },
+  "sedeElectronica": "GESTOR DE SUBVENCIONES DEL IMD: https://imdsubvenciones.laspalmasgc.es/portal_subvenciones/modules.php?mod=portal&file=index",
+  "codigoBDNS": "897208",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 70000,
+  "mrr": false,
+  "descripcion": "RES 141, 07/04/2026, DE LA PRESIDENCIA DEL IMD, POR LA QUE SE RESUELVE AUTORIZAR EL GASTO, APROBAR LA CONVOCATORIA Y ANEXOS CORRESPONDIENTES A LA CONVOCATORIA DE SUBV DEL IMD, EN REGIMEN DE CC, DESTINADAS A CD QUE PARTICIPEN EN COMP 3ª CATEG NACIONAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES ESPECIFICAS REGULADORAS PARA LA CONCESIÓN Y JUSTIFICACION DE SUBV DEL IMD, EN REGIMEN DE CC, DESTINADAS A CD QUE PARTICIPEN EN COMP 3ª CATEG NACIONAL",
+  "urlBasesReguladoras": "https://deporteslaspalmasgc.com",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACION DE LA CONVOCATORIA EN EL BOP LAS PALMAS",
+  "textFin": "10 DIAS HABILES DESDE EL SIGUIENTE A LA PUBLICACION DE LA CONVOCATORIA EN EL BOP LAS PALMAS",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1430015,
+      "descripcion": "BASES ESPECIFICAS",
+      "nombreFic": "01-3 PUB BBEE SUBV CC 3ª CAT BOP N.º71 13.06.25.pdf",
+      "long": 82276,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1430011,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "12 RESOL 141 FASE A 07.04.26.pdf",
+      "long": 892118,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

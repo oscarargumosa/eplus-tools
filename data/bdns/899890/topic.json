@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "899890",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE TOLEDO / DIPUTACIÓN PROVINCIAL DE TOLEDO",
+  "nuts_codes": [
+    "ES425"
+  ],
+  "nuts_primary": "ES425",
+  "title": "BASES REGULADORAS Y CONVOCATORIA DE SUBVENCIONES PARA EL DESARROLLO DEL PROGRAMA DIPUOCIO 2026.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": "2026-04-23",
+  "deadline": "2026-05-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899890",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.diputoledo.es/global/53/ver_pdf/36599",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto en el B.O.P. de Toledo",
+  "text_fin": "15 días después contados desde el día siguiente de la publiación en el B.O.P. de Toledo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.378Z"
+}

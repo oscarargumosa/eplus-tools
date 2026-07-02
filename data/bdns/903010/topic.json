@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903010",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN FORAL DE BIZKAIA / DIPUTACIÓN FORAL DE BIZKAIA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "DECRETO FORAL 47/2026, de 30 de abril, de la Diputación Foral de Bizkaia por el que se aprueban las bases reguladoras y la convocatoria de becas de artes plásticas y visuales, para el ejercicio 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 61000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903010",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "--",
+  "text_inicio": "Desde el día siguiente a la publicación del decreto foral en el BOB",
+  "text_fin": "Al de 15 días naturales a partir del dia siguiente al de la publicación del decreto foral en el BOB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.988Z"
+}

@@ -1,0 +1,27 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- European industry’s competitiveness, decarbonisation, and strategic autonomy are enhanced through the development and deployment of safe, sustainable, circular and bio-based value chains;
+- improved climate change adaptation and mitigation and overall environmental sustainability, as well as higher resource efficiency, through application of biotechnologies and industrial symbiosis, and recovery of biological materials, water and energy.
+
+## Scope
+
+The projects under this topic are relevant to the EU policies related to the Commission communication on: Building the future with nature: Boosting Biotechnology and Biomanufacturing in the EU, the Life Sciences Strategy, the EU Biotech Act, Clean Industrial Deal and the SME Strategy. It also contributes to the Start-ups and Scale-ups strategy. Synergies with activities under the Circular Bio-based Europe (CBE) Joint Undertaking[1] and New European Bauhaus are strongly encouraged, while taking care to avoid overlaps.
+
+Proposals should address the following activities:
+- develop and deploy/scale-up safe and sustainable, circular and bio-based materials, products, processes and value chains, e.g. including but not limited to the construction, packaging, pulp and paper, textile sectors, or other bio-based consumer products, using upcycled and recycled resources incorporating secondary raw materials with minimal quality loss, aiming at best environmental performance, while increasing the uptake of recycled materials and preventing waste through repair, refurbishment, and reuse, and paying attention to environmental and health risks and trade-offs due to treated or impregnated bio-based materials, where relevant. Bioenergy/biofuels sector is not in scope, but synergies with this sector can be considered while respecting the cascading biomass valorisation principle and aiming at the industrial symbiosis;
+- develop innovative new, or upgraded existing, circular solutions to tackle complex bio-waste streams and create markets for bio-waste materials by transforming them into valuable secondary resources, while fostering urban/rural/coastal industrial symbiosis, providing data and digital tools and promoting a more efficient use of bio-based resources;
+- develop a ‘digital marketplace’, ensuring convergence with the digital technology, tools and applications, to enhance accessibility and traceability of bio-based resources, promoting efficient and sustainable resource management;
+- provide recommendations for the development of bio-based product value chains, based on the identified and analysed needs of stakeholders in terms of national and European regulations and standards, financial incentives, professional trainings, etc.
+
+While the main focus of this topic is not the gaseous carbon conversion (see parallel topic HORIZON-CL6-2027-01-CIRCBIO-08: Biotechnology application for CCU), this technology can be considered as part of the whole value chain approach to increase environmental and economic impact, e.g. as part of the cascading biomass conversion, taking care to avoid overlaps and seek synergies. Synergy and cooperation with the parallel topics HORIZON-CL6-2027-01-CIRCBIO-02: Enhancing ecodesign and circularity of construction products and HORIZON-MISS-2027-03-OCEAN-02: Circularity of seafood supply chain are strongly encouraged.
+
+Proposals are encouraged to build on the knowledge and results of completed and ongoing EU-funded projects. Cooperation between all proposals funded under this topic should also be foreseen, as a specific task, with an allocation of resources, for synergies.
+
+This topic requires the effective contribution of SSH disciplines and involvement of SSH experts in order to produce meaningful and significant effects enhancing the societal impact of the related research activities. This can cover the educational aspect, to facilitate knowledge promotion within different target groups (e.g. students, industry, society). International cooperation is encouraged.
+
+## null
+
+Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
+
+[1]  Such as the topics HORIZON-JU-CBE-2025-IAFlag-03: Circular-by-design fibre-based packaging with improved properties, HORIZON-JU-CBE-2025-IAFlag-01:Urban-industrial symbiosis for bio-waste valorisation, etc.

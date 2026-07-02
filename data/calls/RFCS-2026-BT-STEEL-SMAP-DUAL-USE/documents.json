@@ -1,0 +1,100 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/wp-call/2026/call-fiche_rfcs-2026-bt-steel-smap-dual-use_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5a. Evaluation and award: Submission and evaluation processes",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (RFCS)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/temp-form/af/af_rfcs_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Detailed budget table (RFCS)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/temp-form/af/detailed-budget-table_rfcs_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Ownership control declaration",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/temp-form/af/ownership-control-declaration_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Information on security issues/Security section (HE)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-security-issues-security-section_he_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "RFCS MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/agr-contr/mga_rfcs_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "RFCS Decision 2008/376",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008D0376",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  }
+]

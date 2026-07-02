@@ -1,0 +1,63 @@
+{
+  "id": "M1.3",
+  "code": "M1.3 · Fundamentos",
+  "module": "M1",
+  "moduleTitle": "Fundamentos: ¿Qué es Erasmus+?",
+  "bloque": "A — Fundamentos",
+  "title": "Las 4 prioridades horizontales",
+  "subtitle": "Inclusión, digital, verde y participación: los cuatro hilos que tienen que atravesar cualquier proyecto Erasmus+.",
+  "meta": {
+    "Nivel": "Iniciación",
+    "Duración": "10–15 min",
+    "Idioma": "Español",
+    "Formato": "Lección de fundamentos",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "narration": "Vamos con un tema que suena a requisito aburrido y que, en realidad, puede hacer tu proyecto mucho más fuerte. En algún momento te dirán que tu proyecto tiene que abordar las prioridades horizontales. Y a ti te sonará a burocracia que te cae encima por sorpresa. Tranquilo, que te lo explico en cristiano. Son solo cuatro temas que Europa quiere ver en todos los proyectos. Y la palabra que asusta, horizontal, en el fondo es sencilla: significa que atraviesan todo el proyecto, da igual de qué vaya. Si haces un proyecto de música, de empleo juvenil o de medio ambiente, da lo mismo: estas cuatro prioridades tienen que notarse en él.\n\nPiénsalas como cuatro hilos de colores que deben estar tejidos en la tela de tu proyecto. No son un parche que coses al final; se ven cuando miras la tela entera. Y son cuatro. La primera, inclusión y diversidad: que tu proyecto llegue a personas con menos oportunidades y no deje a nadie fuera. La segunda, transformación digital: usar lo digital para hacer mejor lo que haces. La tercera, el medio ambiente, lo verde: reducir tu impacto y enseñar a cuidar el planeta. Y la cuarta, participación en la vida democrática: fomentar valores comunes, ciudadanía activa, compromiso cívico. Una cosa importante: no tienes que abordar las cuatro con la misma intensidad. Pero ninguna puede estar totalmente ausente, y al menos una debería estar en el centro de tu proyecto.\n\nY ahora lo que de verdad importa, porque la clave no es saberte las definiciones de memoria, sino ver cómo aparece cada una en lo concreto. La inclusión se nota cuando reservas plazas para jóvenes con menos recursos, cuando tus materiales están en lenguaje accesible, cuando eliges un lugar sin barreras o cuidas el equilibrio de género en el equipo. Lo digital aparece cuando tu formación combina sesiones online y presenciales, cuando creas un recurso digital, una web, un curso, o cuando enseñas a tu público a usar herramientas con criterio. Y ojo, lo digital no significa montar una app obligatoriamente; puede ser algo mucho más sencillo. Lo verde se ve cuando priorizas el tren frente al avión, cuando evitas imprimir y vas sin papel, cuando metes contenidos de sostenibilidad o eliges proveedores responsables. Y la participación democrática aparece cuando tus participantes deciden parte del programa, cuando trabajas el pensamiento crítico y los derechos, o cuando conectas a los jóvenes con su comunidad. ¿Te das cuenta? En casi todos los casos no inventas un proyecto nuevo. Tomas lo que ya ibas a hacer y lo enfocas para que la prioridad se note.\n\nY aquí va la advertencia más importante, porque es lo que más se malentiende. Las prioridades no son opcionales y no son una sección aparte. El evaluador no busca un párrafo que diga: cumplimos las prioridades. Busca que estén de verdad en el diseño, en tus actividades, en a quién eliges, en cómo trabajas. La diferencia entre un proyecto flojo y uno fuerte muchas veces es justo esta: el flojo menciona las prioridades; el fuerte las encarna. Te doy una prueba sencilla: si quitas la frase esto es inclusivo y el proyecto deja de ser inclusivo, es que solo lo mencionabas. Y una señal de alarma: si para meter una prioridad tienes que añadir una actividad artificial que no encaja con nada, la estás forzando. Mejor reenfoca algo que ya tienes.\n\nAsí que quédate con esto: las prioridades no se eligen en el vacío, brotan de las necesidades reales de tu contexto. Por eso el siguiente gran paso es aprender a analizar esas necesidades y conectar tu proyecto con un problema de verdad. Pero antes, en la próxima lección, vamos a poner cara a los actores del programa: quién es quién y a quién le presentas tú tu proyecto. Vamos allá.",
+  "frame": {
+    "dolor": "Te dicen que tu proyecto «tiene que abordar las prioridades horizontales» y suena a requisito burocrático que no entiendes y que parece que te cae encima por sorpresa.",
+    "comprender": "Que son solo cuatro temas que la UE quiere ver en TODOS los proyectos, y que no son un anexo: son hilos que deben notarse en lo que ya haces.",
+    "objetivo": "Conocer las cuatro prioridades y, sobre todo, saber cómo aparecen de forma concreta en tu proyecto sin forzarlas.",
+    "confusion": "Creer que son opcionales o que con «mencionarlas» basta. Son obligatorias y el evaluador busca que estén de verdad en el diseño.",
+    "importa": "Porque ignorarlas o tratarlas como relleno te resta puntos. Integrarlas bien, en cambio, hace tu proyecto más fuerte y más alineado con lo que Europa premia."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. ¿Qué significa «horizontal»?",
+      "html": "<p>La palabra asusta, pero es sencilla. «Horizontal» significa que <b>atraviesan todo el proyecto</b>, da igual de qué vaya. No importa si haces un proyecto de música, de empleo juvenil o de medio ambiente: estas cuatro prioridades tienen que <b>notarse</b> en él.</p><p>Piensa en ellas como los <b>cuatro hilos de colores</b> que deben estar tejidos en la tela de tu proyecto. No son un parche que coses al final; se ven cuando miras la tela entera.</p><p>Son cuatro, y son <b>obligatorias para todo proyecto Erasmus+</b>:</p><ul class=\"bullets\"><li><b>Inclusión y diversidad</b></li><li><b>Transformación digital</b></li><li><b>Medio ambiente y lucha contra el cambio climático</b> (el «verde»)</li><li><b>Participación en la vida democrática</b> (valores comunes y compromiso cívico)</li></ul><div class=\"callout callout-key\">No tienes que abordar las cuatro con la misma intensidad. Pero <b>ninguna puede estar totalmente ausente</b>, y al menos una debería estar en el centro de tu proyecto.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Una por una, con ejemplos de TU proyecto",
+      "html": "<p>La clave no es saber la definición de memoria, sino ver <b>cómo aparece cada una en lo concreto</b>. Aquí va cada prioridad con ejemplos prácticos de cómo se nota:</p><p><b>1. Inclusión y diversidad.</b> Que tu proyecto llegue a personas con menos oportunidades y no deje a nadie fuera.<br><em>Cómo aparece:</em> reservas plazas para jóvenes con menos recursos · tus materiales están en lenguaje accesible · eliges un lugar de actividades sin barreras · cuidas el equilibrio de género en el equipo.</p><p><b>2. Transformación digital.</b> Usar lo digital para hacer mejor lo que haces y desarrollar competencias digitales.<br><em>Cómo aparece:</em> tu formación combina sesiones online y presenciales · creas un recurso digital (web, app, curso e-learning) · enseñas a tu público a usar herramientas digitales con criterio.</p><p><b>3. Medio ambiente y verde.</b> Reducir el impacto del proyecto y enseñar a cuidar el planeta.<br><em>Cómo aparece:</em> priorizas viajes en tren frente a avión · evitas imprimir y vas «sin papel» · incorporas contenidos de sostenibilidad · eliges proveedores responsables.</p><p><b>4. Participación democrática.</b> Fomentar valores comunes, ciudadanía activa y compromiso cívico.<br><em>Cómo aparece:</em> tus participantes deciden parte del programa · trabajas pensamiento crítico y derechos · conectas a los jóvenes con su comunidad o instituciones locales.</p><div class=\"callout callout-good\">Fíjate: en casi todos los casos no inventas un proyecto nuevo. <b>Tomas lo que ya ibas a hacer y lo enfocas</b> para que una prioridad se note.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Obligatorias y transversales: qué significa para ti",
+      "html": "<p>Repitámoslo claro porque es lo que más se malentiende: las prioridades <b>no son opcionales</b> y <b>no son una sección aparte</b>. El evaluador no busca un párrafo que diga «cumplimos las prioridades». Busca que estén <b>de verdad en el diseño</b>: en tus actividades, en a quién eliges, en cómo trabajas.</p><p>La diferencia entre un proyecto flojo y uno fuerte muchas veces es esta: el flojo <em>menciona</em> las prioridades; el fuerte las <em>encarna</em>. Si quitas la frase «esto es inclusivo» y el proyecto deja de ser inclusivo, es que solo lo mencionabas.</p><div class=\"callout callout-warn\">Señal de alarma: si para «meter» una prioridad tienes que añadir una actividad artificial que no encaja con nada, es que la estás forzando. Mejor reenfocar algo que ya tienes.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores / ideas equivocadas",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Las prioridades son opcionales.»</b> → No: son <em>obligatorias</em> para cualquier proyecto Erasmus+.</li><li><span class=\"err-x\">✗</span> <b>«Con mencionarlas en un párrafo basta.»</b> → El evaluador busca que estén integradas en el diseño, no nombradas de pasada.</li><li><span class=\"err-x\">✗</span> <b>«Tengo que abordar las cuatro con la misma fuerza.»</b> → No: ninguna debe faltar, pero puedes centrarte en una o dos según tu proyecto.</li><li><span class=\"err-x\">✗</span> <b>«Lo digital significa montar una app obligatoriamente.»</b> → No: puede ser tan simple como combinar online y presencial o crear un recurso digital sencillo.</li></ul>"
+    },
+    {
+      "id": "siguiente",
+      "kind": "content",
+      "title": "Tu siguiente paso",
+      "html": "<p>Las prioridades no se eligen en el vacío: brotan de las <b>necesidades reales</b> que detectas en tu contexto. Por eso el siguiente gran tema es aprender a analizar esas necesidades y conectar tu proyecto con un problema de verdad.</p><div class=\"callout callout-link\">🔗 Esto enlaza con <b>M3 — Análisis de necesidades</b>, donde aprenderás a justificar por qué tu proyecto importa. Y en cuanto a cómo se puntúa, las prioridades pesan en la <b>Relevancia</b> que se trabaja en el <b>Curso EACEA Part B</b>.</div>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0004</b> Prioridades horizontales Erasmus+</td><td>La lista oficial de las cuatro prioridades transversales y su carácter obligatorio.</td></tr><tr><td><b>kb-0005</b> Inclusión, digital, verde y participación</td><td>Desarrollo de cada prioridad y ejemplos de cómo se concreta en los proyectos.</td></tr></tbody></table>"
+    }
+  ]
+}

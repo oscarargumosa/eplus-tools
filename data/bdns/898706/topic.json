@@ -1,0 +1,109 @@
+{
+  "source": "bdns",
+  "source_id": "898706",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / FRANQUESES DEL VALLÈS, LES / AYUNTAMIENTO DE FRANQUESES DEL VALLÈS, LES",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Concesión de subvenciones para fomentar y reactivar la contractación en las empresas en 2026",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": "2026-12-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 62000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "L",
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "K",
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://seu-e.cat/ca/web/lesfranquesesdelvalles/govern-obert-i-transparencia/contractes-convenis-i-subvencions/convenis-i-subvencions/bases-reguladores-206",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898706",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://seu-e.cat/documents/2663179/19235395/Bases+i+convocat%C3%B2ria+per+a+la+concessi%C3%B3+de+subvencions+per+fomentar+i+reactivar+la+contractaci%C3%B3+a+les+empreses+de+persones+en+situaci%C3%B3+d%27atur+2026.pdf/c0197a66-0673-41fb-a52b-bfe12653b9d9",
+  "text_inicio": "El día siguiente a la publicación de la convocatoria en el BOPB por BDNS",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.654Z"
+}

@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-HLTH-2024-TOOL-05-06-two-stage",
+  "ccm2Id": "45701927",
+  "callIdentifier": "HORIZON-HLTH-2024-TOOL-05-two-stage",
+  "callTitle": "",
+  "title": "Innovative non-animal human-based tools and strategies for biomedical research",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Medical biotechnology\",\"Basic medicine\",\"Health sciences\",\"Social sciences and humanities\",\"pathogenesis\",\"3Rs\",\"omics\",\"biomarker\",\"New Approach Methodologies\",\"prediction\",\"NAMs\",\"biomedical\",\"in-silico\",\"non-animal\",\"animal-free\",\"ECVAM\",\"treatment\",\"Alternatives\",\"organ-on-a-chip\",\"OoC\",\"organoids\",\"prevention\",\"ThreeRs\",\"JRC\",\"disease\",\"micro-physiological systems\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-TOOL-05-06-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.508Z"
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "900438",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLAVICIOSA / AYUNTAMIENTO DE VILLAVICIOSA",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "Convocatoria de Subvenciones a Asociaciones de Vecinos",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "WWW.VILLAVICIOSA.ES",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900438",
+  "documents": [
+    {
+      "label": "Aprueba convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2025/09/23/2025-07615.pdf",
+  "text_inicio": "PUBLICACION DE ANUNCIO EN EL BOPA",
+  "text_fin": "20 DIAS HABILES CONTADOS DESDE EL SIGUIENTE A LA PUBLICACION DE LA CONVOCATORIA EN BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.659Z"
+}

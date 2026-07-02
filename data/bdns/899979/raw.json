@@ -1,0 +1,72 @@
+{
+  "id": 1101540,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ELORRIO",
+    "nivel3": "AYUNTAMIENTO DE ELORRIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899979",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Subvención del Ayuntamiento de Elorrio para asociaciones culturales en 2026.",
+  "descripcionLeng": "Elorrioko Udalak 2026ko kultur elkarteentzako dirulaguntza",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases específicas que regulan la subvención del Ayuntamiento de Elorrio para asociaciones culturales en 2026.",
+  "urlBasesReguladoras": "https://www.elorrio.eus/es-ES/Ayuntamiento/Secretaria/Subvenciones/Paginas/default.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOB.",
+  "textFin": "Tipo \"A\": 22 de mayo (inclusive) | Tipo \"B\": 30 de octubre (inclusive).",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438644,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "09 BAO iragarkirako_2026-00530 EUS.pdf",
+      "long": 629057,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438643,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "09 BAO iragarkirako_2026-00530 ESP.pdf",
+      "long": 476123,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

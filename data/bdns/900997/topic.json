@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "900997",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN FORAL DE BIZKAIA / DIPUTACIÓN FORAL DE BIZKAIA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "DECRETO FORAL 43/2026, de 23 de abril, de la Diputación Foral de Bizkaia, por el que se aprueban las bases reguladoras y convocatoria para  2026/2027de una beca de formación práctica en el Servicio bde Ganadería de la Dirección General de Agricultura.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": "2026-04-29",
+  "deadline": "2026-05-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 14400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900997",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bizkaia.eus/es/bob",
+  "text_inicio": "El día siguiente de la publicación de este decreto foral en el BOB",
+  "text_fin": "Diez días hábiles a contar desde el día siguiente a la publicación del decreto foral en el BOB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.988Z"
+}

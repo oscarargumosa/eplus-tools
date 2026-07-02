@@ -1,0 +1,158 @@
+{
+  "identifier": "HORIZON-EURATOM-2026-01-04",
+  "ccm2Id": "50646253",
+  "callIdentifier": "HORIZON-EURATOM-2026-01",
+  "callTitle": "Nuclear research and training",
+  "title": "Strengthening a European user facility for nuclear research",
+  "programme": "Horizon Europe",
+  "programmeCode": "43298916",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-04-23",
+  "deadline": "2026-09-15",
+  "deadlineModel": "single-stage",
+  "actionType": "EURATOM Coordination and Support Actions",
+  "actionCode": "EURATOM-CSA",
+  "mgaCode": "EURATOM-AG",
+  "budget": {
+    "total_eur": 7000000,
+    "by_year": {
+      "2026": 3500000,
+      "2027": 3500000
+    },
+    "expected_grants": 1,
+    "min_contribution_eur": 7000000,
+    "max_contribution_eur": 7000000
+  },
+  "keywords": [
+    "HORIZON-EURATOM-2026-01-04",
+    "HORIZON-EURATOM-2026-01"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact please add a contact e-mail or url\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43891?topic=HORIZON-EURATOM-2026-01-04",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EURATOM-2026-01-04",
+  "documents": [
+    {
+      "section": "2. Eligible Countries",
+      "label": "List of Participating Countries in Horizon Europe",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "6. Legal and financial set-up of the grants",
+      "label": "unit-cost-decision-research-infrastructures_horizon-euratom_en.pdf (europa.eu)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/unit-cost-decision-research-infrastructures_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Euratom WP 2026-2027",
+      "label": "Euratom Work Programme 2026-2027 for nuclear research and training",
+      "url": "https://research-and-innovation.ec.europa.eu/document/download/f0264b61-7f2a-4e30-8f97-1056c8e30b97_en?filename=C_2026_1787_F1_ANNEX_EN_V4_P1_4651371.PDF",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (HE CSA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Calculator (HE UN RI TA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/calculator_he-un-ri-ta_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Calculator (HE UN RI VA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/calculator_he-un-ri-va_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Information on financial support to third parties (HE)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/information-on-financial-support-to-third-parties_he_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard evaluation form (HE CSA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/ef/ef_he-csa_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Horizon Europe MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Euratom Research & Training Programme 2026-2027 (Council Regulation 2025/1304)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1304",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:05.969Z"
+}

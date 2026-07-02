@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898423",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA-LA MANCHA / DIRECCIÓN GENERAL DE TRANSPORTES Y MOVILIDAD",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "Resolución de 08/04/2026 por la que se convocan ayudas destinadas a personas titulares de autorizaciones de transporte público de viajeros de turismo auto-taxi (VT)",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": "2026-04-22",
+  "deadline": "2026-05-21",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "49.3",
+      "descripcion": "Otro transporte terrestre de pasajeros"
+    }
+  ],
+  "apply_url": "https://www.jccm.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898423",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.jccm.es",
+  "text_inicio": "El día siguiente de la publicación de la presente resolución en el D.O.C.M.",
+  "text_fin": "Un mes contado desde el día siguiente a la publicación en el D.O.C.M.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.569Z"
+}

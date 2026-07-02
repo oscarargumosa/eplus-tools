@@ -1,0 +1,58 @@
+{
+  "id": "5.2",
+  "code": "Part B · 5.2",
+  "module": "EACEA",
+  "moduleTitle": "Otros",
+  "bloque": "D — Anatomía del formulario",
+  "title": "5.2 Seguridad (security)",
+  "subtitle": "Aspectos sensibles de seguridad si aplican: datos personales, colectivos vulnerables, información sensible. Cuándo aplica y cómo responder si no aplica.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "15–30 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 5.2",
+    "Criterio": "Requisito formal",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Lees «security issues» y no sabes si te están preguntando por ciberseguridad, por terrorismo o por el candado de la puerta. Te quedas en blanco porque no entiendes a qué se refiere en un proyecto educativo.",
+    "comprender": "Que «seguridad» aquí significa aspectos sensibles del proyecto: tratamiento de datos personales, trabajo con colectivos vulnerables o manejo de información delicada, y que muchas veces simplemente no aplica.",
+    "objetivo": "Saber reconocer si tu proyecto tiene un aspecto sensible que declarar, cómo describirlo con la medida que tomas, y cómo responder con seguridad cuando no aplica.",
+    "confusion": "Pensar que tienes que inventar riesgos de seguridad para «rellenar». Si tu proyecto no maneja nada sensible, lo correcto es decirlo, no fabricar amenazas.",
+    "importa": "Porque si manejas datos personales o trabajas con personas vulnerables y no lo declaras ni explicas cómo lo proteges, das imagen de no haberlo previsto, y un descuido en protección de datos puede acarrear problemas legales y dañar tu credibilidad ante el evaluador."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Qué te pregunta este campo.</b> Si tu proyecto implica <b>aspectos sensibles de seguridad</b>, y si es así, cuáles y cómo los gestionas. En proyectos educativos, esto suele traducirse en tres cosas: <b>datos personales</b>, <b>colectivos vulnerables</b> e <b>información sensible</b>.</div><p>El apartado de <b>Seguridad</b> no va de cámaras ni de ciberataques en la mayoría de proyectos Erasmus+. Te pregunta si hay algo en tu proyecto que requiera precaución por su carácter delicado:</p><ul><li><b>Datos personales (RGPD).</b> Si recoges nombres, correos, datos de menores, datos de salud o cualquier dato identificable de participantes.</li><li><b>Colectivos vulnerables.</b> Menores, personas con discapacidad, migrantes, víctimas, personas en riesgo de exclusión.</li><li><b>Información sensible.</b> Resultados que pudieran tener implicaciones de seguridad, doble uso o difusión restringida (poco habitual en KA2 educativo).</li></ul><p>En muchos proyectos de cooperación educativa, <b>no aplica</b> nada más allá del tratamiento básico de datos de participantes, y eso también hay que saber declararlo.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo cumplimentarlo bien",
+      "html": "<p>Primero decide: <b>¿aplica o no aplica?</b> Hazte estas preguntas:</p><ul><li>¿Recojo o trato datos personales de participantes? → casi siempre <b>sí</b> (mínimo, datos de contacto).</li><li>¿Trabajo con menores o colectivos vulnerables? → si sí, <b>aplica</b>.</li><li>¿Genero información que podría tener implicaciones de seguridad? → en educación, casi nunca.</li></ul><p><b>Si aplica</b>, no basta con reconocerlo: di la medida concreta.</p><div class=\"callout callout-good\"><b>Ejemplo (aplica, datos personales):</b> «El proyecto tratará datos de contacto de los participantes para la gestión de actividades. Aplicaremos el RGPD: base legal de consentimiento, minimización de datos, almacenamiento seguro y derecho de supresión. Los datos de menores requerirán consentimiento de las familias.»</div><div class=\"callout callout-good\"><b>Ejemplo (no aplica más allá de lo básico):</b> «El proyecto no implica información clasificada ni de doble uso. El único tratamiento de datos personales es la gestión de contacto de los participantes, conforme al RGPD.»</div><p>Lo importante: <b>responde con seguridad</b>. Una respuesta clara de «no aplica, salvo el tratamiento estándar conforme al RGPD» es perfectamente válida y profesional.</p>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Checklist",
+      "html": "<p>Verifica tu respuesta de seguridad:</p><ol class=\"obj\"><li>¿Has decidido conscientemente si <b>aplica o no aplica</b>?</li><li>Si tratas datos personales, ¿mencionas el <b>RGPD</b> y al menos una medida (consentimiento, minimización, almacenamiento seguro)?</li><li>Si hay <b>menores</b>, ¿indicas consentimiento de las familias?</li><li>Si hay <b>colectivos vulnerables</b>, ¿describes la precaución que tomas?</li><li>Si <b>no aplica</b> nada relevante, ¿lo has dicho con claridad en lugar de dejarlo en blanco?</li><li>¿Has evitado <b>inventar riesgos</b> para rellenar?</li><li>¿Es coherente con tus grupos destinatarios y tu plan de difusión?</li></ol>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Seguridad es ciberseguridad, mi proyecto no la toca, lo dejo vacío.»</b> → En Erasmus+ suele referirse a datos personales y colectivos vulnerables; revisa si tratas datos antes de descartarlo.</li><li><span class=\"err-x\">✗</span> <b>«Manejo datos de participantes pero no lo menciono.»</b> → Casi todos los proyectos tratan datos personales; omitirlo da imagen de no haber previsto el RGPD.</li><li><span class=\"err-x\">✗</span> <b>«Me invento riesgos de seguridad para que parezca completo.»</b> → Fabricar amenazas resta credibilidad; si no aplica, dilo con seguridad.</li><li><span class=\"err-x\">✗</span> <b>«Trabajo con menores pero no digo nada de protección.»</b> → Es justo el caso en que más esperan ver una medida concreta; el silencio es una bandera roja.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 5 (Others)</b></td><td>El campo de seguridad: aspectos sensibles del proyecto. Texto literal de la pregunta.</td></tr><tr><td><b>Erasmus+ Programme Guide</b></td><td>Marco de protección de datos y tratamiento de participantes; referencia al RGPD.</td></tr><tr><td><b>Reglamento (UE) 2016/679 (RGPD)</b></td><td>Base legal del tratamiento de datos personales: consentimiento, minimización, derechos del interesado.</td></tr><tr><td><b>Convocatoria EACEA específica</b></td><td>Si la acción implica colectivos vulnerables, precisa el nivel de detalle exigido.</td></tr></tbody></table>"
+    }
+  ]
+}

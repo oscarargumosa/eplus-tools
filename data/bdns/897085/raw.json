@@ -1,0 +1,64 @@
+{
+  "id": 1098646,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CASTELLÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CASTELLÓ/CASTELLÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897085",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 69294.28,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A AYUNTAMIENTOS PARQUE INFANTIL 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "SUBVENCIONES EN ESPECIE A AYUNTAMIENTOS DE LA PROVINCIA DE CASTELLÓN Y ELM CON POBLACIÓN INFERIOR A 5.000 HABITANTES PARA LA PRESTACIÓN DEL SERVICIO PARQUE INFANTIL. EJERCICIO 2026",
+  "urlBasesReguladoras": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=165049&idioma=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACIÓN",
+  "textFin": "20 días naturales a partir del día siguiente de la publicación en el BOP de la convocatoria.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429719,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "textoConvocatoria13853.pdf",
+      "long": 143284,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

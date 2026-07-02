@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "901622",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ANSOÁIN/ANTSOAIN / AYUNTAMIENTO DE ANSOÁIN/ANTSOAIN",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "CONVOCATORIA DE AYUDAS SOCIALES PARA ABONOS DE TEMPORADA DE VERANO DE LAS PISCINAS MUNICIPALES DEL AYUNTAMIENTO DE ANSOÁIN EN EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": "2026-06-05",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.ansoain.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901622",
+  "documents": [
+    {
+      "label": "Eskaera orria_Hoja de solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.ansoain.es/tablondeanuncios/",
+  "text_inicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN EN EL BOLETÍN OFICIAL DE NAVARRA",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.286Z"
+}

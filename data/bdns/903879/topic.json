@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903879",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CATALUÑA / FUND. PRIV. CATAL. PER A L'ENSENYAMENT DE L'IDIOMA ANGLÈS I L'EDUCACIÓ EN ANGLÈS",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "Becas para cursos de grado y postgrado en universidades de los Estados Unidos.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": "2026-05-22",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 140000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "info@fundaciorieragubau.cat",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903879",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1041827",
+  "text_inicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.341Z"
+}

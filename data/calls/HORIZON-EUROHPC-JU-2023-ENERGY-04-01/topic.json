@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-EUROHPC-JU-2023-ENERGY-04-01",
+  "ccm2Id": "46357186",
+  "callIdentifier": "HORIZON-EUROHPC-JU-2023-ENERGY-04",
+  "callTitle": "",
+  "title": "Energy Efficient Technologies in HPC",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-11-07",
+  "deadline": "2024-02-07",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"High performance computing\",\"Digital Agenda\",\"Energy efficiency\",\"EuroHPC\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-EUROHPC-JU-2023-ENERGY-04-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.657Z"
+}

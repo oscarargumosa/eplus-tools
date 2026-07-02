@@ -1,0 +1,26 @@
+## Expected Outcome
+
+Successful proposals will contribute to the implementation of the Zero Pollution Action Plan, the Circular Economy Action Plan, the Ecodesign for Sustainable Products Regulation, the Chemicals Strategy for Sustainability and the Chemical Industry Action Plan. They will provide solutions in line with the objectives of the EU legislation on waste but also the Horizon Europe Mission "Restore our Ocean and Waters by 2030" in particular to Objective 2: "Prevent and eliminate pollution of our oceans, Seas and waters” as well as the Horizon Europe Mission “A Soil Deal for Europe”, in particular objectives “Reduce soil pollution and enhance restoration”.
+
+Projects results are expected to contribute to the following expected outcomes:
+- Wider availability of bio-based additives targeting high functional properties, stability and compatibility with polymers/matrices.
+- Contribution to improved circularity of end products in relevant market sectors.
+- Potential replicability into other industrial sectors to widen market opportunity.
+- Reduction or avoidance of environmental impacts related to life cycle of additives and additive-containing materials and/or products.
+
+## Scope
+
+While additives are often necessary to confer specific properties to materials and/or products, their presence can hinder their circular EoL (including – depending on the application – recycling and/or biodegradation). Risks upon recycling and biodegradation encompass the release into the environment of harmful substances, e.g., release of persistent organic pollutants (POPs), volatile organic compounds (VOCs), toxic metals, microplastics. Proposals under this topic should:
+- Demonstrate (at least at TRL 6) innovative processes for the synthesis of bio-based SSbD additives that:   Enable a circular EoL for materials and/or products that are currently not recyclable and/or not biodegradable, orImprove circularity of materials and/or products, e.g., by requiring resources/energy efficient and safe conditions for recycling or facilitating biodegradation.
+- In the context of this topic, circular EoL includes recycling and/or biodegradation. Justify the choice of the proposed solution(s) in addressing existing bottlenecks in the circular EoL of targeted materials and/or products including where embedded additives play a fundamental role in hindering circularity.
+- Provide alternative solutions that prevent the release of harmful chemicals during the product life cycle (including from products produced from recyclates) of materials and/or products, while enabling the relevant EoL options. Application of the demonstrated bio-based additives could be relevant for bio-based, partly bio-based or non-bio-based end products.
+- Demonstrate (at least at TRL 6) the compatibility and processability of SSbD bio-based additives within the formulation/manufacturing of materials and/or products. Validate the technical performances of materials/products incorporating the novel bio-based additive(s) and proving to fulfil market requirements for selected application sector(s). Target at least two distinct market sectors in cooperation with end-users.
+- If targeting biodegradability of end-products, assess that the additives, as well as the end-product, biodegrade safely in different environments (soil and water) according to existing EU/International standards, methods and protocols.
+- If targeting recyclability as the EoL, test and validate it, including assessing the effect of the additives on the waste management system (encompassing sorting, separation and recycling). Any recycling route is in scope: mechanical, chemical, organic, enzymatic (including their possible combination).
+
+In addition to the specific requirements applicable for the type of action, as described in section 2.2.3.1 of the CBE JU Annual Work Programme 2026[1], proposals under this topic should:
+- As part of the multi-actor approach (MAA) approach, involve waste management, product manufacturers, brand owners and consumers, when applicable, starting from the early stages to assess market acceptance and incorporate insights into process/product development.
+- Include a task to apply the SSbD framework, developed by the European Commission for the assessment of targeted chemicals/materials and derived bio-based product(s). For more information on the SSbD framework and criteria, refer to Safe and sustainable by design.
+- Ensure complementarities with past and ongoing R&I projects addressing similar challenges, including projects funded under Horizon 2020/Horizon Europe (under Cluster 6 and other Clusters of Horizon Europe) and BBI JU/CBE JU projects.
+
+[1] https://www.cbe.europa.eu/reference-documents

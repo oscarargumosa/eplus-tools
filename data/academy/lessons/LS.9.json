@@ -1,0 +1,75 @@
+{
+  "id": "LS.9",
+  "code": "UD-LS.9",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "E — Criterios de evaluación",
+  "title": "KA210: el informe final y cómo se evalúa (escala de reducción)",
+  "subtitle": "Qué tienes que demostrar al cerrar una Small-scale Partnership, cómo te puntúa la Agencia Nacional y qué pasa con tu dinero si te quedas corto.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–45 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "4.2 y 4.3 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El informe final da pánico: trabajaste dos años y de repente alguien decide si cobras el 100 % o el 70 % con una tabla que nunca habías visto. La sensación es de jugarte la subvención a una nota que no entiendes.",
+    "comprender": "Que en KA210 el informe final no es un trámite: es una reevaluación. La Agencia Nacional vuelve a puntuar tu proyecto con los mismos 4 criterios de la solicitud, suma la nota y aplica una escala fija que decide qué porcentaje de la subvención cobras.",
+    "objetivo": "Saber qué estructura sigue el informe, qué se reinterpreta en cada uno de los 4 criterios, cómo se suman las puntuaciones (Relevance 20 · Partnership 20 · Implementation 30 · Impact 30) y qué tramo de la escala de reducción te toca según tu nota.",
+    "confusion": "Pensar que «como es lump sum no hay que justificar nada». Falso: no hay que justificar gasto, pero sí hay que demostrar trabajo hecho y resultados, conservar documentación y subir los resultados a la plataforma. Si no, te reducen.",
+    "importa": "Porque la diferencia entre un 59 y un 60 es cobrar el 90 % o el 100 %. Entender la escala de antemano te permite escribir el informe (y diseñar el proyecto) para no caer por unos pocos puntos en un tramo inferior."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. El informe final es un espejo de tu solicitud",
+      "html": "<p>Cuando termina una <b>Small-scale Partnership (KA210)</b>, no entregas un montón de facturas: entregas un <b>informe final</b>. Y la primera regla que tienes que interiorizar es esta: el informe <b>sigue la misma estructura que el formulario de solicitud</b> y tiene que demostrar <em>consistencia</em> entre lo que prometiste al principio y lo que lograste al final.</p><p>Dicho de otro modo: el evaluador pone tu solicitud y tu informe uno al lado del otro y comprueba si la película que contaste se ha hecho realidad. Tienes que explicar <b>cómo se implementó la acción</b> y demostrar que <b>los resultados alcanzados al cierre están en línea con los criterios de adjudicación iniciales</b>.</p><div class=\"callout callout-key\"><b>Idea ancla.</b> En KA210 el informe final no inventa criterios nuevos: reutiliza los mismos cuatro de la solicitud, pero mirados <em>en pasado</em>. Donde antes prometías, ahora demuestras.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Los 4 criterios, reinterpretados al cierre",
+      "html": "<p>Los cuatro criterios de adjudicación son los mismos de siempre — <b>Relevance, Quality of the project design and implementation, Quality of the partnership and cooperation arrangements e Impact</b> — pero como el informe se redacta <em>al final</em>, cambia la perspectiva con la que se analizan. Así es como hay que entenderlos en el informe:</p><table><thead><tr><th>Criterio</th><th>Qué demuestras en el informe final</th></tr></thead><tbody><tr><td><b>Relevance</b><br>(Relevancia)</td><td>Cómo el proyecto abordó <em>de forma efectiva</em> los objetivos y prioridades de la acción, y cómo construyó capacidad en las organizaciones para cooperar a nivel transnacional, aportando valor añadido tanto nacional como europeo.</td></tr><tr><td><b>Quality of implementation</b><br>(Calidad de la implementación)</td><td>La <b>calidad de los resultados logrados</b> a través de las actividades que efectivamente se llevaron a cabo. Ojo: no es «describir lo que hiciste», es demostrar que lo hecho tiene calidad.</td></tr><tr><td><b>Quality of partnership</b><br>(Calidad de la asociación)</td><td>La calidad de la <b>cooperación entre socios</b> durante la implementación. Incluye dos cosas que se vigilan de cerca: el <b>respeto del calendario</b> del proyecto y la <b>gestión global</b> del mismo.</td></tr><tr><td><b>Impact</b><br>(Impacto)</td><td>La <b>integración de los resultados</b> en el trabajo de las organizaciones participantes, los <b>cambios de comportamiento</b> resultantes, y la <b>transferibilidad</b> a otros grupos destinatarios, organizaciones, sectores, países, etc.</td></tr></tbody></table><div class=\"callout callout-good\">Para cada criterio, la plantilla del informe final en el <b>Beneficiary Module</b> te da <b>preguntas guía</b>: sobre resultados y logros concretos, actividades realizadas, métodos de monitorización y evaluación, acuerdos de cooperación y difusión de resultados, además de su sostenibilidad. No tienes que adivinar qué contar: el sistema te lo pregunta.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Lecciones aprendidas, plataforma de resultados y documentación",
+      "html": "<p>Además de responder a los criterios, el informe te pide tres cosas más que conviene no olvidar:</p><ol class=\"obj\"><li><b>Ejercicio de lecciones aprendidas.</b> Se te invita a reflexionar sobre la calidad de la implementación de tu proyecto: los éxitos y los problemas encontrados. No es relleno; es señal de madurez de gestión.</li><li><b>Subir resultados a la Erasmus+ Project Results Platform.</b> Como parte del informe final, tienes que poner tus resultados a disposición pública en la plataforma (subiéndolos vía el Beneficiary Module). Sirve como <b>prueba de que el proyecto se implementó</b> y para demostrar la calidad de sus resultados. Puedes añadir otros documentos y materiales relevantes; si lo haces, debes <b>referenciarlos en el informe</b> dentro de la descripción de resultados. Si los evaluadores los consideran insuficientes, pueden pedirte documentos adicionales.</li><li><b>Conservar la documentación.</b> Aquí está el matiz clave del lump sum.</li></ol><div class=\"callout callout-warn\"><b>No se piden pruebas de gasto… pero sí hay que conservar documentación.</b> En el informe final <em>no</em> tienes que aportar justificantes de gastos incurridos. Pero el beneficiario <b>tiene que conservar toda la documentación relevante</b> que demuestre que las actividades por las que se concedió la subvención se realizaron de verdad, por si la Agencia Nacional hace una comprobación durante o después del proyecto.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. Cómo se puntúa: la SUMA de los criterios",
+      "html": "<p>Llegamos al corazón de la sección 4.3. La Agencia Nacional hace una <b>evaluación de calidad</b> de las actividades implementadas y los resultados logrados, a partir de tu informe final. Y atribuye una <b>puntuación global al proyecto calculada como la SUMA</b> de las puntuaciones individuales de cada criterio.</p><p>Esto es importante y diferencia a KA210 de KA220 (que verás en LS.11): aquí <b>se suma</b>, no se hace media ponderada. Estas son las puntuaciones máximas exactas de cada criterio:</p><table><thead><tr><th>Criterio</th><th>Puntuación máxima</th></tr></thead><tbody><tr><td>Relevance (Relevancia)</td><td><b>20 puntos</b></td></tr><tr><td>Quality of the partnership (Calidad de la asociación)</td><td><b>20 puntos</b></td></tr><tr><td>Quality of the project implementation (Calidad de la implementación)</td><td><b>30 puntos</b></td></tr><tr><td>Impact (Impacto)</td><td><b>30 puntos</b></td></tr><tr><td><b>Puntuación final</b></td><td><b>100 puntos</b></td></tr></tbody></table><div class=\"callout callout-key\">Fíjate en el reparto: <b>Implementación e Impacto valen 30 cada uno (60 puntos juntos)</b>, frente a Relevancia y Asociación con 20 cada uno. Lo que más pesa es <em>haber logrado resultados de calidad y haber generado impacto real</em>. Escribe el informe sabiendo dónde están los puntos gordos.</div>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. La escala de reducción de KA210",
+      "html": "<p>Una vez sumada la nota, entra en juego la <b>escala de reducción</b>. Si tu puntuación cae por debajo del umbral de implementación pobre, parcial o tardía definido en el grant agreement, la Agencia Nacional <b>puede aplicar una reducción de la subvención</b>, calculada sobre el <b>importe total</b> de la misma, según esta tabla exacta:</p><table><thead><tr><th>Puntuación del proyecto</th><th>% de subvención que cobras</th></tr></thead><tbody><tr><td>60 – 100</td><td><b>100 %</b></td></tr><tr><td>45 – 59</td><td>90 %</td></tr><tr><td>30 – 44</td><td>70 %</td></tr><tr><td>10 – 29</td><td>30 %</td></tr><tr><td>0 – 9</td><td><b>0 %</b></td></tr></tbody></table><div class=\"callout callout-warn\">El salto más caro es el de <b>59 a 60</b>: un solo punto separa cobrar el 90 % de cobrar el 100 %. Por eso no basta con «aprobar»: hay que apuntar holgadamente por encima de 60.</div><p>Y dos reglas más sobre actividades que no salen como estaba previsto:</p><ul class=\"bullets\"><li><b>Si una actividad no se completa, hay que justificarlo</b> en el informe final.</li><li>En casos excepcionales, si una <b>actividad no se realiza y no se sustituye</b> por otra equivalente (equivalente tanto en su contribución a los objetivos como en su presupuesto), la AN <b>rechaza el importe</b> asignado a esa actividad en la propuesta. Ese dinero no se paga.</li></ul>"
+    },
+    {
+      "id": "s6",
+      "kind": "content",
+      "title": "6. Reducción también por errores, irregularidades o incumplimiento",
+      "html": "<p>La reducción por baja calidad no es la única vía por la que puedes perder dinero. La subvención <b>también se puede reducir</b> si el beneficiario comete <b>errores sustanciales, irregularidades, fraude o incumplimiento grave de otras obligaciones</b>. El Handbook pone ejemplos concretos:</p><ul class=\"bullets\"><li>Presentar <b>información falsa</b>.</li><li><b>No facilitar la información</b> requerida.</li><li>No respetar la obligación de garantizar los <b>valores básicos de la UE</b> (respeto a la dignidad humana, libertad, democracia, igualdad, Estado de derecho y derechos humanos, incluidos los derechos de las minorías).</li></ul><div class=\"callout callout-key\">Mensaje para llevarte a casa: en KA210 cobras si <b>(a)</b> hiciste el trabajo y los resultados tienen calidad, <b>(b)</b> sumaste suficiente puntuación en la escala, y <b>(c)</b> cumpliste tus obligaciones sin irregularidades. Las tres puertas tienen que estar abiertas.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Como es lump sum, en el informe no justifico nada.»</b> → No justificas <em>gasto</em>, pero sí trabajo hecho y resultados, y debes conservar la documentación que lo prueba.</li><li><span class=\"err-x\">✗</span> <b>«El informe es un trámite administrativo.»</b> → Es una reevaluación con nota: de ella sale el porcentaje que cobras (100 / 90 / 70 / 30 / 0 %).</li><li><span class=\"err-x\">✗</span> <b>«Con aprobar (45-59) ya cobro todo.»</b> → Falso: por debajo de 60 ya te quedas en el 90 % o menos. El 100 % empieza en 60.</li><li><span class=\"err-x\">✗</span> <b>«Si una actividad no la hago, no pasa nada.»</b> → Hay que justificarlo; y si no se sustituye por una equivalente, te rechazan su importe.</li><li><span class=\"err-x\">✗</span> <b>«Subir a la Project Results Platform es opcional.»</b> → Es parte obligatoria del informe final y sirve como prueba de implementación.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026), secciones 4.2 y 4.3</td><td>Estructura del informe final de KA210, reinterpretación de los 4 criterios, tabla de puntuaciones máximas (20/20/30/30) y escala de reducción exacta (60-100→100 %; 45-59→90 %; 30-44→70 %; 10-29→30 %; 0-9→0 %). Reglas sobre actividades no completadas e incumplimiento de obligaciones.</td></tr></tbody></table>"
+    }
+  ]
+}

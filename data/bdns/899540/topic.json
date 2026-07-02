@@ -1,0 +1,152 @@
+{
+  "source": "bdns",
+  "source_id": "899540",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / CÁMARA DE COMERCIO DE ORIHUELA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Ayudas a la contratación Talento Joven Cámara de Comercio de Orihuela.2026.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "O",
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES"
+    },
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "U",
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO"
+    },
+    {
+      "codigo": "L",
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "B",
+      "descripcion": "INDUSTRIAS EXTRACTIVAS"
+    },
+    {
+      "codigo": "V",
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "E",
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN"
+    },
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    },
+    {
+      "codigo": "K",
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://sede.camara.es/sede/orihuela",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899540",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://camaraorihuela.es/empresas-y-emprendedores/",
+  "text_inicio": "Al día siguiente de la publicación convocatoria en BOP DE ALICANTE",
+  "text_fin": "Hasta el 31/12/2026 o hasta agotar el presupuesto consignado en la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.104Z"
+}

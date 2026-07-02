@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900054",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DE SUBVENCIONES DEL SERVICIO DE ARCHIVO Y PUBLICACIONES DEL ÁREA DE CULTURA Y CIUDADANÍA DESTINADA A LA MEJORA DE LOS ARCHIVOS MUNICIPALES Y DE SU PATRIMONIO DOCUMENTAL(2026).",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 481133.54,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900054",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.dipusevilla.es",
+  "text_inicio": "el día siguiente a la publicación del extracto",
+  "text_fin": "quince días hábiles después",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209462,
+      "titulo": "EXTRACTO DE LA RESOLUCIÓN DE PRESIDENCIA N.º 2246/2026, DE 13 DE ABRIL, POR LA QUE SE APRUEBAN LAS BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DE LAS SUBVENCIONES DEL SERVICIO DE ARCHIVO Y PUBLICACIONES DEL ÁREA DE CULTURA Y CIUDADANÍA DESTINADA A LOS AYUNTAMIENTOS CON POBLACIÓN IGUAL O INFERIOR A 20.000 HABITANTES Y ELAs DE LA PROVINCIA DE SEVILLA PARA LA MEJORA DE LOS ARCHIVOS MUNICIPALES Y DE SU PATRIMONIO DOCUMENTAL(2026).",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p> </p><p>Los Ayuntamientos con población igual o inferior a 20.000 habitantes y ELAs de la Provincia de Sevilla.</p><p> </p><p>Segundo: Finalidad</p><p> </p><p>El objeto de esta línea de subvenciones consiste en la colaboración para financiar las inversiones que se realicen para la adquisición y mejora de equipamientos e instalaciones de los archivos municipales de la provincia de Sevilla, cuyos municipios posean una población igual o inferior a 20.000 habitantes y las Entidades Locales Autónomas.</p><p> </p><p>Tercero: Bases Reguladoras</p><p> </p><p>La presente convocatoria se regirá por la resolución n.º 2246/2026, de 13 de abril, por la que se aprueban las bases reguladoras específicas y la convocatoria de la línea de subvenciones del Servicio de Archivo y Publicaciones del Área de Cultura y Ciudadanía destinadas a la Mejora de los Archivos Municipales y de su Patrimonio Documental para los Ayuntamientos con población igual o inferior a 20.000 habitantes y ELAs de la Provincia de Sevilla 2026, las cuales se encuentran publicadas en la Sede Electrónica de la Diputación de Sevilla.</p><p> </p><p>Las bases reguladoras específicas de la convocatoria de subvenciones del Servicio de Archivo y Publicaciones del Área de Cultura y Ciudadanía destinadas a la Mejora de los Archivos Municipales y de su Patrimonio Documental 2026, se encuentran publicadas en el Boletín Oficial de la provincia, en el tablón electrónico, y en la sede electrónica de la Diputación de Sevilla.</p><p> </p><p>Cuarto: Cuantía</p><p> </p><p>El presupuesto máximo disponible para la concesión de subvenciones a las que se refiere esta Convocatoria es 481.133,54 euros.</p><p> </p><p>Quinto: Plazo de presentación de solicitudes</p><p> </p><p>El plazo de presentación será de 15 días hábiles contados a partir del siguiente a la publicación del extracto de la convocatoria en el BOP de la Provincia de Sevilla a través de la BDNS.</p><p> </p><p>Sexto: Otros</p><p> </p><p>La solicitud deberá ir acompañada de la documentación descrita en las Bases específicas que regulan el Programa.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.468Z"
+}

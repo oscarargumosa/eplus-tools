@@ -1,0 +1,87 @@
+{
+  "identifier": "ED-2025-PORTUGAL-FPA",
+  "ccm2Id": "48300785",
+  "callIdentifier": "ED-2025-PORTUGAL-FPA",
+  "callTitle": "Selection of partners to carry out EUROPE DIRECT activities (2026-2030) in Portugal",
+  "title": "Selection of partners to carry out EUROPE DIRECT activities",
+  "programme": "ED",
+  "programmeCode": "42810547",
+  "programmePeriod": "2014 - 2020",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2025-05-06",
+  "deadline": "2025-07-08",
+  "deadlineModel": "single-stage",
+  "actionType": "Framework Partnership Agreement",
+  "actionCode": "ED-FPA",
+  "mgaCode": "ED-FPA",
+  "budget": {
+    "total_eur": 520000,
+    "by_year": {
+      "2026": 520000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "ED-2025-PORTUGAL-FPA",
+    "ED-2025-PORTUGAL-FPA"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "Leia atentamente o texto do convite à apresentação de propostas e respetivos anexos (incluindo o guia do candidato) antes de iniciar a preparação da sua candidatura.\n\nPara questões técnicas, pode consultar as perguntas frequentes do portal Funding &Tenders FAQ Funding &Tenders Portal FAQ — Apresentação de propostas.\n\nIT Helpdesk — Contacte o serviço de assistência informática para questões sobre palavras-passe esquecidas, direitos de acesso e perfis, aspetos técnicos da apresentação de propostas, etc.\n\nPara obter ajuda relacionada com o conteúdo do convite à apresentação de propostas, contacte COMM-REP-PT-EUROPE-DIRECT@ec.europa.eu ou consulte a página https://portugal.representation.ec.europa.eu/convite-apresentacao-de-propostas-europe-direct-2026-2030_pt",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/41100?topic=ED-2025-PORTUGAL-FPA",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/ED-2025-PORTUGAL-FPA.json",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ed/wp-call/2025/call-fiche_ed-2025-portugal-fpa_pt.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": ".",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/ed/wp-call/2025/call-fiche_ed-2025-portugal-fpa_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-07T12:03:27.087Z"
+}

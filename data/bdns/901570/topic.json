@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "901570",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Orden por la que se establecen las bases reguladoras de las subvenciones destinadas a la realización del programa Retorna Cualifica Empleo y se procede a su convocatoria para las anualidades 2026-2027 (código de procedimiento TR380A)",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": "2026-05-12",
+  "deadline": "2026-06-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 2300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901570",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo I (solicitud)",
+      "url": null
+    },
+    {
+      "label": "Anexo I (solicitude ) ",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?lang=es",
+  "text_inicio": null,
+  "text_fin": "30/06/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.260Z"
+}

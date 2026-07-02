@@ -1,0 +1,14 @@
+## Expected Outcome
+
+Proposals are expected to contribute to one or more of the following:
+- Robust AI models and systems capable of resisting different classes of adversarial manipulation;
+- Innovative defence mechanisms for AI models and systems against new attack families;
+- Methodologies for detecting and mitigating attacks, such as data poisoning, backdoor exploitation and misclassification;
+- AI systems leveraging privacy-enhancing technologies that maintain data confidentiality and regulatory compliance, enabling trusted in-house AI deployments (e.g., for governments and enterprises).
+
+## Scope
+
+The increasing reliance on AI in cybersecurity, critical infrastructure, and decision-making processes raises concerns about the security and robustness of AI systems. As AI systems become more prevalent, they are increasingly targeted by adversarial attacks that manipulate inputs, compromise training data, or introduce hidden vulnerabilities. This topic aims to strengthen the resilience of AI systems and algorithms against various threats and attacks, such as enhancing their resilience against adversarial attacks, backdoor injections, and data poisoning. Proposals should develop real-time anomaly detection, mitigation techniques to defend against adversarial attacks and robust federated learning techniques, in synergies with leading efforts on AI transparency, and in compliance with the AI Act. The topic is expected to:
+- Develop robust AI models resistant to adversarial attacks. Exploring techniques to harden AI models and systems against adversarial perturbations, such as adversarial training, robust optimisation, and defence mechanisms that enhance the trustworthiness of AI.
+- Improve detection of manipulated or poisoned training data. Advancing methodologies to identify and mitigate compromised datasets, leveraging techniques such as anomaly detection, provenance tracking, and automated data validation mechanisms.
+- Address the concept of Private AI by developing mechanisms that enable AI models to be trained, deployed and operated in privacy-preserving environments, particularly for sensitive use cases, as for example for government and enterprise settings. This includes ensuring AI computations and data remain within trusted execution boundaries (e.g. on-premise or regulated cloud environments), and leveraging existing and emerging privacy-enhancing techniques such as federated learning, secure aggregation, computing on encrypted data, quantum-safe homomorphic encryption and secure inference in deep learning to safeguard the protection of personal and other sensitive data throughout the AI lifecycle.

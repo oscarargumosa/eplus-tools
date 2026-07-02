@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "899427",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / XIRIVELLA / AYUNTAMIENTO DE XIRIVELLA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria para la concesión de subvenciones municipales destinadas al fomento del asociacionismo y promoción del tejido asociativo 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": "2026-05-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 65700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https//sede.xirivella.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899427",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Edicto",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.xirivella.es",
+  "text_inicio": "desde el día siguiente a la publicación de la convocatoria en el BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209149,
+      "titulo": "Convocatoria para la concesión de subvenciones municipales destinadas al fomento del asociacionismo y promoción del tejido asociativo de Xirivella 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarias:</p><p>Las entidades inscritas en el registro Municipal de Xirivella, que realicen su actividad en el municipio y reúnan los requisitos exigidos en la convocatoria.</p><p>Segundo. Finalidad:</p><p>La finalidad de esta convocatoria es facilitar la labor de las asociaciones de Xirivella, contribuyendo económicamente en los gastos de funcionamiento de las entidades y en los proyectos que desarrollen en el ejercicio 2026, con la finalidad de fomentar el asociacionismo, especialmente la formación de redes asociativas, y estimular el desarrollo de nuevas iniciativas del movimiento asociativo del municipio.</p><p>Tercero. Bases reguladoras:</p><p>Convocatoria para la concesión de subvenciones municipales destinadas al fomento del asociacionismo y promoción del tejido asociativo de Xirivella 2026.</p><p>Cuarto. Importe:</p><p>La cuantía máxima a conceder a cada entidad beneficiaria para el proyecto de actividad no podrá superar el 100% del presupuesto del proyecto presentado, con el límite de 1.000 euros.</p><p>La distribución de las ayudas se realizará atendiendo a lo previsto en el artículo 7 de la convocatoria.</p><p>En caso de propiedad o arrendamiento del inmueble o local donde la entidad realice su actividad, la cantidad subvencionada se incrementará en 1.000 euros adicionales.</p><p>Quinto.- Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes será desde el día siguiente a la publicación de la convocatoria en la Base de Datos Nacional de Subvenciones (BDNS) y en el Boletín Oficial de la Provincia, según el procedimiento previsto en el art. 20 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, hasta el día 15 de mayo de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04530&lang=es",
+      "cve": "BOPV-2026/04530",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.026Z"
+}

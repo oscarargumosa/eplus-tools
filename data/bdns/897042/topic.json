@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897042",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DE LAS SUBVENCIONES DEL SERVICIO DE CULTURA DEL ÁREA DE CULTURA Y CIUDADANÍA DESTINADAS A LOS AYUNTAMIENTOS Y ELAs DE LA PROVINCIA DE SEVILLA PARA LA CELEBRACIÓN DE FESTIVALES FLAMENCOS (2026)",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 433600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897042",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.dipusevilla.es",
+  "text_inicio": "el día siguiente a la publicación del extracto",
+  "text_fin": "quince días hábiles después",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 207957,
+      "titulo": "EXTRACTO DE LA RESOLUCIÓN DE PRESIDENCIA N.º1806/2026, DE 24 DE MARZO, POR LA QUE SE APRUEBAN LAS BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA DE LAS SUBVENCIONES DEL SERVICIO DE CULTURA DEL ÁREA DE CULTURA Y CIUDADANÍA DESTINADAS A LOS AYUNTAMIENTOS Y ENTIDADES LOCALES AUTÓNOMAS DE LA PROVINCIA DE SEVILLA PARA LA CELEBRACIÓN DE FESTIVALES FLAMENCOS, CORRESPONDIENTES AL EJERCICIO 2026.",
+      "tituloLeng": null,
+      "texto": "<p> </p><p> </p><p>Primero: Beneficiarios</p><p> </p><p>Ayuntamientos y Entidades Locales Autónomas de la Provincia que realicen durante el año 2026 un Festival Flamenco en su Municipio.</p><p> </p><p>Segundo: Finalidad</p><p> </p><p>El objeto de esta línea de subvenciones es la colaboración con los Ayuntamientos y Entidades Locales Autónomas de la Provincia de Sevilla que realicen durante el año 2026 un Festival Flamenco en su Municipio, por entender que esta manifestación cultural coadyuva a la consecución de los fines que, en esta materia, persigue esta Diputación, y a la misma vez sirve de cauce de expresión a una de las materializaciones más genuinas y representativas de nuestro folclore.</p><p> </p><p>Tercero: Bases Reguladoras</p><p> </p><p>La presente convocatoria se regirá por la resolución n.º1806/2026, de 24 de marzo, por la que se aprueban las bases reguladoras específicas y la convocatoria de la línea de subvenciones del Servicio de Cultura, para el fomento de recursos culturales, que se publican en el Tablón electrónico de la Diputación de Sevilla, en el Portal de Transparencia y en el Boletín Oficial de la provincia de Sevilla.</p><p> </p><p>Cuarto: Cuantía</p><p> </p><p>El presupuesto máximo disponible para la concesión de subvenciones a las que se refiere esta Convocatoria es 433.600,00 euros.</p><p> </p><p>Quinto: Plazo de presentación de solicitudes</p><p> </p><p>El plazo de presentación será de 15 días hábiles contados a partir del siguiente a la publicación del extracto de la convocatoria en el BOP de la Provincia de Sevilla a través de la BDNS.</p><p> </p><p>Sexto: Otros</p><p> </p><p>La solicitud deberá ir acompañada de la documentación descrita en las Bases reguladoras específicas.</p><p> </p><p> </p><p> </p><p> </p><p> </p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE SEVILLA",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.775Z"
+}

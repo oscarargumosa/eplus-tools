@@ -1,0 +1,40 @@
+## Expected Outcome
+
+Proposals under this topic should aim to deliver results that are directed and tailored towards and contribute to the following expected outcomes:
+- Improved understanding of care needs of older patients with cancer and approaches to address them;
+- Older cancer patients gain access to innovative age-specific approaches and tools better tailored to their care needs;
+- National healthcare providers, policymakers and authorities in European regions, EU Member States and Associated Countries have the evidence to implement tailored care for older cancer patients that have the potential to be implemented in routine treatment and follow-up care in their healthcare systems;
+
+## Scope
+
+This topic contributes to the EU Cancer Mission’s objective to improve quality of life of cancer patients. The focus is on cancer patients aged 65 years and above.
+
+Currently, older cancer patients represent the largest proportion of cancer patients especially in Europe, with more than two thirds of new cancer cases being diagnosed in patients above the age of 65. Yet, there is still relatively little knowledge about their functional health and care needs during and after treatment.
+
+Managing cancer in older patients is complex, due to the high heterogeneity in terms of their intrinsic health capacities, including mental health and cognitive capacities, comorbidities, frailty etc. as well as with regard to their performance activities including social interactions, work, mobility etc. Consequently, overall health care needs of older patients with cancer vary significantly.
+
+Older cancer patients are consistently underrepresented in clinical research, with representation declining progressively with increasing age. This leads to a lack of knowledge regarding treatments, specific needs, and clinical endpoints. Older patients are also particularly vulnerable to treatment toxicities loss of muscle mass, and may experience a large variety of confounding comorbidities and symptoms, which strongly impact their quality of life during and after treatment.
+
+As such, quality of life expectations should be systematically factored in the decision process to define the optimal approach to cancer management.
+
+The overall goal of this topic is to advance the understanding of older cancer patients' care needs, and develop innovative, age-sensitive care approaches and tools to boost overall quality of life. In particular:
+- Building on data from existing or newly established cohorts provide a thorough assessment of QoL needs and relevant dimensions in older patients, taking into account aspects such as social and health determinants, including sex, gender, age, comorbidities, intrinsic and functional health status, socio-economic status, living in rural or remote areas, education, access/reachability to disease management programs (due to travel distances and abilities) etc.
+- Develop, test, implement and scale up innovative, holistic approaches and tools in real-life settings (e.g. through the implementation of pragmatic clinical trials or effectiveness-implementation hybrid designs) to optimize treatment and/or follow-up regimens for older patients, aiming to reduce comorbidities, impairments and frailty, while improving overall quality of life. Prehabilitation strategies (e.g. to be delivered after diagnosis but prior to treatment) should be also considered. The development of these approaches and tools should consider the potential gender-related differences in treatment outcomes and quality of life, such as the impact of hormonal changes, or caregiving responsibilities.
+- Primary and secondary endpoints of the pragmatic clinical trial(s) should support patient-reported outcomes and quality of life. Such endpoints should be defined together with patients and their caregivers through research that stimulates social innovation and supports end-user engagement using participative research models.
+- Particular attention should be given to aspects such as pain management, cognitive and social support, mental health services etc. Additionally, rehabilitation tackling common concerns such as reduced mobility, osteoporosis, cardiovascular health, neurocognitive changes, sleep disturbance, loss of independence, time and financial toxicity etc, essential for maintaining good quality of life, should also be addressed. Health literacy including digital literacy could also be considered. The specific needs of families and care givers managing older cancer patients should also be considered.
+- Ultimately, provide scientific evidence to deliver affordable and accessible treatment and follow-up care adapted to the needs of older cancer patients and to the specificities of the provision of care at local, regional, or national level, duly reflecting the (cultural) diversity across EU Member States and Associated Countries.
+- All datasets produced should be described with metadata records in the EU dataset catalogue of the European Health Data Space, while all tools and models should take advantage of current European research infrastructures, should follow the principles of open science and made available through the future UNCAN.eu platform.
+
+The topic is designed to fill a gap in terms of evidence, knowledge, expertise, tools, data and resources in the management of older cancer patients. This should be achieved through multinational, cross-sectoral and multidisciplinary cooperation.
+
+For that purpose, projects should include an appropriate mix of stakeholders from various disciplines and sectors, including but not limited to physicians, psychologists, nurses, academia, patients and their caregivers, patient representatives, behavioural scientists, SMEs, insurance companies, charities and foundations, research organisations, civil society, regional and national health authorities
+
+In particular, direct involvement of cancer patients and survivors, survivor representative organisations, and caregivers is required, along with effective contribution of SSH disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant results, enhancing the impact of the related research activities.
+
+Successful proposals will be asked to join the 'Quality of life” cluster for the EU Cancer Mission[1] and should include a budget for networking, attendance at meetings, and joint activities[2]. The Commission will facilitate coordination of these activities.
+
+Applicants should provide details of the clinical studies in the dedicated annex using the template provided in the submission system.
+
+[1] In order to address the objectives of the EU Cancer Mission, participants will collaborate in project clusters to leverage EU-funding, increase networking across sectors and disciplines, and establish a portfolio of EU Cancer Mission R&I and policy actions.
+
+[2] Examples of these activities are research or research capacity, organising joint workshops, establishing best practices, joint communication or citizen engagement activities with projects funded under other clusters and pillars of Horizon Europe, or other EU programmes, as appropriate. Proposals are not required to include details of these activities, as they will be defined during the grant agreement preparation phase and during the life of the project

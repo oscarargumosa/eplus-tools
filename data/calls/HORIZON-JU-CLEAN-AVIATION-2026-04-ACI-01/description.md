@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Integration and performance assessment of the fully electric hydrogen fuel cell powered aircraft and the direct hydrogen combustion propulsion aircraft concepts introduced in the CAJU SRIA. The topic covers the integration and co-ordination of CAJU key technology projects into a comprehensive aircraft concept at TRL4, demonstrating the viability of the aircraft concept and delivering a performance, emissions and maturity assessment. See the topic description document published with this call for full details,

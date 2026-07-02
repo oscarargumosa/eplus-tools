@@ -1,0 +1,28 @@
+{
+  "identifier": "DIGITAL-2023-CLOUD-AI-04-ICU-DATA",
+  "ccm2Id": "46029871",
+  "callIdentifier": "DIGITAL-2023-CLOUD-AI-04",
+  "callTitle": "",
+  "title": "Federated European Infrastructure for intensive care units' (ICU) data",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-11",
+  "deadline": "2023-09-26",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL Simple Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Biobanks\",\"Biomedical software\",\"Artificial intelligence\",\"Data curation\",\"Cloud computing\",\"eHealth\",\"Health information\",\"Artificial intelligence, intelligent systems, mult\",\"High-performance computing (HPC)\",\"Health data\",\"clinical data\",\"interoperability\",\"predictive medicine\",\"Secure information\",\"Intensive Care\",\"Health infrastructure\",\"Imaging, clinical examination\",\"European Health Data Space\",\"ICUs\",\"Platforms\",\"Federated infrastructure\",\"AI tools\",\"treatments\",\"clinical practice\",\"diagnostics\",\"virtual twin\",\"pandemic\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/DIGITAL-2023-CLOUD-AI-04-ICU-DATA.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.883Z"
+}

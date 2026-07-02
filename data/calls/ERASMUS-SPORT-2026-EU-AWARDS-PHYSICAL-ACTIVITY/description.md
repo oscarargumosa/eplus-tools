@@ -1,0 +1,5 @@
+## Scope
+
+This award aims to recognise sport activities implemented by organisations that have significantly contributed to promoting physical activity across education and training establishments, non-formal learning environments, workplaces or local community. It recognises efforts that inspire and create opportunities for people of all ages to integrate movement into their daily lives, fostering a more active and healthier society.
+
+This category celebrates initiatives that have successfully encouraged physical activity at all levels while strengthening awareness of the link between regular physical activity and health, with particular emphasis on prevention of cardiovascular diseases. It highlights the power of physical activity in transforming lives, workplaces, and communities, inspiring a healthier and more active society.

@@ -1,0 +1,84 @@
+{
+  "id": 1104365,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE ALICANTE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "902804",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 28500,
+  "mrr": false,
+  "descripcion": "BECAS SANTANDER SICUE DE LA UNIVERSIDAD DE ALICANTE. CURSO 2026-27",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BECAS SANTANDER SICUE DE LA UNIVERSIDAD DE ALICANTE. CURSO 2026-27",
+  "urlBasesReguladoras": "https://www.boua.ua.es/Acuerdos/DescargarAcuerdo/66941",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-20",
+  "fechaFinSolicitud": "2026-06-01",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446314,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026SBV120_conv.pdf",
+      "long": 222918,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1446313,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026SBV120_conv.pdf",
+      "long": 222918,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210608,
+      "titulo": "Extracto de la Resolución de 28 de abril de 2026, de la rectora de la Universidad de Alicante, por la que se convoca BECAS SANTANDER SICUE DE LA UNIVERSIDAD DE ALICANTE. CURSO 2026-27",
+      "tituloLeng": "Extracte de la Resolució de 28 d'abril de 2026, de la rectora de la Universitat d'Alacant, per la qual es convoca BEQUES SANTANDER SICUE DE LA UNIVERSITAT D'ALACANT. CURS 2026-27",
+      "texto": "<p>Primero. Objeto:\n</p><p>Gracias al convenio entre el Banco Santander y la Universidad de Alicante se promueve y se fomenta la movilidad del alumnado de Grado de la UA, a través de una ayuda económica que les permita realizar una estancia académica en otras universidades del territorio nacional que tengan un convenio vigente de movilidad con la UA.\n</p><p>\n</p><p>Segundo. Beneficiarios:\n</p><p>Podrá solicitar esta ayuda el alumnado de la UA que tenga una plaza adjudicada de forma definitiva en el programa de movilidad SICUE para el curso 2026-27.\n</p><p>\n</p><p>Tercero. Bases reguladoras:\n</p><p>Las bases reguladoras y convocatoria están publicadas de manera conjunta en el Boletín Oficial de la Universidad de Alicante de día 29 de abril de 2026 , en la siguiente URL:\n</p><p>https://www.boua.ua.es/Acuerdos/DescargarAcuerdo/66941\n</p><p>\n</p><p>Cuarto. Cuantía:\n</p><p>La dotación de esta convocatoria es de carácter estimativo y de un máximo de 28.500  euros.\n</p><p>\n</p><p>Quinto. Plazo de presentación de solicitudes:\n</p><p>La convocatoria se publicará en BOUA con carácter informativo previamente a la publicación de su extracto en el DOGV.\n</p><p>El plazo de solicitud se inicia el día 20 de mayo y finaliza el 1 de junio de 2026 a las 23:00 horas.\n</p>",
+      "textoLeng": "<p>Primer. Objecte:\n</p><p>Gràcies al conveni entre el Banc Santander i la Universitat d'Alacant es promou i es fomenta la mobilitat de l'alumnat de Grau de la UA, a través d'una ajuda econòmica que els permeta realitzar una estada acadèmica en altres universitats del territori nacional que tinguen un conveni vigent de mobilitat amb la UA.\n</p><p>\n</p><p>Segon. Beneficiaris:\n</p><p>Podrà sol·licitar esta ajuda l'alumnat de la UA que tinga una plaça adjudicada de manera definitiva en el programa de mobilitat SICUE per al curs 2026-27.\n</p><p>\n</p><p>Tercer. Bases reguladores:\n</p><p>Les bases reguladores i convocatòria estan publicades de manera conjunta en el Butlletí Oficial de la Universitat d'Alacant de dia 29 d'abril de 2026 , en la següent URL:\n</p><p>https://www.boua.ua.es/acuerdos/descargaracuerdo/66941\n</p><p>\n</p><p>Quart. Quantia:\n</p><p>La dotació d'esta convocatòria és de caràcter estimatiu i d'un màxim de 28.500 euros.\n</p><p>\n</p><p>Quint. Termini de presentació de sol·licituds:\n</p><p>La convocatòria es publicarà en BOUA amb caràcter informatiu prèviament a la publicació del seu extracte en el DOGV.\n</p><p>El termini de sol·licitud s'inicia el dia 20 de maig i finalitza l'1 de juny de 2026 a les 23.00 hores.\n</p>",
+      "url": "https://dogv.gva.es/va/resultat-dogv?signatura=2026/13044",
+      "cve": "DOGV-V-2026-13044",
+      "desDiarioOficial": "DOCV. D.O. DE LA COMUNITAT VALENCIANA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

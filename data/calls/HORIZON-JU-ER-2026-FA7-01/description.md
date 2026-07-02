@@ -1,0 +1,42 @@
+## Expected Outcome
+
+Based on current trends and forecasts, the number of passengers will significantly increase in the upcoming decades, and the existing transport modes may face capacity limitations without infrastructure investments. Emerging technology for guided transport systems could be a complementary solution for the increased demand, increasing also the availability of sustainable transportation solutions. Hyperloop technology could be a promising alternative, since it promises very high-speed travel with low energy needs while relying on electricity.
+
+Hyperloop is an unconventional fast track-bound transport system based on magnetic levitation and with “capsules” movement inside a vacuum tube. To ensure the applicability of this system, the safety level of this system should be demonstrated and had to be proven that this solution is at least as safe as the existing modes of transport such as rail or aviation. This call aims to develop the safety requirements, method and guidelines as well as identify certification processes which can be applied overall in Europe. In addition, it should validate some key safety components of the hyperloop system based on the defined safety guidelines which can directly support the CEN/CLC-JTC20 activities. The action will collaborate closely with CEN/CLC/JTC 20 “Hyperloop” and other relevant technical committees (e.g. CEN/TC 256, CLC/TC 9X, CEN/TC 391, ISO/TC 292) to support the definition of safety and performance requirements.
+
+The Project stemming from this topic should address all the following work streams and is expected to provide the associated outcomes:
+
+Work-stream 1: Safety and certification guidelines support
+
+Safety is an indispensable element for the development and operation of any mass public transport system. In this regard, for the hyperloop system it is an even more essential part given it is a new proposed transport mode, not only for gaining public acceptance but firstly to ensure the demonstration of the safety and reliability for this potentially new unconventional fast track-bound transport mode operating in a low-pressure environment. This workstream aims to propose safety guidelines and safety and performance requirements to support future European standardisation activities. This is in view of analysing common safety target and methodology for the proposed hyperloop technology. Results available from the EU-Rail Hyper4Rail[1] should be also considered within this work-stream.
+
+As hyperloop is considered as a cross-border transport solution, there is a need for a consistent and harmonised safety framework. This workstream should specify regulatory requirements and certifications procedures for hyperloop with close collaboration with CEN/CLC/JTC20[2] and other relevant technical committees (e.g. CEN/TC 256, CLC/TC 9X, CEN/TC 391, ISO/TC 292) while considering safety practices from existing transport modes such as rail and aviation.
+
+Work-stream 2: Functional validation of safety components for hyperloop
+
+Key hyperloop technologies should be validated in laboratory environment against the proposed safety requirements and procedures developed in Work-stream 1, so that their compliance can be assessed and open points of the proposed safety parameters can be potentially closed with the results of the testing activities. In addition a full proof of concept should be developed and tested to validate safety requirements and should demonstrate that certification procedures developed in Work-stream 1 can be successfully applied and verified in practice. This approach can further support the hyperloop promoters to pave the way to a creation of a solid regulatory framework for a unconventional fast track-bound transport mode.
+
+## Scope
+
+To successfully address the expected outcomes, the action to be funded under this topic should research, develop, and deliver upon all following research activities :
+
+Work-stream 1: Safety and certification guidelines support
+
+Within Work-stream 1 the following research activities should be carried out:
+- Definition of proposals for technical safety requirements   Analyse the safety needs of the hyperloop technology following and supporting the work done in CEN/CLC/JTC20;Collect best practices and data from the implementation of transport systems;Benchmark existing safety regulatory requirements of other transport modes and define the commonalities;Propose possible technical safety requirements related to infrastructure, design, operational protocols and system reliability for hyperloop systems for both passenger and freight in view of contributing to the prEN 18166:2025;Specify a detailed list of possible safety requirements at the level of sub-system and component defined in the action.
+- Development of a technical safety guideline proposal and input to standards:   Analyse the system architecture defined in Hyper4Rail and EN 17930:2024 and specify a list of key sub-system and components relevant for safety and propose a detailed system definition for future European standards;Carry out a sensitivity analysis of performances/operations and safety requirements for the hyperloop system with the aim to identify the target safety level based on results coming from Hyper4Rail;Analyse the safety practices from existing transport modes such as rail and aviation and propose a common risk assessment approach for risk mitigation;Identify and collect hazards built on the work done in Hyper4Rail and establish a safety method taking into account safety methods from other existing transport modes such as rail and aviation;Recommendations for a common safety method for operations and maintenance of the hyperloop system including methods to verify compliance with the technical safety requirements;Consultation with relevant regulatory bodies and collaboration with CEN/CLC/JTC20 and if relevant with other relevant technical committees (e.g. CEN/TC 256, CLC/TC 9X, CEN/TC 391, ISO/TC 292);
+- Develop a Certification Roadmap proposal:   Identify the legal requirements and processes for certification of future hyperloop solutions based on experience from existing transport solutions;Develop a roadmap including timelines, estimated costs (taking into account also the tests performed in WS2), and high-level designs of necessary certification facilities based on the hyperloop concept developed in Hyper4Rail;Propose a basic decision-making structure (Including the possibility of using existing regulatory bodies EASA, ERA) leading to the authorisation of running operation in Europe of the hyperloop new potential transport system: on regulatory, standard and industry standard levels;Consultation process with regulatory bodies: EASA, ERA, and others applying relevant regulations.
+
+Work-stream 2: Functional validation of safety components for hyperloop
+
+Within work-stream 2 the following research activities should be carried out:
+- Functional validation of key technologies, components, and subsystems critical for passenger safety in laboratory environment (TRL4), with at least:   Validation of control command and signalling system with special focus on the communication aspects in low frequency but high density environment;Validation of at least 2 key components of the vehicle (e.g. braking systems or traction bogies) in a low pressure environment;Validation of the functional interface for passenger exchange door on board the vehicle / platform screen door for passengers exit station.
+- Validation of the above systems according to the defined requirements and means of verification developed in work-stream 1 and testing activities performed in view of addressing the open point identified in wok-stream 1 .Design of the procedure and test environment needed to validate all safety requirements and to apply and verify the certification process defined in work-stream 1.
+
+## null
+
+Activities are expected to achieve a TRL 4 sub-system validation– see part B of Horizon Europe Work Programme 2026-2027 General Annexes for a guide to the TRL definitions and criteria to be used.
+
+[1] https://rail-research.europa.eu/rail-projects/hyper4rail/
+
+[2] https://standards.cencenelec.eu/dyn/www/f?p=205:7:0::::FSP_ORG_ID:2739090&cs=182927FD714A2A1F4116CCDD5C71BFF46

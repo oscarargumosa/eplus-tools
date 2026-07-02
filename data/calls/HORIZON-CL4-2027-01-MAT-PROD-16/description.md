@@ -1,0 +1,29 @@
+## Expected Outcome
+
+- Increased recovery rates of valuable raw materials, particularly critical raw materials from low grade or complex ores and/or from mining waste;
+- Increased economic performance in terms of higher material-, water-, energy- and cost-efficiency and flexibility in minerals processing and metallurgical processes; and
+- Improved health, safety and environmental performance of the operations throughout the whole life cycle that is considered, including a reduction in waste, wastewater and generation of emissions of air pollutants and a better recovery of resources from generated waste, reducing the environmental footprint and contributing to biodiversity and ecosystems preservation.
+
+## Scope
+
+Actions should develop and validate / demonstrate pilot scale facility located in the EU integrating relevant processing and refining technologies for improved recovery of raw materials from low grade and/or complex ores from extractive wastes, reduction of waste and water and air pollution, higher energy efficiency and reduction of land and sea-use change, habitat loss, degradation and fragmentation. The action can also focus on reducing the content of toxic elements or compounds in the resulting material products. The actions should target minerals and metals, particularly critical raw materials.
+
+The solution proposed should be flexible enough to adapt to different or variable ore grades and extractive waste streams and should be supported by efficient and robust process control. Where relevant, any solution proposed for the reduction of the content of toxic elements or compounds in the resulting materials should also include the appropriate management of the hazardous substances removed.
+
+Actions should develop intelligent and innovative production systems which better utilise natural resources by minimising losses during waste-rock separation in an optimised and energy-efficient process and by minimising use of water.
+
+Recycling of end-of-life products is excluded from this topic.
+
+Actions should envisage clustering activities with other relevant selected projects for cross-projects co-operation, consultations and joint activities on cross-cutting issues and share of results as well as participating in joint meetings and communication events. To this end proposals should foresee a dedicated work package and/or task, and earmark the appropriate resources accordingly.
+
+Actions should facilitate the market uptake of solutions developed through industrially- and user-driven multidisciplinary consortia covering the relevant value chain and should consider standardisation aspects when relevant. The action should also include the analysis of financial opportunities ensuring the market exploitation and replication of the circular business model behind the developed solutions as new processes, products and/or services. The industry based in the EU, and users of recovered secondary raw materials should assume prominent role in the proposed actions, supported by adequate allocation of resources.
+
+Proposals submitted under this topic should include a business case and exploitation strategy, as outlined in the introduction to this Destination. For TRLs 6-7, a credible strategy to achieve full-scale deployment in the EU is expected, indicating the commitments of the leading partners after the end of the project.
+
+International cooperation is encouraged with countries with which the EU has signed Strategic Partnerships on raw materials, especially with Ukraine.[1]
+
+## null
+
+Activities are expected to start at TRL 5 and achieve TRL 7 by the end of the project – see General Annex B.
+
+[1]  https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/raw-materials-diplomacy_en

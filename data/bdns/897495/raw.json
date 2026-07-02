@@ -1,0 +1,131 @@
+{
+  "id": 1099056,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "DIRECCIÓN GENERAL DE EMPRESAS"
+  },
+  "sedeElectronica": "www.jccm.es",
+  "codigoBDNS": "897495",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 40000000,
+  "mrr": false,
+  "descripcion": "Resolución de 01/04/2026, por la que se aprueba la convocatoria de las ayudas -Adelante Inversión-, para el fomento de la inversión y la mejora de la productividad empresarial en Castilla-La Mancha, cofinanciables por el FEDER, para el ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Orden 125/2024, por la que se establecen las bases reguladoras de las ayudas del Programa -Adelante Inversión-",
+  "urlBasesReguladoras": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/02/17/pdf/2026_901.pdf&tipo=rutaDocm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-15",
+  "fechaFinSolicitud": "2027-03-15",
+  "textInicio": "Desde el día siguiente a la publicación de la Resolución y su extracto en el DOCM.",
+  "textFin": null,
+  "ayudaEstado": "SA.115448",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.115448",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS REGIONALES A LA INVERSIÓN "
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434733,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCION CONVOCATORIA INVERSION 2026_DEF_FIRMADO_102002.PDF",
+      "long": 591751,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

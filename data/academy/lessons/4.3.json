@@ -1,0 +1,58 @@
+{
+  "id": "4.3",
+  "code": "Part B · 4.3",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.3 Staff effort (esfuerzo de personal)",
+  "subtitle": "Qué es el esfuerzo persona/mes por WP, por qué en lump sum suele ir como n/a, y cómo usarlo igual para dimensionar tu proyecto por dentro.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.3",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Aparece una tabla de \"staff effort\" en persona/mes por socio y por WP, y te entra el pánico de tener que calcular horas como en los viejos proyectos de costes reales.",
+    "comprender": "Que el staff effort es una estimación del trabajo humano que requiere cada WP, medido en persona/mes, pero que en KA2 lump sum no se reporta como coste real.",
+    "objetivo": "Saber qué significa persona/mes, por qué en lump sum este campo suele marcarse n/a, y cómo usar igualmente el concepto para comprobar que tu proyecto está bien dimensionado.",
+    "confusion": "Creer que tienes que justificar horas con partes de trabajo y que el importe depende del staff effort. En lump sum el importe es cerrado: el esfuerzo es orientativo, no facturable.",
+    "importa": "Porque aunque vaya n/a, pensar en persona/mes te salva de prometer un WP enorme con un solo socio a media jornada: te obliga a comprobar que el trabajo es realista."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.3.</b> El <b>esfuerzo de personal</b> (<em>staff effort</em>) por work package, normalmente expresado en <b>persona/mes</b> (PM) y desglosado por socio, con el <b>líder en negrita</b>. Un persona/mes equivale, grosso modo, al trabajo de una persona a tiempo completo durante un mes.</div><p>Este campo es una herencia del modelo antiguo de costes reales, donde el dinero de personal salía precisamente de multiplicar persona/mes por una tarifa. En aquel mundo, el staff effort era <b>presupuesto puro</b>.</p><p>En KA2 a tanto alzado el escenario cambia: como el importe es <b>cerrado y no se reporta coste real de personal</b>, este campo pierde su función presupuestaria. Por eso, en la mayoría de solicitudes lump sum, <b>el staff effort se marca como n/a</b> o simplemente no se cuantifica.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>Aquí la estrategia tiene dos caras según lo que muestre tu formulario:</p><ol class=\"obj\"><li><b>Si el campo está y es opcional en lump sum:</b> márcalo <b>n/a</b> con naturalidad. No estás escondiendo nada: es que el modelo a tanto alzado no exige reportar coste real de personal. Es la respuesta correcta, no un atajo.</li><li><b>Aunque vaya n/a, haz el cálculo internamente.</b> Estima cuántos persona/mes necesita de verdad cada WP. Si un WP de desarrollo de currículo te sale en 0,5 PM, es que lo has infravalorado; si te sale en 30 PM con dos socios pequeños, no es realista.</li><li><b>Usa ese ejercicio para defender la coherencia en otras secciones.</b> El staff effort no se evalúa como cifra, pero el <em>realismo del plan</em> sí. Si en 4.2 prometes 6 módulos y 3 pilotajes, el evaluador hace su propia estimación mental de esfuerzo: que la tuya cuadre.</li></ol><div class=\"callout callout-good\"><b>Idea clave:</b> el staff effort en lump sum es un <em>termómetro privado</em>, no una factura pública. Te dice si tu proyecto cabe en las manos que tiene, antes de que el evaluador lo note.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Así se vería el campo en una solicitud lump sum honesta, donde se reconoce el n/a pero se demuestra que se pensó:</p><table class=\"cmp\"><thead><tr><th>WP</th><th>Staff effort (formulario)</th><th>Estimación interna (privada)</th></tr></thead><tbody><tr><td>WP1 · Gestión</td><td>n/a</td><td>~6 PM repartidos (COO lidera)</td></tr><tr><td>WP2 · Investigación</td><td>n/a</td><td>~8 PM (BEN1 lidera, 3 socios contribuyen)</td></tr><tr><td>WP3 · Desarrollo</td><td>n/a</td><td>~12 PM (BEN2 lidera, el grueso del trabajo)</td></tr><tr><td>WP4 · Difusión</td><td>n/a</td><td>~5 PM (BEN3 lidera)</td></tr></tbody></table><p>En el formulario solo aparece la columna del medio (\"n/a\"). La de la derecha <b>no se escribe</b>: es tu cálculo de cocina. Pero gracias a ella sabes que el WP3 es el más pesado (coherente con que se lleve más presupuesto en 4.x) y que ningún WP queda ridículamente sub-dotado.</p><div class=\"callout callout-key\">El <b>n/a</b> es correcto y suficiente para el evaluador. Lo que marca la diferencia es que <em>detrás</em> del n/a hubo un dimensionamiento real, y eso se nota en lo coherente que es el resto del plan.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Tengo que calcular horas y tarifas como antes.»</b> → No en lump sum: el importe es cerrado. El staff effort no se traduce en dinero facturable.</li><li><span class=\"err-x\">✗</span> <b>«Dejar n/a parece que no me lo he currado.»</b> → Al contrario: n/a es la respuesta correcta para el modelo a tanto alzado. Lo que importa es que el plan sea realista, no la cifra.</li><li><span class=\"err-x\">✗</span> <b>«Como va n/a, ni me molesto en pensar el esfuerzo.»</b> → Error: el evaluador estima el esfuerzo por su cuenta al leer tus tareas. Si prometes mucho con poco, lo detecta aunque el campo esté vacío.</li><li><span class=\"err-x\">✗</span> <b>«Inflo persona/mes para parecer ambicioso.»</b> → Si lo rellenas, números irreales (un socio diminuto con 40 PM) restan credibilidad. Realismo siempre.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.3</td><td>Incluye el campo de staff effort (persona/mes por WP, líder en negrita); opcional/n/a en lump sum.</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Muestra el campo de esfuerzo y su tratamiento en el modelo a tanto alzado.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>\"Quality of design and implementation\": no puntúa la cifra de PM, pero sí el realismo y la proporción del esfuerzo por WP.</td></tr></tbody></table>"
+    }
+  ]
+}

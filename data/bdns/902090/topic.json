@@ -1,0 +1,110 @@
+{
+  "source": "bdns",
+  "source_id": "902090",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ARETXABALETA / AYUNTAMIENTO DE ARETXABALETA",
+  "nuts_codes": [
+    "ES211",
+    "ES212",
+    "ES213",
+    "ES220"
+  ],
+  "nuts_primary": "ES211",
+  "title": "CONVOCATORIA PÚBLICA DE LOS DIFERENTES PROGRAMAS DE SUBVENCIONES ESTABLECIDOS POR EL AYUNTAMIENTO DE ARETXABALETA PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 172600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    },
+    {
+      "codigo": "78.2",
+      "descripcion": "Actividades de las empresas de trabajo temporal y otra provisión de recursos humanos"
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    },
+    {
+      "codigo": "87.2",
+      "descripcion": "Asistencia en establecimientos residenciales para personas que padecen una enfermedad mental o una drogodependencia o que han recibido un diagnóstico al respecto"
+    },
+    {
+      "codigo": "85.1",
+      "descripcion": "Educación preprimaria"
+    },
+    {
+      "codigo": "V",
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES"
+    },
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    },
+    {
+      "codigo": "87.9",
+      "descripcion": "Otras actividades de asistencia en establecimientos residenciales"
+    },
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://uzt.gipuzkoa.eus/PortalV/7.00/Default.aspx?idioma=eu-ES&idAyto=13",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902090",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.aretxabaleta.eus/eu/tramiteak/2026ko-dirulaguntzen-oinarriak.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto de esta convocatoria en el BOG",
+  "text_fin": "Plazo de un mes, contado desde el día siguiente a la publicación en el BOG",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.509Z"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "LS.15",
+  "code": "UD-LS.15",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "F — Técnicas de redacción",
+  "title": "Anexo 2 · Cómo construir tus indicadores (R.A.C.E.R.)",
+  "subtitle": "El marco R.A.C.E.R. para que tus indicadores midan lo correcto y aguanten la evaluación, con un catálogo fiel de ejemplos cuantitativos y cualitativos del Handbook.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "Annex 2 del Handbook (How to build your indicators)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Llegas a la casilla de indicadores y pones lo primero que se te ocurre («nº de participantes»), sin pensar si mide de verdad tu objetivo, si los socios están de acuerdo o si se puede verificar.",
+    "comprender": "Que un buen indicador no es cualquier número: tiene que cumplir cinco condiciones (R.A.C.E.R.) y hay dos familias —cuantitativos y cualitativos— que se complementan.",
+    "objetivo": "Saber filtrar tus indicadores con R.A.C.E.R. y construir, para cada objetivo, al menos un indicador cuantitativo y uno cualitativo con su valor objetivo (target).",
+    "confusion": "Creer que más indicadores = mejor, o que solo valen los números. Un indicador manipulable, ambiguo o que mide lo que no toca resta credibilidad a todo el proyecto.",
+    "importa": "Porque tus indicadores son cómo demuestras que lograste los resultados; en lump sum, esa demostración es la que sostiene tu pago."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "content",
+      "title": "De objetivos a indicadores: la herramienta que faltaba",
+      "html": "<p>En el anexo anterior viste cómo fijar objetivos S.M.A.R.T. El problema es que un objetivo, por bien formulado que esté, necesita una <b>forma de medirse</b>. Ahí entran los <b>indicadores</b>.</p><p>Además de dar un marco para definir objetivos, el toolbox de Better Regulation de la Comisión Europea ofrece una herramienta útil para definir indicadores: el marco <b>R.A.C.E.R.</b> Según este marco, los indicadores deben ser <b>Relevant, Accepted, Credible, Easy y Robust</b>.</p><div class=\"callout callout-key\">Piensa en R.A.C.E.R. como un <b>filtro de calidad</b>: cualquier indicador que se te ocurra debe pasar las cinco condiciones antes de entrar en tu solicitud. Si falla una, busca otro.</div>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. El marco R.A.C.E.R. (la tabla)",
+      "html": "<table><thead><tr><th>Letra</th><th>Qué significa</th></tr></thead><tbody><tr><td><b>Relevant</b><br>(Relevante)</td><td><b>Estrechamente ligado al objetivo</b> que se quiere lograr. No deben ser <b>sobre-ambiciosos</b> y deben <b>medir lo correcto</b> (la cosa adecuada).</td></tr><tr><td><b>Accepted</b><br>(Aceptado)</td><td>La <b>definición del indicador</b> y la <b>forma en que se mide</b> deben estar <b>acordadas por todos los socios</b>, y las responsabilidades vinculadas deben estar <b>claramente atribuidas</b>.</td></tr><tr><td><b>Credible</b><br>(Creíble)</td><td><b>No ambiguo</b> y <b>verificable</b>, también para <b>observadores externos</b>.</td></tr><tr><td><b>Easy</b><br>(Fácil)</td><td>La <b>recogida de datos</b> debe ser <b>fácil y no cara</b>. La información que proporciona el indicador debe ser <b>fácilmente comprensible</b>.</td></tr><tr><td><b>Robust</b><br>(Robusto)</td><td>El valor del indicador <b>no es fácil de manipular</b>.</td></tr></tbody></table>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Dos familias de indicadores (y una advertencia)",
+      "html": "<p>El Handbook ofrece una <b>lista de indicadores de ejemplo</b> organizada en dos columnas: <b>cuantitativos</b> y <b>cualitativos</b>. Antes de verlos, una advertencia importante del propio documento:</p><div class=\"callout callout-warn\">La lista es <b>no exhaustiva, puramente indicativa</b> y su objetivo es <b>facilitar el trabajo</b> de los solicitantes a la hora de definir medidas cuantitativas y/o cualitativas para el logro de sus objetivos. No es una lista cerrada de la que «elegir»: son inspiración.</div><p>La idea es combinarlas: los <b>cuantitativos</b> te dicen <em>cuánto</em>; los <b>cualitativos</b> te dicen <em>qué tan bien</em>. Un proyecto sólido usa ambas.</p>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Indicadores CUANTITATIVOS (muestra fiel)",
+      "html": "<p>Los cuantitativos suelen expresarse como <b>«número de…»</b> o como <b>«porcentaje de…»</b>. Una muestra representativa de los ejemplos del Handbook:</p><p><b>Número de:</b></p><ul><li><b>Participantes</b> en eventos, reuniones, actividades de formación, etc.</li><li><b>Informes de reuniones</b> de socios.</li><li><b>Eventos públicos</b> conectados con los objetivos y resultados del proyecto.</li><li><b>Inscripciones</b> a cursos de e-learning.</li><li><b>Visitas (hits)</b> a la web del proyecto y <b>visitantes únicos</b>.</li><li>Visitas al <b>blog</b> del proyecto y <b>documentos descargados</b>.</li><li><b>Entidades públicas y privadas</b> con las que se comparten los resultados del proyecto.</li><li><b>Stakeholders y multiplicadores</b> alcanzados a través de las actividades de networking de los socios.</li><li><b>Manuales en diferentes idiomas.</b></li><li><b>Certificados</b> desarrollados y su uso en los países participantes.</li><li><b>Normas o procedimientos internos modificados o constituidos</b> en cada país, dirigidos a empresas o instituciones educativas.</li><li><b>Open Badges</b> obtenidos y uso de otras herramientas digitales.</li><li><b>Cuestionarios</b> distribuidos y número de respondientes.</li></ul><p><b>Porcentaje de:</b></p><ul><li><b>Estudiantes</b> que consideran que sus competencias (p. ej. en TIC/IT) han mejorado significativamente.</li><li>Estudiantes que consideran que sus <b>valores interculturales</b> se han promovido significativamente.</li><li>Estudiantes que consideran que su <b>participación juvenil activa</b> (voto) se ha fomentado significativamente.</li><li><b>Docentes</b> que consideran que sus competencias de enseñanza han mejorado significativamente.</li><li><b>Directores (headmasters)</b> que consideran que el proyecto ha contribuido significativamente a cubrir las <b>necesidades del centro</b>.</li><li>Docentes dispuestos a explotar los manuales como <b>nuevo método</b> (p. ej. para la identificación temprana de dificultades de aprendizaje).</li></ul>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. Indicadores CUALITATIVOS (muestra fiel)",
+      "html": "<p>Los cualitativos capturan calidad, satisfacción y cambios que un número solo no refleja. Muestra representativa de los ejemplos del Handbook:</p><ul><li><b>Mejora de la alfabetización mediática</b> (valorar información online, validar recursos, hacer búsquedas inteligentes, etc.).</li><li><b>Nivel de satisfacción</b> de las instituciones participantes.</li><li><b>Satisfacción de los participantes</b> en las actividades de formación.</li><li>Satisfacción de los participantes con los <b>materiales educativos</b> y los ponentes/profesores invitados.</li><li><b>Mejora de las competencias</b> de los socios para <b>enseñar competencias interculturales</b>.</li><li><b>Calidad y alcance</b> de los informes de evaluación de los participantes.</li><li><b>Implicación de los socios</b> en las actividades del proyecto (a través de los lead-partners) y calidad de los resultados.</li><li><b>Docentes con mejores competencias</b> en la impartición de currículo, empleando un abanico más amplio de estrategias de aula, evidenciado en observaciones de enseñanza.</li><li><b>Nivel de know-how organizativo</b> (p. ej. en formación de trabajadores juveniles y desarrollo de apps de aprendizaje).</li><li><b>Feedback positivo</b> de grupos de usuarios finales, expertos y participantes en la fase de testeo.</li><li><b>Buenas prácticas e historias</b> desarrolladas y difundidas por los participantes.</li><li><b>Responsabilidad social</b> y disposición a participar en el cambio.</li><li><b>Comparación de los resultados</b> del proyecto con el <b>statu quo original</b> previo al inicio de las actividades.</li><li><b>Feedback de los estudiantes</b> y observación directa que muestre progreso visible y el logro de las metas planificadas.</li><li><b>Cumplimiento del plan de trabajo</b> (administrativo y técnico): respeto de los estándares de outputs/resultados de la propuesta.</li><li><b>Puntualidad, completitud y entrega a tiempo</b> en la preparación y entrega de outputs, informes y otra información.</li><li><b>Nivel de comunicación y participación de los socios</b> (reuniones, talleres, conference calls, colaboración en materiales y actividades, etc.).</li></ul>"
+    },
+    {
+      "id": "ejercicio",
+      "kind": "exercise",
+      "title": "Ejercicio práctico — Un cuantitativo + un cualitativo con target",
+      "html": "<div class=\"callout callout-exercise\"><b>Enunciado.</b> Toma este objetivo: «<em>40 docentes de FP mejoran su competencia para integrar contenidos interculturales en el aula</em>». Construye <b>un indicador cuantitativo</b> y <b>uno cualitativo</b>, cada uno con su <b>valor objetivo (target)</b>. Comprueba que ambos pasan R.A.C.E.R.</div><p><b>Propuesta de solución:</b></p><table><thead><tr><th>Tipo</th><th>Indicador</th><th>Target</th></tr></thead><tbody><tr><td><b>Cuantitativo</b></td><td>Número de docentes que completan el itinerario formativo.</td><td>≥ 40 docentes (de los 4 centros) al mes 18.</td></tr><tr><td><b>Cualitativo</b></td><td>Mejora de competencias para enseñar contenidos interculturales, evidenciada en observaciones de aula y cuestionario pre/post.</td><td>El 75 % muestra progreso visible en la observación de aula.</td></tr></tbody></table><div class=\"callout callout-good\"><b>Chequeo R.A.C.E.R.:</b> <b>R</b>elevante (mide justo el objetivo); <b>A</b>ceptado (definición y método acordados por los socios, con responsable); <b>C</b>reíble (verificable por un observador externo vía registros de asistencia y observaciones); <b>E</b>asy (recogida barata: lista de finalización + cuestionario); <b>R</b>obusto (difícil de manipular si la observación la hace un tercero).</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Cuantos más indicadores, mejor.»</b> → No. Mejor pocos que pasen R.A.C.E.R. que muchos vagos o no verificables.</li><li><span class=\"err-x\">✗</span> <b>«Solo valen los números.»</b> → Falso. Cuantitativos y cualitativos se complementan: cuánto + qué tan bien.</li><li><span class=\"err-x\">✗</span> <b>«El indicador lo decide el coordinador y ya.»</b> → Debe ser <em>Accepted</em>: definición, medición y responsabilidades acordadas por todos los socios.</li><li><span class=\"err-x\">✗</span> <b>«Si yo me entiendo, basta.»</b> → Debe ser <em>Credible</em>: no ambiguo y verificable también por observadores externos.</li><li><span class=\"err-x\">✗</span> <b>«Pongo un indicador súper ambicioso para impresionar.»</b> → R.A.C.E.R. pide <em>no sobre-ambición</em> y robustez (que no sea fácil de manipular).</li><li><span class=\"err-x\">✗</span> <b>«Copio toda la lista del Handbook.»</b> → Es no exhaustiva e indicativa: úsala como inspiración, no como menú a copiar.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the KA2 lump sum funding model · Annex 2 (How to build your indicators)</td><td>Marco R.A.C.E.R. (tabla completa) y catálogo de ejemplos de indicadores cuantitativos y cualitativos. La nota remite al Better Regulation toolbox de la Comisión.</td></tr></tbody></table>"
+    }
+  ]
+}

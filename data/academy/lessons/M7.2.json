@@ -1,0 +1,100 @@
+{
+  "id": "M7.2",
+  "code": "UD-M7.2",
+  "module": "M7",
+  "moduleTitle": "El presupuesto sin miedo",
+  "bloque": "G — Presupuesto",
+  "title": "El modelo de financiación KA2 a fondo",
+  "subtitle": "Cómo funciona el dinero en una asociación KA2 (lump sums) y qué significa para cómo escribes tu proyecto.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "35–45 min (lectura + ejercicio)",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección + 1 infografía + 1 ejercicio guiado",
+    "Especialidad": "Transversal (núcleo) · se reutiliza en S5 KA220 y S6 KA210",
+    "Estado": "Borrador",
+    "Fuente origen": "kb-0018 Handbook on the KA2 lump sum funding model"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El presupuesto es lo que más intimida del proyecto: la gente ve tablas y cifras y siente que no controla su propio dinero, así que lo deja para el final o lo copia sin entenderlo.",
+    "comprender": "Que en KA2 ya no se presupuesta por gastos con facturas, sino por trabajo entregado a precio cerrado (lump sum): un importe fijo que se cobra si haces lo que prometiste.",
+    "objetivo": "Saber qué es un lump sum, qué tramo elegir según tu acción (KA210/KA220) y cómo el dinero se reparte entre work packages y se cobra al completarlos.",
+    "confusion": "Creer que hay que guardar todas las facturas y justificar el gasto. En lump sum se justifica trabajo hecho y resultados, no gasto: si un WP no se completa, esa parte no se paga.",
+    "importa": "Porque como no hay desglose de gasto, tus work packages SON tu presupuesto. Si están flojos, el dinero parece injustificado y el evaluador te baja la nota."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "idea",
+      "title": "Por qué esta unidad existe",
+      "html": "<p>El <em>Handbook</em> oficial de la Comisión sobre el modelo de financiación a tanto alzado (fuente <b>kb-0018</b>) es la referencia definitiva… y también un PDF denso, en inglés y escrito para gestores. La mayoría de la gente lo abre, ve tablas y se bloquea.</p><p><b>Esta unidad traduce ese documento a lenguaje humano:</b> qué es una «cantidad a tanto alzado», por qué cambió las reglas del juego en 2021, y cómo afecta a <em>cómo escribes</em> tu proyecto. Es el puente entre «me da miedo el presupuesto» y «entiendo cómo se reparte mi dinero».</p><div class=\"callout callout-key\"><b>Analogía que usaremos en toda la lección.</b> Un proyecto KA2 no se paga <em>por horas y facturas</em> (como un fontanero que te pasa el tique de cada pieza), sino <em>a precio cerrado, llave en mano</em> (como una reforma pactada: acordamos un precio y una obra; si entregas la obra, cobras; no me enseñas tiques). Eso es un <b>lump sum</b>.</div>"
+    },
+    {
+      "id": "objetivos",
+      "kind": "objetivos",
+      "title": "Qué sabrás hacer al terminar",
+      "html": "<p>Al terminar esta unidad serás capaz de:</p><ol class=\"obj\"><li><b>Explicar</b> con tus palabras qué es una cantidad a tanto alzado (lump sum) y en qué se diferencia del antiguo modelo de costes reales.</li><li><b>Identificar</b> el tramo de financiación que te corresponde según el tipo de acción (KA210: 30.000 / 60.000 € · KA220: 120.000 / 250.000 / 400.000 €).</li><li><b>Relacionar</b> presupuesto y <em>work packages</em>: entender que el dinero se reparte entre paquetes de trabajo y se cobra al completarlos.</li><li><b>Anticipar</b> qué mira el evaluador y la Agencia en el presupuesto (coherencia, no facturas).</li></ol>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. El cambio de 2021 (el gancho)",
+      "html": "<p>Si alguien te contó cómo era un proyecto europeo «antes», seguramente recuerde la palabra <b>Excel</b>. Hasta 2020, una asociación se presupuestaba <em>por costes reales</em>: rellenabas una hoja con cada categoría de gasto (personal, viajes, equipos, subcontratación…), y durante todo el proyecto guardabas <b>tiques, facturas y partes de horas</b> para justificar hasta el último euro. Una parte enorme de la energía del proyecto se iba en contabilidad.</p><p>Desde la convocatoria <b>2021</b>, las asociaciones KA2 (tanto KA210 como KA220) funcionan con <b>cantidades a tanto alzado</b> (<em>lump sums</em>). ¿Qué significa esto para ti, en una frase?</p><div class=\"callout callout-good\"><b>Menos burocracia de gasto, más foco en demostrar que el trabajo se hace.</b></div><p>El cambio no es un detalle técnico de contabilidad: <b>cambia qué tienes que escribir y qué te van a mirar</b>. Y por eso esta lección no va solo de números, va de redacción.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. ¿Qué es exactamente un lump sum?",
+      "html": "<p>Volvamos a la analogía de la obra. Cuando contratas una reforma <b>«llave en mano»</b>, acuerdas con el constructor <em>una obra concreta y un precio cerrado</em>. No le pides el tique de cada saco de cemento: le pides que la cocina quede terminada y funcionando. Si la entrega, le pagas el precio pactado. Si deja la cocina a medias, no le pagas como si estuviera acabada.</p><p>Un <b>lump sum</b> en KA2 es exactamente eso. La Unión Europea te concede un <b>importe cerrado</b> a cambio de que <em>hagas un trabajo y logres unos resultados</em> que tú mismo defines en la solicitud. No te paga por <em>gastar</em>; te paga por <em>hacer y entregar</em>.</p><table class=\"cmp\"><thead><tr><th>Antes (costes reales)</th><th>Ahora (lump sum)</th></tr></thead><tbody><tr><td>Presupuestas gasto por categorías</td><td>Presupuestas <b>trabajo</b> por paquetes (WP)</td></tr><tr><td>Justificas con facturas y tiques</td><td>Justificas con <b>resultados entregados</b></td></tr><tr><td>Te auditan el gasto</td><td>Te evalúan si el WP se completó</td></tr><tr><td>La energía se va en contabilidad</td><td>La energía se va en <b>diseñar y demostrar</b></td></tr></tbody></table>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. ¿Cuánto me toca? Los tramos",
+      "html": "<p>En el modelo a tanto alzado no inventas una cifra: <b>eliges un tramo</b> de una lista cerrada. El tramo depende del tipo de acción:</p><div class=\"tiers\"><div class=\"tier\"><span class=\"tier-tag\">KA210 · Small-scale</span><div class=\"tier-vals\"><b>30.000 €</b><span>o</span><b>60.000 €</b></div></div><div class=\"tier\"><span class=\"tier-tag\">KA220 · Cooperation</span><div class=\"tier-vals\"><b>120.000 €</b><span>·</span><b>250.000 €</b><span>·</span><b>400.000 €</b></div></div></div><p><b>¿Cómo se decide el tramo?</b> No por ambición de cobrar más, sino por <em>coherencia</em>: el tramo tiene que encajar con el volumen de trabajo, el número de socios, las actividades y los resultados que prometes. Pedir <b>400.000 €</b> para un proyecto pequeño con dos socios y un par de reuniones no te hace ganar más dinero: te hace <b>perder puntos</b>, porque el evaluador ve un presupuesto incoherente con el plan.</p><div class=\"callout callout-key\">Regla mental: <b>el tramo es una promesa de volumen de trabajo</b>, no un deseo. Elige el que puedas <em>llenar</em> de actividades reales y resultados verificables.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. El dinero vive en los work packages",
+      "html": "<p>Aquí está la idea que más cuesta y la más importante. El importe total <b>no es una bolsa única</b>: se <b>reparte entre paquetes de trabajo</b> (<em>work packages</em>, WP). Cada WP se queda con un trozo del sobre.</p><p>Un proyecto típico tiene un WP de <b>gestión</b> y varios WP de <b>actividades</b> que producen los resultados (formaciones, materiales, eventos, herramientas…). El reparto orientativo:</p><ul class=\"bullets\"><li>El WP de <b>gestión y coordinación</b> no debería comerse el proyecto. Una referencia sana es <b>~20 % como máximo</b>; si la gestión se lleva la mitad, algo está descompensado.</li><li>El <b>grueso del dinero</b> va a los WP que generan resultados tangibles, porque son los que justifican la subvención.</li></ul><div class=\"callout callout-link\">🔗 Esto conecta directamente con <b>M6 — Work packages: la columna vertebral del proyecto</b>. Aquí lo vemos desde el dinero; allí, desde el diseño.</div>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. ¿Cuándo y cómo cobro?",
+      "html": "<p>En el modelo a tanto alzado <b>no envías facturas ni partes de horas</b>. Se paga <b>contra la realización de los WP y el logro de los resultados</b>, que se evalúan en el <b>informe final</b>.</p><p>La consecuencia es contundente y conviene interiorizarla desde el primer día:</p><div class=\"callout callout-warn\">Si un work package <b>no se completa</b>, esa parte del dinero <b>no se paga</b>. No es «justifica menos gasto»: es «ese trozo del sobre no se abre».</div><p>Por eso el mensaje clave de todo el modelo es:</p><div class=\"callout callout-good\"><b>En KA2 no justificas gasto: justificas trabajo hecho y resultados.</b></div>"
+    },
+    {
+      "id": "s6",
+      "kind": "content",
+      "title": "6. Qué cambia en cómo escribes",
+      "html": "<p>Cerramos volviendo al motivo por el que esta lección está en el módulo de presupuesto <em>y</em> es una lección de redacción. Como <b>no hay un desglose de gasto que rellenar</b>, lo único que el evaluador puede mirar para juzgar si tu dinero está justificado son <b>tus work packages y sus entregables</b>.</p><div class=\"callout callout-key\">Dicho de otro modo: <b>tus WP y sus resultados <em>son</em> tu presupuesto.</b></div><p>De ahí salen tres consecuencias prácticas para tu escritura:</p><ol class=\"obj\"><li>Un WP <b>vago</b> = dinero injustificado = puntuación baja. Cada paquete debe dejar claro <b>qué se hace, quién lo lidera y qué resultado tangible produce.</b></li><li>El <b>reparto del importe</b> entre WP debe contar una historia coherente: más dinero donde hay más trabajo y más impacto.</li><li>Cada entregable tiene que ser <b>verificable</b>. Si no se puede comprobar que existe, no defiende su parte del sobre.</li></ol>"
+    },
+    {
+      "id": "infografia",
+      "kind": "media",
+      "title": "Infografía propuesta — «El sobre cerrado»",
+      "html": "<p>Diagrama que resume toda la lección de un vistazo:</p><div class=\"infografia\"><div class=\"info-top\">IMPORTE TOTAL (lump sum elegido)</div><div class=\"info-arrow\">se reparte en ▾</div><div class=\"info-wps\"><div class=\"info-wp\"><b>WP1 · Gestión</b><span>€ · ~20%</span><small>resultado: coordinación</small></div><div class=\"info-wp\"><b>WP2 · Actividad</b><span>€</span><small>entregable verificable</small></div><div class=\"info-wp\"><b>WP3 · Actividad</b><span>€</span><small>entregable verificable</small></div></div><div class=\"info-arrow\">al final ▾</div><div class=\"info-result\"><span class=\"ok\">✔ entregado = cobras ese WP</span><span class=\"no\">✗ no entregado = no cobras esa parte</span></div></div><p class=\"note-prod\">📌 <em>Nota de producción: encargar versión visual final con la paleta de marca (navy + amarillo). Este bloque es el boceto del concepto.</em></p>"
+    },
+    {
+      "id": "actividad",
+      "kind": "exercise",
+      "title": "Actividad práctica — Reparte el sobre",
+      "html": "<div class=\"callout callout-exercise\"><b>Enunciado.</b> Tu proyecto <b>KA210</b> ha elegido el tramo de <b>60.000 €</b>. Repártelo en <b>3 work packages</b> (gestión + 2 de actividades). Asigna a cada WP un importe y un resultado verificable. Después responde: <em>si el WP3 no se completa, ¿qué cobras?</em></div><p><b>Propuesta de solución comentada</b> (una entre varias válidas):</p><table class=\"cmp\"><thead><tr><th>WP</th><th>Importe</th><th>Resultado verificable</th></tr></thead><tbody><tr><td>WP1 · Gestión y coordinación</td><td>10.000 € (~17%)</td><td>Plan de calidad + informes de seguimiento</td></tr><tr><td>WP2 · Guía metodológica</td><td>28.000 €</td><td>Guía publicada (PDF) + 2 talleres piloto</td></tr><tr><td>WP3 · Difusión y evento final</td><td>22.000 €</td><td>Evento multiplicador + 3 publicaciones</td></tr></tbody></table><p><b>Por qué funciona:</b> (a) la gestión se mantiene <em>moderada</em> (~17 %, por debajo del 20 %); (b) <em>cada</em> WP tiene un resultado comprobable, no una intención vaga; (c) el grueso va a las actividades que generan impacto.</p><div class=\"callout callout-warn\"><b>Respuesta a la pregunta:</b> si el WP3 no se completa, <b>no cobras esos 22.000 €</b>. Cobras WP1 + WP2 (38.000 €) <em>solo si</em> se completaron y sus resultados se acreditan en el informe final.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Tengo que guardar todas las facturas.»</b> → No: es a tanto alzado. Guardas <em>evidencia de que el trabajo se hizo</em>, no tiques de gasto.</li><li><span class=\"err-x\">✗</span> <b>«Pido el tramo más alto por si acaso.»</b> → Penaliza por incoherencia. El tramo debe encajar con el volumen real de trabajo.</li><li><span class=\"err-x\">✗</span> <b>«El WP de gestión puede llevarse la mitad.»</b> → Desequilibra el proyecto y baja la nota. Referencia sana: ~20 % máx.</li><li><span class=\"err-x\">✗</span> <b>«El presupuesto es un anexo aparte.»</b> → No: el presupuesto <em>son</em> tus work packages y sus entregables.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook KA2 lump sums</td><td>Esqueleto conceptual: definición, reparto por WP, % de gestión, ciclo de pago. Núcleo a simplificar.</td></tr><tr><td><b>kb-0019</b> Lump sums &amp; unit costs decision</td><td>Las cifras oficiales de los tramos; respaldo legal.</td></tr><tr><td><b>kb-0052</b> Léargas — Handbook lump sum KA2</td><td>Misma materia explicada por una Agencia Nacional, más digerible; buenos ejemplos de ciclo de vida.</td></tr><tr><td><b>kb-0078</b> Cooperation partnerships (KA220)</td><td>Confirma los tres tramos 120k/250k/400k y el contexto KA220.</td></tr><tr><td><b>kb-0080</b> Small-scale partnerships (KA210)</td><td>Confirma los tramos 30k/60k y el umbral de 60 puntos.</td></tr><tr><td><b>kb-0100</b> Future Needs — KA2 proposal writing</td><td>Visión «de calle»: cómo los WP justifican el lump sum y errores típicos.</td></tr></tbody></table>"
+    }
+  ]
+}

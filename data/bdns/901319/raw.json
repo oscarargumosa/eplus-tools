@@ -1,0 +1,91 @@
+{
+  "id": 1102880,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "FONDO DE GARANTÍA AGRARIA Y PESQUERA DE LAS ISLAS BALEARES (FOGAIBA)"
+  },
+  "sedeElectronica": "http://www.caib.es",
+  "codigoBDNS": "901319",
+  "fechaRecepcion": "2026-04-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "Ayudas de minimis para el fomento del sector equino del año 2026 – EXPLOTACIONES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden de la Consejera de Agricultura y Pesca de 10 de marzo de 2005, por la que se establecen las bases reguladoras de las subvenciones en los sectores agrario y pesquero",
+  "urlBasesReguladoras": "http://boib.caib.es/pdf/2005043/mp15.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-06",
+  "fechaFinSolicitud": "2026-06-05",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1441976,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "AJ_14.26_-_Resol._sector_equi_2026_v6_REV_OK_imprimible.pdf",
+      "long": 288531,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    },
+    {
+      "id": 1441975,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "AJ_14.26_-_Resol._sector_equi_2026_v6_ES_OK_imprimible.pdf",
+      "long": 278799,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210839,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12270/714737/resolucion-del-presidente-del-fondo-de-garantia-ag",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

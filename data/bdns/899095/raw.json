@@ -1,0 +1,78 @@
+{
+  "id": 1100656,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARENYS DE MAR",
+    "nivel3": "AYUNTAMIENTO DE ARENYS DE MAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899095",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "CONVOCATÒRIA PER A LA CONCESSIÓ DELS PREMIS DEL 13È CONCURS FLORAL DELS ESPAIS FLORITS D¿ARENYS DE MAR 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORES DELS PREMIS DE LA MOSTRA LITERARIA MN. MARTÍ AMAGAT I DELS PREMIS ESPAIS FLORITS D`ARENYS DE MAR",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/?documentId=984132",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "L`ENDEMÀ DE LA PUBLICACIÓ AL BOPB",
+  "textFin": "FINALITZARÀ EN ELS 15 DIES HÀBILS SEGÜENTS",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436661,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "20260305_Uns_altres_Convocatòria_en_català.pdf",
+      "long": 157161,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436660,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "20260305_Uns_altres_Convocatoria_en_castellà_(2).pdf",
+      "long": 108846,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

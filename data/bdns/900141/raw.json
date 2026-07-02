@@ -1,0 +1,76 @@
+{
+  "id": 1101702,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CÓRDOBA",
+    "nivel3": null
+  },
+  "sedeElectronica": "sede.uco.es",
+  "codigoBDNS": "900141",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1848,
+  "mrr": false,
+  "descripcion": "Resolución del Vicerrector de Formación Continua, Empleabilidad y Emprendimiento, de16/04/2026, que publica la convocatoria del \nPrograma de Prácticas Académicas Externas asociadas al convenio entre el Ministerio del Interior y la UCO 2025/2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo de CG, de 20/02/2026, por el que se aprueba la modificación del Reglamento 8/2025, sobre las Bases Reguladoras generales de los Programas de Prácticas Académicas Externas Extracurriculares remunerados.",
+  "urlBasesReguladoras": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00205",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-06",
+  "fechaFinSolicitud": "2026-05-19",
+  "textInicio": "06 de mayo de 2026",
+  "textFin": "19 de mayo de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439022,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_G_CIVIL_25-26 Fda..pdf",
+      "long": 307675,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210974,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://sede.uco.es/bouco/bandejaAnuncios/BOUCO/2026/00556",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

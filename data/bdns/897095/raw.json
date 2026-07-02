@@ -1,0 +1,94 @@
+{
+  "id": 1098656,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897095",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000000,
+  "mrr": false,
+  "descripcion": "Resolución de convocatoria para la concesión de subvenciones, en régimen de concurrencia competitiva, para la producción de largometrajes cinematográficos",
+  "descripcionLeng": "Resolució de convocatòria per a la concessió de subvencions, en règim de concurrència competitiva, per a la producció de llargmetratges cinematogràfics",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades cinematográficas, de vídeo y de programas de televisión",
+      "codigo": "59.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "bases específicas que regirán la concesión de subvenciones para la producción de largometrajes cinematográficos.",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/8412/1851979.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-16",
+  "fechaFinSolicitud": "2026-05-07",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": "SA.113315",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.113315",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 54 REGÍMENES DE AYUDA PARA OBRAS AUDIOVISUALES"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435507,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Producció llargmetratges_catsigned.pdf",
+      "long": 219636,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1435506,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Producció llargmetratges_cast.pdf",
+      "long": 118014,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208869,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1041928",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

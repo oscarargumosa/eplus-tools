@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "899070",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BENICARLÓ / AYUNTAMIENTO DE BENICARLÓ",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Subvención para actuaciones derivadas del control, gestión y seguimiento de colonias felinas desarrolladas en el municipio de Benicarló durante el año 2025",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899070",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://benicarlo.sedipualba.es/tablondeanuncios/anuncio.aspx?id=74038",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "text_fin": "10 días hábiles contados a partir del día siguente a la publicación del anuncio de la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.805Z"
+}

@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL6-2024-GOVERNANCE-01-6",
+  "ccm2Id": "45658182",
+  "callIdentifier": "HORIZON-CL6-2024-GOVERNANCE-01",
+  "callTitle": "",
+  "title": "Develop innovative applications to support the European Green Deal, building on meteorological satellite data",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-28",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"S4 - Climate change monitoring (Copernicus service\",\"Digital Agenda\",\"Environment, Pollution \\u0026 Climate\",\"S1 - Atmosphere monitoring (Copernicus service)\",\"Environmental protection\",\"Environmental monitoring systems\",\"S2 - Marine monitoring (Copernicus service)\",\"Climate change mitigation\",\"Environmental stressors\",\"Environmental Conservation\",\"Environmental regulations and climate negotiations\",\"S3 - Land monitoring (Copernicus service)\",\"Earth Observation / Services and applications\",\"Artificial Intelligence\",\"Fight against threats to the Environment\",\"Climatology and climate change\",\"Environment, resources and sustainability\",\"Climate change adaptation\",\"EOSC and FAIR data\",\"Ocean sustainability and blue economy\",\"Environmental sciences (social aspects)\",\"EuroGEO\",\"Earth System Science\",\"GEOSS\",\"EuroGEOSS\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI",
+    "EoscAndFairData",
+    "OCEAN"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-GOVERNANCE-01-6.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.327Z"
+}

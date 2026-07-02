@@ -1,0 +1,15 @@
+## Expected Outcome
+
+Chips JU Research and Innovation Action (RIA) primarily consists of activities aiming to establish new knowledge and/or to explore the feasibility of a new or improved technology, product, process, service, method, tool or solution. For this purpose, they may include applied research, technology development and/or method/tool and integration, testing and validation on a small-scale prototype in a laboratory or simulated environment.
+
+The activities have their centre of gravity at TRL 3-4.A RIA proposal is characterised by:
+
+•Execution by a consortium that may consist of SMEs, large enterprises, universities, institutes, public organizations;•Developing innovative technologies and/or using them in innovative ways;
+
+•Targeting demonstration of the innovative approach in a relevant product, service or capability, clearly addressing the applications relevant for societal challenges;
+
+•Demonstrating value and potential in a realistic lab environment reproducing the targeted application;
+
+•Having a deployment plan showing the valorisation for the Chips JU ecosystem and the contribution to the Chips JU goals and objectives.
+
+In order to maximize effective implementation of the Chips JU top-level objectives, the list of RIA proposals to be retained for public funding shall constitute a balanced portfolio of projects developing innovative technologies (as defined in the SRIA in the functional technology layers and cross-sectional technologies sections) and applying them in different domains (as defined in the SRIA in key application areas section). The domains represent the demand side of technologies, and the development of new technologies represents the supply side of technologies.

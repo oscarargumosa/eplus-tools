@@ -1,0 +1,83 @@
+{
+  "id": 1098648,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DEL MEDIO RURAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897087",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 681281.93,
+  "mrr": false,
+  "descripcion": "ANULADA ayudas para las inversiones en transformación y comercialización de productos agrarios cofinanciadas por el Fondo Europeo Agrícola de Desarrollo Rural (Feader)",
+  "descripcionLeng": "ANULADA axudas para os investimentos en transformación e comercialización de produtos agrarios cofinanciadas polo Fondo Europeo Agrícola de Desenvolvemento Rural (Feader)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN de 23 de diciembre de 2025 por la que se establecen las bases reguladoras de las ayudas para inversiones en transformación y comercialización de productos agrarios cofinanciadas por el Feader. Convocatoria 2026 REG(UE) 651/2014",
+  "urlBasesReguladoras": "www.xunta.es/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a su publicación en Diario Oficial de Galicia",
+  "textFin": "un mes contado a partir del dia siguiente a publicacion en DOG",
+  "ayudaEstado": "SA.122137",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.122137",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS REGIONALES A LA INVERSIÓN "
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433635,
+      "descripcion": "informe de error",
+      "nombreFic": "Informe error_SX_20260410_105122.pdf",
+      "long": 189104,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433634,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ORDEN  promoción vino 2026 castellano_20260413_091549.pdf",
+      "long": 701267,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

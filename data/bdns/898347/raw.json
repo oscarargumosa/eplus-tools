@@ -1,0 +1,76 @@
+{
+  "id": 1099908,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE DEFENSA",
+    "nivel3": "EJÉRCITO DE TIERRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898347",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "Resolución de 13 de abril de 2026, del TG GEMADOC por la que se convocan ayudas para la formación en el ámbito de la preparación física, entrenamiento deportivo y dietética para el personal militar del Ejército de Tierra para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Defensa",
+  "descripcionBasesReguladoras": "Orden DEF/259/2024 de 11 de marzo, por la que se establecen las bases reguladoras para la concesión de ayudas para la formación en preparación física, entrenamiento deportivo y dietética para el personal militar del Ejército de Tierra.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2024/03/11/def259",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "textFin": "Quince (15) días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433973,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "260413-RESOLUCION-CONVOCATORIA_FORMACION_FISICA_2026.pdf",
+      "long": 341350,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208640,
+      "titulo": "Extracto de la Resolución de 13 de abril de 2026, del Mando de Adiestramiento y Doctrina del Ejército de Tierra, por la que se convocan las ayudas para la formación en el ámbito de la preparación física, el entrenamiento deportivo, la investigación y la dietética aplicada a la actividad física para el personal militar profesional del Ejército de Tierra para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios. </p><p>Podrán solicitar las ayudas los oficiales, suboficiales o personal profesional de tropa del Ejército de Tierra en situación de servicio activo, incluido en alguna de las categorías relacionadas en el artículo 4 de la convocatoria.</p><p>Segundo.Objeto. </p><p>El objeto de esta convocatoria es conceder ayudas para la realización de un Máster Universitario de especialización en Educación Física y/o Nutrición Deportiva para el personal militar profesional del Ejército de Tierra (ET), así como de becas para la enseñanza de perfeccionamiento contemplada en los programas de formación de las Federaciones Deportivas Españolas.</p><p>Tercero. Bases reguladoras.</p><p>Aprobadas por Orden de Defensa /259/2024, de 11 de marzo,  por la que se establecen las bases reguladoras para la concesión de ayudas para la formación en el ámbito de la preparación física, el entrenamiento deportivo, la investigación y la dietética aplicada a la actividad física para el personal militar profesional del Ejército de Tierra, publicada en el Boletín Oficial de Estado nº 70 de 20 de marzo de 2024.</p><p>Cuarto. Cuantía.</p><p>La dotación económica es de 7.000 euros, con una ayuda máxima por persona de 4.000 euros para la realización de máster y un máximo de 500 euros para los estudios federativos.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de quince días hábiles contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el BOE.</p><p>Sexto. Otros datos.</p><p>Incompatible con cualquier otra subvención, ayudas, ingresos o recursos para la misma finalidad.</p><p>La resolución de la convocatoria de las ayudas se encuentra, además de en la BDNS   https://www.infosubvenciones.es/bdnstrans/GE/es/index, en la Web del MADOC https://ejercito.defensa.gob.es/unidades/Granada/madoc/Becas_y_ayudas/index.html</p><p>Las ayudas se solicitarán obligatoriamente mediante la aplicación que figura en la intranet del MINISDEF https://colabora.mdef.es/et/MADOC/BECAS/SitePages/Inicio.aspx</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11620",
+      "cve": "BOE-B-2026-11620",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

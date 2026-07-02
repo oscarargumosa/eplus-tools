@@ -1,0 +1,69 @@
+{
+  "id": "M1.2",
+  "code": "M1.2 · Fundamentos",
+  "module": "M1",
+  "moduleTitle": "Fundamentos: ¿Qué es Erasmus+?",
+  "bloque": "A — Fundamentos",
+  "title": "KA1, KA2, KA3: el mapa de acciones",
+  "subtitle": "Desmontamos la sopa de siglas para que en 10 minutos sepas cuál de las tres familias es la tuya.",
+  "meta": {
+    "Nivel": "Iniciación",
+    "Duración": "10–15 min",
+    "Idioma": "Español",
+    "Formato": "Lección de fundamentos",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "narration": "Seguimos. Te voy a contar algo que te pasa, seguro. Estás en una reunión, o leyendo un documento, y alguien suelta: ka uno, ka dos, ka dos diez, ka dos veinte... como si los conocieras de toda la vida. Y tú asientes por vergüenza, pero por dentro no tienes ni idea de cuál es la tuya. Respira, porque esto es mucho más sencillo de lo que parece. Toda esa sopa de siglas se reduce, en realidad, a tres familias. Solo tres.\n\nEsa ka que oyes todo el rato significa acción clave. Y solo hay tres acciones clave que importan de verdad. La primera, ka uno, es movilidad de las personas: mueves gente para que aprenda. En una frase, mando o traigo personas para que se formen. La segunda, ka dos, es cooperación entre organizaciones: te juntas con socios europeos para crear algo. En una frase, hacemos algo nuevo juntos. Y la tercera, ka tres, es apoyo a las políticas: ayudas a mejorar leyes y sistemas. En una frase, influimos en cómo se hacen las cosas a alto nivel. Y ya está. Esas tres frases son el corazón de todo. Lo demás, la pequeña escala, la cooperación grande, el capacity building... son simplemente subtipos dentro de una de estas familias.\n\nTe doy una imagen para que se te queden grabadas. Piensa en tu organización como una cocina. Ka uno sería mandar a tu cocinero a un curso en otro país, para que vuelva sabiendo más; mueves a la persona. Ka dos sería juntarte con cocineros de otros países para inventar un recetario nuevo que antes no existía; creáis algo juntos. Y ka tres sería sentarte con el ministerio para cambiar las normas de seguridad alimentaria de todo el país; tocas el sistema. La mayoría de organizaciones que empiezan están en ka uno, formar a su gente, o en ka dos, crear algo con socios. Ka tres es terreno de redes grandes y entidades muy consolidadas; no es por donde se empieza, así que de momento te lo puedes quitar de la cabeza.\n\nAhora, la regla de oro, la que te coloca en el sitio correcto con una sola pregunta: ¿mueves personas o creas cosas con socios? Si tu objetivo principal es que tu gente, o tus jóvenes, aprenda viajando y formándose fuera, es ka uno. Si tu objetivo es desarrollar algo nuevo, un método, materiales, una herramienta, junto a socios de otros países, es ka dos. Y dentro de ka dos hay dos nombres que conviene conocer. La pequeña escala, pensada para entidades pequeñas y primerizas, con presupuestos modestos; esa es tu rampa de entrada si es tu primera vez. Y la cooperación grande, más ambiciosa, con más socios y resultados mayores. Un consejo que vale oro: si dudas entre las dos siendo principiante, la respuesta casi siempre es la pequeña escala. Está diseñada precisamente para que aprendas sin asumir un proyecto enorme. Existe también el capacity building, para cooperar con países de fuera de la Unión, pero eso ya es otra historia.\n\nY una última distinción que oirás pronto. Algunas acciones las gestiona la agencia de Erasmus+ de tu propio país; ka uno y casi toda la ka dos van por ahí. Otras, más grandes y competitivas, las gestiona directamente Bruselas, a través de la agencia europea EACEA: esas son las llamadas centralizadas. No te preocupes por dominar esto hoy. Solo quédate con que quién gestiona tu proyecto cambia el formulario y el nivel de exigencia. Lo veremos a fondo más adelante. Por ahora ya sabes responder a la pregunta más importante: ¿lo tuyo es mover personas o crear con socios? En la siguiente lección damos un paso más, hacia las cuatro prioridades que tienen que atravesar cualquier proyecto. Te espero.",
+  "frame": {
+    "dolor": "KA1, KA2, KA3, KA210, KA220… te sueltan las siglas como si las conocieras de toda la vida y asientes por vergüenza, pero por dentro no tienes ni idea de cuál es la tuya.",
+    "comprender": "Que detrás de cada sigla hay una idea sencilla, y que solo hay TRES familias grandes que recordar. El resto son subtipos.",
+    "objetivo": "Saber explicar cada Key Action en una frase y poder señalar, con criterios simples, cuál encaja con tu idea.",
+    "confusion": "Mezclar «mover personas» con «crear cosas juntos». Son dos mundos distintos (KA1 y KA2) y confundirlos te lleva al proyecto equivocado.",
+    "importa": "Porque elegir bien la Key Action al principio te ahorra meses de trabajo en la dirección incorrecta. Es la primera bifurcación del camino."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. Solo hay tres letras que importan",
+      "html": "<p>Respira. La sopa de siglas asusta menos cuando ves que todo se reduce a <b>tres familias</b>. «KA» significa <em>Key Action</em>, «acción clave». Y solo hay tres:</p><ul class=\"bullets\"><li><b>KA1 — Movilidad de las personas.</b> Mueves gente para que aprenda. En una frase: <em>«mando o traigo personas para que se formen.»</em></li><li><b>KA2 — Cooperación entre organizaciones.</b> Te juntas con socios europeos para crear algo. En una frase: <em>«hacemos algo nuevo juntos.»</em></li><li><b>KA3 — Apoyo a las políticas.</b> Ayudas a mejorar leyes y sistemas. En una frase: <em>«influimos en cómo se hacen las cosas a alto nivel.»</em></li></ul><p>Y ya está. Esas tres frases son el corazón de todo. Lo demás (KA210, KA220, Capacity Building…) son <b>subtipos</b> dentro de una de estas familias.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Una analogía para fijarlas",
+      "html": "<p>Piensa en tu organización como una <b>cocina</b>:</p><ul class=\"bullets\"><li><b>KA1</b> es <em>mandar a tu cocinero a un curso en otro país</em> para que vuelva sabiendo más. Mueves a la persona.</li><li><b>KA2</b> es <em>juntarte con cocineros de otros países para inventar un nuevo recetario</em> que antes no existía. Creáis algo juntos.</li><li><b>KA3</b> es <em>sentarte con el ministerio para cambiar las normas de seguridad alimentaria</em> de todo el país. Tocas el sistema.</li></ul><p>La mayoría de organizaciones que empiezan están en <b>KA1</b> (formar a su gente) o <b>KA2</b> (crear algo con socios). KA3 es terreno de redes grandes y entidades muy consolidadas; no es por donde se empieza.</p>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. La tabla comparativa",
+      "html": "<p>Aquí tienes las tres familias una al lado de otra. Es la chuleta que querrás tener a mano:</p><table class=\"cmp\"><thead><tr><th>Key Action</th><th>Qué financia</th><th>Para quién</th><th>Ejemplo típico</th></tr></thead><tbody><tr><td><b>KA1</b><br>Movilidad</td><td>Mover personas para que aprendan fuera</td><td>Entidades que quieren formar a su equipo o a sus jóvenes</td><td>Mandar a 6 educadores a un curso en Portugal</td></tr><tr><td><b>KA2</b><br>Cooperación</td><td>Crear resultados junto a socios europeos</td><td>Entidades con una idea que desarrollar en grupo</td><td>Desarrollar una guía o herramienta con 3 socios de la UE</td></tr><tr><td><b>KA3</b><br>Políticas</td><td>Apoyar reformas y desarrollo de políticas</td><td>Redes grandes, organismos, entidades consolidadas</td><td>Diálogo para mejorar una política educativa</td></tr></tbody></table><p>Dentro de <b>KA2</b> conviene conocer dos nombres: <b>KA210 (Small-scale)</b>, pensado para entidades pequeñas y primerizas con presupuestos modestos; y <b>KA220 (Cooperation Partnerships)</b>, más grande y ambicioso. También existe <b>Capacity Building</b>, para cooperar con países de fuera de la UE.</p><div class=\"callout callout-key\">Regla de oro: <b>¿mueves personas o creas cosas con socios?</b> Esa única pregunta ya te coloca en KA1 o en KA2.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. Mini-guía: «¿Cuál es la mía?»",
+      "html": "<p>Vamos a lo práctico. Responde mentalmente y sigue la flecha:</p><ol class=\"obj\"><li>¿Tu objetivo principal es <b>que tu gente (o tus jóvenes) aprenda viajando y formándose fuera</b>? → <b>KA1</b>.</li><li>¿Tu objetivo es <b>desarrollar algo nuevo</b> (un método, materiales, una herramienta, un curso) <b>junto a socios de otros países</b>? → <b>KA2</b>.</li><li>Si vas a KA2 y es <b>tu primera vez</b>, tu organización es <b>pequeña</b> o el presupuesto que necesitas es <b>modesto</b> → empieza por <b>KA210 (Small-scale)</b>. Es la rampa de entrada.</li><li>¿Tu proyecto es muy ambicioso, con muchos socios y resultados grandes? → <b>KA220</b>.</li></ol><div class=\"callout callout-good\">Si dudas entre KA210 y KA220 siendo principiante, la respuesta casi siempre es <b>KA210</b>. Está diseñado precisamente para que aprendas sin asumir un proyecto enorme.</div><div class=\"callout callout-link\">🔗 Cuando tengas claro que lo tuyo es KA2, profundiza en <b>«Documentos desgranados → El Handbook KA2»</b>. Ahí está todo el detalle de cómo se monta una asociación.</div>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. ¿Y las acciones «centralizadas»?",
+      "html": "<p>Una última distinción que oirás pronto. Algunas acciones las gestiona tu <b>Agencia Nacional</b> (la oficina de Erasmus+ de tu país: KA1, KA210, KA220 suelen ir por aquí). Otras, más grandes y competitivas, las gestiona directamente Bruselas a través de la <b>EACEA</b>: son las acciones <b>centralizadas</b>.</p><p>No te preocupes por dominar esto hoy. Solo quédate con que <em>quién</em> gestiona tu proyecto cambia el formulario y el nivel de exigencia. Lo verás en su momento.</p><div class=\"callout callout-link\">🔗 Las acciones centralizadas y su formulario se trabajan a fondo en el <b>Curso EACEA Part B</b>. Y para ver convocatorias reales y abiertas, consulta la <b>plataforma</b>.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores / ideas equivocadas",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«KA1 y KA2 son casi lo mismo.»</b> → No: KA1 es <em>mover personas</em>, KA2 es <em>crear cosas con socios</em>. Mundos distintos.</li><li><span class=\"err-x\">✗</span> <b>«Mejor pido KA220 que es más grande.»</b> → Si eres principiante, KA210 encaja mejor y compites con proyectos de tu tamaño.</li><li><span class=\"err-x\">✗</span> <b>«KA3 es el siguiente nivel al que aspirar pronto.»</b> → KA3 es para redes grandes y entidades consolidadas. No es la ruta habitual de inicio.</li><li><span class=\"err-x\">✗</span> <b>«KA210 y KA220 son Key Actions distintas.»</b> → No: ambas son <em>subtipos dentro de KA2</em>.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0003</b> Estructura de Key Actions</td><td>La definición de KA1, KA2 y KA3, los subtipos KA210/KA220, Capacity Building y la distinción Agencia Nacional vs. EACEA.</td></tr></tbody></table>"
+    }
+  ]
+}

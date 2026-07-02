@@ -1,0 +1,76 @@
+{
+  "id": 1104602,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE IGUALDAD",
+    "nivel3": "DELEGACIÓN DEL GOBIERNO CONTRA LA VIOLENCIA DE GÉNERO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903041",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Becas de formación en el Observatorio Estatal de Violencia sobre la Mujer para el periodo 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Orden SSI/2419/2013, de 16 de diciembre, por la que se aprueban las bases reguladoras para la concesión de becas de formación en\nel Observatorio Estatal de Violencia sobre la Mujer y se convocan las correspondientes al período 2014-2015",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13588",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "día siguiente al de la publicación del extracto de la convocatoria en el BOE",
+  "textFin": "15 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447012,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria con anexos.pdf.xsig.pdf",
+      "long": 441314,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210720,
+      "titulo": "Extracto de la Resolución de 27 de abril de 2026, de la Secretaría de Estado de Igualdad y para la Erradicación de la Violencia contra las Mujeres, por la que se convocan las Becas de formación en el Observatorio Estatal de Violencia sobre la Mujer para el período 2026-2027.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Personas físicas, de nacionalidad española o de algún Estado miembro de la Unión Europea, que hayan finalizado sus estudios en el año 2024 o posterior y se encuentren en posesión del título de grado exigido para cada una de las becas o, en su caso, certificación supletoria del título, además de no encontrarse incursas en ninguna de las causas de inhabilitación previstas en el artículo 13.2 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, ni haber disfrutado de otras becas de formación en el Observatorio Estatal de Violencia sobre la Mujer y/o en el ámbito de la Secretaría de Estado de Igualdad y para la Erradicación de la Violencia contra las Mujeres, y de sus Organismos públicos adscritos.</p><p>Las personas beneficiarias deberán encontrarse en situación de desempleo en el momento de su incorporación.</p><p>Segundo. Objeto</p><p>Concesión de seis becas de formación en el Observatorio Estatal de Violencia sobre la Mujer para el período 2026-2027.</p><p>Tercero. Bases reguladoras:</p><p>Orden SSI/2419/2013, de 16 de diciembre, publicada en el Boletín Oficial del Estado de 24 de diciembre de 2013.</p><p>Cuarto. Importe</p><p>La cuantía total máxima para seis becas de formación en el Observatorio Estatal de Violencia sobre la Mujer para el período 2026-2027 será de 100.000 €.</p><p>A cada una de las becas le corresponderá una asignación de 1.250,00 € brutos mensuales y una única asignación de 600,00 € brutos anuales para gastos asociados a la beca, a la que podrán imputarse gastos derivados de la participación en actividades formativas.</p><p>Quinto. Plazo de presentación de solicitudes</p><p>Quince días hábiles, contados a partir del primer día hábil siguiente al de la publicación de este extracto en el BOE.</p><p> </p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-14244",
+      "cve": "BOE-B-2026-14244",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

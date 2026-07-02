@@ -1,0 +1,90 @@
+{
+  "id": 1101262,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ANDALUCÍA",
+    "nivel3": "AGENCIA ANDALUZA DE LA ENERGÍA"
+  },
+  "sedeElectronica": "https://incentivos.agenciaandaluzadelaenergia.es/orden24in/",
+  "codigoBDNS": "899701",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2933000,
+  "mrr": false,
+  "descripcion": "Resolución de 20 de Abril de 2026, convocatoria Linea 2 Energía del Programa 2 Espacios productivos. Act. Eficiencia Energética Instalaciones Sector Privado",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas",
+      "codigo": "01"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES61 - ANDALUCIA"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Orden de 13 de marzo de 2025, BBRR,concesión de incentivos integrados de competitividad y energía para las cadenas de valor industrial, la minería sostenible y los espacios producti",
+  "urlBasesReguladoras": "https://juntadeandalucia.es/eboja/2025/53/BOJA25-053-00207-3858-01_00317462.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "9:00 horas del 16 de junio de 2026",
+  "textFin": "Hasta que se declare su finalización mediante Resolución de la Dirección Gerencia de la Agencia Anda",
+  "ayudaEstado": "SA.112451",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.112451",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 38 AYUDAS A LA INVERSIÓN DESTINADAS A MEDIDAS DE EFICIENCIA ENERGÉTICA DISTINTAS DE LOS EDIFICIOS."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442245,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "TextoConvocatoria.pdf",
+      "long": 667972,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209280,
+      "titulo": "Extracto de la Resolución de la Agencia Andaluza de la Energía, por la que se realiza la convocatoria de la Línea 2 de incentivos del Programa 2 «Espacios productivos», acogidos a la Orden de 13 de marzo de 2025, de la Consejería de I",
+      "tituloLeng": null,
+      "texto": "<p>BDNS (identif.):…………………………………</p><p></p><p>De conformidad con lo previsto en los artículos 17.3.b y 20.8.a de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica el extracto de la convocatoria cuyo texto completo puede consultarse en la Base de Datos Nacional de Subvenciones (http://www.pap.minhap.gob.es/bdnstrans) y en el presente BOJA:</p><p></p><p></p><p>Primero. Convocatoria.</p><p>1. Se convocan los incentivos para la Línea 2 de incentivos del Programa 2. «Espacios productivos», al amparo de la Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas, por la que se aprueban las bases reguladoras para la concesión de incentivos integrados de competitividad y energía para las cadenas de valor industrial, la minería sostenible y los espacios productivos en Andalucía, de acuerdo con el ámbito material, territorial y funcional detallado en los resuelve segundo, tercero y cuarto.</p><p>2. La presente convocatoria se articula mediante subvenciones a conceder por el procedimiento de concurrencia no competitiva.</p><p>Segundo. Créditos máximos</p><p>Los incentivos serán financiados con cargo a los siguientes créditos presupuestarios por las cuantías máximas que se especifican a continuación:</p><p>Créditos presupuestarios 2026 2027 2028 TOTAL</p><p>2151170000 G/73A/76600 A421AA44RP 2024000036 394.500 1.442.000 793.500 2.630.000</p><p>2151170000 G/73A/76600 A421AA45RP 2024000037 146.154 653.846 200.000 1.000.000</p><p>2151170000 G/73A/76600 A421AA54RP 2024000017 105.000 280.000 315.000 700.000</p><p>2151170000 G/73A/77200 A421AD38RP 2024000020 300.000 800.000 900.000 2.000.000</p><p>2151170000 G/73A/77200 A421AD39RP 2024000021 300.000 800.000 900.000 2.000.000</p><p>2151170000 G/73A/77200 A421AD40RP 2024000022 75.000 200.000 225.000 500.000</p><p>2151170000 G/73A/76600 A421BA50RP 2025000972 60.000 160.000 180.000 400.000</p><p>2151170000 G/73A/76600 A421BA48RP 2024000040 750.000 2.421.053 1.828.947 5.000.000</p><p>2151170000 G/73A/76600 A421BA52RP 2024000042 60.000 160.000 180.000 400.000</p><p>2151170000 G/73A/77200 A421BB48RP 2024000025 1.005.000 3.100.329 2.594.671 6.700.000</p><p>2151170000 G/73A/77200 A421BB50RP 2024000027 150.000 400.000 450.000 1.000.000</p><p>2151170000 G/73A/77200 A421CA53RP 2024000034 191.352 6.888.648 1.770.000 8.850.000</p><p>2151170000 G/73A/76600 A421CA53RP 2025000193 20.000 780.000 200.000 1.000.000</p><p>2151170000 G/73A/77200 A422HD86RP 2024000044 997.500 3.019.459 2.633.041 6.650.000</p><p>2151170000 G/73A/76600 A422HD86RP 2024000043 427.500 1.294.054 1.128.446 2.850.000</p><p>TOTAL 4.982.006 22.399.389 14.298.605 41.680.000</p><p></p><p>Aquellos créditos presupuestarios asociados a las personas o entidades beneficiarias que tengan la condición de empresa cuya clasificación económica se identifica con el código 77200 que, además, incluyan los ámbitos de intervención 40, 48 y 50 del Programa Andalucía FEDER 2021-2027 identificados igualmente en las partidas presupuestarias antes relacionadas, se destinarán como máximo en un 35% a aquellas con la condición de gran empresa. Y en el caso del crédito presupuestario correspondiente al ámbito de intervención 53 asociado al código 77200, se destinará en un 55% para el subtipo de actuación L2.2.7.1, en un 11% para el subtipo de actuación L2.2.7.2 y en un 34% para el tipo de actuación L2.2.8.</p><p></p><p>Tercero. Objeto y ámbito material de la convocatoria</p><p>1. La presente convocatoria se dirige a los conceptos subvencionables que se encuadran en la Línea 2 del «Programa 2. Espacios productivos» de la Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas, que abarca los tipos de actuaciones que a continuación se relacionan:</p><p>L2.2.2. Eficiencia energética en instalaciones del sector público local.</p><p>L2.2.3. Energías renovables en los edificios e instalaciones del sector público local.</p><p>L2.2.4. Eficiencia energética en los edificios del sector privado.</p><p>L2.2.5. Eficiencia energética en las instalaciones del sector privado.</p><p>L2.2.6. Energías renovables promovidas por el sector privado.</p><p>L2.2.7. Redes inteligentes y nuevos modelos de mercado energético.</p><p>L2.2.8. Soluciones de almacenamiento de energía.</p><p>L2.2.9. Infraestructuras de recarga de vehículos eléctricos.</p><p>2. Los costes subvencionables de aplicación serán los establecidos en el Anexo II Catálogo de actuaciones de la Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas, para cada uno de los tipos de actuación antes relacionados. En cualquier caso, los conceptos de inversión y de gasto, serán los previstos en el apartado 5.b).1º del Cuadro Resumen II de la citada orden.</p><p></p><p>Cuarto. Personas y entidades beneficiarias</p><p>1. Las personas o entidades que podrán solicitar los incentivos acogidos a la presente convocatoria, de acuerdo con lo dispuesto en el apartado segundo de la disposición adicional primera y en el apartado 4.a).1º del Cuadro Resumen II de la Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas, son los siguientes:</p><p>a) Personas jurídicas, personas físicas, con o sin ánimo de lucro, y agrupaciones de las figuras anteriores con personalidad jurídica, que realicen una actividad económica por la que ofrezcan bienes o servicios en el mercado, incluyendo las empresas de servicios energéticos (ESE).</p><p>b) Entidades de gestión de espacios productivos y empresariales, asociaciones o comunidades de propietarios establecidos a tal fin, previstos en la normativa de aplicación a estos espacios o, en su caso, a su correspondiente forma jurídica.</p><p>c) Comunidades de energía renovables o comunidades ciudadanas de energía, cuyos miembros realicen actividad económica por la que ofrezcan bienes o servicios en el mercado, en los términos definidos en el Anexo III de la Orden de 13 de marzo de 2025.</p><p>d) Las entidades locales territoriales y entidades del sector público local dependientes o vinculadas a ellas.</p><p>2. Para las personas o entidades comprendidas en el apartado 1, el requisito del código CNAE 2009 ó 2025 correspondiente a la actividad económica vinculada a la actuación objeto del incentivo se aplicará en función del tipo de actuación y del tipo de persona o entidad solicitante, conforme a lo indicado en la siguiente tabla:</p><p>Tipo de persona o entidad solicitante Códigos CNAE 2009 y 2025 admitidos y excluidos según el tipo de actuación</p><p> La actividad económica vinculada a la actuación objeto del incentivo debe estar encuadrada en alguno de los códigos CNAE 2009 ó 2025, a excepción de los correspondientes a los sectores y activi-dades excluidos del ámbito de aplicación de las bases reguladoras conforme al artículo 3 de la Orden 13 de marzo de 2025. La actividad económica vinculada a la actuación objeto del incentivo debe estar encuadrada en alguno de los códigos CNAE 2009 ó 2025 relacionados en el Anexo III de esta convocatoria.</p><p>Personas jurídicas, personas físicas, con o sin ánimo de lucro, y agrupaciones de las figuras anteriores con personalidad jurídica, que realicen una actividad económica por la que ofrezcan bienes o servicios en el mercado, incluyendo las empresas de servicios energéticos (ESE). L2.2.7, L2.2.8 y L2.2.9 L2.2.4, L2.2.5 y L2.2.6</p><p>Entidades de gestión de espacios productivos y empresariales, asociaciones o comunidades de propietarios establecidos a tal fin. L2.2.4, L2.2.5, L2.2.6, L2.2.7 y L2.2.8 -</p><p>Comunidades de energía renovables o comunidades ciudadanas de energía, cuyos miembros realicen actividad económica por la que ofrezcan bienes o servicios en el mercado. L2.2.7, L2.2.8 L2.2.4, L2.2.5 y L2.2.6</p><p>Entidades locales territoriales y entidades del sector público local dependientes o vinculadas a ellas. L2.2.2, L2.2.3, L2.2.8 y L2.2.9 -</p><p></p><p>3. Las entidades locales territoriales y las entidades del sector público local dependientes o vinculadas a ellas que contraten la ejecución de las inversiones mediante la modalidad de servicios energéticos, la entidad solicitante del incentivo será la propia entidad local o entidad del sector público local dependiente o vinculada a ella. En el resto de los casos, la entidad solicitante del incentivo será la propia empresa de servicios energéticos, siempre que el contrato de servicios energéticos sea suscrito por alguna de las personas o entidades previstas en el apartado 4.a). 2º del Cuadro Resumen II de las bases reguladoras, cuya actividad económica cumpla los requisitos establecidos en el apartado anterior.</p><p></p><p>Quinto. Solicitud</p><p>Las personas y entidades interesadas deberán realizar la solicitud de concesión de los incentivos utilizando los formularios que serán aprobados mediante resolución, dirigidos a la persona titular de la Dirección Gerencia de la Agencia Andaluza de la Energía, cumplimentándose electrónicamente y presentándose en todo caso a través de la siguiente dirección electrónica:</p><p>https://incentivos.agenciaandaluzadelaenergia.es/orden24in/</p><p></p><p>Sexto. Plazo de presentación de solicitudes.</p><p></p><p>El plazo de presentación de solicitudes comenzará a las 9:00 horas del día 16 de junio de 2026 y permanecerá abierto hasta que se declare su conclusión por resolución de la Dirección Gerencia de la Agencia Andaluza de la Energía y, en su defecto, finalizará el 30 de septiembre de 2027. Sin perjuicio de lo anterior, dicho plazo podrá ser ampliado previa publicación de la correspondiente resolución en el Boletín Oficial de la Junta de Andalucía.</p><p></p><p>Séptimo. Bases reguladoras.</p><p></p><p>Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas, por la que se aprueban las bases reguladoras para la concesión de incentivos integrados de competitividad y energía para las cadenas de valor industrial, la minería sostenible y los espacios productivos en Andalucía.</p><p></p><p>Octavo. Cuantía de los incentivos.</p><p>1. Para el caso de las actuaciones L2.2.4, L2.2.5, L2.2.6 y L2.2.7, así como el subtipo L2.2.2.3, los porcentajes máximos de incentivo y su cuantía mínima se establecen en el apartado 5 del Cuadro Resumen II y en el Catálogo de Actuaciones del Anexo II de la Orden de 13 de marzo de 2025, de la Consejería de Industria, Energía y Minas. El porcentaje de incentivo a otorgar estará compuesto por un porcentaje de incentivo base, al que se sumará el porcentaje de incentivo adicional en los casos en los que aplique este, salvo para el caso de las actuaciones tipo L2.2.7 acogidas al Reglamento (UE) núm. 2023/2831 de la Comisión, de 13 de diciembre de 2023, en las que el importe a conceder vendrá determinado por el umbral máximo de ayuda de minimis en los términos establecidos en el citado reglamento.</p><p>Y en el caso de las actuaciones L2.2.3, L2.2.8, L2.2.9, así como, los subtipos L2.2.2.1 y L2.2.2.2, los módulos por costes unitarios de ejecución de estas actuaciones, así como las bases para el cálculo del coste incentivable se establecen en el Anexo VI de la presente convocatoria. Para la determinación del importe total del incentivo, al coste incentivable por módulos se aplicará el porcentaje de incentivo base, al que se sumará el porcentaje de incentivo adicional en los casos en los que aplique este conforme a lo dispuesto en el apartado 5 del Cuadro Resumen II y en el Catálogo de Actuaciones del Anexo II de la Orden de 13 de marzo de 2025.</p><p>2. El incentivo mínimo a solicitar será de 10.000 euros para todos tipos de actuaciones salvo para el caso de la actuación L2.2.9 que está establecido en 3.000 euros, de conformidad con lo dispuesto el apartado 5.a) del Cuadro Resumen II de la Orden de 13 de marzo de 2025.</p><p></p><p>Noveno. Otros datos</p><p></p><p>La aprobación de los formularios de solicitud de incentivos se realizará mediante resolución de la Agencia Andaluza de la Energía, que será publicada con carácter previo a la apertura del plazo de presentación de las solicitudes y se podrán obtener en el Catálogo de Procedimientos y Servicios de la Junta de Andalucía.</p><p></p><p></p><p>LA DIRECTORA GERENTE DE LA AGENCIA ANDALUZA DE LA ENERGÍA</p><p></p><p></p>",
+      "textoLeng": null,
+      "url": "https://juntadeandalucia.es/boja/2026/78/3",
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

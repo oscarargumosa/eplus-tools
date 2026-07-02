@@ -1,0 +1,79 @@
+{
+  "id": 1101509,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALDEPEÑAS",
+    "nivel3": "AYUNTAMIENTO DE VALDEPEÑAS"
+  },
+  "sedeElectronica": "https://www.valdepenas.es/festejos/",
+  "codigoBDNS": "899948",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 785,
+  "mrr": false,
+  "descripcion": "Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases  Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026",
+  "urlBasesReguladoras": "https://www.valdepenas.es/festejos/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-06-10",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438587,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases  Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026.pdf",
+      "long": 184914,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209419,
+      "titulo": "Concurso de Carteles LXXIII   Fiestas de la Vendimia y el Vino 2026",
+      "tituloLeng": null,
+      "texto": "<p>Podrán participar en este Concurso todas las personas mayores de edad que lo deseen.El tema será las FIESTAS DE LA VENDIMIA Y EL VINO DE VALDEPEÑAS y la técnica es de libre elección.Se admitirán dos trabajos, como máximo, por cada participante.Cada uno de los trabajos presentados deberá llevar reseñado “LXXIII FIESTAS DE LA VENDIMIA Y EL VINO. VALDEPEÑAS 2026. Declaradas de Interés Turístico”.Las dimensiones de los trabajos presentados deberán ser de 70 x 50 cms</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7502877",
+      "cve": "kLQ/Fiuy+wjJXZrS0tVM",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

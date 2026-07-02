@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-CL4-2024-DATA-01-01",
+  "ccm2Id": "45703758",
+  "callIdentifier": "HORIZON-CL4-2024-DATA-01",
+  "callTitle": "",
+  "title": "AI-driven data operations and compliance technologies (AI, data and robotics partnership) (IA)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-15",
+  "deadline": "2024-03-19",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"International Cooperation\",\"Semantic web technologies\",\"Co-programmed European Partnerships\",\"Artificial Intelligence\",\"Linked open data\",\"Data curation\",\"RePowerEU\",\"AI for Data\",\"Data compliance\",\"GDPR\",\"Data for AI\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD",
+    "DigitalAgenda",
+    "PART-COPROGR",
+    "AI",
+    "RePowerEU"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-DATA-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.449Z"
+}

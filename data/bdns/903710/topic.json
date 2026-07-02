@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "903710",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE GUADALAJARA / DIPUTACIÓN PROVINCIAL DE GUADALAJARA",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "JUNTA GOBIERNO DE 14/04/2026 QUE APRUEBA LA CONVOCATORIA DEL II CONCURSO DE FOTOGRAFÍA “CALENDARIO DE FIESTAS TRADICIONALES DE GUADALAJARA",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": "2026-09-01",
+  "deadline": "2026-09-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903710",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boletin.dguadalajara.es/boletin/index.php/2-anuncios/60080-ORDENANZA-GENERAL-DE-SUBVENCIONES",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.274Z"
+}

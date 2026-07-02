@@ -1,0 +1,84 @@
+{
+  "id": 1102461,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALMERÍA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALMERÍA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900900",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES 2026, DIRIGIDA A LAS ENTIDADES ASOCIATIVAS PERTENECIENTES AL CONSEJO PROVINCIAL DE MUJERES DE LA DIPUTACIÓN PROVINCIAL DE ALMERÍA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES 2026, DIRIGIDA A LAS ENTIDADES ASOCIATIVAS PERTENECIENTES AL CONSEJO PROVINCIAL DE MUJERES DE LA DIPUTACIÓN PROVINCIAL DE ALMERÍA.",
+  "urlBasesReguladoras": "https://ov.dipalme.org/verifirma/code/cxLMKIAQuHj3uZ2QywZl0Q==",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-05",
+  "fechaFinSolicitud": "2026-06-06",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1445651,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "EXTRACTO SUBV CPM 2026 DEF.pdf",
+      "long": 66699,
+      "datMod": "2026-04-29",
+      "datPublicacion": "2026-04-29"
+    },
+    {
+      "id": 1441020,
+      "descripcion": "BASES Y ANEXOS",
+      "nombreFic": "BASES Y ANEXOS.report.pdf",
+      "long": 4729776,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441021,
+      "descripcion": "ACUERDO Nº 18",
+      "nombreFic": "Acuerdo_18__Copia_96_.pdf",
+      "long": 153273,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

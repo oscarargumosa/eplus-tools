@@ -1,0 +1,81 @@
+{
+  "id": "LS.10",
+  "code": "UD-LS.10",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "D — Anatomía del formulario",
+  "title": "KA220 Cooperation: solicitud, work packages e indicadores",
+  "subtitle": "Cómo se estructura una Cooperation Partnership por dentro: prioridades, el WP de gestión, el marco lógico, el reparto del presupuesto y los indicadores que miden tus resultados.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "40–50 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "5.1 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El formulario de KA220 es grande y pide cosas que suenan a ingeniería: work packages, marco lógico, indicadores cuantitativos y cualitativos, presupuesto por actividad y por socio. Es fácil sentirse desbordado y rellenarlo a trozos sin que encaje.",
+    "comprender": "Que detrás de toda esa estructura hay una sola lógica encadenada: prioridades → objetivos → work packages y actividades → resultados → indicadores. Si entiendes esa cadena, el formulario deja de ser un puzle y se convierte en una historia coherente.",
+    "objetivo": "Saber cómo se organizan los work packages (un WP1 de gestión con sus reglas + WP de implementación), qué es el marco lógico, cómo se detalla el presupuesto por WP, actividad y socio, y qué es exactamente un indicador (y en qué se diferencia de un target).",
+    "confusion": "Confundir indicador con objetivo, o indicador con target; y creer que el WP de gestión necesita objetivos específicos propios. También pensar que «más indicadores = mejor proyecto».",
+    "importa": "Porque en lump sum el evaluador solo tiene tus WP y tus indicadores para juzgar si tu dinero está justificado. Un marco lógico flojo o unos indicadores mal puestos = puntuación baja, aunque la idea sea buena."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. El punto de partida: prioridades, objetivos y necesidades",
+      "html": "<p>Toda propuesta KA220 tiene que <b>contribuir a una o más prioridades</b> de las políticas del programa. En concreto, se te pide seleccionar <b>al menos una prioridad horizontal</b> del Programa y/o <b>al menos una prioridad específica</b> relevante para el campo de educación, formación, juventud o deporte que abordes principalmente.</p><p>A partir de ahí, la descripción del proyecto debe explicar los <b>objetivos</b>, los <b>resultados esperados</b> y su <b>vínculo con las prioridades seleccionadas</b>. Y para llegar a objetivos relevantes, primero tienes que <b>identificar y explicar las necesidades</b> de tus organizaciones socias y de tus grupos destinatarios (el Handbook detalla cómo hacer un análisis de necesidades en su <b>Anexo 1</b>).</p><div class=\"callout callout-key\"><b>El orden importa.</b> Necesidades → objetivos → resultados, todo amarrado a las prioridades que elegiste. Si esta base está clara, lo demás encaja. Si no, todo el formulario suena hueco.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. El WP1 de gestión: reglas especiales",
+      "html": "<p>En Cooperation Partnerships, cada proyecto debe incluir un <b>work package estándar de gestión (WP1)</b> más <b>WP adicionales de implementación</b>. El propio formulario distingue entre el WP dedicado a gestión y los demás. El WP de gestión tiene reglas propias que conviene memorizar:</p><ul class=\"bullets\"><li>Su descripción debe incluir una <b>metodología de gestión</b>, un <b>calendario detallado con hitos</b>, el <b>sistema de monitorización y control</b> y las <b>medidas para garantizar una implementación puntual</b> de las actividades. Puedes adjuntar documentos de apoyo.</li><li>Puede representar como <b>máximo el 20 % del presupuesto total</b>. Si la gestión se come más, el proyecto está descompensado.</li><li><b>NO requiere objetivos específicos</b> propios, porque se considera que <b>contribuye horizontalmente</b> a todos los objetivos del proyecto.</li></ul><div class=\"callout callout-good\"><b>Costes típicos del WP de gestión:</b> personal de gestión y administración, reuniones de gestión del proyecto, contabilidad, traducciones, monitorización de las actividades, etc.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Los demás WP: donde vive el proyecto de verdad",
+      "html": "<p>Los WP que no son de gestión son los que producen los resultados. Su descripción debe incluir, para cada uno:</p><ol class=\"obj\"><li><b>Referencias a los objetivos específicos</b> relevantes a los que sirve el WP.</li><li>Las <b>actividades y entregables</b> propuestos, ilustrados y descritos en detalle.</li><li>Cómo esas actividades <b>contribuyen al logro de los objetivos</b>.</li><li>El <b>reparto de tareas y responsabilidades de cada socio</b>, descrito claramente dentro de cada WP.</li></ol><p>Además, la descripción de los <b>resultados esperados</b> debe apoyarse en un sistema de <b>indicadores cuantitativos y cualitativos</b> que permita valorar el rendimiento del proyecto y la relevancia de cada actividad (los ejemplos están en el <b>Anexo 2</b>).</p><div class=\"callout callout-warn\">Sobre los costes de estos WP: deben ser <b>coste-eficientes</b>, necesarios para implementar las actividades previstas y acordes con las prácticas contables del solicitante. No vale inflar partidas.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. El marco lógico: la cadena que lo amarra todo",
+      "html": "<p>El <b>marco lógico (logical framework)</b> es la columna vertebral conceptual de la solicitud. Es la cadena que conecta, en este orden:</p><div class=\"callout callout-key\"><b>Objetivos → Work Packages y actividades → Resultados → Indicadores.</b><br>Los objetivos generales se desglosan en objetivos específicos; cada objetivo específico se cubre con uno o varios WP y sus actividades; cada WP produce unos resultados esperados; y cada resultado se mide con sus indicadores.</div><p>En la solicitud tienes que <b>especificar el calendario</b> de todas las actividades y entregables de cada WP. Y se <b>recomienda encarecidamente incluir un diagrama de Gantt</b> que dé una visión general por periodos para apoyar la evaluación (puede acompañarse de una descripción). Una actividad por fila, repartida en los periodos del proyecto: así el evaluador ve de un vistazo que el plan es realista.</p><p>El <b>presupuesto se detalla a tres niveles</b>: por <b>WP</b>, por <b>actividad</b> y por <b>beneficiario</b>. El resumen presupuestario se presenta por work package y por beneficiario. Este es el ejemplo exacto del Handbook (suma 400.000 €):</p><table><thead><tr><th>WP</th><th>Coordinador</th><th>Socio 1</th><th>Socio 2</th><th>Socio 3</th><th>Total</th></tr></thead><tbody><tr><td><b>WP1</b> Gestión</td><td>40.000</td><td>20.000</td><td>10.000</td><td>10.000</td><td><b>80.000</b></td></tr><tr><td><b>WP2</b></td><td>50.000</td><td>20.000</td><td>30.000</td><td>20.000</td><td><b>120.000</b></td></tr><tr><td><b>WP3</b></td><td>10.000</td><td>50.000</td><td>70.000</td><td>30.000</td><td><b>160.000</b></td></tr><tr><td><b>WP4</b></td><td>10.000</td><td>15.000</td><td>5.000</td><td>10.000</td><td><b>40.000</b></td></tr><tr><td><b>Total</b></td><td>110.000</td><td>105.000</td><td>115.000</td><td>70.000</td><td><b>400.000</b></td></tr></tbody></table><p>Observa que en este ejemplo el WP1 de gestión vale 80.000 € sobre 400.000 €: justo el <b>20 % máximo</b> permitido.</p>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. ¿Qué es un indicador? (cuantitativo vs cualitativo)",
+      "html": "<p>Aquí muchos solicitantes se atascan, así que vamos despacio. Un <b>indicador</b> es un <b>factor o valor medible</b> que se usa para valorar la calidad de los resultados del proyecto y, por tanto, el nivel de logro de los objetivos. Cada WP (excepto el WP1 de gestión) debe describirse definiendo objetivos específicos, targets e indicadores de resultado cuantitativos y cualitativos.</p><p>Un indicador puede ser de dos tipos:</p><ul class=\"bullets\"><li><b>Cuantitativo:</b> define información medible sobre cantidades y hechos, verificable matemáticamente. Ejemplo: número de participantes en un evento.</li><li><b>Cualitativo:</b> describe eventos, razones, causas, efectos, experiencias, etc. Los indicadores cualitativos <b>pueden convertirse en cuantitativos</b> mediante métodos de puntuación (scoring).</li></ul><div class=\"callout callout-good\">Cuantitativos y cualitativos <b>se complementan</b>: además de cantidades y hechos, hay que medir elementos cualitativos para que la evaluación del logro de objetivos no sea puramente mecánica.</div>"
+    },
+    {
+      "id": "s6",
+      "kind": "content",
+      "title": "6. Elementales vs derivados, e Indicador ≠ Target",
+      "html": "<p>Dentro de los indicadores hay dos clases que conviene distinguir:</p><ul class=\"bullets\"><li><b>Indicadores elementales:</b> dan información básica sobre la que se construyen otros indicadores. <em>Ejemplos:</em> número de personas formadas, número de participantes en una reunión, número de visitas a la web.</li><li><b>Indicadores derivados:</b> se basan en el cálculo del <b>ratio entre dos indicadores elementales</b>. <em>Ejemplos:</em> número de estudiantes que aprobaron un test, participantes en una conferencia que presentaron una ponencia, visitantes de la web que descargaron un documento.</li></ul><p>Y ahora la distinción que más se confunde de todo el Handbook:</p><div class=\"callout callout-key\"><b>Indicador ≠ Target.</b> Un <b>indicador</b> es información específica y medible que ayuda a seguir el progreso de un WP <em>en un momento concreto</em> en el tiempo. Un <b>target</b> es el <em>valor deseado</em> del indicador al completar la acción. Para que los indicadores sean medibles, se recomienda incluir targets específicos que definan el nivel de logro buscado.</div><p>El ejemplo exacto del Handbook lo deja clarísimo:</p><ul class=\"bullets\"><li><b>Target:</b> 1000 visitas a la web para diciembre de 2020.</li><li><b>Indicador:</b> 500 visitas en julio; 750 en octubre; 1100 en diciembre.</li></ul><p>El target es la meta fija; el indicador es la foto que vas tomando por el camino para ver si llegas.</p>"
+    },
+    {
+      "id": "s7",
+      "kind": "content",
+      "title": "7. ¿Cuántos indicadores necesito?",
+      "html": "<p>Última pregunta práctica: ¿cuántos indicadores poner? La regla del Handbook es de sentido común y vale la pena citarla literal:</p><div class=\"callout callout-good\">Debe haber <b>suficientes indicadores para cubrir todos los resultados importantes</b> del proyecto, <b>pero no tantos</b> que medirlos requiera más esfuerzo que las propias actividades del proyecto.</div><p>Es decir: ni te quedas corto (resultados sin medir = imposible evaluar la calidad), ni te pasas (un ejército de indicadores que nadie va a poder recopilar). El <b>Anexo 2</b> del Handbook ofrece una lista de ejemplos de indicadores cuantitativos y cualitativos usados en proyectos reales del pasado, para inspirarte.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El WP de gestión necesita sus propios objetivos específicos.»</b> → No: el WP1 contribuye horizontalmente a todos los objetivos y no requiere objetivos específicos propios.</li><li><span class=\"err-x\">✗</span> <b>«La gestión puede llevarse lo que haga falta.»</b> → Máximo 20 % del presupuesto total. Punto.</li><li><span class=\"err-x\">✗</span> <b>«Indicador y target son lo mismo.»</b> → El indicador mide en un momento dado; el target es el valor deseado al final.</li><li><span class=\"err-x\">✗</span> <b>«Cuantos más indicadores, mejor proyecto.»</b> → No: si medirlos cuesta más que hacer el proyecto, sobran. Solo los suficientes para cubrir los resultados clave.</li><li><span class=\"err-x\">✗</span> <b>«El presupuesto va aparte de los WP.»</b> → Se detalla DENTRO de cada WP, por actividad y por beneficiario.</li><li><span class=\"err-x\">✗</span> <b>«El Gantt es opcional y da igual.»</b> → Es muy recomendado precisamente porque ayuda al evaluador a creerse tu calendario.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026), sección 5.1</td><td>Estructura de la solicitud de Cooperation Partnerships: selección de prioridades, WP1 de gestión (máx. 20 %, sin objetivos específicos, costes típicos), WP de implementación, marco lógico, recomendación de Gantt, ejemplo de tabla de presupuesto por WP × socio (suma 400.000 €), definición de indicadores (cuantitativo/cualitativo, elemental/derivado), distinción Indicador ≠ Target con su ejemplo, y la regla sobre cuántos indicadores usar. Anexos 1 y 2 referenciados.</td></tr></tbody></table>"
+    }
+  ]
+}

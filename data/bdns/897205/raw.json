@@ -1,0 +1,84 @@
+{
+  "id": 1098766,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SENTMENAT",
+    "nivel3": "AYUNTAMIENTO DE SENTMENAT"
+  },
+  "sedeElectronica": "https://sentmenat.eadministracio.cat/info.0",
+  "codigoBDNS": "897205",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCESIÓN DIRECTA PARA EL CASAL DE VERANO Y CASALET DE SEPTIEMBRE 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCESSIÓ DIRECTA PER AL CASAL D'ESTIU I CASALET DE SETEMBRE 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCESIÓN DIRECTA PARA EL CASAL DE VERANO Y CASALET DE SEPTIEMBRE 2026",
+  "urlBasesReguladoras": "https://sentmenat.eadministracio.cat/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-27",
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429941,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260302_Uns altres_Convocatoria Subvencio Casal d'Estiu CAST.docx",
+      "long": 74172,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1430008,
+      "descripcion": "DECRETO APROBACIÓN CONVOCATORIA",
+      "nombreFic": "DECRETO.docx",
+      "long": 111793,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1429942,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260302_Uns altres_Convocatoria Subvencio Casal d'EstiuCAT.docx",
+      "long": 74207,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

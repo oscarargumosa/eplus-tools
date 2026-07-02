@@ -1,0 +1,76 @@
+{
+  "id": 1100215,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE LEÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898654",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "BASES DEL PROGRAMA DE AYUDAS POR DESPLAZAMIENTO PARA LA REALIZACIÓN DE PRÁCTICAS CURRICULARES EN LOS GRADOS Y MÁSTERES UNIVERSITARIOS QUE SE IMPARTEN EN LA FACULTAD DE EDUCACIÓN DE LA UNIVERSIDAD DE LEÓN. CURSO 2025/2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DEL PROGRAMA DE AYUDAS POR DESPLAZAMIENTO PARA LA REALIZACIÓN DE PRÁCTICAS CURRICULARES EN LOS GRADOS Y MÁSTERES UNIVERSITARIOS QUE SE IMPARTEN EN LA FACULTAD DE EDUCACIÓN DE LA UNIVERSIDAD DE LEÓN. CURSO 2025/2026",
+  "urlBasesReguladoras": "https://www.unileon.es/estudiantes/futuros-estudiantes/becas-ayudas/becas-generales",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15/04/2026",
+  "textFin": "15/06/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434615,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Ayudas Desplazamiento Practicum Educacion 25_26.report.pdf",
+      "long": 226395,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208761,
+      "titulo": "EXTRACTO, de la convocatoria de 13 de abril de 2026, de la Universidad de León, por la que se convocan ayudas por desplazamiento para la realización de prácticas curriculares en los grados y másteres universitario que se imparten en la Facultad de Educación de la Universidad de León curso 2025/2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios.</p><p>Estudiantes matriculados en el presente curso académico 2025-2026 en los Grados y Másteres Universitarios de la Facultad de Educación, que tengan su domicilio y residan en el municipio de León durante los meses de la realización de las prácticas curriculares.</p><p>También tendrán opción a recibir esta ayuda aquellos alumnos que residiendo en localidades distintas al municipio de León y su alfoz, hagan sus prácticas en centros educativos de la provincia de León a más de 15 kms de su lugar de residencia, siempre y cuando no sean centros del municipio de León y su alfoz.</p><p>Segundo.- Objeto.</p><p>Ayudas para cubrir el desplazamiento a centros educativos o entidades sociales fuera de la ciudad de León y su alfoz, a los estudiantes de la Facultad de Educación que están realizando algún Grado o Máster Universitario con el objeto de realizar las prácticas curriculares de su Plan de Estudios.</p><p>Tercero.- Bases reguladoras.</p><p>La presente convocatoria se regirá por la Ley 38/2023, de 17 de noviembre, General de Subvenciones y el resto de la normativa vigente aplicable.</p><p>La convocatoria se encuentra publicada en la página web de la Universidad de León, en el enlace</p><p>https://www.unileon.es/estudiantes/futuros-estudiantes/becas-ayudas/becas-generales</p><p>Cuarto.- Cuantía</p><p>La cuantía total de crédito consignado es de diez mil euros (10.000 €)</p><p>Quinto.- Plazo de Presentación de Solicitudes</p><p>El plazo de presentación de solicitudes finaliza el día 15 de junio de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/16/pdf/BOCYL-D-16042026-72-5.pdf",
+      "cve": "BOCYL-D-16042026-72-5",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

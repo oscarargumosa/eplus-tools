@@ -1,0 +1,58 @@
+{
+  "id": "2.2.2",
+  "code": "Part B · 2.2.2",
+  "module": "EACEA",
+  "moduleTitle": "Quality of partnership",
+  "bloque": "I — Gestión post-aprobación",
+  "title": "2.2.2 Gestión del consorcio y toma de decisiones",
+  "subtitle": "Cómo demostrar que tu asociación se va a gobernar bien: quién decide qué, cómo os comunicáis y cómo controláis que el proyecto avanza.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.2.2",
+    "Criterio": "Quality of partnership (20 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Sabes que tendrás reuniones y un coordinador, pero describir «cómo gestionaréis» suena a obviedad. Acabas escribiendo frases genéricas («nos reuniremos regularmente») que no convencen a nadie.",
+    "comprender": "Que la gestión es un mecanismo concreto: órganos definidos, reglas para decidir (incluso cuando hay desacuerdo), canales de comunicación con frecuencia, y herramientas para detectar a tiempo que algo se desvía.",
+    "objetivo": "Saber describir las estructuras de gestión, cómo se toman las decisiones, cómo se asegura comunicación regular y eficaz, y cómo se planifica y controla el avance.",
+    "confusion": "Creer que basta con decir «el coordinador coordina y nos reunimos». No: el evaluador quiere ver qué pasa cuando dos socios discrepan, quién decide, cada cuánto habláis y cómo veis los retrasos antes de que sean un problema.",
+    "importa": "Porque forma parte de Quality of partnership (20 pts). Un consorcio excelente con una gestión vaga sugiere que el proyecto se descontrolará: el evaluador penaliza el riesgo de ejecución."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\"><b>📋 Lo que pide la sección 2.2.2.</b> Describe las <b>estructuras de gestión</b> y los <b>mecanismos de toma de decisiones</b> de tu asociación: cómo vais a <em>decidir</em>, cómo aseguraréis una <b>comunicación regular y eficaz</b> entre socios, y cómo planificaréis y controlaréis el avance del proyecto.</div><p>Es una pregunta de <b>gobernanza</b>. No mide quiénes sois (eso es 2.2.1), sino <em>cómo os vais a organizar para no fracasar</em>. El evaluador la lee imaginando el proyecto ya en marcha: ¿quién manda?, ¿qué pasa si un socio se retrasa?, ¿cómo se enteran todos de las decisiones?</p><p>Tiene cuatro componentes que conviene cubrir explícitamente:</p><ol class=\"obj\"><li><b>Estructuras de gestión</b> — qué órganos hay y para qué.</li><li><b>Toma de decisiones</b> — cómo se decide, incluido el desacuerdo.</li><li><b>Comunicación</b> — canales y frecuencia.</li><li><b>Planificación y control</b> — cómo seguís el avance y reaccionáis a las desviaciones.</li></ol>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La gestión es el apartado donde más se cae en lo genérico. El evaluador ha leído cien veces «habrá comunicación fluida y reuniones periódicas». Eso no es evidencia: es un deseo. Para puntuar, <b>haz tu sistema concreto y verificable</b>.</p><table class=\"cmp\"><thead><tr><th>Genérico (flojo)</th><th>Concreto (puntúa)</th></tr></thead><tbody><tr><td>«Nos reuniremos regularmente.»</td><td>«Reuniones de coordinación online mensuales y 4 reuniones presenciales transnacionales, una por hito.»</td></tr><tr><td>«Las decisiones se toman por consenso.»</td><td>«Comité de Dirección (1 voto por beneficiario): consenso primero; si no se alcanza en 10 días, decisión por mayoría simple, con voto de calidad del coordinador.»</td></tr><tr><td>«Controlaremos la calidad.»</td><td>«Plan de calidad con indicadores por WP; revisión trimestral de hitos y un registro de riesgos con medidas correctoras.»</td></tr></tbody></table><p>Los cuatro componentes, llevados a evidencia:</p><ol class=\"obj\"><li><b>Estructuras.</b> Nombra los órganos: p. ej. un <em>Comité de Dirección</em> (decisiones estratégicas), líderes de WP (operativa diaria) y un grupo de calidad. Di qué decide cada uno.</li><li><b>Decisiones.</b> Lo que distingue una buena respuesta: explica el <b>mecanismo de desacuerdo</b>. Consenso por defecto, y una regla clara (mayoría, voto de calidad) para cuando no hay consenso. Si no hay plan B, el evaluador ve riesgo de bloqueo.</li><li><b>Comunicación.</b> Canales (correo, plataforma compartida, videollamada) <b>con frecuencia</b> y para qué sirve cada uno. La eficacia se demuestra con ritmo, no con adjetivos.</li><li><b>Planificación y control.</b> Cómo vigiláis el avance: cronograma con hitos, indicadores, revisiones periódicas y, sobre todo, <b>qué hacéis cuando algo se desvía</b> (registro de riesgos + medidas correctoras).</li></ol><div class=\"callout callout-key\">Prueba de fuego: un evaluador debería poder leer tu apartado y saber, ante un retraso de un socio, <b>quién se entera, cuándo, quién decide la corrección y cómo</b>. Si eso no se puede deducir, falta concreción.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Esquema breve de una estructura de gestión bien descrita:</p><table class=\"cmp\"><thead><tr><th>Órgano</th><th>Quién</th><th>Decide / hace</th><th>Ritmo</th></tr></thead><tbody><tr><td>Comité de Dirección</td><td>1 representante por beneficiario</td><td>Decisiones estratégicas, presupuesto, cambios de plan</td><td>Trimestral + extraordinarias</td></tr><tr><td>Coordinación operativa</td><td>Coordinador + líderes de WP</td><td>Seguimiento de tareas y resolución del día a día</td><td>Mensual (online)</td></tr><tr><td>Grupo de calidad</td><td>Responsable de calidad + 1 socio externo</td><td>Indicadores, revisión de entregables, riesgos</td><td>Por hito / trimestral</td></tr></tbody></table><p><b>Regla de decisión:</b> consenso por defecto; si no se alcanza en 10 días hábiles, mayoría simple en el Comité, con voto de calidad del coordinador. <b>Comunicación:</b> plataforma compartida (documentos y tareas) + correo para lo formal + videollamada mensual. <b>Control:</b> cronograma con hitos, registro de riesgos vivo y medidas correctoras predefinidas para los riesgos más probables.</p><div class=\"callout callout-good\">Lo que hace fuerte a este ejemplo: hay <b>órganos con funciones distintas</b>, una <b>regla para el desacuerdo</b>, comunicación <b>con frecuencia</b> y un mecanismo explícito para <b>reaccionar a desviaciones</b>. Nada queda al «ya nos organizaremos».</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Nos comunicaremos de forma fluida y regular.»</b> → Adjetivos vacíos. Di canales y frecuencia concretos: qué herramienta, cada cuánto, para qué.</li><li><span class=\"err-x\">✗</span> <b>«Las decisiones se toman por consenso.»</b> → ¿Y si no hay consenso? Sin regla de desbloqueo, el evaluador ve riesgo de parálisis. Define la mayoría o el voto de calidad.</li><li><span class=\"err-x\">✗</span> <b>«El coordinador se encarga de todo.»</b> → Sugiere un proyecto centralizado y frágil. Reparte funciones entre órganos y líderes de WP.</li><li><span class=\"err-x\">✗</span> <b>«El control de calidad lo veremos durante el proyecto.»</b> → Demasiado tarde. La planificación y el control se diseñan <em>en la solicitud</em>: indicadores, hitos y plan ante desviaciones.</li><li><span class=\"err-x\">✗</span> <b>«Copio el mismo párrafo de gestión de otro proyecto.»</b> → Se nota. Una gestión genérica no encaja con tus WP concretos y delata copia-pega.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 2.2.2</b></td><td>El texto literal: estructuras de gestión, toma de decisiones, comunicación, planificación y control.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Qué valora el evaluador en Quality of partnership (20 pts) respecto a gobernanza y control.</td></tr><tr><td><b>kb-0090</b> Tips de redacción</td><td>Cómo concretar gestión y decisiones: órganos, reglas de desacuerdo y mecanismos de seguimiento.</td></tr></tbody></table>"
+    }
+  ]
+}

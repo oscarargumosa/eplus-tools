@@ -1,0 +1,98 @@
+{
+  "source": "bdns",
+  "source_id": "898870",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CATALUÑA / INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "Resolución de convocatoria para la concesión de subvenciones, en concurrencia competitiva, para la realización de actuaciones que reduzcan el impacto ambiental y fomenten y mejoren la accesibilidad de las empresas o entidades del sector cultural",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": "2026-04-23",
+  "deadline": "2026-05-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 225000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    },
+    {
+      "codigo": "60",
+      "descripcion": "Actividades de programación, radiodifusión, agencias de noticias y otras actividades de distribución de contenidos"
+    },
+    {
+      "codigo": "58",
+      "descripcion": "Edición"
+    },
+    {
+      "codigo": "59",
+      "descripcion": "Producción cinematográfica, de vídeo y de programas de televisión, grabación de sonido y edición musical"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898870",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9642/2144959.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209663,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1042514",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.720Z"
+}

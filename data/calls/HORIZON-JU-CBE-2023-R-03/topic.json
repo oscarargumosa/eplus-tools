@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-JU-CBE-2023-R-03",
+  "ccm2Id": "45962226",
+  "callIdentifier": "HORIZON-JU-CBE-2023",
+  "callTitle": "",
+  "title": "Robust and optimised industrial biotech and chemical/industrial biotech processes",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-04-26",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Chemical reactions: mechanisms, dynamics, kinetics\",\"Industrial biotechnology\",\"Bio-based products (products that are manufactured\",\"Chemical process engineering\",\"Chemical engineering, technical chemistry\",\"Artificial Intelligence\",\"biotech processes\",\"processing routes\",\"reactors\",\"productivity/yield\",\"bio-based processes\",\"microbial hosts\",\"enzymes\",\"combined /tandem processes\",\"microfluidics\",\"efficiency\",\"continuous production\",\"biomass feedstock\",\"(bio)catalysts\",\"production processes\",\"process design\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-JU-CBE-2023-R-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.341Z"
+}

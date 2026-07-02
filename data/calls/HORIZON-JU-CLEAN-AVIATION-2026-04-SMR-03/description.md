@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Development and demonstration of hybrid-electric propulsion architectures for the Ultra-Efficient SMR aircraft. This topic covers the demonstration of hybrid-electric sub-systems integrated into ducted or unducted engines at TRL5 through ground demonstrations with an aim to demonstrate the benefits from such propulsion architectures targeting at least 5% CO2 emissions reduction at aircraft level, with a clear roadmap towards TRL6 by 2030 supporting a future product launch compatible with an EIS by 2035. See the topic description document published with this call for full details.

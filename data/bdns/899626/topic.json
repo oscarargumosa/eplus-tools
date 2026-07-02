@@ -1,0 +1,100 @@
+{
+  "source": "bdns",
+  "source_id": "899626",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN FORAL DE BIZKAIA / DIPUTACIÓN FORAL DE BIZKAIA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Programa de subvenciones Transición Digital para el año 2026 - Línea 2: proyectos de digitalización avanzada",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": "2026-05-04",
+  "deadline": "2026-05-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1700000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "46",
+      "descripcion": "Comercio al por mayor"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "B",
+      "descripcion": "INDUSTRIAS EXTRACTIVAS"
+    },
+    {
+      "codigo": "E",
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN"
+    },
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899626",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.bizkaia.eus",
+  "text_inicio": "4 de mayo de 2026",
+  "text_fin": "22 de mayo de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.191Z"
+}

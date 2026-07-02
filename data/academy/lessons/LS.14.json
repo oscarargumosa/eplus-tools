@@ -1,0 +1,93 @@
+{
+  "id": "LS.14",
+  "code": "UD-LS.14",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "C — Antes de escribir",
+  "title": "Anexo 1 · Diseñar el proyecto: necesidades y objetivos SMART",
+  "subtitle": "Cómo hacer un análisis de necesidades basado en evidencia, traducirlo en objetivos S.M.A.R.T. y por qué en lump sum la cadena objetivos→actividades→resultados decide tus pagos.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "Annex 1 del Handbook (Designing the project)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Saltas directo a «qué actividades voy a hacer» sin haber definido bien el problema, así que tu proyecto suena a lista de tareas sin un porqué, y los objetivos quedan vagos y se contradicen entre secciones.",
+    "comprender": "Que un buen proyecto se diseña al revés de como apetece: primero necesidades con evidencia, luego objetivos medibles, y solo entonces actividades. Y que esa cadena no es teoría: es la base de cómo te evalúan y te pagan.",
+    "objetivo": "Saber priorizar necesidades (primarias / secundarias / efectos secundarios), hacer un gap analysis y formular objetivos S.M.A.R.T. que cierren ese hueco.",
+    "confusion": "Confundir «objetivo» con «actividad» o con un deseo genérico («mejorar las competencias»). Un objetivo SMART describe un estado futuro concreto, medible y con fecha.",
+    "importa": "Porque bajo lump sum la correlación clara objetivos→actividades→resultados ES el marco lógico que se usa en la evaluación cualitativa, y de ahí salen los pagos y las correcciones financieras."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "content",
+      "title": "Diseñar antes de escribir: el orden importa",
+      "html": "<p>Este anexo del Handbook es, en realidad, un mini-curso de diseño de proyectos comprimido. Su mensaje de fondo es simple: <b>un buen proyecto no empieza por las actividades</b>, empieza por entender <em>qué problema real</em> quieres resolver y <em>qué cambio</em> quieres lograr.</p><p>El recorrido tiene tres pasos encadenados:</p><ol class=\"obj\"><li><b>Análisis de necesidades</b> basado en evidencia.</li><li>Estimación del <b>coste global</b> para elegir el tramo de lump sum.</li><li>Formulación de <b>objetivos S.M.A.R.T.</b></li></ol><div class=\"callout callout-key\">Un análisis de necesidades basado en evidencia es <b>clave para una buena planificación e implementación</b> del proyecto. Si esta base está floja, todo lo que construyas encima se tambalea.</div>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. ¿Qué es una necesidad? (y por qué no es una queja)",
+      "html": "<p>El Handbook define las necesidades de forma muy precisa: las necesidades son <b>cambios deseados en el contexto</b> en el que opera una organización. No son carencias vagas ni quejas: son <em>el delta entre cómo están las cosas y cómo quieres que estén</em>.</p><p>Una vez has identificado un número de necesidades, su análisis consiste en <b>dos aspectos principales</b> —que vemos en las dos secciones siguientes—: <b>(a)</b> priorizarlas y <b>(b)</b> operacionalizarlas.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. (a) Priorizar: primarias, secundarias y efectos secundarios",
+      "html": "<p>El primer aspecto del análisis es <b>ordenar las necesidades según los beneficios esperados</b> para la organización. En función de esos beneficios, las necesidades se categorizan así:</p><table><thead><tr><th>Categoría</th><th>Definición</th></tr></thead><tbody><tr><td><b>Primarias</b></td><td>Estas necesidades <b>deben abordarse</b> para completar el proyecto con éxito.</td></tr><tr><td><b>Secundarias</b></td><td>Estas necesidades <b>pueden abordarse si los recursos del proyecto lo permiten</b>.</td></tr><tr><td><b>Side effects</b><br>(efectos secundarios)</td><td>Estas necesidades <b>podrían verse afectadas positivamente</b> por el proyecto, pero <b>no se abordarán directamente</b>.</td></tr></tbody></table><div class=\"callout callout-good\">Priorizar así te protege: deja claro qué es <em>imprescindible</em> (primarias), qué es <em>deseable si sobra músculo</em> (secundarias) y qué es <em>un bonus colateral</em> (side effects). Evita prometer de más.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. (b) Operacionalizar: el gap analysis",
+      "html": "<p>El segundo aspecto: al formular la propuesta, las principales necesidades identificadas deben <b>operacionalizarse comparando la situación inicial con la deseada</b>. Esto es lo que se conoce como <b>«gap analysis»</b> (análisis del hueco o brecha).</p><p>La consecuencia directa de esto marca toda tu redacción de objetivos:</p><div class=\"callout callout-key\">La formulación de los <b>objetivos generales y específicos</b> debe corresponderse con la descripción de <b>todas las condiciones necesarias para cerrar el hueco (gap)</b> identificado en el análisis de necesidades. Dicho de otro modo: tus objetivos existen para <em>cerrar ese gap</em>, ni más ni menos.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. El paso intermedio que se olvida: estimar el coste",
+      "html": "<p>Hay un puente entre necesidades y objetivos que mucha gente se salta. Una vez identificadas las necesidades del proyecto y <b>antes de traducirlas en objetivos</b>, los solicitantes deben realizar una <b>estimación inicial del coste global del proyecto</b> para elegir el <b>importe a tanto alzado</b> que solicitarán como subvención.</p><div class=\"callout callout-good\">Es decir: el tramo de lump sum no se elige al final, «a ojo». Se estima <b>en cuanto sabes qué necesidades vas a abordar</b>, porque ese volumen de trabajo es el que justifica el importe que pides.</div>"
+    },
+    {
+      "id": "s5",
+      "kind": "content",
+      "title": "5. Fijar objetivos: del general a los específicos",
+      "html": "<p>Tras definir las necesidades del proyecto y cuantificar el apoyo financiero requerido, toca <b>fijar los objetivos</b>.</p><ul><li>El <b>objetivo general</b> se puede fijar como un <b>resumen de los beneficios deseados</b> que se quieren lograr con el proyecto, y en línea con las <b>prioridades de la Acción</b> establecidas en la convocatoria.</li><li>El objetivo general se detalla luego en <b>objetivos más específicos y operativos</b>, que constituyen los <b>propósitos de las actividades concretas</b> que se llevan a cabo en el marco del proyecto.</li></ul><div class=\"callout callout-key\">Mecánica mental: <b>objetivo general</b> = el «para qué» grande, alineado con las prioridades de la convocatoria. <b>Objetivos específicos</b> = los «qués» concretos que justifican cada actividad. Si un objetivo específico no se traduce en actividades, sobra; si una actividad no sirve a ningún objetivo, sobra.</div>"
+    },
+    {
+      "id": "s6",
+      "kind": "content",
+      "title": "6. Objetivos S.M.A.R.T. (la tabla)",
+      "html": "<p>Los objetivos del proyecto deben ser <b>Specific, Measurable, Achievable, Relevant y Time-bound</b> (es decir, <b>S.M.A.R.T.</b>). Este marco viene del toolbox de Better Regulation de la Comisión Europea y se resume así:</p><table><thead><tr><th>Letra</th><th>Qué significa</th></tr></thead><tbody><tr><td><b>Specific</b><br>(Específico)</td><td>Los objetivos deben ser <b>precisos y concretos</b>, lo bastante como para <b>no quedar abiertos a interpretaciones distintas</b> por parte de diferentes personas.</td></tr><tr><td><b>Measurable</b><br>(Medible)</td><td>Deben definir un <b>estado futuro deseado en términos medibles</b>, para permitir verificar su logro. Tales objetivos están o bien <b>cuantificados</b>, o bien basados en una <b>combinación de descripción y escalas de puntuación</b>.</td></tr><tr><td><b>Achievable</b><br>(Alcanzable)</td><td>Las metas del proyecto deben fijarse a un nivel <b>ambicioso pero, al mismo tiempo, realistamente alcanzable</b>.</td></tr><tr><td><b>Relevant</b><br>(Relevante)</td><td>Los objetivos deben estar <b>directamente ligados al problema y a sus causas raíz</b>.</td></tr><tr><td><b>Time-bound</b><br>(Acotado en el tiempo)</td><td>Deben estar <b>relacionados con una fecha fija o un periodo de tiempo preciso</b>, para permitir una evaluación de su logro.</td></tr></tbody></table>"
+    },
+    {
+      "id": "s7",
+      "kind": "content",
+      "title": "7. Por qué esto importa MÁS en lump sum",
+      "html": "<p>Aquí está el remate, y es lo que conecta este anexo de diseño con el dinero:</p><div class=\"callout callout-key\">Bajo el modelo de financiación a tanto alzado, es <b>especialmente importante mostrar una correlación clara</b> entre los <b>objetivos planificados, las actividades implementadas y los resultados logrados</b>, porque <b>esa cadena constituye el marco lógico (logical framework)</b> que se usa en la <b>evaluación cualitativa</b> de los proyectos, que a su vez es la <b>base de los pagos y las correcciones financieras</b>.</div><p>Traducido: en lump sum no hay facturas que demuestren que el dinero «está bien gastado». Lo único que sostiene tu subvención es que la historia objetivos→actividades→resultados <b>encaje y se cumpla</b>. Un objetivo vago rompe la cadena, y una cadena rota es una evaluación a la baja… y por tanto un pago a la baja.</p>"
+    },
+    {
+      "id": "ejercicio",
+      "kind": "exercise",
+      "title": "Ejercicio práctico — Formula un objetivo S.M.A.R.T.",
+      "html": "<div class=\"callout callout-exercise\"><b>Enunciado.</b> Parte de esta necesidad detectada: «<em>el profesorado de FP de los centros socios no se siente capaz de integrar competencias interculturales en el aula</em>». Conviértela en <b>un objetivo S.M.A.R.T.</b> Marca, para cada letra, cómo lo cumples.</div><p><b>Mal objetivo (para contrastar):</b> «Mejorar las competencias interculturales del profesorado.» → Es un deseo, no un objetivo: no es medible, ni acotado en el tiempo, ni concreto.</p><p><b>Objetivo S.M.A.R.T. de ejemplo:</b></p><div class=\"callout callout-good\">«<b>Al finalizar el mes 18</b> del proyecto, <b>al menos 40 docentes de FP</b> de los 4 centros socios habrán <b>completado el itinerario formativo</b> y mostrarán una <b>mejora media de 1,5 puntos</b> (en una escala de 1 a 5) en su autopercepción de competencia para integrar contenidos interculturales en el aula, medida con cuestionario pre/post.»</div><table><thead><tr><th>Letra</th><th>Cómo se cumple</th></tr></thead><tbody><tr><td><b>S</b></td><td>«40 docentes de FP de los 4 centros», sin interpretaciones ambiguas.</td></tr><tr><td><b>M</b></td><td>Cuestionario pre/post con escala 1–5 y mejora media de 1,5 puntos.</td></tr><tr><td><b>A</b></td><td>Ambicioso pero alcanzable con el itinerario formativo previsto.</td></tr><tr><td><b>R</b></td><td>Ligado a la causa raíz: el profesorado «no se siente capaz».</td></tr><tr><td><b>T</b></td><td>«Al finalizar el mes 18», fecha precisa para evaluar el logro.</td></tr></tbody></table>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Empiezo por las actividades, que es lo divertido.»</b> → Se diseña al revés: necesidades → objetivos → actividades. Las actividades son consecuencia, no punto de partida.</li><li><span class=\"err-x\">✗</span> <b>«Pongo todas mis necesidades como primarias.»</b> → Hay que priorizar: primarias (imprescindibles), secundarias (si hay recursos), side effects (bonus no abordado directamente).</li><li><span class=\"err-x\">✗</span> <b>«Mejorar competencias» ya es un objetivo.»</b> → Es un deseo. Un objetivo SMART describe un estado futuro medible, cuantificado y con fecha.</li><li><span class=\"err-x\">✗</span> <b>«El tramo de lump sum se decide al final.»</b> → Se estima el coste global <em>antes</em> de traducir las necesidades en objetivos.</li><li><span class=\"err-x\">✗</span> <b>«El marco lógico es relleno teórico.»</b> → En lump sum es la base de la evaluación cualitativa y, por tanto, de tus pagos y correcciones financieras.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the KA2 lump sum funding model · Annex 1 (Designing the project)</td><td>Análisis de necesidades (priorización + gap analysis), estimación de coste para elegir tramo, fijación de objetivos general/específicos y tabla S.M.A.R.T. La nota a pie remite al Better Regulation toolbox #15 de la Comisión.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL3-2023-DRS-01-05",
+  "ccm2Id": "45763384",
+  "callIdentifier": "HORIZON-CL3-2023-DRS-01",
+  "callTitle": "",
+  "title": "Robotics: Autonomous or semi-autonomous UGV systems to supplement skills for use in hazardous environments",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"First responders\",\"Hazard assessment\",\"Social sciences and humanities\",\"Robotics / automation in operational systems\",\"Robotics, Tele-Robotics \\u0026 Autonomous Systems (RTA)\",\"Disaster resilience and crisis management\",\"Robotics\",\"Integrated platforms and systems and Human Factors\",\"Security\",\"Artificial Intelligence\",\"Digital Agenda\",\"International Cooperation\",\"first responders\",\"Reduction of false positive redouts from various sensors\",\"safety and security standards\",\"remote on-scene operations\",\"European robotics industry\",\"Security Union Strategy\",\"civil protection\",\"people\",\"autonomous systems\",\"hazardous environments\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "AI",
+    "DigitalAgenda",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-DRS-01-05.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.329Z"
+}

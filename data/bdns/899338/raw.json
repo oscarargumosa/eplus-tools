@@ -1,0 +1,80 @@
+{
+  "id": 1100899,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE FAMILIA, JUVENTUD Y ASUNTOS SOCIALES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899338",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 450000,
+  "mrr": false,
+  "descripcion": "SUBV. A MUNICIPIOS C.M.PARA EQUIPAM., OBRAS Y MEJORAS LOCALES JUVENILES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "ORDEN 559/2022, DE 24 DE MARZO, DE LA CONSEJERÍA DE FAMILIA, JUVENTUD Y POLÍTICA SOCIAL",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2022/04/04/BOCM-20220404-23.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL B.O.C.M",
+  "textFin": "15 DÍAS HABILES DESDE EL SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN B.O.C.M",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436846,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS.pdf",
+      "long": 2887631,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436848,
+      "descripcion": "Otros documentos  ORDEN 559/2022 Modificación BB.RR.",
+      "nombreFic": "Otros documentos  ORDEN 559/2022 Modificación BB.RR..pdf",
+      "long": 111258,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436847,
+      "descripcion": "Otros documentos  ORDEN 3551/2019 BB.RR",
+      "nombreFic": "Otros documentos  ORDEN 3551/2019 BB.RR.pdf",
+      "long": 159730,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

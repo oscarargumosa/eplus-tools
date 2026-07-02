@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL5-2024-D1-01-03",
+  "ccm2Id": "45645442",
+  "callIdentifier": "HORIZON-CL5-2024-D1-01",
+  "callTitle": "",
+  "title": "Paleoclimate science for a better understanding of the short- to long-term evolution of the Earth system",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-09-12",
+  "deadline": "2024-03-05",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Earth and related environmental sciences\",\"Foresight\",\"Digital Agenda\",\"EOSC and FAIR data\",\"Earth system model\",\"ESM\",\"paleoclimate\"]"
+  ],
+  "crossCuttingPriorities": [
+    "FORESIGHT",
+    "DigitalAgenda",
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D1-01-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.524Z"
+}

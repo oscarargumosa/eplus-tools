@@ -69,16 +69,20 @@ const App = (() => {
     // Try to restore session from refresh token cookie
     const restored = await Auth.tryRestore();
     if (!restored) {
-      showAuth();
+      // Sin sesión → modo anónimo (teaser público), no pantalla de login.
+      // El visitante explora las superficies públicas; el muro salta al
+      // intentar abrir un detalle o navegar a una sección privada.
+      showPublic();
     }
 
     // Listen for forced logout (e.g., expired refresh token)
     window.addEventListener('auth:logout', () => onLogout());
 
-    // Handle browser back/forward
+    // Handle browser back/forward (también en modo anónimo; navigate()
+    // ya filtra las rutas privadas con el muro de login).
     window.addEventListener('hashchange', () => {
-      const hash = location.hash.slice(1) || 'my-projects';
-      if (currentUser) navigate(hash, false);
+      const hash = location.hash.slice(1) || (currentUser ? 'my-projects' : 'convocatorias');
+      navigate(hash, false);
     });
   }
 
@@ -119,6 +123,44 @@ const App = (() => {
     navigate(hash, false);
   }
 
+  /* ── Show app shell in anonymous/public mode ───────────────────
+     El visitante sin sesión ve el app-shell y puede explorar las
+     superficies públicas (teaser). El sidebar se ve completo; al
+     pinchar una sección privada o abrir un detalle salta el muro.  */
+  // Asegura que el shell público esté visible (oculta la pantalla de
+  // auth si venía de ahí). Idempotente: se puede llamar en cada
+  // navegación de invitado sin coste.
+  function ensurePublicShell() {
+    document.getElementById('auth-screen').classList.add('hidden');
+    document.getElementById('app-shell').classList.remove('hidden');
+    const back = document.getElementById('topbar-cta-back');
+    const acct = document.getElementById('topbar-cta-account');
+    if (back) back.style.display = '';      // "Volver a la web" disponible
+    if (acct) acct.style.display = 'none';
+    renderGuestUser();
+  }
+
+  function showPublic() {
+    ensurePublicShell();
+    const hash = location.hash.slice(1);
+    navigate(PUBLIC_ROUTES.includes(hash) ? hash : 'convocatorias', false);
+  }
+
+  function renderGuestUser() {
+    const nameEl   = document.getElementById('user-name');
+    const emailEl  = document.getElementById('user-email');
+    const avatar   = document.getElementById('user-avatar');
+    const logoutBtn= document.getElementById('btn-logout');
+    if (nameEl)  nameEl.textContent  = 'Invitado';
+    if (emailEl) emailEl.textContent = 'Inicia sesión';
+    if (avatar)  avatar.textContent  = '?';
+    if (logoutBtn) {
+      logoutBtn.title = 'Iniciar sesión';
+      const ic = logoutBtn.querySelector('.material-symbols-outlined');
+      if (ic) ic.textContent = 'login';
+    }
+  }
+
   /* ── Auth callbacks ────────────────────────────────────────── */
   function onAuth(user) {
     currentUser = user;
@@ -130,7 +172,9 @@ const App = (() => {
 
   function onLogout() {
     currentUser = null;
-    showAuth();
+    // Tras cerrar sesión (o expirar el token) caemos al modo público,
+    // no a la pantalla de login: el visitante puede seguir explorando.
+    showPublic();
   }
 
   /* ── Update user info in sidebar ───────────────────────────── */
@@ -149,6 +193,15 @@ const App = (() => {
       .toUpperCase()
       .slice(0, 2);
     document.getElementById('user-avatar').textContent = initials;
+
+    // Restaurar botón inferior a estado "cerrar sesión" (pudo quedar
+    // como "login" si el visitante venía del modo invitado).
+    const logoutBtn = document.getElementById('btn-logout');
+    if (logoutBtn) {
+      logoutBtn.title = 'Sign out';
+      const ic = logoutBtn.querySelector('.material-symbols-outlined');
+      if (ic) ic.textContent = 'logout';
+    }
 
     // Show admin nav only for admins
     if (currentUser.role === 'admin' || currentUser.role === 'scribe') {
@@ -218,10 +271,151 @@ const App = (() => {
     showAuthTab('info');
   }
 
+  /* ── Login wall (lead-gen gate) ────────────────────────────────
+     Teaser público: las cards se ven sin sesión, pero abrir el
+     detalle/ficha exige cuenta. requireLogin() devuelve true si hay
+     sesión; si no, muestra el popup y devuelve false para que el
+     llamante aborte la apertura.                                    */
+  function requireLogin(opts = {}) {
+    if (currentUser || (typeof API !== 'undefined' && API.getToken())) return true;
+    // Señal de interés purísima: quería abrir algo y le frenó el muro.
+    if (typeof Track !== 'undefined') Track.event('gate_hit', { route: currentRoute, what: opts.what });
+    showLoginWall(opts);
+    return false;
+  }
+
+  function openAuth(tab = 'login') {
+    showAuth();
+    showAuthTab(tab);
+  }
+
+  function showLoginWall({ what } = {}) {
+    const existing = document.getElementById('login-wall-modal');
+    if (existing) existing.remove();
+    const whatTxt = what || 'este contenido';
+    const modal = document.createElement('div');
+    modal.id = 'login-wall-modal';
+    modal.className = 'fixed inset-0 z-[60] bg-primary/40 backdrop-blur-sm flex items-center justify-center p-6';
+    modal.innerHTML = `
+      <div class="bg-white rounded-2xl shadow-xl max-w-md w-full p-8 text-center relative">
+        <button id="login-wall-close" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="w-14 h-14 rounded-2xl bg-[#1b1464] flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-[#fbff12] text-3xl">lock_open</span>
+        </div>
+        <h3 class="text-xl font-bold text-on-surface mb-2">Crea tu cuenta gratis</h3>
+        <p class="text-sm text-on-surface-variant mb-6">Regístrate para ver ${whatTxt}. Es gratis y tardas menos de un minuto.</p>
+        <div class="space-y-2">
+          <button id="login-wall-register" class="w-full py-3 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">Crear cuenta gratis</button>
+          <button id="login-wall-login" class="w-full py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface text-sm font-semibold hover:bg-surface-container-low transition-colors">Ya tengo cuenta</button>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+    const close = () => modal.remove();
+    modal.querySelector('#login-wall-close').addEventListener('click', close);
+    modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+    modal.querySelector('#login-wall-register').addEventListener('click', () => { close(); openAuth('register'); });
+    modal.querySelector('#login-wall-login').addEventListener('click', () => { close(); openAuth('login'); });
+    document.addEventListener('keydown', function esc(e) {
+      if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); }
+    });
+  }
+
+  /* ── Embudo de venta para invitados ────────────────────────────
+     Las secciones de cuenta (sin contenido para quien no ha entrado)
+     muestran un mensaje de marketing + CTAs en vez de su contenido
+     real. Copy por sección; cae a 'default' si no hay específico.    */
+  const FUNNEL_COPY = {
+    'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
+    'my-evaluations':  { icon: 'fact_check', title: 'Evalúa como un experto EACEA', body: 'Diagnostica tu propuesta contra los criterios reales de evaluación antes de presentarla. Necesitas una cuenta para guardar tus evaluaciones.' },
+    'import-proposal': { icon: 'upload_file', title: 'Importa una propuesta y mejórala', body: 'Sube un borrador y la IA lo analiza, puntúa y propone mejoras concretas. Crea tu cuenta para subir tu primer documento.' },
+    'shortlists':      { icon: 'favorite', title: 'Tu pool de socios para el consorcio', body: 'Guarda y organiza entidades para tus futuras alianzas. Crea tu cuenta para empezar a construir tu pool de partners.' },
+    'my-documents':    { icon: 'folder_open', title: 'Tu biblioteca de documentos', body: 'Centraliza convocatorias, plantillas y materiales, vectorizados para tu IA. Necesitas una cuenta para guardarlos.' },
+    'research':        { icon: 'science', title: 'Encuentra evidencia para tu propuesta', body: 'Busca papers y datos que respalden tu proyecto Erasmus+. Crea tu cuenta para usar el buscador de investigación.' },
+    default:           { icon: 'lock_open', title: 'Crea tu cuenta para acceder', body: 'Esta sección forma parte de tu espacio de trabajo. Regístrate gratis para empezar a usarla.' },
+  };
+
+  function renderGuestFunnel(route) {
+    const c = FUNNEL_COPY[route] || FUNNEL_COPY.default;
+    const host = document.getElementById('guest-funnel-content');
+    if (!host) return;
+    host.innerHTML = `
+      <div class="max-w-xl mx-auto text-center py-20 px-6">
+        <div class="w-16 h-16 rounded-2xl bg-[#1b1464] flex items-center justify-center mx-auto mb-6">
+          <span class="material-symbols-outlined text-[#fbff12] text-4xl">${c.icon}</span>
+        </div>
+        <h2 class="text-2xl font-extrabold text-on-surface mb-3">${c.title}</h2>
+        <p class="text-on-surface-variant mb-8">${c.body}</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <button type="button" id="funnel-register" class="px-6 py-3 rounded-lg bg-secondary-fixed text-primary-container font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">Crear cuenta gratis</button>
+          <button type="button" id="funnel-login" class="px-6 py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface font-semibold hover:bg-surface-container-low transition-colors">Ya tengo cuenta</button>
+        </div>
+        <button type="button" id="funnel-book" class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
+          <span class="material-symbols-outlined text-[18px]">event</span> Reservar una reunión con el equipo
+        </button>
+      </div>`;
+    host.querySelector('#funnel-register')?.addEventListener('click', () => openAuth('register'));
+    host.querySelector('#funnel-login')?.addEventListener('click', () => openAuth('login'));
+    // Placeholder hasta tener URL de reserva (Calendly/GHL): de momento capta el lead vía registro.
+    host.querySelector('#funnel-book')?.addEventListener('click', () => openAuth('register'));
+  }
+
+  /* ── Workspaces (Proyectos vs Entidades) ───────────────────────
+     El sidebar conmuta según la pestaña superior activa. Las rutas
+     de entidades muestran su propio submenú lateral y el resto del
+     menú de Proyectos se oculta (y viceversa).                      */
+  const ENTITY_ROUTES = ['my-org', 'organizations', 'shortlists', 'atlas-stats'];
+
+  // Superficies de CONTENIDO que un invitado puede navegar y explorar
+  // libremente (ve las tarjetas). El muro de login salta solo al ABRIR
+  // una tarjeta concreta (detalle de convocatoria, ficha de entidad,
+  // detalle de movilidad), no al navegar entre secciones.
+  const PUBLIC_ROUTES = ['convocatorias', 'organizations', 'atlas-stats', 'movilidades'];
+
+  // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
+  const ADMIN_ROUTES = ['analysis'];
+
+  function updateWorkspace(route) {
+    const isEntidades = ENTITY_ROUTES.includes(route);
+    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades);
+    document.getElementById('sidebar-group-entidades')?.classList.toggle('hidden', !isEntidades);
+    updateTopbarActive(route, isEntidades);
+  }
+
+  function updateTopbarActive(route, isEntidades) {
+    const activeHref = isEntidades            ? '#my-org'
+      : route === 'convocatorias'             ? '#convocatorias'
+      : route === 'movilidades'               ? '#movilidades'
+      :                                         '#my-projects';
+    document.querySelectorAll('#efs-topbar-nav .efs-topbar__menu li').forEach(li => {
+      const a = li.querySelector('a');
+      li.classList.toggle('is-current', !!a && a.getAttribute('href') === activeHref);
+    });
+  }
+
   /* ── SPA Navigation ────────────────────────────────────────── */
   function navigate(route, pushHash = true, newProject = false) {
+    // Guardia admin: rutas privadas (analytics interno) solo para admin/scribe.
+    // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
+    if (ADMIN_ROUTES.includes(route) && !isAdmin()) {
+      route = currentUser ? 'my-projects' : 'convocatorias';
+      if (pushHash) location.hash = route;
+    }
+    // Invitado: navega libremente por todas las secciones. Las de
+    // contenido (PUBLIC_ROUTES) muestran sus tarjetas; las de cuenta
+    // muestran un embudo de venta (CTAs) en vez de su contenido real.
+    let guestFunnel = false;
+    if (!currentUser) {
+      // La pestaña "Entidades" aterriza en Mi Organización (privada);
+      // para un invitado mostramos el Directorio (contenido real).
+      if (route === 'my-org') route = 'organizations';
+      guestFunnel = !PUBLIC_ROUTES.includes(route);
+      // Veníamos quizá de la pantalla de login → reactivar el shell público.
+      ensurePublicShell();
+    }
     // Legacy: #create no longer has its own panel — open the modal over Mis Proyectos
-    if (route === 'create') {
+    if (route === 'create' && !guestFunnel) {
       if (currentRoute !== 'my-projects') {
         currentRoute = 'my-projects';
         if (pushHash) location.hash = 'my-projects';
@@ -255,13 +449,19 @@ const App = (() => {
 
     // Update panels
     document.querySelectorAll('#content-area .panel').forEach(p => p.classList.remove('active'));
-    const panel = document.getElementById(`panel-${route}`);
-    if (panel) {
-      panel.classList.add('active');
+    if (guestFunnel) {
+      // Invitado en sección de cuenta → panel embudo (CTAs de venta).
+      document.getElementById('panel-guest-funnel')?.classList.add('active');
+      renderGuestFunnel(route);
     } else {
-      // Default to dashboard if panel doesn't exist
-      const dash = document.getElementById('panel-dashboard');
-      if (dash) dash.classList.add('active');
+      const panel = document.getElementById(`panel-${route}`);
+      if (panel) {
+        panel.classList.add('active');
+      } else {
+        // Default to dashboard if panel doesn't exist
+        const dash = document.getElementById('panel-dashboard');
+        if (dash) dash.classList.add('active');
+      }
     }
 
     // Update sidebar active link
@@ -273,14 +473,23 @@ const App = (() => {
       }
     });
 
+    // Switch sidebar workspace (Proyectos vs Entidades) + topbar active tab
+    updateWorkspace(route);
+
+    // Behavioral tracking: vista de sección + tiempo activo (TASK-009).
+    if (typeof Track !== 'undefined') Track.enterSection(route);
+
     // Update topbar title
     const titles = {
       dashboard:        'Dashboard',
       'my-projects':    'Mis Proyectos',
       'my-evaluations': 'Mis Evaluaciones',
       create:           'Diseñar',
-      intake:           'Presupuestar',
+      intake:           'Diseñar',
       developer:        'Escribir',
+      master:           'Diagnóstico',
+      diagnose:         'Diagnóstico',
+      'import-proposal':'Importar proyecto',
       calculator:       'Calculator',
       planner:          'Planner',
       evaluator:        'Evaluar',
@@ -288,32 +497,45 @@ const App = (() => {
       partners:         'Partners',
       'my-documents':   'My Documents',
       research:         'Research',
+      movilidades:      'Movilidades',
+      convocatorias:    'Convocatorias',
       'my-org':         'Mi Organización',
-      organizations:    'Partner Engine',
+      organizations:    'Directorio',
       shortlists:       'Mi Pool',
-      'atlas-stats':    'Atlas Stats',
-      admin:            'Admin — Data E+'
+      'atlas-stats':    'Atlas',
+      analysis:         'Análisis — Experiencia',
+      admin:            'Admin — Data E+',
+      engagement:       'Engagement'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
 
-    // Initialize module when navigating to it
-    if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
-    if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
-    if (route === 'create' && typeof CreateProject !== 'undefined') CreateProject.init();
-    if (route === 'intake' && typeof Intake !== 'undefined') {
-      Intake.init();
+    // Initialize module when navigating to it (solo con sesión; el
+    // invitado ve el embudo y no dispara cargas de datos privadas).
+    if (!guestFunnel) {
+      if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
+      if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
+      if (route === 'create' && typeof CreateProject !== 'undefined') CreateProject.init();
+      if (route === 'intake' && typeof Intake !== 'undefined') {
+        Intake.init();
+      }
+      if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
+      if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
+      if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
+      if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
+      if (route === 'my-org' && typeof Organizations !== 'undefined') Organizations.initMyOrg();
+      if (route === 'organizations' && typeof Entities !== 'undefined') Entities.init();
+      if (route === 'shortlists' && typeof Shortlists !== 'undefined') Shortlists.init();
+      if (route === 'atlas-stats' && typeof AtlasStats !== 'undefined') AtlasStats.init();
+    if (route === 'analysis' && typeof Analysis !== 'undefined') Analysis.init();
+      if (route === 'research' && typeof Research !== 'undefined') Research.init();
+      if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
+      if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
+      if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
+      if (route === 'diagnose' && typeof Diagnose !== 'undefined') Diagnose.init();
+      if (route === 'import-proposal' && typeof ImportProposal !== 'undefined') ImportProposal.init();
+      if (route === 'evaluator' && typeof Evaluator !== 'undefined') Evaluator.init();
+      if (route === 'budget' && typeof Budget !== 'undefined') Budget.init();
     }
-    if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
-    if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
-    if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
-    if (route === 'my-org' && typeof Organizations !== 'undefined') Organizations.initMyOrg();
-    if (route === 'organizations' && typeof Entities !== 'undefined') Entities.init();
-    if (route === 'shortlists' && typeof Shortlists !== 'undefined') Shortlists.init();
-    if (route === 'atlas-stats' && typeof AtlasStats !== 'undefined') AtlasStats.init();
-    if (route === 'research' && typeof Research !== 'undefined') Research.init();
-    if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
-    if (route === 'evaluator' && typeof Evaluator !== 'undefined') Evaluator.init();
-    if (route === 'budget' && typeof Budget !== 'undefined') Budget.init();
   }
 
   /* ── Toggle sidebar (mobile) ───────────────────────────────── */
@@ -341,9 +563,11 @@ const App = (() => {
     }
   }
   function getActiveProject() { return activeProject; }
+  function getCurrentUser() { return currentUser; }
+  function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, navigate, toggleSidebar, setActiveProject, getActiveProject };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, isAdmin, requireLogin };
 })();
 
 
@@ -368,11 +592,15 @@ const Toast = (() => {
 
 /* ═══ Boot ═════════════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof Track !== 'undefined') Track.init();
   App.init();
 
   /* ── Auth tab buttons ─────────────────────────────────────── */
   document.getElementById('tab-login')?.addEventListener('click', () => App.showAuthTab('login'));
   document.getElementById('tab-register')?.addEventListener('click', () => App.showAuthTab('register'));
+
+  /* ── Volver al modo exploración desde la pantalla de auth ─── */
+  document.getElementById('auth-back-explore')?.addEventListener('click', () => App.showPublic());
 
   /* ── Forgot/reset links + forms ───────────────────────────── */
   document.getElementById('link-forgot')?.addEventListener('click', (e) => {
@@ -404,8 +632,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Logout button ────────────────────────────────────────── */
-  document.getElementById('btn-logout')?.addEventListener('click', () => Auth.logout());
+  /* ── Logout / login button (context-aware) ────────────────── */
+  document.getElementById('btn-logout')?.addEventListener('click', () => {
+    if (App.getCurrentUser()) Auth.logout();
+    else App.openAuth('login');
+  });
 
   /* ── Mobile sidebar toggle ────────────────────────────────── */
   document.getElementById('btn-toggle-sidebar')?.addEventListener('click', () => App.toggleSidebar());

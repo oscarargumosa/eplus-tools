@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2024-BM-01-01",
+  "ccm2Id": "45944077",
+  "callIdentifier": "HORIZON-CL3-2024-BM-01",
+  "callTitle": "",
+  "title": "Open Topic",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Security\",\"Earth Observation / Services and applications\",\"Digital Agenda\",\"Customs authorities\",\"Technologies-Components\",\"Border and external security\",\"Border and coastguards\",\"Artificial Intelligence\",\"Border surveillance\",\"Security\",\"Borders\",\"Customs\",\"National authorities\",\"Coast guard\",\"Schengen\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-BM-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.458Z"
+}

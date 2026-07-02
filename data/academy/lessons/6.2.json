@@ -1,0 +1,58 @@
+{
+  "id": "6.2",
+  "code": "Part B · 6.2",
+  "module": "EACEA",
+  "moduleTitle": "Cierre",
+  "bloque": "D — Anatomía del formulario",
+  "title": "Anexo · Lista de proyectos previos",
+  "subtitle": "La lista de tus proyectos de los últimos 4 años (si la convocatoria lo pide), para valorar capacidad operativa y evitar solapamientos y doble financiación. Cómo presentarla.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "15–30 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B · Anexo (lista de proyectos previos)",
+    "Criterio": "Requisito formal",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El anexo de proyectos previos te parece un currículum aburrido que nadie lee, así que lo rellenas de memoria, a ojo, con cuatro proyectos que recuerdas y fechas aproximadas.",
+    "comprender": "Que esta lista cumple dos funciones reales: demostrar tu capacidad operativa (que sabes ejecutar proyectos) y permitir comprobar que no hay solapamiento ni doble financiación con lo que pides ahora.",
+    "objetivo": "Saber qué proyectos incluir, en qué ventana temporal, qué datos por proyecto, y cómo presentarlos de forma que refuercen tu credibilidad en lugar de levantar dudas.",
+    "confusion": "Creer que cuantos más proyectos pongas, mejor. Lo que cuenta es la relevancia y la consistencia con el resto de la propuesta, no el volumen.",
+    "importa": "Porque aunque sea un anexo, una lista inconsistente con tu sección de capacidad, o que solape costes con el proyecto actual, puede contradecir tu propia declaración de honor y sembrar dudas sobre tu fiabilidad ante el evaluador."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Qué te pide este anexo.</b> Cuando la convocatoria lo solicita, una <b>lista de los proyectos que tu organización ha ejecutado en los últimos 4 años</b>, financiados por la UE u otras fuentes. Sirve para valorar tu <b>capacidad operativa</b> y para detectar posibles <b>solapamientos y doble financiación</b>.</div><p>No todas las convocatorias lo piden, así que lo primero es <b>comprobar en tu convocatoria</b> si este anexo es obligatorio. Cuando lo es, persigue dos objetivos:</p><ul><li><b>Capacidad operativa.</b> Demostrar que tu organización tiene historial ejecutando proyectos del tipo y escala del que solicita: que no es tu primer rodeo.</li><li><b>Control de solapamiento.</b> Permitir a la Agencia cruzar tus proyectos y verificar que el que pides ahora <b>no duplica</b> actividades o costes ya financiados, en línea con la regla de no doble financiación.</li></ul><p>Por eso este anexo no vive solo: conversa con tu <b>sección de capacidad</b> y con tu <b>declaración de honor</b>.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo cumplimentarlo bien",
+      "html": "<p><b>Qué incluir por cada proyecto.</b> Una fila clara y verificable:</p><table class=\"cmp\"><thead><tr><th>Campo</th><th>Para qué</th></tr></thead><tbody><tr><td>Título y número de referencia</td><td>Identificarlo de forma inequívoca.</td></tr><tr><td>Programa / fuente de financiación</td><td>Saber si es UE (y cuál) u otra fuente.</td></tr><tr><td>Periodo (inicio–fin)</td><td>Comprobar que cae en la ventana de 4 años.</td></tr><tr><td>Importe de la subvención</td><td>Valorar escala y experiencia de gestión.</td></tr><tr><td>Tu rol (coordinador / socio)</td><td>Distinguir liderazgo de participación.</td></tr><tr><td>Breve descripción / temática</td><td>Mostrar relevancia respecto al proyecto actual.</td></tr></tbody></table><p><b>Cómo presentarla bien:</b></p><ol class=\"obj\"><li><b>Respeta la ventana de 4 años</b> y verifica las fechas reales, no de memoria.</li><li><b>Prioriza relevancia.</b> Si tienes muchos, destaca los del mismo ámbito o programa que el actual.</li><li><b>Sé consistente.</b> Lo que aparezca aquí debe encajar con lo que afirmas en la sección de capacidad operativa.</li><li><b>Evita solapamientos.</b> Si algún proyecto está activo, deja claro que el actual no duplica sus actividades ni sus costes.</li></ol><div class=\"callout callout-good\"><b>Consejo.</b> Una lista breve, exacta y relevante vence a una lista larga y aproximada. Datos verificables = credibilidad.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Checklist",
+      "html": "<p>Antes de adjuntar el anexo:</p><ol class=\"obj\"><li>¿Has confirmado que <b>tu convocatoria pide</b> este anexo?</li><li>¿Todos los proyectos caen en la <b>ventana de 4 años</b>?</li><li>¿Cada fila incluye <b>título, referencia, fuente, periodo, importe y rol</b>?</li><li>¿Las <b>fechas e importes son exactos</b>, no aproximados?</li><li>¿La lista es <b>coherente con tu sección de capacidad operativa</b>?</li><li>¿Has comprobado que <b>ningún proyecto solapa</b> actividades o costes con el actual?</li><li>¿Has priorizado los proyectos <b>relevantes</b> frente al volumen total?</li></ol>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Cuantos más proyectos liste, mejor imagen doy.»</b> → Lo que cuenta es la relevancia y la exactitud, no el volumen; una lista inflada diluye tu mensaje.</li><li><span class=\"err-x\">✗</span> <b>«Pongo fechas e importes de memoria.»</b> → Son datos verificables; un error contradice tu credibilidad y puede chocar con tu declaración de honor.</li><li><span class=\"err-x\">✗</span> <b>«Incluyo proyectos de hace 8 años para parecer veterano.»</b> → Fuera de la ventana de 4 años no cuentan y delatan que no leíste el requisito.</li><li><span class=\"err-x\">✗</span> <b>«No reviso si algún proyecto solapa con el actual.»</b> → Un solapamiento no detectado es justo lo que el anexo busca prevenir y puede activar la alarma de doble financiación.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · anexo de proyectos previos</b></td><td>La estructura de la lista y los campos solicitados por proyecto.</td></tr><tr><td><b>Convocatoria EACEA específica</b></td><td>Confirma si el anexo es obligatorio, la ventana temporal exacta y el formato exigido.</td></tr><tr><td><b>Erasmus+ Programme Guide</b></td><td>Criterio de capacidad operativa y regla de no doble financiación que justifican el anexo.</td></tr><tr><td><b>Declaración de Honor (sección 6)</b></td><td>Documento con el que esta lista debe ser coherente: lo declarado y lo listado no pueden contradecirse.</td></tr></tbody></table>"
+    }
+  ]
+}

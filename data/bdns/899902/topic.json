@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "899902",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE BURGOS",
+  "nuts_codes": [
+    "ES412"
+  ],
+  "nuts_primary": "ES412",
+  "title": "Resolución de fecha 15 de abril de 2026 del Vicerrectorado de Internacionalización, Cooperación y Alianzas Estratégicas de la Universidad de Burgos por la que se convocan 12 plazas de movilidad internacional para PDI y PTGAS de la UBU.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 60044,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.ubu.es/web/guest/registro-electronico",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899902",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo I Formulario de solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo II Declaración Responsable",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bocyl.jcyl.es/html/2020/01/15/html/BOCYL-D-15012020-3.do",
+  "text_inicio": "Desde el día siguiente a la publicación de este extracto en el Boletín Oficial de Castilla y León",
+  "text_fin": "23:59 de 15 de mayo de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209407,
+      "titulo": "EXTRACTO de la Convocatoria de 15 de abril de 2026, del Vicerrectorado de Internacionalización, Cooperación y Alianzas Estratégicas de la Universidad de Burgos, por la que se convocan 12 plazas de movilidad internacional para PDI y PTGAS de la UBU para realizar estancias docentes o de formación en el marco del Programa Erasmus+ KA171/Movilidad entre países del Programa y Terceros Países No Asociados al Programa",
+      "tituloLeng": null,
+      "texto": "<p>Primero. – Beneficiarios.</p><p>Profesores doctores en nómina de la Universidad de Burgos.</p><p>Miembros del PTGAS en nómina de la Universidad de Burgos.</p><p> </p><p>Segundo. – Objeto.</p><p> El PDI que resulte seleccionado deberá impartir un mínimo de 8 horas de clase en una semana docente (mínimo 5 días completos de estancia) en la universidad de acogida.</p><p>El PTGAS que resulte seleccionado deberá realizar una estancia cuyo objetivo será la formación y el conocimiento mutuo de ambas instituciones, que facilite futuras acciones estratégicas de cooperación con la institución de acogida.</p><p> </p><p>Tercero.– Bases reguladoras.</p><p>http://bocyl.jcyl.es/html/2020/01/15/html/BOCYL-D-15012020-3.do</p><p> </p><p>Cuarto.– Cuantía.</p><p>La cuantía total del crédito consignado es de treinta mil veintidós euros (30.022 €)</p><p> </p><p>Quinto.– Plazo de presentación de solicitudes.</p><p>Desde el día siguiente a la publicación de este extracto en el Boletín Oficial de Castilla y León hasta el 15 de mayo de 2026.</p><p> </p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/22/pdf/BOCYL-D-22042026-76-14.pdf",
+      "cve": "BOCYL-D-22042026-76-14",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.386Z"
+}

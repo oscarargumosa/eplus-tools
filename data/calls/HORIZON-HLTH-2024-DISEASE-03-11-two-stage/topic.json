@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-HLTH-2024-DISEASE-03-11-two-stage",
+  "ccm2Id": "45700238",
+  "callIdentifier": "HORIZON-HLTH-2024-DISEASE-03-two-stage",
+  "callTitle": "",
+  "title": "Pandemic preparedness and response: Adaptive platform trials for pandemic preparedness",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-04-26",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Disease control\",\"Emergent diseases\",\"Public and environmental health\",\"Emerging Epidemics\",\"Epidemiology\",\"Public health and epidemiology\",\"Social sciences and humanities\",\"Infectious diseases\",\"International Cooperation\",\"Health sciences\",\"Clinical trials\",\"Response\",\"Clinical trial\",\"Preparedness and response\",\"Emerging infectious diseases\",\"Preparedness\",\"Clinical trial network\",\"Epidemic\",\"Platform trial\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-DISEASE-03-11-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.498Z"
+}

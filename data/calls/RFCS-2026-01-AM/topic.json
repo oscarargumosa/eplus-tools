@@ -1,0 +1,170 @@
+{
+  "identifier": "RFCS-2026-01-AM",
+  "ccm2Id": "51416758",
+  "callIdentifier": "RFCS-2026",
+  "callTitle": "RFCS-2026",
+  "title": "RFCS-2026-01-AM Coal Accompanying measures",
+  "programme": "RFCS",
+  "programmeCode": "43252449",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-06-17",
+  "deadline": "2026-09-16",
+  "deadlineModel": "single-stage",
+  "actionType": "RFCS Project Grants",
+  "actionCode": "RFCS-PJG",
+  "mgaCode": "RFCS-AG",
+  "budget": {
+    "total_eur": 1000000,
+    "by_year": {
+      "2026": 1000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "RFCS-2026-01-AM",
+    "RFCS-2026",
+    "(art.4) carbon dioxide capture",
+    "(art.4) carbon dioxide storage",
+    "(art.4) carbon dioxide use",
+    "(art.4) climate impact of closing mines",
+    "(art.4) closing coal mines",
+    "(art.4) coal infrastructure",
+    "(art.4) environmental impact of mining wastes",
+    "(art.4) geothermal energy",
+    "(art.4) mining wastes",
+    "(art.4) non-energetic uses of mining wastes",
+    "(art.4) production of raw materials from mining wastes",
+    "(art.5) Health in coal mines",
+    "(art.5) Safety in coal mines",
+    "(art.5) closure of mines",
+    "(art.5) disseas related to coal mines",
+    "(art.5) health of people in coal regions",
+    "(art.5) protective measures",
+    "(art.5) social impact of closure mines",
+    "(art.5) working conditions in coal mines",
+    "(art.6) atmosphere pollution",
+    "(art.6) avoiding and minimising greenhouse gas emissions",
+    "(art.6) avoiding and minimising methane",
+    "(art.6) capturing greenhouse gas emissions",
+    "(art.6) capturing methane",
+    "(art.6) coal deposits",
+    "(art.6) coal wastes",
+    "(art.6) desulphurisation products from coal mines",
+    "(art.6) environmental impact",
+    "(art.6) environmental pollution",
+    "(art.6) land pollution",
+    "(art.6) managing and reusing fly ash",
+    "(art.6) managing and reusing mining waste",
+    "(art.6) methane leakage",
+    "(art.6) minimising greenhouse gas emissions",
+    "(art.6) minimising methane",
+    "(art.6) protecting surface infrastructure against the effects of ground movements",
+    "(art.6) protecting surface infrastructure against the effects of subsidence",
+    "(art.6) protecting water tables",
+    "(art.6) purifying mine drainage water",
+    "(art.6) refurbishing waste heaps from coal production",
+    "(art.6) restoring the environment of installations using coal",
+    "(art.6) soils pollution",
+    "(art.6) using industrially residues from coal consumption",
+    "(art.6) using industrially residues from coal production",
+    "(art.6) water pollution",
+    "Research Objective Art.4 - Supporting the just transition of the coal sector and regions",
+    "Research Objective Art.5 - Improving health and safety",
+    "Research Objective Art.6 - Minimising the environmental impacts of coal mines in transition"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact REA-RFCS@ec.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44888?topic=RFCS-2026-01-AM",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/RFCS-2026-01-AM",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/wp-call/2026/call-fiche_rfcs-2026_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (RFCS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/temp-form/af/af_rfcs_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table (RFCS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/temp-form/af/detailed-budget-table_rfcs_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "RFCS MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/rfcs/agr-contr/mga_rfcs_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "RFCS Decision 2008/376",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008D0376",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:07.460Z"
+}

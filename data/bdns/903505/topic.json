@@ -1,0 +1,67 @@
+{
+  "source": "bdns",
+  "source_id": "903505",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CATALUÑA / AGENCIA DE LA VIVIENDA DE CATALUÑA",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "Resolución TER//2026, de 28 de abril, por la que se abre la convocatoria para la concesión de ayudas, en régimen de concurrencia pública no competitiva, para la promoción de viviendas con protección oficial en suelos inscritos en reserva pública solares",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": "2026-12-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2665230291.03,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903505",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1018551",
+  "text_inicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.171Z"
+}

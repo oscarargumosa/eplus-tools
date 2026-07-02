@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898208",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLALBILLA / AYUNTAMIENTO DE VILLALBILLA",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "EJERCICIO 2026: ORDENANZA REGULADORA DE LAS PRESTACIONES SOCIALES DE CARÁCTER ECONÓMICO",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-11",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.1",
+      "descripcion": "Educación preprimaria"
+    },
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898208",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://aytovillalbilla.sedelectronica.es/preview-document/9fa534ef-a0ff-4d75-9604-3d3d864fa929",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.461Z"
+}

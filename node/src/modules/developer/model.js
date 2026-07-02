@@ -1,6 +1,25 @@
 const db = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
+const directoryApi = require('../../utils/directory-api');
 const TASK_TEMPLATES = require('../../data/task-templates');
+
+// ── Narrative format rules ────────────────────────────────────────────────
+// Applied to every system prompt that produces text destined for the EACEA
+// Form Part B. The official template renders narrative sections as plain
+// prose inside boxes — markdown (tables, lists, headings, bold) survives the
+// export as raw characters and gives the text away as AI-generated.
+const NARRATIVE_FORMAT_RULES = `
+
+══ FORMAT RULES (MANDATORY — TEXT GOES INTO THE OFFICIAL EACEA PDF FORM) ══
+The output MUST be plain prose. Markdown does NOT render in the EACEA form — it appears as literal "|" pipes, "##" hashes, "**" stars and looks unprofessional/AI-generated.
+- NO markdown tables. NEVER use "|" pipes or "---" separator rows. Compare options, methodologies, initiatives, or alternatives as flowing prose ("While ERDF focuses on top-down infrastructure and LEADER targets cycle-tourists, our project ..."). Never as a table.
+- NO markdown headings (no "#", "##", "###"). The form already provides section headers.
+- NO bold ("**text**"), italics ("*text*"), strikethrough, or backticks.
+- NO bullet or numbered lists. NO lines starting with "- ", "* ", "• ", "→ ", "1.", "2.", "a)", "b)". Write continuous prose. If you must enumerate, weave items into a sentence ("first ...; second ...; third ...") or list them inside a paragraph separated by commas or semicolons.
+- NO subheadings or internal section titles inside the answer.
+- NO emojis, ASCII art, decorative symbols ("═", "──", "▪", "✓").
+- Paragraphs separated by a single blank line — that is the only formatting allowed.
+`;
 
 // Activity.type → task-template category (mirrors public/js/intake-tasks.js TYPE_MAP)
 const ACT_TYPE_TO_TEMPLATE_CAT = {
@@ -17,6 +36,7 @@ const ACT_TYPE_TO_TEMPLATE_CAT = {
   goods: 'other_goods',
   consumables: 'consumables',
   other: 'other_costs',
+  fstp: 'financial_support_third_parties',
 };
 
 function _findTemplateBySubtypeLabel(category, subtypeLabel) {
@@ -169,8 +189,14 @@ async function updateInstanceStatus(instanceId, userId, status) {
 // ============ FIELD VALUES ============
 
 async function getFieldValues(instanceId) {
+  // If a field has parallel rows (e.g. the diagnose import wrote 'sec_1_2'
+  // alongside the Writer's '' row), the Writer's own row wins. Ordered so the
+  // canonical row is processed LAST and overwrites the rest; non-empty
+  // section_path only shows when there is no Writer row for that field.
   const [rows] = await db.execute(
-    'SELECT field_id, section_path, value_text, value_json, updated_at FROM form_field_values WHERE instance_id = ? ORDER BY field_id',
+    `SELECT field_id, section_path, value_text, value_json, updated_at
+       FROM form_field_values WHERE instance_id = ?
+      ORDER BY field_id, (COALESCE(section_path, '') = '') ASC, updated_at ASC`,
     [instanceId]
   );
   const values = {};
@@ -186,28 +212,26 @@ async function getFieldValues(instanceId) {
 }
 
 async function saveFieldValue(instanceId, fieldId, sectionPath, text, json) {
-  // Upsert. json === undefined means "don't touch value_json" (preserve existing);
-  // json === null clears it; json object stringifies.
-  const [existing] = await db.execute(
-    'SELECT id FROM form_field_values WHERE instance_id = ? AND field_id = ?',
-    [instanceId, fieldId]
-  );
-  if (existing.length) {
-    if (json === undefined) {
-      await db.execute(
-        'UPDATE form_field_values SET value_text = ?, section_path = ?, updated_at = NOW() WHERE instance_id = ? AND field_id = ?',
-        [text || '', sectionPath || '', instanceId, fieldId]
-      );
-    } else {
-      await db.execute(
-        'UPDATE form_field_values SET value_text = ?, value_json = ?, section_path = ?, updated_at = NOW() WHERE instance_id = ? AND field_id = ?',
-        [text || '', json ? JSON.stringify(json) : null, sectionPath || '', instanceId, fieldId]
-      );
-    }
+  // Atomic upsert SCOPED to the exact (instance_id, field_id, section_path) row.
+  // The uq_instance_field key is on all three columns, so ON DUPLICATE KEY UPDATE
+  // targets precisely this row and NEVER touches a parallel row with a different
+  // section_path (e.g. content imported by the diagnose flow under 'sec_1_2').
+  // section_path is never changed on update, so two rows can't be collapsed into
+  // a key collision. json===undefined preserves value_json; null clears it.
+  const sp = sectionPath || '';
+  if (json === undefined) {
+    await db.execute(
+      `INSERT INTO form_field_values (id, instance_id, field_id, section_path, value_text, updated_at)
+       VALUES (?, ?, ?, ?, ?, NOW())
+       ON DUPLICATE KEY UPDATE value_text = VALUES(value_text), updated_at = NOW()`,
+      [genUUID(), instanceId, fieldId, sp, text || '']
+    );
   } else {
     await db.execute(
-      'INSERT INTO form_field_values (id, instance_id, field_id, section_path, value_text, value_json, updated_at) VALUES (?, ?, ?, ?, ?, ?, NOW())',
-      [genUUID(), instanceId, fieldId, sectionPath || '', text || '', json ? JSON.stringify(json) : null]
+      `INSERT INTO form_field_values (id, instance_id, field_id, section_path, value_text, value_json, updated_at)
+       VALUES (?, ?, ?, ?, ?, ?, NOW())
+       ON DUPLICATE KEY UPDATE value_text = VALUES(value_text), value_json = VALUES(value_json), updated_at = NOW()`,
+      [genUUID(), instanceId, fieldId, sp, text || '', json ? JSON.stringify(json) : null]
     );
   }
 }
@@ -287,7 +311,7 @@ async function generateInterviewQuestions(projectId, userId) {
   // Build activity detail block
   const activityDetail = ctx.wps.map(wp => {
     return `${wp.code} ${wp.title}:\n` + (wp.activities || []).map(a =>
-      `  - ${a.label}${a.subtype ? ' (' + a.subtype + ')' : ''}: ${a.description ? a.description.substring(0, 150) : 'No description'}`
+      `  - ${a.label}${a.subtype ? ' (' + a.subtype + ')' : ''}: ${a.description || 'No description'}`
     ).join('\n');
   }).join('\n\n');
 
@@ -494,7 +518,10 @@ function buildProjectContext(ctx) {
       block += `\n  • ${act.label || act.type}`;
       if (act.subtype) block += ` (${act.subtype})`;
       if (act.date_start && act.date_end) block += ` [${act.date_start} → ${act.date_end}]`;
-      if (act.description) block += `\n    ${act.description.substring(0, 300)}`;
+      // El texto enriquecido del Diseño entra sin truncar (decisión arquitectura 2026-05-16).
+      // El usuario invierte horas redactando descripciones largas — si las cortamos a 300
+      // chars, el modelo nunca ve la sustancia que diferencia un 75 de un 90.
+      if (act.description) block += `\n    ${act.description}`;
     }
     return block;
   }).join('\n');
@@ -553,11 +580,14 @@ async function buildEnrichedContext(projectId, userId) {
       const pifText = pifs[0]?.custom_text || pifs[0]?.adapted_text;
 
       if (pifText) {
-        consortiumBlock += `\n  Profile: ${pifText.substring(0, 600)}`;
+        // PIF text sin truncar — el PIF adaptado del partner es contexto valioso para
+        // justificar capacidades y roles en el writer (arquitectura 2026-05-16).
+        consortiumBlock += `\n  Profile: ${pifText}`;
       } else {
         // Fallback to generic org description
         const [orgs] = await db.execute('SELECT description, activities_experience FROM organizations WHERE id = ?', [pt.organization_id]);
-        if (orgs[0]?.description) consortiumBlock += `\n  Profile: ${orgs[0].description.substring(0, 400)}`;
+        // Profile sin truncar — la descripción enriquecida de la org es contexto valioso.
+        if (orgs[0]?.description) consortiumBlock += `\n  Profile: ${orgs[0].description}`;
       }
 
       // Key staff
@@ -566,10 +596,27 @@ async function buildEnrichedContext(projectId, userId) {
         consortiumBlock += `\n  Key staff: ${staff.map(s => `${s.name} (${s.role}${s.skills_summary ? ': ' + s.skills_summary.substring(0, 80) : ''})`).join('; ')}`;
       }
 
-      // Past EU projects
-      const [euProj] = await db.execute('SELECT title, role, year FROM org_eu_projects WHERE organization_id = ? ORDER BY year DESC LIMIT 5', [pt.organization_id]);
-      if (euProj.length) {
-        consortiumBlock += `\n  EU projects: ${euProj.map(ep => `${ep.title || 'Untitled'} (${ep.year}, ${ep.role})`).join('; ')}`;
+      // Past EU projects: solo los seleccionados por el usuario en el sub-tab
+      // Consorcio. Identifiers están en project_partner_eu_projects; los datos
+      // vienen del directory-api (cache LRU 60s evita repetir llamadas).
+      const [selectedRows] = await db.execute(
+        'SELECT project_identifier FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ?',
+        [projectId, pt.id]
+      );
+      if (selectedRows.length) {
+        const [orgRows] = await db.execute('SELECT oid, pic FROM organizations WHERE id = ?', [pt.organization_id]);
+        const lookupId = orgRows[0] && (orgRows[0].oid || orgRows[0].pic);
+        if (lookupId) {
+          try {
+            const resp = await directoryApi.getEntityProjects(lookupId, { limit: 300 });
+            const list = Array.isArray(resp && resp.projects) ? resp.projects : [];
+            const wanted = new Set(selectedRows.map(r => r.project_identifier));
+            const picked = list.filter(pr => wanted.has(pr.project_identifier));
+            if (picked.length) {
+              consortiumBlock += `\n  EU projects: ${picked.map(ep => `${ep.project_title || 'Untitled'} (${ep.funding_year}, ${ep.role})`).join('; ')}`;
+            }
+          } catch (_) { /* silencioso */ }
+        }
       }
     }
   }
@@ -598,13 +645,18 @@ async function buildEnrichedContext(projectId, userId) {
     const leader = ctx.partners.find(p => p.id === wp.leader_id);
     actBlock += `\n${wp.code} — ${wp.title}`;
     if (leader) actBlock += ` (Leader: ${leader.name})`;
-    if (wp.summary) actBlock += `\n  Summary: ${wp.summary.substring(0, 400)}`;
+    // Summary y description del Diseño entran sin truncar (arquitectura 2026-05-16).
+    // Si el usuario escribe párrafos ricos en el campo Summary del WP o en la descripción
+    // de una actividad, lo recibe el modelo entero. Los truncados anteriores (400/250)
+    // descartaban el 95-99% del texto enriquecido y saboteaban el ciclo de iteración.
+    if (wp.summary) actBlock += `\n  Summary: ${wp.summary}`;
     for (const act of (wp.activities || [])) {
       actBlock += `\n  • ${act.label || act.type}`;
-      if (act.description) actBlock += `: ${act.description.substring(0, 250)}`;
+      if (act.description) actBlock += `: ${act.description}`;
       if (act.date_start) actBlock += ` [${act.date_start} → ${act.date_end || '?'}]`;
       for (const t of (act.tasks || [])) {
         actBlock += `\n    - ${t.title}`;
+        if (t.description) actBlock += `\n      ${t.description}`;
         if (t.deliverable) actBlock += ` → Deliverable: ${t.deliverable}`;
         if (t.milestone) actBlock += ` | Milestone: ${t.milestone}`;
         if (t.kpi) actBlock += ` | KPI: ${t.kpi}`;
@@ -765,8 +817,108 @@ async function getWritingRules(programId) {
 
 // ── Get eval guidance for a specific section ────────────────
 
-async function getEvalGuidanceForSection(sectionFieldId) {
-  // Map field ID to form_ref pattern
+// Resolve a per-WP dynamic field id to its base field id + wpId. Handles both
+// conventions: EACEA single-narrative 's4_2_wp_<id>' and the NA per-field
+// '<baseFieldId>__wp__<id>'. Returns null for non-WP fields.
+function parseWpField(fieldId) {
+  if (typeof fieldId !== 'string') return null;
+  if (fieldId.startsWith('s4_2_wp_')) return { base: 's4_2_text', wpId: fieldId.slice('s4_2_wp_'.length) };
+  const m = fieldId.match(/^(.+)__wp__(.+)$/);
+  if (m) return { base: m[1], wpId: m[2] };
+  return null;
+}
+
+// Compose the guidance string + mandatory constraints + limits from a set of
+// eval_questions (already loaded) and their criteria. Shared by the data-driven
+// (field_id) path and the legacy EACEA (form_ref) path.
+async function composeEvalGuidance(secTitle, secMax, questions) {
+  const qIds = questions.map(q => q.id);
+  const criteriaByQ = {};
+  if (qIds.length) {
+    const placeholders = qIds.map(() => '?').join(',');
+    const [criteria] = await db.execute(
+      `SELECT question_id, title, priority, mandatory,
+              intent, elements, example_strong, avoid, sort_order
+       FROM eval_criteria
+       WHERE question_id IN (${placeholders})
+       ORDER BY question_id, FIELD(priority, 'alta', 'media', 'baja'), sort_order`,
+      qIds
+    );
+    for (const c of criteria) {
+      (criteriaByQ[c.question_id] = criteriaByQ[c.question_id] || []).push(c);
+    }
+  }
+
+  let guidance = `EVALUATION SECTION: ${secTitle}`;
+  if (secMax > 0) guidance += ` (max ${secMax} points)`;
+
+  const mandatoryConstraints = [];
+  let wordLimit = null;
+  let charLimit = null;
+  let title = null;
+
+  for (const q of questions) {
+    if (!title) title = q.code ? `${q.code} ${q.title || ''}`.trim() : (q.title || null);
+    guidance += `\n\n### Question ${q.code}: ${q.title}`;
+    if (q.general_context) {
+      guidance += `\n\nCONTEXT — what the evaluator looks for:\n${q.general_context}`;
+    }
+    if (q.connects_from) {
+      guidance += `\n\nGROUND THIS ANSWER IN (prior sections you must respect):\n${q.connects_from}`;
+    }
+    if (q.connects_to) {
+      guidance += `\n\nDOWNSTREAM SECTIONS WILL BUILD ON THIS:\n${q.connects_to}\nWhat you commit here will be reused later — be consistent and concrete.`;
+    }
+    if (q.global_rule) {
+      mandatoryConstraints.push(`[${q.code}] ${q.global_rule}`);
+    }
+    if (!wordLimit && q.word_limit) wordLimit = q.word_limit;
+    if (!charLimit && q.char_limit) charLimit = q.char_limit;
+
+    const crits = criteriaByQ[q.id] || [];
+    if (crits.length) {
+      guidance += `\n\nCRITERIA THE EVALUATOR SCORES (priority order):`;
+      for (const c of crits) {
+        const pri = c.priority ? ` [${c.priority}]` : '';
+        const star = c.mandatory ? ' ★MANDATORY' : '';
+        guidance += `\n\n  • ${c.title}${pri}${star}`;
+        if (c.intent) guidance += `\n    INTENT — ${c.intent}`;
+        if (c.elements) guidance += `\n    MUST INCLUDE — ${c.elements}`;
+        if (c.example_strong) guidance += `\n    STRONG EXAMPLE — ${c.example_strong}`;
+        if (c.avoid) guidance += `\n    AVOID — ${c.avoid}`;
+      }
+    }
+  }
+
+  return { guidance, mandatoryConstraint: mandatoryConstraints.join('\n'), wordLimit, charLimit, title };
+}
+
+// programId scopes the lookup so every call gets ITS OWN criteria (independent
+// evaluation per convocatoria). For new forms (KA220 NA etc.) the binding is
+// data-driven via eval_questions.field_id; the EACEA refMap remains as fallback.
+async function getEvalGuidanceForSection(sectionFieldId, programId = null) {
+  const empty = { guidance: '', mandatoryConstraint: '', wordLimit: null, charLimit: null, title: null };
+
+  // Per-WP dynamic fields resolve to a shared base question.
+  const wp = parseWpField(sectionFieldId);
+  const lookupFieldId = wp ? wp.base : sectionFieldId;
+
+  // ── Data-driven path: match eval_questions.field_id, scoped to the program ──
+  if (programId) {
+    const [qRows] = await db.execute(
+      `SELECT q.id, q.code, q.title, q.description, q.general_context, q.connects_from,
+              q.connects_to, q.global_rule, q.word_limit, q.char_limit,
+              s.title AS sec_title, s.max_score AS sec_max
+         FROM eval_questions q JOIN eval_sections s ON s.id = q.section_id
+        WHERE q.field_id = ? AND s.program_id = ? LIMIT 1`,
+      [lookupFieldId, programId]
+    );
+    if (qRows.length) {
+      return composeEvalGuidance(qRows[0].sec_title, qRows[0].sec_max, [qRows[0]]);
+    }
+  }
+
+  // ── Legacy fallback: EACEA refMap (form_ref) ──
   const refMap = {
     's1_1_text': 'sec_1', 's1_2_text': 'sec_1', 's1_3_text': 'sec_1',
     's2_1_1_text': 'sec_2_1', 's2_1_2_text': 'sec_2_1', 's2_1_4_text': 'sec_2_1',
@@ -776,35 +928,131 @@ async function getEvalGuidanceForSection(sectionFieldId) {
     's5_1_text': 'sec_5', 's5_2_text': 'sec_5',
     'summary_text': 'summary',
   };
-  const formRef = refMap[sectionFieldId];
-  if (!formRef) return '';
+  const formRef = refMap[lookupFieldId];
+  if (!formRef) return empty;
 
-  // Get section + questions
+  // Get section (program-scoped when programId known, to keep calls independent)
   const [sections] = await db.execute(
-    'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ?', [formRef]
+    programId
+      ? 'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ? AND program_id = ?'
+      : 'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ?',
+    programId ? [formRef, programId] : [formRef]
   );
-  if (!sections.length) return '';
-
+  if (!sections.length) return empty;
   const sec = sections[0];
-  const [questions] = await db.execute(
-    'SELECT title, code FROM eval_questions WHERE section_id = ? ORDER BY sort_order', [sec.id]
-  );
 
-  // Find the specific sub-question matching this field
-  const subNum = sectionFieldId.match(/s(\d+)_(\d+)/);
-  let guidance = `EVALUATION SECTION: ${sec.title}`;
-  if (sec.max_score > 0) guidance += ` (max ${sec.max_score} points)`;
-  guidance += '\n\nEVALUATORS WILL ASSESS:';
-  for (const q of questions) {
-    guidance += `\n• ${q.title}`;
+  // Derive target question code from field id (s2_1_1_text → "2.1.1", per-WP → "4.2")
+  let targetCode = null;
+  if (wp) {
+    targetCode = '4.2';
+  } else {
+    const m = lookupFieldId.match(/^s(\d+(?:_\d+)*)_text$/);
+    if (m) targetCode = m[1].replace(/_/g, '.');
   }
-  return guidance;
+
+  const [allQuestions] = await db.execute(
+    `SELECT id, code, title, description, general_context, connects_from, connects_to,
+            global_rule, word_limit, char_limit, page_limit
+     FROM eval_questions WHERE section_id = ? ORDER BY sort_order`,
+    [sec.id]
+  );
+  if (!allQuestions.length) return empty;
+
+  const focused = targetCode ? allQuestions.filter(q => q.code === targetCode) : [];
+  const useQuestions = focused.length ? focused : allQuestions;
+
+  return composeEvalGuidance(sec.title, sec.max_score, useQuestions);
+}
+
+// ── Work-package content selection ──────────────────────────
+// Which Intake WPs get the per-WP CONTENT questions (objectives, results,
+// indicators, tasks, activities…). The management WP (WP1) is excluded because
+// the NA form models management as a fixed section (WORK PACKAGE 1). Heuristic:
+// drop WPs flagged as management; if none are flagged, drop the first by order.
+// MUST stay identical to the frontend (public/js/developer.js) so field ids match.
+function selectContentWps(wps) {
+  if (!wps || !wps.length) return [];
+  const isMgmt = w => /manage|coordinat|gesti[oó]n|administ/i.test([w.category, w.code, w.title].filter(Boolean).join(' '));
+  const flagged = wps.filter(isMgmt);
+  if (flagged.length) return wps.filter(w => !isMgmt(w));
+  const sorted = [...wps].sort((a, b) => (a.order_index || 0) - (b.order_index || 0));
+  return sorted.slice(1);
+}
+
+// Flatten a form template into the ordered list of writable fields, expanding
+// per-WP sections over the content WPs. Returns [{ fieldId, label }].
+function buildTemplateFieldList(tmpl, wps) {
+  const out = [];
+  const contentWps = selectContentWps(wps || []);
+  for (const sec of (tmpl.sections || [])) {
+    const groups = sec.subsections_groups
+      ? sec.subsections_groups.flatMap(g => (g.subsections || []))
+      : (sec.subsections || []);
+    if (sec.per_wp) {
+      contentWps.forEach(wp => {
+        const code = wp.code || ('WP' + ((wp.order_index || 0) + 1));
+        for (const sub of groups) {
+          for (const f of (sub.fields || [])) {
+            if (f.type === 'textarea' || f.type === 'table') {
+              out.push({ fieldId: `${f.id}__wp__${wp.id}`, label: `${code} · ${sub.number} ${sub.title}` });
+            }
+          }
+        }
+      });
+      continue;
+    }
+    for (const sub of groups) {
+      for (const f of (sub.fields || [])) {
+        if (f.type === 'textarea' || f.type === 'table') {
+          out.push({ fieldId: f.id, label: `${sub.number} ${sub.title}` });
+        }
+      }
+    }
+  }
+  if (tmpl.project_summary) {
+    out.push({ fieldId: 'summary_text', label: 'Project Summary' });
+  }
+  return out;
 }
 
 // ── Get previously generated sections for consistency ───────
 
 async function getPreviousSections(instanceId, currentFieldId) {
   const values = await getFieldValues(instanceId);
+
+  // Data-driven path: order + labels come from the instance's actual form
+  // template, so any form (EACEA, KA220 NA, future calls) works without a map.
+  try {
+    const [instRows] = await db.execute(
+      'SELECT fi.project_id, ft.template_json FROM form_instances fi LEFT JOIN form_templates ft ON ft.id = fi.template_id WHERE fi.id = ?',
+      [instanceId]
+    );
+    const inst = instRows[0];
+    if (inst && inst.template_json) {
+      const tmpl = typeof inst.template_json === 'string' ? JSON.parse(inst.template_json) : inst.template_json;
+      let wps = [];
+      if (inst.project_id) {
+        const [w] = await db.execute(
+          'SELECT id, code, title, order_index, category FROM work_packages WHERE project_id = ? ORDER BY order_index',
+          [inst.project_id]
+        );
+        wps = w;
+      }
+      const ordered = buildTemplateFieldList(tmpl, wps);
+      if (ordered.length) {
+        let context = '';
+        for (const f of ordered) {
+          if (f.fieldId === currentFieldId) break;
+          const val = values[f.fieldId];
+          if (val && val.text && val.text.length > 50) {
+            context += `\n--- ${f.label || f.fieldId} ---\n${val.text}\n`;
+          }
+        }
+        return context;
+      }
+    }
+  } catch (e) { /* fall back to the legacy EACEA static order */ }
+
   const order = ['summary_text', 's1_1_text', 's1_2_text', 's1_3_text',
     's2_1_1_text', 's2_1_2_text', 's2_1_4_text', 's2_2_1_text', 's2_2_2_text',
     's3_1_text', 's3_2_text', 's3_3_text', 's4_1_text', 's4_2_text'];
@@ -875,6 +1123,295 @@ function sanitizeProposalText(text) {
 
 // ── Main generation function ────────────────────────────────
 
+// ── Editable prompt blocks (defaults; overridable via prompt_blocks table) ──
+const ANTIPATTERNS_DEFAULT = `══ WHAT MAKES A BAD PROPOSAL (AVOID ALL OF THIS) ══
+- Starting with "The [project name] project addresses..." — find a different, unexpected opening
+- Listing EU policy frameworks without connecting them to YOUR specific work
+- Using "innovative" without explaining WHAT is new and WHY existing approaches failed
+- Writing "the consortium brings together complementary expertise" — instead, tell a STORY about why each partner matters
+- Generic percentages ("20% of European youth") without connecting to YOUR target communities
+- Describing WPs as a bureaucratic list instead of showing how activities flow into each other
+- Every paragraph having the same length and structure
+- Buzzword chains: "comprehensive, sustainable, innovative, transnational framework"
+- Passive voice: "activities will be implemented" — use active: "CESIE leads the pilot workshops in Palermo"
+- Round numbers for everything (500 participants, 120 trained, 2000 reached) — use real estimates
+
+══ WHAT MAKES A WINNING PROPOSAL (DO ALL OF THIS) ══
+- Open with a REAL story, a specific problem, or a provocative fact about YOUR communities
+- Name specific neighbourhoods, schools, youth centres — not just cities
+- Show the HUMAN dimension: who are the young people? what do they face daily?
+- Describe your methodology as a JOURNEY, not a checklist
+- Each partner should appear with their UNIQUE contribution, not interchangeable roles
+- Include ONE surprising or counterintuitive element that shows original thinking
+- Reference prior experience with SPECIFIC lessons learned, not generic "track record"
+- Use numbers that come from YOUR needs assessment, not EU-level statistics
+- Write as if explaining to a colleague, not a bureaucrat
+- Vary paragraph length dramatically: one 5-line paragraph, then a 2-line paragraph, then 4 lines`;
+
+const OUTPUT_FORMAT_DEFAULT = `══ OUTPUT FORMAT (MANDATORY — THIS TEXT GOES INTO AN OFFICIAL EACEA PDF FORM) ══
+The output MUST be plain prose. Pasting markdown into the EACEA form gives it away as AI-generated and looks unprofessional.
+- NO markdown at all. NO "**bold**", NO "*italics*", NO "##" or "#" headings, NO "> quotes", NO backticks.
+- NO markdown tables (pipes "|" or "---" separators). If you need to compare things, do it in prose ("Unlike ERDF which is top-down, our approach is bottom-up...").
+- NO bullet lists or numbered lists. NO lines starting with "- ", "* ", "• ", "→ ", "1.", "2.", "a)", "b)", etc. Write it as continuous prose.
+- NO subheadings or internal section titles (you are writing the BODY of one single section).
+- NO emojis, NO ASCII art, NO decorative symbols ("═", "──", "▪").
+- Paragraphs separated by a single blank line, that's all the formatting you get.`;
+
+// ── Prompt block resolver: program-specific row wins, else global, else fallback ──
+async function getPromptBlock(name, programId, fallback) {
+  try {
+    const [rows] = await db.execute(
+      `SELECT content FROM prompt_blocks
+       WHERE name = ? AND active = 1 AND (program_id = ? OR program_id IS NULL)
+       ORDER BY (program_id IS NULL) ASC LIMIT 1`,
+      [name, programId || null]
+    );
+    if (rows.length && rows[0].content) return rows[0].content;
+  } catch (_) { /* table may not exist in older envs */ }
+  return fallback;
+}
+
+// ── Canonical facts: hard facts DERIVED at runtime (never duplicated) +
+//    soft facts that were validated to 'canonical'. This block is injected
+//    first in the user prompt so the model reads invariant facts (WP leaders,
+//    budget, partners) instead of re-deciding them per section. ──
+async function buildCanonicalFacts(projectId) {
+  if (!projectId) return '';
+  const parts = [];
+
+  const [projRows] = await db.execute(
+    'SELECT name, description, type, duration_months, start_date, eu_grant, cofin_pct FROM projects WHERE id = ?',
+    [projectId]
+  ).catch(() => [[]]);
+  const p = projRows && projRows[0];
+  if (p) {
+    // description can hold the full project essay — only treat it as a title
+    // fact when it is short. Never dump the whole summary into canonical facts.
+    const title = p.description && p.description.length <= 160 ? p.description.trim() : null;
+    const start = p.start_date ? new Date(p.start_date).toISOString().slice(0, 10) : 'TBD';
+    parts.push(`Project acronym: ${p.name}${title ? ` (${title})` : ''}`);
+    parts.push(`Programme: ${p.type || 'Erasmus+'} | Duration: ${p.duration_months || 24} months | Start: ${start} | Co-financing: ${p.cofin_pct ?? 80}%`);
+  }
+
+  // Budget — authoritative from Calculator state
+  const budget = await getPrepPresupuesto(projectId).catch(() => null);
+  if (budget) {
+    const bens = budget.beneficiaries || [];
+    const totalGrant = bens.reduce((s, b) => s + (Number(b.total) || 0), 0);
+    if (totalGrant) parts.push(`Total budget: €${totalGrant.toLocaleString('en')}`);
+    if (bens.length) {
+      parts.push('Partners (canonical name + role — use these exact names):\n' +
+        bens.map(b => `  - ${b.name}${b.acronym ? ` (${b.acronym})` : ''}${b.country ? ` — ${b.country}` : ''}${b.is_coordinator ? ' [COORDINATOR]' : ''}: €${(Number(b.total) || 0).toLocaleString('en')}`).join('\n'));
+    }
+    const wps = budget.work_packages || [];
+    if (wps.length) parts.push('Budget per work package:\n' + wps.map(w => `  - ${w.label}: €${(Number(w.total) || 0).toLocaleString('en')}`).join('\n'));
+  }
+
+  // WP → leader → activities (leader assignment is invariant)
+  const act = await getPrepActividades(projectId).catch(() => ({ wps: [] }));
+  if (act.wps && act.wps.length) {
+    parts.push('Work packages (WP → leader → activities — leader is fixed):\n' +
+      act.wps.map(wp => {
+        const acts = (wp.activities || []).map(a => a.label || a.type).filter(Boolean).join(', ');
+        return `  - ${wp.code} "${wp.title}" → leader: ${wp.leader_name || 'unassigned'}${acts ? ` → activities: ${acts}` : ''}`;
+      }).join('\n'));
+  }
+
+  // Milestones + deliverables (direct query, no userId needed)
+  const [ms] = await db.execute(
+    `SELECT m.code, m.title, m.due_month FROM milestones m
+     JOIN work_packages wp ON wp.id = m.work_package_id
+     WHERE wp.project_id = ? ORDER BY m.due_month, m.sort_order`, [projectId]
+  ).catch(() => [[]]);
+  if (ms && ms.length) parts.push('Milestones:\n' + ms.map(m => `  - ${m.code || ''} ${m.title}${m.due_month ? ` (month ${m.due_month})` : ''}`).join('\n'));
+
+  const [dels] = await db.execute(
+    `SELECT d.code, d.title, d.due_month FROM deliverables d
+     JOIN work_packages wp ON wp.id = d.work_package_id
+     WHERE wp.project_id = ? ORDER BY d.due_month, d.sort_order`, [projectId]
+  ).catch(() => [[]]);
+  if (dels && dels.length) parts.push('Deliverables:\n' + dels.map(d => `  - ${d.code || ''} ${d.title}${d.due_month ? ` (month ${d.due_month})` : ''}`).join('\n'));
+
+  // Validated soft facts (the realimentation loop, post-validation only)
+  const [facts] = await db.execute(
+    `SELECT fact_key, fact_value FROM project_facts WHERE project_id = ? AND status = 'canonical' ORDER BY fact_key`,
+    [projectId]
+  ).catch(() => [[]]);
+  if (facts && facts.length) parts.push('Established project facts (keep consistent):\n' + facts.map(f => `  - ${f.fact_key}: ${f.fact_value}`).join('\n'));
+
+  return parts.join('\n');
+}
+
+// ── Prompt logging: the cascade Writer reuses ai_generations so every
+//    generation is auditable in the admin inspector. ──
+async function _logWriterGen({ projectId, sectionId, system, user, raw, segments, status, durationMs }) {
+  if (!projectId) return;
+  try {
+    const aiContext = require('../../utils/aiContext');
+    const userId = aiContext.get().userId || null;
+    await db.execute(
+      `INSERT INTO ai_generations
+         (id, project_id, user_id, kind, pass, section_id, system_prompt, user_prompt, raw_response, segments, status, duration_ms)
+       VALUES (?, ?, ?, 'writer-section', ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [genUUID(), projectId, userId, sectionId, sectionId,
+        system || null, user || null, raw || null,
+        segments ? JSON.stringify(segments) : null, status || 'success', durationMs || null]
+    );
+  } catch (err) {
+    console.error('[ai_generations:writer] insert failed:', err.message);
+  }
+}
+
+// ── Candidate fact extraction: after a section is written, a cheap model
+//    pulls out NEW concrete facts (neighbourhoods, figures, named
+//    stakeholders, acronyms) and stores them as 'candidate' — never injected
+//    until validated, so hallucinations can't propagate. ──
+async function extractCandidateFacts(projectId, sectionId, text) {
+  if (!projectId || !text || text.length < 80) return;
+  if (!process.env.ANTHROPIC_API_KEY) return;
+  let parsed;
+  try {
+    const client = getClient();
+    const model = process.env.AI_CHEAP_MODEL || 'claude-haiku-4-5-20251001';
+    const sys = `You extract STABLE, CONCRETE facts from a funding-proposal section so they stay consistent across the whole proposal. Return ONLY a JSON array (max 8) of {"key","value"} where key is a short snake_case identifier (e.g. "target_neighbourhood", "youth_count", "lead_acronym", "milestone_m1_month") and value is the concrete fact as written. Extract ONLY specific facts a later section must not contradict: named places, named organisations/stakeholders, specific numbers/dates, chosen acronyms. SKIP generic claims, adjectives, and anything vague. If nothing concrete, return [].`;
+    const raw = await client.messages.create({
+      model, max_tokens: 700, temperature: 0,
+      system: sys,
+      messages: [{ role: 'user', content: `Section ${sectionId}:\n\n${text.substring(0, 6000)}` }],
+    });
+    const out = raw.content[0]?.text || '[]';
+    const m = out.match(/\[[\s\S]*\]/);
+    parsed = m ? JSON.parse(m[0]) : [];
+  } catch (err) {
+    console.warn('[facts] extraction error:', err.message);
+    return;
+  }
+  if (!Array.isArray(parsed)) return;
+  for (const f of parsed.slice(0, 8)) {
+    if (!f || !f.key || !f.value) continue;
+    const key = String(f.key).toLowerCase().replace(/[^a-z0-9_]/g, '_').substring(0, 120);
+    const value = String(f.value).substring(0, 1000);
+    if (!key || !value) continue;
+    try {
+      // Insert as candidate; never overwrite a fact a human already validated.
+      await db.execute(
+        `INSERT INTO project_facts (id, project_id, fact_key, fact_value, status, source)
+         VALUES (?, ?, ?, ?, 'candidate', ?)
+         ON DUPLICATE KEY UPDATE
+           fact_value = IF(status = 'candidate', VALUES(fact_value), fact_value),
+           source = IF(status = 'candidate', VALUES(source), source)`,
+        [genUUID(), projectId, key, value, `generation:${sectionId}`]
+      );
+    } catch (err) {
+      console.warn('[facts] insert error:', err.message);
+    }
+  }
+}
+
+// ── Facts ledger CRUD (user + admin surfaces) ──
+async function listProjectFacts(projectId, status) {
+  const params = [projectId];
+  let sql = 'SELECT id, fact_key, fact_value, status, source, created_at, validated_at FROM project_facts WHERE project_id = ?';
+  if (status) { sql += ' AND status = ?'; params.push(status); }
+  sql += " ORDER BY FIELD(status,'candidate','canonical','rejected'), fact_key";
+  const [rows] = await db.execute(sql, params);
+  return rows;
+}
+
+async function setFactStatus(factId, status, userId) {
+  if (!['candidate', 'canonical', 'rejected'].includes(status)) throw new Error('invalid status');
+  await db.execute(
+    'UPDATE project_facts SET status = ?, validated_at = NOW(), validated_by = ? WHERE id = ?',
+    [status, userId || null, factId]
+  );
+  return true;
+}
+
+async function upsertProjectFact(projectId, key, value, status, userId) {
+  const cleanKey = String(key || '').toLowerCase().replace(/[^a-z0-9_]/g, '_').substring(0, 120);
+  if (!cleanKey) throw new Error('key required');
+  await db.execute(
+    `INSERT INTO project_facts (id, project_id, fact_key, fact_value, status, source, validated_at, validated_by)
+     VALUES (?, ?, ?, ?, ?, 'user', NOW(), ?)
+     ON DUPLICATE KEY UPDATE fact_value = VALUES(fact_value), status = VALUES(status), validated_at = NOW(), validated_by = VALUES(validated_by)`,
+    [genUUID(), projectId, cleanKey, String(value || '').substring(0, 1000), status || 'canonical', userId || null]
+  );
+  return true;
+}
+
+// ── Inspector (admin-only): read ai_generations ──
+async function listGenerations({ projectId, kind, sectionId, limit = 50 } = {}) {
+  const params = [];
+  let sql = `SELECT g.id, g.project_id, g.kind, g.pass, g.section_id, g.status, g.duration_ms, g.created_at,
+                    CHAR_LENGTH(COALESCE(g.system_prompt,'')) AS system_len,
+                    CHAR_LENGTH(COALESCE(g.user_prompt,'')) AS user_len,
+                    CHAR_LENGTH(COALESCE(g.raw_response,'')) AS output_len,
+                    pr.name AS project_name
+             FROM ai_generations g LEFT JOIN projects pr ON pr.id = g.project_id WHERE 1=1`;
+  if (projectId) { sql += ' AND g.project_id = ?'; params.push(projectId); }
+  if (kind) { sql += ' AND g.kind = ?'; params.push(kind); }
+  if (sectionId) { sql += ' AND g.section_id = ?'; params.push(sectionId); }
+  // LIMIT inlined (sanitised int): mysql2 prepared stmts reject `LIMIT ?`.
+  const lim = Math.min(Math.max(parseInt(limit, 10) || 50, 1), 200);
+  sql += ` ORDER BY g.created_at DESC LIMIT ${lim}`;
+  const [rows] = await db.execute(sql, params);
+  return rows;
+}
+
+async function getGeneration(id) {
+  const [rows] = await db.execute(
+    `SELECT g.*, pr.name AS project_name FROM ai_generations g
+     LEFT JOIN projects pr ON pr.id = g.project_id WHERE g.id = ?`, [id]
+  );
+  return rows[0] || null;
+}
+
+// ── Prompt blocks (admin-only): list/edit/version ──
+async function listPromptBlocks() {
+  const [rows] = await db.execute(
+    'SELECT id, name, program_id, version, active, LEFT(content, 200) AS preview, CHAR_LENGTH(content) AS chars, updated_at FROM prompt_blocks ORDER BY name, program_id'
+  );
+  // Surface the in-code defaults that have no DB override yet, so admin can edit them.
+  const known = { writer_antipatterns: ANTIPATTERNS_DEFAULT, writer_output_format: OUTPUT_FORMAT_DEFAULT };
+  const present = new Set(rows.filter(r => r.program_id === null).map(r => r.name));
+  for (const [name, content] of Object.entries(known)) {
+    if (!present.has(name)) {
+      rows.push({ id: null, name, program_id: null, version: 0, active: 1, preview: content.substring(0, 200), chars: content.length, updated_at: null, is_default: true });
+    }
+  }
+  return rows;
+}
+
+async function getPromptBlockFull(name, programId) {
+  const [rows] = await db.execute(
+    'SELECT id, name, program_id, content, version, active FROM prompt_blocks WHERE name = ? AND (program_id <=> ?)',
+    [name, programId || null]
+  );
+  if (rows.length) return rows[0];
+  const defaults = { writer_antipatterns: ANTIPATTERNS_DEFAULT, writer_output_format: OUTPUT_FORMAT_DEFAULT };
+  if (defaults[name] !== undefined) return { id: null, name, program_id: programId || null, content: defaults[name], version: 0, active: 1, is_default: true };
+  return null;
+}
+
+async function upsertPromptBlock(name, programId, content, userId) {
+  const [existing] = await db.execute(
+    'SELECT id, version FROM prompt_blocks WHERE name = ? AND (program_id <=> ?)', [name, programId || null]
+  );
+  if (existing.length) {
+    await db.execute(
+      'UPDATE prompt_blocks SET content = ?, version = version + 1, updated_by = ? WHERE id = ?',
+      [content, userId || null, existing[0].id]
+    );
+    return { id: existing[0].id, version: existing[0].version + 1 };
+  }
+  const id = genUUID();
+  await db.execute(
+    'INSERT INTO prompt_blocks (id, name, program_id, content, version, updated_by) VALUES (?, ?, ?, ?, 1, ?)',
+    [id, name, programId || null, content, userId || null]
+  );
+  return { id, version: 1 };
+}
+
 async function generateSection(instanceId, sectionId, projectContext, programId, coordinatorName) {
   if (!process.env.ANTHROPIC_API_KEY) {
     return '[AI generation pending — configure ANTHROPIC_API_KEY in .env]';
@@ -908,12 +1445,13 @@ async function generateSection(instanceId, sectionId, projectContext, programId,
   // Get project language (derived from national_agency)
   const { langName } = projId ? await getProjectMeta(projId) : { langName: 'English' };
 
-  // Dynamic per-WP section: resolve a human title + a focused WP context block
+  // Dynamic per-WP section: resolve a human title + a focused WP context block.
+  // Handles both EACEA 's4_2_wp_<id>' and NA '<field>__wp__<id>' conventions.
   let wpFocusBlock = '';
-  if (typeof sectionId === 'string' && sectionId.startsWith('s4_2_wp_')) {
-    const wpId = sectionId.substring('s4_2_wp_'.length);
+  const wpInfo = parseWpField(sectionId);
+  if (wpInfo) {
     sectionTitle = await getSectionTitleAsync(sectionId);
-    wpFocusBlock = await buildWpFocusContext(wpId);
+    wpFocusBlock = await buildWpFocusContext(wpInfo.wpId);
   }
 
   // Build section-specific RAG query using project context for smarter retrieval
@@ -923,106 +1461,154 @@ async function generateSection(instanceId, sectionId, projectContext, programId,
   const [ragChunks, writingRules, evalGuidance, previousSections, researchChunks] = await Promise.all([
     programId ? retrieveRelevantChunks(ragQuery, programId, 8) : Promise.resolve(''),
     programId ? getWritingRules(programId) : Promise.resolve({}),
-    getEvalGuidanceForSection(sectionId),
+    getEvalGuidanceForSection(sectionId, programId),
     getPreviousSections(instanceId, sectionId),
     projId ? retrieveResearchChunks(ragQuery, projId, 6) : Promise.resolve(''),
   ]);
 
-  console.log(`[Writer] writingRules loaded: style=${writingRules.writing_style ? writingRules.writing_style.length + ' chars' : 'NULL'}, ai=${writingRules.ai_detection_rules ? writingRules.ai_detection_rules.length + ' chars' : 'NULL'}, evalGuidance=${evalGuidance ? evalGuidance.length + ' chars' : 'NONE'}, RAG=${ragChunks ? ragChunks.length + ' chars' : 'NONE'}, prevSections=${previousSections ? previousSections.length + ' chars' : 'NONE'}`);
+  // For data-driven forms (KA220 NA etc.) the section title is not in the static
+  // map — fall back to the question title resolved from the eval structure.
+  if (sectionTitle === sectionId && evalGuidance?.title) sectionTitle = evalGuidance.title;
 
-  // Build system prompt — writing rules FIRST (highest priority)
-  let system = `You are a real project coordinator writing a funding proposal. You are NOT an AI assistant — you are a practitioner who has spent months designing this project with your partners. You write from lived experience, not from templates.
+  const evalGuidanceLen = evalGuidance && evalGuidance.guidance ? evalGuidance.guidance.length : 0;
+  const evalConstraintLen = evalGuidance && evalGuidance.mandatoryConstraint ? evalGuidance.mandatoryConstraint.length : 0;
+  console.log(`[Writer] writingRules loaded: style=${writingRules.writing_style ? writingRules.writing_style.length + ' chars' : 'NULL'}, ai=${writingRules.ai_detection_rules ? writingRules.ai_detection_rules.length + ' chars' : 'NULL'}, evalGuidance=${evalGuidanceLen ? evalGuidanceLen + ' chars' : 'NONE'}, mandatoryRule=${evalConstraintLen ? evalConstraintLen + ' chars' : 'NONE'}, limit=${evalGuidance?.charLimit ? evalGuidance.charLimit + 'ch' : (evalGuidance?.wordLimit || 'default')}, RAG=${ragChunks ? ragChunks.length + ' chars' : 'NONE'}, prevSections=${previousSections ? previousSections.length + ' chars' : 'NONE'}`);
+
+  // Character limits (NA copy-paste eForms) take priority over word limits (EACEA).
+  const lengthHint = evalGuidance?.charLimit
+    ? `LENGTH: HARD LIMIT ${evalGuidance.charLimit} characters — this answer is pasted into a fixed-size field of the EU web eForm, so exceeding the character limit is not allowed. Aim for roughly ${Math.floor(evalGuidance.charLimit / 7)} words and stay safely under the limit. Quality over filler.`
+    : evalGuidance?.wordLimit
+    ? `LENGTH: target ~${evalGuidance.wordLimit} words (call-defined limit). Quality over filler.`
+    : 'LENGTH: 500-700 words. Quality over quantity.';
+
+  // Editable prompt blocks (DB override → in-code default). Behaviour is
+  // unchanged until an admin saves an override from the inspector.
+  const [antipatterns, outputFormat] = await Promise.all([
+    getPromptBlock('writer_antipatterns', programId, ANTIPATTERNS_DEFAULT),
+    getPromptBlock('writer_output_format', programId, OUTPUT_FORMAT_DEFAULT),
+  ]);
+
+  // Segment capture: every named block is recorded so the admin inspector can
+  // show a desglosado view (name, source, weight, content) per generation.
+  const segments = [];
+  const pushSeg = (name, source, content) => {
+    if (content && String(content).trim()) segments.push({ name, source, chars: String(content).length, content: String(content) });
+  };
+
+  // ══ SYSTEM PROMPT — writing rules FIRST (highest priority) ══
+  const basePersona = `You are a real project coordinator writing a funding proposal. You are NOT an AI assistant — you are a practitioner who has spent months designing this project with your partners. You write from lived experience, not from templates.
 
 PERSONA: You are the project coordinator at ${coordinatorName || 'the lead organisation'}. You know every partner personally. You have visited their offices, discussed the project over coffee, argued about methodology in video calls. Write like that person — with conviction, specificity, and occasional imperfection.
 
 SECTION TO WRITE: "${sectionTitle}"
-LENGTH: 500-700 words. Quality over quantity.
+${lengthHint}
 OUTPUT: Only the section text. No title, no numbering, no meta-commentary.
 
 ══ LANGUAGE (MANDATORY) ══
 Write the ENTIRE section in ${langName}. Every paragraph, every sentence, every word must be in ${langName}. Do not switch languages, do not include English fragments unless they are proper nouns or untranslatable terms.`;
+  let system = basePersona;
+  pushSeg('base_persona', 'code', basePersona);
 
-  // Writing style rules — MANDATORY, highest priority
   if (writingRules.writing_style) {
-    system += `\n\n══ WRITING STYLE (FOLLOW STRICTLY) ══\n${writingRules.writing_style}`;
+    const block = `══ WRITING STYLE (FOLLOW STRICTLY) ══\n${writingRules.writing_style}`;
+    system += `\n\n${block}`;
+    pushSeg('writing_style', 'programs.writing_style', block);
   }
 
-  // AI detection rules — MANDATORY
   if (writingRules.ai_detection_rules) {
-    system += `\n\n══ ANTI-AI DETECTION (MANDATORY — YOUR TEXT WILL BE SCANNED) ══\n${writingRules.ai_detection_rules}`;
+    const block = `══ ANTI-AI DETECTION (MANDATORY — YOUR TEXT WILL BE SCANNED) ══\n${writingRules.ai_detection_rules}`;
+    system += `\n\n${block}`;
+    pushSeg('ai_detection', 'programs.ai_detection_rules', block);
   }
 
-  // Anti-generic rules
-  system += `\n\n══ WHAT MAKES A BAD PROPOSAL (AVOID ALL OF THIS) ══
-- Starting with "The [project name] project addresses..." — find a different, unexpected opening
-- Listing EU policy frameworks without connecting them to YOUR specific work
-- Using "innovative" without explaining WHAT is new and WHY existing approaches failed
-- Writing "the consortium brings together complementary expertise" — instead, tell a STORY about why each partner matters
-- Generic percentages ("20% of European youth") without connecting to YOUR target communities
-- Describing WPs as a bureaucratic list instead of showing how activities flow into each other
-- Every paragraph having the same length and structure
-- Buzzword chains: "comprehensive, sustainable, innovative, transnational framework"
-- Passive voice: "activities will be implemented" — use active: "CESIE leads the pilot workshops in Palermo"
-- Round numbers for everything (500 participants, 120 trained, 2000 reached) — use real estimates
+  system += `\n\n${antipatterns}`;
+  pushSeg('antipatterns', 'prompt_blocks:writer_antipatterns', antipatterns);
 
-══ WHAT MAKES A WINNING PROPOSAL (DO ALL OF THIS) ══
-- Open with a REAL story, a specific problem, or a provocative fact about YOUR communities
-- Name specific neighbourhoods, schools, youth centres — not just cities
-- Show the HUMAN dimension: who are the young people? what do they face daily?
-- Describe your methodology as a JOURNEY, not a checklist
-- Each partner should appear with their UNIQUE contribution, not interchangeable roles
-- Include ONE surprising or counterintuitive element that shows original thinking
-- Reference prior experience with SPECIFIC lessons learned, not generic "track record"
-- Use numbers that come from YOUR needs assessment, not EU-level statistics
-- Write as if explaining to a colleague, not a bureaucrat
-- Vary paragraph length dramatically: one 5-line paragraph, then a 2-line paragraph, then 4 lines
+  system += `\n\n${outputFormat}`;
+  pushSeg('output_format', 'prompt_blocks:writer_output_format', outputFormat);
 
-══ OUTPUT FORMAT (MANDATORY — THIS TEXT GOES INTO AN OFFICIAL EACEA PDF FORM) ══
-The output MUST be plain prose. Pasting markdown into the EACEA form gives it away as AI-generated and looks unprofessional.
-- NO markdown at all. NO "**bold**", NO "*italics*", NO "##" or "#" headings, NO "> quotes", NO backticks.
-- NO markdown tables (pipes "|" or "---" separators). If you need to compare things, do it in prose ("Unlike ERDF which is top-down, our approach is bottom-up...").
-- NO bullet lists or numbered lists. NO lines starting with "- ", "* ", "• ", "→ ", "1.", "2.", "a)", "b)", etc. Write it as continuous prose.
-- NO subheadings or internal section titles (you are writing the BODY of one single section).
-- NO emojis, NO ASCII art, NO decorative symbols ("═", "──", "▪").
-- Paragraphs separated by a single blank line, that's all the formatting you get.`;
+  // ══ USER PROMPT ══
+  // Canonical facts FIRST — invariant facts the model must not re-decide.
+  let user = '';
+  const canonicalFacts = projId ? await buildCanonicalFacts(projId) : '';
+  if (canonicalFacts) {
+    const block = `══ HECHOS INVARIABLES — DO NOT CONTRADICT (project facts; keep identical across every section) ══\n${canonicalFacts}`;
+    user += `${block}\n\n`;
+    pushSeg('canonical_facts', 'derived+project_facts', block);
+  }
 
-  // Build user prompt
-  let user = `══ YOUR PROJECT ══\n${projectContext}`;
+  const projBlock = `══ YOUR PROJECT ══\n${projectContext}`;
+  user += projBlock;
+  pushSeg('project_context', 'buildEnrichedContext', projBlock);
 
   // Per-WP focus: tell the model EXACTLY which WP it is writing about and give
   // it the activities/leader/category for THAT WP specifically. Without this,
   // 4.2 WP1 and 4.2 WP2 would get the same generic prompt and produce
   // near-identical text.
   if (wpFocusBlock) {
-    user += `\n\n══ WRITE THIS SPECIFIC WORK PACKAGE (NOT THE OTHERS) ══\n${wpFocusBlock}\nWrite a narrative that describes this WP concretely: its objective, the sequence of its activities, who leads and who contributes, expected outputs/deliverables, and how the timing fits the project. Reference other WPs only when coherence demands it. Do NOT summarise the whole workplan — only this WP.`;
+    const block = `══ WRITE THIS SPECIFIC WORK PACKAGE (NOT THE OTHERS) ══\n${wpFocusBlock}\nWrite a narrative that describes this WP concretely: its objective, the sequence of its activities, who leads and who contributes, expected outputs/deliverables, and how the timing fits the project. Reference other WPs only when coherence demands it. Do NOT summarise the whole workplan — only this WP.`;
+    user += `\n\n${block}`;
+    pushSeg('wp_focus', 'buildWpFocusContext', block);
   }
 
-  if (evalGuidance) {
-    user += `\n\n══ WHAT THE EVALUATOR SCORES IN THIS SECTION ══\n${evalGuidance}\nAddress ALL of these points, but naturally woven into the narrative — not as a checklist.`;
+  // Mandatory constraints (eval_questions.global_rule) — non-negotiable rules from the call
+  if (evalGuidance && evalGuidance.mandatoryConstraint) {
+    const block = `══ MANDATORY CONSTRAINTS — DO NOT VIOLATE (call requirements) ══\n${evalGuidance.mandatoryConstraint}`;
+    user += `\n\n${block}`;
+    pushSeg('mandatory_constraint', 'eval_questions.global_rule', block);
+  }
+
+  // Evaluator guidance — intent/elements/example_strong/avoid per criterion + connects_from/to
+  if (evalGuidance && evalGuidance.guidance) {
+    const block = `══ WHAT THE EVALUATOR SCORES IN THIS SECTION ══\n${evalGuidance.guidance}\nAddress ALL of these criteria, but woven naturally into the narrative — not as a checklist. The STRONG EXAMPLE shows the level of specificity expected; do not copy it, write your project's equivalent.`;
+    user += `\n\n${block}`;
+    pushSeg('eval_criteria', 'eval_criteria', block);
   }
 
   // RAG — but limit to most relevant chunks to avoid dilution
   if (ragChunks) {
     const limitedRag = ragChunks.substring(0, 8000);
-    user += `\n\n══ REFERENCE DOCUMENTS (cite naturally, don't list) ══\n${limitedRag}`;
+    const block = `══ REFERENCE DOCUMENTS (cite naturally, don't list) ══\n${limitedRag}`;
+    user += `\n\n${block}`;
+    pushSeg('rag', 'call_docs', block);
   }
 
   // NOTE: Interview answers are now included in projectContext via buildEnrichedContext()
 
   // Add research document chunks (user's thematic evidence — priority over call docs)
   if (researchChunks) {
-    user += `\n\n══ THEMATIC RESEARCH (uploaded by coordinator — use as primary evidence) ══\n${researchChunks}`;
+    const block = `══ THEMATIC RESEARCH (uploaded by coordinator — use as primary evidence) ══\n${researchChunks}`;
+    user += `\n\n${block}`;
+    pushSeg('research', 'research_docs', block);
   }
 
   if (previousSections) {
-    user += `\n\n══ WHAT YOU ALREADY WROTE (don't repeat, build on it) ══\n${previousSections}`;
+    const block = `══ WHAT YOU ALREADY WROTE (don't repeat, build on it) ══\n${previousSections}`;
+    user += `\n\n${block}`;
+    pushSeg('previous_sections', 'form_field_values', block);
   }
 
   const seed = Math.random().toString(36).substring(2, 8);
-  user += `\n\n══ NOW WRITE ══\nWrite section "${sectionTitle}" for this specific project. Use the coordinator's own words and research documents as your primary material. The call documents are secondary context. Write with conviction and specificity. [v:${seed}]`;
+  const nowWrite = `══ NOW WRITE ══\nWrite section "${sectionTitle}" for this specific project. Use the coordinator's own words and research documents as your primary material. The call documents are secondary context. Write with conviction and specificity. [v:${seed}]`;
+  user += `\n\n${nowWrite}`;
+  pushSeg('now_write', 'code', nowWrite);
 
-  const raw = await callAI(system, user, 'generate');
-  return sanitizeProposalText(raw);
+  // Generate + log (admin inspector reads ai_generations)
+  const t0 = Date.now();
+  let raw;
+  try {
+    raw = await callAI(system, user, 'generate');
+  } catch (err) {
+    await _logWriterGen({ projectId: projId, sectionId, system, user, raw: `[ERROR] ${err.message}`, segments, status: 'error', durationMs: Date.now() - t0 });
+    throw err;
+  }
+  await _logWriterGen({ projectId: projId, sectionId, system, user, raw, segments, status: 'success', durationMs: Date.now() - t0 });
+
+  const clean = sanitizeProposalText(raw);
+  // Realimentation loop: capture NEW concrete facts as candidates (cheap model,
+  // non-blocking). They are NOT injected until validated to 'canonical'.
+  if (projId) extractCandidateFacts(projId, sectionId, clean).catch(e => console.warn('[facts] extract failed:', e.message));
+  return clean;
 }
 
 // ── Evaluate section with full criteria context ─────────────
@@ -1075,12 +1661,15 @@ async function improveSection(text, action, sectionTitle, projectContext, progra
     improve: 'Strengthen this text to score higher with EU evaluators. Improve: (1) specificity — use more project-specific data, (2) evidence — reference EU policies and official documents, (3) coherence — better flow between paragraphs, (4) evaluation alignment — address criteria more explicitly.',
   };
 
-  let system = `You are an expert Erasmus+ proposal writer revising a section. Return ONLY the improved text — no explanations, no commentary, no section titles.`;
+  let system = `You are an expert Erasmus+ proposal writer revising a section. Return ONLY the improved text — no explanations, no commentary, no section titles.` + NARRATIVE_FORMAT_RULES;
   if (writingRules.writing_style) system += `\n\nFollow this writing style:\n${writingRules.writing_style}`;
   if (writingRules.ai_detection_rules) system += `\n\nAI detection rules:\n${writingRules.ai_detection_rules}`;
 
   let user = `Section: ${sectionTitle}\n\nInstruction: ${actions[action] || actions.improve}`;
-  if (projectContext) user += `\n\nProject context for reference:\n${projectContext.substring(0, 3000)}`;
+  // El bundle de contexto entra entero (antes 3000 chars, ahora sin truncar). El writer
+  // cascada actual aún troc​ea por sección — la pipeline CAG completa llegará en fase
+  // Perfeccionar (ver docs/PROJECT_MASTER_ARCHITECTURE.md §6).
+  if (projectContext) user += `\n\nProject context for reference:\n${projectContext}`;
   user += `\n\nOriginal text to improve:\n${text}`;
   user += `\n\nOUTPUT: plain prose only. No markdown, no bullets, no tables, no headings, no bold/italics, no backticks. Paragraphs separated by blank lines.`;
 
@@ -1120,12 +1709,12 @@ async function improveSectionCustom(instanceId, sectionId, currentText, userRequ
   const projId = instRow[0]?.project_id;
   const { langName } = projId ? await getProjectMeta(projId) : { langName: 'English' };
 
-  // Per-WP dynamic section support
+  // Per-WP dynamic section support (EACEA + NA conventions)
   let wpFocusBlock = '';
-  if (typeof sectionId === 'string' && sectionId.startsWith('s4_2_wp_')) {
-    const wpId = sectionId.substring('s4_2_wp_'.length);
+  const wpInfo = parseWpField(sectionId);
+  if (wpInfo) {
     sectionTitle = await getSectionTitleAsync(sectionId);
-    wpFocusBlock = await buildWpFocusContext(wpId);
+    wpFocusBlock = await buildWpFocusContext(wpInfo.wpId);
   }
 
   const ragQuery = await buildSectionRagQuery(sectionId, sectionTitle, projId);
@@ -1133,10 +1722,12 @@ async function improveSectionCustom(instanceId, sectionId, currentText, userRequ
   const [ragChunks, writingRules, evalGuidance, previousSections, researchChunks] = await Promise.all([
     programId ? retrieveRelevantChunks(ragQuery, programId, 8) : Promise.resolve(''),
     programId ? getWritingRules(programId) : Promise.resolve({}),
-    getEvalGuidanceForSection(sectionId),
+    getEvalGuidanceForSection(sectionId, programId),
     getPreviousSections(instanceId, sectionId),
     projId ? retrieveResearchChunks(ragQuery, projId, 6) : Promise.resolve(''),
   ]);
+
+  if (sectionTitle === sectionId && evalGuidance?.title) sectionTitle = evalGuidance.title;
 
   console.log(`[Writer/improve-custom] section=${sectionId} req="${(userRequest || '').substring(0, 80)}..." writingRules=${writingRules.writing_style ? 'Y' : 'N'} evalGuidance=${evalGuidance ? 'Y' : 'N'} RAG=${ragChunks ? ragChunks.length : 0}ch prev=${previousSections ? 'Y' : 'N'}`);
 
@@ -1246,17 +1837,18 @@ function getSectionTitle(sectionId) { return SECTION_NAMES[sectionId] || section
 // looking up the WP in the DB. Falls back to the static map for known IDs.
 async function getSectionTitleAsync(sectionId) {
   if (SECTION_NAMES[sectionId]) return SECTION_NAMES[sectionId];
-  if (typeof sectionId === 'string' && sectionId.startsWith('s4_2_wp_')) {
-    const wpId = sectionId.substring('s4_2_wp_'.length);
+  const wp = parseWpField(sectionId);
+  if (wp) {
     try {
-      const [rows] = await db.execute('SELECT code, title, order_index FROM work_packages WHERE id = ?', [wpId]);
+      const [rows] = await db.execute('SELECT code, title, order_index FROM work_packages WHERE id = ?', [wp.wpId]);
       if (rows[0]) {
         const code = rows[0].code || ('WP' + ((rows[0].order_index || 0) + 1));
         const t = rows[0].title || 'Work Package';
-        return `4.2 ${code} — ${t}`;
+        // EACEA single-narrative keeps the '4.2' prefix; NA per-field WPs just use the WP label.
+        return wp.base === 's4_2_text' ? `4.2 ${code} — ${t}` : `${code} — ${t}`;
       }
     } catch (e) { /* fall through */ }
-    return '4.2 Work Package';
+    return 'Work Package';
   }
   return sectionId;
 }
@@ -1287,7 +1879,8 @@ async function buildWpFocusContext(wpId) {
       block += `  T${(wp.order_index || 0) + 1}.${i + 1} — ${a.label || a.type}`;
       if (a.subtype) block += ` (${a.subtype})`;
       if (a.date_start && a.date_end) block += ` [${a.date_start} → ${a.date_end}]`;
-      if (a.description) block += `\n      ${a.description.substring(0, 400)}`;
+      // WP focus: descripción de actividad sin truncar (arquitectura 2026-05-16).
+      if (a.description) block += `\n      ${a.description}`;
       block += `\n`;
     });
   } else {
@@ -1304,8 +1897,8 @@ async function buildWpFocusContext(wpId) {
       block += `  ${m.code ? m.code + ' — ' : ''}${m.title}`;
       if (m.due_month) block += ` (M${m.due_month})`;
       block += '\n';
-      if (m.description) block += `      ${m.description.substring(0, 300)}\n`;
-      if (m.verification) block += `      Verification: ${m.verification.substring(0, 200)}\n`;
+      if (m.description) block += `      ${m.description}\n`;
+      if (m.verification) block += `      Verification: ${m.verification}\n`;
     });
   }
 
@@ -1321,7 +1914,7 @@ async function buildWpFocusContext(wpId) {
       if (d.dissemination_level) block += ` (${d.dissemination_level})`;
       if (d.due_month) block += ` (M${d.due_month})`;
       block += '\n';
-      if (d.description) block += `      ${d.description.substring(0, 300)}\n`;
+      if (d.description) block += `      ${d.description}\n`;
     });
   }
 
@@ -1608,14 +2201,21 @@ async function seedWpTasksFromProject(wpId) {
   );
 
   const [savedTasks] = await db.execute(
-    `SELECT category, subtype, title, description, wp_id FROM project_tasks
+    `SELECT category, subtype, title, description, partner_id, wp_id FROM project_tasks
       WHERE project_id = ? ORDER BY sort_order, created_at`,
     [wp.project_id]
   );
 
+  // Determine the WP leader as a sensible default if a task has no explicit leader.
+  // Falls back to NULL if WP has no leader assigned.
+  const wpLeaderId = (await db.execute(
+    `SELECT leader_id FROM work_packages WHERE id = ? LIMIT 1`, [wpId]
+  ))[0][0]?.leader_id || null;
+
   const seedRows = [];
 
   // 1. WP1 only: management selections (dedup by subtype to handle stale duplicates)
+  // Mgmt tasks accept ANY project partner as leader — no budget check.
   if (wi === '0') {
     const seenSub = new Set();
     for (const t of savedTasks) {
@@ -1626,6 +2226,8 @@ async function seedWpTasksFromProject(wpId) {
       seedRows.push({
         title: t.title || tmpl?.title || 'Project management task',
         description: _shortDescription(t.description || tmpl?.description),
+        lead_partner_id: t.partner_id || wpLeaderId,
+        is_management: true,
       });
     }
   }
@@ -1643,6 +2245,8 @@ async function seedWpTasksFromProject(wpId) {
     seedRows.push({
       title: saved?.title || tmpl.title,
       description: _shortDescription(saved?.description || tmpl.description),
+      lead_partner_id: saved?.partner_id || wpLeaderId,
+      is_management: false,
     });
   }
 
@@ -1653,19 +2257,430 @@ async function seedWpTasksFromProject(wpId) {
     seedRows.push({
       title: t.title || 'Custom task',
       description: _shortDescription(t.description),
+      lead_partner_id: t.partner_id || wpLeaderId,
+      is_management: false,
     });
+  }
+
+  // Validate lead_partner_id against budget eligibility for non-mgmt tasks.
+  // Management tasks (WP1 mgmt checklist) intentionally allow any partner.
+  const { eligibleIds } = await getEligiblePartnersForWp(wpId);
+  for (const r of seedRows) {
+    if (r.is_management) continue;
+    if (r.lead_partner_id && !eligibleIds.has(r.lead_partner_id)) r.lead_partner_id = null;
   }
 
   // Code prefix derived from wp.code or order
   const wpNum = parseInt(String(wp.code || '').replace(/[^0-9]/g, '')) || ((wp.order_index ?? 0) + 1);
   for (let i = 0; i < seedRows.length; i++) {
     await db.execute(
-      `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, sort_order)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      [genUUID(), wpId, wp.project_id, `T${wpNum}.${i + 1}`, seedRows[i].title, seedRows[i].description, i]
+      `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, lead_partner_id, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [genUUID(), wpId, wp.project_id, `T${wpNum}.${i + 1}`, seedRows[i].title, seedRows[i].description, seedRows[i].lead_partner_id, i]
     );
   }
   return seedRows.length;
+}
+
+// 2.1.3 Project teams — list/update the editable staff table.
+// Rows = project_partner_staff with selected=1, joined with the staffer's
+// directory record (name, generic role, default skills) and partner.
+async function listStaffTable(projectId, userId) {
+  const [[proj]] = await db.execute(
+    `SELECT id FROM projects WHERE id = ? AND user_id = ?`,
+    [projectId, userId]
+  );
+  if (!proj) { const e = new Error('Project not found'); e.status = 404; throw e; }
+  const [rows] = await db.execute(
+    `SELECT pps.id, pps.staff_id, pps.partner_id, pps.project_role, pps.custom_skills,
+            ks.name AS full_name, ks.role AS directory_role, ks.skills_summary AS directory_bio,
+            p.name AS partner_name, p.legal_name AS partner_legal_name, p.country, p.role AS partner_role
+       FROM project_partner_staff pps
+       JOIN org_key_staff ks ON ks.id = pps.staff_id
+       JOIN partners p       ON p.id  = pps.partner_id
+      WHERE pps.project_id = ? AND pps.selected = 1
+      ORDER BY p.role DESC, p.order_index, ks.name`,
+    [projectId]
+  );
+  return rows;
+}
+
+async function updateStaffTableRow(ppsId, userId, body) {
+  // Verify ownership: pps row belongs to a project owned by this user.
+  const [[row]] = await db.execute(
+    `SELECT pps.id, pps.project_id
+       FROM project_partner_staff pps
+       JOIN projects p ON p.id = pps.project_id
+      WHERE pps.id = ? AND p.user_id = ?`,
+    [ppsId, userId]
+  );
+  if (!row) { const e = new Error('Staff row not found'); e.status = 404; throw e; }
+
+  const fields = [];
+  const values = [];
+  if (Object.prototype.hasOwnProperty.call(body, 'project_role')) {
+    fields.push('project_role = ?');
+    values.push(body.project_role || null);
+  }
+  if (Object.prototype.hasOwnProperty.call(body, 'custom_skills')) {
+    fields.push('custom_skills = ?');
+    values.push(body.custom_skills || null);
+  }
+  if (!fields.length) return { id: ppsId, changed: 0 };
+  values.push(ppsId);
+  await db.execute(
+    `UPDATE project_partner_staff SET ${fields.join(', ')} WHERE id = ?`,
+    values
+  );
+  return { id: ppsId, changed: fields.length };
+}
+
+// 2.1.5 Project risks — CRUD over project_risks (one row per risk).
+async function _assertProjectOwned(projectId, userId) {
+  const [[row]] = await db.execute(
+    `SELECT id FROM projects WHERE id = ? AND user_id = ?`,
+    [projectId, userId]
+  );
+  if (!row) { const e = new Error('Project not found'); e.status = 404; throw e; }
+}
+
+async function listProjectRisks(projectId, userId) {
+  await _assertProjectOwned(projectId, userId);
+  const [rows] = await db.execute(
+    `SELECT id, project_id, wp_id, risk_no, description, mitigation,
+            likelihood, impact, sort_order
+       FROM project_risks
+      WHERE project_id = ?
+      ORDER BY sort_order, created_at`,
+    [projectId]
+  );
+  return rows;
+}
+
+async function createProjectRisk(projectId, userId, body = {}) {
+  await _assertProjectOwned(projectId, userId);
+  const id = genUUID();
+  const [[{ next_order }]] = await db.execute(
+    `SELECT COALESCE(MAX(sort_order), -1) + 1 AS next_order FROM project_risks WHERE project_id = ?`,
+    [projectId]
+  );
+  const [[{ next_no }]] = await db.execute(
+    `SELECT COALESCE(COUNT(*), 0) + 1 AS next_no FROM project_risks WHERE project_id = ?`,
+    [projectId]
+  );
+  const code = body.risk_no || `R${next_no}`;
+  await db.execute(
+    `INSERT INTO project_risks
+       (id, project_id, wp_id, risk_no, description, mitigation, likelihood, impact, sort_order)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [id, projectId, body.wp_id || null, code,
+     body.description || null, body.mitigation || null,
+     body.likelihood || null, body.impact || null,
+     body.sort_order != null ? body.sort_order : next_order]
+  );
+  const [[row]] = await db.execute(`SELECT * FROM project_risks WHERE id = ?`, [id]);
+  return row;
+}
+
+async function _assertRiskOwned(riskId, userId) {
+  const [[row]] = await db.execute(
+    `SELECT r.id, r.project_id FROM project_risks r
+       JOIN projects p ON p.id = r.project_id
+      WHERE r.id = ? AND p.user_id = ?`,
+    [riskId, userId]
+  );
+  if (!row) { const e = new Error('Risk not found'); e.status = 404; throw e; }
+  return row;
+}
+
+async function updateProjectRisk(riskId, userId, body = {}) {
+  await _assertRiskOwned(riskId, userId);
+  const allowed = ['risk_no', 'wp_id', 'description', 'mitigation', 'likelihood', 'impact', 'sort_order'];
+  const fields = [];
+  const values = [];
+  for (const k of allowed) {
+    if (Object.prototype.hasOwnProperty.call(body, k)) {
+      fields.push(`${k} = ?`);
+      values.push(body[k] === '' ? null : body[k]);
+    }
+  }
+  if (!fields.length) return { id: riskId, changed: 0 };
+  values.push(riskId);
+  await db.execute(
+    `UPDATE project_risks SET ${fields.join(', ')} WHERE id = ?`,
+    values
+  );
+  return { id: riskId, changed: fields.length };
+}
+
+async function deleteProjectRisk(riskId, userId) {
+  await _assertRiskOwned(riskId, userId);
+  await db.execute(`DELETE FROM project_risks WHERE id = ?`, [riskId]);
+  return { id: riskId, deleted: true };
+}
+
+// AI-generate at least 8 risks from the project context (problem, partners,
+// WPs, activities). Replaces existing rows for this project — user is meant
+// to call this when the table is empty or wants a fresh draft, then edit.
+async function aiGenerateProjectRisks(projectId, userId) {
+  await _assertProjectOwned(projectId, userId);
+
+  // Load context.
+  const [[project]] = await db.execute(
+    `SELECT id, name, full_name, type, description, duration_months, proposal_lang
+       FROM projects WHERE id = ?`,
+    [projectId]
+  );
+  const [partners] = await db.execute(
+    `SELECT id, name, country, role FROM partners WHERE project_id = ? ORDER BY role DESC, order_index`,
+    [projectId]
+  );
+  const [wps] = await db.execute(
+    `SELECT id, code, title, summary, order_index
+       FROM work_packages WHERE project_id = ? ORDER BY order_index`,
+    [projectId]
+  );
+  const [activities] = wps.length ? await db.execute(
+    `SELECT a.wp_id, a.label, a.subtype, a.type
+       FROM activities a JOIN work_packages w ON w.id = a.wp_id
+      WHERE w.project_id = ? ORDER BY w.order_index, a.order_index`,
+    [projectId]
+  ) : [[]];
+  const [[ctxRow]] = await db.execute(
+    `SELECT problem, target_groups, approach FROM intake_contexts WHERE project_id = ? LIMIT 1`,
+    [projectId]
+  );
+
+  const wpsForPrompt = wps.map(w => ({
+    code: w.code,
+    title: w.title,
+    summary: (w.summary || '').slice(0, 400),
+    activities: activities.filter(a => a.wp_id === w.id).map(a => `${a.label}${a.subtype ? ' ('+a.subtype+')' : ''}`),
+  }));
+  const wpCodes = wps.map(w => w.code).join(', ');
+  const lang = project.proposal_lang || 'es';
+
+  const system = `You are an EACEA-grade evaluator and senior project manager analysing risks for a European project. You produce risk-management tables that meet EACEA/Erasmus+ standards.
+
+Output a JSON object with shape:
+{
+  "risks": [
+    {
+      "risk_no": "R1",
+      "description": "<concise risk description, INCLUDING impact and likelihood as 'Impact: <low|medium|high> · Likelihood: <low|medium|high>' inline>",
+      "wp_code": "<WP code from the list, or null if cross-cutting>",
+      "likelihood": "<low|medium|high>",
+      "impact": "<low|medium|high>",
+      "mitigation": "<concrete preventive AND corrective actions>"
+    }
+  ]
+}
+
+Rules:
+- Return at LEAST 8 risks. 10-12 is the sweet spot for a balanced project.
+- Cover the four main risk families: management/governance, technical/methodological, partnership/consortium, dissemination/sustainability.
+- Mix likelihoods and impacts realistically (don't make every risk "high/high").
+- Mitigation must be actionable, not generic ("set up monthly meetings" beats "ensure good communication").
+- Description language: ${lang === 'es' ? 'Spanish' : lang === 'en' ? 'English' : lang}.
+- Numbering: R1, R2, R3, ... in order of priority (most critical first).
+- Only output the JSON object, no markdown, no commentary.`;
+
+  const user = `PROJECT
+Name: ${project.full_name || project.name}
+Type / call: ${project.type}
+Duration: ${project.duration_months || '?'} months
+
+CONTEXT
+Problem: ${(ctxRow?.problem || '').slice(0, 800)}
+Target groups: ${(ctxRow?.target_groups || '').slice(0, 400)}
+Approach: ${(ctxRow?.approach || '').slice(0, 400)}
+
+PARTNERS (${partners.length})
+${partners.map(p => `- ${p.name} [${p.country}, ${p.role}]`).join('\n')}
+
+WORK PACKAGES (use exact codes: ${wpCodes})
+${wpsForPrompt.map(w => `- ${w.code} — ${w.title}\n  ${w.summary}\n  Activities: ${w.activities.join(' · ') || '—'}`).join('\n')}
+
+Generate the risks JSON now.`;
+
+  const raw = await callClaude(system, user, 4096);
+  // Extract JSON object from the response.
+  const match = raw.match(/\{[\s\S]*\}/);
+  if (!match) throw new Error('AI did not return JSON');
+  let parsed;
+  try { parsed = JSON.parse(match[0]); }
+  catch (e) { throw new Error('AI JSON parse error: ' + e.message); }
+  const list = Array.isArray(parsed.risks) ? parsed.risks : [];
+  if (list.length < 4) throw new Error('AI returned too few risks (' + list.length + ')');
+
+  const wpByCode = {};
+  for (const w of wps) wpByCode[(w.code || '').toUpperCase()] = w.id;
+  const norm = (v) => {
+    const s = String(v || '').toLowerCase();
+    if (['low', 'medium', 'high'].includes(s)) return s;
+    return null;
+  };
+
+  const conn = await db.getConnection();
+  try {
+    await conn.beginTransaction();
+    await conn.execute(`DELETE FROM project_risks WHERE project_id = ?`, [projectId]);
+    let i = 0;
+    for (const r of list) {
+      const id = genUUID();
+      const wpId = r.wp_code ? wpByCode[String(r.wp_code).toUpperCase()] || null : null;
+      await conn.execute(
+        `INSERT INTO project_risks
+           (id, project_id, wp_id, risk_no, description, mitigation,
+            likelihood, impact, sort_order)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [id, projectId, wpId, r.risk_no || `R${i+1}`,
+         r.description || null, r.mitigation || null,
+         norm(r.likelihood), norm(r.impact), i]
+      );
+      i++;
+    }
+    await conn.commit();
+  } catch (err) {
+    await conn.rollback(); throw err;
+  } finally {
+    conn.release();
+  }
+
+  // Return the freshly-stored rows.
+  return await listProjectRisks(projectId, userId);
+}
+
+// AI evaluator for the risks table (section 2.1.5). Returns a JSON report
+// with overall score, summary, missing dimensions ("gaps") and concrete
+// per-row improvement suggestions that the UI can apply via PATCH.
+async function aiEvaluateProjectRisks(projectId, userId) {
+  await _assertProjectOwned(projectId, userId);
+
+  const [[project]] = await db.execute(
+    `SELECT id, name, full_name, type, duration_months, proposal_lang
+       FROM projects WHERE id = ?`,
+    [projectId]
+  );
+  const [wps] = await db.execute(
+    `SELECT id, code, title, summary
+       FROM work_packages WHERE project_id = ? ORDER BY order_index`,
+    [projectId]
+  );
+  const wpById = {};
+  for (const w of wps) wpById[w.id] = w;
+  const [risks] = await db.execute(
+    `SELECT id, risk_no, description, mitigation, likelihood, impact, wp_id
+       FROM project_risks WHERE project_id = ? ORDER BY sort_order, created_at`,
+    [projectId]
+  );
+  if (!risks.length) {
+    const e = new Error('La tabla de riesgos está vacía. Pulsa "Autocompletar con IA" antes de evaluar.');
+    e.status = 400; throw e;
+  }
+
+  const lang = project.proposal_lang || 'es';
+  const system = `You are an EACEA evaluator analysing the risk-management table of a European project (Application Form Part B, section 2.1.5) under the criterion "Quality of project design and implementation".
+
+Output strictly the following JSON object:
+{
+  "score": <integer 0-10>,
+  "summary": "<2-3 line overall assessment>",
+  "gaps": [
+    { "title": "<missing risk dimension>", "severity": "high|medium|low", "why_critical": "<why this matters for the evaluation>" }
+  ],
+  "row_suggestions": [
+    { "row_id": "<exact id from CURRENT RISKS>", "field": "description|mitigation|likelihood|impact", "current": "<current value, verbatim>", "suggested": "<the new value, ready to write to the DB>", "why": "<short reasoning, MAX 1-2 sentences>" }
+  ]
+}
+
+CRITICAL — what goes in "suggested":
+- For field = "likelihood" or "impact": the value MUST be EXACTLY one of "low" | "medium" | "high" (lowercase, no extra text). Do NOT put a justification here — that goes in "why".
+- For field = "description" or "mitigation": the new full text the user should paste into that cell.
+
+Guidance:
+- 0–3 GAPS: whole-table dimensions missing (e.g. "no risk on partner withdrawal", "no risk on data protection / GDPR for participant data", "no safety risk for mobility activities", "no diss/IP risk").
+- 0–5 ROW_SUGGESTIONS: highest-impact improvements on existing rows. Vague descriptions, generic mitigations, mismatched impact/likelihood, wrong WP attribution.
+- Be specific and concise. "Set up monthly meetings" is generic; prefer "Monthly steering committee with rotating chair, written minutes circulated within 48 h".
+- Score: 1-3 very poor, 4-5 mediocre, 6-7 acceptable, 8-9 strong, 10 excellent.
+- Language of summary / gaps / suggestions: ${lang === 'es' ? 'Spanish' : lang === 'en' ? 'English' : lang}.
+- Use exact row IDs from the CURRENT RISKS list — do NOT invent IDs.
+- Return only the JSON object, no markdown, no commentary.`;
+
+  const user = `PROJECT
+Name: ${project.full_name || project.name}
+Type / call: ${project.type}
+Duration: ${project.duration_months || '?'} months
+
+WORK PACKAGES
+${wps.map(w => `${w.code} — ${w.title}`).join('\n')}
+
+CURRENT RISKS (${risks.length})
+${risks.map(r => {
+  const wpCode = r.wp_id ? (wpById[r.wp_id]?.code || '?') : 'cross-cutting';
+  return `[${r.id}] ${r.risk_no || '?'} (impact=${r.impact || '?'}, likelihood=${r.likelihood || '?'}, wp=${wpCode})
+  Description: ${r.description || '(empty)'}
+  Mitigation: ${r.mitigation || '(empty)'}`;
+}).join('\n\n')}
+
+Evaluate the table now.`;
+
+  const raw = await callClaude(system, user, 4096);
+  const match = raw.match(/\{[\s\S]*\}/);
+  if (!match) throw new Error('AI did not return JSON');
+  let parsed;
+  try { parsed = JSON.parse(match[0]); }
+  catch (e) { throw new Error('AI JSON parse error: ' + e.message); }
+
+  // Sanitize: keep only known fields, filter row_suggestions to existing IDs.
+  const validIds = new Set(risks.map(r => r.id));
+  const allowedFields = new Set(['description', 'mitigation', 'likelihood', 'impact']);
+  const score = Math.max(0, Math.min(10, parseInt(parsed.score, 10) || 0));
+  const gaps = Array.isArray(parsed.gaps) ? parsed.gaps.slice(0, 5).map(g => ({
+    title: String(g.title || '').trim(),
+    severity: ['high', 'medium', 'low'].includes(String(g.severity || '').toLowerCase()) ? String(g.severity).toLowerCase() : 'medium',
+    why_critical: String(g.why_critical || '').trim(),
+  })).filter(g => g.title) : [];
+  // For enum columns (likelihood / impact), `suggested` must be exactly one
+  // of low|medium|high — the AI sometimes returns a full-prose justification
+  // instead. Coerce when possible, drop the suggestion when not.
+  const enumFields = new Set(['likelihood', 'impact']);
+  const coerceEnum = (raw) => {
+    const s = String(raw || '').toLowerCase();
+    // Accept explicit values; otherwise try to find a clean keyword in prose.
+    if (s === 'low' || s === 'medium' || s === 'high') return s;
+    const tokens = s.match(/\b(low|medium|high)\b/g) || [];
+    if (tokens.length === 1) return tokens[0];
+    return null;  // ambiguous or none → drop
+  };
+
+  const row_suggestions = Array.isArray(parsed.row_suggestions) ? parsed.row_suggestions
+    .filter(s => validIds.has(s.row_id) && allowedFields.has(s.field))
+    .map(s => {
+      const out = {
+        row_id: s.row_id,
+        field: s.field,
+        current: String(s.current || '').trim(),
+        suggested: String(s.suggested || '').trim(),
+        why: String(s.why || '').trim(),
+      };
+      if (enumFields.has(s.field)) {
+        const v = coerceEnum(s.suggested);
+        if (!v) return null;  // drop suggestion if we cannot resolve a clean value
+        out.suggested = v;
+      }
+      return out;
+    })
+    .filter(Boolean)
+    .slice(0, 8) : [];
+
+  return {
+    score,
+    summary: String(parsed.summary || '').trim(),
+    gaps,
+    row_suggestions,
+    risks_count: risks.length,
+  };
 }
 
 // Wipe + re-seed wp_tasks for a WP (used by resync button).
@@ -1674,6 +2689,221 @@ async function resyncWpTasks(wpId, userId) {
   await _assertWp(wpId, userId);
   await db.execute(`DELETE FROM wp_tasks WHERE work_package_id = ?`, [wpId]);
   return await seedWpTasksFromProject(wpId);
+}
+
+/**
+ * Best-effort sync: project_tasks.partner_id → wp_tasks.lead_partner_id.
+ *
+ * The two tables are not linked by FK. When the user assigns a task leader
+ * in *Escribir → Tareas* it lands on project_tasks.partner_id; meanwhile
+ * the DMS generator reads wp_tasks.lead_partner_id. This function bridges
+ * the two by matching on three signals:
+ *   1) Exact template-title match within the same WP.
+ *   2) Activity-derived ordering: i-th non-mgmt project_task in a WP →
+ *      i-th non-mgmt wp_task in the same WP (best fallback).
+ *   3) WP1 management items: project_management subtype → wp_task whose
+ *      title matches the template's title for that subtype.
+ *
+ * Only UPDATEs wp_tasks rows whose lead_partner_id IS NULL — never
+ * overwrites a manually-set leader.
+ *
+ * Idempotent. Cheap enough to run lazily on every DMS generation.
+ */
+async function syncWpTaskLeadersFromProjectTasks(projectId) {
+  const [pts] = await db.execute(
+    `SELECT id, category, subtype, wp_id, title, partner_id
+       FROM project_tasks
+      WHERE project_id = ? AND partner_id IS NOT NULL
+      ORDER BY sort_order, created_at`,
+    [projectId]
+  );
+  if (!pts.length) return { applied: 0 };
+
+  const [wps] = await db.execute(
+    `SELECT id, order_index FROM work_packages WHERE project_id = ? ORDER BY order_index`,
+    [projectId]
+  );
+
+  let applied = 0;
+
+  for (const wp of wps) {
+    const wi = String(wp.order_index ?? 0);
+    const [wpTasks] = await db.execute(
+      `SELECT id, title, sort_order FROM wp_tasks
+        WHERE work_package_id = ? AND lead_partner_id IS NULL
+        ORDER BY sort_order, created_at`,
+      [wp.id]
+    );
+    if (!wpTasks.length) continue;
+
+    const assigned = new Set();
+
+    // Pass 1: title match against the template's stock title.
+    // Catches wp_tasks whose title comes verbatim from the template.
+    const wpPts = pts.filter(pt => String(pt.wp_id) === wi || (wi === '0' && pt.category === 'project_management'));
+    for (const wpt of wpTasks) {
+      if (assigned.has(wpt.id)) continue;
+      const wptTitle = (wpt.title || '').toLowerCase().trim();
+      if (!wptTitle) continue;
+      for (const pt of wpPts) {
+        const tmpl = _findTemplateBySubtypeKey(pt.category, pt.subtype);
+        if (!tmpl) continue;
+        const tmplTitle = (tmpl.title || '').toLowerCase().trim();
+        if (!tmplTitle) continue;
+        if (wptTitle === tmplTitle) {
+          await db.execute(`UPDATE wp_tasks SET lead_partner_id = ? WHERE id = ? AND lead_partner_id IS NULL`, [pt.partner_id, wpt.id]);
+          assigned.add(wpt.id);
+          applied++;
+          break;
+        }
+      }
+    }
+
+    // Pass 2: activity-order fallback. Walk WP activities in order and pair
+    // the i-th non-mgmt activity's project_task with the i-th still-unmatched
+    // non-mgmt wp_task. This catches AI-generated wp_tasks whose titles drift
+    // from the template but maintain the activity order.
+    const [acts] = await db.execute(
+      `SELECT id, type, subtype FROM activities WHERE wp_id = ? ORDER BY order_index`,
+      [wp.id]
+    );
+    const activityPartners = [];
+    for (const act of acts) {
+      if (act.type === 'mgmt') continue;
+      const category = ACT_TYPE_TO_TEMPLATE_CAT[act.type];
+      if (!category) { activityPartners.push(null); continue; }
+      const tmpl = _findTemplateBySubtypeLabel(category, act.subtype);
+      if (!tmpl) { activityPartners.push(null); continue; }
+      const pt = wpPts.find(t => t.category === category && t.subtype === tmpl.key);
+      activityPartners.push(pt?.partner_id || null);
+    }
+    const unmatched = wpTasks.filter(t => !assigned.has(t.id));
+    for (let i = 0; i < unmatched.length && i < activityPartners.length; i++) {
+      const pid = activityPartners[i];
+      if (!pid) continue;
+      await db.execute(`UPDATE wp_tasks SET lead_partner_id = ? WHERE id = ? AND lead_partner_id IS NULL`, [pid, unmatched[i].id]);
+      assigned.add(unmatched[i].id);
+      applied++;
+    }
+  }
+
+  return { applied };
+}
+
+/**
+ * Compute the set of project partner IDs that have any budget cost > 0
+ * in a given WP. Eligibility rule: solo los partners que reciben importe
+ * en el presupuesto del WP pueden liderar/participar en las tasks del WP.
+ *
+ * El matching budget_beneficiaries → partners es por (1) name/acronym y
+ * (2) fallback posicional (sort_order ↔ order_index) — necesario porque
+ * al renombrar un partner en Diseñar, la fila de budget_beneficiaries
+ * conserva el nombre antiguo hasta que se rehace el presupuesto.
+ *
+ * Returns { eligibleIds: Set<string>, projectId: string }.
+ */
+async function getEligiblePartnersForWp(wpId) {
+  const [wpRows] = await db.execute(
+    `SELECT id, project_id, code, order_index FROM work_packages WHERE id = ? LIMIT 1`,
+    [wpId]
+  );
+  if (!wpRows.length) return { eligibleIds: new Set(), projectId: null };
+  const wp = wpRows[0];
+
+  const [partners] = await db.execute(
+    `SELECT id, name, legal_name, order_index FROM partners WHERE project_id = ? ORDER BY order_index, id`,
+    [wp.project_id]
+  );
+  const partnerByKey = {};
+  for (const p of partners) {
+    if (p.name) partnerByKey[p.name.toLowerCase().trim()] = p.id;
+    if (p.legal_name) partnerByKey[p.legal_name.toLowerCase().trim()] = p.id;
+  }
+
+  const [budgets] = await db.execute(
+    `SELECT id FROM budget_projects WHERE project_id = ? LIMIT 1`,
+    [wp.project_id]
+  );
+  if (!budgets.length) return { eligibleIds: new Set(), projectId: wp.project_id };
+  const budgetId = budgets[0].id;
+
+  const [bwps] = await db.execute(
+    `SELECT id, label FROM budget_work_packages WHERE budget_id = ? ORDER BY number`,
+    [budgetId]
+  );
+  let bwp = bwps.find(b => b.label && wp.code && b.label.startsWith(wp.code + ' '));
+  if (!bwp) bwp = bwps[Math.max(0, wp.order_index || 0)] || null;
+  if (!bwp) return { eligibleIds: new Set(), projectId: wp.project_id };
+
+  // Build the full ordered list of beneficiaries so we can fall back to
+  // positional matching for partners renamed after the budget was synced.
+  const [allBenefs] = await db.execute(
+    `SELECT bb.id, bb.acronym, bb.name, bb.sort_order, bb.number,
+            COALESCE(SUM(bc.total_cost), 0) AS total_in_wp
+       FROM budget_beneficiaries bb
+       LEFT JOIN budget_costs bc ON bc.beneficiary_id = bb.id AND bc.budget_id = bb.budget_id AND bc.wp_id = ?
+      WHERE bb.budget_id = ?
+      GROUP BY bb.id
+      ORDER BY bb.sort_order, bb.number`,
+    [bwp.id, budgetId]
+  );
+
+  const eligibleIds = new Set();
+  for (let i = 0; i < allBenefs.length; i++) {
+    const r = allBenefs[i];
+    if (Number(r.total_in_wp) <= 0) continue;
+    // 1) Try name/acronym match
+    let id = partnerByKey[(r.acronym || '').toLowerCase().trim()]
+          || partnerByKey[(r.name || '').toLowerCase().trim()];
+    // 2) Fallback: positional match (i-th beneficiary → i-th project partner)
+    if (!id && partners[i]) id = partners[i].id;
+    if (id) eligibleIds.add(id);
+  }
+  return { eligibleIds, projectId: wp.project_id };
+}
+
+/**
+ * Reconcile wp_task_participants for every task in a WP so the participants
+ * match the budget-based eligibility (regla: si la entidad recibe importe en
+ * el presupuesto del WP, participa obligatoriamente; si no, queda fuera).
+ * Idempotent.
+ */
+async function syncTaskParticipantsToEligibility(wpId, eligibleIds) {
+  const [tasks] = await db.execute(
+    `SELECT id FROM wp_tasks WHERE work_package_id = ?`,
+    [wpId]
+  );
+  if (!tasks.length) return;
+  const eligibleArr = [...eligibleIds];
+
+  for (const t of tasks) {
+    // Remove participants no longer eligible
+    if (eligibleArr.length) {
+      const placeholders = eligibleArr.map(() => '?').join(',');
+      await db.execute(
+        `DELETE FROM wp_task_participants WHERE task_id = ? AND partner_id NOT IN (${placeholders})`,
+        [t.id, ...eligibleArr]
+      );
+    } else {
+      await db.execute(`DELETE FROM wp_task_participants WHERE task_id = ?`, [t.id]);
+    }
+    // Add eligible partners that are not yet listed
+    for (const pid of eligibleArr) {
+      await db.execute(
+        `INSERT INTO wp_task_participants (id, task_id, partner_id, role)
+         VALUES (?, ?, ?, 'BEN')
+         ON DUPLICATE KEY UPDATE role = role`,
+        [genUUID(), t.id, pid]
+      );
+    }
+    // Clear lead_partner_id if the current leader is no longer eligible
+    await db.execute(
+      `UPDATE wp_tasks SET lead_partner_id = NULL
+        WHERE id = ? AND lead_partner_id IS NOT NULL
+          AND lead_partner_id NOT IN (${eligibleArr.length ? eligibleArr.map(() => '?').join(',') : 'NULL'})`,
+      eligibleArr.length ? [t.id, ...eligibleArr] : [t.id]
+    );
+  }
 }
 
 async function listWpTasks(wpId) {
@@ -1690,6 +2920,19 @@ async function listWpTasks(wpId) {
       );
     }
   }
+
+  // Sync participants to budget-based eligibility BEFORE reading them so the
+  // returned list is always coherent with the budget.
+  const { eligibleIds } = await getEligiblePartnersForWp(wpId);
+  if (tasks.length) {
+    await syncTaskParticipantsToEligibility(wpId, eligibleIds);
+    // Re-read tasks in case lead_partner_id was cleared
+    [tasks] = await db.execute(
+      `SELECT * FROM wp_tasks WHERE work_package_id = ? ORDER BY sort_order, created_at`,
+      [wpId]
+    );
+  }
+
   if (!tasks.length) return [];
   const taskIds = tasks.map(t => t.id);
   const placeholders = taskIds.map(() => '?').join(',');
@@ -1706,20 +2949,27 @@ async function listWpTasks(wpId) {
   for (const p of parts) {
     (partsByTask[p.task_id] ||= []).push(p);
   }
-  return tasks.map(t => ({ ...t, participants: partsByTask[t.id] || [] }));
+  const eligibleIdsArr = [...eligibleIds];
+  return tasks.map(t => ({
+    ...t,
+    participants: partsByTask[t.id] || [],
+    eligible_partner_ids: eligibleIdsArr,
+  }));
 }
 
 async function createWpTask(wpId, userId, data) {
   const wp = await _assertWp(wpId, userId);
   const id = genUUID();
+  const leadId = data.lead_partner_id || null;
   await db.execute(
-    `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, in_kind_subcontracting, sort_order)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO wp_tasks (id, work_package_id, project_id, code, title, description, lead_partner_id, in_kind_subcontracting, sort_order)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       id, wpId, wp.project_id,
       data.code || null,
       data.title || 'New task',
       data.description || null,
+      leadId,
       data.in_kind_subcontracting || null,
       data.sort_order || 0,
     ]
@@ -1752,7 +3002,10 @@ async function _assertTask(taskId, userId) {
 
 async function updateWpTask(taskId, userId, data) {
   await _assertTask(taskId, userId);
-  const allowed = ['code', 'title', 'description', 'in_kind_subcontracting', 'sort_order'];
+  // Note: lead_partner_id is NOT validated against budget eligibility here.
+  // The UI enforces eligibility for ordinary tasks; project-management tasks
+  // (WP1 mgmt checklist) intentionally allow ANY project partner as leader.
+  const allowed = ['code', 'title', 'description', 'in_kind_subcontracting', 'sort_order', 'lead_partner_id'];
   const sets = [];
   const vals = [];
   for (const k of allowed) {
@@ -1852,6 +3105,23 @@ async function getWpBudget(wpId, userId) {
   });
   const total = enriched.reduce((s, r) => s + r.total, 0);
   return { rows: enriched, total, indirect_pct: indirectPct, matched: true };
+}
+
+/* Regenerate the budget v2 (tablas budget_*) from the current calc_state.
+ * Called automatically by the Writer before reading any budget-derived view,
+ * so the Estimated Budget Resources never goes out of sync with the Designer.
+ * Idempotent. Preserves rows with is_user_override=1.
+ *
+ * Asserts ownership of the project before invoking the budget module.
+ */
+async function refreshProjectBudget(projectId, userId) {
+  const [rows] = await db.execute(
+    'SELECT id FROM projects WHERE id = ? AND user_id = ?',
+    [projectId, userId]
+  );
+  if (!rows.length) throw Object.assign(new Error('Project not found'), { status: 404 });
+  const budgetModel = require('../budget/model');
+  return await budgetModel.createFromIntake(userId, projectId);
 }
 
 async function listProjectPartners(projectId, userId) {
@@ -2264,28 +3534,27 @@ async function getPrepConsorcio(projectId, userId) {
     p.extra_staff = [];
 
     if (p.organization_id) {
-      // Load org profile
+      // Load org profile (oid o pic — el directory-api acepta ambos como id)
       const [orgs] = await db.execute(
-        `SELECT id, organization_name, acronym, org_type, country, city, description, activities_experience, expertise_areas, staff_size
+        `SELECT id, organization_name, acronym, org_type, country, city, description, activities_experience, expertise_areas, staff_size, oid, pic
          FROM organizations WHERE id = ?`, [p.organization_id]
       );
       if (orgs.length) {
         p.organization = orgs[0];
-        // Load child tables
+        // Load child tables (eu_projects ya no vive en MySQL: se carga abajo desde directory-api)
         const [staff] = await db.execute('SELECT id, name, role, skills_summary FROM org_key_staff WHERE organization_id = ?', [p.organization_id]);
         p.organization.key_staff = staff;
-        const [euProj] = await db.execute('SELECT id, programme, year, project_id_or_contract, role, title FROM org_eu_projects WHERE organization_id = ?', [p.organization_id]);
-        p.organization.eu_projects = euProj;
+        p.organization.eu_projects = [];
         const [stakeholders] = await db.execute('SELECT entity_name, entity_type, relationship_type, description FROM org_stakeholders WHERE organization_id = ?', [p.organization_id]);
         p.organization.stakeholders = stakeholders;
       }
 
-      // Load project-specific EU project selections
+      // Load project-specific EU project selections (ahora project_identifier string)
       const [selectedEuProjs] = await db.execute(
-        'SELECT eu_project_id FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ?',
+        'SELECT project_identifier FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ?',
         [projectId, p.id]
       );
-      p.selected_eu_projects = selectedEuProjs.map(r => r.eu_project_id);
+      p.selected_eu_projects = selectedEuProjs.map(r => r.project_identifier);
 
       // Load project-specific staff customizations
       const [staffCustom] = await db.execute(
@@ -2299,6 +3568,28 @@ async function getPrepConsorcio(projectId, userId) {
         p.staff_custom[sc.staff_id] = sc.custom_skills;
         p.staff_selected[sc.staff_id] = !!sc.selected;
         p.staff_project_role[sc.staff_id] = sc.project_role || '';
+      }
+
+      // Auto-select-by-default: every key_staff of the organization that
+      // doesn't yet have a project_partner_staff row is treated as selected.
+      // We persist this decision as an explicit row (selected=1) so downstream
+      // consumers (listStaffTable, Form Part B exporter, AI prompts) all see
+      // the staff member. INSERT IGNORE keeps it idempotent and never clobbers
+      // a row the user explicitly deselected (those already exist with
+      // selected=0 from a previous toggle).
+      const orgKeyStaff = p.organization && Array.isArray(p.organization.key_staff)
+        ? p.organization.key_staff : [];
+      const trackedIds = new Set(staffCustom.map(sc => sc.staff_id));
+      for (const ks of orgKeyStaff) {
+        if (trackedIds.has(ks.id)) continue;
+        try {
+          await db.execute(
+            `INSERT IGNORE INTO project_partner_staff (id, project_id, partner_id, staff_id, selected)
+             VALUES (?, ?, ?, ?, 1)`,
+            [genUUID(), projectId, p.id, ks.id]
+          );
+          p.staff_selected[ks.id] = true;
+        } catch (e) { /* non-fatal: row will be created on next save attempt */ }
       }
 
       // Load PIF variants for this organization
@@ -2332,6 +3623,37 @@ async function getPrepConsorcio(projectId, userId) {
     }
   }
 
+  // Pass-through al directory-api: cargar proyectos UE reales por OID, en paralelo.
+  // Esto sustituye la antigua tabla MySQL `org_eu_projects` (incompleta).
+  // Si el partner no tiene oid o el directory-api falla, queda lista vacía.
+  await Promise.all(partners.map(async (p) => {
+    // El directory-api acepta tanto oid (E10xxxxx) como pic numérico (940...)
+    // como identificador en /entity/<id>/projects.
+    const lookupId = (p.organization && (p.organization.oid || p.organization.pic)) || null;
+    if (!lookupId) return;
+    try {
+      const resp = await directoryApi.getEntityProjects(lookupId, { limit: 300 });
+      const list = Array.isArray(resp && resp.projects) ? resp.projects : [];
+      p.organization.eu_projects = list.map(pr => ({
+        id: pr.project_identifier,
+        project_identifier: pr.project_identifier,
+        title: pr.project_title || pr.title || '',
+        programme: pr.programme || '',
+        year: pr.funding_year || null,
+        role: pr.role || '',
+        coordinator_name: pr.coordinator_name || '',
+        coordinator_country: pr.coordinator_country || '',
+        eu_grant_eur: pr.eu_grant_eur || null,
+        is_good_practice: !!pr.is_good_practice,
+        summary_excerpt: (pr.project_summary || '').slice(0, 300),
+      }));
+    } catch (_) {
+      // Silencioso: si la API falla, lista vacía. El usuario verá
+      // "No hay proyectos" en vez de un error y puede reintentar.
+      p.organization.eu_projects = [];
+    }
+  }));
+
   // Load unique worker rate categories across all partners in this project
   const [wrCats] = await db.execute(
     `SELECT DISTINCT wr.category FROM worker_rates wr
@@ -2352,9 +3674,9 @@ async function linkPartnerOrg(projectId, partnerId, organizationId) {
 }
 
 async function generatePifVariant(projectId, partnerId, category, categoryLabel, userId) {
-  // Get partner + org + project context
+  // Get partner + org + project context (oid o pic para directory-api)
   const [partners] = await db.execute(
-    'SELECT p.*, o.organization_name, o.description, o.activities_experience, o.expertise_areas FROM partners p LEFT JOIN organizations o ON o.id = p.organization_id WHERE p.id = ? AND p.project_id = ?',
+    'SELECT p.*, o.organization_name, o.description, o.activities_experience, o.expertise_areas, o.oid, o.pic FROM partners p LEFT JOIN organizations o ON o.id = p.organization_id WHERE p.id = ? AND p.project_id = ?',
     [partnerId, projectId]
   );
   if (!partners.length || !partners[0].organization_id) throw new Error('Partner not linked to organization');
@@ -2363,16 +3685,34 @@ async function generatePifVariant(projectId, partnerId, category, categoryLabel,
 
   // Load org child data
   const [staff] = await db.execute('SELECT id, name, role, skills_summary FROM org_key_staff WHERE organization_id = ?', [orgId]);
-  const [euProj] = await db.execute('SELECT id, programme, year, role, title FROM org_eu_projects WHERE organization_id = ?', [orgId]);
   const [stakeholders] = await db.execute('SELECT entity_name, relationship_type FROM org_stakeholders WHERE organization_id = ?', [orgId]);
 
-  // Load selected EU projects for this partner (if any)
+  // Proyectos UE: pass-through al directory-api (en lugar de org_eu_projects).
+  let euProj = [];
+  const partnerLookupId = partner.oid || partner.pic;
+  if (partnerLookupId) {
+    try {
+      const resp = await directoryApi.getEntityProjects(partnerLookupId, { limit: 300 });
+      const list = Array.isArray(resp && resp.projects) ? resp.projects : [];
+      euProj = list.map(pr => ({
+        project_identifier: pr.project_identifier,
+        title: pr.project_title || pr.title || '',
+        programme: pr.programme || '',
+        year: pr.funding_year || null,
+        role: pr.role || '',
+      }));
+    } catch (_) { euProj = []; }
+  }
+
+  // Load selected EU projects for this partner (project_identifier strings)
   const [selectedEuProjs] = await db.execute(
-    'SELECT eu_project_id FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ?',
+    'SELECT project_identifier FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ?',
     [projectId, partnerId]
   );
-  const selectedEuIds = selectedEuProjs.map(r => r.eu_project_id);
-  const relevantEuProj = selectedEuIds.length ? euProj.filter(ep => selectedEuIds.includes(ep.id)) : euProj;
+  const selectedIds = selectedEuProjs.map(r => r.project_identifier);
+  const relevantEuProj = selectedIds.length
+    ? euProj.filter(ep => selectedIds.includes(ep.project_identifier))
+    : euProj;
 
   // Load extra staff added for this project
   const [extraStaff] = await db.execute(
@@ -2476,25 +3816,30 @@ async function savePartnerCustomText(projectId, partnerId, customText) {
   );
 }
 
-async function toggleEuProject(projectId, partnerId, euProjectId, selected) {
+async function toggleEuProject(projectId, partnerId, projectIdentifier, selected) {
+  if (!projectIdentifier) throw new Error('project_identifier requerido');
   if (selected) {
     await db.execute(
-      `INSERT IGNORE INTO project_partner_eu_projects (id, project_id, partner_id, eu_project_id)
+      `INSERT IGNORE INTO project_partner_eu_projects (id, project_id, partner_id, project_identifier)
        VALUES (?, ?, ?, ?)`,
-      [genUUID(), projectId, partnerId, euProjectId]
+      [genUUID(), projectId, partnerId, projectIdentifier]
     );
   } else {
     await db.execute(
-      'DELETE FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ? AND eu_project_id = ?',
-      [projectId, partnerId, euProjectId]
+      'DELETE FROM project_partner_eu_projects WHERE project_id = ? AND partner_id = ? AND project_identifier = ?',
+      [projectId, partnerId, projectIdentifier]
     );
   }
 }
 
 async function saveStaffCustomSkills(projectId, partnerId, staffId, customSkills) {
+  // Force selected=1 on insert so editing skills before toggling never
+  // creates a row that's accidentally deselected (column default is 0).
+  // The ON DUPLICATE KEY clause only touches custom_skills, so this is
+  // a no-op for already-existing rows.
   await db.execute(
-    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, custom_skills)
-     VALUES (?, ?, ?, ?, ?)
+    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, selected, custom_skills)
+     VALUES (?, ?, ?, ?, 1, ?)
      ON DUPLICATE KEY UPDATE custom_skills = VALUES(custom_skills)`,
     [genUUID(), projectId, partnerId, staffId, customSkills || null]
   );
@@ -2510,9 +3855,10 @@ async function toggleStaffSelected(projectId, partnerId, staffId, selected) {
 }
 
 async function setStaffProjectRole(projectId, partnerId, staffId, projectRole) {
+  // Same default-selected protection as saveStaffCustomSkills.
   await db.execute(
-    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, project_role)
-     VALUES (?, ?, ?, ?, ?)
+    `INSERT INTO project_partner_staff (id, project_id, partner_id, staff_id, selected, project_role)
+     VALUES (?, ?, ?, ?, 1, ?)
      ON DUPLICATE KEY UPDATE project_role = VALUES(project_role)`,
     [genUUID(), projectId, partnerId, staffId, projectRole || null]
   );
@@ -2684,7 +4030,9 @@ async function getProjectMeta(projectId) {
   const [rows] = await db.execute('SELECT type, proposal_lang, national_agency FROM projects WHERE id = ? LIMIT 1', [projectId]);
   if (!rows.length) return { programId: null, lang: 'en', langName: 'English' };
   const [programs] = await db.execute('SELECT ip.id FROM intake_programs ip WHERE ip.action_type = ? LIMIT 1', [rows[0].type]);
-  const lang = NA_LANG[rows[0].national_agency] || rows[0].proposal_lang || 'en';
+  // proposal_lang es la fuente única (idioma de trabajo del usuario).
+  // NA queda como fallback histórico para proyectos sin idioma explícito.
+  const lang = rows[0].proposal_lang || NA_LANG[rows[0].national_agency] || 'en';
   return { programId: programs[0]?.id || null, lang, langName: LANG_NAMES_META[lang] || 'English' };
 }
 
@@ -2729,7 +4077,7 @@ DRAFT:
 QUESTIONS:
 1. [specific question in ${langName}]
 2. [specific question in ${langName}]
-3. [specific question in ${langName}, optional]`;
+3. [specific question in ${langName}, optional]` + NARRATIVE_FORMAT_RULES;
 
   const result = await callAI(system, `Generate a draft for the "${cfg.label}" field of this Erasmus+ proposal.`, 'generate');
 
@@ -2853,7 +4201,7 @@ REVISED_TEXT:
 [complete improved text in ${langName}]
 
 FOLLOW_UP:
-NONE`;
+NONE` + NARRATIVE_FORMAT_RULES;
 
   const result = await callAI(system, `User says: ${userMessage}`, 'generate');
 
@@ -3048,7 +4396,7 @@ Write a 80-150 word summary of this Work Package. Structure:
 3. Expected outcome (1 sentence): what the WP produces for the overall project.
 
 Be concrete and specific. Avoid generic filler. Write in the voice of the project coordinator.
-Write ONLY the summary text, no headers or meta-commentary.`;
+Write ONLY the summary text, no headers or meta-commentary.` + NARRATIVE_FORMAT_RULES;
 
   const draft = await callAI(system, `Draft the summary for WP "${wp.title}".`, 'generate');
   const clean = draft.trim();
@@ -3084,7 +4432,7 @@ Write a 80-150 word description of this activity. Structure:
 3. Expected output (1 sentence): what this activity produces.
 
 Be concrete and specific. Avoid generic filler. Write in the voice of the project coordinator.
-Write ONLY the description text, no headers or meta-commentary.`;
+Write ONLY the description text, no headers or meta-commentary.` + NARRATIVE_FORMAT_RULES;
 
   const draft = await callAI(system, `Draft the description for activity "${activity.label || activity.type}".`, 'generate');
   const clean = draft.trim();
@@ -3168,7 +4516,7 @@ REVISED_TEXT:
 [complete improved text in ${langName}]
 
 FOLLOW_UP:
-NONE`;
+NONE` + NARRATIVE_FORMAT_RULES;
 
   const result = await callAI(system, `User says: ${userMessage}`, 'generate');
   let revisedText = null;
@@ -3215,6 +4563,36 @@ async function improveActivityDescription(projectId, activityId, userMessage) {
     await db.execute('UPDATE activities SET description = ? WHERE id = ?', [result.revised_text, activityId]);
   }
   return result;
+}
+
+// Consortium-level "connection point" note: how the partners came together /
+// what shared trajectory links them. Empty draft → generate; existing text → improve.
+// Persistence is the caller's job (saved as a writer_interviews answer); this is pure compute.
+async function improveConsortiumConnection(projectId, userId, currentText) {
+  const ctx = await getProjectContext(projectId, userId);
+  const projectText = ctx ? buildProjectContext(ctx) : '';
+  const { langName } = await getProjectMeta(projectId);
+  const hasText = !!(currentText && currentText.trim());
+
+  const system = `You are helping an Erasmus+ project coordinator write an internal note that answers: "What is the connection point between the partner organisations — how did they come together to form THIS project, and what shared trajectory, common ground or previous cooperation links them?"
+
+This is NOT a formal proposal answer; it is an internal definition that later feeds the writing of the Partnership sections (e.g. "How did you form your partnership?").
+
+══ PROJECT & CONSORTIUM CONTEXT ══
+${projectText}
+
+══ LANGUAGE ══
+IMPORTANT: Write EVERYTHING in ${langName}.
+
+══ YOUR TASK ══
+${hasText
+  ? 'Read the coordinator\'s current draft (below) and rewrite it into a stronger, more concrete version (120-200 words). Keep their facts and intent; make the shared origin and common trajectory specific and credible. Do not invent facts that contradict the context.\n\n══ CURRENT DRAFT ══\n' + currentText
+  : 'Write a 120-200 word first draft. Using the consortium context, propose a plausible, concrete connection point: how the organisations know each other, what shared interest / network / previous cooperation brought them together, and what common trajectory links them. Keep it grounded in the partners and project shown above; mark anything the coordinator must confirm with [confirmar].'}
+
+Write ONLY the note text, no headers or meta-commentary.` + NARRATIVE_FORMAT_RULES;
+
+  const text = await callAI(system, hasText ? 'Improve the draft.' : 'Write the first draft.', 'generate');
+  return { text: (text || '').trim() };
 }
 
 /* ── Writer Phase 4: project-level Deliverables & Milestones ──
@@ -3316,8 +4694,127 @@ async function getDeliverableSummary(projectId, userId) {
   };
 }
 
+// ════════════════════════════════════════════════════════════
+//  Copy-paste eForm report (National-Agency calls)
+//  NA calls have no Word upload — the applicant pastes every answer field by
+//  field into the EU web eForm. These helpers expose the answers in form order,
+//  on-screen (with copy buttons) and as a downloadable Word document.
+// ════════════════════════════════════════════════════════════
+
+// Build the ordered Q/A structure for an instance, grouped by section, with
+// per-question character limits + current character counts. Works for any
+// template; flags NA (copy_paste) forms so the UI can show the report.
+async function getEformAnswers(instanceId, userId) {
+  const [rows] = await db.execute(
+    'SELECT fi.project_id, fi.title, ft.template_json FROM form_instances fi LEFT JOIN form_templates ft ON ft.id = fi.template_id WHERE fi.id = ? AND fi.user_id = ?',
+    [instanceId, userId]
+  );
+  const inst = rows[0];
+  if (!inst) return null;
+
+  const tmpl = inst.template_json
+    ? (typeof inst.template_json === 'string' ? JSON.parse(inst.template_json) : inst.template_json)
+    : null;
+  const values = await getFieldValues(instanceId);
+
+  let wps = [];
+  if (inst.project_id) {
+    const [w] = await db.execute(
+      'SELECT id, code, title, order_index, category FROM work_packages WHERE project_id = ? ORDER BY order_index',
+      [inst.project_id]
+    );
+    wps = w;
+  }
+
+  const isNa = !!(tmpl && tmpl.meta && (tmpl.meta.output_mode === 'copy_paste' || tmpl.meta.no_upload));
+  const sections = [];
+
+  const pushField = (qs, sub, f, fieldId) => {
+    if (f.type !== 'textarea' && f.type !== 'table') return;
+    const text = (values[fieldId] && values[fieldId].text) || '';
+    qs.push({
+      field_id: fieldId,
+      number: sub.number || '',
+      title: sub.title || '',
+      guidance: (sub.guidance || []).join(' '),
+      char_limit: f.char_limit || null,
+      text,
+      chars: text.length,
+    });
+  };
+
+  if (tmpl) {
+    const contentWps = selectContentWps(wps);
+    for (const sec of (tmpl.sections || [])) {
+      const subs = sec.subsections || (sec.subsections_groups || []).flatMap(g => g.subsections || []);
+      if (sec.per_wp) {
+        for (const wp of contentWps) {
+          const code = wp.code || ('WP' + ((wp.order_index || 0) + 1));
+          const qs = [];
+          for (const sub of subs) {
+            const subClone = { ...sub, number: (sub.number || '').replace(/^WPx/, code) };
+            for (const f of (sub.fields || [])) pushField(qs, subClone, f, `${f.id}__wp__${wp.id}`);
+          }
+          sections.push({ number: sec.number, title: `${sec.title} — ${code} ${wp.title || ''}`.trim(), questions: qs });
+        }
+        continue;
+      }
+      const qs = [];
+      for (const sub of subs) for (const f of (sub.fields || [])) pushField(qs, sub, f, f.id);
+      sections.push({ number: sec.number, title: sec.title, questions: qs });
+    }
+    if (tmpl.project_summary) {
+      const text = (values['summary_text'] && values['summary_text'].text) || '';
+      sections.push({ number: '', title: 'Project Summary', questions: [{ field_id: 'summary_text', number: '', title: 'Project Summary', char_limit: null, text, chars: text.length }] });
+    }
+  }
+
+  // Drop fully-empty sections from the export-facing structure
+  const nonEmpty = sections.filter(s => s.questions.some(q => q.text && q.text.trim()));
+
+  return {
+    isNa,
+    title: (tmpl && tmpl.meta && tmpl.meta.title) || inst.title || 'Application form',
+    projectName: inst.title || '',
+    sections: nonEmpty.length ? sections : sections,  // keep all sections so empty ones are visible on screen
+  };
+}
+
+// Render the same Q/A structure into a Word document ready to keep alongside the
+// EU web eForm while copy-pasting.
+async function buildEformDocx(instanceId, userId) {
+  const data = await getEformAnswers(instanceId, userId);
+  if (!data) return null;
+  const { Document, Packer, Paragraph, TextRun, HeadingLevel } = require('docx');
+
+  const children = [];
+  children.push(new Paragraph({ text: data.title, heading: HeadingLevel.TITLE }));
+  if (data.projectName) children.push(new Paragraph({ children: [new TextRun({ text: data.projectName, italics: true, color: '666666' })] }));
+  children.push(new Paragraph({ children: [new TextRun({ text: 'Copia cada respuesta en el campo correspondiente del eForm web de la Agencia Nacional.', color: '888888', size: 18 })] }));
+  children.push(new Paragraph({ text: '' }));
+
+  for (const sec of data.sections) {
+    children.push(new Paragraph({ text: `${sec.number ? sec.number + '. ' : ''}${sec.title}`, heading: HeadingLevel.HEADING_1 }));
+    for (const q of sec.questions) {
+      const limit = q.char_limit ? `  (${q.chars}/${q.char_limit} car.)` : '';
+      children.push(new Paragraph({ children: [new TextRun({ text: `${q.number ? q.number + ' ' : ''}${q.title}${limit}`, bold: true })], spacing: { before: 160 } }));
+      const body = (q.text && q.text.trim()) ? q.text : '—';
+      for (const para of body.split(/\n{2,}/)) {
+        children.push(new Paragraph({ children: [new TextRun({ text: para.replace(/\n/g, ' ') })] }));
+      }
+    }
+  }
+
+  const doc = new Document({ sections: [{ children }] });
+  const buffer = await Packer.toBuffer(doc);
+  const safe = (data.projectName || 'eform').replace(/[^a-z0-9._-]/gi, '_').slice(0, 60);
+  return { buffer, filename: `${safe}_eForm.docx` };
+}
+
 module.exports = {
   getProjectContext,
+  getEformAnswers,
+  buildEformDocx,
   getOrCreateInstance,
   getInstance,
   updateInstanceStatus,
@@ -3344,6 +4841,19 @@ module.exports = {
   refineApplyPhase,
   retrieveRelevantChunks,
   getWritingRules,
+  getEvalGuidanceForSection,
+  // TASK-008 — Facts ledger + Prompt inspector
+  assertProjectOwned: _assertProjectOwned,
+  buildCanonicalFacts,
+  listProjectFacts,
+  setFactStatus,
+  upsertProjectFact,
+  extractCandidateFacts,
+  listGenerations,
+  getGeneration,
+  listPromptBlocks,
+  getPromptBlockFull,
+  upsertPromptBlock,
   // Prep Studio v2
   getPrepConsorcio,
   linkPartnerOrg,
@@ -3370,6 +4880,7 @@ module.exports = {
   generateActivityDescriptionDraft,
   improveWpSummary,
   improveActivityDescription,
+  improveConsortiumConnection,
   // Writer Phase 2 — per-WP structured tables
   listMilestones,
   createMilestone,
@@ -3389,9 +4900,20 @@ module.exports = {
   setTaskParticipant,
   removeTaskParticipant,
   getWpBudget,
+  refreshProjectBudget,
   listProjectPartners,
   aiFillWp,
   resyncWpTasks,
+  seedWpTasksFromProject,
+  syncWpTaskLeadersFromProjectTasks,
+  listStaffTable,
+  updateStaffTableRow,
+  listProjectRisks,
+  createProjectRisk,
+  updateProjectRisk,
+  deleteProjectRisk,
+  aiGenerateProjectRisks,
+  aiEvaluateProjectRisks,
   // Phase 4 — project-level Deliverables & Milestones (v2 generator lives in dms-generator.js)
   listProjectDeliverables,
   listProjectMilestones,

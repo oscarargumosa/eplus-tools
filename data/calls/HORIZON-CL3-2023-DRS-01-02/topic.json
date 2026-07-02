@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL3-2023-DRS-01-02",
+  "ccm2Id": "45944018",
+  "callIdentifier": "HORIZON-CL3-2023-DRS-01",
+  "callTitle": "",
+  "title": "Design of crisis prevention and preparedness actions in case of digital breakdown (internet, electricity etc.)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Protection of networks\",\"Protection of citizens (goods and people)\",\"Digital power\",\"Systems Engineering and Integrated Systems Design\",\"Social sciences and humanities\",\"First responders\",\"Crisis management operations\",\"Systems-Services Functions\",\"Disaster resilience and crisis management\",\"Digital architecture\",\"Digital Agenda\",\"Critical Infrastructure Protection (CIP)\",\"International Cooperation\",\"Critical infrastructure, emergency systems, securi\",\"Manage preventative operations\",\"Security\",\"Design-Manufacturing\",\"Technologies-Components\",\"communication systems\",\"preparedness actions\",\"security authorities\",\"local and regional authorities\",\"prevention\",\"critical infrastructures\",\"private sector\",\"citizen organisations\",\"resilience\",\"disaster\",\"security\",\"Civil Protection\",\"Crisis Management\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "DigitalAgenda",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-DRS-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.358Z"
+}

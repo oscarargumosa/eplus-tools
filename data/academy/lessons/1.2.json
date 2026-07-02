@@ -1,0 +1,58 @@
+{
+  "id": "1.2",
+  "code": "Part B · 1.2",
+  "module": "EACEA",
+  "moduleTitle": "Relevance",
+  "bloque": "F — Técnicas de redacción",
+  "title": "1.2 Análisis de necesidades y objetivos específicos",
+  "subtitle": "Cómo construir un análisis de necesidades basado en evidencia y convertirlo en objetivos SMART con indicadores: unidad, valor base y valor objetivo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 1.2 — Análisis de necesidades y objetivos específicos",
+    "Criterio": "Relevance (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Sabes que algo \"hace falta\", pero lo escribes como una opinión (\"creemos que faltan competencias…\") sin datos detrás, y luego pones objetivos genéricos imposibles de medir. El evaluador no ve ni el problema real ni cómo sabrás si lo resolviste.",
+    "comprender": "Que un buen análisis de necesidades es una cadena de evidencia: problema documentado → necesidad concreta → objetivo específico que la responde → indicador que la mide. Si rompes esa cadena en cualquier eslabón, pierdes puntos.",
+    "objetivo": "Escribir un análisis de necesidades con evidencia y convertirlo en objetivos SMART, dando para cada objetivo un indicador con su unidad, su valor base (de dónde partes) y su valor objetivo (a dónde quieres llegar).",
+    "confusion": "Confundir necesidad con actividad (\"necesitamos hacer una formación\" no es una necesidad, es una solución) y poner objetivos sin indicador medible. También: indicadores sin valor base, que no permiten comprobar el avance.",
+    "importa": "Porque es el corazón de Relevance (30 pts): el evaluador juzga si el proyecto responde a un problema real y si sabrás demostrar que lo resolviste. Sin evidencia ni indicadores, la propuesta parece un deseo, no un plan."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>La sección <b>1.2</b> te pide dos cosas encadenadas: un <b>análisis de necesidades</b> sólido y basado en evidencia, y unos <b>objetivos específicos</b> alineados con él.</p><div class=\"callout callout-key\"><ul class=\"bullets\"><li><b>Análisis de necesidades:</b> ¿qué <em>problema</em>, <em>reto</em> o <em>gap</em> (vacío) aborda tu proyecto? Y lo más importante: ¿con qué <b>evidencia</b> lo demuestras?</li><li><b>Objetivos específicos:</b> deben ser <b>claros, medibles, realistas y alcanzables</b> — es decir, <b>SMART</b>.</li><li><b>Indicadores:</b> por cada objetivo, un indicador con su <b>unidad</b> de medida, su <b>valor base</b> (el punto de partida) y su <b>valor objetivo</b> (la meta).</li></ul></div><p>La lógica es: <em>existe este problema (con datos) → por eso este objetivo → y lo mediré así (indicador, de X a Y)</em>. El formulario quiere ver esa cadena completa, no un trozo.</p>"
+    },
+    {
+      "id": "como-responder",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador busca <b>evidencia, no opinión</b>, y <b>medibilidad, no buenas intenciones</b>. Estas dos cosas son las que separan un 1.2 que puntúa de uno que se queda corto.</p><p><b>Para el análisis de necesidades:</b></p><ol class=\"obj\"><li><b>Separa necesidad de solución.</b> La necesidad es el problema (\"los profesionales no integran herramientas digitales\"); la solución es tu proyecto (\"haremos una formación\"). Aquí va el problema.</li><li><b>Aporta evidencia.</b> Datos, estudios, estadísticas, una encuesta propia a tu colectivo, informes sectoriales. Aunque sea breve, la evidencia convierte la afirmación en hecho.</li><li><b>Aterriza en tu colectivo y territorio.</b> El problema general (\"brecha digital en Europa\") debe concretarse en quién lo sufre en tu caso.</li></ol><p><b>Para los objetivos SMART:</b></p><div class=\"callout callout-good\"><b>SMART = </b> e<b>S</b>pecífico · <b>M</b>edible · <b>A</b>lcanzable · <b>R</b>ealista · acotado en <b>T</b>iempo. Cada objetivo debe poder responder \"¿cómo sabré que lo logré?\".</div><p>Y el detalle que muchos olvidan: el <b>indicador con sus tres componentes</b>.</p><table class=\"cmp\"><thead><tr><th>Componente</th><th>Pregunta que responde</th><th>Ejemplo</th></tr></thead><tbody><tr><td><b>Unidad</b></td><td>¿Qué cuento?</td><td>nº de profesionales formados</td></tr><tr><td><b>Valor base</b></td><td>¿De dónde parto?</td><td>0 (no existe la formación hoy)</td></tr><tr><td><b>Valor objetivo</b></td><td>¿A dónde quiero llegar?</td><td>60 al final del proyecto</td></tr></tbody></table><div class=\"callout callout-warn\">Un indicador sin <b>valor base</b> no sirve: \"formar a 60\" no dice si partías de 0 o de 55. El valor base es lo que permite demostrar el <em>avance</em> que tu proyecto produce.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Seguimos con <b>DIGI-YOUTH</b>. Así se ve la cadena evidencia → necesidad → objetivo → indicador:</p><div class=\"callout callout-good\"><p><b>Necesidad (con evidencia).</b> Una encuesta del consorcio a 120 profesionales del trabajo con jóvenes en los 4 países socios reveló que el 68 % no usa herramientas digitales en su práctica por falta de formación, y que no existe en sus organizaciones un marco de referencia de competencias digitales. El gap es doble: <em>falta de competencias</em> y <em>falta de un marco común</em>.</p></div><p>De ahí salen objetivos específicos medibles, cada uno con su indicador (unidad · base → objetivo):</p><table class=\"cmp\"><thead><tr><th>Objetivo específico</th><th>Indicador (unidad)</th><th>Base → Objetivo</th></tr></thead><tbody><tr><td>OE1. Definir un marco común de competencias digitales para el sector</td><td>nº de marcos publicados y validados</td><td>0 → 1 (validado por 4 socios)</td></tr><tr><td>OE2. Capacitar a profesionales del sector</td><td>nº de profesionales formados que aprueban</td><td>0 → 60</td></tr><tr><td>OE3. Aumentar el uso de herramientas digitales en la práctica</td><td>% de formados que las integran</td><td>32 % (línea base encuesta) → 70 %</td></tr></tbody></table><p>Cada fila se lee sola: <em>parto de aquí, llego allí, y lo mido así</em>. Eso es lo que el evaluador quiere ver.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Sabemos que hace falta, es evidente.»</b> → Para el evaluador no es evidente. Sin datos, estudio o encuesta, es opinión y no puntúa.</li><li><span class=\"err-x\">✗</span> <b>«Necesitamos hacer una formación.»</b> → Eso es una solución, no una necesidad. La necesidad es el problema que la formación resuelve.</li><li><span class=\"err-x\">✗</span> <b>«Nuestro objetivo es mejorar las competencias digitales del sector.»</b> → No es medible ni acotado. ¿Cuántas personas? ¿En qué plazo? ¿Cómo se mide? Hazlo SMART.</li><li><span class=\"err-x\">✗</span> <b>«Indicador: formar a 60 personas.»</b> → Falta el valor base. Si ya formabas a 55, el avance es mínimo. Indica de dónde partes.</li><li><span class=\"err-x\">✗</span> <b>«Los objetivos no tienen por qué conectar con las necesidades.»</b> → Sí: cada objetivo debe responder a una necesidad detectada. Si no, sobra o falta algo en la cadena.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B oficial (EACEA)</b></td><td>El enunciado de 1.2: análisis de necesidades basado en evidencia y objetivos específicos con indicadores (unidad, base, objetivo).</td></tr><tr><td><b>kb-0095</b> Guide for Experts (rúbrica del evaluador)</td><td>Qué pesa en Relevance (30 pts): solidez del análisis, base de evidencia y medibilidad de los objetivos.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomendaciones para objetivos SMART e indicadores con valor base y valor objetivo claros.</td></tr></tbody></table>"
+    }
+  ]
+}

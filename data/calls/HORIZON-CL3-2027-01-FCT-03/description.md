@@ -1,0 +1,27 @@
+## Expected Outcome
+
+Project results are expected to contribute to some or all of the following expected outcomes:
+- Improved, modern, uniform and validated tools, skills or methodologies as well as innovative training curricula are available for security practitioners (Police Authorities in Europe, Non-Governmental Organisations, Civil Society Organisations) to prevent, detect and deter criminal or terrorist offences under consideration, taking into account all applicable legislation and fundamental rights;
+- Enhanced understanding of the cultural and societal aspects of crime or terrorism/radicalisation offences under consideration as well as on the key challenges related to combating them;
+- Evidence-based support is available to policymakers on shaping and tuning of regulation related to crime or terrorism/radicalisation offences under consideration;
+- Enhanced perception by citizens that Europe is an area of freedom, justice, security and respect of privacy and human rights, thanks to, e.g., innovative awareness-raising campaigns explaining to citizens the key and evolving mechanisms of crime or terrorism/radicalisation offences under consideration, and how to protect against them.
+
+## Scope
+
+Under the Open Topic, proposals are welcome to address both existing and upcoming challenges in fighting crimes that are deeply rooted in cultural and/or societal factors that are not covered by the other topics of Horizon Europe Calls Fighting Crime and Terrorism 2021- 2022, Fighting Crime and Terrorism 2023-2024 and Fighting Crime and Terrorism 2025 and Fighting Crime and Terrorism 2026-2027.
+
+Adapted to the nature, scope and type of proposed activities, proposals should convincingly explain how they will plan and/or carry out demonstration, testing or validation of developed tools and solutions. Proposals should also delineate the plans to develop possible future uptake and upscaling at national and EU level for possible next steps after the research project completion. If applicable, research proposals should consider building on or complementing previous research, including but not limited to, research stemming from Horizon Framework Programmes, such as those funded under HORIZON-CL2 calls.
+
+The proposals funded under this topic that concern issues which are within the mandate of Europol[1] are expected to engage with the Europol Innovation Lab during the lifetime of the project, including validating the outcomes, with the aim of facilitating future uptake of innovations for the law enforcement community. Similarly, if the proposals concern drug-related issues, they are expected to engage with the EU Drugs Agency during the lifetime of the project, including validating the outcomes. For aspects of training of Police Authorities, cooperation of successful proposals with CEPOL is expected, provided that the Agency opts out from applying for funding. If the funded proposal concerns radicalisation, the consortium is encouraged to liaise with the EU Knowledge Hub on prevention of radicalisation with the aim of facilitating the streamlining of their priorities and the dissemination of their results.
+
+In this topic the integration of the gender and intersectional dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
+
+Proposals should plan their activities opting for the Financial Support to Third Parties in order to provide financial support to practitioners (Police Authorities and/or Non-Governmental Organisations/Civil Society Organisations) for expanding the proposed work in terms of additional user groups, complementary assessments, technology- or methodology-testing activities. From 5% up to 20% of the EU funding requested by the proposal may be allocated to the purpose of financial support to third parties. Proposals must clearly describe the objectives and the expected results to be obtained, including the elements listed in the application template. Proposals are also expected to describe the methods and processes relevant to comply with the general eligibility conditions for financial support to third parties set out in General Annex B and to demonstrate effectiveness (impact).
+
+To ensure the active involvement of and timely feedback from relevant security practitioners, i.e., Police Authorities and Non-Governmental Organisations / Civil Society Organisations, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term outcomes, performed by the practitioners involved in the project. Activities proposed within this topic should address, in a balanced way, both technological and societal dimensions of the issue under consideration. This topic requires the effective contribution of SSH disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related innovation activities.
+
+## null
+
+Activities are expected to achieve TRL 5 by the end of the project – see General Annex B.
+
+[1] https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016R0794 (Annex I).

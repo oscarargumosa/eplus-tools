@@ -1,0 +1,112 @@
+{
+  "id": 1101190,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ÍSCAR",
+    "nivel3": "AYUNTAMIENTO DE ÍSCAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899629",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25700,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones a Asociaciones Culturales de Íscar, año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases para la concesión de subvenciones a Asociaciones Culturales de Íscar, año 2026",
+  "urlBasesReguladoras": "https://iscar.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 días naturales a contar desde el siguiente a la publicación en el BOP",
+  "textFin": "20 días naturales a contar desde el siguiente a la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437661,
+      "descripcion": "Anexo III Declaración responsable otras subvenciones",
+      "nombreFic": "Anexo III Declaración responsable otras subvenciones solicitadas.docx",
+      "long": 77622,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437663,
+      "descripcion": "Anexo V Justificación",
+      "nombreFic": "Anexo V Justificación.docx",
+      "long": 80951,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437662,
+      "descripcion": "Anexo IV Declaración Responsable",
+      "nombreFic": "Anexo IV Declaración Responsable.docx",
+      "long": 78983,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437657,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "Anexo I Solicitud.docx",
+      "long": 80293,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437658,
+      "descripcion": "Anexo II Proyecto de Actividades",
+      "nombreFic": "Anexo II Proyectos de actividades.docx",
+      "long": 95927,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437669,
+      "descripcion": "Decreto de convocatoria",
+      "nombreFic": "20260415_Resolución_DECRETO 2026-0380 [Resolución PR_2026_39 - Convocatoria].pdf",
+      "long": 713337,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437649,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Subvenciones Asoc Culturales 2026.pdf",
+      "long": 642966,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

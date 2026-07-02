@@ -1,0 +1,64 @@
+{
+  "id": 1104764,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD MIGUEL HERNÁNDEZ DE ELCHE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903203",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 79129.71,
+  "mrr": false,
+  "descripcion": "BECAS PARA PRÁCTICAS DE ESTUDIANTES DEL MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO (Código línea de subvención: 08-324-4-2026-0057-S)",
+  "descripcionLeng": "BEQUES PER A PRÀCTIQUES D'ESTUDIANTS DEL MINISTERI PER A LA TRANSICIÓ ECOLÒGICA I EL REPTE DEMOGRÀFIC (codi de línia de subvenció 08-324-4-2026-0057-S)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Base reguladora de la convocatoria BECAS PARA PRÁCTICAS DE ESTUDIANTES DEL MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO (Código línea de subvención: 08-324-4-2026-0057-S)",
+  "urlBasesReguladoras": "https://boumh.umh.es/files/2026/05/RR_01005_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en el DOGV",
+  "textFin": "10 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447560,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RR_01005_2026 BOUMH.pdf",
+      "long": 700143,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

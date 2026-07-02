@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-HLTH-2024-STAYHLTH-01-02-two-stage",
+  "ccm2Id": "45700776",
+  "callIdentifier": "HORIZON-HLTH-2024-STAYHLTH-01-two-stage",
+  "callTitle": "",
+  "title": "Towards a holistic support to children and adolescents’ health and care provisions in an increasingly digital society",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Child health\",\"Homecare\",\"Healthy eating\",\"Societal Engagement\",\"Health promotion\",\"Diagnostic technology\",\"Health care\",\"Prevention programme\",\"Chronic diseases\",\"Self-management\",\"Health information\",\"Wellbeing\",\"Integrated care\",\"Healthy lifestyle\",\"Patient care\",\"Artificial Intelligence\",\"Child psychiatry\",\"Anorexia\",\"Personalised care solutions\",\"Social sciences and humanities\",\"Personalised interventions\",\"Obesity\",\"Paediatrics\",\"Personalised treatment\",\"Digital Agenda\",\"Self-care\",\"Personalised prevention\",\"Health behaviour\",\"Co-morbidity\",\"Personalised services\",\"Empowerment\",\"Health education\",\"Health literacy\",\"Personalised nutrition\",\"Social Innovation\",\"health promotion\",\"citizens empowerment\",\"digital health\",\"health through the life course\",\"mental health\",\"person-centred health\",\"digital health literacy\",\"active and healthy living\",\"children and adolescents health\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SocietalEngagement",
+    "AI",
+    "SSH",
+    "DigitalAgenda",
+    "SocInnov"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-STAYHLTH-01-02-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.500Z"
+}

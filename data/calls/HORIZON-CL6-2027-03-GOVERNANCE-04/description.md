@@ -1,0 +1,29 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- innovative AI-based solutions provide advisors, farmers and foresters with comprehensive, tailored and impartial advice to farmers and foresters to support them in their decisions as well as on the selection of innovative solutions, boosting the competitiveness, sustainability and resilience of the EU agriculture and forestry sectors;
+- capacity and skills of advisors, farmers, and foresters related to the effective use of AI solutions are improved;
+- use of existing and new data relevant for the decision-making for the optimized management of operations and the selection of innovative solutions on farms and in forests is increased.
+
+## Scope
+
+Digital technologies hold the potential to revolutionise farming and forestry, offering new opportunities to meet the rising demand for food, as well as biomass, while taking care of the environment, climate and people. With the growing availability of datasets relevant for both the agricultural and forestry sector, artificial intelligence technologies offer significant opportunities to harness data, enhance access to tailored information, and develop effective tools to support advisors, farmers and foresters in their operations. Successful proposals should contribute to build a competitive and resilient agriculture and forestry sectors.
+
+Proposals should:
+- develop, test, validate and pilot cost-effective AI-based solutions that make use of the various existing reliable and trustable knowledge reservoirs and provide contextual, effective and impartial advice for advisors, farmers and foresters;
+- capitalise on standardised and comprehensive data collected from different sources (e.g. public and private databases, in-situ data generated during the project implementation) for the development of AI-based solutions capable of providing advice based on the interpretation of multimodal inputs (e.g. text, images, audio, video etc…) provided by the end user. By doing so, successful proposals should ensure the availability of curated datasets by connecting to and harvesting data from existing public and private data sources, making use of privacy-preserving techniques when needed. The curated datasets, to be released as outputs, should be interoperable to maximise reuse, in order to support information fusion and third-party usage of the data;
+- involve advisors, farmers and foresters from across Europe in the co-development, testing, validation and piloting of the AI-based solutions; and improve end users’ awareness, understanding, competences and skills on the use, benefits, and risks of the developed AI-based solutions in view of improving the competitiveness and sustainability of EU agriculture and forestry;
+- build on results and ensure synergies with other Horizon 2020/ Europe as well as other relevant EU-funded initiatives and projects (e.g. EU Missions, project that may follow from the topic HORIZON-CL6-2024-GOVERNANCE-02-01: European Partnership of Agriculture of Data, and the Common European Agriculture Data Space) and demonstrate adequate planning and use of resources for this purpose;
+- ensure wide dissemination and uptake including by demonstrating tangible benefits and added value compared to existing solutions for farmers, forester and their advisors.​
+
+Proposals must implement the multi-actor approach, with a consortium based on a balanced mix of relevant actors with complementary knowledge to achieve the objectives of the projects, seeking for the involvement of SMEs, start-ups, and including for instance relevant rural actors (in particular end-users of the AI-enabled solution), universities, research and technology organisations. The Joint Research Centre (JRC) may participate as member of the consortium selected for funding. The participation could involve sharing of information and contribution to dissemination of results. Proposals should develop diverse practice-oriented dissemination materials (e.g., audiovisual materials, brochures) presenting the AI-enabled solutions and other R&I results developed within the project and feed them into communication channels most consulted by the potential end-users.
+
+Proposals are encouraged to explore the application of data retrieval techniques (e.g., RAG) for the retrieval of up-to-date and context-specific information from external knowledge sources (e.g., market information, evolving regulation/legislative requirements).
+
+This topic should involve the effective contribution of social sciences and humanities (SSH) disciplines. By integrating relevant SSH expertise (e.g., legal expertise, gender expertise, education and behavioural sciences), the successful proposal aims to produce meaningful results that enhance the societal impact of related research activities, engaging advisors (e.g., including Advisory Networks), farmers, foresters, and other rural actors.
+
+The projects under this topic are relevant to the EU policies related to the policy ambition 'Sustaining our quality of life: Food security, water and nature', the Vision for Agriculture and Food, as well as the objectives set out in the common agricultural policy, and the zero pollution action plan.
+
+## null
+
+Activities are expected to achieve TRL 8 by the end of the project – see General Annex B.

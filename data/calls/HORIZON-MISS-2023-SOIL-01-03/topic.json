@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-MISS-2023-SOIL-01-03",
+  "ccm2Id": "45742261",
+  "callIdentifier": "HORIZON-MISS-2023-SOIL-01",
+  "callTitle": "",
+  "title": "Onsite digital technologies to monitor nutrients and chemical or biological stressors in soil and plants with relevance for food safety and nutrition",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Food and drink\",\"Soil protection\",\"Pollution (water, soil), waste disposal and treatm\",\"Technology development\",\"Agricultural engineering, food safety\",\"Soil improvement\",\"Digital services\",\"Secure food chain and wealth products\",\"Soil management\",\"Soil functions\",\"Soil biodiversity\",\"Food and drink processing\",\"Agriculture related to crop production, soil biolo\",\"Knowledge and Technology transfer\",\"Digital Agenda\",\"Soil cultivation equipment\",\"Food biotechnology\",\"Digital factories\",\"Long-term soil monitoring\",\"Soil conservation\",\"Technology implementation\",\"Artificial Intelligence\",\"Digital Social Innovation\",\"Technological innovation\",\"Food processing\",\"Plant nutrition\",\"Food technology\",\"Technology commercialisation\",\"food quality and safety\",\"food safety risks\",\"primary production\",\"light-based technologies\",\"chemical and biological stressors in plants\",\"soil-food nexus\",\"soil management practices\",\"food safety and nutrition\",\"in-field detection\",\"food monitoring\",\"nutritional and safe food\",\"Onsite digital technologies\",\"AI\",\"chemical and biological contaminants\",\"chemical and biological stressors in food\",\"soil nutrients\",\"targeted fertilization\",\"Soil Mission\",\"soil monitoring\",\"food nutrients\",\"remote sensing\",\"digital technologies\",\"agriculture\",\"soil health\",\"chemical and biological stressors in soil\",\"climate action\",\"food processing industry\",\"soil remediation\",\"Artificial Intelligence\",\"nutrients and micronutrients detection\",\"plants nutrients\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-SOIL-01-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.400Z"
+}

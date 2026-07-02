@@ -1,0 +1,98 @@
+{
+  "id": 1104688,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "INSTITUTO MADRILEÑO DE INVESTIGACIÓN Y DESARROLLO RURAL, AGRARIO Y ALIMENTARIO (IMIDRA)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903127",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000000,
+  "mrr": false,
+  "descripcion": "AYUDAS A EMPRESAS SECT AGRI,GANAD,FOREST E INDUS DESARR PROY INV 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "ORDEN 3130/2022, DE 23 DE SEPTIEMBRE, DE LA CONSEJERÍA DE MEDIO AMBIENTE, POR LA QUE SE APRUEBAN LAS BASES REGULADORAS PARA LA CONCESIÓN DE AYUDAS A EMPRESAS",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2022/10/03/BOCM-20221003-15.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "textFin": "DOS MESES A CONTAR DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "ayudaEstado": "SA.119118",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.119118",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 25QUARTER AYUDAS INCLUIDAS EN PROYECTOS DE INVESTIGACIÓN Y DESARROLLO COFINANCIADOS."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447274,
+      "descripcion": "Anexos  Anexo II",
+      "nombreFic": "Anexos  Anexo II.pdf",
+      "long": 114873,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447275,
+      "descripcion": "Anexos  Anexo III",
+      "nombreFic": "Anexos  Anexo III.pdf",
+      "long": 94887,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447272,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  Texto Convocatoria BDNS. orden anonimizada.pdf",
+      "long": 2628969,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447273,
+      "descripcion": "Anexos  Anexos. anexo i",
+      "nombreFic": "Anexos  Anexos. anexo i.pdf",
+      "long": 403576,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "899810",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE OVIEDO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Convocatoria del Premio Mario de Miguel  al mejor Trabajo Fin de Máster en Educación realizado en la Universidad de Oviedo, en régimen de concurrencia competitiva  (curso 2024-2025)",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-19",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://intranet.uniovi.es/convocatorias/estudiantes",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899810",
+  "documents": [
+    {
+      "label": "FORMULARIOS DE SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2019/04/17/2019-03279.pdf",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOPA",
+  "text_fin": "Quince días hábiles desde el día siguiente a la publicación del presente extracto en BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.297Z"
+}

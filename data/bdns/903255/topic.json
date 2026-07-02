@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "903255",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / SECRETARIA AUTONÓMICA DE INDUSTRIA, COMERCIO Y CONSUMO",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Ayudas al Impulso a la internacionalización de las empresas de la Comunitat Valenciana afectadas por la DANA 24, ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": "2026-05-11",
+  "deadline": "2026-06-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 5999000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    }
+  ],
+  "apply_url": "https://cindi.gva.es/va/web/internacionalizacion/ayudas-y-subvenciones",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903255",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Extracte convocatòria_valencià",
+      "url": null
+    },
+    {
+      "label": "Extracto convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/es/resultat-dogv?signatura=2026/11104",
+  "text_inicio": "El plazo de presentación de solicitudes será desde el día 11 de mayo de 2026.",
+  "text_fin": "El plazo de presentación de solicitudes finaliza el 15 de junio de 2026.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.115Z"
+}

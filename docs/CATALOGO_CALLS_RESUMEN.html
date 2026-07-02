@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Erasmus+ 2026 — Convocatorias y presupuestos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1b1464;
+    --blue-soft:#2d2399;
+    --yellow:#fbff12;
+    --lav:#ece9ff;
+    --lav-2:#f6f5ff;
+    --ink:#1c1830;
+    --muted:#6b6790;
+    --line:#e3e0f5;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Poppins',system-ui,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(160deg,#f6f5ff 0%, #eeebff 100%);
+    line-height:1.5;
+    padding:32px 16px 80px;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+
+  /* ---- Hero ---- */
+  .hero{
+    background:var(--blue);
+    color:#fff;
+    border-radius:24px;
+    padding:44px 48px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 24px 60px -28px rgba(27,20,100,.6);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-60px;top:-60px;
+    width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle,var(--yellow) 0%, transparent 70%);
+    opacity:.35;
+  }
+  .hero .tag{
+    display:inline-block;background:var(--yellow);color:var(--blue);
+    font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    padding:6px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{font-size:34px;font-weight:800;line-height:1.15;max-width:760px}
+  .hero p{margin-top:14px;color:#c9c5f5;font-weight:300;max-width:680px;font-size:15px}
+  .hero .src{margin-top:18px;font-size:12.5px;color:#a9a4e8}
+
+  /* ---- Callout ---- */
+  .callout{
+    display:flex;gap:14px;align-items:flex-start;
+    background:#fffef0;border:1px solid #ece88a;border-left:6px solid var(--yellow);
+    border-radius:14px;padding:16px 20px;margin:26px 0 8px;
+  }
+  .callout .ic{font-size:20px;line-height:1.3}
+  .callout p{font-size:14px;color:#5b561f}
+  .callout b{color:var(--blue)}
+
+  /* ---- Summary cards ---- */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0 8px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:18px 18px 16px;box-shadow:0 10px 30px -22px rgba(27,20,100,.5);
+  }
+  .card .n{font-size:30px;font-weight:800;color:var(--blue);line-height:1}
+  .card .l{font-size:12.5px;color:var(--muted);margin-top:6px;font-weight:500}
+  .card .max{margin-top:10px;font-size:12px;color:var(--blue-soft);font-weight:600}
+
+  /* ---- Sections ---- */
+  section{margin-top:40px}
+  h2{
+    display:flex;align-items:center;gap:12px;
+    font-size:21px;font-weight:700;color:var(--blue);margin-bottom:6px;
+  }
+  h2 .badge{
+    background:var(--blue);color:#fff;font-size:13px;font-weight:700;
+    width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none;
+  }
+  .sub{color:var(--muted);font-size:13.5px;margin:2px 0 16px 42px}
+
+  /* ---- Tables ---- */
+  .tbl{
+    width:100%;border-collapse:separate;border-spacing:0;
+    background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:0 14px 36px -28px rgba(27,20,100,.55);font-size:13.5px;
+  }
+  .tbl thead th{
+    background:var(--blue);color:#fff;text-align:left;font-weight:600;
+    padding:13px 16px;font-size:12.5px;letter-spacing:.02em;
+  }
+  .tbl tbody td{padding:12px 16px;border-top:1px solid var(--line);vertical-align:top}
+  .tbl tbody tr:nth-child(even){background:var(--lav-2)}
+  .tbl tbody tr:hover{background:var(--lav)}
+  code{
+    font-family:'Poppins',monospace;background:var(--lav);color:var(--blue);
+    font-size:12px;font-weight:600;padding:2px 7px;border-radius:6px;white-space:nowrap;
+  }
+  .max-eur{font-weight:700;color:var(--blue)}
+  .pill{
+    display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;
+  }
+  .pill.eacea{background:#e7f0ff;color:#1746a2}
+  .pill.na{background:#fff0e6;color:#b25a16}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;margin-left:2px}
+  .note code{font-size:11px}
+
+  /* ---- Source box ---- */
+  .source{
+    background:#fff;border:1px dashed var(--line);border-radius:16px;padding:22px 24px;margin-top:18px;
+  }
+  .source h3{color:var(--blue);font-size:15px;margin-bottom:10px}
+  .source ul{margin-left:18px;font-size:13px;color:#4a4670}
+  .source li{margin:5px 0}
+  .source b{color:var(--blue)}
+
+  /* ---- Deadlines ---- */
+  .dl{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 28px;font-size:13.5px;margin-top:4px}
+  .dl div{display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:7px 2px}
+  .dl .d{font-weight:600;color:var(--blue)}
+
+  footer{margin-top:48px;text-align:center;color:var(--muted);font-size:12px}
+
+  /* ---- Print / PDF ---- */
+  @media print{
+    body{background:#fff;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    .tbl,.card,.source{box-shadow:none}
+    section{break-inside:avoid}
+    .tbl{break-inside:auto}
+    tr{break-inside:avoid}
+    .cards{break-inside:avoid}
+    @page{margin:14mm}
+  }
+  @media (max-width:880px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .dl{grid-template-columns:1fr}
+    .hero{padding:32px 26px}
+    body{padding:18px 10px 60px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <span class="tag">EU Funding School · Foco Erasmus+</span>
+    <h1>Catálogo Erasmus+ 2026<br>Convocatorias y presupuestos máximos</h1>
+    <p>Resumen por línea de programa: tipos de convocatoria, código oficial (Topic ID), gestor y máximo de subvención UE. Pensado como referencia de trabajo y para reunión.</p>
+    <div class="src">Fuente: Erasmus+ Programme Guide 2026 (12/11/2025) + EU Funding &amp; Tenders Portal · Generado 2026-06-03</div>
+  </div>
+
+  <!-- CALLOUT -->
+  <div class="callout">
+    <span class="ic">💡</span>
+    <p><b>Cómo leer el "máximo":</b> es el <b>máximo de subvención UE</b> (lo que se pide). El coste total del proyecto siempre es mayor por el cofinanciamiento (80%/90%) o porque en los lump sum se espera que el coste real supere la cantidad solicitada.</p>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card"><div class="n">~12</div><div class="l">CB Higher Education (regiones + cross-regional)</div><div class="max">máx. 1M € · 2M Moldova</div></div>
+    <div class="card"><div class="n">6</div><div class="l">CB VET (regiones)</div><div class="max">máx. 500.000 €</div></div>
+    <div class="card"><div class="n">9</div><div class="l">KA2 — KA220 (5) + KA210 (4)</div><div class="max">máx. 400k / 60k €</div></div>
+    <div class="card"><div class="n">4</div><div class="l">Sport (SSCP·SCP·SNCESE·LSSNCESE)</div><div class="max">60k → 1,5M €</div></div>
+  </div>
+
+  <!-- 1. CAPACITY BUILDING -->
+  <section>
+    <h2><span class="badge">1</span> Capacity Building</h2>
+    <div class="sub">4 sublíneas · gestionadas por EACEA (centralizado)</div>
+    <table class="tbl">
+      <thead><tr><th>Sublínea</th><th>Código (Topic ID)</th><th>% UE</th><th>Importes</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td><b>CB Higher Education (CBHE)</b></td><td><code>ERASMUS-EDU-2026-CBHE-*</code><br><span class="note">11 regiones + Cross-Regional</span></td><td><b>90%</b></td><td>S1: 200k–400k · S2: 400k–800k · S3: 600k–1M</td><td class="max-eur">1.000.000 €<br><span class="note">EU-Moldova: 2M</span></td><td>24–48 m</td></tr>
+        <tr><td><b>CB VET</b></td><td><code>ERASMUS-EDU-2026-CB-VET-*</code><br><span class="note">6 regiones</span></td><td>80%</td><td>sin mínimo, hasta tope</td><td class="max-eur">500.000 €</td><td>36 m</td></tr>
+        <tr><td><b>CB Youth</b></td><td><code>ERASMUS-YOUTH-2026-CB-*</code><br><span class="note">4 regiones</span></td><td>80%</td><td>hasta tope</td><td class="max-eur">300.000 €<br><span class="note">450k Sub-Sahara</span></td><td>12–36 m</td></tr>
+        <tr><td><b>CB Sport</b></td><td><code>ERASMUS-SPORT-2026-CB</code></td><td>80%</td><td>rango 100k–200k</td><td class="max-eur">200.000 €</td><td>12–36 m</td></tr>
+      </tbody>
+    </table>
+    <p class="note"><b>CBHE por región</b> (todas 3 strands, 90%): <code>-WB</code> <code>-NE</code> <code>-SMC</code> <code>-ASIA</code> <code>-CA</code> <code>-ME</code> <code>-PAC</code> <code>-SSA</code> <code>-LA</code> <code>-CARIB</code> + Cross-Regional. El especial EU-Moldova (2M) va dentro de <code>-NE</code>.</p>
+    <p class="note"><b>CB VET (6):</b> -WB, -NE, -SMC, -SSA, -LA, -CA — todos 500k. &nbsp;·&nbsp; <b>CB Youth (4):</b> -WB, -NE, -SMC (300k) y -SSA (450k).</p>
+  </section>
+
+  <!-- 2. KA3 -->
+  <section>
+    <h2><span class="badge">2</span> KA3 — Apoyo a la reforma de políticas</h2>
+    <div class="sub">Única línea presentable tipo proyecto en 2026</div>
+    <table class="tbl">
+      <thead><tr><th>Sublínea</th><th>Código (Topic ID)</th><th>Gestor</th><th>% UE</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td><b>European Youth Together (EYT)</b></td><td><code>ERASMUS-YOUTH-2026-YOUTH-TOG</code></td><td><span class="pill eacea">EACEA</span></td><td>80%</td><td class="max-eur">500.000 €</td><td>24 m</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Mín. 5 socios de 5 países. El resto de KA3 son acciones de policy, no convocatorias de consorcio estándar.</p>
+  </section>
+
+  <!-- 3. SPORT -->
+  <section>
+    <h2><span class="badge">3</span> Sport</h2>
+    <div class="sub">5 convocatorias distintas · todas EACEA</div>
+    <table class="tbl">
+      <thead><tr><th>Convocatoria</th><th>Código (Topic ID)</th><th>Tipo</th><th>Importes</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td><b>Small-scale (SSCP)</b></td><td><code>ERASMUS-SPORT-2026-SSCP</code></td><td>lump sum</td><td>30k / 60k</td><td class="max-eur">60.000 €</td><td>6–24 m</td></tr>
+        <tr><td><b>Cooperation (SCP)</b></td><td><code>ERASMUS-SPORT-2026-SCP</code></td><td>lump sum</td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+        <tr><td><b>Sport Events (SNCESE)</b></td><td><code>ERASMUS-SPORT-2026-SNCESE</code></td><td>lump sum</td><td>200k / 300k / 450k</td><td class="max-eur">450.000 €</td><td>12–18 m</td></tr>
+        <tr><td><b>Large-Scale Events (LSSNCESE)</b></td><td><code>ERASMUS-SPORT-2026-LSSNCESE</code></td><td>lump sum</td><td>1M / 1,5M</td><td class="max-eur">1.500.000 €</td><td>12–18 m</td></tr>
+        <tr><td><b>Capacity Building Sport</b></td><td><code>ERASMUS-SPORT-2026-CB</code></td><td>budget-based 80%</td><td>100k–200k</td><td class="max-eur">200.000 €</td><td>12–36 m</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 4. KA2 -->
+  <section>
+    <h2><span class="badge">4</span> KA2 — Asociaciones</h2>
+    <div class="sub">Cooperation (KA220) + Small-scale (KA210) · gestión Agencia Nacional</div>
+
+    <h3 style="color:var(--blue);font-size:15px;margin:6px 0 10px 42px">4a · Cooperation Partnerships — KA220 (5 sectores)</h3>
+    <table class="tbl">
+      <thead><tr><th>Sector</th><th>Código (Topic ID)</th><th>Gestor</th><th>Importes</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td>School Education</td><td><code>KA220-SCH-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+        <tr><td>VET</td><td><code>KA220-VET-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+        <tr><td>Higher Education</td><td><code>KA220-HED-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+        <tr><td>Adult Education</td><td><code>KA220-ADU-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+        <tr><td>Youth</td><td><code>KA220-YOU-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>120k / 250k / 400k</td><td class="max-eur">400.000 €</td><td>12–36 m</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Equivalente centralizado EACEA (mismos importes): <b>European NGOs</b> — <code>ERASMUS-EDU-2026-PCOOP-ENGO</code> (Educación) y <code>ERASMUS-YOUTH-2026-PCOOP-ENGO</code> (Juventud).</p>
+
+    <h3 style="color:var(--blue);font-size:15px;margin:18px 0 10px 42px">4b · Small-scale Partnerships — KA210 (4 sectores)</h3>
+    <table class="tbl">
+      <thead><tr><th>Sector</th><th>Código (Topic ID)</th><th>Gestor</th><th>Importes</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td>School Education</td><td><code>KA210-SCH-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>30k / 60k</td><td class="max-eur">60.000 €</td><td>6–24 m</td></tr>
+        <tr><td>VET</td><td><code>KA210-VET-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>30k / 60k</td><td class="max-eur">60.000 €</td><td>6–24 m</td></tr>
+        <tr><td>Adult Education</td><td><code>KA210-ADU-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>30k / 60k</td><td class="max-eur">60.000 €</td><td>6–24 m</td></tr>
+        <tr><td>Youth</td><td><code>KA210-YOU-2026</code></td><td><span class="pill na">Ag. Nacional</span></td><td>30k / 60k</td><td class="max-eur">60.000 €</td><td>6–24 m</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- OTHER LINES -->
+  <section>
+    <h2><span class="badge">+</span> Otras líneas grandes del catálogo</h2>
+    <div class="sub">Fuera del foco inmediato, pero presentes en los datos · todas EACEA</div>
+    <table class="tbl">
+      <thead><tr><th>Línea</th><th>Código (Topic ID)</th><th>% UE</th><th>Máximo UE</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td>EPSD (nueva 2026)</td><td><code>KA240-SCH-2026</code></td><td>lump sum</td><td class="max-eur">400.000 €</td><td>36 m</td></tr>
+        <tr><td>Alliances — Lot 1</td><td><code>ERASMUS-EDU-2026-PI-ALL-INNO-EDU-ENTERP</code></td><td>80%</td><td class="max-eur">1.500.000 €</td><td>2–3 años</td></tr>
+        <tr><td>Alliances — Lot 2 (Blueprint)</td><td><code>ERASMUS-EDU-2026-PI-ALL-INNO-BLUEPRINT</code></td><td>80%</td><td class="max-eur">4.000.000 €</td><td>4 años</td></tr>
+        <tr><td>Alliances — Lot 3 (STEM)</td><td><code>ERASMUS-EDU-2026-PI-ALL-INNO-STEM</code></td><td>80%</td><td class="max-eur">1.500.000 €</td><td>2 años</td></tr>
+        <tr><td>CoVE</td><td><code>ERASMUS-EDU-2026-PEX-COVE</code></td><td>80%</td><td class="max-eur">4.000.000 €</td><td>48 m</td></tr>
+        <tr><td>Teacher Academies</td><td><code>ERASMUS-EDU-2026-PEX-TEACH-ACA</code></td><td>80%</td><td class="max-eur">1.500.000 €</td><td>36 m</td></tr>
+        <tr><td>European Universities</td><td><code>ERASMUS-EDU-2026-EUR-UNIV</code></td><td>80%</td><td class="max-eur">~6.400.000 €</td><td>24 m</td></tr>
+        <tr><td>Erasmus Mundus Joint Masters</td><td><code>ERASMUS-EDU-2026-PEX-EMJM-MOB</code></td><td>mixto</td><td class="max-eur">~5.000.000 €</td><td>hasta 78 m</td></tr>
+        <tr><td>Erasmus Mundus Design</td><td><code>ERASMUS-EDU-2026-EMJM-DESIGN</code></td><td>lump sum</td><td class="max-eur">55.000 €</td><td>15 m</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SOURCE -->
+  <section>
+    <h2><span class="badge">✓</span> Fuente y fiabilidad</h2>
+    <div class="source">
+      <h3>De dónde sale cada dato</h3>
+      <ul>
+        <li><b>Fuente:</b> Erasmus+ Programme Guide 2026 (12/11/2025) + EU Funding &amp; Tenders Portal (F&amp;TP).</li>
+        <li><b>Códigos confirmados</b> por la Comisión/EACEA: CB-VET (6), EYT, todos los Sport, EUR-UNIV, EMJM, PCOOP-ENGO, Alliances Lot 1, CBHE Cross-Regional.</li>
+        <li><b>Códigos derivados por continuidad</b> (patrón 2024→2025→2026, <b>verificar en el F&amp;TP antes de uso oficial</b>): CB Youth por región, CBHE por región, Teacher Academies, CoVE, Blueprint, STEM.</li>
+        <li><b>KA210 / KA220 / KA240</b> son descentralizados: no tienen Topic ID en el F&amp;TP, se presentan en la Agencia Nacional (España: SEPIE para EDU/VET, INJUVE para Youth, CSD para Sport). Código final del proyecto: <code>YYYY-KASECTOR-XXXXXX</code>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DEADLINES -->
+  <section>
+    <h2><span class="badge">📅</span> Deadlines 2026 (referencia)</h2>
+    <div class="source">
+      <div class="dl">
+        <div><span>CBHE</span><span class="d">10 feb 2026</span></div>
+        <div><span>CB Youth &amp; EYT</span><span class="d">26 feb 2026</span></div>
+        <div><span>Sport (SCP/SSCP/SNCESE/CB)</span><span class="d">5 mar 2026</span></div>
+        <div><span>KA210 / KA220 (Ag. Nacional)</span><span class="d">~5 mar 2026</span></div>
+        <div><span>Alliances for Innovation</span><span class="d">10 mar 2026</span></div>
+        <div><span>CB VET + Teacher Academies</span><span class="d">26 mar 2026</span></div>
+        <div><span>EPSD (KA240-SCH)</span><span class="d">9 abr 2026</span></div>
+        <div><span>CoVE</span><span class="d">3 sep 2026</span></div>
+      </div>
+      <p class="note">Verificar siempre la fecha exacta en el call document del F&amp;TP antes de presentar.</p>
+    </div>
+  </section>
+
+  <footer>EU Funding School · Catálogo Erasmus+ 2026 · Documento de trabajo interno</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903580",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SALAMANCA / DIPUTACIÓN DE SALAMANCA",
+  "nuts_codes": [
+    "ES415"
+  ],
+  "nuts_primary": "ES415",
+  "title": "CONVOCATORIA DE SUBVENCION PARA EL DESARROLLO DEL PROGRAMA PROVINCIAL DE PLANEAMIENTO URBANISTICO 2026, DESTINADO A MUNICIPIOS DE LA PROVINCIA DE SALAMANCA CON POBLACION INFERIOR A 20.000 HABITANTES",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 320000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "69.1",
+      "descripcion": "Actividades jurídicas"
+    }
+  ],
+  "apply_url": "https://sede.diputaciondesalamanca.gob.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903580",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BASES DE LA CONVOCATORIA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.lasalina.es/presidencia/informacion/normativa/ordenanzasyreglamentos/presidencia/index.html",
+  "text_inicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOLETIN OFICIAL DE LA PROVINCIA",
+  "text_fin": "30 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN EN EL BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.202Z"
+}

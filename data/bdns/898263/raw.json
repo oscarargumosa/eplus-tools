@@ -1,0 +1,189 @@
+{
+  "id": 1099824,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "INSTITUTO LEONES DE CULTURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898263",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 27/03/2026 del C.R. del ILC, por el que se convocan subvenciones para Restauración de Arquitectura Tradicional Leonesa 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES. CONCURRENCIA COMPETITIVA 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP DE LEÓN",
+  "textFin": "20 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433743,
+      "descripcion": "GUIA DE COMPRENSIÓN FÁCIL",
+      "nombreFic": "GUIA_de_Comprensión_fácil-Arquitectura_Tradicional_2026.pdf",
+      "long": 100439,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433741,
+      "descripcion": "ANEXO VII BIS- DECLARACIÓN MEDIDAS DIFUSIÓN PARTICULARES",
+      "nombreFic": "ANEXO_VII_BIS-Declaración_medidas_difusión_(Particulares)_Arquitectura_Tradicional_2026.pdf",
+      "long": 107716,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433731,
+      "descripcion": "ANEXO I-ACREDITAR PROPIEDAD DEL BIEN- EELL",
+      "nombreFic": "ANEXO_I-_Acreditación_propiedad_(EELL)_Arquitectura_Tradicional_2026.pdf",
+      "long": 88949,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433732,
+      "descripcion": "ANEXO II- DECLARACIÓN OBRA NO REALIZADA",
+      "nombreFic": "ANEXO_II-_Declaracion_obra_no_realizada-Arquitectura_Tradicional_2026.pdf",
+      "long": 81380,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433733,
+      "descripcion": "ANEXO III- INVERSIÓN TOTAL PREVISTA",
+      "nombreFic": "ANEXO_III-_Inversion_total_prevista-Arquitectura_Tradicional_2026.pdf",
+      "long": 98575,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433740,
+      "descripcion": "ANEXO VII- CERTIFICACIÓN MEDIDAS DIFUSIÓN (EELL)",
+      "nombreFic": "ANEXO_VII-Certificado_medidas_difusión_(EELL)-Arquitectura_Tradicional_2026.pdf",
+      "long": 107078,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433742,
+      "descripcion": "ANEXO VIII- CARTEL DE OBRA",
+      "nombreFic": "ANEXO_VIII-_Cartel_de_Obra-_Arquitectura_Tradicional_2026.pdf",
+      "long": 103798,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433737,
+      "descripcion": "ANEXO V BIS- JUSTIFICACIÓN PARTICULARES",
+      "nombreFic": "ANEXO_V_BIS-_Justificación_Particulares-Arquitectura_Tradicional_2026.pdf",
+      "long": 144262,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433730,
+      "descripcion": "FORMULARIO SOLICITUD ARQUITECTURA TRADICIONAL 2026",
+      "nombreFic": "FORMULARIO_WEB-SOLICITUD-Arquitectura_Tradicional_2026.pdf",
+      "long": 115350,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433739,
+      "descripcion": "ANEXO VI BIS- SOLICITUD ANTICIPO PARTICULARES",
+      "nombreFic": "ANEXO_VI_BIS-_Solicitud_Anticipo-Particulares-Arquitectura_Tradicional_2026.pdf",
+      "long": 89887,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433729,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado_punto_FOD_3_CR_27-03-2026_Bases_Arquitectura_Tradicional_26_-_SEFYCU_6720519.pdf",
+      "long": 699372,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433738,
+      "descripcion": "ANEXO VI- SOLICITUD ANTICIPO EELL SIN RECAUDAC. DELEGADA",
+      "nombreFic": "ANEXO_VI-_Solicitud_Anticipo-EELL_sin_Recaudación_Delegada-Arquitectura_Tradicional_2026.pdf",
+      "long": 119233,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433735,
+      "descripcion": "ANEXO IV- SOLICITUD ABONO SUBVENCIÓN",
+      "nombreFic": "ANEXO_IV-_Solicitud_Abono-Arquitectura_Tradicional_2026.pdf",
+      "long": 86969,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433736,
+      "descripcion": "ANEXO V- JUSTIFICACIÓN EELL",
+      "nombreFic": "ANEXO_V-_Justificación_EELL-Arquitectura_Tradicional_2026.pdf",
+      "long": 94810,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208599,
+      "titulo": "EXTRACTO DEL ACUERDO DEL CONSEJO RECTOR DEL INSTITUTO LEONÉS DE CULTURA DE 27 DE MARZO DE 2026, POR EL QUE SE CONVOCAN SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA CON DESTINO A RESTAURACIÓN DE ARQUITECTURA TRADICIONAL LEONESA AÑO 2026",
+      "tituloLeng": null,
+      "texto": "<p>La convocatoria se podrá consultar en la página web del Instituto Leonés de Cultura. (https://www.institutoleonesdecultura.es/convocatorias/)</p><p>Primero.- Beneficiarios</p><p>Podrán obtener la condición de beneficiarios de la presente convocatoria todos los ayuntamientos y juntas vecinales que sean titulares o cesionarios por un plazo superior a 20 años, de bienes inmuebles característicos de la arquitectura tradicional de la provincia incluidos en esta convocatoria, ubicados todos ellos en municipios de menos de 20.000 habitantes, que reúnan los requisitos establecidos en la Base 3.ª de las BGS y no se encuentren incursos en ninguna de las exclusiones contempladas en el artículo 13 de la LGS.</p><p>También podrán ser beneficiarios de estas ayudas las personas físicas, las comunidades de propietarios, bienes y personas jurídicas sin ánimo de lucro, que ostenten la cualidad de propietarios, ya sea de forma individual o compartida, poseedoras o titulares de derechos reales, con autorización del propietario/os, en su caso, que reúnan los requisitos establecidos en la Base 3.ª de las BGS y no se encuentren incursos en ninguna de las exclusiones contempladas en el artículo 13 de la LGS.</p><p>Segundo.- Objeto</p><p>Concesión de subvenciones, en régimen de concurrencia competitiva, destinadas a la financiación de obras de restauración de arquitectura tradicional leonesa cuya propiedad corresponda a entidades locales y particulares según la base cuarta de esta convocatoria. </p><p>Exclusivamente en esta convocatoria serán objeto de subvención: </p><p>?\tPalomares</p><p>?\tPallozas</p><p>?\tHórreos</p><p>?\tMolinos</p><p>?\tConstrucciones tradicionales pastoriles con cubierta vegetal</p><p>?\tCortines</p><p>El plazo de realización de las obras se iniciará cuando se conceda la subvención y finalizará el 31 de diciembre de 2026.</p><p>Tercero.- Bases reguladoras</p><p>?\tBases Reguladoras aprobadas por Acuerdo del Pleno de la Diputación de León de fecha 27 de febrero de 2008, publicadas en el BOP de León n.º 45/2008, de 5 de marzo.</p><p>?\tOrdenanza General de Subvenciones, aprobada por el Pleno de la Excma. Diputación Provincial de León el 27 de julio de 2022 y publicada en el BOP de León n.º 206 de 27 de octubre de 2022.</p><p>Cuarto.- Cuantía</p><p>La subvención no superará el 80% de la inversión total realizada, y en todo caso, podrá alcanzar un importe máximo de 15.000 â¿¬ por intervención. El beneficiario deberá justificar la totalidad del proyecto presentado para la percepción de la subvención que se conceda.</p><p>Quinto.- Plazo de presentación de solicitudes</p><p>En el plazo de VEINTE (20) días hábiles a partir del siguiente al de la publicación del presente extracto en el BOP de León, por conducto de la BDNS. </p><p>Solicitudes: Para aquellos sujetos obligados a relacionarse electrónicamente con la Diputación de León y el Instituto Leonés de Cultura, es decir, empresas, asociaciones, administraciones públicas y resto de sujetos obligados, determinados en el artículo 14.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las solicitudes se presentarán obligatoriamente a través de la Sede Electrónica del Instituto Leonés de Cultura (https://sede.institutoleonesdecultura.es/), mediante el trámite relativo a la presente convocatoria localizado en \"trámites destacados\" o, de no encontrarse allí, accediendo a \"Catálogo de trámites\" debiéndose seleccionar el ámbito y área según corresponda:</p><p>Para ayuntamientos: </p><p>Ámbito: ?Servicios relacionados con ayuntamientos\". </p><p>Para juntas vecinales: </p><p>Ámbito: ?Servicios relacionados con juntas vecinales\". </p><p>Para ciudadanos:</p><p>Ámbito: ?Servicios relacionados con ciudadanos?.</p><p>Para empresas:</p><p>Ámbito: ?Servicios relacionados con Empresas?.</p><p>Para asociaciones:</p><p>Ámbito: ?Servicios relacionados con asociaciones?.</p><p>Deberá rellenarse el formulario del trámite electrónico que se recoge en cada ámbito.</p><p>Los sujetos no obligados a relacionarse electrónicamente con la administración, podrán presentar su solicitud en el Registro del Instituto Leonés de Cultura (Puerta de la Reina, 1 24003 León), o utilizar cualquiera de los medios previstos en el artículo 16.4 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p><p>Los anexos se podrán descargar en el siguiente enlace: https://www.institutoleonesdecultura.es/convocatorias/, a la Web del ILC, adjuntando la documentación obligatoria prevista en la Base Octava de la Convocatoria.</p><p>Sexto.-  Otros datos de interés</p><p>Gastos subvencionables: Se consideran gastos subvencionables aquéllos que de manera indubitada respondan a la naturaleza de la actividad subvencionada, resulten estrictamente necesarios y se realicen en el plazo establecido.</p><p>En ningún caso el coste de los gastos subvencionables podrá ser superior al valor de mercado.</p><p>Se entienden incluidos entre los gastos subvencionables los siguientes:</p><p>?\tObras de restauración en el inmueble.</p><p>?\tMateriales de construcción.</p><p>?\tHonorarios de arquitecto o técnico competente por redacción de proyectos u otros documentos técnicos, así como por la dirección de la obra: el importe subvencionable será como máximo del 10% de la inversión total propuesta.</p><p>Subcontratación: El beneficiario podrá subcontratar con terceros la actividad subvencionada en un porcentaje que podrá alcanzar el 100%, previo cumplimiento de las condiciones que se establecen en el art. 29 de la LGS.</p><p>Criterios de valoración: La subvención se adjudicará teniendo en cuenta los siguientes criterios objetivos y su ponderación:</p><p>?\tESTADO DEL INMUEBLE (de 0 a 30 puntos): Urgencia</p><p>?\tVALORACIÓN TÉCNICA (de 0 a 30 puntos): Calidad</p><p>?\tINTERÉS ETNOGRÁFICO (de 0 a 20 puntos): Singularidad</p><p>?\tRECUPERACIÓN INTEGRAL (de 0 a 10 puntos): Recuperación total</p><p>?\tEXPECTATIVA DE REALIZACIÓN (de 0 a 10 puntos)</p><p>Compatibilidad con otras subvenciones: Sí, con otras ayudas para la misma finalidad otorgadas por otras administraciones públicas o entidades públicas o privadas.</p><p>Forma de justificación: Mediante la presentación de la documentación prevista en la base décima de la convocatoria.</p><p>Plazo máximo de justificación: 31 de enero de 2027.</p><p>Forma de pago: Se efectuará una vez justificada la realización del gasto y acreditados los requisitos señalados en el art. 18 de la Ordenanza General de Subvenciones y en la Base 5ª de las BGS.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dipuleon.es/publica/buscador-anuncios/anuncio/Extracto-de-la-convocatoria-de-subvenciones-con-destino-a-restauracion-de-arquitectura-tradicional-leonesa-2026-BDNS-898263/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE LEÓN",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

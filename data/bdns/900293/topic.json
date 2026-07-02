@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "900293",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT CUGAT SESGARRIGUES / AYUNTAMIENTO DE SANT CUGAT SESGARRIGUES",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA DE SUBVENCIONS PER ASSOCIACIONS I/O ENTITATS PER A L¿EXERCICI 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900293",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anuncio/3907683/aprovacio-de-les-bases-que-regiran-les-subvencions-mitjancant-concurrencia-competitiva-destinades-a-entitats-i-associacions-per-a-l-exercici-2026-ajuntament-de-sant-cugat-sesgarrigues",
+  "text_inicio": "El termini de presentació de sol·licituds serà d¿un mes a comptar des de la publicació de la convoca",
+  "text_fin": "El termini de presentació de sol·licituds serà d¿un mes a comptar des de la publicació de la convoca",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.580Z"
+}

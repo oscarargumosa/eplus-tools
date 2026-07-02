@@ -1,0 +1,58 @@
+{
+  "id": "3.2",
+  "code": "Part B · 3.2",
+  "module": "EACEA",
+  "moduleTitle": "Impact",
+  "bloque": "H — Impacto, difusión y sostenibilidad",
+  "title": "3.2 Comunicación, difusión y visibilidad",
+  "subtitle": "Cómo planificar que los resultados de tu proyecto lleguen a quien tiene que llegar, por el canal correcto, y cómo dar visibilidad a la financiación de la UE.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 3.2",
+    "Criterio": "Impact (20 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "La difusión se rellena con piloto automático: «web, redes sociales y un evento final». Suena a copia-pega y no convence de que los resultados vayan a llegar a nadie útil.",
+    "comprender": "Que difundir no es publicar por publicar, sino llevar cada resultado a un público concreto por el canal que ese público usa, con un número y un formato definidos.",
+    "objetivo": "Saber planificar actividades de comunicación y difusión (a quién, qué formato, cuántos), elegir canales según la audiencia, llegar a destinatarios, stakeholders, policymakers y público, y cumplir las reglas de visibilidad de la financiación de la UE.",
+    "confusion": "Pensar que «más canales y más posts = más impacto». No: importa la pertinencia (el canal que usa tu audiencia) y la traza hasta un resultado concreto, no el volumen.",
+    "importa": "Porque la difusión es parte de Impact (20 pts) y es donde muchos proyectos buenos pierden puntos por genéricos. Y porque la visibilidad de la UE no es estética: incumplirla tiene consecuencias formales."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\"><b>📋 Lo que pide la sección 3.2.</b> Describe las <b>actividades de comunicación y difusión</b> que harás para promover tus resultados y maximizar el impacto: <em>a quién</em> te diriges, en <em>qué formato</em> y <em>cuántos</em>. Explica cómo llegarás a <b>destinatarios, stakeholders, responsables de política (policymakers) y público general</b>, justifica la <b>elección de canales</b>, y describe cómo asegurarás la <b>visibilidad de la financiación de la UE</b> (reglas de visibilidad).</div><p>Hay una confusión útil de aclarar de entrada:</p><div class=\"callout callout-good\"><b>Comunicación</b> = dar a conocer que el proyecto existe (notoriedad, durante todo el proyecto). <b>Difusión</b> = poner los <em>resultados</em> en manos de quien puede usarlos (transferencia, sobre todo al final). El formulario pide las dos, pero la difusión es la que mueve la nota de impacto.</div>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador desconfía del plan de difusión genérico porque lo ha leído mil veces. Para que el tuyo destaque, conviértelo en un plan <b>segmentado y medible</b>: cada público, su mensaje, su canal, su formato y su número.</p><table class=\"cmp\"><thead><tr><th>Genérico (flojo)</th><th>Segmentado (puntúa)</th></tr></thead><tbody><tr><td>«Difundiremos en web, redes y un evento final.»</td><td>«Para docentes: 3 webinars (objetivo 200 asistentes). Para policymakers: 1 policy brief enviado a 15 administraciones. Para el público: campaña en LinkedIn (audiencia del sector).»</td></tr><tr><td>«Llegaremos a muchas personas.»</td><td>«4 eventos multiplicadores, uno por país, ~50 participantes cada uno = ~200 profesionales del sector.»</td></tr></tbody></table><p>Lo que sube la nota:</p><ol class=\"obj\"><li><b>Segmenta por público.</b> No mezcles a todos. Destinatarios (quienes usan el resultado), stakeholders (organizaciones del sector), policymakers (quien decide políticas) y público general necesitan mensajes y canales distintos.</li><li><b>Justifica el canal.</b> Elige el canal <em>que usa esa audiencia</em>, no el que tienes a mano. Un policy brief para administraciones, un webinar para docentes, una red profesional para el sector. Explica el porqué.</li><li><b>Cuantifica.</b> Por cada actividad: a quién, qué formato y cuántos (asistentes, descargas, alcance). Sin números, no hay forma de juzgar la ambición.</li><li><b>Conecta difusión con resultados.</b> La difusión existe para que los resultados se <em>usen</em>. Liga cada acción a un resultado concreto del proyecto.</li><li><b>Cumple las reglas de visibilidad de la UE.</b> Todo material y actividad debe mostrar el emblema de la UE y la mención a la cofinanciación, y los resultados publicables deben subirse a la plataforma de resultados (Erasmus+ Project Results Platform). Dilo explícitamente: demuestra que conoces la obligación.</li></ol><div class=\"callout callout-warn\">La visibilidad de la UE <b>no es opcional ni decorativa</b>. Omitir el emblema o la mención de financiación puede acarrear reducción de la subvención. Inclúyela en el plan como compromiso, no como adorno.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Plan de difusión segmentado para un proyecto de FP, con público, canal, formato y número:</p><table class=\"cmp\"><thead><tr><th>Público</th><th>Canal (y por qué)</th><th>Formato · número</th></tr></thead><tbody><tr><td>Destinatarios (docentes FP)</td><td>Webinars + red de centros (donde están)</td><td>3 webinars · objetivo 200 asistentes</td></tr><tr><td>Stakeholders (sector)</td><td>Red profesional europea (alcance sectorial)</td><td>4 eventos multiplicadores · ~200 personas</td></tr><tr><td>Policymakers</td><td>Policy brief a administraciones educativas</td><td>1 documento · 15 destinatarios institucionales</td></tr><tr><td>Público general</td><td>LinkedIn + web del proyecto</td><td>Campaña continua · alcance del sector</td></tr></tbody></table><p><b>Visibilidad UE:</b> todos los materiales llevan el emblema de la UE y la mención «Cofinanciado por la Unión Europea»; los resultados publicables se suben a la Erasmus+ Project Results Platform.</p><div class=\"callout callout-good\">Por qué funciona: cada público tiene <b>su canal justificado</b>, hay <b>cifras</b> en cada acción, la difusión <b>conecta con resultados</b> y la <b>visibilidad de la UE</b> aparece explícita.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Difundiremos en web, redes sociales y un evento final.»</b> → La fórmula copia-pega por excelencia. Sin público, formato ni números, el evaluador no ve plan real.</li><li><span class=\"err-x\">✗</span> <b>«Llegaremos al público en general.»</b> → Todos = nadie. Segmenta: destinatarios, stakeholders, policymakers y público necesitan enfoques distintos.</li><li><span class=\"err-x\">✗</span> <b>«Cuantos más canales, mejor.»</b> → No. Importa el canal que <em>usa</em> tu audiencia, no la cantidad. Justifica cada elección.</li><li><span class=\"err-x\">✗</span> <b>«La visibilidad de la UE es poner el logo y ya.»</b> → Es una obligación con reglas (emblema, mención de financiación, subir resultados a la plataforma) y consecuencias si se incumple. Trátala como compromiso.</li><li><span class=\"err-x\">✗</span> <b>«Confundo comunicación con difusión.»</b> → Comunicar es dar notoriedad; difundir es transferir resultados a quien los usa. El formulario quiere las dos, claramente distinguidas.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 3.2</b></td><td>El texto literal: comunicación y difusión (a quién, formato, número), canales y reglas de visibilidad de la UE.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Qué valora el evaluador en Impact (20 pts) respecto a difusión y alcance.</td></tr><tr><td><b>kb-0090</b> Tips de redacción</td><td>Cómo segmentar públicos, justificar canales y cuantificar acciones.</td></tr><tr><td><b>kb-0026</b> SALTO — recursos de difusión</td><td>Buenas prácticas de difusión y multiplicación de resultados; ideas de canales y formatos.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "902159",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA Y LEÓN / CONSEJERÍA DE LA PRESIDENCIA",
+  "nuts_codes": [
+    "ES41"
+  ],
+  "nuts_primary": "ES41",
+  "title": "Orden de 22 de abril de 2026, de la Consejería de la Presidencia, por la que se convocan subvenciones para proyectos de educación transformadora para la ciudadanía global en el territorio de Castilla y León, para el año 2026.",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": "2026-05-05",
+  "deadline": "2026-06-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://www.tramitacastillayleon.jcyl.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902159",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2021/01/12/pdf/BOCYL-D-12012021-2.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210342,
+      "titulo": "Extracto de la Orden de 22 de abril de 2026, de la Consejería de la Presidencia, por la que se convocan subvenciones para proyectos de educación transformadora para la ciudadanía global en el territorio de Castilla y León, para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Asimismo la convocatoria puede consultarse en la sede electrónica de la Administración de la Comunidad de Castilla y León (https://www.tramitacastillayleon.jcyl.es) utilizando el identificador BDNS</p><p>Primero. Beneficiarios:</p><p>Estas subvenciones están dirigidas a entidades privadas, legalmente constituidas y sin ánimo de lucro que figuren inscritas en el Registro de Agentes de Cooperación al Desarrollo de Castilla y León, que gocen de plena capacidad jurídica y de obrar; que dispongan de presencia y actividad en Castilla y León durante los dos años anteriores a la presentación de la solicitud, susceptible de garantizar el cumplimiento de sus fines y la implantación en la Comunidad, y con sede permanente, distinta del domicilio particular y abiertos al público, en la Comunidad de Castilla y León.</p><p>Segundo. Finalidad:</p><p>Las subvenciones tienen como finalidad apoyar iniciativas y proyectos de “Educación Transformadora para la Ciudadanía Global” (ETCG), que incidan en procesos para la promoción de una ciudadanía informada, comprometida, participativa y con visión crítica, con actitudes y valores capaces de generar cambios en sus propias vidas y en las de su comunidad, comprendiendo y siendo conscientes de su corresponsabilidad en las causas de las desigualdades, el incumplimiento de los derechos humanos y los problemas del desarrollo, comprometida local y globalmente. Para ello se promoverán los conocimientos, habilidades, valores y actitudes que permitan abordar los problemas globales que nos afectan como sociedad, desde la solidaridad.</p><p>Tercero. Bases reguladoras:</p><p>Mediante Orden TRA/1567/2020, de 29 de diciembre (publicada en el Boletín Oficial de Castilla y León, núm. 7, de 12 de enero), se aprobaron las bases de concesión de subvenciones para proyectos de educación para el desarrollo y la ciudadanía global en el territorio de Castilla y León</p><p>Cuarto. Importe:</p><p>La cuantía de la subvención concedida no podrá superar el 90% del presupuesto total de la iniciativa o proyecto presentado, con un importe máximo de cada subvención de veinte mil euros (20.000 €).</p><p>La cuantía asignada a cada uno de los proyectos de ETCG responderá a la interrelación entre la puntuación obtenida en la valoración y los porcentajes determinados para cada rango de puntos en la convocatoria.</p><p>El crédito correspondiente a esta convocatoria podrá ser ampliado en una cuantía adicional no superior al 100% de los créditos inicialmente convocados, cuya aplicación a la concesión de las subvenciones no requerirá de una nueva convocatoria</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>Treinta días hábiles, contados a partir del día siguiente al de la publicación de este extracto de la orden de convocatoria en el «Boletín Oficial de Castilla y León».</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/05/04/pdf/BOCYL-D-04052026-82-13.pdf",
+      "cve": "BOCYL-D-04052026-82-13",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.554Z"
+}

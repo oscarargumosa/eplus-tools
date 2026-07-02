@@ -1,0 +1,103 @@
+{
+  "id": 1101141,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE CÁCERES",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/caceres",
+  "codigoBDNS": "899580",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22379.03,
+  "mrr": false,
+  "descripcion": "Visita Profesional a la Feria Seoul Food & Hotel (Corea del Sur).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Visita Profesional a la Feria Seoul Food & Hotel (Corea del Sur).",
+  "urlBasesReguladoras": "https://camaracaceres.com/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-25",
+  "textInicio": "Desde las 09 horas del día siguiente a la publicación del extracto de esta convocatoria en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437516,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_CONVOCATORIA_SEOUL.pdf",
+      "long": 512848,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437522,
+      "descripcion": "Anexo III. Modelo solicitud segunda bolsa de viaje",
+      "nombreFic": "ANEXO III Solicitud de admisión de segundo participante_SEOUL.PDF",
+      "long": 1293870,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437519,
+      "descripcion": "Anexo II. Declaraciones Responsables",
+      "nombreFic": "ANEXO II DECLARACIONES RESPONSABLES PYME GLOBAL 2026_SEOUL.PDF",
+      "long": 456655,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437518,
+      "descripcion": "Anexo I. Tipología de gastos elegibles y justificación",
+      "nombreFic": "2026_Anexo I_Tipologia Gastos Elegibles y Justificación empresa beneficiaria_SEOUL.DOC.pdf",
+      "long": 502693,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897499",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALMERÍA / DIPUTACIÓN PROVINCIAL DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "CONVOCATORIA DEL I CONCURSO DE CORTOMETRAJES \"EN FAMILIA\"",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": "2026-04-15",
+  "deadline": "2026-05-09",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897499",
+  "documents": [
+    {
+      "label": "BASES Y FORMULARIO INSCRIPCIÓN",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ov.dipalme.org/verifirma/code/x82m0OVtKmj9smfk/tGxbg==",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.052Z"
+}

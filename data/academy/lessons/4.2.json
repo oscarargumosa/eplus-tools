@@ -1,0 +1,58 @@
+{
+  "id": "4.2",
+  "code": "Part B · 4.2",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.2 Describir cada Work Package",
+  "subtitle": "La anatomía de un WP bien descrito: objetivos a los que se vincula, tareas, participantes y roles, y la diferencia entre el WP de gestión y los de implementación.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.2",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El formulario te abre un bloque por cada WP con muchos campos (objetivos, tareas, participantes, roles…) y no sabes qué nivel de detalle espera ni qué diferencia al WP1 del resto.",
+    "comprender": "Que cada WP es una unidad de trabajo autocontenida: se vincula a unos objetivos específicos, se descompone en tareas numeradas, y reparte responsabilidades entre los socios con un líder claro.",
+    "objetivo": "Saber rellenar la ficha de un WP de implementación (objetivos + tareas + participantes con líder en negrita) y entender por qué el WP1 de gestión es la excepción.",
+    "confusion": "Tratar todos los WP igual. El WP1 (gestión) no se vincula a objetivos específicos propios y casi no tiene resultados tangibles; los demás sí.",
+    "importa": "Porque aquí es donde el evaluador juzga si tu proyecto está realmente diseñado o solo enunciado. Un WP con tareas vagas y sin líder claro es dinero injustificado."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.2.</b> Por <b>cada work package</b>, el formulario te pide: (a) los <b>objetivos específicos</b> del proyecto a los que ese WP contribuye; (b) las <b>tareas</b> que lo componen (cada una con su nombre y su número, p. ej. Tarea 2.1, 2.2…); y (c) los <b>participantes</b>, indicando el rol de cada socio (<b>COO</b>=coordinador, <b>BEN</b>=beneficiario, <b>AE</b>=entidad afiliada, <b>AP</b>=socio asociado) y marcando en <b>negrita el líder</b> del WP.</div><p>Es la sección más densa de la parte 4, porque se <b>repite por cada WP</b>. Aquí dejas de hablar en panorámica (eso fue 4.1) y entras al detalle: qué se hace exactamente, quién lo lidera y para qué objetivo sirve.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La anatomía de un WP bien descrito tiene cuatro piezas que deben encajar:</p><ol class=\"obj\"><li><b>Vínculo con objetivos.</b> Di a qué objetivo(s) específico(s) sirve este WP. Si un WP no se ata a ningún objetivo, sobra; si un objetivo no tiene ningún WP que lo persiga, está huérfano.</li><li><b>Tareas numeradas y concretas.</b> Descompón el WP en tareas (Tarea X.1, X.2…) con verbo de acción: \"diseñar el currículo\", \"pilotar con 3 grupos\", no \"trabajar en formación\". Cada tarea debe poder imaginarse sucediendo.</li><li><b>Participantes con roles claros.</b> Lista qué socios participan y con qué papel (COO/BEN/AE/AP). <b>Marca en negrita al líder</b> del WP: el responsable de que se complete. Reparte el liderazgo entre socios (no todo al coordinador) para demostrar que el consorcio está equilibrado.</li><li><b>Coherencia interna.</b> Las tareas deben producir el entregable del WP, y el reparto de socios debe tener sentido (quien lidera tiene la capacidad para ello).</li></ol><div class=\"callout callout-good\"><b>Truco:</b> que cada socio lidere al menos un WP o una tarea relevante. Un consorcio donde el coordinador hace todo y los demás miran levanta sospechas de \"socios de relleno\".</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Comparemos las dos naturalezas de WP. Primero, <b>WP1 · Gestión del proyecto</b> (la excepción):</p><table class=\"cmp\"><thead><tr><th>Campo</th><th>WP1 · Gestión</th></tr></thead><tbody><tr><td>Objetivos específicos</td><td><em>Ninguno propio.</em> Da soporte transversal a todos los objetivos.</td></tr><tr><td>Tareas</td><td>1.1 Coordinación y reuniones · 1.2 Gestión financiera y administrativa · 1.3 Seguimiento y control de calidad · 1.4 Gestión de riesgos</td></tr><tr><td>Participantes</td><td><b>COO (líder)</b>, BEN1, BEN2, BEN3 (todos contribuyen al seguimiento)</td></tr><tr><td>Presupuesto</td><td>Máximo ~20% del total. Sin resultados \"vendibles\", solo coordinación.</td></tr></tbody></table><p>Ahora un <b>WP de implementación</b>, p. ej. <b>WP3 · Desarrollo del currículo</b>:</p><table class=\"cmp\"><thead><tr><th>Campo</th><th>WP3 · Desarrollo</th></tr></thead><tbody><tr><td>Objetivos específicos</td><td>Objetivo específico 1: \"Crear materiales formativos abiertos sobre competencias digitales\".</td></tr><tr><td>Tareas</td><td>3.1 Definir estructura del currículo · 3.2 Redactar 6 módulos · 3.3 Diseñar evaluaciones · 3.4 Maquetar y traducir</td></tr><tr><td>Participantes</td><td>COO, <b>BEN2 (líder)</b>, BEN1, AE1, AP1 (el socio asociado AP aporta validación de contexto)</td></tr></tbody></table><div class=\"callout callout-key\">Fíjate en la diferencia clave: <b>WP1 no se ata a objetivos específicos y casi no produce resultados tangibles</b>; <b>WP3 sí se vincula a un objetivo y entrega un producto concreto</b>. Esa es la línea que separa gestión de implementación.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Pongo objetivos específicos al WP1 de gestión.»</b> → No: el WP1 es transversal y no persigue objetivos propios; solo coordina. Inventarle objetivos confunde al evaluador.</li><li><span class=\"err-x\">✗</span> <b>«Tareas tipo 'desarrollar el proyecto' o 'trabajar en el WP'.»</b> → Vacías. Cada tarea necesita verbo de acción + objeto concreto + algo imaginable que sucede.</li><li><span class=\"err-x\">✗</span> <b>«El coordinador lidera todos los WP.»</b> → Señal de consorcio desequilibrado. Reparte el liderazgo; cada socio debe aportar valor visible.</li><li><span class=\"err-x\">✗</span> <b>«No marco al líder del WP.»</b> → El formulario pide el líder en negrita. Sin responsable identificado, el WP parece de nadie.</li><li><span class=\"err-x\">✗</span> <b>«Meto a un socio asociado (AP) como líder de WP.»</b> → Los AP no reciben fondos y tienen rol de apoyo; no lideran ni asumen tareas presupuestadas. Líder = COO o BEN.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.2</td><td>Pide por WP: objetivos vinculados, tareas (nombre+número), participantes con rol y líder en negrita.</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Roles oficiales (COO/BEN/AE/AP), estructura de tareas y distinción WP1 gestión vs implementación.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>\"Quality of design and implementation\": valora reparto de tareas claro, roles equilibrados y vínculo WP-objetivos.</td></tr></tbody></table>"
+    }
+  ]
+}

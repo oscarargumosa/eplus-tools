@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "899861",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALICANTE / DIPUTACIÓN PROVINCIAL DE ALACANT/ALICANTE",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Convocatoria de subvenciones dinerarias para servicio de trituración de restos de poda y jardinería destinadas a municipios y entidades locales menores de la provincia de Alicante (anualidad 2026).",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    }
+  ],
+  "apply_url": "http://sede.diputacionalicante.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899861",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/22_74/2026_002799.pdf",
+  "text_inicio": "A partir del día siguiente de la publicación del Extracto de la Convocatoria.",
+  "text_fin": "15 días hábiles desde el día siguiente al de la publicación del Extracto de la Convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.348Z"
+}

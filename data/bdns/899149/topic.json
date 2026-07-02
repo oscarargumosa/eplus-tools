@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "899149",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSITAT POLITÈCNICA DE VALÈNCIA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Convocatoria Ayudas Acción Social Estudiantes UPV Curso 2025-2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": "2026-04-20",
+  "deadline": "2026-05-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 221424.63,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899149",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.upv.es/entidades/SA/becas/397813normalc.html",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208991,
+      "titulo": "Extracto de la Resolución de 1 de abril de 2026 de la Universitat Politècnica de València, por la que se convocan Ayudas de Acción Social “Estudiantes UPV” Curso 2025-2026",
+      "tituloLeng": "Extracte de la Resolució d'1 d'abril de 2026 de la Universitat Politècnica de València, per la qual es convoquen Ajudes d'Acció Social “Estudiants UPV” Curs 2025-2026.",
+      "texto": "<p>Primero. Estudiantado beneficiario: \n</p><p>La convocatoria está dirigida exclusivamente a estudiantado matriculado en estudios oficiales de Grado y Máster impartidos en la UPV que sea nacional de un estado miembro de la Unión Europea o, en caso de extracomunitario, tenga la condición de residente en España, con autorización para trabajar, quedando excluidos de concurrir a estas becas quienes se encuentren en situación de estancia.\n</p><p>\n</p><p>Segundo. Finalidad: \n</p><p>La presente convocatoria pretende atender, mediante una convocatoria general, las demandas del estudiantado de la UPV que acredite una situación personal o familiar de especial necesidad económica durante el curso académico 2025-2026 y no disfrute de otras becas o ayudas al estudio.\n</p><p>\n</p><p>Tercero. Importe: \n</p><p>El importe de estas ayudas será atendido con cargo a los fondos que se destinen en el presupuesto de esta Universidad del ejercicio 2026, hasta un importe máximo de doscientos veintiún mil cuatrocientos veinticuatro euros con sesenta y tres céntimos (221.424,63€).\n</p><p>\n</p><p>Cuarto. Plazo de presentación de solicitudes: \n</p><p>El plazo de solicitudes será desde el día siguiente al de su publicación en el Diario Oficial de la Generalitat Valenciana al 15 de mayo de 2026 (ambos inclusive).\n</p><p>\n</p>",
+      "textoLeng": "<p>Primer. Estudiantat beneficiari:\n</p><p>La convocatòria està dirigida exclusivament a estudiantat matriculat en estudis oficials de Grau i Màster impartits en la UPV que siga nacional d'un estat membre de la Unió Europea o, en cas d'extracomunitari, tinga la condició de resident a Espanya, amb autorització per a treballar, quedant exclosos de concórrer a aquestes beques els qui es troben en situació d'estada.\n</p><p>\n</p><p>Segon. Finalitat:\n</p><p>La present convocatòria pretén atendre, mitjançant una convocatòria general, les demandes de l'estudiantat de la UPV que acredite una situació personal o familiar d'especial necessitat econòmica durant el curs acadèmic 2025-2026 i no gaudi d'altres beques o ajudes a l'estudi.\n</p><p>\n</p><p>Tercer. Import:\n</p><p>L'import d'aquestes ajudes serà atès amb càrrec als fons que es destinen en el pressupost d'aquesta Universitat de l'exercici 2026, fins a un import màxim de dos-cents vint-i-un mil quatre-cents vint-i-quatre euros amb seixanta-tres cèntims (221.424,63€).\n</p><p>\n</p><p>Quart. Termini de presentació de sol·licituds:\n</p><p>El termini de sol·licituds serà des de l'endemà de la seua publicació en el Diari Oficial de la Generalitat Valenciana al 15 de maig de 2026 (tots dos inclusivament).\n</p>",
+      "url": "https://dogv.gva.es/va/resultat-dogv?signatura=2026/11141",
+      "cve": "DOGV-V-2026-11141",
+      "desDiarioOficial": "DOCV. D.O. DE LA COMUNITAT VALENCIANA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.840Z"
+}

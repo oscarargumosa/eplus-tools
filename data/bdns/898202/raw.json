@@ -1,0 +1,83 @@
+{
+  "id": 1099763,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSEJO INSULAR DE MALLORCA",
+    "nivel3": "DEPARTAMENTO DE PROMOCIÓN ECONÓMICA Y DESARROLLO LOCAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898202",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "Convocatória de subvenciones a empresas y entidades con ánimo de lucro para la promoción y difusión del producto de Mallorca 2026",
+  "descripcionLeng": "Convocatòria de subvencions a empreses i entitats amb ànim de lucre per a la promoció i difusió del producte de Mallorca 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES532 - Mallorca"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Consell de Mallorca",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2017/21/972049 www.caib.es/eboibfront/pdf/ca/2018/96/1014444",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des des dia seguent a la publicació de l'extracte de la publicació al BOIB",
+  "textFin": "20 dies hàbils des de l'inici del termini de presentació de sol·licituds",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433514,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA CAT.docx",
+      "long": 86754,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    },
+    {
+      "id": 1433513,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ES_convocatoria _ENTITATS ANIM DE LUCRE 2026  amb annexos.docx",
+      "long": 92593,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

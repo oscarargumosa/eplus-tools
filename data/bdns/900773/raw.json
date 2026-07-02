@@ -1,0 +1,92 @@
+{
+  "id": 1102334,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALENCIA",
+    "nivel3": "FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)"
+  },
+  "sedeElectronica": "https://www.valenciainnovationcapital.com ",
+  "codigoBDNS": "900773",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Subvención, en régimen de concesión directa, a la Asociación Valenciana de Empresas del Sector de la Energía para el desarrollo del programa \"Climate Launchpad Spain 2026\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades profesionales, científicas y técnicas",
+      "codigo": "74"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convenio de colaboración entre la Fundación y la Asociación Valenciana de Empresas del Sector de la Energía para el desarrollo del programa \"Climate Launchpad Spain 2026\" mediante la concesión de una Subvención en régimen de concesión directa.",
+  "urlBasesReguladoras": "https://valenciainnovationcapital.com/wp-content/uploads/2026/04/260409-R69-26-Resolucion-aprobacion-convenio_AVAESEN-2026_firmado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2025-12-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440613,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "260415 Convenio AVAESEN_firmado.pdf",
+      "long": 2841650,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440615,
+      "descripcion": "Resolución aprobación convenio_Climate Launchpad 2026",
+      "nombreFic": "260409~1.PDF",
+      "long": 2956643,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440614,
+      "descripcion": "Autorización JGL_Climate Launchpad 2026",
+      "nombreFic": "260402 Autorización JGL_AVAESEN_Climate Launchpad.pdf",
+      "long": 87422,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209739,
+      "titulo": "Subvención nominativa a la Asociación de Empresas del Sector de la Energía para el desarrollo del programa \"Climate Launchpad Spain 2026\"",
+      "tituloLeng": null,
+      "texto": "<p>Primera. Objeto</p><p>Canalizar la subvención nominativa concedida por la Fundación a favor de la Asociación Valenciana de Empresas del Sector de la Energía (AVAESEN) para la ejecución, durante el ejercicio 2026, del Programa “Climate Launchpad Spain 2026”, iniciativa de impulso al emprendimiento climático y a las tecnologías limpias, mediante convocatoria nacional, selección de proyectos, formación intensiva (Bootcamp), mentoring y celebración de la final nacional con proyección europea.</p><p>Segundo. Bases reguladoras</p><p>Las bases reguladoras de la subvención se contienen en el convenio de colaboración suscrito entre la Fundación y AVAESEN, de conformidad con lo dispuesto en los artículos 22.2.a) y 28.1 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, en el Real Decreto 887/2006, de 21 de julio, por el que se aprueba su Reglamento, y en los artículos 22 y 23 de la Ordenanza General de Subvenciones del Ayuntamiento de València.</p><p>Tercero. Cuantía</p><p>La cuantía de la subvención asciende a veinticinco mil euros (25.000,00 €), con cargo al presupuesto de la Fundación correspondiente al ejercicio 2026.</p><p>Quinto. Plazo</p><p>La vigencia del convenio se extiende desde la fecha de la última firma electrónica hasta el 31 de diciembre de 2026, con efectos retroactivos al 1 de enero de 2026, exclusivamente a los efectos de la imputación de las actividades y gastos subvencionables.</p><p>Sexto. Otros datos</p><p>La subvención tiene carácter nominativo y se concede en régimen de concesión directa, de conformidad con lo previsto en el artículo 22.2.a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones.El abono de la subvención se realizará previa presentación y validación de la correspondiente cuenta justificativa, en los términos establecidos en el convenio de colaboración y en la normativa de aplicación.</p><p>No se prevén pagos anticipados ni pagos a cuenta, efectuándose el abono únicamente tras la correcta justificación de los gastos subvencionables.</p><p>La subvención será compatible con otras ayudas, ingresos o recursos que financien la misma actividad, siempre que no se supere el coste total de la actuación subvencionada, en los términos previstos en el convenio</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04810&lang=es",
+      "cve": "BOPV-2026/04810",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

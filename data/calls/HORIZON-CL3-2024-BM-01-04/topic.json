@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL3-2024-BM-01-04",
+  "ccm2Id": "45764086",
+  "callIdentifier": "HORIZON-CL3-2024-BM-01",
+  "callTitle": "",
+  "title": "Integrated risk-based border control that mitigates public security risk, reduces false positives and strengthens privacy",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"Data protection and privacy\",\"Security\",\"Border and external security\",\"Earth Observation / Services and applications\",\"Border and coastguards\",\"Privacy by design\",\"Artificial Intelligence\",\"Identification equipment\",\"Data Security and Privacy\",\"International Cooperation\",\"Border surveillance\",\"Protection of citizens (goods and people)\",\"Software and Hardware Security Engineering\",\"Schengen area\",\"border checks\",\"crossing control systems\",\"false positives\",\"free movement\",\"customs and security controls\",\"Security Union Strategy\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-BM-01-04.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.478Z"
+}

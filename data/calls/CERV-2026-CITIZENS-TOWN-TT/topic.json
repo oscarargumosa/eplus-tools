@@ -1,0 +1,146 @@
+{
+  "identifier": "CERV-2026-CITIZENS-TOWN-TT",
+  "ccm2Id": "51050034",
+  "callIdentifier": "CERV-2026-CITIZENS-TOWN-TT",
+  "callTitle": "Call for proposals for Town Twinning",
+  "title": "Call Town Twinning 2026",
+  "programme": "CERV",
+  "programmeCode": "43251589",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-05-06",
+  "deadline": "2026-09-23",
+  "deadlineModel": "single-stage",
+  "actionType": "CERV Lump Sum Grants",
+  "actionCode": "CERV-LS",
+  "mgaCode": "CERV-AG-LS",
+  "budget": {
+    "total_eur": 6000000,
+    "by_year": {
+      "2026": 6000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "CERV-2026-CITIZENS-TOWN-TT",
+    "CERV-2026-CITIZENS-TOWN-TT",
+    "Cultural diversity and heritage",
+    "Democracy",
+    "Democratic engagement and civic participation",
+    "EU citizenship rights",
+    "Europe for citizens",
+    "European identity",
+    "Local authorities",
+    "Local governance",
+    "Migration",
+    "Minorities",
+    "Municipalities",
+    "Rule of law",
+    "Solidarity",
+    "Town twinning"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "For help related to this call, please contact  EACEA-CERV@ec.europa.eu or the CERV contact point of your country (the contact details available: CERV National Contact Points).\n\nFunding & Tenders Portal FAQ – Submission of proposals)\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43954?topic=CERV-2026-CITIZENS-TOWN-TT",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CERV-2026-CITIZENS-TOWN-TT",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/wp-call/2026/call-fiche_cerv-2026-citizens-town-tt_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (CERV)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/temp-form/af/af_cerv_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Calculator (CERV LS TownTT)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/temp-form/af/calculator_cerv-towntt_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "CERV MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/agr-contr/mga_cerv_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Lump Sum MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "CERV Work Programmes",
+      "url": "https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes/citizens-equality-rights-and-values-programme/citizens-equality-rights-and-values-programme-overview_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "CERV Regulation 2021/692",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.156.01.0001.01.ENG&toc=OJ%3AL%3A2021%3A156%3ATOC",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:07.380Z"
+}

@@ -1,0 +1,87 @@
+{
+  "source": "bdns",
+  "source_id": "903343",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÓRDOBA / AYUNTAMIENTO DE CÓRDOBA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA DE SUBVENCIONES A PROYECTOS DE EDUCACIÓN PARA EL DESARROLLO 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 201562.5,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903343",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BASES CONVOCATORIA EDUCACIÓN AL DESARROLLO 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    },
+    {
+      "label": "ANEXO V",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.cordoba.es/el-ayuntamiento/ordenanzas-bandos-y-otros/ordenanzas-y-reglamentos-municipales-no-fiscales-/subvenciones-y-patrocinios",
+  "text_inicio": "A partir del día siguiente al de su publicación en BOP",
+  "text_fin": "20 días hábiles, desde el día siguiente de su publicación en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.130Z"
+}

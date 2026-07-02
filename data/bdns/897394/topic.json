@@ -1,0 +1,75 @@
+{
+  "source": "bdns",
+  "source_id": "897394",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES / DIRECCIÓN GENERAL DE EVALUACIÓN Y COOPERACIÓN TERRITORIAL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 23 de marzo de 2026, de la Secretaría de Estado de Educación, por la que se convocan 120 plazas de Estancias\nProfesionales en diversos paises europeos, para el curso 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 180000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897394",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2005-7751",
+  "text_inicio": "Día siguiente hábil a la publicación del extracto en el BOE",
+  "text_fin": "20 días naturales contados a partir del primer día hábil tras la publicación del extracto en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208125,
+      "titulo": "Resolución de 23 de marzo de 2026 de la Secretaría de Estado de Educación, por la que se convocan 120 plazas de Estancias Profesionales en diversos paises europeos, para el curso 2026/2027",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>El personal docente interesado en participar en esta convocatoria deberá cumplir en el momento de la presentación de la solicitud, los siguientes requisitos:</p><p>a) Ser funcionario/a de carrera en servicio activo de los cuerpos docentes de las enseñanzas reguladas por la Ley Orgánica 2/2006, de 3 de mayo, de Educación o en excedencia por cuidado de familiares, por violencia de género o por violencia terrorista, y haber sido nombrado funcionario de carrera con anterioridad al 1 de octubre de 2024.</p><p>b) Estar impartiendo docencia directa en un centro situado en un territorio español en el momento de presentar la solicitud de participación en esta convocatoria, salvo en los casos de excedencia mencionados en el punto anterior.</p><p>c) Acreditar, al menos, un nivel de competencia lingüística equivalente al nivel B2 establecido en el Marco Común Europeo de Referencia para las lenguas del idioma oficial del país elegido. Además, se podrá optar a estancias en Dinamarca, Estonia, Finlandia, Malta, Noruega, Países Bajos y Suecia acreditando el nivel B2 de inglés.</p><p>d) No haberle sido concedida una ayuda para la realización de una estancia profesional en las cuatro últimas convocatorias de este Programa. Sí podrán participar en el proceso selectivo aquellas personas que, habiéndole sido concedida una estancia en las últimas cuatro convocatorias, esta haya sufrido una cancelación por causa de fuerza mayor, según lo establecido en la disposición 9 de la convocatoria.</p><p>e) Estar al corriente del cumplimiento de las obligaciones tributarias y con la Seguridad Social.</p><p>Segundo. Objeto:</p><p>La adjudicación, en régimen de concurrencia competitiva, de 120 plazas para la realización de estancias profesionales en centros educativos de Alemania, Austria, Bélgica, Dinamarca, Estonia, Finlandia, Francia, Italia, Malta, Noruega, Países Bajos, Portugal, Reino Unido, Irlanda, Suecia y Suiza.</p><p>Tercero. Bases Reguladoras:</p><p>Orden ECI/1305/2005, de 20 de abril (BOE de 12 de mayo), de bases reguladoras de la concesión de subvenciones públicas en régimen de concurrencia competitiva.</p><p>Cuarto. Cuantía:</p><p>La cuantía máxima destinada será de 180.000,00 euros.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes será de 20 días naturales contados a partir del primer día hábil tras la publicación del extracto de la presente resolución en el BOE. En el caso de que el plazo finalice en día inhábil, el día de finalización se extenderá hasta el primer día hábil.</p><p>Sexto. Otros datos:</p><p>Los/as candidatos/as seleccionados/as recibirán una ayuda de hasta mil quinientos euros (1.500,00€) para sus gastos de transporte, alojamiento y manutención. Esta cantidad está sujeta a las retenciones que sean de aplicación.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-10882",
+      "cve": "BOE-B-2026-10882",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.012Z"
+}

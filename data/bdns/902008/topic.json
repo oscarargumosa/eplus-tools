@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "902008",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE GRANADA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "RESOLUCIÓN DE LA VICERRECTORA DE POSGRADO Y FORMACIÓN PERMANENTE DE BBRR Y AYUDAS DESTINADAS A DOCTORANDOS/AS DE LA ESCUELA DE DOCTORADO DE HUMANIDADES, CIENCIAS SOCIALES Y JURÍDICAS PARA ASISTENCIA A CONGRESOS NACIONALES E INTERNACIONALES CURSO 2025/2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": "2026-04-30",
+  "deadline": "2026-09-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 12607.5,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72.2",
+      "descripcion": "Investigación y desarrollo experimental en ciencias sociales y humanidades"
+    }
+  ],
+  "apply_url": "https://sede.ugr.es/portal/procedimientos/Doctorado-Solicitud-de-ayudas/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902008",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://escuelaposgrado.ugr.es/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210498,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/BOUGR/322/322-5%20Ayudas%20Doctorandos%20Humanidades.pdf",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.448Z"
+}

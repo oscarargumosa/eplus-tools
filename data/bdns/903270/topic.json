@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903270",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / ESCUELA GALLEGA DE ADMINISTRACIÓN PÚBLICA (EGAP)",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Resolución de 24 de abril de 2026 por la que se aprueban las bases reguladoras y se convocan subvenciones, en régimen de concurrencia competitiva y en régimen de concurrencia no competitiva, destinadas a la financiación de planes de formación de las entid",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 756659.23,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903270",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://egap.xunta.gal/",
+  "text_inicio": "A partir del día siguiente al de publicación",
+  "text_fin": "Un mes a partir del día siguiente al de la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.121Z"
+}

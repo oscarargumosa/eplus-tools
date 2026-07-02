@@ -1,0 +1,28 @@
+{
+  "identifier": "CEF-T-2023-SIMOBGEN-SESAR-CP-WORKS",
+  "ccm2Id": "46318157",
+  "callIdentifier": "CEF-T-2023-SIMOBGEN",
+  "callTitle": "",
+  "title": "SESAR Common Project One implementation projects – works",
+  "programme": "Connecting Europe Facility",
+  "programmeCode": "43251567",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-09-26",
+  "deadline": "2024-01-30",
+  "deadlineModel": "single-stage",
+  "actionType": "CEF Infrastructure Projects",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Transport\",\"CP1\",\"CEF\",\"Common Project One\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/CEF-T-2023-SIMOBGEN-SESAR-CP-WORKS.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.561Z"
+}

@@ -1,0 +1,68 @@
+{
+  "id": 1099424,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE OVIEDO",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://euniovi.uniovi.es/PresentarSolicitudes",
+  "codigoBDNS": "897863",
+  "fechaRecepcion": "2026-04-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "Resolución de 30 de marzo 2026 del Vicerrector de Estudiantes y Empleabilidad\n, por la que se aprueba la convocatoria pública de ayudas al transporte a estudiantado\ncon discapacidad con movilidad física reducida reconocida,curso académico 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN DEL RECTOR DE LA UNIVERSIDAD DE OVIEDO POR LA QUE ESTABLECEN LAS BASES REGULADORAS PARA LA CONCESIÓN DE AYUDAS AL TRANSPORTE A ESTUDIANTES CON DISCAPACIDAD",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa/2022/06/30/2022-04817.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del dia siguiente a la publicación",
+  "textFin": "Ver convocatoria 10 días hábiles siguientes a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432254,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución TRANSP DISCAPACIDAD_25-26_b_firmado.pdf",
+      "long": 415379,
+      "datMod": "2026-04-09",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

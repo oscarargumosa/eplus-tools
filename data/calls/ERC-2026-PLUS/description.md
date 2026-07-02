@@ -1,0 +1,15 @@
+## Expected Outcome
+
+Objectives and profile of the ERC Plus Grant Principal Investigator
+
+The ERC Plus Grant supports outstanding Principal Investigators who address a major scientific challenge. Applications for ERC Plus Grants should be for projects that could not be carried out with a regular ERC grant. Applicants should explain how the proposed project aims go beyond those of a regular ERC project, for example, because they have a vision to transform their field or open a new field of research. Scholars at all career stages can apply for an ERC Plus Grant if they have an outstanding record of scientific achievement at the forefront of their field. Their intellectual leadership will be evaluated in comparison to peers at their own career stage.
+
+It is expected that a researcher may be the Principal Investigator of only one ERC Plus Grant in their lifetime. Applicants should be aware that every year, only some 30 ERC Plus Grants can be awarded across all fields and all career stages, compared to approximately 1000 Starting, Consolidator and Advanced Grants. This level of competitiveness should be taken into account when considering whether to submit an application.
+
+Size of ERC Plus Grants
+
+ERC Plus Grants may be awarded up to a maximum of EUR 7 000 000 for a minimum of four years or forty-eight months and up to seven years or eighty-four months. The maximum amount of the grant is not reduced pro rata temporis for proposals of shorter duration. No additional funding is provided for ERC Plus Grants.
+
+The ERC Plus Grant is awarded as a single lump sum contribution for the entirety of the project (broken down by beneficiaries – where applicable) based on a realistic estimate of the actual cost of the project, and fully covering the work to be implemented in the proposed action.
+
+For further information, please see the ERC Work Programme 2026.

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903902",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSITAT DE VALÈNCIA (ESTUDI GENERAL)",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Ayudas Juan Romero para el estudiantado de nuevo ingreso del grado en Geografía y Medio ambiente, del grado en Periodismo y del programa de doble titulación de grado en Derecho y C. Políticas y de la Adm. Pública de la UV. Curso 2026/27",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": "https://www.uv.es/sede-electronica/es/sede-electronica-uv.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903902",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ir.uv.es/z0SzKj2",
+  "text_inicio": "No es necesario presentación de solicitud",
+  "text_fin": "No es necesario presentación de solicitud",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.359Z"
+}

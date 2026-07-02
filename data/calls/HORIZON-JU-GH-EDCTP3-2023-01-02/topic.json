@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-JU-GH-EDCTP3-2023-01-02",
+  "ccm2Id": "46015157",
+  "callIdentifier": "HORIZON-JU-GH-EDCTP3-2023-01",
+  "callTitle": "",
+  "title": "Funding to successfully finalise EDCTP2-funded clinical trials that were negatively impacted by the COVID-19 pandemic",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-10",
+  "deadline": "2023-06-29",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Infectious diseases\",\"Clinical trials\",\"Social sciences and humanities\",\"International Cooperation\",\"Societal Engagement\",\"Clinical research\",\"Public health\",\"Africa\",\"Global health\",\"global health\",\"clinical trials\",\"infectious diseases\",\"sub-Saharan Africa\",\"health\",\"clinical research\",\"edctp\",\"edctp3\",\"Africa\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "EC-WORLD",
+    "SocietalEngagement",
+    "Africa"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-JU-GH-EDCTP3-2023-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.208Z"
+}

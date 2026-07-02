@@ -1,0 +1,167 @@
+{
+  "id": 1101589,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE BADAJOZ",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900028",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 17481.66,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS A PYMES DE CC.AA. DE EXTREMADURA PARA LA PARTICIPACION EN VISITA PROFESIONAL FERIA INTERSOLAR EUROPE 2026 MUNICH (ALEMANIA) DEL 23 AL 25 DE JUNIO DE 2026, EN EL MARCO DEL PROGRAMA PYME GLOBAL 2026, FEDER 2021-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS A PYMES DE CC.AA. DE EXTREMADURA PARA LA PARTICIPACION EN VISITA PROFESIONAL FERIA INTERSOLAR EUROPE 2026 MUNICH (ALEMANIA) DEL 23 AL 25 DE JUNIO DE 2026, EN EL MARCO DEL PROGRAMA PYME GLOBAL 2026, FEDER 2021-2027",
+  "urlBasesReguladoras": "https://sede.camara.es/sede/badajoz",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-03",
+  "textInicio": "A las 09:00 horas del día hábil siguiente al de la publicación en el BOP Badajoz",
+  "textFin": "Hasta 3 de junio de 2026  a las 14:00 o hasta agotar presupuesto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438745,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Convocatoria INTERSOLAR.pdf",
+      "long": 1473957,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438755,
+      "descripcion": "Anexo I Tipología de Gastos Elegibles y Justificación",
+      "nombreFic": "Anexo1 Intersolar Munich.pdf",
+      "long": 482138,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438751,
+      "descripcion": "ANEXO II de la Convocatoria Pyme Global 2026",
+      "nombreFic": "2026_ANEXO II Convocatoria INTERSO.pdf",
+      "long": 393159,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

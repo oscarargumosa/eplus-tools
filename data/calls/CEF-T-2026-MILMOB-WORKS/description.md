@@ -1,0 +1,21 @@
+## Objective
+
+The objective of this call is to develop dual-use transport infrastructure on the TEN-T and the military mobility networks.
+
+## Scope
+
+In accordance with Article 9(2), point (c), and Article 12 of the CEF Regulation, support will be provided to dual-use projects, works and/or studies, addressing both civilian and defence needs.
+
+As provided in Article 12(1) of the CEF Regulation, dual-use projects must be located on the TEN-T and on the EU military mobility network established by the Council in November 2018, last updated in March 2025 [1]. Priority will be given to projects located on the four EU military mobility priority corridors and projects located in two or more Member States [2].
+
+As provided in Article 12(1), point (c) of the CEF Regulation, such projects are to take into account the infrastructure requirements applicable to certain categories of dual-use infrastructure actions, as set out in Implementing Regulation 2021/1328 [3].
+
+In case a proposal combines studies and works components, these must address different sections / activities.
+
+Facilities and infrastructure supported under CEF must be accessible for use by all operators on a non-discriminatory basis.
+
+[1] Adopted in March 2025 by the Council as part of the EU Military Requirements for Military Mobility.
+
+[2] While the focus of CEF support will be on the four EU military mobility priority corridors, eligibility will also extend to dual-use Actions located on other sections both of the TEN-T network and of the military mobility network.
+
+[3] Commission Implementing Regulation (EU) 2021/1328 of 10 August 2021 specifying the infrastructure requirements applicable to certain categories of dual-use infrastructure actions pursuant to Regulation (EU) 2021/1153 of the European Parliament and of the Council (OJ L 288, 11.8.2021, p. 37).

@@ -1,0 +1,69 @@
+{
+  "id": "LS.4",
+  "code": "UD-LS.4",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "G — Presupuesto",
+  "title": "El modelo de financiación a tanto alzado: visión general",
+  "subtitle": "Los principios del lump sum: tramos predefinidos, elegir el importe adecuado, justificar el tramo con actividades y entender cómo se paga al final.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "3.1 Overview del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El presupuesto a tanto alzado parece magia: eliges un número de una lista y ya está. Pero no entiendes qué pasa si te quedas corto, si te pasas, o qué te pueden recortar al final. Esa incertidumbre da vértigo.",
+    "comprender": "Cómo funciona el modelo: el lump sum lo predefine la convocatoria, eliges el tramo adecuado a tus necesidades, tus actividades tienen que justificar ese tramo, y el pago final depende de la elegibilidad y de la calidad de la implementación.",
+    "objetivo": "Saber elegir el tramo coherente, repartir el importe por actividad y por WP de gestión sumando exactamente el lump sum, y distinguir con claridad qué provoca un RECHAZO de importe frente a qué provoca una REDUCCIÓN de la subvención.",
+    "confusion": "Confundir \"inelegibilidad\" con \"mala implementación\". No son lo mismo: una actividad/WP inelegible se rechaza entera; una implementación pobre, parcial o tardía reduce la subvención. Y otra confusión: creer que puedes subir o bajar de tramo. No puedes.",
+    "importa": "Porque si pides un tramo que tus actividades no justifican, no te bajan a uno menor: simplemente no te seleccionan. Y porque entender el pago final te dice exactamente qué tienes que entregar para cobrarlo todo."
+  },
+  "sections": [
+    {
+      "id": "principios",
+      "kind": "content",
+      "title": "1. Los principios del modelo",
+      "html": "<p>Las reglas de financiación de las asociaciones para la cooperación en Erasmus+ 2021–2027 se han <b>simplificado</b> respecto al periodo 2014–2020. Se basan en el Reglamento Financiero de la UE y en estos principios:</p><ul><li>Los <b>lump sums están predefinidos por la convocatoria</b> y cubren <b>todos los costes de las actividades elegibles</b> ligadas a la implementación del proyecto.</li><li>El Programme Guide fija <b>distintos tipos de lump sum predefinidos</b> para cubrir asociaciones de distinta complejidad (administrativa y de reporte).</li><li>Los lump sums deben ser <b>elegibles según el grant agreement</b> (el convenio de subvención).</li></ul><div class=\"callout callout-key\"><b>La idea base:</b> no inventas una cifra ni la negocias. Eliges un <b>importe cerrado de una lista predefinida</b>, y ese importe lo cubre todo. Tu trabajo es justificar que tu proyecto \"vale\" ese importe.</div>"
+    },
+    {
+      "id": "elegir-tramo",
+      "kind": "content",
+      "title": "2. Elegir el importe adecuado (y justificarlo)",
+      "html": "<p>Al planificar el proyecto, la organización solicitante y sus socios deben <b>elegir el importe predefinido más apropiado</b> para cubrir los costes del proyecto, <b>según sus necesidades, objetivos y resultados</b>. La elección tiene que <b>encajar con las ambiciones y los resultados esperados</b>.</p><div class=\"callout callout-good\"><b>Excepción:</b> esto <b>NO aplica a las European Partnerships for School Development</b>, donde el lump sum del proyecto está <b>predefinido</b> (no eliges tramo).</div><p>Y aquí está la regla que conecta el dinero con la redacción:</p><ul><li>Las propuestas deben <b>describir las actividades</b> que los solicitantes se comprometen a realizar. Esas actividades deben cumplir los criterios de elegibilidad del Programme Guide y ser relevantes para los objetivos de KA2.</li><li><b>El número y la escala de las actividades descritas deben justificar el lump sum elegido.</b> Si describes poco, no justificas mucho.</li></ul>"
+    },
+    {
+      "id": "reparto",
+      "kind": "content",
+      "title": "3. El reparto: cada euro tiene su sitio",
+      "html": "<p>En cuanto al detalle del presupuesto, los solicitantes deben <b>indicar el importe asignado a cada actividad</b>, así como a los work packages de:</p><ul><li><b>\"Project management\"</b> (gestión del proyecto) — para Cooperation Partnerships y European Partnerships for School Development.</li><li><b>\"Plan for long-term impact\"</b> (plan de impacto a largo plazo) — solo para European Partnerships for School Development.</li></ul><p>Las subvenciones asignadas a cada actividad deben cumplir los principios de <b>economía, eficiencia y eficacia</b> en relación con los objetivos de KA2. Y una regla aritmética que no admite errores:</p><div class=\"callout callout-key\"><b>El presupuesto total de la solicitud debe ser IGUAL al lump sum predefinido.</b> Ni un euro más, ni un euro menos. La suma de todas las actividades y WP de gestión tiene que dar exactamente el tramo elegido.</div>"
+    },
+    {
+      "id": "no-cambia",
+      "kind": "content",
+      "title": "4. El tramo no se sube, no se baja, no se cambia",
+      "html": "<p>Los importes del lump sum están predefinidos, y eso tiene consecuencias muy concretas:</p><ul><li>Si la evaluación de tu propuesta muestra que su <b>coste-eficiencia no es adecuada</b>, <b>no hay posibilidad de \"bajarte\" (downgrade) ni \"subirte\" (upgrade)</b> a un tramo menor o mayor. Significa que esa propuesta <b>simplemente no se selecciona</b>.</li><li>El tramo elegido en la fase de propuesta <b>no se puede modificar durante la ejecución</b> del proyecto. Se convierte en una <b>característica fundamental</b> del proyecto.</li></ul><div class=\"callout callout-warn\"><b>Consecuencia práctica:</b> elegir el tramo es una decisión \"de una sola bala\". Si pides de más y no lo justificas, no te rebajan al tramo correcto: te quedas fuera. Por eso el tramo debe encajar desde el primer día.</div><p>Además, al final del proceso de selección, la <b>Agencia Nacional selecciona los proyectos por tipo de asociación</b>: Small-scale, Cooperation y School Development se evalúan en <b>procesos independientes con listas de clasificación separadas</b>. No compites contra tipos distintos al tuyo.</p>"
+    },
+    {
+      "id": "pago-final",
+      "kind": "content",
+      "title": "5. Cómo se paga al final (y la distinción que lo cambia todo)",
+      "html": "<p>Tras implementar el proyecto, el <b>pago final del lump sum</b> tiene en cuenta tres cosas:</p><ol class=\"obj\"><li><b>La elegibilidad</b> de las actividades / work packages.</li><li>La <b>completitud, calidad y puntualidad</b> de la implementación (que esté hecho, bien hecho y a tiempo).</li><li>El <b>cumplimiento adecuado de todas las obligaciones</b> del grant agreement.</li></ol><p>Y aquí está la distinción más importante de toda la lección, la que el Handbook subraya expresamente:</p><div class=\"callout callout-warn\"><b>No es lo mismo \"inelegible\" que \"mal hecho\":</b><br>· Si una actividad o WP es <b>INELEGIBLE</b> → se <b>rechazan los importes reclamados</b> de esa actividad/WP (se cae entero).<br>· Si la implementación es <b>POBRE, PARCIAL o TARDÍA</b> → se aplica una <b>REDUCCIÓN de la subvención</b> (no se cae entero, pero te recortan).</div><div class=\"callout callout-key\">Tradúcelo así: <b>inelegible = puerta cerrada</b> (ese trozo no se paga porque no debía estar). <b>Mal implementado = penalización</b> (debía estar, pero no lo entregaste como prometiste). Son mecanismos distintos con efectos distintos.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Pido el tramo más alto; si no me lo dan, me bajan al siguiente.»</b> → No hay downgrade ni upgrade. Si la coste-eficiencia no encaja, no te seleccionan.</li><li><span class=\"err-x\">✗</span> <b>«El total puede aproximarse al lump sum.»</b> → Debe ser EXACTAMENTE igual al lump sum predefinido. La suma de actividades + gestión cuadra al céntimo.</li><li><span class=\"err-x\">✗</span> <b>«Inelegible y mal hecho son lo mismo: te recortan.»</b> → No: inelegible = rechazo del importe de esa actividad/WP; pobre/parcial/tardío = reducción de la subvención.</li><li><span class=\"err-x\">✗</span> <b>«Si me quedo corto de presupuesto, puedo subir de tramo durante el proyecto.»</b> → El tramo no se modifica durante la ejecución; es una característica fundamental e inamovible.</li><li><span class=\"err-x\">✗</span> <b>«En School Development también elijo el tramo.»</b> → No: en las European Partnerships for School Development el lump sum está predefinido.</li><li><span class=\"err-x\">✗</span> <b>«Compito contra todos los proyectos KA2.»</b> → Cada tipo (Small-scale, Cooperation, School Development) tiene su propia lista de selección independiente.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> · Handbook on the lump sum funding model KA2, Call 2026 — Sección <b>3.1 Overview</b></td><td>Principios del modelo a tanto alzado: lump sums predefinidos que cubren costes de actividades elegibles; elección del importe según necesidades/objetivos/resultados (excepto School Development); justificación del tramo por las actividades; importe por actividad y por WP de gestión / plan de impacto a largo plazo; total = lump sum; imposibilidad de upgrade/downgrade y de cambiar el tramo en ejecución; listas de selección independientes por tipo; y el pago final (elegibilidad + completitud/calidad/puntualidad + cumplimiento de obligaciones), con la distinción inelegibilidad (rechazo) vs implementación pobre/parcial/tardía (reducción).</td></tr></tbody></table>"
+    }
+  ]
+}

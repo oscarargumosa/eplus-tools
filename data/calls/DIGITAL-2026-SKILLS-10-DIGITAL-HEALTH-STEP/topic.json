@@ -1,0 +1,154 @@
+{
+  "identifier": "DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP",
+  "ccm2Id": "51155024",
+  "callIdentifier": "DIGITAL-2026-SKILLS-10",
+  "callTitle": "Advanced Digital Skills",
+  "title": "Advanced Digital Skills for AI Uptake in Health",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-04-21",
+  "deadline": "2026-10-01",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL Lump Sum Grants",
+  "actionCode": "DIGITAL-LS",
+  "mgaCode": "DIGITAL-AG-LS",
+  "budget": {
+    "total_eur": 12500000,
+    "by_year": {
+      "2026": 12500000
+    },
+    "expected_grants": 2,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP",
+    "DIGITAL-2026-SKILLS-10",
+    "Artificial intelligence",
+    "Artificial intelligence, intelligent systems, multi agent systems",
+    "Computer sciences - Operating systems (software development only)",
+    "Continuing professional training",
+    "Curriculum design and development",
+    "Design of innovative master related to European Innovation potential",
+    "Digital Services and Platforms",
+    "Education",
+    "Education and Training",
+    "Health and Ecosystem Services",
+    "Health data",
+    "Health sciences",
+    "IT skills and competence",
+    "Identification of skills needs",
+    "Inclusive Education",
+    "Integration and upscaling of digital technologies and media in education",
+    "Interoperability",
+    "Learning outcomes",
+    "Master's or equivalent",
+    "New employement profiles and identification of skills",
+    "Personal development",
+    "Qualification",
+    "Teaching materials",
+    "Technological innovation",
+    "Training"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please Write to us.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43817?topic=DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/wp-call/2026/call-fiche_digital-2026-skills-10_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (DEP)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/temp-form/af/af_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Detailed budget table (DEP LSII)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/temp-form/af/detailed-budget-table_dep-lsii_en.xlsm",
+      "ext": ".xlsm",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Lump Sum MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Work Programmes",
+      "url": "https://digital-strategy.ec.europa.eu/en/activities/work-programmes-digital",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Regulation 2021/964",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:06.913Z"
+}

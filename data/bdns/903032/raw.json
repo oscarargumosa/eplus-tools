@@ -1,0 +1,72 @@
+{
+  "id": 1104593,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLANUEVA DE LA TORRE",
+    "nivel3": "AYUNTAMIENTO DE VILLANUEVA DE LA TORRE"
+  },
+  "sedeElectronica": "https://villanuevadelatorre.sedelectronica.es/info.0",
+  "codigoBDNS": "903032",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600,
+  "mrr": false,
+  "descripcion": "BASES Y CONVOCATORIA DE LOS PREMIOS PARA EL II CONCURSO MUNICIPAL DE AUTOS-LOCOS DE LAS FIESTAS PATRONALES VILLANUEVA DE LA TORRE 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES424 - Guadalajara"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "MODIFICACION PLAN ESTRATEGICO DE SUBVENCIONES 2026-2028",
+  "urlBasesReguladoras": "https://webpub2.igae.hacienda.gob.es/teseonet/planes/mantenimiento?idPlan=1987",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-06-18",
+  "textInicio": "DESDE EL DIA SIGUIENTE A SU PUBLICACION EN BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446989,
+      "descripcion": "DECRETO",
+      "nombreFic": "20260430_Resolución_Decreto de Alcaldía _ Decreto de Presidencia _DECRETO 2026-0379 [Decreto de aprobación de bases y convocatoria].pdf",
+      "long": 388757,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1446969,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260421_Otros_Bases y convocatoria.pdf",
+      "long": 275017,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

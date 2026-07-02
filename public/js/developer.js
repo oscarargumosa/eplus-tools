@@ -123,10 +123,15 @@ const Developer = (() => {
       // spawn one cascade step per WP (dynamic count based on Intake data)
       // instead of a single monolithic section.
       const projectWps = (ctx && Array.isArray(ctx.wps)) ? ctx.wps : [];
+      window.__projectWps = projectWps;  // exposed for risk-table dropdown etc.
       if (instance.template_json) {
         templateJson = typeof instance.template_json === 'string' ? JSON.parse(instance.template_json) : instance.template_json;
         flatSections = flattenSections(templateJson, projectWps);
       }
+      // NA (National-Agency) forms are pasted field-by-field into the EU web eForm
+      // — surfaces the "Copiar al eForm" tab.
+      window.__isNaForm = !!(templateJson && templateJson.meta &&
+        (templateJson.meta.output_mode === 'copy_paste' || templateJson.meta.no_upload));
 
       // Load persisted field values so refreshing the page doesn't lose work
       try {
@@ -153,14 +158,57 @@ const Developer = (() => {
     }
   }
 
+  /* ── Work-package content selection (mirror of backend) ────── */
+  // Which Intake WPs receive the per-WP CONTENT questions. The management WP
+  // (WP1) is excluded — NA forms model management as a fixed section. MUST stay
+  // identical to selectContentWps() in node/src/modules/developer/model.js.
+  function selectContentWps(wps) {
+    if (!wps || !wps.length) return [];
+    const isMgmt = w => /manage|coordinat|gesti[oó]n|administ/i.test([w.category, w.code, w.title].filter(Boolean).join(' '));
+    const flagged = wps.filter(isMgmt);
+    if (flagged.length) return wps.filter(w => !isMgmt(w));
+    const sorted = [...wps].sort((a, b) => (a.order_index || 0) - (b.order_index || 0));
+    return sorted.slice(1);
+  }
+
   /* ── Flatten template sections into linear list ────────────── */
   // `wps` is the array of Work Packages defined in Intake for this project.
   // When a subsection contains `work_package_template`, we spawn one cascade
-  // step per WP instead of a single monolithic section.
+  // step per WP instead of a single monolithic section. Sections flagged
+  // `per_wp` (NA forms) expand EACH of their questions once per content WP.
   function flattenSections(tmpl, wps) {
     wps = wps || [];
     const flat = [];
     for (const sec of (tmpl.sections || [])) {
+      // NA per-WP section: every question is repeated for each content WP.
+      if (sec.per_wp) {
+        const subs = sec.subsections || (sec.subsections_groups || []).flatMap(g => g.subsections || []);
+        for (const wp of selectContentWps(wps)) {
+          const code = wp.code || ('WP' + ((wp.order_index || 0) + 1));
+          for (const sub of subs) {
+            for (const field of (sub.fields || [])) {
+              if (field.type !== 'textarea' && field.type !== 'table') continue;
+              flat.push({
+                id: sub.id + '__wp_' + wp.id,
+                fieldId: field.id + '__wp__' + wp.id,
+                number: (sub.number || '').replace(/^WPx/, code),
+                title: code + ' — ' + (wp.title || 'Work Package') + ' · ' + sub.title,
+                guidance: (sub.guidance || []).join('\n'),
+                charLimit: field.char_limit || null,
+                parent: sec.number + '. ' + sec.title,
+                parentNumber: sec.number,
+                wpMeta: {
+                  id: wp.id,
+                  project_id: wp.project_id || (currentProject && currentProject.id),
+                  code: wp.code, title: wp.title, order_index: wp.order_index,
+                  leader_id: wp.leader_id, category: wp.category,
+                },
+              });
+            }
+          }
+        }
+        continue;
+      }
       // Collect all subsections — handle both direct subsections and subsections_groups
       const allSubs = [];
       if (sec.subsections) {
@@ -208,6 +256,7 @@ const Developer = (() => {
               number: sub.number,
               title: sub.title,
               guidance: (sub.guidance || []).join('\n'),
+              charLimit: field.char_limit || null,
               parent,
               parentNumber,
             });
@@ -239,7 +288,14 @@ const Developer = (() => {
     { id: 'entregables',  label: 'Entregables',  icon: 'inventory_2' },
     { id: 2,  label: 'Escribir',     icon: 'edit_note' },
     { id: 4,  label: 'Revisar',      icon: 'fact_check' },
+    // National-Agency calls only (copy-paste into the EU web eForm, no Word upload)
+    { id: 'eform', label: 'Copiar al eForm', icon: 'content_copy', naOnly: true },
   ];
+
+  // The eForm copy-paste tab only applies to NA forms (set when the template loads)
+  function visiblePhaseTabs() {
+    return PHASE_TABS.filter(t => !t.naOnly || window.__isNaForm);
+  }
 
   function renderPhaseTabs(active) {
     return `
@@ -248,7 +304,7 @@ const Developer = (() => {
           <span class="material-symbols-outlined text-xl">arrow_back</span>
         </button>
         <span class="font-headline text-sm font-bold text-primary mr-4 truncate max-w-[200px] shrink-0">${esc(currentProject?.name)}</span>
-        ${PHASE_TABS.map(t => {
+        ${visiblePhaseTabs().map(t => {
           const isPrep = typeof t.id === 'string';
           const onclick = isPrep ? `Developer._prepTab('${t.id}')` : `Developer._phase(${t.id})`;
           return `
@@ -485,10 +541,14 @@ const Developer = (() => {
   /* ── Sub-tab: Consorcio ──────────────────────────────────────── */
   async function renderPrepConsorcio(el) {
     const pid = currentProject.id;
-    const data = await API.get('/developer/projects/' + pid + '/prep/consorcio').catch(() => ({ partners: [] }));
+    const [data, interview] = await Promise.all([
+      API.get('/developer/projects/' + pid + '/prep/consorcio').catch(() => ({ partners: [] })),
+      API.get('/developer/projects/' + pid + '/interview').catch(() => []),
+    ]);
     prepCache.consorcio = data;
     const partners = data.partners || [];
     const workerCategories = data.workerCategories || [];
+    const connectionAnswer = ((interview || []).find(q => q.question_key === 'consortium_connection') || {}).answer_text || '';
 
     el.innerHTML = `
       <div class="space-y-4">
@@ -609,26 +669,50 @@ const Developer = (() => {
                 </div>
               </details>
 
-              <!-- EU Projects selection -->
-              ${euProjects.length ? `
+              <!-- EU Projects selection (pass-through directory-api: todos los proyectos UE de la entidad) -->
+              ${euProjects.length ? (() => {
+                const years = [...new Set(euProjects.map(ep => ep.year).filter(Boolean))].sort((a,b) => b - a);
+                return `
               <details class="mb-3">
                 <summary class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider cursor-pointer hover:text-primary mb-2">
-                  <span class="material-symbols-outlined text-xs align-middle mr-0.5">folder_special</span> EU Projects — select relevant (${selectedEuProjects.length}/${euProjects.length})
+                  <span class="material-symbols-outlined text-xs align-middle mr-0.5">folder_special</span> EU Projects — select relevant (<span id="eu-sel-${p.id}">${selectedEuProjects.length}</span> selected / <span id="eu-cnt-${p.id}">${euProjects.length}</span> shown / ${euProjects.length} total)
                 </summary>
-                <div class="bg-surface-container-lowest rounded-lg border border-outline-variant/10 p-3 space-y-1.5">
-                  ${euProjects.map(ep => {
-                    const checked = selectedEuProjects.includes(ep.id);
-                    return `
-                    <label class="flex items-start gap-2 py-1 px-1 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
-                      <input type="checkbox" ${checked ? 'checked' : ''} onchange="Developer._toggleEuProject('${p.id}', '${ep.id}', this.checked)" class="mt-0.5 accent-primary">
-                      <div class="flex-1 text-xs">
-                        <span class="font-semibold">${esc(ep.title || ep.programme)}</span>
-                        <span class="text-on-surface-variant"> (${ep.year || '?'}, ${esc(ep.role || '')})</span>
-                      </div>
-                    </label>`;
-                  }).join('')}
+                <div class="bg-surface-container-lowest rounded-lg border border-outline-variant/10 p-3">
+                  <div class="flex flex-wrap gap-2 mb-2 items-center">
+                    <select id="eu-year-${p.id}" onchange="Developer._filterEuProjects('${p.id}')" class="text-[10px] bg-white border border-outline-variant/20 rounded px-1.5 py-1 focus:outline-none focus:border-primary">
+                      <option value="">Todos los años</option>
+                      ${years.map(y => `<option value="${y}">${y}</option>`).join('')}
+                    </select>
+                    <select id="eu-role-${p.id}" onchange="Developer._filterEuProjects('${p.id}')" class="text-[10px] bg-white border border-outline-variant/20 rounded px-1.5 py-1 focus:outline-none focus:border-primary">
+                      <option value="">Todos los roles</option>
+                      <option value="coordinator">Coordinator</option>
+                      <option value="partner">Partner</option>
+                    </select>
+                    <label class="text-[10px] text-on-surface-variant inline-flex items-center gap-1 cursor-pointer ml-auto">
+                      <input type="checkbox" id="eu-only-sel-${p.id}" onchange="Developer._filterEuProjects('${p.id}')" class="accent-primary"> Solo seleccionados
+                    </label>
+                  </div>
+                  <div id="eu-list-${p.id}" class="space-y-1.5 max-h-96 overflow-y-auto pr-1">
+                    ${euProjects.map(ep => {
+                      const checked = selectedEuProjects.includes(ep.project_identifier);
+                      const role = (ep.role || '').toLowerCase();
+                      return `
+                      <label class="eu-item flex items-start gap-2 py-1 px-1 rounded hover:bg-surface-container-low cursor-pointer transition-colors" data-year="${ep.year || ''}" data-role="${esc(role)}" data-selected="${checked ? '1' : '0'}">
+                        <input type="checkbox" ${checked ? 'checked' : ''} onchange="Developer._toggleEuProject('${p.id}', '${esc(ep.project_identifier)}', this.checked); this.closest('.eu-item').dataset.selected = this.checked ? '1' : '0'; Developer._filterEuProjects('${p.id}')" class="mt-0.5 accent-primary">
+                        <div class="flex-1 text-xs">
+                          <div class="font-semibold">${esc(ep.title || ep.programme || ep.project_identifier)}</div>
+                          <div class="text-on-surface-variant text-[10px]">${ep.year || '?'} · ${esc(ep.programme || '')} · ${esc(ep.role || '—')}</div>
+                        </div>
+                      </label>`;
+                    }).join('')}
+                  </div>
                 </div>
-              </details>` : ''}
+              </details>`;
+              })() : `
+              <div class="mb-3 text-[10px] text-on-surface-variant italic px-2">
+                <span class="material-symbols-outlined text-xs align-middle mr-0.5">folder_off</span>
+                Sin proyectos UE registrados para esta entidad en el directorio.
+              </div>`}
 
               <!-- Org details expandable (reference) -->
               <details class="mb-3">
@@ -652,12 +736,68 @@ const Developer = (() => {
             <div id="prep-interview-consorcio-${p.id}"></div>
           </div>`;
         }).join('') : '<p class="text-sm text-on-surface-variant italic py-4">No hay socios en este proyecto. Anade socios en el Intake.</p>'}
+
+        ${partners.length ? `
+        <!-- Consortium-level: connection point / shared trajectory -->
+        <div class="bg-white rounded-2xl border border-outline-variant/20 p-5" data-no-voice="0">
+          <div class="flex items-center justify-between mb-1">
+            <label class="text-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-lg text-primary">hub</span> Punto de conexion del consorcio</label>
+            <button onclick="Developer._improveConnection()" id="prep-conn-improve" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-sm">auto_awesome</span> ${connectionAnswer.trim() ? 'Mejorar con IA' : 'Generar con IA'}
+            </button>
+          </div>
+          <p class="text-xs text-on-surface-variant mb-2">Cual es el punto de conexion entre las entidades? Como llegaron a formar este proyecto y que trayectoria comun o cooperacion previa comparten? (Alimenta la seccion "Como formasteis el partenariado").</p>
+          <textarea id="prep-consorcio-connection" class="w-full px-3 py-2 text-sm bg-surface-container-lowest border border-outline-variant/20 rounded-lg resize-none overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary/15 min-h-[100px]" placeholder="Describe como se conocieron las entidades, que red o experiencia comun las une, y como surgio este proyecto..." oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'">${esc(connectionAnswer)}</textarea>
+        </div>` : ''}
       </div>`;
+
+    // Connection field: autosave (debounced) + voice dictation
+    setTimeout(() => {
+      const ta = document.getElementById('prep-consorcio-connection');
+      if (!ta) return;
+      ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px';
+      if (typeof VoiceInput !== 'undefined') VoiceInput.attach(ta);
+      let timer;
+      ta.addEventListener('input', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          API.put('/developer/projects/' + pid + '/interview/consortium_connection', { answer: ta.value }).catch(() => {});
+        }, 1200);
+      });
+    }, 50);
+  }
+
+  async function improveConnection() {
+    const ta = document.getElementById('prep-consorcio-connection');
+    if (!ta) return;
+    const btn = document.getElementById('prep-conn-improve');
+    const original = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando...'; }
+    try {
+      const res = await API.post('/developer/projects/' + currentProject.id + '/prep/consorcio/connection/improve', { text: ta.value });
+      const data = res.data || res;
+      if (data.text) {
+        ta.value = data.text;
+        ta.dispatchEvent(new Event('input', { bubbles: true }));
+        setTimeout(() => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }, 50);
+        ta.classList.add('ring-2', 'ring-green-400/40');
+        setTimeout(() => ta.classList.remove('ring-2', 'ring-green-400/40'), 2000);
+        await API.put('/developer/projects/' + currentProject.id + '/interview/consortium_connection', { answer: data.text }).catch(() => {});
+        Toast.show('Texto mejorado', 'ok');
+      }
+    } catch (e) {
+      Toast.show('Error: ' + e.message, 'err');
+    } finally {
+      if (btn) { btn.disabled = false; btn.innerHTML = original || '<span class="material-symbols-outlined text-sm">auto_awesome</span> Mejorar con IA'; }
+    }
   }
 
   /* ── Sub-tab: Presupuesto ─────────────────────────────────────── */
   async function renderPrepPresupuesto(el) {
     const pid = currentProject.id;
+    // Always sync budget v2 with the calc_state before opening the editor.
+    el.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center"><span class="spinner"></span> Sincronizando presupuesto con el Designer...</p>';
+    await _ensureBudgetFresh(pid);
     const data = await API.get('/developer/projects/' + pid + '/prep/presupuesto').catch(() => null);
     prepCache.presupuesto = data;
 
@@ -1310,7 +1450,7 @@ const Developer = (() => {
         <div class="flex items-center justify-between mb-4">
           <div>
             <h3 class="font-headline text-base font-bold">Tareas del proyecto</h3>
-            <p class="text-xs text-on-surface-variant">Desglose de tareas, entregables y milestones por actividad.</p>
+            <p class="text-xs text-on-surface-variant">Desglose de tareas, entregables y milestones por actividad. <strong>Líder y participantes</strong> se derivan del presupuesto del WP.</p>
           </div>
         </div>
         <div id="prep-tasks-container"></div>
@@ -1326,7 +1466,39 @@ const Developer = (() => {
           await Calculator.initFromIntake(projData, partnerList || []);
         } catch (e) { console.error('tasks calc init:', e); }
       }
-      IntakeTasks.render(document.getElementById('prep-tasks-container'), pid);
+
+      // Fetch leader/budget context: WP leaders + eligible partners per WP +
+      // wp_tasks per WP (so we can show their codes T1.1, T1.2, … in the UI).
+      let leaderCtx = null;
+      try {
+        const [eaceaRes, partnersRes] = await Promise.all([
+          API.get(`/budget/projects/${pid}/eacea-tables`),
+          API.get(`/developer/projects/${pid}/partners`),
+        ]);
+        const eacea = eaceaRes.data || eaceaRes;
+        const partners = partnersRes.data || partnersRes || [];
+        const wpsCtx = (eacea.wps || []).map(wp => ({
+          id: wp.wp_id,
+          code: wp.code,
+          title: wp.title,
+          leader_id: wp.leader_id || null,
+          leader_acronym: wp.leader_acronym || null,
+          eligible_partner_ids: (wp.rows || []).filter(r => Number(r.total) > 0).map(r => r.partner_id),
+        }));
+        // Fetch wp_tasks per WP — used to surface T-codes in the rendering.
+        const wpTaskLists = await Promise.all(wpsCtx.map(wp =>
+          API.get(`/developer/wp/${wp.id}/tasks`).catch(() => [])
+        ));
+        wpsCtx.forEach((wp, i) => {
+          const list = wpTaskLists[i];
+          wp.wp_tasks = (Array.isArray(list) ? list : (list?.data || [])).map(t => ({
+            id: t.id, code: t.code, title: t.title, sort_order: t.sort_order,
+          }));
+        });
+        leaderCtx = { showLeaders: true, partners, wps: wpsCtx };
+      } catch (e) { console.warn('[Tareas] leader ctx skipped:', e?.message || e); }
+
+      IntakeTasks.render(document.getElementById('prep-tasks-container'), pid, leaderCtx);
     } else {
       el.querySelector('#prep-tasks-container').innerHTML = `
         <div class="bg-amber-50 rounded-2xl border border-amber-200 p-8 text-center">
@@ -1376,6 +1548,53 @@ const Developer = (() => {
     'Cartas de compromiso firmadas',
   ];
 
+  // P2: short labels shown next to the EACEA acronym (chips legibles sin hover)
+  const PREP_TYPE_SHORT = {
+    R: 'Report', DEM: 'Prototipo', DEC: 'Difusión', DATA: 'Data',
+    DMP: 'DMP', ETHICS: 'Ethics', SECURITY: 'Security', OTHER: 'Otro',
+  };
+  const PREP_DL_SHORT = {
+    PU: 'Público', SEN: 'Sensible',
+    'R-UE/EU-R': 'UE-R', 'C-UE/EU-C': 'UE-C', 'S-UE/EU-S': 'UE-S',
+  };
+  // P2: color por categoría (Tailwind) — aplicado al select para que el chip se vea coloreado
+  const PREP_TYPE_COLOR = {
+    R:        'bg-blue-100 text-blue-800',
+    DEM:      'bg-purple-100 text-purple-800',
+    DEC:      'bg-pink-100 text-pink-800',
+    DATA:     'bg-teal-100 text-teal-800',
+    DMP:      'bg-teal-100 text-teal-800',
+    ETHICS:   'bg-amber-100 text-amber-800',
+    SECURITY: 'bg-amber-100 text-amber-800',
+    OTHER:    'bg-gray-100 text-gray-700',
+  };
+  const PREP_DL_COLOR = {
+    PU:           'bg-green-100 text-green-800',
+    SEN:          'bg-amber-100 text-amber-800',
+    'R-UE/EU-R':  'bg-orange-100 text-orange-800',
+    'C-UE/EU-C':  'bg-red-100 text-red-800',
+    'S-UE/EU-S':  'bg-red-200 text-red-900',
+  };
+  const _classTokens = (m) => Object.values(m).join(' ').split(/\s+/).filter(Boolean);
+  const PREP_TYPE_COLOR_ALL = _classTokens(PREP_TYPE_COLOR);
+  const PREP_DL_COLOR_ALL   = _classTokens(PREP_DL_COLOR);
+
+  // P4: placeholder de Description según Type (texto literal del Part B EACEA, Sección 4.2)
+  const PREP_DESC_TPL_EVENT = 'Invitación, agenda, lista de asistencia firmada, target group, nº participantes estimado, duración del evento, informe del evento, material formativo, presentaciones, evaluación, cuestionario de feedback.';
+  const PREP_DESC_TPL_PUBLICATION = 'Formato (electrónico/impreso), idioma(s), nº de páginas aprox, nº de copias estimadas (si aplica).';
+  const PREP_DESC_TPL_DEM = 'Función del prototipo/demo, especificaciones técnicas, formato de entrega, idioma.';
+  const PREP_DESC_TPL_DEC = 'Formato (URL, vídeo, podcast, web), idioma(s), audiencia objetivo, canal de distribución.';
+  const PREP_DESC_TPL_GENERIC = 'Descripción del entregable (formato, idioma, longitud, modo de entrega).';
+  const PREP_EVENT_KEYWORDS = /(taller|conferencia|congreso|evento|webinar|seminar|formaci[oó]n|training|workshop|encuentro|networking|kick-?off|jornada|reuni[oó]n)/i;
+
+  function prepDescPlaceholder(type, title) {
+    const t = String(title || '');
+    if (type === 'DEC') return PREP_EVENT_KEYWORDS.test(t) ? PREP_DESC_TPL_EVENT : PREP_DESC_TPL_DEC;
+    if (type === 'DEM') return PREP_EVENT_KEYWORDS.test(t) ? PREP_DESC_TPL_EVENT : PREP_DESC_TPL_DEM;
+    if (['R','DMP','DATA','ETHICS','SECURITY'].includes(type)) return PREP_DESC_TPL_PUBLICATION;
+    return PREP_DESC_TPL_GENERIC;
+  }
+
   // Pinned: programme meta + validation snapshot per project (refreshed lazily)
   const _dmsState = { programme: null, validation: null, lastScore: null };
 
@@ -1396,6 +1615,50 @@ const Developer = (() => {
           </button>
         </div>
         <div id="prep-dms-banner" class="hidden mb-3"></div>
+
+        <!-- P1: Leyenda EACEA — qué significa cada código -->
+        <details open class="rounded-xl border border-amber-200/70 bg-amber-50/40 p-3 mb-4">
+          <summary class="cursor-pointer text-xs font-bold flex items-center gap-2 select-none">
+            <span class="material-symbols-outlined text-base text-amber-700">info</span>
+            <span>Leyenda EACEA — qué significa cada código del formulario</span>
+            <span class="ml-auto text-[10px] text-on-surface-variant font-normal italic">click para colapsar</span>
+          </summary>
+          <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-[11px]">
+            <div>
+              <p class="font-bold text-[10px] uppercase tracking-wider text-on-surface-variant mb-1.5">Tipo de entregable</p>
+              <ul class="space-y-1 leading-snug">
+                <li><span class="font-mono font-bold text-blue-700 inline-block w-16">R</span> Report — informe escrito</li>
+                <li><span class="font-mono font-bold text-purple-700 inline-block w-16">DEM</span> Demonstrator — prototipo o demo</li>
+                <li><span class="font-mono font-bold text-pink-700 inline-block w-16">DEC</span> Dissemination — material de difusión, eventos, vídeos</li>
+                <li><span class="font-mono font-bold text-teal-700 inline-block w-16">DATA</span> Conjunto de datos / microdatos</li>
+                <li><span class="font-mono font-bold text-teal-700 inline-block w-16">DMP</span> Data Management Plan</li>
+                <li><span class="font-mono font-bold text-amber-700 inline-block w-16">ETHICS</span> Cumplimiento ético</li>
+                <li><span class="font-mono font-bold text-amber-700 inline-block w-16">SECURITY</span> Entregable de seguridad</li>
+                <li><span class="font-mono font-bold text-gray-700 inline-block w-16">OTHER</span> No listado en las categorías anteriores</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-[10px] uppercase tracking-wider text-on-surface-variant mb-1.5">Nivel de difusión (Dissemination Level)</p>
+              <ul class="space-y-1 leading-snug">
+                <li><span class="font-mono font-bold text-green-700 inline-block w-20">PU</span> Público — automáticamente publicado en EU Project Results Platform</li>
+                <li><span class="font-mono font-bold text-amber-700 inline-block w-20">SEN</span> Sensible — acceso limitado bajo el Grant Agreement</li>
+                <li><span class="font-mono font-bold text-orange-700 inline-block w-20">R-UE/EU-R</span> EU Restringido (Decisión 2015/444)</li>
+                <li><span class="font-mono font-bold text-red-700 inline-block w-20">C-UE/EU-C</span> EU Confidencial</li>
+                <li><span class="font-mono font-bold text-red-800 inline-block w-20">S-UE/EU-S</span> EU Secreto</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-[10px] uppercase tracking-wider text-on-surface-variant mb-1.5">Convención de numeración y plazos</p>
+              <ul class="space-y-1.5 leading-snug">
+                <li><span class="font-mono font-bold text-primary inline-block">D{WP}.{N}</span> &nbsp;Entregables, ligados a su WP (D1.1, D1.2, D2.1…)</li>
+                <li><span class="font-mono font-bold text-secondary inline-block">MS{N}</span> &nbsp;Milestones, numeración continua no ligada a WP (MS1, MS2…)</li>
+                <li class="pt-1.5 text-on-surface-variant italic">El mes 1 marca el inicio del proyecto. Todos los plazos se cuentan desde ahí.</li>
+                <li class="text-on-surface-variant italic">Recomendado: máximo 10–15 entregables totales. Por encima del cap, EACEA puede pedir reducirlos en grant preparation.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
         <div id="prep-del-content" class="space-y-6"></div>
       </div>`;
 
@@ -1774,14 +2037,57 @@ const Developer = (() => {
 
   let _dmsV2Cached = null;  // kept for back-compat with banner CTA detection
 
+  /**
+   * Modal previo a la generación: deja al usuario fijar el número total de
+   * deliverables del proyecto. Mínimo 8, máximo 15 (cap EACEA), default 15.
+   * Devuelve el número elegido o null si se cancela.
+   */
+  function _promptTargetCount(hasExisting) {
+    return new Promise(resolve => {
+      const overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;animation:overlayIn .15s ease;';
+      overlay.innerHTML = `
+        <div style="background:#fff;border-radius:14px;max-width:480px;width:90vw;padding:28px;box-shadow:0 12px 40px rgba(0,0,0,.3);font-family:Poppins,sans-serif;">
+          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#1b1464;">Plan profesional · Entregables y Milestones</h3>
+          <p style="margin:0 0 18px 0;font-size:13px;color:#787682;line-height:1.5;">
+            ${hasExisting
+              ? 'Esto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible).'
+              : 'El asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45s.'}
+          </p>
+          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#1b1464;margin-bottom:6px;">Número total de deliverables del proyecto</label>
+          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(27,20,100,.15);border-radius:10px;color:#1b1464;text-align:center;outline:none;" />
+          <p style="margin:8px 0 0 0;font-size:11px;color:#787682;line-height:1.5;">
+            <strong>Mín 8</strong> · <strong>Máx 15</strong> (cap absoluto EACEA — superarlo puede llevar a rechazo del proyecto). Se repartirán proporcionalmente entre los WPs según el número de actividades de cada uno. Todas las tareas con financiación quedarán cubiertas por al menos un entregable.
+          </p>
+          <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:22px;">
+            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(27,20,100,.2);background:#fff;color:#1b1464;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
+            <button id="dms-target-ok" style="padding:10px 22px;border-radius:10px;border:0;background:#1b1464;color:#fbff12;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
+          </div>
+        </div>`;
+      document.body.appendChild(overlay);
+      const inp = overlay.querySelector('#dms-target-input');
+      inp.focus(); inp.select();
+      const close = (val) => { overlay.remove(); resolve(val); };
+      overlay.querySelector('#dms-target-cancel').onclick = () => close(null);
+      overlay.querySelector('#dms-target-ok').onclick = () => {
+        const n = parseInt(inp.value, 10);
+        if (!n || n < 8 || n > 15) { inp.style.borderColor = '#ba1a1a'; return; }
+        close(n);
+      };
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(null); });
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'Enter') overlay.querySelector('#dms-target-ok').click();
+        if (e.key === 'Escape') close(null);
+      });
+    });
+  }
+
   // One-shot: confirm → generate (3-pass + critic) → auto-apply → reload cards.
   // No preview UI in between; the cards themselves ARE the editable surface.
   async function _prepDmsGenerateAndApply(pid) {
     const hasExisting = document.querySelectorAll('[data-prep-d-row]').length > 0;
-    const msg = hasExisting
-      ? '¿Generar plan profesional?\n\nEsto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible automáticamente).'
-      : '¿Generar plan profesional de Entregables + Milestones?\n\nEl asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45 segundos.';
-    if (!confirm(msg)) return;
+    const targetCount = await _promptTargetCount(hasExisting);
+    if (!targetCount) return;
 
     // Loading overlay on the content area
     const host = document.getElementById('prep-del-content');
@@ -1794,7 +2100,7 @@ const Developer = (() => {
 
     let critic = null;
     try {
-      const res = await API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, {});
+      const res = await API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, { target_count: targetCount });
       const data = res?.data || res;
       critic = data.critic;
       // Auto-apply immediately with the full payload (plan + copy + critic for score persistence)
@@ -1818,7 +2124,8 @@ const Developer = (() => {
   }
 
   async function _prepDmsV2Preview(pid) {
-    if (!confirm('Generar plan profesional de Entregables + Milestones.\n\nEsta acción analiza todo el proyecto (tareas, actividades, partners) y produce un plan validado. Verás el resultado antes de guardarlo. ¿Continuar?')) return;
+    const targetCount = await _promptTargetCount(true);
+    if (!targetCount) return;
 
     const previewBox = document.getElementById('prep-dms-preview');
     previewBox.classList.remove('hidden');
@@ -1833,7 +2140,7 @@ const Developer = (() => {
     try {
       // Fetch current state in parallel for diff
       const [res, currentD, currentM] = await Promise.all([
-        API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, {}),
+        API.post(`/developer/projects/${pid}/deliverables-milestones/preview-v2`, { target_count: targetCount }),
         API.get(`/developer/projects/${pid}/deliverables`).catch(() => []),
         API.get(`/developer/projects/${pid}/milestones`).catch(() => []),
       ]);
@@ -2347,12 +2654,12 @@ const Developer = (() => {
                       class="flex-1 min-w-[200px] text-sm font-semibold px-1 py-0.5 bg-transparent border-0 hover:bg-surface-container focus:bg-white focus:ring-1 focus:ring-primary/30 rounded resize-none"
                       style="overflow:hidden">${esc(d.title || '')}</textarea>
             <select data-prep-d="type" data-id="${esc(d.id)}" title="${esc(PREP_TYPE_LABELS[d.type] || 'Tipo')}"
-                    class="text-[10px] px-1 py-0.5 rounded bg-surface-container border-0 focus:ring-1 focus:ring-primary/30">
-              ${PREP_DEL_TYPES.map(t => `<option value="${t}" title="${esc(PREP_TYPE_LABELS[t])}" ${d.type === t ? 'selected' : ''}>${t}</option>`).join('')}
+                    class="text-[10px] font-medium px-2 py-1 rounded border-0 focus:ring-1 focus:ring-primary/30 ${PREP_TYPE_COLOR[d.type] || PREP_TYPE_COLOR.OTHER}">
+              ${PREP_DEL_TYPES.map(t => `<option value="${t}" title="${esc(PREP_TYPE_LABELS[t])}" ${d.type === t ? 'selected' : ''}>${t} · ${PREP_TYPE_SHORT[t]}</option>`).join('')}
             </select>
             <select data-prep-d="dissemination_level" data-id="${esc(d.id)}" title="${esc(PREP_DL_LABELS[d.dissemination_level] || 'Nivel difusión')}"
-                    class="text-[10px] px-1 py-0.5 rounded bg-surface-container border-0 focus:ring-1 focus:ring-primary/30">
-              ${PREP_DEL_DISSEM_LEVELS.map(l => `<option value="${l}" title="${esc(PREP_DL_LABELS[l])}" ${d.dissemination_level === l ? 'selected' : ''}>${l}</option>`).join('')}
+                    class="text-[10px] font-medium px-2 py-1 rounded border-0 focus:ring-1 focus:ring-primary/30 ${PREP_DL_COLOR[d.dissemination_level] || PREP_DL_COLOR.PU}">
+              ${PREP_DEL_DISSEM_LEVELS.map(l => `<option value="${l}" title="${esc(PREP_DL_LABELS[l])}" ${d.dissemination_level === l ? 'selected' : ''}>${l} · ${PREP_DL_SHORT[l]}</option>`).join('')}
             </select>
             <span class="text-[10px] text-on-surface-variant">M</span>
             <input type="number" min="1" max="60" data-prep-d="due_month" data-id="${esc(d.id)}" value="${d.due_month || ''}"
@@ -2362,10 +2669,10 @@ const Developer = (() => {
             <button data-prep-d-del="${esc(d.id)}" class="text-on-surface-variant hover:text-error" title="Eliminar"><span class="material-symbols-outlined text-sm">close</span></button>
           </div>
 
-          <!-- Description -->
+          <!-- Description (placeholder dinámico según Type — guidance literal del Part B EACEA) -->
           <textarea data-no-voice="1" data-prep-d="description" data-id="${esc(d.id)}" rows="1"
                     class="w-full text-[11px] text-on-surface-variant px-1 py-0.5 bg-transparent border-0 hover:bg-surface-container focus:bg-white focus:ring-1 focus:ring-primary/30 rounded resize-none"
-                    style="overflow:hidden" placeholder="Descripción del entregable (formato, idioma, longitud, modo de entrega)">${esc(d.description || '')}</textarea>
+                    style="overflow:hidden" placeholder="${esc(prepDescPlaceholder(d.type, d.title))}">${esc(d.description || '')}</textarea>
 
           <!-- Footer row: source tasks · KPI · rationale -->
           <div class="flex items-center gap-3 flex-wrap mt-1.5 text-[10px]">
@@ -2462,6 +2769,13 @@ const Developer = (() => {
 
     // Wire inline editing
     const blockEnter = (e) => { if (e.key === 'Enter') { e.preventDefault(); e.target.blur(); } };
+    const refreshDescPlaceholder = (card) => {
+      if (!card) return;
+      const typeSel = card.querySelector('select[data-prep-d="type"]');
+      const titleEl = card.querySelector('textarea[data-prep-d="title"]');
+      const descEl  = card.querySelector('textarea[data-prep-d="description"]');
+      if (descEl) descEl.placeholder = prepDescPlaceholder(typeSel?.value || '', titleEl?.value || '');
+    };
     host.querySelectorAll('[data-prep-d]').forEach(el => {
       const handler = () => _prepSaveDeliverable(el.dataset.id, el.dataset.prepD, el.value).then(() => _dmsRunValidation(pid, false));
       el.addEventListener('change', handler);
@@ -2469,7 +2783,26 @@ const Developer = (() => {
       if (el.tagName === 'TEXTAREA') {
         autoGrow(el);
         el.addEventListener('input', () => autoGrow(el));
-        if (el.dataset.prepD === 'title') el.addEventListener('keydown', blockEnter);
+        if (el.dataset.prepD === 'title') {
+          el.addEventListener('keydown', blockEnter);
+          // P4: refrescar placeholder de Description al teclear el título (detección "evento")
+          el.addEventListener('input', () => refreshDescPlaceholder(el.closest('[data-prep-d-row]')));
+        }
+      }
+      // P2 + P4: al cambiar Type, swap del color del chip y actualizar placeholder
+      if (el.tagName === 'SELECT' && el.dataset.prepD === 'type') {
+        el.addEventListener('change', () => {
+          PREP_TYPE_COLOR_ALL.forEach(c => el.classList.remove(c));
+          (PREP_TYPE_COLOR[el.value] || PREP_TYPE_COLOR.OTHER).split(/\s+/).forEach(c => c && el.classList.add(c));
+          refreshDescPlaceholder(el.closest('[data-prep-d-row]'));
+        });
+      }
+      // P2: al cambiar Dissemination Level, swap del color del chip
+      if (el.tagName === 'SELECT' && el.dataset.prepD === 'dissemination_level') {
+        el.addEventListener('change', () => {
+          PREP_DL_COLOR_ALL.forEach(c => el.classList.remove(c));
+          (PREP_DL_COLOR[el.value] || PREP_DL_COLOR.PU).split(/\s+/).forEach(c => c && el.classList.add(c));
+        });
       }
     });
     host.querySelectorAll('[data-prep-m]').forEach(el => {
@@ -2729,6 +3062,10 @@ const Developer = (() => {
   ];
 
   let _tipTimer = null;
+  // Layout state — persisted in localStorage. Sidebar can collapse to icons,
+  // AI panel lives in a fixed right drawer triggered by a FAB / Ctrl+I.
+  let _navCollapsed   = localStorage.getItem('developer.navCollapsed') === 'true';
+  let _aiDrawerOpen   = localStorage.getItem('developer.aiDrawerOpen') === 'true';
 
   async function renderPhase2() {
     phase = 2;
@@ -2745,6 +3082,7 @@ const Developer = (() => {
     const total = flatSections.length;
     const approved = Object.keys(cascadeApproved).length;
     const pct = Math.round((approved / total) * 100);
+    const navWidth = _navCollapsed ? 'w-14' : 'w-56';
 
     el.innerHTML = renderPhaseTabs(2) + `
       <!-- Progress bar -->
@@ -2758,35 +3096,181 @@ const Developer = (() => {
         </div>
       </div>
 
+      <!-- TASK-008 · Facts the AI uses (user surface — own data, never prompts) -->
+      <div id="dev-facts-panel" class="mb-4"></div>
+
       <div class="flex gap-0 -mx-4 items-start">
-        <!-- Left: Section nav -->
-        <div class="w-56 shrink-0 border-r border-outline-variant/20 px-3 py-2" id="dev-cascade-nav"></div>
-        <!-- Center: Editor -->
+        <!-- Left: Section nav (collapsible) -->
+        <div class="${navWidth} shrink-0 border-r border-outline-variant/20 py-2 transition-[width] duration-200 relative" id="dev-cascade-nav"></div>
+        <!-- Center: Editor (full width when nav collapses or AI is hidden) -->
         <div class="flex-1 min-w-0 px-6 py-2" id="dev-cascade-main"></div>
-        <!-- Right: AI panel -->
-        <div class="w-72 shrink-0 border-l border-outline-variant/20 px-4 py-2" id="dev-ai-panel"></div>
-      </div>`;
+      </div>
+
+      <!-- Floating AI button — pill, opens the drawer -->
+      <button id="dev-ai-fab" onclick="Developer._toggleAiDrawer()" title="Refinar con IA (Ctrl+I)"
+        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 pl-4 pr-5 py-3 rounded-full bg-[#1b1464] hover:bg-[#1b1464]/90 text-white text-sm font-bold shadow-xl transition-all hover:scale-[1.03]">
+        <span class="material-symbols-outlined text-lg text-[#fbff12]">auto_awesome</span>
+        <span>Refinar con IA</span>
+      </button>
+
+      <!-- AI Drawer overlay -->
+      <aside id="dev-ai-drawer"
+        class="fixed top-0 right-0 h-screen w-[400px] bg-white border-l border-outline-variant/20 shadow-2xl z-50 transform ${_aiDrawerOpen ? '' : 'translate-x-full'} transition-transform duration-300 overflow-y-auto flex flex-col">
+        <header class="sticky top-0 bg-white px-4 py-3 flex items-center justify-between border-b border-outline-variant/20 z-10">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Panel de IA</h3>
+          <button onclick="Developer._toggleAiDrawer()" class="p-1.5 rounded-full hover:bg-surface-container-low transition-colors" title="Cerrar (Esc)">
+            <span class="material-symbols-outlined text-base text-on-surface-variant">close</span>
+          </button>
+        </header>
+        <div id="dev-ai-panel" class="p-4 flex-1"></div>
+      </aside>
+      <div id="dev-ai-backdrop" onclick="Developer._toggleAiDrawer()"
+        class="fixed inset-0 z-40 bg-black/10 ${_aiDrawerOpen ? '' : 'hidden'}"></div>
+    `;
 
     renderCascadeNav();
     renderCascadeSection();
     renderAIPanel();
+    renderFactsPanel();
+    _bindWriterShortcuts();
+  }
+
+  /* ── TASK-008 · Facts panel (user surface) ──────────────────────
+     Shows the project facts the AI keeps consistent across sections.
+     Candidates (auto-detected while writing) can be confirmed/discarded.
+     NEVER shows prompts — only the user's own data. */
+  async function renderFactsPanel() {
+    const box = document.getElementById('dev-facts-panel');
+    if (!box || !currentProject) return;
+    let facts = [];
+    try { facts = await API.get('/developer/projects/' + currentProject.id + '/facts'); } catch (_) { return; }
+    const candidates = facts.filter(f => f.status === 'candidate');
+    const canonical = facts.filter(f => f.status === 'canonical');
+    if (!facts.length) { box.innerHTML = ''; return; }
+    const esc = (s) => { const d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; };
+    box.innerHTML = `
+      <details class="border border-outline-variant/30 rounded-xl bg-surface-container-low/40" ${candidates.length ? 'open' : ''}>
+        <summary class="flex items-center gap-2 px-4 py-2.5 cursor-pointer text-sm font-semibold text-on-surface-variant">
+          <span class="material-symbols-outlined text-base text-primary">fact_check</span>
+          Datos que la IA mantiene coherentes
+          <span class="text-xs font-normal">&middot; ${canonical.length} confirmados${candidates.length ? ` &middot; <span class="text-primary font-bold">${candidates.length} por revisar</span>` : ''}</span>
+        </summary>
+        <div class="px-4 pb-3 space-y-3">
+          ${candidates.length ? `
+            <div>
+              <p class="text-xs text-on-surface-variant mb-1.5">La IA detect&oacute; estos datos al escribir. Conf&iacute;rmalos para que se mantengan id&eacute;nticos en toda la propuesta:</p>
+              <div class="space-y-1.5">
+                ${candidates.map(f => `
+                  <div class="flex items-center gap-2 text-sm bg-surface rounded-lg px-3 py-1.5 border border-outline-variant/30">
+                    <span class="flex-1 min-w-0"><span class="text-on-surface-variant">${esc(f.fact_key.replace(/_/g, ' '))}:</span> ${esc(f.fact_value)}</span>
+                    <button class="px-2 py-0.5 text-xs rounded bg-primary text-secondary-fixed font-semibold" data-fact-ok="${f.id}">Confirmar</button>
+                    <button class="px-2 py-0.5 text-xs rounded bg-surface-variant text-on-surface-variant" data-fact-no="${f.id}">Descartar</button>
+                  </div>`).join('')}
+              </div>
+            </div>` : ''}
+          ${canonical.length ? `
+            <div>
+              <p class="text-xs text-on-surface-variant mb-1.5">Confirmados:</p>
+              <div class="flex flex-wrap gap-1.5">
+                ${canonical.map(f => `<span class="text-xs bg-primary/10 text-primary rounded-full px-2.5 py-1" title="${esc(f.fact_key)}">${esc(f.fact_value)}</span>`).join('')}
+              </div>
+            </div>` : ''}
+        </div>
+      </details>`;
+    box.querySelectorAll('[data-fact-ok]').forEach(b => b.addEventListener('click', () => setFact(b.dataset.factOk, 'canonical')));
+    box.querySelectorAll('[data-fact-no]').forEach(b => b.addEventListener('click', () => setFact(b.dataset.factNo, 'rejected')));
+  }
+
+  async function setFact(factId, status) {
+    if (!currentProject) return;
+    try {
+      await API.patch('/developer/projects/' + currentProject.id + '/facts/' + factId, { status });
+      renderFactsPanel();
+    } catch (_) {}
+  }
+
+  function _toggleAiDrawer() {
+    _aiDrawerOpen = !_aiDrawerOpen;
+    localStorage.setItem('developer.aiDrawerOpen', String(_aiDrawerOpen));
+    const drawer = document.getElementById('dev-ai-drawer');
+    const backdrop = document.getElementById('dev-ai-backdrop');
+    if (drawer) drawer.classList.toggle('translate-x-full', !_aiDrawerOpen);
+    if (backdrop) backdrop.classList.toggle('hidden', !_aiDrawerOpen);
+  }
+
+  // The generic "Refinar con IA" flow only applies to free-text sections.
+  // Sections backed by structured tables (WPs, staff, risks) have their own
+  // inline AI buttons, so we hide the FAB + drawer here to avoid confusion.
+  function _isStructuredTableSection(sec) {
+    if (!sec) return false;
+    if (isWpFormSection(sec)) return true;
+    return sec.fieldId === 's2_1_3_staff_table'
+        || sec.fieldId === 's2_1_5_risk_table';
+  }
+
+  // The FAB is always visible; the drawer's content adapts to the section
+  // kind (text vs structured table).
+  function _updateAiAffordance(_sec) {
+    const fab = document.getElementById('dev-ai-fab');
+    if (fab) fab.classList.remove('hidden');
+  }
+
+  function _toggleNavCollapsed() {
+    _navCollapsed = !_navCollapsed;
+    localStorage.setItem('developer.navCollapsed', String(_navCollapsed));
+    const nav = document.getElementById('dev-cascade-nav');
+    if (nav) {
+      nav.classList.toggle('w-14', _navCollapsed);
+      nav.classList.toggle('w-56', !_navCollapsed);
+    }
+    renderCascadeNav();
+  }
+
+  let _writerShortcutsBound = false;
+  function _bindWriterShortcuts() {
+    if (_writerShortcutsBound) return;
+    _writerShortcutsBound = true;
+    document.addEventListener('keydown', (e) => {
+      // Only act when we're in the Writer cascade (phase 2).
+      if (phase !== 2) return;
+      // Ctrl/Cmd + I → toggle AI drawer
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'i' || e.key === 'I')) {
+        e.preventDefault();
+        _toggleAiDrawer();
+      }
+      // Esc closes drawer if open
+      if (e.key === 'Escape' && _aiDrawerOpen) {
+        _toggleAiDrawer();
+      }
+    });
   }
 
   function renderCascadeNav() {
     const nav = document.getElementById('dev-cascade-nav');
     if (!nav) return;
 
+    const collapsed = _navCollapsed;
+    const padX = collapsed ? 'px-1' : 'px-3';
+
+    // Toggle button at the top.
+    let html = `
+      <div class="flex ${collapsed ? 'justify-center' : 'justify-end'} ${padX} mb-2">
+        <button onclick="Developer._toggleNav()" title="${collapsed ? 'Expandir índice' : 'Colapsar índice'}"
+          class="p-1 rounded hover:bg-surface-container-low text-on-surface-variant transition-colors">
+          <span class="material-symbols-outlined text-base">${collapsed ? 'chevron_right' : 'chevron_left'}</span>
+        </button>
+      </div>
+    `;
+
     let currentParent = null;
-    let html = '';
     for (let i = 0; i < flatSections.length; i++) {
       const sec = flatSections[i];
       const isApproved = cascadeApproved[sec.fieldId];
       const isCurrent = i === cascadeIndex;
-      const isPending = !isApproved && !isCurrent;
       const val = fieldValues[sec.fieldId];
       const hasText = val && val.text && val.text.trim().length > 10;
 
-      if (sec.parent && sec.parent !== currentParent) {
+      if (!collapsed && sec.parent && sec.parent !== currentParent) {
         currentParent = sec.parent;
         html += `<div class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/60 mt-4 mb-1 px-2">${sec.parentNumber}. ${esc(sec.parent)}</div>`;
       }
@@ -2795,17 +3279,22 @@ const Developer = (() => {
       const icon = isApproved ? 'check_circle' : isCurrent ? 'edit_note' : hasText ? 'edit' : 'radio_button_unchecked';
       const stateClass = isCurrent
         ? 'bg-primary/10 text-primary font-bold'
-        : isApproved
-          ? 'hover:bg-surface-container-low text-on-surface-variant'
-          : hasText
-            ? 'hover:bg-surface-container-low text-on-surface-variant'
-            : 'hover:bg-surface-container-low text-on-surface-variant/60';
+        : 'hover:bg-surface-container-low text-on-surface-variant';
 
-      html += `
-        <button onclick="Developer._cascadeGoTo(${i})" class="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs transition-all cursor-pointer ${stateClass}">
-          <span class="material-symbols-outlined text-xs ${dotClass}">${icon}</span>
-          <span class="truncate">${sec.number} ${esc(sec.title.substring(0, 28))}</span>
-        </button>`;
+      if (collapsed) {
+        html += `
+          <button onclick="Developer._cascadeGoTo(${i})" title="${esc(sec.number + ' ' + sec.title)}"
+            class="w-full flex flex-col items-center gap-0.5 py-1.5 rounded-lg text-[10px] transition-all cursor-pointer ${stateClass}">
+            <span class="material-symbols-outlined text-xs ${dotClass}">${icon}</span>
+            <span class="font-mono">${esc(sec.number)}</span>
+          </button>`;
+      } else {
+        html += `
+          <button onclick="Developer._cascadeGoTo(${i})" class="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs transition-all cursor-pointer ${stateClass}">
+            <span class="material-symbols-outlined text-xs ${dotClass}">${icon}</span>
+            <span class="truncate">${sec.number} ${esc(sec.title.substring(0, 28))}</span>
+          </button>`;
+      }
     }
     nav.innerHTML = html;
   }
@@ -2825,12 +3314,24 @@ const Developer = (() => {
     if (!sec) { showCelebration(); return; }
 
     activeFieldId = sec.fieldId;
+    _updateAiAffordance(sec);
 
     // WP sections (4.2.X) use a structured form with 5 tables instead
     // of a free-text editor. Header / Objectives / Tasks / Milestones /
     // Deliverables / Budget — directly mirroring Application Form Part B.
     if (isWpFormSection(sec)) {
       return renderWpFormSection(sec);
+    }
+
+    // 2.1.3 Project teams uses an editable 4-column table populated from
+    // project_partner_staff (staff selected in the Consortium tab).
+    if (sec.fieldId === 's2_1_3_staff_table') {
+      return renderStaffTableSection(sec);
+    }
+
+    // 2.1.5 Risk management — editable 4-column table over project_risks.
+    if (sec.fieldId === 's2_1_5_risk_table') {
+      return renderRiskTableSection(sec);
     }
 
     const val = fieldValues[sec.fieldId];
@@ -2979,6 +3480,470 @@ const Developer = (() => {
         }, 1500);
       });
     }
+  }
+
+  // 2.1.3 Project teams — editable staff table (mirrors EACEA form Part B).
+  // Rows are loaded from /v1/developer/projects/:id/staff-table; project_role
+  // and custom_skills are autosaved via PATCH /staff-table/:ppsId. The
+  // textarea below holds free-text on Outside resources / subcontracting and
+  // is autosaved as the s2_1_3_staff_table form field (same key as before so
+  // existing prose is preserved).
+  let _staffTableRows = [];
+
+  async function renderStaffTableSection(sec) {
+    const main = document.getElementById('dev-cascade-main');
+    if (!main) return;
+
+    const val = fieldValues[sec.fieldId] || {};
+    const outsideText = val.text || '';
+    const isApproved = cascadeApproved[sec.fieldId];
+
+    main.innerHTML = `
+      <div class="mb-4">
+        <div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 mb-1">${sec.parentNumber ? sec.parentNumber + '. ' + esc(sec.parent) : ''}</div>
+        <h2 class="font-headline text-lg font-bold text-on-surface">${sec.number} ${esc(sec.title)}</h2>
+      </div>
+
+      <details class="mb-4 group">
+        <summary class="text-xs font-bold text-primary cursor-pointer flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs group-open:rotate-90 transition-transform">chevron_right</span> Guía del formulario
+        </summary>
+        <div class="mt-2 text-xs text-on-surface-variant leading-relaxed bg-primary/5 rounded-lg p-3 border border-primary/10">
+          <p class="mb-1"><b>Project teams and staff:</b> Lista el equipo del proyecto (categoría A del presupuesto) por función/perfil. Esta tabla es exactamente la del formulario oficial.</p>
+          <p class="mb-1"><b>Outside resources:</b> Si necesitas competencias o recursos externos (subcontratación, secondments, contribuciones in-kind), explícalo en el campo de texto al final.</p>
+        </div>
+      </details>
+
+      <div class="mb-3 flex items-center justify-between">
+        <h3 class="font-headline text-sm font-bold text-on-surface">Project teams and staff</h3>
+        <span class="text-[11px] text-on-surface-variant">Editable · autoguardado</span>
+      </div>
+
+      <div id="staff-table-container" class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden mb-6">
+        <div class="px-4 py-6 text-center text-xs text-on-surface-variant">Cargando…</div>
+      </div>
+
+      <div class="mb-3">
+        <h3 class="font-headline text-sm font-bold text-on-surface">Outside resources (subcontracting, seconded staff, etc)</h3>
+        <p class="text-[11px] text-on-surface-variant mb-2">Si vais a obtener competencias fuera del consorcio (contribuciones de miembros, organizaciones socias, subcontratación), descríbelo aquí.</p>
+        <textarea id="staff-outside-textarea" class="w-full px-4 py-3 text-sm bg-white border border-outline-variant/30 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-relaxed" style="min-height:160px" placeholder="Describe contribuciones externas, subcontratación, recursos en especie...">${esc(outsideText)}</textarea>
+        <div class="text-[11px] text-on-surface-variant mt-1" id="staff-outside-wc">${wordCount(outsideText)} palabras</div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        ${cascadeIndex < flatSections.length - 1 ? `
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
+          </button>
+          <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
+            Saltar
+          </button>
+        ` : `
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 shadow-lg hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined text-lg">celebration</span> Finalizar borrador
+          </button>
+        `}
+        ${isApproved ? '<span class="text-xs text-green-600 font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Aprobada</span>' : ''}
+      </div>
+    `;
+
+    // Bind the outside-resources textarea (uses the same field_id as the old
+    // free-text 2.1.3, so existing prose stays where it was).
+    const ta = document.getElementById('staff-outside-textarea');
+    if (ta) {
+      autoGrow(ta);
+      ta.addEventListener('input', () => {
+        autoGrow(ta);
+        const wc = document.getElementById('staff-outside-wc');
+        if (wc) wc.textContent = wordCount(ta.value) + ' palabras';
+        clearTimeout(_saveTimer);
+        _saveTimer = setTimeout(() => {
+          const newText = ta.value;
+          if (!fieldValues[sec.fieldId]) fieldValues[sec.fieldId] = {};
+          fieldValues[sec.fieldId].text = newText;
+          API.put('/developer/instances/' + currentInstance.id + '/field', {
+            field_id: sec.fieldId, section_path: sec.id, text: newText,
+          }).catch(err => console.error('autosave outside resources:', err));
+        }, 1500);
+      });
+    }
+
+    // Load staff rows.
+    try {
+      _staffTableRows = await API.get(`/developer/projects/${currentProject.id}/staff-table`);
+    } catch (err) {
+      const c = document.getElementById('staff-table-container');
+      if (c) c.innerHTML = `<div class="px-4 py-4 text-xs text-red-700">Error al cargar el equipo: ${esc(err.message || err)}</div>`;
+      return;
+    }
+    _renderStaffTableRows();
+  }
+
+  function _renderStaffTableRows() {
+    const c = document.getElementById('staff-table-container');
+    if (!c) return;
+    if (!_staffTableRows.length) {
+      c.innerHTML = `
+        <div class="px-4 py-6 text-center">
+          <p class="text-sm text-on-surface-variant mb-2">No hay personas seleccionadas para este proyecto todavía.</p>
+          <p class="text-xs text-on-surface-variant/70">Ve a <button class="text-primary font-bold underline" onclick="Developer._prepTab('consorcio')">Consorcio → Equipo</button> y marca al menos una persona por organización.</p>
+        </div>`;
+      return;
+    }
+    c.innerHTML = `
+      <table class="w-full text-sm">
+        <thead class="bg-surface-container-lowest border-b border-outline-variant/30">
+          <tr>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:22%">Name and function</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:18%">Organisation</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:20%">Role / tasks</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:40%">Professional profile and expertise</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${_staffTableRows.map(r => `
+            <tr class="border-b border-outline-variant/10 align-top">
+              <td class="px-3 py-3">
+                <div class="font-bold text-sm text-on-surface">${esc(r.full_name || '—')}</div>
+                ${r.directory_role ? `<div class="text-xs italic text-on-surface-variant/70">${esc(r.directory_role)}</div>` : ''}
+              </td>
+              <td class="px-3 py-3 text-xs text-on-surface-variant">
+                ${esc(r.partner_legal_name || r.partner_name || '—')}
+                ${r.partner_role === 'applicant' ? '<div class="text-[10px] mt-1 inline-block px-1.5 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Coordinator</div>' : ''}
+              </td>
+              <td class="px-2 py-2">
+                <input type="text" data-pps-id="${r.id}" data-field="project_role" value="${esc(r.project_role || '')}" placeholder="ej. Project Manager — coord WP1, riesgo"
+                  class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30">
+              </td>
+              <td class="px-2 py-2">
+                <textarea data-pps-id="${r.id}" data-field="custom_skills" rows="4" placeholder="Skills, experiencia y aporte al proyecto"
+                  class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.custom_skills || '')}</textarea>
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    // Wire autosave per cell.
+    c.querySelectorAll('[data-pps-id]').forEach(input => {
+      let timer = null;
+      input.addEventListener('input', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          const ppsId = input.getAttribute('data-pps-id');
+          const field = input.getAttribute('data-field');
+          API.patch(`/developer/staff-table/${ppsId}`, { [field]: input.value })
+             .catch(err => console.error('staff-table autosave:', err));
+        }, 800);
+      });
+    });
+  }
+
+  // 2.1.5 Risk management — editable 4-column table.
+  let _risksRows = [];
+  let _risksWpsCache = [];
+
+  async function renderRiskTableSection(sec) {
+    const main = document.getElementById('dev-cascade-main');
+    if (!main) return;
+
+    const isApproved = cascadeApproved[sec.fieldId];
+
+    main.innerHTML = `
+      <div class="mb-4">
+        <div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 mb-1">${sec.parentNumber ? sec.parentNumber + '. ' + esc(sec.parent) : ''}</div>
+        <h2 class="font-headline text-lg font-bold text-on-surface">${sec.number} ${esc(sec.title)}</h2>
+      </div>
+
+      <details class="mb-4 group">
+        <summary class="text-xs font-bold text-primary cursor-pointer flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs group-open:rotate-90 transition-transform">chevron_right</span> Guía del formulario
+        </summary>
+        <div class="mt-2 text-xs text-on-surface-variant leading-relaxed bg-primary/5 rounded-lg p-3 border border-primary/10">
+          <p class="mb-1">Describe los riesgos críticos, incertidumbres o dificultades de implementación, y la estrategia para abordarlos.</p>
+          <p class="mb-1">Para cada riesgo indica <b>impacto</b> y <b>probabilidad</b> (low/medium/high), incluso después de aplicar las medidas mitigadoras.</p>
+          <p>Una buena gestión de riesgos es esencial para una buena gestión del proyecto.</p>
+        </div>
+      </details>
+
+      <div class="mb-3 flex items-center justify-between flex-wrap gap-2">
+        <h3 class="font-headline text-sm font-bold text-on-surface">Critical risks and risk-management strategy</h3>
+        <div class="flex items-center gap-2">
+          <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#1b1464] bg-secondary-fixed border border-[#1b1464]/20 hover:bg-secondary-fixed/80 transition-colors">
+            <span class="material-symbols-outlined text-sm">auto_awesome</span> Autocompletar con IA
+          </button>
+          <button id="risk-add-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 transition-colors">
+            <span class="material-symbols-outlined text-sm">add</span> Añadir riesgo
+          </button>
+        </div>
+      </div>
+
+      <div id="risk-table-container" class="voice-skip bg-white rounded-xl border border-outline-variant/30 overflow-hidden mb-6">
+        <div class="px-4 py-6 text-center text-xs text-on-surface-variant">Cargando…</div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        ${cascadeIndex < flatSections.length - 1 ? `
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
+          </button>
+          <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
+            Saltar
+          </button>
+        ` : `
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 shadow-lg hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined text-lg">celebration</span> Finalizar borrador
+          </button>
+        `}
+        ${isApproved ? '<span class="text-xs text-green-600 font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Aprobada</span>' : ''}
+      </div>
+    `;
+
+    document.getElementById('risk-add-btn').addEventListener('click', async () => {
+      try {
+        const r = await API.post(`/developer/projects/${currentProject.id}/risks`, {});
+        _risksRows.push(r);
+        _renderRiskTableRows();
+      } catch (err) { alert('No se pudo crear el riesgo: ' + (err.message || err)); }
+    });
+
+    document.getElementById('risk-ai-btn').addEventListener('click', async () => {
+      const btn = document.getElementById('risk-ai-btn');
+      if (_risksRows.length && !confirm(`Esto reemplazará los ${_risksRows.length} riesgo(s) existentes con un nuevo borrador generado por IA. ¿Continuar?`)) return;
+      const original = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando…';
+      try {
+        const rows = await API.post(`/developer/projects/${currentProject.id}/risks/ai-generate`, {});
+        _risksRows = rows || [];
+        _renderRiskTableRows();
+      } catch (err) {
+        alert('Error generando riesgos: ' + (err.message || err));
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = original;
+      }
+    });
+
+    try {
+      const [risks, wps] = await Promise.all([
+        API.get(`/developer/projects/${currentProject.id}/risks`),
+        _risksWpsCache.length ? Promise.resolve(_risksWpsCache) : API.get(`/developer/projects/${currentProject.id}/partners`).then(() => null).catch(() => null),
+      ]);
+      _risksRows = risks || [];
+      // Use the WPs the cascade already has loaded.
+      _risksWpsCache = (window.__projectWps || []).slice();
+    } catch (err) {
+      const c = document.getElementById('risk-table-container');
+      if (c) c.innerHTML = `<div class="px-4 py-4 text-xs text-red-700">Error al cargar riesgos: ${esc(err.message || err)}</div>`;
+      return;
+    }
+    _renderRiskTableRows();
+  }
+
+  function _renderRiskTableRows() {
+    const c = document.getElementById('risk-table-container');
+    if (!c) return;
+    if (!_risksRows.length) {
+      c.innerHTML = `
+        <div class="px-4 py-8 text-center">
+          <span class="material-symbols-outlined text-3xl text-on-surface-variant/40 mb-2 block">warning</span>
+          <p class="text-sm text-on-surface-variant mb-1">No hay riesgos registrados todavía.</p>
+          <p class="text-xs text-on-surface-variant/70">Pulsa "Añadir riesgo" para empezar.</p>
+        </div>`;
+      return;
+    }
+    const wpOptions = (window.__projectWps || _risksWpsCache || [])
+      .map(w => `<option value="${esc(w.id)}">${esc(w.code || w.title || '')}</option>`)
+      .join('');
+    c.innerHTML = `
+      <table class="w-full text-sm">
+        <thead class="bg-surface-container-lowest border-b border-outline-variant/30">
+          <tr>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:6%">Risk No</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:42%">Description (incluye impacto + probabilidad)</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:10%">WP</th>
+            <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:38%">Mitigation measures</th>
+            <th class="px-2 py-2" style="width:4%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          ${_risksRows.map(r => `
+            <tr class="border-b border-outline-variant/10 align-top" data-risk-id="${esc(r.id)}">
+              <td class="px-2 py-2">
+                <input type="text" data-risk-id="${esc(r.id)}" data-field="risk_no" value="${esc(r.risk_no || '')}" placeholder="R1"
+                  class="w-full px-2 py-1.5 text-xs font-mono bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30">
+              </td>
+              <td class="px-2 py-2">
+                <textarea data-risk-id="${esc(r.id)}" data-field="description" rows="3" placeholder="Describe el riesgo. Indica impacto (low/med/high) y probabilidad."
+                  class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.description || '')}</textarea>
+              </td>
+              <td class="px-2 py-2">
+                <select data-risk-id="${esc(r.id)}" data-field="wp_id" class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15">
+                  <option value="">(cross)</option>
+                  ${wpOptions.replace(`value="${esc(r.wp_id)}"`, `value="${esc(r.wp_id)}" selected`)}
+                </select>
+              </td>
+              <td class="px-2 py-2">
+                <textarea data-risk-id="${esc(r.id)}" data-field="mitigation" rows="3" placeholder="Acciones para prevenir o mitigar este riesgo."
+                  class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.mitigation || '')}</textarea>
+              </td>
+              <td class="px-1 py-2 text-center">
+                <button data-risk-del="${esc(r.id)}" class="text-on-surface-variant/50 hover:text-red-600 transition-colors" title="Eliminar riesgo">
+                  <span class="material-symbols-outlined text-base">delete</span>
+                </button>
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    // Wire autosave per cell.
+    c.querySelectorAll('[data-risk-id][data-field]').forEach(input => {
+      let timer = null;
+      const handler = () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          const id = input.getAttribute('data-risk-id');
+          const field = input.getAttribute('data-field');
+          API.patch(`/developer/risks/${id}`, { [field]: input.value })
+             .catch(err => console.error('risk autosave:', err));
+        }, 700);
+      };
+      input.addEventListener('input', handler);
+      input.addEventListener('change', handler);
+    });
+    // Delete buttons.
+    c.querySelectorAll('[data-risk-del]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.getAttribute('data-risk-del');
+        if (!confirm('¿Eliminar este riesgo?')) return;
+        try {
+          await API.del(`/developer/risks/${id}`);
+          _risksRows = _risksRows.filter(r => r.id !== id);
+          _renderRiskTableRows();
+        } catch (err) { alert('No se pudo eliminar: ' + (err.message || err)); }
+      });
+    });
+  }
+
+  // 2.1.5 Risks — AI evaluator (drawer flow). Loads a report and renders
+  // gaps + per-row suggestions with one-click "Apply" buttons.
+  let _risksReport = null;
+
+  async function aiEvaluateRisks() {
+    const btn = document.getElementById('ai-eval-risks-btn');
+    const target = document.getElementById('ai-risks-report');
+    if (!target) return;
+    const original = btn ? btn.innerHTML : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">progress_activity</span><span>Evaluando…</span>';
+    }
+    target.innerHTML = `
+      <div class="rounded-lg border border-outline-variant/20 p-3 text-xs text-on-surface-variant text-center">
+        <span class="material-symbols-outlined text-base animate-spin align-middle">progress_activity</span>
+        Analizando ${(_risksRows || []).length} riesgos…
+      </div>`;
+    try {
+      _risksReport = await API.post(`/developer/projects/${currentProject.id}/risks/ai-evaluate`, {});
+      _renderRisksReport();
+    } catch (err) {
+      target.innerHTML = `<div class="text-xs text-red-700 p-3 rounded-lg bg-red-50 border border-red-200">${esc(err.message || err)}</div>`;
+    } finally {
+      if (btn) { btn.disabled = false; btn.innerHTML = original; }
+    }
+  }
+
+  function _renderRisksReport() {
+    const target = document.getElementById('ai-risks-report');
+    if (!target || !_risksReport) return;
+    const r = _risksReport;
+    const scoreColor = r.score >= 8 ? 'text-green-600' : r.score >= 6 ? 'text-amber-600' : 'text-red-600';
+    const sevColor = (sev) => sev === 'high' ? 'text-red-700 bg-red-50 border-red-200'
+                              : sev === 'medium' ? 'text-amber-700 bg-amber-50 border-amber-200'
+                              : 'text-blue-700 bg-blue-50 border-blue-200';
+    target.innerHTML = `
+      <!-- Score + summary -->
+      <div class="rounded-lg bg-surface-container-lowest border border-outline-variant/20 p-3 mb-3">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="font-headline text-2xl font-extrabold ${scoreColor}">${r.score}</span>
+          <span class="text-xs text-on-surface-variant">/ 10</span>
+          <span class="ml-auto text-[10px] text-on-surface-variant uppercase tracking-wider">${r.risks_count} riesgos</span>
+        </div>
+        <p class="text-xs text-on-surface leading-snug">${esc(r.summary || '')}</p>
+      </div>
+
+      ${r.gaps.length ? `
+        <div class="mb-3">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant/70 mb-1">Lagunas detectadas</div>
+          <div class="space-y-1.5">
+            ${r.gaps.map(g => `
+              <div class="rounded-lg border p-2 text-xs ${sevColor(g.severity)}">
+                <div class="font-bold leading-snug">${esc(g.title)}</div>
+                <div class="text-[11px] mt-0.5 opacity-90">${esc(g.why_critical)}</div>
+              </div>`).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      ${r.row_suggestions.length ? `
+        <div>
+          <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant/70 mb-1">Sugerencias por fila</div>
+          <div class="space-y-2">
+            ${r.row_suggestions.map((s, i) => {
+              const risk = (_risksRows || []).find(rr => rr.id === s.row_id);
+              const label = risk ? (risk.risk_no || s.row_id.slice(0, 4)) : s.row_id.slice(0, 4);
+              return `
+                <div class="rounded-lg border border-outline-variant/30 p-2 text-xs bg-white" data-suggestion-idx="${i}">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="font-bold text-on-surface">${esc(label)}</span>
+                    <span class="text-[10px] uppercase tracking-wider text-on-surface-variant">campo</span>
+                    <span class="font-mono text-[11px] text-primary">${esc(s.field)}</span>
+                  </div>
+                  <div class="text-[11px] text-on-surface-variant mb-1"><b>Actual:</b> ${esc((s.current || '').slice(0, 120))}${s.current && s.current.length > 120 ? '…' : ''}</div>
+                  <div class="text-[11px] text-on-surface mb-1"><b>Sugerido:</b> ${esc((s.suggested || '').slice(0, 220))}${s.suggested && s.suggested.length > 220 ? '…' : ''}</div>
+                  <div class="text-[10px] italic text-on-surface-variant mb-2">${esc(s.why)}</div>
+                  <div class="flex items-center gap-1.5">
+                    <button data-apply-idx="${i}" class="text-[11px] px-2 py-1 rounded font-bold text-white bg-emerald-600 hover:bg-emerald-700">Aplicar</button>
+                    <button data-discard-idx="${i}" class="text-[11px] px-2 py-1 rounded font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low">Descartar</button>
+                  </div>
+                </div>`;
+            }).join('')}
+          </div>
+        </div>
+      ` : '<p class="text-[11px] italic text-on-surface-variant">Sin sugerencias por fila.</p>'}
+    `;
+    target.querySelectorAll('[data-apply-idx]').forEach(btn => {
+      btn.addEventListener('click', () => _applyRiskSuggestion(parseInt(btn.getAttribute('data-apply-idx'), 10)));
+    });
+    target.querySelectorAll('[data-discard-idx]').forEach(btn => {
+      btn.addEventListener('click', () => _discardRiskSuggestion(parseInt(btn.getAttribute('data-discard-idx'), 10)));
+    });
+  }
+
+  async function _applyRiskSuggestion(idx) {
+    if (!_risksReport) return;
+    const s = _risksReport.row_suggestions[idx];
+    if (!s) return;
+    try {
+      await API.patch(`/developer/risks/${s.row_id}`, { [s.field]: s.suggested });
+      // Update in-memory model and re-render the on-page table.
+      const row = (_risksRows || []).find(r => r.id === s.row_id);
+      if (row) row[s.field] = s.suggested;
+      _renderRiskTableRows();
+      // Mark suggestion as applied (remove from list, re-render report).
+      _risksReport.row_suggestions.splice(idx, 1);
+      _renderRisksReport();
+    } catch (err) {
+      alert('No se pudo aplicar la sugerencia: ' + (err.message || err));
+    }
+  }
+
+  function _discardRiskSuggestion(idx) {
+    if (!_risksReport) return;
+    _risksReport.row_suggestions.splice(idx, 1);
+    _renderRisksReport();
   }
 
   // Grow a textarea to fit its content so there's no inner scrollbar.
@@ -3207,21 +4172,68 @@ const Developer = (() => {
     if (!panel) return;
 
     const sec = flatSections.find(s => s.fieldId === activeFieldId);
-    if (!sec) { panel.innerHTML = ''; panel.style.display = ''; return; }
+    if (!sec) { panel.innerHTML = '<p class="text-xs text-on-surface-variant/60 italic">Selecciona una sección.</p>'; return; }
 
-    // WP form sections (4.2.X) work with structured tables — the generic
-    // "Improve / Refine" buttons don't apply. Hide the panel entirely so the
-    // tables get full horizontal width.
-    if (isWpFormSection(sec)) {
-      panel.style.display = 'none';
-      panel.innerHTML = '';
+    // Sections backed by structured tables (WPs, staff, risks) need their own
+    // AI affordances. The generic "Improve / Refine" flows operate on a single
+    // text field and don't fit here, so we surface the table-specific actions
+    // that exist today + flag the ones we're about to build.
+    const isRisks = sec.fieldId === 's2_1_5_risk_table';
+    const isStaff = sec.fieldId === 's2_1_3_staff_table';
+    const isWp    = isWpFormSection(sec);
+    if (isRisks || isStaff || isWp) {
+      let html = '';
+      if (isRisks) {
+        html = `
+          <div class="space-y-2 mb-4">
+            <button onclick="Developer._aiEvaluateRisks()" id="ai-eval-risks-btn"
+              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-sm transition-colors">
+              <span class="material-symbols-outlined text-base text-[#fbff12]">trending_up</span>
+              <div class="text-left">
+                <div>Evaluar tabla con IA</div>
+                <div class="text-[10px] font-normal text-white/80">Diagnóstico + sugerencias por fila</div>
+              </div>
+            </button>
+            <button onclick="document.getElementById('risk-ai-btn')?.click(); Developer._toggleAiDrawer();"
+              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-sm transition-colors">
+              <span class="material-symbols-outlined text-base text-[#fbff12]">auto_awesome</span>
+              <div class="text-left">
+                <div>Autocompletar con IA</div>
+                <div class="text-[10px] font-normal text-white/75">Regenera ≥8 riesgos desde cero</div>
+              </div>
+            </button>
+          </div>
+          <div id="ai-risks-report"></div>
+        `;
+      } else if (isStaff) {
+        html = `
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
+            Hoy esta tabla se rellena desde <b>Consorcio → Equipo</b> (selección manual + skills propios del proyecto).
+          </p>
+          <div class="rounded-lg bg-amber-50 border border-amber-200 p-3">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-amber-700 mb-1">Próxima iteración</div>
+            <p class="text-xs text-amber-900 leading-relaxed">
+              <b>Evaluar equipo con IA</b> (cobertura, balance entre partners, alineación con tareas) y
+              <b>Refinar skills fila a fila</b> aún no están conectados.
+            </p>
+          </div>`;
+      } else {
+        html = `
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
+            Cada Work Package tiene su botón "<b>AI fill</b>" en la card (rellena Objectives, Tasks, Milestones y Deliverables).
+          </p>
+          <div class="rounded-lg bg-amber-50 border border-amber-200 p-3">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-amber-700 mb-1">Próxima iteración</div>
+            <p class="text-xs text-amber-900 leading-relaxed">
+              <b>Evaluar coherencia entre WPs</b> y <b>refinar tasks/MS/D fila a fila</b> aún no están conectados.
+            </p>
+          </div>`;
+      }
+      panel.innerHTML = html;
       return;
     }
-    panel.style.display = '';
 
     panel.innerHTML = `
-      <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 mb-3">Panel de IA</h3>
-
       <!-- Criteria block removed by design: redundant with form guidance + AI eval pipeline -->
       ${false ? `
         <div class="mb-4">
@@ -3340,9 +4352,44 @@ const Developer = (() => {
         </div>
 
         <!-- Actions -->
-        <div class="flex justify-end gap-3">
+        <div class="flex justify-end gap-3 flex-wrap items-end">
           <button onclick="Developer._phase(2)" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors">
             <span class="material-symbols-outlined text-sm">edit_note</span> Seguir editando
+          </button>
+          <div class="flex flex-col gap-1">
+            <label for="export-lang" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Idioma de descarga</label>
+            <select id="export-lang" class="px-3 py-2.5 rounded-xl bg-white border border-outline-variant text-on-surface text-sm focus:border-primary outline-none">
+              <option value="">Mismo que idioma de trabajo</option>
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="it">Italiano</option>
+              <option value="pt">Português</option>
+              <option value="nl">Nederlands</option>
+              <option value="pl">Polski</option>
+              <option value="ro">Română</option>
+              <option value="el">Ελληνικά</option>
+              <option value="cs">Čeština</option>
+              <option value="da">Dansk</option>
+              <option value="fi">Suomi</option>
+              <option value="sv">Svenska</option>
+              <option value="hu">Magyar</option>
+              <option value="bg">Български</option>
+              <option value="hr">Hrvatski</option>
+              <option value="sk">Slovenčina</option>
+              <option value="sl">Slovenščina</option>
+              <option value="et">Eesti</option>
+              <option value="lv">Latviešu</option>
+              <option value="lt">Lietuvių</option>
+              <option value="is">Íslenska</option>
+              <option value="no">Norsk</option>
+              <option value="sr">Srpski</option>
+              <option value="tr">Türkçe</option>
+            </select>
+          </div>
+          <button id="btn-export-form-b" onclick="Developer._exportFormB()" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-white bg-on-surface hover:bg-on-surface/90 shadow-lg transition-all">
+            <span class="material-symbols-outlined text-sm">description</span> Exportar Application Form (Part B) — DOCX
           </button>
           <button onclick="Developer._sendToEvaluator()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-primary hover:bg-primary/90 shadow-lg transition-all ${completed < totalSections ? 'opacity-50' : ''}">
             <span class="material-symbols-outlined text-sm">verified</span> Enviar al evaluador
@@ -3382,6 +4429,45 @@ const Developer = (() => {
     if (phase === 2) { renderCascadeSection(); renderCascadeNav(); }
   }
 
+  async function exportFormPartB() {
+    if (!currentProject?.id) return;
+    const btn = document.getElementById('btn-export-form-b');
+    const original = btn ? btn.innerHTML : '';
+    const targetLang = (document.getElementById('export-lang')?.value || '').trim();
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = targetLang
+        ? '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Traduciendo y generando…'
+        : '<span class="material-symbols-outlined text-sm animate-spin">progress_activity</span> Generando…';
+    }
+    try {
+      const token = API.getToken();
+      const url = `/v1/exporter/projects/${currentProject.id}/form-part-b.docx${targetLang ? `?lang=${encodeURIComponent(targetLang)}` : ''}`;
+      const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+      let res = await fetch(url, { credentials: 'include', headers });
+      if (res.status === 401) {
+        if (await API.tryRefresh()) {
+          const t2 = API.getToken();
+          res = await fetch(url, { credentials: 'include', headers: t2 ? { 'Authorization': `Bearer ${t2}` } : {} });
+        }
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+      const blob = await res.blob();
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      const suffix = targetLang ? `_${targetLang}` : '';
+      a.download = `${(currentProject.name || 'project').replace(/[^a-z0-9._-]/gi, '_')}_FormPartB${suffix}.docx`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(a.href);
+    } catch (err) {
+      alert('Error generando el formulario: ' + (err.message || err));
+    } finally {
+      if (btn) { btn.disabled = false; btn.innerHTML = original; }
+    }
+  }
+
   function goPhase(p) {
     switch (p) {
       case 11: renderGanttPhase(); break;
@@ -3392,8 +4478,118 @@ const Developer = (() => {
   }
 
   function goPrepTab(tab) {
+    if (tab === 'eform') { renderEformReport(); return; }
     prepSubTab = tab;
     renderPrepStudio(tab);
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+     NA copy-paste report: each question + answer + copy button,
+     plus a Word download. Only reachable for National-Agency forms.
+     ══════════════════════════════════════════════════════════════ */
+  async function renderEformReport() {
+    phase = 'eform';
+    const el = document.getElementById('developer-content');
+    el.innerHTML = renderPhaseTabs('eform') + `
+      <div class="max-w-3xl py-16 text-center text-on-surface-variant">
+        <span class="material-symbols-outlined animate-spin">progress_activity</span> Cargando respuestas...
+      </div>`;
+
+    if (!currentInstance) {
+      el.innerHTML = renderPhaseTabs('eform') + `<p class="text-sm text-error py-8 text-center">Genera primero el borrador en la pestaña Escribir.</p>`;
+      return;
+    }
+
+    let data;
+    try {
+      data = await API.get('/developer/instances/' + currentInstance.id + '/eform-answers');
+    } catch (e) {
+      el.innerHTML = renderPhaseTabs('eform') + `<p class="text-sm text-error py-8 text-center">Error: ${esc(e.message)}</p>`;
+      return;
+    }
+
+    const totalAnswered = (data.sections || []).reduce((n, s) => n + s.questions.filter(q => q.text && q.text.trim()).length, 0);
+
+    const sectionsHtml = (data.sections || []).map(sec => {
+      const qsHtml = sec.questions.map(q => {
+        const over = q.char_limit && q.chars > q.char_limit;
+        const counter = q.char_limit
+          ? `<span class="text-[11px] font-bold ${over ? 'text-error' : 'text-on-surface-variant'}">${q.chars}/${q.char_limit} car.${over ? ' ¡excede!' : ''}</span>`
+          : `<span class="text-[11px] text-on-surface-variant">${q.chars} car.</span>`;
+        const hasText = q.text && q.text.trim();
+        const encoded = encodeURIComponent(q.text || '');
+        return `
+          <div class="rounded-xl border border-outline-variant/30 bg-surface-container-lowest p-4 mb-3">
+            <div class="flex items-start justify-between gap-3 mb-2">
+              <div class="text-sm font-bold text-on-surface">${q.number ? esc(q.number) + ' ' : ''}${esc(q.title)}</div>
+              <div class="flex items-center gap-2 shrink-0">
+                ${counter}
+                <button onclick="Developer._copyAnswer(this, '${encoded}')" ${hasText ? '' : 'disabled'}
+                  class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold ${hasText ? 'text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/85' : 'text-on-surface-variant bg-surface-container-low cursor-not-allowed'} transition-colors">
+                  <span class="material-symbols-outlined text-xs">content_copy</span> Copiar
+                </button>
+              </div>
+            </div>
+            <div class="text-[13px] leading-relaxed whitespace-pre-wrap ${hasText ? 'text-on-surface' : 'text-on-surface-variant/60 italic'}">${hasText ? esc(q.text) : 'Sin redactar todavía'}</div>
+          </div>`;
+      }).join('');
+      return `
+        <div class="mb-6">
+          <h3 class="font-headline text-sm font-extrabold uppercase tracking-wide text-primary mb-3">${sec.number ? esc(sec.number) + '. ' : ''}${esc(sec.title)}</h3>
+          ${qsHtml}
+        </div>`;
+    }).join('');
+
+    el.innerHTML = renderPhaseTabs('eform') + `
+      <div class="max-w-3xl">
+        <div class="flex items-start justify-between gap-4 mb-2">
+          <div>
+            <h2 class="font-headline text-xl font-bold">Copiar al formulario web</h2>
+            <p class="text-sm text-on-surface-variant">Esta convocatoria <b>no se sube como documento</b>: copia cada respuesta en su campo del eForm de la Agencia Nacional. ${totalAnswered} respuestas redactadas.</p>
+          </div>
+          <button id="eform-dl" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-primary border border-primary/30 hover:bg-primary/5 transition-colors shrink-0">
+            <span class="material-symbols-outlined text-sm">download</span> Descargar Word
+          </button>
+        </div>
+        <div class="mt-5">${sectionsHtml || '<p class="text-sm text-on-surface-variant py-8 text-center">Aún no hay respuestas. Genera el borrador en la pestaña Escribir.</p>'}</div>
+      </div>`;
+
+    document.getElementById('eform-dl')?.addEventListener('click', downloadEform);
+  }
+
+  async function downloadEform() {
+    try {
+      const res = await fetch('/v1/developer/instances/' + currentInstance.id + '/eform-export.docx', {
+        headers: { Authorization: `Bearer ${localStorage.getItem('jwt') || ''}` },
+      });
+      if (!res.ok) throw new Error('Export failed');
+      const blob = await res.blob();
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${(currentProject?.name || 'project').replace(/[^a-z0-9._-]/gi, '_')}_eForm.docx`;
+      document.body.appendChild(a); a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    } catch (e) { Toast.show('Error al descargar: ' + e.message, 'err'); }
+  }
+
+  function copyAnswer(btn, encoded) {
+    const text = decodeURIComponent(encoded || '');
+    if (!text) return;
+    const done = () => {
+      const prev = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-xs">check</span> Copiado';
+      setTimeout(() => { btn.innerHTML = prev; }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+    } else { fallbackCopy(text, done); }
+  }
+  function fallbackCopy(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { Toast.show('No se pudo copiar', 'err'); }
+    ta.remove();
   }
 
   /* ── Consorcio actions ──────────────────────────────────────── */
@@ -3431,10 +4627,38 @@ const Developer = (() => {
     } catch (err) { Toast.show('Error: ' + err.message, 'err'); }
   }
 
-  async function toggleEuProject(partnerId, euProjectId, selected) {
+  async function toggleEuProject(partnerId, projectIdentifier, selected) {
     try {
-      await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/toggle-eu-project', { eu_project_id: euProjectId, selected });
+      await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/toggle-eu-project', { project_identifier: projectIdentifier, selected });
+      const sel = document.getElementById('eu-sel-' + partnerId);
+      if (sel) {
+        const items = document.querySelectorAll('#eu-list-' + partnerId + ' .eu-item');
+        let n = 0;
+        items.forEach(it => { if (it.dataset.selected === '1') n++; });
+        sel.textContent = n;
+      }
     } catch (err) { Toast.show('Error: ' + err.message, 'err'); }
+  }
+
+  function filterEuProjects(partnerId) {
+    const yearSel = document.getElementById('eu-year-' + partnerId);
+    const roleSel = document.getElementById('eu-role-' + partnerId);
+    const onlySelChk = document.getElementById('eu-only-sel-' + partnerId);
+    const year = yearSel ? yearSel.value : '';
+    const role = roleSel ? roleSel.value.toLowerCase() : '';
+    const onlySel = !!(onlySelChk && onlySelChk.checked);
+    const items = document.querySelectorAll('#eu-list-' + partnerId + ' .eu-item');
+    let visible = 0;
+    items.forEach(it => {
+      const okYear = !year || it.dataset.year === year;
+      const okRole = !role || (it.dataset.role || '') === role;
+      const okSel  = !onlySel || it.dataset.selected === '1';
+      const ok = okYear && okRole && okSel;
+      it.style.display = ok ? '' : 'none';
+      if (ok) visible++;
+    });
+    const cnt = document.getElementById('eu-cnt-' + partnerId);
+    if (cnt) cnt.textContent = visible;
   }
 
   async function linkOrg(partnerId) {
@@ -4212,6 +5436,10 @@ const Developer = (() => {
         </div>
       </div>
       ${rows.length ? `
+      <div class="text-[11px] text-on-surface-variant/80 mb-2 px-2 py-1.5 bg-blue-50 border border-blue-200 rounded-md flex items-start gap-1.5">
+        <span class="material-symbols-outlined text-base text-blue-700">info</span>
+        <span><strong>Líder y participantes</strong> se derivan automáticamente del presupuesto: solo las entidades con importe asignado en este WP pueden liderar o participar en sus tasks. Ajusta el presupuesto en <em>Diseñar</em> para cambiar la elegibilidad.</span>
+      </div>
       <div class="overflow-x-auto">
         <table class="w-full text-xs border-collapse">
           <thead class="bg-primary/5">
@@ -4219,7 +5447,8 @@ const Developer = (() => {
               <th class="text-left p-2 border border-outline-variant/30 w-16">Task No</th>
               <th class="text-left p-2 border border-outline-variant/30 w-48">Task Name</th>
               <th class="text-left p-2 border border-outline-variant/30">Description</th>
-              <th class="text-left p-2 border border-outline-variant/30 w-56">Participants</th>
+              <th class="text-left p-2 border border-outline-variant/30 w-44">Líder</th>
+              <th class="text-left p-2 border border-outline-variant/30 w-56">Participantes (presupuesto)</th>
               <th class="text-left p-2 border border-outline-variant/30 w-40">In-kind / Subcontracting</th>
               <th class="border border-outline-variant/30 w-8"></th>
             </tr>
@@ -4235,32 +5464,45 @@ const Developer = (() => {
       el.addEventListener('change', handler);
       if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') el.addEventListener('blur', handler);
     });
+    host.querySelectorAll('[data-task-lead]').forEach(sel => {
+      sel.addEventListener('change', () => _wpSaveTask(sel.dataset.taskLead, 'lead_partner_id', sel.value || null, sel));
+    });
     host.querySelectorAll('[data-task-del]').forEach(b => b.addEventListener('click', () => _wpDelTask(b.dataset.taskDel, wpId, partners, wpCode)));
-    host.querySelectorAll('[data-task-part-toggle]').forEach(cb => cb.addEventListener('change', () => _wpToggleParticipant(cb.dataset.taskPartToggle, cb.dataset.partnerId, cb.checked, wpId, partners, wpCode)));
-    host.querySelectorAll('[data-task-part-role]').forEach(sel => sel.addEventListener('change', () => _wpSetParticipantRole(sel.dataset.taskPartRole, sel.dataset.partnerId, sel.value, wpId, partners, wpCode)));
   }
 
   function _wpTaskRow(t, partners, wpNum, autoIdx) {
     const code = t.code || `T${wpNum}.${autoIdx}`;
-    const partsByPartner = Object.fromEntries((t.participants || []).map(p => [p.partner_id, p]));
-    const partsHtml = partners.length
-      ? `<details class="text-[11px]"><summary class="cursor-pointer text-primary font-semibold">${(t.participants || []).length} partner(s)</summary>
-          <div class="mt-1 space-y-1">
-            ${partners.map(p => {
-              const cur = partsByPartner[p.id];
-              const checked = cur ? 'checked' : '';
-              const role = cur?.role || 'BEN';
-              return `<div class="flex items-center gap-1">
-                <input type="checkbox" data-task-part-toggle="${esc(t.id)}" data-partner-id="${esc(p.id)}" ${checked}>
-                <span class="flex-1 truncate">${esc(p.name || '')}</span>
-                <select data-task-part-role="${esc(t.id)}" data-partner-id="${esc(p.id)}" ${cur ? '' : 'disabled'} class="text-[10px] border border-outline-variant/30 rounded px-1 py-0.5 bg-white">
-                  ${WP_TASK_ROLES.map(r => `<option value="${r}" ${role === r ? 'selected' : ''}>${r}</option>`).join('')}
-                </select>
-              </div>`;
-            }).join('')}
-          </div>
-        </details>`
-      : '<span class="text-[10px] italic text-on-surface-variant/60">Añade partners al proyecto</span>';
+    const eligibleSet = new Set(t.eligible_partner_ids || []);
+    const eligiblePartners = partners.filter(p => eligibleSet.has(p.id));
+    const currentLead = t.lead_partner_id || '';
+
+    // Leader select: only eligible partners
+    const leadHtml = eligiblePartners.length
+      ? `<select data-task-lead="${esc(t.id)}" class="w-full px-1 py-1 text-[11px] bg-transparent border border-outline-variant/30 rounded focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30">
+          <option value="">— Sin líder —</option>
+          ${eligiblePartners.map(p => {
+            const sel = currentLead === p.id ? 'selected' : '';
+            return `<option value="${esc(p.id)}" ${sel}>${esc(p.name || '')}</option>`;
+          }).join('')}
+        </select>`
+      : '<span class="text-[10px] italic text-on-surface-variant/60">Sin partners con presupuesto en este WP</span>';
+
+    // Participants list: budget-driven, locked
+    const partsHtml = eligiblePartners.length
+      ? `<div class="flex flex-wrap gap-1">
+          ${eligiblePartners.map(p => {
+            const isLead = p.id === currentLead;
+            const cls = isLead
+              ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
+              : 'bg-primary/10 text-primary border-primary/20';
+            const icon = isLead ? 'workspace_premium' : 'check_circle';
+            const title = isLead ? 'Líder de la task' : 'Recibe presupuesto en este WP · participa obligatoriamente';
+            return `<span class="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 rounded border ${cls}" title="${esc(title)}">
+              <span class="material-symbols-outlined text-[11px]">${icon}</span>${esc(p.name || '')}
+            </span>`;
+          }).join('')}
+        </div>`
+      : '<span class="text-[10px] italic text-on-surface-variant/60">Sin partners con presupuesto en este WP. Asigna importes en Diseñar.</span>';
 
     return `<tr class="align-top">
       <td class="p-1.5 border border-outline-variant/30 font-mono text-[11px] text-on-surface-variant">
@@ -4272,6 +5514,7 @@ const Developer = (() => {
       <td class="p-1.5 border border-outline-variant/30">
         <textarea data-no-voice="1" data-task-fld="description" data-task-id="${esc(t.id)}" rows="2" class="w-full px-1 py-0.5 bg-transparent border-0 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30 rounded resize-none">${esc(t.description || '')}</textarea>
       </td>
+      <td class="p-1.5 border border-outline-variant/30">${leadHtml}</td>
       <td class="p-1.5 border border-outline-variant/30">${partsHtml}</td>
       <td class="p-1.5 border border-outline-variant/30">
         <input data-task-fld="in_kind_subcontracting" data-task-id="${esc(t.id)}" value="${esc(t.in_kind_subcontracting || '')}" placeholder="No / Yes (qué)" class="w-full px-1 py-0.5 bg-transparent border-0 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary/30 rounded">
@@ -4591,9 +5834,25 @@ const Developer = (() => {
 
   /* ── Card 5: Estimated budget — Resources (read-only pivot) ── */
 
+  // Coalesce concurrent refresh calls so rendering N WP cards in parallel
+  // only triggers ONE backend rebuild per project.
+  const _budgetRefreshInflight = new Map(); // projectId → Promise
+
+  async function _ensureBudgetFresh(projectId) {
+    if (!projectId) return;
+    if (_budgetRefreshInflight.has(projectId)) return _budgetRefreshInflight.get(projectId);
+    const p = API.post(`/developer/projects/${projectId}/budget/refresh`)
+      .catch(err => console.warn('[Writer] budget refresh failed:', err.message))
+      .finally(() => _budgetRefreshInflight.delete(projectId));
+    _budgetRefreshInflight.set(projectId, p);
+    return p;
+  }
+
   async function _wpRenderBudgetCard(wpId) {
     const host = document.getElementById('wp-card-budget');
     if (!host) return;
+    // Always sync budget v2 with the calc_state before reading.
+    if (currentProject?.id) await _ensureBudgetFresh(currentProject.id);
     let data;
     try { data = await API.get(`/developer/wp/${wpId}/budget`); }
     catch (err) { host.innerHTML = `<span class="text-error text-xs">Error: ${esc(err.message || '')}</span>`; return; }
@@ -4806,14 +6065,17 @@ const Developer = (() => {
     _deleteDoc: deleteDoc,
     _phase: goPhase,
     _prepTab: goPrepTab,
+    _copyAnswer: copyAnswer,
     _linkOrg: linkOrg,
     _selectVariant: selectVariant,
     _generateVariant: generateVariant,
     _saveCustomText: saveCustomText,
+    _improveConnection: improveConnection,
     _saveStaffSkills: saveStaffSkills,
     _toggleStaff: toggleStaff,
     _setStaffRole: setStaffRole,
     _toggleEuProject: toggleEuProject,
+    _filterEuProjects: filterEuProjects,
     _addExtraStaff: addExtraStaff,
     _updateExtraStaff: updateExtraStaff,
     _removeExtraStaff: removeExtraStaff,
@@ -4831,6 +6093,10 @@ const Developer = (() => {
     _selectSection: selectSection,
     _generateField: generateField,
     _markReviewed: markReviewed,
+    _exportFormB: exportFormPartB,
+    _toggleAiDrawer: _toggleAiDrawer,
+    _toggleNav: _toggleNavCollapsed,
+    _aiEvaluateRisks: aiEvaluateRisks,
     _aiImprove: aiImprove,
     _aiImproveCustom: aiImproveCustom,
     _aiRefine: aiRefine,

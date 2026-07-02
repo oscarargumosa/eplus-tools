@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-FCT-01-05",
+  "ccm2Id": "45763550",
+  "callIdentifier": "HORIZON-CL3-2023-FCT-01",
+  "callTitle": "",
+  "title": "Crime as a service",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Artificial Intelligence\",\"Fight against criminality\",\"Cybercrime\",\"Fight against crime and terrorism\",\"Police authorities\",\"Digital Agenda\",\"Organised crime\",\"policy makers\",\"Police Authorities\",\"security institutions\",\"Security Union Strategy\",\"organised crime\",\"criminal services\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-FCT-01-05.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.954Z"
+}

@@ -1,0 +1,76 @@
+{
+  "source": "bdns",
+  "source_id": "897936",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE EMPLEO, EMPRESA Y TRABAJO AUTÓNOMO",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "Orden de 9 de abril de 2026, de la CEETA. Línea 3. Ayudas a personas trabajadoras autónomas o pymes cuyo domicilio de actividad no se encuentre recogido en el Anexo I y que hayan sido beneficiarias de la ayuda regulada en RDL 5/2026. MINIMIS PESCA Y ACUI",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-09",
+  "open_date": "2026-04-10",
+  "deadline": "2026-10-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897936",
+  "documents": [
+    {
+      "label": "corrección errores 1",
+      "url": null
+    },
+    {
+      "label": "corrección errores",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/boja/2026/67/c01/1",
+  "text_inicio": "El día siguiente al de la publicación en BOJA",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 717/2014 de minimis, Pesca y acuicultura",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.297Z"
+}

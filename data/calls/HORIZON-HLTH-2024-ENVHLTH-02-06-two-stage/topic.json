@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-HLTH-2024-ENVHLTH-02-06-two-stage",
+  "ccm2Id": "45701157",
+  "callIdentifier": "HORIZON-HLTH-2024-ENVHLTH-02-two-stage",
+  "callTitle": "",
+  "title": "The role of environmental pollution in non-communicable diseases: air, noise and light and hazardous waste pollution",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"EOSC and FAIR data\",\"Disease determinants\",\"Environmental risk measurement\",\"Environmental health\",\"Environmental stressors\",\"Health determinants\",\"Atmospheric pollution\",\"Risk factors\",\"Disease prevention\",\"Social sciences and humanities\",\"Hazardous waste\",\"Light pollution\",\"Pollution\",\"Noise pollution\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EoscAndFairData",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-ENVHLTH-02-06-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.503Z"
+}

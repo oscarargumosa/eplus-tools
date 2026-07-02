@@ -1,0 +1,29 @@
+## Expected Outcome
+
+Project results are expected to contribute to some of the following expected outcomes:
+- Better understanding of oceanic carbon dioxide (CO2) sources and sinks, their drivers and dynamics under different climate scenarios, including their responses to human interventions;
+- Better understanding of land ecosystem CO2 sources and sinks, their drivers (both natural and anthropogenic) and their evolution under future climate and land-based mitigation scenarios;
+- Progress on reconciling estimates of anthropogenic CO2 emissions and removals from land originating from the climate science and national emissions reporting communities;
+- More consistent representation and quantification of lateral transfers of carbon.
+
+## Scope
+
+Understanding the mechanisms and drivers of land (including inland waters) and ocean carbon sinks and sources is crucial for accurate climate models and scenarios and informing climate mitigation strategies. However, significant gaps and uncertainties remain in quantifying these complex processes and their components. It is essential to better understand the roles of anthropogenic and natural drivers of carbon fluxes, in particular the surface-to-air flux. This is necessary for reconciling conceptual discrepancies among estimates and assessing the implications for future trends and mitigation potential, taking into account that mitigation actions need to be additional to natural processes and business-as-usual and that the remaining carbon budget depends, inter alia, on assumptions on sinks.
+
+Proposals are expected to address only one of the three areas identified below - which should be clearly indicated, while ensuring coordination and cooperation across projects to address consistency in key factors, such as data, scenarios and models used or the representation of lateral transport of carbon (e.g., through river transport or harvest). Selected proposals may consider the involvement of the European Commission's Joint Research Centre (JRC) whose contribution could consist of scientific advice, specialised analytical expertise and data. This topic is part of a coordination initiative between ESA and the European Commission on Earth System Science (ESSI) under the Carbon Cluster. Successful consortia will be asked to coordinate with projects that will be selected under ESA’s FutureEO programme to facilitate access to and uptake of satellite data products and related tools or methodologies. To this end, proposals should foresee sufficient means for effective coordination (i.e. cluster meetings, joint data management, potential joint actions).
+
+International cooperation is generally encouraged, in particular with low and lower/upper-middle-income countries[1].
+
+Area A: Oceanic CO2 sources and sinks
+
+The ocean’s capacity to act as a carbon sink is determined by a variety of factors, including changes in climate, atmospheric composition (in particular CO2 concentration) and chemical, physical and biological processes of the ocean, all influenced by human activities. Projects are expected to improve the understanding and quantification of the various mechanisms involved, with a focus on the behaviour of the ocean sink under past (including palaeo records), present and future conditions and various climate change and emission scenarios. The projects should contribute to a better understanding of the biophysical potential for marine mitigation approaches (in particular carbon dioxide removal) and their implications over relevant timeframes, including feedbacks. The analysis should also include responses to ambitious mitigation (e.g., atmospheric stabilisation in line with policy objectives). Projects should build on the results of related earlier projects, in particular those under call HORIZON-CL6-2022-CLIMATE-01-02.
+
+Area B: Land CO2 sources and sinks
+
+Currently, land ecosystems globally represent a significant net carbon sink, driven by natural processes greatly perturbed by a variety of human influences, including past and present land management practices, increasing atmospheric CO2 concentrations, nitrogen deposition and climate change itself. They are also a significant source of anthropogenic greenhouse gas emissions. Natural responses to environmental change and management effects overlap and interact in space and time, making the isolation of different factors (natural and anthropogenic) challenging or even impossible. Projects will aim to further our understanding of the key factors that have driven land carbon fluxes in the past and improving their quantification under present conditions and facilitating their projection under relevant climate and land use scenarios.
+
+Area C: Reconciliation of different land use CO2 emission estimates
+
+The climate science and national emissions reporting communities have historically used different interpretations of anthropogenic land-based CO2 emissions and removals, leading to varying estimates with significant policy implications for assessing climate progress. It is crucial to reconcile these definitions with due consideration for lateral transfers of carbon to ensure comparability across global, regional, and national scales, to foster integration between different expert communities and approaches and to support policy negotiations and decision-making approaches. Through innovative approaches, the projects should enhance confidence in land-use CO2 flux estimates and enable more accurate assessments of national and collective climate progress, as well as alternative land-based climate policy options.
+
+[1]  https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lendinggroups; standard Horizon Europe funding rules apply - only participants from some of these countries are automatically eligible for funding

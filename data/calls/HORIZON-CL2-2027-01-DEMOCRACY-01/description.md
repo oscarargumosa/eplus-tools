@@ -1,0 +1,27 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- Political, societal, educational stakeholders, and researchers have an improved understanding of theoretical models and provided pathways for implementing solutions to combat extremism, radicalisation, hate speech and polarisation.
+- Public authorities, law enforcement agencies, local authorities, NGOs, and community actors are more engaged in implementing and adapting solutions addressing radicalisation, extremism, hate speech, and polarisation in their respective contexts.
+- EU institutions, national policymakers and judicial bodies can draw on an enhanced evidence-base for their decision-making through scientific, political, and legal assessments of research results in real-life contexts, enabling replication of methods, legislative changes, and innovation.
+- Improved understanding of the root causes of hate and polarisation, of methodologies to combat online hate ecosystems and of the role of traditional media in shaping public opinion, including the correlation between media consumption and polarisation, to inform strategies for protecting victims and addressing hate crimes and speech.
+
+## Scope
+
+The European Union has been actively working to combat racism, xenophobia, hate speech, hate crimes, and extremism in recent years, developing and implementing various strategies to address these issues[1]. Horizon 2020 and Horizon Europe have also played a crucial role in funding projects that aim to develop research and collect evidence on how to counter and prevent radicalisation, polarisation, hate speech and extremism. These phenomena pose significant risks, as they can undermine trust in democratic institutions, weaken the social contract, and contribute to rising inequalities and instability.
+
+European research (including research by SSH disciplines) should combine a clear understanding of the mechanisms that play a fundamental role in the circulation of online hate speech, radicalisation, extremism, and polarisation with the development of strategies to prevent and counter these phenomena. At the same time, it should promote the Union values enshrined in the Treaty on European Union, such as human dignity, freedom, democracy, equality, the rule of law and respect for human rights, and the protection of democratic institutions, as a condition for everyone's talents to flourish and for fostering a cohesive society and a culture of tolerance and pluralism. This will contribute to enhance the prevention of violent extremism, hate speech and hate crime and the promotion of a more inclusive and resilient society.
+
+The spread of hate speech and extremist ideologies online has become a major concern, and the need for effective solutions to address these issues is pressing. Hate speech and extremism can be criminal offences, but also more broadly contribute to polarisation and have a chilling effect on freedom of expression, also limiting the engagement of individuals in public life (e.g. elected officials stepping down from elections because of hate attacks). Moreover, the polarisation of society and the erosion of trust in institutions pose a threat to social cohesion and democratic values.
+
+To address these challenges, it is essential also to foster the understanding on the root causes of radicalisation, extremism, hate and polarisation, including as concerns the impact of socio-economic factors. This requires also collaboration with end-users, such as civil society organisations and practitioners[2], who can provide valuable insights and help develop solutions that are tailored to their specific needs and contexts.
+
+Proposals are encouraged to identify other EU-funded projects related to preventing radicalisation, extremism, hate speech, and polarisation, financed by the Horizon programmes (Horizon 2020 and Horizon Europe) and complementary funding schemes (such as the Citizens, Equality, Rights and Values Programme, the Internal Security Fund, or others) and to explore potential opportunities for collaboration with them. Proposals should integrate a gender-sensitive and intersectional approach to illustrate how radicalisation, extremism, hate speech and polarisation disproportionately affect different groups and groups of different ages.
+
+Initiatives of research such as the ones in the EU Knowledge Hub on Prevention of Radicalisation[3] (previously Radicalisation Awareness Network) or the forthcoming online knowledge hub under the Code of conduct on countering illegal hate speech online should be considered when developing initiatives to upscale and exploit solutions to combat extremism, hate speech and radicalisation. Research activities should meaningfully involve a wide range of stakeholders and societal actors, particularly civil society organisations, including non-academic and non-scientific actors. Projects should link appropriately with the envisaged European Centre for Democratic Resilience and seek to make best use of its stakeholder platform.
+
+[1]  https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/combatting-discrimination/racism-and-xenophobia/combating-hate-speech-and-hate-crime_en
+
+[2]  See, for example: https://edmo.eu/
+
+[3]  https://home-affairs.ec.europa.eu/networks/eu-knowledge-hub-prevention-radicalisation_en

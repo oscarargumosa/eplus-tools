@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL3-2024-DRS-01-01",
+  "ccm2Id": "45764130",
+  "callIdentifier": "HORIZON-CL3-2024-DRS-01",
+  "callTitle": "",
+  "title": "Prevention, detection, response and mitigation of chemical, biological and radiological threats to agricultural production, feed and food processing, distribution and consumption",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Detection technology\",\"Protection of networks\",\"Biological threat detection\",\"Disaster resilience and crisis management\",\"Artificial Intelligence\",\"Incident Response\",\"Agricultural products\",\"Chemical, Biological, CBRN detection\",\"Security\",\"Equipments and sub systems\",\"Digital Agenda\",\"Manufacturing and processing\",\"Feed products\",\"Agriculture\",\"Protection of citizens (goods and people)\",\"International Cooperation\",\"Social sciences and humanities\",\"food terrorism threats\",\"Security Union Strategy\",\"animal and public health\",\"critical infrastructure\",\"food chain vulnerabilities\",\"national authorities\",\"biological and radiological (CBR) agents\",\"Raising awareness\",\"EU capabilities\",\"feed and food intentional and accidental contamination\",\"preparedness, mitigation and response plans\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda",
+    "EC-WORLD",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-DRS-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.476Z"
+}

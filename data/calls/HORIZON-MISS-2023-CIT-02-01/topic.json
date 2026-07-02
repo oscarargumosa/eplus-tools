@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-MISS-2023-CIT-02-01",
+  "ccm2Id": "45743489",
+  "callIdentifier": "HORIZON-MISS-2023-CIT-02",
+  "callTitle": "",
+  "title": "Associating Ukrainian cities to the Climate-neutral and smart cities Mission",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-04-04",
+  "deadline": "2023-09-06",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Urbanization and urban planning, cities\",\"Urban planning\",\"Spatial development and architecture, land use, re\",\"Climate change mitigation\",\"Architecture, smart buildings, smart cities, urban\",\"Renovation\",\"Urban studies (Planning and development)\",\"International Cooperation\",\"systemic transition\",\"reduce energy dependency\",\"sustainability\",\"cities\",\"climate neutrality\",\"reconstruction and renovation\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CIT-02-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.366Z"
+}

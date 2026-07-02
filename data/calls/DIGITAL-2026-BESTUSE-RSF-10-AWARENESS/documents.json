@@ -1,0 +1,86 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/wp-call/2026/call-fiche_digital-2026-bestuse-rsf-10_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5a. Evaluation and award: Submission and evaluation processes",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (DEP)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/temp-form/af/af_dep_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "DEP MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/agr-contr/mga_dep_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "DEP Work Programmes",
+    "url": "https://digital-strategy.ec.europa.eu/en/activities/work-programmes-digital",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "DEP Regulation 2021/964",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898568",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TUDELA / AYUNTAMIENTO DE TUDELA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "Convocatoria de subvenciones a ONGD para proyectos de cooperación 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 202400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "sede.tudela.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898568",
+  "documents": [
+    {
+      "label": "Bases de Convocatoria ONGD 2026",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.tudela.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+  "text_inicio": "30 días naturales a contar desde el día siguiente al de la publicación de la convocatoria en BON",
+  "text_fin": "Tras finalizar el plazo anterior",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.601Z"
+}

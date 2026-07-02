@@ -1,0 +1,34 @@
+## Expected Outcome
+
+- Optimisation of the operational framework for D&E for the Digital Europe Programme taking into account the elements mentioned under “scope”, with solid methodological and practical approaches.
+- Identification of distinct types of adopters and the creation of a taxonomy articulating their respective interests and needs.
+- Support to projects in the preparation and execution of D&E activities, including valorisation and uptake of results via advisory, business support and acceleration services
+- A plan to deliver on the operational framework backed by monitoring and evaluation metrics.
+- The delivery of actions implementing the operational framework and involving stakeholders as appropriate, including sector specific and programme-wide events.
+- The means and tools to facilitate the delivery of the operational framework, including functional and technical requirements for a dedicated results platform.
+- A plan for the sustainability of the operational framework and the actions implemented by the project.
+- The dissemination and exploitation of results (including the access to infrastructures) in the specific context of security restrictions and the protection of EU interests overall.
+- Produce a data base with concrete cases of DEP results, across all Specific Objectives and Implementing bodies, with exemplary dissemination and use of results.
+
+## Objective
+
+Maximise the impact of the Digital Europe Programme and the take up of its results through a Dissemination and Exploitation (D&E) operational framework and the implementation of practical actions supported by appropriate tools. The action will leverage programme-level D&E efforts already in place and enhance them.
+
+The Digital Europe Programme seeks to improve the valorisation of project results and their effective uptake. Dissemination and Exploitation (D&E) activities are therefore expected to make a substantive contribution to the achievement of the Programme’s objectives.
+
+The actions funded by the programme need to implement efficient and targeted dissemination and exploitation activities to increase the impact of EU funding. Beyond the D&E works of individual projects, the programme funds support activities in certain thematic fields which support the projects in the respective area.
+
+Additionally, there is a clear need for a programme-wide perspective on D&E. An ongoing coordination and support action (DEDEP.eu) is designing a conceptual and operational framework for the implementation of effective D&E activities in the programme, helping funded projects to strategically share results with relevant stakeholders and building a corpus of reusable materials and tools.
+
+The programme is now entering a pivotal phase in which many initiatives are delivering tangible results. Placing a strong emphasis on the dissemination and exploitation of these outcomes will ensure the wider uptake of existing and forthcoming results, and significantly amplify the overall impact of the programme.
+
+## Scope
+
+The action will address, at least, the following dimensions:
+- the overall programme, its Specific Objectives (SO) and areas therein, down to topics and projects where appropriate, across funding instruments in particular grants, procurements and financial instruments;
+- the capacity building and use strands of Digital Europe Programme, taking into account the type of result and its dissemination and exploitation audience;
+- the different types of organisations participating in the programme;
+- the different stakeholders, including final adopters and/or users of the results;
+- the stages of the project lifecycle and the reporting obligations;
+- the security and strategic autonomy specificities of the programme, including the implications in the use of critical infrastructures and exploitation of results;
+- coordination within EU and beyond when relevant, taking into account the policy priorities and initiatives;   within the Digital Europe Programme itself, identifying and exploiting complementarities of projects among SO and topics, including SO specific coordination and support actions and project aggregators; between the Digital Europe Programme, other EU programmes and national/regional programmes; of the different programme’s implementing bodies, e.g. European Commission, Health and Digital Executive Agency (HaDEA), Joint Undertakings (JUs) and similar bodies, taking into account their specificities in the handling of results resulting from their actions. The action will complement and enrich the D&E activities of the programme’s projects. The action will provide means that can help deliver its objective, including leveraging already existing tools, e.g. of other EU programmes, and the use of innovative approaches to D&E. The action will promote the uptake of Digital Europe Programme results beyond the entities directly involved in the programme’s projects.

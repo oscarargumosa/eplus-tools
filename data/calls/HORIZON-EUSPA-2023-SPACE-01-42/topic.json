@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-EUSPA-2023-SPACE-01-42",
+  "ccm2Id": "46041359",
+  "callIdentifier": "HORIZON-EUSPA-2023-SPACE",
+  "callTitle": "",
+  "title": "EGNSS - Closing the gaps in mature, regulated and long lead markets",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-10-26",
+  "deadline": "2024-02-14",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"Global Satellite Navigation System (GNSS) / Servic\",\"aviation\",\"EGNSS\",\"standardization\",\"Rail\",\"drones\",\"Road\",\"automotive\",\"Galileo\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-EUSPA-2023-SPACE-01-42.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.654Z"
+}

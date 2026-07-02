@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "902930",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE TOLEDO / DIPUTACIÓN PROVINCIAL DE TOLEDO",
+  "nuts_codes": [
+    "ES425"
+  ],
+  "nuts_primary": "ES425",
+  "title": "APROBACIÓN DE BASES REGULADORAS Y CONVOCATORIA DE SUBVENCIONES DIRECTAS EN EL MARCO DEL PLAN PROVINCIAL TOLEDO EMPLEA+, A DESARROLLAR EN LOS MUNICIPIOS DE LA PROVINCIA DE TOLEDO DURANTE LOS EJERCICIOS 2026 Y 2027.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": "2026-05-05",
+  "deadline": "2026-05-25",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 21000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902930",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.diputoledo.es/global/53/ver_pdf/36599",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto en el BOP de Toledo",
+  "text_fin": "15 días hábiles contados desde el día siguiente a la publiación del extracto en el BOP de Toledo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.940Z"
+}

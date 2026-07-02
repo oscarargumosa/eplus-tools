@@ -1,0 +1,79 @@
+{
+  "source": "bdns",
+  "source_id": "897130",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE CULTURA / DIRECCIÓN GENERAL DEL LIBRO, DEL CÓMIC Y DE LA LECTURA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 6 de abril de 2026 de la Secretaría de Estado de Cultura, por la que se convocan subvenciones, en régimen de concurrencia competitiva, para la traducción de libros entre lenguas del Estado, correspondientes al año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    }
+  ],
+  "apply_url": "https://cultura.sede.gob.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897130",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-17455",
+  "text_inicio": "Día siguiente a la publicación del extracto en el B.O.E.",
+  "text_fin": "Quince días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.122984",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 53 AYUDAS A LA CULTURA Y LA CONSERVACIÓN DEL PATRIMONIO"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208012,
+      "titulo": "Extracto de la Resolución de 6 de abril de 2026 de la Secretaría de Estado de Cultura, por la que se convocan subvenciones, en régimen de concurrencia competitiva, para la traducción de libros entre lenguas del Estado, correspondientes al año 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Podrán solicitar estas subvenciones las personas jurídicas y físicas (autónomos) que tengan como actividad y objeto social, único o entre otros, la edición de libros.</p><p>Asimismo, quedan excluidas las fundaciones, entidades sin ánimo de lucro así como entidades de carácter público, comunidades de bienes, agrupaciones de personas físicas o jurídicas, de carácter público o privado, así como otras entidades sin personalidad jurídica.</p><p>Segundo. Objeto</p><p>Se convocan subvenciones para el año 2026, en régimen de concurrencia competitiva, para el fomento de la traducción de libros entre lenguas del Estado español, y su posterior publicación por parte de la editorial beneficiaria. Estas obras habrán de ser bien literarias, clásicas y contemporáneas, bien científicas, integrantes del patrimonio cultural de España.</p><p>La obra objeto de traducción deberá estar ya publicada en cualquiera de las lenguas oficiales de España, así como aquellas otras con reconocimiento jurídico en los estatutos de autonomía de las Comunidades Autónomas, y estar escrita por un autor español. </p><p>Un mismo solicitante no podrá pedir ayuda para más de tres proyectos.</p><p>Tercero. Bases reguladoras</p><p>Las bases reguladoras por las que se rige esta ayuda fueron establecidas a través de la Orden CUL/2912/2010, de 10 de noviembre, publicadas en el BOE número 275, con fecha de 13 de noviembre de 2010.</p><p>Cuarto. Cuantía</p><p>El importe de las subvenciones convocadas será, como máximo de 200.000 euros.</p><p>Quinto. Plazo de presentación de solicitudes</p><p>Quince días hábiles contados a partir del día siguiente al de la publicación de este extracto de la convocatoria en el Boletín Oficial del Estado.</p><p>Sexto. Otros datos</p><p>La subvención obtenida debe destinarse exclusivamente a cubrir los gastos de traducción de la obra presentada.</p><p>Esta subvención es compatible con otras ayudas a la traducción de otros organismos o instituciones, públicos o privados, siempre y cuando el importe de dicha aportación sea de tal cuantía que, aisladamente o en concurrencia con otras subvenciones, no se supere el 100% del coste de la traducción subvencionada.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-10825",
+      "cve": "BOE-B-2026-10825",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.849Z"
+}

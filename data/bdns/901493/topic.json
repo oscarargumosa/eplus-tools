@@ -1,0 +1,64 @@
+{
+  "source": "bdns",
+  "source_id": "901493",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALENCIA / AYUNTAMIENTO DE VALENCIA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "CONVOCATORIA SUBVENCIONES ARTISTAS FALLEROS 2026",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 350000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90.1",
+      "descripcion": "Actividades de creación artística"
+    }
+  ],
+  "apply_url": "https://sede.valencia.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901493",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.valencia.es/sede/ordenanzas/index.xhtml",
+  "text_inicio": "El día siguiente al de la publicación del extracto en el BOP.",
+  "text_fin": "Transcurridos 20 días naturales desde el siguiente al de la publicación del extracto en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.221Z"
+}

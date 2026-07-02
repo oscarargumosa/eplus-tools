@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "899665",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN FORAL DE BIZKAIA / DIPUTACIÓN FORAL DE BIZKAIA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Programa de subvenciones Transferencia Tecnológica para el año 2026 - Línea 2: Subvenciones para la dotación de infraestructuras de investigación y para pruebas y experimentación en centros de investigación",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": "2026-05-04",
+  "deadline": "2026-05-25",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1076014,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899665",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.bizkaia.eus",
+  "text_inicio": "4 de mayo de 2026",
+  "text_fin": "25 de mayo de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.123124",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 26 AYUDAS DE I+D+I. A LA INVERSIÓN PARA INFRAESTRUCTURAS DE INVESTIGACIÓN."
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.211Z"
+}

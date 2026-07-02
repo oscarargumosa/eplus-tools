@@ -1,0 +1,80 @@
+{
+  "id": 1102110,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CORNELLÀ DE LLOBREGAT",
+    "nivel3": "AYUNTAMIENTO DE CORNELLÀ DE LLOBREGAT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900549",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "ACUERDO JGL DE FECHA 10/04/2026 APROBACION BASES REGULADORAS PARA PROYECTOS E INSTALACIONES DE ASCENSORES EN MEJORA DE ACCEIBILIDAD EN EDIFICIOS PARA SUPRIMIR BARRERAS ARQUITECTONICAS",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA PROYECTOS E INSTALACIONES DE ASCENSORES EN MATERIA DE MEJORA DE LA ACCESIBILIDAD EN EDIFICIOS PARA SUPRIMIR LAS BARRERAS ARQUITECTONICAS PARA LOS AÑOS 2026-2027",
+  "urlBasesReguladoras": "Subvenciones a la instalación de ascensores 2026 - Ayuntamiento de Cornellà",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación de la convocatoria 2026 en el DOGC",
+  "textFin": "30 DE JUNIO DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443804,
+      "descripcion": "ACUERDO APROBACION BASES Y CONVOCATORIA 2026",
+      "nombreFic": "ACUERDO BASES 2026-2027 Y CONVOCATORIA 2026.pdf",
+      "long": 1247744,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    },
+    {
+      "id": 1440051,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026-2027 CC12 ASCENSORES EXTRACTO BDNS.docx",
+      "long": 61870,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440052,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026-2027 CC12 ASCENSORS EXTRACTE BOP.docx",
+      "long": 64974,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903130",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD JAUME I DE CASTELLÓN",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Beca d 'iniciació a la investigació (Projecte «STEREOLITHOGRAPHY 3D PRINTED DENTURE BASE PHOTOPOLYMERS FUNCTIONALIZED WITH LASER GENERATED ANTIMICROBIAL NANOPARTICLES» – Codi 24I476 – Dirigit per: Carlos Doñate Buendía, Institut Universitar",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1082.52,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=85689",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903130",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=85689",
+  "text_inicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "text_fin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.054Z"
+}

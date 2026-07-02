@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "898201",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "Convocatoria de contratos de personal investigador predoctoral en formación asociado a Proyectos de Generación de Conocimiento 2024.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 268400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "80.0",
+      "descripcion": "Servicios de investigación y seguridad"
+    }
+  ],
+  "apply_url": "https://administracion.ulpgc.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898201",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boe.es/boe/dias/2022/10/29/",
+  "text_inicio": "al día siguiente de su publicación en el BOC",
+  "text_fin": "10 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.455Z"
+}

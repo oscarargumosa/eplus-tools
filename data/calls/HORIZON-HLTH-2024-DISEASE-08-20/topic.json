@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-HLTH-2024-DISEASE-08-20",
+  "ccm2Id": "45701315",
+  "callIdentifier": "HORIZON-HLTH-2024-DISEASE-08",
+  "callTitle": "",
+  "title": "Pandemic preparedness and response: Host-pathogen interactions of infectious diseases with epidemic potential",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-26",
+  "deadline": "2024-04-11",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Viruses\",\"Vaccines\",\"Public health and epidemiology\",\"Clinical development, Phase I\",\"Crimean Congo Haemorrhagic Fever\",\"Emerging Epidemics\",\"West Nile\",\"Chikingunya\",\"Prevention programme\",\"Foresight\",\"Dengue\",\"inhibitors\",\"pandemic\",\"Crimean Congo haemorrhagic fever\",\"Rift Valley\",\"epidemic\",\"Lassa\",\"Chikungunya\",\"biotechnology\",\"viral\",\"virus\",\"West Nile Fever\",\"Zika\",\"Ebola\",\"host-pathogen\",\"ligand\",\"receptor\",\"Hendra\",\"Yellow Fever\",\"candidate\",\"Nipah\",\"Dengue\",\"pathogenesis\",\"nano\",\"vaccines\"]"
+  ],
+  "crossCuttingPriorities": [
+    "FORESIGHT"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-DISEASE-08-20.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.504Z"
+}

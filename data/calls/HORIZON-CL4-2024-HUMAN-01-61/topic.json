@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL4-2024-HUMAN-01-61",
+  "ccm2Id": "45703796",
+  "callIdentifier": "HORIZON-CL4-2024-HUMAN-01",
+  "callTitle": "",
+  "title": "Facilitate the engagement in global ICT standardisation development (CSA)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-15",
+  "deadline": "2024-03-19",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Cybersecurity\",\"Artificial intelligence, intelligent systems, mult\",\"Cyber-physical systems\",\"Internet of Things\",\"Artificial Intelligence\",\"Social sciences and humanities\",\"FIRE, Future Internet Research and Experimentation\",\"Network technologies / Internetworking\",\"Internet architectures\",\"Architecture, smart buildings, smart cities, urban\",\"Digital Agenda\",\"International Cooperation\",\"Digital identity\",\"Quantum optics and quantum information\",\"internet protocols\",\"circular economy\",\"Blockchain\",\"smart contracts\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "SSH",
+    "DigitalAgenda",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-HUMAN-01-61.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.465Z"
+}

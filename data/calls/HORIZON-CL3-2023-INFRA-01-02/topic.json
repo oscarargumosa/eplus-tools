@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL3-2023-INFRA-01-02",
+  "ccm2Id": "45763638",
+  "callIdentifier": "HORIZON-CL3-2023-INFRA-01",
+  "callTitle": "",
+  "title": "Supporting operators against cyber and non-cyber threats to reinforce the resilience of critical infrastructures",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Equipments and sub systems\",\"Protection of areas and infrastructures\",\"Digital Agenda\",\"Critical infrastructure, emergency systems, securi\",\"Cyber Defence systems\",\"Resilience aspects\",\"Threats and vulnerabilities modelling\",\"Detection, identification and authentication\",\"Critical Infrastructure Protection (CIP)\",\"Training and exercises\",\"Artificial Intelligence\",\"Social sciences and humanities\",\"Terrorism\",\"Security\",\"Operators of critical infrastructure\",\"Security Management and Governance\",\"Policy and Support\",\"preparedness and response\",\"critical entities\",\"societal impact\",\"resilience of operators\",\"public authorities\",\"realistic simulations of scenarios\",\"natural or human-made threats\",\"disruptions\",\"cyber and non-cyber threats\",\"Security Union Strategy\",\"critical infrastructures\",\"European infrastructures\",\"physical/cyber detection technologies\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-INFRA-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.377Z"
+}

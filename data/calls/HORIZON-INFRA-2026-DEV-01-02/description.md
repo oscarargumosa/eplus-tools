@@ -1,0 +1,33 @@
+## Expected Outcome
+
+- Policy contribution, impact and visibility of research infrastructures of European interest, by large thematic domain, to relevant EU policy and priority initiatives, including beyond research, at national, regional, European and global level.
+- Improved coordination, complementarities, and where applicable, interoperability, harmonisation, integration and synergies among research infrastructures within large thematic domains and, where relevant, across domains.
+- A European portfolio of R&I services of European interest, supported by a common front page and few single-entry point access portals, integrated or interoperable catalogues of R&I services and converging access conditions and selection procedures, strengthening the European landscape of ESFRI-prioritised infrastructures and other world-class research infrastructures by large thematic domains.
+- Increased awareness, findability and accessibility of research infrastructures for European researchers and innovators; simplified and adapted access pathways for new needs or new communities of users (e.g. where relevant, multidisciplinary R&I, EU collaborative research projects, EU operational or deployment programmes, public authorities, and industry, including SMEs, startups and scaleups).
+
+## Scope
+
+This topic aims at equipping large thematic clusters of research infrastructures of European interest with a policy arm combined with a technical arm, to increase awareness, findability and accessibility, better matching user needs. This thematic clustering is aligned with ESFRI approach: proposals should explicitly state which ESFRI domain[1]they address (see specific conditions on procedure for ranking proposals). Proposals should foresee close collaboration across projects under this topic to ensure, where applicable, policy coordination, technical interoperability and other synergies.
+
+Building on the clusters under Horizon 2020[2]and Horizon Europe[3], on the development of catalogues of services, and on new access pathways and improved services such as under Horizon Europe INFRASERV[4] projects, proposals should address all of the following aspects:
+- Strengthening the representation of the research infrastructures cluster, as a single or coordinated voice, in key EU policy developments and strategic initiatives and contribute to policies in their domain with a research infrastructure component. Coordination with cross-domains fora, such as the ERIC Forum and EIROforum should also be ensured.
+- Strengthening coordination among research infrastructures to foster complementarities, interoperability, harmonisation, integration and synergies within the domain, and where relevant with other domains to address increasingly complex and multidisciplinary science and technology challenges.
+- Developing, optimising and connecting catalogues of research infrastructures services of European interest. Attention is required to new users, notably researchers and innovators from widening countries and candidate countries, industry (including SMEs, startups and scaleups), early-stage career researchers, and non-expert users. Flexibility to address future needs should be considered.
+- Developing and implementing intermediary services, user support, tools and notably AI assisted research infrastructure services navigation. When relevant, resulting data and digital services should be made accessible through EOSC.
+- Elaborating and promoting indicators flagging the strategic relevance of specific research infrastructures services to key EU R&I priorities and initiatives, including through common or coordinated impact assessments, and possible validation mechanisms with these initiatives.
+
+Proposals should involve, not necessarily as beneficiaries, ESFRI Landmarks and Projects and/or ERICs in the domain, other research infrastructures that are international European research organisations and, where relevant, well-established networks of key European research infrastructures open to external users. Proposals should elaborate on which key EU priorities and initiatives (such as Horizon Europe partnerships, missions) they will consider and the nature and objectives of the envisaged coordination mechanisms or joint activities.
+
+To ensure a holistic view from design to implementation of possible access schemes, proposals should ensure strong and continuous collaboration with the cross-domain preparatory action exploring a more integrated and sustainable scheme for access to research infrastructures HORIZON-INFRA-2025-01-DEV-05[5], and the actions supported under topics HORIZON-INFRA-2027-01-SERV-01 and HORIZON-INFRA-2027-01-SERV-02. This collaboration should ensure a common front page to all above actions highlighting the common objectives of EU supported access, the main conditions and requirements, providing preliminary guidance on access opportunities and directing to the single-entry point portal of each pilot of HORIZON-INFRA-2027-SERV-01-01. The collaboration should also promote simplified access pathways, good practices on call conditions, converging access modalities and selection process, and effective governance of the set of projects acting as an access programme with appropriate advisory bodies.
+
+Proposals could consider the inclusion of the European Commission's Joint Research Centre (JRC) research infrastructures in the area of health and food. In that respect, the JRC will consider collaborating with any successful proposal and this collaboration, when relevant, should be established after the proposal’s approval.
+
+[1] ESFRI domains: 1. Data, Computing and Digital Research Infrastructures; 2. Energy; 3. Environment; 4. Health & Food; 5. Physical Sciences and Engineering; 6. Social Sciences & Humanities. See ESFRI Landscape Analysis 2024 https://landscape2024.esfri.eu/.
+
+[2] Implementation and operation of cross-cutting services and solutions for clusters and Connecting ESFRI infrastructures through Cluster projects.
+
+[3] Preparation of common strategies for future development of RI technologies and services within broad RI communities – https://cordis.europa.eu/programme/id/HORIZON_HORIZON-INFRA-2023-DEV-01-05/en
+
+[4] Research infrastructure services to enable R&I addressing main challenges and EU priorities and advancing frontier knowledge - cordis link
+
+[5] https://cordis.europa.eu/programme/id/HORIZON_HORIZON-INFRA-2025-01-DEV-05

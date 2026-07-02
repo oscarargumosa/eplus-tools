@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-MISS-2023-CLIMA-OCEAN-SOIL-01-01",
+  "ccm2Id": "45742554",
+  "callIdentifier": "HORIZON-MISS-2023-CLIMA-OCEAN-SOIL-01",
+  "callTitle": "",
+  "title": "Mission Climate adaptation, Mission Ocean & waters and Mission Soil Deal for Europe – Joint demonstration of an integrated approach to increasing landscape water retention capacity at regional scale",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Hydrology, water and soil pollution\",\"Social Innovation\",\"Water-climate interactions\",\"Water Framework Directive\",\"Soil management\",\"Ocean sustainability and blue economy\",\"Nature-based solutions\",\"Ecosystem-Based Approach\",\"Soil erosion\",\"Freshwater ecology\",\"Human impacts and other stressors\",\"Catchment scale water management\",\"Climate change mitigation\",\"Pollution (water, soil), waste disposal and treatm\",\"Soil protection\",\"Hydrology (Water science)\",\"Ecosystem services provided by catchment areas\",\"EOSC and FAIR data\",\"Soil functions\",\"Soil conservation\",\"Climate change adaptation\",\"Mission ocean\",\"Mission restore our ocean and waters\",\"joint call\",\"soil water retention capacity\",\"soil erosion\",\"Mission ocean and waters\",\"land vegetation cover\",\"landscape management\",\"water management\",\"Mission Climate Adaptation\",\"water retention capacity\",\"Mission soil\",\"landscape water retention capacity\",\"Mission Soil Deal for Europe\",\"multi-stakeholder approach\"]"
+  ],
+  "crossCuttingPriorities": [
+    "OCEAN",
+    "SocInnov",
+    "EoscAndFairData"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-OCEAN-SOIL-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.288Z"
+}

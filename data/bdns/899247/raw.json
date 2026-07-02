@@ -1,0 +1,184 @@
+{
+  "id": 1100808,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "EJEA DE LOS CABALLEROS",
+    "nivel3": "AYUNTAMIENTO DE EJEA DE LOS CABALLEROS"
+  },
+  "sedeElectronica": "www.ejea.es",
+  "codigoBDNS": "899247",
+  "fechaRecepcion": "2026-04-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "CRITERIOS ESPECÍFICOS DE LA CONVOCATORIA QUE HA DE REGIR LOS PREMIOS DEL CONCURSO PARA NUEVOS EMPRENDEDORES MONTA TU EMPRESA, DEL AYUNTAMIENTO DE EJEA DE LOS CABALLEROS\nPARA EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES243 - Zaragoza"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "CRITERIOS ESPECÍFICOS DE LA CONVOCATORIA QUE HA DE REGIR LOS PREMIOS DEL CONCURSO PARA NUEVOS EMPRENDEDORES MONTA TU EMPRESA, DEL AYUNTAMIENTO DE EJEA DE LOS CABALLEROS\nPARA EL AÑO 2026",
+  "urlBasesReguladoras": "https://www.ejea.es/monta-tu-empresa-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-28",
+  "fechaFinSolicitud": "2026-07-15",
+  "textInicio": "El día siguiente al de publicación del extracto de la convocatoria en el BOP Zaragoza",
+  "textFin": "15 de julio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436560,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Monta-tu-empresa-2026-Criterios.pdf",
+      "long": 239653,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1436564,
+      "descripcion": "MODELO REPRESENTACIÓN",
+      "nombreFic": "Modelo-representación.pdf",
+      "long": 265500,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1436562,
+      "descripcion": "FICHA DE TERCEROS",
+      "nombreFic": "Ficha-de-terceros.pdf",
+      "long": 299934,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1436561,
+      "descripcion": "ANEXO I",
+      "nombreFic": "Monta-tu-empresa-2026-AnexoI.pdf",
+      "long": 309613,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209422,
+      "titulo": "EXTRACTO DEL DECRETO DE ALCALDIA DE 14 DE ABRIL DE 2026 POR EL QUE SE CONVOCAN LOS PREMIOS DEL CONCURSO PARA NUEVOS EMPRENDEDORES MONTA TU EMPRESA, DEL AYUNTAMIENTO DE EJEA DE LOS CABALLEROS, EJERCICIO 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. -Beneficiarios. - Personas físicas y jurídicas españolas o extranjeras que tengan plena capacidad de obrar y acrediten estar al corriente de sus obligaciones fiscales y de seguridad social.</p><p>Los proyectos empresariales que se presenten al concurso deberán encajar en alguno de estos supuestos:</p><p>a) Ideas de negocio que no se hayan puesto en marcha todavía en las fechas de la convocatoria del concurso y que en el transcurso del tiempo vigente de la convocatoria se vayan a poner en funcionamiento.</p><p>b) Proyectos ya puestos en marcha desde el 16 julio de 2025.</p><p>c) Proyectos preexistentes 16 de julio de 2025 que vayan a ampliarse y que introduzcan alguna novedad sustancial basada en la originalidad del proyecto.</p><p>Segundo.- Objeto y finalidad.- El objetivo primordial del Concurso para Nuevos emprendedores Monta tu Empresa es la creación de microempresas con ubicación en Ejea de los Caballeros y Pueblos, que tengan como características la originalidad de la idea, los aspectos innovadores del proyecto empresarial y la viabilidad económica del mismo, haciendo especial hincapié en los jóvenes (menores de 35 años de edad), las mujeres, las personas con diversidad funcional, las personas desempleadas, los mayores de 45 años,  los proyectos que lleven aparejadas acciones de I+D+i, los que se ubiquen en los Pueblos de Ejea de los Caballeros o en el Casco Histórico. y aquellos que fomenten la calidad en el empleo.</p><p>Tercero. - Bases reguladoras. – Ordenanza General de Subvenciones del Ayuntamiento de Ejea de los Caballeros (Texto íntegro publicado en el B.O.P. nº 209, de 10 de septiembre de 2020) y criterios específicos aprobados por decreto de alcaldía de 14 de abril de 2026.</p><p>Cuarto. - Importe. - El crédito presupuestario destinado a la presente convocatoria son 9.000 € en la aplicación presupuestaria 241.00.480.03 “Premios Concurso Monta tu Empresa”, y Retención de Crédito con número de operación 12026000002527 del presupuesto municipal para el ejercicio de 2026.</p><p>Quinto. - Plazo de presentación de solicitudes. - El período de presentación de solicitudes es desde el día siguiente de su publicación en el BOPZ hasta el 15 de julio de 2026.</p><p>La convocatoria íntegra el impreso de solicitud, así como el resto de modelos normalizados a cumplimentar por el solicitante, se pondrán a disposición de los interesados en la sede electrónica del M.I. Ayuntamiento de Ejea de los Caballeros URL: https://www.ejea.es/monta-tu-empresa-2026</p>",
+      "textoLeng": null,
+      "url": "https://boletin.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=892075&numBop=93",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ZARAGOZA",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

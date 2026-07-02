@@ -1,0 +1,80 @@
+{
+  "id": 1099508,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBERIC",
+    "nivel3": "AYUNTAMIENTO DE ALBERIC"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897947",
+  "fechaRecepcion": "2026-04-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 52164.44,
+  "mrr": false,
+  "descripcion": "Prestación de ayudas económicas individualizadas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE PRESTACIONES ECONÓMICAS INDIVIDUALIZADAS EN MATERIA DE SERVICIOS SOCIALES",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2024/04700&lang=va",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432457,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026 DECRETO CONVOCATORIA AYUDAS ECONOMICAS 2026 - SEGRA 1152535.pdf",
+      "long": 467093,
+      "datMod": "2026-04-09",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208410,
+      "titulo": "Convocatoria de subvenciones destinadas a la prestación de ayudas económicas individualizadas",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios: Personas físicas que no desarrollan actividad económica.</p><p>Segundo. Finalidad: Paliar situaciones de urgente necesidad que afecten a la autonomía personal, social y económica, y que no puedan resolverse con medios económicos propios.</p><p>Tercero. Bases reguladoras: https://bop.dival.es/bop/downloads?anuncioNumReg=2024/04700&lang=va</p><p>Cuarto. Importe: Según tablas de las bases reguladoras.</p><p>Quinto. Financiación: Presupuestos Generales de las Entidades Locales.</p><p>Aplicación presupuestaria: 231.48000.</p><p>Sexto. Plazo de presentación de solicitudes: Desde el 01 de enero de 2026 al 31 de diciembre de 2026</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04278&lang=es",
+      "cve": "BOPV-2026/04278",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

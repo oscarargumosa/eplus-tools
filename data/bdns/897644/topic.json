@@ -1,0 +1,135 @@
+{
+  "source": "bdns",
+  "source_id": "897644",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA-LA MANCHA / DIRECCIÓN GENERAL DE EMPLEO",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "Resolución por la que se publica el crédito disponible, en el ejercicio 2026, para atender las ayudas previstas en el Decreto 104/2025, de 23 de diciembre, de concesión directa de subvenciones en el marco del Programa Retorno del Talento. Reg. 2832.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": "2026-04-30",
+  "deadline": "2026-12-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 18000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    },
+    {
+      "codigo": "L",
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS"
+    },
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "C",
+      "descripcion": "INDUSTRIA MANUFACTURERA"
+    },
+    {
+      "codigo": "B",
+      "descripcion": "INDUSTRIAS EXTRACTIVAS"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "E",
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN"
+    },
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    },
+    {
+      "codigo": "K",
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "www.jccm.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897644",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2025/12/30/pdf/2025_9955.pdf&tipo=rutaDocm",
+  "text_inicio": "Desde el día siguiente al de la publicación de la Resolución y su extracto en el D.O.C.M.",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2832 de minimis, SIEG",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.118Z"
+}

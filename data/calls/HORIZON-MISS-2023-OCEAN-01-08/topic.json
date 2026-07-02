@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-MISS-2023-OCEAN-01-08",
+  "ccm2Id": "45741198",
+  "callIdentifier": "HORIZON-MISS-2023-OCEAN-01",
+  "callTitle": "",
+  "title": "Integration of socio-ecological models into the Digital Twin Ocean",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"European Maritime and Fisheries Fund\",\"Marine Ecology\",\"Maritime Policy\",\"Marine and Ocean Management\",\"International Cooperation\",\"Digital Agenda\",\"Ocean Observation and Monitoring\",\"Ocean sustainability and blue economy\",\"Ocean and Climate Change\",\"Marine Environment\",\"EOSC and FAIR data\",\"Artificial Intelligence\",\"Environmental biology\",\"Marine Ecosystems\",\"Marine Knowledge and Research\",\"Digital Twin Ocean\",\"Mission ocean\",\"socio-ecological models\",\"Mission ocean and waters\",\"Mission restore our ocean and waters by 2030\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD",
+    "DigitalAgenda",
+    "OCEAN",
+    "EoscAndFairData",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-OCEAN-01-08.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.401Z"
+}

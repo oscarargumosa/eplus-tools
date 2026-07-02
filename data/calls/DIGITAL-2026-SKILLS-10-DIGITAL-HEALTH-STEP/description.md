@@ -1,0 +1,34 @@
+## Expected Outcome
+
+Deliverables:
+- Initiatives implemented for the target audience to collect knowledge on learning needs in the area of AI uptake in health.
+- Training programmes in the area of advanced digital skills for AI uptake in health, designed jointly by higher education institutions, VET providers, research organisations, businesses and other stakeholders in digital health, in collaboration with the network of AI-powered advanced screening centres.
+- Training catalogue with detailed course planning and timetable, regularly updated.
+- Final analysis of the completed training and the achievement level reached in improved skills.
+- A landing page integrated into the Digital Skills and Jobs Platform, showcasing existing and forthcoming education and training initiatives and promoting training offers to the relevant audience.
+
+## Objective
+
+The academic offer in the area of advanced digital technologies in the EU is still lagging behind other regions of the world, especially when compared to the United Kingdom or the United States[1] even though the number of both bachelor’s and master’s programmes in the EU has increased through the years. Furthermore, apart from delivering excellent programmes in specific digital technologies, there is also a growing demand for interdisciplinary programmes to equip sector specialists with the digital skills to deploy and use advanced digital technologies.
+
+The actions under this topic aim at tackling the lack of academic training offer in advanced digital skills in key digital areas, while triggering a new way of delivering education programmes and training, building partnerships between education and training providers, businesses and research across the EU, and supporting the digital skills necessary for the deployment of digital technologies in strategic sectors.
+
+1 This represents an increase of 8% in the number of bachelor programmes and an increase of 14% in the number of master programmes in the area of advanced digital skills. The dataset by the Joint Research Centre on the ‘Academic offer of advanced digital technologies 2022-2023’ is available here: JRC Data Catalogue - Dataset - European Commission
+
+## Scope
+
+This topic aims to expand the offer of education and training in Artificial Intelligence in health jointly designed between higher education and training institutions, research organisations and industry. The content must reflect the latest policy developments, notably the Apply AI Strategy[1] and the European Health Data Space[2]. It should cover developments in and application of AI and related digital health technologies.
+
+The target audience is healthcare professionals, as well as computer and data scientists, programmers, and software developers working in the healthcare sector. Trainings must reflect the learning needs of the target audience and will vary in depth and technical complexity to accommodate different levels of expertise and learning preferences. To this end, the proposed project(s) should design and deliver the trainings in cooperation with the Apply AI Strategy flagship “European network of AI-powered advanced screening centres”[3].
+
+The training courses should be made available to members of the “European network of AI-powered advanced screening centres” at least quarterly. The training sessions and material should be available in English and other EU languages, considering the needs of the target audience that need to be established. The training catalogue and content should be adapted regularly, according to target audience feedback.
+
+Whenever applicable, the projects should foster the use of the HealthData@EU infrastructure and other European health data infrastructures (Genomic Data Infrastructure, Cancer Image Europe, the European Virtual Human Twins advanced platform, ICU data space), explore synergies and build on relevant education and training activities developed and provided in the context of those initiatives, as well as in the relevant projects funded by EU4Health or Erasmus+ providing digital skills training for the health workforce[4].
+
+1 https://digital-strategy.ec.europa.eu/en/policies/apply-ai
+
+2 https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en
+
+3 https://digital-strategy.ec.europa.eu/en/policies/apply-ai
+
+4 https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43353764/101056563/ERASMUS2027

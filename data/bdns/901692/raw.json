@@ -1,0 +1,85 @@
+{
+  "id": 1103253,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AVILÉS",
+    "nivel3": "AYUNTAMIENTO DE AVILÉS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "901692",
+  "fechaRecepcion": "2026-04-27",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Convocatoria de una ayuda a la producción de obra inédita en el marco de las VI Jornadas de Teatro Barroco `Bances Candamo`",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONCURRENCIA COMPETITIVA",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2019/06/04/2019-05178.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOPA",
+  "textFin": "10 DÍAS HÁBILES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443049,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Decreto_2920_2026.pdf",
+      "long": 384067,
+      "datMod": "2026-04-27",
+      "datPublicacion": "2026-04-27"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210128,
+      "titulo": "Convocatoria de una ayuda a la producción de obra inédita en el marco de las VI Jornadas de Teatro Barroco `Bances Candamo`",
+      "tituloLeng": null,
+      "texto": "<p>Anuncio. Extracto de la Resolución nº 2920/2026 de 20 de abril, por la que se aprueba la convocatoria de una Ayuda relativa para la realización de la producción de una obra inédita de teatro que será representada en el marco de las SEXTAS JORNADAS DE TEATRO BARROCO \" BANCES CANDAMO\" a desarrollar en agosto de 2026 en Avilés.</p><p></p><p>Primero.- Beneficiarios.</p><p>Podrán participar en este convocatoria las personas físicas mayores de 18 años residentes o nacidas en Asturias y todas las personas jurídicas o compañías que tengan su domicilio social en Asturias y que incluyan en su objeto social la creación y producción artística.</p><p></p><p>Segundo.- Objeto.</p><p>El objeto de la presente convocatoria es regular la concesión de una Ayuda, en régimen de concurrencia competitiva para la producción de una obra de teatro que será representada en el marco de las SEXTAS JORNADAS DE TEATRO BARROCO \" BANCES CANDAMO\" a desarrollar  en agosto de 2026 en Avilés en régimen de concurrencia competitiva y en ejecución de lo dispuesto en la OGMS y en la Ley 38/2003, de 17 de noviembre, General de Subvenciones. </p><p></p><p>Tercero.- Bases reguladoras.</p><p>Ordenanza General Municipal de Subvenciones (BOPA nº 106 de 4 de junio de 2019).</p><p></p><p>Cuarto.- Importe.</p><p>El crédito inicial asignado a esta convocatoria es de cinco mil euros (5.000,00) con cargo a la partida presupuestaria 151-33410-48006 AYUDAS A LA PRODUCCIÓN.</p><p></p><p>El importe de la ayuda, al beneficiario, será de 5.000 euros abonándose el 70 % del importe total, en el momento de la concesión y el 30 % restante, al final de la obra y a la entrega de la memoria del proyecto.</p><p></p><p>Quinto.- Plazo de presentación de solicitudes.</p><p>El plazo de presentación de las solicitudes y la documentación requerida será de 10 días hábiles a partir del día siguiente al de la publicación de este extracto en el BOPA.</p><p></p><p>Sexto.- Otros datos.</p><p>El portal corporativo del Ayuntamiento de Avilés, http://www.aviles.es y en su sede electrónica, se publicará información detallada y modelos de solicitud correspondientes a la convocatoria.</p>",
+      "textoLeng": null,
+      "url": "https://miprincipado.asturias.es/bopa/2026/05/05/2026-03473.pdf",
+      "cve": null,
+      "desDiarioOficial": "BOPA. B.O. DEL PRINCIPADO DE ASTURIAS",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

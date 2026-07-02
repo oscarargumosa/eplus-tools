@@ -1,0 +1,76 @@
+{
+  "id": 1099895,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE DEFENSA",
+    "nivel3": "EJÉRCITO DE TIERRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898334",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15200,
+  "mrr": false,
+  "descripcion": "Resolución 550/MADOC/PC-2026020 de 13 de abril de 2026, del TG GEMADOC por la que se convocan las becas para la matriculación en el Máster en Pensamiento Estratégico y Seguridad Global para el personal militar del Ejército de Tierra, para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Defensa",
+  "descripcionBasesReguladoras": "Orden DEF/181/2024, de 19 de febrero, por la que se establecen las bases reguladoras para la concesión de becas para la matriculación en el Master en Pensamiento Estratégico y Seguridad Global para el personal militar del Ejército de Tierra.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2024/02/19/def181",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "textFin": "Quince (15) días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433925,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "260413-RESOLUCION-CONVOCATORIA _MASTER_PESG_2026.pdf",
+      "long": 386503,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208635,
+      "titulo": "Extracto de la Resolución de 13 de abril de 2026, del Mando de Adiestramiento y Doctrina del Ejército de Tierra, por la que se convocan las becas para la matriculación en el Máster en Pensamiento Estratégico y Seguridad Global para el personal militar del Ejército de Tierra, para el año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios. </p><p>Podrá solicitar las ayudas el personal militar del ET destinado en unidades del Ministerio de Defensa, en situación de servicio activo o reserva, incluido en alguna de las categorías relacionadas en el artículo 4 de la convocatoria.</p><p>Segundo. Objeto.</p><p>El objeto de esta convocatoria es la concesión de becas para el personal militar del Ejército de Tierra para la matriculación en el Máster en Pensamiento Estratégico y Seguridad Global de la Universidad de Granada (UGR), contemplado en la correspondiente línea de subvención reflejada en el Plan Estratégico de Subvenciones del Ministerio de Defensa para el periodo 2024-2026, Orden Ministerial 13/2024, de 20 de mayo, modificada por la Orden Ministerial 10/2025, de 9 de abril.</p><p>Tercero. Bases reguladoras.</p><p>Aprobadas por Orden de Defensa/181/2024, de 19 de febrero, por la que se establecen las bases reguladoras para la concesión de becas para la matriculación en el Máster en pensamiento estratégico y seguridad global para el personal militar del Ejército de Tierra, publicada en el Boletín Oficial del Estado nº 54 de 01 de marzo de 2024.</p><p>Cuarto. Cuantía.</p><p>La dotación económica es de 15.200 euros, con una ayuda máxima por alumno matriculado de 800 euros.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Quince (15) días hábiles contados a partir del día siguiente al de la publicación en el «Boletín Oficial del Estado».</p><p>Sexto. Otros datos.</p><p>Incompatible con cualquier otra subvención, ayudas, ingresos o recursos para la misma finalidad.</p><p>La resolución de la convocatoria de las ayudas se encuentra, además de en la BDNS   https://www.infosubvenciones.es/bdnstrans/GE/es/index, en la Web del MADOC https://ejercito.defensa.gob.es/unidades/Granada/madoc/Becas_y_ayudas/index.html</p><p>Las ayudas se solicitarán obligatoriamente mediante la aplicación que figura en la intranet del MINISDEF https://colabora.mdef.es/et/MADOC/BECAS/SitePages/Inicio.aspx</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-11539",
+      "cve": "BOE-B-2026-11539",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

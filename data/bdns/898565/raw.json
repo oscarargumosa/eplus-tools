@@ -1,0 +1,64 @@
+{
+  "id": 1100126,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÁ DE GUADAÍRA",
+    "nivel3": "AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898565",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 33235.4,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES  POR CONCURRENCIA COMPETITIVA DE LA DELEGACIÓN DE EDUCACIÓN, PARA ACTIVIDADES EXTRAESCOLARES, LÍNEAS 1 y 2,  AÑO 2026. (expte. 4433/2026)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones en régimen de concurrencia competitiva y otorgamiento de premios a la excelencia académica y a la investigación que otorga la delegación de Educación y Formación Profesional  del Ayuntamiento.",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1774911638578-final-32d09dfe.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Quince días a contar del día siguiente a la publicación en el BOP Sevilla",
+  "textFin": "Pasados los quince días a contar del día siguiente a la publicación en el BOP Sevilla",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1434463,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260407_Otros_Doc. nº 3_ Texto de la convocatoria para la concesión de subvenciones por concurrencia competitiva para actividades extraescolares. CSV- 4KHDLG394GRTH5P96QEWSC974-1.pdf",
+      "long": 200908,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

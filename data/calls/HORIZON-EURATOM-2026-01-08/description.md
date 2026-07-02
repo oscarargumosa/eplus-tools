@@ -1,0 +1,59 @@
+## Expected Outcome
+
+this topic is a continuation for the co-funded European partnership for research in nuclear materials (CONNECT-NM) and constitutes the EU’s contribution to the 2026-2027 budgetary period.
+
+This action aims to provide additional funding to the co-funded European partnership on nuclear materials that brings together European entities that have a national mandate for research in materials science and deal with nuclear materials. It aims to pool their resources in order to achieve critical mass and improve safety, as well as efficiency and effectiveness, when implementing materials solutions in the nuclear domain across Europe.
+
+The scope of the partnership on nuclear materials covers the research interests of all Member States and Associated Countries dealing with nuclear materials research. It is not limited to countries that generate nuclear power.
+
+The grant to the partnership will contribute to the expected outcomes specified in topic HORIZON-EURATOM-2023-NRT-01-04.
+
+The consortium that won the grant under topic HORIZON-EURATOM-2023-NRT-01-04 is uniquely placed to submit a proposal to continue the envisioned partnership.
+
+The consortium for the present topic may include additional partners and is expected to add new activities outside the scientific scope of the CONNECT-NM.
+
+In line with the objectives of the Nuclear Safety Directive, this European partnership should contribute to the safe operation of existing and future advanced nuclear installations, including small modular reactors (SMRs). The extended partnership on nuclear materials will further contribute to enhancing interaction and cross-fertilisation between national players in the relevant key areas and ensuring improved knowledge management at the EU and Member State levels.
+
+Project results are expected to contribute to:
+- further deepening knowledge about the main types of nuclear structural materials and fuels, with an emphasis on research into innovative materials solutions for the reactor systems under development (including light-water SMRs and other advanced reactors);
+- improving the holistic approach to the simulation and predictive modelling for the materials of interest (in line with the ‘materials by design’ strategy);
+- safely and securely assisting the NPP lifetime extension programmes via the integration of obtained knowledge into the relevant technical assessment and licencing procedures;
+- further developing experimental abilities for the qualification of nuclear materials and fuels (encouraging, inter alia, neutron irradiation experiments);
+- assuring the further development of robust and functional knowledge management approaches for this domain (including by contributing to the development of necessary nuclear design codes);
+- widening the scope of the materials and fuels under investigation, by comparison with those that have already been dealt with in the CONNECT-NM European Partnership (e.g. polymers).
+
+## Scope
+
+materials science is one of the main drivers of technological development and industrial innovation. In the nuclear area, materials research plays a crucial role in improving the safety, efficiency and economy of nuclear installations. It supports technological and safety improvements in existing nuclear reactors and new builds. It also enables the development of advanced reactor concepts (including SMRs).
+
+Materials science also addresses several classes of materials. These include those that are essential to nuclear reactor cores (e.g. metallic alloys and ceramics; fuel cladding and fuels; substances for neutron control; concrete; and polymers for cables). Innovative solutions for research into the development, manufacturing and qualification of these nuclear materials are necessary if the EU’s nuclear sector is to not only maintain the highest safety standards but also be competitive with other energy-generating technologies (as well as with a range of international players in this area).
+
+This action is therefore expected to significantly contribute to the development and qualification of materials and related advanced manufacturing techniques, thus ensuring the highest safety standards for nuclear components and reducing time to market. This will require a shift from the traditional ‘observe and qualify’ materials science approach to the modern ‘design and control’ one that is already pursued in CONNECT-NM and is further targeted in its extension. Accurate materials-health-monitoring methods also need to be developed for application during operations, along with advanced predictive methodologies that incorporate modern digital techniques blended with physics-based models[1]. 
+
+Drawing on the advisory bodies already established in CONNECT-NM, the partnership should consolidate its exploitation and innovation group (comprising members from industrial bodies and other relevant institutions) and should also have expertise in innovation and the exploitation of results. In addition, the consolidation of the independent international scientific advisory board established by CONNECT-NM will benefit the partnership’s activities.
+
+The partnership should be goal-oriented and have well-defined major milestones to enable proper monitoring. Its scope should include all scientific and technical areas, as well as all the horizontal activities related to KM that have been described above.
+
+Research lines should continue to be proposed with specific projects that cover the scientific and technical priorities identified in the strategic research agenda. Projects that are expected to be launched in the partnership via new calls for proposals should correspondingly cover areas of interest for the relevant national actors and allow new partners to be included if relevant. The projects should be defined by technical scope and the corresponding calls should be open to any participant.
+
+The allocation of project tasks and funding to partners should be revised annually through the preparation of an annual work programme. Emerging research priorities that are relevant for the Euratom programme should be considered (taking into account the opinion of the advisory boards) during this annual revision of the partnership.
+
+To maximise KM (especially its impact on smaller and less advanced national programmes), a set of horizontal activities on knowledge-transfer and education and training should continue to be designed and implemented within the partnership. The partnership should be open to international R&D cooperation. Its managers should be expected to represent it in areas of competence in international events and forums.
+
+Commitments by the partners regarding their financial and/or in-kind contributions to the European partnership are expected to be provided in the governance structure (through the open calls and in other dedicated implementation actions and efforts for national coordination). Proposals should pool the necessary financial and/or in-kind resources from the participating national (or regional) research programmes with a view to implementing joint research activities that are described in the proposed research lines and/or open calls for transnational proposals that also result in grants to third parties.
+
+The proposal should comply with the criteria for selecting and implementing European partnerships as well as for their monitoring, evaluation, phasing-out or renewal (as set out in Annex III to the Horizon Europe Regulation [2]).
+
+Partnerships’ impacts are expected to be achieved in a concerted manner across EU Member States and Associated Countries and would otherwise be difficult to achieve through national programmes.
+
+The award of a grant to continue the partnership in accordance with this call should be based on a proposal submitted by the coordinator of the consortium funded under GA.101165375 and the additional activities (which may include additional partners) to be funded by the grant should be subject to an evaluation. This evaluation should take into account the existing context, the scope of the initial evaluation (as relevant) and any related obligations enshrined in the grant agreement.
+
+The present action is a continuation of the HORIZON-EURATOM-2023-NRT-01-04 topic and requires an amendment to an existing grant agreement. The proposal should therefore primarily present the additional activities (including additional partners) to be covered by the award in terms of grant agreement revisions.
+
+The financial support to third parties is for actions that provide key access to and secure the availability of unique research infrastructures, thus strengthening a true European user facility for nuclear research.
+
+Where appropriate, the Commission recommends that consortia should use the JRC’s services. The JRC may participate in the preparation and submission of the proposal. The JRC would bear the operational costs for its own staff and research infrastructure operational costs. The JRC facilities and expertise are listed in General Annex H to this work programme.
+
+[1]  https://cordis.europa.eu/project/id/899997
+
+[2]  Regulation (EU) 2021/695 of the European Parliament and of the Council of 28 April 2021 establishing Horizon Europe – the Framework Programme for Research and Innovation, laying down its rules for participation and dissemination, and repealing Regulations (EU) No 1290/2013 and (EU) No 1291/2013, OJ L 170, 12.5.2021, p. 1–68.

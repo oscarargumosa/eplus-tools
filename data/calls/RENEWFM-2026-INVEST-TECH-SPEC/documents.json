@@ -1,0 +1,86 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/wp-call/2026/call-fiche_renewfm-2026-invest_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5a. Evaluation and award: Submission and evaluation processes",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (RENEWFM)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/temp-form/af/af_renewfm_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Calculator (RENEWFM LS INVEST)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/temp-form/af/calculator_renewfm-ls-invest_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Timetable/Gantt chart (RENEWFM)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/temp-form/af/timetable-gantt-chart_renewfm_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Cofinancing declaration (RENEWFM)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/temp-form/af/cofinancing-declaration_renewfm_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "RENEWFM Lump Sum MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/agr-contr/ls-mga_renewfm_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "RENEWFM Legal Framework",
+    "url": "https://cinea.ec.europa.eu/eu-renewable-energy-financing-mechanism-legal-framework_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "RENEWFM Regulation 2020/1294",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32020R1294",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Governance Regulation 2018/1999",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018R1999",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Decision on lump sums for RENEWFM actions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/renewfm/guidance/ls-decision_renewfm_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  }
+]

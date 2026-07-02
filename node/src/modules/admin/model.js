@@ -1,6 +1,10 @@
 /* ── Admin Model — reference data tables ─────────────────────────── */
 const pool = require('../../utils/db');
 const uuid = require('../../utils/uuid');
+const fs = require('fs');
+const path = require('path');
+
+const FUNDING_FEED_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.json');
 
 /* ══ intake_programs ═════════════════════════════════════════════ */
 
@@ -15,7 +19,7 @@ async function upsertProgram(data, id) {
   if (id) {
     const allowed = ['program_id','name','action_type','deadline','deadline_time','start_date_min','start_date_max',
       'duration_min_months','duration_max_months','eu_grant_max','cofin_pct','indirect_pct',
-      'min_partners','notes','call_summary','active','form_template_id','intake_template','budget_template'];
+      'min_partners','max_partners','notes','call_summary','active','form_template_id','intake_template','budget_template'];
     const sets = [], params = [];
     for (const k of allowed) {
       if (k in data) { sets.push(`${k}=?`); params.push(data[k] ?? null); }
@@ -45,6 +49,62 @@ async function upsertProgram(data, id) {
 
 async function deleteProgram(id) {
   await pool.query('DELETE FROM intake_programs WHERE id=?', [id]);
+}
+
+async function importProgramFromFeed(sourceId) {
+  const raw = fs.readFileSync(FUNDING_FEED_PATH, 'utf8');
+  const all = JSON.parse(raw);
+  const item = all.find(r => r.source_id === sourceId || r.call_id === sourceId);
+  if (!item) {
+    const err = new Error(`Call not found in feed: ${sourceId}`);
+    err.code = 'NOT_FOUND';
+    err.status = 404;
+    throw err;
+  }
+  const actionType = item.source_id || sourceId;
+
+  const [existing] = await pool.query(
+    'SELECT id FROM intake_programs WHERE action_type=? LIMIT 1', [actionType]
+  );
+  if (existing.length) {
+    return { id: existing[0].id, action_type: actionType, already_existed: true };
+  }
+
+  // If we have an LLM-structured extract for this call, prefer it (Spanish summary,
+  // more accurate budget/cofin/duration/min_partners than the raw feed).
+  let s = null;
+  try {
+    const sPath = path.join(__dirname, '..', '..', '..', '..', 'data', 'call_structured', actionType + '.json');
+    if (fs.existsSync(sPath)) s = JSON.parse(fs.readFileSync(sPath, 'utf8'));
+  } catch {}
+
+  const pick = (feedVal, structuredVal) =>
+    (feedVal !== null && feedVal !== undefined) ? feedVal : (structuredVal ?? null);
+
+  const slug = ('imp_' + actionType.toLowerCase().replace(/[^a-z0-9]+/g, '_')).slice(0, 60);
+  const summary = (s?.scope_summary_es || item.summary_es || item.summary_en || '').slice(0, 4000) || null;
+
+  const newId = await upsertProgram({
+    program_id: slug,
+    name: (item.title || actionType).slice(0, 200),
+    action_type: actionType,
+    deadline: pick(item.deadline, s?.deadline),
+    eu_grant_max: pick(item.budget_per_project_max_eur, s?.budget_per_project_max_eur) ?? pick(item.budget_total_eur, s?.budget_total_eur),
+    cofin_pct: pick(item.cofinancing_pct, s?.cofinancing_pct),
+    duration_min_months: pick(item.duration_months, s?.duration_months_min),
+    duration_max_months: pick(item.duration_months, s?.duration_months_max),
+    min_partners: s?.min_partners || 2,
+    call_summary: summary,
+    active: 0,
+  });
+  return { id: newId, action_type: actionType, already_existed: false, used_structured: !!s };
+}
+
+async function listActiveActionTypes() {
+  const [rows] = await pool.query(
+    'SELECT action_type FROM intake_programs WHERE active=1 AND action_type IS NOT NULL'
+  );
+  return rows.map(r => r.action_type);
 }
 
 /* ══ ref_countries ════════════════════════════════════════════════ */
@@ -353,7 +413,7 @@ async function upsertEvalQuestion(data, id) {
       code: 'code', title: 'title', description: 'description',
       general_context: 'general_context', connects_from: 'connects_from',
       connects_to: 'connects_to', global_rule: 'global_rule',
-      word_limit: 'word_limit', page_limit: 'page_limit',
+      word_limit: 'word_limit', page_limit: 'page_limit', char_limit: 'char_limit',
       writing_guidance: 'writing_guidance', scoring_logic: 'scoring_logic',
       weight: 'weight', max_score: 'max_score', threshold: 'threshold',
       sort_order: 'sort_order'
@@ -616,10 +676,15 @@ async function generateEvalFromTemplate(programId, templateId) {
       );
       let qOrder = 0;
       for (const sub of subsections) {
+        // Bind the eval question to its form field id + character limit so the
+        // Writer (data-driven path) resolves criteria/limits without a hardcoded map.
+        const f = (sub.fields || [])[0] || {};
+        const charLimit = f.char_limit || null;
         await conn.query(
-          `INSERT INTO eval_questions (id, section_id, code, title, description, sort_order, max_score, weight)
-           VALUES (?,?,?,?,?,?,0,0)`,
-          [uuid(), secId, sub.number || '', sub.title || '', (sub.guidance || []).join('\n\n'), qOrder++]
+          `INSERT INTO eval_questions (id, section_id, code, title, description, field_id, char_limit, word_limit, sort_order, max_score, weight)
+           VALUES (?,?,?,?,?,?,?,?,?,0,0)`,
+          [uuid(), secId, sub.number || '', sub.title || '', (sub.guidance || []).join('\n\n'),
+           f.id || null, charLimit, charLimit ? Math.floor(charLimit / 7) : null, qOrder++]
         );
       }
       return secId;
@@ -667,18 +732,121 @@ async function generateEvalFromTemplate(programId, templateId) {
 async function listCallDocuments(programId) {
   const [rows] = await pool.query(
     `SELECT cd.*, d.title AS doc_title, d.file_type, d.file_size_bytes, d.status AS doc_status,
-            d.tags, d.created_at AS doc_created_at
+            d.tags, d.created_at AS doc_created_at,
+            d.body_text_chars, d.tokens_estimated, d.storage_path
      FROM call_documents cd
      JOIN documents d ON d.id = cd.document_id
      WHERE cd.program_id = ?
      ORDER BY cd.sort_order, cd.created_at`,
     [programId]
   );
-  // Parse tags JSON
   rows.forEach(r => {
     if (typeof r.tags === 'string') try { r.tags = JSON.parse(r.tags); } catch(_) { r.tags = []; }
   });
   return rows;
+}
+
+/**
+ * Inventario CAG de una convocatoria: lista de docs con peso y orden,
+ * más el total acumulado y el budget cap (~80k tokens del bundle CAG).
+ * Refleja exactamente lo que el pipeline cargaría al compilar el Master
+ * de un proyecto de esta convocatoria si el usuario no aporta nada.
+ */
+async function getCagInventory(programId) {
+  const docs = await listCallDocuments(programId);
+  // Ajustado: tras añadir criterios FULL + reglas transversales al prompt
+  // del Master el bundle CAG no puede superar ~50k tokens para que quepa
+  // todo el contexto en los 200k del modelo Sonnet 4.
+  const BUDGET_TOKENS = 50_000;
+  const BUDGET_CHARS = 200_000;
+  // Categorías por sort_order:
+  //   -1       → forzado al top del CAG
+  //    0       → marcado para CAG
+  //    1..998  → default / RAG (no entra al CAG)
+  //    9999    → solo RAG explícito
+  let acc = 0;
+  // Ordenamos por sort_order ASC para calcular cumulative solo entre los <=0
+  const orderedForCag = [...docs].sort((a, b) => (a.sort_order ?? 1) - (b.sort_order ?? 1));
+  const annotated = orderedForCag.map(d => {
+    const so = d.sort_order ?? 1;
+    const chars = d.body_text_chars || 0;
+    let category, wouldFit, cumulative;
+    if (so >= 9999) {
+      category = 'rag_only_explicit';
+      wouldFit = false;
+      cumulative = null;
+    } else if (so >= 1) {
+      category = 'rag_default';
+      wouldFit = false;
+      cumulative = null;
+    } else if (so < 0) {
+      // forzado
+      const fits = (acc + chars) <= BUDGET_CHARS;
+      if (fits) acc += chars;
+      category = 'cag_forced';
+      wouldFit = fits;
+      cumulative = fits ? acc : null;
+    } else {
+      // so === 0
+      const fits = (acc + chars) <= BUDGET_CHARS;
+      if (fits) acc += chars;
+      category = 'cag_selected';
+      wouldFit = fits;
+      cumulative = fits ? acc : null;
+    }
+    return { ...d, category, would_fit_in_cag: wouldFit, cumulative_chars: cumulative };
+  });
+  return {
+    docs: annotated,
+    budget_tokens: BUDGET_TOKENS,
+    budget_chars: BUDGET_CHARS,
+    used_chars: acc,
+    used_tokens: Math.ceil(acc / 4),
+    remaining_chars: Math.max(0, BUDGET_CHARS - acc),
+  };
+}
+
+async function updateCallDocumentOrder(id, sortOrder) {
+  await pool.query(
+    'UPDATE call_documents SET sort_order = ? WHERE id = ?',
+    [sortOrder, id]
+  );
+}
+
+/**
+ * Reordena docs de una convocatoria. Acepta dos shapes:
+ *   { ids: [id1, id2, ...] }                   → asigna sort_order = posición.
+ *   { items: [{id, sort_order}, ...] }         → respeta sort_order específico
+ *     (para marcar 9999 = Solo RAG, etc.).
+ */
+async function reorderCallDocuments(programId, payload) {
+  const conn = await pool.getConnection();
+  try {
+    await conn.beginTransaction();
+    let n = 0;
+    if (Array.isArray(payload?.items)) {
+      for (const it of payload.items) {
+        const [r] = await conn.query(
+          'UPDATE call_documents SET sort_order = ? WHERE id = ? AND program_id = ?',
+          [parseInt(it.sort_order, 10) || 0, it.id, programId]
+        );
+        n += r.affectedRows || 0;
+      }
+    } else {
+      const ids = Array.isArray(payload?.ids) ? payload.ids : payload;
+      if (!Array.isArray(ids)) return 0;
+      for (let i = 0; i < ids.length; i++) {
+        const [r] = await conn.query(
+          'UPDATE call_documents SET sort_order = ? WHERE id = ? AND program_id = ?',
+          [i, ids[i], programId]
+        );
+        n += r.affectedRows || 0;
+      }
+    }
+    await conn.commit();
+    return n;
+  } catch (e) { await conn.rollback(); throw e; }
+  finally { conn.release(); }
 }
 
 async function createCallDocument(programId, documentId, docType, label) {
@@ -843,7 +1011,7 @@ async function listProgramsWithCounts() {
 }
 
 module.exports = {
-  listPrograms, upsertProgram, deleteProgram,
+  listPrograms, upsertProgram, deleteProgram, importProgramFromFeed, listActiveActionTypes,
   listCountries, upsertCountry, deleteCountry,
   listPerdiem, upsertPerdiem, deletePerdiem,
   listWorkerCategories, upsertWorkerCategory, deleteWorkerCategory,
@@ -858,5 +1026,6 @@ module.exports = {
   listFormInstances, createFormInstance, getFormInstance,
   getFormValues, saveFormValues, updateFormInstance, deleteFormInstance,
   listCallDocuments, createCallDocument, deleteCallDocument, availableCallDocuments,
+  getCagInventory, updateCallDocumentOrder, reorderCallDocuments,
   duplicateProgram, listProgramsWithCounts, generateEvalFromTemplate
 };

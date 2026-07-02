@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-HLTH-2024-STAYHLTH-01-05-two-stage",
+  "ccm2Id": "45700847",
+  "callIdentifier": "HORIZON-HLTH-2024-STAYHLTH-01-two-stage",
+  "callTitle": "",
+  "title": "Personalised prevention of non-communicable diseases - addressing areas of unmet needs using multiple data sources",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Pharmacoeconomics\",\"Personalised treatment\",\"Pathology\",\"Disease prevention\",\"Neurosciences (including psychophysiology)\",\"Nutrition, Dietetics\",\"Personalised prevention\",\"Clinical data\",\"Human genetics\",\"Cardiac and Cardiovascular systems\",\"Social sciences and humanities\",\"Pharmacology and pharmacy\",\"Endocrinology and metabolism (including diabetes,\",\"Public health policies\",\"Immunology\",\"Cost efficiency\",\"Hematology\",\"Public and environmental health\",\"International Cooperation\",\"Oncology\",\"Personalised medicine\",\"Basic medicine\",\"epigenomics\",\"proteomics\",\"genomics\",\"metagenomics\",\"prevention\",\"personalised prevention\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-STAYHLTH-01-05-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.500Z"
+}

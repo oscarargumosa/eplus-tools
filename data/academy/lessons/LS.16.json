@@ -1,0 +1,63 @@
+{
+  "id": "LS.16",
+  "code": "UD-LS.16",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "C — Antes de escribir",
+  "title": "Anexo 3 · El acuerdo de partenariado entre socios",
+  "subtitle": "Por qué deberías firmar un acuerdo privado entre socios (partnership/consortium agreement), qué regula que el convenio de subvención no cubre y cuándo negociarlo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "Annex 3 del Handbook (Recommendations on consortium agreements)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Montas el consorcio con un apretón de manos y buena voluntad, y los temas espinosos —dinero, tareas, propiedad intelectual, qué pasa si alguien falla— quedan sin escribir hasta que estalla un conflicto a mitad de proyecto.",
+    "comprender": "Que existen DOS acuerdos distintos: el grant agreement (tú con la Agencia Nacional) y el partnership agreement (los socios entre sí), y que el segundo es privado, voluntario pero muy recomendable, y vuestra responsabilidad.",
+    "objetivo": "Saber qué es y qué regula el acuerdo de partenariado, cuándo negociarlo (antes de firmar el grant agreement) y qué temas conviene cerrar en él.",
+    "confusion": "Pensar que el convenio de subvención ya cubre la relación entre socios. No: regula vuestra relación con la Agencia, no entre vosotros; los detalles internos los pone el partnership agreement.",
+    "importa": "Porque el acuerdo entre socios es el que evita disputas, protege la propiedad intelectual y reparte responsabilidades; dejarlo para el final o no firmarlo es una fuente clásica de problemas."
+  },
+  "sections": [
+    {
+      "id": "idea",
+      "kind": "content",
+      "title": "Dos acuerdos, no uno",
+      "html": "<p>La confusión más extendida sobre los consorcios europeos es creer que hay un solo contrato. En realidad hay <b>dos acuerdos distintos</b>, y mezclarlos crea problemas:</p><table><thead><tr><th>Acuerdo</th><th>Entre quién</th><th>Qué regula</th></tr></thead><tbody><tr><td><b>Grant agreement</b><br>(convenio de subvención)</td><td>Beneficiarios ↔ Agencia Nacional</td><td>Los <b>derechos y obligaciones</b> entre los beneficiarios del proyecto y la Agencia Nacional.</td></tr><tr><td><b>Partnership agreement</b><br>(acuerdo de partenariado / consortium agreement)</td><td>Beneficiarios ↔ beneficiarios</td><td>Un acuerdo <b>privado</b> entre los beneficiarios que define sus <b>derechos y obligaciones entre sí</b>.</td></tr></tbody></table><div class=\"callout callout-key\">Para una implementación exitosa del proyecto, es <b>altamente recomendable</b> que los socios firmen un acuerdo de partenariado. Y un punto crucial: como es un acuerdo privado entre vosotros, los <b>co-beneficiarios sois plenamente responsables de él</b>. La Agencia no os lo va a redactar ni a vigilar.</div>"
+    },
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. Cuándo negociarlo: antes del grant agreement",
+      "html": "<p>El timing no es un detalle: el acuerdo de consorcio <b>debe negociarse y concluirse ANTES de firmar el convenio de subvención</b>.</p><p>Y la recomendación va más allá: conviene <b>empezar las negociaciones ya en la fase de propuesta</b>, elaborando un <b>borrador de acuerdo</b>. ¿Por qué tan pronto?</p><ul><li>Te permite <b>discutir y acordar cómo gestionar asuntos importantes (y a menudo sensibles)</b> con tiempo y cabeza fría.</li><li>Te permite <b>implicar a todos los socios</b> en la redacción, en lugar de imponerles algo después.</li><li>Ese borrador se usará luego como <b>punto de partida</b> para seguir discutiendo si la propuesta es aceptada.</li></ul><div class=\"callout callout-good\">Mensaje práctico: arrancar el borrador en fase de propuesta convierte una posible pelea futura en una conversación temprana y ordenada. Cuanto antes salgan los temas espinosos, menos dañan.</div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Qué puedes acordar en él (lo que el grant agreement no cubre)",
+      "html": "<p>El acuerdo de partenariado permite a los socios <b>acordar cualquier detalle específico no cubierto por el convenio de subvención</b>. Por ejemplo:</p><ul><li><b>Gestión y gobernanza</b> del partenariado.</li><li><b>Organización del trabajo y división de tareas.</b></li><li><b>Canales de comunicación</b> entre los beneficiarios.</li><li><b>Frecuencia de las reuniones.</b></li><li><b>Idioma de comunicación.</b></li><li><b>Distribución del presupuesto.</b></li><li><b>Acuerdos de pago</b> (payment arrangement).</li><li><b>Gestión de la propiedad intelectual.</b></li><li><b>Responsabilidad (liability).</b></li><li><b>Métodos para resolver disputas y conflictos.</b></li><li><b>Explotación y difusión futura</b> de los resultados.</li><li>Etc.</li></ul><div class=\"callout callout-warn\"><b>Límite infranqueable:</b> el acuerdo de partenariado <b>no puede contener ninguna disposición contraria al convenio de subvención</b>. Es un complemento privado, no un contrato que pueda contradecir lo pactado con la Agencia.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. Cómo encaja esto en tu forma de trabajar",
+      "html": "<p>Resumiendo el anexo en una imagen mental: el <b>grant agreement</b> es tu contrato con «el banco» (la Agencia), y el <b>partnership agreement</b> es el pacto de convivencia entre los inquilinos del piso (los socios). El primero te lo dan; el segundo lo escribís vosotros.</p><div class=\"callout callout-key\">La recomendación del Handbook es clara y se sostiene en tres patas: <b>(1)</b> firmadlo —es altamente recomendable—; <b>(2)</b> negociadlo y concluidlo <b>antes</b> de firmar el grant agreement, empezando el borrador en fase de propuesta; <b>(3)</b> usadlo para cerrar todo lo que el convenio de subvención deja abierto, sin contradecirlo nunca.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El grant agreement ya regula la relación entre socios.»</b> → No. Regula vuestra relación con la Agencia; entre vosotros manda el partnership agreement.</li><li><span class=\"err-x\">✗</span> <b>«Lo dejamos para el final, cuando nos aprueben.»</b> → Debe concluirse <em>antes</em> de firmar el grant agreement, y el borrador empieza en fase de propuesta.</li><li><span class=\"err-x\">✗</span> <b>«Con un acuerdo verbal y confianza basta.»</b> → Es altamente recomendable <em>firmarlo</em>: la propiedad intelectual, la responsabilidad y la resolución de disputas no se sostienen de palabra.</li><li><span class=\"err-x\">✗</span> <b>«Copiamos una plantilla y la firmamos sin más.»</b> → Su valor está en <em>negociarlo</em> e implicar a todos los socios; copiarlo sin discutir reproduce los conflictos que debía evitar.</li><li><span class=\"err-x\">✗</span> <b>«Podemos pactar lo que queramos.»</b> → No puede contener nada contrario al convenio de subvención.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the KA2 lump sum funding model · Annex 3 (Recommendations on consortium agreements)</td><td>Distinción grant agreement vs partnership agreement, recomendación de firmarlo, timing (antes del grant agreement, borrador en fase de propuesta) y lista de asuntos que puede regular. Remite al Artículo 7 del Grant Agreement.</td></tr></tbody></table>"
+    }
+  ]
+}

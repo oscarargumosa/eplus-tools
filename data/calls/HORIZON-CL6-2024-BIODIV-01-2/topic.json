@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL6-2024-BIODIV-01-2",
+  "ccm2Id": "45654634",
+  "callIdentifier": "HORIZON-CL6-2024-BIODIV-01",
+  "callTitle": "",
+  "title": "Digital for nature",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Biodiversity monitoring\",\"Artificial Intelligence\",\"Robotics for environment\",\"Biogeography\",\"Biodiversity status and trends\",\"Geo-information and spatial data analysis\",\"Cloud Services\",\"Knowledge transfer\",\"Digital Agenda\",\"Earth observations from space/remote sensing\",\"International Cooperation\",\"Knowledge translation\",\"Biodiversity, conservation biology, conservation g\",\"Materials for sensors\",\"Artificial Intelligence \\u0026 Decision support\",\"Robotics\",\"Habitats\",\"Interoperable Data\",\"Data hosting and processing solutions\",\"species identification\",\"EU biodiversity strategy for 2030\",\"Biodiversity strategy\",\"Data sharing solutions\",\"protected species\",\"satelliteborne sensors, airborne platforms, radar and lidar systems\",\"Databases\",\"Automated Sensors\",\"Digital solutions\",\"European Open Science Cloud\",\"Biodiversity loss\",\"Conservation status\",\"GIS-data\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda",
+    "EC-WORLD"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-01-2.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.344Z"
+}

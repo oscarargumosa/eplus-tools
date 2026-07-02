@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "900917",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES / SUBSECRETARÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de la Subsecretaría de Educación, Formación Profesional y Deportes por la que se convocan plazas en secciones bilingües de español en  Bulgaria, China, Eslovaquia, Estonia, Hungría, Moldavia, Polonia, República Checa, Rumanía y Rusia, 2026-2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": "2026-04-27",
+  "deadline": "2026-05-18",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000608,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.educacion.gob.es/portada.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900917",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2005/04/20/eci1305",
+  "text_inicio": "15 días hábiles a partir del día siguiente a la publicación del extracto de esta Resolución en BOE",
+  "text_fin": "15 días hábiles a partir del día siguiente al de su publicación en BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209954,
+      "titulo": "Extracto de la Resolución de 22 de abril de 2026 de la Subsecretaría del Ministerio de Educación, Formación Profesional y Deportes, por la que se convocan plazas de profesores en Secciones Bilingües de español en centros educativos de Bulgaria, China, Eslovaquia, Estonia, Hungría, Moldavia, Polonia, República Checa, Rumanía y Rusia para el curso 2026-2027.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Docentes en posesión de cualquiera de las titulaciones recogidas -según país- en el Anexo I de la Resolución de la convocatoria. Deben poseer nacionalidad española y estar en posesión del Máster que habilita para el ejercicio de la docencia en Educación Secundaria Obligatoria, Bachillerato, Formación Profesional y enseñanzas de idiomas, con las excepciones que se recogen en la convocatoria.</p><p>Segundo. Finalidad.</p><p>Impartir lengua y cultura españolas y otras materias en español en las Secciones Bilingües de español de Bulgaria, China, Eslovaquia, Estonia, Hungría, Moldavia, Polonia, República Checa, Rumanía y Rusia.</p><p>Tercero. Bases reguladoras.</p><p>Orden ECI/1305/2005 de 20 de abril publicada en el Boletín Oficial del Estado de 12 de mayo.</p><p>Cuarto. Importe.</p><p>La cuantía máxima de las ayudas económicas que percibirá el profesorado seleccionado a través de esta convocatoria será de trece mil quinientos ochenta y cuatro euros (13.584 euros) por curso académico, excepto para los profesores destinados a Rusia, en cuyo caso será de dieciocho mil ciento cincuenta y seis euros (18.156 euros). Además, una ayuda anual en concepto de viajes de ida y vuelta a los países de destino por un importe de 1.000 euros, salvo en el caso del profesorado destinado a China, que percibirá una ayuda de 1.300 euros.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>15 días hábiles a partir del día siguiente a la publicación de este extracto en el Boletín Oficial del Estado.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-13096",
+      "cve": "BOE-B-2026-13096",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-25"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.946Z"
+}

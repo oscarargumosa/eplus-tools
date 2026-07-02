@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-INFRA-01-01",
+  "ccm2Id": "45763614",
+  "callIdentifier": "HORIZON-CL3-2023-INFRA-01",
+  "callTitle": "",
+  "title": "Facilitating strategic cooperation to ensure the provision of essential services",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Fight against crime and terrorism\",\"Digital Agenda\",\"Policy and Support\",\"Artificial Intelligence\",\"Critical Infrastructure Protection (CIP)\",\"Operators of critical infrastructure\",\"Detection, identification and authentication\",\"Protection of public spaces\",\"Security\",\"Terrorism\",\"Security Analysis\",\"Critical infrastructure, emergency systems, securi\",\"resilience of the EU internal market\",\"EU Member State authorities and operators\",\"Security Union Strategy\",\"resilience plans\",\"cross-border risk assessments\",\"resilience of operators\",\"data exchange\",\"training\",\"preparedness and response\",\"Simulation tools\",\"CER Directive:\",\"risk assessments\",\"essential services\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-INFRA-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.353Z"
+}

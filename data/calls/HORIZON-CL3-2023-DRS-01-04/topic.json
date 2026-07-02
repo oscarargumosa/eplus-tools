@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL3-2023-DRS-01-04",
+  "ccm2Id": "45763359",
+  "callIdentifier": "HORIZON-CL3-2023-DRS-01",
+  "callTitle": "",
+  "title": "Internationally coordinated networking of training centres for the validation and testing of CBRN-E tools and technologies in case of incidents, with consideration of human factors",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Chemical, Biological, CBRN detection\",\"Training Centres/facilities, e.g. airport training\",\"Security testing and validation\",\"International Cooperation\",\"Human behaviour modelling and simulation\",\"Societal Engagement\",\"Software design validation and maintenance\",\"Disaster resilience and crisis management\",\"Incident Response\",\"Training Development and evaluation\",\"Security\",\"Digital Agenda\",\"Training\",\"Social sciences and humanities\",\"gaps in test and validation techniques, methodologies and protocols\",\"societal and technological challenges\",\"testing methodologies and protocols for the validation of tools and technologies\",\"CBRN-E\",\"CBRN Centres of Excellence in non-EU countrie\",\"Security Union Strategy\",\"Inter-cooperation\",\"support of research and standard developments\",\"networking of training centres\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EC-WORLD",
+    "SocietalEngagement",
+    "DigitalAgenda",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-DRS-01-04.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.266Z"
+}

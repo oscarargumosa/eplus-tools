@@ -1,0 +1,58 @@
+{
+  "id": "2.1.5",
+  "code": "Part B · 2.1.5",
+  "module": "EACEA",
+  "moduleTitle": "Quality of design and implementation",
+  "bloque": "F — Técnicas de redacción",
+  "title": "2.1.5 Gestión de riesgos",
+  "subtitle": "Cómo identificar lo que puede salir mal en tu proyecto y demostrar que tienes un plan para cada riesgo, sin asustar al evaluador.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.1.5",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Crees que admitir riesgos es admitir debilidad, así que escribes \"no prevemos riesgos significativos\" o pones riesgos de mentira para salir del paso. Ambas cosas restan puntos.",
+    "comprender": "Que un buen análisis de riesgos demuestra MADUREZ: significa que has pensado el proyecto a fondo y que tienes un plan B. La Agencia confía más en quien anticipa problemas que en quien finge que no existen.",
+    "objetivo": "Saber identificar los riesgos reales del proyecto, valorarlos por probabilidad e impacto (alto/medio/bajo) y asignar a cada uno una medida de mitigación concreta, presentado en una tabla clara.",
+    "confusion": "Confundir riesgo con incumplimiento. Un riesgo no es \"haremos mal el trabajo\"; es un factor externo o interno que podría dificultar el proyecto (un socio se retira, baja la participación, se retrasa un permiso) y que tú anticipas.",
+    "importa": "Porque es la pregunta que separa al solicitante novato del experimentado. Un análisis de riesgos honesto y con mitigaciones creíbles transmite que el consorcio sabe ejecutar bajo incertidumbre, y eso da puntos en el criterio de calidad."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El apartado 2.1.5 cierra el bloque de calidad pidiéndote mirar de frente lo que puede torcerse:</p><div class=\"callout callout-key\"><b>📋 Identifica los riesgos críticos, las incertidumbres y las dificultades del proyecto, junto con las medidas de mitigación previstas. Para cada riesgo, valora su impacto y su probabilidad (alto / medio / bajo).</b></div><p>Te pide cuatro cosas por cada riesgo:</p><ul><li><b>El riesgo</b> — qué podría salir mal (concreto, no genérico).</li><li><b>La probabilidad</b> — cómo de fácil es que ocurra: alta / media / baja.</li><li><b>El impacto</b> — cómo de grave sería si ocurre: alto / medio / bajo.</li><li><b>La mitigación</b> — qué harás para reducir la probabilidad o amortiguar el golpe.</li></ul><p>La forma natural de presentarlo es una <b>tabla</b>: una fila por riesgo, una columna por cada uno de esos cuatro elementos.</p>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El secreto está en el equilibrio: ni minimizar (\"no hay riesgos\") ni dramatizar (una lista interminable de catástrofes). Buscas <b>riesgos reales, bien valorados y bien mitigados</b>.</p><p>Tres reglas para acertar:</p><ol class=\"obj\"><li><b>Riesgos verosímiles y específicos de tu proyecto.</b> \"Retraso en el reclutamiento de participantes por solapamiento con el calendario escolar\" es un riesgo real; \"un meteorito\" o \"falta de motivación del equipo\" no aportan. Piensa en socios, participantes, calendario, permisos, recursos digitales.</li><li><b>Valora con criterio, no todo en \"medio\".</b> Si todo es probabilidad media e impacto medio, el evaluador ve que no analizaste de verdad. Diferencia: algunos riesgos son poco probables pero graves; otros, frecuentes pero menores.</li><li><b>Mitigaciones concretas y proporcionadas.</b> La mitigación debe atacar ese riesgo en particular. \"Tendremos cuidado\" no mitiga nada. \"Acuerdo de consorcio con cláusula de sustitución y una lista de socios de reserva\" sí mitiga el riesgo de que un socio abandone.</li></ol><div class=\"callout callout-good\"><b>Admitir riesgos es señal de madurez, no de debilidad.</b> El evaluador lee \"no prevemos riesgos\" como falta de reflexión. Un proyecto que reconoce sus puntos frágiles y muestra un plan B transmite control. La confianza no viene de negar el riesgo, sino de demostrar que lo tienes domado.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Una <b>tabla de riesgos</b> bien construida, con probabilidad e impacto diferenciados y mitigaciones concretas:</p><table class=\"cmp\"><thead><tr><th>Riesgo</th><th>Probabilidad</th><th>Impacto</th><th>Mitigación</th></tr></thead><tbody><tr><td>Un socio abandona el consorcio</td><td>Baja</td><td>Alto</td><td>Cláusula de sustitución en el acuerdo de consorcio + lista de socios de reserva identificados desde el inicio</td></tr><tr><td>Baja participación en el pilotaje por solape con el calendario escolar</td><td>Media</td><td>Medio</td><td>Planificar el pilotaje fuera de periodos de exámenes + acuerdos previos con los centros + grupo objetivo sobredimensionado</td></tr><tr><td>Retraso en la producción de materiales</td><td>Media</td><td>Medio</td><td>Hitos intermedios por entregable + revisión cruzada temprana + margen de holgura en el cronograma</td></tr><tr><td>Problemas técnicos en la plataforma digital</td><td>Baja</td><td>Medio</td><td>Usar una plataforma ya probada del socio TIC + soporte técnico dedicado + copias de seguridad</td></tr><tr><td>Resultados con baja transferibilidad a otros contextos</td><td>Baja</td><td>Alto</td><td>Diseño modular y abierto desde el inicio + pilotaje en contextos diversos para validar la adaptabilidad</td></tr></tbody></table><div class=\"callout callout-good\"><b>Fíjate:</b> las valoraciones <em>no</em> son todas iguales (hay impactos altos con probabilidad baja, y medios con probabilidad media), y cada mitigación ataca su riesgo concreto. Eso es lo que el evaluador premia.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«No prevemos riesgos significativos.»</b> → El evaluador lo lee como falta de reflexión, no como solidez. Todo proyecto tiene riesgos; negarlos resta puntos.</li><li><span class=\"err-x\">✗</span> <b>«Pongo riesgos genéricos para rellenar.»</b> → \"Falta de motivación\" o \"imprevistos\" no son riesgos analizables. Sé específico de TU proyecto: socios, participantes, calendario, recursos.</li><li><span class=\"err-x\">✗</span> <b>«Todo es probabilidad media e impacto medio.»</b> → Delata que no valoraste de verdad. Diferencia los niveles; algunos riesgos son raros pero graves, otros frecuentes pero leves.</li><li><span class=\"err-x\">✗</span> <b>«Mitigación: estaremos atentos / tendremos cuidado.»</b> → No mitiga nada. La medida debe ser una acción concreta que ataque ese riesgo en particular.</li><li><span class=\"err-x\">✗</span> <b>«Confundo riesgo con hacer mal el trabajo.»</b> → Un riesgo es un factor que dificulta el proyecto, no una promesa de ejecutar mal. \"Un socio se retira\" es riesgo; \"redactaremos mal\" no.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · 2.1.5</b></td><td>El texto literal: riesgos críticos, incertidumbres y dificultades, con mitigaciones y valoración de impacto y probabilidad.</td></tr><tr><td><b>kb-0095</b> Rúbrica del evaluador</td><td>Confirma que se valora un análisis de riesgos realista, bien diferenciado y con mitigaciones creíbles; negar los riesgos penaliza.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomienda usar una tabla riesgo–probabilidad–impacto–mitigación, ser específico y presentar el plan B como señal de madurez.</td></tr></tbody></table>"
+    }
+  ]
+}

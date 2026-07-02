@@ -1,0 +1,128 @@
+{
+  "id": 1104994,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903433",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000000,
+  "mrr": false,
+  "descripcion": "SGBA - CONVOCATORIA BECAS SEGUNDA OPORTUNIDAD 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    },
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN 1945/2023, DE 2 DE JUNIO, DE LA VICEPRESIDENCIA, CONSEJERÍA DE EDUCACIÓN",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2023/06/14/BOCM-20230614-24.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "textFin": "15 DIAS HABILES A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448383,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS.pdf",
+      "long": 474040,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448384,
+      "descripcion": "Modelo de Solicitud",
+      "nombreFic": "Modelo de Solicitud.pdf",
+      "long": 651284,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448385,
+      "descripcion": "Anexos  CERTIFICADO MATRICULACION",
+      "nombreFic": "Anexos  CERTIFICADO MATRICULACION.pdf",
+      "long": 320746,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448390,
+      "descripcion": "Anexos  RENUNCIA",
+      "nombreFic": "Anexos  RENUNCIA.pdf",
+      "long": 206539,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448387,
+      "descripcion": "Anexos  AUTORIZACION",
+      "nombreFic": "Anexos  AUTORIZACION.pdf",
+      "long": 341389,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448388,
+      "descripcion": "Anexos  SUBSANACION",
+      "nombreFic": "Anexos  SUBSANACION.pdf",
+      "long": 230108,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448389,
+      "descripcion": "Anexos  RECURSO",
+      "nombreFic": "Anexos  RECURSO.pdf",
+      "long": 219184,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448386,
+      "descripcion": "Anexos  CERTIFICADO CAMBIO DE CENTRO",
+      "nombreFic": "Anexos  CERTIFICADO CAMBIO DE CENTRO.pdf",
+      "long": 34559,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

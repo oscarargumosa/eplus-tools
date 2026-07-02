@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "897450",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA Y LEÓN / CONSEJERÍA DE EDUCACIÓN",
+  "nuts_codes": [
+    "ES41"
+  ],
+  "nuts_primary": "ES41",
+  "title": "Orden 25 de marzo de 2026, de la Consejería de Educación, por la que se convocan ayudas para centros privados concertados de EE destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": "2026-04-11",
+  "deadline": "2026-05-12",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 210000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    }
+  ],
+  "apply_url": "https://www.tramitacastillayleon.jcyl.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897450",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2016/09/08/pdf/BOCYL-D-08092016-1.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208150,
+      "titulo": "EXTRACTO de la Orden de 25 de marzo de 2026, de la Consejería de Educación, por la que se convocan ayudas para centros privados concertados de educación especial destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado durante el curso académico 2025/2026.",
+      "tituloLeng": null,
+      "texto": "<p>Asimismo, la convocatoria puede consultarse en la sede electrónica de la Administración de la Comunidad de Castilla y León (https://www.tramitacastillayleon.jcyl.es) utilizando el identificador BDNS.</p><p>Primero. Objeto</p><p>Convocar, en régimen de concesión directa, al amparo del artículo 22.2 b) de la Ley 38/2003 de 17 de noviembre, General de Subvenciones, ayudas para centros privados concertados de educación especial destinadas a financiar el transporte del alumnado con pluridiscapacidad con movilidad reducida que necesite transporte adaptado para el curso académico 2025/2026.</p><p>Segundo. Beneficiarios.</p><p>Podrán ser beneficiarios de estas ayudas los centros privados concertados de educación especial de la Comunidad de Castilla y León que cumplan las siguientes condiciones:</p><p>Escolarizar, durante el curso académico 2025/2026, alumnado con pluridiscapacidad con movilidad reducida para los que se precise transporte adaptado.</p><p>Mantener suscrito, durante el curso académico 2025/2026 un concierto educativo en los niveles en que esté escolarizado el alumnado con pluridiscapacidad transportado.</p><p>Gestionar la contratación de rutas de transporte escolar mediante vehículos adaptados para el alumnado con pluridiscapacidad con movilidad reducida por medio de recursos de su propiedad o por contrato de arrendamiento de vehículos con empresas especializadas del sector.</p><p>Tercero. Bases reguladoras.</p><p>Orden EDU/767/2016, de 30 de agosto, publicada en el Boletín Oficial de Castilla y León nº 174, de 8 de septiembre.</p><p>Cuarto. Cuantía.</p><p>La cuantía global máxima de las ayudas es de doscientos diez mil euros (210.000 €).</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de veinte días hábiles contados a partir del día siguiente al de la publicación de este extracto en el Boletín Oficial de Castilla y León.</p>",
+      "textoLeng": null,
+      "url": "https://bocyl.jcyl.es/boletines/2026/04/10/pdf/BOCYL-D-10042026-68-4.pdf",
+      "cve": "BOCYL-D-10042026-68-4",
+      "desDiarioOficial": "BOCYL. B.O. DE LA JUNTA DE CASTILLA Y LEÓN",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.030Z"
+}

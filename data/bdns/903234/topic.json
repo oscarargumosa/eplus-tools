@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "903234",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE CULTURA / DIRECCIÓN GENERAL DE PATRIMONIO CULTURAL Y BELLAS ARTES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Ayudas, en régimen de concurrencia competitiva, para proyectos de salvaguarda del Patrimonio Cultural Inmaterial, correspondientes a 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 234000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://cultura.se-sede.gob.es/procedimiento/portada?idProc=105920",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903234",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-17455",
+  "text_inicio": "15 días hábiles a partir del siguiente a la publicación en el BOE",
+  "text_fin": "15 días hábiles después del siguiente a la publicación en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210809,
+      "titulo": "Extracto de la Resolución del 30 de abril de la Secretaría de Estado de Cultura por la que se convocan ayudas, en régimen de concurrencia competitiva, para proyectos de salvaguarda del Patrimonio Cultural Inmaterial correspondientes al año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrán concurrir a esta convocatoria de ayudas las personas jurídicas sin ánimo de lucro tanto del sector público como del sector privado, que deberán estar legalmente constituidas a la fecha de finalización del plazo de presentación de solicitudes: ayuntamientos, diputaciones, mancomunidades y otros entes locales, asociaciones e instituciones sin fines de lucro, universidades y entidades dependientes de comunidades autónomas. Los solicitantes deberán acreditar su capacidad y adecuación para la realización de la actividad para la que se solicita la ayuda.</p><p>Las entidades solicitantes deberán aportar como financiación propia al proyecto al menos el 10% del coste total del mismo declarado en la memoria o, en su caso, el 10% del coste del proyecto reformulado.</p><p>No podrán presentarse a esta convocatoria los solicitantes en quienes concurra alguna de las prohibiciones en los términos previstos en el artículo 13 de la Ley 38/2003 General de Subvenciones, de 17 de noviembre, ni los que sean deudores por reintegro de subvenciones en los términos previstos en el artículo 21 del Reglamento de la Ley General de Subvenciones.</p><p>Las entidades que no sean administraciones públicas (entidades sin ánimo de lucro) deberán tener en cuenta que las cantidades recibidas en concepto de subvención quedarán sometidas a lo regulado por la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades y el Real Decreto 634/2015, de 10 de julio, por el que se aprueba el Reglamento del Impuesto sobre Sociedades.</p><p>Los solicitantes, por el solo hecho de solicitar estas ayudas, se comprometen a aceptar el contenido de esta convocatoria y el resultado de la misma, así como a cumplir las obligaciones que se establecen en el artículo 14 de la LGS.</p><p>Segundo. Finalidad:</p><p>Las ayudas convocadas tienen por objeto la realización de proyectos de salvaguarda del Patrimonio Cultural Inmaterial.</p><p>Tercero. Bases Reguladoras:</p><p>Orden CUL/2912/2010, de 10 de noviembre (Boletín Oficial del Estado de 13 de noviembre), por la que se establecen las bases reguladoras para la concesión de subvenciones públicas en régimen de concurrencia competitiva del Ministerio de Cultura y de sus organismos públicos.</p><p>Cuarto. Importe:</p><p>El importe máximo imputable a la totalidad de las ayudas será de 234.000 €.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes será de quince días hábiles, a partir del día siguiente al de la publicación del extracto de esta Resolución en el «Boletín Oficial del Estado».</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-14385",
+      "cve": "BOE-B-2026-14385",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.097Z"
+}

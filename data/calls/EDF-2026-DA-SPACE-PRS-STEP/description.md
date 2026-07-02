@@ -1,0 +1,11 @@
+## Scope
+
+Taking into consideration the ongoing activities in this area funded by the EU, EU Member States and EDF associated countries, the general objective of this topic is to support the developments necessary for the integration and qualification of Public Regulated Service (PRS) receivers into existing military operational platforms as well as the enhancement of navigation warfare (NAVWAR) capabilities. In particular, this topic will focus on the development of Galileo PRS receiver technology and the NAVWAR information management system, taking into account the need to also support guided munitions and missiles in operational environments.
+
+Beyond defence technologies, this topic also contributes to the STEP objectives as defined in the STEP Regulation in the target investment area of deep and digital technologies.
+
+Targeted types of activities: Design, system prototyping, testing and qualification, not excluding upstream and downstream activities eligible for development actions.
+
+Indicative budget: EUR 50 000 000 for this topic under the EDF-2026-DA call.
+
+Indicative number of proposals to be funded: One proposal is to be funded for this topic. However, depending on the quality of the proposals submitted and the budget available, more than one proposal may ultimately be funded for this topic.

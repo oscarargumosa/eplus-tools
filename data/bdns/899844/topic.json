@@ -1,0 +1,105 @@
+{
+  "source": "bdns",
+  "source_id": "899844",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EJEA DE LOS CABALLEROS / AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "SUBVENCIONES EN MATERIA DE JUVENTUD PARA ENTIDADES SIN ÁNIMO DE LUCRO",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "www.ejea.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899844",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO II PROYECTO MEMORIA PRESUPUESTO",
+      "url": null
+    },
+    {
+      "label": "ANEXO III DECLARACIÓN DELITOS SEXUALES",
+      "url": null
+    },
+    {
+      "label": "MODELO REPRESENTACIÓN",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-A RELACIÓN GASTOS PAGOS",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV-B DECLARACIÓN SUBVENCIONES",
+      "url": null
+    },
+    {
+      "label": "FICHA DE TERCEROS",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV MEMORIA ECONÓMICA JUSTIFICATIVA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ejea.es/subvenciones-en-materia-de-juventud-2026/",
+  "text_inicio": "El día siguiente al de publicación del extracto de la convocatoria en el BOPZ",
+  "text_fin": "Quince días hábiles desde el día siguiente a la publicación del extracto en el BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209747,
+      "titulo": "EXTRACTO Del Decreto de Alcaldía de fecha 9 de abril de 2026 por el que se convocan subvenciones con cargo a “Subvención entidades juveniles sin ánimo de lucro en materia de Juventud” del ejercicio 2026 del Ayuntamiento de Ejea de los Caballeros",
+      "tituloLeng": null,
+      "texto": "<p>Primero. -Beneficiarios. — Podrán ser beneficiarios de estas subvenciones las asociaciones o Entidades sin ánimo de lucro legalmente constituidas, con domicilio en Ejea de los Caballeros que realicen programas y/o actividades destinadas a la juventud.</p><p>Segundo. - Objeto y finalidad. — Las subvenciones en materia de juventud tienen por objeto colaborar económicamente con las Asociaciones o Entidades sin ánimo de lucro, con la finalidad de fomentar y promocionar la actividad asociativa, la participación juvenil y el voluntariado social de la juventud.</p><p>Tercero. - Bases reguladoras. – Por Decreto de Alcaldía con fecha 9 de abril de 2026 se aprobaron los criterios específicos reguladores de la concesión de Subvenciones en materia de Juventud para entidades sin ánimo de lucro para el año 2026.</p><p>Cuarto. - Importe. - El crédito presupuestario destinado a la presente convocatoria son 7.500,00 € euros, con cargo a la aplicación presupuestaria 33700/48703 y con número de retención 12026000006528 del presupuesto municipal para el ejercicio de 2026.</p><p>Quinto. - Plazo de presentación de solicitudes. - El plazo para la presentación de solicitudes será de quince días hábiles contados a partir del siguiente al de la publicación de un extracto de estas normas en el Boletín Oficial de Aragón (Sección de la Provincia de Zaragoza).</p><p>La convocatoria íntegra será publicada en la Web del Ayuntamiento de Ejea (www.ejea.es).</p><p>El impreso de solicitud, así como el resto de modelos normalizados a cumplimentar por el solicitante, se pondrán a disposición de los interesados en la página Web del Ayuntamiento de Ejea de los Caballeros https://www.ejea.es/subvenciones-en-materia-de-juventud-2026/</p>",
+      "textoLeng": null,
+      "url": "https://boletin.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=892278&numBop=97",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ZARAGOZA",
+      "datPublicacion": "2026-05-02"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.333Z"
+}

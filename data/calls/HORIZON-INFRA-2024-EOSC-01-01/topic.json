@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-INFRA-2024-EOSC-01-01",
+  "ccm2Id": "45747829",
+  "callIdentifier": "HORIZON-INFRA-2024-EOSC-01",
+  "callTitle": "",
+  "title": "FAIR and open data sharing in support of the mission adaptation to climate change",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-12-06",
+  "deadline": "2024-03-12",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"EOSC and FAIR data\",\"Technologies and Use Cases Dimension\",\"Co-programmed European Partnerships\",\"eInfrastructure\",\"Societal Engagement\",\"open science\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "EoscAndFairData",
+    "PART-COPROGR",
+    "SocietalEngagement"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-INFRA-2024-EOSC-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.413Z"
+}

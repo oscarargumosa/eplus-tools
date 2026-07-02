@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "899238",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE CULTURA Y DEPORTE",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "Resolución 15 de abril de 2026, de la Sistemas y Valores del Deporte, por la que se convocan subvenciones en régimen de concurrencia competitiva, dirigidas al Fomento de los Campeonatos de Andalucía Universitarios (FCAU)",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": "2026-04-24",
+  "deadline": "2026-05-08",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899238",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/boja/2024/150/5",
+  "text_inicio": "Día después publicación extracto convocatoria",
+  "text_fin": "10 días hábiles desde día siguiente publicación extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209039,
+      "titulo": "Extracto de la Resolución de la Dirección General de Sistemas y Valores del Deporte, por la que se convocan para el ejercicio 2026 las subvenciones en régimen de concurrencia competitiva, dirigidas al Fomento de los Campeonatos de Andalucía Universitario",
+      "tituloLeng": null,
+      "texto": "<p>BDNS (Identif):</p><p></p><p>De conformidad con lo previsto en los artículos 17.3.b) y 20.8.a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, se publica el Extracto de la Convocatoria cuyo texto completo puede consultarse en el presente BOJA y en la Base de Datos Nacional de Subvenciones https://www.pap.hacienda.gob.es/bdnstrans/GE/es/inicio</p><p></p><p>Primero. Se convoca el procedimiento de concesión, en régimen de concurrencia competitiva, de las subvenciones en materia de deporte, dirigidas a las Universidades andaluzas para el Fomento de los Campeonatos de Andalucía Universitarios (FCAU), para el ejercicio 2026 en la cuantía máxima de 150.000 € y con cargo a la partida presupuestaria 1900010000 G/46B/44101/00 01, encontrándose limitada, en todo caso, la concesión de las ayudas objeto de la presente convocatoria por las disponibilidades presupuestarias.</p><p></p><p>Segundo. Beneficiarios.</p><p>Universidades públicas o privadas, que dispongan de la autorización del inicio de su actividad mediante decreto del Consejo de Gobierno de la Junta de Andalucía, de conformidad con lo previsto en el texto refundido de la Ley Andaluza de Universidades, aprobado por Decreto Legislativo 1/2013, de 8 de enero.</p><p></p><p>Tercero. Objeto.</p><p>La concesión de subvenciones, en régimen de concurrencia competitiva, dirigidas a universidades públicas y privadas, con la finalidad de fomentar el deporte universitario, contribuyendo a la organización o participación de los Campeonatos de Andalucía Universitarios, incluidas fases previas y finales.</p><p></p><p>Cuarto. Bases reguladoras.</p><p>La presente convocatoria está regulada por la Orden de 25 de julio de 2024, por la que se establecen las bases reguladoras para la concesión de subvenciones, en régimen de concurrencia competitiva, dirigidas al Fomento de los Campeonatos de Andalucía Universitarios (FCAU), (BOJA núm. 150, de 02/08/2024).</p><p></p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo de presentación de solicitudes será de diez días hábiles, a contar desde el día siguiente al que se publique en el Boletín Oficial de la Junta de Andalucía este extracto previsto en el artículo 20.8.a) de la Ley 38/2003, de 17 de noviembre, General de Subvenciones.</p><p></p><p>Sexto. Otros datos.</p><p>Los formularios para la solicitud y demás datos necesarios figuran publicados en el presente BOJA junto con la convocatoria.</p>",
+      "textoLeng": null,
+      "url": "https://juntadeandalucia.es/boja/2026/77/2",
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.884Z"
+}

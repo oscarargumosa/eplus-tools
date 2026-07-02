@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "902162",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALICANTE / DIPUTACIÓN PROVINCIAL DE ALACANT/ALICANTE",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA SUBVENCIONES NO DINERARIAS PARA LA REDACCIÓN DE PROYECTOS DE OBRAS DE INVERSIONES EN ARBOLADO Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN ESPACIOS URBANOS DE TITULARIDAD MUNICIPAL, ANUALIDAD 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 53000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "O",
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES"
+    }
+  ],
+  "apply_url": "https://diputacionalicante.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902162",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/30_80/2026_003148.pdf",
+  "text_inicio": "A partir del día siguiente de la publicación del extracto",
+  "text_fin": "30 días naturales a contar desde el día siguiente al de la publicación del extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 210363,
+      "titulo": "EXTRACTO DEL DECRETO DE LA SRA. DIPUTADA DE MEDIO AMBIENTE, ENERGÍA Y RESIDUOS SÓLIDOS URBANOS N.º 1822 DE FECHA 26 DE ABRIL DE 2026 POR EL QUE SE APRUEBA LA CONVOCATORIA SUBVENCIONES NO DINERARIAS PARA LA REDACCIÓN DE PROYECTOS DE OBRAS DE INVERSIONES EN ARBOLADO Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN ESPACIOS URBANOS DE TITULARIDAD MUNICIPAL, ANUALIDAD 2026.",
+      "tituloLeng": null,
+      "texto": "<p>EXTRACTO DEL DECRETO DE LA SRA. DIPUTADA DE MEDIO AMBIENTE, ENERGÍA Y RESIDUOS SÓLIDOS URBANOS N.º 1822 DE FECHA 26 DE ABRIL DE 2026 POR EL QUE SE APRUEBA LA CONVOCATORIA SUBVENCIONES NO DINERARIAS PARA LA REDACCIÓN DE PROYECTOS DE OBRAS DE INVERSIONES EN ARBOLADO Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN ESPACIOS URBANOS DE TITULARIDAD MUNICIPAL, ANUALIDAD 2026.</p><p>Primero.- Beneficiarios:</p><p>Podrán optar a la Convocatoria los municipios y entidades locales menores de la provincia de Alicante.</p><p>Segundo.- Objeto:</p><p>La finalidad de la presente convocatoria es la redacción de proyectos de obras de inversiones en arbolado y adaptación al cambio climático en espacios urbanos de titularidad municipal en la provincia de Alicante.</p><p>Tercero.- Bases reguladoras:</p><p>Ordenanza General de Subvenciones aprobada por el Pleno en sesión de fecha 19.12.2025 y publicada en el BOP número 11 de fecha 19.01.2026.</p><p>Cuarto.- Cuantía:</p><p>Para la presente convocatoria de subvenciones se prevé una dotación económica de 53.000,00 euros (IVA incluido).</p><p>El importe total máximo de las ayudas a conceder es de 3.781,00 euros (IVA incluido), consignados en el Presupuesto de la Diputación de Alicante.</p><p>Quinto.- Plazo de presentación de solicitudes:</p><p>El plazo de presentación de solicitudes será de 30 días naturales a contar desde el día siguiente al de la publicación del extracto de la presente convocatoria en el Boletín Oficial de la Provincia de Alicante, que se realizará a través de la Base de Datos Nacional de Subvenciones, una vez que Diputación le haya comunicado el texto de la convocatoria y la información requerida para su publicación, tal y como dispone el artículo 20.8.a) de la LGS.</p><p>Sexto.- Otros datos:</p><p>La tramitación y presentación de la solicitud, junto con la documentación requerida en esta convocatoria, se realizará únicamente a través de la Sede Electrónica de la Diputación Provincial de Alicante. Se deberá adjuntar a la solicitud la siguiente documentación:</p><p>- Anexo I. Certificado del Secretario/a de la Corporación acreditativo de la titularidad y disponibilidad de los terrenos y su puesta a disposición de la Diputación Provincial de Alicante para la ejecución de la actuación.</p><p>- Memoria descriptiva/explicativa de todas las actuaciones a realizar.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.557Z"
+}

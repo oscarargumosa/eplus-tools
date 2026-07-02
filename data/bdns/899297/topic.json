@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "899297",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALMUÑÉCAR / AYUNTAMIENTO DE ALMUÑÉCAR",
+  "nuts_codes": [
+    "ES614"
+  ],
+  "nuts_primary": "ES614",
+  "title": "Acuerdo Junta de Gobierno Local de fecha de 15/04/2026 Convocatoria concesión de subvenciones para la restauración y conservación de los sistemas agrarios afectados por el incendio forestal del verano del año 2024 en Almuñécar",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01",
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899297",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipgra.es/publica/consulta-de-bops/buscador/BOP-17-02-2026/",
+  "text_inicio": "30 días naturales a contar al día siguiente a su publicación",
+  "text_fin": "30 días naturales posteriores a su publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.922Z"
+}

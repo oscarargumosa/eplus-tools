@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL6-2024-CircBio-01-6",
+  "ccm2Id": "45652588",
+  "callIdentifier": "HORIZON-CL6-2024-CIRCBIO-01",
+  "callTitle": "",
+  "title": "Digital information systems for bio-based products",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-10-17",
+  "deadline": "2024-02-22",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Computer and information sciences\",\"Earth and related environmental sciences\",\"Digital Agenda\",\"Other engineering and technologies\",\"EOSC and FAIR data\",\"Environmental engineering\",\"Media and communications\",\"Social sciences and humanities\",\"Artificial Intelligence\",\"Electrical engineering, Electronic engineering, In\",\"artificial intelligence\",\"programmed biodegradation\",\"digital passport\",\"bio-based products\",\"Circular Bio-based Europe JU\",\"carbon emissions\",\"products transparent information\",\"predictive maintenance\",\"bio-based\",\"Circular Bio-based Europe\",\"CBE\",\"water mark\",\"AI\",\"programmed integrity\",\"carbon removal\",\"FAIR\",\"watermark\",\"digitalisation\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "EoscAndFairData",
+    "SSH",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CircBio-01-6.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.269Z"
+}

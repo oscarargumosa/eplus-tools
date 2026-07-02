@@ -1,0 +1,72 @@
+{
+  "id": 1099881,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALICANTE/ALACANT",
+    "nivel3": "AYUNTAMIENTO DE ALICANTE/ALACANT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898320",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 Subvenciones a Entidades Asociativas: Barrio Zona Norte Fase II y entorno Vial Cipreses-Barrio del Cementerio",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases Reguladoras de la Convocatoria 2026 de Subvenciones a Entidades  Asociativas: Barrios Zona Norte FASE II y entorno del Vial de los Cipreses barrio  del Cementerio",
+  "urlBasesReguladoras": "https://www.alicante.es/es/contenidos/presupuesto-general-ayuntamiento-alicante-ejercicio-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "10 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433908,
+      "descripcion": "Bases y Anexos Subvenciones-2026",
+      "nombreFic": "BASES_Y_ANEXOS-2026.pdf",
+      "long": 2504425,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433907,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado_JGL_7-04-2026.pdf",
+      "long": 94635,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

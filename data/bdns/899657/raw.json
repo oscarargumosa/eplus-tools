@@ -1,0 +1,72 @@
+{
+  "id": 1101218,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALAU-SOLITÀ I PLEGAMANS",
+    "nivel3": "AYUNTAMIENTO DE PALAU-SOLITÀ I PLEGAMANS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899657",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Convocatòria Subv Entitats Esports 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladores a entitats sense afany de lucre",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3159658/aprovacio-inicial-de-l-ordenanca-general-de-subvencions-i-les-bases-reguladores-de-les-subvencions-a-entitats-sense-afany-de-lucre-ajuntament-de-palau-solita-i-plegamans",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "d`1 mes a comptar de l`endemà de la publicació de l`extracte de la convocatòria al BOPB",
+  "textFin": "d`1 mes a comptar de l`endemà de la publicació de l`extracte de la convocatòria al BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1437724,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria_subvencions_entitats_2026-_CATALÀ_(1).pdf",
+      "long": 338673,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    },
+    {
+      "id": 1437723,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria_subvenciones_entidades_2026__CASTELLÀ_.pdf",
+      "long": 360834,
+      "datMod": "2026-04-17",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,5 @@
+## Scope
+
+This award aims to recognise sport activities implemented by organisations that have successfully used sport as a powerful tool to promote social inclusion, gender equality, diversity and unity. It recognises efforts that break down barriers, empower and include underrepresented groups, and use sport to foster understanding, peace, and diversity in society.
+
+This category rewards initiatives that meet social challenges and support disadvantaged groups, such as ethnic minorities, people with disabilities or vulnerable young people. It highlights the transformative power of sport in building bridges, empowering communities, and shaping a more inclusive and united society.

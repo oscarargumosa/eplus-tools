@@ -1,0 +1,64 @@
+{
+  "id": 1105317,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BURJASSOT",
+    "nivel3": "AYUNTAMIENTO DE BURJASSOT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903756",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 251152.84,
+  "mrr": false,
+  "descripcion": "QUINTA CONVOCATORIA CONCESIÓN DE SUBVENCIONES DESTINADAS A LAS PRESTACIONES ECONÓMICAS INDIVIDUALIZADAS EN MATERIA DE SERVICIOS SOCIALES (PEISS) EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DE LAS BASES QUE HAN DE REGIR PARA LA CONCESIÓN DE LAS SUBVENCIONES DESTINADAS A LAS PRESTACIONES ECONÓMICAS INDIVIDUALIZADAS EN MATERIA DE SERVICIOS SOCIALES (PEISS)",
+  "urlBasesReguladoras": "https://sede.burjassot.org/sta/docs/GetDocumentServlet?CUD=13065624052312613060&HASH_CUD=531579fc38df6fc495eea71e30779a08e4b92570&APP_CODE=STA",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-18",
+  "textInicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP.",
+  "textFin": "Hasta la publicación de la siguiente convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449337,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución.PDF",
+      "long": 440699,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

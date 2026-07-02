@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-CS-01-01",
+  "ccm2Id": "45763702",
+  "callIdentifier": "HORIZON-CL3-2023-CS-01",
+  "callTitle": "",
+  "title": "Secure Computing Continuum (IoT, Edge, Cloud, Dataspaces)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"Computing Technologies\",\"Internet of Things\",\"Cybersecurity\",\"Cybersecurity Research Domains \",\"Artificial Intelligence\",\"Cloud computing\",\"Security\",\"Trusted computing\",\"Cloud, Edge and Virtualisation\",\"Trust \\u0026 Security\",\"security chain\",\"cyber threat intelligence\",\"IoT in trusted environments\",\"AI-based automation tools\",\"resilience, preparedness, awareness, and detection within critical infrastructures and across supply chains\",\"Secure infrastructure\",\"secure Identities and usability\",\"Cyber security\",\"Secure interoperability\",\"Cloud infrastructures vulnerabilities mitigation\",\"communication, data collection, data transport, and data processing\",\"Zero-Trust architectures\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-CS-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.971Z"
+}

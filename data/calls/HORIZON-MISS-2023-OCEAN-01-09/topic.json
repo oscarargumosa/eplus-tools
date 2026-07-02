@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-MISS-2023-OCEAN-01-09",
+  "ccm2Id": "45741251",
+  "callIdentifier": "HORIZON-MISS-2023-OCEAN-01",
+  "callTitle": "",
+  "title": "Roadmap towards the integration of inland waters into the Digital Twin Ocean",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Water systems monitoring\",\"Ocean literacy\",\"Water-climate interactions\",\"Hydrology (Water science)\",\"Water policy\",\"Ocean sustainability and blue economy\",\"EOSC and FAIR data\",\"Digital Agenda\",\"Human impacts and other stressors\",\"Water Framework Directive\",\"Digital Twin Ocean\",\"integration of inland waters\",\"Mission restore our ocean and waters by 2030\",\"Mission ocea\",\"Mission ocean and waters\",\"roadmap\"]"
+  ],
+  "crossCuttingPriorities": [
+    "OCEAN",
+    "EoscAndFairData",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-OCEAN-01-09.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.343Z"
+}

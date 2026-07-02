@@ -1,0 +1,80 @@
+{
+  "id": 1098659,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SEVILLA",
+    "nivel3": "AYUNTAMIENTO DE SEVILLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897098",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "Resolución del Teniente Alcalde Delegado de Barrios y Colectivos de Atención Preferente, Derechos Sociales, Empleo, Familia, Igualdad y Asociaciones con Nº 2139 y fecha de 1/04/2026 que aprueba la convocatoria pública de concesión de subvenciones.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Con fecha 17/03/2005 el Excmo. Ayto. Pleno aprobó provisional inicialmente Reglamento que  regula procedimientos aplicables a subvenciones otorgadas por Ayto. De Sevilla y Ordenanza General que aprueba BB RR Subvenciones en concurrencia competitiva.",
+  "urlBasesReguladoras": "http://www.dipusevilla.es/export/bop/200507/14.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación en el BOP.",
+  "textFin": "15 días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en el B.O.P",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429753,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Convocatoria LGTBI 2026.report.pdf",
+      "long": 18095,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

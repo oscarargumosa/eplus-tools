@@ -1,0 +1,87 @@
+{
+  "id": 1098916,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PAÍS VASCO",
+    "nivel3": "DEPARTAMENTO DE ALIMENTACIÓN, DESARROLLO RURAL, AGRICULTURA Y PESCA"
+  },
+  "sedeElectronica": "https://www.euskadi.eus/ayuda_subvencion/2025/digitalizacion-de-la-cadena-alimentaria-y-de-la-madera/web01-tramite/es/",
+  "codigoBDNS": "897355",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 734022.67,
+  "mrr": false,
+  "descripcion": "Programa de ayudas digitalización cadena alim. y madera 2025",
+  "descripcionLeng": "Elikadura eta Zur katearen digit. programa 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ayudas a la digitalización de la cadena alimentaria y de la madera",
+  "urlBasesReguladoras": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2025003899",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2025-09-18",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "ayudas a la digitalización de la cadena alimentaria y de la madera",
+  "textFin": "ayudas a la digitalización de la cadena alimentaria y de la madera",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1430298,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Documento convocatoria (euskera).PDF",
+      "long": 380002,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    },
+    {
+      "id": 1430297,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria (castellano).PDF",
+      "long": 417894,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208109,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2025003899",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2025-09-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

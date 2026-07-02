@@ -1,0 +1,72 @@
+{
+  "id": 1100404,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALAFOLLS",
+    "nivel3": "AYUNTAMIENTO DE PALAFOLLS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898843",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2300,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA XIX PREMI TREBALLS DE RECERCA DE L`AJUNTAMENT DE PALAFOLLS",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES SUBV. PREMIS TREBALLS DE RECERCA - MEMORIAL DANIEL LOPEZ",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3909402/modificacio-de-les-bases-generals-del-premi-de-treballs-de-recerca-memorial-daniel-lopez-versio-en-catala-i-castella-ajuntament-de-palafolls",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-13",
+  "fechaFinSolicitud": "2026-05-11",
+  "textInicio": "Administratiu Comú de les Administracions Públiques en el termini de 15 dies natur de la publicació",
+  "textFin": "en el termini de 15 dies naturals  a partir del dia següent",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435284,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIA_CATALA_TREBALLS_DE_RECERCA.pdf",
+      "long": 499197,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    },
+    {
+      "id": 1435283,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA_CASTELLA_TREBALLS_DE_RECERCA.pdf",
+      "long": 496450,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,58 @@
+{
+  "id": "1.3",
+  "code": "Part B · 1.3",
+  "module": "EACEA",
+  "moduleTitle": "Relevance",
+  "bloque": "F — Técnicas de redacción",
+  "title": "1.3 Complementariedad, innovación y valor añadido europeo",
+  "subtitle": "Cómo demostrar que tu proyecto se apoya en lo ya hecho, aporta algo nuevo y solo tiene sentido a escala europea (no nacional).",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 1.3 — Complementariedad, innovación y valor añadido europeo",
+    "Criterio": "Relevance (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Te piden \"innovación\" y \"valor añadido europeo\" y suenan a palabras huecas. Acabas escribiendo \"nuestro proyecto es innovador y aporta valor europeo\" sin explicar por qué, y el evaluador lo lee como relleno.",
+    "comprender": "Que estas tres preguntas (complementariedad, innovación, valor europeo) buscan respuestas concretas: en qué te apoyas que ya existe, qué haces nuevo respecto a lo que ya hay, y por qué esto NO podría hacerse igual de bien con socios de un solo país.",
+    "objetivo": "Argumentar con evidencia: citar proyectos/políticas previas en las que te apoyas, señalar qué es nuevo en tu enfoque, y demostrar la dimensión transnacional (por qué hace falta cooperación entre países y cómo se usarán los resultados en varios).",
+    "confusion": "Creer que \"innovación\" significa inventar algo nunca visto. Casi nunca lo es: suele ser una combinación nueva, una transferencia a otro contexto o una mejora. Y confundir \"valor europeo\" con \"hacemos un proyecto con varios países\" sin justificar por qué hace falta.",
+    "importa": "Porque cierra Relevance (30 pts) y es donde muchos proyectos buenos suenan a \"esto se podría hacer solo en mi país\". Si no demuestras la necesidad de cooperar a escala europea, pierdes el argumento que justifica un programa de la UE."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>La sección <b>1.3</b> cierra el bloque de Relevance con varias preguntas que apuntan a lo mismo: <b>¿por qué tu proyecto merece financiación europea y no es \"más de lo mismo\"?</b> En concreto:</p><div class=\"callout callout-key\"><ul class=\"bullets\"><li><b>Complementariedad:</b> ¿cómo se apoya en <em>actividades o proyectos previos</em>? ¿Cómo complementa otras acciones, políticas o iniciativas (no las duplica)?</li><li><b>Innovación:</b> ¿qué aspectos son <em>innovadores</em> respecto a lo que ya existe?</li><li><b>Dimensión transnacional / valor añadido europeo:</b> ¿por qué este proyecto necesita <em>cooperación entre países</em>? ¿Qué interés o valor tiene para la UE?</li><li><b>Transferencia:</b> ¿cómo se usarán los <em>resultados en otros países</em>? ¿Cómo opera la cooperación transfronteriza?</li><li>Y, como soporte de todo lo anterior: <b>referencias a proyectos previos</b> concretos.</li></ul></div><p>En resumen: <em>en qué te apoyas (lo viejo), qué aportas nuevo (lo innovador) y por qué solo a escala europea tiene sentido (lo transnacional)</em>.</p>"
+    },
+    {
+      "id": "como-responder",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>Esta sección es trampa para generalidades. El evaluador ha leído \"nuestro proyecto es innovador y aporta valor europeo\" mil veces y lo descarta. Lo que puntúa es <b>concreción y argumento</b>.</p><p><b>Complementariedad — apóyate en lo que existe.</b> No reinventes la rueda. Cita proyectos previos (propios o ajenos), políticas o marcos europeos sobre los que construyes. Demuestra que conoces el terreno y que <em>complementas</em> en vez de duplicar.</p><div class=\"callout callout-good\"><b>Truco:</b> \"Partimos del marco X y del proyecto Y, que llegaron hasta aquí; nosotros damos el siguiente paso haciendo Z.\" Eso es complementariedad bien contada.</div><p><b>Innovación — no es inventar de cero.</b> Casi nunca lo es. Innovar suele ser:</p><ul class=\"bullets\"><li>una <b>combinación nueva</b> de cosas existentes,</li><li>una <b>transferencia</b> de una buena práctica a otro sector/país/colectivo,</li><li>o una <b>mejora</b> clara sobre lo que ya hay.</li></ul><p>Di explícitamente <b>respecto a qué</b> eres innovador. La innovación es siempre relativa al estado actual.</p><p><b>Valor añadido europeo — el test del \"¿y si fuera nacional?\".</b> Pregúntate: ¿podría hacerse esto igual de bien con socios de un solo país? Si la respuesta es \"sí\", aún no has demostrado el valor europeo. Tienes que mostrar que <b>la cooperación transnacional es necesaria</b>: porque reúnes experiencias de varios contextos, porque el problema es común a varios países, porque los resultados se validan y usan en varios sistemas.</p><div class=\"callout callout-warn\">\"Hacemos un proyecto con 4 países\" NO es valor europeo. Valor europeo es: \"este resultado <em>necesita</em> 4 contextos para ser válido y transferible, y se usará en los 4\".</div><p><b>Transferencia.</b> Explica cómo los resultados saltarán fronteras: qué se publica como abierto, quién lo adoptará en otros países, cómo la cooperación transfronteriza multiplica el alcance.</p>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Cerramos con <b>DIGI-YOUTH</b>, ahora en clave 1.3:</p><div class=\"callout callout-good\"><p><b>Complementariedad.</b> El proyecto se apoya en el marco europeo de competencias digitales DigComp y en los resultados de la anterior KA210 \"YOUTH-ON\" (2022), que detectó la brecha pero no produjo recursos formativos. DIGI-YOUTH no repite ese diagnóstico: parte de él y da el siguiente paso, creando el marco y la formación que faltaban.</p><p><b>Innovación.</b> Lo innovador no es \"formar en digital\" (ya se hace), sino <em>adaptar específicamente</em> DigComp al trabajo con jóvenes —un sector para el que no existe un marco propio— y combinarlo con un curso modular abierto pilotado en 4 países. Es una transferencia y combinación nuevas, no un invento de cero.</p><p><b>Valor añadido europeo (test del nacional).</b> ¿Podría hacerse en un solo país? No del mismo modo: un marco de competencias <em>común</em> solo es válido si se construye y valida con realidades de varios sistemas juveniles. La diversidad de los 4 socios es lo que hace el resultado transferible, no un añadido decorativo.</p><p><b>Transferencia.</b> El marco y el curso se publican como recursos abiertos (OER) en varios idiomas y se difunden a través de las redes europeas de los socios, de modo que organizaciones de otros países puedan adoptarlos sin coste.</p></div><p>Observa el patrón: cada bloque <b>nombra algo concreto</b> (DigComp, YOUTH-ON, OER, 4 sistemas) en lugar de adjetivos vacíos.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Nuestro proyecto es muy innovador.»</b> → Afirmación vacía. Di respecto a QUÉ eres innovador y en qué consiste exactamente lo nuevo.</li><li><span class=\"err-x\">✗</span> <b>«Innovar es inventar algo que no existe.»</b> → Casi nunca. Suele ser combinación, transferencia o mejora de lo existente. Y eso vale, si lo argumentas.</li><li><span class=\"err-x\">✗</span> <b>«Hacemos un proyecto con varios países, eso es el valor europeo.»</b> → No. Tienes que demostrar que la cooperación transnacional es necesaria, no solo que existe.</li><li><span class=\"err-x\">✗</span> <b>«No cito proyectos previos para no parecer poco original.»</b> → Al revés: apoyarte en lo previo demuestra que conoces el terreno y que complementas en lugar de duplicar.</li><li><span class=\"err-x\">✗</span> <b>«Los resultados los usaremos nosotros y ya.»</b> → Falta la transferencia: cómo se usarán en OTROS países. Sin eso, el alcance europeo se queda corto.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B oficial (EACEA)</b></td><td>El enunciado de 1.3: complementariedad con acciones previas, aspectos innovadores, dimensión transnacional, valor para la UE y uso de resultados en otros países.</td></tr><tr><td><b>kb-0095</b> Guide for Experts (rúbrica del evaluador)</td><td>Cómo se valoran innovación y valor añadido europeo dentro de Relevance (30 pts) y por qué se penaliza la generalidad.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomendaciones: apoyarse en proyectos/políticas previas, demostrar la necesidad de la cooperación transnacional y planificar la transferencia de resultados.</td></tr></tbody></table>"
+    }
+  ]
+}

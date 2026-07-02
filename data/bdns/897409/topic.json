@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "897409",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAN VICENTE DEL RASPEIG/SANT VICENT DEL RASPEIG / AYUNTAMIENTO DE SAN VICENTE DEL RASPEIG/SANT VICENT DEL RASPEIG",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA DE CONCESIÓN SUBVENCIONES A ASOCIACIONES JUVENILES Y ENTIDADES PRESTADORAS DE SERVICIOS A LA JUVENTUD",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10295.69,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897409",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dip-alicante.es/bop2/pdftotal/2015/05/04_83/2015_007763.pdf",
+  "text_inicio": "30 días naturales, a partir del día siguiente de su publicación en el BOP",
+  "text_fin": "30 días naturales, a partir del día siguiente de su publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.014Z"
+}

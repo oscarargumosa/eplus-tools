@@ -1,0 +1,79 @@
+{
+  "id": 1101224,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN FORAL DE BIZKAIA",
+    "nivel3": "DIPUTACIÓN FORAL DE BIZKAIA"
+  },
+  "sedeElectronica": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "codigoBDNS": "899663",
+  "fechaRecepcion": "2026-04-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1599000,
+  "mrr": false,
+  "descripcion": "Programa de subvenciones Transferencia Tecnológica para el año 2026 - Línea 1: Subvenciones para proyectos de investigación y desarrollo en centros de investigación",
+  "descripcionLeng": "Teknologia Transferentzia dirulaguntza programa, 2026 urterako - 1. ildoa: Ikerketa zentroetako ikerketa-, proba- eta esperimentazio-azpiegiturak eskuratzeko dirulaguntzak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Decreto Foral de la Diputación Foral de Bizkaia por el que se aprueban las bases reguladoras y convocatoria del programa de subvenciones Transferencia Tecnológica para el año 2026",
+  "urlBasesReguladoras": "www.bizkaia.eus",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-04",
+  "fechaFinSolicitud": "2026-05-25",
+  "textInicio": "4 de mayo de 2026",
+  "textFin": "25 de mayo de 2026",
+  "ayudaEstado": "SA.123124",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.123124",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 26 AYUDAS DE I+D+I. A LA INVERSIÓN PARA INFRAESTRUCTURAS DE INVESTIGACIÓN."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1444135,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "00 DF TT26 v 2026-03-30 para Consejo_1774871788277_20260330_015637.pdf",
+      "long": 944781,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    },
+    {
+      "id": 1444134,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "00 DF TT26 v 2026-03-30 para Consejo_1774871788277_20260330_015637.pdf",
+      "long": 944781,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

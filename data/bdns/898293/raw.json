@@ -1,0 +1,84 @@
+{
+  "id": 1099854,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898293",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 306253,
+  "mrr": false,
+  "descripcion": "Resolución EMT/   /2026, de , por la que se abre la convocatoria para el año 2026 en relación con la concesión de subvenciones para movilidades al extranjero para el aprendizaje para las personas participantes en el Programa Erasmus+ ITER Mobility",
+  "descripcionLeng": "Resolució EMT/   /2026, de , per la qual s'obre la convocatòria per a l'any 2026 en relació amb la concessió de subvencions per a mobilitats a l'estranger per a l'aprenentatge per a les persones participants en el Programa Erasmus+ ITER Mobility",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORDEN EMT/188/2022, de 26 de julio, por la que se aprueban las bases reguladoras para la concesión de subvenciones para movilidades de aprendizaje en el extranjero para las personas participantes en el Programa Erasmus+ ITER Mobility (SOC-ERASMUS ITER).",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/8720/1921481.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436359,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "SOC0852026_ Resolució Definitiva_ERASMUS+ ITER MOBILITY 2026 _1.pdf",
+      "long": 758229,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    },
+    {
+      "id": 1436358,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ES_SOC0852026_Resolución Definitiva_ERASMUS+ ITER MOBILITY 2026.pdf",
+      "long": 363446,
+      "datMod": "2026-04-16",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209011,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1042048",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

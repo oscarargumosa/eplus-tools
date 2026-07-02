@@ -1,0 +1,183 @@
+{
+  "id": 1099800,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE CIUDAD REAL",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/ciudadreal",
+  "codigoBDNS": "898239",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 104860,
+  "mrr": false,
+  "descripcion": "Convocatoria Pyme Sostenible 2026 - Cámara de Comercio de Ciudad Real",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convocatoria Pyme Sostenible 2026 - Cámara de Comercio de Ciudad Real",
+  "urlBasesReguladoras": "https://www.camaracr.org/competitividad/detalle-de-programa/pyme-sostenible-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-22",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Una vez transcurridos 5 días hábiles desde el día siguiente de la publicación en el B.O.P.",
+  "textFin": "30 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433606,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Modelo Convocatoria ayudas Pyme Sostenible_Ordinaria.pdf",
+      "long": 522334,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433616,
+      "descripcion": "2026_Anexo III Declaración responsable empresa Pyme Sostenible",
+      "nombreFic": "2026_Anexo III Declaración responsable empresa Pyme Sostenible.pdf",
+      "long": 330446,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433614,
+      "descripcion": "2026_Anexo II. Tipología y Justificación de Gastos elegibles Fase de Ayudas",
+      "nombreFic": "2026_Anexo II. Tipología y Justificación de Gastos elegibles Fase de Ayudas.pdf",
+      "long": 415229,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433608,
+      "descripcion": "2026_Anexo I. Descripción del programa Pyme Sostenible",
+      "nombreFic": "2026_Anexo I. Descripción del programa Pyme Sostenible.pdf",
+      "long": 321315,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208579,
+      "titulo": "Convocatoria Pyme Sostenible 2026 - Cámara de Comercio de Ciudad Real",
+      "tituloLeng": null,
+      "texto": "<p>La Cámara de Comercio, Industria, Servicios de Ciudad Real informa de la Convocatoria Pública de ayudas para el desarrollo de planes de apoyo para el impulso de la sostenibilidad, en el marco del Programa Pyme Sostenible, cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER) de la Unión Europea.</p><p>Primero. – Beneficiarios.</p><p>Pymes, de la demarcación territorial de la Cámara de Comercio de Ciudad Real, que se encuentren dadas de alta en el Censo del IAE.</p><p>Segundo. – Objeto.</p><p>Promover la participación de las pymes en el Programa Pyme Sostenible, mediante la puesta a su disposición de los servicios de apoyo y las ayudas para la mejora de la sostenibilidad, subvencionadas en un 85% a través del Programa Plurirregional de España FEDER 2021-2027 (POPE).</p><p> </p><p>Tercero. – Convocatoria.</p><p>El texto completo de esta convocatoria está a disposición de las empresas en la sede electrónica de la Cámara de Ciudad Real. Además, puede consultarse a través de la web https://www.camaracr.org/</p><p>En dicha dirección podrá descargarse, junto con la convocatoria, la documentación necesaria para realizar la solicitud.</p><p>Cuarto. – Cuantía.</p><p>La cuantía total de las ayudas económicas para pymes a otorgar con cargo a esta convocatoria de 89.131,00 €, sobre un presupuesto de 104.860,00 € para la ejecución de la Fase II de Implantación por parte de las pymes beneficiarias.</p><p>La cuantía máxima de ayuda por empresa será de 6.366,50 € sobre un presupuesto máximo elegible de 7.490,00 € (7.000,00 € de coste directo + 490,00 € de costes indirectos asociados), que será prefinanciado en su totalidad por la empresa beneficiaria y cofinanciado posteriormente por FEDER en un 85%.</p><p>Estas ayudas forman parte de Programa Pyme Sostenible, cuyo presupuesto máximo de ejecución es de 125.309,10 €, en el marco del Programa Plurirregional de España FEDER 2021-2027 y que incluye los servicios gratuitos de diagnóstico y seguimiento.</p><p>Quinto. Plazo de presentación de solicitudes.</p><p>El plazo para la presentación de solicitudes en la referida Sede se abre a las 09:00h, una vez transcurridos 5 días hábiles desde el día siguiente a la publicación de este anuncio y hasta las 14:00h del día 30 de octubre de 2026. si bien el plazo podrá acortarse en caso de agotarse el presupuesto.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7488267",
+      "cve": "XSg6UHh9iLRL+h5w+Tbo",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-04-14"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

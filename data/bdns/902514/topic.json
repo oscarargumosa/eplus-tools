@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "902514",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE DESARROLLO RURAL, GANADERÍA, PESCA Y ALIMENTACIÓN",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "CONVOCATORIA AYUDAS DE MINIMIS PARA EL APOYO A LA PRODUCCIÓN LECHERA DEL GANADO VACUNO, OVINO Y CAPRINO LIGADA A TIERRA PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 730000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902514",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=405507",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOC",
+  "text_fin": "1 MES A PARTIR DEL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOC",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [
+    {
+      "descripcion": "Leche y productos lácteos (parte XVI)"
+    }
+  ],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.739Z"
+}

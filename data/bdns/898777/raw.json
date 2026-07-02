@@ -1,0 +1,84 @@
+{
+  "id": 1100338,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MURCIA",
+    "nivel3": "AYUNTAMIENTO DE MURCIA"
+  },
+  "sedeElectronica": "https://sede.murcia.es/areas?idCategoria=10006",
+  "codigoBDNS": "898777",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "202604005028 Convocatoria de Subvenciones Fomento Participación Juvenil 2026/27_898777",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES620 - Murcia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES Y PREMIOS DEL AYUNTAMIENTO DE MURCIA",
+  "urlBasesReguladoras": "https://www.borm.es/services/anuncio/ano/2023/numero/843/pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-18",
+  "fechaFinSolicitud": "2026-05-18",
+  "textInicio": "Día siguiente a la publicación extracto convocatoria BORM",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438330,
+      "descripcion": "Extracto_Publicación_Anuncio_BORM_Convcatoria_Subvenciones_Participación_2026-27",
+      "nombreFic": "Extracto_BORM_publicación_convocatoria.pdf",
+      "long": 196378,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438329,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Acuerdo_Aprobando_Convocatoria_Subvención_Participación_Juvenil_2026-27.pdf",
+      "long": 878770,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208797,
+      "titulo": "Extracto del Acuerdo de la Junta de Gobierno, de fecha 10 de abril de 2026, por el que se convocan subvenciones para el fomento de la participación juvenil en el municipio de Murcia 2026/2027",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios.</p><p>Asociaciones y entidades sin ánimo de lucro específicamente juveniles (constituidas por socios entre 14 y 29 años) del municipio de Murcia.</p><p>También serán beneficiarias otras entidades del movimiento asociativo juvenil que, careciendo de interés lucrativo, desarrollen programas y actividades dirigidas al fomento de la participación de la población joven y con manifiesto protagonismo juvenil en su elaboración y desarrollo y que reúnan los requisitos establecidos en la convocatoria.</p><p>Segundo. Objeto y finalidad</p><p>Promover actividades juveniles, culturales y sociales de interés general que propicien la participación de la juventud y su integración en la sociedad, estimular el funcionamiento de asociaciones y colectivos de jóvenes, así como apoyar las iniciativas culturales, sociales, formativas, de tiempo libre y de voluntariado que fomenten la participación cívica y ciudadana de la juventud.</p><p>Se concederán subvenciones para proyectos que engloben actividades a realizar por las entidades durante el periodo comprendido entre el 1 de julio de 2026 y el 30 de junio de 2027, y destinadas a la población del municipio con edades comprendidas entre los 8 y los 35 años.</p><p>Tercero. Bases reguladoras.</p><p>Ordenanza General de Subvenciones y Premios del Ayuntamiento de Murcia. (BORM_36_14/02/2023).</p><p>Cuarto. Cuantía.</p><p>El importe total de la convocatoria es de 50.000,00 euros con cargo a la aplicación presupuestaria 2026 040 3340 48903, siendo la cuantía máxima de subvención por solicitud de 3.000,00 euros. </p><p>Quinto. Plazo de presentación de solicitudes.</p><p>Veinte días hábiles a contar desde el día siguiente al de la publicación de este extracto en el BORM.</p><p>Sexto. Otros datos.</p><p>Las solicitudes de subvención se formularán de acuerdo con lo establecido en el art. 66 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, a través de la Sede Electrónica del Ayuntamiento de Murcia (https://sede.murcia.es/areas?idCategoria=10006). </p><p>Cada entidad podrá presentar una única solicitud, que deberá ir acompañada de un proyecto detallado del programa de actividades para el que se solicita la subvención, así como del resto de documentación requerida en la convocatoria.</p><p>El pago de la subvención concedida se efectuará por el importe total de la cuantía aprobada a partir del momento de la concesión en concepto de pago anticipado.</p>",
+      "textoLeng": null,
+      "url": "https://www.borm.es/services/anuncio/ano/2026/numero/1692/pdf",
+      "cve": "A-170426-1692",
+      "desDiarioOficial": "BORM. B.O. DE LA REGIÓN DE MURCIA",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

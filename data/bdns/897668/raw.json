@@ -1,0 +1,64 @@
+{
+  "id": 1099229,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD FORAL DE NAVARRA",
+    "nivel3": "DEPARTAMENTO DE CULTURA, DEPORTE Y TURISMO"
+  },
+  "sedeElectronica": "http://www.navarra.es",
+  "codigoBDNS": "897668",
+  "fechaRecepcion": "2026-04-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 74000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para inversiones de museos y colecciones museográficas permanentes de Navarra 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones para inversiones de museos y colecciones museográficas permanentes de Navarra para el año 2026",
+  "urlBasesReguladoras": "https://www.lexnavarra.navarra.es/detalle.asp?r=58372",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en BON",
+  "textFin": "Quince días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1431682,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Orden Foral aprobación BBRR_01_68E-2026_CSV.pdf",
+      "long": 653331,
+      "datMod": "2026-04-08",
+      "datPublicacion": "2026-04-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

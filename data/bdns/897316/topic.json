@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "897316",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GETAFE / AYUNTAMIENTO DE GETAFE",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVOCATORIA DE SUBVENCIONES ENTIDADES SOCIALES SIN ANIMO DE LUCRO PARA LA PROMOCIÓN DE LA IGUALDAD ENTRE MUJERES Y HOMBRES",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 45000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897316",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.bocm.es/boletin/CM_Orden_BOCM/2013/05/13/BOCM-20130513-55.PDF",
+  "text_inicio": "20 DÍAS HABILES A PARTIR DEL SIGUIENTE A LA PUBLICACIÓN EN BOCM",
+  "text_fin": "20 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A PUBLICACIÓN EN BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.979Z"
+}

@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-MISS-2023-SOIL-01-02",
+  "ccm2Id": "45742230",
+  "callIdentifier": "HORIZON-MISS-2023-SOIL-01",
+  "callTitle": "",
+  "title": "Soil pollution processes – modelling and inclusion in advanced digital decision-support tools",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Artificial Intelligence\",\"Soil science\",\"Geosciences, multidisciplinary\",\"Digital Agenda\",\"Earth Observation / Services and applications\",\"Environment, Pollution \\u0026 Climate\",\"Pollution\",\"decison-support tools\",\"Modelling\",\"Earth observation\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-SOIL-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.907Z"
+}

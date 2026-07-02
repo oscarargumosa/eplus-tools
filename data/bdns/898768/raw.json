@@ -1,0 +1,84 @@
+{
+  "id": 1100329,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE SOLSONÈS",
+    "nivel3": "CONSELL COMARCAL DE SOLSONÈS"
+  },
+  "sedeElectronica": "https://www.elsolsones.cat/",
+  "codigoBDNS": "898768",
+  "fechaRecepcion": "2026-04-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONCESIÓN DE AYUDAS DE COMEDOR OBLIGATORIO PARA EL ALUMNADO ESCOLARIZADO EN LA COMARCA DE EL SOLSONÈS, PARA EL CURSO 2026-2027.",
+  "descripcionLeng": "BASES REGULADORES DE LA CONCESSIÓ D’AJUTS DE MENJADOR OBLIGATORI PER A L’ALUMNAT ESCOLARITZAT A LA COMARCA DEL SOLSONÈS, PEL CURS 2026-2027.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES513 - Lleida"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONCESIÓN DE AYUDAS DE COMEDOR OBLIGATORIO PARA EL ALUMNADO ESCOLARIZADO EN LA COMARCA DE EL SOLSONÈS, PARA EL CURSO 2026-2027.",
+  "urlBasesReguladoras": "https://www.elsolsones.cat/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-29",
+  "textInicio": "Des de la publicación",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435078,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases menjador obligatoris 26-27.pdf",
+      "long": 153672,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1435077,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases comedor obligatorios 26-27.pdf",
+      "long": 156456,
+      "datMod": "2026-04-14",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208795,
+      "titulo": "Anuncio del Consell Comarcal del Solsonès sobre ayudas de comedor obligatorio para el alumnado escolarizado en la comarca del Solsonès, curso 2026-2027.",
+      "tituloLeng": "Anunci del Consell Comarcal del Solsonès sobre ajuts de menjador obligatori per  l’alumnat escolaritzat a la comarca del Solsonès, curs 2026-2027.",
+      "texto": "<p>La Comisión de Gobierno del Consell Comarcal del Solsonès, en la sesión de fecha 8 de abril de 2026, ejerciendo competencias delegadas  por el Pleno, ha aprobado les bases y la convocatoria para la concesión de ayudas de comedor obligatorio para el alumnado escolarizado en la comarca del Solsonès, curso 2026-2027, con lo siguiente:</p><p>PRIMERO. Beneficiarios. Pueden solicitar la ayuda:</p><p>Los alumnos escolarizados en centros escolares públicos y privados concertados del Solsonès de segundo ciclo de educación infantil, primaria y secundaria (ESO) que no tengan oferta educativa en su municipio de residencia.</p><p>En todos los casos el alumno solicitante de la ayuda deberá ir al centro propuesto por el Departament d’Educació i Formació Professional, o excepcionalmente, al centro escolar más próximo a su domicilio, siempre y cuando lo autorice el Departament d’Educació i Formació Professional.</p><p>SEGUNDO. Objeto. El objeto de estas bases es el otorgamiento de ayudas de comedor escolar a los alumnos escolarizados en centros escolares públicos y privados concertados de segundo ciclo de Educación infantil, primaria y secundaria obligatoria (ESO) para el curso 2026-2027, de acuerdo con lo dispuesto en el Decreto 160/1996, de 14 de mayo, por el que se regula el servicio escolar de comedor en los centros docentes públicos de titularidad del Departament d’Educació i Formació Professional (Departamento de educación y formación profesional) y de acuerdo con el convenio firmado entre este Departamento y el Consell Comarcal del Solsonès.</p><p>TERCERO. La eficacia jurídica de la presente convocatoria queda condicionada a la publicación de este extracto en el BOP de Lleida.</p><p>CUARTO. Cuantía. La ayuda a conceder será el correspondiente al 100% del coste del servicio de comedor.</p><p>QUINTO. Plazo de presentación de solicitudes. En términos generales la fecha máxima para presentar las solicitudes será el día 29 de mayo de 2026.</p>",
+      "textoLeng": "<p>Per Comissió de Govern del Consell Comarcal del Solsonès, en la sessió de data 8 d’abril de 2026, exercint competències delegades pel Ple, s’ha acordat aprovar les bases i la convocatòria per a la concessió d’ajuts de menjador escolar als alumnes escolaritzats a la comarca del Solsonès, pel curs 2026-2027, d’acord amb el següent:</p><p>PRIMER. Beneficiaris. Poden sol·licitar l’ajut:</p><p>Els alumnes escolaritzats en centres escolars públics i privats concertats del Solsonès de segon cicle d’educació infantil, primària i secundària (ESO) que no tinguin oferta educativa al seu municipi de residència.</p><p>En tots els casos l’alumne sol·licitant de l’ajut haurà d’anar al centre proposat pel Departament d’Ensenyament, o excepcionalment, al centre escolar més proper al seu domicili, sempre i quan ho autoritzi el Departament d’Ensenyament.</p><p>SEGON. Objecte.</p><p>L’objecte d’aquestes bases és l’atorgament d’ajuts de menjador escolar als alumnes escolaritzats en centres escolars públics i privats concertats de segon cicle d’Educació infantil, primària i secundària obligatòria (ESO) pel curs 2026-2027, d’acord amb el que disposa el Decret 160/1996, de 14 de maig, pel qual es regula el servei escolar de menjador als centres docents públics de titularitat del Departament d’Educació i d’acord amb el conveni signat entre aquest Departament i el Consell Comarcal del Solsonès.</p><p>TERCER. L’eficàcia jurídica de la present convocatòria resta condicionada a la publicació de l’extracte corresponent en el BOP de Lleida.</p><p>QUART. Quantia. L’ajut a concedir serà el corresponent al 100% del cost del servei de menjador.</p><p>CINQUÈ. Termini de presentació de sol·licituds. En termes generals la data màxima per presentar les sol·licituds serà el dia 29 de maig de 2026.</p>",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/73/20267302907.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE LLEIDA",
+      "datPublicacion": "2026-04-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

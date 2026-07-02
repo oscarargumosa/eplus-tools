@@ -1,0 +1,76 @@
+{
+  "id": 1103569,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.ugr.es/portal/procedimientos/Doctorado-Solicitud-de-ayudas/",
+  "codigoBDNS": "902008",
+  "fechaRecepcion": "2026-04-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12607.5,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA VICERRECTORA DE POSGRADO Y FORMACIÓN PERMANENTE DE BBRR Y AYUDAS DESTINADAS A DOCTORANDOS/AS DE LA ESCUELA DE DOCTORADO DE HUMANIDADES, CIENCIAS SOCIALES Y JURÍDICAS PARA ASISTENCIA A CONGRESOS NACIONALES E INTERNACIONALES CURSO 2025/2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo experimental en ciencias sociales y humanidades",
+      "codigo": "72.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN DE LA VICERRECTORA DE POSGRADO Y FORMACIÓN PERMANENTE DE BBRR Y AYUDAS DESTINADAS A DOCTORANDOS/AS DE LA ESCUELA DE DOCTORADO DE HUMANIDADES, CIENCIAS SOCIALES Y JURÍDICAS PARA ASISTENCIA A CONGRESOS NACIONALES E INTERNACIONALES CURSO 2025/2026",
+  "urlBasesReguladoras": "https://escuelaposgrado.ugr.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-30",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1443921,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "report_Conv ayudas doctorandos Humanidades_DEF.pdf",
+      "long": 761287,
+      "datMod": "2026-04-28",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210498,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/BOUGR/322/322-5%20Ayudas%20Doctorandos%20Humanidades.pdf",
+      "cve": null,
+      "desDiarioOficial": "Boletín Oficial de la Universidad",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

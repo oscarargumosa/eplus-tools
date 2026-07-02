@@ -1,0 +1,80 @@
+{
+  "id": 1098602,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ÚBEDA",
+    "nivel3": "AYUNTAMIENTO DE ÚBEDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "897041",
+  "fechaRecepcion": "2026-04-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3200,
+  "mrr": false,
+  "descripcion": "Decreto 1207/2026, de 30 de marzo, de aprobación de convocatoria y bases reguladoras de la III Feria de Innovación y emprendimiento Empresarial de la Formación Profesional Superior en Úbeda",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES616 - Jaén"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE ÚBEDA (BOP 30, de 15/02/2021 y corrección de errores en BOP 215, DE 11/11/2021)",
+  "urlBasesReguladoras": "https://bop.dipujaen.es/edicto/88094/N",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación del anuncio de la convocatoria en BOP",
+  "textFin": "Quince días naturales desde la publicación del anuncio de la convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1429520,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO III FERIA DE INNOVACIÓN.pdf",
+      "long": 627244,
+      "datMod": "2026-04-07",
+      "datPublicacion": "2026-04-07"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 207958,
+      "titulo": "Decreto 1207/2026, de 30 de marzo, de aprobación de convocatoria y bases reguladoras de la III Feria de Innovación y Emprendimiento Empresarial de la Formación Profesional Superior en Úbeda",
+      "tituloLeng": null,
+      "texto": "<p>Primero. - Beneficiarios: Personas físicas matriculadas en alguno de los ciclos de formación profesional que se imparten en el IES Los Cerros, Sagrada Familia o Escuela de Arte “Casa de las Torres” de Úbeda.</p><p>Segundo. - Finalidad:  Incentivar al alumnado que cursa estudios de Formación Profesional Superior en el aprendizaje y desarrollo de actitudes relacionadas con el emprendimiento y la innovación empresarial y Mejora publicitaria y de difusión de la oferta académica de los centros educativos de Formación Profesional de Úbeda.</p><p>Tercero. - Bases reguladoras: Ordenanza General de Subvenciones del Ayuntamiento de Úbeda (BOP Jaén, nº 30, de 15 de febrero de 2021 y su corrección de errores en BOP 215, de 11 de noviembre de 2021).</p><p>Cuarto. - Importe: La dotación presupuestaria es de 3.200 euros (por persona integrante del grupo: primer premio, 300 euros; segundo premio, 200 euros; tercer premio, 150 euros, cuarto premio, 100 euros y quinto premio, 50 euros.) </p><p>Quinto. - Plazo de presentación de solicitudes: Quince días hábiles desde el día siguiente al de la publicación del anuncio en el BOP Jaén. </p>",
+      "textoLeng": null,
+      "url": "http://bop.dipujaen.es/validaCVE?cve=BOP-2026-1621",
+      "cve": "BOP-2026-1621",
+      "desDiarioOficial": "B.O.P. DE JAÉN",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

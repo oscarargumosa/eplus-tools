@@ -1,0 +1,88 @@
+{
+  "id": 1099901,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "REUS",
+    "nivel3": "AYUNTAMIENTO DE REUS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898340",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45000,
+  "mrr": false,
+  "descripcion": "PROJECTES QUE IMPULSIN LES RELACIONS CÍVIQUES I L`EMPODERAMENT AMB EL TERRITORI",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "FOMENT DE L`ASSOCIACIONISME I EL DESENVOLUPAMENT DE PROJECTES DE MOVIMENT VEÃ?NAL.",
+  "urlBasesReguladoras": "https://seu.reus.cat/seu/documentPublic/download/3723",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de l`endemà de la publicació al BOPT",
+  "textFin": "A partir de l`endemà de la publicació al BOPT",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433962,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Decret_2026007837.pdf",
+      "long": 195637,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433964,
+      "descripcion": "ESMENA CONVOCATÒRIA",
+      "nombreFic": "Decret_2026008498_esmena_convocatòria.pdf",
+      "long": 141183,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433963,
+      "descripcion": "DECRETO ENMIENTDA",
+      "nombreFic": "decret_esmena_castellà.pdf",
+      "long": 32562,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433961,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRET_CASTELLÀ.pdf",
+      "long": 67912,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

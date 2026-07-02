@@ -1,0 +1,28 @@
+{
+  "identifier": "DIGITAL-ECCC-2024-DEPLOY-CYBER-06-TRANSITIONEUPQC",
+  "ccm2Id": "46695917",
+  "callIdentifier": "DIGITAL-ECCC-2024-DEPLOY-CYBER-06",
+  "callTitle": "",
+  "title": "Roadmap for the transition of European public administrations to a post-quantum cryptography era",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-01-16",
+  "deadline": "2024-03-26",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL JU Coordination and Support Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Quantum Technologies (computing/communication)\",\"Cybersecurity Domains \",\"Security\",\"Cybersecurity\",\"Public administration\",\"cyber\",\"PQC\",\"Post Quantum\",\"Quantum\",\"personal data\",\"Cryptography\",\"roadmap\",\"encryption systems\",\"cryptographic systems\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/DIGITAL-ECCC-2024-DEPLOY-CYBER-06-TRANSITIONEUPQC.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.732Z"
+}

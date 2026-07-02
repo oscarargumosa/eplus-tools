@@ -1,0 +1,80 @@
+{
+  "id": 1101926,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANCOMUNIDAD DE MUNICIPIOS ZONA CENTRO",
+    "nivel3": "MANCOMUNIDAD DE MUNICIPIOS  ZONA CENTRO"
+  },
+  "sedeElectronica": "https://mzonacentro.sedelectronica.es/",
+  "codigoBDNS": "900365",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA PRESIDENCIA DE 21 DE ABRIL 2026, Nº 2026/59, APROBANDO BASES REGULADORAS DE AYUDAS PARA GARANTIZAR EL SERVICIO RESPIRO FAMILIAR A PERSONAS CUIDADORAS HABITUALES, NO PROFESIONALES, DE LA MANCOMUNIDAD DE MUNICIPIOS ZONA CENTRO-2026",
+  "descripcionLeng": "REGULACIÓN DE AYUDAS PARA GARANTIZAR EL SERVICIO DE RESPIRO FAMILIAR A PERSONAS CUIDADORAS HABITUALES, NO PROFESIONALES, EN LA MANCOMUNIDAD DE MUNICIPIOS ZONA CENTRO-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE AYUDAS PARA GARANTIZAR EL SERVICIO RESPIRO FAMILIAR A PERSONAS CUIDADORAS HABITUALES, NO PROFESIONALES, DE LA MANCOMUNIDAD DE MUNICIPIOS ZONA CENTRO-2026",
+  "urlBasesReguladoras": "https://mzonacentro.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DIA SIGUIENTE DE LA PRESENTE CONVOCATORIA",
+  "textFin": "HASTA EL 31-12-2026 Ó FIN DE CREDITO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439569,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "RESOLUCION APROBACION BASES RESPIRO-2026.pdf",
+      "long": 550124,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    },
+    {
+      "id": 1439568,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES RESPIRO-2026.pdf",
+      "long": 282322,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

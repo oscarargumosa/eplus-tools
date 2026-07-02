@@ -1,0 +1,28 @@
+## Expected Outcome
+
+the project results are expected to contribute to some of the following expected outcomes:
+- research into safety of innovative reactors, small modular reactors (SMRs) – both light water SMRs (LW-SMRs) and Gen-IV-based advanced modular reactors (AMRs); design or demonstration of SMRs and fuel cycles’ viability; and efficient integration within low-carbon and smart energy systems;
+- research support towards a shared and consistent approach among regulators’ TSOs to safety requirements for different advanced energy systems and applications (e.g. industrial heat, district heat and the maritime sector), supported by regular exchanges and reviews and workshops with licensees, SMR developers, and research organisations, thereby further improving safety across the EU;
+- emphasis on innovation in the safety aspects of LW-SMRs and AMRs;
+- establishment of operating rules for specific services for innovative reactors, incorporating emerging instrumentation and digital technologies that offer potential improvements for in-service operation;
+- research into fuel cycles (including their key features: inherently safe design, generation of less high-level waste and improved use of resources), potentially enabling interested Member States to contribute to the energy transition (according to and respecting the EU’s technology neutrality principle) and thus increase Member States’ and EU energy security.
+
+## Scope
+
+the Commission expects from this Topic a balanced portfolio of projects covering both LW-SMRs and AMRs with their fuel cycles. The focus on safety will also cover research and innovation needed to independently demonstrate the safety of innovative systems, critical structures for both LW-SMRs and AMRs with their fuel cycles. Developers’ goals are systems that offer increased safety, sustainability, economic competitiveness, and also enhance fuel efficiency, minimise waste generation, foresee non-electric applications and flexibility in terms of adaptation to the energy mix with intermittent/variable sources. These innovative reactor technologies aim at including safety-by-design features. Research should also be conducted on the safety of advanced coolant technologies, reactor hybridisation and fuel designs.
+
+Research proposals should do several of the following:
+- keep the focus on safety-security-safeguards-by-design (3S by Design) facilitating regulators’ TSOs awareness of innovative reactor concepts that could be integrated into hybrid energy systems;
+- investigate SMRs’ high degree of passive safety in respect to possible safety assessment harmonization of regulatory aspects;
+- address pre-normative R&D challenges for selected SMRs, seeking cross-cutting benefits and possibly including the use of modern digital solutions;
+- cover the viability phase of innovative technologies when basic concepts are tested under safe-relevant conditions. Examples would include assessment of proof of concept of better safety features and safety improvements;
+- further investigate and experimentally validate the safety aspects of selected SMRs. Examples would include water natural circulation, two-phase flow, the use of non-water coolants, severe accidents, fluid-material interaction, thermal-hydraulic-neutronic coupling, design optimisation, higher operational temperatures (this is also related to the option of industrial process heat production and high-temperature H2 generation), maritime applications. The purpose would be to assess their potential to enhance specific safety subjects related to internal and external hazards (e.g. fires and explosions phenomena), radioactive waste management (waste minimisation ‘by design’, decommissioning ‘by design’), emergency preparedness and response, human and environmental impacts, safeguards, social perception and the effects on the long-term sustainability of fuel cycles;
+- establish appropriate coordination with relevant initiatives within the following partnerships: EURAD-2 (radioactive waste), PIANOFORTE (radiation protection) and CONNECT-NM (materials).
+- appropriate coordination should also be established in order to incorporate the perspective(s) of relevant research institution(s) in Member States that are actively planning to deploy SMRs in Euratom Members States and Associated Countries;
+- further investigate the nuclear safety aspects of operational flexibility in an integrated energy system (for example, by design and safety demonstration aspects in combination with intermediate heat storage facilities or other means);
+- further investigate SMRs, fuel cycles and the SMR-specific focus on modularity advantages for example, from a) factory fabrication, transportability and scalability; to b) safety case development for multi-module sites and/or underground siting; and c) focus on safety-by-design and regulatory readiness and; d) integrated energy systems.
+- Where relevant, proposed action should ensure complementarities with the recently launched grant scheme in support of competent national regulatory authorities in coordinated approaches to new regulatory challenges in nuclear safety.[1]
+
+Where appropriate, the Commission recommends that consortia should use the JRC’s services. The JRC may participate in the preparation and submission of the proposal. It would bear the operational costs for its own staff and research infrastructure operational costs. The JRC’s facilities and expertise are listed in General Annex H to this work programme.
+
+[1] Granted under decision C(2024)8345 published on https://energy.ec.europa.eu/topics/funding-and-financing/financing-decisions_en

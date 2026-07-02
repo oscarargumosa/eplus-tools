@@ -1,0 +1,69 @@
+{
+  "id": "LS.2",
+  "code": "UD-LS.2",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "A — Fundamentos",
+  "title": "Qué son las Asociaciones de Cooperación y qué persiguen",
+  "subtitle": "Los tres tipos de asociación KA2 y sus objetivos: qué busca cada uno y en qué se diferencian, según el propio Handbook.",
+  "meta": {
+    "Nivel": "Básico",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "2. Partnerships for Cooperation + 2.1 Objectives del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Sabes que tu proyecto es \"una asociación KA2\", pero no tienes claro qué se supone que persigue ni en qué se diferencia tu tipo de asociación de los otros. Y eso se nota cuando escribes los objetivos: suenan genéricos.",
+    "comprender": "Qué son las Partnerships for Cooperation y cuáles son los objetivos oficiales de cada subtipo: Cooperation (KA220), Small-scale (KA210) y European Partnerships for School Development.",
+    "objetivo": "Reconocer el propósito de tu tipo de asociación y alinear los objetivos de tu propuesta con los objetivos oficiales que el evaluador espera ver.",
+    "confusion": "Pensar que los tres tipos buscan lo mismo. Comparten una base, pero cada uno añade objetivos propios: las Small-scale priorizan a recién llegados e inclusión; las escolares, la mejora de la enseñanza y la sinergia con KA1.",
+    "importa": "Porque el evaluador puntúa la \"relevancia\": cuánto encaja tu proyecto con los objetivos de la acción. Si escribes objetivos alineados con los oficiales de TU tipo de asociación, ganas puntos; si los ignoras, pierdes relevancia."
+  },
+  "sections": [
+    {
+      "id": "que-son",
+      "kind": "content",
+      "title": "1. Qué son las Partnerships for Cooperation",
+      "html": "<p>Las <b>Partnerships for Cooperation</b> (Asociaciones para la Cooperación) son la familia de proyectos de KA2 que permite a organizaciones e instituciones <b>aumentar la calidad y la relevancia de sus actividades</b> en los ámbitos de la <b>educación, la formación, la juventud y el deporte</b>.</p><p>Dentro de esta familia hay <b>tres tipos</b>, y aunque comparten una base común, cada uno tiene su propio propósito:</p><ul><li><b>Cooperation Partnerships</b> (las \"grandes\", KA220).</li><li><b>Small-scale Partnerships</b> (a pequeña escala, KA210).</li><li><b>European Partnerships for School Development</b> (desarrollo escolar europeo).</li></ul><div class=\"callout callout-key\"><b>Idea de fondo:</b> todas existen para que las organizaciones <b>cooperen, mejoren lo que hacen y generen cambio</b>. Pero el \"para qué\" concreto cambia según el tipo. Vamos a verlo.</div>"
+    },
+    {
+      "id": "obj-cooperation",
+      "kind": "content",
+      "title": "2. Objetivos de las Cooperation partnerships",
+      "html": "<p>Estos son los <b>cuatro objetivos base</b> que persiguen las asociaciones de cooperación (y que sirven de tronco común para los otros dos tipos):</p><ol class=\"obj\"><li><b>Aumentar la calidad</b> del trabajo, las actividades y las prácticas de las organizaciones implicadas, <b>abriéndose a nuevos actores</b> que no estarían incluidos de forma natural dentro de un mismo sector.</li><li><b>Construir capacidad</b> en las organizaciones para <b>trabajar de forma transnacional y entre sectores</b> (que aprendan a cooperar más allá de sus fronteras y de su propio campo).</li><li><b>Atender necesidades y prioridades comunes</b> en educación, formación, juventud y deporte.</li><li><b>Posibilitar la transformación y el cambio</b> —a nivel individual, organizativo o sectorial—, llevando a mejoras y nuevos enfoques, en proporción al contexto de cada organización.</li></ol><div class=\"callout callout-good\">Fíjate en el matiz del punto 4: el cambio se mide <b>en proporción al contexto</b> de cada organización. Una entidad pequeña no tiene que cambiar el mundo; tiene que transformarse <em>a su escala</em>.</div>"
+    },
+    {
+      "id": "obj-small-scale",
+      "kind": "content",
+      "title": "3. Lo que AÑADEN las Small-scale Partnerships (KA210)",
+      "html": "<p>Las asociaciones a pequeña escala persiguen <b>todo lo anterior</b> y, <b>además</b>, tres objetivos propios que las definen:</p><ol class=\"obj\"><li><b>Atraer y ampliar el acceso a recién llegados</b> (<em>newcomers</em>), organizaciones con menos experiencia y actores de pequeña escala. Estas asociaciones deben ser un <b>primer paso</b> para que las organizaciones entren en la cooperación a nivel europeo.</li><li><b>Apoyar la inclusión de grupos destinatarios con menos oportunidades</b> (<em>fewer opportunities</em>).</li><li><b>Apoyar la ciudadanía europea activa</b> y llevar la <b>dimensión europea al nivel local</b>.</li></ol><div class=\"callout callout-key\"><b>El ADN de la KA210:</b> es la puerta de entrada. Su razón de ser es bajar la barrera para que organizaciones pequeñas y nuevas prueben Europa, incluyan a quien suele quedarse fuera y acerquen \"lo europeo\" a su comunidad local.</div>"
+    },
+    {
+      "id": "obj-school",
+      "kind": "content",
+      "title": "4. Lo que persiguen las European Partnerships for School Development",
+      "html": "<p>Finalmente, las asociaciones europeas para el desarrollo escolar tienen sus <b>tres objetivos específicos</b>, centrados en el mundo de los centros educativos:</p><ol class=\"obj\"><li><b>Mejorar la calidad del aprendizaje y la enseñanza en los centros escolares</b> mediante la cooperación europea.</li><li><b>Reforzar la capacidad institucional y las estructuras</b> necesarias para ampliar las oportunidades de movilidad para el aprendizaje en educación escolar, en particular <b>creando sinergias con las oportunidades de la Key Action 1</b> (KA1, las movilidades).</li><li><b>Impulsar la innovación</b> en las prácticas, procedimientos y políticas de la educación escolar, aplicando resultados y buenas prácticas de proyectos transnacionales exitosos y <b>expandiendo su impacto más allá</b> de las organizaciones socias del proyecto.</li></ol><div class=\"callout callout-good\">Detalle clave del punto 2: estas asociaciones miran de reojo a <b>KA1</b>. Quieren que el centro no se quede en un proyecto suelto, sino que construya estructuras para seguir haciendo movilidades.</div>"
+    },
+    {
+      "id": "diferencias",
+      "kind": "content",
+      "title": "5. Las diferencias de un vistazo",
+      "html": "<p>Resumiendo, los tres tipos comparten el tronco común de cooperación, pero cada uno tiene su acento:</p><table><thead><tr><th>Tipo</th><th>Su propósito diferencial</th></tr></thead><tbody><tr><td><b>Cooperation (KA220)</b></td><td>Calidad, capacidad transnacional/intersectorial, necesidades comunes y transformación. El tronco común \"a lo grande\".</td></tr><tr><td><b>Small-scale (KA210)</b></td><td>Lo anterior + puerta de entrada para novatos, inclusión de quien tiene menos oportunidades y ciudadanía europea a nivel local.</td></tr><tr><td><b>School Development</b></td><td>Mejorar la enseñanza escolar, reforzar estructuras y crear sinergias con KA1, e innovar y difundir más allá de los socios.</td></tr></tbody></table><div class=\"callout callout-link\">🔗 En <b>LS.4</b> veremos que estos tres tipos también se diferencian en el dinero: tienen tramos de lump sum distintos y se evalúan en <b>listas de selección independientes</b>.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Los tres tipos persiguen lo mismo.»</b> → Comparten una base, pero cada uno añade objetivos propios. Mézclalos y tu propuesta sonará genérica.</li><li><span class=\"err-x\">✗</span> <b>«La KA210 es solo una KA220 con menos dinero.»</b> → No: tiene un propósito propio (recién llegados, inclusión, dimensión europea local). Es un primer paso, no una versión reducida.</li><li><span class=\"err-x\">✗</span> <b>«El desarrollo escolar va por libre.»</b> → Justo lo contrario: su objetivo es crear sinergias con KA1 y expandir el impacto más allá de los socios.</li><li><span class=\"err-x\">✗</span> <b>«Los objetivos los invento yo.»</b> → Tus objetivos deben alinearse con los objetivos oficiales de tu tipo de asociación; ahí se juega la relevancia.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> · Handbook on the lump sum funding model KA2, Call 2026 — Secciones <b>2. Partnerships for Cooperation</b> y <b>2.1 Objectives</b></td><td>Definición de las Partnerships for Cooperation y los objetivos oficiales de los tres tipos: Cooperation (4 objetivos), Small-scale (3 adicionales) y School Development (3 objetivos).</td></tr></tbody></table>"
+    }
+  ]
+}

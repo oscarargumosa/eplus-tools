@@ -1,0 +1,72 @@
+{
+  "id": 1105204,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SEGORBE",
+    "nivel3": "AYUNTAMIENTO DE SEGORBE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903643",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Concesión de subvenciones para el \"Embellecimiento de las fachadas del casco antiguo de Segorbe\", ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://bop.dipcas.es/PortalBOP/boletin.do?fechaPublicacion=21/01/2016",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-07",
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449016,
+      "descripcion": "Bases de la convocatoria",
+      "nombreFic": "Bases_de_la_convocatoria.pdf",
+      "long": 210137,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449014,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolucion_con_fiscalizacion.pdf",
+      "long": 384264,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

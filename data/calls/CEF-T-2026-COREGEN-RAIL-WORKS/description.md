@@ -1,0 +1,19 @@
+## Objective
+
+The objective of this call is to develop rail transport infrastructure projects on the TEN-T core [1] network
+
+## Scope
+
+Works and / or studies related to:
+- Construction/upgrading of cross-border and missing links
+- Interconnections between rail and other modes of transport, namely inland waterway and maritime transport (including port hinterland connections) and projects aimed at the integration of the high-speed rail and air networks to make the feeder network for long-haul flights more sustainable.
+
+Priority will be given to projects fostering the development of high-speed rail in line with the Commission communication on high-speed rail [2]
+
+Support will not be given to railway stations, except for railway infrastructure components. If the project includes such components, they shall be presented as a separate work package. Support will not be given to track side ERTMS deployment, electronic interlockings and/or Class A radio communication (5G/FRMCS/GSM-R) components. Support will not be given to activities related to the Class B systems nor to rolling stock.
+
+Projects shall comply with the provisions of Directive (EU) 2016/797 [3] and with the related Technical Specifications for Interoperability. Where relevant, projects shall also be compatible with the alignment of operating procedures across borders to ensure the most effective use of the supported infrastructure.
+
+In case a proposal combines studies and works components, these must address different sections / activities.
+
+Facilities and infrastructure supported under CEF must be accessible for use by all operators on a non-discriminatory basis.

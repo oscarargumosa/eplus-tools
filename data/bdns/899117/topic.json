@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "899117",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE GRAN CANARIA / ENTIDAD PÚBLICA EMPRESARIAL CONSEJO INSULAR DE LA ENERGÍA",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "BASES REGULADORAS ESPECÍFICAS Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DESTINADAS AL FOMENTO DE INSTALACIONES DE ENERGÍA SOLAR FOTOVOLTAICA EN MODALIDAD DE AUTOCONSUMO COLECTIVO Y EN EL MARCO DE COMUNIDADES ENERGÉTICAS – 2026",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 175000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    }
+  ],
+  "apply_url": "https://energiagrancanaria.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899117",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cabildo.grancanaria.com/documents/10180/8506129/Ordenanza+General+de+Subvenciones+del+Cabildo+de+Gran+Canaria/33077d88-3822-4049-bca7-af8199d49ef4",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto de esta convocatoria en el BOP de Las Palmas",
+  "text_fin": "Hasta el 31 de diciembre de 2026, o bien hasta el agotamiento del crédito disponible",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.827Z"
+}

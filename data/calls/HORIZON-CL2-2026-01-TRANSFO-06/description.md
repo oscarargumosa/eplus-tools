@@ -1,0 +1,17 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- Generate rigorous, policy-relevant evidence on the factors that may influence students, researchers, and high-skilled workers from non-EU countries to move to and remain in the EU.
+- Provide policymakers and higher education/research institutions with guidance on which policies and programmes could be effective in attracting talented students, researchers and high-skilled workers from non-EU countries to the EU.
+- Develop actionable advice to policymakers and higher education/research institutions about how to retain talented students, researchers and high-skilled workers from non-EU countries to ensure a long-term positive impact on the EU economy’s innovation and competitiveness.
+- Provide evidence-based policy insights/options to improve the coherence of migration pathways for skilled talent across the EU. Support the development of more flexible and attractive mobility schemes, reducing administrative barriers, increasing accessibility and enhancing retention mechanisms to enhance the EU’s competitiveness in research, innovation, and cultural exchange.
+
+## Scope
+
+The EU’s ability to compete on a global scale depends not only on retaining homegrown talent but also on actively drawing and retaining talent from outside Europe. The Union of Skills, adopted in March 2025, aims to make the EU and the European Research Area (ERA) a global magnet for talent, to attract and retain brilliant extra-EU tertiary students, top-level researchers and high-skilled workers. There is still limited research on what specific factors and their variability across Member States and Associated Countries (e.g. academic quality, career opportunities, cultural appeal, political context or funding availability) most influence the decision-making process for international students when choosing destinations. The same applies to the factors that can make a destination desirable for researchers and other high-skilled workers (e.g. quality of life, wages, professional opportunities, integration and family reunification measures, support to innovation ecosystem). More evidence is also needed about:
+- How policies and programmes can be successful in retaining students, researchers and high-skilled workers from abroad into the EU (and into Horizon Europe Associated Countries) in the medium-to-long term. Projects should assess the functioning of Talent Partnerships.
+- How to mobilise the professional potential of humanitarian migrants already in the EU in the context of global competition for talent.
+
+Proposals should apply rigorous quantitative methods for their analysis of the abovementioned factors, policies and programmes and could complement them with qualitative research methods and relevant research from SSH disciplines. Proposals should also address the gender and disability dimensions of attracting and retaining talent. As the pull factors may differ among categories of migrants, proposals can choose which group to focus on: students, researchers and/or high-skilled workers.
+
+Cooperation with higher education institutions, research institutions, non-academic organisations and notably industry, and social partners, as well as clustering and cooperation among selected projects under this call and other relevant projects, are strongly encouraged.

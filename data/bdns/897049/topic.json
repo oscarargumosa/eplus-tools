@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "897049",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PAMPLONA/IRUÑA / AYUNTAMIENTO DE PAMPLONA/IRUÑA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "CONVOCATORIA DE SUBVENCIONES EN CONCURRENCIA COMPETITIVA PARA ENTIDADES CULTURALES Y ARTÍSTICAS 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 415000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.pamplona.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897049",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos Euskera",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.pamplona.es/buscadortramites.aspx?cat=3&subcat=2&pagina=0&enlace=LiConcAyudasSubvenciones",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BON",
+  "text_fin": "Un mes A partir del día siguiente a la publicación del extracto de la convocatoria en el BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.787Z"
+}

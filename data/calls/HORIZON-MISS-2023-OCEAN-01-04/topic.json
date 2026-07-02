@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-MISS-2023-OCEAN-01-04",
+  "ccm2Id": "45741472",
+  "callIdentifier": "HORIZON-MISS-2023-OCEAN-01",
+  "callTitle": "",
+  "title": "European natural lakes: demonstration of integrated approaches for protection and restoration of natural lake ecosystems and their biodiversity",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-17",
+  "deadline": "2023-09-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Fresh water ecology\",\"Water Framework Directive\",\"Environment, Pollution \\u0026 Climate\",\"EOSC and FAIR data\",\"Fresh water biology\",\"Water-climate interactions\",\"Ocean sustainability and blue economy\",\"Fresh water ecosystems\",\"Nature-based solutions\",\"Environmental protection\",\"Fresh water biodiversity\",\"Environmental Conservation\",\"Water management\",\"Water supply\",\"Environmental stressors\",\"Ecosystem-Based Approach\",\"Societal Engagement\",\"protection of natural lakes\",\"Mission ocean and water\",\"Mission ocean\",\"European natural lakes\",\"Mission restore our ocean and waters\",\"associated regions\",\"restoration of natural lakes\",\"natural lakes\",\"Mission restore our ocean and waters by 2030\"]"
+  ],
+  "crossCuttingPriorities": [
+    "EoscAndFairData",
+    "OCEAN",
+    "SocietalEngagement"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-OCEAN-01-04.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.977Z"
+}

@@ -1,0 +1,143 @@
+{
+  "identifier": "ERDFTA-2026-YOUTH4OR2",
+  "ccm2Id": "51432378",
+  "callIdentifier": "ERDFTA-2026-YOUTH4OR2",
+  "callTitle": "Empowering youth in the EU Outermost Regions – YOUTH 4 OUTERMOST REGIONS (#YOUTH4ORS)",
+  "title": "Empowering youth in the EU Outermost Regions – YOUTH 4 OUTERMOST REGIONS (#YOUTH4ORS)",
+  "programme": "ERDFTA",
+  "programmeCode": "46324255",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-06-17",
+  "deadline": "2026-07-30",
+  "deadlineModel": "single-stage",
+  "actionType": "ERDF-TA Project Grants",
+  "actionCode": "ERDFTA-PJG",
+  "mgaCode": "ERDFTA-AG",
+  "budget": {
+    "total_eur": 1000000,
+    "by_year": {
+      "2026": 1000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "ERDFTA-2026-YOUTH4OR2",
+    "ERDFTA-2026-YOUTH4OR2"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact REGIO-CONTRACTS@ec.europa.eu.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44857?topic=ERDFTA-2026-YOUTH4OR2",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERDFTA-2026-YOUTH4OR2",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erdf-ta/wp-call/2026/call-fiche_erdfta-2026-youth4or2_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5a. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Call document_fr",
+      "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_fr.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Call document_es",
+      "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_es.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Call document_pt",
+      "url": "https://ec.europa.eu/regional_policy/sources/calls/outermost-regions/call-youth4or2_pt.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (ERDF-TA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erdf-ta/temp-form/af/af_erdf-ta_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "ERDF-TA MGA — Multi & Mono v1.0",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erdf-ta/agr-contr/mga_erdf-ta_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "ERDF-TA Work Programme 2026",
+      "url": "https://ec.europa.eu/regional_policy/sources/whats-new/tenders-and-grants/financing-decisions/2_C_2026_747_1_EN_annexe.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "ERDF-TA Regulation 2021/1060",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R1060",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "ERDF-TA Regulation 2021/1058",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R1058",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:07.475Z"
+}

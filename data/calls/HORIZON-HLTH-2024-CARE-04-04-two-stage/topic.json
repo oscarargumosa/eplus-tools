@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-HLTH-2024-CARE-04-04-two-stage",
+  "ccm2Id": "45701475",
+  "callIdentifier": "HORIZON-HLTH-2024-CARE-04-two-stage",
+  "callTitle": "",
+  "title": "Access to health and care services for people in vulnerable situations",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "two-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Social structure, inequalities, social mobility, i\",\"Health policies\",\"Poverty related diseases\",\"Health outcomes\",\"Socioeconomic stressors\",\"Gender in health sciences\",\"Health care\",\"Societal Engagement\",\"Equity\",\"Health literacy\",\"Healthcare system\",\"Health data\",\"Child health\",\"Health behaviour\",\"Health inequalities\",\"Health education\",\"Integrated care\",\"Digital Agenda\",\"Global health\",\"Public health\",\"Demography\",\"Empowerment\",\"Elderly\",\"Health services, health care research\",\"Social sciences and humanities\",\"Population dynamics, aging, health and society\",\"Access to health and care services\",\"Health inequality\",\"Vulnerability\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SocietalEngagement",
+    "DigitalAgenda",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-CARE-04-04-two-stage.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.501Z"
+}

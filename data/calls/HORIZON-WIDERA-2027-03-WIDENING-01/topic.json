@@ -1,0 +1,167 @@
+{
+  "identifier": "HORIZON-WIDERA-2027-03-WIDENING-01",
+  "ccm2Id": "50222141",
+  "callIdentifier": "HORIZON-WIDERA-2027-03",
+  "callTitle": "ERA Fellowships",
+  "title": "ERA Fellowships",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2027-04-07",
+  "deadline": "2027-09-08",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON TMA MSCA Postdoctoral Fellowships - European Fellowships",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": {
+    "total_eur": 8000000,
+    "by_year": {
+      "2027": 8000000
+    },
+    "expected_grants": 50,
+    "min_contribution_eur": 100000,
+    "max_contribution_eur": 500000
+  },
+  "keywords": [
+    "HORIZON-WIDERA-2027-03-WIDENING-01",
+    "HORIZON-WIDERA-2027-03"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-WIDERA-2027-03-WIDENING-01",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "Annex A",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "2. Eligible Countries",
+      "label": "Horizon Europe Programme Guide",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "5b. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Specific conditions",
+      "label": "MSCA part of the Work Programme",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-2-marie-sklodowska-curie-actions_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Standard application form (HE MSCA PF)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-msca-pf_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "Standard evaluation form (HE MSCA)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/ef/ef_he-msca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "HE Unit MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/agr-contr/unit-mga_he_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2026-2027 - 11. Widening participation and strengthening the European Research Area",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-11-widening-participation-and-strengthening-the-european-research-area_horizon-2026-2027_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Framework Programme 2021/695",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0695",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Specific Programme Decision 2021/764",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021D0764",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Decision authorising the use of lump sum contributions under the Horizon Europe Programme",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-decision_he_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-05-06T19:11:40.318Z"
+}

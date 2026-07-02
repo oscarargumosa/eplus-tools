@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903771",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESCALA, L' / AYUNTAMIENTO DE L'ESCALA",
+  "nuts_codes": [
+    "ES512"
+  ],
+  "nuts_primary": "ES512",
+  "title": "CONVOCATORIA DEL AYUNTAMIENTO DE L'ESCALA PARA LA CONCESIÓN DE SUBVENCIONES DE BECAS DE COMEDOR PARA ALUMNOS DE LOS CENTROS EDUCATIVOS DE L'ESCALA, PARA EL EJERCICIO 2026, CURSO ESCOLAR 2025-2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": "2026-07-03",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "http://www.lescala.cat/ca/tramits-i-gestions/instancia-generica/_id:19/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903771",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.seu-e.cat/ca/web/escala/govern-obert-i-transparencia/contractes-convenis-i-subvencions/convenis-i-subvencions/convocatories-de-subvencions-i-ajuts",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatòria en el BOP de Girona",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.295Z"
+}

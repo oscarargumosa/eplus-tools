@@ -1,0 +1,58 @@
+{
+  "id": "4.6",
+  "code": "Part B · 4.6",
+  "module": "EACEA",
+  "moduleTitle": "Work plan & Work packages",
+  "bloque": "D — Anatomía del formulario",
+  "title": "4.6 Cronograma (timetable / Gantt)",
+  "subtitle": "Cómo construir un Gantt creíble: secuencia lógica, hitos, dependencias y sin solapes imposibles, con un ejemplo de tabla WP × periodos.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "20–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 4.6",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Llega el cronograma y o lo dejas para el último día (y queda incoherente con el resto) o pintas un Gantt donde todo empieza el mes 1 y acaba el 24 sin orden real.",
+    "comprender": "Que el Gantt es la prueba de tiempo de tu proyecto: traduce el plan de trabajo a una línea temporal que tiene que ser físicamente posible.",
+    "objetivo": "Saber construir un cronograma WP × periodos con secuencia lógica, hitos, dependencias respetadas y sin solapes imposibles.",
+    "confusion": "Creer que el Gantt es decorativo y se puede rellenar a ojo. No: el evaluador lo cruza con tus WP, eventos y entregables, y caza las incoherencias ahí.",
+    "importa": "Porque un Gantt que se contradice con el resto del formulario (difundir antes de producir, pilotar antes de desarrollar) hace que todo el plan pierda credibilidad de golpe."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\">📋 <b>Lo que pide 4.6.</b> El <b>cronograma de todo el proyecto</b> (timetable / <em>Gantt chart</em>): una representación temporal de cuándo ocurre cada work package, normalmente como una <b>tabla de WP en filas × periodos en columnas</b> (meses, trimestres o semestres), marcando en qué periodos está activo cada WP y, idealmente, los <b>hitos</b> (milestones) clave.</div><p>Un <b>diagrama de Gantt</b> es simplemente eso: barras horizontales que muestran cuándo empieza y termina cada bloque de trabajo a lo largo del tiempo. Es la <b>cuarta dimensión</b> de tu plan: ya dijiste qué (WP), quién (participantes) y por qué (objetivos); ahora dices <b>cuándo</b>.</p>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>Un Gantt creíble respeta cuatro principios que el evaluador comprueba casi sin darse cuenta:</p><ol class=\"obj\"><li><b>Secuencia lógica.</b> El trabajo fluye: investigación → desarrollo → pilotaje → difusión. No puedes pilotar lo que aún no has desarrollado ni difundir lo que aún no existe.</li><li><b>Dependencias respetadas.</b> Si el WP4 necesita el resultado del WP3, el WP4 empieza <em>después</em> (o cuando WP3 ya ha entregado lo suficiente). Las flechas implícitas del PERT (4.1) tienen que verse en el tiempo.</li><li><b>Hitos visibles.</b> Marca momentos clave: entregable principal listo, fin del pilotaje, evento multiplicador. Los hitos dan ritmo y puntos de control.</li><li><b>Sin solapes imposibles.</b> El WP1 (gestión) sí recorre todo en paralelo (es transversal). Pero no metas tres WP intensivos de contenido en el mismo mes con los mismos socios: el calendario debe ser físicamente realizable.</li></ol><div class=\"callout callout-good\"><b>Coherencia total:</b> tu Gantt debe cuadrar con 4.2 (WP), 4.5 (eventos: el kick-off al inicio, el evento de difusión al final) y con los entregables. Cuando los cuatro encajan, el evaluador percibe un proyecto pensado de verdad.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Gantt de un proyecto de <b>24 meses</b> dividido en <b>4 semestres</b> (S1–S4). El relleno (█) marca actividad; ◆ marca un hito.</p><table class=\"cmp\"><thead><tr><th>Work package</th><th>S1<br>(m1–6)</th><th>S2<br>(m7–12)</th><th>S3<br>(m13–18)</th><th>S4<br>(m19–24)</th></tr></thead><tbody><tr><td><b>WP1 · Gestión</b></td><td>█</td><td>█</td><td>█</td><td>█ ◆</td></tr><tr><td>WP2 · Investigación</td><td>█ ◆</td><td>█</td><td>·</td><td>·</td></tr><tr><td>WP3 · Desarrollo</td><td>·</td><td>█</td><td>█ ◆</td><td>·</td></tr><tr><td>WP4 · Pilotaje</td><td>·</td><td>·</td><td>█</td><td>█ ◆</td></tr><tr><td>WP5 · Difusión</td><td>·</td><td>·</td><td>█</td><td>█ ◆</td></tr></tbody></table><p>Léelo de arriba abajo y de izquierda a derecha:</p><ul class=\"bullets\"><li><b>WP1</b> ocupa los cuatro semestres (transversal) y cierra con el hito del informe final.</li><li><b>WP2</b> arranca primero y entrega su diagnóstico (◆ en S1) antes de que <b>WP3</b> empiece a desarrollar en S2.</li><li><b>WP4 (pilotaje)</b> no empieza hasta S3, cuando WP3 ya tiene producto que probar. <b>Dependencia respetada.</b></li><li><b>WP5 (difusión)</b> sube en S3–S4, con el evento multiplicador al final. <b>Nada se difunde antes de existir.</b></li></ul><div class=\"callout callout-key\">Fíjate en que <b>no hay dos columnas idénticas saturadas</b> ni todo empezando en S1: hay <em>escalonamiento</em>. Ese escalonamiento es exactamente lo que distingue un Gantt creíble de uno rellenado a ojo.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Todos los WP del mes 1 al 24.»</b> → Manta uniforme sin secuencia. Si todo dura todo, no has planificado: has rellenado.</li><li><span class=\"err-x\">✗</span> <b>«Difusión desde el principio.»</b> → No puedes difundir resultados que aún no existen. La difusión sube hacia el final.</li><li><span class=\"err-x\">✗</span> <b>«Pilotaje y desarrollo a la vez.»</b> → Rompe la dependencia: no pruebas lo que aún estás creando. El pilotaje va después del desarrollo.</li><li><span class=\"err-x\">✗</span> <b>«El Gantt dice una cosa y el 4.5 otra.»</b> → El evaluador cruza secciones. Si el evento de cierre está en S4 en eventos pero el WP5 acaba en S2 en el Gantt, te pilla.</li><li><span class=\"err-x\">✗</span> <b>«Sin hitos.»</b> → Un Gantt sin milestones es una mancha sin puntos de control. Marca los momentos clave de entrega.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B</b> · sección 4.6</td><td>Pide el cronograma/Gantt de todo el proyecto (WP a lo largo del tiempo).</td></tr><tr><td><b>kb-0079</b> Plantilla KA220</td><td>Formato de timetable y relación del Gantt con la estructura de WP.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>\"Quality of design and implementation\": valora un calendario realista, con secuencia lógica, dependencias e hitos coherentes.</td></tr></tbody></table>"
+    }
+  ]
+}

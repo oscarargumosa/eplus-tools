@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "901567",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COLLADO VILLALBA / AYUNTAMIENTO DE COLLADO VILLALBA",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVOCATORIA PUBLICA DE SUBVENCIONES POR NACIMIENTO, ADOPCIÓN O ACOGIMIENTO, A FAVOR DE LOS EMPADRONADOS EN EL MUNICIPIO DE COLLADO VILLALBA",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-24",
+  "open_date": null,
+  "deadline": "2026-06-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 138985,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.ayto-colladovillalba.org/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901567",
+  "documents": [
+    {
+      "label": "APROBACIÓN DE LA CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.bocm.es/boletin/CM_Orden_BOCM/2026/03/04/BOCM-20260304-65.PDF",
+  "text_inicio": "Desde el día siguiente a la publicación de la convocatoria en el BOCM",
+  "text_fin": "20/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.258Z"
+}

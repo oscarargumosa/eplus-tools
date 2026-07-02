@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "901763",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Resolución de 21 de abril de 2026, de la Secretaría General de la Emigración, por la que se regulan las bases que regirán el procedimiento de concesión de ayudas para la participación en el programa Aventúrate con Galicia, dirigido a la juventud de origen",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 4867,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901763",
+  "documents": [
+    {
+      "label": "Anexos",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia",
+  "text_inicio": "Un mes e iniciarase ás 9.00 horas do quinto día natural seguinte ao da publicación da convocatoria n",
+  "text_fin": "O prazo finalizará ás 20.00 horas do día en que se cumpra un mes desde a data de inicio do prazo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.332Z"
+}

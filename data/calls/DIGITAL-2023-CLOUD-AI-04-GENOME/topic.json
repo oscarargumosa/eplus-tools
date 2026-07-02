@@ -1,0 +1,28 @@
+{
+  "identifier": "DIGITAL-2023-CLOUD-AI-04-GENOME",
+  "ccm2Id": "46029906",
+  "callIdentifier": "DIGITAL-2023-CLOUD-AI-04",
+  "callTitle": "",
+  "title": "Genome of Europe",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-11",
+  "deadline": "2023-09-26",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL Simple Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Biobanks\",\"Privacy\",\"Biomedical software\",\"Artificial intelligence\",\"Health data\",\"Bioinformatics, biocomputing, and DNA and molecula\",\"Health information\",\"Genomics\",\"Cloud computing\",\"Cloud Services\",\"eHealth\",\"Data curation\",\"Trust\",\"Medical biotechnology related ethics\",\"Pharmacology, pharmacogenomics, drug discovery and\",\"Digital Services and Platforms\",\"Translational bioinformatics\",\"Artificial intelligence, intelligent systems, mult\",\"Clinical bioinformatics\",\"High-performance computing (HPC)\",\"Personalised medicine\",\"Population genetics\",\"Genomics, comparative genomics, functional genomic\",\"Multi-party computing\",\"1+ Million Genomes\",\"Whole Exome Sequencing (WES)\",\"Federated data analysis\",\"Whole Genome Sequencing (WGS)\",\"Distributed learning\",\"1+MG\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/DIGITAL-2023-CLOUD-AI-04-GENOME.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.397Z"
+}

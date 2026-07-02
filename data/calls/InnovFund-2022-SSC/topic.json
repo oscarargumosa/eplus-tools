@@ -1,0 +1,28 @@
+{
+  "identifier": "InnovFund-2022-SSC",
+  "ccm2Id": "45902622",
+  "callIdentifier": "InnovFund-2022-SSC",
+  "callTitle": "",
+  "title": "Innovation Fund Small Scale Projects",
+  "programme": "Innovation Fund",
+  "programmeCode": "43089234",
+  "programmePeriod": "2014 - 20202021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-30",
+  "deadline": "2023-09-19",
+  "deadlineModel": "single-stage",
+  "actionType": "INNOVFUND Lump Sum Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Cement \\u0026 lime\",\"Iron \\u0026 steel\",\"Non-ferrous Metals\",\"Pulp \\u0026 paper\",\"Other\",\"Glass, ceramics \\u0026 construction material\",\"Manufacturing of components\",\"Refineries\",\"Hydro/Ocean energy\",\"Use of renewable energy outside Annex I\",\"Intra-day electricity storage\",\"Hydrogen\",\"Other energy storage\",\"Green Deal\",\"clean energy\",\"Chemicals\",\"CLIMA\",\"CINEA\",\"ETS installation\",\"clean technologies\",\"GHG\",\"H2\",\"emission savings\",\"Electrification\",\"heavy industry\",\"Low Carbon hydrogen\",\"ETS\",\"Geothermal energy\",\"carbon capture and storage\",\"demonstration\",\"energy transition\",\"low-carbon technologies\",\"Recycling\",\"Value chain\",\"energy storage\",\"Green hydrogen\",\"energy intensive industry\",\"carbon neutral\",\"Wind energy\",\"carbon capture and utilisation\",\"greenhouse gas\",\"industry\",\"Innovation Fund\",\"clean tech\",\"Manufacturing\",\"climate change\",\"CO2\",\"Emissions Trading System\",\"Hydrogen\",\"emission avoidance\",\"Renewable Hydrogen\",\"Circularity\",\"Solar energy\",\"renewable energy\",\"CCS\",\"CCU\"]"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/InnovFund-2022-SSC.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.314Z"
+}

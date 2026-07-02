@@ -1,0 +1,121 @@
+[
+  {
+    "section": "1. Admissibility Conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/wp-call/2026/call-fiche_crea-media-2026-devminislate_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (CREA MEDIA)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/af_crea-media_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Calculator (CREA MEDIA LS DEVSLATE and DEVMINISLATE)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/calculator_crea-media-devslate-devminislate_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Creative dossier (CREA MEDIA CODEV, DEVSLATE and DEVMINISLATE)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/creative-dossier_crea-media-codev-devslate-devminislate_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "I",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/declaration-on-standards-and-independence_crea-cross-jourpart_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "nformation on independence and ownership control (CREA MEDIA)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/information-on-independence-and-ownership-control_crea-media_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Information on language of submission documents (CREA MEDIA)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/temp-form/af/information-on-language-of-submission-documents_crea-media_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "CREA MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/agr-contr/mga_crea_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Lump Sum MGA",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/ls-mga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "CREA Annual Work Programmes",
+    "url": "https://ec.europa.eu/culture/resources/annual-work-programmes",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "CREA Regulation 2021/818",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0818",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+    "ext": "",
+    "is_downloadable": false
+  }
+]

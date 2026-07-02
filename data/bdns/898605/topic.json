@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "898605",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MEQUINENZA / AYUNTAMIENTO DE MEQUINENZA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "IX CERTAMEN DE TEATRO AMATEUR DE MEQUINENZA",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": "2026-04-15",
+  "deadline": "2026-07-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898605",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://mequinensa.es/pdfs/1775644975.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208727,
+      "titulo": "Bases que rigen el IX Certamen de Teatro Amateur de Mequinenza 2026",
+      "tituloLeng": null,
+      "texto": "<p>Desde el Área de Cultura del Ayuntamiento de Mequinenza se convoca el IX Certamen de Teatro Amateur de Mequinneza con el fin de promover el desarrollo de las artes escénicas y cultura.</p>",
+      "textoLeng": null,
+      "url": "https://boletin.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=891709&numBop=88",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ZARAGOZA",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.611Z"
+}

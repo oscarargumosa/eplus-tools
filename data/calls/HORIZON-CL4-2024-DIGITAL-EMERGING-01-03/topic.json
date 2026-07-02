@@ -1,0 +1,33 @@
+{
+  "identifier": "HORIZON-CL4-2024-DIGITAL-EMERGING-01-03",
+  "ccm2Id": "45704198",
+  "callIdentifier": "HORIZON-CL4-2024-DIGITAL-EMERGING-01",
+  "callTitle": "",
+  "title": "Novel paradigms and approaches, towards AI-powered robots– step change in functionality (AI, data and robotics partnership) (RIA)",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-15",
+  "deadline": "2024-03-19",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Computer graphics, computer vision, multi media, c\",\"Robotic perception\",\"Surgical robotics\",\"Warehousing\",\"Food processing\",\"Mapping\",\"Learning, development and adaptation\",\"Robot navigation\",\"Robotic actuators\",\"System engineering\",\"Robotics for forestry\",\"Assistive robotics\",\"Robotic sensors\",\"Robotics for utilities and service\",\"Robotics for healthcare\",\"Robotics for science Support\",\"Computer sciences, information science and bioinfo\",\"Social sciences and humanities\",\"Robotic cognition\",\"Robotics for manufacturing\",\"Automation and control systems\",\"Natural interaction\",\"Sensing\",\"Human robot interaction\",\"Modelling and knowledge engineering\",\"Therapy and rehabilitation\",\"Digital Agenda\",\"Robotics for animal production\",\"Man Machine interface\",\"Robotics for education\",\"Knowledge representation and reasoning\",\"Robotics for goods transport\",\"Robotics for transport and logistics\",\"Robotics for environment\",\"Robotics for commercial applications\",\"Robotic system development\",\"Cognitive science\",\"Robotics for training\",\"Robotics for law enforcement\",\"Craft and bespoke manufacture\",\"Robotics for entertainment\",\"Robotics and automatic control\",\"Robotics for emergency services\",\"Robotics for civil engineering\",\"Robotics for inspection and monitoring\",\"Mechanical structures of robots\",\"Domestic appliances\",\"Software engineering, operating systems, computer\",\"Industrial robot\",\"Robotics for agriculture, forestry and fishing\",\"Motion planning\",\"Artificial Intelligence\",\"Artificial intelligence, intelligent systems, mult\",\"System design\",\"System integration\",\"Robotics for fishing\",\"Robotics for agriculture\",\"Co-programmed European Partnerships\",\"Human robot collaboration\",\"Signal interpretation\",\"Robotics for consumer applications\",\"Robotics for monitoring and security\",\"Robotics for civil applications\",\"Mechatronics\",\"Action planning\",\"Robotics\",\"Assistive living\",\"Robot safety\",\"Cognitive architectures\",\"Power supply\",\"Robotics for construction\",\"System architecture\",\"Robotics for marketing\",\"Robotics for search and rescue\",\"Localisation\",\"Robotic control\",\"Machine learning, statistical data processing and\",\"Robotics for mining and quarrying\",\"Soft products manufacture\",\"Robotic communication\",\"Robotics for people transport\",\"robots for harsh environments\",\"modular/reconfigurable robots\",\"natural human robot intereaction\",\"cognitive systems\",\"grasping\",\"miniaturised robots\",\"underactuated robots\"]"
+  ],
+  "crossCuttingPriorities": [
+    "SSH",
+    "DigitalAgenda",
+    "PART-COPROGR",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-DIGITAL-EMERGING-01-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.460Z"
+}

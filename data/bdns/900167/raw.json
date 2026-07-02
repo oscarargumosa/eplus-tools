@@ -1,0 +1,132 @@
+{
+  "id": 1101728,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALAQUÀS",
+    "nivel3": "AYUNTAMIENTO DE ALAQUÀS"
+  },
+  "sedeElectronica": "https://alaquas.sedelectronica.es",
+  "codigoBDNS": "900167",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA EL AÑO 2026 DE LAS BASES PERMANENTES REGULADORAS SOBRE COOPERACIÓN RESPECTO A ACTIVIDADES ENCAMINADAS A LA CONCESIÓN DE PROYECTOS DE COOPERACIÓN LOCAL, NACIONAL E INTERNACIONAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA EL AÑO 2026 DE LAS BASES PERMANENTES REGULADORAS SOBRE COOPERACIÓN RESPECTO A ACTIVIDADES ENCAMINADAS A LA CONCESIÓN DE PROYECTOS DE COOPERACIÓN LOCAL, NACIONAL E INTERNACIONAL",
+  "urlBasesReguladoras": "https://alaquas.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DÍA DE SIGUIENTE DE LA PUBLICACIÓN EN EL BOP",
+  "textFin": "10 días hábiles desde el día siguiente a la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446699,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES COOPERACIÓN CAST.pdf",
+      "long": 138617,
+      "datMod": "2026-04-30",
+      "datPublicacion": "2026-04-30"
+    },
+    {
+      "id": 1439146,
+      "descripcion": "ANEXO IV DECLARACIÓN JURADA AYUDAS RECIBIDAS",
+      "nombreFic": "20260325_ANNEX IV Declaració jurada ajudes rebudes no superen cost projecte (VAL_CAS).pdf",
+      "long": 171525,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439145,
+      "descripcion": "ANEXO III CONSENTIMIENTO ACCESO",
+      "nombreFic": "20260325_ANNEX III Consentiment d.pdf",
+      "long": 456180,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439142,
+      "descripcion": "MODELO SOLICITUD",
+      "nombreFic": "20260325_Anexo I Criterios de valoración Bases cooperación (CAS).pdf",
+      "long": 184167,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439147,
+      "descripcion": "ANEXO V. MEMORIA ECONÓMICA",
+      "nombreFic": "20260325_ANNEX V Memòria econòmica (VAL_CAS).pdf",
+      "long": 1015737,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439141,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260327_Certificado_Cert. Junta de Govern  26-3-2026 CONVOCATORIA Y BASES DE COOPERACION.pdf",
+      "long": 1314019,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439143,
+      "descripcion": "ANNEX I MODEL",
+      "nombreFic": "20260325_Annex I Criteris de valoració Bases cooperació (VAL).pdf",
+      "long": 151157,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1439144,
+      "descripcion": "ANEXO II FICHA ENTIDAD",
+      "nombreFic": "20260325_ANNEX II Fitxa entitat i contrapart local Bases cooperació (VAL_CAS).pdf",
+      "long": 254232,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209498,
+      "titulo": "CONVOCATORIA PARA EL AÑO 2026 DE LAS BASES PERMANENTES SOBRE COOPERACIÓN RESPECTO A ACTIVIDADES ENCAMINDAS A LA CONCESIÓN DE PROYECTOS DE COOPERACIÓN LOCAL, NACIONAL E INTERNACIONAL",
+      "tituloLeng": null,
+      "texto": "<p>CONVOCATORIA PARA EL AÑO 2026 DE LAS BASES PERMANENTES SOBRE COOPERACIÓN RESPECTO A ACTIVIDADES ENCAMINDAS A LA CONCESIÓN DE PROYECTOS DE COOPERACIÓN LOCAL, NACIONAL E INTERNACIONAL</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04670&lang=es",
+      "cve": "BOPV-2026/04670",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

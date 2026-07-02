@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "900966",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CENDEA DE OLZA/OLTZA ZENDEA / AYUNTAMIENTO DE CENDEA DE OLZA/OLTZA ZENDEA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "CONVOCATORIA PÚBLICA DE SUBVENCIONES DESTINADAS A ACTIVIDADES Y PROYECTOS DE COOPERACIÓN, SOLIDARIDAD E INTERÉS SOCIAL - ONG 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 8300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://ayuntamientoolza.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900966",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ayuntamientoolza.sedelectronica.es/preview-document/75479243-ef20-405a-a0f7-9547a57b5f4f/",
+  "text_inicio": "A la fecha del día siguiente a la publicación en el Boletín Oficial de Navarra (BON)",
+  "text_fin": "A los veinte días naturales después de la publicación en el Boletín Oficial de Navarra (BON)",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.971Z"
+}

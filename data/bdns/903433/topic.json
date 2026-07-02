@@ -1,0 +1,97 @@
+{
+  "source": "bdns",
+  "source_id": "903433",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "SGBA - CONVOCATORIA BECAS SEGUNDA OPORTUNIDAD 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.3",
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria"
+    },
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903433",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Modelo de Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexos  CERTIFICADO MATRICULACION",
+      "url": null
+    },
+    {
+      "label": "Anexos  RENUNCIA",
+      "url": null
+    },
+    {
+      "label": "Anexos  AUTORIZACION",
+      "url": null
+    },
+    {
+      "label": "Anexos  SUBSANACION",
+      "url": null
+    },
+    {
+      "label": "Anexos  RECURSO",
+      "url": null
+    },
+    {
+      "label": "Anexos  CERTIFICADO CAMBIO DE CENTRO",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2023/06/14/BOCM-20230614-24.PDF",
+  "text_inicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "text_fin": "15 DIAS HABILES A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.154Z"
+}

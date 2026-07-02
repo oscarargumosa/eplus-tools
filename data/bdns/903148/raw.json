@@ -1,0 +1,72 @@
+{
+  "id": 1104709,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD JAUME I DE CASTELLÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=85731",
+  "codigoBDNS": "903148",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Ayudas para promover la participación del estudiantado en concursos, ferias y competiciones de interés institucional para la Universitat Jaume I para el curso 2025/2026.",
+  "descripcionLeng": "Ajudes per promoure la participació de l’estudiantat en concursos, fires i competicions d’interès institucional per a la Universitat Jaume I per al curs 2025/2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ayudas para promover la participación del estudiantado en concursos, ferias y competiciones de interés institucional para la Universitat Jaume I para el curso 2025/2026.",
+  "urlBasesReguladoras": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=85731",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "textFin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447403,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "BASES COMPETICIONS ASSOCIACIONS 2026 VAL.pdf",
+      "long": 565704,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447402,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES COMPETICIONES ASOCIACIONES 2026 CAST.pdf",
+      "long": 564282,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

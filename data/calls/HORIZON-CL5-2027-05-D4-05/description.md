@@ -1,0 +1,21 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- Improved resource efficiency compared to current practices;
+- Improved accuracy (designed vs. as-built) of on-site renovation and construction works, compared to current best practices;
+- Significant reduction in time spent by building professionals on site;
+- Reduced GHG emissions at the construction site.
+
+## Scope
+
+The rate of deep renovation of buildings can be accelerated by modernising the construction sector and embracing the latest developments in robotics and automated systems. There is need for further development of techniques using innovative on-site robotic and other automated systems that make renovation and construction works more sustainable, less disruptive, faster as well as more accurate, cost effective and resource efficient, while delivering, at least, the same building elements’ energy performance compared to current best practices. Proposals are expected to address all of the following:
+- Demonstrate innovative on-site robotic and automated techniques for building renovation and the construction of new buildings. At least one of the proposed techniques should involve 3D printing;
+- Develop techniques that are specifically for building-site applications (e.g. solutions focusing on prefabrication in workshops/factories away from the building site are out oof the scope), flexible to adapt to various building typologies and, where possible, to materials and components already on the market;
+- Ensure that the proposed techniques appropriately take into account aspects of on-site workers’ safety and human-robot collaboration;
+- Demonstrate the proposed techniques in at least three demonstrations to investigate their applicability for a variety of building typologies and climatic conditions, duly justified to represent a relevant part of the European building stock. Proposals must address the energy renovation of existing buildings but may also address new constructions.
+
+Selected proposals could consider the involvement of the European Commission's Joint Research Centre (JRC) whose contribution could consist of scientific advice and technical analysis of solutions and technologies, support to the transfer of research output to standards, and access to the European Laboratory for Structural Assessment research infrastructure for full-scale testing of buildings.
+
+## null
+
+Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.

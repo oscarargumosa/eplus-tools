@@ -1,0 +1,72 @@
+{
+  "id": 1104444,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT PERE DE RIUDEBITLLES",
+    "nivel3": "AYUNTAMIENTO DE SANT PERE DE RIUDEBITLLES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "902883",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "PREMI XIII BIENNAL D`ART RIUDEBITLLES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "PREMI XIII BIENNAL D`ART RIUDEBITLLES",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3914872/aprovacio-inicial-de-les-bases-reguladores-de-la-xiii-biennal-d-art-riudebitlles-ajuntament-de-sant-pere-de-riudebitlles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447040,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "DECRET_APROVACIO_CONVOCATORIA_BIENNAL.pdf",
+      "long": 2180998,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447039,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRETO_APROBACION_CONVOCATORIA.pdf",
+      "long": 2190288,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

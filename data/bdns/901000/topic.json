@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "901000",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN FORAL DE BIZKAIA / DIPUTACIÓN FORAL DE BIZKAIA",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "DECRETO FORAL 41/2026, de 23 de abril, de la Diputación Foral de Bizkaia por el que se establecen las bases reguladoras de la concesión de subvenciones para mejorar la protección de las explotaciones agrícolas y ganaderas frente a daños provocados por la",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": "2026-04-29",
+  "deadline": "2026-05-28",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901000",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://web.bizkaia.eus/es/bob",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOB.",
+  "text_fin": "20 días hábiles desde el día siguiente a la publicación en el BOB.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.111111",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS DESTINADAS A LAS INVERSIONES EN EXPLOTACIONES AGRÍCOLAS VINCULADAS A LA PRODUCCIÓN AGRÍCOLA PRIMARIA"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.991Z"
+}

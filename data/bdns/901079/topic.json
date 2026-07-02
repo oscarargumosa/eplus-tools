@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "901079",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "CONVOCATORIA PÚBLICA DE SUBVENCIONES DESTINADAS A LA PROMOCIÓN DEL DESARROLLO PERSONAL Y LA INTEGRACIÓN SOCIAL DE PERSONAS CON DISCAPACIDAD INTELECTUAL EN ENTIDADES LOCALES DE LA PROVINCIA DE SEVILLA MENORES DE 20.000 HABITANTES 2026. LÍNEA 6.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 350000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Sede electrónica Diputación Provincial de Sevilla",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901079",
+  "documents": [
+    {
+      "label": "Extracto Convocatoria Línea 6 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BOP Nº 45, de 6 de marzo, BBRR Línea 6",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://portal.dipusevilla.es/vfirma/code/EVQVuRechr4Mkn%2FP3Vf%2BQA%3D%3D",
+  "text_inicio": "A partir del día siguiente al de la publicación del extracto de la convocatoria en el BOP de Sevilla",
+  "text_fin": "15 días hábiles a contar desde el día siguiente al de la publicación del extracto de la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.011Z"
+}

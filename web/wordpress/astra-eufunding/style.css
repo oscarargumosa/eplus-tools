@@ -224,11 +224,11 @@ body:not(.efs-landing-page) .site-header,
 body:not(.efs-landing-page) #masthead,
 body:not(.efs-landing-page) .ast-header-break-point { display: none !important; }
 
-/* Empuja el contenido 48px hacia abajo para no quedar tapado por el top bar fixed */
-body:not(.efs-landing-page) .site { padding-top: 48px; }
+/* Empuja el contenido 64px hacia abajo para no quedar tapado por el top bar fixed */
+body:not(.efs-landing-page) .site { padding-top: 64px; }
 
 .efs-topbar {
-	position: fixed; top: 0; left: 0; right: 0; height: 48px; z-index: 999;
+	position: fixed; top: 0; left: 0; right: 0; height: 64px; z-index: 999;
 	background: #1b1464; color: #fff;
 	font-family: var(--efs-font-body, 'Poppins', sans-serif);
 	font-size: 14px; font-weight: 500;
@@ -245,8 +245,7 @@ body:not(.efs-landing-page) .site { padding-top: 48px; }
 }
 .efs-topbar__brand:hover { color: #fbff12; }
 .efs-topbar__logo {
-	width: 22px; height: 22px; background: #fbff12;
-	border-radius: 4px; flex: 0 0 auto; display: inline-block;
+	height: 44px; width: auto; flex: 0 0 auto; display: block;
 }
 .efs-topbar__nav { flex: 1; display: flex; }
 .efs-topbar__menu {
@@ -272,8 +271,158 @@ body:not(.efs-landing-page) .site { padding-top: 48px; }
 	font-weight: 700; font-size: 13px; transition: transform .15s;
 }
 .efs-topbar__login:hover { transform: translateY(-1px); color: #1b1464; }
+.efs-topbar__toggle {
+	display: none; background: none; border: 0; cursor: pointer;
+	padding: .35rem; width: 38px; height: 38px; align-items: center; justify-content: center;
+}
+.efs-topbar__bars, .efs-topbar__bars::before, .efs-topbar__bars::after {
+	content: ''; display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px;
+	transition: transform .2s, opacity .2s;
+}
+.efs-topbar__bars { position: relative; }
+.efs-topbar__bars::before { position: absolute; top: -7px; }
+.efs-topbar__bars::after  { position: absolute; top: 7px; }
+.efs-topbar__toggle[aria-expanded="true"] .efs-topbar__bars { background: transparent; }
+.efs-topbar__toggle[aria-expanded="true"] .efs-topbar__bars::before { top: 0; transform: rotate(45deg); }
+.efs-topbar__toggle[aria-expanded="true"] .efs-topbar__bars::after  { top: 0; transform: rotate(-45deg); }
 @media (max-width: 720px) {
-	.efs-topbar__inner { gap: .75rem; padding: 0 .75rem; }
-	.efs-topbar__nav { display: none; }
+	.efs-topbar__inner { gap: .5rem; padding: 0 .75rem; }
 	.efs-topbar__brand .efs-topbar__name { display: none; }
+	.efs-topbar__toggle { display: inline-flex; }
+	.efs-topbar__nav { position: absolute; top: 64px; left: 0; right: 0; flex: none; display: none;
+		background: #1b1464; border-bottom: 1px solid rgba(255,255,255,0.08);
+		box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+	.efs-topbar__nav.is-open { display: block; }
+	.efs-topbar__menu { flex-direction: column; gap: 0; padding: .25rem 0; }
+	.efs-topbar__menu li { padding: 0 1.25rem; }
+	.efs-topbar__menu a { display: block; padding: .7rem 0; border-bottom: none; }
+	.efs-topbar__menu .is-current > a,
+	.efs-topbar__menu .current-menu-item > a { border-bottom: none; color: #fbff12; }
+}
+
+/* ======================================================================
+   RECURSOS — carcasa con barra lateral (sidebar)
+   Portado del prototipo recursos-preview/recursos.css del encargo VPS.
+   Todo va scoped bajo body.efs-recursos para no afectar al blog general.
+   Variables locales = brand tokens (navy #1b1464, amarillo #fbff12).
+   ====================================================================== */
+body.efs-recursos {
+	--rec-navy: #1b1464; --rec-navy-deep: #06003E;
+	--rec-yellow: #fbff12; --rec-muted: #5b5b6b;
+}
+.efs-recursos .material-symbols-outlined {
+	font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal;
+	line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block;
+	white-space: nowrap; direction: ltr; font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+/* La carcasa Recursos oculta el footer de Astra: es un app-shell de altura completa */
+body.efs-recursos .site-footer,
+body.efs-recursos #colophon,
+body.efs-recursos .ast-small-footer { display: none !important; }
+/* Empuja el contenido a la derecha del sidebar (240px). El padding-top:64px ya
+   lo aplica la regla global del top bar. */
+body.efs-recursos .site { padding-left: 240px; }
+
+/* ── Sidebar ─────────────────────────────────────────────────────────── */
+.efs-sidebar {
+	position: fixed; left: 0; top: 64px; bottom: 0; width: 240px; z-index: 40;
+	background: var(--rec-navy); display: flex; flex-direction: column;
+	padding: 12px 12px 16px; overflow-y: auto;
+	font-family: var(--efs-font-body, 'Poppins', sans-serif);
+}
+.efs-sidebar__nav { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.efs-sidebar__section {
+	font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+	color: rgba(255,255,255,.30); padding: 8px 12px 4px;
+}
+.efs-sidebar__link {
+	display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 8px;
+	color: rgba(255,255,255,.70); text-decoration: none; font-size: 14px; font-weight: 500;
+}
+.efs-sidebar__link:hover { background: rgba(255,255,255,.10); color: #fff; }
+.efs-sidebar__link.is-active { background: var(--rec-yellow); color: var(--rec-navy); font-weight: 700; }
+.efs-sidebar__link.is-active .material-symbols-outlined { color: var(--rec-navy); }
+.efs-sidebar__link .material-symbols-outlined { font-size: 20px; }
+.efs-sidebar__bottom { border-top: 1px solid rgba(255,255,255,.10); padding-top: 8px; margin-top: 8px; }
+
+/* ── Main de Recursos ────────────────────────────────────────────────── */
+.efs-recursos-main { max-width: 1100px; margin: 0 auto; padding: 32px 32px 64px; }
+.efs-recursos-main .page-head { margin-bottom: 28px; }
+.efs-recursos-main .page-head h1 {
+	font-size: 32px; font-weight: 800; color: var(--rec-navy-deep); letter-spacing: -.02em; margin: 0 0 6px;
+}
+.efs-recursos-main .page-head p { margin: 0; color: var(--rec-muted); font-size: 15px; max-width: 680px; }
+.efs-recursos-main .section-title {
+	font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+	color: var(--rec-navy); margin: 8px 0 16px; display: flex; align-items: center; gap: 8px;
+}
+
+/* ── Tarjetas de artículo ────────────────────────────────────────────── */
+.efs-recursos-main .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.efs-recursos-main .card {
+	background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 22px rgba(6,0,62,.07);
+	display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s; border: 1px solid #eceef5;
+}
+.efs-recursos-main .card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(6,0,62,.13); }
+.efs-recursos-main .card__media { height: 140px; display: flex; align-items: flex-end; padding: 14px; position: relative; }
+.efs-recursos-main .card__media .material-symbols-outlined {
+	font-size: 44px; color: rgba(255,255,255,.92); position: absolute; top: 14px; right: 16px;
+}
+.efs-recursos-main .ka1 .card__media { background: linear-gradient(135deg, #1b1464, #3a2fa8); }
+.efs-recursos-main .ka2 .card__media { background: linear-gradient(135deg, #06003E, #1b6fae); }
+.efs-recursos-main .ka3 .card__media { background: linear-gradient(135deg, #2a1b6e, #b03a8a); }
+.efs-recursos-main .tag {
+	background: var(--rec-yellow); color: var(--rec-navy); font-weight: 700; font-size: 11px;
+	letter-spacing: .05em; padding: 3px 9px; border-radius: 999px;
+}
+.efs-recursos-main .card__body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+.efs-recursos-main .card__cat {
+	font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+	color: var(--rec-muted); margin-bottom: 6px;
+}
+.efs-recursos-main .card__title { font-size: 17px; font-weight: 700; color: var(--rec-navy-deep); line-height: 1.3; margin: 0 0 8px; }
+.efs-recursos-main .card__title a { color: inherit; text-decoration: none; }
+.efs-recursos-main .card__title a:hover { color: var(--rec-navy); }
+.efs-recursos-main .card__excerpt { font-size: 14px; color: #444; line-height: 1.55; margin: 0 0 14px; flex: 1; }
+.efs-recursos-main .card__meta { font-size: 12px; color: var(--rec-muted); display: flex; align-items: center; gap: 6px; margin-bottom: 12px; }
+.efs-recursos-main .card__more {
+	align-self: flex-start; font-size: 13px; font-weight: 700; color: var(--rec-navy);
+	text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+}
+.efs-recursos-main .card__more:hover { gap: 8px; }
+
+/* ── Artículo (detalle) ──────────────────────────────────────────────── */
+.efs-recursos-main .article {
+	background: #fff; border-radius: 16px; box-shadow: 0 6px 22px rgba(6,0,62,.07);
+	overflow: hidden; border: 1px solid #eceef5; max-width: 760px; margin: 0 auto;
+}
+.efs-recursos-main .article__hero { height: 200px; display: flex; align-items: flex-end; padding: 22px; }
+.efs-recursos-main .article.ka1 .article__hero { background: linear-gradient(135deg, #1b1464, #3a2fa8); }
+.efs-recursos-main .article.ka2 .article__hero { background: linear-gradient(135deg, #06003E, #1b6fae); }
+.efs-recursos-main .article.ka3 .article__hero { background: linear-gradient(135deg, #2a1b6e, #b03a8a); }
+.efs-recursos-main .article__body { padding: 26px 32px 36px; }
+.efs-recursos-main .article__body h1 { font-size: 28px; font-weight: 800; color: var(--rec-navy-deep); line-height: 1.25; margin: 0 0 8px; }
+.efs-recursos-main .article__meta { font-size: 13px; color: var(--rec-muted); margin-bottom: 20px; }
+.efs-recursos-main .article__body h2 { font-size: 19px; color: var(--rec-navy); margin: 24px 0 8px; }
+.efs-recursos-main .article__body p { font-size: 15.5px; line-height: 1.7; color: #2b2b33; margin: 0 0 14px; }
+.efs-recursos-main .article__body ul, .efs-recursos-main .article__body ol { font-size: 15.5px; line-height: 1.7; color: #2b2b33; }
+.efs-recursos-main .back {
+	display: inline-flex; align-items: center; gap: 6px; color: var(--rec-navy); font-weight: 600;
+	text-decoration: none; font-size: 14px; margin-bottom: 18px;
+}
+
+/* ── Estado vacío (pestañas placeholder) ─────────────────────────────── */
+.efs-recursos-main .placeholder {
+	background: #fff; border: 1px dashed #c7cbe0; border-radius: 16px;
+	padding: 60px 24px; text-align: center; color: var(--rec-muted);
+}
+.efs-recursos-main .placeholder .material-symbols-outlined { font-size: 54px; color: #b9bed8; }
+.efs-recursos-main .placeholder h2 { color: var(--rec-navy-deep); margin: 14px 0 6px; }
+
+@media (max-width: 980px) { .efs-recursos-main .cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) {
+	body.efs-recursos .site { padding-left: 0; }
+	.efs-sidebar { display: none; }
+	.efs-recursos-main .cards { grid-template-columns: 1fr; }
 }

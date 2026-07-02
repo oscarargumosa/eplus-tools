@@ -1,0 +1,78 @@
+{
+  "source": "bdns",
+  "source_id": "899905",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AYALA/AIARA / AYUNTAMIENTO DE AYALA/AIARA",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "CONCESIÓN DE SUBVENCIONES EN MATERIA CULTURAL, DEPORTIVA Y SOCIAL, AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 38000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899905",
+  "documents": [
+    {
+      "label": "3.01 SOLICITUD DE SUBVENCION PARA ACTIVIDADES EN MATERIA CULTURAL DEPORTIVA Y SOCIAL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.araba.eus/botha/Boletines/2010/063/2010_063_03665.pdf",
+  "text_inicio": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "text_fin": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209406,
+      "titulo": "Extracto del Decreto de Alcaldía 2026-235 de fecha 17 de abril de 2026 del Ayuntamiento de Ayala por el que se aprueban las bases de la convocatoria de ayudas para la concesión de subvenciones en materia cultural, deportiva y social, año 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios</p><p>Podrá solicitar subvención: cualquier asociación sin ánimo de lucro y/o particular que esté interesada en promover o realizar programas o actividades de carácter cultural, deportivo y social que tengan por objeto el fomento de actuaciones de utilidad pública o interés social para todo el municipio de Ayala, durante este año 2026, que reúnan los requisitos fijados en las bases.</p><p>También podrán ser beneficiarios la AMPA de la Ikastola Etxaurren, y los Centros de enseñanza con sede en Ayala, siempre que persigan los mismos fines de la presente convocatoria.</p><p>También podrán acceder a la subvención para la celebración del Olentzero y Maridomingi, San Juan, Santa Águeda y la celebración de la cabalgata de Reyes las Juntas Administrativas, siempre que se ajusten a los mismos fines de la presente convocatoria.</p><p>Segundo: Objeto</p><p>Desarrollo de programas complementarios a los municipales consistentes en actividades de carácter cultural, deportivo y social que, promovidas por las y los solicitantes tengan por objeto el fomento de actuaciones de actividad pública o interés social para la población de Ayala, contribuyendo así a alcanzar los objetivos previstos por las áreas del Ayuntamiento en sus diferentes ámbitos de actuación.</p><p>Tercero: Bases Reguladoras</p><p>Se publicarán en el Boletín Oficial del Territorio Histórico de Álava y en la BNDS.</p><p>Así mismo, las bases y el modelo de solicitud normalizado están disponibles en la página web del Ayuntamiento de Ayala: www.aiarakoudala.eus.</p><p>Cuarto: Cuantía</p><p>La dotación económica de la presente convocatoria es de 38.000 €.</p><p>El importe máximo que una asociación podrá solicitar para actividades y proyectos a lo largo del año 2026 no podrá superar los 6.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes</p><p>Un mes a partir de la publicación de la presente convocatoria en el Boletín Oficial del Territorio Histórico de Álava.</p><p>Sexto: Otros datos</p><p>Se deberán presentar cumplimentados todos los anexos correspondientes a la solicitud y cuando se presente la justificación, los correspondientes a la justificación.</p><p>La justificación deberá presentarse antes del 20 de enero del 2027 (incluido).</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/049/2026_049_01171_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-04-29"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.391Z"
+}

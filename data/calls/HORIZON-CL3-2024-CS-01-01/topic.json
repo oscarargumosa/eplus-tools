@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2024-CS-01-01",
+  "ccm2Id": "45763967",
+  "callIdentifier": "HORIZON-CL3-2024-CS-01",
+  "callTitle": "",
+  "title": "Approaches and tools for security in software and hardware development and assessment",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Internet of Things, embedded/pervasive systems\",\"Hardware technology (RFID, chips, sensors, etc.)\",\"Security testing and validation\",\"Security\",\"Cybersecurity Research Domains \",\"Digital Agenda\",\"Open hardware\",\"Authentication protocols/frameworks, authorization\",\"Cryptology (Cryptography and Cryptanalysis) \",\"Artificial Intelligence\",\"Software and Hardware Security Engineering\",\"Vulnerability discovery and penetration testing\",\"Cyber security\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-CS-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.473Z"
+}

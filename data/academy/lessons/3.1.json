@@ -1,0 +1,58 @@
+{
+  "id": "3.1",
+  "code": "Part B · 3.1",
+  "module": "EACEA",
+  "moduleTitle": "Impact",
+  "bloque": "H — Impacto, difusión y sostenibilidad",
+  "title": "3.1 Impacto y ambición",
+  "subtitle": "Cómo demostrar qué cambia de verdad para personas concretas gracias a tu proyecto, a corto, medio y largo plazo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 3.1",
+    "Criterio": "Impact (20 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "El impacto es lo último que escribes, cansado, y acabas listando los resultados otra vez («produciremos una guía, haremos talleres»). Suena a repetición y el evaluador no ve qué cambia realmente.",
+    "comprender": "Que impacto no es lo que produces (resultados), sino el cambio que esos resultados provocan en personas concretas: a quién, cuánto, en qué plazo y qué hacen distinto después.",
+    "objetivo": "Saber describir los efectos esperados a corto, medio y largo plazo, identificar los grupos destinatarios y explicar con concreción cómo se benefician y qué cambia para ellos.",
+    "confusion": "Confundir resultado con beneficio. «Publicamos una guía» es un resultado; «120 docentes la usan y cambian cómo evalúan competencias» es el beneficio. El evaluador puntúa lo segundo.",
+    "importa": "Porque el Impacto (20 pts) es, de media, el apartado peor desarrollado de toda la solicitud: el que escribe concreto y verificable se separa de la mayoría y gana los puntos donde otros los pierden."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\"><b>📋 Lo que pide la sección 3.1.</b> Describe los <b>efectos esperados</b> de tu proyecto a <b>corto, medio y largo plazo</b>. ¿Quiénes son tus <b>grupos destinatarios</b>? ¿Cómo se benefician <em>concretamente</em> y <b>qué cambia para ellos</b> gracias al proyecto?</div><p>La clave de todo el apartado está en una distinción:</p><div class=\"callout callout-good\"><b>Resultado ≠ beneficio.</b> El <em>resultado</em> es lo que produces (una guía, un curso, una herramienta). El <em>beneficio</em> es lo que le pasa a una persona por usar ese resultado (sabe hacer algo nuevo, cambia una práctica, mejora su empleabilidad). El impacto vive en los beneficios.</div><p>Y los plazos no son decoración: cuentan una historia de cómo el cambio se propaga. Corto = durante el proyecto, en quienes participan. Medio = al acabar, cuando los resultados se adoptan. Largo = el cambio que perdura y se extiende más allá del consorcio.</p>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador llega a este apartado preguntándose: <b>¿quién está mejor, en qué, y cómo lo sé?</b> Si tu texto contesta a las tres, puntúas. Para conseguirlo, traduce cada efecto a la fórmula <b>quién + cuánto + qué cambia + en qué plazo</b>.</p><table class=\"cmp\"><thead><tr><th>Vago (flojo)</th><th>Concreto (puntúa)</th></tr></thead><tbody><tr><td>«El proyecto tendrá un gran impacto en la comunidad educativa.»</td><td>«120 docentes de FP de 4 países adoptarán una nueva rúbrica de evaluación de competencias verdes, beneficiando a ~2.400 alumnos en el primer año.»</td></tr><tr><td>«Mejoraremos las competencias de los participantes.»</td><td>«Los 30 jóvenes del pilotaje pasarán de no tener certificación digital a obtener una credencial reconocida, mejorando su acceso a prácticas.»</td></tr></tbody></table><p>Cómo construir una respuesta fuerte:</p><ol class=\"obj\"><li><b>Identifica grupos destinatarios concretos.</b> No «la sociedad»: docentes, jóvenes NEET, PYMES de un sector, responsables de política educativa. Cuanto más nombrado, más creíble.</li><li><b>Cuantifica.</b> Cuántas personas, en cuántos países, en qué plazo. Las cifras realistas demuestran que has pensado el alcance; las cifras infladas se notan y restan.</li><li><b>Pasa de resultado a beneficio.</b> Por cada cosa que produces, escribe la frase «…lo que permite a [grupo] hacer/cambiar [algo concreto]». Si no puedes completarla, ese resultado no genera impacto demostrable.</li><li><b>Ordena por plazos.</b> Corto (participantes durante el proyecto), medio (adopción al terminar), largo (cambio sostenido y ampliado). Que se vea progresión, no las tres cosas mezcladas.</li><li><b>Sé ambicioso pero coherente.</b> La «ambición» se valora, pero atada a tus medios: el impacto debe ser proporcional al consorcio, el presupuesto y las actividades. Prometer transformar un país entero con un proyecto pequeño resta credibilidad.</li></ol><div class=\"callout callout-key\">Regla mental: si una frase de tu impacto no nombra <b>a quién</b> beneficia y <b>qué hace distinto</b> después, es relleno. Reescríbela o bórrala.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Impacto de un proyecto de competencias digitales, ordenado por plazo y siempre del resultado al beneficio:</p><table class=\"cmp\"><thead><tr><th>Plazo</th><th>Grupo destinatario</th><th>Qué cambia para ellos (beneficio)</th></tr></thead><tbody><tr><td>Corto (durante)</td><td>40 jóvenes del pilotaje</td><td>Obtienen una credencial digital reconocida que antes no tenían</td></tr><tr><td>Medio (al acabar)</td><td>120 docentes de 4 países</td><td>Integran la metodología en sus aulas, llegando a ~2.400 alumnos/año</td></tr><tr><td>Largo (perdura)</td><td>Centros y red sectorial</td><td>La rúbrica se incorpora a la oferta formativa estable y se replica en nuevos centros</td></tr></tbody></table><p>Checklist para validar el apartado:</p><ul class=\"bullets\"><li>¿Cada efecto dice <b>a quién</b> beneficia (grupo nombrado, no «la sociedad»)?</li><li>¿He puesto <b>cifras</b> realistas (cuántos, dónde, cuándo)?</li><li>¿Cada frase pasa de <b>resultado a beneficio</b> («…lo que les permite…»)?</li><li>¿Distingo <b>corto / medio / largo</b> con progresión clara?</li><li>¿La ambición es <b>proporcional</b> a mis medios?</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Repito mis resultados como si fueran el impacto.»</b> → «Publicamos una guía» es un resultado. El impacto es lo que <em>cambia</em> en alguien por usarla. No los confundas.</li><li><span class=\"err-x\">✗</span> <b>«El impacto será en la comunidad educativa y la sociedad.»</b> → Demasiado difuso. Nombra grupos concretos y cuántas personas; lo genérico no convence.</li><li><span class=\"err-x\">✗</span> <b>«No pongo cifras para no comprometerme.»</b> → Sin cuantificación no hay forma de juzgar el alcance. Una estimación realista vale más que una promesa vaga.</li><li><span class=\"err-x\">✗</span> <b>«Mezclo todos los plazos en un párrafo.»</b> → El formulario pide corto, medio y largo. Sepáralos para mostrar cómo se propaga el cambio.</li><li><span class=\"err-x\">✗</span> <b>«Cuanto más ambicioso suene, mejor.»</b> → La ambición desconectada de tus medios resta. El impacto debe ser proporcional al consorcio y al presupuesto.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 3.1</b></td><td>El texto literal: efectos a corto/medio/largo plazo, grupos destinatarios y beneficios concretos.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Qué mira el evaluador en Impact (20 pts) y por qué premia la concreción frente a la afirmación.</td></tr><tr><td><b>kb-0090</b> Tips de redacción</td><td>Cómo pasar de resultado a beneficio, cuantificar y ordenar por plazos.</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "901836",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT PERE DE RIBES / AYUNTAMIENTO DE SANT PERE DE RIBES",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Bases reguladoras y convocatoria para la concesión de ayudas para la matrícula de Estudios Universitarios y Ciclos Formativos de Grado Superior y para los gastos de transporte de los jóvenes que están cursando enseñanzas de educación Post Obligatoria para",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "http://www.santperederibes.cat/seuelectronica ",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901836",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "EXTRACTE en CASTELLÀ_Bases i convo Sub Post Obligatoris",
+      "url": null
+    },
+    {
+      "label": "EXTRACTE en CATALÀ_Bases i convo sub Post Obligatoris",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.santperederibes.cat/municipi/educacio/beques-i-ajuts",
+  "text_inicio": "Día siguiente publicación BOPB",
+  "text_fin": "21 días naturales a contar a partir del día siguiente a la publicación del anuncio en el BOPB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.364Z"
+}

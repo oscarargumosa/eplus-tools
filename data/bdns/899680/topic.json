@@ -1,0 +1,92 @@
+{
+  "source": "bdns",
+  "source_id": "899680",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE CULTURA, LENGUA Y JUVENTUD",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "ORDEN del 7 de abril de 2026 por la que se establecen las bases reguladoras para la concesión de subvenciones para la edición en lengua gallega de recursos didácticos curriculares para niveles no universitarios, y se procede a su convocatoria para el 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-17",
+  "open_date": "2026-04-23",
+  "deadline": "2026-05-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "http://sede.xunta.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899680",
+  "documents": [
+    {
+      "label": "Anexo IV galego",
+      "url": null
+    },
+    {
+      "label": "Anexo III galego",
+      "url": null
+    },
+    {
+      "label": "Anexo I galego",
+      "url": null
+    },
+    {
+      "label": "Anexo III castellano",
+      "url": null
+    },
+    {
+      "label": "Anexo IV castellano",
+      "url": null
+    },
+    {
+      "label": "Anexo I castellano",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?fecha=20260417&ruta=Indice71_es.html&lang=es",
+  "text_inicio": "Al día siguiente de su publicación en el DOG",
+  "text_fin": "Un mes desde su publicación en el DOG",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.220Z"
+}

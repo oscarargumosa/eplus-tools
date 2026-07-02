@@ -1,0 +1,58 @@
+{
+  "id": "3.3",
+  "code": "Part B · 3.3",
+  "module": "EACEA",
+  "moduleTitle": "Impact",
+  "bloque": "H — Impacto, difusión y sostenibilidad",
+  "title": "3.3 Sostenibilidad y continuidad",
+  "subtitle": "Cómo demostrar que el impacto de tu proyecto no muere el día que se acaba la financiación: qué se mantiene, quién lo sostiene y con qué recursos.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 3.3",
+    "Criterio": "Impact (20 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "La sostenibilidad se despacha con una frase de buenas intenciones («el proyecto continuará tras su finalización»). Suena a deseo y el evaluador no se lo cree.",
+    "comprender": "Que sostenibilidad es un plan concreto: qué resultado sigue vivo después, quién se hace cargo, con qué recursos se mantiene y cómo se seguirá usando en el futuro.",
+    "objetivo": "Saber describir el seguimiento tras el fin de la financiación: qué se continúa o mantiene, cómo se sostiene el impacto, qué recursos hacen falta y cómo se usarán los resultados a futuro.",
+    "confusion": "Creer que sostenibilidad = «pediremos más fondos europeos». Eso es depender de otra subvención, no sostener. Sostener es que algo siga funcionando con recursos propios o un modelo viable.",
+    "importa": "Porque es parte de Impact (20 pts) y distingue un proyecto que deja huella de uno que se evapora. El evaluador premia que el impacto sobreviva al dinero; sin plan creíble, baja la nota."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<div class=\"callout callout-key\"><b>📋 Lo que pide la sección 3.3.</b> Describe cómo asegurarás el <b>seguimiento tras el fin de la financiación</b>: ¿cómo se <b>sostiene el impacto</b> cuando ya no hay dinero del proyecto? ¿qué resultados se <b>continúan o mantienen</b>? ¿qué <b>recursos</b> hacen falta para mantenerlos? ¿cómo se <b>usarán los resultados a futuro</b>?</div><p>El núcleo del apartado es responder a una pregunta incómoda con honestidad y plan:</p><div class=\"callout callout-good\"><b>El día después de la última transferencia, ¿qué sigue vivo y gracias a quién?</b> Si tu respuesta es «esperamos que…» o «buscaremos más fondos», no hay sostenibilidad: hay dependencia. Sostener es tener un mecanismo que no necesite que la UE vuelva a pagar.</div><p>No todo tiene que sobrevivir: lo realista es identificar <b>qué resultado concreto</b> merece y puede mantenerse, y diseñar cómo.</p>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>El evaluador busca un plan, no una promesa. Para puntuar, responde a cuatro preguntas con concreción: <b>qué</b> se mantiene, <b>quién</b> lo asume, <b>con qué recursos</b> y <b>cómo se usa después</b>.</p><table class=\"cmp\"><thead><tr><th>Promesa (flojo)</th><th>Plan (puntúa)</th></tr></thead><tbody><tr><td>«El proyecto continuará tras su finalización.»</td><td>«La plataforma de formación quedará alojada en la universidad socia, que asume su mantenimiento dentro de su oferta de FP continua, con un responsable designado.»</td></tr><tr><td>«Buscaremos financiación adicional.»</td><td>«Los talleres se integran en el catálogo de pago de la entidad X (modelo de ingresos propio); el material formativo se publica con licencia abierta para uso libre.»</td></tr></tbody></table><p>Cómo construir una respuesta sólida:</p><ol class=\"obj\"><li><b>Distingue los tres tipos de sostenibilidad.</b> Suele valorarse: <em>institucional</em> (un socio integra el resultado en su actividad estable), <em>financiera</em> (hay recursos o un modelo para mantenerlo) y <em>de impacto</em> (el cambio en las personas perdura). Cubre las que apliquen.</li><li><b>Nombra al responsable.</b> Quién, en concreto, se hace cargo de cada resultado después. Sin dueño, nada sobrevive.</li><li><b>Sé realista con los recursos.</b> ¿Qué cuesta mantenerlo y de dónde sale? Reconocer que algo no se mantiene es más creíble que prometer que todo sigue mágicamente.</li><li><b>Explica el uso futuro.</b> Cómo se reutilizan los resultados: licencia abierta para que otros los adopten, integración en oferta formativa, transferencia a nuevos contextos o territorios.</li><li><b>No confundas continuar con repetir subvención.</b> «Pediremos otro Erasmus+» no es sostenibilidad; es depender de otro fondo. Demuestra autonomía o un modelo viable.</li></ol><div class=\"callout callout-key\">Prueba de fuego: tacha mentalmente la frase «buscaremos más financiación». Si lo que queda en tu apartado sigue en pie por sí solo, tienes sostenibilidad. Si se cae todo, te falta plan.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Plan de sostenibilidad por resultado, con responsable y recursos:</p><table class=\"cmp\"><thead><tr><th>Resultado</th><th>Qué se mantiene · quién</th><th>Recurso / modelo</th></tr></thead><tbody><tr><td>Plataforma formativa</td><td>Alojada y mantenida por la universidad socia</td><td>Integrada en su oferta de FP continua (recurso propio)</td></tr><tr><td>Guía metodológica</td><td>Publicada con licencia abierta (Creative Commons)</td><td>Uso y replicación libres, sin coste de mantenimiento</td></tr><tr><td>Programa de talleres</td><td>Incorporado al catálogo de la entidad formadora</td><td>Modelo de ingresos propio (talleres de pago)</td></tr><tr><td>Red de centros</td><td>Continúa como comunidad de práctica</td><td>Coordinación rotatoria, sin estructura costosa</td></tr></tbody></table><p>Checklist antes de cerrar el apartado:</p><ul class=\"bullets\"><li>¿Para cada resultado clave digo <b>qué se mantiene</b> y <b>quién</b> lo asume?</li><li>¿Identifico los <b>recursos</b> reales para mantenerlo?</li><li>¿Cubro sostenibilidad <b>institucional, financiera y de impacto</b> donde aplica?</li><li>¿Explico el <b>uso futuro</b> (licencia abierta, integración, replicación)?</li><li>¿Evito apoyarme solo en «pediremos más fondos»?</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El proyecto continuará tras su finalización.»</b> → Es un deseo, no un plan. Di qué resultado concreto, quién lo asume y con qué recursos.</li><li><span class=\"err-x\">✗</span> <b>«Solicitaremos más financiación europea para continuar.»</b> → Eso es depender de otra subvención, no sostener. Demuestra autonomía o un modelo viable propio.</li><li><span class=\"err-x\">✗</span> <b>«Todo el proyecto seguirá funcionando igual.»</b> → Poco creíble. Es más fuerte identificar qué merece mantenerse y reconocer qué no, que prometer que todo sobrevive.</li><li><span class=\"err-x\">✗</span> <b>«Los resultados quedarán disponibles.»</b> → ¿Dónde, con qué licencia, mantenidos por quién? «Disponibles» sin dueño ni recurso no es sostenibilidad.</li><li><span class=\"err-x\">✗</span> <b>«Confundo sostenibilidad con difusión.»</b> → Difundir es dar a conocer (3.2); sostener es que el impacto perdure tras la financiación (3.3). Son apartados distintos.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · sección 3.3</b></td><td>El texto literal: seguimiento tras la financiación, qué se mantiene, recursos y uso futuro de los resultados.</td></tr><tr><td><b>kb-0095</b> Rúbrica de evaluación</td><td>Qué valora el evaluador en Impact (20 pts) respecto a sostenibilidad institucional, financiera y de impacto.</td></tr><tr><td><b>kb-0090</b> Tips de redacción</td><td>Cómo convertir promesas en planes: responsable, recursos y modelo de continuidad.</td></tr></tbody></table>"
+    }
+  ]
+}

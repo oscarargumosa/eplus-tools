@@ -1,0 +1,207 @@
+{
+  "id": 1101670,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE BARCELONA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/barcelona",
+  "codigoBDNS": "900109",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 250000,
+  "mrr": false,
+  "descripcion": "Ayudas a la contratación Talento Joven Cámara de Comercio de Barcelona 2026",
+  "descripcionLeng": "Ajudes a la contractació Talent Jove Cambra de Comerç de Barcelona 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Ayudas a la contratación Talento Joven Cámara de Comercio de Barcelona 2026",
+  "urlBasesReguladoras": "https://cambrabcn.org/es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-04-24",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "A las 12:00",
+  "textFin": "A las 12:00 de 31.12.2026 o hasta agotar el presupuesto consignado en la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438918,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Anexo_21_Talento_Joven_Convocatoria_Ayudas_ccb_v1.pdf",
+      "long": 3708525,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438920,
+      "descripcion": "2026_Anexo_II_Declaracion_Responsable_Minimis_Fase_Solicitud CCB",
+      "nombreFic": "2026_Anexo_II_Declaracion_Responsable_Minimis_Fase_Solicitud CCB.docx",
+      "long": 75084,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438921,
+      "descripcion": "2026_Anexo_III_Relación_Personas_Contratadas CCB",
+      "nombreFic": "2026_Anexo_III_Relación_Personas_Contratadas CCB.docx",
+      "long": 461529,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438937,
+      "descripcion": "2026_Anexo_XII_Declaración_Fijos_Discontinuos CCB",
+      "nombreFic": "2026_Anexo_XII_Declaración_Fijos_Discontinuos CCB.docx",
+      "long": 74258,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438923,
+      "descripcion": "2026_Anexo_V_Resumen_Documentación_Justificación CCB",
+      "nombreFic": "2026_Anexo_V_Resumen_Documentación_Justificación CCB.docx",
+      "long": 73646,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438934,
+      "descripcion": "2026_Anexo_VI_Declaración_Responsable_Minimis_Fase_Justificación CCB",
+      "nombreFic": "2026_Anexo_VI_Declaración_Responsable_Minimis_Fase_Justificación CCB.docx",
+      "long": 77883,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438935,
+      "descripcion": "2026_Anexo_VII_Declaraciones_CB_SC CCB",
+      "nombreFic": "2026_Anexo_VII_Declaraciones_CB_SC CCB.docx",
+      "long": 64466,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1438922,
+      "descripcion": "2026_Anexo_IV_Declaracion_Responsable_Trabajador CCB",
+      "nombreFic": "2026_Anexo_IV_Declaracion_Responsable_Trabajador CCB.docx",
+      "long": 71557,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

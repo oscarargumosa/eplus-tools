@@ -395,10 +395,11 @@ const Entities = (() => {
         </div>
 
         <div class="space-y-1.5">
-          ${scoreBar('Profesionalidad', o.score_professionalism)}
-          ${scoreBar('Listo para EU',   o.score_eu_readiness)}
-          ${scoreBar('Vitalidad web',   o.score_vitality)}
+          ${scoreBar('Personal',    o.score_personal,    { max: 10 })}
+          ${scoreBar('Experiencia', o.score_experience,  { max: 10 })}
+          ${scoreBar('Alianzas',    o.score_alliances,   { max: 10 })}
         </div>
+        ${o.is_newcomer ? `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-primary bg-secondary-fixed px-2 py-0.5 rounded-full mt-1"><span class="material-symbols-outlined text-[12px]">auto_awesome</span>Newcomer</span>` : ''}
 
         ${cms ? `<div class="flex items-center gap-1.5 text-[10px] text-on-surface-variant/60 -mt-1">
           <span class="material-symbols-outlined text-[12px]">code</span>
@@ -409,18 +410,19 @@ const Entities = (() => {
   }
 
   /* ── Barra horizontal etiquetada (sustituye los donuts P/E/V) ─ */
-  function scoreBar(label, value) {
-    const v = (value == null ? 0 : Math.max(0, Math.min(100, value)));
-    const fillColor = v >= 70 ? '#fbff12' : v >= 40 ? '#fbff12' : '#c7afdf';
-    const opacity   = v >= 70 ? '1' : v >= 40 ? '0.65' : '0.55';
+  function scoreBar(label, value, opts = {}) {
+    const max = opts.max || 100;
+    const v = (value == null ? 0 : Math.max(0, Math.min(max, value)));
+    const pct = max > 0 ? (v / max) * 100 : 0;
+    const display = max === 10 ? `${v}/10` : `${v}`;
     return `
       <div class="grid grid-cols-[1fr_auto] gap-x-2 items-center">
         <div class="flex items-center justify-between text-[11px]">
           <span class="font-medium text-on-surface-variant">${esc(label)}</span>
-          <span class="font-bold text-primary tabular-nums">${v}</span>
+          <span class="font-bold text-primary tabular-nums">${display}</span>
         </div>
         <span class="col-span-2 block h-1.5 bg-surface-container rounded-full overflow-hidden">
-          <span class="block h-full rounded-full transition-all" style="width:${v}%; background:${fillColor}; opacity:${opacity}"></span>
+          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#1b1464"></span>
         </span>
       </div>
     `;
@@ -472,6 +474,10 @@ const Entities = (() => {
 
   /* ── Ficha overlay (S3 rellena contenido) ────────────────────── */
   async function openFicha(oid) {
+    // Muro de login: el invitado explora el Directorio/Atlas, pero abrir
+    // la ficha de una organización exige cuenta (lead-gen).
+    if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'la ficha de esta organización' })) return;
+    if (typeof Track !== 'undefined') Track.event('entity_opened', { route: 'organizations', ref_id: oid });
     const overlay = document.getElementById('entity-ficha-overlay');
     const content = document.getElementById('entity-ficha-content');
     if (!overlay || !content) return;
@@ -508,6 +514,10 @@ const Entities = (() => {
     `;
     try {
       const entity = await API.get(`/entities/${encodeURIComponent(oid)}`);
+      // Identificador con el que se resolvió la ficha. Algunas entidades del
+      // directorio traen `oid` vacío (el OID quedó en `pic`); usamos este id
+      // —el que funcionó para abrir— en las sub-cargas (proyectos, similares).
+      entity._fichaId = oid;
       // Render real ficha (función definida abajo, será sobreescrita en S3 polish)
       content.innerHTML = renderFicha(entity);
       bindFichaEvents(entity);
@@ -524,6 +534,7 @@ const Entities = (() => {
 
   /* ── Render ficha completa (S3) ──────────────────────────────── */
   function renderFicha(o) {
+    const fid = o._fichaId || o.oid || o.pic || '';
     const logo = o.logo_url
       ? `<img src="${esc(o.logo_url)}" alt="" referrerpolicy="no-referrer"
            class="w-20 h-20 rounded-2xl object-contain bg-white border border-outline-variant/30 shrink-0"
@@ -543,7 +554,7 @@ const Entities = (() => {
           <span class="material-symbols-outlined">close</span>
         </button>
         <div class="flex-1 truncate text-xs text-on-surface-variant font-medium">
-          OID <span class="font-mono text-primary">${esc(o.oid)}</span>
+          ${o.oid ? 'OID' : 'ID'} <span class="font-mono text-primary">${esc(o.oid || o.pic || '—')}</span>
         </div>
         ${o.website ? `
           <a href="${esc(o.website)}" target="_blank" rel="noopener noreferrer"
@@ -574,6 +585,12 @@ const Entities = (() => {
               ${o.has_erasmus_accreditation ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">workspace_premium</span> Erasmus+ accredited</span>` : ''}
               ${o.validity_label === 'certified' ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-blue-100 text-blue-700">${esc(o.validity_label)}</span>` : ''}
             </div>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-[11px]">
+              ${idChip('OID', o.oid)}
+              ${idChip('PIC', o.pic)}
+              ${idChip('CIF/NIF', o.local_registry && o.local_registry.national_id)}
+              ${o.website ? `<a href="${esc(o.website)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-semibold text-primary hover:underline"><span class="material-symbols-outlined text-[14px]">language</span>${esc(String(o.website).replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a>` : ''}
+            </div>
           </div>
         </div>
       </div>
@@ -581,7 +598,7 @@ const Entities = (() => {
       <!-- Bloque scores con donuts ApexCharts -->
       <section class="px-6 lg:px-8 pb-6">
         <div class="bg-surface-container-low rounded-2xl p-5">
-          <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant mb-4">Scores de calidad</h3>
+          <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant mb-4">Personal · Experiencia · Alianzas</h3>
           <div class="grid grid-cols-3 gap-4">
             <div id="ficha-donut-prof" class="ficha-donut-wrap"></div>
             <div id="ficha-donut-eu"   class="ficha-donut-wrap"></div>
@@ -617,12 +634,35 @@ const Entities = (() => {
         </div>
       </section>
 
-      <!-- EU Programs -->
-      ${o.eu_programs && Object.keys(o.eu_programs).length ? `
+      <!-- Proyectos ejecutados -->
+      ${(Array.isArray(o.recent_projects) && o.recent_projects.length) || o.total_projects ? `
         <section class="px-6 lg:px-8 pb-6">
-          <div class="bg-accent-warm/30 rounded-2xl p-5">
-            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-primary mb-3">Programas EU</h3>
-            <pre class="text-xs text-primary/80 whitespace-pre-wrap">${esc(JSON.stringify(o.eu_programs, null, 2))}</pre>
+          <div class="flex items-end justify-between mb-3">
+            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant">Proyectos ejecutados</h3>
+            <span class="text-[11px] text-on-surface-variant">${o.total_projects ? `${formatNumber(o.total_projects)} en total` : ''}</span>
+          </div>
+          <div id="ficha-proj-stats" class="mb-4"></div>
+          <div id="ficha-proj-list">
+            ${Array.isArray(o.recent_projects) && o.recent_projects.length ? `
+            <div class="text-[11px] font-semibold text-on-surface-variant mb-2">Algunos ejemplos</div>
+            <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden">
+              ${o.recent_projects.slice(0, 6).map(p => renderProjectRow(p)).join('')}
+            </ul>` : ''}
+          </div>
+        </section>` : ''}
+
+      <!-- Registro: representantes · acreditaciones · stakeholders -->
+      ${renderRegistrySection(o)}
+
+      <!-- Socios habituales -->
+      ${Array.isArray(o.top_copartners) && o.top_copartners.length ? `
+        <section class="px-6 lg:px-8 pb-6">
+          <div class="flex items-end justify-between mb-3">
+            <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant">Socios habituales</h3>
+            <span class="text-[11px] text-on-surface-variant">${o.top_copartners.length} top copartners</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            ${o.top_copartners.map(c => renderCopartnerCard(c)).join('')}
           </div>
         </section>` : ''}
 
@@ -636,12 +676,12 @@ const Entities = (() => {
 
       <!-- CTAs sticky bottom -->
       <div class="sticky bottom-0 bg-white border-t border-outline-variant/30 px-6 py-3 flex items-center gap-2">
-        <button type="button" data-action="shortlist" data-oid="${esc(o.oid)}"
+        <button type="button" data-action="shortlist" data-oid="${esc(fid)}"
           class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed px-4 py-2 rounded-lg hover:bg-secondary-fixed-dim transition-colors">
           <span class="material-symbols-outlined text-[18px]">favorite_border</span>
           Añadir a shortlist
         </button>
-        <button type="button" data-action="contact" data-oid="${esc(o.oid)}"
+        <button type="button" data-action="contact" data-oid="${esc(fid)}"
           class="inline-flex items-center gap-1.5 text-sm font-semibold text-on-surface-variant border border-outline-variant/40 px-4 py-2 rounded-lg hover:border-primary hover:text-primary transition-colors">
           <span class="material-symbols-outlined text-[18px]">mail</span>
           Plantilla de contacto
@@ -653,6 +693,273 @@ const Entities = (() => {
   function row(label, value) {
     if (value == null || value === '') return '';
     return `<div class="flex gap-3"><dt class="text-on-surface-variant w-24 shrink-0">${esc(label)}</dt><dd class="font-medium text-on-surface flex-1 break-words">${esc(value)}</dd></div>`;
+  }
+
+  /* ── Identificadores del hero ─────────────────────────────────── */
+  function idChip(label, value) {
+    if (value == null || value === '') return '';
+    return `<span class="inline-flex items-center"><span class="text-on-surface-variant/55 font-bold uppercase tracking-wider mr-1">${esc(label)}</span><span class="font-mono text-primary">${esc(value)}</span></span>`;
+  }
+
+  /* ── Sección Registro: representantes · acreditaciones · stakeholders
+     Datos del registro local de la org (solo orgs reclamadas, is_public).
+     Personas: solo existencia, nunca el dato personal. ───────────── */
+  function regNoData(text) {
+    return `<p class="text-sm text-on-surface-variant italic">${esc(text)}</p>`;
+  }
+  function regAvail(label, ok) {
+    return `<li class="flex items-center gap-2 text-sm">
+      <span class="material-symbols-outlined text-[18px] ${ok ? 'text-emerald-600' : 'text-on-surface-variant/40'}">${ok ? 'check_circle' : 'remove'}</span>
+      <span class="${ok ? 'text-on-surface' : 'text-on-surface-variant/60'}">${esc(label)}</span>
+      <span class="ml-auto text-[10px] font-bold uppercase tracking-wider ${ok ? 'text-emerald-600' : 'text-on-surface-variant/40'}">${ok ? 'Dato disponible' : 'No disponible'}</span>
+    </li>`;
+  }
+  function renderRegistrySection(o) {
+    const lr = o.local_registry || { claimed: false };
+
+    const repBody = !lr.claimed
+      ? regNoData('No se dispone de la data: la entidad aún no ha registrado su organización en la plataforma.')
+      : `<ul class="space-y-2">
+          ${regAvail('Representante legal', !!lr.has_legal_rep)}
+          ${regAvail('Persona de contacto', !!lr.has_contact_person)}
+          ${lr.key_staff_count ? `<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-[18px] text-emerald-600">groups</span><span class="text-on-surface">Personal clave</span><span class="ml-auto text-[10px] font-bold uppercase tracking-wider text-emerald-600">${lr.key_staff_count} registrado${lr.key_staff_count === 1 ? '' : 's'}</span></li>` : ''}
+        </ul>
+        <p class="text-[11px] text-on-surface-variant/60 mt-3">Por privacidad solo indicamos qué datos existen, sin mostrar información personal.</p>`;
+
+    let accBody;
+    if (lr.claimed && lr.accreditations && lr.accreditations.length) {
+      accBody = `<ul class="space-y-2">${lr.accreditations.map(a => `
+        <li class="flex items-start gap-2">
+          <span class="material-symbols-outlined text-[18px] text-emerald-600 mt-0.5">workspace_premium</span>
+          <div>
+            <div class="text-sm font-semibold text-on-surface">${esc(a.type || 'Acreditación')}</div>
+            ${a.reference ? `<div class="text-[12px] font-mono text-on-surface-variant">${esc(a.reference)}</div>` : '<div class="text-[11px] italic text-on-surface-variant/60">código desconocido</div>'}
+          </div>
+        </li>`).join('')}</ul>`;
+    } else if (o.has_erasmus_accreditation) {
+      accBody = `<div class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px]">workspace_premium</span>Acreditación Erasmus+</div>${lr.claimed ? '' : '<p class="text-[11px] text-on-surface-variant/60 mt-2">Código no disponible (entidad sin registro en la plataforma).</p>'}`;
+    } else {
+      accBody = regNoData(lr.claimed ? 'No tiene acreditaciones registradas.' : 'Dato desconocido.');
+    }
+
+    let stkBody;
+    if (!lr.claimed) {
+      stkBody = regNoData('No se dispone de la data.');
+    } else if (!lr.stakeholders_count) {
+      stkBody = regNoData('No tiene stakeholders registrados.');
+    } else {
+      const sample = lr.stakeholders_sample || [];
+      stkBody = `
+        <div class="flex items-baseline gap-2 mb-2">
+          <span class="text-2xl font-extrabold text-primary">${lr.stakeholders_count}</span>
+          <span class="text-[12px] font-semibold text-on-surface-variant">stakeholder${lr.stakeholders_count === 1 ? '' : 's'} declarado${lr.stakeholders_count === 1 ? '' : 's'}</span>
+        </div>
+        <ul class="space-y-1.5">${sample.map(s => `
+          <li class="flex items-center gap-2 text-sm">
+            <span class="material-symbols-outlined text-[16px] text-primary/60">hub</span>
+            <span class="text-on-surface font-medium truncate">${esc(s.name)}</span>
+            ${s.relationship ? `<span class="ml-auto text-[10px] font-bold uppercase tracking-wider text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded shrink-0">${esc(s.relationship)}</span>` : ''}
+          </li>`).join('')}</ul>
+        ${lr.stakeholders_count > sample.length ? `<p class="text-[11px] text-on-surface-variant/60 mt-2">+${lr.stakeholders_count - sample.length} más</p>` : ''}`;
+    }
+
+    const card = (title, icon, body) => `
+      <div class="bg-white rounded-2xl border border-outline-variant/25 p-5">
+        <h3 class="text-[11px] font-bold uppercase tracking-[.2em] text-on-surface-variant mb-3 flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">${icon}</span>${esc(title)}</h3>
+        ${body}
+      </div>`;
+
+    return `
+      <section class="px-6 lg:px-8 pb-6 grid lg:grid-cols-2 gap-4">
+        ${card('Representantes', 'badge', repBody)}
+        ${card('Acreditaciones', 'verified', accBody)}
+        <div class="lg:col-span-2">${card('Stakeholders', 'diversity_3', stkBody)}</div>
+      </section>`;
+  }
+
+  /* ── Estadística de proyectos (mismo cálculo que Mi Organización) ── */
+  const FICHA_FAMILY_META = {
+    KA1:   { label: 'KA1 · Movilidad',      color: '#2563eb', icon: 'flight_takeoff' },
+    KA2:   { label: 'KA2 · Cooperación',    color: '#7c3aed', icon: 'handshake' },
+    KA3:   { label: 'KA3 · Apoyo político', color: '#0d9488', icon: 'policy' },
+    CB:    { label: 'Capacity Building',    color: '#059669', icon: 'public' },
+    Sport: { label: 'Deporte',              color: '#ea580c', icon: 'sports_soccer' },
+    ESC:   { label: 'Cuerpo Solidaridad',   color: '#e11d48', icon: 'volunteer_activism' },
+    JM:    { label: 'Jean Monnet',          color: '#4f46e5', icon: 'school' },
+    Otros: { label: 'Otros',                color: '#6b7280', icon: 'category' },
+  };
+  const FICHA_FAMILY_ORDER = ['KA1', 'KA2', 'KA3', 'CB', 'Sport', 'ESC', 'JM', 'Otros'];
+
+  function fichaProjectFamily(p) {
+    const id = String(p.project_identifier || '');
+    const at = String(p.action_type || '');
+    const m = id.match(/KA(\d)\d{2}/i) || at.match(/KA(\d)\d{2}/i);
+    if (m) return 'KA' + m[1];
+    if (/capacity building/i.test(at))                   return 'CB';
+    if (/sport/i.test(at))                                return 'Sport';
+    if (/jean monnet/i.test(at))                          return 'JM';
+    if (/youth together|policy|peer learning/i.test(at))  return 'KA3';
+    if (/solidarity|^ESC/i.test(at) || /^ESC/i.test(id))  return 'ESC';
+    return 'Otros';
+  }
+
+  function renderFichaProjStats(projects) {
+    const fams = {};
+    let totalAmount = 0, coordAmount = 0, coordCount = 0;
+    for (const p of projects) {
+      const fam = fichaProjectFamily(p);
+      const amt = Number(p.eu_grant_eur) || 0;
+      if (!fams[fam]) fams[fam] = { count: 0, amount: 0 };
+      fams[fam].count += 1;
+      fams[fam].amount += amt;
+      totalAmount += amt;
+      if (String(p.role || '').toLowerCase() === 'coordinator') { coordAmount += amt; coordCount += 1; }
+    }
+    const totalCount = projects.length;
+    const partnerAmount = totalAmount - coordAmount;
+    const partnerCount  = totalCount - coordCount;
+    const present = FICHA_FAMILY_ORDER.filter(k => fams[k]);
+    const money = (n) => (n > 0 ? formatNumber(Math.round(n)) + ' €' : null);
+
+    const segments = present.map(k => {
+      const pct = (fams[k].count / totalCount) * 100;
+      const m = FICHA_FAMILY_META[k];
+      return `<div title="${esc(m.label)}: ${fams[k].count}" style="width:${pct}%;background:${m.color}"></div>`;
+    }).join('');
+
+    const maxCount = Math.max(...present.map(k => fams[k].count));
+    const cards = present.map(k => {
+      const m = FICHA_FAMILY_META[k];
+      const f = fams[k];
+      const mny = money(f.amount);
+      const barPct = maxCount ? (f.count / maxCount) * 100 : 0;
+      return `
+        <div class="bg-white rounded-xl border border-outline-variant/30 p-3 flex flex-col">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="material-symbols-outlined text-[18px]" style="color:${m.color}">${m.icon}</span>
+            <span class="text-[11px] font-bold text-on-surface leading-tight">${esc(m.label)}</span>
+          </div>
+          <div class="flex items-baseline gap-1">
+            <span class="text-2xl font-extrabold text-primary">${f.count}</span>
+            <span class="text-[11px] font-semibold text-on-surface-variant">proyecto${f.count === 1 ? '' : 's'}</span>
+          </div>
+          <div class="text-[12px] font-semibold ${mny ? 'text-on-surface-variant' : 'text-on-surface-variant/40'}">${mny || '—'}</div>
+          <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full" style="width:${barPct}%;background:${m.color}"></div></div>
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#1b1464,#2d1f8f)">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Experiencia Erasmus+</div>
+            <div class="text-3xl font-extrabold leading-none mt-1">${totalCount} <span class="text-base font-semibold text-white/70">proyectos</span></div>
+          </div>
+          <div class="text-right">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Financiación total movilizada</div>
+            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#fbff12">${money(totalAmount) || '0 €'}</div>
+          </div>
+        </div>
+        <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px]" style="color:#fbff12">military_tech</span> Fondos gestionados como coordinador</div>
+            <div class="text-xl font-extrabold leading-tight mt-1">${money(coordAmount) || '0 €'}</div>
+            <div class="text-[11px] text-white/60">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
+          </div>
+          <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px] text-white/80">handshake</span> Fondos como socio en consorcios</div>
+            <div class="text-xl font-extrabold leading-tight mt-1">${money(partnerAmount) || '0 €'}</div>
+            <div class="text-[11px] text-white/60">${partnerCount} proyecto${partnerCount === 1 ? '' : 's'} como socio</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-3">${cards}</div>`;
+  }
+
+  async function loadProjectStats(oid) {
+    const host = document.getElementById('ficha-proj-stats');
+    if (!host || !oid) return;
+    try {
+      // El directorio limita a 200 proyectos por llamada; paginamos para
+      // que las entidades con muchos proyectos (p.ej. 343) salgan completas.
+      const PAGE = 200;
+      const all = [];
+      let offset = 0;
+      while (offset < 4000) {
+        const res = await API.get(`/entities/${encodeURIComponent(oid)}/projects?limit=${PAGE}&offset=${offset}`);
+        const batch = (res && res.projects) || [];
+        all.push(...batch);
+        if (batch.length < PAGE) break;
+        offset += batch.length;
+      }
+      if (!all.length) { host.innerHTML = ''; return; }
+      host.innerHTML = renderFichaProjStats(all);
+      const listHost = document.getElementById('ficha-proj-list');
+      if (listHost) listHost.innerHTML = renderFichaProjList(all);
+    } catch (e) {
+      host.innerHTML = '';
+    }
+  }
+
+  /* ── Lista completa de proyectos de la entidad (todos, no solo ejemplos) ── */
+  function renderFichaProjList(projects) {
+    const sorted = [...projects].sort((a, b) => {
+      const ya = a.funding_year || (a.start_date ? new Date(a.start_date).getFullYear() : 0);
+      const yb = b.funding_year || (b.start_date ? new Date(b.start_date).getFullYear() : 0);
+      if (yb !== ya) return yb - ya;
+      return (Number(b.eu_grant_eur) || 0) - (Number(a.eu_grant_eur) || 0);
+    });
+    return `
+      <div class="text-[11px] font-semibold text-on-surface-variant mb-2">Todos los proyectos (${projects.length})</div>
+      <ul class="divide-y divide-outline-variant/30 bg-white rounded-2xl border border-outline-variant/25 overflow-hidden max-h-[440px] overflow-y-auto">
+        ${sorted.map(p => renderProjectRow(p)).join('')}
+      </ul>`;
+  }
+  function renderProjectRow(p) {
+    const title = p.project_title || p.title || p.project_identifier || '(sin título)';
+    const year = p.funding_year || (p.start_date ? new Date(p.start_date).getFullYear() : null);
+    const grant = p.eu_grant_eur ? Math.round(parseFloat(p.eu_grant_eur)) : null;
+    const role = p.role || null;
+    const action = p.action_type || null;
+    const isGood = p.is_good_practice;
+    const roleBg = role === 'coordinator' ? 'bg-secondary-fixed text-primary' : 'bg-accent-warm/40 text-primary';
+    return `
+      <li class="px-4 py-3 hover:bg-surface-container/40 transition-colors">
+        <div class="flex items-start gap-3">
+          <div class="min-w-0 flex-1">
+            <div class="text-sm font-semibold text-primary leading-snug truncate" title="${esc(title)}">${esc(title)}</div>
+            <div class="flex flex-wrap items-center gap-1.5 mt-1.5 text-[11px]">
+              ${role ? `<span class="${roleBg} px-1.5 py-0.5 rounded font-bold uppercase">${esc(role)}</span>` : ''}
+              ${action ? `<span class="text-on-surface-variant">${esc(action)}</span>` : ''}
+              ${isGood ? `<span class="text-amber-700 font-bold uppercase">★ Good practice</span>` : ''}
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            ${year ? `<div class="text-sm font-bold text-primary">${year}</div>` : ''}
+            ${grant ? `<div class="text-[11px] text-on-surface-variant">${formatNumber(grant)} €</div>` : ''}
+          </div>
+        </div>
+      </li>`;
+  }
+  function renderCopartnerCard(c) {
+    const oid = c.copartner_pic || c.oid || null;
+    const name = c.name || c.display_name || '(sin nombre)';
+    const cc = (c.country_code || '').toUpperCase();
+    const shared = parseInt(c.shared_projects, 10) || 0;
+    const orgType = c.org_type || c.category || null;
+    return `
+      <div class="bg-white rounded-xl border border-outline-variant/25 p-3 ${oid ? 'cursor-pointer hover:border-primary/50' : ''}"
+           ${oid ? `data-action="open-entity" data-oid="${esc(oid)}"` : ''}>
+        <div class="flex items-start justify-between gap-2 mb-1.5">
+          <div class="text-sm font-semibold text-primary truncate" title="${esc(name)}">${esc(name)}</div>
+          <div class="text-[11px] font-bold text-primary bg-secondary-fixed px-1.5 py-0.5 rounded shrink-0">${shared} proy.</div>
+        </div>
+        <div class="text-[11px] text-on-surface-variant flex flex-wrap gap-1.5">
+          ${cc ? `<span class="font-medium">${cc}</span>` : ''}
+          ${orgType ? `<span class="truncate">${esc(orgType)}</span>` : ''}
+        </div>
+      </div>`;
   }
   function renderContactList(items, icon, hrefPrefix) {
     if (!items || !items.length) return '';
@@ -683,21 +990,19 @@ const Entities = (() => {
     document.getElementById('entity-ficha-close')?.addEventListener('click', closeFicha);
 
     // Render donuts via ApexCharts
-    if (typeof ApexCharts !== 'undefined') {
-      renderDonut('ficha-donut-prof', 'Profesionalidad', o.score_professionalism);
-      renderDonut('ficha-donut-eu',   'EU readiness',    o.score_eu_readiness);
-      renderDonut('ficha-donut-vit',  'Vitalidad',       o.score_vitality);
-    } else {
-      // ApexCharts no cargado todavía, retry
-      setTimeout(() => {
-        renderDonut('ficha-donut-prof', 'Profesionalidad', o.score_professionalism);
-        renderDonut('ficha-donut-eu',   'EU readiness',    o.score_eu_readiness);
-        renderDonut('ficha-donut-vit',  'Vitalidad',       o.score_vitality);
-      }, 500);
-    }
+    const drawDonuts = () => {
+      renderDonut('ficha-donut-prof', 'Personal',    o.score_personal,   { max: 10 });
+      renderDonut('ficha-donut-eu',   'Experiencia', o.score_experience, { max: 10, newcomer: o.is_newcomer });
+      renderDonut('ficha-donut-vit',  'Alianzas',    o.score_alliances,  { max: 10 });
+    };
+    if (typeof ApexCharts !== 'undefined') drawDonuts();
+    else setTimeout(drawDonuts, 500);
 
-    // Load similares
-    loadSimilar(o.oid);
+    // Load similares + estadística de proyectos.
+    // Usamos el id con el que se abrió la ficha (o pic) por si `oid` viene vacío.
+    const fid = o._fichaId || o.oid || o.pic;
+    loadSimilar(fid);
+    loadProjectStats(fid);
 
     // CTAs (S4 implementará; por ahora toast)
     document.querySelectorAll('#entity-ficha-content [data-action]').forEach(btn => {
@@ -708,6 +1013,8 @@ const Entities = (() => {
           Shortlists.toggle(oid, btn);
         } else if (action === 'contact' && typeof Shortlists !== 'undefined') {
           Shortlists.openContactTemplate(oid);
+        } else if (action === 'open-entity' && oid) {
+          openFicha(oid);
         } else {
           Toast.show('Disponible en próxima sesión', 'ok');
         }
@@ -715,14 +1022,18 @@ const Entities = (() => {
     });
   }
 
-  function renderDonut(targetId, label, value) {
+  function renderDonut(targetId, label, value, opts = {}) {
     if (typeof ApexCharts === 'undefined') return;
     const el = document.getElementById(targetId);
     if (!el) return;
-    const v = value == null ? 0 : Math.max(0, Math.min(100, value));
-    const opts = {
+    const max = opts.max || 100;
+    const v = value == null ? 0 : Math.max(0, Math.min(max, value));
+    const pct = max > 0 ? (v / max) * 100 : 0;
+    const isMax10 = max === 10;
+    const valueText = isMax10 ? `${Math.round(v)}/10` : `${Math.round(v)}`;
+    const chartOpts = {
       chart: { type: 'radialBar', height: 160, sparkline: { enabled: true } },
-      series: [v],
+      series: [pct],
       colors: ['#fbff12'],
       plotOptions: {
         radialBar: {
@@ -730,7 +1041,7 @@ const Entities = (() => {
           track: { background: '#eeeeee', strokeWidth: '90%' },
           dataLabels: {
             name: { show: true, color: '#474551', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
-            value: { show: true, color: '#1b1464', fontSize: '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: (val) => Math.round(val) },
+            value: { show: true, color: '#1b1464', fontSize: isMax10 ? '22px' : '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
           },
         },
       },
@@ -738,7 +1049,15 @@ const Entities = (() => {
       labels: [label],
       tooltip: { enabled: false },
     };
-    new ApexCharts(el, opts).render();
+    new ApexCharts(el, chartOpts).render();
+    // Newcomer badge sobre el donut de Experiencia si aplica
+    if (opts.newcomer) {
+      el.style.position = 'relative';
+      const badge = document.createElement('div');
+      badge.className = 'absolute -top-1 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-primary bg-secondary-fixed px-2 py-0.5 rounded-full whitespace-nowrap z-10';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[11px]">auto_awesome</span>Newcomer';
+      el.appendChild(badge);
+    }
   }
 
   async function loadSimilar(oid) {

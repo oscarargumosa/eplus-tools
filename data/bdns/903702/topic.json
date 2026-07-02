@@ -1,0 +1,117 @@
+{
+  "source": "bdns",
+  "source_id": "903702",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ONDA / AYUNTAMIENTO DE ONDA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "CONCESIÓN SUBVENCIONES A ONGD's LOCALES PARA AYUDAS AL DESARROLLO DURANTE EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903702",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "ACUERDO CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO PAGO 70%",
+      "url": null
+    },
+    {
+      "label": "ANEXO V",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI",
+      "url": null
+    },
+    {
+      "label": "ANEXO VII",
+      "url": null
+    },
+    {
+      "label": "ANEXO VIII",
+      "url": null
+    },
+    {
+      "label": "ANEXO IX",
+      "url": null
+    },
+    {
+      "label": "SOLICITUD PAGO 100%",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.onda.es/ond/web_php/index.php?contenido=descripcion&id_boto=322#Cooperaci%C3%B3n%20al%20desarrollo",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO EN EL BOP DE CASTELLÓN",
+  "text_fin": "DIEZ DÍAS HÁBILES CONTADOS A PARTIR DEL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP DE CS",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.268Z"
+}

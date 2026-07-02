@@ -30,7 +30,10 @@ router.get   ('/:id/costs',                  requireAuth, ctrl.getCosts);
 router.patch ('/costs/:costId',              requireAuth, ctrl.updateCost);
 
 /* ── Export ──────────────────────────────────────────────────── */
-router.get   ('/:id/export-excel',           requireAuth, ctrl.exportExcel);
-router.get   ('/by-project/:projectId',      requireAuth, ctrl.getByProject);
+router.get   ('/:id/export-excel',                  requireAuth, ctrl.exportExcel);
+router.get   ('/by-project/:projectId',             requireAuth, ctrl.getByProject);
+
+/* ── EACEA Form Part B unified tables ────────────────────────── */
+router.get   ('/projects/:projectId/eacea-tables',  requireAuth, ctrl.getEaceaTables);
 
 module.exports = router;

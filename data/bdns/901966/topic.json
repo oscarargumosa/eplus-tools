@@ -1,0 +1,98 @@
+{
+  "source": "bdns",
+  "source_id": "901966",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / CONSEJERÍA DE TRANSICIÓN ECOLÓGICA Y ENERGÍA",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "C7I2EE-27S Subv. Varios Programas_MIX P2-P3",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-04-27",
+  "open_date": "2025-04-11",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 14818443.06,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.3",
+      "descripcion": "Acabado de edificios"
+    },
+    {
+      "codigo": "43.5",
+      "descripcion": "Actividades de construcción especializada en ingeniería civil"
+    },
+    {
+      "codigo": "43.4",
+      "descripcion": "Actividades de construcción especializada en la construcción de edificios"
+    },
+    {
+      "codigo": "81.2",
+      "descripcion": "Actividades de limpieza"
+    },
+    {
+      "codigo": "42.9",
+      "descripcion": "Construcción de otros proyectos de ingeniería civil"
+    },
+    {
+      "codigo": "43.2",
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción"
+    },
+    {
+      "codigo": "43.9",
+      "descripcion": "Otras actividades de construcción especializada"
+    },
+    {
+      "codigo": "81.1",
+      "descripcion": "Servicios integrales a edificios e instalaciones"
+    },
+    {
+      "codigo": "35",
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901966",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.gobiernodecanarias.org/boc/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": true,
+  "fetchedAt": "2026-05-07T12:06:48.432Z"
+}

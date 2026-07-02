@@ -1,0 +1,62 @@
+## Expected Impact
+
+Expected Impact
+
+The actions funded under this topic should contribute to strengthening clinical human capital base in R&I, enhancing talent retention, knowledge sharing of best practices within the research and innovation landscape, accelerate integration of digital tools into health systems, expand and scale up validated innovations with tangible implementation at national and/or sub-regional levels.
+
+Applicant consortium
+
+If requested by the applicant consortia, the EDCTP Association may offer technical support for the preparation of their proposal, in particular because of the lump sum nature of the Grant Agreement. The applicant consortia may also decide to include the EDCTP Association as coordinator. In that case, the applicant consortia should contact the EDCTP Association to obtain the estimated amount of the Association’s contribution as well as any other relevant information. The EDCTP Association will timely provide the necessary information to all potential applicants.
+
+## Expected Outcome
+
+Background
+
+Digital health has the potential to reshape and enable the implementation of integrated research and healthcare delivery across sub-Saharan Africa (SSA), especially in communities that are underserved or hard to reach. With tools such as mobile health platforms, electronic health records, and the use of artificial intelligence (AI), health services can become more efficient and accessible, responding to the needs of strengthening the research and development settings in SSA. Despite the ongoing rapid advances, SSA countries are still lagging behind, and there is an increasing gap with the developed world where digital innovation and machine learning is expected to deliver significant changes to healthcare. Digital tools currently in use are fragmented, incompatible with each other, and limited in their reach. In addition, the use of AI is creating more opportunities, but there is a need to ensure future technologies are based on models that include data from SSA countries.
+
+Recent strategies, including the WHO’s Global Strategy on Digital Health (2020–2025), the African Union’s Digital Health Framework, and the Africa CDC’s Digital Transformation Strategy, call for urgent action. These frameworks emphasise the need to invest in people-focused, sustainable digital solutions that are locally informed and globally aligned.
+
+This Coordination and Support Action (CSA) focuses on addressing these disparities. It aims to bring together national governments, regional institutions, researchers, healthcare providers, and private sector partners to better coordinate efforts, share knowledge, and build the infrastructure needed to support inclusive, scalable digital health systems.
+
+By aligning with these strategic directions, this CSA promotes a shared vision: one where digital innovation strengthens local health systems rather than working in silos. The goal is not to create new technologies, but to make better use of what already exists by improving coordination, strengthening human capacity, and supporting evidence-based policies and investments that can unlock the true potential of digital health across the region.
+
+Expected Outcomes
+
+The proposals submitted under this topic should aim to deliver results contributing to at least two of the below:
+- Scaled-up implementation of validated digital innovations at national or sub-regional level.
+- Improved data interoperability and data harmonisation of electronic health records between different digital health systems according to international standards.
+- Integrated comprehensive roadmap for the sustainable and scalable integration of digital health tools into clinical trials and public health systems in SSA, in line with international standards and local ethical standards, and in the context of sharing of best practices.
+- Increased retention of skilled experts in digital health, epidemiology, bioinformatics, AI in SSA.
+
+## Scope
+
+Scope
+
+The proposals submitted under this topic should address the following points:
+- Strengthen health systems, capacity and partnership to enhance the development and use of existing and new digital health records and tools, leveraging machine learning and AI, aiming to prevent, detect or treat infectious diseases in the scope of Global Health EDCTP3 in SSA, enabling health care workers, government, and policy makers to make informed clinical decisions or implement well-informed epidemic preparedness measures. Proposals should favour low-risk digital/AI approaches.
+- Strengthen national and regional efforts across SSA with concrete demonstration of scale up of validated digital technologies for implementation at national or sub-regional level, and to align digital health strategies with applicable international best practices.
+- Improved coordination between stakeholders promoting collaborative platforms and partnerships sharing data and knowledge between regions/countries in SSA and ideally with global partners.
+
+Proposals should include sharing of knowledge between countries with advanced systems and those that have lower capacity in terms of digital tools and skills. Proposals should also use applicable international standards for data use and governance including data privacy and data ownership.
+
+Proposals should consider addressing the societal impact and acceptability of the approach by the populations concerned and should demonstrate compliance with applicable ethics requirements for the use of digital technologies in involved SSA countries.
+
+Proposals should address the audit of the bias of the AI system and address the sustainability of the project outcome beyond the project duration.
+
+Proposals are encouraged to consider expansion of robust, user-friendly digital platforms to grow with the regional needs to reach a broad population of patients, health care workers, government, and policy makers.
+
+Proposals should also ensure equity across involved countries in SSA and in relation to other countries where similar technologies are being developed and/or implemented.
+
+Proposals should look into supporting national and regional (supranational) efforts to align digital health strategies with international best practices. Proposals are encouraged to include the sharing of knowledge between countries with advanced systems and less experienced countries having basic digital infrastructure.
+
+Proposals are encouraged to include hands-on practical capacity-building activities preparing institutions and professionals to lead digital transformation efforts as well as digital health policy dialogues.
+
+The applicants are also encouraged to align with the WHO AFRO and Africa CDC strategies for digital health.
+
+Proposals should include a clear plan for how digital tools will be made accessible and affordable to users. Outcomes should be shared publicly, when possible, especially if they serve the public good or have broad regional relevance.
+
+Proposals should engage communities and relevant stakeholders, most notably (local) key opinion leaders, researchers or clinical Investigators, health care professionals, policy makers, public health authorities and end-users. Applicants should provide methodologies for translating research findings into public health practice and policy guidelines and are encouraged to follow guidance provided in the EDCTP Knowledge Hub Research into Policy Toolkit.
+
+Where possible, collaboration and coordination with the AU-EU Health Partnership’s Manufacturing and Access to Vaccines, medicines and health technologies (MAV+) hub or similar African initiatives is encouraged. The applicants could show, for example, willingness to enter into technology transfer agreements with their counterparts - including the provision of patents, technical knowledge and know-how, or early engagement with regulators or with African manufacturers to support the translation into affordable products adapted to the regional market.
+
+Applicants are reminded of the expectation that proposals should come from research consortia with a strong representation of institutions and researchers from SSA countries, including active participation of Franco/Lusophone countries, if possible. Collaboration with other international research groups with relevant experience is very much encouraged. Applicants are also reminded of the expectation of reaching out to institutions/organisations in countries with high disease burden but with relatively lower research capacities.

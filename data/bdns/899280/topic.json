@@ -1,0 +1,180 @@
+{
+  "source": "bdns",
+  "source_id": "899280",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / INSTITUTO DE FOMENTO DE LA REGIÓN DE MURCIA (INFO)",
+  "nuts_codes": [
+    "ES620"
+  ],
+  "nuts_primary": "ES620",
+  "title": "Resolución de 13 de abril de 2026,  del Director del Instituto de Fomento de la Región de Murcia, por delegación, de convocatoria de ayudas a la participación en ferias, eventos y misiones comerciales. Misión Comercial del Mármol y la Piedra a Canadá.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 42560,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "43.3",
+      "descripcion": "Acabado de edificios"
+    },
+    {
+      "codigo": "09",
+      "descripcion": "Actividades de apoyo a las industrias extractivas"
+    },
+    {
+      "codigo": "94.1",
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales"
+    },
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    },
+    {
+      "codigo": "46.4",
+      "descripcion": "Comercio al por mayor de artículos de uso doméstico"
+    },
+    {
+      "codigo": "46.6",
+      "descripcion": "Comercio al por mayor de otra maquinaria, equipos y suministros"
+    },
+    {
+      "codigo": "42.9",
+      "descripcion": "Construcción de otros proyectos de ingeniería civil"
+    },
+    {
+      "codigo": "23.7",
+      "descripcion": "Corte, tallado y acabado de la piedra"
+    },
+    {
+      "codigo": "71.2",
+      "descripcion": "Ensayos y análisis técnicos"
+    },
+    {
+      "codigo": "05",
+      "descripcion": "Extracción de antracita, hulla, y lignito"
+    },
+    {
+      "codigo": "07",
+      "descripcion": "Extracción de minerales metálicos"
+    },
+    {
+      "codigo": "28.9",
+      "descripcion": "Fabricación de otra maquinaria para usos específicos"
+    },
+    {
+      "codigo": "23.4",
+      "descripcion": "Fabricación de otros productos cerámicos"
+    },
+    {
+      "codigo": "23.9",
+      "descripcion": "Fabricación de productos abrasivos y productos minerales no metálicos n.c.o.p."
+    },
+    {
+      "codigo": "23.3",
+      "descripcion": "Fabricación de productos cerámicos para la construcción"
+    },
+    {
+      "codigo": "22.2",
+      "descripcion": "Fabricación de productos de plástico"
+    },
+    {
+      "codigo": "32.9",
+      "descripcion": "Industrias manufactureras n.c.o.p."
+    },
+    {
+      "codigo": "46.1",
+      "descripcion": "Intermediarios del comercio al por mayor"
+    },
+    {
+      "codigo": "72.1",
+      "descripcion": "Investigación y desarrollo experimental en ciencias naturales y técnicas"
+    },
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    },
+    {
+      "codigo": "82.9",
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "43.9",
+      "descripcion": "Otras actividades de construcción especializada"
+    },
+    {
+      "codigo": "74.9",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas n.c.o.p."
+    },
+    {
+      "codigo": "08",
+      "descripcion": "Otras industrias extractivas"
+    },
+    {
+      "codigo": "46.8",
+      "descripcion": "Otro comercio al por mayor especializado"
+    },
+    {
+      "codigo": "81.1",
+      "descripcion": "Servicios integrales a edificios e instalaciones"
+    },
+    {
+      "codigo": "71.1",
+      "descripcion": "Servicios técnicos de arquitectura e ingeniería y otras actividades relacionadas con el asesoramiento técnico"
+    }
+  ],
+  "apply_url": "https://sede.institutofomentomurcia.es/infodirecto",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899280",
+  "documents": [
+    {
+      "label": "BB.RR.",
+      "url": null
+    },
+    {
+      "label": "Corrección errores.",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2024/numero/2148/pdf?id=826601",
+  "text_inicio": "Desde el día siguiente a la publicación en el BORM.",
+  "text_fin": "Hasta 15 días hábiles a partir del siguiente a la publicación de extracto de esta convocatoria.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.914Z"
+}

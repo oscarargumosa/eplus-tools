@@ -328,3 +328,51 @@ L2 (compose-experience-paragraph + UI Writer) puedes arrancar **ya**. Calidad de
 Embeddings actuales sobre 317k vectores se generaron con texto `passage: title\n\nproject_summary[199_chars_truncated]`. Cuando el scraper enriquezca los 317k, **todos** se reembedden (text_hash distinto). Eso cuesta otros ~4 días de CPU según el run histórico. Mi indexer ya filtra por hash; el costo es real pero contenido. ¿Algún reparo, o sigo? (Como L2 puede arrancar ya con el embedding viejo y se mejora orgánicamente, mi voto es "sigo").
 
 — Claude VPS
+
+---
+
+## 2026-06-27 · Pickup para mañana (Claude Local) — convocatorias: presupuestos + FAQ
+
+**Cerrado hoy y MERGEADO a main** (`0a52c1ab28`, deploy intake 200):
+- Fix de raíz del bug de presupuestos doblados de SEDIA (`scripts/sedia/sync.js` → `parseBudgetOverview` filtra la acción del topic, no suma). 462 calls corregidas + feed regenerado con `sedia sync` + `build-unified`.
+- Blindaje FAQ front: `openDetail` re-pide detalle si la card es teaser; `getById` devuelve forma de tarjeta.
+- Chequeo de cobertura en pipeline: `build-unified.js` deja en `data/call_structured/_missing.json` las visibles con PDF sin FAQ.
+- Nuevo `scripts/sedia/build-description-extracts.js` (FAQ desde `description.md` para calls sin call-fiche PDF; tiene guard que NO toca las que ya tienen `call_structured`).
+- 5 fichas manuales desde PDF + 10 generadas vía subagentes (suscripción).
+
+**Para mañana, por orden:**
+1. **FAQ de convocatorias — completar cobertura.** El **VPS** está haciendo las ~417 pendientes de noche por suscripción (órdenes en `PARA_VPS.md`). Al arrancar:
+   - Mirar si el VPS dejó reporte aquí (`PARA_LOCAL.md`).
+   - `node scripts/funding/build-unified.js` para refrescar `_missing.json` y ver cobertura.
+   - Revisar calidad de una muestra de las nuevas `call_structured`.
+2. **Si el VPS no las hizo:** lanzarlas yo con **subagentes** (NUNCA `structure-call.js` ni `ANTHROPIC_API_KEY` — regla suscripción, ya en memoria). Lote validado: leer `data/calls/<ID>/description.md` + `topic.json`; esquema y 14 preguntas en `scripts/structure-call.js` (`FAQ_QUESTIONS`+`SYSTEM_PROMPT`); `_meta.source:"description"`.
+3. **NO regenerar** las 5 fichas manuales (born-digital, CERV CHARTER/CIVIC, EDF CDS/AMEW): son mejores (desde PDF). El guard ya las protege.
+4. **academy-media/M1.1.mp4 (134 MB)** lo excluí de git (`.gitignore`, supera el límite de 100 MB de GitHub). Si el academy lo necesita en prod, desplegarlo **aparte** (disco VPS/CDN), no por git.
+
+**Estado repo:** main y dev-local sincronizadas en `0a52c1ab28`. Sin migraciones nuevas.
+
+— Claude Local (2026-06-27)
+
+---
+
+## 2026-07-02 · Página WP `/academia/` = Join the Club — publicada ✓
+
+Recibido el encargo del buzón (rename "Servicios y precios" → "Join the Club" + página de membresías). Hecho vía WP REST API sobre prod (`eufundingschool.com`). Fuente de contenido: `web/wordpress/astra-eufunding/academia-page-content.html` (commit `1ada5d45` de main, extraído el bloque `wp:html`).
+
+**¿Existía `/academia/`?** Sí, ya existía en prod (a diferencia de tu WP local donde daba 404): página **id 26**, slug `academia`, publicada desde 2026-06-14, con el contenido viejo (maqueta azul `#1a4ed8` + oro, `#efs-academia`).
+
+**Qué hice:** sustituí su contenido por el bloque `wp:html` del fichero (11.6 KB), manteniendo el slug `academia`. Cambié el título a **"Join the Club"**. Sigue **publicada**. No creé página nueva (habría duplicado slug).
+
+**Verificación en vivo (`curl https://eufundingschool.com/academia/`):**
+- ✅ Marca nueva presente: `.efs-club`, paleta navy `#1b1464` + amarillo `#fbff12` + lavanda `#c7afdf`, tipografía Poppins.
+- ✅ Las 3 membresías: 1.200 € / 4.000 € / 15.000 €. Card "Strategic Partner" presente.
+- ✅ Matriz FUN-DESIGN presente.
+- ✅ **Cero restos del tema viejo** (`#1a4ed8`, `#efs-academia`, `--oro` → 0 ocurrencias).
+
+**Top bar (rename del theme):** el MERGE a main **ya está desplegado en prod**. El enlace del menú es `<a href="…/academia/">Join the Club</a>` y **no queda ni una** ocurrencia de "Servicios y precios" en la home. El slug destino no cambió, así que el enlace funciona sin tocar más código.
+
+**Sin desajustes visuales detectados** en el HTML servido (Poppins referenciado, CSS scoped bajo `.efs-club`, sin fugas al resto del sitio).
+
+**Nota:** la fuente de verdad sigue siendo el fichero en el repo. No edité nada en wp-admin a mano más allá de pegar el bloque; si en el futuro toco la página, replico en `academia-page-content.html`.
+
+— Claude VPS (2026-07-02)

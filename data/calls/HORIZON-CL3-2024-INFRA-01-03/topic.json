@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL3-2024-INFRA-01-03",
+  "ccm2Id": "45764475",
+  "callIdentifier": "HORIZON-CL3-2024-INFRA-01",
+  "callTitle": "",
+  "title": "Advanced real-time data analysis used for infrastructure resilience",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2024-06-27",
+  "deadline": "2024-11-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Terrorism\",\"Security\",\"Artificial Intelligence\",\"Digital Agenda\",\"Policy and Support\",\"Social sciences and humanities\",\"Real time data analytics\",\"Resilience aspects\",\"Critical infrastructure, emergency systems, securi\",\"Protection of areas and infrastructures\",\"Simulation for decision making (real time simulati\",\"Security Analysis\",\"privacy impact\",\"infrastructures\",\"public and private actors\",\"Earth Observation\",\"cloud data\",\"infrastructure networks\",\"big data\",\"infrastructure operation detection and response systems\",\"geolocation data\",\"smart cities\",\"real-time analysis\",\"supply-chain\",\"Security Union Strategy\",\"cyber-resilience\"]"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda",
+    "SSH"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-INFRA-01-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.453Z"
+}

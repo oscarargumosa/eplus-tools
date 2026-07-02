@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "900958",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAN MILLÁN/DONEMILIAGA / AYUNTAMIENTO DE SAN MILLÁN/DONEMILIAGA",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "Convocatoria de ayudas para realizar estudios de música curso académico 2025/2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3100,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900958",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://donemiliaga.eus/",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOTHA",
+  "text_fin": "18/09/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209819,
+      "titulo": "Extracto de acuerdo de 10 de marzo de 2026 por la que se convocan ayudas para realizar estudios de música curso académico 2025/2026",
+      "tituloLeng": null,
+      "texto": "<p>Objeto:</p><p>Las ayudas previstas en la presente convocatoria tienen por objeto colaborar y cofinanciar en los gastos derivados de la inscripción de las personas empadronadas en el municipio de San Millán, en las enseñanzas musicales organizadas por el propio Ayuntamiento y en centros de enseñanza musical reglada y no reglada durante el curso 2025/2026, a excepción de los gastos de inscripciones en Escuelas de Música conveniadas por el Ayuntamiento.</p><p>Beneficiarios:</p><p>Las personas beneficiarias serán las vecinas y vecinos que estén empadronadas/os en el municipio de San Millán desde al menos un periodo no interrumpido de seis meses anteriores a la fecha de inscripción de la actividad a subvencionar, y que asistan a las actividades musicales realizadas por el Ayuntamiento de San Millán o centros de enseñanza musical reglada y no reglada, a excepción de los conveniados, durante el curso 2025/2026.</p><p>En relación con las solicitudes tramitadas para menores, la persona solicitante de la ayuda será el padre, madre o tutor/a legal del menor que realice la actividad a subvencionar.</p><p>Bases reguladoras:</p><p>Aprobadas por el Ayuntamiento Pleno de San Millán en sesión de fecha 10 de marzo de 2026.</p><p>Cuantía:</p><p>La subvención máxima para cada persona beneficiaria será la siguiente:</p><p> </p><p>-           Importe de 180,00 euros cuando la persona beneficiaria esté inscrita en las enseñanzas musicales organizadas por el Ayuntamiento de San Millán.</p><p>-           Importe de 250,00 euros cuando la persona beneficiaria curse dos o más enseñanzas musicales en centros de enseñanza musical reglada y no reglada.</p><p>-           Importe de 200,00 euros cuando la persona beneficiaria curse una enseñanza musical en centros de enseñanza musical reglada y no reglada.</p><p> </p><p>El importe de la subvención previsto en las bases no podrá suponer más del 50 por ciento del coste total de la enseñanza musical y, asimismo, el límite máximo de la aplicación presupuestaria municipal.</p><p> </p><p>En el caso de que la aplicación presupuestaria aprobada no sea suficiente para atender a todas las solicitudes, la subvención máxima se disminuirá proporcionalmente.</p><p> </p><p>Dotación presupuestaria:</p><p>Las partidas presupuestarias a las que se imputa las subvenciones son la partida 326 482001 (servicios complementarios de educación), por importe de 3.054 euros.</p><p>Plazo de presentación de solicitudes</p><p>A partir del día siguiente de la inserción del anuncio de la convocatoria en el BOTHA y hasta el día 18 de septiembre del 2026.</p>",
+      "textoLeng": null,
+      "url": "http://www.araba.eus/botha/Boletines/2026/051/2026_051_01214_E.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.P. DEL TERRITORIO HISTÓRICO DE ÁLAVA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.963Z"
+}

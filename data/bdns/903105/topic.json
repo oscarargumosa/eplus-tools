@@ -1,0 +1,125 @@
+{
+  "source": "bdns",
+  "source_id": "903105",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA / AYUNTAMIENTO DE CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Acuerdo de la JGL de 30-4-2026 por la que se aprueban las bases de la convocatoria para la concesión de subvenciones al fomento de proyectos de educación para el desarrollo, ciudadanía global y sensibilización, que realicen las ONGD, ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "www.sede.castello",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903105",
+  "documents": [
+    {
+      "label": "Annex V. Fitxa de tercers de la titularitat bancària de l'entitat sol.licitant",
+      "url": null
+    },
+    {
+      "label": "Annex IV. Personal vinculat al projecte",
+      "url": null
+    },
+    {
+      "label": "Annex III. Pressupost",
+      "url": null
+    },
+    {
+      "label": "Annex II. Formulari identificació i dades essencials del projecte",
+      "url": null
+    },
+    {
+      "label": "Annex I. Certificat de representació i declaracions",
+      "url": null
+    },
+    {
+      "label": "Annex VI. Logo cofinanciació",
+      "url": null
+    },
+    {
+      "label": "Anexo VI. Logo cofinanciación",
+      "url": null
+    },
+    {
+      "label": "Anexo IV. Personal vinculado al proyecto",
+      "url": null
+    },
+    {
+      "label": "Anexo III. Presupuesto",
+      "url": null
+    },
+    {
+      "label": "Anexo II. Formulario identificación y datos esenciales del proyecto",
+      "url": null
+    },
+    {
+      "label": "Anexo I. Certificado de representación y declaraciones",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo V. Ficha de terceros",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.castello.es/documents/35637/3670185/3.+BASES+EPD+2026+con+anexos+castellano+fda.pdf",
+  "text_inicio": "A partir de la fecha de publicación del extracto en el BOP de Castellón",
+  "text_fin": "15 días hábiles desde la fecha de publicación del extracto en el BOP de Castellón",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.043Z"
+}

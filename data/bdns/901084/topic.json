@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "901084",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CIUDAD AUTÓNOMA DE CEUTA / CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES",
+  "nuts_codes": [
+    "ES63"
+  ],
+  "nuts_primary": "ES63",
+  "title": "CONVOCATORIA DE AYUDAS PARA ACTIVIDADES DE TIEMPO LIBRE, OCIO, CULTURA Y CONCILIACIÓN FAMILIAR DESTINADAS A MENORES EN SITUACIÓN SOCIOECONÓMICA DESFAVORECIDA DE COLEGIOS DE LA CIUDAD AUTÓNOMA DE CEUTA",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": "2026-05-02",
+  "deadline": "2026-05-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 313900,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "REGISTRO CIUDAD AUTONOMA DE CEUTA",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901084",
+  "documents": [
+    {
+      "label": "SOLICITUD CONVOCATORIA OCIO Y TIEMPO LIBRE",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1973-abril/23102-bocce-6606-07-04-2026?Itemid=0",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.013Z"
+}

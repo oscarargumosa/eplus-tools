@@ -1,0 +1,84 @@
+{
+  "source": "bdns",
+  "source_id": "899097",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DEFENSA / GABINETE DEL JEFE DE ESTADO MAYOR DEL EJÉRCITO DEL AIRE",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 15 de abril, de la Jefatura de Estado Mayor del Ejército del Aire y del Espacio, por la que se publica la convocatoria de los Premios Ejército del Aire y del Espacio 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 46500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://sede.defensa.gob.es/acceda/procedimientos",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899097",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "OM Bases Reguladoras Premios EA 2026",
+      "url": null
+    },
+    {
+      "label": "Formulario de Inscripción Premios EA 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ejercitodelaireydelespacio.defensa.gob.es/EA/premiosea/",
+  "text_inicio": "El día siguiente al de la publicación de la convocatoria en el Boletín Oficial de Estado",
+  "text_fin": "Veinte (20) días naturales desde el día siguiente al de la publicación de la convocatoria en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209163,
+      "titulo": "Extracto de la Resolución de 15 de abril, de la Jefatura de Estado Mayor del Ejército del Aire y del Espacio, por la que se publica la convocatoria de los Premios Ejército del Aire y del Espacio 2026",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios:</p><p>Podrán optar a los Premios Ejército del Aire y del Espacio 2026 los autores cuyas aportaciones estén relacionadas con cada una de las disciplinas convocadas.</p><p> </p><p>Segundo. Finalidad:</p><p>Los Premios Ejército del Aire y del Espacio tienen por objeto contribuir a través de la creación artística en sus diferentes facetas, al fomento del interés y la afición por los asuntos aeroespaciales, estimular en la juventud la vocación aviadora y promover el conocimiento mutuo entre nuestra institución y la sociedad española a la que sirve. El fomento de la cultura aeroespacial, la difusión de los valores que defiende y promueve el Ejército del Aire y del Espacio (en adelante EA) y el espíritu de mejora continua e innovación, son algunos de los objetivos a destacar.</p><p> </p><p>En su XLVII edición, se convocan los Premios Ejército del Aire y del Espacio 2026 en las siguientes disciplinas: Pintura, Aula Escolar Aeroespacial, Modelismo Aeroespacial, Investigación Aeroespacial Universitaria, Imagen Aeroespacial, Artículos «Revista de Aeronáutica y Astronáutica», Creación Literaria, Promoción de la Cultura Aeroespacial y Valores en el Deporte.</p><p> </p><p>Tercero. Bases Reguladoras:</p><p>Aprobadas por Orden DEF/376/2018, de 11 de abril (BOE núm. 89, de 12 de abril de 2018).</p><p> </p><p>Cuarto. Crédito:</p><p>La dotación de los Premios Ejército del Aire y del Espacio 2026 en sus distintas disciplinas, modalidades y categorías está especificada en el texto de la convocatoria. El importe económico de los mismos se concederá con cargo al concepto presupuestario 14.22.121M.2.485.04, siendo la cuantía total asignada de cuarenta y seis mil quinientos euros (46.500€).</p><p> </p><p>Quinto. Formalización de participación y plazos:</p><p>El plazo de presentación de solicitudes será de veinte días naturales contados a partir del día siguiente al de la publicación del presente extracto (formulario disponible en la web de los Premios Ejército del Aire y del Espacio https://ejercitodelaireydelespacio.defensa.gob.es/EA/premiosea/).</p><p> </p><p>El plazo de presentación de los trabajos será entre los días 18 al 31 mayo de 2026, ambos inclusive, en el lugar y horarios son especificados en la convocatoria.</p><p> </p><p>Los plazos y fechas establecidos, así como la propia convocatoria, podrán ser modificados o anulados siempre que se den circunstancias objetivas que lo justifiquen.</p>",
+      "textoLeng": null,
+      "url": "http://www.boe.es/diario_boe/verifica.php?acc=Verificar&c=BOE-B-2026-12085",
+      "cve": "BOE-B-2026-12085",
+      "desDiarioOficial": "BOE. BOLETÍN OFICIAL DEL ESTADO",
+      "datPublicacion": "2026-04-18"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.819Z"
+}

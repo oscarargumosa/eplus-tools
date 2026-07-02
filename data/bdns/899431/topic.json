@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "899431",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CATALUÑA / CONSORCI DE COMERÇ, ARTESANIA I MODA DE CATALUNYA",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "RESOLUCIÓNpor la que se aprueba la convocatoria del año 2026 de subvenciones a los sectores económicos de las Terres de l'Ebre afectados por las inundaciones y lluvias torrenciales ocasionadas por la DANA Alice.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": "2026-04-22",
+  "deadline": "2026-05-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47.8",
+      "descripcion": "Comercio al por menor de vehículos de motor, motocicletas y sus repuestos y accesorios"
+    },
+    {
+      "codigo": "47.1",
+      "descripcion": "Comercio al por menor no especializado"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899431",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1040164",
+  "text_inicio": null,
+  "text_fin": "22 de julio de 2021",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 209511,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1042343",
+      "cve": null,
+      "desDiarioOficial": "DOGC. D.O. DE LA GENERALITAT DE CATALUNYA",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.030Z"
+}

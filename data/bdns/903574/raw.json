@@ -1,0 +1,72 @@
+{
+  "id": 1105135,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALELLA",
+    "nivel3": "AYUNTAMIENTO DE ALELLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903574",
+  "fechaRecepcion": "2026-05-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "BEQUES ESCOLARS CURS 2026/2027 X2026001632",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BEQUES  ESCOLARS CURS 15-16",
+  "urlBasesReguladoras": "https://bop.diba.cat/scripts/ftpisa.aspx?fnew?bop2011&08/022011018905.pdf&1",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1448764,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_DE_PRESTACIONS_ESCOLARS_PER_AL_CURS_2026-2027_X2026001632_CATALÀ.pdf",
+      "long": 555309,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    },
+    {
+      "id": 1448763,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATÒRIA_DE_PRESTACIONS_ESCOLARS_PER_AL_CURS_2026-2027_X2026001632_CASTELLÀ.pdf",
+      "long": 453934,
+      "datMod": "2026-05-05",
+      "datPublicacion": "2026-05-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL5-2024-D3-01-02",
+  "ccm2Id": "45642761",
+  "callIdentifier": "HORIZON-CL5-2024-D3-01",
+  "callTitle": "",
+  "title": "Low-power PV",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-09-12",
+  "deadline": "2024-01-16",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Renewable energy sources - general\",\"Photovoltaics\",\"RePowerEU\",\"Photovoltaics\",\"PV\",\"electronics\"]"
+  ],
+  "crossCuttingPriorities": [
+    "RePowerEU"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D3-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.211Z"
+}

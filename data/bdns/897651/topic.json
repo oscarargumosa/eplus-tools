@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "897651",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CIUDAD AUTÓNOMA DE CEUTA / PROCESA SOCIEDAD DE DESARROLLO DE CEUTA",
+  "nuts_codes": [
+    "ES63"
+  ],
+  "nuts_primary": "ES63",
+  "title": "TERCERA CONVOCATORIA DE LAS AYUDAS PARA CONTRATACIÓN INDEFINIDA DE PERSONAS DESEMPLEADAS, EN EL MARCO DEL PROGRAMA FSE + PARA CEUTA, PERÍODO 2021-2027, PRIORIDAD 5, OBJETIVO ESPECÍFICO ESO4.1, MEDIDA5.A.02.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-08",
+  "open_date": null,
+  "deadline": "2026-05-29",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://sede.procesa.es/eAdmin/Sede.do",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897651",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ceuta.es/ceuta/bocce",
+  "text_inicio": "DIA DESPUES DE LA PUBLICACIÓN EN BOCCE",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.124Z"
+}

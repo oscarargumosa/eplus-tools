@@ -1,0 +1,30 @@
+## Expected Outcome
+
+Proposals are expected to contribute to one or more of the following:
+- Enhanced security frameworks for both hardware and software supply chains, building on root-of-trust architectures and secure lifecycle management;
+- Secure and trusted chip architectures for next-generation computing and networking systems;
+- Integrated security-by-design approaches in software development, aimed to be aligned with relevant regulatory requirements;
+- Security testing methodologies, including formal verification approaches and AI-driven security testing methodologies;
+- Standardised methodologies for hardware security assessment, also contributing to cybersecurity certification.
+
+## Scope
+
+The increasing complexity and globalisation of software and hardware supply chains introduce new vulnerabilities that cyber adversaries can exploit. Ensuring the security of both software and hardware components across the lifecycle of digital systems is paramount. This topic aims to develop innovative tools, methods, and processes to secure the entire ecosystem of software and hardware development.
+
+Proposals should explicitly select one main area of focus but can also address both:
+
+a. Secured hardware systems over trusted Chips
+
+The security of modern computing infrastructures relies heavily on the robustness of hardware components. This subtopic aims to develop robust security solutions for trusted hardware platforms, focusing on secured microprocessors, secure boot mechanisms, and cryptographic acceleration. Proposals are also expected to address the risks of hardware-based vulnerabilities and backdoors, ensuring the security of devices from edge to cloud, also taking into account emerging threats, including quantum where relevant. Synergies with existing EU initiatives on trusted hardware (e.g., CHIPS JU, EuroHPC) are encouraged. The topic is expected to:
+- Develop new architectures for tamper-resistant chips and processors. Exploring novel designs for secure microprocessors, leveraging hardware-level security enhancements, and integrating cryptographic co-processors that may also support post-quantum cryptography (PQC), for enhanced protection against tampering and side-channel attacks.
+- Enhance supply chain transparency for chip production and integration. Exploring innovative ways to improve traceability and accountability in chip manufacturing processes, including methods such as post-quantum secure hardware roots of trust, blockchain for tracking components, or certification mechanisms.
+- Establish security-by-design methodologies for hardware security assessment. Advancing methodologies for systematic security testing of hardware components, including automated vulnerability analysis, verification frameworks, and integration of security assessment into chip design and lifecycle management.
+- Develop methods and tools for an effective and efficient non-destructive authentication and physical analysis of integrated circuits and multi-chips modules (chiplets).
+- Develop technical means for ensuring hardware supply chain security, and secure PQC implementations: hardware trojan and backdoor detection, hardware watermarking, relevant reverse engineering techniques, countermeasures also against new classes of hardware physical attacks. Develop self-healing firmware able to recover from cyber-attacks. Develop firmware able to leverage advanced anomaly detection, AI-driven threat mitigation and secure rollback mechanisms to automatically identify cyber-attacks, isolate compromised components restore the system to a trusted state while maintaining operational continuity.
+
+b. Software Supply Chain security
+
+The integrity of software supply chains is critical to mitigating cybersecurity threats such as supply chain attacks, dependency vulnerabilities, and compromised software components. This subtopic focuses on mitigating security risks in software supply chains, including secure code provenance, automated vulnerability detection, and secure software development lifecycle (SDLC) methodologies and tools, including those related to PQC security. Proposals should integrate formal verification approaches or AI-assisted security testing, leveraging upcoming European and International standards for supply chain security. The topic is expected to:
+- Develop innovative tools for real-time software vulnerability detection and automatic patching. Advancing the state of automated detection techniques, incorporating dynamic analysis, AI-driven pattern recognition, predictive analytics to proactively identify security weaknesses before exploitation and self-healing mechanisms.
+- Enhance secure software frameworks, including protection against the quantum threat. Exploring new methodologies for integrating security-by-design principles across development workflows, incorporating approaches such as automated security policy enforcement, modular security components, and improved dependency management.
+- Improve resilience against supply chain cyber threats. Investigating novel mitigation strategies, including provenance tracking for software components and their analysis, secure update distribution mechanisms including protection from emerging quantum threats where relevant, enhanced anomaly detection, and multi-layer defence approaches to ensure integrity and trustworthiness.

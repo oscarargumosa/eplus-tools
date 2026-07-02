@@ -1,0 +1,35 @@
+## Expected Outcome
+
+Project results are expected to contribute to all of the following expected outcomes:
+- significant advance in the development of innovation in biotechnology, life sciences and/or biomanufacturing concepts, preparing future deployment of bio-based and bio-inspired processes, products and materials, as a basis for sustainable, fair, safe and circular value chains, contributing to decarbonisation, industrial competitiveness and the strategic autonomy of the EU and Associated Countries;
+- improved environmental sustainability of the developed innovative bio-based solutions, with positive and quantifiable impact on climate and biodiversity, and circularity of the European bioeconomy via enhanced resource efficiency, including of biological feedstocks, water and energy, integrating bio-based sector to minimize and remediate waste production.
+
+## Scope
+
+Actions funded under this topic are relevant to the EU policies related to the European Commission communication on ‘Building the future with nature: Boosting Biotechnology and Biomanufacturing in the EU’, the Life Sciences Strategy, the upcoming EU Biotech Act, and Circular Economy Act, the EU strategy on research and technology infrastructure, the Clean Industrial Deal and the policies related to the digital transition (e.g. AI Act, etc.). It also contributes to the Start-ups and Scale-ups Strategy.
+
+Proposals should address the following activities:
+- identify, select and develop further promising selected key technologies underpinning the bio-based innovation/industry, in particular R&D on synthetic/molecular biology, gene editing, metabolic engineering, microbiome[1], and/or biofoundry approaches, covering all applications aiming at clean growth and environmental solutions. Advancing towards validation at a pilot-scale is encouraged, to enable future exploitation. The applications in health biotechnology, as well as the biofuel/bioenergy area are excluded, to avoid overlaps with Horizon Europe Clusters 1 and 5, respectively;
+- ensure the integration of digital technologies (e.g. AI/Machine Learning, bioinformatics);
+- advance the convergence of biotech and life sciences developed under the first point with Nature-based Solutions, e.g. for environmental applications, carbon sequestration[2], biodiversity protection/enhancement, aligned with (bio-)circular economy principles (e.g. cascading biomass use), ensuring the environmental fate and sustainability is considered quantitatively at the earliest stage and ensuring safety to human health and environment is addressed and guaranteed;
+- develop recommendations for policy makers and industrial actors, taking into account the available scientifically sound assessment of risks and benefits of the developed solutions.
+
+Proposals should involve SMEs – both as project beneficiaries and as external actors – and offer opportunities to newcomers (to Horizon Europe Cluster 6). Proposals should also engage with the civil society stakeholders such as NGOs and consumer organisations to seek stakeholder involvement and acceptance, thus advancing scale-up and facilitating future market uptake. Proposals need to ensure compliance with the ‘Do no significant harm’ (DNSH) principle.
+
+Proposals are encouraged to consider, where relevant, the data, expertise and services offered by European research infrastructures[3], such as EMSO ERIC, EU-OPENSCREEN, ELIXIR, EMBRC ERIC, IBISBA. Efforts should be made to ensure that the data produced in the context of this topic is FAIR (Findable, Accessible, Interoperable and Re-usable).
+
+Cooperation with the parallel projects funded under topic HORIZON-CL6-2026-01-CIRCBIO-10: Bio-based innovation in society: supporting the sustainable way of living is encouraged, to benefit from synergies and avoid overlaps. Similarly, activities should benefit from synergies and avoid overlaps with ongoing projects, e.g. funded under the topic HORIZON-CL6-2022-CIRCBIO-02-05-two-stage: Life sciences and their convergence with digital technologies for prospecting, understanding and sustainably using biological resources, topic HORIZON-CL6-2023-CIRCBIO-01: Broadening the spectrum of robust enzymes and microbial hosts in industrial biotechnology, under topics related to bioprospecting such as HORIZON-CL6-2025-01-CIRCBIO-14: Bioprospecting and optimised production of marine/aquatic natural products in the omics & artificial intelligence era and HORIZON-CL6-2025-01-CIRCBIO-08: Bioprospecting and optimized production of the terrestrial natural products: new opportunities for bio-based sectors or those to be funded under the topic HORIZON-CL6-2025-01-CIRCBIO-10: Support to the EU Biotechnology and Biomanufacturing Initiative: scoping action.
+
+Cooperation between all projects funded under this topic should be also foreseen, as a specific task, with an allocation of resources, for synergies.
+
+This topic requires the effective contribution of SSH disciplines and involvement of SSH experts in order to produce meaningful and significant effects enhancing the societal impact of the related research activities. International cooperation is encouraged.
+
+## null
+
+Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
+
+[1]  Seeking synergies with any parallel EU calls in this work programme, and beyond, e.g. HORIZON-CL6-2026-02-FARM2FORK-11: Integrating a holistic perspective in microbiome research for resilient, competitive and sustainable food systems. Microbiomes from any environment can be considered.
+
+[2]  Considering synergies with the parallel topic on HORIZON-CL6-2027-01-CIRCBIO-08: Biotechnology application for CCU.
+
+[3]  The catalogue of European Strategy Forum on Research Infrastructures (ESFRI) research infrastructures portfolio can be browsed from ESFRI website https://ri-portfolio.esfri.eu/

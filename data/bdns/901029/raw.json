@@ -1,0 +1,88 @@
+{
+  "id": 1102590,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIUDARENES",
+    "nivel3": "AYUNTAMIENTO DE RIUDARENES"
+  },
+  "sedeElectronica": "https://www.seu-e.cat/ca/web/riudarenes",
+  "codigoBDNS": "901029",
+  "fechaRecepcion": "2026-04-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS SOCIALES PARA EL CASAL DE VERANO DEL AYUNTAMIENTO DE RIUDARENES 2026",
+  "descripcionLeng": "CONVOCATORIA D'AJUTS SOCIALS PEL CASAL D'ESTIU DE L'AJUNTAMENT DE RIUDARENES 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS SOCIALES PARA EL CASAL DE VERANO DEL AYUNTAMIENTO DE RIUDARENES 2026",
+  "urlBasesReguladoras": "http://www.ajuntamentderiudarenes.cat/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia posterior de la publicacion de la convocatória al Diario Oficial",
+  "textFin": "25/05/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1441356,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DECRET CONVOCATORIA CATALA.docx",
+      "long": 67386,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    },
+    {
+      "id": 1441354,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO CONVOCATORIA CASTELLANO.docx",
+      "long": 67612,
+      "datMod": "2026-04-23",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 209850,
+      "titulo": "CONVOCATORIA DE AYUDAS SOCIALES PARA EL CASAL DE VERANO DEL AYUNTAMIENTO DE RIUDARENES 2026",
+      "tituloLeng": "CONVOCATÒRIA D’AJUTS SOCIALS PEL CASAL D’ESTIU DE L’AJUNTAMENT DE RIUDARENES 2026",
+      "texto": "<p>Mediante Decreto de Alcaldía 2026DECR000294 de 23 abril de 2026, se abre la convocatoria de ayudas sociales para el casal de verano 2026</p><p>Primero. Beneficiarios</p><p>Padres o tutores de los niños y niñas del municipio de Riudarenes inscritos en casales durante los períodos de verano, Navidad y Semana Santa.</p><p>Segundo.- Objeto</p><p>Atender a las persones con situación socioeconómica desfavorecido facilitando el acceso a  recursos educativos y de ocio.</p><p>Tercero.- Bases reguladoras</p><p>BOP Girona – Bop Girona 54 de 15/03/2024</p><p>Cuarto- Importe</p><p>El importe de la convocatoria para el ejercicio 2026 es de 2.000 Euros.</p><p>Quinto. Plazo de presentación</p><p>Des del siguiente día de la publicación de la convocatoria al Boletín Oficial de la Província y hasta el dia 25 de mayo de 2026</p>",
+      "textoLeng": "<p>Mitjançant Decret d’Alcaldia 2026DECR000294 de 23 d’abril de 2026, s’obre la convocatòria d’ajuts socials pel casal d’estiu 2026.</p><p>Primer. Beneficiaris</p><p>Pares o tutors de nens i nenes del municipi de Riudarenes inscrits en casals i/o esplais durant els períodes d’estiu, Nadal i Setmana Santa. </p><p>Segon.- Objecte</p><p>Atendre les persones amb situació socioeconòmica desfavorida facilitant el seu accés a recursos de tipus educatiu i de lleure.</p><p>Tercer.- Bases reguladores</p><p>BOP Girona – Bop Girona 54 de 15/03/2024</p><p>Quart- Import</p><p>L’import de la convocatòria per a l’exercici 2026 és de 2.000 Euros.</p><p>Cinquè. Termini de presentació</p><p>Des del dia següent de la publicació de la convocatòria al Butlletí Oficial de la Província i fins el dia 25 de maig de 2026</p>",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/80/20268003400.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE GIRONA",
+      "datPublicacion": "2026-04-28"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

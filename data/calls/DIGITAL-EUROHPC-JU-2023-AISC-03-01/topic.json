@@ -1,0 +1,30 @@
+{
+  "identifier": "DIGITAL-EUROHPC-JU-2023-AISC-03-01",
+  "ccm2Id": "46577734",
+  "callIdentifier": "DIGITAL-EUROHPC-JU-2023-AISC-03",
+  "callTitle": "",
+  "title": "Support Centre for HPC-powered Artificial Intelligence (AI) Applications",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-11-28",
+  "deadline": "2024-02-27",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL JU Simple Grants",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Artificial Intelligence \\u0026 Decision support\",\"SME support\",\"Artificial intelligence, intelligent systems, mult\",\"High performance computing\",\"Digital Agenda\",\"EuroHPC\",\"Artificial Intelligence\",\"High Performance Computing\",\"HPC\",\"Support Center\",\"AI\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/DIGITAL-EUROHPC-JU-2023-AISC-03-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.673Z"
+}

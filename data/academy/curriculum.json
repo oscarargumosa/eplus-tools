@@ -1,0 +1,111 @@
+{
+  "nota": "Los módulos del TRONCO COMÚN se reutilizan en todos los cursos. Un curso = tronco común (completo o subconjunto) + 1 itinerario de especialidad. Lección «A crear» = contenido propio a producir (valor diferenciador, sobre todo en español).",
+  "tronco": [
+    {"c": "M1", "t": "Fundamentos: ¿Qué es Erasmus+?", "nivel": "Iniciación", "ls": [
+      {"t": "¿Qué es Erasmus+? El programa en 10 minutos", "s": "tenemos"},
+      {"t": "KA1, KA2, KA3: el mapa de acciones", "s": "tenemos"},
+      {"t": "Las 4 prioridades horizontales (inclusión, digital, verde, participación)", "s": "tenemos"},
+      {"t": "Quién es quién: Comisión, EACEA y Agencias Nacionales", "s": "tenemos"},
+      {"t": "Glosario esencial del solicitante (versión cercana)", "s": "parcial"}
+    ]},
+    {"c": "M2", "t": "Prepara tu organización", "nivel": "Iniciación", "ls": [
+      {"t": "Registro en ORS y obtención del OID, paso a paso", "s": "tenemos"},
+      {"t": "Buscar socios: Otlas, EPALE y eTwinning", "s": "tenemos"},
+      {"t": "Cómo elegir buenos socios (criterios y señales de alarma)", "s": "crear"},
+      {"t": "La acreditación Erasmus: ¿me conviene?", "s": "tenemos"}
+    ]},
+    {"c": "M3", "t": "De la idea al proyecto", "nivel": "Intermedio", "ls": [
+      {"t": "Análisis de necesidades: del problema real al proyecto", "s": "parcial"},
+      {"t": "Teoría del cambio / lógica de intervención", "s": "crear"},
+      {"t": "Convertir una idea difusa en objetivos claros", "s": "crear"},
+      {"t": "Diseñar el consorcio y repartir roles", "s": "parcial"}
+    ]},
+    {"c": "M4", "t": "Anatomía del formulario", "nivel": "Intermedio", "ls": [
+      {"t": "El Application Form / Part B por dentro", "s": "tenemos"},
+      {"t": "Secciones EACEA y límites de caracteres", "s": "tenemos"},
+      {"t": "eForm de Agencia Nacional vs portal EACEA (SEDIA)", "s": "tenemos"},
+      {"t": "Recorrido por un formulario comentado (SEPIE)", "s": "tenemos"}
+    ]},
+    {"c": "M5", "t": "Cómo te evalúan", "nivel": "Intermedio", "ls": [
+      {"t": "Los 4 criterios y los umbrales de puntuación", "s": "tenemos"},
+      {"t": "La rúbrica del evaluador por dentro (Guide for Experts)", "s": "tenemos"},
+      {"t": "Escribe para el evaluador: qué busca en cada criterio", "s": "crear"}
+    ]},
+    {"c": "M6", "t": "Redacción ganadora", "nivel": "Avanzado", "ls": [
+      {"t": "Objetivos SMART e indicadores medibles", "s": "crear"},
+      {"t": "Evidencia vs afirmación: demostrar lo que dices", "s": "crear"},
+      {"t": "Work packages: la columna vertebral del proyecto", "s": "parcial"},
+      {"t": "Los errores de redacción más comunes (y cómo evitarlos)", "s": "parcial"}
+    ]},
+    {"c": "M7", "t": "El presupuesto sin miedo", "nivel": "Intermedio", "ls": [
+      {"t": "Lump sums: qué son y por qué lo cambian todo", "s": "tenemos"},
+      {"t": "El modelo de financiación KA2 a fondo (Handbook KA2 lump sums)", "s": "borrador"},
+      {"t": "Coherencia actividad ↔ coste", "s": "tenemos"},
+      {"t": "Cómo justificar el tramo de presupuesto", "s": "crear"}
+    ]},
+    {"c": "M8", "t": "Impacto, difusión y sostenibilidad", "nivel": "Intermedio", "ls": [
+      {"t": "DEOR: difusión y explotación de resultados", "s": "parcial"},
+      {"t": "El impacto: distinguir resultados de beneficios reales", "s": "crear"},
+      {"t": "Reconocimiento del aprendizaje (Youthpass)", "s": "tenemos"}
+    ]},
+    {"c": "M9", "t": "Después del «sí»: gestión", "nivel": "Avanzado", "ls": [
+      {"t": "Beneficiary Module e informes", "s": "tenemos"},
+      {"t": "Calidad en la ejecución del proyecto", "s": "parcial"}
+    ]},
+    {"c": "M10", "t": "Aprender de los errores", "nivel": "Avanzado", "ls": [
+      {"t": "Catálogo de errores que tumban una solicitud", "s": "crear"},
+      {"t": "Casos reales comentados", "s": "crear"}
+    ]}
+  ],
+  "esp": [
+    {"c": "S1", "t": "KA1 Juventud", "ls": [
+      {"t": "Intercambios juveniles", "s": "tenemos"},
+      {"t": "Movilidad de youth workers", "s": "tenemos"},
+      {"t": "Participación juvenil y DiscoverEU", "s": "tenemos"},
+      {"t": "Acreditación en juventud (KA150/KA151)", "s": "tenemos"},
+      {"t": "Redactar un KA1 de juventud en español", "s": "crear"}
+    ]},
+    {"c": "S2", "t": "KA1 Educación de Adultos", "ls": [
+      {"t": "Movilidad en educación de adultos", "s": "tenemos"},
+      {"t": "Convocatoria y formulario comentado (SEPIE)", "s": "tenemos"},
+      {"t": "Particularidades de redacción en adultos (ES)", "s": "crear"}
+    ]},
+    {"c": "S3", "t": "KA1 Educación Escolar", "ls": [
+      {"t": "Movilidad de alumnado y personal escolar", "s": "tenemos"},
+      {"t": "KA122-SCH: proyecto corto paso a paso", "s": "tenemos"},
+      {"t": "Criterios y errores en la solicitud escolar (ES)", "s": "crear"}
+    ]},
+    {"c": "S4", "t": "KA1 FP / VET", "ls": [
+      {"t": "Movilidad en FP, incluido ErasmusPro", "s": "parcial"},
+      {"t": "Formularios comentados KA121/KA122-VET", "s": "tenemos"},
+      {"t": "Rol de organizaciones de apoyo/intermediarias", "s": "crear"}
+    ]},
+    {"c": "S5", "t": "KA2 Cooperation Partnerships (KA220)", "ls": [
+      {"t": "Qué es una Cooperation Partnership", "s": "tenemos"},
+      {"t": "La plantilla Part B de KA220", "s": "tenemos"},
+      {"t": "WPs y presupuesto lump sum en KA220", "s": "parcial"},
+      {"t": "Redacción ganadora de un KA220 (ES)", "s": "crear"}
+    ]},
+    {"c": "S6", "t": "KA2 Small-scale Partnerships (KA210)", "ls": [
+      {"t": "Qué es una Small-scale Partnership", "s": "tenemos"},
+      {"t": "Part B de KA210 y criterios", "s": "tenemos"},
+      {"t": "Justificar el tramo lump sum (30k/60k)", "s": "crear"}
+    ]},
+    {"c": "S7", "t": "KA3 / Apoyo a políticas", "ls": [
+      {"t": "El mapa de acciones KA3", "s": "tenemos"},
+      {"t": "European Youth Together paso a paso", "s": "tenemos"},
+      {"t": "Redactar acciones EACEA en español", "s": "crear"}
+    ]},
+    {"c": "S8", "t": "Capacity Building (Youth/VET)", "ls": [
+      {"t": "CB Youth: regiones, criterios, presupuesto", "s": "tenemos"},
+      {"t": "CB VET: cómo se solicita (EACEA)", "s": "tenemos"},
+      {"t": "Tips del evaluador CB-VET aplicados", "s": "tenemos"},
+      {"t": "Material de Capacity Building en español", "s": "crear"}
+    ]},
+    {"c": "S9", "t": "Deporte (Sport)", "ls": [
+      {"t": "Not-for-profit European Sport Events", "s": "tenemos"},
+      {"t": "Cooperation / Small-scale en deporte", "s": "tenemos"},
+      {"t": "Redactar un proyecto de deporte (ES)", "s": "crear"}
+    ]}
+  ]
+}

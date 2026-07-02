@@ -1,0 +1,108 @@
+{
+  "id": 1102188,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GIJÓN",
+    "nivel3": "AYUNTAMIENTO DE GIJÓN"
+  },
+  "sedeElectronica": "https://sedeelectronica.gijon.es",
+  "codigoBDNS": "900627",
+  "fechaRecepcion": "2026-04-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 31300,
+  "mrr": false,
+  "descripcion": "Acuerdo de Junta Rectora de 21 de abril de 2026 de la FMCEYUP por la que se convocan subvenciones para CULTURA TRADICIONAL Y LLINGÜA ASTURIANA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://sedeelectronica.gijon.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=SEDE_NORMATIVA_DETALLE&DBOID=6263930765236991506402&REQID=4&HFC=GJ_HEADER#GJ_FOOTER&SESSION_REQUIRED=false",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del extracto de la presente convocatoria en el BOPA",
+  "textFin": "20 días naturales desde el siguiente a la publicación del extracto de la convocatoria en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1440268,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA SUBVENCIONES 2026.pdf",
+      "long": 694362,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440271,
+      "descripcion": "MODELO P020110.002 JUSTIFICACIÓN SUBVENCIONES",
+      "nombreFic": "MODELO P020110.002 JUSTIFICACIÓN SUBVENCIONES.pdf",
+      "long": 805072,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440275,
+      "descripcion": "ORDENANZA GENERAL DE SUBVENCIONES",
+      "nombreFic": "ORDENANZA GENERAL DE SUBVENCIONES.pdf",
+      "long": 771931,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440273,
+      "descripcion": "MODELO 03.60 DECLARACION-AUTORIZACION CONSULTA DATOS REGISTRO CENTRAL DE DELINCUENTES SEXUALES",
+      "nombreFic": "MODELO 03.60 DECLARACION-AUTORIZACION CONSULTA DATOS REGISTRO CENTRAL DE DELINCUENTES SEXUALES.pdf",
+      "long": 368080,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    },
+    {
+      "id": 1440270,
+      "descripcion": "MODELO P020110.001 SOLICITUD SUBVENCIONES",
+      "nombreFic": "MODELO P020110.001 SOLICITUD SUBVENCIONES.pdf",
+      "long": 851574,
+      "datMod": "2026-04-22",
+      "datPublicacion": "2026-04-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

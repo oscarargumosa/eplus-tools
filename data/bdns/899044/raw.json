@@ -1,0 +1,72 @@
+{
+  "id": 1100605,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BILBAO",
+    "nivel3": "AYUNTAMIENTO DE BILBAO"
+  },
+  "sedeElectronica": "www.bilbao.eus",
+  "codigoBDNS": "899044",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "2026_BECAS DOÑA CASILDA DE ITURRIZAR AL ALUMNADO EXCELENTE",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases Reguladoras incluídas en la Convocatoria, al amparo de la salvedad prevista en la letra a) del art. 23.2 de la Ley 38/2003, General de Subvenciones",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2003-20977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del extracto en el Boletín Oficial de Bizkaia",
+  "textFin": "Un mes mas tarde a la publicación en el BOB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1435919,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "TEXTO COMPLETO EUSKERA.pdf",
+      "long": 75559,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1435918,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "TEXTO COMPLETO CASTELLANO.pdf",
+      "long": 75559,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

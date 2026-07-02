@@ -27,6 +27,14 @@ add_action( 'wp_enqueue_scripts', function () {
 		null
 	);
 
+	// Material Symbols — iconos de la carcasa Recursos (sidebar + tarjetas).
+	wp_enqueue_style(
+		'efs-material-symbols',
+		'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+		array(),
+		null
+	);
+
 	$parent_handle = 'astra-theme-css';
 	wp_enqueue_style(
 		'astra-eufunding',
@@ -41,9 +49,45 @@ add_action( 'wp_enqueue_scripts', function () {
  * "Landing (sin menú)" template gets body class efs-landing-page
  * ------------------------------------------------------------------------- */
 add_filter( 'theme_page_templates', function ( $templates ) {
-	$templates['page-landing.php'] = 'Landing (sin menú)';
+	$templates['page-landing.php']  = 'Landing (sin menú)';
+	$templates['page-recursos.php'] = 'Recursos (carcasa + sidebar)';
 	return $templates;
 } );
+
+/* -------------------------------------------------------------------------
+ * Recursos: ¿la vista actual pertenece a la sección Recursos?
+ *   - una página con la plantilla page-recursos.php (Artículos / pestañas), o
+ *   - un post en la categoría "recursos" (vista de artículo).
+ * Usado para pintar la carcasa con sidebar (body class efs-recursos).
+ * ------------------------------------------------------------------------- */
+function efs_is_recursos() {
+	if ( is_page() ) {
+		return 'page-recursos.php' === get_post_meta( get_the_ID(), '_wp_page_template', true );
+	}
+	if ( is_singular( 'post' ) ) {
+		return has_category( 'recursos' );
+	}
+	return false;
+}
+
+/* -------------------------------------------------------------------------
+ * Presentación KA de un artículo de Recursos.
+ * Lee el meta `efs_ka` (1|2|3) y devuelve clase de gradiente, etiqueta,
+ * icono Material Symbols y "kicker" (meta `efs_kicker`). Compartido por la
+ * tarjeta (page-recursos.php) y el detalle (single.php).
+ * ------------------------------------------------------------------------- */
+function efs_ka_meta( $post_id ) {
+	$n     = (int) get_post_meta( $post_id, 'efs_ka', true ); // 1|2|3, 0 = sin nivel
+	$icons = array( 1 => 'flight_takeoff', 2 => 'handshake', 3 => 'account_balance' );
+	$kick  = get_post_meta( $post_id, 'efs_kicker', true );
+	return array(
+		'n'      => $n,
+		'class'  => $n ? 'ka' . $n : '',
+		'tag'    => $n ? 'KA' . $n : '',
+		'icon'   => isset( $icons[ $n ] ) ? $icons[ $n ] : 'article',
+		'kicker' => $kick ? $kick : 'Erasmus+',
+	);
+}
 
 add_filter( 'template_include', function ( $template ) {
 	if ( is_page() ) {
@@ -66,6 +110,7 @@ add_filter( 'body_class', function ( $classes ) {
 		$tpl = get_post_meta( get_the_ID(), '_wp_page_template', true );
 		if ( 'page-landing.php' === $tpl ) $classes[] = 'efs-landing-page';
 	}
+	if ( efs_is_recursos() ) $classes[] = 'efs-recursos';
 	return $classes;
 } );
 
@@ -135,6 +180,37 @@ add_action( 'after_setup_theme', function () {
 	) );
 } );
 
+/**
+ * Menú canónico del top bar (mismo que el tool en public/index.html).
+ * Se usa como fallback cuando el location "EFS Top Bar" no tiene menú
+ * asignado en wp-admin, garantizando que WP y el tool comparten el mismo
+ * menú en TODAS las páginas (incluida la sección Recursos y sus subpestañas).
+ * Si Oscar asigna un menú en Apariencia → Menús, ese tiene prioridad.
+ */
+function efs_topbar_fallback_menu( $args = array() ) {
+	$is_recursos = function_exists( 'efs_is_recursos' ) && efs_is_recursos();
+	$items = array(
+		array( 'Recursos',            home_url( '/recursos/' ),                            $is_recursos ),
+		array( 'Academia',            'https://campus.eufundingschool.com',                false ),
+		array( 'Join the Club',       home_url( '/academia/' ),                            is_page( 'academia' ) ),
+		array( 'Proyectos',           'https://intake.eufundingschool.com/',               false ),
+		array( 'Convocatorias',       'https://intake.eufundingschool.com/#convocatorias', false ),
+		array( 'Movilidades',         'https://intake.eufundingschool.com/#movilidades',   false ),
+	);
+	$html = '<ul class="efs-topbar__menu">';
+	foreach ( $items as $it ) {
+		$html .= sprintf(
+			'<li%s><a href="%s">%s</a></li>',
+			$it[2] ? ' class="is-current"' : '',
+			esc_url( $it[1] ),
+			esc_html( $it[0] )
+		);
+	}
+	$html .= '</ul>';
+	if ( ! isset( $args['echo'] ) || $args['echo'] ) echo $html;
+	return $html;
+}
+
 // Inyectar el top bar al abrir <body>. Se queda fixed arriba en TODAS las
 // páginas excepto las que usen la plantilla "Landing (sin menú)" — pero la
 // home siempre lleva top bar aunque use ese template (Fase 1 = tráfico orgánico
@@ -145,16 +221,17 @@ add_action( 'wp_body_open', function () {
 	<header class="efs-topbar" role="banner">
 		<div class="efs-topbar__inner">
 			<a class="efs-topbar__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="EU Funding School — Inicio">
-				<span class="efs-topbar__logo" aria-hidden="true"></span>
-				<span class="efs-topbar__name">EU Funding School</span>
+				<img class="efs-topbar__logo"
+					src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/logo-efs-white.png' ); ?>"
+					alt="EU Funding School" width="600" height="169">
 			</a>
-			<nav class="efs-topbar__nav" aria-label="Primary">
+			<nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Primary">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'efs_primary',
 					'container'      => false,
 					'menu_class'     => 'efs-topbar__menu',
-					'fallback_cb'    => '__return_empty_string',
+					'fallback_cb'    => 'efs_topbar_fallback_menu',
 					'depth'          => 1,
 				) );
 				?>
@@ -164,8 +241,38 @@ add_action( 'wp_body_open', function () {
 					Iniciar sesión
 				</a>
 			</div>
+			<button type="button" class="efs-topbar__toggle" id="efs-topbar-toggle"
+					aria-label="Abrir menú" aria-controls="efs-topbar-nav" aria-expanded="false">
+				<span class="efs-topbar__bars" aria-hidden="true"></span>
+			</button>
 		</div>
 	</header>
+	<?php
+} );
+
+/* -------------------------------------------------------------------------
+ * Toggle del menú superior en móvil (≤720px). El nav se oculta y se despliega
+ * con el botón hamburguesa. Replicado en public/index.html del tool.
+ * ------------------------------------------------------------------------- */
+add_action( 'wp_footer', function () {
+	?>
+	<script>
+	(function(){
+		var btn = document.getElementById('efs-topbar-toggle');
+		var nav = document.getElementById('efs-topbar-nav');
+		if (!btn || !nav) return;
+		function close(){ nav.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
+		btn.addEventListener('click', function(e){
+			e.stopPropagation();
+			var open = nav.classList.toggle('is-open');
+			btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+		});
+		nav.addEventListener('click', function(e){ if (e.target.closest('a')) close(); });
+		document.addEventListener('click', function(e){
+			if (nav.classList.contains('is-open') && !nav.contains(e.target) && e.target !== btn) close();
+		});
+	})();
+	</script>
 	<?php
 } );
 

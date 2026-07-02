@@ -1,0 +1,72 @@
+{
+  "id": 1104720,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MADRID",
+    "nivel3": "ÁREA DE GOBIERNO DE POLÍTICAS SOCIALES, FAMILIA E IGUALDAD"
+  },
+  "sedeElectronica": "https://sede.madrid.es/portal/site/tramites/menuitem.c61bb691882ed9d32e202e2084f1a5a0/?vgnextoid=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextchannel=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
+  "codigoBDNS": "903159",
+  "fechaRecepcion": "2026-05-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 450000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES 2026-2027 PROY. DG. EDUCACION ,JUVENTUD Y VOLUNTARIADO EN MATERIA DE JUVENTUD",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES300 - Madrid"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA BBRR GENERALES PARA CONCESIÓN SUBVENCIONES POR AYTO MADRID Y OP",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2013/11/22/BOCM-20131122-34.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE AL DE LA PUBLICACION DEL EXTRACTO EN EL BOLETIN OFICIAL DE LA COMUNIDAD MADRID",
+  "textFin": "QUINCE DIAS HABILES DESDE EL DIA SIGUIENTE AL DE LA PUBLICACION DEL EXTRACT EN EL BOCM.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1447433,
+      "descripcion": "Anexo",
+      "nombreFic": "Anexos a la convocatoria.PDF",
+      "long": 1810894,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    },
+    {
+      "id": 1447432,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES DE LA CONVOCATORIA CONV.SUBV.2026-2027 PROY.DG.ED.JUV Y VOLUNT.EN MATERIA DE JUVENTUD.PDF",
+      "long": 1589648,
+      "datMod": "2026-05-04",
+      "datPublicacion": "2026-05-04"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

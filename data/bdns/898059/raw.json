@@ -1,0 +1,68 @@
+{
+  "id": 1099620,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD FORAL DE NAVARRA",
+    "nivel3": "SERVICIO NAVARRO DE EMPLEO - NAFAR LANSARE"
+  },
+  "sedeElectronica": "www.navarra.es",
+  "codigoBDNS": "898059",
+  "fechaRecepcion": "2026-04-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 6777625.42,
+  "mrr": false,
+  "descripcion": "Subvenciones para la ejecución de Escuelas Taller durante 2026, 2027 y 2028",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    },
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Subvenciones para la ejecución de escuelas taller 2026, 2027 y 2028",
+  "urlBasesReguladoras": "https://www.navarra.es/es/tramites/on/-/line/subvenciones-para-la-ejecucion-de-escuelas-taller-2026-2027-y-2028",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El plazo de presentación de solicitudes se iniciará al día siguiente de publicación en BON",
+  "textFin": "El plazo de presentación finalizará en dos meses desde el día siguiente a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1432885,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución de aprobación de las BBRR_01_1699E-2026.pdf",
+      "long": 420449,
+      "datMod": "2026-04-10",
+      "datPublicacion": "2026-04-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

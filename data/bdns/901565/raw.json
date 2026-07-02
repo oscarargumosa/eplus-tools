@@ -1,0 +1,84 @@
+{
+  "id": 1103126,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOGENTE/MOIXENT",
+    "nivel3": "AYUNTAMIENTO DE MOGENTE/MOIXENT"
+  },
+  "sedeElectronica": "https://moixent.sedelectronica.es",
+  "codigoBDNS": "901565",
+  "fechaRecepcion": "2026-04-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5686.72,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA CONCEJALÍA-DELEGADA DE EDUCACIÓN Y CULTURA POR LA QUE SE APRUEBAN LAS BASES PARA LA CONCESIÓN DE\nBECAS PARA EL FOMENTO DEL EMPLEO EN EL AYUNTAMIENTO DE MOIXENT EN EL MARCO DEL VII PROGRAMA \"MOIXENT ET BECA\n2026\"",
+  "descripcionLeng": "RESOLUCIÓ DE LA REGIDORIA-DELEGADA DE D'EDUCACIÓ I CULTURA PER LA QUAL S'APROVEN LES BASES PER A LA CONCESSIÓ DE\nBEQUES PER AL FOMENT DE L’OCUPACIÓ A L’AJUNTAMENT DE MOIXENT EN EL MARC DEL VII PROGRAMA “MOIXENT ET BECA 2026”",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BASES PARA LA CONCESIÓN DE BECAS PARA EL FOMENTO DEL EMPLEO EN EL AYUNTAMIENTO DE MOIXENT EN EL MARCO DEL VII\nPROGRAMA \"MOIXENT ET BECA 2026\"",
+  "urlBasesReguladoras": "https://moixent.sedelectronica.es/preview-document/0e54f3b2-4c05-4fb7-acd5-b72aacfadc34/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el siguiente al de la publicación del extracto de las bases en el BOP",
+  "textFin": "10 días naturales contados a partir del día siguiente al de la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1442604,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260424_Resolució_DECRETO 2026-0608 [Resolució PR_2026_669 - Decret per el qual s'aproven les bases VII programa Moixent et Beca 2026] (2).pdf",
+      "long": 1286953,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    },
+    {
+      "id": 1442602,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260424_Uns altres_RESOLUCIÓN POR LA CUAL SE APRUEBAN LAS BASES PARA LA CONCESIÓN DE BECAS EN EL MARCO DEL VII PROGRAMA MOIXENT TE BECA 2026 (CAST) (2).pdf",
+      "long": 107824,
+      "datMod": "2026-04-24",
+      "datPublicacion": "2026-04-24"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 210062,
+      "titulo": "Anuncio del Ayuntamiento de Moixent sobre extracto de las bases para la concesión de becas para el fomento del empleo en el Ayuntamiento de Moixent en el marco del VII Programa “Moixent et beca 2026”, aprobada por Decreto de la Concejalía-delegada de Educación y Cultura número 608, de 24 de abril de 2026. BDNS Identificador 901565",
+      "tituloLeng": null,
+      "texto": "<p>Primero. ObjetoEl Ayuntamiento de Moixent pretende impulsar la formación complementaria de jóvenes estudiantes mediante la concesión de cuatro becas a estudiantes mayores de 16 años que cursan alguno de los estudios oficiales relativos a las siguientes áreas de actividad:</p><p>Actividades físicas y deportivas (1 beca)</p><p>Administración (2 becas)</p><p>Educación/Juventud (1beca)</p><p>Segundo. Dotación</p><p>Cada una de las becas estarán dotadas con un importe de 700€, más seguridad social (a abonar en periodos vencidos). En aquellos supuestos que impliquen un período inferior al mes natural, será la parte proporcional correspondiente.</p><p>Tercero. Duración de la beca</p><p>El periodo de duración de las becas será de dos meses cada una, iniciándose éste el 1 de julio de 2026 y finalizando el 31 de agosto de 2026.</p><p>Cuarto. Plazo de presentación de solicitudesEl plazo de presentación será de 10 días naturales contados a partir del día siguiente al de la publicación de un extracto de las bases en el Boletín Oficial de la Provincia.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04958&lang=es",
+      "cve": "BOPV-2026/04958",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,104 @@
+{
+  "id": 1101418,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE LA PALMA",
+    "nivel3": "EXCMO. CABILDO INSULAR DE LA PALMA"
+  },
+  "sedeElectronica": "https://sedeelectronica.cabildodelapalma.es",
+  "codigoBDNS": "899857",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "SUBVENCIÓN A INSTALACIONES DE AUTOCONSUMO MEDIANTE SISTEMAS FOTOVOLTAICOS PARA EMPRESAS Y ENTIDADES SIN ÁNIMO DE LUCRO AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción, transporte y distribución de energía eléctrica",
+      "codigo": "35.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES707 - La Palma"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIÓN A INSTALACIONES DE AUTOCONSUMO MEDIANTE SISTEMAS FOTOVOLTAICOS PARA EMPRESAS Y ENTIDADES SIN ANIMO DE LUCRO",
+  "urlBasesReguladoras": "http://www.bopsantacruzdetenerife.es/boletines/2021/11-08-21/11-08-21.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL PRIMER DÍA HÁBIL SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "textFin": "VEINTE DÍAS HÁBILES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438347,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO III.PDF",
+      "long": 233439,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438348,
+      "descripcion": "CARTEL PUBLICIDAD 2026",
+      "nombreFic": "CARTEL PUBLICIDAD 2026.PDF",
+      "long": 252419,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438346,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO II.PDF",
+      "long": 239267,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438343,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento Convocatoria.PDF",
+      "long": 260461,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438344,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO I.PDF",
+      "long": 286355,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438349,
+      "descripcion": "MODELO ALTA TERCEROS",
+      "nombreFic": "MODELO ALTA TERCEROS.PDF",
+      "long": 168400,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

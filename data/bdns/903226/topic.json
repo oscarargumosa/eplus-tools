@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "903226",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA DE PRESIDENCIA, RETO DEMOGRÁFICO, IGUALDAD Y TURISMO",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA DE AYUDAS A ASTURIANOS Y ASTURIANAS Y DESCENDIENTES RESIDENTES EN EL EXTERIOR. AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-05-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903226",
+  "documents": [
+    {
+      "label": "SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2019/08/12/2019-08241.pdf",
+  "text_inicio": "Día siguiente a publicación de extrato en BOPA",
+  "text_fin": "30 días hábiles desde el siguiente a publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.094Z"
+}

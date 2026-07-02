@@ -1,0 +1,120 @@
+{
+  "id": 1099902,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASARES",
+    "nivel3": "AYUNTAMIENTO DE CASARES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898341",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 DE LAS AYUDAS REGULADAS MEDIANTE LA ORDENANZA Nº 70, DE SUBVENCIONES A ONG'S EN EL MARCO DE LOS \"PREMIOS BLAS INFANTE, CASARES SOLIDARIO\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "ORDENANZA Nº 70 DE SUBVENCIÓN A ONG'S EN EL MARCO DE LOS \"PREMIOS BLAS INFANTE, CASARES SOLIDARIO\"",
+  "urlBasesReguladoras": "https://www.bopmalaga.es/edicto.php?edicto=20210622-05568-2021&control=3738732105",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día después de publicación en BOP",
+  "textFin": "Mes natural desde inicio",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433928,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260312_Resolución_DECRETO 2026-0324 [Resolución PR_2026_156 - Actuación genérica con fiscalización] (1).pdf",
+      "long": 1073158,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433950,
+      "descripcion": "ANEXO II - PROYECTO COOPERACIÓN",
+      "nombreFic": "ANEXO II - COOPERACIÓN.pdf",
+      "long": 144526,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433951,
+      "descripcion": "ANEXO III - PROYECTO EPD",
+      "nombreFic": "ANEXO III - EPD.pdf",
+      "long": 141588,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433949,
+      "descripcion": "ANEXO VI -MEMORIA ECONÓMICA",
+      "nombreFic": "ANEXO VI- MEMORIA ECONÓMICA.pdf",
+      "long": 92659,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433935,
+      "descripcion": "ANEXO IV - DECLARACIÓN RESPONSABLE",
+      "nombreFic": "20260130_ANEXO IV - DECLARACIÓN RESPONSABLE (1).pdf",
+      "long": 25478,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433937,
+      "descripcion": "BASES REGULADORAS",
+      "nombreFic": "20260130_Otros_70.- SUBVENCIONES ONG PREMIOS BLAS INFANTE.pdf",
+      "long": 221814,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433948,
+      "descripcion": "ANEXO V - INFORME JUSTIFICATIVO",
+      "nombreFic": "ANEXO V - INFORME FINAL JUSTICATIVO.pdf",
+      "long": 64561,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433934,
+      "descripcion": "ANEXO SOLICITUD",
+      "nombreFic": "20260130_ANEXO I - SOLICITUD PREMIOS BLAS INFANTE.pdf",
+      "long": 31716,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

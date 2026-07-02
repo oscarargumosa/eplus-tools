@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "900975",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PAMPLONA/IRUÑA / AYUNTAMIENTO DE PAMPLONA/IRUÑA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE EVALUACIÓN INDIVIDUALIZADA DESTINADAS A LA PROMOCIÓN DE JÓVENES ARTISTAS LOCALES 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": null,
+  "deadline": "2026-10-10",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.pamplona.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900975",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos euskera",
+      "url": null
+    },
+    {
+      "label": "Anexos castellano",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.pamplona.es/buscadortramites.aspx?cat=3&subcat=2&pagina=0&enlace=LiConcAyudasSubvenciones",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BON",
+  "text_fin": "INCLUIDO ESTE DÍA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:47.977Z"
+}

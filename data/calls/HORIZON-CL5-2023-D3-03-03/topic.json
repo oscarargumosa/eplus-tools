@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL5-2023-D3-03-03",
+  "ccm2Id": "45646869",
+  "callIdentifier": "HORIZON-CL5-2023-D3-03",
+  "callTitle": "",
+  "title": "System approach for grid planning and upgrade in support of a dominant electric mobility (vehicles and vessels) using AI tools",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-04",
+  "deadline": "2023-10-10",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Sustainable transport\",\"Mobility management\",\"RePowerEU\",\"Digital Agenda\",\"Artificial Intelligence\",\"Energy systems (production, distribution, applicat\",\"grid planning\",\"charging\",\"AI\",\"electric mobility\"]"
+  ],
+  "crossCuttingPriorities": [
+    "RePowerEU",
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2023-D3-03-03.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.283Z"
+}

@@ -1,0 +1,3 @@
+## Expected Outcome
+
+Support action to form a group of operators tasked to assess the operational implications of the innovative aircraft concepts and disruptive technologies addressed by the Clean Aviation programme. Operational gaps and risks will be identified and recommendations delivered to the Clean Aviation JU and project coordinators, to ensure adequate anticipation and favour a seamless deployment of technologies in operations from 2035. See the topic description document published with this call for full details.

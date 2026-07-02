@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL3-2023-BM-01-02",
+  "ccm2Id": "45763196",
+  "callIdentifier": "HORIZON-CL3-2023-BM-01",
+  "callTitle": "",
+  "title": "Identify, inspect, neutralise Unexploded Ordnance (UXO) at sea",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-06-29",
+  "deadline": "2023-11-23",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Fight against threats to the Environment\",\"Maritime Security And Surveillance\",\"Unexploded ordnances (UXO/UO)\",\"Equipments and sub systems\",\"Security\",\"Border and external security\",\"Global Satellite Navigation System (GNSS) / Servic\",\"Search and detection\",\"Intervention and Neutralization\",\"Maritime surrounding areas surveillance\",\"Maritime safety\",\"Identification equipment\",\"Border and coastguards\",\"Long term health hazard prevention in security rel\",\"Artificial Intelligence\",\"Digital Agenda\",\"Increased capabilities\",\"Improved safety and security for maritime economic operators and for EU citizens\",\"Security Union Strategy\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda",
+    "AI"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2023-BM-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.378Z"
+}

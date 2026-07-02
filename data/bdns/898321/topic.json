@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898321",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALICANTE/ALACANT / AYUNTAMIENTO DE ALICANTE/ALACANT",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "CONVOCATORIA DE SUBVENCIONES DESTINADAS A ENTIDADES ASOCIATIVAS INSCRITAS EN EL RME QUE ORGANICEN Y CELEBREN FIESTAS CON LA PARTICIPACIÓN Y PARA EL DISFRUTE GENERAL DE LOS VECINOS EN BARRIOS Y PARTIDAS DE LA CIUDAD DE ALICANTE 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-04-13",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 27000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898321",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.alicante.es/sites/default/files/documentos/202503/07-bases-ejecucion-del-presupuesto-2025.pdf",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN BOP",
+  "text_fin": "A PARTIR DEL DÍA SIGUIENTE AL DE LA PUBLICACIÓN EN EL BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.522Z"
+}

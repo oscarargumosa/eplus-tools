@@ -102,6 +102,8 @@ app.use('/v1/documents', require('./node/src/modules/documents/routes'));
 app.use('/v1/organizations', require('./node/src/modules/organizations/routes'));
 app.use('/v1/entities', require('./node/src/modules/entities/routes'));
 app.use('/v1/research', require('./node/src/modules/research/routes'));
+app.use('/v1/movilidades', require('./node/src/modules/movilidades/routes'));
+app.use('/v1/convocatorias', require('./node/src/modules/convocatorias/routes'));
 
 // Future modules:
 // app.use('/v1/planner',     require('./node/src/modules/planner/routes'));
@@ -110,8 +112,13 @@ app.use('/v1/evaluator',   require('./node/src/modules/evaluator/routes'));
 app.use('/v1/budget',      require('./node/src/modules/budget/routes'));
 app.use('/v1/voice',       require('./node/src/modules/voice/routes'));
 app.use('/v1/sandbox',     require('./node/src/modules/sandbox/routes'));
+app.use('/v1/exporter',    require('./node/src/modules/exporter/routes'));
 app.use('/v1/subscribers', require('./node/src/modules/subscribers/routes'));
+app.use('/v1/events',      require('./node/src/modules/events/routes'));
 app.use('/v1/vps',         require('./node/src/modules/vps/routes'));
+app.use('/v1/master',      require('./node/src/modules/master/routes'));
+app.use('/v1/diagnose',    require('./node/src/modules/diagnose/routes'));
+app.use('/v1/academy',     require('./node/src/modules/academy/routes'));
 
 /* ── SPA fallback — serve index.html for all non-API routes ─── */
 app.get('*', (req, res) => {

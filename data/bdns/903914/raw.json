@@ -1,0 +1,72 @@
+{
+  "id": 1105475,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TOMIÑO",
+    "nivel3": "AYUNTAMIENTO DE TOMIÑO"
+  },
+  "sedeElectronica": "https://tomino.sedelectronica.gal/dossier.1",
+  "codigoBDNS": "903914",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "BASES Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES MUNICIPALES A ENTIDADES SIN ÁNIMO DE LUCRO DEL AYUNTAMIENTO DE TOMIÑO PARA LA REALIZACIÓN DE ACTIVIDADES SOCIALES DURANTE EL AÑO 2026 (EXP. 934/2026)",
+  "descripcionLeng": "BASES E CONVOCATORIA PARA A CONCESIÓN DE SUBVENCIÓNS  MUNICIPAIS A ENTIDADES SEN FIN DE LUCRO DO CONCELLO DE TOMIÑO  PARA A REALIZACIÓN DE ACTIVIDADES SOCIAIS DURANTE O ANO 2026 (EXP. 934/2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES MUNICIPALES A ENTIDADES SIN ÁNIMO DE LUCRO DEL AYUNTAMIENTO DE TOMIÑO PARA LA REALIZACIÓN DE ACTIVIDADES SOCIALES DURANTE EL AÑO 2026 (EXP. 934/2026)",
+  "urlBasesReguladoras": "https://tomino.sedelectronica.gal/dossier.1",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-05-06",
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": "1 mes, a contar desde el día siguiente al de publicación en el BOPPO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449680,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "934 BASES SUBVENCIÓN SOCIAL 2026-1.pdf",
+      "long": 279999,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449678,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "934-26 Bases castellano.docx",
+      "long": 34571,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "900727",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GIJÓN / AYUNTAMIENTO DE GIJÓN",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Convocatoria de subvenciones en materia de vulnerabilidad para los propietarios/usufructuarios que forman parte del Entorno Residencial de Rehabilitación Programada (ERRP) Urbanización Monte Areo, bloques 4A y 5A, Fase I",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-04-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 107000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/900727",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "P010110.PRTR.003.ANEXOI",
+      "url": null
+    },
+    {
+      "label": "P010110.PRTR.003.ANEXOV",
+      "url": null
+    },
+    {
+      "label": "P010110.PRTR.003.ANEXOIII",
+      "url": null
+    },
+    {
+      "label": "P010110.PRTR.003.ANEXOIV",
+      "url": null
+    },
+    {
+      "label": "P010110.PRTR.003.ANEXOII",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.gijon.es/sta/docs/GetDocumentServlet?CUD=16336765516341634437&HASH_CUD=fec85d6702e79a6917cf77540c70957bc939fd34&APP_CODE=STA",
+  "text_inicio": "Al día siguiente de la publicación del extracto en el BOPA",
+  "text_fin": "15 días hábiles desde el día siguiente de la publicación del extracto en el BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": true,
+  "fetchedAt": "2026-05-07T12:06:47.853Z"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "903815",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANTIAGO DE COMPOSTELA / AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA",
+  "nuts_codes": [
+    "ES111"
+  ],
+  "nuts_primary": "ES111",
+  "title": "Aprobación de las Bases de la XVII Edición de los Premios Educacompostela de materiales didácticos en prol de la innovación, la calidad educativa y la renovación pedagógica",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://sede.santiagodecompostela.gal/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME&lang=GA",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903815",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "BASES XVII PREMIOS EDUCACOMPOSTELA GALEGO",
+      "url": null
+    },
+    {
+      "label": "BASES XVII PREMIOS EDUCACOMPOSTELA CASTELLANO",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2025/04/09/2025_0000002168.html",
+  "text_inicio": "ábrese coa publicación das Bases no Boletín Oficial da Provincia da Coruña",
+  "text_fin": "O prazo remata o 18 de setembro de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.305Z"
+}

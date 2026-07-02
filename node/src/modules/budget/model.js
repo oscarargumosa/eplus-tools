@@ -268,9 +268,25 @@ async function createFromIntake(userId, projectId) {
     const [[proj]] = await conn.query('SELECT * FROM projects WHERE id = ?', [projectId]);
     if (!proj) throw new Error('Proyecto no encontrado');
 
-    // 2. If budget already exists, delete it to recreate fresh from intake
+    // 2. If budget already exists, delete it to recreate fresh from intake.
+    //    Preserve user-override rows (manually edited cost lines) — see migration 100.
     const [[existing]] = await conn.query('SELECT id FROM budget_projects WHERE project_id = ?', [projectId]);
+    let preservedOverrides = [];
     if (existing) {
+      // Snapshot user overrides before wipe (key by beneficiary acronym + WP label + category/line_item
+      // so they can be re-attached even if uuids regenerate).
+      const [over] = await conn.query(
+        `SELECT bc.category, bc.subcategory, bc.line_item, bc.units, bc.cost_per_unit, bc.total_cost, bc.notes,
+                bb.acronym AS ben_acronym, bb.name AS ben_name, bb.number AS ben_number,
+                bwp.number AS wp_number, bwp.label AS wp_label
+           FROM budget_costs bc
+           JOIN budget_beneficiaries bb ON bb.id = bc.beneficiary_id
+           JOIN budget_work_packages bwp ON bwp.id = bc.wp_id
+          WHERE bc.budget_id = ? AND bc.is_user_override = 1`,
+        [existing.id]
+      );
+      preservedOverrides = over;
+
       await conn.query('DELETE FROM budget_costs WHERE budget_id = ?', [existing.id]);
       await conn.query('DELETE FROM budget_work_packages WHERE budget_id = ?', [existing.id]);
       await conn.query('DELETE FROM budget_beneficiaries WHERE budget_id = ?', [existing.id]);
@@ -347,19 +363,30 @@ async function createFromIntake(userId, projectId) {
        ORDER BY p.order_index, FIELD(wr.category, 'Manager', 'Trainer/Researcher/Youth worker', 'Technician', 'Administrative')`,
       [projectId]
     );
-    // The frontend Calculator assigns sequential IDs (wrCounter) starting at 1:
-    // Partner 0: IDs 1,2,3,4 (Manager, Trainer, Tech, Admin)
-    // Partner 1: IDs 5,6,7,8 etc.
-    // Map counter → actual worker_rate row
+    // worker_category in activity_intellectual_outputs supports two formats:
+    //   1) Modern (post deterministic-id fix): `${partner_uuid}::${category_name}`
+    //   2) Legacy: integer counter index 1..N (matches Calculator wrCounter order)
+    // Build lookups for both.
     const workerRateByCounter = {};
-    for (let i = 0; i < workerRows.length; i++) {
-      workerRateByCounter[i + 1] = workerRows[i];
-    }
-    // Also map partner_id → [worker_rates]
+    for (let i = 0; i < workerRows.length; i++) workerRateByCounter[i + 1] = workerRows[i];
+
     const workerByPartner = {};
     for (const w of workerRows) {
       if (!workerByPartner[w.partner_id]) workerByPartner[w.partner_id] = [];
       workerByPartner[w.partner_id].push(w);
+    }
+
+    // partner_id::category → worker_rate row (for the new deterministic format)
+    const workerByKey = {};
+    for (const w of workerRows) workerByKey[w.partner_id + '::' + w.category] = w;
+
+    function resolveWorkerRate(workerCategoryField) {
+      if (workerCategoryField == null || workerCategoryField === '') return null;
+      const s = String(workerCategoryField);
+      if (s.includes('::')) return workerByKey[s] || null;          // new format
+      const n = parseInt(s, 10);
+      if (!isNaN(n)) return workerRateByCounter[n] || null;         // legacy integer
+      return null;
     }
 
     // Helper: get route cost between two partners
@@ -401,17 +428,35 @@ async function createFromIntake(userId, projectId) {
       for (const act of activities) {
         switch (act.type) {
 
-          // ── Management → A/A1 Project Coordinator ──────────────
-          // Calculator: applicant = rate_applicant × months, each partner = rate_partner × months
+          // ── Management → A/A1 Personnel by worker category ───────────
+          // Same per-worker-profile model as IO: each row in
+          // activity_management_staff → one A.A1 cost line of days × profile
+          // daily rate. Falls back to the legacy flat-rate model only when
+          // no new staff rows exist (very old projects pre-migration 108).
           case 'mgmt': {
-            const [mgmt] = await conn.query('SELECT * FROM activity_management WHERE activity_id = ?', [act.id]);
-            if (mgmt[0]) {
-              const months = proj.duration_months || 24;
-              for (const p of partners) {
-                const benId = partnerToBen[p.id];
+            const [staff] = await conn.query('SELECT * FROM activity_management_staff WHERE activity_id = ?', [act.id]);
+            if (staff.length) {
+              for (const s of staff) {
+                const benId = partnerToBen[s.partner_id];
                 if (!benId) continue;
-                const monthlyRate = p.role === 'applicant' ? Number(mgmt[0].rate_applicant) : Number(mgmt[0].rate_partner);
-                await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', 'Project Coordinator', months, monthlyRate);
+                const days = Number(s.days) || 0;
+                if (days <= 0) continue;
+                const wr = resolveWorkerRate(s.worker_category);
+                const rate = wr ? Number(wr.rate) : 0;
+                const lineItem = wr ? mapWorkerToLineItem(wr.category) : 'Project Coordinator';
+                await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', lineItem, days, rate);
+              }
+            } else {
+              // Legacy fallback (old projects with rate_applicant/rate_partner).
+              const [mgmt] = await conn.query('SELECT * FROM activity_management WHERE activity_id = ?', [act.id]);
+              if (mgmt[0]) {
+                const months = proj.duration_months || 24;
+                for (const p of partners) {
+                  const benId = partnerToBen[p.id];
+                  if (!benId) continue;
+                  const monthlyRate = p.role === 'applicant' ? Number(mgmt[0].rate_applicant) : Number(mgmt[0].rate_partner);
+                  await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', 'Project Coordinator', months, monthlyRate);
+                }
               }
             }
             break;
@@ -421,20 +466,41 @@ async function createFromIntake(userId, projectId) {
           case 'meeting':
           case 'ltta': {
             const [mob] = await conn.query('SELECT * FROM activity_mobility WHERE activity_id = ?', [act.id]);
-            const [mobParts] = await conn.query('SELECT * FROM activity_mobility_participants WHERE activity_id = ? AND active = 1', [act.id]);
             if (!mob[0]) break;
-            const hostId = mob[0].host_partner_id;
+            const [mobParts] = await conn.query('SELECT * FROM activity_mobility_participants WHERE activity_id = ? AND active = 1', [act.id]);
+
+            // Host puede ser un partner uuid o un extra_destination uuid. Para travel
+            // (routes) usamos el uuid de forma uniforme; para perdiem del destino,
+            // si el host es un extra_dest cargamos sus tarifas (aloj/mant) — las routes
+            // ya pueden tenerlo como endpoint.
+            const hostPartnerId = mob[0].host_partner_id;
+            const hostExtraDestId = mob[0].host_extra_dest_id;
+            const hostId = hostPartnerId || hostExtraDestId;
+            const hostIsExtraDest = !hostPartnerId && !!hostExtraDestId;
+
+            let hostExtraDestPerdiem = null;
+            if (hostIsExtraDest) {
+              const [edRows] = await conn.query(
+                'SELECT accommodation_rate, subsistence_rate FROM extra_destinations WHERE id = ?',
+                [hostExtraDestId]
+              );
+              if (edRows[0]) {
+                hostExtraDestPerdiem = { accom: Number(edRows[0].accommodation_rate), subs: Number(edRows[0].subsistence_rate) };
+              }
+            }
+
             const pax = Number(mob[0].pax_per_partner) || 0;
             const days = Number(mob[0].duration_days) || 0;
             const isOnline = act.online === 1;
 
             const activePartnerIds = new Set(mobParts.map(mp => mp.partner_id));
-            if (hostId && partnerToBen[hostId]) activePartnerIds.add(hostId);
+            // Solo añadimos host al set si es partner (un extra_dest no es beneficiario)
+            if (hostPartnerId && partnerToBen[hostPartnerId]) activePartnerIds.add(hostPartnerId);
 
             for (const partnerId of activePartnerIds) {
               const benId = partnerToBen[partnerId];
               if (!benId) continue;
-              const isHost = partnerId === hostId;
+              const isHost = !hostIsExtraDest && partnerId === hostPartnerId;
 
               // Travel (only non-host, non-online)
               if (!isOnline && !isHost) {
@@ -443,9 +509,10 @@ async function createFromIntake(userId, projectId) {
                   await addToCostLine(conn, budgetId, benId, bwpId, 'C', 'C1', 'Travel', pax, routeCost);
                 }
               }
-              // Accommodation + Subsistence (all partners, non-online)
+              // Accommodation + Subsistence — si el destino es extra_dest usamos sus
+              // tarifas (aloj/mant), si es partner caemos al comportamiento previo.
               if (!isOnline) {
-                const pd = perdiem[partnerId] || { accom: 0, subs: 0 };
+                const pd = hostExtraDestPerdiem || perdiem[partnerId] || { accom: 0, subs: 0 };
                 if (pd.accom > 0) await addToCostLine(conn, budgetId, benId, bwpId, 'C', 'C1', 'Accommodation', pax * days, pd.accom);
                 if (pd.subs > 0) await addToCostLine(conn, budgetId, benId, bwpId, 'C', 'C1', 'Subsistence', pax * days, pd.subs);
               }
@@ -460,10 +527,9 @@ async function createFromIntake(userId, projectId) {
               const benId = partnerToBen[io.partner_id];
               if (!benId) continue;
               const days = Number(io.days) || 0;
-              const wr = workerRateByCounter[io.worker_category];
+              const wr = resolveWorkerRate(io.worker_category);
               const rate = wr ? Number(wr.rate) : 0;
               const lineItem = wr ? mapWorkerToLineItem(wr.category) : 'Other';
-              // If mapped to Project Coordinator, it goes to management line
               await addToCostLine(conn, budgetId, benId, bwpId, 'A', 'A1', lineItem, days, rate);
             }
             break;
@@ -560,7 +626,42 @@ async function createFromIntake(userId, projectId) {
             }
             break;
           }
+
+          // ── Financial Support to Third Parties → D/D1 ──
+          // Cascade funding / sub-grants. Línea presupuestaria separada en EACEA
+          // (categoría D1), no se suma al C3/Other ni a Subcontracting.
+          case 'fstp': {
+            const [gcosts] = await conn.query('SELECT * FROM activity_generic_costs WHERE activity_id = ? AND active = 1', [act.id]);
+            for (const gc of gcosts) {
+              const benId = partnerToBen[gc.partner_id];
+              if (!benId) continue;
+              await addToCostLine(conn, budgetId, benId, bwpId, 'D', 'D1', 'Financial support to third parties', 1, Number(gc.amount || 0));
+            }
+            break;
+          }
         }
+      }
+    }
+
+    // 9. Re-apply user overrides (matching by beneficiary acronym + WP number + category + line_item)
+    if (preservedOverrides.length) {
+      const [bens] = await conn.query('SELECT id, acronym, name, number FROM budget_beneficiaries WHERE budget_id = ?', [budgetId]);
+      const [bwpsNew] = await conn.query('SELECT id, number FROM budget_work_packages WHERE budget_id = ?', [budgetId]);
+      const benByAcronym = {};
+      for (const b of bens) benByAcronym[(b.acronym || b.name || '').toLowerCase()] = b.id;
+      const bwpByNumber = {};
+      for (const w of bwpsNew) bwpByNumber[w.number] = w.id;
+
+      for (const o of preservedOverrides) {
+        const benId = benByAcronym[(o.ben_acronym || o.ben_name || '').toLowerCase()];
+        const wpId  = bwpByNumber[o.wp_number];
+        if (!benId || !wpId) continue;
+        await conn.query(
+          `UPDATE budget_costs
+              SET units=?, cost_per_unit=?, total_cost=?, notes=?, is_user_override=1
+            WHERE budget_id=? AND beneficiary_id=? AND wp_id=? AND category=? AND line_item=?`,
+          [o.units, o.cost_per_unit, o.total_cost, o.notes, budgetId, benId, wpId, o.category, o.line_item]
+        );
       }
     }
 
@@ -570,19 +671,20 @@ async function createFromIntake(userId, projectId) {
   finally { conn.release(); }
 }
 
-/** Accumulate into an existing cost line — adds total_cost directly */
+/** Accumulate into an existing cost line — adds total_cost directly.
+ *  Skips rows marked is_user_override=1 (preserved manual edits). */
 async function addToCostLine(conn, budgetId, benId, wpId, category, subcategory, lineItem, addUnits, addCostPerUnit) {
   const [rows] = await conn.query(
-    `SELECT id, units, cost_per_unit, total_cost FROM budget_costs
+    `SELECT id, units, cost_per_unit, total_cost, is_user_override FROM budget_costs
      WHERE budget_id = ? AND beneficiary_id = ? AND wp_id = ? AND category = ? AND line_item = ?`,
     [budgetId, benId, wpId, category, lineItem]
   );
   if (rows[0]) {
+    if (rows[0].is_user_override) return; // Respect manual edits
     const existingTotal = Number(rows[0].total_cost) || 0;
     const addTotal = Number(addUnits) * Number(addCostPerUnit);
     const newTotal = existingTotal + addTotal;
     const newUnits = Number(rows[0].units) + Number(addUnits);
-    // Recalculate average cost_per_unit from accumulated total
     const avgRate = newUnits > 0 ? newTotal / newUnits : 0;
     await conn.query(
       'UPDATE budget_costs SET units = ?, cost_per_unit = ?, total_cost = ? WHERE id = ?',
@@ -594,10 +696,15 @@ async function addToCostLine(conn, budgetId, benId, wpId, category, subcategory,
 function mapWorkerToLineItem(workerCategory) {
   if (!workerCategory) return 'Other';
   const lc = workerCategory.toLowerCase();
+  // English (Erasmus+ legacy)
   if (lc.includes('manager')) return 'Project Coordinator';
   if (lc.includes('trainer') || lc.includes('youth') || lc.includes('researcher')) return 'Youth Trainer';
   if (lc.includes('tech')) return 'Finance Manager';
   if (lc.includes('admin')) return 'Communications Officer';
+  // Spanish (Data E+ default categories used in SMP-COSME and other ES projects)
+  if (lc.includes('profesional reconocido')) return 'Youth Trainer';
+  if (lc.includes('técnico') || lc.includes('tecnico') || lc.includes('junior')) return 'Finance Manager';
+  if (lc.includes('auxiliar') || lc.includes('apoyo')) return 'Communications Officer';
   return 'Other';
 }
 

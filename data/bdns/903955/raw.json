@@ -1,0 +1,55 @@
+{
+  "id": 1105516,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GAVÀ",
+    "nivel3": "AYUNTAMIENTO DE GAVÀ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903955",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 58350,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA SOLICITUD Y OTORGAMIENTO DE SUBVENCIONES A ENTIDADES PARA EL DESARROLLO DE ACTIVIDADES Y SERVICIOS EN LA CIUDAD DE GAVÀ, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA-LINIA 2. CULTURA. EJERCICIO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA SOL·LICITUD I ATORGAMENT DE SUBVENCIONS A ENTITATS PEL DESENVOLUPAMENT D’ACTIVITATS I SERVEIS A LA CIUTAT DE GAVÀ, EN RÈGIM DE CONCURRÈNCIA COMPETITIVA-LINIA 2. CULTURA. EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS ESPECÍFICAS PARA LA CONCESIÓN DE SUBVENCIONES A ENTIDADES, PARA EL DESARROLLO DE ACTIVIDADES Y SERVICIOS EN LA CIUDAD DE GAVÀ, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA.",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3722827",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-05-25",
+  "textInicio": "A partir del día siguiente al de la publicación de la convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

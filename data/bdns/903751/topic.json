@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "903751",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CATALUÑA / AUTORITAT CATALANA DE PROTECCIÓ DE DADES",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "Resolución por la que se aprueba la convocatoria derivada de las bases reguladoras para la concesión en régimen de concurrencia competitiva de dos becas de formación en materia de protección de datos personales",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-05-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 23000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "80.0",
+      "descripcion": "Servicios de investigación y seguridad"
+    }
+  ],
+  "apply_url": "https://www.apdcat.cat/ca/transparencia/gestio-economica/convocatories--subvencions-i-ajuts-publics",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903751",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogc.gencat.cat/es/document-del-dogc/?documentId=1042955",
+  "text_inicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "text_fin": "20 Dies Hàbils",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.289Z"
+}

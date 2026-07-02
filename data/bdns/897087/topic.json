@@ -1,0 +1,76 @@
+{
+  "source": "bdns",
+  "source_id": "897087",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DEL MEDIO RURAL",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "ANULADA ayudas para las inversiones en transformación y comercialización de productos agrarios cofinanciadas por el Fondo Europeo Agrícola de Desarrollo Rural (Feader)",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 681281.93,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897087",
+  "documents": [
+    {
+      "label": "informe de error",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.xunta.es/diario-oficial-galicia",
+  "text_inicio": "Desde el día siguiente a su publicación en Diario Oficial de Galicia",
+  "text_fin": "un mes contado a partir del dia siguiente a publicacion en DOG",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.122137",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS REGIONALES A LA INVERSIÓN "
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.816Z"
+}

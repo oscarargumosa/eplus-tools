@@ -1,0 +1,26 @@
+## Expected Outcome
+
+Project results are expected to contribute to some or all of the following expected outcomes:
+- Improved protection of minors, including by more reliable age assessments and by minimising the use of intrusive age assessment methods;
+- Improved adaptation, preparedness and cooperation of authorities in the fight against human trafficking;
+- Expanded European-based knowledge on reliability, accuracy and effectiveness of age assessment methods.
+
+## Scope
+
+Many unaccompanied children and young persons arriving at the external EU borders and seeking asylum, lack official documents showing their identity and age. Age assessment methods are important as they contribute to the determination of, for example, where an individual will be initially housed and what services, supports, and legal processes they will receive to ensure protection and, if applicable, child protection.
+
+In other cases, minors are victim of trafficking of human beings (THB) criminal activities, either across the EU external borders, or within the EU borders. In other cases again, age assessment methods are necessary for law enforcement investigations on protecting children, forensic investigation, and/or the identification of victims.
+
+No age assessment method can offer a 100% reliability. Different approaches have different sensitivity and specificity, and different sample sizes and representativeness, and some approaches are based on a non-European knowledge base. Furthermore, there is considerable variation in methods of age assessment. Methods may use approaches as diverse as interviews, psychological assessments and other holistic approaches; medical approaches such as X-rays, CT scans, DNA methylation, dental observation, or other analyses; other approaches such as image analysis; and they may use or not artificial intelligence (AI) for data analysis.
+
+EU regulations, and guidelines by the European Union Asylum Agency (EUAA)[[EASO Age assessment practices in EU+ countries: updated findings (europa.eu) https://euaa.europa.eu/sites/default/files/EASO_Age_assessment_practices_updated.pdf[]], include safeguards and recommendations, such as that the least invasive methods should be used, and that medical methods should be used as a last resort. Further studies, reports or documents have also been elaborated by the European Migration Network[1], European networks of security practitioners for innovation, as well as at national level. The action funded by this topic should also consider these, as well as previous research, including but not limited to research by other relevant EU Framework Programmes projects.
+
+This Coordination and Support Action should not develop methods or technologies of age assessment. Rather, it will analyse, including with practitioners, the current and potential methods for age assessment. It should assess and compare scientific reliability, sensitivity and specificity of different methods, as well as their potential risks for fundamental rights and how to minimize them.
+
+While the research results would not imply any legislative or policy decision on age assessment methods, the research will develop evidence-based results on options for more (compared to the state-of-the-art) appropriate models of age assessment methods that protect fundamental rights, ensuring the use of an inclusive approach that addresses diverse needs. The results of research funded by this topic will contribute to capabilities for better identification of children and minors in the migratory, security, border management and other contexts, following the principles of the EU Strategy on the rights of the child[2]. They will also contribute to the exchange of practices among European authorities.
+
+Synergies with other Horizon Europe Cluster 3 Destinations, such as “Better protect the EU and its citizens against Crime and Terrorism” and “Disaster-Resilient Society for Europe”, as well as with Destinations of Horizon Europe Cluster 2 “Inclusive Society”.
+
+[1]  https://ec.europa.eu/home-affairs/networks/european-migration-network-emn_en
+
+[2]  COM(2021) 142 final.

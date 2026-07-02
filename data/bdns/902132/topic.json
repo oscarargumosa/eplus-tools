@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "902132",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE UNIVERSIDAD",
+  "nuts_codes": [
+    "ES43"
+  ],
+  "nuts_primary": "ES43",
+  "title": "Ayudas curso 2026/2027 para el alumnado universitario de Extremadura del Programa de movilidad Erasmus+, según Resolución de 16 de abril de 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "https://erasmusuniversidad.educarex.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902132",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/pdfs/doe/2025/1450o/25040113.pdf",
+  "text_inicio": "a partir del día siguiente al de la publicación de la convocatoria y del extracto en DOE",
+  "text_fin": "un mes, desde el día siguiente al de la publicación de la convocatoria y del extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.535Z"
+}

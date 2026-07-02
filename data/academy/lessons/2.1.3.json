@@ -1,0 +1,58 @@
+{
+  "id": "2.1.3",
+  "code": "Part B · 2.1.3",
+  "module": "EACEA",
+  "moduleTitle": "Quality of design and implementation",
+  "bloque": "F — Técnicas de redacción",
+  "title": "2.1.3 Equipos, personal y expertos",
+  "subtitle": "Cómo presentar al equipo humano del proyecto para que el evaluador crea que tenéis las manos y las cabezas para ejecutarlo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.1.3",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Tiendes a rellenar esta pregunta con cargos genéricos (\"un coordinador, varios expertos\") sin explicar quién hace qué, y queda como una plantilla copiada que no convence a nadie.",
+    "comprender": "Que aquí demuestras que el consorcio tiene los PERFILES adecuados y que han pensado cómo van a trabajar juntos: roles claros, reparto de tareas y coordinación, no una lista de nombres.",
+    "objetivo": "Saber describir los equipos por función (project manager, expertos senior/junior, formadores, técnicos, administración…), asignar a cada uno tareas concretas y explicar el mecanismo por el que colaboran entre socios.",
+    "confusion": "Creer que basta con listar cargos. El evaluador no quiere un organigrama vacío: quiere ver que cada perfil existe porque una tarea del proyecto lo necesita, y que la colaboración entre socios está organizada.",
+    "importa": "Porque un proyecto bien diseñado sobre el papel pero sin un equipo capaz de ejecutarlo es un riesgo. Esta pregunta es donde la Agencia comprueba que hay manos suficientes y competentes detrás del plan."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El apartado 2.1.3 pide describir el factor humano del proyecto:</p><div class=\"callout callout-key\"><b>📋 Describe los equipos de trabajo y cómo trabajarán juntos. Enumera el personal por función o perfil (gestor de proyecto, expertos senior y junior, formadores, personal técnico, administrativo…) y las tareas de cada uno. Incluye los CVs del personal clave si la convocatoria lo requiere.</b></div><p>Hay tres ingredientes que no pueden faltar:</p><ul><li><b>Quién</b> — los perfiles, agrupados por función (no nombres propios necesariamente, sino roles).</li><li><b>Qué hace cada uno</b> — la tarea concreta que asume ese perfil dentro del proyecto.</li><li><b>Cómo colaboran</b> — el mecanismo por el que los equipos de distintos socios trabajan coordinados (no por arte de magia).</li></ul><p>Y un detalle de procedimiento: si la convocatoria pide <b>CVs</b> del personal clave, prepáralos; su ausencia puede penalizar.</p>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>La clave es presentar el equipo <b>conectado al trabajo</b>, no como una nómina suelta. El evaluador debe poder responder a una pregunta: <em>¿este consorcio tiene a quién hacer cada cosa?</em></p><p>Tres movimientos que suben la nota:</p><ol class=\"obj\"><li><b>Vincula cada perfil a una función del proyecto.</b> No \"un experto senior\", sino \"un experto senior en evaluación de competencias, responsable de diseñar el marco de indicadores del WP2\". El perfil existe porque una tarea lo reclama.</li><li><b>Reparte por seniority de forma creíble.</b> Senior diseña y supervisa; junior ejecuta y produce; técnico/administrativo dan soporte. Un proyecto donde todo lo hacen seniors es caro e inverosímil; uno sin ningún senior, frágil.</li><li><b>Explica la colaboración, no la asumas.</b> Di cómo se coordinan los equipos de los distintos socios: reuniones de trabajo, responsables por WP, herramientas compartidas. \"Trabajarán juntos\" no es un mecanismo; \"cada WP tiene un líder que coordina a los equipos de los socios participantes\" sí lo es.</li></ol><div class=\"callout callout-good\"><b>Evidencia de capacidad.</b> Cuando un perfil enlaza con la experiencia del socio que lo aporta (\"el formador lo aporta el socio X, con 10 años formando en este ámbito\"), el equipo deja de ser una promesa y se vuelve creíble. Capacidad demostrada > cargo declarado.</div>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Una <b>tabla de perfiles</b> que conecta función, tarea y socio que lo aporta:</p><table class=\"cmp\"><thead><tr><th>Perfil / función</th><th>Tarea en el proyecto</th><th>Lo aporta</th></tr></thead><tbody><tr><td>Project manager</td><td>Coordinación general, plazos, presupuesto, relación con la Agencia</td><td>Coordinador (socio líder)</td></tr><tr><td>Experto senior (pedagogía)</td><td>Diseña el marco metodológico y la rúbrica de calidad (WP1)</td><td>Socio A (universidad)</td></tr><tr><td>Expertos junior (2)</td><td>Producen los materiales y secuencias didácticas (WP2)</td><td>Socios A y B</td></tr><tr><td>Formadores (3)</td><td>Imparten el pilotaje y la mentoría entre pares (WP3)</td><td>Socios B y C</td></tr><tr><td>Técnico TIC</td><td>Plataforma online y soporte de los recursos digitales</td><td>Socio C</td></tr><tr><td>Administrativo</td><td>Justificación, logística de reuniones y eventos</td><td>Coordinador</td></tr></tbody></table><p>Y un párrafo de <b>colaboración</b> que cierra la pregunta:</p><div class=\"callout callout-good\">\"Cada WP tiene un líder responsable de coordinar a los equipos de los socios implicados. El project manager convoca un comité de coordinación trimestral y mantiene un espacio compartido de trabajo. Los expertos senior supervisan la calidad de lo que producen los junior mediante revisión cruzada entre socios.\"</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Listo los cargos y ya está.»</b> → Una lista de cargos sin tareas es un organigrama vacío. Cada perfil debe llevar pegada la tarea concreta que justifica su presencia.</li><li><span class=\"err-x\">✗</span> <b>«Todo el equipo son expertos senior.»</b> → Inverosímil y carísimo. Un reparto realista mezcla seniority: senior diseña, junior ejecuta, soporte sostiene.</li><li><span class=\"err-x\">✗</span> <b>«Trabajarán juntos de forma coordinada.»</b> → No es un mecanismo, es un deseo. Explica CÓMO: líderes de WP, comité, herramientas, revisión cruzada.</li><li><span class=\"err-x\">✗</span> <b>«Los perfiles no se ven en ningún work package.»</b> → Si el equipo que describes aquí no aparece ejecutando las tareas de los WP, el evaluador detecta que el organigrama es decorativo.</li><li><span class=\"err-x\">✗</span> <b>«La convocatoria pedía CVs y no los puse.»</b> → Requisito incumplido = penalización evitable. Comprueba siempre si la convocatoria los exige.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · 2.1.3</b></td><td>El texto literal: equipos, perfiles por función con sus tareas, cómo trabajan juntos y los CVs si la convocatoria los pide.</td></tr><tr><td><b>kb-0095</b> Rúbrica del evaluador</td><td>Confirma que se valora la adecuación del equipo al trabajo previsto y la claridad de la colaboración entre socios.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recomienda vincular cada perfil a tareas reales, repartir la seniority de forma creíble y conectar los perfiles con la experiencia de los socios.</td></tr></tbody></table>"
+    }
+  ]
+}

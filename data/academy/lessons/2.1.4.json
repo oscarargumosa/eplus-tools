@@ -1,0 +1,58 @@
+{
+  "id": "2.1.4",
+  "code": "Part B · 2.1.4",
+  "module": "EACEA",
+  "moduleTitle": "Quality of design and implementation",
+  "bloque": "G — Presupuesto",
+  "title": "2.1.4 Coste-eficiencia y gestión financiera",
+  "subtitle": "Cómo demostrar que el dinero está bien aprovechado y bien gestionado cuando no hay facturas: la coherencia entre coste y trabajo.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "25–40 min",
+    "Idioma": "Español",
+    "Formato": "Clase por pregunta del formulario",
+    "Sección formulario": "Part B 2.1.4",
+    "Criterio": "Quality of design and implementation (30 pts)",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Te piden hablar de coste-eficiencia en un modelo donde no hay desglose de gasto ni facturas, y te quedas en blanco: ¿qué demuestro si no hay tickets que enseñar?",
+    "comprender": "Que en lump sum el coste-eficiencia no se prueba con facturas, sino con la COHERENCIA entre el importe de cada work package y el trabajo y los resultados que produce: que el dinero está repartido donde genera valor.",
+    "objetivo": "Saber justificar que tus recursos están bien asignados (más dinero donde hay más trabajo e impacto), que la gestión no se come el proyecto y que el reparto entre socios es sensato y transparente.",
+    "confusion": "Pensar que coste-eficiencia es \"gastar poco\". No: es obtener el máximo resultado por euro. Un proyecto barato que entrega poco es menos eficiente que uno bien dotado que entrega mucho.",
+    "importa": "Porque la Agencia reparte fondos públicos y necesita ver que cada tramo de tu lump sum compra trabajo real. Si el reparto parece arbitrario o la gestión hinchada, el evaluador desconfía de todo el presupuesto."
+  },
+  "sections": [
+    {
+      "id": "que-pide",
+      "kind": "content",
+      "title": "Qué pide el formulario",
+      "html": "<p>El apartado 2.1.4 cierra el criterio de calidad con el ángulo del dinero:</p><div class=\"callout callout-key\"><b>📋 Describe las medidas para lograr los resultados de forma coste-eficiente (la mejor relación entre recursos invertidos y resultados obtenidos). Explica cómo gestionarás las finanzas del proyecto y cómo se asignan y gestionan los recursos dentro del consorcio.</b></div><p>Te piden tres cosas:</p><ul><li><b>Coste-eficiencia</b> — por qué tu plan obtiene buenos resultados sin malgastar; el equilibrio entre lo que inviertes y lo que entregas.</li><li><b>Gestión financiera</b> — cómo controlas el dinero a lo largo del proyecto (aunque sea a tanto alzado, hay que coordinar los pagos entre socios).</li><li><b>Asignación de recursos en el consorcio</b> — cómo se reparte el importe entre los socios y por qué ese reparto es justo respecto al trabajo de cada uno.</li></ul><div class=\"callout callout-warn\"><b>Recuerda el modelo lump sum.</b> No hay facturas ni justificación de gasto. Lo que se juzga es la <b>coherencia coste ↔ trabajo</b>: que el importe de cada WP corresponda al esfuerzo y al resultado que produce.</div>"
+    },
+    {
+      "id": "como-puntuar",
+      "kind": "content",
+      "title": "Cómo responder para puntuar alto",
+      "html": "<p>Como no puedes mostrar tickets, tu argumento de eficiencia se apoya en <b>tres demostraciones</b>:</p><ol class=\"obj\"><li><b>El reparto sigue al trabajo.</b> Muestra que los WP con más actividades, más resultados y más impacto se llevan más presupuesto; y que los de gestión o difusión se quedan en una proporción razonable. Un reparto que \"cuenta una historia\" coherente ES la prueba de eficiencia.</li><li><b>La gestión no se hincha.</b> Una referencia sana es mantener la coordinación en torno a un <b>~20 % máximo</b>. Si el WP de gestión se come un tercio del proyecto, el evaluador lee derroche.</li><li><b>El consorcio reparte con lógica.</b> Cada socio recibe en proporción a las tareas que asume. Si un socio cobra mucho y hace poco (o al revés), aparece un desequilibrio que penaliza.</li></ol><div class=\"callout callout-good\"><b>Eficiencia = resultado por euro, no euro mínimo.</b> No vendas que eres barato; vende que cada euro produce resultado tangible. Reutilizar recursos existentes, evitar duplicidades entre socios y compartir infraestructura son argumentos clásicos de eficiencia que sí puntúan.</div><p>Un buen cierre menciona cómo se <b>coordinan los pagos</b>: el coordinador recibe la subvención y la transfiere a los socios según lo acordado en el convenio de consorcio, ligando cada transferencia al trabajo entregado.</p>"
+    },
+    {
+      "id": "ejemplo",
+      "kind": "content",
+      "title": "Ejemplo / cómo se ve bien",
+      "html": "<p>Así se argumenta la eficiencia <b>mostrando el reparto</b> (proyecto KA220, 250.000 €):</p><table class=\"cmp\"><thead><tr><th>Work package</th><th>Importe</th><th>%</th><th>Por qué ese importe</th></tr></thead><tbody><tr><td>WP1 · Gestión y coordinación</td><td>42.500 €</td><td>17 %</td><td>Coordinación de 5 socios, 24 meses; proporción contenida</td></tr><tr><td>WP2 · Marco metodológico</td><td>70.000 €</td><td>28 %</td><td>Trabajo experto intensivo, produce el resultado central</td></tr><tr><td>WP3 · Pilotaje en centros</td><td>87.500 €</td><td>35 %</td><td>El WP con más actividad y más participantes</td></tr><tr><td>WP4 · Difusión y sostenibilidad</td><td>50.000 €</td><td>20 %</td><td>Eventos multiplicadores y materiales abiertos</td></tr></tbody></table><p>Frases que demuestran eficiencia:</p><ul><li>\"El grueso (35 %) va al pilotaje, que es donde se genera el impacto sobre los beneficiarios; la gestión se mantiene en el 17 %.\"</li><li>\"Reutilizamos la plataforma del socio C en vez de desarrollar una nueva, lo que libera recursos para producir más materiales.\"</li><li>\"Cada socio recibe en proporción a sus WP; el reparto y el calendario de pagos se fijan en el acuerdo de consorcio, ligados a la entrega de resultados.\"</li></ul>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Como es lump sum, no hay nada que justificar aquí.»</b> → Falso. No justificas gasto, pero sí la coherencia coste↔trabajo. Esa coherencia ES tu argumento de eficiencia.</li><li><span class=\"err-x\">✗</span> <b>«Coste-eficiente = lo más barato posible.»</b> → No. Es máximo resultado por euro. Un proyecto raquítico que entrega poco es ineficiente, no eficiente.</li><li><span class=\"err-x\">✗</span> <b>«La gestión puede llevarse un tercio del presupuesto.»</b> → Señal de derroche. Mantén la coordinación en torno al ~20 % máximo.</li><li><span class=\"err-x\">✗</span> <b>«Reparto el dinero a partes iguales entre socios.»</b> → Si las tareas no son iguales, el reparto igualitario delata que no se pensó. El dinero sigue al trabajo, no al número de socios.</li><li><span class=\"err-x\">✗</span> <b>«No explico cómo llega el dinero a cada socio.»</b> → La gestión financiera incluye decir cómo se transfieren los fondos. Sin eso, falta la parte de \"gestión\" de la pregunta.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "De dónde sale esto",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>Formulario Part B · 2.1.4</b></td><td>El texto literal: medidas de coste-eficiencia, gestión financiera y asignación de recursos en el consorcio.</td></tr><tr><td><b>kb-0095</b> Rúbrica del evaluador</td><td>Confirma que se valora la coherencia entre coste y trabajo, una gestión contenida y un reparto justo entre socios.</td></tr><tr><td><b>kb-0090</b> Tips EACEA</td><td>Recuerda que en lump sum la eficiencia se demuestra con coherencia, no con facturas, y aconseja contener el peso de la gestión.</td></tr><tr><td><b>kb-0018</b> Handbook KA2 lump sums</td><td>Base del modelo a tanto alzado: el dinero vive en los WP y se paga contra resultados, no contra gasto.</td></tr></tbody></table>"
+    }
+  ]
+}

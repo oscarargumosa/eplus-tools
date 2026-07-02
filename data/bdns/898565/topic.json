@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "898565",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DE GUADAÍRA / AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES  POR CONCURRENCIA COMPETITIVA DE LA DELEGACIÓN DE EDUCACIÓN, PARA ACTIVIDADES EXTRAESCOLARES, LÍNEAS 1 y 2,  AÑO 2026. (expte. 4433/2026)",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 33235.4,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898565",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1774911638578-final-32d09dfe.pdf",
+  "text_inicio": "Quince días a contar del día siguiente a la publicación en el BOP Sevilla",
+  "text_fin": "Pasados los quince días a contar del día siguiente a la publicación en el BOP Sevilla",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.601Z"
+}

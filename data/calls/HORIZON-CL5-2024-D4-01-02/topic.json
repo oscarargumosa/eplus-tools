@@ -1,0 +1,31 @@
+{
+  "identifier": "HORIZON-CL5-2024-D4-01-02",
+  "ccm2Id": "45648777",
+  "callIdentifier": "HORIZON-CL5-2024-D4-01",
+  "callTitle": "",
+  "title": "Smart grid-ready buildings",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-12-07",
+  "deadline": "2024-04-18",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Energy efficient buildings\",\"RePowerEU\",\"Energy systems, smart energy, smart grids, wireles\",\"Digital Agenda\",\"energy\",\"buildings\",\"demand response\",\"smart grid\",\"energy efficiency\",\"utility nodes\"]"
+  ],
+  "crossCuttingPriorities": [
+    "RePowerEU",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D4-01-02.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.718Z"
+}

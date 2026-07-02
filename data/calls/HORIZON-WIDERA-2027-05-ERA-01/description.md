@@ -1,0 +1,23 @@
+## Expected Outcome
+
+Proposals will deliver on the impact “A more open, equitable and inclusive research and innovation ecosystem”, contributing to the ERA Structural Policy “Enabling open science via sharing and re-use of data, including through the European Open Science Cloud (EOSC)”. Project results are expected to contribute to all of the following expected outcomes:
+- Increased number of EU research performing organisations (RPOs) with well-developed policies on open access publications, which include clause(s) for rights retention;
+- Higher share of research publications in open access across the EU and Associated Countries, especially in low-performing countries with respect to open access;
+- Increase of access to and preservation of scientific information through institutional infrastructures, such as repositories.
+
+## Scope
+
+While the EU is making progress on its open access objectives, recent reports show that there is still significant room for improvement. There is variable progress across Member States and Associated Countries, and less growth in open access through repositories compared to open access publishing.
+
+Rights retention[1] strategies, embedded in institutional or funder policies and requirements, have been identified as non-legislative measures with very good potential to support the uptake of open access. At the same time, such strategies empower researchers and institutions to safeguard their rights. The cOAlition S of research funders has supported the implementation of relevant policies among funding organisations to enable open access, while research institutions in some EU and Associated Countries have started to implement rights retention strategies and policies with increasing success.
+
+This topic aims to support RPOs across the EU to work strategically on rights retention policies to boost open access and reuse of scientific information. Proposals should enable RPOs to adopt and/or expand their policies on open access and rights retention tailored to specific national legal and policy contexts. They should also consider related issues such as research assessment and its reform, the costs of providing open access, and different disciplinary practices and needs, among others.
+
+Consortia may comprise RPOs, libraries, policy-makers, funders, and others.
+
+To achieve the expected outcomes, proposals should address at least the activities outlined below and propose any additional, complementary activities:
+- Develop networks of research institutions working towards aligned institutional policies to enable open access through rights retention;
+- Produce comprehensive guidance, tools and training materials, and document lessons learnt and best practice to support RPOs to adopt and expand policies on rights retention;
+- Design strategies to maximise approval and adoption of rights retention and open access policies by researchers.
+
+[1]  Rights retention means that authors or their institutions retain copyright and sufficient rights over scholarly works under publication to make them immediately available and reusable under an open license, that is a CC BY or equivalent license, independent of publisher policies. Such rights retention may apply to either the final publishable form (Version of Record) and/or the version accepted for publication, including all changes made during the peer review process (Author Accepted Manuscript).

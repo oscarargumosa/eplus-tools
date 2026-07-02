@@ -1,0 +1,32 @@
+{
+  "identifier": "HORIZON-CL5-2023-D3-03-05",
+  "ccm2Id": "45646906",
+  "callIdentifier": "HORIZON-CL5-2023-D3-03",
+  "callTitle": "",
+  "title": "Creation of a standardised and open-source peer-to-peer energy sharing platform architecture for the energy sector",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-05-04",
+  "deadline": "2023-10-10",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"RePowerEU\",\"Energy systems (production, distribution, applicat\",\"Energy systems, smart energy, smart grids, wireles\",\"Digital Agenda\",\"Social sciences and humanities\",\"platform\",\"electricity grid\",\"trading\"]"
+  ],
+  "crossCuttingPriorities": [
+    "RePowerEU",
+    "SSH",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2023-D3-03-05.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.229Z"
+}

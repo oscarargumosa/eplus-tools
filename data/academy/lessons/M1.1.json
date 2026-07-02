@@ -1,0 +1,70 @@
+{
+  "id": "M1.1",
+  "code": "M1.1 · Fundamentos",
+  "module": "M1",
+  "moduleTitle": "Fundamentos: ¿Qué es Erasmus+?",
+  "bloque": "A — Fundamentos",
+  "title": "¿Qué es Erasmus+? El programa en 10 minutos",
+  "subtitle": "El mapa mental para entender, sin tecnicismos, qué es este programa y qué puede hacer por tu organización.",
+  "meta": {
+    "Nivel": "Iniciación",
+    "Duración": "10–15 min",
+    "Idioma": "Español",
+    "Formato": "Lección de fundamentos",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "video": "/academy-media/M1.1.mp4",
+  "narration": "Vamos a empezar por el principio, sin prisa. Acabas de oír la palabra Erasmus+ y, seguramente, te ha sonado a algo enorme, lleno de siglas, de gente experta, de plazos... y de fondo esa vocecita que dice: esto no es para alguien como yo, llego tarde. Pues quédate conmigo diez minutos, porque te voy a dar un mapa mental que cabe en una sola pantalla, y cuando lo tengas, el miedo se va.\n\nLo primero: olvida lo que crees que es Erasmus+. Cuando oyes Erasmus, casi todo el mundo piensa en lo mismo, un estudiante universitario que se va un curso a Italia. Eso existe, claro, pero es solo una esquinita de algo mucho más grande. Erasmus+ es el programa de la Unión Europea para educación, formación, juventud y deporte. Es uno de los más grandes de toda Europa: para el periodo que va de 2021 a 2027 mueve una cantidad de dinero gigantesca, miles de millones de euros. Y aquí está la idea que lo cambia todo: Erasmus+ no financia solo a personas que estudian. Financia a organizaciones. Asociaciones, oenegés, centros educativos, ayuntamientos, empresas, clubes deportivos... Si tu entidad tiene una idea que mejora la educación, la formación, la juventud o el deporte, hay una puerta para ti.\n\nTe voy a dar una imagen para que no te pierdas. Imagina que Erasmus+ es un gran supermercado de subvenciones. No vas a comprarlo entero, faltaría más. Entras, coges un carrito y vas a un pasillo concreto, según lo que necesites. Hay un pasillo para mover personas: mandar a tu equipo a formarse fuera, traer jóvenes de otros países. Hay otro para crear cosas junto a socios europeos: un método, una guía, una herramienta. Y hay otro, más institucional, para cambiar políticas y sistemas. Tú no tienes que conocer todo el supermercado el primer día. Solo saber que existen esos pasillos y aprender a identificar el tuyo. Que te quede claro: nadie domina Erasmus+ entero. Los expertos solo conocen muy bien su pasillo. Y tú vas a hacer exactamente lo mismo.\n\nQuédate con el esqueleto, que es facilísimo: arriba está el programa, Erasmus+. De él cuelgan tres grandes familias de acciones, lo que se llaman las acciones clave, que son ka uno, ka dos y ka tres. Ka uno es movilidad, mover personas para que aprendan. Ka dos es cooperación, crear cosas junto a otras organizaciones, y ahí dentro están la pequeña escala y la cooperación más grande. Y ka tres es políticas, apoyar reformas a alto nivel. Existen también acciones específicas de deporte y otras llamadas Jean Monnet, pero el noventa y cinco por ciento de lo que te interesa vive en esas tres familias. Memoriza solo esto hoy: programa, tres acciones clave, y debajo los tipos de proyecto. Lo demás lo iremos rellenando.\n\nY bajemos a tu realidad, ¿qué te llevas de verdad? Financiación real para hacer cosas que de otro modo no podrías permitirte. Socios europeos, porque dejas de trabajar sola. Crecimiento para tu equipo, que se forma, viaja y aprende. Y visibilidad: ser entidad Erasmus+ abre puertas. No hace falta ser una universidad ni una gran oenegé. Muchísimos proyectos los lideran asociaciones pequeñas y ayuntamientos. El tamaño no es la barrera; la barrera es no saber por dónde empezar, y eso lo estás resolviendo ahora mismo. Ya tienes el mapa. En la siguiente lección desmontamos esas tres familias de acciones una por una, para que sepas, con ejemplos, cuál de ellas es la tuya. Nos vemos ahí.",
+  "frame": {
+    "dolor": "Acabas de oír la palabra «Erasmus+» y te suena gigante, lleno de siglas y de gente experta. Sientes que llegas tarde y que esto no es para alguien como tú.",
+    "comprender": "Que Erasmus+ no es un examen ni un club cerrado: es un programa europeo que reparte dinero para proyectos, y que está pensado también para organizaciones como la tuya.",
+    "objetivo": "Salir con un mapa mental de una sola pantalla: qué es Erasmus+, para qué te sirve y cómo se organiza todo por dentro.",
+    "confusion": "Pensar que Erasmus+ es «irse de estudios a otro país». Eso es solo una parte; Erasmus+ financia a organizaciones para hacer muchísimo más.",
+    "importa": "Porque si entiendes el mapa desde el principio, dejas de tener miedo y empiezas a ver dónde encaja tu idea. Todo lo demás del curso cuelga de aquí."
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "kind": "content",
+      "title": "1. Olvida lo que crees que es Erasmus+",
+      "html": "<p>Cuando oyes «Erasmus», casi todo el mundo piensa en lo mismo: un estudiante universitario que se va un curso a Italia. Eso existe, sí. Pero es una esquinita de algo mucho más grande.</p><p><b>Erasmus+</b> es el programa de la Unión Europea para <b>educación, formación, juventud y deporte</b>. Es uno de los programas más grandes de toda la UE: para el periodo <b>2021–2027</b> mueve más de <b>26.000 millones de euros</b>. No es un concurso menor; es una de las grandes apuestas de Europa.</p><p>Y aquí está la idea que lo cambia todo: <b>Erasmus+ no financia solo a personas que estudian. Financia a organizaciones.</b> ONG, asociaciones, centros educativos, ayuntamientos, empresas, clubes deportivos… Si tu entidad tiene una idea que mejora la educación, la formación, la juventud o el deporte, hay una puerta para ti.</p><div class=\"callout callout-key\"><b>La frase que tienes que quedarte:</b> Erasmus+ no es «irse de Erasmus». Es <em>dinero europeo para que las organizaciones hagan proyectos que mejoran a las personas.</em></div>"
+    },
+    {
+      "id": "s2",
+      "kind": "content",
+      "title": "2. Una analogía para no perderte",
+      "html": "<p>Imagina que Erasmus+ es un <b>gran supermercado de subvenciones</b>. No vas a comprarlo entero: entras, coges un carrito y vas a un <b>pasillo concreto</b> según lo que necesites.</p><p>Hay un pasillo para <b>mover personas</b> (mandar a tu equipo a formarse fuera, traer a jóvenes de otros países…). Hay otro para <b>crear cosas junto a socios europeos</b> (desarrollar un método, una guía, una herramienta). Y hay otro, más institucional, para <b>cambiar políticas y sistemas</b>.</p><p>Tú no tienes que conocer todo el supermercado el primer día. Solo necesitas saber que existen esos pasillos y aprender a identificar el tuyo. <b>De eso va este módulo.</b></p><div class=\"callout callout-good\">Nadie domina Erasmus+ entero. Los expertos solo conocen muy bien <em>su</em> pasillo. Tú vas a hacer lo mismo.</div>"
+    },
+    {
+      "id": "s3",
+      "kind": "content",
+      "title": "3. El mapa en una pantalla",
+      "html": "<p>Aquí está toda la estructura de Erasmus+ resumida. Si entiendes esta tabla, ya tienes el esqueleto del programa en la cabeza. Va de lo general (el programa) a lo concreto (el tipo de proyecto que pedirías).</p><table class=\"cmp\"><thead><tr><th>Nivel</th><th>Qué es</th><th>Ejemplos</th></tr></thead><tbody><tr><td><b>EL PROGRAMA</b></td><td>Erasmus+ (UE · 2021–2027)</td><td>Educación · Formación · Juventud · Deporte</td></tr><tr><td><b>Las Key Actions</b></td><td>Las 3 grandes «familias» de acciones</td><td>KA1 · KA2 · KA3</td></tr><tr><td><b>KA1 — Movilidad</b></td><td>Mover personas para que aprendan</td><td>Movilidad de aprendizaje (Learning Mobility)</td></tr><tr><td><b>KA2 — Cooperación</b></td><td>Crear cosas junto a otras organizaciones</td><td>KA210 (pequeña escala) · KA220 (cooperación) · Capacity Building</td></tr><tr><td><b>KA3 — Políticas</b></td><td>Apoyar el desarrollo de políticas</td><td>Reformas, diálogo, sistemas</td></tr></tbody></table><p>Existen además acciones específicas de <b>Deporte</b> y las acciones <b>Jean Monnet</b> (estas últimas quedan fuera de nuestro foco). Pero el 95 % de lo que te interesa vive en esas tres Key Actions.</p><div class=\"callout callout-key\">Memoriza solo esto hoy: <b>Programa → 3 Key Actions (KA1, KA2, KA3) → tipos de proyecto.</b> Lo demás lo iremos rellenando.</div>"
+    },
+    {
+      "id": "s4",
+      "kind": "content",
+      "title": "4. ¿Para qué le sirve a TU organización?",
+      "html": "<p>Bajemos del mapa a tu realidad. ¿Qué te llevas de verdad si tu entidad entra en Erasmus+?</p><ul class=\"bullets\"><li><b>Financiación real</b> para hacer cosas que de otro modo no podrías permitirte.</li><li><b>Socios europeos:</b> dejas de trabajar sola y te conectas con organizaciones de otros países.</li><li><b>Crecimiento de tu equipo:</b> tu gente se forma, viaja, aprende métodos nuevos.</li><li><b>Visibilidad y prestigio:</b> ser «entidad Erasmus+» abre puertas y da credibilidad.</li></ul><p>No hace falta ser una universidad ni una gran ONG. Muchos proyectos los lideran asociaciones pequeñas y ayuntamientos. <b>El tamaño no es la barrera; la barrera es no saber por dónde empezar.</b> Y ese problema lo estás resolviendo ahora mismo.</p>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores / ideas equivocadas",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Erasmus+ es solo para estudiantes universitarios.»</b> → No: financia sobre todo a <em>organizaciones</em> (ONG, centros, ayuntamientos, empresas, clubes…).</li><li><span class=\"err-x\">✗</span> <b>«Esto es para entidades grandes con experiencia.»</b> → Muchos proyectos los lideran asociaciones pequeñas. El tramo pequeño (KA210) existe justo para empezar.</li><li><span class=\"err-x\">✗</span> <b>«Tengo que entender todo el programa antes de pedir nada.»</b> → No. Solo necesitas conocer <em>tu</em> pasillo. Nadie domina Erasmus+ entero.</li><li><span class=\"err-x\">✗</span> <b>«Erasmus+ es básicamente irse a estudiar fuera.»</b> → Eso es una parte (KA1). El programa también crea métodos, herramientas y políticas.</li></ul>"
+    },
+    {
+      "id": "siguiente",
+      "kind": "content",
+      "title": "Tu siguiente paso",
+      "html": "<p>Ya tienes el mapa general. Lo que falta ahora es entender bien esas tres «familias» de acciones que has visto en la tabla, porque ahí es donde decides qué tipo de proyecto es el tuyo.</p><div class=\"callout callout-link\">🔗 Sigue por <b>M1.2 — «KA1, KA2, KA3: el mapa de acciones»</b>. Ahí desmontamos la sopa de siglas y verás, con una tabla y ejemplos, cuál de las tres es la tuya.</div>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes de apoyo (de dónde sale esto)",
+      "html": "<table class=\"cmp\"><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0001</b> Programme Guide Erasmus+</td><td>Definición oficial del programa, objetivos, periodo 2021–2027 y presupuesto general.</td></tr><tr><td><b>kb-0003</b> Estructura de Key Actions</td><td>El esqueleto de KA1 / KA2 / KA3 y los tipos de proyecto que cuelgan de cada uno.</td></tr></tbody></table>"
+    }
+  ]
+}

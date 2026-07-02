@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-CL4-2024-SPACE-01-35",
+  "ccm2Id": "45704932",
+  "callIdentifier": "HORIZON-CL4-2024-SPACE-01",
+  "callTitle": "",
+  "title": "Copernicus for Land and Water",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2023-11-21",
+  "deadline": "2024-02-20",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON  Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Digital Agenda\",\"S3 - Land monitoring (Copernicus service)\",\"Water resources\",\"Earth Observation / Services and applications\",\"Hydrology\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-SPACE-01-35.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.470Z"
+}

@@ -1,0 +1,118 @@
+{
+  "identifier": "CERV-2026-CHAR-LITI-CHARTER",
+  "ccm2Id": "51233152",
+  "callIdentifier": "CERV-2026-CHAR-LITI",
+  "callTitle": "Call for proposals to support the application of the EU Charter of Fundamental Rights",
+  "title": "Raising awareness of and building capacity for the EU Charter of Fundamental Rights",
+  "programme": "CERV",
+  "programmeCode": "43251589",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-05-20",
+  "deadline": "2026-09-15",
+  "deadlineModel": "single-stage",
+  "actionType": "CERV Project Grants",
+  "actionCode": "CERV-PJG",
+  "mgaCode": "CERV-AG",
+  "budget": {
+    "total_eur": 26000000,
+    "by_year": {
+      "2026": 26000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "CERV-2026-CHAR-LITI-CHARTER",
+    "CERV-2026-CHAR-LITI"
+  ],
+  "crossCuttingPriorities": [
+    "AI",
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "Funding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.\n\nPlease consult the Q&A on the Topic page for call-specific questions.\n\nPlease also consult the Topic page regularly, since we will use it to publish call updates, including invitations to info sessions for applicants (if any) after the opening of the call.\n\nNon-IT related questions should be sent to the following email address: the CERV National Contact Point of your country (if established) or otherwise EACEA-CERV@ec.europa.eu. Please indicate clearly in the subject of the email the reference of the call: \"CERV-2026-CHAR-LITI\".",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/44212?topic=CERV-2026-CHAR-LITI-CHARTER",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CERV-2026-CHAR-LITI-CHARTER",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "Call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/wp-call/2026/call-fiche_cerv-2026-char-liti_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Standard application form (CERV)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/temp-form/af/af_cerv_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "CERV MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/agr-contr/mga_cerv_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "CERV Work Programmes",
+      "url": "https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes/citizens-equality-rights-and-values-programme/citizens-equality-rights-and-values-programme-overview_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "CERV Regulation 2021/692",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.156.01.0001.01.ENG&toc=OJ%3AL%3A2021%3A156%3ATOC",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-06-27T12:50:07.345Z"
+}

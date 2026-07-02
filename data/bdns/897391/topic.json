@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "897391",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN / AGENCIA ESTATAL AGENCIA ESPAÑOLA DE COOPERACIÓN INTERNACIONAL PARA EL DESARROLLO",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 27 de marzo de 2026 de la Dirección de la AECID por la que se aprueba la convocatoria pública de concesión de subvenciones para la realización de proyectos de cooperación para el desarrollo y la solidaridad global correspondiente al año 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "https://www.aecid.gob.es/inicio",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897391",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2022/04/06/auc286",
+  "text_inicio": "Al día siguiente de la publicación del extracto en el BOE",
+  "text_fin": "Veinte días hábiles contados a partir del día siguiente al de la publicación del extracto en el BOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.009Z"
+}

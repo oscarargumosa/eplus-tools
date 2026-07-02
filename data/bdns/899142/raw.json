@@ -1,0 +1,92 @@
+{
+  "id": 1100703,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URRETXU",
+    "nivel3": "AYUNTAMIENTO DE URRETXU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "899142",
+  "fechaRecepcion": "2026-04-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 28000,
+  "mrr": false,
+  "descripcion": "Subvenciones a los centros escolares reglados para desarrollar actividades extraescolares que fomenten el uso del euskera.",
+  "descripcionLeng": "Irakaskuntza arautuaren eremuan diharduten ikastetxeek euskararen erabilera sustatzeko egiten dituzten eskola kanpoko jarduerak finantzatzeko diru-laguntzak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Subvenciones a los centros escolares reglados para desarrollar actividades extraescolares que fomenten el uso del euskera.",
+  "urlBasesReguladoras": "https://www.urretxu.eus/eu/component/rsfiles/download-file/files?path=i_subvenciones/2026-DirulaguntzenOinarriak/2026-DL04-IkastetxeakEskolaKanpoJarduerakEuskaraz.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación de la convocatoria en el BOGipuzkoa",
+  "textFin": "30 días naturales a partir del día siguiente a la publicación de la convocatoria en el BOGipuzkoa",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1436152,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Oinarriak DL_IKASTETXEAK 2026.pdf",
+      "long": 493111,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1436154,
+      "descripcion": "OINARRI OROKORRAK",
+      "nombreFic": "OINARRI OROKORRAK 2026.pdf",
+      "long": 380284,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    },
+    {
+      "id": 1436153,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Oinarriak DL_IKASTETXEAK 2026.pdf",
+      "long": 493111,
+      "datMod": "2026-04-15",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208988,
+      "titulo": "Subvenciones a los centros escolares reglados para desarrollar actividades extraescolares que fomenten el uso del euskera.",
+      "tituloLeng": "Irakaskuntza arautuaren eremuan diharduten ikastetxeek euskararen erabilera sustatzeko egiten dituzten eskola kanpoko jarduerak finantzatzeko diru-laguntzak",
+      "texto": "<p>1.Objeto de la subvención.</p><p>El objeto de esta convocatoria: financiar las actividades extraescolares que desarrollan los centros docentes que actúan en el ámbito de la enseñanza reglada en Urretxu y Zumarraga para fomentar el uso del euskera.</p><p>2.Importe de la subvención.</p><p>El importe máximo de la suma de las subvenciones a conceder asciende a la cantidad de 28.000 €, con cargo a la partida 1.5000.481.326.00.01.26 (101)</p><p>3. Plazo de presentación de solicitudes. El plazo de presentación de solicitudes será 30 días naturales desde el día siguiente a la publicación del anuncio en el BOLETÍN OFICIAL de Gipuzkoa. La información detallada se encuentra a disposición de las personas o colectivos interesados en la siguiente páginas web: Ayuntamiento: https://www.urretxu.eus/es/subvenciones</p>",
+      "textoLeng": "<p>1.Dirulaguntzaren xedea.</p><p>Deialdi honen xedea da: Urretxuko eta Zumarragako udalerrietan irakaskuntza arautuaren eremuan diharduten ikastetxeek euskararen erabilera sustatzeko gauzatzen dituzten eskolaz kanpoko jarduerak diruz laguntzea</p><p>2. Dirulaguntzaren zenbatekoa.</p><p>Emango diren dirulaguntzen batura, gehienez ere 28.000 eurokoa izango da, 1.5000.481.326.00.01.26 (101) kontu-sailaren kontura.</p><p>3. Eskaerak aurkezteko epea.</p><p>Eskaerak aurkezteko epea 30 egun naturalak  deialdiaren iragarkia Gipuzkoako ALDIZKARI OFIZIALEAN argitaratu eta biharamunetik hasita. Pertsona edo kolektibo interesdunek ondorengo web orrian aurkitu dezakete informazio zehatza: https://www.urretxu.eus/eu/dirulaguntzak</p><p>.</p>",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/04/30/c2602478.pdf",
+      "cve": "GAO-I-2026-02478",
+      "desDiarioOficial": "B.O. DE GIPUZKOA",
+      "datPublicacion": "2026-04-30"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

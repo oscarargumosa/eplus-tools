@@ -1,0 +1,69 @@
+{
+  "id": "LS.3",
+  "code": "UD-LS.3",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "C — Antes de escribir",
+  "title": "Las cuatro fases de una asociación (de la idea al seguimiento)",
+  "subtitle": "Planificación, preparación, implementación y follow-up: el ciclo de vida de un proyecto KA2 y los consejos del Handbook para no tropezar en ninguna fase.",
+  "meta": {
+    "Nivel": "Básico",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "2.2 Structure del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Tienes una idea de proyecto y te lanzas a escribir la solicitud directamente, sin un plan. Luego, a mitad de redacción, descubres que faltan piezas (socios no consultados, actividades sin detallar, riesgos sin pensar) y todo se tambalea.",
+    "comprender": "Que un proyecto KA2 tiene cuatro fases —planificación, preparación, implementación y seguimiento— y que muchas de las decisiones que ganan o pierden la subvención se toman ANTES de escribir.",
+    "objetivo": "Saber qué hacer en cada fase, en qué orden, y aplicar los consejos del Handbook: leer las reglas antes de diseñar, encadenar prioridades-necesidades-objetivos-resultados, involucrar a todos los socios y detallar las actividades para estimar bien el lump sum.",
+    "confusion": "Creer que el proyecto empieza cuando te conceden el dinero. No: las fases de planificación y preparación ocurren ANTES de que tu propuesta sea seleccionada, y son las que sostienen todo lo demás.",
+    "importa": "Porque cuanto más detalle das a las actividades en la fase de diseño, más fácil es estimar el lump sum correcto. Un proyecto bien planificado se escribe solo y se defiende solo ante el evaluador."
+  },
+  "sections": [
+    {
+      "id": "las-cuatro",
+      "kind": "content",
+      "title": "1. Las cuatro fases (y una sorpresa)",
+      "html": "<p>Un proyecto de asociación para la cooperación pasa, según el Handbook, por <b>cuatro fases</b>:</p><ol class=\"obj\"><li><b>Planificación</b> (planning)</li><li><b>Preparación</b> (preparation)</li><li><b>Implementación</b> (implementation)</li><li><b>Seguimiento</b> (follow-up)</li></ol><p>Y aquí va la sorpresa que mucha gente no tiene en cuenta:</p><div class=\"callout callout-key\"><b>Algunas de estas fases empiezan ANTES de que tu propuesta sea seleccionada para financiación.</b> Es decir, planificas y preparas <em>jugándotela</em>, sin garantía de cobrar todavía. Ese trabajo previo es exactamente lo que convence al evaluador.</div><p>Además, el Handbook insiste en algo: las <b>organizaciones y los participantes deben tener un papel activo en todas las fases</b>, porque eso enriquece su experiencia de aprendizaje. No es un trámite de la entidad coordinadora en solitario.</p>"
+    },
+    {
+      "id": "planificacion",
+      "kind": "content",
+      "title": "2. Fase 1 — Planificación: diseñar antes de escribir",
+      "html": "<p>El diseño y la planificación sirven para definir las <b>necesidades, los objetivos, los resultados de aprendizaje, los formatos de actividad, el calendario, las necesidades financieras</b>, etc. Estos son los consejos clave del Handbook para esta fase:</p><ul><li><b>Lee primero las reglas y el formulario.</b> Hay que leer con calma las reglas del Programme Guide <em>y</em> el formulario de solicitud <b>antes</b> de empezar a diseñar. Tener los criterios de adjudicación y las preguntas del formulario como referencia desde el principio te guía toda la redacción.</li><li><b>Encadena prioridades → necesidades → objetivos → resultados.</b> Es importante establecer una estructura clara y asegurarte de que los <b>vínculos entre prioridades, necesidades, objetivos y resultados están bien descritos</b>. No basta con que existan: tienen que verse conectados.</li><li><b>Define grupos destinatarios claros.</b> Fijar <b>grupos destinatarios bien definidos</b> te ayuda a evaluar las necesidades y a concretar los objetivos y resultados.</li><li><b>Involucra a TODOS los socios desde el principio.</b> Esto ayuda a redactar una propuesta completa y coherente.</li><li><b>Empieza pronto el acuerdo de partenariado.</b> Se recomienda <b>empezar a redactar el acuerdo de partenariado ya en esta fase</b> (ver Anexo 3 del Handbook).</li></ul><div class=\"callout callout-good\"><b>El consejo más rentable:</b> cuanto <b>más detalle</b> das a las actividades, <b>más fácil</b> es definir las necesidades financieras y <b>estimar el lump sum</b> requerido. Acordar un plan general (número y formato de actividades, resultados esperados y calendario global) permite deducir las necesidades financieras y estimar el presupuesto total.</div><div class=\"callout callout-link\">🔗 El <b>Anexo 1</b> del Handbook amplía cómo hacer un análisis de necesidades y definir objetivos <b>realistas y medibles</b>.</div>"
+    },
+    {
+      "id": "preparacion",
+      "kind": "content",
+      "title": "3. Fase 2 — Preparación: del plan general al plan detallado",
+      "html": "<p>Una vez acordada la estructura general, los socios pasan a preparar un <b>plan de actividades más detallado</b> y los arreglos prácticos. Las claves de esta fase:</p><ul><li><b>Ten un programa de trabajo claro</b>, con un <b>timeline (cronograma) del proyecto</b> y un <b>reparto claro de tareas y presupuesto entre los socios</b>, basado en sus distintas experiencias y áreas de especialización. Esto facilita enormemente la coordinación.</li><li><b>Reflexiona sobre los riesgos.</b> Durante la preparación es importante pensar en los <b>riesgos potenciales y las medidas para mitigarlos</b>. Un buen mecanismo de monitorización es fundamental para prevenir riesgos.</li></ul><div class=\"callout callout-warn\"><b>Aviso de elegibilidad muy importante:</b> cualquier actividad implementada <b>ANTES de la fecha de inicio del proyecto NO se considera elegible</b> para financiación de la UE. Puedes planificar y preparar antes, pero no \"ejecutar\" antes de la fecha de inicio oficial: ese gasto/trabajo no cuenta.</div>"
+    },
+    {
+      "id": "implementacion",
+      "kind": "content",
+      "title": "4. Fase 3 — Implementación: hacerlo según lo prometido",
+      "html": "<p>Las actividades del proyecto <b>deben implementarse según la propuesta</b> que presentaste. El Handbook marca varias reglas para esta fase:</p><ul><li><b>Los cambios están permitidos</b>, pero cualquier cambio en las actividades o resultados planificados debe estar <b>bien documentado, justificado y ser relevante</b> para los objetivos generales del proyecto. No improvisas a la ligera: documentas el porqué.</li><li>Las actividades deben diseñarse, prepararse e implementarse de forma <b>accesible, inclusiva, ecológica (eco-friendly) y haciendo uso de herramientas digitales</b> relevantes.</li><li><b>Monitoriza de forma regular</b> la calidad y el impacto de las actividades, verifica si se respeta el plan de trabajo y anticipa posibles cambios.</li></ul><div class=\"callout callout-key\">Regla mental para esta fase: <b>implementa según la propuesta</b>; si la realidad obliga a cambiar, <b>documenta y justifica</b>. La improvisación sin papeles es lo que mete en problemas en el informe final.</div>"
+    },
+    {
+      "id": "follow-up",
+      "kind": "content",
+      "title": "5. Fase 4 — Seguimiento (follow-up): evaluar, sostener y difundir",
+      "html": "<p>Antes de que termine el proyecto, los beneficiarios tienen que <b>evaluar los resultados (outcomes) y su impacto</b> a distintos niveles:</p><ul><li><b>A nivel de las organizaciones participantes</b>, el impacto depende en gran medida de que los resultados del proyecto se <b>integren en el trabajo habitual</b> de las organizaciones.</li><li><b>A un nivel más amplio</b>, depende de la <b>transferibilidad</b> de los resultados a otros grupos destinatarios, organizaciones, sectores, países, etc.</li></ul><div class=\"callout callout-good\"><b>Dos factores clave de éxito</b> que el Handbook subraya para esta fase: la <b>sostenibilidad</b> del proyecto (que perdure más allá de la financiación) y una <b>difusión amplia y bien dirigida</b> de los resultados, realizada por <b>todos</b> los socios (no solo por el coordinador).</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El proyecto empieza cuando me conceden el dinero.»</b> → No: planificación y preparación ocurren antes de la selección, y son las que convencen al evaluador.</li><li><span class=\"err-x\">✗</span> <b>«Empiezo a escribir y ya leeré las reglas si hace falta.»</b> → Al revés: lee Programme Guide y formulario ANTES de diseñar, para tenerlos como referencia.</li><li><span class=\"err-x\">✗</span> <b>«Puedo adelantar actividades antes de la fecha de inicio.»</b> → Cualquier actividad anterior a la fecha de inicio NO es elegible para financiación.</li><li><span class=\"err-x\">✗</span> <b>«Una vez concedido, puedo cambiar lo que quiera.»</b> → Se permiten cambios, pero deben documentarse, justificarse y ser relevantes para los objetivos.</li><li><span class=\"err-x\">✗</span> <b>«La difusión es cosa del coordinador.»</b> → La difusión amplia y dirigida la hacen TODOS los socios; es un factor clave de éxito.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> · Handbook on the lump sum funding model KA2, Call 2026 — Sección <b>2.2 Structure</b></td><td>Las cuatro fases del proyecto (planificación, preparación, implementación y seguimiento) y los consejos del Handbook para cada una: lectura previa de reglas, vínculos prioridades-necesidades-objetivos-resultados, grupos destinatarios, implicación de socios, acuerdo de partenariado, detalle de actividades para estimar el lump sum, riesgos, elegibilidad de la fecha de inicio, cambios documentados, accesibilidad/inclusión/eco/digital, monitorización, evaluación de impacto, sostenibilidad y difusión.</td></tr></tbody></table>"
+    }
+  ]
+}

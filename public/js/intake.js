@@ -51,6 +51,7 @@ const Intake = (() => {
   /* ── National Agency → proposal language mapping ──────────────── */
   const NA_LANG = {
     EACEA:'en',
+    EISMEA:'en',
     AT01:'de',
     BE01:'fr', BE02:'nl', BE03:'de', BE04:'fr', BE05:'nl',
     BG01:'bg', HR01:'hr', CY01:'el', CZ01:'cs', DK01:'da',
@@ -88,12 +89,18 @@ const Intake = (() => {
   function onNAChange() {
     const naEl = document.getElementById('intake-f-na');
     const langEl = document.getElementById('intake-f-lang');
-    const badge = document.getElementById('intake-na-lang-label');
-    if (!naEl) return;
-    const code = naEl.value;
-    const lang = NA_LANG[code] || 'en';
-    if (langEl) langEl.value = lang;
-    if (badge) badge.textContent = LANG_NAMES[lang] || lang;
+    if (!naEl || !langEl) return;
+    const suggested = NA_LANG[naEl.value];
+    if (!suggested) return;
+    if (langEl.dataset.userTouched === '1') return;
+    langEl.value = suggested;
+  }
+
+  function onLangChange() {
+    const langEl = document.getElementById('intake-f-lang');
+    if (langEl) langEl.dataset.userTouched = '1';
+    _dirty = true;
+    scheduleIntakeSave();
   }
 
   /* ── Init ────────────────────────────────────────────────────── */
@@ -106,11 +113,26 @@ const Intake = (() => {
     initialized = true;
     renderStepNav();
     bindEvents();
-    setStep(0);
-    loadPrograms();
+    // Auto-reopen the last active project after a refresh, so the user lands
+    // on their work instead of an empty Intake with default fallbacks (€625k target).
+    let reopened = false;
+    try {
+      const lastId = localStorage.getItem('lastProjectId');
+      if (lastId && lastId.length === 36) { // sane UUID, not intake-temp-...
+        reopened = true;
+        loadPrograms().then(() => loadFromServer(lastId, 0));
+      }
+    } catch {}
+    if (!reopened) {
+      setStep(0);
+      loadPrograms();
+    }
   }
 
   function startNew() {
+    // Forget any auto-reopen target so a refresh during "new project" doesn't
+    // bounce back to the previous one.
+    try { localStorage.removeItem('lastProjectId'); } catch {}
     // Ensure initialized (render nav + bind events) but don't call setStep with stale step
     if (!initialized) {
       initialized = true;
@@ -196,7 +218,14 @@ const Intake = (() => {
         if (descEl.value.trim().length >= 20) showPostInterview();
         updateLaunchGate();
       });
+      descEl.addEventListener('blur', () => {
+        if (descEl.value.trim()) exitEditMode();
+      });
     }
+    const descPreviewEl = document.getElementById('intake-f-desc-rendered');
+    if (descPreviewEl) descPreviewEl.addEventListener('click', enterEditMode);
+    const descEditBtn = document.getElementById('intake-f-desc-edit-btn');
+    if (descEditBtn) descEditBtn.addEventListener('click', enterEditMode);
 
     // AI Interview — bind all buttons once
     document.getElementById('intake-interview-start')?.addEventListener('click', startInterview);
@@ -209,11 +238,14 @@ const Intake = (() => {
     const intInput = document.getElementById('intake-interview-input');
     if (intInput && typeof VoiceInput !== 'undefined') VoiceInput.attach(intInput);
 
-    // National Agency → auto-set proposal language
+    // National Agency → sugiere idioma de trabajo si el usuario no lo ha tocado
     document.getElementById('intake-f-na')?.addEventListener('change', () => {
       onNAChange();
       _dirty = true; scheduleIntakeSave();
     });
+
+    // Idioma de trabajo: independiente de la NA una vez tocado
+    document.getElementById('intake-f-lang')?.addEventListener('change', onLangChange);
 
     // Save/Load file buttons
     document.getElementById('intake-btn-save-file')?.addEventListener('click', saveToFile);
@@ -329,14 +361,22 @@ const Intake = (() => {
       const fullnameEl = document.getElementById('intake-f-fullname');
       if (fullnameEl) fullnameEl.value = project.full_name || '';
       document.getElementById('intake-f-desc').value = project.description || '';
-      setTimeout(autoResizeDesc, 50);
+      setTimeout(() => { autoResizeDesc(); renderDescPreview(); }, 50);
       document.getElementById('intake-f-start').value = toDateStr(project.start_date);
       document.getElementById('intake-f-type').value = project.type || '';
 
-      // Load national agency + derive proposal language
+      // Load national agency + proposal language (idioma de trabajo es independiente)
       const naEl = document.getElementById('intake-f-na');
       if (naEl && project.national_agency) naEl.value = project.national_agency;
-      onNAChange();
+      const langEl = document.getElementById('intake-f-lang');
+      if (langEl && project.proposal_lang) {
+        langEl.value = project.proposal_lang;
+        // El proyecto ya tenía un idioma → respetarlo, no sobreescribir al tocar NA.
+        langEl.dataset.userTouched = '1';
+      } else {
+        // Proyecto sin idioma persistido → sugerir desde NA en su primer render.
+        onNAChange();
+      }
 
       // Select matching program (sets selectedProgram + type-visible field)
       if (project.type && programs.length) {
@@ -393,6 +433,9 @@ const Intake = (() => {
       setStep(targetStep != null ? targetStep : 0);
       Toast.show('Proyecto cargado: ' + project.name, 'ok');
     } catch (err) {
+      // If the auto-reopened project no longer exists (deleted, perms changed),
+      // forget it so we don't loop on every refresh.
+      try { localStorage.removeItem('lastProjectId'); } catch {}
       Toast.show('Error al cargar: ' + (err.message || err), 'err');
     }
   }
@@ -402,6 +445,7 @@ const Intake = (() => {
     try {
       await API.del('/intake/projects/' + id);
       if (currentProjectId === id) currentProjectId = null;
+      try { if (localStorage.getItem('lastProjectId') === id) localStorage.removeItem('lastProjectId'); } catch {}
       Toast.show('Proyecto eliminado', 'ok');
       loadServerProjects();
     } catch (err) {
@@ -865,20 +909,11 @@ const Intake = (() => {
           </button>
         </div>
         <div class="px-6 py-3 border-b border-outline-variant/20 flex flex-col gap-2">
-          <input type="text" placeholder="Buscar por nombre, ciudad o PIC..." autofocus
+          <input type="text" placeholder="Buscar por nombre o ciudad..." autofocus
             class="entity-search-input w-full px-4 py-2.5 rounded-lg bg-surface-container-low border border-outline-variant text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
           <div class="flex gap-2">
             <select class="entity-filter-country flex-1 px-3 py-2 rounded-lg bg-surface-container-low border border-outline-variant text-sm text-on-surface-variant cursor-pointer outline-none focus:border-primary">
               <option value="">Todos los pa\u00EDses</option>
-            </select>
-            <select class="entity-filter-type flex-1 px-3 py-2 rounded-lg bg-surface-container-low border border-outline-variant text-sm text-on-surface-variant cursor-pointer outline-none focus:border-primary">
-              <option value="">Todos los tipos</option>
-              <option value="university">Universidad</option>
-              <option value="ngo">ONG</option>
-              <option value="public_body">Organismo p\u00FAblico</option>
-              <option value="enterprise">Empresa</option>
-              <option value="research">Centro investigaci\u00F3n</option>
-              <option value="other">Otro</option>
             </select>
           </div>
         </div>
@@ -890,7 +925,6 @@ const Intake = (() => {
 
     const input = overlay.querySelector('.entity-search-input');
     const filterCountry = overlay.querySelector('.entity-filter-country');
-    const filterType = overlay.querySelector('.entity-filter-type');
     const results = overlay.querySelector('.entity-results');
 
     // Close on overlay click or close button
@@ -919,66 +953,80 @@ const Intake = (() => {
     function doSearch() {
       clearTimeout(entityDebounce);
       entityDebounce = setTimeout(() => {
-        searchAndRender(input.value.trim(), filterCountry.value, filterType.value);
-      }, 200);
+        searchAndRender(input.value.trim(), filterCountry.value);
+      }, 250);
     }
 
     // Load all on open
-    searchAndRender('', '', '');
+    searchAndRender('', '');
 
     input.addEventListener('input', doSearch);
     filterCountry.addEventListener('change', doSearch);
-    filterType.addEventListener('change', doSearch);
 
-    async function searchAndRender(q, country, type) {
-      results.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">Buscando...</p>';
+    async function searchAndRender(q, country) {
+      results.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">Buscando en el directorio (288k entidades)...</p>';
       try {
-        // Search in organizations directory (full PIF profiles)
-        const params = new URLSearchParams({ limit: '50' });
+        // Search in the unified directory (entities/entity_enrichment view)
+        const params = new URLSearchParams({ limit: '50', sort: 'quality' });
         if (q) params.set('q', q);
         if (country) params.set('country', country);
-        if (type) params.set('org_type', type);
-        const raw = await fetch('/v1/organizations?' + params.toString(), {
+        const raw = await fetch('/v1/entities?' + params.toString(), {
           headers: { 'Authorization': 'Bearer ' + API.getToken() }
         }).then(r => r.json());
-        const orgs = (raw.ok && raw.data?.rows) ? raw.data.rows : [];
+        const ents = (raw.ok && raw.data?.rows) ? raw.data.rows : [];
 
-        if (!orgs.length) {
+        if (!ents.length) {
           results.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">Sin resultados en el directorio</p>';
           return;
         }
         results.innerHTML = '<div class="space-y-2 p-2">' +
-          orgs.map(o => `
-            <div class="entity-pick flex items-center gap-3 p-3 rounded-xl border border-outline-variant/20 hover:bg-primary/5 cursor-pointer transition-colors" data-id="${o.id}">
-              ${o.logo_url
-                ? `<img src="${esc(o.logo_url)}" alt="" class="w-10 h-10 rounded-lg object-contain border border-outline-variant/20 shrink-0 bg-white">`
+          ents.map(e => `
+            <div class="entity-pick flex items-center gap-3 p-3 rounded-xl border border-outline-variant/20 hover:bg-primary/5 cursor-pointer transition-colors" data-oid="${esc(e.oid)}">
+              ${e.logo_url
+                ? `<img src="${esc(e.logo_url)}" alt="" class="w-10 h-10 rounded-lg object-contain border border-outline-variant/20 shrink-0 bg-white">`
                 : `<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-lg text-primary">apartment</span></div>`
               }
               <div class="flex-1 min-w-0">
-                <div class="text-sm font-semibold text-on-surface">${esc(o.organization_name)}</div>
-                <div class="text-xs text-on-surface-variant">${esc([o.city, o.country].filter(Boolean).join(', '))}${o.org_type ? ' · ' + esc(o.org_type) : ''}</div>
+                <div class="text-sm font-semibold text-on-surface truncate">${esc(e.display_name || '(sin nombre)')}</div>
+                <div class="text-xs text-on-surface-variant">${esc([e.city, e.country_code].filter(Boolean).join(', '))}${e.category ? ' · ' + esc(e.category) : ''}</div>
               </div>
-              ${o.eu_projects_count > 0 ? `<span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">${o.eu_projects_count} proy. EU</span>` : ''}
-              ${o.pic ? `<span class="text-[10px] font-mono text-on-surface-variant">PIC: ${esc(o.pic)}</span>` : ''}
+              ${e.quality_tier ? `<span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">${esc(e.quality_tier)}</span>` : ''}
+              <span class="text-[10px] font-mono text-on-surface-variant">OID: ${esc(e.oid)}</span>
               <span class="material-symbols-outlined text-primary text-lg shrink-0">add_circle</span>
             </div>
           `).join('') +
           '</div>';
 
         results.querySelectorAll('.entity-pick').forEach(el => {
-          el.addEventListener('click', () => {
-            const org = orgs.find(o => String(o.id) === el.dataset.id);
-            if (org) {
-              partners[partnerIdx].name = org.organization_name;
-              partners[partnerIdx].city = org.city || '';
-              partners[partnerIdx].country = org.country || '';
-              partners[partnerIdx].organization_id = org.id;
+          el.addEventListener('click', async () => {
+            const oid = el.dataset.oid;
+            // Visual feedback while we adopt the entity → org
+            el.classList.add('opacity-50', 'pointer-events-none');
+            try {
+              const res = await fetch('/v1/organizations/from-entity', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': 'Bearer ' + API.getToken(),
+                },
+                body: JSON.stringify({ oid }),
+              }).then(r => r.json());
+              if (!res.ok || !res.data?.id) {
+                throw new Error(res.error?.message || 'No se pudo adoptar la entidad');
+              }
+              partners[partnerIdx].name = res.data.organization_name || '';
+              partners[partnerIdx].city = res.data.city || '';
+              partners[partnerIdx].country = res.data.country || '';
+              partners[partnerIdx].organization_id = res.data.id;
               calcNeedsReinit = true;
               _dirty = true;
               renderPartners();
               scheduleIntakeSave();
+              closeEntitySearch();
+            } catch (e) {
+              el.classList.remove('opacity-50', 'pointer-events-none');
+              if (typeof Toast !== 'undefined') Toast.show(e.message || 'Error', 'err');
             }
-            closeEntitySearch();
           });
         });
       } catch (err) {
@@ -1565,6 +1613,98 @@ const Intake = (() => {
     el.style.height = el.scrollHeight + 'px';
   }
 
+  /**
+   * Toggle vista renderizada (preview) ↔ edición (textarea).
+   * Vista por defecto cuando hay texto. Click en la vista → modo edición.
+   * Blur del textarea con texto → vuelve a vista.
+   */
+  function renderDescPreview() {
+    const ta = document.getElementById('intake-f-desc');
+    const out = document.getElementById('intake-f-desc-rendered');
+    const editBtn = document.getElementById('intake-f-desc-edit-btn');
+    if (!ta || !out) return;
+    const raw = (ta.value || '').trim();
+    if (!raw) {
+      // Sin texto: solo textarea visible (modo composición).
+      out.classList.add('hidden'); out.innerHTML = '';
+      ta.classList.remove('hidden');
+      if (editBtn) editBtn.classList.add('hidden');
+      return;
+    }
+    out.innerHTML = mdSummaryToHtml(raw);
+    // Si NO está en modo edición ahora, mostrar preview y ocultar textarea.
+    if (!ta.dataset.editing) {
+      out.classList.remove('hidden');
+      ta.classList.add('hidden');
+      if (editBtn) editBtn.classList.remove('hidden');
+    }
+  }
+
+  function enterEditMode() {
+    const ta = document.getElementById('intake-f-desc');
+    const out = document.getElementById('intake-f-desc-rendered');
+    const editBtn = document.getElementById('intake-f-desc-edit-btn');
+    if (!ta || !out) return;
+    ta.dataset.editing = '1';
+    out.classList.add('hidden');
+    ta.classList.remove('hidden');
+    if (editBtn) editBtn.classList.add('hidden');
+    setTimeout(() => { autoResizeDesc(); ta.focus(); }, 0);
+  }
+
+  function exitEditMode() {
+    const ta = document.getElementById('intake-f-desc');
+    if (!ta) return;
+    delete ta.dataset.editing;
+    renderDescPreview();
+  }
+
+  // Markdown más completo: **bold**, *italic*, # headers, listas (* / -), párrafos.
+  // Escapa HTML para evitar XSS. Después de procesar markdown, elimina cualquier
+  // asterisco/guion suelto que quede para que la vista esté limpia.
+  function mdSummaryToHtml(text) {
+    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    let t = String(text).replace(/\r\n/g, '\n').trim();
+    const blocks = t.split(/\n{2,}/);
+
+    const renderInline = (s) => {
+      let r = esc(s);
+      r = r.replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+      r = r.replace(/__([^_\n]+?)__/g, '<strong>$1</strong>');
+      r = r.replace(/(?<![A-Za-z0-9])\*([^*\n]+?)\*(?![A-Za-z0-9])/g, '<em>$1</em>');
+      r = r.replace(/(?<![A-Za-z0-9])_([^_\n]+?)_(?![A-Za-z0-9])/g, '<em>$1</em>');
+      r = r.replace(/`([^`\n]+?)`/g, '<code>$1</code>');
+      r = r.replace(/[ \t]*\*[ \t]*/g, ' ');
+      return r.replace(/  +/g, ' ').trim();
+    };
+
+    const html = blocks.map(block => {
+      const trimmed = block.trim();
+      if (!trimmed) return '';
+
+      const headingMatch = trimmed.match(/^(#{1,6})[ \t]+(.+)$/);
+      if (headingMatch && !/\n/.test(trimmed)) {
+        const level = Math.min(6, Math.max(2, headingMatch[1].length + 1));
+        return `<h${level}>${renderInline(headingMatch[2])}</h${level}>`;
+      }
+
+      const lines = trimmed.split('\n');
+      const isList = lines.every(l => /^\s*[*\-•][ \t]+/.test(l));
+      if (isList && lines.length >= 1) {
+        const items = lines.map(l => l.replace(/^\s*[*\-•][ \t]+/, '').trim());
+        return `<ul>${items.map(it => `<li>${renderInline(it)}</li>`).join('')}</ul>`;
+      }
+
+      const inlineRendered = renderInline(trimmed).replace(/\n/g, '<br>');
+      if (/^<strong>[^<]+<\/strong>$/.test(inlineRendered)) {
+        return `<h3>${inlineRendered.replace(/<\/?strong>/g, '')}</h3>`;
+      }
+      return `<p>${inlineRendered}</p>`;
+    }).join('');
+
+    return html;
+  }
+
   function updateLaunchGate() {
     const desc = document.getElementById('intake-f-desc');
     const btn = document.getElementById('intake-btn-launch');
@@ -1732,6 +1872,7 @@ const Intake = (() => {
     const fullnameEl = document.getElementById('intake-f-fullname');
     if (fullnameEl) fullnameEl.value = '';
     document.getElementById('intake-f-desc').value = '';
+    renderDescPreview();
     document.getElementById('intake-f-start').value = '';
     // Reset visible fields too
     const startVis = document.getElementById('intake-f-start-visible');
@@ -1897,6 +2038,9 @@ const Intake = (() => {
   }
 
   async function openProject(id) {
+    // Remember as the active project so a refresh reopens it instead of
+    // showing the empty Intake (which used to fall back to defaults €625k target).
+    try { localStorage.setItem('lastProjectId', id); } catch {}
     // Initialize intake without resetting step
     if (!initialized) {
       initialized = true;
@@ -1914,7 +2058,7 @@ const Intake = (() => {
       link.classList.toggle('active', link.dataset.route === 'intake');
     });
     location.hash = 'intake';
-    document.getElementById('topbar-title').textContent = 'Presupuestar';
+    document.getElementById('topbar-title').textContent = 'Diseñar';
     // Activate contextual sidebar with the project name (loadFromServer fills the rest later)
     if (typeof App !== 'undefined' && App.setActiveProject) {
       App.setActiveProject({ id, name: 'Cargando...' });

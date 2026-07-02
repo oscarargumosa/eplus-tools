@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "898769",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CULLERA / AYUNTAMIENTO DE CULLERA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria de concesión de subvención en régimen de concurrencia competitiva a personas físicas empadronadas en Cullera, para colaborar en los gastos derivados  del curso de salvamento y socorrismo impartido en Cullera por la FSSCV, año 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-14",
+  "open_date": "2026-06-30",
+  "deadline": "2026-10-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 6500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "cullera.sedipualba.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898769",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cullera.sedipualba.es/tablondeanuncios/anuncio.aspx?id=77187",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208794,
+      "titulo": "Anuncio del Ayuntamiento de Cullera relativo al extracto de la Resolución de fecha 9 de abril de 2026 por la que se convoca la Concesión de Subvención en régimen de concurrencia competitiva a las personas físicas empadronadas en Cullera  para colaborar en la financiación de los gastos derivados de la realización del curso de salvamento y socorrismo impartido en Cullera por la Federación de Salvamento y Socorrismo de la Comunidad Valenciana.",
+      "tituloLeng": null,
+      "texto": "<p>Por Resolución número 1197 de fecha 9 de abril de 2026 se convoca la Concesión de Subvención en régimen de concurrencia competitiva a las personas físicas empadronadas en Cullera para colaborar en la financiación de los gastos derivados de la realización del curso de salvamento y socorrismo impartido en Cullera por la Federación de Salvamento y Socorrismo de la Comunidad Valenciana.</p><p>Más información en la pagina web https://cullera.sedipualba.es/firma/documento.aspx?csv=JQAACFEDAAH4MFE34P43&modo=abrir, en el teléfono 961725913 o en el e-mail: esports@cullera.es</p>",
+      "textoLeng": null,
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04406&lang=es",
+      "cve": "BOPV-2026/04406",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-23"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.679Z"
+}

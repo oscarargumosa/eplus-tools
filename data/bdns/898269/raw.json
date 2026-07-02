@@ -1,0 +1,148 @@
+{
+  "id": 1099830,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "INSTITUTO LEONES DE CULTURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "898269",
+  "fechaRecepcion": "2026-04-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 27/03/2026 del C.R. del ILC, por el que se convocan subvenciones para Equipamiento de Espacios Culturales 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES. CONCURRENCIA COMPETITIVA 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto en el BOP",
+  "textFin": "20 días hábiles a partir del siguiente a la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1433780,
+      "descripcion": "MODELO CARTEL EQUIPAMIENTO ESPACIOS CULTURALES 2026",
+      "nombreFic": "MODELO_CARTEL_EQUIPAMIENTO_ESPACIOS_CULTURALES_2026.pdf",
+      "long": 91258,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433775,
+      "descripcion": "Anexo II_Descripción_Inversión_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_II_Descripción_Inversión_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 108331,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433774,
+      "descripcion": "Anexo I_Acreditación_Propiedad_ Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_I_Acreditación_Propiedad__Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 87383,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433773,
+      "descripcion": "FORMULARIO WEB Equipamiento Espacios Culturales 26",
+      "nombreFic": "FORMULARIO_WEB_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 153654,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433772,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "00_EXTRACTO_convocatoria_Equipamiento_Espacios_Culturales_2026.pdf",
+      "long": 458556,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433779,
+      "descripcion": "Anexo VI_Medidas_difusión_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_VI_Medidas_difusión_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 89136,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433778,
+      "descripcion": "Anexo V_Memoria_Económica_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_V_Memoria_Económica_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 95875,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433777,
+      "descripcion": "Anexo IV_Solicitud_abono_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_IV_Solicitud_abono_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 91273,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433781,
+      "descripcion": "Guía_Comprensión_Fácil_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Guía_Comprensión_Fácil_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 132161,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    },
+    {
+      "id": 1433776,
+      "descripcion": "Anexo III_Aceptación_renuncia_reformulación_Equipamiento Espacios Culturales 26",
+      "nombreFic": "Anexo_III_Aceptación_renuncia_reformulación_Equipamiento_Espacios_Culturales_26.pdf",
+      "long": 110789,
+      "datMod": "2026-04-13",
+      "datPublicacion": "2026-04-13"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 208603,
+      "titulo": "EXTRACTO DEL ACUERDO DEL CONSEJO RECTOR DEL INSTITUTO LEONÉS DE CULTURA DE 27 DE MARZO DE 2026, POR EL QUE SE CONVOCAN SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA CON DESTINO A EQUIPAMIENTO DE ESPACIOS CULTURALES 2026.",
+      "tituloLeng": null,
+      "texto": "<p>EXTRACTO DEL ACUERDO DEL CONSEJO RECTOR DEL INSTITUTO LEONÉS DE CULTURA DE 27 DE MARZO DE 2026, POR EL QUE SE CONVOCAN SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA CON DESTINO A EQUIPAMIENTO DE ESPACIOS CULTURALES 2026.</p><p>La convocatoria completa se podrá consultar en la página web del Instituto Leonés de Cultura:</p><p>https://www.institutoleonesdecultura.es/convocatorias/</p><p>Primero.- Beneficiarios</p><p>Podrán obtener la condición de beneficiarios de la presente convocatoria todos los ayuntamientos y juntas vecinales que sean titulares o cesionarios, por un plazo superior a 20 años, de bienes inmuebles susceptibles de acogerse a esta convocatoria, ubicados todos ellos en municipios menores de 20.000 habitantes de la provincia de León, que reúnan los requisitos establecidos en la Base 3.ª de las BGS y no se encuentren incursos en ninguna de las exclusiones contempladas en el artículo 13 de la Ley General de Subvenciones.</p><p>Segundo.- Objeto</p><p>Financiación de los gastos de capital correspondientes a la adquisición de equipamiento de naturaleza inventariable destinado a espacios culturales cuya propiedad corresponda a entidades locales.</p><p>Se consideran inventariables aquellos bienes directamente relacionados con los fines generales de las entidades beneficiarias, que tengan un período de utilización superior al ejercicio y la posibilidad de identificación individual, para su inclusión en el inventario de bienes de aquellas.</p><p>Los espacios a los que se destinen los equipamientos deberán ser de uso común de los vecinos, exceptuando todos aquellos que tengan la consideración de bares, restaurantes o negocios análogos, primándose los aspectos sociales, culturales y de acceso público.</p><p>Se excluye el equipamiento de inmuebles declarados Bien de Interés Cultural o sobre los que se haya incoado el correspondiente expediente para su declaración o enclavados en otro bien que lo sea.</p><p>Tercero.- Régimen jurídico</p><p>?\tBases Generales Reguladoras de la concesión de subvenciones, aprobadas por acuerdo del Pleno de la Diputación de León de fecha 27 de febrero de 2008, publicadas en el BOP n.º 45/2008, de 5 de marzo.</p><p>?\tOrdenanza General de Subvenciones en redacción aprobada por el Pleno de la Excma. Diputación Provincial de León el día 27 de julio de 2022, y publicada en el BOP n.º 206 de 27 de octubre de 2022.</p><p>Cuarto.- Cuantía</p><p>Total: 200.000,00 â¿¬.</p><p>La subvención no superará el 80% de la inversión total realizada, y, en todo caso, podrá alcanzar un importe máximo de 5.000 â¿¬ por entidad local. El beneficiario deberá justificar la totalidad del presupuesto presentado para la percepción de la subvención que se conceda.</p><p>Quinto.- Plazo de presentación de solicitudes</p><p>Veinte días hábiles a partir del siguiente al de la publicación del presente extracto en el Boletín Oficial de la Provincia de León por conducto de la Base de Datos Nacional de Subvenciones.</p><p>Sexto.-  Otros datos de interés</p><p>Plazo de ejecución: desde el 16 de diciembre de 2025 hasta el 15 de noviembre de 2026.</p><p>Gastos subvencionables: Se consideran gastos subvencionables aquellos que de manera indubitada respondan a la naturaleza de la actividad subvencionada, resulten estrictamente necesarios y se realicen en el plazo establecido. </p><p>Se entienden incluidos entre los gastos subvencionables los siguientes:</p><p>?\tRealización de inversiones relacionadas con nuevas tecnologías (equipamiento informático, infraestructura para acceso a internet).</p><p>?\tRealización de inversiones relacionadas con las artes escénicas (escenario, maquinaria escénica, equipamiento modular, paneles, tarimas y similares).</p><p>?\tRealización de inversiones relacionadas con iluminación y sonido (procesadores de sonido, microfonía, altavoces, sistemas de monitorización de sonido y similares).</p><p>?\tRealización de inversiones relacionadas con el equipamiento audiovisual (equipamientos de imagen, accesorios e infraestructura audiovisual y similares).</p><p>?\tLa adquisición o renovación de mobiliario para archivos y bibliotecas.</p><p>?\tLa adquisición o renovación del equipamiento general de locales de uso cultural.</p><p>?\tGastos de envío, con un máximo de 250 â¿¬ y del 5% del importe total de los gastos subvencionables.</p><p>No serán gastos subvencionables:</p><p>?\tLos gastos relativos a la adquisición o construcción de nuevos locales. </p><p>?\tGastos relativos a reforma o adaptación de edificios que impliquen cualquier tipo de intervención.</p><p>?\tLos gastos relativos a material consumible no inventariable, entendiendo por tal aquel con una duración estimada inferior a un año o de carácter reiterativo, (cartuchos impresoras, bombillas, etc.).</p><p>?\tLos gastos derivados de cualquier tipo de tributo, excepto el impuesto sobre el valor añadido no recuperable.</p><p>?\tElectrodomésticos.</p><p></p><p>Subcontratación: El beneficiario podrá subcontratar con terceros la actividad subvencionada en un porcentaje que podrá alcanzar el 100%, previo cumplimiento de las condiciones que se establecen en el artículo 29 de la LGS.</p><p>Criterios de valoración: La subvención se adjudicará teniendo en cuenta los siguientes criterios y su ponderación:</p><p>1.\tNúmero de habitantes de la entidad local solicitante de la subvención, según cifras oficiales de población resultantes de la revisión del Padrón Municipal a 1 de enero de 2025, conforme al detalle siguiente hasta un máximo de 10 puntos:</p><p>a).- Municipios hasta 500 habitantes\t10 puntos</p><p>b).- Municipios entre 501 y 1.000 habitantes\t8 puntos</p><p>c).- Municipios entre 1.001 y 2.000 habitantes\t6 puntos</p><p>d).- Municipios entre 2.001 y 5.000 habitantes\t4 puntos</p><p>e).- Municipios entre 5.001 y 10.000 habitantes\t2 puntos</p><p>f).- Municipios de más de 10.000 habitantes\t0 puntos</p><p>2.\tTipología de la instalación cultural para la que se pretende el equipamiento, hasta 5 puntos:</p><p>-\tEdificios destinados a biblioteca, archivo o sala de exposiciones: 5 puntos.</p><p>-\tOtras instalaciones culturales, destinados al uso común de los vecinos: 3 puntos</p><p>3.\tAccesibilidad del inmueble al que se destine el equipamiento; se otorgarán 5 puntos si el edificio es accesible para personas con discapacidad.</p><p>El importe de la subvención a conceder, con los límites fijados en la base sexta (80% de la inversión total realizada, y, en todo caso, 5.000 â¿¬ por entidad local), será directamente proporcional a la puntuación obtenida en aplicación de los criterios de valoración establecidos.</p><p>Reformulación: En el plazo de DIEZ (10) DÍAS hábiles los solicitantes para los que se haya propuesto provisionalmente concesión de subvención, podrán (según modelo normalizado del ANEXO III) aceptar la subvención (manteniendo el presupuesto presentado inicialmente), renunciar a la misma o proceder a la reformulación de su solicitud para adaptarla a la cuantía propuesta (el presupuesto debe ascender al menos al importe mínimo del 125% de la subvención), respetando el objeto, condiciones, finalidad de la subvención y criterios de valoración establecidos (no puede dar lugar a una puntuación menor de la obtenida inicialmente), incluyendo en este caso informe explicativo de los cambios introducidos, con indicación del equipamiento elegido, y siempre que la adquisición se realice una vez aceptada dicha reformulación mediante la concesión definitiva de la subvención.</p><p>En caso de que no se proceda a la aceptación formal, a la renuncia o a la reformulación, se entenderá aceptada la subvención incluida en la propuesta de resolución provisional.</p><p>Compatibilidad con otras subvenciones: Sí.</p><p>Solicitudes: Como sujetos obligados a relacionarse electrónicamente con la Diputación de León y el Instituto Leonés de Cultura, determinados en el artículo 14.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las solicitudes se presentarán obligatoriamente a través de la Sede Electrónica del Instituto Leonés de Cultura (https://sede.institutoleonesdecultura.es/), mediante el trámite relativo a la presente convocatoria localizado en \"trámites destacados\" o, de no encontrarse allí, accediendo a \"Catálogo de trámites\" debiéndose seleccionar el ámbito y área según corresponda:</p><p>?\tPara ayuntamientos: </p><p>Ámbito: ?Servicios relacionados con ayuntamientos\". </p><p>?\tPara juntas vecinales: </p><p>Ámbito: ?Servicios relacionados con juntas vecinales\". </p><p>Deberá rellenarse el formulario del trámite electrónico que se recoge en cada ámbito.</p><p>Los anexos se podrán descargar en el siguiente enlace: http://www.institutoleonesdecultura.es/InstitutoLeonesDeCultura/Convocatorias/ a la Web del ILC.</p><p></p><p>Documentación: La prevista en la base octava de la convocatoria.</p><p>Forma de justificación: Mediante la presentación de la documentación prevista en la base décima de la convocatoria.</p><p>Plazo máximo de justificación: 15 de diciembre de 2026</p><p>Forma de pago: Se efectuará una vez justificada la realización del gasto y acreditados los requisitos señalados en el art. 18 de la Ordenanza General de Subvenciones y en la Base 5ª de las BGS.</p>",
+      "textoLeng": null,
+      "url": "https://bop.dipuleon.es/publica/buscador-anuncios/anuncio/Extracto-de-la-convocatoria-de-subvenciones-con-destino-a-equipamiento-de-espacios-culturales-2026-BDNS-898269/",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE LEÓN",
+      "datPublicacion": "2026-04-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

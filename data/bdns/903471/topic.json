@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "903471",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ONDA / AYUNTAMIENTO DE ONDA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "BASES ESPECÍFICAS DE SUBVENCIONES A ENTIDADES DEPORTIVAS SIN ÁNIMO DE LUCRO DE ONDA, PARA LA REALIZACIÓN DE ACTIVIDADES DEPORTIVAS (EJERCICIO 2026)",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-05-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 18000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://seu.onda.es/OpenSEA/ciudadano/catalogoTramites?access=8a4882c57407e048017407ecac5f0003",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/903471",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Acuerdo JGL 04052026 aprobacion bases deportes 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo I-Proyecto Deportivo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dades.onda.es/#!/onda/subvenciones",
+  "text_inicio": "A partir del dia siguiente a la publicacion en el BOP",
+  "text_fin": "20 dias naturales desde el dia siguiente a la publicacion en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:49.165Z"
+}

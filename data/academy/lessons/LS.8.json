@@ -1,0 +1,81 @@
+{
+  "id": "LS.8",
+  "code": "UD-LS.8",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "D — Anatomía del formulario",
+  "title": "KA210 Small-scale: cómo se rellena la solicitud",
+  "subtitle": "El formulario más simple del programa, paso a paso: prioridades, objetivos y resultados, socios y reparto de tareas, tramo, actividades con importe, e impacto.",
+  "meta": {
+    "Nivel": "Básico-Intermedio",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección + ejercicio",
+    "Sección fuente": "4.1 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Eres nuevo en Erasmus+ (o casi) y el formulario te impone: no sabes qué pide cada apartado, cuánta información dar, ni cómo asignar dinero a las actividades sin un presupuesto detallado.",
+    "comprender": "Que el formulario de Small-scale es deliberadamente sencillo (pensado para inclusión y newcomers) y sigue una cadena lógica: prioridades → objetivos → actividades → resultados → impacto, con la cooperación transnacional como eje.",
+    "objetivo": "Rellenar cada bloque del formulario KA210 sabiendo qué espera el evaluador: prioridades elegidas, actividades descritas con líder e importe, y una sección de impacto creíble.",
+    "confusion": "Creer que «simple» significa «poco riguroso» y que como no hay presupuesto detallado no hace falta justificar de dónde sale el importe de cada actividad.",
+    "importa": "Porque aunque el tramo se completa solo y suma exacto, el evaluador juzga la idoneidad y la coherencia de cada actividad; sin información suficiente, el importe parece arbitrario y pierdes puntos."
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "kind": "content",
+      "title": "1. Un formulario hecho para que entres",
+      "html": "<p>Las <b>Small-scale Partnerships (KA210)</b> están diseñadas para la <b>inclusión y el acceso de newcomers</b> (organizaciones nuevas en el programa). Por eso la estructura del formulario es <b>más sencilla</b> que la de Cooperation Partnerships y el nivel de información requerido es <b>menor</b>, sin dejar de cumplir las reglas del Reglamento Financiero de la UE.</p><p>«Más simple» no significa «de cualquier manera»: significa que pide menos páginas, pero cada apartado tiene que estar bien pensado. Vamos a recorrer el formulario en el orden lógico que sigue.</p>"
+    },
+    {
+      "id": "prioridades",
+      "kind": "content",
+      "title": "2. Empieza por las prioridades",
+      "html": "<p>Toda propuesta debe contribuir a una o más de las <b>prioridades de política del programa</b>. En el formulario se te pide seleccionar:</p><ul><li><b>Al menos una prioridad horizontal</b> del programa, <b>y/o</b></li><li><b>Al menos una prioridad específica</b> del ámbito (educación, formación, juventud o deporte) más impactado.</li></ul><div class=\"callout callout-key\">Es decir: como mínimo <b>una prioridad</b> (horizontal y/o específica). Las prioridades no son decoración: son el ancla a la que vas a amarrar tus objetivos y resultados.</div>"
+    },
+    {
+      "id": "objetivos-resultados",
+      "kind": "content",
+      "title": "3. Objetivos y resultados ligados a las prioridades",
+      "html": "<p>La descripción del proyecto debe explicar <b>en términos sencillos</b> los <b>objetivos</b> del proyecto y los <b>resultados esperados</b>, vinculándolos a las prioridades elegidas.</p><p>Para llegar a objetivos relevantes, el solicitante debe <b>identificar y explicar las necesidades</b> de sus <b>organizaciones socias</b> y de sus <b>grupos destinatarios</b> (target groups). El <b>Anexo I</b> del Handbook incluye más información sobre cómo hacer un análisis de necesidades.</p><div class=\"callout callout-good\">Toda la propuesta debe ser <b>coherente</b> y dejar <b>enlaces claros</b> entre objetivos, actividades propuestas y resultados esperados. Esa cadena lógica es lo que el evaluador busca.</div>"
+    },
+    {
+      "id": "transnacional-socios",
+      "kind": "content",
+      "title": "4. La cooperación transnacional como eje",
+      "html": "<p>El <b>elemento central</b> de estos proyectos es su <b>naturaleza transnacional</b>. Por eso la solicitud debe presentar los <b>beneficios de cooperar con socios de otros países</b> y cómo esa cooperación ayuda a alcanzar los objetivos del proyecto.</p><p>En el formulario tienes que:</p><ul><li>Incluir <b>todas las organizaciones participantes</b>.</li><li>Aportar información sobre los <b>acuerdos de cooperación</b> (cooperation arrangements) dentro de la asociación.</li><li>Establecer un <b>reparto claro de tareas y responsabilidades</b> entre los socios, para asegurar una gestión sólida del proyecto. El <b>Anexo III</b> ofrece más consejos sobre los acuerdos internos de la asociación.</li></ul><div class=\"callout callout-key\">Si no se ve <em>por qué</em> hace falta cooperar entre países para lograr esto, la propuesta pierde su razón de ser. Lo transnacional no es un requisito a tachar: es el argumento.</div>"
+    },
+    {
+      "id": "tramo-actividades",
+      "kind": "content",
+      "title": "5. Elige el tramo y describe cada actividad",
+      "html": "<p>Tendrás que elegir <b>uno de los dos lump sums</b> del proyecto: <b>30.000 €</b> o <b>60.000 €</b>. <b>No se pide un presupuesto detallado</b> en el formulario. Pero conviene apoyar el diseño con una <b>estimación de costes precisa</b>: eso te ayuda a elegir el tramo más adecuado para tus objetivos.</p><div class=\"callout callout-good\"><b>Ejemplo del Handbook (la cadena lógica en acción):</b><br><b>Objetivo:</b> transferir buenas prácticas en la enseñanza de idiomas entre distintos países.<br><b>Actividad:</b> taller para el intercambio de buenas prácticas entre docentes.<br><b>Resultado esperado:</b> al volver a su centro, los profesores de idiomas aplican nuevas prácticas en sus aulas.</div><p>Para <b>cada actividad planificada</b>, el formulario te pide describirla <b>como un todo</b>:</p><ul><li><b>Contenido</b> de la actividad.</li><li><b>Sede</b> (venue).</li><li><b>Duración.</b></li><li><b>Número estimado de participantes.</b></li><li>Definir la <b>organización líder</b> (lead organisation) — normalmente la que organiza la actividad — y <b>listar las demás organizaciones participantes</b> (los socios que también tomarán parte en esa actividad concreta).</li></ul><div class=\"callout callout-key\">Las <b>fechas estimadas</b> de inicio y fin de cada actividad <b>se pueden cambiar durante la implementación sin necesidad de amendment.</b></div><p>La descripción de cada actividad debe dejar claros sus <b>resultados previstos</b> y el <b>vínculo con los objetivos</b> del proyecto. Y la descripción de los resultados esperados debe mostrar correlación lógica con los objetivos: los resultados <em>son</em> la consecución de los objetivos.</p>"
+    },
+    {
+      "id": "importe-actividad",
+      "kind": "content",
+      "title": "6. Asigna un importe a cada actividad (y explícalo)",
+      "html": "<p>Tendrás que <b>asignar un importe total en EUR a cada actividad</b> y <b>explicar cómo lo has definido</b>. Esto NO significa presentar un presupuesto detallado: no hace falta indicar el número exacto de participantes ni el coste real estimado de las comidas por participante, por ejemplo.</p><div class=\"callout callout-key\">Pero <b>sí</b> hace falta dar <b>información suficiente</b> para que el evaluador pueda juzgar: (a) la <b>idoneidad</b> de cada actividad frente a los objetivos de la acción y el importe solicitado, y (b) la <b>coherencia</b> de una actividad con las demás.</div><p>Por ejemplo: si la actividad consiste en organizar una reunión, la descripción debería incluir detalles clave como el <b>número aproximado de participantes</b> y el <b>tipo de sede</b>. Lo justo para que el importe parezca razonable, sin caer en el presupuesto-factura.</p>"
+    },
+    {
+      "id": "impacto",
+      "kind": "content",
+      "title": "7. Impacto y follow-up",
+      "html": "<p>En la sección de <b>impacto y seguimiento</b> (impact and follow-up) del formulario, debes aportar información sobre:</p><ul><li>Las <b>herramientas y métodos</b> que usarás para <b>evaluar la consecución de los objetivos</b>.</li><li>La <b>estrategia de comunicación</b> para compartir los resultados del proyecto.</li><li>Las <b>medidas de sostenibilidad</b>: qué se hará <em>después</em> del fin del proyecto para que las actividades y los resultados perduren.</li></ul><div class=\"callout callout-good\">El <b>resumen de presupuesto</b> del formulario se <b>completa automáticamente</b>: es una tabla con la lista de actividades y el coste estimado asignado a cada una. La suma total es <b>exactamente igual</b> al tramo solicitado (<b>30.000 € o 60.000 €</b>).</div>"
+    },
+    {
+      "id": "ejercicio",
+      "kind": "exercise",
+      "title": "Ejercicio práctico — Construye una actividad completa",
+      "html": "<div class=\"callout callout-exercise\"><b>Enunciado.</b> Tu KA210 ha elegido el tramo de <b>30.000 €</b> y tiene <b>3 socios</b> de 3 países. Toma el ejemplo del Handbook (transferir buenas prácticas en enseñanza de idiomas) y redacta UNA actividad completa con todos los campos que pide el formulario: contenido, sede, duración, nº estimado de participantes, organización líder y participantes, importe en EUR y una frase explicando cómo lo definiste. Después comprueba: ¿el evaluador podría juzgar su idoneidad solo con tu texto?</div><p><b>Propuesta de solución comentada</b> (una entre varias válidas):</p><table><thead><tr><th>Campo</th><th>Contenido</th></tr></thead><tbody><tr><td>Actividad</td><td>Taller transnacional de intercambio de buenas prácticas entre docentes de idiomas</td></tr><tr><td>Contenido</td><td>3 días de talleres con observación de aula, mesas de trabajo por nivel y diseño conjunto de una mini-guía de prácticas</td></tr><tr><td>Sede</td><td>Centro educativo del socio anfitrión (aulas + sala de reuniones)</td></tr><tr><td>Duración</td><td>3 días</td></tr><tr><td>Nº estimado de participantes</td><td>12 docentes (4 por organización)</td></tr><tr><td>Organización líder</td><td>Socio anfitrión (organiza la actividad)</td></tr><tr><td>Otros participantes</td><td>Los otros 2 socios</td></tr><tr><td>Importe (EUR)</td><td>9.000 €</td></tr><tr><td>Cómo se ha definido</td><td>Estimado a partir de viajes y subsistencia de 8 docentes desplazados (3 días), materiales del taller y coordinación local; sin desglose factura a factura</td></tr></tbody></table><div class=\"callout callout-good\"><b>Por qué funciona:</b> describe el contenido y la sede, da un nº de participantes y una duración, define líder y participantes, vincula con el objetivo (transferir buenas prácticas) y el resultado (aplicar nuevas prácticas al volver), y <em>explica</em> de dónde sale el importe sin presentar un presupuesto detallado. El evaluador tiene información suficiente para juzgar idoneidad y coherencia.</div>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026)</td><td>Sección <b>4.1</b> (solicitud de Small-scale Partnerships: prioridades, objetivos y resultados, necesidades y target groups con Anexo I, naturaleza transnacional y acuerdos de cooperación con Anexo III, elección de tramo, descripción de actividades con importe, fechas modificables, impacto y follow-up, resumen de presupuesto automático). Incluye el ejemplo de enseñanza de idiomas.</td></tr></tbody></table>"
+    }
+  ]
+}

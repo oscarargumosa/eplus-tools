@@ -1,0 +1,34 @@
+{
+  "identifier": "HORIZON-HLTH-2023-DISEASE-07-01",
+  "ccm2Id": "45700620",
+  "callIdentifier": "HORIZON-HLTH-2023-DISEASE-07",
+  "callTitle": "",
+  "title": "European Partnership on Rare Diseases",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-01-12",
+  "deadline": "2023-09-19",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON Programme Cofund Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Human genetics\",\"Clinical research\",\"Biobanks\",\"Medical ethics\",\"Pathology\",\"Ophthalmology\",\"Mediterranean\",\"Health sciences\",\"Health care sciences and services (including hospi\",\"Surgery\",\"Anatomy and morphology\",\"Transplantation\",\"Peripheral vascular disease\",\"Urology and nephrology\",\"Non-communicable diseases (except for neural/psych\",\"Neuro-ethics\",\"Anaesthesiology\",\"Medical statistics\",\"Otorhinolaryngology\",\"EOSC and FAIR data\",\"Ethics in medical sciences\",\"Paediatrics\",\"Clinical neurology\",\"Public health policies\",\"Health policy and services\",\"Respiratory systems\",\"Rare diseases\",\"Geriatrics and gerontology\",\"Clinical medicine\",\"International Cooperation\",\"Critical care medicine and Emergency medicine\",\"Orthopaedics\",\"Other clinical medicine subjects\",\"Privacy policies\",\"Neurosciences (including psychophysiology)\",\"Clinical trials\",\"Research integrity and research misconduct\",\"Dermatology and venereal diseases\",\"Cardiac and Cardiovascular systems\",\"Endocrinology and metabolism (including diabetes,\",\"Social sciences and humanities\",\"Dentistry, oral surgery and medicine\",\"Immunology\",\"Oncology\",\"Andrology\",\"General and internal medicine\",\"Health services, health care research\",\"Pharmacology and pharmacy\",\"Epidemiology\",\"Co-funded European Partnerships\",\"Hematology\",\"Obstetrics and gynaecology\",\"Pharmacoeconomics\",\"Personalised medicine\",\"Gastroenterology and hepatology\",\"Physiology (including cytology)\",\"Healthcare system\",\"Clinical management\",\"RD Partnership\",\"orphan medicinal products\",\"orphan drugs\",\"therapies\",\"diagnosis\",\"rare diseases\"]"
+  ],
+  "crossCuttingPriorities": [
+    "MEDIT",
+    "EoscAndFairData",
+    "EC-WORLD",
+    "SSH",
+    "PART-COFUND"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2023-DISEASE-07-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:05.405Z"
+}

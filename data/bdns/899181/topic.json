@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "899181",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GUADALAJARA / AYUNTAMIENTO DE GUADALAJARA",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "Concurso Escaparates de Guadalajara",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": "2026-10-20",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.guadalajara.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899181",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Extracto de las bases del concurso",
+      "url": null
+    },
+    {
+      "label": "Decreto de aprobación",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.guadalajara.es/es/ciudad/comercio/",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto en el BOP de Guadalajara",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.855Z"
+}

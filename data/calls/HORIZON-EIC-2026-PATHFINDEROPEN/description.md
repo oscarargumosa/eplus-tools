@@ -1,0 +1,33 @@
+## Expected Impact
+
+The expected output of your project is the proof of principle that the main ideas of the envisioned future technology are feasible, thus validating its scientific and technological basis. Project results should include top-level scientific publications in open access. While your vision is expected to be worthwhile because of its potential for future impact, for instance to create new markets, improve our lives, or provide solutions for global challenges, these are not expected to be achieved in the course of your EIC Pathfinder Open project. However, you are expected to take the necessary measures in the course of the project to allow future uptake to take place. This includes: an adequate formal protection of the generated Intellectual Property (IP), a plan for future exploitation and an assessment of relevant aspects related to regulation, certification, and standardisation.
+
+In addition, you are encouraged to involve and empower in your team key actors that have the potential to become future leaders in their field such as excellent early-career researchers or promising high-tech SMEs, including start-ups. Your project should reinforce their mind-set for targeted research and development aimed at high impact applied results. This will strengthen Europe’s capacity for exploiting the scientific discoveries made in Europe throughout the steps to market success or for solving global challenges. You are particularly encouraged to empower female researchers in your project and to achieve gender balance among your work package leaders.
+
+## Objective
+
+The overall objective of the EIC Pathfinder for advanced research is to develop the scientific basis to underpin breakthrough technologies. It provides support for the earliest stages of scientific, technological or deep tech research and development. Pathfinder projects aim to build on new, cutting-edge directions in science and technology to disrupt a field and a market or create new opportunities by realising innovative technological solutions through:
+
+ ‘EIC Pathfinder Open’, open to support projects in any field of science, technology or application without predefined thematic priorities.
+
+ ‘EIC Pathfinder Challenges’ to support coherent portfolios of projects within predefined thematic areas with the aim to achieve specific objectives for each Challenge.
+
+## Scope
+
+Do you have an ambitious vision for a novel future technology that could make a real difference to our lives?
+
+ Do you see a plausible way of achieving the scientific breakthrough that will make this technology possible?
+
+ Can you imagine collaborating with an interdisciplinary team of researchers and innovators to validate the scientific basis of the future technology, realise a proof of principle, and explore paths to impact?
+
+If the answer to each one of these questions is ‘yes’, then EIC Pathfinder Open may be the right call for you.
+
+You should apply if you are looking for support from EIC Pathfinder Open to realise an ambitious vision for radically new technology, with potential to create new markets, respond to societal needs and/or to provide solutions for global challenges. EIC Pathfinder Open supports early-stage development of such future technologies (e.g., various activities at low Technology Readiness Levels from 1 to 4), based on high risk/high-gain science-towards-technology breakthrough research ( ‘deep tech’). This research must provide the foundations of the technology you are envisioning. EIC Pathfinder Open may support your work, especially if it is highly risky: you may set out to try things that will not work; you may be faced with questions that nobody knows the answer to yet; you may realise that there are many aspects of the problem that you do not master. On the contrary, if the approach you want to follow is incremental by nature or known, EIC Pathfinder Open will not support you. Before applying to this call, you should verify that your proposal meets all the following essential characteristics (‘Gatekeepers’):
+
+ Convincing long-term vision of a radically new technology that has the potential to have a transformative positive effect to solving a challenge in our economy and society.
+
+ Concrete, novel and ambitious science-towards-technology breakthrough, providing advancement towards the envisioned technology.
+
+ High-risk/high-gain research approach and methodology, with concrete and plausible objectives.
+
+EIC Pathfinder Open involves interdisciplinary research and development. By bringing diverse areas of research together, often with different perspectives, terminologies and methodologies, within individual projects and within a portfolio of projects, really new things can be generated, and entirely new areas of research can be opened up. It is up to you to compose the team that you need, that you can learn from, and that you can move forward with.

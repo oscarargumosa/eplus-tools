@@ -64,6 +64,27 @@ exports.saveField = async (req, res, next) => {
   } catch (err) { next(err); }
 };
 
+// GET /v1/developer/instances/:id/eform-answers
+// Ordered Q/A for National-Agency copy-paste (on-screen report with copy buttons).
+exports.getEformAnswers = async (req, res, next) => {
+  try {
+    const data = await model.getEformAnswers(req.params.id, req.user.id);
+    if (!data) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Instance not found' } });
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// GET /v1/developer/instances/:id/eform-export.docx
+exports.exportEformDocx = async (req, res, next) => {
+  try {
+    const out = await model.buildEformDocx(req.params.id, req.user.id);
+    if (!out) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Instance not found' } });
+    res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+    res.setHeader('Content-Disposition', `attachment; filename="${out.filename}"`);
+    res.send(out.buffer);
+  } catch (err) { next(err); }
+};
+
 // GET /v1/developer/eval-criteria
 exports.getEvalCriteria = async (req, res, next) => {
   try {
@@ -174,7 +195,8 @@ exports.savePartnerCustomText = async (req, res, next) => {
 // PUT /v1/developer/projects/:projectId/prep/consorcio/:partnerId/toggle-eu-project
 exports.toggleEuProject = async (req, res, next) => {
   try {
-    await model.toggleEuProject(req.params.projectId, req.params.partnerId, req.body.eu_project_id, req.body.selected);
+    const id = req.body.project_identifier || req.body.eu_project_id;
+    await model.toggleEuProject(req.params.projectId, req.params.partnerId, id, req.body.selected);
     res.json({ ok: true });
   } catch (err) { next(err); }
 };
@@ -347,6 +369,16 @@ exports.improveActivityDescription = async (req, res, next) => {
     res.json({ ok: true, data });
   } catch (err) {
     console.error('[improveActivityDescription] ERROR:', err?.message || err, err?.stack);
+    next(err);
+  }
+};
+
+exports.improveConsortiumConnection = async (req, res, next) => {
+  try {
+    const data = await model.improveConsortiumConnection(req.params.projectId, req.user.id, (req.body?.text || '').trim());
+    res.json({ ok: true, data });
+  } catch (err) {
+    console.error('[improveConsortiumConnection] ERROR:', err?.message || err, err?.stack);
     next(err);
   }
 };
@@ -632,6 +664,13 @@ exports.getWpBudget = async (req, res, next) => {
   } catch (err) { next(err); }
 };
 
+exports.refreshProjectBudget = async (req, res, next) => {
+  try {
+    const data = await model.refreshProjectBudget(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
 exports.listProjectPartners = async (req, res, next) => {
   try {
     const data = await model.listProjectPartners(req.params.projectId, req.user.id);
@@ -684,7 +723,8 @@ exports.getDeliverableSummary = async (req, res, next) => {
 // Runs the 3-pass holistic generator and returns a preview without persisting.
 exports.dmsPreviewV2 = async (req, res, next) => {
   try {
-    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id);
+    const targetCount = Number((req.body && req.body.target_count) || 0) || null;
+    const data = await dmsGenerator.generatePreview(req.params.projectId, req.user.id, { targetCount });
     res.json({ ok: true, data });
   } catch (err) { next(err); }
 };
@@ -798,6 +838,89 @@ exports.dmsDeleteComment = async (req, res, next) => {
   try {
     const data = await dmsGenerator.deleteComment(req.params.id, req.user.id);
     res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// GET /v1/developer/projects/:projectId/staff-table
+exports.listStaffTable = async (req, res, next) => {
+  try {
+    const data = await model.listStaffTable(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// PATCH /v1/developer/staff-table/:ppsId
+exports.updateStaffTable = async (req, res, next) => {
+  try {
+    const data = await model.updateStaffTableRow(req.params.ppsId, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// 2.1.5 Project risks — CRUD
+exports.listRisks = async (req, res, next) => {
+  try {
+    const data = await model.listProjectRisks(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.createRisk = async (req, res, next) => {
+  try {
+    const data = await model.createProjectRisk(req.params.projectId, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.updateRisk = async (req, res, next) => {
+  try {
+    const data = await model.updateProjectRisk(req.params.id, req.user.id, req.body || {});
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.deleteRisk = async (req, res, next) => {
+  try {
+    const data = await model.deleteProjectRisk(req.params.id, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.aiGenerateRisks = async (req, res, next) => {
+  try {
+    const data = await model.aiGenerateProjectRisks(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+exports.aiEvaluateRisks = async (req, res, next) => {
+  try {
+    const data = await model.aiEvaluateProjectRisks(req.params.projectId, req.user.id);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// ── TASK-008 · Facts ledger (user surface) ──
+// GET /v1/developer/projects/:projectId/facts
+exports.listFacts = async (req, res, next) => {
+  try {
+    await model.assertProjectOwned(req.params.projectId, req.user.id);
+    const data = await model.listProjectFacts(req.params.projectId, req.query.status || null);
+    res.json({ ok: true, data });
+  } catch (err) { next(err); }
+};
+
+// POST /v1/developer/projects/:projectId/facts  { key, value, status? }
+exports.upsertFact = async (req, res, next) => {
+  try {
+    await model.assertProjectOwned(req.params.projectId, req.user.id);
+    const { key, value, status } = req.body || {};
+    await model.upsertProjectFact(req.params.projectId, key, value, status, req.user.id);
+    res.json({ ok: true });
+  } catch (err) { next(err); }
+};
+
+// PATCH /v1/developer/projects/:projectId/facts/:factId  { status }
+exports.setFactStatus = async (req, res, next) => {
+  try {
+    await model.assertProjectOwned(req.params.projectId, req.user.id);
+    await model.setFactStatus(req.params.factId, (req.body || {}).status, req.user.id);
+    res.json({ ok: true });
   } catch (err) { next(err); }
 };
 

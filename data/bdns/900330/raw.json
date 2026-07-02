@@ -1,0 +1,112 @@
+{
+  "id": 1101891,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANARIAS",
+    "nivel3": "CONSEJERÍA DE TRANSICIÓN ECOLÓGICA Y ENERGÍA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "900330",
+  "fechaRecepcion": "2026-04-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 665441.69,
+  "mrr": true,
+  "descripcion": "ORDEN DEL CTELCCPT POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS Y LA CONVOCATORIA DE SUBVENCIONES PARA EL FOMENTO DEL AUTOCONSUMO COMPARTIDO Y DLLO DE CDADES ENERGÉTICAS EN DIF. SECTORES EN EL MARCO DE LA ESTRAT.DE ENERGÍA SOST. (P2, L1) PRTR (C7 I2)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    },
+    {
+      "descripcion": "Actividades de construcción especializada en ingeniería civil",
+      "codigo": "43.5"
+    },
+    {
+      "descripcion": "Actividades de construcción especializada en la construcción de edificios",
+      "codigo": "43.4"
+    },
+    {
+      "descripcion": "Actividades de limpieza",
+      "codigo": "81.2"
+    },
+    {
+      "descripcion": "Construcción de otros proyectos de ingeniería civil",
+      "codigo": "42.9"
+    },
+    {
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción",
+      "codigo": "43.2"
+    },
+    {
+      "descripcion": "Otras actividades de construcción especializada",
+      "codigo": "43.9"
+    },
+    {
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado",
+      "codigo": "35"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "ORDEN DEL CTELCCPT POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS Y LA CONVOCATORIA DE SUBVENCIONES PARA EL FOMENTO DEL AUTOCONSUMO COMPARTIDO Y DLLO DE CDADES ENERGÉTICAS EN DIF. SECTORES EN EL MARCO DE LA ESTRAT.DE ENERGÍA SOST. (P2, L1) PRTR (C7 I2)",
+  "urlBasesReguladoras": "http://www.gobiernodecanarias.org/boc/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2023-01-11",
+  "fechaFinSolicitud": null,
+  "textInicio": "11/01/2023",
+  "textFin": "12/05/2023",
+  "ayudaEstado": "SA.000000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.000000",
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 38 AYUDAS A LA INVERSIÓN DESTINADAS A MEDIDAS DE EFICIENCIA ENERGÉTICA DISTINTAS DE LOS EDIFICIOS."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1439537,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria castellano.PDF",
+      "long": 1409888,
+      "datMod": "2026-04-21",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

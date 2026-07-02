@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "897251",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PETRER / AYUNTAMIENTO DE PETRER",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA 2026 DE SUBVENCIONES A ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO DE PETRER, PARA EL FOMENTO DE PROYECTOS Y ACTIVIDADES CULTURALES",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-07",
+  "open_date": "2026-04-10",
+  "deadline": "2026-05-11",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "https://petrer.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/897251",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Resto de anexos",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://petrer.es/anuncio-bases-subvenciones-a-asociaciones-y-entidades-sin-animo-de-lucro-de-petrer-anualidad-2026/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208072,
+      "titulo": "CONVOCATORIA 2026 DE SUBVENCIONES A ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO DE PETRER, PARA EL FOMENTO DE PROYECTOS Y ACTIVIDADES CULTURALES",
+      "tituloLeng": null,
+      "texto": "<p>Primero: Beneficiarios: Asociaciones y entidades sin ánimo de lucro, cuya finalidad sea la de promover y financiar proyectos y actividades culturales, inscritas en el Registro Municipal de Asociaciones del Ayuntamiento de Petrer.</p><p>Segundo: Objeto: Promover y financiar proyectos y actividades culturales que incidan directamente en la población de Petrer.</p><p>Tercero: Bases reguladoras aprobadas por la Junta de Gobierno Local del Excmo. Ayuntamiento de Petrer, en sesión celebrada el 26 de marzo de 2026.</p><p>Cuarto: Cuantía: 15.000,00 euros.</p><p>Quinto: Plazo de presentación de solicitudes: Un mes a contar desde el día siguiente al de la publicación de este extracto en el Boletín Oficial de la Provincia de Alicante.</p>",
+      "textoLeng": null,
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/04/09_66/2026_002473.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE ALICANTE",
+      "datPublicacion": "2026-04-09"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:45.929Z"
+}

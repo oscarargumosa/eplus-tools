@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "902327",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ALBACETE / DIPUTACIÓN PROVINCIAL DE ALBACETE",
+  "nuts_codes": [
+    "ES421"
+  ],
+  "nuts_primary": "ES421",
+  "title": "Convocatoria abierta de subvenciones destinadas a las asociaciones y entidades privadas de la provincia de Albacete para la realización de actividades durante el año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-29",
+  "open_date": "2026-05-09",
+  "deadline": "2026-10-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "www.dipualba.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902327",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipualba.es/bop/ficheros/2016/118/BOP%20118-16-P-11.PDF",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.623Z"
+}

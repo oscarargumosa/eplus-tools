@@ -1,0 +1,64 @@
+{
+  "id": 1104473,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MAJADAHONDA",
+    "nivel3": "AYUNTAMIENTO DE MAJADAHONDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "902912",
+  "fechaRecepcion": "2026-04-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Convenio entre el Excmo. Ayto. de Majadahonda, a través de la Concejalía de Bienestar Social, Familia y Mayores y la Entidad Cruz Roja Española, para la mejora de la empleabilidad e inserción de personas en riesgo de exclusión social para el año 2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases de ejecución del presupuesto general del Ayuntamiento de Majadahonda",
+  "urlBasesReguladoras": "http://www.majadahonda.org/economiahacienda/ presupuestos-2025.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "01/01/2025",
+  "textFin": "31/12/2025",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1446638,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "02.- DECRETO FORMALIZACIÓN CONVENIO Firmado.pdf",
+      "long": 937373,
+      "datMod": "2026-04-30",
+      "datPublicacion": null
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

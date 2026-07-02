@@ -1,0 +1,76 @@
+{
+  "id": 1101388,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SALAMANCA",
+    "nivel3": "AYUNTAMIENTO DE SALAMANCA"
+  },
+  "sedeElectronica": "https://www.aytosalamanca.es",
+  "codigoBDNS": "899827",
+  "fechaRecepcion": "2026-04-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20982,
+  "mrr": false,
+  "descripcion": "CONVOCATORIAPARA LA REALIZACIÓN DEL CERTIFICADO DE PROFESIONALIDAD “ATENCIÓN SOCIOSANITARIA A PERSONAS DEPENDIENTES EN INSTITUCIONES SOCIALES_SSCS0208 (3ª edición)” DEL PROYECTO “LABORIS-HELMÁNTICA”,",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES415 - Salamanca"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA PARTICIPACIÓN EN LAS ACTIVIDADES FORMATIVAS DEL PROYECTO “LABORIS HELMÁNTICA”, PREVISTAS EN EL PROGRAMA DE EMPLEO, EDUCACIÓN, FORMACIÓN Y ECONOMÍA SOCIAL, FONDO EUROPEO PLUS 2021-2027 (EFESO FSE+) DEL AYUNTAMIENTO DE SALAMANCA",
+  "urlBasesReguladoras": "https://sede.diputaciondesalamanca.gob.es/documentacion/bop/2025/20250214/BOP-SA-20250214-001.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "20 días naturales contados a partir del siguiente a la publicación en el BOP ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1438191,
+      "descripcion": "SOLICITUD DE PARTICIPACIÓN",
+      "nombreFic": "SP2-Solicitud Participación AF_AtenciónSociosanitaria E2_EFESO.pdf",
+      "long": 1027495,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    },
+    {
+      "id": 1438189,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Certificado de Profesionalidad_Atención Sociosanitaria_3 Edición.pdf",
+      "long": 1518644,
+      "datMod": "2026-04-20",
+      "datPublicacion": "2026-04-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

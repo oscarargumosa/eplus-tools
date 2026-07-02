@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "898113",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / QUART DE POBLET / AYUNTAMIENTO DE QUART DE POBLET",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-04-10",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 70000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/898113",
+  "documents": [
+    {
+      "label": "BASES ESPECÍFICAS REGULADORAS DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET",
+      "url": null
+    },
+    {
+      "label": "CERTIFICADO ACUERDO JGL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cdn.digitalvalue.es/quartdepoblet/assets2/623adb3b9fec11b502747132",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 208513,
+      "titulo": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+      "tituloLeng": "CONVOCATORIA DE LAS AYUDAS PARA COMEDORES ESCOLARES DEL AYUNTAMIENTO DE QUART DE POBLET PARA EL CURSO 2026/2027",
+      "texto": "<p>1. OBJETO El objeto de la presente convocatoria es regular las condiciones y el procedimiento a seguir, en régimen de concurrencia competitiva, de las ayudas para el pago del comedor escolar del curso escolar 2026-2027, de aquellas familias empadronadas en Quart de Poblet con hijos/as escolarizados/as en centros educativos del municipio de Quart de Poblet, de modalidad pública y/o concertada. Dado que la naturaleza y finalidad de estas ayudas es garantizar la atención adecuada de los niños/as y adolescentes en situación de especial vulnerabilidad, se establece la excepción del cumplimiento de las condiciones de las personas beneficiarias, que establece el artículo 13.2 de la Ley General de Subvenciones.</p><p>2. BASES REGULADORAS La presente convocatoria se rige por las bases reguladoras de las ayudas para comedores escolares del municipio de Quart de Poblet, aprobadas por la Junta de Gobierno Local del Ayuntamiento de Quart de Poblet el 27 de febrero de 2024</p>",
+      "textoLeng": "<p>1. OBJECTE L'objecte de la present convocatòria és regular les condicions i el procediment a seguir, en règim de concurrència competitiva, de les ajudes per al pagament del menjador escolar del curs escolar 2026-2027, d'aquelles famílies empadronades a Quart de Poblet amb fills/as escolaritzats/as en centres educatius del municipi de Quart de Poblet, de modalitat pública i/o concertada. Atés que la naturalesa i finalitat d'estes ajudes és garantir l'atenció adequada dels xiquets/as i adolescents en situació d'especial vulnerabilitat, s'establix l'excepció del compliment de les condicions de les persones beneficiàries, que establix l'article 13.2 de la Llei General de Subvencions.</p><p>2. BASES REGULADORES La present convocatòria es regix per les bases reguladores de les ajudes per a menjadors escolars del municipi de Quart de Poblet, aprovades per la Junta de Govern Local de l'Ajuntament de Quart de Poblet el 27 de febrer de 2024</p>",
+      "url": "https://bop.dival.es/bop/downloads?anuncioCSV=BOPV-2026/04325&lang=es",
+      "cve": "BOPV-2026/04325",
+      "desDiarioOficial": "B.O.P. DE VALENCIA",
+      "datPublicacion": "2026-04-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.404Z"
+}

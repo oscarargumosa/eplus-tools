@@ -1,0 +1,30 @@
+{
+  "identifier": "HORIZON-EUROHPC-JU-2023-COE-01-01",
+  "ccm2Id": "45908141",
+  "callIdentifier": "HORIZON-EUROHPC-JU-2023-COE-01",
+  "callTitle": "",
+  "title": "Call on Centres Of Excellence For Exascale HPC Applications",
+  "programme": "Horizon Europe",
+  "programmeCode": "43108390",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2023-03-08",
+  "deadline": "2023-06-08",
+  "deadlineModel": "single-stage",
+  "actionType": "HORIZON JU Research and Innovation Actions",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": null,
+  "keywords": [
+    "[\"Numerical analysis, simulation, optimisation, mode\",\"High performance computing\",\"Digital Agenda\",\"Computational engineering and computer aided desig\",\"Scientific computing, simulation and modelling too\",\"High Performance Computing\",\"EuroHPC\"]"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-EUROHPC-JU-2023-COE-01-01.json",
+  "documents": [],
+  "fetchedAt": "2026-06-27T12:50:07.919Z"
+}

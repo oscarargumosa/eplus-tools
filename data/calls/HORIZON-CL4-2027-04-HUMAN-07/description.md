@@ -1,0 +1,28 @@
+## Expected Outcome
+
+Proposals are expected to contribute to the following outcomes:
+- Increasing the participation and influence of European experts in digital standardisation to promote EU values and strategic interests, contributing to strengthen EU competitiveness in the digital field.
+- Improvement of the skills of European experts, especially from SMEs, R&I institutions, Open-Source community, academia and societal stakeholders, to successfully contribute and lead in the development of digital standards.
+- Development and update of standardisation landscapes and gap analyses of key digital technologies as outlined in the Rolling Plan for ICT Standardisation.
+- Provision of foresight analyses regarding standardisation in new emerging technologies to identify short and medium-term digital standardisation needs to support EU policies and anticipate appropriate participation by EU stakeholders.
+- More awareness of the benefits and competitive advantages of standardisation, in particular for SMEs and researchers, and more visibility of the European digital standardisation ecosystem.
+
+## Scope
+
+Contribute to the implementation of the EU Standardisation Strategy and other policy initiatives such as Europe’s Digital Decade, Apply AI Strategy or the Competitiveness Compass, with an emphasis on supporting the EU’s leading position in global standards-setting of key digital technologies.
+
+The goals are inter alia to 1) strengthen the EU competitiveness in the digital domain; 2) contribute to EU tech sovereignty and 3) promote EU values and interests internationally, by empowering and financially supporting the active participation of European stakeholders in the development of digital international standards.
+
+The objective is to reinforce the presence of experts from the EU and associated Horizon Europe countries in global digital standards setting, especially those coming from SMEs, R&I institutions, Open-Source community, academia and societal stakeholders.
+
+To achieve this objective, proposals under this topic should provide for:
+- Setting up of a management facility to support contributions and leadership (e.g. chairing of technical committees, convenor positions) of European specialists in activities in relation to global digital standardisation
+- When relevant, support financially the hosting of international standardisation meetings (e.g. 3GPP, ISO/IEC JTC1) and workshops in Europe to ease the participation of European experts
+- Landscape and gap analysis of standardisation activities in key digital priority areas, as outlined in the Annual Union Work Programme and the Rolling Plan for ICT standardisation, including identification of new emerging technology areas.
+- Promotion of the relevance and benefits of digital standardisation, especially for strengthening the competitiveness of EU industry, driving sustainability, achieving tech sovereignty, and promoting EU values. The proposal shall build synergies with other similar EU- and national-funded initiatives. It shall also include actions, including development of tools and materials, to promote education and skills on standardisation.
+
+Beneficiaries that intend to transfer ownership or grant an exclusive licence must formally notify the granting authority (i.e. DG-CNECT and HaDEA) before the intended transfer or licensing takes place and the granting authority may up to four years after the end of the action object to a transfer of ownership or the exclusive licensing of results.
+
+The proposal should take into account the previous activities carried out at least in terms of educational material and facilities for funding experts within the topics ICT-40-2017 (implemented by the StandICT.eu project), ICT-45-2020 (implemented under StandICT.eu2023 project), HORIZON-CL4-2022-RESILIENCE-01-21 (implemented under StandICT.eu 2026) and HORIZON-CL4-2024-HUMAN-03-04 (implemented under StandICT.eu 2029).
+
+See website: http://www.standict.eu.

@@ -1,0 +1,23 @@
+## Expected Outcome
+
+Projects should contribute to all of the following expected outcomes:
+- EU national and local policymakers develop and implement effective strategies for sustainable peace and democratic reconstruction in post-conflict areas, promoting stability, inclusivity, equity, security, human rights, and strengthening integrity and anticorruption measures to ensure transparent, accountable, and ethical use of reconstruction aid.
+- EU and national policymakers inform their decision-making with evidence-based recommendations on international cooperation, EU democracy support, and civil society engagement in post-conflict reconstruction, leading to more effective, inclusive and sustainable reconstruction efforts.
+- Local civil society organisations and community groups, with a focus on persons and groups in a vulnerable situation in post-conflict countries, provide guidance and support to educators, media professionals, public administrators, and other stakeholders on promoting reconciliation, accountability, and sustainable peace.
+- Specialised service providers, including NGOs and community organisations, offer support services and programmes to veterans and the persons and groups in a vulnerable situation affected by the conflict reintegrating them into democratic societies, addressing their socio-economic and psychological needs and promoting successful reintegration into civilian life.
+
+## Scope
+
+The aftermath of conflict poses significant challenges for rebuilding democratic institutions, promoting social dialogue, and achieving sustainable peace. In conflict and post-conflict areas, the destruction of infrastructure, institutions, and social fabric can lead to prolonged instability, increased inequalities, human suffering, and a decline in democratic governance.
+
+This research aims to investigate the complex relationships between post-conflict reconstruction, democracy, inequality, and international cooperation, with the ultimate goal of promoting reconciliation, accountability, and social dialogue in conflict and post-conflict areas. By analysing the causes and consequences of conflicts, examining the role of historical narratives and cultural sensibilities, and gathering evidence on key factors such as ethnic violence, inequalities, and conflict legacies, this research seeks to inform the development of effective prevention, resolution, and reconciliation strategies. Proposals are encouraged to examine the prevention of fractured transitions in post-conflict situations, assessing past, present, and future divisions, and incorporating intergenerational and transgenerational perspectives to address potential challenges and promote a more sustainable transition.
+
+Research should have an interdisciplinary approach, drawing on insights from SSH disciplines such as contemporary historiography, sociology, psychology, legal, political science and cultural studies, to examine the complex economic, social, psychological and institutional factors that influence post-conflict rebuilding efforts.
+
+Proposals should adopt a collaborative and interdisciplinary approach, bringing together a diverse range of stakeholders, including research institutions, specialized service providers, local authorities, civil society organizations, local actors, media and information providers, schools, educational organizations, cultural institutions and heritage institutes. In addition, particular could be brought to the role of women as peacebuilders[1].This integrative approach should combine expertise and experience in areas such as conflict resolution, democratic governance, state rebuilding and social cohesion to explore new approaches to post-conflict reconstruction.
+
+Proposals may incorporate participatory research approaches to enhance inclusivity and stakeholder engagement, and should also examine innovative methods, such as participatory governance, inclusive economic development, and community-led reconstruction, to identify effective strategies applicable in diverse conflict and post-conflict areas.
+
+Proposals are encouraged to identify other relevant EU-funded projects related to EU democracy support, civil society engagement, and international cooperation on sustainable peace and democratic governance, and to explore potential collaboration opportunities with them. In order to achieve the topic’s expected outcomes, international cooperation is encouraged.
+
+[1]  https://www.unwomen.org/en/news/stories/2019/10/compilation-the-power-of-women-peacebuilders

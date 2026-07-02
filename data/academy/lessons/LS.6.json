@@ -1,0 +1,69 @@
+{
+  "id": "LS.6",
+  "code": "UD-LS.6",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "G — Presupuesto",
+  "title": "Qué actividades cubre el lump sum",
+  "subtitle": "Qué puedes financiar con la subvención, qué costes típicos entran y por qué una actividad irrelevante o desproporcionada te puede hundir la solicitud.",
+  "meta": {
+    "Nivel": "Intermedio",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "3.4 del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "No tienes claro qué se puede «meter» en un proyecto KA2: dudas si un viaje, una web, comprar equipo o pagar a tu personal está cubierto, y temes diseñar actividades que luego resulten no elegibles.",
+    "comprender": "Que el lump sum cubre un abanico amplio de actividades (gestión, formación, eventos, entregables, difusión, impacto) y que casi cualquier actividad vale… si es relevante y proporcionada en coste.",
+    "objetivo": "Saber qué actividades y costes típicos cubre el lump sum y diseñar actividades que un evaluador acepte por relevantes y bien dimensionadas.",
+    "confusion": "Creer que hay una lista cerrada de gastos permitidos (como en costes reales) o que todo lo que se te ocurra entra automáticamente sin que importe su relevancia o su coste.",
+    "importa": "Porque una actividad irrelevante o con coste desproporcionado baja tu puntuación o tumba la solicitud; y en implementación, si no ejecutas las actividades como las aprobaron, se rechazan como inelegibles y no te pagan esa parte."
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "kind": "content",
+      "title": "1. El lump sum cubre actividades, no categorías de gasto",
+      "html": "<p>En el modelo a tanto alzado, el importe predefinido sirve para cubrir los costes de <b>implementar las actividades elegibles</b> dentro del marco de las Partnerships for Cooperation (Small-scale Partnerships, Cooperation Partnerships y European Partnerships for School Development).</p><p>Fíjate en el matiz: ya no piensas en «categorías de gasto» (personal, viajes, equipos…), sino en <b>actividades</b>. El Handbook da una lista de los <em>tipos</em> de actividad que el lump sum cubre, con la palabra clave «por ejemplo» delante: no es una lista cerrada, es una orientación.</p>"
+    },
+    {
+      "id": "actividades",
+      "kind": "content",
+      "title": "2. Actividades cubiertas (la lista del Handbook)",
+      "html": "<p>El lump sum cubre, por ejemplo, las siguientes actividades:</p><ul><li><b>Gestión del proyecto</b> — planificación, finanzas, coordinación y comunicación entre socios, seguimiento y supervisión, etc.</li><li><b>Learning activities</b> (actividades de aprendizaje).</li><li><b>Teaching and training activities</b> (actividades de enseñanza y formación).</li><li><b>Meetings and events</b> (reuniones y eventos).</li><li><b>Entregables del proyecto</b> (<em>project deliverables</em>) — publicaciones, materiales, documentos, herramientas, productos, etc.</li><li><b>Actividades para maximizar el impacto</b> de los resultados del proyecto.</li><li><b>Actividades para compartir</b> los resultados del proyecto.</li></ul><div class=\"callout callout-key\">El «<b>etc.</b>» y el «<b>por ejemplo</b>» son deliberados: la lista no agota lo posible. La pregunta correcta no es «¿está en la lista?», sino «¿es relevante para mis objetivos y proporcionada en coste?».</div>"
+    },
+    {
+      "id": "costes",
+      "kind": "content",
+      "title": "3. Costes típicos que entran",
+      "html": "<p>Aunque no presentas un presupuesto detallado, te ayuda saber qué tipos de coste suelen ir <em>ligados</em> a esas actividades. El Handbook menciona, como costes típicos:</p><ul><li><b>Viajes y subsistencia</b> (travel and subsistence).</li><li><b>Equipamiento</b> (equipment).</li><li><b>Publicación y edición</b> de materiales.</li><li><b>Desarrollo IT</b> — por ejemplo, crear una página web.</li><li><b>Personal y recursos humanos</b> (staff and human resources costs).</li></ul><div class=\"callout callout-good\">Sí: pagar a tu personal, comprar equipo, viajar o desarrollar una web son costes perfectamente cubiertos por el lump sum, siempre que estén al servicio de actividades relevantes.</div><p>La diferencia con el modelo antiguo es que estos costes <b>no se justifican uno a uno con facturas</b>: viven «dentro» del importe asignado a cada actividad, y lo que se evalúa es que la actividad se haga y entregue resultados.</p>"
+    },
+    {
+      "id": "regla",
+      "kind": "content",
+      "title": "4. La regla de oro: relevancia y proporción",
+      "html": "<p>Aquí está el criterio que decide si una actividad vale o no. El Handbook lo dice claro:</p><div class=\"callout callout-key\"><b>Cualquier actividad puede aceptarse</b> si se considera <b>relevante</b> para el proyecto y <b>cumple los criterios de elegibilidad.</b></div><p>Y el reverso, igual de importante:</p><div class=\"callout callout-warn\">Si una solicitud presenta actividades que se consideran <b>no relevantes</b> para alcanzar los objetivos del programa, o que son <b>desproporcionadas en términos de coste</b>, el proyecto puede <b>puntuar bajo</b> en la fase de selección o ser <b>rechazado</b>.</div><p>Dicho de otro modo: la libertad para elegir actividades es enorme, pero tiene un precio. Cada actividad tiene que <em>ganarse su sitio</em> demostrando que contribuye a los objetivos y que su coste guarda proporción con lo que aporta. Una actividad cara que aporta poco es una señal roja para el evaluador.</p>"
+    },
+    {
+      "id": "implementacion",
+      "kind": "content",
+      "title": "5. En implementación: ejecuta lo que aprobaron",
+      "html": "<p>Lo que diseñaste y te aprobaron no es una declaración de intenciones flexible: es el contrato. Durante la implementación del proyecto es importante asegurarse de que las <b>actividades y work packages presupuestados se ejecutan tal como se propusieron y aprobaron</b>, para que sean elegibles para el pago completo de la subvención.</p><div class=\"callout callout-warn\">Si las actividades <b>no son las mismas</b> que las identificadas en el proyecto, o <b>no son equivalentes en contenido y presupuesto</b>, se <b>rechazan como inelegibles</b> y el importe presupuestado para ellas <b>no se paga.</b></div><p>Por eso conviene diseñar actividades que puedas cumplir de verdad: prometer de menos y cumplir es mejor que prometer de más y quedarte corto. (Cuándo y cómo se puede cambiar legítimamente una actividad lo verás en la lección sobre amendments.)</p><div class=\"callout callout-link\">🔗 Continúa en <b>LS.7 — Gestionar el presupuesto y pedir modificaciones (amendments)</b>: qué hacer cuando una actividad necesita cambiar sin perder elegibilidad.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«Hay una lista cerrada de gastos permitidos.»</b> → No: es una lista orientativa («por ejemplo»). Casi cualquier actividad vale si es relevante y proporcionada.</li><li><span class=\"err-x\">✗</span> <b>«No puedo pagar a mi personal con el lump sum.»</b> → Sí puedes: personal y RRHH son un coste típico cubierto.</li><li><span class=\"err-x\">✗</span> <b>«Si meto muchas actividades, mejor.»</b> → No: una actividad irrelevante o desproporcionada en coste baja la nota o tumba la solicitud.</li><li><span class=\"err-x\">✗</span> <b>«Una vez aprobado, puedo cambiar las actividades libremente.»</b> → No: deben ejecutarse como se aprobaron; si no son equivalentes en contenido y presupuesto, se rechazan y no se pagan.</li><li><span class=\"err-x\">✗</span> <b>«Comprar equipo o hacer una web no está cubierto.»</b> → Sí está: equipamiento y desarrollo IT son costes típicos.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> Handbook on the lump sum funding model KA2 (Call 2026)</td><td>Sección <b>3.4</b> (actividades cubiertas por el lump sum, costes típicos, regla de relevancia/proporción y ejecución en implementación).</td></tr></tbody></table>"
+    }
+  ]
+}

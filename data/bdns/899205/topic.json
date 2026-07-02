@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "899205",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CANILLAS DE ACEITUNO / AYUNTAMIENTO DE CANILLAS DE ACEITUNO",
+  "nuts_codes": [
+    "ES617"
+  ],
+  "nuts_primary": "ES617",
+  "title": "Extracto Resolución de Alcaldía nº 2026-0130, de fecha 16/04/2026, para la concesión de ayudas destinadas a sufragar gastos de material escolar o material didáctico para el alumnado empadronado en el municipio de Canillas de Aceituno",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-04-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://canillasdeaceituno.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/899205",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Bases reguladoras",
+      "url": null
+    },
+    {
+      "label": "Solicitud y declaración responsable",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://canillasdeaceituno.sedelectronica.es/doc/3MDYZD57A2ATZN9ARQPC7ZECL",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la presente convocatoria en el BOP",
+  "text_fin": "20 DÍAS HÁBILES a partir de la publicación en el BOPMA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:46.867Z"
+}

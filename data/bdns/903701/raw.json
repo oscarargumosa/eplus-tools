@@ -1,0 +1,80 @@
+{
+  "id": 1105262,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ÍSCAR",
+    "nivel3": "AYUNTAMIENTO DE ÍSCAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "903701",
+  "fechaRecepcion": "2026-05-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4200,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA DE SUBVENCIONES A LAS REINAS DE LAS FIESTAS DE ISCAR DE 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESION POR EL AYUNTAMIENTO DE ISCAR DE SUBVENCIONES A LAS REINAS PARA SUFRAGAR LOS GASTOS DE REPRESENTACION EN LAS FIESTAS PATRONALES Y POPULARES 2026-2027",
+  "urlBasesReguladoras": "https://iscar.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial",
+  "textFin": "15 días hábiles a contar desde el siguiente a la fecha de publicación de las bases",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1449210,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260505_Publicación_Anuncio_Anuncio al BOP para meter en BNS.pdf",
+      "long": 203282,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449212,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "Anexo I Solicitud Subvención REINAS 2026.docx",
+      "long": 84872,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    },
+    {
+      "id": 1449211,
+      "descripcion": "BASES SUBVENCIÓN REINAS 2026",
+      "nombreFic": "20260428_Otros_BASES REINAS 2026 (1).pdf",
+      "long": 473106,
+      "datMod": "2026-05-06",
+      "datPublicacion": "2026-05-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

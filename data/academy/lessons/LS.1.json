@@ -1,0 +1,69 @@
+{
+  "id": "LS.1",
+  "code": "UD-LS.1",
+  "module": "LS",
+  "moduleTitle": "Handbook lump sum KA2 (desgranado)",
+  "bloque": "G — Presupuesto",
+  "title": "Qué es este Handbook y para qué te sirve",
+  "subtitle": "El manual oficial de la Comisión sobre el modelo a tanto alzado, explicado en cristiano: a qué acciones aplica, qué prevalece y qué es un lump sum en una frase.",
+  "meta": {
+    "Nivel": "Básico",
+    "Duración": "30–40 min",
+    "Idioma": "Español",
+    "Formato": "Artículo-lección",
+    "Sección fuente": "1. Introduction del Handbook",
+    "Estado": "Borrador"
+  },
+  "estadoProduccion": "borrador",
+  "frame": {
+    "dolor": "Te han dicho que existe un \"Handbook oficial del lump sum\", pero es un PDF en inglés, denso y escrito para gestores. Lo abres, ves anexos y notas a pie de página, y no sabes ni para qué sirve ni si tienes que leértelo entero.",
+    "comprender": "Qué es exactamente este documento, a qué acciones de Erasmus+ se aplica, quién las gestiona, qué pasa si contradice al Programme Guide, y qué es a grandes rasgos una \"cantidad a tanto alzado\".",
+    "objetivo": "Saber situar el Handbook: reconocer si tu proyecto está cubierto por él, entender que es una guía (no la ley suprema) y explicar con tus palabras qué es un lump sum y por qué simplifica la vida.",
+    "confusion": "Creer que el Handbook es la norma definitiva que manda sobre todo. No: si choca con el Programme Guide, manda el Programme Guide. El Handbook solo interpreta y ayuda.",
+    "importa": "Porque entender el marco te ahorra horas de lectura ciega y evita que tomes como obligatorio algo que es solo una recomendación, o al revés. Es la base sobre la que se apoyan todas las demás lecciones de este módulo."
+  },
+  "sections": [
+    {
+      "id": "que-es",
+      "kind": "content",
+      "title": "1. Qué es este documento (y qué NO es)",
+      "html": "<p>El <em>Handbook on the lump sum funding model</em> es un manual que publica la <b>Comisión Europea</b> para explicarte <b>cómo interpretar y aplicar correctamente las reglas</b> de las subvenciones a tanto alzado (<em>lump sum</em>) en KA2. Piensa en él como el <b>libro de instrucciones</b> que acompaña a un mueble: no inventa las piezas, te enseña a montarlas bien.</p><p>Cubre <b>todo el ciclo de vida del proyecto</b>: desde que preparas y presentas la solicitud, hasta la gestión, el informe (<em>reporting</em>) y los controles posteriores. Es decir, no es solo para escribir la propuesta: te acompaña hasta el final.</p><div class=\"callout callout-key\"><b>Idea clave:</b> el Handbook es una <b>guía metodológica</b>, no una norma nueva. Te ayuda a <em>interpretar</em> las reglas que ya están en el <em>Programme Guide</em>, el documento oficial que rige todo Erasmus+.</div>"
+    },
+    {
+      "id": "a-quien",
+      "kind": "content",
+      "title": "2. ¿Aplica a tu proyecto? Las acciones cubiertas",
+      "html": "<p>El Handbook <b>solo aplica a las acciones de la Key Action 2 — \"Partnerships for Cooperation\"</b> (Asociaciones para la Cooperación) financiadas por la UE y <b>gestionadas por las Agencias Nacionales</b> (lo que en la jerga se llama <em>gestión indirecta</em>: la UE delega en la agencia de cada país, no lo lleva Bruselas directamente).</p><p>En concreto, cubre estos tres tipos de asociación:</p><ul><li><b>Cooperation Partnerships</b> — las asociaciones de cooperación \"grandes\" (KA220).</li><li><b>Small-scale Partnerships</b> — las asociaciones a pequeña escala (KA210).</li><li><b>European Partnerships for School Development</b> — asociaciones europeas para el desarrollo escolar.</li></ul><div class=\"callout callout-good\"><b>Regla rápida:</b> si tu proyecto es KA210, KA220 o de desarrollo escolar y lo gestiona tu Agencia Nacional, <b>este manual es para ti</b>. Si es una acción centralizada (gestionada por la EACEA en Bruselas), busca otra guía.</div>"
+    },
+    {
+      "id": "prevalece",
+      "kind": "content",
+      "title": "3. ¿Y si el Handbook contradice al Programme Guide?",
+      "html": "<p>Esta es la regla de oro que evita malentendidos. El Handbook lo dice negro sobre blanco: <b>si hay una contradicción entre lo que dice este documento y lo que dice el <em>Programme Guide</em>, prevalece el Programme Guide</b>.</p><p>Dicho con una analogía: el Programme Guide es la <b>ley</b>; el Handbook es el <b>manual de un experto que te explica la ley</b>. Si el experto se equivoca o se queda anticuado, manda la ley.</p><div class=\"callout callout-warn\"><b>Aviso práctico:</b> ante cualquier duda sobre una regla concreta (un importe, un plazo, un criterio de elegibilidad), <b>contrasta siempre con el Programme Guide vigente de tu convocatoria</b>. El Handbook orienta; el Programme Guide decide.</div>"
+    },
+    {
+      "id": "que-es-lump-sum",
+      "kind": "content",
+      "title": "4. ¿Qué es un lump sum, en una frase?",
+      "html": "<p>Aquí está el concepto que da nombre a todo. Un <b>lump sum</b> (cantidad a tanto alzado) significa que <b>el importe de la subvención es fijo</b> y <b>se te paga si implementas el proyecto tal como acordaste</b> en el <em>grant agreement</em> (convenio de subvención).</p><p>La gran ventaja, según el propio Handbook, es la simplicidad:</p><div class=\"callout callout-good\"><b>Estas subvenciones son más fáciles de gestionar que las de costes reales</b> porque requieren <b>menos administración</b> y <b>no hay que reportar costes</b> (no envías facturas ni tiques justificando en qué gastaste cada euro).</div><p>Es decir: no te pagan por <em>gastar</em>, te pagan por <em>hacer y entregar</em> lo prometido. Toda la legalidad del modelo se apoya en una decisión oficial: la <b>Decisión que autoriza el uso de lump sums y costes unitarios en el Erasmus+ 2021–2027</b>.</p>"
+    },
+    {
+      "id": "anexos",
+      "kind": "content",
+      "title": "5. Los tres anexos: qué trae cada uno",
+      "html": "<p>El Handbook viene con tres anexos que son material de apoyo para <b>diseñar bien tu proyecto</b>. Conviene saber qué hay en cada uno para acudir al correcto cuando lo necesites:</p><table><thead><tr><th>Anexo</th><th>Qué te aporta</th></tr></thead><tbody><tr><td><b>Anexo 1 — Designing the project</b></td><td>Directrices generales de gestión de proyectos para ayudarte a preparar una solicitud con éxito (análisis de necesidades, objetivos realistas y medibles…).</td></tr><tr><td><b>Anexo 2 — How to build your indicators</b></td><td>Cómo diseñar indicadores, con ejemplos reales de antiguas asociaciones estratégicas del periodo 2014–2020.</td></tr><tr><td><b>Anexo 3 — Partnership agreements</b></td><td>Recomendaciones para redactar el acuerdo de partenariado (el contrato interno entre los socios).</td></tr></tbody></table><div class=\"callout callout-link\">🔗 El Anexo 3 reaparecerá en <b>LS.3</b>, cuando veamos las fases de la asociación: el Handbook recomienda empezar a redactar ese acuerdo muy pronto, ya en la fase de planificación.</div>"
+    },
+    {
+      "id": "errores",
+      "kind": "misconceptions",
+      "title": "Errores comunes a desmontar",
+      "html": "<ul class=\"errs\"><li><span class=\"err-x\">✗</span> <b>«El Handbook es la norma que manda sobre todo.»</b> → No: si contradice al Programme Guide, prevalece el Programme Guide. El Handbook solo interpreta.</li><li><span class=\"err-x\">✗</span> <b>«Aplica a cualquier proyecto Erasmus+.»</b> → Solo a las Partnerships for Cooperation de KA2 gestionadas por Agencias Nacionales (KA210, KA220 y desarrollo escolar).</li><li><span class=\"err-x\">✗</span> <b>«Con lump sum tengo que guardar todas las facturas.»</b> → No: el modelo a tanto alzado no exige reporte de costes. Demuestras que el trabajo se hizo, no en qué lo gastaste.</li><li><span class=\"err-x\">✗</span> <b>«El Handbook solo sirve para escribir la solicitud.»</b> → Cubre todo el ciclo: solicitud, gestión, informe y controles.</li></ul>"
+    },
+    {
+      "id": "fuentes",
+      "kind": "sources",
+      "title": "Fuentes (de dónde sale esto)",
+      "html": "<table><thead><tr><th>Fuente</th><th>Qué aporta</th></tr></thead><tbody><tr><td><b>kb-0018</b> · Handbook on the lump sum funding model KA2, Call 2026 — Sección <b>1. Introduction</b></td><td>Propósito del manual, acciones cubiertas, prevalencia del Programme Guide, definición de lump sum y descripción de los tres anexos.</td></tr></tbody></table>"
+    }
+  ]
+}

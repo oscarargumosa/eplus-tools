@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "902906",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GRIÑÓN / AYUNTAMIENTO DE GRIÑÓN",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVOCATORIA CERTAMEN Nº XII PREMIO CONCURSO DE PINTURA RÁPIDA 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-04-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://grinon.sedelectronica.es/board",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/902906",
+  "documents": [
+    {
+      "label": "BASES CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "ANEXO III DECLARACIÓN RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO V FICHA DE TERCERO",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV AUTORIZACIÓN COLECTIVA",
+      "url": null
+    },
+    {
+      "label": "ANEXO I MODELO SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO II AUTORIZACIÓN",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://grinon.sedelectronica.es/board",
+  "text_inicio": "Desde las 9:00 horas del día 23 de mayo de 2026",
+  "text_fin": "Hasta las 11:00 horas del día 23 de mayo de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.922Z"
+}

@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "901050",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE PRESIDENCIA, JUSTICIA Y DEPORTES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "ORDEN del 13 de abril 2026, por la que se aprueban las bases reguladoras de la concesión de subvenciones, en régimen de concurrencia competitiva, para la ejecución de microproyectos de cooperación para el desarrollo en el exterior promovidos por los agent",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-04-23",
+  "open_date": "2026-04-29",
+  "deadline": "2026-05-28",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.2",
+      "descripcion": "Prestación de servicios a la comunidad en general"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/901050",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?fecha=20260423&ruta=Indice75_es.html&lang=es",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-05-07T12:06:48.006Z"
+}
