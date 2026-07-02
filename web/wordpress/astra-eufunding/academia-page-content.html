@@ -1,183 +1,310 @@
 <!-- ═══════════════════════════════════════════════════════════════════════
-     JOIN THE CLUB · contenido de la página WP /academia/
+     MISIÓN · contenido de la página WP /academia/
      Pegar en la página "academia" (wp-admin → Páginas) como un único
      bloque "HTML personalizado" (Gutenberg: /html). Mantiene la carcasa
-     EFS (top bar + footer) del tema y adapta la maqueta EU Funding Club a
-     la marca EU Funding School: navy #1b1464 + amarillo #fbff12 +
-     lavanda #c7afdf + Poppins, tema claro. Todo el CSS va scoped bajo
-     .efs-club para no filtrar al resto del sitio.
-     Fuente de verdad: este fichero en el repo. Si editas en wp-admin,
-     replica aquí.
+     EFS (top bar + footer) del tema.
+     Modelo: ecosistema FUN-DESIGN — Design Capacity (no caduca) + Design
+     Missions (School incluida) + Certification + Reputation. Tres sistemas
+     independientes. Marca EU Funding School: navy #1b1464 + amarillo
+     #fbff12 + lavanda #c7afdf + Poppins, tema claro. CSS scoped bajo
+     .efs-mission. Fuente de verdad: este fichero. Base conceptual:
+     docs/DESIGN_CAPACITY_SYSTEM.md.
      ═══════════════════════════════════════════════════════════════════ -->
 <!-- wp:html -->
-<div class="efs-club">
+<div class="efs-mission">
   <style>
-    .efs-club{
-      --club-navy:#1b1464;
-      --club-yellow:#fbff12;
-      --club-lav:#c7afdf;
-      --club-lav-soft:#f1ecf7;
-      --club-text:#191c1e;
-      --club-muted:#474551;
-      --club-line:#e3ddec;
-      --club-surface:#f8f8f8;
-      color:var(--club-text);
+    .efs-mission{
+      --nv:#1b1464; --yl:#fbff12; --lv:#c7afdf; --lvs:#f1ecf7;
+      --tx:#191c1e; --mut:#474551; --ln:#e3ddec; --surf:#f8f8f8;
+      color:var(--tx);
       font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
       line-height:1.6;
     }
-    .efs-club *{box-sizing:border-box}
-    .efs-club .club-wrap{width:min(1140px,92%);margin:0 auto}
-    .efs-club section{padding:56px 0}
-    .efs-club h1,.efs-club h2,.efs-club h3{color:var(--club-navy);margin:0}
-    .efs-club .eyebrow{color:var(--club-navy);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+    .efs-mission *{box-sizing:border-box}
+    .efs-mission .wrap{width:min(1140px,92%);margin:0 auto}
+    .efs-mission section{padding:56px 0}
+    .efs-mission h1,.efs-mission h2,.efs-mission h3,.efs-mission h4{color:var(--nv);margin:0}
+    .efs-mission .eyebrow{color:var(--nv);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+    .efs-mission .stitle{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px;line-height:1.15}
+    .efs-mission .ssub{color:var(--mut);max-width:820px;margin:0 0 28px}
+    .efs-mission .center{text-align:center}
+    .efs-mission .center .ssub{margin-left:auto;margin-right:auto}
 
     /* Hero */
-    .efs-club .hero{text-align:center;padding:64px 0 48px}
-    .efs-club .hero h1{font-size:clamp(38px,6.5vw,72px);line-height:1;margin:16px 0}
-    .efs-club .lead{font-size:clamp(17px,2vw,22px);color:var(--club-muted);max-width:820px;margin:0 auto 8px}
-    .efs-club .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-    .efs-club .btn{padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;transition:transform .12s ease}
-    .efs-club .btn:hover{transform:translateY(-2px)}
-    .efs-club .btn.primary{background:var(--club-yellow);color:var(--club-navy)}
-    .efs-club .btn.secondary{border:2px solid var(--club-navy);color:var(--club-navy)}
+    .efs-mission .hero{text-align:center;padding:64px 0 44px}
+    .efs-mission .hero h1{font-size:clamp(40px,6.5vw,74px);line-height:1;margin:16px 0}
+    .efs-mission .lead{font-size:clamp(17px,2vw,22px);color:var(--mut);max-width:840px;margin:0 auto}
+    .efs-mission .pill-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
+    .efs-mission .pill{background:var(--lvs);border:1px solid var(--lv);color:var(--nv);padding:8px 15px;border-radius:999px;font-size:14px;font-weight:700}
+    .efs-mission .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+    .efs-mission .btn{padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;transition:transform .12s ease}
+    .efs-mission .btn:hover{transform:translateY(-2px)}
+    .efs-mission .btn.primary{background:var(--yl);color:var(--nv)}
+    .efs-mission .btn.secondary{border:2px solid var(--nv);color:var(--nv)}
 
-    /* Split intro */
-    .efs-club .split{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
-    .efs-club .section-title{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px;line-height:1.15}
-    .efs-club .section-sub{color:var(--club-muted);max-width:800px;margin:0 0 28px}
-    .efs-club .notice{border-left:5px solid var(--club-yellow);padding:20px 22px;background:var(--club-lav-soft);border-radius:14px;color:var(--club-navy)}
+    /* Manifesto */
+    .efs-mission .manifesto{background:var(--nv);color:#fff;border-radius:24px;padding:44px 40px;text-align:center}
+    .efs-mission .manifesto h2{color:#fff}
+    .efs-mission .manifesto p{color:#d9d5f0;max-width:760px;margin:14px auto 0;font-size:18px}
+    .efs-mission .manifesto .hl{color:var(--yl);font-weight:700}
 
-    /* Grids & cards */
-    .efs-club .grid{display:grid;gap:18px}
-    .efs-club .grid.three{grid-template-columns:repeat(3,1fr)}
-    .efs-club .grid.two{grid-template-columns:repeat(2,1fr)}
-    .efs-club .card{background:#fff;border:1px solid var(--club-line);border-radius:18px;padding:28px;box-shadow:0 24px 48px rgba(27,20,100,.06)}
-    .efs-club .card.highlight{border:2px solid var(--club-navy);background:linear-gradient(180deg,var(--club-lav-soft),#fff)}
-    .efs-club .card h3{font-size:23px;margin-bottom:6px}
-    .efs-club .card p{color:var(--club-muted);margin:8px 0 0}
-    .efs-club .price{font-size:40px;font-weight:800;color:var(--club-navy);margin:12px 0 2px}
-    .efs-club .small{color:var(--club-muted);font-size:14px}
-    .efs-club ul.feat{padding-left:0;margin:20px 0 0;list-style:none}
-    .efs-club ul.feat li{position:relative;padding-left:26px;margin:11px 0;color:var(--club-text)}
-    .efs-club ul.feat li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:3px;background:var(--club-yellow);border:1px solid var(--club-navy)}
-    .efs-club .tag{display:inline-block;background:var(--club-lav-soft);border:1px solid var(--club-lav);color:var(--club-navy);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px}
+    /* Cards genéricas */
+    .efs-mission .grid{display:grid;gap:18px}
+    .efs-mission .grid.two{grid-template-columns:repeat(2,1fr)}
+    .efs-mission .grid.three{grid-template-columns:repeat(3,1fr)}
+    .efs-mission .card{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:26px;box-shadow:0 24px 48px rgba(27,20,100,.06)}
+    .efs-mission .card p{color:var(--mut);margin:8px 0 0}
 
-    /* FUN-DESIGN matrix */
-    .efs-club .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
-    .efs-club .cell{background:var(--club-surface);border:1px solid var(--club-line);border-radius:16px;padding:18px}
-    .efs-club .cell .phase{font-weight:800;color:var(--club-navy);font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px;opacity:.65}
-    .efs-club .cell strong{font-size:28px;color:var(--club-navy);margin-right:6px}
-    .efs-club .cell span{color:var(--club-muted)}
+    /* Capacity packages */
+    .efs-mission .pkg{background:#fff;border:1px solid var(--ln);border-radius:20px;padding:28px;box-shadow:0 24px 48px rgba(27,20,100,.06);display:flex;flex-direction:column}
+    .efs-mission .pkg.hot{border:2px solid var(--nv);background:linear-gradient(180deg,var(--lvs),#fff)}
+    .efs-mission .pkg .tag{display:inline-block;align-self:flex-start;background:var(--lvs);border:1px solid var(--lv);color:var(--nv);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px}
+    .efs-mission .pkg .cap{font-size:14px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+    .efs-mission .pkg .capval{font-size:30px;font-weight:800;color:var(--nv);line-height:1;margin:2px 0 10px}
+    .efs-mission .pkg .price{font-size:34px;font-weight:800;color:var(--nv)}
+    .efs-mission .pkg .once{color:var(--mut);font-size:14px;margin-bottom:4px}
+    .efs-mission .pkg .noexp{display:inline-block;background:var(--yl);color:var(--nv);font-weight:700;font-size:12px;padding:4px 10px;border-radius:999px;margin:8px 0 2px}
+    .efs-mission ul.feat{padding-left:0;margin:18px 0 0;list-style:none}
+    .efs-mission ul.feat li{position:relative;padding-left:26px;margin:10px 0}
+    .efs-mission ul.feat li::before{content:"";position:absolute;left:0;top:8px;width:10px;height:10px;border-radius:3px;background:var(--yl);border:1px solid var(--nv)}
+
+    /* Ladder de familias */
+    .efs-mission .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .efs-mission .rung{border:1px solid var(--ln);border-radius:18px;padding:22px;background:var(--surf)}
+    .efs-mission .rung h4{font-size:19px;margin-bottom:4px}
+    .efs-mission .rung .lvl{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--nv);opacity:.6}
+    .efs-mission .rung .fams{margin-top:12px;display:flex;flex-wrap:wrap;gap:7px}
+    .efs-mission .chip{background:#fff;border:1px solid var(--ln);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:600;color:var(--nv)}
+    .efs-mission .chip.soon{color:var(--mut);border-style:dashed}
+    .efs-mission .rung.r2{background:var(--lvs)}
+    .efs-mission .rung.r3{background:var(--nv)}
+    .efs-mission .rung.r3 h4,.efs-mission .rung.r3 .lvl{color:#fff}
+    .efs-mission .rung.r3 .lvl{opacity:.75}
+    .efs-mission .rung.r3 .chip{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+
+    /* Tres sistemas */
+    .efs-mission .sys{border-radius:18px;padding:26px;border:1px solid var(--ln);background:#fff}
+    .efs-mission .sys .kind{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+    .efs-mission .sys.commercial{border-top:5px solid var(--yl)}
+    .efs-mission .sys.academic{border-top:5px solid var(--lv)}
+    .efs-mission .sys.professional{border-top:5px solid var(--nv)}
+    .efs-mission .sys h3{font-size:21px;margin-bottom:8px}
+    .efs-mission .indep{text-align:center;color:var(--mut);margin-top:18px;font-size:15px}
+
+    /* Certification path */
+    .efs-mission .cert{background:var(--lvs);border-radius:24px;padding:40px}
+    .efs-mission .steps{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:10px}
+    .efs-mission .step{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:22px;position:relative}
+    .efs-mission .step .n{width:34px;height:34px;border-radius:50%;background:var(--nv);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:12px}
+    .efs-mission .cert .note{margin-top:18px;color:var(--nv);font-weight:600;text-align:center}
+
+    /* Missions */
+    .efs-mission .mcard{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:24px}
+    .efs-mission .mcard .inc{display:inline-block;background:var(--yl);color:var(--nv);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:999px;margin-bottom:10px}
+
+    /* Framework matrix */
+    .efs-mission .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .efs-mission .cell{background:var(--surf);border:1px solid var(--ln);border-radius:16px;padding:18px}
+    .efs-mission .cell .phase{font-weight:800;color:var(--nv);font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px;opacity:.6}
+    .efs-mission .cell strong{font-size:28px;color:var(--nv);margin-right:6px}
+    .efs-mission .cell span{color:var(--mut)}
 
     /* Tools */
-    .efs-club .tools{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-    .efs-club .tool{background:#fff;border:1px solid var(--club-line);border-radius:16px;padding:18px 14px;text-align:center}
-    .efs-club .tool b{display:block;margin-bottom:4px;color:var(--club-navy)}
-    .efs-club .tool span{color:var(--club-muted);font-size:13px}
+    .efs-mission .tools{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+    .efs-mission .tool{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:18px 14px;text-align:center}
+    .efs-mission .tool b{display:block;margin-bottom:4px;color:var(--nv)}
+    .efs-mission .tool span{color:var(--mut);font-size:13px}
 
     @media(max-width:900px){
-      .efs-club .grid.three,.efs-club .grid.two,.efs-club .split,.efs-club .tools,.efs-club .matrix{grid-template-columns:1fr}
-      .efs-club .hero h1{font-size:40px}
+      .efs-mission .grid.two,.efs-mission .grid.three,.efs-mission .ladder,.efs-mission .tools,.efs-mission .matrix,.efs-mission .steps{grid-template-columns:1fr}
+      .efs-mission .hero h1{font-size:42px}
+      .efs-mission .manifesto,.efs-mission .cert{padding:30px 22px}
     }
   </style>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="club-wrap">
-      <div class="eyebrow">Design Before Writing™</div>
-      <h1>El Club de los Project Designers europeos.</h1>
-      <p class="lead">Diseña, escribe y presenta propuestas europeas con una metodología profesional, herramientas especializadas y acompañamiento estratégico.</p>
+    <div class="wrap">
+      <div class="eyebrow">FUN-DESIGN Ecosystem</div>
+      <h1>Conviértete en European Project Designer.</h1>
+      <p class="lead">No es un curso. No es una suscripción. Es un itinerario profesional para diseñar, escribir y presentar proyectos europeos de verdad — combinando Design Capacity, Design Missions, certificación y reputación.</p>
+      <div class="pill-row">
+        <span class="pill">Design Capacity</span>
+        <span class="pill">Design Missions</span>
+        <span class="pill">Certification</span>
+        <span class="pill">Reputation</span>
+      </div>
       <div class="cta-row">
-        <a href="#memberships" class="btn primary">Ver membresías</a>
-        <a href="#missions" class="btn secondary">Explorar Design Missions</a>
+        <a href="#capacity" class="btn primary">Ver Design Capacity</a>
+        <a href="#missions" class="btn secondary">Explorar las Design Missions</a>
       </div>
     </div>
   </section>
 
-  <!-- INTRO SPLIT -->
+  <!-- MANIFESTO -->
   <section>
-    <div class="club-wrap split">
-      <div>
-        <h2 class="section-title">No vendemos un curso. Construimos capacidad de financiación.</h2>
-        <p class="section-sub">EU Funding Club está diseñado para personas que quieren presentar proyectos europeos de forma recurrente: técnicos, consultores, freelancers, entidades y profesionales que quieren convertirse en Project Designers.</p>
-      </div>
-      <div class="notice">
-        <strong>La financiación no es el fin.</strong><br>
-        El objetivo es diseñar soluciones que merecen ser financiadas. Los programas europeos son el vehículo para convertir buenas ideas en impacto real.
+    <div class="wrap">
+      <div class="manifesto">
+        <h2>No vendemos cursos. No cobramos meses.</h2>
+        <p>Compras <span class="hl">Design Capacity</span>: la capacidad de diseñar y activar propuestas europeas. <span class="hl">No caduca.</span> La consumes cuando quieras — en seis meses, en dos años, en cinco. La formación no es el producto final: existe para ayudarte a diseñar mejores proyectos y llegar más lejos.</p>
       </div>
     </div>
   </section>
 
-  <!-- MEMBERSHIPS -->
-  <section id="memberships">
-    <div class="club-wrap">
-      <h2 class="section-title">Memberships</h2>
-      <p class="section-sub">Elige tu Funding Capacity anual. No compras un plan: entras en un ecosistema profesional.</p>
+  <!-- DESIGN CAPACITY -->
+  <section id="capacity">
+    <div class="wrap">
+      <h2 class="stitle">Design Capacity</h2>
+      <p class="ssub">Tu capacidad acumulada para activar propuestas, medida en presupuesto europeo. Cada paquete desbloquea sus familias de programa e incluye acceso a las Design Missions de su nivel. La capacidad no caduca: se consume solo cuando activas una propuesta.</p>
       <div class="grid three">
-        <div class="card">
-          <span class="tag">Project Designer Member</span>
-          <h3>Funding Capacity 500K</h3>
-          <div class="price">1.200€</div>
-          <div class="small">/ año · ciclo junio → junio</div>
+        <div class="pkg">
+          <span class="tag">Starter</span>
+          <div class="cap">Design Capacity</div>
+          <div class="capval">500.000 €</div>
+          <div class="price">1.200 €</div>
+          <div class="once">pago único · sin renovación</div>
+          <span class="noexp">La capacidad no caduca</span>
           <ul class="feat">
-            <li>1 Design Mission a elegir: KA2, KA3, Capacity Building o Sport.</li>
-            <li>Escritura con SaaS hasta 500.000€.</li>
-            <li>1 propuesta completa.</li>
-            <li>Acceso a Finder, Atlas, Designer, Writer, Diagnostic y Evaluation.</li>
-            <li>Monthly Design Review.</li>
+            <li>Activa propuestas hasta agotar tu capacidad.</li>
+            <li>Familias: KA1, KA2, KA3.</li>
+            <li>Design Missions de nivel Starter incluidas.</li>
+            <li>Suite completa: Finder, Atlas, Designer, Writer, Diagnostic, Evaluation.</li>
           </ul>
         </div>
 
-        <div class="card highlight">
-          <span class="tag">Professional Member</span>
-          <h3>Funding Capacity 2M</h3>
-          <div class="price">4.000€</div>
-          <div class="small">/ año · para Project Designers recurrentes</div>
+        <div class="pkg hot">
+          <span class="tag">Professional</span>
+          <div class="cap">Design Capacity</div>
+          <div class="capval">2.000.000 €</div>
+          <div class="price">4.000 €</div>
+          <div class="once">pago único · sin renovación</div>
+          <span class="noexp">La capacidad no caduca</span>
           <ul class="feat">
-            <li>4 Design Missions: KA2 + KA3 + Capacity Building + Sport.</li>
-            <li>Hasta 4 propuestas completas.</li>
-            <li>Escritura con SaaS hasta 2.000.000€.</li>
-            <li>Herramientas completas + acompañamiento mensual.</li>
-            <li>Ideal para entidades y profesionales con estrategia anual.</li>
+            <li>Todo lo de Starter.</li>
+            <li>Familias: + Capacity Building, Sport, CoVE.</li>
+            <li>Design Missions Professional incluidas.</li>
+            <li>Para diseñadores recurrentes y entidades con estrategia anual.</li>
           </ul>
         </div>
 
-        <div class="card">
-          <span class="tag">Executive Member</span>
-          <h3>Funding Capacity 10M</h3>
-          <div class="price">15.000€</div>
-          <div class="small">/ año · Advanced Funding</div>
+        <div class="pkg">
+          <span class="tag">Enterprise</span>
+          <div class="cap">Design Capacity</div>
+          <div class="capval">10.000.000 €</div>
+          <div class="price">15.000 €</div>
+          <div class="once">pago único · sin renovación</div>
+          <span class="noexp">La capacidad no caduca</span>
           <ul class="feat">
-            <li>Escritura SaaS de cualquier tamaño.</li>
-            <li>Acceso a grandes convocatorias: Horizon, LIFE, CERV, COSME.</li>
-            <li>Asesoría mensual ampliada.</li>
-            <li>Strategic Partner incluido.</li>
-            <li>Invitación gratuita al encuentro presencial anual.</li>
+            <li>Todo lo de Professional.</li>
+            <li>Familias: + Horizon Europe, LIFE, CERV, Interreg y otros programas premium (según se incorporen).</li>
+            <li>Design Missions avanzadas incluidas.</li>
+            <li>Acompañamiento ampliado.</li>
           </ul>
         </div>
+      </div>
+      <p class="ssub" style="margin-top:18px">¿Se te acaba la capacidad? Compras más cuando la necesites — no hay renovación anual, es una relación a largo plazo.</p>
+    </div>
+  </section>
+
+  <!-- FAMILIAS POR NIVEL -->
+  <section>
+    <div class="wrap">
+      <h2 class="stitle">Cada nivel desbloquea más programas</h2>
+      <p class="ssub">La Design Capacity define a qué familias de convocatorias puedes acceder. Una progresión profesional natural que protege la formación avanzada.</p>
+      <div class="ladder">
+        <div class="rung r1">
+          <div class="lvl">Starter</div>
+          <h4>Primeros pasos</h4>
+          <div class="fams">
+            <span class="chip">KA1</span><span class="chip">KA2</span><span class="chip">KA3</span>
+          </div>
+        </div>
+        <div class="rung r2">
+          <div class="lvl">Professional</div>
+          <h4>Todo Starter, y además</h4>
+          <div class="fams">
+            <span class="chip">Capacity Building</span><span class="chip">Sport</span><span class="chip">CoVE</span>
+          </div>
+        </div>
+        <div class="rung r3">
+          <div class="lvl">Enterprise</div>
+          <h4>Todo Professional, y además</h4>
+          <div class="fams">
+            <span class="chip soon">Horizon Europe</span><span class="chip soon">LIFE</span><span class="chip soon">CERV</span><span class="chip soon">Interreg</span><span class="chip soon">Innovation Fund</span><span class="chip soon">COSME</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRES SISTEMAS -->
+  <section>
+    <div class="wrap center">
+      <h2 class="stitle">Tres sistemas independientes</h2>
+      <p class="ssub">Lo que compras, lo que consigues y lo que eres son cosas distintas. Ninguno modifica automáticamente a los otros.</p>
+      <div class="grid three" style="text-align:left">
+        <div class="sys commercial">
+          <div class="kind" style="color:#b59a00">Sistema comercial</div>
+          <h3>Design Capacity</h3>
+          <p>Lo que compras. Determina cuántas propuestas puedes activar y a qué familias de programa accedes. No caduca.</p>
+        </div>
+        <div class="sys academic">
+          <div class="kind" style="color:#7a5fa8">Sistema académico</div>
+          <h3>Certification</h3>
+          <p>Lo que consigues. Solo se obtiene tras completar una Design Mission <strong>y</strong> presentar un proyecto real. Nunca se compra.</p>
+        </div>
+        <div class="sys professional">
+          <div class="kind" style="color:var(--nv)">Sistema profesional</div>
+          <h3>Reputation</h3>
+          <p>Lo que eres. Se construye con el tiempo: experiencia, proyectos presentados, proyectos aprobados y actividad en la comunidad.</p>
+        </div>
+      </div>
+      <p class="indep">Pagar da capacidad. La certificación se gana. La reputación se construye. Tres caminos, un mismo Project Designer.</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION PATH -->
+  <section>
+    <div class="wrap">
+      <div class="cert">
+        <h2 class="stitle">Cómo se obtiene la certificación</h2>
+        <p class="ssub">Las certificaciones FUN-DESIGN no certifican asistencia: certifican <strong>ejecución profesional</strong>. Comprar capacidad, asistir a clases o terminar vídeos no basta. Hacen falta las dos condiciones:</p>
+        <div class="steps">
+          <div class="step">
+            <div class="n">1</div>
+            <h4>Completa la Design Mission</h4>
+            <p>Entiende la convocatoria, diseña la propuesta y completa la metodología dentro de la plataforma.</p>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <h4>Presenta un proyecto real</h4>
+            <p>Envía oficialmente una propuesta a la Comisión Europea. Es el equivalente al Trabajo Fin de Grado.</p>
+          </div>
+        </div>
+        <p class="note">Un Project Designer certificado ha demostrado la capacidad completa: entender, diseñar, completar y presentar un proyecto europeo real.</p>
       </div>
     </div>
   </section>
 
   <!-- DESIGN MISSIONS -->
   <section id="missions">
-    <div class="club-wrap">
-      <h2 class="section-title">Design Missions</h2>
-      <p class="section-sub">Cada Design Mission gira alrededor de una convocatoria concreta. El resultado no es aprender teoría, sino terminar con una propuesta diseñada, escrita y lista para presentar.</p>
+    <div class="wrap">
+      <h2 class="stitle">Design Missions</h2>
+      <p class="ssub">Cada Design Mission gira alrededor de una convocatoria concreta y termina con una propuesta diseñada, escrita y lista para presentar. Vienen incluidas con tu Design Capacity — no se compran aparte.</p>
       <div class="grid two">
-        <div class="card"><h3>Erasmus+ KA220 Design Mission</h3><p>8 semanas para diseñar y presentar una propuesta KA220 competitiva.</p></div>
-        <div class="card"><h3>KA3 Design Mission</h3><p>Para propuestas de cooperación, innovación y políticas europeas de mayor escala.</p></div>
-        <div class="card"><h3>Capacity Building Design Mission</h3><p>Diseño de proyectos internacionales con terceros países y consorcios complejos.</p></div>
-        <div class="card"><h3>Sport Design Mission</h3><p>Diseño de propuestas deportivas europeas orientadas a impacto, inclusión y cooperación.</p></div>
+        <div class="mcard"><span class="inc">Incluida</span><h3>Erasmus+ KA220 Design Mission</h3><p>8 semanas para diseñar y presentar una propuesta KA220 competitiva.</p></div>
+        <div class="mcard"><span class="inc">Incluida</span><h3>KA3 Design Mission</h3><p>Propuestas de cooperación, innovación y políticas europeas de mayor escala.</p></div>
+        <div class="mcard"><span class="inc">Incluida</span><h3>Capacity Building Design Mission</h3><p>Proyectos internacionales con terceros países y consorcios complejos.</p></div>
+        <div class="mcard"><span class="inc">Incluida</span><h3>Sport Design Mission</h3><p>Propuestas deportivas europeas orientadas a impacto, inclusión y cooperación.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- FUN-DESIGN FRAMEWORK -->
+  <!-- FRAMEWORK -->
   <section>
-    <div class="club-wrap">
-      <h2 class="section-title">FUN-DESIGN™ Framework</h2>
-      <p class="section-sub">Nueve fases organizadas en una matriz 3×3: Understand, Design, Deliver.</p>
+    <div class="wrap">
+      <h2 class="stitle">FUN-DESIGN™ Framework</h2>
+      <p class="ssub">Nueve fases organizadas en una matriz 3×3: Understand, Design, Deliver.</p>
       <div class="matrix">
         <div class="cell"><div class="phase">Understand</div><strong>F</strong><span>Find the Problem</span></div>
         <div class="cell"><div class="phase">Understand</div><strong>U</strong><span>Understand Funding Opportunities</span></div>
@@ -192,11 +319,11 @@
     </div>
   </section>
 
-  <!-- FUN-DESIGN TOOLS -->
+  <!-- TOOLS -->
   <section>
-    <div class="club-wrap">
-      <h2 class="section-title">FUN-DESIGN™ Tools</h2>
-      <p class="section-sub">Herramientas profesionales para cada fase del proceso.</p>
+    <div class="wrap">
+      <h2 class="stitle">FUN-DESIGN™ Tools</h2>
+      <p class="ssub">Herramientas profesionales para cada fase del proceso.</p>
       <div class="tools">
         <div class="tool"><b>Finder</b><span>Calls &amp; opportunities</span></div>
         <div class="tool"><b>Atlas</b><span>Organisations &amp; partners</span></div>
@@ -208,14 +335,13 @@
     </div>
   </section>
 
-  <!-- SERVICIOS PROFESIONALES -->
+  <!-- CIERRE -->
   <section>
-    <div class="club-wrap">
-      <h2 class="section-title">Servicios profesionales</h2>
-      <div class="grid three">
-        <div class="card"><h3>Pay-as-you-go</h3><p>Activa la escritura de una propuesta concreta cuando decidas apostar por ella.</p></div>
-        <div class="card"><h3>Turnkey Proposal</h3><p>Escribimos la propuesta contigo, previo filtro de viabilidad.</p></div>
-        <div class="card"><h3>Strategic Partner</h3><p>Visibilidad, matching y participación en oportunidades de consorcio.</p></div>
+    <div class="wrap center">
+      <h2 class="stitle">Tu misión empieza aquí</h2>
+      <p class="ssub">Diseña gratis. Activa cuando estés listo. Desarróllate como European Project Designer.</p>
+      <div class="cta-row">
+        <a href="#capacity" class="btn primary">Elegir mi Design Capacity</a>
       </div>
     </div>
   </section>
