@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Base de Conocimiento E+ — Catálogo de fuentes</title>
+<title>Academia EU Funding</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -96,6 +96,20 @@
   .lnote-badge{margin-left:auto;flex-shrink:0;background:var(--note,#fff7d6);border:1px solid #e7d98a;border-radius:20px;font-size:11px;font-weight:600;padding:2px 9px;color:#7a5c00;white-space:nowrap}
   .mc-notebadge{background:#fff7d6;border:1px solid #e7d98a;border-radius:20px;font-size:11px;font-weight:600;padding:2px 9px;color:#7a5c00}
   .ready-flag{background:var(--yellow);color:var(--navy);border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700}
+  /* cursos (acordeón) */
+  .mc-desc{margin:0;padding:9px 16px;font-size:12.5px;color:var(--soft);background:#fff;border-bottom:1px solid var(--lav2);line-height:1.5}
+  .course{background:#fff;margin:14px 28px;border-radius:14px;border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 3px rgba(27,20,100,.07)}
+  .course-head{display:flex;align-items:center;gap:12px;padding:15px 20px;cursor:pointer;background:linear-gradient(90deg,#1b1464,#2a1f8a);color:#fff;user-select:none}
+  .course-head:hover{filter:brightness(1.08)}
+  .course-head h2{margin:0;font-size:16.5px;font-weight:600}
+  .course-head .chev{font-size:15px;transition:transform .2s;flex-shrink:0}
+  .course.open .course-head .chev{transform:rotate(90deg)}
+  .course-nivel{background:rgba(255,255,255,.16);border-radius:30px;padding:2px 11px;font-size:11.5px;font-weight:600}
+  .course-mini{margin-left:auto;font-size:12px;color:#c9c6ea;font-weight:500;white-space:nowrap}
+  .course-notebadge{background:#fff7d6;border:1px solid #e7d98a;border-radius:20px;font-size:11px;font-weight:700;padding:2px 9px;color:#7a5c00}
+  .course-body{display:none;padding:4px 0 14px}
+  .course.open .course-body{display:block}
+  .course-desc{margin:14px 28px 4px;font-size:12.5px;color:var(--ink);background:var(--lav2);padding:11px 15px;border-radius:8px;border-left:3px solid var(--navy);line-height:1.55}
   /* modal lección */
   .lmodal{position:fixed;inset:0;background:rgba(27,20,100,.45);display:none;align-items:flex-start;justify-content:center;z-index:100;padding:30px 16px;overflow-y:auto}
   .lmodal.open{display:flex}
@@ -192,19 +206,25 @@
 </head>
 <body>
 <header>
-  <h1>Base de Conocimiento <span>E+</span> — Catálogo de fuentes</h1>
-  <p>Catálogo de fuentes + plan formativo. En <b>Currículo / SAS / EACEA</b>, haz clic en una lección para <b>abrir su contenido</b> y deja una <b>nota</b> en cualquier apartado para orientar, cambiar o mejorar la propuesta. Las notas se guardan en el repo y Claude las lee desde ahí — no hace falta copiarlas en el chat.</p>
+  <h1>Academia <span>EU Funding</span></h1>
+  <p>Los cursos oficiales y todo el material con el que los construimos. En <b>Cursos / Currículo / SAS / EACEA</b>, haz clic en una lección para <b>abrir su contenido</b> y deja una <b>nota</b> en cualquier apartado para orientar, cambiar o mejorar la propuesta. Las notas se guardan en el repo y Claude las lee desde ahí — no hace falta copiarlas en el chat.</p>
 </header>
 
 <nav class="tabs">
-  <button class="tab on" data-view="catalogo">📚 Catálogo de fuentes</button>
-  <button class="tab" data-view="curriculo">🎓 Currículo / Plan formativo</button>
+  <button class="tab on" data-view="cursos">🎓 Cursos</button>
+  <button class="tab" data-view="catalogo">📚 Catálogo de fuentes</button>
+  <button class="tab" data-view="curriculo">📋 Currículo / Plan formativo</button>
   <button class="tab" data-view="sas">🛠️ Módulo SAS (plataforma)</button>
   <button class="tab" data-view="eacea">📝 Curso EACEA (Part B)</button>
   <button class="tab" data-view="deepdives">📖 Documentos desgranados</button>
 </nav>
 
-<div id="view-catalogo">
+<div id="view-cursos">
+  <div class="cur-head" id="cursos-head"></div>
+  <div id="cursos-body"></div>
+</div>
+
+<div id="view-catalogo" style="display:none">
 <div class="counters" id="counters"></div>
 
 <div class="toolbar">
@@ -264,7 +284,7 @@
 </div>
 <div class="toast" id="toast"></div>
 
-<footer>Academia E+ · contenido en <code>data/academy/</code> · las notas se guardan en <code>data/academy/notes.json</code> (Claude las lee desde el repo) · base: <code>docs/KNOWLEDGE_BASE_E+.md</code></footer>
+<footer>Academia EU Funding · contenido en <code>data/academy/</code> · las notas se guardan en <code>data/academy/notes.json</code> (Claude las lee desde el repo) · base: <code>docs/KNOWLEDGE_BASE_E+.md</code></footer>
 
 <script>
 window.NOTES = {};  // notas de revisión (lessonId → anchor → [notas]); se llena vía fetch
@@ -610,7 +630,7 @@ const ST_LABEL={tenemos:"Tenemos material",parcial:"Parcial",crear:"A crear",bor
 
 function switchView(v){
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view===v));
-  ['catalogo','curriculo','sas','eacea','deepdives'].forEach(name=>{
+  ['cursos','catalogo','curriculo','sas','eacea','deepdives'].forEach(name=>{
     document.getElementById('view-'+name).style.display=v===name?'':'none';
   });
 }
@@ -633,6 +653,7 @@ function modCard(m){
   const nBadge=nNotes?`<span class="mc-notebadge" style="margin-left:auto">📝 ${nNotes}</span>`:'';
   return `<div class="modcard">
     <h3><span class="mc-code">${m.c}</span> ${m.t} <span class="mc-bloque">${tag}</span>${m.nivel?`<span class="mc-nivel">${m.nivel}</span>`:''}${nBadge}</h3>
+    ${m.desc?`<p class="mc-desc">${m.desc}</p>`:''}
     ${m.ls.map((l,i)=>lessonRow(l,m.c,i)).join('')}
   </div>`;
 }
@@ -871,6 +892,359 @@ function renderDeepdives(){
 }
 renderDeepdives();
 
+/* ===================== CURSOS OFICIALES (lo que se vende) ===================== */
+const COURSES_NOTA = "Estos son los cursos oficiales que vamos a vender. Cada curso son 8 semanas = 8 módulos, y cada módulo entre 5 y 10 lecciones (cada lección, un tema concreto). Esto es una PROPUESTA de estructura para que la revises y anotes ANTES de crear el contenido didáctico: despliega un curso, haz clic en cualquier lección para abrirla y deja ahí tus notas (enfoque, orden, qué añadir o quitar, tono). El resto de pestañas (Currículo, SAS, EACEA, Documentos) son el material con el que alimentaremos estos cursos. Los códigos kb-XXXX enlazan a la fuente en el Catálogo.";
+const COURSES = [
+ {code:"ECO",t:"Ecosistema Erasmus",nivel:"Iniciación",
+  desc:"Curso panorámico e introductorio: una visión general de qué es Erasmus+, cómo está organizado y qué oportunidades ofrece cada programa. Para quien llega nuevo y quiere entender el mapa completo antes de especializarse. No enseña a redactar un proyecto concreto: da la brújula del ecosistema.",
+  mods:[
+   {c:"ECO1",t:"¿Qué es Erasmus+?",tag:"Semana 1 · El programa",desc:"El programa en su conjunto: origen, valores, para qué existe y qué cambió en 2021-2027.",ls:[
+    {t:"Erasmus+ en 10 minutos: la idea central",s:"borrador",src:["kb-0001","kb-0003"],n:"Qué es, a quién sirve y por qué la UE invierte en movilidad y cooperación."},
+    {t:"De 1987 a hoy: breve historia del programa",s:"crear",n:"De las becas universitarias al Erasmus+ que hoy integra todos los sectores educativos, juventud y deporte."},
+    {t:"El presupuesto 2021-2027 y qué significa para ti",s:"crear",src:["kb-0003"],n:"Cuánto dinero hay, cómo se reparte y qué implica el aumento respecto al periodo anterior."},
+    {t:"Educación, juventud y deporte: los tres grandes ámbitos",s:"crear",src:["kb-0003"],n:"Cómo Erasmus+ agrupa sectores muy distintos bajo un mismo paraguas."},
+    {t:"Las 4 prioridades horizontales",s:"borrador",src:["kb-0004","kb-0005"],n:"Inclusión, digital, verde y participación: obligatorias en todo proyecto, sea del tipo que sea."},
+    {t:"Mitos y realidades sobre Erasmus+",s:"crear",n:"«Es solo para universitarios», «es imposible que te lo aprueben»: desmontamos las creencias que frenan a las organizaciones."}
+   ]},
+   {c:"ECO2",t:"La arquitectura: KA1, KA2, KA3",tag:"Semana 2 · El mapa de acciones",desc:"La columna vertebral del programa y cómo distinguir cada acción clave.",ls:[
+    {t:"El mapa de acciones de un vistazo",s:"borrador",src:["kb-0003"],n:"KA1, KA2 y KA3 explicadas con un único esquema mental."},
+    {t:"KA1 · Movilidad de las personas",s:"crear",src:["kb-0003"],n:"Qué es la acción clave 1 y qué tipo de experiencias financia."},
+    {t:"KA2 · Cooperación entre organizaciones",s:"crear",src:["kb-0078"],n:"Qué es la acción clave 2 y qué proyectos de cooperación permite."},
+    {t:"KA3 · Apoyo a la reforma de políticas",s:"crear",src:["kb-0083"],n:"Qué es la acción clave 3 y por qué es la más «política» del programa."},
+    {t:"Jean Monnet y Deporte: el resto del mapa",s:"crear",n:"Las acciones que no encajan en el esquema KA1-KA3 y a quién sirven."},
+    {t:"¿Qué acción encaja con mi organización?",s:"crear",n:"Un árbol de decisión sencillo para orientarte antes de profundizar."}
+   ]},
+   {c:"ECO3",t:"Los sectores del programa",tag:"Semana 3 · Sectores",desc:"Cómo se concreta Erasmus+ en cada sector educativo y social.",ls:[
+    {t:"Educación superior",s:"crear",n:"Qué ofrece Erasmus+ a universidades y estudiantes."},
+    {t:"Formación Profesional (FP/VET)",s:"crear",src:["kb-0035"],n:"Movilidad y cooperación en el ámbito de la FP."},
+    {t:"Educación escolar",s:"crear",src:["kb-0034"],n:"Oportunidades para centros, profesorado y alumnado."},
+    {t:"Educación de personas adultas",s:"crear",src:["kb-0036","kb-0031"],n:"Qué financia Erasmus+ en el aprendizaje a lo largo de la vida."},
+    {t:"Juventud y el ámbito no formal",s:"crear",src:["kb-0065","kb-0026"],n:"Intercambios, participación juvenil y trabajo con jóvenes."},
+    {t:"Deporte",s:"crear",src:["kb-0092"],n:"El sector más joven del programa y qué tipo de proyectos apoya."}
+   ]},
+   {c:"ECO4",t:"Quién es quién",tag:"Semana 4 · Actores",desc:"El ecosistema de instituciones que gestionan el programa.",ls:[
+    {t:"Comisión Europea, EACEA y Agencias Nacionales",s:"borrador",src:["kb-0006","kb-0007"],n:"Quién decide, quién gestiona lo centralizado y quién lo descentralizado."},
+    {t:"Acciones descentralizadas vs centralizadas",s:"crear",src:["kb-0006"],n:"Por qué unas se solicitan en tu país y otras en Bruselas: la distinción que lo cambia todo."},
+    {t:"El SEPIE y las agencias nacionales españolas",s:"crear",src:["kb-0034","kb-0035","kb-0036"],n:"Quién gestiona Erasmus+ en España y qué sectores cubre cada agencia."},
+    {t:"La red SALTO y los centros de recursos",s:"crear",src:["kb-0026"],n:"Apoyo, formación y metodología no formal a tu disposición."},
+    {t:"Plataformas: EPALE, eTwinning, Portal de la Juventud",s:"crear",src:["kb-0031","kb-0032"],n:"Dónde encontrar socios, recursos y comunidad según tu sector."}
+   ]},
+   {c:"ECO5",t:"Los programas de movilidad (KA1)",tag:"Semana 5 · Movilidad",desc:"Un recorrido por las oportunidades de movilidad para personas.",ls:[
+    {t:"Qué es una movilidad y cómo funciona",s:"crear",n:"El concepto de aprendizaje en el extranjero como base de KA1."},
+    {t:"Movilidad en juventud: intercambios y youth workers",s:"tenemos",src:["kb-0065","kb-0066"],n:"Las dos grandes vías de KA1 en el ámbito juvenil."},
+    {t:"Movilidad en FP, escolar y adultos",s:"tenemos",src:["kb-0072","kb-0073","kb-0071"],n:"Cómo se concreta la movilidad en cada sector educativo."},
+    {t:"DiscoverEU y la participación juvenil",s:"tenemos",src:["kb-0067","kb-0068"],n:"Las oportunidades individuales y de participación dentro de KA1."},
+    {t:"La acreditación Erasmus: la vía rápida a la movilidad",s:"tenemos",src:["kb-0069","kb-0074"],n:"Qué es acreditarse y por qué simplifica futuras solicitudes."}
+   ]},
+   {c:"ECO6",t:"Cooperación (KA2) y políticas (KA3)",tag:"Semana 6 · Proyectos",desc:"Los proyectos entre organizaciones, del más sencillo al más ambicioso.",ls:[
+    {t:"Qué es cooperar en Erasmus+",s:"crear",src:["kb-0078"],n:"La lógica de trabajar con socios de otros países hacia un objetivo común."},
+    {t:"KA210 Small-scale: la puerta de entrada",s:"tenemos",src:["kb-0080"],n:"El proyecto de cooperación más accesible para newcomers."},
+    {t:"KA220 Cooperation Partnerships: el proyecto estrella",s:"tenemos",src:["kb-0078","kb-0079"],n:"La cooperación de mayor alcance y presupuesto."},
+    {t:"Capacity Building: cooperar con terceros países",s:"tenemos",src:["kb-0087","kb-0088"],n:"Cuando la cooperación sale de la UE."},
+    {t:"KA3 y la incidencia política",s:"tenemos",src:["kb-0083","kb-0084"],n:"Proyectos que buscan influir en las políticas, no solo en las personas."}
+   ]},
+   {c:"ECO7",t:"Cómo se participa",tag:"Semana 7 · De la idea a la solicitud",desc:"El itinerario práctico desde el registro hasta presentar una solicitud.",ls:[
+    {t:"El calendario Erasmus+: convocatorias y plazos",s:"crear",n:"Cómo se estructura el año y cuándo hay que estar listo."},
+    {t:"Registrar tu organización: ORS y el OID",s:"tenemos",src:["kb-0008","kb-0009","kb-0010"],n:"El primer paso obligatorio antes de solicitar nada."},
+    {t:"Encontrar socios: Otlas, EPALE, eTwinning",s:"tenemos",src:["kb-0029","kb-0031","kb-0032"],n:"Dónde y cómo buscar aliados para tu proyecto."},
+    {t:"Del portal de la Agencia Nacional al portal EACEA",s:"tenemos",src:["kb-0023","kb-0024"],n:"Los dos entornos de solicitud y cuándo usas cada uno."},
+    {t:"Anatomía de una convocatoria",s:"crear",src:["kb-0011"],n:"Cómo leer una call: prioridades, plazos, presupuesto y requisitos."}
+   ]},
+   {c:"ECO8",t:"Financiación, evaluación y resultados",tag:"Semana 8 · Cómo se paga y se puntúa",desc:"Cómo se paga, cómo se puntúa y cómo se reconoce un proyecto Erasmus+.",ls:[
+    {t:"Lump sums: la financiación a tanto alzado",s:"tenemos",src:["kb-0019"],n:"Qué son y por qué cambian la forma de presupuestar."},
+    {t:"Cómo te evalúan: los criterios y los umbrales",s:"tenemos",src:["kb-0025","kb-0078"],n:"La lógica de puntuación común a casi todas las acciones."},
+    {t:"Qué pasa tras presentar: del comité a la resolución",s:"tenemos",src:["kb-0015"],n:"El recorrido de tu solicitud una vez enviada."},
+    {t:"Reconocer el aprendizaje: Youthpass y otras herramientas",s:"tenemos",src:["kb-0030"],n:"Cómo se certifica lo aprendido en un proyecto."},
+    {t:"Después del «sí»: qué implica gestionar un proyecto",s:"parcial",src:["kb-0020","kb-0028"],n:"Una primera idea de las obligaciones tras la aprobación."},
+    {t:"Tu siguiente paso en la Academia",s:"crear",n:"Cómo elegir el curso especializado (KA2, KA3, Capacity Building o Deporte) según tu objetivo."}
+   ]}
+  ]},
+
+ {code:"KA2",t:"Proyectos KA2 · Cooperación",nivel:"Intermedio",
+  desc:"Curso completo para diseñar y redactar un proyecto de cooperación KA2 (KA210 Small-scale y KA220 Cooperation Partnerships): del concepto al formulario, con foco en la redacción que convence al evaluador y en el modelo de financiación a tanto alzado.",
+  mods:[
+   {c:"KA2-1",t:"Fundamentos de la cooperación",tag:"Semana 1 · Fundamentos",desc:"Qué es un proyecto de cooperación, para quién y qué lugar ocupa en el programa.",ls:[
+    {t:"Qué es un proyecto de cooperación y para quién",s:"tenemos",src:["kb-0078","kb-0077"],n:"La lógica KA2: organizaciones que se unen para crear algo que ninguna lograría sola."},
+    {t:"El lugar de KA2 en el programa",s:"crear",src:["kb-0003"],n:"Cómo encaja la cooperación en el mapa de acciones y qué la diferencia de la movilidad."},
+    {t:"Las 4 prioridades horizontales aplicadas a KA2",s:"parcial",src:["kb-0004"],n:"Cómo integrar inclusión, digital, verde y participación sin que suene a relleno."},
+    {t:"Cómo son los proyectos KA2 aprobados",s:"crear",n:"Ejemplos reales para calibrar ambición, tamaño y tipo de resultados."},
+    {t:"El itinerario del curso: de la idea a la solicitud enviada",s:"crear",n:"El mapa de las 8 semanas y qué habrás producido al final."}
+   ]},
+   {c:"KA2-2",t:"KA210 vs KA220",tag:"Semana 2 · Elegir tu asociación",desc:"Las dos modalidades de cooperación y cómo decidir cuál te conviene.",ls:[
+    {t:"Small-scale (KA210): el proyecto de entrada",s:"tenemos",src:["kb-0080"],n:"Para quién, con qué presupuesto y con qué nivel de exigencia."},
+    {t:"Cooperation Partnerships (KA220): alto alcance",s:"tenemos",src:["kb-0078"],n:"Qué lo distingue del KA210 y cuándo merece la pena."},
+    {t:"Tabla comparativa: cuál elegir",s:"crear",n:"Presupuesto, socios, duración, resultados y esfuerzo enfrentados."},
+    {t:"Los tramos de presupuesto lump sum",s:"crear",src:["kb-0106","kb-0111"],n:"30.000/60.000 € en KA210 y los tramos de KA220: qué implican."},
+    {t:"Tu decisión: qué asociación vas a diseñar",s:"crear",n:"Ejercicio guiado para elegir el tipo de proyecto adecuado a tu organización."}
+   ]},
+   {c:"KA2-3",t:"De la idea al consorcio",tag:"Semana 3 · Diseño",desc:"Del problema real a un consorcio sólido con objetivos claros.",ls:[
+    {t:"Análisis de necesidades: del problema real al proyecto",s:"parcial",src:["kb-0011","kb-0027"],n:"Cómo fundamentar que tu proyecto responde a una necesidad demostrable."},
+    {t:"Teoría del cambio y lógica de intervención",s:"crear",n:"Conectar problema → objetivos → actividades → resultados de forma coherente."},
+    {t:"Convertir una idea difusa en objetivos claros",s:"crear",n:"De la intuición a objetivos específicos, medibles y realistas."},
+    {t:"Diseñar el consorcio y repartir roles",s:"parcial",src:["kb-0077"],n:"Cuántos socios, de qué países y con qué complementariedad."},
+    {t:"Cómo elegir buenos socios (y señales de alarma)",s:"crear",n:"Criterios para no arrastrar un socio que hunda la evaluación."},
+    {t:"Buscar socios en la práctica",s:"tenemos",src:["kb-0029","kb-0031"],n:"Herramientas y estrategia para encontrar aliados de calidad."}
+   ]},
+   {c:"KA2-4",t:"El formulario por dentro",tag:"Semana 4 · El formulario",desc:"Recorrido por el Application Form / Part B de KA2.",ls:[
+    {t:"El Application Form / Part B de KA2",s:"tenemos",src:["kb-0017","kb-0079"],n:"Recorrido por la estructura del formulario y su lógica."},
+    {t:"KA220: secciones y límites de caracteres",s:"tenemos",src:["kb-0079","kb-0040"],n:"Qué pide cada apartado del formulario de Cooperation Partnerships."},
+    {t:"KA210: el formulario simplificado",s:"tenemos",src:["kb-0081","kb-0041"],n:"Las diferencias del formulario de Small-scale."},
+    {t:"Recorrido por un formulario comentado (SEPIE)",s:"tenemos",src:["kb-0040","kb-0041"],n:"Aprender de las anotaciones oficiales, pregunta a pregunta."},
+    {t:"El abstract/resumen que engancha",s:"crear",n:"Cómo escribir el resumen del proyecto dentro del límite de caracteres."}
+   ]},
+   {c:"KA2-5",t:"Cómo te evalúan",tag:"Semana 5 · Evaluación",desc:"Los criterios, los umbrales y la rúbrica del evaluador.",ls:[
+    {t:"Los 4 criterios y los umbrales",s:"tenemos",src:["kb-0078","kb-0025"],n:"Relevancia, calidad del diseño, partenariado e impacto: pesos y mínimos."},
+    {t:"La rúbrica del evaluador por dentro",s:"tenemos",src:["kb-0095","kb-0096"],n:"Qué lee y qué puntúa un experto (Guide for Experts)."},
+    {t:"Escribir para el evaluador",s:"crear",src:["kb-0090"],n:"Qué busca exactamente en cada criterio y cómo dárselo."},
+    {t:"Autoevaluación: puntúa tu propio borrador",s:"crear",n:"Aplicar la rúbrica a tu texto antes de presentar."}
+   ]},
+   {c:"KA2-6",t:"Redacción ganadora",tag:"Semana 6 · Redacción",desc:"Las técnicas de redacción que distinguen una solicitud aprobada.",ls:[
+    {t:"Relevancia: justificar por qué tu proyecto importa",s:"parcial",src:["kb-0095","kb-0078"],n:"El apartado que más pesa y cómo construirlo."},
+    {t:"Objetivos SMART e indicadores medibles",s:"crear",src:["kb-0097"],n:"Objetivos con unidad, valor base y valor objetivo."},
+    {t:"Evidencia vs afirmación",s:"crear",n:"Demostrar lo que dices en lugar de solo declararlo."},
+    {t:"Calidad del partenariado y de la gestión",s:"parcial",src:["kb-0095"],n:"Cómo describir consorcio, reparto de tareas y toma de decisiones."},
+    {t:"Los errores de redacción más comunes",s:"parcial",src:["kb-0104","kb-0105"],n:"Fallos que tumban solicitudes y cómo evitarlos."}
+   ]},
+   {c:"KA2-7",t:"Work packages y presupuesto",tag:"Semana 7 · WPs y dinero",desc:"La estructura de trabajo y el modelo de financiación a tanto alzado.",ls:[
+    {t:"Work packages: la columna vertebral",s:"parcial",src:["kb-0018","kb-0100"],n:"Qué son, cuántos y cómo estructurarlos."},
+    {t:"El modelo de financiación KA2 a fondo (Handbook lump sums)",s:"borrador",src:["kb-0018","kb-0052"],n:"El manual oficial del modelo a tanto alzado, desgranado."},
+    {t:"Tareas, entregables e hitos",s:"crear",n:"El trío que da estructura al plan de trabajo."},
+    {t:"Coherencia actividad ↔ coste",s:"tenemos",src:["kb-0022","kb-0018"],n:"Que cada euro del tramo tenga su actividad detrás."},
+    {t:"Justificar el tramo de presupuesto",s:"crear",n:"Cómo argumentar que el lump sum elegido es el adecuado."}
+   ]},
+   {c:"KA2-8",t:"Impacto, difusión y cierre",tag:"Semana 8 · Impacto y envío",desc:"Cerrar la solicitud: impacto, difusión, sostenibilidad y presentación.",ls:[
+    {t:"Impacto: distinguir resultados de beneficios reales",s:"crear",n:"El apartado peor desarrollado en las solicitudes, bien hecho."},
+    {t:"DEOR: difusión y explotación de resultados",s:"parcial",src:["kb-0026","kb-0033"],n:"Plan de difusión que el evaluador se cree."},
+    {t:"Sostenibilidad: qué queda cuando acaba la financiación",s:"crear",n:"Cómo demostrar continuidad e impacto duradero."},
+    {t:"Presentar el proyecto: checklist final",s:"parcial",src:["kb-0008","kb-0024"],n:"OID, firmas, anexos y envío sin sobresaltos."},
+    {t:"Después del «sí»: informes y gestión",s:"tenemos",src:["kb-0020","kb-0021"],n:"Beneficiary Module y obligaciones básicas de ejecución."}
+   ]}
+  ]},
+
+ {code:"KA3",t:"Proyectos KA3 · Apoyo a políticas",nivel:"Avanzado",
+  desc:"Curso para abordar las acciones KA3 de apoyo a la reforma de políticas y otras acciones centralizadas gestionadas por la EACEA. Foco en la dimensión política, el impacto sistémico y la redacción del Part B europeo, un terreno donde casi todo el material canónico está en inglés: aquí lo trabajamos en español.",
+  mods:[
+   {c:"KA3-1",t:"Qué es KA3",tag:"Semana 1 · Fundamentos",desc:"La acción clave 3 y por qué juega en otra liga.",ls:[
+    {t:"La acción clave 3 en el conjunto del programa",s:"tenemos",src:["kb-0083"],n:"Qué persigue KA3 y por qué es distinta de KA1 y KA2."},
+    {t:"De influir en personas a influir en políticas",s:"crear",n:"El salto de escala: del beneficiario individual al cambio sistémico."},
+    {t:"Quién puede y quién suele presentar KA3",s:"crear",n:"El perfil típico de solicitante y consorcio."},
+    {t:"Las prioridades políticas de la UE que enmarcan KA3",s:"crear",src:["kb-0004"],n:"Cómo alinear tu proyecto con la agenda política europea."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"KA3-2",t:"El mapa de acciones KA3",tag:"Semana 2 · Las acciones",desc:"Las convocatorias que caben bajo el paraguas KA3.",ls:[
+    {t:"Panorámica de las acciones KA3",s:"tenemos",src:["kb-0083"],n:"Las distintas convocatorias del ámbito KA3."},
+    {t:"European Youth Together",s:"tenemos",src:["kb-0084","kb-0085"],n:"La acción KA3 más conocida en el ámbito juvenil, paso a paso."},
+    {t:"Experimentaciones de política y otras líneas",s:"crear",n:"Policy experimentation y acciones afines."},
+    {t:"Cómo leer una convocatoria EACEA de KA3",s:"crear",src:["kb-0025"],n:"Topics, scope y expected outcomes: la jerga de las calls centralizadas."},
+    {t:"Elegir la acción KA3 adecuada",s:"crear",n:"Ejercicio de encaje entre tu idea y la convocatoria."}
+   ]},
+   {c:"KA3-3",t:"El ecosistema centralizado",tag:"Semana 3 · EACEA y portal",desc:"El entorno de las acciones centralizadas: EACEA y el F&T Portal.",ls:[
+    {t:"EACEA: la agencia que gestiona lo centralizado",s:"tenemos",src:["kb-0006"],n:"Quién es y en qué se diferencia de tu Agencia Nacional."},
+    {t:"El F&T Portal (SEDIA) por dentro",s:"parcial",src:["kb-0023","kb-0024"],n:"El entorno donde se buscan calls y se presentan las acciones centralizadas."},
+    {t:"Registro en el portal: del OID al PIC",s:"parcial",src:["kb-0008"],n:"Los identificadores que necesitas para presentar en EACEA."},
+    {t:"Buscar y entender una call en el portal",s:"crear",src:["kb-0024"],n:"Cómo navegar Topics y documentación oficial de la convocatoria."},
+    {t:"El manual online del F&T",s:"tenemos",src:["kb-0024"],n:"La documentación de referencia para el sistema de envío."}
+   ]},
+   {c:"KA3-4",t:"De la idea a la propuesta",tag:"Semana 4 · Diseño",desc:"Diseñar un proyecto con dimensión política e impacto sistémico.",ls:[
+    {t:"Análisis del problema con dimensión política",s:"parcial",src:["kb-0027"],n:"Fundamentar una necesidad que trascienda lo local."},
+    {t:"Mapear stakeholders y decisores",s:"crear",n:"Identificar a quién hay que implicar para lograr cambio real."},
+    {t:"Teoría del cambio a escala sistémica",s:"crear",n:"Conectar actividades con transformación de políticas o prácticas."},
+    {t:"Construir un consorcio con peso político",s:"parcial",src:["kb-0077"],n:"Socios que aportan legitimidad, alcance y capacidad de incidencia."},
+    {t:"Dimensión europea y transnacionalidad",s:"crear",src:["kb-0095"],n:"Por qué el proyecto necesita hacerse a nivel europeo."}
+   ]},
+   {c:"KA3-5",t:"El formulario EACEA Part B",tag:"Semana 5 · El formulario",desc:"El formulario europeo de las acciones centralizadas, apartado a apartado.",ls:[
+    {t:"La estructura del Part B europeo",s:"borrador",src:["kb-0079","kb-0095"],n:"Recorrido por las secciones del formulario centralizado."},
+    {t:"Project Summary / Abstract",s:"borrador",n:"El resumen que abre la propuesta y fija la primera impresión."},
+    {t:"Relevance en clave KA3",s:"borrador",src:["kb-0095","kb-0078"],n:"Background, objetivos generales y contribución a prioridades políticas."},
+    {t:"Quality of design and implementation",s:"borrador",src:["kb-0095"],n:"Metodología, gestión, calidad y riesgos."},
+    {t:"Partnership e Impact",s:"borrador",src:["kb-0095","kb-0026"],n:"Consorcio, gobernanza, impacto y sostenibilidad."}
+   ]},
+   {c:"KA3-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios de adjudicación de las acciones EACEA.",ls:[
+    {t:"Los award criteria de las acciones EACEA",s:"tenemos",src:["kb-0025"],n:"Criterios y umbrales de las convocatorias centralizadas."},
+    {t:"La rúbrica del evaluador (Guide for Experts)",s:"tenemos",src:["kb-0095","kb-0096"],n:"Qué lee y puntúa el experto de la EACEA."},
+    {t:"Tips del evaluador aplicados a KA3",s:"tenemos",src:["kb-0090"],n:"Consejos de la propia agencia trasladados a tu texto."},
+    {t:"Autoevaluación con la rúbrica",s:"crear",n:"Puntuar tu borrador antes de presentarlo."}
+   ]},
+   {c:"KA3-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar el impacto sistémico y estructurar el plan de trabajo.",ls:[
+    {t:"Redactar la relevancia política",s:"crear",src:["kb-0095"],n:"Cómo argumentar el impacto en políticas sin caer en generalidades."},
+    {t:"Objetivos e indicadores de cambio sistémico",s:"crear",src:["kb-0097"],n:"Medir lo difícil de medir: influencia, adopción, escalabilidad."},
+    {t:"Work packages en acciones centralizadas",s:"parcial",src:["kb-0079"],n:"Estructura del plan de trabajo del Part B europeo."},
+    {t:"Staff effort, subcontratación y eventos",s:"crear",src:["kb-0017"],n:"Los apartados de recursos del work plan EACEA."},
+    {t:"Redactar acciones EACEA en español",s:"crear",n:"Cómo trabajar en español un formulario cuyo material canónico está en inglés."}
+   ]},
+   {c:"KA3-8",t:"Presupuesto, presentación y gestión",tag:"Semana 8 · Cierre",desc:"Presupuestar, presentar en el portal y sostener el impacto político.",ls:[
+    {t:"El presupuesto en acciones EACEA",s:"parcial",src:["kb-0018","kb-0078"],n:"Cómo se presupuestan las acciones centralizadas frente al lump sum de NA."},
+    {t:"Comunicación, difusión y visibilidad",s:"parcial",src:["kb-0026"],n:"Llegar a decisores y público, y dar visibilidad a la financiación UE."},
+    {t:"Sostenibilidad e incidencia tras el proyecto",s:"crear",n:"Cómo consolidar el cambio de política logrado."},
+    {t:"Presentar en el F&T Portal",s:"parcial",src:["kb-0024"],n:"La mecánica de envío electrónico de acciones centralizadas."},
+    {t:"Ethics, security y declaraciones",s:"crear",n:"Los apartados finales que no puedes descuidar."}
+   ]}
+  ]},
+
+ {code:"CB",t:"Capacity Building",nivel:"Avanzado",
+  desc:"Curso sobre las acciones de Capacity Building (desarrollo de capacidades), que financian la cooperación con organizaciones de terceros países no asociados al programa. Gestionadas por la EACEA, tienen reglas de elegibilidad regional, socios internacionales y un enfoque de desarrollo. Todo el material oficial está en inglés: aquí lo trabajamos en español.",
+  mods:[
+   {c:"CB-1",t:"Qué es Capacity Building",tag:"Semana 1 · Fundamentos",desc:"La lógica del desarrollo de capacidades y la cooperación con terceros países.",ls:[
+    {t:"La lógica del desarrollo de capacidades",s:"tenemos",src:["kb-0087"],n:"Por qué la UE financia reforzar organizaciones fuera de Europa."},
+    {t:"Terceros países no asociados: el corazón de CB",s:"crear",n:"Qué significa cooperar más allá del programa y con quién."},
+    {t:"CB frente a KA2 y KA3",s:"crear",n:"En qué se parece y en qué se diferencia de otras cooperaciones."},
+    {t:"Las prioridades de las convocatorias CB",s:"crear",n:"Qué buscan las calls y cómo alinearte."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"CB-2",t:"Los ámbitos de Capacity Building",tag:"Semana 2 · Ámbitos",desc:"Youth, VET y Higher Education: las tres líneas de desarrollo de capacidades.",ls:[
+    {t:"CB Youth: desarrollo de capacidades en juventud",s:"tenemos",src:["kb-0087"],n:"La acción CB del ámbito juvenil, regiones y objetivos."},
+    {t:"CB VET: desarrollo de capacidades en FP",s:"tenemos",src:["kb-0088","kb-0089"],n:"Cómo se solicita CB en formación profesional."},
+    {t:"CB Higher Education: educación superior",s:"crear",n:"El ámbito universitario del desarrollo de capacidades."},
+    {t:"Qué financia y qué no cada ámbito",s:"crear",n:"Actividades elegibles y límites por línea."},
+    {t:"Elegir tu ámbito CB",s:"crear",n:"Ejercicio de encaje entre tu organización y la acción."}
+   ]},
+   {c:"CB-3",t:"Regiones, elegibilidad y socios",tag:"Semana 3 · Reglas del juego",desc:"El mapa de regiones del mundo y las reglas de composición del consorcio.",ls:[
+    {t:"El mapa de regiones del mundo",s:"crear",n:"Cómo Erasmus+ agrupa los terceros países y por qué importa."},
+    {t:"Reglas de elegibilidad geográfica",s:"crear",n:"Qué combinaciones de países son válidas en tu proyecto."},
+    {t:"Requisitos de composición del consorcio",s:"parcial",src:["kb-0077"],n:"Cuántos socios, de qué regiones y con qué roles."},
+    {t:"Encontrar socios en terceros países",s:"crear",n:"Estrategias y precauciones para partenariados internacionales."},
+    {t:"El equilibrio de poder en el consorcio",s:"crear",n:"Cooperar de igual a igual y evitar el asistencialismo."}
+   ]},
+   {c:"CB-4",t:"De la idea al proyecto",tag:"Semana 4 · Diseño",desc:"Diseñar un proyecto de desarrollo con necesidades reales del país socio.",ls:[
+    {t:"Análisis de necesidades en contexto de desarrollo",s:"parcial",src:["kb-0027"],n:"Fundamentar necesidades reales del país socio, no supuestas."},
+    {t:"Teoría del cambio orientada a capacidades",s:"crear",n:"Del refuerzo institucional al impacto duradero."},
+    {t:"Objetivos de desarrollo de capacidades",s:"crear",src:["kb-0097"],n:"Formular objetivos de fortalecimiento medibles."},
+    {t:"Alinear con prioridades de desarrollo de la UE",s:"crear",n:"Conectar con la agenda de cooperación internacional."},
+    {t:"Diseñar actividades con enfoque de sostenibilidad",s:"crear",n:"Que la capacidad quede instalada cuando el proyecto acabe."}
+   ]},
+   {c:"CB-5",t:"El formulario EACEA",tag:"Semana 5 · El formulario",desc:"El Part B de Capacity Building, criterio a criterio.",ls:[
+    {t:"La estructura del Part B en CB",s:"borrador",src:["kb-0095"],n:"Recorrido por el formulario centralizado de Capacity Building."},
+    {t:"Relevance en clave de desarrollo",s:"borrador",src:["kb-0095"],n:"Contexto, necesidades y objetivos con dimensión internacional."},
+    {t:"Quality of design and implementation",s:"borrador",src:["kb-0095"],n:"Metodología, gestión y calidad adaptadas a contextos complejos."},
+    {t:"Partnership: el criterio decisivo en CB",s:"borrador",src:["kb-0095"],n:"Por qué el partenariado pesa especialmente en desarrollo de capacidades."},
+    {t:"Impact y sostenibilidad",s:"borrador",src:["kb-0095","kb-0026"],n:"Efectos duraderos y apropiación local."}
+   ]},
+   {c:"CB-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios de adjudicación específicos de Capacity Building.",ls:[
+    {t:"Los award criteria de CB",s:"tenemos",src:["kb-0025"],n:"Criterios y umbrales específicos de estas convocatorias."},
+    {t:"Tips del evaluador CB-VET aplicados",s:"tenemos",src:["kb-0090"],n:"Consejos oficiales de la agencia trasladados a tu texto."},
+    {t:"La rúbrica del experto",s:"tenemos",src:["kb-0095"],n:"Qué lee y puntúa el evaluador en CB."},
+    {t:"Autoevaluación con la rúbrica",s:"crear",n:"Puntuar tu borrador antes de enviarlo."}
+   ]},
+   {c:"CB-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar la relevancia internacional y estructurar el plan de trabajo.",ls:[
+    {t:"Redactar la relevancia internacional",s:"crear",src:["kb-0095"],n:"Argumentar el valor de cooperar con ese país y esa región."},
+    {t:"Indicadores de capacidad instalada",s:"crear",src:["kb-0097"],n:"Medir el fortalecimiento de organizaciones y personas."},
+    {t:"Work packages en proyectos CB",s:"parcial",src:["kb-0079"],n:"Estructura del plan de trabajo del Part B."},
+    {t:"Gestión de recursos en consorcios internacionales",s:"crear",src:["kb-0017"],n:"Staff effort, subcontratación y desplazamientos."},
+    {t:"Material de Capacity Building en español",s:"crear",n:"Trabajar en español acciones cuyo material oficial está en inglés."}
+   ]},
+   {c:"CB-8",t:"Presupuesto, presentación y gestión",tag:"Semana 8 · Cierre",desc:"Presupuestar, presentar y asegurar la apropiación local del impacto.",ls:[
+    {t:"El presupuesto en acciones CB",s:"parcial",src:["kb-0018"],n:"Cómo se presupuesta el desarrollo de capacidades."},
+    {t:"Difusión y visibilidad internacional",s:"parcial",src:["kb-0026"],n:"Comunicar resultados dentro y fuera de la UE."},
+    {t:"Sostenibilidad y apropiación local",s:"crear",n:"Que la mejora perdure en el país socio."},
+    {t:"Presentar en el F&T Portal",s:"parcial",src:["kb-0024"],n:"La mecánica de envío de la acción centralizada."},
+    {t:"Gestión de un proyecto CB tras el «sí»",s:"parcial",src:["kb-0020"],n:"Obligaciones y seguimiento de un proyecto internacional."}
+   ]}
+  ]},
+
+ {code:"SPT",t:"Deporte (Sport)",nivel:"Intermedio",
+  desc:"Curso dedicado a las acciones de Deporte de Erasmus+: desde las asociaciones de cooperación y small-scale hasta los eventos deportivos europeos sin ánimo de lucro. Cubre las prioridades del sector (integridad, inclusión, actividad física saludable) y la redacción de solicitudes, un ámbito con muy poca formación disponible en español.",
+  mods:[
+   {c:"SPT-1",t:"El deporte en Erasmus+",tag:"Semana 1 · Fundamentos",desc:"Por qué la UE financia deporte y a quién se dirige.",ls:[
+    {t:"Por qué Erasmus+ financia deporte",s:"crear",src:["kb-0092"],n:"El valor social del deporte y qué persigue la UE al apoyarlo."},
+    {t:"El deporte de base como foco",s:"crear",n:"Grassroots sport: a quién se dirigen estas acciones."},
+    {t:"El lugar del deporte en el programa",s:"crear",src:["kb-0003"],n:"Cómo encaja el capítulo de deporte junto a KA1, KA2 y KA3."},
+    {t:"Quién puede presentar proyectos de deporte",s:"crear",n:"El perfil de organizaciones elegibles."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"SPT-2",t:"Las acciones de deporte",tag:"Semana 2 · Las acciones",desc:"Las tres grandes vías del capítulo de deporte.",ls:[
+    {t:"Panorámica de las acciones deportivas",s:"tenemos",src:["kb-0092","kb-0093"],n:"El mapa de acciones del ámbito del deporte."},
+    {t:"Cooperation Partnerships en deporte",s:"tenemos",src:["kb-0093"],n:"La cooperación de mayor alcance aplicada al deporte."},
+    {t:"Small-scale Partnerships en deporte",s:"tenemos",src:["kb-0094"],n:"El proyecto de entrada para organizaciones deportivas."},
+    {t:"Not-for-profit European Sport Events",s:"tenemos",src:["kb-0092"],n:"La acción específica para organizar eventos deportivos europeos."},
+    {t:"¿Qué acción encaja con tu idea?",s:"crear",n:"Ejercicio de elección entre cooperación y evento."}
+   ]},
+   {c:"SPT-3",t:"Las prioridades del deporte",tag:"Semana 3 · Prioridades",desc:"Las prioridades del sector que debes encarnar en tu proyecto.",ls:[
+    {t:"Integridad en el deporte",s:"crear",n:"Lucha contra el dopaje, el amaño de partidos y la corrupción."},
+    {t:"Inclusión e igualdad a través del deporte",s:"crear",src:["kb-0004"],n:"El deporte como herramienta de cohesión social."},
+    {t:"Actividad física saludable (HEPA)",s:"crear",n:"La promoción de estilos de vida activos."},
+    {t:"Educación en y a través del deporte",s:"crear",n:"Valores, dual careers y desarrollo personal."},
+    {t:"Alinear tu proyecto con las prioridades",s:"crear",n:"Cómo elegir y encarnar la prioridad adecuada."}
+   ]},
+   {c:"SPT-4",t:"De la idea al proyecto",tag:"Semana 4 · Diseño",desc:"Fundamentar un problema real del deporte de base y darle forma de proyecto.",ls:[
+    {t:"Análisis de necesidades en el ámbito deportivo",s:"parcial",src:["kb-0027"],n:"Fundamentar un problema real del deporte de base."},
+    {t:"Teoría del cambio aplicada al deporte",s:"crear",n:"Del problema social al impacto a través de la actividad deportiva."},
+    {t:"Objetivos claros y medibles",s:"crear",src:["kb-0097"],n:"Formular objetivos deportivos SMART."},
+    {t:"Diseñar el consorcio deportivo",s:"parcial",src:["kb-0077"],n:"Clubes, federaciones, ONG y entidades públicas: quién aporta qué."},
+    {t:"Buscar socios en el sector del deporte",s:"crear",n:"Dónde encontrar aliados fiables en Europa."}
+   ]},
+   {c:"SPT-5",t:"El formulario",tag:"Semana 5 · El formulario",desc:"Dónde se presenta cada acción y cómo es su formulario.",ls:[
+    {t:"NA vs EACEA: dónde se presenta cada acción",s:"crear",src:["kb-0006"],n:"Small-scale/Cooperation por Agencia Nacional; eventos por EACEA."},
+    {t:"La estructura del formulario de deporte",s:"parcial",src:["kb-0079","kb-0095"],n:"Recorrido por las secciones según la acción elegida."},
+    {t:"Relevancia del proyecto deportivo",s:"borrador",src:["kb-0095"],n:"Contexto, prioridades y objetivos del criterio de relevancia."},
+    {t:"Calidad del diseño y de la implementación",s:"borrador",src:["kb-0095"],n:"Metodología, gestión y calidad del proyecto."},
+    {t:"Partenariado e impacto",s:"borrador",src:["kb-0095","kb-0026"],n:"Consorcio, difusión y sostenibilidad."}
+   ]},
+   {c:"SPT-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios y la rúbrica aplicados a un proyecto deportivo.",ls:[
+    {t:"Los criterios y umbrales",s:"tenemos",src:["kb-0025","kb-0093"],n:"Cómo se puntúan las acciones de deporte."},
+    {t:"La rúbrica del evaluador",s:"tenemos",src:["kb-0095"],n:"Qué busca el experto en un proyecto deportivo."},
+    {t:"Escribir para el evaluador",s:"crear",src:["kb-0090"],n:"Trasladar los criterios a tu redacción."},
+    {t:"Autoevaluación de tu borrador",s:"crear",n:"Puntuar tu texto antes de enviarlo."}
+   ]},
+   {c:"SPT-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar el impacto social del deporte y estructurar el trabajo.",ls:[
+    {t:"Redactar la relevancia y el impacto social",s:"crear",src:["kb-0095"],n:"Argumentar el cambio que produce el proyecto en la comunidad."},
+    {t:"Indicadores de impacto deportivo y social",s:"crear",src:["kb-0097"],n:"Medir participación, hábitos y cambios de comportamiento."},
+    {t:"Work packages de un proyecto de deporte",s:"parcial",src:["kb-0018","kb-0079"],n:"Estructurar el plan de trabajo por paquetes."},
+    {t:"Organizar un evento deportivo europeo",s:"crear",n:"Particularidades de planificar un Not-for-profit European Sport Event."},
+    {t:"Redactar un proyecto de deporte en español",s:"crear",n:"Trabajar en español un ámbito con poca fuente verificable en nuestro idioma."}
+   ]},
+   {c:"SPT-8",t:"Presupuesto, impacto y presentación",tag:"Semana 8 · Cierre",desc:"Presupuestar, dar visibilidad y presentar la solicitud.",ls:[
+    {t:"El presupuesto en proyectos de deporte",s:"parcial",src:["kb-0019","kb-0018"],n:"Lump sums, tramos y cómo presupuestar cada acción."},
+    {t:"Difusión y visibilidad del proyecto",s:"parcial",src:["kb-0026"],n:"Llegar a participantes, comunidad y público."},
+    {t:"Sostenibilidad del impacto deportivo",s:"crear",n:"Qué queda en el club o la comunidad cuando acaba."},
+    {t:"Presentar la solicitud",s:"parcial",src:["kb-0024","kb-0008"],n:"Checklist final y envío según la acción (NA o EACEA)."},
+    {t:"Después del «sí»: gestión e informes",s:"parcial",src:["kb-0020"],n:"Obligaciones básicas de ejecución del proyecto."}
+   ]}
+  ]}
+];
+
+function courseStats(course){
+  let n=0,ten=0,par=0,cre=0,bor=0;
+  course.mods.forEach(m=>m.ls.forEach(l=>{n++;l.s==='tenemos'?ten++:l.s==='parcial'?par++:l.s==='borrador'?bor++:cre++;}));
+  return {n,ten,par,cre,bor,mods:course.mods.length};
+}
+function toggleCourse(ci){const el=document.getElementById('course-'+ci);if(el)el.classList.toggle('open');}
+function renderCourses(){
+  const totLes=COURSES.reduce((s,c)=>s+courseStats(c).n,0);
+  document.getElementById('cursos-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${COURSES.length}</b> cursos oficiales</span>
+      <span class="pill"><b>${COURSES.length*8}</b> módulos (8 semanas · curso)</span>
+      <span class="pill"><b>${totLes}</b> lecciones</span>
+    </div>
+    <p class="cur-note">${COURSES_NOTA}</p>`;
+  document.getElementById('cursos-body').innerHTML=COURSES.map((c,ci)=>{
+    const st=courseStats(c);
+    const nNotes=c.mods.reduce((s,m)=>s+m.ls.reduce((a,l,i)=>a+noteCount(`${m.c}.${i+1}`),0),0);
+    const nBadge=nNotes?`<span class="course-notebadge">📝 ${nNotes}</span>`:'';
+    return `<div class="course${ci===0?' open':''}" id="course-${ci}">
+      <div class="course-head" onclick="toggleCourse(${ci})">
+        <span class="chev">▸</span>
+        <h2>${escHtml(c.t)}</h2>
+        ${c.nivel?`<span class="course-nivel">${escHtml(c.nivel)}</span>`:''}
+        <span class="course-mini">${st.mods} módulos · ${st.n} lecciones</span>
+        ${nBadge}
+      </div>
+      <div class="course-body">
+        <p class="course-desc">${escHtml(c.desc||'')}</p>
+        ${c.mods.map(modCard).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('#cursos-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderCourses();
+
 /* ===================== CONTENIDO DE LECCIÓN + NOTAS DE REVISIÓN ===================== */
 const ACAPI='/v1/academy';
 function escAttr(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
@@ -880,7 +1254,7 @@ function noteCount(id){const o=window.NOTES[id]||{};return Object.values(o).flat
 async function jx(url,opts){const r=await fetch(url,opts);return r.json();}
 
 /* Refresca los badges 📝 de todas las pestañas re-renderizando las listas. */
-function refreshAll(){renderCurriculo();renderSAS();renderEACEA();}
+function refreshAll(){renderCourses();renderCurriculo();renderSAS();renderEACEA();renderDeepdives();}
 
 /* Carga las notas y refresca badges una vez disponibles. */
 jx(ACAPI+'/notes').then(d=>{Object.assign(window.NOTES,d.data||{});refreshAll();});

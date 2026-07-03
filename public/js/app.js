@@ -90,7 +90,7 @@ const App = (() => {
   function showAuth() {
     document.getElementById('auth-screen').classList.remove('hidden');
     document.getElementById('app-shell').classList.add('hidden');
-    // Topbar CTA: "Volver a la web" mientras no hay sesión
+    // Topbar CTA: "Iniciar sesión" mientras no hay sesión
     const back = document.getElementById('topbar-cta-back');
     const acct = document.getElementById('topbar-cta-account');
     if (back) back.style.display = '';
@@ -135,7 +135,7 @@ const App = (() => {
     document.getElementById('app-shell').classList.remove('hidden');
     const back = document.getElementById('topbar-cta-back');
     const acct = document.getElementById('topbar-cta-account');
-    if (back) back.style.display = '';      // "Volver a la web" disponible
+    if (back) back.style.display = '';      // "Iniciar sesión" disponible
     if (acct) acct.style.display = 'none';
     renderGuestUser();
   }
@@ -327,6 +327,7 @@ const App = (() => {
      muestran un mensaje de marketing + CTAs en vez de su contenido
      real. Copy por sección; cae a 'default' si no hay específico.    */
   const FUNNEL_COPY = {
+    'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding School', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
     'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
     'my-evaluations':  { icon: 'fact_check', title: 'Evalúa como un experto EACEA', body: 'Diagnostica tu propuesta contra los criterios reales de evaluación antes de presentarla. Necesitas una cuenta para guardar tus evaluaciones.' },
     'import-proposal': { icon: 'upload_file', title: 'Importa una propuesta y mejórala', body: 'Sube un borrador y la IA lo analiza, puntúa y propone mejoras concretas. Crea tu cuenta para subir tu primer documento.' },
@@ -337,7 +338,9 @@ const App = (() => {
   };
 
   function renderGuestFunnel(route) {
-    const c = FUNNEL_COPY[route] || FUNNEL_COPY.default;
+    const c = FUNNEL_COPY[route]
+      || (route.startsWith('account') ? FUNNEL_COPY.account : null)
+      || FUNNEL_COPY.default;
     const host = document.getElementById('guest-funnel-content');
     if (!host) return;
     host.innerHTML = `
@@ -367,6 +370,11 @@ const App = (() => {
      menú de Proyectos se oculta (y viceversa).                      */
   const ENTITY_ROUTES = ['my-org', 'organizations', 'shortlists', 'atlas-stats'];
 
+  // Workspace "Mi Cuenta": el sidebar entero pasa a ser el menú de la
+  // cuenta (perfil/seguridad/facturación/…). Todas comparten el panel
+  // #panel-account; la ruta decide qué sección se muestra.
+  const ACCOUNT_ROUTES = ['account-profile', 'account-security', 'account-billing', 'account-preferences'];
+
   // Superficies de CONTENIDO que un invitado puede navegar y explorar
   // libremente (ve las tarjetas). El muro de login salta solo al ABRIR
   // una tarjeta concreta (detalle de convocatoria, ficha de entidad,
@@ -378,19 +386,23 @@ const App = (() => {
 
   function updateWorkspace(route) {
     const isEntidades = ENTITY_ROUTES.includes(route);
-    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades);
+    const isAccount   = ACCOUNT_ROUTES.includes(route);
+    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades || isAccount);
     document.getElementById('sidebar-group-entidades')?.classList.toggle('hidden', !isEntidades);
-    updateTopbarActive(route, isEntidades);
+    document.getElementById('sidebar-group-account')?.classList.toggle('hidden', !isAccount);
+    updateTopbarActive(route, isEntidades, isAccount);
   }
 
-  function updateTopbarActive(route, isEntidades) {
-    const activeHref = isEntidades            ? '#my-org'
+  function updateTopbarActive(route, isEntidades, isAccount) {
+    // La cuenta no es una pestaña del menú superior: no resaltamos ninguna.
+    const activeHref = isAccount              ? null
+      : isEntidades                           ? '#my-org'
       : route === 'convocatorias'             ? '#convocatorias'
       : route === 'movilidades'               ? '#movilidades'
       :                                         '#my-projects';
     document.querySelectorAll('#efs-topbar-nav .efs-topbar__menu li').forEach(li => {
       const a = li.querySelector('a');
-      li.classList.toggle('is-current', !!a && a.getAttribute('href') === activeHref);
+      li.classList.toggle('is-current', !!a && !!activeHref && a.getAttribute('href') === activeHref);
     });
   }
 
@@ -454,7 +466,9 @@ const App = (() => {
       document.getElementById('panel-guest-funnel')?.classList.add('active');
       renderGuestFunnel(route);
     } else {
-      const panel = document.getElementById(`panel-${route}`);
+      // Las rutas de cuenta comparten el panel #panel-account.
+      const panelRoute = ACCOUNT_ROUTES.includes(route) ? 'account' : route;
+      const panel = document.getElementById(`panel-${panelRoute}`);
       if (panel) {
         panel.classList.add('active');
       } else {
@@ -481,7 +495,11 @@ const App = (() => {
 
     // Update topbar title
     const titles = {
-      dashboard:        'Dashboard',
+      dashboard:            'Dashboard',
+      'account-profile':     'Perfil',
+      'account-security':    'Seguridad',
+      'account-billing':     'Facturación',
+      'account-preferences': 'Preferencias',
       'my-projects':    'Mis Proyectos',
       'my-evaluations': 'Mis Evaluaciones',
       create:           'Diseñar',
@@ -512,6 +530,7 @@ const App = (() => {
     // Initialize module when navigating to it (solo con sesión; el
     // invitado ve el embudo y no dispara cargas de datos privadas).
     if (!guestFunnel) {
+      if (ACCOUNT_ROUTES.includes(route) && typeof Account !== 'undefined') Account.init(route);
       if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
       if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
       if (route === 'create' && typeof CreateProject !== 'undefined') CreateProject.init();
@@ -566,8 +585,16 @@ const App = (() => {
   function getCurrentUser() { return currentUser; }
   function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
 
+  /* Merge a patch into the in-memory user and refresh the sidebar/topbar UI.
+     Used by the account area after a self-service profile edit. */
+  function updateCurrentUser(patch) {
+    if (!currentUser) return;
+    currentUser = { ...currentUser, ...patch };
+    updateUserUI();
+  }
+
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, isAdmin, requireLogin };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
 })();
 
 
@@ -601,6 +628,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Volver al modo exploración desde la pantalla de auth ─── */
   document.getElementById('auth-back-explore')?.addEventListener('click', () => App.showPublic());
+
+  /* ── CTA "Iniciar sesión" del top bar (visitante sin sesión) ─ */
+  document.getElementById('topbar-cta-back')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    App.openAuth('login');
+  });
 
   /* ── Forgot/reset links + forms ───────────────────────────── */
   document.getElementById('link-forgot')?.addEventListener('click', (e) => {

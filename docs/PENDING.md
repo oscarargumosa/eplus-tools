@@ -20,6 +20,8 @@
 
 **Fases:** F1 núcleo sin cobro real (migración 121 + módulo `capacity/` + hook + admin grant + modal) → F2 dashboard/upgrade screens → F3 checkout real (pasarela + fiscal) → F4 gating niveles + School → F5 Professional Status (fuera de scope).
 
+**Superficie de UI ya montada (2026-07-03):** el workspace "Mi Cuenta" existe con una sección **Facturación** (placeholder). F2/F3 aterrizan ahí — añadir capacidad/plan/checkout es sumar contenido a esa sección, no crear pantalla nueva. Ver §3 (commit `0384fc4ca0`).
+
 **Bloqueante:** decisiones abiertas §11 (semántica de nivel, banda en budget-based, grandfathering, pasarela de pago, tramos/precio de boosts).
 
 ### TASK-007 — Diagnose & Improve (replanteo de Perfeccionar)
@@ -144,7 +146,7 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 **Fases:**
 1. ✅ **HECHA (2026-06-27)** — `device_id` + tracker + `events` + `POST /v1/events`. Migración `120_events_table.sql`, módulo `node/src/modules/events/`, `public/js/track.js` (cola + sendBeacon + tiempo activo Page Visibility), hooks en `app.js` (session_start/section_view/section_time/gate_hit), `convocatorias.js` (call_opened+programme), `entities.js` (entity_opened), `movilidades.js` (mobility_opened). `optionalAuth` → user_id si logueado, device_id siempre. Verificado E2E (invitado y logueado, whitelist, tiempo activo). **Pendiente:** commit/MERGE. Hard-refresh (Ctrl+F5) para cargar el index.html nuevo.
-2. Onboarding + tabla de perfil + mapeo a GHL + lead tier (empezar por modelo de datos).
+2. Onboarding + tabla de perfil + mapeo a GHL + lead tier (empezar por modelo de datos). **Nota (2026-07-03):** el workspace "Mi Cuenta" ya existe (§3, commit `0384fc4ca0`); el perfil de cualificación puede vivir como una sección más de ese menú lateral en vez de pantalla aparte.
 3. Scoring conductual (rollup `user_engagement`, coser device→user en registro `UPDATE events SET user_id WHERE device_id`, push hitos a GHL). Eventos `project_started`/`search` ya en el whitelist, falta cablearlos.
 
 **Decisiones abiertas (no bloqueantes):** preguntas/orden exactos del onboarding · esquema final tags GHL · retención `events` + base legal RGPD · scoring cron vs on-demand.
@@ -333,6 +335,7 @@ funding_call(
 
 | Fecha | Tarea | Commit/PR |
 |---|---|---|
+| 2026-07-03 | **Área "Mi Cuenta" (tercer workspace)** creada: el botón "Mi cuenta · Nombre" del topbar + el bloque de usuario del sidebar abren un workspace propio (la barra lateral entera pasa a Perfil / Seguridad / Facturación / Preferencias, misma mecánica que Proyectos ↔ Entidades). Backend auth: `PATCH /me`, `POST /change-password`, `has_password` en `/me`. Frontend: `sidebar-group-account` + `ACCOUNT_ROUTES` + `public/js/account.js`. Facturación y Preferencias son placeholders = hogar futuro de TASK-011 y TASK-009. Probado en vivo. **Sin push.** | `0384fc4ca0` en dev-local |
 | 2026-05-06 | TASK-003 cerrada: réplica local Postgres `erasmus-pg` operativa. Test E2E con dump base 1.5 GB completado (288.294 entities · 317.559 projects · Permacultura Cantabria E10151149 = 164 proyectos). | dump-base-20260505-1828 |
 | 2026-04-29 | Hotfix migration 091: batch UPDATEs para no romper healthcheck Coolify (502 Bad Gateway en intake.eufundingschool.com) | `7cfe7cc` en main |
 

@@ -300,10 +300,65 @@ const AuthController = {
           ok: false, error: { code: 'NOT_FOUND', message: 'User not found' }
         });
       }
+      // Tells the account UI whether to ask for the current password on change
+      // (Google-only accounts have no password yet).
+      const hash = await User.getPasswordHash(req.user.id);
+      user.has_password = !!(hash && hash.length);
       res.json({ ok: true, data: user });
     } catch (err) {
       console.error('[AUTH] Me error:', err.message);
       res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Failed to get user' } });
+    }
+  },
+
+  /* ── PATCH /v1/auth/me ─────────────────────────────────────── */
+  /* Self-service profile update. Currently only the display name. */
+  async updateMe(req, res) {
+    try {
+      const { name } = req.body || {};
+      if (typeof name !== 'string' || name.trim().length < 2) {
+        return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: 'El nombre debe tener al menos 2 caracteres' } });
+      }
+      if (name.trim().length > 120) {
+        return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: 'El nombre es demasiado largo' } });
+      }
+      const user = await User.updateName(req.user.id, name);
+      res.json({ ok: true, data: user });
+    } catch (err) {
+      console.error('[AUTH] Update me error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo actualizar el perfil' } });
+    }
+  },
+
+  /* ── POST /v1/auth/change-password ─────────────────────────── */
+  /* Authenticated password change. Requires the current password unless
+   * the account has none yet (Google-only), in which case it just sets one. */
+  async changePassword(req, res) {
+    try {
+      const { current_password, new_password } = req.body || {};
+
+      const pwErr = validatePassword(new_password);
+      if (pwErr) return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: pwErr } });
+
+      const currentHash = await User.getPasswordHash(req.user.id);
+      const hasPassword = !!(currentHash && currentHash.length);
+
+      if (hasPassword) {
+        if (!current_password) {
+          return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: 'Introduce tu contraseña actual' } });
+        }
+        const valid = await bcrypt.compare(current_password, currentHash);
+        if (!valid) {
+          return res.status(401).json({ ok: false, error: { code: 'UNAUTHORIZED', message: 'La contraseña actual no es correcta' } });
+        }
+      }
+
+      const passwordHash = await bcrypt.hash(new_password, SALT_ROUNDS);
+      await User.updatePassword(req.user.id, passwordHash);
+      res.json({ ok: true, data: { message: 'Contraseña actualizada' } });
+    } catch (err) {
+      console.error('[AUTH] Change password error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo cambiar la contraseña' } });
     }
   },
 

@@ -58,6 +58,19 @@ const User = {
     await db.query('UPDATE users SET password_hash = ? WHERE id = ?', [passwordHash, userId]);
   },
 
+  /* Full name update (self-service profile). Returns the fresh safe user. */
+  async updateName(userId, name) {
+    await db.query('UPDATE users SET name = ? WHERE id = ?', [name.trim(), userId]);
+    return User.findById(userId);
+  },
+
+  /* Password hash only — used to verify the current password before a change.
+   * Google-only accounts have an empty hash ('') and can set one directly. */
+  async getPasswordHash(userId) {
+    const [rows] = await db.query('SELECT password_hash FROM users WHERE id = ? LIMIT 1', [userId]);
+    return rows[0] ? rows[0].password_hash : null;
+  },
+
   /* ── Email verification tokens ─────────────────────────────── */
 
   async createVerificationToken(userId) {

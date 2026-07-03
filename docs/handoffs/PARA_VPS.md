@@ -1886,3 +1886,31 @@ VPS Claude: **la entrada de arriba ("Join the Club") queda ANULADA.** Oscar repe
 **Nota:** el contenido de esta página es marketing y evolucionará según Oscar cierre el modelo (ver `docs/DESIGN_CAPACITY_SYSTEM.md`). Fuente de verdad = el fichero del repo; si editas en wp-admin, replícalo allí.
 
 — Claude Local (2026-07-02, tarde)
+
+---
+
+## 2026-07-03 · Unificar botón login en Moodle (campus) con WP + tool
+
+VPS Claude: Oscar quiere que **el CTA de login se vea igual en las tres superficies**. Ya cerré dos; falta la tuya (Moodle).
+
+**Contexto — patrón canónico (ya implementado en WP y tool):**
+- **Sin sesión →** botón amarillo **"Iniciar sesión"**.
+- **Con sesión →** se reescribe a **"Mi cuenta · Nombre"** y apunta a la home del tool.
+- La detección de sesión es vía `GET https://intake.eufundingschool.com/v1/auth/session-status` con `credentials: 'include'`. Devuelve siempre 200: `{ ok:true, data:{ logged_in:bool, first_name:string|null } }`. Código: `node/src/modules/auth/controller.js:314`.
+
+**Qué hice yo hoy (Local, ya commiteado en `dev-local`, commit `abbda3bdc5`):**
+- El tool (`public/index.html` + `public/js/app.js`) mostraba **"Volver a la web"** al visitante sin sesión (confuso, sacaba al sitio de marketing). Lo cambié a **"Iniciar sesión"** amarillo que abre `openAuth('login')`. Con sesión sigue mostrando "Mi cuenta · Nombre". Verificado en local.
+- WP (`astra-eufunding/functions.php`) ya estaba correcto: default "Iniciar sesión" + JS que reescribe a "Mi cuenta · Nombre" (líneas 239-243 el CTA, 295-322 el script de detección). **Úsalo como referencia 1:1.**
+
+**Tu tarea — Moodle (`campus.eufundingschool.com`):**
+El campus lleva la misma top bar de EFS pero su CTA está **hardcodeado a "Mi cuenta"** (no vive en este repo; está en la config del tema Moodle / HTML personalizado del header). Hay que:
+1. Que el CTA por defecto diga **"Iniciar sesión"** (amarillo, mismo estilo `.efs-topbar__login`), no "Mi cuenta".
+2. Inyectar el **mismo script** de detección que WP (functions.php:295-322): fetch a `intake.eufundingschool.com/v1/auth/session-status` con `credentials:'include'`; si `logged_in` → reescribir el enlace a `"Mi cuenta · " + first_name` y href a `https://intake.eufundingschool.com/`.
+3. El enlace debe llevar la clase `efs-app-login` para que el script lo encuentre.
+4. **También** el "Volver a Proyectos" del pie del sidebar de Moodle es el equivalente del viejo "Volver a la web" — decide con Oscar si se mantiene o se retira (a mí me pidió quitar ese patrón confuso en el tool).
+
+**Ojo cookie cross-subdominio:** para que la detección funcione desde `campus.*` hacia `intake.*`, el `refresh_token` tiene que ser compartible en `.eufundingschool.com`. Verifica que la cookie se emite con `Domain=.eufundingschool.com` y que CORS de `/v1/auth/session-status` permite el origin `https://campus.eufundingschool.com` con credenciales. Si no, el fetch no manda cookie y el campus se quedará siempre en "Iniciar sesión" aunque haya sesión en el tool.
+
+**Reporta en `PARA_LOCAL.md`:** ¿CTA de Moodle ya alterna Iniciar sesión / Mi cuenta según sesión del tool? ¿cookie cross-subdominio OK?
+
+— Claude Local (2026-07-03)
