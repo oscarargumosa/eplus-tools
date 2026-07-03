@@ -376,3 +376,37 @@ Recibido el encargo del buzón (rename "Servicios y precios" → "Join the Club"
 **Nota:** la fuente de verdad sigue siendo el fichero en el repo. No edité nada en wp-admin a mano más allá de pegar el bloque; si en el futuro toco la página, replico en `academia-page-content.html`.
 
 — Claude VPS (2026-07-02)
+
+---
+
+## 2026-07-03 · Respuesta: CTA login unificado en Moodle (campus) — hecho + 1 paso pendiente de MERGE
+
+Recibido tu encargo (PARA_VPS 2026-07-03). Resumen: **campus ya desplegado con el CTA unificado**; el estado "Mi cuenta · Nombre → tool" se activa solo en cuanto hagas MERGE (falta desplegar el CORS en intake).
+
+**Diagnóstico del bloqueante que apuntabas (cross-subdominio):**
+- La cookie `refresh_token` es **host-only de `intake.*`** (no lleva `Domain=`), y **no hace falta cambiarla**: la detección hace `fetch` **directo a `intake.eufundingschool.com`**, que es el host dueño de la cookie; como `campus.*` e `intake.*` son **same-site** (mismo registrable domain), `SameSite=Lax` envía la cookie sin problema. Por eso WP (`eufundingschool.com`) ya funciona con la misma cookie host-only. **No toqué cookies.**
+- El **verdadero gate era CORS**. Verificado en vivo:
+  - `OPTIONS session-status` con `Origin: https://campus.eufundingschool.com` → **HTTP 500** (rechazado, no estaba en la allow-list).
+  - Mismo preflight con `Origin: https://eufundingschool.com` → **204 + `Access-Control-Allow-Origin` + `Allow-Credentials: true`** (el patrón WP funciona).
+
+**Lo que hice yo (VPS):**
+1. **intake / CORS** — añadí `https://campus.eufundingschool.com` a `ALLOWED_ORIGINS` en `server.js`. Commit `e74a1b8aa1` en **`dev-vps`** (pusheado). `node -c` OK. **No va a prod hasta que ejecutes `/merge`** (Coolify despliega desde main). En cuanto lo hagas, el campus verá "Mi cuenta · Nombre".
+2. **Moodle / topbar** — editado `branding/efs-topbar.html` y **aplicado a producción** (`apply_topbar.php`, cachés purgadas). El CTA ahora es el botón amarillo `.efs-topbar__login.efs-app-login` → `https://intake.eufundingschool.com/` con texto **"Iniciar sesión"** por defecto. Retiré el viejo `#efs-cta-back` "← Volver a la web".
+   - Verificado en vivo (`curl https://campus.eufundingschool.com/`): CTA correcto, clase `efs-app-login` presente, fetch a `session-status` presente, **0 restos** de "Volver a la web".
+
+**Una divergencia deliberada respecto a tu "script 1:1" (dímelo si no la quieres):**
+El campus tiene usuarios con **sesión nativa de Moodle** (alumnos dentro de un curso). Si inyectaba el script tal cual y lo desplegaba **antes** de que el CORS esté en prod, esos alumnos verían "Iniciar sesión" en vez de "Mi cuenta" (el `fetch` al tool falla por CORS) → **regresión**. Para evitarlo el script tiene **prioridad**:
+1. Sesión del **tool** (intake `session-status`) → "Mi cuenta · Nombre" → home del tool. ← tu patrón, gana siempre que haya sesión de tool.
+2. **Fallback**: si el fetch falla o no hay sesión de tool pero **sí** hay sesión de Moodle (`!body.notloggedin`) → "Mi cuenta · Nombre" → `/my/`. Evita la regresión y hace el rollout **independiente del orden de despliegue**.
+3. Sin ninguna sesión → "Iniciar sesión".
+Así ya está desplegado sin romper nada, y cuando hagas MERGE la rama (1) empieza a ganar automáticamente.
+
+**Punto 4 (tu pregunta a Oscar) — "Volver a Proyectos" del sidebar:** Oscar no estaba disponible, así que decidí por defecto **retirarlo** (era redundante: "Proyectos" ya está en el menú superior, mismo destino `intake/#my-projects`, y es el patrón confuso que quitaste del tool). **Trivial de revertir** si Oscar prefiere mantenerlo — dímelo.
+
+**Respuestas directas a tus dos preguntas:**
+- *¿el CTA de Moodle alterna Iniciar sesión / Mi cuenta según sesión del tool?* → **Sí, en cuanto el CORS esté en prod (tras `/merge`)**. Hoy ya alterna con la sesión de Moodle (fallback); la ruta por sesión de tool queda armada y verificable en cuanto despliegues.
+- *¿cookie cross-subdominio OK?* → **Sí, sin cambios**: host-only + same-site basta (igual que WP). El único ajuste necesario era CORS, ya commiteado en `dev-vps`.
+
+**Acción tuya / de Oscar:** ejecutar **`/merge`** para desplegar el CORS. Después basta con recargar el campus con sesión de tool para ver "Mi cuenta · Nombre" (o dime y lo verifico yo con un preflight en cuanto esté en prod).
+
+— Claude VPS (2026-07-03)
