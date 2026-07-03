@@ -7,6 +7,7 @@ const Intake = (() => {
   let initialized = false;
   let step = 0;
   let selectedProgram = null;
+  let selectedBudget = null; // importe elegido cuando la call tiene menú de presupuestos (budget_options)
   let _dirty = false;
   let programs = [];
   let partners = [{ _local: 1, name: '', city: '', country: '', role: 'applicant', order_index: 1 }];
@@ -297,6 +298,60 @@ const Intake = (() => {
         csBox.classList.remove('hidden');
       } else { csBox.classList.add('hidden'); }
     }
+
+    // Budget menu (varios importes cerrados a elegir)
+    renderBudgetPicker(p, null);
+  }
+
+  function parseBudgetOptions(program) {
+    let opts = program?.budget_options;
+    if (typeof opts === 'string') { try { opts = JSON.parse(opts); } catch { opts = null; } }
+    return Array.isArray(opts) ? opts.filter(x => x != null) : [];
+  }
+
+  function budgetOptBtnClass(active) {
+    return `intake-budget-opt px-4 py-2.5 rounded-lg border-2 text-sm font-bold transition-all ${active ? 'border-[#1b1464] bg-[#fbff12] text-[#1b1464] shadow-sm' : 'border-outline-variant bg-white text-on-surface hover:border-primary'}`;
+  }
+
+  // Renderiza el selector de presupuesto si la call tiene >1 importe.
+  // preselect: importe a marcar por defecto (p.ej. el eu_grant de un proyecto ya guardado).
+  function renderBudgetPicker(program, preselect) {
+    const box = document.getElementById('intake-budget-picker');
+    const optsBox = document.getElementById('intake-budget-options');
+    if (!box || !optsBox) return;
+    const opts = parseBudgetOptions(program);
+    if (opts.length <= 1) {
+      box.classList.add('hidden'); box.classList.remove('flex');
+      optsBox.innerHTML = '';
+      selectedBudget = null; // un solo presupuesto → se usa eu_grant_max
+      return;
+    }
+    const chosen = (preselect != null && opts.some(o => Number(o) === Number(preselect)))
+      ? Number(preselect) : Number(opts[0]);
+    selectedBudget = chosen;
+    optsBox.innerHTML = opts.map(o => {
+      const amt = Number(o);
+      return `<button type="button" data-budget="${amt}" class="${budgetOptBtnClass(amt === chosen)}">${amt.toLocaleString('es-ES')} €</button>`;
+    }).join('');
+    box.classList.remove('hidden'); box.classList.add('flex');
+    optsBox.querySelectorAll('.intake-budget-opt').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        selectedBudget = Number(btn.dataset.budget);
+        optsBox.querySelectorAll('.intake-budget-opt').forEach(b => {
+          b.className = budgetOptBtnClass(Number(b.dataset.budget) === selectedBudget);
+        });
+        _dirty = true;
+        // Aplicar el cambio en vivo al presupuesto (estado del Calculator) y persistirlo,
+        // para que al volver a Budget/WorkPackages se recalcule con el nuevo importe.
+        if (typeof Calculator !== 'undefined' && Calculator.isInitialized && Calculator.isInitialized()) {
+          Calculator.updateProjectData({ eu_grant: selectedBudget });
+        }
+        if (currentProjectId) {
+          try { await API.patch('/intake/projects/' + currentProjectId, { eu_grant: selectedBudget }); }
+          catch (e) { console.warn('[intake] no se pudo guardar el presupuesto elegido', e); }
+        }
+      });
+    });
   }
 
   /* ── Server projects ─────────────────────────────────────────── */
@@ -397,6 +452,8 @@ const Intake = (() => {
             if (csPreview) csPreview.textContent = match.call_summary.split('\n')[0];
             csBox.classList.remove('hidden');
           }
+          // Budget menu: preselecciona el importe ya guardado del proyecto
+          renderBudgetPicker(match, project.eu_grant);
         }
       }
       // Re-apply project values that selectProgram would have overwritten
@@ -468,9 +525,11 @@ const Intake = (() => {
         national_agency: document.getElementById('intake-f-na')?.value || 'EACEA',
         start_date: document.getElementById('intake-f-start').value || null,
         duration_months: parseInt(document.getElementById('intake-f-dur').value) || 24,
-        eu_grant: selectedProgram ? Number(selectedProgram.eu_grant_max) : 0,
+        eu_grant: selectedBudget != null ? selectedBudget : (selectedProgram ? Number(selectedProgram.eu_grant_max) : 0),
         cofin_pct: selectedProgram ? (selectedProgram.cofin_pct ?? 80) : 80,
         indirect_pct: selectedProgram ? (Number(selectedProgram.indirect_pct ?? 7)) : 7,
+        hide_cofin: selectedProgram ? (selectedProgram.hide_cofin ? 1 : 0) : 0,
+        hide_indirect: selectedProgram ? (selectedProgram.hide_indirect ? 1 : 0) : 0,
       };
       if (currentProjectId) {
         // Guardar proyecto
@@ -647,9 +706,11 @@ const Intake = (() => {
       type: document.getElementById('intake-f-type').value || null,
       start_date: document.getElementById('intake-f-start').value || null,
       duration_months: parseInt(document.getElementById('intake-f-dur').value) || 24,
-      eu_grant: selectedProgram ? Number(selectedProgram.eu_grant_max) : 500000,
+      eu_grant: selectedBudget != null ? selectedBudget : (selectedProgram ? Number(selectedProgram.eu_grant_max) : 500000),
       cofin_pct: selectedProgram ? selectedProgram.cofin_pct : 80,
       indirect_pct: selectedProgram ? Number(selectedProgram.indirect_pct) : 7,
+      hide_cofin: selectedProgram ? (selectedProgram.hide_cofin ? 1 : 0) : 0,
+      hide_indirect: selectedProgram ? (selectedProgram.hide_indirect ? 1 : 0) : 0,
     };
 
     // Build partner list with stable IDs
@@ -1826,6 +1887,7 @@ const Intake = (() => {
         const setVal = (elId, v) => { const el = document.getElementById(elId); if (el) el.value = v || ''; };
         setVal('intake-f-type', match.action_type || '');
         setVal('intake-f-type-visible', match.action_type || '');
+        renderBudgetPicker(match, d.eu_grant ?? null);
       }
     }
 

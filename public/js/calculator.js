@@ -384,16 +384,23 @@ const Calculator = (() => {
   function wrId(pid, category) { return pid + '::' + category; }
   function getFinancials(actualTotal) {
     const p = state.project;
-    if (!p) return { maxGrant:500000, euGrant:0, cofinPct:80, totalProject:0, ownFunds:0, indirectPct:7 };
+    if (!p) return { maxGrant:500000, euGrant:0, cofinPct:80, totalProject:0, ownFunds:0, indirectPct:7, hideCofin:false, hideIndirect:false };
+    // Flags "no aplica" (KA2 y similares): cuando están activos el campo se
+    // oculta en el diseño Y sale del cálculo (indirecto=0, financiado=100%).
+    const hideCofin = !!p.hide_cofin;
+    const hideIndirect = !!p.hide_indirect;
     const maxGrant = p.eu_grant || 500000;
-    const cofinPct = p.cofin_pct ?? 80;
-    const indirectPct = p.indirect_pct ?? 7;
+    const cofinPct = hideCofin ? 100 : (p.cofin_pct ?? 80);
+    const indirectPct = hideIndirect ? 0 : (p.indirect_pct ?? 7);
     // Calculate EU grant as cofinPct% of actual budget, capped at max grant
     const total = actualTotal || 0;
     const euGrant = Math.min(Math.round(total * cofinPct / 100), maxGrant);
     const ownFunds = total - euGrant;
-    const totalProject = maxGrant / (cofinPct / 100); // target total
-    return { maxGrant, euGrant, cofinPct, totalProject, ownFunds, indirectPct };
+    // target total: budget al que el EU grant alcanza su máximo.
+    // Si cofinPct = 0 (EU no cofinancia) la fórmula divide por cero → target infinito;
+    // en ese caso el target es simplemente el grant máximo.
+    const totalProject = cofinPct > 0 ? maxGrant / (cofinPct / 100) : maxGrant; // target total
+    return { maxGrant, euGrant, cofinPct, totalProject, ownFunds, indirectPct, hideCofin, hideIndirect };
   }
   function applyIndirectCosts(direct) {
     const { indirectPct } = getFinancials();
@@ -1776,7 +1783,7 @@ const Calculator = (() => {
 
     const directCosts = wpResults.reduce((s, w) => s + w.total, 0);
     const { indirect, total: subtotal } = applyIndirectCosts(directCosts);
-    const { maxGrant, euGrant, cofinPct, totalProject, ownFunds, indirectPct } = getFinancials(subtotal);
+    const { maxGrant, euGrant, cofinPct, totalProject, ownFunds, indirectPct, hideCofin, hideIndirect } = getFinancials(subtotal);
     const ownPct = 100 - cofinPct;
     const over = subtotal > totalProject;
 
@@ -1837,20 +1844,22 @@ const Calculator = (() => {
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(targetDirect)}</td>
                 <td class="py-2 text-right font-mono ${directCosts >= targetDirect ? 'text-green-600' : 'text-amber-600'}">${euros(directCosts - targetDirect)}</td>
               </tr>
+              ${!hideIndirect ? `
               <tr class="border-b border-outline-variant/15">
                 <td class="py-2 text-on-surface-variant">Indirectos (${indirectPct}%)</td>
                 <td class="py-2 text-right font-mono font-medium">${euros(indirect)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(targetIndirect)}</td>
                 <td class="py-2 text-right font-mono ${indirect >= targetIndirect ? 'text-green-600' : 'text-amber-600'}">${euros(indirect - targetIndirect)}</td>
-              </tr>
+              </tr>` : ''}
               <tr class="border-b border-outline-variant/30 font-bold">
                 <td class="py-2.5">Total presupuesto</td>
                 <td class="py-2.5 text-right font-mono">${euros(subtotal)}</td>
                 <td class="py-2.5 text-right font-mono">${euros(totalProject)}</td>
                 <td class="py-2.5 text-right font-mono ${isOver ? 'text-red-600' : 'text-amber-600'}">${euros(subtotal - totalProject)}</td>
               </tr>
+              ${!hideCofin ? `
               <tr class="border-b border-outline-variant/15">
-                <td class="py-2 text-blue-700">EU Grant (${cofinPct}%)</td>
+                <td class="py-2 text-blue-700">Financiado (${cofinPct}%)</td>
                 <td class="py-2 text-right font-mono font-medium text-blue-700">${euros(euGrant)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
                 <td class="py-2 text-right font-mono">${euros(euGrant - Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
@@ -1860,11 +1869,12 @@ const Calculator = (() => {
                 <td class="py-2 text-right font-mono font-medium text-amber-700">${euros(ownFunds)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(totalProject - Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
                 <td class="py-2 text-right font-mono">${euros(ownFunds - (totalProject - Math.min(totalProject * cofinPct / 100, maxGrant)))}</td>
-              </tr>
+              </tr>` : ''}
             </tbody>
           </table>
         </div>
 
+        ${!hideCofin ? `
         <!-- Financing bar -->
         <div class="px-5 pb-4 bg-surface-container-lowest">
           <div class="h-8 rounded-lg overflow-hidden flex">
@@ -1876,7 +1886,7 @@ const Calculator = (() => {
             <div class="bg-amber-600 flex items-center justify-center" style="width:${ownPct}%"><span class="text-xs font-bold text-white">Own ${ownPct}%</span></div>
             `}
           </div>
-        </div>
+        </div>` : ''}
       </div>`;
       })()}
 
@@ -1906,6 +1916,7 @@ const Calculator = (() => {
   }
 
   function buildResSummary(wpR, direct, indirect, subtotal, target, indPct) {
+    const hideIndirect = !!state.project?.hide_indirect;
     return `<div class="grid grid-cols-[1fr_280px] gap-5 items-start max-lg:grid-cols-1">
       <div class="space-y-2">
         ${wpR.map((wp, wi) => {
@@ -1916,7 +1927,7 @@ const Calculator = (() => {
               <span class="text-xs font-semibold" style="color:${wp.color}">${wpLabel(wp, wi)}</span>
               <span class="font-mono text-sm font-semibold">${euros(wpFull)}</span>
             </div>
-            <div class="text-[11px] text-on-surface-variant">${pct(wpFull, target)} · direct ${euros(wp.total)} + indirect ${euros(wpInd)}</div>
+            <div class="text-[11px] text-on-surface-variant">${pct(wpFull, target)} · direct ${euros(wp.total)}${hideIndirect ? '' : ` + indirect ${euros(wpInd)}`}</div>
             <div class="h-1 rounded bg-surface-container-high mt-1.5"><div class="h-full rounded transition-all" style="width:${pct(wpFull, target)};background:${wp.color}"></div></div>
           </div>`;
         }).join('')}
@@ -1925,13 +1936,14 @@ const Calculator = (() => {
         <h4 class="text-xs font-bold text-on-surface-variant uppercase mb-3">Totals</h4>
         ${wpR.map((wp, wi) => `<div class="flex justify-between py-1 text-xs border-b border-outline-variant/10"><span style="color:${wp.color}" class="font-medium">${wpLabel(wp, wi)}</span><span class="font-mono">${euros(wp.total)}</span></div>`).join('')}
         <div class="flex justify-between py-1.5 text-xs border-t border-outline-variant/30 mt-1 pt-2 text-on-surface-variant"><span>Direct costs</span><span class="font-mono">${euros(direct)}</span></div>
-        <div class="flex justify-between py-1 text-xs text-on-surface-variant"><span>Indirect ${indPct}%</span><span class="font-mono">+ ${euros(indirect)}</span></div>
+        ${hideIndirect ? '' : `<div class="flex justify-between py-1 text-xs text-on-surface-variant"><span>Indirect ${indPct}%</span><span class="font-mono">+ ${euros(indirect)}</span></div>`}
         <div class="flex justify-between py-2 font-bold text-sm border-t-2 border-outline-variant/30 mt-1"><span>Total</span><span class="font-mono">${euros(subtotal)}</span></div>
       </div>
     </div>`;
   }
 
   function buildResWP(wpR, direct, indirect, subtotal, indPct) {
+    const hideIndirect = !!state.project?.hide_indirect;
     return wpR.map((wp, wi) => {
       const wpInd = wp.total * (indPct/100);
       return `<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 mb-3" style="border-top:3px solid ${wp.color}">
@@ -1947,7 +1959,7 @@ const Calculator = (() => {
           </div>`;
         }).join('')}
         <div class="flex justify-between py-1.5 text-xs text-on-surface-variant mt-1"><span>Direct</span><span class="font-mono">${euros(wp.total)}</span></div>
-        <div class="flex justify-between py-1.5 text-xs text-on-surface-variant"><span>+ Indirect ${indPct}%</span><span class="font-mono">+ ${euros(wpInd)}</span></div>
+        ${hideIndirect ? '' : `<div class="flex justify-between py-1.5 text-xs text-on-surface-variant"><span>+ Indirect ${indPct}%</span><span class="font-mono">+ ${euros(wpInd)}</span></div>`}
         <div class="flex justify-between py-2 font-bold text-sm rounded px-2 mt-1" style="background:${wp.bg};color:${wp.color}"><span>Total ${wpLabel(wp, wi)}</span><span class="font-mono">${euros(wp.total + wpInd)}</span></div>
       </div>`;
     }).join('') + `
@@ -2132,6 +2144,7 @@ const Calculator = (() => {
 
     // ── Render EACEA table body for a given set of lines ──
     function eaceaTableBody(lines, c, indPctVal) {
+      const hideIndirect = !!state.project?.hide_indirect;
       const A1 = sumWorkers(lines.A1_workers);
       const A = A1;
       const C1 = sumItems(lines.C1_travel) + sumItems(lines.C1_accom) + sumItems(lines.C1_subs);
@@ -2206,12 +2219,13 @@ const Calculator = (() => {
                   <td class="py-2 px-3" colspan="3">TOTAL DIRECT COSTS (A+B+C+D)</td>
                   <td class="text-right py-2 px-3 font-mono">${euros(directTotal)}</td>
                 </tr>
+                ${hideIndirect ? '' : `
                 <tr class="border-b border-outline-variant/20">
                   <td class="py-2 px-3 font-semibold" colspan="3">E. Indirect costs ${indPctVal}%</td>
                   <td class="text-right py-2 px-3 font-mono font-semibold">${euros(indAmt)}</td>
-                </tr>
+                </tr>`}
                 <tr class="font-bold text-white" style="background:${c}">
-                  <td class="py-2.5 px-3" colspan="3">TOTAL COSTS (A+B+C+D+E)</td>
+                  <td class="py-2.5 px-3" colspan="3">TOTAL COSTS (A+B+C+D${hideIndirect ? '' : '+E'})</td>
                   <td class="text-right py-2.5 px-3 font-mono">${euros(grandTotal)}</td>
                 </tr>`;
     }

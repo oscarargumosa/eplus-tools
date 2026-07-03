@@ -61,7 +61,7 @@ async function getProject(req, res, next) {
 /* ── POST /v1/intake/projects ────────────────────────────────────── */
 async function createProject(req, res, next) {
   try {
-    const { name, type, description, start_date, duration_months, deadline, eu_grant, cofin_pct, indirect_pct } = req.body;
+    const { name, type, description, start_date, duration_months, deadline, eu_grant, cofin_pct, indirect_pct, hide_cofin, hide_indirect } = req.body;
 
     if (!name) {
       return res.status(400).json({
@@ -79,7 +79,9 @@ async function createProject(req, res, next) {
       deadline,
       eu_grant: eu_grant || 0,
       cofin_pct: cofin_pct || 0,
-      indirect_pct: indirect_pct || 0
+      indirect_pct: indirect_pct || 0,
+      hide_cofin: hide_cofin ? 1 : 0,
+      hide_indirect: hide_indirect ? 1 : 0
     };
 
     const project = await model.createProject(req.user.id, projectData);

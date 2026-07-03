@@ -12,6 +12,7 @@ async function findActivePrograms() {
   const sql = `
     SELECT id, program_id, name, action_type, deadline, start_date_min, start_date_max,
            duration_min_months, duration_max_months, eu_grant_max, cofin_pct, indirect_pct,
+           hide_cofin, hide_indirect, budget_options,
            min_partners, notes, call_summary, created_at
     FROM intake_programs
     WHERE active = 1
@@ -35,8 +36,8 @@ async function createProject(userId, projectData) {
   const sql = `
     INSERT INTO projects (
       id, user_id, name, type, description, proposal_lang, national_agency, start_date, duration_months,
-      deadline, eu_grant, cofin_pct, indirect_pct, status, created_at, updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'draft', ?, ?)
+      deadline, eu_grant, cofin_pct, indirect_pct, hide_cofin, hide_indirect, status, created_at, updated_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'draft', ?, ?)
   `;
 
   const params = [
@@ -53,6 +54,8 @@ async function createProject(userId, projectData) {
     projectData.eu_grant || 0,
     projectData.cofin_pct || 0,
     projectData.indirect_pct || 0,
+    projectData.hide_cofin ? 1 : 0,
+    projectData.hide_indirect ? 1 : 0,
     now,
     now
   ];
@@ -75,7 +78,7 @@ async function createProject(userId, projectData) {
 async function findProjectById(projectId, userId) {
   const sql = `
     SELECT id, user_id, name, full_name, type, description, proposal_lang, national_agency, start_date, duration_months,
-           deadline, eu_grant, cofin_pct, indirect_pct, status, is_sandbox, calc_state, created_at, updated_at
+           deadline, eu_grant, cofin_pct, indirect_pct, hide_cofin, hide_indirect, status, is_sandbox, calc_state, created_at, updated_at
     FROM projects
     WHERE id = ? AND user_id = ?
   `;
@@ -125,7 +128,7 @@ async function updateProjectFields(projectId, userId, updates) {
   // Allowed fields for update
   const allowedFields = [
     'name', 'full_name', 'type', 'description', 'proposal_lang', 'national_agency', 'start_date', 'duration_months',
-    'deadline', 'eu_grant', 'cofin_pct', 'indirect_pct', 'status', 'calc_state'
+    'deadline', 'eu_grant', 'cofin_pct', 'indirect_pct', 'hide_cofin', 'hide_indirect', 'status', 'calc_state'
   ];
 
   const fieldsToUpdate = {};

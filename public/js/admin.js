@@ -3032,16 +3032,36 @@ KEY EVALUATOR FOCUS:
             <span class="text-[9px] text-on-surface-variant/60">Brussels time (CET)</span>
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">EU Grant max</label>
-            <input type="number" id="cd-grant" value="${prog.eu_grant_max || ''}" step="1000" min="0" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
+            <div class="flex items-center justify-between gap-2">
+              <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">EU Grant max</label>
+              <label class="flex items-center gap-1 text-[9px] text-on-surface-variant whitespace-nowrap" title="Nº de presupuestos cerrados a elegir en esta convocatoria">
+                Nº presupuestos
+                <input type="number" id="cd-nbudgets" min="1" max="6" value="1" class="w-12 px-1.5 py-1 rounded-lg border border-outline-variant text-xs text-center focus:border-primary outline-none">
+              </label>
+            </div>
+            <div id="cd-grant-fields" class="flex flex-col gap-1.5"></div>
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Co-financing %</label>
-            <input type="number" id="cd-cofin" value="${prog.cofin_pct || ''}" min="0" max="100" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
+            <div class="flex items-center justify-between gap-2">
+              <label id="cd-cofin-title" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant ${prog.hide_cofin ? 'opacity-40' : ''}">Financiado %</label>
+              <label class="flex items-center gap-1 text-[9px] text-on-surface-variant cursor-pointer whitespace-nowrap" title="No aplica: se oculta en el diseño">
+                <input type="checkbox" id="cd-hide-cofin" ${prog.hide_cofin ? 'checked' : ''} class="accent-primary"
+                  onchange="const d=this.checked;const i=document.getElementById('cd-cofin');i.disabled=d;i.classList.toggle('opacity-40',d);document.getElementById('cd-cofin-title').classList.toggle('opacity-40',d);">
+                No aplica
+              </label>
+            </div>
+            <input type="number" id="cd-cofin" value="${prog.cofin_pct || ''}" min="0" max="100" ${prog.hide_cofin ? 'disabled' : ''} class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none ${prog.hide_cofin ? 'opacity-40' : ''}">
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Indirect costs %</label>
-            <input type="number" id="cd-indirect" value="${prog.indirect_pct || ''}" step="0.01" min="0" class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none">
+            <div class="flex items-center justify-between gap-2">
+              <label id="cd-indirect-title" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant ${prog.hide_indirect ? 'opacity-40' : ''}">Indirect costs %</label>
+              <label class="flex items-center gap-1 text-[9px] text-on-surface-variant cursor-pointer whitespace-nowrap" title="No aplica: se oculta en el diseño">
+                <input type="checkbox" id="cd-hide-indirect" ${prog.hide_indirect ? 'checked' : ''} class="accent-primary"
+                  onchange="const d=this.checked;const i=document.getElementById('cd-indirect');i.disabled=d;i.classList.toggle('opacity-40',d);document.getElementById('cd-indirect-title').classList.toggle('opacity-40',d);">
+                No aplica
+              </label>
+            </div>
+            <input type="number" id="cd-indirect" value="${prog.indirect_pct || ''}" step="0.01" min="0" ${prog.hide_indirect ? 'disabled' : ''} class="px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none ${prog.hide_indirect ? 'opacity-40' : ''}">
           </div>
           <div class="flex flex-col gap-1">
             <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Min partners</label>
@@ -3110,16 +3130,52 @@ KEY EVALUATOR FOCUS:
     // Bind action type picker modal
     document.getElementById('cd-action-type-btn')?.addEventListener('click', () => openActionTypePicker());
 
+    // ── Budget menu (EU Grant max, 1..N) ──
+    function buildGrantFields(n, values) {
+      const box = document.getElementById('cd-grant-fields');
+      if (!box) return;
+      let html = '';
+      for (let i = 0; i < n; i++) {
+        const v = (values[i] != null && values[i] !== '') ? values[i] : '';
+        const lbl = n > 1 ? `<span class="text-[9px] font-bold text-on-surface-variant/70 w-16 shrink-0">Presup. ${i + 1}</span>` : '';
+        html += `<div class="flex items-center gap-2">${lbl}<input type="number" id="cd-grant-${i}" value="${v}" step="1000" min="0" class="flex-1 px-3 py-2.5 rounded-xl border border-outline-variant text-sm focus:border-primary outline-none"></div>`;
+      }
+      box.innerHTML = html;
+    }
+    (function initGrantFields() {
+      let opts = prog.budget_options;
+      if (typeof opts === 'string') { try { opts = JSON.parse(opts); } catch { opts = null; } }
+      if (!Array.isArray(opts) || !opts.length) opts = [prog.eu_grant_max || ''];
+      const nb = document.getElementById('cd-nbudgets');
+      if (nb) nb.value = opts.length;
+      buildGrantFields(opts.length, opts);
+      nb?.addEventListener('input', () => {
+        const n = Math.max(1, Math.min(6, parseInt(nb.value) || 1));
+        const cur = [];
+        document.querySelectorAll('#cd-grant-fields input[type=number]').forEach(el => cur.push(el.value));
+        buildGrantFields(n, cur);
+      });
+    })();
+
     document.getElementById('cd-save')?.addEventListener('click', async () => {
       try {
+        const nBud = Math.max(1, parseInt(document.getElementById('cd-nbudgets')?.value) || 1);
+        const amounts = [];
+        for (let i = 0; i < nBud; i++) {
+          const el = document.getElementById('cd-grant-' + i);
+          if (el && el.value !== '') amounts.push(Number(el.value));
+        }
         await API.patch('/admin/data/programs/' + ev.programId, {
           name: document.getElementById('cd-name').value,
           action_type: document.getElementById('cd-action-type').value,
           deadline: document.getElementById('cd-deadline').value || null,
           deadline_time: document.getElementById('cd-deadline-time').value || '17:00',
-          eu_grant_max: document.getElementById('cd-grant').value || null,
+          eu_grant_max: amounts[0] ?? null,
+          budget_options: amounts.length > 1 ? amounts : null,
           cofin_pct: document.getElementById('cd-cofin').value || null,
           indirect_pct: document.getElementById('cd-indirect').value || null,
+          hide_cofin: document.getElementById('cd-hide-cofin').checked ? 1 : 0,
+          hide_indirect: document.getElementById('cd-hide-indirect').checked ? 1 : 0,
           min_partners: document.getElementById('cd-partners').value || 2,
           max_partners: document.getElementById('cd-partners-max').value || null,
           start_date_min: document.getElementById('cd-start-min').value || null,

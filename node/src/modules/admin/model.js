@@ -18,11 +18,17 @@ async function listPrograms() {
 async function upsertProgram(data, id) {
   if (id) {
     const allowed = ['program_id','name','action_type','deadline','deadline_time','start_date_min','start_date_max',
-      'duration_min_months','duration_max_months','eu_grant_max','cofin_pct','indirect_pct',
+      'duration_min_months','duration_max_months','eu_grant_max','cofin_pct','indirect_pct','hide_cofin','hide_indirect','budget_options',
       'min_partners','max_partners','notes','call_summary','active','form_template_id','intake_template','budget_template'];
     const sets = [], params = [];
     for (const k of allowed) {
-      if (k in data) { sets.push(`${k}=?`); params.push(data[k] ?? null); }
+      if (k in data) {
+        sets.push(`${k}=?`);
+        let v = data[k] ?? null;
+        // budget_options es columna JSON: mysql2 no serializa arrays, hazlo aquí.
+        if (k === 'budget_options' && v != null && typeof v !== 'string') v = JSON.stringify(v);
+        params.push(v);
+      }
     }
     if (!sets.length) return id;
     params.push(id);
@@ -913,11 +919,13 @@ async function duplicateProgram(sourceId) {
       `INSERT INTO intake_programs
         (id, program_id, name, action_type, deadline, start_date_min, start_date_max,
          duration_min_months, duration_max_months, eu_grant_max, cofin_pct, indirect_pct,
+         hide_cofin, hide_indirect,
          min_partners, notes, active, form_template_id)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,?)`,
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,?)`,
       [newId, newProgramId, newName, src.action_type, src.deadline,
        src.start_date_min, src.start_date_max, src.duration_min_months, src.duration_max_months,
        src.eu_grant_max, src.cofin_pct, src.indirect_pct,
+       src.hide_cofin, src.hide_indirect,
        src.min_partners, src.notes, src.form_template_id]
     );
 

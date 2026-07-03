@@ -255,7 +255,7 @@ const Budget = (() => {
               <p class="text-sm font-semibold text-on-surface mt-0.5">${fmt(ins.max_grant)} EUR</p>
             </div>
             <div>
-              <span class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant">Co-financing</span>
+              <span class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant">Financiado</span>
               <p class="text-sm font-semibold text-on-surface mt-0.5">${ins.cofin_pct}%</p>
             </div>
           </div>
