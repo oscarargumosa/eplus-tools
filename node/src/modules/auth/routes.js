@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const rateLimit  = require('express-rate-limit');
 const controller = require('./controller');
+const oidc       = require('./oidc');
 const { requireAuth } = require('../../middleware/auth');
 const validate = require('../../middleware/validate');
 
@@ -28,5 +29,9 @@ router.post('/refresh',  controller.refresh);
 router.get('/me',        requireAuth, controller.me);
 router.get('/session-status', controller.sessionStatus);
 router.post('/logout',   controller.logout);
+
+/* ── Login único (OIDC contra Authentik) ─────────────────────── */
+router.get('/oidc/login',    oidc.login);
+router.get('/oidc/callback', oidc.callback);
 
 module.exports = router;
