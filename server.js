@@ -52,6 +52,7 @@ const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || [
   'https://www.eufundingschool.com',
   'https://intake.eufundingschool.com',
   'https://app.eufundingschool.com',
+  'https://campus.eufundingschool.com', // Moodle: session-status para unificar CTA login
 ].join(','))
   .split(',')
   .map(s => s.trim())
