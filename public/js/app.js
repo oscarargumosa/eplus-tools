@@ -90,7 +90,7 @@ const App = (() => {
   function showAuth() {
     document.getElementById('auth-screen').classList.remove('hidden');
     document.getElementById('app-shell').classList.add('hidden');
-    // Topbar CTA: "Volver a la web" mientras no hay sesión
+    // Topbar CTA: "Iniciar sesión" mientras no hay sesión
     const back = document.getElementById('topbar-cta-back');
     const acct = document.getElementById('topbar-cta-account');
     if (back) back.style.display = '';
@@ -135,7 +135,7 @@ const App = (() => {
     document.getElementById('app-shell').classList.remove('hidden');
     const back = document.getElementById('topbar-cta-back');
     const acct = document.getElementById('topbar-cta-account');
-    if (back) back.style.display = '';      // "Volver a la web" disponible
+    if (back) back.style.display = '';      // "Iniciar sesión" disponible
     if (acct) acct.style.display = 'none';
     renderGuestUser();
   }
@@ -601,6 +601,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Volver al modo exploración desde la pantalla de auth ─── */
   document.getElementById('auth-back-explore')?.addEventListener('click', () => App.showPublic());
+
+  /* ── CTA "Iniciar sesión" del top bar (visitante sin sesión) ─ */
+  document.getElementById('topbar-cta-back')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    App.openAuth('login');
+  });
 
   /* ── Forgot/reset links + forms ───────────────────────────── */
   document.getElementById('link-forgot')?.addEventListener('click', (e) => {
