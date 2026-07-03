@@ -26,6 +26,8 @@ router.post('/forgot-password',       authLimiter, controller.forgotPassword);
 router.post('/reset-password',        authLimiter, controller.resetPassword);
 router.post('/refresh',  controller.refresh);
 router.get('/me',        requireAuth, controller.me);
+router.patch('/me',      requireAuth, validate({ name: 'required' }), controller.updateMe);
+router.post('/change-password', authLimiter, requireAuth, controller.changePassword);
 router.get('/session-status', controller.sessionStatus);
 router.post('/logout',   controller.logout);
 

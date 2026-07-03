@@ -126,7 +126,7 @@ tailwind.config = {
       <a id="topbar-cta-back" class="efs-topbar__login" href="#login">
         Iniciar sesión
       </a>
-      <a id="topbar-cta-account" class="efs-topbar__login" href="#my-projects" style="display:none;">
+      <a id="topbar-cta-account" class="efs-topbar__login" href="#account-profile" style="display:none;">
         Mi cuenta · <span id="topbar-user-name">…</span>
       </a>
     </div>
@@ -491,18 +491,49 @@ tailwind.config = {
           Atlas
         </a>
       </div>
+
+      <!-- ═══ WORKSPACE: MI CUENTA ═══ -->
+      <div id="sidebar-group-account" class="hidden">
+        <div class="mt-1 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-white/30">Mi Cuenta</div>
+        <a href="#account-profile"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="account-profile">
+          <span class="material-symbols-outlined text-[20px]">person</span>
+          Perfil
+        </a>
+        <a href="#account-security"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="account-security">
+          <span class="material-symbols-outlined text-[20px]">lock</span>
+          Seguridad
+        </a>
+        <a href="#account-billing"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="account-billing">
+          <span class="material-symbols-outlined text-[20px]">receipt_long</span>
+          Facturación
+        </a>
+        <a href="#account-preferences"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="account-preferences">
+          <span class="material-symbols-outlined text-[20px]">tune</span>
+          Preferencias
+        </a>
+      </div>
     </nav>
 
     <!-- User section at bottom -->
     <div class="p-3 border-t border-white/10">
       <div class="flex items-center gap-3 px-3 py-2">
-        <div id="user-avatar" class="w-8 h-8 rounded-full bg-on-primary-container flex items-center justify-center text-xs font-bold text-primary-container">
-          ?
-        </div>
-        <div class="flex-1 min-w-0">
-          <div id="user-name" class="text-sm font-semibold text-white truncate">Loading...</div>
-          <div id="user-email" class="text-[11px] text-white/50 truncate">...</div>
-        </div>
+        <a href="#account-profile" id="user-account-link" title="Mi cuenta" class="flex items-center gap-3 flex-1 min-w-0 rounded-lg hover:bg-white/5 -mx-1 px-1 py-1 transition-colors">
+          <div id="user-avatar" class="w-8 h-8 rounded-full bg-on-primary-container flex items-center justify-center text-xs font-bold text-primary-container flex-shrink-0">
+            ?
+          </div>
+          <div class="flex-1 min-w-0">
+            <div id="user-name" class="text-sm font-semibold text-white truncate">Loading...</div>
+            <div id="user-email" class="text-[11px] text-white/50 truncate">...</div>
+          </div>
+        </a>
         <button type="button" id="btn-logout" title="Sign out"
           class="text-white/50 hover:text-white transition-colors">
           <span class="material-symbols-outlined text-[20px]">logout</span>
@@ -732,6 +763,103 @@ tailwind.config = {
       </section>
 
       <!-- My Evaluations panel (Path B — proyectos antiguos solo para diagnóstico) -->
+      <!-- ═══ Mi Cuenta (área de usuario) ═══ -->
+      <section id="panel-account" class="panel">
+        <div class="max-w-3xl mx-auto py-8 px-4">
+
+              <!-- SECTION: Perfil -->
+              <div data-acct-section="profile" class="acct-section">
+                <div class="bg-white rounded-xl border border-outline-variant/30 p-6">
+                  <div class="flex items-center gap-5 mb-6 pb-6 border-b border-outline-variant/20">
+                    <div id="account-avatar" class="w-16 h-16 rounded-full bg-[#1b1464] flex items-center justify-center text-lg font-bold text-[#fbff12] flex-shrink-0">?</div>
+                    <div class="min-w-0">
+                      <div id="account-display-name" class="text-lg font-bold text-on-surface truncate">—</div>
+                      <div id="account-display-email" class="text-sm text-on-surface-variant truncate">—</div>
+                      <div class="flex items-center gap-2 mt-1.5">
+                        <span id="account-plan-badge" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-surface-container-low text-on-surface-variant">Plan Free</span>
+                        <span id="account-verified-badge" class="hidden inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-green-50 text-green-700">
+                          <span class="material-symbols-outlined text-[13px]">verified</span> Verificado
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <label class="block text-sm font-semibold text-on-surface mb-1.5">Nombre completo</label>
+                  <input id="account-name-input" type="text" maxlength="120"
+                    class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-4" />
+
+                  <label class="block text-sm font-semibold text-on-surface mb-1.5">Email</label>
+                  <input id="account-email-input" type="email" disabled
+                    class="w-full border border-outline-variant/40 rounded-lg px-3 py-2.5 text-sm bg-surface-container-low text-on-surface-variant mb-1" />
+                  <p class="text-xs text-on-surface-variant mb-5">El email no se puede cambiar por ahora. Escríbenos si lo necesitas.</p>
+
+                  <div class="flex items-center gap-3">
+                    <button id="account-save-profile" class="px-4 py-2.5 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">
+                      Guardar cambios
+                    </button>
+                    <span id="account-profile-msg" class="text-sm"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SECTION: Seguridad -->
+              <div data-acct-section="security" class="acct-section hidden">
+                <div class="bg-white rounded-xl border border-outline-variant/30 p-6 max-w-lg">
+                  <h2 class="text-base font-bold text-on-surface mb-1">Cambiar contraseña</h2>
+                  <p id="account-pw-hint" class="text-xs text-on-surface-variant mb-5">Elige una contraseña de al menos 8 caracteres, con una mayúscula y un número.</p>
+
+                  <div id="account-current-pw-wrap">
+                    <label class="block text-sm font-semibold text-on-surface mb-1.5">Contraseña actual</label>
+                    <input id="account-current-pw" type="password" autocomplete="current-password"
+                      class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-4" />
+                  </div>
+
+                  <label class="block text-sm font-semibold text-on-surface mb-1.5">Nueva contraseña</label>
+                  <input id="account-new-pw" type="password" autocomplete="new-password"
+                    class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-4" />
+
+                  <label class="block text-sm font-semibold text-on-surface mb-1.5">Repite la nueva contraseña</label>
+                  <input id="account-confirm-pw" type="password" autocomplete="new-password"
+                    class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-5" />
+
+                  <div class="flex items-center gap-3">
+                    <button id="account-save-pw" class="px-4 py-2.5 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">
+                      Actualizar contraseña
+                    </button>
+                    <span id="account-pw-msg" class="text-sm"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SECTION: Facturación -->
+              <div data-acct-section="billing" class="acct-section hidden">
+                <div class="bg-white rounded-xl border border-outline-variant/30 p-8 text-center">
+                  <div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center mx-auto mb-4">
+                    <span class="material-symbols-outlined text-3xl text-on-surface-variant/50">receipt_long</span>
+                  </div>
+                  <h2 class="text-base font-bold text-on-surface mb-1">Facturación</h2>
+                  <p class="text-sm text-on-surface-variant max-w-md mx-auto">Aquí aparecerán tus facturas y tu capacidad de diseño contratada. Todavía no tienes ningún cargo.</p>
+                </div>
+              </div>
+
+              <!-- SECTION: Preferencias -->
+              <div data-acct-section="preferences" class="acct-section hidden">
+                <div class="bg-white rounded-xl border border-outline-variant/30 p-6 max-w-lg">
+                  <h2 class="text-base font-bold text-on-surface mb-4">Preferencias</h2>
+                  <label class="flex items-start gap-3 cursor-pointer">
+                    <input id="account-pref-newsletter" type="checkbox" class="mt-1 w-4 h-4 accent-primary" />
+                    <span>
+                      <span class="block text-sm font-semibold text-on-surface">Novedades y convocatorias por email</span>
+                      <span class="block text-xs text-on-surface-variant">Recibe avisos de nuevas convocatorias y mejoras del producto.</span>
+                    </span>
+                  </label>
+                  <p class="text-xs text-on-surface-variant/70 mt-5">Más opciones (idioma, notificaciones) llegarán pronto.</p>
+                </div>
+              </div>
+
+        </div>
+      </section>
+
       <section id="panel-my-evaluations" class="panel">
         <div class="max-w-6xl mx-auto">
           <div class="flex items-center justify-between mb-8">
@@ -3092,6 +3220,7 @@ tailwind.config = {
 <script src="/js/evaluator.js"></script>
 <script src="/js/budget.js"></script>
 <script src="/js/voice-input.js"></script>
+<script src="/js/account.js?v=20260703b"></script>
 <script src="/js/sandbox.js"></script>
 
 <!-- ── Mini modal (reemplaza prompt/confirm nativos) ────────── -->
