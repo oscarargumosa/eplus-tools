@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "916692",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE AGRICULTURA Y GANADERÍA",
+  "nuts_codes": [
+    "ES43"
+  ],
+  "nuts_primary": "ES43",
+  "title": "Ayudas 2026 a la repoblación en explotaciones de ganado bovino, ovino y caprino de la CA de Extremadura, objeto de vaciado sanitario s/ Decreto 131/2026, de 10 de junio que las convoca",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    }
+  ],
+  "apply_url": "https://www.juntaex.es/w/0654323",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916692",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/",
+  "text_inicio": "A partir del día siguiente a la publicación de la convocatoria",
+  "text_fin": "Quince días hábiles a partir del día siguiente a la publicación de la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.109898",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 26 AYUDAS DESTINADAS A LOS COSTES DE PREVENCIÓN, CONTROL Y ERRADICACIÓN DE ENFERMEDADES ANIMALES O PLAGAS VEGETALES Y AYUDAS DESTINADAS A REPARAR LOS DAÑOS CAUSADOS POR ENFERMEDADES ANIMALES O PLAGAS VEGETALES"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-03T04:08:25.958Z"
+}

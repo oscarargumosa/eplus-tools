@@ -1,0 +1,64 @@
+{
+  "id": 1118327,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "IRUN",
+    "nivel3": "AYUNTAMIENTO DE IRUN"
+  },
+  "sedeElectronica": "www.irun.org/sede",
+  "codigoBDNS": "916766",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Subvenciones para la actividad \"Salidas Culturales\" dentro del programa Udan Gogoz",
+  "descripcionLeng": "Udan Gogoz programaren barruan \"Kultur Irteerak\" jarduerarako dirulaguntzak ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza general reguladora de las bases para la concesión de subvenciones mediante convocatoria por el Ayuntamiento de Irun",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gaobog/ castell/bog/2017/06/29/c1704626.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": "Al día siguiente de la publicación en el BOG",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1486000,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "4498800-4498800-RESOLUCION ALCALDIA_firmado.pdf",
+      "long": 224127,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "916654",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / AGENCIA VALENCIANA DE FOMENTO Y GARANTÍA AGRARIA",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Resolución de 1 de julio de 2026, del director de la Agencia Valenciana de Fomento y Garantía Agraria (AVFGA), por la que se deja sin efecto la Resolución de 4 de septiembre de 2025, del director de la Agencia Valenciana de Fomento y Garantía Agraria (AVF",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.6",
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha"
+    }
+  ],
+  "apply_url": "http://www.gva.es/portal/page/portal/inicio/procedimientos?id_proc=547",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916654",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/es/resultat-dogv?signatura=2024/6822",
+  "text_inicio": "El plazo de presentación de solicitudes será de un mes a partir del día siguiente al de la publicaci",
+  "text_fin": "El plazo de presentación de solicitudes será de un mes a partir del día siguiente al de la publicaci",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.115442",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA -  REG (UE) 702/2014, DE 25 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 17 AYUDAS PARA INVERSIONES RELACIONADAS CON LA TRANSFORMACIÓN Y LA COMERCIALIZACIÓN DE PRODUCTOS AGRÍCOLAS"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-03T04:08:25.951Z"
+}

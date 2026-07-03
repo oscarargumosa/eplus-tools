@@ -1,0 +1,88 @@
+{
+  "id": 1118234,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT PERE DE RIBES",
+    "nivel3": "AYUNTAMIENTO DE SANT PERE DE RIBES"
+  },
+  "sedeElectronica": "http://www.santperederibes.cat/seuelectronica",
+  "codigoBDNS": "916673",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para la concesión en régimen de concurrencia no competitiva para las ayudas municipales para la rehabilitación interior de viviendas vacías para incorporarlas a la bolsa de viviendas de alquiler del programa de mediación municipal de San",
+  "descripcionLeng": "Bases reguladores per a la concessió en règim de concurrència no competitiva per als ajuts municipals per a la rehabilitació interior d’habitatges buits per incorporar-los a la borsa d’habitatges de lloguer del programa de mediació municipal de Sant Pere ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de asistencia en establecimientos residenciales",
+      "codigo": "87.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión en régimen de concurrencia no competitiva para las ayudas municipales para la rehabilitación interior de viviendas vacías para incorporarlas a la bolsa de viviendas de alquiler del programa de mediación municipal de San",
+  "urlBasesReguladoras": "https://www.santperederibes.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "Día siguiente publicación BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485734,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases reg ayudas a la rehabilitación viviendas de alquiler 26_cast.pdf",
+      "long": 391894,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1485737,
+      "descripcion": "Extracto",
+      "nombreFic": "20260630_Extracte_BDNS_Cat_ Arranjament borsa 2025_2026.pdf",
+      "long": 205886,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1485735,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases reg ajuts a la rehabilitació habitatges per lloguer 26_cat.pdf",
+      "long": 485985,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1485736,
+      "descripcion": "Extracto",
+      "nombreFic": "20260630_Extracte_BDNS_Cast_ Arranjament borsa 2025_2026.pdf",
+      "long": 204542,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

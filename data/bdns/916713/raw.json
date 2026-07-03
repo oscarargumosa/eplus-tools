@@ -1,0 +1,64 @@
+{
+  "id": 1118274,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALBACETE",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALBACETE"
+  },
+  "sedeElectronica": "https://sede.dipualba.es/subvenciones/default.aspx?o=ae",
+  "codigoBDNS": "916713",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 232000,
+  "mrr": false,
+  "descripcion": "Decreto número 3091 de 26 de Junio de 2026 de la Presidencia de Diputación Provincial de Albacete, por el que se aprueba la Convocatoria Específica de Subvenciones para la Cofinanciación de Programas de Cooperación Internacional durante el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES421 - Albacete"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza Reguladora de las bases que rigen la convocatoria de subvenciones en el ámbito de los Servicios Sociales y Sanitarios de la Diputación Provincial de Albacete",
+  "urlBasesReguladoras": "http://www.dipualba.es/bop/ficheros/2024/4/BOP%204-24-P-8.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en el BOP",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485827,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Dto 3091 de 260626. Aprobación convocatoria Cooperación Internacional 2026.pdf",
+      "long": 576423,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

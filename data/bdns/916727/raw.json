@@ -1,0 +1,68 @@
+{
+  "id": 1118288,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PILOÑA",
+    "nivel3": "AYUNTAMIENTO DE PILOÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916727",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "La finalidad de estas subvenciones es promocionar la formación, práctica y desarrollo deportivo por parte de las personas y entidades en 3 líneas de actuación: Organización de eventos deportivos  Ayudas a clubes y Becas a deportistas. Ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    },
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladoras para promocionar la formación, práctica y desarrollo deportivo por parte de las personas y entidades en 3 líneas de actuación: Organización de eventos deportivos  Ayudas a clubes y Becas a deportistas. Ejercicio 2026",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2026/06/12/2026-04837.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación en el BOPA",
+  "textFin": "Transcurridos 20 días naturales a partir del siguiente a la publicación en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485905,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Borrador Convocatoria subvenciones deportivas COMPLETO.pdf",
+      "long": 587032,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

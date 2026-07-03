@@ -1,0 +1,72 @@
+{
+  "id": 1117920,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "POBLA, SA",
+    "nivel3": "AYUNTAMIENTO DE POBLA, SA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916359",
+  "fechaRecepcion": "2026-06-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3500,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CAMPAÑA DE FOMENTO DEL COMERCIO, EMPRESAS Y LAS INDUSTRIAS LOCALES DE SA POBLA VERANO 2026.",
+  "descripcionLeng": "BASES REGULADORES DE LA CAMPANYA DE FOMENT DEL COMERÇ, EMPRESES I LES INDÚSTRIES\nLOCALS DE SA POBLA ESTIU 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES532 - Mallorca"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenança General de Subvencions",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2025/106/1198026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-01",
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1484844,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260618_Resolució_DECRET 2026-1050 [Resolució PR_2026_952 - Aprobación de las bases y la convocatoria d.pdf",
+      "long": 772359,
+      "datMod": "2026-06-30",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1484843,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260630_Uns altres_BASES REGULADORAS DE LA CAMPAÑA DE FOMENTO DEL COMERCIO.pdf",
+      "long": 155189,
+      "datMod": "2026-06-30",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

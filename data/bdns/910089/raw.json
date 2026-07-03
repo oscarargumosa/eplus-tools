@@ -1,0 +1,80 @@
+{
+  "id": 1111650,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALLADOLID",
+    "nivel3": "AYUNTAMIENTO DE VALLADOLID"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910089",
+  "fechaRecepcion": "2026-06-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA DE PREMIOS A TRABAJOS DE FIN DE GRADO Y TRABAJOS DE FIN DE MÁSTER DE LOS ESTUDIANTES DE LA UNIVERSIDAD DE  VALLADOLID 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "PLAN ESTRATEGICO DE SUBVENCIONES 2026-2028",
+  "urlBasesReguladoras": "https://www.valladolid.gob.es/en/tablonoficial/ ayuntamiento-valladolid-tablon-oficial/planestrategico- subvenciones-2026-2028",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a su publicación",
+  "textFin": "Pendiente de publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1486075,
+      "descripcion": "Acuerdo Diligenciado",
+      "nombreFic": "18_Acuerdo_JGL_fdo.pdf",
+      "long": 351136,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1486076,
+      "descripcion": "Anexo I",
+      "nombreFic": "14.-Anexo I- fdo.pdf",
+      "long": 309716,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1468011,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01_Memoria fdo.pdf",
+      "long": 146552,
+      "datMod": "2026-06-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

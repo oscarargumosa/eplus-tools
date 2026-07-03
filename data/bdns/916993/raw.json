@@ -1,0 +1,76 @@
+{
+  "id": 1118554,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD PABLO DE OLAVIDE",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://www.upo.es/doctorado/es/estudiantes/becas-y-ayudas/",
+  "codigoBDNS": "916993",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 48000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas predoctorales con el objeto de promover la dimensión internacional de las tesis, destinadas a doctorandas y doctorandos de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES61 - ANDALUCIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas predoctorales con el objeto de promover la dimensión internacional de las tesis, destinadas a doctorandas y doctorandos de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.",
+  "urlBasesReguladoras": "https://www.upo.es/teo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación en BOJA",
+  "textFin": "Después de 20 días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487578,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_Ayudas_Predoctorales_EDUPO_25_26.report (2).pdf",
+      "long": 774669,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 216179,
+      "titulo": "Convocatoria de ayudas predoctorales con el objeto de promover la dimensión internacional de las tesis",
+      "tituloLeng": null,
+      "texto": "<p>Resolución de la Vicerrectora de Investigación, Transferencia y Doctorado de la Universidad Pablo de Olavide, de Sevilla de 7 de mayo de 2026, por la que se convocan ayudas predoctorales con el objeto de promover la dimensión internacional de las tesis, destinadas a doctorandas y doctorandos de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-05-25"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

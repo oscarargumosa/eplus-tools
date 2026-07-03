@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "916869",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CARTAGENA / AYUNTAMIENTO DE CARTAGENA",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": " SUBVENCION A COMUNIDADES PROPIETARIOS PARA REPARACIÓN DE DAÑOS ESTRUCTURALES EN EDIFICIOS RESIDENCIALES SITUADOS EN EL TÉRMINO MUNICIPAL DE CARTAGENA UNA VEZ EXTINGUIDOS LOS PLAZOS DE GARANTÍA PREVISTOS EN LA LEGISLACIÓN DE ORDENACIÓN DE LA EDIFICACIÓN",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-07-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 60000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "81.1",
+      "descripcion": "Servicios integrales a edificios e instalaciones"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916869",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://hacienda.cartagena.es/gestion/documentos/92042.pdf",
+  "text_inicio": "AL DIA SIGUIENTE DE SU PUBLICACION EN EL BORM",
+  "text_fin": "HASTA DIEZ DIAS DESPUES DE SU PUBLICACION",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-03T04:08:26.013Z"
+}

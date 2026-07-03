@@ -1,0 +1,97 @@
+{
+  "id": 1118273,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE POLÍTICA TERRITORIAL Y MEMORIA DEMOCRÁTICA",
+    "nivel3": "DIRECCIÓN GENERAL DE COOPERACIÓN AUTONÓMICA Y LOCAL"
+  },
+  "sedeElectronica": "aplicación informática “AURA - Subvenciones a EELL ante catástrofes naturales\", accesible desde la sede electrónica del Ministerio de Política Territorial y Memoria Democrática (https://mptmd.sede.gob.es/)",
+  "codigoBDNS": "916712",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 92017358.7,
+  "mrr": false,
+  "descripcion": "Subvenciones para la recuperación de daños en infraestructuras municipales y red viaria provincial e insular, previstas en el apartado tercero del Acuerdo del Consejo de Ministros de 7 de abril de 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    },
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    },
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    },
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    },
+    {
+      "descripcion": "ES23 - LA RIOJA"
+    },
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    },
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    },
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    },
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    },
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    },
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    },
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "Orden HAP/196/2015, de 21 de enero, por la que se aprueban las bases reguladoras de estas subvenciones",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2015/01/21/hap196",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "9:00 horas día siguiente al de la publicación de este anuncio en el BOE",
+  "textFin": "15:00 horas del día 30 de julio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485836,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "report_Res. SEPT Conv. ACM 07.04.2026 vdef.pdf",
+      "long": 398683,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

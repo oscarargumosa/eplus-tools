@@ -1,0 +1,64 @@
+{
+  "id": 1118392,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALICANTE",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALACANT/ALICANTE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916831",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 11000,
+  "mrr": false,
+  "descripcion": "Convocatoria de veinte Becas Residenciales para estudiantes universitarios, curso 2026/2027, en el Hogar Provincial Antonio Fernández Valenzuela, de la Excma. Diputación de Alicante",
+  "descripcionLeng": "Convocatòria de vint Beques Residencials per a estudiants universitaris, curs 2026/2027, a la Llar Provincial Antonio Fernández Valenzuela, de l'Excma. Diputació d'Alacant",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Becas Residenciales para estudiantes universitarios, curso 2026/2027, en el Hogar Provincial Antonio Fernández Valenzuela, de la Excma. Diputación de Alicante",
+  "urlBasesReguladoras": "https://diputacionalicante.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "fecha de publicación extracto en BOP",
+  "textFin": "un mes desde la fecha de publicación del extracto en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1486133,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260701_Resolución_DECRETO 2026-2962 [Resolución PR_2026_3588 - Circuito de Resolución de Órgano Unipersonal].pdf",
+      "long": 1730036,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

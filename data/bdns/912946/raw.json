@@ -1,0 +1,92 @@
+{
+  "id": 1114507,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT JOSEP DE SA TALAIA",
+    "nivel3": "AYUNTAMIENTO DE SANT JOSEP DE SA TALAIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "912946",
+  "fechaRecepcion": "2026-06-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 240000,
+  "mrr": false,
+  "descripcion": "EXTRACTO APROBACIÓN POR DECRETO DE ALCALDÍA Nº. 2026-2850, DE 03-06-26, CONVOCATORIA DE SUBVENCIONES EN MATERIA DE AYUDAS DE ALQUILER EN EL MUNICIPIO DE SANT JOSEP DE SA TALAIA 2025",
+  "descripcionLeng": "EXTRACTE APROBACIÓ PER DECRET D' ALCALDÍA Nº. 2026-2850, DE 03-06-26, CONVOCATÒRIA DE CONCESSIONS DE SUBVENCIONS EN MATÈRIA DE LLOGUER AL MUNICIPIO DE SANT JOSEP DE SA TALAIA 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES531 - Eivissa y Formentera"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "APROBACIÓN DEL PLAN ESTRATÉGICO DE SUBVENCIONES DEL AYUNTAMIENTO DE SANT JOSEP DE SA TALAIA PARA LOS EJERCICIOS 2024-2026",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2025/12127/703395/convocatoria-de-subvenciones-en-materia-de-accion-",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-06-26",
+  "fechaFinSolicitud": "2026-07-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1475617,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES DE SUBVENCIONES EN MATERIA DE ALQUILER.pdf",
+      "long": 411978,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1475624,
+      "descripcion": "APROBACIÓN DECRETO ALCALDIA",
+      "nombreFic": "DECRET 2026-2850.pdf",
+      "long": 935761,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1475618,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES SUBVENCIONS EN MATÈRIA DE  LLOGUER.pdf",
+      "long": 446820,
+      "datMod": "2026-06-15",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 216130,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12293/717027/extracto-de-la-aprobacion-por-decreto-de-alcaldia-",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

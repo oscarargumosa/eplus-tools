@@ -22,7 +22,7 @@ This topic requires the effective contribution of social sciences and humanities
 
 Proposals are expected to allocate at least 0.8% of their budget for engaging with the Horizon Europe-funded 'New European Bauhaus hub for results and impact' to share their intermediate and final results, findings and learning, as well as to contribute to impact assessment. Synergies should also be explored and, as appropriate, pursued with other relevant initiatives, such as the Europe’s Rail Joint Undertaking (EU-Rail)[10].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

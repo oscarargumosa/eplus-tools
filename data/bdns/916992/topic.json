@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "916992",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD PABLO DE OLAVIDE",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Convocatoria de ayudas para mejorar la calidad y el impacto científico de las tesis destinadas a doctorandos y doctorandas de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 42000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://www.upo.es/doctorado/es/estudiantes/becas-y-ayudas/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916992",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.upo.es/teo",
+  "text_inicio": "Día siguiente al de la publicación en BOJA",
+  "text_fin": "Después de 20 días naturales",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 216178,
+      "titulo": "Convocatoria de ayudas destinadas a doctorandos y doctorandas de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.",
+      "tituloLeng": null,
+      "texto": "<p>Convocatoria de ayudas para mejorar la calidad y el impacto científico de las tesis destinadas a doctorandos y doctorandas de la Escuela de Doctorado de la Universidad Pablo de Olavide, de Sevilla.</p>",
+      "textoLeng": null,
+      "url": null,
+      "cve": null,
+      "desDiarioOficial": "BOJA. B.O. DE LA JUNTA DE ANDALUCÍA",
+      "datPublicacion": "2026-03-09"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-03T04:08:26.039Z"
+}

@@ -1,0 +1,84 @@
+{
+  "id": 1118353,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GOZÓN",
+    "nivel3": "AYUNTAMIENTO DE GOZÓN"
+  },
+  "sedeElectronica": "https://ayuntamientodegozon.sede.e-ayuntamiento.es/",
+  "codigoBDNS": "916792",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA ACTIVIDADES SOCIALES, CULTURALES, DEPORTIVAS Y DE FESTEJOS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    },
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    },
+    {
+      "descripcion": "Actividades de juegos de azar y apuestas",
+      "codigo": "92"
+    },
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA  ACTIVIDADES SOCIALES, CULTURALES, DEPORTIVAS Y DE FESTEJOS",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2010/08/11/2010-17207.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la publicación de la convocatoria en el B.O. Principado de Asturias",
+  "textFin": "20 días naturales desde la publicación de la convocatoria en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1486026,
+      "descripcion": "BBRR_Bases Ordenanza subvenciones asociaciones",
+      "nombreFic": "Bases_ordenanza_subvenciones_asociaciones.pdf",
+      "long": 184347,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1486022,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución_convocatoria_2026.pdf",
+      "long": 1345920,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

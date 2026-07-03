@@ -1,0 +1,86 @@
+{
+  "id": 1118215,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "AGENCIA VALENCIANA DE FOMENTO Y GARANTÍA AGRARIA"
+  },
+  "sedeElectronica": "http://www.gva.es/portal/page/portal/inicio/procedimientos?id_proc=547",
+  "codigoBDNS": "916654",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000000,
+  "mrr": false,
+  "descripcion": "Resolución de 1 de julio de 2026, del director de la Agencia Valenciana de Fomento y Garantía Agraria (AVFGA), por la que se deja sin efecto la Resolución de 4 de septiembre de 2025, del director de la Agencia Valenciana de Fomento y Garantía Agraria (AVF",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN 8/2024, de 5 de julio de 2024, de la Conselleria de Agricultura, Ganadería y Pesca, por la que se aprueban las bases de ayudas a inversiones en transformación, comercialización o desarrollo de productos agroalimentarios, en el marco del Plan estraté",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2024/6822",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El plazo de presentación de solicitudes será de un mes a partir del día siguiente al de la publicaci",
+  "textFin": "El plazo de presentación de solicitudes será de un mes a partir del día siguiente al de la publicaci",
+  "ayudaEstado": "SA.115442",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.115442",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA -  REG (UE) 702/2014, DE 25 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 17 AYUDAS PARA INVERSIONES RELACIONADAS CON LA TRANSFORMACIÓN Y LA COMERCIALIZACIÓN DE PRODUCTOS AGRÍCOLAS"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485701,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "RES Convoc 2026_Inversiones_FEADER_23_6_2026_VALIDO_26-006100_trad.pdf",
+      "long": 372094,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    },
+    {
+      "id": 1485700,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RES Convoc 2026_Inversiones_FEADER_23_6_2026_VALIDO_firmado (1).pdf",
+      "long": 424912,
+      "datMod": "2026-07-02",
+      "datPublicacion": "2026-07-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
