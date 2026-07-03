@@ -533,8 +533,8 @@ Programme: ${p.type || 'Erasmus+'}
 Duration: ${p.duration_months || 24} months
 Start date: ${p.start_date || 'TBD'}
 EU Grant: €${Number(p.eu_grant || 500000).toLocaleString('en')}
-Co-financing: ${p.cofin_pct || 80}%
-Indirect costs: ${p.indirect_pct || 7}%
+Co-financing: ${p.cofin_pct ?? 80}%
+Indirect costs: ${p.indirect_pct ?? 7}%
 
 ═══ CONSORTIUM (${ctx.partners.length} organisations) ═══
 ${partnerBlock}
@@ -690,7 +690,7 @@ Programme: ${p.type || 'Erasmus+'}
 Duration: ${p.duration_months || 24} months
 Start date: ${p.start_date || 'TBD'}
 EU Grant: €${Number(p.eu_grant || 500000).toLocaleString('en')}
-Co-financing: ${p.cofin_pct || 80}%
+Co-financing: ${p.cofin_pct ?? 80}%
 
 ═══ CONSORTIUM (${ctx.partners.length} organisations — detailed profiles) ═══
 ${consortiumBlock}

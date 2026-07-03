@@ -243,8 +243,8 @@ async function getFullBudget(budgetId) {
       call_type: ctxRows[0]?.action_type || '',
       call_name: ctxRows[0]?.call_name || '',
       max_grant: proj?.eu_grant || budget.max_grant,
-      cofin_pct: proj?.cofin_pct || budget.cofin_pct,
-      indirect_pct: proj?.indirect_pct || budget.indirect_pct,
+      cofin_pct: proj?.cofin_pct ?? budget.cofin_pct,
+      indirect_pct: proj?.indirect_pct ?? budget.indirect_pct,
       worker_rates: wrRows,
     };
   }
@@ -298,7 +298,7 @@ async function createFromIntake(userId, projectId) {
     await conn.query(
       `INSERT INTO budget_projects (id, user_id, project_id, name, max_grant, cofin_pct, indirect_pct)
        VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      [budgetId, userId, projectId, proj.name || 'Presupuesto', proj.eu_grant || 0, proj.cofin_pct || 80, proj.indirect_pct || 7]
+      [budgetId, userId, projectId, proj.name || 'Presupuesto', proj.eu_grant || 0, proj.cofin_pct ?? 80, proj.indirect_pct ?? 7]
     );
 
     // 4. Get partners → create beneficiaries

@@ -386,8 +386,8 @@ const Calculator = (() => {
     const p = state.project;
     if (!p) return { maxGrant:500000, euGrant:0, cofinPct:80, totalProject:0, ownFunds:0, indirectPct:7 };
     const maxGrant = p.eu_grant || 500000;
-    const cofinPct = p.cofin_pct || 80;
-    const indirectPct = p.indirect_pct || 7;
+    const cofinPct = p.cofin_pct ?? 80;
+    const indirectPct = p.indirect_pct ?? 7;
     // Calculate EU grant as cofinPct% of actual budget, capped at max grant
     const total = actualTotal || 0;
     const euGrant = Math.min(Math.round(total * cofinPct / 100), maxGrant);

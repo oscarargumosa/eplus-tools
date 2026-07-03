@@ -469,8 +469,8 @@ const Intake = (() => {
         start_date: document.getElementById('intake-f-start').value || null,
         duration_months: parseInt(document.getElementById('intake-f-dur').value) || 24,
         eu_grant: selectedProgram ? Number(selectedProgram.eu_grant_max) : 0,
-        cofin_pct: selectedProgram ? (selectedProgram.cofin_pct || 80) : 80,
-        indirect_pct: selectedProgram ? (Number(selectedProgram.indirect_pct) || 7) : 7,
+        cofin_pct: selectedProgram ? (selectedProgram.cofin_pct ?? 80) : 80,
+        indirect_pct: selectedProgram ? (Number(selectedProgram.indirect_pct ?? 7)) : 7,
       };
       if (currentProjectId) {
         // Guardar proyecto
