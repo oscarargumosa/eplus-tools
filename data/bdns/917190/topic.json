@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "917190",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOCEJÓN / AYUNTAMIENTO DE MOCEJÓN",
+  "nuts_codes": [
+    "ES425"
+  ],
+  "nuts_primary": "ES425",
+  "title": "BASES CARROZAS SEPTIEMBRE 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-03",
+  "open_date": null,
+  "deadline": "2026-07-14",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.2",
+      "descripcion": "Otras actividades recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://mocejon.sedelectronica.es/preview-document/a77587fe-ae79-43e3-8be9-27206d0d2d80/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917190",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO 1",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO II BIS",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "BASES CARROZAS SEPTIEMBRE 2026",
+  "text_inicio": "AL DIA SIGUIENTE DE LA PUBLICACION EN BOP TOLEDO",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-04T04:09:45.082Z"
+}

@@ -1,0 +1,81 @@
+{
+  "id": 1118054,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSTANTÍ",
+    "nivel3": "AYUNTAMIENTO DE CONSTANTÍ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916493",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 44000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de incentivos a las empresas y nuevos emprendedores para la promoción del empleo, año 2026.",
+  "descripcionLeng": "Convocatòria per a la concessió d'incentius a les empreses i nous emprenedors per a la promoció de l'ocupació, any 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Desempleo",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones destinadas a la concesión de incentivos a las empresas y nuevos emprendedores para la promoción de la ocupación.",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/347377/modificacio-de-les-bases-reguladores-que-han-de-regir-la-concessio-de-subvencions-d-incentius-a-les-empreses-i-nous-emprenedors-per-a-la-promocio-de-l-ocupacio-al-municipi-aprovacio-inicial-ajuntament-constanti",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "a partir del día siguiente de la fecha de publicación de la presente convocatoria ",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1485328,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Certificat de l'acord de JGL 10-06-26] (1).pdf",
+      "long": 474542,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1485326,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificat de l'acord de JGL 10-06-26] (1).pdf",
+      "long": 474542,
+      "datMod": "2026-07-01",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

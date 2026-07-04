@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "916493",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSTANTÍ / AYUNTAMIENTO DE CONSTANTÍ",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "Convocatoria para la concesión de incentivos a las empresas y nuevos emprendedores para la promoción del empleo, año 2026.",
+  "title_lang": "es",
+  "summary": "Desempleo",
+  "status": "open",
+  "publication_date": "2026-07-01",
+  "open_date": null,
+  "deadline": "2026-12-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 44000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916493",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipta.cat/bopt/web/anunci/347377/modificacio-de-les-bases-reguladores-que-han-de-regir-la-concessio-de-subvencions-d-incentius-a-les-empreses-i-nous-emprenedors-per-a-la-promocio-de-l-ocupacio-al-municipi-aprovacio-inicial-ajuntament-constanti",
+  "text_inicio": "a partir del día siguiente de la fecha de publicación de la presente convocatoria ",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-04T04:09:44.881Z"
+}

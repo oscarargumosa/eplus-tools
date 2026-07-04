@@ -1,0 +1,72 @@
+{
+  "id": 1118812,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "INGENIO",
+    "nivel3": "AYUNTAMIENTO DE INGENIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917251",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "CONCESIÓN DE SUBVENCIONES A ASOCIACIONES DE VECINOS/AS Y COLECTIVOS SOCIALES, DIRIGIDAS A LA REALIZACIÓN DE PROYECTOS Y ACTUACIONES QUE FOMENTEN LA PROMOCIÓN DEL MOVIMIENTO ASOCIATIVO VECINAL Y LA PARTICIPACIÓN CIUDADANA, EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONCESIÓN DE SUBVENCIONES A ASOCIACIONES DE VECINOS/AS Y COLECTIVOS SOCIALES, DIRIGIDAS A LA REALIZACIÓN DE PROYECTOS Y ACTUACIONES QUE FOMENTEN LA PROMOCIÓN DEL MOVIMIENTO ASOCIATIVO VECINAL Y LA PARTICIPACIÓN CIUDADANA, EJERCICIO 2026.",
+  "urlBasesReguladoras": "www.ingenio.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "una vez se publique en el Bolketin Oficial de la Provincia",
+  "textFin": "15 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488211,
+      "descripcion": "Modelos de anexos a rellenar obligatorios para la subvencion",
+      "nombreFic": "ANEXOS.pdf",
+      "long": 7664313,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1488195,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BORRADOR BASES SUBVENCION 2026.docx",
+      "long": 743239,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -17,14 +17,15 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Internet of Things\",\"Digital Agenda\",\"Cybersecurity\",\"Data protection and privacy\",\"Security\",\"Police authorities\",\"Education and training of police authorities\",\"Internet Ethics\",\"Fight against crime and terrorism\",\"Equipments and sub systems\",\"training material\",\"security practitioners\",\"Security Union Strategy\",\"legal and ethical rules\",\"Best practices\",\"fundamental rights\",\"Internet of things (IoT)\",\"privacy and protection of personal data\",\"Police Authorities\",\"lawful evidence\",\"digital and physical threats\"]"
+    "[\"Internet of Things\",\"Digital Agenda\",\"Cybersecurity\",\"Data protection and privacy\",\"Artificial Intelligence\",\"Security\",\"Police authorities\",\"Education and training of police authorities\",\"Internet Ethics\",\"Fight against crime and terrorism\",\"Equipments and sub systems\",\"training material\",\"security practitioners\",\"Security Union Strategy\",\"legal and ethical rules\",\"Best practices\",\"fundamental rights\",\"Internet of things (IoT)\",\"privacy and protection of personal data\",\"Police Authorities\",\"lawful evidence\",\"digital and physical threats\"]"
   ],
   "crossCuttingPriorities": [
-    "DigitalAgenda"
+    "DigitalAgenda",
+    "AI"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-FCT-01-01.json",
   "documents": [],
-  "fetchedAt": "2026-07-03T04:05:03.015Z"
+  "fetchedAt": "2026-07-04T04:06:22.624Z"
 }

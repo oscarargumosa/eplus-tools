@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "916956",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AREA METROPOLITANA DE BARCELONA / ÀREA METROPOLITANA DE BARCELONA",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Concesión de subvenciones en el marco de las \"Bases para solicitar y otorgar subvenciones en el ámbito de la cooperación internacional y la educación para la ciudadanía global\" para proyectos que se inicien en el año 2026. (Exp.900708/2026).",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-07-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://www.amb.cat/es/web/amb/seu-electronica",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/916956",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento convocatoria en catalán",
+      "url": null
+    },
+    {
+      "label": "Documento convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://bop.diba.cat/anunci/3943442/aprovacio-definitiva-de-les-bases-per-sol-licitar-i-atorgar-subvencions-i-suports-economics-en-l-ambit-de-la-cooperacio-internacional-i-l-educacio-per-a-la-ciutadania-global-versio-en-catala-i-castella-area-metropolitana",
+  "text_inicio": "El día siguiente de la publicación del extracto de la convocatoria en el BOPB",
+  "text_fin": "20 días hábiles a contar desde el día siguiente de la publicación del extracto de la convocatoria en",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-04T04:09:45.021Z"
+}

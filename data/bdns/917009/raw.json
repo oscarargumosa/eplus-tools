@@ -1,0 +1,80 @@
+{
+  "id": 1118570,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CALAFELL",
+    "nivel3": "AYUNTAMIENTO DE CALAFELL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917009",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 41000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS MEDIANTE TARJETAS PRECARGADAS PARA LA ADQUISICIÓN DE PRODUCTOS ALIMENTARIOS Y DE HIGIENE PERSONAL Y DEL HOGAR DE PRIMERA NECESIDAD DEL AYUNTAMIENTO DE CALAFELL PARA EL AÑO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DELS AJUTS MITJANÇANT TARGETES PRECARREGADES PER A L’ADQUISICIÓ DE PRODUCTES ALIMENTARIS I D’HIGIENE PERSONAL I DE LA LLAR DE PRIMERA NECESSITAT DE L’AJUNTAMENT DE CALAFELL PER A L’ANY 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORES DE LES PRESTACIONS SOCIALS DE CARÀCTER ECONÒMIC I DELS AJUTS D?URGÈNCIA SOCIAL DE L?AJUNTAMENT DE CALAFELL",
+  "urlBasesReguladoras": "https://www.diputaciodetarragona.cat/ebop/index.php?op=dwn&tipus=i&data=20240621&anyp=2024&num=05453&v=i",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Desde el dia siguiente a la publicación en el BOPT",
+  "textFin": "Hasta el 30 de noviembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487620,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria_ayudas_tarjetas_2026_Castellano.pdf",
+      "long": 158261,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487622,
+      "descripcion": "ANUNCI-ANUNCIO-PUBLICACIÓN_CONVOCATORIA_AUS_TARJETES_2026",
+      "nombreFic": "ANUNCI_ANUNCIO_exposicio_publica_convo_TARGETES_2026.pdf",
+      "long": 149547,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487621,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria_ajuts_targetes_2026_Català.pdf",
+      "long": 150789,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

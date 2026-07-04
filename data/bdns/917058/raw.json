@@ -1,0 +1,76 @@
+{
+  "id": 1118619,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LAMA, A",
+    "nivel3": "AYUNTAMIENTO DE LAMA, A"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917058",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS PARA El FOMENTO DE LA NATALIDAD Y El EMPADRONAMIENTO. EJERCICIO 2026",
+  "descripcionLeng": "CONVOCATORIA PARA A CONCESIÓN DE SUBVENCIÓNS EN MATERIA DE AXUDAS PARA O FOMENTO DA NATALIDADE E O EMPADROAMENTO. EXERCICIO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS PARA El FOMENTO DE LA NATALIDAD Y El EMPADRONAMIENTO. EJERCICIO 2026",
+  "urlBasesReguladoras": "https://concellodalama.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "01/09/2026",
+  "textFin": "31/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487723,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260623_Comunicación_Convocatoria_05. Anexo.I. Convocatoria concesión Axudas para o fomento da natalidade e o empadroamento [Publicación BDNS].pdf",
+      "long": 212024,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487722,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260623_Comunicación_Convocatoria_06. Anexo I. [En castellano] Convocatoria concesión de ayudas para el fomento de la natalidad y el empadronamiento.pdf",
+      "long": 235177,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

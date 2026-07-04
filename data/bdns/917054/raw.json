@@ -1,0 +1,75 @@
+{
+  "id": 1118615,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BILBAO",
+    "nivel3": "AYUNTAMIENTO DE BILBAO"
+  },
+  "sedeElectronica": "www.bilbao.eus",
+  "codigoBDNS": "917054",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 150055,
+  "mrr": false,
+  "descripcion": "2026_SUBVENCIONES PARA LA RENOVACION/REURBANIZACION DE ESPACIOS PRIVADOS QUE TENGAN IMPUESTA LA CONDICIÓN DE \"USO PUBLICO\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Ordenanza General Reguladora de las Bases para la Concesión de Subvenciones mediante Convocatoria por el Ayuntamiento de Bilbao y sus Organismos y Entidades de Derecho Público",
+  "urlBasesReguladoras": "http://www.bizkaia.eus/lehendakaritza/Bao_bob/2016/07/20160720a138.pdf#page=43",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del extracto en el BOB",
+  "textFin": "30 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487720,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "TEXTO COMPLETO EUSKERA.pdf",
+      "long": 459150,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487719,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "TEXTO COMPLETO CASTELLANO.pdf",
+      "long": 456618,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

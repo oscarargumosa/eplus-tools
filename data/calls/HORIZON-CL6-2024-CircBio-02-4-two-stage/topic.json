@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "two-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Environmental engineering\",\"Wastewater treatment\",\"Circular economy\",\"Digital Agenda\",\"Water technology\",\"International Cooperation\",\"Wastewater management\",\"Environmental sciences (social aspects)\",\"Water distribution\",\"Water policy\",\"Water economics\",\"Social sciences and humanities\",\"Urban water management\",\"Integrated management of water\",\"Societal Engagement\",\"Water management\",\"Catchment scale water management\",\"digital technologies\",\"market uptake\",\"circular economy\",\"developing countries\",\"integration of decentralised and centralised approaches\",\"barriers\",\"sewage and waste sludge\",\"business models\",\"water security\",\"co-design and co-creation process\",\"water supply and sanitation\",\"circular solutions\",\"risk analysis\",\"decentralised approaches\",\"waste and wastewater treatment\",\"stormwater management\",\"water pollution\",\"policy makers\",\"water consumption\",\"water supply system\",\"public private partnerships\"]"
+    "[\"Environmental engineering\",\"Wastewater treatment\",\"Digital Agenda\",\"Circular economy\",\"Water technology\",\"International Cooperation\",\"Wastewater management\",\"Environmental sciences (social aspects)\",\"Water distribution\",\"Water policy\",\"Water economics\",\"Social sciences and humanities\",\"Urban water management\",\"Integrated management of water\",\"Societal Engagement\",\"Water management\",\"Catchment scale water management\",\"digital technologies\",\"market uptake\",\"circular economy\",\"developing countries\",\"integration of decentralised and centralised approaches\",\"barriers\",\"sewage and waste sludge\",\"business models\",\"water security\",\"co-design and co-creation process\",\"water supply and sanitation\",\"circular solutions\",\"risk analysis\",\"decentralised approaches\",\"waste and wastewater treatment\",\"stormwater management\",\"water pollution\",\"policy makers\",\"water consumption\",\"water supply system\",\"public private partnerships\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda",
@@ -29,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CircBio-02-4-two-stage.json",
   "documents": [],
-  "fetchedAt": "2026-07-03T04:05:02.985Z"
+  "fetchedAt": "2026-07-04T04:06:22.672Z"
 }

@@ -1,0 +1,84 @@
+{
+  "id": 1118663,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "INSTITUTO VALENCIANO DE COMPETITIVIDAD EMPRESARIAL (IVACE)"
+  },
+  "sedeElectronica": "http://www.ivace.es",
+  "codigoBDNS": "917102",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 400000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de 1 de julio de 2026, de la Presidencia del Instituto Valenciano de Competitividad Empresarial (IVACE), por la que se convocan ayudas para la electrificación de embarcaciones, con cargo al presupuesto del ejercicio 2026.",
+  "descripcionLeng": "RESOLUCIÓ d'1 de juliol de 2026, de la Presidència de l’Institut Valencià de Competitivitat Empresarial (IVACE), per la qual es convoquen ajudes per a l'electrificació d'embarcacions, amb càrrec al pressupost de l'exercici 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Resolución 15 de junio de 2026, de la Presidencia, por la que se aprueban las bases reguladoras para la concesión de ayudas del IVACE en materia de electrificación de embarcaciones",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2026/06/23/pdf/2026_20989_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-09",
+  "fechaFinSolicitud": "2026-07-28",
+  "textInicio": "Dia siguiente publicación del extracto en el DOGV",
+  "textFin": "28/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487822,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatoria Electrificacio Embarcacions.pdf",
+      "long": 377993,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487821,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria Electrificacion Embarcaciones 2026.pdf",
+      "long": 1587227,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

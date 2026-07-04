@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Digital services\",\"Ocean Observation and Monitoring\",\"Mediterranean\",\"Risks assessment, modelling and impact reduction\",\"North Sea\",\"Sea-Basin Strategies\",\"Ocean sustainability and blue economy\",\"International Cooperation\",\"Ocean observing systems and operational forecastin\",\"EOSC and FAIR data\",\"Oceanography (physical, chemical, biological, geol\",\"Baltic Sea\",\"Digital Agenda\",\"Research\",\"Atlantic Ocean\",\"Ocean and Climate Change\",\"Adriatic and Ionian Seas\",\"Mediterranean Sea\",\"International Ocean Governance\",\"Black Sea\",\"Destination Earth\",\"ocean observation\",\"UN Decade of Ocean Science\",\"Copernicus\",\"Mission “Adaptation to Climate Change”\",\"Mission “Restore our Ocean and waters by 2030”\",\"Essential Climate Variables\",\"Digital and Green Transitions\",\"healthy ocean and seas\",\"Digital Twin Ocean\",\"EU regional seas\"]"
+    "[\"Digital services\",\"Ocean Observation and Monitoring\",\"Mediterranean\",\"Risks assessment, modelling and impact reduction\",\"North Sea\",\"Sea-Basin Strategies\",\"Ocean sustainability and blue economy\",\"International Cooperation\",\"Ocean observing systems and operational forecastin\",\"EOSC and FAIR data\",\"Oceanography (physical, chemical, biological, geol\",\"Baltic Sea\",\"Digital Agenda\",\"Research\",\"Atlantic Ocean\",\"Ocean and Climate Change\",\"Mediterranean Sea\",\"International Ocean Governance\",\"Black Sea\",\"Adriatic and Ionian Seas\",\"Destination Earth\",\"ocean observation\",\"UN Decade of Ocean Science\",\"Copernicus\",\"Mission “Adaptation to Climate Change”\",\"Mission “Restore our Ocean and waters by 2030”\",\"Essential Climate Variables\",\"Digital and Green Transitions\",\"healthy ocean and seas\",\"Digital Twin Ocean\",\"EU regional seas\"]"
   ],
   "crossCuttingPriorities": [
     "MEDIT",
@@ -30,5 +30,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CLIMATE-01-6.json",
   "documents": [],
-  "fetchedAt": "2026-07-03T04:05:02.948Z"
+  "fetchedAt": "2026-07-04T04:06:22.698Z"
 }

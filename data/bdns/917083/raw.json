@@ -1,0 +1,64 @@
+{
+  "id": 1118644,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CARTAGENA",
+    "nivel3": "AYUNTAMIENTO DE CARTAGENA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917083",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 190000,
+  "mrr": false,
+  "descripcion": "CONCESION DE SUBVENCIONES A ASOCIACIONES DE VECINOS POR EL PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA PARA EL FOMENTO DE LA PARTICIPACION CIUDADANA Y EL ASOCIACIONISMO, ASI COMO PARA EL MANTENIMENTO EN LOS LOCALES SOCIALES (GASTOS CORRIENTES)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "SUBVENCION PARA EL CUMPLIMIENTO DE LOS FINES SOCIALES. LEY 38/2003, DE 17 DE NOVIEMBRE, GENERAL DE SUBVENCIONES. EL PRESUPUESTO GENERAL MUNICIPAL DEL AÑO 2026 Y LAS BASES DE EJECUCION DEL PRESUPUESTO DEL AÑO 2026",
+  "urlBasesReguladoras": "https://hacienda.cartagena.es/gestion/documentos/92042.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE SU PUBLICACION EN EL BORM",
+  "textFin": "10 DIAS HABILES A CONTAR DESDE EL DIA SIGUIENTE AL DE LA PUBLICACION EN EL BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487791,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RC 15262.pdf",
+      "long": 196759,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

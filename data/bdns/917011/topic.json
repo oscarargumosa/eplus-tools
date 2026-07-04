@@ -1,0 +1,118 @@
+{
+  "source": "bdns",
+  "source_id": "917011",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ETXEBARRI / AYUNTAMIENTO DE ETXEBARRI",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Subvención de proyectos e ideas innovadoras 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-03",
+  "open_date": null,
+  "deadline": "2026-09-01",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "73",
+      "descripcion": "Actividades de publicidad, estudios de mercado y relaciones públicas "
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "18",
+      "descripcion": "Artes gráficas y reproducción de soportes grabados"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "74",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "80",
+      "descripcion": "Servicios de investigación y seguridad"
+    },
+    {
+      "codigo": "35",
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado"
+    },
+    {
+      "codigo": "K",
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "www.etxebarri.eus",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917011",
+  "documents": [
+    {
+      "label": "Anexo II - Modalidad 2 - JÓVENES",
+      "url": null
+    },
+    {
+      "label": "Anexo I - Modalidad 1 - PYMES / MICROPYMES / STARTUP Y PROFESIONALES",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.etxebarri.eus/es-ES/Ayuntamiento/Normativa-municipal/Documents/15_Concesion%20de%20Subvenciones%20Municipales.pdf",
+  "text_inicio": "El día siguiente a la publicación en el BOB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-04T04:09:45.031Z"
+}

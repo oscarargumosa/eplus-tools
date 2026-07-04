@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "917009",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CALAFELL / AYUNTAMIENTO DE CALAFELL",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS MEDIANTE TARJETAS PRECARGADAS PARA LA ADQUISICIÓN DE PRODUCTOS ALIMENTARIOS Y DE HIGIENE PERSONAL Y DEL HOGAR DE PRIMERA NECESIDAD DEL AYUNTAMIENTO DE CALAFELL PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-03",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 41000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917009",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANUNCI-ANUNCIO-PUBLICACIÓN_CONVOCATORIA_AUS_TARJETES_2026",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.diputaciodetarragona.cat/ebop/index.php?op=dwn&tipus=i&data=20240621&anyp=2024&num=05453&v=i",
+  "text_inicio": "Desde el dia siguiente a la publicación en el BOPT",
+  "text_fin": "Hasta el 30 de noviembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-04T04:09:45.030Z"
+}

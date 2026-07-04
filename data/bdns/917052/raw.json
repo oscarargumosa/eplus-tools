@@ -1,0 +1,88 @@
+{
+  "id": 1118613,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT CUGAT DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE SANT CUGAT DEL VALLÈS"
+  },
+  "sedeElectronica": "https://seu.santcugat.cat/seu/Procedimientos.aspx",
+  "codigoBDNS": "917052",
+  "fechaRecepcion": "2026-07-03",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Acuerdo del Ajuntament de Sant Cugat del Vallès número JGL/24/2026, del 16/06/2026, para la aprobación de la convocatoria de la 25a edición del Premio de Poesía Sant Cugat a la Memoria de Gabriel Ferrater (exp. 19052/2026)",
+  "descripcionLeng": "Acord de l'Ajuntament de Sant Cugat del Vallès número JGL/24/2026, del 16/06/2026, per a l'aprovació de la convocatòria de la 25a edició del Premi de Poesia Sant Cugat a la Memòria de Gabriel Ferrater (exp. 19052/2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "APROVACIÓ DEFINITIVA DE L'ORDENANÇA MUNICIPAL DE SUBVENCIONS Data: 02/06/2009",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/1204565/aprovacio-definitiva-de-l-ordenanca-municipal-de-subvencions-ajuntament-de-sant-cugat-del-valles",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-03",
+  "fechaFinSolicitud": "2027-01-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1487707,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Acuerdo JGL- Aprobación Convocatoria Premio Poesía Gabriel Ferrater- 19052-2026.pdf",
+      "long": 790640,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487706,
+      "descripcion": "Bases generales Premio Poesía Gabriel Ferrater",
+      "nombreFic": "bases premio Poesía castellano.pdf",
+      "long": 421867,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487705,
+      "descripcion": "Bases generals Premi Poesia Gabriel Ferrater",
+      "nombreFic": "Acord JGL- Aprovació BASES Premi Poesia Gabriel Ferrater- 33938-2025.pdf",
+      "long": 710054,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    },
+    {
+      "id": 1487704,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Acord JGL- Aprovació Convocatòria Premi Poesia Gabriel Ferrater- 19052-2026.pdf",
+      "long": 611454,
+      "datMod": "2026-07-03",
+      "datPublicacion": "2026-07-03"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
