@@ -11,9 +11,14 @@
 
 ## 0. Qué es la app
 
-Una **herramienta de trabajo online** = el **panel de mando de la empresa** para gestionar los
-proyectos ("etiquetas madre"). Vive en el VPS. Objetivo: dar de alta unidades de trabajo, aprovisionar
-su ecosistema automáticamente, y que Óscar (y los admin) consulten y gestionen todo desde un sitio.
+**Gestión del Ecosistema** (repo `gestion-ecosistema`) = el **panel de mando de la empresa**, online,
+en el VPS. Es una **plataforma multi-herramienta** que irá creciendo. La **primera herramienta** es
+**Etiquetas Madre**; vendrán más. Objetivo: dar de alta unidades de trabajo, aprovisionar su
+ecosistema automáticamente, y que Óscar (y los admin) consulten y gestionen todo desde un sitio.
+
+> **Nombres:** *Gestión del Ecosistema* = la app (el contenedor). *Etiqueta madre* = una unidad de
+> trabajo/proyecto (concepto SIN cambios). *Etiquetas Madre* = la herramienta #1 que gestiona esas
+> unidades. La app tendrá más herramientas además de esta.
 
 ---
 
@@ -47,9 +52,9 @@ Igual que eplus-tools:
 
 Un **listado** de todas las etiquetas existentes + botón **Crear etiqueta**.
 
-- **Semilla:** al arrancar solo existe **una** etiqueta, `etiquetas-madre` (el repo que ya existe en
-  la cuenta de GitHub de `oscarargumosa`). Desde ahí se crean las demás.
-  *(Más adelante se puede importar el inventario de repos existentes de [[ETIQUETAS_MADRE.md]] §9.)*
+- **Semilla:** el repo de la app es `gestion-ecosistema`. La herramienta arranca **listando las
+  etiquetas madre existentes** (los repos de Óscar en GitHub) y desde ahí se crean nuevas.
+  *(Se puede importar el inventario de repos de [[ETIQUETAS_MADRE.md]] §9.)*
 
 ## 5. La cascada al CREAR una etiqueta
 
