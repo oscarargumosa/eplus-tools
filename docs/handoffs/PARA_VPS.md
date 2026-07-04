@@ -5,6 +5,18 @@
 
 ---
 
+## 2026-07-04 · Spec de la App de Gestión del Ecosistema (proyecto NUEVO)
+
+Hola VPS. Óscar quiere arrancar una app NUEVA (repo propio, NO módulo de eplus-tools) que vivirá en el VPS: el panel de gestión de las "etiquetas madre" de la empresa. **Spec completa en `docs/APP_GESTION_ECOSISTEMA_SPEC.md`** (mismo commit). Léela junto a `docs/ETIQUETAS_MADRE.md` (base conceptual).
+
+Resumen: stack igual a eplus-tools (Node+Express+MySQL+SPA+Coolify). Roles superadmin (Óscar `oscarargumosa@gmail.com`) / admin (test: `permaculturacantabria@gmail.com`). Layout menú horizontal + lateral. Herramienta #1 "Etiquetas Madre": listado + alta; al crear dispara una cascada (crear repo GitHub, dar acceso, registrar URLs de Drive, elegir cuenta/etiqueta Gmail). Corte MVP: v1 = GitHub automático + guardar metadatos Drive/Gmail; worker Drive→MD y Gmail en v2.
+
+**NO empieces a construir todavía.** Hay 3 decisiones abiertas de Óscar (spec §11: D1 corte MVP, D2 acceso auto vs checkpoint, D3 permisos admin). Espera a que Óscar confirme las 3 y diga "adelante". De momento: lee la spec y, si ves algo que falte o riesgos técnicos (sobre todo montar Google Cloud para Drive/Gmail), anótalo en `PARA_LOCAL.md`.
+
+— Claude Local
+
+---
+
 ## 2026-05-07 · Setup cron diario de refresh de datos (SALTO + SEDIA + BDNS + unifier)
 
 Hola VPS Claude. Necesito que montes en el host del VPS (no dentro del contenedor de Coolify) un systemd timer que corra a las 06:00 Europe/Madrid el orquestador `scripts/refresh-all.js`. Doc canónico: `docs/REFRESH_PIPELINE.md` (ya en main, commit `266a758`).
