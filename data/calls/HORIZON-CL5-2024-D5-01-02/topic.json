@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Digital Agenda\",\"Clean vehicles\",\"Sustainable transport - general\",\"Co-programmed European Partnerships\",\"modularity\",\"modular powertrain platforms\",\"new materials\",\"miniaturisation\",\"fast charging\",\"cost reduction\",\"high voltage powertrain architecture\",\"reliability\",\"high efficiency electric vehicles\",\"testing and validation procedures\",\"electromagnetic compatibility\",\"flexibility\",\"circular economy\",\"power semiconductors\",\"standards\"]"
+    "[\"Clean vehicles\",\"Sustainable transport - general\",\"Digital Agenda\",\"Co-programmed European Partnerships\",\"fast charging\",\"standards\",\"new materials\",\"cost reduction\",\"high efficiency electric vehicles\",\"miniaturisation\",\"testing and validation procedures\",\"flexibility\",\"reliability\",\"high voltage powertrain architecture\",\"electromagnetic compatibility\",\"modularity\",\"modular powertrain platforms\",\"circular economy\",\"power semiconductors\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda",
@@ -27,5 +27,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-02.json",
   "documents": [],
-  "fetchedAt": "2026-07-04T04:06:22.851Z"
+  "fetchedAt": "2026-07-05T04:04:40.134Z"
 }

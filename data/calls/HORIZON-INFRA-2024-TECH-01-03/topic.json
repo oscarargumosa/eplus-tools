@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-06",
   "deadline": "2024-03-12",
   "deadlineModel": "single-stage",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-INFRA-2024-TECH-01-03.json",
   "documents": [],
-  "fetchedAt": "2026-07-04T04:06:22.820Z"
+  "fetchedAt": "2026-07-05T04:04:40.113Z"
 }
