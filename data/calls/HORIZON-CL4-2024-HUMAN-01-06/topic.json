@@ -17,16 +17,17 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Machine learning, statistical data processing and\",\"Linked open data\",\"Ethics in engineering and technologies\",\"Artificial Intelligence\",\"Web and information systems, database systems, inf\",\"Gender in computer sciences\",\"Open data\",\"Wearable technologies\",\"Multi media\",\"Ontologies, neural networks, genetic programming,\",\"Artificial intelligence, intelligent systems, mult\",\"Computer sciences, information science and bioinfo\",\"Gender in engineering and technology\",\"Networks (communication networks, sensor networks,\",\"Cognitive science\",\"Computer graphics, computer vision, multi media, c\",\"Semantic web technologies\",\"Co-programmed European Partnerships\",\"Human computer interaction\",\"Data visualization\",\"Software engineering, operating systems, computer\",\"Computer graphics\",\"Computer vision\",\"Data curation\",\"Natural language processing\",\"Digital Agenda\",\"Machine translation\",\"AI explainability and accountability\",\"AI robustness\",\"AI transparency and autonomy\",\"AI performance\"]"
+    "[\"Computer graphics, computer vision, multi media, c\",\"Open data\",\"Computer vision\",\"Gender in engineering and technology\",\"Multi media\",\"Semantic web technologies\",\"Social sciences and humanities\",\"Data visualization\",\"Machine translation\",\"Artificial intelligence, intelligent systems, mult\",\"Computer sciences, information science and bioinfo\",\"Machine learning, statistical data processing and\",\"Co-programmed European Partnerships\",\"Natural language processing\",\"Wearable technologies\",\"Ontologies, neural networks, genetic programming,\",\"Computer graphics\",\"Ethics in engineering and technologies\",\"Human computer interaction\",\"Artificial Intelligence\",\"Web and information systems, database systems, inf\",\"Software engineering, operating systems, computer\",\"Cognitive science\",\"Linked open data\",\"Digital Agenda\",\"Networks (communication networks, sensor networks,\",\"Data curation\",\"Gender in computer sciences\",\"AI robustness\",\"AI performance\",\"AI explainability and accountability\",\"AI transparency and autonomy\"]"
   ],
   "crossCuttingPriorities": [
-    "AI",
+    "SSH",
     "PART-COPROGR",
+    "AI",
     "DigitalAgenda"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-HUMAN-01-06.json",
   "documents": [],
-  "fetchedAt": "2026-07-05T04:04:39.706Z"
+  "fetchedAt": "2026-07-06T04:02:01.248Z"
 }

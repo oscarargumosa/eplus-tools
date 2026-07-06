@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,13 +17,13 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"RePowerEU\",\"Social sciences and humanities\",\"Social Innovation\",\"Energy systems, smart energy, smart grids, wireles\",\"Artificial Intelligence\",\"Digital Agenda\",\"Sustainable transport - general\",\"Clean vehicles\",\"Co-programmed European Partnerships\",\"battery data\",\"Human Machine Interface\",\"low cost charging infrastructure\",\"low-power charging\",\"Social Sciences and Humanities\",\"smart and bi-directional charging\",\"parking patterns\",\"charging efficiency\",\"user-friendly infrastructure\",\"grid infrastructure and capacity\",\"interoperability\",\"on-street charging\"]"
+    "[\"Sustainable transport - general\",\"Social Innovation\",\"Clean vehicles\",\"Energy systems, smart energy, smart grids, wireles\",\"Artificial Intelligence\",\"Social sciences and humanities\",\"RePowerEU\",\"Digital Agenda\",\"Co-programmed European Partnerships\",\"parking patterns\",\"battery data\",\"low-power charging\",\"user-friendly infrastructure\",\"on-street charging\",\"low cost charging infrastructure\",\"grid infrastructure and capacity\",\"smart and bi-directional charging\",\"Social Sciences and Humanities\",\"charging efficiency\",\"Human Machine Interface\",\"interoperability\"]"
   ],
   "crossCuttingPriorities": [
-    "SSH",
-    "RePowerEU",
     "SocInnov",
+    "SSH",
     "AI",
+    "RePowerEU",
     "DigitalAgenda",
     "PART-COPROGR"
   ],
@@ -31,5 +31,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-01.json",
   "documents": [],
-  "fetchedAt": "2026-07-05T04:04:40.121Z"
+  "fetchedAt": "2026-07-06T04:02:01.018Z"
 }
