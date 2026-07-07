@@ -1,0 +1,88 @@
+{
+  "id": 1118888,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AREA METROPOLITANA DE BARCELONA",
+    "nivel3": "ÀREA METROPOLITANA DE BARCELONA"
+  },
+  "sedeElectronica": "www.amb.cat",
+  "codigoBDNS": "917327",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones para proyectos de investigación en el campo de la prevención de residuos municipales. (Exp. 904308/26)",
+  "descripcionLeng": "Convocatòria de subvencions per a projectes de recerca en el camp de la prevenció de residus municipals. (Exp 904308/26)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Bases para la concesión de subvenciones de investigación en prevención de residuos 2026-2030. Exp. 904357/25",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3943439/aprovacio-definitiva-de-les-bases-per-a-la-concessio-de-subvencions-de-recerca-en-prevencio-de-residus-per-als-anys-2026-2030-versio-en-catala-i-castella-area-metropolitana-de-barcelona",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia siguiente a la publicación del extracto de la convocatoria en el BOPB",
+  "textFin": "Transcurridos 15 dias hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488421,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICAT D'ACORD TRADUCCIO 930-2026.pdf",
+      "long": 329049,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488430,
+      "descripcion": "Documento de la convocatòria en catalán",
+      "nombreFic": "Convocatòria Subv Prev 26 CAT.pdf",
+      "long": 252638,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488427,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatòria Subv Prev 26 CAST.pdf",
+      "long": 270572,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488422,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CERTIFICAT D'ACORD 9302026.pdf",
+      "long": 344307,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

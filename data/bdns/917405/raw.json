@@ -1,0 +1,88 @@
+{
+  "id": 1118966,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT PERE DE RIBES",
+    "nivel3": "AYUNTAMIENTO DE SANT PERE DE RIBES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917405",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 83300,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para la concesión de subvencones 2026 al comercio local, personas autónomas i petites empreses de Sant Pere de Ribes para la creación, mejora, innovación y accesibilidad",
+  "descripcionLeng": "Bases reguladores per a la concessió de subvencions 2026 al comerç local, persones autònomes i petites empreses de Sant Pere de Ribes per a la creació, millora innovació i accessibilitat.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvencones 2026 al comercio local, personas autónomas i petites empreses de Sant Pere de Ribes para la creación, mejora, innovación y accesibilidad",
+  "urlBasesReguladoras": "https://www.santperederibes.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente publicación BOPB",
+  "textFin": "1 mes después del dia siguiente de su publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488681,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "03_BASES_REGULADORES_AJUTS_EMPRESA_2026_CAST.pdf",
+      "long": 459864,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488684,
+      "descripcion": "Extracto",
+      "nombreFic": "07_Extracte_CAT_Bases_subvencions ajuts empresa 2026.pdf",
+      "long": 220543,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488683,
+      "descripcion": "Extracto",
+      "nombreFic": "08_Extracte_CAST_Bases_subvencions ajuts empres 2026.pdf",
+      "long": 221572,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488682,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "04_BASES_REGULADORES_AJUTS_EMPRESA_2026_CAT.pdf",
+      "long": 445207,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,112 @@
+{
+  "id": 1118922,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ESCATRÓN",
+    "nivel3": "AYUNTAMIENTO DE ESCATRÓN"
+  },
+  "sedeElectronica": "https://escatron.sedelectronica.es",
+  "codigoBDNS": "917361",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES PARA EL FOMENTO DE LA ACTIVIDAD ECONÓMICA Y EL EMPRENDIMIENTO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES243 - Zaragoza"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE ESCATRÓN",
+  "urlBasesReguladoras": "http://bop.dpz.es/BOPZ/UploadServlet?ruta=Boletines\\2015\\142\\bop.pdf#page=11",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente de la publicación de la convocatoria en el Boletín Oficial Provincia Zaragoza",
+  "textFin": "30 días naturales desde la publicación de la convocatoria en el BOPZ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488577,
+      "descripcion": "ANEXO II FICHA TERCEROS",
+      "nombreFic": "ANEXO II Ficha de terceros Fomento y emprendimiento.docx",
+      "long": 33458,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488582,
+      "descripcion": "ANEXO IV ACEPTACIÓN",
+      "nombreFic": "ANEXO IV ACEPTACIÓN.docx",
+      "long": 32767,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488573,
+      "descripcion": "ANEXO I SOLICITUD",
+      "nombreFic": "ANEXO I SOLICITUD Fomento y emprendimiento.docx",
+      "long": 34373,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488584,
+      "descripcion": "ANEXO V JUSTIFICACIÓN",
+      "nombreFic": "ANEXO V JUSTIFICACIÓN.docx",
+      "long": 34594,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488565,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases comercio y emprendimiento 2026.pdf",
+      "long": 346745,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488580,
+      "descripcion": "ANEXO III MEMORIA DE LA ACTUACIÓN",
+      "nombreFic": "ANEXO III fomento y empendrimiento.docx",
+      "long": 34122,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

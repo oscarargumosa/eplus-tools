@@ -1,0 +1,120 @@
+{
+  "id": 1118896,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OLEIROS",
+    "nivel3": "AYUNTAMIENTO DE OLEIROS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917335",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 51000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones a asociaciones vecinales y entidades culturales sin ánimo de lucro del Concello de Oleiros para la realización de actividades en el año 2026.",
+  "descripcionLeng": "Convocatoria de subvencións a asociacións veciñais e entidades culturais sen ánimo de lucro do Concello de Oleiros para a realización de actividades no ano 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DE LAS BASES DE SUBVENCIONES DEL AYUNTAMIENTO DE OLEIROS.",
+  "urlBasesReguladoras": "https://bop.dicoruna.es/bopportal/publicado/2021/01/18/202 1_0000000196.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Ao día seguinte da publicación do extracto no BOP.",
+  "textFin": "15 días hábiles desde o día seguinte a publicación do extracto no BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488459,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "05.Resolucion_aprobacion_convocatoria115709790679712446.pdf",
+      "long": 474928,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488460,
+      "descripcion": "Solicitud",
+      "nombreFic": "Anexo 1. Solicitude.pdf",
+      "long": 389944,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488462,
+      "descripcion": "Certificación da representación",
+      "nombreFic": "Anexo 2. Certificación da representación.pdf",
+      "long": 338784,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488470,
+      "descripcion": "Xustificación certificación de gastos e acreditación da publicidade",
+      "nombreFic": "Anexo 4.3. Xustificación-certificación de gastos e acreditación da publicidade.pdf",
+      "long": 356875,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488467,
+      "descripcion": "Entidades organizadoras de festas patronais",
+      "nombreFic": "Anexo 3.2. Entidades organizadoras de festas patronais.pdf",
+      "long": 103010,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488468,
+      "descripcion": "Xustificación memoria",
+      "nombreFic": "Anexo 4.1. Xustificación-memoria.pdf",
+      "long": 376460,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488469,
+      "descripcion": "Xustificación certificación de ingresos",
+      "nombreFic": "Anexo 4.2. Xustificación-certificación de ingresos.pdf",
+      "long": 331795,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488465,
+      "descripcion": "Proxecto das actividades",
+      "nombreFic": "Anexo 3.1. Proxecto das actividades.pdf",
+      "long": 464835,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

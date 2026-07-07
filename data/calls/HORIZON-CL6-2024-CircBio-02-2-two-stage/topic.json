@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "two-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Consumer products and services\",\"Circular economy\",\"Climate change mitigation\",\"New business opportunities\",\"Plastics, Marine Litter and Circular Economy\",\"Social Innovation\",\"Polymers and plastics\",\"Environment, Pollution \\u0026 Climate\",\"Ecodesign, Life Cycle Analysis\",\"New industrial value chains\",\"Waste recycling\",\"design for recycling\",\"consumers\",\"recycling\",\"plastics\",\"value chains\"]"
+    "[\"Consumer products and services\",\"Circular economy\",\"Climate change mitigation\",\"New business opportunities\",\"Plastics, Marine Litter and Circular Economy\",\"Social Innovation\",\"Polymers and plastics\",\"Environment, Pollution \\u0026 Climate\",\"Ecodesign, Life Cycle Analysis\",\"New industrial value chains\",\"Waste recycling\",\"design for recycling\",\"consumers\",\"plastics\",\"recycling\",\"value chains\"]"
   ],
   "crossCuttingPriorities": [
     "SocInnov"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CircBio-02-2-two-stage.json",
   "documents": [],
-  "fetchedAt": "2026-07-06T04:02:01.230Z"
+  "fetchedAt": "2026-07-07T04:03:37.094Z"
 }

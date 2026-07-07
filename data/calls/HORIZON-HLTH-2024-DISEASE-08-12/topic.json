@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-26",
   "deadline": "2024-04-11",
   "deadlineModel": "single-stage",
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-DISEASE-08-12.json",
   "documents": [],
-  "fetchedAt": "2026-07-06T04:02:01.259Z"
+  "fetchedAt": "2026-07-07T04:03:37.076Z"
 }

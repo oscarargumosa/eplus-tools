@@ -1,0 +1,72 @@
+{
+  "id": 1118856,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE MEDIO AMBIENTE  Y TERRITORIO"
+  },
+  "sedeElectronica": "https://sede.gva.es/es/proc23320",
+  "codigoBDNS": "917295",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas destinadas a la contratación de educadores y educadoras ambientales en las entidades locales, en el maro del Plan Integral de Residuos de la Comunitat Valenciana (PIRCV), ejercicio 2026",
+  "descripcionLeng": "Convocatòria d'ajudes destinades a la contractació d'educadors i educadores ambientals en les entitats locals, en la farigola de Menorca del Pla Integral de Residus de la Comunitat Valenciana (*PIRCV), exercici 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "Ayudas destinadas a la contratación de educadores y educadoras ambientales en las entidades locales, en el maro del Plan Integral de Residuos de la Comunitat Valenciana",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2026/11624",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-13",
+  "fechaFinSolicitud": "2026-08-07",
+  "textInicio": "Trece julio de dos mil veintiséis",
+  "textFin": "Siete de agosto de dos mil veintiséis",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488358,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Extracto_Conv_MAEDUC2026_CAS_firmado.pdf",
+      "long": 308231,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488357,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resol_Conv_MAEDUC2026_CAS_firmado.pdf",
+      "long": 373106,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

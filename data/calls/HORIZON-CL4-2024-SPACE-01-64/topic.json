@@ -7,17 +7,17 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-11-21",
-  "deadline": "2024-03-21",
+  "deadline": "2024-02-20",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON  Research and Innovation Actions",
   "actionCode": null,
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Quantum sensors\",\"Digital Agenda\",\"Earth Observation / Services and applications\",\"Remote Sensing Instruments / Sensors\"]"
+    "[\"Digital Agenda\",\"Remote Sensing Instruments / Sensors\",\"Quantum sensors\",\"Earth Observation / Services and applications\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-SPACE-01-64.json",
   "documents": [],
-  "fetchedAt": "2026-07-06T04:02:01.313Z"
+  "fetchedAt": "2026-07-07T04:03:37.028Z"
 }

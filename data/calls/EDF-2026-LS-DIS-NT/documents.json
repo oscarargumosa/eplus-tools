@@ -92,10 +92,17 @@
   },
   {
     "section": "Additional documents:",
-    "label": "Guidelines on FSTP implementation - WP2026",
+    "label": "G",
     "url": "https://eudis.europa.eu/system/files/2026-04/Guidelines on FSTP implementation - WP2026.pdf",
     "ext": ".pdf",
     "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "uidelines on FSTP implementation - WP2026",
+    "url": "https://eudis.europa.eu/document/e0a4e40e-669f-4a70-ad59-c85e57580001_en",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "Additional documents:",

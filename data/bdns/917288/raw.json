@@ -1,0 +1,88 @@
+{
+  "id": 1118849,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MASNOU, EL",
+    "nivel3": "AYUNTAMIENTO DE MASNOU, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917288",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Convocatoria subvenciones en régimen concurrencia no competitiva a familias con niños escolarizados en el 3º nivel del 1º ciclo de educación infantil (I2) en guarderías privadas de El Masnou autorizadas por la Generalitat de Catalunya. Curso 2025-26",
+  "descripcionLeng": "Convocatòria subvencions en concurrència no competitiva a famílies amb infants escolaritzats al 3r nivell del 1r cicle d¿educació infantil (I2) a les llars d¿infants privades del Masnou autoritzades per la Generalitat de Catalunya.Curs 2025-26",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases específicas que han de regir la concesión de subvenciones a familias con niños escolarizados en las guarderías privadas de El Masnou autorizadas para la Generalitat de Catalunya",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3900000/aprovacio-definitiva-de-les-bases-especifiques-que-han-de-regir-la-concessio-de-subvencions-a-families-amb-infants-escolaritzats-a-les-llars-d-infants-privades-del-masnou-autoritzades-per-la-generalitat-de-catalunya-ajuntament-del-masnou",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-13",
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488336,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "(rectificat)Edicte_CAST.pdf",
+      "long": 693997,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488339,
+      "descripcion": "Rectificación error material Convocatoria",
+      "nombreFic": "(rectificat)Certificat_aprovació_Convocatòria_JGL_25-06-26.pdf",
+      "long": 554923,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488338,
+      "descripcion": "Aprobación Convocatoria JGL 25/06/2026",
+      "nombreFic": "Certificat_aprovació_Convocatòria_JGL_25-06-26.pdf",
+      "long": 889886,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488337,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "(rectificat)Edicte_CAT.pdf",
+      "long": 702971,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

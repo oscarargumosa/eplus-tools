@@ -1,0 +1,107 @@
+{
+  "id": 1118912,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917351",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 160000,
+  "mrr": false,
+  "descripcion": "Resolución por la que se aprueba la convocatoria de subvenciones a aficionados, en régimen de concurrencia competitiva, para la producción de obras y la realización de giras en materia de artes escénicas en la modalidad de teatro, circo, magia y danza.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Orden UIC/27/2022, de 29 de noviembre, se establecen las bases reguladoras para la concesión de subvenciones en régimen de concurrencia competitiva a aficionados para la producción de obras y la realización de giras en materia de artes escénicas.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=380680",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto en BOC",
+  "textFin": "15 días hábiles desde la publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488551,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01_00_convocatoria_subv_aficionados_2026.report.pdf",
+      "long": 285588,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488553,
+      "descripcion": "Anexo I",
+      "nombreFic": "01_01_anexo_I_subv_a_aficionados_2026.report.pdf",
+      "long": 303105,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488554,
+      "descripcion": "Anexo II",
+      "nombreFic": "01_02_Anexo_II_subv_a_aficionados_2026.report.pdf",
+      "long": 213444,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488555,
+      "descripcion": "Anexo III",
+      "nombreFic": "01_03_Anexo_III_subv_aficionados_2026.report.pdf",
+      "long": 223781,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488557,
+      "descripcion": "Anexo IV",
+      "nombreFic": "01_04_Anexo_IV_subv_aficionados_2026.report.pdf",
+      "long": 218923,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488560,
+      "descripcion": "Anexo V",
+      "nombreFic": "01_05_Anexo_V_subv_aficionados_2026.report.pdf",
+      "long": 242124,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

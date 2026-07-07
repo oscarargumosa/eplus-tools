@@ -1,0 +1,145 @@
+{
+  "identifier": "DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+  "ccm2Id": "51527957",
+  "callIdentifier": "DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+  "callTitle": "DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+  "title": "Pilot Federation ",
+  "programme": "Digital Europe",
+  "programmeCode": "43152860",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-07-07",
+  "deadline": "2026-09-24",
+  "deadlineModel": "single-stage",
+  "actionType": "DIGITAL JU Simple Grants",
+  "actionCode": "DIGITAL-JU-SIMPLE",
+  "mgaCode": "DIGITAL-AG",
+  "budget": {
+    "total_eur": 10000000,
+    "by_year": {
+      "2026": 10000000
+    },
+    "expected_grants": 1,
+    "min_contribution_eur": 1000000,
+    "max_contribution_eur": 10000000
+  },
+  "keywords": [
+    "DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+    "DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG"
+  ],
+  "crossCuttingPriorities": [
+    "DigitalAgenda"
+  ],
+  "supportInfoText": "For help related to this call, please contact Calls@chips-ju.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/45356?topic=DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-JU-CHIPS-2026-SKILLS-PF-SG",
+  "documents": [
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "Chips JU website's Call page",
+      "url": "https://www.chips-ju.europa.eu/Call-Details/?id=9bc5feaf-d070-f111-ab0e-000d3ab6c0a4",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "Appendix 8 of Work Programme - Chips for Europe Initiative :",
+      "url": "https://www.chips-ju.europa.eu/viewfile/?id=a8627a97-955e-f111-a826-000d3a27d474",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Application form template Part B",
+      "url": "https://www.chips-ju.europa.eu/CallDocumentLink/?id=2619E2A2-EB76-F111-AB0E-002248A015A0",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Guide for Applicants",
+      "url": "https://www.chips-ju.europa.eu/CallDocumentLink/?id=FA2377BD-E876-F111-AB0E-7C1E5234C674",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Evaluation form",
+      "url": "https://www.chips-ju.europa.eu/CallDocumentLink/?id=59EC0C80-EC76-F111-AB0E-7C1E5234C674",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Ownership Control Declaration",
+      "url": "https://www.chips-ju.europa.eu/CallDocumentLink/?id=B45B2017-492C-F111-88B3-7CED8D592251",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "National Budget table",
+      "url": "https://www.chips-ju.europa.eu/CallDocumentLink/?id=DDD203D5-AF76-F111-AB0E-7C1E5287EB89",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP MGA",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/digital/agr-contr/mga_dep_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "DEP Regulation 2021/964",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/display/OM/Online+Manual",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/legalnotice",
+      "ext": "",
+      "is_downloadable": false
+    }
+  ],
+  "fetchedAt": "2026-07-07T04:03:39.856Z"
+}

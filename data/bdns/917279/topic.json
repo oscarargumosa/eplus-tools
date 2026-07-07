@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "917279",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE MURCIA",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Convocatoria de becas para estudiantes del Máster universitario en investigación en Filosofía de la Universidad de Murcia para el curso académico 2026-2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-06",
+  "open_date": null,
+  "deadline": "2026-09-22",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 4544.14,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "https://sede.um.es/registro2/PR-SG-002/acceso.seam?from=default&cid=262",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917279",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.um.es/sede/documento/tablon/2026/07/02/resolucion-del-rector-de-la-universidad-de-murcia-por-la-que-se-convocan-becas-para-estudiantes-del-master/146749.pdf",
+  "text_inicio": "Día siguiente al de la publicación del extracto de la convocatoria en el BORM",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-07T04:06:59.537Z"
+}

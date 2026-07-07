@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "917460",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TORRE-PACHECO / AYUNTAMIENTO DE TORRE-PACHECO",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "CONVOCATORIA DE PREMIOS, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DEL XIII CONCURSO DE MICRORRELATOS DE LA BIBLIOTECA PÚBLICA MUNICIPAL DE TORRE PACHECO DE TORRE PACHECO 2026 (aprobada por Resolución nº 2026002146, de 2/07/2026)",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91.1",
+      "descripcion": "Actividades de bibliotecas y archivos"
+    }
+  ],
+  "apply_url": "https://sede.torrepacheco.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917460",
+  "documents": [
+    {
+      "label": "BASES REGULADORAS GENERALES, BORM Nº 104, DE 8/05/2023",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.torrepacheco.es/",
+  "text_inicio": "20 días naturales desde el siguiente al de la publicación del extracto de esta convocatoria en BORM",
+  "text_fin": "Transcurridos 20 días naturales desde el siguiente al de la publicación del extracto de esta convoca",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-07T04:06:59.592Z"
+}

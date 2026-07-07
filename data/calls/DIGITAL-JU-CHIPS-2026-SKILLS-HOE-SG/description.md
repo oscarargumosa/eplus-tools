@@ -1,0 +1,7 @@
+## Expected Outcome
+
+Expected outcomes: A sustained pipeline of highly qualified semiconductor graduates, with shorter time-to-readiness for industry roles; greater inflow of diverse talent including women and underrepresented groups; improved intra- and extra-EU student mobility; and strong complementarity with existing Chips Act infrastructure such as pilot lines, design platforms, and Competence Centres.
+
+## Scope
+
+This call funds the creation of specialised academic "Hubs of Excellence" in critical semiconductor technology areas (e.g. chip design, manufacturing, photonics, power electronics). Projects should build industry-aligned Bachelor, Master, and PhD programmes.

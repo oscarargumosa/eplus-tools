@@ -1,0 +1,9 @@
+## Expected Outcome
+
+Proposals are expected to contribute to the following outcomes:
+- Steer a European agenda to catalyse the development of a full software defined and hardware-enabled vehicle AD stack “built in Europe”, from onboard-compute architecture up to software in-vehicle up to the cloud.
+- Establish structured intersectoral linkages between software, AI/data, hardware and deployment actors, ensuring that architectural decisions in the European AD stack are aligned across computing platforms, AI models, validation frameworks and real-world deployment environments.
+- Promote a European R&I roadmap establishing pathways for the accelerated development of a European AI-powered AD stack, notably in close liaison with the relevant ECAVA Working Groups and relevant OSS initiatives.
+- Ensure the engagement of key stakeholders across the Automotive value chain (including relevant OSS initiatives) toward an open-source software autonomous driving stack, including required industrial partners (such as OEMs, suppliers, tool-providers), and innovative R&I stakeholders (RTOs, universities, start-ups. If useful, already existing OSS AD stack initiatives together with the reference stacks (as S-CORE) from the Digital vehicle platform initiative playing an important role.
+- Promote the cross-pollination of a collaborative ecosystem and testing infrastructure for an Open Source (OS) AD SW stack among industry, Member States, road operators and the EU in line with the Chips Act and AI Act.
+- Support coordination of relevant actions on automotive hardware and software in the Chips JU the CCAM, and flagship actions in Member States partnership towards a European AD stack and ensure coherence and complementarity of newly emerging actions.

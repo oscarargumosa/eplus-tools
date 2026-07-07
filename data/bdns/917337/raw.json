@@ -1,0 +1,72 @@
+{
+  "id": 1118898,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARTEIXO",
+    "nivel3": "AYUNTAMIENTO DE ARTEIXO"
+  },
+  "sedeElectronica": "https://sede.arteixo.org/",
+  "codigoBDNS": "917337",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 120000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA ANTICIPADA DE SUBVENCIONES FOMENTO DEL EMPLEO 2027",
+  "descripcionLeng": "CONVOCATORIA ANTICIPADA DE SUBVENCIÓN FOMENTO DO EMPREGO 2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Desempleo",
+  "descripcionBasesReguladoras": "BASES XERAIS DO PROGRAMA DE AXUDAS MUNICIPAIS AO FOMENTO DO EMPREGO",
+  "urlBasesReguladoras": "www.arteixo.org",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-10",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "10/07/2026",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488495,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Extracto da convocatoria (galego).pdf",
+      "long": 281496,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488494,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Extracto da convocatoria (castelán).pdf",
+      "long": 282288,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

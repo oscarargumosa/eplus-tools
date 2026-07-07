@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "917358",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE GRANADA / DIPUTACIÓN PROVINCIAL DE GRANADA",
+  "nuts_codes": [
+    "ES614"
+  ],
+  "nuts_primary": "ES614",
+  "title": "SEGUNDA CONVOCATORIA PARA LA CONCESION DE UNA BECA DE FORMACION  LAS PERSONAS BENEFICIARIAS POR SU PARTICIACION EN LOS ITINERARIOS DE INSERCION DEL PROYECTO GRANADAEMPLEO +",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2853121.6,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.dipgra.es/moad/oficina-moad/tramites/tramitesDisponibles.do?action=detalleArea&id=AYUDAS_Y_SUBVENCIONES",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917358",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO II RELACION DE ITINERARIOS DE INSERCION",
+      "url": null
+    },
+    {
+      "label": "ANEXO I SOLICITUD DE BECA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipgra.es/export/sites/diputaciongranada/diputacion/delegaciones/economia-y-atencion-al-alcalde/.galleries/DIPUTACION-Delegaciones-Economia-y-Patrimonio-Economia/DIPUTACION-Delegaciones-Economia-y-Patrimonio-Economia-Presupuestos/DIPUTACION-De",
+  "text_inicio": "AL DIA SIGUIENTE AL CUMPLIMIENNTO DEL 25% DEL ITINERARIO DE INSERCION",
+  "text_fin": "5 DIAS HABILES DESDE EL DIA SIGUIENTE AL CUMPLIMIENNTO DEL 25% DEL ITINERARIO DE INSERCION",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-07T04:06:59.559Z"
+}

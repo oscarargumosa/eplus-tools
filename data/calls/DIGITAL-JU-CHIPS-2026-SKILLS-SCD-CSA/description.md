@@ -1,0 +1,7 @@
+## Expected Outcome
+
+Practical chip design experience integrated into education at multiple levels; at least 1,000 students across Europe completing funded tape-outs over 4 years; stronger reskilling pathways for students from adjacent fields; and a sustainable, continent-wide pipeline of chip design talent to support Europe's semiconductor ambitions.
+
+## Scope
+
+This call funds a comprehensive Chip Design Skills Programme to lower barriers to entry in chip design and tape-outs. At least 60% of the budget must support hands-on tape-out experiences (via multi-project wafers) for university and secondary school students.

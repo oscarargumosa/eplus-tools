@@ -1,0 +1,116 @@
+{
+  "source": "bdns",
+  "source_id": "917321",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / INSTITUTO DE FOMENTO DE LA REGIÓN DE MURCIA (INFO)",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Resolución de 3/07/2026 del  Presidente del Instituto de Fomento de la Región de Murcia, de convocatoria de ayudas a la participación en ferias, eventos expositivos y promocionales y misiones comerciales. FERIA ASIA FRUIT LOGISTICA 2026.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-07-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 32000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "46.2",
+      "descripcion": "Comercio al por mayor de materias primas agrarias y de animales vivos"
+    },
+    {
+      "codigo": "46.3",
+      "descripcion": "Comercio al por mayor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "46.7",
+      "descripcion": "Comercio al por mayor de vehículos de motor, motocicletas y sus repuestos y accesorios"
+    },
+    {
+      "codigo": "46.9",
+      "descripcion": "Comercio al por mayor no especializado"
+    },
+    {
+      "codigo": "46.1",
+      "descripcion": "Intermediarios del comercio al por mayor"
+    },
+    {
+      "codigo": "72.1",
+      "descripcion": "Investigación y desarrollo experimental en ciencias naturales y técnicas"
+    },
+    {
+      "codigo": "82.9",
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "46.8",
+      "descripcion": "Otro comercio al por mayor especializado"
+    },
+    {
+      "codigo": "10.3",
+      "descripcion": "Procesado y conservación de frutas y hortalizas"
+    },
+    {
+      "codigo": "80.0",
+      "descripcion": "Servicios de investigación y seguridad"
+    }
+  ],
+  "apply_url": "https://sede.institutofomentomurcia.es/infodirecto",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917321",
+  "documents": [
+    {
+      "label": "Orden de 16_05_2025 de modificacion de bases reguladoras",
+      "url": null
+    },
+    {
+      "label": "Orden de 3_11_2025 de modificacion de bases reguladoras",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Orden de bases reguladoras",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2024/numero/2148/pdf?id=826601",
+  "text_inicio": "Desde el día siguiente a la publicación en el BORM.",
+  "text_fin": "Hasta 5 días hábiles.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-07T04:06:59.547Z"
+}

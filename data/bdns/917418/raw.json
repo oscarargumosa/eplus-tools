@@ -1,0 +1,72 @@
+{
+  "id": 1118979,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUARDO",
+    "nivel3": "AYUNTAMIENTO DE GUARDO"
+  },
+  "sedeElectronica": "https://guardo.sedelectronica.es/",
+  "codigoBDNS": "917418",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22000,
+  "mrr": false,
+  "descripcion": "AYUDAS ECONÓMICAS POR NACIMIENTO O ADOPCIÓN DE HIJOS EN EL MUNICIPIO DE GUARDO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES414 - Palencia"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "AYUDAS ECONÓMICAS POR NACIMIENTO O ADOPCIÓN DE HIJOS EN EL MUNICIPIO DE GUARDO 2026",
+  "urlBasesReguladoras": "https://guardo.sedelectronica.es/transparency",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "DESDE EL DIA SIGUIENTE A LA PUBLICACIÓN EN EL BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488760,
+      "descripcion": "ANEXOS",
+      "nombreFic": "20260706_Otros_ANEXOS.docx",
+      "long": 54576,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    },
+    {
+      "id": 1488758,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260706_Resolución_RESOLUCION 2026-1003 [RESOLUCIÓN DE ALCALDÍA_APROBACIÓN DE LAS BASES REGULADORAS DE LA CONCESIÓN DE AYUDAS ECONÓMICAS POR NACIMIENTO O ADOPCIÓN DE HIJOS EN EL MUNICIPIO DE GUARDO 2026_EXPTE.pdf",
+      "long": 585413,
+      "datMod": "2026-07-06",
+      "datPublicacion": "2026-07-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

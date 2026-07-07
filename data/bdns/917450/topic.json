@@ -1,0 +1,76 @@
+{
+  "source": "bdns",
+  "source_id": "917450",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / AGENCIA DE CIENCIA, COMPETITIVIDAD EMPRESARIAL E INNOVACIÓN",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Resolución de 2/07/2026 de la Agencia, convocatoria premios empresariales del Principado de Asturias en las modalidades de RADAR a la innovación emprendedora en Asturias SPINOFF, EBT, EBT IMPACTO para el ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    },
+    {
+      "codigo": "72.1",
+      "descripcion": "Investigación y desarrollo experimental en ciencias naturales y técnicas"
+    },
+    {
+      "codigo": "70.2",
+      "descripcion": "Otras actividades de consultoría de gestión empresarial"
+    },
+    {
+      "codigo": "80.0",
+      "descripcion": "Servicios de investigación y seguridad"
+    }
+  ],
+  "apply_url": "http://www.sekuens.es/registro",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917450",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2021/10/15/2021-09082.pdf",
+  "text_inicio": "Día natural siguiente a la publicación del extracto en el BOPA",
+  "text_fin": "a las 14:00 del 13/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-07T04:06:59.586Z"
+}
