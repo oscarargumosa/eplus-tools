@@ -1,0 +1,144 @@
+{
+  "id": 1119289,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUARDAMAR DEL SEGURA",
+    "nivel3": "AYUNTAMIENTO DE GUARDAMAR DEL SEGURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917728",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "Bases y Convocatoria para la concesión de subvenciones a asociaciones de cualquier tipo y entidades sin ánimo de lucro de Guardamar del Segura, anualidad 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases y Convocatoria para la concesión de subvenciones a asociaciones de cualquier tipo y entidades sin ánimo de lucro de Guardamar del Segura, anualidad 2026.",
+  "urlBasesReguladoras": "https://guardamardelsegura.sedelectronica.es/transparency/f4a11f56-2e9d-4a28-b0ec-1798f8a2ad81/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente a la publicación de las bases y convocatoria en el BOP",
+  "textFin": "10 días hábiles a partir del día siguiente a la publicación de las bases y convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489615,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CERTIFICADO 2026-0240 [Certificado de acuerdo].pdf",
+      "long": 3555375,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489616,
+      "descripcion": "Anexo I",
+      "nombreFic": "Anexo I. Modelo Solicitud.pdf",
+      "long": 634334,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489617,
+      "descripcion": "Anexo II",
+      "nombreFic": "Anexo II. Memoria descriptiva.pdf",
+      "long": 85957,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489618,
+      "descripcion": "Anexo III",
+      "nombreFic": "Anexo III. Declaración Responsable.pdf",
+      "long": 336212,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489619,
+      "descripcion": "Anexo IV",
+      "nombreFic": "Anexo IV. Autorización solicitud datos AEAT.pdf",
+      "long": 51673,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489625,
+      "descripcion": "Edicto publicación bases y convocatoria.",
+      "nombreFic": "EDICTO 2026-0133 [EDICTO BASES Y CONVOCATORIA SUBV. A ASOCIACIONES DE CUALQUIER TIPO Y ENTIDADES SIN ÁNIMO DE LUCRO DE GUARDAMAR DEL SEGURA, ANUALIDAD 2026].pdf",
+      "long": 361846,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489621,
+      "descripcion": "Anexo VI",
+      "nombreFic": "Anexo VI. Certificado secretario asociación - entidad.pdf",
+      "long": 101111,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489622,
+      "descripcion": "Anexo VII",
+      "nombreFic": "Anexo VII. Alta a Terceros.pdf",
+      "long": 176112,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489623,
+      "descripcion": "Anexo VIII",
+      "nombreFic": "Anexo VIII. Memoria y C. Justificativa.pdf",
+      "long": 748856,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489624,
+      "descripcion": "Anexo IX",
+      "nombreFic": "Anexo IX. Imagen corporativa.pdf",
+      "long": 148988,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489620,
+      "descripcion": "Anexo V",
+      "nombreFic": "Anexo V.  Consentimiento Recabar Datos Seguridad Social.pdf",
+      "long": 232018,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

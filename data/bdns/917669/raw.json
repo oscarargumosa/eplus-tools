@@ -1,0 +1,72 @@
+{
+  "id": 1119230,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE IGUALDAD Y DIVERSIDAD"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917669",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones en materia de diversidad para el año 2026 S1544",
+  "descripcionLeng": "Convocatòria de subvencions en matèria de diversitat per a l´any 2026 S1544",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDEN 7/2024, de 13 de noviembre, de la Vicepresidencia y Conselleria de Servicios Sociales, Igualdad y Vivienda",
+  "urlBasesReguladoras": "https://dogv.gva.es/datos/2024/11/15/pdf/2024_11943_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El plazo de presentación será de 15 días a contar desde el día siguiente a la publicación en el DOGV",
+  "textFin": "El plazo de presentación será de 15 días a contar desde el día siguiente a la publicación en el DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489413,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026_Borrador convocatoria entidades privadas diversidad 3 lneas_26-005795_trad_firmado.pdf",
+      "long": 526091,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489412,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026_Borrador convocatoria entidades privadas diversidad 3 líneas_firmado.pdf",
+      "long": 521155,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

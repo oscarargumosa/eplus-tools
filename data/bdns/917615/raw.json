@@ -1,0 +1,96 @@
+{
+  "id": 1119176,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE VALLADOLID",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE VALLADOLID"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917615",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Acuerdo nº 113/2 de la Junta de Gº. de 26/06/26 por el que se aprueba convocatoria para los estudiantes universitarios y de ciclos formativos de grado medio y superior de la provincia de Valladolid de menos de 20.000 habitantes, curso académico 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Prestación de servicios a la comunidad en general",
+      "codigo": "84.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASE REGULADORA GENERAL - ORDENANZA GENERAL DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://www.diputaciondevalladolid.es/documents/10181/1090769/ORDENANZA+GENERAL+DE+SUBVENCIONES/d5d6fb94-fd7a-444b-bb18-6c50ffec90e0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-11",
+  "textInicio": "Desde el día siguiente al de la publicación en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489277,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "1._Bases_.pdf",
+      "long": 507186,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489278,
+      "descripcion": "Anexo I",
+      "nombreFic": "2._ANEXO_I.pdf",
+      "long": 385287,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489281,
+      "descripcion": "Aprobación convocatoria",
+      "nombreFic": "Justificante_de_firma_de_Certif_Ac_113-JG-Ayudas_estudiantes_curso_26-27.pdf",
+      "long": 226688,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489280,
+      "descripcion": "Anexo III",
+      "nombreFic": "4._ANEXO_III.pdf",
+      "long": 209250,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489279,
+      "descripcion": "Anexo II",
+      "nombreFic": "3._ANEXO_II.pdf",
+      "long": 123636,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

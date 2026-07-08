@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "917655",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE OVIEDO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "RESOLUCIÓN DE LA VICERRECTORA DE INVESTIGACIÓN DE LA  \nUNIVERSIDAD DE OVIEDO PARA LA CONTRATACIÓN DE PERSONAL INVESTIGADOR Y TÉCNICO DE APOYO SEGUN ART.23 3.bis \nDE LA LEY 14/2011 DE LA CIENCIA, LA TECNOLOGÍA Y LA INNOVACIÓN\n(convocatoria JUNIO EXTRA 7",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12741.62,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Contratos proyectos I+D - Universidad de Oviedo - uniovi.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917655",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2023/09/29/2023-08547.pd",
+  "text_inicio": "Primer día hábil siguiente a la publicación en el BOPA",
+  "text_fin": "10  días hábiles a partir del siguiente de la publicación en el BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-08T04:09:31.669Z"
+}

@@ -1,0 +1,158 @@
+{
+  "id": 1119098,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA ECONOMÍA, HACIENDA Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917537",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7200000,
+  "mrr": false,
+  "descripcion": "AYUDAS ACCIONES FORMATIVAS TRABAJADORES OCUPADOS CNECP 2026 TELEFORMACIÓN",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORDEN EFP/942/2022, DE 23 DE SEPTIEMBRE, POR LA QUE SE REGULA LA OFERTA FORMATIVA DEL SISTEMA DE FORMACIÓN PORFESIONAL EN EL",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-16196",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-01",
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": "DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCM",
+  "textFin": "XXX",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489084,
+      "descripcion": "Anexos  Documento aceptación subvención",
+      "nombreFic": "Anexos  Documento aceptación subvención.pdf",
+      "long": 180099,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489074,
+      "descripcion": "Anexos  I",
+      "nombreFic": "Anexos  I.pdf",
+      "long": 282948,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489075,
+      "descripcion": "Anexos  II",
+      "nombreFic": "Anexos  II.pdf",
+      "long": 253008,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489076,
+      "descripcion": "Anexos  III",
+      "nombreFic": "Anexos  III.pdf",
+      "long": 213497,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489077,
+      "descripcion": "Anexos  IV",
+      "nombreFic": "Anexos  IV.pdf",
+      "long": 223907,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489073,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  Orden firmada y anonimizada.pdf",
+      "long": 553337,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489079,
+      "descripcion": "Anexos  VI",
+      "nombreFic": "Anexos  VI.pdf",
+      "long": 180762,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489080,
+      "descripcion": "Anexos  VII",
+      "nombreFic": "Anexos  VII.pdf",
+      "long": 236456,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489081,
+      "descripcion": "Anexos  VIII",
+      "nombreFic": "Anexos  VIII.pdf",
+      "long": 268573,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489082,
+      "descripcion": "Anexos  IX",
+      "nombreFic": "Anexos  IX.pdf",
+      "long": 141727,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489083,
+      "descripcion": "Anexos  X",
+      "nombreFic": "Anexos  X.pdf",
+      "long": 232556,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489078,
+      "descripcion": "Anexos  V",
+      "nombreFic": "Anexos  V.pdf",
+      "long": 106002,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

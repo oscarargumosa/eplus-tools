@@ -1,0 +1,72 @@
+{
+  "id": 1119050,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE TRANSPARENCIA Y PARTICIPACIÓN"
+  },
+  "sedeElectronica": "https://sede.gva.es/es/inici",
+  "codigoBDNS": "917489",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "S0512 Resolución de la Consellera de Justicia, Transparencia y Participación, por la que se efectúa la convocatoria de la V edición de los premios Participa-Acció, para el ejercicio 2026",
+  "descripcionLeng": "S0512 Resolució de la Consellera de Justicia, Transparencia y Participación, per la qual s'efectua la convocatòria de la V edició dels premis Participa-Acció, per a l'exercici 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Resolución de 24 de octubre de 2024, por la que se aprueban las bases reguladoras de los premios Participa-Acció",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2024/13799",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el Diario Oficial de la Generalitat Valenciana (DOGV)",
+  "textFin": "Un mes a partir de día siguiente de su publicación en el Diario Oficial de la Generalitat Valenciana",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488963,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026.07.02 RESOLUCION Premios firmada cast.pdf",
+      "long": 329177,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1488962,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026.07.02 RESOLUCION Premios firmada cast.pdf",
+      "long": 329177,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

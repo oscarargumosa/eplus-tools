@@ -1,0 +1,64 @@
+{
+  "id": 1119349,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
+    "nivel3": "SECRETARÍA GENERAL DE UNIVERSIDADES"
+  },
+  "sedeElectronica": "https://www.ciencia.gob.es/Convocatorias/2026/PNFCEU2026.html",
+  "codigoBDNS": "917788",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1740000,
+  "mrr": false,
+  "descripcion": "Resolución de 7 de julio de 2026 de la Secretaría de Estado de Ciencia, Innovación y Universidades por la que se convocan los Premios Nacionales de Fin de Carrera para los cursos 2019-2020, 2020-2021,2021-2022, 2022-2023, 2023-2024 y 2024-2025.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden CNU/1116/2025, de 6 de octubre, por la que se establecen las bases reguladoras para la concesión de los Premios Nacionales de Fin de Carrera de Educación Universitaria.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/o/2025/10/06/cnu1116",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al dia siguiente de la publicación del extracto en el Boletín Oficial del Estado",
+  "textFin": "veinte dias hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489757,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_PNFC 2019-25.pdf.xsig.pdf",
+      "long": 245029,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

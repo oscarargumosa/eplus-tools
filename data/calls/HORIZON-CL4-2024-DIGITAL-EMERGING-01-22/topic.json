@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-11-15",
   "deadline": "2024-03-19",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Digital Agenda\",\"Artificial Intelligence\",\"Software engineering, operating systems, computer\",\"System Software\",\"Software Architectures\",\"Software Design \\u0026 Development\",\"Software quality Management\",\"Software notation \\u0026 tools\",\"Open Source Software\"]"
+    "[\"Digital Agenda\",\"Artificial Intelligence\",\"Software engineering, operating systems, computer\",\"Software Architectures\",\"System Software\",\"Software Design \\u0026 Development\",\"Software quality Management\",\"Software notation \\u0026 tools\",\"Open Source Software\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda",
@@ -27,5 +27,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-DIGITAL-EMERGING-01-22.json",
   "documents": [],
-  "fetchedAt": "2026-07-07T04:03:37.024Z"
+  "fetchedAt": "2026-07-08T04:06:08.732Z"
 }

@@ -1,0 +1,78 @@
+{
+  "id": 1119193,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "CONSEJERÍA DE AGUA, AGRICULTURA, GANADERÍA Y PESCA"
+  },
+  "sedeElectronica": "Sede electrónica de la CARM, https://sede.carm.es",
+  "codigoBDNS": "917632",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1253890.57,
+  "mrr": false,
+  "descripcion": "ORDEN 6 DE JULIO 2026 DE LA CONSEJERÍA DE AGUA, AGRICULTURA, GANADERIA Y PESCA POR LA QUE SE APRUEBA CONVOCATORIA DE AYUDAS LEADER FINANCIADAS POR LA INTERVENCION 7119 PARA EJECUCION DE PROYECTOS NO PROGRAMADOS EN EL MARCO DEL PEPAC DEL GAL SIERRA ESPUÑA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden 15 abril 2026 de la Consejería de Agua, Agricultura, Ganadería y Pesca, por la que se establecen las bases reguladoras de las ayudas LEADER financiadas por la intervención 7119 para la ejecución de proyectos no programados (7119.02.01) del PEPAC.",
+  "urlBasesReguladoras": "https://www.borm.es/#/home/anuncio/22-04-2026/1766",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BORM",
+  "textFin": "30/09/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 61 IMPORTES LIMITADOS DE AYUDA PARA PROYECTO DE DLP"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489319,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden Convocatoria Sierra Espuña.pdf",
+      "long": 1471939,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

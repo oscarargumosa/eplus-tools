@@ -1,0 +1,140 @@
+{
+  "id": 1119084,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTESINOS, LOS",
+    "nivel3": "AYUNTAMIENTO DE MONTESINOS, LOS"
+  },
+  "sedeElectronica": "https://losmontesinos.sedelectronica.es/catalog/t/5161fa8d-970e-4b48-a506-b2ac34ceafe5",
+  "codigoBDNS": "917523",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras y convocatoria de subvenciones a asociaciones vecinales, anualidad 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones a asociaciones vecinales, anualidad 2026",
+  "urlBasesReguladoras": "https://losmontesinos.sedelectronica.es/preview-document/577de6ff-544b-456f-94c0-e5ab39ea4e3a/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación de la convocatoria en el BOP Alicante",
+  "textFin": "Hasta 1 mes desde la publicación de la convocatoria en el BOP Alicante",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489027,
+      "descripcion": "ANEXO VIII",
+      "nombreFic": "ANEXO VIII.pdf",
+      "long": 179451,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489026,
+      "descripcion": "ANEXO VII",
+      "nombreFic": "ANEXO VII.pdf",
+      "long": 184161,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489013,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "ANEXO VI.pdf",
+      "long": 172422,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489000,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260630_Otros_Bases de convocatoria_BASES REGULADORAS SUBV ASOCIACIONES 2026_definitivas (1).pdf",
+      "long": 622340,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489028,
+      "descripcion": "ANEXO IX",
+      "nombreFic": "ANEXO IX.pdf",
+      "long": 177420,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489012,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO V.pdf",
+      "long": 172480,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489009,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO III.pdf",
+      "long": 206830,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489006,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO II.pdf",
+      "long": 198891,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489003,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO I.pdf",
+      "long": 176952,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1489010,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO IV.pdf",
+      "long": 194199,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

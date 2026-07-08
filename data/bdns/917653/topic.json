@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "917653",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD REY JUAN CARLOS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "RESOLUCIÓN URJC III CONVOCATORIA PREMIOS CENTRO DE INVESTIGACIÓN DE ESTUDIOS TURÍSTICOS DE LA UNIVERSIDAD REY JUAN CARLOS (CIETUR) A LOS MEJORES TRABAJOS FIN DE GRADO, TRABAJOS FIN DE MÁSTER Y TESIS DOCTORALES RELACIONADOS CON EL TURISMO DEFENDIDOS 2025",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.urjc.es/convocatorias",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917653",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.urjc.es/convocatorias",
+  "text_inicio": "Al día siguiente de la publicación del extracto en el BOCM",
+  "text_fin": "20 días hábiles a partir del día siguiente de la publicación del extracto en el BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-08T04:09:31.667Z"
+}

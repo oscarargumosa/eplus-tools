@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-11-15",
   "deadline": "2024-03-19",
   "deadlineModel": "single-stage",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-DIGITAL-EMERGING-01-54.json",
   "documents": [],
-  "fetchedAt": "2026-07-07T04:03:37.023Z"
+  "fetchedAt": "2026-07-08T04:06:08.730Z"
 }

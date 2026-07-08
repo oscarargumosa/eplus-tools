@@ -1,0 +1,76 @@
+{
+  "id": 1119092,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT ADRIÀ DE BESÒS",
+    "nivel3": "AYUNTAMIENTO DE SANT ADRIÀ DE BESÒS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917531",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 154000,
+  "mrr": false,
+  "descripcion": "Procedimiento de concurrencia para la selecció de una entidad colaboradora para el soporte y la gestión de la convocatoria de bonos comerciales al municipio de Sant Adrià de Besòs",
+  "descripcionLeng": "Procediment de concurrència per a la selecció d’una entitat col·laboradora per al suport i gestió de la convocatòria de bons comercials al municipi de Sant Adrià de Besòs.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES REGULADORES PER A L’ATORGAMENT DE SUBVENCIONS DE LES CAMPANYES DE BONS COMERCIALS PER AL FOMENT DEL COMERÇ DE PROXIMITAT (ADRIBONS)",
+  "urlBasesReguladoras": "https://nuvol.sant-adria.cat/index.php/s/74WTkxzmyraAL2k",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación en el BOPB",
+  "textFin": "5 días hábiles a partir del día de la publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1488998,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Resolucio_2aconvocatoria.pdf",
+      "long": 365314,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    },
+    {
+      "id": 1488997,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolucion_Adribons_2aconv_cast.pdf",
+      "long": 376101,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1119216,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE OVIEDO",
+    "nivel3": null
+  },
+  "sedeElectronica": "Contratos proyectos I+D - Universidad de Oviedo - uniovi.es",
+  "codigoBDNS": "917655",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12741.62,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA VICERRECTORA DE INVESTIGACIÓN DE LA  \nUNIVERSIDAD DE OVIEDO PARA LA CONTRATACIÓN DE PERSONAL INVESTIGADOR Y TÉCNICO DE APOYO SEGUN ART.23 3.bis \nDE LA LEY 14/2011 DE LA CIENCIA, LA TECNOLOGÍA Y LA INNOVACIÓN\n(convocatoria JUNIO EXTRA 7",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Acuerdo de 28 de julio de 2023, del Consejo \nde Gobierno de la Universidad de Oviedo, por el que se aprueba el Reglamento para la contratación de personal investigador y \ntécnico de apoyo conforme a las modalidades de la Ley 14/2011, DE LA C.T.I",
+  "urlBasesReguladoras": "https://sede.asturias.es/bopa/2023/09/29/2023-08547.pd",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Primer día hábil siguiente a la publicación en el BOPA",
+  "textFin": "10  días hábiles a partir del siguiente de la publicación en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489363,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución_firmado.pdf",
+      "long": 308732,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
