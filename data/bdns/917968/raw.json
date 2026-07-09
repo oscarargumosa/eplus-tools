@@ -1,0 +1,76 @@
+{
+  "id": 1119529,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE BARCELONA",
+    "nivel3": "ORGANISMO AUTÒNOMO INSTITUT DEL TEATRE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917968",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS PARA LOS/LAS ALUMNOS/AS DEL INSTITUTO DEL TEATRO DEL CURSO ACADÉMICO 2025-2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ D’AJUTS ECONÒMICS PER ALS/LES ALUMNES DE L’INSTITUT DEL TEATRE DEL CURS ACADÈMIC 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones",
+  "urlBasesReguladoras": "https://www.diba.cat/documents/446885/0/Ordenan%C3%A7a+General+Subvencions+17.pdf/01e71b5c-561b-4c94-a7a9-584247c623e5",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-13",
+  "fechaFinSolicitud": "2026-07-24",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490321,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "annex_l_ajuts_economics_25-26_rw_sgb_v2.pdf",
+      "long": 237858,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490320,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "annex_III_ajuts_econòmics_25-26_(cast)_v2.pdf",
+      "long": 229140,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

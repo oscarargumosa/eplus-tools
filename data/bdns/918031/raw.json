@@ -1,0 +1,72 @@
+{
+  "id": 1119592,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LA RÀPITA",
+    "nivel3": "AYUNTAMIENTO DE LA RÀPITA"
+  },
+  "sedeElectronica": "https://actio.dipta.cat/catalegserveis/id/4313620002/servei/AT113_ATENC_00001?origen=seu",
+  "codigoBDNS": "918031",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 33000,
+  "mrr": false,
+  "descripcion": "Convocatoria de becas para el apoyo al alumnado de estudios superiores para el curso 2025-2026",
+  "descripcionLeng": "Convocatòria de beques per al suport a l'alumnat d'estudis superiors per al curs 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de la convocatoria de las becas para el apoyo del alumnado de estudios superiores para el curso 2025-2026",
+  "urlBasesReguladoras": "https://larapita.cat/ajuts-i-subvencions/beques-per-transport-per-a-estudis-superiors/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-10",
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490420,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Extracte_convocatoria_2026_cat.pdf",
+      "long": 447066,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490418,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Extracte_convocatoria_2026_cast.pdf",
+      "long": 449025,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

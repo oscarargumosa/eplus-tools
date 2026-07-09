@@ -1,0 +1,80 @@
+{
+  "id": 1119645,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ZUMAIA",
+    "nivel3": "AYUNTAMIENTO DE ZUMAIA"
+  },
+  "sedeElectronica": "https://udal.egoitza.gipuzkoa.eus/WAS/AYTO/USCServicioCiudadanoVer15WEB/home.do?ayto=081&hizkuntza=CA",
+  "codigoBDNS": "918084",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el año 2026 de las ayudas para el alquiler de vivienda en el municipio de Zumaia, destinadas a jóvenes de entre 18-35 años",
+  "descripcionLeng": "Zumaiako herrian, 18-35 urte bitarteko gazteei etxebizitzak alokatzeko diru- laguntza emateko deialdia 2026 urterako",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Aprobar definitivamente de la modificación de la Ordenanza reguladora por la que se establece la concesión de ayudas para el alquiler de vivienda a jóven",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/07/17/c2505268.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "El plazo de presentación será desde el día siguiente al de la publicación en el BOG",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490567,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Deialdia_18_35.pdf",
+      "long": 292690,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490568,
+      "descripcion": "Hoja de solicitud",
+      "nombreFic": "Inprimakia_Elebi.pdf",
+      "long": 200561,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490566,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Deialdia_18_35.pdf",
+      "long": 292690,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

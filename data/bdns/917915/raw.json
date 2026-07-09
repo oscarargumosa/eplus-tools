@@ -1,0 +1,112 @@
+{
+  "id": 1119476,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917915",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBV. ASOC.CANINAS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1er. día siguiente a la publicación extracto en el BOP",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490103,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES.pdf",
+      "long": 203837,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490104,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO_I.pdf",
+      "long": 174059,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490105,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO_II.pdf",
+      "long": 135628,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490109,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO_III.pdf",
+      "long": 134364,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490107,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO_V.pdf",
+      "long": 115057,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490108,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "ANEXO_VI.pdf",
+      "long": 128511,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490106,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO_IV.pdf",
+      "long": 146465,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1119388,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "XOVE",
+    "nivel3": "AYUNTAMIENTO DE XOVE"
+  },
+  "sedeElectronica": "https://xove.sedelectronica.gal",
+  "codigoBDNS": "917827",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS AYUDAS AL ESTUDIO EN LA MODALIDAD DE ESTANCIA, COMEDOR Y TRANSPORTE PARA EL CURSO 2025-2026",
+  "descripcionLeng": "CONVOCATORIA DAS AXUDAS AO ESTUDO NA MODALIDADE DE ESTANCIA, COMEDOR E TRANSPORTE PARA O CURSO 2025-2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES APROBADAS A TRAVÉS DE LA ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE XOVE PUBLICADAS EN EL BOP Mº. 136 DE 16 DE JUNIO DE 2025",
+  "urlBasesReguladoras": "https://xove.sedelectronica.gal/transparency/676b7e81-659d-4cf9-9e3b-9b3918520218/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el momento de la publicación en el BOP del extracto de la convocatoria",
+  "textFin": "A los 20 días hábiles de la publicación en el BOP del estracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489916,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA DAS AXUDAS PARA  ESTANCIA, COMEDOR E TRANSPORTE CURSO 25-26.pdf",
+      "long": 267880,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489914,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA DE LAS AYUDAS PARA ESTANCIA, COMEDOR Y TRANSPORTE CURSO 25-26.pdf",
+      "long": 281439,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

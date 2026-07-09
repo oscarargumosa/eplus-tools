@@ -1,0 +1,112 @@
+{
+  "id": 1119618,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUARDAMAR DEL SEGURA",
+    "nivel3": "AYUNTAMIENTO DE GUARDAMAR DEL SEGURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918057",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 29560,
+  "mrr": false,
+  "descripcion": "Bases  y convocatoria para la concesión de ayudas al transporte para estudiantes jóvenes desplazados fuera del municipio de Guardamar del Segura, curso 2025-2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases  y convocatoria para la concesión de ayudas al transporte para estudiantes jóvenes desplazados fuera del municipio de Guardamar del Segura, curso 2025-2026.",
+  "urlBasesReguladoras": "https://guardamardelsegura.sedelectronica.es/transparency/28a9b615-fd39-48f1-87ca-859665a7c4fe/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente a la publicación en el BOP de las bases y convocatoria",
+  "textFin": "15 días naturales a partir del día siguiente a la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490508,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CERTIFICADO 2026-0241 ACUERDO JGL NUM. 17_26 DE 06_07_26 BASES Y CONVOCATORIA DE AYUDAS AL TRANSPORTE PARA ESTUDIANTES JÓVENES DESPLAZADOS FUERA DEL TÉRMINO.pdf",
+      "long": 2366834,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490509,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I - MODELO DE SOLICITUD AYUDAS AL TRANSPORTE.pdf",
+      "long": 319909,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490510,
+      "descripcion": "Anexo II",
+      "nombreFic": "ANEXO II - DECLARACIÓN RESPONSABLE.pdf",
+      "long": 298322,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490514,
+      "descripcion": "Edicto publicación bases y convocatoria.",
+      "nombreFic": "EDICTO 2026-0137 [Edicto ayudas al transporte 2025-2026].pdf",
+      "long": 1438785,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490512,
+      "descripcion": "Anexo IV",
+      "nombreFic": "ANEXO IV - MODELO AEAT CONSENTIMIENTO RECABAR DATOS TRIBUTARIOS.pdf",
+      "long": 164625,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490513,
+      "descripcion": "Anexo V",
+      "nombreFic": "ANEXO V - CONSENTIMIENTO PARA LA SEGURIDAD SOCIAL.pdf",
+      "long": 195666,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490511,
+      "descripcion": "Anexo III",
+      "nombreFic": "ANEXO III - EC 1 Solicitud Alta de Terceros.pdf",
+      "long": 278415,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

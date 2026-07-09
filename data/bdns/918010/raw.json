@@ -1,0 +1,80 @@
+{
+  "id": 1119571,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BALMASEDA",
+    "nivel3": "AYUNTAMIENTO DE BALMASEDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918010",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 171000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para la reducción del desempleo y para la promoción de la actividad económica en Balmaseda durante 2026",
+  "descripcionLeng": "2026ko urtean zehar Balmasedako jarduera ekonomikoa sustatu eta langabezia murrizteko laguntzak emateko oinarriak diru-laguntzen deialdia",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Desempleo",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas para la reducción del desempleo y para la promoción de la actividad económica en Balmaseda durante 2026",
+  "urlBasesReguladoras": "www.balmaseda.eus",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-01",
+  "fechaFinSolicitud": "2026-10-02",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490393,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "castellano .pdf",
+      "long": 102252,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490402,
+      "descripcion": "convocatoria",
+      "nombreFic": "decreto convocatoria empleo.pdf",
+      "long": 328056,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490396,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "euskera.pdf",
+      "long": 96432,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

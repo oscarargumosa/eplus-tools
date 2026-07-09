@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "918079",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOGENTE/MOIXENT / AYUNTAMIENTO DE MOGENTE/MOIXENT",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "RESOLUCIÓN DE LA CONCEJALÍA-DELEGADA DE JUVENTUD SOBRE LA RECTIFICACIÓN DE ERROR MATERIAL DETECTADO EN LA RESOLUCIÓN  NÚM. 1028 DE 22 DE JUNIO DE 2026 SOBRE LAS BASES DE LOS CONCURSOS DE LA JUVENTUD MOIXENT 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://moixent.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918079",
+  "documents": [
+    {
+      "label": "RESOLUCIÓ APROBACIÓ BASES CONCURSOS DE LA JOVENTUT MOIXENT 2026",
+      "url": null
+    },
+    {
+      "label": "RESOLUCIÓ DE LA REGIDORIA-DELEGADA DE JOVENTUT PER LA QUAL S’ ACORDA RECTIFICAR D’OFICI L’ERROR MATERIAL DETECTAT EN LA RESOLUCIÓ DE LA REGIDORIA -DELEGADA DE JOVENTUT NÚM. 1096 DE DATA 1 DE JULIOL DE 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "INSTANCIA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://moixent.sedelectronica.es/preview-document/5bc8354e-05d0-4ed7-a168-4dea69638aae/",
+  "text_inicio": "Desde el siguiente al de la publicación del extracto de las bases en el BOP",
+  "text_fin": "Hasta el dia 27 de juliol a les 14.00 h",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-09T04:09:11.305Z"
+}

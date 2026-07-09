@@ -1,0 +1,219 @@
+{
+  "id": 1119442,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "INSTITUTO DE FOMENTO DE LA REGIÓN DE MURCIA (INFO)"
+  },
+  "sedeElectronica": "https://sede.institutofomentomurcia.es/infodirecto",
+  "codigoBDNS": "917881",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "Resolución de 6/07/2026 del  Presidente del Instituto de Fomento de la Región de Murcia, de convocatoria de ayudas a la participación en ferias, eventos expositivos y promocionales y misiones comerciales. FERIA FOOD AND BEVERAGE MIAMI 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales",
+      "codigo": "94.1"
+    },
+    {
+      "descripcion": "Actividades de servicios de intermediación para el comercio al por menor",
+      "codigo": "47.9"
+    },
+    {
+      "descripcion": "Comercio al por mayor de artículos de uso doméstico",
+      "codigo": "46.4"
+    },
+    {
+      "descripcion": "Comercio al por mayor de equipos para las tecnologías de la información y las comunicaciones",
+      "codigo": "46.5"
+    },
+    {
+      "descripcion": "Comercio al por mayor de materias primas agrarias y de animales vivos",
+      "codigo": "46.2"
+    },
+    {
+      "descripcion": "Comercio al por mayor de otra maquinaria, equipos y suministros",
+      "codigo": "46.6"
+    },
+    {
+      "descripcion": "Comercio al por mayor de productos alimenticios, bebidas y tabaco",
+      "codigo": "46.3"
+    },
+    {
+      "descripcion": "Comercio al por mayor de vehículos de motor, motocicletas y sus repuestos y accesorios",
+      "codigo": "46.7"
+    },
+    {
+      "descripcion": "Comercio al por mayor no especializado",
+      "codigo": "46.9"
+    },
+    {
+      "descripcion": "Comercio al por menor de otros artículos, excepto vehículos de motor y motocicletas",
+      "codigo": "47.7"
+    },
+    {
+      "descripcion": "Comercio al por menor de productos alimenticios, bebidas y tabaco",
+      "codigo": "47.2"
+    },
+    {
+      "descripcion": "Comercio al por menor de vehículos de motor, motocicletas y sus repuestos y accesorios",
+      "codigo": "47.8"
+    },
+    {
+      "descripcion": "Comercio al por menor no especializado",
+      "codigo": "47.1"
+    },
+    {
+      "descripcion": "Fabricación de aceites y grasas vegetales y animales",
+      "codigo": "10.4"
+    },
+    {
+      "descripcion": "Fabricación de bebidas",
+      "codigo": "11.0"
+    },
+    {
+      "descripcion": "Fabricación de otros productos alimenticios",
+      "codigo": "10.8"
+    },
+    {
+      "descripcion": "Fabricación de productos de molinería, almidones y productos amiláceos",
+      "codigo": "10.6"
+    },
+    {
+      "descripcion": "Fabricación de productos de panadería y pastas alimenticias",
+      "codigo": "10.7"
+    },
+    {
+      "descripcion": "Fabricación de productos lácteos y hielo comestible",
+      "codigo": "10.5"
+    },
+    {
+      "descripcion": "Fabricación de productos para la alimentación animal",
+      "codigo": "10.9"
+    },
+    {
+      "descripcion": "Intermediarios del comercio al por mayor",
+      "codigo": "46.1"
+    },
+    {
+      "descripcion": "Organización de convenciones y ferias de muestras",
+      "codigo": "82.3"
+    },
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    },
+    {
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p.",
+      "codigo": "82.9"
+    },
+    {
+      "descripcion": "Procesado y conservación de carne y elaboración de productos cárnicos",
+      "codigo": "10.1"
+    },
+    {
+      "descripcion": "Procesado y conservación de frutas y hortalizas",
+      "codigo": "10.3"
+    },
+    {
+      "descripcion": "Procesado y conservación de pescados, crustáceos y moluscos",
+      "codigo": "10.2"
+    },
+    {
+      "descripcion": "Restaurantes y puestos de comidas",
+      "codigo": "56.1"
+    },
+    {
+      "descripcion": "Servicios de bebidas",
+      "codigo": "56.3"
+    },
+    {
+      "descripcion": "Servicios de catering y otros servicios de comidas",
+      "codigo": "56.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Orden de 23/04/24 de bases reguladoras de las ayudas del Instituto de Fomento de la Región de Murcia dirigidas la participación en ferias y misiones comerciales, corrección de errores de 14/05/2024 y ordenes  modificación de bases 16/05/2025 y 3/11/2025.",
+  "urlBasesReguladoras": "https://www.borm.es/services/anuncio/ano/2024/numero/2148/pdf?id=826601",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en el BORM.",
+  "textFin": "Hasta 8 días hábiles.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489978,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria FERIA MIAMI  2026.pdf",
+      "long": 228920,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489982,
+      "descripcion": "Orden de 23/04/2024 de bases reguladoras",
+      "nombreFic": "Orden de bases reguladoras.pdf",
+      "long": 670168,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489989,
+      "descripcion": "Orden de 3/11/2025 de modificación de bases",
+      "nombreFic": "Orden de 3_11_2025 de modif bases reguladoras.pdf",
+      "long": 244784,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489988,
+      "descripcion": "Orden de 16/05/2025 de modificación de bases reguladoras",
+      "nombreFic": "Orden de 16_05_2025 de modif bases reguladoras.pdf",
+      "long": 267431,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489984,
+      "descripcion": "Corrección de errores",
+      "nombreFic": "Correccion de errores Bases reguladoras.pdf",
+      "long": 232805,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1119420,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT CUGAT DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE SANT CUGAT DEL VALLÈS"
+  },
+  "sedeElectronica": "https://seu.santcugat.cat/seu/default.aspx",
+  "codigoBDNS": "917859",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 38000,
+  "mrr": false,
+  "descripcion": "Convocatoria para otorgar subvenciones en régimen de concurrencia competitiva, dirigidas al fomento de la dinamización empresarial y actuaciones orientadas a la atracción y retención de talento del año 2026",
+  "descripcionLeng": "Convocatòria per a l'atorgament de subvencions en règim de concurrència competitiva adreçades al foment de la dinamització empresarial i actuacions orientades a l'atracció i retenció de talent de l'any 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "2026 - Subvenciones Fomento de la dinamización empresarial y actuaciones orientadas a la atracción y retención de talento",
+  "urlBasesReguladoras": "https://seu.santcugat.cat/seu/ProcedimientoTabs.aspx?tab=1&idProc=350&idnct=2054&x=%2fJqyLF0VOW5ZO7K%2fJjdZjw",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en el Boletín Oficial de la Provincia de Barcelona",
+  "textFin": "10 días hábiles después del inicio de solicitud",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489960,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA 2026_ESP.pdf",
+      "long": 603940,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489951,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convo_cat.pdf",
+      "long": 1201024,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490010,
+      "descripcion": "Extracto de la convocatoria",
+      "nombreFic": "Extracto.pdf",
+      "long": 411909,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

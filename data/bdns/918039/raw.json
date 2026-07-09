@@ -1,0 +1,83 @@
+{
+  "id": 1119600,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA ECONOMÍA, HACIENDA Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918039",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1450000,
+  "mrr": false,
+  "descripcion": "AYUDAS FOMENTO TECNOLOGÍAS RELACIONADAS SISTEMAS AÉREOS NO TRIPULADOS-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "ORDEN DE 8 DE JUNIO DE 2026, DE LA CONSEJERA DE ECONOMÍA, HACIENDA Y EMPLEO, POR LA QUE SE APRUEBAN LAS BASES REGULADORAS PARA LA CONCESIÓN DE AYUDAS DESTINADAS AL FOMENTO DE TECNOLOGÍAS RELACIONADAS CON SISTEMAS AÉREOS NO TRIPULADOS.",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/06/19/BOCM-20260619-17.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA HÁBIL SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "textFin": "QUINCE DÍAS HÁBILES A PARTIR DEL DÍA SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "ayudaEstado": "SA.124100",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.124100",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS REGIONALES A LA INVERSIÓN "
+    },
+    {
+      "descripcion": "ART. 17 AYUDAS A LAS PYME. A LA INVERSIÓN EN FAVOR DE LAS PYME."
+    },
+    {
+      "descripcion": "ART. 18 AYUDAS A LAS PYME. PARA SERVICIOS DE CONSULTORÍA."
+    },
+    {
+      "descripcion": "ART. 19 AYUDAS A LAS PYME. PARA SU PARTICIPACIÓN EN FERIAS COMERCIALES."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490472,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS.pdf",
+      "long": 209026,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

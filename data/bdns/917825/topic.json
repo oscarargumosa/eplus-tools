@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "917825",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / DIRECCIÓN GENERAL DE ECONOMÍA CIRCULAR, TRANSICIÓN ENERGÉTICA Y CAMBIO CLIMÁTICO",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "Bases reguladoras para subvenciones destinadas a financiar inversiones en energía, transición energética, cambio climático, prevención y gestión de residuos y economía circular, conforme art. 13 de Texto refundido de Ley de Subvenciones de Illes Balears.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-07-08",
+  "open_date": "2026-06-26",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1400000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "32",
+      "descripcion": "Otras industrias manufactureras"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "38.2",
+      "descripcion": "Valorización de residuos"
+    }
+  ],
+  "apply_url": "https://www.caib.es/sites/subvencions_residus/ca/convo_economia_circular_entitats_deconomia_social/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917825",
+  "documents": [],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/eli/es-ib/o/2025/11/11/31/dof/spa/html",
+  "text_inicio": "Termini de presentació: dos mesos des de l'endemà de la publicació de la convocatòria en el BOIB.",
+  "text_fin": "26.08.2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 216536,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/ca/2026/12293/717061/resolucio-del-conseller-d-empresa-autonoms-i-energ",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-06-25"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-09T04:09:11.243Z"
+}

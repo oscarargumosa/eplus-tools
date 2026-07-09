@@ -1,0 +1,72 @@
+{
+  "id": 1119552,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BENAVENTE",
+    "nivel3": "AYUNTAMIENTO DE BENAVENTE"
+  },
+  "sedeElectronica": "aytobenavente.org",
+  "codigoBDNS": "917991",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LAS SUBVENCIONES OTORGADAS EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DESTINADAS A FINANCIAR A EMPRENDEDORES DEL PROGRAMA BENEMPRENDE EN EL MARCO DEL PLAN TERRITORIAL DE FOMENTO DEL MUNICIPIO DE BENAVENTE, ANUALIDAD 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS SUBVENCIONES OTORGADAS EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DESTINADAS A FINANCIAR A EMPRENDEDORES DEL PROGRAMA BENEMPRENDE EN EL MARCO DEL PLAN TERRITORIAL DE FOMENTO DEL MUNICIPIO DE BENAVENTE, ANUALIDAD 2026.",
+  "urlBasesReguladoras": "https://benavente.es/ayuntamiento/portal-de-transparencia/#subvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación de la convocatoria en el B.O.P. Zamora",
+  "textFin": "15 días hábiles contados a partir del día siguiente publicación de la convocatoria en el BOP Zamora",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490360,
+      "descripcion": "DECRETO APROBACION BASES",
+      "nombreFic": "Decreto aprobación bases y convocatoria BEN EMPRENDE 2026.pdf",
+      "long": 487588,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490357,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES BEN EMPRENDE 2026.pdf",
+      "long": 1519572,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,96 @@
+{
+  "id": 1119640,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOGENTE/MOIXENT",
+    "nivel3": "AYUNTAMIENTO DE MOGENTE/MOIXENT"
+  },
+  "sedeElectronica": "https://moixent.sedelectronica.es",
+  "codigoBDNS": "918079",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA CONCEJALÍA-DELEGADA DE JUVENTUD SOBRE LA RECTIFICACIÓN DE ERROR MATERIAL DETECTADO EN LA RESOLUCIÓN  NÚM. 1028 DE 22 DE JUNIO DE 2026 SOBRE LAS BASES DE LOS CONCURSOS DE LA JUVENTUD MOIXENT 2026",
+  "descripcionLeng": "RESOLUCIÓ DE LA REGIDORIA-DELEGADA DE JOVENTUT SOBRE LA RECTIFICACIÓ D'ERROR MATERIAL DETECTAT EN LA RESOLUCIÓ Núm. 1028 DE 22 DE JUNY DE 2026 SOBRE LES BASES DELS CONCURSOS DE LA JOVENTUT MOIXENT 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DE LOS CONCURSOS PARA LA JUVENTUD DE MOIXENT 2026",
+  "urlBasesReguladoras": "https://moixent.sedelectronica.es/preview-document/5bc8354e-05d0-4ed7-a168-4dea69638aae/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el siguiente al de la publicación del extracto de las bases en el BOP",
+  "textFin": "Hasta el dia 27 de juliol a les 14.00 h",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490527,
+      "descripcion": "RESOLUCIÓ APROBACIÓ BASES CONCURSOS DE LA JOVENTUT MOIXENT 2026",
+      "nombreFic": "20260619_Resolució_DECRETO 2026-1028 [Resolució PR_2026_1129 - Decreto de Alcaldia (sin fiscalizacion)] (11).pdf",
+      "long": 1079838,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490528,
+      "descripcion": "RESOLUCIÓ DE LA REGIDORIA-DELEGADA DE JOVENTUT PER LA QUAL S’ ACORDA RECTIFICAR D’OFICI L’ERROR MATERIAL DETECTAT EN LA RESOLUCIÓ DE LA REGIDORIA -DELEGADA DE JOVENTUT NÚM. 1096 DE DATA 1 DE JULIOL DE 2026",
+      "nombreFic": "20260708_Resolució_DECRETO 2026-1132 [Resolució PR_2026_1240 - Decreto de Alcaldia (sin fiscalizacion)].pdf",
+      "long": 1017604,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490522,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260707_Uns altres_RESOLUCIÓ CASTELLÀ PDF (1).pdf",
+      "long": 257849,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490516,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260701_Resolució_DECRETO 2026-1096 [Resolució PR_2026_1207 - Decreto de Alcaldia (sin fiscalizacion)] (4).pdf",
+      "long": 1097617,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1490529,
+      "descripcion": "INSTANCIA",
+      "nombreFic": "20260625_Uns altres_INSTANCIA CONCURSOS DE LA JOVENTUT 2026.pdf",
+      "long": 205598,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

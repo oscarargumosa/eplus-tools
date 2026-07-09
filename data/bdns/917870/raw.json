@@ -1,0 +1,72 @@
+{
+  "id": 1119431,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NAVAS DEL REY",
+    "nivel3": "AYUNTAMIENTO DE NAVAS DEL REY"
+  },
+  "sedeElectronica": "www.navasdelrey.sedeelectronica.es",
+  "codigoBDNS": "917870",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 600,
+  "mrr": false,
+  "descripcion": "patrocinio para la difusión de publicidad escudo municipal en campeonatos nacionales e internacionales (BOXEO)",
+  "descripcionLeng": "patrocinio para la difusión de publicidad escudo municipal en campeonatos nacionales e internacionales (BOXEO)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "patrocinio para la difusión de publicidad escudo municipal en campeonatos nacionales e internacionales (BOXEO)",
+  "urlBasesReguladoras": "file:///C:/Users/Usuario/Downloads/20260625_Convenio_CONVENIO%20PATROCINIO%20DEPORTIVO%20CARMEN%20(boxeadora)-3.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": null,
+  "textInicio": "01/01/2026",
+  "textFin": "31/12/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489974,
+      "descripcion": "resolución concesion patrocinio",
+      "nombreFic": "20260513_Resolución_DECRETO 2026-0417 Carmen.pdf",
+      "long": 290210,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    },
+    {
+      "id": 1489973,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260511_Solicitud_Instancia firmada-2026-E-RC-1364-3.pdf",
+      "long": 546047,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
