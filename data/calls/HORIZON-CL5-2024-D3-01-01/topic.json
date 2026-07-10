@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-09-12",
   "deadline": "2024-01-16",
   "deadlineModel": "single-stage",
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D3-01-01.json",
   "documents": [],
-  "fetchedAt": "2026-07-09T04:05:48.942Z"
+  "fetchedAt": "2026-07-10T04:05:53.424Z"
 }
