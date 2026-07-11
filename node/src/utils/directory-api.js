@@ -202,6 +202,19 @@ async function getMapMarkers(params = {}) {
   return fetchJson('/map', { query: params });
 }
 
+// POST /retrieve/projects-similar  (Experience RAG — TASK-006)
+// Body: { query_text, entity_oid?, k?, min_score?, exclude_identifiers? }
+// Devuelve proyectos aprobados semánticamente similares con match score.
+async function retrieveProjectsSimilar(body = {}) {
+  return fetchJson('/retrieve/projects-similar', { method: 'POST', body });
+}
+
+// GET /project/:identifier/full  (resumen completo para el drawer de lectura)
+// Devuelve project_summary_full + objectives/activities/impact + report_*.
+async function getProjectFull(identifier) {
+  return fetchJson('/project/' + encodeURIComponent(identifier) + '/full');
+}
+
 // GET /health  (sin cache, sin retry — para healthchecks)
 async function health() {
   const url = BASE_URL + '/health';
@@ -232,6 +245,8 @@ module.exports = {
   getStatsBreakdown,
   getGlobalStats,
   getMapMarkers,
+  retrieveProjectsSimilar,
+  getProjectFull,
   health,
   // ops
   clearCache,
