@@ -1,0 +1,64 @@
+{
+  "id": 1119817,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "INSTITUTO PARA LA COMPETITIVIDAD EMPRESARIAL DE CASTILLA Y LEÓN"
+  },
+  "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es",
+  "codigoBDNS": "918256",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000000,
+  "mrr": false,
+  "descripcion": "Resolución de 4 de junio de 2026 de la Presidencia dell ICECYL que aprueba la convocatoria de subvenciones destinadas a financiar la consolidación de los centros tecnológicos inscritos en el Registro de Centros Tecnológicos de Castilla y León",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Orden EYH/119/2025 de 12 de febrero, por la que se aprueban las bases reguladoras de las subvenciones destinadas a financiar la consolidación de los centros tecnológicos inscritos en el Registro de Centros Tecnológicos de Castilla y León",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2025/02/18/pdf/BOCYL-D-18022025-21.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCYL",
+  "textFin": "21 días desde la publicación del Extracto de la convocatoria en el BOCYL",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491006,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Convocatoria 2026_Consolidación CCTT_Fda.pdf",
+      "long": 383163,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,68 @@
+{
+  "id": 1120072,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÁ DE HENARES",
+    "nivel3": "AYUNTAMIENTO DE ALCALÁ DE HENARES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918511",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4500,
+  "mrr": false,
+  "descripcion": "Acuerdo Junta de Gobierno Local del 03-07-2026 por el que se aprueban las bases reguladoras para el Concurso de Comparsas  de la cabalgata de Feria y Fiestas 2026 en Alcalá de Henares.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    },
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Acuerdo Junta de Gobierno Local del 03-07-2026 por el que se aprueban las bases reguladoras para el Concurso de Comparsas  de la cabalgata de Feria y Fiestas 2026 en Alcalá de Henares.",
+  "urlBasesReguladoras": "www.ayto-alcaladehenares.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-07-30",
+  "textInicio": "Desde la publicación de las presentes bases en la página del Ayto.",
+  "textFin": "30 de julio de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491724,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ACUERDO Y BASES CONCURSO COMPARSAS FERIAS 2026.pdf",
+      "long": 870074,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "918592",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE SALUD",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Convocatoria para la concesión de financiación para la intensificación de la actividad investigadora en los centros de Atención Primaria del Servicio Navarro de Salud-Osasunbidea durante el año 2026.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": "2026-08-10",
+  "deadline": "2026-09-09",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://tramitespersonal.navarra.es/es/tramites/on/- /line/convocatoria-para-la-concesion-de-financiacion-para-la-intensificacion-de-laactividad- investigadora-en-los-centros-de-atencion-primaria-del-servicio-navarro-desalud- osasunbidea-durante-el-ano-2026-?back=true&pageBackId=7572859",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918592",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "convocatoria-para-la-concesion-de-financiacion-para-la-intensificacion-de-la-actividad-investigadora-en-los-centros-de-atencion-primaria-del-servicio-navarro-de-salud-osasunbidea-durante-el-ano-2026-",
+  "text_inicio": "Desde el día siguiente a su publicación en el BON",
+  "text_fin": "30 días naturales a contar desde el día siguiente al de la publicación de la convocatoria.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.782Z"
+}

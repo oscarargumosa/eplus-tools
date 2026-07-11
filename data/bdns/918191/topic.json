@@ -1,0 +1,78 @@
+{
+  "source": "bdns",
+  "source_id": "918191",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "Resolución de la consejera de Inclusión Social, Juventud, Familias e Igualdad por la que se convocan subvenciones a entidades sin ánimo de lucro destinadas a la realización de proyectos de ocio inclusivo para la población joven de Cantabria.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918191",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Orden ISO-04-2026 (Modificación Bases Reguladoras)",
+      "url": null
+    },
+    {
+      "label": "2026 ANEXO III - Ocio Inclusivo",
+      "url": null
+    },
+    {
+      "label": "2026 ANEXO I - Ocio Inclusivo",
+      "url": null
+    },
+    {
+      "label": "2026 ANEXO II - Ocio Inclusivo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=421609",
+  "text_inicio": "Día hábil siguiente a la publicación del extracto de la convocatoria en el B.O.C.",
+  "text_fin": "Pasados veinte días hábiles siguientes a la publicación del extracto de la convocatoria en el B.O.C.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.696Z"
+}

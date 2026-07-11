@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Climate change adaptation\",\"Nature\",\"Food sciences\",\"Climate change mitigation\",\"Agriculture, Rural Development, Fisheries\",\"International Cooperation\",\"Health sciences\",\"Ocean sustainability and blue economy\",\"Seafood quality and safety\",\"Environment\",\"Nutrition, Dietetics\",\"aquaculture by-products\",\"novel foods\",\"food\",\"circularity\",\"inter-disciplinary\",\"microalgae\",\"health\",\"research\",\"microbial proteins\",\"food by-products\",\"innovation\",\"sustainable nutrition\",\"alternative proteins\",\"multi actor approach\",\"dietary shift\",\"new technology\",\"production processes\",\"co-benefits\",\"biodiversity\",\"safe food\",\"macroalgae\",\"insect proteins\",\"food system\",\"food systems\",\"novel food\",\"multi actor\",\"new technologies\",\"economic impact\",\"multi-actor\",\"alternative sources of proteins\",\"healthy nutrition\",\"social impact\",\"sustainability\",\"multi-actor approach\",\"Food 2030\"]"
+    "[\"Climate change adaptation\",\"Nature\",\"Food sciences\",\"Climate change mitigation\",\"Agriculture, Rural Development, Fisheries\",\"International Cooperation\",\"Health sciences\",\"Ocean sustainability and blue economy\",\"Seafood quality and safety\",\"Environment\",\"Nutrition, Dietetics\",\"aquaculture by-products\",\"novel foods\",\"food\",\"circularity\",\"inter-disciplinary\",\"microalgae\",\"health\",\"research\",\"microbial proteins\",\"food by-products\",\"innovation\",\"sustainable nutrition\",\"alternative proteins\",\"multi actor approach\",\"dietary shift\",\"new technology\",\"production processes\",\"co-benefits\",\"biodiversity\",\"safe food\",\"macroalgae\",\"insect proteins\",\"food system\",\"food systems\",\"multi actor\",\"new technologies\",\"economic impact\",\"novel food\",\"multi-actor\",\"alternative sources of proteins\",\"healthy nutrition\",\"social impact\",\"sustainability\",\"multi-actor approach\",\"Food 2030\"]"
   ],
   "crossCuttingPriorities": [
     "EC-WORLD",
@@ -27,5 +27,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-FARM2FORK-01-7.json",
   "documents": [],
-  "fetchedAt": "2026-07-10T04:05:53.244Z"
+  "fetchedAt": "2026-07-11T04:06:46.540Z"
 }

@@ -1,0 +1,80 @@
+{
+  "id": 1119660,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARBERÀ DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE BARBERÀ DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918099",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 116900,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE CONCESIÓN DE AYUDAS ECONÓMICAS DE MATERIAL ESCOLAR Y/O ACTIVIDADES DIVERSAS. CURSO 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES QUE REGULAN LA CONCESIÓN DE AYUDAS ECONÓMICAS A LOS CENTROS EDUCATIVOS DE EDUCACIÓN INFANTIL Y PRIMARIA DE BARBERÀ DEL VALLÈS PARA EL APOYO A LA  TAREA EDUCATIVA DE LOS CENTROS",
+  "urlBasesReguladoras": "http://www.bdv.cat/bases-reguladores-especifiques-la-concessio-dajuts-economics-als-centres-deducacio-infantil-i",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-15",
+  "fechaFinSolicitud": "2026-08-13",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490632,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Anuncio material. Curs 2026-2027.pdf",
+      "long": 397062,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490634,
+      "descripcion": "Certificat JG 17-06-26",
+      "nombreFic": "Certificat JG 17-06-26.pdf",
+      "long": 450051,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490633,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Anunci material. Curs 2026-2027.pdf",
+      "long": 473286,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

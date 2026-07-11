@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "918502",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / FONDO DE GARANTÍA AGRARIA Y PESQUERA DE LAS ISLAS BALEARES (FOGAIBA)",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "Ayudas para la puesta en marcha de grupos de cooperación para la innovación en digitalización y gestión sostenible de explotaciones ganaderas 2026",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": "2026-09-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01",
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas"
+    }
+  ],
+  "apply_url": "http://www.caib.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918502",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/eli/es-ib/o/2023/04/05/10/dof/spa/html",
+  "text_inicio": "Desde el día siguiente a la publicación de la Resolución en el BOIB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.764Z"
+}

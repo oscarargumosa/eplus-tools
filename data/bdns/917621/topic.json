@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "917621",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO",
+  "nuts_codes": [
+    "ES13"
+  ],
+  "nuts_primary": "ES13",
+  "title": "Orden IND/32/2026, de 6 de julio, por la que se aprueba para el año 2026 la convocatoria  de subvenciones para asociaciones de comerciantes y sus federaciones y confederaciones y cooperativas de detallistas .",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-07-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 250000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917621",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo II Declaración de facturas, cuenta justificativa",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=301563",
+  "text_inicio": "Al día siguiente al de publicación del extracto",
+  "text_fin": "A los 15  días hábiles a partir del día siguiente a a la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.511Z"
+}

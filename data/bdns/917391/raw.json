@@ -1,0 +1,67 @@
+{
+  "id": 1118952,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "DIRECCIÓN GENERAL DE COMERCIO, FERIAS Y ARTESANÍA"
+  },
+  "sedeElectronica": "https://www.aragon.es/tramitador/-/tramite/ayudas-destino-iniciativas-empresariales-inversion-mejora-pequeno-comercio-provincia-teruel/convocatoria-2026",
+  "codigoBDNS": "917391",
+  "fechaRecepcion": "2026-07-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500000,
+  "mrr": false,
+  "descripcion": "ORDEN ECE/  /2026,      , por la que se convocan ayudas con destino a iniciativas empresariales de inversión y mejora en el pequeño comercio de la provincia de Teruel.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORDEN EIE/815/2016, de 25 de julio, por la que se establecen las bases reguladoras de las ayudas correspondientes a actividades y\nproyectos del sector artesano, comercio interior y ferias, en la Comunidad Autónoma de Aragón",
+  "urlBasesReguladoras": "https://www.aragon.es/documents/20127/60109123/ORDEN+EIE+815+2016+de+25+de+julio.pdf/33f729d0-70f8-ea97-47bd-19f8e01c6628?t=1599567090557",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente de la publicación de la convocatoria  ",
+  "textFin": "un mes desde el día siguiente a la publicación del extracto de la convocatoria, en el BOA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491846,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CSVFX0TZD82K11E0XFIL Orden convocatoria FITE 9-7-26 con informe fiscal.pdf",
+      "long": 818265,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

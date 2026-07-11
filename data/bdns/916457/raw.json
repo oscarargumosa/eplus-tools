@@ -1,0 +1,127 @@
+{
+  "id": 1118018,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916457",
+  "fechaRecepcion": "2026-07-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "AYUDAS AUTÓNOMOS SECTOR RESINA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Recolección de productos silvestres, excepto madera",
+      "codigo": "02.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES CONCURRENCIA COMPETITIVA 2020",
+  "urlBasesReguladoras": "https://www.dipuleon.es/file;jsessionid=FA9DBCB94D1AC779A344F4CE0645D2AD/31SgncDu9RU",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL SIGUIENTE A LA FECHA DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "VEINTE DÍAS HÁBILES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Árboles y otras plantas vivos, bulbos, raíces y similares, flores cortadas y follaje ornamental (parte XIII)"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1490806,
+      "descripcion": "Anexo III Solicitud abono",
+      "nombreFic": "Anexo_III.pdf",
+      "long": 128466,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490804,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "Anexo_I.pdf",
+      "long": 211477,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490805,
+      "descripcion": "Anexo II Declaración cumplimiento requisitos",
+      "nombreFic": "Anexo_II.pdf",
+      "long": 130042,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490810,
+      "descripcion": "Acuerdo Pleno aprobación convocatoria y bases",
+      "nombreFic": "7._Certif._29_Pleno_27_mayo_2026._Convocatoria_y_bases_subv._autónomos_sector_resina_2026_-_SEFYCU_6891899.pdf",
+      "long": 542378,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490807,
+      "descripcion": "Anexo IV Memoria económica cuenta justificativa",
+      "nombreFic": "Anexo_IV.pdf",
+      "long": 152454,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490808,
+      "descripcion": "Anexo V Memoria actividad",
+      "nombreFic": "Anexo_V.pdf",
+      "long": 135002,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490809,
+      "descripcion": "Anexo VI Ficha de terceros",
+      "nombreFic": "Anexo_VI.pdf",
+      "long": 128037,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490803,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "6._Bases_Resina_2026.pdf",
+      "long": 211562,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

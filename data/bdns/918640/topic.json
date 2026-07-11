@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "918640",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA Y LEÓN / CONSEJERÍA DE AGRICULTURA, GANADERÍA, MEDIO RURAL Y POLÍTICA AMBIENTAL",
+  "nuts_codes": [
+    "ES41"
+  ],
+  "nuts_primary": "ES41",
+  "title": "Orden de 10 de julio de 2026 de la Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental por la que se convocan, para el año 2026, las ayudas destinadas al fomento de las razas autóctonas españolas.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 250000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    }
+  ],
+  "apply_url": "https://www.tramitacastillayleon.jcyl.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918640",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/rd/2011/11/14/1625/dof/spa/pdf",
+  "text_inicio": "El día siguiente de la publicación del extracto de esta convocatoria en el BOCyL",
+  "text_fin": "1 mes desde el inicio",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.108727",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 30 AYUDAS DESTINADAS A LA CONSERVACIÓN DE LOS RECURSOS GENÉTICOS EN LA AGRICULTURA"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.789Z"
+}

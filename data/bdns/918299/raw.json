@@ -1,0 +1,72 @@
+{
+  "id": 1119860,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CAMBADOS",
+    "nivel3": "AYUNTAMIENTO DE CAMBADOS"
+  },
+  "sedeElectronica": "https:// cambados. sedelectronica. gal",
+  "codigoBDNS": "918299",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES MUNICIPALES A ENTIDADES SOCIALES SIN ÁNIMO DE LUCRO 2026",
+  "descripcionLeng": "CONVOCATORIA DE SUBVENCIÓNS MUNICIPAIS A ENTIDADES SOCIAIS SEN ÁNIMO DE LUCRO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Ayuntamiento de Cambados",
+  "urlBasesReguladoras": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2025/08/13/2025056646",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto da convocatoria en el BOPPO",
+  "textFin": "Trancurridos veinte días hábiles contados desde el siguiente a la publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491130,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA PÚBLICA DE SUBVENCIÓNS MUNICIPAIS A ENTIDADES SOCIAIS SEN ÁNIMO DE LUCRO PARA O ANO 2026.pdf",
+      "long": 491619,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491125,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA PÚBLICA DE SUBVENCIÓNS MUNICIPAIS A ENTIDADES SOCIAIS SEN ÁNIMO DE LUCRO PARA O ANO 2026.pdf",
+      "long": 491619,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

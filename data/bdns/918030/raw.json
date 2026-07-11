@@ -1,0 +1,72 @@
+{
+  "id": 1119591,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE SISTEMA SOCIOSANITARIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918030",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15500,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de la Conselleria de Servicios Sociales, Familia e Infancia, de las bases reguladoras de los premios a Tesis Doctorales y Trabajos Finales de master y convocatoria 2026",
+  "descripcionLeng": "RESOLUCIÓ de la Conselleria de Servicis Socials, Família i Infància,de les bases reguladores dels Premis a Tesis Doctorals i Treballs Finals de master i convocatoria 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de la Conselleria de Servicios Sociales, Familia e Infancia, de las bases reguladoras de los premios a Tesis Doctorales y Trabajos Finales de master y convocatoria 2026",
+  "urlBasesReguladoras": "https://serviciossociales.gva.es/va/web/formacion-investigacion-y-calidad-de-los-servicios-sociales/premis",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-14",
+  "fechaFinSolicitud": "2026-08-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492202,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "RESOL. BB+C PREM ASUNCION MTEZ 47-26 - VAL_firmado.pdf",
+      "long": 316429,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1492201,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOL. BB+C PREM ASUNCION MTEZ 47-26 - CAST_firmado.pdf",
+      "long": 316797,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

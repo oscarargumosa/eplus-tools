@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"EOSC and FAIR data\",\"Food toxicology\",\"Food preservation\",\"Food quality\",\"Food technology\",\"Artificial Intelligence\",\"Food storage\",\"Food contamination\",\"Food safety\",\"Digital Agenda\",\"Technology transfer\",\"Knowledge transfer\",\"Food packaging\",\"Food sciences\",\"Food and drink processing\",\"Knowledge and Technology transfer\",\"Food chemistry\",\"Agricultural engineering, food safety\",\"International transfer\",\"Food biotechnology\",\"Food additives\",\"Food traceability\",\"Hygiene\",\"Training\",\"Hygienic design\",\"Food industry\",\"Start up\",\"Food processing\",\"Traceability\",\"Research and Technology Organization\",\"Food safety\",\"Food business operators\",\"Knowledge transfer\",\"Technology Transfer\",\"Food chain\",\"Food and drink processing\",\"Dissemination\",\"Thematic network\",\"Food cluster\",\"Food systems\",\"Food fraud\",\"SME\",\"Universities\",\"RTO\",\"FOOD 2030\",\"Food and drink\"]"
+    "[\"EOSC and FAIR data\",\"Food toxicology\",\"Food preservation\",\"Food quality\",\"Food technology\",\"Artificial Intelligence\",\"Food storage\",\"Food contamination\",\"Food safety\",\"Digital Agenda\",\"Technology transfer\",\"Knowledge transfer\",\"Food packaging\",\"Food sciences\",\"Food and drink processing\",\"Knowledge and Technology transfer\",\"Food chemistry\",\"Agricultural engineering, food safety\",\"International transfer\",\"Food biotechnology\",\"Food additives\",\"Food traceability\",\"Hygiene\",\"Training\",\"Hygienic design\",\"Food industry\",\"Start up\",\"Food processing\",\"Traceability\",\"Research and Technology Organization\",\"Food safety\",\"Food business operators\",\"Knowledge transfer\",\"Technology Transfer\",\"Food chain\",\"Food and drink processing\",\"Dissemination\",\"Thematic network\",\"Food cluster\",\"Food fraud\",\"Food systems\",\"SME\",\"Universities\",\"RTO\",\"FOOD 2030\",\"Food and drink\"]"
   ],
   "crossCuttingPriorities": [
     "EoscAndFairData",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-FARM2FORK-01-3.json",
   "documents": [],
-  "fetchedAt": "2026-07-10T04:05:53.505Z"
+  "fetchedAt": "2026-07-11T04:06:46.257Z"
 }

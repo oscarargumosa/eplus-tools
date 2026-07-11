@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "918651",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE LEÓN / INSTITUTO LEONES DE CULTURA",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "Acuerdo de 18/06/2026 del C.R. del ILC, por el que se convoca la XXVI BIENAL DE POESÍA PROVINCIA DE LEÓN 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918651",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Certificado_punto_9.1_CR18-06-2026_Aprobación_convocatoria_XXVI_Bienal_de_Poesía_2026",
+      "url": null
+    },
+    {
+      "label": "Anexo_II_ Declaración_Responsable_Bienal_de_Poesía_Provincia_de_León_2026",
+      "url": null
+    },
+    {
+      "label": "Anexo_I_ Solicitud_XXVI_Bienal_de_Poesía_Provincia_de_León_2026",
+      "url": null
+    },
+    {
+      "label": "00_EXTRACTO_Convocatoria_XXVI_Bienal_de_Poesía_Provincia_León_26",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "Día siguiente a la publicación del extracto en el BOP",
+  "text_fin": "30 de septiembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.793Z"
+}

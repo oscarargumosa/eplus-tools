@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "918135",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / DIRECCIÓN GENERAL DE POLÍTICA INDUSTRIAL",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "AYUDAS DESTINADAS A PROMOVER GRANDES ACTUACIONES DE INVERSIÓN PARA LA MODERNIZACIÓN DE LA ESTRUCTURA PRODUCTIVA Y DIGITAL DE LA ACTIVIDAD INDUSTRIAL 2026",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": "2026-04-01",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3900000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "95.3",
+      "descripcion": "Reparación y mantenimiento de vehículos de motor y motocicletas"
+    }
+  ],
+  "apply_url": "INDUSTRIA.CAIB.ES",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918135",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://intranet.caib.es/eboibfront/eli/es-ib/o/2024/03/19/9/dof/spa/html",
+  "text_inicio": null,
+  "text_fin": "UN MES",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 216651,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/ca/2026/12247/713341/resolucio-del-conseller-d-empresa-autonoms-i-energ",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-03-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.686Z"
+}

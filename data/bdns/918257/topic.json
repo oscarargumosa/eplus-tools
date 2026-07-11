@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "918257",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PIERA / AYUNTAMIENTO DE PIERA",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA PER A L`ATORGAMENT D`AJUTS ADREÇATS A LES NOVES EMPRESES INSTAL.LADES AL MUNICIPI",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": "2026-07-15",
+  "deadline": "2026-07-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918257",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3921509/aprovacio-inicial-de-la-modificacio-de-les-bases-reguladores-per-a-la-concessio-dels-ajuts-a-les-noves-empreses-instal-lades-al-municipi-ajuntament-de-piera",
+  "text_inicio": "DES DE LA PUBLICACIO DE LA CONVOCATORIA",
+  "text_fin": "DEU DIES HABILS A COMPTAR DE L`ENDEMA DE LA PUBLICACIO DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.704Z"
+}

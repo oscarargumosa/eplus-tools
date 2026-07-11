@@ -1,0 +1,76 @@
+{
+  "id": 1119601,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CATARROJA",
+    "nivel3": "AYUNTAMIENTO DE CATARROJA"
+  },
+  "sedeElectronica": "https://catarroja.sedipualba.es/",
+  "codigoBDNS": "918040",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2100,
+  "mrr": false,
+  "descripcion": "Convocatoria XXVI Certamen Literari Relats Breus Conta’m Dona, 2026",
+  "descripcionLeng": "Convocatòria XXVI Certamen Literari Relats Breus Conta’m Dona, 2026 ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones ayuntamiento de Catarroja",
+  "urlBasesReguladoras": "https://www.catarroja.es/sites/www.catarroja.es/files/documents/Normativa/Ordmunicipals/Persones/ordenanza_general_de_subvenciones_del_ayuntamiento_de_catarroja_0.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-01",
+  "textInicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOP Valencia",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490424,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "03. SEGRA RA_PROPUESTA ACUERDO CONVOCATORIA BASES CONTAM DONA.pdf",
+      "long": 675426,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490421,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "03. SEGRA RA_PROPUESTA ACUERDO CONVOCATORIA BASES CONTAM DONA.pdf",
+      "long": 675426,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

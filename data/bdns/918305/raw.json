@@ -1,0 +1,80 @@
+{
+  "id": 1119866,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URRETXU",
+    "nivel3": "AYUNTAMIENTO DE URRETXU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918305",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Ayudas económicas destinadas para las obras de mejora de la accesibilidad y eficiencia energética, de viviendas y edificios residenciales",
+  "descripcionLeng": "Urretxun dauden etxebizitzetan eta bizitegi-eraikinetan, irisgarritasuna eta energia eraginkortasuna hobetzeko lanetarako dirulaguntzak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ayudas económicas destinadas para las obras de mejora de la accesibilidad y eficiencia energética, de viviendas y edificios residenciales",
+  "urlBasesReguladoras": "https://www.urretxu.eus/eu/component/rsfiles/download-file/files?path=i_subvenciones/2026-DirulaguntzenOinarriak/DL27-Oinarriak2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-15",
+  "textInicio": "A partir del día siguiente a la publicación de la convocatoria en el BOGipuzkoa",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491144,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DL27-Oinarriak2026.pdf.pdf",
+      "long": 555878,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491146,
+      "descripcion": "Bases generales 2026",
+      "nombreFic": "OINARRI OROKORRAK 2026.pdf",
+      "long": 380284,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491145,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DL27-Oinarriak2026.pdf.pdf",
+      "long": 555878,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

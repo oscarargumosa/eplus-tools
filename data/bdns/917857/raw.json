@@ -1,0 +1,64 @@
+{
+  "id": 1119418,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "SECRETARÍA GENERAL TÉCNICA DEL DEPARTAMENTO DE ECONOMÍA, EMPLEO E INDUSTRIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917857",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "ORDEN PJC/    /2026, de                               , por la que se convocan cinco becas de formación para el desarrollo de proyectos formativos en materia de periodismo y comunicación, en los ejercicios  2026 y 2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES24 - ARAGON"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN PRI/429/2022, de 1 de abril, por la que se aprueban las bases reguladoras para la concesión de becas para el desarrollo de proyectos formativos en materia de periodismo y comunicación.",
+  "urlBasesReguladoras": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1215835423636",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días hábiles a contar desde el día siguiente de la publicación en el BOA",
+  "textFin": "15 días hábiles a contar desde el día siguiente de la publicación en el BOA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490043,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CSVMN79VKH6KW1I0XFIL Orden convocatoria Becas Periodismo 2026-2027.pdf",
+      "long": 788852,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

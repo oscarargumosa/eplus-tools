@@ -1,0 +1,92 @@
+{
+  "id": 1119716,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALGIMIA DE ALFARA",
+    "nivel3": "AYUNTAMIENTO DE ALGÍMIA D'ALFARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918155",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 16052,
+  "mrr": false,
+  "descripcion": "Convocatoria ayudas en materia educativa curso 2026-2027 Ayuntamiento de Algímia d'Alfara (Decreto nº 305 de 09/07/2026)",
+  "descripcionLeng": "Convocatòria ajudes en matèria educativa curs 2026-2027 Ajuntament d'Algímia d'Alfara (Decret nº 305 de 09/07/2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza de las bases reguladoras para la concesión de ayudas municipales en materia educativa (BOPV nº 92 de 17-05-2021)",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2021/08025&lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-01",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "El 01 de septiembre de 2026.",
+  "textFin": "El 15 de octubre de 2026.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490800,
+      "descripcion": "BASES AYUDAS EDUCACIÓN - BOPV 92 17-5-2021",
+      "nombreFic": "00 Anuncio bases ayudas educación BOPV 92 17-5-2021.pdf",
+      "long": 417937,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490798,
+      "descripcion": "MODELO DE SOLICITUD AYUDAS EDUCACIÓN CURSO 26-27",
+      "nombreFic": "07 TODOS MODELOS SOLICITUD AYUDAS EDUCACIÓN.pdf",
+      "long": 983127,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490795,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 305 de 09_07_2026 _Decreto convocatoria ayudas educación curso 2026-2027_ -cs.pdf",
+      "long": 1163329,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490796,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Resolució núm 305 de 09_07_2026 _Decret convocatòria ajudes educació curs 2026-2027_ -val.pdf",
+      "long": 1014179,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

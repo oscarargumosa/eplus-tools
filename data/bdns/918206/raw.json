@@ -1,0 +1,88 @@
+{
+  "id": 1119767,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BETANZOS",
+    "nivel3": "AYUNTAMIENTO DE BETANZOS"
+  },
+  "sedeElectronica": "https://sede.betanzos.gal/sxc/es/",
+  "codigoBDNS": "918206",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y APROBACION BASES REGULADORAS SUBVENCIONES DIRIGIDAS A ENTIDADES SOCIALES PARA EL AÑO 2026 DEL AYUNTAMIENTO DE BETANZOS",
+  "descripcionLeng": "CONVOCATORIA E APROBACION BASES REGULADORAS SUBVENCIÓNS DIRIXIDAS A ENTIDADES SOCIAIS PARA O ANO 2026 DO CONCELLO DE BETANZOS",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y APROBACION BASES REGULADORAS SUBVENCIONES DIRIGIDAS A ENTIDADES SOCIALES PARA EL AÑO 2026 DEL AYUNTAMIENTO DE BETANZOS",
+  "urlBasesReguladoras": "https://sede.betanzos.gal/sxc/es/informacion/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP de A Coruña",
+  "textFin": "Quince días hábiles a contar desde el día siguiente a la publicación del extracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490930,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_A002_000006_Bases entidades sociais 2026 en castelán.docspa.doc_696437.pdf",
+      "long": 170363,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1490935,
+      "descripcion": "ANEXO JUSTIFICACION",
+      "nombreFic": "2026_A002_000006_ANEXO XUSTIFICACIÓN.odt_696502.pdf",
+      "long": 115086,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1490934,
+      "descripcion": "ANEXO SOLICITUD",
+      "nombreFic": "2026_A002_000006_ANEXO SOLICITUDE.odt_696501.pdf",
+      "long": 121888,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1490932,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026_A002_000006_Bases entidades sociais 2026_695642.pdf",
+      "long": 166807,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

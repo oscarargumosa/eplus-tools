@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "918297",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCÚDIA, L' / AYUNTAMIENTO DE ALCÚDIA, L'",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatòria que ha de regir el procés d'adjudicació, en règim de conceció directa, de la Convocatòria d'ajudes de estiu per a xiquets, xiquetes i adolescents al 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 8880,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": "https://www.lalcudia.com/web/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918297",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lalcudia.com/web/index.php?option=com_content&view=article&id=497&Itemid=1086",
+  "text_inicio": "10 dies des de el dia seguent a la publicació de la convocatoria al BOP i BDNSS .",
+  "text_fin": "10 dies des de el dia seguent a la publicació de la convocatoria al BOP i BDNSS .",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.717Z"
+}

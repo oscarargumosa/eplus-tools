@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "918714",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / CONSEJERÍA ORDENACIÓN DE TERRITORIO, URBANISMO, VIVIENDA Y DERECHOS CIUDADANOS",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "SUBVENCION ENTIDADES SIN ANIMO DE LUCRO MEMORIA DEMOCRATICA",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918714",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "MODELO DE SOLICITUD SUBVEN ENT SIN ANIMO LUCRO RECUPERACION MEMORIA DEMOCRATICA",
+      "url": null
+    },
+    {
+      "label": "MODELO DECLARACION RESPONSABLE SOBRE OTRAS AYUDAS",
+      "url": null
+    },
+    {
+      "label": "BASES REGULADORAS SUBV. ENT. SIN ANIMO LUCRO  RECUPERACION MEMORIA DEMOCRATICA PRINCIPADO DE ASTURIAS",
+      "url": null
+    },
+    {
+      "label": "MODELO DECLARACIÓN DE OBTENCIÓN DE DERECHOS",
+      "url": null
+    },
+    {
+      "label": "MODELO DECLARACION RESPONSABLE NO INCURSION EN INCOMPATIBILIDAD O PROHIBICIÓN",
+      "url": null
+    },
+    {
+      "label": "MODELO FICHA DE ACREEDOR",
+      "url": null
+    },
+    {
+      "label": "MODELO INFORMACION ADICIONAL PARA LA PROTECCION DE DATOS",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2021/10/22/2021-09224.pdf",
+  "text_inicio": "DESDE EL DIA SIGUIENTE DE PUBLICACION EN EL BOPA",
+  "text_fin": "20 DÍAS HABILES DESDE LA PUBLICACION EN EL BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.804Z"
+}

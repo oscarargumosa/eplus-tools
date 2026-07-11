@@ -1,0 +1,64 @@
+{
+  "id": 1119909,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BADAJOZ",
+    "nivel3": "AYUNTAMIENTO DE BADAJOZ"
+  },
+  "sedeElectronica": "https://www.aytobadajoz.es/es/imss/especiales",
+  "codigoBDNS": "918348",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 182273.05,
+  "mrr": false,
+  "descripcion": "Resolución de 09/07/2026, de la Vicepresidencia del IMSS del Ayuntamiento de Badajoz, por la que se convocan ayudas para el Programa de Respiro Familiar a personas cuidadoras habituales no profesionales en el término municipal de Badajoz.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES431 - Badajoz"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Acuerdo de 17 de marzo de 2026, del Consejo de Gobierno de la Junta de Extremadura por el que se aprueba el Programa de Colaboración Económica Municipal del servicio respiro familiar. DOE n.º 61, de 30 de marzo de 2026.",
+  "urlBasesReguladoras": "https://doe.juntaex.es/pdfs/doe/2026/610o/610o.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de convocatoria en el BOP de Badajoz",
+  "textFin": "15 días hábiles desde la publicación del extracto en el BOP DE BADAJOZ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491244,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria.pdf",
+      "long": 804831,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

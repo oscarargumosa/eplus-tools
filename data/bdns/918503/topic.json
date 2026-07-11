@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "918503",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE DESARROLLO RURAL, GANADERÍA, PESCA Y ALIMENTACIÓN",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "CONVOCATORIA DE AYUDAS PARA APOYAR LA COMPRA DEL PRIMER BARCO POR JÓVENES PESCADORES, COFINANCIADAS POR EL FONDO EUROPEO MARÍTIMO, DE PESCA Y DE ACUICULTURA (FEMPA).",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918503",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO I",
+      "url": null
+    },
+    {
+      "label": "ANEXO II",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=393662",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOC",
+  "text_fin": "1 MES A PARTIR DEL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOC",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.765Z"
+}

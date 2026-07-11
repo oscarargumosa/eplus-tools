@@ -1,0 +1,64 @@
+{
+  "id": 1120211,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "CONSEJERÍA DE PRESIDENCIA, JUVENTUD, ACCIÓN EXTERIOR Y EMERGENCIAS"
+  },
+  "sedeElectronica": "sede electrónica de la CARM",
+  "codigoBDNS": "918650",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40950,
+  "mrr": false,
+  "descripcion": "Orden de la Consejería de Presidencia, Juventud, Acción Exterior y Emergencias por la que se convoca una subvención, en régimen de concurrencia competitiva, para la concesión de dos becas de formación y prácticas en asuntos europeos, para el año 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden de 9-11-2020 de la Consejería de Empresa, Industria y Portavocía por la que se aprueban las bases reguladoras de la subvención en régimen de concurrencia competitiva de concesión de becas de formación y prácticas en asuntos europeos",
+  "urlBasesReguladoras": "https://www.borm.es/services/anuncio/ano/2020/numero/6793/pdf?id=789498",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1 mes a contar desde el siguiente a la publicación en el BORM",
+  "textFin": "1 mes posterior al día siguiente de la publicación en el BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492099,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "7- ORDEN A Y CONVOCATORIA 2026 BECAS UE FIRMADA.pdf",
+      "long": 878215,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

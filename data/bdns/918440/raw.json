@@ -1,0 +1,64 @@
+{
+  "id": 1120001,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA",
+    "nivel3": "PATRONATO MUNICIPAL DE DEPORTES DE CASTELLÓN"
+  },
+  "sedeElectronica": "https://sede-deportes.castello.es/",
+  "codigoBDNS": "918440",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 373000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases específicas para la concesión subvenciones destinadas a la organización de actividades o eventos deportivos realizados en la ciudad de Castellón de la Plana, desde el 1 de octubre de 2025 al 30 de septiembre de 2026.",
+  "descripcionLeng": "Convocatòria i bases específiques per a la concessió subvencions destinades a l'organització d'activitats o esdeveniments esportius realitzats en la ciutat de Castelló de la Plana, des de l'1 d'octubre de 2025 al 30 de setembre de 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria y bases específicas para la concesión subvenciones destinadas a la organización de actividades o eventos deportivos realizados en la ciudad de Castellón de la Plana, desde el 1 de octubre de 2025 al 30 de septiembre de 2026.",
+  "urlBasesReguladoras": "https://www.castello.es/es/subvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-02",
+  "textInicio": "dia siguiente a la publicación BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491474,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases y convocatoria organizacion.pdf",
+      "long": 274861,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

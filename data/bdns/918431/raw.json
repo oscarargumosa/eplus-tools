@@ -1,0 +1,99 @@
+{
+  "id": 1119992,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANZANARES EL REAL",
+    "nivel3": "AYUNTAMIENTO DE MANZANARES EL REAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918431",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600,
+  "mrr": false,
+  "descripcion": "V Festival internacional de mediometrajes de Manzanares El Real. FIMMER 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "V Festival internacional de mediometrajes de Manzanares El Real. FIMMER 2026",
+  "urlBasesReguladoras": "https://manzanareselreal.sedelectronica.es/transparency",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-13",
+  "fechaFinSolicitud": "2026-09-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491462,
+      "descripcion": "ANEXO 2 DECLARACIÓN",
+      "nombreFic": "Anexo 2 DECLARACIÓN.pdf",
+      "long": 207708,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1491463,
+      "descripcion": "ANEXO 3 OPERA PRIMA",
+      "nombreFic": "Anexo 3 OPERA PRIMA.pdf",
+      "long": 185696,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1491453,
+      "descripcion": "BASES REGULADORAS - V FIMMER 2026",
+      "nombreFic": "BBRR V FESTIVAL INTERNACIONAL DE MEDIOMETRAJES_FIMMER 2026.pdf",
+      "long": 451527,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1491451,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1613 [Resolución PR_2026_1145 - DECRETO APROBACIÓN CONCURSO].pdf",
+      "long": 1475934,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1491461,
+      "descripcion": "ANEXO 1 INSCRIPCIÓN",
+      "nombreFic": "Anexo 1 INSCRIPCIÓN.pdf",
+      "long": 247685,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

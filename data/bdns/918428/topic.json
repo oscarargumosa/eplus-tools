@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "918428",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE DESARROLLO RURAL",
+  "nuts_codes": [
+    "ES432"
+  ],
+  "nuts_primary": "ES432",
+  "title": "Ayudas 2026  Enfoque Leader para apoyo a la innovación social, la gobernanza multinivel y la dinamización social y económica.(Intervención 7119 PEPAC), s/ II Convo (PEPAC 2023-2027) G.A.L. ADEME",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    },
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    },
+    {
+      "codigo": "63",
+      "descripcion": "Infraestructura informática, tratamiento de datos, alojamiento de datos y otras actividades de servicios de información"
+    }
+  ],
+  "apply_url": "https://aradoacceso.juntaex.es/Paginas/Login)",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918428",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/pdfs/doe/2024/1460o/24040124.pdf",
+  "text_inicio": "El día siguiente a la publicación en el DOE",
+  "text_fin": "3 meses",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.00000",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 60 AYUDAS DESTINADAS A PROYECTOS DE DLP"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.753Z"
+}

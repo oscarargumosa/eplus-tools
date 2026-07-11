@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "918479",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / NULES / AYUNTAMIENTO DE NULES",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Concesión de ayudas económicas para el Concurso de Diseño del Cartel de la “LXXIX Fira de Ramaderia i Maquinària Agrícola de Nules” aprobado por Resolución de Alcaldía 2026-2724 de fecha 09-07-2026.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": "2026-07-10",
+  "deadline": "2026-07-23",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "WWW.NULES.ES",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918479",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "WWW.NULES.ES",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.760Z"
+}

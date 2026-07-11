@@ -1,0 +1,84 @@
+{
+  "id": 1120217,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOLINS DE REI",
+    "nivel3": "AYUNTAMIENTO DE MOLINS DE REI"
+  },
+  "sedeElectronica": "https://molinsderei.cat/tramitsonline/",
+  "codigoBDNS": "918656",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A LAS ENTIDADES DE MOLINS DE REI PARA LA CONTRATACIÓN DE CUIDADORES/AS PARA LA INCLUSIÓN DE ALUMNADO CON DISCAPACIDAD A LAS ACTIVIDADES DE VERANO DURANTE PERIODOS NO LECTIVOS 2026",
+  "descripcionLeng": "CONVOCATÒRIA DE SUBVENCIONS A LES ENTITATS DE MOLINS DE REI PER\nA LA CONTRACTACIÓ DE VETLLADORS/ES PER A LA INCLUSIÓ D’ALUMNAT\nAMB DISCAPACITAT A LES ACTIVITATS D’ESTIU DURANT PERÍODES NO\nLECTIUS 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS ESPECÍFICAS DE LA CONCESIÓN DE SUBVENCIONES A ENTIDADES DE MOLINS DE REI PARA LA CONTRACTACIÓN DE CUIDADORES/AS PARA LA INCLUSIÓN DE ALUMNADO CON DISCAPACIDAD EN LAS ACTIVIDADES DE VERANO DURANTE PERÍOO NO LECTIVOS DE MOLINS DE REI",
+  "urlBasesReguladoras": "https://molinsderei.cat/#",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "dia después de la publicación en el BOP del anuncio de la convocatória",
+  "textFin": "15 dias habiles después de la publicacion de la convocatoria en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492121,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci-Edicte catala.pdf",
+      "long": 184270,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1492118,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "anunci_ajut_vetlladors_castella.pdf",
+      "long": 194961,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

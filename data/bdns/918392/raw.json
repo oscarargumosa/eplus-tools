@@ -1,0 +1,127 @@
+{
+  "id": 1119953,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN",
+    "nivel3": "AGENCIA ESTATAL AGENCIA ESPAÑOLA DE COOPERACIÓN INTERNACIONAL PARA EL DESARROLLO"
+  },
+  "sedeElectronica": "https://www.aecid.gob.es/",
+  "codigoBDNS": "918392",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500000,
+  "mrr": false,
+  "descripcion": "Resolución de 7 de julio de 2026 de la Dirección de la Agencia Española de Cooperación Internacional para el Desarrollo por la que se convocan subvenciones en concurrencia competitiva para acciones y proyectos de cooperación del Programa Democracia 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales",
+      "codigo": "99"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    },
+    {
+      "descripcion": "XXX - Regiones o países no europeos, no contemplados en NUTS"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Real Decreto 188/2025, de 11 de marzo, por el que regulan las subvenciones y ayudas en el ámbito de la cooperación para el desarrollo sostenible y la solidaridad global.",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/rd/2025/03/11/188/con",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 (veinte) días hábiles desde 00:00 hora peninsular del día siguiente al de la publicación en BOE",
+  "textFin": "23:59:59h del vigésimo día hábil",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491318,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Programa Democracia 2026.pdf_firmado.pdf",
+      "long": 679672,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491321,
+      "descripcion": "Modelo solicitud bilateral",
+      "nombreFic": "Programa_Democracia_Modelo Solicitud Bilateral.docx",
+      "long": 201835,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491322,
+      "descripcion": "Modelo solicitud multipaís",
+      "nombreFic": "Programa_Democracia_Modelo Solicitud Multipaís.docx",
+      "long": 202129,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491327,
+      "descripcion": "Anexo III Modelo declaración responsable agrupación",
+      "nombreFic": "ANEXO III DR RL agrupación.docx",
+      "long": 75589,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491324,
+      "descripcion": "Modelo solicitud subregional",
+      "nombreFic": "Programa_Democracia_Modelo Solicitud Subregional.docx",
+      "long": 202038,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491325,
+      "descripcion": "Anexo I Modelo acuerdo colaboración",
+      "nombreFic": "ANEXO I Modelo acuerdo de colaboración.docx",
+      "long": 76702,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491326,
+      "descripcion": "Anexo II Modelo declaración responsable",
+      "nombreFic": "ANEXO II Modelo de declaración responsable.docx",
+      "long": 91143,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491323,
+      "descripcion": "Modelo solicitud regional",
+      "nombreFic": "Programa_Democracia_Modelo Solicitud Regional ALC.docx",
+      "long": 202867,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1119692,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD JAUME I DE CASTELLÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=86987",
+  "codigoBDNS": "918131",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2293.36,
+  "mrr": false,
+  "descripcion": "Beca de iniciación a la investigación (Proyecto «ESCOLES DE MASOS, UN ARXIU VIU» – Código 23I467 - Dirigido por: Tomas Segarra Arnau, Departamento de Pedagogía i Didáctica de las Ciencias Sociales, la Lengua y la Literatura)",
+  "descripcionLeng": "Beca d'iniciació a la investigació (Projecte «ESCOLES DE MASOS, UN ARXIU VIU» Codi 23I467 – Dirigit per: Tomas Segarra Arnau, Departament de Pedagogia i Didàctica de les Ciències Socials, la Llengua i la Literatura)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Beca de iniciación a la investigación (Proyecto «ESCOLES DE MASOS, UN ARXIU VIU» – Código 23I467 - Dirigido por: Tomas Segarra Arnau, Departamento de Pedagogía i Didáctica de las Ciencias Sociales, la Lengua y la Literatura)",
+  "urlBasesReguladoras": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=86987",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "textFin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490793,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "23I467_C.pdf",
+      "long": 213272,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1490792,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "23I467_Ccs.pdf",
+      "long": 201076,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

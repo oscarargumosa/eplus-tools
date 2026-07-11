@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "918206",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BETANZOS / AYUNTAMIENTO DE BETANZOS",
+  "nuts_codes": [
+    "ES111"
+  ],
+  "nuts_primary": "ES111",
+  "title": "CONVOCATORIA Y APROBACION BASES REGULADORAS SUBVENCIONES DIRIGIDAS A ENTIDADES SOCIALES PARA EL AÑO 2026 DEL AYUNTAMIENTO DE BETANZOS",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 22000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sede.betanzos.gal/sxc/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918206",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO JUSTIFICACION",
+      "url": null
+    },
+    {
+      "label": "ANEXO SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.betanzos.gal/sxc/es/informacion/",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP de A Coruña",
+  "text_fin": "Quince días hábiles a contar desde el día siguiente a la publicación del extracto de la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.697Z"
+}

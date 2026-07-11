@@ -1,0 +1,72 @@
+{
+  "id": 1119616,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALAFOLLS",
+    "nivel3": "AYUNTAMIENTO DE PALAFOLLS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918055",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300,
+  "mrr": false,
+  "descripcion": "CONVOCTORIA DISSENY IMATGE DE LA FESTA DE L`ESPORT",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "DISSENY DE LA IMATGE DE LA FESTA DE L`ESPORT",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3939592/bases-del-concurs-de-disseny-de-la-imatge-de-la-festa-de-l-esport-2026-versio-en-catala-ajuntament-de-palafolls",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-07",
+  "fechaFinSolicitud": "2026-07-31",
+  "textInicio": ": La solicitud se formulará en el modelo normalizado, debidamente cumplimentado",
+  "textFin": "al día siguiente de la publicación del extracto de la convocatoria en el Boletín Oficial de la Provi",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491703,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIA_DISSENY_FESTA_ESPORT_CATALA.pdf",
+      "long": 539111,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    },
+    {
+      "id": 1491702,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA_DISSENY_FESTA_ESPORT_CASTELLA.pdf",
+      "long": 532292,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1119146,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917585",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9600,
+  "mrr": false,
+  "descripcion": "Orden IND/30/2026, de 6 de julio, por la que se convoca una beca de formación práctica dirigida a postgraduados en la Dirección General de Comercio y Consumo",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden IND/61/2022, de 13 de septiembre, por la que se establecen las bases reguladoras para la concesión de becas de formación práctica dirigidas a postgraduados en la Dirección General de Comercio y Consumo",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=376086",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOC",
+  "textFin": "15 DÍAS HÁBILES A PARTIR DEL SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORA EN EL BOC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489190,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "30 Orden_Convocatoria_Becas_2026_CONSUMO.report.pdf",
+      "long": 195637,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1489195,
+      "descripcion": "Declaración responsable",
+      "nombreFic": "30 ANEXO_II_Declaracion_Responsable.report.pdf",
+      "long": 181145,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1489191,
+      "descripcion": "Solicitud",
+      "nombreFic": "30 ANEXO_I_Solicitud.report.pdf",
+      "long": 252881,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

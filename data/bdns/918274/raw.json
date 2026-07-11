@@ -1,0 +1,88 @@
+{
+  "id": 1119835,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918274",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Premios Extraordinarios de Educación Secundaria para Personas Adultas correspondientes al curso 2025-2026 en la Comunidad Autónoma de Cantabria",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden ECD/70/2017, de 31 de mayo de 2017, que establece las bases reguladoras para la concesión de los Premios Extraordinarios de Educación Secundaria para Personas Adultas, en la Comunidad Autónoma de Cantabria.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=314310",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al día siguiente al de publicación en el BOC del extracto de la convocatoria",
+  "textFin": "siete días hábiles contados desde el día siguiente a la publicación del extracto en el BOC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491042,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "16 Orden EDU-32-2026 firmado.pdf",
+      "long": 167566,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491048,
+      "descripcion": "Anexo III Declaración responsable",
+      "nombreFic": "15 Anexo III Orden EDU-32-2026 firmado.pdf",
+      "long": 125743,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491044,
+      "descripcion": "Anexo II Informe justificativo de candidatura",
+      "nombreFic": "14 Anexo II Orden EDU-32-2026 firmado.pdf",
+      "long": 87083,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1491043,
+      "descripcion": "Anexo I Propuesta de candidatura",
+      "nombreFic": "13 Anexo I Orden EDU-32-2026 firmado.pdf",
+      "long": 103502,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

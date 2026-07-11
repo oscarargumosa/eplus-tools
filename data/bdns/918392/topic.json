@@ -1,0 +1,91 @@
+{
+  "source": "bdns",
+  "source_id": "918392",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN / AGENCIA ESTATAL AGENCIA ESPAÑOLA DE COOPERACIÓN INTERNACIONAL PARA EL DESARROLLO",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 7 de julio de 2026 de la Dirección de la Agencia Española de Cooperación Internacional para el Desarrollo por la que se convocan subvenciones en concurrencia competitiva para acciones y proyectos de cooperación del Programa Democracia 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-07-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "https://www.aecid.gob.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918392",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Modelo solicitud bilateral",
+      "url": null
+    },
+    {
+      "label": "Modelo solicitud multipaís",
+      "url": null
+    },
+    {
+      "label": "Anexo III Modelo declaración responsable agrupación",
+      "url": null
+    },
+    {
+      "label": "Modelo solicitud subregional",
+      "url": null
+    },
+    {
+      "label": "Anexo I Modelo acuerdo colaboración",
+      "url": null
+    },
+    {
+      "label": "Anexo II Modelo declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Modelo solicitud regional",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/rd/2025/03/11/188/con",
+  "text_inicio": "20 (veinte) días hábiles desde 00:00 hora peninsular del día siguiente al de la publicación en BOE",
+  "text_fin": "23:59:59h del vigésimo día hábil",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.742Z"
+}

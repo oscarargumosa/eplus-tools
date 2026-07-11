@@ -1,0 +1,68 @@
+{
+  "id": 1119861,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CÁCERES",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CÁCERES"
+  },
+  "sedeElectronica": "https://sede.dip-caceres.es/carpetaCiudadano/",
+  "codigoBDNS": "918300",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600000,
+  "mrr": false,
+  "descripcion": "Bases Reguladoras y Convocatoria de Subvenciones en régimen de concurrencia competitiva, para el fomento de Comunidades Energéticas locales participadas por los municipios de la provincia de Cáceres y constituidas con el acompañamiento de la OTC Dip CC 26",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Bases Reguladoras y Convocatoria de Subvenciones en régimen de concurrencia competitiva, para el fomento de Comunidades Energéticas locales participadas por los municipios de la provincia de Cáceres y constituidas con el acompañamiento de la OTC Dip CC 26",
+  "urlBasesReguladoras": "https://sede.dip-caceres.es/carpetaCiudadano/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir del día siguiente a la publicación del Extracto en BOP DE CÁCERS",
+  "textFin": "un mes a partir de la publicación del Extracto en BOP de Cáceres",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491083,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolucion_AprobBBRRyConvCEL26.pdf",
+      "long": 1301165,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

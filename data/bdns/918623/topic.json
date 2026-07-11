@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "918623",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MELIANA / AYUNTAMIENTO DE MELIANA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Bases reguladoras y convocatoria de la ayuda para sufragar parcialmente los gastos de adquisición de tarjeta bonometro y fomentar el uso del transporte ferroviario de personas mayores de 65 o con un grado de discapacidad igual o superior al 64%, 2026/2027",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": "2026-09-25",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 22000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "49.1",
+      "descripcion": "Transporte de pasajeros por ferrocarril"
+    }
+  ],
+  "apply_url": "https://meliana.sede.dival.es/default.aspx",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918623",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.meliana.es",
+  "text_inicio": "A partir del día siguiente al de la publicación en el Boletín Oficial de la Provincia de Valencia",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-11T04:10:13.786Z"
+}

@@ -17,17 +17,17 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Network technologies / Internetworking\",\"FIRE, Future Internet Research and Experimentation\",\"Digital Agenda\",\"Architecture, smart buildings, smart cities, urban\",\"Digital identity\",\"Social sciences and humanities\",\"Internet of Things\",\"Artificial Intelligence\",\"International Cooperation\",\"Internet architectures\",\"Cybersecurity\",\"Quantum optics and quantum information\",\"Artificial intelligence, intelligent systems, mult\",\"Cyber-physical systems\",\"circular economy\",\"Blockchain\",\"smart contracts\",\"internet protocols\"]"
+    "[\"Cybersecurity\",\"Artificial intelligence, intelligent systems, mult\",\"Cyber-physical systems\",\"Internet of Things\",\"Artificial Intelligence\",\"Social sciences and humanities\",\"FIRE, Future Internet Research and Experimentation\",\"Network technologies / Internetworking\",\"Internet architectures\",\"Architecture, smart buildings, smart cities, urban\",\"Digital Agenda\",\"International Cooperation\",\"Digital identity\",\"Quantum optics and quantum information\",\"internet protocols\",\"circular economy\",\"Blockchain\",\"smart contracts\"]"
   ],
   "crossCuttingPriorities": [
-    "DigitalAgenda",
-    "SSH",
     "AI",
+    "SSH",
+    "DigitalAgenda",
     "EC-WORLD"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-HUMAN-01-61.json",
   "documents": [],
-  "fetchedAt": "2026-07-10T04:05:53.526Z"
+  "fetchedAt": "2026-07-11T04:06:46.168Z"
 }

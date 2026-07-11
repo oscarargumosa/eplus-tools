@@ -1,0 +1,80 @@
+{
+  "id": 1119182,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917621",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 250000,
+  "mrr": false,
+  "descripcion": "Orden IND/32/2026, de 6 de julio, por la que se aprueba para el año 2026 la convocatoria  de subvenciones para asociaciones de comerciantes y sus federaciones y confederaciones y cooperativas de detallistas .",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Orden INN/16/2016,de 31 de mayo, modificada por la Orden INN/21/2017, de 16 de mayo  y la Orden IND/25/2022, de19 de abril.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=301563",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente al de publicación del extracto",
+  "textFin": "A los 15  días hábiles a partir del día siguiente a a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489245,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "32 Orden_convocatoria_asociaciones_2026.report.pdf",
+      "long": 274206,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1489262,
+      "descripcion": "Anexo II Declaración de facturas, cuenta justificativa",
+      "nombreFic": "32 ANEXO_II_CUENTA_JUSTIFICATIVA_DECLARACIÓN_FACTURAS.docx",
+      "long": 105764,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    },
+    {
+      "id": 1489256,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "32 ANEXO_I__SOLICITUD_ASOCIACIONES_COMERCIANTES-CAMPAÑAS.docx",
+      "long": 83902,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
