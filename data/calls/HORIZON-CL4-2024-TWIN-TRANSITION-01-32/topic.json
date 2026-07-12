@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-09-19",
   "deadline": "2024-02-07",
   "deadlineModel": "single-stage",
@@ -17,12 +17,14 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Environmental engineering\",\"Other engineering and technologies\",\"Chemical engineering\",\"Energy Efficiency\",\"energy efficiency\",\"Industry 5.0\",\"circular economy\",\"energy-intensive industries\"]"
+    "[\"Co-programmed European Partnerships\",\"Environmental engineering\",\"Other engineering and technologies\",\"Chemical engineering\",\"Energy Efficiency\",\"energy efficiency\",\"circular economy\",\"Industry 5.0\",\"energy-intensive industries\"]"
   ],
-  "crossCuttingPriorities": [],
+  "crossCuttingPriorities": [
+    "PART-COPROGR"
+  ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-TWIN-TRANSITION-01-32.json",
   "documents": [],
-  "fetchedAt": "2026-07-11T04:06:46.344Z"
+  "fetchedAt": "2026-07-12T04:05:22.860Z"
 }

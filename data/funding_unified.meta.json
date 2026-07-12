@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T04:10:17.237Z",
+  "generatedAt": "2026-07-12T04:08:46.429Z",
   "total": 9036,
   "bySource": {
     "sedia": 1658,
@@ -18,8 +18,9 @@
     "otros": 678
   },
   "byStatus": {
-    "open": 8440,
-    "forthcoming": 596
+    "open": 8487,
+    "forthcoming": 547,
+    "closed": 2
   },
   "byProgramme": {
     "European Solidarity Corps": 3,
