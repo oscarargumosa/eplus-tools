@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Innovation strategies\",\"Climate change adaptation\",\"Behavioural sciences\",\"Agrobiodiversity\",\"Common agricultural policy (CAP)\",\"Agro-forestry\",\"Environment, resources and sustainability\",\"Social sciences and humanities\",\"Protection of environment (before, during and afte\",\"Ecosystem-Based Approach\",\"Nature-based solutions\",\"land use\",\"intensive farming\",\"biodiversity strategy\",\"nature capital accounting\",\"landscape feature\",\"ecosystem connectivity\",\"EU biodiversity strategy for 2030\",\"green corridors\",\"wetland\",\"farmers\",\"ecoscheme\",\"agri-environment\",\"ecological corridor\",\"hedge\",\"resilience\",\"ecosystem services\",\"non-productive trees\",\"buffer zones\"]"
+    "[\"Innovation strategies\",\"Climate change adaptation\",\"Behavioural sciences\",\"Agrobiodiversity\",\"Common agricultural policy (CAP)\",\"Agro-forestry\",\"Environment, resources and sustainability\",\"Social sciences and humanities\",\"Protection of environment (before, during and afte\",\"Ecosystem-Based Approach\",\"Nature-based solutions\",\"land use\",\"intensive farming\",\"biodiversity strategy\",\"nature capital accounting\",\"landscape feature\",\"ecosystem connectivity\",\"green corridors\",\"EU biodiversity strategy for 2030\",\"wetland\",\"farmers\",\"ecoscheme\",\"agri-environment\",\"ecological corridor\",\"hedge\",\"resilience\",\"ecosystem services\",\"non-productive trees\",\"buffer zones\"]"
   ],
   "crossCuttingPriorities": [
     "SSH"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-01-7.json",
   "documents": [],
-  "fetchedAt": "2026-07-12T04:05:22.701Z"
+  "fetchedAt": "2026-07-13T04:05:50.699Z"
 }

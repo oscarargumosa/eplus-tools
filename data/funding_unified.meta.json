@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-07-12T04:08:46.429Z",
-  "total": 9036,
+  "generatedAt": "2026-07-13T04:09:11.975Z",
+  "total": 9035,
   "bySource": {
     "sedia": 1658,
     "bdns": 7269,
-    "salto": 109
+    "salto": 108
   },
   "byCategory": {
     "call_for_proposals": 8927,
-    "training": 109
+    "training": 108
   },
   "byLevel": {
-    "eu": 1767,
+    "eu": 1766,
     "ccaa": 1660,
     "estado": 249,
     "local": 4682,
     "otros": 678
   },
   "byStatus": {
-    "open": 8487,
-    "forthcoming": 547,
-    "closed": 2
+    "open": 8451,
+    "forthcoming": 581,
+    "closed": 3
   },
   "byProgramme": {
     "European Solidarity Corps": 3,
@@ -58,11 +58,11 @@
     "UCPM": 2,
     "Pilot Projects": 9,
     "European Defence Fund": 70,
-    "Erasmus+ Youth (SALTO)": 109,
+    "Erasmus+ Youth (SALTO)": 108,
     "ERDFTA": 2,
     "RFCS": 7
   },
   "curatedEnrichmentCount": 1,
   "sumBudgetEur": 299784441987.08997,
-  "summaryEsPendingCount": 1767
+  "summaryEsPendingCount": 1766
 }
