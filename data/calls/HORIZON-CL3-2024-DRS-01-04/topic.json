@@ -17,9 +17,10 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Rescue of people\",\"Environment\",\"International Cooperation\",\"First responders\",\"Policy and Support\",\"Protection\",\"Security\",\"Incident Response\",\"Digital Agenda\",\"Systems-Services Functions\",\"Disaster resilience and crisis management\",\"Technologies-Components\",\"Social sciences and humanities\",\"crisis management\",\"legal frameworks\",\"human (social and economic) systems\",\"Security Union Strategy\",\"telluric (e.g. volcanic, seismic, tsunami, landslide)\",\"operational protocols\",\"extreme climate events (e.g. floods, storms, storm surges, fires, droughts)\",\"natural-technological disasters\",\"climate change\",\"common platform\",\"risk modelling\",\"natural-technological (NaTech) disaster\",\"identify and mitigate risks\",\"spatial information and data\",\"impacts on critical assets (e.g. infrastructures, industries)\",\"cross-border exchanges and decision-making\"]"
+    "[\"Rescue of people\",\"Environment\",\"First responders\",\"Artificial Intelligence\",\"International Cooperation\",\"Policy and Support\",\"Security\",\"Incident Response\",\"Protection\",\"Systems-Services Functions\",\"Disaster resilience and crisis management\",\"Digital Agenda\",\"Technologies-Components\",\"Social sciences and humanities\",\"legal frameworks\",\"human (social and economic) systems\",\"crisis management\",\"telluric (e.g. volcanic, seismic, tsunami, landslide)\",\"Security Union Strategy\",\"operational protocols\",\"extreme climate events (e.g. floods, storms, storm surges, fires, droughts)\",\"natural-technological disasters\",\"common platform\",\"climate change\",\"risk modelling\",\"natural-technological (NaTech) disaster\",\"impacts on critical assets (e.g. infrastructures, industries)\",\"identify and mitigate risks\",\"spatial information and data\",\"cross-border exchanges and decision-making\"]"
   ],
   "crossCuttingPriorities": [
+    "AI",
     "EC-WORLD",
     "DigitalAgenda",
     "SSH"
@@ -28,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-DRS-01-04.json",
   "documents": [],
-  "fetchedAt": "2026-07-13T04:05:50.596Z"
+  "fetchedAt": "2026-07-14T04:05:04.479Z"
 }

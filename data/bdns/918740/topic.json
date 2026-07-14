@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "918740",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TUDELA / AYUNTAMIENTO DE TUDELA",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "Convocatoria de concesión de prestaciones económicas para libros y/o material didáctico correspondiente a 2º ciclo de educación infantil en centros escolares para el curso escolar 2026-2027",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-13",
+  "open_date": "2026-09-01",
+  "deadline": "2026-09-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://sede.tudela.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918740",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "INSTANCIA CONVOCATORIA LIBROS (ANEXO I).pdf",
+      "url": null
+    },
+    {
+      "label": "DOCUMENTO DEL COLEGIO (ANEXO III).pdf",
+      "url": null
+    },
+    {
+      "label": "Anexo II Umbrales de renta libros curso 26-27",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "Aprobación modificación https://bon.navarra.es/es/anuncio/-/texto/2015/215/27 y corrección de errores https://bon.navarra.es/es/anuncio/-/texto/2015/230/64",
+  "text_inicio": "A partir del 01/09/2026",
+  "text_fin": "El 30/09/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-14T04:08:21.473Z"
+}

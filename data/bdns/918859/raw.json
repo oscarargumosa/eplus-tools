@@ -1,0 +1,68 @@
+{
+  "id": 1120420,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "DIRECCIÓN GENERAL DE INNOVACIÓN Y PROMOCIÓN AGROALIMENTARIA"
+  },
+  "sedeElectronica": "https://aragon.es/tramites",
+  "codigoBDNS": "918859",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 545000,
+  "mrr": false,
+  "descripcion": "ORDEN AGA/  /2026, de 13 de julio, por la que se convocan subvenciones destinadas a apoyar la nueva participación en regímenes de calidad en el marco del Plan Estratégico Nacional de la PAC 2023-2027 para Aragón, para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES24 - ARAGON"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden AGM/426/2023, de 3 de abril por la que se aprueban las bases reguladoras destinadas a apoyar la nueva participación en regímenes de calidad de los productos agrícolas y alimenticios en el marco del Plan Estratégico de la PAC 2023-2027",
+  "urlBasesReguladoras": "https://www.boa.aragon.es/cgibin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1271438120303",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación de la convocatoria en el \"Boletín Oficial de Aragón\"",
+  "textFin": "15 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BOA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492682,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "O. Convocatoria Nueva participacion 7131_2026 firmada.pdf",
+      "long": 1038477,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

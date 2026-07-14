@@ -1,0 +1,68 @@
+{
+  "id": 1118466,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916905",
+  "fechaRecepcion": "2026-07-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12944000,
+  "mrr": false,
+  "descripcion": "RESOL. CONSELLERIA DE EDUCACIÓN, CULTURA Y UNIVERSIDADES, POR LA QUE SE CONVOCAN, PARA EL EJERCICIO 2026, SUBVENCIONES PARA LA REALIZACIÓN DE DETERMINADAS INVERSIONES EN INFRAESTRUCTURAS Y EQUIPAMIENTOS DE I+D+I, SUSCEPTIBLES DE SER FINANCIADAS POR LA UE",
+  "descripcionLeng": "RESOL. DE LA CONSELLERIA D'EDUCACIÓ, CULTURA I UNIVERSITATS, PER LA QUAL ES CONVOQUEN, PER A L'EXERCICI 2026, SUBVENCIONS PER A LA REALITZACIÓ DE DETERMINADES INVERSIONS EN INFRAESTRUCTURES I EQUIPAMENTS D'I+D+i, SUSCEPTIBLES DE SER FINANÇADES PER LA UE",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOL. CONSELLERIA DE EDUCACIÓN, CULTURA Y UNIVERSIDADES, POR LA QUE SE CONVOCAN, PARA EL EJERCICIO 2026, SUBVENCIONES PARA LA REALIZACIÓN DE DETERMINADAS INVERSIONES EN INFRAESTRUCTURAS Y EQUIPAMIENTOS DE I+D+I, SUSCEPTIBLES DE SER FINANCIADAS POR LA UE",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2025/45381",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-15",
+  "fechaFinSolicitud": "2026-07-29",
+  "textInicio": "09/07/2026",
+  "textFin": "23/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492685,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "20. Resolu convoc eqquipamiento FEDER fiscalizada silvia_firmado.pdf",
+      "long": 438706,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-26",
   "deadline": "2024-04-11",
   "deadlineModel": "single-stage",
@@ -17,12 +17,12 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Translational medicine\",\"Pharmacokinetics\",\"Pharmacology, pharmacogenomics, drug discovery and\",\"Toxicology\",\"Medical biotechnology\",\"Pharmacodynamics\",\"ECVAM\",\"efficacy\",\"NAMs\",\"ICH\",\"pharmaceutical\",\"Training\",\"ThreeRs\",\"3Rs\",\"non-animal\",\"ECHA\",\"New Approach Methodologies\",\"industry\",\"Alternatives\",\"OECD\",\"EMA\",\"pesticides\",\"toxicology\",\"VICH\",\"ASPIS\",\"EFSA\",\"cosmetics\",\"chemical\",\"ISO\",\"hazard\",\"biocides\",\"safety\",\"Regulator\",\"CEN\",\"PARC\",\"animal-free\",\"CRO\",\"JRC\"]"
+    "[\"Pharmacokinetics\",\"Translational medicine\",\"Pharmacology, pharmacogenomics, drug discovery and\",\"Toxicology\",\"Medical biotechnology\",\"Pharmacodynamics\",\"efficacy\",\"ECVAM\",\"ICH\",\"pharmaceutical\",\"Training\",\"ThreeRs\",\"NAMs\",\"ECHA\",\"New Approach Methodologies\",\"3Rs\",\"non-animal\",\"OECD\",\"EMA\",\"industry\",\"Alternatives\",\"VICH\",\"ASPIS\",\"pesticides\",\"toxicology\",\"safety\",\"Regulator\",\"EFSA\",\"cosmetics\",\"chemical\",\"ISO\",\"hazard\",\"biocides\",\"CEN\",\"PARC\",\"CRO\",\"JRC\",\"animal-free\"]"
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-IND-06-09.json",
   "documents": [],
-  "fetchedAt": "2026-07-13T04:05:50.622Z"
+  "fetchedAt": "2026-07-14T04:05:04.469Z"
 }

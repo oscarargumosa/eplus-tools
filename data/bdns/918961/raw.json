@@ -1,0 +1,64 @@
+{
+  "id": 1120522,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RINCONADA, LA",
+    "nivel3": "PATRONATO MUNICIPAL DE DEPORTES"
+  },
+  "sedeElectronica": "https://pmdlarinconada.sedelectronica.es",
+  "codigoBDNS": "918961",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 75000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A ASOCIACIONES DEPORTIVAS Y CLUBES 2026. PLAN II. DEPORTE DE OCIO, RECREACIÓN Y NATURALEZA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES A ASOCIACIONES DEPORTIVAS Y CLUBES 2026. PLAN II. DEPORTE DE OCIO, RECREACIÓN Y NATURALEZA",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-y-convocatoria-de-subvenciones-en-regimen-de-concurrencia-competitiva-a-asociaciones-deportivas-y-clubes-convocatoria-2026/",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días naturales",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492915,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260626_Otros_ANUNCIO  BASES REGULADORAS PLAN GENERAL DE SUBVENCIONES 2026..pdf",
+      "long": 982215,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

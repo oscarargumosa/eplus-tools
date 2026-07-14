@@ -1,0 +1,64 @@
+{
+  "id": 1120331,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918770",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 22800,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de la Vicerrectora de Extensión Universitaria, Patrimonio y Relaciones Institucionales de 7/7/2026, por la que se publican bases reguladoras y se convoca el Programa de Ayudas a la Formación de la Orquesta de la Universidad de Granada 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de la Vicerrectora de Extensión Universitaria, Patrimonio y Relaciones Institucionales de 7/7/2026, por la que se publican bases reguladoras y se convoca el Programa de Ayudas a la Formación de la Orquesta de la Universidad de Granada 2026.",
+  "urlBasesReguladoras": "Pendiente de publicación",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-16",
+  "fechaFinSolicitud": "2026-09-22",
+  "textInicio": null,
+  "textFin": "22 de septiembre de 2026 a las 12:00 horas.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492423,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Ayudas Formación OUGR 26 BASES.pdf",
+      "long": 568427,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

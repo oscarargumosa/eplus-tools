@@ -1,0 +1,96 @@
+{
+  "id": 1120466,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLANUEVA DE LOS CASTILLEJOS",
+    "nivel3": "AYUNTAMIENTO DE VILLANUEVA DE LOS CASTILLEJOS"
+  },
+  "sedeElectronica": "https://villanuevadeloscastillejos.sedelectronica.es/info.0",
+  "codigoBDNS": "918905",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS SUBVENCIONES OTORGADAS POR EL EXCMO. AYUNTAMIENTO DE  VILLANUEVA DE LOS CASTILLEJOS, PARA LA ADQUISICIÓN DE LA PRIMERA VIVIENDA. 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES615 - Huelva"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE LAS SUBVENCIONES OTORGADAS POR EL EXCMO. AYUNTAMIENTO DE  VILLANUEVA DE LOS CASTILLEJOS, PARA LA ADQUISICIÓN DE LA PRIMERA VIVIENDA. 2026",
+  "urlBasesReguladoras": "WWW.VILLANUEVADELOSCASTILLEJOS.ES",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente al de la publicación del extracto en BOP Huelva",
+  "textFin": "15 días hábiles a partir del dia al de la publicación del extracto en BOP Huelva",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492767,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260526_Otros_CONVOCATORIA 1º vivienda 2026 (1).pdf",
+      "long": 237969,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1492768,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "20260526_Otros_solicitud 1º vivienda.docx",
+      "long": 41027,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1492774,
+      "descripcion": "REGLAMENTO",
+      "nombreFic": "20260526_Otros_REGLAMENTO SUBVENCIONES PARA LA ADQUISICIÓN DE LA PRIMERA VIVIENDA (1).pdf",
+      "long": 215927,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1492771,
+      "descripcion": "DECLARACION RESPONSABLE",
+      "nombreFic": "20260526_Otros_DECLARACION RESPONSABLE.pdf",
+      "long": 232769,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1492770,
+      "descripcion": "MODELO A TERCERO",
+      "nombreFic": "20260526_Otros_MODELO A TERCERO.pdf",
+      "long": 1355092,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

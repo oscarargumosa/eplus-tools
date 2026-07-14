@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,15 +17,15 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Sea vessels\",\"Co-programmed European Partnerships\",\"Ocean sustainability and blue economy\",\"Sustainable transport - general\",\"power\",\"electrification\",\"zero emission\",\"electric\",\"efficient\",\"shipping\",\"high voltage\",\"waterborne\"]"
+    "[\"Ocean sustainability and blue economy\",\"Sea vessels\",\"Sustainable transport - general\",\"Co-programmed European Partnerships\",\"electric\",\"waterborne\",\"high voltage\",\"power\",\"shipping\",\"efficient\",\"electrification\",\"zero emission\"]"
   ],
   "crossCuttingPriorities": [
-    "PART-COPROGR",
-    "OCEAN"
+    "OCEAN",
+    "PART-COPROGR"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-11.json",
   "documents": [],
-  "fetchedAt": "2026-07-13T04:05:50.687Z"
+  "fetchedAt": "2026-07-14T04:05:04.566Z"
 }

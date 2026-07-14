@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Co-programmed European Partnerships\",\"RePowerEU\",\"Freight and logistics\",\"Sustainable transport - general\",\"International Cooperation\",\"charging network design\",\"MCS\",\"reliability\",\"grid operators\",\"Heavy-Duty EV\",\"users\\u0027 needs\",\"ultra-high-power charging\",\"interoperability\",\"charging flexibility\",\"energy management\",\"TEN-T corridors\",\"multi-point charging stations\",\"megawatt charging system\",\"power supply\",\"open protocols\"]"
+    "[\"Sustainable transport - general\",\"Freight and logistics\",\"Co-programmed European Partnerships\",\"RePowerEU\",\"International Cooperation\",\"Heavy-Duty EV\",\"interoperability\",\"charging flexibility\",\"users\\u0027 needs\",\"reliability\",\"ultra-high-power charging\",\"grid operators\",\"TEN-T corridors\",\"multi-point charging stations\",\"megawatt charging system\",\"power supply\",\"MCS\",\"energy management\",\"charging network design\",\"open protocols\"]"
   ],
   "crossCuttingPriorities": [
     "PART-COPROGR",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-04.json",
   "documents": [],
-  "fetchedAt": "2026-07-13T04:05:50.690Z"
+  "fetchedAt": "2026-07-14T04:05:04.567Z"
 }

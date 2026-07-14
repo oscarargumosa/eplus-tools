@@ -1,0 +1,72 @@
+{
+  "id": 1119521,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE ALT EMPORDÀ",
+    "nivel3": "CONSELL COMARCAL DE ALT EMPORDÀ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "917960",
+  "fechaRecepcion": "2026-07-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 145000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES DESTINADAS A LA COLABORACIÓN EN LA FINANCIACIÓN DE LOS SERVICIOS DE TRANSPORTE ADAPTADO INDIVIDUAL Y COLECTIVO A LA COMARCA DEL ALT EMPORDÀ 2026",
+  "descripcionLeng": "CONVOCATÒRIA DE SUBVENCIONS DESTINADES A LA COL·LABORACIÓ EN EL FINANÇAMENT DELS SERVEIS DE TRANSPORT ADAPTAT INDIVIDUAL I COL·LECTIU A LA COMARCA DE L'ALT EMPORDÀ 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras esepcíficas para la concesión de subvencions en régimen de concurrència competitiva destinadas a la colaboración en la financiación de los servicios de transport adaptado en la comarca de l'Alt Empordà",
+  "urlBasesReguladoras": "https://www.altemporda.org/portal/area-de-benestar/transport-adaptat-2019",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia siguiente a su publicación",
+  "textFin": "20 dias naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490303,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria 2026.pdf",
+      "long": 358587,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1490302,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026 cast.pdf",
+      "long": 329624,
+      "datMod": "2026-07-08",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

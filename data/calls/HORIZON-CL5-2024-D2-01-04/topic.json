@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,12 +17,12 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Energy systems (production, distribution, applicat\",\"Energy storage\",\"Energy collection, conversion and storage, renewab\",\"Renewable energy sources - general\",\"breakthrough technologies\",\"storage\",\"energy technologies\",\"disruptive\",\"transmission\",\"innovation\",\"high-risk\",\"technological feasibility\",\"conversion\",\"distribution\"]"
+    "[\"Energy systems (production, distribution, applicat\",\"Energy storage\",\"Renewable energy sources - general\",\"Energy collection, conversion and storage, renewab\",\"storage\",\"breakthrough technologies\",\"energy technologies\",\"transmission\",\"disruptive\",\"innovation\",\"high-risk\",\"technological feasibility\",\"conversion\",\"distribution\"]"
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D2-01-04.json",
   "documents": [],
-  "fetchedAt": "2026-07-13T04:05:50.693Z"
+  "fetchedAt": "2026-07-14T04:05:04.564Z"
 }

@@ -1,0 +1,72 @@
+{
+  "id": 1120497,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AGURAIN/SALVATIERRA",
+    "nivel3": "AYUNTAMIENTO DE AGURAIN/SALVATIERRA"
+  },
+  "sedeElectronica": "www.agurain.eus",
+  "codigoBDNS": "918936",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria de ayudas para la promoción de la ocupación de locales comerciales vacíos, sin actividad económica, en el casco histórico de Agurain",
+  "descripcionLeng": "Aguraingo hirigune historikoan jarduera ekonomikorik ez duten merkataritza lokal hutsak okupatzea sustatzeko laguntzen oinarriak eta deialdia",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Partida presupuestaria 430.471.001 \"Subvención para alquiler de locales con destino a comercio en el Casco Viejo\"",
+  "urlBasesReguladoras": "www.agurain.eus",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": "Día siguiente de la publicación en el BOTHA",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492856,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria ayudas al alquiler de locales en casco histórico 2026_Eusk..docx",
+      "long": 149120,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    },
+    {
+      "id": 1492855,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas al alquiler de locales en casco histórico 2026.docx",
+      "long": 148680,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
