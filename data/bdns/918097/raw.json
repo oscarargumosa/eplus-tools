@@ -1,0 +1,84 @@
+{
+  "id": 1119658,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLEIDA",
+    "nivel3": "AYUNTAMIENTO DE LLEIDA"
+  },
+  "sedeElectronica": "https://seu.paeria.cat/ajutsPublic/showPublicacion/42417",
+  "codigoBDNS": "918097",
+  "fechaRecepcion": "2026-07-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 70000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES DE LÍNEA 8.1 SUBVENCIONES DESTINADAS A FORTALECER, FAVORECER Y DAR APOYO AL TEJIDO CULTURAL DE LLEIDA\nModalidad a):\nPara proyectos culturales y actividades de las diferentes entidades culturales sin ánimo de lucro en Lleida",
+  "descripcionLeng": "CONVOCATÒRIA DE SUBVENCIONS DE LÍNIA 8.1 SUBVENCIONS DESTINADES A ENFORTIR, AFAVORIR I DONAR SUPORT AL TEIXIT CULTURAL DE LLEIDA Modalitat a):\nPer a projectes culturals i activitats de les diferents entitats culturals sense ànim de lucre a Lleida",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES513 - Lleida"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "“L-8.1_SUBVENCIONS DESTINADES A ENFORTIR, AFAVORIR I DONAR SUPORT AL TEIXIT CULTURAL DE LLEIDA” estan publicades en el Butlletí Oficial de la Província de Lleida (BOP) número 87, de data 8 de maig de 2026.",
+  "urlBasesReguladoras": "https://seu.paeria.cat/documentPublic/download/46554",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia siguiente de la publicación",
+  "textFin": "20 dias hábiles desde el dia siguiente a la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1490622,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1. CONVOCATORIA_L-8.1 A_14052026.pdf",
+      "long": 256764,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1490624,
+      "descripcion": "Certificado junta de gobierno local aprueba convocatoira",
+      "nombreFic": "2. CERTIFICAT ACORD JGL_L-8.1 A_25062026.pdf",
+      "long": 379000,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1490623,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "1. CONVOCATÒRIA_L-8.1 A_14052026.pdf",
+      "long": 291364,
+      "datMod": "2026-07-09",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

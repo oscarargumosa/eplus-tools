@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,15 +17,15 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Co-programmed European Partnerships\",\"Sustainable transport - general\",\"Clean vehicles\",\"Digital Agenda\",\"vehicle dynamics\",\"digital tools\",\"electric powertrain design\",\"virtual approval\",\"data utilisation\",\"competitiveness\",\"automated engineering\",\"software-defined functions\",\"total vehicle systems\",\"energy consumption reduction\",\"modelling and simulation\",\"software-defined systems\",\"digital twins\"]"
+    "[\"Clean vehicles\",\"Digital Agenda\",\"Co-programmed European Partnerships\",\"Sustainable transport - general\",\"software-defined systems\",\"digital twins\",\"vehicle dynamics\",\"modelling and simulation\",\"automated engineering\",\"energy consumption reduction\",\"electric powertrain design\",\"total vehicle systems\",\"data utilisation\",\"digital tools\",\"virtual approval\",\"competitiveness\",\"software-defined functions\"]"
   ],
   "crossCuttingPriorities": [
-    "PART-COPROGR",
-    "DigitalAgenda"
+    "DigitalAgenda",
+    "PART-COPROGR"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-05.json",
   "documents": [],
-  "fetchedAt": "2026-07-14T04:05:04.562Z"
+  "fetchedAt": "2026-07-15T04:02:49.616Z"
 }

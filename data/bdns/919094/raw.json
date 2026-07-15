@@ -1,0 +1,75 @@
+{
+  "id": 1120655,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ROSES",
+    "nivel3": "AYUNTAMIENTO DE ROSES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919094",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2130,
+  "mrr": false,
+  "descripcion": "Programa 14 del concurso de sardanas Vila de Roses, 2026.",
+  "descripcionLeng": "Programa 14 del concurs de sardanes Vila de Roses, 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases específicas reguladoras del concurso de sardanas Vila de Roses, programa 14, 2026.",
+  "urlBasesReguladoras": "https://www.roses.cat/ajuntament/informacio-administrativa/subvencions-2/subvencions-2026/informacio-i-sol-licitud-subvencions-de-concurrencia/bases-especificas-de-los-programas-de-las-subvenciones-2026-version-en-castellano",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-14",
+  "textInicio": "Dia siguiente BOPG",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493252,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOC_PROGR 14 CONCURS DE SARDANES_CAT.pdf",
+      "long": 104728,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493251,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOC_PROGR 14 CONCURSO DE SARDANAS_CAST.pdf",
+      "long": 93483,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

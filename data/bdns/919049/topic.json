@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "919049",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COMARCA DE CAMPO DE DAROCA / COMARCA DE CAMPO DE DAROCA",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "Convocatoria para la concesión de subvenciones para el desarrollo de programaciones anuales de las entidades de la Comarca de Campo de Daroca durante el ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://campodedaroca.sedelectronica.es/transparency/f57d2fdd-528e-4c3f-88c5-0fd93c012638/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919049",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://campodedaroca.sedelectronica.es/transparency/f57d2fdd-528e-4c3f-88c5-0fd93c012638/",
+  "text_inicio": "Desde el día siguiente a la publicación de la presente convocatoria en el BOPZ",
+  "text_fin": "Quince días hábiles a contar desde el día siguiente al BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-15T04:06:13.541Z"
+}

@@ -7,14 +7,14 @@
   "programme": "EUBA",
   "programmeCode": "45532249",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2026-06-25",
   "deadline": "2026-09-30",
   "deadlineModel": "single-stage",
   "actionType": "EUBA Type of Action",
-  "actionCode": null,
-  "mgaCode": null,
+  "actionCode": "EUBA",
+  "mgaCode": "EUBA",
   "budget": {
     "total_eur": 104500,
     "by_year": {
@@ -30,7 +30,7 @@
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "For help related to this call, please contact grants@euaa.europa.eu.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. - IMPORTANT! For EUAA grants only sections 1, 2 and 3.1 apply; EUAA will evaluate the proposals and manage the grants outside of the EU Commission’s IT platform.",
-  "submissionUrl": null,
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/45670?topic=EUBA-EUAA-2026-ASYLUMCASELAW",
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EUBA-EUAA-2026-ASYLUMCASELAW",
   "documents": [
     {
@@ -118,5 +118,5 @@
       "is_downloadable": true
     }
   ],
-  "fetchedAt": "2026-07-14T04:05:06.433Z"
+  "fetchedAt": "2026-07-15T04:02:52.382Z"
 }

@@ -1,0 +1,64 @@
+{
+  "id": 1120580,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIBERA DEL FRESNO",
+    "nivel3": "AYUNTAMIENTO DE RIBERA DEL FRESNO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919019",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A ASOCIACIONES Y ENTIDADES DE RIBERA DEL FRESNO AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES431 - Badajoz"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "SUBVENCIONES A ASOCIACIONES Y ENTIDADES DE RIBERA DEL FRESNO AÑO 2026",
+  "urlBasesReguladoras": "https://riberadelfresno.sedelectronica.es/preview-document/07419e8f-eaea-4565-b4c5-b71c69a6013a/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "plazo de diez días hábiles desde la publicación del extracto",
+  "textFin": "plazo de diez días hábiles desde la publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493057,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260713_Otros_DECRETO 2026-0370 [Resolución Bases].pdf",
+      "long": 405472,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

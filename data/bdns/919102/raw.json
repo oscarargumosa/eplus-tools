@@ -1,0 +1,72 @@
+{
+  "id": 1120663,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CONSELLO DE CONTAS DE GALICIA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919102",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4500,
+  "mrr": false,
+  "descripcion": "Resolución de 7 de julio de 2026 por la que se ordena la publicación del Acuerdo de 18 de junio de 2026 por el que se convoca el VII Premio de investigación Carlos G. Otero Díaz.",
+  "descripcionLeng": " Resolución do 7 de xullo de 2026 pola que se ordena a publicación do Acordo do 18 de xuño de 2026 polo que se convoca o VII Premio de investigación Carlos G. Otero Díaz.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de 29 de octubre de 2019 por la que se da publicidad al Acuerdo del Pleno de la institución, de 23 de septiembre de\n2019, por el que se crea el Premio de investigación Carlos G. Otero Díaz y se establecen las bases reguladoras para su concesión",
+  "urlBasesReguladoras": "https://www.ccontasgalicia.es/sites/consello_de_contas/files/contents/static_content/premios/T_C_Bases_reguladoras_CGOD_C.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-14",
+  "fechaFinSolicitud": "2026-11-01",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493257,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "O10-070726-0002_gal.docx",
+      "long": 20958,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493256,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "O10-070726-0002R_cas.docx",
+      "long": 22498,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

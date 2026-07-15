@@ -1,0 +1,72 @@
+{
+  "id": 1120592,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE ALICANTE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919031",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 148500,
+  "mrr": false,
+  "descripcion": "BECAS PARA REALIZAR CURSOS DE IDIOMAS en el Centro Superior de Idiomas de la Universidad de Alicante – Primer Semestre curso 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BECAS PARA REALIZAR CURSOS DE IDIOMAS en el Centro Superior de Idiomas de la Universidad de Alicante – Primer Semestre curso 2026/2027",
+  "urlBasesReguladoras": "https://www.boua.ua.es/Acuerdos/DescargarAcuerdo/68441",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-22",
+  "fechaFinSolicitud": "2026-09-18",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493112,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026SBV144_conv.pdf",
+      "long": 337186,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493111,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026SBV144_conv.pdf",
+      "long": 337186,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

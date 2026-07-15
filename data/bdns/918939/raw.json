@@ -1,0 +1,68 @@
+{
+  "id": 1120500,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "COMARCA DE CUENCAS MINERAS",
+    "nivel3": "COMARCA DE CUENCAS MINERAS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "918939",
+  "fechaRecepcion": "2026-07-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones para Asociaciones y entidades Deportivas de la Comarca Cuencas Mineras 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES242 - Teruel"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "DECRETO 2026-0232 DE 13/07/2026 DEL PRESIDENTE EN FUNCIONES APROBATORIO DE LA  CONVOCATORIA DE SUBVENCIONES PARA ASOCICIONES Y ENTIDADES DEPORTIVAS DE LA COMARCA CUENCAS MINERAS 2026 EN MATERIA DEPORTIVA",
+  "urlBasesReguladoras": "https://comarcacuencasmineras.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicacion en el BOPT",
+  "textFin": "un mes contado a partir del día siguiente a la publicacion",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1492863,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto 0232 del 2026 aprobación de la convocatoria.pdf",
+      "long": 663907,
+      "datMod": "2026-07-13",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

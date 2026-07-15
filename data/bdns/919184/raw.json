@@ -1,0 +1,80 @@
+{
+  "id": 1120745,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILA-SACRA",
+    "nivel3": "AYUNTAMIENTO DE VILA-SACRA"
+  },
+  "sedeElectronica": "www.vila-sacra.cat",
+  "codigoBDNS": "919184",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1549.5,
+  "mrr": false,
+  "descripcion": "subvención casal de verano 2026",
+  "descripcionLeng": "subvenció casal estiu 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "bases reguladoras para la ayuda para la participación al casal de verano 2026",
+  "urlBasesReguladoras": "https://vila-sacra.eadministracio.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "01/08/2026",
+  "textFin": "31/08/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493445,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "decreto aprobación convocatoria.pdf",
+      "long": 45910,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493464,
+      "descripcion": "MODEL SOL.LICITUD",
+      "nombreFic": "MODEL SOL.LICITUD.pdf",
+      "long": 161152,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493437,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DECRET APROVACIÓ CONVOCATÒRIA.pdf",
+      "long": 167103,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1120599,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE ALICANTE",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919038",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1600,
+  "mrr": false,
+  "descripcion": "PREMIOS A TRABAJOS DE FP DEL GRADO SUPERIOR DE FORMACIÓN PROFESIONAL EN MOVILIDAD SEGURA Y SOSTENIBLE  CÁTEDRA VECTALIA MOVILIDAD DE LA UNIVERSIDAD DE ALICANTE",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "PREMIOS A TRABAJOS DE FP DEL GRADO SUPERIOR DE FORMACIÓN PROFESIONAL EN MOVILIDAD SEGURA Y SOSTENIBLE  CÁTEDRA VECTALIA MOVILIDAD DE LA UNIVERSIDAD DE ALICANTE",
+  "urlBasesReguladoras": "https://www.boua.ua.es/Acuerdos/DescargarAcuerdo/68421",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-27",
+  "fechaFinSolicitud": "2026-08-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493126,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026SBV149_conv.pdf",
+      "long": 192107,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493125,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026SBV149_conv.pdf",
+      "long": 192107,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

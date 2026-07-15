@@ -1,0 +1,80 @@
+{
+  "id": 1120659,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MASNOU, EL",
+    "nivel3": "AYUNTAMIENTO DE MASNOU, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919098",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 subvenciones para la igualdad de oportunidades de la infancia y la adolescencia.  Línea 1 Actividades de verano",
+  "descripcionLeng": "CONVOCATÒRIA 2026 DE SUBVENCIONS PER A LA IGUALTAT D¿OPORTUNITATS DE LA INFÀNCIA I L¿ADOLESCÈNCIA. LÍNIA 1 - ACTIVITATS D`ESTIU",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases específicas reguladoras de las subvenciones para la igualdad de oportunidades de la infancia y la adolescencia a otorgar por el procedimiento de concurrencia competitiva del Ayuntamiento de El Masnou",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3900004/aprovacio-definitiva-de-les-bases-especifiques-reguladores-de-les-subvencions-per-a-la-igualtat-d-oportunitats-de-la-infancia-i-l-adolescencia-a-atorgar-pel-procediment-de-concurrencia-competitiva-ajuntament-del-masnou",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-08-31",
+  "fechaFinSolicitud": "2026-09-18",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493278,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "EDICTO_CAT.pdf",
+      "long": 566935,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493279,
+      "descripcion": "Aprobación convocatoria JGL 9/07/2026",
+      "nombreFic": "Certificat_aprobació_convocatòria_JGL_9-7-26.pdf",
+      "long": 734537,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493277,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "EDICTO_CAST.pdf",
+      "long": 562958,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

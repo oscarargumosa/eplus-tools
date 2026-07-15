@@ -1,0 +1,267 @@
+{
+  "id": 1120634,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "INSTITUTO PARA LA COMPETITIVIDAD EMPRESARIAL DE CASTILLA Y LEÓN"
+  },
+  "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es",
+  "codigoBDNS": "919073",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2500000,
+  "mrr": false,
+  "descripcion": "Resolución de 14 de julio de 2026 de la Presidencia del ICECYL por la que se aprueba la convocatoria para la concesión de subvenciones destinadas a financiar proyectos de expansión internacional de las pymes de Castilla y León",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "Actividades de programación, radiodifusión, agencias de noticias y otras actividades de distribución de contenidos",
+      "codigo": "60"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "Artes gráficas y reproducción de soportes grabados",
+      "codigo": "18"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "Confección de prendas de vestir",
+      "codigo": "14"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "Coquerías y refino de petróleo",
+      "codigo": "19"
+    },
+    {
+      "descripcion": "Edición de programas informáticos",
+      "codigo": "58.2"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "Fabricación de aceites y grasas vegetales y animales",
+      "codigo": "10.4"
+    },
+    {
+      "descripcion": "Fabricación de bebidas",
+      "codigo": "11"
+    },
+    {
+      "descripcion": "Fabricación de maquinaria y equipo n.c.o.p.",
+      "codigo": "28"
+    },
+    {
+      "descripcion": "Fabricación de material y equipo eléctrico",
+      "codigo": "27"
+    },
+    {
+      "descripcion": "Fabricación de muebles",
+      "codigo": "31"
+    },
+    {
+      "descripcion": "Fabricación de otro material de transporte",
+      "codigo": "30"
+    },
+    {
+      "descripcion": "Fabricación de otros productos alimenticios",
+      "codigo": "10.8"
+    },
+    {
+      "descripcion": "Fabricación de otros productos minerales no metálicos",
+      "codigo": "23"
+    },
+    {
+      "descripcion": "Fabricación de productos de caucho y plásticos",
+      "codigo": "22"
+    },
+    {
+      "descripcion": "Fabricación de productos de molinería, almidones y productos amiláceos",
+      "codigo": "10.6"
+    },
+    {
+      "descripcion": "Fabricación de productos de panadería y pastas alimenticias",
+      "codigo": "10.7"
+    },
+    {
+      "descripcion": "Fabricación de productos farmacéuticos",
+      "codigo": "21"
+    },
+    {
+      "descripcion": "Fabricación de productos informáticos, electrónicos y ópticos",
+      "codigo": "26"
+    },
+    {
+      "descripcion": "Fabricación de productos lácteos y hielo comestible",
+      "codigo": "10.5"
+    },
+    {
+      "descripcion": "Fabricación de productos metálicos, excepto maquinaria y equipo",
+      "codigo": "25"
+    },
+    {
+      "descripcion": "Fabricación de productos para la alimentación animal",
+      "codigo": "10.9"
+    },
+    {
+      "descripcion": "Fabricación de vehículos de motor, remolques y semirremolques",
+      "codigo": "29"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "Industria de la madera y del corcho, excepto muebles; cestería y espartería",
+      "codigo": "16"
+    },
+    {
+      "descripcion": "Industria del cuero y productos relacionados de otros materiales",
+      "codigo": "15"
+    },
+    {
+      "descripcion": "Industria del papel",
+      "codigo": "17"
+    },
+    {
+      "descripcion": "Industria del tabaco",
+      "codigo": "12"
+    },
+    {
+      "descripcion": "Industria química",
+      "codigo": "20"
+    },
+    {
+      "descripcion": "Industria textil",
+      "codigo": "13"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "Metalurgia",
+      "codigo": "24"
+    },
+    {
+      "descripcion": "Otras industrias manufactureras",
+      "codigo": "32"
+    },
+    {
+      "descripcion": "Procesado y conservación de carne y elaboración de productos cárnicos",
+      "codigo": "10.1"
+    },
+    {
+      "descripcion": "Procesado y conservación de frutas y hortalizas",
+      "codigo": "10.3"
+    },
+    {
+      "descripcion": "Producción cinematográfica, de vídeo y de programas de televisión, grabación de sonido y edición musical",
+      "codigo": "59"
+    },
+    {
+      "descripcion": "Reparación, mantenimiento e instalación de maquinaria y equipos",
+      "codigo": "33"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas",
+      "codigo": "95"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Orden EYH/495/2025, de 14 de mayo, por la que se aprueban las bases reguladoras de las subvenciones destinadas a financiar proyectos de expansión internacional de las pymes de Castilla y León",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2025/05/21/pdf/BOCYL-D-21052025-5.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2027-02-28",
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOCYL",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493191,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Convocatoria Expansión Internacional 2026.pdf",
+      "long": 695837,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "919097",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD REY JUAN CARLOS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "Resolución del Sr. Rector de la Universidad Rey Juan Carlos, por la que se aprueban y se hacen públicas las bases de la IX Convocatoria de los Premios del Consejo Social para Jóvenes Investigadores e Innovadores",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-14",
+  "open_date": null,
+  "deadline": "2026-09-04",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919097",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "1b - ANEXO I - Formulario de Solicitud",
+      "url": null
+    },
+    {
+      "label": "1c - ANEXO II - Modelo declaración responsable",
+      "url": null
+    },
+    {
+      "label": "1g - ANEXO VI -Modelo DACI_Miembros Jurado",
+      "url": null
+    },
+    {
+      "label": "1e - ANEXO IV - Formato CV_ModalidadA",
+      "url": null
+    },
+    {
+      "label": "1f - ANEXO V -  Modelo declaración veracidad datos CV",
+      "url": null
+    },
+    {
+      "label": "1d - ANEXO III - Test Valoración del TFG y TFM - Modalidades B y C",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.urjc.es/tablon-de-anuncios",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOCM",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-15T04:06:13.555Z"
+}

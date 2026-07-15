@@ -1,0 +1,68 @@
+{
+  "id": 1120777,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTURTZI",
+    "nivel3": "AYUNTAMIENTO DE SANTURTZI"
+  },
+  "sedeElectronica": "WWW.SANTURTZI,EUS",
+  "codigoBDNS": "919216",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA DE LAS SUBVENCIONES PARA EL FOMENTO DE LA PARTICIPACIÓN COMUNITARIA DE LAS PERSONAS MAYORES COMO MECANISMO PARA HACER FRENTE A LA  SOLEDAD NO DESEADA EN EL MUNICIPIO DE SANTURTZI",
+  "descripcionLeng": "SANTURTZIKO UDALERRIAN NAHI EZ DEN BAKARDADEARI AURRE EGITEKO MEKANISMO GISA ADINEKOEN PARTE-HARTZE KOMUNITARIOA SUSTATZEKO DIRULAGUNTZEN DEIALDIAREN OINARRI ARAUTZAILEAK\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE LAS SUBVENCIONES PARA EL FOMENTO DE LA PARTICIPACIÓN COMUNITARIA DE LAS PERSONAS MAYORES COMO MECANISMO PARA HACER FRENTE A LA  SOLEDAD NO DESEADA EN EL MUNICIPIO DE SANTURTZI",
+  "urlBasesReguladoras": "https://www.santurtzi.eus/es-ES/Paginas/default.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE SU PUBLICACION EN BOLETIN OFICIAL",
+  "textFin": "15 diís después del anuncio de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493527,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "005 Decreto CONVOCATORIA Y BASES participación comunitaria personas mayores_2026_2.PDF",
+      "long": 523692,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

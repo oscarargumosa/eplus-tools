@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "918971",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE JÓVENES Y DEPORTES",
+  "nuts_codes": [
+    "ES43"
+  ],
+  "nuts_primary": "ES43",
+  "title": "Ayudas 2026 a entidades deportivas para la participación de equipos en competiciones deportivas de ámbito nacional e internacional,  s/ Resolución de 29 de junio de 2026 que las convoca",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 700000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": "https://www.juntaex.es/w/4188",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918971",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    },
+    {
+      "label": "Modelo de solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://doe.gobex.es/pdfs/doe/2020/1860o/20050167.pdf",
+  "text_inicio": "Día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+  "text_fin": "1 mes desde el día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-15T04:06:13.519Z"
+}

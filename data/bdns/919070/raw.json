@@ -1,0 +1,88 @@
+{
+  "id": 1120631,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "IRURA",
+    "nivel3": "AYUNTAMIENTO DE IRURA"
+  },
+  "sedeElectronica": "https://www.irura.eus/eu",
+  "codigoBDNS": "919070",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 500,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones para páginas web en euskera.",
+  "descripcionLeng": "Euskarazko webguneei dirulaguntzak emateko deialdia.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases para la concesión de subvenciones para páginas web en euskera.",
+  "urlBasesReguladoras": "https://www.irura.eus/eu/hasiera",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": "Argitaratu eta hurrengo egunetik hasita / Desde el dia siguiente de la fecha de publicación",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493182,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2-DEIALDIA_Enpresak_ELEB.pdf",
+      "long": 238493,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493189,
+      "descripcion": "Oinarriak -Bases",
+      "nombreFic": "3-Oinarriak_Webg_eleb.pdf",
+      "long": 275119,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493186,
+      "descripcion": "Eskaera orria",
+      "nombreFic": "4-Eskaera-orria_eleb_2026.pdf",
+      "long": 220559,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    },
+    {
+      "id": 1493184,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2-DEIALDIA_Enpresak_EUS.pdf",
+      "long": 192648,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

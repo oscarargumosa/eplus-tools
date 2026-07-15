@@ -1,0 +1,64 @@
+{
+  "id": 1120619,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALHAURÍN EL GRANDE",
+    "nivel3": "AYUNTAMIENTO DE ALHAURÍN EL GRANDE"
+  },
+  "sedeElectronica": "https://alhaurinelgrande.sedelectronica.es/info.18",
+  "codigoBDNS": "919058",
+  "fechaRecepcion": "2026-07-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 202100,
+  "mrr": false,
+  "descripcion": "PR/2026/1272 de 3 de julio de 2026 del Ayuntamiento de Alhaurín el Grande sobre la que se aprueban las bases reguladores para la concesión de subvenciones a asociaciones y entidades sin ánimo de lucro en régimen de concurrencia competitiva",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladores para la concesión de subvenciones a asociaciones y entidades sin ánimo de lucro en régimen de concurrencia competitiva",
+  "urlBasesReguladoras": "https://alhaurinelgrande.sedelectronica.es/transparency/8c177e32-9e35-4961-94da-9809f918f8fb/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-08-03",
+  "fechaFinSolicitud": "2026-09-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493144,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260707_Certificado_APROBACIÓN DE LAS BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA LAS ASOCIACIONES Y ENTIDADES SIN ANIMO DE LUCRO, EN REGIMEN DE CONCURRENCIA COMPETITIVA, 2026 [CERTIF PTO 4.2  JGL 0.pdf",
+      "long": 7439323,
+      "datMod": "2026-07-14",
+      "datPublicacion": "2026-07-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
