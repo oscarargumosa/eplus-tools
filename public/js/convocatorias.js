@@ -221,6 +221,15 @@ const Convocatorias = (() => {
         createProjectFromCall(btn);
         return;
       }
+      // "Visión" en la tarjeta — arranca EU Vision sin abrir el detalle.
+      const visionBtn = e.target.closest('.conv-card-vision');
+      if (visionBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'empezar tu visión' })) return;
+        if (typeof Vision !== 'undefined') Vision.startForCall(visionBtn.dataset.callId);
+        return;
+      }
       const card = e.target.closest('[data-call-id]');
       if (card) openDetail(card.dataset.callId);
     });
@@ -585,9 +594,15 @@ const Convocatorias = (() => {
 
       ${moneyRow}
 
-      <div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+      <div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 gap-2">
         <span class="text-[11px] text-on-surface-variant truncate font-mono">${escapeHtml(item.source_id || '')}</span>
-        <span class="text-[11px] font-bold text-primary whitespace-nowrap">Ver →</span>
+        <span class="flex items-center gap-3 whitespace-nowrap">
+          <button type="button" class="conv-card-vision inline-flex items-center gap-1 text-[11px] font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            data-call-id="${id}" title="Empezar mi visión sobre esta convocatoria">
+            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">explore</span>Visión
+          </button>
+          <span class="text-[11px] font-bold text-primary">Ver →</span>
+        </span>
       </div>
     </article>`;
   }
@@ -732,11 +747,20 @@ const Convocatorias = (() => {
     const maxProj   = fmtMoney(item.budget_per_project_max_eur);
     const projRange = (minProj && maxProj && minProj !== maxProj) ? `${minProj} – ${maxProj}` : (maxProj || minProj);
 
-    const apply = item.apply_url
-      ? `<a href="${escapeHtml(item.apply_url)}" target="_blank" rel="noopener"
+    // "Solicitar" ahora arranca el paso previo: crear tu Visión sobre esta
+    // convocatoria (EU Vision). El enlace al portal oficial queda como
+    // secundario para quien quiera ir directo a solicitar fuera.
+    const apply = `<button type="button" id="conv-start-vision"
+            data-call-id="${escapeHtml(item.call_id || '')}"
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1b1464] text-[#fbff12] text-sm font-bold hover:bg-[#1b1464]/80 transition-colors">
-            <span>Solicitar</span>
-            <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
+            <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">explore</span>
+            <span>Empezar mi visión</span>
+          </button>`;
+    const applyExternal = item.apply_url
+      ? `<a href="${escapeHtml(item.apply_url)}" target="_blank" rel="noopener"
+            class="inline-flex items-center gap-1 text-[12px] text-on-surface-variant hover:text-primary hover:underline">
+            <span>Solicitar en el portal oficial</span>
+            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">open_in_new</span>
           </a>`
       : '';
 
@@ -798,7 +822,7 @@ const Convocatorias = (() => {
         </div>
 
         <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20 flex-wrap gap-3">
-          <div>${details}</div>
+          <div class="flex items-center gap-4">${details}${applyExternal}</div>
           <div>${apply}</div>
         </div>
       </div>
@@ -930,6 +954,14 @@ const Convocatorias = (() => {
       if (btn) {
         e.preventDefault();
         openChat(btn.dataset.sourceId, btn.dataset.title);
+        return;
+      }
+      // "Empezar mi visión": cierra el drawer y arranca EU Vision con esta call.
+      const sv = e.target.closest('#conv-start-vision');
+      if (sv) {
+        e.preventDefault();
+        closeDetail();
+        if (typeof Vision !== 'undefined') Vision.startForCall(sv.dataset.callId);
       }
     });
 

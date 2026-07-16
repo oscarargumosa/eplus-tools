@@ -329,6 +329,7 @@ const App = (() => {
   const FUNNEL_COPY = {
     'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding School', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
     'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
+    'eu-vision':       { icon: 'explore', title: 'Da forma a tu idea de proyecto europeo', body: 'Convierte una idea vaga en una visión concreta en 10 minutos: el reto, a quién buscas y por qué importa a Europa. Crea tu cuenta gratis para empezar.' },
     'my-evaluations':  { icon: 'fact_check', title: 'Evalúa como un experto EACEA', body: 'Diagnostica tu propuesta contra los criterios reales de evaluación antes de presentarla. Necesitas una cuenta para guardar tus evaluaciones.' },
     'import-proposal': { icon: 'upload_file', title: 'Importa una propuesta y mejórala', body: 'Sube un borrador y la IA lo analiza, puntúa y propone mejoras concretas. Crea tu cuenta para subir tu primer documento.' },
     'shortlists':      { icon: 'favorite', title: 'Tu pool de socios para el consorcio', body: 'Guarda y organiza entidades para tus futuras alianzas. Crea tu cuenta para empezar a construir tu pool de partners.' },
@@ -375,6 +376,9 @@ const App = (() => {
   // #panel-account; la ruta decide qué sección se muestra.
   const ACCOUNT_ROUTES = ['account-profile', 'account-security', 'account-billing', 'account-preferences'];
 
+  // Workspace "EU Vision": el sidebar pasa a ser el menú de visiones.
+  const VISION_ROUTES = ['eu-vision'];
+
   // Superficies de CONTENIDO que un invitado puede navegar y explorar
   // libremente (ve las tarjetas). El muro de login salta solo al ABRIR
   // una tarjeta concreta (detalle de convocatoria, ficha de entidad,
@@ -387,15 +391,18 @@ const App = (() => {
   function updateWorkspace(route) {
     const isEntidades = ENTITY_ROUTES.includes(route);
     const isAccount   = ACCOUNT_ROUTES.includes(route);
-    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades || isAccount);
+    const isVision    = VISION_ROUTES.includes(route);
+    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades || isAccount || isVision);
     document.getElementById('sidebar-group-entidades')?.classList.toggle('hidden', !isEntidades);
     document.getElementById('sidebar-group-account')?.classList.toggle('hidden', !isAccount);
-    updateTopbarActive(route, isEntidades, isAccount);
+    document.getElementById('sidebar-group-vision')?.classList.toggle('hidden', !isVision);
+    updateTopbarActive(route, isEntidades, isAccount, isVision);
   }
 
-  function updateTopbarActive(route, isEntidades, isAccount) {
+  function updateTopbarActive(route, isEntidades, isAccount, isVision) {
     // La cuenta no es una pestaña del menú superior: no resaltamos ninguna.
     const activeHref = isAccount              ? null
+      : isVision                              ? '#eu-vision'
       : isEntidades                           ? '#my-org'
       : route === 'convocatorias'             ? '#convocatorias'
       : route === 'movilidades'               ? '#movilidades'
@@ -517,6 +524,7 @@ const App = (() => {
       research:         'Research',
       movilidades:      'Movilidades',
       convocatorias:    'Convocatorias',
+      'eu-vision':      'EU Vision',
       'my-org':         'Mi Organización',
       organizations:    'Directorio',
       shortlists:       'Mi Pool',
@@ -549,6 +557,7 @@ const App = (() => {
       if (route === 'research' && typeof Research !== 'undefined') Research.init();
       if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
       if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
+      if (route === 'eu-vision' && typeof Vision !== 'undefined') Vision.init();
       if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
       if (route === 'diagnose' && typeof Diagnose !== 'undefined') Diagnose.init();
       if (route === 'import-proposal' && typeof ImportProposal !== 'undefined') ImportProposal.init();

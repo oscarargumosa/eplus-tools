@@ -1,0 +1,1077 @@
+<title>The FUN-DESIGN™ Playbook</title>
+<style>
+  :root{
+    --ground:#ffffff;
+    --ground-alt:#f6f5fb;
+    --ink:#1b1464;                 /* brand indigo — headings */
+    --body:#26244a;               /* indigo-tinted near-black — running text */
+    --muted:#6d6a90;              /* indigo-tinted grey */
+    --accent:#fbff12;              /* lime yellow — accent device only */
+    --lav:#8f6fc4;                /* lavender, darkened for AA on white */
+    --lav-soft:#c7afdf;
+    --line:#e6e2f0;              /* indigo-tinted separator */
+    --card:#ffffff;
+    --card-line:#ece9f5;
+    --deep:#1b1464;              /* full-bleed opener ground */
+    --deep-2:#120d47;
+    --on-deep:#f4f2ff;
+    --on-deep-muted:#b9b2e0;
+    --shadow:0 1px 2px rgba(27,20,100,.06),0 12px 32px -12px rgba(27,20,100,.18);
+    --measure:44rem;
+    --font:"Poppins","Century Gothic","Avenir Next","Segoe UI",system-ui,-apple-system,"Helvetica Neue",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#0f0b33;
+      --ground-alt:#15104a;
+      --ink:#ffffff;
+      --body:#e7e4fb;
+      --muted:#a7a0d4;
+      --accent:#fbff12;
+      --lav:#c7afdf;
+      --lav-soft:#c7afdf;
+      --line:rgba(199,175,223,.16);
+      --card:#171150;
+      --card-line:rgba(199,175,223,.16);
+      --deep:#1b1464;
+      --deep-2:#0c0836;
+      --on-deep:#f4f2ff;
+      --on-deep-muted:#b9b2e0;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 20px 40px -18px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#ffffff;--ground-alt:#f6f5fb;--ink:#1b1464;--body:#26244a;--muted:#6d6a90;
+    --accent:#fbff12;--lav:#8f6fc4;--lav-soft:#c7afdf;--line:#e6e2f0;--card:#ffffff;--card-line:#ece9f5;
+    --deep:#1b1464;--deep-2:#120d47;--on-deep:#f4f2ff;--on-deep-muted:#b9b2e0;
+    --shadow:0 1px 2px rgba(27,20,100,.06),0 12px 32px -12px rgba(27,20,100,.18);
+  }
+  :root[data-theme="dark"]{
+    --ground:#0f0b33;--ground-alt:#15104a;--ink:#ffffff;--body:#e7e4fb;--muted:#a7a0d4;
+    --accent:#fbff12;--lav:#c7afdf;--lav-soft:#c7afdf;--line:rgba(199,175,223,.16);--card:#171150;--card-line:rgba(199,175,223,.16);
+    --deep:#1b1464;--deep-2:#0c0836;--on-deep:#f4f2ff;--on-deep-muted:#b9b2e0;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 20px 40px -18px rgba(0,0,0,.55);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--ground);color:var(--body);font-family:var(--font);
+    font-weight:450;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    font-feature-settings:"kern" 1;overflow-x:hidden}
+  .wrap{max-width:var(--measure);margin:0 auto;padding:0 1.5rem}
+
+  h1,h2,h3,h4{color:var(--ink);line-height:1.12;text-wrap:balance;margin:0}
+  p{margin:0 0 1.05rem}
+  a{color:inherit}
+  strong{font-weight:700;color:var(--ink)}
+  em{font-style:italic}
+
+  /* ---------- device: yellow highlighter ---------- */
+  .hl{background:linear-gradient(transparent 58%,var(--accent) 58%,var(--accent) 92%,transparent 92%);
+    padding:0 .06em;color:inherit;font-weight:600;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  [data-theme="dark"] .hl,@media (prefers-color-scheme:dark){}
+
+  /* ---------- theme toggle ---------- */
+  .toggle{position:fixed;top:1rem;right:1rem;z-index:50;width:2.5rem;height:2.5rem;border-radius:999px;
+    border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:1.1rem;
+    display:grid;place-items:center;box-shadow:var(--shadow)}
+  .toggle:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+
+  /* ---------- cover ---------- */
+  .cover{background:
+      radial-gradient(120% 80% at 85% -10%,rgba(251,255,18,.14),transparent 55%),
+      linear-gradient(160deg,var(--deep),var(--deep-2));
+    color:var(--on-deep);padding:clamp(3.5rem,10vw,7rem) 0 clamp(3rem,7vw,5rem);position:relative;overflow:hidden}
+  .cover .wrap{position:relative}
+  .cover .eyebrow{color:var(--lav-soft)}
+  .cover h1{color:#fff;font-weight:900;letter-spacing:-.01em;
+    font-size:clamp(2.6rem,9vw,5.2rem);line-height:.98;margin:.6rem 0 0}
+  .cover .word{display:inline-block}
+  .cover .fund{position:relative}
+  .cover .fund::after{content:"";position:absolute;left:-.02em;right:-.02em;bottom:.06em;height:.16em;
+    background:var(--accent);border-radius:2px;transform:rotate(-.6deg)}
+  .cover .sub{font-size:clamp(1.05rem,2.6vw,1.5rem);color:var(--on-deep);font-weight:500;margin-top:1.6rem;max-width:32ch}
+  .cover .sub b{color:#fff;font-weight:700}
+  .cover .thesis{margin-top:2.4rem;display:inline-flex;align-items:center;gap:.7rem;
+    border:1px solid rgba(199,175,223,.35);border-radius:999px;padding:.5rem 1.1rem;font-size:.95rem;color:var(--on-deep)}
+  .cover .thesis b{color:var(--accent);font-weight:700}
+  .cover .meta{margin-top:2.6rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-deep-muted)}
+  .acrostic{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:2.4rem}
+  .acrostic span{width:2.4rem;height:2.4rem;display:grid;place-items:center;border-radius:.55rem;
+    font-weight:800;font-size:1.1rem;background:rgba(255,255,255,.06);border:1px solid rgba(199,175,223,.25);color:#fff}
+  .acrostic span.on{background:var(--accent);color:var(--deep);border-color:var(--accent)}
+
+  .eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lav)}
+
+  /* ---------- toc ---------- */
+  nav.toc{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--ground) 88%,transparent);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav.toc .row{max-width:64rem;margin:0 auto;padding:.6rem 1.5rem;display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:thin}
+  nav.toc a{flex:0 0 auto;font-size:.78rem;font-weight:600;text-decoration:none;color:var(--muted);
+    padding:.35rem .7rem;border-radius:999px;white-space:nowrap;transition:.15s}
+  nav.toc a:hover{color:var(--ink);background:var(--ground-alt)}
+  nav.toc a.home{color:var(--ink)}
+
+  /* ---------- part opener ---------- */
+  .opener{background:linear-gradient(155deg,var(--deep),var(--deep-2));color:var(--on-deep);
+    padding:clamp(2.6rem,6vw,4.5rem) 0;margin-top:0;position:relative;overflow:hidden}
+  .opener::before{content:attr(data-num);position:absolute;right:-.4rem;top:50%;transform:translateY(-50%);
+    font-size:clamp(9rem,26vw,20rem);font-weight:900;color:rgba(255,255,255,.05);line-height:.7;pointer-events:none}
+  .opener .wrap{position:relative}
+  .opener .eyebrow{color:var(--lav-soft)}
+  .opener h2{color:#fff;font-weight:800;font-size:clamp(1.9rem,5.4vw,3.1rem);margin:.5rem 0 .7rem;max-width:20ch}
+  .opener p{color:var(--on-deep-muted);font-style:italic;max-width:52ch;margin:0}
+  .opener .accent-line{width:3rem;height:.28rem;background:var(--accent);border-radius:3px;margin-bottom:1.4rem}
+
+  /* ---------- body sections ---------- */
+  section.body{padding:clamp(2.2rem,5vw,3.6rem) 0}
+  section.body.alt{background:var(--ground-alt)}
+  .chapno{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lav);margin-bottom:.5rem}
+  h3.ch{font-size:clamp(1.35rem,3.4vw,1.9rem);font-weight:800;margin:0 0 .3rem}
+  h4{font-size:1.05rem;font-weight:700;margin:1.8rem 0 .5rem;color:var(--ink)}
+  .lede{font-size:1.12rem;color:var(--body);font-weight:500}
+  .body p,.body li{color:var(--body)}
+  hr.soft{border:0;border-top:1px solid var(--line);margin:2.4rem 0}
+
+  ul.clean{list-style:none;padding:0;margin:0 0 1.1rem;display:flex;flex-direction:column;gap:.55rem}
+  ul.clean li{position:relative;padding-left:1.4rem;color:var(--body)}
+  ul.clean li::before{content:"";position:absolute;left:0;top:.62em;width:.5rem;height:.5rem;background:var(--accent);
+    border-radius:2px;transform:rotate(45deg)}
+
+  /* ---------- pull quote (brand device: big yellow quotes) ---------- */
+  .pull{position:relative;margin:2rem 0;padding:1.6rem 1.6rem 1.6rem 3.4rem;background:var(--card);
+    border:1px solid var(--card-line);border-radius:1.1rem;box-shadow:var(--shadow)}
+  .pull::before{content:"\201C";position:absolute;left:.8rem;top:.1rem;font-size:4rem;line-height:1;color:var(--accent);
+    font-family:Georgia,serif;text-shadow:0 1px 0 rgba(27,20,100,.15)}
+  .pull p{margin:0;font-size:1.15rem;font-weight:600;color:var(--ink);line-height:1.45}
+  .pull p:last-child{margin:0}
+
+  /* ---------- diagram / mono block ---------- */
+  .diagram{background:linear-gradient(160deg,var(--deep),var(--deep-2));color:var(--on-deep);border-radius:1rem;
+    padding:1.3rem 1.4rem;margin:1.6rem 0;overflow-x:auto;box-shadow:var(--shadow)}
+  .diagram pre{margin:0;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+    font-size:.82rem;line-height:1.5;color:var(--on-deep);white-space:pre}
+  .diagram .y{color:var(--accent)}
+  .diagram .l{color:var(--lav-soft)}
+
+  /* ---------- tables ---------- */
+  .tablewrap{overflow-x:auto;margin:1.6rem 0;border:1px solid var(--card-line);border-radius:1rem;box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:32rem;background:var(--card)}
+  th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--card-line);vertical-align:top}
+  thead th{background:var(--deep);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
+  tbody tr:last-child td{border-bottom:0}
+  td strong{color:var(--ink)}
+  .tag{display:inline-block;font-size:.7rem;font-weight:700;padding:.12rem .5rem;border-radius:999px;letter-spacing:.03em}
+  .tag.live{background:var(--accent);color:var(--deep)}
+  .tag.road{background:transparent;border:1px solid var(--lav);color:var(--lav)}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* ---------- FUN-DESIGN matrix (signature) ---------- */
+  .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}
+  @media(max-width:640px){.matrix{grid-template-columns:1fr}}
+  .move{background:var(--card);border:1px solid var(--card-line);border-radius:1.1rem;overflow:hidden;box-shadow:var(--shadow)}
+  .move header{background:var(--deep);color:#fff;padding:.7rem 1rem;font-weight:800;letter-spacing:.02em;
+    display:flex;align-items:baseline;gap:.5rem}
+  .move header .k{color:var(--accent);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .move .stage{padding:.85rem 1rem;border-bottom:1px solid var(--card-line)}
+  .move .stage:last-child{border-bottom:0}
+  .move .stage .letter{display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:.35rem;
+    background:var(--accent);color:var(--deep);font-weight:800;font-size:.82rem;margin-right:.5rem;float:left}
+  .move .stage b{color:var(--ink);display:block;font-size:.95rem;overflow:hidden}
+  .move .stage span{color:var(--muted);font-size:.82rem;display:block;overflow:hidden}
+
+  /* ---------- FUN-DESIGN chain (9 phases) ---------- */
+  .chain{display:flex;flex-direction:column;gap:.55rem;margin:2rem 0}
+  .phase{display:grid;grid-template-columns:2.6rem 1fr auto;align-items:center;gap:.9rem;
+    background:var(--card);border:1px solid var(--card-line);border-radius:.9rem;padding:.7rem .9rem;box-shadow:var(--shadow);position:relative}
+  .phase.star{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),var(--shadow)}
+  .phase .lt{width:2.6rem;height:2.6rem;display:grid;place-items:center;border-radius:.55rem;
+    background:var(--deep);color:var(--accent);font-weight:800;font-size:1.2rem}
+  .phase.star .lt{background:var(--accent);color:var(--deep)}
+  .phase .mid b{color:var(--ink);font-size:.98rem;display:block;line-height:1.25}
+  .phase .mid .tool{color:var(--muted);font-size:.84rem;margin-top:.1rem}
+  .phase .mid .tool strong{color:var(--lav);font-weight:700}
+  .phase .deliv{font-size:.72rem;font-weight:700;color:var(--deep);background:var(--accent);
+    padding:.28rem .6rem;border-radius:999px;white-space:nowrap;text-align:center;line-height:1.2}
+  [data-theme="dark"] .phase .deliv,:root:not([data-theme="light"]) .phase .deliv{}
+  @media(max-width:640px){
+    .phase{grid-template-columns:2.2rem 1fr;grid-template-areas:"lt mid" "deliv deliv";row-gap:.5rem}
+    .phase .lt{grid-area:lt}.phase .mid{grid-area:mid}.phase .deliv{grid-area:deliv;justify-self:start}
+  }
+
+  /* ---------- specialists grid ---------- */
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.8rem 0}
+  .spec{background:var(--card);border:1px solid var(--card-line);border-radius:1.1rem;padding:1.2rem;box-shadow:var(--shadow)}
+  .spec .name{font-weight:800;color:var(--ink);font-size:1.1rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .spec .stages{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--lav);margin:.2rem 0 .6rem}
+  .spec p{font-size:.9rem;margin:0;color:var(--body)}
+
+  /* ---------- one-pager card ---------- */
+  .onepager{background:linear-gradient(160deg,var(--deep),var(--deep-2));color:var(--on-deep);border-radius:1.4rem;
+    padding:clamp(1.5rem,4vw,2.6rem);box-shadow:var(--shadow);margin:1.8rem 0}
+  .onepager h3{color:#fff;text-align:center;font-weight:900;font-size:1.8rem;letter-spacing:.02em}
+  .onepager .optag{text-align:center;color:var(--lav-soft);font-style:italic;margin-bottom:1.6rem}
+  .onepager .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  @media(max-width:640px){.onepager .cols{grid-template-columns:1fr}}
+  .onepager .col h4{color:var(--accent);border-bottom:1px solid rgba(199,175,223,.3);padding-bottom:.35rem;margin:0 0 .6rem;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+  .onepager .col p{color:var(--on-deep);font-size:.92rem;margin:.35rem 0}
+  .onepager .col .lt{color:var(--accent);font-weight:800}
+  .onepager .foot{margin-top:1.6rem;text-align:center;color:var(--on-deep-muted);font-size:.9rem}
+  .onepager .foot b{color:#fff}
+
+  /* ---------- footer ---------- */
+  footer{background:linear-gradient(155deg,var(--deep),var(--deep-2));color:var(--on-deep-muted);
+    padding:3rem 0;text-align:center;margin-top:0}
+  footer .big{color:#fff;font-weight:900;font-size:clamp(1.4rem,4vw,2.2rem);margin-bottom:.8rem}
+  footer .big .hl{color:var(--deep)}
+  footer small{display:block;margin-top:1.2rem;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--on-deep-muted)}
+
+  .note{font-size:.86rem;color:var(--muted);border-left:2px solid var(--lav);padding-left:.9rem;margin:1.4rem 0}
+
+  /* ---------- tool pages ---------- */
+  .toolpage{padding:clamp(2.2rem,5vw,3.4rem) 0;border-top:1px solid var(--line)}
+  .toolpage:nth-of-type(even){background:var(--ground-alt)}
+  .toolhead{display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+  .toolhead .emoji{font-size:2.4rem;line-height:1;flex:0 0 auto}
+  .toolhead .ht{flex:1 1 16rem}
+  .toolhead .tname{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:800;color:var(--ink);line-height:1.1;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+  .toolhead .fase{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lav);margin-top:.35rem}
+  .toolhead .mission{margin:.7rem 0 0;font-size:1.05rem;color:var(--body);font-weight:500}
+  .io{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.6rem 0}
+  @media(max-width:640px){.io{grid-template-columns:1fr}}
+  .io .iocard{background:var(--card);border:1px solid var(--card-line);border-radius:1rem;padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
+  .io .iocard h5{margin:0 0 .6rem;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .io .iocard.out h5{color:var(--lav)}
+  .io ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.4rem}
+  .io li{position:relative;padding-left:1.2rem;font-size:.92rem;color:var(--body)}
+  .io .iocard.in li::before{content:"→";position:absolute;left:0;color:var(--muted);font-weight:700}
+  .io .iocard.out li::before{content:"✓";position:absolute;left:0;color:var(--ink);font-weight:700}
+  .io .deliverchip{margin-top:.8rem;display:inline-block;font-size:.72rem;font-weight:700;color:var(--deep);
+    background:var(--accent);padding:.3rem .7rem;border-radius:999px}
+  .func{font-size:.96rem;color:var(--body);margin:0 0 1.2rem}
+  .func b{color:var(--ink)}
+
+  /* ---------- app-window mockup ---------- */
+  .mock{border-radius:1rem;overflow:hidden;box-shadow:0 20px 44px -18px rgba(27,20,100,.4);border:1px solid var(--card-line);background:var(--card);margin:.4rem 0}
+  .mock .bar{background:var(--deep);color:#fff;padding:.55rem .9rem;display:flex;align-items:center;gap:.5rem;font-size:.8rem}
+  .mock .bar .dots{display:flex;gap:.35rem}
+  .mock .bar .dots i{width:.6rem;height:.6rem;border-radius:50%;background:rgba(255,255,255,.35);display:block}
+  .mock .bar .dots i.y{background:var(--accent)}
+  .mock .bar .u{margin-left:auto;color:var(--on-deep-muted);font-size:.72rem}
+  .mock .screen{padding:1rem 1.1rem;background:var(--ground);display:flex;flex-direction:column;gap:.7rem;font-size:.84rem;color:var(--body)}
+  .mock .mtitle{font-weight:700;color:var(--ink);font-size:.95rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .mock .mtitle .mtag{font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lav);border:1px solid var(--card-line);border-radius:999px;padding:.15rem .5rem}
+  .mock .field{background:var(--ground-alt);border:1px solid var(--card-line);border-radius:.55rem;padding:.5rem .7rem;color:var(--muted)}
+  .mock .field b{color:var(--ink);font-weight:600}
+  .mock .searchbar{display:flex;align-items:center;gap:.5rem;background:var(--ground-alt);border:1px solid var(--card-line);border-radius:.6rem;padding:.55rem .7rem}
+  .mock .searchbar .ico{color:var(--lav)}
+  .mock .searchbar .ph{color:var(--muted)}
+  .mock .searchbar .go{margin-left:auto;background:var(--deep);color:var(--accent);font-weight:700;font-size:.72rem;border-radius:.45rem;padding:.3rem .6rem}
+  .mrow{display:flex;align-items:center;gap:.6rem;background:var(--card);border:1px solid var(--card-line);border-radius:.55rem;padding:.5rem .7rem}
+  .mrow .lead{font-weight:600;color:var(--ink)}
+  .mrow .sub{color:var(--muted);font-size:.76rem}
+  .mrow .right{margin-left:auto;text-align:right}
+  .badge{font-size:.68rem;font-weight:700;border-radius:999px;padding:.16rem .5rem;white-space:nowrap}
+  .badge.ok{background:var(--accent);color:var(--deep)}
+  .badge.soft{background:color-mix(in srgb,var(--lav) 25%,transparent);color:var(--lav)}
+  .badge.line{border:1px solid var(--card-line);color:var(--muted)}
+  .mcols{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+  .mcol{background:var(--ground-alt);border:1px solid var(--card-line);border-radius:.55rem;padding:.5rem}
+  .mcol .ch{font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--lav);margin-bottom:.4rem}
+  .mcard{background:var(--card);border:1px solid var(--card-line);border-radius:.4rem;padding:.35rem .5rem;font-size:.76rem;color:var(--body);margin-bottom:.35rem}
+  .mcard:last-child{margin-bottom:0}
+  .scoreline{display:grid;grid-template-columns:7.5rem 1fr 2.6rem;align-items:center;gap:.5rem;font-size:.78rem}
+  .scoreline .track{height:.5rem;background:var(--ground-alt);border:1px solid var(--card-line);border-radius:999px;overflow:hidden}
+  .scoreline .fill{height:100%;background:var(--accent)}
+  .scoreline .val{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:700}
+  .scoreline .lab{color:var(--body)}
+  .kpi{display:flex;gap:.5rem;flex-wrap:wrap}
+  .kpi .k{background:var(--ground-alt);border:1px solid var(--card-line);border-radius:.5rem;padding:.4rem .6rem;flex:1 1 5rem;text-align:center}
+  .kpi .k .n{font-weight:800;color:var(--ink);font-size:1.05rem;font-variant-numeric:tabular-nums}
+  .kpi .k .t{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .steps{display:flex;gap:.35rem;flex-wrap:wrap}
+  .steps .st{font-size:.72rem;padding:.25rem .55rem;border-radius:999px;border:1px solid var(--card-line);color:var(--muted)}
+  .steps .st.on{background:var(--deep);color:var(--accent);border-color:var(--deep);font-weight:700}
+  .toolnav{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.4rem 0 0}
+  .toolnav a{font-size:.8rem;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--card-line);border-radius:999px;padding:.35rem .7rem;transition:.15s}
+  .toolnav a:hover{background:var(--accent);color:var(--deep);border-color:var(--accent)}
+</style>
+
+<button class="toggle" id="tg" aria-label="Cambiar tema">◑</button>
+
+<!-- ===================== COVER ===================== -->
+<header class="cover">
+  <div class="wrap">
+    <div class="eyebrow">EU Funding Studio · Playbook</div>
+    <h1><span class="word fund">FUN·DESIGN</span><span class="word">™</span></h1>
+    <p class="sub"><b>Designing Better European Projects.</b> El documento de referencia de la metodología.</p>
+    <div class="acrostic" aria-hidden="true">
+      <span class="on">F</span><span class="on">U</span><span class="on">N</span>
+      <span class="on">D</span><span class="on">E</span><span class="on">S</span>
+      <span class="on">I</span><span class="on">G</span><span class="on">N</span>
+    </div>
+    <div class="thesis">No vendemos IA. Vendemos <b>Better Projects.</b></div>
+    <div class="meta">Borrador editorial v0.1</div>
+  </div>
+</header>
+
+<!-- ===================== TOC ===================== -->
+<nav class="toc" aria-label="Índice">
+  <div class="row">
+    <a class="home" href="#top">FUN·DESIGN™</a>
+    <a href="#manifiesto">Manifiesto</a>
+    <a href="#p1">I · New Era</a>
+    <a href="#p2">II · Philosophy</a>
+    <a href="#p3">III · Nine Stages</a>
+    <a href="#p4">IV · Specialists</a>
+    <a href="#p5">V · Proposal Design</a>
+    <a href="#p6">VI · Consortia</a>
+    <a href="#p7">VII · Impact</a>
+    <a href="#p8">VIII · Future</a>
+    <a href="#apx">Apéndice</a>
+  </div>
+</nav>
+
+<a id="top"></a>
+
+<!-- ===================== MANIFIESTO ===================== -->
+<section class="body" id="manifiesto">
+  <div class="wrap">
+    <div class="chapno">Manifiesto</div>
+    <h3 class="ch">Por qué existe este libro</h3>
+    <p class="lede">De cientos de conversaciones sobre convocatorias, criterios y presupuestos ha emergido algo que ya no es una intuición: un <strong>método</strong>. Este libro lo pone por escrito por primera vez.</p>
+    <p>No es un manual de usuario ni un documento comercial. Es un <em>playbook</em>: explica <em>cómo pensamos</em>, no solo <em>qué hacemos</em>. El que —dentro de cinco años— seguirá siendo la referencia de FUN-DESIGN™ aunque la plataforma haya cambiado diez veces.</p>
+
+    <div class="pull"><p>El problema de la financiación europea nunca ha sido de dinero. Es de <span class="hl">traducción</span>: de idea a proyecto, y de proyecto a propuesta puntuable.</p></div>
+
+    <h4>La tesis: Human + AI</h4>
+    <p>Existen dos relatos incompletos. Que la consultoría tradicional es insustituible —cierto, pero <strong>no escala</strong>—. Y que la IA lo resolverá sola —cierto, pero <strong>no tiene criterio</strong>—. La tesis de este libro es que juntos son imbatibles.</p>
+
+    <div class="diagram"><pre>   <span class="l">HUMANO</span>                    +     <span class="y">IA</span>
+   ──────────────────                ──────────────────
+   Criterio                          Velocidad
+   Creatividad                       Consistencia
+   Experiencia real (15 años)        Memoria infinita
+   Decisión estratégica              Ejecución incansable</pre></div>
+
+    <div class="pull"><p>La creatividad sigue siendo del applicant: la herramienta no fabrica ideas, <span class="hl">estructura y optimiza</span> ideas humanas.</p></div>
+  </div>
+</section>
+
+<!-- ===================== PART I ===================== -->
+<div class="opener" id="p1" data-num="I">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte I</div>
+    <h2>The New Era of European Funding</h2>
+    <p>De cómo la mayor oportunidad de financiación del mundo sigue decidiéndose por quién sabe rellenar mejor un formulario.</p>
+  </div>
+</div>
+<section class="body">
+  <div class="wrap">
+    <div class="chapno">Capítulo 1</div>
+    <h3 class="ch">The Future of European Funding</h3>
+    <p class="lede">Cada año la UE distribuye decenas de miles de millones a través de Erasmus+, Horizon Europe, LIFE, CERV o Interreg. Es, en esencia, el mayor mercado de ideas del planeta.</p>
+    <p>Un mercado en el que no gana quien tiene más dinero, sino quien <strong>diseña mejor un proyecto</strong>. Y sin embargo, es profundamente ineficiente: lo que escasea no es el presupuesto, sino la capacidad de convertir una buena intención en un proyecto financiable.</p>
+    <div class="pull"><p>El material oficial UE/AN cubre muy bien elegibilidad, criterios y presupuesto, pero <span class="hl">NO enseña a redactar</span>. Ese es precisamente nuestro hueco de valor.</p></div>
+    <p>Nadie enseña a <strong>diseñar</strong>. Ese conocimiento vive en la cabeza de unos pocos consultores caros y no está sistematizado en ninguna parte. Hasta ahora.</p>
+
+    <hr class="soft">
+
+    <div class="chapno">Capítulo 2</div>
+    <h3 class="ch">Why Projects Fail</h3>
+    <p>Tras años analizando propuestas —financiadas y rechazadas— los fracasos se repiten en un puñado de patrones. Casi ninguno tiene que ver con la calidad de la idea:</p>
+    <ul class="clean">
+      <li><strong>Empezar a escribir antes de diseñar.</strong> El error madre. <em>Writing is not designing.</em></li>
+      <li><strong>Elegir mal la convocatoria.</strong> Un proyecto excelente en la línea equivocada es un proyecto perdido.</li>
+      <li><strong>El consorcio de conveniencia.</strong> Perfiles que se solapan, huecos sin cubrir, socios sin razón clara.</li>
+      <li><strong>El impacto genérico.</strong> "Contribuirá a mejorar la empleabilidad juvenil en Europa" no puntúa.</li>
+      <li><strong>La incoherencia interna (<em>drift</em>).</strong> Cifras que bailan entre páginas de un documento de 120.</li>
+      <li><strong>Rendirse ante el formulario.</strong> No es un fracaso de diseño: es un fracaso de herramientas.</li>
+    </ul>
+    <div class="pull"><p>Se trata cada proyecto como un ejercicio de redacción, cuando es un <span class="hl">ejercicio de diseño</span>.</p></div>
+  </div>
+</section>
+
+<!-- ===================== PART II ===================== -->
+<div class="opener" id="p2" data-num="II">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte II</div>
+    <h2>The FUN-DESIGN™ Philosophy</h2>
+    <p>Una metodología no es una lista de pasos. Es una forma de pensar.</p>
+  </div>
+</div>
+<section class="body alt">
+  <div class="wrap">
+    <div class="chapno">De la consultoría a la inteligencia</div>
+    <h3 class="ch">Tres estadios</h3>
+    <div class="diagram"><pre>   1. <span class="l">CONSULTORÍA</span>        2. <span class="l">HERRAMIENTAS</span>       3. <span class="y">INTELIGENCIA</span>
+   ───────────────       ───────────────       ───────────────
+   Conocimiento en       Software que ayuda,   Conocimiento experto
+   una cabeza.           sin criterio.         sistematizado + IA.
+   No escala.            El mercado hoy.       Escala con criterio.</pre></div>
+    <p>No vendemos "software de ayuda": vendemos <strong>infraestructura estratégica para llegar a propuestas de 90+ puntos</strong>. Y hay un segundo giro, más profundo:</p>
+    <div class="pull"><p>No es un curso. No es una suscripción. Es un <span class="hl">itinerario profesional</span> para diseñar, escribir y presentar proyectos europeos de verdad.</p></div>
+
+    <hr class="soft">
+
+    <div class="chapno">El nacimiento de FUN-DESIGN™</div>
+    <h3 class="ch">De la intuición al método</h3>
+    <p>FUN-DESIGN™ no se inventó en una pizarra: se <strong>destiló</strong> de años de práctica real, de la pregunta obsesiva "¿por qué este proyecto sacó 91 y aquel 68?" repetida hasta que las respuestas dejaron de ser anécdotas y empezaron a ser patrones. Y esos patrones formaron una palabra.</p>
+    <div class="pull"><p>FUN-DESIGN™ ya no es solo una metodología. Empieza a parecer <span class="hl">un marco conceptual</span> para diseñar proyectos europeos.</p></div>
+
+    <hr class="soft">
+
+    <div class="chapno">El modelo Human + AI</div>
+    <h3 class="ch">El antídoto contra la alucinación</h3>
+    <p>El mayor riesgo de dejar escribir a una IA es la incoherencia. FUN-DESIGN™ lo resuelve con un <strong>Libro de Hechos del Proyecto</strong>: afirmaciones marcadas <em>DO NOT CONTRADICT</em>, inyectadas en cada generación.</p>
+    <ul class="clean">
+      <li><strong>Hechos duros</strong> — se derivan en tiempo real de las herramientas (p. ej. del presupuesto). Regla: <em>derivar, no duplicar</em>.</li>
+      <li><strong>Hechos blandos</strong> — emergen del diseño y pasan por una compuerta de validación humana antes de "canonizarse".</li>
+    </ul>
+    <div class="pull"><p>El humano no compite con la IA por escribir. El humano <span class="hl">decide qué es verdad</span>; la IA se encarga de no contradecirla jamás.</p></div>
+  </div>
+</section>
+
+<!-- ===================== PART III ===================== -->
+<div class="opener" id="p3" data-num="III">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte III</div>
+    <h2>The Nine Stages</h2>
+    <p>Nueve fases, nueve herramientas, nueve entregables. No se escribe hasta haber diseñado.</p>
+  </div>
+</div>
+<section class="body">
+  <div class="wrap">
+    <p class="lede">FUN-DESIGN™ es una <strong>cadena</strong>: cada fase —el acróstico F·U·N·D·E·S·I·G·N— tiene su herramienta y produce un entregable que se convierte en el cimiento de la siguiente.</p>
+
+    <div class="chain">
+      <div class="phase"><div class="lt">F</div><div class="mid"><b>Find the Opportunity</b><div class="tool">🔎 <strong>EUFinder</strong> · encuentra la convocatoria correcta</div></div><div class="deliv">Funding<br>Opportunity</div></div>
+      <div class="phase"><div class="lt">U</div><div class="mid"><b>Unlock &amp; Share the Project Vision</b><div class="tool">🔓 <strong>EUUnlocker</strong> · define y publica la visión</div></div><div class="deliv">Project<br>Vision</div></div>
+      <div class="phase"><div class="lt">N</div><div class="mid"><b>Nail Down the Activities</b><div class="tool">🏗 <strong>EUDesigner</strong> · actividades → arquitectura</div></div><div class="deliv">Project<br>Architecture</div></div>
+      <div class="phase"><div class="lt">D</div><div class="mid"><b>Deliver the Concept Note</b><div class="tool">📨 <strong>EUConnector</strong> · concept note + invitaciones</div></div><div class="deliv">Concept<br>Note</div></div>
+      <div class="phase star"><div class="lt">E</div><div class="mid"><b>Engage the Consortium</b><div class="tool">🔗 <strong>EULinker</strong> · de once jugadores a un equipo campeón</div></div><div class="deliv">Consortium<br>Strategy</div></div>
+      <div class="phase"><div class="lt">S</div><div class="mid"><b>Show the European Added Value</b><div class="tool">🔬 <strong>EUResearcher</strong> · evidencia y valor europeo</div></div><div class="deliv">Research +<br>Added Value</div></div>
+      <div class="phase"><div class="lt">I</div><div class="mid"><b>Integrate the Delivery Plan</b><div class="tool">🛡 <strong>EUAuditor</strong> · tareas, KPIs, audit-ready</div></div><div class="deliv">Delivery<br>Plan</div></div>
+      <div class="phase"><div class="lt">G</div><div class="mid"><b>Generate the Proposal</b><div class="tool">✍️ <strong>EUWriter</strong> · destila todo en el Form Part B</div></div><div class="deliv">High-Quality<br>Proposal</div></div>
+      <div class="phase"><div class="lt">N</div><div class="mid"><b>Nurture Future Opportunities</b><div class="tool">🏆 <strong>EUEvaluator</strong> · evalúa y convierte en conocimiento</div></div><div class="deliv">Evaluation +<br>Improvement</div></div>
+    </div>
+
+    <div class="pull"><p>EU Funding Studio no es un generador de propuestas. Es una <span class="hl">consultoría europea</span> de financiación digital, donde cada herramienta es un experto dentro de un equipo coordinado.</p></div>
+  </div>
+</section>
+
+<!-- ===================== PART IV ===================== -->
+<div class="opener" id="p4" data-num="IV">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte IV</div>
+    <h2>The AI Specialists</h2>
+    <p>Nueve especialistas, cada uno con su misión, su funcionalidad y su entregable.</p>
+  </div>
+</div>
+<section class="body alt">
+  <div class="wrap">
+    <p class="lede">EU Funding Studio descompone el trabajo en nueve especialistas —como un despacho no tiene un "abogado que hace de todo". Cada uno recibe el entregable del anterior y produce el del siguiente.</p>
+    <div class="grid2">
+      <div class="spec"><div class="name">🔎 EUFinder <span class="tag road">Roadmap</span></div><div class="stages">Fase F · Find the Opportunity</div><p>Analiza organización, experiencia e idea inicial y busca la call abierta con mayor potencial. → <em>Funding Opportunity</em></p></div>
+      <div class="spec"><div class="name">🔓 EUUnlocker <span class="tag road">Roadmap</span></div><div class="stages">Fase U · Unlock the Vision</div><p>Convierte una idea vaga en visión de proyecto y la publica para atraer socios antes de formar consorcio. → <em>Project Vision</em></p></div>
+      <div class="spec"><div class="name">🏗 EUDesigner <span class="tag live">Live</span></div><div class="stages">Fase N · Nail Down Activities</div><p>El usuario diseña las actividades; la IA las agrupa en Work Packages y genera la arquitectura. → <em>Project Architecture</em></p></div>
+      <div class="spec"><div class="name">📨 EUConnector <span class="tag road">Roadmap</span></div><div class="stages">Fase D · Deliver Concept Note</div><p>Genera la Concept Note, personaliza invitaciones y hace seguimiento de socios potenciales. → <em>Concept Note + Invitations</em></p></div>
+      <div class="spec"><div class="name">🔗 EULinker <span class="tag live">Live</span></div><div class="stages">Fase E · Engage the Consortium</div><p>Analiza perfiles y asigna roles, liderazgo de WP y responsabilidades para un equipo coordinado. → <em>Consortium Strategy</em></p></div>
+      <div class="spec"><div class="name">🔬 EUResearcher <span class="tag road">Roadmap</span></div><div class="stages">Fase S · Show Added Value</div><p>Investiga políticas, proyectos financiados y evidencia científica para un valor europeo con pruebas. → <em>Research + Added Value</em></p></div>
+      <div class="spec"><div class="name">🛡 EUAuditor <span class="tag live">Live</span></div><div class="stages">Fase I · Integrate Delivery Plan</div><p>Piensa como quien auditará el proyecto: tareas, Deliverables, Milestones, KPIs y dependencias. → <em>Audit-Ready Delivery Plan</em></p></div>
+      <div class="spec"><div class="name">✍️ EUWriter <span class="tag live">Live</span></div><div class="stages">Fase G · Generate the Proposal</div><p>Combina todos los entregables y aplica 25+ dimensiones expertas en cada sección del Form Part B. → <em>High-Quality Proposal</em></p></div>
+      <div class="spec"><div class="name">🏆 EUEvaluator <span class="tag live">Live</span></div><div class="stages">Fase N · Nurture Opportunities</div><p>Evalúa como un evaluador externo y convierte cada propuesta en conocimiento para la siguiente. → <em>Evaluation + Improvement</em></p></div>
+    </div>
+    <p class="note">Nota de honestidad: E+ Tools se construye por fases. <span class="tag live">Live</span> = en producción · <span class="tag road">Roadmap</span> = diseñado, aún no implementado. La metodología es completa; la plataforma se completa por fases.</p>
+    <div class="pull"><p>Ningún especialista trabaja solo: cada uno recibe el entregable del anterior y produce el del siguiente. No un collage de nueve IAs, sino <span class="hl">una sola inteligencia</span> coordinada.</p></div>
+    <p class="chapno" style="margin-top:1.6rem">Ficha de cada herramienta</p>
+    <div class="toolnav">
+      <a href="#t-finder">🔎 EUFinder</a>
+      <a href="#t-unlocker">🔓 EUUnlocker</a>
+      <a href="#t-designer">🏗 EUDesigner</a>
+      <a href="#t-connector">📨 EUConnector</a>
+      <a href="#t-linker">🔗 EULinker</a>
+      <a href="#t-researcher">🔬 EUResearcher</a>
+      <a href="#t-auditor">🛡 EUAuditor</a>
+      <a href="#t-writer">✍️ EUWriter</a>
+      <a href="#t-evaluator">🏆 EUEvaluator</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOOL PAGES ===================== -->
+
+<section class="toolpage" id="t-finder">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🔎</div>
+      <div class="ht">
+        <div class="tname">EUFinder <span class="tag road">Roadmap</span></div>
+        <div class="fase">Fase F · Find the Opportunity</div>
+        <p class="mission">Que ningún proyecto nazca en la convocatoria equivocada: encuentra la call abierta con mayor potencial para esta organización.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Analiza la organización, su experiencia, objetivos o idea inicial y busca a lo largo de los programas europeos las convocatorias que mejor encajan, traduciendo cada una a reglas operables: prioridades, presupuesto, elegibilidad y requisitos clave.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Perfil de la organización</li>
+        <li>Experiencia y proyectos previos</li>
+        <li>Objetivos o idea inicial</li>
+        <li>País y tipo de entidad</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Convocatoria seleccionada</li>
+        <li>Ficha de reglas: pesos, umbral</li>
+        <li>Presupuesto y elegibilidad</li>
+        <li>Por qué encaja con el perfil</li>
+      </ul><span class="deliverchip">→ Funding Opportunity</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUFinder <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Encuentra tu convocatoria <span class="mtag">match IA</span></div>
+        <div class="searchbar"><span class="ico">🔎</span><span class="ph">ONG de educación juvenil · movilidad · 3 países…</span><span class="go">Buscar</span></div>
+        <div class="mrow"><div><div class="lead">KA220-YOU · Cooperation Partnerships</div><div class="sub">Deadline 05 mar · hasta 400.000 €</div></div><div class="right"><span class="badge ok">94% match</span></div></div>
+        <div class="mrow"><div><div class="lead">KA210-YOU · Small-scale Partnerships</div><div class="sub">Deadline 20 feb · hasta 60.000 €</div></div><div class="right"><span class="badge soft">81% match</span></div></div>
+        <div class="mrow"><div><div class="lead">ESC · Volunteering Projects</div><div class="sub">Deadline 20 feb · unit costs</div></div><div class="right"><span class="badge line">63% match</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-unlocker">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🔓</div>
+      <div class="ht">
+        <div class="tname">EUUnlocker <span class="tag road">Roadmap</span></div>
+        <div class="fase">Fase U · Unlock and Share the Project Vision</div>
+        <p class="mission">Convertir una idea vaga en una visión de proyecto clara, convincente y visible para futuros socios.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Combina cuatro fuentes —la oportunidad, la idea inicial, proyectos ya financiados y análisis estratégico de IA— para definir problema, objetivos, grupos destinatarios e innovación. Y <b>publica la Project Vision</b> dentro del Studio para que futuros socios expresen su interés antes de formar el consorcio.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Funding Opportunity (fase F)</li>
+        <li>Idea inicial del usuario</li>
+        <li>Proyectos europeos financiados</li>
+        <li>Análisis estratégico IA</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Problema, objetivos, target groups</li>
+        <li>Posicionamiento en la call</li>
+        <li>Vision publicada en el ecosistema</li>
+        <li>Socios interesados (early signals)</li>
+      </ul><span class="deliverchip">→ Project Vision + Publication</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUUnlocker <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Project Vision <span class="mtag">publicada</span></div>
+        <div class="field"><b>Problema.</b> Baja participación juvenil rural en la vida democrática de 3 regiones UE.</div>
+        <div class="field"><b>Objetivo.</b> Crear un itinerario de participación cívica replicable + red de mentores.</div>
+        <div class="mrow"><div><div class="lead">Ecosistema · interés recibido</div><div class="sub">Visible para socios potenciales</div></div><div class="right"><span class="badge ok">7 interesados</span></div></div>
+        <div class="mrow"><div class="lead">🇵🇹 Associação Juventude Ativa</div><div class="right"><span class="badge soft">quiere unirse</span></div></div>
+        <div class="mrow"><div class="lead">🇮🇹 Cooperativa Civica</div><div class="right"><span class="badge soft">quiere unirse</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-designer">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🏗</div>
+      <div class="ht">
+        <div class="tname">EUDesigner <span class="tag live">Live</span></div>
+        <div class="fase">Fase N · Nail Down the Activities</div>
+        <p class="mission">Convertir la visión en un proyecto real, empezando por sus verdaderos bloques de construcción: las actividades.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> El usuario crea y refina bloques de actividad; la IA los agrupa en Work Packages coherentes, genera la arquitectura del proyecto, organiza los outputs y estima la distribución inicial del presupuesto. El usuario diseña <b>qué se hace</b>; la plataforma construye la arquitectura técnica por detrás.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Project Vision (fase U)</li>
+        <li>Bloques de actividad del usuario</li>
+        <li>Objetivos y resultados</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Work Packages coherentes</li>
+        <li>Arquitectura del proyecto</li>
+        <li>Outputs organizados</li>
+        <li>Distribución inicial de presupuesto</li>
+      </ul><span class="deliverchip">→ Project Architecture</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUDesigner <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Actividades → Work Packages <span class="mtag">auto-agrupado</span></div>
+        <div class="mcols">
+          <div class="mcol"><div class="ch">WP1 · Gestión</div><div class="mcard">Coordinación</div><div class="mcard">Calidad &amp; riesgos</div></div>
+          <div class="mcol"><div class="ch">WP2 · Contenido</div><div class="mcard">Itinerario cívico</div><div class="mcard">Guía mentores</div></div>
+          <div class="mcol"><div class="ch">WP3 · Impacto</div><div class="mcard">Piloto 3 países</div><div class="mcard">Difusión</div></div>
+        </div>
+        <div class="scoreline"><span class="lab">Presupuesto WP1</span><div class="track"><div class="fill" style="width:20%"></div></div><span class="val">20%</span></div>
+        <div class="scoreline"><span class="lab">Presupuesto WP2</span><div class="track"><div class="fill" style="width:45%"></div></div><span class="val">45%</span></div>
+        <div class="scoreline"><span class="lab">Presupuesto WP3</span><div class="track"><div class="fill" style="width:35%"></div></div><span class="val">35%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-connector">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">📨</div>
+      <div class="ht">
+        <div class="tname">EUConnector <span class="tag road">Roadmap</span></div>
+        <div class="fase">Fase D · Deliver the Concept Note</div>
+        <p class="mission">Sacar el proyecto del diseño interno y empezar a atraer a los socios adecuados.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Genera automáticamente una Concept Note profesional (visión, objetivos, actividades, impacto, necesidades de consorcio), personaliza invitaciones, ayuda a contactar organizaciones y hace seguimiento de las respuestas.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Project Architecture (fase N)</li>
+        <li>Necesidades de consorcio</li>
+        <li>Candidatos (Vision + EUAtlas)</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Concept Note profesional</li>
+        <li>Invitaciones personalizadas</li>
+        <li>Seguimiento de respuestas</li>
+      </ul><span class="deliverchip">→ Concept Note + Partner Invitations</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUConnector <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Concept Note &amp; invitaciones <span class="mtag">2 páginas</span></div>
+        <div class="field"><b>Concept Note.</b> Youth Civic Path · 3 países · 24 meses · 380.000 €</div>
+        <div class="mrow"><div><div class="lead">🇵🇹 Associação Juventude Ativa</div><div class="sub">Invitación enviada · abierta</div></div><div class="right"><span class="badge ok">Interesada</span></div></div>
+        <div class="mrow"><div><div class="lead">🇮🇹 Cooperativa Civica</div><div class="sub">Invitación enviada · abierta</div></div><div class="right"><span class="badge ok">Interesada</span></div></div>
+        <div class="mrow"><div><div class="lead">🇸🇪 Ungdom Nätverk</div><div class="sub">Invitación enviada</div></div><div class="right"><span class="badge line">Pendiente</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-linker">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🔗</div>
+      <div class="ht">
+        <div class="tname">EULinker <span class="tag live">Live</span></div>
+        <div class="fase">Fase E · Engage the Consortium</div>
+        <p class="mission">Que el consorcio funcione como un solo equipo coordinado y puntúe al máximo en Partnership &amp; Cooperation.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Analiza experiencia, trayectoria, perfiles de personal y fortalezas de cada organización, y recomienda roles, liderazgo de Work Packages, asignación de actividades, complementariedad, equilibrio y la justificación de partnership. Se apoya en el mapa <b>EUAtlas</b> (~165.000 entidades).</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Socios interesados (fase D)</li>
+        <li>Perfiles y experiencia (EUAtlas)</li>
+        <li>Work Packages del proyecto</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Roles y liderazgo de WP</li>
+        <li>Reparto de presupuesto por socio</li>
+        <li>Equilibrio y complementariedad</li>
+        <li>Justificación de partnership</li>
+      </ul><span class="deliverchip">→ Consortium Strategy</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EULinker <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Consortium Strategy <span class="mtag">Partnership 18/20</span></div>
+        <div class="mrow"><div><div class="lead">🇪🇸 Fundación (coord.)</div><div class="sub">Lidera WP1 · gestión</div></div><div class="right"><span class="badge ok">32%</span></div></div>
+        <div class="mrow"><div><div class="lead">🇵🇹 Juventude Ativa</div><div class="sub">Lidera WP2 · contenido</div></div><div class="right"><span class="badge ok">27%</span></div></div>
+        <div class="mrow"><div><div class="lead">🇮🇹 Cooperativa Civica</div><div class="sub">Lidera WP3 · impacto</div></div><div class="right"><span class="badge ok">26%</span></div></div>
+        <div class="mrow"><div><div class="lead">🇸🇪 Ungdom Nätverk</div><div class="sub">Evaluación externa</div></div><div class="right"><span class="badge soft">15%</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-researcher">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🔬</div>
+      <div class="ht">
+        <div class="tname">EUResearcher <span class="tag road">Roadmap</span></div>
+        <div class="fase">Fase S · Show the European Added Value</div>
+        <p class="mission">Demostrar con evidencia por qué el proyecto merece financiación europea.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Investiga políticas europeas, estrategias de la Comisión, proyectos financiados, publicaciones científicas, informes oficiales y buenas prácticas, y construye un valor añadido europeo basado en evidencia, no en generalidades. Cada afirmación se sostiene sobre una fuente fiable.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Project Architecture &amp; objetivos</li>
+        <li>Prioridades de la call</li>
+        <li>Temática y grupos destinatarios</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Marco de investigación con fuentes</li>
+        <li>Argumentos de valor añadido europeo</li>
+        <li>Evidencia y estadísticas citadas</li>
+      </ul><span class="deliverchip">→ Research + European Added Value</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUResearcher <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">European Added Value <span class="mtag">con evidencia</span></div>
+        <div class="mrow"><div><div class="lead">EU Youth Strategy 2019–2027</div><div class="sub">Prioridad: engage · connect · empower</div></div><div class="right"><span class="badge soft">política</span></div></div>
+        <div class="mrow"><div><div class="lead">Eurostat · participación juvenil</div><div class="sub">−12% en zonas rurales (2024)</div></div><div class="right"><span class="badge soft">dato</span></div></div>
+        <div class="mrow"><div><div class="lead">Proyecto KA2 2022 financiado</div><div class="sub">Buenas prácticas replicables</div></div><div class="right"><span class="badge soft">evidencia</span></div></div>
+        <div class="field"><b>Argumento EAV.</b> Solo la cooperación transnacional permite comparar 3 modelos regionales y transferir el itinerario a escala UE.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-auditor">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🛡</div>
+      <div class="ht">
+        <div class="tname">EUAuditor <span class="tag live">Live</span></div>
+        <div class="fase">Fase I · Integrate the Delivery Plan</div>
+        <p class="mission">Que el proyecto sea ejecutable, medible y auditable desde el primer día —pensando como quien lo auditará años después.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Partiendo de las actividades de EUDesigner, genera tareas detalladas, Deliverables, Milestones, KPIs e indicadores, establece dependencias entre tareas, entregables y WPs, y valida la lógica global de implementación.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Work Packages &amp; actividades (fase N)</li>
+        <li>Presupuesto por fase</li>
+        <li>Duración y dependencias</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Tareas, Deliverables, Milestones</li>
+        <li>KPIs e indicadores de seguimiento</li>
+        <li>Dependencias validadas</li>
+      </ul><span class="deliverchip">→ Audit-Ready Delivery Plan</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUAuditor <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Delivery Plan · audit-ready <span class="mtag">WP2</span></div>
+        <div class="mrow"><div><div class="lead">D2.1 · Itinerario cívico</div><div class="sub">M8 · líder Juventude Ativa</div></div><div class="right"><span class="badge ok">listo</span></div></div>
+        <div class="mrow"><div><div class="lead">D2.2 · Guía de mentores</div><div class="sub">M14 · dependencia D2.1</div></div><div class="right"><span class="badge line">planificado</span></div></div>
+        <div class="kpi">
+          <div class="k"><div class="n">6</div><div class="t">Deliverables</div></div>
+          <div class="k"><div class="n">4</div><div class="t">Milestones</div></div>
+          <div class="k"><div class="n">9</div><div class="t">KPIs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-writer">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">✍️</div>
+      <div class="ht">
+        <div class="tname">EUWriter <span class="tag live">Live</span></div>
+        <div class="fase">Fase G · Generate the Proposal</div>
+        <p class="mission">Producir una propuesta capaz de alcanzar la máxima puntuación posible.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Combina todos los entregables previos en una propuesta coherente. Incrusta en cada pregunta <b>25+ dimensiones de evaluación</b> expertas; genera cada sección considerando criterios oficiales, expectativas del evaluador y patrones de proyectos financiados; y mejora iterativamente en 4 sub-fases con el motor de evaluación integrado.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>Todos los entregables (F→I)</li>
+        <li>Criterios de la convocatoria</li>
+        <li>Documentos del proyecto</li>
+        <li>25+ dimensiones expertas</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Form Part B completo (15+ secciones)</li>
+        <li>Score estimado por sección</li>
+        <li>Checklist de consistencia</li>
+      </ul><span class="deliverchip">→ High-Quality Proposal</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUWriter <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Form Part B · Relevance <span class="mtag">88/100</span></div>
+        <div class="steps"><span class="st">Contexto</span><span class="st">Borrador</span><span class="st on">Pulido</span><span class="st">Revisión</span></div>
+        <div class="field">El proyecto responde a la EU Youth Strategy abordando la caída del −12% en participación rural… <b>[✓ ancla indicador]</b></div>
+        <div class="scoreline"><span class="lab">Relevance</span><div class="track"><div class="fill" style="width:93%"></div></div><span class="val">28/30</span></div>
+        <div class="scoreline"><span class="lab">Quality</span><div class="track"><div class="fill" style="width:87%"></div></div><span class="val">26/30</span></div>
+        <div class="scoreline"><span class="lab">Partnership</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="val">18/20</span></div>
+        <div class="scoreline"><span class="lab">Impact</span><div class="track"><div class="fill" style="width:80%"></div></div><span class="val">16/20</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="toolpage" id="t-evaluator">
+  <div class="wrap">
+    <div class="toolhead">
+      <div class="emoji">🏆</div>
+      <div class="ht">
+        <div class="tname">EUEvaluator <span class="tag live">Live</span></div>
+        <div class="fase">Fase N · Nurture Future Opportunities</div>
+        <p class="mission">Simular al evaluador antes de presentar y convertir cada propuesta en conocimiento organizativo.</p>
+      </div>
+    </div>
+    <p class="func"><b>Funcionalidad.</b> Evalúa la propuesta como un evaluador europeo externo (fortalezas, debilidades, incoherencias, evidencia que falta, oportunidades de puntuación). Si se financia, la evaluación se vuelve conocimiento para futuros proyectos; si se rechaza, genera una hoja de ruta de mejora.</p>
+    <div class="io">
+      <div class="iocard in"><h5>Inputs</h5><ul>
+        <li>High-Quality Proposal (fase G)</li>
+        <li>Rúbrica real de la call (EACEA)</li>
+        <li>Historial de la organización</li>
+      </ul></div>
+      <div class="iocard out"><h5>Outputs</h5><ul>
+        <li>Informe de evaluación experto</li>
+        <li>Score estimado por criterio</li>
+        <li>Hoja de ruta de mejora</li>
+        <li>Conocimiento para el siguiente proyecto</li>
+      </ul><span class="deliverchip">→ Evaluation Report + Improvement Plan</span></div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><i></i><i></i><i class="y"></i></div> EUEvaluator <span class="u">e+ tools</span></div>
+      <div class="screen">
+        <div class="mtitle">Evaluation Report <span class="mtag">estimado 88/100</span></div>
+        <div class="scoreline"><span class="lab">Relevance</span><div class="track"><div class="fill" style="width:93%"></div></div><span class="val">28/30</span></div>
+        <div class="scoreline"><span class="lab">Quality</span><div class="track"><div class="fill" style="width:87%"></div></div><span class="val">26/30</span></div>
+        <div class="scoreline"><span class="lab">Partnership</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="val">18/20</span></div>
+        <div class="scoreline"><span class="lab">Impact</span><div class="track"><div class="fill" style="width:80%"></div></div><span class="val">16/20</span></div>
+        <div class="mrow"><div><div class="lead">Improvement Plan</div><div class="sub">Sostenibilidad: añadir plan post-subvención</div></div><div class="right"><span class="badge soft">+2 pts</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PART V ===================== -->
+<div class="opener" id="p5" data-num="V">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte V</div>
+    <h2>Advanced Proposal Design</h2>
+    <p>Cómo se convierte un diseño en un Form Part B de 90+ puntos.</p>
+  </div>
+</div>
+<section class="body">
+  <div class="wrap">
+    <div class="chapno">El Form Part B como estructura, no como muro</div>
+    <h3 class="ch">Dos capas de criterios</h3>
+    <p>No hay que confundir dos cosas que operan a la vez dentro de <strong>EUWriter</strong>: los <strong>criterios oficiales de la call</strong> (varían por convocatoria) y las <strong>25+ dimensiones expertas</strong> propietarias, constantes, incrustadas en cada pregunta del motor.</p>
+    <div class="pull"><p>Más de <span class="hl">25 dimensiones</span> de evaluación —lo que distingue una propuesta sobresaliente— van embebidas en cada pregunta de EUWriter. No son los criterios de la call: son la inteligencia que se aplica sobre ellos.</p></div>
+    <h4>Los criterios oficiales: una rúbrica viva</h4>
+    <p>No existe "una lista fija" de criterios oficiales: <strong>varían por convocatoria</strong>, en número y en peso.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Convocatoria</th><th class="num">Nº criterios</th><th>Estructura de puntuación</th></tr></thead>
+      <tbody>
+        <tr><td>KA3 — Youth Together</td><td class="num">22</td><td>Relevance 30 · Quality 30 · Partnership 20 · Impact 20</td></tr>
+        <tr><td>KA2 — Cooperation Partnerships (ES)</td><td class="num">18</td><td>30 / 30 / 20 / 20</td></tr>
+        <tr><td>KA210 — Small-scale (Sport)</td><td class="num">64</td><td>30 / 30 / 20 / 20 · umbral 60</td></tr>
+        <tr><td>Sport Events</td><td class="num">—</td><td>100 puntos</td></tr>
+      </tbody>
+    </table></div>
+    <p>El patrón EACEA canónico es <strong>30 / 30 / 20 / 20 con umbral 60</strong>. Cada criterio es un objeto rico de <strong>nueve campos</strong> (Meaning, Structure, Red flags, Rubric…) que capturan el conocimiento del evaluador.</p>
+
+    <div class="pull"><p>Aquí vive el activo más valioso: la rúbrica real de EACEA convertida en <span class="hl">instrucciones operables</span>. No una IA adivinando qué quiere el evaluador.</p></div>
+
+    <hr class="soft">
+    <div class="chapno">Evaluation thinking</div>
+    <h3 class="ch">Diseña desde la mente del evaluador</h3>
+    <p>No "qué quiero contar", sino "qué tiene que encontrar el evaluador aquí para darme la puntuación máxima". EUWriter lo materializa en cuatro sub-fases:</p>
+    <div class="diagram"><pre>   1. <span class="y">CONTEXTO</span>       Datos + presupuesto + call + criterios de la sección.
+        <span class="l">↓</span>
+   2. <span class="y">BORRADOR</span>       Genera cada sección anclada a sus criterios.
+        <span class="l">↓</span>
+   3. <span class="y">PULIDO</span>         Semáforo ✅ ⚠️ ❌ + preguntas de mejora.
+        <span class="l">↓</span>
+   4. <span class="y">REVISIÓN FINAL</span> Score por sección (TOTAL 88/100) + checks de consistencia.</pre></div>
+    <div class="diagram"><pre>   Score estimado: <span class="y">88/100</span>
+   ├── Relevance ............ 28/30   <span class="l">⚠  falta anclar un indicador</span>
+   ├── Quality of work plan . 26/30   ✅
+   ├── Partnership .......... 18/20   ✅
+   └── Impact ............... 16/20   <span class="l">⚠  sostenibilidad genérica</span></pre></div>
+    <p>Ese bucle —estimar, señalar, mejorar, reestimar— es lo que empuja una propuesta de 68 hacia 90.</p>
+  </div>
+</section>
+
+<!-- ===================== PART VI ===================== -->
+<div class="opener" id="p6" data-num="VI">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte VI</div>
+    <h2>Building Winning Consortia</h2>
+    <p>La diferencia entre tener once futbolistas y tener un equipo campeón.</p>
+  </div>
+</div>
+<section class="body alt">
+  <div class="wrap">
+    <h3 class="ch">Buscar socios no es diseñar un consorcio</h3>
+    <div class="diagram"><pre>   <span class="l">ENCONTRAR ORGANIZACIONES</span>        vs.     <span class="y">CONSTRUIR UN CONSORCIO GANADOR</span>
+   ─────────────────────────                 ──────────────────────────────
+   Tener once futbolistas.                    Tener un equipo campeón.</pre></div>
+    <p>Localizar organizaciones lo resuelve el mapa <strong>EUAtlas</strong> (~165.000 entidades). Lo que gana proyectos es la <strong>ingeniería del consorcio</strong>, misión de 🔗 <strong>EULinker</strong>: analiza perfiles, asigna roles y liderazgo de Work Packages, equilibra el consorcio y justifica por qué cada socio aporta valor. Y no parte de cero: llega tras 📨 <strong>EUConnector</strong>, que ya recogió el interés de socios potenciales.</p>
+    <div class="pull"><p>La E de FUN-DESIGN™ no habla de <em>encontrar</em> socios. Habla de <span class="hl">diseñar un consorcio</span> coherente.</p></div>
+
+    <h4>Los siete análisis de un consorcio ganador</h4>
+    <div class="tablewrap"><table>
+      <thead><tr><th class="num">#</th><th>Análisis</th><th>Pregunta del evaluador</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td><strong>Complementariedad</strong></td><td>¿Cada socio aporta algo que los demás no tienen?</td></tr>
+        <tr><td class="num">2</td><td><strong>Equilibrio geográfico</strong></td><td>¿La distribución de países sirve al proyecto y a la línea?</td></tr>
+        <tr><td class="num">3</td><td><strong>Experiencia previa</strong></td><td>¿El consorcio tiene track record creíble?</td></tr>
+        <tr><td class="num">4</td><td><strong>Coherencia capacidad↔tarea</strong></td><td>¿Cada socio lidera lo que sabe hacer?</td></tr>
+        <tr><td class="num">5</td><td><strong>Liderazgo de WP</strong></td><td>¿Los líderes de Work Package están bien elegidos?</td></tr>
+        <tr><td class="num">6</td><td><strong>Distribución del presupuesto</strong></td><td>¿El reparto es proporcional al esfuerzo real?</td></tr>
+        <tr><td class="num">7</td><td><strong>Riesgos de dependencia</strong></td><td>¿El proyecto sobrevive si un socio falla?</td></tr>
+      </tbody>
+    </table></div>
+    <p>El entregable no es una lista de socios: es una <strong>Consortium Strategy</strong> lista para la sección Partnership. Y como cada proyecto necesita 4+ socios, diseñar consorcios es además el <strong>bucle viral</strong> que hace crecer el ecosistema.</p>
+  </div>
+</section>
+
+<!-- ===================== PART VII ===================== -->
+<div class="opener" id="p7" data-num="VII">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte VII</div>
+    <h2>From Proposal to Impact</h2>
+    <p>El proyecto no termina al pulsar "enviar".</p>
+  </div>
+</div>
+<section class="body">
+  <div class="wrap">
+    <h3 class="ch">El libro del proyecto vs. la propuesta</h3>
+    <div class="pull"><p>No escribes una propuesta. Construyes el <span class="hl">libro de tu proyecto</span>. La propuesta es lo que la app destila para presentar a la convocatoria.</p></div>
+    <div class="diagram"><pre>   <span class="y">LIBRO DEL PROYECTO</span>  (100–200 págs · la fuente de verdad · permanece)
+          <span class="l">│  se destila</span>
+          <span class="l">▼</span>
+   <span class="l">PROPUESTA OFICIAL</span>   (Form Part B · comprimida a la call · efímera)</pre></div>
+    <p>El libro queda contigo: sirve para tus partners, tus financiadores y para presentar el mismo proyecto a otras convocatorias <strong>sin reescribirlo</strong>. Por eso el trabajo del diseñador se <em>acumula</em> en lugar de tirarse tras cada deadline.</p>
+
+    <h4>El tribunal previo</h4>
+    <p>La forma más segura de subir la nota es simular al evaluador antes de presentar. 🏆 <strong>EUEvaluator</strong> evalúa como un evaluador externo: detecta lo débil, estima la nota y prioriza mejoras. El bucle: estimar → señalar → mejorar con IA → reestimar, hasta que la nota deja de subir. Y si el proyecto se financia, la evaluación se vuelve conocimiento para el siguiente.</p>
+    <div class="pull"><p>El resultado final de FUN-DESIGN™ no es un documento. Es una <span class="hl">persona nueva</span>: un European Project Designer con histórico, red y reputación.</p></div>
+  </div>
+</section>
+
+<!-- ===================== PART VIII ===================== -->
+<div class="opener" id="p8" data-num="VIII">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Parte VIII</div>
+    <h2>The Future of EU Funding Studio</h2>
+    <p>Un método necesita un ecosistema que lo sostenga y un horizonte que lo guíe.</p>
+  </div>
+</div>
+<section class="body alt">
+  <div class="wrap">
+    <h3 class="ch">El ecosistema: cinco piezas, un profesional</h3>
+    <div class="diagram"><pre>   ┌──────────────────────────────────────────────┐
+   │              <span class="y">EU FUNDING STUDIO</span>                 │
+   │                                                │
+   │     STUDIO ── SCHOOL ── ATLAS                  │
+   │        <span class="l">│</span>         <span class="l">│</span>        <span class="l">│</span>                    │
+   │     COMMUNITY ──┴──── CERTIFICATION            │
+   └──────────────────────────────────────────────┘</pre></div>
+
+    <h4>Los tres sistemas independientes</h4>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Design Capacity</th><th>Certification</th><th>Reputation</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Comercial</strong> — lo que compras</td><td><strong>Académico</strong> — lo que consigues</td><td><strong>Profesional</strong> — lo que eres</td></tr>
+      </tbody>
+    </table></div>
+    <div class="pull"><p>Pagar da capacidad. La certificación se gana. La reputación se construye. <span class="hl">Tres caminos</span>, un mismo Project Designer.</p></div>
+
+    <h4>El modelo de negocio: Design Capacity</h4>
+    <p>El cliente compra <strong>capacidad de diseño</strong> —medida en euros de presupuesto activable— que <strong>nunca caduca</strong>. Diseñar es gratis e ilimitado; la capacidad solo se consume al pulsar "Activate Proposal".</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Paquete</th><th>Capacidad</th><th class="num">Precio (único)</th><th>Desbloquea</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Starter</strong></td><td class="num">500.000 €</td><td class="num">1.200 €</td><td>KA1 · KA2 · KA3</td></tr>
+        <tr><td><strong>Professional</strong></td><td class="num">2.000.000 €</td><td class="num">4.000 €</td><td>+ Capacity Building · Sport · CoVE</td></tr>
+        <tr><td><strong>Enterprise</strong></td><td class="num">10.000.000 €</td><td class="num">15.000 €</td><td>+ Horizon · LIFE · CERV · Interreg <em>(futuros)</em></td></tr>
+      </tbody>
+    </table></div>
+    <div class="pull"><p>Se cobra por la <span class="hl">decisión de desarrollar</span>, no por el éxito del proyecto. Y la diferenciación nunca se hace bajando la calidad de la IA.</p></div>
+
+    <h4>El roadmap</h4>
+    <div class="diagram"><pre>   <span class="y">2026</span>  MAY–SEP   Construcción: pricing engine, checkout, contenido
+         OCT–DIC   Captación · 1ª cohorte Sport Events (8-oct)
+                   Pico: hasta 8 cohortes en paralelo (10-dic)
+   <span class="y">2027</span>  ENE–MAR   Pico operativo: 94% de topics cierran en 11 semanas
+         ABR–SEP   Valle · cohorte CoVE (deadline 3-sep)</pre></div>
+    <div class="pull"><p>El objetivo último no es vender un software. Es <span class="hl">crear una nueva profesión</span> —el European Project Designer— y ser la casa donde se aprende, se practica y se certifica.</p></div>
+  </div>
+</section>
+
+<!-- ===================== APÉNDICE: ONE-PAGER ===================== -->
+<div class="opener" id="apx" data-num="A">
+  <div class="wrap">
+    <div class="accent-line"></div>
+    <div class="eyebrow">Apéndice</div>
+    <h2>FUN-DESIGN™ en una página</h2>
+    <p>La página que puedes imprimir, colgar en la pared o poner al final de un deck.</p>
+  </div>
+</div>
+<section class="body">
+  <div class="wrap">
+    <div class="onepager">
+      <h3>FUN-DESIGN™</h3>
+      <div class="optag">Designing Better European Projects</div>
+      <div class="cols">
+        <div class="col">
+          <h4>Discover &amp; Envision</h4>
+          <p><span class="lt">F</span> Find the Opportunity · 🔎 EUFinder</p>
+          <p><span class="lt">U</span> Unlock the Project Vision · 🔓 EUUnlocker</p>
+          <p><span class="lt">N</span> Nail Down the Activities · 🏗 EUDesigner</p>
+        </div>
+        <div class="col">
+          <h4>Build the Case</h4>
+          <p><span class="lt">D</span> Deliver the Concept Note · 📨 EUConnector</p>
+          <p><span class="lt">E</span> Engage the Consortium · 🔗 EULinker</p>
+          <p><span class="lt">S</span> Show the Added Value · 🔬 EUResearcher</p>
+        </div>
+        <div class="col">
+          <h4>Deliver &amp; Learn</h4>
+          <p><span class="lt">I</span> Integrate the Delivery Plan · 🛡 EUAuditor</p>
+          <p><span class="lt">G</span> Generate the Proposal · ✍️ EUWriter</p>
+          <p><span class="lt">N</span> Nurture Opportunities · 🏆 EUEvaluator</p>
+        </div>
+      </div>
+      <div class="foot">
+        <b>9 fases · 9 herramientas · 9 entregables</b> — cada entregable es el cimiento del siguiente.<br>
+        <b>Principio:</b> No se escribe hasta haber diseñado · <b>Tesis:</b> Human + AI · No vendemos IA, vendemos Better Projects
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">No vendemos IA.<br>Vendemos <span class="hl">Better Projects.</span></div>
+    <p>FUN-DESIGN™ es el método · E+ Tools la herramienta · EU Funding School la escuela.</p>
+    <small>EU Funding Studio · Playbook · Borrador editorial v0.1</small>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn=document.getElementById('tg');
+    var root=document.documentElement;
+    function current(){
+      var a=root.getAttribute('data-theme');
+      if(a) return a;
+      return window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+    }
+    btn.addEventListener('click',function(){
+      var next=current()==='dark'?'light':'dark';
+      root.setAttribute('data-theme',next);
+    });
+  })();
+</script>

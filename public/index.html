@@ -120,6 +120,7 @@ tailwind.config = {
         <li><a href="#my-org">Entidades</a></li>
         <li><a href="#convocatorias">Convocatorias</a></li>
         <li><a href="#movilidades">Movilidades</a></li>
+        <li><a href="#eu-vision">EU Vision</a></li>
       </ul>
     </nav>
     <div class="efs-topbar__cta">
@@ -484,6 +485,30 @@ tailwind.config = {
             Engagement
           </a>
         </div>
+      </div>
+
+      <!-- ═══ WORKSPACE: EU VISION ═══ -->
+      <div id="sidebar-group-vision" class="hidden">
+        <div class="mt-1 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-white/30">EU Vision</div>
+        <a href="#eu-vision"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="eu-vision">
+          <span class="material-symbols-outlined text-[20px]" style="color:#fbff12">explore</span>
+          Mis Visiones
+        </a>
+        <div class="mt-3 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-white/30">Desde aquí</div>
+        <a href="#convocatorias"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="convocatorias">
+          <span class="material-symbols-outlined text-[20px]">campaign</span>
+          Convocatorias
+        </a>
+        <a href="#my-projects"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="my-projects">
+          <span class="material-symbols-outlined text-[20px]">folder_shared</span>
+          Mis Proyectos
+        </a>
       </div>
 
       <!-- ═══ WORKSPACE: ENTIDADES ═══ -->
@@ -1796,6 +1821,10 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL MOVILIDADES (SALTO European Training Calendar) ══ -->
+      <section id="panel-eu-vision" class="panel">
+        <div id="vision-root"></div>
+      </section>
+
       <section id="panel-movilidades" class="panel">
         <div class="max-w-7xl mx-auto py-8 px-4">
 
@@ -3240,7 +3269,8 @@ tailwind.config = {
 <script src="/js/research.js"></script>
 <script src="/js/movilidades-utils.js"></script>
 <script src="/js/movilidades.js?v=20260627t"></script>
-<script src="/js/convocatorias.js?v=20260627t"></script>
+<script src="/js/convocatorias.js?v=20260711b"></script>
+<script src="/js/vision.js?v=20260711j"></script>
 <script src="/js/intake-tasks.js"></script>
 <script src="/js/intake-gantt.js"></script>
 <script src="/js/developer.js"></script>
