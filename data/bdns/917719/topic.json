@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "917719",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSEJO INSULAR DE MENORCA / CONSELL INSULAR DE MENORCA",
+  "nuts_codes": [
+    "ES533"
+  ],
+  "nuts_primary": "ES533",
+  "title": "Acuerdo del Consejo de Dirección del INJOVE, de 12.06.2026, relativo a las bases y convocatoria de ayudas a las familias para financiar la participación de los menores en actividades de ocio educativo infantil y juvenil y actividades extraescolares",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-07",
+  "open_date": "2026-09-14",
+  "deadline": "2026-10-13",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 425000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://www.carpetaciutadana.org/injove",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917719",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12300/717630/institut-de-la-joventut-de-menorca-acuerdo-del-con",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 216505,
+      "titulo": "Extracto del acuerdo del Consejo de Dirección del Institut de la Joventut de Menorca en sesión de carácter extraordinario de fecha 12 de junio de 2026, relativo a las bases y convocatoria de ayudas a las familias para financiar la participación de los menores en actividades de ocio educativo infantil y juvenil y actividades extraescolares (exp: 0015-2026-0001)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Pueden ser beneficiarias de las ayudas las personas físicas mayores de edad que cumplan los siguientes requisitos:</p><p>a) Estar empadronadas en algún municipio de Menorca.b) Tener la consideración de unidad familiar por tener a su cargo en calidad de progenitor/a o tutor/a legal, o por un vínculo de acogimiento permanente reconocido, niños y jóvenes que cumplan el año de la convocatoria entre 3 y 17 años, ambos inclusive, que participen en actividades de ocio educativo infantil y juvenil y en actividades extraescolares, y que convivan en el mismo domicilio.c) Haber obtenido durante el ejercicio 2025 unos ingresos brutos anuales que, conjuntamente, no superen los umbrales que se establecen en las bases de la convocatoria.</p><p>Segundo. Objeto</p><p>Asegurar que todos los menores puedan acceder a experiencias educativas, culturales y sociales que favorezcan su formación integral, la cohesión social y la igualdad de oportunidades, contribuyendo así al bienestar de la sociedad menorquina.</p><p>Tercero. Bases reguladoras       La convocatoria se rige por las bases reguladoras aprobadas por el Consejo de Dirección del Institut de la Joventut de Menorca en sesión de carácter extraordinario de día 12 de junio de 2026.</p><p>Cuarto. Cuantía</p><p>El importe global máximo de la convocatoria es de 425.000 € (cuatrocientos veinticinco mil euros), desglosado de la siguiente manera:</p><p>                                                                                                                                                                                   CuantíaLínea 1. Ayudas para actividades de ocio educativo infantil y juvenil durante las vacaciones escolares               125.000 €Línea 2. Ayudas para actividades extraescolares                                                                                                   300.000 €Total                                                                                                                                                                         425.000 €</p><p>Quinto. Plazo de presentación de solicitudes</p><p>El plazo de presentación de solicitudes comenzará el día 14 de septiembre de 2026 y finalizará el día 13 de octubre de 2026.       Sexto. Otros datos</p><p>Los importes máximos que pueden concederse son: </p><p>Línea 1: 300 € por cada menor de edad beneficiario que participe en una o más actividades de ocio educativo durante las vacaciones escolares.Línea 2: 300 € por cada menor de edad que participe en una o más actividades extraescolares.</p>",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12300/717631/extracto-del-acuerdo-del-consejo-de-direccion-del-",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-07-11"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-16T04:09:39.350Z"
+}

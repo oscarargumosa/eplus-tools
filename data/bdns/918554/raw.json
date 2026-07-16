@@ -1,0 +1,88 @@
+{
+  "id": 1120115,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE TENERIFE",
+    "nivel3": "CABILDO INSULAR DE TENERIFE"
+  },
+  "sedeElectronica": "https://sede.tenerife.es/es",
+  "codigoBDNS": "918554",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "Subvenciones a Ayuntamientos de la isla de menos de treinta mil habitantes o entidades públicas dependientes para la realización de proyectos que impulsen políticas de diversidad sexual, familiar y de género en el territorio insular 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Subvenciones a Ayuntamientos de la isla de menos de treinta mil habitantes o entidades públicas dependientes para la realización de proyectos que impulsen políticas de diversidad sexual, familiar y de género en el territorio insular 2026.",
+  "urlBasesReguladoras": "https://sede.tenerife.es/es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en el BOP.",
+  "textFin": "A contar 20 días naturales a partir del día siguiente a la publicación de la convocatoria en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491875,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "AC0000028158_Acuerdo CGI Subvenciones Aytos Diversidad 2026.report.pdf",
+      "long": 1046637,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1491881,
+      "descripcion": "Anexo III. Estrategia colaborativa.",
+      "nombreFic": "Anexo III. Estrategia colaborativa.pdf",
+      "long": 367227,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1491879,
+      "descripcion": "Anexo II. Estrategia transversal.",
+      "nombreFic": "Anexo II. Estrategia transversal.pdf",
+      "long": 463328,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1491876,
+      "descripcion": "Anexo I. Memoria del proyecto.",
+      "nombreFic": "Anexo I. Memoria del proyecto.pdf",
+      "long": 634636,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,88 @@
+{
+  "id": 1120856,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CARTAGENA",
+    "nivel3": "AYUNTAMIENTO DE CARTAGENA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919295",
+  "fechaRecepcion": "2026-07-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "SS SUBVENCIONES A ASOCIACIONES DE PERSONAS MAYORES Y A FEDERACIÓN DE CENTROS DE PERSONAS MAYORES DEL MUNICIPIO DE CARTAGENA DESTINADOS A LA FINANCIACIÓN DE EQUIPAMIENTO DE LOCALES.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "LEY 38/2003 DE 17 DE NOVIEMBRE GENERAL DE SUBVENCIONES Y REGLAMENTO DE DESARROLLO DE ÉSTA, APROBADO MEDIANTE RD 887/2006 DE 21 DE JULIO Y BASES DE EJECUCIÓN DEL PRESUPUESTO MUNICIPAL DE 2026.",
+  "urlBasesReguladoras": "https://hacienda.cartagena.es/ejercicios_OEP_2026_ayuntamiento.asp",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación de la Convocatoria en el BORM",
+  "textFin": "Hasta quince días hábiles después de su publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493781,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "C13.SSOCIALES.CONCESIÓN SUBV.ASOC. PERSONAS MAYORES MTO. EQUIP. INST. LOCALES 2026 - SEFYCU 4316616.pdf",
+      "long": 395970,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493784,
+      "descripcion": "BASES CONVOCATORIA SUBSANACIÓN ERROR",
+      "nombreFic": "SSOCIALES-01. PPTA SUBSANACIÓN ERROR CONVOCATORIA SUBV. MAYORES.pdf",
+      "long": 970827,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493783,
+      "descripcion": "ACUERDO JUNTA DE GOBIERNO SUBSANACIÓN ERROR",
+      "nombreFic": "ACUERDO JGL SSOCIALES.SUBSANACIÓN ERROR CONVOCATORIA SUBV. MAYORES - SEFYCU 4341096.pdf",
+      "long": 326898,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493782,
+      "descripcion": "BASES CONVOCATORIA",
+      "nombreFic": "SSOCIALES-01.PPTA CONVOCATORIA SUBV P_MAYORES.pdf",
+      "long": 1931941,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

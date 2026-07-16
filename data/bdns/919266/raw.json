@@ -1,0 +1,91 @@
+{
+  "id": 1120827,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT JOAN DESPÍ",
+    "nivel3": "AYUNTAMIENTO DE SANT JOAN DESPÍ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919266",
+  "fechaRecepcion": "2026-07-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 297000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORES CAMPANYA-SUBVENCIÓ \"TARGETA MONEDER-PROGRAMA REINICIEM. Fes una bona compra, ara més que mai, comerç de Sant Joan Despí\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORES CAMPANYA-SUBVENCIÓ \"TARGETA MONEDER-PROGRAMA REINICIEM. Fes una bona compra, ara més que mai, comerç de Sant Joan Despí\"",
+  "urlBasesReguladoras": "http://www.sjdespi.net/wca/",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493700,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Acord JG 14 desembre 2021 Bases subvencions 2021.pdf",
+      "long": 448916,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493703,
+      "descripcion": "BOPB 16_12_20 publicació Bases subvencions",
+      "nombreFic": "BOPB 16_12_20 publicació Bases subvencions 2021.pdf",
+      "long": 618321,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493702,
+      "descripcion": "BASES ESPECÍFIQUES I ANNEXES",
+      "nombreFic": "BASES ESPECÍFIQUES I ANNEXES 2021 JG.pdf",
+      "long": 901042,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493701,
+      "descripcion": "Acord JG 14 desembre 2021 Bases subvencions",
+      "nombreFic": "Acord JG 14 desembre 2021 Bases subvencions 2021.pdf",
+      "long": 448916,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

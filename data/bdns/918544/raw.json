@@ -1,0 +1,80 @@
+{
+  "id": 1120105,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE TENERIFE",
+    "nivel3": "CABILDO INSULAR DE TENERIFE"
+  },
+  "sedeElectronica": "https://sede.tenerife.es/es",
+  "codigoBDNS": "918544",
+  "fechaRecepcion": "2026-07-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Subvenciones a las empresas cuya plantilla no supere 49 personas para la realización de proyectos que contribuyan al establecimiento de políticas efectivas de igualdad de género, en el ámbito laboral en el ejercicio 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Subvenciones a las empresas cuya plantilla no supere 49 personas para la realización de proyectos que contribuyan al establecimiento de políticas efectivas de igualdad de género, en el ámbito laboral en el ejercicio 2026.",
+  "urlBasesReguladoras": "https://sede.tenerife.es/es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en el BOP.",
+  "textFin": "A contar 20 días naturales a partir del día siguiente a la publicación de la convocatoria en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1491828,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "AC0000028157 CGI Subv Empresas 26.pdf",
+      "long": 1031521,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1491832,
+      "descripcion": "Anexo II. Memoria del proyecto.",
+      "nombreFic": "Anexo II. Memoria del proyecto.pdf",
+      "long": 313149,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1491830,
+      "descripcion": "Anexo I. Solicitud.",
+      "nombreFic": "Anexo I. Solicitud.pdf",
+      "long": 198876,
+      "datMod": "2026-07-10",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

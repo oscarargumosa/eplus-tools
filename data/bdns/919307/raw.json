@@ -1,0 +1,88 @@
+{
+  "id": 1120868,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE AGRICULTURA, GANADERÍA Y PESCA"
+  },
+  "sedeElectronica": "sede.gva.es/es/proc103026",
+  "codigoBDNS": "919307",
+  "fechaRecepcion": "2026-07-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "Ayudas de compensaciones complementarias y ayudas para la reposición de los animales en explotaciones de determinadas especies ganaderas como consecuencia de la ejecución de programas oficiales de lucha, control y erradicación de enfermedades animales",
+  "descripcionLeng": "Ajudes de compensacions complementàries i ajudes per a la reposició dels animals en explotacions de determinades espècies ramaderes a conseqüència de l’execució de programes oficials de lluita, control i erradicació de malalties animals.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden 13/2024, de 28 de noviembre de la CAGP por la que se establecen las bases reguladoras para la concesión de ayudas de compensaciones complementarias y ayudas para la reposición de los animales en explotaciones",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/eli/es-vc/res/2024/11/28/13",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "01 de agosto de 2026",
+  "textFin": "31 de diciembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1493835,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "009_RESOLUCIÓN CONVOCATORIA CS_firmado.pdf",
+      "long": 421962,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493838,
+      "descripcion": "EXTRACTO de la resolución la convocatoria para el 2026 de la concesión de ayudas de compensaciones complementarias y ayudas para la reposición de animales por medidas contra las enfermedades",
+      "nombreFic": "011_EXTRACTO_CASTELLANO_firmado.pdf",
+      "long": 315710,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493837,
+      "descripcion": "EXTRACTE de la resolució de la convocatòria per al 2026 de concessió d'ajudes de compensacions complementàries i ajudes per a la reposició d'animals com a conseqüència de programes de lluita de malalties",
+      "nombreFic": "012_EXTRACTO_VALENCIANO_firmado.pdf",
+      "long": 314588,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    },
+    {
+      "id": 1493836,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "010_RESOLUCIN  CONVOCATORIA VAL_firmado.pdf",
+      "long": 435278,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "919307",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / SECRETARÍA AUTONÓMICA DE AGRICULTURA, GANADERÍA Y PESCA",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Ayudas de compensaciones complementarias y ayudas para la reposición de los animales en explotaciones de determinadas especies ganaderas como consecuencia de la ejecución de programas oficiales de lucha, control y erradicación de enfermedades animales",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-07-15",
+  "open_date": "2026-09-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "sede.gva.es/es/proc103026",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919307",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "EXTRACTO de la resolución la convocatoria para el 2026 de la concesión de ayudas de compensaciones complementarias y ayudas para la reposición de animales por medidas contra las enfermedades",
+      "url": null
+    },
+    {
+      "label": "EXTRACTE de la resolució de la convocatòria per al 2026 de concessió d'ajudes de compensacions complementàries i ajudes per a la reposició d'animals com a conseqüència de programes de lluita de malalties",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/es/eli/es-vc/res/2024/11/28/13",
+  "text_inicio": "01 de agosto de 2026",
+  "text_fin": "31 de diciembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-16T04:09:39.825Z"
+}

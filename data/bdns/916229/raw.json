@@ -1,0 +1,64 @@
+{
+  "id": 1117790,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ARAGÓN",
+    "nivel3": "INSTITUTO ARAGONÉS DE EMPLEO (INAEM)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "916229",
+  "fechaRecepcion": "2026-06-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 101900,
+  "mrr": false,
+  "descripcion": "ORDEN DE LA CONSEJERA DE ECONOMÍA, COMPETITIVIDAD Y EMPLEO, POR LA QUE SE CONCEDE UNA SUBVENCIÓN A LA AGRUPACIÓN DE PERSONAS SORDAS DE ZARAGOZA Y ARAGÓN (ASZA) PARA LA REALIZACIÓN DE UN SERVICIO DE INTERMEDIACIÓN LABORAL PARA PERSONAS SORDAS (SILPES).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES24 - ARAGON"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Decreto Legislativo 2/2023, de 3 de mayo, del Gobierno de Aragón, por el que se aprueba el texto refundido de la Ley de Subvenciones de Aragón.",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12919",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1484492,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Orden Consejera ASZA 2026.pdf",
+      "long": 983816,
+      "datMod": "2026-06-30",
+      "datPublicacion": null
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

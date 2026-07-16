@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "919428",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GETAFE / AYUNTAMIENTO DE GETAFE",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "CONVOCATORIA DE LOS CERTÁMENES ARTÍSTICOS CIUDAD DE GETAFE 2026: “XXIII CERTAMEN NACIONAL DE PINTURA RÁPIDA. CIUDAD DE GETAFE”, EL “II CERTAMEN NACIONAL DE PINTURA SECA. CIUDAD DE GETAFE” Y EL “II CERTAMEN NACIONAL DE ESCULTURA. CIUDAD DE GETAFE”",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-15",
+  "open_date": null,
+  "deadline": "2026-08-28",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 27500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": "https://sede.getafe.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919428",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.bocm.es/boletin/CM_Orden_BOCM/2013/05/13/BOCM-20130513-55.PDF",
+  "text_inicio": "Día siguiente a la publicación de las bases en el BOCM ",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-16T04:09:39.844Z"
+}

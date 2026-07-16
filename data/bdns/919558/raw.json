@@ -1,0 +1,64 @@
+{
+  "id": 1121119,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GODELLA",
+    "nivel3": "AYUNTAMIENTO DE GODELLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919558",
+  "fechaRecepcion": "2026-07-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el fomento del uso del servicio de transporte público ferroviario que presta Ferrocarrils de la Generalitat Valenciana\nentre mayores de 65 años y personas con un grado de discapacidad reconocido de un 64% o superior 2026-2027",
+  "descripcionLeng": "Convocatòria per al foment de l'ús del servei de transport públic ferroviari que presta Ferrocarrils de la Generalitat Valenciana entre\nmajors de 65 anys i persones amb un grau de discapacitat reconegut d'un 64% o superior 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "BASES QUE HAN DE REGIR LA CONVOCATORIA PARA LA CONCESIÓN EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS DE TRANSPORTE PÚBLICO PARA PERDONAS MAYORES DE 65 AÑOS O DISCAPACITADOS DEL MUNICIPIO DE GODELLA PARA EL EJERCICIO 2026-2027",
+  "urlBasesReguladoras": "https://sede.godella.es/firma/documento.aspx?csv=JUAAAVJWPALZJEAHQW9E&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del siguiente a la publicación del extracto de la convocatoria en el BOP Valencia",
+  "textFin": "30 días naturales a partir del día siguiente  a la publicación BOP Valencia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1494755,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 915 de 13_07_2026 _RESOLUCIÓN APROBACIÓN BASES AYUDA TRANSPORTE_ - SEGRA 1200524.pdf",
+      "long": 422482,
+      "datMod": "2026-07-15",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

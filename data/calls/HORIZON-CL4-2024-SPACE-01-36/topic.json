@@ -7,17 +7,17 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-11-21",
-  "deadline": "2024-02-20",
+  "deadline": "2024-03-21",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON  Research and Innovation Actions",
   "actionCode": null,
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Artificial intelligence, intelligent systems, mult\",\"Geo-information and spatial data analysis\",\"Earth Observation / Services and applications\",\"Big data\",\"S6 - Security (Copernicus service)\",\"Digital Agenda\"]"
+    "[\"S6 - Security (Copernicus service)\",\"Geo-information and spatial data analysis\",\"Artificial intelligence, intelligent systems, mult\",\"Earth Observation / Services and applications\",\"Digital Agenda\",\"Big data\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL4-2024-SPACE-01-36.json",
   "documents": [],
-  "fetchedAt": "2026-07-15T04:02:49.377Z"
+  "fetchedAt": "2026-07-16T04:06:15.279Z"
 }

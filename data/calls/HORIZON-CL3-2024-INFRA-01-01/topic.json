@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Policy and Support\",\"Protection of areas and infrastructures\",\"Technologies-Components\",\"Critical Infrastructure Protection (CIP)\",\"Security\",\"Operators of critical infrastructure\",\"Threats and vulnerabilities modelling\",\"Security Management and Governance\",\"Resilience aspects\",\"Digital Agenda\",\"Earth Observation / Services and applications\",\"Terrorism\",\"operators\",\"Critical infrastructure\",\"monitoring\",\"resilience\",\"Security\",\"natural and human-made hazards\",\"Earth Observation\",\"data sources\",\"threat\",\"risk assessment\",\"Terrorism\"]"
+    "[\"Policy and Support\",\"Protection of areas and infrastructures\",\"Technologies-Components\",\"Security\",\"Critical Infrastructure Protection (CIP)\",\"Operators of critical infrastructure\",\"Threats and vulnerabilities modelling\",\"Security Management and Governance\",\"Resilience aspects\",\"Digital Agenda\",\"Earth Observation / Services and applications\",\"Terrorism\",\"operators\",\"Critical infrastructure\",\"monitoring\",\"resilience\",\"Security\",\"natural and human-made hazards\",\"Earth Observation\",\"data sources\",\"threat\",\"risk assessment\",\"Terrorism\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-INFRA-01-01.json",
   "documents": [],
-  "fetchedAt": "2026-07-15T04:02:49.390Z"
+  "fetchedAt": "2026-07-16T04:06:15.242Z"
 }

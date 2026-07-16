@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,16 +17,16 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Sustainable transport - general\",\"RePowerEU\",\"Freight and logistics\",\"Social Innovation\",\"Co-programmed European Partnerships\",\"LCV\",\"powertrain efficiency\",\"scalability\",\"secondary particle emissions\",\"control strategies\",\"affordability\",\"urban freight\",\"zero emissions logistics\",\"Physical Internet\",\"Light Commercial Vehicles\",\"mission focused design\",\"freight delivery fleets\",\"energy recuperation\"]"
+    "[\"Sustainable transport - general\",\"Freight and logistics\",\"Co-programmed European Partnerships\",\"Social Innovation\",\"RePowerEU\",\"Light Commercial Vehicles\",\"urban freight\",\"zero emissions logistics\",\"scalability\",\"energy recuperation\",\"Physical Internet\",\"affordability\",\"mission focused design\",\"freight delivery fleets\",\"LCV\",\"powertrain efficiency\",\"control strategies\",\"secondary particle emissions\"]"
   ],
   "crossCuttingPriorities": [
-    "RePowerEU",
+    "PART-COPROGR",
     "SocInnov",
-    "PART-COPROGR"
+    "RePowerEU"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-06.json",
   "documents": [],
-  "fetchedAt": "2026-07-15T04:02:49.615Z"
+  "fetchedAt": "2026-07-16T04:06:15.348Z"
 }
