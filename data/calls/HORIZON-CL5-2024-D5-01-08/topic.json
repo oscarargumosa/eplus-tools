@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Digital Agenda\",\"Sustainable transport - general\",\"circularity\",\"design and manufacturing\",\"digital transformation\",\"composite aerostructures\",\"competitiveness\",\"structural health monitoring\",\"aviation\"]"
+    "[\"Digital Agenda\",\"Sustainable transport - general\",\"aviation\",\"design and manufacturing\",\"digital transformation\",\"competitiveness\",\"composite aerostructures\",\"structural health monitoring\",\"circularity\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-08.json",
   "documents": [],
-  "fetchedAt": "2026-07-16T04:06:15.340Z"
+  "fetchedAt": "2026-07-17T04:06:42.181Z"
 }

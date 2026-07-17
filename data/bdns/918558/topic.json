@@ -1,0 +1,86 @@
+{
+  "source": "bdns",
+  "source_id": "918558",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DAIMIEL / AYUNTAMIENTO DE DAIMIEL",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "BASES REGULADORAS Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA EL EMBELLECIMIENTO DE LAS FACHADAS INCLUIDAS EN EL CATÁLOGO DE BIENES INMUEBLES Y ESPACIOS PROTEGIDOS DEL AYUNTAMIENTO DE DAIMIEL. EJERCICIO 2026.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-07-10",
+  "open_date": null,
+  "deadline": "2026-11-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": "https://www.daimiel.es/sede",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918558",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ACUERDO JUNTA DE GOBIERNO",
+      "url": null
+    },
+    {
+      "label": "SOLICITUD Y DECLARACIÓN RESPONSABLE",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.daimiel.es/es/subvenciones-para-el-embellecimiento-de-fachadas",
+  "text_inicio": "el día siguiente al de la publicación del extracto de la convocatoria en el BOP Ciudad Real",
+  "text_fin": "30 de noviembre o hasta agotar crédito",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 217274,
+      "titulo": "EXTRACTO DE CONVOCATORIA DE AYUDAS PARA LA CONCESIÓN DE SUBVENCIONES PARA EL EMBELLECIMIENTO DE LAS FACHADAS INCLUIDAS EN EL CATÁLOGO DE BIENES INMUEBLES Y ESPACIOS PROTEGIDOS DEL AYUNTAMIENTO DE DAIMIEL. EJERCICIO 2026.",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Objeto.</p><p>La presente convocatoria tiene como objeto la concesión de ayudas para subvencionar la rehabilitación y pintura de fachadas de inmuebles incluidos en el CBIyEP  del POM Daimiel 2009 que se realicen desde el 1 de enero y hasta el 30 de noviembre de 2026.</p><p>Segundo.- Bases Reguladoras.</p><p>Aprobadas por el Ayuntamiento de Daimiel en Junta de Gobierno el día 22 de junio de 2026 cuyo texto completo puede consultarse en http://www.pap.minhap.gob.es/bdnstrans/index con identificación BDNS 918558</p><p>Tercero.- Cuantía.</p><p>Asciende a un importe total de 20.000,00 € (RC-1141) del vigente presupuesto municipal, con cargo a la aplicación presupuestaria 151/48992</p><p>Cuarto.- Plazo de presentación de solicitudes.</p><p>Se extenderá desde el día siguiente al de la publicación del anuncio de esta convocatoria en el Boletín Oficial de Provincia y hasta el 30 noviembre de 2026.</p><p>Quinto.- Solicitudes</p><p>Se presentarán según el modelo oficial (Anexo de la convocatoria) disponible en  https://www.daimiel.es/es/subvenciones-para-el-embellecimiento-de-fachadas,</p><p>junto a la documentación que en él se relaciona.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7671256",
+      "cve": "CNGT2W1bSx6xiL2+iPgf",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-17T04:10:03.533Z"
+}

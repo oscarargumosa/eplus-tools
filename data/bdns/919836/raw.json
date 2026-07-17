@@ -1,0 +1,112 @@
+{
+  "id": 1121397,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE SALUD"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919836",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 220000,
+  "mrr": false,
+  "descripcion": "Resolución de 15 de julio de la Consejería de Salud, por la que se aprueba la convocatoria de consesión de subvenciones a asociaciones de personas con enfermedades crónicas en Asturias en el ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades sanitarias",
+      "codigo": "86"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Sanidad",
+  "descripcionBasesReguladoras": "Orden del 18 de junio 2026, de la Consejería de Salud, de primera modificación de la Resolución de la Consejería de Salud de 29 de mayo de 2024, por la que se aprueban las bases reguladoras de la concesión de subvenciones, en régimen de concurrencia compe",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-05239&",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde día siguiente a la publicación en BOPA",
+  "textFin": "15 d.desde siguiente extracto BOPA rectificación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495671,
+      "descripcion": "AYUD0216T02 Protección Datos",
+      "nombreFic": "AYUD0216T02ProteccionDatos.pdf",
+      "long": 61993,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495667,
+      "descripcion": "Anexo II Modelo de balance económico",
+      "nombreFic": "AYUD0216T01 Anexo II Modelo de balance económico.pdf",
+      "long": 130725,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495666,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_Consejeria_de_Salud_Firma_Consejero (15072026).pdf",
+      "long": 185389,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495669,
+      "descripcion": "Anexo V Información sobre estatutos y documentación previa",
+      "nombreFic": "AYUD0216T01 Anexo V INFORMACIÓN SOBRE ESTATUTOS Y DOCUMENTACIÓN PREVIA.pdf",
+      "long": 88866,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495670,
+      "descripcion": "AYUD0216T01 Protección Datos",
+      "nombreFic": "AYUD0216T01 ProteccionDatos.pdf",
+      "long": 61998,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495668,
+      "descripcion": "Anexo III Memoria explicativa del proyecto",
+      "nombreFic": "AYUD0216T01 Anexo III Memoria explicativa del proyecto.pdf",
+      "long": 201268,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495672,
+      "descripcion": "Anexo IV Relación detallada de justificantes de pago",
+      "nombreFic": "AYUD0216T02 Anexo IV Relacion detallada de justificantes de gasto.pdf",
+      "long": 203046,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

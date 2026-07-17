@@ -1,0 +1,80 @@
+{
+  "id": 1121171,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABRA",
+    "nivel3": "AYUNTAMIENTO DE CABRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919610",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3275,
+  "mrr": false,
+  "descripcion": "CONCURSO DE CARROZAS REAL FERIA Y FIESTAS DE SEPTIEMBRE 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DEL CONCURSO DE CARROZAS DE LA REAL FERIA Y FIESTAS DE SEPTIEMBRE",
+  "urlBasesReguladoras": "https://bop.dipucordoba.es/visor-pdf/07-07-2017/BOP-A-2017-2367.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACION DEL EXTRACTO EN EL BOP DE CÓRDOBA",
+  "textFin": "EL DIA 24 DE AGOSTO DE 2026 A LAS 14:15 H.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1494874,
+      "descripcion": "MODELO INSCRIPCION CARROZAS ADULTOS",
+      "nombreFic": "CONCURSO_CARROZAS_CUADRO_INSCRIPCION__ADULTOS__SP_26.pdf",
+      "long": 373348,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1494875,
+      "descripcion": "MODELO INSCRIPCION CARROZAS INFANTILES",
+      "nombreFic": "CONCURSO_CARROZAS_CUADRO_INSCRIPCION__INFANTILES__SP_26.pdf",
+      "long": 373394,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1494861,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA CONCURSO CARROZAS FIRMADA.pdf",
+      "long": 706772,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

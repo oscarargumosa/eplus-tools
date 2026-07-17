@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,17 +17,17 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Co-programmed European Partnerships\",\"Ocean sustainability and blue economy\",\"Sustainable transport - general\",\"Societal Engagement\",\"Freight and logistics\",\"RePowerEU\",\"zero émission, DC, eletrification\",\"waterborne\",\"marine\",\"shipping\",\"large\",\"efficiency\",\"demonstration\"]"
+    "[\"Ocean sustainability and blue economy\",\"RePowerEU\",\"Co-programmed European Partnerships\",\"Sustainable transport - general\",\"Freight and logistics\",\"Societal Engagement\",\"marine\",\"efficiency\",\"large\",\"shipping\",\"waterborne\",\"demonstration\",\"zero émission, DC, eletrification\"]"
   ],
   "crossCuttingPriorities": [
-    "PART-COPROGR",
     "OCEAN",
-    "SocietalEngagement",
-    "RePowerEU"
+    "RePowerEU",
+    "PART-COPROGR",
+    "SocietalEngagement"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-14.json",
   "documents": [],
-  "fetchedAt": "2026-07-16T04:06:15.345Z"
+  "fetchedAt": "2026-07-17T04:06:42.191Z"
 }

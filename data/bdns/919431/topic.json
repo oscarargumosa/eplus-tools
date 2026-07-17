@@ -1,0 +1,93 @@
+{
+  "source": "bdns",
+  "source_id": "919431",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / EJEA DE LOS CABALLEROS / AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "CRITERIOS REGULADORES DE LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE ACCIÓN SOCIAL AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "www.ejea.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919431",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO II DECLARACIÓN DELITOS SEXUALES",
+      "url": null
+    },
+    {
+      "label": "MODELO REPRESENTACIÓN",
+      "url": null
+    },
+    {
+      "label": "ANEXO III A RELACIÓN GASTOS PAGOS",
+      "url": null
+    },
+    {
+      "label": "ANEXO III B DECLARACIÓN SUBVENCIONES",
+      "url": null
+    },
+    {
+      "label": "FICHA DE TERCEROS",
+      "url": null
+    },
+    {
+      "label": "ANEXO III MEMORIA ECONÓMICA JSTIFICATIVA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ejea.es/subvenciones-accion-social-2026",
+  "text_inicio": "A partir del día siguiente al de la publicación en el BOPZ",
+  "text_fin": "Quince días hábiles desde el día siguiente a la publicación del extracto en el BOPZ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-17T04:10:03.779Z"
+}

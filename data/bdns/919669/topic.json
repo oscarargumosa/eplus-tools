@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "919669",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT VICENÇ DELS HORTS / AYUNTAMIENTO DE SANT VICENÇ DELS HORTS",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "BASES REGULADORAS Y CONVOCATORIA DEL PROCESO DE SELECCIÓN PARA LA PARTICIPACIÓN EN EL VIAJE INSTITUCIONAL A BRUSELAS PARA JÓVENES DE SANT VICENÇ DELS HORTS.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-07-16",
+  "open_date": null,
+  "deadline": "2026-08-06",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6037.9,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919669",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://seu-e.cat/ca/web/santvicencdelshorts/govern-obert-i-transparencia/gestio-economica/pressupost/pressupost/despeses-per-programa",
+  "text_inicio": "Desde el día siguiente de la publicación de la convocatoria en el tablón electrónico i en la web mun",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 217278,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://bop.diba.cat/anunci/3970537/bases-reguladores-i-convocatoria-del-proces-de-seleccio-per-a-la-participacio-en-el-viatge-institucional-a-brussel-les-per-a-joves-ajuntament-de-sant-vicenc-dels-horts",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-07-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-17T04:10:03.867Z"
+}

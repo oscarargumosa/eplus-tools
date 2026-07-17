@@ -1,0 +1,64 @@
+{
+  "id": 1121303,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NERJA",
+    "nivel3": "AYUNTAMIENTO DE NERJA"
+  },
+  "sedeElectronica": "www.nerja.es",
+  "codigoBDNS": "919742",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 145000,
+  "mrr": false,
+  "descripcion": "IX CONVOCATORIA DE AYUDAS MUNICIPALES PARA LA  REHABILITACIÓN DE VIVIENDAS - AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "IX CONVOCATORIA DE AYUDAS MUNICIPALES PARA LA  REHABILITACIÓN DE VIVIENDAS - AÑO 2026",
+  "urlBasesReguladoras": "www.nerja.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en BOP Málaga",
+  "textFin": "15 días naturales a contar desde el día siguiente de publicación en BOP Málaga",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495340,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICACIÓN APROBACIÓN IX PROGRAMA M. REHABILITACIÓN DE VIVIENDAS 2026.pdf",
+      "long": 409944,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

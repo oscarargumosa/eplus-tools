@@ -1,0 +1,72 @@
+{
+  "id": 1121324,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMASSORA",
+    "nivel3": "AYUNTAMIENTO DE ALMAZORA/ALMASSORA"
+  },
+  "sedeElectronica": "https://www.almassora.es/ca/articulos/tramits",
+  "codigoBDNS": "919763",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5548,
+  "mrr": false,
+  "descripcion": "Premis Vila d'Almassora 2026",
+  "descripcionLeng": "Premis Vila d'Almassora 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES5 - ESTE"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANÇA GENERAL DE SUBVENCIONS DE L'AJUNTAMENT D'ALMASSORA",
+  "urlBasesReguladoras": "https://www.almassora.es/es/articulos/ordenances-generals",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": "2026-06-25",
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": "17/7/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495386,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "A40_02. Resolució de les bases.PDF",
+      "long": 320945,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495385,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "A40_20. Traducció de les Bases PVAL_2026 per a la BDNS.PDF",
+      "long": 372082,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

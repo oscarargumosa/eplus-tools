@@ -1,0 +1,86 @@
+{
+  "id": 1121399,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "INSTITUTO GALLEGO DE PROMOCIÓN ECONÓMICA (IGAPE)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "919838",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45000000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras automoción 2026, cofinanciadas FEDER, concurrencia no competitiva, línea 1",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Metalurgia",
+      "codigo": "24"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras automoción 2026, cofinanciadas FEDER, concurrencia no competitiva, línea 1",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-29",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": "SA.000000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.000000",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 29 AYUDAS DE I+D+I. AYUDAS A LA INNOVACIÓN EN MATERIA DE PROCESOS Y ORGANIZACIÓN"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495678,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases automocion 2026 (ca)_20260716_162041.pdf",
+      "long": 3579191,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495679,
+      "descripcion": "Bases automoción 2026_Anexos Línea 1",
+      "nombreFic": "IG300J-C_20260716_162147.pdf",
+      "long": 1050579,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

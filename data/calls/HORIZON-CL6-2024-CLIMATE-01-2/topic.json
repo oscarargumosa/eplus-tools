@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Social innovation\",\"Innovation support services\",\"Social Innovation\",\"Water resources\",\"Renewable energy sources\",\"Forestry\",\"International Cooperation\",\"Foresight\",\"Agricultural economics\",\"Business management\",\"Climate change mitigation\",\"Biodiversity conservation\",\"Social sciences and humanities\",\"supply-chain analysis\",\"paludiculture\",\"socio-economic analysis\",\"networking\",\"carbon farming\",\"re-wetting\"]"
+    "[\"Social innovation\",\"Innovation support services\",\"Social Innovation\",\"Water resources\",\"Forestry\",\"Renewable energy sources\",\"International Cooperation\",\"Foresight\",\"Agricultural economics\",\"Business management\",\"Climate change mitigation\",\"Biodiversity conservation\",\"Social sciences and humanities\",\"supply-chain analysis\",\"paludiculture\",\"socio-economic analysis\",\"networking\",\"carbon farming\",\"re-wetting\"]"
   ],
   "crossCuttingPriorities": [
     "SocInnov",
@@ -29,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-CLIMATE-01-2.json",
   "documents": [],
-  "fetchedAt": "2026-07-16T04:06:15.055Z"
+  "fetchedAt": "2026-07-17T04:06:42.426Z"
 }

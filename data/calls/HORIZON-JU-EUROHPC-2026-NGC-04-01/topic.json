@@ -227,7 +227,14 @@
     },
     {
       "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
+      "label": "EuroHPC Work Programme 2026 (Decision 15/2026 Amendment No 2)",
+      "url": "https://www.eurohpc-ju.europa.eu/document/download/60f0d033-ca92-4aab-aea0-c5e572a2b04c_en?filename=Decision%2015.2026_Amend.%202%20to%20WP%202026.pdf",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "HE Main Work Programme 2026-2027 – 1. General Inmenmtroduction",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
@@ -401,5 +408,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-07-16T04:06:17.005Z"
+  "fetchedAt": "2026-07-17T04:06:44.795Z"
 }

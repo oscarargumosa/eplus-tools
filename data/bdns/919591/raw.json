@@ -1,0 +1,91 @@
+{
+  "id": 1121152,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LAREDO",
+    "nivel3": "AYUNTAMIENTO DE LAREDO"
+  },
+  "sedeElectronica": "https://sede.laredo.es/ ",
+  "codigoBDNS": "919591",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria del concurso de decoración de balcones, fachadas y establecimientos en homenaje a la Batalla de Flores 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases y convocatoria del concurso de decoración de balcones, fachadas y establecimientos en homenaje a la Batalla de Flores 2026.",
+  "urlBasesReguladoras": "https://www.laredo.es/09/archivos/bases-reguladoras-del-concurso-de-decoracion-en-ho.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-08-03",
+  "fechaFinSolicitud": "2026-08-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1494855,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "EXTRACTO CONVOCATORIA CONCURSO DECORACION HOMENAJE A LA BATALLA DE FLORES 2026.docx",
+      "long": 35307,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1494859,
+      "descripcion": "Anexos I y II",
+      "nombreFic": "ANEXOS I y II.pdf",
+      "long": 62959,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1494858,
+      "descripcion": "Solicitud",
+      "nombreFic": "SOLICITUD.pdf",
+      "long": 52084,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

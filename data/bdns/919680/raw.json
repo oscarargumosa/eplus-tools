@@ -1,0 +1,88 @@
+{
+  "id": 1121241,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BETANZOS",
+    "nivel3": "AYUNTAMIENTO DE BETANZOS"
+  },
+  "sedeElectronica": "https://sede.betanzos.gal/sxc/es/",
+  "codigoBDNS": "919680",
+  "fechaRecepcion": "2026-07-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y APROBACIÓN DE LAS BASES REGULADORAS DE SUBVENCIONES DIRIGIDAS A LA PROMOCIÓN DE FIESTAS POPULARES CELEBRADAS EN EL AYUNTAMIENTO DE BETANZOS DURANTE EL 2026",
+  "descripcionLeng": "CONVOCATORIA E APROBACIÓN DAS BASES REGULADORAS DE SUBVENCIONES DIRIXIDAS Á PROMOCIÓN DE FESTAS POPULARES CELEBRADAS NO CONCELLO DE BETANZOS DURANTE O 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y APROBACIÓN DE LAS BASES REGULADORAS DE SUBVENCIONES DIRIGIDAS A LA PROMOCIÓN DE FIESTAS POPULARES CELEBRADAS EN EL AYUNTAMIENTO DE BETANZOS DURANTE EL 2026",
+  "urlBasesReguladoras": "https://sede.betanzos.gal/sxc/es/informacion/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOP de A Coruña",
+  "textFin": "Quince días hábiles a contar desde el día siguiente a la publicación del extracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495089,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_A002_000008_Bases e convocatoria festas parroquiais 2026 def.castellano.odt_698759.pdf",
+      "long": 166571,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495092,
+      "descripcion": "ANEXO DE JUSTIFICACIÓN",
+      "nombreFic": "2026_A002_000008_ANEXO XUSTIFICACIÓN.odt_698750.pdf",
+      "long": 122941,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495091,
+      "descripcion": "ANEXO DE SOLICITUD",
+      "nombreFic": "2026_A002_000008_ANEXO SOLICITUDE.odt_698714.pdf",
+      "long": 121010,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    },
+    {
+      "id": 1495090,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026_A002_000008_Bases e convocatoria festas parroquiais 2026 def.odt_698711.pdf",
+      "long": 158688,
+      "datMod": "2026-07-16",
+      "datPublicacion": "2026-07-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
