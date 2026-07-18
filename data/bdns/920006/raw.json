@@ -1,0 +1,72 @@
+{
+  "id": 1121567,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN FORAL DE BIZKAIA",
+    "nivel3": "DIPUTACIÓN FORAL DE BIZKAIA"
+  },
+  "sedeElectronica": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "codigoBDNS": "920006",
+  "fechaRecepcion": "2026-07-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 180000,
+  "mrr": false,
+  "descripcion": "DECRETO FORAL 71/2026, de 16 de julio,de la Diputación Foral de Bizkaia ,que aprueba las bases reguladoras y convocatoria de subvenciones destinadas a favorecer la actividad formativa en materia de tiempo libre en Bizkaia 2026.",
+  "descripcionLeng": "71/2026 FORU DEKRETUA, uztailaren 16koa, Bizkaiko Foru Aldundiarena oinarri arautzaileak eta dirulaguntzen deialdia onartzen dituena Bizkaian 2026an aisialdiaren arloko prestakuntza-jarduera bultzatzera bideratuak",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "DECRETO FORAL 71/2026, de 16 de julio,de la Diputación Foral de Bizkaia ,que aprueba las bases reguladoras y convocatoria de subvenciones destinadas a favorecer la actividad formativa en materia de tiempo libre en Bizkaia 2026",
+  "urlBasesReguladoras": "HTTPS://WWW.BIZKAIA.EUS/ES/BOB",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El 1 de octubre de 2026",
+  "textFin": "El 15 de octubre de 2026 a las 13:30 horas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496244,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "DLD_KEK_ESKOLAK 2026_KTS_1782211487087_20260707_113828.pdf",
+      "long": 504877,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496243,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DLD_KEK_ESKOLAK 2026_KTS_1782211487087_20260707_113828.pdf",
+      "long": 504877,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

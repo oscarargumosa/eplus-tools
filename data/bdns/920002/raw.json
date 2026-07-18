@@ -1,0 +1,64 @@
+{
+  "id": 1121563,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LORIGUILLA",
+    "nivel3": "AYUNTAMIENTO DE LORIGUILLA"
+  },
+  "sedeElectronica": "https://loriguilla.sedelectronica.es/info.0",
+  "codigoBDNS": "920002",
+  "fechaRecepcion": "2026-07-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4691,
+  "mrr": false,
+  "descripcion": "Aprobación  Bases    reguladoras    de    los    concursos y torneos deportivos y/o culturales que  se celebran en las festividades tradicionales de Loriguilla y convocatoria 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Aprobación  Bases    reguladoras    de    los    concursos y torneos deportivos y/o culturales que  se celebran en las festividades tradicionales de Loriguilla y convocatoria 2026",
+  "urlBasesReguladoras": "https://loriguilla.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "el día siguiente al de la publicación del extracto en el boletín",
+  "textFin": "el día anterior al inicio de cada concurso o torneo",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496356,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260717_Otros_DECRETO 2026-0026 [CONVOCATORIA SUBVENCIÓN PREMIOS CONCURSOS Y CAMPEONATOS FIESTAS PATRONALES 2026-Aprobación normas reguladoras y convocatoria].pdf",
+      "long": 469983,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

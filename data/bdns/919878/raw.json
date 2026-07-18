@@ -1,0 +1,72 @@
+{
+  "id": 1121439,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSITAT DE VALÈNCIA (ESTUDI GENERAL)",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://www.uv.es/sede-electronica/es/sede-electronica-uv.html",
+  "codigoBDNS": "919878",
+  "fechaRecepcion": "2026-07-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "Becas para estancias de voluntariado y prácticas externas en países prioritarios de cooperación al desarrollo para el estudiantado de grado y máster de los cursos 2025-26 y 2026-27",
+  "descripcionLeng": "Beques per a estades de voluntariat i pràctiques externes en països prioritaris de cooperació al desenvolupament per a l’estudiantat de grau i màster dels cursos 2025-26 y 2026-27",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Becas para estancias de voluntariado y prácticas externas en países prioritarios de cooperación al desarrollo para el estudiantado de grado y máster de los cursos 2025-26 y 2026-27",
+  "urlBasesReguladoras": "https://webges.uv.es/uvTaeWeb/MuestraInformacionEdictoFrontAction.do?visualizar=misRedacciones&idEdictoSeleccionado=106264",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Inicia al día siguiente de la publicación en el DOGV",
+  "textFin": "Finaliza a los quince días hábiles a partir del dia siguiente de la publicación en el DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1495902,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatoria-Valencia.pdf",
+      "long": 556499,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1495900,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatoria-castellano.pdf",
+      "long": 602052,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

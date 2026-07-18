@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "919973",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALMERÍA / AYUNTAMIENTO DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "Acuerdo JGL de 10/07/26. Aprobación de la convocatoria de subvenciones a Asociaciones de Consumidores y Usuarios, para el desarrollo y defensa de los consumidores y usuarios en el marco de la actuación municipal en materia de consumo, para el año 2026.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-07-17",
+  "open_date": "2026-07-23",
+  "deadline": "2026-08-03",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 4000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "https://sede.aytoalmeria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919973",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - SOLICITUD DE SUBVENCIÓN",
+      "url": null
+    },
+    {
+      "label": "ANEXO II DOCUMENTACIÓN A PRESENTAR",
+      "url": null
+    },
+    {
+      "label": "Ordenanza General de Bases Reguladoras para la Concesión de Subvenciones por el Ayuntamiento de Almería y sus Organismos Autónomos",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV ACEPTACIÓN O REFORMULACIÓN DE LA SUBVENCIÓN CONCEDIDA.",
+      "url": null
+    },
+    {
+      "label": "ANEXO V - MEMORIA DE ACTIVIDADES Y ECONÓMICA PARA LA JUSTIFICACIÓN DEL PROYECTO SUBVENCIONADO",
+      "url": null
+    },
+    {
+      "label": "ANEXO III DECLARACIÓN RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI  CERTIFICADO DE DIFUSIÓN",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipalme.org/Servicios/Boletin/BOP5Anteriores.nsf/fechabop/C1257E260069CFD5C12588D80041CB7D/$file/22-02873.pdf",
+  "text_inicio": "Día siguiente a la publicación de extracto de convocatoria en BOP de Almería",
+  "text_fin": "10 días naturales desde su publicación en el BOP de Almería",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-18T04:10:07.562Z"
+}

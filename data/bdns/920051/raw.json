@@ -1,0 +1,80 @@
+{
+  "id": 1121612,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRENT",
+    "nivel3": "AYUNTAMIENTO DE TORRENT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920051",
+  "fechaRecepcion": "2026-07-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONCURSO DE ARTES VISUALES TRAS LA PARED 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONCURSO DE ARTES VISUALES TRAS LA PARED 2026",
+  "urlBasesReguladoras": "https://torrent.es/ayudas-y-subvenciones/todas-las-ayudas-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-03-24",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Concurso artes visuales",
+  "textFin": "Concurso artes visuales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496321,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificat_dacord_-_concurs_darts_visuals_2026.pdf",
+      "long": 1117331,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496323,
+      "descripcion": "Bases reguladoras",
+      "nombreFic": "BASES_concurso_de_artes_visuales_2026.pdf",
+      "long": 231562,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496322,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Bases_concurs_darts_visuals_2026.pdf",
+      "long": 289844,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

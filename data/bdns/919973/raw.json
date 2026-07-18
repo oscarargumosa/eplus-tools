@@ -1,0 +1,120 @@
+{
+  "id": 1121534,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMERÍA",
+    "nivel3": "AYUNTAMIENTO DE ALMERÍA"
+  },
+  "sedeElectronica": "https://sede.aytoalmeria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "919973",
+  "fechaRecepcion": "2026-07-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "Acuerdo JGL de 10/07/26. Aprobación de la convocatoria de subvenciones a Asociaciones de Consumidores y Usuarios, para el desarrollo y defensa de los consumidores y usuarios en el marco de la actuación municipal en materia de consumo, para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases Reguladoras recogidas en la Ordenanza General de Subvenciones del Ayuntamiento de Almería y sus Organismos Autónomos.",
+  "urlBasesReguladoras": "https://www.dipalme.org/Servicios/Boletin/BOP5Anteriores.nsf/fechabop/C1257E260069CFD5C12588D80041CB7D/$file/22-02873.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-23",
+  "fechaFinSolicitud": "2026-08-03",
+  "textInicio": "Día siguiente a la publicación de extracto de convocatoria en BOP de Almería",
+  "textFin": "10 días naturales desde su publicación en el BOP de Almería",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496136,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certif. pto. 23 convoc. subv..pdf",
+      "long": 289184,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496140,
+      "descripcion": "ANEXO I - SOLICITUD DE SUBVENCIÓN",
+      "nombreFic": "Anexo I.pdf",
+      "long": 138314,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496141,
+      "descripcion": "ANEXO II DOCUMENTACIÓN A PRESENTAR",
+      "nombreFic": "Anexo II.pdf",
+      "long": 112774,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496159,
+      "descripcion": "Ordenanza General de Bases Reguladoras para la Concesión de Subvenciones por el Ayuntamiento de Almería y sus Organismos Autónomos",
+      "nombreFic": "ordenanza general bbrr subv. ayto. y org. aut. 24.07.24.pdf",
+      "long": 855832,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496146,
+      "descripcion": "ANEXO IV ACEPTACIÓN O REFORMULACIÓN DE LA SUBVENCIÓN CONCEDIDA.",
+      "nombreFic": "Anexo IV.pdf",
+      "long": 105770,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496147,
+      "descripcion": "ANEXO V - MEMORIA DE ACTIVIDADES Y ECONÓMICA PARA LA JUSTIFICACIÓN DEL PROYECTO SUBVENCIONADO",
+      "nombreFic": "Anexo V.pdf",
+      "long": 237649,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496144,
+      "descripcion": "ANEXO III DECLARACIÓN RESPONSABLE",
+      "nombreFic": "Anexo III.pdf",
+      "long": 154233,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    },
+    {
+      "id": 1496149,
+      "descripcion": "ANEXO VI  CERTIFICADO DE DIFUSIÓN",
+      "nombreFic": "Anexo VI.pdf",
+      "long": 125861,
+      "datMod": "2026-07-17",
+      "datPublicacion": "2026-07-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

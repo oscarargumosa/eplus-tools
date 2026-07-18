@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "920124",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÓRDOBA / AYUNTAMIENTO DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "CONVOCATORIA DE SUBVENCIONES PARA PROYECTOS DE MEJORA DE LAS CONDICIONES DE EMPLEABILIDAD DE LAS PERSONAS EN RIESGO DE EXCLUSIÓN SOCIAL DE LOS SERVICIOS SOCIALES MUNICIPALES DEL AYUNTAMIENTO DE CÓRDOBA – AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 384737.14,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920124",
+  "documents": [
+    {
+      "label": "BASES REGULADORAS",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.cordoba.es/el-ayuntamiento/ordenanzas-bandos-y-otros/ordenanzas-y-reglamentos-municipales-no-fiscales/subvenciones-y-patrocinios",
+  "text_inicio": "A partir del día siguiente a la publicación en el B.O.P",
+  "text_fin": "10 días hábiles a partir del siguiente a la publicación en el B.O.P",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-18T04:10:07.599Z"
+}

@@ -17,9 +17,10 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Child sexual abuse\",\"Electronic evidence\",\"Forensic technologies, others\",\"Incident Handling and Digital Forensics\",\"Police authorities\",\"Data protection and privacy\",\"Cybercrime\",\"Security\",\"Digital Agenda\",\"Analysis and preservation of digital evidence\",\"Education and training of police authorities\",\"Fight against crime and terrorism\",\"Human rights\",\"Social sciences and humanities\",\"innovative guidelines\",\"collection of court evidence\",\"anonymity of victims\",\"security practitioners\",\"online investigation\",\"safer justice outcomes\",\"training curricula\",\"Police Authorities\",\"forensic practitioners\",\"child sexual abuse\",\"Security Union Strategy\"]"
+    "[\"Child sexual abuse\",\"Electronic evidence\",\"Artificial Intelligence\",\"Forensic technologies, others\",\"Incident Handling and Digital Forensics\",\"Police authorities\",\"Data protection and privacy\",\"Cybercrime\",\"Security\",\"Digital Agenda\",\"Analysis and preservation of digital evidence\",\"Education and training of police authorities\",\"Fight against crime and terrorism\",\"Human rights\",\"Social sciences and humanities\",\"innovative guidelines\",\"collection of court evidence\",\"anonymity of victims\",\"security practitioners\",\"online investigation\",\"safer justice outcomes\",\"training curricula\",\"Police Authorities\",\"forensic practitioners\",\"child sexual abuse\",\"Security Union Strategy\"]"
   ],
   "crossCuttingPriorities": [
+    "AI",
     "DigitalAgenda",
     "SSH"
   ],
@@ -27,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL3-2024-FCT-01-03.json",
   "documents": [],
-  "fetchedAt": "2026-07-17T04:06:42.477Z"
+  "fetchedAt": "2026-07-18T04:06:45.749Z"
 }
