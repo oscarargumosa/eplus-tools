@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-17",
   "deadline": "2024-02-22",
   "deadlineModel": "two-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Architecture, smart buildings, smart cities, urban\",\"Architectural design\",\"Societal Engagement\",\"Social sciences and humanities\",\"Architecture and building\",\"New European Bauhaus\",\"Climate change adaptation\",\"Nature-based solutions\",\"Environmental sciences\",\"Social Innovation\",\"Architecture - Culture\",\"Spatial development and architecture, land use, re\",\"biodiversity crisis\",\"New European Bauhaus\",\"circularity\",\"cities\",\"sustainable, inclusive and resilient society\",\"sustainability\",\"SSH\",\"nature-based solutions\",\"urban regeneration\",\"NBS\",\"urban planning\",\"climate change\",\"well-being\",\"biodiversity loss\",\"built cultural heritage\",\"urban design\",\"architecture\",\"architectural heritage\",\"equitable access to public spaces\",\"social inclusion\",\"urban resilience\",\"ecological sciences\",\"ecosystem services\",\"climate adaptation\",\"digital, social  and cultural innovation\",\"resilience\",\"land-use management\",\"citizen engagement\",\"biodiversity\",\"living spaces\",\"natural disasters\",\"transformative change\",\"social innovation\",\"NEB\",\"public spaces\",\"ecodesign\"]"
+    "[\"Architecture, smart buildings, smart cities, urban\",\"Architectural design\",\"New European Bauhaus\",\"Societal Engagement\",\"Social sciences and humanities\",\"Architecture and building\",\"Climate change adaptation\",\"Nature-based solutions\",\"Environmental sciences\",\"Social Innovation\",\"Architecture - Culture\",\"Spatial development and architecture, land use, re\",\"biodiversity crisis\",\"New European Bauhaus\",\"circularity\",\"cities\",\"sustainable, inclusive and resilient society\",\"nature-based solutions\",\"sustainability\",\"SSH\",\"urban regeneration\",\"NBS\",\"urban planning\",\"climate change\",\"well-being\",\"biodiversity loss\",\"built cultural heritage\",\"urban design\",\"architecture\",\"architectural heritage\",\"equitable access to public spaces\",\"social inclusion\",\"urban resilience\",\"ecological sciences\",\"ecosystem services\",\"climate adaptation\",\"digital, social  and cultural innovation\",\"resilience\",\"land-use management\",\"citizen engagement\",\"biodiversity\",\"living spaces\",\"natural disasters\",\"transformative change\",\"ecodesign\",\"social innovation\",\"NEB\",\"public spaces\"]"
   ],
   "crossCuttingPriorities": [
     "NEB",
@@ -29,5 +29,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-02-2-two-stage.json",
   "documents": [],
-  "fetchedAt": "2026-07-18T04:06:45.848Z"
+  "fetchedAt": "2026-07-19T04:02:15.030Z"
 }
