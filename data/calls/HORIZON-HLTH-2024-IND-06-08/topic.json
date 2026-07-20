@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-10-26",
   "deadline": "2024-04-11",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Patient care\",\"Health services, health care research\",\"Integrated care\",\"Health management systems\",\"Registries\",\"Risk assessment\",\"Preparedness\",\"Epidemiology\",\"Comparative effectiveness research\",\"Electronic patient files\",\"Health policy and services\",\"Privacy policies\",\"Surveillance\",\"Meta-analysis\",\"Homecare\",\"Early warning systems\",\"Digital Agenda\",\"Medical service\",\"Clinical management\",\"Healthcare system\",\"Clinical trials\",\"Health\",\"Notified bodies\",\"Clinical evidence\",\"Common specifications\",\"In vitro diagnostics\",\"Clinical investigation\",\"Software\",\"Registries\",\"Clinical data\",\"Medical Devices\",\"Heatlh technology\"]"
+    "[\"Patient care\",\"Health services, health care research\",\"Integrated care\",\"Health management systems\",\"Registries\",\"Preparedness\",\"Risk assessment\",\"Epidemiology\",\"Comparative effectiveness research\",\"Electronic patient files\",\"Health policy and services\",\"Privacy policies\",\"Surveillance\",\"Meta-analysis\",\"Homecare\",\"Early warning systems\",\"Digital Agenda\",\"Medical service\",\"Clinical management\",\"Healthcare system\",\"Clinical trials\",\"Health\",\"Notified bodies\",\"Clinical evidence\",\"In vitro diagnostics\",\"Common specifications\",\"Clinical investigation\",\"Software\",\"Registries\",\"Clinical data\",\"Medical Devices\",\"Heatlh technology\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-HLTH-2024-IND-06-08.json",
   "documents": [],
-  "fetchedAt": "2026-07-19T04:02:14.693Z"
+  "fetchedAt": "2026-07-20T04:02:57.630Z"
 }
