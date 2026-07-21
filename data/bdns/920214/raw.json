@@ -1,0 +1,75 @@
+{
+  "id": 1121775,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "https://sede.gva.es",
+  "codigoBDNS": "920214",
+  "fechaRecepcion": "2026-07-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 230000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de la Conselleria de Educación, Cultura y Universidades, por la que se aprueban las bases reguladoras y se convocan ayudas económicas, en concepto de subvención, para contribuir a la financiación de los gastos de ejecución de acciones y program",
+  "descripcionLeng": "RESOLUCIÓ de la Conselleria d’Educació, Cultura i Universitats per la qual s’aproven les bases reguladores i es convoquen ajudes econòmiques, en concepte de subvenció, per a contribuir al finançament dels gastos d’execució d’accions i program",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de la Conselleria de Educación, Cultura, Universidades y Empleo, por la que se aprueban las bases reguladoras y se convocan ayudas económicas, en concepto de subvención, para contribuir a la financiación de los gastos de ejecución de acciones y",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2016/7440",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-23",
+  "fechaFinSolicitud": "2026-08-05",
+  "textInicio": "dia siguiente de la publicación",
+  "textFin": "10 dias hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496798,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "3b. Resolució bases reguladores i convocatòria ESAL 2026_26-006421_trad_val 15.07.2026 (corregido) 2_firmado.pdf",
+      "long": 515672,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1496797,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "3a. Resolución bases reguladoras y convocatoria ESAL 2026_cast DOGV_firmado.pdf",
+      "long": 502143,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,104 @@
+{
+  "id": 1121889,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PARRES",
+    "nivel3": "AYUNTAMIENTO DE PARRES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920328",
+  "fechaRecepcion": "2026-07-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Extracto del acuerdo de 15 de julio de 2026, de la Junta de Gobierno Local del Ayuntamiento de Parres, por la que se aprueba la convocatoria pública de concesión de subvenciones para actividades o programas de interés social. Ejercicio 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Extracto del acuerdo de 15 de julio de 2026, de la Junta de Gobierno Local del Ayuntamiento de Parres, por la que se aprueba la convocatoria pública de concesión de subvenciones para actividades o programas de interés social. Ejercicio 2026.",
+  "urlBasesReguladoras": "https://www.ayto-parres.es/noticia/-/asset_publisher/bb7c8be44268/content/not-sub-ayu#.Xplii0AzaUk",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 DÍAS HABILES A PARTIR DE LA PUBLICACIÓN EN EL BOPA",
+  "textFin": "15 DÍAS HABILES A PARTIR DE LA PUBLICACIÓN EN EL BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497021,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_accion_social_SEFYCU 136304.pdf",
+      "long": 284041,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497022,
+      "descripcion": "MODELO SOLICITUD",
+      "nombreFic": "ANEXO I MODELO SOLICITUD DE SUBVENCION.pdf",
+      "long": 99551,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497027,
+      "descripcion": "ORDENANZA GENERAL DE SUBVENCIONES",
+      "nombreFic": "Ordenanza subvenciones_Bases.pdf",
+      "long": 1331731,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497024,
+      "descripcion": "MODELO PROYECTO",
+      "nombreFic": "ANEXO PROYECTO ACTIVIDAD.pdf",
+      "long": 71552,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497026,
+      "descripcion": "FICHA ACREEDOR",
+      "nombreFic": "ANEXO 1B FICHA ACREEDOR_new.pdf",
+      "long": 118128,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497023,
+      "descripcion": "MODELO DECLARACION RESPONSABLE",
+      "nombreFic": "MODELO DECLARACION RESPONSABLE.pdf",
+      "long": 117365,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

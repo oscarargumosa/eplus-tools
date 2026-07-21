@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "920184",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AZUQUECA DE HENARES / AYUNTAMIENTO DE AZUQUECA DE HENARES",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "CONVOCATORIA DE LA SUBVENCIÓN PARA ASOCIACIONES CULTURALESREGISTRADAS COMO PEÑAS PÚBLICAS Y COMO FEDERACIONES DE PEÑAS PÚBLICASDEL MUNICIPIO DE AZUQUECA DE HENARES PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 203100,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920184",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://azuqueca.sedelectronica.es/transparency/fca44906-ddd4-4bff-8a9c-bed5e8a26bab/",
+  "text_inicio": "Desde el día siguiente de su publicación en el BOP de Guadalajara",
+  "text_fin": "Dos días desde el día siguiente al de la publicación de la presente convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-21T04:07:53.541Z"
+}

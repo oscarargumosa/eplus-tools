@@ -1,0 +1,80 @@
+{
+  "id": 1121847,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA Y ADMINISTRACIÓN LOCAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920286",
+  "fechaRecepcion": "2026-07-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 64800,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA REALIZACIÓN DE PRÁCTICAS EN LA DG COOP.ESTADO Y UE 2027-2028",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BASES REGULADORAS SUBVENCIONES BECAS DG COOPERACIÓN CON EL ESTADO Y LA UE",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2024/06/07/BOCM-20240607-22.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCM",
+  "textFin": "15 DÍAS HÁBILES DESDE LA FECHA DE INICIO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496947,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  ORDEN CONV BECAS 2027-28 ANONIMIZADA.pdf",
+      "long": 692818,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1496949,
+      "descripcion": "Otros documentos  ANEXO II",
+      "nombreFic": "Otros documentos  ANEXO II.pdf",
+      "long": 104232,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1496948,
+      "descripcion": "Modelo de Solicitud",
+      "nombreFic": "Modelo de Solicitud.pdf",
+      "long": 162260,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

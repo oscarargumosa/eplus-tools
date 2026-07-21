@@ -1,0 +1,80 @@
+{
+  "id": 1121984,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARAMAIO",
+    "nivel3": "AYUNTAMIENTO DE ARAMAIO"
+  },
+  "sedeElectronica": "https://munigex.net/PortalV/7.00/SolicitudesCategorias.aspx?IDCategoria=1",
+  "codigoBDNS": "920423",
+  "fechaRecepcion": "2026-07-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones para la promoción del euskera para 2026",
+  "descripcionLeng": "Euskara sustatzeko 2026ko dirulaguntza deialdia",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones para la promoción del euskera para 2026",
+  "urlBasesReguladoras": "https://munigex.net/r/0/257/AAAA2KA9N.1oNl",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497058,
+      "descripcion": "Anexos/Eranskinak",
+      "nombreFic": "eranskinak.pdf",
+      "long": 197659,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497194,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Oinarriak euskaraz.pdf",
+      "long": 160120,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1497193,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Oinarriak gazteleraz.pdf",
+      "long": 150884,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

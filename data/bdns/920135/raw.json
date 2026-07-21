@@ -1,0 +1,72 @@
+{
+  "id": 1121696,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "SECRETARÍA GENERAL DE IGUALDAD Y CONCILIACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920135",
+  "fechaRecepcion": "2026-07-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300000,
+  "mrr": false,
+  "descripcion": "Subvenciones 2026 de la Modalidad A, Proyectos de Sensibilización y Prevención de la Violencia de Género, en el marco del Pacto de Estado contra la Violencia de Género, s/ Resolución de 8 de julio de 2026 de la Secretaria General que convoca",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Orden de 27 de julio de 2022 por la que se establecen y aprueban las bases reguladoras para la concesión de subvenciones para la realización de proyectos que fomenten la participación social de las mujeres, la promoción de la igualdad de género y la preve",
+  "urlBasesReguladoras": "http://doe.juntaex.es/pdfs/doe/2022/1450o/22050129.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en DOE",
+  "textFin": "7 días hábiles desde el día siguiente a su publicación en DOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1496617,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "Solicitud Modalidad A.PDF",
+      "long": 169345,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    },
+    {
+      "id": 1496616,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolución de convocatoria.PDF",
+      "long": 617679,
+      "datMod": "2026-07-20",
+      "datPublicacion": "2026-07-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

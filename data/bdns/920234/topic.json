@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "920234",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOLLET DEL VALLÈS / AYUNTAMIENTO DE MOLLET DEL VALLÈS",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "CONVOCATORIA DE SUBVENCIONES PARA El OTORGAMIENTO DE AYUDAS POR LA MATRICULACIÓN A LAS GUARDERÍAS PRIVADAS DE MOLLET A LA ESCOLARIZACIÓN I2 (2 AÑOS) PARA EL CURSO ESCOLAR 2026-2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920234",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anuncio/3928161/aprovacio-inicial-de-les-bases-reguladores-especifiques-de-concessio-de-subvencions-per-a-l-atorgament-d-ajuts-per-la-matriculacio-a-les-llars-d-infants-privades-de-mollet-a-l-escolaritzacio-i2-2-anys-ajuntament-de-mollet-del-valles",
+  "text_inicio": "Un dia después de la fecha de publicación del BOPB",
+  "text_fin": "Contar 10 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-21T04:07:53.553Z"
+}
