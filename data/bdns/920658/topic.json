@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "920658",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / IBI / AYUNTAMIENTO DE IBI",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA DE LA XXXI EDICIÓN DE LA MOSTRA DE TEATRE AMATEUR VILA D´IBI 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-21",
+  "open_date": "2026-07-21",
+  "deadline": "2026-09-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 7565,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90.2",
+      "descripcion": "Actividades de artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920658",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ibi.sedipualba.es/firma/documento.aspx?csv=LUAAAYAK3UPXYPDWLHJM&modo=abrir",
+  "text_inicio": "EL PLAZO DE PRESENTACIÓN SE ABRE CON LA PUBLICACION EN EL BOP ALICANTE",
+  "text_fin": "EL PLAZO FINALIZAEL 6 DE SEPTIEMBRE DE 2026.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-22T04:06:40.561Z"
+}

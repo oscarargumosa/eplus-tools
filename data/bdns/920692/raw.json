@@ -1,0 +1,102 @@
+{
+  "id": 1122253,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "AYUNTAMIENTO DE CÁCERES"
+  },
+  "sedeElectronica": "https://sede.caceres.es",
+  "codigoBDNS": "920692",
+  "fechaRecepcion": "2026-07-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "SUBVENCIÓN CONCURRENCIA COMPETITIVA CULTURA 2026",
+  "descripcionLeng": "LAS BASES REGULADORAS DE LA CONVOCATORIA DE LA CONCESIÓN DE SUBVENCIONES MEDIANTE CONCURRENCIA COMPETITIVA PARA EL EJERCICIO 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "LAS BASES REGULADORAS DE LA CONVOCATORIA DE LA CONCESIÓN DE SUBVENCIONES MEDIANTE CONCURRENCIA COMPETITIVA PARA EL EJERCICIO 2026.",
+  "urlBasesReguladoras": "https://sede.caceres.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "quince días hábiles a partir del siguiente al de la publicación del extracto de la convocatoria BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497839,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Modelo de Convocatoria de Subvención.PDF",
+      "long": 241651,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497840,
+      "descripcion": "ANEXOI",
+      "nombreFic": "ANEXOI.PDF",
+      "long": 2142997,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497843,
+      "descripcion": "Anexo IV",
+      "nombreFic": "Anexo IV.PDF",
+      "long": 192233,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497842,
+      "descripcion": "Anexo III",
+      "nombreFic": "Anexo III.PDF",
+      "long": 1876770,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497841,
+      "descripcion": "Anexo II",
+      "nombreFic": "Anexo II.PDF",
+      "long": 1854853,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

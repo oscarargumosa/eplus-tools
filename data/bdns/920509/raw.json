@@ -1,0 +1,80 @@
+{
+  "id": 1122070,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TÀRREGA",
+    "nivel3": "AYUNTAMIENTO DE TÀRREGA"
+  },
+  "sedeElectronica": "https://seu.tarrega.cat/emiservicio/catala/VisorITs/C2FFC14F6BA849C28517F9729353E7D8.asp?procedencia=Consulta",
+  "codigoBDNS": "920509",
+  "fechaRecepcion": "2026-07-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "ACUERDO DEL 15 DE JULIO DE 2026, DEL AYUNTAMIENTO DE TÀRREGA, POR EL QUE SE APRUEBAN LAS BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES A LAS FAMILIAS CON NIÑOS, ADOLESCENTES Y JÓVENES DE TÀRREGA, QUE NECESITEN ACOMPAÑAMIENTO DE VELADOR PARA LA PARTI",
+  "descripcionLeng": "Bases generals que regiran la concessió de subvencions a les famílies amb infants, adolescents i joves de Tàrrega que necessitin acompanyament de vetllador/a per a la participació en activitats d’estiu i de lleure",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades profesionales, científicas y técnicas",
+      "codigo": "74"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES513 - Lleida"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES A LAS FAMILIAS CON NIÑOS, ADOLESCENTES Y JÓVENES DE TÀRREGA, QUE NECESITEN ACOMPAÑAMIENTO DE VELADOR/A PARA LA PARTICIPACIÓN EN ACTIVIDADES DE VERANO Y DE OCIO",
+  "urlBasesReguladoras": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2023/101/BOP-907283205.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-23",
+  "fechaFinSolicitud": "2026-09-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497395,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Traducción decreto convocatoria_BDNS.pdf",
+      "long": 161790,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497410,
+      "descripcion": "Bases",
+      "nombreFic": "Bases.pdf",
+      "long": 330106,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497396,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Decret d'alcaldia_aprovació de la convocatòria.pdf",
+      "long": 157590,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

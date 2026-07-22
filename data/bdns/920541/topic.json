@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "920541",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALENCIA / FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria de Subvenciones en especie, en régimen de concurrencia competitiva, destinadas a startups vinculadas al ecosistema innovador valenciano para su participación en la Startup Island de la Fundación en el evento 'Web Summit Lisboa 2026'",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-21",
+  "open_date": null,
+  "deadline": "2026-09-06",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 26400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "74",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas"
+    }
+  ],
+  "apply_url": "https://valenciainnovationcapital.typeform.com/Startups-WSL-26",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920541",
+  "documents": [
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://valenciainnovationcapital.com/wp-content/uploads/2026/07/R213-26-Resolucion-aprobacion-bases-conv.especie_WSL-26-1_firmado.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación en el BOP ",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-22T04:06:40.534Z"
+}

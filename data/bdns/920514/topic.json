@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "920514",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALICANTE/ALACANT / AYUNTAMIENTO DE ALICANTE/ALACANT",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA PÚBLICA DE SUBVENCIONES A ENTIDADES SIN ÁNIMO DE LUCRO QUE DESARROLLEN PROYECTOS DE VOLUNTARIADO EN LA CIUDAD DE ALICANTE, AÑO 2026.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920514",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ACUERDO J.G.L. CONVOCATORIA SUBVENCIONES VOLUNTARIADO 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXOS CONVOCATORIA SUBVENCIONES VOLUNTARIADO 2026",
+      "url": null
+    },
+    {
+      "label": "BASES CONVOCATORIA SUBVENCIONES VOLUNTARIADO 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.alicante.es/es/contenidos/presupuesto-general-ayuntamiento-alicante-ejercicio-2026",
+  "text_inicio": "Desde día siguiente al de la publicación de la convocatoria en el B.O.P.",
+  "text_fin": "15 días hábiles contados desde el siguiente al de publicación de la convocatoria en el B.O.P.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-22T04:06:40.526Z"
+}

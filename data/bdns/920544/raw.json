@@ -1,0 +1,76 @@
+{
+  "id": 1122105,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT VICENÇ DELS HORTS",
+    "nivel3": "AYUNTAMIENTO DE SANT VICENÇ DELS HORTS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920544",
+  "fechaRecepcion": "2026-07-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7882,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA DEL XI PREMIO DE POESÍA NARCÍS LUNES Y BOLOIX 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA DEL XI PREMIO DE POESÍA NARCÍS LUNES Y BOLOIX 2026",
+  "urlBasesReguladoras": "https://seu-e.cat/ca/web/santvicencdelshorts/govern-obert-i-transparencia/gestio-economica/pressupost/pressupost/despeses-per-programa",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-29",
+  "textInicio": "Desde el día siguiente de la fecha de publicación de esta convocatoria",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497508,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026-07-21 SBV32026000002 Bases premis poesia Narcis Lunes i Boloix.pdf",
+      "long": 478812,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 217590,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://bop.diba.cat/anunci/3970397",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

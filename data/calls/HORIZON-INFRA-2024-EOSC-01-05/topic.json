@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-06",
   "deadline": "2024-03-12",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Co-programmed European Partnerships\",\"eInfrastructure\",\"Digital services\",\"EOSC and FAIR data\",\"Digital Agenda\",\"Cloud Services\",\"FAIR data\",\"open science\",\"technology development\"]"
+    "[\"Co-programmed European Partnerships\",\"EOSC and FAIR data\",\"Digital Agenda\",\"FAIR data\",\"open science\",\"technology development\"]"
   ],
   "crossCuttingPriorities": [
     "PART-COPROGR",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-INFRA-2024-EOSC-01-05.json",
   "documents": [],
-  "fetchedAt": "2026-07-21T04:04:33.075Z"
+  "fetchedAt": "2026-07-22T04:03:18.405Z"
 }

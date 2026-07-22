@@ -1,0 +1,104 @@
+{
+  "id": 1122049,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALAQUÀS",
+    "nivel3": "AYUNTAMIENTO DE ALAQUÀS"
+  },
+  "sedeElectronica": "https://alaquas.sedelectronica.es",
+  "codigoBDNS": "920488",
+  "fechaRecepcion": "2026-07-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 36335.63,
+  "mrr": false,
+  "descripcion": "TRAMITACIÓN AYUDAS ECONÓMICAS VINCULADAS AL PROGRAMA DE APOYO A FAMILIA E INFANCIA EN PERIODO ESTIVAL 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "AYUDAS ECONÓMICAS VINCULADAS AL PROGRAMA DE APOYO A FAMILIA E INFANCIA EN PERIODO ESTIVAL 2026",
+  "urlBasesReguladoras": "https://bop.dival.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-08-12",
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOP",
+  "textFin": "12/08/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497344,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260720_Resolución_DECRET 2026-3992 [Resolución PR_2026_4265.pdf",
+      "long": 406525,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497345,
+      "descripcion": "BASES",
+      "nombreFic": "20260710_Informe_BASES AYUDAS PROGRAMA FAMILIA E INFANCIA PERIDO ESTIVAL 2026.pdf",
+      "long": 279827,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497354,
+      "descripcion": "FICHA MANTENIMIENTO DE TERCEROS",
+      "nombreFic": "Ficha Mantenimiento Terceros.pdf",
+      "long": 3555584,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497348,
+      "descripcion": "ACCESO A DATOS",
+      "nombreFic": "Acceso a Datos de Carácter Personal modificado.pdf",
+      "long": 337573,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497351,
+      "descripcion": "DOCUMENTACIÓN A PRESENTAR",
+      "nombreFic": "DOCUMENTACIÓN PERIODO ESTIVAL .pdf",
+      "long": 67243,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497346,
+      "descripcion": "MODELO SOLICITUD",
+      "nombreFic": "SOLICITUD PROGRAMA DE APOYO A FAMILIA E INFANCIA EN PERIODO ESTIVAL 2026.pdf",
+      "long": 97872,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

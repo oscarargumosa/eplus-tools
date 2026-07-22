@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "920544",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SANT VICENÇ DELS HORTS / AYUNTAMIENTO DE SANT VICENÇ DELS HORTS",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "BASES DE LA CONVOCATORIA DEL XI PREMIO DE POESÍA NARCÍS LUNES Y BOLOIX 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-21",
+  "open_date": null,
+  "deadline": "2026-10-29",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7882,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920544",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://seu-e.cat/ca/web/santvicencdelshorts/govern-obert-i-transparencia/gestio-economica/pressupost/pressupost/despeses-per-programa",
+  "text_inicio": "Desde el día siguiente de la fecha de publicación de esta convocatoria",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 217590,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "https://bop.diba.cat/anunci/3970397",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE BARCELONA",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-22T04:06:40.536Z"
+}

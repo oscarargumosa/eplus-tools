@@ -1,0 +1,75 @@
+{
+  "id": 1122102,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALENCIA",
+    "nivel3": "FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)"
+  },
+  "sedeElectronica": "https://valenciainnovationcapital.typeform.com/Startups-WSL-26",
+  "codigoBDNS": "920541",
+  "fechaRecepcion": "2026-07-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 26400,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones en especie, en régimen de concurrencia competitiva, destinadas a startups vinculadas al ecosistema innovador valenciano para su participación en la Startup Island de la Fundación en el evento 'Web Summit Lisboa 2026'",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades profesionales, científicas y técnicas",
+      "codigo": "74"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones en especie, en régimen de concurrencia competitiva, destinadas a startups vinculadas al ecosistema innovador valenciano para su participación en la Startup Island de la Fundación en el evento 'Web Summit Lisboa 2026'",
+  "urlBasesReguladoras": "https://valenciainnovationcapital.com/wp-content/uploads/2026/07/R213-26-Resolucion-aprobacion-bases-conv.especie_WSL-26-1_firmado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-06",
+  "textInicio": "Desde el día siguiente a la publicación en el BOP ",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1497500,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I WSL-2026.docx",
+      "long": 59130,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    },
+    {
+      "id": 1497499,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases convocatoria WSL 26.pdf",
+      "long": 232316,
+      "datMod": "2026-07-21",
+      "datPublicacion": "2026-07-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

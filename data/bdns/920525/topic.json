@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "920525",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TÀRREGA / AYUNTAMIENTO DE TÀRREGA",
+  "nuts_codes": [
+    "ES513"
+  ],
+  "nuts_primary": "ES513",
+  "title": "DECRETO DEL 15 DE JULIO DE 2026 POR EL QUE SE ABRE LA CONVOCATORIA DE AYUDAS INDIVIDUALES DE COMEDOR, DIRIGIDOS AL ALUMNADO ESCOLARIZADO EN CUALQUIERA DE LOS CURSOS DE LAS ENSEÑANZAS DEL SEGUNDO CICLO DE EDUCACIÓN INFANTIL, DE EDUCACIÓN SECUNDARIA OBLIGAT",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-07-21",
+  "open_date": "2026-07-23",
+  "deadline": "2026-10-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://seu.tarrega.cat/emiservicio/catala/VisorITs/C2FFC14F6BA849C28517F9729353E7D8.asp?procedencia=Consulta",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920525",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BASES",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2024/197/202419708069.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-22T04:06:40.529Z"
+}
