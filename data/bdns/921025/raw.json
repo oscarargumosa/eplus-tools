@@ -1,0 +1,55 @@
+{
+  "id": 1122586,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VIGO",
+    "nivel3": "AYUNTAMIENTO DE VIGO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "921025",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 460000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases reguladoras de las subvenciones para el desarrollo de Fiestas Tradicionales, Patronales, Copatronales, Gastron?micas, Festivales Folcloricos y actividades socioculturales (periodo 2025-2026)",
+  "descripcionLeng": "Convocatoria e bases reguladoras das subvencions para o desenvolvemento de Festas tradicionais, patronais, copatronais, gastron?micas, festivais folcloircos e actividades socioculturais (periodo 2025-2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Lei 38/2003 de 17 de novembro, Xeral de Subvencions",
+  "urlBasesReguladoras": "https://sede.vigo.org/expedientes/avisos/aviso.jsp?id=4935&lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "O dia seguinte a publicacion do extracto da convocatoria no BOPPO",
+  "textFin": "15 dias habiles dendo o inicio do periodo de admision",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

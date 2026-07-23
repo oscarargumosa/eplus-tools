@@ -1,0 +1,78 @@
+{
+  "id": 1122448,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'EMPRESA I TREBALL  "
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920887",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 700000,
+  "mrr": false,
+  "descripcion": "Subvenciones a las entidades organizadoras de actividades feriales para mejorar la competitivdtad del sector fierial catalán 2027 (convocatoria anticipada)",
+  "descripcionLeng": "Subvencions a les entitats organitzadores d'activitats firals per millorar la competitivitat del sector firal català 2027 (convocatòria anticipada)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Orden EMT/186/2025, de 4 de noviembre, por la que se aprueban las bases reguladoras que deben regir la convocatoria de subvenciones a las entidades organizadoras de actividades feriales para mejorar la competitividad del sector ferial catalán",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1028836",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-23",
+  "fechaFinSolicitud": "2026-12-17",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498400,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "20260721_RESO_HC_signed_CA.pdf",
+      "long": 492438,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498399,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "convocatoria_v7_ca_es_tys (1).pdf",
+      "long": 173512,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

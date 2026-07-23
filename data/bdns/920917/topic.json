@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "920917",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE AVILA / DIPUTACIÓN PROVINCIAL DE ÁVILA",
+  "nuts_codes": [
+    "ES411"
+  ],
+  "nuts_primary": "ES411",
+  "title": "BASES REGULADORAS DE LA CONVOCATORIA DE CONCESIÓN DE\nSUBVENCIONES A ENTIDADES LOCALES DE MENOS DE 10.000 HABITANTES\nEN 2026 PARA LA FINANCIACIÓN DE ACTUACIONES DE MEJORA DE LAS\nINFRAESTRUCTURAS EN POLÍGONOS INDUSTRIALES DE LA PROVINCIA DE\nÁVILA",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-07-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920917",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.diputacionavila.es/bop/bops/2016/31-12-2016.pdf",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE DE PUBLICACIÓN EN BOP",
+  "text_fin": "15/11/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-23T04:05:29.785Z"
+}

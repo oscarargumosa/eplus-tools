@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "920895",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD POLITÉCNICA DE MADRID",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "Convocatoria destinada al estímulo del uso de la innovación, la puesta en el mercado de nuevos productos, procesos y servicios, y fomento del emprendimiento tecnológico: PREMIOS RISE A LA INNOVACIÓN Y EL EMPRENDIMIENTO TECNOLÓGICO",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-07-22",
+  "open_date": "2026-07-21",
+  "deadline": "2026-09-18",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 19200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://sede.upm.es/catalogo-de-procedimientos/registro-de-entrada-solicitud-general",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/920895",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo II",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.comunidad.madrid/transparencia/sites/default/files/orden_3972_bbrrconv0_enlace_con_anexos.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-23T04:05:29.779Z"
+}

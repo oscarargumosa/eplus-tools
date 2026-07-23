@@ -1,0 +1,96 @@
+{
+  "id": 1122401,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT SALVADOR DE GUARDIOLA",
+    "nivel3": "AYUNTAMIENTO DE SANT SALVADOR DE GUARDIOLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920840",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de ayudas escolares municipales en regimen de concurrencia competitiva a el alumnado en los niveles de enseñanza obligatoria y segundo ciclo de educación infantil escolarizados para el curso 2026-2027",
+  "descripcionLeng": "Convocatòria per la concessió d'ajuts escolars municipals en regim de concurrència competitiva a l'alumnat en els nivells d'ensenyaments obligatoris i segon cicle d'educacióinfantil escolaritzats pel curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprovación definitiva de las bases reguladoras especificas para la concessión de ayudas escolares municipales en regimen de concurrencia competitiva al alumnado en los niveles de enseñanza obligatoria i segundo ciclo de educación infantil",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3776455/aprovacio-definitiva-de-les-bases-reguladores-especifiques-per-a-la-concessio-d-ajuts-escolars-municipals-en-regim-de-concurrencia-competitiva-a-l-alumnat-en-els-nivells-d-ensenyaments-obligatoris-i-segon-cicle-d-educac",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-16",
+  "textInicio": "Desde el dia siguiente a la publicació en el BOPB",
+  "textFin": "Hasta el 16 de Septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498240,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas escolares curso 2026-2027.pdf",
+      "long": 241789,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498241,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "convocatori ajuts escolar curs 2026-2027.pdf",
+      "long": 232573,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498245,
+      "descripcion": "Instancia solicitud primaria",
+      "nombreFic": "Sol·licitud primària.pdf",
+      "long": 345008,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498248,
+      "descripcion": "Instancia solicitud secundaria",
+      "nombreFic": "Sol·licitud secundàri.pdf",
+      "long": 340140,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498250,
+      "descripcion": "Decreto convocatoria",
+      "nombreFic": "DECRET 2026-0388 Convocatoria.pdf",
+      "long": 951109,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

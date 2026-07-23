@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "917677",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALMERÍA / AYUNTAMIENTO DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "ACUERDO JGL 03/07/2026 DE APROBACIÓN DE LA CONVOCATORIA DE SUBVENCIONES EN MATERIA DE INTEGRACIÓN DE LAS PERSONAS CON PROBLEMAS DE DROGODEPENDENCIAS PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-07-07",
+  "open_date": "2026-07-27",
+  "deadline": "2026-08-17",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://almeriaciudad.es/integracion-social/participacion-ciudadana",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/917677",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "CONVOCATORIA DE SUBVENCIONES EN MATERIA DE INTEGRACIÓN DE LAS PERSONAS CON PROBLEMAS DE DROGODEPENDENCIAS PARA EL AÑO 2026",
+      "url": null
+    },
+    {
+      "label": "ACUERDO JGL 17/07/2026 DE RECTIFICACIÓN DEL ERROR MATERIAL ADVERTIDO EN EL PUNTO Nº 22 DEL ORDEN DEL DÍA DE LA SESIÓN DE JGL DE FECHA 03/07/2026",
+      "url": null
+    },
+    {
+      "label": "PLAN ESTRATÉGICO DE SUBVENCIONES DEL AYUNTAMIENTO DE ALMERÍA 2025-2027",
+      "url": null
+    },
+    {
+      "label": "ORDENANZA GENERAL DE SUBVENCIONES BOP Nº 142 24-07-2024",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://app.dipalme.org/bop/services/manager/edicto/2024/1995/anuncio.pdf",
+  "text_inicio": "AL DÍA SIGUIENTE HÁBIL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE ALMERÍA",
+  "text_fin": "15 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-23T04:05:28.628Z"
+}

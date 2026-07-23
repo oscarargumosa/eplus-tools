@@ -1,0 +1,104 @@
+{
+  "id": 1122312,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PORTO DO SON",
+    "nivel3": "AYUNTAMIENTO DE PORTO DO SON"
+  },
+  "sedeElectronica": "https://portodoson.sedelectronica.gal/info.0",
+  "codigoBDNS": "920751",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LAS BECAS PARA DEPORTISTAS INDIVIDUALES DEL AYUNTAMIENTO DE PORTO DO SON EN EL AÑO 2026",
+  "descripcionLeng": "CONVOCATORIA DE BECAS PARA DEPORTISTAS INDIVIDUAIS DO CONCELLO DE PORTO DO SON NO ANO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Modificación de la Ordenanza por la que se establecen las bases reguladoras de las becas para deportistas individuales del Ayuntamiento de Porto do Son",
+  "urlBasesReguladoras": "https://bop.dacoruna.gal/bopportal/publicado/2024/10/10/2024_0000007030.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del anuncio de la convocatoria en el BOP.",
+  "textFin": "Transcurridos 10 días hábiles desde el día siguiente a la publicación de la convocatoria en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498050,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Castellano_BDNS_Convocatoria concesion de becas a deportistas indivuduales 2026.pdf",
+      "long": 358591,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498051,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Galego_BDNS_Convocatoria concesion de becas a deportistas individuais 2026.pdf",
+      "long": 405485,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498057,
+      "descripcion": "ANEXO IV - ACEPTACION DA SUBVENCIÓN BECAS 2026",
+      "nombreFic": "ANEXO IV - ACEPTACION DA SUBVENCION BECAS 2026.pdf",
+      "long": 285715,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498053,
+      "descripcion": "ANEXO II - COMPETICIÓNS A VALORAR BECAS 2026",
+      "nombreFic": "ANEXO II - COMPETICIONS A VALORAR BECAS 2026.pdf",
+      "long": 143861,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498056,
+      "descripcion": "ANEXO III - DECLARACION RESPONSABLE BECAS 2026",
+      "nombreFic": "ANEXO III - DECLARACION RESPONSABLE BECAS 2026.pdf",
+      "long": 141472,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498052,
+      "descripcion": "ANEXO I - SOLICITUDE DE BECAS 2026",
+      "nombreFic": "ANEXO I - SOLICITUDE BECAS 2026.pdf",
+      "long": 149926,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

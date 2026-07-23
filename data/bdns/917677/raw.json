@@ -1,0 +1,96 @@
+{
+  "id": 1119238,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMERÍA",
+    "nivel3": "AYUNTAMIENTO DE ALMERÍA"
+  },
+  "sedeElectronica": "https://almeriaciudad.es/integracion-social/participacion-ciudadana",
+  "codigoBDNS": "917677",
+  "fechaRecepcion": "2026-07-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "ACUERDO JGL 03/07/2026 DE APROBACIÓN DE LA CONVOCATORIA DE SUBVENCIONES EN MATERIA DE INTEGRACIÓN DE LAS PERSONAS CON PROBLEMAS DE DROGODEPENDENCIAS PARA EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES EN MATERIA DE INTEGRACIÓN DE LAS PERSONAS CON PROBLEMAS DE DROGODEPENDENCIAS PARA EL AÑO 2026",
+  "urlBasesReguladoras": "https://app.dipalme.org/bop/services/manager/edicto/2024/1995/anuncio.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-27",
+  "fechaFinSolicitud": "2026-08-17",
+  "textInicio": "AL DÍA SIGUIENTE HÁBIL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE ALMERÍA",
+  "textFin": "15 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1489409,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01 Certificado_acuerdo.pdf",
+      "long": 480627,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1489416,
+      "descripcion": "CONVOCATORIA DE SUBVENCIONES EN MATERIA DE INTEGRACIÓN DE LAS PERSONAS CON PROBLEMAS DE DROGODEPENDENCIAS PARA EL AÑO 2026",
+      "nombreFic": "04 convocatoria__2026_drogd.pdf",
+      "long": 483229,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498173,
+      "descripcion": "ACUERDO JGL 17/07/2026 DE RECTIFICACIÓN DEL ERROR MATERIAL ADVERTIDO EN EL PUNTO Nº 22 DEL ORDEN DEL DÍA DE LA SESIÓN DE JGL DE FECHA 03/07/2026",
+      "nombreFic": "01 Certificado_acuerdo_Rectif. error pto 4.pdf",
+      "long": 285931,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1489418,
+      "descripcion": "PLAN ESTRATÉGICO DE SUBVENCIONES DEL AYUNTAMIENTO DE ALMERÍA 2025-2027",
+      "nombreFic": "03 PES 2025-2027 COMPLETO firmado.pdf",
+      "long": 1397062,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1489417,
+      "descripcion": "ORDENANZA GENERAL DE SUBVENCIONES BOP Nº 142 24-07-2024",
+      "nombreFic": "02 ORDENANZA GENERAL DE SUBVENCIONES.pdf",
+      "long": 855088,
+      "datMod": "2026-07-07",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

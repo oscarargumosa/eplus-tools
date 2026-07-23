@@ -1,0 +1,80 @@
+{
+  "id": 1122305,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CIEZA",
+    "nivel3": "AYUNTAMIENTO DE CIEZA"
+  },
+  "sedeElectronica": "https://cieza.sedipualba.es/tablondeanuncios",
+  "codigoBDNS": "920744",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA \nINCENTIVAR ACTIVIDADES VECINALES, FIESTAS DE BARRIOS Y OTRAS \nACTIVIDADES LÚDICAS, CULTURALES Y DEPORTIVAS.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA \nINCENTIVAR ACTIVIDADES VECINALES, FIESTAS DE BARRIOS Y OTRAS \nACTIVIDADES LÚDICAS, CULTURALES Y DEPORTIVAS.",
+  "urlBasesReguladoras": "https://cieza.sedipualba.es/tablondeanuncios/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al día siguiente de la publicación en el BORM",
+  "textFin": "10 días naturales de la publicación en el BORM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498030,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado JGL 13_07_2026 Nº12 - SEFYCU 4343912.pdf",
+      "long": 369219,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498033,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO I (2026).pdf",
+      "long": 84388,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498031,
+      "descripcion": "EXTRACTO BORM",
+      "nombreFic": "EXTRACTO BORM CONVOCATORIA SUBVENCIONES ASOCIACIONES VECINOS ACTIVIDADES BARRIOS  - SEFYCU 4355704.pdf",
+      "long": 381033,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

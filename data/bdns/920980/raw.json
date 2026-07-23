@@ -1,0 +1,78 @@
+{
+  "id": 1122541,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE MEDIO RURAL Y POLÍTICA AGRARIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920980",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3514000,
+  "mrr": false,
+  "descripcion": "Resolución de 22 de julio de 2026 de la Consejería de Medio Rural y Política Agraria por la que se aprueba convocatoria plurianual de subvenciones a inversiones en productos agroalimentarios e inversiones en tecnologías forestales",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Silvicultura y otras actividades forestales",
+      "codigo": "02.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Resolución de 7 de mayo de 2025, de la Consejería de Medio Rural y Política Agraria, por la que se aprueban las bases reguladoras que regirán la concesión de ayudas a las inversiones forestales productivas",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2025/05/14/2025-03840.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde día siguiente al de publicación del extracto",
+  "textFin": "1 mes desde día siguiente publi extrac",
+  "ayudaEstado": "SA.109374",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.109374",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 17 AYUDAS DESTINADAS A LAS INVERSIONES RELACIONADAS CON LA TRANSFORMACIÓN O COMERCIALIZACIÓN DE PRODUCTOS AGRÍCOLAS"
+    },
+    {
+      "descripcion": "ART. 50 AYUDAS DESTINADAS A LAS INVERSIONES EN TECNOLOGÍAS FORESTALES Y EN LA TRANSFORMACIÓN, MOVILIZACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS FORESTALES"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498595,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_convocatoria agroindustria y forestales.pdf",
+      "long": 1162898,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

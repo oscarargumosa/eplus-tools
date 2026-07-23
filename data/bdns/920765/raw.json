@@ -1,0 +1,64 @@
+{
+  "id": 1122326,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SUBSECRETARÍA - CONSELLERIA DE INNOVACIÓN, INDUSTRIA, COMERCIO Y TURISMO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920765",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 95000,
+  "mrr": false,
+  "descripcion": "Ayudas destinadas a apoyar la organización de eventos de estética y peluquería en la Comunitat Valenciana",
+  "descripcionLeng": "Ajudes destinades a donar suport a l'organització d'esdeveniments d'estètica i perruqueria en la Comunitat Valenciana",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Resolución de 21 de julio, de la Conselleria de Industria, Turismo, Innovación y Comercio, por la que se aprueban las bases reguladoras para la concesión de ayudas destinadas a la organización de eventos de estética y peluquería en la Comunitat Valenciana",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/inici/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-26",
+  "textInicio": "01/10/2026",
+  "textFin": "26/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498113,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026 07 21  Resolución AYUDAS EVENTOS ESTÉTICA Y PELUQUERÍA_2026_DEF_firmado.pdf",
+      "long": 376886,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

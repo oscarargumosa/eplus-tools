@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"RePowerEU\",\"Sustainable transport - general\",\"Co-programmed European Partnerships\",\"Sea vessels\",\"Ocean sustainability and blue economy\",\"marine\",\"demonstration\",\"underwater\",\"noise\",\"mitigation\",\"reduction\",\"shipping\",\"waterborne\",\"environment\"]"
+    "[\"RePowerEU\",\"Sea vessels\",\"Sustainable transport - general\",\"Co-programmed European Partnerships\",\"Ocean sustainability and blue economy\",\"mitigation\",\"demonstration\",\"reduction\",\"waterborne\",\"noise\",\"environment\",\"underwater\",\"shipping\",\"marine\"]"
   ],
   "crossCuttingPriorities": [
     "RePowerEU",
@@ -28,5 +28,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-13.json",
   "documents": [],
-  "fetchedAt": "2026-07-22T04:03:18.427Z"
+  "fetchedAt": "2026-07-23T04:02:06.190Z"
 }

@@ -1,0 +1,80 @@
+{
+  "id": 1122407,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMUSSAFES",
+    "nivel3": "AYUNTAMIENTO DE ALMUSSAFES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920846",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LAS AYUDAS MUNICIPALES DESTINADAS A LA FINANCIACIÓN DEL SERVICIO DE COMEDOR EN LOS COLEGIOS PÚBLICOS DE LA LOCALIDAD, BECAS DE COMEDOR 2026-2027",
+  "descripcionLeng": "BASES REGULADORES DE LES AJUDES MUNICIPALS DESTINADES AL FINANÇAMENT DEL SERVICI DE MENJADOR EN ELS COL·LEGIS PÚBLICS DE LA LOCALITAT, BEQUES DE MENJADOR 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS AYUDAS MUNICIPALES DESTINADAS A LA FINANCIACIÓN DEL SERVICIO DE COMEDOR EN LOS COLEGIOS PÚBLICOS DE LA LOCALIDAD, BECAS DE COMEDOR 2026-2027",
+  "urlBasesReguladoras": "https://wp.me/PanQjS-1hi",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Provincia.",
+  "textFin": "Hasta el 28 de agosto de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498267,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvención idiomas 2026 - SEFYCU 8302427.pdf",
+      "long": 471398,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498285,
+      "descripcion": "Resolución de la Alcaldía nº 2078/2026 de 10/07/2026",
+      "nombreFic": "Resolución Nº 2045 de 08_07_2026 _ Aprueba convocatoria subvenciones juventud ocio educativo 2026_ - SEGRA 1202445.pdf",
+      "long": 293536,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498282,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases subvenció idiomes 2026 - SEFYCU 8302464.pdf",
+      "long": 470529,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

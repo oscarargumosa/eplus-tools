@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "918777",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VISO DEL ALCOR, EL / AYUNTAMIENTO DE VISO DEL ALCOR, EL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA PÚBLICA DEL UNDÉCIMO CERTAMEN NACIONAL DE PINTURA JUAN ROLDÁN DEL AYUNTAMIENTO DE EL VISO DEL ALCOR",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-07-13",
+  "open_date": "2026-09-01",
+  "deadline": "2026-10-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/918777",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://elvisodelalcor.sedelectronica.es/preview-document/c5528836-da4a-45fb-b96c-972e401fbf3c/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-23T04:05:28.971Z"
+}

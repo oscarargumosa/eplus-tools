@@ -1,0 +1,72 @@
+{
+  "id": 1122511,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBINYANA",
+    "nivel3": "AYUNTAMIENTO DE ALBINYANA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "920950",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 300,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESION DE LOS PREMIOS DEL CONCURSO FOTOGRÁFICO A TRAVÉS DE INSTAGRAM 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DELS PREMIS DEL CONCURS FOTOGRÀFIC A TRAVÉS D'INSTAGRAM 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESION DE LOS PREMIOS DEL CONCURSO FOTOGRÁFICO A TRAVÉS DE INSTAGRAM 2026",
+  "urlBasesReguladoras": "http://www.albinyana.cat/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-31",
+  "fechaFinSolicitud": "2026-08-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498548,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ANNEX. CONVOCATÒRIA PER A LA CONCESSIÓ DELS PREMIS DEL CONCURS FOTOGRÀFIC A TRAVÉS D INSTAGRAM 2026..pdf",
+      "long": 192614,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    },
+    {
+      "id": 1498547,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANEXO. CONVOCATORIA PARA LA CONCESIÓN DE LOS PREMIOS DEL CONCURSO FOTOGRÁFICO A TRAVÉS DE INSTAGRAM 2026..pdf",
+      "long": 137908,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
