@@ -1,0 +1,72 @@
+{
+  "id": 1122789,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIUDELLOTS DE LA SELVA",
+    "nivel3": "AYUNTAMIENTO DE RIUDELLOTS DE LA SELVA"
+  },
+  "sedeElectronica": "https://seu-e.cat/ca/web/riudellotsdelaselva/tramits-i-gestions/-/tramits/tramit/14768628?p_auth=tkhfpFze",
+  "codigoBDNS": "921228",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "PREMIOS ESTUDIANTES. CONVOCATORIA AÑO 2026",
+  "descripcionLeng": "PREMIS ESTUDIANTS. CONVOCATÒRIA ANY 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de los premios de estudiantes",
+  "urlBasesReguladoras": "https://seu-e.cat/documents/28820/13612826/BASES+PREMIS+ESTUDIANTS.pdf/6c16450d-3905-499c-8b25-68dd5c7da248",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-15",
+  "textInicio": "Dia siguiente de la publicación del extracto convocatoria en el BOPG",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499355,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DEC CONVOCATORIA PREMIS ESTUDIANTS.pdf",
+      "long": 149641,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499379,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA PREMIOS ESTUDIANTES.pdf",
+      "long": 179687,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

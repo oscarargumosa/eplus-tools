@@ -1,0 +1,72 @@
+{
+  "id": 1122823,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT FELIU DE BUIXALLEU",
+    "nivel3": "AYUNTAMIENTO DE SANT FELIU DE BUIXALLEU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "921262",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2700,
+  "mrr": false,
+  "descripcion": "Subvenciones, en régimen de concurrencia pública competitiva, destinadas a la conciliación de la vida familiar y laboral con niños que cursen infantil y primaria en el municipio de Sant Feliu de Buixalleu.",
+  "descripcionLeng": "Subvencions, en règim de concurrència pública competitiva, destinades a la conciliació de la vida familiar i laboral amb infants que cursin infantil i primària del municipi de Sant Feliu de Buixalleu. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza general reguladora de las subvenciones del Ayuntamiento de Sant Feliu de Buixalleu que configura las bases generales de las líneas de subvenciones.",
+  "urlBasesReguladoras": "https://ssl4.ddgi.cat/bopV1/pdf/2026/118/202611805487.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días hábiles a contar desde el día siguiente de la publicación extracto BOP Girona",
+  "textFin": "15 días hábiles a contar desde el día siguiente de la publicación extracto BOP Girona",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499433,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci_convocatòria.pdf",
+      "long": 243455,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499434,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anunci_convocatòria.pdf",
+      "long": 243455,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

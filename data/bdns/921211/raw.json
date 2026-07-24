@@ -1,0 +1,64 @@
+{
+  "id": 1122772,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANCOMUNIDAD DE SERVICIOS SOCIALES MEJORADA-VELILLA",
+    "nivel3": "MANCOMUNIDAD DE SERVICIOS SOCIALES MEJORADA-VELILLA"
+  },
+  "sedeElectronica": "https://ssmejoradavelilla.sedelectronica.es/info.0",
+  "codigoBDNS": "921211",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 210000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 de ayudas dirigidas al apoyo educativo (libros de texto, material escolar y gastos de cooperativa) y comedor escolar durante el curso 2026-2027 en la Mancomunidad de Servicios Sociales Mejorada-Velilla.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las bases de ayudas relativas a la promoción de los derechos de la infancia.",
+  "urlBasesReguladoras": "https://bocm.es/boletin/CM_Orden_BOCM/2020/10/02/BOCM -20201002-104.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "7/9/2026",
+  "textFin": "18/9/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499307,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-0240 DE APROBACIÓN CONVOCATORIA 2026 AYUDAS APOYO EDUCATIVO Y COMEDOR ESCOLAR.pdf",
+      "long": 417542,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

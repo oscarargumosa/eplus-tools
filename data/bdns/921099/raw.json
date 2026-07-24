@@ -1,0 +1,96 @@
+{
+  "id": 1122660,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DÉNIA",
+    "nivel3": "AYUNTAMIENTO DE DÉNIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "921099",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Bases convocatoria pública de subvenciones del área de Educación dirigidas a las Asociaciones de Familias de Alumnos de Dénia 2026 bajo el procedimiento de concurrencia competitiva",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA PÚBLICA DE SUBVENCIONES DEL ÁREA DE EDUCACIÓN DIRIGIDAS A LAS ASOCIACIONES DE FAMILIAS DEL ALUMNADO DE DÉNIA 2026 BAJO EL PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA",
+  "urlBasesReguladoras": "www.sede.denia.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-27",
+  "fechaFinSolicitud": "2026-08-07",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499020,
+      "descripcion": "Anexo_IV_Modelo_proyecto.docx",
+      "nombreFic": "Anexo_IV_Modelo_proyecto.docx.DOCX",
+      "long": 12856,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499018,
+      "descripcion": "ANEXO_II_certificacion_representante_legal.docx",
+      "nombreFic": "ANEXO_II_certificacion_representante_legal.docx.DOCX",
+      "long": 40683,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499021,
+      "descripcion": "Anexo_I_solicitud.docx",
+      "nombreFic": "Anexo_I_solicitud.docx.DOCX",
+      "long": 49690,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499017,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases subvención AFA 2026.PDF",
+      "long": 109146,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499019,
+      "descripcion": "Anexo_III_declaracion_responsable.docx",
+      "nombreFic": "Anexo_III_declaracion_responsable.docx.DOCX",
+      "long": 14845,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

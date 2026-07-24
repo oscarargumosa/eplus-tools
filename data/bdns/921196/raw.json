@@ -1,0 +1,120 @@
+{
+  "id": 1122757,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "921196",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 46948893,
+  "mrr": false,
+  "descripcion": "bases que rexerán o procedemento de concesión de axudas a entidades privadas para o fomento da gratuidade da atención educativa dos nenos e nenas da Comunidade Autónoma de Galicia en escolas infantís 0-3 para o curso 2026/2027 e se procede á súa convocato",
+  "descripcionLeng": "galego-cstelán",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación preprimaria",
+      "codigo": "85.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Procedemento de concesión de axudas a entidades privadas para o fomento da gratuidade da atención educativa dos nenos e nenas da Comunidade Autónoma de Galicia en escolas infantís 0-3 para o curso 2026/2027 e se procede á súa convocatoria (código de proce",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-28",
+  "fechaFinSolicitud": "2027-10-30",
+  "textInicio": "día seguinte publicacion DOG",
+  "textFin": "1 mes publicación DOG ou  1 mes desde autorizacion ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499260,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Orde gratuidade_EEprivadas_2026_DOG_es_20260723_120657.pdf",
+      "long": 321370,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499263,
+      "descripcion": "Anexo I-castelán",
+      "nombreFic": "BS420C-C_20260723_120957.pdf",
+      "long": 123683,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499262,
+      "descripcion": "Anexo I-galego",
+      "nombreFic": "BS420C-G_20260723_120921.pdf",
+      "long": 122990,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499267,
+      "descripcion": "Anexo III-castelán",
+      "nombreFic": "ANEXO III BS420C_es_20260723_121350.pdf",
+      "long": 207800,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499264,
+      "descripcion": "Anexo II-galego",
+      "nombreFic": "BS420C_AnexoII-G_20260723_121033.pdf",
+      "long": 98639,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499265,
+      "descripcion": "Anexo II castelán",
+      "nombreFic": "BS420C_AnexoII-C_20260723_121234.pdf",
+      "long": 99111,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499266,
+      "descripcion": "Anexo III-galego",
+      "nombreFic": "ANEXO III BS420C_gal _20260723_121313.pdf",
+      "long": 227931,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499261,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Orde gratuidade_EEprivadas_2026_DOG_gal_20260723_120755.pdf",
+      "long": 309433,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

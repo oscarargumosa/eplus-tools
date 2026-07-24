@@ -1,0 +1,99 @@
+{
+  "id": 1122679,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ANDOAIN",
+    "nivel3": "AYUNTAMIENTO DE ANDOAIN"
+  },
+  "sedeElectronica": "www.andoain.eus",
+  "codigoBDNS": "921118",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones a clubes y/o entidades deportivas u otras entidades privadas sin ánimo de lucro de Andoain para el desarrollo de sus actividades anuales ordinarias para el ejercicio 2026",
+  "descripcionLeng": "Andoaingo klubei edo/eta kirol-erakundeei edo irabazi asmorik gabeko beste erakunde pribatu batzuei bere urteko ohiko jarduerak aurrera eramateko 2026 ekitaldiko diru laguntza deialdia.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA EL PROCEDIMIENTO DE CONCESION DE SUBVENCIONES AL DEPORTE",
+  "urlBasesReguladoras": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2024/05/15/c2403360.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de la publicación del anuncio de la convocatoria en el B.O.G.",
+  "textFin": "11 septiembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499002,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DEIALDIAREN LABURPENA 3 sinatuta.pdf",
+      "long": 171163,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499063,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DEIALDIAREN LABURPENA 3 sinatuta.pdf",
+      "long": 171163,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499066,
+      "descripcion": "EREDUAK EUSKERAZ",
+      "nombreFic": "EREDUAK EUSKERAZ.pdf",
+      "long": 258166,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499065,
+      "descripcion": "MODELOS CASTELLANO",
+      "nombreFic": "MODELOS CASTELLANO.pdf",
+      "long": 273317,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499005,
+      "descripcion": "Convocatoria",
+      "nombreFic": "DEIALDIA OSOA 4 sinatuta.pdf",
+      "long": 223128,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

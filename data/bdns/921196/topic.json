@@ -1,0 +1,89 @@
+{
+  "source": "bdns",
+  "source_id": "921196",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "bases que rexerán o procedemento de concesión de axudas a entidades privadas para o fomento da gratuidade da atención educativa dos nenos e nenas da Comunidade Autónoma de Galicia en escolas infantís 0-3 para o curso 2026/2027 e se procede á súa convocato",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-23",
+  "open_date": "2026-07-28",
+  "deadline": "2027-10-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 46948893,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.1",
+      "descripcion": "Educación preprimaria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/921196",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo I-castelán",
+      "url": null
+    },
+    {
+      "label": "Anexo I-galego",
+      "url": null
+    },
+    {
+      "label": "Anexo III-castelán",
+      "url": null
+    },
+    {
+      "label": "Anexo II-galego",
+      "url": null
+    },
+    {
+      "label": "Anexo II castelán",
+      "url": null
+    },
+    {
+      "label": "Anexo III-galego",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia",
+  "text_inicio": "día seguinte publicacion DOG",
+  "text_fin": "1 mes publicación DOG ou  1 mes desde autorizacion ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-24T04:08:33.002Z"
+}

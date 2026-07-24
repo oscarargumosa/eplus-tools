@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "921281",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE AVILA / DIPUTACIÓN PROVINCIAL DE ÁVILA",
+  "nuts_codes": [
+    "ES411"
+  ],
+  "nuts_primary": "ES411",
+  "title": "BASES DE CONVOCATORIA DE SUBVENCIÓN MEDIANTE RÉGIMEN DE CONCURRENCIA COMPETITIVA DIRIGIDA A AYUNTAMIENTOS DE LA PROVINCIA DE ÁVILA PARA LA REALIZACIÓN DE ACTIVIDADES DE\nANIMACIÓN COMUNITARIA 2026",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-07-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 250000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/921281",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.diputacionavila.es/bop/bops/2016/31-12-2016.pdf",
+  "text_inicio": " A PARTIR DEL DIA SIGUIENTE EN EL BOP",
+  "text_fin": "10 DIAS HABILES DESDE EL INICIO",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-24T04:08:33.022Z"
+}

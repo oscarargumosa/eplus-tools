@@ -1,0 +1,79 @@
+{
+  "id": 1122799,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN FORAL DE BIZKAIA",
+    "nivel3": "DIPUTACIÓN FORAL DE BIZKAIA"
+  },
+  "sedeElectronica": "https://www.ebizkaia.eus/es/catalogo-de-tramites-y-servicios",
+  "codigoBDNS": "921238",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 240000,
+  "mrr": false,
+  "descripcion": "DECRETO FORAL 74/2026, de 23 de julio, de Diputación Foral de Bizkaia, por el que se establecen ayudas de apoyo al sector primario, con el fin de paliar los daños producidos por el ciervo, corzo y el jabalí en el Territorio Histórico de Bizkaia",
+  "descripcionLeng": "Bizkaiko Foru Aldundiaren 74/2026, FORU DEKRETUA uztalilaren 23koa, Bizkaiko Lurralde Historikoan oreinak, orkatzek eta basurdeek eragindako kalteak direla-eta lehen sektoreari laguntzeko dirulaguntzak ezartzen dituena",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "DECRETO FORAL de la Diputación Foral de Bizkaia, por el que se establecen ayudas de apoyo al sector primario, con el fin de paliar los daños producidos por el ciervo, corzo y el jabalí en el Territorio Histórico de Bizkaia",
+  "urlBasesReguladoras": "HTTPS://WWW.BIZKAIA.EUS/ES/BOB",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-28",
+  "fechaFinSolicitud": "2026-09-09",
+  "textInicio": "El plazo de presentación de solicitudes será de 30 días, contados a partir del día siguiente al de l",
+  "textFin": "El plazo de presentación de solicitudes será de 30 días, contados a partir del día siguiente al de l",
+  "ayudaEstado": "SA.111111",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.111111",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 37 AYUDAS DESTINADAS A REPARAR LOS DAÑOS CAUSADOS POR DESASTRES NATURALES EN EL SECTOR AGRÍCOLA"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499400,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "07 DF subvenciones daños Jabali 2026_EKIN 2_1784281080167_20260717_113810.pdf",
+      "long": 745229,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499399,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "07 DF subvenciones daños Jabali 2026_EKIN 2_1784281080167_20260717_113810.pdf",
+      "long": 745229,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

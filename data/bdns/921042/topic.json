@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "921042",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÀ DE XIVERT / AYUNTAMIENTO DE ALCALÀ DE XIVERT",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "BASES REGULADORAS DE LA CONVOCATORIA DE LA CAMPAÑA “BONOS MATERIAL ESCOLAR” DE APOYO A LA ECONOMIA LOCAL MEDIANTE PROCEDIMIENTO DE CONCESIÓN DE SUBVENCIONES PARA LA REALIZACIÓN DE ACCIONES DE PROMOCIÓN DE VENTAS",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-07-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/921042",
+  "documents": [
+    {
+      "label": "Certificado aprobación bases",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://alcaladexivert.sedelectronica.es/preview-document/e5307947-0282-4b9c-aebf-f4915e1b508c",
+  "text_inicio": "A la firma del convenio",
+  "text_fin": "10 días hábiles contados a partir del día siguiente a la publicación en el BOP de Castellón",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-24T04:08:32.973Z"
+}

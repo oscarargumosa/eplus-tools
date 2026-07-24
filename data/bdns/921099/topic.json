@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "921099",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DÉNIA / AYUNTAMIENTO DE DÉNIA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Bases convocatoria pública de subvenciones del área de Educación dirigidas a las Asociaciones de Familias de Alumnos de Dénia 2026 bajo el procedimiento de concurrencia competitiva",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-23",
+  "open_date": "2026-07-27",
+  "deadline": "2026-08-07",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/921099",
+  "documents": [
+    {
+      "label": "Anexo_IV_Modelo_proyecto.docx",
+      "url": null
+    },
+    {
+      "label": "ANEXO_II_certificacion_representante_legal.docx",
+      "url": null
+    },
+    {
+      "label": "Anexo_I_solicitud.docx",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo_III_declaracion_responsable.docx",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.sede.denia.es",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-24T04:08:32.985Z"
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "921228",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / RIUDELLOTS DE LA SELVA / AYUNTAMIENTO DE RIUDELLOTS DE LA SELVA",
+  "nuts_codes": [
+    "ES512"
+  ],
+  "nuts_primary": "ES512",
+  "title": "PREMIOS ESTUDIANTES. CONVOCATORIA AÑO 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-07-23",
+  "open_date": null,
+  "deadline": "2026-09-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://seu-e.cat/ca/web/riudellotsdelaselva/tramits-i-gestions/-/tramits/tramit/14768628?p_auth=tkhfpFze",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/921228",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://seu-e.cat/documents/28820/13612826/BASES+PREMIS+ESTUDIANTS.pdf/6c16450d-3905-499c-8b25-68dd5c7da248",
+  "text_inicio": "Dia siguiente de la publicación del extracto convocatoria en el BOPG",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-07-24T04:08:33.011Z"
+}

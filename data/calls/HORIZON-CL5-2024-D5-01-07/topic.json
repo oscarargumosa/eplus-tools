@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,7 +17,7 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Sustainable transport - general\",\"Digital Agenda\",\"trajectory optimisation\",\"climate neutrality\",\"climate sensitive regions\",\"non-CO2 emissions\",\"aviation\"]"
+    "[\"Digital Agenda\",\"Sustainable transport - general\",\"trajectory optimisation\",\"climate sensitive regions\",\"aviation\",\"non-CO2 emissions\",\"climate neutrality\"]"
   ],
   "crossCuttingPriorities": [
     "DigitalAgenda"
@@ -26,5 +26,5 @@
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-07.json",
   "documents": [],
-  "fetchedAt": "2026-07-23T04:02:06.407Z"
+  "fetchedAt": "2026-07-24T04:05:09.265Z"
 }

@@ -1,0 +1,72 @@
+{
+  "id": 1122869,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONTINYENT",
+    "nivel3": "AYUNTAMIENTO DE ONTINYENT"
+  },
+  "sedeElectronica": "https://ontinyent.sedipualba.es/",
+  "codigoBDNS": "921308",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA  SUBVENCIONES A ENTIDADES DEL MUNICIPIO DE ONTINYENT EN EL  ÁMBITO CULTURAL, FESTIVO Y TRADICIONAL  2026",
+  "descripcionLeng": "CONVOCATÒRIA SUBVENCIONS A ENTITATS DEL MUNICIPI D'ONTINYENT EN L'ÀMBIT  CULTURAL, FESTIU I TRADICIONAL 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DE LAS BASES QUE HAN DE REGIR  LA CONCESIÓN DE SUBVENCIONES A ENTIDADES DEL MUNICIPIO EN El ÁMBITO CULTURAL, FESTIVO Y TRADICIONAL",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026/07417&lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACIÓN EN EL BOP DE VALENCIA",
+  "textFin": "30 DIAS HABILES DESPUÉS DE SU PUBLICACIÓN EN EL BOP DE VALENCIA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499543,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATÒRIA SUBVENCIONS ÀMBIT CULTURAL, FESTIU I TRADICIONAL 2026 DILIGÈNCIA - SEFYCU 8446698.pdf",
+      "long": 343375,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499542,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA  SUBVENCIONES ÁMBITO CULTURAL, FESTIVO Y TRADICIONAL CASTELLANO DILIGENCIA - SEFYCU 8446755.pdf",
+      "long": 341447,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

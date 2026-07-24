@@ -1,0 +1,88 @@
+{
+  "id": 1122422,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ANDÚJAR",
+    "nivel3": "AYUNTAMIENTO DE ANDÚJAR"
+  },
+  "sedeElectronica": "https://sede.andujar.es/",
+  "codigoBDNS": "920861",
+  "fechaRecepcion": "2026-07-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS Y CONVOCATORIA BONO AYUDAS A LA NATALIDAD EN EL MUNICIPIO DE ANDÚJAR",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES616 - Jaén"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS Y CONVOCATORIA BONO DE AYUDAS NATALIDAD EN EL MUNICIPIO DE ANDÚJAR",
+  "urlBasesReguladoras": "https://www.andujar.es/fileadmin/pdfs/normas_y_acuerdos/ ordenanza_general_de_las_bases_reguladoras_de_la_concesi on_de_subvenciones_por_el_ayuntamiento_de_andujar.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-09-15",
+  "textInicio": "DESDE PUBLICACION EN BOLETIN OFICIAL DE LA PROVINCIA DE JAEN ",
+  "textFin": "15 SEPTIEMBRE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498897,
+      "descripcion": "RESOLUCIÓN APROBACIÓN BASES CONVOCATORIA",
+      "nombreFic": "RESOLUCIÓN APROBACIÓN BASES AYUDAS A LA NATALIDAD.pdf",
+      "long": 347793,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1498284,
+      "descripcion": "ANEXO III SOLICITUD ADHESIÓN",
+      "nombreFic": "ANEXO III SOLICITUD ADHESION CAMPANA BONO AYUDA A LA NATALIDAD.pdf",
+      "long": 313813,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1498280,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES REGULADORAS Y CONVOCATORIA BONO DE AYUDAS NATALIDAD FISCALIZADAS.pdf",
+      "long": 612737,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1498281,
+      "descripcion": "ANEXO II SOLICITUD SUBVENCIÓN",
+      "nombreFic": "ANEXO II SOLICITUD SUBVENCION BONO AYUDA A LA NATALIDAD.pdf",
+      "long": 333183,
+      "datMod": "2026-07-22",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

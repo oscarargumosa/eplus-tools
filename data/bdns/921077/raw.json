@@ -1,0 +1,64 @@
+{
+  "id": 1122638,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BORRIOL",
+    "nivel3": "AYUNTAMIENTO DE BORRIOL"
+  },
+  "sedeElectronica": "https://borriol.sedelectronica.es/info.0",
+  "codigoBDNS": "921077",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES DEL AYUNTAMIENTO DE BORRIOL PARA JORNADAS DE CONVIVENCIA Y PARA ACTIVIDADES SOCIALES Y CULTURALES EN NÚCLEOS DE POBLACIÓN DISPERSOS. AÑO 2026",
+  "descripcionLeng": "SUBVENCIONS DE L'AJUNTAMENT DE BORRIOL PER A JORNADES DE CONVIVÈNCIA I PER A ACTIVITATS SOCIALS I CULTURALS EN NUCLIS DE POBLACIÓ DISPERSOS. ANY 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES DEL AYUNTAMIENTO DE BORRIOL PARA JORNADAS DE CONVIVENCIA Y PARA ACTIVIDADES SOCIALES Y CULTURALES EN NÚCLEOS DE POBLACIÓN DISPERSOS. AÑO 2026",
+  "urlBasesReguladoras": "https://borriol.sedelectronica.es/transparency/f7740ba9-f8a7-4118-96cd-075e09c771e1/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACION EN EL BOP ",
+  "textFin": "TRANSCURRIDOS 20 DIAS NATURALES",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498919,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260722_Resolución_DECRET 2026-1430 [Resolución PR_2026_1671 - Actuación genérica con fiscalización].pdf",
+      "long": 977857,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

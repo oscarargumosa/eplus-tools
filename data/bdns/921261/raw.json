@@ -1,0 +1,76 @@
+{
+  "id": 1122822,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTRILLÓN",
+    "nivel3": "AYUNTAMIENTO DE CASTRILLÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "921261",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A ASOCIACIONES DE MADRES Y PADRES DEL MUNICIPIO DE CASTRILLÓN PARA LA REALIZACIÓN DE\nACTIVIDADES, 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE CASTRILLÓN Y DE SUS ORGANISMOS AUTÓNOMOS\nY ENTIDADES DEPENDIENTES",
+  "urlBasesReguladoras": "ayto-castrillon.es/attachments/article/287/bopa_20060220.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del anuncio en el Bopa",
+  "textFin": "Veinte días naturales contados a partir de la publicación del anuncio",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1499449,
+      "descripcion": "Bases Reguladoras de la Convocatoria",
+      "nombreFic": "Convocatoria y anexos - SEFYCU 127356.pdf",
+      "long": 730856,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    },
+    {
+      "id": 1499440,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado acuerdo JGL- Punto 5- Subvenciones Asociaciones Padres y Madres 2026 - SEFYCU 172015.pdf",
+      "long": 311068,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

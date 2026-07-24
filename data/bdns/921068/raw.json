@@ -1,0 +1,68 @@
+{
+  "id": 1122629,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE HACIENDA",
+    "nivel3": "CONSORCIO DE LA CIUDAD DE CUENCA"
+  },
+  "sedeElectronica": "https://consorciodecuenca.sedipualba.es/carpetaciudadana/tramite.aspx?idtramite=17813",
+  "codigoBDNS": "921068",
+  "fechaRecepcion": "2026-07-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 17919.74,
+  "mrr": false,
+  "descripcion": "Convocatoria de la subvención directa en especie para la realización del proyecto de “Consolidación del muro en la Calle de los Tintes con el túnel de la Calle de la Moneda” de la ciudad de Cuenca, en el ejercicio 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES423 - Cuenca"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "Bases reguladoras de la subvención directa en especie para la realización del proyecto de “Consolidación del muro en la Calle de los Tintes con el túnel de la Calle de la Moneda” de la ciudad de Cuenca, en el ejercicio 2026.",
+  "urlBasesReguladoras": "https://consorciodecuenca.sedipualba.es/firma/documento.aspx?csv=YWAAAC9C7KFA2ZA7QTR4&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en el BOE",
+  "textFin": "20 días naturales después de la convocatoria BOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1498922,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA - 2026-04-SNE.pdf",
+      "long": 769280,
+      "datMod": "2026-07-23",
+      "datPublicacion": "2026-07-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
