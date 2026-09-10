@@ -1,0 +1,72 @@
+{
+  "id": 1129917,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "REDONDELA",
+    "nivel3": "AYUNTAMIENTO DE REDONDELA"
+  },
+  "sedeElectronica": "https://redondela.sedelectronica.gal/info.0",
+  "codigoBDNS": "928356",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA LA REALIZACIÓN DE ACTIVIDADES DE PARTICIPACIÓN CIUDADANA DEL CONCELLO DE REDONDELA, AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BASES Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA LA REALIZACIÓN DE ACTIVIDADES DE PARTICIPACIÓN CIUDADANA DEL CONCELLO DE REDONDELA, AÑO 2026",
+  "urlBasesReguladoras": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/09/08/2026066385",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del Extracto en el BOP",
+  "textFin": "Diez días hábiles contados desde la fecha de publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1518956,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260908_Outros_Publicación BOP bases Actividades 08_09_2026-1-26.pdf",
+      "long": 431314,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1518955,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260908_Outros_Publicación BOP bases Actividades 08_09_2026-27-53.pdf",
+      "long": 511744,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

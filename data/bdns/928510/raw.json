@@ -1,0 +1,80 @@
+{
+  "id": 1130071,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SALINES, SES",
+    "nivel3": "AYUNTAMIENTO DE SALINES, SES"
+  },
+  "sedeElectronica": "https://seu.ajsessalines.net/",
+  "codigoBDNS": "928510",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Concesión de ayudas a la movilidad destinadas a colaborar con los gastos derivados del transporte para estudiantes para el curso 2026-2027 dirigidas a los alumnos empadronados en el Municipio de Ses Salines que asisten a centros de Mallorca para cursar ni",
+  "descripcionLeng": "Concessió d’ajuts a la mobilitat destinades a col·laborar amb les despeses derivades del transport per a estudiants per al curs 2026-2027 dirigides als alumnes empadronats al Municipi de Ses Salines que assisteixen a centres de Mallorca  per a cursar nive",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES532 - Mallorca"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Concesión de ayudas a la movilidad destinadas a colaborar con los gastos derivados del transporte para estudiantes para el curso 2026-2027 dirigidas a los alumnos empadronados en el Municipio de Ses Salines que asisten a centros de Mallorca para cursar ni",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2026/12317/seccion-iii-otras-disposiciones-y-actos-administra/472",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-08-21",
+  "fechaFinSolicitud": "2026-09-18",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519298,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "solicitud castellano becas para el transporte.pdf",
+      "long": 287350,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519297,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO CASTELLANO BOIB BECAS PARA EL TRANSPORTE.pdf",
+      "long": 261943,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519295,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ANUNCI CATALÀ BOIB BEQUES PER AL TRANSPORT.pdf",
+      "long": 271791,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

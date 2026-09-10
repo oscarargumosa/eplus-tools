@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "928531",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Subvenciones de fomento de la Economía Social. Programa 5º. Organizaciones Empresariales de la Economía Social.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 842500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "V",
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/web/pagina?IDCONTENIDO=696&IDTIPO=240&RASTRO=c$m40288",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928531",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO IX_2026_RELACION_FACTURAS ORGANIZACIONES",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/#/home/anuncio/14-06-2025/2797",
+  "text_inicio": "Al día siguiente de la publicación del extracto",
+  "text_fin": "Un mes desde la publicación del extracto de la convocatoria en el BORM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.913Z"
+}

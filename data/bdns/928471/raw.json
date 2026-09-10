@@ -1,0 +1,72 @@
+{
+  "id": 1130032,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GODELLA",
+    "nivel3": "AYUNTAMIENTO DE GODELLA"
+  },
+  "sedeElectronica": "sede.godella.es",
+  "codigoBDNS": "928471",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Convocatoria bases ayudas al transporte de estudiantes ejercicio 2026-2027",
+  "descripcionLeng": "Convocatòria bases ajudes al transport d'estudiantes exercici 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Ley 38/2003, de 17 de noviembre, General de Subvenciones (LGS)\nReglamento General de subvenciones, aprobado por el Real Decreto  887/2006, de 21 de julio (RGS).\nLey 7/1985, de 2 de abril, Reguladora de las Bases de Régimen Local (LBRL).",
+  "urlBasesReguladoras": "sede.godella.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-28",
+  "fechaFinSolicitud": "2026-10-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519209,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "3. Resolución Nº 1033 de 11_08_2026 _Resolución aprobación bases ayudas al transporte para estudiantes 2026-2027_ - SEGRA 1209436.pdf",
+      "long": 421229,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519208,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "3. Resolución Nº 1033 de 11_08_2026 _Resolución aprobación bases ayudas al transporte para estudiantes 2026-2027_ - SEGRA 1209436.pdf",
+      "long": 421229,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

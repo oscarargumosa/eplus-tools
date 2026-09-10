@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "928364",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DE GUADAÍRA / AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Acuerdo de 31 de julio de 2026, de la Junta de Gobierno Local, sobre aprobación de convocatoria para la concesión de subvenciones destinadas a promover la modernización digital y la mejora de la competitividad de las pymes en el ámbito local.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://ciudadalcala.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928364",
+  "documents": [
+    {
+      "label": "Certificado de aprobación en JGL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/D ocumentos-Anuncios-en-PDF/firmado-1679443235124-final- 984675434-137.pdf",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto en el BOP.",
+  "text_fin": "Hasta 20 días hábiles desde el día de la publicación.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.874Z"
+}

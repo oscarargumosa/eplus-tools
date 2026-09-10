@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "925903",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MERCADAL, ES / AYUNTAMIENTO DE ES MERCADAL",
+  "nuts_codes": [
+    "ES533"
+  ],
+  "nuts_primary": "ES533",
+  "title": "Convocatoria del Ayuntamiento de Es Mercadal y bases del Premio de Literatura infantil de Es Mercadal y Fornells 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-08-21",
+  "open_date": null,
+  "deadline": "2026-10-17",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "www.esmercadal.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/925903",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://boib.caib.es/pdf/2005189/mp113.pdf",
+  "text_inicio": "desde el día siguiente de la publicación BOIB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 219572,
+      "titulo": "Extracto de la Resolución de Alcaldía número 942 del día 21 de agosto de 2026, por la que se aprueban la convocatoria y las bases del Premio de Literatura Infantil de Es Mercadal y Fornells 2026.",
+      "tituloLeng": "Extracte de la Resolució de Batlia número 942 de 21 d’agost de 2026, per la qual s’aproven la convocatòria i les bases del Premi de literatura infantil des Mercadal i Fornells 2026.",
+      "texto": "<p>Primero. Beneficiarios:</p><p>Todas las personas que lo deseen de forma individual o colectiva, sin ninguna limitación de nacionalidad, vecindario o edad. Las obras podrán ser cuentos o relatos breves dirigidos al público infantil, de tema libre tendrán que ser inéditas y no haber optado a ninguna otra convocatoria literaria. Las obres se tendrán que presentar en lengua catalana.</p><p>Segundo. Finalidad:</p><p>Fomentar la creación literaria en lengua catalana en ámbito infantil, para un público de entre 7 y 11 años.</p><p>Tercero. Bases reguladoras:</p><p>Las bases de la convocatoria y la Ordenanza general reguladora de la concesión de subvenciones, aprobada inicialmente por el Pleno del Ayuntamiento de Es Mercadal de día 11 de octubre de 2005 i publicada la aprobación definitiva y el texto íntegro en el BOIB nº. 189, de 17 de diciembre de 2005.</p><p>Cuarto. Importe:</p><p>El gasto que implica esta convocatoria será atendida con cargo a la aplicación presupuestaria 40.334.48100 del Presupuesto General de 2026, con un importe máximo conjunto de 1.000,00 euros.</p><p>Quinto. Plazo de presentación de solicitudes:</p><p>Hasta el día 17 de octubre de 2026 </p>",
+      "textoLeng": "<p>Primer. Beneficiaris:</p><p>Totes les persones que ho desitgin de forma individual o col·lectiva, sense cap limitació de nacionalitat, veïnatge o edat. Les obres podran ser contes o relats breus adreçats al públic infantil, de tema lliure i hauran de ser inèdites i no haver optat a cap altre convocatòria literària. Les obres s’hauran de presentar en llengua catalana.</p><p>Segon. Finalitat:</p><p>Fomentar la creació literària en llengua catalana en àmbit infantil, per a un públic d’entre 7 i 11 anys. </p><p>Tercer. Bases reguladores:</p><p>Les bases de la convocatòria i l'Ordenança general reguladora de la concessió de subvencions, aprovada inicialment pel Ple de l'Ajuntament des Mercadal de dia 11 d'octubre de 2005 i publicada l'aprovació definitiva i el text íntegre en el BOIB núm. 189, de 17 de desembre de 2005.</p><p>Quart. Import:</p><p>La despesa que implica aquesta convocatòria, serà atesa amb càrrec a l’aplicació pressupostària 40.334.48100 del Pressupost General de 2026, amb un import màxim conjunt de 1.000,00 euros.</p><p>Cinquè. Termini de presentació de sol·licituds:</p><p>Fins al dia 17 d’octubre de 2026 </p>",
+      "url": "https://www.caib.es/eboibfront/es/2026/12323/719471/extracto-de-la-resolucion-de-alcaldia-numero-942-d",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-09-03"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.118Z"
+}

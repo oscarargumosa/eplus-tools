@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "928413",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CIUDAD AUTÓNOMA DE MELILLA / CONSEJERÍA DE EDUCACIÓN, JUVENTUD Y DEPORTES",
+  "nuts_codes": [
+    "ES64"
+  ],
+  "nuts_primary": "ES64",
+  "title": "CONVOCATORIA DE SUBVENCIONES INSTITUCIONALES POR PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA PARA LAS BECAS DESTINADAS A DEPORTISTAS MELILLENSES DENOMINADAS “MELILLA CIUDAD DEL DEPORTE” PARA EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Infraestructuras",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": "2026-09-12",
+  "deadline": "2026-09-26",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 90000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": "SEDE.MELILLA.ES",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928413",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "htpps://bomemelilla.es/bome/BOME-BX-2025-21/artículo/103",
+  "text_inicio": "AL DÍA SIGUIENTE DE SU PUBLICACIÓN EN EL BOLETÍN OFICIAL DE LA CIUDAD",
+  "text_fin": "QUINCE DÍAS NATURALES DESDE EL DÍA SIGIUIENTE DE SU PUBLICACIÓN ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.886Z"
+}

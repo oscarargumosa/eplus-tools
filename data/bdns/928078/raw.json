@@ -1,0 +1,80 @@
+{
+  "id": 1129639,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "SERVICIO CÁNTABRO DE EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928078",
+  "fechaRecepcion": "2026-09-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3055000,
+  "mrr": false,
+  "descripcion": "Orden IND/44/2026, de 8 de septiembre, de convocatoria en 2026 y normas de procedimiento para el otorgamiento de subvenciones destinadas al desarrollo de programas de formación, dentro de la iniciativa de oferta formativa del SCE para personas ocupadas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden TMS/368/2019, de 28 de marzo, por la que se desarrolla el Real Decreto 694/2017, de 3 de julio, por el que se desarrolla la Ley 30/2015, de 9 de septiembre, por la que se regula el Sistema de Formación Profesional para el Empleo en el ámbito laboral",
+  "urlBasesReguladoras": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.boe.es/buscar/pdf/2019/BOE-A-2019-4715-consolidado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-14",
+  "fechaFinSolicitud": "2026-09-28",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519036,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "44 Orden_FPE_Ocup_Convocatoria_2026_a_la_firma.report.pdf",
+      "long": 809426,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519042,
+      "descripcion": "Anexo IV",
+      "nombreFic": "44 ANEXO-IV-07-09-2026.report.pdf",
+      "long": 1316114,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519037,
+      "descripcion": "Anexos I-III",
+      "nombreFic": "44 Anexo_I-III_Orden_ocupados_2026 (1).report.pdf",
+      "long": 272123,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,88 @@
+{
+  "id": 1129976,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA COLOMA DE GRAMENET",
+    "nivel3": "AYUNTAMIENTO DE SANTA COLOMA DE GRAMENET"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928415",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 726600,
+  "mrr": false,
+  "descripcion": "Convocatoria para el otorgamiento de ayudas para la adquisición de libros de texto en el programa ?Reutilización de libros de texto y proyectos de innovación educativa? curso 2026-2027.",
+  "descripcionLeng": "Convocatòria per  l?atorgament d?ajudes per l?adquisició de llibres de text dins el programa ?Reutilització de llibres de text i projectes d?innovació educativa? curs 2026-2027.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación primaria",
+      "codigo": "85.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA AYUDAS PARA LA ADQUISICION DE LIBROS DE TEXTO. PROGRAMA \"REUTILITZACIÓ DE LLIBRES DE TEXT CURS 23/24\".",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-20977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-10",
+  "fechaFinSolicitud": "2026-09-20",
+  "textInicio": null,
+  "textFin": "10 dies hàbils, a comptar des de l?endemà de la publicació de l?anunci de convocatòria en el BOPB.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519087,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto_Convocatoria._Reutilización_libros_26-27_(castellà).pdf",
+      "long": 253335,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519090,
+      "descripcion": "Convocatòria per l?atorgament d?ajudes per l?adquisició de llibres de text dins el programa ?Reutilització de llibres de text i projectes d?innovació educativa?  curs 2026-2027",
+      "nombreFic": "Convocatòria._Reutilització_llibres_26-27_(català).pdf",
+      "long": 246256,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519089,
+      "descripcion": "Convocatoria para otorgar ayudas para la adquisición de libros de texto dentro del programa ?Reutilización de libros de texto y proyectos de innovación educativa? curso 2026-2027",
+      "nombreFic": "Convocatoria._Reutilización_libros_26-27_(castellà).pdf",
+      "long": 244384,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519088,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Extracte_Convocatòria._Reutilització_llibres_26-27_(català).pdf",
+      "long": 254883,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

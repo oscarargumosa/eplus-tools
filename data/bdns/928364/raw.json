@@ -1,0 +1,72 @@
+{
+  "id": 1129925,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÁ DE GUADAÍRA",
+    "nivel3": "AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA"
+  },
+  "sedeElectronica": "https://ciudadalcala.sedelectronica.es/",
+  "codigoBDNS": "928364",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 31 de julio de 2026, de la Junta de Gobierno Local, sobre aprobación de convocatoria para la concesión de subvenciones destinadas a promover la modernización digital y la mejora de la competitividad de las pymes en el ámbito local.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones destinadas a promover la modernización digital y la mejora de la competitividad de las pymes en al ámbito local.",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/D ocumentos-Anuncios-en-PDF/firmado-1679443235124-final- 984675434-137.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de la publicación del extracto en el BOP.",
+  "textFin": "Hasta 20 días hábiles desde el día de la publicación.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1518979,
+      "descripcion": "Certificado de aprobación en JGL",
+      "nombreFic": "CERTIFICADO JGL 2026-0631 JGL 31-07-26. Convocatoria subvenciones modernización digital.pdf",
+      "long": 357578,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1518978,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026 subvenciones modernización digital pymes ámbito local.pdf",
+      "long": 1973623,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

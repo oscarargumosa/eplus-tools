@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "928510",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SALINES, SES / AYUNTAMIENTO DE SALINES, SES",
+  "nuts_codes": [
+    "ES532"
+  ],
+  "nuts_primary": "ES532",
+  "title": "Concesión de ayudas a la movilidad destinadas a colaborar con los gastos derivados del transporte para estudiantes para el curso 2026-2027 dirigidas a los alumnos empadronados en el Municipio de Ses Salines que asisten a centros de Mallorca para cursar ni",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": "2026-08-21",
+  "deadline": "2026-09-18",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://seu.ajsessalines.net/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928510",
+  "documents": [
+    {
+      "label": "SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12317/seccion-iii-otras-disposiciones-y-actos-administra/472",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.906Z"
+}

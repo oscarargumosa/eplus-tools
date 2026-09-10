@@ -1,0 +1,67 @@
+{
+  "source": "bdns",
+  "source_id": "928499",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE IGUALDAD / INSTITUTO DE LAS MUJERES",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 6 de agosto de 2026, de la Dirección del Instituto de las Mujeres, por la que se convoca primera edición de los Premios de Comunicación Feminista Soledad Gallego-Díaz y Premio Lilí Álvarez.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    }
+  ],
+  "apply_url": "Sede electrónica de Igualdad: https://igualdad.sede.gog.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928499",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Modelo de autorización de los/las autores/as",
+      "url": null
+    },
+    {
+      "label": "Formulario de inscripción",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-5117 y https://www.boe.es/buscar/doc.php?id=BOE-A-2007-15578",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "text_fin": "A los 15 días naturales, contados a partir del siguiente a la publicación en el BOE, hasta las 15h d",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.903Z"
+}

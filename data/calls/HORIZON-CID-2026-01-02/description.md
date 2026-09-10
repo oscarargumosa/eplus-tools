@@ -29,7 +29,7 @@ Proposals are expected to include a clear go/no go moment ahead of the contracti
 
 Taking into account that the Clean Industrial Deal focuses on clean tech and energy-intensive industry decarbonisation, projects funded under this topic will be encouraged to develop synergies and coordinate with similar or complementary projects funded under the topics HORIZON-CID-2026-01-02: R&I in Support of the Clean Industrial Deal: Decarbonisation of Energy Intensive Industries and HORIZON-CID-2027-01-02: R&I in Support of the Clean Industrial Deal: Decarbonisation of Energy Intensive Industries under this call, as well as with relevant projects funded under relevant European Partnerships (including e.g. the Clean Hydrogen Joint Undertaking and the Clean Energy Transition Partnership).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 6 and achieve TRL 8 by the end of the project.
 

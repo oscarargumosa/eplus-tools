@@ -1,0 +1,64 @@
+{
+  "id": 1129992,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NUEVA CARTEYA",
+    "nivel3": "AYUNTAMIENTO DE NUEVA CARTEYA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928431",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Ayuda municipal «Cheque Bebé» de apoyo a la natalidad y la adopción, dirigida a las familias de los nacidos en el municipio  durante el año 2026, así como a las familias que hayan adoptado a un menor durante dicho año, siempre que reúnan los requisitos",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES  REGULADORAS Y CONVOCATORIA DE AYUDA MUNICIPAL CHEQUE BEBÉ  DE APOYO A LA NATALIDAD Y LA ADOPCIÓN. AÑO 2026.",
+  "urlBasesReguladoras": "https://sede.eprinsa.es/nuevacar",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a su publicación en el Boletín Oficial de la Provincia",
+  "textFin": "15-02-2027",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519134,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES CHEQUE BEBE 2026.pdf",
+      "long": 185531,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

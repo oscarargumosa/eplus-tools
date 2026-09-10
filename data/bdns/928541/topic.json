@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "928541",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE ZARAGOZA / DIPUTACIÓN PROVINCIAL DE ZARAGOZA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA PÚBLICA PARA LA CONCESIÓN DE SUBVENCIONES A PROYECTOS DE DESARROLLO Y SOLIDARIDAD INTERNACIONAL EN EL EJERCICIO 2026-2027",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3400000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928541",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dpz.es/BOPZ/obtenerContenidoEdicto.do?idEdicto=834288&numBop=128&fechaPub=jueves 6 de junio de 2024",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACIÓN EN BOPZ",
+  "text_fin": "VEINTE DÍAS HÁBILES",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.916Z"
+}

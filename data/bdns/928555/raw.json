@@ -1,0 +1,72 @@
+{
+  "id": 1130116,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIBERA DE ARRIBA",
+    "nivel3": "AYUNTAMIENTO DE RIBERA DE ARRIBA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928555",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4900,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE 21 DE AGOSTO DE 2026, DE LA ALCALDÍA DEL AYUNTAMIENTO DE RIBERA DE ARRIBA, POR LA QUE SE APRUEBA LA CONVOCATORIA DE AYUDAS DE EMERGENCIA SOCIAL PARA FAMILIAS CON MENORES DURANTE EL AÑO 2026 EN RIBERA DE ARRIBA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE AYUDAS DE EMERGENCIA SOCIAL PARA FAMILIAS CON MENORES 2026 EN RIBERA DE ARRIBA",
+  "urlBasesReguladoras": "https://www.ayto-riberadearriba.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles a contar desde el día siguiente al de la publicación del extracto en el BOPA",
+  "textFin": "31/12/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519394,
+      "descripcion": "BASES REGULADORAS",
+      "nombreFic": "BASES REGULADORAS.pdf",
+      "long": 216310,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519381,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 453.2026.pdf",
+      "long": 472597,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

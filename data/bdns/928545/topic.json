@@ -1,0 +1,80 @@
+{
+  "source": "bdns",
+  "source_id": "928545",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PAÍS VASCO / DEPARTAMENTO DE ECONOMÍA, TRABAJO Y EMPLEO",
+  "nuts_codes": [
+    "ES21"
+  ],
+  "nuts_primary": "ES21",
+  "title": "AYUDAS INTERCOOP. EMPRESARIAL EN ECONOMÍA SOCIAL 26/27 - MINIMIS",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": "2026-09-09",
+  "deadline": "2026-10-08",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 83500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://www.euskadi.eus/servicios/1011713",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928545",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2025005538",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 220559,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026003830&BOPV_HIDE_CALENDAR=true",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-09-08"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.917Z"
+}

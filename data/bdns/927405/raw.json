@@ -1,0 +1,72 @@
+{
+  "id": 1128966,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES"
+  },
+  "sedeElectronica": "https:/sede.gva.es",
+  "codigoBDNS": "927405",
+  "fechaRecepcion": "2026-09-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 de subvenciones para la financiación de proyectos de intervención social en poblaciones altamente vulnerables y en extrema situación de exclusión social en la Comunidad Valenciana S2051 y S2090",
+  "descripcionLeng": "CONVOCATÒRIA 2026  Subvencions per al finançament de projectes d’intervenció social en poblacions altament vulnerables i en situació extrema d’exclusió social a la Comunitat Valenciana S2051 y S2090",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad",
+      "codigo": "88.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones para la financiación de proyectos de intervención social en poblaciones altamente vulnerables y en extrema situación de exclusión social.",
+  "urlBasesReguladoras": "no disponible",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Plazo de 1 mes desde la fecha publicación convocatoria",
+  "textFin": "Plazo de 1 mes desde la fecha publicación convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519318,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "00_BASES SINHOGAR 2_20260821_131916_firmado.pdf",
+      "long": 432374,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1519317,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "00_BASES SINHOGAR 1_20260821_131916_firmado.pdf",
+      "long": 405164,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,60 @@
+{
+  "source": "bdns",
+  "source_id": "928597",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / DIRECCIÓN GENERAL DE TRABAJO Y SALUD LABORAL",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "AYUDAS OBSERVATORIOS IGUALDAD, CONCILIACIÓN I ABSENTISMO LABORAL",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": "2026-01-01",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 366000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.1",
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales"
+    },
+    {
+      "codigo": "94.2",
+      "descripcion": "Actividades sindicales"
+    }
+  ],
+  "apply_url": "www.caib.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928597",
+  "documents": [],
+  "bases_reguladoras_url": "https://boib.caib.es//pdf/2005073/mp41.pdf",
+  "text_inicio": "15 DÍES HÀBILS",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.924Z"
+}

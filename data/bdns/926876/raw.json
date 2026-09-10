@@ -1,0 +1,84 @@
+{
+  "id": 1128437,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FERROL",
+    "nivel3": "AYUNTAMIENTO DE FERROL"
+  },
+  "sedeElectronica": "www.ferrol.gal",
+  "codigoBDNS": "926876",
+  "fechaRecepcion": "2026-08-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24000,
+  "mrr": false,
+  "descripcion": "Subvenciones para el desarrollo de actividades o eventos de fiestas patronales de barrios y parroquias en el ejercicio 2026 en el Ayuntamiento de Ferrol",
+  "descripcionLeng": "Subvencións para o desenvolvemento de actividades ou eventos de festas patronais de barrios e parroquias no exercicio 2026 no Concello de Ferrol",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas y convocatoria para la concesión de subvenciones para el desarrollo de actividades o eventos de fiestas patronales de barrios y parroquias en el ejercicio 2026 en el Ayuntamiento de Ferrol",
+  "urlBasesReguladoras": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2026/08/18/2026_0000005385.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-14",
+  "fechaFinSolicitud": "2026-10-01",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1514152,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "bop- publicación bases castellano.pdf",
+      "long": 632019,
+      "datMod": "2026-08-28",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1514148,
+      "descripcion": "Plan estratégico de subvenciones 2024-2026",
+      "nombreFic": "PES_2024-2026_ANUNCIO_BOP_23-02-2024.pdf",
+      "long": 658397,
+      "datMod": "2026-08-28",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1514146,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BOP- PUBLICACIÓN BASES- 18-8-2026.pdf",
+      "long": 224913,
+      "datMod": "2026-08-28",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

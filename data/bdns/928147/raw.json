@@ -1,0 +1,80 @@
+{
+  "id": 1129708,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE HUELVA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE HUELVA"
+  },
+  "sedeElectronica": "https://sede.diphuelva.es/opencms/opencms/sede/index.html",
+  "codigoBDNS": "928147",
+  "fechaRecepcion": "2026-09-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 107754.05,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA EXTRAORDINARIA DE SUBVENCIONES DE LA DIPUTACIÓN PROVINCIAL DE HUELVA PARA EVENTOS DEPORTIVOS EN LA PROVINCIA DE HUELVA AÑO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES615 - Huelva"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Ordenanza General de subvenciones de la Diputación Provincial de Huelva (BOP n.º 136 de 18 de julio de 2016)",
+  "urlBasesReguladoras": "http://s2.diphuelva.es/portalweb/bop/boletines/20160718-1.pdf#page=3",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-11",
+  "fechaFinSolicitud": "2026-09-25",
+  "textInicio": "Al día siguiente de su publicación en el B.O.P. de Huelva",
+  "textFin": "10 días hábiles después",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1518332,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2.3.2026_EDH2_CONVOCATORIA_def260726.FDO.pdf",
+      "long": 485160,
+      "datMod": "2026-09-07",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1518336,
+      "descripcion": "RESOLUCIÓN DE APROBACIÓN",
+      "nombreFic": "RESOL_35002JAN_COG00430.pdf",
+      "long": 99589,
+      "datMod": "2026-09-07",
+      "datPublicacion": "2026-09-09"
+    },
+    {
+      "id": 1518334,
+      "descripcion": "ANEXO VII  FORMULARIO DE AUTORIZACIÓN/OPOSICIÓN A LA VERIFICACIÓN DE DATOS MEDIANTE EL USO DE SISTEMAS DE INTERMEDIACIÓN",
+      "nombreFic": "ANEXO VII. FORMULARIO INTERMEDIACIÓN DATOS.pdf",
+      "long": 170384,
+      "datMod": "2026-09-07",
+      "datPublicacion": "2026-09-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

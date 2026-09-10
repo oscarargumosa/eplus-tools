@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "928426",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DE GUADAÍRA / AYUNTAMIENTO DE ALCALÁ DE GUADAÍRA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Convocatoria del concurso de pintura al aire libre Emilio Sánchez Perrier, convocado por el Ayuntamiento de Alcalá de Guadaíra. Edición 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": "2026-10-17",
+  "deadline": "2026-10-25",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://www.alcaladeguadaira.es/sede-electronica",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928426",
+  "documents": [
+    {
+      "label": "Certificado de JGL aprobación de convocatoria concurso de Pintura al Aire Libre edición 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-de-la-convocatoria-de-subvenciones-para-ayuda-a-la-conservacion-restauracion-de-bienes-muebles-de-propiedad-privada/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-10T04:05:43.892Z"
+}

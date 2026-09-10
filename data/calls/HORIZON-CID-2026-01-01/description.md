@@ -28,7 +28,7 @@ Taking into account that the Clean Industrial Deal focuses on clean tech and dec
 
 This topic implements the co-programmed European partnerships Processes4Planet and Clean Steel.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 6 and achieve TRL 7 to 8 by the end of the project – see General Annex B.
 
