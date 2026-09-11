@@ -1,0 +1,80 @@
+{
+  "id": 1130189,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILANOVA I LA GELTRÚ",
+    "nivel3": "AYUNTAMIENTO DE VILANOVA I LA GELTRÚ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928628",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 142000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES EN RÉGIMEN CONCURRENCIA COMPETITIVA DIRIGIDAS A LOS CENTROS DOCENTES SOSTENIDOS CON FONDOS PÚBLICOS DE EDUCACIÓN INFANTIL DE SEGUNDO CICLO Y PRIMARIA Y EDUCACIÓN SECUNDARIA OBLIGATORIA DE VILANOVA I LA GELTRÚ AYUDAS ESCOLARIDAD",
+  "descripcionLeng": "CONVOCATÒRIA SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA ADREÇADES ALS CENTRES DOCENTS SOSTINGUTS AMB FONS PÚBLICS D’EDUCACIÓ INFANTIL DE SEGON CICLE I PRIMÀRIA I EDUCACIÓ SECUNDÀRIA OBLIGATÒRIA DE VILANOVA I LA GELTRÚ AJUDES ESCOLARITAT",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases de subvenciones dirigidas a los centros docentes sostenidos con fondos públicos de educación infantil de segundo ciclo y primaria y educación secundaria obligatoria de Vilanova i la Geltrú",
+  "urlBasesReguladoras": "www.imet.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-28",
+  "fechaFinSolicitud": "2026-10-09",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519589,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria castellà.pdf",
+      "long": 327806,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519591,
+      "descripcion": "CERTIFICADO DE ACUERDO",
+      "nombreFic": "Certificat_d_acord-45.pdf",
+      "long": 1156638,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519590,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria català.pdf",
+      "long": 405188,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

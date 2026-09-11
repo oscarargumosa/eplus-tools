@@ -1,0 +1,56 @@
+{
+  "source": "bdns",
+  "source_id": "928889",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / SERVICIO DE OCUPACIÓN DE LAS ISLAS BALEARES (SOIB)",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "CONVOCATORIA SOIB FORMACIÓN CON COMPROMISO DE CONTRATACIÓN 2026-2028",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": "2026-07-24",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 700000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928889",
+  "documents": [],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12305/718098/resolucion-de-la-consejera-de-trabajo-funcion-publ",
+  "text_inicio": "al dia siguiente de la publicación",
+  "text_fin": "10 de setembre de 2027",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.374Z"
+}

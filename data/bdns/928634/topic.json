@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "928634",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / URDULIZ / AYUNTAMIENTO DE URDULIZ",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "SUBVENCIONES CON DESTINO A PARTICULARES QUE PRACTICAN DEPORTE EN LAS INSTALACIONES DEL POLIDEPORTIVO KIROLDEGIA DE URDULIZ  EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": "2026-12-16",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https://www.urduliz.eus/es-ES/Ayuntamiento/Subvenciones",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928634",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "modelo solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.urduliz.eus/es-ES/Ayuntamiento/Normativa/ordenanzas_municipales/20240916-ordenanza-reguladora-sistema-subvenciones-destino-particulares-practican-deporte-polideportivo-urduliz-cas.pd",
+  "text_inicio": "El plazo de presentación de solicitudes comenzará el día siguiente a la publicación en BOB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.325Z"
+}

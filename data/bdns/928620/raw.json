@@ -1,0 +1,72 @@
+{
+  "id": 1130181,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FUENLABRADA",
+    "nivel3": "AYUNTAMIENTO DE FUENLABRADA"
+  },
+  "sedeElectronica": "www.ayto-fuenlabrada.es",
+  "codigoBDNS": "928620",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14100,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DEL VII CONCURSO DE ESCAPARATISMO NAVIDEÑO DE FUENLABRADA. EJERCICIO 2026. (JGL DE FECHA  04/09/2026 (PTO. 22)",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA DE SUBVENCIONES DEL AYUNTAMIENTO DE FUENLABRADA",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2018/02/21/BOCM-20180221-42.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-13",
+  "fechaFinSolicitud": "2026-11-15",
+  "textInicio": "El plazo de inscripción será desde el 13 de octubre de 2026",
+  "textFin": "hasta el 15 de noviembre de\n2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519588,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "22.- Certificados JGL 260904.report.pdf",
+      "long": 693116,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

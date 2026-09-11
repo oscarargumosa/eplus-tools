@@ -1,0 +1,104 @@
+{
+  "id": 1130157,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE TENERIFE",
+    "nivel3": "CABILDO INSULAR DE TENERIFE"
+  },
+  "sedeElectronica": "https://sede.tenerife.es",
+  "codigoBDNS": "928596",
+  "fechaRecepcion": "2026-09-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1350000,
+  "mrr": false,
+  "descripcion": "Convocatoria de becas para alumnado matriculado en centros de Educación Infantil en Tenerife de 0 a 3 años, curso 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Becas para alumnado matriculado en centros de Educación Infantil en Tenerife de 0 a 3 años, curso 2026-2027",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP S/C Tenerife",
+  "textFin": "30/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519516,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES-CONV MODIFICADA CHE 26-27.pdf",
+      "long": 975716,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519517,
+      "descripcion": "Solicitud",
+      "nombreFic": "Formulario.pdf",
+      "long": 66995,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519521,
+      "descripcion": "aceptación llamamiento lista reserva",
+      "nombreFic": "ACEPTACION LISTA DE RESERVA 26-27.pdf",
+      "long": 414764,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519519,
+      "descripcion": "Certificado de matrícula",
+      "nombreFic": "CERTIFICADO MATRÍCULA CHE 26-27 (BORRADOR).pdf",
+      "long": 422480,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519520,
+      "descripcion": "desistimiento, renuncia o baja",
+      "nombreFic": "DESISTIMIENTO, RENUNCIA O BAJA 26-27.pdf",
+      "long": 411867,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519518,
+      "descripcion": "declaración miembros UF y autorización consulta datos",
+      "nombreFic": "DECLARACION U.F. Y AUTORIZACION RENTA 26-27.pdf",
+      "long": 585678,
+      "datMod": "2026-09-09",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1130265,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DODRO",
+    "nivel3": "AYUNTAMIENTO DE DODRO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928704",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LA ALCALDÍA NÚMERO 512/2026 DEL 04/09/2026 POR LA QUE SE CONVOCAN LAS AYUDAS A LA ESCOLARIDAD PARA EL CURSO ESCOLAR 2026-2027",
+  "descripcionLeng": "RESOLUCIÓN DA ALCALDÍA NÚMERO 512/2026 DO 04/09/2026 POLA QUE SE CONVOCAN AS AXUDAS Á ESCOLARIDADE PARA O CURSO ESCOLAR 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de la convocatoria pública de concesión en régimen de concorrencia competitiva de ayudas a la escolaridad para el curso escolar 2026-2027",
+  "urlBasesReguladoras": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2026/09/09/2026_0000005819.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "En diez días hábiles a contar desde la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519699,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio aprobación bases y convocatoria ayudas escolaridad 2026-2027.pdf",
+      "long": 299375,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519700,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anuncio aprobación bases e convocatoria axudas escolaridade 2026-2027.pdf",
+      "long": 155233,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,67 @@
+{
+  "source": "bdns",
+  "source_id": "928720",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO / INSTITUTO PARA LA TRANSICIÓN JUSTA, O.A.",
+  "nuts_codes": [
+    "ES12",
+    "ES24",
+    "ES41"
+  ],
+  "nuts_primary": "ES12",
+  "title": "RD 341/2021, de 18 de mayo, por el que se regula la concesión directa de ayudas para la restauración ambiental de zonas afectadas por la transición energética en el marco del PRTR de proyectos en zonas degradadas a causa de la minería del carbón",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928720",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-8270",
+  "text_inicio": "2021-2023",
+  "text_fin": "2021-2023",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": true,
+  "fetchedAt": "2026-09-11T04:05:24.335Z"
+}

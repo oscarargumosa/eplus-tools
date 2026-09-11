@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "928821",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE POLÍTICA SOCIAL E IGUALDAD",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "ORDE do 4 de setembro de 2026 pola que se regulan as bases que rexerán o procedemento de concesión de axudas para o funcionamento e gratuidade da atención educativa  das escolas infantís 0-3 e puntos de atención á infancia de titularidade municipal para o",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": "2026-09-23",
+  "deadline": "2026-10-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 8278584,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.1",
+      "descripcion": "Educación preprimaria"
+    }
+  ],
+  "apply_url": "Si",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928821",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo II castelán",
+      "url": null
+    },
+    {
+      "label": "Anexo II galego",
+      "url": null
+    },
+    {
+      "label": "Anexo I castelán",
+      "url": null
+    },
+    {
+      "label": "Anexo I galego",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.xunta.gal/diario-oficial-galicia/",
+  "text_inicio": "6º día hábil seguinte á publicación DOG",
+  "text_fin": "E un mes o en todo caso 30/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.360Z"
+}

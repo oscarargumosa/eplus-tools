@@ -1,0 +1,72 @@
+{
+  "id": 1130165,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT DE LA PRESIDÈNCIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928604",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 19182.06,
+  "mrr": false,
+  "descripcion": "Becas de colaboración para la formación práctica y especializada de titulados superiores graduados en derecho en el ámbito del Gabinete Jurídico durante el 2027",
+  "descripcionLeng": "Beques de collaboració per a la formació pràctica i especialitzada de titulats superiors graduats en dret en l'àmbit del Gabinet Jurídic durant l'any 2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades jurídicas",
+      "codigo": "69.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Modifica la Orden PRE/150/2023, de 7 de junio, aprueban las bases becas de colaboración para la formación práctica y especializada de personas graduadas en Derecho en el ámbito del Gabinete Jurídico de la Generalitat de Catalunya",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1049218",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "15 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519549,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Res_Beques_GJ_2027_def_signed_CA.pdf",
+      "long": 651338,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519547,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ES_Res_Beques_GJ_2027_def.pdf",
+      "long": 237857,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

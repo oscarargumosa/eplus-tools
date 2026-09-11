@@ -1,0 +1,80 @@
+{
+  "id": 1130195,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URDULIZ",
+    "nivel3": "AYUNTAMIENTO DE URDULIZ"
+  },
+  "sedeElectronica": "https://www.urduliz.eus/es-ES/Ayuntamiento/Subvenciones",
+  "codigoBDNS": "928634",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES CON DESTINO A PARTICULARES QUE PRACTICAN DEPORTE EN LAS INSTALACIONES DEL POLIDEPORTIVO KIROLDEGIA DE URDULIZ  EJERCICIO 2026",
+  "descripcionLeng": "URDULIZKO KIROLDEGIKO INSTALAZIOETAN KIROLA EGITEN DUTEN PARTIKULARRENTZAKO 2026ko EKITALDIRAKO DIRULAGUNTZAK ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza reguladora del sistema de subvenciones con destino a particulares que practican deporte en las instalaciones del polideportivo Kiroldegia de Urduliz",
+  "urlBasesReguladoras": "https://www.urduliz.eus/es-ES/Ayuntamiento/Normativa/ordenanzas_municipales/20240916-ordenanza-reguladora-sistema-subvenciones-destino-particulares-practican-deporte-polideportivo-urduliz-cas.pd",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-16",
+  "textInicio": "El plazo de presentación de solicitudes comenzará el día siguiente a la publicación en BOB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519602,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto de convocatoria- sinatuta.pdf",
+      "long": 1363877,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519605,
+      "descripcion": "modelo solicitud",
+      "nombreFic": "eskaera orria KIROLDEGI.pdf",
+      "long": 576973,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519603,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Decreto de convocatoria- sinatuta.pdf",
+      "long": 1363877,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

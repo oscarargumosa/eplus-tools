@@ -1,0 +1,60 @@
+{
+  "source": "bdns",
+  "source_id": "928888",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / DIRECCIÓN GENERAL DE UNIVERSIDADES, INVESTIGACIÓN Y ENSEÑANZAS ARTÍSTICAS SUPERIORES",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "Ayudas para la contratación de personal técnico de apoyo a la investigación de las IB (TEC 2026)",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": "2026-09-16",
+  "deadline": "2026-10-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3026182.5,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928888",
+  "documents": [],
+  "bases_reguladoras_url": "http://boib.caib.es/pdf/2010025/mp30.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.374Z"
+}

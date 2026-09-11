@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "928599",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CASTILLA-LA MANCHA / DIRECCIÓN GENERAL DE ECONOMÍA CIRCULAR",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "Resolución de la Dirección General de Economía Circular y Agenda 2030, por la que se convocan para el año 2026, las subvenciones destinadas al desarrollo e implementación de la Agenda 2030 y ODS",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 270000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": "www.jccm.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928599",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/07/29/pdf/2026_5627.pdf&tipo=rutaDocm",
+  "text_inicio": "desde el día siguiente al de la publicación de la convocatoria en DOCM",
+  "text_fin": "15 días hábiles siguientes al de la publicación de convocatoria en el DOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.313Z"
+}

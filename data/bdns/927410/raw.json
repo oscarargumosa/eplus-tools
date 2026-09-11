@@ -1,0 +1,72 @@
+{
+  "id": 1128971,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE  FAMILIA Y SERVICIOS SOCIALES"
+  },
+  "sedeElectronica": "https:/sede.gva.es",
+  "codigoBDNS": "927410",
+  "fechaRecepcion": "2026-09-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2300000,
+  "mrr": false,
+  "descripcion": "Resolución: Bases reguladoras de subvenciones para la financiación de proyectos en materia de inclusión y desarrollo comunitario y se convoca la subvención correspondiente al ejercicio 2026",
+  "descripcionLeng": "Resolució: Bases reguladores de subvencions per al finançament de projectes en matèria d'inclusió i desenvolupament comunitari i es convoca la subvenció corresponent a l'exercici 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Resolución: Bases reguladoras de subvenciones para la financiación de proyectos en materia de inclusión y desarrollo comunitario y se convoca la subvención correspondiente al ejercicio 2026.",
+  "urlBasesReguladoras": "no d",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Plazo de 10 días hábiles desde el siguiente a la publicación en el DOGV del extracto",
+  "textFin": "Plazo de 10 días hábiles desde el siguiente a la publicación en el DOGV del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519529,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "1.Resolucin_comunitaria_2026_26-006805_orig_tr_firmado.pdf",
+      "long": 321974,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519528,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "1.Resolución comunitaria 2026_firmado.pdf",
+      "long": 309081,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

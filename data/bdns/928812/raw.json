@@ -1,0 +1,78 @@
+{
+  "id": 1130373,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALLS",
+    "nivel3": "AYUNTAMIENTO DE VALLS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928812",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA LA REHABILITACION I RECUPERACIÓN DE EDIFICIOS DENTRO DEL ÀMBITO DEL BARRIO ANTIGUO",
+  "descripcionLeng": "CONVOCATÒRIA DE SUBVENCIONS PER A LA REHABILITACIÓ I RECUPERACIÓ D'EDIFICIS DINS L'ÀMBIT DEL BARRI ANTIC",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de construcción especializada",
+      "codigo": "43.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES PARA LA REHABILITACION I RECUPERACIÓN DE EDIFICIOS DENTRO DEL ÀMBITO DEL BARRIO ANTIGUO",
+  "urlBasesReguladoras": "https://www.diputaciodetarragona.cat/ebop/index.php?op=dwn&tipus=i&data=20200914&anyp=2020&num=06215&v=i",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-18",
+  "fechaFinSolicitud": "2026-12-18",
+  "textInicio": null,
+  "textFin": "El plazo de solicitudes será hasta tres meses a contar desde la publicación de la convocatoria en el",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519931,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Acord JGL convocatoria.pdf",
+      "long": 114049,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519930,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Acuerdo JGL convocatoria.pdf",
+      "long": 388266,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

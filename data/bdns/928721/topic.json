@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "928721",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SAUZAL, EL / AYUNTAMIENTO DE SAUZAL, EL",
+  "nuts_codes": [
+    "ES709"
+  ],
+  "nuts_primary": "ES709",
+  "title": "CONVOCATORIA PÚBLICA DE CONCESIÓN DE AYUDAS AL ALQUILER (2ª CONVOCATORIA) DEL AYUNTAMIENTO DE EL SAUZAL",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 162113.88,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "(https://elsauzal.sedelectronica.es/)",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928721",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.elsauzal.es/wp-content/uploads/2024/04/Anuncio-B.O.P.-47-2024-17-04-2024-de-Aprobacion-Definitiva-de-la-Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "Día siguiente a la publicación de la Convocatoria en el Boletín Oficial de la Provincia",
+  "text_fin": "10 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.336Z"
+}

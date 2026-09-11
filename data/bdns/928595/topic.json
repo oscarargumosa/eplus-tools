@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "928595",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE TENERIFE / CABILDO INSULAR DE TENERIFE",
+  "nuts_codes": [
+    "ES709"
+  ],
+  "nuts_primary": "ES709",
+  "title": "Convocatoria de la línea de Becas en especie para la inmersión lingüística de alumnado de Educación Secundaria Obligatoria y de Bachillerato, período 2027/2028/2029",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3878063,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.tenerife.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928595",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "acreditación representación",
+      "url": null
+    },
+    {
+      "label": "Aceptación llamamiento lista reserva",
+      "url": null
+    },
+    {
+      "label": "Desistimiento, renuncia o baja",
+      "url": null
+    },
+    {
+      "label": "Declaración unidad familiar y autorización IRPF",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP S/C Tenerife",
+  "text_fin": "13/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.311Z"
+}

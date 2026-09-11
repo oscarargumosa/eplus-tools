@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "928863",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MALPICA DE BERGANTIÑOS / AYUNTAMIENTO DE MALPICA DE BERGANTIÑOS",
+  "nuts_codes": [
+    "ES111"
+  ],
+  "nuts_primary": "ES111",
+  "title": "AYUDAS A LAS ENTIDADES SIN ÁNIMO DE LUCRO PARA EL FOMENTO DE LA CULTURA EN EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https:// sede.malpicadebergantinos.es/gl/index.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928863",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2026/09/08/2026_0000005797.html",
+  "text_inicio": "Desde el día siguiente a la publicación de este extracto",
+  "text_fin": "Transcurridos 20 días naturales, contados desde el día siguiente al de publicación de este extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.369Z"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "928857",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANARIAS / INSTITUTO CANARIO DE LA VIVIENDA",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "BONO ALQUILER JOVEN PARA FACILITAR DISFRUTE DE VIVIENDA O HABITACIÓN",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": "2026-09-15",
+  "deadline": "2026-10-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 12878000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "68.2",
+      "descripcion": "Alquiler de bienes inmobiliarios por cuenta propia"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928857",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-802",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.368Z"
+}

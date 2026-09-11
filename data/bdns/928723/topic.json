@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "928723",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILANOVA I LA GELTRÚ / AYUNTAMIENTO DE VILANOVA I LA GELTRÚ",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA SUBVENCIONES RÉGIMEN CONCURRENCIA COMPETITIVA DIRIGIDAS A CENTROS DOCENTES SOSTENIDOS CON FONDOS PÚBLICOS DE EDUCACIÓN INFANTIL DE SEGUNDO CICLO Y PRIMARIA Y EDUCACIÓN SECUNDARIA OBLIGATORIA DE VILANOVA I LA GELTRÚ MODALIDAD DESPLAZAMIENTOS",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": "2026-09-28",
+  "deadline": "2026-10-09",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 11000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928723",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "CERTIFICADO DE ACUERDO",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.imet.cat",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.337Z"
+}

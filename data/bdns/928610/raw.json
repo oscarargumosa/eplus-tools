@@ -1,0 +1,72 @@
+{
+  "id": 1130171,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÀ DE XIVERT",
+    "nivel3": "AYUNTAMIENTO DE ALCALÀ DE XIVERT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928610",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA DE AYUDAS ECONÓMICAS PARA EL USO DEL TREN O DEL AUTOBUS DIRIGIDAS A RESIDENTES EN ALCALA DE XIVERT Y QUE CURSEN ESTUDIOS REGLADOS FUERA DEL MUNICIPIO. CURSO 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE AYUDAS ECONÓMICAS PARA EL USO DEL TREN O DEL AUTOBUS DIRIGIDAS A RESIDENTES EN ALCALA DE XIVERT Y QUE CURSEN ESTUDIOS REGLADOS FUERA DEL MUNICIPIO. CURSO 2026-2027",
+  "urlBasesReguladoras": "https://alcaladexivert.sedelectronica.es/preview-document/56287cc5-044d-4867-89cb-9d5ac3d715c9",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al dia siguiente de la publicación en el BOP",
+  "textFin": "curso escolar",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519559,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260903_Publicación_BasesConvocatoria subvencion bonotren o bus para estudiantes 2026-2027.pdf",
+      "long": 485665,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1519560,
+      "descripcion": "Certificado aprobación bases",
+      "nombreFic": "20260909_Certificado_Certificado Junta de Gobierno_certi 4 aprobación bases ayudas transporte público estudiantes.pdf",
+      "long": 459914,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

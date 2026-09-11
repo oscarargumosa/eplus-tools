@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "928853",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PRINCIPADO DE ASTURIAS / SERVICIO PÚBLICO DE EMPLEO DEL PRINCIPADO DE ASTURIAS",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "CONVOCATORIA 2027-2028 ANTICIPADA DE GASTO PROGRAMAS DE FORMACIÓN CONDUCENTES DESEMPLEADOS Y OCUPADOS",
+  "title_lang": "es",
+  "summary": "Desempleo",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": "2027-01-15",
+  "deadline": "2027-02-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 19050000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928853",
+  "documents": [
+    {
+      "label": "Anexo II- Especialidades conducentes líneas 1 y 2 ( prioritarias)",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2022/09/23/efp942",
+  "text_inicio": "Desde el 15 de enero de 2027.",
+  "text_fin": "Hasta las 23:59 del 5 de febrero de 2027",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.368Z"
+}

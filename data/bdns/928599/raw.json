@@ -1,0 +1,64 @@
+{
+  "id": 1130160,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "DIRECCIÓN GENERAL DE ECONOMÍA CIRCULAR"
+  },
+  "sedeElectronica": "www.jccm.es",
+  "codigoBDNS": "928599",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 270000,
+  "mrr": false,
+  "descripcion": "Resolución de la Dirección General de Economía Circular y Agenda 2030, por la que se convocan para el año 2026, las subvenciones destinadas al desarrollo e implementación de la Agenda 2030 y ODS",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Orden 113/2026, de 20 de julio, de la Consejería de Desarrollo Sostenible, por la que se establecen las bases reguladoras de subvenciones en materia de Agenda 2030 y objetivos de desarrollo sostenible",
+  "urlBasesReguladoras": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/07/29/pdf/2026_5627.pdf&tipo=rutaDocm",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente al de la publicación de la convocatoria en DOCM",
+  "textFin": "15 días hábiles siguientes al de la publicación de convocatoria en el DOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519534,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA Y ANEXOS_150602.PDF",
+      "long": 2370765,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

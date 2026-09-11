@@ -1,0 +1,72 @@
+{
+  "id": 1129385,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILANOVA DEL CAMÍ",
+    "nivel3": "AYUNTAMIENTO DE VILANOVA DEL CAMÍ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "927824",
+  "fechaRecepcion": "2026-09-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Ayudas económicas a personas estudiantes que cursen estudios postobligatorios",
+  "descripcionLeng": "Ajuts econòmics a persones estudiants que cursin estudis postobligatòris",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras ayudas económicas a estudiantes que cursen estudios postobligatorios",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3092388/aprovacio-definitivadela- modificacio-de-les-bases-especifiques-reguladores-delatorgament- d-ajuts-economics-a-estudiants-quecursinestudis- universitaris-estudis-de-formacio-professionaldegrau- superior-i-de-grau-mi",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente publicación convocatoria en el BOP",
+  "textFin": "20 días hábiles des de la publicación de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1517574,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ANNEX.pdf",
+      "long": 261912,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1517573,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANEXO.pdf",
+      "long": 221058,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

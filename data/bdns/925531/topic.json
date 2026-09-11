@@ -1,0 +1,78 @@
+{
+  "source": "bdns",
+  "source_id": "925531",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSEJO INSULAR DE MENORCA / CONSELL INSULAR DE MENORCA",
+  "nuts_codes": [
+    "ES533"
+  ],
+  "nuts_primary": "ES533",
+  "title": "Acuerdo del Consejo Rector del IME, de 6.03.2025, modificado por acuerdo de 30 de julio de 2026, relativo a la aprobación de las bases y la convocatoria de la Ayuda Pere Melis Pons para la investigación en el ámbito de la lingüística y la sociolingüística",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-08-19",
+  "open_date": "2026-09-09",
+  "deadline": "2026-10-08",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "www.ime.cat",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/925531",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12325/719478/institut-menorqui-d-estudis-acuerdo-del-consejo-re",
+  "text_inicio": "A partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "text_fin": "Un mes a partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 219384,
+      "titulo": "Extracto del acuerdo del Consejo Rector del Institut Menorquí d’Estudis de 6 de marzo de 2025, modificado por acuerdo de 30 de julio de 2026, relativo a la aprobación de las bases y la convocatoria de la Ayuda Pere Melis Pons para la investigación en el ámbito de la lingüística y la sociolingüística (exp. I0010-2025-000003)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Personas físicas o jurídicas individualmente, así como agrupaciones de personas físicas o jurídicas sin personalidad jurídica independiente, que concurran en forma de equipo de investigación.</p><p>Segundo. Objeto</p><p>Promover trabajos de investigación que estudien cualquier aspecto referido a la lengua catalana en relación con Menorca, o bien la obra de Pere Melis Pons.</p><p>Tercero. Bases reguladoras</p><p>Esta convocatoria se rige por las bases aprobadas por el Consejo Rector del Institut Menorquí d’Estudis de 6 de marzo de 2025, modificado por acuerdo de 30 de julio de 2026.</p><p>Cuarto. Cuantía</p><p>El importe global máximo de la convocatoria es de 6.000 € (seis mil euros).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>Un mes contador a partir del día siguiente a la publicación de la convocatoria en el Boletín Oficial de las Illes Balears (BOIB).</p><p>Sexto. Otros datos</p><p>Se establece una única ayuda de 6.000 € para el proyecto seleccionado.</p><p>Cada autor/a únicamente puede presentar un solo proyecto en calidad de investigador/a principal. Tampoco podrán presentar un proyecto aquellas personas que hayan presentado una propuesta a las ayudas del IME o que no hayan librado al IME la memoria final de una ayuda concedida en convocatorias anteriores.</p>",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12325/719479/extracto-del-acuerdo-del-consejo-rector-del-instit",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-09-08"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:23.372Z"
+}

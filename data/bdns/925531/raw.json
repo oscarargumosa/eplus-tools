@@ -1,0 +1,87 @@
+{
+  "id": 1127092,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSEJO INSULAR DE MENORCA",
+    "nivel3": "CONSELL INSULAR DE MENORCA"
+  },
+  "sedeElectronica": "www.ime.cat",
+  "codigoBDNS": "925531",
+  "fechaRecepcion": "2026-08-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Acuerdo del Consejo Rector del IME, de 6.03.2025, modificado por acuerdo de 30 de julio de 2026, relativo a la aprobación de las bases y la convocatoria de la Ayuda Pere Melis Pons para la investigación en el ámbito de la lingüística y la sociolingüística",
+  "descripcionLeng": "Acord del Consell Rector de l’IME, de 6 de març de 2025, modificat per acord de 30 de juliol de 2026, relatiu a l’aprovació de les bases i la convocatòria de l’Ajut Pere Melis Pons per a la recerca en l’àmbit de la lingüística i la sociolingüística",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES533 - Menorca"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Bases de la ayuda Pere Melis Pons 2025",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2026/12325/719478/institut-menorqui-d-estudis-acuerdo-del-consejo-re",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-09",
+  "fechaFinSolicitud": "2026-10-08",
+  "textInicio": "A partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "textFin": "Un mes a partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1510666,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Acord convocatòia ajut Pere Melis 2026.pdf",
+      "long": 464919,
+      "datMod": "2026-08-19",
+      "datPublicacion": "2026-09-10"
+    },
+    {
+      "id": 1510665,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Acuerdo convocatoria ayuda Pere Melis 2026.pdf",
+      "long": 513514,
+      "datMod": "2026-08-19",
+      "datPublicacion": "2026-09-10"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 219384,
+      "titulo": "Extracto del acuerdo del Consejo Rector del Institut Menorquí d’Estudis de 6 de marzo de 2025, modificado por acuerdo de 30 de julio de 2026, relativo a la aprobación de las bases y la convocatoria de la Ayuda Pere Melis Pons para la investigación en el ámbito de la lingüística y la sociolingüística (exp. I0010-2025-000003)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Personas físicas o jurídicas individualmente, así como agrupaciones de personas físicas o jurídicas sin personalidad jurídica independiente, que concurran en forma de equipo de investigación.</p><p>Segundo. Objeto</p><p>Promover trabajos de investigación que estudien cualquier aspecto referido a la lengua catalana en relación con Menorca, o bien la obra de Pere Melis Pons.</p><p>Tercero. Bases reguladoras</p><p>Esta convocatoria se rige por las bases aprobadas por el Consejo Rector del Institut Menorquí d’Estudis de 6 de marzo de 2025, modificado por acuerdo de 30 de julio de 2026.</p><p>Cuarto. Cuantía</p><p>El importe global máximo de la convocatoria es de 6.000 € (seis mil euros).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>Un mes contador a partir del día siguiente a la publicación de la convocatoria en el Boletín Oficial de las Illes Balears (BOIB).</p><p>Sexto. Otros datos</p><p>Se establece una única ayuda de 6.000 € para el proyecto seleccionado.</p><p>Cada autor/a únicamente puede presentar un solo proyecto en calidad de investigador/a principal. Tampoco podrán presentar un proyecto aquellas personas que hayan presentado una propuesta a las ayudas del IME o que no hayan librado al IME la memoria final de una ayuda concedida en convocatorias anteriores.</p>",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12325/719479/extracto-del-acuerdo-del-consejo-rector-del-instit",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-09-08"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

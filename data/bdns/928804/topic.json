@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "928804",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TERUEL / AYUNTAMIENTO DE TERUEL",
+  "nuts_codes": [
+    "ES242"
+  ],
+  "nuts_primary": "ES242",
+  "title": "CONVOCATORIA PÚBLICA PARA LA CONCESIÓN DE SUBVENCIONES DIRIGIDAS A PERSONAS DE HASTA 25 AÑOS QUE TENGAN RECONOCIDO UN GRADO DE DISCAPACIDAD IGUAL O SUPERIOR AL 5%, RECEPTORAS DE TRATAMIENTOS TERAPÉUTICOS. AÑO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-10",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sede.teruel.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928804",
+  "documents": [
+    {
+      "label": "Acuerdo aprobación Convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.teruel.es/wp-content/uploads/documentos/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "A partir del día siguiente al de la publicación del extracto de la convocatoria en el B.O.P.",
+  "text_fin": "20 días hábiles desde el siguiente a la publicación del extracto de la convocatoria en el B.O.P.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-11T04:05:24.355Z"
+}
