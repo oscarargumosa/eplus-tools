@@ -112,6 +112,31 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 ## 2 · Pendientes sin bloqueante (cuando se quiera)
 
+### TASK-013 — Curso "Marketing y Ventas" en la galería del campus (Moodle)
+**Status:** IMPORTADOR ESCRITO Y PROBADO EN SECO · pendiente de la pasada real en el VPS
+**Owner:** VPS Claude (ejecución) · el importador lo dejó la sesión remota
+**Doc canónico:** `scripts/moodle/README.md` · encargo original en `docs/handoffs/ENCARGO_MOODLE_MARKETING_VENTAS.md`
+**Encargo al VPS:** `docs/handoffs/PARA_VPS.md` (entrada 2026-09-11)
+**Fecha plan:** 2026-09-11
+
+**Qué es:** montar en `campus.eufundingschool.com` el curso *Marketing y Ventas*
+(22 temas · 279 páginas · 50 etiquetas · 232 vídeos ya alojados en Bunny Stream,
+library 750561) a partir de `data/moodle/marketing-ventas.json`.
+
+**Cómo:** `scripts/moodle/import-course.php`, PHP CLI dentro del Moodle usando sus
+APIs internas (Moodle no expone `mod_page_add_instance` por servicios web).
+Idempotente vía fichero de estado indexado por `seccion_n.curso_n.capitulo_n.leccion_n`;
+sólo crea, no borra; una lección que falla no aborta las 279.
+
+**Hallazgo:** el campo `texto` del JSON **no es Markdown** (como decía el encargo)
+sino TipTap/ProseMirror JSON. El conversor a HTML ya está en el script.
+
+**Bloqueante:** ninguno técnico. Faltan dos datos que sólo se saben en el VPS:
+(a) el id de la categoría = galería de cursos destino, (b) si la librería Bunny tiene
+*Token Authentication* / restricción por dominio (habría que añadir el dominio del
+campus a *Allowed Referrers*).
+
+
 ### TASK-012 — EU Vision (asistente idea → ficha de visión)
 **Status:** **F1 (backend) + F2 (frontend) IMPLEMENTADAS Y VERIFICADAS E2E** (2026-07-11, sin commit) · F3 pulido + F4 a Diseñar siguientes
 **Owner:** Local Claude (eplus-tools)

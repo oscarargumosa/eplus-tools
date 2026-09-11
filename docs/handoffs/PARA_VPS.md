@@ -1926,3 +1926,56 @@ El campus lleva la misma top bar de EFS pero su CTA está **hardcodeado a "Mi cu
 **Reporta en `PARA_LOCAL.md`:** ¿CTA de Moodle ya alterna Iniciar sesión / Mi cuenta según sesión del tool? ¿cookie cross-subdominio OK?
 
 — Claude Local (2026-07-03)
+
+---
+
+## 2026-09-11 · Montar el curso "Marketing y Ventas" en la galería del campus (Moodle)
+
+VPS Claude: Oscar quiere este curso dentro de la **galería de cursos del campus**
+(`campus.eufundingschool.com`). Te dejo el importador hecho y probado en seco; a ti
+te toca la pasada real contra el Moodle, que desde mi sesión no es alcanzable
+(`curl https://campus.eufundingschool.com/login/index.php` → sin respuesta, red del
+sandbox cerrada).
+
+**Lo que hay en el repo (rama `claude/exciting-bardeen-us8upe`):**
+- `data/moodle/marketing-ventas.json` — el JSON de entrada (308 KB, autocontenido).
+- `scripts/moodle/import-course.php` — importador idempotente vía APIs internas de
+  Moodle (`create_course`, `course_update_section`, `add_moduleinfo`).
+- `scripts/moodle/README.md` — uso y notas.
+- `docs/handoffs/ENCARGO_MOODLE_MARKETING_VENTAS.md` — el encargo original de Oscar.
+
+**Por qué PHP CLI y no servicios web:** Moodle no expone `mod_page_add_instance` ni
+`mod_label_add_instance` por defecto. Si al comprobar con
+`core_webservice_get_site_info` resulta que en el campus sí están expuestas, dilo,
+pero el camino fiable es el script dentro del contenedor.
+
+**Tu tarea:**
+1. `--list-categories` y elige el id de **la galería de cursos** donde van los demás
+   cursos del campus (yo no sé cuál es; no lo adivines si hay varias candidatas,
+   pregúntale a Oscar).
+2. Pasada de prueba con `--limit=3` y mira una página en el navegador: que el iframe
+   de Bunny cargue y que el texto se vea bien formateado.
+3. Pasada completa. Es relanzable: guarda estado en `<json>.state.json` indexado por
+   `seccion_n.curso_n.capitulo_n.leccion_n`, no duplica y sólo crea (no borra nada).
+4. `--check` al terminar y pega los números reales.
+
+**Comprobar antes de dar el curso por bueno:** si la librería Bunny **750561**
+(`Agencia Eneryia`) tiene *Token Authentication* o restricción por dominio, añade
+`campus.eufundingschool.com` a los *Allowed Referrers* o los vídeos darán error.
+Los vídeos aún en transcodificación embeben bien pero no reproducen: no es fallo
+del montaje.
+
+**Hallazgo que corrige el encargo:** el campo `texto` **no es Markdown**. Los 135
+textos no vacíos son documentos **TipTap/ProseMirror en JSON**. El script ya los
+convierte a HTML (encabezados, listas, citas, código, imágenes, enlaces, negrita/
+cursiva/subrayado). Si al revisar ves algún nodo que se pierda, dímelo con el
+`leccion_n` y lo añado al conversor.
+
+**Verificación esperada (ya contrastada contra el JSON en `--dry-run`):**
+22 temas · 279 páginas · 50 etiquetas · 232 vídeos · 135 lecciones con texto.
+La tabla de 22 temas del encargo coincide una a una con lo que produce el script.
+
+**Reporta en `PARA_LOCAL.md`:** id y URL del curso, categoría usada, números reales
+de `--check`, lista de fallos si los hubo, y estado del *Allowed Referrers* de Bunny.
+
+— Claude (sesión remota, 2026-09-11)
