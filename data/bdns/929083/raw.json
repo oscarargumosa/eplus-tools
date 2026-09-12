@@ -1,0 +1,80 @@
+{
+  "id": 1130644,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARANTZA",
+    "nivel3": "AYUNTAMIENTO DE ARANTZA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929083",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1428.58,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA EL PAGO DE LOS BONOS DE LAS PISCINAS MUNICIPALES DE BORTZIRIRAK PARA EL AÑO 2026",
+  "descripcionLeng": "2026 URTEAN BORTZIRIETAKO UDAL IGERILEKUETAKO BONOAK ORDAINTZEKO DIRULAGUNTZA DEIALDIA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES220 - Navarra"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "2026 URTEAN BORTZIRIETAKO UDAL IGERILEKUETAKO BONOAK ORDAINTZEKO DIRULAGUNTZA DEIALDIA",
+  "urlBasesReguladoras": "https://sedeelectronica.arantza.eus/tablondeanuncios/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA FECHA DE PUBLICACIÓN EN EL BOLÉTIN OFICIAL DE NAVARRA",
+  "textFin": "HASTA 20 DÍAS HÁBILES POSTERIORES A LA FECHA DE PUBLICACIÓN EN EL BON.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520518,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1.- 2026-Igerileku bonu dirulaguntza OINARRIAK.pdf",
+      "long": 557103,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520520,
+      "descripcion": "ESKABIDE ORRIA",
+      "nombreFic": "1.2.- ESKABIDEA.pdf",
+      "long": 119190,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520519,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "1.- 2026-Igerileku bonu dirulaguntza OINARRIAK.pdf",
+      "long": 557103,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

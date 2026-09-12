@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "929002",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD PÚBLICA DE NAVARRA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Convocatoria de becas de colaboración para estudiantes en situación que implique dificultades económicas que pongan en riesgo la continuidad de sus estudios universitarios, durante el curso 2026 2027.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 16875,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.unavarra.es/oficina/tramites/acceso.do?id=9265&block=ESTU-GRADO_1096&blockType=AREAS_SEDE",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929002",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.unavarra.es/sede/tablon-electronico/estudiantes?contentId=290935&languageId=100000",
+  "text_inicio": "Desde el día siguiente a la publicación en el Boletín Oficial de Navarra",
+  "text_fin": "7 de octubre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-12T04:09:16.780Z"
+}

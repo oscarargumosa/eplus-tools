@@ -1,0 +1,75 @@
+{
+  "id": 1130543,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "SERVICIO DE OCUPACIÓN DE LAS ISLAS BALEARES (SOIB)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928982",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1100000,
+  "mrr": false,
+  "descripcion": "Conv. subvenciones para financiar la contratación indefinida de personas cualificadas por parte de autónomos y empresas",
+  "descripcionLeng": "Conv. subvencions per a finançar la contractació indefinida de persones qualificades per part d'autònoms i empreses",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Ordre 16/2023, del conseller de Model Econòmic, Turisme i Treball, de 17 de maig de 2023",
+  "urlBasesReguladoras": "file:///C:/Users/u103999/Downloads/4807-1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-07-29",
+  "fechaFinSolicitud": "2027-09-30",
+  "textInicio": "A partir del dia següent a la publicació",
+  "textFin": "Fins al 30 de setembre de 2027 (inclòs)",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520329,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Document BDNS (català).PDF",
+      "long": 278798,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520328,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Document BDNS (castellà).PDF",
+      "long": 291742,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

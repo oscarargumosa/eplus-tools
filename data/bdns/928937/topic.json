@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "928937",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AZUQUECA DE HENARES / AYUNTAMIENTO DE AZUQUECA DE HENARES",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "SUBVENCIONES EN CONCURRENCIA COMPETITIVA A ENTIDADES SIN ÁNIMO DE LUCRO PARA EL DESARROLLO DE PROYECTOS DE SERVICIOS SOCIALES 2026, PARA LA ATENCIÓN A LA CONVIVENCIA Y RESPUESTA SOCIO JURÍDICA EN MATERIA DE EXTRANJERÍA.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 73000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928937",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://azuqueca.sedelectronica.es/preview-document/0244f831-da0e-4527-9c35-b68648f3d169/",
+  "text_inicio": "Desde el día siguiente de la publicación de la convocatoria en BOP de Guadalajara",
+  "text_fin": "10 días naturales desde el día siguiente de  la publicación de la convocatoria en BOP de Guadalajara",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-12T04:09:16.767Z"
+}

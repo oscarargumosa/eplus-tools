@@ -1,0 +1,88 @@
+{
+  "id": 1130613,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CAMARGO",
+    "nivel3": "AYUNTAMIENTO DE CAMARGO"
+  },
+  "sedeElectronica": "https://sede.aytocamargo.es/opensiac/informacionpublica/tramites_enter",
+  "codigoBDNS": "929052",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 27570.96,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA ABIERTA  DE PRESTACIONES ECONÓMICAS DE CARÁCTER SOCIAL A CONCEDER POR EL AYUNTAMIENTO DE CAMARGO CON CARGO AL FONDO EXTRAORDINARIO DE SUMINISTROS BÁSICOS EJERCICIO 2026. EXPTE SEC/2026/851",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases Generales para la concesión de Prestaciones Económicas de carácter social publicadas en el BOC nº 169 de fecha 02/09/2026",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=440008",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE FECHA PUBLICACIÓN",
+  "textFin": "31/12/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520452,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA.pdf",
+      "long": 2743167,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520455,
+      "descripcion": "ANEXO IV - FICHA TERCEROS",
+      "nombreFic": "Ficha_de_terceros.pdf",
+      "long": 165765,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520454,
+      "descripcion": "ANEXO III - DECLARACION RESPONSABLE",
+      "nombreFic": "ANEXO III Declaracion responsable.pdf",
+      "long": 173282,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520453,
+      "descripcion": "ANEXO II - SOLICITUD",
+      "nombreFic": "ANEXO II Solicitud.pdf",
+      "long": 143054,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

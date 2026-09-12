@@ -1,0 +1,64 @@
+{
+  "id": 1130645,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE EL HIERRO",
+    "nivel3": "CABILDO INSULAR DE HIERRO, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929084",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 200000,
+  "mrr": false,
+  "descripcion": "BASES ESPECÍFICAS PARA EL OTORGAMIENTO DE SUBVENCIONES PARA LA ADQUISICIÓN DE EQUIPAMIENTO PARA EMBARCACIONES DE PESCADORES PROFESIONALES 2025-2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Pesca y acuicultura",
+      "codigo": "03"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES703 - El Hierro"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS PARA EL OTORGAMIENTO DE SUBVENCIONES PARA LA ADQUISICIÓN DE EQUIPAMIENTO PARA EMBARCACIONES DE PESCADORES PROFESIONALES 2025-2026.",
+  "urlBasesReguladoras": "elhierro.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520513,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260909_Publicación_Anuncio Aprobación bases específicas para el otorgamiento de subvenciones para la adquisición de equipamiento para embarcaciones de pescadores profesionales 2025-2026 (1).pdf",
+      "long": 647515,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

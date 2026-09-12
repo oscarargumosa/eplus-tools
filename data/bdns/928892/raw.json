@@ -1,0 +1,72 @@
+{
+  "id": 1130453,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONDA",
+    "nivel3": "AYUNTAMIENTO DE ONDA"
+  },
+  "sedeElectronica": "https://seu.onda.es",
+  "codigoBDNS": "928892",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8126.16,
+  "mrr": false,
+  "descripcion": "BECAS PARA LA REALIZACIÓN DE PRÁCTICAS PROFESIONALES EN EL AYUNTAMIENTO DE ONDA PARA PERSONAS CON DIVERSIDAD FUNCIONAL FÍSICA O SENSORIAL, PSÍQUICA O MENTAL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES PARA LA CONCESIÓN DE 4 BECAS PARA PERSONAS CON DIVERSIDAD FUNCIONAL FÍSICA O SENSORIAL, PSÍQUICA O MENTAL, MEDIANTE LA REALIZACIÓN DE PRÁCTICAS PROFESIONALES EN SERVICIOS MUNICIPALES DEL AYUNTAMIENTO DE ONDA",
+  "urlBasesReguladoras": "https://www.onda.es/ond/web_php/index.php?contenido=subapartados_woden&id_boto=169",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "día siguiente a la publicación del extracto en el BOP de Castellón",
+  "textFin": "6 días naturales posteriores a la publicación del extracto en el BOP de Castellón",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520152,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "02_Bases_beques_discapacitat_2026_actualitzades.pdf_1789040269855.pdf",
+      "long": 228562,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520150,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "02_Bases_becas_discapacidad_2026_actualizadas.pdf_1789040269882.pdf",
+      "long": 248510,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

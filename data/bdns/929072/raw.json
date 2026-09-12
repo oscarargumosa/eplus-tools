@@ -1,0 +1,92 @@
+{
+  "id": 1130633,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CANET D'EN BERENGUER",
+    "nivel3": "AYUNTAMIENTO DE CANET D'EN BERENGUER"
+  },
+  "sedeElectronica": "https://canetdenberenguer.sedelectronica.es/",
+  "codigoBDNS": "929072",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500,
+  "mrr": false,
+  "descripcion": "Concesión de premios al uso del Valenciano en el Comercio Local para el año 2026",
+  "descripcionLeng": "Concessió de premis a l'ús del Valencià en el Comerç Local per a l'any 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "Comercio al por mayor",
+      "codigo": "46"
+    },
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Concesión de premios al uso del Valenciano en el Comercio Local para el año 2026",
+  "urlBasesReguladoras": "https://canetdenberenguer.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles contados desde el día siguiente a la publicación en el BOPV",
+  "textFin": "10 días hábiles contados desde el día siguiente a la publicación en el BOPV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520500,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260902_Resolución_Decreto de Alcaldía _ Decreto de Presidencia_DECRETO 2026-2113 [Decret d'aprovació de bases i convocatòria premis].pdf",
+      "long": 436556,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520501,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260902_Resolución_Decreto de Alcaldía _ Decreto de Presidencia_DECRETO 2026-2113 [Decret d'aprovació de bases i convocatòria premis].pdf",
+      "long": 436556,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

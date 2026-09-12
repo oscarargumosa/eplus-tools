@@ -1,0 +1,80 @@
+{
+  "id": 1130643,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANISES",
+    "nivel3": "AYUNTAMIENTO DE MANISES"
+  },
+  "sedeElectronica": "www.manises.es",
+  "codigoBDNS": "929082",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6800,
+  "mrr": false,
+  "descripcion": "AYUDAS DIRIGIDAS A FINANCIAR ACTIVIDADES DE LAS ASOCIACIONES QUE DESARROLLEN PROYECTOS DE JUVENTUD EN EL MUNICIPIO. AYUNTAMIENTO DE MANISES",
+  "descripcionLeng": "AJUDES DIRIGES A FINANÇAR ACTIVITATS DE LES ASSOCIACIONS QUE DESENVOLUPEN PROJECTES DE JOVENTUT EN EL MUNICIPI. AJUNTAMENT DE MANISES",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDENANZA DE SUBVENCIONES DEL AYUNTAMIENTO DE MANISES",
+  "urlBasesReguladoras": "www.manises.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a publicación en el BOP",
+  "textFin": "20 días naturales contados a partir del día siguiente a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520521,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "bases castellà.pdf",
+      "long": 77424,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520523,
+      "descripcion": "CERTIFICADO JUNTA DE GOBIERNO LOCAL",
+      "nombreFic": "CERTI APROB CONVOCT SUBV ASOC JUVENILES - SEFYCU 8555358.pdf",
+      "long": 366463,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520522,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "BASES VALENCIÀ OK REV.pdf",
+      "long": 79069,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

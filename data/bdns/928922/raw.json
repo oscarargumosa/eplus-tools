@@ -1,0 +1,72 @@
+{
+  "id": 1130483,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD PÚBLICA DE NAVARRA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sedeelectronica.unavarra.es/oficina/tramites/acceso.do?id=8626&block=ESTU-GRADO_1096&blockType=AREAS_SEDE",
+  "codigoBDNS": "928922",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 84375,
+  "mrr": false,
+  "descripcion": "Convocatoria de becas de colaboración para estudiantes de la Universidad Pública de Navarra, durante el curso 2026-2027.",
+  "descripcionLeng": "Nafarroako Unibertsitate Publikoko ikasleentzako lankidetza-beken deialdia, 2026-2027 ikasturtean. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN 2230/2026, de 10 de septiembre, de la Vicerrectora de Estudiantes, Vida Universitaria y Compromiso Social de la Universidad Pública de Navarra, por la que se aprueba la convocatoria de becas de colaboración para estudiantes durante el curso 202",
+  "urlBasesReguladoras": "https://www.unavarra.es/sede/tablon-electronico/estudiantes?contentId=290935&languageId=100000",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en el Boletín Oficial de Navarra",
+  "textFin": "7 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520185,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Res_Conv_Becas_Colab_ordinaria_2026-27_eus.pdf",
+      "long": 211534,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    },
+    {
+      "id": 1520184,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Res_Conv_Becas_Colab_ordinaria_2026-27.pdf",
+      "long": 222521,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-11"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

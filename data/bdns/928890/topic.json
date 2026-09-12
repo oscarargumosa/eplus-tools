@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "928890",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABRA / AYUNTAMIENTO DE CABRA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA DE AYUDAS AL ALQUILER PARA PERSONAS ENTRE 16 Y 40 AÑOS AÑO 2026 DEL ILTMO. AYUNTAMIENTO DE CABRA",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928890",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipucordoba.es/visor-pdf/22-07-2022/BOP-A-2022-2733.pdf",
+  "text_inicio": "A PARTIR DEL DIA SIGUIENTE DE LA PUBLICACION DEL EXTRACTO EN EL BOP DE CÓRDOBA",
+  "text_fin": "15 DIAS HÁBILES A CONTAR DESDE EL DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOP DE CORDOBA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-12T04:09:16.751Z"
+}
