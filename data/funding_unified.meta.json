@@ -1,47 +1,47 @@
 {
-  "generatedAt": "2026-06-27T12:51:02.983Z",
-  "total": 4167,
+  "generatedAt": "2026-09-13T04:09:50.591Z",
+  "total": 11819,
   "bySource": {
-    "sedia": 1624,
-    "bdns": 2467,
-    "salto": 76
+    "sedia": 1690,
+    "bdns": 10041,
+    "salto": 88
   },
   "byCategory": {
-    "call_for_proposals": 4091,
-    "training": 76
+    "call_for_proposals": 11731,
+    "training": 88
   },
   "byLevel": {
-    "eu": 1700,
-    "ccaa": 569,
-    "estado": 100,
-    "local": 1581,
-    "otros": 217
+    "eu": 1778,
+    "ccaa": 2223,
+    "estado": 307,
+    "local": 6583,
+    "otros": 928
   },
   "byStatus": {
-    "open": 3449,
-    "forthcoming": 650,
-    "closed": 68
+    "open": 11243,
+    "forthcoming": 569,
+    "closed": 7
   },
   "byProgramme": {
     "European Solidarity Corps": 3,
     "Connecting Europe Facility": 68,
     "Erasmus+": 45,
     "Just Transition": 4,
-    "Horizon Europe": 1022,
-    "ERC": 6,
+    "Horizon Europe": 1046,
+    "ERC": 7,
     "Creative Europe": 31,
-    "NDICI / EuropeAid": 138,
+    "NDICI / EuropeAid": 155,
     "Pericles IV": 2,
     "EP": 7,
-    "Single Market Programme": 8,
-    "EaSI / SOCPL": 4,
-    "CERV": 15,
-    "ESF+": 8,
+    "Single Market Programme": 9,
+    "EaSI / SOCPL": 5,
+    "CERV": 20,
+    "ESF+": 9,
     "NDICI": 1,
     "ISF": 8,
-    "Digital Europe": 55,
+    "Digital Europe": 68,
     "LIFE": 61,
-    "EMFAF": 3,
+    "EMFAF": 4,
     "Innovation Fund": 7,
     "RENEWFM": 2,
     "Justice": 5,
@@ -50,19 +50,19 @@
     "IMREG": 1,
     "EURATOM": 1,
     "EU4Health": 1,
-    "EUBA": 14,
+    "EUBA": 15,
     "ED": 1,
     "EU Anti-Fraud": 8,
-    "Concurrencia competitiva - canónica": 2189,
-    "Concesión directa - canónica": 278,
+    "Concurrencia competitiva - canónica": 9001,
+    "Concesión directa - canónica": 1040,
     "UCPM": 2,
-    "Pilot Projects": 8,
+    "Pilot Projects": 9,
     "European Defence Fund": 70,
-    "Erasmus+ Youth (SALTO)": 76,
     "ERDFTA": 2,
+    "Erasmus+ Youth (SALTO)": 88,
     "RFCS": 7
   },
   "curatedEnrichmentCount": 1,
-  "sumBudgetEur": 58502281475.65002,
-  "summaryEsPendingCount": 1700
+  "sumBudgetEur": 304974218981.4296,
+  "summaryEsPendingCount": 1778
 }
