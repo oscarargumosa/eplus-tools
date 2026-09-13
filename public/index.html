@@ -137,12 +137,32 @@ tailwind.config = {
     </button>
   </div>
 </header>
-<!-- En dev (localhost), reescribir enlaces del topbar a eufundingschool.test -->
+<!-- Tres pestañas del topbar (Recursos, Academia, Misión) y el logo viven fuera de la app:
+     en WordPress y en el Moodle del campus. Esos sitios no tienen copia por entorno, así que
+     en local y en dev hay que evitar que pinchar en ellas te saque del entorno en el que estás
+     trabajando (y te tire la sesión). -->
 <script>
 (function(){
-  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') return;
-  document.querySelectorAll('.efs-topbar a[href*="eufundingschool.com"]').forEach(function(a){
-    a.href = a.href.replace('https://eufundingschool.com', 'http://eufundingschool.test');
+  var host    = location.hostname;
+  var isLocal = host === 'localhost' || host === '127.0.0.1';
+  var isDev   = host.indexOf('dev.') === 0;
+  if (!isLocal && !isDev) return;   // en producción, enlaces tal cual
+
+  if (isLocal) {
+    // Laragon sí tiene su propio WordPress: se reescriben al dominio local.
+    document.querySelectorAll('.efs-topbar a[href*="eufundingschool.com"]').forEach(function(a){
+      a.href = a.href.replace('https://eufundingschool.com', 'http://eufundingschool.test');
+    });
+    return;
+  }
+
+  // dev: el logo vuelve a la propia app y lo externo se abre aparte.
+  var brand = document.querySelector('.efs-topbar__brand');
+  if (brand) brand.href = '/';
+  document.querySelectorAll('.efs-topbar__menu a[href^="http"]').forEach(function(a){
+    a.target = '_blank';
+    a.rel    = 'noopener';
+    a.title  = a.textContent.trim() + ' — vive fuera de dev; se abre en otra pestaña';
   });
 })();
 </script>
