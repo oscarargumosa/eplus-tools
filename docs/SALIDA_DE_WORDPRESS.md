@@ -40,8 +40,9 @@ El contenido ya está volcado en `docs/legacy-wp/*.html` (HTML de Gutenberg en b
 - [ ] **P2 · Montar las páginas en código**
   - [x] `/mision` — Join the Club, portada tal cual (13-sep-2026)
   - [ ] `/` — la home: 19k de texto que hay que reescribir, no copiar
-  - [ ] `/recursos` — hay que inventarla: la de WordPress está vacía
-- [ ] **P3 · Blog**: las 3 entradas + la plantilla para las que genere el content engine
+  - [x] `/recursos/` — índice nuevo: la de WordPress era solo una frase (13-sep-2026)
+- [x] **P3 · Las 3 entradas** portadas a `/recursos/<slug>` (13-sep-2026). Falta decidir la
+      plantilla para lo que genere el content engine, cuando arranque
 - [ ] **P4 · Formulario de lista de espera** contra `/v1/subscribers`
 - [ ] **P5 · Redirecciones** de las URLs viejas en nginx, y `eufundingschool.com` apuntando
       a lo nuevo
