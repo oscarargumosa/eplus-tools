@@ -36,8 +36,11 @@ El contenido ya está volcado en `docs/legacy-wp/*.html` (HTML de Gutenberg en b
 ## 3 · Secuencia
 
 - [x] **P0 · Rescatar el contenido** → `docs/legacy-wp/` (13-sep-2026)
-- [ ] **P1 · Decidir dónde vive la web pública** (ver §4)
-- [ ] **P2 · Montar las páginas en código**: home, Join the Club, Recursos
+- [x] **P1 · Decidir dónde vive la web pública** → **dentro de este repo**, opción (a) (13-sep-2026)
+- [ ] **P2 · Montar las páginas en código**
+  - [x] `/mision` — Join the Club, portada tal cual (13-sep-2026)
+  - [ ] `/` — la home: 19k de texto que hay que reescribir, no copiar
+  - [ ] `/recursos` — hay que inventarla: la de WordPress está vacía
 - [ ] **P3 · Blog**: las 3 entradas + la plantilla para las que genere el content engine
 - [ ] **P4 · Formulario de lista de espera** contra `/v1/subscribers`
 - [ ] **P5 · Redirecciones** de las URLs viejas en nginx, y `eufundingschool.com` apuntando
@@ -47,9 +50,10 @@ El contenido ya está volcado en `docs/legacy-wp/*.html` (HTML de Gutenberg en b
 
 Nada de P6 antes de que P5 esté verificado en producción.
 
-## 4 · La decisión pendiente
+## 4 · La decisión, ya tomada
 
-¿Dónde vive la web pública?
+**Dentro de este repo**, servida por Express. Se descartó el sitio estático aparte.
+Queda escrito el porqué de las dos opciones:
 
 **(a) Dentro de este repo**, servida por Express como páginas reales (`/`, `/mision`,
 `/recursos`, `/blog/...`), antes del catch-all de la SPA en `server.js:126`.
@@ -68,3 +72,13 @@ y el estado de sesión en dos sitios.
 
 Mientras el contenedor siga vivo está recibiendo intentos de login. Si P2–P5 se alargan,
 merece la pena cerrar ya `/wp-login.php` y `/wp-admin/` por nginx salvo desde la IP de Óscar.
+
+## 6 · Deudas que deja P2
+
+- **La página no tiene ni una imagen.** Venía así de WordPress. Antes de que esto sea la
+  web pública de verdad necesita 2-3 fotos reales (Pexels o banco propio); no se inventan.
+- **Las fuentes se cargan desde `fonts.googleapis.com`.** El criterio del ecosistema es
+  self-hostear (RGPD y que no se caiga la tipografía). Afecta a toda la app, no solo a esta
+  página: se arregla de una vez, no a trozos.
+- **`/mision` declara `canonical` a `eufundingschool.com/academia/`** mientras el WordPress
+  siga siendo el que responde en producción. Al llegar P5 hay que darle la vuelta.
