@@ -16,13 +16,13 @@
   "actionCode": "DIGITAL-JU-SIMPLE",
   "mgaCode": "DIGITAL-AG",
   "budget": {
-    "total_eur": 10000000,
+    "total_eur": 20000000,
     "by_year": {
-      "2026": 10000000
+      "2026": 20000000
     },
     "expected_grants": 2,
     "min_contribution_eur": 1000000,
-    "max_contribution_eur": 10000000
+    "max_contribution_eur": 20000000
   },
   "keywords": [
     "DIGITAL-JU-CHIPS-2026-SKILLS-HOE-SG",
@@ -141,5 +141,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-09-11T04:02:05.657Z"
+  "fetchedAt": "2026-09-13T04:06:31.453Z"
 }
