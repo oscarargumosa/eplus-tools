@@ -3,6 +3,8 @@
    ═══════════════════════════════════════════════════════════════ */
 
 const m = require('./backend');
+const zlib   = require('zlib');
+const crypto = require('crypto');
 
 const ok  = (res, data) => res.json({ ok: true, data });
 const err = (res, msg, status = 400) =>
@@ -56,14 +58,86 @@ exports.listEntityProjects = async (req, res) => {
   }
 };
 
-/* ── Geo markers para el Atlas 3D mundial ────────────────────── */
+/* ── Geo markers para el Atlas 3D mundial ──────────────────────
+   Son ~200.000 puntos. Construirlos cuesta segundos (la consulta recorre
+   todas las entidades con coordenadas y calcula el tier por fila) y el JSON
+   ronda los 20 MB, así que hacerlo en cada visita a la pestaña Entidades es
+   insostenible: medido en 6,5 s en dev y peor en producción.
+
+   El Atlas siempre pide la lista completa, sin filtros, así que se cachea
+   ESA: se guarda ya serializada y comprimida, con su ETag. Los filtros por
+   país o tier (que el Atlas no usa) siguen el camino normal.
+
+   Con esto: el primer visitante tras arrancar paga la construcción, los
+   demás reciben el buffer ya hecho, y quien repite visita recibe un 304 sin
+   descargar nada. */
+const GEO_TTL_MS = 60 * 60 * 1000;   // los datos solo cambian con el enriquecimiento
+let geoCache = null;                 // { gzip: Buffer, etag: string, until: number, markers: number }
+let geoBuilding = null;              // promesa en vuelo, para no construirlo dos veces a la vez
+
+async function buildGeoCache() {
+  const data = await m.listGeoMarkers({});
+  const json = JSON.stringify({ ok: true, data });
+  const gzip = zlib.gzipSync(json, { level: 6 });
+  geoCache = {
+    gzip,
+    etag: '"' + crypto.createHash('sha1').update(gzip).digest('hex').slice(0, 16) + '"',
+    until: Date.now() + GEO_TTL_MS,
+    markers: data.length,
+  };
+  return geoCache;
+}
+
+async function getGeoCache() {
+  const vigente = geoCache && Date.now() < geoCache.until;
+  if (vigente) return geoCache;
+
+  if (!geoBuilding) {
+    geoBuilding = buildGeoCache().finally(() => { geoBuilding = null; });
+  }
+  // Si ya hay una versión, aunque esté caducada, se sirve esa y se reconstruye
+  // por detrás: así nadie vuelve a esperar los segundos de la consulta. Solo
+  // espera quien llega antes de que exista la primera.
+  if (geoCache) {
+    geoBuilding.catch(() => {});   // el error ya se registra donde toca
+    return geoCache;
+  }
+  return geoBuilding;
+}
+
 exports.listGeoMarkers = async (req, res) => {
   try {
-    const data = await m.listGeoMarkers(req.query);
-    res.set('Cache-Control', 'public, max-age=300'); // 5 min cache (cambia con backfill)
-    ok(res, data);
+    const filtrado = !!(req.query.country || req.query.tier);
+    if (filtrado) {
+      const data = await m.listGeoMarkers(req.query);
+      res.set('Cache-Control', 'public, max-age=300');
+      return ok(res, data);
+    }
+
+    const cache = await getGeoCache();
+    res.set('Cache-Control', 'public, max-age=3600');
+    res.set('ETag', cache.etag);
+    res.set('Vary', 'Accept-Encoding');
+
+    // El navegador ya lo tiene: no se reenvían 6 MB.
+    if (req.headers['if-none-match'] === cache.etag) return res.status(304).end();
+
+    const aceptaGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
+    res.type('application/json');
+    if (aceptaGzip) {
+      res.set('Content-Encoding', 'gzip');
+      return res.end(cache.gzip);
+    }
+    // Cliente sin gzip (raro): se descomprime el que ya tenemos, sin volver a consultar.
+    return res.end(zlib.gunzipSync(cache.gzip));
   } catch (e) { err(res, e.message, 500); }
 };
+
+/* Se construye al arrancar para que ni el primer visitante espere. En segundo
+   plano: si falla, se construirá en la primera petición. */
+exports.warmGeoCache = () => getGeoCache()
+  .then(c => console.log(`[entities] Atlas precalentado: ${c.markers} marcadores, ${(c.gzip.length / 1048576).toFixed(1)} MB comprimidos`))
+  .catch(e => console.error('[entities] no se pudo precalentar el Atlas:', e.message));
 
 /* ── Stats (lectura del cache precomputado) ──────────────────── */
 exports.statGlobal       = (req, res) => sendStat(res, 'global_kpis');

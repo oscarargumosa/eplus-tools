@@ -170,4 +170,7 @@ checkConfig();
 const HOST = process.env.HOST || '0.0.0.0';
 app.listen(PORT, HOST, () => {
   console.log(`[E+ Tools] Server running on ${HOST}:${PORT} (${process.env.NODE_ENV || 'development'})`);
+  // Los 200.000 marcadores del Atlas tardan segundos en construirse. Se dejan
+  // listos al arrancar para que no los pague el primer visitante.
+  require('./node/src/modules/entities/controller').warmGeoCache();
 });

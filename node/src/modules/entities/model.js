@@ -321,13 +321,17 @@ async function listGeoMarkersRaw({ country, tier } = {}) {
   return rows;
 }
 
-/* Compacta markers a {o,a,g,c,n,t} para minimizar payload (~50 bytes/marker). */
+/* Compacta markers a {o,a,g,c,n,t} para minimizar payload (~50 bytes/marker).
+   Las coordenadas se redondean a 5 decimales: eso es ~1 metro, de sobra para
+   pintar un punto en un mapa. Sin redondear venían con 7 decimales (precisión
+   de centímetro), que sobre 200.000 marcadores son megas de ruido. */
 const _GEO_TIER_CODE = { premium: 1, good: 2, acceptable: 3, minimal: 4, unenriched: 0, owner: 5 };
+const coord = v => Math.round(Number(v) * 1e5) / 1e5;
 function compactGeoMarkers(rows) {
   return rows.map(r => ({
     o: r.oid,
-    a: Number(r.lat),
-    g: Number(r.lng),
+    a: coord(r.lat),
+    g: coord(r.lng),
     c: r.cc,
     n: r.name,
     t: _GEO_TIER_CODE[r.tier] ?? 0,
