@@ -5,7 +5,7 @@
    (el listado marca `available_in_efs` cuando el action_type coincide con
    un programa activo).
 
-   Las convocatorias en sí las genera scripts/build-na-calls.js; este script
+   Las convocatorias en sí las genera scripts/build-extra-calls.js; este script
    es el otro lado: el molde de intake para cada una.
 
    Idempotente: `program_id` es único y se hace upsert, así que se puede

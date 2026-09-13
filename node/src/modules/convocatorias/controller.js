@@ -6,7 +6,7 @@ const adminModel = require('../admin/model');
 
 const DATA_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.json');
 const META_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'funding_unified.meta.json');
-const NA_PATH   = path.join(__dirname, '..', '..', '..', '..', 'data', 'erasmus_na_calls.json');
+const EXTRA_PATH = path.join(__dirname, '..', '..', '..', '..', 'data', 'erasmus_extra_calls.json');
 const STRUCTURED_DIR = path.join(__dirname, '..', '..', '..', '..', 'data', 'call_structured');
 
 // Load structured extracts (LLM-generated). Light cache; rebuild every 5 min.
@@ -50,15 +50,15 @@ let cache = null;
 let cacheMtime = 0;
 let metaCache = null;
 
-/* Acciones KA2 que gestionan las Agencias Nacionales (KA220 y KA240). No
-   llegan por SEDIA, que solo trae las centralizadas de EACEA. Viven en su
-   propio fichero porque el refresco diario reescribe funding_unified.json
-   entero y se las llevaría por delante. Se genera con scripts/build-na-calls.js. */
-function loadNaCalls() {
+/* Convocatorias que no llegan por SEDIA: las KA2 que gestionan las Agencias
+   Nacionales y las que aún no se han publicado pero ya se conocen. Viven en su
+   propio fichero porque el refresco diario reescribe funding_unified.json entero
+   y se las llevaría por delante. Se genera con scripts/build-extra-calls.js. */
+function loadExtraCalls() {
   try {
-    return JSON.parse(fs.readFileSync(NA_PATH, 'utf8'));
+    return JSON.parse(fs.readFileSync(EXTRA_PATH, 'utf8'));
   } catch (err) {
-    if (err.code !== 'ENOENT') console.error('[convocatorias] erasmus_na_calls.json:', err.message);
+    if (err.code !== 'ENOENT') console.error('[convocatorias] erasmus_extra_calls.json:', err.message);
     return [];
   }
 }
@@ -67,13 +67,13 @@ function loadData() {
   try {
     const stat = fs.statSync(DATA_PATH);
     // El mtime de control suma los dos ficheros: si solo se mirara el unificado,
-    // regenerar las de agencia nacional no invalidaría la caché.
-    let naMtime = 0;
-    try { naMtime = fs.statSync(NA_PATH).mtimeMs; } catch {}
-    const mtime = stat.mtimeMs + naMtime;
+    // regenerar las añadidas a mano no invalidaría la caché.
+    let extraMtime = 0;
+    try { extraMtime = fs.statSync(EXTRA_PATH).mtimeMs; } catch {}
+    const mtime = stat.mtimeMs + extraMtime;
     if (!cache || mtime !== cacheMtime) {
       const raw = fs.readFileSync(DATA_PATH, 'utf8');
-      cache = JSON.parse(raw).concat(loadNaCalls());
+      cache = JSON.parse(raw).concat(loadExtraCalls());
       cacheMtime = mtime;
       try { metaCache = JSON.parse(fs.readFileSync(META_PATH, 'utf8')); } catch { metaCache = null; }
     }

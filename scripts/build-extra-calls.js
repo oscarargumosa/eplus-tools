@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /* ═══════════════════════════════════════════════════════════════════
-   Genera data/erasmus_na_calls.json — las acciones KA2 que gestionan las
-   Agencias Nacionales y que no llegan por SEDIA (ese feed solo trae las
-   centralizadas de EACEA).
+   Genera data/erasmus_extra_calls.json — convocatorias que no llegan por SEDIA:
+   las KA2 que gestionan las Agencias Nacionales (ese feed solo trae las
+   centralizadas de EACEA) y las que aún no se han publicado pero ya se conocen.
 
    Modelo acordado con Óscar (13-sep-2026):
    · Una fila por ACCIÓN, no por país. KA220-ADU es una sola convocatoria
@@ -13,16 +13,18 @@
    · Las bandas de lump sum (120k/250k/400k) son un ATRIBUTO, no tres
      convocatorias. En data/erasmus_plus_2026_calls.clean.json están como
      tres filas y por eso cada KA220 aparecía triplicada.
-   · Solo KA2. Las KA1 (acreditaciones KA120/KA150 y movilidades
+   · Solo KA2 y KA3. Las KA1 (acreditaciones KA120/KA150 y movilidades
      KA122/KA15x/KA182) quedan fuera: las acreditaciones no son proyectos
      y las movilidades necesitan otro flujo.
+   · Una fecha sin confirmar se marca con `deadline_provisional` y se dice en
+     la primera línea del resumen, que es lo que se lee en la tarjeta.
 
    Fuentes de los datos:
    · Importes, duración y tipo de financiación → data/erasmus_plus_2026_calls.clean.json
    · Fechas límite y descripciones oficiales en español → portal de
      oportunidades de la Comisión, convocatoria 2026 ronda 2.
 
-       node scripts/build-na-calls.js
+       node scripts/build-extra-calls.js
    ═══════════════════════════════════════════════════════════════════ */
 'use strict';
 
@@ -30,7 +32,7 @@ const fs   = require('fs');
 const path = require('path');
 
 const RAIZ    = path.join(__dirname, '..');
-const DESTINO = path.join(RAIZ, 'data', 'erasmus_na_calls.json');
+const DESTINO = path.join(RAIZ, 'data', 'erasmus_extra_calls.json');
 
 /* Convocatoria 2026, ronda 2. Hora de Bruselas. */
 const DEADLINE = '2026-10-01';
@@ -126,6 +128,39 @@ for (const [cod, sectorEs, sectorEn] of SECTORES_KA220) {
   ));
 }
 
+/* ── KA3 · European Youth Together ───────────────────────────────────
+   Esta sí es centralizada (EACEA), pero tampoco llega por SEDIA: la única
+   que figura allí es la de 2024, con el plazo cerrado, y la siguiente aún no
+   se ha publicado. Se adelanta para poder ir preparándola, con el plazo
+   marcado como PROVISIONAL hasta que salga la guía del programa. */
+calls.push({
+  ...base(
+    'KA3-YOUTH-TOG-2027',
+    'European Youth Together (KA3) · juventud',
+    'FECHA PROVISIONAL hasta que se publique la guía del programa. European Youth Together apoya ' +
+    'redes de organizaciones juveniles de varios países que trabajan juntas en proyectos de ' +
+    'participación, inclusión y valores europeos, con voz real de las personas jóvenes en el diseño ' +
+    'y en la ejecución.',
+    'European Youth Together (KA3). Provisional deadline until the programme guide is published.',
+    {
+      keywords: ['KA3', 'European Youth Together', 'juventud', 'participación', 'EACEA'],
+      notes: 'Plazo provisional: 1 de febrero de 2027, pendiente de confirmar con la guía del ' +
+             'programa. El importe y la duración se dejan sin fijar a propósito, para no dar por ' +
+             'buenos los datos de la convocatoria anterior.',
+    }
+  ),
+  source: 'e+eacea',          // esta es centralizada, no de agencia nacional
+  sub_programme: 'KA3 — Apoyo a la reforma de las políticas',
+  managed_by: 'EACEA',
+  deadline: '2027-02-01',
+  deadline_provisional: true,
+  deadlines_extra: [{ label: 'Convocatoria 2027 · plazo provisional', date: '2027-02-01', timezone: 'Europe/Brussels' }],
+  // Sin importe ni duración: los de 2024 no tienen por qué repetirse.
+  budget_per_project_min_eur: null,
+  budget_per_project_max_eur: null,
+  duration_months: null,
+});
+
 calls.push(base(
   'KA240-SCH-2026',
   'Asociaciones europeas para el desarrollo escolar (KA240-SCH)',
@@ -149,5 +184,5 @@ calls.push(base(
 ));
 
 fs.writeFileSync(DESTINO, JSON.stringify(calls, null, 2) + '\n', 'utf8');
-console.log(`Escritas ${calls.length} acciones KA2 de Agencia Nacional en ${path.relative(RAIZ, DESTINO)}`);
+console.log(`Escritas ${calls.length} convocatorias en ${path.relative(RAIZ, DESTINO)}`);
 for (const c of calls) console.log(`  ${c.call_id.padEnd(16)} ${c.title}`);
