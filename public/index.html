@@ -105,7 +105,7 @@ tailwind.config = {
 <div id="auth-screen" class="hidden">
 
   <!-- Login único vía Authentik: se oculta el formulario local legacy (reversible) -->
-  <style>
+  <style id="auth-sso-only">
     #auth-screen #auth-tabs,
     #auth-screen #form-login,
     #auth-screen #form-register,
@@ -113,6 +113,23 @@ tailwind.config = {
     #auth-screen #google-divider,
     #auth-screen #google-btn-container { display: none !important; }
   </style>
+  <script>
+  /* Fuera de producción no hay Authentik: `/v1/auth/oidc/login` responde 503 porque no
+     están las variables OIDC_*, y aunque estuvieran, el redirect del proveedor no tiene
+     dado de alta este dominio. Con el formulario local oculto no habría manera de entrar,
+     así que en dev y en local se devuelve y se esconde el botón del SSO, que ahí no lleva
+     a ningún sitio. En producción esto no hace nada. */
+  (function () {
+    var h = location.hostname;
+    if (h !== 'localhost' && h !== '127.0.0.1' && h.indexOf('dev.') !== 0) return;
+    var regla = document.getElementById('auth-sso-only');
+    if (regla) regla.remove();
+    document.addEventListener('DOMContentLoaded', function () {
+      var bloque = document.getElementById('oidc-login-block');
+      if (bloque) bloque.style.display = 'none';
+    });
+  })();
+  </script>
 
   <!-- Decorative gradients -->
   <div class="fixed top-0 right-0 w-[50vw] h-[512px] bg-gradient-to-bl from-secondary-fixed/5 to-transparent blur-3xl pointer-events-none -z-[1]"></div>
