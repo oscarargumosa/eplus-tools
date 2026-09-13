@@ -50,3 +50,5 @@ data/call_curation.json
 # Academy media (vídeos >100MB, no caben en GitHub; se despliegan aparte)
 public/academy-media/*.mp4
 .env.apuntaba-a-PROD.bak
+data/call_vectors/
+data/call_structured/
