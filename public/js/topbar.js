@@ -6,6 +6,13 @@
 (function () {
   'use strict';
 
+  /* Páginas que ya han salido de WordPress y viven en este repo
+     (docs/SALIDA_DE_WORDPRESS.md). Fuera de producción se usa la versión en
+     código; en producción siguen apuntando a WordPress hasta el cutover (P5). */
+  var YA_EN_CODIGO = {
+    'https://eufundingschool.com/academia/': '/mision'
+  };
+
   /* ── Enlaces que salen del producto ──────────────────────────
      Recursos, Academia y Misión viven fuera de la app. En local y en dev
      hay que evitar que pinchar en ellas te saque del entorno en el que
@@ -15,6 +22,15 @@
     var isLocal = host === 'localhost' || host === '127.0.0.1';
     var isDev   = host.indexOf('dev.') === 0;
     if (!isLocal && !isDev) return;   // en producción, enlaces tal cual
+
+    // Lo que ya está en código se queda dentro del entorno, sea cual sea.
+    document.querySelectorAll('.efs-topbar__menu a[href]').forEach(function (a) {
+      var destino = YA_EN_CODIGO[a.getAttribute('href')];
+      if (!destino) return;
+      a.href   = destino;
+      a.target = '_self';
+      a.removeAttribute('title');
+    });
 
     if (isLocal) {
       // Laragon sí tiene su propio WordPress: se reescriben al dominio local.
