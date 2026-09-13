@@ -38,6 +38,25 @@ al revés. El nginx de dev manda `X-Robots-Tag: noindex` y tiene el basic auth p
 La BD de dev es un **clon** de la live (13-sep-2026). Las contraseñas de usuario pueden
 divergir: la de Óscar se repuso solo en dev, la de producción quedó intacta.
 
+### Cómo se trabaja aquí
+
+El servicio arranca con `node --watch`, así que **al guardar un fichero el servidor se
+recarga solo**. No hay que reiniciar nada a mano (la fricción que describe `CLAUDE.md`
+§Servidor y Entorno es del Laragon del PC, no de aquí).
+
+```bash
+cd /opt/eplus-tools-dev
+git pull origin dev-vps        # siempre antes de empezar
+tail -f /var/log/eplus-dev.log # ver qué pasa mientras pruebas
+npm run migrate                # si tocas el esquema (solo afecta a eplus_tools_dev)
+systemctl restart eplus-dev    # solo si cambias el .env; el código se recarga solo
+```
+
+Para refrescar los datos de dev con lo que haya en la live:
+`./scripts/setup-dev-vps.sh clon` (recrea `eplus_tools_dev` desde `eplus_tools`).
+
+Para llevar trabajo a la live: commit en `dev-vps` → `/merge` → Coolify despliega `main`.
+
 ## 3 · La web oficial (futura)
 
 `eufundingstudio.com` está registrado en Namecheap (jul-2026) pero **aparcado a propósito**:
