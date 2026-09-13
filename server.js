@@ -83,6 +83,12 @@ app.use((req, _res, next) => {
 /* ── Static files (SPA) ──────────────────────────────────────── */
 app.use(express.static(path.join(__dirname, 'public')));
 
+/* ── Web pública ─────────────────────────────────────────────────
+   Las páginas que antes vivían en WordPress (docs/SALIDA_DE_WORDPRESS.md).
+   `extensions` sirve public/web/mision.html en /mision, sin listar rutas a mano.
+   Va antes del catch-all de la SPA para que no acaben todas en index.html. */
+app.use(express.static(path.join(__dirname, 'public/web'), { extensions: ['html'] }));
+
 /* ── API Routes ───────────────────────────────────────────────── */
 
 // Config pública (no sensible) para el frontend
