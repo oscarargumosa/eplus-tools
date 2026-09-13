@@ -23,7 +23,7 @@ El proxy es el nginx del host: `/etc/nginx/conf.d/intake.eufundingschool.com.con
 
 | | |
 |---|---|
-| **URL** | https://dev.eufundingschool.com — *pendiente del registro DNS* |
+| **URL** | https://dev.eufundingstudio.com — activa, con certificado |
 | Dónde corre | `/opt/eplus-tools-dev`, servicio systemd `eplus-dev.service`, puerto `3013` |
 | Rama | `dev-vps` |
 | Base de datos | MySQL `eplus_tools_dev` (127.0.0.1:3306) — **nunca `eplus_tools`** |
@@ -33,18 +33,28 @@ El proxy es el nginx del host: `/etc/nginx/conf.d/intake.eufundingschool.com.con
 
 `JWT_SECRET` es distinto del de producción a propósito: una sesión de dev no vale en la live y
 al revés. El nginx de dev manda `X-Robots-Tag: noindex` y tiene el basic auth preparado
-(comentado) en `/etc/nginx/conf.d/dev.eufundingschool.com.conf`.
+(comentado) en `/etc/nginx/conf.d/dev.eufundingstudio.com.conf`.
 
-## 3 · Local del PC (Laragon)
+La BD de dev es un **clon** de la live (13-sep-2026). Las contraseñas de usuario pueden
+divergir: la de Óscar se repuso solo en dev, la de producción quedó intacta.
+
+## 3 · La web oficial (futura)
+
+`eufundingstudio.com` está registrado en Namecheap (jul-2026) pero **aparcado a propósito**:
+la raíz no tiene registro A. Será la web pública el día del lanzamiento. El flujo previsto es
+`dev.eufundingstudio.com` → `intake.eufundingschool.com` (semi-live, la puerta de antes) →
+`eufundingstudio.com` (oficial).
+
+## 4 · Local del PC (Laragon)
 
 Rama `dev-local`, MySQL de Laragon. Ver `CLAUDE.md` §Servidor y Entorno.
 
-## 4 · Cron de datos
+## 5 · Cron de datos
 
 `/opt/eplus-tools-cron`, rama `data-auto`, `eplus-data-refresh.service`. Solo refresca datos de
 convocatorias; **no** es una instancia de la app.
 
-## 5 · Checkout obsoleto
+## 6 · Checkout obsoleto
 
 `/opt/eplus-tools` quedó parado en la rama `feat/visor-kb` (27-jun-2026) y no sirve nada.
 No trabajar ahí.

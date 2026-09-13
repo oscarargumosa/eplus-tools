@@ -40,9 +40,9 @@ curl -s -o /dev/null -w "▸ localhost:3013 responde %{http_code}\n" http://127.
 
 cat <<'FIN'
 
-Falta lo que depende del DNS (dev.eufundingschool.com A 91.98.145.106):
-  mv /etc/nginx/conf.d/dev.eufundingschool.com.conf.pendiente-dns \
-     /etc/nginx/conf.d/dev.eufundingschool.com.conf
+Falta lo que depende del DNS (dev.eufundingstudio.com A 91.98.145.106):
+  mv /etc/nginx/conf.d/dev.eufundingstudio.com.conf.pendiente-dns \
+     /etc/nginx/conf.d/dev.eufundingstudio.com.conf
   nginx -t && systemctl reload nginx
-  certbot --nginx -d dev.eufundingschool.com
+  certbot --nginx -d dev.eufundingstudio.com
 FIN
