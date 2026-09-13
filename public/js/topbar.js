@@ -10,7 +10,8 @@
      (docs/SALIDA_DE_WORDPRESS.md). Fuera de producción se usa la versión en
      código; en producción siguen apuntando a WordPress hasta el cutover (P5). */
   var YA_EN_CODIGO = {
-    'https://eufundingschool.com/academia/': '/mision'
+    'https://eufundingschool.com/academia/': '/mision',
+    'https://eufundingschool.com/recursos/': '/recursos/'
   };
 
   /* ── Enlaces que salen del producto ──────────────────────────
