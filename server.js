@@ -159,6 +159,9 @@ function checkConfig() {
 
 /* ── Start ────────────────────────────────────────────────────── */
 checkConfig();
-app.listen(PORT, () => {
-  console.log(`[E+ Tools] Server running on port ${PORT} (${process.env.NODE_ENV || 'development'})`);
+// HOST=127.0.0.1 deja el puerto solo detrás del proxy (lo usa la instancia dev del VPS).
+// Por defecto 0.0.0.0, que es lo que necesita el contenedor de Coolify.
+const HOST = process.env.HOST || '0.0.0.0';
+app.listen(PORT, HOST, () => {
+  console.log(`[E+ Tools] Server running on ${HOST}:${PORT} (${process.env.NODE_ENV || 'development'})`);
 });
