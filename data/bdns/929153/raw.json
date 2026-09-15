@@ -1,0 +1,72 @@
+{
+  "id": 1130714,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BERGARA",
+    "nivel3": "AYUNTAMIENTO DE BERGARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929153",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 19500,
+  "mrr": false,
+  "descripcion": "Convocatoria de los bonos-ayuda “Bergara Bizi” para el año 2026",
+  "descripcionLeng": "\"Bergara Bizi” bonu-laguntzen 2026 urteko deialdia ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria para el reparto de los bono-ayuda 2026 según la ordenanza reguladora de los bono-ayuda “Bergara Bizi” dirigida al alumnado.",
+  "urlBasesReguladoras": "https://www.bergara.eus/eu/dirulaguntzak",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-20",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520727,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bergara_Bizi_bonu_laguntza_deialdia_2026_eus.pdf",
+      "long": 40554,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520726,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bergara_Bizi_bolu_laguntza_deialdia_2026_es.pdf",
+      "long": 92308,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

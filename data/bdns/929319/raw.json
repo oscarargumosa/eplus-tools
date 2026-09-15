@@ -1,0 +1,64 @@
+{
+  "id": 1130880,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TOLOSA",
+    "nivel3": "AYUNTAMIENTO DE TOLOSA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929319",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9200,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones para trabajos de fin de grado, fin de máster y proyecto de Formación Profesional de Grado Superior sobre Tolosa o Tolosaldea",
+  "descripcionLeng": "Tolosari edo Tolosaldeari buruzko gradu amaierako lanak, master amaierako lanak eta Goi Mailako Lanbide Heziketako proiektuak egiteko dirulaguntzen deialdia",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza general de subvenciones del Ayto. de Tolosa",
+  "urlBasesReguladoras": "https://udala.tolosa.eus/sites/default/files/DL%20ORDENANTZA%20OROKORRA%20%282024%29_0.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2027-06-01",
+  "fechaFinSolicitud": "2027-10-10",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521090,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Dekretua.pdf",
+      "long": 889933,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

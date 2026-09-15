@@ -1,0 +1,67 @@
+{
+  "id": 1130864,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TEROR",
+    "nivel3": "AYUNTAMIENTO DE TEROR"
+  },
+  "sedeElectronica": "https://teror.sedelectronica.es",
+  "codigoBDNS": "929303",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 69000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, CON DESTINO A CLUBES DEPORTIVOS Y DEPORTISTAS INDIVIDUALES DEL MUNICIPIO DE TEROR, PARA LA\nANUALIDAD 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, CON DESTINO A CLUBES DEPORTIVOS Y DEPORTISTAS INDIVIDUALES DEL MUNICIPIO DE TEROR, PARA LA\nANUALIDAD 2026",
+  "urlBasesReguladoras": "https://teror.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOLETÍN OFICIAL DE LA PROVINCIA",
+  "textFin": "QUINCE DÍAS DESDE EL SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521038,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1247 Resolución, aprobar gasto, bases y convocatoria 2026.pdf",
+      "long": 1111884,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

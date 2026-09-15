@@ -1,0 +1,115 @@
+{
+  "id": 1130782,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "AGENCIA GALLEGA DE INNOVACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929221",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para la concesión de las ayudas VInnovate Galicia al amparo de la tercera convocatoria del mecanismo de financiación  interregional VInnovate 2026_Medida sujeta REG (UE) 651/2014, DE 17 DE JUNIO, de exención",
+  "descripcionLeng": "Bases reguladoras para a concesión das axudas VInnovate Galicia ao amparo da terceira convocatoria do mecanismo de financiamento  interrexional VInnovate 2026_Medida suxeita REG (UE) 651/2014, DE 17 DE JUNIO, de exención",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Servicios de investigación y seguridad",
+      "codigo": "80"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de las ayudas VInnovate Galicia al amparo de la tercera convocatoria del mecanismo de financiación  interregional VInnovate 2026_Medida sujeta REG (UE) 651/2014, DE 17 DE JUNIO, de exención",
+  "urlBasesReguladoras": "https://www.xunta.gal/dog",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en DOG",
+  "textFin": "19.10.2026",
+  "ayudaEstado": "SA.000000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.000000",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 25 AYUDAS A PROYECTOS DE INVESTIGACIÓN Y DESARROLLO."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520876,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ConvocatoriaVInnovateGalicia.2026_cas_20260911_133558.pdf",
+      "long": 583809,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520878,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "ConvocatoriaVInnovateGalicia.2026_gal_20260911_133636.pdf",
+      "long": 3066192,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520879,
+      "descripcion": "Cuestionario de cumplimiento con el Reglamento STEP",
+      "nombreFic": "Cuestionario de cumplimiento con el Reglamento STEP_20260911_133702.pdf",
+      "long": 1440631,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520880,
+      "descripcion": "Cuestionario de cumprimento co Regulamento STEP",
+      "nombreFic": "Cuestionario de cumprimento co Regulamento STEP_20260911_133723.pdf",
+      "long": 333000,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520881,
+      "descripcion": "Solicitude IN848G-C",
+      "nombreFic": "IN848G-C_20260911_133749.pdf",
+      "long": 3120060,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520882,
+      "descripcion": "Solicitude IN848G-G",
+      "nombreFic": "IN848G-G (1)_20260911_133815.pdf",
+      "long": 3116623,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

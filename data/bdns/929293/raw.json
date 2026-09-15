@@ -1,0 +1,80 @@
+{
+  "id": 1130854,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CATADAU",
+    "nivel3": "AYUNTAMIENTO DE CATADAU"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929293",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4100,
+  "mrr": false,
+  "descripcion": "Convocatoria por la concesión de premios al uso del valenciano en el comercio local de Catadau 2026",
+  "descripcionLeng": "Convocatòria per la concessió de premis a l’ús del valencià en el comerç local de Catadau 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES DE LOS PREMIOS AL USO DEL VALENCIANO EN EL COMERCIO LOCAL 2026",
+  "urlBasesReguladoras": "https://catadau.sede.dival.es/carpetaciudadana/tramite.aspx ?idtramite=17126",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-20",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521024,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Resolución Nº 802 de 14_09_2026 _5. DECRETO_ - SEGRA 1229699.pdf",
+      "long": 389720,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1521023,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 802 de 14_09_2026 _5. DECRETO_ - SEGRA 1229699.pdf",
+      "long": 389720,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

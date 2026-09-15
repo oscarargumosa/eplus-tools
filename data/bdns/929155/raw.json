@@ -1,0 +1,72 @@
+{
+  "id": 1130716,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SOBER",
+    "nivel3": "AYUNTAMIENTO DE SOBER"
+  },
+  "sedeElectronica": "https://concellodesober.sedelectronica.gal/info.0",
+  "codigoBDNS": "929155",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12600,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS PARA LA CONVOCATORIA DE AYUDAS PARA LA ADQUISICIÓN DE LIBROS Y MATERIAL ESCOLAR Y PAGO DE GASTOS DE MATRÍCULA DE ALUMNAS/LOS DE EDUCACIÓN INFANTIL (2º CICLO) Y EDUCACIÓN PRIMARIA DEL CEIP PLURILINGÜE VIRXE DO CARME, ESO Y CICLOS DE FP",
+  "descripcionLeng": "BASES REGULADORAS PARA A CONVOCATORIA DE AXUDAS PARA A ADQUISICIÓN DE LIBROS E MATERIAL ESCOLAR E PAGAMENTO DE GASTOS DE MATRÍCULA DE ALUMNAS/OS DE EDUCACIÓN INFANTIL (2º CICLO) E EDUCACIÓN PRIMARIA DO CEIP VIRXE DO CARME, ESO E CICLOS DE FP, BAC E UNIVER",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONVOCATORIA DE AYUDAS PARA LA ADQUISICIÓN DE LIBROS Y MATERIAL ESCOLAR Y PAGO DE GASTOS DE MATRÍCULA DE ALUMNAS/LOS DE EDUCACIÓN INFANTIL (2º CICLO) Y EDUCACIÓN PRIMARIA DEL CEIP PLURILINGÜE VIRXE DO CARME, ESTUDIANTES DE SECUN",
+  "urlBasesReguladoras": "https://concellodesober.sedelectronica.gal/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "El día siguiente a la publicación de la convocatoria en el BOP Lugo",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520708,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026axudas  material escolar.docx",
+      "long": 63100,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520706,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Ayudas escolares Sober 2026 castellano.docx",
+      "long": 71854,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

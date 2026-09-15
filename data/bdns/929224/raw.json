@@ -1,0 +1,64 @@
+{
+  "id": 1130785,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.ugr.es/portal/procedimientos/Becas-propias-Ayudas-a-la-capacitacion-lingueistica-en-Grado/",
+  "codigoBDNS": "929224",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 125000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DE LOS VICERRECTORADOS DE ESTUDIANTES Y VIDA UNIVERSITARIA Y VICERRECTORADO DE INTERNACIONALIZACIÓN, POR LA QUE SE CONVOCAN AYUDAS PARA LA CAPACITACIÓN LINGÜÍSTICA DE SUS ESTUDIANTES DE GRADO EN EL CURSO ACADÉMICO 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución de 3 de junio de 2022 de la Universidad de Granada, por la que se establecen las bases reguladoras para la concesión de las becas y ayudas al estudiantado (BOJA núm. 108, de 8 de junio de 2022)",
+  "urlBasesReguladoras": "https://www.juntadeandalucia.es/boja/2022/108/10",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-05",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520872,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Capacitación 2026-2027 def.pdf",
+      "long": 189096,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

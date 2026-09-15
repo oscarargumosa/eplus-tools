@@ -1,0 +1,78 @@
+{
+  "id": 1130825,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929264",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500000,
+  "mrr": false,
+  "descripcion": "Resolución de convocatoria para la concesión de subvenciones, en régimen de concurrencia no competitiva, para el fomento de la difusión de cine en versión catalana, original, doblada o subtitulada, y de producción catalana, en salas de exhibición",
+  "descripcionLeng": "Resolució de convocatòria per a la concessió de subvencions, en règim de concurrència no competitiva, per al foment de la difusió de cinema en versió catalana, original, doblada o subtitulada, i de producció catalana, en sales d'exhibició",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades cinematográficas, de vídeo y de programas de televisión",
+      "codigo": "59.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "bases específicas que regirán la concesión de subvenciones para el fomento de la difusión de cine en versión catalana, original, doblada o subtitulada, y de producción catalana, en salas de exhibición.",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/8770/1931124.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-21",
+  "fechaFinSolicitud": "2026-10-05",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520975,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Foment difusió cinema en VOC_catsigned.pdf",
+      "long": 182405,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520974,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Foment difusió cinema en VOC_cast.pdf",
+      "long": 91612,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

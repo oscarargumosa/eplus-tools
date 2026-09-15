@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "929132",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TÀRREGA / AYUNTAMIENTO DE TÀRREGA",
+  "nuts_codes": [
+    "ES513"
+  ],
+  "nuts_primary": "ES513",
+  "title": "Resolución de alcaldía, núm. 2026/1054, del 7 de septiembre de 2026, por la cual se aprueba la convocatoria para la concesión de subvenciones para rehabilitación y mejora de viviendas vacías/desocupadas destinadas a borsa de alquiler asequible de Tàrrega.",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-09-14",
+  "open_date": "2026-09-17",
+  "deadline": "2026-11-22",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 120000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "41.0",
+      "descripcion": "Construcción de edificios"
+    }
+  ],
+  "apply_url": "https://www.tarrega.cat/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929132",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/160/202616007101.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-15T04:07:57.566Z"
+}

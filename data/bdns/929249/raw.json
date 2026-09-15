@@ -1,0 +1,72 @@
+{
+  "id": 1130810,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GRANOLLERS",
+    "nivel3": "AYUNTAMIENTO DE GRANOLLERS"
+  },
+  "sedeElectronica": "https://seuelectronica.granollers.cat/portal/sede/se_contenedor1.jsp?seccion=s_fdoc_d4_v1.jsp&contenido=6107&tipo=5&nivel=1400&layout=se_contenedor1.jsp&codResi=1&language=ca&codMenu=63&codMenuPN=21",
+  "codigoBDNS": "929249",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8500,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones en régimen de concurrencia competitiva para la escolarización de alumnos de la Escuela Municipal de Música Josep M. Ruera y del Conservatorio, curso 26/27",
+  "descripcionLeng": "Convocatòria per a la concessió de subvencions en règim de concurrència competitiva per a l'escolarització d'alumnes de l'Escola Municipal de Música Josep M. Ruera i del Conservatori, curs 26/27",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas que regulan la concesión de subvenciones destinadas a la practica deportiva, a la escolarización escuelas infantiles municipales y privadas y escolarización escuela municipal de música y al conservatorio para el curso 26/27",
+  "urlBasesReguladoras": "https://seuelectronica.granollers.cat/portal/sede/RecursosWeb/DOCUMENTOS/1/0_9361_1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BOPB",
+  "textFin": "10 días hábiles a partir del día siguiente de la publicación del extracto de la convocatoria en BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520952,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resolució Alcaldia.PDF",
+      "long": 361953,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520951,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificat resolució aprovació convocatòria (castellà).PDF",
+      "long": 288526,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "929138",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / INSTITUTO CÁNTABRO DE SERVICIOS SOCIALES",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "Resolución de la Consejera de Inclusión Social, Juventud, Familias e Igualdad por la que se aprueba la convocatoria para la concesión de subvenciones destinadas a asociaciones sin ánimo de lucro del medio rural para atención podológica 2026-2027.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://rec.cantabria.es/rec/bienvenida.htm",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929138",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo 1 Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo 1B Declaración 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo usuarias",
+      "url": null
+    },
+    {
+      "label": "Anexo 3 Memoria Económica y de Actividad Justificativa 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo 4 Logotipo 2026",
+      "url": null
+    },
+    {
+      "label": "Anexo 2 Memoria Proyecto 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=421858",
+  "text_inicio": "20 días hábiles desde el día siguiente a la publicación del extracto de la convocatoria en BOC",
+  "text_fin": "Plazo máximo de 20 días hábiles contado desde el día siguiente a la publicación del extracto BOC",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-15T04:07:57.568Z"
+}

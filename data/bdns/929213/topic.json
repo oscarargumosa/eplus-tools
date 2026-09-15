@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "929213",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE FUERTEVENTURA / CABILDO INSULAR DE FUERTEVENTURA",
+  "nuts_codes": [
+    "ES704"
+  ],
+  "nuts_primary": "ES704",
+  "title": "CONVOCATORIA DE BECAS EN ESPECIE PARA LA INMERSIÓN LINGÜÍSTICA, CURSO 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 99925,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929213",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boplaspalmas.net/boletines/2024/5-7-24/5-7-24.pdf",
+  "text_inicio": "A PARTIR DEL DIA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE LAS PALMAS",
+  "text_fin": "15 DÍAS HÁBILES A PARTIR DEL DIA SIGUIENTE A SU PUBLICACIÓN EN EL BOP DE LAS PALMAS",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-15T04:07:57.589Z"
+}

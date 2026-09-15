@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "929195",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AZUQUECA DE HENARES / AYUNTAMIENTO DE AZUQUECA DE HENARES",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "SUBVENCIÓN PARA ACTUACIONES DIRIGIDAS A LA ATENCIÓN DE PERSONAS CON DIVERSIDAD FUNCIONAL DEL MUNICIPIO. EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929195",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://azuqueca.sedelectronica.es/preview-document/b6af17ee-5a30-4cfa-9947-a2229f572c4d/",
+  "text_inicio": "A partir del día siguiente la publicación de la presente convocatoria en BOP",
+  "text_fin": "Diez días naturales, a partir del día siguiente a la publicación de la convocatoria en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-15T04:07:57.586Z"
+}

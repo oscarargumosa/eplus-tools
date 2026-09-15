@@ -1,0 +1,72 @@
+{
+  "id": 1130873,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GRANOLLERS",
+    "nivel3": "AYUNTAMIENTO DE GRANOLLERS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929312",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de las subvenciones, en régimen de concurrencia competitiva, para hacer frente a gastos de la vivienda habitual dirigida a personas propietarias en situación de escasa capacidad económica y vulnerabilidad. Año 2026",
+  "descripcionLeng": "Convocatòria per a la concessió de les subvencions, en règim de concurrència competitiva, per fer front a despeses de l'habitatge habitual adreçada a persones propietàries en situació d'escassa capacitat econòmica i vulnerabilitat. Any 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas para la concessión de la subvención, en régimen de concurrencia competitiva, para hacer frente a gastos de la vivienda habitual dirigida a personas propietarias en situación de escasa capacidad económica y vulnerabilidad",
+  "urlBasesReguladoras": "https://seuelectronica.granollers.cat/portal/sede/RecursosWeb/DOCUMENTOS/1/0_9392_1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente de la publicación del extracto de la convocatoria en el BOPB",
+  "textFin": "El 16 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521073,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Acord de Junta de Govern Local.PDF",
+      "long": 244779,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1521072,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Document amb signatures Secretaria i Alcaldia.PDF",
+      "long": 298998,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

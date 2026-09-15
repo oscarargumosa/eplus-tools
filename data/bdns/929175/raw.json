@@ -1,0 +1,72 @@
+{
+  "id": 1130736,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CARTAGENA",
+    "nivel3": "AYUNTAMIENTO DE CARTAGENA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929175",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 489000,
+  "mrr": false,
+  "descripcion": "DEP BASES PARA LA CONCECIÓN DE SUBVENCIÓN POR EL PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA A ENTIDADES Y ASOCIACIONES DEPORTIVAS PARA EL FOMENTO DE LA ACTIVIDAD FISICA Y DEL DEPORTE. AÑO 2026. PROGRAMA \"A\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ley 38/2003 de 17 de noviembre, General de Subvenciones y las Bases de Ejecución del Presupuesto Municipal 2026",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/pdf/2003/BOE-A-2003-20977-consolidado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el BORM",
+  "textFin": "Hasta diez días hábiles depués de su publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520772,
+      "descripcion": "CERTIFICADO JUNTA DE GOBIERNO",
+      "nombreFic": "CFOD01.DEPORTES.SUBVENCIONES CONCURRENCIA COMPETITIVA 2026 - SEFYCU 4423581.pdf",
+      "long": 368987,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520771,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "FOD01.1.DEPORTES.PPTA.54R.SUBVENCIONES CONCURRENCIA COMPETITIVA 2026.pdf",
+      "long": 3065857,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,75 @@
+{
+  "id": 1130813,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AMOREBIETA-ETXANO",
+    "nivel3": "AYUNTAMIENTO DE AMOREBIETA-ETXANO"
+  },
+  "sedeElectronica": "https://e-udala.amorebieta-etxano.eus",
+  "codigoBDNS": "929252",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones 2026 del Ayuntamiento de Amorebieta-Etxano, para la instalación de rótulos, páginas web e imágenes corportaivas en euskera en el municipio de Amorebieta-Etxano.",
+  "descripcionLeng": "2026ko Amorebieta-Etxanoko deialdia, udalerrian merkataritza esparruan errotuluak, web-orriak eta korporazioaren irudiak euskaraz jartzeko.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "El Ayuntamiento de Amorebieta-Etxano en Sesión Plenaria Ordinaria de fecha 24/07/2008 acordó aprobar definitivamente la Ordenanza Reguladora de Subvenciones del Ayuntamiento de Amorebieta-Etxano y de aquellas normas específicas en materia de Bienestar Soc",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2008/08/20080806a149.pdf?hash=9e6749a737ff90f0202c32870158020a#page=38",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520950,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DEIALDIA ROTULAZIOA EUSKARAZ 2026.pdf",
+      "long": 2753951,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520946,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA ROTULACION EN EUSKERA 2026.pdf",
+      "long": 2753951,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,75 @@
+{
+  "id": 1130386,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GETAFE",
+    "nivel3": "AYUNTAMIENTO DE GETAFE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928825",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 425000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES POR EL AYUNTAMIENTO DE GETAFE PARA ACTUACIONES RELATIVAS A LA ACCESIBILIDAD Y REHABILITACIÓN ENERGÉTICA EN EDIFICIOS DE TIPOLOGÍA RESIDENCIAL EN EL TÉRMINO MUNICIPAL DE GETAFE 2026",
+  "descripcionLeng": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES POR EL AYUNTAMIENTO DE GETAFE PARA ACTUACIONES RELATIVAS A LA ACCESIBILIDAD Y REHABILITACIÓN ENERGÉTICA EN EDIFICIOS DE TIPOLOGÍA RESIDENCIAL EN EL TÉRMINO MUNICIPAL DE GETAFE 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE CONCESIÓN DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://www.bocm.es/bocm/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A LA PUBLICACIÓN EN EL BOLETIN DE LA COMUNIDAD DE MADRID",
+  "textFin": "20 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A LA PUBLICACIÓN EN EL BOLETIN DE LA COMUNIDAD DE MADRID",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520801,
+      "descripcion": "Anexos Conv Edificios",
+      "nombreFic": "01b_ANEXOS_Subv_EDIFICIOS_Firmados_signed.pdf",
+      "long": 1221709,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520800,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "01a_DEF_Bases_subvenciones_EDIFICIOS_2026-V08-04-08-2026_cca_signed.pdf",
+      "long": 484621,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

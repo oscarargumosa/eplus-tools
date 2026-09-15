@@ -1,0 +1,72 @@
+{
+  "id": 1130777,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PADRÓN",
+    "nivel3": "AYUNTAMIENTO DE PADRÓN"
+  },
+  "sedeElectronica": "https://sede.padron.gal/sxc/gl/procedimientosytramites/index.html#subvenciones",
+  "codigoBDNS": "929216",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "Por resolución del alcalde de 31 de agosto de 2026, se aprobó la Convocatoria de subvenciones de concurrencia competitiva dirigida a entidades deportivas destinadas al fomento y apoyo de la realización de actividades deportivas durante el año 2026",
+  "descripcionLeng": "Por resolución do alcalde do 31 de agosto de 2026, aprobouse a Convocatoria de subvencións de concorrencia competitiva dirixida a entidades deportivas destinadas ao fomento e apoio da realización de actividades deportivas durante o ano 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras de la Convocatoria de subvenciones de concurrencia competitiva dirigida a entidades deportivas destinadas al fomento y apoyo de la realización de actividades deportivas durante el año 2026",
+  "urlBasesReguladoras": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2026/09/09/2026_0000005736.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-21",
+  "fechaFinSolicitud": "2026-10-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520856,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "anuncio bop Convocatoria bases subvs concorrencia deportes 2026.pdf",
+      "long": 145073,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    },
+    {
+      "id": 1520857,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "anuncio castellano bop Convocatoria bases subvs concorrencia deportes 2026.pdf",
+      "long": 163423,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
