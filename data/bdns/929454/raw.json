@@ -1,0 +1,72 @@
+{
+  "id": 1131015,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLIÇÀ DE VALL",
+    "nivel3": "AYUNTAMIENTO DE LLIÇÀ DE VALL"
+  },
+  "sedeElectronica": "https://seu.llissadevall.cat/absis/absis/ead/webspublicacion/seu/castellano/emiservicio/41E6BF9D755E4825AF8E6B49E85B5079.asp",
+  "codigoBDNS": "929454",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8500,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones a entidades y asociaciones locals vecinales sin finalidad ni ánimo de lucro que realizen actividades culturales y/o sociales durante 2026",
+  "descripcionLeng": "Convocatòria de subvencions a entitats i associacions locals sense finalitat i ànim de lucre, i en concret pel cas d'entitats veïnals, \nque realitzin activitats culturals i/o socials per a l'any 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones a entidades y asociaciones locales sin finalidad ni ánimo de lucro",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3640140/aprovacio-definitiva-de-les-bases-generals-per-a-la-concessio-de-subvencions-a-entitats-i-associacions-locals-ajuntament-de-llica-de-vall",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la fecha de publicación de la convocatoria en el BOPB",
+  "textFin": "15 días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521524,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Resolució d'alcaldia d'aprovació de convocatòria.pdf",
+      "long": 209563,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521522,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolució d'alcaldia d'aprovació de convocatòria.pdf",
+      "long": 209563,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

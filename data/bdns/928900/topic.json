@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "928900",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LOGROÑO / AYUNTAMIENTO DE LOGROÑO",
+  "nuts_codes": [
+    "ES23"
+  ],
+  "nuts_primary": "ES23",
+  "title": "Resolución de Concejal de Administración Pública, Interior y Proyectos Estratégicos que aprueba el concurso de fotografía para jóvenes \"San Mateo en el objetivo\"",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-09-11",
+  "open_date": "2026-09-28",
+  "deadline": "2026-10-07",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 750,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928900",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://logrono.es/becas-y-subvenciones",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 220866,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42191016-1-PDF-579695",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-16T04:08:52.374Z"
+}

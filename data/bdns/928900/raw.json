@@ -1,0 +1,76 @@
+{
+  "id": 1130461,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LOGROÑO",
+    "nivel3": "AYUNTAMIENTO DE LOGROÑO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "928900",
+  "fechaRecepcion": "2026-09-11",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 750,
+  "mrr": false,
+  "descripcion": "Resolución de Concejal de Administración Pública, Interior y Proyectos Estratégicos que aprueba el concurso de fotografía para jóvenes \"San Mateo en el objetivo\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES23 - LA RIOJA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Concurso fotografía jóvenes San Mateo en el objetivo",
+  "urlBasesReguladoras": "https://logrono.es/becas-y-subvenciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-28",
+  "fechaFinSolicitud": "2026-10-07",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520165,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RCA 06759-2026 DEL 08-09-2026.pdf",
+      "long": 98499,
+      "datMod": "2026-09-11",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 220866,
+      "titulo": "Convocatoria a regularizar",
+      "tituloLeng": null,
+      "texto": "Convocatoria a regularizar",
+      "textoLeng": null,
+      "url": "http://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42191016-1-PDF-579695",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

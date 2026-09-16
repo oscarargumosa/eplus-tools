@@ -1,0 +1,76 @@
+{
+  "id": 1130768,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALDEPEÑAS",
+    "nivel3": "AYUNTAMIENTO DE VALDEPEÑAS"
+  },
+  "sedeElectronica": "https://valdepenas.sedelectronica.es/info.0",
+  "codigoBDNS": "929207",
+  "fechaRecepcion": "2026-09-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4500,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria IX Certamen Internacional de Fotografía Contemporánea Phoco'26. Valdepeñas",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases y convocatoria IX Certamen Internacional de Fotografía Contemporánea Phoco'26. Valdepeñas",
+  "urlBasesReguladoras": "https://www.valdepenas.es/servicios/cultura-2/phoco/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-21",
+  "fechaFinSolicitud": "2026-10-09",
+  "textInicio": "21 de septiembre de 2026",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1520840,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases reguladoras y convocatoria de IX Certamen Internacional de Fotografia PHOCO26.pdf",
+      "long": 302342,
+      "datMod": "2026-09-14",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 220807,
+      "titulo": "Bases y convocatoria del IX Certamen Internacional de Fotografía Contemporánea PHOCO'26. Valdepeñas",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios.Podrán participar en este certamen todos los artistas españoles o extranjeros que lo deseen con residencia en España, mayores de 18 años, que se inscriban en el plazo y forma establecido en la convocatoria.</p><p>Segundo.- Finalidad y objeto del Certamen. La promoción, difusión y apoyo del arte de la fotografía y de sus creadores.</p><p>Tercero.- Bases reguladoras. La presente convocatoria se regirá por las Bases aprobadas mediante resolución de Alcaldía de fecha 9 de septiembre de 2026, estando publicadas en la página web del Ayuntamiento de Valdepeñas www.valdepenas.es.</p><p>Cuarto.- Premios. Se establecen los siguientes premios:</p><p>Primer premio dotado con 3.000 euros, instituido por el Excmo. Ayuntamiento de Valdepeñas.</p><p>Segundo premio dotado con 1.500 euros, instituido por el Excmo. Ayuntamiento de Valdepeñas.</p><p>Quinto.- Plazo de presentación de solicitudes. El plazo de presentación de solicitudes será a partir del día 21 de septiembre de 2026 y hasta el 9 de octubre de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7765766",
+      "cve": "mCvGXy2+2WeQThVPHzGm",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

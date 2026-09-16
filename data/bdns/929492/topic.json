@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "929492",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE DEFENSA / EJÉRCITO DE TIERRA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución 550/MADOC/PC-2026026 de 15 de septiembre de 2026, del TG Jefe del Mando de Adiestramiento y Doctrina por la que se convocan las becas para la matriculación en el Máster de Formación Permanente en Dirección Logística 4.0 de la UCO en 2026.",
+  "title_lang": "es",
+  "summary": "Defensa",
+  "status": "open",
+  "publication_date": "2026-09-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 18400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929492",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/o/2026/07/27/def834",
+  "text_inicio": "Día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado",
+  "text_fin": "Diez (10) días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-16T04:08:52.553Z"
+}

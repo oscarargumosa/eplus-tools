@@ -1,0 +1,80 @@
+{
+  "id": 1131190,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PRINCIPADO DE ASTURIAS",
+    "nivel3": "CONSEJERÍA DE CIENCIA, EMPRESAS, FORMACIÓN Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929629",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Subvenciones  adquisición receptores de SAT-TDT en alta definición “HD” para facilitar la captación de la televisión digital en el Principado de Asturias para el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado",
+      "codigo": "35"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Resolución de 4 de julio de 2025, de la Consejería de Ciencia, Industria y Empleo",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/2025/08/04/2025-06543.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521968,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_Consejeria_Ciencia__Industria_y_Empleo_con_anexos_firma_Consejero (3).pdf",
+      "long": 342173,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521970,
+      "descripcion": "BOPA 10-06-2026 Modificación de bases",
+      "nombreFic": "BOPA 10-VI-2026 MODIFICACIÓN BASES.pdf",
+      "long": 263769,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521969,
+      "descripcion": "Bases BOPA 04-08-2025",
+      "nombreFic": "Bases BOPA 04-08-2025.pdf",
+      "long": 401761,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

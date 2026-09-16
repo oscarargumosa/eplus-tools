@@ -1,0 +1,80 @@
+{
+  "id": 1131126,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "URDULIZ",
+    "nivel3": "AYUNTAMIENTO DE URDULIZ"
+  },
+  "sedeElectronica": "www.urduliz.eus",
+  "codigoBDNS": "929565",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUB-VENCIONES PARA LA UTILIZACIÓN DE LAS PISCI-NAS MUNICIPALES DE OTROS MUNICIPIOS EJER-CICIO 2026",
+  "descripcionLeng": "BESTE UDALERRI BATZUETAKO IGERILEKUAK ERABILTZEKO DIRU-LAGUNTZAK EMATEKO DEIALDIA, 2026KO EKITALDIA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza reguladora del sistema de subvenciones para la utilización de las piscinas municipales de otros municipios",
+  "urlBasesReguladoras": "https://www.urduliz.eus/es-ES/Ayuntamiento/Normativa/ordenanzas_municipales/20250929-ordenanza-piscina-cas.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-11",
+  "textInicio": "Al día siguiente a la publicación de la convocatoria en el Boletín Oficial de Bizkaia ",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521772,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO ALCALDIA deialdia- sinatuta.pdf",
+      "long": 1458319,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521775,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "diru-laguntza-eskaera-piscina.pdf",
+      "long": 473523,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521774,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DECRETO ALCALDIA deialdia- sinatuta.pdf",
+      "long": 1458319,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

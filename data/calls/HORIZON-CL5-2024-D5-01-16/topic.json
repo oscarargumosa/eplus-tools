@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2023-12-07",
   "deadline": "2024-04-18",
   "deadlineModel": "single-stage",
@@ -17,18 +17,18 @@
   "mgaCode": null,
   "budget": null,
   "keywords": [
-    "[\"Policy making on sustainable transport\",\"Ocean sustainability and blue economy\",\"Digital Agenda\",\"Societal Engagement\",\"Sustainable transport - general\",\"Co-programmed European Partnerships\",\"Social sciences and humanities\",\"innovation\",\"business model\",\"zero emission\",\"industry model\",\"waterborne\",\"business\",\"contract\",\"shipping\"]"
+    "[\"Sustainable transport - general\",\"Digital Agenda\",\"Social sciences and humanities\",\"Ocean sustainability and blue economy\",\"Societal Engagement\",\"Policy making on sustainable transport\",\"Co-programmed European Partnerships\",\"contract\",\"waterborne\",\"innovation\",\"business model\",\"business\",\"industry model\",\"zero emission\",\"shipping\"]"
   ],
   "crossCuttingPriorities": [
-    "OCEAN",
     "DigitalAgenda",
+    "SSH",
+    "OCEAN",
     "SocietalEngagement",
-    "PART-COPROGR",
-    "SSH"
+    "PART-COPROGR"
   ],
   "supportInfoText": "",
   "submissionUrl": null,
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL5-2024-D5-01-16.json",
   "documents": [],
-  "fetchedAt": "2026-09-15T04:04:39.407Z"
+  "fetchedAt": "2026-09-16T04:05:32.449Z"
 }

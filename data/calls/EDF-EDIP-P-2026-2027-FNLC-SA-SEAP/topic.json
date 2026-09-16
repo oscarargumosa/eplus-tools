@@ -9,8 +9,8 @@
   "programmePeriod": "2021 - 2027",
   "status": "forthcoming",
   "statusCode": "31094501",
-  "opening": "2026-09-02",
-  "deadline": "2026-10-13",
+  "opening": "2026-10-13",
+  "deadline": "2026-11-12",
   "deadlineModel": "multiple cut-off",
   "actionType": "EDF Lump Sum Grants",
   "actionCode": null,
@@ -84,5 +84,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-09-15T04:04:40.808Z"
+  "fetchedAt": "2026-09-16T04:05:34.882Z"
 }

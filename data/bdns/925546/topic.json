@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "925546",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / LA RIOJA / CONSEJERÍA DE CULTURA, TURISMO, DEPORTE Y JUVENTUD",
+  "nuts_codes": [
+    "ES230"
+  ],
+  "nuts_primary": "ES230",
+  "title": "AYUDAS A PROYECTOS DE EDUCACIÓN PARA UNA CIUDADANÍA GLOBAL",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-08-19",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 250000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "https://ias1.larioja.org/cex/infra/indexCAR.jsp?sist=GSP",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/925546",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ias1.larioja.org/cex/sistemas/GenericoServlet?servlet=cex.sistemas.dyn.portal.ImgServletSis&code=oumCvWIgBUF6lChv9ZDgP_hXhSM_FmcH4dqeY7yXbDzApHyqPVxRsoD-HW0E2YV6LEXZYSr1AOFv%0Asi8dDbPEZmRc-EfbnwcUS13w34QVisg%3D",
+  "text_inicio": "A partir del día siguiente a la fecha de publicación del extracto de la convocatoria en el BOR",
+  "text_fin": "16 días hábiles desde el día siguiente a la fecha de publicación del extracto convocatoria en BOR",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-16T04:08:51.290Z"
+}

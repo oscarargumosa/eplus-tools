@@ -1,0 +1,80 @@
+{
+  "id": 1130955,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARBERÀ DEL VALLÈS",
+    "nivel3": "AYUNTAMIENTO DE BARBERÀ DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929394",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS INDIVIDUALES PARA LA ASISTENCIA A ACTIVIDADES DEPORTIVAS ORGANIZADAS POR ENTIDADES DEPORTIVAS. CURSO 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS INDIVIDUALES PARA LA ASISTENCIA A ACTIVIDADES DEPORTIVAS ORGANIZADAS POR ENTIDADES DEPORTIVAS",
+  "urlBasesReguladoras": "http://www.bdv.cat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-19",
+  "fechaFinSolicitud": "2026-10-18",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521352,
+      "descripcion": "Certificado Acuerdo JG",
+      "nombreFic": "Certificat d'acord. Convoc. individual esports. 2026-2027.pdf",
+      "long": 673331,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521350,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Anuncio conv. individual esports 2026-2027.pdf",
+      "long": 293917,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521351,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Anunci conv. individual esports 2026-2027.pdf",
+      "long": 335564,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

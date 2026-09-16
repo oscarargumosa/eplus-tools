@@ -1,0 +1,72 @@
+{
+  "id": 1131116,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HOSTALETS DE PIEROLA, ELS",
+    "nivel3": "AYUNTAMIENTO DE HOSTALETS DE PIEROLA, ELS"
+  },
+  "sedeElectronica": "www.elshostaletsdepierola.cat",
+  "codigoBDNS": "929555",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 55000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA AYUDAS- BECAS PÚBLICAS INDIVIDUALES - PARA ESCOLARIZACIÓN ALUMNOS HASTA 25 AÑOS, EDUCACIÓN\nINFANTIL,PRIMARIA, SECUNDARIA, BACHILLERATO, CICLOS FORMATIVOS, CENTROS UNIVERSITARIOS Y MÁSTERES, CURSO 2026-\n2027 CONCURRENCIA PÚBLICA NO COMPETITIVA",
+  "descripcionLeng": "CONVOCATÒRIA AJUDES- BEQUES PÚBLIQUES INDIVIDUALS - PER A ESCOLARITZACIÓ ALUMNES FINS 25 ANYS, EDUCACIÓ INFANTIL,\nPRIMÀRIA, SECUNDÀRIA, BATXILLERAT, CICLES FORMATIUS, CENTRES UNIVERSITARIS I MÀSTERS, 2026-2027 CONCURRÈNCIA\nPÚBLICA NO COMPETITIVA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS AYUDAS- BECAS PUBLICAS INDIVIDUALES- ESCOLARIZACIÓN ALUMNOS HASTA 25 AÑOS, EDUCACIÓN\nINFANTIL, PRIMARIA, SECUNDARIA, BACHILLERATO, CICLOS FORMATIVOS, CENTROS UNIVERSITARIOS Y MÁSTERES, RÉGIMEN\nCONCURRENCIA NO COMPETITIVA CURSO 2026-2027",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3971942/aprovacio-inicial-de-la-modificacio-de-les-bases-reguladores-d-ajuts-en-concepte-de-beques-publiques-individuals-per-a-l-escolaritzacio-d-alumnes-fins-a-25-anys-ajuntament-dels-hostalets-de-pierola",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EL DIA SIGUIENTE DE LA PUBLICACION EN EL BOPB Y EN LA SEDE ELECTRONICA DEL AYUNTAMIENTO",
+  "textFin": "16 OCTUBRE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521730,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA_AJUDES ESCOLARITZACIO CURS 2026-2027_15092026.DOCX",
+      "long": 77543,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    },
+    {
+      "id": 1521693,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA AYUDAS ESCOLARIZACION 2026-2027.docx",
+      "long": 209731,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
