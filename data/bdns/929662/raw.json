@@ -1,0 +1,72 @@
+{
+  "id": 1131223,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CALVIÀ",
+    "nivel3": "AYUNTAMIENTO DE CALVIÀ"
+  },
+  "sedeElectronica": "https://www.calvia.com/",
+  "codigoBDNS": "929662",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS Y CONVOCATORIA DE LAS SUBVENCIONES EN EL ÁMBITO DEL IMEB, DIRIGIDAS A ASOCIACIONES DE MADRES Y PADRES DE ALUMNOS DE LOS INSTITUTOS DE EDUCACIÓN SECUNDARIA PARA ACTIVIDADES DE REFUERZO EDUCATIVO EN BACHILLERATO CURSO ESCOLAR 2026-2027",
+  "descripcionLeng": "BASES REGULADORES I CONVOCATÒRIA DE LES SUBVENCIONS EN L'ÀMBIT DE L'IMEB, DIRIGIDES A ASSOCIACIONS DE MARES I PARES D'ALUMNES DELS INSTITUTS D'EDUCACIÓ SECUNDÀRIA PER ACTIVITATS DE REFORÇ EDUCATIU A BATXILLERAT PER AL CURS ESCOLAR 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS Y CONVOCATORIA DE LAS SUBVENCIONES EN EL ÁMBITO DEL IMEB, DIRIGIDAS A ASOCIACIONES DE MADRES Y PADRES DE ALUMNOS DE LOS INSTITUTOS DE EDUCACIÓN SECUNDARIA PARA ACTIVIDADES DE REFUERZO EDUCATIVO EN BACHILLERATO CURSO ESCOLAR 2026-2027",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2026/12318/719136/bases-reguladoras-y-convocatoria-de-las-subvencion",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-02",
+  "fechaFinSolicitud": "2026-10-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522079,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA I BASES SUBVENCIONS AMIPAS_1420121.xsig.pdf",
+      "long": 299850,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522078,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA Y BASES SUBVENCIONES AMIPAS (castellano)_1420122.xsig.pdf",
+      "long": 323471,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

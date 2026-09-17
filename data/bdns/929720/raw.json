@@ -1,0 +1,64 @@
+{
+  "id": 1131281,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBAL",
+    "nivel3": "AYUNTAMIENTO DE ALBAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929720",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A LAS AMPAS, CURSO 2024-2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las bases específicas de las subvenciones a las fallas de la población aprobada por el Pleno en sesión ordinaria del día 29 de enero de 2026 y publicada en el Boletín Oficial de la Provincia de Valencia nº94 de 20 de mayo de 2026",
+  "urlBasesReguladoras": "https://albal.es/content-albal/uploads/2026/05/Bases-reguladoras-ayudas-AMPAs.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "textFin": "A LOS 10 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE A LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522202,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 1827 de 15_09_2026 RESOLUCIÓN APROBACIÓN CONVOCATORIA SUBVENCIONES - SEGRA 1231223.pdf (PROTEGIDO).pdf",
+      "long": 174752,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

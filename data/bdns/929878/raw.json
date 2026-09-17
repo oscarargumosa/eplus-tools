@@ -1,0 +1,72 @@
+{
+  "id": 1131439,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARENYS DE MAR",
+    "nivel3": "AYUNTAMIENTO DE ARENYS DE MAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929878",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "ÀMBIT SOCIAL - SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA A ENTITATS SENSE ÀNIM DE LUCRE, ANY 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BR ESPECIFIQUES PER A LA CONCESSIÓ DE PRESTACIONS ECONÒMIQUES D`URGÈNCIA I DE PRESTACIONS SOCIALS, EN RÈGIM DE CONCURRÈNCIA COMPETITIVA, EN L`AMBIT D`ACCIÓ SOCIAL DE L`AJUNTAMENT D`AR4ENYS DE MAR",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3012948/bases-reguladores-especifiques-per-a-la-concessio-de-prestacions-economiques-d-urgencia-i-de-prestacions-socials-en-regim-de-concurrencia-competitiva-en-l-ambit-d-accio-social-de-l-ajuntament-ajuntament-d-arenys-de-mar",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "COMENÇARÀ L`ENDEMÀ DE LA PUBLICACIÓ AL BOPB",
+  "textFin": "FINALITZARÀ EN ELS 15 DIES HÀBILS SEGÜENTS",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522576,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria_català_2026.pdf",
+      "long": 348359,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522575,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatòria_castellano_2026.pdf",
+      "long": 347148,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

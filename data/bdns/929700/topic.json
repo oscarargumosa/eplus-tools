@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "929700",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / OLIVA DE LA FRONTERA / AYUNTAMIENTO DE OLIVA DE LA FRONTERA",
+  "nuts_codes": [
+    "ES431"
+  ],
+  "nuts_primary": "ES431",
+  "title": "SUBVENCIONES DEL AYUNTAMIENTO DE OLIVA DE LA FRONTERA PARA LA CONCESIÓN DE LOS PREMIOS A LOS MEJORES EXPEDIENTES ACADÉMICOS DEL CURSO 2025-2026 EN RÉGIMEN DE CONCURRENCIA COMPETITIVA",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": "2026-10-15",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 4000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://olivafrontera.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929700",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    },
+    {
+      "label": "Autorización",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://olivafrontera.sedelectronica.es/preview-document/7bb58a7b-ad00-448e-9a56-0940ca7b4e39",
+  "text_inicio": "Al día siguiente a partir de la publicación del extracto en el BOP de Badajoz",
+  "text_fin": "Hasta el 15 de Octubre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.612Z"
+}

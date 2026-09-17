@@ -1,0 +1,64 @@
+{
+  "id": 1131245,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBAL",
+    "nivel3": "AYUNTAMIENTO DE ALBAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929684",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 639000,
+  "mrr": false,
+  "descripcion": "Extracto de la Resolución 1769 de 02 de septiembre de 2026 del Ayto. de Albal, por la que se convoca concesión directa del remanente destinado a comunidades de propietarios con daños sufridos el 29/10/2024. Fondos donados por Fundación Amancio Ortega.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases para la concesión directa del remanente de ayudas económicas a las comunidades de propietarios que hubiesen sido gravemente dañados por las inundaciones del 29 de octubre de 2024, fondos donados por la Fundación Amancio Ortega.",
+  "urlBasesReguladoras": "https://albal.es/content-albal/uploads/2026/09/CONVOCATORIA-DILIGENCIADA-REMANENTE-AMANCIO-ORTEGA-SEFYCU-8589758.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la publicación de la convocatoria en el BOPV",
+  "textFin": "Quince días hábiles contados desde el día siguiente de la publicación de la convocatoria en el BOPV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522083,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "EDICTO REMANENTE AMANCIO ORTEGA COMUNIDADES DE PROPIETARIOS.pdf",
+      "long": 118287,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

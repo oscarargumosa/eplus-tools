@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "929927",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BREÑA BAJA / AYUNTAMIENTO DE BREÑA BAJA",
+  "nuts_codes": [
+    "ES707"
+  ],
+  "nuts_primary": "ES707",
+  "title": "CONVOCATORIA DE LAS DE LAS SUBVENCIONES PARA EL  FOMENTO DE LA ACTIVIDAD DEL TAXI ADAPTADO Y PARA LA ADQUISICIÓN DE VEHÍCULOS NUEVOS ELÉCTRICOS O HÍBRIDOS ENCHUFABLES PARA SU DESTINO AL SERVICIO DE TAXI EN BREÑA BAJA. ANUALIDAD 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929927",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php     ( BOP S/C TENERIFE Nº 56 DE 08/05/2023)",
+  "text_inicio": "Al día siguiente de la publicación  del extractod e la Cconvocatoria en el B.O.P. S/C Tenerife",
+  "text_fin": "15 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.652Z"
+}

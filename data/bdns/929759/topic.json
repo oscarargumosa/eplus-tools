@@ -1,0 +1,104 @@
+{
+  "source": "bdns",
+  "source_id": "929759",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE DESARROLLO RURAL, GANADERÍA, PESCA Y ALIMENTACIÓN",
+  "nuts_codes": [
+    "ES13"
+  ],
+  "nuts_primary": "ES13",
+  "title": "Convocatoria para el año 2027,de las ayudas a la promoción de productos alimentarios de Cantabria (CORPORACIONES LOCALES Y ASOCIACIONES SIN ANIMO DE LUCRO)",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": "2027-02-12",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929759",
+  "documents": [
+    {
+      "label": "ANEXO A2",
+      "url": null
+    },
+    {
+      "label": "ANEXO MODELO B",
+      "url": null
+    },
+    {
+      "label": "ANEXO A3",
+      "url": null
+    },
+    {
+      "label": "ANEXO A1B",
+      "url": null
+    },
+    {
+      "label": "ANEXO B2",
+      "url": null
+    },
+    {
+      "label": "ANEXO B1A",
+      "url": null
+    },
+    {
+      "label": "ANEXO B1B",
+      "url": null
+    },
+    {
+      "label": "ANEXO A1A",
+      "url": null
+    },
+    {
+      "label": "MODELO ANEXO A",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=388846",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACION DEL EXTRACTO EN EL BOC",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.107804",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA -  REG (UE) 702/2014, DE 25 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 24 AYUDAS PARA MEDIDAS DE PROMOCIÓN DE LOS PRODUCTOS AGRÍCOLAS"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.622Z"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "929975",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SOT DE CHERA / AYUNTAMIENTO DE SOT DE CHERA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "RESOLUCIÓN DE ALCALDÍA DE 16 DE SEPTIEMBRE POR LA QUE SE CONVOCAN AYUDAS ECONÓMICAS PARA LA ATENCIÓN A LA INFANCIA 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "sotdechera.sede.dival.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929975",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "DECLARACIÓN RESPONSABLE AYUDAS ATENCION A LA INFANCIA 2026",
+      "url": null
+    },
+    {
+      "label": "DECRETO 238 APROBACIÓN CONVOCATORIA AYUDAS ATENCIÓN A LA INFANCIA 2026",
+      "url": null
+    },
+    {
+      "label": "MODELO DE SOLICITUD AYUDAS ATENCIÓN A LA INFANCIA 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sotdechera.sede.dival.es/tablondeanuncios/anuncio.aspx?id=82265",
+  "text_inicio": "Apartir del día siguiente de la publicación en el BOP de Valencia",
+  "text_fin": "7 días hábiles a partir del día siguiente a su  publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.664Z"
+}

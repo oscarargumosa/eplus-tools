@@ -1,0 +1,79 @@
+{
+  "id": 1131465,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AMPOSTA",
+    "nivel3": "AYUNTAMIENTO DE AMPOSTA"
+  },
+  "sedeElectronica": "seu.amposta.cat",
+  "codigoBDNS": "929904",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LAS ENTIDADES DEPORTIVAS MUNICIPALES",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS A LES ENTITATS ESPORTIVES MUNICIPALS",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORAS ESPECÍFICAS PARA LA CONCESIÓN DE SUBVENCIONES A LAS ENTIDADES DEPORTIVAS MUNICIPALES",
+  "urlBasesReguladoras": "https://amposta.cat/bases-reguladores-concessio-subvencions-programes-i-activitats-participacio-esportiva-partir-2022/?tab=2",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación de la convocatoria en el BOPT",
+  "textFin": "27/09/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522659,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Convocatòria de la subvenció.PDF",
+      "long": 194863,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522658,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convocatòria de la subvenció castellà.PDF",
+      "long": 161461,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

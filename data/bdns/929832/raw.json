@@ -1,0 +1,72 @@
+{
+  "id": 1131393,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "POBLA DE VALLBONA, LA",
+    "nivel3": "AYUNTAMIENTO DE POBLA DE VALLBONA, LA"
+  },
+  "sedeElectronica": "https://seu.lapobladevallbona.es/sta/CarpetaPublic/?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+  "codigoBDNS": "929832",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "Convocatoria subvenciones de libros de texto y material escolar, curso 2026-2027",
+  "descripcionLeng": "Convocatòria subvencions de llibres de text i material escolar, curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprobación de la convocatoria de las subvenciones de libros y material escolar, curso 2026-2027",
+  "urlBasesReguladoras": "https://www.lapobladevallbona.es/fileadmin/user_upload/ordenances/castella_ordenances/cast_ordenanzas_generales_y_reglamentos/ordenanza_subvenciones_y_premios_firmado_castellano.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "un mes, contado a partir del día siguiente de la publicación de este extracto en el BOP de Valencia",
+  "textFin": "un mes, contado a partir del día siguiente de la publicación de este extracto en el BOP de Valencia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522471,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Certificado Acuerdo JGL Ayudas Libros Texto y Material Escolar curso 2026/2027.PDF",
+      "long": 250171,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522470,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado Acuerdo JGL Ayudas Libros Texto y Material Escolar curso 2026/2027.PDF",
+      "long": 250171,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

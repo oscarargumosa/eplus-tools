@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "929974",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALENCIA / FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Convocatoria de Subvenciones en especie, en régimen de concurrencia competitiva, para la selección de un máximo de diez startups del ecosistema innovador valenciano en el stand institucional de València Innovation Capital en SportCities 2026",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "74.9",
+      "descripcion": "Otras actividades profesionales, científicas y técnicas n.c.o.p."
+    }
+  ],
+  "apply_url": "https://valenciainnovationcapital.typeform.com/Startups-VDS-26",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929974",
+  "documents": [
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://valenciainnovationcapital.com/wp-content/uploads/2026/09/260914-R260-26-Resolucion-relacion-prov_WSL26_firmado.pdf",
+  "text_inicio": "Día siguiente a la publicación en el BOP",
+  "text_fin": "20 días naturales tras la publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.664Z"
+}

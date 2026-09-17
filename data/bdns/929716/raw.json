@@ -1,0 +1,96 @@
+{
+  "id": 1131277,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTIAGO DE COMPOSTELA",
+    "nivel3": "AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA"
+  },
+  "sedeElectronica": "https://sede.santiagodecompostela.gal/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME&lang=GA",
+  "codigoBDNS": "929716",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 90000,
+  "mrr": false,
+  "descripcion": "Subvenciones a las Asociaciones Vecinales sin ánimo de lucro 2026",
+  "descripcionLeng": "Subvencións ás Asociacións Veciñais sen ánimo de lucro 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DE EXECUCIÓN DO ORZAMENTO 2025",
+  "urlBasesReguladoras": "https://traductor.dacoruna.gal/fron-trad/urlTranslate.php?direccion3=gl-es&inurl=https://bop.dacoruna.gal/bopportal/publicado/2025/04/09/2025_0000002168.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Ábrese coa publicación das Bases no Boletín Oficial da Provincia da Coruña",
+  "textFin": "10 días hábiles, contados a partir do seguinte á publicación  extracto da convocatoria no BOP Coruña",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522210,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases reguladoras subvenciones RRVV 2026 Castellano.PDF",
+      "long": 430900,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522211,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Bases Convocatoria de Subvención RRVV - 2026.PDF",
+      "long": 208339,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522214,
+      "descripcion": "Bases reguladoras subvenciones RRVV 2026 Castellano",
+      "nombreFic": "Bases reguladoras subvenciones RRVV 2026 Castellano.PDF",
+      "long": 430900,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522213,
+      "descripcion": "Acuerdo de aprobación de la convocatoria",
+      "nombreFic": "Acuerdo de aprobación de la convocatoria.PDF",
+      "long": 148120,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522212,
+      "descripcion": "Bases Convocatoria de Subvención RRVV - 2026",
+      "nombreFic": "Bases Convocatoria de Subvención RRVV - 2026.PDF",
+      "long": 208339,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

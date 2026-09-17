@@ -29,10 +29,10 @@
     "SOCPL-2026-INFO-REPR"
   ],
   "crossCuttingPriorities": [
-    "AI",
-    "DigitalAgenda"
+    "DigitalAgenda",
+    "AI"
   ],
-  "supportInfoText": "Funding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.\n\nIT How to - Funding Tenders Opportunities (europa.eu) : Detailed instructions on how to apply for EU funding, from how to register your organisation, how to manage the roles and access rights to your organisations, proposals and to how to submit your proposal. It gives also detailed instructions on and on how to manage your grant if you are selected.\n\nFor help related to this call, if you did not find an answer in the various support means, please contact: EMPL-SOCPL-2024-INFO-REPR@ec.europa.eu",
+  "supportInfoText": "Funding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.\n\nIT How to - Funding Tenders Opportunities (europa.eu) : Detailed instructions on how to apply for EU funding, from how to register your organisation, how to manage the roles and access rights to your organisations, proposals and to how to submit your proposal. It gives also detailed instructions on and on how to manage your grant if you are selected.\n\nFor help related to this call, if you did not find an answer in the various support means, please contact: EMPL-SOCPL-2026-INFO-REPR@ec.europa.eu",
   "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/43002?topic=SOCPL-2026-INFO-REPR",
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/SOCPL-2026-INFO-REPR",
   "documents": [
@@ -107,5 +107,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-09-15T04:04:41.625Z"
+  "fetchedAt": "2026-09-17T04:05:58.945Z"
 }

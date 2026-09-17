@@ -1,0 +1,82 @@
+{
+  "id": 1131252,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929691",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000000,
+  "mrr": false,
+  "descripcion": "Ayudas a inversiones para las explotaciones agrarias en el marco del Fondo de Transición Nuclear",
+  "descripcionLeng": "Ajuts a inversions per a les explotacions agràries en el marc del Fons de Transició Nuclear",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Bases reguladoras que deben regir la convocatoria de las ayudas a inversiones para las explotaciones agrarias en el marco del Fondo de Transición Nuclear",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1044204",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "01 Mesos",
+  "ayudaEstado": "SA.123671",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.123671",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 14 AYUDAS DESTINADAS A LAS INVERSIONES EN EXPLOTACIONES AGRÍCOLAS VINCULADAS A LA PRODUCCIÓN AGRÍCOLA PRIMARIA"
+    },
+    {
+      "descripcion": "ART. 25 AYUDAS DESTINADAS A REPARAR LOS DAÑOS CAUSADOS POR FENÓMENOS CLIMÁTICOS ADVERSOS QUE PUEDEN ASIMILARSE A UN DESASTRE NATURAL"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522138,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "RESOLUCIÓ AJUDES EXPLOTACIONS FTN.pdf",
+      "long": 356097,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522137,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCIÓN AYUDAS EXPLOTACIONES FTN.pdf",
+      "long": 213127,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

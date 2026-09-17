@@ -1,0 +1,104 @@
+{
+  "id": 1131390,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSORCIO PARA LA GESTIÓN DE RESIDUOS ZONA V5",
+    "nivel3": "CONSORCIO PARA LA GESTIÓN DE RESIDUOS ZONA V5"
+  },
+  "sedeElectronica": "https://consorciresidus.sedelectronica.es/info.10",
+  "codigoBDNS": "929829",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 170000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el año 2026 de la subvención destinada a los municipios, mancomunidades y entidades sin ánimo de lucro del área de gestión del Consorcio de Residuos V5 para el fomento de actuaciones de concienciación ambiental y prevención de residuos.",
+  "descripcionLeng": "Convocatòria per a l’any 2026 de la subvenció destinada als municipis, mancomunitats i entitats sense ànim de lucre de l’àrea de gestió del Consorci de Residus V5 per al foment d’actuacions de conscienciació ambiental i prevenció de residus.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Bases reguladoras comunes de les subvenciones destinadas a los municipios, mancomunidades y entidades sin ánimo de lucro del\nárea de gestión del Consorcio para el fomento de actuaciones en materia de concienciación ambiental y prevención de residuos",
+  "urlBasesReguladoras": "https://consorciresidus.sedelectronica.es/preview-document/7798c60f-ef2d-404a-a9a0-d45fc95df07e/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación de la convocatoria en BOP Valencia",
+  "textFin": "15 días hábiles, a contar desde el día siguiente a la publicación de la convocatoria en BOP Valencia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522452,
+      "descripcion": "ANEXO 2 - PRESENTACIÓN PROYECTO",
+      "nombreFic": "Annex_doc.2_Presentacio projecte_conscienciació_EMPLENABLE.pdf",
+      "long": 704888,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522447,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES SUBV. CONCIENCIACIÓN 2026.pdf",
+      "long": 319667,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522446,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES SUBV. CONCIENCIACIÓN 2026.pdf",
+      "long": 319667,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522449,
+      "descripcion": "ANEXO 1 - SOLICITUD",
+      "nombreFic": "Annex_doc.1_Sol.licitud_conscienciació.pdf",
+      "long": 157350,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522453,
+      "descripcion": "ANEXO 3 - MANTENIMIENTO DE TERCEROS",
+      "nombreFic": "Annex_doc.3_Domiciliació bancària.pdf",
+      "long": 104505,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522506,
+      "descripcion": "BASES CONVOCATORIA SUBV. CONCIENCIACIÓN 2026",
+      "nombreFic": "BASES SUBV. CONCIENCIACIÓN 2026.pdf",
+      "long": 319667,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

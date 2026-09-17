@@ -1,0 +1,72 @@
+{
+  "id": 1131222,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "XOVE",
+    "nivel3": "AYUNTAMIENTO DE XOVE"
+  },
+  "sedeElectronica": "https://xove.sedelecronica.gal",
+  "codigoBDNS": "929661",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 450,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LOS PREMIOS DE FOTOGRAFÍA MEDIOAMBIENTAL \"XOVE, SU COSTA Y SU MAR\"",
+  "descripcionLeng": "CONVOCATORIA DOS PREMIOS DE FOTOGRAFÍA MEDIOAMBIENTAL \"XOVE, A SÚA COSTA E O SEU MAR\"",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases aprobadas en el marco de la Ordenanza General de Subvenciones del Ayuntamiento de Xove publicadas en el B.O.P. núm. 136 del 16 de junio de 2025",
+  "urlBasesReguladoras": "https://xove.sedelectronica.gal/transparency/676b7e81-659d-4cf9-9e3b-9b3918520218/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Desde el momento de la publicación en el BOP del extracto de la convocatoria",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522077,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "PROPOSTA DE CONVOCATORIA PREMIOS DO XII CONCURSO DE FOTOGRAFÍA MEDIOAMBIENTAL, Xove, a súa costa e o seu mar.pdf",
+      "long": 251303,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522076,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "PROPUESTA DE CONVOCATORIA PREMIOS DEL XII CONCURSO DE FOTOGRAFÍA MEDIOAMBIENTAL, Xove, su costa y su mar.pdf",
+      "long": 236795,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

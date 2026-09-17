@@ -1,0 +1,72 @@
+{
+  "id": 1131534,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GALDAKAO",
+    "nivel3": "AYUNTAMIENTO DE GALDAKAO"
+  },
+  "sedeElectronica": "www.galdakao.eus",
+  "codigoBDNS": "929973",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 55000,
+  "mrr": false,
+  "descripcion": "Subvenciones a la comunidad educativa (Centros de Galdakao)",
+  "descripcionLeng": "Hezkuntza-komunitatearentzako dirulaguntzak (Galdakaoko ikastetxeak)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases Reguladoras específicas para la concesión de subvenciones correspondientes al Área de Educación.",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/08/07/II-4749_cas.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-28",
+  "fechaFinSolicitud": "2026-10-09",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522783,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260910_Ebazpena_EBAZPENA  RESOLUCION 2026-2089 [Ebazpena PR_2026_2875 - HEZKUNTZA ARLOARI DAGOZKION DIRULAGUNTZEN DEIALDIA _ CONVOCATORIA DE SUBVENCIONES CORRESPONDIENTES AL ÁREA DE EDUCACIÓN] (4).pdf",
+      "long": 685019,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522782,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260910_Ebazpena_EBAZPENA  RESOLUCION 2026-2089 [Ebazpena PR_2026_2875 - HEZKUNTZA ARLOARI DAGOZKION DIRULAGUNTZEN DEIALDIA _ CONVOCATORIA DE SUBVENCIONES CORRESPONDIENTES AL ÁREA DE EDUCACIÓN] (4).pdf",
+      "long": 685019,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1131412,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MATARÓ",
+    "nivel3": "AYUNTAMIENTO DE MATARÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929851",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Convocatoria del XXI Premio de Narrativa de ciencia ficción, Manuel de Pedrolo, ciudad de Mataró.",
+  "descripcionLeng": "Convocatòria del XXI Premi de Narrativa de ciència-ficció, Manuel de Pedrolo, ciutat de Mataró.\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases y convocatoria del Premio de Narrativa de ciencia ficción Manuel de Pedrolo. Ciudad de Mataró.",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3988665/bases-i-convocatoria-del-premi-de-narrativa-de-ciencia-ficcio-manuel-de-pedrolo-ciutat-de-mataro-ajuntament-de-mataro",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2027-02-28",
+  "textInicio": "Des del dia siguiente de la publicación del extracto de la convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522499,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "decret_premi_pedrolo_xxi_2026_2027.pdf",
+      "long": 186073,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522497,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "decreto_premio_pedrolo_xxi_2026_2027.pdf",
+      "long": 64303,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

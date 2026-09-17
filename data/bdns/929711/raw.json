@@ -1,0 +1,167 @@
+{
+  "id": 1131272,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORRES DE COTILLAS, LAS",
+    "nivel3": "AYUNTAMIENTO DE TORRES DE COTILLAS, LAS"
+  },
+  "sedeElectronica": "https://lastorresdecotillas.sedelectronica.es/dossier.6",
+  "codigoBDNS": "929711",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "Convocatoria del procedimiento de concesión de subvenciones en régimen de concurrencia competitiva a clubes, asociaciones deportivas y deportistas individuales sin ánimo de lucro.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    },
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las bases sobre concesión de subvenciones en régimen de concurrencia competitiva a clubes, asociaciones deportivas y deportistas individuales sin ánimo de lucro",
+  "urlBasesReguladoras": "www.borm.es/services/anuncio/ano/2021/numero/5495/pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a publicación en el B.O.R.M. ",
+  "textFin": "15 Días hábiles desde el día siguiente a su publicación en el B.O.R.M.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522175,
+      "descripcion": "ANEXO VIII-A",
+      "nombreFic": "20260908_ANEXO VIII-A.pdf",
+      "long": 191288,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522165,
+      "descripcion": "ANEXO I",
+      "nombreFic": "20260908_ANEXO I.pdf",
+      "long": 194532,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522167,
+      "descripcion": "ANEXO II",
+      "nombreFic": "20260908_ANEXO II.pdf",
+      "long": 164030,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522169,
+      "descripcion": "ANEXO III",
+      "nombreFic": "20260908_ANEXO III.pdf",
+      "long": 146252,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522170,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "20260908_ANEXO IV.pdf",
+      "long": 134220,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522171,
+      "descripcion": "ANEXO V",
+      "nombreFic": "20260908_ANEXO V.pdf",
+      "long": 153352,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522185,
+      "descripcion": "ANEXO X",
+      "nombreFic": "20260908_ANEXO X.pdf",
+      "long": 121803,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522173,
+      "descripcion": "ANEXO VII",
+      "nombreFic": "20260908_ANEXO VII.pdf",
+      "long": 134113,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522178,
+      "descripcion": "ANEXO VIII-B",
+      "nombreFic": "20260908_ANEXO VIII-B.pdf",
+      "long": 175896,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522182,
+      "descripcion": "ANEXO VIII-C",
+      "nombreFic": "20260908_ANEXO VIII-C.pdf",
+      "long": 132722,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522183,
+      "descripcion": "ANEXO IX",
+      "nombreFic": "20260908_ANEXO IX.pdf",
+      "long": 125547,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522162,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260908_Resolución_Decreto_DECRETO 2026-2373 [DECRETO DEL CONCEJAL DELEGADO APROBANDO LA CONVOCATORIA Y BASES].pdf",
+      "long": 600813,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522172,
+      "descripcion": "ANEXO VI",
+      "nombreFic": "20260908_ANEXO VI.pdf",
+      "long": 131848,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

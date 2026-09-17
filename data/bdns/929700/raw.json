@@ -1,0 +1,84 @@
+{
+  "id": 1131261,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OLIVA DE LA FRONTERA",
+    "nivel3": "AYUNTAMIENTO DE OLIVA DE LA FRONTERA"
+  },
+  "sedeElectronica": "https://olivafrontera.sedelectronica.es",
+  "codigoBDNS": "929700",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES DEL AYUNTAMIENTO DE OLIVA DE LA FRONTERA PARA LA CONCESIÓN DE LOS PREMIOS A LOS MEJORES EXPEDIENTES ACADÉMICOS DEL CURSO 2025-2026 EN RÉGIMEN DE CONCURRENCIA COMPETITIVA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES431 - Badajoz"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS CON CONVOCATORIA REGULADORAS DE SUBVENCIONES DEL AYUNTAMIENTO DE OLIVA DE LA FRONTERA PARA LA CONCESIÓN DE LOS PREMIOS A LOS MEJORES EXPEDIENTES ACADÉMICOS DEL CURSO 2025-2026 EN RÉGIMEN DE CONCURRENCIA COMPETITIVA",
+  "urlBasesReguladoras": "https://olivafrontera.sedelectronica.es/preview-document/7bb58a7b-ad00-448e-9a56-0940ca7b4e39",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "Al día siguiente a partir de la publicación del extracto en el BOP de Badajoz",
+  "textFin": "Hasta el 15 de Octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522150,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO DE ALCALDIA 2026-0964 [resolución alcaldía mejores expedientes 25-26].pdf",
+      "long": 424194,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522151,
+      "descripcion": "Solicitud",
+      "nombreFic": "Anexo I - Solicitud.pdf",
+      "long": 334038,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522152,
+      "descripcion": "Autorización",
+      "nombreFic": "Anexo II - Autorizacion.pdf",
+      "long": 281314,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

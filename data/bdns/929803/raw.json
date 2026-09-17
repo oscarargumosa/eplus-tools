@@ -1,0 +1,96 @@
+{
+  "id": 1131364,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALGECIRAS",
+    "nivel3": "AYUNTAMIENTO DE ALGECIRAS"
+  },
+  "sedeElectronica": "https://algeciras.sedelectronica.es/info.0",
+  "codigoBDNS": "929803",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA DELEGACIÓN DE IGUALDAD Y BIENESTAR SOCIAL DEL EXCMO. AYUNTAMIENTO DE ALGECIRAS PARA LA CONCESIÓN DE SUBVENCIONES A LAS ASOCIACIONES Y OTRAS ONG, SIN ÁNIMO DE LUCRO PARA EL EJERCICIO ECONÓMICO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES612 - Cádiz"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA DELEGACIÓN DE IGUALDAD Y BIENESTAR SOCIAL DEL EXCMO. AYUNTAMIENTO DE ALGECIRAS PARA LA CONCESIÓN DE SUBVENCIONES A LAS ASOCIACIONES Y OTRAS ONG, SIN ÁNIMO DE LUCRO PARA EL EJERCICIO ECONÓMICO 2026",
+  "urlBasesReguladoras": "https://www.algeciras.es/es/temas/serviciossociales/delegacion-de-igulada--y-bienestar-social/subvenciones/asociaciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente hábil de la públicación",
+  "textFin": "30 días desde la fecha de la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522375,
+      "descripcion": "MODELO DECLARACIÓN EXPRESA RESPONSABLE",
+      "nombreFic": "MODELO DECLARACION EXPRESA RESPONSABLE.pdf",
+      "long": 41824,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522378,
+      "descripcion": "MODELO CUENTA JUSTIFICATIVA",
+      "nombreFic": "MODELO CUENTA JUSTIFICATIVA SUBVENCIONES EDITABLE.pdf",
+      "long": 336158,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522371,
+      "descripcion": "ALTA DE TERCEROS",
+      "nombreFic": "ALTA DE TERCEROS.pdf",
+      "long": 286094,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522369,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES  REGULADORAS SUBVENCIONES ASOCIACIONES 2026.pdf",
+      "long": 119976,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    },
+    {
+      "id": 1522374,
+      "descripcion": "DOCUMENTACIÓN",
+      "nombreFic": "DOCUMENTACIÓN.pdf",
+      "long": 115228,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "929677",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / FORMENTERA / AYUNTAMIENTO DE FORMENTERA",
+  "nuts_codes": [
+    "ES531"
+  ],
+  "nuts_primary": "ES531",
+  "title": "Bases y convocatoria simultánea para el otorgamiento de subvenciones para la adquisición de bicicletas convencionales, bicicletas convencionales electrificadas, bicicletas eléctricas o equipos de electrificación de bicicletas, para el año 2026",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-09-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "52.2",
+      "descripcion": "Actividades auxiliares del transporte"
+    }
+  ],
+  "apply_url": "Oficina Virtual de Atención Ciudadana del Consell Insular de Formentera",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929677",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12328/719349/bases-y-convocatoria-simultanea-para-el-otorgamien",
+  "text_inicio": "Día posterior a fecha de publicación en el BOIB",
+  "text_fin": "30 días naturales inicio de plazo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-17T04:09:17.604Z"
+}
