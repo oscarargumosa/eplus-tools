@@ -1,0 +1,92 @@
+{
+  "id": 1130239,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSEJO INSULAR DE MENORCA",
+    "nivel3": "CONSELL INSULAR DE MENORCA"
+  },
+  "sedeElectronica": "www.cime.es",
+  "codigoBDNS": "928678",
+  "fechaRecepcion": "2026-09-10",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Acuerdo del Consejo Ejecutivo, de 31 de agosto de 2026, relativo a la convocatoria de ayudas individuales para personas con una discapacidad inferior al 33 % con necesidades\nespecíficas de apoyo educativo (NESE) para el año 2026 (exp. 1860-2026-000001)",
+  "descripcionLeng": "Acord del Consell Executiul, de 31 d’agost de 2026, relatiu a la convocatòria d’ajuts individuals per a persones amb discapacitat inferior al 33 % amb necessitats específiques de suport educatiu (NESE) per l’any 2026 (exp.1860-2026-000001)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    },
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES533 - Menorca"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases por las cuales se regula la concesión de ayudas para personas con discapacidad inferior al 33&#8201 % con necesidades específicas de apoyo educativo (NESE)",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2025/12131/703500/acuerdo-del-consejo-ejecutivo-en-sesion-de-caracte",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-18",
+  "fechaFinSolicitud": "2026-10-19",
+  "textInicio": "A partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "textFin": "Un mes a partir del día siguiente de haberse publicado la convocatoria en el BOIB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1519669,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ACORD AJUTS NESE_Firmado.pdf",
+      "long": 362252,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1519668,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ACUERDO AYUDAS NESE.pdf",
+      "long": 622656,
+      "datMod": "2026-09-10",
+      "datPublicacion": "2026-09-17"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 220600,
+      "titulo": "Extracto del acuerdo del Consejo Ejecutivo en sesión de carácter ordinario de 31 de agosto de 2026, relativo a la convocatoria de ayudas individuales para personas con una discapacidad inferior al 33 % con necesidades específicas de apoyo educativo (NESE) para el año 2026 (exp. 1860-2026-000001)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Beneficiarios</p><p>Pueden ser beneficiarias de las ayudas las personas físicas que cumplan los requisitos siguientes:</p><p>Estar empadronado en un municipio de Menorca al menos en los doce meses inmediatamente anteriores a la fecha de presentación de la solicitud.</p><p>Que la persona beneficiaria de la ayuda esté dentro del sector de población objeto de la convocatoria, es decir, que tenga un diagnóstico emitido por los servicios públicos relacionado con alguna necesidad específica de apoyo educativo (NESE).</p><p>No tener discapacidad reconocida (inferior al 33&#8201;%).</p><p>Que la persona beneficiaria esté cursando alguno de los siguientes niveles educativos: educación infantil, educación primaria, educación secundaria obligatoria, bachillerato, ciclos formativos de grado medio y superior, enseñanzas artísticas profesionales, ciclos formativos de grado básico, programas de formación para la transición a la vida adulta.</p><p>Poder justificar, mediante informe/s profesional/s, la necesidad de una intervención psicoeducativa para el abordaje de problemas de adaptación en la escuela, dificultades de aprendizaje, mejora de técnicas de estudio, reeducación del lenguaje y adquisición de estrategias para el manejo de estas necesidades educativas especiales.</p><p>Que los ingresos de la unidad económica de convivencia de la persona beneficiaria de la ayuda no superen en el ejercicio económico anterior al de esta convocatoria los límites de ingresos anuales detallados a la base tercera.</p><p>Se consideran miembros computables de la unidad familiar de convivencia:</p><p>— Persona beneficiaria de la ayuda (en todos los casos).</p><p>— Cónyuge o pareja (persona con análoga relación de afectividad a la conyugal) conviviente durante el ejercicio económico anterior al de esta convocatoria (en caso de que la persona beneficiaria sea mayor de edad).</p><p>— Padre, madre o tutor/a (en caso de que la persona beneficiaria sea menor de edad).</p><p>— Hermanos/as menores de 18 años a día 31 de diciembre del año anterior al de la convocatoria (en caso de que la persona beneficiaria sea menor de edad).</p><p>En caso de que la persona beneficiaria sea menor de edad, solo se considera miembro computable el responsable legal que tenga la custodia del menor (en caso de divorcio, separación legal o de hecho de los padres). Cuando el régimen de custodia de los hijos sea compartido, se considerarán miembros computables el padre o la madre del solicitante de la ayuda, el menor beneficiario y sus hijos comunes que consten empadronados juntos al certificado de convivencia de acuerdo con las condiciones anteriores.</p><p>Segundo. Objeto</p><p>El objeto de las ayudas es establecer y regular las ayudas económicas para personas con discapacidad inferior al 33&#8201;% con necesidades específicas de apoyo educativo (NESE) que requieren apoyos especializados para ayudar a financiar los tratamientos profesionales necesarios para el abordaje de los problemas de adaptación en la escuela, mejora de técnicas de estudio y adquisición de estrategias para el manejo de estas necesidades educativas especiales y que no tienen apoyo otras administraciones.</p><p>Esta línea de ayudas no incluye dentro de este concepto los refuerzos escolares que tengan como objetivo, únicamente, la mejora de las calificaciones académicas.</p><p>Tercero. Bases reguladoras</p><p>La convocatoria se regirá por las bases reguladoras aprobadas por el Consejo Ejecutivo del Consejo Insular de Menorca, en sesión de carácter ordinario de 7 de julio de 2025, y publicadas en el Boletín Oficial de las Illes Balers núm. 96, de 22 de julio de 2025.</p><p>Cuarto. Cuantía</p><p>El importe global máximo de la convocatoria es de 30.000 € (treinta mil euros). El importe máximo que puede concederse por beneficiario es de 1.500 € (mil quinientos euros).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>El plazo de presentación de solicitudes es de un mes desde el día siguiente de haberse publicado la convocatoria en el BOIB.</p><p>Sexto. Otros datos</p><p>La actividad financiada se debe haber llevado a cabo entre el 1 de julio de 2025 y el 30 de junio de 2026.</p>",
+      "textoLeng": null,
+      "url": "https://www.caib.es/eboibfront/es/2026/12329/719776/extracto-del-acuerdo-del-consejo-ejecutivo-en-sesi",
+      "cve": null,
+      "desDiarioOficial": "BOIB. B.O. DE LAS ISLAS BALEARES",
+      "datPublicacion": "2026-09-17"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

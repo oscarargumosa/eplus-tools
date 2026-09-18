@@ -26,7 +26,7 @@ Proposals are expected to establish synergies and links with relevant projects f
 
 Projects under this topic are relevant to the EU policies related to the new EU bioeconomy strategy, the European Life Sciences Strategy, the EU Biotech Act, the EU Algae Initiative, the European Ocean Pact, the EU strategy on research and technology infrastructures, and the new approach for a sustainable blue economy.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

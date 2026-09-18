@@ -23,6 +23,6 @@ Proposals are expected to contribute to the objectives of the Textiles of the Fu
 
 The topic supports the European Green Deal, the Ecodesign for Sustainable Products Regulation and its working plan, the EU Strategy for Sustainable and Circular Textiles, the Waste Framework Directive, the Zero Pollution Action Plan, the upcoming Circular Economy Act and contributes to Europe’s efforts to develop a single market for sustainable products. It also contributes to the Start-ups and Scale-ups strategy.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.

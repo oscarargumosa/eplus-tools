@@ -1,0 +1,72 @@
+{
+  "id": 1131214,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OUTES",
+    "nivel3": "AYUNTAMIENTO DE OUTES"
+  },
+  "sedeElectronica": "https://outes.sedelectronica.gal/info.0",
+  "codigoBDNS": "929653",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones para actividades de índole cultural y deportiva de interés público año 2026, por el procedimiento de concurrencia competitiva",
+  "descripcionLeng": "Convocatoria para a concesión de subvencións para actividades de índole cultural e deportiva de interese público ano 2026, polo procedemento de concorrencia competitiva",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    },
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    },
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras de subvenciones para actividades de índole cultural y deportiva de interés público 2026",
+  "urlBasesReguladoras": "https://bop.dacoruna.gal/bopportal/publicado/2026/07/13/2026_0000004598.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Publicación del extracto de la convocatoria en el BOP de A Coruñ",
+  "textFin": "15 días hábiles desde la publicación del extracto de la convocatoria en el BOP de A Coruña",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522047,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260902_Certificado_CERTIFICADO 2026-0132 [Certificado aprobación convocatoria subvenciones concurrencia 2026 (castelán)].pdf",
+      "long": 285905,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

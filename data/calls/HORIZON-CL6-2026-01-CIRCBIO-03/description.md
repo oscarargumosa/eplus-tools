@@ -14,6 +14,6 @@ Proposals should:
 
 The topic supports EU policies, particularly the European Green Deal, the EU Circular Economy Act, the Clean Industrial Deal, the Critical Raw Materials Act, the Waste from Electrical and Electronic Waste Directive, the Ecodesign for Sustainable Products Regulation (ESPR) and Europe’s efforts to develop a single market for sustainable products. Synergies with Cluster 4, the European Partnership on Raw Materials and ongoing Cluster 6 projects are encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.

@@ -19,7 +19,7 @@ Cooperation between all projects funded under this topic should also be foreseen
 
 This topic requires the effective contribution of SSH disciplines and involvement of SSH experts in order to produce meaningful and significant effects enhancing the societal impact of the related research activities. International cooperation is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

@@ -28,7 +28,7 @@ Efforts should be made to ensure that the data produced in the context of this t
 
 International cooperation is strongly encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.
 

@@ -23,7 +23,7 @@ Engagement of all relevant value chain stakeholders is expected, i.e. primary an
 
 The topic supports the European Green Deal, the Regulation on Packaging and Packaging Waste, the Single Use Plastics Directive, the Waste Shipment Regulation, the Ecodesign for Sustainable Products Regulation and its working plan, the Regulation for recycling of plastic intended for contact with food, the Zero Pollution Action Plan, and the upcoming Circular Economy Act and contributes to Europe’s efforts to develop a single market for sustainable products.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

@@ -1,0 +1,196 @@
+{
+  "id": 1131796,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA LUCÍA DE TIRAJANA",
+    "nivel3": "AYUNTAMIENTO DE SANTA LUCÍA DE TIRAJANA"
+  },
+  "sedeElectronica": "https://sede.camaragrancanaria.org/",
+  "codigoBDNS": "930235",
+  "fechaRecepcion": "2026-09-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN DEL PRESIDENTE DEL CONSEJO DE ADMINISTRACIÓN DE FECHA 16/09/2026,POR EL QUE SE APRUEBAN LAS BASES ESPECÍFICAS REGULADORAS DEL PROCEDIMIENTO DE LA CONCESIÓN DE SUBVENCIONES A DEPORTISTAS INDIVIDUALES DEL MUNICIPIO DE SANTA LUCÍA DE TIRAJANA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES INMOBILIARIAS",
+      "codigo": "M"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "RESOLUCIÓN DEL PRESIDENTE DEL CONSEJO DE ADMINISTRACIÓN DE FECHA 16/09/2026,POR EL QUE SE APRUEBAN LAS BASES ESPECÍFICAS REGULADORAS DEL PROCEDIMIENTO DE LA CONCESIÓN DE SUBVENCIONES A DEPORTISTAS INDIVIDUALES DEL MUNICIPIO DE SANTA LUCÍA DE TIRAJANA 2026",
+  "urlBasesReguladoras": "www.ateneosantalucia.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el Boletín Oficial de la Provincia",
+  "textFin": "15 días hábiles a contar desde su publicación en el Boletín Oficial de la Provincia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523634,
+      "descripcion": "ANEXO III - Criterios Valoración",
+      "nombreFic": "ANEXO III Criterios Valoración DeInd.pdf",
+      "long": 535213,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523636,
+      "descripcion": "ANEXO V - Aceptación",
+      "nombreFic": "ANEXO V Aceptación DeInd.pdf",
+      "long": 513150,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523633,
+      "descripcion": "ANEXO II - Declaración Responsable",
+      "nombreFic": "ANEXO II Declaración Responsable DeInd.pdf",
+      "long": 265706,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523637,
+      "descripcion": "ANEXO VI - Modelo justificación",
+      "nombreFic": "ANEXO VI Modelo justificación DeInd.pdf",
+      "long": 263646,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523635,
+      "descripcion": "ANEXO IV - Autorización",
+      "nombreFic": "ANEXO IV Autorización DeInd.pdf",
+      "long": 269155,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523632,
+      "descripcion": "ANEXO I - Modelo solicitud",
+      "nombreFic": "ANEXO I Modelo solicitud DepInd.pdf",
+      "long": 517329,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    },
+    {
+      "id": 1523631,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RESOLUCIÓN BASES Y CONVOCATORIA SUBVENCIONES DEPORTISTAS INDIVIDUALES.pdf",
+      "long": 7634974,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

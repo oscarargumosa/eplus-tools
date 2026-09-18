@@ -26,7 +26,7 @@ Proposals are encouraged to build on the results of relevant projects funded und
 
 Proposals should follow the Guidance document on managed aquifer recharge techniques of the CIS Working Group on Groundwater [1].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B.
 
