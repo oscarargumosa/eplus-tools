@@ -1,0 +1,112 @@
+{
+  "id": 1132018,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA ECONOMÍA, HACIENDA Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930457",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 162500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PLANES FORMACIÓN NEGOCIACIÓN COLECTIVA SINDICALES - NCS 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BBRR SUBVENCIÓN PLANES DE FORMACIÓN DE ACTIVIDADES FORMATIVAS CON EL FIN DE CAPACITAR A PERSONAS VINCULADAS CON LOS AGENTES SOCIALES PARA LOS PROCESOS DEL DIÁLOGO SOCIAL Y LA NEGOCIACIÓN COLECTIVA EN LA COMUNIDAD DE MADRID.",
+  "urlBasesReguladoras": "http://www.bocm.es/boletin/CM_Orden_BOCM/2019/11/21/BOCM-20191121-17.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE EL DÍA SIGUIENTE AL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCM",
+  "textFin": "10 DÍAS HÁBILES A CONTAR DESDE EL INICIO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524097,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS  Orden Diálogo Social-Negociación Colectiva_26 ANONIMIZADA.pdf",
+      "long": 566340,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524098,
+      "descripcion": "Anexos  Anexo I_ Solicitud subvención_2761F1_26",
+      "nombreFic": "Anexos  Anexo I_ Solicitud subvención_2761F1_26.pdf",
+      "long": 532250,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524099,
+      "descripcion": "Anexos  Anexo II_ Solicitud anticipo_2761F2_26",
+      "nombreFic": "Anexos  Anexo II_ Solicitud anticipo_2761F2_26.pdf",
+      "long": 413577,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524103,
+      "descripcion": "Anexos  Documento aceptación subvención_2761FO3_26",
+      "nombreFic": "Anexos  Documento aceptación subvención_2761FO3_26.pdf",
+      "long": 355637,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524101,
+      "descripcion": "Anexos  Anexo IV_ Solicitud de Participación_2761FO2_26",
+      "nombreFic": "Anexos  Anexo IV_ Solicitud de Participación_2761FO2_26.pdf",
+      "long": 486926,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524102,
+      "descripcion": "Anexos  Anexo V_INSTRUCCIONES JUSTIFICACIÓN_2761FI1-26",
+      "nombreFic": "Anexos  Anexo V_INSTRUCCIONES JUSTIFICACIÓN_2761FI1-26.pdf",
+      "long": 324159,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524100,
+      "descripcion": "Anexos  Anexo III_ Modelo estampillado_2761FO1_26",
+      "nombreFic": "Anexos  Anexo III_ Modelo estampillado_2761FO1_26.pdf",
+      "long": 250427,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

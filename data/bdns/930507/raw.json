@@ -1,0 +1,64 @@
+{
+  "id": 1132068,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE VALENCIA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE VALENCIA"
+  },
+  "sedeElectronica": "https://www.sede.dival.es/",
+  "codigoBDNS": "930507",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones para financiar la mejora del servicio de TRANSPORTE PÚBLICO en municipios de La Serranía y El Rincón de Ademuz.",
+  "descripcionLeng": "Convocatòria per a la concessió de subvencions per a finançar la millora del servici de TRANSPORT PÚBLIC en municipis de La Serrania i El Racó d'Ademús.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otro transporte terrestre de pasajeros",
+      "codigo": "49.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Convocatoria para la concesión de subvenciones para financiar la mejora del servicio de TRANSPORTE PÚBLICO en municipios de La Serranía y El Rincón de Ademuz.",
+  "urlBasesReguladoras": "https://www.dival.es/sites/default/files/portal-de-transparencia/2024%2012%2004%20OGS.%20Consolidada.2025.CAS_.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles a partir del siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "10 dies hàbils a partir del següent a la publicació de l'extracte de la convocatòria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524197,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "cl_05_Decreto_convocatoria_ subv-transport-public-SERRANIA-RINCON 2026.pdf",
+      "long": 482708,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

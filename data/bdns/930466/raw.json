@@ -1,0 +1,92 @@
+{
+  "id": 1132027,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLÍRIA",
+    "nivel3": "AYUNTAMIENTO DE LLÍRIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930466",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1550,
+  "mrr": true,
+  "descripcion": "CONCURSO DE REELS «DALE PLAY AL REEL CONTRA LA VIOLENCIA DE GÉNERO»",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES DE LA SEGUNDA EDICIÓN DEL CONCURSO DE REELS «DALE PLAY AL REEL CONTRA LA VIOLENCIA DE GÉNERO»",
+  "urlBasesReguladoras": "http://sede.lliria.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "Un mes, desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "MRR - MECANISMO DE RECUPERACIÓN Y RESILIENCIA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524105,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2.1_Bases_concurs_reels_2026_.pdf",
+      "long": 356150,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524108,
+      "descripcion": "Hoja de Autorización",
+      "nombreFic": "3.1._Fulla_autoritzacio_decla.pdf",
+      "long": 195984,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524107,
+      "descripcion": "Ficha de Inscripción",
+      "nombreFic": "3._Fitxa_inscripcio_reels_2a_.pdf",
+      "long": 276127,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524106,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2._Bases_concurs_reels_2026_modificades.pdf",
+      "long": 358264,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

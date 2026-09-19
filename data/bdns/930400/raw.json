@@ -1,0 +1,76 @@
+{
+  "id": 1131961,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DONOSTIA/SAN SEBASTIÁN",
+    "nivel3": "ENTIDAD PÚBLICA EMPRESARIAL DE CULTURA- DONOSTIA KULTURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930400",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45881.48,
+  "mrr": false,
+  "descripcion": "BASES POR LA QUE SE ESTABLECE LA CONCESION DE SUBVENCIONES POR LA PARTICIPACIÓN EN LA TAMBORRADA INFANTIL ORGANIZADA POR DONOSTIA KULTURA EL DIA 20 DE ENERO DE 2027 EN SAN SEBASTIÁN Y POR LAS SALIDAS DE TAMBORRADAS INFANTILES EN LOS DIFERENTES BARRIOS.",
+  "descripcionLeng": "2027ko URTARRILAREN 20an DONOSTIA KULTURAK ANTOLATUTAKO DONOSTIAKO HAUR DAN-BORRADAN PARTE HARTZEAGATIK DONOSTIAKO AUZOETAN HAUR DANBORRADAK EGITEN DITUZTEN IRTEERENGATIK DIRU LAGUNTZAK ARAUTZEKO OINARRIAK ETA DEIALDIA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES POR LA QUE SE ESTABLECE LA CONCESION DE SUBVENCIONES POR LA PARTICIPACIÓN EN LA TAMBORRADA INFANTIL ORGANIZADA POR DONOSTIA KULTURA EL DIA 20 DE ENERO DE 2027 EN SAN SEBASTIÁN Y POR LAS SALIDAS DE TAMBORRADAS INFANTILES EN LOS DIFERENTES BARRIOS",
+  "urlBasesReguladoras": "https://www.donostiakultura.eus/es/subvenciones#dk-festak",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523963,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "HAUR DANBORRADA 2027 -Dirulaguntza OINARRIAK  + EBAZPENAK SIG.pdf",
+      "long": 441024,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1523962,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "HAUR DANBORRADA 2027 -Dirulaguntza OINARRIAK  + EBAZPENAK SIG.pdf",
+      "long": 441024,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -30,8 +30,8 @@
     "HORIZON-WIDERA-2027-04"
   ],
   "crossCuttingPriorities": [
-    "AI",
-    "DigitalAgenda"
+    "DigitalAgenda",
+    "AI"
   ],
   "supportInfoText": "Online Manual is your guide on the procedures from proposal submission to managing your grant.\n\nHorizon Europe Programme Guide contains the detailed guidance to the structure, budget and political priorities of Horizon Europe.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nNational Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nEnterprise Europe Network – contact your EEN national contact for advice to businesses with special focus on SMEs. The support includes guidance on the EU research funding.\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nCEN-CENELEC Research Helpdesk and ETSI Research Helpdesk – the European Standards Organisations advise you how to tackle standardisation in your project proposal.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.\n\nPartner Search help you find a partner organisation for your proposal.",
   "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/45431?topic=HORIZON-WIDERA-2027-04-WIDENING-01",
@@ -95,21 +95,21 @@
     },
     {
       "section": "Additional documents:",
-      "label": "HE Main Work Programme 2025-2026 – 1. General Introduction",
+      "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
     {
       "section": "Additional documents:",
-      "label": "HE Main Work Programme 2025-2026 – 11. Widening participation and strengthening the European Research Area",
+      "label": "HE Main Work Programme 2026-2027 – 11. Widening participation and strengthening the European Research Area",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-11-widening-participation-and-strengthening-the-european-research-area_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
     {
       "section": "Additional documents:",
-      "label": "HE Main Work Programme 2025-2026 – 14. General Annexes",
+      "label": "HE Main Work Programme 2026-2027 – 14. General Annexes",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
@@ -171,5 +171,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-09-18T04:04:31.772Z"
+  "fetchedAt": "2026-09-19T04:06:27.086Z"
 }

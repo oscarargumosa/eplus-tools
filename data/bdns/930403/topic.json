@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "930403",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LASARTE-ORIA / AYUNTAMIENTO DE LASARTE-ORIA",
+  "nuts_codes": [
+    "ES21"
+  ],
+  "nuts_primary": "ES21",
+  "title": "Decreto de Alcaldía nº 1913/2026 de fecha 17 de agosto de 2026, del Ayuntamiento de Lasarte-Oria, por el que se aprueba la convocatoria 2026/2027 de subvenciones a las familias para la adquisición de material escolar y apoyo al comercio de Lasarte-Oria",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-18",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://udal.egoitza.gipuzkoa.eus/WAS/AYTO/USCServicioCiudadanoVer15WEB/segundaPag.do",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930403",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Bases generales",
+      "url": null
+    },
+    {
+      "label": "Solicitud / Eskaera",
+      "url": null
+    },
+    {
+      "label": "Modificacion punto 7 bases y correcion partida presupuestaria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2021/05/28/c2103514.htm",
+  "text_inicio": "A partir del día siguiente a su publicación en el Boletín Oficial de Gipuzkoa",
+  "text_fin": "30 días desde el siguiente a su publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-19T04:09:45.168Z"
+}

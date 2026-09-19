@@ -1,0 +1,71 @@
+{
+  "id": 1131739,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "DIRECCION GENERAL ORDENACION AGROPECUARIA"
+  },
+  "sedeElectronica": "www.jccm.es",
+  "codigoBDNS": "930178",
+  "fechaRecepcion": "2026-09-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2000000,
+  "mrr": false,
+  "descripcion": "Decreto xx/2026, de 15 de septiembre, por el que se regula la concesión directa de una ayuda a las personas titulares de explotaciones agrarias en Castilla-La Mancha para paliar los daños producidos por determinados incendios forestales en zonas que han s",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas",
+      "codigo": "01"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Ley de Hacienda",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/pdf/2002/DOCM-q-2002-90021-consolidado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde la publicación en la sede electrónica de la relación de titulares de explotaciones afectadas",
+  "textFin": "10 días hábiles desde la publicación en la sede electrónica de la relación de titulares de explo",
+  "ayudaEstado": "SA.000000",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.000000",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "OTROS DISTINTOS DE PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 37 AYUDAS DESTINADAS A REPARAR LOS DAÑOS CAUSADOS POR DESASTRES NATURALES EN EL SECTOR AGRÍCOLA"
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523886,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRETO AYUDAS_104048.PDF",
+      "long": 146837,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

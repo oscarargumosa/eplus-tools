@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "930155",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTELLBELL I EL VILAR / AYUNTAMIENTO DE CASTELLBELL I EL VILAR",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE BECAS INDIVIDUALES DE VIAJE PARA ESTUDIANTES DE 2º CICLO DE EDUCACIÓN. ED.INFANTIL Y OBLIGATORIA DE CASTELLBELL I EL VILAR, MATRICULADOS EN CENTRO PÚBLICO DEL MISMO MUNICIPIO, QUE NO DISPONGA DE NINGUNA LÍNEA DE TENO COL.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://www.castellbellielvilar.cat/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930155",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anteriors/2023-10- 09?bopb_dia%5BparaulaClau%5D=CASTELLBELL+I+EL+VIL AR&bopb_dia%5BtipologiaAnunciant%5D=&bopb_dia%5Btip",
+  "text_inicio": "Dia siguiente de la publicación de la convocatoria en Diario Oficial de la Provincia de Barcelona",
+  "text_fin": "10 días hábiles a partir del día siguiente del anuncio de la convocatoria en el BOP de Barcelona ",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-19T04:09:45.112Z"
+}

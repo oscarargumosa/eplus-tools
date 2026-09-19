@@ -1,0 +1,72 @@
+{
+  "id": 1131960,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE VIGO",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930399",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6300,
+  "mrr": false,
+  "descripcion": "Resolución rectoral por la que se convocan los premios EGERIA a la inclusión de la perspectiva de género y/o feminista en los trabajos de fin de estudios de grado, de máster universitario y de tesis de doctorado de la Universidade de Vigo, curso 2025/2026",
+  "descripcionLeng": "Resolución reitoral pola que se convocan os premios EGERIA á inclusión da perspectiva de xénero e/ou feminista nos traballos de fin de estudos de grao, de máster universitario e de teses de doutoramento da Universidade de Vigo, curso 2025/2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución rectoral por la que se convocan los premios EGERIA a la inclusión de la perspectiva de género y/o feminista en los trabajos de fin de estudios de grado, de máster universitario y de tesis de doctorado de la Universidade de Vigo, curso 2025/2026",
+  "urlBasesReguladoras": "https://secretaria.uvigo.gal/uv/web/convocatoria/public/show/1927",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-18",
+  "fechaFinSolicitud": "2026-10-08",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523961,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260917_convocatoria_egeria.pdf",
+      "long": 515796,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1523960,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convocatoria_egeria_cast.pdf",
+      "long": 452728,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

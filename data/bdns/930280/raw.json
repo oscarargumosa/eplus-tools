@@ -1,0 +1,88 @@
+{
+  "id": 1131841,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DONOSTIA/SAN SEBASTIÁN",
+    "nivel3": "AYUNTAMIENTO DE DONOSTIA/SAN SEBASTIÁN"
+  },
+  "sedeElectronica": "https://www.donostia.eus/info/udalinfo/tramites.nsf/vTramites/4EF5B8124F0253FEC125843A003E0C7E?OpenDocument&sel=tema&idioma=cas&id=D580485&des=Asociaciones-Entidades&cat=Ayudas%20econ%F3micas",
+  "codigoBDNS": "930280",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5200,
+  "mrr": false,
+  "descripcion": "Acuerdo de la Junta de Gobierno Local de fecha 15 de septiembre de 2026, por el que se convocan subvenciones para las asociaciones\nque desarrollen programación especial de actividades para Navidad, dentro del programa Gabonak Zuretzat 2026",
+  "descripcionLeng": "Tokiko Gobernu Batzarrak 2026ko irailaren 15ean hartutako erabakia, Gabonak Zuretzat 2026 programa barruan, gabonetarako ekintza\negitarau berezia antolatzen duten elkarteentzako dirulaguntzak onartzen dituena",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Convocatoria y BBRR de las subvenciones para las asociaciones que desarrollen programación especial de actividades para Navidad, dentro del\nprograma Gabonak Zuretzat 2026",
+  "urlBasesReguladoras": "https://www.donostia.eus/es/infancia-juventud/subvenciones-grupos-juveniles-asociaciones",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto en el BOG",
+  "textFin": "20 días naturales desde el día siguiente a la publicación del extracto en el BOG",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523730,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DIL_2026-BEST-00013 GZ dirulaguntzak 2026 - Oinarriak.pdf",
+      "long": 822319,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1523732,
+      "descripcion": "Dictamen",
+      "nombreFic": "DIL_INT_2026-BEST-00013_GZ_dirulaguntzak_2026_-_Diktamena.pdf.pdf",
+      "long": 317965,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1523731,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DIL_2026-BEST-00013 GZ dirulaguntzak 2026 - Oinarriak.pdf",
+      "long": 822319,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

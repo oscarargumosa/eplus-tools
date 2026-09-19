@@ -1,0 +1,72 @@
+{
+  "id": 1131716,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELLBELL I EL VILAR",
+    "nivel3": "AYUNTAMIENTO DE CASTELLBELL I EL VILAR"
+  },
+  "sedeElectronica": "https://www.castellbellielvilar.cat/",
+  "codigoBDNS": "930155",
+  "fechaRecepcion": "2026-09-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE BECAS INDIVIDUALES DE VIAJE PARA ESTUDIANTES DE 2º CICLO DE EDUCACIÓN. ED.INFANTIL Y OBLIGATORIA DE CASTELLBELL I EL VILAR, MATRICULADOS EN CENTRO PÚBLICO DEL MISMO MUNICIPIO, QUE NO DISPONGA DE NINGUNA LÍNEA DE TENO COL.",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ D’AJUTS INDIVIDUALS DESPLAÇAMENT ALUMNAT DE 2n. CICLE D’ED. INFANTIL I ED. OBLIGATÒRIA, RESIDENT A CASTELLBELL I EL VILAR I MATRICULAT A UN CENTRE PÚBLIC DEL MATEIX MUNICIPI, QUE NO DISPOSI DE CAP LÍNIA DE TENO COL·LECTIU. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA CONCESIÓN DE AYUDAS INDIVIDUALES PARA DESPLAZAMIENTO ALUMNADO 2DO CICLO INFANTIL Y EDUC.OBLIGATORIA RESIDENTE Y MATRICULADO EN CASTELLBELL I EL VILAR Y NO DISPONGA NINGUNA LÍNEA DE TRANSPORTE ESCOLAR O PARADA PRÓXIMA.",
+  "urlBasesReguladoras": "https://bop.diba.cat/anteriors/2023-10- 09?bopb_dia%5BparaulaClau%5D=CASTELLBELL+I+EL+VIL AR&bopb_dia%5BtipologiaAnunciant%5D=&bopb_dia%5Btip",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia siguiente de la publicación de la convocatoria en Diario Oficial de la Provincia de Barcelona",
+  "textFin": "10 días hábiles a partir del día siguiente del anuncio de la convocatoria en el BOP de Barcelona ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1523989,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria AID 26 27 CAT.pdf",
+      "long": 180454,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1523987,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria AID 26 27  CAST.pdf",
+      "long": 183751,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

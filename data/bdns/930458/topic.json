@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "930458",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / SEGOVIA / AYUNTAMIENTO DE SEGOVIA",
+  "nuts_codes": [
+    "ES416"
+  ],
+  "nuts_primary": "ES416",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DE INCENTIVO AL CONSUMO PROGRAMA “TARJETA IMPULSA COMERCIO SEGOVIA 2026”",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-09-18",
+  "open_date": "2026-10-27",
+  "deadline": "2026-11-23",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 250000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": "https://sede.segovia.es/sta/docs/GetDocumentServlet?CUD=16342012126643361000&HASH_CUD=0cfb82e68b8d64c6beb9652d0db5073499941cfd&APP_CODE=STA",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930458",
+  "documents": [
+    {
+      "label": "Decreto de avocación de competencias aprobación convocatoria, designación entidad colaboradora y aprobación primera adenda del convenio de colaboración",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anuncio para publicación en BOP de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://segovia.es/sites/default/files/Media/Files/2026-09/AYS_DEEI_Convocatoria%20ePAC.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-19T04:09:45.186Z"
+}

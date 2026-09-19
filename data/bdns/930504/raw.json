@@ -1,0 +1,95 @@
+{
+  "id": 1132065,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DEL MAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930504",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2700000,
+  "mrr": false,
+  "descripcion": "ORDEN de 11 de septiembre de 2026 por la que se establecen las bases reguladoras para la concesión de ayudas, en régimen de concurrencia no competitiva, de carácter compensatorio a los acuicultores por la suspensión de las actividades de cosecha PE205K",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acuicultura",
+      "codigo": "03.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDEN de 11 de septiembre de 2026 por la que se establecen las bases reguladoras para la concesión de ayudas, en régimen de concurrencia no competitiva, de carácter compensatorio a los acuicultores por la suspensión de las actividades de cosecha PE205K",
+  "urlBasesReguladoras": "https://www.xunta.gal/dog/Publicados/2023/20230721/AnuncioG0427-050723-0002_es.htmlhttps://www.xunta.gal/dog/Publicados/2023/20230721/AnuncioG0427-050723-0002_es.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-23",
+  "fechaFinSolicitud": "2026-10-22",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524192,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ORDEN de 11 de septiembre de 2026_20260918_133527.pdf",
+      "long": 146886,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524195,
+      "descripcion": "Anexos galego",
+      "nombreFic": "PE205K-Completa-G_20260918_133747.pdf",
+      "long": 1679922,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524194,
+      "descripcion": "Anexo castelán",
+      "nombreFic": "PE205K-Completo-C_20260918_133721.pdf",
+      "long": 1594036,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524193,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "ORDE do 11 de setembro de 2026_20260918_133549.pdf",
+      "long": 142380,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

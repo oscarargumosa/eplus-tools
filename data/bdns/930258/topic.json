@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "930258",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PILOÑA / AYUNTAMIENTO DE PILOÑA",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "CONVOCATORIA DE AYUDA DE PAGO ÚNICO A FAMILIAS CON MENORES A CARGO EN BASE A SUBVENCIÓN DEL PRINCIPADO DE ASTURIAS Y EL AYUNTAMIENTO DE PILOÑA PARA 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-09-18",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930258",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ayto-pilona.es/documents/137565/3467155/BASES+AYUDAS+A+FAMILIAS+CON+MENORES+A+CARGO+2026.pdf/a18a8056-5b29-0c52-0088-421a96beee5a?t=1789711136789",
+  "text_inicio": "AL DIA SIGUIENTE DE LA PUBLICACION EN EL BOPA",
+  "text_fin": "15 DIAS HABILES A PARTIR DEL DIA SIGUIENTE A LA PUBLICACION EN EL BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-19T04:09:45.136Z"
+}

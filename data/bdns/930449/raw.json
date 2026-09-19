@@ -1,0 +1,72 @@
+{
+  "id": 1132010,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARANGA",
+    "nivel3": "AYUNTAMIENTO DE ARANGA"
+  },
+  "sedeElectronica": "www.sede.aranga.gal",
+  "codigoBDNS": "930449",
+  "fechaRecepcion": "2026-09-18",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4800,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas dirigidas al alumnado del CEIP de A Castellana para la adquisición de material escolar durante el curso escolar 2026/2027.",
+  "descripcionLeng": "Convocatoria de axudas dirixidas ao alumnado do CEIP de A Castellana para a adquisición de material escolar durante o curso escolar 2026/2027.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Convocatoria de subvenciones para adquisición de material escolar curso 2026/2027",
+  "urlBasesReguladoras": "www.sede.aranga.gal",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir del día siguiente a la publicación del estracto de la convocatoria en el BOP",
+  "textFin": "treinta días naturales ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524046,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "bases gallego material escolar.pdf",
+      "long": 604556,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    },
+    {
+      "id": 1524045,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases castellano material escolar.pdf",
+      "long": 66164,
+      "datMod": "2026-09-18",
+      "datPublicacion": "2026-09-18"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
