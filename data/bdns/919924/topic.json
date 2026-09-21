@@ -1,0 +1,181 @@
+{
+  "source": "bdns",
+  "source_id": "919924",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Orden de 7 de julio de 2026 por la que se aprueban las bases reguladoras de los premios de Artesanía de Galicia, se convocan para el año 2026 y se autoriza a la Fundación Pública Artesanía de Galicia para su concesión (código de procedimiento IN200A).",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-07-17",
+  "open_date": "2026-09-21",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 21000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "13.3",
+      "descripcion": "Acabado de textiles"
+    },
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    },
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    },
+    {
+      "codigo": "74.1",
+      "descripcion": "Actividades de diseño especializado"
+    },
+    {
+      "codigo": "74.2",
+      "descripcion": "Actividades de fotografía"
+    },
+    {
+      "codigo": "18.1",
+      "descripcion": "Artes gráficas y servicios relacionados con estas"
+    },
+    {
+      "codigo": "46.4",
+      "descripcion": "Comercio al por mayor de artículos de uso doméstico"
+    },
+    {
+      "codigo": "46.3",
+      "descripcion": "Comercio al por mayor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "47.2",
+      "descripcion": "Comercio al por menor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "14.2",
+      "descripcion": "Confección de otras prendas de vestir y accesorios"
+    },
+    {
+      "codigo": "14.1",
+      "descripcion": "Confección de prendas de vestir de punto"
+    },
+    {
+      "codigo": "42.2",
+      "descripcion": "Construcción de redes"
+    },
+    {
+      "codigo": "23.7",
+      "descripcion": "Corte, tallado y acabado de la piedra"
+    },
+    {
+      "codigo": "58.1",
+      "descripcion": "Edición de libros, periódicos y otras actividades editoriales, excepto la edición de programas informáticos"
+    },
+    {
+      "codigo": "25.6",
+      "descripcion": "Fabricación de artículos de cuchillería y cubertería, herramientas y ferretería"
+    },
+    {
+      "codigo": "32.1",
+      "descripcion": "Fabricación de artículos de joyería, bisutería y similares"
+    },
+    {
+      "codigo": "20.4",
+      "descripcion": "Fabricación de artículos de lavado, limpieza y abrillantamiento"
+    },
+    {
+      "codigo": "17.2",
+      "descripcion": "Fabricación de artículos de papel y de cartón"
+    },
+    {
+      "codigo": "15.2",
+      "descripcion": "Fabricación de calzado"
+    },
+    {
+      "codigo": "27.4",
+      "descripcion": "Fabricación de equipos de iluminación"
+    },
+    {
+      "codigo": "32.2",
+      "descripcion": "Fabricación de instrumentos musicales"
+    },
+    {
+      "codigo": "32.4",
+      "descripcion": "Fabricación de juegos y juguetes"
+    },
+    {
+      "codigo": "31",
+      "descripcion": "Fabricación de muebles"
+    },
+    {
+      "codigo": "23.4",
+      "descripcion": "Fabricación de otros productos cerámicos"
+    },
+    {
+      "codigo": "13.9",
+      "descripcion": "Fabricación de otros productos textiles"
+    },
+    {
+      "codigo": "23.2",
+      "descripcion": "Fabricación de productos cerámicos refractarios"
+    },
+    {
+      "codigo": "13.2",
+      "descripcion": "Fabricación de tejidos textiles"
+    },
+    {
+      "codigo": "32.9",
+      "descripcion": "Industrias manufactureras n.c.o.p."
+    },
+    {
+      "codigo": "15.1",
+      "descripcion": "Preparación, teñido y curtido de cueros y pieles; fabricación de artículos de marroquinería, viaje y de guarnicionería y talabartería"
+    },
+    {
+      "codigo": "18.2",
+      "descripcion": "Reproducción de soportes grabados"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/919924",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.xunta.gal/diario-oficial-galicia",
+  "text_inicio": null,
+  "text_fin": "01/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-21T04:07:56.432Z"
+}
