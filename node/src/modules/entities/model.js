@@ -10,6 +10,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 const pool = require('../../utils/db');
+const ids = require('./identifiers');
 
 /* ── Helpers ──────────────────────────────────────────────────── */
 
@@ -138,6 +139,7 @@ async function listEntities({
   const [rows] = await pool.query(
     `SELECT
        e.oid,
+       e.pic,
        COALESCE(NULLIF(ee.extracted_name, ''), e.legal_name) AS display_name,
        e.country_code,
        e.city,
@@ -204,7 +206,9 @@ async function listEntities({
   );
 
   return {
-    rows,
+    // Misma recolocación OID/PIC por formato que en el backend del VPS:
+    // el dato sucio puede venir de cualquiera de los dos orígenes.
+    rows: ids.normalizeEntityIdsAll(rows),
     meta: {
       total,
       page: pageNum,

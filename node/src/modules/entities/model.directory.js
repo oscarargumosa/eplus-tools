@@ -55,6 +55,7 @@ const overrides = require('./overrides');
 const scores = require('./scores');
 const registry = require('./registry');
 const localOrgs = require('./local-orgs');
+const ids = require('./identifiers');
 
 /* ── Mapping de la respuesta de /search a la shape MySQL {rows, meta} ── */
 
@@ -76,7 +77,10 @@ function normalizeSearchResponse(resp, requestedLimit) {
   const pages  = limit > 0 ? Math.ceil(total / limit) : 0;
 
   // Para cada row, expongo `display_name` (que la UI espera) sin perder `name`.
-  const rows = results.map(r => ({
+  // OID y PIC son identificadores distintos, pero el dato de origen los
+  // tiene cruzados en algunas filas (OID guardado en la columna pic).
+  // Los recolocamos por formato antes de que lleguen a la UI.
+  const rows = results.map(r => ids.normalizeEntityIds({
     ...r,
     display_name: r.display_name || r.name || null,
   }));
@@ -101,9 +105,13 @@ function flattenEntityFull(full) {
     }
   }
 
+  const fixed = ids.resolveIds(full);
   return {
     ...full,
     ...enrichFlat,
+    oid: fixed.oid,
+    pic: fixed.pic,
+    oid_recovered: fixed.oid_recovered,
 
     // Aplanar bloques anidados (sobreescribe el campo "object" original)
     category:            category ? (category.category ?? null) : (typeof full.category === 'string' ? full.category : null),

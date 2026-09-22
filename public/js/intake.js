@@ -1052,10 +1052,12 @@ const Intake = (() => {
                 <div class="text-xs text-on-surface-variant">${esc([e.city, e.country_code].filter(Boolean).join(', '))}${e.category ? ' · ' + esc(e.category) : ''}</div>
               </div>
               ${e.quality_tier ? `<span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">${esc(e.quality_tier)}</span>` : ''}
-              ${e.oid
-                ? `<span class="text-[10px] font-mono text-on-surface-variant">OID: ${esc(e.oid)}</span>`
-                : `<span class="text-[10px] font-bold text-error bg-error/10 px-2 py-0.5 rounded-full" title="Esta ficha del directorio no tiene OID: no se puede adoptar como socio hasta corregir el dato">sin OID</span>`
-              }
+              <span class="text-[10px] font-mono text-on-surface-variant flex flex-col items-end leading-tight">
+                ${e.oid
+                  ? `<span${e.oid_recovered ? ' title="OID recuperado: en el directorio estaba guardado en el campo PIC"' : ''}>OID: ${esc(e.oid)}${e.oid_recovered ? ' *' : ''}</span>`
+                  : `<span class="font-bold text-error bg-error/10 px-2 py-0.5 rounded-full" title="Esta ficha del directorio no tiene OID (el identificador de Erasmus+): no se puede adoptar como socio hasta corregir el dato">sin OID</span>`}
+                ${e.pic ? `<span class="opacity-60">PIC: ${esc(e.pic)}</span>` : ''}
+              </span>
               <span class="material-symbols-outlined text-primary text-lg shrink-0">add_circle</span>
             </div>
           `).join('') +
@@ -1067,7 +1069,7 @@ const Intake = (() => {
             // Ficha del directorio con OID vacío (dato mal migrado: el OID quedó
             // en la columna pic). Adoptarla falla, así que se para aquí.
             if (!oid) {
-              if (typeof Toast !== 'undefined') Toast.show('Esta entidad del directorio no tiene OID. Hay que corregir el dato antes de poder usarla como socio.', 'err');
+              if (typeof Toast !== 'undefined') Toast.show('Esta ficha no tiene OID (solo PIC, que es otro identificador distinto). Hay que corregir el dato en el directorio antes de poder usarla como socio.', 'err');
               return;
             }
             // Visual feedback while we adopt the entity → org
