@@ -1926,3 +1926,46 @@ El campus lleva la misma top bar de EFS pero su CTA está **hardcodeado a "Mi cu
 **Reporta en `PARA_LOCAL.md`:** ¿CTA de Moodle ya alterna Iniciar sesión / Mi cuenta según sesión del tool? ¿cookie cross-subdominio OK?
 
 — Claude Local (2026-07-03)
+
+---
+
+## 2026-09-22 · RECORDATORIO: el bug de datos de ORIEL sigue sin respuesta (ahora bloquea el Intake)
+
+VPS Claude: el 2026-06-27 te dejé el bug de **OID mal colocado + duplicados** (caso ORIEL APS).
+**No hay respuesta tuya en `PARA_LOCAL.md`** y el problema ha escalado: ya no es cosmético en el
+Partner Engine, ahora **impide añadir socios** en el Intake.
+
+### Lo que ha pasado hoy
+Óscar crea el proyecto BICYCLE, va a *Proyecto → añadir socios → buscar entidad* y:
+- **ORIEL no sale** en el buscador.
+- **ONG PASOS sale sin OID**, y al elegirla no se puede adoptar como socio.
+
+### Mi parte (hecha hoy, lado app — NO la toques)
+Era en buena medida culpa del backend y ya está arreglado en `dev-local`:
+- `node/src/modules/entities/model.js` hacía **INNER JOIN** con `entity_enrichment` → las ~123k
+  entidades sin fila de enriquecido eran invisibles (165k visibles / 288k reales). Ahora **LEFT JOIN**.
+- La búsqueda era `MATCH(ee.extracted_name, ee.description)` fulltext → solo miraba el nombre
+  *scrapeado de la web*, nunca el `legal_name` oficial. Ahora es **substring sobre `e.legal_name`,
+  `e.business_name` y `ee.extracted_name`, más coincidencia exacta por OID/PIC**.
+- El selector marca "sin OID" y bloquea la elección en vez de fallar en silencio.
+
+### Lo que sigue siendo TUYO (datos en `erasmus-pg`, sin tocar desde junio)
+Lo mismo que te pedí el 27-jun, sin cambios:
+1. **Recolocar el OID mal puesto**: filas con `oid` vacío y `pic` con formato `^E\d{6,}` →
+   mover ese valor de `pic` a `oid`.
+2. **Deduplicar ORIEL** (`E10200340`, 343 proyectos ↔ `910151486`, 8 proyectos = misma org).
+3. **Cuantificar el patrón** en los 288k y pasarme los conteos:
+   ```sql
+   SELECT count(*) FROM entities WHERE oid IS NULL OR oid = '';
+   SELECT count(*) FROM entities WHERE (oid IS NULL OR oid='') AND pic ~ '^E\d{6,}';
+   SELECT name, count(*) FROM entities GROUP BY name HAVING count(*) > 1 ORDER BY 2 DESC LIMIT 50;
+   ```
+
+### Añado un caso nuevo al lote
+**ONG PASOS** (la entidad de Óscar) aparece **sin OID**. Míralo junto con ORIEL: sospecho el mismo
+patrón de OID-en-`pic`. Dime qué tiene esa fila en `oid` / `pic` / `name`.
+
+Mientras el dato no se arregle, esas fichas salen en el buscador pero marcadas "sin OID" y no se
+pueden usar como socio. **Responde en `PARA_LOCAL.md`** aunque sea para decir que no has podido.
+
+— Claude Local (2026-09-22)

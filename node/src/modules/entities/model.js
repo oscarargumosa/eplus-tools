@@ -43,10 +43,21 @@ async function listEntities({
   const where = [];
   const params = [];
 
-  // Full-text search sobre name + description (requiere índice ft_name_desc)
+  // Búsqueda substring sobre el nombre OFICIAL (entities) y el scrapeado
+  // (entity_enrichment), más coincidencia exacta por OID/PIC. El fulltext
+  // anterior solo miraba el enriquecido: las entidades sin enrich, o cuyo
+  // nombre legal no aparece en su web, no salían nunca (TASK-001 F1).
   if (q && q.trim().length >= 2) {
-    where.push(`MATCH (ee.extracted_name, ee.description) AGAINST (? IN NATURAL LANGUAGE MODE)`);
-    params.push(q.trim());
+    const term = q.trim();
+    const like = '%' + term.replace(/[\\%_]/g, '\\$&') + '%';
+    where.push(`(
+      e.legal_name LIKE ?
+      OR e.business_name LIKE ?
+      OR ee.extracted_name LIKE ?
+      OR e.oid = ?
+      OR e.pic = ?
+    )`);
+    params.push(like, like, like, term.toUpperCase(), term);
   }
   if (country)  { where.push('e.country_code = ?'); params.push(String(country).toUpperCase()); }
   if (category) { where.push('ec.category = ?');    params.push(category); }
@@ -117,7 +128,7 @@ async function listEntities({
   const [[{ total }]] = await pool.query(
     `SELECT COUNT(*) AS total
      FROM entities e
-     JOIN entity_enrichment ee ON ee.oid = e.oid AND ee.archived = 0
+     LEFT JOIN entity_enrichment ee ON ee.oid = e.oid AND ee.archived = 0
      LEFT JOIN entity_classification ec ON ec.oid = e.oid
      ${whereSql}`,
     params
@@ -184,7 +195,7 @@ async function listEntities({
          ELSE 'minimal'
        END AS quality_tier
      FROM entities e
-     JOIN entity_enrichment ee ON ee.oid = e.oid AND ee.archived = 0
+     LEFT JOIN entity_enrichment ee ON ee.oid = e.oid AND ee.archived = 0
      LEFT JOIN entity_classification ec ON ec.oid = e.oid
      ${whereSql}
      ORDER BY ${orderBy}
