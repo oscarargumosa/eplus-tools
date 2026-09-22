@@ -267,6 +267,14 @@ const Vision = (() => {
     renderCallPanel();
   }
 
+  // Línea de contexto de un proyecto sugerido. El RAG no siempre manda
+  // programme/country; role y año sí vienen. Se omite lo que falte.
+  function metaLine(p) {
+    const ROLES = { coordinator: 'Coordinador', partner: 'Socio' };
+    return [p.programme, p.funding_year, p.coordinator_country, ROLES[p.role] || p.role]
+      .filter(Boolean).join(' · ');
+  }
+
   function renderRefs() {
     const host = document.getElementById('vz-refs-area');
     if (!host) return;
@@ -278,7 +286,7 @@ const Vision = (() => {
           <div class="vz-scard" data-act="open-proj" data-i="${i}">
             <span class="vz-score">◆ ${(p.score != null ? Number(p.score).toFixed(2) : '—')} match</span>
             <h4>${esc(p.title || p.project_identifier)}</h4>
-            <div class="vz-muted vz-sm">${esc(p.programme || '')} ${p.funding_year ? '· ' + p.funding_year : ''} ${p.coordinator_country ? '· ' + esc(p.coordinator_country) : ''}</div>
+            <div class="vz-muted vz-sm">${esc(metaLine(p))}</div>
             <div class="vz-add">📖 Abrir y leer →</div>
           </div>`).join('')}</div>`
       : '';
@@ -340,8 +348,11 @@ const Vision = (() => {
       const list = arr(d.results || d.projects || d);
       suggestions = list.map(p => ({
         project_identifier: p.project_identifier || p.identifier || p.id,
-        title: p.title || p.name,
+        // El contrato del RAG usa project_title y summary_excerpt (docs/EXPERIENCE_RAG.md).
+        title: p.project_title || p.title || p.name,
         score: p.score != null ? p.score : p.match_score,
+        excerpt: p.summary_excerpt || p.project_summary || '',
+        role: p.role,
         programme: p.programme,
         funding_year: p.funding_year || p.year,
         coordinator_country: p.coordinator_country || p.country,
@@ -363,23 +374,39 @@ const Vision = (() => {
     const ov = document.getElementById('vz-drawer-ov'), dr = document.getElementById('vz-drawer');
     document.getElementById('vz-dr-score').textContent = '◆ ' + (p.score != null ? Number(p.score).toFixed(2) : '—') + ' match';
     document.getElementById('vz-dr-title').textContent = p.title || p.project_identifier;
-    document.getElementById('vz-dr-meta').textContent = [p.programme, p.funding_year, p.coordinator_country].filter(Boolean).join(' · ');
+    document.getElementById('vz-dr-meta').textContent = metaLine(p);
     const body = document.getElementById('vz-dr-body');
     body.innerHTML = `<div class="vz-muted vz-sm">Cargando resumen…</div>`;
     ov.classList.add('vz-on'); dr.classList.add('vz-on');
     dr.dataset.ref = i;
     try {
-      const f = await API.get('/vision/project/' + encodeURIComponent(p.project_identifier) + '/full');
-      const summary = f.project_summary_full || f.summary || f.project_summary || '';
+      const raw = await API.get('/vision/project/' + encodeURIComponent(p.project_identifier) + '/full');
+      // El directory-api envuelve unas respuestas y otras no (/search → {rows},
+      // /entity/:oid/projects → {projects}). Aceptamos plano o envuelto.
+      const f = (raw && typeof raw === 'object' && !Array.isArray(raw))
+        ? (raw.project || raw.data || raw) : {};
+      const summary = f.project_summary_full || f.summary || f.project_summary
+        || f.report_summary || p.excerpt || '';
       const secs = [];
       const addSec = (label, val) => { if (val && String(val).trim()) secs.push(`<div class="vz-dr-sec"><div class="vz-eyebrow">${label}</div><p>${esc(val)}</p></div>`); };
       addSec('De qué iba', summary);
-      addSec('Objetivos', f.summary_objectives || f.report_objectives);
-      addSec('Actividades', f.summary_activities || f.report_implementation);
-      addSec('Impacto / resultados', f.summary_impact || f.report_results);
-      body.innerHTML = secs.join('') || `<div class="vz-muted vz-sm">Este proyecto aún no tiene resumen ampliado.</div>`;
+      addSec('Contexto', f.report_summary_background || f.report_background);
+      addSec('Objetivos', f.summary_objectives || f.report_summary_objectives || f.report_objectives);
+      addSec('Actividades', f.summary_activities || f.report_summary_implementation || f.report_implementation);
+      addSec('Impacto / resultados', f.summary_impact || f.report_summary_results || f.report_results);
+      if (!secs.length && f.title) addSec('Proyecto', f.title);
+      body.innerHTML = secs.join('') || `<div class="vz-muted vz-sm">El directorio no tiene todavía el resumen ampliado de este proyecto (el enriquecido va por año descendente, y los proyectos antiguos son los últimos). Puedes tomarlo como referencia igualmente.</div>`;
+      if (!f.project_summary_full && !f.summary_objectives) {
+        console.warn('[vision] /full sin resumen para', p.project_identifier, '· claves recibidas:', Object.keys(f));
+      }
     } catch (e) {
-      body.innerHTML = `<div class="vz-muted vz-sm">No se pudo cargar el resumen del proyecto.</div>`;
+      const why = e && e.code === 'NOT_FOUND'
+        ? 'El directorio no encuentra este proyecto.'
+        : (e && e.code === 'DIRECTORY_ERROR'
+            ? 'El servicio de proyectos del VPS no responde ahora.'
+            : 'No se pudo cargar el resumen del proyecto.');
+      body.innerHTML = `<div class="vz-muted vz-sm">${esc(why)}</div>`;
+      console.error('[vision] /full falló para', p.project_identifier, e);
     }
   }
 
