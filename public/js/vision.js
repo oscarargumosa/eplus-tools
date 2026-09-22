@@ -5,8 +5,13 @@
    ═══════════════════════════════════════════════════════════════ */
 
 const Vision = (() => {
-  let view = 'list';      // list | picker | wizard | brief
-  let visions = [];       // mis visiones
+  let view = 'list';      // list | picker | wizard | brief | public-brief
+  let visions = [];       // visiones del ámbito activo
+  // Ámbitos del listado: lo mío · lo de mi entidad · lo que publica todo el mundo.
+  let listScope = 'mine'; // mine | entity | public
+  let myEntity = null;    // ficha de mi entidad (nombre + logo), si la tengo
+  let pubQuery = '';      // búsqueda del tablón
+  let author = null;      // entidad que firma la visión abierta
   let V = null;           // visión activa
   let refs = [];          // referencias de la visión activa
   let call = null;        // contexto de la convocatoria (solo lectura)
@@ -80,46 +85,135 @@ const Vision = (() => {
 
   async function loadList() {
     try {
-      visions = await API.get('/vision');
+      if (listScope === 'public') {
+        const d = await API.get('/vision/public' + (pubQuery ? '?q=' + encodeURIComponent(pubQuery) : ''));
+        visions = arr(d.rows);
+      } else if (listScope === 'entity') {
+        const d = await API.get('/vision/entity');
+        visions = arr(d.rows);
+        if (d.entity) myEntity = d.entity;
+      } else {
+        const d = await API.get('/vision');
+        // El endpoint devolvía un array suelto; ahora trae { rows, entity }.
+        visions = arr(d.rows || d);
+        if (d && d.entity) myEntity = d.entity;
+      }
     } catch (e) { visions = []; }
     renderList();
   }
 
-  /* ── VIEW: Mis Visiones ───────────────────────────────────────── */
+  function setScope(scope) {
+    if (listScope === scope) return;
+    listScope = scope;
+    loadList();
+  }
+
+  /* ── Firma de autoría: la entidad que publica ─────────────────────
+     Una visión publicada la firma una ENTIDAD, no una persona: logo y
+     nombre. Sin logo, iniciales sobre el navy de marca.                */
+  function authorChip(a, big) {
+    if (!a) return '';
+    const name = a.name || a.oid || 'Entidad sin nombre';
+    const initials = name.replace(/[^\p{L}\p{N} ]/gu, '').trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+    const loc = [a.city, a.country_code ? cName(a.country_code) : null].filter(Boolean).join(', ');
+    const avatar = a.logo_url
+      ? `<img class="vz-av${big ? ' vz-av-lg' : ''}" src="${esc(a.logo_url)}" alt="" loading="lazy">`
+      : `<span class="vz-av vz-av-ini${big ? ' vz-av-lg' : ''}">${esc(initials || '?')}</span>`;
+    return `<div class="vz-author${big ? ' vz-author-lg' : ''}">${avatar}
+      <div class="vz-author-txt">
+        <b>${esc(name)}</b>
+        ${loc ? `<span class="vz-muted vz-sm">${esc(loc)}${a.country_code ? ' ' + flag(a.country_code) : ''}</span>` : ''}
+      </div></div>`;
+  }
+
+  /* ── VIEW: listado con tres ámbitos ───────────────────────────────
+     · Mis visiones  → las mías, borrador incluido. Mi mesa de trabajo.
+     · De mi entidad → las de mi ONG (las mías + las publicadas por mis
+                        compañeros de la misma entidad).
+     · Publicadas    → el tablón abierto: lo que publica todo el mundo.
+     Solo en "Mis visiones" se crea y se edita; los otros dos son lectura. */
   function renderList() {
     view = 'list';
+    const isMine = listScope === 'mine';
+    const isPub  = listScope === 'public';
+
     const cards = visions.map(v => {
-      const pub = v.visibility === 'public';
-      const complete = v.status === 'complete';
+      const pub = v.visibility === 'public' || isPub;
+      const complete = v.status === 'complete' || isPub;
+      const own = v.user_id && myEntity && v.entity_oid === myEntity.oid;
+      // En los ámbitos compartidos la firma de la entidad es lo primero.
+      const signature = isMine ? '' : authorChip(v.author);
+      const state = isMine || (v.user_id && !isPub)
+        ? `<div class="vz-muted vz-sm">${complete ? (pub ? `Publicada · ${v.interest_count || 0} interesados` : 'Lista para publicar') : `Paso ${v.current_step || 1} de 5`}</div>`
+        : `<div class="vz-muted vz-sm">${v.published_at ? 'Publicada ' + fmtDate(v.published_at) : 'Publicada'} · ${v.interest_count || 0} interesados</div>`;
       return `
         <div class="vz-card" data-act="open" data-id="${v.id}">
           <div class="vz-row-between">
-            <span class="vz-pill ${complete ? 'vz-pill-ok' : 'vz-pill-draft'}">${complete ? '✓ Completa' : '● Borrador'}</span>
-            <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 Pública' : '🔒 Privada'}</span>
+            ${isMine
+              ? `<span class="vz-pill ${complete ? 'vz-pill-ok' : 'vz-pill-draft'}">${complete ? '✓ Completa' : '● Borrador'}</span>
+                 <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 Pública' : '🔒 Privada'}</span>`
+              : `<span class="vz-pill vz-pill-ok">🌍 Pública</span>
+                 ${own ? '<span class="vz-pill vz-pill-mine">Mi entidad</span>' : ''}`}
           </div>
+          ${signature}
           <h3>${esc(v.title || 'Visión sin título')}</h3>
           <span class="vz-callchip">🎯 <b>${esc(v.programme || 'Convocatoria')}</b> · ${esc(v.call_title || v.call_id)}</span>
-          <div class="vz-muted vz-sm">${complete ? (pub ? `Publicada · ${v.interest_count || 0} interesados` : 'Lista para publicar') : `Paso ${v.current_step || 1} de 5`}</div>
+          ${state}
         </div>`;
     }).join('');
+
+    const tab = (id, label, hint) =>
+      `<button class="vz-tab ${listScope === id ? 'vz-tab-on' : ''}" data-act="scope" data-v="${id}" title="${esc(hint)}">${label}</button>`;
+
+    const empty = {
+      mine:   'Todavía no has empezado ninguna visión. Elige una convocatoria y te guiamos.',
+      entity: myEntity
+        ? 'Tu entidad aún no tiene visiones publicadas. Publica la tuya y aparecerá aquí para el resto del equipo.'
+        : 'Vincula tu entidad (el OID del directorio) en una visión para ver aquí lo de tu organización.',
+      public: pubQuery
+        ? 'Ninguna visión publicada coincide con esa búsqueda.'
+        : 'Todavía no hay visiones publicadas. La primera puede ser la tuya.',
+    }[listScope];
 
     $root().innerHTML = `
       <div class="vz-head">
         <div>
           <div class="vz-eyebrow">Paso 0 · antes de diseñar</div>
-          <h1 class="vz-h1">Mis Visiones</h1>
-          <p class="vz-lead">Da forma a tu idea en 5–10 minutos: el reto, a quién buscas y por qué importa a Europa. Compártela con la comunidad y llévala a Diseñar.</p>
+          <h1 class="vz-h1">${isMine ? 'Mis Visiones' : listScope === 'entity' ? 'Visiones de mi entidad' : 'Visiones publicadas'}</h1>
+          <p class="vz-lead">${isMine
+            ? 'Da forma a tu idea en 5–10 minutos: el reto, a quién buscas y por qué importa a Europa. Nace privada; la publicas cuando quieras.'
+            : listScope === 'entity'
+              ? 'Lo que está diseñando tu organización. Incluye tus borradores y lo que han publicado tus compañeros de entidad.'
+              : 'El tablón abierto: visiones que otras entidades han publicado buscando socios. Ábrelas para leerlas enteras.'}</p>
         </div>
         <button class="vz-btn vz-btn-primary" data-act="new">+ Nueva visión</button>
       </div>
+
+      <div class="vz-scopes">
+        ${tab('mine', '🔒 Mis visiones', 'Las tuyas, borradores incluidos')}
+        ${tab('entity', '🏛️ De mi entidad' + (myEntity && myEntity.name ? ' · ' + esc(myEntity.name) : ''), 'Lo que diseña tu organización')}
+        ${tab('public', '🌍 Publicadas', 'Lo que publica todo el mundo')}
+        ${isPub ? `<input class="vz-field vz-scope-q" id="vz-pubq" placeholder="Buscar en las publicadas…" value="${esc(pubQuery)}">` : ''}
+      </div>
+
       <div class="vz-grid">
-        <div class="vz-card vz-card-new" data-act="new">
+        ${isMine ? `<div class="vz-card vz-card-new" data-act="new">
           <div class="vz-plus">+</div>
           <h3>Empezar una visión</h3>
           <div class="vz-muted vz-sm">Elige una convocatoria y te guiamos</div>
-        </div>
+        </div>` : ''}
         ${cards}
-      </div>`;
+      </div>
+      ${!visions.length ? `<div class="vz-empty vz-muted">${esc(empty)}</div>` : ''}`;
+
+    const qBox = document.getElementById('vz-pubq');
+    if (qBox) {
+      qBox.addEventListener('keydown', (ev) => {
+        if (ev.key !== 'Enter') return;
+        pubQuery = qBox.value.trim();
+        loadList();
+      });
+    }
   }
 
   /* ── VIEW: elegir convocatoria ────────────────────────────────── */
@@ -184,7 +278,10 @@ const Vision = (() => {
     try {
       const d = await API.get('/vision/' + id);
       V = d.vision; refs = d.references || [];
+      author = d.author || null;
       call = null; suggestions = [];
+      // La visión de otra entidad se lee, no se edita.
+      if (d.is_owner === false) { renderPublicBrief(); return; }
       // cargar contexto de la call
       if (V.call_id) { try { call = await API.get('/convocatorias/' + encodeURIComponent(V.call_id)); } catch (e) {} }
       if (V.status === 'complete') { renderBrief(); }
@@ -502,7 +599,9 @@ const Vision = (() => {
               <div class="vz-seek-grid">
                 ${seek('Tipo de socio', esc(arr(V.partner_types).join(' · ')))}
                 ${seek('Países', arr(V.partner_countries).map(c => flag(c) + ' ' + esc(cName(c))).join(' · '))}
-                ${seek('Mi entidad', esc(V.entity_oid || 'sin vincular'))}
+                ${seek('Mi entidad', author
+                  ? authorChip(author)
+                  : (V.entity_oid ? esc(V.entity_oid) : '<span class="vz-warn">sin vincular · hace falta para publicar</span>'))}
               </div>
             </div>
           </div>
@@ -519,6 +618,48 @@ const Vision = (() => {
             <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ Llevar a Diseñar</button>
           </div>
           <div class="vz-note vz-sm" style="display:block">Al publicarla, otras entidades podrán marcar “Me interesa participar”. Los invitados podrán verla, pero no mostrar interés.</div>
+        </aside>
+      </div>`;
+  }
+
+  /* ── VIEW: ficha pública (visión de otra entidad, solo lectura) ──── */
+  function renderPublicBrief() {
+    view = 'public-brief';
+    const seek = (k, v) => `<div class="vz-seek"><div class="vz-seek-k">${k}</div><div class="vz-seek-v">${v || '—'}</div></div>`;
+    $root().innerHTML = `
+      <div class="vz-head" style="margin-bottom:16px"><div>
+        <div class="vz-eyebrow">Visión publicada</div>
+        <h1 class="vz-h1">Buscando socios</h1>
+      </div>
+      <button class="vz-btn vz-btn-ghost" data-act="back-list">← Volver al tablón</button></div>
+      <div class="vz-brief-wrap">
+        <article class="vz-brief">
+          <div class="vz-brief-hero">
+            ${author ? `<div class="vz-hero-author">${authorChip(author, true)}</div>` : ''}
+            <div class="vz-eyebrow" style="color:var(--vz-lav)">${esc(V.programme || 'Convocatoria')} · buscando socios</div>
+            <h1>${esc(V.title || 'Visión')}</h1>
+            <div class="vz-hero-meta">
+              ${V.budget_option_eur != null ? `<span class="vz-hm vz-hm-y">${eur(V.budget_option_eur)}</span>` : ''}
+              ${V.wp_count ? `<span class="vz-hm">${V.wp_count} paquetes de trabajo</span>` : ''}
+              ${V.call_deadline ? `<span class="vz-hm">Deadline ${fmtDate(V.call_deadline)}</span>` : ''}
+            </div>
+          </div>
+          <div class="vz-brief-body">
+            <div class="vz-bsec vz-euval"><div class="vz-eyebrow">La visión</div>${paras(V.vision_text || V.problem)}
+              ${arr(V.themes).length ? `<div class="vz-chips" style="margin-top:12px">${arr(V.themes).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}</div>` : ''}
+            </div>
+            <div class="vz-bsec"><div class="vz-eyebrow">A quién busca</div>
+              <div class="vz-seek-grid">
+                ${seek('Tipo de socio', esc(arr(V.partner_types).join(' · ')))}
+                ${seek('Países', arr(V.partner_countries).map(c => flag(c) + ' ' + esc(cName(c))).join(' · '))}
+                ${seek('Convocatoria', esc(V.call_title || V.call_id))}
+              </div>
+            </div>
+          </div>
+        </article>
+        <aside class="vz-brief-side">
+          ${author ? `<div class="vz-toggle-card"><div class="vz-eyebrow" style="margin-bottom:10px">Quién la propone</div>${authorChip(author, true)}</div>` : ''}
+          <div class="vz-note vz-sm" style="display:block">Mostrar interés en participar llegará con el tablón de comunidad. De momento, anota la entidad y contáctala por el directorio.</div>
         </aside>
       </div>`;
   }
@@ -590,6 +731,7 @@ const Vision = (() => {
       'pick-call': () => pickCall(t.dataset.id),
       'open': () => openVision(t.dataset.id),
       'back-list': () => loadList(),
+      'scope': () => setScope(t.dataset.v),
       'suggest': () => doSuggest(),
       'review': () => review(),
       'open-proj': () => openProject(parseInt(t.dataset.i, 10)),
@@ -667,6 +809,24 @@ const Vision = (() => {
     #vision-root .vz-row-between{display:flex;justify-content:space-between;align-items:center}
     #vision-root .vz-pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
     #vision-root .vz-pill-draft{background:var(--vz-lavsoft);color:var(--vz-navy)} #vision-root .vz-pill-ok{background:var(--vz-greensoft);color:var(--vz-green)} #vision-root .vz-pill-priv{background:#e9eafb;color:var(--vz-navy)}
+    #vision-root .vz-pill-mine{background:var(--vz-lavsoft);color:var(--vz-navy);border:1px solid var(--vz-lav)}
+    /* Pestañas de ámbito: mío · mi entidad · publicadas */
+    #vision-root .vz-scopes{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:18px 0 14px;border-bottom:1px solid var(--vz-line);padding-bottom:12px}
+    #vision-root .vz-tab{border:1px solid var(--vz-line2);background:#fff;color:var(--vz-muted);border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .15s ease;max-width:34ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    #vision-root .vz-tab:hover{border-color:var(--vz-lav);color:var(--vz-navy)}
+    #vision-root .vz-tab-on{background:var(--vz-navy);border-color:var(--vz-navy);color:#fff}
+    #vision-root .vz-scope-q{margin-left:auto;max-width:280px;padding:8px 13px;font-size:12.5px}
+    #vision-root .vz-empty{text-align:center;padding:34px 20px;border:1px dashed var(--vz-line2);border-radius:16px;margin-top:14px;font-size:13.5px}
+    #vision-root .vz-warn{color:#b4540a;font-weight:600}
+    /* Firma de autoría: la entidad que publica (logo + nombre) */
+    #vision-root .vz-author{display:flex;align-items:center;gap:9px;min-width:0}
+    #vision-root .vz-av{width:30px;height:30px;border-radius:9px;object-fit:contain;background:#fff;border:1px solid var(--vz-line);flex:0 0 auto}
+    #vision-root .vz-av-ini{display:grid;place-items:center;background:var(--vz-navy);color:#fff;border-color:var(--vz-navy);font-size:11px;font-weight:800;letter-spacing:.02em}
+    #vision-root .vz-av-lg{width:44px;height:44px;border-radius:12px;font-size:15px}
+    #vision-root .vz-author-txt{display:flex;flex-direction:column;min-width:0;line-height:1.3}
+    #vision-root .vz-author-txt b{font-size:13px;color:var(--vz-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    #vision-root .vz-author-lg .vz-author-txt b{font-size:15.5px;white-space:normal}
+    #vision-root .vz-hero-author{margin-bottom:14px}
     #vision-root .vz-callchip{display:inline-flex;gap:6px;font-size:11.5px;font-weight:600;color:var(--vz-muted);background:var(--vz-lavsoft);border-radius:8px;padding:5px 9px;align-self:flex-start}
     #vision-root .vz-callchip b{color:var(--vz-navy)}
     #vision-root .vz-note{background:var(--vz-lavsoft);border:1px solid var(--vz-lav);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--vz-navy);line-height:1.55;display:flex;gap:10px;align-items:flex-start}

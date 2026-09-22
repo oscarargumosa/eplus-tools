@@ -7,10 +7,47 @@ const dir = require('../../utils/directory-api');
 const fail = (res, code, message, status = 400) =>
   res.status(status).json({ ok: false, error: { code, message } });
 
-/* GET / — mis visiones (owner) */
+/* GET / — mis visiones (owner). Devuelve también mi entidad, para que el
+   frontend sepa si puede ofrecer el ámbito "de mi entidad". */
 exports.list = async (req, res, next) => {
   try {
-    res.json({ ok: true, data: await model.listByUser(req.user.id) });
+    const [rows, entity_oid] = await Promise.all([
+      model.listByUser(req.user.id),
+      model.myEntityOid(req.user.id),
+    ]);
+    const entity = entity_oid ? (await model.entityCards([entity_oid]))[entity_oid] || { oid: entity_oid } : null;
+    res.json({ ok: true, data: { rows, entity } });
+  } catch (e) { next(e); }
+};
+
+/* GET /public — tablón de visiones publicadas (optionalAuth: el invitado
+   las ve, no interactúa). Excluye las de mi propia entidad si se pide, para
+   que "Explorar" no repita lo que ya sale en "De mi entidad". */
+exports.publicList = async (req, res, next) => {
+  try {
+    const mine = req.user ? await model.myEntityOid(req.user.id) : null;
+    const rows = await model.listPublic({
+      q: req.query.q,
+      programme: req.query.programme,
+      exclude_entity_oid: req.query.exclude_mine === '1' ? mine : null,
+      limit: req.query.limit,
+      offset: req.query.offset,
+    });
+    res.json({ ok: true, data: { rows, my_entity_oid: mine } });
+  } catch (e) { next(e); }
+};
+
+/* GET /entity — visiones de mi entidad (las mías + las públicas de mis
+   compañeros de la misma entidad). */
+exports.entityList = async (req, res, next) => {
+  try {
+    const entity_oid = await model.myEntityOid(req.user.id);
+    if (!entity_oid) return res.json({ ok: true, data: { rows: [], entity: null } });
+    const [rows, cards] = await Promise.all([
+      model.listByEntity(entity_oid, req.user.id),
+      model.entityCards([entity_oid]),
+    ]);
+    res.json({ ok: true, data: { rows, entity: cards[entity_oid] || { oid: entity_oid } } });
   } catch (e) { next(e); }
 };
 
@@ -34,7 +71,10 @@ exports.getOne = async (req, res, next) => {
       return fail(res, 'NOT_FOUND', 'Visión no encontrada.', 404);
     }
     const references = await model.listReferences(v.id);
-    const data = { vision: v, references, is_owner: isOwner };
+    // Quién la firma: la entidad, con nombre y logo. Es lo que ve el público.
+    const cards = v.entity_oid ? await model.entityCards([v.entity_oid]) : {};
+    const author = v.entity_oid ? (cards[v.entity_oid] || { oid: v.entity_oid }) : null;
+    const data = { vision: v, references, is_owner: isOwner, author };
     // El interés solo lo ve el dueño; los invitados ni lo ven.
     if (isOwner) data.interests = await model.listInterest(v.id, req.user.id);
     res.json({ ok: true, data });

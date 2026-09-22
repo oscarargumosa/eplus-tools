@@ -35,6 +35,98 @@ async function getById(id) {
   return rows[0] || null;
 }
 
+
+/* ── Autoría: quién firma la visión ──────────────────────────────────
+   Una visión publicada la firma una ENTIDAD, no una persona. Resolvemos
+   el entity_oid contra el directorio local para dar nombre y logo.
+   LEFT JOIN con el enriquecido: es opcional (lección de TASK-001, una
+   entidad sin scrapear seguía existiendo y no debe desaparecer).       */
+async function entityCards(oids = []) {
+  const list = [...new Set(oids.filter(Boolean))];
+  if (!list.length) return {};
+  const [rows] = await db.query(
+    `SELECT e.oid,
+            COALESCE(NULLIF(ee.extracted_name, ''), e.legal_name) AS name,
+            ee.logo_url, e.country_code, e.city
+       FROM entities e
+       LEFT JOIN entity_enrichment ee ON ee.oid = e.oid AND ee.archived = 0
+      WHERE e.oid IN (?)`,
+    [list]
+  );
+  return Object.fromEntries(rows.map(r => [r.oid, r]));
+}
+
+// Añade .author a cada fila a partir de su entity_oid.
+async function attachAuthors(rows) {
+  const cards = await entityCards(rows.map(r => r.entity_oid));
+  return rows.map(r => ({ ...r, author: r.entity_oid ? (cards[r.entity_oid] || { oid: r.entity_oid }) : null }));
+}
+
+/* La entidad del usuario: la de su organización adoptada del directorio.
+   Si aún no tiene organización, caemos a la última que él mismo vinculó
+   en una visión — así "mi entidad" funciona antes de completar el PIF.  */
+async function myEntityOid(userId) {
+  const [[org]] = await db.query(
+    `SELECT o.oid FROM users u JOIN organizations o ON o.id = u.organization_id
+      WHERE u.id = ? AND o.oid IS NOT NULL AND o.oid <> ''`,
+    [userId]
+  );
+  if (org && org.oid) return org.oid;
+  const [[v]] = await db.query(
+    `SELECT entity_oid FROM visions
+      WHERE user_id = ? AND entity_oid IS NOT NULL AND entity_oid <> ''
+      ORDER BY updated_at DESC LIMIT 1`,
+    [userId]
+  );
+  return (v && v.entity_oid) || null;
+}
+
+/* ── Ámbito "de mi entidad" ──────────────────────────────────────────
+   Las mías (en cualquier estado) + las de mis compañeros de entidad que
+   ya estén PUBLICADAS. Los borradores ajenos no se enseñan: son suyos.  */
+async function listByEntity(entityOid, userId) {
+  if (!entityOid) return [];
+  const [rows] = await db.query(
+    `SELECT v.*, (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id) AS interest_count
+       FROM visions v
+      WHERE v.entity_oid = ?
+        AND (v.user_id = ? OR v.visibility = 'public')
+      ORDER BY v.updated_at DESC
+      LIMIT 200`,
+    [entityOid, userId || '']
+  );
+  return attachAuthors(rows);
+}
+
+/* ── Ámbito "publicadas" (tablón abierto) ────────────────────────────
+   Todas las públicas y completas, de cualquier entidad. Visible también
+   para invitados: ven, no interactúan.                                 */
+async function listPublic({ q, programme, exclude_entity_oid, limit = 60, offset = 0 } = {}) {
+  const where = [`v.visibility = 'public'`];
+  const params = [];
+  if (q && String(q).trim().length >= 2) {
+    const like = '%' + String(q).trim().replace(/[\\%_]/g, (m) => '\\' + m) + '%';
+    where.push(`(v.title LIKE ? OR v.vision_text LIKE ? OR v.call_title LIKE ?)`);
+    params.push(like, like, like);
+  }
+  if (programme) { where.push('v.programme = ?'); params.push(String(programme)); }
+  if (exclude_entity_oid) { where.push('(v.entity_oid IS NULL OR v.entity_oid <> ?)'); params.push(exclude_entity_oid); }
+  const lim = Math.min(100, Math.max(1, parseInt(limit, 10) || 60));
+  const off = Math.max(0, parseInt(offset, 10) || 0);
+  const [rows] = await db.query(
+    `SELECT v.id, v.user_id, v.entity_oid, v.call_id, v.call_title, v.programme, v.call_deadline,
+            v.title, v.vision_text, v.themes, v.partner_types, v.partner_countries,
+            v.budget_option_eur, v.wp_count, v.duration_months, v.published_at, v.updated_at,
+            (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id) AS interest_count
+       FROM visions v
+      WHERE ${where.join(' AND ')}
+      ORDER BY v.published_at DESC, v.updated_at DESC
+      LIMIT ? OFFSET ?`,
+    [...params, lim, off]
+  );
+  return attachAuthors(rows);
+}
+
 /* ── List my visions (owner) ────────────────────────────────────────── */
 async function listByUser(userId) {
   const [rows] = await db.query(
@@ -44,7 +136,7 @@ async function listByUser(userId) {
       ORDER BY v.updated_at DESC`,
     [userId]
   );
-  return rows;
+  return attachAuthors(rows);
 }
 
 /* ── Update allowed fields (owner) ──────────────────────────────────── */
@@ -281,6 +373,7 @@ async function generateDraft(id, userId, callContext = {}) {
 
 module.exports = {
   create, getById, listByUser, update, setVisibility,
+  listPublic, listByEntity, myEntityOid, entityCards, attachAuthors,
   listReferences, addReference, removeReference,
   promote, addInterest, listInterest,
   generateDraft,

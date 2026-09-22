@@ -9,8 +9,10 @@ const ctrl = require('./controller');
 router.post('/suggest-projects', requireAuth, ctrl.suggestProjects);
 router.get('/project/:identifier/full', requireAuth, ctrl.projectFull);
 
-// Tablón público "Explorar visiones" (v2) — antes de /:id.
-// router.get('/public', optionalAuth, ctrl.publicList);
+// Ámbitos de listado — estáticos, antes de /:id.
+// /public es el tablón abierto: el invitado ve las publicadas, no interactúa.
+router.get('/public', optionalAuth, ctrl.publicList);
+router.get('/entity', requireAuth, ctrl.entityList);
 
 // Colección
 router.get('/', requireAuth, ctrl.list);
