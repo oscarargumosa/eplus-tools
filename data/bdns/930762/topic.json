@@ -1,0 +1,97 @@
+{
+  "source": "bdns",
+  "source_id": "930762",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / HUESCA / AYUNTAMIENTO DE HUESCA",
+  "nuts_codes": [
+    "ES241"
+  ],
+  "nuts_primary": "ES241",
+  "title": "CONVOCATORIA QUE REGULA LAS SUBVENCIONES AL DEPORTE ESCOLAR EN EDADES DE PRIMARIA Y SECUNDARIA PARA EL CURSO 2026-2027.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": "https://www.huesca.es/ayuntamiento/tramites-y-gestiones/catalogo-de-tramites/subvenciones",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930762",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo 1. Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo 1.1. Memoria de actividad",
+      "url": null
+    },
+    {
+      "label": "Anexo 1.2. Presupuesto",
+      "url": null
+    },
+    {
+      "label": "Anexo 2.3. Declaración otros ingresos",
+      "url": null
+    },
+    {
+      "label": "Anexo 1.3. Declaración otros ingresos",
+      "url": null
+    },
+    {
+      "label": "Anexo 2.2. Relación de gastos",
+      "url": null
+    },
+    {
+      "label": "Anexo 2.1. Memoria actuación",
+      "url": null
+    },
+    {
+      "label": "Anexo 2. Instancia justificación",
+      "url": null
+    },
+    {
+      "label": "Anexo 1.4. Listado de grupo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.huesca.es/documents/20126/2970133/Ordenanza+general+por+la+que+se+aprueban+las+bases+reguladoras+para+la+concesi%C3%B3n+de+subvenciones+por+el+ayuntamiento+de+Huesca+y+sus+entidades+dependientes.pdf/d6dce6c4-67e3-c770-e4a1-ed4b60f76e5b?t=16781",
+  "text_inicio": "A partir de la fecha de la publicación del extracto de la convocatoria en el BOP de Huesca.",
+  "text_fin": "Veinte días naturales a partir de la fecha de publicación del extracto de convocatoria en BOP Huesca",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.768Z"
+}

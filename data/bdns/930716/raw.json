@@ -1,0 +1,72 @@
+{
+  "id": 1132277,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FRADES",
+    "nivel3": "AYUNTAMIENTO DE FRADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930716",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "BASES ESPECÍFICAS REGULADORAS DA CONVOCATORIA DE SUBVENCIONES DIRIGIDO A FAMILIAS PARA EDUCACIÓN. CURSO 2026-2027.",
+  "descripcionLeng": "BASES ESPECÍFICAS REGULADORAS DA CONVOCATORIA DE SUBVENCIÓNS DIRIXIDO ÁS FAMILIAS PARA ENSINO. CURSO 2026-2027\n\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS REGULADORAS DA CONVOCATORIA DE SUBVENCIÓNS DIRIXIDO ÁS FAMILIAS PARA ENSINO.",
+  "urlBasesReguladoras": "https://sede.frades.gal/sxc/es/informacion/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 DIAS HABILES DESDE LA PÚBLICACIÓN EN EL BOP DEL ESTRACTO",
+  "textFin": "15 DIAS HABILES DESDE LA PUBLICACIÓN EN EL BOP DEL ESTRACTO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524739,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026_A002_000002_bases ensino 2026 (1).docx_86908.pdf",
+      "long": 153305,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524737,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_A002_000002_bases ensino 2026 castellano_86909.pdf",
+      "long": 156039,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

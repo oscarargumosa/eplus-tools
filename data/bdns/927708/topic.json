@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "927708",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BURGO RANERO, EL / AYUNTAMIENTO DE BURGO RANERO, EL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "SUBVENCION EN REGIMEN DE CONCURRENCIA COMPETITIVA PARA LA ADQUISICION DE MATERIAL ESCOLAR. CURSO 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-03",
+  "open_date": null,
+  "deadline": "2026-11-13",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/927708",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ACUERDO APROBACION BASES SESION PLENO 18-09-2026",
+      "url": null
+    },
+    {
+      "label": "SOLICITUD AYUDAS MATERIAL ESCOLAR 2026/2027",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://elburgoranero.sedelectronica.es/info.0",
+  "text_inicio": "DIA SIGUIENTE A SU PUBLICACION EN EL BOLETIN OFICIAL DE LA PROVINCIA DE LEON",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:40.823Z"
+}

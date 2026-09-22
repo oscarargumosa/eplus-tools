@@ -1,0 +1,88 @@
+{
+  "id": 1132180,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARAÑÁIN/BARAÑAIN",
+    "nivel3": "AYUNTAMIENTO DE BARAÑÁIN/BARAÑAIN"
+  },
+  "sedeElectronica": "https://sedeelectronica.baranain.es ",
+  "codigoBDNS": "930619",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 QUE REGULA LA SOLICITUD Y CONCESIÓN DE AYUDAS ECONÓMICAS A LA CIUDADANÍA DE BARAÑÁIN PARA EL APRENDIZAJE DE EUSKERA",
+  "descripcionLeng": "EUSKARA IKASTEKO, DIRULAGUNTZEN ESKAERA eta EMATEA ARAUTZEN DUEN DEIALDIA BARAÑAINGO HERRITARRENTZAT 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES22 - COMUNIDAD FORAL DE NAVARRA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA 2026 QUE REGULA LA SOLICITUD Y CONCESIÓN DE AYUDAS ECONÓMICAS A LA CIUDADANÍA DE BARAÑÁIN PARA EL APRENDIZAJE DE EUSKERA",
+  "urlBasesReguladoras": "https://sedeelectronica.baranain.es/tablondeanuncios/anuncio.aspx?id=26788",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524507,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Subv_2026-CONVOC-DEIALDIA-Aprendizaje EUSKARA-2026.pdf",
+      "long": 513914,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524519,
+      "descripcion": "CERTIFICADO ASISTENCIA-BERTARATZE ZIURTAGIRIA",
+      "nombreFic": "EUSK-Anexo 2 eranskina-ASISTENTZIA.pdf",
+      "long": 174281,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524510,
+      "descripcion": "SOLICITUD-ESKAERA 2026",
+      "nombreFic": "EUSK-Anexo 1 eranskina-ESKAERA-SOLICITUD.pdf",
+      "long": 238851,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524509,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Subv_2026-CONVOC-DEIALDIA-Aprendizaje EUSKARA-2026.pdf",
+      "long": 513914,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

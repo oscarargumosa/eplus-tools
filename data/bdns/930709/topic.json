@@ -1,0 +1,67 @@
+{
+  "source": "bdns",
+  "source_id": "930709",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MISLATA / AYUNTAMIENTO DE MISLATA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Convocatoria de ayudas económicas directas en materia de transporte a personas físicas afectadas por la depresión aislada en niveles altos (DANA) sufrida el 29 de octubre de 2024 en el municipio de Mislata",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 240660.08,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.9",
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930709",
+  "documents": [
+    {
+      "label": "Convocatoria",
+      "url": null
+    },
+    {
+      "label": "Resolucion Alcaldia",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.mislata.es/es/administracion/subvenciones/convocatorias-de-subvenciones-en-tramitacion/ayudas-economicas-directas-en-materia-de-transporte-personas-fisicas-afectadas-por-la-dana\n",
+  "text_inicio": "El inmediato dia habi siguiente a la publicacion del extracto de la convocatoria",
+  "text_fin": "quince dias habiles despues de la publicacion",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.754Z"
+}

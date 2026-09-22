@@ -1,0 +1,67 @@
+{
+  "source": "bdns",
+  "source_id": "930580",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE GRANADA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "RESOLUCIÓN del Vicerrector de Innovación Social, Empleabilidad y Emprendimiento, por la que se publican las BBRR y se convoca la 2ª edición de ayudas para la realización de prácticas extracurriculares (PLAN DE FORMACIÓN INTERNA-Programa PFI 2026-2027)",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": "2026-09-24",
+  "deadline": "2026-11-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 219200,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930580",
+  "documents": [
+    {
+      "label": "Oferta de puestos",
+      "url": null
+    },
+    {
+      "label": "Información puestos ofertados",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "PEndiente de publicación",
+  "text_inicio": "Grado: 24/09/2026 Master: 21/10/2026",
+  "text_fin": "Grado: 05/10/2026 Master: 05/11/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.727Z"
+}

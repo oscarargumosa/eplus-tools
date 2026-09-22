@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "930713",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BADAJOZ / AYUNTAMIENTO DE BADAJOZ",
+  "nuts_codes": [
+    "ES431"
+  ],
+  "nuts_primary": "ES431",
+  "title": "Decreto del 18 de septiembre de 2026 del Alcalde del Ayuntamiento de Badajoz, por el que se convoca el XXVII Concurso de Pintura al Aire Libre Ciudad de Badajoz 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": "2026-09-19",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90.3",
+      "descripcion": "Actividades de apoyo a la creación artística y a las artes escénicas"
+    },
+    {
+      "codigo": "90.1",
+      "descripcion": "Actividades de creación artística"
+    }
+  ],
+  "apply_url": " https://aytobadajoz.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930713",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-badajoz.es/bop/ventana_anuncio.php?id_anuncio=33251&FechaSolicitada=20090202000000",
+  "text_inicio": null,
+  "text_fin": "Mismo día de celebración, 19/09/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.756Z"
+}

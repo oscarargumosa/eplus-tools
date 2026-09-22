@@ -1,0 +1,68 @@
+{
+  "id": 1132274,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BADAJOZ",
+    "nivel3": "AYUNTAMIENTO DE BADAJOZ"
+  },
+  "sedeElectronica": " https://aytobadajoz.es",
+  "codigoBDNS": "930713",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5400,
+  "mrr": false,
+  "descripcion": "Decreto del 18 de septiembre de 2026 del Alcalde del Ayuntamiento de Badajoz, por el que se convoca el XXVII Concurso de Pintura al Aire Libre Ciudad de Badajoz 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la creación artística y a las artes escénicas",
+      "codigo": "90.3"
+    },
+    {
+      "descripcion": "Actividades de creación artística",
+      "codigo": "90.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES431 - Badajoz"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Ayuntamiento de Badajoz",
+  "urlBasesReguladoras": "https://www.dip-badajoz.es/bop/ventana_anuncio.php?id_anuncio=33251&FechaSolicitada=20090202000000",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-19",
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": "Mismo día de celebración, 19/09/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524738,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria.pdf",
+      "long": 600962,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

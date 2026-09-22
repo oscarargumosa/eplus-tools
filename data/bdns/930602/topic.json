@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "930602",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALMERÍA / AYUNTAMIENTO DE ALMERÍA",
+  "nuts_codes": [
+    "ES611"
+  ],
+  "nuts_primary": "ES611",
+  "title": "Acuerdo JGL 11/09/2026 de Aprobación de la Convocatoria de Subvenciones, en régimen de concurrencia competitiva, de Ayuda al Talento Emprendedor y Fomento del Emprendimiento Juvenil correspondiente al ejercicio 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": "2026-09-24",
+  "deadline": "2026-10-16",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://almeriaciudad.es/integracion-social",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930602",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ORDENANZA GENERAL DE SUBVENCIONES BOP Nº 142 24-07-2024",
+      "url": null
+    },
+    {
+      "label": "CONVOCATORIA DE SUBVENCIONES DE LA DELEGACIÓN DE INTEGRACIÓN SOCIAL, PROGRAMAS, PARTICIPACION, DISTRITOS Y JUVENTUD DEL EXCMO. AYUNTAMIENTO DE ALMERÍA CORRESPONDIENTES AL AÑO 2026, PARA AYUDA AL TALENTO EMPRENDEDOR Y FOMENTO DEL EMPRENDIMIENTO JUVENIL",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://app.dipalme.org/bop/services/manager/edicto/2024/1995/anuncio.pdf",
+  "text_inicio": "AL DÍA SIGUIENTE HÁBIL DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOP DE ALMERÍA",
+  "text_fin": "15 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.730Z"
+}

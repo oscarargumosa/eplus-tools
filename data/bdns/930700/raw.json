@@ -1,0 +1,104 @@
+{
+  "id": 1132261,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PARRES",
+    "nivel3": "AYUNTAMIENTO DE PARRES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "930700",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas de emergencia social a familias con menores del año 2026",
+  "descripcionLeng": ".- Convocatoria de ayudas de emergencia social a familias con menores del año 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Convocatoria de ayudas de emergencia social a familias con menores del año 2026",
+  "urlBasesReguladoras": "https://www.ayto-parres.es/noticia/-/asset_publisher/bb7c8be44268/content/not-sub-ayu#.Xplii0AzaUk",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "30 dían naturales, desde el día siguiente de la publicación en el BOPA",
+  "textFin": "30 dían naturales, desde el día siguiente de la publicación en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524688,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA 2026 AF.pdf",
+      "long": 114708,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524689,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "SOLICITUD.pdf",
+      "long": 198679,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524705,
+      "descripcion": "ORDENANZA",
+      "nombreFic": "ORDENANZA REGULADORA AYUDAS EMERGENCIA SOCIAL Y APOYO A LA INTERVENCIÓN.pdf",
+      "long": 467797,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524691,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO II.- AUTORIZACIÓN CONSULTA DATOS.pdf",
+      "long": 118480,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524692,
+      "descripcion": "FICHERO ACREEDOR",
+      "nombreFic": "FICHA ACREEDOR.pdf",
+      "long": 97886,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524690,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO I.- JUSTIFICACIÓN DEL GASTO.pdf",
+      "long": 83216,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

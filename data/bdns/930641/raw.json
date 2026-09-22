@@ -1,0 +1,99 @@
+{
+  "id": 1132202,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLANERA",
+    "nivel3": "AYUNTAMIENTO DE LLANERA"
+  },
+  "sedeElectronica": "www.sede.llanera.es",
+  "codigoBDNS": "930641",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Acuerdo Junta de Gobierno Local concesión de subvenciones destinadas a la limpieza de fosas sépticas en el concejo de Llanera 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones destinadas a la limpieza de fosas sépticas en el concejo de Llanera. Año 2026",
+  "urlBasesReguladoras": "https://sede.llanera.es/firma/documento.aspx?csv=WFCAAEDVLFAR92XRA4QU&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOPA",
+  "textFin": "30 de noviembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1524588,
+      "descripcion": "Anexo IV Cuenta justificativa",
+      "nombreFic": "Anexo IV _T_Cuenta Justificativa.pdf",
+      "long": 115656,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524583,
+      "descripcion": "Anexo I Formulario de solicitud",
+      "nombreFic": "Anexo I Formulario solicitud.pdf",
+      "long": 159014,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524587,
+      "descripcion": "Anexo III Ficha de acreedor",
+      "nombreFic": "Anexo III - Ficha acreedor.pdf",
+      "long": 156352,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524578,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado acuerdo subvenciones limpieza de fosas sépticas. JGL 18_09_2026.pdf",
+      "long": 510864,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    },
+    {
+      "id": 1524586,
+      "descripcion": "Anexo II Declaración responsable",
+      "nombreFic": "Anexo II - Declaración responsable.pdf",
+      "long": 104321,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

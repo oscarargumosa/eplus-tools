@@ -1,0 +1,93 @@
+{
+  "source": "bdns",
+  "source_id": "930632",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Orden de la Consejería de Empresa, Empleo y Economía Social por la que se convocan subvenciones para el ejercicio 2026, dirigidas a empresas de inserción para el fomento de la integración laboral de personas en riesgo o situación de exclusión social.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-21",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 400000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    },
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930632",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I. Autorización de terceros",
+      "url": null
+    },
+    {
+      "label": "ANEXO II. Incidencias laborales",
+      "url": null
+    },
+    {
+      "label": "ANEXO VIII. Memoria económica abreviada",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV. Relación personas en riesgo de exclusión acompañadas",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI. Cuenta justificativa",
+      "url": null
+    },
+    {
+      "label": "ANEXO VII. Memoria de actuaciones",
+      "url": null
+    },
+    {
+      "label": "ANEXO III. Curriculum vitae",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/#/home/anuncio/22-05-2025/2331",
+  "text_inicio": "al día siguiente de la publicación del extracto de la convocatoria en el BORM",
+  "text_fin": "a los 7 días naturales",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-22T04:07:41.739Z"
+}
