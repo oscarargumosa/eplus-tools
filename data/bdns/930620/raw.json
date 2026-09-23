@@ -1,0 +1,99 @@
+{
+  "id": 1132181,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD"
+  },
+  "sedeElectronica": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+  "codigoBDNS": "930620",
+  "fechaRecepcion": "2026-09-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Resolución de la consejera de Inclusión Social, Juventud, Familias e Igualdad de convocatoria de subvenciones a particulares y entidades e instituciones privadas sin ánimo de lucro a actividades de investigación o divulgación Bienes Interés Cultural.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Orden ISO/10/2026, de 29 de julio, por la que se aprueban las bases reguladoras para la concesión de subvenciones a particulares y entidades e instituciones privadas sin ánimo de lucro, para investigación o divulgación Bienes Interes Cultural.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=438919",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día hábil siguiente a la publicación del extracto de la convocatoria en el B.O.C.",
+  "textFin": "Pasados veinte días hábiles siguientes a la publicación del extracto de la convocatoria en el B.O.C.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525441,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Patrimonio Inmaterial.pdf",
+      "long": 243774,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1524494,
+      "descripcion": "ANEXO II - Patrimonio Inmaterial",
+      "nombreFic": "ANEXO II - Patrimonio Inmaterial.pdf",
+      "long": 137379,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1524497,
+      "descripcion": "ANEXO IV - Patrimonio Inmaterial",
+      "nombreFic": "ANEXO IV - Patrimonio Inmaterial.pdf",
+      "long": 188608,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1524493,
+      "descripcion": "ANEXO I - Patrimonio Inmaterial",
+      "nombreFic": "ANEXO I - Patrimonio Inmaterial.pdf",
+      "long": 228980,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1524496,
+      "descripcion": "ANEXO III - Patrimonio Inmaterial",
+      "nombreFic": "ANEXO III - Patrimonio Inmaterial.pdf",
+      "long": 176787,
+      "datMod": "2026-09-21",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

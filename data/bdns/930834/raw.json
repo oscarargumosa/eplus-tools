@@ -1,0 +1,80 @@
+{
+  "id": 1132395,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALENCIA",
+    "nivel3": "FUNDACIÓN DE LA CV PARA LA PROMOCIÓN ESTRATÉGICA, EL DESARROLLO Y LA INNOVACIÓN URBANA (INNDEA)"
+  },
+  "sedeElectronica": "https://survey.zohopublic.eu/zs/Z3BxNs",
+  "codigoBDNS": "930834",
+  "fechaRecepcion": "2026-09-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras de la convocatoria de subvenciones, a través de procedimiento de concurrencia competitiva, para el desarrollo de proyectos de acción climática local liderados por jóvenes, en el marco del programa \"Youth Climate Action Fund (YCAF)\".",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades profesionales, científicas y técnicas n.c.o.p.",
+      "codigo": "74.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Bases reguladoras de la convocatoria de subvenciones, a través de procedimiento de concurrencia competitiva, para el desarrollo de proyectos de acción climática local liderados por jóvenes, en el marco del programa \"Youth Climate Action Fund (YCAF)\".",
+  "urlBasesReguladoras": "https://valenciainnovationcapital.com/wp-content/uploads/2026/09/260921-R266-26-Resolucion-aprobacion-bases-y-convocatoria_YCAF_firmado.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-02",
+  "textInicio": "Día siguiente a la publicación en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525081,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvenciones YCAF 2026.pdf",
+      "long": 311081,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525095,
+      "descripcion": "Autorización participantes beneficiarios menores de edad",
+      "nombreFic": "Autorizacion participantes benificiarios menores de edad.docx",
+      "long": 68398,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525093,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I YCAF 2026.docx",
+      "long": 56585,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

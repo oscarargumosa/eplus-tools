@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "930992",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / TURISME COMUNITAT VALENCIANA",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "RESOLUCION DE LA PRESIDENTA DE TURISME COMUNITAT VALENCIANA POR LA QUE SE CONVOCAN LAS AYUDAS DEL PROGRAMA \"BONO HOSTALERIA 2026\", EN DESARROLLO DEL PLAN ENDAVANT",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-09-22",
+  "open_date": "2026-10-15",
+  "deadline": "2026-11-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3900000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://recuperemhosteleriaturismecv.gva.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930992",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dogv.gva.es/datos/2017/04/04/pdf/2017_2821.pdf",
+  "text_inicio": "EL 15 DE OCTUBRE DE 2026 A LAS 09:00 HORAS",
+  "text_fin": "EL 30 DE NOVIEMBRE DE 2026 HASTA LAS 23:59",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.692Z"
+}

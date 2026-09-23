@@ -1,0 +1,66 @@
+{
+  "source": "bdns",
+  "source_id": "930831",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ETXEBARRI / AYUNTAMIENTO DE ETXEBARRI",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "2ª Convocatoria de actos y eventos culturales y dirigidos a igualdad de género 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-22",
+  "open_date": null,
+  "deadline": "2026-11-09",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 9204.35,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://www.etxebarri.eus/es-ES/Tramites/Paginas/info-tramite.aspx?idt=234daca5-91a0-e411-b5fe-00237d32b322",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930831",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.etxebarri.eus/es-ES/Ayuntamiento/Normativa-municipal/Documents/15_Concesion%20de%20Subvenciones%20Municipales.pdf",
+  "text_inicio": "Al día siguiente desde la publicación del extracto en el BOB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.663Z"
+}

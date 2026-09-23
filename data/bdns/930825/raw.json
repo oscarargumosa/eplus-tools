@@ -1,0 +1,87 @@
+{
+  "id": 1132386,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PAÍS VASCO",
+    "nivel3": "DEPARTAMENTO DE ECONOMÍA, TRABAJO Y EMPLEO"
+  },
+  "sedeElectronica": "https://www.euskadi.eus/servicios/0055223",
+  "codigoBDNS": "930825",
+  "fechaRecepcion": "2026-09-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 386800,
+  "mrr": false,
+  "descripcion": "Ayudas formación, difusión e investigación economía social 26/27 Minimis",
+  "descripcionLeng": "Gizarte-ekonomiaren arloko prestakun, zabalkun eta ikerketar diru-lag 26/27",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "LEY 7/2025, de 23 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2026.",
+  "urlBasesReguladoras": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2025005538",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-16",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525100,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "DEIALDIAKO AGINDUA - PRESTAKUNTZA, DIBULGAZIO ETA IKERKETA.PDF",
+      "long": 211940,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525099,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ORDEN CONVOCATORIA - FORMACION, DIVULGACION E INVESTIGACION.PDF",
+      "long": 230111,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 221342,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/es/p43aBOPVWebWar/VerParalelo.do?cd2026003887&BOPV_HIDE_CALENDAR=true",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-09-15"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

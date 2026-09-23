@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "931042",
+  "source_lang": "es",
+  "level": "estado",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "ESTADO / MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES / AGENCIA ESTATAL DE INVESTIGACIÓN",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de 22 de septiembre de 2026 de la Presidencia de la Agencia Estatal de Investigación, por la que se aprueba la convocatoria 2026 de ayudas del Programa de Doctorados Industriales (actividades no económicas de organismos de investigación).",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-09-22",
+  "open_date": "2026-09-30",
+  "deadline": "2026-10-26",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    }
+  ],
+  "apply_url": "https://www.aei.gob.es/aplicaciones-interes",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931042",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boe.es/diario_boe/txt.php?id=BOE-A-2026-14489",
+  "text_inicio": "A las 00:00 (hora peninsular española) del día",
+  "text_fin": "A las 14:00 (hora peninsular española) del día",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.705Z"
+}

@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "930820",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD FORAL DE NAVARRA / DEPARTAMENTO DE DESARROLLO RURAL Y MEDIO AMBIENTE",
+  "nuts_codes": [
+    "ES22"
+  ],
+  "nuts_primary": "ES22",
+  "title": "Ayudas para reparar los daños causados por enfermedades de animales en el ganado vacuno, en el marco de campañas de saneamiento ganadero, para el año 2026.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-09-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 238103,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930820",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.navarra.es/es/tramites/on/-/line/ayudas-para-reposicion-del-ganado-vacuno-y-reparacion-de-danos-causados-en-el-marco-de-campanas-de-saneamiento-ganadero?back=true&pageBackId=5722676",
+  "text_inicio": "Desde su publicación en el BON",
+  "text_fin": "2 de noviembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.109583",
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 26 AYUDAS DESTINADAS A LOS COSTES DE PREVENCIÓN, CONTROL Y ERRADICACIÓN DE ENFERMEDADES ANIMALES O PLAGAS VEGETALES Y AYUDAS DESTINADAS A REPARAR LOS DAÑOS CAUSADOS POR ENFERMEDADES ANIMALES O PLAGAS VEGETALES"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.658Z"
+}

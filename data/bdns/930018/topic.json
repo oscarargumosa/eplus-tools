@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "930018",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MURCIA / AYUNTAMIENTO DE MURCIA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "202604907006 SUBVENCIÓN INCREMENTO COSTES EXPLOTACIÓN TAXIS ADAPTADOS PMR",
+  "title_lang": "es",
+  "summary": "Subvenciones al transporte",
+  "status": "open",
+  "publication_date": "2026-09-17",
+  "open_date": "2026-10-01",
+  "deadline": "2026-10-10",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 185000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "49.3",
+      "descripcion": "Otro transporte terrestre de pasajeros"
+    }
+  ],
+  "apply_url": "https://sede.murcia.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930018",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2023/numero/843/pdf",
+  "text_inicio": "DÍA SIGUIENTE PUBLICACIÓN EXTRACTO CONVOCATORIA EN DIARIO OFICIAL",
+  "text_fin": "DIEZ DÍAS HÁBILES DESDE LA PUBLICACIÓN DEL EXTRACTO  DE LA CONVOCATORIA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.403Z"
+}

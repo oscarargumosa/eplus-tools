@@ -1,0 +1,152 @@
+{
+  "id": 1131603,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD"
+  },
+  "sedeElectronica": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+  "codigoBDNS": "930042",
+  "fechaRecepcion": "2026-09-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 695000,
+  "mrr": false,
+  "descripcion": "Resolución de la consejera de Inclusión Social, Juventud, Familias e Igualdad, por la que se convocan subvenciones destinadas a financiar proyectos de acción humanitaria y de promoción y defensa de los derechos humanos en el 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales",
+      "codigo": "99"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXX - Regiones o países no europeos, no contemplados en NUTS"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Orden ECD/76/2016, de 1 de julio de 2016 (modificada por la ISO/07/2026 y la ISO/13/2026), que establece las bases reguladoras de subvenciones para la realización de intervenciones en materia de cooperación internacional para el desarrollo.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=302025",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día hábil siguiente a la publicación del extracto de la convocatoria en el B.O.C.",
+  "textFin": "Pasados veinte días hábiles siguientes a la publicación del extracto de la convocatoria en el B.O.C.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525411,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Ayudas AH-DDHH 2026.pdf",
+      "long": 277568,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522960,
+      "descripcion": "Modificación de las Bases Reguladoras",
+      "nombreFic": "Orden ISO-07-2026 (Modifica a ECD-76-2026) - BOC.pdf",
+      "long": 295120,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522961,
+      "descripcion": "Modificación de las Bases Reguladoras (2)",
+      "nombreFic": "Orden ISO-13-2026 (2ª Modificación ECD-76-2016)-BOC.pdf",
+      "long": 300419,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522933,
+      "descripcion": "ANEXO I - Solicitud 2026",
+      "nombreFic": "ANEXO I - Solicitud 2026.pdf",
+      "long": 185670,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522934,
+      "descripcion": "ANEXO I Bis - Solicitud Agrupación 2026",
+      "nombreFic": "ANEXO I Bis - Solicitud Agrupación 2026.pdf",
+      "long": 195925,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522944,
+      "descripcion": "ANEXO III - Formulario descriptivo del proyecto 2026",
+      "nombreFic": "ANEXO III - Formulario descriptivo del proyecto 2026.pdf",
+      "long": 258849,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522949,
+      "descripcion": "ANEXO IV - Presupuesto Económico 2026",
+      "nombreFic": "ANEXO IV - Presupuesto Económico 2026.pdf",
+      "long": 224781,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522951,
+      "descripcion": "ANEXO V - Comunicación de inicio 2026",
+      "nombreFic": "ANEXO V - Comunicación de inicio 2026.pdf",
+      "long": 126248,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522952,
+      "descripcion": "ANEXO VI - Logos 2026",
+      "nombreFic": "ANEXO VI - Logos 2026.pdf",
+      "long": 192336,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522953,
+      "descripcion": "ANEXO VII - Informe Técnico Justificación 2026",
+      "nombreFic": "ANEXO VII - Informe Técnico Justificación 2026.pdf",
+      "long": 434358,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522956,
+      "descripcion": "ANEXO VIII - Informe Económico Justificación 2026",
+      "nombreFic": "ANEXO VIII - Informe Económico Justificación 2026.pdf",
+      "long": 385104,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1522935,
+      "descripcion": "ANEXO II - Financiación Externa 2026",
+      "nombreFic": "ANEXO II - Financiación Externa 2026.pdf",
+      "long": 134426,
+      "datMod": "2026-09-17",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

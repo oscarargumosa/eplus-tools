@@ -1,0 +1,120 @@
+{
+  "id": 1132587,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CIUDAD AUTÓNOMA DE CEUTA",
+    "nivel3": "CONSEJERÍA DE SANIDAD Y SERVICIOS SOCIALES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931026",
+  "fechaRecepcion": "2026-09-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3462545.93,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PROGRAMAS DE INTERES GENERAL CON CARGO IRPF 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES63 - CIUDAD AUTONOMA DE CEUTA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES CONCESIÓN IRPF",
+  "urlBasesReguladoras": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1834-septiembre/20384-bocce-6027-18-09-2020?Itemid=534",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-25",
+  "fechaFinSolicitud": "2026-10-09",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525518,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "1 CONVOCATORIA IRPF 26-27.pdf",
+      "long": 1001538,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525519,
+      "descripcion": "ANEXO I. Solicitud",
+      "nombreFic": "ANEXO I. Solicitud.pdf",
+      "long": 212278,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525521,
+      "descripcion": "ANEXO II. Declaración responsable",
+      "nombreFic": "ANEXO II. Declaración responsable.pdf",
+      "long": 162418,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525530,
+      "descripcion": "INSTRUCCIONES CUMPLIMENTACIÓN",
+      "nombreFic": "INSTRUCCIONES  CUMPLIMENTAR MEMORIAS 2026-27.pdf",
+      "long": 713331,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525524,
+      "descripcion": "ANEXO IV. Memoria entidad",
+      "nombreFic": "ANEXO IV. Memoria entidad.pdf",
+      "long": 477948,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525526,
+      "descripcion": "ANEXO V. Memoria programa",
+      "nombreFic": "ANEXO V. Memoria programa.pdf",
+      "long": 236728,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525528,
+      "descripcion": "ANEXO VI. Memoria obras",
+      "nombreFic": "ANEXO VI. Memoria obras.pdf",
+      "long": 171088,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    },
+    {
+      "id": 1525522,
+      "descripcion": "ANEXO III. Certificado documentación",
+      "nombreFic": "ANEXO III. Certificado documetnación.pdf",
+      "long": 163893,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

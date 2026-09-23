@@ -1,0 +1,64 @@
+{
+  "id": 1132623,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "REQUENA",
+    "nivel3": "AYUNTAMIENTO DE REQUENA"
+  },
+  "sedeElectronica": "https://requena.sedipualba.es/catalogoservicios.aspx?area=&ambito=1",
+  "codigoBDNS": "931062",
+  "fechaRecepcion": "2026-09-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 155000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones destinadas a asociaciones y entidades culturales sin ánimo de lucro de Requena para la organización de las actividades de carácter cultural a realizar durante el ejercicio 2026",
+  "descripcionLeng": "Convocatòria per a la concessió de subvencions destinades a associacions i entitats culturals sense ànim de lucre de Requena per a l'organització de les activitats de caràcter cultural a realitzar durant l'exercici 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES REGULADORAS DE LA CONCESIÓN DE SUBVENCIONES CON DESTINO A LAS ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO REQUENENSES DE CARÁCTER CULTURAL PARA EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://requena.sedipualba.es/firma/documento.aspx?csv=J7AAA3JQTWK4UWU9RNXM&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación del extracto de las presentes bases en BOP Valencia",
+  "textFin": "Treinta días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525577,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 2579 de 21_09_2026 _Decreto resolución bases subvenciones asociaciones culturales 2026_ - SEGRA 1232039.pdf",
+      "long": 373813,
+      "datMod": "2026-09-22",
+      "datPublicacion": "2026-09-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,103 @@
+{
+  "source": "bdns",
+  "source_id": "930042",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE INCLUSIÓN SOCIAL, JUVENTUD, FAMILIAS E IGUALDAD",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Resolución de la consejera de Inclusión Social, Juventud, Familias e Igualdad, por la que se convocan subvenciones destinadas a financiar proyectos de acción humanitaria y de promoción y defensa de los derechos humanos en el 2026.",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-09-17",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 695000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "https://www.cantabria.es/web/atencion-a-la-ciudadania/ayudas-y-subvenciones",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930042",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Modificación de las Bases Reguladoras",
+      "url": null
+    },
+    {
+      "label": "Modificación de las Bases Reguladoras (2)",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - Solicitud 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO I Bis - Solicitud Agrupación 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO III - Formulario descriptivo del proyecto 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV - Presupuesto Económico 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO V - Comunicación de inicio 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI - Logos 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO VII - Informe Técnico Justificación 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO VIII - Informe Económico Justificación 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO II - Financiación Externa 2026",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=302025",
+  "text_inicio": "Día hábil siguiente a la publicación del extracto de la convocatoria en el B.O.C.",
+  "text_fin": "Pasados veinte días hábiles siguientes a la publicación del extracto de la convocatoria en el B.O.C.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.408Z"
+}

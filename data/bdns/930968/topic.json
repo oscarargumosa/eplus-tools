@@ -1,0 +1,87 @@
+{
+  "source": "bdns",
+  "source_id": "930968",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA E INTERIOR",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "SUBVENCIÓN MONTES TITULARIDAD PRIVADA FEADER 2026-27 ACTUACIONES SELVÍCOLAS",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-09-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 642000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "02.1",
+      "descripcion": "Silvicultura y otras actividades forestales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/930968",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos  Anexo III Just y Pago",
+      "url": null
+    },
+    {
+      "label": "Anexos  Anexo II Memoria",
+      "url": null
+    },
+    {
+      "label": "Modelo de Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "Pendiente de publicar",
+  "text_inicio": "A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO EN EL BOCM",
+  "text_fin": "15 DÍAS HÁBILES A CONTAR DESDE LA FECHA DE INICIO",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": "SA.114392",
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": {
+    "descripcion": "PRODUCCIÓN AGRÍCOLA PRIMARIA - REG (UE) 2022/2472, de 14 DE DICIEMBRE, de exención de notificación (vigente desde 01-01-2023)",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 44 AYUDAS DESTINADAS A LAS INVERSIONES QUE MEJORAN LA RESILIENCIA Y EL VALOR MEDIOAMBIENTAL DE LOS ECOSISTEMAS FORESTALES"
+    }
+  ],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-23T04:08:20.684Z"
+}
