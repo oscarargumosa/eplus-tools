@@ -1,0 +1,104 @@
+{
+  "id": 1132698,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MAIRENA DEL ALJARAFE",
+    "nivel3": "AYUNTAMIENTO DE MAIRENA DEL ALJARAFE"
+  },
+  "sedeElectronica": "https://mairenadelaljarafe.sedelectronica.es/info.0",
+  "codigoBDNS": "931137",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 18000,
+  "mrr": false,
+  "descripcion": "Acuerdo Junta de Gobierno Local del Ayuntamiento, de 14 de septiembre de 2026, por la que se aprueban las bases de la Convocatoria para la Concesión de Subvenciones para Asociaciones de Mujeres por parte del Área de Promoción y Compromiso con la Juventud",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES BOP. Nº 26 DE 2 DE FEBRERO DE 2021.",
+  "urlBasesReguladoras": "http://transparencia.mairenadelaljarafe.es/export/sites/mairenadelaljarafe/es/transparencia/.galleries/IND-83-/AYUNTAMIENTO/BOP-ORDENANZA-GENERAL-DE-SUBVENCIONES.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-26",
+  "fechaFinSolicitud": "2026-10-25",
+  "textInicio": "26/09/2026",
+  "textFin": "25/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525740,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "14 CERTIFICADO JUNTA DE GOBIERNO.pdf",
+      "long": 2881524,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525730,
+      "descripcion": "Anexo I Solicitud de Subvención",
+      "nombreFic": "09 ANEXO I SOLICITUD.pdf",
+      "long": 100033,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525739,
+      "descripcion": "Anexo V Memoria Justificativa",
+      "nombreFic": "13 ANEXO V MEMORIA JUSTIFICATIVA.pdf",
+      "long": 106564,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525732,
+      "descripcion": "Anexo III Presupuesto",
+      "nombreFic": "11 ANEXO III PRESUPUESTO.pdf",
+      "long": 58759,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525738,
+      "descripcion": "Anexo IV Aceptación de la Subención",
+      "nombreFic": "12 ANEXO IV ACEPTACION SUBVENCION.pdf",
+      "long": 93406,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525731,
+      "descripcion": "Anexo II Proyecto o Memoria de la Actividad",
+      "nombreFic": "10 ANEXO II PROYECTO.pdf",
+      "long": 40073,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

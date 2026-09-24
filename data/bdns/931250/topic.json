@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "931250",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CATRAL / AYUNTAMIENTO DE CATRAL",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "BASES Y CONVOCATORIA DEL CONCURSO GENERAL DE BECAS Y AYUDAS A LOS GASTOS DE ESTUDIO PARA EL CURSO ACADÉMICO 2026–2027.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-23",
+  "open_date": null,
+  "deadline": "2026-10-13",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://catral.sedelectronica.es/transparency/c1f8a0aa-1810-4d15-a7ba-99bd867c3110/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931250",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://catral.sedelectronica.es/transparency/c1f8a0aa-1810-4d15-a7ba-99bd867c3110/",
+  "text_inicio": "Desde su publicación en el BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:08.356Z"
+}

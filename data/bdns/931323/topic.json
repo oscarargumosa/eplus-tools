@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "931323",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / SECRETARÍA AUTONÓMICA DE UNIVERSIDADES",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Resolución de 23 septiembre 2026, de D.G.Ciencia e Investigación de la Cons. Educación, Cultura y Univers., por la que se convocan, para 2027, subv. Programa apoyo a contratación y estabilización de personas investigadoras e innov. con talento.Plan GenT2.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-09-23",
+  "open_date": "2026-09-29",
+  "deadline": "2026-10-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 24326583.33,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    }
+  ],
+  "apply_url": "https://ceice.gva.es/va/web/ciencia/convocatories_2027/c-programa-per-al-suport-a-persones-investigadores-amb-talent-pla-gent2",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931323",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ceice.gva.es/documents/161863198/393171126/Orden+Bases+Plan+Gent2+C.pdf/e24b00d0-92c9-6ee6-69d0-2dd2f46dd745?t=1748851433234",
+  "text_inicio": "29/09/2026",
+  "text_fin": "30/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:08.369Z"
+}

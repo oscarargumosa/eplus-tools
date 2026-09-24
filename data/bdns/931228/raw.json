@@ -1,0 +1,72 @@
+{
+  "id": 1132789,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PRAT DE LLOBREGAT, EL",
+    "nivel3": "AYUNTAMIENTO DE PRAT DE LLOBREGAT, EL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931228",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 44450,
+  "mrr": false,
+  "descripcion": "Convocatoria pública para la concesión de subvenciones para proyectos educativos de las AMPA o AFA de los centros docentes de la red pública del Prat de Llobregat, curso 2026-2027",
+  "descripcionLeng": "Convocatòria pública per a la concessió de subvencions per a projectes educatius de les AMPA o AFA dels centres docents de la xarxa pública del Prat de Llobregat, curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Aprobación del presupuesto municipal 2026",
+  "urlBasesReguladoras": "https://bop.diba.cat/anuncio/3881061/aprovacio-definitiva-del-pressupost-general-de-l-exercici-2026-ajuntament-del-prat-de-llobregat",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-05",
+  "fechaFinSolicitud": "2026-10-20",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526014,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci.pdf",
+      "long": 248826,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1526009,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio Castellà.pdf",
+      "long": 228080,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

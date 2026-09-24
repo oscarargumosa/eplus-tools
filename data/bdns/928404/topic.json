@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "928404",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / DIRECCIÓN DEL ICASST",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "Orden IND/47/2026, de 21 de septiembre, por la que se aprueba la convocatoria para 2027 del Concurso \"P'EPIS: TU MIRADA CUENTA\"",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-09-09",
+  "open_date": null,
+  "deadline": "2027-02-05",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 45000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.2",
+      "descripcion": "Educación primaria"
+    },
+    {
+      "codigo": "85.3",
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria"
+    },
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "sede.cantabria.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/928404",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    },
+    {
+      "label": "Ficha de terceros",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlo b=415526",
+  "text_inicio": "Día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial de Cantabria",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:07.498Z"
+}

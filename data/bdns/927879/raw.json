@@ -1,0 +1,113 @@
+{
+  "id": 1129440,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MANCOMUNIDAD INTERMUNICIPAL DEL SURESTE DE GRAN CANARIA",
+    "nivel3": "MANCOMUNIDAD INTERMUNICIPAL DEL SURESTE DE GRAN CANARIA"
+  },
+  "sedeElectronica": "https://surestegc.sedelectronica.es/info.0",
+  "codigoBDNS": "927879",
+  "fechaRecepcion": "2026-09-04",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500000,
+  "mrr": false,
+  "descripcion": "Resolución nº 2026/0583 de 03/09/2026, de la Presidencia, por la que se aprueba la convocatoria anticipada y urgente de ayudas en especie para actuaciones de adecentamiento de parcelas en el entorno del aeropuerto y vías de acceso a la zona sur de la isla",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas",
+      "codigo": "01"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Ordenanza específica por la que se aprueban las bases reguladoras de las subvenciones otorgadas por la Mancomunidad del Sureste de Gran Canaria por el procedimiento de concurrencia competitiva \"Plan de Limpieza de Invernaderos Abandonados\".",
+  "urlBasesReguladoras": "https://surestegc.sedelectronica.es/transparency/9ac429a1-bfcc-4e19-94d7-5c98679bce99/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP de Las Palmas",
+  "textFin": "20 días hábiles a partir del siguiente a la publicación del extracto en el BOP de Las Palmas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1517696,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-0583 [Decreto de Presidencia - Convocatoria subvención].pdf",
+      "long": 990276,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1517712,
+      "descripcion": "Bases Reguladoras de la Subvención",
+      "nombreFic": "Bases reguladoras subvención.pdf",
+      "long": 530881,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1517726,
+      "descripcion": "Área de intervención",
+      "nombreFic": "Anexo I. Área de Intervención.pdf",
+      "long": 364978,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1517723,
+      "descripcion": "Autorización acceso parcelas",
+      "nombreFic": "ANEXO III. Autorización de acceso a las parcelas.pdf",
+      "long": 225229,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1517724,
+      "descripcion": "Declaración responsable",
+      "nombreFic": "ANEXO IV. Declaración responsable.pdf",
+      "long": 83755,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1517719,
+      "descripcion": "Modelo de Solicitud",
+      "nombreFic": "ANEXO II. Solicitud de participación.pdf",
+      "long": 234670,
+      "datMod": "2026-09-04",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

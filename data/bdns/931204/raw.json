@@ -1,0 +1,64 @@
+{
+  "id": 1132765,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BÉTERA",
+    "nivel3": "AYUNTAMIENTO DE BÉTERA"
+  },
+  "sedeElectronica": "https://betera.sedelectronica.es/info.0",
+  "codigoBDNS": "931204",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000,
+  "mrr": false,
+  "descripcion": "Convocatoria concurso de microrrelatos contra la violencia de género X edición personas adultas y VII edición juvenil, del Ayuntamiento de Bétera ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras de la convocatoria del concurso de microrrelatos contra la violencia de género X edición personas adultas y VII edición juvenil, del Ayuntamiento de Bétera ejercicio 2026,",
+  "urlBasesReguladoras": "https://betera.sedelectronica.es/transparency/6f2bec9a-10a3-46cc-9355-61814db61e5a/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "Durante los QUINCE DÍAS  naturales siguientes a la publicación del extracto de la convocatoria en el",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525943,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260923 EDICTO BASES CONV. CONCURSO MICRORRELATOS 2026.pdf",
+      "long": 1939876,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

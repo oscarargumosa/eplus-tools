@@ -1,0 +1,72 @@
+{
+  "id": 1132884,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE UNIVERSIDADES"
+  },
+  "sedeElectronica": "https://ceice.gva.es/va/web/ciencia/convocatories_2027/c-programa-per-al-suport-a-persones-investigadores-amb-talent-pla-gent2",
+  "codigoBDNS": "931323",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 24326583.33,
+  "mrr": false,
+  "descripcion": "Resolución de 23 septiembre 2026, de D.G.Ciencia e Investigación de la Cons. Educación, Cultura y Univers., por la que se convocan, para 2027, subv. Programa apoyo a contratación y estabilización de personas investigadoras e innov. con talento.Plan GenT2.",
+  "descripcionLeng": "Resolució de 23 setembre 2026, de D.G.Ciència i Investigació de la Cons. Educació, Cultura i Univers., per la qual es convoquen, per a 2027, subv. Programa suport a contractació i estabilització de persones investigadores i innov. amb talent.Pla GenT2.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Orden 7/2025 de 22 de abril Conselleria de E. C. U. E. por la cual se aprueban las bases reguladoras para conceder subv. del Programa para el apoyo a la contratación y estabilización de las personas investigadoras e innovadoras con talento. Plan GenT2",
+  "urlBasesReguladoras": "https://ceice.gva.es/documents/161863198/393171126/Orden+Bases+Plan+Gent2+C.pdf/e24b00d0-92c9-6ee6-69d0-2dd2f46dd745?t=1748851433234",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-29",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "29/09/2026",
+  "textFin": "30/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526310,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Resoluci_convocatria_Pla_Gent2_2027-26-008095-val_firmado.pdf",
+      "long": 493113,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1526309,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolució convocatòria Pla Gent2 2027 def cast_firmado.pdf",
+      "long": 502901,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

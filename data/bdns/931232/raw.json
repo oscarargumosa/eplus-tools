@@ -1,0 +1,79 @@
+{
+  "id": 1132793,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SOBER",
+    "nivel3": "AYUNTAMIENTO DE SOBER"
+  },
+  "sedeElectronica": "El día siguiente a la publicación de la convocatoria en el Boletin Provincial de Lugo",
+  "codigoBDNS": "931232",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA DE SUBVENCIONES DEL AYUNTAMIENTO DE SOBER A ASOCIACIONES CULTURALES Y ENTIDADES SIN ÁNIMO DE LUCRO PARA FOMENTAR ACTIVIDADES CULTURALES NO ANO 2026",
+  "descripcionLeng": "CONVOCATORIA PÚBLICA DE SUBVENCIÓNS DO CONCELLO DE SOBER A ASOCIACIÓNS CULTURAIS E ENTIDADES SEN ÁNIMO DE LUCRO PARA FOMENTAR ACTIVIDADES CULTURAIS NO ANO 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA PÚBLICA DE SUBVENCIONES DEL AYUNTAMIENTO DE SOBER A ASOCIACIONES CULTURALES Y ENTIDADES SIN ÁNIMO DE LUCRO PARA FOMENTAR ACTIVIDADES CULTURALES NO ANO 2026",
+  "urlBasesReguladoras": "https://concellodesober.sedelectronica.gal/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "El día siguiente a la publicación de la convocatoria en el BOP Lugo",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526007,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anuncio subv cultura 2026galego.docx",
+      "long": 55338,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1526006,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO AYUDAS CULTURALES 2026.docx",
+      "long": 54169,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

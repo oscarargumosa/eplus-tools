@@ -1,0 +1,64 @@
+{
+  "id": 1132883,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTAÑEDA",
+    "nivel3": "AYUNTAMIENTO DE CASTAÑEDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931322",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 750,
+  "mrr": false,
+  "descripcion": "Resolución de Alcaldía de 23 de septiembre de 2026 del Ayuntamiento de Castañeda, por la que se convocan subvenciones en materia de becas artistas jóvenes de Castañeda formación musical y danza curso 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONCESIÓN DE BECAS INDIVIDUALES A ARTISTAS JÓVENES DE CASTAÑEDA PARA LA FORMACIÓN  MUSICAL Y DE DANZA . CURSO 2026/2027",
+  "urlBasesReguladoras": "https://castaneda.sedelectronica.es/preview-document/2e509c1d-0f74-433b-9339-8f54cf916b3c/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en BOC",
+  "textFin": "20 días hábiles a partir del día siguiente a la publicación del extracto de la convocatoria en BOC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526307,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260923_Resolución_Decreto de Alcaldía _ Decreto de Presidencia_DECRETO 2026-0234 [RESOLUCIÓN DE CONVOCATORIA]-2.pdf",
+      "long": 498985,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

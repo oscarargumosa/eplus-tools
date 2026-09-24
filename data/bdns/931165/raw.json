@@ -1,0 +1,92 @@
+{
+  "id": 1132726,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DEL MAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931165",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000000,
+  "mrr": false,
+  "descripcion": "ORDEN de 15 de septiembre de 2026 por la que se establecen las bases reguladoras generales y la convocatoria para el año 2026 para la concesión, en régimen de concurrencia competitiva, de ayudas a proyectos colectivos, cofinanciados por el FEMPA - PE209R",
+  "descripcionLeng": "ORDE do 15 de setembro de 2026 pola que se establecen as bases reguladoras xerais e a convocatoria para o ano 2026 para a concesión, en réxime de concorrencia competitiva, de axudas a proxectos colectivos, cofinanciados polo FEMPA - PE209R",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Pesca",
+      "codigo": "03.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN de 15 de septiembre de 2026 por la que se establecen las bases reguladoras generales y la convocatoria para el año 2026 para la concesión, en régimen de concurrencia competitiva, de ayudas a proyectos colectivos, cofinanciados por el FEMPA - PE209R",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia/portalPublicoHome.do?lang=es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-26",
+  "fechaFinSolicitud": "2026-10-26",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEMPA – FONDO EUROPEO MARÍTIMO, DE PESCA Y ACUICULTURA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1525845,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ORDEN de 15 de septiembre de 2026 - PE209R_20260922_142917.pdf",
+      "long": 181560,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525848,
+      "descripcion": "Anexos galego",
+      "nombreFic": "PE209R Completo-G_20260922_143158.pdf",
+      "long": 558128,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525847,
+      "descripcion": "Anexo castelán",
+      "nombreFic": "PE209R_Anexo Completo-C_20260922_143131.pdf",
+      "long": 559996,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    },
+    {
+      "id": 1525846,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "ORDE do 15 de setembro de 2026 - PE209R_20260922_143106.pdf",
+      "long": 159391,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

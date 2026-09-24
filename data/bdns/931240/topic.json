@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "931240",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCARACEJOS / AYUNTAMIENTO DE ALCARACEJOS",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "subvenciones en régimen de concurrencia competitiva en materia de ayudas para adquisición de primera vivienda para jóvenes menores de 35 años",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-09-23",
+  "open_date": "2026-10-01",
+  "deadline": "2026-10-21",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 4000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "M",
+      "descripcion": "ACTIVIDADES INMOBILIARIAS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931240",
+  "documents": [
+    {
+      "label": "Modelo solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://alcaracejos.sedelectronica.es/info.0",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:08.355Z"
+}

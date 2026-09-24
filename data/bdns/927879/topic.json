@@ -1,0 +1,84 @@
+{
+  "source": "bdns",
+  "source_id": "927879",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MANCOMUNIDAD INTERMUNICIPAL DEL SURESTE DE GRAN CANARIA / MANCOMUNIDAD INTERMUNICIPAL DEL SURESTE DE GRAN CANARIA",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "Resolución nº 2026/0583 de 03/09/2026, de la Presidencia, por la que se aprueba la convocatoria anticipada y urgente de ayudas en especie para actuaciones de adecentamiento de parcelas en el entorno del aeropuerto y vías de acceso a la zona sur de la isla",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-09-04",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01",
+      "descripcion": "Agricultura, ganadería, caza y servicios relacionados con las mismas"
+    }
+  ],
+  "apply_url": "https://surestegc.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/927879",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Bases Reguladoras de la Subvención",
+      "url": null
+    },
+    {
+      "label": "Área de intervención",
+      "url": null
+    },
+    {
+      "label": "Autorización acceso parcelas",
+      "url": null
+    },
+    {
+      "label": "Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Modelo de Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://surestegc.sedelectronica.es/transparency/9ac429a1-bfcc-4e19-94d7-5c98679bce99/",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en el BOP de Las Palmas",
+  "text_fin": "20 días hábiles a partir del siguiente a la publicación del extracto en el BOP de Las Palmas",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:07.297Z"
+}

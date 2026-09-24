@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "931217",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MADRID / DISTRITO DE MONCLOA-ARAVACA",
+  "nuts_codes": [
+    "ES300"
+  ],
+  "nuts_primary": "ES300",
+  "title": "CONVOCATORIA XIX CERTAMEN VILLANCICOS  MONCLOA-ARAVACA",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-23",
+  "open_date": null,
+  "deadline": "2026-11-18",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://sede.madrid.es/portal/site/tramites/menuitem.c61bb691882ed9d32e202e2084f1a5a0/?vgnextoid=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextchannel=5a9d5d53be9a0210VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931217",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexo",
+      "url": null
+    },
+    {
+      "label": "Anexo",
+      "url": null
+    },
+    {
+      "label": "Anexo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2013/11/22/BOCM-20131122-34.PDF",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA PRESENTE CONVOCATORIA EN BOCAM",
+  "text_fin": "EL DIA 18 DE NOVIEMBRE DE 2026, INCLUIDO",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:08.345Z"
+}

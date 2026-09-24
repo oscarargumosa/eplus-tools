@@ -1,0 +1,64 @@
+{
+  "id": 1132826,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTAÑEDA",
+    "nivel3": "AYUNTAMIENTO DE CASTAÑEDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931265",
+  "fechaRecepcion": "2026-09-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 22000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 2026-0233 de fecha 23/09/2026 del Ayuntamiento de Castañeda, por la que se convocan las \"AYUDAS ESTUDIOS UNIVERSITARIOS, ESTUDIOS ARTÍSTICOS SUPERIORES, ESTUDIOS MÁSTER UNIVERSITARIO Y ESTUDIOS MÁSTER ENSEÑANZAS ARTÍSTICAS 2026-27\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS, ESTUDIOS ARTÍSTICOS SUPERIORES, ESTUDIOS DE MÁSTER UNIVERSITARIO Y ESTUDIOS DE MÁSTER EN ENSEÑANZAS ARTÍSTICAS PARA EL CURSO ACADÉMICO 2026-2027.",
+  "urlBasesReguladoras": "https://castaneda.sedelectronica.es/preview-document/be357f7b-76c1-443a-bc2b-e5a335d929b1/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación del extracto de la convocatoria en BOC",
+  "textFin": "15 días hábiles a partir del día siguiente a la publicación del extracto de la convocatoria en BOC",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526065,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260923_Resolución_Decreto de Alcaldía _ Decreto de Presidencia_DECRETO 2026-0233 [RESOLUCIÓN DE CONVOCATORIA BECAS UNIVERSITARIOS]-2.pdf",
+      "long": 391523,
+      "datMod": "2026-09-23",
+      "datPublicacion": "2026-09-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "931283",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE GRAN CANARIA / CABILDO INSULAR DE GRAN CANARIA",
+  "nuts_codes": [
+    "ES705"
+  ],
+  "nuts_primary": "ES705",
+  "title": "GC CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES SIN ÁNIMO DE LUCRO PARA LA REALIZACIÓN DE PROYECTOS PLURIANUALES QUE MEJOREN LA EMPLEABILIDAD DE PERSONAS CON DISCAPACIDAD.",
+  "title_lang": "es",
+  "summary": "Desempleo",
+  "status": "open",
+  "publication_date": "2026-09-23",
+  "open_date": "2026-09-29",
+  "deadline": "2026-10-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 1350000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "78",
+      "descripcion": "Actividades relacionadas con el empleo"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931283",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cabildogc.grancanaria.com/documents/10180/11297340/Ordenanza+General+de+Subvenciones+del+Cabildo+de+Gran+Canaria/33077d88-3822-4049-bca7-af8199d49ef4",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-24T04:07:08.359Z"
+}
