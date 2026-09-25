@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "927965",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / RIVAS-VACIAMADRID / AYUNTAMIENTO DE RIVAS-VACIAMADRID",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "BASES PARA LA CONVOCATORIA DE AYUDAS A ENTIDADES PARA LA PARTICIPACIÓN EN LA CABALGATA MUNICIPAL 2027, CON MOTIVO DE LAS FIESTAS DE NAVIDAD 2026/2027",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-04",
+  "open_date": null,
+  "deadline": "2026-10-02",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 59900,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/927965",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.rivasciudad.es/wp-content/uploads/2026/01/Bases-de-ejecucion-Presupuesto-2026.pdf",
+  "text_inicio": "Desde la publicación de las bases",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-25T04:05:21.306Z"
+}

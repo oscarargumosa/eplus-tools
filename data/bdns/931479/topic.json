@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "931479",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLALBA DE LOS ALCORES / AYUNTAMIENTO DE VILLALBA DE LOS ALCORES",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "CONVOCATORIA DE AYUDAS PARA LA ADQUISICIÓN DE MATERIAL ESCOLAR Y EQUIPAMIENTO DEPORTIVO (ROPA Y CALZADO) ALUMNADO MATRICULADO EN LA ESCUELA MUNICIPAL “VIRGEN DE FUENTES\"",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.2",
+      "descripcion": "Educación primaria"
+    }
+  ],
+  "apply_url": "https://villalbadelosalcores.sedelectronica.es/info.3",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931479",
+  "documents": [
+    {
+      "label": "ANEXO",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-20977",
+  "text_inicio": "Desde el día siguiente a su publicación en el B.O.P  de Valladolid",
+  "text_fin": "30 días hábiles desde el inicio de plazo",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-25T04:05:22.325Z"
+}

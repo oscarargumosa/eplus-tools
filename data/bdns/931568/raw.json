@@ -1,0 +1,88 @@
+{
+  "id": 1133129,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCÚDIA DE CRESPINS, L'",
+    "nivel3": "AYUNTAMIENTO DE ALCÚDIA DE CRESPINS, L'"
+  },
+  "sedeElectronica": "https://acrespins.sede.dival.es/",
+  "codigoBDNS": "931568",
+  "fechaRecepcion": "2026-09-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Convocatoria campaña Bonos Comercio por Adhesión voluntaria para comercios locales y consumidores de L' Alcúdia de Crespins 2026",
+  "descripcionLeng": "Convocatòria campanya Bons Comerç per Adhesió voluntària per a comerços locals i consumidors de L' Alcúdia de Crespins 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras de adhesión voluntaria para los comercios locales y para el público consumidor a la Campaña de Bonos 2026",
+  "urlBasesReguladoras": "https://acrespins.sede.dival.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "5 días hábiles a contar desde el día siguiente a la publicación del extracto anuncio BOP de Valencia",
+  "textFin": "20 días hábiles desde la publicación BOP de Valencia ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526850,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 1229 de 24_09_2026 _Resolución de Vice Alcaldia 1 er de aprobación Bases de la Campaña de Bonos al consumo Local 2026_ - SEGRA 1236644 (1).pdf",
+      "long": 517924,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    },
+    {
+      "id": 1526853,
+      "descripcion": "Modelo de solicitud de adhesión",
+      "nombreFic": "Solicitud_Adhesion_Comercios_2026 (1).docx",
+      "long": 21792,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    },
+    {
+      "id": 1526852,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Resolución Nº 1229 de 24_09_2026 _Resolución de Vice Alcaldia 1 er de aprobación Bases de la Campaña de Bonos al consumo Local 2026_ - SEGRA 1236644 (1).pdf",
+      "long": 517924,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

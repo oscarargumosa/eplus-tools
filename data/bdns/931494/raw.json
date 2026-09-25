@@ -1,0 +1,84 @@
+{
+  "id": 1133055,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE BERGUEDÀ",
+    "nivel3": "CONSELL COMARCAL DE BERGUEDÀ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931494",
+  "fechaRecepcion": "2026-09-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA PROYECTOS Y ACTIVIDADES DE OCIO INCLUSIVO PARA PERSONAS CON DISCAPACIDAD Y TRASTORNOS DE SALUD MENTAL QUE REALICEN LAS ASOCIACIONES Y ENTIDADES SIN ÁNIMO DE LUCRO A LA COMARCA DEL BERGUEDÀ, AÑO 2026.",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS PER A PROJECTES I ACTIVITATS DE LLEURE INCLUSIU PER A PERSONES AMB DISCAPACITAT I TRASTORNS DE SALUT MENTAL QUE REALITZIN LES ASSOCIACIONS I ENTITATS SENSE ÀNIM DE LUCRE A LA COMARCA DEL BERGUEDÀ, ANY 2026. ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria",
+      "codigo": "84"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORES DELS PROCEDIMENTS PER A LA CONCESSIÓ DE SUBVENCIONS PER A PROJECTES I ACTIVITATS DE LLEURE INCLUSIU PER A PERSONES AMB DISCAPACITAT QUE REALITZIN LES ASSOCIACIONS I ENTITATS SENSE ÀNIM DE LUCRE A LA COMARCA DEL BERGUEDÀ.",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3548109",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-30",
+  "fechaFinSolicitud": "2026-10-19",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526699,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria subv ocio 2026_castellano.pdf",
+      "long": 136826,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    },
+    {
+      "id": 1526701,
+      "descripcion": "Formulari de sol·licitud",
+      "nombreFic": "FORMULARI DE SOL·LICITUD.pdf",
+      "long": 855709,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    },
+    {
+      "id": 1526700,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria subv lleure 2026_català.pdf",
+      "long": 195328,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-24"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
