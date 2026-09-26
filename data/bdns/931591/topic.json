@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "931591",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONSORCIO PARA EL DESARROLLO ECONÓMICO DE LA VEGA BAJA (CONVEGA) / CONSORCIO PARA EL DESARROLLO ECONÓMICO DE LA VEGA BAJA (CONVEGA)",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Concurso de creación audiovisual «Vega Baja del Segura en 20 segundos». I edición. Anualidad 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-24",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "Sede electrónica de CONVEGA - Instancia General: https://convega.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931591",
+  "documents": [
+    {
+      "label": "Anexo III",
+      "url": null
+    },
+    {
+      "label": "Anexo I",
+      "url": null
+    },
+    {
+      "label": "Anexo II",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "Pendiente de publicación",
+  "text_inicio": "El día siguiente al de la publicación del extracto de la convocatoria en el BOP de Alicante.",
+  "text_fin": "Veinte (20) días naturales a partir del día siguiente al de la publicación del extracto en el BOP.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:57.991Z"
+}

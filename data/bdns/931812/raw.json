@@ -1,0 +1,80 @@
+{
+  "id": 1133373,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLANERA",
+    "nivel3": "AYUNTAMIENTO DE LLANERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931812",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 49700,
+  "mrr": false,
+  "descripcion": "Acuerdo de aprobación de la Junta de Gobierno Local de las bases de la convocatoria de ayudas a familias con dificultades económicas y menores a cargo, año 2026. Prestaciones vitales.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS A FAMILIAS CON DIFICULTADES EOCNÓMICAS Y MENORES A CARGO. AÑO 2026. PRESTACIONES ECONÓMICAS VITALES",
+  "urlBasesReguladoras": "https://sede.llanera.es/firma/documento.aspx?csv=WFCAAEPDZQZRXLLM3JMU&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el BOPA",
+  "textFin": "15 días hábiles a partir del día siguiente a la publicación del extracto en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527540,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado jgl 25_09_2026. Aprobación bases y convocatoria ayudas menores a cargo - SEFYCU 206181.pdf",
+      "long": 457270,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527548,
+      "descripcion": "Declaración responsable",
+      "nombreFic": "T_Declaracion Responsable_Anexo_I.pdf",
+      "long": 104902,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527546,
+      "descripcion": "Solicitud",
+      "nombreFic": "t_solicitud ayuda pob infant 2026.pdf",
+      "long": 209246,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

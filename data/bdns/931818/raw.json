@@ -1,0 +1,64 @@
+{
+  "id": 1133379,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "REGUERAS, LAS",
+    "nivel3": "AYUNTAMIENTO DE REGUERAS, LAS"
+  },
+  "sedeElectronica": "https://lasregueras.sedelectronica.e-ayuntamiento.es/",
+  "codigoBDNS": "931818",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A CONCEDER POR EL AYUNTAMIENTO DE LAS REGUERAS A LAS ASOCIACIONES DEL CONCEJO PARA EL FOMENTO DE ACTIVIDADES PARA LA PROMOCIÓN CULTURAL Y DEPORTIVA Y LA PARTICIPACIÓN SOCIAL DURANTE EL AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras de las subvenciones a conceder por el Ayuntamiento de Las Regueras a las asociaciones del concejo para el fomento de actividades para la promoción cultural y deportiva y la participación social durante el año 2026",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-07741&p_r_p",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Siguiente a la publicación en el Boletín Oficial del Principado de Asturias (BOPA)",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527584,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "anuncio_extracto convocatoria.docx",
+      "long": 14951,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

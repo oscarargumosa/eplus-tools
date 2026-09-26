@@ -1,0 +1,96 @@
+{
+  "id": 1133306,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÀRCER",
+    "nivel3": "AYUNTAMIENTO DE CÀRCER"
+  },
+  "sedeElectronica": "https://carcer.sedelectronica.es/info.0",
+  "codigoBDNS": "931745",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 5500,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones en concepto de ayudas para los libros escolares adquiridos por los alumnos que se encuentran cursando Educación Infantil de segundo ciclo y Bachillerato durante el curso escolar 2026 - 2027",
+  "descripcionLeng": "Convocatòria per a la concessió de subvencions en concepte d'ajudes per als llibres escolars adquirits pels alumnes que es troben cursant Educació Infantil de segon cicle i Batxillerat durant el curs escolar 2026 -2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases Reguladoras para la Concesión de Subvenciones Destinadas a la Compra de Libros Escolares en la Enseñanza no Obligatoria",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2022/04381&lang=va",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-19",
+  "fechaFinSolicitud": "2026-11-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527342,
+      "descripcion": "solicitud anexo I",
+      "nombreFic": "20260924_Uns altres_ANEXO I SOLICITUD.pdf",
+      "long": 415520,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527343,
+      "descripcion": "anexo II",
+      "nombreFic": "20260924_Uns altres_ANEXO II DECLARACIÓ RESPONSABLE.pdf",
+      "long": 263627,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527341,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria CONVOCATORIA AJUDES LLIBRES 2026.pdf",
+      "long": 179337,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527345,
+      "descripcion": "anexo III",
+      "nombreFic": "20260924_Uns altres_ANEXO III MANT TERCEROS.pdf",
+      "long": 528453,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527338,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatòria_CONVOCATORIA AYUDAS LIBROS 2026.pdf",
+      "long": 165571,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,120 @@
+{
+  "id": 1133374,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALGORFA",
+    "nivel3": "AYUNTAMIENTO DE ALGORFA"
+  },
+  "sedeElectronica": "https://algorfa.sedelectronica.es/board",
+  "codigoBDNS": "931813",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 92667,
+  "mrr": false,
+  "descripcion": "Acuerdo de 24 de septiembre de 2026, del Pleno del Ayuntamiento de Algorfa por el que se convoca la Campaña de fomento del consumo en el comercio de Algorfa Bono-Consumo 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CAMPAÑA DE FOMENTO DEL CONSUMO EN EL COMERCIO LOCAL DE ALGORFA: BONO – CONSUMO EN ALGORFA. ANUALIDAD 2026",
+  "urlBasesReguladoras": "https://algorfa.sedelectronica.es/board",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-05",
+  "fechaFinSolicitud": "2026-12-27",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527531,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES REGULADORAS BONO CONSUMO ALGORFA 2026_anonimizado_visual.pdf",
+      "long": 9831576,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527545,
+      "descripcion": "Anexo III Mantemiento de Terceros",
+      "nombreFic": "ANEXO III MANTENIMIENTO DE TERCEROS.pdf",
+      "long": 307043,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527544,
+      "descripcion": "Anexo II Solicitud Adhesión Campaña Bono Consumo Algorfa 2026",
+      "nombreFic": "Anexo II SOLICITUD ADHESIÓN CAMPAÑA ESTABLECIMIENTOS.pdf",
+      "long": 468073,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527541,
+      "descripcion": "Anexo I Epígrafes Bono Consumo Algorfa 2026",
+      "nombreFic": "Anexo I EPIGRAFES BONO CONSUMO ALGORFA 2026.pdf",
+      "long": 463279,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,91 @@
+{
+  "id": 1133254,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "PAÍS VASCO",
+    "nivel3": "DEPARTAMENTO DE ALIMENTACIÓN, DESARROLLO RURAL, AGRICULTURA Y PESCA"
+  },
+  "sedeElectronica": "https://www.euskadi.eus/servicios/1051109/web01-tramite/es/",
+  "codigoBDNS": "931693",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 98700,
+  "mrr": false,
+  "descripcion": "Programa ITSASORATU, año 2026",
+  "descripcionLeng": "2026ko ITSASORATU Programa",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la pesca y la acuicultura",
+      "codigo": "03.3"
+    },
+    {
+      "descripcion": "Pesca",
+      "codigo": "03.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN de 27 de agosto de 2026, de la consejera de Alimentación, Desarrollo Rural, Agricultura y Pesca, por la que se establecen las bases reguladoras y se convocan, para el año 2026, las ayudas acogid",
+  "urlBasesReguladoras": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=hLBrWwxOjEdNmxGtuLJsyp4e9fIt2Pg7aFgbRpnYczYjBZzlciGk!204050726!-954172047?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026003808",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-05",
+  "fechaFinSolicitud": "2026-10-05",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 717/2014 de minimis, Pesca y acuicultura",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527256,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Documento convocatoria (euskera).PDF",
+      "long": 238643,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527255,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria (castellano).PDF",
+      "long": 266930,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 221656,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=hLBrWwxOjEdNmxGtuLJsyp4e9fIt2Pg7aFgbRpnYczYjBZzlciGk!204050726!-954172047?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026003808",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-09-04"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

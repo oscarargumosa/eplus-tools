@@ -1,0 +1,84 @@
+{
+  "source": "bdns",
+  "source_id": "931693",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / PAÍS VASCO / DEPARTAMENTO DE ALIMENTACIÓN, DESARROLLO RURAL, AGRICULTURA Y PESCA",
+  "nuts_codes": [
+    "ES21"
+  ],
+  "nuts_primary": "ES21",
+  "title": "Programa ITSASORATU, año 2026",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-09-25",
+  "open_date": "2026-09-05",
+  "deadline": "2026-10-05",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 98700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "03.3",
+      "descripcion": "Actividades de apoyo a la pesca y la acuicultura"
+    },
+    {
+      "codigo": "03.1",
+      "descripcion": "Pesca"
+    }
+  ],
+  "apply_url": "https://www.euskadi.eus/servicios/1051109/web01-tramite/es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931693",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=hLBrWwxOjEdNmxGtuLJsyp4e9fIt2Pg7aFgbRpnYczYjBZzlciGk!204050726!-954172047?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026003808",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 717/2014 de minimis, Pesca y acuicultura",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 221656,
+      "titulo": "Procedimiento Beta",
+      "tituloLeng": null,
+      "texto": "Procedimiento Beta",
+      "textoLeng": null,
+      "url": "https://www.euskadi.eus/web01-bopv/eu/p43aBOPVWebWar/VerParalelo.do;jsessionid=hLBrWwxOjEdNmxGtuLJsyp4e9fIt2Pg7aFgbRpnYczYjBZzlciGk!204050726!-954172047?R01HPortal=web01&R01HPage=bopv&R01HLang=eu&ed2026003808",
+      "cve": null,
+      "desDiarioOficial": "BOPV. B.O. DEL PAÍS VASCO",
+      "datPublicacion": "2026-09-04"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:58.031Z"
+}

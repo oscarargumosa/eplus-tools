@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "931775",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LA RÀPITA / AYUNTAMIENTO DE LA RÀPITA",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "Convocatoria del premio de cuentos Domingo Riba 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-25",
+  "open_date": null,
+  "deadline": "2026-11-13",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 225,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90.1",
+      "descripcion": "Actividades de creación artística"
+    }
+  ],
+  "apply_url": "larapita.cat",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931775",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://larapita.cat/concursos-i-premis/premi-de-contes-de-domingo-riba/",
+  "text_inicio": "Al dia siguiente de su publicación en el BOPT",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:58.057Z"
+}

@@ -1,0 +1,59 @@
+{
+  "source": "bdns",
+  "source_id": "931814",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MIRANDA DE EBRO / AYUNTAMIENTO DE MIRANDA DE EBRO",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Acuerdo de la Junta de Gobierno Local de 22 de septiembre de 2026 por el que se aprueban las bases específicas y convocatoria para la concesión de subvenciones de cooperación al desarrollo 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-09-25",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "99.0",
+      "descripcion": "Actividades de organizaciones y organismos extraterritoriales"
+    }
+  ],
+  "apply_url": "https://sede.mirandadeebro.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931814",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.mirandadeebro.es/tipo-documentacion/cooperacion-al-desarrollo/",
+  "text_inicio": "15 días hábiles desde el día siguiente a la publicación del extracto de convocatoria en  BOP Burgos",
+  "text_fin": "Transcurridos 15 días hábiles desde la publicación del extracto de la convocatoria en el BOP Burgos",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:58.070Z"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "bdns",
+  "source_id": "931834",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE OVIEDO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "Convocatoria de los Premios José Riera a los estudiantes con mejor expediente de titulaciones de Grado y Máster impartidas en el Campus de Gijón y financiadas por el Ayuntamiento de Gijón/Xixón en régimen de concurrencia competitiva (2026-2027)",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-26",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 21000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://intranet.uniovi.es/convocatorias/estudiantes",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931834",
+  "documents": [],
+  "bases_reguladoras_url": "https://sede.asturias.es/bopa/2022/10/26/2022-07914.pdf",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOPA",
+  "text_fin": "Diez días hábiles desde el día siguiente a la publicación del presente extracto en BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:58.077Z"
+}

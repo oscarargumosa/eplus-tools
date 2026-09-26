@@ -1,0 +1,80 @@
+{
+  "id": 1128920,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "INSTITUT VALENCIÀ DE LA JOVENTUT (IVAJ)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "927359",
+  "fechaRecepcion": "2026-09-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 13500,
+  "mrr": false,
+  "descripcion": "Resolución de la Vicepresidencia Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad, por la que se establecen las bases reguladoras de los «Premios Campamento IVAJ» 2026 y se procede a su convocatoria",
+  "descripcionLeng": "Resolució de la Vicepresidència Primera i Conselleria de Vivenda, Ocupació, Joventut i Igualtat, per la qual s’establixen les bases reguladores dels Premis Campament IVAJ 2026 i es procedix a la seua convocatoria",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Resolución de la Vicepresidencia Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad, por la que se establecen las bases reguladoras de los «Premios Campamento IVAJ» 2026 y se procede a su convocatoria",
+  "urlBasesReguladoras": "2026_25581_es.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-15",
+  "fechaFinSolicitud": "2026-10-15",
+  "textInicio": "Desde el día siguiente a la publicación de la resolución en el DOGV",
+  "textFin": "Un mes a partir del día siguiente de la publicación de la resolución en el DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527118,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "36.a-1847E RESOLUCION CAS_26-007692_orig_rev_firmado.pdf",
+      "long": 363256,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527120,
+      "descripcion": "Extracto de la Resolución",
+      "nombreFic": "Extracto premios 2026_26-007920_orig_firmado.pdf",
+      "long": 232679,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527119,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "36.b-1847E RESOLUCION VAL_26-007692_trad_rev_firmado.pdf",
+      "long": 377760,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

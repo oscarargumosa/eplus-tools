@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "931642",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LUGO / CONCELLO DE LUGO",
+  "nuts_codes": [
+    "ES112"
+  ],
+  "nuts_primary": "ES112",
+  "title": "Acuerdo 1/384 de 21/09/2026, de la Junta de Gobierno Local del Ayuntamiento de Lugo, por el que se convoca subvenciones para la promoción de la igualdad de género, de la integración de la mujer y de la diversidad afectivo-sexual.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-25",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://www.lugo.gal",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931642",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "2026 - ANEXOS PROMOCION IGUALDAD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lugo.gal",
+  "text_inicio": "Día siguiente a su publicación en el BOP",
+  "text_fin": "15 días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-26T04:07:58.019Z"
+}

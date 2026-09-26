@@ -1,0 +1,72 @@
+{
+  "id": 1133295,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AVINYÓ",
+    "nivel3": "AYUNTAMIENTO DE AVINYÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931734",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, ÁMBITO DE LA DINAMIZACIÓN DEL MUNICIPIO. AÑO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BASES REGULADORES ESPECÍFIQUES PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA ADREÇADES A ENTITATS DOMICILIADES AL MUNICIPI D`AVINYÓ",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3987404/aprovacio-definitiva-de-la-modificacio-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-a-entitats-domiciliades-al-municipi-versio-en-catala-i-castella-ajuntament-d-avinyo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación en el BOP",
+  "textFin": "20 días hábiles a contar desde la fecha de la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527328,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026_766_Convocatòria_subvencions_entitats_àmbit_de_la_dinamització_del_municipi_2026.pdf",
+      "long": 216873,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527327,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026_766_Convocatoria_subvenciones_entidades_dinamización_del_municipio.pdf",
+      "long": 221110,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

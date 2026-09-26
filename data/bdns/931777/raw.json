@@ -1,0 +1,88 @@
+{
+  "id": 1133338,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARGOÑOS",
+    "nivel3": "AYUNTAMIENTO DE ARGOÑOS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931777",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "Subvención para la desparasitación del ganado bovino, equino, ovino y caprino para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Subvención para la desparasitación del ganado bovino, equino, ovino y caprino para el año 2026.",
+  "urlBasesReguladoras": "https://aytoargonos.sedelectronica.es/transparency/2db6a787-3329-42f3-ba0d-ff6433f28a34/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de publicación den el BOC del extracto de la convocatoria",
+  "textFin": "20 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527428,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria para la Concesión de Subvenciones.pdf",
+      "long": 316086,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527436,
+      "descripcion": "Anexo III. Autorización consulta de datos",
+      "nombreFic": "ANEXO III AUTORIZACION CONSULTA DE DATOS.pdf",
+      "long": 136283,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527432,
+      "descripcion": "Anexo II. Declaración Responsable",
+      "nombreFic": "ANEXO II DECLARACION RESPONSABLE.pdf",
+      "long": 149916,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    },
+    {
+      "id": 1527430,
+      "descripcion": "Anexo I. Modelo de solicitud",
+      "nombreFic": "ANEXO I SOLICITUD.pdf",
+      "long": 158591,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

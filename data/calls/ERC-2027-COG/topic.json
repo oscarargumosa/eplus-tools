@@ -7,14 +7,14 @@
   "programme": "ERC",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2026-09-24",
   "deadline": "2027-01-12",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON ERC Grants",
-  "actionCode": null,
-  "mgaCode": null,
+  "actionCode": "HORIZON-ERC",
+  "mgaCode": "HORIZON-AG",
   "budget": {
     "total_eur": 618500000,
     "by_year": {
@@ -30,7 +30,7 @@
   ],
   "crossCuttingPriorities": [],
   "supportInfoText": "ERC 2027 Consolidator Grant Applicants' Mailbox - for queries related to the call.\n\nOnline Manual is your guide on the procedures from proposal submission to managing your grant.\n\nFunding & Tenders Portal FAQ – find the answers to most frequently asked questions on submission of proposals, evaluation and grant management.\n\nResearch Enquiry Service – ask questions about any aspect of European research in general and the EU Research Framework Programmes in particular.\n\nERC National Contact Points (NCPs) – get guidance, practical information and assistance on participation in Horizon Europe. There are also NCPs in many non-EU and non-associated countries (‘third-countries’).\n\nIT Helpdesk – contact the Funding & Tenders Portal IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nEuropean IPR Helpdesk assists you on intellectual property issues.\n\nThe European Charter for Researchers and the Code of Conduct for their recruitment – consult the general principles and requirements specifying the roles, responsibilities and entitlements of researchers, employers and funders of researchers.",
-  "submissionUrl": null,
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/46410?topic=ERC-2027-COG",
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERC-2027-COG",
   "documents": [
     {
@@ -167,5 +167,5 @@
       "is_downloadable": true
     }
   ],
-  "fetchedAt": "2026-09-25T04:02:00.574Z"
+  "fetchedAt": "2026-09-26T04:04:37.729Z"
 }

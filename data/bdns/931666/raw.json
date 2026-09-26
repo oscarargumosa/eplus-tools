@@ -1,0 +1,67 @@
+{
+  "id": 1133227,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIBA-ROJA DE TÚRIA",
+    "nivel3": "AYUNTAMIENTO DE RIBA-ROJA DE TÚRIA"
+  },
+  "sedeElectronica": "https://oficinavirtual.ribarroja.es/PortalCiudadania",
+  "codigoBDNS": "931666",
+  "fechaRecepcion": "2026-09-25",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 140000,
+  "mrr": false,
+  "descripcion": "Resolución de alcaldía/ Acuerdo Nº 3045/2026 de 24 de septiembre de 2026 del Ayuntamiento de Riba-roja de Turia por la que se convocan subvenciones destinadas a Clubes  y Entidades Deportivas de Riba-roja de Túria año 2026 (temporada 25/26).",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Resolución de alcaldía/ Acuerdo Nº 3045/2026 de 24 de septiembre de 2026 del Ayuntamiento de Riba-roja de Turia por la que se convocan subvenciones destinadas a Clubes  y Entidades Deportivas de Riba-roja de Túria año 2026 (temporada 25/26).",
+  "urlBasesReguladoras": "https://oficinavirtual.ribarroja.es/PortalCiudadania/tablonEdictos.do",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día hábil posterior a la publicación del extracto de la convocatoria en el BOP de Valencia",
+  "textFin": "a.\tEl 15º día hábil posterior a la publicación del extracto de la convocatoria en el BOP de Valencia",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527164,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260924 Resolución Alcaldía (aprobación bases y convocatoria (clubes 2026) FIRMADO.pdf",
+      "long": 630241,
+      "datMod": "2026-09-25",
+      "datPublicacion": "2026-09-25"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
