@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "931883",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ESPARREGUERA / AYUNTAMIENTO DE ESPARREGUERA",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "SUBVENCIÓ PER AL FOMENT D`ACTIVITATS DE LLEURE, ESPORTIVES I EXTRAESCOLARS INCLUSIVES",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 53895,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931883",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "APROVACIO CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3726270/aprovacio-definitiva-de-la-modificacio-del-text-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-en-materia-de-foment-d-activitats-de-cicles-de-vida-cultura-educacio-esports-igualtat-i-diversitat-promocio-economica-serveis-socials-i-cooperacio-ajuntament",
+  "text_inicio": "Des de l`endemà de la publicació de la convocatòria al BOPB",
+  "text_fin": "20 dies hàbils a comptar des de la publicació al BOPB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-29T04:07:58.631Z"
+}

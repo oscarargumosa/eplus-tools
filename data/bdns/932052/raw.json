@@ -1,0 +1,160 @@
+{
+  "id": 1133613,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GENOVÉS",
+    "nivel3": "AYUNTAMIENTO DE GENOVÉS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932052",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Concesión de subvenciones deportivas en régimen de concurrencia competitiva para el ejercicio 2026.",
+  "descripcionLeng": "Concessió de subvencions en règim de concurrència competitiva per a l'exercici 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ordenanza reguladora de las bases para la concesión de subvenciones en régimen de concurrencia competitiva para la realización de\nactividades deportivas.",
+  "urlBasesReguladoras": "https://genoves.sedelectronica.es/transparency",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días hábiles desde la publicación de la convocatoria en el BOP",
+  "textFin": "15 días hábiles desde la publicación de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528230,
+      "descripcion": "Anexo X",
+      "nombreFic": "ANNEX 10.docx",
+      "long": 73739,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528228,
+      "descripcion": "Anexo IX",
+      "nombreFic": "ANNEX 9.docx",
+      "long": 71612,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528231,
+      "descripcion": "Anexo XI",
+      "nombreFic": "ANNEX 11.docx",
+      "long": 70713,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528174,
+      "descripcion": "Anexo II",
+      "nombreFic": "ANNEX 2.docx",
+      "long": 69990,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528175,
+      "descripcion": "Anexo III",
+      "nombreFic": "ANNEX 3.docx",
+      "long": 73792,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528191,
+      "descripcion": "Anexo IV",
+      "nombreFic": "ANNEX 4.docx",
+      "long": 72078,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528218,
+      "descripcion": "Anexo VI",
+      "nombreFic": "ANNEX 6.docx",
+      "long": 69989,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528220,
+      "descripcion": "Anexo VII",
+      "nombreFic": "ANNEX 7.docx",
+      "long": 70100,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528223,
+      "descripcion": "Anexo VIII",
+      "nombreFic": "ANNEX 8.docx",
+      "long": 70107,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528173,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANNEX 1.docx",
+      "long": 87519,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528126,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria concurrencia competitiva 2026.pdf",
+      "long": 281489,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528125,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria concurrencia competitiva 2026.pdf",
+      "long": 281489,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528216,
+      "descripcion": "Anexo V",
+      "nombreFic": "ANNEX 5.docx",
+      "long": 70102,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

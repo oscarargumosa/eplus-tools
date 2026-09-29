@@ -1,0 +1,72 @@
+{
+  "id": 1133422,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ABADES",
+    "nivel3": "AYUNTAMIENTO DE ABADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931861",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Becas a estudiantes de Abades, curso 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES416 - Segovia"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Becas a estudiantes de Abades, curso 2025-2026",
+  "urlBasesReguladoras": "https://abades.sedelectronica.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación en BOP",
+  "textFin": "20 días naturales desde el día siguiente a la publicación ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527732,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Concesión de Subvenciones.pdf",
+      "long": 237676,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1527770,
+      "descripcion": "Anexos becas a estudiantes de Abades 2025-2026",
+      "nombreFic": "Anexos becas a estudiantes de Abades.docx",
+      "long": 32273,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

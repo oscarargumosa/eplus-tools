@@ -1,0 +1,67 @@
+{
+  "id": 1133470,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "FUNDACION PARQUE CIENTIFICO Y TECNOLOGICO DE CASTILLA-LA MANCHA"
+  },
+  "sedeElectronica": "https://www.jccm.es",
+  "codigoBDNS": "931909",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 360000,
+  "mrr": false,
+  "descripcion": "Resolución de 25-9-2026, de la Presidencia de la Comisión Ejecutiva de la Fundación Parque Científico y Tecnológico de C-LM, de convocatoria de ayudas destinadas a proyectos incluidos en el Programa de Incubación de Empresas de la Agencia Espacial Europea",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Orden 129/2026, de 8 de septiembre, de la Consejería de Educación, Cultura y Deportes, de bases reguladoras de las ayudas a conceder por la FPCyTCLM destinadas al desarrollo del Centro de incubación de Empresas de la Agencia Espacial Europea (ESABIC CLM).",
+  "urlBasesReguladoras": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/09/11/pdf/2026_6508.pdf&tipo=rutaDocm",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la publicación del extracto de la convocatoria en el Diario Oficial C-LM",
+  "textFin": "Dos meses desde la publicación del extracto en el Diario Oficial de Castilla-La Mancha.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527913,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "9. Resolución convocatoria ESA BIC_F.pdf",
+      "long": 357579,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

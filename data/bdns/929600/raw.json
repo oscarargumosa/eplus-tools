@@ -1,0 +1,76 @@
+{
+  "id": 1131161,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "LA RIOJA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN Y EMPLEO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "929600",
+  "fechaRecepcion": "2026-09-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PREMIOS EXCELENCIA ACADÉMICA PARA GRADUADOS UNIV. CURSO 2024/2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES230 - La Rioja"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de la concesión de Premios a la Excelencia Académica destinados a graduados universitarios",
+  "urlBasesReguladoras": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=29835171-1-PDF-562015",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la resolución de convocatoria en el B.O.R.",
+  "textFin": "Transcurso de 20 días hábiles desde el día siguiente de la publicación de convocatoria en el B.O.R.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1521903,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BOFr_129.pdf",
+      "long": 205393,
+      "datMod": "2026-09-15",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 221767,
+      "titulo": "Resolución 76/2026, de 15 de septiembre, de la Consejería de Educación y Empleo, por la que se convocan los Premios a la Excelencia Académica destinados a graduados universitarios en el curso 2024/2025 (extracto)",
+      "tituloLeng": null,
+      "texto": "<p>Primero. Convocatoria.</p><p>Se convocan Premios a la Excelencia Académica destinados a graduados universitarios en el curso 2024/2025, de conformidad con lo establecido en la Orden EDE/39/2024, de 31 de mayo, por la que se establecen las bases reguladoras de la concesión de Premios a la Excelencia Académica destinados a graduados universitarios.</p><p>Segundo. Beneficiarios.</p><p>Todas aquellas personas egresadas universitarias que hayan concluido sus estudios oficiales presenciales de Grado universitario en un centro o universidad española en el curso 2024/2025, sin perjuicio de lo dispuesto en la disposición adicional primera de la Orden EDE/39/2024, de 31 de mayo, y cumplan los requisitos establecidos en el apartado 2 de la resolución de convocatoria.</p><p>Tercero. Objeto.</p><p>Concesión de nueve premios al rendimiento académico destinados a aquellas personas egresadas universitarias en el curso 2024/2025 que hayan demostrado un aprovechamiento académico excelente en sus enseñanzas de Grado universitario.</p><p>Cuarto. Bases reguladoras.</p><p>Orden EDE/39/2024, de 31 de mayo, por la que se establecen las bases reguladoras de la concesión de Premios a la Excelencia Académica destinados a graduados universitarios.</p><p>Quinto. Cuantía total de la subvención.</p><p>Cuantía total de VEINTISIETE MIL EUROS (27.000 €), con un valor máximo por premio de TRES MIL EUROS (3.000 €).</p><p>Sexto. Solicitudes.</p><p>Las solicitudes deberán presentarse electrónicamente, debidamente firmadas.</p><p>Séptimo. Plazo de presentación de solicitudes.</p><p>Veinte días hábiles a contar desde el día siguiente a la publicación del presente extracto en el Boletín Oficial de La Rioja.</p><p>Octavo. Otros datos de interés.</p><p>Solicitudes: deben presentarse, de conformidad con lo establecido en el apartado 6 de la resolución de convocatoria, mediante el formulario accesible por vía telemática a través del siguiente enlace: https://web.larioja.org/oficina-electronica/tramite?n=24723.</p><p>Documentación a presentar: la prevista en el apartado 6 de la resolución de convocatoria.</p><p>Criterios de concesión: los previstos en el artículo 11 de la Orden EDE/39/2024, de 31 de mayo.</p><p>Procedimiento de abono: conforme al establecido en el artículo 14 de la Orden EDE/39/2024, de 31 de mayo.</p>",
+      "textoLeng": null,
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42336162-1-PDF-579904",
+      "cve": null,
+      "desDiarioOficial": "BOR. B.O. DE LA RIOJA",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

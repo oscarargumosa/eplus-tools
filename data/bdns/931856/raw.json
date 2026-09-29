@@ -1,0 +1,75 @@
+{
+  "id": 1133417,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ZUERA",
+    "nivel3": "FUNDACIÓN ODÓN DE BUEN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931856",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 1000,
+  "mrr": false,
+  "descripcion": "Segunda convocatoria extraordinaria de ayudas a la innovación educativa 2026 - 2027 para centros de enseñanza de Zuera",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación preprimaria",
+      "codigo": "85.1"
+    },
+    {
+      "descripcion": "Educación primaria",
+      "codigo": "85.2"
+    },
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES243 - Zaragoza"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "SEGUNDA CONVOCATORIA DE AYUDAS DE LA FUNDACIÓN ODÓN DE BUEN PARA EL FOMENTO DE LA CIENCIA, LA TECNOLOGÍA, LA SOSTENIBILIDAD Y LA INNOVACIÓN PEDAGÓGICA DURANTE EL CURSO 2026-2027",
+  "urlBasesReguladoras": "https://fundacionodondebuen.com/wp-content/uploads/2026/09/2a-Convocatoria-EDU-26-27_signed.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-29",
+  "fechaFinSolicitud": "2026-10-29",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527723,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2ª Convocatoria EDU 26-27_signed.pdf",
+      "long": 254149,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

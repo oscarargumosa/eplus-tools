@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "931978",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "ORDEN DE LA CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL, POR LA QUE SE CONVOCAN SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, A LAS ASOCIACIONES ARTESANAS SIN ÁNIMO DE LUCRO DE LA REGIÓN DE MURCIA PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-09-28",
+  "open_date": "2026-10-02",
+  "deadline": "2026-11-02",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 50000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "32",
+      "descripcion": "Otras industrias manufactureras"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931978",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/747858/pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-29T04:07:58.651Z"
+}

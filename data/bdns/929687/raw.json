@@ -1,0 +1,64 @@
+{
+  "id": 1131248,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GÓJAR",
+    "nivel3": "AYUNTAMIENTO DE GÓJAR"
+  },
+  "sedeElectronica": "https://gojar.sedelectronica.es/",
+  "codigoBDNS": "929687",
+  "fechaRecepcion": "2026-09-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 24 de julio de 2026, de Junta de Gobierno Local del Ayuntamiento de Gójar, por el que se convocan subvenciones, en régimen de concurrencia competitiva, destinadas a asociaciones y entidades sin ánimo de lucro del municipio de Gójar, 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Reguladoras y Convocatoria para la concesión de subvenciones, en régimen de concurrencia competitiva, destinadas a asociaciones y entidades sin ánimo de lucro del municipio de Gójar, bienio 2026-2027",
+  "urlBasesReguladoras": "https://gojar.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial de",
+  "textFin": "15 días hábiles contados desde el día siguiente al de la publicación del extracto de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1522113,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260811_Certificado_Certificado Junta de Gobierno_2026-07-24 ----- JGL-2026-12 --- PUNTO 5-2 --- CERTIFICACION CONCESION DE SUBVENCIONES.pdf",
+      "long": 1019890,
+      "datMod": "2026-09-16",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

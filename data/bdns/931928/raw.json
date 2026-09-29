@@ -1,0 +1,76 @@
+{
+  "id": 1133489,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARBO",
+    "nivel3": "AYUNTAMIENTO DE ARBO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931928",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 0,
+  "mrr": false,
+  "descripcion": "BASES DEL CONCURSO DE CARTELES Y REDACCIÓN DE La “LXVII FIESTA DE La LAMPREA”: ALUMNADO DEL  C.E.I.P ANTONIO CARPINTERO",
+  "descripcionLeng": "BASES DO CONCURSO DE CARTEIS E REDACCIÓN DA “LXVII FESTA DA LAMPREA”: ALUMNADO DO  C.E.I.P ANTONIO CARPINTERO ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES DO CONCURSO DE CARTEIS E REDACCIÓN DA “LXVII FESTA DA LAMPREA”: ALUMNADO DO  C.E.I.P ANTONIO CARPINTERO",
+  "urlBasesReguladoras": "https://concellodearbo.sedelectronica.gal/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-02",
+  "fechaFinSolicitud": "2027-02-15",
+  "textInicio": "BASES DO CONCURSO DE CARTEIS E REDACCIÓN DA “LXVII FESTA DA LAMPREA”: ALUMNADO DO  C.E.I.P ANTONIO C",
+  "textFin": "BASES DO CONCURSO DE CARTEIS E REDACCIÓN DA “LXVII FESTA DA LAMPREA”: ALUMNADO DO  C.E.I.P ANTONIO C",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "RESERVA DE ADAPTACIÓN AL BREXIT"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1527981,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20260925_Outros_1.-bases concurso  C.E.I.P 2026-con protección de datos.pdf",
+      "long": 271501,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1527982,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260925_Outros_1a.-bases concurso  C.E.I.P 2026-castellano.pdf",
+      "long": 274408,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

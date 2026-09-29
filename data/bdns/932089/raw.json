@@ -1,0 +1,84 @@
+{
+  "id": 1133650,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CORUÑA, A",
+    "nivel3": "AYUNTAMIENTO DE CORUÑA, A"
+  },
+  "sedeElectronica": "https://sede.coruna.gal/",
+  "codigoBDNS": "932089",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 648723.11,
+  "mrr": false,
+  "descripcion": "Acuerdo de 2 de septiembre de 2026, de la Junta de Gobierno Local, por la que se aprueban las bases del programa “A Coruña no Mundo: Bolsas Norteamérica 2027-2028”",
+  "descripcionLeng": "Acordo de 2 de setembro de 2026, da Xunta de Goberno Local, pola que se aproban as bases do programa “A Coruña no Mundo: Bolsas Norteamérica 2027-2028”",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza municipal de bases reguladoras xerais para concesión de subvencións polo Concello da Coruña e os seus organismos públicos",
+  "urlBasesReguladoras": "https://bop.dicoruna.es/bopportal/publicado/2024/08/16/2024_0000005745.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente al de la publicación del extracto en el BOP",
+  "textFin": "Quince días hábiles a partir del día siguiente a la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528344,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases_BecasNorteamérica_CAST.pdf",
+      "long": 1153133,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528349,
+      "descripcion": "Acuerdo aprobación convocatoria",
+      "nombreFic": "Certificado_XGL_Canada.pdf",
+      "long": 321577,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528345,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases_BecasNorteamérica_GAL.pdf",
+      "long": 1121430,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

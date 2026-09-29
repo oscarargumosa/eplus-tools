@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "931935",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE GRANADA",
+  "nuts_codes": [
+    "ES614"
+  ],
+  "nuts_primary": "ES614",
+  "title": "RESOLUCIÓN DEL VICERRECTORADO DE ESTUDIANTES Y VIDA UNIVERSITARIA POR LA QUE SE CONVOCAN AYUDAS Y BECAS PROPIAS EN EL MARCO DEL PROGRAMA DE INTERVENCIÓN SOCIAL HACIA ESTUDIANTADO CON NECESIDADES ESPECÍFICAS DE APOYO EDUCATIVO (NEAE) 2026/2027 Linea 2",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-28",
+  "open_date": "2026-10-01",
+  "deadline": "2027-04-30",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 80000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://sede.ugr.es/portal/procedimientos/Asistencia-estudiantil-Ayudas-y-becas-propias-dentro-del-Programa-de-Intervencion-Social-hacia-estudiantes-con-discapacidad-NEAE/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/931935",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.juntadeandalucia.es/boja/2022/108/10",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-29T04:07:58.644Z"
+}

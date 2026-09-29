@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "932137",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE EDUCACIÓN Y FORMACIÓN PROFESIONAL",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "ORDEN DE LA CONSEJERÍA DE EDUCACIÓN Y FORMACIÓN PROFESIONAL POR LA QUE SE CONVOCAN LOS PREMIOS EXTRAORDINARIOS DE BACHILLERATO EN LA COMUNIDAD AUTÓNOMA DE LA REGIÓN DE MURCIA CORRESPONDIENTES AL CURSO ACADÉMICO 2025-2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-28",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 13000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/web/pagina?IDCONTENIDO=832&IDTIPO=240&RASTRO=c$m40288",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932137",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2025/numero/1038/pdf?id=834674",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto de esta convocatoria en el BORM",
+  "text_fin": "Transcurridos siete días naturales desde el siguiente al de la publicación del extracto en el BORM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-29T04:07:58.673Z"
+}

@@ -1,0 +1,83 @@
+{
+  "id": 1133623,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "INSTITUTO DE INDUSTRIAS CULTURALES DE LAS ILLES BALEARS"
+  },
+  "sedeElectronica": "https://icibcultura.com/es",
+  "codigoBDNS": "932062",
+  "fechaRecepcion": "2026-09-28",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 188888.89,
+  "mrr": false,
+  "descripcion": "Ayudas de minimis para apoyar a las salas de exhibición cinematográfica y complejos cinematográficos de las Illes Balears para el año 2025",
+  "descripcionLeng": "Ajudes de minimis per donar suport a les sales d’exhibició cinematogràfica i complexos cinematogràfics de les Illes Balears per a l’any 2025 ",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ayudas de minimis para apoyar a las salas de exhibición cinematográfica y complejos cinematográficos de las Illes Balears para el año 2025",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/es/2025/12209/710288/resolucion-del-presidente-del-instituto-de-industr",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "12/01/2025",
+  "textFin": "23/01/2025",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528278,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "cast_BOIB núm. 173 (30-12-2025).pdf",
+      "long": 252772,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528280,
+      "descripcion": "solicitud",
+      "nombreFic": "cast_SOL·LICITUD ICIB SALESCINE 2025.docx",
+      "long": 107104,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    },
+    {
+      "id": 1528277,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "cat_BOIB núm. 173 (30-12-2025).pdf",
+      "long": 250569,
+      "datMod": "2026-09-28",
+      "datPublicacion": "2026-09-28"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
