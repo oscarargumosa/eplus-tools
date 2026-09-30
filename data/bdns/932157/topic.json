@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932157",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / RIPOLLET / AYUNTAMIENTO DE RIPOLLET",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Conv  subv en régimen de concurrencia competitiva para la creación de elementos del imaginario de la cultura popular y compra de  materiales esenciales de las actividades culturales de entidades y asociaciones culturales sin ánimo de lucro 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91.1",
+      "descripcion": "Actividades de bibliotecas y archivos"
+    }
+  ],
+  "apply_url": "https://www.ripollet.cat/seu-electronica/tramits-i-gestions/tramits/participacio/sol-licituds-de-subvencions-de-concurrencia-competitiva/subvencio-activitats-culturals",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932157",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3270495/aprovacio-definitiva-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-per-a-projectes-i-activitats-de-l-ambit-de-desenvolupament-comunitari-ajuntament-de-ripollet",
+  "text_inicio": "Desde el día siguiente de la publicación en el BOPB",
+  "text_fin": "20 días desde el día siguiente de la publicación en el BOPB",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.465Z"
+}

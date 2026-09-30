@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932408",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / FUNDACIÓN FONDO CANTABRIA COOPERA",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "Resolución FCC/01/2026, de 29 de septiembre por la que se establece la convocatoria de subvenciones, en régimen de concurrencia competitiva, destinadas a sufragar los gastos de matrícula del Máster Universitario en Derechos Humanos y Mecanismos de Protecc",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": "2026-05-01",
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://rec.cantabria.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932408",
+  "documents": [
+    {
+      "label": "Modelo de solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=408819",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto en el Boletín Oficial de Cantabria",
+  "text_fin": "Quince días hábiles a contar desde el día siguiente al de la publicación del extracto en el Boletín",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.525Z"
+}

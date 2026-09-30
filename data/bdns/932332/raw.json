@@ -1,0 +1,64 @@
+{
+  "id": 1133893,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AZUQUECA DE HENARES",
+    "nivel3": "AYUNTAMIENTO DE AZUQUECA DE HENARES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932332",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS Y SUBVENCIONES DESTINADAS A LA COLABORACIÓN CON AGRUPACIONES PEDAGÓGICAS QUE TENGAN COMO OBJETIVO LA INVESTIGACIÓN, RECUPERACIÓN Y DIFUSIÓN DEL PATRIMONIO HISTÓRICO-EDUCATIVO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES424 - Guadalajara"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Reguladoras de ayudas y subvenciones destinadas a la colaboración con agrupaciones pedagógicas que tengan como objetivo la investigación, recuperación y difusión del patrimonio",
+  "urlBasesReguladoras": "https://azuqueca.sedelectronica.es/preview-document/340454ec-56f2-4d42-9e03-f1b226619284/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente de la publicación de la presente convocatoria en BOP",
+  "textFin": "Diez días naturales desde el día siguiente de la publicación de la presente convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529030,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "20260917_Otros_CONVOCATORIA SUBVENCIÓN AGRUPACIONES PEDAGÓGICAS-1.pdf",
+      "long": 938076,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

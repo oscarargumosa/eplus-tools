@@ -1,0 +1,68 @@
+{
+  "source": "bdns",
+  "source_id": "932333",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE VALLADOLID",
+  "nuts_codes": [
+    "ES414",
+    "ES416",
+    "ES417",
+    "ES418"
+  ],
+  "nuts_primary": "ES414",
+  "title": "Convocatoria del Vicerrectorado de Sostenibilidad y Responsabilidad Social \nayudas programa de apoyo financiero de cooperación universitaria internacional-\nFondo de cooperación al desarrollo 2026",
+  "title_lang": "es",
+  "summary": "Cooperación internacional para el desarrollo y cultural",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": "2026-09-30",
+  "deadline": "2026-10-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 0,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://tramitador.sede.uva.es/tramitador/entrada?idLogica=accesoDirecto&idEntidad=UVA&id Expediente=001-001-ExponeSolicita",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932333",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bocyl.jcyl.es/boletines/2024/02/14/pdf/BOCYL-D-14022024-24.pd",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.508Z"
+}

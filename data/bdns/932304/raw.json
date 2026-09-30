@@ -1,0 +1,68 @@
+{
+  "id": 1133865,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SEVILLA",
+    "nivel3": "AYUNTAMIENTO DE SEVILLA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932304",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "Concurso juvenil de relatos cortos en el que podrán participar  jóvenes con edades comprendidas entre los 12 y 16 años, cumplidos en la fecha de finalización del plazo de inscripción, empadronados o cursando estudios en el Distrito Casco Antiguo.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "EXTRACTO DE LA RESOLUCIÓN DE LA PRESIDENTA DE LA JUNTA MUNICIPAL DISTRITO CASCO ANTIGUO  DE FECHA 12 SE SEPTIEMBRE DE 2025, POR LA QUE SE APRUEBA LA CONVOCATORIA PÚBLICA PARA CONCESIÓN DE PREMIOS CORRESPONDIENTES AL CONCURSO JUVENIL DE RELATOS CORTOS.",
+  "urlBasesReguladoras": "http://www.dipusevilla.es/export/bop/200507/14.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": "2026-10-27",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528909,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "7. resolución bases y anexo relatos cortos 26.report.pdf",
+      "long": 127778,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

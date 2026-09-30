@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "932322",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE LEÓN",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "CONVOCATORIA DE BECA DE FORMACIÓN PARA LA REALIZACIÓN DE PRÁCTICAS ACADÉMICAS EXTRACURRICULARES EN EL CAMPUS DE PONFERRADA\nDEPENDIENTES DEL VICERRECTORADO DE INTERNACIONALIZACIÓN Y COMPROMISO GLOBAL. Curso 2026-2027.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": null,
+  "deadline": "2026-10-06",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfNqGcij4ne28Csn8mLBSO9GIYiWDjdE9kXcjM7PSGhI-M1Tw/viewform",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932322",
+  "documents": [
+    {
+      "label": "Descripción del puesto",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.unileon.es/modelos/archivo/norregint/202411413481884_n_bases_reguladoras_para_estudiantes_de_grado_y_master.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación de la convocatoria",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.504Z"
+}

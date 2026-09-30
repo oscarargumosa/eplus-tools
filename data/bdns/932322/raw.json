@@ -1,0 +1,76 @@
+{
+  "id": 1133883,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE LEÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://docs.google.com/forms/d/e/1FAIpQLSfNqGcij4ne28Csn8mLBSO9GIYiWDjdE9kXcjM7PSGhI-M1Tw/viewform",
+  "codigoBDNS": "932322",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1600,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE BECA DE FORMACIÓN PARA LA REALIZACIÓN DE PRÁCTICAS ACADÉMICAS EXTRACURRICULARES EN EL CAMPUS DE PONFERRADA\nDEPENDIENTES DEL VICERRECTORADO DE INTERNACIONALIZACIÓN Y COMPROMISO GLOBAL. Curso 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las becas y ayudas para estudiantes de Grado y Máster de la Universidad de León, aprobadas por el Consejo de Gobierno de 31 de octubre de 2024",
+  "urlBasesReguladoras": "https://www.unileon.es/modelos/archivo/norregint/202411413481884_n_bases_reguladoras_para_estudiantes_de_grado_y_master.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-06",
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528957,
+      "descripcion": "Descripción del puesto",
+      "nombreFic": "ANEXO_I CONVOCATORIA PRÁCTICAS EXTRACURRICULARES INTERNACIONAL 26 27   22 septiembre. Ponferrada_ .pdf",
+      "long": 195338,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528952,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA_Becas_Formacion_ULE 2026 27 _ Campus de Ponferrada.pdf",
+      "long": 274409,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

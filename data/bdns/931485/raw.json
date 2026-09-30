@@ -1,0 +1,176 @@
+{
+  "id": 1133046,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLACARRILLO",
+    "nivel3": "AYUNTAMIENTO DE VILLACARRILLO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "931485",
+  "fechaRecepcion": "2026-09-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones en materia de comercio e industria. PLAN DE EMPRENDEDORES para el año 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Acabado de edificios",
+      "codigo": "43.3"
+    },
+    {
+      "descripcion": "Actividades administrativas y auxiliares de oficina",
+      "codigo": "82.1"
+    },
+    {
+      "descripcion": "Actividades de agencias de viajes y operadores turísticos",
+      "codigo": "79.1"
+    },
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    },
+    {
+      "descripcion": "Actividades de construcción especializada en la construcción de edificios",
+      "codigo": "43.4"
+    },
+    {
+      "descripcion": "Actividades de contabilidad, teneduría de libros, auditoría y asesoría fiscal",
+      "codigo": "69.2"
+    },
+    {
+      "descripcion": "Actividades de intermediación para los servicios de comidas y bebidas",
+      "codigo": "56.4"
+    },
+    {
+      "descripcion": "Actividades de intermediación para reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas",
+      "codigo": "95.4"
+    },
+    {
+      "descripcion": "Actividades de intermediación para servicios personales",
+      "codigo": "96.4"
+    },
+    {
+      "descripcion": "Actividades de jardinería",
+      "codigo": "81.3"
+    },
+    {
+      "descripcion": "Actividades de limpieza",
+      "codigo": "81.2"
+    },
+    {
+      "descripcion": "Actividades jurídicas",
+      "codigo": "69.1"
+    },
+    {
+      "descripcion": "Actividades veterinarias",
+      "codigo": "75.0"
+    },
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "Construcción de edificios",
+      "codigo": "41.0"
+    },
+    {
+      "descripcion": "Depósito, almacenamiento y actividades auxiliares del transporte ",
+      "codigo": "52"
+    },
+    {
+      "descripcion": "Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción",
+      "codigo": "43.2"
+    },
+    {
+      "descripcion": "Otras actividades de construcción especializada",
+      "codigo": "43.9"
+    },
+    {
+      "descripcion": "Otros servicios de reservas y actividades relacionadas con los mismos",
+      "codigo": "79.9"
+    },
+    {
+      "descripcion": "Otros servicios personales",
+      "codigo": "96.9"
+    },
+    {
+      "descripcion": "Peluquería, tratamientos de belleza, spas y actividades similares",
+      "codigo": "96.2"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de efectos personales y artículos de uso doméstico",
+      "codigo": "95.2"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de ordenadores y equipos de comunicación",
+      "codigo": "95.1"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de vehículos de motor y motocicletas",
+      "codigo": "95.3"
+    },
+    {
+      "descripcion": "Restaurantes y puestos de comidas",
+      "codigo": "56.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES616 - Jaén"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Convocatoria para la concesión de subvenciones en materia de comercio e industria. PLAN DE EMPRENDEDORES para el año 2026",
+  "urlBasesReguladoras": "https://villacarrillo.sedelectronica.es/preview-document/576f03f9-cc52-47ec-832b-903a17255900/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-02",
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": "Desde el día siguiente de su publicación en el BOP",
+  "textFin": "30 días naturales desde el dia siguiente la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528761,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260928_Certificado_Certificado de acuerdos_Certificado de acuerdo (3).pdf",
+      "long": 876768,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1526645,
+      "descripcion": "ANEXO II DECLARACION RESPONSABLE",
+      "nombreFic": "ANEXO II DECLARACION RESPONSABLE.pdf",
+      "long": 221369,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1526644,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "ANEXO I SOLICITUD PAE 2026.pdf",
+      "long": 243592,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

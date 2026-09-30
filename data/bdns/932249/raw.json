@@ -1,0 +1,72 @@
+{
+  "id": 1133810,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NAVA",
+    "nivel3": "AYUNTAMIENTO DE NAVA"
+  },
+  "sedeElectronica": "sede electronica Ayuntamiento de Nava (Asturias)",
+  "codigoBDNS": "932249",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones con destino a entidades sin ánimo de lucro para la realización de actividades culturales, festivas y sociales en el concejo de Nava durante el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones para la organización de actividades culturales, festivas y sociales en el concejo de Nava (Asturias)",
+  "urlBasesReguladoras": "BOLETIN OFICIAL DEL PRINCIPADO DE ASTURIAS",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de su publicación en el Boletin Oficial del Principado de Asturias",
+  "textFin": "Diez días hábiles contados a partir de su publicación en el BOPA.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528797,
+      "descripcion": "Bases reguladoras",
+      "nombreFic": "Bases reguladoras (BOPA 209.pdf",
+      "long": 238445,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528794,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026 subvenciones organización de actividades culturales.pdf",
+      "long": 277165,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

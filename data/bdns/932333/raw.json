@@ -1,0 +1,77 @@
+{
+  "id": 1133894,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE VALLADOLID",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://tramitador.sede.uva.es/tramitador/entrada?idLogica=accesoDirecto&idEntidad=UVA&id Expediente=001-001-ExponeSolicita",
+  "codigoBDNS": "932333",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0,
+  "mrr": false,
+  "descripcion": "Convocatoria del Vicerrectorado de Sostenibilidad y Responsabilidad Social \nayudas programa de apoyo financiero de cooperación universitaria internacional-\nFondo de cooperación al desarrollo 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES414 - Palencia"
+    },
+    {
+      "descripcion": "ES416 - Segovia"
+    },
+    {
+      "descripcion": "ES417 - Soria"
+    },
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "bases reguladoras de las ayudas del programa de apoyo financiero de\ncooperación universitaria internacional-Fondo de cooperación al desarrollo,\naprobadas en Consejo de Gobierno de esta universidad, por acuerdo  de 01/02/2024 (B.O.C. y L. Núm.32,14/02/24)",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2024/02/14/pdf/BOCYL-D-14022024-24.pd",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-30",
+  "fechaFinSolicitud": "2026-10-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528986,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ECG y ApS 2026.report.pdf",
+      "long": 471734,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

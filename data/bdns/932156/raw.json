@@ -1,0 +1,72 @@
+{
+  "id": 1133717,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIPOLLET",
+    "nivel3": "AYUNTAMIENTO DE RIPOLLET"
+  },
+  "sedeElectronica": "https://www.ripollet.cat/seu-electronica/tramits-i-gestions/tramits/participacio/sol-licituds-de-subvencions-de-concurrencia-competitiva/subvencio-activitats-esportives",
+  "codigoBDNS": "932156",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "2a conv de Subv en régimen de concurrencia competitiva por proyectos y actividades deportivas del Programa 3  Participación de deportistas en ligas federadas o escolares, de entidades y asociaciones sin ánimo de lucro del municipio Ripollet-2026",
+  "descripcionLeng": "2a Conv. de Subv. en règim de concurrència competitiva per a projectes i activitats esportives Programa 3 Participació esportistes en lligues federades o escolars, d'entitats i associacions sense ànim de lucre del municipi de Ripollet 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas para la concesión de subvenciones en reg. concurrencia competitiva para proyectos y actividades en el ámbito de desarrollo comunitario del Ayuntamiento de Ripollet",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3270495/aprovacio-definitiva-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-per-a-projectes-i-activitats-de-l-ambit-de-desenvolupament-comunitari-ajuntament-de-ripollet",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " Desde el día siguiente de la publicación en el BOPB",
+  "textFin": "20 dias des de el dia siguiente de la publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528535,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "edicte_segona_convoctòria_Esports_programa3.pdf",
+      "long": 314953,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528534,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "edicto_segunda_convoctoria_Deportes_programa3.pdf",
+      "long": 347494,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

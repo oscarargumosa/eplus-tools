@@ -1,0 +1,64 @@
+{
+  "id": 1133860,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TOLEDO",
+    "nivel3": "AYUNTAMIENTO DE TOLEDO"
+  },
+  "sedeElectronica": "sede.toledo.es",
+  "codigoBDNS": "932299",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, A LOS TITULARES DE LICENCIAS DE AUTOTAXI OTORGADAS POR EL AYUNTAMIENTO DE TOLEDO, PARA LA ADQUISICIÓN DE VEHÍCULOS  ADAPTADOS PARA VEHICULOS TAXI PARA PMR. AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otro transporte terrestre de pasajeros",
+      "codigo": "49.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES425 - Toledo"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "BASES DE EJECUCION DEL PRESUPUESTO MUNICIPAL Y BASES GENERALES REGULADORAS DE SUBVENCIONES DEL AYUNTAMIENTO DE TOLEDO 2026",
+  "urlBasesReguladoras": "https://www.toledo.es/toledo-abierto/transparencia-economico-financiera-contratacion-publica-convenios-y-subvenciones/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "EN EL PLAZO DE 20 DIAS HABILES DESDE LA PUBLICACION EN EL BOP DE TOLEDO",
+  "textFin": "HASTA EL VIGESIMO DIA POSTERIOR AL SIGUIENTE DE SU PUBLICACION EL BOP DE TOLEDO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528908,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases reguladoras y convocatoria de subvenciones Eurotaxi 2026.pdf",
+      "long": 252535,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

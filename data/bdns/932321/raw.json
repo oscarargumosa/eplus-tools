@@ -1,0 +1,80 @@
+{
+  "id": 1133882,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORELLÓ",
+    "nivel3": "AYUNTAMIENTO DE TORELLÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932321",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 42900,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA LAS ACTIVIDADES ORDINARIAS Y EXTRAORDINARIAS PARA LOS CLUBES Y ENTIDADES DEPORTIVAS DE TORELLÓ, AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORES ESPECÍFIQUES PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA PER AL DESENVOLUPAMENT DE LES ACTIVITATS ORDINÀRIES I EXTRAORDINÀRIES DELS CLUBS I ENTITATS ESPORTIVES DE TORELLÓ",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3927055",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación del anuncio de la convocatòria",
+  "textFin": "20 días naturales contados a partir del día despues de la publicación de la convocatòria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528968,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ANUNCIO_SUBV.ACTIV_CLUBS_I_ENT_ESPORTIVES_X2025007642.pdf",
+      "long": 364570,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528970,
+      "descripcion": "CERTIFICAT ACORD JGL 18/05/2026",
+      "nombreFic": "CERTIFICAT_ACORD_JGL_18.05.2026_X2025007642_ENTITATS_ESPORTIVES.pdf",
+      "long": 553260,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528969,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "ANUNCI_SUBV.ACTIV_CLUBS_I_ENT_ESPORTIVES_X2025007642.pdf",
+      "long": 364565,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1133718,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIPOLLET",
+    "nivel3": "AYUNTAMIENTO DE RIPOLLET"
+  },
+  "sedeElectronica": "https://www.ripollet.cat/seu-electronica/tramits-i-gestions/tramits/participacio/sol-licituds-de-subvencions-de-concurrencia-competitiva/subvencio-activitats-culturals",
+  "codigoBDNS": "932157",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Conv  subv en régimen de concurrencia competitiva para la creación de elementos del imaginario de la cultura popular y compra de  materiales esenciales de las actividades culturales de entidades y asociaciones culturales sin ánimo de lucro 2026",
+  "descripcionLeng": "Conv. Subv.en règim concurrència competitiva per la creació elements d’imaginari cultura popular i compra de materials essencials de les activitats culturals  d’entitats i associacions culturals sense ànim de lucre 2026\n",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas y archivos",
+      "codigo": "91.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas para la concesión de subvenciones en reg. concurrencia competitiva para proyectos y actividades en el ámbito de desarrollo comunitario del Ayuntamiento de \nRipollet",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3270495/aprovacio-definitiva-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-per-a-projectes-i-activitats-de-l-ambit-de-desenvolupament-comunitari-ajuntament-de-ripollet",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente de la publicación en el BOPB",
+  "textFin": "20 días desde el día siguiente de la publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528537,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Edicte_subvencions_inversions_cultura_2026.pdf",
+      "long": 331547,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528536,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Edicto_subvenciones_inversiones_cultura_2026.pdf",
+      "long": 352621,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

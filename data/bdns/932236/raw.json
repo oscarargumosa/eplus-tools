@@ -1,0 +1,75 @@
+{
+  "id": 1133797,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA PRESIDENCIA, JUSTICIA, SEGURIDAD Y SIMPLIFICACIÓN ADMINISTRATIVA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932236",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2279500,
+  "mrr": false,
+  "descripcion": "Orden PRE/141/2026 de 28 de septiembre, por la que se convoca en 2026 la subvención, de concurrencia competitiva, destinada instalación, puesta en\nfuncionamiento, explotación y mantenimiento de cajeros automáticos en municipios en riesgo despoblamiento.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Orden PRE/113/2026, de 30 de julio, por la que se establecen las BBRR de la subvención, en concurrencia competitiva, destinada a la instalación, puesta en\nfuncionamiento, explotación y mantenimiento de cajeros automáticos en municipios en riesgo de despob",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=438977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BOC",
+  "textFin": "15 dias habiles desde el dia siguiente a la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528763,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA_CAJEROS.pdf",
+      "long": 425831,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528814,
+      "descripcion": "Municipios en riesgo, solicitud y declaraciones responsables",
+      "nombreFic": "03.ANEXOS Cajeros 2026.docx",
+      "long": 51682,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

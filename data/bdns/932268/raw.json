@@ -1,0 +1,72 @@
+{
+  "id": 1133829,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSITAT DE VALÈNCIA (ESTUDI GENERAL)",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://www.uv.es/seu-electronica/ca/electronica-uv.html",
+  "codigoBDNS": "932268",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "X Edición de los premios Cátedra de Pilota Valenciana a los mejores trabajos fin de grado (TFG) relacionados con la pilota valenciana",
+  "descripcionLeng": "X Edició dels premis Càtedra de Pilota Valenciana als millors treballs final de grau (TFG) relacionats amb la pilota valenciana",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades auxiliares a la educación",
+      "codigo": "85.6"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución de 23 de Julio de 2026 del rectorado de la Universitat de València, por la que se convoca la X edición de los premios Cátedra de Pilota Valenciana a los mejores trabajos fin de grado (TFG) relacionados con la pilota valenciana",
+  "urlBasesReguladoras": "https://ir.uv.es/84Td2Gw",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Inicia al día siguiente de la publicación en el DOGV",
+  "textFin": "Finaliza el 7 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528850,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "resolucio_i_bases-val.pdf",
+      "long": 647122,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528849,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "resolucion_y_bases-cas.pdf",
+      "long": 698396,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

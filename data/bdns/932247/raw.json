@@ -1,0 +1,72 @@
+{
+  "id": 1133808,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSITAT DE VALÈNCIA (ESTUDI GENERAL)",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://www.uv.es/sede-electronica/es/sede-electronica-uv.html",
+  "codigoBDNS": "932247",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Ayudas al estudio otorgadas por la Universitat de València para el alumnado ganador de la fase local de la Olimpiada Española de Física. Curso 2026-27",
+  "descripcionLeng": "Ajudes a l’estudi atorgades per la Universitat de València per a l’alumnat guanyador de la fase local de l’Olimpíada Espanyola de Física. Curs 2026-27",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución de 3 de septiembre de 2026, del vicerrector de Estudios y Calidad de la UV, por la que se convocan las ayudas al estudio de la UV para el alumnado ganador de la fase local de la Olimpiada Española de Física. Curso 2026-27",
+  "urlBasesReguladoras": "https://www.uv.es/diuvdocs/Olimpiades/Olimp_Fisica/Resolucion_Bases_OlimpFisica_26-27_cast_def_firmada.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente a la publicación de esta en la convocatoria en el DOGV",
+  "textFin": "21 de octubre de 2026 a las 11h.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528803,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "resolucio_i_bases_convoc-val.pdf",
+      "long": 490601,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528802,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "resolucion_y_bases_convoc-cas.pdf",
+      "long": 485914,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

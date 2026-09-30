@@ -1,0 +1,72 @@
+{
+  "id": 1133843,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD JAUME I DE CASTELLÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89120",
+  "codigoBDNS": "932282",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1364,
+  "mrr": false,
+  "descripcion": "Beca de iniciación a la investigación (Proyecto «PPSI - MARÍA JESÚS MUÑOZ TORRES: FORTALECIMIENTO DE LA ACTIVIDAD INVESTIGADORA EN EL ÁMBITO DE LA SOSTENIBILIDAD Y LA ECONOMIA CIRCULAR» – Código 19I186 - Dirigido por: María Jesús Muñoz",
+  "descripcionLeng": "Beca d'iniciació a la investigació (Projecte «PPSI - MARÍA JESÚS MUÑOZ TORRES: FORTALECIMIENTO DE LA ACTIVIDAD INVESTIGADORA EN EL ÁMBITO DE LA SOSTENIBILIDAD Y LA ECONOMIA CIRCULAR» – Codi 19I186 - Dirigit per: María Jesús Muñoz",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Beca de iniciación a la investigación (Proyecto «PPSI - MARÍA JESÚS MUÑOZ TORRES: FORTALECIMIENTO DE LA ACTIVIDAD INVESTIGADORA EN EL ÁMBITO DE LA SOSTENIBILIDAD Y LA ECONOMIA CIRCULAR» – Código 19I186 - Dirigido por: María Jesús Muñoz Torr",
+  "urlBasesReguladoras": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89120",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "textFin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1528886,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "19I186_C_Master Sostenibilitat.pdf",
+      "long": 200969,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    },
+    {
+      "id": 1528885,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "19I186_Ccs_Master Sostenibilidad_v2.pdf",
+      "long": 219795,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-09-29"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

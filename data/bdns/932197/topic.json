@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "932197",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "BB.EE. y CONV. DE SUBV. AREA DE CONCERTACION. DIPUTACION SEVILLA PROG. DESTIN. PARTIC. AYTOS DE LA PROVINCIA EXCP.CAPITAL (LÍNEA 7 DEL PLAN ESTRATÉGICO DE SUBV.CONCURRENCIA NO COMPETITIVA PARA 2026) BENEFICIARIOS DE SENDA FINANCIERA FEDER 2021-2027.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": "2026-09-29",
+  "deadline": "2026-10-15",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 0,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": "DIPUTACION DE SEVILLA",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932197",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "xq6XgfGDwxwW3H6Tuguh9w==",
+  "text_inicio": "A partir del día siguiente de la publicación del extracto de la convocatoria en el BOP Sevilla",
+  "text_fin": "A los 10 días hábiles a partir del siguiente a la publicación del extracto en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.470Z"
+}

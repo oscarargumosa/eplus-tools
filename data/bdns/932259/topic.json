@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932259",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CANTABRIA / CONSEJERÍA DE INDUSTRIA, EMPLEO, INNOVACIÓN Y COMERCIO",
+  "nuts_codes": [
+    "ES13"
+  ],
+  "nuts_primary": "ES13",
+  "title": "Orden IND/51/2026, de 28 de septiembre, por la que se convoca una beca de formación práctica dirigida a postgraduados en la Dirección General de Innovación, Desarrollo Tecnológico y Emprendimiento Industrial",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-09-29",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10388.04,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "J",
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS"
+    }
+  ],
+  "apply_url": "https://sede.cantabria.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932259",
+  "documents": [
+    {
+      "label": "Solictud-Anexo I",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=440475",
+  "text_inicio": "Dia siguiente al de publicacion de extracto de la convocatoria en B.O.C",
+  "text_fin": "15 dias desde el dia siguiente a la publicaion del extracto de la convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-09-30T04:09:24.487Z"
+}
