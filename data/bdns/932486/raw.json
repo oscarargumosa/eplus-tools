@@ -1,0 +1,64 @@
+{
+  "id": 1134047,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CATRAL",
+    "nivel3": "AYUNTAMIENTO DE CATRAL"
+  },
+  "sedeElectronica": "https://catral.sedelectronica.es/info.0",
+  "codigoBDNS": "932486",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 178360,
+  "mrr": false,
+  "descripcion": "BASES CAMPAÑA FOMENTO AL CONSUMO: V BONO-CONSUMO CATRAL 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES CAMPAÑA FOMENTO AL CONSUMO: V BONO-CONSUMO CATRAL 2026.",
+  "urlBasesReguladoras": "https://catral.sedelectronica.es/preview-document/9631239a-9e11-4cfd-9707-536770c1d31e/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde su publicación en el BOP",
+  "textFin": "5 días hábiles desde su publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529522,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260929_Publicación_Anuncio_ANUNCIO BASES Y CONVOCATORIA V BONO CONSUMO CATRAL 2026.pdf",
+      "long": 527248,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

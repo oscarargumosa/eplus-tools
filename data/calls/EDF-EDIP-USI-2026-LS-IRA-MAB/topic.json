@@ -10,7 +10,7 @@
   "status": "open",
   "statusCode": "31094502",
   "opening": "2026-06-17",
-  "deadline": "2026-10-13",
+  "deadline": "2026-11-10",
   "deadlineModel": "single-stage",
   "actionType": "EDF Lump Sum Grants",
   "actionCode": "EDF-LS",
@@ -153,5 +153,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-09-29T04:04:38.114Z"
+  "fetchedAt": "2026-10-01T04:03:27.018Z"
 }

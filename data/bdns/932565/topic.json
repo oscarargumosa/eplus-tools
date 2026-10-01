@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932565",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEVILLA / DIPUTACIÓN PROVINCIAL DE SEVILLA",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Bases y convocatoria por las que se regulan los anticipos financieros reintegrables destinados a atender necesidades transitorias de tesorería de los municipios y entidades locales autónomas de la provincia de Sevilla. SAD Dependencia",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-09-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://sedeelectronicadipusevilla.es/opencms/opencms/sede",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932565",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronicadipusevilla.es/tablon-1.0/servlet/obtenerDocumentoUrlPermanente?pid=3783f2ce4bb4b0448920ae66cf2b29e8d23bfb3964cfcd17ad4f7a5f15679a7cf510c67b5bf2bda9",
+  "text_inicio": "el día siguiente al de la publicación del extracto de la convocatoria en BOP",
+  "text_fin": "a los veinte días hábiles a contar desde el día siguiente al de la publicación del extracto en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-01T04:07:04.090Z"
+}

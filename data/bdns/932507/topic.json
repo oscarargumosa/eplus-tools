@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932507",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD JAUME I DE CASTELLÓN",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Quinta edición del “Premio a la Iniciativa para la Mejora de la Gestión Sostenible de los Residuos Urbanos” de la Cátedra Reciplasa de Gestión de Residuos Urbanos de la Universitat Jaume I de Castelló",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-09-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94.9",
+      "descripcion": "Otras actividades asociativas"
+    }
+  ],
+  "apply_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89151",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932507",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89151",
+  "text_inicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "text_fin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-01T04:07:04.083Z"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "929568",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCÚDIA / AYUNTAMIENTO DE ALCÚDIA",
+  "nuts_codes": [
+    "ES532"
+  ],
+  "nuts_primary": "ES532",
+  "title": "Bases de la segunda edición para la concesión de bonos de compra para la promoción y reactivación del comercio local del municipio de Alcúdia.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-09-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6180,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/929568",
+  "documents": [
+    {
+      "label": "Convocatoria de la segunda edición para la concesión de bonos de compra para la promoción y reactivación del comercio local del municipio de Alcúdia",
+      "url": null
+    },
+    {
+      "label": "Convocatòria de la segona edició per a la concessió de bons de compra  per a la promoció i reactivació del comerç local del municipi d'Alcúdia",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/es/2026/12328/seccion-iii-otras-disposiciones-y-actos-administra/472",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la convocatoria en el BOIB",
+  "text_fin": "Al finalizar los diez días naturales de plazo.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-01T04:07:03.134Z"
+}

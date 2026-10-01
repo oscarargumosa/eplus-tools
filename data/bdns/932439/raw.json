@@ -1,0 +1,100 @@
+{
+  "id": 1134000,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DAYA VIEJA",
+    "nivel3": "AYUNTAMIENTO DE DAYA VIEJA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932439",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 33304,
+  "mrr": false,
+  "descripcion": "EXPTE. 388/2026 BASES Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DENOMINADAS BONO-CONSUMO 2026 \"DAYA VIEJA DA MÁS\", EN RÉGIMEN DE CONCURRENCIA COMPETITIVA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de agencias de viajes y operadores turísticos",
+      "codigo": "79.1"
+    },
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    },
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "Lavado y limpieza de prendas de tela y de piel",
+      "codigo": "96.1"
+    },
+    {
+      "descripcion": "Peluquería, tratamientos de belleza, spas y actividades similares",
+      "codigo": "96.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES REGULADORAS Y CONVOCATORIA DE LA CAMPAÑA BONO CONSUMO “ DAYA VIEJA DA MÁS ”",
+  "urlBasesReguladoras": "https://dayavieja.sedelectronica.es/preview-document/3c7adda0-d65d-4966-a320-583e709c884e/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la fecha de finalización del procedimiento de adhesión de establecimientos.",
+  "textFin": "13 de diciembre de 2026 o fecha de fin de la tercera fase, en su caso.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529397,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260929_Otros_Bases de convocatoria_BASES BONO CONSUMO DAYA VIEJA DA MÁS.pdf",
+      "long": 394390,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529400,
+      "descripcion": "ANEXO I Solicitud de adhesión establecimientos en Word",
+      "nombreFic": "20260916_Otros_Anexo 1 (1).docx",
+      "long": 52958,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529399,
+      "descripcion": "ANEXO I Solicitud de adhesión establecimientos en PDF",
+      "nombreFic": "20260916_Otros_Anexo 1 DAYA VIEJA.pdf",
+      "long": 243823,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

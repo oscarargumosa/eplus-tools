@@ -1,0 +1,99 @@
+{
+  "source": "bdns",
+  "source_id": "932609",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCANAR / AYUNTAMIENTO DE ALCANAR",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Anuncio concesión subvenciones, en régimen de concurrencia competitiva, para entidades culturales y sociales municipio de Alcanar (ejercicio 2026)",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-30",
+  "open_date": "2026-11-02",
+  "deadline": "2026-11-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 14000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932609",
+  "documents": [
+    {
+      "label": "Modelo declaración responsable subvenciones a entidades culturales y sociales tm Alcanar",
+      "url": null
+    },
+    {
+      "label": "Resumen contabilidad subvenciones a entidades culturales y sociales tm Alcanar",
+      "url": null
+    },
+    {
+      "label": "Listado gastos e ingresos subvenciones a entidades culturales y sociales",
+      "url": null
+    },
+    {
+      "label": "Modelo autoritzación AEAT i SS solicitud subvención",
+      "url": null
+    },
+    {
+      "label": "Modelo memoria",
+      "url": null
+    },
+    {
+      "label": "Datos bancarios entidad subvenciones a entidades culturales y sociales tm Alcanar",
+      "url": null
+    },
+    {
+      "label": "Solicitud concesión subvenciones a entidades culturales y sociales tm Alcanar",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anuncio DOGC aprobación bases reguladoras concesión subvenciones entidades culturales y sociales",
+      "url": null
+    },
+    {
+      "label": "Anuncio BOPT aprobación bases reguladoras concesión subvenciones entidades culturales y sociales",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/eli/es/l/2003/11/17/38/con",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-01T04:07:04.097Z"
+}

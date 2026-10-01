@@ -1,0 +1,64 @@
+{
+  "id": 1134207,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TORTOSA",
+    "nivel3": "AYUNTAMIENTO DE TORTOSA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932646",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 26000,
+  "mrr": false,
+  "descripcion": "Convocatoria subvenciones Asociaciones de Vecinos 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Reguladoras del procedimiento para la concesion de subvenciones a Asociaciones de Vecinos",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/109872/bases-de-la-convocatoria-del-procediment-per-a-la-concessio-de-subvencions-a-associacions-de-veins-aprovacio-inicial-ajuntament-tortosa",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el dia de la publicación en el BOPT de la presente convocatoria",
+  "textFin": "10 dias a contar desde el dia de la publicación en el BOPT de la presente convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529846,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto 4427.pdf",
+      "long": 302430,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

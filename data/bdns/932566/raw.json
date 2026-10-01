@@ -1,0 +1,72 @@
+{
+  "id": 1134127,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLORAC",
+    "nivel3": "AYUNTAMIENTO DE LLORAC"
+  },
+  "sedeElectronica": "www.llorac.cat",
+  "codigoBDNS": "932566",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7500,
+  "mrr": false,
+  "descripcion": "Convocatoria ayudas individuales estudiantes del municipio - curso 2026-2027",
+  "descripcionLeng": "Convocatòria ajuts individuals estudiants del municipi - curs 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Convocatoria ayudas individuales estudiantes del municipio - curso 2026-2027",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anunci/302265/bases-per-a-la-concessio-d-ajuts-individuals-per-als-estudiants-per-les-despeses-d-adquisicio-de-llibres-matricula-transport-i-altres-aprovacio-definitiva-ajuntament-llorac",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de la fecha de publicación en el Boletín Oficial de la Provincia de Tarragona",
+  "textFin": "28/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529690,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ANUNCI CATALÀ.docx",
+      "long": 11998,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529689,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO CASTELLANO.docx",
+      "long": 11154,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

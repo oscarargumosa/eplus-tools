@@ -1,0 +1,96 @@
+{
+  "id": 1134122,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "AGENCIA VALENCIANA DE SEGURIDAD Y RESPUESTA A LAS EMERGENCIAS (AVSRE)"
+  },
+  "sedeElectronica": "https://sede.gva.es",
+  "codigoBDNS": "932561",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000000,
+  "mrr": false,
+  "descripcion": "Resolución de la Presidencia de la AVSRE, por la que se aprueban las bases reguladoras para la concesión de ayudas destinadas a la implantación y  mantenimiento de la operatividad de planes de emergencia municipales para 2026",
+  "descripcionLeng": "Resolució de la Presidència de l'AVSRE, per la qual s'aproven les bases reguladores per a la concessió d'ajudes destinades a la implantació i el manteniment de l'operativitat de plans d'emergència municipals per a 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades administrativas y auxiliares de oficina",
+      "codigo": "82.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Ley 1/2015, de 6 de febrero, de la Generalitat, de Hacienda Pública, del Sector Instrumental y de Subvenciones",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/eli/es-vc/l/2015/02/06/1/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-13",
+  "textInicio": "Al día siguiente de la publicación en el DOGV",
+  "textFin": "El plazo para la presentación de solicitudes por parte de los ayuntamientos será hasta el 13/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529702,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Reso. Bases + Convocat. PTEM-PAM 13 oct_firmado.pdf",
+      "long": 341242,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529703,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Reso. Bases  + Conv. PTEM-PAM 13 oct 26-008748_trad_firmado.pdf",
+      "long": 347895,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529706,
+      "descripcion": "Fiscalización gasto",
+      "nombreFic": "Informe fiscalizacion.pdf",
+      "long": 118009,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529705,
+      "descripcion": "Documento contable A",
+      "nombreFic": "A 334252 FISC.pdf",
+      "long": 47436,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529704,
+      "descripcion": "Documento contable R",
+      "nombreFic": "R 330920 CONT.pdf",
+      "long": 25460,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

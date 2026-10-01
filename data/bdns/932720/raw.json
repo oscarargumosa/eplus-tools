@@ -1,0 +1,64 @@
+{
+  "id": 1134281,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MURO DE ALCOY",
+    "nivel3": "AYUNTAMIENTO DE MURO DE ALCOY"
+  },
+  "sedeElectronica": "www.vilademuro.net",
+  "codigoBDNS": "932720",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 175098,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 2026-1288 de 30 de septiembre de 2026 de inicio de la Convocatoria del “Bono consumo Muro 2026”, con denominación de campaña “Xe que Bo”.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Ayuntamiento de Muro de Alcoy.",
+  "urlBasesReguladoras": "http://www.dip-alicante.es/bop2/pdftotal/2006/04/15-04-06.pdf#page=22",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-13",
+  "fechaFinSolicitud": "2026-11-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530038,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1288 [DC_A_CONVOCATORIA BONO CONSUMO 2026].pdf",
+      "long": 10130142,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "932598",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MISLATA / AYUNTAMIENTO DE MISLATA",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "Resolución de la Alcaldía nº 3938 de 15 de septiembre - Convocatoria de ayudas económicas a las asociaciones juveniles y entidades prestadoras de servicios a la juventud de Mislata para el desarrollo de programas y/o actividades durante el año 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-09-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932598",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.mislata.es/sites/default/files/2026/Transparencia/Econ%C3%B3mica/Subvenciones/2835610Y%20ASOC.%20JUVENILES/Convocatoria%20-%20Subvenciones%20a%20las%20asociaciones%20juveniles%20pa.pdf",
+  "text_inicio": "A partir del dia siguiente a la publicación del extracto en el BOP de Valencia",
+  "text_fin": "10 días naturales",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-01T04:07:04.093Z"
+}

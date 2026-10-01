@@ -1,0 +1,144 @@
+{
+  "id": 1134170,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCANAR",
+    "nivel3": "AYUNTAMIENTO DE ALCANAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932609",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "Anuncio concesión subvenciones, en régimen de concurrencia competitiva, para entidades culturales y sociales municipio de Alcanar (ejercicio 2026)",
+  "descripcionLeng": "Anunci concessió subvencions, en règim de concurrència competitiva, per a entitats culturals i socials municipi d'Alcanar (exercici 2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ley 38/2003, de 17 de noviembre, General de Subvenciones",
+  "urlBasesReguladoras": "https://www.boe.es/eli/es/l/2003/11/17/38/con",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-02",
+  "fechaFinSolicitud": "2026-11-27",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529767,
+      "descripcion": "Modelo declaración responsable subvenciones a entidades culturales y sociales tm Alcanar",
+      "nombreFic": "3. MODEL_DECLARACIO _RESPONSABLES_(ANNEX_III).pdf",
+      "long": 83357,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529772,
+      "descripcion": "Resumen contabilidad subvenciones a entidades culturales y sociales tm Alcanar",
+      "nombreFic": "4. RESUM COMPTABILITAT (ANNEX IV).pdf",
+      "long": 58203,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529770,
+      "descripcion": "Listado gastos e ingresos subvenciones a entidades culturales y sociales",
+      "nombreFic": "4. LLISTAT DESPESES I INGRESSOS (ANNEX IV).pdf",
+      "long": 77213,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529765,
+      "descripcion": "Modelo autoritzación AEAT i SS solicitud subvención",
+      "nombreFic": "2. MODEL_AUTORITZACIO _AEAT_I_S.SOC._(ANNEX_II).pdf",
+      "long": 91119,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529764,
+      "descripcion": "Modelo memoria",
+      "nombreFic": "1. MODEL_MEMORIA_(ANNEX_I).pdf",
+      "long": 77798,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529773,
+      "descripcion": "Datos bancarios entidad subvenciones a entidades culturales y sociales tm Alcanar",
+      "nombreFic": "5. DADES BANCÀRIES (ANNEX V).pdf",
+      "long": 101000,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529752,
+      "descripcion": "Solicitud concesión subvenciones a entidades culturales y sociales tm Alcanar",
+      "nombreFic": "0. MODEL_SOL·LICITUD_I_JUSTIFICACIO _DE_SUBVENCIONS.pdf",
+      "long": 116238,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529751,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci convocatoria subvencions a entitats socials i culturals ejercicio 2026.pdf",
+      "long": 477333,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529750,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio convocatoria subvenciones a entidades culturales y sociales ejercicio 2026.pdf",
+      "long": 145141,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529836,
+      "descripcion": "Anuncio DOGC aprobación bases reguladoras concesión subvenciones entidades culturales y sociales",
+      "nombreFic": "05-06-2026 - Anunci DOGC aprovació bases subvencions a entitats culturals i socials exercici 2026.pdf",
+      "long": 658823,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529831,
+      "descripcion": "Anuncio BOPT aprobación bases reguladoras concesión subvenciones entidades culturales y sociales",
+      "nombreFic": "27-05-2026 - Anunci BOPT aprovació bases subvencions a entitats culturals i socials exercidci 2026.pdf",
+      "long": 230530,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

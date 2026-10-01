@@ -1,0 +1,104 @@
+{
+  "id": 1133987,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANTABRIA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y UNIVERSIDADES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932426",
+  "fechaRecepcion": "2026-09-30",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Premios de proyectos intermodulares en la  formación profesional del sistema educativo, correspondientes al curso 2025-2026, en centros educativos de la Comunidad Autónoma de Cantabria.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden EDU/25/2026, de 18 de junio, por la que se establecen las bases reguladoras para la concesión de los premios de proyectos intermodulares en la formación profesional del sistema educativo en centros educativos de la Comunidad Autónoma de Cantabria.",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=437212",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "al día siguiente al de publicación en el BOC del extracto de la convocatoria",
+  "textFin": "15 días hábiles a partir del día siguiente al de la publicación del extracto en el B.O.C",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1529344,
+      "descripcion": "Anexo II-Declaración responsable",
+      "nombreFic": "25 Anexo II EDU-48-2026.pdf.xsig.pdf",
+      "long": 141191,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529347,
+      "descripcion": "Anexo IV-Criterios de valoración categorías B y C modalidad a)",
+      "nombreFic": "19 Anexo IV EDU-48-2026.pdf",
+      "long": 147874,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529343,
+      "descripcion": "Anexo I-solicitud",
+      "nombreFic": "24 Anexo I EDU-48-2026.pdf.xsig.pdf",
+      "long": 101807,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529346,
+      "descripcion": "Anexo III-Criterios de valoración categoria A",
+      "nombreFic": "26 Anexo III EDU-48-2026.pdf.xsig.pdf",
+      "long": 103667,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529352,
+      "descripcion": "Anexo V-Criterios de valoración categorias B y C modalidad b)",
+      "nombreFic": "28 Anexo V EDU-48-2026.pdf.xsig.pdf",
+      "long": 108201,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    },
+    {
+      "id": 1529342,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "14. Orden convocatoria EDU-48-2026.pdf",
+      "long": 222627,
+      "datMod": "2026-09-30",
+      "datPublicacion": "2026-09-30"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
