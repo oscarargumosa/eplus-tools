@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932960",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ANDALUCÍA / CONSEJERÍA DE AGRICULTURA, PESCA, AGUA Y DESARROLLO RURAL",
+  "nuts_codes": [
+    "ES61"
+  ],
+  "nuts_primary": "ES61",
+  "title": "Resolución de 1 de octubre de 2026, de la Dirección General de Industrias Agroalimentarias, por la que se convocan para el ejercicio 2026 las ayudas dirigidas a compensar las pérdidas ocasionadas por las inundaciones provocadas por las borrascas",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "10",
+      "descripcion": "Industria alimentaria"
+    }
+  ],
+  "apply_url": "https://juntadeandalucia.es/servicios/sede/tramites/procedimientos/detalle/26007.html",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932960",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://juntadeandalucia.es/eboja/2026/186/c02/BOJA26-218602-00022-12628-01_00343858.pdf",
+  "text_inicio": "Día siguiente a la publicación del extracto",
+  "text_fin": "15 días a partir del día siguiente al de la publicación en BOJA del extracto",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.644Z"
+}

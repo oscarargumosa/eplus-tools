@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "932952",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LANGREO / AYUNTAMIENTO DE LANGREO",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA ENTIDADES SOCIALES SIN ÁNIMO DE LUCRO EN MATERIA DE JUVENTUD, AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "www.langreo.sedelectronica.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932952",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "MODELO DE PROYECTO",
+      "url": null
+    },
+    {
+      "label": "DECLARACIÓN ART. 13 LGS",
+      "url": null
+    },
+    {
+      "label": "FICHA DE TERCEROS",
+      "url": null
+    },
+    {
+      "label": "DECLARACIÓN FICHA TERCEROS",
+      "url": null
+    },
+    {
+      "label": "MEMORIA ECONÓMICA",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.ayto-langreo.es",
+  "text_inicio": " El día siguiente hábil al de la publicación de la convocatoria en el BOPA",
+  "text_fin": " VEINTE DÍAS HÁBILES contados desde el día siguiente hábil al de la publicación en el BOPA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.642Z"
+}

@@ -24,7 +24,7 @@ Proposals should address most of the following aspects:
 
 The participation of start-ups, micro, small and medium-sized enterprises (SMEs)[12] is encouraged with the aim of strengthening their scientific and technological foundations, enhancing their innovation potential, and exploring possibilities for commercial exploitation.
 
-Funded projects should liaise with the future co-funded European Partnership for Brain Health[13] (covered by topic HORIZON-HLTH-2025-02-DISEASE-01: “European Partnership for Brain Health”) once launched.
+Funded projects should liaise with the co-funded European Partnership for Brain Health[13], covered by topic HORIZON-HLTH-2025-02-DISEASE-01: “European Partnership for Brain Health”.
 
 The topic requires the effective contribution of social sciences and humanities (SSH) disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related research activities.
 
@@ -56,6 +56,6 @@ Applicants should provide details of their clinical studies[14] in the dedicated
 
 [12] https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32003H0361
 
-[13] https://www.brainhealth-partnership.eu
+[13] https://cordis.europa.eu/project/id/101259512, https://www.brainhealth-partnership.eu
 
 [14] Please note that the definition of clinical studies (see introduction to this Work Programme part) is broad and it is recommended that you review it thoroughly before submitting your application.

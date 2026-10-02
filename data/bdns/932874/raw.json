@@ -1,0 +1,80 @@
+{
+  "id": 1134435,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCANAR",
+    "nivel3": "AYUNTAMIENTO DE ALCANAR"
+  },
+  "sedeElectronica": "https://alcanar.eadministracio.cat/info.0",
+  "codigoBDNS": "932874",
+  "fechaRecepcion": "2026-10-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 41000,
+  "mrr": false,
+  "descripcion": "Anuncio convocatoria concesión de ayudas económicas, de carácter individual, para servicios de primera infancia y de apoyo a las familias (curso 2025-2026)",
+  "descripcionLeng": "Anunci convocatòria concessió ajuts econòmics, de caràcter indinvidual, per a serveis de primera infància i de suport a les famílies (curs 2025-2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación preprimaria",
+      "codigo": "85.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ley 38/2003, de 17 de noviembre, General de Subvenciones",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/doc.php?id=BOE-A-2003-20977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 días hábiles a contar desde el día siguiente a la publicación en el BOPT",
+  "textFin": "20 días hábiles ac ontar desde el día siguiente a la publicación en el BOPT",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530447,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio convocatoria ayudas 1a infancia y apoyo a las familias tm Alcanar.pdf",
+      "long": 109752,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530477,
+      "descripcion": "Modelo de solicitud de subvención",
+      "nombreFic": "Sol·licitud subvencions primera infància ejercicio 25-26).pdf",
+      "long": 101588,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530450,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci convocatoria concessió subvencions primera infància i suport a les famíiles 2025-2026.pdf",
+      "long": 121230,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

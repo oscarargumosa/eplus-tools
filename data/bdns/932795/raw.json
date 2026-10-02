@@ -1,0 +1,67 @@
+{
+  "id": 1134356,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALICANTE/ALACANT",
+    "nivel3": "AYUNTAMIENTO DE ALICANTE/ALACANT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932795",
+  "fechaRecepcion": "2026-10-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 78000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES DESTINADAS A FILAES Y COMPARSAS DE MOROS Y CRISTIANOS DE LA CIUDAD DE ALICANTE ANUALIDAD 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A COMPARSAS Y FILAES DE MOROS Y CRISTIANOS ANUALIDAD 2026",
+  "urlBasesReguladoras": "https://www.alicante.es/sites/default/files/documentos/202503/07-bases-ejecucion-del-presupuesto-2025",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-02",
+  "fechaFinSolicitud": "2026-11-01",
+  "textInicio": "Día siguiente al de publicación del extracto de la convocatoria en el BOP",
+  "textFin": "Quince días naturales desde el día siguiente al de publicación del extracto de convocatoria en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530305,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRETO_APROBACION_BASES_Y_CONVOCATORIA.pdf",
+      "long": 391757,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

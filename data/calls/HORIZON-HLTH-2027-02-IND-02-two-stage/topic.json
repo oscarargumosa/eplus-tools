@@ -9,8 +9,8 @@
   "programmePeriod": "2021 - 2027",
   "status": "forthcoming",
   "statusCode": "31094501",
-  "opening": "2027-02-10",
-  "deadline": "2027-04-13",
+  "opening": "2026-10-29",
+  "deadline": "2027-02-17",
   "deadlineModel": "two-stage",
   "actionType": "HORIZON Innovation Actions",
   "actionCode": null,
@@ -203,5 +203,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-01T04:03:25.538Z"
+  "fetchedAt": "2026-10-02T04:03:09.885Z"
 }

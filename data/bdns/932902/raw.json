@@ -1,0 +1,224 @@
+{
+  "id": 1134463,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNIDAD DE MADRID",
+    "nivel3": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA E INTERIOR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932902",
+  "fechaRecepcion": "2026-10-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 0.01,
+  "mrr": false,
+  "descripcion": "AYUDAS PROMOCIÓN VINOS TERCEROS PAÍSES FEAGA 2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    },
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "REGLAMENTO UE 2021/2115 POLÍTICA AGRARIA COMÚN",
+  "urlBasesReguladoras": "https://www.boe.es/doue/2021/435/L00001-00186.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCM",
+  "textFin": "UN MES DESDE EL INICIO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAGA - FONDO EUROPEO AGRÍCOLA DE GARANTÍA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530552,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Texto Convocatoria BDNS.pdf",
+      "long": 1421218,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530572,
+      "descripcion": "Anexos  ANEXO ART.13.3",
+      "nombreFic": "Anexos  ANEXO ART.13.3.pdf",
+      "long": 109714,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530554,
+      "descripcion": "Anexos  SOLICITUD PAGO",
+      "nombreFic": "Anexos  SOLICITUD PAGO.pdf",
+      "long": 232415,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530555,
+      "descripcion": "Anexos  FORMULARIO BENEFICIARIO",
+      "nombreFic": "Anexos  FORMULARIO BENEFICIARIO.pdf",
+      "long": 206977,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530556,
+      "descripcion": "Anexos  FORMULARIO PROGRAMA",
+      "nombreFic": "Anexos  FORMULARIO PROGRAMA.pdf",
+      "long": 247758,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530558,
+      "descripcion": "Anexos  Anexo III",
+      "nombreFic": "Anexos  Anexo III.pdf",
+      "long": 103586,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530559,
+      "descripcion": "Anexos  Anexo IV-FASE SOLICITUD",
+      "nombreFic": "Anexos  Anexo IV-FASE SOLICITUD.pdf",
+      "long": 111939,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530560,
+      "descripcion": "Anexos  DECLARACIÓN RESPONSABLE DISPOSICIÓN FONDOS PROPIOS",
+      "nombreFic": "Anexos  DECLARACIÓN RESPONSABLE DISPOSICIÓN FONDOS PROPIOS.pdf",
+      "long": 111170,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530561,
+      "descripcion": "Anexos  RELACION DE OFERTAS MODERACIÓN COSTES",
+      "nombreFic": "Anexos  RELACION DE OFERTAS MODERACIÓN COSTES.pdf",
+      "long": 198671,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530562,
+      "descripcion": "Anexos  DECLARACIÓN RESPONSABLE OTRAS AYUDAS",
+      "nombreFic": "Anexos  DECLARACIÓN RESPONSABLE OTRAS AYUDAS.pdf",
+      "long": 100890,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530563,
+      "descripcion": "Anexos  DECLARACIÓN RESPONSABLE ART. 44",
+      "nombreFic": "Anexos  DECLARACIÓN RESPONSABLE ART. 44.pdf",
+      "long": 173721,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530564,
+      "descripcion": "Anexos  COMUNICACIÓN",
+      "nombreFic": "Anexos  COMUNICACIÓN.pdf",
+      "long": 260770,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530565,
+      "descripcion": "Anexos  SOLICITUD MODIFICACIÓN",
+      "nombreFic": "Anexos  SOLICITUD MODIFICACIÓN.pdf",
+      "long": 241729,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530566,
+      "descripcion": "Anexos  ANEXO VI-PAGO",
+      "nombreFic": "Anexos  ANEXO VI-PAGO.pdf",
+      "long": 178560,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530567,
+      "descripcion": "Anexos  ANEXO-DIETAS",
+      "nombreFic": "Anexos  ANEXO-DIETAS.pdf",
+      "long": 235616,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530568,
+      "descripcion": "Anexos  ANEXO I",
+      "nombreFic": "Anexos  ANEXO I.pdf",
+      "long": 70815,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530569,
+      "descripcion": "Anexos  ANEXO II",
+      "nombreFic": "Anexos  ANEXO II.pdf",
+      "long": 109064,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530570,
+      "descripcion": "Anexos  ANEXO CUADRO CONTROL",
+      "nombreFic": "Anexos  ANEXO CUADRO CONTROL.pdf",
+      "long": 54890,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530571,
+      "descripcion": "Anexos  ANEXO IV- PAGO",
+      "nombreFic": "Anexos  ANEXO IV- PAGO.pdf",
+      "long": 181504,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530553,
+      "descripcion": "Modelo de Solicitud",
+      "nombreFic": "Modelo de Solicitud.pdf",
+      "long": 220607,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

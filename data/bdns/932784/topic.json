@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932784",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / LA RIOJA / CONSEJERÍA DE EDUCACIÓN Y EMPLEO",
+  "nuts_codes": [
+    "ES230"
+  ],
+  "nuts_primary": "ES230",
+  "title": "Ayudas individualizadas de transporte escolar, curso 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 82500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://web.larioja.org/oficina-electronica/tramite?n=02587",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932784",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "anexo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=3067125-1-PDF-499815",
+  "text_inicio": "a partir del día siguiente a la publicación del extracto en el BOR",
+  "text_fin": "diez días hábiles siguientes",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.599Z"
+}

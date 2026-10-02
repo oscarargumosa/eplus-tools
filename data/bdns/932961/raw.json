@@ -1,0 +1,76 @@
+{
+  "id": 1134522,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GÜEÑES",
+    "nivel3": "AYUNTAMIENTO DE GÜEÑES"
+  },
+  "sedeElectronica": "WWW.GUENES.EUS",
+  "codigoBDNS": "932961",
+  "fechaRecepcion": "2026-10-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas para la adquisición de libros de texto, material escolar y equipos informáticos para el segundo ciclo de Educación Infantil, Educación Primaria y Educación Secundaria Obligatoria para el curso 2026-2027",
+  "descripcionLeng": "2026-2027 ikasturterako laguntzen deialdia arautzen duten Haur Hezkuntzako bigarren ziklorako, Lehen Hezkuntzarako eta Derrigorrezko Bigarren Hezkuntzarako testuliburuak, ikasmateriala eta ekipo informatikoak erosteko",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las ayudas para la adquisición de libros de texto, material escolar y equipos informáticos para el segundo ciclo de Educación Infantil, Educación Primaria y Educación Secundaria Obligatoria para el curso 2026-2027",
+  "urlBasesReguladoras": "https://www.guenes.eus/es-ES/Servicios/Accion-Social/Paginas/Compradelibrosdetextoymaterialescolar.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": "2026-10-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530721,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES_AYUDAS_MATERIAL_ESCOLAR_2026-2027_EU.docx",
+      "long": 26962,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530719,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES_AYUDAS_MATERIAL_ESCOLAR_2026-2027.docx",
+      "long": 29522,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

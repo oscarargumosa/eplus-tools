@@ -1,0 +1,96 @@
+{
+  "id": 1134391,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LANGREO",
+    "nivel3": "AYUNTAMIENTO DE LANGREO"
+  },
+  "sedeElectronica": "www.langreo.sedelectronica.es",
+  "codigoBDNS": "932830",
+  "fechaRecepcion": "2026-10-01",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA DE 20 BECAS DE CORRESPONSAL JUVENIL DE LA OFICINA JOVEN DE LANGREO DURANTE EL CURSO ACADÉMICO 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE 20 BECAS DE CORRESPONSAL JUVENIL DE LA OFICINA JOVEN DE LANGREO DURANTE EL CURSO ACADÉMICO 2026/2027",
+  "urlBasesReguladoras": "www.ayto-langreo.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " El día siguiente hábil al de la publicación de la convocatoria en el portal web municipal",
+  "textFin": " VEINTE DÍAS HÁBILES contados desde el día siguiente hábil al de la publicación de la convocatoria ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530360,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES CONVOCATORIA CORRESPONSALES JUVENILES DEL AYUNTAMIENTO DE LANGREO PARA EL CURSO 2026-2027.pdf",
+      "long": 185034,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530363,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "SOLICITUD  CORRESPONSALES JUVENILES 2026-2027.pdf",
+      "long": 88623,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530370,
+      "descripcion": "DECLARACIÓN ART. 13 LGS",
+      "nombreFic": "Declaración responsable artículo 13 Ley Subvenciones.pdf",
+      "long": 234232,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530368,
+      "descripcion": "DECLARACIÓN SOBRE FICHA DE ACREEDORES",
+      "nombreFic": "DECLARACIÓN SOBRE FICHA DE TERCEROS.pdf",
+      "long": 169284,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530366,
+      "descripcion": "FICHA DE ACREEDORES",
+      "nombreFic": "Ficha de Terceros editable.pdf",
+      "long": 111807,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

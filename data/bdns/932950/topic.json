@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "932950",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PUERTOLLANO / AYUNTAMIENTO DE PUERTOLLANO",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "CONVOCATORIA SUBVENCIONES ASOCIACIONES Y COLECTIVOS LOCALES, AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": "2026-10-05",
+  "deadline": "2026-10-27",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://www.puertollano.es/sede-electronica",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932950",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://puertollano.sedelectronica.es/preview-document/147800e4-ac9b-4f5f-b5b6-c93b0526511a/",
+  "text_inicio": "DÍA SIGUIENTE PUBLICACIÓN EN EL BOP CIUDAD REAL",
+  "text_fin": "15 DÍAS HÁBILES DESDE DÍA SIGUIENTE PUBLICACIÓN EN ELBOP CIUDAD REAL",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.641Z"
+}

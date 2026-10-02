@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932862",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COMARCA DE TARAZONA Y EL MONCAYO / COMARCA DE TARAZONA Y EL MONCAYO",
+  "nuts_codes": [
+    "ES243"
+  ],
+  "nuts_primary": "ES243",
+  "title": "AYUDAS A FAMILIAS CON BAJO NIVEL DE RENTA DE LA COMARCA DE TARAZONA Y EL MONCAYO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932862",
+  "documents": [
+    {
+      "label": "Bases y convocatoria - Ayudas a familias con bajo nivel de renta 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://tarazonayelmoncayo.sedelectronica.es/transparency/44cac902-b82f-47d6-bc1f-73c246f2bd0b/",
+  "text_inicio": "Desde el día siguiente a la publicación de la Convocatoria en el Boletín Oficial de la Provincia",
+  "text_fin": "20 días hábiles desde el día siguiente a la publicación en el Boletín Oficial de la Provincia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.627Z"
+}

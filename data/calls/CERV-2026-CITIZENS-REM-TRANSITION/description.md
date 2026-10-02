@@ -1,0 +1,19 @@
+## Objective
+
+1. CERV-2026-CITIZENS-REM-TRANSITION - Remembering democratic transitions, the (re-)building of democratic institutions, and strengthening society based on the rule of law, democracy, and fundamental rights.
+
+The EU is a community of values, and all its Member States committed to respect the principles of democracy, the rule of law, and respect for fundamental rights. Europe's experiences in the 20th century demonstrates the need for resilient democracies and the need for people to actively engage in and protect democratic institutions and values. Historical experience such as in the 1920s and 1930s, when some European democracies went through particularly challenging times, are stark reminders of the importance to promote democracy, also in a historical perspective. Today, democracy faces several challenges, which underlined the need to strengthen public trust in democratic processes and institutions and to recall the importance of democracy in people’s daily life.
+
+Democratic transitions (defined as the transition from a non-democratic to a democratic system, a transition undertaken by several European countries before joining the EU) are not only political and legal processes but also societal transformations.The transition and consolidation of democracies through institutional and legal reforms have been essential. In addition, delivering justice to victims and affected communities after the fall of totalitarian and authoritarian regimes (including communist and fascist dictatorships) can aid in societal healing, bolster and reinforce resilience against present and future threats to democracies.
+
+Projects under this topic can focus on:
+- The ongoing development and nurturing of democracies in the context of past transitions from authoritarian and totalitarian regimes (including communist and fascist dictatorships) across various European countries, reveals important lessons for defending and upholding EU values such as democracy, the rule of law, and fundamental rights.
+- They can also reflect on both shared patterns and national specificities, while underlining the lasting impact of the totalitarian or authoritarian past, and how its difficult legacy continues to be remembered, interpreted, and engaged with today.
+- Examining and giving visibility to acts of resistance and organised opposition to past totalitarian and authoritarian regimes, as part of the ongoing effort to nurture and protect democracy in the face of enduring and emerging challenges.
+- Transition from authoritarian and totalitarian regimes (including communist and fascist dictatorships) towards democracy.
+- Promoting remembrance and education about past events in which fundamental rights such as freedom of expression, assembly, thought, conscience, religion, and electoral rights were suppressed under past totalitarian and authoritarian regimes. These examples serve to reinforce the importance of protecting democratic values today, including the right to express dissenting opinions and ensuring a political space where opposition voices can be freely and safely heard.
+- Exploring the means of historical justice, be it through trials, restitution or amnesty, and possibility still today to work on restorative justice.
+
+The elements described above to strengthen democracies, such as fighting foreign interference, including the manipulation and falsification of historical facts, strengthen citizen engagement, critical thinking, media literacy, and societal resilience, are closely related to the context of remembrance, as they help ensure that the dramatic events of the past are not repeated in contemporary Europe.
+
+For further information about the call and its conditions, please see the Call document.

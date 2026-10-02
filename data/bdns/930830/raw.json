@@ -1,0 +1,72 @@
+{
+  "id": 1132391,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE VIVIENDA"
+  },
+  "sedeElectronica": "https://sede.gva.es/es/",
+  "codigoBDNS": "930830",
+  "fechaRecepcion": "2026-09-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 980000,
+  "mrr": false,
+  "descripcion": "Subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
+  "descripcionLeng": "Subvencions per a la realització de l’informe d’avaluació de l’edifici d’ús residencial de vivenda a la Comunitat Valenciana (IEEV.CV)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de 19 de junio de 2026, por la que se aprueban las bases reguladoras de las subvenciones para la realización del informe de evaluación del edificio de uso residencial de vivienda en la Comunitat Valenciana (IEEV.CV)",
+  "urlBasesReguladoras": "https://dogv.gva.es/es/resultat-dogv?signatura=2026/21494",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE AL DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
+  "textFin": "DOS MESES CONTADOS A PARTIR DEL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL DOGV",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530589,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "resolució convocatoria IEEV.CV 2026_26-008133_trad_firmado.pdf",
+      "long": 431099,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    },
+    {
+      "id": 1530588,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "resolución convocatoria IEEV.CV 2026_firmado.pdf",
+      "long": 435348,
+      "datMod": "2026-10-01",
+      "datPublicacion": "2026-10-01"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

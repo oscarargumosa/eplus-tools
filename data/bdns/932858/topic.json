@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "932858",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / SERVICIO REGIONAL DE EMPLEO Y FORMACIÓN (SEF)",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "Resolución de la Directora General del Servicio Regional de Empleo y Formación, por la que se aprueba la convocatoria 2026 de subvenciones públicas, destinadas a la financiación de proyectos integrales de empleo para colectivos vulnerables.",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    },
+    {
+      "codigo": "88",
+      "descripcion": "Actividades de servicios sociales sin alojamiento"
+    },
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/web/pagina?IDCONTENIDO=4542&IDTIPO=240&RASTRO=c$m40288",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932858",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2024/numero/5358/pdf?id=831341",
+  "text_inicio": "Desde el siguiente al de la publicación en el Borm del extracto de la convocatoria.",
+  "text_fin": "10 días desde el día siguiente al de la publicación del extracto de la convocatoria en el BORM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.625Z"
+}

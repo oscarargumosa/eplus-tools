@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "932978",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CONESA / AYUNTAMIENTO DE CONESA",
+  "nuts_codes": [
+    "ES514"
+  ],
+  "nuts_primary": "ES514",
+  "title": "Convocatoria para la concesión de ayudas económicas, de carácter individual, para la adquisición de libros y material escolar para el alumnado de Conesa. Cursos 2025-2026 y 2026-2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-01",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "https://actio.dipta.cat/catalegserveis/id/4304610007/servei/AT084_ATENC_00001?origen=seu",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932978",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.conesa.cat/sites/conesa/files/recursos/bases_castella.pdf",
+  "text_inicio": "Dia posterior a la publicación de la convocatoria en el BOPT",
+  "text_fin": "30 días naturale a contar a partir del día siguiente de la publicación de la convocatoria en el BOPT",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-02T04:06:32.649Z"
+}
