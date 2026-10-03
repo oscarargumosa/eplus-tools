@@ -1,0 +1,75 @@
+{
+  "id": 1134794,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE BAGES",
+    "nivel3": "CONSELL COMARCAL DE BAGES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933233",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE CONCESIÓN DE SUBVENCIONES PARA LOS PREMIOS A LA CULTURA POPULAR Y TRADICIONAL  - PREMIOS LACETANIA - AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS GENERALES OTORGAMIENTO DE SUBVENCIONES PARA LOS PREMIOS CULTURA POPULAR Y TRADICIONAL - PREMIOS LACETANIA",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3991231/aprovacio-definitiva-de-les-bases-generals-reguladores-per-a-la-concessio-d-una-subvencio-en-regim-de-concurrencia-competitiva-pel-premi-consell-comarcal-del-bages-a-la-cultura-popular-i-tradicional-inclos-dins-del-marc-dels-premis-lacetania-versio-en-catala-i-cas",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-05",
+  "fechaFinSolicitud": "2026-10-16",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531496,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "EDICTE.pdf",
+      "long": 197552,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531495,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "EDICTE.pdf",
+      "long": 197552,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

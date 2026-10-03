@@ -1,0 +1,88 @@
+{
+  "id": 1134606,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DEL MEDIO RURAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933045",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 700000,
+  "mrr": false,
+  "descripcion": "ORDEN de 30 de septiembre de 2026 por la que se establecen las bases reguladoras de las ayudas a las organizaciones profesionales agrarias y asociaciones agrarias para la realización de actividades de interés agrario, y se convocan para el año 2026 (códig",
+  "descripcionLeng": "ORDE do 30 de setembro de 2026 pola que se establecen as bases reguladoras das axudas ás organizacións profesionais agrarias e asociacións agrarias para a realización de actividades de interese agrario, e se convocan para o ano 2026 (código de procedement",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha",
+      "codigo": "01.6"
+    },
+    {
+      "descripcion": "Producción agrícola combinada con la producción ganadera",
+      "codigo": "01.5"
+    },
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "ORDEN de 30 de septiembre de 2026 por la que se establecen las bases reguladoras de las ayudas a las organizaciones profesionales agrarias y asociaciones agrarias para la realización de actividades de interés agrario, y se convocan para el año 2026 (códig",
+  "urlBasesReguladoras": "https://www.xunta.gal/diario-oficial-galicia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación en el DOG",
+  "textFin": "Un mes desde la publicación en el DOG ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530990,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Orden OPAS 2026 cast_20261002_101011.pdf",
+      "long": 330936,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530992,
+      "descripcion": "Anexo cast",
+      "nombreFic": "MR321A-C_20261002_101056.pdf",
+      "long": 118665,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530991,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Orde OPAS 2026 gal_20261002_101033.pdf",
+      "long": 451130,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

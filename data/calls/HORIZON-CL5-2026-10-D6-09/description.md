@@ -23,7 +23,7 @@ Research should support addressing these challenges by undertaking all the follo
 
 Projects should select those regions ensuring diversity in terms of road network design, geography and climate conditions, and road safety culture. At least two of those regions should be in countries with higher percentage of fatalities on rural roads than the EU average. The involvement of road authorities is strongly recommended.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B.
 

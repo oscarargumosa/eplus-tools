@@ -22,7 +22,7 @@ Proposals submitted under this topic should include a business case and exploita
 
 International cooperation is encouraged with countries with which the EU has signed Strategic Partnerships on raw materials, especially with Ukraine.[1]
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 5 and achieve TRL 7 by the end of the project – see General Annex B.
 

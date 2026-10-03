@@ -7,7 +7,7 @@
 
 ## Scope
 
-Most processes in the process industries require significant energy inputs which currently lead to substantial CO2 emissions by the process industries. The reduction of the CO2 footprint can be achieved by several measures, e.g. electrification or use of other renewable sources of energy, lowering of the energy demand, increasing energy efficiency, and energy integration. This topic aims to lead to significant steps in reducing the CO2 footprint by technological innovations, at least by 20%.
+Most processes in the process industries require significant energy inputs which currently lead to substantial GHG (greenhouse gas) emissions by the process industries. The reduction of the CO2 footprint can be achieved by several measures, e.g. electrification or use of other renewable sources of energy, lowering of the energy demand, increasing energy efficiency, and energy integration. This topic aims to lead to significant steps in reducing the CO2 footprint by technological innovations, at least by 20%.
 
 A key problem in the use of renewable energy sources is their fluctuation over time. Projects should take this into account and develop solutions that aim for energy efficiency and include novel storage technologies of relevance to the process industries. Pure demand-side management by production schedules adapted to the supply of electricity from renewable sources is not within the scope of the call.
 
@@ -32,7 +32,7 @@ Proposals should include a business case and exploitation strategy, as outlined 
 
 This topic implements the co-programmed European partnerships Processes4Planet and Innovative Advanced Materials for the EU.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 4-5 and achieve TRL 6-7 by the end of the project – see General Annex B.
 

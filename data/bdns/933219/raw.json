@@ -1,0 +1,72 @@
+{
+  "id": 1134780,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'EMPRESA I TREBALL  "
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933219",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000000,
+  "mrr": false,
+  "descripcion": "Proyectos singulares de la economia social y solidaria y el cooperativismo en Cataluña 2026 (L2)",
+  "descripcionLeng": "Projectes singulars de l'economia social i solidària i el cooperativisme a Catalunya 2026 (L2)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden EMT/127/2026, de 29 de junio, por la que se aprueban las bases reguladoras que deben regir la convocatoria de subvenciones a proyectos singulares de la economía social y solidaria, y el cooperativismo en Cataluña",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1048607",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "10 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531462,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "0_Convo_Singulars_2026_V5__L2_dades_Ordre_sgoad_aapsps_ajT_CORR_Tys_def_CA_eCòpiaT.pdf",
+      "long": 779223,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531461,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Convo Singulars 2026_V5_ L2_dades Ordre_sgoad_aapsps_ajT_CA_ES_Tys_defT.pdf",
+      "long": 118245,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

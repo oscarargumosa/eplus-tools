@@ -25,6 +25,6 @@ Proposals must plan for an active collaboration amongst the projects selected un
 
 If the proposed solutions use position, navigation, and/or timing (PNT) services or data, the beneficiaries must make use of Galileo (other GNSS may additionally be used). Where appropriate, Galileo services such as OSNMA (Open Service Navigation Message Authentication) and HAS (High Accuracy Service) should also be utilised.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.

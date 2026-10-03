@@ -1,0 +1,72 @@
+{
+  "id": 1134558,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALLIRANA",
+    "nivel3": "AYUNTAMIENTO DE VALLIRANA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "932997",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "VELADORES/AS EN EL SERVICIO DE COMEDOR ESCOLAR DE LAS ESCUELAS PÚBLICAS DE VALLIRANA, PARA ALUMNOS/AS CON NECESIDADES ESPECÍFICAS DE APOYO EDUCATIVO (NESE), PARA EL CURSO ESCOLAR 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "AJUTS AMPA/AFA SUPORT VETLLADORS/ES MENJADORS ESCOLARS CURS 2020-21",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3100722/aprovacio-definitiva-de-les-bases-per-a-sol-licitar-i-atorgarsubvencions- destinades-a-les-ampa-afa-per-al-suport-de-vetlladors-es-en-el-servei-de-menjadorescolar- de-les-escoles-publiques-per-a-alumnes-amb-necessitats-",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-01",
+  "fechaFinSolicitud": "2026-10-20",
+  "textInicio": "Uno de octubre de 2026",
+  "textFin": "Veinte de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530846,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "20260703_Uns_altres_Convocatòria_ajuts_AFA_servei_vetlladors_menjador_escolar_25-26__vcat.pdf",
+      "long": 185001,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530845,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "20260703_Uns_altres_Convocatoria_ayudas_AFA_servicio_veladores_comedor_escolar_25-26_vcast.pdf",
+      "long": 129418,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

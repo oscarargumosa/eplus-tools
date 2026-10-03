@@ -1,0 +1,64 @@
+{
+  "id": 1134824,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BENETÚSSER",
+    "nivel3": "AYUNTAMIENTO DE BENETÚSSER"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933263",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Anuncio del Ayuntamiento de Benetússer sobre la convocatoria para la concesión de ayudas para la participación de personas con discapacidad de Benetússer, escolarizadas en centros de educación especial, centros ocupacionales. Ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad",
+      "codigo": "88.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Las bases reguladoras de las presentes ayudas vienen establecidas en la ordenanza general por la que se aprueban las bases reguladoras de las subvenciones que se concedan por el Ayuntamiento (BOP de Valencia nº 26, de fecha 8 de febrero de 2022).",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2022/00821&lang=va",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": " desde el día siguiente a la publicación de la presente convocatoria en el BOP ",
+  "textFin": "10 días, a contar desde el siguiente a la publicación de la presente convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531568,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO APROBACION CONVOCATORIA - SEFYCU 8683651 (1).pdf",
+      "long": 509568,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

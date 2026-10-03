@@ -1,0 +1,71 @@
+{
+  "source": "bdns",
+  "source_id": "933148",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE URBANISMO, ORDENACIÓN DEL TERRITORIO Y AGENDA URBANA",
+  "nuts_codes": [
+    "ES43"
+  ],
+  "nuts_primary": "ES43",
+  "title": "Premios 2026 de Arquitectura y Urbanismo de Extremadura  a municipios, personas físicas o jurídicas y entidades según resolución de fecha  29 de julio de 2026 de la Secretaria General de la Consejería de Infraestructuras, Transporte y Vivienda",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-10-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 28000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "71.1",
+      "descripcion": "Servicios técnicos de arquitectura e ingeniería y otras actividades relacionadas con el asesoramiento técnico"
+    }
+  ],
+  "apply_url": "https://www.juntaex.es/w/0606222",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933148",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    },
+    {
+      "label": "Anexos",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/pdfs/doe/2024/1930o/24040178.pdf",
+  "text_inicio": "Día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+  "text_fin": "1 mes a contar desde el siguiente a la publicac.convocatoria y su extracto DOE",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-03T04:05:47.082Z"
+}

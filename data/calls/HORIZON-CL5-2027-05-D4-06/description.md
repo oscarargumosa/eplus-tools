@@ -14,7 +14,7 @@ Proposals should address all of the following:
 
 Projects funded under this topic are encouraged to build synergies and leverage their outcomes with funded projects from Cluster 4 HORIZON-CL4-2027-04-DATA-09: Energy efficiency and sustainability of AI data processing in Data Centres (IA) demonstration pilots.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

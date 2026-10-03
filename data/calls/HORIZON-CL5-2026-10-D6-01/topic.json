@@ -29,8 +29,8 @@
     "HORIZON-CL5-2026-10"
   ],
   "crossCuttingPriorities": [
-    "PART-COPROGR",
     "DigitalAgenda",
+    "PART-COPROGR",
     "SSH",
     "AI"
   ],
@@ -165,5 +165,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-02T04:03:08.957Z"
+  "fetchedAt": "2026-10-03T04:02:22.870Z"
 }

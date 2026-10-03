@@ -1,0 +1,72 @@
+{
+  "id": 1134647,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASARES",
+    "nivel3": "AYUNTAMIENTO DE CASARES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933086",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 de Ayudas Extraordinarias para el Pintado de Fachadas, reguladas mediante, la Ordenanza nº 78",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES617 - Málaga"
+    }
+  ],
+  "descripcionFinalidad": "Infraestructuras",
+  "descripcionBasesReguladoras": "ORDENANZA REGULADORA NÚMERO 78 DE AYUDAS EXTRAORDINARIAS PARA EL PINTADO DE FACHADAS",
+  "urlBasesReguladoras": "https://www.bopmalaga.es/edicto.php?edicto=20200710-03665-2020&control=570773833",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-15",
+  "textInicio": "DÍA DESPUES A LA PUBLICACIÓN DEL EXTRACTO EN BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531138,
+      "descripcion": "BASES REGULADORAS",
+      "nombreFic": "20260513_Otros_78.- AYUDA PINTURA FACHADAS.pdf",
+      "long": 314301,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531135,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261001_Resolución_DECRETO 2026-1376 [Resolución PR_2026_708 - Actuación genérica con fiscalización].pdf",
+      "long": 894095,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

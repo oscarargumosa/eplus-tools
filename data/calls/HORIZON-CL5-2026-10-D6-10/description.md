@@ -23,6 +23,6 @@ Proposed actions are expected to address all of the following aspects:
 
 Proposals are encouraged to building on results from previous calls on infrastructure and transport resilience (e.g. HORIZON-CL5-2024-D6-01-11, MG-7-1-2017, HORIZON-CL5-2021-D6-01-09), multimodal traffic management (e.g. HORIZON-CL5-2022-D6-02-05, MG-2-11-2020), shared mobility and public transport (e.g. HORIZON-CL5-2022-D6-02-04, HORIZON-MISS-2021-CIT-02-02). Proposals should also comply with existing EU framework and strategies and building upon the concepts and solutions developed in other Union initiatives aimed to facilitate data sharing in transport, such as the European mobility data space (EMDS). Particular efforts should be made to ensure that the data produced in the context of this topic is FAIR (Findable, Accessible, Interoperable and Re-usable).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B.

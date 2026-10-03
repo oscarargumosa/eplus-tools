@@ -31,7 +31,7 @@ This topic implements the co-programmed European Partnership on Batteries (Batt4
 
 This topic contributes to the industrial action plan for the automotive sector.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B.
 

@@ -25,6 +25,6 @@ Proposals should include a business case and exploitation strategy, as outlined 
 
 This topic implements the co-programmed European Partnership Textiles for the Future.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
  Activities are expected to start at TRL 5 and achieve TRL 6-7 by the end of the project – see General Annex B.

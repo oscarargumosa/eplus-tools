@@ -22,6 +22,6 @@ Proposals should include a business case and exploitation strategy, as outlined 
 
 This topic implements the co-programmed European Partnerships Made in Europe and AI, Data and Robotics.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 4-5 and achieve TRL 6 by the end of the project – see General Annex B.

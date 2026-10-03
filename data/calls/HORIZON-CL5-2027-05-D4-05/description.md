@@ -16,6 +16,6 @@ The rate of deep renovation of buildings can be accelerated by modernising the c
 
 Selected proposals could consider the involvement of the European Commission's Joint Research Centre (JRC) whose contribution could consist of scientific advice and technical analysis of solutions and technologies, support to the transfer of research output to standards, and access to the European Laboratory for Structural Assessment research infrastructure for full-scale testing of buildings.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.

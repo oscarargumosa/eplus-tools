@@ -1,0 +1,94 @@
+{
+  "id": 1134839,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONACHIL",
+    "nivel3": "AYUNTAMIENTO DE MONACHIL"
+  },
+  "sedeElectronica": "https://monachil.sedelectronica.es/info.0",
+  "codigoBDNS": "933278",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "BASES Y CONVOCATORIA DE SUBVENCIONES DEL AYUNTAMIENTO DE MONACHIL PARA LA ELABORACIÓN DE CARROZAS Y PARTICIPACIÓN EN LA CABALGATA DE LOS REYES MAGOS DE 2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES Y CONVOCATORIA DE SUBVENCIONES DEL AYUNTAMIENTO DE MONACHIL PARA LA ELABORACIÓN DE CARROZAS Y PARTICIPACIÓN EN LA CABALGATA DE LOS REYES MAGOS DE 2027.",
+  "urlBasesReguladoras": "https://monachil.sedelectronica.es/transparency",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE PUBLICACIÓN EN BOP",
+  "textFin": "VEINTE DÍAS DESPUÉS DE PUBLICACIÓN EN BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531598,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20260921_Otros_Bases Subvención Cabalgata 2027.pdf",
+      "long": 443925,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531601,
+      "descripcion": "ANEXO III",
+      "nombreFic": "20260921_Anexo III-Justificación.pdf",
+      "long": 408174,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531600,
+      "descripcion": "ANEXO II",
+      "nombreFic": "20260921_Otros_Anexo II-Ac_Ref_Ren.pdf",
+      "long": 484955,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531599,
+      "descripcion": "ANEXO I",
+      "nombreFic": "20260921_Otros_Anexo I-Solicitud.pdf",
+      "long": 503504,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

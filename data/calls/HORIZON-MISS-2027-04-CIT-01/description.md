@@ -27,7 +27,7 @@ The projects under this topic shall be open to cooperate with each other on rele
 
 Proposals should build on previous projects, notably Horizon Europe project Shift2DC, as well as HYPERRIDE, TIGON, HYNET and THEUS. Collaboration with the Cities Mission Platform is essential. The collaboration with the Cities Mission Platform must be formalized through a Memorandum of Understanding to be concluded as soon as possible after the project starting date. Under the guidance of the Cities Mission Platform, the selected projects will engage in clustering activities with other relevant projects supported under the Cities Mission, such as the ones on PED digital twins, to promote synergies and complementarities. Proposals should ensure that appropriate provisions for activities and resources aimed at enforcing clustering activities and cooperation with the Cities Mission Platform are included in the work-plan.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
 

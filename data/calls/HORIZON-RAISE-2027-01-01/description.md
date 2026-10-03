@@ -30,9 +30,7 @@ Proposals should demonstrate close interdisciplinary collaboration of computer/A
 
 While the scope of this call prioritises software development, it does not exclude the justified purchase of complementary equipment necessary to implement the research targets of the project.
 
-An initial focus on materials science is put forward (Cluster 4). Impact areas of automated experimentation in this field could include (non-exhaustively) drug discovery, battery technologies, photovoltaics, carbon capture/storage, water purification, soil remediation, environmentally friendly fertilizers, development of alternative protein sources in food production, sustainable fabrics/dyes.
-
-The thematic focus of this topic can be expanded to include scientific disciplines and experimental settings of interest to collaborating clusters.
+The focus of this topic is on any aspect of materials science. Impact areas of automated experimentation in this field could include, non-exhaustively, battery technologies, photovoltaics, carbon capture/storage, water purification, soil remediation, drug discovery or sustainable fabrics.
 
 International collaboration is encouraged.
 

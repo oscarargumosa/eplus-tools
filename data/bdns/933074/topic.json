@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "933074",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CASTALLA / AYUNTAMIENTO DE CASTALLA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA SUBVENCIÓN-AYUDAS ECONÓMICAS DIRECTAS A CIUDADANOS DE CASTALLA A TRAVÉS DE TARJETAS REGALO PARA SU GASTO EN ESTABLECIMIENTOS DE CASTALLA CON EL FIN DE PROMOVER EL CONSUMO EN EL COMERCIO LOCAL, ANUALIDAD 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 207506,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    },
+    {
+      "codigo": "95",
+      "descripcion": "Reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas"
+    },
+    {
+      "codigo": "56",
+      "descripcion": "Servicios de comidas y bebidas"
+    },
+    {
+      "codigo": "96",
+      "descripcion": "Servicios personales"
+    }
+  ],
+  "apply_url": "https://carpeta.castalla.org/eAdmin/Sede.do",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933074",
+  "documents": [
+    {
+      "label": "REGLAMENTO DE AYUDAS DIRECTAS A LOS CIUDADANOS DE CASTALLA A TRAVÉS DE TARJETAS REGALO PARA SU GASTO EN ESTABLECIMIENTOS DE CASTALLA CON EL FIN DE PROMOVER EL CONSUMO EN EL COMERCIO LOCAL",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2024/10/04_192/2024_007974.pdf",
+  "text_inicio": "Día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial de la Provincia",
+  "text_fin": "A los 10 días hábiles desde el inicio, o hasta finalización crédito consignado",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-03T04:05:47.068Z"
+}

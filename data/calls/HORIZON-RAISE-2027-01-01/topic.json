@@ -3,26 +3,26 @@
   "ccm2Id": "50131748",
   "callIdentifier": "HORIZON-RAISE-2027-01",
   "callTitle": "AI in Science",
-  "title": "Automated Scientific Discovery (RAISE pilot) (RIA)",
+  "title": "Automated Scientific Discovery - Materials Science (RAISE pilot) (RIA)",
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
   "status": "forthcoming",
   "statusCode": "31094501",
-  "opening": "2026-09-22",
+  "opening": "2026-10-13",
   "deadline": "2027-02-02",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON  Research and Innovation Actions",
   "actionCode": null,
   "mgaCode": null,
   "budget": {
-    "total_eur": 32000000,
+    "total_eur": 29500000,
     "by_year": {
-      "2027": 32000000
+      "2027": 29500000
     },
     "expected_grants": 3,
-    "min_contribution_eur": 10000000,
-    "max_contribution_eur": 10000000
+    "min_contribution_eur": 9000000,
+    "max_contribution_eur": 9000000
   },
   "keywords": [
     "HORIZON-RAISE-2027-01-01",
@@ -177,5 +177,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-02T04:03:07.600Z"
+  "fetchedAt": "2026-10-03T04:02:24.942Z"
 }

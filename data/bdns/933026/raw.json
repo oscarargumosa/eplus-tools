@@ -1,0 +1,88 @@
+{
+  "id": 1134587,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTIAGO DE COMPOSTELA",
+    "nivel3": "AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA"
+  },
+  "sedeElectronica": "https://sede.santiagodecompostela.gal",
+  "codigoBDNS": "933026",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 400000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones de cooperación al desarrollo, ejercicio 2026.",
+  "descripcionLeng": "Convocatoria de subvencións de cooperación ao desenvolvemento, exercicio 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades asociativas",
+      "codigo": "94.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "Bases reguladoras da convocatoria para a concesión, en réxime de concorrencia competitiva, de subvencións de cooperación ao desenvolvemento no Concello de Santiago de Compostela. Exercicio 2026.",
+  "urlBasesReguladoras": "https://sede.santiagodecompostela.gal/sta/docs/GetDocumentServlet?CUD=16337317446747662425&HASH_CUD=6b89d45cecfb22076da0d5e3b4fce68421bf07a7&APP_CODE=STA",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles contados a partir del día siguiente al de publicación de la Convocatoria en el BOP",
+  "textFin": "10 días hábiles.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530941,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto de la convocatoria_es.PDF",
+      "long": 151745,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530944,
+      "descripcion": "Extracto de la convocatoria_es",
+      "nombreFic": "Extracto de la convocatoria_es.PDF",
+      "long": 151745,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530943,
+      "descripcion": "Extracto da convocatoria_galego",
+      "nombreFic": "Extracto da convocatoria_galego.PDF",
+      "long": 145497,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530942,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Extracto da convocatoria_galego.PDF",
+      "long": 145497,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

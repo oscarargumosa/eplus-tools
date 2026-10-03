@@ -1,0 +1,84 @@
+{
+  "id": 1134635,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTALLA",
+    "nivel3": "AYUNTAMIENTO DE CASTALLA"
+  },
+  "sedeElectronica": "https://carpeta.castalla.org/eAdmin/Sede.do",
+  "codigoBDNS": "933074",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 207506,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIÓN-AYUDAS ECONÓMICAS DIRECTAS A CIUDADANOS DE CASTALLA A TRAVÉS DE TARJETAS REGALO PARA SU GASTO EN ESTABLECIMIENTOS DE CASTALLA CON EL FIN DE PROMOVER EL CONSUMO EN EL COMERCIO LOCAL, ANUALIDAD 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    },
+    {
+      "descripcion": "Reparación y mantenimiento de ordenadores, artículos personales y enseres domésticos y vehículos de motor y motocicletas",
+      "codigo": "95"
+    },
+    {
+      "descripcion": "Servicios de comidas y bebidas",
+      "codigo": "56"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "REGLAMENTO DE AYUDAS DIRECTAS A LOS CIUDADANOS DE CASTALLA A TRAVÉS DE TARJETAS REGALO PARA SU GASTO EN ESTABLECIMIENTOS DE CASTALLA CON EL FIN DE PROMOVER EL CONSUMO EN EL COMERCIO LOCAL",
+  "urlBasesReguladoras": "https://www.dip-alicante.es/bop2/pdftotal/2024/10/04_192/2024_007974.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial de la Provincia",
+  "textFin": "A los 10 días hábiles desde el inicio, o hasta finalización crédito consignado",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531041,
+      "descripcion": "REGLAMENTO DE AYUDAS DIRECTAS A LOS CIUDADANOS DE CASTALLA A TRAVÉS DE TARJETAS REGALO PARA SU GASTO EN ESTABLECIMIENTOS DE CASTALLA CON EL FIN DE PROMOVER EL CONSUMO EN EL COMERCIO LOCAL",
+      "nombreFic": "Reglamento ayudas directas ciudadanos Castalla con tarjetas regalo para gasto en establecimiento local para fomento consumo en comercio local.pdf",
+      "long": 936269,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531040,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto 1273_2026 de CONVOCATORIA ayudas económicas con tarjetas regalo para fomento consumo local.pdf",
+      "long": 271875,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

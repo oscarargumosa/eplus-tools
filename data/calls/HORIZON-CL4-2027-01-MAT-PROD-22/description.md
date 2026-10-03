@@ -29,7 +29,7 @@ Proposals are encouraged to cooperate with relevant projects. Where relevant, pr
 
 This topic implements the co-programmed European partnerships Innovative Advanced Materials for the EU (IAM4EU) and Processes4Planet.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 5 and achieve TRL 7 by the end of the project – see General Annex B.
 

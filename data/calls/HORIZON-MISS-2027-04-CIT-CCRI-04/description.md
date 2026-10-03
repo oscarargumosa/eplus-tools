@@ -24,7 +24,7 @@ Collaboration with the Cities Mission Platform – through the CIVITAS initiativ
 
 This action supports the follow-up to the July 2023 Communication on EU Missions assessment[8].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
 

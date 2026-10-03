@@ -1,0 +1,80 @@
+{
+  "id": 1134592,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMENDRO, EL",
+    "nivel3": "AYUNTAMIENTO DE ALMENDRO, EL"
+  },
+  "sedeElectronica": "https://aytoelalmendro.sedelectronica.es/info.0",
+  "codigoBDNS": "933031",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS A LA ADQUISICIÓN DE LA PRIMERA VIVIENDA. AÑO 2026.",
+  "descripcionLeng": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS A LA ADQUISICIÓN DE LA PRIMERA VIVIENDA. AÑO 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES615 - Huelva"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN MATERIA DE AYUDAS A LA ADQUISICIÓN DE LA PRIMERA VIVIENDA. AÑO 2026.",
+  "urlBasesReguladoras": "https://sede.diphuelva.es/opencms/system/modules/gsede/elements/contenido/BOP.jsp",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente a la publicación del extracto de la convocatoria en el BOP.",
+  "textFin": "Veinte días desde la publicación del extracto de la convocatoria en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1530913,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto Convocatoria 2026.pdf",
+      "long": 448982,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530917,
+      "descripcion": "REGLAMENTO",
+      "nombreFic": "REGLAMENTO REGULADOR DE AYUDAS A LA PRIMERA VIVIENDA HABITUAL-2-1.pdf",
+      "long": 235620,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1530914,
+      "descripcion": "anexos I y II",
+      "nombreFic": "anexos I y II.pdf",
+      "long": 88316,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

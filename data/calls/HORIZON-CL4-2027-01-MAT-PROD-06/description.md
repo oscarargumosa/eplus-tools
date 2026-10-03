@@ -25,7 +25,7 @@ Proposals should include a business case and exploitation strategy, as outlined 
 
 This topic implements the co-programmed European Partnerships Innovative Advanced Materials for the EU (IAM4EU) and Made in Europe (MiE).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 4-5 and achieve TRL 6 by the end of the project – see General Annex B.
 

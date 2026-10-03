@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "932582",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÓRDOBA / AYUNTAMIENTO DE CÓRDOBA",
+  "nuts_codes": [
+    "ES613"
+  ],
+  "nuts_primary": "ES613",
+  "title": "CONVOCATORIA DE AYUDAS ECONÓMICAS PARA OBRAS DE MEJORA DE ACCESIBILIDAD, ADECUACIÓN FUNCIONAL, ELABORACIÓN DE LA INSPECCIÓN TÉCNICA DEL EDIFICIO (ITE) Y OBRAS DE EMERGENCIA DE EDIFICIOS Y VIVIENDAS",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-09-30",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932582",
+  "documents": [
+    {
+      "label": "Acuerdo JGL 1126/26",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.vimcorsa.com",
+  "text_inicio": "A partir del día siguiente a la publicación en el B.O.P",
+  "text_fin": "30 días naturales desde el día siguiente a la publicación en el B.O.P. de la provincia",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-03T04:05:46.931Z"
+}

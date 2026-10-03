@@ -30,7 +30,7 @@ Collaboration with the Cities Mission Platform is essential and should take plac
 
 This topic requires the effective contribution of social sciences and humanities (SSH) disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related research activities.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities and pilot demonstrations of technological nature of the proposed solutions in operational environment are expected to be at minimum TRL 8 by the end of the project – see General Annex B.
 

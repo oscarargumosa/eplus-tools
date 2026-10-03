@@ -1,0 +1,76 @@
+{
+  "id": 1134667,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONFORTE DEL CID",
+    "nivel3": "AYUNTAMIENTO DE MONFORTE DEL CID"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933106",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 900,
+  "mrr": false,
+  "descripcion": "CONCESIÓN DE SUBVENCIONES PARA LA ELECCIÓN DEL CARTEL ANUNCIADOR DE FIESTAS MOROS Y CRISTIANOS, ANUALIDAD 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA",
+      "codigo": "P"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL REGULADORA DE SUBVENCIONES. Aprobación Pleno 14 de enero de 2021 (BOP nº 57, 25-03-2021)",
+  "urlBasesReguladoras": "http://www.dip-alicante.es/bop2-pdftotal/2021/03/25_57/2021_003355.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación de la convocatoria en las bases en el B.O.P de Alicante",
+  "textFin": "A LAS 14:00 HORAS DEL 15 DE OCTUBRE DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531163,
+      "descripcion": "ANEXO I,(DECLARACIÓN RESPONSABLE) ANEXO II (SOLICITUD INSCRIPCIÓN)  Y ANEXO III (MANTENIMIENTO DE TERCEROS)",
+      "nombreFic": "ANEXOS M 2026-Cartel de Fiestas.pdf",
+      "long": 616605,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    },
+    {
+      "id": 1531158,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-1217 [DECRETO AVOCACION CARTEL FIESTAS 2026].pdf",
+      "long": 458843,
+      "datMod": "2026-10-02",
+      "datPublicacion": "2026-10-02"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

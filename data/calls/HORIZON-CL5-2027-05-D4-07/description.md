@@ -15,7 +15,7 @@ Proposals should address all of the following:
 
 This topic implements the co-programmed European Partnership on ‘People-centric sustainable built environment’ (Built4People). As such, projects resulting from this topic will be expected to contribute to the objectives of Built4People, transfer knowledge to its network of innovation clusters[1] and report on results in support of the monitoring of the Built4People KPIs.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

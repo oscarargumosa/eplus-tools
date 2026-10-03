@@ -9,18 +9,18 @@
   "programmePeriod": "2021 - 2027",
   "status": "forthcoming",
   "statusCode": "31094501",
-  "opening": "2026-09-22",
+  "opening": "2026-10-13",
   "deadline": "2027-02-02",
   "deadlineModel": "single-stage",
   "actionType": "HORIZON Innovation Actions",
   "actionCode": null,
   "mgaCode": null,
   "budget": {
-    "total_eur": 224000000,
+    "total_eur": 224700000,
     "by_year": {
-      "2027": 224000000
+      "2027": 224700000
     },
-    "expected_grants": 25,
+    "expected_grants": 24,
     "min_contribution_eur": 10000000,
     "max_contribution_eur": 12500000
   },
@@ -191,5 +191,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-02T04:03:09.406Z"
+  "fetchedAt": "2026-10-03T04:02:24.686Z"
 }
