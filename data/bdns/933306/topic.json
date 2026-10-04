@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "933306",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DÉNIA / AYUNTAMIENTO DE DÉNIA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Convocatoria de Ayudas para la adquisición de libros de texto y material escolar de Infantil primer y segundo ciclo para el curso 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-03",
+  "open_date": "2026-10-08",
+  "deadline": "2026-10-16",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 20000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85",
+      "descripcion": "Educación"
+    }
+  ],
+  "apply_url": "www.ayto-denia.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933306",
+  "documents": [
+    {
+      "label": "Bases de Convocatoria ayudas libros 2026",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.ayto-denia.es",
+  "text_inicio": "Desde el día siguiente a la publicación del extracto en el BOP de Alicante por conducto de la BDNS",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-04T04:07:44.232Z"
+}
