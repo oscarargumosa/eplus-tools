@@ -1,0 +1,80 @@
+{
+  "id": 1134916,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MISLATA",
+    "nivel3": "AYUNTAMIENTO DE MISLATA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933355",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Aprobacion convocatoria de concesión de prestaciones económicas individualizadas en materia de servicios sociales: ayudas para familias monoparentales y en situación de monoparentalidad para el ejercicio de 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Aprobacion convocatoria de concesión de prestaciones económicas individualizadas en materia de servicios sociales: ayudas para familias monoparentales y en situación de monoparentalidad para el ejercicio de 2026",
+  "urlBasesReguladoras": "https://www.mislata.es/es/administracion/subvenciones/convocatorias-de-subvenciones-en-tramitacion/ayudas-para-familias-monoparentales-y-en-situacion-de-monoparentalidad-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El inmediato día hábil siguiente de la  publicación del extracto",
+  "textFin": "Un mes, a contar desde el inmediato día hábil siguiente de la  publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531785,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto convocatoria ayudas familias monoparentales - SEFYCU 8667158.pdf",
+      "long": 289162,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531787,
+      "descripcion": "Resolucion Alcaldia",
+      "nombreFic": "Resolución Nº 4103 de 25_09_2026 _Decreto aprobación convocatoria ayudas familias monoparentales_ - SEGRA 1236885.pdf",
+      "long": 444181,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531786,
+      "descripcion": "Convocatoria",
+      "nombreFic": "Convocatoria ayudas familias monoparentales - SEFYCU 8560559.pdf",
+      "long": 450227,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -9,7 +9,7 @@ In the recent years, hardware for Virtual Worlds made major breakthroughs, democ
 
 Proposals should investigate novel scientific approaches or push the limit of existing ones to improve the synchronization and integration of the different modalities.
 
-Proposals will integrate various components in fully tested devices, demonstrating the usefulness and efficiency of their system in illustrative scenarios in the industrial and societal contexts.
+Proposals are expected to integrate various components in fully tested devices, demonstrating the usefulness and efficiency of their system in illustrative scenarios in the industrial and societal contexts.
 
 Proposals should focus on performant, reliable, miniaturised, interoperable advanced and innovative technologies, with inclusivity, energy consumption and energy efficiency at the centre of concerns.
 
@@ -17,12 +17,10 @@ This topic requires the effective contribution of SSH disciplines and the involv
 
 The Consortium should pay attention to developing solutions that are reliable, robust and interoperable. Proposals should leverage existing open standards and technologies in the domain of Virtual Worlds, while contributing to ongoing standardisation work.
 
-Beneficiaries that intend to transfer ownership or grant an exclusive licence must formally notify the granting authority (i.e. DG-CNECT and HaDEA) before the intended transfer or licensing takes place and the granting authority may up to four years after the end of the action object to a transfer of ownership or the exclusive licensing of results.
-
 We consider that proposals with an overall duration of typically 36 months would allow these outcomes to be addressed appropriately. Nonetheless, this does not preclude submission and selection of proposals requesting other durations.
 
 This topic implements the co-programmed European Partnership on Virtual Worlds.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 3 and achieve TRL 5 by the end of the project – see General Annex B.

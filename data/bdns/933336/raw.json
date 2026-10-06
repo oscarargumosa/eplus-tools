@@ -1,0 +1,96 @@
+{
+  "id": 1134897,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FACHECA",
+    "nivel3": "AYUNTAMIENTO DE FACHECA FAGECA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933336",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 14318,
+  "mrr": false,
+  "descripcion": "BONOS CONSUMO \"A FAGECA COMERÇ DE PROXIMITAT 2026\"",
+  "descripcionLeng": "BONOS CONSUMO \"A FAGECA COMERÇ DE PROXIMITAT 2026\"",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Aprobación Bases reguladoras de la campaña de fomento del consumo en el comercio local de Fageca mediante la emisión de bonos consumo “A Fageca, comerç de proximitat”, 2026..",
+  "urlBasesReguladoras": "https://transparencia.fageca.es/informacion-economica-presupuestaria-y-patrimonial/subvenciones-y-ayudas-publicas/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531731,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto Bonos Consumo 2026_Bases.pdf",
+      "long": 4809628,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531737,
+      "descripcion": "Declaración responsable Adhesión",
+      "nombreFic": "Anexo I Declaración responsable_2026.docx",
+      "long": 49316,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531734,
+      "descripcion": "Anexo Solicitud de adhesión",
+      "nombreFic": "Anexo Solicitud Adhesión_2026.docx",
+      "long": 226239,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531746,
+      "descripcion": "Anexo II Declaración responsable solicitud bono",
+      "nombreFic": "ANEXO II DECLARACION RESPONSABLE_2026.docx",
+      "long": 80896,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531741,
+      "descripcion": "Solicitud bono consumo",
+      "nombreFic": "Solicitud BONO CONSUMO_2026_.docx",
+      "long": 83456,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

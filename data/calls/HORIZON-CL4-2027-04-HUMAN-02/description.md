@@ -3,7 +3,7 @@
 The co-programmed European Partnership for Virtual Worlds will help to develop and promote a thriving industrial and end-user ecosystem in the EU, covering all the aspects of the virtual worlds value chain. It will also actively engage with industrial and societal sectors to provide access to a broad range of resources, including funding, expertise and technology.
 
 Project results are expected to contribute to the following expected outcomes:
-- Review and, if necessary, update the Strategic Research and Innovation Agenda (SRIA) for Virtual Worlds in Europe, for useful, open, interoperable, inclusive, sustainable and trustworthy virtual worlds systems and applications, ensuring these reflect EU values and principles.
+- The delivery of a revised and updated Strategic Research and Innovation Agenda (SRIA) for Virtual Worlds in Europe, for useful, open, interoperable, inclusive, sustainable and trustworthy virtual worlds systems and applications, ensuring these reflect EU values and principles.
 - Strengthening of the European Virtual Worlds Partnership by providing continuous support.
 - Reinforcement of the competitive ecosystem, with European companies playing a leading role in the adoption and acceptance, and in the development and deployment of Virtual Worlds technologies.
 - Reinforced links among initiatives in virtual worlds in Horizon Europe, Digital Europe Programme, and other programmes at EU, national and regional levels.
@@ -28,8 +28,6 @@ The Commission considers that proposals with an overall duration of typically 36
 Proposals should involve the effective contribution of Social Sciences and Humanities (SSH) disciplines and SSH experts, in order to produce meaningful and significant effects enhancing the societal impact of the related research activities.
 
 This CSA should be prepared, managed and coordinated by key stakeholders in this field and directly support the Virtual Worlds Partnership.
-
-Beneficiaries that intend to transfer ownership or grant an exclusive licence must formally notify the granting authority (i.e. DG-CNECT and HaDEA) before the intended transfer or licensing takes place and the granting authority may up to four years after the end of the action object to a transfer of ownership or the exclusive licensing of results.
 
 This topic is implemented through the co-programmed European Partnership for Virtual Worlds and all proposals are expected to allocate tasks to cohesion activities with the Partnership on Virtual Worlds and funded actions related to this partnership, including the CSA: HORIZON-CL4-2025-03-HUMAN-17.
 

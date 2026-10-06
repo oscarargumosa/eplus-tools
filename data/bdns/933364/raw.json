@@ -1,0 +1,67 @@
+{
+  "id": 1134925,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUADALAJARA",
+    "nivel3": "AYUNTAMIENTO DE GUADALAJARA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933364",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2250,
+  "mrr": false,
+  "descripcion": "EXTRACTO BASES XXXVI CONCURSO DE VILLANCICOS \"CIUDAD DE GUADALAJARA\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES424 - Guadalajara"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza General del Ayuntamiento de Guadalajara y sus Organismo Autónomos",
+  "urlBasesReguladoras": "https://www.guadalajara.es/recursos/doc/portal/2017/08/30/2016-ordenanza-general-de-subvenciones-publicas-del-ayuntamiento-de-guadalajara-.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-08",
+  "fechaFinSolicitud": "2026-12-09",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531804,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261002_Resolución_Decreto_DECRETO 2026-10931 [Decreto para la aprobación de las bases del XXXVI Concurso de Villancicos Ciudad de Guadalajara].pdf",
+      "long": 441983,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

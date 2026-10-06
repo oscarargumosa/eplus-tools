@@ -1,0 +1,64 @@
+{
+  "id": 1135068,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ELCHE/ELX",
+    "nivel3": "AYUNTAMIENTO DE ELCHE/ELX"
+  },
+  "sedeElectronica": "sede.elche.es",
+  "codigoBDNS": "933507",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Ayudas asistenciales para alumnado matriculado, durante el curso escolar 2026/2027, en centros sostenidos con fondos públicos de Elche.",
+  "descripcionLeng": "Ajudes assistencials per a l'alumnat matriculat, durant el curs escolar 2026/2027, en centres sostinguts amb fons públics d'Elx.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación primaria",
+      "codigo": "85.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Base 28 de Ejecución del Presupuesto Municipal",
+  "urlBasesReguladoras": "https://www.dip-alicante.es/bop2/pdftotal/2026/01/27_17/2026_000514.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Día siguiente al de la publicación del extracto en el BOP de Alicante",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532088,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261001 Convocatoria ayudas asistenciales educativas.pdf",
+      "long": 218319,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,83 @@
+{
+  "id": 1135148,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "DIRECCIÓN GENERAL DE EMPLEO Y FORMACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933587",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN 05/10/26 de la Dirección General de LABORA Servicio Valenciano de Empleo y Formación, por la que se convocan para el ejercicio 2026 las subvenciones destinadas al programa de apoyo al mantenimiento del trabajo autónomo de mujere",
+  "descripcionLeng": "Resolució 05/10/26 de la Direcció General de LABORA Servici Valencià d’Ocupació i Formació, per la qual es convoquen per a l’exercici 2026 les subvencions destinades al programa de suport al manteniment del treball autònom de dones en la Comunitat",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden TES/1077/2023, de 28 de septiembre, por la que se establecen, en el ámbito competencial del Servicio Público de Empleo Estatal, las bases reguladoras para la concesión de subvenciones destinadas a la financiación de programas de políticas activas de",
+  "urlBasesReguladoras": "https://www.boe.es/boe/dias/2023/09/29/pdfs/BOE-A-2023-20296.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-09",
+  "fechaFinSolicitud": "2026-10-20",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532241,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2. CONVOCATORIA EAUTOM 2026 tras intervenciónbis_firmado.pdf",
+      "long": 389441,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1532243,
+      "descripcion": "Extracto firmado",
+      "nombreFic": "1.  EXTRACTO CONVOCATORIA EAUTOM 2026_firmado.pdf",
+      "long": 231450,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1532242,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2. CONVOCATORIA EAUTOM 2026bis_26-008565_trad_firmado.pdf",
+      "long": 398824,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

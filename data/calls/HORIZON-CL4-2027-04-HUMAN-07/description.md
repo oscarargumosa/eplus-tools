@@ -21,8 +21,6 @@ To achieve this objective, proposals under this topic should provide for:
 - Landscape and gap analysis of standardisation activities in key digital priority areas, as outlined in the Annual Union Work Programme and the Rolling Plan for ICT standardisation, including identification of new emerging technology areas.
 - Promotion of the relevance and benefits of digital standardisation, especially for strengthening the competitiveness of EU industry, driving sustainability, achieving tech sovereignty, and promoting EU values. The proposal shall build synergies with other similar EU- and national-funded initiatives. It shall also include actions, including development of tools and materials, to promote education and skills on standardisation.
 
-Beneficiaries that intend to transfer ownership or grant an exclusive licence must formally notify the granting authority (i.e. DG-CNECT and HaDEA) before the intended transfer or licensing takes place and the granting authority may up to four years after the end of the action object to a transfer of ownership or the exclusive licensing of results.
-
 The proposal should take into account the previous activities carried out at least in terms of educational material and facilities for funding experts within the topics ICT-40-2017 (implemented by the StandICT.eu project), ICT-45-2020 (implemented under StandICT.eu2023 project), HORIZON-CL4-2022-RESILIENCE-01-21 (implemented under StandICT.eu 2026) and HORIZON-CL4-2024-HUMAN-03-04 (implemented under StandICT.eu 2029).
 
 See website: http://www.standict.eu.

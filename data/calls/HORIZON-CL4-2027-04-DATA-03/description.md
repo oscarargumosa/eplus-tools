@@ -12,6 +12,6 @@ This topic focusses on technologies and techniques that enable AI data processin
 
 Successful project proposals should showcase proposed developments in at least two complementary use cases in different domains. These use cases should demonstrate the value gained and potential impact of project achievements in real-world situations, as well as address key applications and sectors critical to Europe's competitiveness. Use cases should provide compelling examples and scenarios and cater for the reproducibility of results' added value and impact in additional economic sectors.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 3 and achieve TRL 6-7 by the end of the project – see General Annex B.

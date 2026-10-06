@@ -27,6 +27,6 @@ The project is expected to deliver:
 
 This topic implements the co-programmed European Partnership on AI, data, and robotics (ADRA), and all proposals are expected to allocate tasks for cohesion activities with ADRA.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 4 and achieve TRL 7 by the end of the project – see General Annex B.

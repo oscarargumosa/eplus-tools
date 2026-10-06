@@ -1,0 +1,72 @@
+{
+  "id": 1135134,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "OROTAVA, LA",
+    "nivel3": "AYUNTAMIENTO DE OROTAVA, LA"
+  },
+  "sedeElectronica": "https://laorotava.sedelectronica.es/",
+  "codigoBDNS": "933573",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 140000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas al estudio para el alumnado residente en el municipio de La Orotava para el curso 206/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "“Ordenanza Específica de las Bases Reguladoras de las Ayudas al Estudio para el alumnado residente en el municipio de la Villa de La Orotava”, publicado en el BOP de Santa Cruz de Tenerife número 118, de fecha 1 de octubre de 2021.",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de la publicación de la presente convocatoria en el BOP",
+  "textFin": "30 días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532197,
+      "descripcion": "Solicitud de ayuda al estudio",
+      "nombreFic": "Solicitud de ayuda al estudio.pdf",
+      "long": 633261,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1532196,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "3. Anexo - Convocatoria Ayudas al Estudio 26-27.pdf",
+      "long": 291920,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

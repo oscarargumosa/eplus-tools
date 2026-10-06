@@ -21,7 +21,7 @@ The project selected in this topic should link to the resources offered by the A
 
 All proposals are expected to allocate tasks for cohesion activities with the European Partnership on AI, data, and robotics (ADRA) and the CSA HORIZON-CL4-2025-03-HUMAN-18: GenAI4EU central Hub.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 2 and achieve TRL 4 by the end of the project – see General Annex B.
 

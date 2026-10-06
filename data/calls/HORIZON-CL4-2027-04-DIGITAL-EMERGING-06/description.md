@@ -23,9 +23,7 @@ The proposals must support digital partnerships and international digital cooper
 
 Capitalise from existing EU initiatives like the call GenAI for Africa from HE WP25, the Global Gateway, and Smart Africa to up-scale the deployment of solutions in low-income countries.
 
-Beneficiaries that intend to transfer ownership or grant an exclusive licence must formally notify the granting authority (i.e. DG-CNECT and HaDEA) before the intended transfer or licensing takes place and the granting authority may up to four years after the end of the action object to a transfer of ownership or the exclusive licensing of results.
-
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 5 and achieve TRL 7 by the end of the project – see General Annex B.
 

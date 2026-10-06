@@ -4,17 +4,17 @@ The Apply AI Strategy[1] proposes a comprehensive set of measures to notably har
 
 Project results are expected to contribute to all of the following expected outcomes:
 - Significant technological progress and innovation in Apply AI Strategy's prioritised sectors driven by challenge-oriented, AI-powered solutions.
-- Increase competitiveness and visibility of the relevant AI community within key application domains, and promote collaborative approaches for AI development in these domains, fostering the ecosystem.
-- Increase adoption of AI technologies across the following three key application domains: healthcare, advanced manufacturing (including AI-powered robotics) and in-vehicle autonomous driving.
+- Increase competitiveness and visibility of the relevant AI community within key application sectors, and promote collaborative approaches for AI development in these sectors, fostering the ecosystem.
+- Increase adoption of AI technologies across the following three key application sectors: healthcare, advanced manufacturing (including AI-powered robotics) and in-vehicle autonomous driving.
 
 ## Scope
 
-The Challenge-Driven AI Innovation Booster aims to drive significant technological progress and innovation in Apply AI prioritised sectors through challenge-oriented, AI-powered solutions. This initiative seeks to boost Europe's developer community and the adoption of powerful, trustworthy AI solutions in three strategic domains such as:
+The Challenge-Driven AI Innovation Booster aims to drive significant technological progress and innovation in Apply AI prioritised sectors through challenge-oriented, AI-powered solutions. This initiative seeks to boost Europe's developer community and the adoption of powerful, trustworthy AI solutions in three strategic sectors such as:
 - In healthcare - advanced AI will accelerate diagnostics and treatment plans, enhance robotic surgery, or improve patient care through predictive analytics.
 - In advanced manufacturing - advanced AI will optimize production processes, improve quality control and product design, or enable predictive maintenance.
 - In autonomous driving - advanced AI will enhance vehicle safety, improve navigation systems, or optimize traffic management. Provided sufficient quality of the proposals received, at least one selected project will focus on in-vehicle autonomous driving applications, in line with the Automotive Action Plan, ensuring coordination with the announced Connected and Autonomous Vehicle Alliance.
 
-Each proposal should focus exclusively on one of the three key sectors mentioned above.
+Each proposal should address exclusively on one of the three key sectors mentioned above, and clearly indicate which sector they address.
 
 It is expected to focus primarily on the definition and organization of a multi-stage competition in the chosen sector, as well as on the accompanying support to the SMEs/teams taking part in each of the challenges.
 
@@ -52,7 +52,7 @@ This topic implements the co-programmed European Partnership on AI, data, and ro
 
 Proposals should also build on or seek collaboration with relevant projects and develop synergies with other relevant International, European, national, or regional initiatives. Projects selected in this topic will link to the resources offered by the AI Factories, including the Data Labs. The results may be validated in the Testing and Experiment Facilities and further deployed via the European Digital Innovation Hubs (EDIHs) and will contribute to the Apply AI strategy.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 2 and achieve TRL 5 by the end of the project – see General Annex B.
 

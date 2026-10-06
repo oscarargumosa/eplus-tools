@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "933559",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CALAHORRA / AYUNTAMIENTO DE CALAHORRA",
+  "nuts_codes": [
+    "ES23"
+  ],
+  "nuts_primary": "ES23",
+  "title": "Acuerdo de la Junta de Gobierno Local de fecha 5 de octubre de 2.026 por el que se aprueba la Convocatoria de subvenciones para la rehabilitación y edificación en el Casco Histórico y edificios de más de 50 años del Casco Urbano - Año 2026-",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-10-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": "sede.calahorra.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933559",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "sede.calahorra.es",
+  "text_inicio": "A partir del día siguiente a la publicación del extracto en el Boletín Oficial de La Rioja",
+  "text_fin": "20 días habíles desde la publicación del extracto en el Boletín Oficial de la Rioja",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-06T04:09:52.631Z"
+}

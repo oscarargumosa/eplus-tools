@@ -1,0 +1,72 @@
+{
+  "id": 1135046,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GIRONA",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://apps.udg.edu/RecercaIfUdG/",
+  "codigoBDNS": "933485",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 120550.6,
+  "mrr": false,
+  "descripcion": "ACUERDO DE LA CdRTD PÚBLICO 26/2026, DE 16 DE SEPTIEMBRE, QUE APRUEBA LA CONVOCATORIA PARA EL PROGRAMA DE AYUDAS PARA LA CONTRATACIÓN DE PERSONAL INVESTIGADOR EN FORMACIÓN DE LA UNIVERSIDAD DE GIRONA CORRESPONDIENTE A LA MODALIDAD 4 DEL ICRPC",
+  "descripcionLeng": "ACORD DE LA COMISSIÓ DELEGADA DE RECERCA, TRANSFERÈNCIA I DOCTORAT PÚBLICA 26/2026, DE 16 DE SETEMBRE, D’APROVACIÓ DE LA CONVOCATÒRIA PÚBLICA DEL PROGRAMA D’AJUTS PER A LA CONTRACTACIÓ DE PERSONAL INVESTIGADOR EN FORMACIÓ DE LA UNIVERSITAT DE GIRONA C",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Acuerdo de Consejo de Gobierno 48/2026, de 26 de mayo de 2026, Para la aprobación de las bases reguladoras del programa de Ayudas para la contratación de personal investigador en Formación de la Universitat de Girona (IFUdG).",
+  "urlBasesReguladoras": "https://www.udg.edu/ca/Portals/6/OTRiT/IFUdG2026/ACUERDO -CG_Bases IFUdG_Versión DEFINITIVO.pdf?ver=6w3eue4ls_SElf-UjVxGLg%3d%3d",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "05/10/2026",
+  "textFin": "19/10/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532021,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "ACORD-CdRTD-Convocatòria 2a_mod4_IFUdG2026.pdf",
+      "long": 232664,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1532038,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ACUERDO -CdRTD convocatoria_2a_mod4_IFUdG2026.pdf",
+      "long": 332737,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -10,7 +10,7 @@
   "status": "open",
   "statusCode": "31094502",
   "opening": "2025-11-06",
-  "deadline": "2026-11-25",
+  "deadline": "2026-10-08",
   "deadlineModel": "",
   "actionType": "HORIZON EIC Equity Only",
   "actionCode": "HORIZON-EIC-EQU",
@@ -132,5 +132,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-04T04:04:25.298Z"
+  "fetchedAt": "2026-10-06T04:06:30.702Z"
 }

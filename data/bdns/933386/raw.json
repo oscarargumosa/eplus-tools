@@ -1,0 +1,72 @@
+{
+  "id": 1134947,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILASSAR DE DALT",
+    "nivel3": "AYUNTAMIENTO DE VILASSAR DE DALT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933386",
+  "fechaRecepcion": "2026-10-05",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases específicas para la concesión de subv. para las actividades de cooperación internacional, mediante concurrencia competitiva, destinadas a financiar proyectos de cooperación internacional organizados por entidades sin ánimo de lucro",
+  "descripcionLeng": "Convocatòria i bases específiques per a la concessió de subvencions per a activitats de cooperació internacional, mitjançant\nconcurrència competitiva, destinades a finançar projectes de cooperació internacional organitzats per entitats sense ànim de lucre",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Convocatoria y bases específicas para la concesión de subvenciones para actividades de cooperación internacional, mediante\nconcurrencia competitiva, destinadas a financiar proyectos de cooperación internacional organizados por entidades sin ánimo de lucro",
+  "urlBasesReguladoras": "https://vilassar.cat/media/repository/ajuntament/documentacio/Bases/2026/Bases_subvenciones_Cooperacion_internacional_2026_CAST.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "07/09/2026",
+  "textFin": "28/09/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1531830,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases Cooperació Internacional 2026 Cat.pdf",
+      "long": 391768,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    },
+    {
+      "id": 1531828,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvenciones Cooperación internacional 2026_CAST.pdf",
+      "long": 359158,
+      "datMod": "2026-10-05",
+      "datPublicacion": "2026-10-05"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

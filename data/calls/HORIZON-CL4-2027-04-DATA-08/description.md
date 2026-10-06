@@ -31,12 +31,12 @@ The pilots should exploit in particular open APIs and open-source components as 
 
 The pilot demonstrators should include testing, validation and demonstration of prototypes of agile virtualised network functions combined with ubiquitous mesh of integrated devices, computing and communication resources in operational environments, ensuring security and privacy, protection also in the face of emerging quantum threats, energy efficiency, transparency and control of the ecological footprint, as well as sustainable artificial intelligence services.
 
-The pilot demonstrators are expected to re-use as far as possible existing open-source frameworks, i.e. open-source software governed by communities of contributors, that will provide key technology components for the operation of the 3C/ telco-edge-cloud supply-side large scale pilot. These open-source frameworks should be made available to the Open Internet Stack Support for Scale.
+The pilot demonstrators are expected to re-use as far as possible existing open-source frameworks, i.e. open-source software governed by communities of contributors, that will provide key technology components for the operation of the 3C/ telco-edge-cloud supply-side large scale pilot. These open-source frameworks should be made available to the Open Euro Stack Support for Scale.
 
 The proposals should ensure a high degree of participation of stakeholders from the relevant vertical sectors, with a particular attention to the involvement of SMEs, scale-ups and start-ups.
 
 The pilots should establish a high degree of relations and collaborate with complementary EU funded research activities, like the Smart Networks and Systems Joint Undertaking (SNS JU) projects, the “Empowering AI across the continuum” and the “Sovereign edge/cloud infrastructure” R&I areas, the PPP virtual worlds, CCAM partnership as well as support of SW-defined vehicle initiative under the Chips JU.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

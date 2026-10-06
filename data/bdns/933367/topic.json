@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "933367",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOGENTE/MOIXENT / AYUNTAMIENTO DE MOGENTE/MOIXENT",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "SUBVENCIONES A LAS ASOCIACIONES DEPORTIVAS, CULTURALES, SOCIALES, JUVENILES, MEDIOAMBIENTALES O BENÉFICAS SIN ÁNIMO DE LUCRO, PARA EL DESARROLLO DE PROGRAMAS Y ACTIVIDADES DE INTERÉS GENERAL DEL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-05",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 70000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://moixent.sedelectronica.es/info.13",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933367",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "5. Annex - Bases específiques subvencions associacions 2026 (val)",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://moixent.sedelectronica.es/transparency/9fe4d488-7d93-4626-9a8e-489f4e1796be/",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP",
+  "text_fin": "10 días hábiles a contar desde el siguiente al de la publicación del extracto en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-06T04:09:52.608Z"
+}
