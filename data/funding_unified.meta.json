@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-06T04:09:57.395Z",
-  "total": 13174,
+  "generatedAt": "2026-10-07T04:06:52.041Z",
+  "total": 13245,
   "bySource": {
-    "sedia": 1743,
-    "bdns": 11357,
-    "salto": 74
+    "sedia": 1746,
+    "bdns": 11428,
+    "salto": 71
   },
   "byCategory": {
-    "call_for_proposals": 13100,
-    "training": 74
+    "call_for_proposals": 13174,
+    "training": 71
   },
   "byLevel": {
     "eu": 1817,
-    "ccaa": 2446,
-    "estado": 330,
-    "local": 7506,
-    "otros": 1075
+    "ccaa": 2460,
+    "estado": 331,
+    "local": 7554,
+    "otros": 1083
   },
   "byStatus": {
-    "open": 12639,
-    "forthcoming": 532,
+    "open": 12719,
+    "forthcoming": 523,
     "closed": 3
   },
   "byProgramme": {
@@ -27,9 +27,9 @@
     "Connecting Europe Facility": 68,
     "Erasmus+": 45,
     "Just Transition": 4,
-    "Horizon Europe": 1075,
+    "Horizon Europe": 1077,
     "ERC": 8,
-    "Creative Europe": 42,
+    "Creative Europe": 43,
     "NDICI / EuropeAid": 159,
     "Pericles IV": 2,
     "EP": 7,
@@ -53,16 +53,16 @@
     "EUBA": 16,
     "ED": 1,
     "EU Anti-Fraud": 8,
-    "Concurrencia competitiva - canónica": 10173,
-    "Concesión directa - canónica": 1184,
+    "Concurrencia competitiva - canónica": 10233,
+    "Concesión directa - canónica": 1195,
     "UCPM": 2,
     "Pilot Projects": 9,
     "European Defence Fund": 70,
     "ERDFTA": 2,
     "RFCS": 7,
-    "Erasmus+ Youth (SALTO)": 74
+    "Erasmus+ Youth (SALTO)": 71
   },
   "curatedEnrichmentCount": 1,
-  "sumBudgetEur": 389191613958.72943,
+  "sumBudgetEur": 389388847836.2394,
   "summaryEsPendingCount": 1817
 }

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "933683",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COLUNGA / AYUNTAMIENTO DE COLUNGA",
+  "nuts_codes": [
+    "ES12"
+  ],
+  "nuts_primary": "ES12",
+  "title": "CONVOCATORIA DE AYUDAS DE EMERGENCIA SOCIAL A FAMILIAS CON MENORES (2026)",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6008.61,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.colunga.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933683",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo declaración de ingresos.",
+      "url": null
+    },
+    {
+      "label": "Ficha de acreedor.",
+      "url": null
+    },
+    {
+      "label": "Solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://miprincipado.asturias.es/bopa/2024/12/03/2024-10286.pdf",
+  "text_inicio": "DÍA SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO EN EL BOLETÍN DE LA PROVINCIA.",
+  "text_fin": "15 DÍAS HÁBILES A CONTAR DESDE EL SIGUIENTE AL DE PUBLICACIÓN DEL EXTRACTO EN EL BOLETÍN DE LA PROVI",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-07T04:06:46.721Z"
+}

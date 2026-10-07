@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "933697",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALDEPEÑAS / AYUNTAMIENTO DE VALDEPEÑAS",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "Concurso del cartel de la feria infantil de 'Chicolandia' 2026/27, que es una cita dirigida para los/as más pequeños/as y, también, para los/as adolescentes.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-06",
+  "open_date": null,
+  "deadline": "2026-11-09",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 150,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933697",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://valdepenas.sedelectronica.es/preview-document/3061ac50-59bc-470f-9af2-19f07d450665/",
+  "text_inicio": "A partir del día siguiente a la fecha de publicación de la correspondiente convocatoria en el BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 222373,
+      "titulo": "BASES PARA EL CONCURSO DEL CARTEL CHICOLANDIA 2026/27",
+      "tituloLeng": null,
+      "texto": "<p>La feria infantil de 'Chicolandia' es una cita dirigida para los/as más pequeños/as y, también, para los/as adolescentes.La participación infanto-juvenil supone colaborar, aportar y cooperar para el progreso común, es por ello por lo que su participación en la feria se hace tan importante.Por tanto, y atendiendo al artículo 25.1 y el 25.2, apartado m) de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local, se prevé la celebración del Concurso del cartel Chicolandia 2026/27.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7807127",
+      "cve": "7+FW/tLaoBx2uhf27vFi",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-07T04:06:46.726Z"
+}

@@ -1,0 +1,39 @@
+## Expected Impact
+
+The action is expected to support around 40 projects, implemented either by a single entity (mono-beneficiary) or by a consortium of organisations (multi-beneficiary).
+
+## Objective
+
+This action will support projects that will translate, publish, distribute, and promote European Literature. This action complements the other Creative Europe support actions to the book and publishing sector, such as reading promotion through the European Authors Day to younger audiences and the European Union Prize for Literature targeting European emerging authors.
+
+The works covered by this call for proposals are European literary works, such as novels, short stories, theatre plays and radio plays, poetry, literary reportage, comic books as well as children and youth literature.
+
+For the purposes of this call for proposals ‘European literary works’ refers to works written by authors who are linked to an eligible country (Creative Europe countries)[EU Member States (including overseas countries and territories (OCTs)) + non-EU countries: listed EEA countries and countries associated to the Creative Europe Programme (list of participating countries)], by their nationality or place of residence, or who are recognised as belonging to the European literary heritage.
+
+Themes and priorities
+
+In line with the current cultural policy priorities, applicants should propose projects contributing to:
+
+1. EU Overarching priorities:
+
+Applicants must describe in their application how, in the design and implementation of their projects, they intend to contribute to the EU's Overarching priorities.
+
+2. The following specific priorities:
+- Increasing the transnational circulation and the diversity of European literary works, notably through the translation, publication, distribution and promotion of works written in less translated languages;
+- Promoting reading and the linguistic and cultural diversity of European literature to a large audience, through increasing discoverability of the literary works supported;
+- Supporting the profession of literary translator, in line with the principles of good working conditions and fair remuneration publishers should ensure that the names of the translators appear visibly in published books, and preferably on the cover, and that the source language is also clearly mentioned;
+- Increasing the competitiveness of the book sector by encouraging cooperation between different actors within the book value chain, notably between publishers, booksellers, and libraries.
+
+In addition, as part of the exceptional support to Ukraine, applicants are encouraged to propose activities facilitating the circulation of books from and/or into Ukraine, as well as their translation into or from Ukrainian. In addition, projects aimed at providing books in the Ukrainian language to Ukrainian refugees and displaced people will be encouraged. In this context, the printing in Ukrainian of (non-translated) Ukrainian books will be eligible.
+
+To support the profession of literary translator, in accordance with the principles of good working conditions and fair remuneration, it is recommended that between 20 and 30%[This percentage will apply to novel literary genre.] of the total project budget is allocated to the remuneration of translators and that translators are given recognition and visibility, particularly being credited, preferably on the cover page.
+
+To preserve the profession of literary translator, and the quality of translation, machine translation is excluded from this call. Publishers will have to sign contracts with professional human literary translators, and the data about the chosen translators must be clearly indicated in the overview of translations in the Creative Europe Database (see section 5. Admissibility and documents). In this regard, publishers should respect national standards and follow best practices, referring to and using, the ‘Translators on the cover’ report and, as an example, the ‘Guidelines for fair translation contracts’ drawn up by CEATL.
+
+## Scope
+
+Translation, publication, promotion, and distribution activities as well as activities addressing the themes and priorities described above. More specifically:
+- Activities relating to literary works to be translated, published and promoted, as part of a robust publishing strategy and an effective distribution plan.
+- Activities aimed at facilitating collaboration between the various stakeholders in the book and publishing value chain: authors, translators, publishers, distributors, booksellers, libraries, literary events and festivals.
+
+The proposed activities should be grouped, in the application form (part B), in coherent work packages. Each work package must have a corresponding list of activities, deliverables, milestones, and critical risks.

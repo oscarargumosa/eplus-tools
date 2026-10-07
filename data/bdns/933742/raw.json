@@ -1,0 +1,72 @@
+{
+  "id": 1135303,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTMELÓ",
+    "nivel3": "AYUNTAMIENTO DE MONTMELÓ"
+  },
+  "sedeElectronica": "https://www.montmelo.cat/serveis-i-tramits/tramits-i-gestions",
+  "codigoBDNS": "933742",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA EL OTORGAMIENTO DE AYUDAS ECONÓMICAS A LOS NIÑOS CON DOMICILIO EN MONTMELÓ PARA LA PRÁCTICA DEL DEPORTE EN ENTIDADES DEPORTIVAS PRIVADAS DEL MUNICIPIO PARA EL CURSO 2026-2027",
+  "descripcionLeng": "CONVOCATÒRIA PER A L’ATORGAMENT D’AJUTS ECONÒMICS ALS INFANTS AMB DOMICIILI A MONTMELÓ PER A LA PRÀCTICA DE L’ESPORT A ENTITATS ESPORTIVES PRIVADES DEL MUNICIPI PER AL CURS 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases Generals i Específiques d’ajut per a la pràctica de l’esport a entitats esportives privades de Montmeló",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/938239/aprovacio-inicial-del-reglament-per-a-la-concessio-d-ajuts-economics-a-infants-per-a-la practica-d-esports-a-entitats-esportives-privades-de-montmelo-ajuntament-de-montmelo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": "2026-11-15",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532686,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria per a l'atargoment d'ajuts econòmics als infants amb domicili a Montmeló per a la pràctica d'esport a entitats esportives privades del municipi per al curs 2026-2027.docx",
+      "long": 52363,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    },
+    {
+      "id": 1532685,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria para el otorgamiento de ayudas economicas para la pràctica de deporte en entidades deportivas privadas del municipio para el curso 2026-2027.docx",
+      "long": 51768,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

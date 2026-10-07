@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "933830",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "ORDEN DE LA CONSEJERÍA DE EMPRESA, EMPLEO Y ECONOMÍA SOCIAL, POR LA QUE SE CONVOCAN SUBVENCIONES DESTINADAS A PROGRAMAS QUE FOMENTEN LAS RELACIONES LABORALES PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-10-06",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 9815,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    }
+  ],
+  "apply_url": "https://sede.carm.es/web/pagina?IDCONTENIDO=2436&IDTIPO=240&RASTRO=c$m40288#seccion-solicitudes",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933830",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/#/home/anuncio/14-07-2017/5142",
+  "text_inicio": "Día de publicación del extracto en el BORM",
+  "text_fin": "quince días naturales a partir de la publicación del extracto de la presente convocatoria en el BORM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-07T04:06:46.743Z"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1135443,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "NARÓN",
+    "nivel3": "AYUNTAMIENTO DE NARÓN"
+  },
+  "sedeElectronica": "sedeelectronica.naron.es",
+  "codigoBDNS": "933882",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "BASES Y  CONVOCATORIA DE SUBVENCIONES A CLUBS Y ENTIDADES DEPORTIVAS CORRESPONDIENTES AL AÑO 2025",
+  "descripcionLeng": "BASES E CONVOCATORIA DE SUBVENCIÓNS A CLUBS E ENTIDADES DEPORTIVAS CORRESPONDENTES AO ANO 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES QUE REXERÁN A CONVOCATORIA DE CONCESIÓN DE SUBVENCIÓNS A CLUBS E ENTIDADES DEPORTIVAS DE ÁMBITO MUNICIPAL DO ANO 2025",
+  "urlBasesReguladoras": "https://sedeelectronica.naron.es/opensiac/action/tramitesinfo?method=enter&id=113",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días naturais contados dende o día seguinte ao da publicación do extracto da convocatoria no BOP",
+  "textFin": "Ao remate dos 15 días días naturais contados dende  día seguinte ao da publicación  extracto no BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533025,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "25-11-05  BASES SUBVENCIÓNS DE DEPORTES 2025- ESPAÑOL.pdf",
+      "long": 1025417,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    },
+    {
+      "id": 1533030,
+      "descripcion": "ACORDO PLENARIO DE LEVANTAMENTO DE REPARO E APROBACIÓN DE BASES E CONVOCATORIA DE CONCESIÓN DE SUBVENCIÓNS A CLUBS E ENTIDADES DEPORTIVAS ANO 2025",
+      "nombreFic": "26-09-24 ACORDO PLENARIO LEVANTAMENTO DE REPARO E APROBACIÓN RECOÑ EXTRAXU APROBACIÓN DE BASES E CONVOCATORIA.pdf",
+      "long": 674259,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    },
+    {
+      "id": 1533027,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "25-11-05  BASES SUBVENCIÓNS DE DEPORTES 2025.pdf",
+      "long": 938809,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

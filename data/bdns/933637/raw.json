@@ -1,0 +1,68 @@
+{
+  "id": 1135198,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "SERVICIO PÚBLICO DE EMPLEO DE CASTILLA Y LEÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933637",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 529538,
+  "mrr": false,
+  "descripcion": "Resolución de 5 de octubre del 2026 del  S.P.E de Castilla y León, por la que se convocan subvenciones públicas destinadas a la financiación de planes de formación para la capacitación y el diálogo social en la Comunidad de Castilla y León 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de organizaciones empresariales, profesionales y patronales",
+      "codigo": "94.1"
+    },
+    {
+      "descripcion": "Actividades sindicales",
+      "codigo": "94.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden EEI/736/2020, de 30 de julio modificada por la Orden EEI/892/2021, de 16 de julio.",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2021/07/20/pdf/BOCYL-D-20072021-5.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación de extracto de la convocatoria",
+  "textFin": "20 días hábiles desde el siguiente a la publicación.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532401,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "RESOLUCIÓN CONVOCATORIA FCM 2026-2027_Anexos.signed.pdf",
+      "long": 823833,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1135406,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALDÉS",
+    "nivel3": "AYUNTAMIENTO DE VALDÉS"
+  },
+  "sedeElectronica": "https://ayuntamientodevaldes.sede.e-ayuntamiento.es/informacionpublica/infopublica_ver.action?id=12217",
+  "codigoBDNS": "933845",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3500,
+  "mrr": false,
+  "descripcion": "SUBVENCION SEGUNDA CONVOCATORIA SUBVENCION INSTALACIONES",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES120 - Asturias"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "SUBVENCION SEGUNDA CONVOCATORIA SUBVENCION INSTALACIONES",
+  "urlBasesReguladoras": "https://ayuntamientodevaldes.sede.e-ayuntamiento.es/informacionpublica/infopublica_ver.action?id=12217",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN EN EL BOPA",
+  "textFin": "TRANSCURRIDOS 20 DIAS NATURALES DESDE EL DIA SIGUIENTE DE SU PUBLICACION EN EL BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532964,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "SEGUNDA INSTALACIONES.pdf",
+      "long": 800668,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

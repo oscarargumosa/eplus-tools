@@ -1,0 +1,68 @@
+{
+  "id": 1135190,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALQUERIA D'ASNAR, L'",
+    "nivel3": "AYUNTAMIENTO DE ALQUERIA D'ASNAR, L'"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933629",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 30009,
+  "mrr": false,
+  "descripcion": "DECRETO 2026-0255 Resolución de Alcaldía. - Aprobación de las bases en relación a la convocatoria de subvenciones Bono-consumo en L’Alqueria d’Asnar, anualidad 2026.",
+  "descripcionLeng": "DECRETO 2026-0255 Resolución de Alcaldía. - Aprobación de las bases en relación a la convocatoria de subvenciones Bono-consumo en L’Alqueria d’Asnar, anualidad 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras y convocatoria de la campaña de fomento del consumo en el comercio local de L'Alqueria d'Asnar, mediante la emision de Bonos comercio 2026.",
+  "urlBasesReguladoras": "https://lalqueriadasnar.sedelectronica.es/preview-document/6c319891-7f28-4175-9b1e-8dd97ed2219b",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": "2026-12-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532380,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO 2026-0255 [Resolución de Alcaldía. - Aprobación de las bases en relación a la convocatoria de subvenciones Bono-consumo en L Alqueria d Asnar, anualidad 2026.].pdf",
+      "long": 299447,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-06"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
