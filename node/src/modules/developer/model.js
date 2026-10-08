@@ -480,7 +480,7 @@ async function callGemini(systemPrompt, userPrompt) {
 }
 
 // ── Claude (quality, for evaluation & improvement) ──────────
-const { getClient, callClaude } = require('../../utils/ai');
+const { callClaude, isConfigured: aiConfigured } = require('../../utils/ai');
 
 // ── Smart router: Gemini for generation, Claude for quality ──
 async function callAI(systemPrompt, userPrompt, purpose = 'generate') {
@@ -1268,18 +1268,12 @@ async function _logWriterGen({ projectId, sectionId, system, user, raw, segments
 //    until validated, so hallucinations can't propagate. ──
 async function extractCandidateFacts(projectId, sectionId, text) {
   if (!projectId || !text || text.length < 80) return;
-  if (!process.env.ANTHROPIC_API_KEY) return;
+  if (!aiConfigured()) return;
   let parsed;
   try {
-    const client = getClient();
-    const model = process.env.AI_CHEAP_MODEL || 'claude-haiku-4-5-20251001';
     const sys = `You extract STABLE, CONCRETE facts from a funding-proposal section so they stay consistent across the whole proposal. Return ONLY a JSON array (max 8) of {"key","value"} where key is a short snake_case identifier (e.g. "target_neighbourhood", "youth_count", "lead_acronym", "milestone_m1_month") and value is the concrete fact as written. Extract ONLY specific facts a later section must not contradict: named places, named organisations/stakeholders, specific numbers/dates, chosen acronyms. SKIP generic claims, adjectives, and anything vague. If nothing concrete, return [].`;
-    const raw = await client.messages.create({
-      model, max_tokens: 700, temperature: 0,
-      system: sys,
-      messages: [{ role: 'user', content: `Section ${sectionId}:\n\n${text.substring(0, 6000)}` }],
-    });
-    const out = raw.content[0]?.text || '[]';
+    // Modelo barato (haiku); por el ai-bridge si está configurado.
+    const out = (await callClaude(sys, `Section ${sectionId}:\n\n${text.substring(0, 6000)}`, 700, { model: 'cheap', temperature: 0 })) || '[]';
     const m = out.match(/\[[\s\S]*\]/);
     parsed = m ? JSON.parse(m[0]) : [];
   } catch (err) {
@@ -1413,8 +1407,8 @@ async function upsertPromptBlock(name, programId, content, userId) {
 }
 
 async function generateSection(instanceId, sectionId, projectContext, programId, coordinatorName) {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return '[AI generation pending — configure ANTHROPIC_API_KEY in .env]';
+  if (!aiConfigured()) {
+    return '[IA no disponible — configura AI_BRIDGE_URL]';
   }
 
   const sectionNames = {
@@ -1614,7 +1608,7 @@ Write the ENTIRE section in ${langName}. Every paragraph, every sentence, every 
 // ── Evaluate section with full criteria context ─────────────
 
 async function evaluateSection(text, sectionTitle, criteria, programId, langName) {
-  if (!process.env.ANTHROPIC_API_KEY) return { score: 'pending', feedback: 'API key not configured' };
+  if (!aiConfigured()) return { score: 'pending', feedback: 'IA no configurada (AI_BRIDGE_URL)' };
 
   const writingRules = programId ? await getWritingRules(programId) : {};
   const outputLang = langName || 'English';
@@ -1651,7 +1645,7 @@ Respond ONLY in valid JSON:
 // ── Improve section with context awareness ──────────────────
 
 async function improveSection(text, action, sectionTitle, projectContext, programId) {
-  if (!process.env.ANTHROPIC_API_KEY) return text;
+  if (!aiConfigured()) return text;
 
   const writingRules = programId ? await getWritingRules(programId) : {};
 
@@ -1683,7 +1677,7 @@ async function improveSection(text, action, sectionTitle, projectContext, progra
 // previous sections, research docs). The user_request is injected as a top-level
 // mandate for the revision.
 async function improveSectionCustom(instanceId, sectionId, currentText, userRequest, projectContext, programId, coordinatorName, opts = {}) {
-  if (!process.env.ANTHROPIC_API_KEY) return currentText;
+  if (!aiConfigured()) return currentText;
 
   const sectionNames = {
     'summary_text': 'Project Summary',
@@ -3333,7 +3327,7 @@ Return the JSON now.`;
 // diagnosis + which 2 weaknesses would be targeted if the user chooses to
 // refine. Decides whether refining makes sense at all (skip_reason).
 async function refineEvaluatePhase(instanceId, sectionId, currentText, programId) {
-  if (!process.env.ANTHROPIC_API_KEY) {
+  if (!aiConfigured()) {
     return { skip_reason: 'AI key not configured.' };
   }
   const sectionTitle = await getSectionTitleAsync(sectionId);
@@ -3363,7 +3357,7 @@ async function refineEvaluatePhase(instanceId, sectionId, currentText, programId
 // Phase 2 of Evaluate-and-Refine: takes the evaluation from phase 1 and a
 // targeted improve pass, then re-evaluates. Auto-reverts on regression.
 async function refineApplyPhase(instanceId, sectionId, currentText, beforeEval, projectContext, programId, coordinatorName) {
-  if (!process.env.ANTHROPIC_API_KEY) {
+  if (!aiConfigured()) {
     return { text: currentText, before: beforeEval, after: beforeEval, delta: 0, weaknesses_targeted: [] };
   }
   const sectionTitle = await getSectionTitleAsync(sectionId);
@@ -3412,7 +3406,7 @@ async function refineApplyPhase(instanceId, sectionId, currentText, beforeEval, 
 
 // ── Legacy one-shot auto-refine (kept for backwards compat, will be removed).
 async function refineSectionAuto(instanceId, sectionId, currentText, projectContext, programId, coordinatorName) {
-  if (!process.env.ANTHROPIC_API_KEY) {
+  if (!aiConfigured()) {
     return { text: currentText, before: null, after: null, weaknesses_targeted: [] };
   }
 

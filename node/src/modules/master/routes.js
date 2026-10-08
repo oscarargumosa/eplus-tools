@@ -24,6 +24,7 @@
 const express = require('express');
 const router = express.Router();
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 const access = require('./access');
 
@@ -43,8 +44,8 @@ router.get   ('/documents/:id/chapters', requireAuth, ownDocument, ctrl.listChap
 router.post  ('/documents/:id/chapters', requireAuth, ownDocument, ctrl.createChapter);
 router.patch ('/chapters/:id',           requireAuth, ownChapter, ctrl.updateChapter);
 router.delete('/chapters/:id',           requireAuth, ownChapter, ctrl.deleteChapter);
-router.post  ('/chapters/:id/refine',          requireAuth, ownChapter, ctrl.refineChapter);
-router.post  ('/chapters/:id/propose-rewrite', requireAuth, ownChapter, ctrl.proposeRewrite);
+router.post  ('/chapters/:id/refine',          requireAuth, aiLimit, ownChapter, ctrl.refineChapter);
+router.post  ('/chapters/:id/propose-rewrite', requireAuth, aiLimit, ownChapter, ctrl.proposeRewrite);
 
 /* ── Exports ─────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/exports', requireAuth, ctrl.listExports);
@@ -72,12 +73,12 @@ router.post ('/diagnoses/:id/items',     requireAuth, ownDiagnosis, ctrl.createC
 router.patch('/diagnosis-items/:id',     requireAuth, ownDiagnosisItem, ctrl.patchDiagnosisItemState);
 
 /* ── LLM pipelines ───────────────────────────────────────────── */
-router.post('/documents/:id/compile-v1',          requireAuth, ownDocument, ctrl.compileMasterV1);
-router.post('/documents/:id/regenerate',          requireAuth, ownDocument, ctrl.regenerateWithUnifiedContext);
-router.post('/documents/:id/diagnose',            requireAuth, ownDocument, ctrl.runDiagnosis);
+router.post('/documents/:id/compile-v1',          requireAuth, aiLimit, ownDocument, ctrl.compileMasterV1);
+router.post('/documents/:id/regenerate',          requireAuth, aiLimit, ownDocument, ctrl.regenerateWithUnifiedContext);
+router.post('/documents/:id/diagnose',            requireAuth, aiLimit, ownDocument, ctrl.runDiagnosis);
 router.post('/documents/:id/score',               requireAuth, ownDocument, ctrl.computeScoreEstimate);
-router.post('/documents/:id/compress-to-form',         requireAuth, ownDocument, ctrl.compressToForm);
-router.post('/documents/:id/compress-field/:fieldId',  requireAuth, ownDocument, ctrl.compressSingleField);
+router.post('/documents/:id/compress-to-form',         requireAuth, aiLimit, ownDocument, ctrl.compressToForm);
+router.post('/documents/:id/compress-field/:fieldId',  requireAuth, aiLimit, ownDocument, ctrl.compressSingleField);
 router.post('/documents/:id/seed-form-from-master',    requireAuth, ownDocument, ctrl.seedFormFromMaster);
 router.post('/documents/:id/coherence-pass',      requireAuth, ownDocument, ctrl.coherencePass);
 

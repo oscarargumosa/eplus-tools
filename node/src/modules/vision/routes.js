@@ -3,6 +3,7 @@
 
 const router = require('express').Router();
 const { requireAuth, optionalAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
 // Proxies al directory-api (Experience RAG) — requieren login.
@@ -21,7 +22,7 @@ router.get('/:id', optionalAuth, ctrl.getOne);
 router.patch('/:id', requireAuth, ctrl.update);
 router.post('/:id/publish', requireAuth, ctrl.publish);
 router.post('/:id/promote', requireAuth, ctrl.promote);
-router.post('/:id/generate', requireAuth, ctrl.generate);
+router.post('/:id/generate', requireAuth, aiLimit, ctrl.generate);
 
 // Referencias (proyectos similares adjuntados)
 router.post('/:id/references', requireAuth, ctrl.addReference);

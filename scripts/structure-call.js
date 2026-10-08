@@ -13,19 +13,20 @@
  * Usage:
  *   node scripts/structure-call.js [--only=<source_id>] [--limit=N] [--force]
  *
- * Cost: ~6000 input tokens + ~1500 output tokens per call with Sonnet 4.6
- *   = ~$2 / 100 calls (mostly input-driven).
+ * IA por SUSCRIPCIÓN: usa node/src/utils/claude-cli.js (ai-bridge si hay
+ * AI_BRIDGE_URL; si no, `claude -p` local). Nunca la API de pago.
+ * Concurrencia 2 (el máximo del puente); la cola de claude-cli reintenta 429.
  */
 'use strict';
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const Anthropic = require('@anthropic-ai/sdk').default;
+const claudeCli = require('../node/src/utils/claude-cli');
 
-const MODEL = process.env.AI_MODEL_EXTRACTION || 'claude-sonnet-4-6';
+const MODEL = process.env.AI_BRIDGE_MODEL || 'cli-default';
 const MAX_INPUT_CHARS = 30000; // ~7500 input tokens — covers scope/budget/eligibility
-const CONCURRENCY = 3;
+const CONCURRENCY = 2;
 
 const EXTRACT_DIR = path.join(__dirname, '..', 'data', 'call_extracts');
 const OUT_DIR     = path.join(__dirname, '..', 'data', 'call_structured');
@@ -34,8 +35,6 @@ const args = process.argv.slice(2);
 const FORCE = args.includes('--force');
 const ONLY  = (() => { const a = args.find(x => x.startsWith('--only=')); return a ? a.split('=')[1] : null; })();
 const LIMIT = (() => { const a = args.find(x => x.startsWith('--limit=')); return a ? parseInt(a.split('=')[1], 10) : null; })();
-
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 // IMPORTANT: keep this list in sync with the UI. Order matters — preserved verbatim.
 const FAQ_QUESTIONS = [
@@ -105,15 +104,12 @@ function hashText(s) { return crypto.createHash('sha256').update(s).digest('hex'
 
 async function callClaude(text) {
   const trimmed = text.slice(0, MAX_INPUT_CHARS);
-  const res = await client.messages.create({
-    model: MODEL,
-    max_tokens: 4000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: 'user', content: `TEXTO DEL CALL:\n\n${trimmed}\n\nDevuelve solo el JSON.` }],
-  });
-  const raw = res.content.find(c => c.type === 'text')?.text || '';
+  const prompt = `<instructions>\n${SYSTEM_PROMPT}\n</instructions>\n\nTEXTO DEL CALL:\n\n${trimmed}\n\nDevuelve solo el JSON.`;
+  const raw = await claudeCli.runSubscription(prompt, { timeoutMs: 240000, model: process.env.AI_BRIDGE_MODEL || undefined });
   // Strip optional markdown fences
-  const cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
+  let cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
+  const a = cleaned.indexOf('{'), b = cleaned.lastIndexOf('}');
+  if (a > 0 && b > a) cleaned = cleaned.slice(a, b + 1); // frase suelta antes del JSON
   let parsed;
   try { parsed = JSON.parse(cleaned); }
   catch (e) {
@@ -121,7 +117,8 @@ async function callClaude(text) {
     err.raw = raw; err.cleaned = cleaned;
     throw err;
   }
-  return { parsed, usage: res.usage };
+  // Sin contador real de tokens por el CLI: estimación 1 tok ≈ 3,5 caracteres
+  return { parsed, usage: { input_tokens: Math.ceil(prompt.length / 3.5), output_tokens: Math.ceil(raw.length / 3.5) } };
 }
 
 async function main() {
@@ -181,12 +178,8 @@ async function main() {
 
   await Promise.all(Array.from({ length: CONCURRENCY }, (_, i) => worker(i + 1)));
 
-  // Cost estimate (Sonnet 4.5/4.6: $3/M input + $15/M output)
-  const costIn  = totalIn  / 1_000_000 * 3;
-  const costOut = totalOut / 1_000_000 * 15;
   console.log(`\nDone. ok=${okCount} err=${errCount} skipped=${skipCount}`);
-  console.log(`Tokens: in=${totalIn.toLocaleString()} out=${totalOut.toLocaleString()}`);
-  console.log(`Cost (Sonnet pricing): $${(costIn + costOut).toFixed(3)}  (in=$${costIn.toFixed(3)} out=$${costOut.toFixed(3)})`);
+  console.log(`Tokens (estimados): in=${totalIn.toLocaleString()} out=${totalOut.toLocaleString()} — suscripción, sin coste por token`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

@@ -1,26 +1,14 @@
 /* ═══════════════════════════════════════════════════════════════
    AI Parse — Extract project content into Form Part B structure
-   Uses Claude API to parse document sections
+   Usa utils/ai.js → ai-bridge (suscripción) si AI_BRIDGE_URL existe.
    ═══════════════════════════════════════════════════════════════ */
 
-let Anthropic = null;
 const evalModel = require('../modules/evaluator/model');
-const aiContext = require('../utils/aiContext');
-const { logUsage } = require('../utils/ai');
+const ai = require('../utils/ai');
+const { extractJson } = require('../modules/master/anthropic-client');
 
-const MODEL = process.env.AI_MODEL || 'claude-sonnet-4-6';
-
-/* ── Initialize client (lazy load SDK) ───────────────────────── */
-function getClient() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    throw new Error('ANTHROPIC_API_KEY not configured');
-  }
-  if (!Anthropic) {
-    try { Anthropic = require('@anthropic-ai/sdk'); }
-    catch (e) { throw new Error('Anthropic SDK not installed. Run: npm install @anthropic-ai/sdk'); }
-  }
-  return new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-}
+// El puente admite prompts de hasta ~200 KB: dejamos sitio a campos e instrucciones.
+const BRIDGE_DOC_MAX_CHARS = parseInt(process.env.AI_PARSE_BRIDGE_MAX_CHARS || '150000', 10);
 
 /* ── Flatten template into leaf sections ─────────────────────── */
 function flattenSections(templateJson) {
@@ -85,7 +73,7 @@ function buildSectionPrompt(sections) {
 
 /* ── Main: parse in batches of sections ──────────────────────── */
 async function parseDocument({ jobId, instanceId, documentText, templateJson }) {
-  const client = getClient();
+  if (!ai.isConfigured()) throw Object.assign(new Error('IA no configurada (AI_BRIDGE_URL)'), { code: 'AI_NOT_CONFIGURED', status: 503 });
   const allSections = flattenSections(templateJson);
   const sectionsWithFields = allSections.filter(s => s.fields && s.fields.length > 0);
   const total = sectionsWithFields.length;
@@ -100,9 +88,13 @@ async function parseDocument({ jobId, instanceId, documentText, templateJson }) 
   // Truncate document to ~120K words (~150K tokens) to stay within context
   const words = documentText.split(/\s+/);
   const maxWords = 120000;
-  const docText = words.length > maxWords
+  let docText = words.length > maxWords
     ? words.slice(0, maxWords).join(' ') + '\n[... document truncated ...]'
     : documentText;
+  if (ai.useBridge() && docText.length > BRIDGE_DOC_MAX_CHARS) {
+    console.log(`[AI-PARSE] Document truncated to ${BRIDGE_DOC_MAX_CHARS} chars for ai-bridge`);
+    docText = docText.slice(0, BRIDGE_DOC_MAX_CHARS) + '\n[... document truncated ...]';
+  }
 
   console.log(`[AI-PARSE] Document: ${words.length} words${words.length > maxWords ? ` (truncated to ${maxWords})` : ''}`);
 
@@ -132,7 +124,7 @@ async function parseDocument({ jobId, instanceId, documentText, templateJson }) 
 
     try {
       const fieldsPrompt = buildSectionPrompt(batch);
-      const result = await parseBatch(client, docText, fieldsPrompt, batch);
+      const result = await parseBatch(docText, fieldsPrompt, batch);
 
       // Save each field value
       const vals = {};
@@ -175,18 +167,8 @@ async function parseDocument({ jobId, instanceId, documentText, templateJson }) 
 }
 
 /* ── Parse a batch of sections ───────────────────────────────── */
-async function parseBatch(client, documentText, fieldsPrompt, sections) {
-
-  const ctx = aiContext.get();
-  const t0 = Date.now();
-  let response;
-  try {
-    response = await client.messages.create({
-      model: MODEL,
-      max_tokens: 8192,
-      messages: [{
-      role: 'user',
-      content: `You are an expert at extracting structured content from Erasmus+ project proposals (Form Part B format).
+async function parseBatch(documentText, fieldsPrompt, sections) {
+  const prompt = `You are an expert at extracting structured content from Erasmus+ project proposals (Form Part B format).
 
 I have a project proposal document and I need you to extract the content for specific form sections and fields.
 
@@ -213,24 +195,23 @@ ${documentText}
 - Work packages might be described as "WP1", "WP2" etc. or under different naming.
 
 Return ONLY a valid JSON object. No markdown, no explanation, no code fences.
-Example: {"sec_1_1.s1_1_text": "The project addresses...", "cover.call_id": "ERASMUS-2026-YOUTH"}`
-      }],
-    });
-    logUsage({ ctx, model: MODEL, usage: response.usage, status: 'success', durationMs: Date.now() - t0 });
-  } catch (err) {
-    logUsage({ ctx, model: MODEL, usage: null, status: 'error', durationMs: Date.now() - t0 });
-    throw err;
-  }
+Example: {"sec_1_1.s1_1_text": "The project addresses...", "cover.call_id": "ERASMUS-2026-YOUTH"}`;
 
-  const text = response.content[0]?.text || '{}';
+  // ai.callClaude registra el uso en ai_usage_log (puente o API legado).
+  const text = await ai.callClaude('', prompt, 8192, { timeoutMs: 280000 });
 
   // Clean potential markdown wrapping
-  let cleaned = text.trim();
+  let cleaned = (text || '{}').trim();
   if (cleaned.startsWith('```')) {
     cleaned = cleaned.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
   }
-
-  return JSON.parse(cleaned);
+  try { return JSON.parse(cleaned); }
+  catch {
+    // El CLI a veces añade una frase antes/después del JSON
+    const parsed = extractJson(cleaned);
+    if (parsed && typeof parsed === 'object') return parsed;
+    throw new Error('La IA no devolvió un JSON válido');
+  }
 }
 
 module.exports = { parseDocument, flattenSections };

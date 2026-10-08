@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   Voice Input — Whisper-powered dictation for textareas
+   Voice Input — dictado (whisper.cpp local en el servidor) para textareas
    Records audio via MediaRecorder, sends to /v1/voice/transcribe,
    and inserts the transcribed text into the textarea.
    Uses the project's proposal_lang for automatic translation.
@@ -11,6 +11,27 @@ const VoiceInput = (() => {
   let mediaRec  = null;
   let stream    = null;
   let chunks    = [];
+  // Disponibilidad del dictado en el servidor (null = sin comprobar)
+  let available = null;
+  const UNAVAILABLE_MSG = 'El dictado por voz no está disponible en este momento. Puedes escribir el texto directamente.';
+
+  async function checkAvailable() {
+    if (available !== null) return available;
+    try {
+      const token = typeof API !== 'undefined' ? API.getToken() : null;
+      const r = await fetch('/v1/voice/status', {
+        headers: token ? { 'Authorization': `Bearer ${token}` } : {},
+        credentials: 'include',
+      });
+      const j = await r.json();
+      available = r.ok ? !!j.data?.available : true; // ante la duda, dejamos intentar
+    } catch { available = true; }
+    return available;
+  }
+
+  function showUnavailable() {
+    if (typeof Toast !== 'undefined') Toast.show(UNAVAILABLE_MSG, 'err');
+  }
 
   /* ── Get the target write language from the project ──────────── */
   // El idioma de trabajo se decide en el selector de Intake Step 1 (`#intake-f-lang`)
@@ -62,6 +83,7 @@ const VoiceInput = (() => {
 
   /* ── Start recording ─────────────────────────────────────────── */
   async function start(textarea, btn) {
+    if (!(await checkAvailable())) { showUnavailable(); return; }
     try {
       stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     } catch (err) {
@@ -104,7 +126,8 @@ const VoiceInput = (() => {
           if (typeof Toast !== 'undefined') Toast.show('Transcripción completada', 'ok');
         }
       } catch (err) {
-        if (typeof Toast !== 'undefined') Toast.show('Error: ' + err.message, 'err');
+        if (err.code === 'VOICE_UNAVAILABLE') { available = false; showUnavailable(); }
+        else if (typeof Toast !== 'undefined') Toast.show('Error: ' + err.message, 'err');
       } finally {
         btn.innerHTML = '<span class="material-symbols-outlined">mic</span>';
         btn.classList.remove('voice-loading');
@@ -156,8 +179,12 @@ const VoiceInput = (() => {
       body: form,
     });
 
-    const data = await resp.json();
-    if (!data.ok) throw new Error(data.error?.message || 'Transcription failed');
+    const data = await resp.json().catch(() => ({}));
+    if (!data.ok) {
+      const e = new Error(data.error?.message || 'No se pudo transcribir el audio');
+      e.code = data.error?.code || (resp.status === 503 ? 'VOICE_UNAVAILABLE' : '');
+      throw e;
+    }
     return data.text;
   }
 
