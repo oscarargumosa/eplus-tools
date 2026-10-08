@@ -778,7 +778,12 @@ async function _callAndParse(systemPrompt, userPrompt, maxTokens, label, project
   let status = 'success';
   try {
     raw = await ai.callClaude(systemPrompt, userPrompt, maxTokens);
-    parsed = JSON.parse(_stripJson(raw));
+    try { parsed = JSON.parse(_stripJson(raw)); }
+    catch (e) {
+      // Por el ai-bridge el CLI a veces añade una frase antes/después del JSON
+      parsed = require('../master/anthropic-client').extractJson(raw);
+      if (!parsed) throw e;
+    }
   } catch (err) {
     status = 'error';
     await _logGen({ projectId, userId, kind: 'dms-v2', pass: label, systemPrompt, userPrompt, raw, parsed: null, validatorLog: { error: err.message }, status, durationMs: Date.now() - t0 });
@@ -1373,7 +1378,9 @@ Return JSON only.`;
 
   const t0 = Date.now();
   const raw = await ai.callClaude(system, user, 1500);
-  const parsed = JSON.parse(_stripJson(raw));
+  let parsed;
+  try { parsed = JSON.parse(_stripJson(raw)); }
+  catch (e) { parsed = require('../master/anthropic-client').extractJson(raw); if (!parsed) throw e; }
   await _logGen({ projectId: d.project_id, userId, kind: 'dms-v2', pass: 'regen-d', systemPrompt: system, userPrompt: user, raw, parsed, validatorLog: null, status: 'success', durationMs: Date.now() - t0 });
 
   await db.execute(

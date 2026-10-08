@@ -12,7 +12,7 @@
  */
 'use strict';
 
-const { callClaude } = require('../../utils/ai');
+const { callClaude, useBridge } = require('../../utils/ai');
 const { extractJson } = require('../master/anthropic-client');
 
 const LANG_NAMES = {
@@ -198,7 +198,9 @@ async function translateContext(ctx, srcLang, targetLang) {
   if (!keys.length) return { translated: 0, skipped: 'empty' };
 
   // Heurística: si el payload es > ~80k chars, partimos en chunks de ≤80k.
-  const CHUNK_CHAR_BUDGET = 80_000;
+  // Por el ai-bridge (claude -p) la respuesta debe caber en ~4-5 min:
+  // trozos más pequeños (~7k tokens de salida cada uno).
+  const CHUNK_CHAR_BUDGET = useBridge() ? 25_000 : 80_000;
   const chunks = [];
   let current = {};
   let currentSize = 0;
@@ -225,7 +227,7 @@ async function translateContext(ctx, srcLang, targetLang) {
     // dado que cada chunk de input ≤ 80k chars ≈ 23k tokens y la traducción
     // suele tener un ratio similar (~+15%).
     const maxTokens = 8192;
-    const raw = await callClaude(system, userPrompt, maxTokens);
+    const raw = await callClaude(system, userPrompt, maxTokens, { timeoutMs: 280000 });
     const parsed = extractJson(raw);
     if (!parsed || typeof parsed !== 'object') {
       console.warn('[exporter/translate] LLM returned invalid JSON, skipping chunk of', Object.keys(chunk).length, 'keys');

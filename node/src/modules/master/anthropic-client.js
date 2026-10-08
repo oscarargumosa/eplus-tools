@@ -27,10 +27,12 @@
 
 const pool = require('../../utils/db');
 const aiContext = require('../../utils/aiContext');
+const ai = require('../../utils/ai');
 
 let Anthropic = null;
 
 function getClient() {
+  if (ai.useBridge()) throw new Error('API de Anthropic desactivada: este servidor usa el ai-bridge');
   if (!Anthropic) Anthropic = require('@anthropic-ai/sdk');
   const key = process.env.ANTHROPIC_API_KEY;
   if (!key) throw new Error('ANTHROPIC_API_KEY not configured');
@@ -102,6 +104,22 @@ async function callWithCache({
   ctx = {},
   endpoint = null,
 }) {
+  // Con AI_BRIDGE_URL: suscripción vía ai-bridge, nunca la API de pago.
+  // El CLI no tiene prompt caching ni streaming: se concatena todo en un
+  // prompt y onText recibe el texto completo de una vez al final.
+  if (ai.useBridge()) {
+    if (stream) throw new Error('callWithCache: stream crudo no disponible con ai-bridge');
+    const sys = systemBlocks.filter(b => b && b.content).map(b => b.content).join('\n\n');
+    const usr = userBlocks.filter(b => b && b.content).map(b => b.content).join('\n\n');
+    if (!sys && !usr) throw new Error('callWithCache: at least one system or user block required');
+    const t0b = Date.now();
+    const text = await ai.runBridge(ai.buildSinglePrompt(sys, usr, maxTokens), { ctx, endpoint, timeoutMs: 280000 });
+    const onText = arguments[0]?.onText;
+    if (typeof onText === 'function') { try { onText(text, text); } catch (_) { /* UI */ } }
+    const usage = { input_tokens: estimateTokens(sys + usr), output_tokens: estimateTokens(text) };
+    return { text, usage, stopReason: 'end_turn', model: process.env.AI_BRIDGE_MODEL || 'ai-bridge', durationMs: Date.now() - t0b, costUsd: 0 };
+  }
+
   const client = getClient();
   const model = getModel();
   const fullCtx = { ...aiContext.get(), ...ctx };
@@ -307,6 +325,7 @@ function extractJson(text) {
 
 function selfCheck() {
   return {
+    viaBridge: ai.useBridge(),
     hasApiKey: !!process.env.ANTHROPIC_API_KEY,
     apiKeyPrefix: process.env.ANTHROPIC_API_KEY ? process.env.ANTHROPIC_API_KEY.substring(0, 12) + '...' : null,
     model: getModel(),
