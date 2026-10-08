@@ -458,7 +458,7 @@
             <b>${i + 1}. ${esc(q.question)}</b>
             <p class="${q.chosen === q.correct ? 'ac-review__ok' : 'ac-review__ko'}">${q.chosen === q.correct ? 'Correcta' : 'Incorrecta'}: ${esc(q.options[q.chosen])}</p>
             ${q.feedback ? `<p class="ac-review__fb">${esc(q.feedback)}</p>` : ''}
-            ${q.chosen !== q.correct ? `<p><b>Respuesta correcta:</b> ${esc(q.options[q.correct])}</p>${q.correctFeedback ? `<p class="ac-review__fb">${esc(q.correctFeedback)}</p>` : ''}` : ''}
+            ${q.chosen !== q.correct ? `<p class="ac-review__right"><b>Respuesta correcta:</b> ${esc(q.options[q.correct])}</p>${q.correctFeedback ? `<p class="ac-review__fb">${esc(q.correctFeedback)}</p>` : ''}` : ''}
           </div>`).join('')}</div>`;
         $('#ac-test-start').onclick = startTest;
         $('#ac-test').scrollIntoView({ behavior: 'smooth', block: 'start' });

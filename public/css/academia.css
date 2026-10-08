@@ -16,6 +16,9 @@
   --ac-line: #d9d6e3;
   --ac-error: #ba1a1a;
   --ac-error-bg: #ffdad6;
+  /* Verde solo para las respuestas acertadas del test (lo pidió Óscar, 8-oct-2026;
+     DESIGN.md lo excluye en el resto de la interfaz). */
+  --ac-ok: #1e7d3a;
   --ac-r: 16px;
   --ac-r-sm: 8px;
   --ac-shadow: 0 1px 2px rgba(27, 20, 100, .06), 0 6px 20px rgba(27, 20, 100, .06);
@@ -193,7 +196,8 @@ body { margin: 0; background: var(--ac-bg); color: var(--ac-ink); font-family: '
 .ac-review { margin-top: 18px; display: flex; flex-direction: column; gap: 14px; }
 .ac-review__item { border-top: 1px solid var(--ac-surface); padding-top: 14px; }
 .ac-review__item p { margin: 6px 0 0; font-size: 14px; }
-.ac-review__ok { color: var(--ac-navy); font-weight: 600; }
+.ac-review__ok { color: var(--ac-ok); font-weight: 600; }
+.ac-review__right { color: var(--ac-ok); }
 .ac-review__ko { color: var(--ac-error); font-weight: 600; }
 .ac-review__fb { color: var(--ac-muted); }
 
