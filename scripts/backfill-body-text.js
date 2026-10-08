@@ -16,8 +16,6 @@
  */
 
 require('dotenv').config();
-const fs = require('fs/promises');
-const path = require('path');
 const mysql = require('mysql2/promise');
 const { extractText } = require('../node/src/services/vectorize');
 
@@ -54,9 +52,8 @@ async function run() {
   let ok = 0, skipped = 0, failed = 0;
   for (const doc of rows) {
     try {
-      const rel = (doc.storage_path || '').replace(/^\/+/, '');
-      const fullPath = path.join(__dirname, '..', 'public', rel);
-      const buffer = await fs.readFile(fullPath);
+      // Carpeta privada primero, luego la ruta antigua en public/uploads
+      const buffer = await require('../node/src/utils/private-storage').readStored(doc.storage_path);
       const text = await extractText(buffer, doc.file_type);
       if (!text || text.trim().length === 0) {
         console.warn(`  [skip] doc ${doc.id} "${doc.title}" — no text extracted`);

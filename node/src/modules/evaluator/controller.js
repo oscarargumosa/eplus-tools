@@ -6,6 +6,7 @@ const intakeModel = require('../intake/model');
 const pool = require('../../utils/db');
 const { extractText } = require('../../services/vectorize');
 const { processDocument } = require('../../services/vectorize');
+const { safeExt } = require('../../utils/private-storage');
 
 const ok  = (res, data) => res.json({ ok: true, data });
 const err = (res, msg, status = 400) =>
@@ -81,10 +82,10 @@ exports.uploadAndParse = async (req, res) => {
     const inst = await m.getUserFormInstance(req.params.id, req.user.id);
     if (!inst) return err(res, 'Not found', 404);
 
-    // Save file to disk
-    const ext = path.extname(req.file.originalname);
+    // Save file to disk (carpeta privada, subcarpeta evaluator)
+    const ext = safeExt(req.file.originalname);
     const filename = `eval-${req.user.id}-${Date.now()}${ext}`;
-    const storagePath = await docModel.saveFile(req.file.buffer, filename);
+    const storagePath = await docModel.saveFile(req.file.buffer, filename, 'evaluator');
 
     // Create document record
     const doc = await docModel.createDocument({
@@ -103,7 +104,7 @@ exports.uploadAndParse = async (req, res) => {
     // Vectorize in background
     processDocument(doc.id, { storage_path: storagePath, file_type: req.file.mimetype })
       .then(() => docModel.updateDocument(doc.id, { status: 'active' }))
-      .catch(e => { console.error('[EVAL-VECTORIZE]', e.message); docModel.updateDocument(doc.id, { status: 'error' }); });
+      .catch(e => { console.error('[EVAL-VECTORIZE]', e.message); docModel.updateDocument(doc.id, { status: 'error' }).catch(() => {}); });
 
     // Create parse job
     const job = await m.createParseJob({

@@ -8,8 +8,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const db = require('../utils/db');
 const { processDocument } = require('./vectorize');
-
-const UPLOAD_DIR = path.join(__dirname, '../../../public/uploads/research');
+const storage = require('../utils/private-storage');
 
 /**
  * Download and process a research source by ID
@@ -24,9 +23,10 @@ async function downloadAndVectorize(sourceId) {
   console.log(`[DOWNLOAD] Starting download for source ${sourceId}: ${source.title?.slice(0, 60)}`);
 
   // 2. Download PDF
-  await fs.mkdir(UPLOAD_DIR, { recursive: true });
+  // Carpeta privada (no se sirve por estático)
+  const uploadDir = await storage.dirFor('research');
   const filename = `source-${sourceId}-${Date.now()}.pdf`;
-  const filePath = path.join(UPLOAD_DIR, filename);
+  const filePath = path.join(uploadDir, filename);
   const relativePath = `uploads/research/${filename}`;
 
   await downloadFile(source.pdf_url, filePath);
@@ -53,7 +53,7 @@ async function downloadAndVectorize(sourceId) {
 
   // 4. Vectorize
   console.log(`[DOWNLOAD] Vectorizing source ${sourceId}...`);
-  await processDocument(null, { storage_path: filePath, file_type: 'application/pdf' }, sourceId);
+  await processDocument(null, { storage_path: relativePath, file_type: 'application/pdf' }, sourceId);
 
   // 5. Update status to vectorized
   await db.execute(

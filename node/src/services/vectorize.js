@@ -1,11 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
    Vectorize Service — extract text, chunk, embed, store
-   Reads files from local disk (public/uploads/documents/)
+   Reads files from local disk (carpeta privada, ver utils/private-storage)
    ═══════════════════════════════════════════════════════════════ */
 
-const fs = require('fs/promises');
-const path = require('path');
 const db = require('../utils/db');
+const storage = require('../utils/private-storage');
 const { generateEmbedding } = require('./embeddings');
 
 const CHUNK_SIZE   = 500;  // words per chunk
@@ -63,10 +62,9 @@ async function processDocument(documentId, meta, sourceId) {
 
   try {
     // 1. Read file from local disk
-    // storage_path is like "/uploads/documents/file.pdf" — always resolve relative to public/
-    const rel = meta.storage_path.replace(/^\/+/, '');
-    const fullPath = path.join(__dirname, '../../..', 'public', rel);
-    const buffer = await fs.readFile(fullPath);
+    // storage_path es la ruta lógica "/uploads/<tipo>/file.pdf": se busca en la
+    // carpeta privada y, si no está, en public/uploads (filas antiguas)
+    const buffer = await storage.readStored(meta.storage_path);
 
     // 2. Extract text
     const text = await extractText(buffer, meta.file_type);

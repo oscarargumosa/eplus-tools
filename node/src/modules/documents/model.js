@@ -1,12 +1,6 @@
 /* ── Documents Model — MySQL + local disk ─────────────────────── */
 const db = require('../../utils/db');
-const fs = require('fs/promises');
-const path = require('path');
-
-const UPLOAD_DIR = path.join(__dirname, '../../../../public/uploads/documents');
-
-/* ── Ensure upload directory exists ─────────────────────────── */
-fs.mkdir(UPLOAD_DIR, { recursive: true }).catch(() => {});
+const storage = require('../../utils/private-storage');
 
 /* ── Documents CRUD ──────────────────────────────────────────── */
 
@@ -56,25 +50,74 @@ async function deleteDocument(id) {
   await db.execute("UPDATE documents SET status = 'deleted' WHERE id = ?", [id]);
 }
 
-/* ── File storage (local disk) ───────────────────────────────── */
+/* ── File storage (carpeta privada, ver utils/private-storage) ── */
 
-async function saveFile(buffer, filename) {
-  const filePath = path.join(UPLOAD_DIR, filename);
-  await fs.writeFile(filePath, buffer);
-  return '/uploads/documents/' + filename;
+// kind: 'documents' (por defecto) o 'evaluator'
+async function saveFile(buffer, filename, kind = 'documents') {
+  return storage.saveStored(kind, filename, buffer);
 }
 
 async function removeFile(storagePath) {
-  try {
-    const fullPath = path.join(__dirname, '../../../../public', storagePath);
-    await fs.unlink(fullPath);
-  } catch { /* file may not exist */ }
+  await storage.removeStored(storagePath);
 }
 
-/** Read file from disk as Buffer */
+/** Read file from disk as Buffer (privado primero, luego ruta antigua) */
 async function readFile(storagePath) {
-  const fullPath = path.join(__dirname, '../../../../public', storagePath);
-  return fs.readFile(fullPath);
+  return storage.readStored(storagePath);
+}
+
+/* ── Control de acceso ───────────────────────────────────────────
+   Un usuario ve un documento si: es admin, es de plataforma (oficial,
+   visible para todos a propósito), es suyo (user_private), es de un
+   proyecto suyo (owner_type 'project') o está enlazado a un proyecto suyo. */
+
+async function isProjectOwner(projectId, userId) {
+  if (!projectId || !userId) return false;
+  const [rows] = await db.execute('SELECT 1 FROM projects WHERE id = ? AND user_id = ? LIMIT 1', [String(projectId), userId]);
+  return rows.length > 0;
+}
+
+async function canAccessDocument(user, doc) {
+  if (!user || !doc) return false;
+  if (user.role === 'admin') return true;
+  if (doc.status === 'deleted') return false;
+  if (doc.owner_type === 'platform') return true;
+  if (doc.owner_type === 'user_private') return String(doc.owner_id) === String(user.id);
+  if (doc.owner_type === 'project' && await isProjectOwner(doc.owner_id, user.id)) return true;
+  const [rows] = await db.execute(
+    `SELECT 1 FROM project_documents pd JOIN projects p ON p.id = pd.project_id
+     WHERE pd.document_id = ? AND p.user_id = ? LIMIT 1`,
+    [doc.id, user.id]
+  );
+  return rows.length > 0;
+}
+
+/** Mismo criterio en SQL, para filtrar en bloque (alias de documents). */
+function accessibleDocsSql(user, a = 'd') {
+  if (user?.role === 'admin') return { sql: '1=1', params: [] };
+  return {
+    sql: `(${a}.owner_type = 'platform'
+      OR (${a}.owner_type = 'user_private' AND ${a}.owner_id = ?)
+      OR (${a}.owner_type = 'project' AND ${a}.owner_id COLLATE utf8mb4_unicode_ci IN (SELECT id FROM projects WHERE user_id = ?))
+      OR ${a}.id IN (SELECT pd.document_id FROM project_documents pd JOIN projects p ON p.id = pd.project_id WHERE p.user_id = ?))`,
+    params: [user.id, user.id, user.id],
+  };
+}
+
+/** Quita lo que no debe salir al cliente (ruta en disco, texto completo). */
+function publicDoc(doc) {
+  if (!doc) return doc;
+  const { storage_path, body_text, ...rest } = doc;
+  return rest;
+}
+
+/** Documentos que llevan >N min en 'processing' (el proceso murió a medias) → 'error'. */
+async function failStaleProcessing(minutes = 30) {
+  const [r] = await db.execute(
+    `UPDATE documents SET status = 'error'
+     WHERE status = 'processing' AND updated_at < (NOW() - INTERVAL ${parseInt(minutes, 10)} MINUTE)`
+  );
+  return r.affectedRows || 0;
 }
 
 /* ── Document ↔ Program links ────────────────────────────────── */
@@ -162,6 +205,11 @@ module.exports = {
   saveFile,
   removeFile,
   readFile,
+  isProjectOwner,
+  canAccessDocument,
+  accessibleDocsSql,
+  publicDoc,
+  failStaleProcessing,
   linkDocumentToProgram,
   unlinkDocumentFromProgram,
   getDocumentsByProgram,
