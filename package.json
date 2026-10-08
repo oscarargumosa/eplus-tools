@@ -34,10 +34,21 @@
     "pg": "^8.20.0",
     "pizzip": "^3.2.0",
     "resend": "^6.12.2",
-    "uuid": "^10.0.0",
+    "uuid": "^11.1.1",
     "xlsx": "^0.18.5"
   },
   "engines": {
     "node": ">=20"
+  },
+  "overrides": {
+    "@xenova/transformers": {
+      "sharp": "^0.35.5"
+    },
+    "onnx-proto": {
+      "protobufjs": "^7.6.6"
+    },
+    "gaxios": {
+      "uuid": "$uuid"
+    }
   }
 }
