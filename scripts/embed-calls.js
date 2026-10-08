@@ -14,9 +14,19 @@
  * Idempotent: skips source_ids whose vector file exists unless --force.
  *
  * Usage:
- *   node scripts/embed-calls.js [--force] [--limit=N] [--only=<source_id>]
+ *   node scripts/embed-calls.js --allow-paid-api [--force] [--limit=N] [--only=<source_id>]
+ *
+ * ⚠ OBSOLETO — usa la API DE PAGO de OpenAI. Regla del dueño: IA solo por
+ * suscripción. El RAG ya lee el índice local: usa scripts/embed-calls-local.js.
+ * Este script se niega a ejecutarse sin --allow-paid-api.
  */
 'use strict';
+if (!process.argv.includes('--allow-paid-api')) {
+  console.error('embed-calls.js usa la API de pago de OpenAI y está desactivado.\n' +
+    'Usa en su lugar: nice -n 15 node scripts/embed-calls-local.js (embeddings locales, sin coste).\n' +
+    'Solo con autorización expresa de Óscar: añade --allow-paid-api.');
+  process.exit(2);
+}
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');

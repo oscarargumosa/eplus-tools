@@ -52,3 +52,4 @@ public/academy-media/*.mp4
 .env.apuntaba-a-PROD.bak
 data/call_vectors/
 data/call_structured/
+/data/call_vectors_local/
