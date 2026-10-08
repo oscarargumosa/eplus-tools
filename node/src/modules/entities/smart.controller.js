@@ -11,8 +11,9 @@ const { callClaude, enforceRefineCap } = require('../../utils/ai');
 const pool = require('../../utils/db');
 
 const ok  = (res, data) => res.json({ ok: true, data });
-const err = (res, msg, status = 400) =>
-  res.status(status).json({ ok: false, error: { message: msg } });
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const err = (res, msg, status = 400) => sendError(res, status, { message: msg });
 
 /* ── Extrae JSON limpio de un texto de Claude (puede llevar md fences) */
 function extractJson(text) {

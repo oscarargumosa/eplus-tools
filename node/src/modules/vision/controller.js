@@ -4,8 +4,9 @@
 const model = require('./model');
 const dir = require('../../utils/directory-api');
 
-const fail = (res, code, message, status = 400) =>
-  res.status(status).json({ ok: false, error: { code, message } });
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const fail = (res, code, message, status = 400) => sendError(res, status, { code, message });
 
 /* GET / — mis visiones (owner) */
 exports.list = async (req, res, next) => {

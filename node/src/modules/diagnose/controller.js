@@ -9,8 +9,10 @@ const applicator = require('./engine/applicator');
 function ok(res, data) {
   return res.json({ ok: true, data });
 }
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
 function bad(res, code, message, status = 400) {
-  return res.status(status).json({ ok: false, error: { code, message } });
+  return sendError(res, status, { code, message });
 }
 
 exports.listPatterns = async (req, res, next) => {

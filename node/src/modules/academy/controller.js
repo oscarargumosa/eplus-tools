@@ -3,8 +3,9 @@
 const model = require('./model');
 
 const ok  = (res, data) => res.json({ ok: true, data });
-const bad = (res, code, message, status = 400) =>
-  res.status(status).json({ ok: false, error: { code, message } });
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const bad = (res, code, message, status = 400) => sendError(res, status, { code, message });
 
 exports.curriculum = (req, res) => ok(res, model.getCurriculum());
 

@@ -77,7 +77,6 @@ exports.transcribe = async (req, res) => {
     console.log(`[Voice] Detected: ${detectedLang} (${detectedISO}), Target: ${writeLang}, Translated: ${needsTranslation}`);
     res.json({ ok: true, text, detected: detectedLang, translated: !!needsTranslation });
   } catch (err) {
-    console.error('[Voice] Transcription error:', err.message);
-    res.status(500).json({ ok: false, error: { code: 'TRANSCRIBE_FAIL', message: err.message } });
+    require('../../utils/httpError').sendError(res, 500, { code: 'TRANSCRIBE_FAIL', message: err.message }, err);
   }
 };

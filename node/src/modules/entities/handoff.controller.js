@@ -11,8 +11,9 @@ const uuid = require('../../utils/uuid');
 const sl   = require('./shortlists.model');
 
 const ok  = (res, data) => res.json({ ok: true, data });
-const err = (res, msg, status = 400) =>
-  res.status(status).json({ ok: false, error: { message: msg } });
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const err = (res, msg, status = 400) => sendError(res, status, { message: msg });
 
 /* ── Helpers ──────────────────────────────────────────────────── */
 
