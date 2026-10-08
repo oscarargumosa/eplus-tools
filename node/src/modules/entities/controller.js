@@ -10,10 +10,31 @@ const ok  = (res, data) => res.json({ ok: true, data });
 const err = (res, msg, status = 400) =>
   res.status(status).json({ ok: false, error: { message: msg } });
 
+/* ── Datos de contacto solo con sesión ───────────────────────────
+   Sin sesión se quitan email, teléfonos y dirección postal detallada
+   (ciudad, país y coordenadas se quedan: las usa el Atlas). */
+const CONTACT_KEYS = ['email', 'emails', 'extra_emails', 'phone', 'phones', 'extra_phones',
+  'telephone', 'telephone1', 'fax', 'street', 'address', 'postal_code', 'post_code'];
+
+function stripContact(o) {
+  if (!o || typeof o !== 'object') return o;
+  const out = { ...o };
+  for (const k of CONTACT_KEYS) delete out[k];
+  if (out.enrichment && typeof out.enrichment === 'object') {
+    out.enrichment = { ...out.enrichment };
+    for (const k of CONTACT_KEYS) delete out.enrichment[k];
+  }
+  out.contact_hidden = true;
+  return out;
+}
+const forViewer = (req, o) => (req.user ? o : stripContact(o));
+
 /* ── List & search (mismo endpoint, filtros opcionales) ──────── */
 exports.listEntities = async (req, res) => {
   try {
-    ok(res, await m.listEntities(req.query));
+    const data = await m.listEntities(req.query);
+    if (!req.user && data && Array.isArray(data.rows)) data.rows = data.rows.map(stripContact);
+    ok(res, data);
   } catch (e) { err(res, e.message, 500); }
 };
 
@@ -22,7 +43,7 @@ exports.getEntity = async (req, res) => {
   try {
     const entity = await m.getEntityById(req.params.oid);
     if (!entity) return err(res, 'Entity not found', 404);
-    ok(res, entity);
+    ok(res, forViewer(req, entity));
   } catch (e) { err(res, e.message, 500); }
 };
 
@@ -30,7 +51,8 @@ exports.getEntity = async (req, res) => {
 exports.listSimilar = async (req, res) => {
   try {
     const limit = parseInt(req.query.limit, 10) || 3;
-    ok(res, await m.listSimilar(req.params.oid, limit));
+    const list = await m.listSimilar(req.params.oid, limit);
+    ok(res, req.user || !Array.isArray(list) ? list : list.map(stripContact));
   } catch (e) { err(res, e.message, 500); }
 };
 
