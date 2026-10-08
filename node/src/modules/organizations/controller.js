@@ -80,11 +80,25 @@ exports.listOrgs = async (req, res) => {
   } catch (e) { err(res, e.message, 500); }
 };
 
+/* Ficha completa (contactos, representante legal, personal clave, hijos)
+   solo para el dueño de la organización o admin; el resto ve campos públicos. */
+const ORG_PUBLIC_FIELDS = ['id', 'organization_name', 'acronym', 'org_type', 'country', 'city',
+  'website', 'logo_url', 'description', 'pic', 'oid', 'is_public'];
+
+async function canSeeFullOrg(req, orgId, ownerUserId) {
+  if (req.user.role === 'admin') return true;
+  if (ownerUserId && ownerUserId === req.user.id) return true;
+  return m.isOrgOwner(req.user.id, orgId);
+}
+
 exports.getOrg = async (req, res) => {
   try {
     const org = await m.getOrgById(req.params.id);
     if (!org) return err(res, 'Organization not found', 404);
-    ok(res, org);
+    if (await canSeeFullOrg(req, org.id, org.owner_user_id)) return ok(res, org);
+    const pub = {};
+    for (const f of ORG_PUBLIC_FIELDS) pub[f] = org[f] ?? null;
+    ok(res, pub);
   } catch (e) { err(res, e.message, 500); }
 };
 
@@ -105,6 +119,9 @@ exports.fromEntity = async (req, res) => {
 
 exports.listChildren = async (req, res) => {
   try {
+    const org = await m.getOrgOwnerInfo(req.params.orgId);
+    if (!org) return err(res, 'Organization not found', 404);
+    if (!await canSeeFullOrg(req, org.id, org.owner_user_id)) return err(res, 'Forbidden', 403);
     ok(res, await m.listChildren(req.params.type, req.params.orgId));
   } catch (e) { err(res, e.message, 500); }
 };

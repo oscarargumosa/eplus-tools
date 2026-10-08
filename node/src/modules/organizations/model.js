@@ -152,6 +152,12 @@ async function deleteChild(type, id, orgId) {
 }
 
 /* ── Ownership check ─────────────────────────────────────────── */
+// Solo id + owner_user_id (sin cargar hijos) para comprobar acceso.
+async function getOrgOwnerInfo(id) {
+  const [[org]] = await pool.query('SELECT id, owner_user_id FROM organizations WHERE id=?', [id]);
+  return org || null;
+}
+
 async function isOrgOwner(userId, orgId) {
   const [rows] = await pool.query(
     'SELECT 1 FROM user_organizations WHERE user_id=? AND organization_id=?',
@@ -366,6 +372,6 @@ async function upsertFromEntity(oid) {
 
 module.exports = {
   getOrgById, getOrgByUserId, getOrgsByUserId, upsertOrg, linkUserToOrg, deleteOrg,
-  listOrgs, listChildren, upsertChild, deleteChild, isOrgOwner,
+  listOrgs, listChildren, upsertChild, deleteChild, isOrgOwner, getOrgOwnerInfo,
   orsLookup, updateOrgCoords, backfillOidFromPic, upsertFromEntity,
 };

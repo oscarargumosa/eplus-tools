@@ -1199,7 +1199,7 @@ const Organizations = (() => {
             ${detailRow('Ciudad', org.city)}
             ${detailRow('Dirección', org.address)}
             ${detailRow('Código postal', org.post_code)}
-            ${detailRow('Web', org.website ? `<a href="${esc(org.website)}" target="_blank" class="text-primary underline">${esc(org.website)}</a>` : null)}
+            ${detailRow('Web', safeHref(org.website) ? `<a href="${safeHref(org.website)}" target="_blank" rel="noopener noreferrer" class="text-primary underline">${esc(org.website)}</a>` : esc(org.website), true)}
             ${detailRow('Email', org.email)}
             ${detailRow('Teléfono', org.telephone1)}
             ${detailRow('Non-profit', org.is_non_profit ? 'Sí' : 'No')}
@@ -1241,13 +1241,28 @@ const Organizations = (() => {
   function detailSection(title, content) {
     return `<div><h3 class="text-sm font-bold text-primary mb-2">${title}</h3><div>${content}</div></div>`;
   }
-  function detailRow(label, val) {
+  // val se escapa salvo que venga ya como HTML seguro (isHtml).
+  function detailRow(label, val, isHtml) {
     if (!val) return '';
-    return `<div class="flex gap-2 text-sm py-0.5"><span class="text-on-surface-variant w-40 shrink-0">${label}</span><span class="font-medium">${val}</span></div>`;
+    return `<div class="flex gap-2 text-sm py-0.5"><span class="text-on-surface-variant w-40 shrink-0">${label}</span><span class="font-medium">${isHtml ? val : esc(val)}</span></div>`;
   }
 
   /* ── Utils ──────────────────────────────────────────────────── */
   function esc(v) { if (v == null) return ''; const d = document.createElement('div'); d.textContent = String(v); return d.innerHTML; }
+  // Enlaces externos: solo http/https (o los esquemas de `allow`, p. ej. mailto:).
+  // Cualquier otro (javascript:, data:…) → '' (sin enlace). Devuelve el valor
+  // ya escapado para meterlo en un atributo href="…".
+  function safeHref(url, allow) {
+    if (url == null) return '';
+    let u = String(url).trim();
+    if (!u) return '';
+    if (!/^[a-z][a-z0-9+.-]*:(?!\d)/i.test(u)) u = (u.startsWith('//') ? 'https:' : 'https://') + u;
+    let proto;
+    try { proto = new URL(u).protocol; } catch (e) { return ''; }
+    if (!(allow || ['http:', 'https:']).includes(proto)) return '';
+    return u.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
   function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
 
   /* ── Public API ─────────────────────────────────────────────── */
