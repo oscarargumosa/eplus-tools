@@ -98,15 +98,16 @@ router.patch ('/data/eval/criteria/:id',           guard, ctrl.upsertEvalCriteri
 router.delete('/data/eval/criteria/:id',           guard, ctrl.deleteEvalCriterion);
 
 /* ── Form templates & instances ───────────────────────────────── */
+// Instancias = borradores de usuarios: solo admin (scribe no; IDOR).
 router.get   ('/data/forms/templates',              guard, ctrl.listFormTemplates);
 router.get   ('/data/forms/templates/:id',          guard, ctrl.getFormTemplate);
-router.get   ('/data/forms/instances',              guard, ctrl.listFormInstances);
-router.post  ('/data/forms/instances',              guard, ctrl.createFormInstance);
-router.get   ('/data/forms/instances/:id',          guard, ctrl.getFormInstance);
-router.get   ('/data/forms/instances/:id/values',   guard, ctrl.getFormValues);
-router.put   ('/data/forms/instances/:id/values',   guard, ctrl.saveFormValues);
-router.patch ('/data/forms/instances/:id',          guard, ctrl.updateFormInstance);
-router.delete('/data/forms/instances/:id',          guard, ctrl.deleteFormInstance);
+router.get   ('/data/forms/instances',              adminGuard, ctrl.listFormInstances);
+router.post  ('/data/forms/instances',              adminGuard, ctrl.createFormInstance);
+router.get   ('/data/forms/instances/:id',          adminGuard, ctrl.getFormInstance);
+router.get   ('/data/forms/instances/:id/values',   adminGuard, ctrl.getFormValues);
+router.put   ('/data/forms/instances/:id/values',   adminGuard, ctrl.saveFormValues);
+router.patch ('/data/forms/instances/:id',          adminGuard, ctrl.updateFormInstance);
+router.delete('/data/forms/instances/:id',          adminGuard, ctrl.deleteFormInstance);
 
 /* ── TASK-008 · Prompt inspector + prompt blocks (admin-only) ──── */
 router.get  ('/inspector/generations',        adminGuard, ctrl.listGenerations);
