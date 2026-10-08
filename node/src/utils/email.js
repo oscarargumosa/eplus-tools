@@ -31,16 +31,15 @@ function appUrl() {
 
 /**
  * Send an email via Resend. Returns { ok, id?, error? }.
- * If RESEND_API_KEY is missing, logs the email to console and returns ok=true
+ * If RESEND_API_KEY is missing, logs recipient (masked) + subject and returns ok=true
  * with a "mock" flag — useful for dev environments without keys.
  */
 async function sendEmail({ to, subject, html, text }) {
   const client = getClient();
   if (!client) {
-    console.warn('[email] RESEND_API_KEY missing — logging instead of sending');
-    console.warn(`[email] TO: ${to}`);
-    console.warn(`[email] SUBJECT: ${subject}`);
-    console.warn(`[email] BODY:\n${text || html?.replace(/<[^>]+>/g, '') || ''}`);
+    // Sin clave no se envía. No se vuelca el cuerpo: lleva enlaces con token.
+    const { maskEmail } = require('./logger');
+    console.warn(`[email] RESEND_API_KEY missing — not sent. TO: ${maskEmail(to)} SUBJECT: ${subject}`);
     return { ok: true, mock: true };
   }
   try {
@@ -52,7 +51,7 @@ async function sendEmail({ to, subject, html, text }) {
       text: text || undefined
     });
     if (result.error) {
-      console.error('[email] Resend error:', result.error);
+      console.error('[email] Resend error:', require('./logger').scrub(JSON.stringify(result.error)));
       return { ok: false, error: result.error.message || String(result.error) };
     }
     return { ok: true, id: result.data?.id };

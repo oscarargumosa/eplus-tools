@@ -99,7 +99,7 @@ const OidcController = {
           client_secret: CLIENT_SECRET(),
         }),
       });
-      if (!tr.ok) { console.error('[OIDC] token exchange failed:', tr.status, await tr.text()); return res.redirect('/?login=error'); }
+      if (!tr.ok) { console.error('[OIDC] token exchange failed:', tr.status); return res.redirect('/?login=error'); }
       const tok = await tr.json();
 
       // 2) userinfo → email + nombre

@@ -3,6 +3,7 @@
 const db = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
 const ghlSync = require('../ghl/sync');
+const { maskEmail } = require('../../utils/logger');
 
 const TAG_RANK = { cold: 0, warm: 1, hot: 2 };
 
@@ -16,12 +17,12 @@ function _ghlSync(email, tag, source) {
     .upsertContact({ email, tag, source })
     .then(res => {
       if (res?.ok) {
-        console.log(`[GHL] synced ${email} → ${tag}${res.isNew ? ' (new contact)' : ''}`);
+        console.log(`[GHL] synced ${maskEmail(email)} → ${tag}${res.isNew ? ' (new contact)' : ''}`);
       } else if (!res?.skipped) {
-        console.warn(`[GHL] sync failed for ${email}:`, res?.error);
+        console.warn(`[GHL] sync failed for ${maskEmail(email)}:`, res?.error);
       }
     })
-    .catch(err => console.warn(`[GHL] sync threw for ${email}:`, err.message));
+    .catch(err => console.warn(`[GHL] sync threw for ${maskEmail(email)}:`, err.message));
 }
 
 /**
