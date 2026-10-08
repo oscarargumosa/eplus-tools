@@ -25,7 +25,7 @@ This topic is a Societal-Readiness pilot:
 - Proposals should follow the instructions applying to the Societal Readiness pilot, as described in the introduction of the Horizon Europe Main Work Programme 2026-2027 for Climate, Energy and Mobility. They entail the use of an interdisciplinary approach to deepening consideration and responsiveness of research and innovation activities to societal needs and concerns.
 - This topic requires effective contribution of the relevant SSH expertise, including the involvement of SSH experts in the consortium, to meaningfully support Societal Readiness. Specifically, SSH expertise is expected to facilitate the socio-technological interface and enable designing inclusive transport systems that consider accessibility, equity, and digital literacy. Proposals should consider citizens engagement and dialogue, for seeking wider input and support.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

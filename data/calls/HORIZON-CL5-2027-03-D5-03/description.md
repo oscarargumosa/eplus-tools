@@ -1,5 +1,9 @@
 ## Expected Outcome
 
+Project results are expected to contribute to the improved circularity of end-of-first-life representative EV components (e.g. power electronic converters, rotors, stators of electric motors, thermal management of battery system), and, if relevant EVCI, through accurate and standardised assessment of product data, better design strategies and potential business models.
+
+Further to this, each area has specific expected outcomes as described below.
+
 Expected outcomes area A) Circular economy for Electric Vehicle (EV) powertrains and infrastructure:
 
 Project results are expected to contribute to all the following outcomes:
@@ -12,8 +16,6 @@ Expected outcomes Area B) Data-driven life-cycle management of Electric Vehicle 
 - Proven concept and business case for the management of data driven product lifecycle across value chains and supply chains along the entire life cycle.
 
 ## Scope
-
-The total indicative budget for the topic is EUR 7 million for Area A and 5 million for Area B. Nonetheless, this does not preclude submission and selection of a proposal requesting different amounts.
 
 Scope area A) Circular economy for Electric Vehicle (EV) powertrains and infrastructure:
 
@@ -39,7 +41,7 @@ Proposals are expected to address all the following research activities:
 
 This topic implements the co-programmed European Partnership on ‘Towards zero emission road transport’ (2ZERO). As such, projects resulting from this topic will be expected to report on the results to the European Partnership ‘Towards zero emission road transport’ (2ZERO) in support of the monitoring of its KPIs. The topic is open to both to Light Duty and Heavy-Duty electric vehicles.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

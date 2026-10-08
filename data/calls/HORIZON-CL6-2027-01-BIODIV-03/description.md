@@ -18,6 +18,6 @@ This topic is particularly relevant for SMEs.
 
 Proposals should foresee appropriate resources to ensure close cooperation with the EC Knowledge Centre for Biodiversity (KCBD) and its Science Service.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B.

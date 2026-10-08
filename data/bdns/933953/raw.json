@@ -1,0 +1,78 @@
+{
+  "id": 1135514,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL  DEL MOIANÈS",
+    "nivel3": "CONSELL COMARCAL  DEL MOIANÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933953",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "Convocatòria ajuts propietaris habitatge lloguer social 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Prestación de servicios a la comunidad en general",
+      "codigo": "84.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "AJUTS EXTRAORDINARIS ALS PROPIETARIS QUE TINGUIN O DESITGIN INCLOURE EL SEU HABITATGE A LA BORSA DE MEDIACIÓ PER AL LLOGUER SOCIAL",
+  "urlBasesReguladoras": "https://www.ccmoianes.cat/el-consell/actes-i-anuncis/anuncis-/generals/convocatoria-per-a-la-concessio-de-latorgament-dajuts-extraordinaris-als-propietaris-que-tinguin-o-desitgin-incloure-el-seu-habitatge-a-la-borsa-de-mediacio-per-al-lloguer-social-a-la-comarca-del-moianes-per-lany-2024.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-06",
+  "fechaFinSolicitud": "2026-12-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533335,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "20261002_061._Anunci_convocatòria_atorgament_ajuts_habitatge_borsa_social_de_lloguer_2026_651_2026_català__Cen.pdf",
+      "long": 792701,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533334,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "20261002_061._Anunci_convocatòria_atorgament_ajuts_habitatge_borsa_social_de_lloguer_2026_651_2026_castellà__Cen.pdf",
+      "long": 881612,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

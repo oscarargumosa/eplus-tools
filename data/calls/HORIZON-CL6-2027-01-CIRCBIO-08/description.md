@@ -22,6 +22,6 @@ In the review of up-to-date progress of R&I as in the first bullet point, intern
 
 Projects funded under this topic should collaborate, for example within the activities concerning the exploitation of the IP of the developed technologies and at least within the dissemination activities.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.

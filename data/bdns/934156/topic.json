@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "934156",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCOBENDAS / AYUNTAMIENTO DE ALCOBENDAS",
+  "nuts_codes": [
+    "ES30"
+  ],
+  "nuts_primary": "ES30",
+  "title": "CONVENIO ENTRE EL AYUNTAMIENTO DE ALCOBENDAS Y LA ASOCIACIÓN DE PERSONAS CON DISCAPACIDAD INTELECTUAL LÍMITE DE ALCOBENDAS Y S.S. DE LOS REYES (A.D.I.L.A.S.) PARA 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 9500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://www.alcobendas.org/es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934156",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.alcobendas.org/sites/default/files/2021-01/ORDENANZA%20SUBVENCIONES%20BIENESTAR%20SOCIAL.pdf",
+  "text_inicio": "01/01/2026",
+  "text_fin": "01/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.652Z"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 1135554,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMUSSAFES",
+    "nivel3": "AYUNTAMIENTO DE ALMUSSAFES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933993",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35000,
+  "mrr": false,
+  "descripcion": "BASES SUBVENCIÓN PARA LA COMPRA O AUTOPROMOCIÓN DE PRIMERA VIVIENDA, EJERCICIO 2026",
+  "descripcionLeng": "BASES SUBVENCIÓ PER A LA COMPRA O AUTOPROMOCIÓ DE PRIMERA VIVENDA, EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "BASES SUBVENCIÓN PARA LA COMPRA O AUTOPROMOCIÓN DE PRIMERA VIVIENDA, EJERCICIO 2026",
+  "urlBasesReguladoras": "https://wp.me/PanQjS-1mD",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Provincia.",
+  "textFin": "Diez días a contar desde el día siguiente a la publicación del anuncio en el BOP.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533402,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvención compra vivienda 2026 - SEFYCU 8631192.pdf",
+      "long": 439560,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533406,
+      "descripcion": "Resolución de la Alcaldía nº 2728/2026 de 02/10/2026",
+      "nombreFic": "Resolución Nº 2728 de 02_10_2026 _Aprueba bases subvención compra o autopromoción primera vivienda 2026_ - SEGRA 1241615.pdf",
+      "long": 304183,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533405,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases subvenció compra vivenda 2026 - SEFYCU 8631211.pdf",
+      "long": 438376,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

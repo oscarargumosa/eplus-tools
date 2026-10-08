@@ -1,0 +1,78 @@
+{
+  "id": 1135482,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE ALT PENEDÈS",
+    "nivel3": "CONSELL COMARCAL DE ALT PENEDÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933921",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "CONVOCATÒRIA PREMI EDICIÓ RECERCA HISTÒRICA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Premi Edició Recerca Històrica 2020",
+  "urlBasesReguladoras": "https://bop.diba.cat/temp/06_022020006544.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-21",
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533201,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "EDICTEG20420001012026CONVOPREMIRECERCAHISTORICA02102026cat1791188690472.pdf",
+      "long": 453490,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533200,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "EDICTEG20420001022026CONVOPREMIRECERCAHISTORICA02102026cas1791188690551.pdf",
+      "long": 462605,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

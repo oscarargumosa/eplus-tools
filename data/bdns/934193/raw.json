@@ -1,0 +1,72 @@
+{
+  "id": 1135754,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "XOVE",
+    "nivel3": "AYUNTAMIENTO DE XOVE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934193",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 450,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LOS PREMIOS DEL CONCURSO DE ELABORACIÓN DE CARETAS DE CARNAVAL 2027",
+  "descripcionLeng": "CONVOCATIORIA DOS PREMIOS DO CONCURSO DE ELABORACIÓN DE CARETAS DE ANTROIDO 2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas y archivos",
+      "codigo": "91.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES112 - Lugo"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases aprobadas en el marco de la Ordenanza General de Subvenciones del Ayuntamiento de Xove publicadas en el BOP núm 136 de 16 de junio de 2025",
+  "urlBasesReguladoras": "https://xove.sedelectronica.gal/transparency/676b7e81-659d-4cf9-9e3b-9b3918520218/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2027-01-30",
+  "textInicio": "Desde el momento de la publicación en el BOP del extracto de la convocatoria",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533986,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Proposta de Convocatoria dos Premios do Concurso de Caretas de Entroido 2027.pdf",
+      "long": 231713,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533985,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Propuesta de Convocatoria de los Premios del Concurso de Caretas de Carnaval 2027.pdf",
+      "long": 239560,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

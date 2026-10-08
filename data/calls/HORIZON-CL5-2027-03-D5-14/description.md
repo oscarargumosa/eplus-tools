@@ -30,6 +30,6 @@ Proposals are expected to explain the contribution of their objectives, results,
 
 This topic implements the co-programmed European Partnership on ‘Zero Emission Waterborne Transport’ (ZEWT). As such, projects resulting from this topic will be expected to report on results to the European Partnership ‘Zero Emission Waterborne Transport’ (ZEWT) in support of the monitoring of its KPIs.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 8 by the end of the project – see General Annex B. Activities may start at any TRL.

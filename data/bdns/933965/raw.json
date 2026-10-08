@@ -1,0 +1,72 @@
+{
+  "id": 1135526,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "UTEBO",
+    "nivel3": "AYUNTAMIENTO DE UTEBO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933965",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 80000,
+  "mrr": false,
+  "descripcion": "Subvenciones para acciones que complementan o suplan la competencia local en materia deportiva y se hayan desarrollado durante el año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES243 - Zaragoza"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza general por la que se aprueban las bases reguladoras para la concesión de subvenciones del Ayuntamiento de Utebo.",
+  "urlBasesReguladoras": "http://bop.dpz.es/BOPZ/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación del extracto de la convocatoria en el BOPZ.",
+  "textFin": "20 días a partir del día siguiente al de la publicación del extracto de la convocatoria en el BOPZ.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533328,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO DE ALCALDIA 2026-2246 (Aprobación convocatoria subvenciones actividades deportivas 2026) - S.D.A.D. CONVOCATORIA 2026.pdf",
+      "long": 1080340,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533378,
+      "descripcion": "EXTRACTO BDNS - SDAD - Convocatoria 2026",
+      "nombreFic": "EXTRACTO BDNS - SDAD - Convocatoria 2026.pdf",
+      "long": 149514,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

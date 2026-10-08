@@ -26,7 +26,7 @@ Proposals should seek to contribute to the goals and cooperate with the services
 
 Proposals are expected to contribute to Europe’s competitiveness and sustainable prosperity by supporting the development of a more resilient circular economy in line with the EU Competitiveness Compass, the EU Clean Industrial Deal and the EU Circular Economy Act. In line with the CID flagship call, this is an open topic, allowing applicants to propose solutions that maximise competitiveness and sustainability through increased circularity, and that are fit for deployment in terms of technological and economic feasibility.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

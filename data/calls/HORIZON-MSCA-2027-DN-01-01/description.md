@@ -53,6 +53,12 @@ Career Development Plan
 
 A Career Development Plan must be established jointly by the supervisor and each recruited doctoral candidate. In case of joint supervision, such a plan should be established involving all supervisors. In addition to research objectives, this plan comprises the researcher's training and career needs, including training on transferable skills, teaching, planning for publications and participation in conferences and events aiming at opening science and research to citizens. The plan, established at the beginning of the recruitment, should be revised (and updated where needed) within 18 months.
 
+Choose Europe for Science
+
+The MSCA Doctoral Networks are a key instrument for implementing the Choose Europe for Science initiative by attracting and supporting excellent researchers through high-quality training, supervision and mobility opportunities.
+
+In response to the significant increase in international demand for MSCA funding, an additional Choose Europe boost of 70.75 million EUR is allocated to the Doctoral Networks Call, allowing more excellent researchers to undertake research and training activities in Europe.
+
 [1] https://euraxess.ec.europa.eu/
 
 [2] Every time this Work Programme part refers to doctoral degrees, this means that the degrees have to be recognised as such by the relevant authorities of the country or countries concerned.

@@ -26,7 +26,7 @@ ERA Fellowships should take place in a Widening Country. Fellowships are open to
 
 Secondments
 
-Researchers receiving an ERA Fellowship may opt to include a secondment phase, within the overall duration of their fellowship in any country worldwide. The secondment phase can be a single period or be divided into shorter mobility periods. Secondments cannot exceed one third of the standard fellowship duration and should be in line with the project objectives, adding significant value and impact to the fellowship.
+Researchers receiving an ERA Fellowship may opt to include a secondment phase, within the overall duration of their fellowship in any country worldwide. The secondment phase can be a single period or be divided into shorter mobility periods. Secondments cannot exceed half of the requested duration of the action (excluding from the duration of the action any additional period for a non-academic placement) and should be in line with the project objectives, adding significant value and impact to the fellowship.
 
 Placements in the non-academic sector
 

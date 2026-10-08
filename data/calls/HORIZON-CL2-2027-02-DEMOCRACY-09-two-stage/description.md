@@ -6,7 +6,7 @@ Projects should contribute to all of the following expected outcomes:
 
 ## Scope
 
-The Political Guidelines for 2024-2029 of the European Commission[1] announced a new European Democracy Shield. Building on the European Democracy Action Plan[2] and the Defence of Democracy Package[3], this initiative aims to safeguard, strengthen and promote democracy in the EU and to reinforce public trust. The Democracy Shield will aim to reinforce citizens’ participation and engagement in the democratic life, promote free and fair elections and support free and independent media. It will also address the increasing threats to democratic systems, institutions and processes within the EU, often driven by various hostile actors aiming to undermine citizens’ trust in democracy and its institutions. In addition, the Commission is also preparing a Civil Society Strategy and has also announced an updated strategy on LGBTIQ equality, a new anti-racism strategy, a new gender equality strategy, and a roadmap for women’s rights[4] It also continues implementing the Strategy for the rights of persons with disabilities 2021-2030[5], in line with the United Nations Convention on the rights of persons with disabilities, which the EU and its Member States are parties to[6].
+The Political Guidelines for 2024-2029 of the European Commission[1] announced a new European Democracy Shield, and the communication[2] was adopted in November 2025. Building on the European Democracy Action Plan[3] and the Defence of Democracy Package[4], this initiative aims to safeguard, strengthen and promote democracy in the EU and to reinforce public trust. The Democracy Shield will aim to reinforce citizens’ participation and engagement in the democratic life, promote free and fair elections and support free and independent media. It will also address the increasing threats to democratic systems, institutions and processes within the EU, often driven by various hostile actors aiming to undermine citizens’ trust in democracy and its institutions. In addition, the Commission has also adopted a Civil Society Strategy[5], the LGBTIQ+ Equality Strategy 2026-2030[6], the Anti-Racism Strategy 2026-2030[7], the Gender Equality Strategy 2026-2030[8], and the Roadmap for Women’s Rights[9]. The Commission has also launched a Communication to enhance[10] the Strategy for the rights of persons with disabilities 2021-2030[11], in line with the United Nations Convention on the rights of persons with disabilities, which the EU and its Member States are parties to[12].
 
 Ensuring full, equal and meaningful political participation for everyone, regardless of sex, gender, racial or ethnic origin, religion or belief, disability, socioeconomic status, employment or age, fosters more stable and resilient democracies. Decision-making processes that incorporate a wider range of perspectives and experiences leads to policies that are more comprehensive and attuned to the needs of all citizens.
 
@@ -16,7 +16,7 @@ In that sense, proposals should consider, build on – if appropriate – while 
 
 Given the multifaceted character of the challenges confronted by democracies, applicants should ensure effective interdisciplinary collaborations by building consortia with the participation of all relevant disciplines, depending of course on the nature of the selected democratic challenge and research angle.
 
-Applicants are encouraged to adopt innovative approaches, including also by considering alternative and complementary models for democratic participation and engagement, facilitating the development and potential uptake of solutions. To ensure the active involvement of and timely feedback from relevant democracy practitioners and policymakers, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term contributions to the expected outcomes, performed by the democracy practitioners and policy-makers. Proposals should directly engage citizens, as well as civil society organisations, to enable broader public debate and explore uptake of democratic innovations and better anticipate potential risks.
+Applicants are encouraged to adopt innovative approaches, including also by considering alternative and complementary models for democratic participation and engagement, facilitating the development and potential uptake of solutions. To ensure the active involvement of and timely feedback from relevant democracy practitioners and policymakers, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term contributions to the expected outcomes, performed by the democracy practitioners and policymakers. Proposals should directly engage citizens, as well as civil society organisations, to enable broader public debate and explore uptake of democratic innovations and better anticipate potential risks.
 
 Proposals are encouraged to collaborate with the JRC Competence Centre on Participatory and Deliberative Democracy, particularly with respect to demonstrating how structured opportunities for citizen participation strengthen inclusiveness and fairness of democratic institutions and practices, and foster evolution in democratic public spaces.
 
@@ -24,12 +24,24 @@ Where applicable, proposals should leverage the data and services available thro
 
 [1]  https://commission.europa.eu/document/download/e6cd4328-673c-4e7a-8683-f63ffb2cf648_en?filename=Political%20Guidelines%202024-2029_EN.pdf
 
-[2]  https://ec.europa.eu/commission/presscorner/detail/en/ip_20_2250
+[2]  https://commission.europa.eu/document/download/2539eb53-9485-4199-bfdc-97166893ff45_en?filename=JUST_template_comingsoon_standard_1.pdf
 
-[3]  https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6453
+[3]  https://ec.europa.eu/commission/presscorner/detail/en/ip_20_2250
 
-[4]  For the roadmap for women’s rights, see the announcement of its adoption with links to the communication and its annex: https://ec.europa.eu/commission/presscorner/detail/en/ip_25_681
+[4]  https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6453
 
-[5]  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52021DC0101
+[5]  https://commission.europa.eu/document/download/8c30975d-bc1c-4415-8dcd-a71cb28f3662_en?filename=JUST_template_comingsoon_standard.pdf
 
-[6]  https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities
+[6]  https://commission.europa.eu/document/download/b4952371-4308-47ad-b995-02c539b75dda_en?filename=JUST_template_comingsoon_standard.pdf
+
+[7]  https://commission.europa.eu/document/download/f4acc4d4-689e-4db8-8c89-c7243b76ab88_en?filename=JUST_template_comingsoon_standard_0.pdf
+
+[8]  https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52026DC0113
+
+[9]  https://commission.europa.eu/document/download/0c3fe55d-9e4f-4377-9d14-93d03398b434_en?filename=Gender%20Equality%20Report%20Chapeau%20Communication.pdf
+
+[10] Enhancing the strategy for the rights of persons with disabilities up to 2030
+
+[11]  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52021DC0101
+
+[12]  https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities

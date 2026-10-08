@@ -33,6 +33,6 @@ Whenever the expected exploitation of project results entails developing, creati
 
 This topic implements the co-programmed European Partnership for Innovation in Photovoltaics (EUPI-PV). As such, projects resulting from this topic will be expected to report on the results to the European Partnership for Innovation in Photovoltaics (EUPI-PV) in support of the monitoring of its KPIs.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.

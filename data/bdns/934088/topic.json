@@ -1,0 +1,64 @@
+{
+  "source": "bdns",
+  "source_id": "934088",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLANUBLA / AYUNTAMIENTO DE VILLANUBLA",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "Acuerdo de 24 de septiembre de 2026 del Pleno de la Corporación del municipio de Villanubla, por el que se convoca El Premio Valores Humanos del Ayuntamiento de Villanubla, Edición 2026.",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://villanubla.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934088",
+  "documents": [
+    {
+      "label": "MODELO DE SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://villanubla.sedelectronica.es/transparency/d8626121-d53c-4f49-a058-81344983e691/",
+  "text_inicio": "Primer día natural siguiente al de publicación del extracto de las bases en el B.O.P. de Valladolid",
+  "text_fin": "Trigesimo día natural siguiente al de publicación del extracto de las bases en el B.O.P. Valladolid",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.634Z"
+}

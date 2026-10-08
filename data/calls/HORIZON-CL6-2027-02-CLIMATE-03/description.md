@@ -23,7 +23,7 @@ Proposals should include a dedicated task, appropriate resources and a plan on h
 
 In this topic the integration of the gender dimension (sex and gender analysis) in research and innovation content is not a mandatory requirement.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5 by the end of the project – see General Annex B.
 

@@ -7,7 +7,7 @@ Project results are expected to contribute to all of the following expected outc
 
 ## Scope
 
-The transition to a circular economy requires innovative solutions to manage end-of-life products, including footwear, which can have significant environmental and climate impacts if landfilled and not properly collected, sorted, and recycled. In line with the EU's ambitious circular economy targets and policies, such as the Waste Framework Directive and the Ecodesign for Sustainable Products Regulation, this topic aims at improving the circularity of the footwear value chain and reducing the environmental footprint of end-of-life post-consumer footwear, whilst promoting a more regenerative and restorative approach to the footwear value chain and the stakeholders involved.
+The transition to a circular economy requires innovative solutions to manage end-of-life products, including footwear, which can have significant environmental and climate impacts if landfilled and not properly collected, sorted, and recycled. In line with the EU's ambitious circular economy targets and policies, such as the Waste Framework Directive and the Ecodesign for Sustainable Products Regulation, this topic aims at improving the circularity of the footwear value chain and reducing the environmental footprint of end-of-life post-consumer footwear, whilst promoting a more regenerative and restorative approach to the footwear value chain.
 
 Proposals should:
 - assess the technical, environmental, economic and social challenges and benefits linked to the transition of the footwear industry towards circularity, particularly in the collection, sorting and recycling of post-consumer footwear waste;
@@ -21,6 +21,6 @@ The topic supports EU policies, particularly the European Green Deal, the Ecodes
 
 This topic requires the effective contribution of SSH disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related research activities.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.

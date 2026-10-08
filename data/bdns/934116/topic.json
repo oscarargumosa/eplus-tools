@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "934116",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CAMPLLONG / AYUNTAMIENTO DE CAMPLLONG",
+  "nuts_codes": [
+    "ES512"
+  ],
+  "nuts_primary": "ES512",
+  "title": "Convocatoria de subvenciones en materia social para ayudar a personas con dependencia para el año 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": "2026-10-09",
+  "deadline": "2026-11-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934116",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.campllong.cat",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 222511,
+      "titulo": "Convocatoria de subvenciones en materia social para ayudar a personas con dependencia para el año 2026",
+      "tituloLeng": "Convocatòria de subvencions en matèria social per ajudar a persones amb dependència per a l’any 2026",
+      "texto": "<p>Primero. Beneficiarios</p><p>Pueden solicitar esta subvención las personas que cumplan los requisitos establecidos en las bases reguladoras y en la convocatoria y que acrediten la residencia en el municipio de Campllong en la fecha de presentación de la solicitud y durante los cuatro años anteriores, de forma continuada, así como las demás condiciones establecidas en la convocatoria, entre ellas tener reconocido un grado de dependencia y no percibir ingresos superiores a 20.</p><p>Segundo. Objeto</p><p>Otorgamiento de ayudas a personas en situación de dependencia en su propio entorno social y familiar habitual, con el objetivo de potenciar su independencia y apoyar a las personas dependientes y sus familias, para contribuir a una mejor calidad de vida.</p><p>Tercero. Bases reguladoras</p><p>Acuerdo plenario de 6 de octubre de 2022 y publicadas en el BOP de Gerona número 197 del 14 de octubre de 2022.</p><p>Cuarto. Importe</p><p>La aplicación presupuestaria contra la que se imputa la subvención es 2026.231.48001, siendo la cuantía total máxima de las subvenciones convocadas de veinticinco mil euros (25.000,00.-euros).</p><p>Quinto. Plazo de presentación de solicitudes</p><p>Las solicitudes deben formularse según modelo y con la documentación complementaria que éstas mencionan dentro del plazo que va del 9 de octubre al 6 de noviembre de 2026.</p>",
+      "textoLeng": "<p>Primer. Beneficiaris</p><p>Poden sol·licitar aquesta subvenció les persones que compleixin els requisits establerts a les bases reguladores i a la convocatòria i que acreditin la residència al municipi de Campllong en la data de presentació de la sol·licitud i durant els quatre anys anteriors, de forma continuada, així com les altres condicions establertes a la convocatòria, entre elles tenir reconegut un grau de dependència i no percebre ingressos superiors a 20.000 euros anuals bruts.</p><p>Segon. Objecte</p><p>Atorgament d’ajuts a persones en situació de dependència en el seu propi entorn social i familiar habitual, amb l’objectiu de potenciar la seva independència i donar suport a les persones dependents i les seves famílies, per contribuir a una millor qualitat de vida.</p><p>Tercer. Bases reguladores</p><p>Acord plenari de 6 d’octubre de 2022 i publicades en el BOP de Girona número 197 del 14 d’octubre de 2022.</p><p>Quart. Import</p><p>L'aplicació pressupostària contra la qual s'imputa la subvenció és 2026.231.48001, i la quantia total màxima de les subvencions convocades és de vint-i-cinc mil euros (25.000,00.-euros).</p><p>Cinquè. Termini de presentació de sol·licituds</p><p>Les sol·licituds s'han de formular segons model i amb la documentació complementària que aquestes esmenten dins el termini que va del 9 d’octubre al 6 de novembre de 2026.</p><p> </p>",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/197/202619708722.pdf",
+      "cve": null,
+      "desDiarioOficial": "B.O.P. DE GIRONA",
+      "datPublicacion": "2026-10-13"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.639Z"
+}

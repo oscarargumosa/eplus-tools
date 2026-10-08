@@ -24,7 +24,9 @@ Proposals should include a dedicated task and resources for cooperation with the
 
 The projects under this topic are relevant to the EU policies related to the Zero Pollution Action Plan, the Industrial and Livestock Rearing Emissions Directive, the National Emissions Reduction Commitments Directive, the Ambient Air Quality Directive, the EU biodiversity strategy for 2030, and the transition to a more sustainable EU agriculture in alignment with the EU Vision for Agriculture and Food and the Common Agricultural Policy.
 
-## null
+The Joint Research Centre (JRC) may participate as a member of the consortium selected for funding. In particular, the JRC could, as relevant, link project outcomes to tools, databases and methodologies relevant for estimating farm-to-agricultural sector air pollutant emissions.
+
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

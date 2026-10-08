@@ -1,0 +1,120 @@
+{
+  "id": 1135640,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "AGENCIA GALLEGA DE INNOVACIÓN"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934079",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de 1 de octubre de 2026 por la que se establecen las bases reguladoras del VIII Premio al Talento Innovador en la Administración Pública Gallega y se procede a su convocatoria para el año 2026",
+  "descripcionLeng": "RESOLUCIÓN do 1  de outubro de 2026 pola que se establecen as bases reguladoras do VIII Premio ao Talento Innovador na Administración Pública Galega e se procede á súa convocatoria para o ano 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Servicios de investigación y seguridad",
+      "codigo": "80"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de 1 de octubre de 2026 por la que se establecen las bases reguladoras del VIII Premio al Talento Innovador en la Administración Pública Gallega y se procede a su convocatoria para el año 2026",
+  "urlBasesReguladoras": "https://www.xunta.gal/dog",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-14",
+  "fechaFinSolicitud": "2026-11-13",
+  "textInicio": "Al día siguiente de su publicación en el DOG",
+  "textFin": "13/11/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533804,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIA PEPI 2026__ TEXTO CASTELAN_V1509_20261002_155025.pdf",
+      "long": 233847,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533805,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIA PEPI 2026__ TEXTO GALEGO_V1509_20261002_155051.pdf",
+      "long": 227100,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533806,
+      "descripcion": "Anexo I_cas",
+      "nombreFic": "IN822D-C_20261002_155200.pdf",
+      "long": 91605,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533811,
+      "descripcion": "Anexo III_gal",
+      "nombreFic": "IN822D_AnexoIII-G_20261002_155457.pdf",
+      "long": 74587,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533808,
+      "descripcion": "Anexo II_cas",
+      "nombreFic": "IN822D_AnexoII-C_20261002_155323.pdf",
+      "long": 45728,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533809,
+      "descripcion": "Anexo II_gal",
+      "nombreFic": "IN822D_AnexoII-G_20261002_155342.pdf",
+      "long": 45692,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533810,
+      "descripcion": "Anexo III_cas",
+      "nombreFic": "IN822D_AnexoIII-C_20261002_155425.pdf",
+      "long": 74841,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533807,
+      "descripcion": "Anexo I_gal",
+      "nombreFic": "IN822D-G_20261002_155225.pdf",
+      "long": 91206,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

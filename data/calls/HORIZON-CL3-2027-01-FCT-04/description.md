@@ -14,7 +14,7 @@ Adapted to the nature, scope and type of proposed projects, proposals should con
 
 Proposals should also delineate the plans to develop possible future uptake and upscaling at national and EU level for possible next steps after the research project. Research proposals should consider, build on if appropriate and not duplicate previous research, including but not limited to research by other Framework Programmes’ projects. Coordination among the successful proposals from this topic should be envisaged to avoid duplication and to exploit complementarities as well as opportunities for increased impact. The proposals funded under this topic that concern issues which are within the mandate of Europol[1] are expected to engage with the Europol Innovation Lab during the lifetime of the project, including validating the outcomes, with the aim of facilitating future uptake of innovations for the law enforcement community. For aspects of training of Police Authorities, cooperation of successful proposals with CEPOL is expected, provided that the Agency opts out from applying for funding. To ensure the active involvement of and timely feedback from relevant security practitioners, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term outcomes, performed by the practitioners involved in the project. Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Fighting Crime and Terrorism Destination.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.
 

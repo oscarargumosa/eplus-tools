@@ -12,13 +12,13 @@
   "opening": "2026-05-28",
   "deadline": "2026-11-24",
   "deadlineModel": "single-stage",
-  "actionType": "HORIZON TMA MSCA Doctoral Networks - Joint DoctoratesHORIZON TMA MSCA Doctoral Networks - Industrial DoctoratesHORIZON TMA MSCA Doctoral Networks",
+  "actionType": "HORIZON TMA MSCA Doctoral NetworksHORIZON TMA MSCA Doctoral Networks - Joint DoctoratesHORIZON TMA MSCA Doctoral Networks - Industrial Doctorates",
   "actionCode": "HORIZON-TMA-MSCA-DN-ID",
   "mgaCode": "HORIZON-AG-UN",
   "budget": {
-    "total_eur": 1779101538,
+    "total_eur": 1884101538,
     "by_year": {
-      "2026": 1779101538
+      "2026": 1884101538
     },
     "expected_grants": null,
     "min_contribution_eur": null,
@@ -202,5 +202,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-05T04:05:41.742Z"
+  "fetchedAt": "2026-10-08T04:06:22.813Z"
 }

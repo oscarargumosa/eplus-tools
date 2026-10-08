@@ -23,7 +23,7 @@ The support and involvement of citizens and civil society is central to achievin
 
 By fostering collaborative research and youth-driven initiatives, projects should contribute to innovative and inclusive resilience strategies that align with EU policies on disaster risk reduction, education, digital transformation, and civil protection. Proposals should ensure synergies with existing initiatives and frameworks, such as the Preparedness Union Strategy’s chapter on population preparedness, Erasmus+ and the European Solidarity Corps, as well as the Sendai Disaster Risk Reduction Framework. Finding synergies with projects from operational grants, such as the Knowledge for Action in Prevention & Preparedness (KAPP)[2], is recommend.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5 by the end of the project – see General Annex B.
 

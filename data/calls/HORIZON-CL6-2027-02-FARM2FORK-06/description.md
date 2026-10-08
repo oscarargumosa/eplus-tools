@@ -18,6 +18,6 @@ The effects of climate change on small-scale aquatic food production should be a
 
 Selected proposals should include from their design throughout their development and implementation relevant stakeholders and end-users and produce outputs that can be readily applicable by them. Special attention should be given to knowledge transfer, training, and capacity-building activities to ensure the practical implementation of research findings and innovations by small-scale actors and policymakers.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.

@@ -17,6 +17,6 @@ Proposals should build upon outcomes and tools of other relevant projects, adapt
 
 In this topic the integration of the gender dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 8 by the end of the project – see General Annex B.

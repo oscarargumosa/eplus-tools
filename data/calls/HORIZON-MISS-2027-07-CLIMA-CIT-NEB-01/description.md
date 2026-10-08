@@ -28,7 +28,7 @@ The selected projects will engage in clustering activities with other relevant p
 
 This action supports the follow-up to the July 2023 Communication on EU Missions assessment[8]. It also supports the implementation of the Nature Restoration Regulation.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
 

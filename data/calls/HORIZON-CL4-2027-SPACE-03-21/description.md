@@ -16,7 +16,7 @@ This topic will contribute to, in the medium to long term, developing, deploying
 ## Scope
 
 To tackle the above expected outcomes, the following R&I actions should be addressed in the shortest possible timeframe taking into account the provided technical annex[3]:
-- Supporting the ISOS Pilot mission detailed mission and system design, demonstrating in an integrated ground test (TRL6) the interoperability of the developed mission components ground prototypes (i.e., Servicing, HOST, Logistic and satAPPs) with all applicable servicing interfaces and the baseline demonstration scenarios as defined in the technical annex;
+- Supporting the ISOS Pilot mission detailed mission and system design, demonstrating in an integrated ground test (TRL6) and a virtual testbed (System-of-Systems simulation) the interoperability of the developed mission components ground prototypes (i.e., Servicing, HOST, Logistic and satAPPs) with all applicable servicing interfaces and the baseline demonstration scenarios as defined in the technical annex (the applicable servicing interfaces should include the USI solutions to be further matured in this topic, as well as the refuelling interfaces to be further matured in topic HORIZON-CL4-2026-SPACE-03-86);
 - Final maturation, verification and qualification (TRL7) of the consolidated USI solution(s) recommended by the ISOS Pilot Mission Coordination and Support Action, considering opportunities for IOD/V;
 - Development of a ISOS4I promotion video and VR experience for dissemination purposes, showcasing the pilot mission concept with its baseline demonstration scenario and the evolution towards an in-space service infrastructure leading to manifold business opportunities as part of a wider in-space economy.
 
@@ -32,7 +32,7 @@ The project selected from this topic will be a Linked Action and is expected to 
 
 In this topic, the integration of the gender dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL. [delete second sentence only if really necessary]
 

@@ -47,7 +47,6 @@
     "Water-climate interactions"
   ],
   "crossCuttingPriorities": [
-    "MultiActorApproach",
     "DigitalAgenda",
     "AI"
   ],
@@ -189,5 +188,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-06T04:06:30.240Z"
+  "fetchedAt": "2026-10-08T04:06:21.853Z"
 }

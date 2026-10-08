@@ -20,7 +20,7 @@ Proposals should seek to involve SMEs and regional ecosystems.
 
 The topic supports the European Green Deal, the Construction Products Regulation, the Ecodesign for Sustainable Products Regulation and its working plan, and Europe’s efforts to develop a single market for sustainable products.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.
 

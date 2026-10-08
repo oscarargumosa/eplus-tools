@@ -29,7 +29,7 @@ The Joint Research Centre (JRC) may participate as a member of the consortium se
 
 International cooperation is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start from TRL 2 and achieve TRL 5 by the end of the project.
 

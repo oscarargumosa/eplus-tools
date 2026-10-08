@@ -26,6 +26,6 @@ Proposals are encouraged to work together with relevant initiatives including th
 
 The multi-actor approach should be followed, involving concerned actors such as primary producers, industry representatives, regional/local authorities, research institutions.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

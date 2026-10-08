@@ -35,8 +35,8 @@
     "Violent radicalisation"
   ],
   "crossCuttingPriorities": [
-    "SocietalEngagement",
     "AI",
+    "SocietalEngagement",
     "SSH",
     "DigitalAgenda"
   ],
@@ -584,5 +584,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-07T04:03:23.261Z"
+  "fetchedAt": "2026-10-08T04:06:21.670Z"
 }

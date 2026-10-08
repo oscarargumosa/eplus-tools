@@ -1,0 +1,72 @@
+{
+  "id": 1135524,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ARANJUEZ",
+    "nivel3": "AYUNTAMIENTO DE ARANJUEZ"
+  },
+  "sedeElectronica": "https://sede.aranjuez.es",
+  "codigoBDNS": "933963",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 220000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA Y BASES REGULADORAS DE SUBVENCIONES A CLUBES, ASOCIACIONES DEPORTIVAS Y DEPORTISTAS DE ARANJUEZ 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "CONVOCATORIA Y BASES REGULADORAS DE SUBVENCIONES A CLUBES, ASOCIACIONES DEPORTIVAS Y DEPORTISTAS DE ARANJUEZ.2026",
+  "urlBasesReguladoras": "https://www.aranjuez.es/oac/ventanilla-unica/solicitudes/#D7",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "A PARTIR DE SU PUBLICACIÓN EN EL BOCAM",
+  "textFin": "30 DE OCTUBRE DE 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533338,
+      "descripcion": "BASES REGULADORAS",
+      "nombreFic": "CONVOCATORIA Y BASES SUBVENCIONES 2026 modificadas.PDF",
+      "long": 616797,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533336,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado Junta Gobierno Suvb.  deportivas 2026.pdf",
+      "long": 243882,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

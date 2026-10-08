@@ -1,0 +1,79 @@
+{
+  "id": 1135632,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "FONDO DE GARANTÍA AGRARIA Y PESQUERA DE LAS ISLAS BALEARES (FOGAIBA)"
+  },
+  "sedeElectronica": "http://www.caib.es",
+  "codigoBDNS": "934071",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3500000,
+  "mrr": false,
+  "descripcion": "Ayudas de minimis, para el año 2026, para compensar el incremento del precio de los piensos en las explotaciones ganaderas de las Islas Baleares derivado de la guerra en Oriente Medio",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden de la Consejera de Agricultura y Pesca, de 10 de marzo de 2005, por la que se establecen las bases reguladoras de las subvenciones a los sectores agrario y pesquero",
+  "urlBasesReguladoras": "http://boib.caib.es/pdf/2005043/mp15.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "Desde el día siguiente a la publicación de la Resolución en el BOIB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1533678,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "AJ_45.26_AJUDA_PINSOS_PER_EXPLOTACIONS_RAMADERES_2026_v.6_CAT_DEFINITIVA_OK_imprimible.pdf",
+      "long": 331921,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533677,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "AJ_45.26_AJUDA_PINSOS_PER_EXPLOTACIONS_RAMADERES_2026_v.6__ES_DEFINITIVA_OK_imprimible.pdf",
+      "long": 322185,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

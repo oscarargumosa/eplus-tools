@@ -34,7 +34,6 @@
     "Knowledge support networks"
   ],
   "crossCuttingPriorities": [
-    "MultiActorApproach",
     "DigitalAgenda",
     "AI"
   ],
@@ -211,5 +210,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-06T04:06:30.093Z"
+  "fetchedAt": "2026-10-08T04:06:21.848Z"
 }

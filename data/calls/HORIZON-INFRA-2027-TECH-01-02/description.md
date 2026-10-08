@@ -27,7 +27,7 @@ The proposals should also leverage the knowledge and solutions generated in the 
 
 Proposals should also aim to address the possible use of the project outcomes in existing or new service offers by the Member States, Associated Countries or the European Union, like the relevant Copernicus services.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5 or higher by the end of the project – see General Annex B.
 

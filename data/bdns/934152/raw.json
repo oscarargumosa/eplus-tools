@@ -1,0 +1,64 @@
+{
+  "id": 1135713,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CÁCERES",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CÁCERES"
+  },
+  "sedeElectronica": "https://sede.dip-caceres.es/carpetaCiudadano/Init.do",
+  "codigoBDNS": "934152",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 44528,
+  "mrr": false,
+  "descripcion": "BBRR y Convocatoria de subvenciones en concesión directa destinadas a Mancomunidades Integrales y Entidades Locales Menores de la provincia de Cáceres para actuaciones en materia de ciberseguridad (análisis de vulnerabilidades) ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de consultoría informática y gestión de instalaciones informáticas",
+      "codigo": "62.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BBRR y Convocatoria de subvenciones en concesión directa destinadas a Mancomunidades Integrales y Entidades Locales Menores de la provincia de Cáceres para actuaciones en materia de ciberseguridad (análisis de vulnerabilidades) ejercicio 2026",
+  "urlBasesReguladoras": "Pendiente publicación",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a publicación de la convocatoria y su extracto en BOP Cáceres",
+  "textFin": "10 días hábiles desde el siguiente a publicación de la convocatoria y su extracto en BOP Cáceres",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533892,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "220260029636.pdf",
+      "long": 464356,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

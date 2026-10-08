@@ -1,0 +1,80 @@
+{
+  "id": 1135687,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILLANUBLA",
+    "nivel3": "AYUNTAMIENTO DE VILLANUBLA"
+  },
+  "sedeElectronica": "https://villanubla.sedelectronica.es/info.0",
+  "codigoBDNS": "934126",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 24 septiembre 2026 del Pleno de la Corporación del Ayto. Villanubla, por el que se convocan ayudas destinadas a gastos de transporte -enseñanzas obligatorias y no obligatorias y cursos de formación para desempleados, para curso 2026-2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo de 24 septiembre 2026 del Pleno de la Corporación del Ayto. Villanubla, por el que se convocan ayudas destinadas a gastos de transporte -enseñanzas obligatorias y no obligatorias y cursos de formación para desempleados, para curso 2026-2027.",
+  "urlBasesReguladoras": "https://villanubla.sedelectronica.es/transparency/dc918e42-a064-44bf-906f-b08db25de402/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Primer día natural siguiente al de publicación del extracto de las bases en el B.O.P. de Valladolid",
+  "textFin": "Trigésimo día natural siguiente al de publicación del extracto de las bases en el B.O.P. Valladolid",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533786,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "01. Bases reguladoras - Ayudas transporte 2026-2027.pdf",
+      "long": 182282,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533801,
+      "descripcion": "Declaración Responsable",
+      "nombreFic": "03.1.DECLARACIÓN RESPONSABLE AYUDA TRANSPORTE 2026-2027.pdf",
+      "long": 110714,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533798,
+      "descripcion": "MODELO DE SOLICITUD",
+      "nombreFic": "02.1.IMPRESO SOLICITUD AYUDA TRANSPORTE 2026-2027.pdf",
+      "long": 207147,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

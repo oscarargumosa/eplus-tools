@@ -28,7 +28,7 @@ This topic implements the co-programmed European Partnership on ‘Connected, Co
 
 Projects resulting from this topic are expected to apply the European Common Evaluation Methodology (EU-CEM) for CCAM[6].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5-6 by the end of the project – see General Annex B.
 

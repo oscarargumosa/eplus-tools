@@ -14,7 +14,7 @@ Proposals should:
 
 Proposals must implement the multi-actor approach, involving educational and employment institutions, industrial actors, unions and local and regional authorities in order to co-create the knowledge and adapted solutions to foster the establishment of Bioeconomy Places across Europe. Collaboration among all the pilot sites set up under the projects of this topic should be fostered. Proposals are encouraged to incorporate and advance the knowledge and findings from previously funded EU projects[3] and work with projects from topics under this WP. All projects under this topic need to closely collaborate.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

@@ -15,6 +15,6 @@ Proposals should address the following activities:
 
 The multi-actor approach is encouraged. Proposals should include industry in the consortia and academia, startups, SMEs and international initiatives. Collaboration with international partners is encouraged as well as with existing private companies in the EU/Associated countries.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start from TRL 5 in order to achieve TRL 7 by the end of the project – see General Annex B.

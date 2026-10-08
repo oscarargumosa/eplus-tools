@@ -24,7 +24,7 @@ This topic implements the co-programmed European Partnership on ‘Towards zero 
 
 The topic is open to international collaboration, and the funded project are expected to seek synergies with the Sustainable Transport Forum[2] and with the EV TCP Task 49[3].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6 by the end of the project – see General Annex B. Activities may start at any TRL.
 

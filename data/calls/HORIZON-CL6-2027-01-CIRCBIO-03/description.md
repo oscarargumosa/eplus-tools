@@ -21,6 +21,6 @@ Industrial value chains are expected to take part in the proposed consortia to e
 
 Clustering with other relevant Horizon Europe projects is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.

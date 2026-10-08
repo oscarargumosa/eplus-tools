@@ -3,8 +3,8 @@
 Project results are expected to contribute to all of the following expected outcomes:
 - societal and political actors have a better understanding of how European agriculture and forestry, as well as agri-food and forest-based supply chains, are exposed to and impacted by a combination of complex systemic risks and crises;
 - EU, national, regional and local decision-makers have access to improved analytical capacity and recommendations on policy instruments and strategies for assessing, preventing and managing systemic risks and crises;
-- the compounding, cascading and amplifying roles of climate change for different kinds of risk and crises and in constraining options for crisis response are better understood, facilitating their systematic integration into decision-making;
-- the compounding, amplifying and/or mitigating role of trade for different kinds of risk and crises involving supply chain effects is better understood.
+- the compounding, cascading and amplifying roles of climate change for different types of risks and crises and in constraining options for crisis response are better understood, facilitating their systematic integration into decision-making;
+- the compounding, amplifying and/or mitigating role of trade for different types of risks and crises involving supply chain effects is better understood.
 
 ## Scope
 
@@ -21,7 +21,7 @@ Proposals should either address Area A: Agriculture and agri-food supply chains,
 
 Proposals should capitalise on existing relevant research findings and tools. They should also ensure complementarities with other relevant EU-funded projects, including from the EU Missions on Adaptation to Climate Change and on Soil, and ensure synergies with other relevant EU initiatives and processes (e.g., Resilience Dashboards [2]).
 
-Proposals should include a dedicated task, appropriate resources and a plan on how they will collaborate with other projects selected under this topic (e.g., by participating in joint activities, workshops, as well as common communication and dissemination activities, etc.). Proposals selected in Area A are also expected to collaborate with the projects selected under the topic HORIZON-CL6-2027-03-GOVERNANCE-01: Strengthening the resilience of European farmers through improved capacity in coping with risks and crises.
+Proposals should include a dedicated task, appropriate resources and a plan on how they will collaborate with other projects selected under this topic (e.g., by participating in joint activities, workshops, as well as common communication and dissemination activities). Proposals selected in Area A are also expected to collaborate with the projects selected under the topic HORIZON-CL6-2027-03-GOVERNANCE-01: Strengthening the resilience of European farmers through improved capacity in coping with risks and crises.
 
 Proposals should support collaborative and interdisciplinary work, involving the effective contribution of social sciences and humanities (SSH) disciplines in combination with science, technology, engineering and mathematics (STEM) disciplines.
 

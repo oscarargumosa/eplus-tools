@@ -16,22 +16,22 @@ This will contribute to developing, deploying global, more flexible and reactive
 
 ## Scope
 
-The areas of R&I, which needs to be addressed to tackle the above-mentioned expected outcomes are:
+ The areas of R&I, which needs to be addressed to tackle the above-mentioned expected outcomes are:
 - R&I on End-to-End SatCom Mission capabilities, secure satcom services and satellites as network nodes, and digital on-ground infrastructure to test and enhance operational efficiency;
 - R&I on Earth Observation equipment, subsystems, applications and services, improving data processing for performance or timeliness, smart multi-sources EO data fusion, fostering interoperability among EO missions, miniaturisation of instrument designs and EO ground segment interfaces, digitalised technology steps such as high-performance cloud-based architectures and active and adaptative optics and/or higher-power electronics;
 - R&I on building blocks and processes common to EO and SatCom systems, such as on-board processing capabilities, maturing high performance processing payload H/W to support space network capabilities and reducing environmental impact of future missions, maturation of technologies and products improving system security and threats identification, characterization and possible mitigation and RF and optical hybrid ground stations for anchoring services.
 
-Proposals may contribute to one or more of the above R&I areas, however the main area addressed are expected to be clearly and unambiguously identified in the proposal text.
+Proposals may contribute to one or more of the above R&I areas, however the main area addressed are expected to be clearly and unambiguously identified in the proposal text. To ensure a balanced portfolio covering the three areas described above, grants will be awarded to applications not only in order of ranking but at least also to one proposal that is the highest ranked within each area, provided that the applications attain all thresholds. For the purposes of the ranking the main area declared by the proposal will be considered.
 
 Proposals are expected to promote cooperation between different actors (industry, SMEs, research institutions and infrastructures and academia) and consider opportunities to quickly turn technological innovation into commercial use in space via e.g., on-ground relevant environment or in orbit demonstration.
 
 It is expected that projects make use of existing EU technologies and/or building blocks, including at component level, contributing to EU non-dependence and strengthen competitiveness, and this should be clearly presented in the proposal. Furthermore, proposed activities should be complementary to H2020 and Horizon Europe funded projects, national activities and activities funded by the European Space Agency (ESA).
 
-This topic contributes to the implementation of the European Partnership on ‘Globally Competitive Space Systems’ (GCSS).
+This topic contributes to the implementation of the European Partnership on ‘Globally Competitive Space Systems’ (GCSS). As such, projects resulting from this topic will be expected to report on results to the European Partnership ‘Globally Competitive Space Systems’ (GCSS) in support of the monitoring of its KPIs.
 
 In this topic, the integration of the gender dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project. The reference TRL definition is the ISO 16290:2013 applicable to the space sector.
 

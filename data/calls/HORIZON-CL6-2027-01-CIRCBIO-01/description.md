@@ -18,7 +18,7 @@ Proposed solutions need to be aligned with chemical safety principles (SSbD) and
 
 This topic supports the implementation of the European Green Deal, the Ecodesign for Sustainable Products Regulation and its working plan, in particular with a view to the reparability of small household appliances, the WEEE Directive, contribute to waste prevention, higher circularity and uptake of recyclate, and Europe’s efforts to develop a single market for sustainable products.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.
 

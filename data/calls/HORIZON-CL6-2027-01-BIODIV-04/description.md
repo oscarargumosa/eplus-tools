@@ -21,7 +21,7 @@ Successful proposals should:
 - provide data and experience usable for decision-makers, to assess socio-economic impacts of invasive alien species, side-effects of the management, the cost of inaction and the benefits of eradication or effective management, with effective contribution from social sciences and humanities;
 - address challenges with scaling up and transferability of solutions. A gender-sensitive and inclusive approach should be integrated, examining how invasive alien species affect individuals’ livelihoods and well-being differently.
 
-This topic requires the effective contribution of SSH discipline to enhance the societal impact of the research activities.
+This topic requires the effective contribution of SSH disciplines to enhance the societal impact of the research activities.
 
 Concrete efforts should be made to ensure that the data produced in the context of the funded projects is FAIR (Findable, Accessible, Interoperable and Re-usable), particularly for real-time data feeds, exploring workflows that can provide “FAIR-by-design” data, i.e., data that is FAIR from its generation. Possibilities offered by the European Open Science Cloud (EOSC) to store and give access to research data should be considered. A citizen science approach could be appropriate for this action to produce, collect and analyse data.
 

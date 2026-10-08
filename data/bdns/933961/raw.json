@@ -1,0 +1,82 @@
+{
+  "id": 1135522,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933961",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2300000,
+  "mrr": false,
+  "descripcion": "Ayudas de minimis para compensar las pérdidas de productividad en los sectores apícola y cunícola.",
+  "descripcionLeng": "Ajuts de minimis per compensar les pèrdues de productivitat en els sectors apícola i cunícola",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Bases reguladoras que deben regir las ayudas de minimis para compensar las pérdidas de productividad en los sectores apícola y cunícola",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1054075",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "10 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1533350,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "RESOLUCIÓ AJUDES PÈRDUES APÍCOLA I CUNÍCOLA.pdf",
+      "long": 311213,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533349,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCIÓN AYUDAS PÉRDIDAS APÍCOLA Y CUNÍCOLA.pdf",
+      "long": 147471,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

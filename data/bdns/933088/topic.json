@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "933088",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA",
+  "nuts_codes": [
+    "ES70"
+  ],
+  "nuts_primary": "ES70",
+  "title": "Resolución del Vicerrectorado de Internacionalización y Cooperación por la que se convoca el programa de movilidad Erasmus+ STT STA de la acción KA171",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-02",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 38226,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "Mi ULPGC > Mis utilidades > Mi Movilidad",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933088",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Boletín ULPGC",
+      "url": null
+    },
+    {
+      "label": "Bases Regularoras",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ulpgc.es/sites/default/files/ArchivosULPGC/boulpgc/BOULPGC/boulpgc_5_de_diciembre_de_2025.pdf](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/boulpgc/BOULPGC/boulpgc_5_de_diciembre_de_2025.pdf",
+  "text_inicio": "Quince días hábiles a partir del día siguiente de la publicación de la convocatoria en BOC",
+  "text_fin": "Al cumplirse los 15 días hábiles desde el día siguiente de publicación en BOC",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.392Z"
+}

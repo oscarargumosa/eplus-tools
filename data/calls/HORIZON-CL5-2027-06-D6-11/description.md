@@ -14,6 +14,6 @@ This topic addresses alternative PNT methods that are essential to provide fallb
 
 The topic also addresses e-conspicuity, aiming to enhance pilot awareness notably at lower altitudes in U-space airspace in order to reduces collision risk in general aviation, where most small aircraft rely on see-and-avoid. Mobile telephony, with minimum network performance requirements, can provide a safe, affordable communication solution for U-space entry and flight safety.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.

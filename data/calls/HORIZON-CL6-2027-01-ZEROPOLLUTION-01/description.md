@@ -23,7 +23,7 @@ International cooperation is encouraged, for the review of substances in scope.
 
 Participation of SMEs in the consortium is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

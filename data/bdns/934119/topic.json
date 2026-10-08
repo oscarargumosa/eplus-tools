@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "934119",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MONTESINOS, LOS / AYUNTAMIENTO DE MONTESINOS, LOS",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Bases reguladoras y convocatoria Bonoconsumo Los Montesinos. Campaña de Navidad 2026.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 123750,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    }
+  ],
+  "apply_url": "https://losmontesinos.sedelectronica.es/catalog/t/5161fa8d-970e-4b48-a506-b2ac34ceafe5",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934119",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://losmontesinos.sedelectronica.es/preview-document/6969620d-356d-48bb-ad2b-7f0a8385dcfe/",
+  "text_inicio": "02/11/2026",
+  "text_fin": "10/11/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.640Z"
+}

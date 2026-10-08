@@ -13,6 +13,6 @@ This topic welcomes innovative ideas focused on creating efficient detection and
 
 Proposals are expected to provide ideas on how they would engage with the Europol Innovation Lab during the lifetime of the project. Furthermore, if the proposals concern drug-related issues, they are expected to engage with the EU Drugs Agency during the lifetime of the project, including validating the outcomes. For aspects of training of Police Authorities, cooperation of successful proposals with CEPOL is expected, provided that the Agency opts out from applying for funding. To ensure the active involvement of and timely feedback from relevant security practitioners, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term outcomes, performed by the practitioners involved in the project. Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Fighting Crime and Terrorism Destination. The project should have a minimum estimated duration of 48 months.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

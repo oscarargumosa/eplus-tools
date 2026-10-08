@@ -1,0 +1,72 @@
+{
+  "id": 1135595,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "INGENIO",
+    "nivel3": "AYUNTAMIENTO DE INGENIO"
+  },
+  "sedeElectronica": "www.ingenio.es",
+  "codigoBDNS": "934034",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 14000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DEL RÉGIMEN DE CONCESIÓN DE SUBVENCIONES DEL AYUNTAMIENTO DE INGENIO, PARA LA FORMACIÓN MUSICAL CORAL, DESDE 1 DE OCTUBRE DE 2026 AL 30 DE JUNIO DE 2027.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES705 - Gran Canaria"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DEL RÉGIMEN DE CONCESIÓN DE SUBVENCIONES DEL AYUNTAMIENTO DE INGENIO, PARA LA FORMACIÓN MUSICAL CORAL, DESDE 1 DE OCTUBRE DE 2026 AL 30 DE JUNIO DE 2027.",
+  "urlBasesReguladoras": "www.ingenio.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "15 días hábiles",
+  "textFin": "15 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533506,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Subvenciones Formación Musical Corales 2026 2027.pdf",
+      "long": 761379,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533507,
+      "descripcion": "RESOLUCIÓN APROBACIÓN BASES SUBVENCIONES FORMACIÓN MUSICAL CORAL 2026-2027",
+      "nombreFic": "20260930_Resolución_DECRETO 2026-5226 [Resolución PR_2026_6911 - Actuación genérica con fiscalización].pdf",
+      "long": 2461875,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

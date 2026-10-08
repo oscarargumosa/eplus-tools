@@ -1,0 +1,80 @@
+{
+  "id": 1135613,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MISLATA",
+    "nivel3": "AYUNTAMIENTO DE MISLATA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934052",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Aprobación de la convocatoria de prestaciones económicas individualizadas en materia de servicios sociales: Ayudas para nacimiento, acogimiento o adopción para el ejercicio de 2026,",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Aprobación de la convocatoria de prestaciones económicas individualizadas en materia de servicios sociales: Ayudas para nacimiento, acogimiento o adopción para el ejercicio de 2026,",
+  "urlBasesReguladoras": "https://www.mislata.es/es/administracion/subvenciones/convocatorias-de-subvenciones-en-tramitacion/ayudas-para-nacimiento-acogimiento-o-adopcion-2026",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El inmediato dia habil siguiente a la publicacion del extracto de la convocatoria",
+  "textFin": "Finaliza el 30 de octubre",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533646,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto convocatoria ayudas nacimiento,acogimiento y adopcion - SEFYCU 8667267.pdf",
+      "long": 281532,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533647,
+      "descripcion": "Convocatoria",
+      "nombreFic": "Convocatoria ayudas nacimiento acogimiento y adopcion - SEFYCU 8560351.pdf",
+      "long": 369668,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533648,
+      "descripcion": "Resolucion Alcaldia",
+      "nombreFic": "Resolución Nº 4102 de 25_09_2026 _Decreto aprobación convocatoria ayudas nacimiento, acogimiento y adopcion_ - SEGRA 1236827.pdf",
+      "long": 442056,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

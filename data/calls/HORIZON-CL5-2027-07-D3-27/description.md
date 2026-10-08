@@ -11,7 +11,7 @@ Demonstration of novel or improved technological solutions for cost-efficient, c
 
 Selected projects are expected to contribute to the BRIDGE initiative[1] and actively participate in its activities.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

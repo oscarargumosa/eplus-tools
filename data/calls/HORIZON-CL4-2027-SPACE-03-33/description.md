@@ -16,15 +16,17 @@ The areas of R&I, which needs to be addressed to tackle the above-mentioned expe
 - R&I on End-to-End SatCom Mission capabilities for increased robustness, energy efficient connectivity and compatibility with 5G & 6G waveforms such as constellation and network software management systems and optical communications, including both space and ground-based assets, and digital on-ground infrastructure to test and enhance operational efficiency;
 - R&I on building blocks and processes common to EO and SatCom systems allowing for in-orbit reconfigurability, faster data availability, on-board and on-ground smart computing and improved operation resilience.
 
+Proposals should address at least one of the areas outlined above.
+
 Proposals are expected to promote cooperation between different actors (industry, SMEs, research institutions and infrastructures and academia) and consider opportunities to quickly turn technological innovation into commercial use in space.
 
 It is expected that projects make use of existing EU technologies and/or building blocks, including at component level, contributing to EU non-dependence and strengthen competitiveness, and this should be clearly presented in the proposal. Furthermore, proposed activities should be complementary to H2020 and Horizon Europe funded projects, national activities and activities funded by the European Space Agency (ESA).
 
-This topic contributes to the implementation of the European Partnership on ‘Globally Competitive Space Systems’ (GCSS).
+This topic contributes to the implementation of the European Partnership on ‘Globally Competitive Space Systems’ (GCSS). As such, projects resulting from this topic will be expected to report on results to the European Partnership ‘Globally Competitive Space Systems’ (GCSS) in support of the monitoring of its KPIs.
 
 In this topic, the integration of the gender dimension (sex and gender analysis) in research and innovation content should be addressed only if relevant in relation to the objectives of the research effort.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project. The reference TRL definition is the ISO 16290:2013 applicable to the space sector.
 

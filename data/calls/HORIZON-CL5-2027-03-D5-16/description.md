@@ -27,7 +27,7 @@ Projects are expected to address all the following aspects:
 
 Proposals are expected to explain the contribution of their objectives, results, IP management and exploitation strategy to the EU added value creation and strategic autonomy throughout the supply and value chain, including competitiveness of the EU waterborne industry, enhancement of the EU’s R&I capacity, technological know-how capabilities and human capital, and resilience of the EU industrial and manufacturing base. Proposals are encouraged to prioritise shipyards, equipment manufacturers and providers located and/or manufacturing in the EU and EEA.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

@@ -35,7 +35,7 @@ Applicants are expected to maximise the visibility of the project outcomes to th
 
 Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Strengthened Security Research and Innovation Destination.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.
 

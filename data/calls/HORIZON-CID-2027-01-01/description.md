@@ -11,13 +11,15 @@ The Clean Industrial Deal aims to secure the EU as an attractive location for ma
 
 The following three technology areas on energy intensive industries having a strong and promising growth potential in Europe are in scope of this call:
 - Managing of carbon cycle (CCU and/or CCUS): further optimization and demonstration of solutions for the capture, utilization or storage of CO2 and/or CO from installations of the energy intensive industries, with significant reduction of energy input (per ton of CO2/CO) related to capture rate and purity compared to current available technologies (target figure 30% reduction), and potential of commercialization of the decarbonized products with respect to LCA (compared to state of the art), market size, and cost.
-- Clean energy usage in production (electrification of the processes, decarbonated production, integration of alternative clean energy carriers – e.g. hydrogen – and technologies, on-site renewable energy storage solutions, usage and upgrade of waste heat): supporting major improvements of clean energy usage in the energy intensive industries until 2035.
+- Clean energy usage in production (electrification of the processes, decarbonated production, integration of alternative clean energy carriers – e.g. hydrogen, biobased feedstock and processes – and technologies, on-site renewable energy storage solutions, usage and upgrade of waste heat): supporting major improvements of clean energy usage in the energy intensive industries until 2035.
 - Circularity and resource efficiency (material, energy, water) of production processes: improvement by 30% until 2035 compared to current industrial value, with technological solutions which are commercially viable; and significant reduction of the overall raw material consumption, energy input, freshwater intake, impact on ecosystems and emissions, through circular value networks that convert industrial side-streams and/or end-of-use waste to new feedstock for which no low-CO2-technologies currently exist. Solutions must have an overall positive LCA and remain commercially viable under the expected regulatory and framework conditions at the end of the project.
 
-Proposals should explicitly select one main area but can also address in an integrated way a combination of these three areas within an industrial sector, provided that it is innovative and can lead to low carbon solutions. The choice of the specific technologies addressed in the proposal is left to the project applicants who should include a thorough justification of the choices both in technological and business terms. Use of advanced, and safe and sustainable materials and processes could be also addressed as part of the selected proposals.
+Proposals should explicitly select one main area but can also address in an integrated way a combination of these three areas within an industrial sector, provided that it is innovative and can lead to low carbon solutions, including for example bio-based solutions as a decarbonisation lever for hard-to-abate sectors.[1]
+
+The choice of the specific technologies addressed in the proposal is left to the project applicants who should include a thorough justification of the choices both in technological and business terms. Use of advanced, and safe and sustainable materials and processes could be also addressed as part of the selected proposals.
 
 Proposals are expected to:
-- demonstrate an adequate integration of relevant technologies in support of the Clean Industrial Deal. The integration can either be demonstrated in a direct (e.g. reduction of greenhouse emissions of a process) or an indirect (e.g. production of a new green/clean product) manner. Reduction or avoidance of harmful pollutants and impact on biodiversity may also be considered, as relevant.[1] The use of relevant results of R&I projects previously or ongoing funded at EU, national or regional level is encouraged.
+- demonstrate an adequate integration of relevant technologies in support of the Clean Industrial Deal. The integration can either be demonstrated in a direct (e.g. reduction of greenhouse emissions of a process) or an indirect (e.g. production of a new green/clean product) manner. Reduction or avoidance of harmful pollutants and impact on biodiversity may also be considered, as relevant.[2] The use of relevant results of R&I projects previously or ongoing funded at EU, national or regional level is encouraged.
 - show industrial leadership in the deployment after the project. To ensure market readiness and effective collaboration amongst relevant stakeholders, the consortium should be industry driven and composed of a preferably small and manageable number of participants, and its size should be justified. The participation of SMEs is encouraged.
 
 The draft dissemination, exploitation and communication plan is expected to include a sound and convincing business plan and market-readiness strategy (cf. intro). These should address how to prepare and support the deployment of the proposed tech solution across relevant EU industrial sectors, and/or how to ensure a high potential for market uptake through further private/public investment (including relevant EU deployment programmes, such as the Innovation Fund). They should include a comprehensive analysis of the critical barriers (technological and non-technological) for the successful market deployment and the corresponding plan to tackle them before 2030.
@@ -28,8 +30,10 @@ Taking into account that the Clean Industrial Deal focuses on clean tech and dec
 
 This topic implements the co-programmed European partnerships Processes4Planet and Clean Steel.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start at TRL 6 and achieve TRL 7 to 8 by the end of the project – see General Annex B.
 
-[1]
+[1] This topic contributes to the objectives of the Competitiveness Coordination Tool project on biobased industries. More information is available on the European Commission’s website: Biobased industry.
+
+[2] For instance, biodiversity could be a priority in specific areas with significant impact on flora or fauna

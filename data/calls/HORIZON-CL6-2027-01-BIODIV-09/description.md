@@ -27,7 +27,7 @@ Proposals may provide financial support to third parties (FSTP) to, for instance
 
 The projects under this topic are relevant to the EU policies related to the EU Vision for Agriculture and Food, to the EU Action Plan for the Development of Organic Production[3] , to the EU biodiversity strategy for 2030 (notably target 8) and to the Kunming-Montreal Global Biodiversity Framework (target 10).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B. Activities may start at any TRL.
 

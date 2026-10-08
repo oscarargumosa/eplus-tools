@@ -20,7 +20,7 @@ Proposals are encouraged to build on the knowledge and results of completed and 
 
 This topic requires the effective contribution of SSH disciplines and involvement of SSH experts in order to produce meaningful and significant effects enhancing the societal impact of the related research activities. This can cover the educational aspect, to facilitate knowledge promotion within different target groups (e.g. students, industry, society). International cooperation is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

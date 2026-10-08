@@ -1,0 +1,64 @@
+{
+  "id": 1135697,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALTEA",
+    "nivel3": "AYUNTAMIENTO DE ALTEA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934136",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "BASES CONVOCATORIA AYUDAS POR ASISTENCIA  DE NIÑOS/AS  MENORES DE 3 AÑOS A GUARDERIA/ CENTRO EDUCACIÓN INFANTIL DE PRIMER CICLO, AUTORIZADOS POR LA GENERALITAT VALENCIANA(de titularidad privada) UBICADOS EN ALTEA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA  PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA POR ASISTENCIA  DE NIÑOS/AS  MENORES DE 3 AÑOS A GUARDERIA/ CENTRO EDUCACIÓN INFANTIL DE PRIMER CICLO, AUTORIZADOS POR LA GENERALITAT VALENCIANA(de titularidad privada)",
+  "urlBasesReguladoras": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007533.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-23",
+  "textInicio": "Día siguiente de la publicación del extracto en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533871,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto Aprobacion PR_2026_3139 - Convocatoria Subvenciones Concurrencia Competitiva]Guarderia.pdf",
+      "long": 724773,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

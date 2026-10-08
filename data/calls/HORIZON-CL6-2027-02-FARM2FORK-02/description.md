@@ -31,7 +31,7 @@ Proposals should capitalise on research findings and tools, included those devel
 
 To better address the requirements of the topic, international cooperation is encouraged.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7 by the end of the project – see General Annex B. Activities may start at any TRL.
 

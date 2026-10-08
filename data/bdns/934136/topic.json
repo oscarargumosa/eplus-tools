@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "934136",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALTEA / AYUNTAMIENTO DE ALTEA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "BASES CONVOCATORIA AYUDAS POR ASISTENCIA  DE NIÑOS/AS  MENORES DE 3 AÑOS A GUARDERIA/ CENTRO EDUCACIÓN INFANTIL DE PRIMER CICLO, AUTORIZADOS POR LA GENERALITAT VALENCIANA(de titularidad privada) UBICADOS EN ALTEA",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": null,
+  "deadline": "2026-10-23",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934136",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007533.pdf",
+  "text_inicio": "Día siguiente de la publicación del extracto en el BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.645Z"
+}

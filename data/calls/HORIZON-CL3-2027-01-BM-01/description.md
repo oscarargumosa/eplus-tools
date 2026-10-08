@@ -13,6 +13,6 @@ Adapted to the nature, scope, type and target TRL of proposed projects, proposal
 
 Research proposals should consider, build on if appropriate and not duplicate previous research, including but is not limited to research by other Framework Programmes’ projects.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B.

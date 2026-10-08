@@ -1,0 +1,108 @@
+{
+  "id": 1135729,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ORDIZIA",
+    "nivel3": "AYUNTAMIENTO DE ORDIZIA"
+  },
+  "sedeElectronica": "https://uzt.gipuzkoa.eus/PortalV/7.00/Default.aspx?idAyto=76&idioma=eu-ES",
+  "codigoBDNS": "934168",
+  "fechaRecepcion": "2026-10-07",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3500,
+  "mrr": false,
+  "descripcion": "Subvenciones a comerciantes, hosteleros/as y empresarios/as para la colocación de rótulos, imagen corporativa y páginas web en euskera, año 2026",
+  "descripcionLeng": "Merkataritza, ostalaritza eta enpresa alorrean euskarazko errotuluak, irudi korporatiboa eta webguneak euskaraz jartzeagatik dirulaguntzak, 2026 urtea",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES212 - Gipuzkoa"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordiziako Udaleko dirulaguntzak emateko ordenantza",
+  "urlBasesReguladoras": "https://www.ordizia.eus/images/dirulaguntzak_emateko_ordenantzak.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "GAOn argitaratu eta hurrengo eguna",
+  "textFin": "Dirulaguntzen oinarrietan zehaztutakoa",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1533919,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "(ele bitan) Deialdia 2026. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 268070,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533920,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "(eu) Deialdia 2026. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 228757,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533934,
+      "descripcion": "(ele bitan) Eskaera orria, hizkuntza paisaia euskalduntzeko 2026",
+      "nombreFic": "(ele bitan) Eskaera orria. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 1015373,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533926,
+      "descripcion": "(ele bitan) Oinarriak 2026. Hizkuntza paisaia euskalduntzeko",
+      "nombreFic": "(ele bitan) Oinarriak 2026. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 290353,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533929,
+      "descripcion": "(eu) Eskaera orria, hizkuntza paisaia euskalduntzeko 2026",
+      "nombreFic": "(eu) Eskaera orria. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 798640,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1533924,
+      "descripcion": "(eu) Oinarriak 2026, hizkuntza paisaia euskalduntzeko",
+      "nombreFic": "(eu) Oinarriak 2026. Hizkuntza paisaia euskalduntzeko.pdf",
+      "long": 237727,
+      "datMod": "2026-10-07",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

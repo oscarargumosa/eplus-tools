@@ -20,7 +20,7 @@ Proposals should plan their activities opting for the Financial Support to Third
 
 To ensure the active involvement of and timely feedback from relevant security practitioners, i.e., Police Authorities and Non-Governmental Organisations / Civil Society Organisations, proposals should plan a mid-term deliverable consisting in the assessment of the project’s mid-term outcomes, performed by the practitioners involved in the project. Activities proposed within this topic should address, in a balanced way, both technological and societal dimensions of the issue under consideration. This topic requires the effective contribution of SSH disciplines and the involvement of SSH experts, institutions as well as the inclusion of relevant SSH expertise, in order to produce meaningful and significant effects enhancing the societal impact of the related innovation activities.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5 by the end of the project – see General Annex B.
 

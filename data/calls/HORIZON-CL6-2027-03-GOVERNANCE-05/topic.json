@@ -38,7 +38,6 @@
     "Plant protection"
   ],
   "crossCuttingPriorities": [
-    "MultiActorApproach",
     "DigitalAgenda",
     "AI"
   ],
@@ -222,5 +221,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-06T04:06:30.164Z"
+  "fetchedAt": "2026-10-08T04:06:22.727Z"
 }

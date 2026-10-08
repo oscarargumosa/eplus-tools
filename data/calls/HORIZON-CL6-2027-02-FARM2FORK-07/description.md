@@ -15,6 +15,6 @@ Proposals should address all the following activities:
 
 Projects selected must follow the multi-actor approach. Actors involved may be researchers, advisors, food and bioeconomy business, startups and SMEs. Proposals should ensure an early engagement of researchers, businesses (including SMEs and startups), public authorities and policy makers, and consumers associations to co-develop, test, validate and adopt the solutions.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to start from TRL 5 in order to achieve TRL 7-8 by the end of the project – see General Annex B.

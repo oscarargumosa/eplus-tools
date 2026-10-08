@@ -28,7 +28,7 @@ Where appropriate, proposals should use and complement capacities and infrastruc
 
 Proposals are encouraged to engage in international cooperation and to build on the results of relevant projects funded under Horizon 2020 and Horizon Europe and ensure collaboration with relevant ongoing and forthcoming projects under the PRIMA and Agriculture of Data partnerships, the JRC and the European Soil Observatory (EUSO).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B.
 

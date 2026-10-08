@@ -34,7 +34,7 @@ Proposals should ensure due consideration of the requirements of the Urban Waste
 
 This action supports the follow-up to the July 2023 Communication on EU Missions assessment[5].
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
 

@@ -23,7 +23,7 @@ This topic contributes to the objectives of the European Green Deal and the Clea
 
 Linkages with relevant initiatives such as the Regional Innovation Valleys, the New European Bauhaus and the Climate-Neutral and Smart Cities Mission and the Adaptation to Climate Change Mission should be explored – whenever relevant.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
 

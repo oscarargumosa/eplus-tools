@@ -18,6 +18,8 @@ In order to address these issues, the following R&I actions should be undertaken
 
 Proposals should consider the results from previously EU funded projects such as AVIATOR, nPETS, TUBE, ANIMA , NEEDED or any other similar projects.
 
-## null
+To assess the effects of airport operations on air quality in nearby communities, proposals may consider involving the Forum for Air Quality Modelling (FAIRMODE), a JRC-led forum fostering air quality modelling improvement and robust benchmarking, and the JRC tool SHERPA (Screening for High Emission Reduction Potential on Air), an integrated assessment model to plan local emission reduction policies.
+
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 5-6 by the end of the project – see General Annex B. Activities may start at any TRL.

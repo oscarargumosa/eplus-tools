@@ -1,0 +1,100 @@
+{
+  "id": 1133891,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE ALMERÍA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE ALMERÍA"
+  },
+  "sedeElectronica": "www.dipalme.org",
+  "codigoBDNS": "932330",
+  "fechaRecepcion": "2026-09-29",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "AC. URGENTE Nº 10 J.G. DE FECHA  5/10/2026  \"CONVOCATORIA DE SUBVENCIONES PARA APOYO A MUJERES EMPRESARIAS (AUTÓNOMAS Y PROFESIONALES) DE LA PROVINCIA DE ALMERÍA 2026\"",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES611 - Almería"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES PARA APOYO A MUJERES EMPRESARIAS (AUTÓNOMAS Y PROFESIONALES), DE LA PROVINCIA DE ALMERÍA 2026.",
+  "urlBasesReguladoras": "https://ov.dipalme.org/verifirma/code/iK26g1v6Nx52oxeh26MBYw==",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532981,
+      "descripcion": "EXTRACTO DEFINITO",
+      "nombreFic": "Extracto definitivo 26.doc.pdf",
+      "long": 317714,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1529027,
+      "descripcion": "EXTRACTO",
+      "nombreFic": "Extracto.report.pdf",
+      "long": 321409,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1528991,
+      "descripcion": "BASES Y ANEXOS",
+      "nombreFic": "BASES Y ANEXOS.report (5).pdf",
+      "long": 1137385,
+      "datMod": "2026-09-29",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1532573,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Acuerdo+urgente+10_1791200838861.pdf",
+      "long": 256447,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

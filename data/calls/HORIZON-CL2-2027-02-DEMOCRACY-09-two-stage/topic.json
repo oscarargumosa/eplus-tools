@@ -38,9 +38,9 @@
     "Transformation of societies, democratization, social movements"
   ],
   "crossCuttingPriorities": [
-    "SocietalEngagement",
-    "AI",
     "EoscAndFairData",
+    "AI",
+    "SocietalEngagement",
     "SSH",
     "DigitalAgenda"
   ],
@@ -189,5 +189,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-05T04:05:41.291Z"
+  "fetchedAt": "2026-10-08T04:06:21.774Z"
 }

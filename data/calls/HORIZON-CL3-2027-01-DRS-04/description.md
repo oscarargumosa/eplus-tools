@@ -22,7 +22,7 @@ Ethical, legal, and social aspects related to the use of immersive training tech
 
 Where applicable, proposals should leverage the data and services available through European Research Infrastructures federated under the European Open Science Cloud, Copernicus, Destination Earth as well as data from relevant Data Spaces. Particular efforts should be made to ensure that the data produced in the context of this topic is FAIR (Findable, Accessible, Interoperable and Re-usable).
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 8 by the end of the project – see General Annex B.
 

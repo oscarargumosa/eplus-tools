@@ -1,0 +1,72 @@
+[
+  {
+    "section": "2. Eligible countries",
+    "label": "Competent Organisation List",
+    "url": "https://efsa.my.site.com/competentorganisations/s/competentorganisation/CompetentOrganisation__c/00B1v000009LqfIEAS",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Call for proposal",
+    "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/call_for_proposals_euba-efsa-2026-biohaw-01.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Draft Grant Agreement",
+    "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_specific_grant_agreement_euba-efsa-2026-biohaw-01.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Draft Framework Partnership Agreement",
+    "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_framework_partnership_agreement_euba-efsa-2026-biohaw-01.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation 2024/2509",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Grants AGA — Annotated Model Grant Agreement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Terms and Conditions",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "Funding & Tenders Portal Privacy Statement",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  }
+]

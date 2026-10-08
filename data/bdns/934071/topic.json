@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "934071",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / FONDO DE GARANTÍA AGRARIA Y PESQUERA DE LAS ISLAS BALEARES (FOGAIBA)",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "Ayudas de minimis, para el año 2026, para compensar el incremento del precio de los piensos en las explotaciones ganaderas de las Islas Baleares derivado de la guerra en Oriente Medio",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": null,
+  "deadline": "2026-10-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3500000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": "http://www.caib.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934071",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://boib.caib.es/pdf/2005043/mp15.pdf",
+  "text_inicio": "Desde el día siguiente a la publicación de la Resolución en el BOIB",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 1408/2013 de minimis, Agrícola",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [
+    {
+      "descripcion": "Todos"
+    }
+  ],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-08T04:09:43.631Z"
+}

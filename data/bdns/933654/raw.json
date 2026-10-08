@@ -1,0 +1,72 @@
+{
+  "id": 1135215,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILADECANS",
+    "nivel3": "AYUNTAMIENTO DE VILADECANS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933654",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 17500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA ESPECÍFICA A SUBVENCIONES, DE FORMA COMPETITIVA, PARA LA CONCESIÓN DE LOS PREMIOS A LA EFICIENCIA ENERGÉTICA (PREMIOS VILAWATT PARA PROMOVER LA MISIÓN CLIMÁTICA Y LA MITIGACIÓN DEL CAMBIO CLIMÁTICO MEDIANTE LA TRANSICIÓN A LAS ENERGÍAS",
+  "descripcionLeng": "CONVOCATÒRIA ESPECÍFICA DE SUBVENCIÓ, EN RÈGIM DE CONCURRÈNCIA COMPETITIVA, PER A LA CONCESSIÓ DELS PREMIS EFICIÈNCIA ENERGÈTICA (PREMIS VILAWATT PER FOMENTAR LA MISSIÓ CLIMA I LA MITIGACIÓ  DEL CANVI CLIMÀTIC AMB LA TRANSICIÓ ENERGÈTICA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de los Premios Eficiencia Energética(Premios Vilawatt para fomentar la Misión Clima y la mitigación del cambio climático con la Transición Energética Renovable y la descarbonización de la ciudad de Viladecans)",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3954643/aprovacio-inicial-de-les-bases-reguladores-per-a-la-concessio-dels-premis-eficiencia-energetica-linia-9-20000-premis-eficiencia-energetica-ajuntament-de-viladecans",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación en el BOPB",
+  "textFin": "será de 15 días laborables, contando desde el día siguiente a la publicación en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1532453,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Edicte (23).pdf",
+      "long": 254870,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-07"
+    },
+    {
+      "id": 1532452,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Edicte (23).pdf",
+      "long": 254870,
+      "datMod": "2026-10-06",
+      "datPublicacion": "2026-10-07"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -15,7 +15,7 @@ Proposals should build upon existing research outputs, specifically under other 
 
 Proposals should focus on providing comprehensive solutions that combine robust protection, operational support, and data-driven insights, ensuring a holistic approach to safety. Collaboration between research institutions, manufacturers, and end-users will be essential to ensure that the resulting products meet the practical requirements of practitioners in the field. The Preparedness Union Strategy is a key document in this regard. Analysing the capacity gaps of the UCPM[3] as well as finding synergies with the rescEU strategic reserve and projects from operational grants, such as the Knowledge for Action in Prevention & Preparedness (KAPP)[4], is recommended.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 7-8 by the end of the project – see General Annex B.
 

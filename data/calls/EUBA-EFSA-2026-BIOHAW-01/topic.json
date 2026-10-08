@@ -1,0 +1,108 @@
+{
+  "identifier": "EUBA-EFSA-2026-BIOHAW-01",
+  "ccm2Id": "52617886",
+  "callIdentifier": "EUBA-EFSA-2026-BIOHAW-01",
+  "callTitle": "Support to EFSA in the risk assessment of alternative methods for the use and disposal of animal by-products and derived products",
+  "title": "Support to EFSA in the risk assessment of alternative methods for the use and disposal of animal by-products and derived products",
+  "programme": "EUBA",
+  "programmeCode": "45532249",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-10-08",
+  "deadline": "2026-12-10",
+  "deadlineModel": "single-stage",
+  "actionType": "EUBA Type of Action",
+  "actionCode": "EUBA",
+  "mgaCode": "EUBA",
+  "budget": {
+    "total_eur": 300000,
+    "by_year": {
+      "2027": 300000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "EUBA-EFSA-2026-BIOHAW-01",
+    "EUBA-EFSA-2026-BIOHAW-01"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact EFSAProcurement@efsa.europa.eu\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/46698?topic=EUBA-EFSA-2026-BIOHAW-01",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EUBA-EFSA-2026-BIOHAW-01",
+  "documents": [
+    {
+      "section": "2. Eligible countries",
+      "label": "Competent Organisation List",
+      "url": "https://efsa.my.site.com/competentorganisations/s/competentorganisation/CompetentOrganisation__c/00B1v000009LqfIEAS",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Call for proposal",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/call_for_proposals_euba-efsa-2026-biohaw-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Draft Grant Agreement",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_specific_grant_agreement_euba-efsa-2026-biohaw-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Draft Framework Partnership Agreement",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_framework_partnership_agreement_euba-efsa-2026-biohaw-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Grants AGA — Annotated Model Grant Agreement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-10-08T04:06:22.839Z"
+}

@@ -21,6 +21,6 @@ Proposals should integrate the gender dimension where applicable. Consideration 
 
 Proposals must implement the multi-actor approach, involving local and regional authorities, urban planners, SMEs and start-ups, food entrepreneurs, research and innovation actors, educational institutions, civil society organisations, and citizens, to co-create inclusive, sustainable, and scalable urban food system innovations.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B. Activities may start at any TRL.
