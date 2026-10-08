@@ -58,14 +58,19 @@ exports.getFull = async (req, res) => {
 };
 
 /* ── Beneficiaries ───────────────────────────────────────────── */
+// Todas las rutas hijas comprueban que el presupuesto :id es del usuario
+// (getBudget filtra por user_id) y que el hijo pertenece a ese presupuesto.
 
 exports.listBeneficiaries = async (req, res) => {
-  try { ok(res, await m.listBeneficiaries(req.params.id)); }
-  catch (e) { err(res, e.message, 500); }
+  try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    ok(res, await m.listBeneficiaries(req.params.id));
+  } catch (e) { err(res, e.message, 500); }
 };
 
 exports.addBeneficiary = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
     const result = await m.addBeneficiary(req.params.id, req.body);
     ok(res, result);
   } catch (e) { err(res, e.message, 500); }
@@ -73,6 +78,8 @@ exports.addBeneficiary = async (req, res) => {
 
 exports.updateBeneficiary = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    if (!await m.childBelongsToBudget('budget_beneficiaries', req.params.benId, req.params.id)) return err(res, 'Not found', 404);
     await m.updateBeneficiary(req.params.benId, req.body);
     ok(res, { updated: true });
   } catch (e) { err(res, e.message, 500); }
@@ -80,6 +87,8 @@ exports.updateBeneficiary = async (req, res) => {
 
 exports.deleteBeneficiary = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    if (!await m.childBelongsToBudget('budget_beneficiaries', req.params.benId, req.params.id)) return err(res, 'Not found', 404);
     await m.deleteBeneficiary(req.params.benId);
     ok(res, null);
   } catch (e) { err(res, e.message, 500); }
@@ -88,12 +97,15 @@ exports.deleteBeneficiary = async (req, res) => {
 /* ── Work Packages ───────────────────────────────────────────── */
 
 exports.listWorkPackages = async (req, res) => {
-  try { ok(res, await m.listWorkPackages(req.params.id)); }
-  catch (e) { err(res, e.message, 500); }
+  try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    ok(res, await m.listWorkPackages(req.params.id));
+  } catch (e) { err(res, e.message, 500); }
 };
 
 exports.addWorkPackage = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
     const result = await m.addWorkPackage(req.params.id, req.body);
     ok(res, result);
   } catch (e) { err(res, e.message, 500); }
@@ -101,6 +113,8 @@ exports.addWorkPackage = async (req, res) => {
 
 exports.updateWorkPackage = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    if (!await m.childBelongsToBudget('budget_work_packages', req.params.wpId, req.params.id)) return err(res, 'Not found', 404);
     await m.updateWorkPackage(req.params.wpId, req.body);
     ok(res, { updated: true });
   } catch (e) { err(res, e.message, 500); }
@@ -108,6 +122,8 @@ exports.updateWorkPackage = async (req, res) => {
 
 exports.deleteWorkPackage = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
+    if (!await m.childBelongsToBudget('budget_work_packages', req.params.wpId, req.params.id)) return err(res, 'Not found', 404);
     await m.deleteWorkPackage(req.params.wpId);
     ok(res, null);
   } catch (e) { err(res, e.message, 500); }
@@ -117,13 +133,17 @@ exports.deleteWorkPackage = async (req, res) => {
 
 exports.getCosts = async (req, res) => {
   try {
+    if (!await m.getBudget(req.params.id, req.user.id)) return err(res, 'Not found', 404);
     const { beneficiary_id, wp_id } = req.query;
     ok(res, await m.getCostLines(req.params.id, beneficiary_id, wp_id));
   } catch (e) { err(res, e.message, 500); }
 };
 
+// /costs/:costId no lleva budget en la ruta: se resuelve el presupuesto de la línea
 exports.updateCost = async (req, res) => {
   try {
+    const budgetId = await m.getCostBudgetId(req.params.costId);
+    if (!budgetId || !await m.getBudget(budgetId, req.user.id)) return err(res, 'Not found', 404);
     const result = await m.updateCostLine(req.params.costId, req.body);
     ok(res, result);
   } catch (e) { err(res, e.message, 500); }
@@ -173,5 +193,5 @@ exports.createFromIntake = async (req, res) => {
   try {
     const result = await m.createFromIntake(req.user.id, req.params.projectId);
     ok(res, result);
-  } catch (e) { err(res, e.message, 500); }
+  } catch (e) { err(res, e.message, e.status || 500); }
 };
