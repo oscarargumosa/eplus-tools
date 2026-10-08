@@ -169,6 +169,14 @@ const Intake = (() => {
 
   /* ── Event binding ───────────────────────────────────────────── */
   function bindEvents() {
+    // El id "intake-f-fullname" hace que el navegador lo tome por el nombre de
+    // la persona y lo autorrellene ("Oscar Argumosa" como título del proyecto).
+    const fullnameInput = document.getElementById('intake-f-fullname');
+    if (fullnameInput) {
+      fullnameInput.setAttribute('autocomplete', 'off');
+      fullnameInput.setAttribute('name', 'project-title');
+    }
+
     // Step navigation (delegated since nav is dynamic)
     document.getElementById('intake-step-nav')?.addEventListener('click', (e) => {
       const stepEl = e.target.closest('[data-step]');
@@ -303,6 +311,53 @@ const Intake = (() => {
     renderBudgetPicker(p, null);
   }
 
+  // Selector de convocatoria para proyectos cuyo tipo no casa con ninguna
+  // (p. ej. creados con "Erasmus+"). currentType === null lo oculta.
+  function renderTypePicker(currentType) {
+    const typeVis = document.getElementById('intake-f-type-visible');
+    if (!typeVis) return;
+    let box = document.getElementById('intake-type-picker');
+    if (currentType === null) { if (box) box.remove(); typeVis.classList.remove('hidden'); return; }
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'intake-type-picker';
+      box.className = 'flex flex-col gap-1.5 mt-1';
+      typeVis.insertAdjacentElement('afterend', box);
+    }
+    typeVis.classList.add('hidden');
+    const opts = programs
+      .filter(p => p.action_type)
+      .map(p => `<option value="${esc(p.id)}">${esc(p.action_type)} — ${esc((p.name || '').trim())}</option>`)
+      .join('');
+    box.innerHTML = `
+      <select id="intake-f-type-pick" class="w-full px-3 py-2.5 rounded-lg bg-white border-2 border-amber-400 text-on-surface font-body text-sm focus:border-primary outline-none">
+        <option value="">Elige la convocatoria…</option>${opts}
+      </select>
+      <p class="text-[11px] text-amber-700 leading-snug">${currentType
+        ? `«${esc(currentType)}» no es una convocatoria concreta. Elige la acción para continuar.`
+        : 'Este proyecto no tiene convocatoria. Elígela para continuar.'}</p>`;
+    box.querySelector('select').addEventListener('change', (ev) => {
+      if (!ev.target.value) return;
+      // Conserva duración y fecha que el usuario ya tuviera
+      const dur = document.getElementById('intake-f-dur').value;
+      const start = document.getElementById('intake-f-start').value;
+      selectProgram(ev.target.value);
+      if (currentType && dur) {
+        document.getElementById('intake-f-dur').value = dur;
+        const durVis = document.getElementById('intake-f-dur-visible');
+        if (durVis) durVis.value = dur;
+      }
+      if (start) {
+        document.getElementById('intake-f-start').value = start;
+        const startVis = document.getElementById('intake-f-start-visible');
+        if (startVis) startVis.value = start;
+      }
+      box.remove();
+      typeVis.classList.remove('hidden');
+      _dirty = true; scheduleIntakeSave();
+    });
+  }
+
   function parseBudgetOptions(program) {
     let opts = program?.budget_options;
     if (typeof opts === 'string') { try { opts = JSON.parse(opts); } catch { opts = null; } }
@@ -434,8 +489,14 @@ const Intake = (() => {
       }
 
       // Select matching program (sets selectedProgram + type-visible field)
+      // Sin convocatoria reconocida → selector para elegirla (antes quedaba vacío y bloqueado).
+      selectedProgram = null;
+      const typeVisEl = document.getElementById('intake-f-type-visible');
+      if (typeVisEl) typeVisEl.value = '';
+      const typeMatch = project.type ? programs.find(p => p.action_type === project.type) : null;
+      renderTypePicker(typeMatch || !programs.length ? null : (project.type || ''));
       if (project.type && programs.length) {
-        const match = programs.find(p => p.action_type === project.type);
+        const match = typeMatch;
         if (match) {
           selectedProgram = match;
           if (!programs.find(pr => pr.id === match.id)) programs.push(match);
@@ -1024,16 +1085,22 @@ const Intake = (() => {
     input.addEventListener('input', doSearch);
     filterCountry.addEventListener('change', doSearch);
 
+    let searchSeq = 0;
     async function searchAndRender(q, country) {
+      // Solo pinta la última búsqueda: una respuesta lenta anterior (p. ej. la
+      // carga inicial sin filtro) no debe tapar los resultados de lo tecleado.
+      const seq = ++searchSeq;
       results.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">Buscando en el directorio (288k entidades)...</p>';
       try {
         // Search in the unified directory (entities/entity_enrichment view)
-        const params = new URLSearchParams({ limit: '50', sort: 'quality' });
+        // Con texto, primero lo que más se parece al nombre o a la sigla; sin texto, por calidad.
+        const params = new URLSearchParams({ limit: '50', sort: q ? 'relevance' : 'quality' });
         if (q) params.set('q', q);
         if (country) params.set('country', country);
         const raw = await fetch('/v1/entities?' + params.toString(), {
           headers: { 'Authorization': 'Bearer ' + API.getToken() }
         }).then(r => r.json());
+        if (seq !== searchSeq) return;
         const ents = (raw.ok && raw.data?.rows) ? raw.data.rows : [];
 
         if (!ents.length) {
@@ -1091,6 +1158,7 @@ const Intake = (() => {
           });
         });
       } catch (err) {
+        if (seq !== searchSeq) return;
         results.innerHTML = '<p class="text-sm text-error py-8 text-center">Error al buscar en el directorio</p>';
       }
     }
@@ -1943,6 +2011,7 @@ const Intake = (() => {
     if (durVis) durVis.value = '24';
     const typeVis = document.getElementById('intake-f-type-visible');
     if (typeVis) typeVis.value = '';
+    renderTypePicker(null);
     partners = [{ _local: 1, name: '', city: '', country: '', role: 'applicant', order_index: 1 }];
     pCounter = 1;
     renderPartners();

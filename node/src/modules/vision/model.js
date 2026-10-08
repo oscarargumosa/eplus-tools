@@ -153,7 +153,9 @@ async function promote(id, userId) {
 
   const project = await intakeModel.createProject(userId, {
     name: v.title || (v.programme ? `Visión · ${v.programme}` : 'Visión Erasmus+'),
-    type: v.programme || null,
+    // El Intake casa el proyecto con su convocatoria por action_type (= call_id).
+    // `programme` es solo "Erasmus+": guardarlo como tipo dejaba la acción vacía y bloqueada.
+    type: v.call_id || v.programme || null,
     description: v.european_value || v.problem || null,
     deadline: v.call_deadline || null,
     duration_months: v.duration_months || null,
