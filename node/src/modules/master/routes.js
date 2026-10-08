@@ -25,31 +25,36 @@ const express = require('express');
 const router = express.Router();
 const { requireAuth } = require('../../middleware/auth');
 const ctrl = require('./controller');
+const access = require('./access');
+
+// Control de acceso (IDOR): solo el dueño del proyecto (o admin).
+router.param('projectId', access.projectParam);
+const { ownDocument, ownChapter, ownExport, ownThread, ownDiagnosis, ownDiagnosisItem } = access;
 
 /* ── Documents ───────────────────────────────────────────────── */
 router.get   ('/projects/:projectId/documents', requireAuth, ctrl.listMasterDocuments);
 router.post  ('/projects/:projectId/documents', requireAuth, ctrl.createMasterDocument);
-router.get   ('/documents/:id',                 requireAuth, ctrl.getMasterDocument);
-router.patch ('/documents/:id',                 requireAuth, ctrl.updateMasterDocument);
-router.delete('/documents/:id',                 requireAuth, ctrl.deleteMasterDocument);
+router.get   ('/documents/:id',                 requireAuth, ownDocument, ctrl.getMasterDocument);
+router.patch ('/documents/:id',                 requireAuth, ownDocument, ctrl.updateMasterDocument);
+router.delete('/documents/:id',                 requireAuth, ownDocument, ctrl.deleteMasterDocument);
 
 /* ── Chapters ────────────────────────────────────────────────── */
-router.get   ('/documents/:id/chapters', requireAuth, ctrl.listChapters);
-router.post  ('/documents/:id/chapters', requireAuth, ctrl.createChapter);
-router.patch ('/chapters/:id',           requireAuth, ctrl.updateChapter);
-router.delete('/chapters/:id',           requireAuth, ctrl.deleteChapter);
-router.post  ('/chapters/:id/refine',          requireAuth, ctrl.refineChapter);
-router.post  ('/chapters/:id/propose-rewrite', requireAuth, ctrl.proposeRewrite);
+router.get   ('/documents/:id/chapters', requireAuth, ownDocument, ctrl.listChapters);
+router.post  ('/documents/:id/chapters', requireAuth, ownDocument, ctrl.createChapter);
+router.patch ('/chapters/:id',           requireAuth, ownChapter, ctrl.updateChapter);
+router.delete('/chapters/:id',           requireAuth, ownChapter, ctrl.deleteChapter);
+router.post  ('/chapters/:id/refine',          requireAuth, ownChapter, ctrl.refineChapter);
+router.post  ('/chapters/:id/propose-rewrite', requireAuth, ownChapter, ctrl.proposeRewrite);
 
 /* ── Exports ─────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/exports', requireAuth, ctrl.listExports);
-router.post ('/exports/:id/mark-ready',      requireAuth, ctrl.markExportReady);
-router.get  ('/documents/:id/export.md',     requireAuth, ctrl.exportMasterAsMarkdown);
+router.post ('/exports/:id/mark-ready',      requireAuth, ownExport, ctrl.markExportReady);
+router.get  ('/documents/:id/export.md',     requireAuth, ownDocument, ctrl.exportMasterAsMarkdown);
 
 /* ── Chat ────────────────────────────────────────────────────── */
 router.get  ('/projects/:projectId/threads/main', requireAuth, ctrl.getOrCreateMainThread);
-router.get  ('/threads/:id/messages',             requireAuth, ctrl.listMessages);
-router.post ('/threads/:id/messages',             requireAuth, ctrl.appendMessage);
+router.get  ('/threads/:id/messages',             requireAuth, ownThread, ctrl.listMessages);
+router.post ('/threads/:id/messages',             requireAuth, ownThread, ctrl.appendMessage);
 
 /* ── Form templates ──────────────────────────────────────────── */
 router.get ('/calls/:callId/form-templates', requireAuth, ctrl.listFormTemplates);
@@ -61,19 +66,19 @@ router.get ('/form-templates/:id',           requireAuth, ctrl.getFormTemplateFu
 router.get  ('/projects/:projectId/cag-documents', requireAuth, ctrl.listCagDocumentsForProject);
 
 /* ── Diagnoses ───────────────────────────────────────────────── */
-router.get  ('/documents/:id/diagnoses', requireAuth, ctrl.listDiagnoses);
-router.get  ('/diagnoses/:id',           requireAuth, ctrl.getDiagnosis);
-router.post ('/diagnoses/:id/items',     requireAuth, ctrl.createCustomDiagnosisItem);
-router.patch('/diagnosis-items/:id',     requireAuth, ctrl.patchDiagnosisItemState);
+router.get  ('/documents/:id/diagnoses', requireAuth, ownDocument, ctrl.listDiagnoses);
+router.get  ('/diagnoses/:id',           requireAuth, ownDiagnosis, ctrl.getDiagnosis);
+router.post ('/diagnoses/:id/items',     requireAuth, ownDiagnosis, ctrl.createCustomDiagnosisItem);
+router.patch('/diagnosis-items/:id',     requireAuth, ownDiagnosisItem, ctrl.patchDiagnosisItemState);
 
 /* ── LLM pipelines ───────────────────────────────────────────── */
-router.post('/documents/:id/compile-v1',          requireAuth, ctrl.compileMasterV1);
-router.post('/documents/:id/regenerate',          requireAuth, ctrl.regenerateWithUnifiedContext);
-router.post('/documents/:id/diagnose',            requireAuth, ctrl.runDiagnosis);
-router.post('/documents/:id/score',               requireAuth, ctrl.computeScoreEstimate);
-router.post('/documents/:id/compress-to-form',         requireAuth, ctrl.compressToForm);
-router.post('/documents/:id/compress-field/:fieldId',  requireAuth, ctrl.compressSingleField);
-router.post('/documents/:id/seed-form-from-master',    requireAuth, ctrl.seedFormFromMaster);
-router.post('/documents/:id/coherence-pass',      requireAuth, ctrl.coherencePass);
+router.post('/documents/:id/compile-v1',          requireAuth, ownDocument, ctrl.compileMasterV1);
+router.post('/documents/:id/regenerate',          requireAuth, ownDocument, ctrl.regenerateWithUnifiedContext);
+router.post('/documents/:id/diagnose',            requireAuth, ownDocument, ctrl.runDiagnosis);
+router.post('/documents/:id/score',               requireAuth, ownDocument, ctrl.computeScoreEstimate);
+router.post('/documents/:id/compress-to-form',         requireAuth, ownDocument, ctrl.compressToForm);
+router.post('/documents/:id/compress-field/:fieldId',  requireAuth, ownDocument, ctrl.compressSingleField);
+router.post('/documents/:id/seed-form-from-master',    requireAuth, ownDocument, ctrl.seedFormFromMaster);
+router.post('/documents/:id/coherence-pass',      requireAuth, ownDocument, ctrl.coherencePass);
 
 module.exports = router;

@@ -41,6 +41,11 @@ async function createMasterDocument(req, res) {
   try {
     const projectId = req.params.projectId;
     const { versionTag, versionLabel, language, parentId } = req.body || {};
+    // El documento padre debe ser del mismo proyecto (ya validado por router.param).
+    if (parentId) {
+      const parent = await model.getMasterDocument(parentId);
+      if (!parent || String(parent.project_id) !== String(projectId)) return bad(res, 404, 'parent master_document not found');
+    }
     const doc = await model.createMasterDocument({ projectId, versionTag, versionLabel, language, parentId });
     ok(res, doc);
   } catch (e) { bad(res, 500, e.message); }
@@ -77,7 +82,8 @@ async function createChapter(req, res) {
     if (!body.chapterKey || !body.chapterType || !body.title) {
       return bad(res, 400, 'chapterKey, chapterType and title are required');
     }
-    const chapter = await model.createChapter({ masterDocId, ...body });
+    // masterDocId SIEMPRE de la URL (ya validada): el body no puede redirigirlo a otro documento.
+    const chapter = await model.createChapter({ ...body, masterDocId });
     ok(res, chapter);
   } catch (e) { bad(res, 500, e.message); }
 }
