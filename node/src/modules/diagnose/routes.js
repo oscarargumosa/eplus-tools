@@ -5,6 +5,7 @@
 const router = require('express').Router();
 const multer = require('multer');
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
 const upload = multer({
@@ -59,7 +60,7 @@ router.post('/paste-letter',                     requireAuth, ctrl.pasteLetter);
 
 /* ── Improvement actions (Fase 5) ────────────────────────────────────── */
 // Generate a Sonnet 4 proposal for a single finding (on demand)
-router.post('/findings/:findingId/propose',      requireAuth, ctrl.proposeForFinding);
+router.post('/findings/:findingId/propose',      requireAuth, aiLimit, ctrl.proposeForFinding);
 // Inspect / accept / reject / modify a generated proposal
 router.get('/actions/:actionId',                 requireAuth, ctrl.getAction);
 router.post('/actions/:actionId/accept',         requireAuth, ctrl.acceptAction);

@@ -5,6 +5,7 @@ const sl   = require('./shortlists.controller');
 const smart = require('./smart.controller');
 const handoff = require('./handoff.controller');
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 
 /* ── Guardia admin: el ranking analítico es privado (área admin) ── */
 function requireAdminOrScribe(req, res, next) {
@@ -33,7 +34,7 @@ router.get('/facets',             ctrl.getFacets);
 router.get('/rankings',           requireAuth, requireAdminOrScribe, ctrl.rankings);
 
 /* ── Smart Shortlist (IA matching, auth) ────────────────────── */
-router.post('/smart-shortlist', requireAuth, smart.smartShortlist);
+router.post('/smart-shortlist', requireAuth, aiLimit, smart.smartShortlist);
 
 /* ── Handoff: crear consorcio → proyecto en intake (auth) ────── */
 router.post('/handoff/consortium', requireAuth, handoff.consortium);

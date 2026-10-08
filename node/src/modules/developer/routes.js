@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
 // Project context (read from intake data)
@@ -16,13 +17,13 @@ router.put('/instances/:id/values', requireAuth, ctrl.saveValues);
 router.put('/instances/:id/field', requireAuth, ctrl.saveField);
 
 // AI generation & evaluation
-router.post('/instances/:id/generate', requireAuth, ctrl.generateDraft);
-router.post('/instances/:id/evaluate', requireAuth, ctrl.evaluateField);
-router.post('/instances/:id/improve', requireAuth, ctrl.improveField);
-router.post('/instances/:id/improve-custom', requireAuth, ctrl.improveFieldCustom);
-router.post('/instances/:id/refine', requireAuth, ctrl.refineField);
-router.post('/instances/:id/refine/evaluate', requireAuth, ctrl.refineEvaluate);
-router.post('/instances/:id/refine/apply', requireAuth, ctrl.refineApply);
+router.post('/instances/:id/generate', requireAuth, aiLimit, ctrl.generateDraft);
+router.post('/instances/:id/evaluate', requireAuth, aiLimit, ctrl.evaluateField);
+router.post('/instances/:id/improve', requireAuth, aiLimit, ctrl.improveField);
+router.post('/instances/:id/improve-custom', requireAuth, aiLimit, ctrl.improveFieldCustom);
+router.post('/instances/:id/refine', requireAuth, aiLimit, ctrl.refineField);
+router.post('/instances/:id/refine/evaluate', requireAuth, aiLimit, ctrl.refineEvaluate);
+router.post('/instances/:id/refine/apply', requireAuth, aiLimit, ctrl.refineApply);
 
 // National-Agency copy-paste report (on-screen Q/A + Word export)
 router.get('/instances/:id/eform-answers', requireAuth, ctrl.getEformAnswers);
@@ -33,7 +34,7 @@ router.get('/eval-criteria', requireAuth, ctrl.getEvalCriteria);
 
 // Prep Studio: Interview
 router.get('/projects/:projectId/interview', requireAuth, ctrl.getInterview);
-router.post('/projects/:projectId/interview/generate', requireAuth, ctrl.generateInterviewQuestions);
+router.post('/projects/:projectId/interview/generate', requireAuth, aiLimit, ctrl.generateInterviewQuestions);
 router.put('/projects/:projectId/interview/:key', requireAuth, ctrl.saveInterviewAnswer);
 
 // Prep Studio: Research docs upload
@@ -49,7 +50,7 @@ router.get('/projects/:projectId/gap-analysis', requireAuth, ctrl.getGapAnalysis
 // Prep Studio v2: 5-tab context
 router.get('/projects/:projectId/prep/consorcio', requireAuth, ctrl.getPrepConsorcio);
 router.put('/projects/:projectId/partners/:partnerId/link-org', requireAuth, ctrl.linkPartnerOrg);
-router.post('/projects/:projectId/prep/consorcio/:partnerId/generate-variant', requireAuth, ctrl.generatePifVariant);
+router.post('/projects/:projectId/prep/consorcio/:partnerId/generate-variant', requireAuth, aiLimit, ctrl.generatePifVariant);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/select-variant', requireAuth, ctrl.selectPifVariant);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/custom-text', requireAuth, ctrl.savePartnerCustomText);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/toggle-eu-project', requireAuth, ctrl.toggleEuProject);
@@ -59,19 +60,19 @@ router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-role', requireA
 router.post('/projects/:projectId/prep/consorcio/:partnerId/extra-staff', requireAuth, ctrl.addExtraStaff);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.updateExtraStaff);
 router.delete('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.removeExtraStaff);
-router.post('/projects/:projectId/prep/consorcio/connection/improve', requireAuth, ctrl.improveConsortiumConnection);
+router.post('/projects/:projectId/prep/consorcio/connection/improve', requireAuth, aiLimit, ctrl.improveConsortiumConnection);
 router.get('/projects/:projectId/prep/presupuesto', requireAuth, ctrl.getPrepPresupuesto);
 router.get('/projects/:projectId/prep/relevancia', requireAuth, ctrl.getPrepRelevancia);
 router.put('/projects/:projectId/prep/relevancia/context', requireAuth, ctrl.updatePrepRelevanciaContext);
-router.post('/projects/:projectId/prep/relevancia/generate-draft', requireAuth, ctrl.generateRelevanciaFieldDraft);
-router.post('/projects/:projectId/prep/relevancia/chat', requireAuth, ctrl.chatRelevanciaField);
+router.post('/projects/:projectId/prep/relevancia/generate-draft', requireAuth, aiLimit, ctrl.generateRelevanciaFieldDraft);
+router.post('/projects/:projectId/prep/relevancia/chat', requireAuth, aiLimit, ctrl.chatRelevanciaField);
 router.get('/projects/:projectId/prep/actividades', requireAuth, ctrl.getPrepActividades);
 router.put('/wp/:wpId/summary', requireAuth, ctrl.updateWpSummary);
 router.put('/activity/:activityId/description', requireAuth, ctrl.updateActivityDescription);
-router.post('/projects/:projectId/prep/wp/:wpId/generate-summary', requireAuth, ctrl.generateWpSummaryDraft);
-router.post('/projects/:projectId/prep/wp/:wpId/improve-summary', requireAuth, ctrl.improveWpSummary);
-router.post('/projects/:projectId/prep/activity/:activityId/generate-description', requireAuth, ctrl.generateActivityDescriptionDraft);
-router.post('/projects/:projectId/prep/activity/:activityId/improve-description', requireAuth, ctrl.improveActivityDescription);
+router.post('/projects/:projectId/prep/wp/:wpId/generate-summary', requireAuth, aiLimit, ctrl.generateWpSummaryDraft);
+router.post('/projects/:projectId/prep/wp/:wpId/improve-summary', requireAuth, aiLimit, ctrl.improveWpSummary);
+router.post('/projects/:projectId/prep/activity/:activityId/generate-description', requireAuth, aiLimit, ctrl.generateActivityDescriptionDraft);
+router.post('/projects/:projectId/prep/activity/:activityId/improve-description', requireAuth, aiLimit, ctrl.improveActivityDescription);
 
 // Writer Phase 2 — per-WP structured tables (milestones + deliverables)
 router.get   ('/wp/:wpId/milestones',   requireAuth, ctrl.listMilestones);
@@ -95,7 +96,7 @@ router.delete('/tasks/:id/participants/:partnerId',        requireAuth, ctrl.rem
 router.get   ('/wp/:wpId/budget',                          requireAuth, ctrl.getWpBudget);
 router.post  ('/projects/:projectId/budget/refresh',       requireAuth, ctrl.refreshProjectBudget);
 router.get   ('/projects/:projectId/partners',             requireAuth, ctrl.listProjectPartners);
-router.post  ('/wp/:wpId/ai-fill',                         requireAuth, ctrl.aiFillWp);
+router.post  ('/wp/:wpId/ai-fill',                         requireAuth, aiLimit, ctrl.aiFillWp);
 router.post  ('/wp/:wpId/tasks/resync',                    requireAuth, ctrl.resyncWpTasks);
 
 // Project-level Deliverables & Milestones (Phase 4)
@@ -110,7 +111,7 @@ router.get   ('/projects/:projectId/dms/tasks',                            requi
 router.get   ('/projects/:projectId/deliverables-milestones/validate',     requireAuth, ctrl.dmsValidate);
 router.post  ('/projects/:projectId/deliverables-milestones/autolink',     requireAuth, ctrl.dmsAutolink);
 router.post  ('/projects/:projectId/deliverables-milestones/apply-fixes',  requireAuth, ctrl.dmsApplyFixes);
-router.post  ('/deliverables/:id/regenerate',                              requireAuth, ctrl.dmsRegenerateDeliverable);
+router.post  ('/deliverables/:id/regenerate',                              requireAuth, aiLimit, ctrl.dmsRegenerateDeliverable);
 
 // Snapshots, audit log, exports
 router.get   ('/projects/:projectId/dms/snapshots',     requireAuth, ctrl.dmsListSnapshots);
@@ -125,8 +126,8 @@ router.patch ('/staff-table/:ppsId',                    requireAuth, ctrl.update
 // 2.1.5 Project risks — CRUD + AI bulk generator
 router.get   ('/projects/:projectId/risks',             requireAuth, ctrl.listRisks);
 router.post  ('/projects/:projectId/risks',             requireAuth, ctrl.createRisk);
-router.post  ('/projects/:projectId/risks/ai-generate', requireAuth, ctrl.aiGenerateRisks);
-router.post  ('/projects/:projectId/risks/ai-evaluate', requireAuth, ctrl.aiEvaluateRisks);
+router.post  ('/projects/:projectId/risks/ai-generate', requireAuth, aiLimit, ctrl.aiGenerateRisks);
+router.post  ('/projects/:projectId/risks/ai-evaluate', requireAuth, aiLimit, ctrl.aiEvaluateRisks);
 router.patch ('/risks/:id',                             requireAuth, ctrl.updateRisk);
 router.delete('/risks/:id',                             requireAuth, ctrl.deleteRisk);
 

@@ -3,6 +3,7 @@
 const router = require('express').Router();
 const multer  = require('multer');
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 30 * 1024 * 1024 } });
@@ -37,7 +38,7 @@ router.post('/parse-form-b', requireAuth, upload.single('file'), ctrl.parseFormB
 
 /* ── Interview (AI-guided Project Summary) ───────────────────── */
 router.get   ('/projects/:id/interview',      requireAuth, ctrl.getInterview);
-router.post  ('/projects/:id/interview/next',  requireAuth, ctrl.interviewNext);
+router.post  ('/projects/:id/interview/next',  requireAuth, aiLimit, ctrl.interviewNext);
 router.delete('/projects/:id/interview',       requireAuth, ctrl.resetInterview);
 
 /* ── Task Templates ──────────────────────────────────────────── */

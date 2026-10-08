@@ -2,6 +2,7 @@
 const router = require('express').Router();
 const multer  = require('multer');
 const { requireAuth } = require('../../middleware/auth');
+const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 50 * 1024 * 1024 } }); // 50MB for large proposals
@@ -18,7 +19,7 @@ router.get   ('/instances/:id/values',   requireAuth, ctrl.getValues);
 router.put   ('/instances/:id/values',   requireAuth, ctrl.saveValues);
 
 /* ── Upload + AI parse ───────────────────────────────────────── */
-router.post  ('/instances/:id/upload-parse', requireAuth, upload.single('file'), ctrl.uploadAndParse);
+router.post  ('/instances/:id/upload-parse', requireAuth, aiLimit, upload.single('file'), ctrl.uploadAndParse);
 router.get   ('/parse-jobs/:jobId',          requireAuth, ctrl.getParseStatus);
 
 /* ── Promote evaluation → editable project (Path B) ──────────── */
