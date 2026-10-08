@@ -178,6 +178,12 @@ function checkConfig() {
     console.error('[SECURITY] ⚠️  JWT_SECRET no está configurado o usa el valor por defecto. Detén el servidor y configura JWT_SECRET en .env');
     process.exit(1);
   }
+  // Refresh y access deben firmarse con secretos distintos. No se para el
+  // servidor (la live aún no lo tiene), pero se avisa fuerte en cada arranque.
+  const refreshSecret = process.env.JWT_REFRESH_SECRET || '';
+  if (process.env.NODE_ENV === 'production' && (insecure.includes(refreshSecret) || refreshSecret === jwtSecret)) {
+    console.error('[SECURITY] ⚠️⚠️  JWT_REFRESH_SECRET falta o es igual a JWT_SECRET. Configura un secreto propio (32+ bytes aleatorios). Al cambiarlo se cierran las sesiones abiertas.');
+  }
   if (!process.env.DB_HOST) {
     console.warn('[CONFIG] DB_HOST no definido, usando localhost por defecto');
   }

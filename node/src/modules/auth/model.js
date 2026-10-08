@@ -39,7 +39,7 @@ const User = {
       if (!user.email_verified) {
         await db.query('UPDATE users SET email_verified = 1 WHERE id = ?', [user.id]);
       }
-      return { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription };
+      return { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription, token_version: user.token_version || 0 };
     }
 
     const id = uuid();
@@ -62,6 +62,19 @@ const User = {
   async updateName(userId, name) {
     await db.query('UPDATE users SET name = ? WHERE id = ?', [name.trim(), userId]);
     return User.findById(userId);
+  },
+
+  /* ── Revocación de sesiones (migración 131) ───────────────────
+     Los tokens llevan `tv`; subirlo invalida todos los anteriores. */
+  async getTokenVersion(userId) {
+    const [rows] = await db.query('SELECT token_version FROM users WHERE id = ? LIMIT 1', [userId]);
+    return rows[0] ? (rows[0].token_version || 0) : 0;
+  },
+
+  async bumpTokenVersion(userId) {
+    await db.query('UPDATE users SET token_version = token_version + 1 WHERE id = ?', [userId]);
+    require('../../middleware/auth').invalidateUserState(userId);
+    return User.getTokenVersion(userId);
   },
 
   /* Password hash only — used to verify the current password before a change.
