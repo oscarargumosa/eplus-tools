@@ -414,9 +414,13 @@ async function getTaskTemplates(req, res) {
 }
 
 /* ── Project Tasks ───────────────────────────────────────────── */
+// Cierre IDOR: el proyecto (o el de la tarea) tiene que ser del usuario.
+const own = require('../../utils/ownership');
+const isOwnProject = async (projectId, userId) => !!(await model.findProjectById(projectId, userId));
 
 async function listTasks(req, res) {
   try {
+    if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     const tasks = await model.listTasks(req.params.projectId);
     res.json({ ok: true, data: tasks });
   } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
@@ -424,6 +428,7 @@ async function listTasks(req, res) {
 
 async function createTask(req, res) {
   try {
+    if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     const result = await model.createTask({ project_id: req.params.projectId, ...req.body });
     res.json({ ok: true, data: result });
   } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
@@ -431,6 +436,7 @@ async function createTask(req, res) {
 
 async function generateTasks(req, res) {
   try {
+    if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     const { activities } = req.body;
     // activities = [{ wp_id, category, subtype }, ...]
     if (!activities || !Array.isArray(activities)) {
@@ -464,20 +470,23 @@ async function generateTasks(req, res) {
 
 async function updateTask(req, res) {
   try {
+    await own.assertTaskOwner(req.params.id, req.user, { allowAdmin: false });
     await model.updateTask(req.params.id, req.body);
     res.json({ ok: true, data: { updated: true } });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { res.status(e.status || 500).json({ ok: false, error: { code: e.code, message: e.message } }); }
 }
 
 async function deleteTask(req, res) {
   try {
+    await own.assertTaskOwner(req.params.id, req.user, { allowAdmin: false });
     await model.deleteTask(req.params.id);
     res.json({ ok: true, data: null });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { res.status(e.status || 500).json({ ok: false, error: { code: e.code, message: e.message } }); }
 }
 
 async function deleteAllTasks(req, res) {
   try {
+    if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     await model.deleteAllTasks(req.params.projectId);
     res.json({ ok: true, data: null });
   } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
@@ -594,9 +603,11 @@ ${context}
 async function getInterview(req, res, next) {
   try {
     const projectId = req.params.id;
-    const turns = await model.getInterviewTurns(projectId);
     const db = require('../../utils/db');
     const [rows] = await db.query('SELECT interview_summary FROM projects WHERE id = ? AND user_id = ?', [projectId, req.user.id]);
+    // Cierre IDOR: antes devolvía los turnos de cualquier proyecto
+    if (!rows[0]) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
+    const turns = await model.getInterviewTurns(projectId);
     const summary = rows[0]?.interview_summary || null;
     const completed = turns.some(t => t.role === 'assistant' && t.content.includes('[INTERVIEW_COMPLETE]')) || !!summary;
     res.json({ ok: true, data: { turns, completed, summary } });
@@ -695,6 +706,7 @@ async function interviewNext(req, res, next) {
 
 async function resetInterview(req, res, next) {
   try {
+    if (!await isOwnProject(req.params.id, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     await model.deleteInterview(req.params.id);
     res.json({ ok: true, data: null });
   } catch (e) { next(e); }
