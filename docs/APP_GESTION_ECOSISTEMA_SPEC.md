@@ -32,10 +32,10 @@ ecosistema automáticamente, y que Óscar (y los admin) consulten y gestionen to
 
 | Rol | Quién | Puede |
 |---|---|---|
-| **Superadmin** | Óscar — `oscarargumosa@gmail.com` | Todo + gestiona usuarios/roles |
+| **Superadmin** | Óscar (ver nota interna del VPS) | Todo + gestiona usuarios/roles |
 | **Admin** | El resto (correos pendientes de Óscar) | Crear etiquetas y trabajar |
 
-- **Usuario de test:** `permaculturacantabria@gmail.com` (como admin de pruebas).
+- **Usuario de test:** una cuenta de pruebas con rol admin (ver nota interna del VPS).
 - **Ambos** (superadmin y admin) pueden **crear** etiquetas.
 - 🟡 *Decisión abierta (D3):* ¿los admin pueden editar/borrar CUALQUIER etiqueta o solo las suyas?
 

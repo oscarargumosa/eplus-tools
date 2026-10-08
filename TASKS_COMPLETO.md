@@ -33,7 +33,7 @@
 
 ### T2.2 — Dar permisos de administrador a la cuenta de Oscar
 **📋 Qué es:** Tu cuenta de usuario en la plataforma no tiene todavía permisos de administrador. Hay que activarlos.
-**⚙️ Técnico:** `UPDATE users SET role='admin' WHERE email='oscarargumosa@gmail.com'` en MySQL de producción. Ejecutar tras aplicar T2.1.
+**⚙️ Técnico:** `UPDATE users SET role='admin' WHERE email='<correo del admin>'` (ver nota interna del VPS) en MySQL de producción. Ejecutar tras aplicar T2.1.
 
 ### T2.3 — Crear las tablas para gestionar cohortes y plazas
 **📋 Qué es:** Hay que preparar el almacén de datos donde se guardarán todos los cursos (cohortes), sus clases, las plazas vendidas, los pagos y el progreso de los alumnos.

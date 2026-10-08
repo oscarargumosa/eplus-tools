@@ -45,7 +45,7 @@
 
 ### Bloque U.2 — Migraciones y rol admin [ ]
 - Ejecutar `020_admin_ref_tables.sql` y `022_erasmus_eligibility.sql` en MySQL
-- `UPDATE users SET role='admin' WHERE email='oscarargumosa@gmail.com'`
+- `UPDATE users SET role='admin' WHERE email='<correo del admin>'` (ver nota interna del VPS)
 - (Requiere merge a main + acceso MySQL)
 
 ### Bloque U.3 — Merge dev-vps → main [ ]

@@ -519,7 +519,7 @@ Trabajo:
 
 ```bash
 # Conexión
-docker exec wordpress-eufunding-db-1 mysql -uroot -peufunding_root_2026 eplus_tools
+docker exec -it <contenedor-mysql> mysql -uroot -p eplus_tools   # contraseña: ver nota interna del VPS
 
 # Conteos clave
 SELECT 'vivas', COUNT(*) FROM entity_enrichment WHERE archived=0;
@@ -545,7 +545,7 @@ GROUP BY e.country_code ORDER BY 2 DESC LIMIT 15;
 
 ### 8.4 Credenciales y URLs
 
-- DB: ver `.env` del repo (`DB_HOST=172.19.0.4`, `eplus_tools`, root/eufunding_root_2026)
+- DB: ver `.env` (BD `eplus_tools`; host y credenciales: ver nota interna del VPS)
 - Producción actual: `intake.eufundingschool.com`
 - Repo: `ongpasos-droid/eplus-tools`
 - Ramas: `main` (deploy) | `dev-local` (PC) | `dev-vps` (servidor)

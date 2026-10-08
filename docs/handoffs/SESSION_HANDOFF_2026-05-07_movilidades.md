@@ -117,4 +117,4 @@ hola, continuar con las movilidades SALTO
 - Mockup visual: `C:\Users\Usuario\erasmuscantabria\design-templates\05-cursos-mockup.html`
 - Brand: `C:\Users\Usuario\erasmuscantabria\BRIEF.md` + `design-templates/brand.css`
 - Estructura WP existente: `C:\Users\Usuario\erasmuscantabria\scripts\00-initial-setup.md`
-- VPS: 91.98.145.106 · contenedor `erasmuscantabria-wp-wordpress-1` · WP-CLI vía `./scripts/wp-cli.sh <cmd>`
+- VPS (ver nota interna del VPS) · contenedor `erasmuscantabria-wp-wordpress-1` · WP-CLI vía `./scripts/wp-cli.sh <cmd>`

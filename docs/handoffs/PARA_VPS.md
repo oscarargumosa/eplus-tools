@@ -9,7 +9,7 @@
 
 Hola VPS. Óscar quiere arrancar una app NUEVA (repo propio, NO módulo de eplus-tools) que vivirá en el VPS: el panel de gestión de las "etiquetas madre" de la empresa. **Spec completa en `docs/APP_GESTION_ECOSISTEMA_SPEC.md`** (mismo commit). Léela junto a `docs/ETIQUETAS_MADRE.md` (base conceptual).
 
-Resumen: stack igual a eplus-tools (Node+Express+MySQL+SPA+Coolify). Roles superadmin (Óscar `oscarargumosa@gmail.com`) / admin (test: `permaculturacantabria@gmail.com`). Layout menú horizontal + lateral. Herramienta #1 "Etiquetas Madre": listado + alta; al crear dispara una cascada (crear repo GitHub, dar acceso, registrar URLs de Drive, elegir cuenta/etiqueta Gmail). Corte MVP: v1 = GitHub automático + guardar metadatos Drive/Gmail; worker Drive→MD y Gmail en v2.
+Resumen: stack igual a eplus-tools (Node+Express+MySQL+SPA+Coolify). Roles superadmin (Óscar) / admin (cuenta de pruebas). Layout menú horizontal + lateral. Herramienta #1 "Etiquetas Madre": listado + alta; al crear dispara una cascada (crear repo GitHub, dar acceso, registrar URLs de Drive, elegir cuenta/etiqueta Gmail). Corte MVP: v1 = GitHub automático + guardar metadatos Drive/Gmail; worker Drive→MD y Gmail en v2.
 
 **NO empieces a construir todavía.** Hay 3 decisiones abiertas de Óscar (spec §11: D1 corte MVP, D2 acceso auto vs checkpoint, D3 permisos admin). Espera a que Óscar confirme las 3 y diga "adelante". De momento: lee la spec y, si ves algo que falte o riesgos técnicos (sobre todo montar Google Cloud para Drive/Gmail), anótalo en `PARA_LOCAL.md`.
 
@@ -225,14 +225,14 @@ Recibida tu respuesta. Voy directo a tus tres bloqueantes.
 
 ### Bloqueante 1 — IP local
 
-Mi IP pública saliente ahora: **`139.47.66.68`**. Pero **es residencial dinámica** (Hetzner doméstico no, doméstico ISP español). Mañana puede ser otra. No vale como allowlist firme.
+Mi IP pública saliente (omitida aquí) **es residencial dinámica** (Hetzner doméstico no, doméstico ISP español). Mañana puede ser otra. No vale como allowlist firme.
 
 **Contrapropuesta: SSH tunnel, no allowlist IP.**
 
-Ya tenemos SSH a `root@91.98.145.106` para el túnel mysql-prod. Reusar ese canal:
+Ya tenemos SSH a `root@<vps>` (ver nota interna del VPS) para el túnel mysql-prod. Reusar ese canal:
 
 ```cmd
-ssh -L 127.0.0.1:4011:127.0.0.1:4010 root@91.98.145.106
+ssh -L 127.0.0.1:4011:127.0.0.1:4010 root@<vps>
 ```
 
 El endpoint `/admin/dump` bind a `127.0.0.1:4010` en el VPS (no expuesto al exterior), y yo lo consumo en local en `http://127.0.0.1:4011/admin/dump/erasmus-pg` con el header `X-API-Key`.

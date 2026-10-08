@@ -11,13 +11,13 @@
 |---|---|
 | **URL** | https://intake.eufundingschool.com |
 | Alias | `app.eufundingschool.com` → redirige 301 a intake |
-| Dónde corre | Contenedor de Coolify `t14ghiihp7i5y8xi9tz8n5m1`, puerto `3006` del VPS |
+| Dónde corre | Contenedor de Coolify (id y puerto: ver nota interna del VPS) |
 | Rama | `main` — **cada push a main despliega solo** |
-| Base de datos | MySQL `eplus_tools` en el contenedor `wordpress-eufunding-db-1` (`172.19.0.5:3306`) |
+| Base de datos | MySQL `eplus_tools` (host y red interna: ver nota interna del VPS) |
 | Variables | En el panel de Coolify, **no** en el repo |
-| Entrada | Login de la propia app (`oscarargumosa@gmail.com`, rol admin) |
+| Entrada | Login de la propia app (cuenta de administración: ver nota interna del VPS) |
 
-El proxy es el nginx del host: `/etc/nginx/conf.d/intake.eufundingschool.com.conf`.
+El proxy es el nginx del host (configuración: ver nota interna del VPS).
 
 ## 2 · Dev del VPS
 
@@ -32,11 +32,11 @@ El proxy es el nginx del host: `/etc/nginx/conf.d/intake.eufundingschool.com.con
 | Montaje | `./scripts/setup-dev-vps.sh clon` (copia de la live) o `… limpia` (BD vacía + migraciones) |
 
 `JWT_SECRET` es distinto del de producción a propósito: una sesión de dev no vale en la live y
-al revés. El nginx de dev manda `X-Robots-Tag: noindex` y tiene el basic auth preparado
-(comentado) en `/etc/nginx/conf.d/dev.eufundingstudio.com.conf`.
+al revés. El nginx de dev manda `X-Robots-Tag: noindex`; el control de acceso de dev
+está descrito en la nota interna del VPS.
 
 La BD de dev es un **clon** de la live (13-sep-2026). Las contraseñas de usuario pueden
-divergir: la de Óscar se repuso solo en dev, la de producción quedó intacta.
+divergir entre dev y producción.
 
 ### Cómo se trabaja aquí
 

@@ -5,7 +5,7 @@
 # Pre-requisitos:
 #   1. Docker Postgres local arriba: docker compose -f infra/docker-compose.local.yml up -d
 #   2. ~/.claude/local-sync.env con DIRECTORY_DUMP_KEY=...
-#   3. SSH key/password a root@91.98.145.106
+#   3. SSH key a root@<vps> y VPS_HOST definido (ver nota interna del VPS)
 #   4. pg_restore en PATH (viene con Postgres client)
 #
 # Estado: STUB. El endpoint /admin/dump aún no está deployed en VPS Claude.
@@ -16,7 +16,7 @@
 set -euo pipefail
 
 # ── Config ────────────────────────────────────────────────────────
-VPS_HOST="${VPS_HOST:-root@91.98.145.106}"
+VPS_HOST="${VPS_HOST:?Define VPS_HOST=root@<ip-o-dominio-del-vps> (ver nota interna del VPS)}"
 
 # Túnel SSH transitorio: localhost:4011 -> VPS:127.0.0.1:4010 (directory-api en localhost)
 TUNNEL_LOCAL_PORT=4011

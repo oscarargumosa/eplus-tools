@@ -30,6 +30,8 @@ router.post('/courses/:course/lessons/:lesson/test', requireAuth,
   h(req => m.startTest(req.params.course, req.params.lesson, req.user)));
 router.post('/courses/:course/lessons/:lesson/test/submit', requireAuth,
   h(req => m.submitTest(req.params.course, req.params.lesson, req.user, req.body)));
+router.post('/courses/:course/certificate', requireAuth,
+  h(req => m.issueCertificate(req.params.course, req.user, req.body)));
 router.put('/courses/:course/lessons/:lesson/note', requireAuth,
   h(req => m.saveNote(req.params.course, req.params.lesson, req.user, req.body)));
 

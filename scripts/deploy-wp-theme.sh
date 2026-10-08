@@ -17,7 +17,7 @@
 set -euo pipefail
 
 # ── Configuración (rellena estas 4 variables) ───────────────────
-WP_SSH_HOST="${WP_SSH_HOST:-91.98.145.106}"   # IP o dominio del server
+WP_SSH_HOST="${WP_SSH_HOST:-}"               # IP o dominio del server (ver nota interna del VPS)
 WP_SSH_USER="${WP_SSH_USER:-root}"            # usuario SSH
 WP_SSH_PORT="${WP_SSH_PORT:-22}"              # puerto
 WP_THEME_PATH="${WP_THEME_PATH:-}"            # ruta absoluta del theme en prod
@@ -25,6 +25,10 @@ WP_THEME_PATH="${WP_THEME_PATH:-}"            # ruta absoluta del theme en prod
 # ej: /home/coolify/applications/<wp-app-uuid>/wp-content/themes/astra-eufunding
 
 # ── Validación ────────────────────────────────────────────────
+if [[ -z "$WP_SSH_HOST" ]]; then
+  echo "ERROR: WP_SSH_HOST no está definido (IP o dominio del server: ver nota interna del VPS)."
+  exit 1
+fi
 if [[ -z "$WP_THEME_PATH" ]]; then
   echo "ERROR: WP_THEME_PATH no está definido."
   echo "Edita scripts/deploy-wp-theme.sh o exporta WP_THEME_PATH antes de correr."

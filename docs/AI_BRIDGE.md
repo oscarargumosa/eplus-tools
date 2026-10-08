@@ -18,14 +18,14 @@ Un servicio en el **host** —donde el CLI sí está autenticado— que expone e
 `claude -p` por HTTP, y solo a la red interna de Docker.
 
 ```
-contenedor e+ tools ──POST /run──▶ 10.0.1.1:4020 (host) ──▶ claude -p ──▶ suscripción
+contenedor e+ tools ──POST /run──▶ <gateway-coolify>:4020 (host) ──▶ claude -p ──▶ suscripción
 ```
 
 - **Código:** `/opt/ai-bridge/server.js` (no versionado en este repo; vive en el VPS).
 - **Servicio:** `ai-bridge.service` (systemd, `enable`d, `Restart=always`).
 - **Token:** `/opt/ai-bridge/.env`, permisos 600.
-- **Escucha:** `127.0.0.1:4020` (pruebas desde el host) y `10.0.1.1:4020`
-  (gateway de la red `coolify`). **No** escucha en `0.0.0.0`.
+- **Escucha:** `127.0.0.1:4020` (pruebas desde el host) y `<gateway-coolify>:4020`
+  (gateway de la red `coolify`; IP: ver nota interna del VPS). **No** escucha en `0.0.0.0`.
 
 ### Contrato
 
@@ -53,11 +53,11 @@ tiempo constante. La unidad systemd va con `ProtectSystem=strict`.
 - **definida** → habla con el puente (producción);
 - **vacía** → `spawn('claude')` como siempre (desarrollo local, sin cambios).
 
-Variables en Coolify (app `e+ tools`, uuid `t14ghiihp7i5y8xi9tz8n5m1`):
+Variables en Coolify (app `e+ tools`; uuid: ver nota interna del VPS):
 
 | Variable | Valor |
 |---|---|
-| `AI_BRIDGE_URL` | `http://10.0.1.1:4020` |
+| `AI_BRIDGE_URL` | `http://<gateway-coolify>:4020` |
 | `AI_BRIDGE_TOKEN` | el de `/opt/ai-bridge/.env` |
 
 `VISION_AI_SUBSCRIPTION=off` sigue desactivando la IA en cualquiera de las dos vías.

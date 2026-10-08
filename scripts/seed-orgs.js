@@ -31,17 +31,17 @@ async function run() {
     'Asociación cultural y medioambiental Permacultura Cantabria',
     'ACYMPC', 'NGO', 'Nº registration: 3705. VAT Code: G39617584', '940435371', '2005-05-24',
     'Spain', 'Cantabria', 'Penagos', 'C/ La llama s/n', '39627',
-    'www.permaculturacantabria.com', 'permaculturacantabria@gmail.com', '0034660798485',
+    'www.permaculturacantabria.com', 'contacto@example.org', '0034000000000',
     0, 1,
     `Permacultura Cantabria is a non-profit organisation, composed of more or less 40 people, whose aim is to offer new alternatives to improve society, recover values and the benchmarks of a naturally balanced way of life. The main goal of the group is to continually investigate the different alternatives to achieve a sustainable culture, to take care of each other and enjoy what they do. The two main lines of work are related to sustainability and natural balance (permaculture, bioconstruction, organic agriculture) and human development (personal growth, emotional intelligence, active listening, inclusion). They organise seminars, workshops, conferences, courses and meetings. The intention is to create an international reference platform based on ecological and healthy systems. They created an experimental, sustainable and self-sufficient property more than 13 years ago.`,
     `In Permacultura Cantabria we have been working for 18 years on youth inclusion, rural and local development. We work in close cooperation with public institutions and local initiatives. We collaborate with education centers to create inter-institutional ways of learning. At local and regional level, we train and coach young people using innovative techniques like Dragon Dreaming. Tourism is another important work line — we are part of the route of Santiago de Compostela. At European level, we have coordinated eight Erasmus+ projects and participated in more than 16.`,
     1,
     'Mr.', 'Male', 'Óscar', 'Argumosa Sainz',
-    'Direction', 'President', 'permaculturacantabria@gmail.com', '0034660798485',
-    0, 'Urbanización Bautizan 4, bajo B', 'Spain', 'Cantabria', 'La Helguera, Penagos', '39627',
+    'Direction', 'President', 'contacto@example.org', '0034000000000',
+    0, 'Dirección del representante (ver nota interna del VPS)', 'Spain', 'Cantabria', 'La Helguera, Penagos', '39627',
     'Mr.', 'Male', 'Óscar', 'Argumosa Sainz',
-    'Direction', 'President', 'permaculturacantabria@gmail.com', '0034660798485',
-    0, 'Urbanización Bautizan 4, bajo B', 'Spain', 'Cantabria', 'La Helguera, Penagos', '39627',
+    'Direction', 'President', 'contacto@example.org', '0034000000000',
+    0, 'Dirección del representante (ver nota interna del VPS)', 'Spain', 'Cantabria', 'La Helguera, Penagos', '39627',
     1
   ]);
 
