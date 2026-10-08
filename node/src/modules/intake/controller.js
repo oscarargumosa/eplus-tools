@@ -132,6 +132,7 @@ async function deleteProject(req, res, next) {
         error: { code: 'NOT_FOUND', message: 'Project not found' }
       });
     }
+    require('../../utils/audit').audit(req, 'project.delete', { targetType: 'project', targetId: req.params.id });
     res.json({
       ok: true,
       data: { message: 'Project deleted' }
@@ -414,19 +415,21 @@ async function getTaskTemplates(req, res) {
 }
 
 /* ── Project Tasks ───────────────────────────────────────────── */
+// 5xx: mensaje genérico + requestId; el detalle solo al log.
+const { sendError } = require('../../utils/httpError');
 
 async function listTasks(req, res) {
   try {
     const tasks = await model.listTasks(req.params.projectId);
     res.json({ ok: true, data: tasks });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function createTask(req, res) {
   try {
     const result = await model.createTask({ project_id: req.params.projectId, ...req.body });
     res.json({ ok: true, data: result });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function generateTasks(req, res) {
@@ -459,28 +462,28 @@ async function generateTasks(req, res) {
     }
 
     res.json({ ok: true, data: created });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function updateTask(req, res) {
   try {
     await model.updateTask(req.params.id, req.body);
     res.json({ ok: true, data: { updated: true } });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function deleteTask(req, res) {
   try {
     await model.deleteTask(req.params.id);
     res.json({ ok: true, data: null });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function deleteAllTasks(req, res) {
   try {
     await model.deleteAllTasks(req.params.projectId);
     res.json({ ok: true, data: null });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 /* ══ INTERVIEW ══════════════════════════════════════════════════ */

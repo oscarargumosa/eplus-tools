@@ -3,6 +3,7 @@ const User = require('./model');
 const { signToken, signRefreshToken, verifyRefreshToken } = require('../../middleware/auth');
 const subscribersModel = require('../subscribers/model');
 const { sendVerificationEmail, sendPasswordResetEmail } = require('../../utils/email');
+const { audit } = require('../../utils/audit');
 
 const SALT_ROUNDS = 12;
 
@@ -58,6 +59,7 @@ const AuthController = {
 
       const passwordHash = await bcrypt.hash(password, SALT_ROUNDS);
       const user = await User.create({ email, passwordHash, name });
+      audit(req, 'auth.register', { actor: user, targetType: 'user', targetId: user.id });
 
       // Generate verification token & send email (do NOT auto-login)
       const token = await User.createVerificationToken(user.id);
@@ -88,6 +90,7 @@ const AuthController = {
 
       const user = await User.findByEmail(email);
       if (!user) {
+        audit(req, 'auth.login.failed', { actor: { email }, meta: { reason: 'unknown_user' } });
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid email or password' }
         });
@@ -95,6 +98,7 @@ const AuthController = {
 
       const valid = await bcrypt.compare(password, user.password_hash);
       if (!valid) {
+        audit(req, 'auth.login.failed', { actor: user, targetType: 'user', targetId: user.id, meta: { reason: 'bad_password' } });
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid email or password' }
         });
@@ -116,6 +120,7 @@ const AuthController = {
 
       res.cookie('refresh_token', refreshToken, cookieOpts());
       _promoteWarm(safeUser);
+      audit(req, 'auth.login', { actor: safeUser, targetType: 'user', targetId: safeUser.id, meta: { method: 'password' } });
       res.json({
         ok: true,
         data: { user: safeUser, access_token: accessToken }
@@ -155,6 +160,7 @@ const AuthController = {
 
       res.cookie('refresh_token', refreshToken, cookieOpts());
       _promoteWarm(user);
+      audit(req, 'auth.login', { actor: user, targetType: 'user', targetId: user.id, meta: { method: 'google' } });
       res.json({
         ok: true,
         data: { user, access_token: accessToken }
@@ -249,6 +255,7 @@ const AuthController = {
 
       // If they reset their password, treat the email as verified.
       await User.markEmailVerified(result.userId);
+      audit(req, 'auth.password.reset', { actor: { id: result.userId }, targetType: 'user', targetId: result.userId });
 
       res.json({ ok: true, data: { message: 'Password updated. You can now sign in.' } });
     } catch (err) {
@@ -355,6 +362,7 @@ const AuthController = {
 
       const passwordHash = await bcrypt.hash(new_password, SALT_ROUNDS);
       await User.updatePassword(req.user.id, passwordHash);
+      audit(req, 'auth.password.change', { targetType: 'user', targetId: req.user.id });
       res.json({ ok: true, data: { message: 'Contraseña actualizada' } });
     } catch (err) {
       console.error('[AUTH] Change password error:', err.message);
