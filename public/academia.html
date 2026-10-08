@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academia — EU Funding Studio</title>
+<meta name="robots" content="noindex">
+<!--
+  Academia nativa de Studio. Misma organización que las aulas de Proyecto
+  Emociona (curso → módulo → lección; vídeo, lectura por hojas, test, notas),
+  con la identidad de Studio (docs/DESIGN.md): azul #1b1464, amarillo #fbff12
+  solo para el elemento principal de cada pantalla, lavanda, Poppins.
+  Diales: varianza 2 · movimiento 3 · densidad 6. Un solo radio: 16 px (8 px
+  en piezas pequeñas). Rutas: /academia, /academia/<curso>, /academia/<curso>/<lección>.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/topbar.css">
+<link rel="stylesheet" href="/css/academia.css">
+</head>
+<body class="efs-has-topbar">
+
+<header class="efs-topbar" role="banner" data-efs-session>
+  <div class="efs-topbar__inner">
+    <a class="efs-topbar__brand" href="https://eufundingschool.com/" aria-label="EU Funding School — Inicio">
+      <img class="efs-topbar__logo" src="/img/logo-efs-white.png" alt="EU Funding School" width="600" height="169">
+    </a>
+    <nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Primary">
+      <ul class="efs-topbar__menu">
+        <li><a href="https://eufundingschool.com/recursos/" target="_top">Recursos</a></li>
+        <li class="is-current"><a href="/academia">Academia</a></li>
+        <li><a href="https://eufundingschool.com/academia/" target="_top">Misión</a></li>
+        <li><a href="/#my-projects">Proyectos</a></li>
+        <li><a href="/#atlas-stats">Entidades</a></li>
+        <li><a href="/#convocatorias">Convocatorias</a></li>
+        <li><a href="/#movilidades">Movilidades</a></li>
+        <li><a href="/#eu-vision">EU Vision</a></li>
+      </ul>
+    </nav>
+    <div class="efs-topbar__cta">
+      <a id="topbar-cta-back" class="efs-topbar__login" href="/">Iniciar sesión</a>
+      <a id="topbar-cta-account" class="efs-topbar__login" href="/#account-profile" style="display:none;">
+        Mi cuenta · <span id="topbar-user-name">…</span>
+      </a>
+    </div>
+    <button type="button" class="efs-topbar__toggle" id="efs-topbar-toggle"
+            aria-label="Abrir menú" aria-controls="efs-topbar-nav" aria-expanded="false">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="ac-root" class="ac" aria-live="polite">
+  <div class="ac-wrap"><div class="ac-skel ac-skel--hero"></div><div class="ac-skel"></div><div class="ac-skel"></div></div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/topbar.js"></script>
+<script src="/js/academia.js"></script>
+</body>
+</html>

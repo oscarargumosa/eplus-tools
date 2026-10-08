@@ -11,7 +11,9 @@
      código; en producción siguen apuntando a WordPress hasta el cutover (P5). */
   var YA_EN_CODIGO = {
     'https://eufundingschool.com/academia/': '/mision',
-    'https://eufundingschool.com/recursos/': '/recursos/'
+    'https://eufundingschool.com/recursos/': '/recursos/',
+    // Academia nativa de Studio (/academia); en producción sigue el Moodle.
+    'https://campus.eufundingschool.com': '/academia'
   };
 
   /* ── Enlaces que salen del producto ──────────────────────────

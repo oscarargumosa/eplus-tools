@@ -31,6 +31,8 @@ app.use(helmet({
                     "https://tiles.openfreemap.org", "https://*.openfreemap.org",
                     "https://*.basemaps.cartocdn.com"],
       frameSrc:    ["https://accounts.google.com"],
+      // Vídeos de la Academia (MP4 en el CDN de Bunny)
+      mediaSrc:    ["'self'", "https://efs-media.b-cdn.net"],
       // MapLibre GL JS usa Web Workers desde un blob para decodificar vector tiles
       workerSrc:   ["'self'", "blob:"],
       childSrc:    ["'self'", "blob:"],
@@ -127,6 +129,9 @@ app.use('/v1/vps',         require('./node/src/modules/vps/routes'));
 app.use('/v1/master',      require('./node/src/modules/master/routes'));
 app.use('/v1/diagnose',    require('./node/src/modules/diagnose/routes'));
 app.use('/v1/academy',     require('./node/src/modules/academy/routes'));
+app.use('/v1/academia',    require('./node/src/modules/academia/routes'));
+app.get('/academia/certificado/:serial', require('./node/src/modules/academia/certificate-page'));
+app.get(['/academia', '/academia/*'], (req, res) => res.sendFile(path.join(__dirname, 'public', 'academia.html')));
 
 /* ── SPA fallback — serve index.html for all non-API routes ─── */
 app.get('*', (req, res) => {
