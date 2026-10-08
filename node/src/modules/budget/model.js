@@ -197,6 +197,21 @@ async function updateCostLine(id, data) {
   return { total_cost: totalCost };
 }
 
+/* ── Pertenencia de hijos al presupuesto (cierre IDOR) ───────── */
+
+const CHILD_TABLES = new Set(['budget_beneficiaries', 'budget_work_packages', 'budget_costs']);
+
+async function childBelongsToBudget(table, childId, budgetId) {
+  if (!CHILD_TABLES.has(table)) throw new Error('Invalid table');
+  const [rows] = await pool.query(`SELECT id FROM ${table} WHERE id = ? AND budget_id = ?`, [childId, budgetId]);
+  return rows.length > 0;
+}
+
+async function getCostBudgetId(costId) {
+  const [rows] = await pool.query('SELECT budget_id FROM budget_costs WHERE id = ?', [costId]);
+  return rows[0]?.budget_id || null;
+}
+
 /* ── Summary: full budget tree ───────────────────────────────── */
 
 async function getFullBudget(budgetId) {
@@ -265,12 +280,13 @@ async function createFromIntake(userId, projectId) {
     await conn.beginTransaction();
 
     // 1. Get project data
-    const [[proj]] = await conn.query('SELECT * FROM projects WHERE id = ?', [projectId]);
-    if (!proj) throw new Error('Proyecto no encontrado');
+    //    Solo proyectos del propio usuario (antes cualquiera podía rehacer el presupuesto ajeno).
+    const [[proj]] = await conn.query('SELECT * FROM projects WHERE id = ? AND user_id = ?', [projectId, userId]);
+    if (!proj) { const e = new Error('Proyecto no encontrado'); e.status = 404; throw e; }
 
     // 2. If budget already exists, delete it to recreate fresh from intake.
     //    Preserve user-override rows (manually edited cost lines) — see migration 100.
-    const [[existing]] = await conn.query('SELECT id FROM budget_projects WHERE project_id = ?', [projectId]);
+    const [[existing]] = await conn.query('SELECT id FROM budget_projects WHERE project_id = ? AND user_id = ?', [projectId, userId]);
     let preservedOverrides = [];
     if (existing) {
       // Snapshot user overrides before wipe (key by beneficiary acronym + WP label + category/line_item
@@ -725,5 +741,6 @@ module.exports = {
   listBeneficiaries, addBeneficiary, updateBeneficiary, deleteBeneficiary,
   listWorkPackages, addWorkPackage, updateWorkPackage, deleteWorkPackage,
   seedCostLines, getCostLines, updateCostLine,
+  childBelongsToBudget, getCostBudgetId,
   getFullBudget, createFromIntake,
 };

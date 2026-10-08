@@ -6,6 +6,7 @@ const router = require('express').Router();
 const multer = require('multer');
 const { requireAuth } = require('../../middleware/auth');
 const ctrl = require('./controller');
+const own = require('../../utils/ownership');
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -39,11 +40,12 @@ router.get('/stats',                             guard, ctrl.getStats);
 
 /* ── Diagnose runs (Fase 2) ──────────────────────────────────────────── */
 // Any authenticated user can run/read diagnoses on projects they own.
-// The engine validates ownership through the project_id chain.
+// La propiedad se comprueba con utils/ownership (404 si no es suyo; admin pasa).
+// /run y /upload-letter|/paste-letter traen projectId en el body: se comprueba en el controller.
 router.post('/run',                              requireAuth, ctrl.runDiagnosis);
-router.get('/runs/:runId',                       requireAuth, ctrl.getRun);
-router.get('/runs/project/:projectId/latest',    requireAuth, ctrl.getLatestRunForProject);
-router.get('/projects/:projectId/workspace',     requireAuth, ctrl.getProjectWorkspace);
+router.get('/runs/:runId',                       requireAuth, own.ownRunParam('runId'), ctrl.getRun);
+router.get('/runs/project/:projectId/latest',    requireAuth, own.ownProjectParam('projectId'), ctrl.getLatestRunForProject);
+router.get('/projects/:projectId/workspace',     requireAuth, own.ownProjectParam('projectId'), ctrl.getProjectWorkspace);
 
 /* ── Import proposal (Fase 3) ────────────────────────────────────────── */
 // Door B (audit) / Door C (recycling): user uploads an external Form Part B.
@@ -59,18 +61,18 @@ router.post('/paste-letter',                     requireAuth, ctrl.pasteLetter);
 
 /* ── Improvement actions (Fase 5) ────────────────────────────────────── */
 // Generate a Sonnet 4 proposal for a single finding (on demand)
-router.post('/findings/:findingId/propose',      requireAuth, ctrl.proposeForFinding);
+router.post('/findings/:findingId/propose',      requireAuth, own.ownFindingParam('findingId'), ctrl.proposeForFinding);
 // Inspect / accept / reject / modify a generated proposal
-router.get('/actions/:actionId',                 requireAuth, ctrl.getAction);
-router.post('/actions/:actionId/accept',         requireAuth, ctrl.acceptAction);
-router.post('/actions/:actionId/reject',         requireAuth, ctrl.rejectAction);
-router.post('/actions/:actionId/modify',         requireAuth, ctrl.modifyAction);
+router.get('/actions/:actionId',                 requireAuth, own.ownActionParam('actionId'), ctrl.getAction);
+router.post('/actions/:actionId/accept',         requireAuth, own.ownActionParam('actionId'), ctrl.acceptAction);
+router.post('/actions/:actionId/reject',         requireAuth, own.ownActionParam('actionId'), ctrl.rejectAction);
+router.post('/actions/:actionId/modify',         requireAuth, own.ownActionParam('actionId'), ctrl.modifyAction);
 
 /* ── Versioning + rollback (Fase 5) ──────────────────────────────────── */
-router.get('/projects/:projectId/versions',      requireAuth, ctrl.listVersions);
-router.post('/projects/:projectId/rollback',     requireAuth, ctrl.rollbackToVersion);
+router.get('/projects/:projectId/versions',      requireAuth, own.ownProjectParam('projectId'), ctrl.listVersions);
+router.post('/projects/:projectId/rollback',     requireAuth, own.ownProjectParam('projectId'), ctrl.rollbackToVersion);
 
 /* ── Manual field edit (Fase 5.x) ────────────────────────────────────── */
-router.put('/projects/:projectId/fields/:fieldId', requireAuth, ctrl.saveFieldManual);
+router.put('/projects/:projectId/fields/:fieldId', requireAuth, own.ownProjectParam('projectId'), ctrl.saveFieldManual);
 
 module.exports = router;

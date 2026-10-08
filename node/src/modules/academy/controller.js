@@ -19,6 +19,7 @@ exports.notes = (req, res) => ok(res, model.getNotes());
 exports.addNote = (req, res) => {
   const { lessonId, anchor, text, author, quote } = req.body || {};
   if (!lessonId || !anchor) return bad(res, 'BAD_INPUT', 'Falta lessonId o anchor');
+  if (!model.isValidId(lessonId) || !model.isValidId(anchor)) return bad(res, 'BAD_INPUT', 'lessonId o anchor no válido');
   if (!text || !String(text).trim()) return bad(res, 'BAD_INPUT', 'La nota está vacía');
   const note = model.addNote(lessonId, anchor, text, author, quote);
   return ok(res, note);
@@ -33,6 +34,6 @@ exports.updateNote = (req, res) => {
 
 exports.deleteNote = (req, res) => {
   const { lessonId, anchor, noteId } = req.params;
-  model.deleteNote(lessonId, anchor, noteId);
+  if (!model.deleteNote(lessonId, anchor, noteId)) return bad(res, 'NOT_FOUND', 'Nota no encontrada', 404);
   return ok(res, { deleted: true });
 };

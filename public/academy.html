@@ -1251,7 +1251,23 @@ function escAttr(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;
 function escHtml(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1700);}
 function noteCount(id){const o=window.NOTES[id]||{};return Object.values(o).flat().filter(n=>n.status!=='done').length;}
-async function jx(url,opts){const r=await fetch(url,opts);return r.json();}
+/* La API de academy exige sesión de admin: el token de acceso se saca del
+   refresh_token (cookie httpOnly) igual que la app principal, y se reintenta una vez si caduca. */
+let ACTOKEN=null;
+async function acToken(force){
+  if(ACTOKEN&&!force)return ACTOKEN;
+  try{const r=await fetch('/v1/auth/refresh',{method:'POST',credentials:'include'});const j=await r.json();ACTOKEN=(j.ok&&j.data&&j.data.access_token)||null;}catch(e){ACTOKEN=null;}
+  return ACTOKEN;
+}
+async function jx(url,opts,retried){
+  opts=Object.assign({},opts||{});const t=await acToken(retried);
+  opts.headers=Object.assign({},opts.headers||{},t?{Authorization:'Bearer '+t}:{});opts.credentials='include';
+  const r=await fetch(url,opts);
+  if(r.status===401&&!retried)return jx(url,opts,true);
+  const j=await r.json();
+  if(r.status===401||r.status===403)toast(r.status===401?'Inicia sesión como admin en la app':'Solo admin');
+  return j;
+}
 
 /* Refresca los badges 📝 de todas las pestañas re-renderizando las listas. */
 function refreshAll(){renderCourses();renderCurriculo();renderSAS();renderEACEA();renderDeepdives();}
