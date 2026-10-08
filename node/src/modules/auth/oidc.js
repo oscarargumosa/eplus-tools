@@ -26,6 +26,23 @@ async function discover() {
   return _meta;
 }
 
+/* Solo rutas internas relativas: '/algo'. Fuera '//host', '/\\host',
+   esquemas y caracteres de control (evita la redirección abierta). */
+function safeRet(ret) {
+  if (typeof ret !== 'string' || ret.length > 2000) return '/';
+  if (!ret.startsWith('/') || ret.startsWith('//') || ret.startsWith('/\\')) return '/';
+  if (/[\\\u0000-\u001f\u007f]/.test(ret)) return '/';
+  try {
+    const u = new URL(ret, 'http://interno.invalid');
+    if (u.origin !== 'http://interno.invalid') return '/';
+  } catch { return '/'; }
+  return ret;
+}
+
+/* Authentik devuelve email_verified=False con el mapeo por defecto.
+   Solo se confía en el email sin esa marca si se pide expresamente. */
+const TRUST_UNVERIFIED = () => process.env.OIDC_TRUST_UNVERIFIED_EMAIL === 'true';
+
 const b64url = buf => buf.toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 
 const txCookieOpts = () => ({
@@ -34,7 +51,7 @@ const txCookieOpts = () => ({
 });
 const sessionCookieOpts = () => ({
   httpOnly: true, secure: process.env.NODE_ENV === 'production',
-  sameSite: 'lax', maxAge: 30 * 24 * 60 * 60 * 1000
+  sameSite: 'lax', path: '/v1/auth', maxAge: 30 * 24 * 60 * 60 * 1000
 });
 
 const OidcController = {
@@ -48,7 +65,7 @@ const OidcController = {
       const nonce     = b64url(crypto.randomBytes(24));
       const verifier  = b64url(crypto.randomBytes(32));
       const challenge = b64url(crypto.createHash('sha256').update(verifier).digest());
-      const ret = (typeof req.query.ret === 'string' && req.query.ret.startsWith('/')) ? req.query.ret : '/';
+      const ret = safeRet(req.query.ret);
 
       // Guardamos state/nonce/verifier firmados en una cookie corta (10 min)
       res.cookie('oidc_tx', jwt.sign({ state, nonce, verifier, ret }, SECRET(), { expiresIn: '10m' }), txCookieOpts());
@@ -110,12 +127,19 @@ const OidcController = {
       if (!email) return res.redirect('/?login=error');
       const name  = info.name || [info.given_name, info.family_name].filter(Boolean).join(' ') || email.split('@')[0];
 
+      // Enlazar por email solo si el proveedor lo da por verificado
+      if (info.email_verified !== true && !TRUST_UNVERIFIED()) {
+        console.warn('[OIDC] email sin verificar por el proveedor, login rechazado:', email);
+        return res.redirect('/?login=error');
+      }
+
       // 3) enlazar/crear por email y emitir NUESTRA sesión (misma cookie de siempre)
       const user = await User.findOrCreateFromGoogle({ email, name });
+      res.clearCookie('refresh_token', { path: '/' });
       res.cookie('refresh_token', signRefreshToken(user), sessionCookieOpts());
 
       // La SPA se restaura sola al cargar (tryRestore → /auth/refresh → /auth/me)
-      res.redirect((typeof tx.ret === 'string' && tx.ret.startsWith('/')) ? tx.ret : '/');
+      res.redirect(safeRet(tx.ret));
     } catch (err) {
       console.error('[OIDC] callback error:', err.message);
       res.redirect('/?login=error');
