@@ -131,32 +131,76 @@ const Vision = (() => {
         <h1 class="vz-h1">¿Sobre qué convocatoria?</h1>
         <p class="vz-lead">Tu visión se construye sobre una convocatoria concreta: de ella sacamos criterios, presupuesto y tipo de socio, para preguntarte solo lo tuyo.</p>
       </div></div>
-      <div class="vz-note">
-        <span style="font-size:16px">🧭</span>
-        <div><b>¿Aún no sabes cuál?</b> Explora las convocatorias abiertas, filtra por programa y presupuesto, y vuelve aquí desde la que elijas.
-        <button class="vz-btn vz-btn-navy vz-btn-sm" data-act="go-convocatorias" style="margin-top:10px">Ir a Convocatorias →</button></div>
+      <div class="vz-eyebrow" style="margin:6px 0 10px">Convocatorias principales · Studio te acompaña de principio a fin</div>
+      <div id="vz-call-main" class="vz-call-list"><div class="vz-muted vz-sm">Cargando convocatorias…</div></div>
+      <h2 class="vz-pk-h2">Otras convocatorias abiertas</h2>
+      <p class="vz-muted vz-sm" style="margin:0 0 12px">De otros programas europeos. Búscala y elígela aquí mismo.</p>
+      <div class="vz-call-filters">
+        <input id="vz-call-q" class="vz-input" type="search" placeholder="Buscar por título, programa o código" aria-label="Buscar convocatoria">
+        <select id="vz-call-prog" class="vz-input" aria-label="Programa"><option value="">Todos los programas</option></select>
       </div>
-      <div class="vz-eyebrow" style="margin:16px 0 10px">O parte de una convocatoria abierta reciente</div>
-      <div id="vz-call-list" class="vz-call-list"><div class="vz-muted vz-sm">Cargando convocatorias…</div></div>`;
+      <div id="vz-call-list" class="vz-call-list"></div>
+      <div id="vz-call-more" style="margin-top:12px"></div>`;
 
+    let all;
     try {
-      const r = await API.get('/convocatorias?status=open&limit=12');
-      const items = arr(r.items).filter(c => c.deadline).slice(0, 8);
-      const host = document.getElementById('vz-call-list');
-      if (!items.length) { host.innerHTML = `<div class="vz-muted vz-sm">No hay convocatorias abiertas ahora. Ve a Convocatorias.</div>`; return; }
-      host.innerHTML = items.map(c => `
-        <div class="vz-callrow" data-act="pick-call" data-id="${esc(c.call_id)}">
-          <span class="vz-badge">${esc((c.programme || 'EU').toUpperCase())}</span>
-          <div class="vz-callrow-main">
-            <h3>${esc(c.title || c.call_id)}</h3>
-            <div class="vz-muted vz-sm">${esc(c.main_objective || c.summary_es || c.sub_programme || '')}</div>
-          </div>
-          <div class="vz-callrow-dl">deadline<b>${fmtDate(c.deadline) || '—'}</b></div>
-          <span class="vz-go">›</span>
-        </div>`).join('');
+      const r = await API.get('/convocatorias?limit=2000');
+      all = arr(r.items).filter(c => c.deadline).sort((a, b) => String(a.deadline).localeCompare(String(b.deadline)));
     } catch (e) {
-      document.getElementById('vz-call-list').innerHTML = `<div class="vz-muted vz-sm">No se pudieron cargar las convocatorias. <a href="#convocatorias">Ir a Convocatorias</a></div>`;
+      document.getElementById('vz-call-main').innerHTML = `<div class="vz-muted vz-sm">No se pudieron cargar las convocatorias. <a href="#convocatorias">Ir a Convocatorias</a></div>`;
+      return;
     }
+    if (view !== 'picker') return;
+
+    const row = (c) => `
+      <div class="vz-callrow" data-act="pick-call" data-id="${esc(c.call_id)}">
+        <span class="vz-badge">${esc((c.programme || 'EU').toUpperCase())}</span>
+        <div class="vz-callrow-main">
+          <h3>${esc(c.title || c.call_id)}</h3>
+          <div class="vz-muted vz-sm">${esc(c.main_objective || c.summary_es || c.sub_programme || '')}</div>
+        </div>
+        <div class="vz-callrow-dl">deadline<b>${fmtDate(c.deadline) || '—'}</b></div>
+        <span class="vz-go">›</span>
+      </div>`;
+
+    // Arriba, solo lo que Studio soporta entero: las acciones activas en
+    // Admin → Programas (available_in_efs). Las familias que se van a dar de
+    // alta pronto salen como «Próximamente» hasta que haya una activa.
+    const main = all.filter(c => c.available_in_efs);
+    const PROXIMAMENTE = [
+      { label: 'KA3 · European Youth Together', re: /YOUTH-TOG|european youth together/i },
+      { label: 'Capacity Building · Juventud', re: /capacity building|\bCBY\b|CB-Y|CBHE|CB-YOUTH/i },
+      { label: 'KA2 · Asociaciones de cooperación', re: /\bKA2\d*\b|KA220|KA210|cooperation partnership|small-scale/i },
+    ].filter(f => !main.some(c => f.re.test(`${c.title} ${c.source_id}`)));
+    document.getElementById('vz-call-main').innerHTML = main.map(row).join('') + PROXIMAMENTE.map(f => `
+      <div class="vz-callrow vz-callrow-soon" aria-disabled="true">
+        <span class="vz-badge">ERASMUS+</span>
+        <div class="vz-callrow-main"><h3>${esc(f.label)}</h3><div class="vz-muted vz-sm">Próximamente en Studio</div></div>
+      </div>`).join('');
+
+    // Abajo, el resto, con buscador y filtro por programa.
+    const rest = all.filter(c => !c.available_in_efs);
+    const progs = [...new Set(rest.map(c => c.programme).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'es'));
+    const sel = document.getElementById('vz-call-prog');
+    sel.insertAdjacentHTML('beforeend', progs.map(p => `<option>${esc(p)}</option>`).join(''));
+    const qBox = document.getElementById('vz-call-q');
+    const PAGE = 10;
+    let shown = PAGE;
+    const paint = () => {
+      const q = qBox.value.trim().toLowerCase(), p = sel.value;
+      const hits = rest.filter(c => (!p || c.programme === p) &&
+        (!q || [c.title, c.programme, c.sub_programme, c.source_id, c.summary_es, c.summary_en].filter(Boolean).join(' ').toLowerCase().includes(q)));
+      document.getElementById('vz-call-list').innerHTML = hits.length
+        ? hits.slice(0, shown).map(row).join('')
+        : `<div class="vz-muted vz-sm">Ninguna convocatoria abierta coincide con la búsqueda.</div>`;
+      const more = document.getElementById('vz-call-more');
+      more.innerHTML = hits.length > shown
+        ? `<button class="vz-btn vz-btn-ghost vz-btn-sm" id="vz-call-more-btn">Ver más (${hits.length - shown} restantes)</button>` : '';
+      document.getElementById('vz-call-more-btn')?.addEventListener('click', () => { shown += PAGE; paint(); });
+    };
+    qBox.addEventListener('input', () => { shown = PAGE; paint(); });
+    sel.addEventListener('change', () => { shown = PAGE; paint(); });
+    paint();
   }
 
   async function pickCall(callId) {
@@ -649,6 +693,15 @@ const Vision = (() => {
     #vision-root .vz-badge{font-size:10px;font-weight:700;letter-spacing:.06em;background:var(--vz-navy);color:#fff;padding:4px 9px;border-radius:7px;white-space:nowrap}
     #vision-root .vz-callrow-main{flex:1;min-width:0} #vision-root .vz-callrow-main h3{font-size:14.5px;color:var(--vz-ink)}
     #vision-root .vz-callrow-dl{font-size:11.5px;color:var(--vz-muted);text-align:right;white-space:nowrap} #vision-root .vz-callrow-dl b{color:var(--vz-ink);display:block}
+    #vision-root .vz-callrow-main .vz-sm{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    #vision-root .vz-callrow-soon{cursor:default;background:var(--vz-lavsoft);border-style:dashed;box-shadow:none}
+    #vision-root .vz-callrow-soon:hover{border-color:var(--vz-line)}
+    #vision-root .vz-callrow-soon .vz-badge{background:var(--vz-lav)}
+    #vision-root .vz-pk-h2{font-size:18px;font-weight:700;color:var(--vz-navy);margin:30px 0 4px;letter-spacing:-.01em}
+    #vision-root .vz-call-filters{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    #vision-root .vz-call-filters .vz-input{flex:1 1 240px;min-width:0;border:1px solid var(--vz-line2);border-radius:10px;padding:10px 13px;font:inherit;font-size:13.5px;background:var(--vz-card);color:var(--vz-ink)}
+    #vision-root .vz-call-filters select.vz-input{flex:0 1 260px}
+    #vision-root .vz-call-filters .vz-input:focus{outline:none;border-color:var(--vz-navy)}
     #vision-root .vz-go{font-size:20px;color:var(--vz-lav)}
     #vision-root .vz-banner{background:linear-gradient(100deg,var(--vz-navy),var(--vz-navy2));color:#fff;border-radius:16px;padding:16px 20px;display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
     #vision-root .vz-tag{font-size:10px;font-weight:700;letter-spacing:.1em;background:var(--vz-yellow);color:var(--vz-navy);padding:3px 8px;border-radius:6px}
