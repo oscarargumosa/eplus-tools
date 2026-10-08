@@ -161,7 +161,7 @@ exports.exportExcel = async (req, res) => {
     const b = await m.getBudget(req.params.id, req.user.id);
     if (!b) return err(res, 'Not found', 404);
     const full = await m.getFullBudget(req.params.id);
-    const buf = exportBudgetBuffer(full);
+    const buf = await exportBudgetBuffer(full);
     const safeName = (b.name || 'budget').replace(/[^a-z0-9_\-]+/gi, '_').substring(0, 40);
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     res.setHeader('Content-Disposition', `attachment; filename="${safeName}_EACEA.xlsx"`);
