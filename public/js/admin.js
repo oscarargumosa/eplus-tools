@@ -1092,9 +1092,9 @@ const Admin = (() => {
           <span class="conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap"></span>
           <span class="material-symbols-outlined ${statusColor} text-base" title="${d.doc_status}">${statusIcon}</span>
           ${d.storage_path
-            ? `<a href="${esc(d.storage_path)}" target="_blank" rel="noopener" class="text-on-surface-variant/40 hover:text-primary transition-colors" title="Abrir documento en nueva pestaña">
+            ? `<button type="button" class="conv-doc-open text-on-surface-variant/40 hover:text-primary transition-colors" data-doc-id="${esc(String(d.document_id))}" title="Abrir documento en nueva pestaña">
                  <span class="material-symbols-outlined text-lg">open_in_new</span>
-               </a>`
+               </button>`
             : ''}
           <button class="conv-doc-del text-on-surface-variant/30 hover:text-error transition-colors" data-id="${d.id}">
             <span class="material-symbols-outlined text-lg">delete</span>
@@ -1259,6 +1259,25 @@ const Admin = (() => {
           }
           recalcAndRepaint();
           scheduleSave();
+        });
+      });
+
+      // Los documentos ya no se sirven por URL pública: se piden con sesión
+      container.querySelectorAll('.conv-doc-open').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const win = window.open('', '_blank');
+          try {
+            const res = await fetch(`/v1/documents/download/${btn.dataset.docId}`, {
+              headers: { 'Authorization': `Bearer ${API.getToken()}` },
+            });
+            if (!res.ok) throw new Error('No se pudo abrir el documento');
+            let blob = await res.blob();
+            // Solo se abre en pestaña lo inofensivo; lo demás, como binario
+            if (!/^(application\/pdf|text\/plain|image\/(png|jpeg|gif|webp))$/.test(blob.type)) blob = new Blob([blob], { type: 'application/octet-stream' });
+            const url = URL.createObjectURL(blob);
+            if (win) win.location = url; else window.open(url, '_blank');
+            setTimeout(() => URL.revokeObjectURL(url), 60000);
+          } catch (e) { if (win) win.close(); Toast.show('Error: ' + e.message, 'err'); }
         });
       });
 

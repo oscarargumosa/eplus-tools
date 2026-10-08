@@ -107,6 +107,31 @@ async function getProjectSources(projectId) {
   }));
 }
 
+/* ── Control de acceso ──────────────────────────────────────────────
+   Una fuente se ve si es pública, si la añadió el usuario, si está enlazada
+   a un proyecto suyo, o si es admin. */
+
+function accessibleSourcesSql(user, a = 'rs') {
+  if (user?.role === 'admin') return { sql: '1=1', params: [] };
+  return {
+    sql: `(${a}.visibility = 'public' OR ${a}.added_by = ?
+      OR ${a}.id IN (SELECT ps.source_id FROM project_sources ps JOIN projects p ON p.id = ps.project_id WHERE p.user_id = ?))`,
+    params: [user.id, user.id],
+  };
+}
+
+async function canAccessSource(user, source) {
+  if (!user || !source) return false;
+  if (user.role === 'admin' || source.visibility === 'public') return true;
+  if (String(source.added_by) === String(user.id)) return true;
+  const [rows] = await db.execute(
+    `SELECT 1 FROM project_sources ps JOIN projects p ON p.id = ps.project_id
+     WHERE ps.source_id = ? AND p.user_id = ? LIMIT 1`,
+    [source.id, user.id]
+  );
+  return rows.length > 0;
+}
+
 /* ── Helpers ────────────────────────────────────────────────────── */
 
 function parseSource(row) {
@@ -129,4 +154,5 @@ module.exports = {
   createSource, getSource, getSourceByExternalId, listSources, deleteSource,
   updateSourceStatus, updateSourceFilePath,
   linkToProject, unlinkFromProject, getProjectSources,
+  accessibleSourcesSql, canAccessSource,
 };

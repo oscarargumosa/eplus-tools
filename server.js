@@ -82,6 +82,21 @@ app.use((req, _res, next) => {
   aiContext.run({ endpoint }, next);
 });
 
+/* ── Subidas privadas: nunca por estático ────────────────────────
+   Documentos, papers y evaluaciones viven en PRIVATE_UPLOADS_DIR y se
+   sirven solo por /v1/documents/download/:id y /v1/research/sources/:id/file.
+   Los ficheros antiguos que sigan en public/uploads/{documents,research}
+   quedan cortados aquí, antes de express.static. */
+app.use((req, res, next) => {
+  let p = req.path;
+  try { p = decodeURIComponent(p); } catch { /* ruta mal codificada: se mira tal cual */ }
+  p = path.posix.normalize(p.replace(/\\/g, '/')).toLowerCase();
+  if (/^\/+uploads\/+(documents|research|evaluator)(\/|$)/.test(p)) {
+    return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Not found' } });
+  }
+  next();
+});
+
 /* ── Static files (SPA) ──────────────────────────────────────── */
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -178,4 +193,8 @@ app.listen(PORT, HOST, () => {
   // Los 200.000 marcadores del Atlas tardan segundos en construirse. Se dejan
   // listos al arrancar para que no los pague el primer visitante.
   require('./node/src/modules/entities/controller').warmGeoCache();
+  // Vectorizados que murieron con el proceso anterior: no dejarlos en 'processing'
+  require('./node/src/modules/documents/model').failStaleProcessing(30)
+    .then(n => { if (n) console.log(`[DOCUMENTS] ${n} documento(s) atascados en 'processing' marcados como 'error'`); })
+    .catch(e => console.error('[DOCUMENTS] failStaleProcessing:', e.message));
 });

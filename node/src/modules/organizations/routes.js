@@ -4,26 +4,27 @@ const path = require('path');
 const multer = require('multer');
 const { requireAuth } = require('../../middleware/auth');
 const ctrl = require('./controller');
+const { imageUploadGuard } = require('../../utils/image-upload');
 
 const auth = [requireAuth];
 
 const logoStorage = multer.diskStorage({
   destination: path.join(__dirname, '../../../public/uploads/logos'),
   filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname) || '.png';
-    cb(null, 'logo-' + Date.now() + ext);
+    // Sin extensión del cliente: imageUploadGuard pone la del tipo real
+    cb(null, 'logo-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8));
   }
 });
 const uploadLogo = multer({ storage: logoStorage, limits: { fileSize: 2 * 1024 * 1024 }, fileFilter: (req, file, cb) => {
-  if (/^image\/(jpeg|png|gif|webp|svg\+xml)$/.test(file.mimetype)) cb(null, true);
-  else cb(new Error('Only image files allowed'));
+  if (/^image\/(jpeg|png|gif|webp)$/.test(file.mimetype)) cb(null, true);
+  else cb(Object.assign(new Error('Only image files allowed (JPG, PNG, WebP, GIF)'), { status: 400 }));
 }});
 
 /* ── My organization ─────────────────────────────────────────── */
 router.get ('/mine',      auth, ctrl.getMyOrg);
 router.get ('/mine/all',  auth, ctrl.getMyOrgs);
 router.put ('/mine',      auth, ctrl.upsertMyOrg);
-router.post('/mine/logo', auth, uploadLogo.single('logo'), ctrl.uploadLogo);
+router.post('/mine/logo', auth, uploadLogo.single('logo'), imageUploadGuard(), ctrl.uploadLogo);
 
 /* ── ORS lookup (prefill new-org form) ───────────────────────── */
 router.post('/ors-lookup', auth, ctrl.orsLookup);

@@ -17,6 +17,7 @@ router.get   ('/sources',                         requireAuth, ctrl.listSources)
 router.post  ('/sources',                         requireAuth, ctrl.saveSource);
 router.post  ('/sources/upload',                  requireAuth, upload.single('file'), ctrl.uploadPaper);
 router.get   ('/sources/:id',                     requireAuth, ctrl.getSource);
+router.get   ('/sources/:id/file',                requireAuth, ctrl.getSourceFile);
 router.post  ('/sources/:id/download',            requireAuth, ctrl.downloadSource);
 router.delete('/sources/:id',                     requireAuth, ctrl.deleteSource);
 

@@ -10,7 +10,8 @@ const path = require('path');
 const mysql = require('mysql2/promise');
 
 const SOURCE_DIR = path.join(__dirname, '..', 'tmp', 'ka3-docs');
-const UPLOAD_DIR = path.join(__dirname, '..', 'public', 'uploads', 'documents');
+// Carpeta privada de documentos (ver node/src/utils/private-storage.js)
+const UPLOAD_DIR = path.join(require('../node/src/utils/private-storage').privateRoot(), 'documents');
 const PROGRAM_ID = '00000000-0000-4000-a000-000000000001'; // KA3 Youth Together
 
 // Classify documents by type
