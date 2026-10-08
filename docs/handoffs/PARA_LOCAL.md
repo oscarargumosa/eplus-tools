@@ -464,7 +464,7 @@ repo `ongpasos-droid/intake`. Mi propia memoria decía lo contrario y estaba mal
 ### El 503 del botón de IA: resuelto con un puente, no con la API
 
 Monté `ai-bridge`: un servicio systemd en el **host** que expone el mismo `claude -p` de la
-suscripción por HTTP, solo a la red interna de Docker (`10.0.1.1:4020`), con token, sin ninguna
+suscripción por HTTP, solo a la red interna de Docker (gateway de la red `coolify`, puerto 4020), con token, sin ninguna
 herramienta habilitada y con `cwd` en un directorio vacío. `claude-cli.js` ahora usa el puente si
 existe `AI_BRIDGE_URL` y, si no, hace el `spawn` local de siempre — **en tu entorno no cambia nada**.
 Commit `202e1e08f` en `dev-vps`, ya en `main`. Doc: `docs/AI_BRIDGE.md`.

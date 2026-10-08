@@ -53,7 +53,7 @@ MYSQL           → datos
 PM2             → gestión de procesos Node
 ```
 
-**Servidor:** VPS Ubuntu, IP `91.98.28.251`
+**Servidor:** VPS Ubuntu (IP: ver nota interna del VPS)
 
 **Procesos actuales en PM2 (usuario `claudebot`):**
 - `firmas` (id 1)

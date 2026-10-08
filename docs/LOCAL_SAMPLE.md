@@ -16,7 +16,7 @@ Cómo dejar Laragon con una réplica funcional de la BD prod (`eplus_tools` en V
 - Resto de tablas operacionales (proyectos, partners, work_packages, etc.) — sample real
 
 **No se clona (datos sensibles o ruido):**
-- `users` — Oscar usa su user local (`oscarargumosa@gmail.com`)
+- `users` — Oscar usa su user local
 - `auth_tokens` — sesiones de prod, no aplicables en local
 - `newsletter_subscribers` — RGPD
 - `ai_logs`, `llm_cache` — volumen sin valor para test

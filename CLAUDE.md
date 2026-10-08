@@ -81,7 +81,7 @@ Oscar trabaja en local con Laragon antes de hacer push:
 - **MySQL:** Laragon (`/c/laragon`), MySQL 8.4, user `root`, sin password
 - **BD:** `eplus_tools`
 - **Servidor:** `node server.js` → `http://localhost:3000`
-- **Usuario:** `oscarargumosa@gmail.com` con `role=admin`
+- **Usuario:** la cuenta de administración local con `role=admin` (ver nota interna del VPS)
 - Tras cambios en código, reiniciar servidor para que Oscar pruebe
 - Solo push cuando Oscar lo pida o diga MERGE
 

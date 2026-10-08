@@ -460,7 +460,7 @@ Una entidad paga por una call → cuántos usuarios tenga es irrelevante. Esto s
 
 ### 11.3 Infra
 
-- VPS Hetzner CX43 (16GB Falkenstein), IP `91.98.145.106`.
+- VPS Hetzner CX43 (16GB Falkenstein); IP: ver nota interna del VPS.
 - Coolify auto-deploy desde main.
 - MySQL en contenedor `wordpress-eufunding-db-1`, BD `eplus_tools`.
 - Resend transactional (domain verified abril 2026).
