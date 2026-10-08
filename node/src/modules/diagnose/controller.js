@@ -5,6 +5,7 @@ const importer = require('./import/import-proposal');
 const letterImporter = require('./import/import-letter');
 const proposer = require('./engine/proposer');
 const applicator = require('./engine/applicator');
+const own = require('../../utils/ownership');
 
 function ok(res, data) {
   return res.json({ ok: true, data });
@@ -68,9 +69,11 @@ exports.runDiagnosis = async (req, res, next) => {
   try {
     const { projectId } = req.body || {};
     if (!projectId) return bad(res, 'BAD_REQUEST', 'projectId is required');
+    await own.assertProjectOwner(projectId, req.user);
     const run = await engine.runDiagnosis(projectId, { userId: req.user?.id });
     ok(res, run);
   } catch (e) {
+    if (e.status === 404) return bad(res, 'NOT_FOUND', e.message, 404);
     if (/not found|nothing to diagnose/i.test(e.message)) {
       return bad(res, 'NOT_FOUND', e.message, 404);
     }
@@ -226,6 +229,8 @@ exports.uploadLetter = async (req, res, next) => {
     if (!req.file) return bad(res, 'BAD_REQUEST', 'A file is required (multipart field "file").');
     const { programId, projectId, proposalNumber, proposalAcronym, result } = req.body || {};
     if (!programId) return bad(res, 'BAD_REQUEST', 'programId is required.');
+    // Si se vincula a un proyecto, tiene que ser del usuario
+    if (projectId) await own.assertProjectOwner(projectId, req.user);
 
     const out = await letterImporter.importLetterFromFile(
       req.file.buffer,
@@ -245,6 +250,7 @@ exports.uploadLetter = async (req, res, next) => {
 
     ok(res, out);
   } catch (e) {
+    if (e.status === 404) return bad(res, 'NOT_FOUND', e.message, 404);
     if (/not found|required/i.test(e.message)) {
       return bad(res, 'BAD_REQUEST', e.message);
     }
@@ -259,6 +265,8 @@ exports.pasteLetter = async (req, res, next) => {
     if (!text || typeof text !== 'string' || text.length < 100) {
       return bad(res, 'BAD_REQUEST', 'text must be at least 100 characters.');
     }
+    // Si se vincula a un proyecto, tiene que ser del usuario
+    if (projectId) await own.assertProjectOwner(projectId, req.user);
     const out = await letterImporter.importLetterFromText(text, programId, {
       projectId: projectId || null,
       userId: req.user?.id,
@@ -269,6 +277,7 @@ exports.pasteLetter = async (req, res, next) => {
     triggerPatternRebuild().catch(err => console.warn('Pattern rebuild failed:', err.message));
     ok(res, out);
   } catch (e) {
+    if (e.status === 404) return bad(res, 'NOT_FOUND', e.message, 404);
     if (/not found|required|at least/i.test(e.message)) {
       return bad(res, 'BAD_REQUEST', e.message);
     }
