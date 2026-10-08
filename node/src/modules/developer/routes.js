@@ -1,6 +1,15 @@
 const router = require('express').Router();
 const { requireAuth } = require('../../middleware/auth');
 const ctrl = require('./controller');
+const access = require('./access');
+
+// Control de acceso (IDOR): todo :projectId / :wpId / :activityId / :partnerId
+// se valida contra el dueño del proyecto (admin pasa). Ver access.js.
+router.param('projectId',  access.projectParam);
+router.param('wpId',       access.wpParam);
+router.param('activityId', access.activityParam);
+router.param('partnerId',  access.partnerParam);
+const ownInstance = access.ownInstance;
 
 // Project context (read from intake data)
 router.get('/projects/:projectId/context', requireAuth, ctrl.getContext);
@@ -11,14 +20,14 @@ router.get('/instances/:id', requireAuth, ctrl.getInstance);
 router.patch('/instances/:id/status', requireAuth, ctrl.updateStatus);
 
 // Field values
-router.get('/instances/:id/values', requireAuth, ctrl.getValues);
-router.put('/instances/:id/values', requireAuth, ctrl.saveValues);
-router.put('/instances/:id/field', requireAuth, ctrl.saveField);
+router.get('/instances/:id/values', requireAuth, ownInstance, ctrl.getValues);
+router.put('/instances/:id/values', requireAuth, ownInstance, ctrl.saveValues);
+router.put('/instances/:id/field', requireAuth, ownInstance, ctrl.saveField);
 
 // AI generation & evaluation
 router.post('/instances/:id/generate', requireAuth, ctrl.generateDraft);
-router.post('/instances/:id/evaluate', requireAuth, ctrl.evaluateField);
-router.post('/instances/:id/improve', requireAuth, ctrl.improveField);
+router.post('/instances/:id/evaluate', requireAuth, ownInstance, ctrl.evaluateField);
+router.post('/instances/:id/improve', requireAuth, ownInstance, ctrl.improveField);
 router.post('/instances/:id/improve-custom', requireAuth, ctrl.improveFieldCustom);
 router.post('/instances/:id/refine', requireAuth, ctrl.refineField);
 router.post('/instances/:id/refine/evaluate', requireAuth, ctrl.refineEvaluate);
@@ -48,14 +57,14 @@ router.get('/projects/:projectId/gap-analysis', requireAuth, ctrl.getGapAnalysis
 
 // Prep Studio v2: 5-tab context
 router.get('/projects/:projectId/prep/consorcio', requireAuth, ctrl.getPrepConsorcio);
-router.put('/projects/:projectId/partners/:partnerId/link-org', requireAuth, ctrl.linkPartnerOrg);
+router.put('/projects/:projectId/partners/:partnerId/link-org', requireAuth, access.orgLinkable, ctrl.linkPartnerOrg);
 router.post('/projects/:projectId/prep/consorcio/:partnerId/generate-variant', requireAuth, ctrl.generatePifVariant);
-router.put('/projects/:projectId/prep/consorcio/:partnerId/select-variant', requireAuth, ctrl.selectPifVariant);
+router.put('/projects/:projectId/prep/consorcio/:partnerId/select-variant', requireAuth, access.variantOfPartnerOrg, ctrl.selectPifVariant);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/custom-text', requireAuth, ctrl.savePartnerCustomText);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/toggle-eu-project', requireAuth, ctrl.toggleEuProject);
-router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-skills', requireAuth, ctrl.saveStaffCustomSkills);
-router.put('/projects/:projectId/prep/consorcio/:partnerId/toggle-staff', requireAuth, ctrl.toggleStaffSelected);
-router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-role', requireAuth, ctrl.setStaffProjectRole);
+router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-skills', requireAuth, access.staffOfPartnerOrg, ctrl.saveStaffCustomSkills);
+router.put('/projects/:projectId/prep/consorcio/:partnerId/toggle-staff', requireAuth, access.staffOfPartnerOrg, ctrl.toggleStaffSelected);
+router.put('/projects/:projectId/prep/consorcio/:partnerId/staff-role', requireAuth, access.staffOfPartnerOrg, ctrl.setStaffProjectRole);
 router.post('/projects/:projectId/prep/consorcio/:partnerId/extra-staff', requireAuth, ctrl.addExtraStaff);
 router.put('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.updateExtraStaff);
 router.delete('/projects/:projectId/prep/consorcio/:partnerId/extra-staff/:staffId', requireAuth, ctrl.removeExtraStaff);
@@ -133,7 +142,7 @@ router.delete('/risks/:id',                             requireAuth, ctrl.delete
 // TASK-008 — Facts ledger (user surface: own data only, never prompts)
 router.get   ('/projects/:projectId/facts',          requireAuth, ctrl.listFacts);
 router.post  ('/projects/:projectId/facts',          requireAuth, ctrl.upsertFact);
-router.patch ('/projects/:projectId/facts/:factId',  requireAuth, ctrl.setFactStatus);
+router.patch ('/projects/:projectId/facts/:factId',  requireAuth, access.factInProject, ctrl.setFactStatus);
 
 // Comments thread on D / MS rows
 router.get   ('/projects/:projectId/dms/comments',  requireAuth, ctrl.dmsListComments);

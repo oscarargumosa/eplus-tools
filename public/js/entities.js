@@ -556,8 +556,8 @@ const Entities = (() => {
         <div class="flex-1 truncate text-xs text-on-surface-variant font-medium">
           ${o.oid ? 'OID' : 'ID'} <span class="font-mono text-primary">${esc(o.oid || o.pic || '—')}</span>
         </div>
-        ${o.website ? `
-          <a href="${esc(o.website)}" target="_blank" rel="noopener noreferrer"
+        ${safeHref(o.website) ? `
+          <a href="${safeHref(o.website)}" target="_blank" rel="noopener noreferrer"
             class="text-xs font-semibold text-primary inline-flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-secondary-fixed/40 transition-colors">
             <span class="material-symbols-outlined text-[16px]">open_in_new</span>
             Abrir web
@@ -589,7 +589,7 @@ const Entities = (() => {
               ${idChip('OID', o.oid)}
               ${idChip('PIC', o.pic)}
               ${idChip('CIF/NIF', o.local_registry && o.local_registry.national_id)}
-              ${o.website ? `<a href="${esc(o.website)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-semibold text-primary hover:underline"><span class="material-symbols-outlined text-[14px]">language</span>${esc(String(o.website).replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a>` : ''}
+              ${safeHref(o.website) ? `<a href="${safeHref(o.website)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-semibold text-primary hover:underline"><span class="material-symbols-outlined text-[14px]">language</span>${esc(String(o.website).replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a>` : ''}
             </div>
           </div>
         </div>
@@ -965,7 +965,7 @@ const Entities = (() => {
     if (!items || !items.length) return '';
     return `<ul class="space-y-1 mb-3">
       ${items.slice(0, 4).map(v => `
-        <li><a href="${hrefPrefix}${esc(v)}" class="text-sm text-on-surface hover:text-primary inline-flex items-center gap-2 group">
+        <li><a href="${safeHref(hrefPrefix + v, [hrefPrefix])}" class="text-sm text-on-surface hover:text-primary inline-flex items-center gap-2 group">
           <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">${icon}</span>
           <span class="truncate">${esc(v)}</span>
         </a></li>
@@ -978,7 +978,7 @@ const Entities = (() => {
     if (!keys.length) return '';
     const icons = { twitter:'tag', x:'tag', facebook:'facebook', linkedin:'work', instagram:'photo_camera', youtube:'play_circle', tiktok:'graphic_eq' };
     return `<div class="flex flex-wrap gap-1.5 pt-1">
-      ${keys.map(k => `<a href="${esc(s[k])}" target="_blank" rel="noopener noreferrer"
+      ${keys.filter(k => safeHref(s[k])).map(k => `<a href="${safeHref(s[k])}" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-1 text-[11px] font-semibold text-primary bg-surface-container hover:bg-secondary-fixed/40 px-2 py-1 rounded-full transition-colors capitalize">
           <span class="material-symbols-outlined text-[14px]">${icons[k] || 'link'}</span>${esc(k)}
         </a>`).join('')}
@@ -1102,6 +1102,20 @@ const Entities = (() => {
     const d = document.createElement('div');
     d.textContent = cleanMojibake(v);
     return d.innerHTML;
+  }
+  // Enlaces externos: solo http/https (o los esquemas de `allow`, p. ej. mailto:).
+  // Cualquier otro (javascript:, data:…) → '' (sin enlace). Devuelve el valor
+  // ya escapado para meterlo en un atributo href="…".
+  function safeHref(url, allow) {
+    if (url == null) return '';
+    let u = String(url).trim();
+    if (!u) return '';
+    if (!/^[a-z][a-z0-9+.-]*:(?!\d)/i.test(u)) u = (u.startsWith('//') ? 'https:' : 'https://') + u;
+    let proto;
+    try { proto = new URL(u).protocol; } catch (e) { return ''; }
+    if (!(allow || ['http:', 'https:']).includes(proto)) return '';
+    return u.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
   function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
   function formatNumber(n) {
