@@ -113,6 +113,15 @@ async function listActiveActionTypes() {
   return rows.map(r => r.action_type);
 }
 
+/* Subvención máxima por proyecto de cada acción activa (para las fichas de
+   convocatoria cuando el feed no trae importe por proyecto). */
+async function listActiveProgramGrants() {
+  const [rows] = await pool.query(
+    'SELECT action_type, eu_grant_max FROM intake_programs WHERE active=1 AND action_type IS NOT NULL AND eu_grant_max IS NOT NULL'
+  );
+  return rows.map(r => ({ action_type: r.action_type, eu_grant_max: Number(r.eu_grant_max) }));
+}
+
 /* ══ ref_countries ════════════════════════════════════════════════ */
 
 async function listCountries() {
@@ -1019,7 +1028,7 @@ async function listProgramsWithCounts() {
 }
 
 module.exports = {
-  listPrograms, upsertProgram, deleteProgram, importProgramFromFeed, listActiveActionTypes,
+  listPrograms, upsertProgram, deleteProgram, importProgramFromFeed, listActiveActionTypes, listActiveProgramGrants,
   listCountries, upsertCountry, deleteCountry,
   listPerdiem, upsertPerdiem, deletePerdiem,
   listWorkerCategories, upsertWorkerCategory, deleteWorkerCategory,

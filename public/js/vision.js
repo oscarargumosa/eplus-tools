@@ -133,8 +133,11 @@ const Vision = (() => {
       </div></div>
       <div class="vz-eyebrow" style="margin:6px 0 10px">Convocatorias principales · Studio te acompaña de principio a fin</div>
       <div id="vz-call-main" class="vz-call-list"><div class="vz-muted vz-sm">Cargando convocatorias…</div></div>
-      <h2 class="vz-pk-h2">Otras convocatorias abiertas</h2>
-      <p class="vz-muted vz-sm" style="margin:0 0 12px">De otros programas europeos. Búscala y elígela aquí mismo.</p>
+      <div class="vz-pk-row">
+        <div><h2 class="vz-pk-h2">Otras convocatorias abiertas</h2>
+          <p class="vz-muted vz-sm" style="margin:0">De otros programas europeos. Búscala aquí o explórala con todos los filtros en Convocatorias.</p></div>
+        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="go-convocatorias">Explorar en Convocatorias →</button>
+      </div>
       <div class="vz-call-filters">
         <input id="vz-call-q" class="vz-input" type="search" placeholder="Buscar por título, programa o código" aria-label="Buscar convocatoria">
         <select id="vz-call-prog" class="vz-input" aria-label="Programa"><option value="">Todos los programas</option></select>
@@ -152,6 +155,14 @@ const Vision = (() => {
     }
     if (view !== 'picker') return;
 
+    // Una sola cifra: lo máximo por proyecto si se conoce; si no, el total de la convocatoria.
+    const short = (n) => n >= 1e6 ? `${(n / 1e6).toLocaleString('es-ES', { maximumFractionDigits: 1 })} M€` : eur(n);
+    const money = (c) => {
+      const pp = c.budget_per_project_max_eur ?? c.budget_per_project_min_eur;
+      if (pp) return `<div class="vz-callrow-dl">por proyecto<b>${pp === c.budget_per_project_max_eur && c.budget_per_project_min_eur && c.budget_per_project_min_eur !== pp ? 'hasta ' : ''}${short(pp)}</b></div>`;
+      if (c.budget_total_eur) return `<div class="vz-callrow-dl">presupuesto total<b>${short(c.budget_total_eur)}</b></div>`;
+      return '';
+    };
     const row = (c) => `
       <div class="vz-callrow" data-act="pick-call" data-id="${esc(c.call_id)}">
         <span class="vz-badge">${esc((c.programme || 'EU').toUpperCase())}</span>
@@ -159,6 +170,7 @@ const Vision = (() => {
           <h3>${esc(c.title || c.call_id)}</h3>
           <div class="vz-muted vz-sm">${esc(c.main_objective || c.summary_es || c.sub_programme || '')}</div>
         </div>
+        ${money(c)}
         <div class="vz-callrow-dl">deadline<b>${fmtDate(c.deadline) || '—'}</b></div>
         <span class="vz-go">›</span>
       </div>`;
@@ -697,7 +709,8 @@ const Vision = (() => {
     #vision-root .vz-callrow-soon{cursor:default;background:var(--vz-lavsoft);border-style:dashed;box-shadow:none}
     #vision-root .vz-callrow-soon:hover{border-color:var(--vz-line)}
     #vision-root .vz-callrow-soon .vz-badge{background:var(--vz-lav)}
-    #vision-root .vz-pk-h2{font-size:18px;font-weight:700;color:var(--vz-navy);margin:30px 0 4px;letter-spacing:-.01em}
+    #vision-root .vz-pk-h2{font-size:18px;font-weight:700;color:var(--vz-navy);margin:0 0 4px;letter-spacing:-.01em}
+    #vision-root .vz-pk-row{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;margin:30px 0 12px}
     #vision-root .vz-call-filters{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
     #vision-root .vz-call-filters .vz-input{flex:1 1 240px;min-width:0;border:1px solid var(--vz-line2);border-radius:10px;padding:10px 13px;font:inherit;font-size:13.5px;background:var(--vz-card);color:var(--vz-ink)}
     #vision-root .vz-call-filters select.vz-input{flex:0 1 260px}

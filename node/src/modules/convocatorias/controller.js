@@ -46,6 +46,20 @@ async function getActiveActionTypes() {
   return activeActionCache;
 }
 
+// Subvención máxima por proyecto de las acciones activas (Admin → Programas).
+let grantCache = null;
+let grantCacheUntil = 0;
+async function getActiveGrants() {
+  if (grantCache && Date.now() < grantCacheUntil) return grantCache;
+  try {
+    grantCache = new Map((await adminModel.listActiveProgramGrants()).map(r => [r.action_type, r.eu_grant_max]));
+    grantCacheUntil = Date.now() + 30_000;
+  } catch {
+    grantCache = new Map();
+  }
+  return grantCache;
+}
+
 let cache = null;
 let cacheMtime = 0;
 let metaCache = null;
@@ -158,6 +172,7 @@ exports.list = async (req, res, next) => {
   try {
     const all = loadData();
     const activeSet = await getActiveActionTypes();
+    const grants = await getActiveGrants();
     const status   = (req.query.status   || '').trim().toLowerCase();
     const programme= (req.query.programme|| '').trim().toLowerCase();
     const source   = (req.query.source   || '').trim().toLowerCase();
@@ -200,6 +215,11 @@ exports.list = async (req, res, next) => {
     const items = rows.slice(offset, offset + limit).map(c => {
       const card = toCard(c, structured);
       card.available_in_efs = activeSet.has(c.source_id) || activeSet.has(c.call_id);
+      // Sin importe por proyecto en el feed: el máximo dado de alta en Studio.
+      if (card.budget_per_project_max_eur == null) {
+        const g = grants.get(c.source_id) ?? grants.get(c.call_id);
+        if (g) card.budget_per_project_max_eur = g;
+      }
       // Attach curation only for admins; users don't even know it exists.
       if (admin) card.curation = curationMap[c.source_id] || null;
       return card;
