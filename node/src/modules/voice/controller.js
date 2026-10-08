@@ -143,8 +143,7 @@ exports.transcribe = async (req, res) => {
     console.log(`[Voice] ${mode} · Detected: ${t.detected} (${t.iso}), Target: ${writeLang}, Translated: ${translated}`);
     res.json({ ok: true, text, detected: t.detected, translated });
   } catch (err) {
-    console.error('[Voice] Transcription error:', err.message);
-    res.status(500).json({ ok: false, error: { code: 'TRANSCRIBE_FAIL', message: 'No se pudo transcribir el audio. Inténtalo de nuevo.' } });
+    require('../../utils/httpError').sendError(res, 500, { code: 'TRANSCRIBE_FAIL', message: 'No se pudo transcribir el audio. Inténtalo de nuevo.' }, err);
   }
 };
 

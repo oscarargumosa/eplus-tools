@@ -128,3 +128,36 @@ exports.upsertPromptBlock = wrap(async (req, res) => {
   const { content, program_id } = req.body || {};
   ok(res, await dev.upsertPromptBlock(req.params.name, program_id || null, content || '', req.user.id));
 });
+
+/* ── Auditoría (solo admin) ───────────────────────────────────────
+   GET /v1/admin/audit?action=auth.login.failed&actor=<user_id|texto>&desde=2026-10-01&limit=50&page=1
+   action: exacta, o prefijo si acaba en "." o "*" (auth. → auth.*). */
+exports.listAudit = wrap(async (req, res) => {
+  const db = require('../../utils/db');
+  const q = req.query || {};
+  const where = [];
+  const params = [];
+  if (q.action) {
+    const a = String(q.action).slice(0, 64);
+    if (/[.*]$/.test(a)) { where.push('action LIKE ?'); params.push(a.replace(/\*$/, '').replace(/[%_]/g, '\\$&') + '%'); }
+    else { where.push('action = ?'); params.push(a); }
+  }
+  if (q.actor) {
+    const a = String(q.actor).slice(0, 255);
+    where.push('(actor_user_id = ? OR actor_email_masked LIKE ?)');
+    params.push(a, '%' + a.replace(/[%_]/g, '\\$&') + '%');
+  }
+  if (q.desde) {
+    const d = new Date(String(q.desde));
+    if (isNaN(d)) { const e = new Error('Parámetro "desde" no es una fecha válida'); e.status = 400; e.code = 'VALIDATION'; throw e; }
+    where.push('ts >= ?'); params.push(d);
+  }
+  const limit = Math.min(Math.max(parseInt(q.limit, 10) || 50, 1), 200);
+  const page  = Math.max(parseInt(q.page, 10) || 1, 1);
+  const w = where.length ? 'WHERE ' + where.join(' AND ') : '';
+  const [[{ total }]] = await db.query(`SELECT COUNT(*) AS total FROM audit_log ${w}`, params);
+  const [rows] = await db.query(
+    `SELECT id, ts, actor_user_id, actor_email_masked, action, target_type, target_id, ip, user_agent, meta
+       FROM audit_log ${w} ORDER BY id DESC LIMIT ? OFFSET ?`, [...params, limit, (page - 1) * limit]);
+  ok(res, { items: rows, total: Number(total), page, limit });
+});

@@ -3,6 +3,7 @@ const User = require('./model');
 const { signToken, signRefreshToken, verifyRefreshToken } = require('../../middleware/auth');
 const subscribersModel = require('../subscribers/model');
 const { sendVerificationEmail, sendPasswordResetEmail } = require('../../utils/email');
+const { audit } = require('../../utils/audit');
 
 const SALT_ROUNDS = 12;
 
@@ -76,6 +77,7 @@ const AuthController = {
 
       const passwordHash = await bcrypt.hash(password, SALT_ROUNDS);
       const user = await User.create({ email, passwordHash, name });
+      audit(req, 'auth.register', { actor: user, targetType: 'user', targetId: user.id });
 
       // Generate verification token & send email (do NOT auto-login)
       const token = await User.createVerificationToken(user.id);
@@ -110,6 +112,9 @@ const AuthController = {
       const hash  = (user && user.password_hash) ? user.password_hash : DUMMY_HASH;
       const valid = await bcrypt.compare(String(password), hash);
       if (!user || !user.password_hash || !valid) {
+        audit(req, 'auth.login.failed', user
+          ? { actor: user, targetType: 'user', targetId: user.id, meta: { reason: 'bad_password' } }
+          : { actor: { email }, meta: { reason: 'unknown_user' } });
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid email or password' }
         });
@@ -132,6 +137,7 @@ const AuthController = {
 
       setRefreshCookie(res, refreshToken);
       _promoteWarm(safeUser);
+      audit(req, 'auth.login', { actor: safeUser, targetType: 'user', targetId: safeUser.id, meta: { method: 'password' } });
       res.json({
         ok: true,
         data: { user: safeUser, access_token: accessToken }
@@ -178,6 +184,7 @@ const AuthController = {
 
       setRefreshCookie(res, refreshToken);
       _promoteWarm(user);
+      audit(req, 'auth.login', { actor: user, targetType: 'user', targetId: user.id, meta: { method: 'google' } });
       res.json({
         ok: true,
         data: { user, access_token: accessToken }
@@ -274,6 +281,7 @@ const AuthController = {
       await User.markEmailVerified(result.userId);
       // Cierra todas las sesiones abiertas (p. ej. las de quien robó la cuenta).
       await User.bumpTokenVersion(result.userId);
+      audit(req, 'auth.password.reset', { actor: { id: result.userId }, targetType: 'user', targetId: result.userId });
 
       res.json({ ok: true, data: { message: 'Password updated. You can now sign in.' } });
     } catch (err) {
@@ -395,6 +403,7 @@ const AuthController = {
       const user = await User.findById(req.user.id);
       const tokenUser = { ...user, token_version: tv };
       setRefreshCookie(res, signRefreshToken(tokenUser));
+      audit(req, 'auth.password.change', { targetType: 'user', targetId: req.user.id });
       res.json({ ok: true, data: { message: 'Contraseña actualizada', access_token: signToken(tokenUser) } });
     } catch (err) {
       console.error('[AUTH] Change password error:', err.message);

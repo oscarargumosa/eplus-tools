@@ -362,6 +362,7 @@ async function issueCertificateIfEarned(user, course) {
       await db.query(
         'INSERT INTO academia_certificates (id, serial, user_id, course_id, full_name, hours) VALUES (?, ?, ?, ?, ?, ?)',
         [uuid(), serial, user.id, course.id, u?.name || user.email, course.hours]);
+      require('../../utils/audit').audit({ user }, 'academia.certificate.issue', { targetType: 'certificate', targetId: serial, meta: { course: course.slug } });
       return serial;
     } catch (e) {
       if (e.code !== 'ER_DUP_ENTRY') throw e;

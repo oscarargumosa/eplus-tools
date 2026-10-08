@@ -15,7 +15,9 @@ const db = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
 
 function ok(res, data) { res.json({ ok: true, data }); }
-function bad(res, status, error) { res.status(status).json({ ok: false, error }); }
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+function bad(res, status, error) { sendError(res, status, error); }
 
 /* ── DOCX render (binary) ───────────────────────────────────────────── */
 
@@ -88,7 +90,7 @@ exports.exportFormPartBDocx = async (req, res, next) => {
         // No reventamos la descarga si la traducción falla: avisamos por log y
         // devolvemos el doc en idioma original con un header de aviso.
         console.error('[exporter] translation failed:', translateErr.message);
-        res.setHeader('X-Translation-Error', String(translateErr.message).slice(0, 200));
+        res.setHeader('X-Translation-Error', 'translation_failed');
       }
     }
 
@@ -100,6 +102,7 @@ exports.exportFormPartBDocx = async (req, res, next) => {
     );
     res.setHeader('Content-Disposition', `attachment; filename="${safeName}_FormPartB${langSuffix}.docx"`);
     res.setHeader('Cache-Control', 'no-store');
+    require('../../utils/audit').audit(req, 'formb.export', { targetType: 'project', targetId: req.params.projectId, meta: { format: 'docx', lang: targetLang || srcLang || null } });
     res.send(buffer);
   } catch (err) { next(err); }
 };

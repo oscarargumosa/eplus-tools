@@ -5,10 +5,15 @@
 const m = require('./backend');
 const zlib   = require('zlib');
 const crypto = require('crypto');
+const { promisify } = require('util');
+// Asíncronos: comprimir ~20 MB con gzipSync bloqueaba el event loop al arrancar y cada hora.
+const gzipAsync   = promisify(zlib.gzip);
+const gunzipAsync = promisify(zlib.gunzip);
 
 const ok  = (res, data) => res.json({ ok: true, data });
-const err = (res, msg, status = 400) =>
-  res.status(status).json({ ok: false, error: { message: msg } });
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const err = (res, msg, status = 400) => sendError(res, status, { message: msg });
 
 /* ── Datos de contacto solo con sesión ───────────────────────────
    Sin sesión se quitan email, teléfonos y dirección postal detallada
@@ -100,7 +105,7 @@ let geoBuilding = null;              // promesa en vuelo, para no construirlo do
 async function buildGeoCache() {
   const data = await m.listGeoMarkers({});
   const json = JSON.stringify({ ok: true, data });
-  const gzip = zlib.gzipSync(json, { level: 6 });
+  const gzip = await gzipAsync(json, { level: 6 });
   geoCache = {
     gzip,
     etag: '"' + crypto.createHash('sha1').update(gzip).digest('hex').slice(0, 16) + '"',
@@ -151,7 +156,7 @@ exports.listGeoMarkers = async (req, res) => {
       return res.end(cache.gzip);
     }
     // Cliente sin gzip (raro): se descomprime el que ya tenemos, sin volver a consultar.
-    return res.end(zlib.gunzipSync(cache.gzip));
+    return res.end(await gunzipAsync(cache.gzip));
   } catch (e) { err(res, e.message, 500); }
 };
 

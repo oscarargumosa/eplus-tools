@@ -132,6 +132,7 @@ async function deleteProject(req, res, next) {
         error: { code: 'NOT_FOUND', message: 'Project not found' }
       });
     }
+    require('../../utils/audit').audit(req, 'project.delete', { targetType: 'project', targetId: req.params.id });
     res.json({
       ok: true,
       data: { message: 'Project deleted' }
@@ -417,13 +418,15 @@ async function getTaskTemplates(req, res) {
 // Cierre IDOR: el proyecto (o el de la tarea) tiene que ser del usuario.
 const own = require('../../utils/ownership');
 const isOwnProject = async (projectId, userId) => !!(await model.findProjectById(projectId, userId));
+// 5xx: mensaje genérico + requestId; el detalle solo al log.
+const { sendError } = require('../../utils/httpError');
 
 async function listTasks(req, res) {
   try {
     if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     const tasks = await model.listTasks(req.params.projectId);
     res.json({ ok: true, data: tasks });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function createTask(req, res) {
@@ -431,7 +434,7 @@ async function createTask(req, res) {
     if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     const result = await model.createTask({ project_id: req.params.projectId, ...req.body });
     res.json({ ok: true, data: result });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function generateTasks(req, res) {
@@ -465,7 +468,7 @@ async function generateTasks(req, res) {
     }
 
     res.json({ ok: true, data: created });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 async function updateTask(req, res) {
@@ -473,7 +476,10 @@ async function updateTask(req, res) {
     await own.assertTaskOwner(req.params.id, req.user, { allowAdmin: false });
     await model.updateTask(req.params.id, req.body);
     res.json({ ok: true, data: { updated: true } });
-  } catch (e) { res.status(e.status || 500).json({ ok: false, error: { code: e.code, message: e.message } }); }
+  } catch (e) {
+    if (e.status && e.status < 500) return res.status(e.status).json({ ok: false, error: { code: e.code, message: e.message } });
+    sendError(res, 500, { message: e.message }, e);
+  }
 }
 
 async function deleteTask(req, res) {
@@ -481,7 +487,10 @@ async function deleteTask(req, res) {
     await own.assertTaskOwner(req.params.id, req.user, { allowAdmin: false });
     await model.deleteTask(req.params.id);
     res.json({ ok: true, data: null });
-  } catch (e) { res.status(e.status || 500).json({ ok: false, error: { code: e.code, message: e.message } }); }
+  } catch (e) {
+    if (e.status && e.status < 500) return res.status(e.status).json({ ok: false, error: { code: e.code, message: e.message } });
+    sendError(res, 500, { message: e.message }, e);
+  }
 }
 
 async function deleteAllTasks(req, res) {
@@ -489,7 +498,7 @@ async function deleteAllTasks(req, res) {
     if (!await isOwnProject(req.params.projectId, req.user.id)) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Project not found' } });
     await model.deleteAllTasks(req.params.projectId);
     res.json({ ok: true, data: null });
-  } catch (e) { res.status(500).json({ ok: false, error: { message: e.message } }); }
+  } catch (e) { sendError(res, 500, { message: e.message }, e); }
 }
 
 /* ══ INTERVIEW ══════════════════════════════════════════════════ */

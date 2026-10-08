@@ -8,8 +8,10 @@ const { safeExt } = require('../../utils/private-storage');
 const researchModel = require('../research/model');
 
 const ok  = (res, data) => res.json({ ok: true, data });
-const err = (res, msg, status = 400) =>
-  res.status(status).json({ ok: false, error: { message: msg } });
+const { sendError } = require('../../utils/httpError');
+const { audit } = require('../../utils/audit');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const err = (res, msg, status = 400) => sendError(res, status, { message: msg });
 
 function parseTags(raw) {
   if (!raw) return [];
@@ -111,6 +113,7 @@ exports.deleteMyDoc = async (req, res) => {
 
     if (doc.storage_path) await m.removeFile(doc.storage_path);
     await m.deleteDocument(req.params.id);
+    audit(req, 'document.delete', { targetType: 'document', targetId: req.params.id, meta: { scope: 'my', title: doc.title } });
     ok(res, null);
   } catch (e) { err(res, e.message, 500); }
 };
@@ -166,6 +169,7 @@ exports.deleteOfficialDoc = async (req, res) => {
 
     if (doc.storage_path) await m.removeFile(doc.storage_path);
     await m.deleteDocument(req.params.id);
+    audit(req, 'document.delete', { targetType: 'document', targetId: req.params.id, meta: { scope: 'official', title: doc.title } });
     ok(res, null);
   } catch (e) { err(res, e.message, 500); }
 };

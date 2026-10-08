@@ -27,6 +27,13 @@ function requireAdminOnly(req, res, next) {
 }
 const adminGuard = [requireAuth, requireAdminOnly];
 
+/* ── Auditoría: toda petición que modifica datos y acaba en 2xx queda
+   registrada en audit_log (admin.create / admin.update / admin.delete). */
+router.use(require('../../utils/audit').auditMutations('admin'));
+
+/* ── Registro de auditoría (solo admin) ──────────────────────────── */
+router.get('/audit', adminGuard, ctrl.listAudit);
+
 /* ── Convocatorias (intake_programs) ─────────────────────────── */
 router.get   ('/data/programs/full',   guard, ctrl.listProgramsWithCounts);
 router.get   ('/data/programs',        guard, ctrl.listPrograms);

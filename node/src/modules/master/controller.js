@@ -17,7 +17,9 @@ const genUUID = require('../../utils/uuid');
 const { ENFORCE_CAPS, FIELD_CHAR_LIMITS, getFieldLimit, truncate, estimatePages } = require('../exporter/field-limits');
 
 function ok(res, data) { res.json({ ok: true, data }); }
-function bad(res, status, error) { res.status(status).json({ ok: false, error }); }
+const { sendError, publicMessage, statusOf, logServerError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+function bad(res, status, error) { sendError(res, status, error); }
 
 /* ── Documents ───────────────────────────────────────────────── */
 
@@ -830,7 +832,7 @@ async function compileMasterV1(req, res) {
       } catch (chapErr) {
         console.error(`[compileMasterV1] chapter ${ch.key} failed:`, chapErr.message);
         if (wantStream) {
-          sseSend('chapter_failed', { index: i, chapter_key: ch.key, error: chapErr.message });
+          sseSend('chapter_failed', { index: i, chapter_key: ch.key, error: publicMessage(chapErr) });
         }
         // Seguimos al siguiente capítulo — los anteriores ya están persistidos.
       }
@@ -856,7 +858,11 @@ async function compileMasterV1(req, res) {
   } catch (e) {
     console.error('[compileMasterV1] error:', e);
     try { await model.updateMasterDocument(masterDocId, { status: 'draft' }); } catch (_) {}
-    if (wantStream) return sseErrorEnd(e.message, e.status || 500);
+    if (wantStream) {
+      const st = statusOf(e);
+      if (st >= 500) logServerError(req, st, e);
+      return sseErrorEnd(publicMessage(e, st), st);
+    }
     bad(res, e.status || 500, e.message);
   }
 }

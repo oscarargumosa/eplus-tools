@@ -20,10 +20,7 @@ async function startSandbox(req, res, next) {
     res.status(200).json({ ok: true, data: { project } });
   } catch (err) {
     if (err.code === 'SANDBOX_PROGRAM_MISSING') {
-      return res.status(503).json({
-        ok: false,
-        error: { code: err.code, message: err.message },
-      });
+      return require('../../utils/httpError').sendError(res, 503, { code: err.code, message: err.message }, err);
     }
     next(err);
   }

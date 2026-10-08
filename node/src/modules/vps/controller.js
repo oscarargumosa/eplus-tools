@@ -2,10 +2,9 @@
 const m = require('./model');
 
 const ok = (res, data) => res.json({ ok: true, data });
-const fail = (res, err) => {
-  console.error('[vps/controller]', err.message);
-  res.status(500).json({ ok: false, error: { code: 'VPS_QUERY_ERROR', message: err.message } });
-};
+const { sendError } = require('../../utils/httpError');
+// 5xx: mensaje genérico + requestId (el detalle va al log). Ver utils/httpError.
+const fail = (res, err) => sendError(res, 500, { code: 'VPS_QUERY_ERROR', message: err.message }, err);
 
 /* ── /v1/vps/health ──────────────────────────────────────────── */
 exports.health = async (req, res) => {
@@ -252,7 +251,7 @@ exports.eaceaSimilarHealth = async (req, res) => {
     const j = await r.json();
     res.json({ ok: true, data: j });
   } catch (e) {
-    res.status(502).json({ ok: false, error: { code: 'SIMILAR_DOWN', message: e.message } });
+    sendError(res, 502, { code: 'SIMILAR_DOWN', message: e.message }, e);
   }
 };
 
