@@ -10,12 +10,51 @@ const helmet   = require('helmet');
 const cors     = require('cors');
 const path     = require('path');
 const cookieParser = require('cookie-parser');
+const logger   = require('./node/src/utils/logger');
+const { sendError, publicMessage, statusOf, codeFor } = require('./node/src/utils/httpError');
+const { requestId, accessLog } = require('./node/src/middleware/requestLog');
+
+/* ── Fallos fuera de una petición: log estructurado ───────────── */
+process.on('unhandledRejection', (reason) => {
+  logger.error('unhandledRejection', logger.errFields(reason));
+});
+process.on('uncaughtException', (err) => {
+  // El proceso queda en estado dudoso: se registra y se sale (Docker/systemd lo reinician).
+  logger.error('uncaughtException', logger.errFields(err));
+  process.exitCode = 1;
+  setImmediate(() => process.exit(1));
+});
 
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
 /* ── Trust proxy (behind Nginx/Caddy) ─────────────────────────── */
 app.set('trust proxy', 1);
+
+/* ── Request id (req.id + cabecera X-Request-Id) ──────────────── */
+app.use(requestId);
+
+/* ── /healthz — público y ligero: sin auth, sin log, antes de todo lo pesado.
+   200 si la BD responde a SELECT 1 en menos de 2 s; si no, 503. ── */
+const db = require('./node/src/utils/db');
+app.get('/healthz', async (_req, res) => {
+  res.set('Cache-Control', 'no-store');
+  let timer;
+  try {
+    await Promise.race([
+      db.query({ sql: 'SELECT 1', timeout: 2000 }),
+      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('timeout')), 2000); }),
+    ]);
+    res.json({ ok: true });
+  } catch {
+    res.status(503).json({ ok: false });
+  } finally {
+    clearTimeout(timer);
+  }
+});
+
+/* ── Registro de peticiones de la API (una línea JSON) ────────── */
+app.use(accessLog);
 
 /* ── Security ─────────────────────────────────────────────────── */
 app.use(helmet({
@@ -60,13 +99,25 @@ const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || [
   .map(s => s.trim())
   .filter(Boolean);
 
+// Origen no permitido: 403 directo, sin pasar por el manejador de errores.
+// Un warn por origen y minuto como mucho (los bots repiten sin parar).
+const corsWarned = new Map();   // origin → último aviso (ms)
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  // Sin Origin: same-origin, curl, apps nativas. Se deja pasar.
+  if (!origin || ALLOWED_ORIGINS.includes(origin)) return next();
+  const now = Date.now();
+  if (now - (corsWarned.get(origin) || 0) > 60 * 1000) {
+    if (corsWarned.size > 1000) corsWarned.clear();
+    corsWarned.set(origin, now);
+    logger.warn('CORS: origen no permitido', { origin: String(origin).slice(0, 200), reqId: req.id, method: req.method, path: req.path });
+  }
+  res.locals.skipAccessLog = true;
+  res.status(403).json({ ok: false, error: { code: 'CORS_FORBIDDEN', message: 'Origen no permitido' } });
+});
+
 app.use(cors({
-  origin: (origin, cb) => {
-    // No Origin header: same-origin, curl, native apps. Allow.
-    if (!origin) return cb(null, true);
-    if (ALLOWED_ORIGINS.includes(origin)) return cb(null, true);
-    return cb(new Error(`CORS: origin ${origin} not allowed`), false);
-  },
+  origin: (origin, cb) => cb(null, !origin || ALLOWED_ORIGINS.includes(origin)),
   credentials: true,
 }));
 
@@ -142,17 +193,12 @@ app.get('*', (req, res) => {
 });
 
 /* ── Global error handler ─────────────────────────────────────── */
-app.use((err, req, res, _next) => {
-  console.error('[ERROR]', err.message);
-  res.status(err.status || 500).json({
-    ok: false,
-    error: {
-      code: err.code || 'INTERNAL_ERROR',
-      message: process.env.NODE_ENV === 'production'
-        ? 'Something went wrong'
-        : err.message
-    }
-  });
+// 4xx con status puesto a mano (o de body-parser/multer): su mensaje.
+// 5xx: mensaje genérico + requestId; el detalle y el stack, solo al log.
+app.use((err, req, res, next) => {
+  if (res.headersSent) return next(err);
+  const status = err && err.name === 'MulterError' ? 400 : statusOf(err);
+  sendError(res, status, { code: codeFor(status, err), message: publicMessage(err, status) }, err);
 });
 
 /* ── Startup security checks ──────────────────────────────────── */
