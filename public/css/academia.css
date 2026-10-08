@@ -108,6 +108,10 @@ body { margin: 0; background: var(--ac-bg); color: var(--ac-ink); font-family: '
 
 .ac-cert { display: flex; gap: 18px; align-items: center; background: var(--ac-lav-soft); border-radius: var(--ac-r); padding: 20px 24px; margin-top: 20px; }
 .ac-cert .ms { font-size: 34px; color: var(--ac-navy); }
+.ac-cert--form { align-items: flex-start; }
+.ac-cert--form label[for] { font-size: 13px; font-weight: 600; color: var(--ac-navy); }
+.ac-cert--form input[type=text] { border: 0; box-shadow: inset 0 0 0 1.5px var(--ac-line); border-radius: var(--ac-r-sm); padding: 11px 14px; font: 400 15px 'Poppins', sans-serif; background: #fff; }
+.ac-cert--form input[type=text]:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ac-navy); }
 
 .ac-empty { background: var(--ac-card); border-radius: var(--ac-r); padding: 40px; text-align: center; color: var(--ac-muted); }
 

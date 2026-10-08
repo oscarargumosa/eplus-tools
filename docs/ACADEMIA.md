@@ -18,11 +18,14 @@ la identidad visual, la de Studio (`DESIGN.md`).
 | Qué | Regla |
 |---|---|
 | Lectura | Portada + una hoja por párrafo. Para abrir una hoja nueva, la anterior ha estado abierta 7 s (hora del servidor). Con la última hoja, `READING_DONE`. Releer es libre. |
-| Vídeo visto | Muestras de los últimos 30 s, seguidas, sin saltos y a ≤ 2,5x de velocidad real. Saltar al final no cuenta. |
-| Test | Se abre con el vídeo visto **o** la lectura terminada. Opciones barajadas por intento; el intento guarda su copia congelada. Aprobado: 80 %. Intentos ilimitados, cuenta la mejor nota. |
+| Vídeo visto | El cliente manda la posición cada ~5 s (un `watchId` por visita). Con un mismo `watchId` hay que cubrir ≥ 70 % del vídeo y llegar al final. Solo suman los tramos entre dos muestras en los que el vídeo avanza lo que permite el reloj del servidor a ≤ 2,5x (+5 s); un salto no suma. |
+| Test | Se abre con el vídeo visto **o** la lectura terminada. Preguntas y opciones barajadas por intento; el intento guarda su copia congelada. Aprobado: 80 %. Espera entre intentos (2 min) y máximo 5 entregas en 24 h mientras no se apruebe; cuenta la mejor nota. Suspenso: la corrección solo dice qué preguntas fallaste, no cuál era la buena. Aprobado: corrección completa. |
 | Lección completada | Al aprobar su test. |
-| Certificado | Al completar todas las lecciones. Serial `EFS-<año>-<10 caracteres>`. |
+| Certificado | Al completar todas las lecciones, la persona confirma su nombre y apellidos (nunca el correo) y se emite (`POST /v1/academia/courses/<curso>/certificate`). El nombre queda copiado en `full_name`. Si la cuenta no tenía nombre, se le pone este. Serial `EFS-<año>-<10 caracteres>`. |
 | Notas | Privadas, una por lección; `revision` evita pisar cambios de otra pestaña. |
+
+Variables de entorno (opcionales): `ACADEMIA_TEST_COOLDOWN_S` (120), `ACADEMIA_TEST_MAX_PER_DAY` (5),
+`ACADEMIA_VIDEO_SAMPLES_PER_HOUR` (360 muestras de vídeo por persona, lección y hora de reloj).
 
 `academia_events` solo crece: el código no tiene UPDATE ni DELETE sobre ella. No hay
 trigger que lo impida (con binlog activo, crear triggers exige SUPER en producción).

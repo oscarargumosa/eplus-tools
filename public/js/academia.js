@@ -23,6 +23,43 @@
   const go = (path) => { history.pushState({}, '', path); render(); window.scrollTo(0, 0); };
   const later = (fn, t) => { const id = setTimeout(fn, t); cleanup.push(() => clearTimeout(id)); return id; };
   const errMsg = (e) => esc(e?.message || 'Algo ha fallado. Vuelve a intentarlo.');
+  const fmtWait = (t) => {
+    const s = Math.max(1, Math.ceil(t / 1000));
+    if (s < 60) return `${s} s`;
+    if (s < 3600) return `${Math.floor(s / 60)} min${s % 60 ? ` ${s % 60} s` : ''}`;
+    return `${Math.floor(s / 3600)} h ${Math.ceil((s % 3600) / 60)} min`;
+  };
+
+  /* Certificado: la persona confirma su nombre completo antes de emitirlo. */
+  function certFormHtml(name) {
+    return `<form class="ac-cert ac-cert--form" id="ac-cert-form" novalidate>${ms('workspace_premium')}<div style="flex:1">
+      <b>Has completado el curso.</b> Confirma tu nombre completo tal como quieres que aparezca en el certificado.
+      Después no se podrá cambiar.
+      <label for="ac-cert-name" style="display:block;margin-top:10px">Nombre y apellidos</label>
+      <input id="ac-cert-name" type="text" autocomplete="name" maxlength="150" required value="${esc(name || '')}" style="width:100%;max-width:420px;margin-top:6px">
+      <label style="display:flex;gap:8px;align-items:center;margin-top:8px;font-weight:400">
+        <input type="checkbox" id="ac-cert-ok"> El nombre es correcto</label>
+      <div id="ac-cert-err" class="ac-err" style="display:none;margin-top:10px"></div>
+      <button class="ac-btn ac-btn--primary" type="submit" style="margin-top:12px">Emitir mi certificado</button></div></form>`;
+  }
+  function wireCertForm(courseSlug) {
+    const f = $('#ac-cert-form');
+    if (!f) return;
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const err = $('#ac-cert-err');
+      err.style.display = 'none';
+      try {
+        const r = await API.post(`/academia/courses/${encodeURIComponent(courseSlug)}/certificate`,
+          { fullName: $('#ac-cert-name').value, confirm: $('#ac-cert-ok').checked });
+        f.outerHTML = `<div class="ac-cert">${ms('workspace_premium')}<div><b>Certificado emitido.</b><br>
+          <a href="/academia/certificado/${esc(r.serial)}" target="_blank" rel="noopener">Ver tu certificado (${esc(r.serial)})</a></div></div>`;
+      } catch (e2) {
+        err.textContent = e2?.message || 'No se pudo emitir el certificado';
+        err.style.display = '';
+      }
+    });
+  }
 
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a[data-nav]');
@@ -172,7 +209,8 @@
       </section>
       ${!user ? loginBox() : ''}
       ${c.certificate ? `<div class="ac-cert">${ms('workspace_premium')}<div><b>Has completado el curso.</b><br>
-        <a href="/academia/certificado/${esc(c.certificate.serial)}" target="_blank" rel="noopener">Ver tu certificado (${esc(c.certificate.serial)})</a></div></div>` : ''}
+        <a href="/academia/certificado/${esc(c.certificate.serial)}" target="_blank" rel="noopener">Ver tu certificado (${esc(c.certificate.serial)})</a></div></div>`
+        : c.certificateReady ? certFormHtml(c.suggestedName) : ''}
       <section class="ac-section">
         <h2>Temario</h2>
         <div class="ac-modules">
@@ -188,6 +226,7 @@
         </div>
       </section></div>`;
     wireLogin();
+    wireCertForm(c.slug);
     $('#ac-enroll')?.addEventListener('click', async () => {
       try { await API.post(`/academia/courses/${encodeURIComponent(c.slug)}/enroll`); go(`/academia/${c.slug}/${first.slug}`); }
       catch (e) { alert(e?.message || 'No se pudo hacer la matrícula'); }
@@ -255,7 +294,7 @@
       const item = (state, icon, title, sub, locked) => `<div class="ac-phase${locked ? ' ac-phase--locked' : ''}">${dot(state)}
         <div><b>${title}</b><small>${sub}</small></div></div>`;
       $('#ac-phases').innerHTML = [
-        L.video_url ? item(p.videoSeen ? 'done' : 'pending', 'play_circle', 'Ver el vídeo', p.videoSeen ? 'Visto' : `${Math.round((L.video_seconds || 0) / 60)} min · hasta el final`) : '',
+        L.video_url ? item(p.videoSeen ? 'done' : 'pending', 'play_circle', 'Ver el vídeo', p.videoSeen ? 'Visto' : `${Math.round((L.video_seconds || 0) / 60)} min · entero y sin saltar`) : '',
         item(p.readingDone ? 'done' : p.slides.reached >= 0 ? 'in_progress' : 'pending', 'auto_stories', 'Leer',
           p.readingDone ? 'Lectura terminada' : `${Math.max(0, p.slides.reached + 1)} de ${p.slides.total} hojas`),
         item(p.testPassed ? 'done' : 'pending', 'quiz', 'Hacer el test',
@@ -268,27 +307,22 @@
 
     phase({ action: 'start' }).catch(() => paintPhases());
 
-    /* vídeo: muestras de los últimos 31 s, seguidas; un salto empieza una cadena nueva */
+    /* vídeo: una muestra con la posición cada ~5 s mientras se reproduce, y al
+       pausar o terminar. Un watchId por visita; el servidor descarta los saltos. */
     const video = $('#ac-video');
     if (video && !phases.videoSeen) {
-      const dur = L.video_seconds;
-      let watchId = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2);
-      let lastTo = null, lastSent = 0, sending = false;
+      const watchId = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2);
+      let lastSent = 0, sending = false;
       const send = async (force) => {
         if (phases.videoSeen || sending) return;
-        const t = video.currentTime;
-        if (!dur || t < dur - 31) return;
-        if (!force && Date.now() - lastSent < 2000) return;
-        const from = lastTo ?? t;
+        if (!force && Date.now() - lastSent < 5000) return;
         lastSent = Date.now(); sending = true;
-        try { await phase({ action: 'video', watchId, from, to: t }); lastTo = t; } catch { /* reintenta en la siguiente */ }
+        try { await phase({ action: 'video', watchId, to: video.currentTime }); } catch { /* reintenta en la siguiente */ }
         finally { sending = false; }
       };
-      const onSeek = () => { watchId = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2); lastTo = null; };
-      const onTime = () => send(false);
+      const onTime = () => { if (!video.paused) send(false); };
       const onPause = () => send(true);
       video.addEventListener('timeupdate', onTime);
-      video.addEventListener('seeking', onSeek);
       video.addEventListener('pause', onPause);
       video.addEventListener('ended', onPause);
       cleanup.push(() => { video.pause(); });
@@ -357,16 +391,19 @@
       paintDeck();
     }
 
+    let advancing = false;     // un doble clic no debe saltar dos hojas
     async function advance() {
+      if (advancing || idx >= slides.length - 1) return;
       if (idx < phases.slides.reached || phases.readingDone) { idx += 1; paintDeck(); return; }
       if (Date.now() < timerEnd) return;
+      advancing = true;
       try {
         await phase({ action: 'slide', index: idx + 1 });
         idx += 1;
         timerEnd = Date.now() + SLIDE_MS;
       } catch (e) {
         if (e?.waitMs) timerEnd = Date.now() + e.waitMs;
-      }
+      } finally { advancing = false; }
       paintDeck();
     }
 
@@ -400,11 +437,34 @@
       box.innerHTML = `<h2>${ms('quiz')} Test de la lección <small>${L.questions} preguntas · aprobado con ${p.passingScore} %</small></h2>
         ${p.testPassed ? `<div class="ac-result"><div class="ac-result__score">${p.bestScore} %</div><div><b>Aprobado.</b> Lección completada.<br>
           <span class="ac-note-info">Puedes repetirlo cuando quieras: cuenta tu mejor nota.</span></div></div>`
-          : p.attempts ? `<p class="ac-note-info">Llevas ${p.attempts} ${p.attempts === 1 ? 'intento' : 'intentos'}. Tu mejor nota: ${p.bestScore} %.</p>` : ''}
+          : p.attempts ? `<p class="ac-note-info">Llevas ${p.attempts} ${p.attempts === 1 ? 'intento' : 'intentos'}. Tu mejor nota: ${p.bestScore} %.
+            ${p.testAttemptsLeft != null ? `Te quedan ${p.testAttemptsLeft} en las próximas 24 horas.` : ''}</p>` : ''}
         <div style="margin-top:16px"><button class="ac-btn ${p.testPassed ? 'ac-btn--ghost' : 'ac-btn--primary'}" id="ac-test-start">
-          ${p.testPassed ? 'Repetir el test' : p.attempts ? 'Intentarlo de nuevo' : 'Empezar el test'}</button></div>
+          ${p.testPassed ? 'Repetir el test' : p.attempts ? 'Intentarlo de nuevo' : 'Empezar el test'}</button>
+          <span class="ac-note-info" id="ac-test-wait" style="margin-left:10px"></span></div>
         <div id="ac-test-err"></div>`;
       $('#ac-test-start').onclick = startTest;
+      waitButton(p.testPassed ? 0 : p.testWaitMs, p.testWaitReason);
+    }
+
+    /* Desactiva «Intentarlo de nuevo» mientras dure la espera, con cuenta atrás. */
+    let waitTimer = null;
+    cleanup.push(() => clearInterval(waitTimer));
+    function waitButton(waitMs, reason) {
+      clearInterval(waitTimer);
+      const btn = $('#ac-test-start'), label = $('#ac-test-wait');
+      if (!btn || !waitMs) return;
+      const until = Date.now() + waitMs;
+      const paint = () => {
+        const left = until - Date.now();
+        if (left <= 0) { clearInterval(waitTimer); btn.disabled = false; label.textContent = ''; return; }
+        btn.disabled = true;
+        label.textContent = reason === 'daily'
+          ? `Has hecho los intentos permitidos en 24 horas. Podrás volver en ${fmtWait(left)}.`
+          : `Repasa la lección. Podrás intentarlo de nuevo en ${fmtWait(left)}.`;
+      };
+      paint();
+      waitTimer = setInterval(paint, 1000);
     }
 
     async function startTest() {
@@ -413,6 +473,7 @@
         answers = new Array(attempt.questions.length).fill(null); qi = 0;
         paintQuestion();
       } catch (e) {
+        if (e?.waitMs) { waitButton(e.waitMs, e.code === 'TEST_DAILY_LIMIT' ? 'daily' : 'cooldown'); return; }
         $('#ac-test-err').innerHTML = `<div class="ac-err" style="margin-top:12px">${errMsg(e)}</div>`;
       }
     }
@@ -450,17 +511,22 @@
         $('#ac-test').innerHTML = `<h2>${ms('quiz')} Resultado</h2>
           <div class="ac-result${r.passed ? '' : ' ac-result--fail'}"><div class="ac-result__score">${r.score} %</div>
             <div><b>${r.passed ? 'Aprobado.' : 'Todavía no.'}</b> ${r.right} de ${r.total} correctas (se aprueba con ${r.passingScore} %).
-            ${r.certificate ? `<br><a href="/academia/certificado/${esc(r.certificate)}" target="_blank" rel="noopener">Has terminado el curso: ver tu certificado</a>` : ''}</div></div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            ${r.certificate ? `<br><a href="/academia/certificado/${esc(r.certificate)}" target="_blank" rel="noopener">Has terminado el curso: ver tu certificado</a>` : ''}
+            ${!r.passed ? `<br><span class="ac-note-info">Abajo verás qué preguntas has fallado. Repasa la lección antes de volver a intentarlo${r.attemptsLeft != null ? ` (te quedan ${r.attemptsLeft} intentos en 24 horas)` : ''}.</span>` : ''}</div></div>
+          ${r.certificateReady && !r.certificate ? certFormHtml(r.suggestedName) : ''}
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:16px">
             ${r.passed && d.next ? `<a class="ac-btn ac-btn--primary" href="/academia/${esc(course.slug)}/${esc(d.next.slug)}" data-nav>Siguiente lección</a>` : ''}
-            <button class="ac-btn ${r.passed ? 'ac-btn--ghost' : 'ac-btn--primary'}" id="ac-test-start">${r.passed ? 'Repetir el test' : 'Intentarlo de nuevo'}</button></div>
+            <button class="ac-btn ${r.passed ? 'ac-btn--ghost' : 'ac-btn--primary'}" id="ac-test-start">${r.passed ? 'Repetir el test' : 'Intentarlo de nuevo'}</button>
+            <span class="ac-note-info" id="ac-test-wait"></span></div>
           <div class="ac-review">${r.review.map((q, i) => `<div class="ac-review__item">
             <b>${i + 1}. ${esc(q.question)}</b>
-            <p class="${q.chosen === q.correct ? 'ac-review__ok' : 'ac-review__ko'}">${q.chosen === q.correct ? 'Correcta' : 'Incorrecta'}: ${esc(q.options[q.chosen])}</p>
+            <p class="${q.ok ? 'ac-review__ok' : 'ac-review__ko'}">${q.ok ? 'Correcta' : 'Incorrecta'}: ${esc(q.options[q.chosen])}</p>
             ${q.feedback ? `<p class="ac-review__fb">${esc(q.feedback)}</p>` : ''}
-            ${q.chosen !== q.correct ? `<p class="ac-review__right"><b>Respuesta correcta:</b> ${esc(q.options[q.correct])}</p>${q.correctFeedback ? `<p class="ac-review__fb">${esc(q.correctFeedback)}</p>` : ''}` : ''}
+            ${!q.ok && q.correct != null ? `<p class="ac-review__right"><b>Respuesta correcta:</b> ${esc(q.options[q.correct])}</p>${q.correctFeedback ? `<p class="ac-review__fb">${esc(q.correctFeedback)}</p>` : ''}` : ''}
           </div>`).join('')}</div>`;
         $('#ac-test-start').onclick = startTest;
+        waitButton(r.nextWaitMs, phases.testWaitReason);
+        wireCertForm(course.slug);
         $('#ac-test').scrollIntoView({ behavior: 'smooth', block: 'start' });
       } catch (e) {
         $('#ac-test-err').innerHTML = `<div class="ac-err" style="margin-top:12px">${errMsg(e)}</div>`;
