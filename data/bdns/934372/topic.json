@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "934372",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CABILDO INSULAR DE TENERIFE / FUNDACIÓN INSULAR PARA LA FORMACIÓN, EL EMPLEO Y EL DESARROLLO EMPRESARIAL",
+  "nuts_codes": [
+    "ES709"
+  ],
+  "nuts_primary": "ES709",
+  "title": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS PARA LA REALIZACIÓN DE PRÁCTICAS FORMATIVAS NO LABORALES EN EL EXTRANJERO “BECAS ÁFRICA 2026”",
+  "title_lang": "es",
+  "summary": "Fomento del Empleo",
+  "status": "open",
+  "publication_date": "2026-10-08",
+  "open_date": "2026-10-15",
+  "deadline": "2026-11-14",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 144304.8,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "V",
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES"
+    }
+  ],
+  "apply_url": "https://sede.fifede.org/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934372",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.bopsantacruzdetenerife.es/boletines/2025/5-2-25/5-2-25.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-09T04:08:00.416Z"
+}

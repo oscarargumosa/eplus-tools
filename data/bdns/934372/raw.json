@@ -1,0 +1,64 @@
+{
+  "id": 1135933,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABILDO INSULAR DE TENERIFE",
+    "nivel3": "FUNDACIÓN INSULAR PARA LA FORMACIÓN, EL EMPLEO Y EL DESARROLLO EMPRESARIAL"
+  },
+  "sedeElectronica": "https://sede.fifede.org/",
+  "codigoBDNS": "934372",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 144304.8,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS PARA LA REALIZACIÓN DE PRÁCTICAS FORMATIVAS NO LABORALES EN EL EXTRANJERO “BECAS ÁFRICA 2026”",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ORGANISMOS EXTRATERRITORIALES",
+      "codigo": "V"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "BASES GENERALES QUE HAN DE REGIR LA REALIZACIÓN DE PRÁCTICAS FORMATIVAS NO LABORALES EN EL EXTRANJERO",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/boletines/2025/5-2-25/5-2-25.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": "2026-11-14",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534454,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "APROBACIÓN DE LA CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS PARA LA REALIZACIÓN DE PRÁCTICAS FORMATIVAS NO LABORALES EN EL EXTRANJERO BECAS AMÉRICA 2026.pdf",
+      "long": 291999,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

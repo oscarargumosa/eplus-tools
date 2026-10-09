@@ -1,0 +1,68 @@
+{
+  "id": 1135789,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÁ DE HENARES",
+    "nivel3": "AYUNTAMIENTO DE ALCALÁ DE HENARES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934228",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3500,
+  "mrr": false,
+  "descripcion": "Acuerdo de Junta de Gobierno Local del 18-09-26 por el que se convoca el concurso-exposición \"Una selva diferente. Compartiendo derechos\" destinado a centros educativos. Edición 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "Educación",
+      "codigo": "85"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES3 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Acuerdo de Junta de Gobierno Local del 18-09-26 por el que se convoca el concurso-exposición \"Una selva diferente. Compartiendo derechos\" destinado a centros educativos. Edición 2026",
+  "urlBasesReguladoras": "www.ayto-alcaladehenares.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-21",
+  "fechaFinSolicitud": "2026-10-16",
+  "textInicio": "A partir del día 21 de septiembre de 2026",
+  "textFin": "hasta el día 16 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534107,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ACUERDO Y BASES SELVA DIFERENTE.pdf",
+      "long": 4463925,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

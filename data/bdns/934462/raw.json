@@ -1,0 +1,64 @@
+{
+  "id": 1136023,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA",
+    "nivel3": "AYUNTAMIENTO DE CASTELLÓN DE LA PLANA/CASTELLÓ DE LA PLANA"
+  },
+  "sedeElectronica": "sede.castello.es",
+  "codigoBDNS": "934462",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA EN MATERIA DE PROMOCIÓN SOCIAL DEL VALENCIANO EN LA CIUDAD DE CASTELLÓN DE LA PLANA DURANTE EL PERIODO COMPRENDIDO ENTRE EL 2 DE SEPTIEMBRE DE 2026 Y EL 1 DE SEPTIEMBRE DE 2027",
+  "descripcionLeng": "CONVOCATÒRIA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA EN MATÈRIA DE PROMOCIÓ SOCIAL DEL VALENCIÀ A LA CIUTAT DE CASTELLÓ DE LA PLANA DURANT EL PERÍODE COMPRÉS ENTRE EL 2 DE SETEMBRE DE 2026 I L’1 DE SETEMBRE DE 2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA EN MATERIA DE PROMOCIÓN SOCIAL DEL VALENCIANO EN LA CIUDAD DE CASTELLÓN DE LA PLANA DURANTE EL PERIODO COMPRENDIDO ENTRE EL 2 DE SEPT DE 2026 Y EL 1 SEPT DE 2027",
+  "urlBasesReguladoras": "https://www.castello.es/documents/35637/3715726/_BASES+DE+SUBVENCIONES+DE+PROMOCI%C3%93N+SOCIAL+DEL+VALENCIANO.pdf/bdae85d0-4c2e-5c3a-8b13-9b34ed665822?t=1791462679146",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al dia siguiente a la publicación del extracto en el BOP",
+  "textFin": "Transcurridos 15 días hábiles desde la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534657,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Certificado de acuerdo aprobación bases y convocatoria.pdf",
+      "long": 570355,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

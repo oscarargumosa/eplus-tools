@@ -1,0 +1,64 @@
+{
+  "id": 1135828,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARAKALDO",
+    "nivel3": "AYUNTAMIENTO DE BARAKALDO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934267",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 900000,
+  "mrr": false,
+  "descripcion": "AYUDAS ECONOMICAS MUNICIPALES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES21 - PAIS VASCO"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "AYUDAS ECONOMICAS MUNICIPALES DESTINADAS A PREVENIR SITUACIONES DE MARGINACIÓN SOCIAL",
+  "urlBasesReguladoras": "http://www.bizkaia.eus/lehendakaritza/Bao_bob/2009/08/20090828a164.pdf#page=23",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-02-24",
+  "fechaFinSolicitud": "2026-11-06",
+  "textInicio": "24/02/2026",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534230,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Resolucion_2026_008201_8201_0ff62cb9-df6a-4ce2-aa17-a26c8eb4b392.pdf",
+      "long": 673916,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

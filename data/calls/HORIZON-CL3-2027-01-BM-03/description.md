@@ -43,7 +43,7 @@ Proposals should delineate the plans for further development to subsequent TRLs 
 
 Synergies within civil security can be an asset, for example with Better protect the EU and its citizens against Crime and Terrorism and Resilient Infrastructure.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 4-5 by the end of the project – see General Annex B.
 

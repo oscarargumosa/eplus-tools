@@ -1,0 +1,72 @@
+{
+  "id": 1135998,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "XIRIVELLA",
+    "nivel3": "AYUNTAMIENTO DE XIRIVELLA"
+  },
+  "sedeElectronica": "https//sede.xirivella.es",
+  "codigoBDNS": "934437",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7000,
+  "mrr": false,
+  "descripcion": "Programa municipal de subvenciones destinadas a deportistas de élite de Xirivella (promoción y alta competición) Ejercicio 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Programa municipal de subvenciones destinadas a deportistas de élite de Xirivella (promoción y alta competición) Ejercicio 2026",
+  "urlBasesReguladoras": "www.xirivella.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-09",
+  "textInicio": "Día siguiente a la publicación de la convocatoria en el BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534605,
+      "descripcion": "Edicto",
+      "nombreFic": "Edicto - SEFYCU 8705019.pdf",
+      "long": 267281,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    },
+    {
+      "id": 1534602,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 3231 de 07_10_2026 _Resolución convocatoria subvenciones deportistas de élite 2026_ - SEGRA 1244250 (2).pdf",
+      "long": 382276,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

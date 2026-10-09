@@ -17,6 +17,6 @@ In light of the underdeveloped evidence base surrounding synthetic drugs, propos
 
 Activities proposed within this topic should address, in a balanced way, both technological and societal dimensions of the issue under consideration. The proposals funded under this topic are expected to engage with the Europol Innovation Lab during the lifetime of the project, including validating the outcomes, with the aim of facilitating future uptake of innovations for the law enforcement community. Similarly, the proposals funded under this topic are expected to engage with the EU Drugs Agency during the lifetime of the project, including validating the outcomes. Finally, proposals are expected to address all applicable considerations expressed in the Introduction of the Fighting Crime and Terrorism Destination.
 
-## null
+## Technology Readiness Level - Technology readiness level expected from completed projects
 
 Activities are expected to achieve TRL 6-8 by the end of the project – see General Annex B.

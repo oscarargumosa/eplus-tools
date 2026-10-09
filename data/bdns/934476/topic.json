@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "934476",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ELCIEGO / AYUNTAMIENTO DE ELCIEGO",
+  "nuts_codes": [
+    "ES211"
+  ],
+  "nuts_primary": "ES211",
+  "title": "Convocatoria para la concesión de ayudas económicas para el tratamiento de termitas en los inmuebles urbanos de Elciego, año 2026 y anteriores.",
+  "title_lang": "es",
+  "summary": "Infraestructuras",
+  "status": "open",
+  "publication_date": "2026-10-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 0,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "E",
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN"
+    }
+  ],
+  "apply_url": "www.elciego.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934476",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.elciego.es",
+  "text_inicio": "Siguiente día al de la publicación en el BOTHA",
+  "text_fin": "Dos meses a partir del siguiente al de la publicación en el BOTHA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEADER - FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-09T04:08:00.456Z"
+}

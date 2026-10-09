@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "934232",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILLANUEVA DE LOS CASTILLEJOS / AYUNTAMIENTO DE VILLANUEVA DE LOS CASTILLEJOS",
+  "nuts_codes": [
+    "ES615"
+  ],
+  "nuts_primary": "ES615",
+  "title": "CONVOCATORIA DE AYUDAS ECONÓMICAS AL ESTUDIO NO OBLIGATORIO 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-08",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://villanuevadeloscastillejos.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934232",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "bases ayudas económicas estudios no obligatorios",
+      "url": null
+    },
+    {
+      "label": "declaración responsable",
+      "url": null
+    },
+    {
+      "label": "modelo a tercero",
+      "url": null
+    },
+    {
+      "label": "solicitud",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "WWW.VILLANUEVADELOSCASTILLEJOS.ES",
+  "text_inicio": "Al día siguiente al de la publicación del extracto en BOP Huelva",
+  "text_fin": "10 días hábiles contados a partir de la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-09T04:08:00.377Z"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "934256",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TERUEL / AYUNTAMIENTO DE TERUEL",
+  "nuts_codes": [
+    "ES24"
+  ],
+  "nuts_primary": "ES24",
+  "title": "CONVOCATORIA DE AYUDAS AL PEQUEÑO COMERCIO MINORISTA DENTRO DEL PROGRAMA VOLVEREMOS 2026 PARA LA DINAMIZACIÓN COMERCIAL EN TERUEL",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-08",
+  "open_date": "2026-06-03",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 100000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": "https://volveremos.app",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934256",
+  "documents": [
+    {
+      "label": "Convocatoria Volveremos 2026 DGA",
+      "url": null
+    },
+    {
+      "label": "Convocatoria Adhesión Volveremos",
+      "url": null
+    },
+    {
+      "label": "Bases reguladoras DGA",
+      "url": null
+    },
+    {
+      "label": "Acuerdo aprobación Convocatoria",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.teruel.es/wp-content/uploads/documentos/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-09T04:08:00.388Z"
+}

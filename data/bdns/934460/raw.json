@@ -1,0 +1,75 @@
+{
+  "id": 1136021,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GRANOLLERS",
+    "nivel3": "AYUNTAMIENTO DE GRANOLLERS"
+  },
+  "sedeElectronica": "https://seuelectronica.granollers.cat/portal/sede/se_contenedor1.jsp?seccion=s_fdoc_d4_v1.jsp&contenido=6109&tipo=5&nivel=1400&layout=se_contenedor1.jsp&codResi=1&language=ca&codMenu=63&codMenuPN=21",
+  "codigoBDNS": "934460",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9000,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones, en régimen de concurrencia competitiva, para apoyar actividades culturales impulsadas por entidades sin ánimo de lucro o personas físicas de Granollers para el año 2026.",
+  "descripcionLeng": "Convocatòria de subvencions, en règim de concurrència competitiva, per a donar suport a activitats culturals impulsades per entitats sense ànim de lucre o persones físiques de Granollers per a l'any 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades recreativas y de entretenimiento",
+      "codigo": "93.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras específicas para la concesión de subvenciones, en régimen de concurrencia competitiva, para dar apoyo a actividades culturales impulsadas por entidades sin ánimo de lucro o personas físicas de Granollers.",
+  "urlBasesReguladoras": "https://seuelectronica.granollers.cat/portal/sede/RecursosWeb/DOCUMENTOS/1/1_9363_1.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación de la convocatoria en el BOPB.",
+  "textFin": "10 días hábiles a partir del día siguiente de la publicación de la convocatoria en el BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534666,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Acord de Junta de Govern Local.PDF",
+      "long": 203946,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    },
+    {
+      "id": 1534665,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificat acord JGL aprovació convocatòria (castellà).PDF",
+      "long": 212495,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,68 @@
+{
+  "id": 1136016,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD REY JUAN CARLOS",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.urjc.es/web/guest/convocatorias",
+  "codigoBDNS": "934455",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7296,
+  "mrr": false,
+  "descripcion": "Resolución URJC convocatoria Programa (BIP) “Democracy Education, Children’s Rights and Inclusion as Challenges in Context of Digitalisation and Artificial Intelligence\" coordinado por la Justus Liebig University (JLU) in Giessen Erasmus+ 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Resolución URJC convocatoria Programa (BIP) “Democracy Education, Children’s Rights and Inclusion as Challenges in Context of Digitalisation and Artificial Intelligence\" coordinado por la Justus Liebig University (JLU) in Giessen Erasmus+ 2026/2027",
+  "urlBasesReguladoras": "https://sede.urjc.es/tablon-oficial",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación en el BOCM",
+  "textFin": "5 días hábiles a partir del día siguiente de la publicación en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FGI - FONDOS DE GESTIÓN INDIRECTA (ART. 58.1.C RGTO. UE Nº 966/2012)"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534656,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "FIRMADO_CONVOCATORIA JLU Giessen Democracy Education.pdf",
+      "long": 377617,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

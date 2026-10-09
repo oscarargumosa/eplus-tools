@@ -1,0 +1,64 @@
+{
+  "id": 1135936,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE CASTILLA-LA MANCHA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934375",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 36270,
+  "mrr": false,
+  "descripcion": "Convocatoria de 81 becas de colaboración para la formación en técnicas de planificación, aplicación y análisis de encuestas en las Facultades y Escuelas de la UCLM. Curso 2026/27. Primer cuatrimestre",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Normativa Reguladora de las Becas de Colaboración de la UCLM aprobada por el Consejo de Gobierno el 20-12-2021, DOCM de 28-12-2021, y modificada por el Consejo de Gobierno de 23-5-2022, DOCM de 1-6-2022, y bases de la convocatoria.",
+  "urlBasesReguladoras": "https://www.uclm.es/global/promotores/organos-de-gobierno/vicerrectorado-de-docencia/carpeta-de-convocatorias/26-27_becas-facultades-y-escuelas-_1c-81",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-08",
+  "fechaFinSolicitud": "2026-10-21",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534473,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_Becas_Colab-encuestas_Centros_UCLM_26-27_CT1.pdf",
+      "long": 417013,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

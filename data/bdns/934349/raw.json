@@ -1,0 +1,72 @@
+{
+  "id": 1135910,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSEJO INSULAR DE MALLORCA",
+    "nivel3": "DEPARTAMENTO DE PROMOCIÓN ECONÓMICA Y DESARROLLO LOCAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934349",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800000,
+  "mrr": false,
+  "descripcion": "Convocatória de subvenciones para dar apoyo al comercio y al producto de proximidad mediante la campaña \"Bonos Mallorca\" para el año 2026.",
+  "descripcionLeng": "Convocatòria de subvencions per donar suport al comerç i al producte de proximitat mitjancant la campanya \"Bons Mallorca\" per a l'any 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES532 - Mallorca"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Consell de Mallorca",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2017/21/972049 www.caib.es/eboibfront/pdf/ca/2018/96/1014444",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des des dia seguent a la publicació de l'extracte de la publicació al BOIB",
+  "textFin": "15 dies hàbils des de l'inici del termini de presentació de sol·licituds",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534398,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria V. català.docx",
+      "long": 39732,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    },
+    {
+      "id": 1534397,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria V. castellana.docx",
+      "long": 44533,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

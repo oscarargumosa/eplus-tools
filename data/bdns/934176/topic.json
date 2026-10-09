@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "934176",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / JIJONA/XIXONA / AYUNTAMIENTO DE JIJONA/XIXONA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Resol. 2026/1412, de 7 de octubre del Concejal delegado de Deportes del Ayuntamiento de Xixona, por la que se aprueba la convocatoria para la concesión de ayudas a los clubes, entidades deportivas y deportistas individuales de la Ciudad de Xixona.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-07",
+  "open_date": "2026-10-01",
+  "deadline": "2026-11-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 51000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https: sede.xixona.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934176",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.xixona.es/es-es",
+  "text_inicio": "A partir de la publicación de las bases en el Boletín Oficial de la Provincia de Alicante",
+  "text_fin": "Un mes a partir del día siguiente a la publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-09T04:08:00.365Z"
+}

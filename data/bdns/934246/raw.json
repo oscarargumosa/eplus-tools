@@ -1,0 +1,80 @@
+{
+  "id": 1135807,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD REY JUAN CARLOS",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.urjc.es/convocatorias",
+  "codigoBDNS": "934246",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN UNIVERSIDAD REY JUAN CARLOS QUE APRUEBA CONVOCATORIA PARA LA CONCESIÓN, MEDIANTE PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA, DE LA CONVOCATORIA 2026 DE AYUDAS A PERSONAS REFUGIADAS DE LA UNIVERSIDAD REY JUAN CARLOS",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN UNIVERSIDAD REY JUAN CARLOS QUE APRUEBA CONVOCATORIA PARA LA CONCESIÓN, MEDIANTE PROCEDIMIENTO DE CONCURRENCIA COMPETITIVA, DE LA CONVOCATORIA 2026 DE AYUDAS A PERSONAS REFUGIADAS DE LA UNIVERSIDAD REY JUAN CARLOS",
+  "urlBasesReguladoras": "https://sede.urjc.es/tablon-de-anuncios",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la fecha de publicación de la convocatoria en el BOCM",
+  "textFin": "10 días hábiles a partir del día siguiente a la fecha de publicación de la convocatoria en el BOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534175,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria ayudas refugiados 2026_FINAL_justificante.pdf",
+      "long": 391521,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    },
+    {
+      "id": 1534207,
+      "descripcion": "Anexo II - Carta de aceptación refugiados 2026",
+      "nombreFic": "Anexo II - Carta de aceptación refugiados 2026.pdf",
+      "long": 107416,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    },
+    {
+      "id": 1534209,
+      "descripcion": "Anexo III - Declaración responsable refugiados 2026",
+      "nombreFic": "Anexo III - Declaración responsable refugiados 2026.pdf",
+      "long": 148568,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-08"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
