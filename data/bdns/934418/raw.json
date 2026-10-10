@@ -1,0 +1,83 @@
+{
+  "id": 1135979,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SESTAO",
+    "nivel3": "AYUNTAMIENTO DE SESTAO"
+  },
+  "sedeElectronica": "https://www.sestao.eus",
+  "codigoBDNS": "934418",
+  "fechaRecepcion": "2026-10-08",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 55000,
+  "mrr": false,
+  "descripcion": "ACUERDO DE JUNTA DE GOBIERNO LOCAL DE 5 DE OCTUBRE DE 2026 POR EL QUE SE CONVOCA SUBVENCIONES A LA PROMOCIÓN Y DESARROLLO DE PROG Y ACTIV QUE COMPLEMENTEN Y/O SUPLAN LA INTERVENCIÓN DEL AYUNTAMIENTO EN EL ÁMBITO SOCIOCULTURAL, FESTIVO Y DE TIEMPO LIBRE",
+  "descripcionLeng": "2026KO URRIAREN 5EKO TOKIKO GOBERNU BATZORDEAREN ERABAKIZ, GIZARTE, KULTURA,  JAI ETA AISIALDIA ESPARRUAN EREMUAN UDALAREN ESKU-HARTZEA OSATU EDOTA ORDEZKATZEN DUTEN PROGRAMAK ETA JARDUERAK SUSTATU ETA GARATZEKO DIRU-LAGUNTZEN DEIALDIA EGITEN DUENA",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES ECONÓMICAS POR PARTE DEL AYUNTAMIENTO DE SESTAO PARA EL DESARROLLO DE ACTIVIDADES EN EL ÁMBITO SOCIOCULTURAL, FESTIVO Y DE TIEMPO LIBRE DURANTE EL EJERCICIO DE 2026",
+  "urlBasesReguladoras": "https://www.sestao.eus/es-ES/Ayuntamiento/servicios/Cultura/Paginas/Cultura_Subvenciones.aspx",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA SIGUIENTE AL DE PUBLICACION DE CONVOCATORIA EN BOB",
+  "textFin": "30 DIAS HABILES DESDE INICIO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534571,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA CASTELLANO.pdf",
+      "long": 213005,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534577,
+      "descripcion": "FORMULARIO SOLICITUD",
+      "nombreFic": "Formulario Subvenciones Culturales LOGO NUEVO.pdf",
+      "long": 182966,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534572,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "CONVOCATORIA EUSKERA.pdf",
+      "long": 232559,
+      "datMod": "2026-10-08",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

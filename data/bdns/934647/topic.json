@@ -1,0 +1,101 @@
+{
+  "source": "bdns",
+  "source_id": "934647",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE LEÓN / DIPUTACIÓN PROVINCIAL DE LEÓN",
+  "nuts_codes": [
+    "ES413"
+  ],
+  "nuts_primary": "ES413",
+  "title": "PLAN DE OCUPABILIDAD OFICINAS TURÍSTICAS 2026 - TURISMO",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 140000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://sede.dipuleon.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934647",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Extracto Convocatoria Subvenciones Plan Ocupabilidad 2026 para apertura Oficinas Informac Turística 2026",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - Solicitud subvención",
+      "url": null
+    },
+    {
+      "label": "ANEXO II - Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "ANEXO III - Solicitud de abono",
+      "url": null
+    },
+    {
+      "label": "Ficha de terceros",
+      "url": null
+    },
+    {
+      "label": "ANEXO V - Horario de oficinas",
+      "url": null
+    },
+    {
+      "label": "ANEXO VI - Memoría (Actividades)",
+      "url": null
+    },
+    {
+      "label": "ANEXO VII - Presupuestos",
+      "url": null
+    },
+    {
+      "label": "ANEXO VIII - Memoria (Visitantes)",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV - Justificación. Certificación",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "text_inicio": "Día hábil siguiente publicación del extracto de la convocatoria en el BOP",
+  "text_fin": "20 días hábiles a partir del día siguiente a publicación del extracto de la convocatoria en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-10T04:09:59.141Z"
+}

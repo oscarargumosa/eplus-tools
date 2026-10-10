@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "934631",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BURGO DE OSMA-CIUDAD DE OSMA / AYUNTAMIENTO DE BURGO DE OSMA-CIUDAD DE OSMA",
+  "nuts_codes": [
+    "ES417"
+  ],
+  "nuts_primary": "ES417",
+  "title": "Acuerdo de la JGL de 7 de octubre de 2026 por la que se convoca VI concurso de escaparatismo  de El Burgo de osma – ciudad de Osma",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-09",
+  "open_date": null,
+  "deadline": "2026-11-27",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1150,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934631",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.dipsoria.es/",
+  "text_inicio": "Desde el día siguiente al de la publicación en el BOP de Soria",
+  "text_fin": "Hasta",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-10T04:09:59.137Z"
+}

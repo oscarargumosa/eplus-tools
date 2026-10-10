@@ -1,0 +1,64 @@
+{
+  "id": 1136234,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LUCENA",
+    "nivel3": "AYUNTAMIENTO DE LUCENA"
+  },
+  "sedeElectronica": "www.aytolucena.es",
+  "codigoBDNS": "934673",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 23700,
+  "mrr": false,
+  "descripcion": "Decreto de CONVOCATORIA PÚBLICA PARA LA CONCESIÓN DE AYUDAS AL TRANSPORTE PARA JÓVENES ESTUDIANTES, EJERCICIO 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES613 - Córdoba"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "TEXTO REFUNDIDO DE LA ORDENANZA GENERAL REGULADORA DE LAS BASES DE CONCESIÓN DE SUBVENCIONES POR EL EXCMO. AYUNTAMIENTO DE LUCENA (CÓRDOBA)",
+  "urlBasesReguladoras": "https://bop.dipucordoba.es/visor-pdf/31-07-2025/BOP-A-2025-2604.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de publicación de anuncio de  convocatoria en el Boletín Oficial de la Provincia de Córdoba",
+  "textFin": "10 días hábiles a partir de la publicación del anuncio de la convocatoria en el B.O.P. de Córdoba",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535213,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DTO. FIRMADO CONVOC.AYUDAS TRANSPORTE jovenes estudiantes 2026.pdf",
+      "long": 211709,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

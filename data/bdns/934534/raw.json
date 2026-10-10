@@ -1,0 +1,72 @@
+{
+  "id": 1136095,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONDA",
+    "nivel3": "AYUNTAMIENTO DE ONDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934534",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25231,
+  "mrr": false,
+  "descripcion": "Subvenciones a asociaciones de Onda por la realización de actividades musicales y taurinas de la Feria de Onda 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases especificas reguladoras de la convocatoria para la concesión de subvenciones a asociaciones de Onda por la realización de actividades musicales y taurinas en la Fira d'Onda 2026.",
+  "urlBasesReguladoras": "https://www.onda.es/ond/web_php/index.php?contenido=subapartados_woden&id_boto=320",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación del extracto",
+  "textFin": "10 días naturales",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534854,
+      "descripcion": "acuerdo aprobación bases",
+      "nombreFic": "07 ACUERDO_1.4_JGL_extra_y_urg._20261008.pdf",
+      "long": 386422,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534853,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "03.1 bases_subvenciones_musicales_y_taurinas_2026.pdf",
+      "long": 259109,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

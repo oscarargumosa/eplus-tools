@@ -1,0 +1,80 @@
+{
+  "id": 1136109,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CAMARGO",
+    "nivel3": "AYUNTAMIENTO DE CAMARGO"
+  },
+  "sedeElectronica": "https://sede.aytocamargo.es/opensiac/informacionpublica/tramites_enter",
+  "codigoBDNS": "934548",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 60000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA ABIERTA DE SUBVENCIONES CON DESTINO A ACTUACIONES DE ADAPTACIÓN DE BAÑO MEDIANTE SUSTITUCIÓN DE BAÑERA POR PLATO DE DUCHA EN VIVIENDAS DE PERSONAS MAYORES Y PERSONAS CON DISCAPACIDAD DEL MUNICIPIO. PROGRAMA \"CHEQUE-BAÑERA\". EXPTE SEC/2026/941",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE CAMARGO",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=234460",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE FECHA PUBLICACIÓN",
+  "textFin": "31/12/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534877,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria.pdf",
+      "long": 862110,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534881,
+      "descripcion": "ANEXO II",
+      "nombreFic": "Ficha_de_terceros.pdf",
+      "long": 165765,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534880,
+      "descripcion": "ANEXO I - SOLICITUD",
+      "nombreFic": "ANEXO I.pdf",
+      "long": 444797,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

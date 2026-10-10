@@ -1,0 +1,67 @@
+{
+  "id": 1136191,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCAUDETE",
+    "nivel3": "AYUNTAMIENTO DE ALCAUDETE"
+  },
+  "sedeElectronica": "https://alcaudete.sedelectronica.es/",
+  "codigoBDNS": "934630",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 29000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES EN MATERIA DE ACTIVIDADES DEPORTIVAS FEDERADAS PARA LA TEMPORADA 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES616 - Jaén"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES EN MATERIA DE ACTIVIDADES DEPORTIVAS FEDERADAS PARA LA TEMPORADA 2024-2025",
+  "urlBasesReguladoras": "https://alcaudete.sedelectronica.es/transparency/727fcbdc-464b-4cab-80d2-9bbb1683b2cc/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "textFin": "20 días naturales desde el día siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535125,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRETO 2026 0775 Convocatoria Subvenciones en materia de Actividades Deportivas Federadas 2025 2026.pdf",
+      "long": 2395343,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

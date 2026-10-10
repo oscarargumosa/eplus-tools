@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "934595",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / AZUQUECA DE HENARES / AYUNTAMIENTO DE AZUQUECA DE HENARES",
+  "nuts_codes": [
+    "ES424"
+  ],
+  "nuts_primary": "ES424",
+  "title": "CONVOCATORIA DE SUBVENCIÓN EN RÉGIMEN DE CONCURRENCIA COMPETITIVA DESTINADA A FOMENTAR LA PARTICIPACIÓN DE LAS ASOCIACIONES DE LA NARRACIÓN ORAL EN EL MUNICIPIO. EJERCICIO 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934595",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://azuqueca.sedelectronica.es/preview-document/61ffe294-6446-4aea-9eef-0390efd2b824/",
+  "text_inicio": "Desde el día siguiente de la publicación de la convocatoria en BOP de Guadalajara",
+  "text_fin": "10 días naturales a partir del siguiente a la publicación de la convocatoria en BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-10T04:09:59.128Z"
+}

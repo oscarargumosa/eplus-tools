@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "934536",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CAMARGO / AYUNTAMIENTO DE CAMARGO",
+  "nuts_codes": [
+    "ES130"
+  ],
+  "nuts_primary": "ES130",
+  "title": "CONVOCATORIA 2026 DE SUBVENCIONES DEL AYUNTAMIENTO DE CAMARGO CON DESTINO A LA REALIZACIÓN DE OBRAS DE PRIMERA INSTALACIÓN DE ASCENSORES EN EDIFICIOS RESIDENCIALES PREEXISTENTES. EXPTE SEC/2026/932",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-10-09",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 180000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://sede.aytocamargo.es/opensiac/informacionpublica/tramites_enter",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934536",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV",
+      "url": null
+    },
+    {
+      "label": "ANEXO III",
+      "url": null
+    },
+    {
+      "label": "ANEXO II - CARTEL",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=409373 y https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=431777",
+  "text_inicio": "DESDE FECHA PUBLICACIÓN",
+  "text_fin": "UN MES DESDE FECHA DE PUBLICACIÓN",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-10T04:09:59.118Z"
+}

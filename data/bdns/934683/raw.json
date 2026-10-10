@@ -1,0 +1,72 @@
+{
+  "id": 1136244,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SAMANIEGO",
+    "nivel3": "AYUNTAMIENTO DE SAMANIEGO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934683",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 73/2026, de 9 de octubre de 2026, del Ayuntamiento de Samaniego, por el que se convocan ayudas para el aprendizaje de euskera correspondientes al curso 2025-2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza por la que se aprueban las bases reguladoras para las ayudas al estudio del euskera del Ayuntamiento de Samaniego, publicada en el BOTHA n.º 10, de 24 de enero de 2018.",
+  "urlBasesReguladoras": "https://ayuntamientosamaniego.com/wp-content/uploads/2024/03/18.ORDENANZA-EUSKERA.pdf?utm_source=chatgpt.com",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación del extracto de la convocatoria en el BOTHA.",
+  "textFin": "Un mes contado desde el día siguiente al de la publicación del extracto de la convocatoria en el BOT",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535250,
+      "descripcion": "Bases",
+      "nombreFic": "Convocatoria_ayudas_euskera_2025-2026_corregida_57545_587_6.pdf",
+      "long": 645907,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535249,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRETO_73.2026_convocatoria_euskera_2025_2026_34252_587_7 (2).pdf",
+      "long": 477010,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

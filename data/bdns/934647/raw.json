@@ -1,0 +1,144 @@
+{
+  "id": 1136208,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE LEÓN"
+  },
+  "sedeElectronica": "https://sede.dipuleon.es",
+  "codigoBDNS": "934647",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 140000,
+  "mrr": false,
+  "descripcion": "PLAN DE OCUPABILIDAD OFICINAS TURÍSTICAS 2026 - TURISMO",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día hábil siguiente publicación del extracto de la convocatoria en el BOP",
+  "textFin": "20 días hábiles a partir del día siguiente a publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535175,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certif._32._Pleno_30_septiembre_2026_Convoc._y_bases_Plan_Ocup._Turismo_Oficinas_Inf._Turística_202.pdf",
+      "long": 635606,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535176,
+      "descripcion": "Extracto Convocatoria Subvenciones Plan Ocupabilidad 2026 para apertura Oficinas Informac Turística 2026",
+      "nombreFic": "Extracto_Convocatoria_Subvenciones_Plan_Ocupabilidad_2026_para_apertura_Oficinas_Informac_Turística.pdf",
+      "long": 468923,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535177,
+      "descripcion": "ANEXO I - Solicitud subvención",
+      "nombreFic": "ANEXO_I_-_Solicitud_subvención.pdf",
+      "long": 69465,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535178,
+      "descripcion": "ANEXO II - Declaración responsable",
+      "nombreFic": "ANEXO_II_-_Declaración_responsable.pdf",
+      "long": 88770,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535179,
+      "descripcion": "ANEXO III - Solicitud de abono",
+      "nombreFic": "ANEXO_III_-_Solicitud_de_abono.pdf",
+      "long": 73089,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535185,
+      "descripcion": "Ficha de terceros",
+      "nombreFic": "Ficha_de_terceros.pdf",
+      "long": 395290,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535181,
+      "descripcion": "ANEXO V - Horario de oficinas",
+      "nombreFic": "ANEXO_V_-_Horario_de_oficinas.pdf",
+      "long": 91036,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535182,
+      "descripcion": "ANEXO VI - Memoría (Actividades)",
+      "nombreFic": "ANEXO_VI_-_Memoría_(Actividades).pdf",
+      "long": 89075,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535183,
+      "descripcion": "ANEXO VII - Presupuestos",
+      "nombreFic": "ANEXO_VII_-_Presupuestos.pdf",
+      "long": 92886,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535184,
+      "descripcion": "ANEXO VIII - Memoria (Visitantes)",
+      "nombreFic": "ANEXO_VIII_-_Memoria_(Visitantes).pdf",
+      "long": 58277,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1535180,
+      "descripcion": "ANEXO IV - Justificación. Certificación",
+      "nombreFic": "ANEXO_IV_-_Justificación._Certificación.pdf",
+      "long": 135983,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

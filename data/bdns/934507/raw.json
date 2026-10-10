@@ -1,0 +1,96 @@
+{
+  "id": 1136068,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CAMARGO",
+    "nivel3": "AYUNTAMIENTO DE CAMARGO"
+  },
+  "sedeElectronica": "https://sede.aytocamargo.es/opensiac/informacionpublica/tramites_enter",
+  "codigoBDNS": "934507",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA 2026 DE SUBVENCIONES CON DESTINO A LA REALIZACIÓN DE COLONIAS Y CAMPAMENTOS DE VERANO. EXPTE SEC/2026/961",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES130 - Cantabria"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE CAMARGO",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=234460",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DESDE FECHA PUBLICACIÓN",
+  "textFin": "UN MES DESDE FECHA DE PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1534800,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria.pdf",
+      "long": 1325751,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534801,
+      "descripcion": "ANEXO I - SOLICITUD",
+      "nombreFic": "ANEXO I solicitud.pdf",
+      "long": 1050485,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534807,
+      "descripcion": "ANEXO IV",
+      "nombreFic": "ANEXO IV.pdf",
+      "long": 132621,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534806,
+      "descripcion": "ANEXO III",
+      "nombreFic": "Ficha_de_terceros.pdf",
+      "long": 165765,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    },
+    {
+      "id": 1534802,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO II.pdf",
+      "long": 145723,
+      "datMod": "2026-10-09",
+      "datPublicacion": "2026-10-09"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
