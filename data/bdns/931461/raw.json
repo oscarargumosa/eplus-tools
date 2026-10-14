@@ -1,0 +1,80 @@
+{
+  "id": 1133022,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SALAMANCA",
+    "nivel3": "DIPUTACIÓN DE SALAMANCA"
+  },
+  "sedeElectronica": "https://sede.diputaciondesalamanca.gob.es",
+  "codigoBDNS": "931461",
+  "fechaRecepcion": "2026-09-24",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 85000,
+  "mrr": false,
+  "descripcion": "SUBVENCION A AYUNTAMIENTOS PARA EL MANTENIMIENTO DE LAS OFICINAS DE INFORMACION TURISTICA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otros servicios de reservas y actividades relacionadas con los mismos",
+      "codigo": "79.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES415 - Salamanca"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Ordenanza General Reguladora de Concesión de Subvenciones",
+  "urlBasesReguladoras": "http://www.lasalina.es/presidencia/informacion/normativa/ordenanzasyreglamentos/presidencia/index.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACION DEL EXTRACTO DE LA CONVOCATORIA",
+  "textFin": "QUINCE DIAS HABILES A PARTIR DEL SIGUIENTE A LA PUBLICACION",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1526612,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026CUL017 BASES Y ANEXOS.pdf",
+      "long": 675460,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1526617,
+      "descripcion": "EXTRACTO DE LA CONVOCATORIA",
+      "nombreFic": "2026CUL017 EXTRACTO DE LA CONVOCATORIA.pdf",
+      "long": 253371,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1526614,
+      "descripcion": "ACUERDO JUNTA DE GOBIERNO 239 DE 16/09/2026",
+      "nombreFic": "2026CUL017 ACUERDO_239_JG_160926.pdf",
+      "long": 79479,
+      "datMod": "2026-09-24",
+      "datPublicacion": "2026-10-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

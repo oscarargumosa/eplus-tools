@@ -1,0 +1,120 @@
+{
+  "id": 1136389,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GUARDAMAR DEL SEGURA",
+    "nivel3": "AYUNTAMIENTO DE GUARDAMAR DEL SEGURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934828",
+  "fechaRecepcion": "2026-10-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 271676,
+  "mrr": false,
+  "descripcion": "Bases reguladoras y convocatoria campaña de fomento del consumo, bono consumo en sus municipios, relativa a la subvención concedida por la Excma. Diputación Provincial de Alicante. Bono-Consumo Guardamar 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras y convocatoria campaña de fomento del consumo, bono consumo en sus municipios, relativa a la subvención concedida por la Excma. Diputación Provincial de Alicante. Bono-Consumo Guardamar 2026.",
+  "urlBasesReguladoras": "https://guardamardelsegura.sedelectronica.es/transparency/9e5ee258-56f5-4df2-a6f0-b41ce03b49a0/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente a la publicación de las bases y convocatoria en el BOP",
+  "textFin": "hasta el 23 de octubre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535630,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "DECRETO 2026-5808 [Resolución PR_2026_5326 - Actuación genérica con fiscalización].pdf",
+      "long": 566780,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535631,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I. SOLICITUD BONO COMERCIO GUARDAMAR 2026.pdf",
+      "long": 670240,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535632,
+      "descripcion": "Anexo II",
+      "nombreFic": "ANEXO II. DECLARACION-RESPONSABLE ESTABLECIMIENTOS.pdf",
+      "long": 865639,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535637,
+      "descripcion": "Edicto publicación bases y convocatoria",
+      "nombreFic": "EDICTO 2026-0206 [EDICTO PUBLICACION BASES Y CONVOCATORIA BONO CONSUMO GUARDAMAR 2026].pdf",
+      "long": 307794,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535634,
+      "descripcion": "Anexo IV",
+      "nombreFic": "ANEXO IV. MODELO ORIENTATIVO DE FACTURA.pdf",
+      "long": 243529,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535635,
+      "descripcion": "Anexo V",
+      "nombreFic": "ANEXO V. ALTA TERCEROS.pdf",
+      "long": 348463,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535636,
+      "descripcion": "Anexo VI",
+      "nombreFic": "ANEXO VI. ESTABLECIMIENTOS BENEFICIARIOS.pdf",
+      "long": 239357,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535633,
+      "descripcion": "Anexo III",
+      "nombreFic": "ANEXO III. DECLARACION RESPONSABLE CONSUMIDORES.pdf",
+      "long": 804730,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

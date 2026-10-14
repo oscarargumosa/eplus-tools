@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "934964",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PUENTE GENIL / AYUNTAMIENTO DE PUENTE GENIL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "BASES  II CONCURSO EXPRESIÓN ARTÍSTICA CONTRA LA V.G. 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-13",
+  "open_date": "2026-10-13",
+  "deadline": "2026-11-17",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 700,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934964",
+  "documents": [
+    {
+      "label": "INFORME PROPUESTA DE LA CONCEJALA II CONCURSO DE EXPR ART. CONTR LA V.G. 2026",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://puentegenil.es/relacion-de-los-convenios-suscritos-con-mencion-de-las-partes-firmantes-su-objeto-y-en-su-caso-las-obligaciones-economicas-convenidas/",
+  "text_inicio": "OCTUBRE 2026",
+  "text_fin": "17 NOV 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-14T04:07:54.021Z"
+}

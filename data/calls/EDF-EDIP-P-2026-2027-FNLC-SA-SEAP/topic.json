@@ -35,9 +35,51 @@
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2026-2027-FNLC-SA-SEAP",
   "documents": [
     {
+      "section": "1. Admissibility conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/wp-call/2026/call-fiche_edf-edip-p-2026-2027-fnlc-sa_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
       "section": "5a. Evaluation and award: Submission and evaluation processes",
       "label": "Online Manual",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Application Form (EDIP and USI)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/af_edip-and-usi_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Calculator (EDIP SEAP SA LS)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/calculator_edip-seap-sa-ls_en.xlsx",
+      "ext": ".xlsx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Participant Info (EDIP and USI)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/participant-information_edip-and-usi_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "List of Infrastructure, facilities, assets and resources (EDIP and USI)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/list-of-infrastructures-facilities-assets-and-resources_edip-and-usi_en.docx",
+      "ext": ".docx",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "EDF, ASAP, EDIRPA, EDIP and USI Lump Sum MGA — Multi & Mono",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/agr-contr/ls-mga_edf-asap-edirpa-edip-and-usi_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -84,5 +126,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-13T04:05:51.266Z"
+  "fetchedAt": "2026-10-14T04:04:30.868Z"
 }

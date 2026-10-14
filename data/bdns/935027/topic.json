@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "935027",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SEGOVIA / DIPUTACIÓN PROVINCIAL DE SEGOVIA",
+  "nuts_codes": [
+    "ES416"
+  ],
+  "nuts_primary": "ES416",
+  "title": "BASES REGULADORAS DEL VI CONCURSO DE RELATOS CORTOS ‘SABORES CON MEMORIA: LA HERENCIA ALIMENTARIA SEGOVIANA’ 2026, ENMARCADO DENTRO DE LA ESTRATEGIA DE ALIMENTACIÓN SOSTENIBLE Y SALUDABLE DE LA DIPUTACIÓN DE SEGOVIA",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-10-13",
+  "open_date": "2026-10-20",
+  "deadline": "2026-11-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://sede.dipsegovia.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935027",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Solicitud de participación en el concurso (modalidad presencial)",
+      "url": null
+    },
+    {
+      "label": "Certificado de acuerdo",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dipsegovia.es/la-institucion/servicios/subvenciones-promocion-provincial",
+  "text_inicio": "A partir del primer día siguiente hábil desde la publicación del extracto en el BOP de Segovia.",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-14T04:07:54.030Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1136454,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSELL COMARCAL DE RIBERA D'EBRE",
+    "nivel3": "CONSELL COMARCAL DE LA RIBERA D'EBRE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934893",
+  "fechaRecepcion": "2026-10-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 15000,
+  "mrr": false,
+  "descripcion": "Acuerdo del Pleno del Consell Comarcal de la Ribera d'Ebre de fecha 28 de julio de 2026, aprobación de las bases reguladoras para la concesión de ayudas económicas para el transporte adaptado.",
+  "descripcionLeng": "Acord del Ple del Consell Comarcal de la Ribera d'Ebre de data 28 de juliol de 2026, aprovació de las bases reguladores per a la concessió d'ajdes econòmiques per al transport adaptat.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Subvenciones al transporte",
+  "descripcionBasesReguladoras": "Acuerdo del Pleno del Consell Comarcal de la Ribera d'Ebre de fecha 28 de julio de 2026, aprobación de las bases reguladoras para la concesión de ayudas económicas para el transporte adaptado.",
+  "urlBasesReguladoras": "https://www.riberaebre.org/serveis/ajuts-i-subvencions/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-08-10",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535761,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases i convocatòria d'ajuts per al transport adaptat a la comarca de la Ribera d'Ebre.pdf",
+      "long": 484196,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535760,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases y convocatoria de ayudas económicas para el transporte adaptado en la comarca de la Ribera d'Ebre.pdf",
+      "long": 487061,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1136374,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FORMENTERA",
+    "nivel3": "AYUNTAMIENTO DE FORMENTERA"
+  },
+  "sedeElectronica": "Oficina Virtual de Atención Ciudadana del Consell Insular de Formentera",
+  "codigoBDNS": "934813",
+  "fechaRecepcion": "2026-10-13",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria para el otorgamiento de ayudas del Consell Insular de Formentera para deportistas individuales formenterenses o residentes en destacados por sus méritos deportivos durante el año 2025",
+  "descripcionLeng": "Bases i convocatòria per a l'atorgament d'ajudes del Consell Insular de Formentera per a esportistes individuals formenterers o residents en destacats pels seus mèrits esportius durant l'any 2025",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES531 - Eivissa y Formentera"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases y convocatoria para el otorgamiento de ayudas del Consell Insular de Formentera para deportistas individuales formenterenses o residentes en destacados por sus méritos deportivos durante el año 2025",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/pdf/es/2026/125/1229617",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Fecha de publicación en el BOIB",
+  "textFin": "15 días hábiles desde el día siguiente a la publicación en el BOIB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535602,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "14- BOIB CAT núm 125, de 3 d'octubre de 2026, Ajuts esportistes mèrits 2026.pdf",
+      "long": 468109,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    },
+    {
+      "id": 1535601,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "15- BOIB CAST núm 125, de 3 de octubre de 2026, Ayudas deportistas méritos 2026.pdf",
+      "long": 471456,
+      "datMod": "2026-10-13",
+      "datPublicacion": "2026-10-13"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
