@@ -545,7 +545,7 @@ const Vision = (() => {
             <div class="vz-vis-state ${pub ? 'vz-vis-pub' : 'vz-vis-priv'}" id="vz-vis-state">${pub ? '🌍 Pública · visible para la comunidad' : '🔒 Privada · solo tú la ves'}</div>
           </div>
           <div style="display:flex;flex-direction:column;gap:9px">
-            <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ Llevar a Diseñar</button>
+            <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ Llevar a Diseñar${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}</button>
           </div>
           <div class="vz-note vz-sm" style="display:block">Al publicarla, otras entidades podrán marcar “Me interesa participar”. Los invitados podrán verla, pero no mostrar interés.</div>
         </aside>
@@ -566,6 +566,8 @@ const Vision = (() => {
   }
 
   async function promote() {
+    // Fase beta: pasar a proyecto pide el área «proyectos» → «Solicitar acceso».
+    if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
     try {
       const r = await API.post('/vision/' + V.id + '/promote', {});
       Toast.show(r.already ? 'Ya estaba en Diseñar — abriendo…' : 'Proyecto creado en Diseñar', 'ok');

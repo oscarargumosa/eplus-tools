@@ -92,6 +92,8 @@ const Convocatorias = (() => {
   function availabilityBadge(item) {
     if (!item.available_in_efs) return '';
     const code = escapeHtml(item.source_id || item.call_id || '');
+    // Fase beta: sin el área «proyectos», candado y «Beta» (el clic abre «Solicitar acceso»).
+    const locked = typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos');
     return `<button type="button"
       class="conv-create-project inline-flex items-center gap-1 whitespace-nowrap max-w-full overflow-hidden text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full bg-secondary-fixed text-primary hover:bg-secondary-fixed-dim transition-colors"
       data-action-type="${code}"
@@ -99,8 +101,11 @@ const Convocatorias = (() => {
       data-deadline="${escapeHtml(item.deadline || '')}"
       data-grant="${escapeHtml(String(item.budget_per_project_max_eur || ''))}"
       title="Crear un proyecto vinculado a esta convocatoria">
-      <span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">check_circle</span>
-      Disponible → Crear proyecto
+      ${locked
+        ? `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">lock</span>
+      Crear proyecto <span class="beta-tag">Beta</span>`
+        : `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">check_circle</span>
+      Disponible → Crear proyecto`}
     </button>`;
   }
 
@@ -425,12 +430,15 @@ const Convocatorias = (() => {
     const grant      = grantStr ? parseFloat(grantStr) : null;
 
     // If not logged in: redirect to login with redirect hint.
-    const token = (window.API && API.getToken && API.getToken());
+    // API es un const global (no cuelga de window): con window.API nunca había token.
+    const token = (typeof API !== 'undefined' && API.getToken && API.getToken());
     if (!token) {
       sessionStorage.setItem('post_login_create_call', JSON.stringify({ actionType, title, deadline, grant }));
       location.hash = '#auth';
       return;
     }
+    // Fase beta: crear un proyecto pide el área «proyectos» → «Solicitar acceso».
+    if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
 
     btn.disabled = true;
     const originalHtml = btn.innerHTML;

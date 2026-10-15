@@ -117,7 +117,7 @@ const Shortlists = (() => {
           <button type="button" data-action="consortium"
             class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-lg bg-secondary-fixed text-primary hover:bg-secondary-fixed-dim transition-colors">
             <span class="material-symbols-outlined text-[16px]">handshake</span>
-            Crear consorcio
+            Crear consorcio${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}
           </button>
           ${!data.is_default ? `
           <button type="button" data-action="rename"
@@ -350,6 +350,8 @@ const Shortlists = (() => {
   async function createConsortium(data) {
     if (!API.getToken()) { Toast.show('Inicia sesión', 'err'); return; }
     if (!data.items?.length) { Toast.show('La shortlist está vacía', 'err'); return; }
+    // Fase beta: crear el consorcio abre un proyecto → área «proyectos».
+    if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
     const ok = await Modal.confirm(`Crear un proyecto nuevo en Intake con ${data.items.length} partners de "${data.name}"? Podrás continuar la propuesta desde ahí.`);
     if (!ok) return;
     try {
