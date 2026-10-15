@@ -11,6 +11,7 @@ const ALLOWED = new Set([
   'session_start', 'section_view', 'section_time', 'gate_hit',
   'call_opened', 'entity_opened', 'mobility_opened',
   'project_started', 'search',
+  'cta_click', 'video_play',          // landing de invitados (public/landing.html)
 ]);
 
 const MAX_BATCH = 50;

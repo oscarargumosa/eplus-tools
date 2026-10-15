@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU Funding Studio — Diseña tu proyecto europeo antes de escribirlo</title>
+<meta name="description" content="Convocatorias, visión, actividades, socios, presupuesto y redacción en un mismo sitio, con el método FUN-DESIGN. Crea tu cuenta gratis.">
+<link rel="canonical" href="/">
+<meta property="og:title" content="EU Funding Studio — Diseña tu proyecto europeo antes de escribirlo">
+<meta property="og:description" content="Nueve pasos y las herramientas para darlos: de la convocatoria a la propuesta. Crea tu cuenta gratis.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3c45a3">
+<link rel="icon" href="/img/marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="preload" href="/fonts/poppins/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/poppins/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/img/landing/convocatorias-1600.webp" as="image" type="image/webp"
+      imagesrcset="/img/landing/convocatorias-800.webp 800w, /img/landing/convocatorias-1600.webp 1600w" imagesizes="(min-width: 980px) 640px, 100vw">
+<link rel="stylesheet" href="/css/landing.css">
+<script>
+  /* Antes de pintar: modo captura (?shot=1) para el banco de pruebas, y
+     anclas de la app (#login, #register) que ya no existen para invitados. */
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    if (/[?&]shot=1/.test(location.search)) d.classList.add('modo-captura');
+    var h = location.hash.slice(1);
+    var q = location.search.replace(/^\?/, '');
+    if (h === 'login' || h === 'entrar') location.replace('/entrar' + (q ? '?' + q : ''));
+    else if (h === 'register' || h === 'registro' || h === 'crear-cuenta') location.replace('/crear-cuenta' + (q ? '?' + q : ''));
+  })();
+</script>
+</head>
+
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══ Cabecera ═══════════════════════════════════════════════ -->
+<header class="cab" role="banner">
+  <div class="cab__in">
+    <a class="cab__marca" href="/" aria-label="EU Funding Studio — inicio">
+      <img src="/img/marca/logo-horizontal-blanco.svg" alt="EU Funding Studio" width="206" height="22">
+    </a>
+    <nav class="cab__acc" aria-label="Acceso">
+      <a class="enlace-entrar" data-cta="entrar" data-donde="cabecera" href="/entrar">Entrar</a>
+      <a class="btn btn--lima btn--sm" data-cta="registro" data-donde="cabecera" href="/crear-cuenta">Crear cuenta gratis</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Aviso para quien llega de un enlace a una sección de la app -->
+<div class="aviso" id="aviso-volver" role="status" hidden>
+  <div class="aviso__in">
+    <p>Para abrir esa sección necesitas una cuenta. Créala gratis o entra con la tuya y te llevamos directamente allí.</p>
+    <a class="aviso__enlace" data-cta="entrar" data-donde="aviso" href="/entrar">Entrar</a>
+  </div>
+</div>
+
+<main id="contenido">
+
+  <!-- ═══ 1 · Hero ═══════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-titulo">
+    <div class="hero__in">
+      <h1 id="hero-titulo" class="hero__tit aparece">Diseña tu proyecto europeo<br class="br-ancho"> <em>antes de escribirlo</em></h1>
+      <div class="hero__texto">
+        <p class="hero__sub aparece">Convocatorias, visión, actividades, socios, presupuesto y redacción en un mismo sitio, siguiendo un método de nueve pasos.</p>
+        <div class="hero__ctas aparece" id="hero-ctas">
+          <a class="btn btn--lima" data-cta="registro" data-donde="hero" href="/crear-cuenta">Crear mi cuenta gratis
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="btn btn--linea" data-cta="entrar" data-donde="hero" href="/entrar">Ya tengo cuenta</a>
+        </div>
+      </div>
+      <figure class="hero__img aparece-img">
+        <img src="/img/landing/convocatorias-1600.webp"
+             srcset="/img/landing/convocatorias-800.webp 800w, /img/landing/convocatorias-1600.webp 1600w"
+             sizes="(min-width: 980px) 640px, 100vw" width="1600" height="1065"
+             alt="Pantalla de Convocatorias en EU Funding Studio: búsqueda semántica con IA, filtros y tarjetas de convocatorias con su plazo y presupuesto.">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ 2 · Franja de condiciones ══════════════════════════ -->
+  <section class="franja" aria-label="Condiciones de la cuenta">
+    <ul class="franja__lista">
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Cuenta gratuita</li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sin tarjeta</li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tus proyectos son privados</li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Desde el navegador</li>
+    </ul>
+  </section>
+
+  <!-- ═══ 3 · Vídeo de bienvenida ════════════════════════════ -->
+  <section class="video" id="video" aria-labelledby="video-titulo">
+    <div class="video__in">
+      <h2 id="video-titulo" class="revela">Así se trabaja en Studio</h2>
+      <p class="video__sub revela">Un vídeo de bienvenida: qué es EU Funding Studio, cómo está ordenado y por dónde empezar el primer día.</p>
+      <div class="video__marco sin-video revela" id="video-marco">
+        <!-- El reproductor solo se enseña si el vídeo existe (landing.js lo comprueba con HEAD). -->
+        <video id="video-bienvenida" class="video__player" controls playsinline preload="none"
+               src="/media/bienvenida/studio-bienvenida.mp4"
+               poster="/media/bienvenida/studio-bienvenida.jpg"
+               aria-label="Vídeo de bienvenida a EU Funding Studio" hidden></video>
+        <div class="video__espera" id="video-espera" role="status">
+          <img class="video__icono" src="/img/marca/icono-lima.svg" alt="" width="56" height="56">
+          <p class="video__espera-tit">El vídeo de bienvenida está en camino</p>
+          <p class="video__espera-txt">Mientras tanto, crea tu cuenta y empieza por lo primero del método: encontrar tu convocatoria.</p>
+          <a class="btn btn--lima btn--sm" data-cta="registro" data-donde="video" href="/crear-cuenta">Crear mi cuenta gratis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 4 · Por qué diseñar antes ══════════════════════════ -->
+  <section class="porque" aria-labelledby="porque-titulo">
+    <div class="porque__in">
+      <h2 id="porque-titulo" class="porque__cita revela">Muchos proyectos europeos no fracasan por malas ideas, sino porque su lógica de ejecución es <em>incompleta o incoherente</em>.</h2>
+      <ol class="porque__lista">
+        <li class="revela"><span class="porque__num">8 de 9</span><p><b>pasos ocurren antes de redactar.</b> Escribir es el penúltimo, no el primero.</p></li>
+        <li class="revela"><span class="porque__num">1 → 2</span><p><b>Cada paso deja un entregable</b> que alimenta al siguiente: la convocatoria da forma a la visión; la visión, a las actividades.</p></li>
+        <li class="revela"><span class="porque__num">Tú</span><p><b>decides qué se queda.</b> La IA propone textos, tareas e indicadores a partir de lo que has diseñado; nada entra sin que lo aceptes.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ 5 · FUN-DESIGN ═════════════════════════════════════ -->
+  <section class="metodo" id="metodo" aria-labelledby="metodo-titulo">
+    <div class="metodo__in">
+      <p class="antetitulo">El método FUN-DESIGN</p>
+      <h2 id="metodo-titulo" class="revela">Una herramienta para cada letra</h2>
+      <p class="metodo__intro revela">Nueve pasos, cada uno con su especialista y la herramienta de Studio que lo cubre. Te decimos con claridad qué está ya dentro y qué está en camino.</p>
+      <ul class="leyenda" aria-label="Leyenda de estados">
+        <li><span class="estado estado--si">Disponible</span> lo usas desde el primer día</li>
+        <li><span class="estado estado--parte">En parte</span> funciona, con lo que falta dicho</li>
+        <li><span class="estado estado--pronto">Próximamente</span> todavía no está</li>
+      </ul>
+
+      <ol class="letras">
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">F</span>
+          <h3 class="letra__paso"><span class="sr">F · </span>Find the Opportunity</h3>
+          <p class="letra__esp">EUFinder</p>
+          <p class="letra__her">En Studio: <b>Convocatorias</b></p>
+          <p class="letra__txt">Convocatorias europeas, estatales y regionales abiertas o a punto de abrir. Filtros, búsqueda por significado con IA, chat con cada convocatoria y proyecto creado desde ella.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">U</span>
+          <h3 class="letra__paso"><span class="sr">U · </span>Unlock &amp; Share the Project Vision</h3>
+          <p class="letra__esp">EUUnlocker</p>
+          <p class="letra__her">En Studio: <b>EU Vision</b></p>
+          <p class="letra__txt">Un asistente de cinco pasos convierte tu idea en una visión: reto, público, socios que buscas y encaje europeo, con proyectos parecidos ya financiados. Falta el tablón donde otras entidades muestran interés.</p>
+          <span class="estado estado--parte">En parte</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">N</span>
+          <h3 class="letra__paso"><span class="sr">N · </span>Nail Down the Activities</h3>
+          <p class="letra__esp">EUDesigner</p>
+          <p class="letra__her">En Studio: <b>Diseñar</b></p>
+          <p class="letra__txt">Paquetes de trabajo y actividades con los costes unitarios de Erasmus+, tarifas por país y presupuesto que se calcula mientras diseñas. Con una entrevista guiada para arrancar.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">D</span>
+          <h3 class="letra__paso"><span class="sr">D · </span>Deliver the Concept Note</h3>
+          <p class="letra__esp">EUConnector</p>
+          <p class="letra__her">Previsto: <b>nota conceptual e invitaciones</b></p>
+          <p class="letra__txt">Una nota conceptual que se genera a partir de tu diseño, para presentar el proyecto a posibles socios, y las invitaciones con su seguimiento. Aún no está en Studio.</p>
+          <span class="estado estado--pronto">Próximamente</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">E</span>
+          <h3 class="letra__paso"><span class="sr">E · </span>Engage the Consortium</h3>
+          <p class="letra__esp">EULinker</p>
+          <p class="letra__her">En Studio: <b>Entidades</b></p>
+          <p class="letra__txt">Directorio de más de 300.000 organizaciones, Atlas, y tu selección de socios con IA en lenguaje natural, que pasa al proyecto como consorcio. Los roles y el liderazgo de cada paquete los repartes tú.</p>
+          <span class="estado estado--parte">En parte</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">S</span>
+          <h3 class="letra__paso"><span class="sr">S · </span>Show the European Added Value</h3>
+          <p class="letra__esp">EUResearcher</p>
+          <p class="letra__her">En Studio: <b>Research y Mis documentos</b></p>
+          <p class="letra__txt">Búsqueda de publicaciones científicas en OpenAlex y una biblioteca con tus documentos, que la IA consulta al escribir para que el valor añadido se apoye en evidencia.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">I</span>
+          <h3 class="letra__paso"><span class="sr">I · </span>Integrate the Delivery Plan</h3>
+          <p class="letra__esp">EUAuditor</p>
+          <p class="letra__her">En Studio: <b>Escribir › Cronograma y entregables</b></p>
+          <p class="letra__txt">Tareas, Gantt, entregables e hitos propuestos con IA, un indicador por entregable, riesgos y comprobación con los criterios de la EACEA. Presupuesto exportable a la plantilla oficial.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">G</span>
+          <h3 class="letra__paso"><span class="sr">G · </span>Generate the Proposal</h3>
+          <p class="letra__esp">EUWriter</p>
+          <p class="letra__her">En Studio: <b>Escribir</b></p>
+          <p class="letra__txt">Redacción por secciones con todo lo diseñado detrás: generar, mejorar y revisar con nota estimada. Descarga del formulario en Word. También puedes importar una propuesta que ya tengas.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+        <li class="letra revela">
+          <span class="letra__l" aria-hidden="true">N</span>
+          <h3 class="letra__paso"><span class="sr">N · </span>Nurture Future Opportunities</h3>
+          <p class="letra__esp">EUEvaluator</p>
+          <p class="letra__her">En Studio: <b>Diagnóstico</b></p>
+          <p class="letra__txt">Revisa la propuesta en cuatro pasadas —también con la carta del evaluador— y te plantea cambios concretos que aceptas o descartas, con versiones para volver atrás.</p>
+          <span class="estado estado--si">Disponible</span>
+        </li>
+      </ol>
+
+      <div class="metodo__cta">
+        <a class="btn btn--lima" data-cta="registro" data-donde="metodo" href="/crear-cuenta">Crear mi cuenta gratis
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 6 · Por dentro: capturas reales ════════════════════ -->
+  <section class="dentro" aria-labelledby="dentro-titulo">
+    <div class="dentro__in">
+      <h2 id="dentro-titulo" class="revela">Lo que verás al entrar</h2>
+      <div class="dentro__fotos">
+        <figure class="dentro__foto dentro__foto--ancha revela">
+          <img src="/img/landing/eu-vision-1600.webp"
+               srcset="/img/landing/eu-vision-800.webp 800w, /img/landing/eu-vision-1600.webp 1600w"
+               sizes="(min-width: 980px) 720px, 100vw" width="1600" height="1065" loading="lazy" decoding="async"
+               alt="EU Vision: antes de diseñar eliges la convocatoria y Studio te pregunta solo lo que falta.">
+          <figcaption><b>EU Vision.</b> Tu visión se construye sobre una convocatoria concreta: de ella salen criterios, presupuesto y tipo de socio.</figcaption>
+        </figure>
+        <figure class="dentro__foto revela">
+          <img src="/img/landing/convocatoria-detalle-1200.webp"
+               srcset="/img/landing/convocatoria-detalle-640.webp 640w, /img/landing/convocatoria-detalle-1200.webp 1200w"
+               sizes="(min-width: 980px) 440px, 100vw" width="1200" height="1181" loading="lazy" decoding="async"
+               alt="Ficha de una convocatoria: tabla resumen con programa, código, presupuesto y plazo, botón de chat y botón para empezar la visión.">
+          <figcaption><b>Cada convocatoria, resumida.</b> Programa, presupuesto, plazo y un chat para preguntarle lo que no entiendas.</figcaption>
+        </figure>
+      </div>
+
+      <dl class="cifras">
+        <div class="cifra revela"><dt>+300.000</dt><dd>organizaciones europeas en el directorio de socios</dd></div>
+        <div class="cifra revela"><dt>317.559</dt><dd>proyectos Erasmus+ financiados, para inspirarte y ver quién tiene experiencia</dd></div>
+        <div class="cifra revela"><dt>60</dt><dd>lecciones en vídeo en la Academia, con test y certificado verificable</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ═══ 7 · Preguntas frecuentes ═══════════════════════════ -->
+  <section class="faq" id="preguntas" aria-labelledby="faq-titulo">
+    <div class="faq__in">
+      <h2 id="faq-titulo" class="revela">Preguntas frecuentes</h2>
+      <div class="faq__lista">
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Crear la cuenta es gratis y no te pedimos tarjeta. Con ella usas las herramientas de Studio. El uso de la IA tiene un límite por hora para que el servicio vaya bien para todo el mundo.</p>
+        </details>
+        <details>
+          <summary>¿Para quién es?</summary>
+          <p>Para quien diseña y presenta propuestas europeas: técnicos de proyectos, consultores y entidades —asociaciones, ONG, centros educativos, clubes, universidades— que quieren trabajar con método y no empezar por la página en blanco.</p>
+        </details>
+        <details>
+          <summary>¿Qué convocatorias cubre?</summary>
+          <p>El buscador reúne convocatorias europeas (Erasmus+, Horizon Europe, LIFE, Europa Creativa, CERV y más) y ayudas estatales y regionales. El recorrido completo —diseñar, presupuestar y escribir con su formulario— funciona en las que llevan la marca «Disponible en Studio». Hoy son pocas: empezamos por las que se gestionan desde Bruselas, y KA2 y Capacity Building aparecen ya como «Próximamente en Studio».</p>
+        </details>
+        <details>
+          <summary>¿La IA escribe la propuesta por mí?</summary>
+          <p>No. Te propone textos sección a sección a partir de lo que has diseñado —convocatoria, visión, actividades, socios, evidencias— y tú decides qué se queda, qué cambias y qué descartas.</p>
+        </details>
+        <details>
+          <summary>¿Quién ve mis proyectos?</summary>
+          <p>Tus proyectos son privados: no aparecen a otros usuarios. Una visión de EU Vision se hace pública únicamente si tú la publicas. Cómo tratamos tus datos está en la <a href="/privacidad">política de privacidad</a>.</p>
+        </details>
+        <details>
+          <summary>¿Qué es FUN-DESIGN?</summary>
+          <p>El método de EU Funding Studio: nueve pasos, de encontrar la convocatoria a aprender de la evaluación. Ocho ocurren antes de redactar, porque una propuesta bien diseñada se escribe casi sola y una mal diseñada no la salva la redacción.</p>
+        </details>
+        <details>
+          <summary>¿Y si ya tengo una propuesta escrita?</summary>
+          <p>Puedes importarla, pasarle el Diagnóstico y seguir trabajándola dentro de Studio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 8 · CTA final ══════════════════════════════════════ -->
+  <section class="final" aria-labelledby="final-titulo" id="final">
+    <div class="final__in">
+      <img class="final__icono" src="/img/marca/icono-lima.svg" alt="" width="64" height="64">
+      <h2 id="final-titulo" class="revela">Tu próxima convocatoria empieza <em>por diseñarla</em></h2>
+      <p class="revela">Crea tu cuenta gratis, con tu correo o con Google, y empieza por el primer paso: encontrar la convocatoria que encaja contigo.</p>
+      <div class="final__ctas revela">
+        <a class="btn btn--lima" data-cta="registro" data-donde="final" href="/crear-cuenta">Crear mi cuenta gratis
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--linea" data-cta="entrar" data-donde="final" href="/entrar">Ya tengo cuenta</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ═══ Pie ════════════════════════════════════════════════════ -->
+<footer class="pie" role="contentinfo">
+  <div class="pie__in">
+    <img src="/img/marca/logo-horizontal-azul.svg" alt="EU Funding Studio" width="206" height="22" class="pie__logo">
+    <ul class="pie__enlaces">
+      <li><a href="/privacidad">Política de privacidad</a></li>
+      <li><a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a></li>
+    </ul>
+    <p class="pie__legal">© 2026 EU Funding Studio · Responsable: Aventure LLC</p>
+  </div>
+</footer>
+
+<!-- CTA fijo en móvil (aparece al pasar el hero, se esconde en el cierre) -->
+<div class="fijo" id="cta-fijo" aria-hidden="true">
+  <a class="btn btn--lima" data-cta="registro" data-donde="fijo-movil" href="/crear-cuenta" tabindex="-1">Crear mi cuenta gratis</a>
+</div>
+
+<script src="/js/track.js" defer></script>
+<script src="/js/landing.js" defer></script>
+</body>
+</html>
