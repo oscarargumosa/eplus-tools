@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const User = require('./model');
-const { signToken, signRefreshToken, verifyRefreshToken } = require('../../middleware/auth');
+const { signToken, signRefreshToken, verifyRefreshToken, getUserAreas } = require('../../middleware/auth');
+const accessModel = require('../access/model');
 const subscribersModel = require('../subscribers/model');
 const { sendVerificationEmail, sendPasswordResetEmail, onNewUser } = require('../../utils/email');
 const { audit } = require('../../utils/audit');
@@ -21,6 +22,21 @@ function _promoteWarm(user) {
 // La cookie de refresco solo viaja a /v1/auth (refresh, session-status,
 // logout). Las antiguas iban con path '/': se borran al reemitir.
 const REFRESH_COOKIE_PATH = '/v1/auth';
+/* Áreas beta del usuario (utils/areas.js) y las recién concedidas cuyo
+   aviso «Ya tienes acceso» aún no ha visto. Si falla, sin áreas: la API
+   sigue protegiendo igual. */
+async function withAreas(user) {
+  try {
+    user.areas = await getUserAreas(user.id, user.role);
+    user.areas_new = user.role === 'admin' ? [] : await accessModel.unseenAreas(user.id);
+  } catch (e) {
+    console.warn('[AUTH] áreas no disponibles:', e.message);
+    user.areas = user.areas || [];
+    user.areas_new = [];
+  }
+  return user;
+}
+
 function cookieOpts() {
   return {
     httpOnly: true,
@@ -150,6 +166,7 @@ const AuthController = {
       setRefreshCookie(res, refreshToken);
       _promoteWarm(safeUser);
       audit(req, 'auth.login', { actor: safeUser, targetType: 'user', targetId: safeUser.id, meta: { method: 'password' } });
+      await withAreas(safeUser);
       res.json({
         ok: true,
         data: { user: safeUser, access_token: accessToken }
@@ -201,6 +218,7 @@ const AuthController = {
       const created = !!user.created;
       delete user.created;
       if (created) onNewUser(user, 'Google');
+      await withAreas(user);
       res.json({
         ok: true,
         data: { user, access_token: accessToken, created }
@@ -372,6 +390,7 @@ const AuthController = {
       // (Google-only accounts have no password yet).
       const hash = await User.getPasswordHash(req.user.id);
       user.has_password = !!(hash && hash.length);
+      await withAreas(user);
       res.json({ ok: true, data: user });
     } catch (err) {
       console.error('[AUTH] Me error:', err.message);
@@ -459,7 +478,10 @@ const AuthController = {
 
       setSessionHint(res);
       const firstName = (user.name || '').trim().split(/\s+/)[0] || null;
-      return res.json({ ok: true, data: { logged_in: true, first_name: firstName } });
+      // Áreas beta: el menú de las páginas públicas marca «Beta» lo cerrado.
+      let areas = [];
+      try { areas = await getUserAreas(user.id, user.role); } catch { /* sin áreas: todo marcado */ }
+      return res.json({ ok: true, data: { logged_in: true, first_name: firstName, areas } });
     } catch (err) {
       console.error('[AUTH] Session status error:', err.message);
       return res.json({ ok: true, data: { logged_in: false } });

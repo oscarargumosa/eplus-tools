@@ -197,7 +197,41 @@ async function onNewUser(user, via) {
   catch (e) { console.warn('[alta] aviso no enviado:', e.message); }
 }
 
+/* ── Fase beta (utils/areas.js): solicitud de acceso y acceso concedido ── */
+async function sendAccessRequestNotice({ user, areaLabel, message }) {
+  const to = process.env.NEW_USER_NOTIFY_EMAIL || 'oscarargumosa@gmail.com';
+  const msg = String(message || '').trim();
+  const html = shellTemplate({
+    title: 'Solicitud de acceso beta',
+    intro: `<b>${escHtml(user.name)}</b> &lt;${escHtml(user.email)}&gt; pide acceso a <b>${escHtml(areaLabel)}</b>.<br>
+      ${msg ? `<br>Su mensaje:<br><i>${escHtml(msg).replace(/\n/g, '<br>')}</i><br>` : '<br>(Sin mensaje.)<br>'}
+      <br>Fecha: ${new Date().toISOString().replace('T', ' ').slice(0, 16)} UTC`,
+    buttonLabel: 'Revisar en Usuarios y accesos',
+    buttonUrl: `${appUrl()}/#admin-users`,
+  });
+  return sendEmail({ to, subject: `Solicitud de acceso beta: ${areaLabel} — ${user.name || user.email}`, html,
+    text: `Solicitud de acceso beta a ${areaLabel}: ${user.name} <${user.email}>${msg ? `\n\n${msg}` : ''}\n\nRevisar: ${appUrl()}/#admin-users` });
+}
+
+async function sendAreaGrantedEmail({ to, name, areaLabel, path }) {
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const url = appUrl() + (path || '/');
+  const html = shellTemplate({
+    title: `Ya tienes acceso a ${escHtml(areaLabel)}`,
+    intro: `Hola${first ? ' ' + escHtml(first) : ''}:<br><br>
+      Te hemos abierto <b>${escHtml(areaLabel)}</b> en <b>EU Funding Studio</b>. Ya puedes usarla con tu cuenta de siempre.<br><br>
+      Gracias por probar Studio en esta fase beta: lo que nos cuentes nos ayuda a mejorarlo.`,
+    buttonLabel: `Entrar en ${escHtml(areaLabel)}`,
+    buttonUrl: url,
+    footer: 'Recibes este correo porque pediste acceso o porque el equipo de EU Funding Studio te lo ha dado. ¿Dudas? Escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+  });
+  return sendEmail({ to, subject: `Ya tienes acceso a ${areaLabel} en EU Funding Studio`, html,
+    text: `Hola${first ? ' ' + first : ''}:\n\nYa tienes acceso a ${areaLabel} en EU Funding Studio. Entra aquí: ${url}` });
+}
+
 module.exports = {
+  sendAccessRequestNotice,
+  sendAreaGrantedEmail,
   sendWelcomeEmail,
   sendNewUserNotice,
   onNewUser,
