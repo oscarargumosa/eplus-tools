@@ -347,7 +347,7 @@ const Admin = (() => {
           const dlBadge = c.deadline
             ? `<span class="text-[10px] text-on-surface-variant">DL ${c.deadline.slice(0, 10)}</span>` : '';
           const efsBadge = c.available_in_efs
-            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-bold">YA EN EFS</span>' : '';
+            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-bold">YA EN STUDIO</span>' : '';
           const grant = c.budget_per_project_max_eur
             ? `<span class="text-[10px] text-on-surface-variant">€${Number(c.budget_per_project_max_eur).toLocaleString('en')}</span>` : '';
           return `

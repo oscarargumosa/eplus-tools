@@ -110,7 +110,7 @@ const Convocatorias = (() => {
       <button type="button" data-curation="" class="conv-chip is-active">Todas</button>
       <button type="button" data-curation="unreviewed" class="conv-chip">Sin revisar</button>
       <button type="button" data-curation="reviewed"   class="conv-chip">Revisadas</button>
-      <button type="button" data-curation="in_efs"     class="conv-chip">En EFS</button>
+      <button type="button" data-curation="in_efs"     class="conv-chip">En Studio</button>
       <button type="button" data-curation="hidden"     class="conv-chip">Ocultas</button>`;
     host.insertAdjacentHTML('beforeend', html);
     host.addEventListener('click', (e) => {
@@ -571,8 +571,8 @@ const Convocatorias = (() => {
           ${notesCount ? `<span class="absolute -top-1 -right-1 min-w-[14px] h-[14px] px-[3px] rounded-full bg-amber-500 text-white text-[8px] font-bold flex items-center justify-center">${notesCount}</span>` : ''}
         </button>
         ${isInEfs
-          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-emerald-600" title="Ya importada en EFS"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
-          : `<button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-primary/10 text-primary transition-colors" data-act="import" title="Importar a EFS"><span class="material-symbols-outlined text-[16px]">download</span></button>`}
+          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-emerald-600" title="Ya importada en Studio"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
+          : `<button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-primary/10 text-primary transition-colors" data-act="import" title="Importar a Studio"><span class="material-symbols-outlined text-[16px]">download</span></button>`}
       </div>` : '';
 
     return `

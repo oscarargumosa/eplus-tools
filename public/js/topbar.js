@@ -1,56 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
    Menú superior común — comportamiento.
-   Lo usan la app (index.html) y las páginas de la web pública.
-   Estaba suelto en dos <script> dentro de index.html.
+   Lo usan la app (index.html), la academia y las páginas públicas
+   (/mision, /recursos/, /privacidad). Todos los enlaces son internos.
    ═══════════════════════════════════════════════════════════════ */
 (function () {
   'use strict';
-
-  /* Páginas que ya han salido de WordPress y viven en este repo
-     (docs/SALIDA_DE_WORDPRESS.md). Fuera de producción se usa la versión en
-     código; en producción siguen apuntando a WordPress hasta el cutover (P5). */
-  var YA_EN_CODIGO = {
-    'https://eufundingschool.com/academia/': '/mision',
-    'https://eufundingschool.com/recursos/': '/recursos/',
-    // Academia nativa de Studio (/academia); en producción sigue el Moodle.
-    'https://campus.eufundingschool.com': '/academia'
-  };
-
-  /* ── Enlaces que salen del producto ──────────────────────────
-     Recursos, Academia y Misión viven fuera de la app. En local y en dev
-     hay que evitar que pinchar en ellas te saque del entorno en el que
-     estás trabajando y te tire la sesión. */
-  (function fixExternalLinks() {
-    var host    = location.hostname;
-    var isLocal = host === 'localhost' || host === '127.0.0.1';
-    var isDev   = host.indexOf('dev.') === 0;
-    if (!isLocal && !isDev) return;   // en producción, enlaces tal cual
-
-    // Lo que ya está en código se queda dentro del entorno, sea cual sea.
-    document.querySelectorAll('.efs-topbar__menu a[href]').forEach(function (a) {
-      var destino = YA_EN_CODIGO[a.getAttribute('href')];
-      if (!destino) return;
-      a.href   = destino;
-      a.target = '_self';
-      a.removeAttribute('title');
-    });
-
-    if (isLocal) {
-      // Laragon sí tiene su propio WordPress: se reescriben al dominio local.
-      document.querySelectorAll('.efs-topbar a[href*="eufundingschool.com"]').forEach(function (a) {
-        a.href = a.href.replace('https://eufundingschool.com', 'http://eufundingschool.test');
-      });
-      return;
-    }
-
-    var brand = document.querySelector('.efs-topbar__brand');
-    if (brand) brand.href = '/';
-    document.querySelectorAll('.efs-topbar__menu a[href^="http"]').forEach(function (a) {
-      a.target = '_blank';
-      a.rel    = 'noopener';
-      a.title  = a.textContent.trim() + ' — vive fuera de dev; se abre en otra pestaña';
-    });
-  })();
 
   /* ── Menú plegable ───────────────────────────────────────────── */
   (function mobileToggle() {

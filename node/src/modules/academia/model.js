@@ -478,7 +478,8 @@ async function issueCertificate(slug, user, body) {
   if (!st.suggestedName) await db.query(`UPDATE users SET name = ? WHERE id = ? AND (name = '' OR name LIKE '%@%')`, [fullName, user.id]);
   for (let tries = 0; tries < 5; tries++) {
     const code = Array.from({ length: 10 }, () => SERIAL_ALPHABET[crypto.randomInt(SERIAL_ALPHABET.length)]).join('');
-    const serial = `EFS-${new Date().getFullYear()}-${code}`;
+    // Prefijo de marca; los emitidos antes con «EFS-» siguen siendo válidos.
+    const serial = `STUDIO-${new Date().getFullYear()}-${code}`;
     try {
       await db.query(
         'INSERT INTO academia_certificates (id, serial, user_id, course_id, full_name, hours) VALUES (?, ?, ?, ?, ?, ?)',

@@ -62,7 +62,7 @@ function decodeHtmlBody(bodyBuf, contentTypeHeader) {
   }
 }
 
-const DEFAULT_UA = 'Mozilla/5.0 (compatible; EplusToolsBot/1.0; +https://eufundingschool.com/bot)';
+const DEFAULT_UA = `Mozilla/5.0 (compatible; EUFundingStudioBot/1.0; +${(process.env.APP_URL || 'http://localhost:3000').replace(/\/$/, '')})`;
 const DEFAULT_TIMEOUT_MS = 20_000;
 const MAX_BYTES = 2 * 1024 * 1024; // 2 MB
 const MAX_REDIRECTS = 5;

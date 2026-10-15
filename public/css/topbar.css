@@ -11,8 +11,15 @@
   display: flex; align-items: center; gap: 2rem; }
 .efs-topbar__brand { display: inline-flex; align-items: center; gap: .5rem;
   color: #fff; text-decoration: none; font-weight: 800; letter-spacing: -0.01em; white-space: nowrap; }
-.efs-topbar__brand:hover { color: #fbff12; }
-.efs-topbar__logo { height: 44px; width: auto; flex: 0 0 auto; display: block; }
+.efs-topbar__brand:hover { opacity: .88; }
+.efs-topbar__brand:focus-visible { outline: 2px solid #fbff12; outline-offset: 4px; border-radius: 4px; }
+/* Logotipo de texto «EU Funding Studio»: blanco sobre el azul, «Studio» en amarillo
+   con un subrayado fino. Sustituye a la imagen del logo anterior. */
+.efs-topbar__wordmark { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 800;
+  letter-spacing: -0.02em; line-height: 1; color: #fff; }
+.efs-topbar__wordmark-accent { color: #fbff12; position: relative; }
+.efs-topbar__wordmark-accent::after { content: ''; position: absolute; left: 0; right: 0; bottom: -5px;
+  height: 2px; border-radius: 2px; background: currentColor; opacity: .55; }
 .efs-topbar__nav { flex: 1; display: flex; }
 .efs-topbar__menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; }
 .efs-topbar__menu a { color: rgba(255,255,255,0.78); text-decoration: none;
@@ -33,7 +40,7 @@
    se quedaba cortado por la derecha (Movilidades y EU Vision desaparecían). */
 @media (max-width: 1024px) {
   .efs-topbar__inner { gap: .5rem; padding: 0 .75rem; }
-  .efs-topbar__brand .efs-topbar__name { display: none; }
+  .efs-topbar__wordmark { font-size: 18px; }
   .efs-topbar__toggle { display: inline-flex; align-items: center; }
   .efs-topbar__nav { position: absolute; top: 64px; left: 0; right: 0; flex: none; display: none;
     background: #1b1464; border-bottom: 1px solid rgba(255,255,255,0.08);

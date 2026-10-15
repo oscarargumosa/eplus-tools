@@ -31,7 +31,8 @@ module.exports = async function certificatePage(req, res) {
   .cert:before{content:"";position:absolute;inset:0 0 auto 0;height:14px;background:var(--navy)}
   .cert:after{content:"";position:absolute;right:-120px;bottom:-120px;width:360px;height:360px;border-radius:50%;background:var(--lav);opacity:.35}
   .top{display:flex;justify-content:space-between;align-items:center}
-  .top img{height:46px}
+  .brand{font-size:26px;font-weight:800;letter-spacing:-.02em;color:var(--navy);line-height:1}
+  .brand span{box-shadow:inset 0 -.32em 0 var(--yellow)}
   .kicker{font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);font-weight:600}
   h1{font-size:clamp(28px,4.4vw,48px);font-weight:800;color:var(--navy);margin:.2em 0 .1em;line-height:1.1}
   .name{font-size:clamp(24px,3.6vw,40px);font-weight:700;margin:.2em 0;border-bottom:3px solid var(--yellow);display:inline-block;padding-bottom:4px}
@@ -43,7 +44,7 @@ module.exports = async function certificatePage(req, res) {
 <body>
 <div class="bar"><button onclick="window.print()">Imprimir o guardar en PDF</button></div>
 <main class="cert">
-  <div class="top"><img src="/img/logo-efs-color.png" alt="EU Funding School"><span class="kicker">Certificado de aprovechamiento</span></div>
+  <div class="top"><span class="brand">EU Funding <span>Studio</span></span><span class="kicker">Certificado de aprovechamiento</span></div>
   <div>
     <div class="kicker">Se certifica que</div>
     <div class="name">${esc(c.full_name)}</div>

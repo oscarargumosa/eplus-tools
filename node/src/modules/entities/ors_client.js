@@ -12,7 +12,7 @@ const HEADERS = {
   'X-Lang-Param': 'en',
   'Origin': 'https://webgate.ec.europa.eu',
   'Referer': 'https://webgate.ec.europa.eu/erasmus-esc/index/organisations/search-for-an-organisation',
-  'User-Agent': 'Mozilla/5.0 (compatible; EufundingSchoolBot/1.0; +https://intake.eufundingschool.com)',
+  'User-Agent': `Mozilla/5.0 (compatible; EUFundingStudioBot/1.0; +${(process.env.APP_URL || 'http://localhost:3000').replace(/\/$/, '')})`,
 };
 
 const RESULT_CAP = 200;
