@@ -4,6 +4,7 @@ const { signToken, signRefreshToken, verifyRefreshToken } = require('../../middl
 const subscribersModel = require('../subscribers/model');
 const { sendVerificationEmail, sendPasswordResetEmail, onNewUser } = require('../../utils/email');
 const { audit } = require('../../utils/audit');
+const { setSessionHint, clearSessionHint } = require('../../middleware/guestGate');
 
 const SALT_ROUNDS = 12;
 
@@ -30,15 +31,19 @@ function cookieOpts() {
   };
 }
 
+// Junto a la de refresco va la cookie-pista `studio_sesion` (Path=/), con la
+// que el servidor decide si «/» es la landing o la app (middleware/guestGate).
 function setRefreshCookie(res, token) {
   res.clearCookie('refresh_token', { path: '/' });
   res.cookie('refresh_token', token, cookieOpts());
+  setSessionHint(res);
 }
 
 function clearRefreshCookie(res) {
   const base = { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax' };
   res.clearCookie('refresh_token', { ...base, path: REFRESH_COOKIE_PATH });
   res.clearCookie('refresh_token', { ...base, path: '/' });
+  clearSessionHint(res);
 }
 
 // Hash ficticio (coste 12): el login tarda lo mismo exista o no el email.
@@ -312,6 +317,7 @@ const AuthController = {
     try {
       const token = req.cookies?.refresh_token;
       if (!token) {
+        clearSessionHint(res);
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'No refresh token' }
         });
@@ -321,6 +327,7 @@ const AuthController = {
       try {
         payload = verifyRefreshToken(token);
       } catch {
+        clearRefreshCookie(res);
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid refresh token' }
         });
@@ -328,6 +335,7 @@ const AuthController = {
 
       const user = await User.findById(payload.sub);
       if (!user) {
+        clearRefreshCookie(res);
         return res.status(401).json({
           ok: false, error: { code: 'UNAUTHORIZED', message: 'User not found' }
         });
@@ -343,6 +351,7 @@ const AuthController = {
       }
 
       const accessToken = signToken({ ...user, token_version: tv });
+      setSessionHint(res);
       res.json({ ok: true, data: { access_token: accessToken } });
     } catch (err) {
       console.error('[AUTH] Refresh error:', err.message);
@@ -434,19 +443,21 @@ const AuthController = {
    * "Mi cuenta · Name" in the menu. Never throws auth errors — always 200 with data. */
   async sessionStatus(req, res) {
     try {
+      // También deja la cookie-pista coherente: la landing la consulta para
+      // saltar a la app si quien llega ya tiene sesión (p. ej. de antes del cierre).
+      const out = () => { clearSessionHint(res); return res.json({ ok: true, data: { logged_in: false } }); };
       const token = req.cookies?.refresh_token;
-      if (!token) return res.json({ ok: true, data: { logged_in: false } });
+      if (!token) return out();
 
       let payload;
       try { payload = verifyRefreshToken(token); }
-      catch { return res.json({ ok: true, data: { logged_in: false } }); }
+      catch { return out(); }
 
       const user = await User.findById(payload.sub);
-      if (!user) return res.json({ ok: true, data: { logged_in: false } });
-      if ((payload.tv || 0) !== await User.getTokenVersion(user.id)) {
-        return res.json({ ok: true, data: { logged_in: false } });
-      }
+      if (!user) return out();
+      if ((payload.tv || 0) !== await User.getTokenVersion(user.id)) return out();
 
+      setSessionHint(res);
       const firstName = (user.name || '').trim().split(/\s+/)[0] || null;
       return res.json({ ok: true, data: { logged_in: true, first_name: firstName } });
     } catch (err) {

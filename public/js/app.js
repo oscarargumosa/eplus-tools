@@ -7,6 +7,29 @@ const App = (() => {
   let currentRoute = 'my-projects';
   let activeProject = null;
 
+  /* ── Acceso cerrado a invitados (oct-2026) ─────────────────────
+     Sin sesión no hay app: el servidor sirve la landing en «/» y la SPA
+     solo enseña las pantallas de acceso (middleware/guestGate.js). */
+  const AUTH_PATHS = { '/entrar': 'login', '/crear-cuenta': 'register', '/recuperar': 'forgot' };
+  const TAB_PATHS  = { login: '/entrar', register: '/crear-cuenta', forgot: '/recuperar' };
+
+  // ?volver=<ruta interna> — adónde quería ir antes de entrar.
+  function safeVolver() {
+    const v = new URLSearchParams(location.search).get('volver');
+    if (!v || !v.startsWith('/') || v.startsWith('//') || v.startsWith('/\\')) return null;
+    return v;
+  }
+
+  // Cookie-pista con la que el servidor elige landing o app en «/».
+  function clearSessionHint() {
+    document.cookie = 'studio_sesion=; Max-Age=0; Path=/; SameSite=Lax';
+  }
+
+  function setGuestChrome(isGuest) {
+    document.body.classList.toggle('sin-sesion', isGuest);
+    document.querySelector('.efs-topbar')?.classList.toggle('efs-topbar--invitado', isGuest);
+  }
+
   /* ── Botón de Google. El SDK carga async: si aún no está, se espera hasta 5 s. */
   async function initGoogle(clientId) {
     for (let i = 0; i < 25 && !window.google?.accounts?.id; i++) await new Promise(r => setTimeout(r, 200));
@@ -73,25 +96,31 @@ const App = (() => {
     // Try to restore session from refresh token cookie
     const restored = await Auth.tryRestore();
     if (!restored) {
-      // Sin sesión → modo anónimo (teaser público), no pantalla de login.
-      // El visitante explora las superficies públicas; el muro salta al
-      // intentar abrir un detalle o navegar a una sección privada.
-      showPublic();
+      // Sin sesión no hay app. En /entrar, /crear-cuenta o /recuperar se
+      // enseña esa pestaña; si llegó a «/» con la pista caducada, a entrar
+      // recordando la sección que pedía (el hash) para volver tras el login.
+      clearSessionHint();
+      const tab = AUTH_PATHS[path.replace(/\/+$/, '')];
+      if (!tab) {
+        const dest = location.hash && location.hash.length > 1 ? '/' + location.hash : null;
+        history.replaceState(null, '', '/entrar' + (dest ? '?volver=' + encodeURIComponent(dest) : ''));
+      }
+      openAuth(tab || 'login');
     }
 
     // Listen for forced logout (e.g., expired refresh token)
-    window.addEventListener('auth:logout', () => onLogout());
+    window.addEventListener('auth:logout', () => onLogout({ expired: true }));
 
-    // Handle browser back/forward (también en modo anónimo; navigate()
-    // ya filtra las rutas privadas con el muro de login).
+    // Handle browser back/forward (solo con sesión).
     window.addEventListener('hashchange', () => {
-      const hash = location.hash.slice(1) || (currentUser ? 'my-projects' : 'convocatorias');
-      navigate(hash, false);
+      if (!currentUser) return;
+      navigate(location.hash.slice(1) || 'my-projects', false);
     });
   }
 
   /* ── Show auth screen ──────────────────────────────────────── */
   function showAuth() {
+    setGuestChrome(true);
     document.getElementById('auth-screen').classList.remove('hidden');
     document.getElementById('app-shell').classList.add('hidden');
     // Topbar CTA: "Iniciar sesión" mientras no hay sesión
@@ -113,6 +142,7 @@ const App = (() => {
 
   /* ── Show app shell ────────────────────────────────────────── */
   function showApp() {
+    setGuestChrome(false);
     document.getElementById('auth-screen').classList.add('hidden');
     document.getElementById('app-shell').classList.remove('hidden');
     // Topbar CTA: "Mi cuenta · Nombre" cuando hay sesión
@@ -127,58 +157,36 @@ const App = (() => {
     navigate(hash, false);
   }
 
-  /* ── Show app shell in anonymous/public mode ───────────────────
-     El visitante sin sesión ve el app-shell y puede explorar las
-     superficies públicas (teaser). El sidebar se ve completo; al
-     pinchar una sección privada o abrir un detalle salta el muro.  */
-  // Asegura que el shell público esté visible (oculta la pantalla de
-  // auth si venía de ahí). Idempotente: se puede llamar en cada
-  // navegación de invitado sin coste.
-  function ensurePublicShell() {
-    document.getElementById('auth-screen').classList.add('hidden');
-    document.getElementById('app-shell').classList.remove('hidden');
-    const back = document.getElementById('topbar-cta-back');
-    const acct = document.getElementById('topbar-cta-account');
-    if (back) back.style.display = '';      // "Iniciar sesión" disponible
-    if (acct) acct.style.display = 'none';
-    renderGuestUser();
-  }
-
-  function showPublic() {
-    ensurePublicShell();
-    const hash = location.hash.slice(1);
-    navigate(PUBLIC_ROUTES.includes(hash) ? hash : 'convocatorias', false);
-  }
-
-  function renderGuestUser() {
-    const nameEl   = document.getElementById('user-name');
-    const emailEl  = document.getElementById('user-email');
-    const avatar   = document.getElementById('user-avatar');
-    const logoutBtn= document.getElementById('btn-logout');
-    if (nameEl)  nameEl.textContent  = 'Invitado';
-    if (emailEl) emailEl.textContent = 'Inicia sesión';
-    if (avatar)  avatar.textContent  = '?';
-    if (logoutBtn) {
-      logoutBtn.title = 'Iniciar sesión';
-      const ic = logoutBtn.querySelector('.material-symbols-outlined');
-      if (ic) ic.textContent = 'login';
-    }
-  }
-
   /* ── Auth callbacks ────────────────────────────────────────── */
   function onAuth(user) {
     currentUser = user;
+    // Venía de una pantalla de acceso o con ?volver=: vuelta adonde quería ir.
+    const volver = safeVolver();
+    if (volver && volver !== '/' && !volver.startsWith('/#')) {
+      location.replace(volver);              // otra página (academia, recursos…)
+      return;
+    }
+    if (AUTH_PATHS[location.pathname.replace(/\/+$/, '')] || volver) {
+      const hash = volver ? volver.slice(1) : location.hash;
+      history.replaceState(null, '', '/' + (hash || ''));
+    }
     showApp();
     Toast.show(`Welcome, ${user.name}!`, 'ok');
     // If user came in via ?sandbox=start, fire the sandbox flow now.
     if (typeof Sandbox !== 'undefined') Sandbox.resume();
   }
 
-  function onLogout() {
+  function onLogout({ expired = false } = {}) {
     currentUser = null;
-    // Tras cerrar sesión (o expirar el token) caemos al modo público,
-    // no a la pantalla de login: el visitante puede seguir explorando.
-    showPublic();
+    clearSessionHint();
+    // Cerrar sesión lleva a la portada (landing). Si la sesión caducó a
+    // mitad de trabajo, a entrar, para volver a la misma sección.
+    if (expired) {
+      const dest = '/' + (location.hash || '');
+      location.replace('/entrar?volver=' + encodeURIComponent(dest));
+    } else {
+      location.replace('/');
+    }
   }
 
   /* ── Update user info in sidebar ───────────────────────────── */
@@ -227,6 +235,10 @@ const App = (() => {
       if (!el) return;
       el.classList.toggle('hidden', k !== tab);
     });
+    // Sin sesión, la URL refleja la pestaña (/entrar, /crear-cuenta, /recuperar).
+    if (!currentUser && TAB_PATHS[tab] && AUTH_PATHS[location.pathname.replace(/\/+$/, '')]) {
+      history.replaceState(null, '', TAB_PATHS[tab] + location.search);
+    }
 
     // Tabs (only meaningful for login/register)
     const tabLogin = document.getElementById('tab-login');
@@ -275,16 +287,12 @@ const App = (() => {
     showAuthTab('info');
   }
 
-  /* ── Login wall (lead-gen gate) ────────────────────────────────
-     Teaser público: las cards se ven sin sesión, pero abrir el
-     detalle/ficha exige cuenta. requireLogin() devuelve true si hay
-     sesión; si no, muestra el popup y devuelve false para que el
-     llamante aborte la apertura.                                    */
-  function requireLogin(opts = {}) {
+  /* ── Guardia de sesión ──────────────────────────────────────────
+     Con el acceso cerrado no debería saltar nunca; si la sesión se ha
+     perdido, abre la pantalla de entrar y devuelve false.            */
+  function requireLogin() {
     if (currentUser || (typeof API !== 'undefined' && API.getToken())) return true;
-    // Señal de interés purísima: quería abrir algo y le frenó el muro.
-    if (typeof Track !== 'undefined') Track.event('gate_hit', { route: currentRoute, what: opts.what });
-    showLoginWall(opts);
+    openAuth('login');
     return false;
   }
 
@@ -308,82 +316,6 @@ const App = (() => {
     setTimeout(() => box.remove(), 15000);
   }
 
-  function showLoginWall({ what } = {}) {
-    const existing = document.getElementById('login-wall-modal');
-    if (existing) existing.remove();
-    const whatTxt = what || 'este contenido';
-    const modal = document.createElement('div');
-    modal.id = 'login-wall-modal';
-    modal.className = 'fixed inset-0 z-[60] bg-ink/50 backdrop-blur-sm flex items-center justify-center p-6';
-    modal.innerHTML = `
-      <div class="bg-white rounded-3xl shadow-xl max-w-md w-full p-8 text-center relative">
-        <button id="login-wall-close" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors">
-          <span class="material-symbols-outlined">close</span>
-        </button>
-        <div class="w-14 h-14 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-4">
-          <span class="material-symbols-outlined text-[#d6e949] text-3xl">lock_open</span>
-        </div>
-        <h3 class="font-headline text-xl font-bold text-primary mb-2">Crea tu cuenta gratis</h3>
-        <p class="text-sm text-on-surface-variant mb-6">Regístrate para ver ${whatTxt}. Es gratis y tardas menos de un minuto.</p>
-        <div class="space-y-2">
-          <button id="login-wall-register" class="w-full py-3 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors">Crear cuenta gratis</button>
-          <button id="login-wall-login" class="w-full py-3 rounded-full border border-primary bg-transparent text-primary text-sm font-semibold hover:bg-primary/5 transition-colors">Ya tengo cuenta</button>
-        </div>
-      </div>`;
-    document.body.appendChild(modal);
-    const close = () => modal.remove();
-    modal.querySelector('#login-wall-close').addEventListener('click', close);
-    modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
-    modal.querySelector('#login-wall-register').addEventListener('click', () => { close(); openAuth('register'); });
-    modal.querySelector('#login-wall-login').addEventListener('click', () => { close(); openAuth('login'); });
-    document.addEventListener('keydown', function esc(e) {
-      if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); }
-    });
-  }
-
-  /* ── Embudo de venta para invitados ────────────────────────────
-     Las secciones de cuenta (sin contenido para quien no ha entrado)
-     muestran un mensaje de marketing + CTAs en vez de su contenido
-     real. Copy por sección; cae a 'default' si no hay específico.    */
-  const FUNNEL_COPY = {
-    'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding Studio', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
-    'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
-    'eu-vision':       { icon: 'explore', title: 'Da forma a tu idea de proyecto europeo', body: 'Convierte una idea vaga en una visión concreta en 10 minutos: el reto, a quién buscas y por qué importa a Europa. Crea tu cuenta gratis para empezar.' },
-    'my-evaluations':  { icon: 'fact_check', title: 'Evalúa como un experto EACEA', body: 'Diagnostica tu propuesta contra los criterios reales de evaluación antes de presentarla. Necesitas una cuenta para guardar tus evaluaciones.' },
-    'import-proposal': { icon: 'upload_file', title: 'Importa una propuesta y mejórala', body: 'Sube un borrador y la IA lo analiza, puntúa y propone mejoras concretas. Crea tu cuenta para subir tu primer documento.' },
-    'shortlists':      { icon: 'favorite', title: 'Tu pool de socios para el consorcio', body: 'Guarda y organiza entidades para tus futuras alianzas. Crea tu cuenta para empezar a construir tu pool de partners.' },
-    'my-documents':    { icon: 'folder_open', title: 'Tu biblioteca de documentos', body: 'Centraliza convocatorias, plantillas y materiales, vectorizados para tu IA. Necesitas una cuenta para guardarlos.' },
-    'research':        { icon: 'science', title: 'Encuentra evidencia para tu propuesta', body: 'Busca papers y datos que respalden tu proyecto Erasmus+. Crea tu cuenta para usar el buscador de investigación.' },
-    default:           { icon: 'lock_open', title: 'Crea tu cuenta para acceder', body: 'Esta sección forma parte de tu espacio de trabajo. Regístrate gratis para empezar a usarla.' },
-  };
-
-  function renderGuestFunnel(route) {
-    const c = FUNNEL_COPY[route]
-      || (route.startsWith('account') ? FUNNEL_COPY.account : null)
-      || FUNNEL_COPY.default;
-    const host = document.getElementById('guest-funnel-content');
-    if (!host) return;
-    host.innerHTML = `
-      <div class="max-w-xl mx-auto text-center py-20 px-6">
-        <div class="w-16 h-16 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-6">
-          <span class="material-symbols-outlined text-[#d6e949] text-4xl">${c.icon}</span>
-        </div>
-        <h2 class="font-headline text-2xl font-bold text-primary mb-3">${c.title}</h2>
-        <p class="text-on-surface-variant mb-8">${c.body}</p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <button type="button" id="funnel-register" class="px-6 py-3 rounded-full bg-secondary-fixed text-primary font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors">Crear cuenta gratis</button>
-          <button type="button" id="funnel-login" class="px-6 py-3 rounded-full border border-primary bg-transparent text-primary font-semibold hover:bg-primary/5 transition-colors">Ya tengo cuenta</button>
-        </div>
-        <button type="button" id="funnel-book" class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
-          <span class="material-symbols-outlined text-[18px]">event</span> Reservar una reunión con el equipo
-        </button>
-      </div>`;
-    host.querySelector('#funnel-register')?.addEventListener('click', () => openAuth('register'));
-    host.querySelector('#funnel-login')?.addEventListener('click', () => openAuth('login'));
-    // Placeholder hasta tener URL de reserva (Calendly/GHL): de momento capta el lead vía registro.
-    host.querySelector('#funnel-book')?.addEventListener('click', () => openAuth('register'));
-  }
-
   /* ── Workspaces (Proyectos vs Entidades) ───────────────────────
      El sidebar conmuta según la pestaña superior activa. Las rutas
      de entidades muestran su propio submenú lateral y el resto del
@@ -397,12 +329,6 @@ const App = (() => {
 
   // Workspace "EU Vision": el sidebar pasa a ser el menú de visiones.
   const VISION_ROUTES = ['eu-vision'];
-
-  // Superficies de CONTENIDO que un invitado puede navegar y explorar
-  // libremente (ve las tarjetas). El muro de login salta solo al ABRIR
-  // una tarjeta concreta (detalle de convocatoria, ficha de entidad,
-  // detalle de movilidad), no al navegar entre secciones.
-  const PUBLIC_ROUTES = ['convocatorias', 'organizations', 'atlas-stats', 'movilidades'];
 
   // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
   const ADMIN_ROUTES = ['analysis'];
@@ -436,24 +362,14 @@ const App = (() => {
   function navigate(route, pushHash = true, newProject = false) {
     // Guardia admin: rutas privadas (analytics interno) solo para admin/scribe.
     // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
+    // Sin sesión no se navega por la app: a entrar.
+    if (!currentUser) { openAuth('login'); return; }
     if (ADMIN_ROUTES.includes(route) && !isAdmin()) {
-      route = currentUser ? 'my-projects' : 'convocatorias';
+      route = 'my-projects';
       if (pushHash) location.hash = route;
     }
-    // Invitado: navega libremente por todas las secciones. Las de
-    // contenido (PUBLIC_ROUTES) muestran sus tarjetas; las de cuenta
-    // muestran un embudo de venta (CTAs) en vez de su contenido real.
-    let guestFunnel = false;
-    if (!currentUser) {
-      // La pestaña "Entidades" aterriza en Mi Organización (privada);
-      // para un invitado mostramos el Directorio (contenido real).
-      if (route === 'my-org') route = 'organizations';
-      guestFunnel = !PUBLIC_ROUTES.includes(route);
-      // Veníamos quizá de la pantalla de login → reactivar el shell público.
-      ensurePublicShell();
-    }
     // Legacy: #create no longer has its own panel — open the modal over Mis Proyectos
-    if (route === 'create' && !guestFunnel) {
+    if (route === 'create') {
       if (currentRoute !== 'my-projects') {
         currentRoute = 'my-projects';
         if (pushHash) location.hash = 'my-projects';
@@ -487,21 +403,15 @@ const App = (() => {
 
     // Update panels
     document.querySelectorAll('#content-area .panel').forEach(p => p.classList.remove('active'));
-    if (guestFunnel) {
-      // Invitado en sección de cuenta → panel embudo (CTAs de venta).
-      document.getElementById('panel-guest-funnel')?.classList.add('active');
-      renderGuestFunnel(route);
+    // Las rutas de cuenta comparten el panel #panel-account.
+    const panelRoute = ACCOUNT_ROUTES.includes(route) ? 'account' : route;
+    const panel = document.getElementById(`panel-${panelRoute}`);
+    if (panel) {
+      panel.classList.add('active');
     } else {
-      // Las rutas de cuenta comparten el panel #panel-account.
-      const panelRoute = ACCOUNT_ROUTES.includes(route) ? 'account' : route;
-      const panel = document.getElementById(`panel-${panelRoute}`);
-      if (panel) {
-        panel.classList.add('active');
-      } else {
-        // Default to dashboard if panel doesn't exist
-        const dash = document.getElementById('panel-dashboard');
-        if (dash) dash.classList.add('active');
-      }
+      // Default to dashboard if panel doesn't exist
+      const dash = document.getElementById('panel-dashboard');
+      if (dash) dash.classList.add('active');
     }
 
     // Update sidebar active link
@@ -554,9 +464,8 @@ const App = (() => {
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
 
-    // Initialize module when navigating to it (solo con sesión; el
-    // invitado ve el embudo y no dispara cargas de datos privadas).
-    if (!guestFunnel) {
+    // Initialize module when navigating to it
+    {
       if (ACCOUNT_ROUTES.includes(route) && typeof Account !== 'undefined') Account.init(route);
       if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
       if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
@@ -622,7 +531,7 @@ const App = (() => {
   }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showWelcome, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showWelcome, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
 })();
 
 
@@ -653,9 +562,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Auth tab buttons ─────────────────────────────────────── */
   document.getElementById('tab-login')?.addEventListener('click', () => App.showAuthTab('login'));
   document.getElementById('tab-register')?.addEventListener('click', () => App.showAuthTab('register'));
-
-  /* ── Volver al modo exploración desde la pantalla de auth ─── */
-  document.getElementById('auth-back-explore')?.addEventListener('click', () => App.showPublic());
 
   /* ── CTA "Iniciar sesión" del top bar (visitante sin sesión) ─ */
   document.getElementById('topbar-cta-back')?.addEventListener('click', (e) => {

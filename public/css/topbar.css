@@ -63,3 +63,8 @@
 /* Las páginas de la web pública no son la SPA: el menú es fijo y hay que
    dejarle sitio. La app ya lo compensa por su cuenta. */
 .efs-has-topbar { padding-top: 64px; }
+
+/* Sin sesión (pantallas de acceso, /privacidad): el menú de la app no lleva a
+   ningún sitio para un invitado, así que solo quedan la marca y «Iniciar sesión». */
+.efs-topbar--invitado .efs-topbar__nav,
+.efs-topbar--invitado .efs-topbar__toggle { display: none !important; }

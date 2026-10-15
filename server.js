@@ -144,6 +144,10 @@ app.use((req, res, next) => {
   next();
 });
 
+/* ── Puerta de invitados: sin sesión, solo landing, acceso y privacidad.
+   Va antes de express.static para que «/» no sirva index.html a cualquiera. */
+app.use(require('./node/src/middleware/guestGate').guestGate);
+
 /* ── Logos de marca: los correos web los cargan desde otro origen ── */
 app.use('/img/marca', (req, res, next) => {
   res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');

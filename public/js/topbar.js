@@ -41,7 +41,10 @@
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (res) {
         var data = res && res.data;
-        if (!data || !data.logged_in) return;    // sin sesión: se queda «Iniciar sesión»
+        if (!data || !data.logged_in) {          // sin sesión: se queda «Iniciar sesión»
+          bar.classList.add('efs-topbar--invitado');
+          return;
+        }
         if (name) name.textContent = data.first_name || 'Mi cuenta';
         back.style.display    = 'none';
         account.style.display = '';

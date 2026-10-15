@@ -89,7 +89,7 @@ tailwind.config = {
       </ul>
     </nav>
     <div class="efs-topbar__cta">
-      <a id="topbar-cta-back" class="efs-topbar__login" href="#login">
+      <a id="topbar-cta-back" class="efs-topbar__login" href="/entrar">
         Iniciar sesión
       </a>
       <a id="topbar-cta-account" class="efs-topbar__login" href="#account-profile" style="display:none;">
@@ -115,12 +115,12 @@ tailwind.config = {
   <div class="min-h-screen pt-16 flex items-center justify-center px-4">
     <div class="w-full max-w-md">
 
-      <!-- Volver al modo exploración (visitantes anónimos) -->
-      <button type="button" id="auth-back-explore"
+      <!-- Volver a la portada (la landing; sin cuenta no se explora la app) -->
+      <a href="/" id="auth-back-home"
         class="mb-6 inline-flex items-center gap-1.5 text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-        Seguir explorando sin cuenta
-      </button>
+        <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_back</span>
+        Volver a la portada
+      </a>
 
       <!-- Logo -->
       <!-- Logo: el «device» de marca (icono azul sobre círculo lima, como en el manual) + nombre -->
@@ -1614,11 +1614,6 @@ tailwind.config = {
           </div>
 
         </div>
-      </section>
-
-      <!-- ══ PANEL EMBUDO INVITADO (secciones de cuenta sin sesión) ══ -->
-      <section id="panel-guest-funnel" class="panel">
-        <div id="guest-funnel-content"></div>
       </section>
 
       <!-- ══ PANEL ENGAGEMENT (TASK-009, admin-only) — analítica conductual ══ -->

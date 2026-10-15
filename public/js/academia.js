@@ -134,6 +134,11 @@
       else if (parts.length === 1) await viewCourse(parts[0]);
       else await viewLesson(parts[0], parts[1]);
     } catch (e) {
+      if (e?.code === 'UNAUTHORIZED' && !user) {
+        // Sin sesión la academia no se ve (acceso cerrado a invitados): a entrar y volver aquí.
+        location.replace('/entrar?volver=' + encodeURIComponent(location.pathname));
+        return;
+      }
       if (e?.code === 'UNAUTHORIZED' || e?.code === 'NOT_ENROLLED') {
         root.innerHTML = `<div class="ac-wrap">${loginBox(e.code === 'NOT_ENROLLED' ? 'No estás matriculado en este curso.' : null)}</div>`;
         wireLogin();
