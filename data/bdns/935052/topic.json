@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "935052",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / GALICIA / AGENCIA GALLEGA PARA LA GESTIÓN DEL CONOCIMIENTO EN SALUD",
+  "nuts_codes": [
+    "ES11"
+  ],
+  "nuts_primary": "ES11",
+  "title": "Resolución de 05 de octubre de 2026 de la Agencia Gallega para la Gestión del Conocimiento en Salud por la que se aprueban y publican las bases reguladoras de los Premios de Investigación en Salud (PISGa) para 2026",
+  "title_lang": "es",
+  "summary": "Sanidad",
+  "status": "open",
+  "publication_date": "2026-10-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 13000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "72",
+      "descripcion": "Investigación y desarrollo"
+    },
+    {
+      "codigo": "80",
+      "descripcion": "Servicios de investigación y seguridad"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935052",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "No tiene",
+  "text_inicio": "Marcado pola publicación DOG",
+  "text_fin": "Marcado pola publicación DOG",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-15T04:08:20.583Z"
+}

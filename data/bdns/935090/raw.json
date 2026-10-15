@@ -1,0 +1,80 @@
+{
+  "id": 1136651,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANTA MARGARIDA DE MONTBUI",
+    "nivel3": "AYUNTAMIENTO DE SANTA MARGARIDA DE MONTBUI"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935090",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8039.71,
+  "mrr": false,
+  "descripcion": "AYUDAS REALIZACION ACTIVIDADES DEPORTIVAS PARA PREVENIR EL RIESGO DE EXCLUSION DE INFANTES I ADOLESCENTES 2026",
+  "descripcionLeng": "AJUTS REALITZACIÓ ACTIVITATS ESPORTIVES PER PREVENIR EL RISC D`EXCLUSIÓ D`INFANTS I ADOLESCENTS 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES AJUTS ACTIVITATS ESPORTIVES 2021",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3129461/bases-reguladores-dels-ajuts-per-a-la-realitzacio-d-activitats-esportives-per-prevenir-el-risc-d-exclusio-d-infants-i-adolescents-2020-ajuntament-de-santa-margarida-de-montbui",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DES DE L`ENDEMA DE LA SEVA PUBLICACIO AL BOPB",
+  "textFin": "20 DIES NATURALS DES DE L`ENDEMÀ DE LA SEVA PUBLICACIO AL BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536264,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto_de_la_convocatoria_BDNS_castellano.pdf",
+      "long": 213194,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536266,
+      "descripcion": "Certificat JGL",
+      "nombreFic": "Certificat_dacord.pdf",
+      "long": 592469,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536265,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Extracte_de_la_convocatoria_BDNS_català.pdf",
+      "long": 216296,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

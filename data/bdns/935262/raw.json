@@ -1,0 +1,64 @@
+{
+  "id": 1136823,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA-LA MANCHA",
+    "nivel3": "VICECONSEJERÍA DE PROMOCIÓN DE LA AUTONOMÍA Y ATENCIÓN A LA DEPENDENCIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935262",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 9833080,
+  "mrr": false,
+  "descripcion": "Resolución de 14/10/2026: convocatoria ayudas Autonomía personal SEPAP 2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Orden 189/2022 de 27 de septiembre, de bases reguladoras",
+  "urlBasesReguladoras": "https://docm.jccm.es/docm/detalleDocumento.do?idDisposicion=1664267035582800049",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de su publicación en el DOCM",
+  "textFin": "20 días a partir del día siguiente al de su publicación en el DOCM",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536724,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCIÓN CONVOCATORIA SEPAP 2027_133512.PDF",
+      "long": 332308,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

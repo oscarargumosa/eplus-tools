@@ -1,0 +1,72 @@
+{
+  "id": 1136827,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "COVELO",
+    "nivel3": "AYUNTAMIENTO DE COVELO"
+  },
+  "sedeElectronica": "https://covelo.sedelectronica.es/info.0",
+  "codigoBDNS": "935266",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "Bases y convocatoria para la concesión de ayudas municipales en concurrencia competitiva destinadas al apoyo a la natalidad en el ayuntamiento de Covelo",
+  "descripcionLeng": "Bases e convocatoria para a concesión de axudas municipais en concorrencia competitiva destinadas ao apoio á natalidade no concello de Covelo",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES114 - Pontevedra"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases y convocatoria para la concesión de ayudas municipales en concurrencia competitiva destinadas al apoyo a la natalidad en el ayuntamiento de Covelo",
+  "urlBasesReguladoras": "https://covelo.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación oficial del extracto de la convocatoria en el BOPPO",
+  "textFin": "Quince días hábiles contados desde el siguiente a la publicación del extracto de la conv. en BOPPO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536732,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases_natalidade_galego.pdf",
+      "long": 2701683,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536733,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases_natalidade_castelan.pdf",
+      "long": 2785618,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

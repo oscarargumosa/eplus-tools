@@ -1,0 +1,123 @@
+{
+  "id": 1136745,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE LEÓN",
+    "nivel3": "INSTITUTO LEONES DE CULTURA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935184",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Acuerdo de 25/09/2026 del C.R. del ILC, por el que se convocan subvenciones para Carnavales Tradicionales 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "ORD. GNRAL. DE SUBVENCIONES. CONCURRENCIA COMPETITIVA 2022",
+  "urlBasesReguladoras": "https://transparencia.dipuleon.es/export/sites/transparencia/.galleries/Normativa/Ordenanzas-y-Reglamentos/Subvenciones/Ordenanza-General-de-Subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DÍA SIGUIENTE A LA PUBLICACIÓN DEL EXTRACTO EN EL BOP",
+  "textFin": "20 DÍAS HÁBILES A PARTIR DEL SIGUIENTE A LA PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536479,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado_punto_3.1_CR_25-09-2026_Bases_Carnaval_Tradicional_26_-_SEFYCU_7256560.pdf",
+      "long": 594002,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536480,
+      "descripcion": "SOLICITUD",
+      "nombreFic": "SOLICITUD.pdf",
+      "long": 313581,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536481,
+      "descripcion": "ANEXO I",
+      "nombreFic": "ANEXO_I.pdf",
+      "long": 185777,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536486,
+      "descripcion": "ANEXO V",
+      "nombreFic": "ANEXO_V.pdf",
+      "long": 189025,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536483,
+      "descripcion": "ANEXO IIBIS",
+      "nombreFic": "ANEXO_IIBIS.pdf",
+      "long": 296341,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536484,
+      "descripcion": "ANEXO III",
+      "nombreFic": "ANEXO_III.pdf",
+      "long": 297514,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536485,
+      "descripcion": "ANEXO IIIBIS",
+      "nombreFic": "ANEXO_IIIBIS.pdf",
+      "long": 300469,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536482,
+      "descripcion": "ANEXO II",
+      "nombreFic": "ANEXO_II.pdf",
+      "long": 292306,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

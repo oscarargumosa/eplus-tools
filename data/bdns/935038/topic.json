@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "935038",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / COLLBATÓ / AYUNTAMIENTO DE COLLBATÓ",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "CONVOCATORIA BECAS ESPORTBATÓ 2026 - ACTIVIDADES DEPORTIVAS 2025-2026",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-10-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93.1",
+      "descripcion": "Actividades deportivas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935038",
+  "documents": [
+    {
+      "label": "EXTRACTE CATALÀ BEQUES ESPORTBATÓ 2025-2026",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "CERTIFICAT JGL CONVOCATORIA ESPORTBATO 2025-2026",
+      "url": null
+    },
+    {
+      "label": "EXTRACTO CASTELLANO BECAS ESPORTBATO 2025-2026",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3891165/aprovacio-definitiva-de-les-bases-reguladores-per-a-la-concessio-de-subvencions-en-regim-de-concurrencia-competitiva-de-beques-esportives-esportbato-per-als-exercicis-2026-i-2027-ajuntament-de-collbato",
+  "text_inicio": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "text_fin": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-15T04:08:20.578Z"
+}

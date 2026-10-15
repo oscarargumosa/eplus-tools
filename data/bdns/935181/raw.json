@@ -1,0 +1,76 @@
+{
+  "id": 1136742,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CATALUÑA",
+    "nivel3": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935181",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000000,
+  "mrr": false,
+  "descripcion": "Resolución EMT/  /   , de   de   , por la que se abre la convocatoria de subvenciones para el año 2026 en relación con las actuaciones del programa ALMA de Cataluña (SOC-ALMA)",
+  "descripcionLeng": "Resolució EMT/    /2026, de    d      , per la qual s'obre la convocatòria de subvencions per a l'any 2026 en relació amb les actuacions del programa ALMA de Catalunya (SOC  ALMA)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades relacionadas con el empleo",
+      "codigo": "78"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "ORDEN EMT/84/2024, de 23 de abril, por la que se aprueban las bases reguladoras para la concesión de subvenciones por el programa ALMA de Cataluña (SOC-ALMA).",
+  "urlBasesReguladoras": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9151/2025469.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "20 Dies Hàbils",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FSE+ - FONDO SOCIAL EUROPEO PLUS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536462,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "SOC0362026_Linia_1_ALMA_Resolució_Definitiva_2_1.pdf",
+      "long": 479197,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536461,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "ES_SOC0362026_Linia_1_ALMA_Resolución_Definitiva_1.pdf",
+      "long": 295462,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

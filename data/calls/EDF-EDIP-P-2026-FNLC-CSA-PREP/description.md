@@ -1,0 +1,15 @@
+## Expected Impact
+
+Funded actions are expected to support the preparation and submission of solid project proposals for possible EDPCI as part of the next call for expression of interest in the course of 2027 and to inform the discussions of the Programme Committee on the programming of the relevant proposed EU programme under the next multiannual financial framework. They shall therefore deliver by end 2027, a first implementation roadmap, addressing the activities to be launched between 2028 and 2030, and, at the latest by end 2030, the final implementation roadmap covering the activities to be launched until 2034. The outcome of the funded actions will not commit the Commission to propose to identify the project as an EDPCI nor to provide the expected EU contribution under the next multiannual financial framework 2028-2034.
+
+## Objective
+
+This topic aims to support the maturation of forming collaborative projects towards possible future European Defence Projects of Common Interest (EDPCI) and the preparation of their implementation roadmap for the period 2028-2034.
+
+## Scope
+
+The action aims at maturing collaborative projects towards possible future European Defence Projects of Common Interest and at conducting all preparatory activities necessary prior to the potential implementation of the project during the next Multiannual Financial Framework (2028-2034).
+
+The Commission is considering a total budget of EUR 13 500 000 for this call for proposal.
+
+The maximum EU contribution per funded project will not exceed EUR 3 375 000 allowing several proposals to be funded.

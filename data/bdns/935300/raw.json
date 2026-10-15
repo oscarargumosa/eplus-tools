@@ -1,0 +1,80 @@
+{
+  "id": 1136861,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANARIAS",
+    "nivel3": "CONSEJERÍA DE AGRICULTURA, GANADERÍA, PESCA Y SOBERANÍA ALIMENTARIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935300",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA ANTICIPADA SOBRE SACRIFICIO OBLIGATORIO DE ANIMALES 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Producción ganadera",
+      "codigo": "01.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Orden de 11 de enero de 2012, de la Consejería de Agricultura, Ganadería, Pesca y Aguas, por la que se establecen las bases reguladoras de la concesión directa de subvenciones destinadas al sacrificio obligatorio de animales.",
+  "urlBasesReguladoras": "http://www.gobiernodecanarias.org/boc/2012/014/001.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A) Desde 1/1/27 B) Desde 1/3/27 C) Desde 1/5/27 D) Desde 1/7/27 E) Desde 1/9/27",
+  "textFin": "A) Hasta 28/2/27 B) Hasta 30/4/27 C) Hasta 30/6/27 D) Hasta 31/8/27 E) Hasta 31/10/27",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536836,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria castellano.PDF",
+      "long": 154032,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536838,
+      "descripcion": "01 ANEXO I.PDF",
+      "nombreFic": "01 ANEXO I.PDF",
+      "long": 93646,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536837,
+      "descripcion": "02 ANEXO II.PDF",
+      "nombreFic": "02 ANEXO II.PDF",
+      "long": 86465,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

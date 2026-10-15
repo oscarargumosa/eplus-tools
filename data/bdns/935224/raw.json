@@ -1,0 +1,115 @@
+{
+  "id": 1136785,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "CÁMARA DE COMERCIO DE CASTELLÓN",
+    "nivel3": null
+  },
+  "sedeElectronica": "https://sede.camara.es/sede/castellon",
+  "codigoBDNS": "935224",
+  "fechaRecepcion": "2026-10-14",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 29095.44,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS A PYMES DE LA PROVINCIA DE CASTELLON PARA LA PARTICIPACION EN MISION COMERCIO ARGELIA DEL 30 DE NOVIEMBRE AL 3 DE DICIEMBRE",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES FINANCIERAS Y DE SEGUROS",
+      "codigo": "L"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA DE AYUDAS A PYMES DE LA PROVINCIA DE CASTELLON PARA LA PARTICIPACION EN MISION COMERCIO ARGELIA DEL 30 DE NOVIEMBRE AL 3 DE DICIEMBRE",
+  "urlBasesReguladoras": "https://www.camaracastellon.com/es/mc-argelia",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Transcurridos  2 días hábiles desde el día siguiente a la publicación",
+  "textFin": "Hasta las 14:00h del 30 octubre 2026, el plazo podrá acortarse en caso de agotarse el presupuesto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536587,
+      "descripcion": "ANEXO II DECLARACION RESPONSABLE",
+      "nombreFic": "2026_Anexo II_Declaración responsable empresa Pyme Global.pdf",
+      "long": 387823,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536586,
+      "descripcion": "ANEXO I TIPOLOGIA GASTOS ELEGIBLES",
+      "nombreFic": "2026_Anexo I_Tipologia Gastos Elegibles y Justificación empresa beneficiaria.pdf",
+      "long": 434154,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536585,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026_Convocatoria de ayudas Pyme Global-MD Argelia.pdf",
+      "long": 383568,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    },
+    {
+      "id": 1536589,
+      "descripcion": "ANEXO III MODELO SOLICITUD ADMISION SEGUNDO PARTICIPANTE",
+      "nombreFic": "2026_Anexo III_Modelo de Solicitud admisión segundo participante.pdf",
+      "long": 1165768,
+      "datMod": "2026-10-14",
+      "datPublicacion": "2026-10-14"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,67 @@
+{
+  "id": 1127377,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CANARIAS",
+    "nivel3": "CONSEJERÍA DE UNIVERSIDADES, CIENCIA E INNOVACIÓN Y CULTURA"
+  },
+  "sedeElectronica": "https://sede.gobiernodecanarias.org/sede/tramites/9525",
+  "codigoBDNS": "925816",
+  "fechaRecepcion": "2026-08-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 800000,
+  "mrr": false,
+  "descripcion": "Orden por la que se aprueba la convocatoria 2027-2028 para la concesión de subv. a proyectos de Innovación Social, anticipada",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES70 - CANARIAS"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES A PROYECTOS DE INNOVACIÓN SOCIAL",
+  "urlBasesReguladoras": "http://www.gobiernodecanarias.org/boc/2021/193/",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": "2026-10-15",
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de las 09:00 h según resuelvo 5º Convocatoria",
+  "textFin": "A las 14.00 h según resuelvo 5º Convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1511522,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Documento convocatoria castellano.PDF",
+      "long": 323884,
+      "datMod": "2026-08-20",
+      "datPublicacion": "2026-08-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

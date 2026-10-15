@@ -1,0 +1,60 @@
+{
+  "source": "bdns",
+  "source_id": "935314",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / ILLES BALEARS / DIRECCIÓN GENERAL DE ECONOMÍA CIRCULAR, TRANSICIÓN ENERGÉTICA Y CAMBIO CLIMÁTICO",
+  "nuts_codes": [
+    "ES53"
+  ],
+  "nuts_primary": "ES53",
+  "title": "Fomento de inversiones en energías renovables, almacenamiento eléctrico e infraestructura de recarga dentro del marco de Factor de Insularidad de las Illes Balears",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-10-15",
+  "open_date": null,
+  "deadline": "2027-02-28",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1295774,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935314",
+  "documents": [],
+  "bases_reguladoras_url": "https://www.caib.es/eboibfront/eli/es-ib/o/2025/11/11/31/dof/spa/html",
+  "text_inicio": "a partir del quinto día hábil de la publicación de la convocatoria",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-15T04:08:20.615Z"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "935296",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DURANGO / AYUNTAMIENTO DE DURANGO",
+  "nuts_codes": [
+    "ES213"
+  ],
+  "nuts_primary": "ES213",
+  "title": "Resolución 2026/3017 de 9 de octubre de 2026 por la que se convocan ayudas del Ayuntamiento de Durango para la rehabilitación de viviendas vacías para su inclusión en el Programa Bizigune, en 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-10-14",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 40000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "77",
+      "descripcion": "Actividades de alquiler"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935296",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.durango.eus/documents/36953/54700/Reguladora+de+Subvenciones+y+Ayudas.pdf/d27dcff4-b992-d438-1356-7b85d6933263?t=1604496634039",
+  "text_inicio": "Día siguiente a la publicación del extracto en el Boletín Oficial de Bizkaia",
+  "text_fin": "Finaliza el 16 de noviembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-15T04:08:20.607Z"
+}
