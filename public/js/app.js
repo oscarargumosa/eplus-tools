@@ -7,30 +7,34 @@ const App = (() => {
   let currentRoute = 'my-projects';
   let activeProject = null;
 
+  /* ── Botón de Google. El SDK carga async: si aún no está, se espera hasta 5 s. */
+  async function initGoogle(clientId) {
+    for (let i = 0; i < 25 && !window.google?.accounts?.id; i++) await new Promise(r => setTimeout(r, 200));
+    if (!window.google?.accounts?.id) return;   // sin SDK: showAuth() enseña el botón de reserva
+    window.google.accounts.id.initialize({
+      client_id: clientId,
+      callback: Auth.handleGoogleResponse,
+      auto_select: false,
+      cancel_on_tap_outside: true,
+      use_fedcm_for_prompt: false,
+      itp_support: true,
+      ux_mode: 'popup',
+    });
+    window.google.accounts.id.renderButton(
+      document.querySelector('.g_id_signin'),
+      { type: 'standard', shape: 'rectangular', theme: 'outline',
+        text: 'continue_with', size: 'large', locale: 'es',
+        width: Math.max(200, Math.min(360, window.innerWidth - 96)) }   // cabe en la tarjeta a 390 px
+    );
+  }
+
   /* ── Load public config and init Google Sign-In ───────────── */
   async function loadConfig() {
     try {
       const res = await fetch('/v1/config');
       const { data } = await res.json();
       if (data?.googleClientId) {
-        const el = document.getElementById('g_id_onload');
-        if (el) el.setAttribute('data-client_id', data.googleClientId);
-        if (window.google?.accounts?.id) {
-          window.google.accounts.id.initialize({
-            client_id: data.googleClientId,
-            callback: Auth.handleGoogleResponse,
-            auto_select: false,
-            cancel_on_tap_outside: true,
-            use_fedcm_for_prompt: false,
-            itp_support: true,
-            ux_mode: 'popup',
-          });
-          window.google.accounts.id.renderButton(
-            document.querySelector('.g_id_signin'),
-            { type: 'standard', shape: 'rectangular', theme: 'outline',
-              text: 'continue_with', size: 'large', width: 360 }
-          );
-        }
+        initGoogle(data.googleClientId);   // sin await: no frena el arranque
       } else {
         // No client_id configured → hide the whole Google block so we don't
         // render a broken button that throws "Missing required parameter: client_id".

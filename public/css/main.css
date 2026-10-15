@@ -576,6 +576,9 @@ textarea.voice-recording {
 }
 
 .entities-hero {
+  /* El splash decorativo sobresale 60px por la derecha: se recorta en horizontal
+     (clip, no hidden: no crea scroll ni corta lo que cuelgue hacia abajo). */
+  overflow-x: clip;
   background:
     radial-gradient(circle at 90% -20%, rgba(199,175,223,0.18), transparent 50%),
     linear-gradient(180deg, #f8f8f8 0%, transparent 100%);
