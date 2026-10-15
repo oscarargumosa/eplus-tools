@@ -74,7 +74,68 @@ async function loadUserState(id) {
   return state;
 }
 
-function invalidateUserState(id) { stateCache.delete(id); }
+function invalidateUserState(id) { stateCache.delete(id); areaCache.delete(id); }
+
+/* ── Áreas beta (utils/areas.js) ─────────────────────────────────
+   Misma caché corta que el rol: conceder o quitar un área surte
+   efecto en ≤30 s (al instante en este proceso: el admin invalida). */
+const { AREA_KEYS, areaLabel } = require('../utils/areas');
+const areaCache = new Map(); // id → { until, areas }
+
+async function getUserAreas(id, role) {
+  if (role === 'admin') return AREA_KEYS.slice();
+  const hit = areaCache.get(id);
+  if (hit && hit.until > Date.now()) return hit.areas;
+  let areas = [];
+  try {
+    const [rows] = await db.query('SELECT area FROM user_areas WHERE user_id = ?', [id]);
+    areas = rows.map(r => r.area).filter(a => AREA_KEYS.includes(a));
+  } catch (e) {
+    // Migración 137 aún no aplicada: nadie (salvo admin) tiene áreas.
+    if (e.code !== 'ER_NO_SUCH_TABLE') throw e;
+  }
+  if (areaCache.size > 5000) areaCache.clear();
+  areaCache.set(id, { until: Date.now() + STATE_TTL_MS, areas });
+  return areas;
+}
+
+/* ── Express middleware — exige un área beta ─────────────────────
+   Va después de requireAuth. Si no hay req.user (montado sin
+   requireAuth delante) responde 401 como requireAuth.            */
+function requireArea(area) {
+  return async function areaGuard(req, res, next) {
+    if (!req.user) {
+      return res.status(401).json({ ok: false, error: { code: 'UNAUTHORIZED', message: 'Token required' } });
+    }
+    try {
+      const areas = await getUserAreas(req.user.id, req.user.role);
+      req.user.areas = areas;
+      if (areas.includes(area)) return next();
+    } catch (err) {
+      console.error('[AUTH] requireArea error:', err.message);
+      return res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Auth check failed' } });
+    }
+    return res.status(403).json({
+      ok: false,
+      error: {
+        code: 'AREA_REQUIRED',
+        area,
+        message: `Fase beta: ${areaLabel(area)} está abierta solo a clientes seleccionados. Puedes solicitar acceso.`,
+      },
+    });
+  };
+}
+
+/* Para montar un router entero: requireAuth + requireArea(area) en un
+   solo middleware. `except`: regex sobre req.path que se deja pasar sin
+   mirar el área (rutas de staff con su propio guarda dentro del router). */
+function areaGate(area, { except = null } = {}) {
+  const guard = requireArea(area);
+  return function areaGateMw(req, res, next) {
+    if (except && except.test(req.path)) return next();
+    requireAuth(req, res, (err) => (err ? next(err) : guard(req, res, next)));
+  };
+}
 
 /* Verifica el Bearer y devuelve el usuario; lanza { code } si no vale
    (o un Error si falla la BD). */
@@ -145,5 +206,5 @@ async function optionalAuth(req, res, next) {
 
 module.exports = {
   requireAuth, optionalAuth, signToken, signRefreshToken, verifyRefreshToken, SECRET,
-  invalidateUserState
+  invalidateUserState, getUserAreas, requireArea, areaGate
 };
