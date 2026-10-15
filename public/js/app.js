@@ -153,7 +153,7 @@ const App = (() => {
     const logoutBtn= document.getElementById('btn-logout');
     if (nameEl)  nameEl.textContent  = 'Invitado';
     if (emailEl) emailEl.textContent = 'Inicia sesión';
-    if (avatar)  avatar.textContent  = '?';
+    if (avatar)  { if (window.EfsAvatar) EfsAvatar.paint(avatar, { initials: '?' }); else avatar.textContent = '?'; }
     if (logoutBtn) {
       logoutBtn.title = 'Iniciar sesión';
       const ic = logoutBtn.querySelector('.material-symbols-outlined');
@@ -185,14 +185,9 @@ const App = (() => {
     const topbarName = document.getElementById('topbar-user-name');
     if (topbarName) topbarName.textContent = (currentUser.name || '').split(/\s+/)[0] || currentUser.name;
 
-    // Avatar initials
-    const initials = currentUser.name
-      .split(' ')
-      .map(w => w[0])
-      .join('')
-      .toUpperCase()
-      .slice(0, 2);
-    document.getElementById('user-avatar').textContent = initials;
+    // Avatar: logo de su entidad → foto del usuario → iniciales
+    // (topbar, pie del sidebar y Perfil). /auth/me ya trae avatar_url.
+    if (window.EfsAvatar) EfsAvatar.paintAll(currentUser);
 
     // Restaurar botón inferior a estado "cerrar sesión" (pudo quedar
     // como "login" si el visitante venía del modo invitado).
@@ -327,6 +322,7 @@ const App = (() => {
      muestran un mensaje de marketing + CTAs en vez de su contenido
      real. Copy por sección; cae a 'default' si no hay específico.    */
   const FUNNEL_COPY = {
+    'account-org':     { icon: 'apartment', title: 'Reclama la ficha de tu entidad', body: 'Busca tu entidad entre las que ya tenemos, hazla tuya y complétala paso a paso. Una ficha completa hace mucho más fácil que otras entidades te elijan como socia. Crea tu cuenta gratis para empezar.' },
     'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding School', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
     'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
     'eu-vision':       { icon: 'explore', title: 'Da forma a tu idea de proyecto europeo', body: 'Convierte una idea vaga en una visión concreta en 10 minutos: el reto, a quién buscas y por qué importa a Europa. Crea tu cuenta gratis para empezar.' },
@@ -374,7 +370,11 @@ const App = (() => {
   // Workspace "Mi Cuenta": el sidebar entero pasa a ser el menú de la
   // cuenta (perfil/seguridad/facturación/…). Todas comparten el panel
   // #panel-account; la ruta decide qué sección se muestra.
-  const ACCOUNT_ROUTES = ['account-profile', 'account-security', 'account-billing', 'account-preferences'];
+  const ACCOUNT_ROUTES = ['account-profile', 'account-org', 'account-security', 'account-billing', 'account-preferences'];
+  // Rutas de cuenta con panel propio (no #panel-account). «Mi entidad» vive
+  // en Mi Cuenta y, en segundo plano, también en Entidades (#my-org): las
+  // dos rutas muestran el mismo panel.
+  const ACCOUNT_OWN_PANEL = { 'account-org': 'my-org' };
 
   // Workspace "EU Vision": el sidebar pasa a ser el menú de visiones.
   const VISION_ROUTES = ['eu-vision'];
@@ -403,7 +403,7 @@ const App = (() => {
     // La cuenta no es una pestaña del menú superior: no resaltamos ninguna.
     const activeHref = isAccount              ? null
       : isVision                              ? '#eu-vision'
-      : isEntidades                           ? '#my-org'
+      : isEntidades                           ? '#atlas-stats'
       : route === 'convocatorias'             ? '#convocatorias'
       : route === 'movilidades'               ? '#movilidades'
       :                                         '#my-projects';
@@ -426,8 +426,8 @@ const App = (() => {
     // muestran un embudo de venta (CTAs) en vez de su contenido real.
     let guestFunnel = false;
     if (!currentUser) {
-      // La pestaña "Entidades" aterriza en Mi Organización (privada);
-      // para un invitado mostramos el Directorio (contenido real).
+      // Enlaces antiguos a Mi entidad (privada): al invitado le
+      // mostramos el Directorio (contenido real).
       if (route === 'my-org') route = 'organizations';
       guestFunnel = !PUBLIC_ROUTES.includes(route);
       // Veníamos quizá de la pantalla de login → reactivar el shell público.
@@ -474,7 +474,8 @@ const App = (() => {
       renderGuestFunnel(route);
     } else {
       // Las rutas de cuenta comparten el panel #panel-account.
-      const panelRoute = ACCOUNT_ROUTES.includes(route) ? 'account' : route;
+      const panelRoute = ACCOUNT_OWN_PANEL[route]
+        || (ACCOUNT_ROUTES.includes(route) ? 'account' : route);
       const panel = document.getElementById(`panel-${panelRoute}`);
       if (panel) {
         panel.classList.add('active');
@@ -504,6 +505,7 @@ const App = (() => {
     const titles = {
       dashboard:            'Dashboard',
       'account-profile':     'Perfil',
+      'account-org':         'Mi entidad',
       'account-security':    'Seguridad',
       'account-billing':     'Facturación',
       'account-preferences': 'Preferencias',
@@ -525,7 +527,7 @@ const App = (() => {
       movilidades:      'Movilidades',
       convocatorias:    'Convocatorias',
       'eu-vision':      'EU Vision',
-      'my-org':         'Mi Organización',
+      'my-org':         'Mi entidad',
       organizations:    'Directorio',
       shortlists:       'Mi Pool',
       'atlas-stats':    'Atlas',
@@ -538,7 +540,7 @@ const App = (() => {
     // Initialize module when navigating to it (solo con sesión; el
     // invitado ve el embudo y no dispara cargas de datos privadas).
     if (!guestFunnel) {
-      if (ACCOUNT_ROUTES.includes(route) && typeof Account !== 'undefined') Account.init(route);
+      if (ACCOUNT_ROUTES.includes(route) && !ACCOUNT_OWN_PANEL[route] && typeof Account !== 'undefined') Account.init(route);
       if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
       if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
       if (route === 'create' && typeof CreateProject !== 'undefined') CreateProject.init();
@@ -549,7 +551,7 @@ const App = (() => {
       if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
       if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
       if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
-      if (route === 'my-org' && typeof Organizations !== 'undefined') Organizations.initMyOrg();
+      if ((route === 'my-org' || route === 'account-org') && typeof Organizations !== 'undefined') Organizations.initMyOrg();
       if (route === 'organizations' && typeof Entities !== 'undefined') Entities.init();
       if (route === 'shortlists' && typeof Shortlists !== 'undefined') Shortlists.init();
       if (route === 'atlas-stats' && typeof AtlasStats !== 'undefined') AtlasStats.init();
@@ -594,6 +596,17 @@ const App = (() => {
   function getCurrentUser() { return currentUser; }
   function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
 
+  /* Vuelve a pedir el avatar al servidor (el logo de la entidad pudo cambiar). */
+  async function refreshAvatar() {
+    if (!currentUser) return;
+    try {
+      const me = await API.get('/auth/me');
+      ['avatar_url', 'avatar_source', 'user_avatar_url', 'initials'].forEach(k => { currentUser[k] = me[k]; });
+      updateUserUI();
+      if (typeof Account !== 'undefined' && Account.setAvatar) Account.setAvatar(me);
+    } catch (e) { /* se queda el que había */ }
+  }
+
   /* Merge a patch into the in-memory user and refresh the sidebar/topbar UI.
      Used by the account area after a self-service profile edit. */
   function updateCurrentUser(patch) {
@@ -603,7 +616,7 @@ const App = (() => {
   }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, refreshAvatar, isAdmin, requireLogin };
 })();
 
 

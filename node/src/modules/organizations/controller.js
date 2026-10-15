@@ -24,19 +24,114 @@ exports.getMyOrgs = async (req, res) => {
 
 exports.upsertMyOrg = async (req, res) => {
   try {
-    const existing = await m.getOrgByUserId(req.user.id);
+    // org_id (body o query): el usuario puede tener varias entidades; se
+    // edita la seleccionada, no siempre la primera.
+    const targetId = (req.body && req.body.org_id) || req.query.org_id || null;
+    let existing = null;
+    if (req.body && req.body.new_org) {
+      existing = null;               // «Otra entidad»: crear, no pisar la primera
+    } else if (targetId) {
+      const owner = await m.isOrgOwner(req.user.id, targetId);
+      if (!owner && req.user.role !== 'admin') return err(res, 'Forbidden', 403);
+      existing = { id: targetId };
+    } else {
+      existing = await m.getOrgByUserId(req.user.id);
+    }
+    const body = { ...req.body };
+    delete body.org_id;
+    delete body.new_org;
+    if (body.oid && await m.oidOwnedByOther(body.oid, req.user.id, existing && existing.id)) {
+      return err(res, 'Esa entidad (OID) ya tiene dueño en EU Funding Studio', 409);
+    }
     let orgId;
     if (existing) {
-      await m.upsertOrg(req.body, existing.id);
+      await m.upsertOrg(body, existing.id);
       orgId = existing.id;
     } else {
-      orgId = await m.upsertOrg({ ...req.body, owner_user_id: req.user.id }, null);
+      orgId = await m.upsertOrg({ ...body, owner_user_id: req.user.id }, null);
       await m.linkUserToOrg(req.user.id, orgId);
+      await m.markClaimed(orgId, req.user.id);
     }
     // Background: si tiene PIC y no tiene OID, intentar resolver vía directory-api.
     // No bloqueamos la respuesta: el override aplica también por PIC.
     setImmediate(() => { m.backfillOidFromPic(orgId).catch(() => {}); });
     ok(res, { id: orgId });
+  } catch (e) { err(res, e.message, 500); }
+};
+
+/* ── Reclamar entidad del directorio ────────────────────────── */
+
+exports.claimSearch = async (req, res) => {
+  try {
+    ok(res, await m.searchClaimable(req.query.q, req.user.id));
+  } catch (e) { err(res, e.message, 500); }
+};
+
+exports.claim = async (req, res) => {
+  try {
+    const oid = (req.body && req.body.oid) ? String(req.body.oid).trim() : '';
+    ok(res, await m.claimEntity(req.user.id, oid));
+  } catch (e) {
+    if (e.status === 409) {
+      return res.status(409).json({ ok: false, error: { message: e.message, code: 'already_claimed', org_id: e.org_id } });
+    }
+    err(res, e.message, e.status || 500);
+  }
+};
+
+exports.dispute = async (req, res) => {
+  try {
+    ok(res, await m.openDispute(req.user.id, req.params.id, req.body && req.body.message));
+  } catch (e) { err(res, e.message, e.status || 500); }
+};
+
+exports.listDisputes = async (req, res) => {
+  try {
+    if (req.user.role !== 'admin') return err(res, 'Forbidden', 403);
+    ok(res, await m.listDisputes(req.query.status || 'open'));
+  } catch (e) { err(res, e.message, 500); }
+};
+
+/* Documentación de la entidad (privada: solo dueño y admin). */
+async function canManage(req, orgId) {
+  return req.user.role === 'admin' || await m.isOrgOwner(req.user.id, orgId);
+}
+
+exports.listClaimDocs = async (req, res) => {
+  try {
+    if (!await canManage(req, req.params.id)) return err(res, 'Forbidden', 403);
+    ok(res, await m.listClaimDocs(req.params.id));
+  } catch (e) { err(res, e.message, 500); }
+};
+
+exports.uploadClaimDoc = async (req, res) => {
+  try {
+    if (!req.file) return err(res, 'No file uploaded');
+    if (!await canManage(req, req.params.id)) {
+      require('fs').unlink(req.file.path, () => {});
+      return err(res, 'Forbidden', 403);
+    }
+    const id = await m.addClaimDoc(req.params.id, req.user.id, req.body && req.body.doc_type, req.file);
+    ok(res, { id });
+  } catch (e) { err(res, e.message, 500); }
+};
+
+exports.downloadClaimDoc = async (req, res) => {
+  try {
+    if (!await canManage(req, req.params.id)) return err(res, 'Forbidden', 403);
+    const doc = await m.getClaimDoc(req.params.id, req.params.docId);
+    if (!doc) return err(res, 'Not found', 404);
+    res.download(path.join(m.CLAIM_DOCS_DIR, doc.stored_name), doc.original_name);
+  } catch (e) { err(res, e.message, 500); }
+};
+
+exports.deleteClaimDoc = async (req, res) => {
+  try {
+    if (!await canManage(req, req.params.id)) return err(res, 'Forbidden', 403);
+    const doc = await m.deleteClaimDoc(req.params.id, req.params.docId);
+    if (!doc) return err(res, 'Not found', 404);
+    require('fs').unlink(path.join(m.CLAIM_DOCS_DIR, doc.stored_name), () => {});
+    ok(res, null);
   } catch (e) { err(res, e.message, 500); }
 };
 
@@ -151,7 +246,14 @@ exports.orsLookup = async (req, res) => {
 exports.uploadLogo = async (req, res) => {
   try {
     if (!req.file) return err(res, 'No file uploaded');
-    const existing = await m.getOrgByUserId(req.user.id);
+    const targetId = req.query.org_id || null;
+    let existing;
+    if (targetId) {
+      if (!await canManage(req, targetId)) return err(res, 'Forbidden', 403);
+      existing = { id: targetId };
+    } else {
+      existing = await m.getOrgByUserId(req.user.id);
+    }
     if (!existing) return err(res, 'Create your organization first', 404);
     const logoUrl = '/uploads/logos/' + req.file.filename;
     await m.upsertOrg({ logo_url: logoUrl }, existing.id);

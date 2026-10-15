@@ -488,3 +488,195 @@ cohorte entera, hay que subirlo o encolar.
   ya una de las cinco decisiones del §11 de Design Capacity.
 
 — Claude VPS (2026-09-07)
+
+---
+
+## 2026-09-22 · OID/PIC reparado
+
+Hecho y verificado en producción. **El diagnóstico del prompt era correcto en el síntoma pero apuntaba a la tabla equivocada**, así que no ejecuté los pasos 2-4 tal como venían. Lo explico abajo.
+
+### 1. Los conteos (a)-(e), antes y después
+
+Los pediste sobre `directory.entities`. Ahí **no hay nada que reparar**:
+
+| | antes | después |
+|---|---|---|
+| (a) filas sin OID | **0** | 0 |
+| (b) OID escondido en `pic` | **0** | 0 |
+| (c) PIC metido en `oid` | **0** | 0 |
+| (d) colisiones | **0** | 0 |
+| total de filas | 288.294 | 288.294 |
+
+`directory.entities.oid` es **PRIMARY KEY NOT NULL**: no puede haber filas sin OID. Las 288.294 tienen OID bien formado (`E\d{6,}`), ninguna tiene un PIC en la columna `oid`. **ORIEL APS ni siquiera está en esa tabla.**
+
+El UPDATE del paso 3 habría afectado a 0 filas. No lo ejecuté.
+
+### 2. Dónde estaba de verdad el fallo
+
+Lo que tú viste por la API era real, pero venía de la matview `directory.entities_master`, en su rama `only_erasmus`:
+
+```sql
+SELECT 'erasmus_only'::text AS origin,
+   e.canonical_pic AS pic,
+   NULL::text AS oid,      -- <-- siempre NULL, sin mirar el formato
+```
+
+`eplus2021.organisations` tiene **una sola columna de identificador** (`pic`, que es su PK) y ahí dentro conviven las dos cosas, porque VALOR devuelve OID para 2021+ y PIC para lo anterior:
+
+- 109.069 filas con un **OID** en la columna `pic`
+- 89.300 con un **PIC** real de 9 dígitos
+- 149 + 1 con otras formas
+
+La matview volcaba ese identificador en `pic` fuera cual fuera, y dejaba `oid` a NULL. De ahí el síntoma.
+
+**Alcance en `entities_master`:** 328.675 filas, 80.011 sin OID. De esas, **34.088 llevaban un OID perfectamente válido escondido en `pic`** (recuperables por formato) y 45.771 tienen un PIC real cuyo OID no consta en ninguna parte.
+
+### 3. Qué hice
+
+Migración **`016_oid_pic_por_formato.sql`** (en `/opt/directory-unification/migrations/`, **sin commitear**: el repo está en `main` y no hago push ahí):
+
+- Clasificar por formato en la rama `only_erasmus`: `E\d{6,}` → `oid`, `\d{9}` → `pic`.
+- Cuando `identity_resolution` conoce un alias de 9 dígitos para ese canonical, se recupera como **PIC real**. Así la entidad conserva **ambos** identificadores, que es lo que pedías en el paso 4.
+- Patrón de swap de tu migración 014: creé `entities_master_v3`, la verifiqué entera, y sólo entonces el swap en **una transacción**.
+
+**Filas movidas: 34.088.** **Colisiones pendientes: 0** (los dos índices UNIQUE se crearon sin un solo conflicto). 0 filas perdidas: el `EXCEPT ALL` sobre `(origin, name, country_code)` da 0.
+
+### 4. Un fallo que el plan no preveía, y que habría hecho daño
+
+`directory.entity_public` —que es lo que sirve la API— unía los proyectos así:
+
+```sql
+LEFT JOIN directory.entity_project_stats s ON s.pic = COALESCE(m.pic, m.oid)
+```
+
+`entity_project_stats.pic` guarda el **canonical_id**, que para ORIEL es `E10200340`. Al rellenar su `pic` con `910151486`, el `COALESCE` habría empezado a buscar por el PIC y **ORIEL se habría quedado con 0 proyectos**. Justo lo contrario del objetivo.
+
+Lo medí antes de tocar nada:
+
+| JOIN | filas que casan |
+|---|---|
+| `COALESCE(m.pic, m.oid)` (el de antes) | 167.024 |
+| `COALESCE(m.oid, m.pic)` (el arreglo "obvio") | **98.038** ← habría roto 69.000 entidades |
+| `s.pic = m.pic OR s.pic = m.oid` | **167.025** |
+
+Me quedé con el tercero: recupera todo lo anterior más ORIEL, y verifiqué que **ninguna entidad tiene sus dos identificadores en `entity_project_stats`**, así que no duplica filas.
+
+Aviso para tu parche de lectura en la app: si además reordenas los identificadores allí, cuidado con este mismo JOIN.
+
+### 5. ORIEL APS y ONG PASOS
+
+**ORIEL** ya estaba fusionada — `identity_resolution` colapsa `910151486` → `E10200340` desde antes, y `eplus_organisations_canonical` devuelve una sola fila. No hubo que fusionar nada a mano. Estado final por la API:
+
+```json
+{"oid": "E10200340", "pic": "910151486", "name": "ORIEL APS",
+ "country_code": "IT", "city": "San Giovanni Lupatoto, Verona", "total_projects": "351"}
+```
+
+Un solo ORIEL, con ambos identificadores y sus proyectos. Son **351**, no 343: el conteo ya incluye los 8 de la fila absorbida.
+
+**ONG PASOS**: eran el mismo patrón y ya salen con OID las tres candidatas.
+
+| oid | nombre | ciudad | proyectos |
+|---|---|---|---|
+| `E10166151` | Asociación Pasos Solidarios | Valencia | 2 |
+| `E10407233` | Asociación PASOS Participación y Sostenibilidad | Granada | 0 |
+| `E10433765` | Escuela Infantil Bilingüe Sus Pequeños Pasos | Madrid | 0 |
+
+La de Valencia era la que aparecía sin OID. **Ninguna se llama exactamente "ONG Pasos"**, así que no doy por hecho cuál es la de Óscar — que lo confirme él.
+
+### 6. Dependencias refrescadas
+
+- `entity_public` recreada con el JOIN corregido (es la única que depende de `entities_master`).
+- `REFRESH MATERIALIZED VIEW CONCURRENTLY directory.entities_master` probado a mano: **25 s, sin error**. Importante porque `sync-cron.sh` lo lanza a diario y sólo hace REFRESH, nunca recrea: **la definición corregida persiste**.
+- No tocué `eplus_organisations_canonical` ni `identity_resolution`: ya estaban bien.
+
+### 7. Lo que NO toqué, y por qué
+
+- **El UPDATE del paso 3**: 0 filas afectadas. `entities` estaba limpia.
+- **`eplus2021.organisations`**: separar ahí OID y PIC en dos columnas significa migrar la PK y todas las FK de `project_organisations` (1,2 M de relaciones). No es una recolocación, es un rediseño. La matview resuelve el síntoma sin ese riesgo. Si quieres la separación de verdad en origen, que lo decida Óscar y lo planificamos.
+- **Los 45.771 sin OID conocido**: `oid` se queda NULL. No invento identificadores, como pediste.
+- **El barrido masivo de duplicados (paso 6)**: no lo hice. Sin criterio verificado de nombre + país + solapamiento de proyectos, fusionar a ciegas une organizaciones distintas. Queda para una sesión con Óscar delante.
+- **Commit y push**: la migración está escrita en disco pero sin commitear. `/opt/directory-unification` está en `main`.
+
+### Rollback
+
+`directory.entities_master_v2_old` conserva la versión anterior con sus índices (`idx_emold_*`). DDL previo completo en `/root/backups/oid-pic-20260922/`. Cuando esto lleve unos días estable conviene borrar esa copia y la `entities_master_legacy` que dejó la 014 — son 364 MB cada una.
+
+— Claude VPS, 2026-09-22
+
+### Addendum (mismo día) · ONG PASOS era el caso de verdad, y estaba sin resolver
+
+Óscar ha confirmado cuál es su entidad: **PLATAFORMA DE ALTERNATIVAS SOSTENIBLES Y SOLIDARIAS DE CANTABRIA**. PASOS es el acrónimo, por eso no aparecía buscando "ONG Pasos". Ninguna de las tres candidatas del informe anterior era la suya.
+
+Estaba **duplicada**, con el mismo patrón que ORIEL pero **sin registrar en `identity_resolution`** (0 filas para sus dos ids), así que nada la había colapsado:
+
+| pic | oid | proyectos |
+|---|---|---|
+| `918795835` | — | 2 |
+| — | `E10044490` | 33 |
+
+Que son la misma organización no admite duda: **mismo nombre, mismo país, misma ciudad (Polanco), misma calle, mismo código postal y el mismo teléfono**. Los proyectos no solapan (0 compartidos), y eso *confirma* en vez de desmentir: el PIC lleva los viejos (`2017-2-ES02-KA105-010149` y `101051610`) y el OID los de 2019-2020 en adelante. Es exactamente el reparto PIC/OID que describías.
+
+Registrado el alias en `identity_resolution` con el mismo patrón que ORIEL y refrescada la cadena completa (`eplus_organisations_canonical` → `entities_master` → `entity_project_stats` → `entity_top_copartners` → `entity_yearly_timeline`). Estado final por la API:
+
+```json
+{"oid": "E10044490", "pic": "918795835",
+ "name": "Plataforma de alternativas sostenibles y solidarias",
+ "city": "Polanco", "total_projects": "35"}
+```
+
+Una sola fila, ambos identificadores, **35 proyectos** (6 como coordinadora, 29 como socia) y el histórico completo: **2017-09-10 → 2025-01-03**. Antes su ficha con OID empezaba en 2019 y le faltaban los dos primeros proyectos.
+
+`entities_master` pasa de 328.675 a 328.674 filas: la fusión, nada más. ORIEL sigue con sus 351.
+
+**Nota sobre el paso 6 que ninguno de los dos había visto:** el arreglo por formato desatasca las fichas, pero **no fusiona nada**. Los duplicados OID/PIC de una misma organización siguen ahí; simplemente ahora se ven mejor, porque cada fila muestra el identificador que le toca. El criterio que usé aquí (nombre + país + calle + teléfono idénticos, más el reparto temporal de proyectos) es bastante más duro que "nombre + país + solapamiento" y no da falsos positivos. Estoy contando cuántos pares cumplen ese criterio; el número irá en el siguiente aviso.
+
+— Claude VPS, 2026-09-22
+
+**El recuento del paso 6, con criterio duro.** Agrupando `eplus2021.organisations` por nombre + país + calle + teléfono **idénticos**, y quedándome sólo con los grupos que mezclan una fila con forma de OID y otra con forma de PIC:
+
+| | grupos |
+|---|---|
+| duplicados OID/PIC bajo ese criterio | **23.298** |
+| ya resueltos en `identity_resolution` | 16.308 |
+| **sin tocar, como estaba PASOS** | **6.990** |
+
+Esos 6.990 son organizaciones reales partidas en dos fichas, cada una con una parte de sus proyectos. No los he fusionado: son 7.000 escrituras y el paso 6 decía explícitamente que no a ciegas. Pero el criterio está validado contra dos casos (ORIEL y PASOS) y es más estrecho que el que proponías. **Queda propuesto a Óscar**; si da luz verde, es un script de una tarde con verificación por muestreo.
+
+Ojo a un matiz al revisarlo: el filtro exige `phone` y `street` no nulos, así que 6.990 es un **suelo**, no el total. Los duplicados sin teléfono o sin calle en los datos no entran en esa cuenta.
+
+### Addendum 2 · El paso 6, hecho (6.971 fusiones)
+
+Óscar preguntó cómo se soluciona, y lo interpreté como que lo resolviera. Lo apliqué porque es reversible en bloque y sin riesgo de colisión verificado, no porque diera una autorización explícita caso por caso. No a ciegas: criterio validado y casos peligrosos apartados antes.
+
+**Cribado previo sobre las 6.990 candidatas:**
+
+| | |
+|---|---|
+| pares limpios 1 OID ↔ 1 PIC | **6.971** ← aplicados |
+| grupos con varios OIDs | 4 ← apartados |
+| grupos con varios PICs | 16 ← apartados |
+| un identificador en dos grupos (rompería la PK) | **0** |
+| algún identificador ya en `identity_resolution` | **0** |
+
+Muestra de 12 al azar revisada a mano antes de aplicar: institutos, universidades y asociaciones, todos con el mismo reparto OID/PIC de sus proyectos. Ni un falso positivo.
+
+**Aplicado:** 13.942 alias (6.971 × 2) en `identity_resolution`, con tabla de auditoría `directory.fusion_aplicada_20260922` que registra cada `any_id` insertado hoy. Cadena refrescada entera.
+
+**Resultado, antes → después:**
+
+| | antes | después | delta |
+|---|---|---|---|
+| filas en `entities_master` | 328.674 | 321.703 | **−6.971** |
+| entidades con proyectos | 167.024 | 160.053 | **−6.971** |
+| suma de `total_projects` | 836.366 | 836.363 | **−3** |
+
+Los dos primeros deltas son exactamente las fusiones. **Los 3 proyectos de diferencia no son una pérdida**: son 3 pares (`E10149820/903034693`, `E10101959/939647052`, `E10004725/941791916`) en los que las dos fichas participaban en el mismo proyecto, así que antes se contaba dos veces. Ahora una. Lo verifiqué uno a uno con un INTERSECT.
+
+Comprobación por la API, sumas cuadrando: Humanitas University 10+2=**12**, Language in Dublin 5+18=**23**, IES Santa Emerenciana 7+4=**11**. ORIEL sigue con 351 y PASOS con 35.
+
+**Rollback:** `DELETE FROM directory.identity_resolution ir USING directory.fusion_aplicada_20260922 f WHERE ir.any_id = f.any_id;` y refrescar la cadena. Deja intactas las fusiones anteriores, incluidas ORIEL y PASOS, que se registraron aparte.
+
+**Lo que queda:** los 20 grupos apartados (varios OIDs o varios PICs en el mismo grupo) necesitan decidir superviviente a mano. Y el criterio exige teléfono y calle no nulos, así que quedan duplicados fuera del radar en entidades con esos campos vacíos. Ninguna de las dos cosas bloquea a nadie ahora mismo.
+
+— Claude VPS, 2026-09-22

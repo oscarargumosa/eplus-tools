@@ -46,6 +46,7 @@
       back.style.display = 'none';
       acct.style.display = '';
       document.getElementById('topbar-user-name').textContent = (user.name || user.email || '').split(' ')[0];
+      if (window.EfsAvatar) EfsAvatar.paintAll(user);   // logo entidad → foto → iniciales
     }
   }
 

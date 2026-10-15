@@ -29,10 +29,60 @@ const Account = (() => {
     });
   }
 
+  /* ── Foto de perfil ───────────────────────────────────────────
+     Aquí se ve la foto del usuario. En el menú superior manda el logo
+     de su entidad si lo tiene; la foto es el plan B y las iniciales el C. */
+  function setAvatar(data) {
+    if (!data) return;
+    if (me) ['avatar_url', 'avatar_source', 'user_avatar_url', 'initials'].forEach(k => { if (k in data) me[k] = data[k]; });
+    const src = me || data;
+    const el = document.getElementById('account-avatar');
+    if (el && window.EfsAvatar) {
+      EfsAvatar.paint(el, { avatar_url: src.user_avatar_url, avatar_source: 'user', initials: src.initials || initials(src.name) });
+    }
+    const has = !!src.user_avatar_url;
+    document.getElementById('account-avatar-remove')?.classList.toggle('hidden', !has);
+    const lbl = document.getElementById('account-avatar-btn-label');
+    if (lbl) lbl.textContent = has ? 'Cambiar foto' : 'Subir foto';
+    const hint = document.getElementById('account-avatar-hint');
+    if (hint) {
+      hint.textContent = src.avatar_source === 'organization'
+        ? 'En el menú se ve el logo de tu entidad. Tu foto se usa si tu entidad no tiene logo.'
+        : has ? 'Es la imagen que se ve en el menú. Si tu entidad sube su logo, se verá el logo.'
+              : 'Sin foto ni logo de entidad, en el menú se ven tus iniciales.';
+    }
+  }
+
+  async function uploadAvatar(file) {
+    if (!file) return;
+    if (file.size > 2 * 1024 * 1024) { Toast.show('La foto pesa más de 2 MB', 'error'); return; }
+    const form = new FormData();
+    form.append('avatar', file);
+    try {
+      const res = await fetch('/v1/auth/me/avatar', {
+        method: 'POST',
+        headers: { 'Authorization': 'Bearer ' + API.getToken() },
+        body: form
+      });
+      const json = await res.json();
+      if (!json.ok) throw json.error || new Error('Error');
+      setAvatar(json.data);
+      if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
+      Toast.show('Foto actualizada', 'ok');
+    } catch (e) { Toast.show(e.message || 'No se pudo subir la foto', 'error'); }
+  }
+
+  async function removeAvatar() {
+    try {
+      setAvatar(await API.del('/auth/me/avatar'));
+      if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
+    } catch (e) { Toast.show(e.message || 'Error', 'error'); }
+  }
+
   /* ── Poblar datos del usuario ─────────────────────────────── */
   function render() {
     if (!me) return;
-    document.getElementById('account-avatar').textContent      = initials(me.name);
+    setAvatar(me);
     document.getElementById('account-display-name').textContent  = me.name || '—';
     document.getElementById('account-display-email').textContent = me.email || '—';
     document.getElementById('account-name-input').value  = me.name || '';
@@ -118,6 +168,8 @@ const Account = (() => {
     wired = true;
     document.getElementById('account-save-profile')?.addEventListener('click', saveProfile);
     document.getElementById('account-save-pw')?.addEventListener('click', savePassword);
+    document.getElementById('account-avatar-input')?.addEventListener('change', e => { uploadAvatar(e.target.files[0]); e.target.value = ''; });
+    document.getElementById('account-avatar-remove')?.addEventListener('click', removeAvatar);
   }
 
   /* ── Init (al navegar a una ruta account-*) ───────────────── */
@@ -140,5 +192,5 @@ const Account = (() => {
     }
   }
 
-  return { init };
+  return { init, setAvatar };
 })();

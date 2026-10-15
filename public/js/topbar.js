@@ -6,6 +6,33 @@
 (function () {
   'use strict';
 
+  /* ── Avatar de «Mi cuenta» ───────────────────────────────────
+     Orden: logo de su entidad → foto del usuario → iniciales.
+     data = { avatar_url, avatar_source: 'organization'|'user'|'initials', initials }
+     Si la imagen falla al cargar, se queda con las iniciales. */
+  window.EfsAvatar = {
+    paint: function (el, data) {
+      if (!el) return;
+      data = data || {};
+      var initials = data.initials || '?';
+      el.classList.remove('is-logo');
+      el.textContent = initials;
+      if (!data.avatar_url) return;
+      var img = new Image();
+      img.alt = '';
+      img.referrerPolicy = 'no-referrer';
+      img.onload = function () {
+        el.textContent = '';
+        if (data.avatar_source === 'organization') el.classList.add('is-logo');
+        el.appendChild(img);
+      };
+      img.src = data.avatar_url;
+    },
+    paintAll: function (data) {
+      document.querySelectorAll('[data-efs-avatar]').forEach(function (el) { window.EfsAvatar.paint(el, data); });
+    }
+  };
+
   /* Páginas que ya han salido de WordPress y viven en este repo
      (docs/SALIDA_DE_WORDPRESS.md). Fuera de producción se usa la versión en
      código; en producción siguen apuntando a WordPress hasta el cutover (P5). */
@@ -89,6 +116,7 @@
         var data = res && res.data;
         if (!data || !data.logged_in) return;    // sin sesión: se queda «Iniciar sesión»
         if (name) name.textContent = data.first_name || 'Mi cuenta';
+        window.EfsAvatar.paintAll(data);
         back.style.display    = 'none';
         account.style.display = '';
       })

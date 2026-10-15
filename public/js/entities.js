@@ -354,6 +354,21 @@ const Entities = (() => {
   }
 
   /* ── Card render (Ana-style, v2 — barras etiquetadas) ─────── */
+  /* Sticker de reclamo: «Verificada» si el dueño aportó la documentación
+     de la entidad; «Gestionada por la entidad» si solo la reclamó. */
+  function claimBadge(o, big = false) {
+    const size = big ? 'text-[11px] px-2.5 py-1' : 'text-[10px] px-2 py-0.5';
+    if (o.is_verified) {
+      return `<span title="La entidad ha aportado su documentación legal" class="inline-flex items-center gap-1 rounded-full font-bold ${size} bg-emerald-50 text-emerald-700 border border-emerald-200">
+        <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1">verified</span>Verificada</span>`;
+    }
+    if (o.is_claimed) {
+      return `<span title="Alguien de la entidad gestiona esta ficha" class="inline-flex items-center gap-1 rounded-full font-semibold ${size} bg-primary/5 text-primary border border-primary/15">
+        <span class="material-symbols-outlined text-[14px]">how_to_reg</span>Gestionada por la entidad</span>`;
+    }
+    return '';
+  }
+
   function renderCard(o) {
     const logo = o.logo_url
       ? `<img src="${esc(o.logo_url)}" alt="" loading="lazy" referrerpolicy="no-referrer"
@@ -390,6 +405,7 @@ const Entities = (() => {
             <div class="flex items-center gap-1.5 flex-wrap mt-2">
               ${tier}
               ${cat}
+              ${claimBadge(o)}
             </div>
           </div>
         </div>
@@ -582,6 +598,7 @@ const Entities = (() => {
             ${o.legal_name && o.legal_name !== o.display_name ? `<p class="text-sm text-on-surface-variant mt-1">${esc(o.legal_name)}</p>` : ''}
             <div class="flex items-center gap-2 mt-3">
               ${tierBadge(o.quality_tier)}
+              ${claimBadge(o, true)}
               ${o.has_erasmus_accreditation ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">workspace_premium</span> Erasmus+ accredited</span>` : ''}
               ${o.validity_label === 'certified' ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-blue-100 text-blue-700">${esc(o.validity_label)}</span>` : ''}
             </div>

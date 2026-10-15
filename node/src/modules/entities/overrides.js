@@ -14,8 +14,10 @@
    - Si el override tiene lat/lng, también se actualiza la columna que el
      mapa lee (lat/lng o latitude/longitude según endpoint).
 
-   TODO (Phase 2): claim verification — solo aplicar override si
-   `claim_status = 'verified'`. Por ahora basta `is_public = 1`.
+   Reclamo (8-oct-2026): sin verificación previa; basta `is_public = 1`.
+   Además se exponen dos marcas para el directorio:
+   - `is_claimed`  → la entidad tiene dueño en Studio.
+   - `is_verified` → el dueño aportó documentación (organizations.verified_at).
    ═══════════════════════════════════════════════════════════════ */
 
 const pool = require('../../utils/db');
@@ -41,7 +43,7 @@ const FIELD_MAP = [
   ['geocoded_source',   'geocoded_source'],
 ];
 
-const SELECT_COLS = [...new Set(FIELD_MAP.map(([col]) => col))].join(', ');
+const SELECT_COLS = [...new Set(FIELD_MAP.map(([col]) => col)), 'claimed_by_user_id', 'verified_at'].join(', ');
 
 function isMeaningful(val) {
   if (val === null || val === undefined) return false;
@@ -115,6 +117,8 @@ function mergeOverride(entity, override) {
       touched = true;
     }
   }
+  if (override.claimed_by_user_id) { out.is_claimed = true; touched = true; }
+  if (override.verified_at)        { out.is_verified = true; touched = true; }
   if (touched) out._has_local_override = true;
   return out;
 }
