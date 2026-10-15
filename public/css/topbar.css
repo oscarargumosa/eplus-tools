@@ -73,7 +73,7 @@
    En escritorio va como distintivo sobre el enlace (no ocupa ancho: el menú ya va
    justo); en el menú plegable, en línea. */
 .efs-topbar__menu a[data-beta-locked] { position: relative; }
-.efs-topbar__beta { position: absolute; top: -13px; right: -10px; display: inline-flex; align-items: center; gap: 2px;
+.efs-topbar__beta { position: absolute; top: -10px; right: -10px; display: inline-flex; align-items: center; gap: 2px;
   padding: 0 5px 0 4px; border-radius: 999px; background: #d6e949; color: #3c45a3;
   font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1.6;
   white-space: nowrap; pointer-events: none; }
