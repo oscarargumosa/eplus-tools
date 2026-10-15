@@ -5334,7 +5334,7 @@ const AdminUsers = (() => {
   async function load() {
     const tbody = document.getElementById('au-tbody');
     if (!tbody) return;
-    tbody.innerHTML = '<tr><td colspan="8" class="py-8 text-center text-on-surface-variant">Cargando…</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" class="py-8 text-center text-on-surface-variant">Cargando…</td></tr>';
     try {
       const qs = new URLSearchParams({ q: state.q, filter: state.filter, page: state.page, limit: 25 });
       const d = await API.get('/admin/access/users?' + qs.toString());
@@ -5342,7 +5342,7 @@ const AdminUsers = (() => {
       setCount(d.pending_total);
       render(d);
     } catch (e) {
-      tbody.innerHTML = `<tr><td colspan="8" class="py-8 text-center text-error">${esc(e.message || 'No se pudo cargar')}</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-error">${esc(e.message || 'No se pudo cargar')}</td></tr>`;
     }
   }
 
@@ -5372,17 +5372,18 @@ const AdminUsers = (() => {
   function render(d) {
     const tbody = document.getElementById('au-tbody');
     if (!d.items.length) {
-      tbody.innerHTML = '<tr><td colspan="8" class="py-8 text-center text-on-surface-variant">No hay usuarios con este filtro.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="5" class="py-8 text-center text-on-surface-variant">No hay usuarios con este filtro.</td></tr>';
     } else {
       tbody.innerHTML = d.items.map(u => `<tr class="border-t border-outline-variant/20 align-top">
-        <td class="p-3 font-semibold text-on-surface whitespace-nowrap">${esc(u.name)}${u.role === 'admin' ? ' <span class="text-[10px] uppercase font-bold text-primary">admin</span>' : ''}</td>
-        <td class="p-3 text-on-surface-variant">${esc(u.email)}</td>
-        <td class="p-3">${u.email_verified ? 'Sí' : '<span class="text-error">No</span>'}</td>
-        <td class="p-3 whitespace-nowrap">${fmt(u.created_at)}</td>
-        <td class="p-3 whitespace-nowrap">${fmt(u.last_login, true)}</td>
-        <td class="p-3 text-right">${u.projects}</td>
+        <td class="p-3 min-w-[200px]">
+          <div class="font-semibold text-on-surface">${esc(u.name)}${u.role === 'admin' ? ' <span class="text-[10px] uppercase font-bold text-primary">admin</span>' : ''}</div>
+          <div class="text-xs text-on-surface-variant break-all">${esc(u.email)}</div>
+          ${u.email_verified ? '' : '<div class="text-[11px] text-error font-semibold mt-0.5">Email sin verificar</div>'}
+        </td>
         <td class="p-3">${state.areas.map(a => switchHtml(u, a)).join('')}</td>
         <td class="p-3">${pendingHtml(u)}</td>
+        <td class="p-3 whitespace-nowrap text-xs text-on-surface-variant"><div>Alta: ${fmt(u.created_at)}</div><div>Último acceso: ${fmt(u.last_login, true)}</div></td>
+        <td class="p-3 text-right">${u.projects}</td>
       </tr>`).join('');
     }
     document.getElementById('au-pageinfo').textContent =
