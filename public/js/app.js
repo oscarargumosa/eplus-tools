@@ -68,7 +68,6 @@ const App = (() => {
 
     // Try to restore session from refresh token cookie
     const restored = await Auth.tryRestore();
-    if (restored) welcomeIfNew();
     if (!restored) {
       // Sin sesión → modo anónimo (teaser público), no pantalla de login.
       // El visitante explora las superficies públicas; el muro salta al
@@ -286,29 +285,19 @@ const App = (() => {
   }
 
   function openAuth(tab = 'login') {
-    // En producción el acceso es único (Authentik) y el formulario de registro local
-    // está oculto: «Crear cuenta» va directo al alta de Authentik y vuelve aquí.
-    if (tab === 'register' && document.getElementById('auth-sso-only')) {
-      location.href = '/v1/auth/oidc/login?signup=1&ret=' + encodeURIComponent(location.pathname + location.hash);
-      return;
-    }
     showAuth();
     showAuthTab(tab);
   }
 
-  /* Alta nueva (regla de altas: correo + mensaje en pantalla). El servidor añade
-     ?bienvenida=1 al volver del alta; se avisa y se limpia la URL. */
-  function welcomeIfNew() {
-    const q = new URLSearchParams(location.search);
-    if (q.get('bienvenida') !== '1') return;
-    q.delete('bienvenida');
-    history.replaceState({}, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash);
+  /* Alta nueva con Google (regla de altas: correo + mensaje en pantalla).
+     El registro propio enseña el mismo texto en el panel tras confirmar el email. */
+  function showWelcome() {
     const box = document.createElement('div');
     box.setAttribute('role', 'status');
     box.className = 'fixed top-20 left-1/2 -translate-x-1/2 z-[70] max-w-lg w-[calc(100%-32px)] bg-white border border-secondary-fixed/60 shadow-xl rounded-2xl p-5 flex gap-3 items-start';
     box.innerHTML = `<span class="material-symbols-outlined text-primary text-3xl">celebration</span>
-      <div class="flex-1"><p class="font-bold text-primary">Tu cuenta está lista</p>
-      <p class="text-sm text-on-surface-variant mt-1">Se ha creado con éxito y te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!</p></div>
+      <div class="flex-1"><p class="font-bold text-primary">Tu cuenta está confirmada</p>
+      <p class="text-sm text-on-surface-variant mt-1">Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!</p></div>
       <button type="button" aria-label="Cerrar" class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined">close</span></button>`;
     box.querySelector('button').addEventListener('click', () => box.remove());
     document.body.appendChild(box);
@@ -353,7 +342,7 @@ const App = (() => {
      muestran un mensaje de marketing + CTAs en vez de su contenido
      real. Copy por sección; cae a 'default' si no hay específico.    */
   const FUNNEL_COPY = {
-    'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding School', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
+    'account':         { icon: 'account_circle', title: 'Tu cuenta de EU Funding Studio', body: 'Gestiona tu perfil, seguridad y facturación desde un solo sitio. Crea tu cuenta gratis para empezar.' },
     'my-projects':     { icon: 'folder_shared', title: 'Tus proyectos Erasmus+, en un solo lugar', body: 'Diseña, redacta y evalúa propuestas con IA entrenada en convocatorias reales. Crea tu cuenta gratis para empezar tu primer proyecto.' },
     'eu-vision':       { icon: 'explore', title: 'Da forma a tu idea de proyecto europeo', body: 'Convierte una idea vaga en una visión concreta en 10 minutos: el reto, a quién buscas y por qué importa a Europa. Crea tu cuenta gratis para empezar.' },
     'my-evaluations':  { icon: 'fact_check', title: 'Evalúa como un experto EACEA', body: 'Diagnostica tu propuesta contra los criterios reales de evaluación antes de presentarla. Necesitas una cuenta para guardar tus evaluaciones.' },
@@ -629,7 +618,7 @@ const App = (() => {
   }
 
   /* ── Public API ────────────────────────────────────────────── */
-  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
+  return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showWelcome, showPublic, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, isAdmin, requireLogin };
 })();
 
 
@@ -688,7 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Google fallback ──────────────────────────────────────── */
   document.getElementById('google-fallback-btn')?.addEventListener('click', () => {
-    alert('Google Sign-In will be available once the Client ID is configured.');
+    Toast.show('El acceso con Google no está disponible en este momento. Usa tu email y contraseña.', 'err');
   });
 
   /* ── Sidebar nav links ────────────────────────────────────── */

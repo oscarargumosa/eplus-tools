@@ -46,12 +46,18 @@ const Auth = (() => {
       const name     = document.getElementById('reg-name').value;
       const email    = document.getElementById('reg-email').value;
       const password = document.getElementById('reg-password').value;
-      const data = await API.post('/auth/register', { name, email, password }, { noAuth: true });
+      const acepta_privacidad = !!document.getElementById('reg-privacy')?.checked;
+      if (!acepta_privacidad) {
+        showError('register', 'Para crear la cuenta tienes que marcar «He leído y acepto la política de privacidad».');
+        document.getElementById('reg-privacy')?.focus();
+        return;
+      }
+      const data = await API.post('/auth/register', { name, email, password, acepta_privacidad }, { noAuth: true });
       // No auto-login: registration now requires email verification.
       App.showAuthInfo({
         icon:  '📩',
-        title: 'Revisa tu correo',
-        body:  `Hemos enviado un enlace de verificación a ${data.email || email}. Haz clic en el enlace para activar tu cuenta.`,
+        title: 'Revisa tu correo para confirmar tu cuenta',
+        body:  `Te hemos enviado un correo a ${data.email || email} para confirmar tu dirección. Abre el enlace del correo para activar tu cuenta (si no lo ves, mira en spam).`,
         actions: [
           { label: 'Reenviar email', primary: true,  onClick: () => resendVerification(data.email || email) },
           { label: 'Ir al login',                         onClick: () => App.showAuthTab('login') }
@@ -136,12 +142,15 @@ const Auth = (() => {
       const json = await res.json();
       window.history.replaceState({}, '', '/');
       if (json.ok) {
+        // Primera confirmación = alta completa: el servidor ya ha enviado la bienvenida.
         App.showAuthInfo({
           icon:  '✅',
-          title: 'Email verificado',
-          body:  'Tu cuenta está activa. Ya puedes iniciar sesión.',
+          title: 'Email confirmado',
+          body:  json.data?.first_time
+            ? 'Tu cuenta está confirmada. Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!'
+            : 'Tu cuenta ya estaba activa. Ya puedes entrar.',
           actions: [
-            { label: 'Ir al login', primary: true, onClick: () => App.showAuthTab('login') }
+            { label: 'Entrar', primary: true, onClick: () => App.showAuthTab('login') }
           ]
         });
       } else {
@@ -172,6 +181,7 @@ const Auth = (() => {
       API.setToken(data.access_token);
       API.startAutoRefresh();
       App.onAuth(data.user);
+      if (data.created) App.showWelcome();   // alta nueva: mismo mensaje que el registro propio
     } catch (err) {
       Toast.show(err.message || 'Error al iniciar sesión con Google', 'err');
     }
