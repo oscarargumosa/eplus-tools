@@ -3,7 +3,11 @@
    (El revisor interno de contenidos sigue en /v1/academy.)                    */
 
 const router = require('express').Router();
-const { requireAuth } = require('../../middleware/auth');
+const { requireAuth, requireArea } = require('../../middleware/auth');
+
+// Fase beta: cursos, lecciones, tests, notas y certificados piden el área
+// «academia». La verificación pública de certificados sigue abierta.
+const gate = [requireAuth, requireArea('academia')];
 const m = require('./model');
 
 const h = (fn) => async (req, res) => {
@@ -18,21 +22,21 @@ const h = (fn) => async (req, res) => {
   }
 };
 
-router.get('/courses', requireAuth, h(req => m.listCourses(req.user)));
-router.get('/courses/:course', requireAuth, h(req => m.courseDetail(req.params.course, req.user)));
-router.post('/courses/:course/enroll', requireAuth, h(req => m.enroll(req.params.course, req.user)));
+router.get('/courses', gate, h(req => m.listCourses(req.user)));
+router.get('/courses/:course', gate, h(req => m.courseDetail(req.params.course, req.user)));
+router.post('/courses/:course/enroll', gate, h(req => m.enroll(req.params.course, req.user)));
 
-router.get('/courses/:course/lessons/:lesson', requireAuth,
+router.get('/courses/:course/lessons/:lesson', gate,
   h(req => m.lessonDetail(req.params.course, req.params.lesson, req.user)));
-router.post('/courses/:course/lessons/:lesson/phase', requireAuth,
+router.post('/courses/:course/lessons/:lesson/phase', gate,
   h(req => m.savePhase(req.params.course, req.params.lesson, req.user, req.body)));
-router.post('/courses/:course/lessons/:lesson/test', requireAuth,
+router.post('/courses/:course/lessons/:lesson/test', gate,
   h(req => m.startTest(req.params.course, req.params.lesson, req.user)));
-router.post('/courses/:course/lessons/:lesson/test/submit', requireAuth,
+router.post('/courses/:course/lessons/:lesson/test/submit', gate,
   h(req => m.submitTest(req.params.course, req.params.lesson, req.user, req.body)));
-router.post('/courses/:course/certificate', requireAuth,
+router.post('/courses/:course/certificate', gate,
   h(req => m.issueCertificate(req.params.course, req.user, req.body)));
-router.put('/courses/:course/lessons/:lesson/note', requireAuth,
+router.put('/courses/:course/lessons/:lesson/note', gate,
   h(req => m.saveNote(req.params.course, req.params.lesson, req.user, req.body)));
 
 router.get('/certificates/:serial', h(async req => {

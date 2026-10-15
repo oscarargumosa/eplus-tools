@@ -2,7 +2,7 @@
    Rutas estáticas antes que /:id para que no las capture el comodín.    */
 
 const router = require('express').Router();
-const { requireAuth } = require('../../middleware/auth');
+const { requireAuth, requireArea } = require('../../middleware/auth');
 const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
@@ -21,7 +21,8 @@ router.post('/', requireAuth, ctrl.create);
 router.get('/:id', requireAuth, ctrl.getOne);
 router.patch('/:id', requireAuth, ctrl.update);
 router.post('/:id/publish', requireAuth, ctrl.publish);
-router.post('/:id/promote', requireAuth, ctrl.promote);
+// Pasar a proyecto = abrir Diseñar: área beta «proyectos».
+router.post('/:id/promote', requireAuth, requireArea('proyectos'), ctrl.promote);
 router.post('/:id/generate', requireAuth, aiLimit, ctrl.generate);
 
 // Referencias (proyectos similares adjuntados)

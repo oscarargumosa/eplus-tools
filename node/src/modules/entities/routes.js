@@ -5,7 +5,7 @@ const sl   = require('./shortlists.controller');
 const smart = require('./smart.controller');
 const handoff = require('./handoff.controller');
 const { aiLimit } = require('../../middleware/aiLimit');
-const { requireAuth } = require('../../middleware/auth');
+const { requireAuth, requireArea } = require('../../middleware/auth');
 
 /* Studio está cerrado a invitados (oct-2026): directorio, Atlas, fichas
    y estadísticas exigen sesión. Antes eran un teaser público. */
@@ -42,7 +42,8 @@ router.get('/rankings',           requireAuth, requireAdminOrScribe, ctrl.rankin
 router.post('/smart-shortlist', requireAuth, aiLimit, smart.smartShortlist);
 
 /* ── Handoff: crear consorcio → proyecto en intake (auth) ────── */
-router.post('/handoff/consortium', requireAuth, handoff.consortium);
+// Crea un proyecto en Diseñar: área beta «proyectos».
+router.post('/handoff/consortium', requireAuth, requireArea('proyectos'), handoff.consortium);
 
 /* ── Shortlists (auth) ───────────────────────────────────────── */
 router.get   ('/shortlists',                requireAuth, sl.list);

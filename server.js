@@ -175,31 +175,44 @@ app.get('/v1/config', (req, res) => {
   });
 });
 
+/* ── Fase beta cerrada: áreas por persona (node/src/utils/areas.js) ──
+   Los routers de «proyectos» se montan detrás de areaGate (sesión + área;
+   403 AREA_REQUIRED si falta). Lo libre (entidades, convocatorias,
+   movilidades, visiones, cuenta) va sin área; dentro de vision, entities y
+   academia el área se exige ruta a ruta.                                    */
+const { areaGate } = require('./node/src/middleware/auth');
+const proyectos = areaGate('proyectos');
+
 app.use('/v1/auth', require('./node/src/modules/auth/routes'));
-app.use('/v1/intake', require('./node/src/modules/intake/routes'));
-app.use('/v1/calculator', require('./node/src/modules/calculator/routes'));
+app.use('/v1/access-requests', require('./node/src/modules/access/routes'));
+app.use('/v1/intake',      proyectos, require('./node/src/modules/intake/routes'));
+app.use('/v1/calculator',  proyectos, require('./node/src/modules/calculator/routes'));
+// Antes que /v1/admin: «Usuarios y accesos» lleva su propia auditoría.
+app.use('/v1/admin/access', require('./node/src/modules/access/admin.routes'));
 app.use('/v1/admin', require('./node/src/modules/admin/routes'));
-app.use('/v1/documents', require('./node/src/modules/documents/routes'));
+app.use('/v1/documents',   proyectos, require('./node/src/modules/documents/routes'));
 app.use('/v1/organizations', require('./node/src/modules/organizations/routes'));
 app.use('/v1/entities', require('./node/src/modules/entities/routes'));
-app.use('/v1/research', require('./node/src/modules/research/routes'));
+app.use('/v1/research',    proyectos, require('./node/src/modules/research/routes'));
 app.use('/v1/movilidades', require('./node/src/modules/movilidades/routes'));
 app.use('/v1/convocatorias', require('./node/src/modules/convocatorias/routes'));
 app.use('/v1/vision',        require('./node/src/modules/vision/routes'));
 
 // Future modules:
 // app.use('/v1/planner',     require('./node/src/modules/planner/routes'));
-app.use('/v1/developer',   require('./node/src/modules/developer/routes'));
-app.use('/v1/evaluator',   require('./node/src/modules/evaluator/routes'));
-app.use('/v1/budget',      require('./node/src/modules/budget/routes'));
+app.use('/v1/developer',   proyectos, require('./node/src/modules/developer/routes'));
+app.use('/v1/evaluator',   proyectos, require('./node/src/modules/evaluator/routes'));
+app.use('/v1/budget',      proyectos, require('./node/src/modules/budget/routes'));
 app.use('/v1/voice',       require('./node/src/modules/voice/routes'));
-app.use('/v1/sandbox',     require('./node/src/modules/sandbox/routes'));
-app.use('/v1/exporter',    require('./node/src/modules/exporter/routes'));
+app.use('/v1/sandbox',     proyectos, require('./node/src/modules/sandbox/routes'));
+app.use('/v1/exporter',    proyectos, require('./node/src/modules/exporter/routes'));
 app.use('/v1/subscribers', require('./node/src/modules/subscribers/routes'));
 app.use('/v1/events',      require('./node/src/modules/events/routes'));
 app.use('/v1/vps',         require('./node/src/modules/vps/routes'));
-app.use('/v1/master',      require('./node/src/modules/master/routes'));
-app.use('/v1/diagnose',    require('./node/src/modules/diagnose/routes'));
+app.use('/v1/master',      proyectos, require('./node/src/modules/master/routes'));
+// Biblioteca de patrones (admin/scribe, con su propio guarda): sin área.
+app.use('/v1/diagnose',    areaGate('proyectos', { except: /^\/(patterns|letters|stats)(\/|$)/ }),
+                           require('./node/src/modules/diagnose/routes'));
 app.use('/v1/academy',     require('./node/src/modules/academy/routes'));
 app.use('/v1/academia',    require('./node/src/modules/academia/routes'));
 app.get('/academia/certificado/:serial', require('./node/src/modules/academia/certificate-page'));
