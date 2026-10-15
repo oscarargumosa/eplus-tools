@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    Academia — cliente. Rutas (history API):
      /academia                      catálogo
-     /academia/<curso>              ficha del curso con el temario
+     /academia/<curso>              ficha del curso (si ya está matriculado, salta a su lección)
      /academia/<curso>/<lección>    aula: vídeo, lectura por hojas, test, notas
    El servidor (/v1/academia) es quien decide: tiempos de lectura, vídeo visto,
    apertura del test y certificado. Aquí solo se pinta y se le avisa.
@@ -181,6 +181,14 @@
   /* ── ficha del curso ────────────────────────────────────────── */
   async function viewCourse(slug) {
     const c = await API.get(`/academia/courses/${encodeURIComponent(slug)}`);
+    // Matriculado y con lecciones pendientes: la ficha sobra, directo a la
+    // lección por la que va (la 1-1 si empieza). Se sustituye la URL para que
+    // «Atrás» no rebote. La ficha queda para quien no está matriculado (hace de
+    // presentación del curso) y para el curso terminado (certificado).
+    if (user && c.enrolled && c.next_lesson && !c.certificate && !c.certificateReady) {
+      history.replaceState({}, '', `/academia/${encodeURIComponent(c.slug)}/${encodeURIComponent(c.next_lesson)}`);
+      return viewLesson(c.slug, c.next_lesson);
+    }
     document.title = `${c.title} — Academia`;
     const total = c.modules.reduce((n, m) => n + m.lessons.length, 0);
     const done = c.modules.reduce((n, m) => n + m.lessons.filter(l => l.state === 'done').length, 0);
@@ -246,14 +254,14 @@
 
     root.innerHTML = `<div class="ac-lesson">
       <aside class="ac-syl" id="ac-syl" aria-label="Temario">
-        <a class="ac-syl__course" href="/academia/${esc(course.slug)}" data-nav>${esc(course.title)}</a>
+        <span class="ac-syl__course">${esc(course.title)}</span>
         ${course.modules.map(m => `<h4>Módulo ${m.number} · ${esc(m.title)}</h4>
           ${m.lessons.map(l => `<a class="l${l.slug === L.slug ? ' is-current' : ''}" data-slug="${esc(l.slug)}" href="/academia/${esc(course.slug)}/${esc(l.slug)}" data-nav
             aria-label="${esc(l.code)} ${esc(l.title)}, ${stateLabel[l.state]}">${dot(l.state)}<span>${esc(l.code)} · ${esc(l.title)}</span></a>`).join('')}`).join('')}
       </aside>
       <div class="ac-main">
         <div>
-          <p class="ac-crumb"><a href="/academia/${esc(course.slug)}" data-nav>${esc(course.title)}</a> / Módulo ${d.module.number} · ${esc(d.module.title)}</p>
+          <p class="ac-crumb"><a href="/academia" data-nav>Academia</a> / ${esc(course.title)} / Módulo ${d.module.number} · ${esc(d.module.title)}</p>
           <button class="ac-btn ac-btn--ghost ac-syl__toggle" id="ac-syl-toggle" style="margin-top:8px">${ms('menu_book')} Temario</button>
           <div class="ac-title"><h1>${esc(L.code)} · ${esc(L.title)}</h1>${L.idea ? `<p>${esc(L.idea)}</p>` : ''}</div>
         </div>
