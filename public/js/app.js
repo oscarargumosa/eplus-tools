@@ -152,14 +152,46 @@ const App = (() => {
     if (acct) acct.style.display = '';
     updateUserUI();
 
-    // Navigate to hash or default
-    const hash = location.hash.slice(1) || 'dashboard';
+    // Navigate to hash or default. Sin el área beta «proyectos» el inicio
+    // (Dashboard de proyectos) estaría cerrado: se entra por Convocatorias.
+    const hasProyectos = typeof BetaAccess === 'undefined' || BetaAccess.has('proyectos');
+    const hash = location.hash.slice(1) || (hasProyectos ? 'dashboard' : 'convocatorias');
     navigate(hash, false);
+    loadDashboardRecent();
+    // Área recién concedida: «Ya tienes acceso a …» una sola vez.
+    if (typeof BetaAccess !== 'undefined') BetaAccess.showGranted();
+  }
+
+  /* ── Dashboard: proyectos recientes (solo con el área «proyectos») ── */
+  function loadDashboardRecent() {
+    const recentEl = document.getElementById('dashboard-recent-projects');
+    if (!recentEl) return;
+    if (typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) { recentEl.innerHTML = ''; return; }
+    API.get('/intake/projects').then(projects => {
+      const list = Array.isArray(projects) ? projects : (projects.data || []);
+      if (!list.length) {
+        recentEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-6">No projects yet. Start by designing your first project above.</p>';
+        return;
+      }
+      const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      recentEl.innerHTML = list.slice(0, 5).map(p => `
+        <div class="flex items-center gap-3 px-4 py-3 bg-white rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all mb-2" onclick="if(typeof Intake!=='undefined'){Intake.openProject('${esc(p.id)}')}">
+          <div class="w-8 h-8 rounded-lg bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[#d6e949] text-base">description</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-bold text-on-surface truncate">${esc(p.name || 'Untitled')}</div>
+            <div class="text-[10px] text-on-surface-variant">${esc(p.type || '')} &middot; ${esc(p.status || 'draft')}</div>
+          </div>
+          <span class="material-symbols-outlined text-on-surface-variant/30 text-sm">chevron_right</span>
+        </div>`).join('');
+    }).catch(() => { recentEl.innerHTML = ''; });
   }
 
   /* ── Auth callbacks ────────────────────────────────────────── */
   function onAuth(user) {
     currentUser = user;
+    if (typeof BetaAccess !== 'undefined') BetaAccess.setUser(user);
     // Venía de una pantalla de acceso o con ?volver=: vuelta adonde quería ir.
     const volver = safeVolver();
     if (volver && volver !== '/' && !volver.startsWith('/#')) {
@@ -219,6 +251,12 @@ const App = (() => {
     if (currentUser.role === 'admin' || currentUser.role === 'scribe') {
       document.getElementById('admin-nav-item')?.classList.remove('hidden');
     }
+    // «Usuarios y accesos» (fase beta): solo admin, con el contador de solicitudes.
+    if (currentUser.role === 'admin') {
+      document.getElementById('admin-users-nav')?.classList.remove('hidden');
+      if (typeof AdminUsers !== 'undefined') AdminUsers.refreshCount();
+    }
+    if (typeof BetaAccess !== 'undefined') BetaAccess.decorate();
   }
 
   /* ── Auth tab switcher ─────────────────────────────────────── */
@@ -364,10 +402,13 @@ const App = (() => {
     // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
     // Sin sesión no se navega por la app: a entrar.
     if (!currentUser) { openAuth('login'); return; }
-    if (ADMIN_ROUTES.includes(route) && !isAdmin()) {
+    if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (route === 'admin-users' && currentUser.role !== 'admin')) {
       route = 'my-projects';
       if (pushHash) location.hash = route;
     }
+    // Fase beta: área no concedida → pantalla «Solicitar acceso» en vez del módulo.
+    const lockedArea = typeof BetaAccess !== 'undefined' ? BetaAccess.blockedArea(route) : null;
+    if (lockedArea && route === 'create') route = 'my-projects';
     // Legacy: #create no longer has its own panel — open the modal over Mis Proyectos
     if (route === 'create') {
       if (currentRoute !== 'my-projects') {
@@ -404,8 +445,9 @@ const App = (() => {
     // Update panels
     document.querySelectorAll('#content-area .panel').forEach(p => p.classList.remove('active'));
     // Las rutas de cuenta comparten el panel #panel-account.
-    const panelRoute = ACCOUNT_ROUTES.includes(route) ? 'account' : route;
+    const panelRoute = lockedArea ? 'beta' : ACCOUNT_ROUTES.includes(route) ? 'account' : route;
     const panel = document.getElementById(`panel-${panelRoute}`);
+    if (lockedArea && panel) BetaAccess.renderInto(panel, lockedArea);
     if (panel) {
       panel.classList.add('active');
     } else {
@@ -460,9 +502,13 @@ const App = (() => {
       'atlas-stats':    'Atlas',
       analysis:         'Análisis — Experiencia',
       admin:            'Admin — Data E+',
+      'admin-users':    'Usuarios y accesos',
       engagement:       'Engagement'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
+
+    // Área cerrada: solo la pantalla beta, sin iniciar el módulo (no pide datos).
+    if (lockedArea) return;
 
     // Initialize module when navigating to it
     {
@@ -474,6 +520,7 @@ const App = (() => {
         Intake.init();
       }
       if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
+      if (route === 'admin-users' && typeof AdminUsers !== 'undefined') AdminUsers.init();
       if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
       if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
       if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
@@ -527,6 +574,7 @@ const App = (() => {
   function updateCurrentUser(patch) {
     if (!currentUser) return;
     currentUser = { ...currentUser, ...patch };
+    if (typeof BetaAccess !== 'undefined' && patch && patch.areas) BetaAccess.setUser(currentUser);
     updateUserUI();
   }
 
@@ -616,28 +664,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Dashboard — load recent projects ────────────────────── */
-  const recentEl = document.getElementById('dashboard-recent-projects');
-  if (recentEl) {
-    API.get('/intake/projects').then(projects => {
-      const list = Array.isArray(projects) ? projects : (projects.data || []);
-      if (!list.length) {
-        recentEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-6">No projects yet. Start by designing your first project above.</p>';
-        return;
-      }
-      recentEl.innerHTML = list.slice(0, 5).map(p => `
-        <div class="flex items-center gap-3 px-4 py-3 bg-white rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all mb-2" onclick="if(typeof Intake!=='undefined'){Intake.openProject('${p.id}')}">
-          <div class="w-8 h-8 rounded-lg bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-[#d6e949] text-base">description</span>
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="text-sm font-bold text-on-surface truncate">${p.name || 'Untitled'}</div>
-            <div class="text-[10px] text-on-surface-variant">${p.type || ''} &middot; ${p.status || 'draft'}</div>
-          </div>
-          <span class="material-symbols-outlined text-on-surface-variant/30 text-sm">chevron_right</span>
-        </div>`).join('');
-    }).catch(() => {
-      recentEl.innerHTML = '<p class="text-xs text-on-surface-variant text-center py-4">Log in to see your projects.</p>';
-    });
-  }
+  /* Dashboard: los proyectos recientes los carga App tras entrar (loadDashboardRecent). */
 });

@@ -68,3 +68,17 @@
    ningún sitio para un invitado, así que solo quedan la marca y «Iniciar sesión». */
 .efs-topbar--invitado .efs-topbar__nav,
 .efs-topbar--invitado .efs-topbar__toggle { display: none !important; }
+
+/* Fase beta: «Beta» con candado junto a las áreas cerradas (js/topbar.js markAreas).
+   En escritorio va como distintivo sobre el enlace (no ocupa ancho: el menú ya va
+   justo); en el menú plegable, en línea. */
+.efs-topbar__menu a[data-beta-locked] { position: relative; }
+.efs-topbar__beta { position: absolute; top: -13px; right: -10px; display: inline-flex; align-items: center; gap: 2px;
+  padding: 0 5px 0 4px; border-radius: 999px; background: #d6e949; color: #3c45a3;
+  font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1.6;
+  white-space: nowrap; pointer-events: none; }
+.efs-topbar__beta svg { width: 9px; height: 9px; }
+@media (max-width: 1024px) {
+  .efs-topbar__beta { position: static; margin-left: 6px; vertical-align: 1px; font-size: 10px; padding: 1px 6px 1px 5px; }
+  .efs-topbar__beta svg { width: 10px; height: 10px; }
+}

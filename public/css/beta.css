@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════════
+   Fase beta cerrada — pantalla «Solicitar acceso», modal, etiqueta
+   «Beta» y aviso «Ya tienes acceso» (js/beta-access.js).
+   Sin Tailwind: lo usan la app y la academia. Marca Studio (oct-2026):
+   azul #3c45a3, lima #d6e949 solo en el botón principal, tinta #222351.
+   ═══════════════════════════════════════════════════════════════ */
+.beta-lock { width: 12px; height: 12px; flex-shrink: 0; }
+
+/* Etiqueta en la barra lateral y en botones */
+.beta-tag { display: inline-flex; align-items: center; gap: 3px; margin-left: auto;
+  padding: 1px 7px 1px 6px; border-radius: 999px; background: rgba(214,233,73,.16); color: #d6e949;
+  font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1.6;
+  white-space: nowrap; flex-shrink: 0; }
+.beta-tag .beta-lock { width: 10px; height: 10px; }
+.nav-link.beta-locked { opacity: .82; }
+/* El texto del enlace puede partirse en dos líneas; la etiqueta, nunca.
+   En la barra lateral (240 px) la etiqueta va más compacta. */
+.nav-link .beta-tag { padding: 0 5px 0 4px; gap: 2px; font-size: 9px; letter-spacing: .02em; }
+.nav-link .beta-tag .beta-lock { width: 9px; height: 9px; }
+.nav-link .beta-label { flex: 1; min-width: 0; line-height: 1.25; }
+/* Sobre fondo claro (botones de la app) */
+.beta-on-light .beta-tag, button .beta-tag { background: #e7e1f3; color: #3c45a3; margin-left: 6px; }
+
+/* Pantalla (panel de la SPA / academia) */
+.beta-screen { max-width: 640px; margin: 48px auto; padding: 0 16px; box-sizing: border-box; }
+.beta-card { position: relative; background: #fff; border: 1px solid #d6d3dc; border-radius: 20px;
+  padding: 32px; color: #222351; font-family: 'Poppins', system-ui, sans-serif;
+  box-shadow: 0 1px 2px rgba(60,69,163,.06), 0 6px 20px rgba(60,69,163,.06); box-sizing: border-box; }
+.beta-card .beta-eyebrow { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px;
+  background: #e7e1f3; color: #3c45a3; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.beta-card .beta-title { margin: 16px 0 10px; font-size: 22px; line-height: 1.3; font-weight: 700; color: #3c45a3; }
+.beta-card .beta-text { margin: 0 0 16px; font-size: 14px; line-height: 1.6; color: #222351; }
+.beta-card .beta-muted { color: #55577a; font-weight: 400; }
+.beta-form { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.beta-card .beta-label { font-size: 13px; font-weight: 600; color: #222351; }
+.beta-form textarea { width: 100%; box-sizing: border-box; min-height: 88px; padding: 12px 44px 12px 14px; border: 1px solid #d6d3dc;
+  border-radius: 12px; font: inherit; font-size: 14px; color: #222351; background: #f8f7f5; resize: vertical; }
+.beta-form textarea:focus { outline: 2px solid #3c45a3; outline-offset: 1px; background: #fff; }
+.beta-btn { align-self: flex-start; margin-top: 6px; padding: 12px 28px; border: 0; border-radius: 999px;
+  background: #d6e949; color: #3c45a3; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+  transition: background-color .15s ease, transform .15s ease; }
+.beta-btn:hover { background: #c3d63a; }
+.beta-btn:active { transform: scale(.98); }
+.beta-btn:focus-visible, .beta-close:focus-visible { outline: 2px solid #3c45a3; outline-offset: 3px; }
+.beta-btn:disabled { opacity: .6; cursor: progress; }
+.beta-card .beta-error { padding: 10px 12px; border-radius: 8px; background: #ffdad6; color: #ba1a1a; font-size: 13px; }
+.beta-card .beta-status { margin-top: 8px; padding: 14px 16px; border-radius: 12px; background: #f0edeb; color: #222351;
+  font-size: 14px; line-height: 1.55; border-left: 4px solid #3c45a3; }
+.beta-card .beta-foot { margin: 22px 0 0; padding-top: 16px; border-top: 1px solid #d6d3dc; font-size: 13px; line-height: 1.6; color: #55577a; }
+.beta-card .beta-foot a { color: #3c45a3; font-weight: 600; }
+
+/* Modal */
+.beta-modal { position: fixed; inset: 0; z-index: 90; display: flex; align-items: center; justify-content: center;
+  padding: 16px; background: rgba(34,35,81,.55); box-sizing: border-box; overflow-y: auto; }
+.beta-modal .beta-card { width: 100%; max-width: 560px; max-height: calc(100vh - 32px); overflow-y: auto; }
+.beta-close { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; border: 0; border-radius: 999px;
+  background: transparent; color: #55577a; font-size: 26px; line-height: 1; cursor: pointer; }
+.beta-close:hover { background: #f0edeb; color: #3c45a3; }
+
+/* Aviso «Ya tienes acceso» */
+.beta-granted { position: fixed; top: 80px; left: 50%; transform: translateX(-50%); z-index: 95;
+  width: calc(100% - 32px); max-width: 480px; box-sizing: border-box; display: flex; gap: 12px; align-items: flex-start;
+  padding: 16px 18px; background: #fff; border: 1px solid #d6e949; border-left: 6px solid #d6e949; border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(34,35,81,.18); color: #222351; font-family: 'Poppins', system-ui, sans-serif; font-size: 14px; line-height: 1.5; }
+.beta-granted strong { display: block; color: #3c45a3; }
+.beta-granted span { color: #55577a; font-size: 13px; }
+.beta-granted button { margin-left: auto; border: 0; background: transparent; color: #55577a; font-size: 22px; line-height: 1; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .beta-screen { margin: 24px auto; }
+  .beta-card { padding: 24px 20px; }
+  .beta-card .beta-title { font-size: 19px; padding-right: 24px; }
+  .beta-btn { align-self: stretch; }
+}
+@media (prefers-reduced-motion: reduce) { .beta-btn { transition: none; } }

@@ -44,7 +44,13 @@ const API = (() => {
     }
 
     const json = await res.json();
-    if (!json.ok) throw json.error || { code: 'UNKNOWN', message: 'Error en la solicitud' };
+    if (!json.ok) {
+      // Fase beta: área no concedida → la SPA enseña «Solicitar acceso» (beta-access.js).
+      if (json.error && json.error.code === 'AREA_REQUIRED') {
+        window.dispatchEvent(new CustomEvent('area:required', { detail: json.error }));
+      }
+      throw json.error || { code: 'UNKNOWN', message: 'Error en la solicitud' };
+    }
     return json.data;
   }
 

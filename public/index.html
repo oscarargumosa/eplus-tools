@@ -66,6 +66,8 @@ tailwind.config = {
 
 <!-- ═══ TOP BAR común (la comparten la app, la academia y las páginas públicas) ═══ -->
 <link rel="stylesheet" href="/css/topbar.css">
+<!-- Fase beta: pantalla «Solicitar acceso», etiquetas y avisos (js/beta-access.js) -->
+<link rel="stylesheet" href="/css/beta.css">
 </head>
 
 <body class="bg-surface text-on-surface font-body text-sm font-medium tracking-tight min-h-screen">
@@ -415,6 +417,14 @@ tailwind.config = {
             <span class="material-symbols-outlined text-[20px]">monitoring</span>
             Engagement
           </a>
+          <!-- Fase beta: quién tiene qué área y solicitudes pendientes (solo role admin) -->
+          <a href="#admin-users" id="admin-users-nav"
+            class="nav-link hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+            data-route="admin-users">
+            <span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+            <span class="flex-1 min-w-0 truncate">Usuarios y accesos</span>
+            <span id="admin-users-count" class="hidden min-w-[22px] h-[22px] px-1.5 rounded-full bg-secondary-fixed text-primary text-[11px] font-bold inline-flex items-center justify-center" aria-label="solicitudes pendientes"></span>
+          </a>
         </div>
       </div>
 
@@ -553,6 +563,9 @@ tailwind.config = {
     <main class="p-4 lg:p-8" id="content-area">
 
       <!-- Dashboard panel -->
+      <!-- Fase beta: área no concedida (lo pinta BetaAccess.renderInto desde app.js) -->
+      <section id="panel-beta" class="panel" aria-live="polite"></section>
+
       <section id="panel-dashboard" class="panel active">
 
         <!-- Hero -->
@@ -1949,6 +1962,57 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL ADMIN ══════════════════════════════════════════ -->
+      <!-- ═══ USUARIOS Y ACCESOS (fase beta, solo admin) — js/admin.js AdminUsers ═══ -->
+      <section id="panel-admin-users" class="panel">
+        <div class="max-w-6xl mx-auto py-8 px-4">
+          <div class="mb-6">
+            <h1 class="font-headline text-2xl font-extrabold text-primary tracking-tight">Usuarios y accesos</h1>
+            <p class="text-sm text-on-surface-variant mt-1">Fase beta cerrada: abre Proyectos o Academia a cada persona y responde a sus solicitudes. Al conceder un área le llega un correo.</p>
+          </div>
+          <div class="flex flex-wrap gap-3 items-end mb-4">
+            <div class="flex-1 min-w-[200px]">
+              <label for="au-q" class="block text-xs font-semibold text-on-surface-variant mb-1">Buscar</label>
+              <input id="au-q" type="search" placeholder="Nombre o email" autocomplete="off"
+                class="w-full border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-white">
+            </div>
+            <div>
+              <label for="au-filter" class="block text-xs font-semibold text-on-surface-variant mb-1">Mostrar</label>
+              <select id="au-filter" class="border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-white">
+                <option value="all">Todos</option>
+                <option value="with">Con acceso</option>
+                <option value="without">Sin acceso</option>
+                <option value="pending">Con solicitud pendiente</option>
+              </select>
+            </div>
+          </div>
+          <div id="au-status" class="sr-only" role="status" aria-live="polite"></div>
+          <div class="overflow-x-auto border border-outline-variant/30 rounded-xl bg-white">
+            <table class="w-full text-sm">
+              <thead class="bg-surface-variant/30 text-xs uppercase text-on-surface-variant">
+                <tr>
+                  <th class="text-left p-3 font-medium">Nombre</th>
+                  <th class="text-left p-3 font-medium">Email</th>
+                  <th class="text-left p-3 font-medium">Verificado</th>
+                  <th class="text-left p-3 font-medium whitespace-nowrap">Alta</th>
+                  <th class="text-left p-3 font-medium whitespace-nowrap">Último inicio de sesión</th>
+                  <th class="text-right p-3 font-medium">Proyectos</th>
+                  <th class="text-left p-3 font-medium">Áreas</th>
+                  <th class="text-left p-3 font-medium">Solicitudes pendientes</th>
+                </tr>
+              </thead>
+              <tbody id="au-tbody"></tbody>
+            </table>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 mt-4 text-sm">
+            <span id="au-pageinfo" class="text-on-surface-variant"></span>
+            <div class="flex gap-2">
+              <button type="button" id="au-prev" class="px-4 py-2 rounded-full border border-outline-variant/50 text-primary font-semibold disabled:opacity-40">Anterior</button>
+              <button type="button" id="au-next" class="px-4 py-2 rounded-full border border-outline-variant/50 text-primary font-semibold disabled:opacity-40">Siguiente</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="panel-admin" class="panel">
         <div class="max-w-6xl mx-auto py-8 px-4">
 
@@ -3175,6 +3239,7 @@ tailwind.config = {
 
 <!-- ═══ Scripts ═════════════════════════════════════════════════ -->
 <script src="/js/api.js"></script>
+<script src="/js/beta-access.js"></script>
 <script src="/js/track.js?v=20260627t"></script>
 <script src="/js/auth.js"></script>
 <script src="/js/components/phase-tabs.js"></script>
@@ -3297,6 +3362,8 @@ document.getElementById('mini-modal-input-text').addEventListener('keydown', e =
 
 /* Create-project modal: open/close + ESC to dismiss */
 window.openCreateModal = function() {
+  // Fase beta: crear proyecto pide el área «proyectos».
+  if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
   const m = document.getElementById('create-modal');
   if (!m) return;
   m.classList.remove('hidden');

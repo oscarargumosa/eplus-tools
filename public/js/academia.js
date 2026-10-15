@@ -77,6 +77,8 @@
         API.startAutoRefresh();
       }
     } catch { user = null; }
+    // Fase beta: áreas del usuario (etiquetas del menú y pantalla «Solicitar acceso»).
+    if (user && typeof BetaAccess !== 'undefined') { BetaAccess.setUser(user); BetaAccess.showGranted(); }
     const back = document.getElementById('topbar-cta-back');
     const acct = document.getElementById('topbar-cta-account');
     if (user && acct) {
@@ -129,11 +131,20 @@
   async function render() {
     cleanup.forEach(fn => fn()); cleanup = [];
     const parts = location.pathname.replace(/\/+$/, '').split('/').slice(2).map(decodeURIComponent);
+    // Fase beta: sin el área «academia», pantalla «Solicitar acceso» (no se piden datos).
+    if (user && typeof BetaAccess !== 'undefined' && !BetaAccess.has('academia')) {
+      BetaAccess.renderInto(root, 'academia');
+      return;
+    }
     try {
       if (!parts.length) await viewCatalog();
       else if (parts.length === 1) await viewCourse(parts[0]);
       else await viewLesson(parts[0], parts[1]);
     } catch (e) {
+      if (e?.code === 'AREA_REQUIRED' && typeof BetaAccess !== 'undefined') {
+        BetaAccess.renderInto(root, e.area || 'academia');
+        return;
+      }
       if (e?.code === 'UNAUTHORIZED' && !user) {
         // Sin sesión la academia no se ve (acceso cerrado a invitados): a entrar y volver aquí.
         location.replace('/entrar?volver=' + encodeURIComponent(location.pathname));
