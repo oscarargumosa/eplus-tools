@@ -67,33 +67,47 @@ async function sendEmail({ to, subject, html, text }) {
 
 /* ── Templates ─────────────────────────────────────────────── */
 
+/* Plantilla común (manual de marca EU Funding Studio, oct-2026): cabecera azul #3C45A3 con el
+   logo en PNG (los SVG no se ven en Gmail/Outlook), titular azul en Poppins, botón en píldora
+   lima con texto azul y pie crema. Tablas + estilos en línea para que aguante en Outlook. */
+const FONT = "Poppins,'Segoe UI',Helvetica,Arial,sans-serif";
+
 function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
+  const logo = `${appUrl()}/img/marca/logo-horizontal-blanco-correo.png`;
   return `<!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><title>${title}</title></head>
-<body style="margin:0;padding:0;background:#f5f6fa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f6fa;padding:40px 16px;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>${title}</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>a{color:#3c45a3}</style>
+</head>
+<body style="margin:0;padding:0;background:#f8f7f5;font-family:${FONT};color:#222351;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f8f7f5" style="background:#f8f7f5;padding:40px 16px;">
     <tr><td align="center">
-      <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;">
-        <tr><td style="background:#3c45a3;padding:24px 32px;">
-          <div style="display:inline-block;background:#d6e949;width:32px;height:32px;border-radius:6px;vertical-align:middle;"></div>
-          <span style="color:#ffffff;font-size:18px;font-weight:600;margin-left:12px;vertical-align:middle;">EU Funding Studio</span>
+      <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #d6d3dc;">
+        <tr><td bgcolor="#3c45a3" style="background:#3c45a3;padding:28px 32px;">
+          <a href="${appUrl()}" style="text-decoration:none;"><img src="${logo}" width="224" height="24" alt="EU Funding Studio" style="display:block;border:0;outline:none;width:224px;height:24px;color:#ffffff;font-family:${FONT};font-size:18px;font-weight:600;"></a>
         </td></tr>
-        <tr><td style="padding:32px;">
-          <h1 style="margin:0 0 16px;font-size:22px;color:#111827;">${title}</h1>
-          <div style="font-size:15px;color:#374151;line-height:1.6;">${intro}</div>
+        <tr><td style="padding:36px 32px 32px;">
+          <h1 style="margin:0 0 16px;font-family:${FONT};font-size:24px;line-height:1.25;font-weight:600;color:#3c45a3;">${title}</h1>
+          <div style="font-family:${FONT};font-size:15px;color:#222351;line-height:1.65;">${intro}</div>
           ${buttonUrl ? `
-          <div style="margin:28px 0;">
-            <a href="${buttonUrl}" style="display:inline-block;background:#d6e949;color:#3c45a3;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;">${buttonLabel}</a>
-          </div>
-          <div style="font-size:13px;color:#6b7280;line-height:1.5;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:30px 0 26px;">
+            <tr><td bgcolor="#d6e949" style="background:#d6e949;border-radius:999px;">
+              <a href="${buttonUrl}" style="display:inline-block;padding:14px 32px;border-radius:999px;background:#d6e949;color:#3c45a3;text-decoration:none;font-family:${FONT};font-weight:600;font-size:15px;line-height:1.2;">${buttonLabel}</a>
+            </td></tr>
+          </table>
+          <div style="font-family:${FONT};font-size:13px;color:#55577a;line-height:1.5;">
             O copia este enlace en tu navegador:<br>
             <span style="color:#3c45a3;word-break:break-all;">${buttonUrl}</span>
           </div>` : ''}
-          ${footer ? `<div style="margin-top:28px;padding-top:20px;border-top:1px solid #e5e7eb;font-size:13px;color:#6b7280;line-height:1.5;">${footer}</div>` : ''}
+          ${footer ? `<div style="margin-top:28px;padding-top:20px;border-top:1px solid #d6d3dc;font-family:${FONT};font-size:13px;color:#55577a;line-height:1.5;">${footer}</div>` : ''}
         </td></tr>
-        <tr><td style="background:#fafbfc;padding:16px 32px;font-size:12px;color:#9ca3af;text-align:center;">
-          EU Funding Studio · <a href="${appUrl()}" style="color:#9ca3af;">${appUrl().replace(/^https?:\/\//, '')}</a>
+        <tr><td bgcolor="#f0edeb" style="background:#f0edeb;padding:18px 32px;font-family:${FONT};font-size:12px;color:#55577a;text-align:center;">
+          EU Funding Studio · <a href="${appUrl()}" style="color:#3c45a3;">${appUrl().replace(/^https?:\/\//, '')}</a>
         </td></tr>
       </table>
     </td></tr>

@@ -2,18 +2,21 @@
    Web pública — hoja común de las páginas de contenido.
    Diales (criterio de composición del ecosistema): varianza 5,
    movimiento 3, densidad 4. Índice y lectura, no escaparate.
-   Marca: navy #3c45a3 · amarillo #d6e949 · lavanda. Un solo acento.
+   Marca (manual oct-2026): azul #3c45a3 · lima #d6e949 · lavanda ·
+   crema. Un solo acento lima por pantalla (aquí, el icono de la cabecera).
    ═══════════════════════════════════════════════════════════════ */
 :root {
   --navy:      #3c45a3;
-  --yellow:    #d6e949;
+  --violet:    #514daa;
+  --yellow:    #d6e949;       /* lima */
   --lav:       #997fc7;
-  --lav-soft:  #f1ecf7;
+  --lav-soft:  #e7e1f3;
+  --cream:     #f0edeb;
   --ink:       #222351;
-  --muted:     #474551;
-  --line:      #e3ddec;
-  --surface:   #fdfdfd;
-  --radius:    12px;          /* un solo radio en toda la web */
+  --muted:     #55577a;
+  --line:      #d6d3dc;
+  --surface:   #ffffff;
+  --radius:    20px;          /* radio de tarjetas y bloques */
 }
 
 * { box-sizing: border-box; }
@@ -32,9 +35,9 @@ body.efs-web {
 .efs-web .wrap--read { width: min(720px, 92%); }
 
 .efs-web h1, .efs-web h2, .efs-web h3 { color: var(--navy); margin: 0; }
-.efs-web h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -0.02em; font-weight: 800; }
+.efs-web h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -0.02em; font-weight: 700; }
 .efs-web h2 { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.2; font-weight: 700; }
-.efs-web h3 { font-size: 19px; line-height: 1.3; font-weight: 700; }
+.efs-web h3 { font-size: 19px; line-height: 1.3; font-weight: 600; }
 .efs-web p  { max-width: 65ch; }
 /* Solo el contenido: si esto fuera `.efs-web a` pintaría también el menú superior,
    que va sobre fondo navy, y las pestañas desaparecerían (web.css carga después
@@ -42,23 +45,33 @@ body.efs-web {
 .efs-web main a { color: var(--navy); }
 
 /* ── Cabecera de página ──────────────────────────────────────────
-   Alineada a la izquierda: el hero centrado por defecto está
-   desaconsejado a partir de varianza 4. */
-.efs-web .page-head { padding: 4.5rem 0 2.5rem; border-bottom: 1px solid var(--line); }
-.efs-web .page-head .lead { font-size: clamp(17px, 2vw, 20px); color: var(--muted); margin: 1rem 0 0; }
+   Bloque azul con texto blanco (piezas del manual) y el icono de
+   marca en lima como acento. Alineada a la izquierda. */
+.efs-web .page-head {
+  position: relative; overflow: hidden;
+  margin-top: 2.5rem; padding: 4rem 3.5rem 3.5rem;
+  background: var(--navy); border-radius: 24px;
+}
+.efs-web .page-head h1 { color: #fff; }
+.efs-web .page-head .lead { font-size: clamp(17px, 2vw, 20px); color: var(--lav-soft); margin: 1rem 0 0; position: relative; }
+.efs-web .page-head::after {
+  content: ''; position: absolute; right: 3.5rem; top: 50%; transform: translateY(-50%);
+  width: 132px; height: 132px; opacity: .95; pointer-events: none;
+  background: url('/img/marca/icono-lima.svg') no-repeat center / contain;
+}
 
-/* ── Rejilla de recursos ─────────────────────────────────────── */
+/* ── Rejilla de recursos: tarjetas crema ──────────────────────── */
 .efs-web .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; padding: 3rem 0; }
 .efs-web .card {
   display: flex; flex-direction: column; gap: .6rem;
-  padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius);
-  background: #fff; text-decoration: none; color: inherit;
-  transition: border-color .15s ease, transform .15s ease;
+  padding: 1.75rem; border-radius: var(--radius);
+  background: var(--cream); text-decoration: none; color: inherit;
+  transition: box-shadow .15s ease, transform .15s ease;
 }
-.efs-web .card:hover { border-color: var(--lav); transform: translateY(-2px); }
+.efs-web .card:hover { transform: translateY(-2px); box-shadow: 0 0 0 2px var(--navy); }
 .efs-web .card .tag {
-  align-self: flex-start; font-size: 12px; font-weight: 800; letter-spacing: .1em;
-  color: var(--navy); background: var(--yellow); padding: .2rem .5rem; border-radius: 4px;
+  align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .1em;
+  color: var(--navy); background: #fff; padding: .2rem .75rem; border-radius: 999px;
 }
 .efs-web .card p { font-size: 14.5px; color: var(--muted); margin: 0; }
 .efs-web .card .meta { font-size: 13px; color: var(--muted); margin-top: auto; padding-top: .6rem; }
@@ -68,12 +81,15 @@ body.efs-web {
 .efs-web .soon { padding: 2.5rem 0 4rem; border-top: 1px solid var(--line); }
 .efs-web .soon ul { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: .75rem; }
 .efs-web .soon li { display: flex; gap: .75rem; align-items: baseline; color: var(--muted); font-size: 15px; }
-.efs-web .soon li b { color: var(--navy); font-weight: 700; }
+.efs-web .soon li b { color: var(--navy); font-weight: 600; }
 
 /* ── Artículo ────────────────────────────────────────────────── */
 .efs-web .article { padding: 3.5rem 0 4rem; }
-.efs-web .article .back { display: inline-block; font-size: 14px; margin-bottom: 1.5rem; color: var(--muted); text-decoration: none; }
-.efs-web .article .back:hover { color: var(--navy); }
+.efs-web .article .back {
+  display: inline-block; font-size: 14px; margin-bottom: 1.5rem; color: var(--navy); text-decoration: none;
+  padding: .3rem .9rem; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--line);
+}
+.efs-web .article .back:hover { box-shadow: inset 0 0 0 1.5px var(--navy); }
 /* Los títulos de artículo son largos de por sí: al tamaño de portada se van a
    tres o cuatro líneas, que se lee como un fallo de escala. */
 .efs-web .article h1 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; }
@@ -81,12 +97,19 @@ body.efs-web {
 .efs-web .article h2 { margin: 2.25rem 0 .75rem; }
 .efs-web .article ul, .efs-web .article ol { max-width: 65ch; padding-left: 1.25rem; }
 .efs-web .article li { margin-bottom: .5rem; }
+.efs-web .article li::marker { color: var(--lav); }
 .efs-web .article strong { color: var(--navy); }
+/* El cierre en cursiva del artículo (llamada a la Academia) va en tarjeta crema. */
+.efs-web .article p:last-child:has(> em:only-child) {
+  background: var(--cream); border-radius: var(--radius); padding: 1.25rem 1.5rem; margin-top: 2.5rem;
+}
 
 /* ── Cierre ──────────────────────────────────────────────────── */
 .efs-web .foot { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: 14px; }
 
 @media (max-width: 900px) {
   .efs-web .cards { grid-template-columns: 1fr; }
-  .efs-web .page-head { padding: 3rem 0 2rem; }
+  .efs-web .page-head { margin-top: 1.5rem; padding: 2.25rem 1.5rem 2rem; border-radius: 20px; }
+  .efs-web .page-head h1 { padding-right: 64px; }
+  .efs-web .page-head::after { right: 1.5rem; top: 2.25rem; transform: none; width: 52px; height: 52px; }
 }

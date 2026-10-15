@@ -124,17 +124,17 @@ const Research = (() => {
       // Failed sources — collapsible section
       if (failed.length) {
         html += `
-          <div class="mt-6 border border-amber-300/30 rounded-xl overflow-hidden">
-            <button id="btn-toggle-failed" class="w-full flex items-center justify-between px-4 py-3 bg-amber-50 hover:bg-amber-100/80 transition-colors text-left">
-              <span class="flex items-center gap-2 text-sm text-amber-700 font-medium">
+          <div class="mt-6 border border-[#d6e949] rounded-xl overflow-hidden">
+            <button id="btn-toggle-failed" class="w-full flex items-center justify-between px-4 py-3 bg-[#f3f8d2] hover:bg-secondary-fixed/40 transition-colors text-left">
+              <span class="flex items-center gap-2 text-sm text-ink font-medium">
                 <span class="material-symbols-outlined text-[18px]">warning</span>
                 ${failed.length} source${failed.length > 1 ? 's' : ''} could not be downloaded automatically
               </span>
-              <span class="material-symbols-outlined text-[16px] text-amber-600 toggle-arrow">expand_more</span>
+              <span class="material-symbols-outlined text-[16px] text-primary toggle-arrow">expand_more</span>
             </button>
             <div id="failed-sources-list" class="hidden">
-              <div class="px-4 py-2 bg-amber-50/50 border-b border-amber-200/30">
-                <p class="text-xs text-amber-700/70">These papers need to be downloaded manually from the source website and uploaded via "Upload Paper".</p>
+              <div class="px-4 py-2 bg-[#f3f8d2]/50 border-b border-[#d6e949]/50">
+                <p class="text-xs text-ink/80">These papers need to be downloaded manually from the source website and uploaded via "Upload Paper".</p>
               </div>
               ${renderSourceCards(failed, 'failed')}
             </div>
@@ -204,7 +204,7 @@ const Research = (() => {
             ${s.topics?.length ? `<div class="flex flex-wrap gap-1 mt-2">${s.topics.slice(0, 5).map(t => `<span class="inline-block px-1.5 py-0.5 rounded bg-primary/8 text-primary text-[10px]">${esc(t)}</span>`).join('')}</div>` : ''}
           </div>
           <div class="flex-shrink-0 flex flex-col gap-1.5">
-            ${s.url ? `<a href="${s.url}" target="_blank" rel="noopener" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant text-xs hover:text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-[14px]">open_in_new</span>View</a>` : ''}
+            ${s.url ? `<a href="${s.url}" target="_blank" rel="noopener" class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-xs hover:text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-[14px]">open_in_new</span>View</a>` : ''}
             ${mode === 'my' || mode === 'failed' ? `<button class="btn-delete-source flex items-center gap-1 px-3 py-1.5 rounded-lg text-on-surface-variant text-xs hover:text-error hover:bg-error/10 transition-colors" data-id="${s.id}"><span class="material-symbols-outlined text-[14px]">delete</span>Remove</button>` : ''}
           </div>
         </div>
@@ -242,7 +242,7 @@ const Research = (() => {
         <div class="flex items-start justify-between gap-4">
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 mb-1 flex-wrap">
-              ${r.is_open_access ? '<span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold bg-green-500/10 text-green-600">Open Access</span>' : ''}
+              ${r.is_open_access ? '<span class="inline-block px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-primary">Open Access</span>' : ''}
               ${r.publication_year ? `<span class="text-[11px] text-on-surface-variant">${r.publication_year}</span>` : ''}
               ${r.citation_count ? `<span class="text-[11px] text-on-surface-variant">Cited: ${r.citation_count}</span>` : ''}
               ${r.source_name ? `<span class="text-[11px] text-on-surface-variant truncate max-w-[200px]">${esc(r.source_name)}</span>` : ''}
@@ -254,10 +254,10 @@ const Research = (() => {
           </div>
           <div class="flex-shrink-0 flex flex-col gap-1.5">
             ${r.saved_id
-              ? `<span class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-green-500/10 text-green-600 text-xs font-medium"><span class="material-symbols-outlined text-[14px]">check</span>Saved</span>`
-              : `<button class="btn-save-source flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-xs font-medium hover:bg-primary/20 transition-colors" data-idx="${i}"><span class="material-symbols-outlined text-[14px]">bookmark_add</span>Save</button>`
+              ? `<span class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-medium"><span class="material-symbols-outlined text-[14px]">check</span>Saved</span>`
+              : `<button class="btn-save-source flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-medium hover:bg-primary/20 transition-colors" data-idx="${i}"><span class="material-symbols-outlined text-[14px]">bookmark_add</span>Save</button>`
             }
-            ${r.url ? `<a href="${r.url}" target="_blank" rel="noopener" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant text-xs hover:text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-[14px]">open_in_new</span>View</a>` : ''}
+            ${r.url ? `<a href="${r.url}" target="_blank" rel="noopener" class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-xs hover:text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-[14px]">open_in_new</span>View</a>` : ''}
           </div>
         </div>
       </div>
@@ -371,7 +371,7 @@ const Research = (() => {
   }
 
   function sourceApiBadge(api) {
-    const m = { openalex: 'bg-blue-500/10 text-blue-600', upload: 'bg-purple-500/10 text-purple-600', cordis: 'bg-amber-500/10 text-amber-600' };
+    const m = { openalex: 'bg-primary/10 text-primary', upload: 'bg-lavender-soft text-violet', cordis: 'bg-secondary-fixed/70 text-primary' };
     return m[api] || 'bg-surface-container text-on-surface-variant';
   }
   function sourceApiLabel(api) {
@@ -379,7 +379,7 @@ const Research = (() => {
     return m[api] || api;
   }
   function statusBadge(s) {
-    const m = { reference: 'bg-surface-container text-on-surface-variant', downloaded: 'bg-blue-500/10 text-blue-600', extracted: 'bg-purple-500/10 text-purple-600', vectorized: 'bg-green-500/10 text-green-600', error: 'bg-error/10 text-error' };
+    const m = { reference: 'bg-surface-container text-on-surface-variant', downloaded: 'bg-primary/10 text-primary', extracted: 'bg-lavender-soft text-violet', vectorized: 'bg-secondary-fixed text-primary', error: 'bg-error/10 text-error' };
     return m[s] || m.reference;
   }
   function statusLabel(s) {

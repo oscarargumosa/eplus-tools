@@ -50,7 +50,7 @@ const MyEvaluations = (() => {
             <h3 class="font-headline text-lg font-bold text-primary mb-2">No tienes evaluaciones todavía</h3>
             <p class="text-sm text-on-surface-variant mb-6 max-w-sm">Sube un proyecto Erasmus+ presentado y obtén un diagnóstico instantáneo de cómo lo evaluaría un experto EACEA.</p>
             <button type="button" id="my-evaluations-empty-new"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim shadow-md transition-all">
               <span class="material-symbols-outlined text-lg">upload_file</span> Subir mi primer proyecto
             </button>
           </div>`;
@@ -60,10 +60,11 @@ const MyEvaluations = (() => {
         return;
       }
 
+      // Estados: pendiente lavanda, en curso azul, completa lima, error rojo
       const statusColors = {
-        pending:     'bg-amber-100 text-amber-700 border-amber-200',
-        in_progress: 'bg-blue-100 text-blue-700 border-blue-200',
-        complete:    'bg-green-100 text-green-700 border-green-200',
+        pending:     'bg-lavender-soft text-violet border-lavender/40',
+        in_progress: 'bg-primary/10 text-primary border-primary/30',
+        complete:    'bg-secondary-fixed text-primary border-secondary-fixed-dim',
         error:       'bg-red-100 text-red-700 border-red-200',
       };
 
@@ -71,20 +72,20 @@ const MyEvaluations = (() => {
         const sc = statusColors[it.status] || 'bg-surface-container-low text-on-surface-variant border-outline-variant';
         const title = it.title || it.template_name || it.program_name || 'Untitled';
         return `
-          <div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant/30 bg-white hover:border-primary hover:shadow-md transition-all mb-2 group" data-id="${esc(it.id)}">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+          <div class="flex items-center gap-4 p-4 rounded-2xl border border-outline-variant/30 bg-white hover:border-primary hover:shadow-md transition-all mb-2 group" data-id="${esc(it.id)}">
+            <div class="w-10 h-10 rounded-xl bg-lavender-soft flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-fixed transition-colors">
               <span class="material-symbols-outlined text-primary text-xl">fact_check</span>
             </div>
             <div class="flex-1 min-w-0">
               <div class="font-headline text-sm font-bold text-primary truncate">${esc(title)}</div>
               <div class="text-xs text-on-surface-variant mt-0.5">${esc(it.action_type || '')} ${it.program_name ? '· ' + esc(it.program_name) : ''}</div>
             </div>
-            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded border ${sc}">${esc(it.status || 'pending')}</span>
+            <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${sc}">${esc(it.status || 'pending')}</span>
             <span class="text-xs text-on-surface-variant whitespace-nowrap">${fmtDate(it.updated_at || it.created_at)}</span>
-            <button type="button" class="my-evaluations-open inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-primary bg-primary/5 hover:bg-primary/10 transition-colors" data-id="${esc(it.id)}">
+            <button type="button" class="my-evaluations-open inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-primary border border-primary/40 hover:bg-primary/5 transition-colors" data-id="${esc(it.id)}">
               <span class="material-symbols-outlined text-sm">visibility</span> Ver informe
             </button>
-            <button type="button" class="my-evaluations-promote inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-colors" data-id="${esc(it.id)}" title="Convertir esta evaluación en un proyecto editable (Pro)">
+            <button type="button" class="my-evaluations-promote inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-white bg-primary hover:bg-violet transition-colors" data-id="${esc(it.id)}" title="Convertir esta evaluación en un proyecto editable (Pro)">
               <span class="material-symbols-outlined text-sm">edit_note</span> Reescribir
             </button>
             <button type="button" class="my-evaluations-delete w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors opacity-0 group-hover:opacity-100" data-id="${esc(it.id)}" title="Eliminar">

@@ -24,8 +24,8 @@ const Engagement = (() => {
       const s = d.summary || {};
 
       const card = (label, val) => `
-        <div class="rounded-xl border border-outline-variant/30 bg-white p-4">
-          <div class="text-2xl font-black text-primary tabular-nums">${val}</div>
+        <div class="rounded-2xl bg-cream p-4">
+          <div class="text-3xl font-light text-primary tabular-nums leading-none">${val}</div>
           <div class="text-[11px] uppercase tracking-wide text-on-surface-variant mt-1">${label}</div>
         </div>`;
       if (kpis) kpis.innerHTML =
@@ -49,7 +49,7 @@ const Engagement = (() => {
           ${esc(label)} <span class="tabular-nums opacity-70">${n}</span></span>`;
       const progEl = document.getElementById('eng-programmes');
       if (progEl) progEl.innerHTML = (d.programmes || []).length
-        ? d.programmes.map(p => chip(p.programme, p.n, 'bg-primary/10 text-primary')).join('')
+        ? d.programmes.map(p => chip(p.programme, p.n, 'bg-lavender-soft text-primary')).join('')
         : '<span class="text-xs text-on-surface-variant">Nadie ha abierto una convocatoria todavía</span>';
 
       const gateEl = document.getElementById('eng-gates');

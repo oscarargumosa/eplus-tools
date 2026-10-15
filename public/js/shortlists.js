@@ -276,10 +276,10 @@ const Shortlists = (() => {
         <div class="px-5 py-3 border-t border-outline-variant/30 flex items-center justify-between gap-2 bg-surface-container-low/40">
           <p class="text-[11px] text-on-surface-variant">Edita los <strong>[campos]</strong> antes de enviar.</p>
           <div class="flex items-center gap-2">
-            <button type="button" class="ct-copy text-xs font-semibold px-4 py-2 rounded-lg bg-white border border-outline-variant/40 hover:border-primary hover:text-primary inline-flex items-center gap-1.5">
+            <button type="button" class="ct-copy text-xs font-semibold px-4 py-2 rounded-full bg-white border border-outline-variant/40 hover:border-primary hover:text-primary inline-flex items-center gap-1.5">
               <span class="material-symbols-outlined text-[16px]">content_copy</span> Copiar
             </button>
-            <button type="button" class="ct-mailto text-xs font-semibold px-4 py-2 rounded-lg bg-secondary-fixed text-primary hover:bg-secondary-fixed-dim inline-flex items-center gap-1.5">
+            <button type="button" class="ct-mailto text-xs font-semibold px-4 py-2 rounded-full bg-secondary-fixed text-primary hover:bg-secondary-fixed-dim inline-flex items-center gap-1.5">
               <span class="material-symbols-outlined text-[16px]">send</span> Abrir en correo
             </button>
           </div>

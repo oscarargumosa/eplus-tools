@@ -69,14 +69,14 @@ const Admin = (() => {
 
   function badge(active) {
     return active
-      ? '<span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold">Active</span>'
-      : '<span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 text-xs font-semibold">Inactive</span>';
+      ? '<span class="px-2 py-0.5 rounded-full bg-lavender-soft text-primary text-xs font-semibold">Active</span>'
+      : '<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-xs font-semibold">Inactive</span>';
   }
 
   function actionBtns(id, section) {
     return `
       <button onclick="Admin.openEdit('${section}','${id}')" class="text-primary hover:underline text-xs font-semibold mr-3">Edit</button>
-      <button onclick="Admin.confirmDelete('${section}','${id}')" class="text-gray-400 hover:text-red-500 text-xs font-semibold transition-colors">Delete</button>`;
+      <button onclick="Admin.confirmDelete('${section}','${id}')" class="text-on-surface-variant hover:text-red-500 text-xs font-semibold transition-colors">Delete</button>`;
   }
 
   /* ── Inline editor helper ────────────────────────────────────── */
@@ -174,7 +174,7 @@ const Admin = (() => {
         list.innerHTML = `<div class="text-center py-16">
           <span class="material-symbols-outlined text-5xl text-outline-variant/40 mb-4">campaign</span>
           <p class="text-sm text-on-surface-variant mb-4">No hay convocatorias configuradas</p>
-          <button id="conv-first-call" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+          <button id="conv-first-call" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
           </button>
         </div>`;
@@ -200,7 +200,7 @@ const Admin = (() => {
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center gap-2">
-            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
             </button>
             <button id="conv-import-feed" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-primary bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 transition-colors">
@@ -213,15 +213,15 @@ const Admin = (() => {
         ${programs.map(p => {
           const dl = fmtDeadline(p.deadline);
           const dlBadge = dl
-            ? `<span class="px-2 py-1 rounded-lg text-[10px] font-bold ${dl.past ? 'bg-gray-100 text-gray-400' : dl.urgent ? 'bg-red-50 text-red-600' : 'bg-blue-50 text-blue-600'}">${dl.str}${dl.diff >= 0 ? ' (' + dl.diff + 'd)' : ''}</span>`
+            ? `<span class="px-2 py-1 rounded-lg text-[10px] font-bold ${dl.past ? 'bg-surface-container text-on-surface-variant' : dl.urgent ? 'bg-red-50 text-red-600' : 'bg-lavender-soft text-primary'}">${dl.str}${dl.diff >= 0 ? ' (' + dl.diff + 'd)' : ''}</span>`
             : '';
-          const grant = p.eu_grant_max ? `<span class="px-2 py-1 rounded-lg bg-green-50 text-green-700 text-[10px] font-bold">\u20AC${Number(p.eu_grant_max).toLocaleString('en')}</span>` : '';
+          const grant = p.eu_grant_max ? `<span class="px-2 py-1 rounded-lg bg-[#f3f8d2] text-primary text-[10px] font-bold">\u20AC${Number(p.eu_grant_max).toLocaleString('en')}</span>` : '';
           const statusBadge = p.active
-            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold">ACTIVA</span>'
-            : '<span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 text-[10px] font-bold">INACTIVA</span>';
+            ? '<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">ACTIVA</span>'
+            : '<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">INACTIVA</span>';
           return `
           <div class="conv-card group flex items-center gap-3 px-4 py-3.5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer" data-id="${p.id}">
-            <div class="w-9 h-9 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+            <div class="w-9 h-9 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-outline'} flex items-center justify-center flex-shrink-0">
               <span class="material-symbols-outlined text-white text-base">campaign</span>
             </div>
             <div class="flex-1 min-w-0">
@@ -347,7 +347,7 @@ const Admin = (() => {
           const dlBadge = c.deadline
             ? `<span class="text-[10px] text-on-surface-variant">DL ${c.deadline.slice(0, 10)}</span>` : '';
           const efsBadge = c.available_in_efs
-            ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-bold">YA EN STUDIO</span>' : '';
+            ? '<span class="px-2 py-0.5 rounded-full bg-lavender-soft text-primary text-[9px] font-bold">YA EN STUDIO</span>' : '';
           const grant = c.budget_per_project_max_eur
             ? `<span class="text-[10px] text-on-surface-variant">€${Number(c.budget_per_project_max_eur).toLocaleString('en')}</span>` : '';
           return `
@@ -393,8 +393,8 @@ const Admin = (() => {
     const badgeEl = document.getElementById('conv-editor-badge');
     if (prog) {
       badgeEl.innerHTML = prog.active
-        ? '<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold">ACTIVA</span>'
-        : '<span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 text-[10px] font-bold">INACTIVA</span>';
+        ? '<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary text-[10px] font-bold">ACTIVA</span>'
+        : '<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">INACTIVA</span>';
     }
 
     // Bind back
@@ -423,7 +423,7 @@ const Admin = (() => {
     document.querySelector('#conv-subtabs [data-subtab="data"]').classList.remove('border-transparent', 'text-on-surface-variant');
 
     // Load eval tree for criteria tab
-    ev.sections = await API.get('/admin/data/eval/' + ev.programId);
+    ev.sections = brandSections(await API.get('/admin/data/eval/' + ev.programId));
 
     convRenderSubtab();
   }
@@ -450,11 +450,11 @@ const Admin = (() => {
       if (prog?.form_template_id) {
         content.innerHTML = `
           <div class="flex flex-col items-center justify-center py-16 text-center max-w-lg mx-auto">
-            <span class="material-symbols-outlined text-5xl text-purple-300 mb-4">auto_awesome</span>
+            <span class="material-symbols-outlined text-5xl text-lavender mb-4">auto_awesome</span>
             <h3 class="font-headline text-lg font-bold text-primary mb-2">Generar estructura de evaluacion desde el formulario</h3>
             <p class="text-sm text-on-surface-variant mb-6">Esta convocatoria tiene un form template vinculado pero no tiene criterios de evaluacion. Puedes generar automaticamente las secciones y preguntas basandote en la estructura del formulario.</p>
             <p class="text-xs text-on-surface-variant mb-6">Se crearan las secciones (Relevance, Quality, Partnership, Impact, etc.) con todas sus preguntas. Los pesos y criterios los configuras despues.</p>
-            <button id="conv-generate-eval" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-md">
+            <button id="conv-generate-eval" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors shadow-md">
               <span class="material-symbols-outlined text-lg">auto_awesome</span> Generar desde form template
             </button>
             <div class="mt-6 w-full border-t border-outline-variant/20 pt-4">
@@ -465,7 +465,7 @@ const Admin = (() => {
           try {
             Toast.show('Generando estructura...', 'ok');
             await API.post(`/admin/data/programs/${ev.programId}/generate-eval`, { template_id: prog.form_template_id });
-            ev.sections = await API.get('/admin/data/eval/' + ev.programId);
+            ev.sections = brandSections(await API.get('/admin/data/eval/' + ev.programId));
             Toast.show(`Generadas ${ev.sections.length} secciones con sus preguntas`, 'ok');
             convRenderCriteriaTab(content);
           } catch (e) { Toast.show('Error: ' + e.message, 'err'); }
@@ -490,7 +490,7 @@ const Admin = (() => {
   function convRenderCriteriaEditor(content) {
     content.innerHTML = `
       <div class="flex gap-0 items-start" style="min-height:70vh">
-        <div id="eval-sidebar" class="w-72 flex-shrink-0 bg-[#edf2f9] rounded-l-2xl flex flex-col border-r border-outline-variant/20">
+        <div id="eval-sidebar" class="w-72 flex-shrink-0 bg-cream rounded-l-2xl flex flex-col border-r border-outline-variant/20">
           <div class="px-5 py-3">
             <div class="text-[11px] text-on-surface-variant font-medium">Evaluation framework</div>
           </div>
@@ -519,7 +519,7 @@ const Admin = (() => {
       const maxScore = parseFloat(maxStr) || 0;
       try {
         await API.post('/admin/data/eval/sections', { program_id: ev.programId, title, color: EVAL_COLORS[ev.sections.length % EVAL_COLORS.length], max_score: maxScore, sort_order: ev.sections.length });
-        ev.sections = await API.get('/admin/data/eval/' + ev.programId);
+        ev.sections = brandSections(await API.get('/admin/data/eval/' + ev.programId));
         evalRenderSidebar();
         Toast.show('Section added', 'ok');
       } catch (e) { Toast.show('Error: ' + e.message, 'error'); }
@@ -544,7 +544,7 @@ const Admin = (() => {
     content.innerHTML = `
       <div class="max-w-lg">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-2 h-10 rounded-full bg-teal-500"></div>
+          <div class="w-2 h-10 rounded-full bg-primary"></div>
           <div>
             <div class="text-[10px] font-bold uppercase tracking-widest text-primary">INTAKE TEMPLATE</div>
             <h3 class="font-headline text-lg font-extrabold text-on-surface tracking-tight">Tipo de Intake (Design)</h3>
@@ -563,7 +563,7 @@ const Admin = (() => {
             </label>
           `).join('')}
         </div>
-        <button id="intake-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+        <button id="intake-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Guardar
         </button>
       </div>`;
@@ -592,7 +592,7 @@ const Admin = (() => {
     content.innerHTML = `
       <div class="max-w-lg">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-2 h-10 rounded-full bg-emerald-500"></div>
+          <div class="w-2 h-10 rounded-full bg-violet"></div>
           <div>
             <div class="text-[10px] font-bold uppercase tracking-widest text-primary">BUDGET TEMPLATE</div>
             <h3 class="font-headline text-lg font-extrabold text-on-surface tracking-tight">Tipo de Presupuesto</h3>
@@ -611,7 +611,7 @@ const Admin = (() => {
             </label>
           `).join('')}
         </div>
-        <button id="budget-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+        <button id="budget-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Guardar
         </button>
       </div>`;
@@ -642,7 +642,7 @@ const Admin = (() => {
         content.innerHTML = `
           <div class="max-w-lg">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-2 h-10 rounded-full bg-purple-500"></div>
+              <div class="w-2 h-10 rounded-full bg-lavender"></div>
               <div>
                 <div class="text-[10px] font-bold uppercase tracking-widest text-primary">FORM TEMPLATE</div>
                 <h3 class="font-headline text-lg font-extrabold text-on-surface tracking-tight">${current ? 'Cambiar formulario' : 'Vincular formulario'}</h3>
@@ -654,7 +654,7 @@ const Admin = (() => {
               ${templates.map(t => `<option value="${t.id}" ${t.id === current ? 'selected' : ''}>${esc(t.name)} (v${t.version}${t.year ? ', ' + t.year : ''})</option>`).join('')}
             </select>
             <div class="flex items-center gap-2">
-              <button id="conv-link-template" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+              <button id="conv-link-template" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
                 <span class="material-symbols-outlined text-sm">link</span> ${current ? 'Actualizar' : 'Vincular'} template
               </button>
               ${current ? '<button id="conv-cancel-template" class="text-xs text-on-surface-variant hover:underline px-3">Cancelar</button>' : ''}
@@ -707,7 +707,7 @@ const Admin = (() => {
       content.innerHTML = `
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center gap-3">
-            <div class="w-2 h-10 rounded-full bg-purple-500"></div>
+            <div class="w-2 h-10 rounded-full bg-lavender"></div>
             <div>
               <div class="text-[10px] font-bold uppercase tracking-widest text-primary">FORM TEMPLATE</div>
               <h3 class="font-headline text-base font-extrabold text-on-surface tracking-tight">${esc(tpl.name)} <span class="text-on-surface-variant font-normal text-sm">v${tpl.version}</span></h3>
@@ -750,7 +750,7 @@ const Admin = (() => {
   async function convRenderDocsTab(content) {
     content.innerHTML = `
       <div class="flex items-center gap-3 mb-5">
-        <div class="w-2 h-10 rounded-full bg-amber-500"></div>
+        <div class="w-2 h-10 rounded-full bg-secondary-fixed"></div>
         <div>
           <div class="text-[10px] font-bold uppercase tracking-widest text-primary">CALL KNOWLEDGE BASE</div>
           <h3 class="font-headline text-lg font-extrabold text-on-surface tracking-tight">Documentos de la convocatoria</h3>
@@ -763,7 +763,7 @@ const Admin = (() => {
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Subir documento nuevo</h4>
           <form id="conv-doc-upload-form" class="space-y-3">
             <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
-              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
+              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
             <div class="grid grid-cols-3 gap-3">
               <input type="text" id="conv-doc-title" placeholder="Titulo (auto desde nombre del archivo)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
@@ -785,7 +785,7 @@ const Admin = (() => {
                 <span class="text-[10px] text-on-surface-variant/60">(disponible para todas las calls)</span>
               </label>
             </div>
-            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
               <span class="material-symbols-outlined text-sm">cloud_upload</span>
               <span id="conv-doc-submit-label">Subir y vectorizar</span>
             </button>
@@ -796,7 +796,7 @@ const Admin = (() => {
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest flex flex-col">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Seleccionar existentes</h4>
           <p class="text-xs text-on-surface-variant/70 mb-3">Documentos del mismo tipo de call o transversales ya subidos en otras convocatorias.</p>
-          <button type="button" id="conv-doc-pick-existing" class="mt-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#3c45a3] border-2 border-[#3c45a3]/30 hover:bg-[#3c45a3]/5 transition-colors">
+          <button type="button" id="conv-doc-pick-existing" class="mt-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#3c45a3] border-2 border-[#3c45a3]/30 hover:bg-[#3c45a3]/5 transition-colors">
             <span class="material-symbols-outlined text-sm">library_add</span> Buscar documentos existentes
           </button>
         </div>
@@ -868,9 +868,9 @@ const Admin = (() => {
           stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
           row.classList.add('bg-primary/5');
         } else if (status === 'done') {
-          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
-          stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
-          row.classList.remove('bg-primary/5'); row.classList.add('bg-green-50');
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base';
+          stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-primary font-bold';
+          row.classList.remove('bg-primary/5'); row.classList.add('bg-[#f3f8d2]');
         } else if (status === 'failed') {
           icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
           stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
@@ -919,7 +919,7 @@ const Admin = (() => {
       const summary = document.getElementById('conv-prog-summary');
       summary.innerHTML = fail
         ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
-        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+        : `<span class="material-symbols-outlined text-base text-primary">task_alt</span><span class="text-primary">${ok} documento(s) subido(s) — vectorización en curso</span>`;
 
       submitBtn.disabled = false;
       fileInput.disabled = false;
@@ -973,7 +973,7 @@ const Admin = (() => {
           <div class="flex-1 overflow-y-auto px-3 py-2">${listHtml}</div>
           <div class="px-5 py-3 border-t border-outline-variant/20 flex items-center justify-between">
             <span id="pick-doc-count" class="text-xs text-on-surface-variant">0 seleccionados</span>
-            <button id="pick-doc-confirm" class="px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-30" disabled>
+            <button id="pick-doc-confirm" class="px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors disabled:opacity-30" disabled>
               Vincular seleccionados
             </button>
           </div>
@@ -1012,7 +1012,7 @@ const Admin = (() => {
   function pickDocRow(d, TYPE_ICONS) {
     const size = d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB` : '';
     const tags = (d.tags || []).map(t =>
-      `<span class="px-1.5 py-0.5 rounded-full ${t === 'transversal' ? 'bg-amber-100 text-amber-700' : 'bg-primary/10 text-primary'} text-[9px] font-medium">${esc(t)}</span>`
+      `<span class="px-1.5 py-0.5 rounded-full ${t === 'transversal' ? 'bg-[#f3f8d2] text-ink' : 'bg-primary/10 text-primary'} text-[9px] font-medium">${esc(t)}</span>`
     ).join(' ');
     return `<label class="flex items-center gap-3 px-3 py-3 rounded-xl cursor-pointer hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant/20 mb-1">
       <input type="checkbox" class="pick-doc-cb accent-primary rounded" data-doc-id="${d.id}" data-doc-type="${esc(d.doc_type || 'other')}" data-label="${esc(d.label || d.title)}">
@@ -1065,7 +1065,7 @@ const Admin = (() => {
           ? `${(d.body_text_chars || 0).toLocaleString('es-ES')} chars \u00b7 ${(d.tokens_estimated || 0).toLocaleString('es-ES')} tokens`
           : (d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB (sin extraer)` : '');
         const statusIcon = d.doc_status === 'active' ? 'check_circle' : d.doc_status === 'processing' ? 'sync' : 'pending';
-        const statusColor = d.doc_status === 'active' ? 'text-green-500' : d.doc_status === 'processing' ? 'text-blue-500' : 'text-gray-400';
+        const statusColor = d.doc_status === 'active' ? 'text-primary' : d.doc_status === 'processing' ? 'text-violet' : 'text-on-surface-variant';
         const initialOrder = d.sort_order ?? 0;
         const isRagOnly = initialOrder >= RAG_ONLY_SENTINEL;
         const isForced  = initialOrder < 0;
@@ -1082,12 +1082,12 @@ const Admin = (() => {
             <p class="text-xs text-on-surface-variant">${d.doc_type} \u00b7 ${d.file_type || ''} \u00b7 ${size}</p>
           </div>
           <label class="conv-doc-force-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar este doc al top del CAG (entra primero antes que cualquier prioridad numerica)">
-            <input type="checkbox" class="conv-doc-force accent-green-600" ${isForced ? 'checked' : ''}>
-            <span class="text-green-700">Forzar CAG</span>
+            <input type="checkbox" class="conv-doc-force accent-[#3c45a3]" ${isForced ? 'checked' : ''}>
+            <span class="text-primary">Forzar CAG</span>
           </label>
           <label class="conv-doc-ragonly-wrap inline-flex items-center gap-1.5 text-[10px] font-bold whitespace-nowrap cursor-pointer select-none" title="Forzar a que este doc se quede solo en RAG y nunca entre al CAG">
-            <input type="checkbox" class="conv-doc-ragonly accent-amber-500" ${isRagOnly ? 'checked' : ''}>
-            <span class="text-amber-700">Solo RAG</span>
+            <input type="checkbox" class="conv-doc-ragonly accent-[#514daa]" ${isRagOnly ? 'checked' : ''}>
+            <span class="text-ink">Solo RAG</span>
           </label>
           <span class="conv-doc-fitbadge px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap"></span>
           <span class="material-symbols-outlined ${statusColor} text-base" title="${d.doc_status}">${statusIcon}</span>
@@ -1137,16 +1137,16 @@ const Admin = (() => {
 
           if (ragOnly || ord >= 9999) {
             badge.textContent = 'SOLO RAG';
-            badge.className = BADGE_BASE + ' bg-amber-100 text-amber-700';
+            badge.className = BADGE_BASE + ' bg-lavender-soft text-violet ring-1 ring-lavender/50';
           } else if (chars === 0) {
             badge.textContent = 'SIN TEXTO';
-            badge.className = BADGE_BASE + ' bg-gray-100 text-gray-400';
+            badge.className = BADGE_BASE + ' bg-surface-container text-on-surface-variant';
           } else if (forced || ord < 0) {
             accAttempted += chars;
             if ((accFit + chars) <= BUDGET_CHARS) {
               accFit += chars;
               badge.textContent = 'FORZADO';
-              badge.className = BADGE_BASE + ' bg-emerald-100 text-emerald-700 ring-1 ring-emerald-300';
+              badge.className = BADGE_BASE + ' bg-secondary-fixed text-primary ring-1 ring-primary/40';
             } else {
               overflowCount++;
               badge.textContent = 'NO CABE';
@@ -1157,7 +1157,7 @@ const Admin = (() => {
             if ((accFit + chars) <= BUDGET_CHARS) {
               accFit += chars;
               badge.textContent = 'EN CAG';
-              badge.className = BADGE_BASE + ' bg-green-100 text-green-700';
+              badge.className = BADGE_BASE + ' bg-secondary-fixed text-primary';
             } else {
               overflowCount++;
               badge.textContent = 'NO CABE';
@@ -1165,7 +1165,7 @@ const Admin = (() => {
             }
           } else {
             badge.textContent = 'RAG';
-            badge.className = BADGE_BASE + ' bg-blue-50 text-blue-700';
+            badge.className = BADGE_BASE + ' bg-lavender-soft text-primary';
           }
         }
         const parent = rows[0]?.parentNode;
@@ -1185,7 +1185,7 @@ const Admin = (() => {
         }
         if (barEl) {
           barEl.style.width = Math.min(100, usedPct) + '%';
-          barEl.className = 'h-full transition-all ' + (usedPctRaw > 100 ? 'bg-error' : usedPctRaw > 90 ? 'bg-amber-500' : 'bg-primary');
+          barEl.className = 'h-full transition-all ' + (usedPctRaw > 100 ? 'bg-error' : usedPctRaw > 90 ? 'bg-secondary-fixed-dim' : 'bg-primary');
         }
       }
 
@@ -1206,7 +1206,7 @@ const Admin = (() => {
         }));
         try {
           await API.post(`/admin/data/programs/${ev.programId}/docs/reorder`, { items });
-          if (statusEl) { statusEl.textContent = 'Guardado ✓'; statusEl.className = 'text-xs text-green-600 font-semibold'; }
+          if (statusEl) { statusEl.textContent = 'Guardado ✓'; statusEl.className = 'text-xs text-primary font-semibold'; }
           setTimeout(() => { if (statusEl && statusEl.textContent === 'Guardado ✓') statusEl.textContent = ''; }, 1500);
         } catch (e) {
           if (statusEl) { statusEl.textContent = 'Error al guardar: ' + e.message; statusEl.className = 'text-xs text-error font-semibold'; }
@@ -1217,7 +1217,7 @@ const Admin = (() => {
       }
 
       function scheduleSave() {
-        if (statusEl) { statusEl.textContent = 'Cambios sin guardar…'; statusEl.className = 'text-xs text-amber-600 font-semibold'; }
+        if (statusEl) { statusEl.textContent = 'Cambios sin guardar…'; statusEl.className = 'text-xs text-violet font-semibold'; }
         if (saveTimer) clearTimeout(saveTimer);
         saveTimer = setTimeout(flushSave, 600);
       }
@@ -1359,9 +1359,9 @@ const Admin = (() => {
     third_partial: 'Third country'
   };
   const TYPE_COLORS = {
-    eu_member:     'bg-blue-100 text-blue-800',
-    associated:    'bg-blue-50 text-blue-600',
-    third_partial: 'bg-gray-100 text-gray-600'
+    eu_member:     'bg-lavender-soft text-primary',
+    associated:    'bg-lavender-soft text-primary',
+    third_partial: 'bg-surface-container text-on-surface-variant'
   };
 
   async function loadCountries() {
@@ -1419,11 +1419,13 @@ const Admin = (() => {
 
   /* ══ PER DIEM ════════════════════════════════════════════════ */
 
+  // Zonas de coste: escala de la paleta de oscuro (caro) a claro (barato).
+  // bg = cabecera, fg = texto de cabecera, accent = iconos y barras sobre blanco.
   const ZONE_STYLES = {
-    A: { bg: '#1e3a5f', label: 'Alto coste' },
-    B: { bg: '#2563eb', label: 'Medio-alto' },
-    C: { bg: '#3b82f6', label: 'Medio' },
-    D: { bg: '#60a5fa', label: 'Bajo coste' },
+    A: { bg: '#222351', fg: '#ffffff', accent: '#222351', label: 'Alto coste' },
+    B: { bg: '#3c45a3', fg: '#ffffff', accent: '#3c45a3', label: 'Medio-alto' },
+    C: { bg: '#997fc7', fg: '#222351', accent: '#514daa', label: 'Medio' },
+    D: { bg: '#e7e1f3', fg: '#3c45a3', accent: '#997fc7', label: 'Bajo coste' },
   };
 
   async function loadPerdiem() {
@@ -1440,33 +1442,33 @@ const Admin = (() => {
         const pctS  = total ? Math.round(subs / total * 100) : 40;
         return `
         <div class="perdiem-card bg-white rounded-xl border border-outline-variant/30 overflow-hidden" data-id="${r.id}" data-zone="${r.zone}">
-          <div class="px-4 py-3 text-white flex items-center justify-between" style="background:${s.bg}">
+          <div class="px-4 py-3 flex items-center justify-between" style="background:${s.bg};color:${s.fg}">
             <div>
               <span class="text-lg font-bold">Zona ${r.zone}</span>
               <span class="text-xs opacity-80 ml-2">${s.label}</span>
             </div>
-            <span class="text-2xl font-black">€${total.toFixed(0)}</span>
+            <span class="text-2xl font-light">€${total.toFixed(0)}</span>
           </div>
           <div class="p-4 space-y-3" data-mode="view">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-base" style="color:${s.bg}">hotel</span>
+                <span class="material-symbols-outlined text-base" style="color:${s.accent}">hotel</span>
                 <span class="text-sm text-on-surface-variant">Alojamiento</span>
               </div>
               <span class="font-bold text-primary">€${accom.toFixed(2)}</span>
             </div>
-            <div class="w-full h-1.5 rounded-full bg-gray-100 overflow-hidden">
-              <div class="h-full rounded-full" style="width:${pctA}%;background:${s.bg}"></div>
+            <div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+              <div class="h-full rounded-full" style="width:${pctA}%;background:${s.accent}"></div>
             </div>
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-base" style="color:${s.bg}">restaurant</span>
+                <span class="material-symbols-outlined text-base" style="color:${s.accent}">restaurant</span>
                 <span class="text-sm text-on-surface-variant">Manutención</span>
               </div>
               <span class="font-bold text-primary">€${subs.toFixed(2)}</span>
             </div>
-            <div class="w-full h-1.5 rounded-full bg-gray-100 overflow-hidden">
-              <div class="h-full rounded-full opacity-60" style="width:${pctS}%;background:${s.bg}"></div>
+            <div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+              <div class="h-full rounded-full opacity-60" style="width:${pctS}%;background:${s.accent}"></div>
             </div>
             <div class="pt-2 border-t border-outline-variant/20 flex justify-between items-center">
               <span class="text-xs text-on-surface-variant">${pctA}% / ${pctS}%</span>
@@ -1489,8 +1491,8 @@ const Admin = (() => {
             <div class="flex items-center justify-between pt-1">
               <span class="perdiem-edit-total text-sm font-bold text-primary">Total: €${total.toFixed(2)}</span>
               <div class="flex gap-2">
-                <button class="perdiem-cancel-btn text-xs px-3 py-1.5 rounded-lg border border-outline-variant/30 text-on-surface-variant hover:bg-gray-50">Cancelar</button>
-                <button class="perdiem-save-btn text-xs px-3 py-1.5 rounded-lg bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Save</button>
+                <button class="perdiem-cancel-btn text-xs px-3 py-1.5 rounded-lg border border-outline-variant/30 text-on-surface-variant hover:bg-surface">Cancelar</button>
+                <button class="perdiem-save-btn text-xs px-3 py-1.5 rounded-full bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#514daa]">Save</button>
               </div>
             </div>
           </div>
@@ -1561,7 +1563,7 @@ const Admin = (() => {
             <button class="worker-edit-btn text-xs px-2 py-1 rounded border border-primary/20 text-primary hover:bg-primary/5 transition-colors" title="Edit">
               <span class="material-symbols-outlined text-sm">edit</span>
             </button>
-            <button class="worker-del-btn text-xs px-2 py-1 rounded border border-gray-200 text-gray-400 hover:text-red-500 hover:border-red-200 transition-colors ml-1" title="Delete">
+            <button class="worker-del-btn text-xs px-2 py-1 rounded border border-outline-variant text-on-surface-variant hover:text-red-500 hover:border-red-200 transition-colors ml-1" title="Delete">
               <span class="material-symbols-outlined text-sm">delete</span>
             </button>
           </td>
@@ -1595,7 +1597,7 @@ const Admin = (() => {
     });
 
     actionsTd.innerHTML = `
-      <button class="worker-save-btn text-xs px-3 py-1 rounded bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Save</button>
+      <button class="worker-save-btn text-xs px-3 py-1 rounded-full bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#514daa]">Save</button>
       <button class="worker-cancel-btn text-xs px-3 py-1 rounded border border-outline-variant/30 text-on-surface-variant ml-1">Cancel</button>`;
 
     actionsTd.querySelector('.worker-cancel-btn').addEventListener('click', () => loadWorkers());
@@ -1633,7 +1635,7 @@ const Admin = (() => {
         <td class="px-4 py-2 text-center"><input type="number" step="0.01" placeholder="Zone ${z}" class="w-20 ${INP} text-center" id="new-worker-zone-${z}"></td>`).join('')}
       <td class="px-4 py-2">&nbsp;</td>
       <td class="px-4 py-2 text-right">
-        <button id="new-worker-save" class="text-xs px-3 py-1 rounded bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Add</button>
+        <button id="new-worker-save" class="text-xs px-3 py-1 rounded-full bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#514daa]">Add</button>
         <button id="new-worker-cancel" class="text-xs px-3 py-1 rounded border border-outline-variant/30 text-on-surface-variant ml-1">Cancel</button>
       </td>`;
     tbody.prepend(tr);
@@ -1875,7 +1877,7 @@ const Admin = (() => {
 
       <!-- Save -->
       <div class="flex justify-end">
-        <button id="elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+        <button id="elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Save eligibility
         </button>
       </div>`;
@@ -1919,7 +1921,18 @@ const Admin = (() => {
 
   /* ══ EVALUADOR (EACEA-style per program) ═════════════════════ */
 
-  const EVAL_COLORS = ['#1e3a5f', '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#1e40af', '#1d4ed8', '#0369a1'];
+  // Colores de sección del evaluador: tonos de la paleta legibles como texto sobre blanco
+  const EVAL_COLORS = ['#222351', '#3c45a3', '#514daa', '#55577a'];
+  // Las secciones guardadas en BD traen los azules antiguos: se traducen al pintar
+  const OLD_EVAL_COLORS = { '#1e3a5f': '#222351', '#2563eb': '#3c45a3', '#3b82f6': '#514daa', '#60a5fa': '#55577a',
+    '#93c5fd': '#55577a', '#1e40af': '#3c45a3', '#1d4ed8': '#3c45a3', '#0369a1': '#514daa' };
+  function brandSections(list) {
+    (list || []).forEach(sec => {
+      const c = String(sec.color || '').toLowerCase();
+      sec.color = OLD_EVAL_COLORS[c] || (/^#[0-9a-f]{6}$/.test(c) ? c : EVAL_COLORS[0]);
+    });
+    return list;
+  }
   let ev = { programId: null, programName: '', sections: [], activeSectionIdx: 0, activeQuestionIdx: 0 };
 
   /* ── Field info tooltip system ─────────────────────────────── */
@@ -2182,7 +2195,7 @@ const Admin = (() => {
 
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
-          <button id="eval-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+          <button id="eval-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> New call
           </button>
           <span class="text-xs text-on-surface-variant">${programs.length} call${programs.length !== 1 ? 's' : ''} · sorted by deadline</span>
@@ -2192,11 +2205,11 @@ const Admin = (() => {
           const dl = fmtDeadline(p.deadline);
           const grant = fmtGrant(p.eu_grant_max);
           const dlBadge = dl
-            ? `<span class="px-2 py-1 rounded-lg text-[10px] font-bold ${dl.past ? 'bg-gray-100 text-gray-400' : dl.urgent ? 'bg-red-50 text-red-600' : 'bg-blue-50 text-blue-600'}">${dl.str}${dl.diff >= 0 ? ' (' + dl.diff + 'd)' : ''}</span>`
-            : '<span class="px-2 py-1 rounded-lg bg-gray-50 text-gray-400 text-[10px]">No deadline</span>';
+            ? `<span class="px-2 py-1 rounded-lg text-[10px] font-bold ${dl.past ? 'bg-surface-container text-on-surface-variant' : dl.urgent ? 'bg-red-50 text-red-600' : 'bg-lavender-soft text-primary'}">${dl.str}${dl.diff >= 0 ? ' (' + dl.diff + 'd)' : ''}</span>`
+            : '<span class="px-2 py-1 rounded-lg bg-surface text-on-surface-variant text-[10px]">No deadline</span>';
           return `
           <div class="eval-prog-card group flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-outline-variant/20 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer" data-id="${p.id}">
-            <div class="w-8 h-8 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+            <div class="w-8 h-8 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-outline'} flex items-center justify-center flex-shrink-0">
               <span class="material-symbols-outlined text-white text-base">description</span>
             </div>
             <div class="flex-1 min-w-0 eval-prog-open">
@@ -2204,7 +2217,7 @@ const Admin = (() => {
               <div class="text-[10px] text-on-surface-variant mt-0.5">${p.action_type || ''}</div>
             </div>
             <div class="flex items-center gap-2 flex-shrink-0">
-              ${grant ? `<span class="px-2 py-1 rounded-lg bg-green-50 text-green-700 text-[10px] font-bold">${grant}</span>` : ''}
+              ${grant ? `<span class="px-2 py-1 rounded-lg bg-[#f3f8d2] text-primary text-[10px] font-bold">${grant}</span>` : ''}
               ${dlBadge}
               <button class="eval-prog-del text-on-surface-variant/30 hover:text-error transition-colors" data-id="${p.id}" data-name="${p.name.replace(/"/g, '&quot;')}">
                 <span class="material-symbols-outlined text-sm">delete</span>
@@ -2252,8 +2265,8 @@ const Admin = (() => {
               class="mt-1 w-full px-3 py-2 border border-red-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-200">
           </label>
         </div>
-        <div class="px-6 py-3 bg-gray-50 flex justify-end gap-2">
-          <button id="del-cancel" class="px-4 py-2 rounded-xl text-xs font-semibold text-on-surface-variant border border-outline-variant/30 hover:bg-gray-100 transition-colors">Cancel</button>
+        <div class="px-6 py-3 bg-surface flex justify-end gap-2">
+          <button id="del-cancel" class="px-4 py-2 rounded-xl text-xs font-semibold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container transition-colors">Cancel</button>
           <button id="del-execute" disabled class="px-4 py-2 rounded-xl text-xs font-bold text-white bg-red-400 cursor-not-allowed transition-colors">Delete programme</button>
         </div>
       </div>`;
@@ -2293,7 +2306,7 @@ const Admin = (() => {
   /* ── New programme: create + seed template + open editor ────── */
   const EVAL_TEMPLATE = {
     sections: [
-      { title: '1. Relevance of the project', color: '#1e3a5f', maxScore: 30, evalNotes: `RELEVANCE OF THE PROJECT (max 30 points)
+      { title: '1. Relevance of the project', color: '#222351', maxScore: 30, evalNotes: `RELEVANCE OF THE PROJECT (max 30 points)
 
 The extent to which:
 • The proposal is relevant to the objectives and priorities of the Action. In addition, the proposal will be considered as highly relevant if it addresses one or more of the 'European Youth Together' specific priorities.
@@ -2310,7 +2323,7 @@ KEY EVALUATOR FOCUS:
         { code: '1.2', title: 'Objectives and EU added value', weight: 30, maxScore: 9, threshold: 0 },
         { code: '1.3', title: 'Target groups and participants', weight: 30, maxScore: 9, threshold: 0 },
       ]},
-      { title: '2. Quality of the project design', color: '#2563eb', maxScore: 30, evalNotes: `QUALITY OF PROJECT DESIGN AND IMPLEMENTATION (max 30 points)
+      { title: '2. Quality of the project design', color: '#3c45a3', maxScore: 30, evalNotes: `QUALITY OF PROJECT DESIGN AND IMPLEMENTATION (max 30 points)
 
 The extent to which:
 • The project objectives are clearly defined and realistic, and address issues relevant to the participating organisations and target groups.
@@ -2328,7 +2341,7 @@ KEY EVALUATOR FOCUS:
         { code: '2.2', title: 'Work plan and activities', weight: 33, maxScore: 9.9, threshold: 0 },
         { code: '2.3', title: 'Quality and risk management', weight: 33, maxScore: 9.9, threshold: 0 },
       ]},
-      { title: '3. Quality of the partnership', color: '#3b82f6', maxScore: 20, evalNotes: `QUALITY OF THE PARTNERSHIP AND COOPERATION ARRANGEMENTS (max 20 points)
+      { title: '3. Quality of the partnership', color: '#514daa', maxScore: 20, evalNotes: `QUALITY OF THE PARTNERSHIP AND COOPERATION ARRANGEMENTS (max 20 points)
 
 The extent to which:
 • The project involves an appropriate mix of complementary participating organisations with the necessary profile, competence, experience and expertise to successfully deliver all aspects of the project.
@@ -2344,7 +2357,7 @@ KEY EVALUATOR FOCUS:
         { code: '3.1', title: 'Consortium composition and competence', weight: 50, maxScore: 10, threshold: 0 },
         { code: '3.2', title: 'Cooperation and communication', weight: 50, maxScore: 10, threshold: 0 },
       ]},
-      { title: '4. Impact and dissemination', color: '#60a5fa', maxScore: 20, evalNotes: `IMPACT, DISSEMINATION AND SUSTAINABILITY (max 20 points)
+      { title: '4. Impact and dissemination', color: '#55577a', maxScore: 20, evalNotes: `IMPACT, DISSEMINATION AND SUSTAINABILITY (max 20 points)
 
 The extent to which:
 • The project has a clear and convincing potential impact on its participants, participating organisations, target groups, and the wider community.
@@ -2414,7 +2427,7 @@ KEY EVALUATOR FOCUS:
   }
 
   async function evalReload() {
-    ev.sections = await API.get('/admin/data/eval/' + ev.programId);
+    ev.sections = brandSections(await API.get('/admin/data/eval/' + ev.programId));
     evalRenderSidebar();
     evalRenderMain();
   }
@@ -2534,22 +2547,22 @@ KEY EVALUATOR FOCUS:
       </div>
 
       <!-- E+ Guide notes -->
-      <div class="rounded-xl border border-amber-200/60 mb-4 bg-amber-50/50 overflow-hidden">
-        <button id="eval-notes-toggle" class="w-full flex items-center gap-2 px-4 py-2.5 text-left hover:bg-amber-100/50 transition-colors">
-          <span class="material-symbols-outlined text-sm text-amber-600">menu_book</span>
-          <span class="text-[11px] font-bold uppercase tracking-widest text-amber-700">E+ Programme Guide notes</span>
-          <span class="material-symbols-outlined text-sm text-amber-400 ml-auto eval-notes-chevron transition-transform">expand_more</span>
+      <div class="rounded-xl border border-[#d6e949]/60 mb-4 bg-[#f3f8d2]/50 overflow-hidden">
+        <button id="eval-notes-toggle" class="w-full flex items-center gap-2 px-4 py-2.5 text-left hover:bg-secondary-fixed/30 transition-colors">
+          <span class="material-symbols-outlined text-sm text-violet">menu_book</span>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-ink">E+ Programme Guide notes</span>
+          <span class="material-symbols-outlined text-sm text-violet ml-auto eval-notes-chevron transition-transform">expand_more</span>
         </button>
         <div id="eval-notes-body" class="hidden px-4 pb-3">
-          <div id="eval-notes-display" class="text-xs text-amber-900/80 leading-relaxed whitespace-pre-wrap mb-2">${sec.eval_notes || '<span class="text-amber-400 italic">No guide notes yet. Click Edit to add the evaluation criteria from the E+ Programme Guide for this section.</span>'}</div>
+          <div id="eval-notes-display" class="text-xs text-ink/80 leading-relaxed whitespace-pre-wrap mb-2">${sec.eval_notes || '<span class="text-violet italic">No guide notes yet. Click Edit to add the evaluation criteria from the E+ Programme Guide for this section.</span>'}</div>
           <div id="eval-notes-edit-wrap" class="hidden mb-2">
-            <textarea id="eval-notes-textarea" rows="6" class="w-full px-3 py-2 rounded-lg border border-amber-200 bg-white text-xs focus:border-amber-400 outline-none resize-vertical leading-relaxed" placeholder="Paste the evaluation criteria text from the E+ Programme Guide for this section...">${sec.eval_notes || ''}</textarea>
+            <textarea id="eval-notes-textarea" rows="6" class="w-full px-3 py-2 rounded-lg border border-[#d6e949] bg-white text-xs focus:border-primary outline-none resize-vertical leading-relaxed" placeholder="Paste the evaluation criteria text from the E+ Programme Guide for this section...">${sec.eval_notes || ''}</textarea>
           </div>
           <div class="flex gap-2">
-            <button id="eval-notes-edit-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-amber-700 border border-amber-200 hover:bg-amber-100 transition-colors">
+            <button id="eval-notes-edit-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[10px] font-bold text-primary border border-primary/40 hover:bg-secondary-fixed/40 transition-colors">
               <span class="material-symbols-outlined text-xs">edit</span> Edit
             </button>
-            <button id="eval-notes-save-btn" class="hidden inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-amber-600 hover:bg-amber-700 transition-colors">
+            <button id="eval-notes-save-btn" class="hidden inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[10px] font-bold text-white bg-primary hover:bg-violet transition-colors">
               <span class="material-symbols-outlined text-xs">save</span> Save
             </button>
           </div>
@@ -2573,7 +2586,7 @@ KEY EVALUATOR FOCUS:
             return `<div class="flex-1 flex flex-col items-center gap-1 eval-score-q" data-qi="${qi}" data-qid="${qq.id}">
               <input type="number" class="eval-score-input w-14 px-1 py-0.5 rounded-lg border text-center text-[11px] font-bold outline-none transition-all
                 ${isThis ? 'border-primary/40 bg-white' : 'border-transparent bg-transparent hover:border-outline-variant/40 hover:bg-white'}"
-                style="color:${isThis ? sec.color : '#787682'}"
+                style="color:${isThis ? sec.color : '#8a8aa3'}"
                 value="${pts}" step="0.5" min="0" data-qid="${qq.id}" data-qi="${qi}">
               <div class="w-full rounded-lg transition-all" style="height:${Math.max(pct * 0.6, 4)}px;background:${isThis ? sec.color : sec.color + '30'}"></div>
               <span class="text-[10px] font-bold cursor-pointer ${isThis ? '' : 'text-on-surface-variant/40'}" style="${isThis ? 'color:'+sec.color : ''}">${qq.code}</span>
@@ -2670,7 +2683,7 @@ KEY EVALUATOR FOCUS:
           </div>
         </div>
         <div class="flex justify-end">
-          <button id="eq-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
+          <button id="eq-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">save</span> Save question
           </button>
         </div>
@@ -2684,7 +2697,7 @@ KEY EVALUATOR FOCUS:
             <span class="text-[11px] font-bold uppercase tracking-widest text-on-surface-variant">Evaluation criteria</span>
             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold" style="background:${sec.color}15;color:${sec.color}">${criteria.length}</span>
           </div>
-          <button id="eval-add-crit" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
+          <button id="eval-add-crit" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">add</span> Add criterion
           </button>
         </div>
@@ -2694,11 +2707,11 @@ KEY EVALUATOR FOCUS:
             <div class="flex items-center gap-2 text-[11px]">
               <span class="crit-bar-icon material-symbols-outlined text-sm ${critOk ? 'text-green-500' : 'text-red-500'}">${critOk ? 'check_circle' : 'error'}</span>
               <span class="crit-bar-label font-bold ${critOk ? 'text-green-600' : 'text-red-600'}">Criteria: ${critScoreSum} / ${qMax} pts</span>
-              ${!critOk && qMax > 0 ? `<span class="crit-bar-diff text-[10px] font-semibold px-2 py-0.5 rounded-lg ${critScoreSum < qMax ? 'bg-red-50 text-red-500' : 'bg-amber-50 text-amber-600'}">${critScoreSum < qMax ? 'need ' + (qMax - critScoreSum) + ' more' : (critScoreSum - qMax) + ' excess'}</span>` : ''}
+              ${!critOk && qMax > 0 ? `<span class="crit-bar-diff text-[10px] font-semibold px-2 py-0.5 rounded-lg ${critScoreSum < qMax ? 'bg-red-50 text-red-500' : 'bg-[#f3f8d2] text-violet'}">${critScoreSum < qMax ? 'need ' + (qMax - critScoreSum) + ' more' : (critScoreSum - qMax) + ' excess'}</span>` : ''}
             </div>
             <span class="text-[10px] text-on-surface-variant/50">${criteria.length} ${criteria.length === 1 ? 'criterion' : 'criteria'}</span>
           </div>
-          <div class="flex gap-1 h-3 rounded-full overflow-hidden bg-gray-100">
+          <div class="flex gap-1 h-3 rounded-full overflow-hidden bg-surface-container">
             ${criteria.length === 0 ? '' : criteria.map((c, i) => {
               const cPts = parseFloat(c.max_score) || 0;
               const cPct = qMax > 0 ? (cPts / qMax * 100) : (100 / criteria.length);
@@ -2915,7 +2928,7 @@ KEY EVALUATOR FOCUS:
             <h3 class="font-headline text-base font-bold text-primary">Seleccionar Action Type</h3>
             <p class="text-xs text-on-surface-variant">Elige la convocatoria Erasmus+</p>
           </div>
-          <button id="atp-close" class="w-8 h-8 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors">
+          <button id="atp-close" class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center transition-colors">
             <span class="material-symbols-outlined text-on-surface-variant">close</span>
           </button>
         </div>
@@ -2942,7 +2955,7 @@ KEY EVALUATOR FOCUS:
     }
 
     html += `</div>
-        <div class="px-5 py-3 border-t border-outline-variant/20 flex justify-between items-center bg-gray-50">
+        <div class="px-5 py-3 border-t border-outline-variant/20 flex justify-between items-center bg-surface">
           <button id="atp-clear" class="text-xs text-on-surface-variant hover:text-error transition-colors">Limpiar seleccion</button>
           <span id="atp-count" class="text-xs text-on-surface-variant"></span>
         </div>
@@ -3140,7 +3153,7 @@ KEY EVALUATOR FOCUS:
           </div>
         </div>
         <div class="flex justify-end mt-4">
-          <button id="cd-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
+          <button id="cd-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">save</span> Save call data
           </button>
         </div>
@@ -3334,7 +3347,7 @@ KEY EVALUATOR FOCUS:
 
         <!-- Save -->
         <div class="flex justify-end">
-          <button id="ev-elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+          <button id="ev-elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">
             <span class="material-symbols-outlined text-sm">save</span> Save eligibility
           </button>
         </div>
@@ -3367,13 +3380,13 @@ KEY EVALUATOR FOCUS:
 
   function evalCriterionCard(c, i, color) {
     const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    const tints = ['#f8fafc', '#eff6ff', '#f0f4fa', '#e8eef6', '#dbeafe', '#edf2f9'];
+    const tints = ['#f8f7f5', '#f3f0f8', '#f0edeb']; // crema / lavanda muy suave
     const bg = tints[i % tints.length];
     const priority = c.priority || 'media';
     const prioColors = {
-      alta:  { bg: 'bg-red-100',    fg: 'text-red-700',    dot: '#dc2626' },
-      media: { bg: 'bg-amber-100',  fg: 'text-amber-700',  dot: '#d97706' },
-      baja:  { bg: 'bg-slate-100',  fg: 'text-slate-600',  dot: '#64748b' }
+      alta:  { bg: 'bg-primary',          fg: 'text-white',               dot: '#3c45a3' },
+      media: { bg: 'bg-lavender-soft',    fg: 'text-primary',             dot: '#997fc7' },
+      baja:  { bg: 'bg-surface-container', fg: 'text-on-surface-variant', dot: '#8a8aa3' }
     };
     const pc = prioColors[priority];
     // Completeness indicator: which narrative fields are filled
@@ -3395,14 +3408,14 @@ KEY EVALUATOR FOCUS:
               <div class="flex items-center gap-2 mt-0.5 flex-wrap">
                 <span class="px-2 py-0.5 rounded-lg text-[10px] font-bold" style="background:${color}15;color:${color}">max ${c.max_score} pts</span>
                 <span class="px-2 py-0.5 rounded-lg ${pc.bg} ${pc.fg} text-[10px] font-bold uppercase">${priority}</span>
-                ${c.mandatory ? '<span class="px-2 py-0.5 rounded-lg bg-blue-900/10 text-blue-900 text-[10px] font-bold">MANDATORY</span>' : '<span class="px-2 py-0.5 rounded-lg bg-gray-100 text-gray-500 text-[10px] font-semibold">optional</span>'}
-                <span class="px-2 py-0.5 rounded-lg text-[10px] font-semibold ${filled === 5 ? 'bg-green-100 text-green-700' : filled >= 3 ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500'}">${filled}/5 fields</span>
+                ${c.mandatory ? '<span class="px-2 py-0.5 rounded-lg bg-ink/10 text-ink text-[10px] font-bold">MANDATORY</span>' : '<span class="px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant text-[10px] font-semibold">optional</span>'}
+                <span class="px-2 py-0.5 rounded-lg text-[10px] font-semibold ${filled === 5 ? 'bg-secondary-fixed text-primary' : filled >= 3 ? 'bg-[#f3f8d2] text-ink' : 'bg-surface-container text-on-surface-variant'}">${filled}/5 fields</span>
                 ${!examplesOk ? '<span class="px-2 py-0.5 rounded-lg bg-red-50 text-red-600 text-[10px] font-bold">⚠ examples missing</span>' : ''}
               </div>
             </div>
           </div>
           <div class="flex items-center gap-1.5">
-            <button class="eval-save-crit inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm" data-id="${c.id}">
+            <button class="eval-save-crit inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[11px] font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors shadow-sm" data-id="${c.id}">
               <span class="material-symbols-outlined text-sm">save</span> Save
             </button>
             <button class="eval-del-crit w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors" data-id="${c.id}">
@@ -3568,9 +3581,9 @@ KEY EVALUATOR FOCUS:
     const typeBadge = (t) => {
       const cls = {
         support: 'bg-primary/8 text-primary',
-        project: 'bg-tertiary/10 text-tertiary',
-        evaluation: 'bg-warning/10 text-warning',
-        call: 'bg-secondary/10 text-secondary',
+        project: 'bg-lavender-soft text-violet',
+        evaluation: 'bg-[#f3f8d2] text-ink',
+        call: 'bg-cream text-ink',
       };
       return `<span class="inline-block px-2 py-0.5 rounded text-[10px] font-medium ${cls[t] || cls.support}">${typeLabels[t] || t || 'Support'}</span>`;
     };
@@ -3592,9 +3605,9 @@ KEY EVALUATOR FOCUS:
         ? `<span title="${esc(d.owner_email)}">${esc(d.owner_name)}</span>`
         : (d.owner_type === 'platform' ? '<span class="text-primary font-medium">Plataforma</span>' : '-');
       const vecIcon = d.vectorized
-        ? '<span class="material-symbols-outlined text-[16px] text-green-600" title="Vectorizado">check_circle</span>'
+        ? '<span class="material-symbols-outlined text-[16px] text-primary" title="Vectorizado">check_circle</span>'
         : '<span class="material-symbols-outlined text-[16px] text-on-surface-variant/40" title="No vectorizado">cancel</span>';
-      const projects = (d.projects || []).map(p => `<span class="inline-block px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary text-[10px]">${esc(p.name)}</span>`).join(' ') || '<span class="text-on-surface-variant/40">—</span>';
+      const projects = (d.projects || []).map(p => `<span class="inline-block px-1.5 py-0.5 rounded bg-lavender-soft text-violet text-[10px]">${esc(p.name)}</span>`).join(' ') || '<span class="text-on-surface-variant/40">—</span>';
 
       return `<tr class="border-b border-outline-variant/10 hover:bg-surface-container-low/50">
         <td class="px-4 py-3 font-medium text-on-surface max-w-[200px] truncate" title="${esc(d.title)}">${esc(d.title)}</td>
@@ -3787,8 +3800,8 @@ KEY EVALUATOR FOCUS:
           icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
           stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
         } else if (status === 'done') {
-          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
-          stat.textContent = label || 'subido'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+          icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base';
+          stat.textContent = label || 'subido'; stat.className = 'prog-status text-[10px] text-primary font-bold';
         } else if (status === 'failed') {
           icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
           stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
@@ -3830,7 +3843,7 @@ KEY EVALUATOR FOCUS:
       const summary = document.getElementById('admin-prog-summary');
       summary.innerHTML = fail
         ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
-        : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s)</span>`;
+        : `<span class="material-symbols-outlined text-base text-primary">task_alt</span><span class="text-primary">${ok} documento(s) subido(s)</span>`;
 
       submitBtn.disabled = false;
       fileInput.disabled = false;
@@ -3938,7 +3951,7 @@ KEY EVALUATOR FOCUS:
         <div class="flex items-start gap-3 py-3 ${i > 0 ? 'border-t border-outline-variant/10' : ''}">
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 mb-0.5 flex-wrap">
-              ${r.is_open_access ? '<span class="text-[10px] font-bold text-green-600">OA</span>' : '<span class="text-[10px] text-on-surface-variant/50">Closed</span>'}
+              ${r.is_open_access ? '<span class="text-[10px] font-bold text-primary">OA</span>' : '<span class="text-[10px] text-on-surface-variant/50">Closed</span>'}
               <span class="text-[11px] text-on-surface-variant">${r.publication_year || ''}</span>
               ${r.citation_count ? `<span class="text-[11px] text-on-surface-variant">Cited: ${r.citation_count}</span>` : ''}
             </div>
@@ -3948,7 +3961,7 @@ KEY EVALUATOR FOCUS:
           </div>
           <div class="flex-shrink-0">
             ${r.saved_id
-              ? '<span class="text-[11px] text-green-600 font-medium">Saved</span>'
+              ? '<span class="text-[11px] text-primary font-medium">Saved</span>'
               : `<button class="lib-save-btn px-2.5 py-1 rounded-lg bg-primary/10 text-primary text-[11px] font-medium hover:bg-primary/20 transition-colors" data-idx="${i}">+ Add</button>`
             }
           </div>
@@ -4006,15 +4019,15 @@ KEY EVALUATOR FOCUS:
         <div class="flex items-start gap-3 py-3 ${i > 0 ? 'border-t border-outline-variant/10' : ''}">
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 mb-0.5 flex-wrap">
-              ${s.is_open_access ? '<span class="text-[10px] font-bold text-green-600">OA</span>' : ''}
+              ${s.is_open_access ? '<span class="text-[10px] font-bold text-primary">OA</span>' : ''}
               <span class="text-[11px] text-on-surface-variant">${s.publication_year || ''}</span>
-              <span class="text-[10px] px-1 py-0.5 rounded ${s.source_api === 'upload' ? 'bg-purple-500/10 text-purple-600' : 'bg-blue-500/10 text-blue-600'}">${s.source_api === 'upload' ? 'Uploaded' : 'OpenAlex'}</span>
+              <span class="text-[10px] px-1 py-0.5 rounded ${s.source_api === 'upload' ? 'bg-lavender-soft text-violet' : 'bg-primary/10 text-primary'}">${s.source_api === 'upload' ? 'Uploaded' : 'OpenAlex'}</span>
               ${s.status === 'vectorized'
-                ? '<span class="text-[10px] px-1.5 py-0.5 rounded bg-green-500/10 text-green-600 font-bold">Vectorized</span>'
+                ? '<span class="text-[10px] px-1.5 py-0.5 rounded bg-lavender-soft text-primary font-bold">Vectorized</span>'
                 : s.status === 'error'
                   ? `<button class="lib-vectorize-btn text-[10px] px-1.5 py-0.5 rounded bg-error/10 text-error font-medium hover:bg-error/20 cursor-pointer" data-id="${s.id}">Error — Retry</button>`
                   : s.pdf_url || s.source_api === 'upload'
-                    ? `<button class="lib-vectorize-btn text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 font-medium hover:bg-amber-500/20 cursor-pointer" data-id="${s.id}">Vectorize</button>`
+                    ? `<button class="lib-vectorize-btn text-[10px] px-1.5 py-0.5 rounded-full bg-secondary-fixed text-primary font-medium hover:bg-secondary-fixed-dim cursor-pointer" data-id="${s.id}">Vectorize</button>`
                     : '<span class="text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant/50">No PDF</span>'
               }
             </div>
@@ -4080,7 +4093,7 @@ KEY EVALUATOR FOCUS:
       if (!templates.length) { list.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">No form templates found.</p>'; return; }
       list.innerHTML = templates.map(t => `
         <div class="forms-tpl-card group flex items-center gap-4 p-5 bg-white rounded-2xl border border-outline-variant/30 hover:border-primary hover:shadow-lg cursor-pointer transition-all" data-id="${t.id}">
-          <div class="w-12 h-12 rounded-xl ${t.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-xl ${t.active ? 'bg-[#3c45a3]' : 'bg-outline'} flex items-center justify-center flex-shrink-0">
             <span class="material-symbols-outlined text-white text-xl">article</span>
           </div>
           <div class="flex-1 min-w-0">
@@ -4088,8 +4101,8 @@ KEY EVALUATOR FOCUS:
             <p class="text-xs text-on-surface-variant">${esc(t.description || '')}</p>
           </div>
           <div class="flex items-center gap-2 flex-shrink-0">
-            <span class="px-2 py-1 rounded-lg text-[10px] font-bold ${t.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}">${t.active ? 'Active' : 'Inactive'}</span>
-            <span class="px-2 py-1 rounded-lg bg-blue-50 text-blue-600 text-[10px] font-bold">v${esc(t.version)}</span>
+            <span class="px-2 py-1 rounded-lg text-[10px] font-bold ${t.active ? 'bg-primary/10 text-primary' : 'bg-surface-container text-on-surface-variant'}">${t.active ? 'Active' : 'Inactive'}</span>
+            <span class="px-2 py-1 rounded-lg bg-lavender-soft text-primary text-[10px] font-bold">v${esc(t.version)}</span>
             <span class="px-2 py-1 rounded-lg bg-primary/5 text-primary text-[10px] font-bold">${t.year || '—'}</span>
           </div>
           <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">chevron_right</span>
@@ -4235,7 +4248,7 @@ KEY EVALUATOR FOCUS:
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Upload document</h4>
           <form id="call-doc-upload-form" class="space-y-3">
             <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
-              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
+              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
             <div class="grid grid-cols-2 gap-3">
               <input type="text" id="call-doc-title" placeholder="Title (auto from filename)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
@@ -4244,7 +4257,7 @@ KEY EVALUATOR FOCUS:
             </div>
             <textarea id="call-doc-desc" rows="2" placeholder="Description..."
               class="w-full px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"></textarea>
-            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
               <span class="material-symbols-outlined text-sm">cloud_upload</span>
               <span id="call-doc-submit-label">Upload & vectorize</span>
             </button>
@@ -4320,8 +4333,8 @@ KEY EVALUATOR FOCUS:
             icon.textContent = 'sync'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base animate-spin';
             stat.textContent = 'subiendo...'; stat.className = 'prog-status text-[10px] text-primary font-bold';
           } else if (status === 'done') {
-            icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-green-600 text-base';
-            stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-green-700 font-bold';
+            icon.textContent = 'check_circle'; icon.className = 'prog-icon material-symbols-outlined text-primary text-base';
+            stat.textContent = label || 'subido · vectorizando'; stat.className = 'prog-status text-[10px] text-primary font-bold';
           } else if (status === 'failed') {
             icon.textContent = 'error'; icon.className = 'prog-icon material-symbols-outlined text-red-600 text-base';
             stat.textContent = label || 'fallo'; stat.className = 'prog-status text-[10px] text-red-700 font-bold';
@@ -4364,7 +4377,7 @@ KEY EVALUATOR FOCUS:
         const summary = document.getElementById('call-prog-summary');
         summary.innerHTML = fail
           ? `<span class="material-symbols-outlined text-base text-red-600">error</span><span class="text-red-700">Completado: ${ok} subido(s) · ${fail} fallido(s)</span>`
-          : `<span class="material-symbols-outlined text-base text-green-600">task_alt</span><span class="text-green-700">${ok} documento(s) subido(s) — vectorización en curso</span>`;
+          : `<span class="material-symbols-outlined text-base text-primary">task_alt</span><span class="text-primary">${ok} documento(s) subido(s) — vectorización en curso</span>`;
 
         submitBtn.disabled = false;
         fileInput.disabled = false;
@@ -4399,7 +4412,7 @@ KEY EVALUATOR FOCUS:
         const size = d.file_size_bytes ? `${(d.file_size_bytes / 1024).toFixed(0)} KB` : '';
         const date = new Date(d.created_at).toLocaleDateString();
         const statusIcon = d.status === 'active' ? 'check_circle' : d.status === 'processing' ? 'sync' : 'error';
-        const statusColor = d.status === 'active' ? 'text-green-500' : d.status === 'processing' ? 'text-blue-500' : 'text-red-500';
+        const statusColor = d.status === 'active' ? 'text-primary' : d.status === 'processing' ? 'text-violet' : 'text-red-500';
         const tags = (d.tags || []).map(t => `<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-medium">${esc(t)}</span>`).join(' ');
         return `<div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-outline-variant/20 mb-2 hover:border-primary/30 transition-colors">
           <span class="material-symbols-outlined text-2xl text-primary/50">description</span>
@@ -4539,14 +4552,14 @@ KEY EVALUATOR FOCUS:
 
     // Guidance (collapsible)
     if (sec.guidance && Array.isArray(sec.guidance)) {
-      html += `<details class="mb-4 rounded-xl bg-blue-50/50 border border-blue-100 group">
+      html += `<details class="mb-4 rounded-xl bg-lavender-soft/50 border border-lavender/30 group">
         <summary class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none">
-          <span class="material-symbols-outlined text-sm text-blue-400">info</span>
-          <span class="text-xs font-bold text-blue-600 flex-1">Instructions & guidance</span>
-          <span class="material-symbols-outlined text-sm text-blue-400 group-open:rotate-180 transition-transform">expand_more</span>
+          <span class="material-symbols-outlined text-sm text-violet">info</span>
+          <span class="text-xs font-bold text-primary flex-1">Instructions & guidance</span>
+          <span class="material-symbols-outlined text-sm text-violet group-open:rotate-180 transition-transform">expand_more</span>
         </summary>
         <div class="px-4 pb-3">
-          ${sec.guidance.map(g => `<p class="text-xs text-blue-800/70 mb-1">${esc(g)}</p>`).join('')}
+          ${sec.guidance.map(g => `<p class="text-xs text-primary/70 mb-1">${esc(g)}</p>`).join('')}
         </div>
       </details>`;
     }
@@ -4673,7 +4686,7 @@ KEY EVALUATOR FOCUS:
         </button>
       </div>
       ${f.guidance ? `<details class="mb-2 text-xs"><summary class="text-on-surface-variant/70 cursor-pointer select-none flex items-center gap-1"><span class="material-symbols-outlined text-xs">info</span> Instructions</summary><p class="mt-1 text-on-surface-variant/60 pl-4">${esc(typeof f.guidance === 'string' ? f.guidance : (Array.isArray(f.guidance) ? f.guidance.join(' ') : ''))}</p></details>` : ''}
-      ${f.note ? `<p class="text-xs text-amber-600 mb-2">${esc(f.note)}</p>` : ''}
+      ${f.note ? `<p class="text-xs text-violet mb-2">${esc(f.note)}</p>` : ''}
       <div class="overflow-x-auto">
         <table class="w-full text-xs border-collapse">
           <thead>
@@ -4714,20 +4727,20 @@ KEY EVALUATOR FOCUS:
     </div>`;
 
     // Instructions collapsible
-    html += `<details class="mb-4 rounded-xl bg-amber-50/50 border border-amber-200">
+    html += `<details class="mb-4 rounded-xl bg-[#f3f8d2]/50 border border-[#d6e949]">
       <summary class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none">
-        <span class="material-symbols-outlined text-sm text-amber-500">tips_and_updates</span>
-        <span class="text-xs font-bold text-amber-700 flex-1">Work packages instructions</span>
-        <span class="material-symbols-outlined text-sm text-amber-400">expand_more</span>
+        <span class="material-symbols-outlined text-sm text-violet">tips_and_updates</span>
+        <span class="text-xs font-bold text-ink flex-1">Work packages instructions</span>
+        <span class="material-symbols-outlined text-sm text-violet">expand_more</span>
       </summary>
       <div class="px-4 pb-3 space-y-1">
-        <p class="text-xs text-amber-800/70"><strong>WP1</strong> should cover management and coordination (meetings, monitoring, financial management, progress reports) and cross-cutting activities.</p>
-        <p class="text-xs text-amber-800/70"><strong>WP2+</strong> should be used for the other project activities.</p>
-        <p class="text-xs text-amber-800/70"><strong>Last WP</strong> should be dedicated to Impact and dissemination.</p>
-        <p class="text-xs text-amber-800/70"><strong>Deliverables:</strong> recommended max <strong>10-15 for the entire project</strong>. You may be asked to reduce during grant preparation.</p>
-        <p class="text-xs text-amber-800/70"><strong>Milestones:</strong> use only for major outputs in complex projects. Limit the number per WP.</p>
-        <p class="text-xs text-amber-800/70"><strong>Tasks:</strong> continuous numbering linked to WP (T1.1, T1.2, T2.1, etc.).</p>
-        <p class="text-xs text-amber-800/70">Enter each activity/milestone/deliverable <strong>only once</strong> (under one work package).</p>
+        <p class="text-xs text-ink/70"><strong>WP1</strong> should cover management and coordination (meetings, monitoring, financial management, progress reports) and cross-cutting activities.</p>
+        <p class="text-xs text-ink/70"><strong>WP2+</strong> should be used for the other project activities.</p>
+        <p class="text-xs text-ink/70"><strong>Last WP</strong> should be dedicated to Impact and dissemination.</p>
+        <p class="text-xs text-ink/70"><strong>Deliverables:</strong> recommended max <strong>10-15 for the entire project</strong>. You may be asked to reduce during grant preparation.</p>
+        <p class="text-xs text-ink/70"><strong>Milestones:</strong> use only for major outputs in complex projects. Limit the number per WP.</p>
+        <p class="text-xs text-ink/70"><strong>Tasks:</strong> continuous numbering linked to WP (T1.1, T1.2, T2.1, etc.).</p>
+        <p class="text-xs text-ink/70">Enter each activity/milestone/deliverable <strong>only once</strong> (under one work package).</p>
       </div>
     </details>`;
 
@@ -4944,8 +4957,8 @@ KEY EVALUATOR FOCUS:
     if (!wrap) return;
     const by = stats.patterns_by_scope || {};
     const card = (label, value, hint) =>
-      `<div class="bg-surface border border-outline-variant/30 rounded-xl p-3">
-         <div class="text-2xl font-bold text-on-surface">${value}</div>
+      `<div class="bg-cream rounded-2xl p-4">
+         <div class="text-3xl font-light text-primary leading-none mb-1">${value}</div>
          <div class="text-xs text-on-surface-variant">${label}</div>
          ${hint ? `<div class="text-[10px] text-on-surface-variant/70 mt-1">${hint}</div>` : ''}
        </div>`;
@@ -4990,7 +5003,7 @@ KEY EVALUATOR FOCUS:
     const scopeBadge = (s) => {
       const colors = {
         universal: 'bg-primary/10 text-primary',
-        programme: 'bg-tertiary/10 text-tertiary',
+        programme: 'bg-lavender-soft text-violet',
         emergent:  'bg-on-surface-variant/15 text-on-surface-variant',
       };
       return `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold ${colors[s] || ''}">${s.toUpperCase()}</span>`;
@@ -4999,9 +5012,9 @@ KEY EVALUATOR FOCUS:
       const colors = {
         critical:    'bg-error/15 text-error',
         high:        'bg-error/10 text-error',
-        medium_high: 'bg-orange-500/10 text-orange-700',
-        medium:      'bg-yellow-500/10 text-yellow-800',
-        medium_low:  'bg-yellow-500/5 text-yellow-700',
+        medium_high: 'bg-secondary-fixed text-ink',
+        medium:      'bg-[#f3f8d2] text-ink',
+        medium_low:  'bg-lavender-soft text-primary',
         low:         'bg-on-surface-variant/10 text-on-surface-variant',
         positive:    'bg-green-500/10 text-green-700',
       };
@@ -5035,7 +5048,7 @@ KEY EVALUATOR FOCUS:
       const map = {
         awarded:             { txt: 'Concedido',    cls: 'bg-green-500/10 text-green-700' },
         rejected_threshold:  { txt: 'No threshold', cls: 'bg-error/15 text-error' },
-        rejected_ranking:    { txt: 'No ranking',   cls: 'bg-orange-500/10 text-orange-700' },
+        rejected_ranking:    { txt: 'No ranking',   cls: 'bg-error/5 text-error' },
         unknown:             { txt: 'Desconocido',  cls: 'bg-on-surface-variant/10 text-on-surface-variant' },
       };
       const x = map[r] || map.unknown;
@@ -5224,7 +5237,7 @@ KEY EVALUATOR FOCUS:
                   <span class="text-[10px] px-1.5 py-0.5 rounded ${b.is_default ? 'bg-surface-variant text-on-surface-variant' : 'bg-primary/15 text-primary'} ml-2">${b.is_default ? 'default (código)' : 'v'+b.version}</span>
                   <span class="text-xs text-on-surface-variant ml-2">${(b.chars||0).toLocaleString('es')} ch</span>
                 </div>
-                <button class="text-sm px-3 py-1 rounded-lg bg-primary text-secondary-fixed font-semibold" data-edit-block="${esc(b.name)}">Editar</button>
+                <button class="text-sm px-3 py-1 rounded-full bg-primary text-secondary-fixed font-semibold" data-edit-block="${esc(b.name)}">Editar</button>
               </div>
               <div class="hidden mt-3" data-block-editor="${esc(b.name)}"></div>
             </div>`).join('')}
@@ -5246,7 +5259,7 @@ KEY EVALUATOR FOCUS:
       box.innerHTML = `
         <textarea class="w-full h-64 p-3 text-xs font-mono border border-outline-variant rounded-lg bg-surface" data-block-text>${esc(b.content || '')}</textarea>
         <div class="flex items-center gap-2 mt-2">
-          <button class="text-sm px-4 py-1.5 rounded-lg bg-primary text-secondary-fixed font-semibold" data-save-block>Guardar versión nueva</button>
+          <button class="text-sm px-4 py-1.5 rounded-full bg-primary text-secondary-fixed font-semibold" data-save-block>Guardar versión nueva</button>
           <span class="text-xs text-on-surface-variant" data-block-msg></span>
         </div>`;
       box.querySelector('[data-save-block]').addEventListener('click', async () => {

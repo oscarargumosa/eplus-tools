@@ -165,7 +165,7 @@
     root.innerHTML = `<div class="ac-wrap">
       <section class="ac-hero">
         <div>
-          <h1>Academia EU Funding Studio</h1>
+          <h1>Academia <em>EU Funding Studio</em><span class="ac-icon" aria-hidden="true"></span></h1>
           <p>Cursos para entender Erasmus+ y diseñar proyectos con criterio, dentro de la misma plataforma en la que los escribes.</p>
           ${lead ? `<div class="ac-hero__actions"><a class="ac-btn ac-btn--primary" href="/academia/${esc(lead.slug)}" data-nav>${lead.enrolled ? 'Continuar' : 'Ver el curso'}</a></div>` : ''}
         </div>
@@ -211,7 +211,7 @@
             <span>Aprobado con <b>${c.passing_score} %</b> en cada test</span>
           </div>
           <div class="ac-hero__actions">${cta}
-            ${c.enrolled ? `<span class="ac-note-info" style="color:#cfd0ea">${done} de ${total} lecciones completadas</span>` : ''}</div>
+            ${c.enrolled ? `<span class="ac-note-info" style="color:#e7e1f3">${done} de ${total} lecciones completadas</span>` : ''}</div>
         </div>
         ${c.cover_url ? `<img src="${esc(c.cover_url)}" alt="" width="640" height="400">` : ''}
       </section>

@@ -45,8 +45,14 @@ const IntakeTasks = (() => {
     return cat.subtypes.find(s => s.label.toLowerCase().trim() === norm) || cat.subtypes[0] || null;
   }
 
-  const WP_COLORS = ['#3c45a3','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
-  function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
+  // Colores de WP con la paleta de marca (misma tabla que intake-gantt.js).
+  // FILL = insignia del WP; INK = texto, iconos y tintes (≥4,5:1 sobre blanco); ON = texto sobre FILL.
+  const WP_COLORS = ['#3c45a3','#c3d63a','#997fc7','#222351','#8b93d6','#514daa','#c9b9e3','#8a8aa3'];
+  const WP_INK    = ['#3c45a3','#222351','#6e55a6','#222351','#3c45a3','#514daa','#6e55a6','#55577a'];
+  const WP_ON     = ['#ffffff','#222351','#ffffff','#d6e949','#222351','#ffffff','#222351','#ffffff'];
+  function wpColor(i) { return WP_INK[i % WP_INK.length]; } // aquí el color de trabajo es el INK
+  function wpFill(i) { return WP_COLORS[i % WP_COLORS.length]; }
+  function wpOn(i) { return WP_ON[i % WP_ON.length]; }
 
   /* ── Main ──────────────────────────────────────────────────── */
   async function render(el, pid, ctx) {
@@ -144,7 +150,7 @@ const IntakeTasks = (() => {
     <div class="mb-10">
       <!-- WP Header -->
       <div class="flex items-center gap-4 mb-4">
-        <div class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-base shadow-lg" style="background:linear-gradient(135deg,${c},${c}bb)">WP${n}</div>
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-extrabold text-base shadow-lg" style="background:linear-gradient(135deg,${wpFill(wi)},${wpFill(wi)}cc);color:${wpOn(wi)}">WP${n}</div>
         <div class="flex-1">
           ${titleSelect}
           <div class="flex items-center gap-3 mt-0.5 text-[11px] text-on-surface-variant">
@@ -194,7 +200,7 @@ const IntakeTasks = (() => {
             <span class="material-symbols-outlined text-base" style="color:${c}">admin_panel_settings</span>
             <span class="text-xs font-bold" style="color:${c}">Tareas de gestión del proyecto</span>
           </div>
-          <button class="mgmt-toggle-all px-3 py-1 rounded-lg text-[10px] font-bold text-white transition-all hover:shadow-md" style="background:${c}">${mgmtEnabled.size >= 10 ? 'Deseleccionar' : 'Seleccionar todas'}</button>
+          <button class="mgmt-toggle-all px-3 py-1 rounded-full text-[10px] font-bold text-white transition-all hover:shadow-md" style="background:${c}">${mgmtEnabled.size >= 10 ? 'Deseleccionar' : 'Seleccionar todas'}</button>
         </div>
         <div class="divide-y" style="divide-color:${c}08">`;
 
@@ -306,7 +312,7 @@ const IntakeTasks = (() => {
       ? eligible.map(p => {
           const isLead = p.id === currentLead;
           const cls = isLead
-            ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
+            ? 'bg-secondary-fixed text-primary border-secondary-fixed-dim font-bold'
             : 'bg-primary/5 text-primary border-primary/15';
           const icon = isLead ? 'workspace_premium' : 'check_circle';
           return `<span class="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 rounded border ${cls}" title="${isLead ? 'Líder de la task' : chipTitleNonLead}">
@@ -355,8 +361,8 @@ const IntakeTasks = (() => {
     const title = saved?.title || tmpl?.title || act.label || '';
     const desc = saved?.description || tmpl?.description || '';
     const headline = tmpl
-      ? `<span class="text-[10px] font-bold uppercase tracking-wider text-green-600">Tarea recomendada</span>`
-      : `<span class="text-[10px] font-bold uppercase tracking-wider text-amber-600">Tarea (sin plantilla específica — edítala libremente)</span>`;
+      ? `<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Tarea recomendada</span>`
+      : `<span class="text-[10px] font-bold uppercase tracking-wider text-violet">Tarea (sin plantilla específica — edítala libremente)</span>`;
 
     const tCode = typeof taskIdx === 'number' ? taskCodeFor(wi, taskIdx) : '';
     return `
@@ -374,7 +380,7 @@ const IntakeTasks = (() => {
         <div class="px-5 py-4 bg-white">
           ${renderableBody ? `
             <div class="flex items-center gap-1.5 mb-2">
-              <span class="material-symbols-outlined text-xs ${tmpl ? 'text-green-500' : 'text-amber-500'}">task_alt</span>
+              <span class="material-symbols-outlined text-xs ${tmpl ? 'text-primary' : 'text-lavender'}">task_alt</span>
               ${headline}
             </div>
             <input type="text" class="task-title-edit w-full text-sm font-bold text-on-surface px-3 py-2 rounded-xl border border-outline-variant/20 bg-surface-container-lowest focus:bg-white focus:border-primary/30 focus:ring-2 focus:ring-primary/10 outline-none transition-all mb-2" value="${esc(title)}" data-wi="${wi}" data-cat="${category}" data-sub="${esc(subKey)}">
@@ -678,10 +684,10 @@ const IntakeTasks = (() => {
     if (isInsideWriter()) return '';
     return `
       <div class="flex justify-between items-center mt-10 pt-5 border-t border-outline-variant">
-        ${prevStep !== null ? `<button data-goto="${prevStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
+        ${prevStep !== null ? `<button data-goto="${prevStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
         </button>` : '<span></span>'}
-        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           ${nextLabel || 'Siguiente'} <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>` : ''}
       </div>`;

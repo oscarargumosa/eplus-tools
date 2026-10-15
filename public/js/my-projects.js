@@ -40,7 +40,7 @@ const MyProjects = (() => {
             <h3 class="font-headline text-lg font-bold text-primary mb-2">No tienes proyectos todavía</h3>
             <p class="text-sm text-on-surface-variant mb-6 max-w-sm">Crea tu primera propuesta Erasmus+ y empieza a trabajar en ella.</p>
             <button type="button" id="my-projects-empty-new"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim shadow-md transition-all">
               <span class="material-symbols-outlined text-lg">add</span> Crear mi primer proyecto
             </button>
           </div>`;
@@ -51,22 +51,23 @@ const MyProjects = (() => {
       }
 
       el.innerHTML = projects.map(p => {
+        // Estados: borrador en lavanda, enviado en azul, aprobado en verde (estado «correcto»)
         const statusColors = {
-          draft: 'bg-amber-100 text-amber-700 border-amber-200',
-          submitted: 'bg-green-100 text-green-700 border-green-200',
-          approved: 'bg-blue-100 text-blue-700 border-blue-200'
+          draft: 'bg-lavender-soft text-violet border-lavender/40',
+          submitted: 'bg-primary/10 text-primary border-primary/30',
+          approved: 'bg-green-100 text-green-800 border-green-200'
         };
         const statusColor = statusColors[p.status] || 'bg-surface-container-low text-on-surface-variant border-outline-variant';
         return `
-          <div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant/30 bg-white hover:border-primary hover:shadow-md cursor-pointer transition-all mb-2 group" data-project-id="${esc(p.id)}">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+          <div class="flex items-center gap-4 p-4 rounded-2xl border border-outline-variant/30 bg-white hover:border-primary hover:shadow-md cursor-pointer transition-all mb-2 group" data-project-id="${esc(p.id)}">
+            <div class="w-10 h-10 rounded-xl bg-lavender-soft flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-fixed transition-colors">
               <span class="material-symbols-outlined text-primary text-xl">description</span>
             </div>
             <div class="flex-1 min-w-0">
               <div class="font-headline text-sm font-bold text-primary truncate">${esc(p.name)}</div>
               <div class="text-xs text-on-surface-variant mt-0.5">${esc(p.type || '')}</div>
             </div>
-            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded border ${statusColor}">${esc(p.status || 'draft')}</span>
+            <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${statusColor}">${esc(p.status || 'draft')}</span>
             <span class="text-xs text-on-surface-variant">${fmtDate(p.updated_at || p.created_at)}</span>
             <button type="button" class="my-projects-delete w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors opacity-0 group-hover:opacity-100" data-id="${esc(p.id)}" title="Eliminar">
               <span class="material-symbols-outlined text-base">delete</span>

@@ -144,6 +144,12 @@ app.use((req, res, next) => {
   next();
 });
 
+/* ── Logos de marca: los correos web los cargan desde otro origen ── */
+app.use('/img/marca', (req, res, next) => {
+  res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+  next();
+});
+
 /* ── Static files (SPA) ──────────────────────────────────────── */
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -32,21 +32,23 @@ const Convocatorias = (() => {
     return Math.round((d - today) / 86400000);
   }
 
+  // Píldora de plazo: escala de urgencia en la paleta de marca (azul > lavanda > blanco).
   function deadlinePill(item) {
+    const base = 'text-[10px] font-bold px-2.5 py-0.5 rounded-full whitespace-nowrap';
     if (item.status === 'forthcoming') {
-      return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 whitespace-nowrap">Próxima</span>`;
+      return `<span class="${base} bg-lavender-soft text-violet">Próxima</span>`;
     }
     const d = daysUntil(item.deadline);
     if (d === null) {
       return item.status === 'open'
-        ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 whitespace-nowrap">Abierta</span>`
+        ? `<span class="${base} bg-white text-primary border border-outline-variant">Abierta</span>`
         : '';
     }
-    if (d < 0)    return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 whitespace-nowrap">Cerrada</span>`;
-    if (d === 0)  return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-600 text-white whitespace-nowrap">Hoy</span>`;
-    if (d <= 7)   return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700 whitespace-nowrap">${d} día${d === 1 ? '' : 's'}</span>`;
-    if (d <= 30)  return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 whitespace-nowrap">${d} días</span>`;
-    return         `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 whitespace-nowrap">${d} días</span>`;
+    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">Cerrada</span>`;
+    if (d === 0)  return `<span class="${base} bg-primary text-white">Hoy</span>`;
+    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d} día${d === 1 ? '' : 's'}</span>`;
+    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${d} días</span>`;
+    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${d} días</span>`;
   }
 
   function fmtMoney(n) {
@@ -65,28 +67,40 @@ const Convocatorias = (() => {
     return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' });
   }
 
+  // Partes de la fecha para la caja «día grande + mes/año».
+  function dateParts(iso) {
+    if (!iso) return null;
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return null;
+    return {
+      day:   String(d.getDate()).padStart(2, '0'),
+      month: d.toLocaleDateString('es-ES', { month: 'short' }).replace('.', ''),
+      year:  String(d.getFullYear()),
+    };
+  }
+
   function sourceBadge(src) {
     const map = {
-      sedia:  { label: 'EU · SEDIA', class: 'bg-blue-50 text-blue-700 border-blue-200' },
-      salto:  { label: 'Erasmus+ Youth', class: 'bg-purple-50 text-purple-700 border-purple-200' },
-      bdns:   { label: 'ES · BDNS', class: 'bg-amber-50 text-amber-800 border-amber-200' },
+      sedia:  { label: 'EU · SEDIA', class: 'bg-white text-primary border-primary/20' },
+      salto:  { label: 'Erasmus+ Youth', class: 'bg-lavender-soft text-violet border-lavender/30' },
+      bdns:   { label: 'ES · BDNS', class: 'bg-white text-violet border-violet/20' },
     };
-    const m = map[src] || { label: src || '—', class: 'bg-gray-100 text-gray-700 border-gray-200' };
-    return `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${m.class}">${escapeHtml(m.label)}</span>`;
+    const m = map[src] || { label: src || '—', class: 'bg-white text-on-surface-variant border-outline-variant' };
+    return `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${m.class}">${escapeHtml(m.label)}</span>`;
   }
 
   function availabilityBadge(item) {
     if (!item.available_in_efs) return '';
     const code = escapeHtml(item.source_id || item.call_id || '');
     return `<button type="button"
-      class="conv-create-project inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border bg-emerald-50 text-emerald-700 border-emerald-300 hover:bg-emerald-100 transition-colors"
+      class="conv-create-project inline-flex items-center gap-1 whitespace-nowrap max-w-full overflow-hidden text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full bg-secondary-fixed text-primary hover:bg-secondary-fixed-dim transition-colors"
       data-action-type="${code}"
       data-title="${escapeHtml(item.title || '')}"
       data-deadline="${escapeHtml(item.deadline || '')}"
       data-grant="${escapeHtml(String(item.budget_per_project_max_eur || ''))}"
       title="Crear un proyecto vinculado a esta convocatoria">
       <span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">check_circle</span>
-      Convocatoria disponible → Crear proyecto
+      Disponible → Crear proyecto
     </button>`;
   }
 
@@ -149,7 +163,7 @@ const Convocatorias = (() => {
         meta.textContent = `Fuente: SEDIA + BDNS · ${open} abiertas · ${fc} próximas${ts ? ' · actualizado ' + ts : ''}`;
       }
     } catch (err) {
-      list.innerHTML = `<div class="col-span-full text-center text-red-600 py-12 text-sm">No se pudieron cargar las convocatorias: ${escapeHtml(err.message || 'error desconocido')}</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">No se pudieron cargar las convocatorias: ${escapeHtml(err.message || 'error desconocido')}</div>`;
     }
   }
 
@@ -364,7 +378,7 @@ const Convocatorias = (() => {
             <textarea id="conv-note-text" rows="2" placeholder="Escribe una nota (visible solo para admins)…"
               class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 focus:border-primary focus:outline-none text-sm resize-y"></textarea>
             <div class="flex items-center justify-end mt-2">
-              <button id="conv-note-add" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-[#d6e949] text-xs font-bold hover:bg-primary/80 disabled:opacity-50">
+              <button id="conv-note-add" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-violet disabled:opacity-50">
                 <span class="material-symbols-outlined text-[14px]">add</span> Añadir nota
               </button>
             </div>
@@ -517,28 +531,34 @@ const Convocatorias = (() => {
     const totalBudget = fmtMoney(item.budget_total_eur);
     const perProj   = fmtMoney(item.budget_per_project_max_eur || item.budget_per_project_min_eur);
 
-    // Línea destacada: deadline a la izquierda, €/proyecto a la derecha
+    // Línea destacada (estilo manual «Upcoming events»): caja blanca con la
+    // fecha en Poppins ligera a la izquierda, importe en cifra ligera a la derecha.
+    const dl = dateParts(item.deadline);
     const deadlineCell = item.deadline
-      ? `<div class="flex items-center gap-1.5 text-on-surface">
-           <span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
-           <span class="text-[12px]"><span class="text-on-surface-variant">Deadline:</span> <strong>${escapeHtml(fmtDate(item.deadline))}</strong></span>
-         </div>`
+      ? (dl
+          ? `<div class="bg-white rounded-2xl px-3 py-2 min-w-[92px]">
+               <div class="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant">Deadline</div>
+               <div class="flex items-baseline gap-1.5 text-primary">
+                 <span class="text-[30px] font-light leading-none tabular-nums">${escapeHtml(dl.day)}</span>
+                 <span class="text-[12px] leading-tight">${escapeHtml(dl.month)}<br>${escapeHtml(dl.year)}</span>
+               </div>
+             </div>`
+          : `<div class="text-[12px] text-on-surface"><span class="text-on-surface-variant">Deadline:</span> <strong>${escapeHtml(fmtDate(item.deadline))}</strong></div>`)
       : '';
 
     const perProjCell = perProj
-      ? `<div class="flex items-center gap-1.5 text-emerald-700">
-           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">euro</span>
-           <span class="text-[12px] font-bold">Hasta ${escapeHtml(perProj)}/proyecto</span>
+      ? `<div class="text-right text-primary min-w-0">
+           <div class="text-[10px] font-semibold text-on-surface-variant">Hasta</div>
+           <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(perProj)}</span><span class="text-[11px] font-medium">/proyecto</span></div>
          </div>`
       : (totalBudget
-          ? `<div class="flex items-center gap-1.5 text-emerald-700">
-               <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">euro</span>
-               <span class="text-[12px] font-bold">${escapeHtml(totalBudget)} total</span>
+          ? `<div class="text-right text-primary min-w-0">
+               <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(totalBudget)}</span> <span class="text-[11px] font-medium">total</span></div>
              </div>`
           : '');
 
     const moneyRow = (deadlineCell || perProjCell)
-      ? `<div class="flex items-center justify-between gap-2 flex-wrap mt-auto pt-2 border-t border-outline-variant/15">
+      ? `<div class="flex items-end justify-between gap-3 flex-wrap mt-auto pt-1">
            ${deadlineCell}
            ${perProjCell}
          </div>`
@@ -552,26 +572,26 @@ const Convocatorias = (() => {
     const lastNote    = notesCount ? notesLog[notesCount - 1] : null;
     const isInEfs     = !!item.available_in_efs;
     const cardClasses = isHidden
-      ? 'bg-surface/60 rounded-2xl border-2 border-dashed border-on-surface-variant/30 p-5 opacity-60 hover:opacity-100 transition-all cursor-pointer flex flex-col gap-3'
-      : 'bg-surface rounded-2xl border border-outline-variant/30 p-5 hover:shadow-lg hover:border-primary/40 transition-all cursor-pointer flex flex-col gap-3';
+      ? 'bg-cream/60 rounded-3xl border-2 border-dashed border-outline/40 p-5 opacity-60 hover:opacity-100 transition-all cursor-pointer flex flex-col gap-3'
+      : 'bg-cream rounded-3xl border border-transparent p-5 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/25 transition-all cursor-pointer flex flex-col gap-3';
 
     const adminToolbar = isAdmin ? `
       <div class="conv-admin-toolbar absolute top-2 right-2 flex items-center gap-1 bg-white/95 backdrop-blur rounded-full px-1.5 py-1 shadow-sm border border-outline-variant/20" data-source-id="${escapeHtml(item.source_id || '')}">
-        <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isHidden ? 'text-red-500' : 'text-on-surface-variant/50'}"
+        <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isHidden ? 'text-primary' : 'text-on-surface-variant/50'}"
           data-act="hidden" title="${isHidden ? 'Oculta — click para mostrar' : 'Ocultar al público'}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${isHidden ? 1 : 0}">${isHidden ? 'visibility_off' : 'visibility'}</span>
         </button>
-        <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isReviewed ? 'text-emerald-600' : 'text-on-surface-variant/50'}"
+        <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isReviewed ? 'text-primary' : 'text-on-surface-variant/50'}"
           data-act="reviewed" title="${isReviewed ? 'Revisada' + (cur.reviewed_at ? ' ('+cur.reviewed_at.slice(0,10)+')' : '') + ' — click para desmarcar' : 'Marcar como revisada'}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${isReviewed ? 1 : 0}">${isReviewed ? 'task_alt' : 'radio_button_unchecked'}</span>
         </button>
-        <button type="button" class="conv-admin-act relative w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${notesCount ? 'text-amber-600' : 'text-on-surface-variant/50'}"
+        <button type="button" class="conv-admin-act relative w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${notesCount ? 'text-violet' : 'text-on-surface-variant/50'}"
           data-act="notes" title="${notesCount ? notesCount + ' nota'+(notesCount!==1?'s':'')+' · última: ' + escapeHtml((lastNote.author_name||'?')) + ' ' + escapeHtml((lastNote.created_at||'').slice(0,10)) : 'Añadir nota admin'}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${notesCount ? 1 : 0}">${notesCount ? 'sticky_note_2' : 'edit_note'}</span>
-          ${notesCount ? `<span class="absolute -top-1 -right-1 min-w-[14px] h-[14px] px-[3px] rounded-full bg-amber-500 text-white text-[8px] font-bold flex items-center justify-center">${notesCount}</span>` : ''}
+          ${notesCount ? `<span class="absolute -top-1 -right-1 min-w-[14px] h-[14px] px-[3px] rounded-full bg-violet text-white text-[8px] font-bold flex items-center justify-center">${notesCount}</span>` : ''}
         </button>
         ${isInEfs
-          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-emerald-600" title="Ya importada en Studio"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
+          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-primary" title="Ya importada en Studio"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
           : `<button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-primary/10 text-primary transition-colors" data-act="import" title="Importar a Studio"><span class="material-symbols-outlined text-[16px]">download</span></button>`}
       </div>` : '';
 
@@ -581,12 +601,12 @@ const Convocatorias = (() => {
 
       ${adminToolbar}
 
-      <div class="flex items-start gap-2 justify-between flex-wrap ${isAdmin ? 'pr-32' : ''}">
+      <div class="flex items-start gap-2 justify-between flex-wrap ${isAdmin ? 'pt-9' : ''}">
         ${availabilityBadge(item) || sourceBadge(item.source)}
         ${deadlinePill(item)}
       </div>
 
-      <h3 class="text-base font-bold text-on-surface leading-tight ${isHidden ? 'line-through' : ''}" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${escapeHtml(item.title || '')}</h3>
+      <h3 class="text-base font-semibold text-primary leading-tight ${isHidden ? 'line-through' : ''}" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${escapeHtml(item.title || '')}</h3>
 
       ${programme ? `<div class="text-[11px] font-semibold text-primary uppercase tracking-wider truncate">${escapeHtml(programme)}</div>` : ''}
 
@@ -594,14 +614,16 @@ const Convocatorias = (() => {
 
       ${moneyRow}
 
-      <div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 gap-2">
+      <div class="flex items-center justify-between pt-3 border-t border-outline-variant gap-2">
         <span class="text-[11px] text-on-surface-variant truncate font-mono">${escapeHtml(item.source_id || '')}</span>
         <span class="flex items-center gap-3 whitespace-nowrap">
           <button type="button" class="conv-card-vision inline-flex items-center gap-1 text-[11px] font-semibold text-on-surface-variant hover:text-primary transition-colors"
             data-call-id="${id}" title="Empezar mi visión sobre esta convocatoria">
             <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">explore</span>Visión
           </button>
-          <span class="text-[11px] font-bold text-primary">Ver →</span>
+          ${isInEfs
+            ? `<span class="text-[11px] font-bold text-primary">Ver →</span>`
+            : `<span class="text-[11px] font-bold text-primary bg-secondary-fixed rounded-full px-3 py-1">Ver →</span>`}
         </span>
       </div>
     </article>`;
@@ -715,7 +737,7 @@ const Convocatorias = (() => {
         <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Preguntas frecuentes${hiddenNote}</div>
         <div class="space-y-1.5">
           ${visible.map((f, i) => `
-            <details class="group rounded-lg bg-surface-container-low border border-outline-variant/15 px-3 py-2.5 ${i === 0 ? 'open' : ''}" ${i === 0 ? 'open' : ''}>
+            <details class="group rounded-lg bg-cream border border-transparent px-3 py-2.5 ${i === 0 ? 'open' : ''}" ${i === 0 ? 'open' : ''}>
               <summary class="cursor-pointer text-sm font-semibold text-on-surface flex items-center gap-2 list-none">
                 <span class="material-symbols-outlined text-[16px] text-primary transition-transform group-open:rotate-90">chevron_right</span>
                 <span class="flex-1">${escapeHtml(f.q || '')}</span>
@@ -752,7 +774,7 @@ const Convocatorias = (() => {
     // secundario para quien quiera ir directo a solicitar fuera.
     const apply = `<button type="button" id="conv-start-vision"
             data-call-id="${escapeHtml(item.call_id || '')}"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
+            class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">explore</span>
             <span>Empezar mi visión</span>
           </button>`;
@@ -766,7 +788,7 @@ const Convocatorias = (() => {
 
     const details = item.details_url
       ? `<a href="${escapeHtml(item.details_url)}" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-transparent border border-outline-variant/30 text-on-surface-variant text-sm font-bold hover:bg-[#f8f8f8] transition-colors">
+            class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-transparent border border-primary text-primary text-sm font-bold hover:bg-lavender-soft transition-colors">
             <span>Ver en portal</span>
             <span class="material-symbols-outlined" style="font-size:16px;line-height:1;">open_in_new</span>
           </a>`
@@ -777,11 +799,11 @@ const Convocatorias = (() => {
     `).join('');
 
     const keywords = (item.keywords || []).slice(0, 12).map(k =>
-      `<span class="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant border border-outline-variant/30">${escapeHtml(k)}</span>`
+      `<span class="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cream text-on-surface-variant border border-outline-variant">${escapeHtml(k)}</span>`
     ).join(' ');
 
     const priorities = (item.crossCuttingPriorities || []).map(k =>
-      `<span class="inline-flex items-center text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">${escapeHtml(k)}</span>`
+      `<span class="inline-flex items-center text-[10px] font-bold px-2 py-0.5 rounded-full bg-lavender-soft text-violet">${escapeHtml(k)}</span>`
     ).join(' ');
 
     return `
@@ -791,7 +813,7 @@ const Convocatorias = (() => {
             ${sourceBadge(item.source)}
             ${deadlinePill(item)}
           </div>
-          <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${escapeHtml(item.title || '')}</h2>
+          <h2 class="text-xl font-bold text-primary leading-tight pr-12">${escapeHtml(item.title || '')}</h2>
           ${programme ? `<div class="text-[12px] font-semibold text-primary uppercase tracking-wider mt-1">${escapeHtml(programme)}</div>` : ''}
         </div>
 
@@ -815,7 +837,7 @@ const Convocatorias = (() => {
           <button type="button" id="conv-chat-open"
             data-source-id="${escapeHtml(item.source_id || '')}"
             data-title="${escapeHtml(item.title || '')}"
-            class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-purple-50 border-2 border-purple-200 text-purple-800 text-sm font-bold hover:bg-purple-100 transition-colors">
+            class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-lavender-soft text-primary text-sm font-bold hover:bg-[#dcd3ee] transition-colors">
             <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">smart_toy</span>
             Chat con esta convocatoria
           </button>
@@ -854,12 +876,12 @@ const Convocatorias = (() => {
         <div class="border-t border-outline-variant/20 pt-3">
           <form id="conv-chat-form" class="flex gap-2">
             <input id="conv-chat-input" type="text" placeholder="Escribe tu pregunta..."
-              class="flex-1 px-3 py-2 rounded-xl border border-outline-variant/40 focus:border-primary focus:outline-none text-sm">
-            <button type="submit" class="px-4 py-2 rounded-xl bg-primary text-[#d6e949] text-sm font-bold hover:bg-primary/80">Enviar</button>
+              class="flex-1 px-4 py-2 rounded-full border border-outline-variant focus:border-primary focus:outline-none text-sm">
+            <button type="submit" class="px-5 py-2 rounded-full bg-primary text-white text-sm font-bold hover:bg-violet">Enviar</button>
           </form>
           <div class="mt-2 flex flex-wrap gap-1.5 text-[10px]">
             ${['¿Cuál es el presupuesto?','¿Quién puede aplicar?','¿Qué documentos hay que entregar?','¿Cuáles son los criterios de evaluación?'].map(s =>
-              `<button type="button" class="conv-chat-suggest px-2 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant" data-q="${escapeHtml(s)}">${escapeHtml(s)}</button>`
+              `<button type="button" class="conv-chat-suggest px-2 py-1 rounded-full bg-cream hover:bg-lavender-soft text-primary" data-q="${escapeHtml(s)}">${escapeHtml(s)}</button>`
             ).join('')}
           </div>
         </div>
@@ -894,7 +916,7 @@ const Convocatorias = (() => {
     const thinkingId = 'thinking_' + Date.now();
     msgs.insertAdjacentHTML('beforeend', `
       <div id="${thinkingId}" class="flex justify-start">
-        <div class="max-w-[80%] px-3 py-2 rounded-2xl rounded-tl-sm bg-surface-container text-on-surface-variant text-sm"><span class="spinner inline-block"></span> Pensando…</div>
+        <div class="max-w-[80%] px-3 py-2 rounded-2xl rounded-tl-sm bg-cream text-on-surface-variant text-sm"><span class="spinner inline-block"></span> Pensando…</div>
       </div>`);
     msgs.scrollTop = msgs.scrollHeight;
     try {
@@ -904,7 +926,7 @@ const Convocatorias = (() => {
       document.getElementById(thinkingId)?.remove();
       msgs.insertAdjacentHTML('beforeend', `
         <div class="flex justify-start">
-          <div class="max-w-[85%] px-3 py-2 rounded-2xl rounded-tl-sm bg-purple-50 border border-purple-200 text-on-surface text-sm whitespace-pre-wrap">${escapeHtml(ans)}</div>
+          <div class="max-w-[85%] px-3 py-2 rounded-2xl rounded-tl-sm bg-lavender-soft text-on-surface text-sm whitespace-pre-wrap">${escapeHtml(ans)}</div>
         </div>`);
       msgs.scrollTop = msgs.scrollHeight;
     } catch (e) {
@@ -914,7 +936,7 @@ const Convocatorias = (() => {
         : 'Error: ' + (e.message || e);
       msgs.insertAdjacentHTML('beforeend', `
         <div class="flex justify-start">
-          <div class="max-w-[85%] px-3 py-2 rounded-2xl rounded-tl-sm bg-red-50 border border-red-200 text-error text-sm">${escapeHtml(msg)}</div>
+          <div class="max-w-[85%] px-3 py-2 rounded-2xl rounded-tl-sm bg-error-container/50 border border-error/20 text-error text-sm">${escapeHtml(msg)}</div>
         </div>`);
     }
   }

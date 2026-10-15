@@ -110,7 +110,7 @@ const Sandbox = (() => {
         </span>
         <span class="flex-1"></span>
         <button type="button" id="sandbox-graduate-btn"
-          class="bg-secondary-fixed text-primary-container font-bold text-xs px-3 py-1.5 rounded-lg hover:scale-[1.02] transition-transform">
+          class="bg-secondary-fixed text-primary-container font-bold text-xs px-3.5 py-1.5 rounded-full hover:scale-[1.02] transition-transform">
           Graduar a proyecto real →
         </button>
       </div>

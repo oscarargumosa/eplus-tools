@@ -16,8 +16,14 @@ const IntakeGantt = (() => {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  const WP_COLORS = ['#3c45a3','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
+  // Colores de WP con la paleta de marca (misma tabla que intake-tasks.js).
+  // FILL = barras y muestras; INK = texto/iconos sobre blanco (≥4,5:1); ON = texto sobre FILL.
+  const WP_COLORS = ['#3c45a3','#c3d63a','#997fc7','#222351','#8b93d6','#514daa','#c9b9e3','#8a8aa3'];
+  const WP_INK    = ['#3c45a3','#222351','#6e55a6','#222351','#3c45a3','#514daa','#6e55a6','#55577a'];
+  const WP_ON     = ['#ffffff','#222351','#ffffff','#d6e949','#222351','#ffffff','#222351','#ffffff'];
   function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
+  function wpInk(i) { return WP_INK[i % WP_INK.length]; }
+  function wpOn(i) { return WP_ON[i % WP_ON.length]; }
 
   const ACT_ICONS = {
     meeting:'groups', ltta:'flight_takeoff', io:'menu_book', me:'campaign', mgmt:'settings',
@@ -98,8 +104,8 @@ const IntakeGantt = (() => {
           font-weight: 700;
           text-align: center;
           color: #3c45a3;
-          background: #f8f9fa;
-          border: 1.5px solid #e0e0e0;
+          background: #f8f7f5;
+          border: 1.5px solid #d6d3dc;
           border-radius: 6px;
           cursor: pointer;
           outline: none;
@@ -151,8 +157,8 @@ const IntakeGantt = (() => {
         html += `
           <div class="flex items-center" style="background:${c}06; border-top:1.5px solid ${c}18">
             <div class="flex-shrink-0 px-2 py-1.5 flex items-center gap-1.5" style="width:300px">
-              <span class="w-5 h-5 rounded flex items-center justify-center text-white text-[8px] font-bold" style="background:${c}">W${row.wi+1}</span>
-              <span class="text-[10px] font-bold truncate" style="color:${c}">${esc(wp.name || wp.desc || 'WP'+(row.wi+1))}</span>
+              <span class="w-5 h-5 rounded flex items-center justify-center text-[8px] font-bold" style="background:${c};color:${wpOn(row.wi)}">W${row.wi+1}</span>
+              <span class="text-[10px] font-bold truncate" style="color:${row.ink}">${esc(wp.name || wp.desc || 'WP'+(row.wi+1))}</span>
             </div>
             <div class="flex-1"></div>
           </div>`;
@@ -193,13 +199,13 @@ const IntakeGantt = (() => {
 
     for (let wi = 0; wi < cs.wps.length; wi++) {
       const wp = cs.wps[wi];
-      const c = wpColor(wi);
+      const c = wpColor(wi), ink = wpInk(wi);
 
       // WP1 management tasks (from checklist in Tareas step)
       if (wi === 0) {
         const mgmtTasks = savedTasks.filter(x => x.category === 'project_management');
         mgmtTasks.forEach((t) => {
-          rows.push({ wi, color: c, icon: 'admin_panel_settings',
+          rows.push({ wi, color: c, ink, icon: 'admin_panel_settings',
             primary: t.title, secondary: 'Management',
             id: 'mgmt-'+t.id, start: t.start_month||0, end: t.end_month||0, taskId: t.id });
         });
@@ -222,7 +228,7 @@ const IntakeGantt = (() => {
           if (end != null) act._gantt_end = end;
         }
 
-        rows.push({ wi, color: c, icon: ACT_ICONS[act.type]||'task',
+        rows.push({ wi, color: c, ink, icon: ACT_ICONS[act.type]||'task',
           primary: actLabel,
           secondary: actLabel !== typeName ? typeName : '',
           id: 'act-'+act.id, start: start||0, end: end||0, actRef: act });
@@ -230,7 +236,7 @@ const IntakeGantt = (() => {
 
       // Custom tasks
       for (const t of savedTasks.filter(x => x.category === 'custom' && parseInt(x.subtype) === wi)) {
-        rows.push({ wi, color: c, icon: 'edit_note',
+        rows.push({ wi, color: c, ink, icon: 'edit_note',
           primary: t.title || 'Sin título', secondary: 'Personalizada',
           id: 'custom-'+t.id, start: t.start_month||0, end: t.end_month||0, taskId: t.id });
       }
@@ -272,7 +278,7 @@ const IntakeGantt = (() => {
       <div class="gantt-row flex items-center border-b border-outline-variant/6 hover:bg-primary/[0.02] transition-colors" data-rid="${row.id}">
         <div class="flex-shrink-0 px-2 py-1.5 border-r border-outline-variant/10 overflow-hidden" style="width:300px">
           <div class="flex items-start gap-1.5 pl-3">
-            <span class="material-symbols-outlined text-[11px] mt-0.5" style="color:${row.color}">${row.icon}</span>
+            <span class="material-symbols-outlined text-[11px] mt-0.5" style="color:${row.ink}">${row.icon}</span>
             <div class="min-w-0 flex-1">
               <div class="text-[10px] font-bold text-on-surface truncate" title="${esc(row.primary)}">${esc(row.primary)}</div>
               ${row.secondary ? `<div class="text-[9px] text-on-surface-variant/60 truncate" title="${esc(row.secondary)}">↳ ${esc(row.secondary)}</div>` : ''}
@@ -334,10 +340,10 @@ const IntakeGantt = (() => {
     if (isInsideWriter()) return '';
     return `
       <div class="flex justify-between items-center mt-10 pt-5 border-t border-outline-variant">
-        <button data-goto="4" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
+        <button data-goto="4" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Tareas
         </button>
-        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           Resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>
       </div>`;

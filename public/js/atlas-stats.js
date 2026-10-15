@@ -25,12 +25,21 @@ const AtlasStats = (() => {
   let activePopup = null;
 
   const TIER_BY_CODE = { 0: 'unenriched', 1: 'premium', 2: 'good', 3: 'acceptable', 4: 'minimal' };
+  // Escala de la paleta de marca: lima (destacado) → lavanda → azul → tinta; sin enriquecer = línea suave
   const TIER_COLOR = {
     premium:    '#d6e949',
     good:       '#997fc7',
-    acceptable: '#9aa0a6',
-    minimal:    '#5a5a6a',
-    unenriched: '#3a3a48',
+    acceptable: '#3c45a3',
+    minimal:    '#222351',
+    unenriched: '#d6d3dc',
+  };
+  // Insignia de la ficha emergente: fondo + texto con contraste AA
+  const TIER_BADGE = {
+    premium:    'background:#d6e949;color:#3c45a3',
+    good:       'background:#e7e1f3;color:#514daa',
+    acceptable: 'background:#3c45a3;color:#ffffff',
+    minimal:    'background:#222351;color:#ffffff',
+    unenriched: 'background:#f0edeb;color:#55577a',
   };
   const TIER_LABEL = {
     premium: 'Premium', good: 'Buena', acceptable: 'Aceptable',
@@ -217,7 +226,7 @@ const AtlasStats = (() => {
   function kpi(label, value, icon, variant, sub) {
     const variants = {
       primary:  'bg-primary text-white',
-      lavender: 'bg-accent-warm text-primary',
+      lavender: 'bg-lavender-soft text-primary',
       yellow:   'bg-secondary-fixed text-primary',
       neutral:  'bg-white border border-outline-variant/30 text-primary',
     };
@@ -227,7 +236,7 @@ const AtlasStats = (() => {
           <span class="text-[10px] font-bold uppercase tracking-wider opacity-80">${esc(label)}</span>
           <span class="material-symbols-outlined text-[20px] opacity-70">${icon}</span>
         </div>
-        <div class="font-headline text-3xl font-extrabold leading-none">${formatNumber(value || 0)}</div>
+        <div class="font-headline text-4xl font-light leading-none tracking-tight">${formatNumber(value || 0)}</div>
         <div class="text-[11px] opacity-80">${esc(sub || '')}</div>
       </div>`;
   }
@@ -257,13 +266,13 @@ const AtlasStats = (() => {
       chart: { type: 'donut', height: 260, fontFamily: 'Poppins' },
       series, labels: names, colors: cols,
       legend: { position: 'bottom', fontSize: '12px', fontWeight: 600, labels: { colors: '#3c45a3' } },
-      stroke: { width: 2, colors: ['#fff'] },
+      stroke: { width: 2, colors: ['#ffffff'] },
       dataLabels: { enabled: false },
       plotOptions: {
         pie: { donut: { size: '70%', labels: { show: true,
-          total: { show: true, label: 'Total', color: '#474551', fontSize: '11px', fontWeight: 600,
+          total: { show: true, label: 'Total', color: '#55577a', fontSize: '11px', fontWeight: 600,
                    formatter: () => formatNumber(series.reduce((a,b) => a+b, 0)) },
-          value: { color: '#3c45a3', fontSize: '20px', fontWeight: 800 },
+          value: { color: '#3c45a3', fontSize: '22px', fontWeight: 300 },
         }}}},
       tooltip: { y: { formatter: (v) => formatNumber(v) + ' entidades' } },
     });
@@ -272,10 +281,17 @@ const AtlasStats = (() => {
   }
   function renderBars() {
     if (typeof ApexCharts === 'undefined') return setTimeout(renderBars, 200);
-    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#d6e949', '#3c45a3');
+    // Barras en azul / lavanda alternando (el lima queda para KPIs y premium)
+    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#3c45a3', '#3c45a3');
     bar('stats-bar-categories', cached.categories.slice(0, 12), 'category', 'count', '#997fc7', '#3c45a3');
-    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#d6e949', '#3c45a3');
-    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#997fc7', '#3c45a3');
+    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#997fc7', '#3c45a3');
+    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#3c45a3', '#3c45a3');
+  }
+  // Tope del eje redondeado (30.000, 75.000…) para que las marcas salgan limpias
+  function niceMax(n) {
+    if (!(n > 0)) return 1;
+    const p = 10 ** Math.floor(Math.log10(n));
+    return Math.ceil(n / p * 2) / 2 * p;
   }
   function bar(elId, data, labelKey, valueKey, fill, text) {
     const el = document.getElementById(elId);
@@ -285,14 +301,18 @@ const AtlasStats = (() => {
     }
     const labels = data.map(d => (d[labelKey] || '').toString().toUpperCase());
     const values = data.map(d => d[valueKey] || 0);
+    const narrow = el.clientWidth < 420; // móvil: más hueco para la cifra y menos marcas en el eje
     const chart = new ApexCharts(el, {
       chart: { type: 'bar', height: Math.max(260, data.length * 26), fontFamily: 'Poppins', toolbar: { show: false } },
       series: [{ name: 'Entidades', data: values }],
-      xaxis: { categories: labels, labels: { style: { fontWeight: 600 } } },
+      xaxis: { categories: labels, min: 0, max: niceMax(Math.max(...values) * (narrow ? 1.5 : 1.2)), tickAmount: narrow ? 2 : 4, labels: { style: { fontWeight: 600, colors: '#55577a' }, formatter: (v) => formatNumber(Math.round(v)) } },
+      yaxis: { labels: { style: { fontWeight: 600, colors: '#222351' } } },
       colors: [fill],
       plotOptions: { bar: { horizontal: true, borderRadius: 6, barHeight: '70%', dataLabels: { position: 'top' } } },
-      dataLabels: { enabled: true, offsetX: 30, style: { fontWeight: 700, colors: [text] }, formatter: (v) => formatNumber(v) },
-      grid: { borderColor: '#eeeeee' },
+      // Cifra justo fuera del extremo de la barra (hueco extra en el eje para la mayor)
+      fill: { opacity: 1 },
+      dataLabels: { enabled: true, offsetX: 40, style: { fontWeight: 600, colors: [text] }, formatter: (v) => formatNumber(v) },
+      grid: { borderColor: '#e7e1f3' },
       tooltip: { y: { formatter: (v) => formatNumber(v) } },
     });
     chart.render();
@@ -538,7 +558,7 @@ const AtlasStats = (() => {
       e.score_eu_readiness != null    ? `EU ${e.score_eu_readiness}`     : null,
       e.score_vitality != null        ? `Vit ${e.score_vitality}`        : null,
     ].filter(Boolean).join(' · ');
-    const tierBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style="background:${TIER_COLOR[tierName]};color:#3c45a3">${TIER_LABEL[tierName]}</span>`;
+    const tierBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style="${TIER_BADGE[tierName] || TIER_BADGE.unenriched}">${TIER_LABEL[tierName]}</span>`;
     return `
       <div class="atlas-popup-body">
         <div class="p-4">

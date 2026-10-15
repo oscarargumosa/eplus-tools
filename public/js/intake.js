@@ -35,9 +35,9 @@ const Intake = (() => {
       const topbar = document.getElementById('topbar-title');
       if (topbar) topbar.parentElement.appendChild(el);
     }
-    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#9ca3af'; el.style.opacity = '1'; }
-    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#22c55e'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
-    else if (status === 'error') { el.textContent = 'Error: ' + (msg || 'no se pudo guardar'); el.style.color = '#ef4444'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 5000); }
+    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#55577a'; el.style.opacity = '1'; }
+    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#3c45a3'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
+    else if (status === 'error') { el.textContent = 'Error: ' + (msg || 'no se pudo guardar'); el.style.color = '#ba1a1a'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 5000); }
   }
 
   /* ── Step configuration (5 steps — contexto, tareas, gantt moved to Writer) */
@@ -330,10 +330,10 @@ const Intake = (() => {
       .map(p => `<option value="${esc(p.id)}">${esc(p.action_type)} — ${esc((p.name || '').trim())}</option>`)
       .join('');
     box.innerHTML = `
-      <select id="intake-f-type-pick" class="w-full px-3 py-2.5 rounded-lg bg-white border-2 border-amber-400 text-on-surface font-body text-sm focus:border-primary outline-none">
+      <select id="intake-f-type-pick" class="w-full px-3 py-2.5 rounded-lg bg-[#f3f8d2] border-2 border-[#c3d63a] text-on-surface font-body text-sm focus:border-primary outline-none">
         <option value="">Elige la convocatoria…</option>${opts}
       </select>
-      <p class="text-[11px] text-amber-700 leading-snug">${currentType
+      <p class="text-[11px] text-ink leading-snug">${currentType
         ? `«${esc(currentType)}» no es una convocatoria concreta. Elige la acción para continuar.`
         : 'Este proyecto no tiene convocatoria. Elígela para continuar.'}</p>`;
     box.querySelector('select').addEventListener('change', (ev) => {
@@ -1186,15 +1186,15 @@ const Intake = (() => {
     b.textContent = n + ' palabra' + (n !== 1 ? 's' : '');
     if (n === 0) {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all';
-      f.style.width = '0%'; f.style.background = '#cccccc';
+      f.style.width = '0%'; f.style.background = '#d6d3dc';
     } else if (n < c.min) {
-      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-yellow-400 bg-yellow-50 text-yellow-700 transition-all';
-      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#eab308';
+      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-[#c3d63a] bg-[#f3f8d2] text-ink transition-all';
+      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#c3d63a';
     } else if (n > c.max) {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-error/40 bg-error-container text-on-error-container transition-all';
       f.style.width = '100%'; f.style.background = '#ba1a1a';
     } else {
-      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-700 transition-all';
+      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-800 transition-all';
       f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
     }
   }
@@ -1277,7 +1277,7 @@ const Intake = (() => {
           ${items.map(it => `
             <tr class="${id} hidden border-b border-outline-variant/3">
               <td class="py-0.5 text-[10px] text-on-surface-variant" style="padding-left:3.5rem">
-                <span class="font-semibold" style="color:${(pb.wpColors && pb.wpColors[it.wpIdx]) || '#666'}">${it.wp}</span> ${it.label}
+                <span class="font-semibold" style="color:${(pb.wpColors && pb.wpColors[it.wpIdx]) || '#55577a'}">${it.wp}</span> ${it.label}
               </td>
               <td class="text-right font-mono text-[10px]">${fmtN(it.units)}</td>
               <td class="text-right font-mono text-[10px]">${fmtN(it.rate)}</td>

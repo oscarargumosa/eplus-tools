@@ -78,8 +78,9 @@
 
   // Etiquetas y colores por severidad (renombradas y suavizadas).
   const SEVERITY_LABEL = { info: 'menor', warning: 'a revisar', critical: 'prioritario' };
-  const SEVERITY_RING  = { info: 'border-blue-200 bg-blue-50', warning: 'border-amber-200 bg-amber-50', critical: 'border-rose-200 bg-rose-50' };
-  const SEVERITY_BADGE = { info: 'bg-blue-100 text-blue-800', warning: 'bg-amber-100 text-amber-800', critical: 'bg-rose-100 text-rose-800' };
+  // Paleta de marca: menor = lavanda suave, a revisar = lima suave, prioritario = rojo de error suave
+  const SEVERITY_RING  = { info: 'border-lavender/40 bg-lavender-soft/60', warning: 'border-[#d6e949] bg-[#f3f8d2]', critical: 'border-error/25 bg-error-container/40' };
+  const SEVERITY_BADGE = { info: 'bg-lavender-soft text-primary', warning: 'bg-secondary-fixed text-primary', critical: 'bg-error-container text-on-error-container' };
   function sevLabel(s) { return SEVERITY_LABEL[s] || SEVERITY_LABEL.warning; }
   function sevRing(s)  { return SEVERITY_RING[s]  || SEVERITY_RING.warning; }
   function sevBadge(s) { return SEVERITY_BADGE[s] || SEVERITY_BADGE.warning; }
@@ -319,7 +320,7 @@
         <span class="material-symbols-outlined text-sm">${hasDiag ? 'refresh' : 'fact_check'}</span>
         ${hasDiag ? 'Re-lanzar diagnóstico' : 'Lanzar diagnóstico'}
       </button>
-      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
+      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
       ${allHandled ? `<button onclick="Master.goToCompress()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">arrow_forward</span>Pasar a Comprimir</button>` : ''}
     `;
   }
@@ -340,7 +341,7 @@
             ? `<p class="text-xs text-on-surface-variant italic">No hay documentos con texto extraído para esta convocatoria. El Maestro se compilará sólo con el Diseño del proyecto.</p>`
             : (cagInv.docs || []).map(d => `
                 <div class="flex items-center gap-3 text-xs">
-                  <span class="px-1.5 py-0.5 rounded ${d.origin === 'project' ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-700'} text-[10px] font-bold whitespace-nowrap">${d.origin === 'project' ? 'PROYECTO' : 'CONVOCATORIA'}</span>
+                  <span class="px-1.5 py-0.5 rounded ${d.origin === 'project' ? 'bg-secondary-fixed text-primary' : 'bg-lavender-soft text-primary'} text-[10px] font-bold whitespace-nowrap">${d.origin === 'project' ? 'PROYECTO' : 'CONVOCATORIA'}</span>
                   <span class="flex-1 truncate font-medium text-on-surface">${esc(d.title)}</span>
                   <span class="font-mono text-[10px] text-on-surface-variant whitespace-nowrap">${(d.tokens_estimated || 0).toLocaleString('es-ES')} tok</span>
                 </div>
@@ -361,13 +362,13 @@
     const id = ch.id;
 
     return `
-      <details id="master-chapter-card-${esc(id)}" class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg mb-2 transition-shadow ${openItems.length ? 'ring-1 ring-amber-300' : ''}" ${startOpen || openItems.length ? 'open' : ''} data-chapter-id="${esc(id)}">
+      <details id="master-chapter-card-${esc(id)}" class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg mb-2 transition-shadow ${openItems.length ? 'ring-1 ring-[#d6e949]' : ''}" ${startOpen || openItems.length ? 'open' : ''} data-chapter-id="${esc(id)}">
         <summary class="px-4 py-3 cursor-pointer flex items-center justify-between hover:bg-surface-container-low">
           <div class="flex items-center gap-2 min-w-0">
             <span class="text-[10px] font-mono text-on-surface-variant uppercase">${esc(ch.chapter_type)}</span>
             <span class="font-bold text-sm truncate">${esc(ch.title)}</span>
-            ${openItems.length ? `<span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold whitespace-nowrap"><span class="material-symbols-outlined text-xs">priority_high</span>${openItems.length} ${openItems.length === 1 ? 'sugerencia' : 'sugerencias'}</span>` : ''}
-            ${!openItems.length && resolvedItems.length ? `<span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-800 text-[10px] font-bold whitespace-nowrap"><span class="material-symbols-outlined text-xs">check_circle</span>${resolvedItems.length} resuelta${resolvedItems.length === 1 ? '' : 's'}</span>` : ''}
+            ${openItems.length ? `<span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-primary text-[10px] font-bold whitespace-nowrap"><span class="material-symbols-outlined text-xs">priority_high</span>${openItems.length} ${openItems.length === 1 ? 'sugerencia' : 'sugerencias'}</span>` : ''}
+            ${!openItems.length && resolvedItems.length ? `<span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-lavender-soft text-primary text-[10px] font-bold whitespace-nowrap"><span class="material-symbols-outlined text-xs">check_circle</span>${resolvedItems.length} resuelta${resolvedItems.length === 1 ? '' : 's'}</span>` : ''}
           </div>
           <span class="text-[10px] text-on-surface-variant ml-2 whitespace-nowrap">${fmtChars(ch.char_count)}</span>
         </summary>
@@ -428,14 +429,14 @@
           <div class="flex-1 min-w-0">
             <div class="font-bold text-sm">${esc(it.title)}</div>
             ${it.detail ? `<div class="text-xs mt-1 text-on-surface-variant whitespace-pre-wrap">${mdLite(it.detail)}</div>` : ''}
-            ${it.suggestion ? `<div class="text-xs mt-2 italic text-on-surface whitespace-pre-wrap"><span class="material-symbols-outlined text-xs align-middle text-amber-500">tips_and_updates</span> ${mdLite(it.suggestion)}</div>` : ''}
+            ${it.suggestion ? `<div class="text-xs mt-2 italic text-on-surface whitespace-pre-wrap"><span class="material-symbols-outlined text-xs align-middle text-violet">tips_and_updates</span> ${mdLite(it.suggestion)}</div>` : ''}
           </div>
         </div>
 
         ${isOpen && isEconomic ? `
           <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-current/10">
             <span class="text-[11px] italic text-on-surface-variant flex-1"><span class="material-symbols-outlined text-xs align-middle">info</span> Se arregla volviendo a <strong>Diseñar</strong> o <strong>Escribir</strong> (presupuesto, partners, contexto).</span>
-            <button onclick="Master._patchItemState('${esc(it.id)}', 'resolved')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-green-700 bg-green-50 hover:bg-green-100 border border-green-200 transition-colors"><span class="material-symbols-outlined text-xs">check</span>Marcar como resuelto</button>
+            <button onclick="Master._patchItemState('${esc(it.id)}', 'resolved')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[10px] font-bold text-primary bg-white hover:bg-lavender-soft border border-primary transition-colors"><span class="material-symbols-outlined text-xs">check</span>Marcar como resuelto</button>
             <button onclick="Master._patchItemState('${esc(it.id)}', 'dismissed')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
           </div>
         ` : ''}
@@ -824,9 +825,9 @@
         animation: masterChapterFlash 1.4s ease-out;
       }
       @keyframes masterChapterFlash {
-        0%   { box-shadow: 0 0 0 0 rgba(34,197,94,0); background: rgba(34,197,94,0.18); }
-        20%  { box-shadow: 0 0 0 6px rgba(34,197,94,0.18); background: rgba(34,197,94,0.18); }
-        100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); background: transparent; }
+        0%   { box-shadow: 0 0 0 0 rgba(214,233,73,0); background: rgba(214,233,73,0.30); }
+        20%  { box-shadow: 0 0 0 6px rgba(214,233,73,0.35); background: rgba(214,233,73,0.30); }
+        100% { box-shadow: 0 0 0 0 rgba(214,233,73,0); background: transparent; }
       }
     `;
     document.head.appendChild(s);
@@ -871,10 +872,10 @@
     const pageColor = g.total_pages_estimate > g.target_pages + 10
       ? 'text-red-700 bg-red-50 border-red-200'
       : g.total_pages_estimate > g.target_pages - 5
-        ? 'text-amber-700 bg-amber-50 border-amber-200'
-        : 'text-green-700 bg-green-50 border-green-200';
+        ? 'text-ink bg-[#f3f8d2] border-[#d6e949]'
+        : 'text-primary bg-lavender-soft border-lavender/40';
     const pageBarColor = g.total_pages_estimate > g.target_pages + 10 ? 'bg-red-500'
-      : g.total_pages_estimate > g.target_pages - 5 ? 'bg-amber-500' : 'bg-primary';
+      : g.total_pages_estimate > g.target_pages - 5 ? 'bg-secondary-fixed-dim' : 'bg-primary';
 
     host.innerHTML = `
       <div class="bg-white border border-outline-variant/20 rounded-2xl p-6">
@@ -919,7 +920,7 @@
                 <option value="tr">Türkçe</option>
               </select>
             </div>
-            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
+            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
           </div>
         </div>
 
@@ -950,7 +951,7 @@
         <!-- Layout sidebar + panel -->
         <div class="flex gap-0 items-start border border-outline-variant/20 rounded-2xl overflow-hidden" style="min-height: 60vh">
 
-          <aside class="w-72 flex-shrink-0 bg-[#edf2f9] border-r border-outline-variant/20 flex flex-col">
+          <aside class="w-72 flex-shrink-0 bg-cream border-r border-outline-variant/20 flex flex-col">
             <div class="px-4 py-3 border-b border-outline-variant/20">
               <div class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Secciones del formulario</div>
             </div>
@@ -988,14 +989,14 @@
     let badge = '';
     if (it.warnings && it.warnings.length) {
       if (it.warnings.includes('no_value') || it.warnings.includes('no_tasks')) {
-        badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-amber-500'}">warning</span>`;
+        badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-violet'}">warning</span>`;
       } else if (it.warnings.some(w => w.startsWith('over_limit'))) {
         badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-red-500'}">priority_high</span>`;
       } else if (it.warnings.includes('table_empty')) {
-        badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-amber-500'}">warning</span>`;
+        badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-violet'}">warning</span>`;
       }
     } else if (it.is_filled && it.kind !== 'wp' && it.kind !== 'declaration') {
-      badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-green-600'}">check_circle</span>`;
+      badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-[#d6e949]' : 'text-primary'}">check_circle</span>`;
     }
     return `
       <button onclick="Master._selectFormField('${esc(it.id)}')" class="w-full text-left flex items-start gap-2 px-2 py-1.5 rounded-lg ${cls} mb-0.5 transition-colors">
@@ -1054,7 +1055,7 @@
     };
 
     if (!rows.length) {
-      return `<div class="text-sm text-amber-700">No hay partners definidos en este proyecto.</div>`;
+      return `<div class="text-sm text-ink">No hay partners definidos en este proyecto.</div>`;
     }
 
     return `
@@ -1116,7 +1117,7 @@
     const charPct = it.max_chars ? Math.round((it.char_count / it.max_chars) * 100) : 0;
     const charColor = !it.max_chars ? 'text-on-surface-variant'
       : it.char_count > it.max_chars ? 'text-red-700'
-      : it.char_count > it.max_chars * 0.95 ? 'text-amber-700' : 'text-on-surface-variant';
+      : it.char_count > it.max_chars * 0.95 ? 'text-violet font-semibold' : 'text-on-surface-variant';
     const proposal = _state.formFieldProposals[it.id];
     const isEdited = _state.formFieldEdits[it.id] !== undefined;
     const docId = _state.masterDoc?.id || '';
@@ -1129,7 +1130,7 @@
           <h4 class="font-headline text-lg font-bold text-on-surface">${esc(it.label)}</h4>
           <div class="flex items-center gap-3 mt-1">
             <span class="text-xs ${charColor}"><strong>${it.char_count.toLocaleString('es-ES')}</strong>${it.max_chars ? ` / ${it.max_chars.toLocaleString('es-ES')}` : ''} chars · ~${it.page_estimate} pág</span>
-            ${it.is_filled ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-green-100 text-green-700">✓ rellenado</span>` : `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800">sin contenido</span>`}
+            ${it.is_filled ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-secondary-fixed text-primary">✓ rellenado</span>` : `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#f3f8d2] text-ink">sin contenido</span>`}
             ${warnings.some(w => w.startsWith('over_limit')) ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-red-100 text-red-700">excede límite</span>` : ''}
           </div>
         </div>
@@ -1141,7 +1142,7 @@
 
       ${it.max_chars ? `
         <div class="w-full h-1.5 rounded-full bg-outline-variant/20 mb-3 overflow-hidden">
-          <div class="h-full ${it.char_count > it.max_chars ? 'bg-red-500' : it.char_count > it.max_chars * 0.95 ? 'bg-amber-500' : 'bg-primary'}" style="width: ${Math.min(100, charPct)}%"></div>
+          <div class="h-full ${it.char_count > it.max_chars ? 'bg-red-500' : it.char_count > it.max_chars * 0.95 ? 'bg-secondary-fixed-dim' : 'bg-primary'}" style="width: ${Math.min(100, charPct)}%"></div>
         </div>
       ` : ''}
 
@@ -1149,7 +1150,7 @@
         <textarea id="form-field-text-${esc(it.id)}" rows="16" oninput="Master._onFormFieldEdit('${esc(it.id)}', this.value)" class="w-full px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-serif leading-relaxed">${esc(isEdited ? _state.formFieldEdits[it.id] : (it.value || ''))}</textarea>
         ${isEdited ? `
           <div class="flex items-center justify-between mt-2">
-            <span class="text-[11px] italic text-amber-700"><span class="material-symbols-outlined text-xs align-middle">edit</span> Hay cambios sin guardar</span>
+            <span class="text-[11px] italic text-violet"><span class="material-symbols-outlined text-xs align-middle">edit</span> Hay cambios sin guardar</span>
             <div class="flex gap-2">
               <button onclick="Master._cancelFormFieldEdit('${esc(it.id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar cambios</button>
               <button onclick="Master._saveFormFieldEdit('${esc(it.id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar edición</button>
@@ -1175,12 +1176,12 @@
   function _renderInlineTable(it) {
     if (!it.table_rows || !it.table_rows.length) {
       return `
-        <div class="mt-4 border border-amber-200 bg-amber-50 rounded-lg p-4">
+        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-4">
           <div class="flex items-center gap-2 mb-1">
-            <span class="material-symbols-outlined text-amber-600">warning</span>
-            <span class="font-bold text-sm text-amber-800">Tabla ${esc(it.table_label || '')} vacía</span>
+            <span class="material-symbols-outlined text-primary">warning</span>
+            <span class="font-bold text-sm text-primary">Tabla ${esc(it.table_label || '')} vacía</span>
           </div>
-          <p class="text-xs text-amber-700">El formulario oficial requiere esta tabla. Rellénala en la pestaña <strong>Escribir</strong> (Consorcio / Riesgos / Actividades) antes de descargar.</p>
+          <p class="text-xs text-ink">El formulario oficial requiere esta tabla. Rellénala en la pestaña <strong>Escribir</strong> (Consorcio / Riesgos / Actividades) antes de descargar.</p>
         </div>
       `;
     }
@@ -1239,9 +1240,9 @@
   function _renderWpBudgetTable(budget) {
     if (!budget || !Array.isArray(budget.rows) || !budget.rows.length) {
       return `
-        <div class="mt-4 border border-amber-200 bg-amber-50 rounded-lg p-3 flex items-center gap-2">
-          <span class="material-symbols-outlined text-amber-600 text-base">warning</span>
-          <span class="text-xs text-amber-800"><strong>Sin presupuesto</strong> para este WP. Crea o regenera el budget en <strong>Diseñar / Calculator</strong>.</span>
+        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-base">warning</span>
+          <span class="text-xs text-ink"><strong>Sin presupuesto</strong> para este WP. Crea o regenera el budget en <strong>Diseñar / Calculator</strong>.</span>
         </div>
       `;
     }
@@ -1249,9 +1250,9 @@
     const rowsWithMoney = budget.rows.filter(r => Number(r.total) > 0 || Number(r.person_months) > 0);
     if (!rowsWithMoney.length) {
       return `
-        <div class="mt-4 border border-amber-200 bg-amber-50 rounded-lg p-3 flex items-center gap-2">
-          <span class="material-symbols-outlined text-amber-600 text-base">warning</span>
-          <span class="text-xs text-amber-800"><strong>Budget vacío</strong> para este WP. Asigna actividades en Calculator.</span>
+        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-base">warning</span>
+          <span class="text-xs text-ink"><strong>Budget vacío</strong> para este WP. Asigna actividades en Calculator.</span>
         </div>
       `;
     }
@@ -1322,7 +1323,7 @@
                 <td class="px-1.5 py-1.5 text-right font-mono font-bold text-[10.5px]">${fmt(r.total)}</td>
               </tr>`;
                 const subRows = roles.map(rr => `<tr class="border-t border-outline-variant/5 bg-surface-container-lowest/50 text-on-surface-variant">
-                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${esc(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmt(rr.rate)} €/día)</span>` : ' <span class="text-[9px] text-amber-700">(sin tarifa)</span>'}</td>
+                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${esc(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmt(rr.rate)} €/día)</span>` : ' <span class="text-[9px] text-violet font-semibold">(sin tarifa)</span>'}</td>
                 ${numCell(rr.person_months)}
                 ${numCell(rr.a_personnel)}
                 <td colspan="10" class="px-1.5 py-0.5"></td>
@@ -1355,9 +1356,9 @@
   function _renderWpSubtable(label, rows, columns) {
     if (!rows || !rows.length) {
       return `
-        <div class="mt-4 border border-amber-200 bg-amber-50 rounded-lg p-3 flex items-center gap-2">
-          <span class="material-symbols-outlined text-amber-600 text-base">warning</span>
-          <span class="text-xs text-amber-800"><strong>${esc(label)}</strong> vacío — rellénalo en Escribir → ${esc(label === 'Tasks' ? 'Tareas' : label === 'Milestones' ? 'Entregables (milestones)' : 'Entregables')}.</span>
+        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-base">warning</span>
+          <span class="text-xs text-ink"><strong>${esc(label)}</strong> vacío — rellénalo en Escribir → ${esc(label === 'Tasks' ? 'Tareas' : label === 'Milestones' ? 'Entregables (milestones)' : 'Entregables')}.</span>
         </div>
       `;
     }
@@ -1386,7 +1387,7 @@
           <h4 class="font-headline text-lg font-bold text-on-surface">${esc(it.label)}</h4>
         </div>
       </div>
-      <div class="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-900">
+      <div class="p-4 bg-[#f3f8d2] border border-[#d6e949] rounded-lg text-sm text-ink">
         <p class="font-bold mb-1"><span class="material-symbols-outlined text-base align-middle">info</span> Declaración administrativa</p>
         <p class="text-xs">Las declaraciones de la sección 6 (double funding, FSTP, Seal of Excellence) se rellenan directamente en el portal EACEA al subir el formulario. La IA no las genera.</p>
       </div>
@@ -1627,7 +1628,7 @@
     s.textContent = `
       #master-working-overlay {
         position: fixed; inset: 0; z-index: 9999;
-        background: rgba(15, 23, 42, 0.55);
+        background: rgba(34, 35, 81, 0.55);
         backdrop-filter: blur(4px);
         display: flex; align-items: center; justify-content: center;
         animation: master-fade-in .25s ease-out;
@@ -1635,26 +1636,26 @@
       @keyframes master-fade-in { from { opacity: 0; } to { opacity: 1; } }
       .master-working-card {
         background: white; border-radius: 24px; padding: 36px 44px;
-        box-shadow: 0 20px 60px rgba(0,0,0,.25);
+        box-shadow: 0 20px 60px rgba(34,35,81,.25);
         max-width: 480px; text-align: center;
-        border: 1px solid rgba(22, 163, 74, .15);
+        border: 1px solid rgba(60, 69, 163, .15);
       }
       .master-pencil-wrapper { position: relative; width: 96px; height: 96px; margin: 0 auto 20px; }
       .master-pencil-paper {
         position: absolute; inset: 0; border-radius: 12px;
-        background: linear-gradient(180deg, #ffffff, #f8fafc);
-        border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,.06);
+        background: linear-gradient(180deg, #ffffff, #f8f7f5);
+        border: 1px solid #d6d3dc; box-shadow: 0 4px 12px rgba(34,35,81,.06);
       }
       .master-pencil-paper::before, .master-pencil-paper::after {
         content: ''; position: absolute; left: 14px; right: 14px; height: 2px; border-radius: 2px;
-        background: linear-gradient(90deg, transparent 0%, #16A34A 50%, transparent 100%);
+        background: linear-gradient(90deg, transparent 0%, #997fc7 50%, transparent 100%);
         background-size: 200% 100%; animation: master-line-write 1.4s ease-in-out infinite;
       }
       .master-pencil-paper::before { top: 30px; }
       .master-pencil-paper::after  { top: 50px; animation-delay: .35s; }
       .master-pencil-line-3 {
         position: absolute; left: 14px; right: 32px; top: 70px; height: 2px; border-radius: 2px;
-        background: linear-gradient(90deg, transparent 0%, #16A34A 50%, transparent 100%);
+        background: linear-gradient(90deg, transparent 0%, #997fc7 50%, transparent 100%);
         background-size: 200% 100%; animation: master-line-write 1.4s ease-in-out infinite;
         animation-delay: .7s;
       }
@@ -1666,9 +1667,9 @@
       .master-pencil-icon {
         position: absolute; bottom: -6px; right: -6px;
         width: 40px; height: 40px; border-radius: 50%;
-        background: #16A34A; color: white;
+        background: #3c45a3; color: #d6e949;
         display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 12px rgba(22,163,74,.4);
+        box-shadow: 0 4px 12px rgba(60,69,163,.4);
         animation: master-pencil-bounce 1.4s ease-in-out infinite;
       }
       @keyframes master-pencil-bounce {
@@ -1677,30 +1678,30 @@
         50%      { transform: translate(-12px, 0) rotate(0deg); }
         75%      { transform: translate(-6px, 3px) rotate(8deg); }
       }
-      .master-working-title { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
-      .master-working-subtitle { font-size: 13px; color: #475569; min-height: 20px; transition: opacity .3s; }
-      .master-working-elapsed { margin-top: 16px; font-size: 11px; color: #94a3b8; font-variant-numeric: tabular-nums; }
-      .master-working-tip { margin-top: 18px; padding-top: 14px; border-top: 1px solid #e2e8f0; font-size: 11px; color: #64748b; font-style: italic; }
+      .master-working-title { font-size: 18px; font-weight: 700; color: #3c45a3; margin-bottom: 6px; }
+      .master-working-subtitle { font-size: 13px; color: #55577a; min-height: 20px; transition: opacity .3s; }
+      .master-working-elapsed { margin-top: 16px; font-size: 11px; color: #8a8aa3; font-variant-numeric: tabular-nums; }
+      .master-working-tip { margin-top: 18px; padding-top: 14px; border-top: 1px solid #d6d3dc; font-size: 11px; color: #55577a; font-style: italic; }
       .master-stream-viewer {
         margin-top: 20px; max-height: 240px; overflow-y: auto;
-        background: #0f172a; color: #cbd5e1; border-radius: 12px; padding: 14px 16px;
+        background: #222351; color: #e7e1f3; border-radius: 12px; padding: 14px 16px;
         font-family: ui-monospace, SF Mono, Menlo, monospace; font-size: 11px; line-height: 1.5;
         text-align: left; white-space: pre-wrap; word-break: break-word; scroll-behavior: smooth; position: relative;
       }
-      .master-stream-viewer::after { content: '▋'; color: #16A34A; animation: master-cursor-blink 1s steps(1) infinite; }
+      .master-stream-viewer::after { content: '▋'; color: #d6e949; animation: master-cursor-blink 1s steps(1) infinite; }
       @keyframes master-cursor-blink { 50% { opacity: 0; } }
-      .master-stream-empty { color: #64748b; font-style: italic; }
+      .master-stream-empty { color: rgba(231,225,243,.7); font-style: italic; }
       .master-chapter-list {
         margin-top: 16px; text-align: left; max-height: 200px; overflow-y: auto;
-        background: #f8fafc; border-radius: 12px; padding: 10px 14px; border: 1px solid #e2e8f0;
+        background: #f8f7f5; border-radius: 12px; padding: 10px 14px; border: 1px solid #d6d3dc;
       }
       .master-chapter-item {
         display: flex; align-items: center; gap: 8px; padding: 4px 0;
-        font-size: 11px; color: #475569; transition: color .25s;
+        font-size: 11px; color: #55577a; transition: color .25s;
       }
-      .master-chapter-item.done { color: #16A34A; font-weight: 600; }
-      .master-chapter-item.current { color: #0f172a; font-weight: 700; }
-      .master-chapter-item.failed { color: #dc2626; }
+      .master-chapter-item.done { color: #3c45a3; font-weight: 600; }
+      .master-chapter-item.current { color: #222351; font-weight: 700; }
+      .master-chapter-item.failed { color: #ba1a1a; }
       .master-chapter-icon { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
       .master-chapter-icon .material-symbols-outlined { font-size: 14px; }
       .master-chapter-item.current .master-chapter-icon { animation: master-current-pulse 1s ease-in-out infinite; }
@@ -1973,13 +1974,13 @@
   /* ── Toast ───────────────────────────────────────────────── */
 
   function showToast(title, body, kind = 'info') {
-    const color = kind === 'success' ? '#16A34A' : kind === 'error' ? '#dc2626' : '#3c45a3';
+    const color = kind === 'success' ? '#3c45a3' : kind === 'error' ? '#ba1a1a' : '#514daa';
     const toast = document.createElement('div');
     toast.style.cssText = `
       position: fixed; top: 24px; right: 24px; z-index: 10000;
       background: white; border-left: 4px solid ${color};
       padding: 14px 18px; border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+      box-shadow: 0 10px 30px rgba(34,35,81,.18);
       max-width: 480px;
       animation: master-toast-in .3s ease-out;
     `;
@@ -1987,10 +1988,10 @@
       <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
         <div style="flex: 1;">
           <div style="font-weight: 800; font-size: 13px; color: ${color}; margin-bottom: 4px;">${esc(title)}</div>
-          <div style="font-size: 12px; color: #475569; line-height: 1.5; word-break: break-word;">${esc(body)}</div>
+          <div style="font-size: 12px; color: #55577a; line-height: 1.5; word-break: break-word;">${esc(body)}</div>
         </div>
         <button style="background: transparent; border: none; cursor: pointer; padding: 4px; margin: -4px;" aria-label="cerrar">
-          <span class="material-symbols-outlined" style="font-size: 18px; color: #94a3b8;">close</span>
+          <span class="material-symbols-outlined" style="font-size: 18px; color: #8a8aa3;">close</span>
         </button>
       </div>`;
     if (!document.getElementById('master-toast-styles')) {

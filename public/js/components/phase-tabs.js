@@ -24,17 +24,18 @@ const PhaseTabs = (() => {
   }
 
   // Visual marker per status (○ pending, ◐ in progress, ● complete)
+  // Colores en main.css según data-status-glyph (azul/lavanda sobre claro, lima/lavanda suave en la pestaña activa)
   function statusGlyph(status) {
-    if (status === 'complete')    return '<span class="text-emerald-500 text-xs leading-none mr-1" aria-label="completado">●</span>';
-    if (status === 'in_progress') return '<span class="text-amber-500 text-xs leading-none mr-1" aria-label="en curso">◐</span>';
+    if (status === 'complete')    return '<span data-status-glyph="complete" class="text-xs leading-none mr-1" aria-label="completado">●</span>';
+    if (status === 'in_progress') return '<span data-status-glyph="in_progress" class="text-xs leading-none mr-1" aria-label="en curso">◐</span>';
     return ''; // pending: no glyph (cleaner default)
   }
 
   function tabButtonHTML(t, isActive) {
-    const base = 'inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap';
+    const base = 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap';
     const cls = isActive
       ? `${base} bg-primary text-white shadow-md`
-      : `${base} text-on-surface-variant hover:bg-surface-container-low`;
+      : `${base} text-on-surface-variant hover:bg-cream hover:text-primary`;
     const icon = t.icon ? `<span class="material-symbols-outlined text-sm">${esc(t.icon)}</span>` : '';
     return `<button type="button" data-phase-tab="${esc(t.key)}" class="${cls}">${statusGlyph(t.status)}${icon} ${esc(t.label)}</button>`;
   }
@@ -75,8 +76,8 @@ const PhaseTabs = (() => {
     el.querySelectorAll('[data-phase-tab]').forEach(btn => {
       const isActive = btn.dataset.phaseTab === key;
       btn.className = isActive
-        ? 'inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap bg-primary text-white shadow-md'
-        : 'inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap text-on-surface-variant hover:bg-surface-container-low';
+        ? 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap bg-primary text-white shadow-md'
+        : 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap text-on-surface-variant hover:bg-cream hover:text-primary';
     });
   }
 
@@ -87,7 +88,7 @@ const PhaseTabs = (() => {
     if (!btn) return;
     // Re-render glyph slot: remove existing leading status span if any.
     const firstSpan = btn.querySelector('span');
-    if (firstSpan && (firstSpan.classList.contains('text-emerald-500') || firstSpan.classList.contains('text-amber-500'))) {
+    if (firstSpan && firstSpan.hasAttribute('data-status-glyph')) {
       firstSpan.remove();
     }
     if (status === 'complete' || status === 'in_progress') {

@@ -57,7 +57,7 @@ const Account = (() => {
 
   function msg(el, text, ok) {
     el.textContent = text;
-    el.className = 'text-sm ' + (ok ? 'text-green-600' : 'text-red-600');
+    el.className = 'text-sm ' + (ok ? 'text-primary font-semibold' : 'text-error');
     if (ok) setTimeout(() => { if (el.textContent === text) el.textContent = ''; }, 3000);
   }
 

@@ -17,18 +17,18 @@ const Budget = (() => {
 
   function fmt(n) { return Number(n || 0).toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
 
-  /* ── WP color palette (blues) ──────────────────────────────── */
+  /* ── Paleta de WPs: tonos de marca (azul, violeta, tinta, lavanda oscura, gris azulado) ── */
   const WP_COLORS = [
     { bg: 'bg-[#3c45a3]/10', border: 'border-[#3c45a3]/30', text: 'text-[#3c45a3]', header: 'bg-[#3c45a3]/10', accent: '#3c45a3' },
-    { bg: 'bg-[#1e40af]/10', border: 'border-[#1e40af]/30', text: 'text-[#1e40af]', header: 'bg-[#1e40af]/10', accent: '#1e40af' },
-    { bg: 'bg-[#0369a1]/10', border: 'border-[#0369a1]/30', text: 'text-[#0369a1]', header: 'bg-[#0369a1]/10', accent: '#0369a1' },
-    { bg: 'bg-[#0e7490]/10', border: 'border-[#0e7490]/30', text: 'text-[#0e7490]', header: 'bg-[#0e7490]/10', accent: '#0e7490' },
-    { bg: 'bg-[#155e75]/10', border: 'border-[#155e75]/30', text: 'text-[#155e75]', header: 'bg-[#155e75]/10', accent: '#155e75' },
-    { bg: 'bg-[#1d4ed8]/10', border: 'border-[#1d4ed8]/30', text: 'text-[#1d4ed8]', header: 'bg-[#1d4ed8]/10', accent: '#1d4ed8' },
-    { bg: 'bg-[#4338ca]/10', border: 'border-[#4338ca]/30', text: 'text-[#4338ca]', header: 'bg-[#4338ca]/10', accent: '#4338ca' },
-    { bg: 'bg-[#6366f1]/10', border: 'border-[#6366f1]/30', text: 'text-[#6366f1]', header: 'bg-[#6366f1]/10', accent: '#6366f1' },
-    { bg: 'bg-[#0284c7]/10', border: 'border-[#0284c7]/30', text: 'text-[#0284c7]', header: 'bg-[#0284c7]/10', accent: '#0284c7' },
-    { bg: 'bg-[#7c3aed]/10', border: 'border-[#7c3aed]/30', text: 'text-[#7c3aed]', header: 'bg-[#7c3aed]/10', accent: '#7c3aed' },
+    { bg: 'bg-[#514daa]/10', border: 'border-[#514daa]/30', text: 'text-[#514daa]', header: 'bg-[#514daa]/10', accent: '#514daa' },
+    { bg: 'bg-[#222351]/10', border: 'border-[#222351]/30', text: 'text-[#222351]', header: 'bg-[#222351]/10', accent: '#222351' },
+    { bg: 'bg-[#6c55a6]/10', border: 'border-[#6c55a6]/30', text: 'text-[#6c55a6]', header: 'bg-[#6c55a6]/10', accent: '#6c55a6' },
+    { bg: 'bg-[#55577a]/10', border: 'border-[#55577a]/30', text: 'text-[#55577a]', header: 'bg-[#55577a]/10', accent: '#55577a' },
+    { bg: 'bg-[#3c45a3]/10', border: 'border-[#3c45a3]/30', text: 'text-[#3c45a3]', header: 'bg-[#3c45a3]/10', accent: '#3c45a3' },
+    { bg: 'bg-[#514daa]/10', border: 'border-[#514daa]/30', text: 'text-[#514daa]', header: 'bg-[#514daa]/10', accent: '#514daa' },
+    { bg: 'bg-[#222351]/10', border: 'border-[#222351]/30', text: 'text-[#222351]', header: 'bg-[#222351]/10', accent: '#222351' },
+    { bg: 'bg-[#6c55a6]/10', border: 'border-[#6c55a6]/30', text: 'text-[#6c55a6]', header: 'bg-[#6c55a6]/10', accent: '#6c55a6' },
+    { bg: 'bg-[#55577a]/10', border: 'border-[#55577a]/30', text: 'text-[#55577a]', header: 'bg-[#55577a]/10', accent: '#55577a' },
   ];
 
   function wpColor(idx) { return WP_COLORS[idx % WP_COLORS.length]; }
@@ -81,7 +81,7 @@ const Budget = (() => {
             <span class="material-symbols-outlined text-6xl text-outline-variant/40 mb-4">account_balance_wallet</span>
             <h3 class="font-headline text-lg font-bold text-primary mb-2">No tienes presupuestos</h3>
             <p class="text-sm text-on-surface-variant mb-6 max-w-sm">Crea tu primer presupuesto con la estructura oficial Lump Sum II de EACEA.</p>
-            <button type="button" id="budget-empty-new" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">
+            <button type="button" id="budget-empty-new" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-primary hover:bg-violet shadow-md transition-all">
               <span class="material-symbols-outlined text-lg">add</span> Crear presupuesto
             </button>
           </div>`;
@@ -89,15 +89,15 @@ const Budget = (() => {
         return;
       }
       el.innerHTML = budgets.map(b => `
-        <div class="budget-card flex items-center gap-4 p-4 rounded-xl border border-outline-variant/30 bg-white hover:border-primary hover:shadow-md cursor-pointer transition-all group" data-bid="${esc(b.id)}">
-          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-amber-600 text-xl">receipt_long</span>
+        <div class="budget-card flex items-center gap-4 p-4 rounded-2xl border border-outline-variant/60 bg-white hover:border-primary hover:shadow-md cursor-pointer transition-all group" data-bid="${esc(b.id)}">
+          <div class="w-10 h-10 rounded-xl bg-lavender-soft flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary text-xl">receipt_long</span>
           </div>
           <div class="flex-1 min-w-0">
             <div class="font-headline text-sm font-bold text-primary truncate">${esc(b.name)}</div>
             <div class="text-xs text-on-surface-variant mt-0.5">Max grant: ${fmt(b.max_grant)} € — Co-fin: ${b.cofin_pct}%</div>
           </div>
-          <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded border ${b.status === 'complete' ? 'bg-green-100 text-green-700 border-green-200' : 'bg-amber-100 text-amber-700 border-amber-200'}">${esc(b.status)}</span>
+          <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${b.status === 'complete' ? 'bg-[#f3f8d2] text-ink border-secondary-fixed' : 'bg-lavender-soft text-violet border-lavender/30'}">${esc(b.status)}</span>
           <button class="budget-delete w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors opacity-0 group-hover:opacity-100" data-bid="${esc(b.id)}" title="Eliminar">
             <span class="material-symbols-outlined text-base">delete</span>
           </button>
@@ -204,10 +204,10 @@ const Budget = (() => {
     tabs.push({ id: 'summary', label: 'Resumen', icon: 'summarize' });
 
     // Wrap in pill-style container matching Prep Studio
-    el.className = 'flex items-center gap-1 mb-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20 p-1.5 overflow-x-auto';
+    el.className = 'flex items-center gap-1 mb-6 bg-surface-container-lowest rounded-full border border-outline-variant/60 p-1.5 overflow-x-auto';
     el.innerHTML = tabs.map(t => `
-      <button class="budget-tab flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all
-        ${activeTab === t.id ? 'bg-[#3c45a3] text-[#d6e949] shadow-md' : 'text-on-surface-variant hover:bg-surface-container-low'}"
+      <button class="budget-tab flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all
+        ${activeTab === t.id ? 'bg-primary text-white shadow-md' : 'text-on-surface-variant hover:bg-cream'}"
         data-tab="${t.id}">
         <span class="material-symbols-outlined text-sm">${t.icon}</span> ${esc(t.label)}
       </button>`).join('');
@@ -236,9 +236,9 @@ const Budget = (() => {
     const ins = current.instructions;
     const insHtml = ins ? `
       <!-- Instructions (EACEA page 1) -->
-      <div class="rounded-2xl border border-amber-200/50 bg-amber-50/30 overflow-hidden mb-6">
-        <div class="px-5 py-3 border-b border-amber-200/30 bg-amber-50/50">
-          <h3 class="text-xs font-bold uppercase tracking-widest text-amber-700">Instructions — Datos del proyecto</h3>
+      <div class="rounded-2xl border border-outline-variant/60 bg-cream/50 overflow-hidden mb-6">
+        <div class="px-5 py-3 border-b border-outline-variant/60 bg-cream">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-primary">Instructions — Datos del proyecto</h3>
         </div>
         <div class="p-5 space-y-4">
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -264,7 +264,7 @@ const Budget = (() => {
             <span class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant">Worker categories & daily rates</span>
             <div class="mt-2 overflow-x-auto">
               <table class="w-full text-xs">
-                <thead><tr class="text-on-surface-variant border-b border-amber-200/40">
+                <thead><tr class="text-on-surface-variant border-b border-outline-variant">
                   <th class="text-left py-1.5 font-bold">Partner</th>
                   ${[...new Set(ins.worker_rates.map(w => w.category))].map(c => `<th class="text-right py-1.5 font-bold">${esc(c)}</th>`).join('')}
                 </tr></thead>
@@ -276,7 +276,7 @@ const Budget = (() => {
                     byPartner[w.partner_name][w.category] = w.rate;
                   }
                   return Object.entries(byPartner).map(([name, rates]) =>
-                    `<tr class="border-b border-amber-200/20"><td class="py-1.5 font-medium">${esc(name)}</td>${cats.map(c => `<td class="text-right font-mono">${rates[c] ? fmt(rates[c]) : '—'}</td>`).join('')}</tr>`
+                    `<tr class="border-b border-outline-variant/50"><td class="py-1.5 font-medium">${esc(name)}</td>${cats.map(c => `<td class="text-right font-mono">${rates[c] ? fmt(rates[c]) : '—'}</td>`).join('')}</tr>`
                   ).join('');
                 })()}</tbody>
               </table>
@@ -292,7 +292,7 @@ const Budget = (() => {
         <div class="rounded-2xl border border-outline-variant/30 bg-white overflow-hidden">
           <div class="px-5 py-3 border-b border-outline-variant/20 flex items-center justify-between bg-surface-container-lowest">
             <h3 class="text-xs font-bold uppercase tracking-widest text-primary">Beneficiaries</h3>
-            <button id="setup-add-ben" class="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-[10px] font-bold text-primary border border-primary/30 hover:bg-primary/5 transition-colors">
+            <button id="setup-add-ben" class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-bold text-primary border border-primary/30 hover:bg-primary/5 transition-colors">
               <span class="material-symbols-outlined text-xs">add</span> Add
             </button>
           </div>
@@ -303,7 +303,7 @@ const Budget = (() => {
         <div class="rounded-2xl border border-outline-variant/30 bg-white overflow-hidden">
           <div class="px-5 py-3 border-b border-outline-variant/20 flex items-center justify-between bg-surface-container-lowest">
             <h3 class="text-xs font-bold uppercase tracking-widest text-primary">Work Packages</h3>
-            <button id="setup-add-wp" class="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-[10px] font-bold text-primary border border-primary/30 hover:bg-primary/5 transition-colors">
+            <button id="setup-add-wp" class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-bold text-primary border border-primary/30 hover:bg-primary/5 transition-colors">
               <span class="material-symbols-outlined text-xs">add</span> Add
             </button>
           </div>
@@ -474,7 +474,7 @@ const Budget = (() => {
           }
           currentCat = c.category;
           catTotal = 0;
-          html += `<tr class="bg-amber-50/50"><td colspan="5" class="px-3 py-2 text-[10px] font-extrabold uppercase tracking-wider text-amber-700">${CAT_LABELS[c.category] || c.category}</td></tr>`;
+          html += `<tr class="bg-cream"><td colspan="5" class="px-3 py-2 text-[10px] font-extrabold uppercase tracking-wider text-violet">${CAT_LABELS[c.category] || c.category}</td></tr>`;
           currentSub = '';
         }
 
@@ -614,18 +614,18 @@ const Budget = (() => {
     const overBudget = projectTotal > maxGrant && maxGrant > 0;
     html += `
       <div class="grid grid-cols-3 gap-4">
-        <div class="rounded-2xl border ${overBudget ? 'border-red-300 bg-red-50' : 'border-outline-variant/30 bg-white'} p-5 text-center">
+        <div class="rounded-3xl border ${overBudget ? 'border-error/40 bg-error-container/40' : 'border-transparent bg-cream'} p-5 text-center">
           <div class="text-[10px] font-bold uppercase text-on-surface-variant mb-1">Total Costs</div>
-          <div class="text-xl font-extrabold ${overBudget ? 'text-red-600' : 'text-primary'}">${fmt(projectTotal)} €</div>
-          ${overBudget ? '<div class="text-[10px] text-red-500 mt-1">Excede el grant máximo</div>' : ''}
+          <div class="text-2xl font-light tabular-nums ${overBudget ? 'text-error' : 'text-primary'}">${fmt(projectTotal)} €</div>
+          ${overBudget ? '<div class="text-[10px] font-semibold text-error mt-1">Excede el grant máximo</div>' : ''}
         </div>
-        <div class="rounded-2xl border border-outline-variant/30 bg-white p-5 text-center">
+        <div class="rounded-3xl border border-transparent bg-cream p-5 text-center">
           <div class="text-[10px] font-bold uppercase text-on-surface-variant mb-1">Max EU Contribution (${cofinPct}%)</div>
-          <div class="text-xl font-extrabold text-green-600">${fmt(maxEU)} €</div>
+          <div class="text-2xl font-light tabular-nums text-primary">${fmt(maxEU)} €</div>
         </div>
-        <div class="rounded-2xl border border-outline-variant/30 bg-white p-5 text-center">
+        <div class="rounded-3xl border border-transparent bg-cream p-5 text-center">
           <div class="text-[10px] font-bold uppercase text-on-surface-variant mb-1">Max Grant Amount</div>
-          <div class="text-xl font-extrabold text-primary">${fmt(maxGrant)} €</div>
+          <div class="text-2xl font-light tabular-nums text-primary">${fmt(maxGrant)} €</div>
         </div>
       </div>`;
 

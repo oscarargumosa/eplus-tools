@@ -121,8 +121,8 @@ const Evaluator = (() => {
               <div class="font-headline text-sm font-bold text-primary truncate">${esc(p.name)}</div>
               <div class="text-xs text-on-surface-variant mt-0.5">${esc(p.action_type || '')} — ${esc(p.template_name || '')}</div>
             </div>
-            ${p.eu_grant_max ? `<span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-lg">${Number(p.eu_grant_max).toLocaleString('es-ES')} €</span>` : ''}
-            <span class="text-xs ${isUrgent ? 'text-red-500 font-bold' : isPast ? 'text-on-surface-variant/40' : 'text-on-surface-variant'}">${deadlineStr}</span>
+            ${p.eu_grant_max ? `<span class="text-xs font-bold text-primary bg-cream px-2.5 py-0.5 rounded-full">${Number(p.eu_grant_max).toLocaleString('es-ES')} €</span>` : ''}
+            <span class="text-xs ${isUrgent ? 'text-red-700 font-bold' : isPast ? 'text-on-surface-variant/40' : 'text-on-surface-variant'}">${deadlineStr}</span>
             <span class="material-symbols-outlined text-primary/30 group-hover:text-primary transition-colors">chevron_right</span>
           </div>`;
       }).join('');
@@ -263,7 +263,7 @@ const Evaluator = (() => {
       const isActive = activeSectionId === it.id;
       const isDone = sectionsDone.includes(it.id);
       const statusIcon = isDone
-        ? '<span class="material-symbols-outlined text-xs text-green-500">check_circle</span>'
+        ? `<span class="material-symbols-outlined text-xs ${isActive ? 'text-secondary-fixed' : 'text-primary'}">check_circle</span>`
         : '';
 
       return `
@@ -341,14 +341,14 @@ const Evaluator = (() => {
 
     // Guidance
     if (sec.guidance && Array.isArray(sec.guidance)) {
-      html += `<details class="mb-4 rounded-xl bg-blue-50/50 border border-blue-100 group" open>
+      html += `<details class="mb-4 rounded-xl bg-lavender-soft/50 border border-lavender/30 group" open>
         <summary class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none">
-          <span class="material-symbols-outlined text-sm text-blue-400">info</span>
-          <span class="text-xs font-bold text-blue-600 flex-1">Instructions & guidance</span>
-          <span class="material-symbols-outlined text-sm text-blue-400 group-open:rotate-180 transition-transform">expand_more</span>
+          <span class="material-symbols-outlined text-sm text-violet">info</span>
+          <span class="text-xs font-bold text-violet flex-1">Instructions & guidance</span>
+          <span class="material-symbols-outlined text-sm text-violet group-open:rotate-180 transition-transform">expand_more</span>
         </summary>
         <div class="px-4 pb-3">
-          ${sec.guidance.map(g => `<p class="text-xs text-blue-800/70 mb-1">${esc(g)}</p>`).join('')}
+          ${sec.guidance.map(g => `<p class="text-xs text-ink/80 mb-1">${esc(g)}</p>`).join('')}
         </div>
       </details>`;
     }
@@ -427,7 +427,7 @@ const Evaluator = (() => {
           <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl mx-4 max-h-[90vh] overflow-y-auto" style="animation:critIn .2s ease">
             <div class="px-6 py-4 border-b border-outline-variant/20 flex items-center justify-between sticky top-0 bg-white z-10">
               <h3 class="font-bold text-primary text-sm">Edit row ${r + 1}</h3>
-              <button id="expand-close" class="w-8 h-8 rounded-lg hover:bg-gray-100 flex items-center justify-center"><span class="material-symbols-outlined">close</span></button>
+              <button id="expand-close" class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined">close</span></button>
             </div>
             <div class="p-6 space-y-4">
               ${row.map((val, ci) => {
@@ -442,8 +442,8 @@ const Evaluator = (() => {
                 </div>`;
               }).join('')}
             </div>
-            <div class="px-6 py-3 bg-gray-50 flex justify-end sticky bottom-0">
-              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">Save</button>
+            <div class="px-6 py-3 bg-surface flex justify-end sticky bottom-0">
+              <button id="expand-save" class="px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">Save</button>
             </div>
           </div>`;
         document.body.appendChild(overlay);
@@ -888,7 +888,7 @@ const Evaluator = (() => {
           <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl mx-4 max-h-[90vh] overflow-y-auto" style="animation:critIn .2s ease">
             <div class="px-6 py-4 border-b border-outline-variant/20 flex items-center justify-between sticky top-0 bg-white z-10">
               <h3 class="font-bold text-primary text-sm">Edit row ${r + 1}</h3>
-              <button id="expand-close" class="w-8 h-8 rounded-lg hover:bg-gray-100 flex items-center justify-center"><span class="material-symbols-outlined">close</span></button>
+              <button id="expand-close" class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined">close</span></button>
             </div>
             <div class="p-6 space-y-4">
               ${row.map((val, ci) => {
@@ -902,8 +902,8 @@ const Evaluator = (() => {
                 </div>`;
               }).join('')}
             </div>
-            <div class="px-6 py-3 bg-gray-50 flex justify-end sticky bottom-0">
-              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">Save</button>
+            <div class="px-6 py-3 bg-surface flex justify-end sticky bottom-0">
+              <button id="expand-save" class="px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] transition-colors">Save</button>
             </div>
           </div>`;
         document.body.appendChild(overlay);

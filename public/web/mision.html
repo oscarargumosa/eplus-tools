@@ -57,15 +57,19 @@
 
 <div class="efs-club">
   <style>
+    /* Paleta y rasgos del manual de marca (oct-2026): bloques azules con texto
+       blanco, remates en cursiva, tarjetas crema, píldoras lima, cifras ligeras. */
     .efs-club{
       --club-navy:#3c45a3;
+      --club-violet:#514daa;
       --club-yellow:#d6e949;
+      --club-yellow-2:#c3d63a;
       --club-lav:#997fc7;
-      --club-lav-soft:#f1ecf7;
+      --club-lav-soft:#e7e1f3;
       --club-text:#222351;
-      --club-muted:#474551;
-      --club-line:#e3ddec;
-      --club-surface:#f8f8f8;
+      --club-muted:#55577a;
+      --club-line:#d6d3dc;
+      --club-surface:#f0edeb;
       color:var(--club-text);
       font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
       line-height:1.6;
@@ -74,55 +78,71 @@
     .efs-club .club-wrap{width:min(1140px,92%);margin:0 auto}
     .efs-club section{padding:56px 0}
     .efs-club h1,.efs-club h2,.efs-club h3{color:var(--club-navy);margin:0}
-    .efs-club .eyebrow{color:var(--club-navy);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+    .efs-club h1 em,.efs-club h2 em{font-style:italic;font-weight:500}
+    .efs-club .eyebrow{color:var(--club-navy);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
 
-    /* Hero */
-    .efs-club .hero{text-align:center;padding:64px 0 48px}
-    .efs-club .hero h1{font-size:clamp(38px,6.5vw,72px);line-height:1;margin:16px 0}
+    /* Hero: bloque azul, texto blanco, remate en cursiva y el icono en lima */
+    .efs-club .hero{text-align:center;padding:40px 0 24px}
+    .efs-club .hero .club-wrap{background:var(--club-navy);border-radius:28px;padding:64px 48px 60px}
+    .efs-club .hero .eyebrow{color:var(--club-lav-soft)}
+    .efs-club .hero h1{color:#fff;font-weight:700;font-size:clamp(38px,6.5vw,72px);line-height:1.04;margin:16px auto;max-width:15ch;letter-spacing:-.01em}
+    .efs-club .hero h1 .club-icon{display:inline-block;width:.62em;height:.62em;margin-left:.18em;vertical-align:-.02em;background:url('/img/marca/icono-lima.svg') no-repeat center/contain}
     .efs-club .lead{font-size:clamp(17px,2vw,22px);color:var(--club-muted);max-width:820px;margin:0 auto 8px}
+    .efs-club .hero .lead{color:var(--club-lav-soft)}
     .efs-club .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-    .efs-club .btn{padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;display:inline-block;transition:transform .12s ease}
+    .efs-club .btn{padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;display:inline-block;transition:transform .12s ease,background-color .12s ease}
     .efs-club .btn:hover{transform:translateY(-2px)}
     .efs-club .btn.primary{background:var(--club-yellow);color:var(--club-navy)}
+    .efs-club .btn.primary:hover{background:var(--club-yellow-2)}
     .efs-club .btn.secondary{border:2px solid var(--club-navy);color:var(--club-navy)}
+    .efs-club .hero .btn.secondary{border-color:rgba(255,255,255,.7);color:#fff}
+    .efs-club .hero .btn.secondary:hover{border-color:#fff}
 
     /* Split intro */
     .efs-club .split{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
-    .efs-club .section-title{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px;line-height:1.15}
+    .efs-club .section-title{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px;line-height:1.15;font-weight:700}
     .efs-club .section-sub{color:var(--club-muted);max-width:800px;margin:0 0 28px}
-    .efs-club .notice{border-left:5px solid var(--club-yellow);padding:20px 22px;background:var(--club-lav-soft);border-radius:14px;color:var(--club-navy)}
+    .efs-club .notice{padding:26px 28px;background:var(--club-navy);border-radius:24px;color:#fff}
+    .efs-club .notice strong{color:var(--club-yellow);font-weight:600}
 
-    /* Grids & cards */
+    /* Grids & cards: tarjetas crema, la destacada en azul */
     .efs-club .grid{display:grid;gap:18px}
     .efs-club .grid.three{grid-template-columns:repeat(3,1fr)}
     .efs-club .grid.two{grid-template-columns:repeat(2,1fr)}
-    .efs-club .card{background:#fff;border:1px solid var(--club-line);border-radius:18px;padding:28px;box-shadow:0 24px 48px rgba(60,69,163,.06)}
-    .efs-club .card.highlight{border:2px solid var(--club-navy);background:linear-gradient(180deg,var(--club-lav-soft),#fff)}
-    .efs-club .card h3{font-size:23px;margin-bottom:6px}
+    .efs-club .card{background:var(--club-surface);border-radius:24px;padding:30px}
+    .efs-club .card.highlight{background:var(--club-navy);color:#fff}
+    .efs-club .card h3{font-size:23px;margin-bottom:6px;font-weight:600}
     .efs-club .card p{color:var(--club-muted);margin:8px 0 0}
-    .efs-club .price{font-size:40px;font-weight:800;color:var(--club-navy);margin:12px 0 2px}
+    .efs-club .price{font-size:52px;font-weight:300;color:var(--club-navy);margin:12px 0 2px;line-height:1.1;letter-spacing:-.02em}
     .efs-club .small{color:var(--club-muted);font-size:14px}
     .efs-club ul.feat{padding-left:0;margin:20px 0 0;list-style:none}
     .efs-club ul.feat li{position:relative;padding-left:26px;margin:11px 0;color:var(--club-text)}
-    .efs-club ul.feat li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:3px;background:var(--club-yellow);border:1px solid var(--club-navy)}
-    .efs-club .tag{display:inline-block;background:var(--club-lav-soft);border:1px solid var(--club-lav);color:var(--club-navy);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px}
+    .efs-club ul.feat li::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:50%;background:var(--club-navy)}
+    .efs-club .tag{display:inline-block;background:#fff;color:var(--club-navy);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:14px}
+    .efs-club .card.highlight h3,.efs-club .card.highlight .price,.efs-club .card.highlight ul.feat li{color:#fff}
+    .efs-club .card.highlight .small{color:var(--club-lav-soft)}
+    .efs-club .card.highlight .tag{background:var(--club-yellow)}
+    .efs-club .card.highlight ul.feat li::before{background:var(--club-yellow)}
 
-    /* FUN-DESIGN matrix */
+    /* FUN-DESIGN matrix: letras grandes en Poppins Light */
     .efs-club .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
-    .efs-club .cell{background:var(--club-surface);border:1px solid var(--club-line);border-radius:16px;padding:18px}
-    .efs-club .cell .phase{font-weight:800;color:var(--club-navy);font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px;opacity:.65}
-    .efs-club .cell strong{font-size:28px;color:var(--club-navy);margin-right:6px}
+    .efs-club .cell{background:var(--club-surface);border-radius:20px;padding:18px 20px}
+    .efs-club .cell .phase{font-weight:700;color:var(--club-violet);font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+    .efs-club .cell strong{font-size:40px;font-weight:300;line-height:1.1;color:var(--club-navy);margin-right:8px;vertical-align:-4px}
     .efs-club .cell span{color:var(--club-muted)}
 
     /* Tools */
     .efs-club .tools{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-    .efs-club .tool{background:#fff;border:1px solid var(--club-line);border-radius:16px;padding:18px 14px;text-align:center}
-    .efs-club .tool b{display:block;margin-bottom:4px;color:var(--club-navy)}
+    .efs-club .tool{background:var(--club-surface);border-radius:20px;padding:20px 14px;text-align:center}
+    .efs-club .tool b{display:block;margin-bottom:4px;color:var(--club-navy);font-weight:600}
     .efs-club .tool span{color:var(--club-muted);font-size:13px}
 
     @media(max-width:900px){
       .efs-club .grid.three,.efs-club .grid.two,.efs-club .split,.efs-club .tools,.efs-club .matrix{grid-template-columns:1fr}
+      .efs-club .hero{padding:20px 0 8px}
+      .efs-club .hero .club-wrap{padding:40px 22px 36px;border-radius:22px}
       .efs-club .hero h1{font-size:40px}
+      .efs-club section{padding:40px 0}
     }
   </style>
 
@@ -130,7 +150,7 @@
   <section class="hero">
     <div class="club-wrap">
       <div class="eyebrow">Design Before Writing™</div>
-      <h1>El Club de los Project Designers europeos.</h1>
+      <h1>El Club de los Project Designers <em>europeos.</em><span class="club-icon" aria-hidden="true"></span></h1>
       <p class="lead">Diseña, escribe y presenta propuestas europeas con una metodología profesional, herramientas especializadas y acompañamiento estratégico.</p>
       <div class="cta-row">
         <a href="#memberships" class="btn primary">Ver membresías</a>
@@ -143,7 +163,7 @@
   <section>
     <div class="club-wrap split">
       <div>
-        <h2 class="section-title">No vendemos un curso. Construimos capacidad de financiación.</h2>
+        <h2 class="section-title">No vendemos un curso. <em>Construimos capacidad de financiación.</em></h2>
         <p class="section-sub">EU Funding Club está diseñado para personas que quieren presentar proyectos europeos de forma recurrente: técnicos, consultores, freelancers, entidades y profesionales que quieren convertirse en Project Designers.</p>
       </div>
       <div class="notice">
@@ -221,7 +241,7 @@
   <!-- FUN-DESIGN FRAMEWORK -->
   <section>
     <div class="club-wrap">
-      <h2 class="section-title">FUN-DESIGN™ Framework</h2>
+      <h2 class="section-title">FUN-DESIGN™ <em>Framework</em></h2>
       <p class="section-sub">Nueve fases organizadas en una matriz 3×3: Understand, Design, Deliver.</p>
       <div class="matrix">
         <div class="cell"><div class="phase">Understand</div><strong>F</strong><span>Find the Problem</span></div>
@@ -240,7 +260,7 @@
   <!-- FUN-DESIGN TOOLS -->
   <section>
     <div class="club-wrap">
-      <h2 class="section-title">FUN-DESIGN™ Tools</h2>
+      <h2 class="section-title">FUN-DESIGN™ <em>Tools</em></h2>
       <p class="section-sub">Herramientas profesionales para cada fase del proceso.</p>
       <div class="tools">
         <div class="tool"><b>Finder</b><span>Calls &amp; opportunities</span></div>
@@ -256,7 +276,7 @@
   <!-- SERVICIOS PROFESIONALES -->
   <section>
     <div class="club-wrap">
-      <h2 class="section-title">Servicios profesionales</h2>
+      <h2 class="section-title">Servicios <em>profesionales</em></h2>
       <div class="grid three">
         <div class="card"><h3>Pay-as-you-go</h3><p>Activa la escritura de una propuesta concreta cuando decidas apostar por ella.</p></div>
         <div class="card"><h3>Turnkey Proposal</h3><p>Escribimos la propuesta contigo, previo filtro de viabilidad.</p></div>

@@ -50,7 +50,7 @@ const Analysis = (() => {
   function shell() {
     const metricBtns = META.map(m => `
       <button type="button" data-metric="${m.key}"
-        class="an-metric inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${m.key === state.metric ? 'bg-primary text-white' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'}">
+        class="an-metric inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-sm font-semibold transition-colors ${m.key === state.metric ? 'bg-primary text-white' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'}">
         <span class="material-symbols-outlined text-[18px]">${m.icon}</span>${m.label}
       </button>`).join('');
 
@@ -81,7 +81,7 @@ const Analysis = (() => {
             <input type="checkbox" id="an-nouni" class="rounded border-outline-variant text-primary focus:ring-primary/40">
             Excluir universidades
           </label>
-          <button id="an-export" type="button" class="ml-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary border border-outline-variant/40 hover:border-primary px-3 py-2 rounded-lg transition-colors">
+          <button id="an-export" type="button" class="ml-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary border border-outline-variant/40 hover:border-primary px-3.5 py-2 rounded-full transition-colors">
             <span class="material-symbols-outlined text-[18px]">download</span>Exportar CSV
           </button>
         </div>
@@ -136,7 +136,7 @@ const Analysis = (() => {
   function refreshMetricButtons(root) {
     root.querySelectorAll('.an-metric').forEach(b => {
       const on = b.dataset.metric === state.metric;
-      b.className = `an-metric inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${on ? 'bg-primary text-white' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'}`;
+      b.className = `an-metric inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-sm font-semibold transition-colors ${on ? 'bg-primary text-white' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'}`;
     });
   }
 
@@ -186,9 +186,9 @@ const Analysis = (() => {
     const host = document.getElementById('an-kpis');
     if (!host) return;
     const kpi = (label, value, sub) => `
-      <div class="bg-white rounded-2xl border border-outline-variant/25 p-4">
+      <div class="bg-cream rounded-2xl p-4">
         <div class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">${esc(label)}</div>
-        <div class="text-2xl font-extrabold text-primary leading-tight mt-1">${value}</div>
+        <div class="text-3xl font-light text-primary leading-tight mt-1">${value}</div>
         ${sub ? `<div class="text-[11px] text-on-surface-variant/70">${esc(sub)}</div>` : ''}
       </div>`;
     host.innerHTML =

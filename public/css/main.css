@@ -1,7 +1,17 @@
 /* ═══════════════════════════════════════════════════════════════
-   E+ Tools — Global Styles
-   Complements Tailwind utility classes
+   EU Funding Studio — estilos globales (complementan a Tailwind)
+   Paleta del manual de marca (oct-2026):
+     tinta #222351 · azul #3C45A3 · violeta #514DAA · lavanda #997FC7
+     lavanda suave #E7E1F3 · lima #D6E949 (hover #C3D63A) · crema #F0EDEB
+     fondo #F8F7F5 · texto 2º #55577A · contorno #8A8AA3 · líneas #D6D3DC
    ═══════════════════════════════════════════════════════════════ */
+:root {
+  --efs-ink: #222351; --efs-blue: #3c45a3; --efs-violet: #514daa;
+  --efs-lavender: #997fc7; --efs-lavender-soft: #e7e1f3;
+  --efs-lime: #d6e949; --efs-lime-dark: #c3d63a; --efs-lime-soft: #f3f8d2;
+  --efs-cream: #f0edeb; --efs-bg: #f8f7f5;
+  --efs-text-2: #55577a; --efs-outline: #8a8aa3; --efs-line: #d6d3dc;
+}
 
 html { scroll-behavior: smooth }
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
@@ -27,9 +37,9 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
 #toast {
   position: fixed; bottom: 20px; right: 20px; z-index: 9999;
   max-width: calc(100vw - 32px);
-  padding: 12px 20px; border-radius: 0.5rem;
+  padding: 12px 20px; border-radius: 16px;
   font-size: 13px; font-weight: 600;
-  box-shadow: 0 4px 20px rgba(6,0,62,.15);
+  box-shadow: 0 8px 24px rgba(34,35,81,.22);
   transform: translateY(60px); opacity: 0;
   transition: all .25s cubic-bezier(.34,1.56,.64,1);
   pointer-events: none; font-family: Poppins, sans-serif;
@@ -45,7 +55,9 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
 /* ── Scrollbar ───────────────────────────────────────────────── */
 ::-webkit-scrollbar       { width: 6px }
 ::-webkit-scrollbar-track { background: transparent }
-::-webkit-scrollbar-thumb { background: #cccccc; border-radius: 3px }
+::-webkit-scrollbar-thumb { background: #d6d3dc; border-radius: 3px }
+::-webkit-scrollbar-thumb:hover { background: #8a8aa3 }
+#sidebar ::-webkit-scrollbar-thumb { background: rgba(231,225,243,.25) }
 
 /* ── Sidebar active link ─────────────────────────────────────── */
 .nav-link.active {
@@ -53,6 +65,12 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
   color: #3c45a3;
   font-weight: 700;
 }
+
+/* ── Marcas de estado de las pestañas de fase (components/phase-tabs.js) ── */
+[data-status-glyph="complete"]    { color: #3c45a3 }
+[data-status-glyph="in_progress"] { color: #997fc7 }
+.bg-primary > [data-status-glyph="complete"]    { color: #d6e949 }
+.bg-primary > [data-status-glyph="in_progress"] { color: #e7e1f3 }
 
 /* ── Loading spinner ─────────────────────────────────────────── */
 .spinner {
@@ -72,25 +90,25 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
 
 /* ── Select arrow fix ────────────────────────────────────────── */
 select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23787682' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%2355577a' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px;
 }
 
 /* ── Form focus glow ─────────────────────────────────────────── */
 input:focus, select:focus, textarea:focus {
-  box-shadow: 0 0 0 3px rgba(6, 0, 62, 0.08);
+  box-shadow: 0 0 0 3px rgba(60, 69, 163, 0.12);
 }
 
 /* ── Evaluator ───────────────────────────────────────────────── */
 .eval-sec-chip { transition: all .2s ease }
-.eval-sec-chip:hover { background: rgba(6,0,62,.06) }
+.eval-sec-chip:hover { background: rgba(60,69,163,.06) }
 .eval-sec-chip.active { background: #3c45a3; color: #fff; font-weight: 700 }
 .eval-sec-chip.active .eval-sec-dot { background: #fff !important }
 .eval-q-item { transition: all .15s ease; border-left: 3px solid transparent }
-.eval-q-item:hover { background: rgba(6,0,62,.05) }
-.eval-q-item.active { border-left-color: #3c45a3; background: rgba(6,0,62,.08); font-weight: 600 }
+.eval-q-item:hover { background: rgba(60,69,163,.05) }
+.eval-q-item.active { border-left-color: #3c45a3; background: rgba(60,69,163,.08); font-weight: 600 }
 .eval-crit-card { transition: all .2s ease; border-left: 4px solid transparent }
-.eval-crit-card:hover { box-shadow: 0 2px 8px rgba(6,0,62,.06) }
+.eval-crit-card:hover { box-shadow: 0 2px 8px rgba(60,69,163,.06) }
 @keyframes critIn { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:translateY(0) } }
 .eval-crit-card { animation: critIn .25s ease }
 
@@ -98,7 +116,7 @@ input:focus, select:focus, textarea:focus {
 .field-info {
   display: inline-flex; align-items: center; justify-content: center;
   width: 16px; height: 16px; border-radius: 50%;
-  background: rgba(6,0,62,.08); color: #787682;
+  background: rgba(60,69,163,.08); color: #55577a;
   cursor: pointer; transition: all .2s ease;
   flex-shrink: 0; vertical-align: middle; margin-left: 4px;
 }
@@ -112,8 +130,8 @@ input:focus, select:focus, textarea:focus {
 }
 .field-info-popup {
   position: fixed; z-index: 9998;
-  background: #1e293b; color: #f1f5f9;
-  border-radius: 14px; padding: 20px 24px;
+  background: #222351; color: #fff;
+  border-radius: 16px; padding: 20px 24px;
   font-size: 13px; line-height: 1.7;
   box-shadow: 0 12px 40px rgba(0,0,0,.35);
   max-width: 480px; min-width: 280px; width: 90vw;
@@ -128,16 +146,16 @@ input:focus, select:focus, textarea:focus {
   margin: 0 0 10px 0; letter-spacing: .02em;
   padding-right: 24px;
 }
-.field-info-popup p { margin: 0 0 8px 0; color: #cbd5e1 }
+.field-info-popup p { margin: 0 0 8px 0; color: #e7e1f3 }
 .field-info-popup .tip-example {
   margin: 8px 0; padding: 10px 14px;
   background: rgba(255,255,255,.08); border-radius: 8px;
-  font-size: 12px; color: #94d3a2; font-style: italic;
-  border-left: 3px solid #22c55e;
+  font-size: 12px; color: #e7e1f3; font-style: italic;
+  border-left: 3px solid #d6e949;
 }
 .field-info-popup .tip-close {
   position: absolute; top: 12px; right: 14px;
-  background: none; border: none; color: #94a3b8;
+  background: none; border: none; color: #e7e1f3;
   cursor: pointer; font-size: 18px; line-height: 1;
   padding: 2px;
 }
@@ -146,7 +164,7 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Per Diem cards ──────────────────────────────────────────── */
 .perdiem-card { transition: transform .2s ease, box-shadow .2s ease }
-.perdiem-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(6,0,62,.08) }
+.perdiem-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(60,69,163,.08) }
 
 /* ── Responsive sidebar ──────────────────────────────────────── */
 @media (max-width: 1023px) {
@@ -177,7 +195,7 @@ input:focus, select:focus, textarea:focus {
     grid-template-rows: auto auto;
   }
   .partner-row .partner-org  { grid-column: 1; grid-row: 1; font-weight: 600; }
-  .partner-row .partner-meta { grid-column: 1; grid-row: 2; font-size: 12px; color: #787682; }
+  .partner-row .partner-meta { grid-column: 1; grid-row: 2; font-size: 12px; color: #55577a; }
   .partner-row .partner-del  { grid-column: 2; grid-row: 1 / 3; align-self: center; }
   .partner-row .partner-city,
   .partner-row .partner-country,
@@ -208,7 +226,7 @@ input:focus, select:focus, textarea:focus {
   .admin-table-wrap tbody tr {
     display: flex; flex-wrap: wrap;
     padding: 12px 16px; gap: 4px;
-    border-bottom: 1px solid rgba(120,118,130,.15);
+    border-bottom: 1px solid rgba(138,138,163,.15);
     position: relative;
   }
   .admin-table-wrap tbody td {
@@ -219,7 +237,7 @@ input:focus, select:focus, textarea:focus {
   .admin-table-wrap tbody td:last-child {
     width: 100%; justify-content: flex-end;
     padding-top: 8px; margin-top: 4px;
-    border-top: 1px solid rgba(120,118,130,.1);
+    border-top: 1px solid rgba(138,138,163,.1);
   }
   /* Primary name cell full width + bigger */
   .admin-table-wrap tbody td:nth-child(2) {
@@ -260,14 +278,15 @@ input:focus, select:focus, textarea:focus {
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 12px; font-weight: 700;
-  border: 2px solid #cccccc; color: #787682;
+  border: 2px solid #d6d3dc; color: #55577a;
   transition: all .2s ease; flex-shrink: 0;
 }
 .calc-prog-dot.active { background: #3c45a3; border-color: #3c45a3; color: #fff }
-.calc-prog-dot.done   { background: #2d6a4f; border-color: #2d6a4f; color: #fff }
+/* Paso hecho: lima con texto azul (estado de avance, no de corrección) */
+.calc-prog-dot.done   { background: #d6e949; border-color: #c3d63a; color: #3c45a3 }
 .calc-prog-dot.locked { opacity: .4; cursor: default }
-.calc-prog-line { flex: 1; height: 2px; background: #cccccc; min-width: 12px }
-.calc-prog-line.done  { background: #2d6a4f }
+.calc-prog-line { flex: 1; height: 2px; background: #d6d3dc; min-width: 12px }
+.calc-prog-line.done  { background: #c3d63a }
 
 @media (max-width: 639px) {
   .calc-prog-label { display: none; }
@@ -275,23 +294,23 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* ── WP section ──────────────────────────────────────────────── */
-.calc-wp { border: 1px solid rgba(120,118,130,.15); border-radius: 12px; overflow: hidden; margin-bottom: 16px; border-left: 6px solid var(--wp-color, #787682); box-shadow: 0 2px 6px rgba(0,0,0,.08) }
+.calc-wp { border: 1px solid rgba(138,138,163,.15); border-radius: 12px; overflow: hidden; margin-bottom: 16px; border-left: 6px solid var(--wp-color, #8a8aa3); box-shadow: 0 2px 6px rgba(0,0,0,.08) }
 .calc-wp-head {
   display: flex; align-items: center; gap: 10px; padding: 12px 16px;
-  cursor: pointer; user-select: none; background: #f7f9fb;
-  border-bottom: 1px solid rgba(120,118,130,.1);
+  cursor: pointer; user-select: none; background: #f8f7f5;
+  border-bottom: 1px solid rgba(138,138,163,.1);
   transition: background .15s;
 }
-.calc-wp-head:hover { background: #eceef0 }
+.calc-wp-head:hover { background: #f0edeb }
 .calc-wp-body { display: none; padding: 14px 16px; background: #fff }
 .calc-wp.open .calc-wp-body { display: block }
-.calc-wp-chevron { transition: transform .2s; font-size: 18px; color: #787682 }
+.calc-wp-chevron { transition: transform .2s; font-size: 18px; color: #55577a }
 .calc-wp.open .calc-wp-chevron { transform: rotate(180deg) }
 
 /* ── WP title suggestion menu ────────────────────────────────── */
 .wp-title-menu {
   position: absolute; top: 100%; right: 0; margin-top: 4px; z-index: 200;
-  background: #1e293b; border-radius: 10px; padding: 6px;
+  background: #222351; border-radius: 12px; padding: 6px;
   box-shadow: 0 8px 24px rgba(0,0,0,.3);
   min-width: 280px; max-height: 320px; overflow-y: auto;
   animation: panelIn .15s ease;
@@ -299,23 +318,23 @@ input:focus, select:focus, textarea:focus {
 .wp-title-group {
   padding: 8px 12px 4px; font-size: 10px; font-weight: 700;
   text-transform: uppercase; letter-spacing: .06em;
-  color: #94a3b8; border-top: 1px solid rgba(255,255,255,.06);
+  color: rgba(231,225,243,.75); border-top: 1px solid rgba(255,255,255,.08);
 }
 .wp-title-group:first-child { border-top: none }
 .wp-title-item {
   display: block; width: 100%; text-align: left;
   padding: 7px 12px; border: none; background: transparent;
-  color: #e2e8f0; font-size: 13px; font-family: Poppins, sans-serif;
+  color: #e7e1f3; font-size: 13px; font-family: Poppins, sans-serif;
   cursor: pointer; border-radius: 6px; transition: background .12s;
 }
 .wp-title-item:hover { background: rgba(255,255,255,.1); color: #fff }
 
 /* ── Activity cards ──────────────────────────────────────────── */
 .calc-act {
-  border: 2px solid rgba(120,118,130,.25); border-radius: 10px;
-  border-left: 5px solid var(--act-color, #787682);
-  border-bottom: 4px solid var(--act-color, #787682);
-  padding: 14px 16px; margin-bottom: 16px; background: #f7f9fb;
+  border: 2px solid rgba(138,138,163,.25); border-radius: 10px;
+  border-left: 5px solid var(--act-color, #8a8aa3);
+  border-bottom: 4px solid var(--act-color, #8a8aa3);
+  padding: 14px 16px; margin-bottom: 16px; background: #f8f7f5;
   position: relative;
   box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
@@ -329,16 +348,16 @@ input:focus, select:focus, textarea:focus {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 6px;
 }
 .calc-act-pick {
-  padding: 8px 10px; border: 1px dashed rgba(120,118,130,.25);
+  padding: 8px 10px; border: 1px dashed rgba(138,138,163,.25);
   border-radius: 6px; background: transparent; cursor: pointer;
   text-align: left; transition: all .15s; font-family: inherit;
 }
-.calc-act-pick:hover { border-color: #3c45a3; background: rgba(6,0,62,.04) }
+.calc-act-pick:hover { border-color: #3c45a3; background: rgba(60,69,163,.04) }
 
 /* ── Gantt ────────────────────────────────────────────────────── */
 .calc-gantt-tip {
   display: none; position: fixed; z-index: 500;
-  background: #1e293b; color: #fff; border-radius: 8px;
+  background: #222351; color: #fff; border-radius: 10px;
   padding: 10px 14px; font-size: 12px; line-height: 1.6;
   pointer-events: none; box-shadow: 0 4px 16px rgba(0,0,0,.3);
   max-width: 260px;
@@ -347,7 +366,7 @@ input:focus, select:focus, textarea:focus {
 /* ── Result tabs ─────────────────────────────────────────────── */
 .calc-res-tab {
   padding: 10px 18px; font-size: 13px; font-weight: 500;
-  border: none; background: transparent; color: #787682;
+  border: none; background: transparent; color: #55577a;
   cursor: pointer; border-bottom: 2px solid transparent;
   transition: all .15s; font-family: inherit;
 }
@@ -358,17 +377,17 @@ input:focus, select:focus, textarea:focus {
 .print-tab-shell { display: flex; flex-direction: column; height: calc(100vh - 280px); min-height: 560px; }
 .print-tab-toolbar {
   display: flex; justify-content: space-between; align-items: center;
-  padding: 12px 16px; background: #f8f8fc;
+  padding: 12px 16px; background: #f8f7f5;
   border: 1px solid rgba(0,0,0,0.08); border-bottom: none;
   border-radius: 12px 12px 0 0;
 }
 .print-tab-frame-wrap {
   flex: 1; min-height: 0;
-  background: #e9ebf3;
+  background: #e8e4e1;
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 0 0 12px 12px; overflow: hidden;
 }
-.print-tab-frame { width: 100%; height: 100%; border: 0; display: block; background: #e9ebf3; }
+.print-tab-frame { width: 100%; height: 100%; border: 0; display: block; background: #e8e4e1; }
 
 /* ── Save indicator ──────────────────────────────────────────── */
 .calc-save {
@@ -377,15 +396,16 @@ input:focus, select:focus, textarea:focus {
   padding: 6px 16px; border-radius: 20px;
   transition: all .3s ease; pointer-events: none;
 }
-.calc-save.saving { background: #FEF3C7; color: #92400E; opacity: 1 }
-.calc-save.saved  { background: #D1FAE5; color: #065F46; opacity: 1 }
-.calc-save.error  { background: #FEE2E2; color: #991B1B; opacity: 1 }
+/* Guardando = lavanda suave; guardado = lima; error = rojo de marca */
+.calc-save.saving { background: #e7e1f3; color: #3c45a3; opacity: 1 }
+.calc-save.saved  { background: #d6e949; color: #3c45a3; opacity: 1 }
+.calc-save.error  { background: #ffdad6; color: #93000a; opacity: 1 }
 .calc-save.hidden { opacity: 0 }
 
 /* ── Tables inside calculator ────────────────────────────────── */
 .calc-table { width: 100%; border-collapse: collapse; font-size: 13px }
-.calc-table th { padding: 8px 10px; background: #eceef0; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #474551; border-bottom: 1px solid rgba(120,118,130,.2) }
-.calc-table td { padding: 8px 10px; border-bottom: 1px solid rgba(120,118,130,.1); vertical-align: top }
+.calc-table th { padding: 8px 10px; background: #f0edeb; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #55577a; border-bottom: 1px solid rgba(138,138,163,.2) }
+.calc-table td { padding: 8px 10px; border-bottom: 1px solid rgba(138,138,163,.1); vertical-align: top }
 .calc-table tr:last-child td { border-bottom: none }
 .calc-table input[type="number"] { width: 90px; padding: 5px 8px; font-size: 13px; text-align: right }
 
@@ -402,7 +422,7 @@ input:focus, select:focus, textarea:focus {
 #panel-intake select,
 #panel-intake textarea {
   border-radius: 8px;
-  border: 1px solid rgba(120,118,130,.2);
+  border: 1px solid rgba(138,138,163,.2);
   outline: none;
   transition: border-color .15s, box-shadow .15s;
 }
@@ -471,9 +491,9 @@ input:focus, select:focus, textarea:focus {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid rgba(120,118,130,.2);
-  background: #f7f9fb;
-  color: #787682;
+  border: 1px solid rgba(138,138,163,.2);
+  background: #f8f7f5;
+  color: #55577a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -514,7 +534,7 @@ textarea.voice-recording {
 
 /* Loading state (transcribing) */
 .voice-btn.voice-loading {
-  background: #f7f9fb;
+  background: #f8f7f5;
   border-color: #3c45a3;
   color: #3c45a3;
   cursor: wait;
@@ -580,13 +600,13 @@ textarea.voice-recording {
      (clip, no hidden: no crea scroll ni corta lo que cuelgue hacia abajo). */
   overflow-x: clip;
   background:
-    radial-gradient(circle at 90% -20%, rgba(199,175,223,0.18), transparent 50%),
-    linear-gradient(180deg, #f8f8f8 0%, transparent 100%);
+    radial-gradient(circle at 90% -20%, rgba(153,127,199,0.14), transparent 50%),
+    linear-gradient(180deg, #f0edeb 0%, transparent 100%);
 }
 
 /* Filtros sidebar */
 .filter-group {
-  border-bottom: 1px solid rgba(204,204,204,0.4);
+  border-bottom: 1px solid #d6d3dc;
   padding-bottom: 16px;
 }
 .filter-group:last-child {
@@ -597,7 +617,7 @@ textarea.voice-recording {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #474551;
+  color: #55577a;
   margin-bottom: 8px;
 }
 .filter-radio,
@@ -615,7 +635,7 @@ textarea.voice-recording {
 }
 .filter-radio:hover,
 .filter-toggle:hover {
-  background: rgba(199,175,223,0.18);
+  background: #e7e1f3;
 }
 .filter-radio input[type="radio"],
 .filter-toggle input[type="checkbox"] {
@@ -631,7 +651,7 @@ textarea.voice-recording {
 .filter-count {
   font-size: 10px;
   font-variant-numeric: tabular-nums;
-  color: #474551;
+  color: #55577a;
   margin-left: auto;
   font-weight: 600;
 }
@@ -648,9 +668,11 @@ textarea.voice-recording {
   border-radius: 999px;
   white-space: nowrap;
 }
+/* Premium: lavanda suave con borde lavanda (texto azul, contraste ≈ 7:1) */
 .badge-premium {
-  background: #997fc7;
+  background: #e7e1f3;
   color: #3c45a3;
+  border: 1px solid #997fc7;
 }
 .badge-good {
   background: rgba(214,233,73, 0.45);
@@ -658,13 +680,13 @@ textarea.voice-recording {
   border: 1px solid #d6e949;
 }
 .badge-acceptable {
-  background: #eeeeee;
-  color: #474551;
+  background: #f0edeb;
+  color: #55577a;
 }
 .badge-minimal {
   background: transparent;
-  color: #888888;
-  border: 1px dashed #cccccc;
+  color: #55577a;
+  border: 1px dashed #8a8aa3;
 }
 
 /* Card subtle yellow accent on hover */
@@ -717,21 +739,29 @@ textarea.voice-recording {
 #entities-grid > .entity-card:nth-child(n+9) { animation-delay: .18s }
 
 /* ── Focus visible on interactive elements ────────────────── */
+/* Anillo de foco: azul sobre fondos claros (el lima no se ve sobre blanco/crema)
+   y lima sobre las barras oscuras (barra lateral en tinta, barra superior azul). */
 .entity-card:focus-visible,
 .shortlist-tab:focus-visible,
 button:focus-visible,
 a.nav-link:focus-visible,
 .filter-radio:focus-within,
 .filter-toggle:focus-within {
-  outline: 3px solid #d6e949;
+  outline: 2px solid #3c45a3;
   outline-offset: 2px;
   border-radius: 12px;
+}
+#sidebar a:focus-visible,
+#sidebar button:focus-visible,
+.bg-primary button:focus-visible,
+.bg-ink button:focus-visible {
+  outline-color: #d6e949;
 }
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(214,233,73, 0.5);
+  box-shadow: 0 0 0 3px rgba(60,69,163, 0.22);
 }
 
 /* ── KPI card subtle hover ────────────────────────────────── */
@@ -782,8 +812,8 @@ textarea:focus-visible {
 
 /* ── High contrast: ensure tier badges remain legible ─────── */
 @media (prefers-contrast: more) {
-  .badge-acceptable { border: 1px solid #474551; }
-  .badge-minimal { color: #474551; }
+  .badge-acceptable { border: 1px solid #55577a; }
+  .badge-minimal { color: #222351; }
 }
 
 /* ── Score bar polish ─────────────────────────────────────── */
@@ -796,7 +826,7 @@ textarea:focus-visible {
 /* ── Tablet & mobile: stack filters above grid ────────────── */
 @media (max-width: 1023px) {
   #entities-filters {
-    border-bottom: 1px solid rgba(204,204,204,0.4);
+    border-bottom: 1px solid #d6d3dc;
     padding-bottom: 16px;
     margin-bottom: 8px;
   }
@@ -807,15 +837,15 @@ textarea:focus-visible {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 6px 12px; border-radius: 999px;
   font-size: 12px; font-weight: 600;
-  background: #f8f8f8; color: #3c45a3;
-  border: 1px solid rgba(204,204,204,0.5);
+  background: #f8f7f5; color: #3c45a3;
+  border: 1px solid #d6d3dc;
   cursor: pointer; transition: all .15s;
 }
-.tier-chip:hover { background: #eee; }
+.tier-chip:hover { background: #f0edeb; }
 .tier-chip.active { background: #3c45a3; color: #fff; border-color: #3c45a3; }
 .tier-chip .chip-dot {
   width: 8px; height: 8px; border-radius: 50%;
-  background: var(--chip, #888);
+  background: var(--chip, #8a8aa3);
   box-shadow: 0 0 0 2px rgba(255,255,255,.4);
 }
 #stats-globe-container { cursor: grab; }
@@ -827,7 +857,7 @@ textarea:focus-visible {
 /* Popup MapLibre del Atlas — apariencia E+ */
 .maplibregl-popup.atlas-popup .maplibregl-popup-content {
   border-radius: 14px;
-  border: 1px solid rgba(204, 204, 204, 0.6);
+  border: 1px solid #d6d3dc;
   box-shadow: 0 10px 28px rgba(60,69,163, 0.18);
   padding: 0;
   background: #fff;

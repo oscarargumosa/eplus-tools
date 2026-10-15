@@ -1,70 +1,78 @@
 /* ============================================================
-   EU Funding School — Shared design tokens
+   EU Funding Studio — Tokens de diseño compartidos
    ============================================================
-   Single source of truth for brand identity.
-   Consumed by:
-     - WordPress child theme  (web/wordpress/astra-eufunding/style.css)
-     - E+ Tools SPA            (public/css/main.css, Tailwind config)
+   Manual de marca de EU Funding Studio (oct-2026).
+   Referencia: DESIGN.md (raíz) y docs/DESIGN.md.
 
-   Any brand change (logo, color, font) updates BOTH ecosystems
-   by editing this file only.
+   OJO: la SPA usa Tailwind CDN, que NO lee este fichero. Cualquier
+   cambio aquí hay que reflejarlo a mano en el tailwind.config de
+   public/index.html (theme.extend.colors).
 
-   Reference: docs/DESIGN.md is the design spec.
-   Alineado con designer-projects/Presentation Templates/DESIGN_GUIDELINES.md
-   (visión de Ana — responsable de imagen EU Funding School).
+   No lo usa el tema WordPress (web/wordpress): ese es de
+   EU Funding School, otra marca con su propia paleta.
+   Se conservan los nombres --efs-* por compatibilidad.
    ============================================================ */
 
 :root {
-	/* ---------- Core palette (Ana's guidelines) ---------- */
-	--efs-color-primary:             #3c45a3;   /* single brand blue — titles, text, nav active, icons */
-	--efs-color-primary-container:   #3c45a3;   /* same blue — sidebar, buttons */
-	--efs-color-secondary-fixed:     #d6e949;   /* lime yellow — CTA bg, highlights, devices */
-	--efs-color-secondary-fixed-dim: #c3d63a;   /* duller yellow — hover/active of CTA */
-	--efs-color-accent-warm:         #997fc7;   /* lavender — secondary cards, soft accents */
+	/* ---------- Paleta oficial (de oscuro a claro) ---------- */
+	--efs-color-ink:                 #222351;   /* tinta — texto largo, fondos muy oscuros */
+	--efs-color-primary:             #3c45a3;   /* azul de marca — títulos, barras, botones primarios */
+	--efs-color-primary-container:   #3c45a3;   /* mismo azul — barra lateral, botones */
+	--efs-color-violet:              #514daa;   /* hover/activo del azul, degradados */
+	--efs-color-lavender:            #997fc7;   /* acento de apoyo — NO para texto pequeño sobre blanco */
+	--efs-color-lavender-soft:       #e7e1f3;   /* chips, avisos, vacíos; texto secundario sobre azul */
+	--efs-color-secondary-fixed:     #d6e949;   /* lima — CTA, resaltados, protagonista. Nunca texto sobre claro */
+	--efs-color-secondary-fixed-dim: #c3d63a;   /* lima oscuro — hover/active de lo lima */
+	--efs-color-lime-soft:           #f3f8d2;   /* fondo de avisos suaves (borde lima, texto azul/tinta) */
+	--efs-color-cream:               #f0edeb;   /* crema — tarjetas y paneles sobre blanco */
+	--efs-color-accent-warm:         #997fc7;   /* alias histórico de la lavanda */
 
-	/* ---------- Surfaces (Ana's neutrals: white / light gray / medium gray) ---------- */
-	--efs-color-bg:                      #ffffff; /* page bg for content */
-	--efs-color-surface:                 #f8f8f8; /* app-wide bg (gris casi blanco) */
-	--efs-color-surface-container-low:   #f8f8f8; /* inputs, contained icons */
-	--efs-color-surface-container:       #eeeeee; /* light separators */
-	--efs-color-surface-container-lowest: #ffffff; /* cards */
+	/* ---------- Superficies ---------- */
+	--efs-color-bg:                       #ffffff; /* fondo de contenido */
+	--efs-color-surface:                  #f8f7f5; /* fondo general de la app (blanco cálido) */
+	--efs-color-surface-container-low:    #f8f7f5; /* inputs, iconos contenidos */
+	--efs-color-surface-container:        #f0edeb; /* crema — tarjetas/paneles */
+	--efs-color-surface-container-high:   #e8e4e1;
+	--efs-color-surface-container-lowest: #ffffff; /* tarjetas sobre fondo */
 
-	/* ---------- Text ---------- */
-	--efs-color-on-surface:         #222351; /* body copy */
-	--efs-color-on-surface-variant: #474551; /* secondary text, placeholders */
-	--efs-color-on-primary:         #ffffff; /* text on dark primary */
+	/* ---------- Texto ---------- */
+	--efs-color-on-surface:           #222351; /* cuerpo */
+	--efs-color-on-surface-variant:   #55577a; /* texto secundario, placeholders */
+	--efs-color-on-primary:           #ffffff; /* texto sobre azul */
+	--efs-color-on-primary-container: #e7e1f3; /* texto secundario sobre azul */
+	--efs-color-on-secondary-fixed:   #3c45a3; /* texto sobre lima */
 
-	/* ---------- Lines & outlines ---------- */
-	--efs-color-outline:         #888888;
-	--efs-color-outline-variant: #cccccc; /* Ana's gris medio — separators, pills inactive */
+	/* ---------- Líneas ---------- */
+	--efs-color-outline:         #8a8aa3;
+	--efs-color-outline-variant: #d6d3dc; /* separadores, bordes suaves, píldoras inactivas */
 
-	/* ---------- Semantic ---------- */
+	/* ---------- Semánticos ---------- */
 	--efs-color-error:           #ba1a1a;
 	--efs-color-error-container: #ffdad6;
+	/* Verde solo para «correcto/aprobado» (corrección de tests); nunca decorativo */
 
-	/* ---------- Typography (Poppins per Ana's guidelines) ---------- */
+	/* ---------- Tipografía: Poppins (300–700 + itálicas) ---------- */
 	--efs-font-body:    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 	--efs-font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
-	/* Font weights (Poppins range 300-900) */
+	--efs-weight-light:     300;  /* cifras grandes (KPIs, contadores, fechas) */
 	--efs-weight-regular:   400;
-	--efs-weight-medium:    500;  /* body default */
-	--efs-weight-semibold:  600;
-	--efs-weight-bold:      700;  /* H2/H3 */
-	--efs-weight-extrabold: 800;  /* H1 / hero */
-	--efs-weight-black:     900;  /* portada / portadilla — Poppins Black */
+	--efs-weight-medium:    500;  /* cuerpo por defecto */
+	--efs-weight-semibold:  600;  /* titulares, botones */
+	--efs-weight-bold:      700;  /* titulares de portada */
 
-	/* ---------- Radius (soft — Ana: border-radius grande en cards) ---------- */
-	--efs-radius-default: 0.125rem; /* 2px */
-	--efs-radius-lg:      0.25rem;  /* 4px  — botones, cards */
-	--efs-radius-xl:      0.5rem;   /* 8px */
-	--efs-radius-full:    0.75rem;  /* 12px — sidebar links, badges */
+	/* ---------- Radios ---------- */
+	--efs-radius-default: 0.25rem;  /* 4px  — detalles pequeños */
+	--efs-radius-lg:      0.75rem;  /* 12px — inputs, chips cuadrados */
+	--efs-radius-xl:      1rem;     /* 16px — tarjetas */
+	--efs-radius-2xl:     1.5rem;   /* 24px — tarjetas destacadas, paneles */
+	--efs-radius-full:    999px;    /* píldora — botones CTA, chips */
 
-	/* ---------- Shadows (based on primary, never pure black) ---------- */
+	/* ---------- Sombras (teñidas de azul, nunca negro puro) ---------- */
 	--efs-shadow-soft:  0px 24px 48px rgba(60,69,163, 0.06);
 	--efs-shadow-med:   0px 24px 48px rgba(60,69,163, 0.10);
 
-	/* ---------- Layout ---------- */
-	--efs-max-w:       720px;  /* single post body */
-	--efs-max-w-wide:  1100px; /* archive grid / landings */
+	/* ---------- Maquetación ---------- */
+	--efs-max-w:       720px;
+	--efs-max-w-wide:  1100px;
 }

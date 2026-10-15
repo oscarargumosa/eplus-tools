@@ -76,14 +76,15 @@ const Calculator = (() => {
       const topbar = document.getElementById('topbar-title');
       if (topbar) topbar.parentElement.appendChild(el);
     }
-    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#9ca3af'; el.style.opacity = '1'; }
-    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#22c55e'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
-    else if (status === 'error') { el.textContent = 'Error al guardar — reintentando'; el.style.color = '#ef4444'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 4000); }
+    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#8a8aa3'; el.style.opacity = '1'; }
+    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#3c45a3'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
+    else if (status === 'error') { el.textContent = 'Error al guardar — reintentando'; el.style.color = '#ba1a1a'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 4000); }
   }
 
   /* ── Constants ──────────────────────────────────────────────── */
-  const WP_COLORS = ['#1D4ED8','#B45309','#7C3AED','#0F766E','#BE185D','#065F46','#9A3412','#1E40AF','#6B21A8','#0E7490','#4D7C0F','#7F1D1D'];
-  const WP_BG     = ['rgba(29,78,216,.06)','rgba(180,83,9,.06)','rgba(124,58,237,.06)','rgba(15,118,110,.06)','rgba(190,24,93,.06)','rgba(6,95,70,.06)','rgba(154,52,18,.06)','rgba(30,64,175,.06)','rgba(107,33,168,.06)','rgba(14,116,144,.06)','rgba(77,124,15,.06)','rgba(127,29,29,.06)'];
+  // Paleta de WPs: familia de marca (azul, lavanda oscura, tinta, violeta…); todas con texto blanco ≥4,5:1
+  const WP_COLORS = ['#3C45A3','#6C55A6','#222351','#514DAA','#55577A','#2C3380','#7A63B0','#3A3D6B','#4A56B8','#5E4A99','#41436E','#6670B8'];
+  const WP_BG     = ['rgba(60,69,163,.06)','rgba(108,85,166,.06)','rgba(34,35,81,.06)','rgba(81,77,170,.06)','rgba(85,87,122,.06)','rgba(44,51,128,.06)','rgba(122,99,176,.06)','rgba(58,61,107,.06)','rgba(74,86,184,.06)','rgba(94,74,153,.06)','rgba(65,67,110,.06)','rgba(102,112,184,.06)'];
 
   const DISTANCE_BANDS = [
     { min:0,    max:9,    label:'< 10 km',        green:0,    std:0    },
@@ -138,34 +139,34 @@ const Calculator = (() => {
   };
 
   const ACT_TYPES = {
-    mgmt:       { label:'Management',           icon:'settings',        color:'#474551', bg:'rgba(71,69,81,.08)',   mobility:false, descHint:'In your own words, tell us how you plan to coordinate the project. How will you organise internal communication, monitor progress and handle reporting?' },
-    meeting:    { label:'Transnational Meeting', icon:'groups',          color:'#1D4ED8', bg:'rgba(29,78,216,.08)', mobility:true,  descHint:'Tell us about this meeting in your own words. What do you want to achieve? Who will be there? What decisions or outcomes do you expect?',
+    mgmt:       { label:'Management',           icon:'settings',        color:'#55577A', bg:'rgba(85,87,122,.08)',   mobility:false, descHint:'In your own words, tell us how you plan to coordinate the project. How will you organise internal communication, monitor progress and handle reporting?' },
+    meeting:    { label:'Transnational Meeting', icon:'groups',          color:'#3C45A3', bg:'rgba(60,69,163,.08)', mobility:true,  descHint:'Tell us about this meeting in your own words. What do you want to achieve? Who will be there? What decisions or outcomes do you expect?',
       subtypes: ['Kick-off meeting','Mid-term meeting','Final meeting','Coordination meeting','Technical working meeting','Strategic planning meeting'] },
-    ltta:       { label:'LTTA / Mobility',       icon:'flight_takeoff',  color:'#0F766E', bg:'rgba(15,118,110,.08)',mobility:true,  descHint:'Describe this mobility in your own words. What will participants learn? What methodology will you use? Who is the target group and what skills will they develop?',
+    ltta:       { label:'LTTA / Mobility',       icon:'flight_takeoff',  color:'#514DAA', bg:'rgba(81,77,170,.08)',mobility:true,  descHint:'Describe this mobility in your own words. What will participants learn? What methodology will you use? Who is the target group and what skills will they develop?',
       subtypes: ['Training mobility','Study visit mobility','Group mobility','Youth exchange mobility','Staff mobility','Job shadowing mobility','Peer learning mobility','Blended mobility','Pilot mobility','Volunteering mobility','Expert mobility','Community immersion mobility'] },
-    io:         { label:'Intellectual Output',   icon:'menu_book',       color:'#7C3AED', bg:'rgba(124,58,237,.08)',mobility:false, descHint:'Tell us what you want to create. What kind of product is it (guide, toolkit, platform...)? How will you develop it and who will use it?',
+    io:         { label:'Intellectual Output',   icon:'menu_book',       color:'#6C55A6', bg:'rgba(108,85,166,.08)',mobility:false, descHint:'Tell us what you want to create. What kind of product is it (guide, toolkit, platform...)? How will you develop it and who will use it?',
       subtypes: ['Educational manual','Methodological guide','Training course / module','Toolkit','Research report / needs analysis','Digital platform / interactive tool'] },
-    me:         { label:'Multiplier Event',      icon:'campaign',        color:'#BE185D', bg:'rgba(190,24,93,.08)', mobility:false, descHint:'Describe this event in your own words. What is it about? Who do you want to reach? What format are you thinking (conference, workshop, open day...)?',
+    me:         { label:'Multiplier Event',      icon:'campaign',        color:'#222351', bg:'rgba(34,35,81,.08)', mobility:false, descHint:'Describe this event in your own words. What is it about? Who do you want to reach? What format are you thinking (conference, workshop, open day...)?',
       subtypes: ['Launch event','Dissemination conference','Final conference','Stakeholder event','Networking event','Public presentation event'] },
-    local_ws:   { label:'Local Workshop',        icon:'school',          color:'#B45309', bg:'rgba(180,83,9,.08)',  mobility:false, descHint:'Tell us about this local activity. What topics will you cover? Who will participate? What do you hope they will take away from it?',
+    local_ws:   { label:'Local Workshop',        icon:'school',          color:'#7A63B0', bg:'rgba(122,99,176,.08)',  mobility:false, descHint:'Tell us about this local activity. What topics will you cover? Who will participate? What do you hope they will take away from it?',
       subtypes: ['Training workshop','Participatory workshop','Awareness workshop','Co-creation workshop','Community workshop','Testing / pilot workshop'] },
-    personal_work:{ label:'Personal Work',       icon:'psychology',      color:'#16A34A', bg:'rgba(22,163,74,.08)', mobility:false, descHint:'Tell us about the personal work this involves. What kind of one-to-one accompaniment, mentoring or guided personal exploration will participants experience? How is each pathway structured and what individual result will each participant produce?',
+    personal_work:{ label:'Personal Work',       icon:'psychology',      color:'#5E4A99', bg:'rgba(94,74,153,.08)', mobility:false, descHint:'Tell us about the personal work this involves. What kind of one-to-one accompaniment, mentoring or guided personal exploration will participants experience? How is each pathway structured and what individual result will each participant produce?',
       subtypes: ['One-to-one mentoring','Personal accompaniment','Coaching pathway','Reflective journaling','Individual portfolio','Personal creation project'] },
-    campaign:   { label:'Dissemination',         icon:'share',           color:'#065F46', bg:'rgba(6,95,70,.08)',   mobility:false, descHint:'How do you plan to spread the word? Which channels will you use? Who do you want to reach and what message do you want to convey?',
+    campaign:   { label:'Dissemination',         icon:'share',           color:'#2C3380', bg:'rgba(44,51,128,.08)',   mobility:false, descHint:'How do you plan to spread the word? Which channels will you use? Who do you want to reach and what message do you want to convey?',
       subtypes: ['Social media dissemination','Newsletter dissemination','Press / media dissemination','Video dissemination','Community / stakeholder dissemination','Printed dissemination'] },
-    website:    { label:'Website',               icon:'language',        color:'#1D4ED8', bg:'rgba(29,78,216,.08)', mobility:false, descHint:'Tell us about the website or platform you want to build. What is its purpose? What will users find there? In which languages?',
+    website:    { label:'Website',               icon:'language',        color:'#4A56B8', bg:'rgba(74,86,184,.08)', mobility:false, descHint:'Tell us about the website or platform you want to build. What is its purpose? What will users find there? In which languages?',
       subtypes: ['Project website','Landing page','Resource website','Learning platform','Community platform','Results repository'] },
-    artistic:   { label:'Artistic Fees',         icon:'palette',         color:'#BE185D', bg:'rgba(190,24,93,.08)', mobility:false, descHint:'What kind of artistic or creative work do you need? What is it for (video, design, performance...)? How does it connect to the project goals?',
+    artistic:   { label:'Artistic Fees',         icon:'palette',         color:'#6C55A6', bg:'rgba(108,85,166,.08)', mobility:false, descHint:'What kind of artistic or creative work do you need? What is it for (video, design, performance...)? How does it connect to the project goals?',
       subtypes: ['Graphic design','Video production / editing','Photography','Illustration / branding','Audio / podcast production','Artistic facilitation / performance'] },
-    equipment:  { label:'Equipment',             icon:'devices',         color:'#0369A1', bg:'rgba(3,105,161,.08)', mobility:false, depreciation:true, descHint:'What equipment do you need to purchase? Why is it essential for the project? Which activities will use it?',
+    equipment:  { label:'Equipment',             icon:'devices',         color:'#41436E', bg:'rgba(65,67,110,.08)', mobility:false, depreciation:true, descHint:'What equipment do you need to purchase? Why is it essential for the project? Which activities will use it?',
       subtypes: ['Computers / laptops','Tablets / mobile devices','Audio-visual equipment','Recording equipment','Educational / workshop equipment','Event technical equipment'] },
-    goods:      { label:'Other Goods',           icon:'inventory_2',     color:'#7C3AED', bg:'rgba(124,58,237,.08)',mobility:false, depreciation:true, descHint:'What goods or services do you need? Why are they necessary for the project and which activities do they support?',
+    goods:      { label:'Other Goods',           icon:'inventory_2',     color:'#7A63B0', bg:'rgba(122,99,176,.08)',mobility:false, depreciation:true, descHint:'What goods or services do you need? Why are they necessary for the project and which activities do they support?',
       subtypes: ['Printed materials','Educational materials','Visibility materials','Workshop materials','Event materials','Participant kits / welcome packs'] },
-    consumables:{ label:'Consumables',           icon:'science',         color:'#0F766E', bg:'rgba(15,118,110,.08)',mobility:false, depreciation:true, descHint:'What materials or supplies do you need? What are they for and which project activities require them?',
+    consumables:{ label:'Consumables',           icon:'science',         color:'#3A3D6B', bg:'rgba(58,61,107,.08)',mobility:false, depreciation:true, descHint:'What materials or supplies do you need? What are they for and which project activities require them?',
       subtypes: ['Printing consumables','Workshop consumables','Office consumables','Hygiene / cleaning consumables','Catering consumables','Technical consumables'] },
-    fstp:       { label:'Financial Support to Third Parties', icon:'volunteer_activism', color:'#C2410C', bg:'rgba(194,65,12,.08)', mobility:false, depreciation:false, descHint:'Describe the cascade/sub-grant scheme. Who are the third parties, how do they get selected, what amount can each receive, and what activities are funded?',
+    fstp:       { label:'Financial Support to Third Parties', icon:'volunteer_activism', color:'#514DAA', bg:'rgba(81,77,170,.08)', mobility:false, depreciation:false, descHint:'Describe the cascade/sub-grant scheme. Who are the third parties, how do they get selected, what amount can each receive, and what activities are funded?',
       subtypes: ['Cascade funding (open call)','Sub-grants to NGOs / associations','Mini-grants to youth-led initiatives','Re-granting to community groups','Voucher scheme for SMEs','Pilot grants for grassroots actions'] },
-    other:      { label:'Other Costs',           icon:'add_circle',      color:'#6B7280', bg:'rgba(107,114,128,.08)',mobility:false, depreciation:true, descHint:'Tell us about this cost. What does it cover, why is it needed and how did you estimate the amount?',
+    other:      { label:'Other Costs',           icon:'add_circle',      color:'#55577A', bg:'rgba(85,87,122,.08)',mobility:false, depreciation:true, descHint:'Tell us about this cost. What does it cover, why is it needed and how did you estimate the amount?',
       subtypes: ['Translation / interpretation costs','External expert / trainer costs','Venue / space rental costs','Hosting / software / platform costs','Travel / accommodation support costs','Evaluation / administrative support costs'] },
   };
 
@@ -447,7 +448,7 @@ const Calculator = (() => {
     const root = $('calc-root');
     root.innerHTML = `
       <div class="mb-6">
-        <h1 class="font-headline text-2xl font-bold text-on-surface tracking-tight">Budget Calculator</h1>
+        <h1 class="font-headline text-2xl font-bold text-primary tracking-tight">Budget Calculator</h1>
         <p class="text-on-surface-variant text-sm mt-1">Select a project to start building its budget.</p>
       </div>
       <div id="calc-projects-list" class="space-y-3">
@@ -463,7 +464,7 @@ const Calculator = (() => {
           <div class="text-center py-16">
             <span class="material-symbols-outlined text-5xl text-outline-variant mb-3">folder_off</span>
             <p class="text-on-surface-variant mb-4">No projects yet. Create one in Intake first.</p>
-            <button onclick="App.navigate('intake',true,true)" class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold text-sm hover:bg-primary-container transition-colors">
+            <button onclick="App.navigate('intake',true,true)" class="px-5 py-2.5 bg-primary text-white rounded-full font-semibold text-sm hover:bg-violet transition-colors">
               <span class="material-symbols-outlined text-[16px] align-middle mr-1">add_circle</span>
               New Project
             </button>
@@ -475,9 +476,9 @@ const Calculator = (() => {
         const typeLabel = p.type || 'No type';
         const partnerCount = p.partner_count || '?';
         return `
-        <div class="flex items-center gap-4 p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/30 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer group"
+        <div class="flex items-center gap-4 p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer group"
              onclick="Calculator._loadProject('${p.id}')">
-          <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-content-center shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-lavender-soft flex items-center justify-content-center shrink-0">
             <span class="material-symbols-outlined text-primary text-xl m-auto">calculate</span>
           </div>
           <div class="flex-1 min-w-0">
@@ -576,7 +577,7 @@ const Calculator = (() => {
           <span class="material-symbols-outlined text-xl">arrow_back</span>
         </button>
         <div class="flex-1 min-w-0">
-          <h1 class="font-headline text-xl font-bold text-on-surface tracking-tight truncate">${p.name || 'Project'}</h1>
+          <h1 class="font-headline text-xl font-bold text-primary tracking-tight truncate">${p.name || 'Project'}</h1>
           <p class="text-xs text-on-surface-variant">${p.type || ''} · ${state.partners.length} partners · ${p.duration_months || 24} months · ${euros(p.eu_grant || 0)}</p>
         </div>
       </div>
@@ -635,8 +636,8 @@ const Calculator = (() => {
 
   function navButtons(prev, next, nextLabel) {
     return `<div class="flex justify-between mt-6">
-      ${prev !== null ? `<button onclick="Calculator._goTo(${prev})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-lg transition-colors">← Back</button>` : '<span></span>'}
-      ${next !== null ? `<button onclick="Calculator._goTo(${next})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-lg hover:bg-primary-container transition-colors">${nextLabel || 'Next →'}</button>` : ''}
+      ${prev !== null ? `<button onclick="Calculator._goTo(${prev})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">← Back</button>` : '<span></span>'}
+      ${next !== null ? `<button onclick="Calculator._goTo(${next})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next →'}</button>` : ''}
     </div>`;
   }
 
@@ -652,11 +653,11 @@ const Calculator = (() => {
       ${buildRoutesSection()}
 
       <!-- Note: European reference rates -->
-      <div class="flex items-start gap-3 bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
-        <span class="material-symbols-outlined text-amber-600 text-xl mt-0.5">info</span>
+      <div class="flex items-start gap-3 bg-[#f3f8d2] border border-secondary-fixed rounded-2xl p-4 mb-4">
+        <span class="material-symbols-outlined text-primary text-xl mt-0.5">info</span>
         <div>
-          <p class="text-sm font-semibold text-amber-900 mb-1">European reference rates</p>
-          <p class="text-xs text-amber-800">The following amounts (Per Diem and Worker Rates) are pre-configured based on standard Erasmus+ rates for each country group. You should keep these values unless you have a specific reason to change them.</p>
+          <p class="text-sm font-semibold text-primary mb-1">European reference rates</p>
+          <p class="text-xs text-ink">The following amounts (Per Diem and Worker Rates) are pre-configured based on standard Erasmus+ rates for each country group. You should keep these values unless you have a specific reason to change them.</p>
         </div>
       </div>
 
@@ -769,7 +770,7 @@ const Calculator = (() => {
       <td class="text-center">
         <label class="flex items-center justify-center gap-1 cursor-pointer">
           <input type="checkbox" ${r.green?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setRoute('${aId}','${bId}','green',this.checked)">
-          <span class="text-[10px] text-[#065F46] font-semibold">Eco</span>
+          <span class="text-[10px] text-violet font-semibold">Eco</span>
         </label>
       </td>
       <td>
@@ -805,7 +806,7 @@ const Calculator = (() => {
     const extraRows = [];
     for (const p of partners) {
       for (const d of state.extraDests) {
-        const dLabel = `<span class="font-mono font-bold text-xs text-amber-700">${(d.name||'').split(/[\s(]/)[0].toUpperCase().slice(0,5)}</span> <span class="text-xs text-on-surface-variant">${[d.name, d.country].filter(Boolean).join(', ')}</span>`;
+        const dLabel = `<span class="font-mono font-bold text-xs text-violet">${(d.name||'').split(/[\s(]/)[0].toUpperCase().slice(0,5)}</span> <span class="text-xs text-on-surface-variant">${[d.name, d.country].filter(Boolean).join(', ')}</span>`;
         extraRows.push(routeRowHTML(p.id, routeLabel(p), d.id, dLabel));
       }
     }
@@ -1013,10 +1014,10 @@ const Calculator = (() => {
       <p class="text-sm text-on-surface-variant mb-4">Add and configure activities for each Work Package.</p>
 
       <!-- Summary bar -->
-      <div class="bg-primary text-white rounded-xl p-4 mb-5 flex items-center gap-5 flex-wrap">
+      <div class="bg-primary text-white rounded-3xl p-5 mb-5 flex items-center gap-5 flex-wrap">
         <div class="flex-1 min-w-[120px]">
           <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Total calculated</div>
-          <div class="font-headline text-2xl font-bold" id="calc-live-total">${euros(total)}</div>
+          <div class="font-headline text-3xl font-light tabular-nums" id="calc-live-total">${euros(total)}</div>
         </div>
         <div class="min-w-[90px]">
           <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Target</div>
@@ -1029,7 +1030,7 @@ const Calculator = (() => {
         <div class="flex-[2] min-w-[150px]">
           <div class="text-[10px] opacity-40 mb-1">Budget usage</div>
           <div class="h-3 rounded-full bg-white/20 overflow-hidden">
-            <div class="h-full rounded-full ${isOver ? 'bg-red-500' : 'bg-green-500'} transition-all" id="calc-live-bar" style="width:${usePct}%"></div>
+            <div class="h-full rounded-full ${isOver ? 'bg-red-500' : 'bg-secondary-fixed'} transition-all" id="calc-live-bar" style="width:${usePct}%"></div>
           </div>
         </div>
       </div>
@@ -1045,7 +1046,7 @@ const Calculator = (() => {
     state.wps.forEach((_, wi) => recalcWP(wi));
   }
 
-  const WP_SECTION_BG = ['rgba(29,78,216,.08)','rgba(180,83,9,.08)','rgba(124,58,237,.08)','rgba(15,118,110,.08)','rgba(190,24,93,.08)','rgba(6,95,70,.08)','rgba(154,52,18,.08)','rgba(30,64,175,.08)','rgba(107,33,168,.08)','rgba(14,116,144,.08)','rgba(77,124,15,.08)','rgba(127,29,29,.08)'];
+  const WP_SECTION_BG = ['rgba(60,69,163,.08)','rgba(108,85,166,.08)','rgba(34,35,81,.08)','rgba(81,77,170,.08)','rgba(85,87,122,.08)','rgba(44,51,128,.08)','rgba(122,99,176,.08)','rgba(58,61,107,.08)','rgba(74,86,184,.08)','rgba(94,74,153,.08)','rgba(65,67,110,.08)','rgba(102,112,184,.08)'];
 
   function buildWPTitleOpts(wi, wp) {
     const lastWi = state.wps.length - 1;
@@ -1309,12 +1310,12 @@ const Calculator = (() => {
 
     return `
       <!-- Online toggle -->
-      <div class="flex items-center gap-3 mb-3 px-3 py-2.5 rounded-xl ${isOnline ? 'bg-amber-50 border-2 border-amber-300' : 'bg-gray-50 border border-outline-variant/20'}">
+      <div class="flex items-center gap-3 mb-3 px-3 py-2.5 rounded-xl ${isOnline ? 'bg-lavender-soft border-2 border-lavender' : 'bg-surface-container-low border border-outline-variant/40'}">
         <label class="flex items-center gap-2 cursor-pointer flex-1">
-          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-amber-500" onchange="Calculator._setActOnline(${wi},${act.id},this.checked)">
-          <span class="material-symbols-outlined text-lg ${isOnline ? 'text-amber-600' : 'text-on-surface-variant/40'}">videocam</span>
-          <span class="text-sm font-bold ${isOnline ? 'text-amber-700' : 'text-on-surface-variant'}">ONLINE</span>
-          ${isOnline ? '<span class="text-[10px] text-amber-600 ml-1">No travel or accommodation costs</span>' : '<span class="text-[10px] text-on-surface-variant/50 ml-1">Mark as online to set budget to zero</span>'}
+          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-[#514daa]" onchange="Calculator._setActOnline(${wi},${act.id},this.checked)">
+          <span class="material-symbols-outlined text-lg ${isOnline ? 'text-violet' : 'text-on-surface-variant/40'}">videocam</span>
+          <span class="text-sm font-bold ${isOnline ? 'text-violet' : 'text-on-surface-variant'}">ONLINE</span>
+          ${isOnline ? '<span class="text-[10px] text-violet ml-1">No travel or accommodation costs</span>' : '<span class="text-[10px] text-on-surface-variant/50 ml-1">Mark as online to set budget to zero</span>'}
         </label>
       </div>
       <div class="grid grid-cols-3 gap-2 mb-3 ${isOnline ? 'opacity-30 pointer-events-none' : ''}">
@@ -1322,16 +1323,16 @@ const Calculator = (() => {
         <div><label class="text-[11px] text-on-surface-variant">Travellers/partner</label><input type="number" value="${act.pax}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'pax',this.value)"></div>
         <div><label class="text-[11px] text-on-surface-variant">Days</label><input type="number" value="${act.days}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'days',this.value)"></div>
       </div>
-      ${isOnline ? `<div class="mb-3 px-3 py-2 rounded-lg bg-amber-50 border border-amber-200 text-[11px] text-amber-700">
+      ${isOnline ? `<div class="mb-3 px-3 py-2 rounded-xl bg-lavender-soft text-[11px] text-violet">
         <span class="material-symbols-outlined text-xs align-middle mr-1">info</span>
         This activity is marked as online. Travel and accommodation costs are set to zero. If you need budget for platform, technical support or other costs, add them as "Other Costs" in this work package.
       </div>` : ''}
-      <details class="mb-3 rounded-lg bg-blue-50/50 border border-blue-100">
+      <details class="mb-3 rounded-xl bg-cream border border-outline-variant/40">
         <summary class="flex items-center gap-2 px-3 py-2 cursor-pointer select-none text-xs">
-          <span class="material-symbols-outlined text-sm text-blue-400">info</span>
-          <span class="font-semibold text-blue-600">How mobility budgets work</span>
+          <span class="material-symbols-outlined text-sm text-primary">info</span>
+          <span class="font-semibold text-primary">How mobility budgets work</span>
         </summary>
-        <div class="px-3 pb-2 text-[11px] text-blue-800/70 space-y-1">
+        <div class="px-3 pb-2 text-[11px] text-on-surface-variant space-y-1">
           <p><strong>Travel:</strong> Based on distance bands between partner cities. Use the EC distance calculator to determine the correct band. Eco-travel rates apply when sustainable transport is used.</p>
           <p><strong>Accommodation &amp; subsistence:</strong> Per diem rates based on the destination country. Covers hotel + daily expenses for each traveller for the duration of the activity.</p>
           <p><strong>Other costs</strong> (organisation, local transport, venue, catering, etc.) should be added as separate "Other Costs" activities within the same work package if needed.</p>
@@ -1698,7 +1699,7 @@ const Calculator = (() => {
     wp.activities.forEach(act => {
       const res = calcActivity(act);
       const def = ACT_TYPES[act.type];
-      const color = def?.color || '#474551';
+      const color = def?.color || '#55577A';
       wpTotal += res.total;
       const el = $(`calc-act-result-${act.id}`);
       if (!el) return;
@@ -1756,12 +1757,12 @@ const Calculator = (() => {
     const elDiff = $('calc-live-diff');
     const elBar = $('calc-live-bar');
     if (elTotal) elTotal.textContent = euros(total);
-    if (elDiff) { elDiff.textContent = (diff >= 0 ? '+ ' : '− ') + euros(Math.abs(diff)); elDiff.style.color = diff < 0 ? '#FCA5A5' : ''; }
+    if (elDiff) { elDiff.textContent = (diff >= 0 ? '+ ' : '− ') + euros(Math.abs(diff)); elDiff.style.color = diff < 0 ? '#ffdad6' : ''; }
     if (elBar) {
       elBar.style.width = usePct + '%';
       const over = diff < 0; // diff = Math.round(totalProject - total), céntimos no cuentan
       elBar.classList.toggle('bg-red-500', over);
-      elBar.classList.toggle('bg-green-500', !over);
+      elBar.classList.toggle('bg-secondary-fixed', !over);
       elBar.classList.remove('bg-white');
     }
   }
@@ -1799,20 +1800,20 @@ const Calculator = (() => {
         const targetDirect = totalProject / (1 + indirectPct / 100);
         const targetIndirect = totalProject - targetDirect;
         const targetOwnFunds = totalProject - Math.min(totalProject * cofinPct / 100, euGrant);
-        const barColor = isOver ? 'bg-red-500' : 'bg-green-500';
-        const borderColor = isOver ? 'border-red-200' : 'border-green-200';
+        const barColor = isOver ? 'bg-red-500' : 'bg-secondary-fixed';
+        const borderColor = isOver ? 'border-error/30' : 'border-outline-variant/60';
         return `
-      <div class="rounded-xl border ${borderColor} overflow-hidden mb-5">
+      <div class="rounded-3xl border ${borderColor} overflow-hidden mb-5">
         <!-- Progress bar -->
         <div class="bg-primary text-white p-5">
           <div class="flex items-end justify-between mb-3">
             <div>
               <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Budget actual</div>
-              <div class="font-headline text-3xl font-bold">${euros(subtotal)}</div>
+              <div class="font-headline text-4xl font-light tabular-nums">${euros(subtotal)}</div>
             </div>
             <div class="text-right">
               <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Target</div>
-              <div class="font-headline text-xl font-bold opacity-80">${euros(totalProject)}</div>
+              <div class="font-headline text-2xl font-light tabular-nums opacity-80">${euros(totalProject)}</div>
             </div>
           </div>
           <div class="h-3 rounded-full bg-white/20 overflow-hidden">
@@ -1820,7 +1821,7 @@ const Calculator = (() => {
           </div>
           <div class="flex justify-between mt-2 text-xs">
             <span class="opacity-70">${pct.toFixed(1)}% del target</span>
-            <span class="font-bold ${isOver ? 'text-red-300' : 'text-green-300'}">
+            <span class="font-bold ${isOver ? 'text-[#ffdad6]' : 'text-secondary-fixed'}">
               ${isOver ? 'Excede en ' + euros(Math.abs(gap)) : gap === 0 ? 'Ajustado' : 'Faltan ' + euros(gap)}
             </span>
           </div>
@@ -1842,31 +1843,31 @@ const Calculator = (() => {
                 <td class="py-2 text-on-surface-variant">Costes directos</td>
                 <td class="py-2 text-right font-mono font-medium">${euros(directCosts)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(targetDirect)}</td>
-                <td class="py-2 text-right font-mono ${directCosts >= targetDirect ? 'text-green-600' : 'text-amber-600'}">${euros(directCosts - targetDirect)}</td>
+                <td class="py-2 text-right font-mono ${directCosts >= targetDirect ? 'text-primary' : 'text-violet'}">${euros(directCosts - targetDirect)}</td>
               </tr>
               ${!hideIndirect ? `
               <tr class="border-b border-outline-variant/15">
                 <td class="py-2 text-on-surface-variant">Indirectos (${indirectPct}%)</td>
                 <td class="py-2 text-right font-mono font-medium">${euros(indirect)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(targetIndirect)}</td>
-                <td class="py-2 text-right font-mono ${indirect >= targetIndirect ? 'text-green-600' : 'text-amber-600'}">${euros(indirect - targetIndirect)}</td>
+                <td class="py-2 text-right font-mono ${indirect >= targetIndirect ? 'text-primary' : 'text-violet'}">${euros(indirect - targetIndirect)}</td>
               </tr>` : ''}
               <tr class="border-b border-outline-variant/30 font-bold">
                 <td class="py-2.5">Total presupuesto</td>
                 <td class="py-2.5 text-right font-mono">${euros(subtotal)}</td>
                 <td class="py-2.5 text-right font-mono">${euros(totalProject)}</td>
-                <td class="py-2.5 text-right font-mono ${isOver ? 'text-red-600' : 'text-amber-600'}">${euros(subtotal - totalProject)}</td>
+                <td class="py-2.5 text-right font-mono ${isOver ? 'text-error' : 'text-violet'}">${euros(subtotal - totalProject)}</td>
               </tr>
               ${!hideCofin ? `
               <tr class="border-b border-outline-variant/15">
-                <td class="py-2 text-blue-700">Financiado (${cofinPct}%)</td>
-                <td class="py-2 text-right font-mono font-medium text-blue-700">${euros(euGrant)}</td>
+                <td class="py-2 text-primary">Financiado (${cofinPct}%)</td>
+                <td class="py-2 text-right font-mono font-medium text-primary">${euros(euGrant)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
                 <td class="py-2 text-right font-mono">${euros(euGrant - Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
               </tr>
               <tr>
-                <td class="py-2 text-amber-700">Fondos propios (${ownPct}%)</td>
-                <td class="py-2 text-right font-mono font-medium text-amber-700">${euros(ownFunds)}</td>
+                <td class="py-2 text-violet">Fondos propios (${ownPct}%)</td>
+                <td class="py-2 text-right font-mono font-medium text-violet">${euros(ownFunds)}</td>
                 <td class="py-2 text-right font-mono text-on-surface-variant">${euros(totalProject - Math.min(totalProject * cofinPct / 100, maxGrant))}</td>
                 <td class="py-2 text-right font-mono">${euros(ownFunds - (totalProject - Math.min(totalProject * cofinPct / 100, maxGrant)))}</td>
               </tr>` : ''}
@@ -1877,13 +1878,13 @@ const Calculator = (() => {
         ${!hideCofin ? `
         <!-- Financing bar -->
         <div class="px-5 pb-4 bg-surface-container-lowest">
-          <div class="h-8 rounded-lg overflow-hidden flex">
+          <div class="h-8 rounded-full overflow-hidden flex">
             ${subtotal > 0 ? `
-            <div class="bg-blue-600 flex items-center justify-center" style="width:${Math.round(euGrant / subtotal * 100)}%"><span class="text-xs font-bold text-white">EU ${Math.round(euGrant / subtotal * 100)}%</span></div>
-            <div class="bg-amber-600 flex items-center justify-center" style="width:${Math.round(ownFunds / subtotal * 100)}%"><span class="text-xs font-bold text-white">Own ${Math.round(ownFunds / subtotal * 100)}%</span></div>
+            <div class="bg-primary flex items-center justify-center" style="width:${Math.round(euGrant / subtotal * 100)}%"><span class="text-xs font-bold text-white">EU ${Math.round(euGrant / subtotal * 100)}%</span></div>
+            <div class="bg-lavender-soft flex items-center justify-center" style="width:${Math.round(ownFunds / subtotal * 100)}%"><span class="text-xs font-bold text-primary">Own ${Math.round(ownFunds / subtotal * 100)}%</span></div>
             ` : `
-            <div class="bg-blue-600 flex items-center justify-center" style="width:${cofinPct}%"><span class="text-xs font-bold text-white">EU ${cofinPct}%</span></div>
-            <div class="bg-amber-600 flex items-center justify-center" style="width:${ownPct}%"><span class="text-xs font-bold text-white">Own ${ownPct}%</span></div>
+            <div class="bg-primary flex items-center justify-center" style="width:${cofinPct}%"><span class="text-xs font-bold text-white">EU ${cofinPct}%</span></div>
+            <div class="bg-lavender-soft flex items-center justify-center" style="width:${ownPct}%"><span class="text-xs font-bold text-primary">Own ${ownPct}%</span></div>
             `}
           </div>
         </div>` : ''}
@@ -1963,9 +1964,9 @@ const Calculator = (() => {
         <div class="flex justify-between py-2 font-bold text-sm rounded px-2 mt-1" style="background:${wp.bg};color:${wp.color}"><span>Total ${wpLabel(wp, wi)}</span><span class="font-mono">${euros(wp.total + wpInd)}</span></div>
       </div>`;
     }).join('') + `
-      <div class="bg-primary text-white rounded-xl p-4 flex justify-between items-center">
+      <div class="bg-primary text-white rounded-2xl p-4 flex justify-between items-center">
         <span class="font-headline font-bold">TOTAL PROJECT</span>
-        <span class="font-mono text-xl font-bold">${euros(subtotal)}</span>
+        <span class="font-headline text-2xl font-light tabular-nums">${euros(subtotal)}</span>
       </div>`;
   }
 
@@ -2346,9 +2347,9 @@ const Calculator = (() => {
         <div class="h-1.5" style="background:${c}15"><div class="h-full transition-all" style="width:${grandPct}%;background:${c}"></div></div>
       </div>`;
     }).join('') + `
-      <div class="bg-primary text-white rounded-xl p-4 flex justify-between items-center">
+      <div class="bg-primary text-white rounded-2xl p-4 flex justify-between items-center">
         <span class="font-headline font-bold">TOTAL PROJECT</span>
-        <span class="font-mono text-xl font-bold">${euros(subtotal)}</span>
+        <span class="font-headline text-2xl font-light tabular-nums">${euros(subtotal)}</span>
       </div>`;
   }
 
@@ -2373,8 +2374,8 @@ const Calculator = (() => {
       <div class="flex items-center gap-3 mb-4 flex-wrap">
         <div class="flex items-center gap-1">
           <span class="text-xs font-semibold text-on-surface-variant">View:</span>
-          <button id="calc-gantt-months" class="px-3 py-1 text-xs font-semibold rounded ${ganttView==='months'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('months')">Months</button>
-          <button id="calc-gantt-weeks" class="px-3 py-1 text-xs font-semibold rounded ${ganttView==='weeks'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('weeks')">Weeks</button>
+          <button id="calc-gantt-months" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='months'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('months')">Months</button>
+          <button id="calc-gantt-weeks" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='weeks'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('weeks')">Weeks</button>
         </div>
         <div class="ml-auto flex gap-2">
           <button class="px-2 py-1 text-[11px] font-semibold border border-outline-variant/30 rounded hover:bg-surface-container-high" onclick="Calculator._ganttCollapseAll()">− Collapse</button>
@@ -2421,11 +2422,11 @@ const Calculator = (() => {
     const showToday = today >= ps && today <= pe;
     const todayPct = showToday ? ((today-ps)/totalMs*100).toFixed(3)+'%' : null;
 
-    const stripeCols = cols.map((_,ci) => `<div style="flex:1;border-left:1px solid #e5e7eb;background:${ci%2===0?'transparent':'rgba(0,0,0,.012)'}"></div>`).join('');
-    const headerCols = cols.map((c,ci) => `<div style="flex:1;text-align:center;padding:4px 0;background:${ci%2===0?'#eceef0':'#e6e8ea'};border-left:1px solid #d1d5db"><div style="font-size:11px;font-weight:700;color:#374151">${c.label}</div><div style="font-size:9px;color:#9ca3af">${c.sub}</div></div>`).join('');
+    const stripeCols = cols.map((_,ci) => `<div style="flex:1;border-left:1px solid #e8e4e1;background:${ci%2===0?'transparent':'rgba(0,0,0,.012)'}"></div>`).join('');
+    const headerCols = cols.map((c,ci) => `<div style="flex:1;text-align:center;padding:4px 0;background:${ci%2===0?'#f0edeb':'#e8e4e1'};border-left:1px solid #d6d3dc"><div style="font-size:11px;font-weight:700;color:#222351">${c.label}</div><div style="font-size:9px;color:#55577a">${c.sub}</div></div>`).join('');
 
     let html = `<div style="display:flex;position:sticky;top:0;z-index:30;box-shadow:0 2px 6px rgba(0,0,0,.08)">
-      <div style="width:${LABEL_W}px;flex-shrink:0;background:#1e293b;display:flex;align-items:center;padding:0 14px"><span style="font-size:11px;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em">Activity</span></div>
+      <div style="width:${LABEL_W}px;flex-shrink:0;background:#222351;display:flex;align-items:center;padding:0 14px"><span style="font-size:11px;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em">Activity</span></div>
       <div style="flex:1;display:flex">${headerCols}</div>
     </div>`;
 
@@ -2437,10 +2438,10 @@ const Calculator = (() => {
         <div style="width:${LABEL_W}px;flex-shrink:0;padding:0 10px 0 14px;display:flex;align-items:center;gap:8px;overflow:hidden">
           <span style="font-size:10px;color:${c};font-weight:800">${collapsed?'▶':'▼'}</span>
           <span style="width:10px;height:10px;border-radius:50%;background:${c}"></span>
-          <span style="font-size:12px;font-weight:700;color:#1e293b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${wpLabel(wp,wi)}</span>
+          <span style="font-size:12px;font-weight:700;color:#222351;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${wpLabel(wp,wi)}</span>
         </div>
         <div style="flex:1;position:relative;display:flex"><div style="position:absolute;inset:0;display:flex">${stripeCols}</div>
-          ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#ef4444;opacity:.6;z-index:5"></div>`:''}
+          ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#222351;opacity:.55;z-index:5"></div>`:''}
         </div>
       </div>`;
 
@@ -2455,13 +2456,13 @@ const Calculator = (() => {
             </div>`;
           }
 
-          html += `<div style="display:flex;align-items:stretch;background:${ai%2===0?'#fff':'#f9fafb'};border-top:1px solid #e5e7eb;min-height:36px">
+          html += `<div style="display:flex;align-items:stretch;background:${ai%2===0?'#fff':'#f8f7f5'};border-top:1px solid #e8e4e1;min-height:36px">
             <div style="width:${LABEL_W}px;flex-shrink:0;padding:0 8px 0 32px;display:flex;align-items:center;gap:7px;overflow:hidden">
               <span class="material-symbols-outlined" style="font-size:14px;color:${def.color}">${def.icon}</span>
-              <span style="font-size:11px;color:#374151;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${act.label}</span>
+              <span style="font-size:11px;color:#222351;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${act.label}</span>
             </div>
             <div style="flex:1;position:relative;display:flex"><div style="position:absolute;inset:0;display:flex">${stripeCols}</div>${bar}
-              ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#ef4444;opacity:.5;z-index:5"></div>`:''}
+              ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#222351;opacity:.45;z-index:5"></div>`:''}
             </div>
           </div>`;
         });
@@ -2472,7 +2473,7 @@ const Calculator = (() => {
     $('calc-gantt-legend').innerHTML = state.wps.map((wp, wi) => {
       const c = WP_COLORS[wi%WP_COLORS.length];
       return `<span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:${c}"></span>${wpLabel(wp,wi)}</span>`;
-    }).join('') + (showToday ? '<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-red-500"></span>Today</span>' : '');
+    }).join('') + (showToday ? '<span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-ink/60"></span>Today</span>' : '');
   }
 
   /* ══════════════════════════════════════════════════════════════
@@ -3066,7 +3067,7 @@ const Calculator = (() => {
             <button type="button" onclick="Calculator._openPrintView()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Abrir el informe en una pestaña nueva">
               <span class="material-symbols-outlined text-[16px]">open_in_new</span>Pestaña nueva
             </button>
-            <button type="button" onclick="Calculator._printIframe()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">
+            <button type="button" onclick="Calculator._printIframe()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold text-white bg-primary hover:bg-violet shadow-md transition-all">
               <span class="material-symbols-outlined text-[16px]">print</span>Imprimir / Guardar PDF
             </button>
           </div>
@@ -3086,15 +3087,15 @@ const Calculator = (() => {
   async function loadPrintView(host) {
     const iframe = host.querySelector('#calc-print-iframe');
     if (!iframe) return;
-    if (!currentProjectId) { iframe.srcdoc = '<div style="font-family:sans-serif;padding:24px;color:#b00">No hay proyecto activo.</div>'; return; }
-    iframe.srcdoc = '<div style="font-family:Poppins,sans-serif;padding:32px;color:#6b6b80">Generando informe…</div>';
+    if (!currentProjectId) { iframe.srcdoc = '<div style="font-family:sans-serif;padding:24px;color:#ba1a1a">No hay proyecto activo.</div>'; return; }
+    iframe.srcdoc = '<div style="font-family:Poppins,sans-serif;padding:32px;color:#55577a">Generando informe…</div>';
     try {
       const res = await API.get(`/budget/projects/${currentProjectId}/eacea-tables`);
       const eacea = res.data || res;
       iframe.srcdoc = buildPrintDocument(eacea, /*autoPrint=*/false);
       host.dataset.loaded = '1';
     } catch (e) {
-      iframe.srcdoc = `<div style="font-family:sans-serif;padding:24px;color:#b00">Error: ${escHtml(e.message || String(e))}</div>`;
+      iframe.srcdoc = `<div style="font-family:sans-serif;padding:24px;color:#ba1a1a">Error: ${escHtml(e.message || String(e))}</div>`;
     }
   }
 
@@ -3487,13 +3488,13 @@ const Calculator = (() => {
 
   const PRINT_CSS = `
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif; color: #1f2233; background: #f4f4f8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html, body { margin: 0; padding: 0; font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif; color: #222351; background: #f8f7f5; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     @page { size: A4 landscape; margin: 12mm 10mm; }
     .page { width: 277mm; min-height: 190mm; padding: 10mm 12mm; background: #fff; margin: 8mm auto; box-shadow: 0 2px 12px rgba(0,0,0,0.08); page-break-after: always; display: flex; flex-direction: column; }
     .page:last-child { page-break-after: auto; }
 
     /* ── Cover page ── */
-    .cover-page { background: linear-gradient(135deg, #3c45a3 0%, #2a1f8a 100%); color: #fff; padding: 12mm 14mm; justify-content: space-between; page-break-inside: avoid; overflow: hidden; }
+    .cover-page { background: linear-gradient(135deg, #3c45a3 0%, #514daa 100%); color: #fff; padding: 12mm 14mm; justify-content: space-between; page-break-inside: avoid; overflow: hidden; }
     .cover-header { display: flex; justify-content: space-between; align-items: center; }
     .cover-logo { font-family: 'Poppins'; font-weight: 900; font-size: 24pt; color: #d6e949; letter-spacing: -2px; line-height: 1; }
     .cover-date { font-size: 8.5pt; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; }
@@ -3520,42 +3521,42 @@ const Calculator = (() => {
     .page-tag { display: inline-flex; align-items: center; justify-content: center; min-width: 14mm; padding: 2mm 3mm; background: #3c45a3; color: #fff; font-weight: 800; font-size: 10pt; border-radius: 2mm; letter-spacing: 0.5px; }
     .formb-tag { background: #d6e949 !important; color: #3c45a3 !important; }
     .page-title { font-size: 16pt; font-weight: 800; line-height: 1.2; color: #3c45a3; }
-    .page-subtitle { font-size: 9pt; color: #6b6b80; margin-top: 1mm; }
+    .page-subtitle { font-size: 9pt; color: #55577a; margin-top: 1mm; }
     .page-header-right { text-align: right; }
-    .kpi-label { font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; color: #6b6b80; }
-    .kpi-value { font-size: 20pt; font-weight: 800; color: #3c45a3; line-height: 1; margin: 1mm 0; }
-    .kpi-sub { font-size: 8pt; color: #6b6b80; }
+    .kpi-label { font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; color: #55577a; }
+    .kpi-value { font-size: 22pt; font-weight: 300; color: #3c45a3; line-height: 1; margin: 1mm 0; }
+    .kpi-sub { font-size: 8pt; color: #55577a; }
 
     .badge-coord { display: inline-block; font-size: 8pt; font-weight: 700; background: rgba(60,69,163, 0.1); color: #3c45a3; padding: 0.5mm 2mm; border-radius: 2mm; margin-left: 2mm; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
     .badge-coord-sm { display: inline-block; font-size: 6.5pt; font-weight: 700; background: rgba(60,69,163, 0.1); color: #3c45a3; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
-    .badge-leader { display: inline-block; font-size: 6.5pt; font-weight: 700; background: #fff3c4; color: #7a5800; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
+    .badge-leader { display: inline-block; font-size: 6.5pt; font-weight: 700; background: #f3f8d2; color: #3c45a3; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
 
-    .section-title { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 2px; color: #6b6b80; font-weight: 700; margin: 5mm 0 2mm; }
+    .section-title { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 2px; color: #55577a; font-weight: 700; margin: 5mm 0 2mm; }
 
     .eacea-table { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
     .eacea-table.compact { font-size: 8pt; }
-    .eacea-table thead { background: #eef0f7; }
-    .eacea-table th { padding: 2mm; text-align: right; font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.3px; color: #4a4a60; white-space: nowrap; }
+    .eacea-table thead { background: #e7e1f3; }
+    .eacea-table th { padding: 2mm; text-align: right; font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.3px; color: #55577a; white-space: nowrap; }
     .eacea-table th:first-child { text-align: left; }
-    .eacea-table td { padding: 1.8mm 2mm; border-bottom: 1px solid #ecedf2; }
+    .eacea-table td { padding: 1.8mm 2mm; border-bottom: 1px solid #e8e4e1; }
     .eacea-table td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: 'JetBrains Mono', Consolas, monospace; }
     .eacea-table td.num.small { font-size: 7.5pt; }
-    .eacea-table td.zero { color: #c5c5d0; }
+    .eacea-table td.zero { color: #b9b5c6; }
     .eacea-table td.leader { background: rgba(214,233,73, 0.15); font-weight: 700; color: #3c45a3; }
     .eacea-table td.total-cell { font-weight: 800; color: #3c45a3; }
     .eacea-table td.partner-cell { font-weight: 600; }
-    .eacea-table tr.totals { background: #f8f8fc; border-top: 2px solid #3c45a3; font-weight: 700; }
+    .eacea-table tr.totals { background: #f0edeb; border-top: 2px solid #3c45a3; font-weight: 700; }
     .eacea-table tr.totals td:first-child { text-transform: uppercase; font-size: 8pt; letter-spacing: 0.5px; color: #3c45a3; }
-    .eacea-table td.empty { text-align: center; padding: 6mm 0; color: #b0b0c0; font-style: italic; }
+    .eacea-table td.empty { text-align: center; padding: 6mm 0; color: #8a8aa3; font-style: italic; }
     .wp-cell { white-space: nowrap; }
     .wp-dot { display: inline-block; width: 2.5mm; height: 2.5mm; border-radius: 50%; vertical-align: middle; margin-right: 1.5mm; }
 
     .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 3mm; }
-    .cat-card { background: #f8f8fc; border-radius: 2mm; padding: 3mm; border-left: 3px solid #3c45a3; }
-    .cat-label { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.8px; color: #6b6b80; font-weight: 600; }
-    .cat-value { font-size: 13pt; font-weight: 800; color: #3c45a3; margin-top: 1mm; font-variant-numeric: tabular-nums; }
+    .cat-card { background: #f0edeb; border-radius: 2mm; padding: 3mm; border-left: 3px solid #3c45a3; }
+    .cat-label { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.8px; color: #55577a; font-weight: 600; }
+    .cat-value { font-size: 14pt; font-weight: 300; color: #3c45a3; margin-top: 1mm; font-variant-numeric: tabular-nums; }
 
-    .page-footer { margin-top: auto; padding-top: 4mm; border-top: 1px solid #ecedf2; font-size: 7.5pt; color: #b0b0c0; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
+    .page-footer { margin-top: auto; padding-top: 4mm; border-top: 1px solid #e8e4e1; font-size: 7.5pt; color: #8a8aa3; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
 
     @media print {
       body { background: #fff; }
@@ -3567,7 +3568,7 @@ const Calculator = (() => {
   `;
 
   async function loadFormBTables(host) {
-    if (!currentProjectId) { host.innerHTML = '<div class="text-sm text-red-600">No hay proyecto activo.</div>'; return; }
+    if (!currentProjectId) { host.innerHTML = '<div class="text-sm text-error">No hay proyecto activo.</div>'; return; }
     host.innerHTML = '<div class="text-sm text-on-surface-variant py-12 text-center"><svg class="animate-spin h-5 w-5 inline text-primary" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Cargando tablas oficiales…</div>';
     try {
       const res = await API.get(`/budget/projects/${currentProjectId}/eacea-tables`);
@@ -3575,7 +3576,7 @@ const Calculator = (() => {
       host.innerHTML = renderFormBTables(data);
       host.dataset.loaded = '1';
     } catch (e) {
-      host.innerHTML = `<div class="text-sm text-red-600 py-6">Error: ${escHtml(e.message || String(e))}</div>`;
+      host.innerHTML = `<div class="text-sm text-error py-6">Error: ${escHtml(e.message || String(e))}</div>`;
     }
   }
 
@@ -3607,21 +3608,21 @@ const Calculator = (() => {
     // Header summary
     const summaryHtml = `
       <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-4">
-        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+        <div class="rounded-2xl p-4 bg-cream">
           <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Total proyecto</div>
-          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${fmtEur(summary.grand_total_amount)} €</div>
+          <div class="font-headline text-2xl font-light tabular-nums text-primary mt-0.5">${fmtEur(summary.grand_total_amount)} €</div>
         </div>
-        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+        <div class="rounded-2xl p-4 bg-cream">
           <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Person-Months totales</div>
-          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${fmtPm(summary.grand_total_pm)} PM</div>
+          <div class="font-headline text-2xl font-light tabular-nums text-primary mt-0.5">${fmtPm(summary.grand_total_pm)} PM</div>
         </div>
-        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+        <div class="rounded-2xl p-4 bg-cream">
           <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Partners</div>
-          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${byPartner.length}</div>
+          <div class="font-headline text-2xl font-light tabular-nums text-primary mt-0.5">${byPartner.length}</div>
         </div>
-        <div class="rounded-xl border border-outline-variant/30 p-3 bg-surface-container-lowest">
+        <div class="rounded-2xl p-4 bg-cream">
           <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Indirect %</div>
-          <div class="font-headline text-xl font-extrabold text-primary mt-0.5">${indirectPct}%</div>
+          <div class="font-headline text-2xl font-light tabular-nums text-primary mt-0.5">${indirectPct}%</div>
         </div>
       </div>
     `;
@@ -3714,7 +3715,7 @@ const Calculator = (() => {
               ${rows.map(r => {
                 const roles = Array.isArray(r.by_role) ? r.by_role.filter(x => Number(x.a_personnel) > 0) : [];
                 const mainRow = `<tr class="border-t border-outline-variant/10">
-                <td class="px-1.5 py-1.5 whitespace-nowrap font-semibold">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-amber-200 text-amber-900 px-1 rounded">leader</span>' : ''}</td>
+                <td class="px-1.5 py-1.5 whitespace-nowrap font-semibold">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-[#f3f8d2] text-primary px-1 rounded">leader</span>' : ''}</td>
                 <td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${(!r.person_months ? 'text-on-surface-variant/40' : (r.is_leader ? 'font-extrabold' : ''))}">${fmtPm(r.person_months)}</td>
                 ${numCell(r.a_personnel)}
                 ${numCell(r.b_subcontracting)}
@@ -3729,7 +3730,7 @@ const Calculator = (() => {
                 <td class="px-1.5 py-1.5 text-right font-mono font-bold">${fmtEur(r.total)}</td>
               </tr>`;
                 const subRows = roles.map(rr => `<tr class="border-t border-outline-variant/5 bg-surface-container-lowest/50 text-on-surface-variant">
-                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${escHtml(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmtEur(rr.rate)} €/día)</span>` : ' <span class="text-[9px] text-amber-700">(sin tarifa)</span>'}</td>
+                <td class="px-1.5 py-0.5 pl-6 whitespace-nowrap text-[10px] italic">└ ${escHtml(rr.role_label || rr.line_item)}${rr.rate > 0 ? ` <span class="text-[9px] text-on-surface-variant/60">(${fmtEur(rr.rate)} €/día)</span>` : ' <span class="text-[9px] font-semibold text-violet">(sin tarifa)</span>'}</td>
                 <td class="px-1.5 py-0.5 text-right font-mono text-[10px]">${fmtPm(rr.person_months)}</td>
                 <td class="px-1.5 py-0.5 text-right font-mono text-[10px]">${fmtEur(rr.a_personnel)}</td>
                 <td colspan="10" class="px-1.5 py-0.5"></td>
@@ -4038,8 +4039,8 @@ const Calculator = (() => {
   function embeddedNavButtons(prevStep, nextStep, nextLabel) {
     const navFn = _navCallback ? 'Intake._calcNav' : 'Calculator._goTo';
     return `<div class="flex justify-between mt-6">
-      ${prevStep !== null ? `<button onclick="${navFn}(${prevStep})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-lg transition-colors">\u2190 Back</button>` : '<span></span>'}
-      ${nextStep !== null ? `<button onclick="${navFn}(${nextStep})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-lg hover:bg-primary-container transition-colors">${nextLabel || 'Next \u2192'}</button>` : ''}
+      ${prevStep !== null ? `<button onclick="${navFn}(${prevStep})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">\u2190 Back</button>` : '<span></span>'}
+      ${nextStep !== null ? `<button onclick="${navFn}(${nextStep})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next \u2192'}</button>` : ''}
     </div>`;
   }
 
@@ -4080,10 +4081,10 @@ const Calculator = (() => {
       </div>
 
       <!-- Summary bar -->
-      <div class="bg-primary text-white rounded-xl p-4 mb-5 flex items-center gap-5 flex-wrap">
+      <div class="bg-primary text-white rounded-3xl p-5 mb-5 flex items-center gap-5 flex-wrap">
         <div class="flex-1 min-w-[120px]">
           <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Total calculated</div>
-          <div class="font-headline text-2xl font-bold" id="calc-live-total">${euros(total)}</div>
+          <div class="font-headline text-3xl font-light tabular-nums" id="calc-live-total">${euros(total)}</div>
         </div>
         <div class="min-w-[90px]">
           <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Target</div>
@@ -4096,7 +4097,7 @@ const Calculator = (() => {
         <div class="flex-[2] min-w-[150px]">
           <div class="text-[10px] opacity-40 mb-1">Budget usage</div>
           <div class="h-3 rounded-full bg-white/20 overflow-hidden">
-            <div class="h-full rounded-full ${isOver ? 'bg-red-500' : 'bg-green-500'} transition-all" id="calc-live-bar" style="width:${usePct}%"></div>
+            <div class="h-full rounded-full ${isOver ? 'bg-red-500' : 'bg-secondary-fixed'} transition-all" id="calc-live-bar" style="width:${usePct}%"></div>
           </div>
         </div>
       </div>

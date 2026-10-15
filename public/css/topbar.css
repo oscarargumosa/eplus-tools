@@ -26,7 +26,8 @@
 .efs-topbar__cta { margin-left: auto; }
 .efs-topbar__login { display: inline-flex; align-items: center; gap: .4rem;
   padding: .45rem 1.1rem; background: #d6e949; color: #3c45a3;
-  border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 13px; transition: transform .15s; }
+  border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 13px; transition: transform .15s;
+  white-space: nowrap; }
 .efs-topbar__login:hover { transform: translateY(-1px); }
 .efs-topbar__toggle { display: none; background: none; border: 0; color: #fff; cursor: pointer;
   padding: .25rem; line-height: 0; }
@@ -37,7 +38,12 @@
 @media (max-width: 1024px) {
   .efs-topbar__inner { gap: .5rem; padding: 0 .75rem; }
   .efs-topbar__logo { height: 19px; }
-  .efs-topbar__toggle { display: inline-flex; align-items: center; }
+  .efs-topbar__toggle { display: inline-flex; align-items: center; flex-shrink: 0; }
+  .efs-topbar__brand { flex-shrink: 0; }
+  /* «Mi cuenta · Nombre» siempre en una línea: si no cabe, se corta con «…»
+     (block en vez de flex para que funcione el text-overflow con el <span> del nombre) */
+  .efs-topbar__cta { min-width: 0; }
+  .efs-topbar__login { display: block; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; }
   .efs-topbar__nav { position: absolute; top: 64px; left: 0; right: 0; flex: none; display: none;
     background: #3c45a3; border-bottom: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
@@ -47,6 +53,11 @@
   .efs-topbar__menu a { display: block; padding: .7rem 0; border-bottom: none; }
   .efs-topbar__menu .is-current > a,
   .efs-topbar__menu .current-menu-item > a { border-bottom: none; color: #d6e949; }
+}
+/* Móvil estrecho: logo y botón un poco más compactos para que «Mi cuenta · Nombre» quepa entero */
+@media (max-width: 480px) {
+  .efs-topbar__logo { height: 16px; }
+  .efs-topbar__login { padding: .45rem .8rem; font-size: 12px; }
 }
 
 /* Las páginas de la web pública no son la SPA: el menú es fijo y hay que

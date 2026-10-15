@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>M0 · Intake — E+ Tools</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
@@ -14,24 +14,24 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
+        /* Mismos tokens que public/index.html (manual de marca EU Funding Studio, oct-2026) */
         "primary":"#3c45a3","primary-container":"#3c45a3",
-        "secondary-fixed":"#c3d63a","secondary-fixed-dim":"#cbce00",
-        "surface":"#f7f9fb","surface-dim":"#d8dadc","surface-bright":"#f7f9fb",
-        "surface-container":"#eceef0","surface-container-low":"#f2f4f6",
-        "surface-container-high":"#e6e8ea","surface-container-lowest":"#ffffff",
-        "on-surface":"#222351","on-surface-variant":"#474551",
-        "outline":"#787682","outline-variant":"#c8c5d2",
+        "ink":"#222351","violet":"#514daa","lavender":"#997fc7","lavender-soft":"#e7e1f3","cream":"#f0edeb",
+        "secondary-fixed":"#d6e949","secondary-fixed-dim":"#c3d63a",
+        "accent-warm":"#997fc7",
+        "surface":"#f8f7f5","surface-dim":"#d9d5d1","surface-bright":"#ffffff",
+        "surface-container":"#f0edeb","surface-container-low":"#f8f7f5",
+        "surface-container-high":"#e8e4e1","surface-container-lowest":"#ffffff",
+        "on-surface":"#222351","on-surface-variant":"#55577a",
+        "outline":"#8a8aa3","outline-variant":"#d6d3dc",
         "error":"#ba1a1a","error-container":"#ffdad6",
         "on-error-container":"#93000a",
-        "surface-tint":"#5855a3",
-        "on-primary-container":"#8481d3",
+        "surface-tint":"#997fc7",
+        "on-primary-container":"#e7e1f3",
       },
       fontFamily: {
-        "headline":["Manrope","sans-serif"],
-        "body":["Manrope","sans-serif"],
-      },
-      borderRadius: {
-        "DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"
+        "headline":["Poppins","sans-serif"],
+        "body":["Poppins","sans-serif"],
       }
     }
   }
@@ -57,10 +57,10 @@ tailwind.config = {
   /* Toast */
   #toast{
     position:fixed;bottom:20px;right:20px;z-index:9999;
-    padding:10px 18px;border-radius:0.25rem;font-size:13px;font-weight:600;
-    box-shadow:0 4px 20px rgba(6,0,62,.15);
+    padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;
+    box-shadow:0 4px 20px rgba(34,35,81,.15);
     transform:translateY(60px);opacity:0;transition:all .25s cubic-bezier(.34,1.56,.64,1);
-    pointer-events:none;font-family:Manrope,sans-serif;
+    pointer-events:none;font-family:Poppins,sans-serif;
   }
   #toast.show{transform:translateY(0);opacity:1}
   #toast.ok{background:#3c45a3;color:#fff}
@@ -69,7 +69,7 @@ tailwind.config = {
   /* Scrollbar sutil */
   ::-webkit-scrollbar{width:6px}
   ::-webkit-scrollbar-track{background:transparent}
-  ::-webkit-scrollbar-thumb{background:#c8c5d2;border-radius:3px}
+  ::-webkit-scrollbar-thumb{background:#d6d3dc;border-radius:3px}
 
   /* Word counter bar */
   .wbar{height:3px;border-radius:2px;overflow:hidden;margin-top:6px}
@@ -77,7 +77,7 @@ tailwind.config = {
 
   /* Select arrow fix */
   select{
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23787682' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%238a8aa3' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
     background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;
   }
 
@@ -104,13 +104,13 @@ tailwind.config = {
   </div>
   <div class="flex-1"></div>
   <div class="flex items-center gap-2">
-    <a href="/lab.html" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-white bg-primary-container hover:bg-primary transition-colors">
+    <a href="/lab.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold text-white bg-primary hover:bg-violet transition-colors">
       <span class="material-symbols-outlined text-base">palette</span> Lab
     </a>
-    <button onclick="triggerLoad()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface-variant border border-outline-variant bg-transparent hover:bg-surface-container-low transition-colors">
+    <button onclick="triggerLoad()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold text-primary border border-primary bg-transparent hover:bg-lavender-soft transition-colors">
       <span class="material-symbols-outlined text-base">folder_open</span> Cargar
     </button>
-    <button onclick="saveIntake()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface-variant border border-outline-variant bg-transparent hover:bg-surface-container-low transition-colors">
+    <button onclick="saveIntake()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold text-primary border border-primary bg-transparent hover:bg-lavender-soft transition-colors">
       <span class="material-symbols-outlined text-base">save</span> Guardar
     </button>
   </div>
@@ -225,7 +225,7 @@ tailwind.config = {
 
     <div class="flex justify-between items-center mt-10 pt-5 border-t border-outline-variant">
       <span></span>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -257,7 +257,7 @@ tailwind.config = {
     <div class="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant mb-4">
       <span>Consorcio</span>
       <div class="flex-1 h-px bg-outline-variant"></div>
-      <button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-primary border border-on-primary-container/30 bg-transparent hover:bg-primary/5 transition-colors normal-case tracking-normal font-body" onclick="openDB()">
+      <button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold text-primary border border-primary bg-transparent hover:bg-primary/5 transition-colors normal-case tracking-normal font-body" onclick="openDB()">
         <span class="material-symbols-outlined text-base">search</span> Base de datos
       </button>
     </div>
@@ -281,7 +281,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -309,7 +309,7 @@ tailwind.config = {
       <textarea id="ctx-prob" rows="7" placeholder="Describe el problema, incluye datos y contexto..." class="w-full px-3 py-2.5 rounded-lg bg-white border border-outline-variant text-on-surface font-body text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all resize-vertical leading-relaxed"></textarea>
       <div class="wbar bg-outline-variant"><div class="wbar-fill" id="wb-prob"></div></div>
       <div class="flex justify-between items-center mt-1.5">
-        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-prob">0 palabras</span>
+        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-prob">0 palabras</span>
         <span class="text-xs text-on-surface-variant">200&ndash;500 palabras</span>
       </div>
     </div>
@@ -327,7 +327,7 @@ tailwind.config = {
       <textarea id="ctx-tgt" rows="5" placeholder="Beneficiarios directos e indirectos..." class="w-full px-3 py-2.5 rounded-lg bg-white border border-outline-variant text-on-surface font-body text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all resize-vertical leading-relaxed"></textarea>
       <div class="wbar bg-outline-variant"><div class="wbar-fill" id="wb-tgt"></div></div>
       <div class="flex justify-between items-center mt-1.5">
-        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-tgt">0 palabras</span>
+        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-tgt">0 palabras</span>
         <span class="text-xs text-on-surface-variant">150&ndash;400 palabras</span>
       </div>
     </div>
@@ -345,7 +345,7 @@ tailwind.config = {
       <textarea id="ctx-app" rows="7" placeholder="Metodolog&iacute;a, valor a&ntilde;adido transnacional, por qu&eacute; necesita socios europeos..." class="w-full px-3 py-2.5 rounded-lg bg-white border border-outline-variant text-on-surface font-body text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all resize-vertical leading-relaxed"></textarea>
       <div class="wbar bg-outline-variant"><div class="wbar-fill" id="wb-app"></div></div>
       <div class="flex justify-between items-center mt-1.5">
-        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-app">0 palabras</span>
+        <span class="text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all" id="wc-app">0 palabras</span>
         <span class="text-xs text-on-surface-variant">200&ndash;500 palabras</span>
       </div>
     </div>
@@ -354,7 +354,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Ver resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -421,7 +421,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Editar
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
         <span class="material-symbols-outlined text-lg">bolt</span> Exportar para Wizard
       </button>
     </div>
@@ -431,7 +431,7 @@ tailwind.config = {
 
 <!-- ═══ PARTNER DB MODAL ═══════════════════════════════════════════ -->
 <div class="fixed inset-0 z-[400] bg-black/30 items-center justify-center hidden" id="db-modal" onclick="bgClose(event)">
-  <div class="bg-white border border-outline-variant rounded-xl w-[min(620px,95vw)] max-h-[80vh] flex flex-col shadow-[0_20px_60px_rgba(6,0,62,0.15)]" style="animation:panelIn .2s ease">
+  <div class="bg-white border border-outline-variant rounded-xl w-[min(620px,95vw)] max-h-[80vh] flex flex-col shadow-[0_20px_60px_rgba(34,35,81,0.15)]" style="animation:panelIn .2s ease">
     <div class="px-5 pt-5 pb-3 border-b border-outline-variant flex items-start justify-between">
       <div>
         <div class="font-headline text-base font-bold text-primary">Base de datos de socios</div>
@@ -451,7 +451,7 @@ tailwind.config = {
     <div class="px-5 py-3 border-t border-outline-variant flex items-center gap-2">
       <span class="text-xs text-on-surface-variant mr-auto" id="db-count"></span>
       <button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="closeDB()">Cancelar</button>
-      <button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-md bg-secondary-fixed text-primary-container text-xs font-bold hover:scale-[1.02] active:scale-95 transition-transform" onclick="confirmDB()">A&ntilde;adir seleccionados</button>
+      <button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-fixed text-primary-container text-xs font-bold hover:scale-[1.02] active:scale-95 transition-transform" onclick="confirmDB()">A&ntilde;adir seleccionados</button>
     </div>
   </div>
 </div>
@@ -759,16 +759,16 @@ function updateWC(c) {
   const f = document.getElementById(c.bar);
   b.textContent = n + ' palabra' + (n !== 1 ? 's' : '');
   if (n === 0) {
-    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all';
-    f.style.width = '0%'; f.style.background = '#c8c5d2';
+    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all';
+    f.style.width = '0%'; f.style.background = '#d6d3dc';
   } else if (n < c.min) {
-    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-yellow-400 bg-yellow-50 text-yellow-700 transition-all';
-    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#eab308';
+    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-secondary-fixed bg-[#f3f8d2] text-primary transition-all';
+    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#c3d63a';
   } else if (n > c.max) {
-    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-error/40 bg-error-container text-on-error-container transition-all';
+    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-error/40 bg-error-container text-on-error-container transition-all';
     f.style.width = '100%'; f.style.background = '#ba1a1a';
   } else {
-    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-700 transition-all';
+    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-primary/30 bg-lavender-soft text-primary transition-all';
     f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
   }
 }

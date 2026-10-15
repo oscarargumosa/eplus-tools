@@ -582,8 +582,8 @@ const Entities = (() => {
             ${o.legal_name && o.legal_name !== o.display_name ? `<p class="text-sm text-on-surface-variant mt-1">${esc(o.legal_name)}</p>` : ''}
             <div class="flex items-center gap-2 mt-3">
               ${tierBadge(o.quality_tier)}
-              ${o.has_erasmus_accreditation ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">workspace_premium</span> Erasmus+ accredited</span>` : ''}
-              ${o.validity_label === 'certified' ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-blue-100 text-blue-700">${esc(o.validity_label)}</span>` : ''}
+              ${o.has_erasmus_accreditation ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-secondary-fixed text-primary inline-flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">workspace_premium</span> Erasmus+ accredited</span>` : ''}
+              ${o.validity_label === 'certified' ? `<span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-lavender-soft text-primary">${esc(o.validity_label)}</span>` : ''}
             </div>
             <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-3 text-[11px]">
               ${idChip('OID', o.oid)}
@@ -709,9 +709,9 @@ const Entities = (() => {
   }
   function regAvail(label, ok) {
     return `<li class="flex items-center gap-2 text-sm">
-      <span class="material-symbols-outlined text-[18px] ${ok ? 'text-emerald-600' : 'text-on-surface-variant/40'}">${ok ? 'check_circle' : 'remove'}</span>
+      <span class="material-symbols-outlined text-[18px] ${ok ? 'text-primary' : 'text-on-surface-variant/40'}">${ok ? 'check_circle' : 'remove'}</span>
       <span class="${ok ? 'text-on-surface' : 'text-on-surface-variant/60'}">${esc(label)}</span>
-      <span class="ml-auto text-[10px] font-bold uppercase tracking-wider ${ok ? 'text-emerald-600' : 'text-on-surface-variant/40'}">${ok ? 'Dato disponible' : 'No disponible'}</span>
+      <span class="ml-auto text-[10px] font-bold uppercase tracking-wider ${ok ? 'text-primary' : 'text-on-surface-variant/40'}">${ok ? 'Dato disponible' : 'No disponible'}</span>
     </li>`;
   }
   function renderRegistrySection(o) {
@@ -722,7 +722,7 @@ const Entities = (() => {
       : `<ul class="space-y-2">
           ${regAvail('Representante legal', !!lr.has_legal_rep)}
           ${regAvail('Persona de contacto', !!lr.has_contact_person)}
-          ${lr.key_staff_count ? `<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-[18px] text-emerald-600">groups</span><span class="text-on-surface">Personal clave</span><span class="ml-auto text-[10px] font-bold uppercase tracking-wider text-emerald-600">${lr.key_staff_count} registrado${lr.key_staff_count === 1 ? '' : 's'}</span></li>` : ''}
+          ${lr.key_staff_count ? `<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-[18px] text-primary">groups</span><span class="text-on-surface">Personal clave</span><span class="ml-auto text-[10px] font-bold uppercase tracking-wider text-primary">${lr.key_staff_count} registrado${lr.key_staff_count === 1 ? '' : 's'}</span></li>` : ''}
         </ul>
         <p class="text-[11px] text-on-surface-variant/60 mt-3">Por privacidad solo indicamos qué datos existen, sin mostrar información personal.</p>`;
 
@@ -730,14 +730,14 @@ const Entities = (() => {
     if (lr.claimed && lr.accreditations && lr.accreditations.length) {
       accBody = `<ul class="space-y-2">${lr.accreditations.map(a => `
         <li class="flex items-start gap-2">
-          <span class="material-symbols-outlined text-[18px] text-emerald-600 mt-0.5">workspace_premium</span>
+          <span class="material-symbols-outlined text-[18px] text-primary mt-0.5">workspace_premium</span>
           <div>
             <div class="text-sm font-semibold text-on-surface">${esc(a.type || 'Acreditación')}</div>
             ${a.reference ? `<div class="text-[12px] font-mono text-on-surface-variant">${esc(a.reference)}</div>` : '<div class="text-[11px] italic text-on-surface-variant/60">código desconocido</div>'}
           </div>
         </li>`).join('')}</ul>`;
     } else if (o.has_erasmus_accreditation) {
-      accBody = `<div class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px]">workspace_premium</span>Acreditación Erasmus+</div>${lr.claimed ? '' : '<p class="text-[11px] text-on-surface-variant/60 mt-2">Código no disponible (entidad sin registro en la plataforma).</p>'}`;
+      accBody = `<div class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed px-3 py-1.5 rounded-full"><span class="material-symbols-outlined text-[18px]">workspace_premium</span>Acreditación Erasmus+</div>${lr.claimed ? '' : '<p class="text-[11px] text-on-surface-variant/60 mt-2">Código no disponible (entidad sin registro en la plataforma).</p>'}`;
     } else {
       accBody = regNoData(lr.claimed ? 'No tiene acreditaciones registradas.' : 'Dato desconocido.');
     }
@@ -778,15 +778,16 @@ const Entities = (() => {
   }
 
   /* ── Estadística de proyectos (mismo cálculo que Mi Organización) ── */
+  // Familias de programa con la paleta de marca (color = relleno sobre azul y blanco; on = icono encima)
   const FICHA_FAMILY_META = {
-    KA1:   { label: 'KA1 · Movilidad',      color: '#2563eb', icon: 'flight_takeoff' },
-    KA2:   { label: 'KA2 · Cooperación',    color: '#7c3aed', icon: 'handshake' },
-    KA3:   { label: 'KA3 · Apoyo político', color: '#0d9488', icon: 'policy' },
-    CB:    { label: 'Capacity Building',    color: '#059669', icon: 'public' },
-    Sport: { label: 'Deporte',              color: '#ea580c', icon: 'sports_soccer' },
-    ESC:   { label: 'Cuerpo Solidaridad',   color: '#e11d48', icon: 'volunteer_activism' },
-    JM:    { label: 'Jean Monnet',          color: '#4f46e5', icon: 'school' },
-    Otros: { label: 'Otros',                color: '#6b7280', icon: 'category' },
+    KA1:   { label: 'KA1 · Movilidad',      color: '#d6e949', on: '#3c45a3', icon: 'flight_takeoff' },
+    KA2:   { label: 'KA2 · Cooperación',    color: '#997fc7', on: '#ffffff', icon: 'handshake' },
+    KA3:   { label: 'KA3 · Apoyo político', color: '#e7e1f3', on: '#3c45a3', icon: 'policy' },
+    CB:    { label: 'Capacity Building',    color: '#222351', on: '#ffffff', icon: 'public' },
+    Sport: { label: 'Deporte',              color: '#ffffff', on: '#3c45a3', icon: 'sports_soccer' },
+    ESC:   { label: 'Cuerpo Solidaridad',   color: '#514daa', on: '#ffffff', icon: 'volunteer_activism' },
+    JM:    { label: 'Jean Monnet',          color: '#8a8aa3', on: '#ffffff', icon: 'school' },
+    Otros: { label: 'Otros',                color: '#d6d3dc', on: '#222351', icon: 'category' },
   };
   const FICHA_FAMILY_ORDER = ['KA1', 'KA2', 'KA3', 'CB', 'Sport', 'ESC', 'JM', 'Otros'];
 
@@ -836,41 +837,41 @@ const Entities = (() => {
       return `
         <div class="bg-white rounded-xl border border-outline-variant/30 p-3 flex flex-col">
           <div class="flex items-center gap-1.5 mb-1.5">
-            <span class="material-symbols-outlined text-[18px]" style="color:${m.color}">${m.icon}</span>
+            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${m.color};color:${m.on};box-shadow:inset 0 0 0 1px rgba(34,35,81,.12)">${m.icon}</span>
             <span class="text-[11px] font-bold text-on-surface leading-tight">${esc(m.label)}</span>
           </div>
           <div class="flex items-baseline gap-1">
-            <span class="text-2xl font-extrabold text-primary">${f.count}</span>
+            <span class="text-3xl font-light text-primary leading-none">${f.count}</span>
             <span class="text-[11px] font-semibold text-on-surface-variant">proyecto${f.count === 1 ? '' : 's'}</span>
           </div>
           <div class="text-[12px] font-semibold ${mny ? 'text-on-surface-variant' : 'text-on-surface-variant/40'}">${mny || '—'}</div>
-          <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full" style="width:${barPct}%;background:${m.color}"></div></div>
+          <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full" style="width:${barPct}%;background:${m.color};box-shadow:inset 0 0 0 1px rgba(34,35,81,.18)"></div></div>
         </div>`;
     }).join('');
 
     return `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#3c45a3,#2d1f8f)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#514daa,#3c45a3 55%,#222351)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Experiencia Erasmus+</div>
-            <div class="text-3xl font-extrabold leading-none mt-1">${totalCount} <span class="text-base font-semibold text-white/70">proyectos</span></div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Experiencia Erasmus+</div>
+            <div class="text-4xl font-light leading-none mt-1">${totalCount} <span class="text-base font-semibold text-white/70">proyectos</span></div>
           </div>
           <div class="text-right">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Financiación total movilizada</div>
-            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#d6e949">${money(totalAmount) || '0 €'}</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Financiación total movilizada</div>
+            <div class="text-4xl font-light leading-none mt-1" style="color:#d6e949">${money(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador</div>
-            <div class="text-xl font-extrabold leading-tight mt-1">${money(coordAmount) || '0 €'}</div>
-            <div class="text-[11px] text-white/60">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft"><span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador</div>
+            <div class="text-xl font-light leading-tight mt-1">${money(coordAmount) || '0 €'}</div>
+            <div class="text-[11px] text-lavender-soft">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
           </div>
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px] text-white/80">handshake</span> Fondos como socio en consorcios</div>
-            <div class="text-xl font-extrabold leading-tight mt-1">${money(partnerAmount) || '0 €'}</div>
-            <div class="text-[11px] text-white/60">${partnerCount} proyecto${partnerCount === 1 ? '' : 's'} como socio</div>
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft"><span class="material-symbols-outlined text-[15px] text-white/80">handshake</span> Fondos como socio en consorcios</div>
+            <div class="text-xl font-light leading-tight mt-1">${money(partnerAmount) || '0 €'}</div>
+            <div class="text-[11px] text-lavender-soft">${partnerCount} proyecto${partnerCount === 1 ? '' : 's'} como socio</div>
           </div>
         </div>
       </div>
@@ -923,7 +924,7 @@ const Entities = (() => {
     const role = p.role || null;
     const action = p.action_type || null;
     const isGood = p.is_good_practice;
-    const roleBg = role === 'coordinator' ? 'bg-secondary-fixed text-primary' : 'bg-accent-warm/40 text-primary';
+    const roleBg = role === 'coordinator' ? 'bg-secondary-fixed text-primary' : 'bg-lavender-soft text-primary';
     return `
       <li class="px-4 py-3 hover:bg-surface-container/40 transition-colors">
         <div class="flex items-start gap-3">
@@ -932,7 +933,7 @@ const Entities = (() => {
             <div class="flex flex-wrap items-center gap-1.5 mt-1.5 text-[11px]">
               ${role ? `<span class="${roleBg} px-1.5 py-0.5 rounded font-bold uppercase">${esc(role)}</span>` : ''}
               ${action ? `<span class="text-on-surface-variant">${esc(action)}</span>` : ''}
-              ${isGood ? `<span class="text-amber-700 font-bold uppercase">★ Good practice</span>` : ''}
+              ${isGood ? `<span class="text-violet font-bold uppercase">★ Good practice</span>` : ''}
             </div>
           </div>
           <div class="text-right shrink-0">
@@ -1034,14 +1035,14 @@ const Entities = (() => {
     const chartOpts = {
       chart: { type: 'radialBar', height: 160, sparkline: { enabled: true } },
       series: [pct],
-      colors: ['#d6e949'],
+      colors: ['#3c45a3'],
       plotOptions: {
         radialBar: {
           hollow: { size: '62%' },
-          track: { background: '#eeeeee', strokeWidth: '90%' },
+          track: { background: '#e7e1f3', strokeWidth: '90%' },
           dataLabels: {
-            name: { show: true, color: '#474551', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
-            value: { show: true, color: '#3c45a3', fontSize: isMax10 ? '22px' : '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
+            name: { show: true, color: '#55577a', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
+            value: { show: true, color: '#3c45a3', fontSize: isMax10 ? '24px' : '28px', fontWeight: 300, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
           },
         },
       },
@@ -1176,7 +1177,7 @@ const Entities = (() => {
               .map(s => `<button type="button" class="sm-example px-2 py-1 rounded-full bg-surface-container hover:bg-secondary-fixed/40 text-on-surface-variant">${s}</button>`).join('')}
           </div>
           <div class="flex items-center justify-end gap-2 mt-3">
-            <button type="button" class="sm-go inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim px-4 py-2 rounded-lg">
+            <button type="button" class="sm-go inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim px-4 py-2 rounded-full">
               <span class="material-symbols-outlined text-[18px]">search</span>
               Buscar con IA
             </button>
@@ -1188,7 +1189,7 @@ const Entities = (() => {
         </div>
 
         <div class="sm-cta hidden px-5 py-3 border-t border-outline-variant/30 flex items-center justify-end gap-2 bg-surface-container-low/40">
-          <button type="button" class="sm-save inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim px-4 py-2 rounded-lg">
+          <button type="button" class="sm-save inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-secondary-fixed hover:bg-secondary-fixed-dim px-4 py-2 rounded-full">
             <span class="material-symbols-outlined text-[18px]">favorite</span>
             Guardar todos en nueva shortlist
           </button>

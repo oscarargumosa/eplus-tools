@@ -1,73 +1,66 @@
-# E+ Tools — Design Rules
+# EU Funding Studio — Reglas de diseño
 
-> Alineado con `designer-projects/Presentation Templates/DESIGN_GUIDELINES.md` (visión de Ana — responsable de imagen y formato de EU Funding School). Single source of truth de tokens: `web/brand/tokens.css`.
+> Manual de marca de EU Funding Studio (oct-2026). Tokens: `web/brand/tokens.css`, reflejados a mano en el
+> `tailwind.config` de `public/index.html`. Sistema completo en `docs/DESIGN.md`.
+> No confundir con EU Funding School (`web/wordpress`, `web/presentation`): otra marca, otra paleta.
 
-## Color Palette
+## Paleta
 
-| Token | Hex | Usage |
+| Token Tailwind | Hex | Uso |
 |---|---|---|
-| Primary (brand blue) | `#1b1464` | Títulos, texto principal, botones primarios, sidebar, nav activo, iconografía |
-| Accent (lime yellow) | `#fbff12` | Texto de botones primarios, highlights, subrayados, flechas, devices de marca |
-| Accent warm (lavender) | `#c7afdf` | Cards secundarias, acentos suaves, empty states |
-| Surface | `#f8f8f8` | Fondo app (gris casi blanco) |
-| Surface container | `#eeeeee` | Cards neutras, separadores suaves |
-| Line / outline | `#cccccc` | Bordes, pills inactivas, separadores |
-| Body text | `#191c1e` | Cuerpo |
-| Muted text | `#474551` | Texto secundario, placeholders |
-| Error | `#ba1a1a` | Danger / delete |
+| `ink` / `on-surface` | `#222351` | Texto largo, fondos muy oscuros |
+| `primary` | `#3C45A3` | Color principal: títulos, barra superior y lateral, botones primarios |
+| `violet` | `#514DAA` | Hover/activo del azul, degradados |
+| `lavender` | `#997FC7` | Acento de apoyo (bloques de datos, iconos decorativos). **No es color de texto** |
+| `lavender-soft` | `#E7E1F3` | Chips, avisos, estados vacíos; texto secundario sobre azul |
+| `secondary-fixed` (lima) | `#D6E949` | CTA, resaltados, la pieza protagonista |
+| `secondary-fixed-dim` | `#C3D63A` | Hover/active de lo lima |
+| `cream` / `surface-container` | `#F0EDEB` | Tarjetas y paneles sobre blanco |
+| `surface` | `#F8F7F5` | Fondo general de la app |
+| `on-surface-variant` | `#55577A` | Texto secundario |
+| `outline` / `outline-variant` | `#8A8AA3` / `#D6D3DC` | Contornos / líneas suaves |
+| `error` | `#BA1A1A` | Error y peligro |
 
-## Typography
+Aviso suave (no peligro): fondo `#F3F8D2`, borde `#D6E949`, texto azul o tinta.
 
-**Familia única: Poppins** (cargada desde Google Fonts). Toda la jerarquía con distintos pesos:
+## Tipografía
 
-- H1 (portada / hero): Poppins Black (900) o ExtraBold (800), MAYÚSCULAS si es portada
-- H2 (sección): Poppins Bold (700), title case
-- H3 y subtítulos decorativos: Poppins Bold (700) — en lavanda `#c7afdf` si es decorativo
-- Cuerpo: Poppins Medium (500) por defecto, Regular (400) para texto denso
-- Micro-texto (nav, pills, URL): Poppins Medium (500), tamaño pequeño
+Solo **Poppins** (300–700 e itálicas).
+- Titulares: SemiBold/Bold (600/700) en azul.
+- Remate de titular en *itálica* y, a veces, marcador lima detrás de una palabra: solo en portadas y páginas públicas.
+- Cifras grandes (KPIs, contadores, fechas): Light (300) en azul.
+- Cuerpo: Medium (500); texto denso Regular (400).
 
-No mezclar con otras familias.
+## Botones
 
-## Button Styles
-
-### Primary action buttons (Save, Add, Configure, Create)
-- Background: `#1b1464`
-- Text: `#fbff12`
-- Hover: `#1b1464/80` (opacity)
-- Radius: `rounded-xl` para principales, `rounded-lg` para inline
-
-> **Excepción deliberada a Ana:** sus guidelines prohíben amarillo como color de texto en presentaciones (baja legibilidad en párrafos). En botones interactivos del tool la legibilidad está garantizada por el contraste y el contexto de interacción — mantenemos "amarillo sobre azul" como firma del tool.
-
-### Secondary / Cancel buttons
-- Background: transparent
-- Border: `border-outline-variant/30`
-- Text: `text-on-surface-variant`
-- Hover: `hover:bg-[#f8f8f8]`
-
-### Danger / Delete buttons
-- Default state: `text-red-400 border border-red-200`
-- Hover: `hover:bg-red-50 hover:text-red-600`
-- Delete confirmation modal: red header, requires typing "DELETE"
-
-## Badge / Chip Styles
-
-| Badge | Style |
+| Tipo | Estilo |
 |---|---|
-| Active | `bg-[#1b1464]/10 text-[#1b1464]` |
-| Inactive | `bg-[#cccccc]/40 text-[#474551]` |
-| EU Member | `bg-[#1b1464]/10 text-[#1b1464]` |
-| Associated country | `bg-[#c7afdf]/30 text-[#1b1464]` |
-| Third country | `bg-[#cccccc]/40 text-[#474551]` |
-| MANDATORY | `bg-[#1b1464]/15 text-[#1b1464]` |
-| Optional | `bg-[#cccccc]/40 text-[#474551]` |
+| CTA principal | `rounded-full` · fondo lima `#D6E949` · texto azul `#3C45A3` · hover `#C3D63A` |
+| Primario de formulario (Guardar, Crear) | `rounded-full` o `rounded-xl` · fondo azul · texto blanco · hover `#514DAA` |
+| Secundario / Cancelar | transparente · borde azul · texto azul · hover `bg-lavender-soft` |
+| Peligro / Borrar | texto y borde rojo `#BA1A1A`; relleno rojo solo en hover o en el modal de confirmación |
 
-## General Rules
+## Contraste y color
 
-- **Sin verde, ámbar ni naranja** en la UI. Todo en azul `#1b1464` + amarillo `#fbff12` + lavanda `#c7afdf` + neutros.
-- Excepción: delete/danger usa rojo solo en hover o modales de confirmación.
-- Cards: border-radius generoso (`rounded-xl` o `rounded-2xl`). Nunca esquinas duras.
-- Toast notifications: OK = `#1b1464` fondo con texto blanco; Error = `#ba1a1a`.
-- Animaciones: sutiles, `0.2s–0.3s ease`.
-- Scrollbar: thin (6px), thumb `#cccccc`.
-- Un solo elemento protagonista por pantalla/card (el que lleva el amarillo).
-- Amarillo como highlight/fondo/device, no como texto en párrafos largos.
+- Mínimo WCAG AA: 4,5:1 en texto normal.
+- **Nunca texto lima sobre blanco o crema** (1,3:1). La lima es fondo, subrayado o marcador.
+- Lavanda `#997FC7` no sirve para texto pequeño sobre blanco (≈3:1): usa azul, violeta o tinta.
+- Sobre azul: texto blanco, lima o `#E7E1F3`; nunca lavanda `#997FC7`.
+- Nada de verdes, turquesas, ámbares, naranjas ni azules/índigos de Tailwind decorativos.
+- Excepción semántica: rojo para error/peligro y verde para «correcto/aprobado» (p. ej. corrección de tests).
+  Un estado «activo/disponible» va en lima o azul.
+- Un solo elemento protagonista en lima por pantalla o tarjeta.
+
+## Formas
+
+- Tarjetas crema sobre blanco (o blancas sobre fondo `surface`), radios 16–24px (`rounded-2xl`/`rounded-3xl`).
+- Sobre fondo azul: tarjetas crema o blancas.
+- Sombras teñidas de azul (`rgba(60,69,163,.06–.10)`), nunca negras.
+- Animaciones sutiles, 0,2–0,3 s.
+
+## Logos (`public/img/marca/`)
+
+- `logo-horizontal-{azul,blanco,tinta,negro}.svg` (proporción ≈ 9,34:1): azul sobre claro, blanco sobre azul.
+- `icono-{azul,blanco,lima,tinta,negro}.svg`: el lápiz/«E», device de marca (lima sobre azul o azul sobre lima).
+- `favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`.
+- `logo-horizontal-blanco-correo.png` (448×48, fondo azul): cabecera de los correos (los SVG no se ven en Gmail/Outlook).

@@ -101,7 +101,7 @@ const Documents = (() => {
     }
 
     container.innerHTML = docs.map(doc => `
-      <div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl border border-outline-variant/20 hover:border-outline-variant/40 transition-colors" data-doc-id="${doc.id}">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-2xl border border-outline-variant/30 hover:border-primary/40 transition-colors" data-doc-id="${doc.id}">
         <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
           <span class="material-symbols-outlined text-primary text-[20px]">${fileIcon(doc.file_type)}</span>
         </div>
@@ -110,7 +110,7 @@ const Documents = (() => {
           <p class="text-xs text-on-surface-variant mt-0.5">
             <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium ${docTypeBadgeClass(doc.doc_type)}">${docTypeLabel(doc.doc_type)}</span>
             · ${formatFileSize(doc.file_size_bytes)} · ${formatDate(doc.created_at)}
-            ${doc.status && doc.status !== 'active' ? ` · <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium ${doc.status === 'processing' ? 'bg-warning/10 text-warning' : 'bg-error/10 text-error'}">${doc.status}</span>` : ''}
+            ${doc.status && doc.status !== 'active' ? ` · <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium ${doc.status === 'processing' ? 'bg-lavender-soft text-violet' : 'bg-error/10 text-error'}">${doc.status}</span>` : ''}
             ${doc.tags?.length ? ' · ' + doc.tags.map(t => `<span class="inline-block px-1.5 py-0.5 rounded bg-primary/8 text-primary text-[10px] font-medium">${esc(t)}</span>`).join(' ') : ''}
           </p>
           ${doc.description ? `<p class="text-xs text-on-surface-variant mt-1 truncate">${esc(doc.description)}</p>` : ''}
@@ -197,12 +197,13 @@ const Documents = (() => {
 
   function docTypeBadgeClass(type) {
     const classes = {
-      support: 'bg-primary/8 text-primary',
-      project: 'bg-tertiary/10 text-tertiary',
-      evaluation: 'bg-warning/10 text-warning',
-      call: 'bg-secondary/10 text-secondary',
+      // tertiary/warning/secondary no existen en la config de Tailwind: se pasan a la paleta
+      support: 'bg-primary/10 text-primary',
+      project: 'bg-lavender-soft text-violet',
+      evaluation: 'bg-secondary-fixed/70 text-primary',
+      call: 'bg-cream text-ink',
     };
-    return classes[type] || 'bg-primary/8 text-primary';
+    return classes[type] || 'bg-primary/10 text-primary';
   }
 
   function esc(str) {

@@ -129,7 +129,7 @@ const Organizations = (() => {
               <div class="shrink-0 text-right text-[10px] font-mono leading-tight">
                 ${r.oid ? `<div class="text-primary">${esc(r.oid)}</div>` : ''}
                 ${r.pic ? `<div class="text-on-surface-variant">PIC ${esc(r.pic)}</div>` : ''}
-                ${r.validity_label ? `<div class="${r.validity_label === 'certified' ? 'text-green-600' : 'text-amber-600'} uppercase mt-0.5">${esc(r.validity_label)}</div>` : ''}
+                ${r.validity_label ? `<div class="${r.validity_label === 'certified' ? 'text-primary font-bold' : 'text-on-surface-variant'} uppercase mt-0.5">${esc(r.validity_label)}</div>` : ''}
               </div>
             </div>
           </button>
@@ -426,7 +426,7 @@ const Organizations = (() => {
       const hint = /404|not found/i.test(autoError)
         ? 'El servidor todavía no tiene el endpoint /v1/entities/:oid/projects. Reinicia node server.js para que cargue las rutas nuevas.'
         : `Detalle: ${autoError}`;
-      errorBanner = `<tr><td colspan="7" class="px-4 py-3 bg-amber-50 border-b border-amber-200 text-sm text-amber-900">
+      errorBanner = `<tr><td colspan="7" class="px-4 py-3 bg-[#f3f8d2] border-b border-[#d6e949] text-sm text-ink">
         <span class="material-symbols-outlined text-[16px] align-middle mr-1">warning</span>
         No se pudo cargar el directorio Erasmus+ para OID ${esc(myOrg.oid)}. ${esc(hint)}
       </td></tr>`;
@@ -449,8 +449,8 @@ const Organizations = (() => {
   function renderUnifiedProjectRow(p, idx) {
     const role    = p.role || '';
     const roleClr = role === 'coordinator' ? 'bg-secondary-fixed text-primary'
-                  : role === 'partner'     ? 'bg-purple-100 text-purple-800'
-                  :                          'bg-gray-100 text-gray-700';
+                  : role === 'partner'     ? 'bg-lavender-soft text-violet'
+                  :                          'bg-surface-container text-on-surface-variant';
     const isManual = p.kind === 'manual';
     const title    = p.title || '(sin título)';
     const grant    = isManual ? null : fmtMoney(p.raw && p.raw.eu_grant_eur);
@@ -521,14 +521,14 @@ const Organizations = (() => {
      a partir del código de acción del contrato (KA153, KA220…) y,
      como fallback, del action_type textual del directorio. */
   const FAMILY_META = {
-    KA1:   { label: 'KA1 · Movilidad',     color: '#2563eb', icon: 'flight_takeoff' },
-    KA2:   { label: 'KA2 · Cooperación',   color: '#7c3aed', icon: 'handshake' },
-    KA3:   { label: 'KA3 · Apoyo político',color: '#0d9488', icon: 'policy' },
-    CB:    { label: 'Capacity Building',   color: '#059669', icon: 'public' },
-    Sport: { label: 'Deporte',             color: '#ea580c', icon: 'sports_soccer' },
-    ESC:   { label: 'Cuerpo Solidaridad',  color: '#e11d48', icon: 'volunteer_activism' },
-    JM:    { label: 'Jean Monnet',         color: '#4f46e5', icon: 'school' },
-    Otros: { label: 'Otros',               color: '#6b7280', icon: 'category' },
+    KA1:   { label: 'KA1 · Movilidad',     color: '#d6e949', on: '#3c45a3', icon: 'flight_takeoff' },
+    KA2:   { label: 'KA2 · Cooperación',   color: '#997fc7', on: '#ffffff', icon: 'handshake' },
+    KA3:   { label: 'KA3 · Apoyo político',color: '#e7e1f3', on: '#3c45a3', icon: 'policy' },
+    CB:    { label: 'Capacity Building',   color: '#222351', on: '#ffffff', icon: 'public' },
+    Sport: { label: 'Deporte',             color: '#ffffff', on: '#3c45a3', icon: 'sports_soccer' },
+    ESC:   { label: 'Cuerpo Solidaridad',  color: '#514daa', on: '#ffffff', icon: 'volunteer_activism' },
+    JM:    { label: 'Jean Monnet',         color: '#8a8aa3', on: '#ffffff', icon: 'school' },
+    Otros: { label: 'Otros',               color: '#d6d3dc', on: '#222351', icon: 'category' },
   };
   const FAMILY_ORDER = ['KA1', 'KA2', 'KA3', 'CB', 'Sport', 'ESC', 'JM', 'Otros'];
 
@@ -589,47 +589,47 @@ const Organizations = (() => {
       return `
         <div class="bg-white rounded-xl border border-outline-variant/30 p-3 flex flex-col">
           <div class="flex items-center gap-1.5 mb-1.5">
-            <span class="material-symbols-outlined text-[18px]" style="color:${meta.color}">${meta.icon}</span>
+            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${meta.color};color:${meta.on};box-shadow:inset 0 0 0 1px rgba(34,35,81,.12)">${meta.icon}</span>
             <span class="text-[11px] font-bold text-on-surface leading-tight">${esc(meta.label)}</span>
           </div>
           <div class="flex items-baseline gap-1">
-            <span class="text-2xl font-extrabold text-primary">${f.count}</span>
+            <span class="text-3xl font-light text-primary leading-none">${f.count}</span>
             <span class="text-[11px] font-semibold text-on-surface-variant">proyecto${f.count === 1 ? '' : 's'}</span>
           </div>
           <div class="text-[12px] font-semibold ${money ? 'text-on-surface-variant' : 'text-on-surface-variant/40'}">${money || '—'}</div>
           <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden">
-            <div class="h-full rounded-full" style="width:${barPct}%;background:${meta.color}"></div>
+            <div class="h-full rounded-full" style="width:${barPct}%;background:${meta.color};box-shadow:inset 0 0 0 1px rgba(34,35,81,.18)"></div>
           </div>
         </div>`;
     }).join('');
 
     host.innerHTML = `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#3c45a3,#2d1f8f)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#514daa,#3c45a3 55%,#222351)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Experiencia Erasmus+</div>
-            <div class="text-3xl font-extrabold leading-none mt-1">${totalCount} <span class="text-base font-semibold text-white/70">proyectos</span></div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Experiencia Erasmus+</div>
+            <div class="text-4xl font-light leading-none mt-1">${totalCount} <span class="text-base font-semibold text-white/70">proyectos</span></div>
           </div>
           <div class="text-right">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Financiación total movilizada</div>
-            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#d6e949">${fmtMoney(totalAmount) || '0 €'}</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Financiación total movilizada</div>
+            <div class="text-4xl font-light leading-none mt-1" style="color:#d6e949">${fmtMoney(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55">
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft">
               <span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador
             </div>
-            <div class="text-xl font-extrabold leading-tight mt-1">${fmtMoney(coordAmount) || '0 €'}</div>
-            <div class="text-[11px] text-white/60">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
+            <div class="text-xl font-light leading-tight mt-1">${fmtMoney(coordAmount) || '0 €'}</div>
+            <div class="text-[11px] text-lavender-soft">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
           </div>
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55">
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft">
               <span class="material-symbols-outlined text-[15px] text-white/80">handshake</span> Fondos como socio en consorcios
             </div>
-            <div class="text-xl font-extrabold leading-tight mt-1">${fmtMoney(partnerAmount) || '0 €'}</div>
-            <div class="text-[11px] text-white/60">${partnerCount} proyecto${partnerCount === 1 ? '' : 's'} como socio</div>
+            <div class="text-xl font-light leading-tight mt-1">${fmtMoney(partnerAmount) || '0 €'}</div>
+            <div class="text-[11px] text-lavender-soft">${partnerCount} proyecto${partnerCount === 1 ? '' : 's'} como socio</div>
           </div>
         </div>
       </div>
@@ -642,8 +642,8 @@ const Organizations = (() => {
       const grant = fmtMoney(r.eu_grant_eur);
       const role  = r.role || '';
       const roleClr = role === 'coordinator' ? 'bg-secondary-fixed text-primary'
-                    : role === 'partner'     ? 'bg-purple-100 text-purple-800'
-                    :                          'bg-gray-100 text-gray-700';
+                    : role === 'partner'     ? 'bg-lavender-soft text-violet'
+                    :                          'bg-surface-container text-on-surface-variant';
       const cellRow = (label, value) => (value == null || value === '') ? '' :
         `<div class="flex flex-col gap-0.5"><span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">${esc(label)}</span><span class="text-sm text-on-surface">${esc(value)}</span></div>`;
       return `
@@ -651,8 +651,8 @@ const Organizations = (() => {
           <div>
             <div class="flex items-center gap-2 flex-wrap mb-2">
               ${role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${roleClr}">${esc(role)}</span>` : ''}
-              ${r.is_good_practice ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">★ Good practice</span>` : ''}
-              ${r.programme ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">${esc(r.programme)}</span>` : ''}
+              ${r.is_good_practice ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#f3f8d2] text-ink border border-[#d6e949]">★ Good practice</span>` : ''}
+              ${r.programme ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-lavender-soft text-primary border border-lavender/40">${esc(r.programme)}</span>` : ''}
             </div>
             <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${esc(r.project_title || '')}</h2>
             ${r.project_identifier ? `<div class="text-[12px] font-mono text-on-surface-variant mt-1">${esc(r.project_identifier)}</div>` : ''}
@@ -675,7 +675,7 @@ const Organizations = (() => {
           ${r.project_identifier ? `<div class="pt-3 border-t border-outline-variant/20">
             <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/${encodeURIComponent(r.project_identifier)}"
                target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#514daa] transition-colors">
               <span>Ver detalle completo en Erasmus+ Project Results Platform</span>
               <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
             </a>
@@ -691,7 +691,7 @@ const Organizations = (() => {
         <div>
           <div class="flex items-center gap-2 flex-wrap mb-2">
             <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-surface-container border border-outline-variant/30 text-on-surface-variant">Manual</span>
-            ${r.role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-100 text-gray-700">${esc(r.role)}</span>` : ''}
+            ${r.role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">${esc(r.role)}</span>` : ''}
           </div>
           <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${esc(r.title || '(sin título)')}</h2>
           ${r.project_id_or_contract ? `<div class="text-[12px] font-mono text-on-surface-variant mt-1">${esc(r.project_id_or_contract)}</div>` : ''}
@@ -772,7 +772,7 @@ const Organizations = (() => {
     }).addTo(_orgMap);
 
     if (lat0 != null && lng0 != null) {
-      _orgMarker = L.marker([lat0, lng0], { draggable: true }).addTo(_orgMap);
+      _orgMarker = L.marker([lat0, lng0], { draggable: true, icon: brandPin() }).addTo(_orgMap);
       _orgCoords = { lat: lat0, lng: lng0, source: myOrg.geocoded_source || 'manual_pin' };
       updateCoordsLabel();
       _orgMarker.on('dragend', onMarkerMove);
@@ -782,12 +782,24 @@ const Organizations = (() => {
     }
   }
 
+  // Chincheta con la paleta de marca (azul con centro lima) en lugar del azul por defecto de Leaflet
+  function brandPin() {
+    return L.divIcon({
+      className: '',
+      iconSize: [30, 40],
+      iconAnchor: [15, 39],
+      html: '<svg width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">'
+        + '<path d="M15 1C7.3 1 1 7.2 1 14.9 1 25.3 15 39 15 39s14-13.7 14-24.1C29 7.2 22.7 1 15 1z" fill="#3c45a3" stroke="#222351" stroke-width="1.5"/>'
+        + '<circle cx="15" cy="15" r="5.5" fill="#d6e949"/></svg>',
+    });
+  }
+
   function placeMarker(lat, lng, source) {
     if (!_orgMap) return;
     if (_orgMarker) {
       _orgMarker.setLatLng([lat, lng]);
     } else {
-      _orgMarker = L.marker([lat, lng], { draggable: true }).addTo(_orgMap);
+      _orgMarker = L.marker([lat, lng], { draggable: true, icon: brandPin() }).addTo(_orgMap);
       _orgMarker.on('dragend', onMarkerMove);
     }
     _orgCoords = { lat, lng, source: source || 'manual_pin' };
@@ -961,8 +973,8 @@ const Organizations = (() => {
           `).join('')}
         </div>
         <div class="flex justify-end gap-2">
-          <button class="edit-cancel px-4 py-2 rounded-lg text-sm font-semibold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors">Cancelar</button>
-          <button class="edit-save px-4 py-2 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary/90 transition-colors">Guardar</button>
+          <button class="edit-cancel px-4 py-2 text-sm font-semibold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors rounded-full">Cancelar</button>
+          <button class="edit-save px-5 py-2 rounded-full text-sm font-semibold text-white bg-primary hover:bg-violet transition-colors">Guardar</button>
         </div>
       </td>
     `;
@@ -1010,7 +1022,7 @@ const Organizations = (() => {
     const def = defaults[type] || {};
 
     const formTr = document.createElement('tr');
-    formTr.className = 'child-add-row bg-green-50/50 border-t-2 border-primary/20';
+    formTr.className = 'child-add-row bg-lavender-soft/50 border-t-2 border-primary/20';
     formTr.innerHTML = `
       <td colspan="${fields.length + 1}" class="px-3 py-4">
         <div class="text-[11px] font-bold uppercase tracking-widest text-primary mb-3">Nuevo registro</div>
@@ -1023,8 +1035,8 @@ const Organizations = (() => {
           `).join('')}
         </div>
         <div class="flex justify-end gap-2">
-          <button class="add-cancel px-4 py-2 rounded-lg text-sm font-semibold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors">Cancelar</button>
-          <button class="add-save px-4 py-2 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary/90 transition-colors">Añadir</button>
+          <button class="add-cancel px-4 py-2 text-sm font-semibold text-on-surface-variant border border-outline-variant hover:bg-surface-container-low transition-colors rounded-full">Cancelar</button>
+          <button class="add-save px-5 py-2 rounded-full text-sm font-semibold text-white bg-primary hover:bg-violet transition-colors">Añadir</button>
         </div>
       </td>
     `;
@@ -1125,9 +1137,9 @@ const Organizations = (() => {
             ${o.eu_projects_count > 0 ? `<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">workspace_premium</span>${o.eu_projects_count} proyecto${o.eu_projects_count > 1 ? 's' : ''} EU</div>` : ''}
           </div>
           <div class="flex flex-wrap gap-1.5 mt-3">
-            ${o.is_non_profit ? '<span class="text-[10px] font-semibold uppercase tracking-wider bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Non-profit</span>' : ''}
-            ${o.is_public_body ? '<span class="text-[10px] font-semibold uppercase tracking-wider bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Public body</span>' : ''}
-            ${o.expertise_areas ? o.expertise_areas.split(',').slice(0,3).map(a => `<span class="text-[10px] font-medium bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">${esc(a.trim())}</span>`).join('') : ''}
+            ${o.is_non_profit ? '<span class="text-[10px] font-semibold uppercase tracking-wider bg-secondary-fixed text-primary px-2 py-0.5 rounded-full">Non-profit</span>' : ''}
+            ${o.is_public_body ? '<span class="text-[10px] font-semibold uppercase tracking-wider bg-lavender-soft text-primary px-2 py-0.5 rounded-full">Public body</span>' : ''}
+            ${o.expertise_areas ? o.expertise_areas.split(',').slice(0,3).map(a => `<span class="text-[10px] font-medium bg-cream text-ink px-2 py-0.5 rounded-full">${esc(a.trim())}</span>`).join('') : ''}
           </div>
         </div>
       `).join('');

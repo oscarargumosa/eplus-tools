@@ -22,7 +22,7 @@ const App = (() => {
     });
     window.google.accounts.id.renderButton(
       document.querySelector('.g_id_signin'),
-      { type: 'standard', shape: 'rectangular', theme: 'outline',
+      { type: 'standard', shape: 'pill', theme: 'outline',
         text: 'continue_with', size: 'large', locale: 'es',
         width: Math.max(200, Math.min(360, window.innerWidth - 96)) }   // cabe en la tarjeta a 390 px
     );
@@ -267,8 +267,8 @@ const App = (() => {
       btn.type = 'button';
       btn.textContent = a.label;
       btn.className = a.primary
-        ? 'w-full py-3 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform'
-        : 'w-full py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface text-sm font-semibold hover:bg-surface-container-low transition-colors';
+        ? 'w-full py-3 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors'
+        : 'w-full py-3 rounded-full border border-primary bg-transparent text-primary text-sm font-semibold hover:bg-primary/5 transition-colors';
       btn.addEventListener('click', a.onClick);
       actionsEl.appendChild(btn);
     });
@@ -314,20 +314,20 @@ const App = (() => {
     const whatTxt = what || 'este contenido';
     const modal = document.createElement('div');
     modal.id = 'login-wall-modal';
-    modal.className = 'fixed inset-0 z-[60] bg-primary/40 backdrop-blur-sm flex items-center justify-center p-6';
+    modal.className = 'fixed inset-0 z-[60] bg-ink/50 backdrop-blur-sm flex items-center justify-center p-6';
     modal.innerHTML = `
-      <div class="bg-white rounded-2xl shadow-xl max-w-md w-full p-8 text-center relative">
+      <div class="bg-white rounded-3xl shadow-xl max-w-md w-full p-8 text-center relative">
         <button id="login-wall-close" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors">
           <span class="material-symbols-outlined">close</span>
         </button>
         <div class="w-14 h-14 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-4">
           <span class="material-symbols-outlined text-[#d6e949] text-3xl">lock_open</span>
         </div>
-        <h3 class="text-xl font-bold text-on-surface mb-2">Crea tu cuenta gratis</h3>
+        <h3 class="font-headline text-xl font-bold text-primary mb-2">Crea tu cuenta gratis</h3>
         <p class="text-sm text-on-surface-variant mb-6">Regístrate para ver ${whatTxt}. Es gratis y tardas menos de un minuto.</p>
         <div class="space-y-2">
-          <button id="login-wall-register" class="w-full py-3 rounded-lg bg-secondary-fixed text-primary-container text-sm font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">Crear cuenta gratis</button>
-          <button id="login-wall-login" class="w-full py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface text-sm font-semibold hover:bg-surface-container-low transition-colors">Ya tengo cuenta</button>
+          <button id="login-wall-register" class="w-full py-3 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors">Crear cuenta gratis</button>
+          <button id="login-wall-login" class="w-full py-3 rounded-full border border-primary bg-transparent text-primary text-sm font-semibold hover:bg-primary/5 transition-colors">Ya tengo cuenta</button>
         </div>
       </div>`;
     document.body.appendChild(modal);
@@ -368,11 +368,11 @@ const App = (() => {
         <div class="w-16 h-16 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-6">
           <span class="material-symbols-outlined text-[#d6e949] text-4xl">${c.icon}</span>
         </div>
-        <h2 class="text-2xl font-extrabold text-on-surface mb-3">${c.title}</h2>
+        <h2 class="font-headline text-2xl font-bold text-primary mb-3">${c.title}</h2>
         <p class="text-on-surface-variant mb-8">${c.body}</p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <button type="button" id="funnel-register" class="px-6 py-3 rounded-lg bg-secondary-fixed text-primary-container font-bold hover:scale-[1.02] active:scale-[0.98] transition-transform">Crear cuenta gratis</button>
-          <button type="button" id="funnel-login" class="px-6 py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface font-semibold hover:bg-surface-container-low transition-colors">Ya tengo cuenta</button>
+          <button type="button" id="funnel-register" class="px-6 py-3 rounded-full bg-secondary-fixed text-primary font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors">Crear cuenta gratis</button>
+          <button type="button" id="funnel-login" class="px-6 py-3 rounded-full border border-primary bg-transparent text-primary font-semibold hover:bg-primary/5 transition-colors">Ya tengo cuenta</button>
         </div>
         <button type="button" id="funnel-book" class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
           <span class="material-symbols-outlined text-[18px]">event</span> Reservar una reunión con el equipo

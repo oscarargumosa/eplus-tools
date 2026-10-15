@@ -140,8 +140,8 @@ const ImportProposal = (() => {
 
     root.innerHTML = `
       <div class="flex items-center gap-3 mb-6">
-        <div class="w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center">
-          <span class="material-symbols-outlined text-green-600 text-2xl">upload_file</span>
+        <div class="w-12 h-12 rounded-2xl bg-lavender-soft flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl">upload_file</span>
         </div>
         <div>
           <h1 class="text-2xl font-bold text-on-surface">Importar proyecto</h1>
@@ -194,11 +194,11 @@ const ImportProposal = (() => {
 
       <!-- Actions -->
       <div class="flex items-center gap-3">
-        <button onclick="ImportProposal.upload()" class="flex-1 px-5 py-3 bg-primary text-white rounded-xl text-sm font-bold hover:bg-primary/90 shadow-md disabled:opacity-50">
+        <button onclick="ImportProposal.upload()" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md disabled:opacity-50">
           <span class="material-symbols-outlined text-sm align-middle mr-1">arrow_forward</span>
           Subir y diagnosticar
         </button>
-        <button onclick="ImportProposal.togglePaste()" class="px-5 py-3 bg-surface border border-outline-variant/40 rounded-xl text-sm font-medium hover:bg-surface-variant transition-colors">
+        <button onclick="ImportProposal.togglePaste()" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">
           ¿No tienes el Word? Pegar texto
         </button>
       </div>
@@ -220,11 +220,11 @@ const ImportProposal = (() => {
     const sections = report.sectionsCovered || [];
 
     root.innerHTML = `
-      <div class="bg-green-500/10 border border-green-500/30 rounded-2xl p-6 mb-6">
+      <div class="bg-cream border border-outline-variant/60 rounded-2xl p-6 mb-6">
         <div class="flex items-start gap-3">
-          <span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+          <span class="material-symbols-outlined text-green-700 text-3xl">check_circle</span>
           <div class="flex-1">
-            <h2 class="text-xl font-bold text-green-700">Proyecto importado</h2>
+            <h2 class="text-xl font-bold text-primary">Proyecto importado</h2>
             <p class="text-sm text-on-surface mt-1">Se extrajeron <strong>${report.fieldsExtracted || 0}</strong> secciones del Form Part B (${report.totalChars ? Math.round(report.totalChars / 1000) + 'k chars' : 'tamaño desconocido'}).</p>
           </div>
         </div>
@@ -251,8 +251,8 @@ const ImportProposal = (() => {
       </div>
 
       ${(report.errors || []).length > 0 ? `
-        <div class="bg-orange-500/10 border border-orange-500/30 rounded-xl p-4 mb-6">
-          <h4 class="text-sm font-bold text-orange-700 mb-2">Avisos del parser (${report.errors.length})</h4>
+        <div class="bg-[#f3f8d2] border border-[#d6e949] rounded-xl p-4 mb-6">
+          <h4 class="text-sm font-bold text-ink mb-2">Avisos del parser (${report.errors.length})</h4>
           <ul class="text-xs text-on-surface-variant space-y-1">
             ${report.errors.slice(0, 5).map(e => `<li>• ${esc(e)}</li>`).join('')}
           </ul>
@@ -260,7 +260,7 @@ const ImportProposal = (() => {
       ` : ''}
 
       <!-- Step 4 (optional): evaluator letter -->
-      <div class="bg-gradient-to-br from-primary/5 to-tertiary/5 border-2 border-primary/30 rounded-2xl p-5 mb-6">
+      <div class="bg-gradient-to-br from-primary/5 to-lavender-soft/60 border-2 border-primary/30 rounded-2xl p-5 mb-6">
         <div class="flex items-start gap-3 mb-3">
           <span class="material-symbols-outlined text-primary text-2xl">stars</span>
           <div class="flex-1">
@@ -273,8 +273,8 @@ const ImportProposal = (() => {
         </div>
 
         ${state.letterUploaded ? `
-          <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-3 text-sm text-green-700">
-            <span class="material-symbols-outlined text-sm align-middle mr-1">check_circle</span>
+          <div class="bg-white border border-outline-variant/60 rounded-xl p-3 text-sm text-ink">
+            <span class="material-symbols-outlined text-sm align-middle mr-1 text-green-700">check_circle</span>
             Carta cargada: <strong>${state.letterUploaded.findingsInserted}</strong> findings extraídos
             (${state.letterUploaded.negativeCount} negativos, ${state.letterUploaded.positiveCount} positivos).
           </div>
@@ -302,11 +302,11 @@ const ImportProposal = (() => {
       </div>
 
       <div class="flex gap-3">
-        <button onclick="ImportProposal.goDiagnose('${esc(r.projectId)}')" class="flex-1 px-5 py-3 bg-primary text-white rounded-xl text-sm font-bold hover:bg-primary/90 shadow-md">
+        <button onclick="ImportProposal.goDiagnose('${esc(r.projectId)}')" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
           <span class="material-symbols-outlined text-sm align-middle mr-1">monitoring</span>
           Ir al diagnóstico${state.letterUploaded ? ' dirigido' : ''}
         </button>
-        <button onclick="ImportProposal.init()" class="px-5 py-3 bg-surface border border-outline-variant/40 rounded-xl text-sm font-medium">
+        <button onclick="ImportProposal.init()" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium">
           Importar otro
         </button>
       </div>

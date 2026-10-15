@@ -22,24 +22,38 @@ const MovilidadesUtils = (() => {
     return Math.round((d - today) / 86400000);
   }
 
+  // Píldora de plazo: escala de urgencia en la paleta de marca (azul > violeta > lavanda > blanco).
   function deadlinePill(item) {
     const d = daysUntil(item.deadline_iso);
     if (d === null) return '';
-    if (d < 0)    return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 whitespace-nowrap">Closed</span>`;
-    if (d === 0)  return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-600 text-white whitespace-nowrap">Today</span>`;
-    if (d <= 7)   return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700 whitespace-nowrap">${d} day${d === 1 ? '' : 's'} left</span>`;
-    if (d <= 30)  return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 whitespace-nowrap">${d} days left</span>`;
-    return         `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 whitespace-nowrap">${d} days left</span>`;
+    const base = 'text-[10px] font-bold px-2.5 py-0.5 rounded-full whitespace-nowrap';
+    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">Closed</span>`;
+    if (d === 0)  return `<span class="${base} bg-primary text-white">Today</span>`;
+    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d} day${d === 1 ? '' : 's'} left</span>`;
+    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${d} days left</span>`;
+    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${d} days left</span>`;
+  }
+
+  // Partes de la fecha para la caja «día grande + mes/año» de la tarjeta.
+  function dateParts(iso) {
+    if (!iso) return null;
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return null;
+    return {
+      day:   String(d.getDate()).padStart(2, '0'),
+      month: d.toLocaleDateString('en-GB', { month: 'short' }),
+      year:  String(d.getFullYear()),
+    };
   }
 
   /* ── Coverage parsing ──────────────────────────────────────────────
      Returns { status, short, detail } per dimension (fee/travel/accommodation)
-     Status palette:
-       covered → green   (no cost to you)
-       partial → amber   (capped reimbursement, must check)
-       cost    → red     (you pay)
-       na      → blue    (not applicable, e.g. online activity)
-       unknown → gray    (no data)
+     Paleta de estados (marca EU Funding Studio):
+       covered → lima suave  (sin coste para ti)
+       partial → lavanda     (reembolso con tope, revisar)
+       cost    → blanco/azul (pagas tú)
+       na      → crema       (no aplica, p. ej. online)
+       unknown → gris cálido (sin datos)
   ─────────────────────────────────────────────────────────────────── */
 
   function feeCoverage(item) {
@@ -101,12 +115,12 @@ const MovilidadesUtils = (() => {
 
   function chipClass(status) {
     return ({
-      covered: 'bg-green-100 text-green-800 border-green-200',
-      partial: 'bg-amber-100 text-amber-900 border-amber-200',
-      cost:    'bg-red-100 text-red-700 border-red-200',
-      na:      'bg-blue-100 text-blue-700 border-blue-200',
-      unknown: 'bg-gray-100 text-gray-500 border-gray-200',
-    })[status] || 'bg-gray-100 text-gray-500 border-gray-200';
+      covered: 'bg-[#f3f8d2] text-ink border-secondary-fixed',
+      partial: 'bg-lavender-soft text-violet border-lavender/40',
+      cost:    'bg-white text-primary border-primary/30',
+      na:      'bg-cream text-on-surface-variant border-outline-variant',
+      unknown: 'bg-surface-container-high text-on-surface-variant border-outline-variant',
+    })[status] || 'bg-surface-container-high text-on-surface-variant border-outline-variant';
   }
 
   /**
@@ -129,15 +143,15 @@ const MovilidadesUtils = (() => {
 
   /**
    * Inline icon + text for the card meta row (place · date · deadline · fee).
-   * Filled icon, color tied to status (green=free, red=paid, gray=unknown).
+   * Icono relleno; color según estado (azul=gratis, tinta=de pago, gris=sin datos).
    */
   function feeIconInline(item) {
     const f = feeCoverage(item);
     const colors = {
-      covered: 'text-emerald-700',
-      cost:    'text-rose-700',
-      partial: 'text-amber-700',
-      na:      'text-blue-700',
+      covered: 'text-primary',
+      cost:    'text-ink',
+      partial: 'text-violet',
+      na:      'text-primary',
       unknown: 'text-on-surface-variant',
     };
     const color = colors[f.status] || colors.unknown;
@@ -170,7 +184,7 @@ const MovilidadesUtils = (() => {
 
     const apply = item.application_url
       ? `<a href="${escapeHtml(item.application_url)}" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
+            class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
             <span>Apply on SALTO</span>
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
           </a>`
@@ -178,7 +192,7 @@ const MovilidadesUtils = (() => {
 
     const moreInfo = item.url
       ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-transparent border border-outline-variant/30 text-on-surface-variant text-sm font-bold hover:bg-[#f8f8f8] transition-colors">
+            class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-transparent border border-primary text-primary text-sm font-bold hover:bg-lavender-soft transition-colors">
             <span>View on SALTO</span>
             <span class="material-symbols-outlined" style="font-size:16px;line-height:1;">open_in_new</span>
           </a>`
@@ -202,7 +216,7 @@ const MovilidadesUtils = (() => {
             <span class="text-[11px] font-bold uppercase tracking-wider text-primary">${escapeHtml(item.type || 'Activity')}</span>
             ${deadlinePill(item)}
           </div>
-          <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${escapeHtml(item.title || '')}</h2>
+          <h2 class="text-xl font-bold text-primary leading-tight pr-12">${escapeHtml(item.title || '')}</h2>
         </div>
 
         <div class="flex items-center gap-2 flex-wrap">
@@ -211,7 +225,7 @@ const MovilidadesUtils = (() => {
 
         ${item.summary ? `<p class="text-sm text-on-surface-variant">${escapeHtml(item.summary)}</p>` : ''}
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface-container-low rounded-xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-cream rounded-2xl">
           ${row('Location', item.location_raw || [item.city, item.country].filter(Boolean).join(', '))}
           ${row('Dates', item.dates)}
           ${row('Application deadline', item.deadline_raw)}
@@ -267,7 +281,7 @@ const MovilidadesUtils = (() => {
   }
 
   return {
-    escapeHtml, daysUntil, deadlinePill,
+    escapeHtml, daysUntil, deadlinePill, dateParts,
     coverageInfo, coverageChips, chipClass, feeIconInline,
     renderDetail, filterAndSort, todayISO,
   };

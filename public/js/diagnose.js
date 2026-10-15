@@ -226,7 +226,7 @@ const Diagnose = (() => {
           La IA analiza tu Form Part B contra las leyes EACEA, patrones del programa,
           coherencia cruzada y (si la tienes) la carta del evaluador.
         </p>
-        <button onclick="Diagnose.runNew()" class="px-6 py-3 bg-primary text-white rounded-xl text-sm font-bold hover:bg-primary/90 shadow-md">
+        <button onclick="Diagnose.runNew()" class="px-6 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
           <span class="material-symbols-outlined text-sm align-middle mr-1">play_arrow</span>
           Lanzar diagnóstico
         </button>
@@ -238,8 +238,8 @@ const Diagnose = (() => {
     const verdict = run.triage_verdict || 'unknown';
     const verdictInfo = {
       redesign: { title: 'Rediseñar el proyecto', cls: 'bg-error/10 border-error/30 text-error', icon: 'replay' },
-      perfect:  { title: 'Perfeccionar', cls: 'bg-orange-500/10 border-orange-500/30 text-orange-700', icon: 'edit_note' },
-      export:   { title: 'Listo para exportar', cls: 'bg-green-500/10 border-green-500/30 text-green-700', icon: 'task_alt' },
+      perfect:  { title: 'Perfeccionar', cls: 'bg-lavender-soft border-lavender/50 text-violet', icon: 'edit_note' },
+      export:   { title: 'Listo para exportar', cls: 'bg-green-500/10 border-green-500/30 text-green-800', icon: 'task_alt' },
       unknown:  { title: 'Sin veredicto', cls: 'bg-on-surface-variant/10 border-outline-variant/30 text-on-surface-variant', icon: 'help' },
     }[verdict] || { title: verdict, cls: '', icon: 'help' };
 
@@ -261,15 +261,15 @@ const Diagnose = (() => {
           </div>
           <div class="flex gap-2">
             ${acceptedCount >= 1 ? `
-              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white rounded-lg text-xs font-bold hover:bg-primary/90 shadow-sm">
+              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white rounded-full text-xs font-bold hover:bg-primary/90 shadow-sm">
                 <span class="material-symbols-outlined text-sm">refresh</span>
                 Recalcular diagnóstico
               </button>` : `
-              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-outline-variant/40 rounded-lg text-xs hover:bg-surface-variant">
+              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
                 <span class="material-symbols-outlined text-sm">refresh</span>
                 Re-ejecutar
               </button>`}
-            <button onclick="Diagnose.openHistory()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-outline-variant/40 rounded-lg text-xs hover:bg-surface-variant">
+            <button onclick="Diagnose.openHistory()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
               <span class="material-symbols-outlined text-sm">history</span>
               Historial
             </button>
@@ -313,7 +313,7 @@ const Diagnose = (() => {
 
   function scoreCard(c) {
     const cls = c.on5 >= 4 ? 'bg-green-500/10 text-green-700 border-green-500/30'
-              : c.on5 >= 3 ? 'bg-yellow-500/10 text-yellow-800 border-yellow-500/30'
+              : c.on5 >= 3 ? 'bg-[#f3f8d2] text-ink border-[#d6e949]'
                            : 'bg-error/10 text-error border-error/30';
     return `
       <div class="border ${cls} rounded-lg px-2 py-1.5">
@@ -370,7 +370,7 @@ const Diagnose = (() => {
                ${active ? 'bg-primary text-white font-medium' : 'hover:bg-surface-variant text-on-surface'}
                ${!has ? 'opacity-50' : ''}">
         <span class="truncate">${esc(label || fieldId)}</span>
-        ${findings > 0 ? `<span class="${active ? 'bg-white/20 text-white' : 'bg-orange-500/15 text-orange-700'} text-[10px] font-bold px-1.5 py-0.5 rounded-full">${findings}</span>` : ''}
+        ${findings > 0 ? `<span class="${active ? 'bg-white/20 text-white' : 'bg-secondary-fixed text-primary'} text-[10px] font-bold px-1.5 py-0.5 rounded-full">${findings}</span>` : ''}
       </button>`;
   }
 
@@ -409,7 +409,7 @@ const Diagnose = (() => {
           ${hasUnsaved ? `
             <button onclick="Diagnose.discardEdits()" class="px-2 py-1 text-xs text-on-surface-variant hover:text-error">Descartar</button>
             <button onclick="Diagnose.saveField()" ${state.savingField ? 'disabled' : ''}
-                    class="inline-flex items-center gap-1 px-3 py-1.5 bg-green-600 text-white rounded-lg text-xs font-bold hover:bg-green-700 disabled:opacity-50">
+                    class="inline-flex items-center gap-1 px-3 py-1.5 bg-primary text-white rounded-full text-xs font-bold hover:bg-violet disabled:opacity-50">
               ${state.savingField ? '<span class="material-symbols-outlined text-xs animate-spin">progress_activity</span>' : '<span class="material-symbols-outlined text-xs">save</span>'}
               ${state.savingField ? 'Guardando…' : 'Guardar cambios'}
             </button>
@@ -420,7 +420,7 @@ const Diagnose = (() => {
       ${showDiff ? renderDiffPanel(activeAction, savedText) : ''}
 
       ${hasUnsaved ? `
-        <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg px-3 py-1.5 mb-2 text-xs text-yellow-800">
+        <div class="bg-[#f3f8d2] border border-[#d6e949] rounded-lg px-3 py-1.5 mb-2 text-xs text-ink">
           <span class="material-symbols-outlined text-xs align-middle">edit</span>
           Estás editando — los cambios no se guardan hasta que pulses "Guardar cambios".
         </div>
@@ -428,7 +428,7 @@ const Diagnose = (() => {
 
       <textarea
         id="diagnose-editor-textarea"
-        class="w-full font-sans text-sm leading-relaxed text-on-surface bg-surface p-4 rounded-lg border ${hasUnsaved ? 'border-yellow-500/50 ring-1 ring-yellow-500/30' : 'border-outline-variant/30'} focus:outline-none focus:ring-2 focus:ring-primary/30 resize-vertical"
+        class="w-full font-sans text-sm leading-relaxed text-on-surface bg-surface p-4 rounded-lg border ${hasUnsaved ? 'border-[#c3d63a] ring-1 ring-[#d6e949]/60' : 'border-outline-variant/30'} focus:outline-none focus:ring-2 focus:ring-primary/30 resize-vertical"
         style="min-height:400px;"
         oninput="Diagnose.onEditorInput(this.value)"
         spellcheck="false"
@@ -469,17 +469,17 @@ const Diagnose = (() => {
             </div>
           ` : ''}
           ${action.risk ? `
-            <div class="bg-orange-500/10 border border-orange-500/30 rounded p-2 text-xs text-orange-800">
+            <div class="bg-[#f3f8d2] border border-[#d6e949] rounded p-2 text-xs text-ink">
               <strong>⚠ Riesgo:</strong> ${esc(action.risk)}
             </div>
           ` : ''}
         </div>
         <div class="flex gap-2 mt-4">
-          <button onclick="Diagnose.acceptAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-bold hover:bg-green-700 transition-colors">
+          <button onclick="Diagnose.acceptAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="flex-1 px-3 py-2 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
             <span class="material-symbols-outlined text-sm align-middle mr-1">check</span>
             Aceptar y aplicar
           </button>
-          <button onclick="Diagnose.rejectAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="px-3 py-2 bg-surface border border-outline-variant/40 rounded-lg text-sm text-on-surface-variant hover:bg-surface-variant">
+          <button onclick="Diagnose.rejectAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="px-3 py-2 bg-surface border border-outline-variant/60 rounded-full text-sm text-on-surface-variant hover:bg-surface-variant">
             Rechazar
           </button>
         </div>
@@ -548,9 +548,9 @@ const Diagnose = (() => {
     const sevMap = {
       critical:    { cls: 'border-error/40 bg-error/5',                  badge: 'bg-error/15 text-error',                lbl: 'Crítico' },
       high:        { cls: 'border-error/30 bg-error/5',                  badge: 'bg-error/10 text-error',                lbl: 'Alto' },
-      medium_high: { cls: 'border-orange-500/30 bg-orange-500/5',        badge: 'bg-orange-500/10 text-orange-700',      lbl: 'Medio-alto' },
-      medium:      { cls: 'border-yellow-500/30 bg-yellow-500/5',        badge: 'bg-yellow-500/10 text-yellow-800',      lbl: 'Medio' },
-      medium_low:  { cls: 'border-yellow-500/20 bg-yellow-500/5',        badge: 'bg-yellow-500/5 text-yellow-700',       lbl: 'Bajo' },
+      medium_high: { cls: 'border-lavender/50 bg-lavender-soft/50',      badge: 'bg-lavender-soft text-violet',          lbl: 'Medio-alto' },
+      medium:      { cls: 'border-[#d6e949] bg-[#f3f8d2]/70',            badge: 'bg-secondary-fixed/70 text-primary',    lbl: 'Medio' },
+      medium_low:  { cls: 'border-[#d6e949]/60 bg-[#f3f8d2]/40',         badge: 'bg-[#f3f8d2] text-ink',                 lbl: 'Bajo' },
       low:         { cls: 'border-outline-variant/40',                   badge: 'bg-on-surface-variant/10 text-on-surface-variant', lbl: 'Bajo' },
     };
     const sev = sevMap[f.severity] || sevMap.medium;
@@ -565,7 +565,7 @@ const Diagnose = (() => {
       return `
         <div class="border border-green-500/30 bg-green-500/5 rounded-lg p-2 text-xs">
           <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-sm text-green-600">check_circle</span>
+            <span class="material-symbols-outlined text-sm text-green-700">check_circle</span>
             <span class="line-through text-on-surface-variant truncate">${esc(f.finding_text)}</span>
           </div>
         </div>`;
@@ -593,7 +593,7 @@ const Diagnose = (() => {
             Propuesta lista (ver editor)
           </div>
         ` : action && action.state === 'accepted' ? `
-          <div class="text-[10px] text-green-600 font-bold mb-1">✓ Aplicada</div>
+          <div class="text-[10px] text-green-700 font-bold mb-1">✓ Aplicada</div>
         ` : `
           <button onclick="event.stopPropagation(); Diagnose.propose('${esc(f.id)}')"
             ${isProposing ? 'disabled' : ''}
