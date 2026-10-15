@@ -152,7 +152,7 @@ async function sendWelcomeEmail({ to, name }) {
       Nos vemos dentro.`,
     buttonLabel: 'Entrar en EU Funding Studio',
     buttonUrl: url,
-    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding School. Si no has sido tú, respóndenos y la cerramos.'
+    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding School. Si no has sido tú, escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a> y la cerramos.'
   }).replace('Or copy this link into your browser:', 'O copia este enlace en tu navegador:').replace('<html lang="en">', '<html lang="es">');
   const text = `Te damos la bienvenida${first ? ', ' + first : ''}.
 
