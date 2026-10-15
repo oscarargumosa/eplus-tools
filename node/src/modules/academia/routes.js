@@ -3,7 +3,7 @@
    (El revisor interno de contenidos sigue en /v1/academy.)                    */
 
 const router = require('express').Router();
-const { requireAuth, optionalAuth } = require('../../middleware/auth');
+const { requireAuth } = require('../../middleware/auth');
 const m = require('./model');
 
 const h = (fn) => async (req, res) => {
@@ -18,8 +18,8 @@ const h = (fn) => async (req, res) => {
   }
 };
 
-router.get('/courses', optionalAuth, h(req => m.listCourses(req.user)));
-router.get('/courses/:course', optionalAuth, h(req => m.courseDetail(req.params.course, req.user)));
+router.get('/courses', requireAuth, h(req => m.listCourses(req.user)));
+router.get('/courses/:course', requireAuth, h(req => m.courseDetail(req.params.course, req.user)));
 router.post('/courses/:course/enroll', requireAuth, h(req => m.enroll(req.params.course, req.user)));
 
 router.get('/courses/:course/lessons/:lesson', requireAuth,

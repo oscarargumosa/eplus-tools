@@ -1,10 +1,10 @@
 /* ── Convocatorias Routes — /v1/convocatorias/* ─────────────────────── */
 const router = require('express').Router();
-const { requireAuth, optionalAuth } = require('../../middleware/auth');
+const { requireAuth } = require('../../middleware/auth');
 const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
-router.get('/',     optionalAuth, ctrl.list);
+router.get('/',     requireAuth, ctrl.list);
 router.get('/search-semantic', requireAuth, ctrl.searchSemantic);
 router.get('/rag-status', requireAuth, ctrl.ragStatus);
 router.get('/curation', requireAuth, ctrl.curationList);

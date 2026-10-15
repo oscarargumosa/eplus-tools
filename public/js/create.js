@@ -23,7 +23,7 @@ const CreateProject = (() => {
 
   async function loadPrograms() {
     try {
-      programs = await API.get('/intake/programs', { noAuth: true });
+      programs = await API.get('/intake/programs');
       for (const p of programs) {
         try { programEligibility[p.id] = await API.get('/admin/data/eligibility/call/' + p.id) || {}; }
         catch(_) { programEligibility[p.id] = {}; }

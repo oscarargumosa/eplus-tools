@@ -14,7 +14,8 @@ const subscribeLimiter = rateLimit({
   message: { ok: false, error: { code: 'RATE_LIMITED', message: 'Too many attempts, try later.' } },
 });
 
-router.post('/', subscribeLimiter, ctrl.subscribe);
+// Con sesión desde oct-2026 (Studio cerrado a invitados; nadie lo usaba sin ella).
+router.post('/', subscribeLimiter, requireAuth, ctrl.subscribe);
 router.get('/',  requireAuth,     ctrl.list);
 
 module.exports = router;

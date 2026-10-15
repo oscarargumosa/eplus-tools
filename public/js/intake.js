@@ -274,7 +274,7 @@ const Intake = (() => {
   /* ── Programs ────────────────────────────────────────────────── */
   async function loadPrograms() {
     try {
-      programs = await API.get('/intake/programs', { noAuth: true });
+      programs = await API.get('/intake/programs');
     } catch (err) {
       console.error('loadPrograms:', err);
     }

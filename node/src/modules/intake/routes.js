@@ -8,8 +8,8 @@ const ctrl = require('./controller');
 
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 30 * 1024 * 1024 } });
 
-/* ── Programs (public endpoints) ────────────────────────────────── */
-router.get('/programs', ctrl.listPrograms);
+/* ── Programs ────────────────────────────────────────────────────── */
+router.get('/programs', requireAuth, ctrl.listPrograms);
 
 /* ── Entity search (authenticated) ────────────���────────────────── */
 router.get('/entities/search', requireAuth, ctrl.searchEntities);
@@ -42,7 +42,7 @@ router.post  ('/projects/:id/interview/next',  requireAuth, aiLimit, ctrl.interv
 router.delete('/projects/:id/interview',       requireAuth, ctrl.resetInterview);
 
 /* ── Task Templates ──────────────────────────────────────────── */
-router.get('/task-templates', ctrl.getTaskTemplates);
+router.get('/task-templates', requireAuth, ctrl.getTaskTemplates);
 
 /* ── Project Tasks ───────────────────────────────────────────── */
 router.get   ('/projects/:projectId/tasks',    requireAuth, ctrl.listTasks);

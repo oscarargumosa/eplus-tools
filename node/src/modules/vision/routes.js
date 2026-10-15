@@ -2,7 +2,7 @@
    Rutas estáticas antes que /:id para que no las capture el comodín.    */
 
 const router = require('express').Router();
-const { requireAuth, optionalAuth } = require('../../middleware/auth');
+const { requireAuth } = require('../../middleware/auth');
 const { aiLimit } = require('../../middleware/aiLimit');
 const ctrl = require('./controller');
 
@@ -11,14 +11,14 @@ router.post('/suggest-projects', requireAuth, ctrl.suggestProjects);
 router.get('/project/:identifier/full', requireAuth, ctrl.projectFull);
 
 // Tablón público "Explorar visiones" (v2) — antes de /:id.
-// router.get('/public', optionalAuth, ctrl.publicList);
+// router.get('/public', requireAuth, ctrl.publicList);
 
 // Colección
 router.get('/', requireAuth, ctrl.list);
 router.post('/', requireAuth, ctrl.create);
 
-// Ficha (optionalAuth: invitado ve las públicas, sin datos de interés).
-router.get('/:id', optionalAuth, ctrl.getOne);
+// Ficha (con sesión; las publicadas las ve cualquier usuario registrado).
+router.get('/:id', requireAuth, ctrl.getOne);
 router.patch('/:id', requireAuth, ctrl.update);
 router.post('/:id/publish', requireAuth, ctrl.publish);
 router.post('/:id/promote', requireAuth, ctrl.promote);
