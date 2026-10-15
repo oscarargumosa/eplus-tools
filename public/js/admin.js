@@ -5279,3 +5279,144 @@ KEY EVALUATOR FOCUS:
 
   return { init, openEdit, confirmDelete, openConvocatoria };
 })();
+
+
+/* ═══════════════════════════════════════════════════════════════
+   Usuarios y accesos — fase beta cerrada (oct-2026)
+   Áreas por persona (proyectos, academia) y solicitudes de acceso.
+   API: /v1/admin/access/* (solo role admin, también en servidor).
+   ═══════════════════════════════════════════════════════════════ */
+
+const AdminUsers = (() => {
+  const state = { q: '', filter: 'all', page: 1, pages: 1, areas: [] };
+  let bound = false;
+  let debounce = null;
+
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmt = (d, withTime) => {
+    if (!d) return '—';
+    const dt = new Date(d);
+    if (isNaN(dt)) return '—';
+    return withTime
+      ? dt.toLocaleString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+      : dt.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  };
+  const areaLabel = (k) => (state.areas.find(a => a.key === k) || {}).label || k;
+  const announce = (msg) => { const el = document.getElementById('au-status'); if (el) el.textContent = msg; };
+
+  function bind() {
+    if (bound) return;
+    bound = true;
+    document.getElementById('au-q')?.addEventListener('input', (e) => {
+      clearTimeout(debounce);
+      debounce = setTimeout(() => { state.q = e.target.value.trim(); state.page = 1; load(); }, 300);
+    });
+    document.getElementById('au-filter')?.addEventListener('change', (e) => { state.filter = e.target.value; state.page = 1; load(); });
+    document.getElementById('au-prev')?.addEventListener('click', () => { if (state.page > 1) { state.page--; load(); } });
+    document.getElementById('au-next')?.addEventListener('click', () => { if (state.page < state.pages) { state.page++; load(); } });
+    document.getElementById('au-tbody')?.addEventListener('click', onClick);
+  }
+
+  function init() { bind(); load(); }
+
+  function setCount(n) {
+    const el = document.getElementById('admin-users-count');
+    if (!el) return;
+    el.textContent = n > 99 ? '99+' : String(n || '');
+    el.classList.toggle('hidden', !n);
+    el.setAttribute('aria-label', `${n} solicitud${n === 1 ? '' : 'es'} pendiente${n === 1 ? '' : 's'}`);
+  }
+
+  async function refreshCount() {
+    try { const d = await API.get('/admin/access/pending-count'); setCount(d.count); } catch { /* sin contador */ }
+  }
+
+  async function load() {
+    const tbody = document.getElementById('au-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = '<tr><td colspan="8" class="py-8 text-center text-on-surface-variant">Cargando…</td></tr>';
+    try {
+      const qs = new URLSearchParams({ q: state.q, filter: state.filter, page: state.page, limit: 25 });
+      const d = await API.get('/admin/access/users?' + qs.toString());
+      state.pages = d.pages; state.page = d.page; state.areas = d.areas || [];
+      setCount(d.pending_total);
+      render(d);
+    } catch (e) {
+      tbody.innerHTML = `<tr><td colspan="8" class="py-8 text-center text-error">${esc(e.message || 'No se pudo cargar')}</td></tr>`;
+    }
+  }
+
+  function switchHtml(u, area) {
+    const on = u.areas.includes(area.key);
+    const isAdmin = u.role === 'admin';
+    return `<div class="flex items-center gap-2 whitespace-nowrap py-0.5">
+      <button type="button" role="switch" aria-checked="${on}" data-act="toggle" data-user="${esc(u.id)}" data-area="${esc(area.key)}"
+        aria-label="${esc(area.label)} para ${esc(u.name || u.email)}" ${isAdmin ? 'disabled title="Un admin tiene todas las áreas"' : ''}
+        class="relative inline-flex h-6 w-11 flex-shrink-0 rounded-full transition-colors ${on ? 'bg-primary' : 'bg-outline-variant/60'} ${isAdmin ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}">
+        <span class="absolute top-0.5 ${on ? 'left-[22px]' : 'left-0.5'} h-5 w-5 rounded-full bg-white shadow transition-all"></span>
+      </button>
+      <span class="text-xs" aria-hidden="true">${esc(area.label)}</span></div>`;
+  }
+
+  function pendingHtml(u) {
+    if (!u.pending.length) return '<span class="text-on-surface-variant">—</span>';
+    return u.pending.map(r => `<div class="mb-2 last:mb-0 min-w-[220px]">
+      <div class="text-xs"><b>${esc(areaLabel(r.area))}</b> · ${fmt(r.created_at)}</div>
+      ${r.message ? `<div class="text-xs text-on-surface-variant italic max-w-[280px] whitespace-normal break-words">«${esc(r.message)}»</div>` : ''}
+      <div class="flex gap-2 mt-1">
+        <button type="button" data-act="approve" data-id="${r.id}" class="px-3 py-1 rounded-full bg-secondary-fixed text-primary text-xs font-bold">Aprobar</button>
+        <button type="button" data-act="reject" data-id="${r.id}" class="px-3 py-1 rounded-full border border-outline-variant/60 text-on-surface-variant text-xs font-semibold">Rechazar</button>
+      </div></div>`).join('');
+  }
+
+  function render(d) {
+    const tbody = document.getElementById('au-tbody');
+    if (!d.items.length) {
+      tbody.innerHTML = '<tr><td colspan="8" class="py-8 text-center text-on-surface-variant">No hay usuarios con este filtro.</td></tr>';
+    } else {
+      tbody.innerHTML = d.items.map(u => `<tr class="border-t border-outline-variant/20 align-top">
+        <td class="p-3 font-semibold text-on-surface whitespace-nowrap">${esc(u.name)}${u.role === 'admin' ? ' <span class="text-[10px] uppercase font-bold text-primary">admin</span>' : ''}</td>
+        <td class="p-3 text-on-surface-variant">${esc(u.email)}</td>
+        <td class="p-3">${u.email_verified ? 'Sí' : '<span class="text-error">No</span>'}</td>
+        <td class="p-3 whitespace-nowrap">${fmt(u.created_at)}</td>
+        <td class="p-3 whitespace-nowrap">${fmt(u.last_login, true)}</td>
+        <td class="p-3 text-right">${u.projects}</td>
+        <td class="p-3">${state.areas.map(a => switchHtml(u, a)).join('')}</td>
+        <td class="p-3">${pendingHtml(u)}</td>
+      </tr>`).join('');
+    }
+    document.getElementById('au-pageinfo').textContent =
+      `Página ${d.page} de ${d.pages} · ${d.total} usuario${d.total === 1 ? '' : 's'}`;
+    document.getElementById('au-prev').disabled = d.page <= 1;
+    document.getElementById('au-next').disabled = d.page >= d.pages;
+  }
+
+  async function onClick(e) {
+    const btn = e.target.closest('button[data-act]');
+    if (!btn || btn.disabled) return;
+    btn.disabled = true;
+    try {
+      if (btn.dataset.act === 'toggle') {
+        const enable = btn.getAttribute('aria-checked') !== 'true';
+        const r = await API.put(`/admin/access/users/${encodeURIComponent(btn.dataset.user)}/areas/${encodeURIComponent(btn.dataset.area)}`, { enabled: enable });
+        announce(`${areaLabel(r.area)}: ${enable ? 'acceso concedido' : 'acceso retirado'}.`);
+        Toast.show(enable ? `Acceso a ${areaLabel(r.area)} concedido` : `Acceso a ${areaLabel(r.area)} retirado`, 'ok');
+      } else if (btn.dataset.act === 'approve') {
+        const r = await API.post(`/admin/access/requests/${btn.dataset.id}/approve`, {});
+        announce(`Solicitud aprobada: acceso a ${areaLabel(r.area)} concedido.`);
+        Toast.show(`Solicitud aprobada: acceso a ${areaLabel(r.area)}`, 'ok');
+      } else if (btn.dataset.act === 'reject') {
+        if (!confirm('¿Rechazar esta solicitud? La persona no recibe correo y podrá pedirlo de nuevo.')) { btn.disabled = false; return; }
+        await API.post(`/admin/access/requests/${btn.dataset.id}/reject`, {});
+        announce('Solicitud rechazada.');
+        Toast.show('Solicitud rechazada', 'ok');
+      }
+      await load();
+    } catch (err) {
+      btn.disabled = false;
+      Toast.show(err.message || 'No se pudo guardar', 'err');
+    }
+  }
+
+  return { init, refreshCount };
+})();
