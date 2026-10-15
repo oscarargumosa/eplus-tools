@@ -19,7 +19,7 @@ const Budget = (() => {
 
   /* ── WP color palette (blues) ──────────────────────────────── */
   const WP_COLORS = [
-    { bg: 'bg-[#1b1464]/10', border: 'border-[#1b1464]/30', text: 'text-[#1b1464]', header: 'bg-[#1b1464]/10', accent: '#1b1464' },
+    { bg: 'bg-[#3c45a3]/10', border: 'border-[#3c45a3]/30', text: 'text-[#3c45a3]', header: 'bg-[#3c45a3]/10', accent: '#3c45a3' },
     { bg: 'bg-[#1e40af]/10', border: 'border-[#1e40af]/30', text: 'text-[#1e40af]', header: 'bg-[#1e40af]/10', accent: '#1e40af' },
     { bg: 'bg-[#0369a1]/10', border: 'border-[#0369a1]/30', text: 'text-[#0369a1]', header: 'bg-[#0369a1]/10', accent: '#0369a1' },
     { bg: 'bg-[#0e7490]/10', border: 'border-[#0e7490]/30', text: 'text-[#0e7490]', header: 'bg-[#0e7490]/10', accent: '#0e7490' },
@@ -207,7 +207,7 @@ const Budget = (() => {
     el.className = 'flex items-center gap-1 mb-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20 p-1.5 overflow-x-auto';
     el.innerHTML = tabs.map(t => `
       <button class="budget-tab flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all
-        ${activeTab === t.id ? 'bg-[#1b1464] text-[#fbff12] shadow-md' : 'text-on-surface-variant hover:bg-surface-container-low'}"
+        ${activeTab === t.id ? 'bg-[#3c45a3] text-[#d6e949] shadow-md' : 'text-on-surface-variant hover:bg-surface-container-low'}"
         data-tab="${t.id}">
         <span class="material-symbols-outlined text-sm">${t.icon}</span> ${esc(t.label)}
       </button>`).join('');
@@ -691,7 +691,7 @@ const Budget = (() => {
     // Inject the editor HTML structure into the container
     containerEl.innerHTML = `
       <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-xl text-[#1b1464]">receipt_long</span>
+        <span class="material-symbols-outlined text-xl text-[#3c45a3]">receipt_long</span>
         <h2 id="budget-title" class="font-headline text-base font-extrabold text-on-surface truncate max-w-md"></h2>
       </div>
       <div id="budget-config" class="flex items-center gap-4 mb-4 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex-wrap"></div>

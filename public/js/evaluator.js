@@ -268,7 +268,7 @@ const Evaluator = (() => {
 
       return `
         <div class="eval-sidebar-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs mb-0.5
-          ${isActive ? 'bg-[#1b1464] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
+          ${isActive ? 'bg-[#3c45a3] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
           data-sid="${it.id}">
           <span class="material-symbols-outlined text-sm">${it.icon}</span>
           <span class="flex-1 truncate">${esc(it.label)}</span>
@@ -443,7 +443,7 @@ const Evaluator = (() => {
               }).join('')}
             </div>
             <div class="px-6 py-3 bg-gray-50 flex justify-end sticky bottom-0">
-              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">Save</button>
+              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">Save</button>
             </div>
           </div>`;
         document.body.appendChild(overlay);
@@ -497,9 +497,9 @@ const Evaluator = (() => {
         <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-3 block">${esc(f.label)}</label>
         <div class="flex gap-3">${(f.options || []).map(o => {
           const isChecked = val === o;
-          return `<label class="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl border-2 cursor-pointer transition-all ${isChecked ? 'border-[#1b1464] bg-[#1b1464]/5' : 'border-outline-variant/20 hover:border-primary/30'}">
-            <input type="radio" name="${key}" value="${o}" class="eval-field-input accent-[#1b1464]" data-key="${key}" ${isChecked ? 'checked' : ''}>
-            <span class="text-sm font-bold ${isChecked ? 'text-[#1b1464]' : 'text-on-surface-variant'}">${o}</span>
+          return `<label class="flex-1 flex items-center gap-3 px-4 py-3 rounded-xl border-2 cursor-pointer transition-all ${isChecked ? 'border-[#3c45a3] bg-[#3c45a3]/5' : 'border-outline-variant/20 hover:border-primary/30'}">
+            <input type="radio" name="${key}" value="${o}" class="eval-field-input accent-[#3c45a3]" data-key="${key}" ${isChecked ? 'checked' : ''}>
+            <span class="text-sm font-bold ${isChecked ? 'text-[#3c45a3]' : 'text-on-surface-variant'}">${o}</span>
           </label>`;
         }).join('')}
         </div>
@@ -779,7 +779,7 @@ const Evaluator = (() => {
       if (!bar) return;
       el = document.createElement('div');
       el.id = 'eval-fun-tip';
-      el.className = 'mb-4 px-5 py-4 rounded-2xl bg-gradient-to-r from-[#1b1464]/5 to-primary/5 border border-primary/10 transition-all duration-500';
+      el.className = 'mb-4 px-5 py-4 rounded-2xl bg-gradient-to-r from-[#3c45a3]/5 to-primary/5 border border-primary/10 transition-all duration-500';
       bar.insertAdjacentElement('afterend', el);
     }
     el.classList.remove('hidden');
@@ -812,8 +812,8 @@ const Evaluator = (() => {
 
     let html = `
       <div class="flex items-center gap-3 mb-5">
-        <div class="w-10 h-10 rounded-xl bg-[#1b1464] flex items-center justify-center flex-shrink-0">
-          <span class="text-sm font-extrabold text-[#fbff12]">${wpNum}</span>
+        <div class="w-10 h-10 rounded-xl bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
+          <span class="text-sm font-extrabold text-[#d6e949]">${wpNum}</span>
         </div>
         <div class="flex-1">
           <div class="text-[10px] font-bold uppercase tracking-widest text-primary">Work Package ${wpNum}</div>
@@ -903,7 +903,7 @@ const Evaluator = (() => {
               }).join('')}
             </div>
             <div class="px-6 py-3 bg-gray-50 flex justify-end sticky bottom-0">
-              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">Save</button>
+              <button id="expand-save" class="px-5 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">Save</button>
             </div>
           </div>`;
         document.body.appendChild(overlay);

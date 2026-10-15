@@ -319,7 +319,7 @@
         <span class="material-symbols-outlined text-sm">${hasDiag ? 'refresh' : 'fact_check'}</span>
         ${hasDiag ? 'Re-lanzar diagnóstico' : 'Lanzar diagnóstico'}
       </button>
-      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
+      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
       ${allHandled ? `<button onclick="Master.goToCompress()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">arrow_forward</span>Pasar a Comprimir</button>` : ''}
     `;
   }
@@ -919,7 +919,7 @@
                 <option value="tr">Türkçe</option>
               </select>
             </div>
-            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
+            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
           </div>
         </div>
 
@@ -1973,7 +1973,7 @@
   /* ── Toast ───────────────────────────────────────────────── */
 
   function showToast(title, body, kind = 'info') {
-    const color = kind === 'success' ? '#16A34A' : kind === 'error' ? '#dc2626' : '#1b1464';
+    const color = kind === 'success' ? '#16A34A' : kind === 'error' ? '#dc2626' : '#3c45a3';
     const toast = document.createElement('div');
     toast.style.cssText = `
       position: fixed; top: 24px; right: 24px; z-index: 10000;

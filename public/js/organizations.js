@@ -604,7 +604,7 @@ const Organizations = (() => {
     }).join('');
 
     host.innerHTML = `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#1b1464,#2d1f8f)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#3c45a3,#2d1f8f)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Experiencia Erasmus+</div>
@@ -612,14 +612,14 @@ const Organizations = (() => {
           </div>
           <div class="text-right">
             <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Financiación total movilizada</div>
-            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#fbff12">${fmtMoney(totalAmount) || '0 €'}</div>
+            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#d6e949">${fmtMoney(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
             <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55">
-              <span class="material-symbols-outlined text-[15px]" style="color:#fbff12">military_tech</span> Fondos gestionados como coordinador
+              <span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador
             </div>
             <div class="text-xl font-extrabold leading-tight mt-1">${fmtMoney(coordAmount) || '0 €'}</div>
             <div class="text-[11px] text-white/60">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
@@ -675,7 +675,7 @@ const Organizations = (() => {
           ${r.project_identifier ? `<div class="pt-3 border-t border-outline-variant/20">
             <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/${encodeURIComponent(r.project_identifier)}"
                target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1b1464] text-[#fbff12] text-sm font-bold hover:bg-[#1b1464]/80 transition-colors">
+               class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
               <span>Ver detalle completo en Erasmus+ Project Results Platform</span>
               <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
             </a>

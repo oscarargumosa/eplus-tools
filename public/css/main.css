@@ -35,7 +35,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
   pointer-events: none; font-family: Poppins, sans-serif;
 }
 #toast.show { transform: translateY(0); opacity: 1 }
-#toast.ok   { background: #1b1464; color: #fff }
+#toast.ok   { background: #3c45a3; color: #fff }
 #toast.err  { background: #ba1a1a; color: #fff }
 
 @media (max-width: 767px) {
@@ -49,8 +49,8 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
 
 /* ── Sidebar active link ─────────────────────────────────────── */
 .nav-link.active {
-  background: #fbff12;
-  color: #1b1464;
+  background: #d6e949;
+  color: #3c45a3;
   font-weight: 700;
 }
 
@@ -84,11 +84,11 @@ input:focus, select:focus, textarea:focus {
 /* ── Evaluator ───────────────────────────────────────────────── */
 .eval-sec-chip { transition: all .2s ease }
 .eval-sec-chip:hover { background: rgba(6,0,62,.06) }
-.eval-sec-chip.active { background: #1b1464; color: #fff; font-weight: 700 }
+.eval-sec-chip.active { background: #3c45a3; color: #fff; font-weight: 700 }
 .eval-sec-chip.active .eval-sec-dot { background: #fff !important }
 .eval-q-item { transition: all .15s ease; border-left: 3px solid transparent }
 .eval-q-item:hover { background: rgba(6,0,62,.05) }
-.eval-q-item.active { border-left-color: #1b1464; background: rgba(6,0,62,.08); font-weight: 600 }
+.eval-q-item.active { border-left-color: #3c45a3; background: rgba(6,0,62,.08); font-weight: 600 }
 .eval-crit-card { transition: all .2s ease; border-left: 4px solid transparent }
 .eval-crit-card:hover { box-shadow: 0 2px 8px rgba(6,0,62,.06) }
 @keyframes critIn { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:translateY(0) } }
@@ -102,7 +102,7 @@ input:focus, select:focus, textarea:focus {
   cursor: pointer; transition: all .2s ease;
   flex-shrink: 0; vertical-align: middle; margin-left: 4px;
 }
-.field-info:hover { background: #1b1464; color: #fbff12 }
+.field-info:hover { background: #3c45a3; color: #d6e949 }
 .field-info .material-symbols-outlined { font-size: 12px; line-height: 1 }
 
 .field-info-overlay {
@@ -124,7 +124,7 @@ input:focus, select:focus, textarea:focus {
   max-height: 80vh; overflow-y: auto;
 }
 .field-info-popup h4 {
-  font-size: 14px; font-weight: 700; color: #fbff12;
+  font-size: 14px; font-weight: 700; color: #d6e949;
   margin: 0 0 10px 0; letter-spacing: .02em;
   padding-right: 24px;
 }
@@ -263,7 +263,7 @@ input:focus, select:focus, textarea:focus {
   border: 2px solid #cccccc; color: #787682;
   transition: all .2s ease; flex-shrink: 0;
 }
-.calc-prog-dot.active { background: #1b1464; border-color: #1b1464; color: #fff }
+.calc-prog-dot.active { background: #3c45a3; border-color: #3c45a3; color: #fff }
 .calc-prog-dot.done   { background: #2d6a4f; border-color: #2d6a4f; color: #fff }
 .calc-prog-dot.locked { opacity: .4; cursor: default }
 .calc-prog-line { flex: 1; height: 2px; background: #cccccc; min-width: 12px }
@@ -333,7 +333,7 @@ input:focus, select:focus, textarea:focus {
   border-radius: 6px; background: transparent; cursor: pointer;
   text-align: left; transition: all .15s; font-family: inherit;
 }
-.calc-act-pick:hover { border-color: #1b1464; background: rgba(6,0,62,.04) }
+.calc-act-pick:hover { border-color: #3c45a3; background: rgba(6,0,62,.04) }
 
 /* ── Gantt ────────────────────────────────────────────────────── */
 .calc-gantt-tip {
@@ -351,8 +351,8 @@ input:focus, select:focus, textarea:focus {
   cursor: pointer; border-bottom: 2px solid transparent;
   transition: all .15s; font-family: inherit;
 }
-.calc-res-tab:hover { color: #191c1e }
-.calc-res-tab.active { color: #1b1464; border-bottom-color: #1b1464; font-weight: 700 }
+.calc-res-tab:hover { color: #222351 }
+.calc-res-tab.active { color: #3c45a3; border-bottom-color: #3c45a3; font-weight: 700 }
 
 /* ── Print preview tab ───────────────────────────────────────── */
 .print-tab-shell { display: flex; flex-direction: column; height: calc(100vh - 280px); min-height: 560px; }
@@ -417,8 +417,8 @@ input:focus, select:focus, textarea:focus {
 #panel-intake input:focus,
 #panel-intake select:focus,
 #panel-intake textarea:focus {
-  border-color: #1b1464;
-  box-shadow: 0 0 0 2px rgba(27,20,100,.1);
+  border-color: #3c45a3;
+  box-shadow: 0 0 0 2px rgba(60,69,163,.1);
 }
 
 /* ── Larger text across intake & calculator ───────────────────── */
@@ -482,9 +482,9 @@ input:focus, select:focus, textarea:focus {
   padding: 0;
 }
 .voice-btn:hover {
-  background: #1b1464;
-  color: #fbff12;
-  border-color: #1b1464;
+  background: #3c45a3;
+  color: #d6e949;
+  border-color: #3c45a3;
 }
 .voice-btn .material-symbols-outlined {
   font-size: 18px;
@@ -515,8 +515,8 @@ textarea.voice-recording {
 /* Loading state (transcribing) */
 .voice-btn.voice-loading {
   background: #f7f9fb;
-  border-color: #1b1464;
-  color: #1b1464;
+  border-color: #3c45a3;
+  color: #3c45a3;
   cursor: wait;
   pointer-events: none;
 }
@@ -541,7 +541,7 @@ textarea.voice-recording {
   right: -4%;
   bottom: 0.06em;
   height: 0.32em;
-  background: #fbff12;
+  background: #d6e949;
   z-index: -1;
   border-radius: 0.4em;
   transform: rotate(-1.2deg);
@@ -554,7 +554,7 @@ textarea.voice-recording {
   right: -60px;
   width: 280px;
   height: 280px;
-  background: #fbff12;
+  background: #d6e949;
   opacity: 0.45;
   pointer-events: none;
   z-index: 0;
@@ -567,7 +567,7 @@ textarea.voice-recording {
   right: -30px;
   width: 160px;
   height: 160px;
-  background: #fbff12;
+  background: #d6e949;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
@@ -610,7 +610,7 @@ textarea.voice-recording {
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;
-  color: #191c1e;
+  color: #222351;
   transition: background-color 0.15s ease;
 }
 .filter-radio:hover,
@@ -619,13 +619,13 @@ textarea.voice-recording {
 }
 .filter-radio input[type="radio"],
 .filter-toggle input[type="checkbox"] {
-  accent-color: #1b1464;
+  accent-color: #3c45a3;
   cursor: pointer;
 }
 .filter-radio:has(input:checked),
 .filter-toggle:has(input:checked) {
-  background: #fbff12;
-  color: #1b1464;
+  background: #d6e949;
+  color: #3c45a3;
   font-weight: 700;
 }
 .filter-count {
@@ -649,13 +649,13 @@ textarea.voice-recording {
   white-space: nowrap;
 }
 .badge-premium {
-  background: #c7afdf;
-  color: #1b1464;
+  background: #997fc7;
+  color: #3c45a3;
 }
 .badge-good {
-  background: rgba(251, 255, 18, 0.45);
-  color: #1b1464;
-  border: 1px solid #fbff12;
+  background: rgba(214,233,73, 0.45);
+  color: #3c45a3;
+  border: 1px solid #d6e949;
 }
 .badge-acceptable {
   background: #eeeeee;
@@ -669,7 +669,7 @@ textarea.voice-recording {
 
 /* Card subtle yellow accent on hover */
 .entity-card:hover h3 {
-  background-image: linear-gradient(transparent 70%, rgba(251,255,18,0.5) 70%);
+  background-image: linear-gradient(transparent 70%, rgba(214,233,73,0.5) 70%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -723,7 +723,7 @@ button:focus-visible,
 a.nav-link:focus-visible,
 .filter-radio:focus-within,
 .filter-toggle:focus-within {
-  outline: 3px solid #fbff12;
+  outline: 3px solid #d6e949;
   outline-offset: 2px;
   border-radius: 12px;
 }
@@ -731,7 +731,7 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(251, 255, 18, 0.5);
+  box-shadow: 0 0 0 3px rgba(214,233,73, 0.5);
 }
 
 /* ── KPI card subtle hover ────────────────────────────────── */
@@ -745,7 +745,7 @@ textarea:focus-visible {
 /* ── Map tooltip (D3) ─────────────────────────────────────── */
 .map-tooltip {
   z-index: 10;
-  box-shadow: 0 10px 24px rgba(27, 20, 100, 0.25);
+  box-shadow: 0 10px 24px rgba(60,69,163, 0.25);
 }
 
 /* ── Smooth scroll into chips ─────────────────────────────── */
@@ -807,12 +807,12 @@ textarea:focus-visible {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 6px 12px; border-radius: 999px;
   font-size: 12px; font-weight: 600;
-  background: #f8f8f8; color: #1b1464;
+  background: #f8f8f8; color: #3c45a3;
   border: 1px solid rgba(204,204,204,0.5);
   cursor: pointer; transition: all .15s;
 }
 .tier-chip:hover { background: #eee; }
-.tier-chip.active { background: #1b1464; color: #fff; border-color: #1b1464; }
+.tier-chip.active { background: #3c45a3; color: #fff; border-color: #3c45a3; }
 .tier-chip .chip-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--chip, #888);
@@ -822,19 +822,19 @@ textarea:focus-visible {
 #stats-globe-container:active { cursor: grabbing; }
 
 /* botones del toggle 2D/3D */
-.atlas-mode-btn:not(.bg-primary):hover { background: rgba(27, 20, 100, 0.08); }
+.atlas-mode-btn:not(.bg-primary):hover { background: rgba(60,69,163, 0.08); }
 
 /* Popup MapLibre del Atlas — apariencia E+ */
 .maplibregl-popup.atlas-popup .maplibregl-popup-content {
   border-radius: 14px;
   border: 1px solid rgba(204, 204, 204, 0.6);
-  box-shadow: 0 10px 28px rgba(27, 20, 100, 0.18);
+  box-shadow: 0 10px 28px rgba(60,69,163, 0.18);
   padding: 0;
   background: #fff;
 }
 .maplibregl-popup.atlas-popup .maplibregl-popup-tip { display: none; }
 .maplibregl-popup-close-button {
-  font-size: 18px; padding: 4px 8px; color: #1b1464;
+  font-size: 18px; padding: 4px 8px; color: #3c45a3;
 }
 .atlas-popup-body { font-family: 'Poppins', sans-serif; min-width: 320px; }
 .atlas-popup-body a { color: inherit; }
@@ -842,7 +842,7 @@ textarea:focus-visible {
 /* Estilos del control de navegación */
 .maplibregl-ctrl-group {
   border-radius: 10px !important;
-  box-shadow: 0 2px 6px rgba(27, 20, 100, 0.15) !important;
+  box-shadow: 0 2px 6px rgba(60,69,163, 0.15) !important;
 }
 .maplibregl-ctrl-attrib {
   font-size: 10px;
@@ -857,7 +857,7 @@ textarea:focus-visible {
 }
 .prose-summary strong {
   font-weight: 700;
-  color: #1b1464;
+  color: #3c45a3;
 }
 .prose-summary em {
   font-style: italic;
@@ -865,7 +865,7 @@ textarea:focus-visible {
 .prose-summary code {
   font-family: 'Fira Code', monospace;
   font-size: 0.85em;
-  background: rgba(27,20,100,0.06);
+  background: rgba(60,69,163,0.06);
   padding: 0.1em 0.35em;
   border-radius: 3px;
 }
@@ -874,7 +874,7 @@ textarea:focus-visible {
 .prose-summary h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: #1b1464;
+  color: #3c45a3;
   line-height: 1.25;
 }
 .prose-summary h2 {

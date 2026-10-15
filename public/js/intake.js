@@ -365,7 +365,7 @@ const Intake = (() => {
   }
 
   function budgetOptBtnClass(active) {
-    return `intake-budget-opt px-4 py-2.5 rounded-lg border-2 text-sm font-bold transition-all ${active ? 'border-[#1b1464] bg-[#fbff12] text-[#1b1464] shadow-sm' : 'border-outline-variant bg-white text-on-surface hover:border-primary'}`;
+    return `intake-budget-opt px-4 py-2.5 rounded-lg border-2 text-sm font-bold transition-all ${active ? 'border-[#3c45a3] bg-[#d6e949] text-[#3c45a3] shadow-sm' : 'border-outline-variant bg-white text-on-surface hover:border-primary'}`;
   }
 
   // Renderiza el selector de presupuesto si la call tiene >1 importe.
@@ -1195,7 +1195,7 @@ const Intake = (() => {
       f.style.width = '100%'; f.style.background = '#ba1a1a';
     } else {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-700 transition-all';
-      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#1b1464';
+      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
     }
   }
 

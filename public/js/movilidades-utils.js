@@ -170,7 +170,7 @@ const MovilidadesUtils = (() => {
 
     const apply = item.application_url
       ? `<a href="${escapeHtml(item.application_url)}" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1b1464] text-[#fbff12] text-sm font-bold hover:bg-[#1b1464]/80 transition-colors">
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
             <span>Apply on SALTO</span>
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
           </a>`

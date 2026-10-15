@@ -2,14 +2,14 @@
    Web pública — hoja común de las páginas de contenido.
    Diales (criterio de composición del ecosistema): varianza 5,
    movimiento 3, densidad 4. Índice y lectura, no escaparate.
-   Marca: navy #1b1464 · amarillo #fbff12 · lavanda. Un solo acento.
+   Marca: navy #3c45a3 · amarillo #d6e949 · lavanda. Un solo acento.
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  --navy:      #1b1464;
-  --yellow:    #fbff12;
-  --lav:       #c7afdf;
+  --navy:      #3c45a3;
+  --yellow:    #d6e949;
+  --lav:       #997fc7;
   --lav-soft:  #f1ecf7;
-  --ink:       #191c1e;
+  --ink:       #222351;
   --muted:     #474551;
   --line:      #e3ddec;
   --surface:   #fdfdfd;

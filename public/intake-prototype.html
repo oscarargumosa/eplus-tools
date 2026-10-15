@@ -14,12 +14,12 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        "primary":"#1b1464","primary-container":"#1b1464",
-        "secondary-fixed":"#e7eb00","secondary-fixed-dim":"#cbce00",
+        "primary":"#3c45a3","primary-container":"#3c45a3",
+        "secondary-fixed":"#c3d63a","secondary-fixed-dim":"#cbce00",
         "surface":"#f7f9fb","surface-dim":"#d8dadc","surface-bright":"#f7f9fb",
         "surface-container":"#eceef0","surface-container-low":"#f2f4f6",
         "surface-container-high":"#e6e8ea","surface-container-lowest":"#ffffff",
-        "on-surface":"#191c1e","on-surface-variant":"#474551",
+        "on-surface":"#222351","on-surface-variant":"#474551",
         "outline":"#787682","outline-variant":"#c8c5d2",
         "error":"#ba1a1a","error-container":"#ffdad6",
         "on-error-container":"#93000a",
@@ -45,7 +45,7 @@ tailwind.config = {
   /* Grid arquitectónico */
   .arch-grid{
     position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:linear-gradient(#1B1464 1px,transparent 1px),linear-gradient(90deg,#1B1464 1px,transparent 1px);
+    background-image:linear-gradient(#3c45a3 1px,transparent 1px),linear-gradient(90deg,#3c45a3 1px,transparent 1px);
     background-size:60px 60px;opacity:0.03;
   }
 
@@ -63,7 +63,7 @@ tailwind.config = {
     pointer-events:none;font-family:Manrope,sans-serif;
   }
   #toast.show{transform:translateY(0);opacity:1}
-  #toast.ok{background:#1b1464;color:#fff}
+  #toast.ok{background:#3c45a3;color:#fff}
   #toast.err{background:#ba1a1a;color:#fff}
 
   /* Scrollbar sutil */
@@ -225,7 +225,7 @@ tailwind.config = {
 
     <div class="flex justify-between items-center mt-10 pt-5 border-t border-outline-variant">
       <span></span>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -281,7 +281,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -354,7 +354,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Ver resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -421,7 +421,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Editar
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
         <span class="material-symbols-outlined text-lg">bolt</span> Exportar para Wizard
       </button>
     </div>
@@ -769,7 +769,7 @@ function updateWC(c) {
     f.style.width = '100%'; f.style.background = '#ba1a1a';
   } else {
     b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-700 transition-all';
-    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#1b1464';
+    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
   }
 }
 

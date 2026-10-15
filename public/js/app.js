@@ -320,8 +320,8 @@ const App = (() => {
         <button id="login-wall-close" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors">
           <span class="material-symbols-outlined">close</span>
         </button>
-        <div class="w-14 h-14 rounded-2xl bg-[#1b1464] flex items-center justify-center mx-auto mb-4">
-          <span class="material-symbols-outlined text-[#fbff12] text-3xl">lock_open</span>
+        <div class="w-14 h-14 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-[#d6e949] text-3xl">lock_open</span>
         </div>
         <h3 class="text-xl font-bold text-on-surface mb-2">Crea tu cuenta gratis</h3>
         <p class="text-sm text-on-surface-variant mb-6">Regístrate para ver ${whatTxt}. Es gratis y tardas menos de un minuto.</p>
@@ -365,8 +365,8 @@ const App = (() => {
     if (!host) return;
     host.innerHTML = `
       <div class="max-w-xl mx-auto text-center py-20 px-6">
-        <div class="w-16 h-16 rounded-2xl bg-[#1b1464] flex items-center justify-center mx-auto mb-6">
-          <span class="material-symbols-outlined text-[#fbff12] text-4xl">${c.icon}</span>
+        <div class="w-16 h-16 rounded-2xl bg-[#3c45a3] flex items-center justify-center mx-auto mb-6">
+          <span class="material-symbols-outlined text-[#d6e949] text-4xl">${c.icon}</span>
         </div>
         <h2 class="text-2xl font-extrabold text-on-surface mb-3">${c.title}</h2>
         <p class="text-on-surface-variant mb-8">${c.body}</p>
@@ -721,8 +721,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       recentEl.innerHTML = list.slice(0, 5).map(p => `
         <div class="flex items-center gap-3 px-4 py-3 bg-white rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all mb-2" onclick="if(typeof Intake!=='undefined'){Intake.openProject('${p.id}')}">
-          <div class="w-8 h-8 rounded-lg bg-[#1b1464] flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-[#fbff12] text-base">description</span>
+          <div class="w-8 h-8 rounded-lg bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[#d6e949] text-base">description</span>
           </div>
           <div class="flex-1 min-w-0">
             <div class="text-sm font-bold text-on-surface truncate">${p.name || 'Untitled'}</div>

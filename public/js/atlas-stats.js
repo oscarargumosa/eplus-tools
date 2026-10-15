@@ -26,8 +26,8 @@ const AtlasStats = (() => {
 
   const TIER_BY_CODE = { 0: 'unenriched', 1: 'premium', 2: 'good', 3: 'acceptable', 4: 'minimal' };
   const TIER_COLOR = {
-    premium:    '#fbff12',
-    good:       '#c7afdf',
+    premium:    '#d6e949',
+    good:       '#997fc7',
     acceptable: '#9aa0a6',
     minimal:    '#5a5a6a',
     unenriched: '#3a3a48',
@@ -256,14 +256,14 @@ const AtlasStats = (() => {
     const chart = new ApexCharts(el, {
       chart: { type: 'donut', height: 260, fontFamily: 'Poppins' },
       series, labels: names, colors: cols,
-      legend: { position: 'bottom', fontSize: '12px', fontWeight: 600, labels: { colors: '#1b1464' } },
+      legend: { position: 'bottom', fontSize: '12px', fontWeight: 600, labels: { colors: '#3c45a3' } },
       stroke: { width: 2, colors: ['#fff'] },
       dataLabels: { enabled: false },
       plotOptions: {
         pie: { donut: { size: '70%', labels: { show: true,
           total: { show: true, label: 'Total', color: '#474551', fontSize: '11px', fontWeight: 600,
                    formatter: () => formatNumber(series.reduce((a,b) => a+b, 0)) },
-          value: { color: '#1b1464', fontSize: '20px', fontWeight: 800 },
+          value: { color: '#3c45a3', fontSize: '20px', fontWeight: 800 },
         }}}},
       tooltip: { y: { formatter: (v) => formatNumber(v) + ' entidades' } },
     });
@@ -272,10 +272,10 @@ const AtlasStats = (() => {
   }
   function renderBars() {
     if (typeof ApexCharts === 'undefined') return setTimeout(renderBars, 200);
-    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#fbff12', '#1b1464');
-    bar('stats-bar-categories', cached.categories.slice(0, 12), 'category', 'count', '#c7afdf', '#1b1464');
-    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#fbff12', '#1b1464');
-    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#c7afdf', '#1b1464');
+    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#d6e949', '#3c45a3');
+    bar('stats-bar-categories', cached.categories.slice(0, 12), 'category', 'count', '#997fc7', '#3c45a3');
+    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#d6e949', '#3c45a3');
+    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#997fc7', '#3c45a3');
   }
   function bar(elId, data, labelKey, valueKey, fill, text) {
     const el = document.getElementById(elId);
@@ -372,8 +372,8 @@ const AtlasStats = (() => {
       source: 'entities',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#1b1464',
-        'circle-stroke-color': '#fbff12',
+        'circle-color': '#3c45a3',
+        'circle-stroke-color': '#d6e949',
         'circle-stroke-width': 3,
         'circle-radius': [
           'step', ['get', 'point_count'],
@@ -397,7 +397,7 @@ const AtlasStats = (() => {
         'text-size': 12,
         'text-allow-overlap': true,
       },
-      paint: { 'text-color': '#fbff12' },
+      paint: { 'text-color': '#d6e949' },
     });
 
     // Individual points colored by tier
@@ -421,7 +421,7 @@ const AtlasStats = (() => {
           'good',    7,
           6,
         ],
-        'circle-stroke-color': '#1b1464',
+        'circle-stroke-color': '#3c45a3',
         'circle-stroke-width': 1.5,
         'circle-opacity': 0.95,
       },
@@ -538,7 +538,7 @@ const AtlasStats = (() => {
       e.score_eu_readiness != null    ? `EU ${e.score_eu_readiness}`     : null,
       e.score_vitality != null        ? `Vit ${e.score_vitality}`        : null,
     ].filter(Boolean).join(' · ');
-    const tierBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style="background:${TIER_COLOR[tierName]};color:#1b1464">${TIER_LABEL[tierName]}</span>`;
+    const tierBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style="background:${TIER_COLOR[tierName]};color:#3c45a3">${TIER_LABEL[tierName]}</span>`;
     return `
       <div class="atlas-popup-body">
         <div class="p-4">

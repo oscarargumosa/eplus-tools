@@ -378,7 +378,7 @@ const Developer = (() => {
         </div>
 
         <div class="flex justify-center">
-          <button onclick="Developer._prepTab('consorcio')" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-[#1b1464] text-[#fbff12] font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.2)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(27,20,100,0.3)] active:scale-95 transition-all ${canGenerate ? '' : 'opacity-40 pointer-events-none'}">
+          <button onclick="Developer._prepTab('consorcio')" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-[#3c45a3] text-[#d6e949] font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.2)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(60,69,163,0.3)] active:scale-95 transition-all ${canGenerate ? '' : 'opacity-40 pointer-events-none'}">
             <span class="material-symbols-outlined text-2xl">groups</span> Consorcio
           </button>
         </div>
@@ -396,8 +396,8 @@ const Developer = (() => {
     el.innerHTML = renderPhaseTabs(11) + `
       <div class="max-w-5xl">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-[#1b1464]/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl text-[#1b1464]">timeline</span>
+          <div class="w-10 h-10 rounded-xl bg-[#3c45a3]/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl text-[#3c45a3]">timeline</span>
           </div>
           <div>
             <h2 class="font-headline text-lg font-bold">Cronograma del proyecto</h2>
@@ -444,8 +444,8 @@ const Developer = (() => {
     el.innerHTML = renderPhaseTabs(12) + `
       <div class="max-w-5xl">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-[#1b1464]/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl text-[#1b1464]">account_balance</span>
+          <div class="w-10 h-10 rounded-xl bg-[#3c45a3]/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl text-[#3c45a3]">account_balance</span>
           </div>
           <div>
             <h2 class="font-headline text-lg font-bold">Presupuesto</h2>
@@ -602,7 +602,7 @@ const Developer = (() => {
                     <span class="material-symbols-outlined text-xs">description</span> Original
                   </button>
                   ${variants.map(v => `
-                    <button onclick="Developer._selectVariant('${p.id}', '${v.id}')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold transition-all ${selectedVariant?.id === v.id ? 'bg-[#1b1464] text-[#fbff12] shadow-sm' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/20'}">
+                    <button onclick="Developer._selectVariant('${p.id}', '${v.id}')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold transition-all ${selectedVariant?.id === v.id ? 'bg-[#3c45a3] text-[#d6e949] shadow-sm' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/20'}">
                       <span class="material-symbols-outlined text-xs">auto_awesome</span> ${esc(v.category_label || v.category)}
                     </button>
                   `).join('')}
@@ -814,7 +814,7 @@ const Developer = (() => {
             <span class="material-symbols-outlined text-4xl text-amber-400 mb-2">account_balance</span>
             <h3 class="font-headline text-base font-bold text-amber-800 mb-1">Error generando presupuesto</h3>
             <p class="text-sm text-amber-700 mb-4">${esc(e.message || 'Error desconocido')}</p>
-            <button id="prep-budget-retry" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+            <button id="prep-budget-retry" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
               <span class="material-symbols-outlined text-sm">refresh</span> Reintentar
             </button>
           </div>`;
@@ -1068,7 +1068,7 @@ const Developer = (() => {
           </div>
 
           <div class="flex items-center gap-3 mb-3">
-            <label class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-[#1b1464] text-[#fbff12] cursor-pointer hover:bg-[#1b1464]/90 transition-colors">
+            <label class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-[#3c45a3] text-[#d6e949] cursor-pointer hover:bg-[#3c45a3]/90 transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Subir documento
               <input type="file" accept=".pdf,.docx,.txt" class="hidden" id="prep-doc-upload">
             </label>
@@ -2048,20 +2048,20 @@ const Developer = (() => {
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;animation:overlayIn .15s ease;';
       overlay.innerHTML = `
         <div style="background:#fff;border-radius:14px;max-width:480px;width:90vw;padding:28px;box-shadow:0 12px 40px rgba(0,0,0,.3);font-family:Poppins,sans-serif;">
-          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#1b1464;">Plan profesional · Entregables y Milestones</h3>
+          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#3c45a3;">Plan profesional · Entregables y Milestones</h3>
           <p style="margin:0 0 18px 0;font-size:13px;color:#787682;line-height:1.5;">
             ${hasExisting
               ? 'Esto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible).'
               : 'El asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45s.'}
           </p>
-          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#1b1464;margin-bottom:6px;">Número total de deliverables del proyecto</label>
-          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(27,20,100,.15);border-radius:10px;color:#1b1464;text-align:center;outline:none;" />
+          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#3c45a3;margin-bottom:6px;">Número total de deliverables del proyecto</label>
+          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(60,69,163,.15);border-radius:10px;color:#3c45a3;text-align:center;outline:none;" />
           <p style="margin:8px 0 0 0;font-size:11px;color:#787682;line-height:1.5;">
             <strong>Mín 8</strong> · <strong>Máx 15</strong> (cap absoluto EACEA — superarlo puede llevar a rechazo del proyecto). Se repartirán proporcionalmente entre los WPs según el número de actividades de cada uno. Todas las tareas con financiación quedarán cubiertas por al menos un entregable.
           </p>
           <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:22px;">
-            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(27,20,100,.2);background:#fff;color:#1b1464;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
-            <button id="dms-target-ok" style="padding:10px 22px;border-radius:10px;border:0;background:#1b1464;color:#fbff12;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
+            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(60,69,163,.2);background:#fff;color:#3c45a3;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
+            <button id="dms-target-ok" style="padding:10px 22px;border-radius:10px;border:0;background:#3c45a3;color:#d6e949;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
           </div>
         </div>`;
       document.body.appendChild(overlay);
@@ -3019,7 +3019,7 @@ const Developer = (() => {
 
   async function genInterview() {
     const btn = document.getElementById('prep-gen-interview-btn');
-    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="animate-spin w-4 h-4 border-2 border-[#fbff12] border-t-transparent rounded-full"></span> Generando preguntas...'; }
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="animate-spin w-4 h-4 border-2 border-[#d6e949] border-t-transparent rounded-full"></span> Generando preguntas...'; }
     try {
       await API.post('/developer/projects/' + currentProject.id + '/interview/generate', {});
       renderPrepStudio();
@@ -3108,8 +3108,8 @@ const Developer = (() => {
 
       <!-- Floating AI button — pill, opens the drawer -->
       <button id="dev-ai-fab" onclick="Developer._toggleAiDrawer()" title="Refinar con IA (Ctrl+I)"
-        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 pl-4 pr-5 py-3 rounded-full bg-[#1b1464] hover:bg-[#1b1464]/90 text-white text-sm font-bold shadow-xl transition-all hover:scale-[1.03]">
-        <span class="material-symbols-outlined text-lg text-[#fbff12]">auto_awesome</span>
+        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 pl-4 pr-5 py-3 rounded-full bg-[#3c45a3] hover:bg-[#3c45a3]/90 text-white text-sm font-bold shadow-xl transition-all hover:scale-[1.03]">
+        <span class="material-symbols-outlined text-lg text-[#d6e949]">auto_awesome</span>
         <span>Refinar con IA</span>
       </button>
 
@@ -3348,17 +3348,17 @@ const Developer = (() => {
         </div>
         <div class="flex flex-col items-center py-12">
           <div class="relative w-16 h-16 mb-4">
-            <div class="absolute inset-0 rounded-full bg-[#1b1464]/10 animate-pulse"></div>
+            <div class="absolute inset-0 rounded-full bg-[#3c45a3]/10 animate-pulse"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <span class="material-symbols-outlined text-3xl text-[#1b1464]" style="animation:writePencil 1.5s ease-in-out infinite">edit_note</span>
+              <span class="material-symbols-outlined text-3xl text-[#3c45a3]" style="animation:writePencil 1.5s ease-in-out infinite">edit_note</span>
             </div>
           </div>
-          <p class="text-sm font-bold text-[#1b1464] mb-1">Generando seccion...</p>
+          <p class="text-sm font-bold text-[#3c45a3] mb-1">Generando seccion...</p>
           <p class="text-xs text-on-surface-variant mb-4">La IA escribe con todo el contexto del proyecto</p>
-          <div class="bg-[#1b1464] rounded-xl p-4 max-w-md shadow-lg">
+          <div class="bg-[#3c45a3] rounded-xl p-4 max-w-md shadow-lg">
             <div class="flex items-start gap-2">
-              <span class="material-symbols-outlined text-sm text-[#fbff12] mt-0.5">lightbulb</span>
-              <p class="text-xs text-[#fbff12]/90 leading-relaxed" id="dev-cascade-tip">${TIPS[Math.floor(Math.random() * TIPS.length)]}</p>
+              <span class="material-symbols-outlined text-sm text-[#d6e949] mt-0.5">lightbulb</span>
+              <p class="text-xs text-[#d6e949]/90 leading-relaxed" id="dev-cascade-tip">${TIPS[Math.floor(Math.random() * TIPS.length)]}</p>
             </div>
           </div>
         </div>
@@ -3404,11 +3404,11 @@ const Developer = (() => {
           <h3 class="font-headline text-base font-bold text-on-surface mb-1">Esta sección está vacía</h3>
           <p class="text-xs text-on-surface-variant max-w-md mb-5">Cuando pulses "Generar con IA", redactaré una primera propuesta con todo el contexto del proyecto. Después podrás iterar pidiendo mejoras concretas.</p>
           <div class="flex flex-wrap items-center justify-center gap-2">
-            <button onclick="Developer._cascadeGenerate()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] shadow-lg hover:bg-[#1b1464]/90 transition-all">
-              <span class="material-symbols-outlined text-lg text-[#fbff12]">auto_awesome</span>
+            <button onclick="Developer._cascadeGenerate()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#3c45a3] shadow-lg hover:bg-[#3c45a3]/90 transition-all">
+              <span class="material-symbols-outlined text-lg text-[#d6e949]">auto_awesome</span>
               <span class="text-white">Generar con IA</span>
             </button>
-            <button onclick="Developer._cascadeWriteBlank()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-[#1b1464] bg-white border border-[#1b1464]/30 hover:bg-[#1b1464]/5 transition-colors">
+            <button onclick="Developer._cascadeWriteBlank()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-[#3c45a3] bg-white border border-[#3c45a3]/30 hover:bg-[#3c45a3]/5 transition-colors">
               <span class="material-symbols-outlined text-sm">edit</span>
               <span>Escribir yo mismo</span>
             </button>
@@ -3445,7 +3445,7 @@ const Developer = (() => {
       <!-- Action buttons -->
       <div class="flex items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -3532,7 +3532,7 @@ const Developer = (() => {
 
       <div class="flex items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -3669,10 +3669,10 @@ const Developer = (() => {
       <div class="mb-3 flex items-center justify-between flex-wrap gap-2">
         <h3 class="font-headline text-sm font-bold text-on-surface">Critical risks and risk-management strategy</h3>
         <div class="flex items-center gap-2">
-          <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#1b1464] bg-secondary-fixed border border-[#1b1464]/20 hover:bg-secondary-fixed/80 transition-colors">
+          <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#3c45a3] bg-secondary-fixed border border-[#3c45a3]/20 hover:bg-secondary-fixed/80 transition-colors">
             <span class="material-symbols-outlined text-sm">auto_awesome</span> Autocompletar con IA
           </button>
-          <button id="risk-add-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 transition-colors">
+          <button id="risk-add-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> Añadir riesgo
           </button>
         </div>
@@ -3684,7 +3684,7 @@ const Developer = (() => {
 
       <div class="flex items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -4188,15 +4188,15 @@ const Developer = (() => {
           <div class="space-y-2 mb-4">
             <button onclick="Developer._aiEvaluateRisks()" id="ai-eval-risks-btn"
               class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-sm transition-colors">
-              <span class="material-symbols-outlined text-base text-[#fbff12]">trending_up</span>
+              <span class="material-symbols-outlined text-base text-[#d6e949]">trending_up</span>
               <div class="text-left">
                 <div>Evaluar tabla con IA</div>
                 <div class="text-[10px] font-normal text-white/80">Diagnóstico + sugerencias por fila</div>
               </div>
             </button>
             <button onclick="document.getElementById('risk-ai-btn')?.click(); Developer._toggleAiDrawer();"
-              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-sm transition-colors">
-              <span class="material-symbols-outlined text-base text-[#fbff12]">auto_awesome</span>
+              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-sm transition-colors">
+              <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
               <div class="text-left">
                 <div>Autocompletar con IA</div>
                 <div class="text-[10px] font-normal text-white/75">Regenera ≥8 riesgos desde cero</div>
@@ -4252,15 +4252,15 @@ const Developer = (() => {
 
       <!-- AI actions -->
       <div class="space-y-2">
-        <button onclick="Developer._aiImproveCustom()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-sm transition-colors">
-          <span class="material-symbols-outlined text-base text-[#fbff12]">auto_awesome</span>
+        <button onclick="Developer._aiImproveCustom()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-sm transition-colors">
+          <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
           <div>
             <div class="text-white">Mejorar con IA</div>
             <div class="text-[10px] font-normal text-white/75">Dile que quieres cambiar (voz o texto)</div>
           </div>
         </button>
         <button onclick="Developer._aiEvaluateAndRefine()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-sm transition-colors">
-          <span class="material-symbols-outlined text-base text-[#fbff12]">trending_up</span>
+          <span class="material-symbols-outlined text-base text-[#d6e949]">trending_up</span>
           <div>
             <div class="text-white">Evaluar y refinar con IA</div>
             <div class="text-[10px] font-normal text-white/80">Diagnóstico + arreglo automático</div>
@@ -4525,7 +4525,7 @@ const Developer = (() => {
               <div class="flex items-center gap-2 shrink-0">
                 ${counter}
                 <button onclick="Developer._copyAnswer(this, '${encoded}')" ${hasText ? '' : 'disabled'}
-                  class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold ${hasText ? 'text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/85' : 'text-on-surface-variant bg-surface-container-low cursor-not-allowed'} transition-colors">
+                  class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold ${hasText ? 'text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/85' : 'text-on-surface-variant bg-surface-container-low cursor-not-allowed'} transition-colors">
                   <span class="material-symbols-outlined text-xs">content_copy</span> Copiar
                 </button>
               </div>
@@ -4725,7 +4725,7 @@ const Developer = (() => {
         <div class="px-4 pb-4">
           <div class="flex items-center gap-2">
             <input type="text" placeholder="O escribe una tematica personalizada..." class="pif-custom-input flex-1 px-3 py-2 text-sm border border-outline-variant/20 rounded-lg bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/15">
-            <button class="pif-custom-btn inline-flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold text-[#1b1464] bg-[#1b1464]/10 hover:bg-[#1b1464]/20 transition-colors">
+            <button class="pif-custom-btn inline-flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold text-[#3c45a3] bg-[#3c45a3]/10 hover:bg-[#3c45a3]/20 transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Crear
             </button>
           </div>
@@ -4997,7 +4997,7 @@ const Developer = (() => {
           </button>
           ${canRefine ? `
             <button onclick="Developer._refineGo()" class="flex-1 px-3 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 flex items-center justify-center gap-1 shadow-sm">
-              <span class="material-symbols-outlined text-sm text-[#fbff12]">bolt</span>
+              <span class="material-symbols-outlined text-sm text-[#d6e949]">bolt</span>
               <span>Refinar con IA</span>
             </button>
           ` : ''}
@@ -5318,7 +5318,7 @@ const Developer = (() => {
       <div id="wp-card-budget" class="rounded-xl border border-outline-variant/30 bg-white p-4 mb-6">Cargando budget…</div>
 
       <div class="flex items-center gap-3">
-        <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#1b1464] hover:bg-[#1b1464]/90 shadow-lg hover:shadow-xl transition-all">
+        <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
           <span class="material-symbols-outlined text-lg">check</span> ${isLast ? 'Finalizar borrador' : 'Aprobar y siguiente'}
         </button>
         ${!isLast ? '<button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">Saltar</button>' : ''}
@@ -5970,8 +5970,8 @@ const Developer = (() => {
               <span class="material-symbols-outlined text-base">restart_alt</span>
               <span>Regenerar desde cero</span>
             </button>
-            <button onclick="Developer._submitImproveRequest()" id="improve-submit-btn" class="px-4 py-2 rounded-lg text-sm font-bold bg-[#1b1464] text-white hover:bg-[#1b1464]/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow">
-              <span class="material-symbols-outlined text-base text-[#fbff12]">auto_awesome</span>
+            <button onclick="Developer._submitImproveRequest()" id="improve-submit-btn" class="px-4 py-2 rounded-lg text-sm font-bold bg-[#3c45a3] text-white hover:bg-[#3c45a3]/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow">
+              <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
               <span>Mejorar texto</span>
             </button>
           </div>

@@ -45,7 +45,7 @@ const IntakeTasks = (() => {
     return cat.subtypes.find(s => s.label.toLowerCase().trim() === norm) || cat.subtypes[0] || null;
   }
 
-  const WP_COLORS = ['#1b1464','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
+  const WP_COLORS = ['#3c45a3','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
   function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
 
   /* ── Main ──────────────────────────────────────────────────── */
@@ -681,7 +681,7 @@ const IntakeTasks = (() => {
         ${prevStep !== null ? `<button data-goto="${prevStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
         </button>` : '<span></span>'}
-        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           ${nextLabel || 'Siguiente'} <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>` : ''}
       </div>`;

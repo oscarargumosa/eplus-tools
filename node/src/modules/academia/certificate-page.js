@@ -12,7 +12,7 @@ module.exports = async function certificatePage(req, res) {
   res.set('X-Robots-Tag', 'noindex');
   if (!c) {
     return res.status(404).send(`<!doctype html><meta charset="utf-8"><title>Certificado no encontrado</title>
-<body style="font-family:Poppins,sans-serif;padding:48px;color:#191c1e">No existe ningún certificado con el número <b>${esc(req.params.serial)}</b>.</body>`);
+<body style="font-family:Poppins,sans-serif;padding:48px;color:#222351">No existe ningún certificado con el número <b>${esc(req.params.serial)}</b>.</body>`);
   }
   const fecha = new Date(c.issued_at).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
   res.send(`<!doctype html>
@@ -21,13 +21,13 @@ module.exports = async function certificatePage(req, res) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1b1464;--yellow:#fbff12;--lav:#c7afdf;--ink:#191c1e;--muted:#474551}
+  :root{--navy:#3c45a3;--yellow:#d6e949;--lav:#997fc7;--ink:#222351;--muted:#474551}
   *{box-sizing:border-box}
   body{margin:0;background:#eeeeee;font-family:Poppins,system-ui,sans-serif;color:var(--ink)}
   .bar{max-width:1000px;margin:24px auto 0;display:flex;justify-content:flex-end;gap:10px;padding:0 16px}
   .bar button{background:var(--navy);color:var(--yellow);border:0;border-radius:10px;padding:10px 18px;font:600 14px Poppins;cursor:pointer}
   .cert{max-width:1000px;aspect-ratio:1.414/1;margin:16px auto 40px;background:#fff;position:relative;overflow:hidden;
-        display:flex;flex-direction:column;justify-content:space-between;padding:6% 7%;box-shadow:0 10px 40px rgba(27,20,100,.15)}
+        display:flex;flex-direction:column;justify-content:space-between;padding:6% 7%;box-shadow:0 10px 40px rgba(60,69,163,.15)}
   .cert:before{content:"";position:absolute;inset:0 0 auto 0;height:14px;background:var(--navy)}
   .cert:after{content:"";position:absolute;right:-120px;bottom:-120px;width:360px;height:360px;border-radius:50%;background:var(--lav);opacity:.35}
   .top{display:flex;justify-content:space-between;align-items:center}

@@ -375,7 +375,7 @@ const Entities = (() => {
     return `
       <button type="button" data-oid="${esc(o.oid)}"
         class="entity-card group bg-white rounded-2xl border border-outline-variant/25 p-5 text-left
-               hover:border-primary/30 hover:shadow-[0_10px_30px_rgba(27,20,100,0.10)]
+               hover:border-primary/30 hover:shadow-[0_10px_30px_rgba(60,69,163,0.10)]
                hover:-translate-y-0.5 transition-all duration-200 flex flex-col gap-4">
 
         <div class="flex items-start gap-3">
@@ -422,7 +422,7 @@ const Entities = (() => {
           <span class="font-bold text-primary tabular-nums">${display}</span>
         </div>
         <span class="col-span-2 block h-1.5 bg-surface-container rounded-full overflow-hidden">
-          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#1b1464"></span>
+          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#3c45a3"></span>
         </span>
       </div>
     `;
@@ -849,7 +849,7 @@ const Entities = (() => {
     }).join('');
 
     return `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#1b1464,#2d1f8f)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#3c45a3,#2d1f8f)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Experiencia Erasmus+</div>
@@ -857,13 +857,13 @@ const Entities = (() => {
           </div>
           <div class="text-right">
             <div class="text-[11px] font-bold uppercase tracking-wider text-white/55">Financiación total movilizada</div>
-            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#fbff12">${money(totalAmount) || '0 €'}</div>
+            <div class="text-3xl font-extrabold leading-none mt-1" style="color:#d6e949">${money(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px]" style="color:#fbff12">military_tech</span> Fondos gestionados como coordinador</div>
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/55"><span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador</div>
             <div class="text-xl font-extrabold leading-tight mt-1">${money(coordAmount) || '0 €'}</div>
             <div class="text-[11px] text-white/60">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
           </div>
@@ -1034,14 +1034,14 @@ const Entities = (() => {
     const chartOpts = {
       chart: { type: 'radialBar', height: 160, sparkline: { enabled: true } },
       series: [pct],
-      colors: ['#fbff12'],
+      colors: ['#d6e949'],
       plotOptions: {
         radialBar: {
           hollow: { size: '62%' },
           track: { background: '#eeeeee', strokeWidth: '90%' },
           dataLabels: {
             name: { show: true, color: '#474551', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
-            value: { show: true, color: '#1b1464', fontSize: isMax10 ? '22px' : '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
+            value: { show: true, color: '#3c45a3', fontSize: isMax10 ? '22px' : '26px', fontWeight: 800, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
           },
         },
       },

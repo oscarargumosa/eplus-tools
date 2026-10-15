@@ -7,7 +7,10 @@
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="icon" href="/img/marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
 <!-- Tailwind CDN -->
@@ -31,18 +34,21 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        "primary":"#1b1464","primary-container":"#1b1464",
-        "secondary-fixed":"#fbff12","secondary-fixed-dim":"#e7eb00",
-        "accent-warm":"#c7afdf",
-        "surface":"#f8f8f8","surface-dim":"#cccccc","surface-bright":"#ffffff",
-        "surface-container":"#eeeeee","surface-container-low":"#f8f8f8",
-        "surface-container-high":"#eeeeee","surface-container-lowest":"#ffffff",
-        "on-surface":"#191c1e","on-surface-variant":"#474551",
-        "outline":"#888888","outline-variant":"#cccccc",
+        /* Paleta EU Funding Studio (manual de marca, oct-2026): azul #3C45A3,
+           lima #D6E949, tinta #222351, violeta #514DAA, lavanda #997FC7, crema #F0EDEB */
+        "primary":"#3c45a3","primary-container":"#3c45a3",
+        "ink":"#222351","violet":"#514daa","lavender":"#997fc7","lavender-soft":"#e7e1f3","cream":"#f0edeb",
+        "secondary-fixed":"#d6e949","secondary-fixed-dim":"#c3d63a",
+        "accent-warm":"#997fc7",
+        "surface":"#f8f7f5","surface-dim":"#d9d5d1","surface-bright":"#ffffff",
+        "surface-container":"#f0edeb","surface-container-low":"#f8f7f5",
+        "surface-container-high":"#e8e4e1","surface-container-lowest":"#ffffff",
+        "on-surface":"#222351","on-surface-variant":"#55577a",
+        "outline":"#8a8aa3","outline-variant":"#d6d3dc",
         "error":"#ba1a1a","error-container":"#ffdad6",
         "on-error-container":"#93000a",
-        "surface-tint":"#c7afdf",
-        "on-primary-container":"#c7afdf",
+        "surface-tint":"#997fc7",
+        "on-primary-container":"#e7e1f3",
       },
       fontFamily: {
         "headline":["Poppins","sans-serif"],
@@ -68,7 +74,7 @@ tailwind.config = {
 <header class="efs-topbar" role="banner">
   <div class="efs-topbar__inner">
     <a class="efs-topbar__brand" href="/" aria-label="EU Funding Studio — Inicio">
-      <span class="efs-topbar__wordmark" aria-hidden="true">EU Funding <span class="efs-topbar__wordmark-accent">Studio</span></span>
+      <img class="efs-topbar__logo" src="/img/marca/logo-horizontal-blanco.svg" alt="" width="206" height="22">
     </a>
     <nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Primary">
       <ul class="efs-topbar__menu">
@@ -245,7 +251,7 @@ tailwind.config = {
           <div class="flex items-start gap-2.5">
             <input id="reg-privacy" name="acepta_privacidad" type="checkbox" aria-required="true"
               aria-describedby="reg-privacy-info"
-              class="mt-0.5 h-4 w-4 shrink-0 rounded border-outline-variant accent-[#1b1464] cursor-pointer">
+              class="mt-0.5 h-4 w-4 shrink-0 rounded border-outline-variant accent-[#3c45a3] cursor-pointer">
             <label for="reg-privacy" class="text-xs text-on-surface leading-snug cursor-pointer">
               He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener" class="font-semibold text-primary underline">política de privacidad</a>
             </label>
@@ -417,7 +423,7 @@ tailwind.config = {
         <a href="#eu-vision"
           class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
           data-route="eu-vision">
-          <span class="material-symbols-outlined text-[20px]" style="color:#fbff12">explore</span>
+          <span class="material-symbols-outlined text-[20px]" style="color:#d6e949">explore</span>
           Mis Visiones
         </a>
         <div class="mt-3 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-white/30">Desde aquí</div>
@@ -549,9 +555,9 @@ tailwind.config = {
       <section id="panel-dashboard" class="panel active">
 
         <!-- Hero -->
-        <div class="relative bg-[#1b1464] rounded-2xl p-10 md:p-14 mb-10 overflow-hidden">
+        <div class="relative bg-[#3c45a3] rounded-2xl p-10 md:p-14 mb-10 overflow-hidden">
           <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl pointer-events-none"></div>
-          <div class="absolute bottom-0 left-0 w-60 h-60 bg-[#fbff12]/10 rounded-full translate-y-1/2 -translate-x-1/4 blur-3xl pointer-events-none"></div>
+          <div class="absolute bottom-0 left-0 w-60 h-60 bg-[#d6e949]/10 rounded-full translate-y-1/2 -translate-x-1/4 blur-3xl pointer-events-none"></div>
           <div class="relative z-10 max-w-2xl">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-[11px] font-bold uppercase tracking-widest text-white/80 mb-6">
               <span class="material-symbols-outlined text-sm">euro</span>
@@ -559,7 +565,7 @@ tailwind.config = {
             </div>
             <h1 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-4">
               From idea to funded project.<br>
-              <span class="text-[#fbff12]">Three steps. One platform.</span>
+              <span class="text-[#d6e949]">Three steps. One platform.</span>
             </h1>
             <p class="text-white/60 text-base leading-relaxed mb-8 max-w-xl">
               Design your project, write a winning proposal, and evaluate it against real criteria &mdash; all before you submit.
@@ -571,10 +577,10 @@ tailwind.config = {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
 
           <!-- Phase 1: Design -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#1b1464]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='my-projects'; setTimeout(() => window.openCreateModal && window.openCreateModal(), 100)">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#3c45a3]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='my-projects'; setTimeout(() => window.openCreateModal && window.openCreateModal(), 100)">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center group-hover:bg-[#1b1464] transition-colors">
-                <span class="material-symbols-outlined text-blue-600 text-2xl group-hover:text-[#fbff12] transition-colors">architecture</span>
+              <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center group-hover:bg-[#3c45a3] transition-colors">
+                <span class="material-symbols-outlined text-blue-600 text-2xl group-hover:text-[#d6e949] transition-colors">architecture</span>
               </div>
               <div>
                 <div class="text-[10px] font-extrabold uppercase tracking-widest text-blue-500">Phase 1</div>
@@ -590,16 +596,16 @@ tailwind.config = {
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-blue-400 text-sm">check_circle</span> Plan activities &amp; work packages</li>
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-blue-400 text-sm">check_circle</span> Calculate EU-compliant budget</li>
             </ul>
-            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] group-hover:bg-[#1b1464]/90 transition-colors">
+            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] group-hover:bg-[#3c45a3]/90 transition-colors">
               <span class="material-symbols-outlined text-sm">rocket_launch</span> Start designing
             </div>
           </div>
 
           <!-- Phase 2: Write -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#1b1464]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='developer'">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#3c45a3]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='developer'">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center group-hover:bg-[#1b1464] transition-colors">
-                <span class="material-symbols-outlined text-purple-600 text-2xl group-hover:text-[#fbff12] transition-colors">edit_document</span>
+              <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center group-hover:bg-[#3c45a3] transition-colors">
+                <span class="material-symbols-outlined text-purple-600 text-2xl group-hover:text-[#d6e949] transition-colors">edit_document</span>
               </div>
               <div>
                 <div class="text-[10px] font-extrabold uppercase tracking-widest text-purple-500">Phase 2</div>
@@ -615,16 +621,16 @@ tailwind.config = {
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-purple-400 text-sm">check_circle</span> Import existing DOCX proposals</li>
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-purple-400 text-sm">check_circle</span> Budget calculator (official format)</li>
             </ul>
-            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] group-hover:bg-[#1b1464]/90 transition-colors">
+            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] group-hover:bg-[#3c45a3]/90 transition-colors">
               <span class="material-symbols-outlined text-sm">edit_note</span> Start writing
             </div>
           </div>
 
           <!-- Phase 3: Evaluate -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#1b1464]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='evaluator'">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/20 hover:border-[#3c45a3]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='evaluator'">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center group-hover:bg-[#1b1464] transition-colors">
-                <span class="material-symbols-outlined text-green-600 text-2xl group-hover:text-[#fbff12] transition-colors">verified</span>
+              <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center group-hover:bg-[#3c45a3] transition-colors">
+                <span class="material-symbols-outlined text-green-600 text-2xl group-hover:text-[#d6e949] transition-colors">verified</span>
               </div>
               <div>
                 <div class="text-[10px] font-extrabold uppercase tracking-widest text-green-600">Phase 3</div>
@@ -640,7 +646,7 @@ tailwind.config = {
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-green-400 text-sm">check_circle</span> AI-powered improvement tips</li>
               <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-green-400 text-sm">check_circle</span> Upload &amp; evaluate any DOCX</li>
             </ul>
-            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] group-hover:bg-[#1b1464]/90 transition-colors">
+            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] group-hover:bg-[#3c45a3]/90 transition-colors">
               <span class="material-symbols-outlined text-sm">fact_check</span> Start evaluating
             </div>
           </div>
@@ -670,7 +676,7 @@ tailwind.config = {
           <div class="w-8 h-0.5 bg-outline-variant/30"></div>
           <span class="material-symbols-outlined text-on-surface-variant/30 text-base">replay</span>
           <div class="w-8 h-0.5 bg-outline-variant/30"></div>
-          <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1b1464]/5 text-[#1b1464]">
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#3c45a3]/5 text-[#3c45a3]">
             <span class="material-symbols-outlined text-base">emoji_events</span>
             <span class="text-xs font-bold">Submit</span>
           </div>
@@ -743,7 +749,7 @@ tailwind.config = {
               <div data-acct-section="profile" class="acct-section">
                 <div class="bg-white rounded-xl border border-outline-variant/30 p-6">
                   <div class="flex items-center gap-5 mb-6 pb-6 border-b border-outline-variant/20">
-                    <div id="account-avatar" class="w-16 h-16 rounded-full bg-[#1b1464] flex items-center justify-center text-lg font-bold text-[#fbff12] flex-shrink-0">?</div>
+                    <div id="account-avatar" class="w-16 h-16 rounded-full bg-[#3c45a3] flex items-center justify-center text-lg font-bold text-[#d6e949] flex-shrink-0">?</div>
                     <div class="min-w-0">
                       <div id="account-display-name" class="text-lg font-bold text-on-surface truncate">—</div>
                       <div id="account-display-email" class="text-sm text-on-surface-variant truncate">—</div>
@@ -879,7 +885,7 @@ tailwind.config = {
                   <h3 class="font-headline text-base font-extrabold text-on-surface">Empezar desde cero</h3>
                 </div>
                 <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Selecciona una convocatoria, define el consorcio, planifica actividades y calcula tu presupuesto.</p>
-                <button type="button" id="create-btn-start" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/90 transition-colors">
+                <button type="button" id="create-btn-start" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/90 transition-colors">
                   <span class="material-symbols-outlined text-sm">rocket_launch</span> Empezar
                 </button>
               </div>
@@ -1175,7 +1181,7 @@ tailwind.config = {
               <button type="button" class="intake-btn-prev inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
                 <span class="material-symbols-outlined text-base">arrow_back</span> Back
               </button>
-              <button type="button" class="intake-btn-next inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+              <button type="button" class="intake-btn-next inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
                 Next <span class="material-symbols-outlined text-lg">arrow_forward</span>
               </button>
             </div>
@@ -1242,7 +1248,7 @@ tailwind.config = {
               <button type="button" class="intake-btn-prev inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
                 <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
               </button>
-              <button type="button" class="intake-btn-next inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+              <button type="button" class="intake-btn-next inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
                 Tarifas <span class="material-symbols-outlined text-lg">arrow_forward</span>
               </button>
             </div>
@@ -1381,7 +1387,7 @@ tailwind.config = {
 
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 max-w-lg mx-auto" id="intake-launch-stats"></div>
 
-                <button type="button" id="intake-btn-launch" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-primary to-primary/80 text-white font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.15)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(27,20,100,0.2)] active:scale-95 transition-all">
+                <button type="button" id="intake-btn-launch" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-primary to-primary/80 text-white font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.15)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(60,69,163,0.2)] active:scale-95 transition-all">
                   <span class="material-symbols-outlined text-xl">rocket_launch</span>
                   Comenzar a escribir este proyecto
                 </button>
@@ -1709,7 +1715,7 @@ tailwind.config = {
               <input id="convocatorias-semantic-q" type="text" placeholder="Búsqueda semántica con IA: ej. 'subvenciones para audiovisuales' o 'movilidad de jóvenes investigadores'"
                 class="w-full pl-10 pr-32 py-3 rounded-xl bg-white border-2 border-primary/30 text-on-surface text-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
               <button id="convocatorias-semantic-go" type="button"
-                class="absolute right-2 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-primary text-[#fbff12] text-xs font-bold hover:bg-primary/80 transition-colors">Buscar IA</button>
+                class="absolute right-2 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-primary text-[#d6e949] text-xs font-bold hover:bg-primary/80 transition-colors">Buscar IA</button>
             </div>
             <button id="convocatorias-semantic-clear" type="button"
               class="hidden text-xs text-on-surface-variant hover:text-error">Limpiar</button>
@@ -1897,7 +1903,7 @@ tailwind.config = {
                   <svg class="animate-spin h-4 w-4 text-primary" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
                   <span id="eval-parse-text">Analizando...</span>
                 </div>
-                <label id="eval-upload-label" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 cursor-pointer transition-colors shadow-md">
+                <label id="eval-upload-label" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 cursor-pointer transition-colors shadow-md">
                   <span class="material-symbols-outlined text-sm">upload_file</span> Subir Proyecto
                   <input type="file" id="eval-upload-input" accept=".pdf,.docx" class="hidden">
                 </label>
@@ -2181,7 +2187,7 @@ tailwind.config = {
             <div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
               <div class="px-5 py-4 border-b border-outline-variant/20 flex items-center justify-between">
                 <h2 class="font-semibold text-primary">Staff categories</h2>
-                <button id="worker-add-btn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+                <button id="worker-add-btn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
                   <span class="material-symbols-outlined text-sm">add</span> Add category
                 </button>
               </div>
@@ -2864,8 +2870,8 @@ tailwind.config = {
                 </div>
                 <!-- Leyenda tier -->
                 <div class="hidden lg:flex items-center gap-2 text-[10px] text-on-surface-variant">
-                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#fbff12;border:1px solid #1b1464"></span>Premium</span>
-                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#c7afdf"></span>Buena</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#d6e949;border:1px solid #3c45a3"></span>Premium</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#997fc7"></span>Buena</span>
                   <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#9aa0a6"></span>Aceptable</span>
                   <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#5a5a6a"></span>Mínima</span>
                   <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:#3a3a48"></span>Sin enriquecer</span>
@@ -3145,7 +3151,7 @@ tailwind.config = {
     transition: all .15s ease;
   }
   .conv-chip:hover { border-color: rgb(var(--primary) / .5); }
-  .conv-chip.is-active { background: #1b1464; color: #fbff12; border-color: #1b1464; }
+  .conv-chip.is-active { background: #3c45a3; color: #d6e949; border-color: #3c45a3; }
   /* Disponibles-en-EFS chip: distintivo verde para resaltar las que se pueden usar ya */
   .conv-chip-efs {
     background: #ecfdf5; color: #047857; border-color: #6ee7b7;

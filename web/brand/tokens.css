@@ -16,11 +16,11 @@
 
 :root {
 	/* ---------- Core palette (Ana's guidelines) ---------- */
-	--efs-color-primary:             #1b1464;   /* single brand blue — titles, text, nav active, icons */
-	--efs-color-primary-container:   #1b1464;   /* same blue — sidebar, buttons */
-	--efs-color-secondary-fixed:     #fbff12;   /* lime yellow — CTA bg, highlights, devices */
-	--efs-color-secondary-fixed-dim: #e7eb00;   /* duller yellow — hover/active of CTA */
-	--efs-color-accent-warm:         #c7afdf;   /* lavender — secondary cards, soft accents */
+	--efs-color-primary:             #3c45a3;   /* single brand blue — titles, text, nav active, icons */
+	--efs-color-primary-container:   #3c45a3;   /* same blue — sidebar, buttons */
+	--efs-color-secondary-fixed:     #d6e949;   /* lime yellow — CTA bg, highlights, devices */
+	--efs-color-secondary-fixed-dim: #c3d63a;   /* duller yellow — hover/active of CTA */
+	--efs-color-accent-warm:         #997fc7;   /* lavender — secondary cards, soft accents */
 
 	/* ---------- Surfaces (Ana's neutrals: white / light gray / medium gray) ---------- */
 	--efs-color-bg:                      #ffffff; /* page bg for content */
@@ -30,7 +30,7 @@
 	--efs-color-surface-container-lowest: #ffffff; /* cards */
 
 	/* ---------- Text ---------- */
-	--efs-color-on-surface:         #191c1e; /* body copy */
+	--efs-color-on-surface:         #222351; /* body copy */
 	--efs-color-on-surface-variant: #474551; /* secondary text, placeholders */
 	--efs-color-on-primary:         #ffffff; /* text on dark primary */
 
@@ -61,8 +61,8 @@
 	--efs-radius-full:    0.75rem;  /* 12px — sidebar links, badges */
 
 	/* ---------- Shadows (based on primary, never pure black) ---------- */
-	--efs-shadow-soft:  0px 24px 48px rgba(27, 20, 100, 0.06);
-	--efs-shadow-med:   0px 24px 48px rgba(27, 20, 100, 0.10);
+	--efs-shadow-soft:  0px 24px 48px rgba(60,69,163, 0.06);
+	--efs-shadow-med:   0px 24px 48px rgba(60,69,163, 0.10);
 
 	/* ---------- Layout ---------- */
 	--efs-max-w:       720px;  /* single post body */

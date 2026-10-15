@@ -16,7 +16,7 @@ const IntakeGantt = (() => {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  const WP_COLORS = ['#1b1464','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
+  const WP_COLORS = ['#3c45a3','#1e40af','#0369a1','#0e7490','#155e75','#1d4ed8','#4338ca','#6366f1','#0284c7','#7c3aed'];
   function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
 
   const ACT_ICONS = {
@@ -97,7 +97,7 @@ const IntakeGantt = (() => {
           font-size: 11px;
           font-weight: 700;
           text-align: center;
-          color: #1b1464;
+          color: #3c45a3;
           background: #f8f9fa;
           border: 1.5px solid #e0e0e0;
           border-radius: 6px;
@@ -109,11 +109,11 @@ const IntakeGantt = (() => {
           transition: all 0.15s;
         }
         .gantt-sel:focus {
-          border-color: #1b1464;
+          border-color: #3c45a3;
           background: white;
-          box-shadow: 0 0 0 2px rgba(27,20,100,0.12);
+          box-shadow: 0 0 0 2px rgba(60,69,163,0.12);
         }
-        .gantt-sel:hover { border-color: #1b1464; background: white; }
+        .gantt-sel:hover { border-color: #3c45a3; background: white; }
         .gantt-sel option { font-size: 13px; }
       </style>
       <div class="mb-5">
@@ -306,7 +306,7 @@ const IntakeGantt = (() => {
         if (sVal && eVal) {
           const left = ((sVal-1)/totalMonths*100).toFixed(2)+'%';
           const width = ((eVal-sVal+1)/totalMonths*100).toFixed(2)+'%';
-          const color = bar?.style.background || row.querySelector('.material-symbols-outlined')?.style.color || '#1b1464';
+          const color = bar?.style.background || row.querySelector('.material-symbols-outlined')?.style.color || '#3c45a3';
           if (bar) { bar.style.left = left; bar.style.width = width; }
           else barArea.insertAdjacentHTML('beforeend', `<div class="gantt-bar absolute top-1 bottom-1 rounded transition-all duration-300" style="left:${left};width:${width};background:${color};opacity:0.7"></div>`);
         } else if (bar) { bar.remove(); }
@@ -337,7 +337,7 @@ const IntakeGantt = (() => {
         <button data-goto="4" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Tareas
         </button>
-        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(27,20,100,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-md bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           Resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>
       </div>`;

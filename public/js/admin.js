@@ -174,7 +174,7 @@ const Admin = (() => {
         list.innerHTML = `<div class="text-center py-16">
           <span class="material-symbols-outlined text-5xl text-outline-variant/40 mb-4">campaign</span>
           <p class="text-sm text-on-surface-variant mb-4">No hay convocatorias configuradas</p>
-          <button id="conv-first-call" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+          <button id="conv-first-call" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
           </button>
         </div>`;
@@ -200,7 +200,7 @@ const Admin = (() => {
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center gap-2">
-            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+            <button id="conv-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Nueva convocatoria
             </button>
             <button id="conv-import-feed" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-primary bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 transition-colors">
@@ -221,7 +221,7 @@ const Admin = (() => {
             : '<span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-400 text-[10px] font-bold">INACTIVA</span>';
           return `
           <div class="conv-card group flex items-center gap-3 px-4 py-3.5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer" data-id="${p.id}">
-            <div class="w-9 h-9 rounded-lg ${p.active ? 'bg-[#1b1464]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+            <div class="w-9 h-9 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
               <span class="material-symbols-outlined text-white text-base">campaign</span>
             </div>
             <div class="flex-1 min-w-0">
@@ -454,7 +454,7 @@ const Admin = (() => {
             <h3 class="font-headline text-lg font-bold text-primary mb-2">Generar estructura de evaluacion desde el formulario</h3>
             <p class="text-sm text-on-surface-variant mb-6">Esta convocatoria tiene un form template vinculado pero no tiene criterios de evaluacion. Puedes generar automaticamente las secciones y preguntas basandote en la estructura del formulario.</p>
             <p class="text-xs text-on-surface-variant mb-6">Se crearan las secciones (Relevance, Quality, Partnership, Impact, etc.) con todas sus preguntas. Los pesos y criterios los configuras despues.</p>
-            <button id="conv-generate-eval" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors shadow-md">
+            <button id="conv-generate-eval" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-md">
               <span class="material-symbols-outlined text-lg">auto_awesome</span> Generar desde form template
             </button>
             <div class="mt-6 w-full border-t border-outline-variant/20 pt-4">
@@ -563,7 +563,7 @@ const Admin = (() => {
             </label>
           `).join('')}
         </div>
-        <button id="intake-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+        <button id="intake-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Guardar
         </button>
       </div>`;
@@ -611,7 +611,7 @@ const Admin = (() => {
             </label>
           `).join('')}
         </div>
-        <button id="budget-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+        <button id="budget-tpl-save" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Guardar
         </button>
       </div>`;
@@ -654,7 +654,7 @@ const Admin = (() => {
               ${templates.map(t => `<option value="${t.id}" ${t.id === current ? 'selected' : ''}>${esc(t.name)} (v${t.version}${t.year ? ', ' + t.year : ''})</option>`).join('')}
             </select>
             <div class="flex items-center gap-2">
-              <button id="conv-link-template" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+              <button id="conv-link-template" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
                 <span class="material-symbols-outlined text-sm">link</span> ${current ? 'Actualizar' : 'Vincular'} template
               </button>
               ${current ? '<button id="conv-cancel-template" class="text-xs text-on-surface-variant hover:underline px-3">Cancelar</button>' : ''}
@@ -718,7 +718,7 @@ const Admin = (() => {
         <div class="flex gap-4 items-start" style="min-height:60vh">
           <div id="conv-form-nav" class="w-56 flex-shrink-0 space-y-0.5">
             ${navItems.map(it => `
-            <div class="conv-form-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#1b1464] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
+            <div class="conv-form-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#3c45a3] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
                  data-sid="${it.id}" style="${it.level ? 'padding-left:'+(12 + it.level * 12)+'px' : ''}">
               <span class="material-symbols-outlined text-sm">${it.icon}</span>
               <span class="truncate">${esc(it.label)}</span>
@@ -763,7 +763,7 @@ const Admin = (() => {
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Subir documento nuevo</h4>
           <form id="conv-doc-upload-form" class="space-y-3">
             <input type="file" id="conv-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
-              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
+              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
             <div class="grid grid-cols-3 gap-3">
               <input type="text" id="conv-doc-title" placeholder="Titulo (auto desde nombre del archivo)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
@@ -785,7 +785,7 @@ const Admin = (() => {
                 <span class="text-[10px] text-on-surface-variant/60">(disponible para todas las calls)</span>
               </label>
             </div>
-            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <button id="conv-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
               <span class="material-symbols-outlined text-sm">cloud_upload</span>
               <span id="conv-doc-submit-label">Subir y vectorizar</span>
             </button>
@@ -796,7 +796,7 @@ const Admin = (() => {
         <div class="rounded-2xl border border-outline-variant/20 p-5 bg-surface-container-lowest flex flex-col">
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Seleccionar existentes</h4>
           <p class="text-xs text-on-surface-variant/70 mb-3">Documentos del mismo tipo de call o transversales ya subidos en otras convocatorias.</p>
-          <button type="button" id="conv-doc-pick-existing" class="mt-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#1b1464] border-2 border-[#1b1464]/30 hover:bg-[#1b1464]/5 transition-colors">
+          <button type="button" id="conv-doc-pick-existing" class="mt-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#3c45a3] border-2 border-[#3c45a3]/30 hover:bg-[#3c45a3]/5 transition-colors">
             <span class="material-symbols-outlined text-sm">library_add</span> Buscar documentos existentes
           </button>
         </div>
@@ -973,7 +973,7 @@ const Admin = (() => {
           <div class="flex-1 overflow-y-auto px-3 py-2">${listHtml}</div>
           <div class="px-5 py-3 border-t border-outline-variant/20 flex items-center justify-between">
             <span id="pick-doc-count" class="text-xs text-on-surface-variant">0 seleccionados</span>
-            <button id="pick-doc-confirm" class="px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-30" disabled>
+            <button id="pick-doc-confirm" class="px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-30" disabled>
               Vincular seleccionados
             </button>
           </div>
@@ -1490,7 +1490,7 @@ const Admin = (() => {
               <span class="perdiem-edit-total text-sm font-bold text-primary">Total: €${total.toFixed(2)}</span>
               <div class="flex gap-2">
                 <button class="perdiem-cancel-btn text-xs px-3 py-1.5 rounded-lg border border-outline-variant/30 text-on-surface-variant hover:bg-gray-50">Cancelar</button>
-                <button class="perdiem-save-btn text-xs px-3 py-1.5 rounded-lg bg-[#1b1464] text-[#fbff12] font-semibold hover:bg-[#1b1464]/80">Save</button>
+                <button class="perdiem-save-btn text-xs px-3 py-1.5 rounded-lg bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Save</button>
               </div>
             </div>
           </div>
@@ -1595,7 +1595,7 @@ const Admin = (() => {
     });
 
     actionsTd.innerHTML = `
-      <button class="worker-save-btn text-xs px-3 py-1 rounded bg-[#1b1464] text-[#fbff12] font-semibold hover:bg-[#1b1464]/80">Save</button>
+      <button class="worker-save-btn text-xs px-3 py-1 rounded bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Save</button>
       <button class="worker-cancel-btn text-xs px-3 py-1 rounded border border-outline-variant/30 text-on-surface-variant ml-1">Cancel</button>`;
 
     actionsTd.querySelector('.worker-cancel-btn').addEventListener('click', () => loadWorkers());
@@ -1633,7 +1633,7 @@ const Admin = (() => {
         <td class="px-4 py-2 text-center"><input type="number" step="0.01" placeholder="Zone ${z}" class="w-20 ${INP} text-center" id="new-worker-zone-${z}"></td>`).join('')}
       <td class="px-4 py-2">&nbsp;</td>
       <td class="px-4 py-2 text-right">
-        <button id="new-worker-save" class="text-xs px-3 py-1 rounded bg-[#1b1464] text-[#fbff12] font-semibold hover:bg-[#1b1464]/80">Add</button>
+        <button id="new-worker-save" class="text-xs px-3 py-1 rounded bg-[#3c45a3] text-[#d6e949] font-semibold hover:bg-[#3c45a3]/80">Add</button>
         <button id="new-worker-cancel" class="text-xs px-3 py-1 rounded border border-outline-variant/30 text-on-surface-variant ml-1">Cancel</button>
       </td>`;
     tbody.prepend(tr);
@@ -1875,7 +1875,7 @@ const Admin = (() => {
 
       <!-- Save -->
       <div class="flex justify-end">
-        <button id="elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+        <button id="elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
           <span class="material-symbols-outlined text-sm">save</span> Save eligibility
         </button>
       </div>`;
@@ -2182,7 +2182,7 @@ const Admin = (() => {
 
       list.innerHTML = `
         <div class="flex items-center justify-between mb-4">
-          <button id="eval-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+          <button id="eval-new-program" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> New call
           </button>
           <span class="text-xs text-on-surface-variant">${programs.length} call${programs.length !== 1 ? 's' : ''} · sorted by deadline</span>
@@ -2196,7 +2196,7 @@ const Admin = (() => {
             : '<span class="px-2 py-1 rounded-lg bg-gray-50 text-gray-400 text-[10px]">No deadline</span>';
           return `
           <div class="eval-prog-card group flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-outline-variant/20 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer" data-id="${p.id}">
-            <div class="w-8 h-8 rounded-lg ${p.active ? 'bg-[#1b1464]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+            <div class="w-8 h-8 rounded-lg ${p.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
               <span class="material-symbols-outlined text-white text-base">description</span>
             </div>
             <div class="flex-1 min-w-0 eval-prog-open">
@@ -2670,7 +2670,7 @@ KEY EVALUATOR FOCUS:
           </div>
         </div>
         <div class="flex justify-end">
-          <button id="eq-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors shadow-sm">
+          <button id="eq-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">save</span> Save question
           </button>
         </div>
@@ -2684,7 +2684,7 @@ KEY EVALUATOR FOCUS:
             <span class="text-[11px] font-bold uppercase tracking-widest text-on-surface-variant">Evaluation criteria</span>
             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold" style="background:${sec.color}15;color:${sec.color}">${criteria.length}</span>
           </div>
-          <button id="eval-add-crit" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors shadow-sm">
+          <button id="eval-add-crit" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">add</span> Add criterion
           </button>
         </div>
@@ -3140,7 +3140,7 @@ KEY EVALUATOR FOCUS:
           </div>
         </div>
         <div class="flex justify-end mt-4">
-          <button id="cd-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors shadow-sm">
+          <button id="cd-save" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">save</span> Save call data
           </button>
         </div>
@@ -3334,7 +3334,7 @@ KEY EVALUATOR FOCUS:
 
         <!-- Save -->
         <div class="flex justify-end">
-          <button id="ev-elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors">
+          <button id="ev-elig-save-btn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
             <span class="material-symbols-outlined text-sm">save</span> Save eligibility
           </button>
         </div>
@@ -3402,7 +3402,7 @@ KEY EVALUATOR FOCUS:
             </div>
           </div>
           <div class="flex items-center gap-1.5">
-            <button class="eval-save-crit inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors shadow-sm" data-id="${c.id}">
+            <button class="eval-save-crit inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors shadow-sm" data-id="${c.id}">
               <span class="material-symbols-outlined text-sm">save</span> Save
             </button>
             <button class="eval-del-crit w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors" data-id="${c.id}">
@@ -4080,7 +4080,7 @@ KEY EVALUATOR FOCUS:
       if (!templates.length) { list.innerHTML = '<p class="text-sm text-on-surface-variant py-8 text-center">No form templates found.</p>'; return; }
       list.innerHTML = templates.map(t => `
         <div class="forms-tpl-card group flex items-center gap-4 p-5 bg-white rounded-2xl border border-outline-variant/30 hover:border-primary hover:shadow-lg cursor-pointer transition-all" data-id="${t.id}">
-          <div class="w-12 h-12 rounded-xl ${t.active ? 'bg-[#1b1464]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-xl ${t.active ? 'bg-[#3c45a3]' : 'bg-gray-300'} flex items-center justify-center flex-shrink-0">
             <span class="material-symbols-outlined text-white text-xl">article</span>
           </div>
           <div class="flex-1 min-w-0">
@@ -4120,7 +4120,7 @@ KEY EVALUATOR FOCUS:
 
       // Hub sidebar: Form + Documents
       sidebar.innerHTML = `<div class="space-y-0.5 sticky top-0">
-        <div class="forms-hub-item flex items-center gap-2 px-3 py-2.5 rounded-xl cursor-pointer bg-[#1b1464] text-white font-bold text-xs" data-view="form">
+        <div class="forms-hub-item flex items-center gap-2 px-3 py-2.5 rounded-xl cursor-pointer bg-[#3c45a3] text-white font-bold text-xs" data-view="form">
           <span class="material-symbols-outlined text-sm">article</span>
           <span>View Form</span>
         </div>
@@ -4136,9 +4136,9 @@ KEY EVALUATOR FOCUS:
       sidebar.querySelectorAll('.forms-hub-item').forEach(el => {
         el.addEventListener('click', () => {
           sidebar.querySelectorAll('.forms-hub-item').forEach(b => {
-            b.className = b.className.replace('bg-[#1b1464] text-white font-bold', 'text-primary/70 hover:bg-primary/5');
+            b.className = b.className.replace('bg-[#3c45a3] text-white font-bold', 'text-primary/70 hover:bg-primary/5');
           });
-          el.className = el.className.replace('text-primary/70 hover:bg-primary/5', 'bg-[#1b1464] text-white font-bold');
+          el.className = el.className.replace('text-primary/70 hover:bg-primary/5', 'bg-[#3c45a3] text-white font-bold');
           formsShowCallHub(tpl, el.dataset.view);
         });
       });
@@ -4181,7 +4181,7 @@ KEY EVALUATOR FOCUS:
         </div>
         <div class="mx-3 my-2 border-b border-primary/10"></div>
         ${navItems.map(it => `
-        <div class="forms-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#1b1464] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
+        <div class="forms-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#3c45a3] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
              data-sid="${it.id}" style="${it.level ? 'padding-left:'+(12 + it.level * 12)+'px' : ''}">
           <span class="material-symbols-outlined text-sm">${it.icon}</span>
           <span class="truncate">${esc(it.label)}</span>
@@ -4211,7 +4211,7 @@ KEY EVALUATOR FOCUS:
           <span class="material-symbols-outlined text-sm">article</span>
           <span>View Form</span>
         </div>
-        <div class="forms-hub-item flex items-center gap-2 px-3 py-2.5 rounded-xl cursor-pointer bg-[#1b1464] text-white font-bold text-xs" data-view="docs">
+        <div class="forms-hub-item flex items-center gap-2 px-3 py-2.5 rounded-xl cursor-pointer bg-[#3c45a3] text-white font-bold text-xs" data-view="docs">
           <span class="material-symbols-outlined text-sm">folder_open</span>
           <span>Call Documents</span>
         </div>
@@ -4235,7 +4235,7 @@ KEY EVALUATOR FOCUS:
           <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-3">Upload document</h4>
           <form id="call-doc-upload-form" class="space-y-3">
             <input type="file" id="call-doc-file" accept=".pdf,.docx,.txt,.csv,.xlsx" required multiple
-              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#1b1464] file:text-[#fbff12] file:cursor-pointer">
+              class="w-full text-sm file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#3c45a3] file:text-[#d6e949] file:cursor-pointer">
             <div class="grid grid-cols-2 gap-3">
               <input type="text" id="call-doc-title" placeholder="Title (auto from filename)"
                 class="px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
@@ -4244,7 +4244,7 @@ KEY EVALUATOR FOCUS:
             </div>
             <textarea id="call-doc-desc" rows="2" placeholder="Description..."
               class="w-full px-3 py-2 rounded-xl border border-outline-variant/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"></textarea>
-            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#fbff12] bg-[#1b1464] hover:bg-[#1b1464]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            <button id="call-doc-submit-btn" type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
               <span class="material-symbols-outlined text-sm">cloud_upload</span>
               <span id="call-doc-submit-label">Upload & vectorize</span>
             </button>
@@ -4488,7 +4488,7 @@ KEY EVALUATOR FOCUS:
     if (tpl.annexes) items.push({ id: '__annexes', label: 'Annexes', icon: 'attach_file' });
 
     sidebar.innerHTML = `<div class="space-y-0.5 sticky top-0">${items.map(it => `
-      <div class="forms-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#1b1464] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
+      <div class="forms-nav-item flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-all text-xs ${fm.activeSection === it.id ? 'bg-[#3c45a3] text-white font-bold' : 'text-primary/70 hover:bg-primary/5'}"
            data-sid="${it.id}" style="${it.level ? 'padding-left:'+(12 + it.level * 12)+'px' : ''}">
         <span class="material-symbols-outlined text-sm">${it.icon}</span>
         <span class="truncate">${esc(it.label)}</span>
@@ -4774,8 +4774,8 @@ KEY EVALUATOR FOCUS:
 
       html += `<details class="rounded-2xl border-2 border-primary/15 bg-white mb-3 group/wp" ${i <= 2 ? 'open' : ''}>
         <summary class="flex items-center gap-3 px-5 py-4 cursor-pointer select-none">
-          <div class="w-9 h-9 rounded-xl bg-[#1b1464] flex items-center justify-center flex-shrink-0">
-            <span class="text-xs font-extrabold text-[#fbff12]">${i}</span>
+          <div class="w-9 h-9 rounded-xl bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
+            <span class="text-xs font-extrabold text-[#d6e949]">${i}</span>
           </div>
           <span class="font-bold text-primary text-sm flex-1">${esc(wpLabel)}</span>
           <span class="material-symbols-outlined text-primary/40 group-open/wp:rotate-180 transition-transform">expand_more</span>

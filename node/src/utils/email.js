@@ -75,8 +75,8 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f6fa;padding:40px 16px;">
     <tr><td align="center">
       <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;">
-        <tr><td style="background:#1b1464;padding:24px 32px;">
-          <div style="display:inline-block;background:#fbff12;width:32px;height:32px;border-radius:6px;vertical-align:middle;"></div>
+        <tr><td style="background:#3c45a3;padding:24px 32px;">
+          <div style="display:inline-block;background:#d6e949;width:32px;height:32px;border-radius:6px;vertical-align:middle;"></div>
           <span style="color:#ffffff;font-size:18px;font-weight:600;margin-left:12px;vertical-align:middle;">EU Funding Studio</span>
         </td></tr>
         <tr><td style="padding:32px;">
@@ -84,11 +84,11 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
           <div style="font-size:15px;color:#374151;line-height:1.6;">${intro}</div>
           ${buttonUrl ? `
           <div style="margin:28px 0;">
-            <a href="${buttonUrl}" style="display:inline-block;background:#fbff12;color:#1b1464;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;">${buttonLabel}</a>
+            <a href="${buttonUrl}" style="display:inline-block;background:#d6e949;color:#3c45a3;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;">${buttonLabel}</a>
           </div>
           <div style="font-size:13px;color:#6b7280;line-height:1.5;">
             O copia este enlace en tu navegador:<br>
-            <span style="color:#1b1464;word-break:break-all;">${buttonUrl}</span>
+            <span style="color:#3c45a3;word-break:break-all;">${buttonUrl}</span>
           </div>` : ''}
           ${footer ? `<div style="margin-top:28px;padding-top:20px;border-top:1px solid #e5e7eb;font-size:13px;color:#6b7280;line-height:1.5;">${footer}</div>` : ''}
         </td></tr>

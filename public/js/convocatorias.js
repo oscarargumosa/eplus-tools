@@ -364,7 +364,7 @@ const Convocatorias = (() => {
             <textarea id="conv-note-text" rows="2" placeholder="Escribe una nota (visible solo para admins)…"
               class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 focus:border-primary focus:outline-none text-sm resize-y"></textarea>
             <div class="flex items-center justify-end mt-2">
-              <button id="conv-note-add" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-[#fbff12] text-xs font-bold hover:bg-primary/80 disabled:opacity-50">
+              <button id="conv-note-add" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-[#d6e949] text-xs font-bold hover:bg-primary/80 disabled:opacity-50">
                 <span class="material-symbols-outlined text-[14px]">add</span> Añadir nota
               </button>
             </div>
@@ -752,7 +752,7 @@ const Convocatorias = (() => {
     // secundario para quien quiera ir directo a solicitar fuera.
     const apply = `<button type="button" id="conv-start-vision"
             data-call-id="${escapeHtml(item.call_id || '')}"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1b1464] text-[#fbff12] text-sm font-bold hover:bg-[#1b1464]/80 transition-colors">
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#3c45a3]/80 transition-colors">
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">explore</span>
             <span>Empezar mi visión</span>
           </button>`;
@@ -855,7 +855,7 @@ const Convocatorias = (() => {
           <form id="conv-chat-form" class="flex gap-2">
             <input id="conv-chat-input" type="text" placeholder="Escribe tu pregunta..."
               class="flex-1 px-3 py-2 rounded-xl border border-outline-variant/40 focus:border-primary focus:outline-none text-sm">
-            <button type="submit" class="px-4 py-2 rounded-xl bg-primary text-[#fbff12] text-sm font-bold hover:bg-primary/80">Enviar</button>
+            <button type="submit" class="px-4 py-2 rounded-xl bg-primary text-[#d6e949] text-sm font-bold hover:bg-primary/80">Enviar</button>
           </form>
           <div class="mt-2 flex flex-wrap gap-1.5 text-[10px]">
             ${['¿Cuál es el presupuesto?','¿Quién puede aplicar?','¿Qué documentos hay que entregar?','¿Cuáles son los criterios de evaluación?'].map(s =>
