@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const User = require('./model');
 const { signToken, signRefreshToken, verifyRefreshToken } = require('../../middleware/auth');
 const subscribersModel = require('../subscribers/model');
-const { sendVerificationEmail, sendPasswordResetEmail } = require('../../utils/email');
+const { sendVerificationEmail, sendPasswordResetEmail, onNewUser } = require('../../utils/email');
 const { audit } = require('../../utils/audit');
 
 const SALT_ROUNDS = 12;
@@ -18,7 +18,7 @@ function _promoteWarm(user) {
 
 /* ── Cookie options ──────────────────────────────────────────── */
 // La cookie de refresco solo viaja a /v1/auth (refresh, session-status,
-// logout, oidc). Las antiguas iban con path '/': se borran al reemitir.
+// logout). Las antiguas iban con path '/': se borran al reemitir.
 const REFRESH_COOKIE_PATH = '/v1/auth';
 function cookieOpts() {
   return {
@@ -57,7 +57,14 @@ const AuthController = {
   /* ── POST /v1/auth/register ────────────────────────────────── */
   async register(req, res) {
     try {
-      const { email, password, name } = req.body;
+      const { email, password, name, acepta_privacidad } = req.body;
+
+      // Casilla obligatoria «He leído y acepta la política de privacidad».
+      if (acepta_privacidad !== true) {
+        return res.status(400).json({
+          ok: false, error: { code: 'PRIVACY_REQUIRED', message: 'Para crear la cuenta tienes que aceptar la política de privacidad.' }
+        });
+      }
 
       const pwErr = validatePassword(password);
       if (pwErr) return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: pwErr } });
@@ -90,7 +97,7 @@ const AuthController = {
       res.status(201).json({
         ok: true,
         data: {
-          message: 'Account created. Check your email to verify your address before signing in.',
+          message: 'Cuenta creada. Te hemos enviado un correo para confirmar tu dirección antes de entrar.',
           email: user.email,
           requires_verification: true
         }
@@ -116,7 +123,7 @@ const AuthController = {
           ? { actor: user, targetType: 'user', targetId: user.id, meta: { reason: 'bad_password' } }
           : { actor: { email }, meta: { reason: 'unknown_user' } });
         return res.status(401).json({
-          ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid email or password' }
+          ok: false, error: { code: 'UNAUTHORIZED', message: 'Email o contraseña incorrectos' }
         });
       }
 
@@ -125,7 +132,7 @@ const AuthController = {
           ok: false,
           error: {
             code: 'EMAIL_NOT_VERIFIED',
-            message: 'Please verify your email before signing in. Check your inbox or request a new link.'
+            message: 'Confirma tu email antes de entrar. Revisa tu bandeja o pide un enlace nuevo.'
           }
         });
       }
@@ -185,10 +192,13 @@ const AuthController = {
       setRefreshCookie(res, refreshToken);
       _promoteWarm(user);
       audit(req, 'auth.login', { actor: user, targetType: 'user', targetId: user.id, meta: { method: 'google' } });
-      if (user.created) require('../../utils/email').onNewUser(user, 'Google (directo)');
+      // Alta nueva: correo de bienvenida + aviso al dueño; la SPA enseña el mensaje con `created`.
+      const created = !!user.created;
+      delete user.created;
+      if (created) onNewUser(user, 'Google');
       res.json({
         ok: true,
-        data: { user, access_token: accessToken }
+        data: { user, access_token: accessToken, created }
       });
     } catch (err) {
       console.error('[AUTH] Google login error:', err.message);
@@ -208,10 +218,12 @@ const AuthController = {
       if (!result) {
         return res.status(400).json({
           ok: false,
-          error: { code: 'INVALID_OR_EXPIRED', message: 'This verification link is invalid or has expired.' }
+          error: { code: 'INVALID_OR_EXPIRED', message: 'Este enlace de confirmación no es válido o ha caducado.' }
         });
       }
-      res.json({ ok: true, data: { message: 'Email verified. You can now sign in.', email: result.email } });
+      // Primera verificación = alta completa: bienvenida a la persona + aviso al dueño.
+      if (result.firstTime) onNewUser({ id: result.userId, email: result.email, name: result.name }, 'Registro propio');
+      res.json({ ok: true, data: { message: 'Email confirmado. Ya puedes entrar.', email: result.email, first_time: !!result.firstTime } });
     } catch (err) {
       console.error('[AUTH] Verify email error:', err.message);
       res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Verification failed' } });
@@ -271,7 +283,7 @@ const AuthController = {
       if (!result) {
         return res.status(400).json({
           ok: false,
-          error: { code: 'INVALID_OR_EXPIRED', message: 'This reset link is invalid or has expired.' }
+          error: { code: 'INVALID_OR_EXPIRED', message: 'Este enlace para cambiar la contraseña no es válido o ha caducado.' }
         });
       }
 
@@ -279,7 +291,11 @@ const AuthController = {
       await User.updatePassword(result.userId, passwordHash);
 
       // If they reset their password, treat the email as verified.
-      await User.markEmailVerified(result.userId);
+      // Si la cuenta no estaba verificada, el alta se completa aquí: bienvenida + aviso.
+      if (await User.markEmailVerified(result.userId)) {
+        const u = await User.findById(result.userId);
+        if (u) onNewUser(u, 'Registro propio');
+      }
       // Cierra todas las sesiones abiertas (p. ej. las de quien robó la cuenta).
       await User.bumpTokenVersion(result.userId);
       audit(req, 'auth.password.reset', { actor: { id: result.userId }, targetType: 'user', targetId: result.userId });
@@ -413,9 +429,9 @@ const AuthController = {
   },
 
   /* ── GET /v1/auth/session-status ───────────────────────────── */
-  /* Public, cookie-only check used by eufundingschool.com (WP) to
-   * decide whether to render "Iniciar sesión" or "Mi cuenta · Name"
-   * in the menu. Never throws auth errors — always 200 with data. */
+  /* Public, cookie-only check used by the public pages (/mision,
+   * /recursos/…) to decide whether to render "Iniciar sesión" or
+   * "Mi cuenta · Name" in the menu. Never throws auth errors — always 200 with data. */
   async sessionStatus(req, res) {
     try {
       const token = req.cookies?.refresh_token;

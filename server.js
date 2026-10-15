@@ -83,17 +83,13 @@ app.use(helmet({
   referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
 }));
 
-// CORS allow-list. Tool origins + WP origins (local + prod) so the WP
-// newsletter form can POST to /v1/subscribers. Env var can override.
+// CORS allow-list: el propio Studio (CORS_ORIGIN y el origen de APP_URL) y local.
+// CORS_ORIGINS (lista separada por comas) la sustituye entera.
+const appOrigin = (() => { try { return new URL(process.env.APP_URL).origin; } catch { return ''; } })();
 const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || [
   process.env.CORS_ORIGIN || 'http://localhost:3000',
+  appOrigin,
   'http://localhost:3000',
-  'http://eufundingschool.test',
-  'https://eufundingschool.com',
-  'https://www.eufundingschool.com',
-  'https://intake.eufundingschool.com',
-  'https://app.eufundingschool.com',
-  'https://campus.eufundingschool.com', // Moodle: session-status para unificar CTA login
 ].join(','))
   .split(',')
   .map(s => s.trim())

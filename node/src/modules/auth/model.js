@@ -25,8 +25,9 @@ const User = {
 
   async create({ email, passwordHash, name }) {
     const id = uuid();
+    // Solo se llega aquí con la casilla de privacidad marcada (controller.register).
     await db.query(
-      'INSERT INTO users (id, email, password_hash, name) VALUES (?, ?, ?, ?)',
+      'INSERT INTO users (id, email, password_hash, name, privacy_accepted_at) VALUES (?, ?, ?, ?, NOW())',
       [id, email.toLowerCase().trim(), passwordHash, name.trim()]
     );
     return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', email_verified: 0 };
@@ -43,15 +44,18 @@ const User = {
     }
 
     const id = uuid();
+    // Alta con Google: el botón lleva debajo el aviso «Al continuar aceptas la política de privacidad».
     await db.query(
-      "INSERT INTO users (id, email, password_hash, name, email_verified) VALUES (?, ?, '', ?, 1)",
+      "INSERT INTO users (id, email, password_hash, name, email_verified, privacy_accepted_at) VALUES (?, ?, '', ?, 1, NOW())",
       [id, email.toLowerCase().trim(), name.trim()]
     );
     return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', created: true };
   },
 
+  /* Devuelve true si la cuenta no estaba verificada (alta que se completa ahora). */
   async markEmailVerified(userId) {
-    await db.query('UPDATE users SET email_verified = 1 WHERE id = ?', [userId]);
+    const [r] = await db.query('UPDATE users SET email_verified = 1 WHERE id = ? AND email_verified = 0', [userId]);
+    return r.affectedRows > 0;
   },
 
   async updatePassword(userId, passwordHash) {
@@ -104,7 +108,7 @@ const User = {
 
   async consumeVerificationToken(rawToken) {
     const [rows] = await db.query(
-      `SELECT t.*, u.id AS uid, u.email, u.email_verified
+      `SELECT t.*, u.id AS uid, u.email, u.name, u.email_verified
          FROM email_verification_tokens t
          JOIN users u ON u.id = t.user_id
         WHERE t.token_hash = ? AND t.used_at IS NULL AND t.expires_at > NOW()
@@ -114,10 +118,13 @@ const User = {
     const t = rows[0];
     if (!t) return null;
     await db.query('UPDATE email_verification_tokens SET used_at = NOW() WHERE id = ?', [t.id]);
+    // firstTime: la cuenta pasa ahora de no verificada a verificada (alta completa).
+    let firstTime = false;
     if (!t.email_verified) {
-      await db.query('UPDATE users SET email_verified = 1 WHERE id = ?', [t.uid]);
+      const [r] = await db.query('UPDATE users SET email_verified = 1 WHERE id = ? AND email_verified = 0', [t.uid]);
+      firstTime = r.affectedRows > 0;
     }
-    return { userId: t.uid, email: t.email };
+    return { userId: t.uid, email: t.email, name: t.name, firstTime };
   },
 
   /* ── Password reset tokens ─────────────────────────────────── */
