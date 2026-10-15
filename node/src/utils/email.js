@@ -21,8 +21,12 @@ function getClient() {
 
 function fromAddress() {
   const addr = process.env.EMAIL_FROM || 'onboarding@resend.dev';
-  const name = process.env.EMAIL_FROM_NAME || 'EU Funding School';
+  const name = process.env.EMAIL_FROM_NAME || 'EU Funding Studio';
   return `${name} <${addr}>`;
+}
+
+function escHtml(v) {
+  return String(v || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 function appUrl() {
@@ -65,7 +69,7 @@ async function sendEmail({ to, subject, html, text }) {
 
 function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
   return `<!doctype html>
-<html lang="en">
+<html lang="es">
 <head><meta charset="utf-8"><title>${title}</title></head>
 <body style="margin:0;padding:0;background:#f5f6fa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f6fa;padding:40px 16px;">
@@ -73,7 +77,7 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
       <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;">
         <tr><td style="background:#1b1464;padding:24px 32px;">
           <div style="display:inline-block;background:#fbff12;width:32px;height:32px;border-radius:6px;vertical-align:middle;"></div>
-          <span style="color:#ffffff;font-size:18px;font-weight:600;margin-left:12px;vertical-align:middle;">EU Funding School</span>
+          <span style="color:#ffffff;font-size:18px;font-weight:600;margin-left:12px;vertical-align:middle;">EU Funding Studio</span>
         </td></tr>
         <tr><td style="padding:32px;">
           <h1 style="margin:0 0 16px;font-size:22px;color:#111827;">${title}</h1>
@@ -83,13 +87,13 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
             <a href="${buttonUrl}" style="display:inline-block;background:#fbff12;color:#1b1464;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;">${buttonLabel}</a>
           </div>
           <div style="font-size:13px;color:#6b7280;line-height:1.5;">
-            Or copy this link into your browser:<br>
+            O copia este enlace en tu navegador:<br>
             <span style="color:#1b1464;word-break:break-all;">${buttonUrl}</span>
           </div>` : ''}
           ${footer ? `<div style="margin-top:28px;padding-top:20px;border-top:1px solid #e5e7eb;font-size:13px;color:#6b7280;line-height:1.5;">${footer}</div>` : ''}
         </td></tr>
         <tr><td style="background:#fafbfc;padding:16px 32px;font-size:12px;color:#9ca3af;text-align:center;">
-          EU Funding School · <a href="https://eufundingschool.com" style="color:#9ca3af;">eufundingschool.com</a>
+          EU Funding Studio · <a href="${appUrl()}" style="color:#9ca3af;">${appUrl().replace(/^https?:\/\//, '')}</a>
         </td></tr>
       </table>
     </td></tr>
@@ -100,47 +104,45 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
 
 async function sendVerificationEmail({ to, name, token }) {
   const url = `${appUrl()}/verify-email?token=${encodeURIComponent(token)}`;
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
   const html = shellTemplate({
-    title: 'Verify your email',
-    intro: `Hi ${name || 'there'},<br><br>Welcome to EU Funding School. Please confirm your email address to activate your account.`,
-    buttonLabel: 'Verify my email',
+    title: 'Confirma tu email',
+    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>Gracias por crear tu cuenta en EU Funding Studio. Confirma tu dirección de correo para activarla.`,
+    buttonLabel: 'Confirmar mi email',
     buttonUrl: url,
-    footer: `This link expires in 24 hours. If you didn't create an account, you can safely ignore this email.`
+    footer: 'El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.'
   });
-  const text = `Hi ${name || 'there'},
+  const text = `Hola${first ? ' ' + first : ''},
 
-Welcome to EU Funding School. Please confirm your email by visiting:
+Gracias por crear tu cuenta en EU Funding Studio. Confirma tu correo entrando en:
 
 ${url}
 
-This link expires in 24 hours. If you didn't create an account, you can safely ignore this email.`;
-  return sendEmail({ to, subject: 'Verify your email — EU Funding School', html, text });
+El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.`;
+  return sendEmail({ to, subject: 'Confirma tu email — EU Funding Studio', html, text });
 }
 
 async function sendPasswordResetEmail({ to, name, token }) {
   const url = `${appUrl()}/reset-password?token=${encodeURIComponent(token)}`;
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
   const html = shellTemplate({
-    title: 'Reset your password',
-    intro: `Hi ${name || 'there'},<br><br>We received a request to reset your password. Click the button below to choose a new one.`,
-    buttonLabel: 'Reset my password',
+    title: 'Cambia tu contraseña',
+    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>Hemos recibido una petición para cambiar la contraseña de tu cuenta. Pulsa el botón para elegir una nueva.`,
+    buttonLabel: 'Elegir nueva contraseña',
     buttonUrl: url,
-    footer: `This link expires in 1 hour. If you didn't request this, you can ignore this email — your password won't change.`
+    footer: 'El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo: tu contraseña no cambia.'
   });
-  const text = `Hi ${name || 'there'},
+  const text = `Hola${first ? ' ' + first : ''},
 
-We received a request to reset your password. Visit this link to choose a new one:
+Hemos recibido una petición para cambiar la contraseña de tu cuenta. Entra en este enlace para elegir una nueva:
 
 ${url}
 
-This link expires in 1 hour. If you didn't request this, ignore this email.`;
-  return sendEmail({ to, subject: 'Reset your password — EU Funding School', html, text });
+El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo.`;
+  return sendEmail({ to, subject: 'Cambia tu contraseña — EU Funding Studio', html, text });
 }
 
 /* ── Alta nueva (regla del ecosistema: correo a la persona + aviso a Óscar) ── */
-function escHtml(v) {
-  return String(v || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-}
-
 async function sendWelcomeEmail({ to, name }) {
   const first = String(name || '').trim().split(/\s+/)[0] || '';
   const url = appUrl();
@@ -152,8 +154,8 @@ async function sendWelcomeEmail({ to, name }) {
       Nos vemos dentro.`,
     buttonLabel: 'Entrar en EU Funding Studio',
     buttonUrl: url,
-    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding School. Si no has sido tú, escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a> y la cerramos.'
-  }).replace('Or copy this link into your browser:', 'O copia este enlace en tu navegador:').replace('<html lang="en">', '<html lang="es">');
+    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding Studio. Si no has sido tú, escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a> y la cerramos.'
+  });
   const text = `Te damos la bienvenida${first ? ', ' + first : ''}.
 
 Tu cuenta de EU Funding Studio ya está creada. Entra aquí: ${url}
@@ -168,7 +170,7 @@ async function sendNewUserNotice({ user, via }) {
     title: 'Nueva alta en EU Funding Studio',
     intro: `<b>${escHtml(user.name)}</b> &lt;${escHtml(user.email)}&gt; acaba de crear su cuenta.<br>
       Vía: ${escHtml(via)}<br>Fecha: ${new Date().toISOString().replace('T', ' ').slice(0, 16)} UTC`
-  }).replace('<html lang="en">', '<html lang="es">');
+  });
   return sendEmail({ to, subject: `Nueva alta en Studio: ${user.name || user.email}`, html,
     text: `Nueva alta: ${user.name} <${user.email}> (vía ${via})` });
 }
