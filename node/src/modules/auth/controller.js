@@ -185,6 +185,7 @@ const AuthController = {
       setRefreshCookie(res, refreshToken);
       _promoteWarm(user);
       audit(req, 'auth.login', { actor: user, targetType: 'user', targetId: user.id, meta: { method: 'google' } });
+      if (user.created) require('../../utils/email').onNewUser(user, 'Google (directo)');
       res.json({
         ok: true,
         data: { user, access_token: accessToken }

@@ -79,7 +79,15 @@ const OidcController = {
         code_challenge:        challenge,
         code_challenge_method: 'S256',
       });
-      res.redirect(`${meta.authorization_endpoint}?${params}`);
+      const authorizeUrl = `${meta.authorization_endpoint}?${params}`;
+      // ?signup=1 («Crear cuenta gratis»): directo al formulario de alta de
+      // Authentik; al terminar, `next` continúa con la autorización y vuelve aquí.
+      const signupFlow = process.env.OIDC_SIGNUP_FLOW || 'efs-registro';
+      if (req.query.signup === '1' && signupFlow) {
+        const a = new URL(authorizeUrl);
+        return res.redirect(`${a.origin}/if/flow/${encodeURIComponent(signupFlow)}/?next=${encodeURIComponent(a.pathname + a.search)}`);
+      }
+      res.redirect(authorizeUrl);
     } catch (err) {
       console.error('[OIDC] login error:', err.message);
       res.status(500).send('No se pudo iniciar sesión');
@@ -138,8 +146,15 @@ const OidcController = {
       res.clearCookie('refresh_token', { path: '/' });
       res.cookie('refresh_token', signRefreshToken(user), sessionCookieOpts());
 
+      // Alta nueva: correo de bienvenida + aviso (sin esperar; no puede tumbar el login)
+      // y la SPA enseña el mensaje de confirmación con ?bienvenida=1.
+      let dest = safeRet(tx.ret);
+      if (user.created) {
+        require('../../utils/email').onNewUser(user, 'Authentik (login único)');
+        dest += (dest.includes('?') ? '&' : '?') + 'bienvenida=1';
+      }
       // La SPA se restaura sola al cargar (tryRestore → /auth/refresh → /auth/me)
-      res.redirect(safeRet(tx.ret));
+      res.redirect(dest);
     } catch (err) {
       console.error('[OIDC] callback error:', err.message);
       res.redirect('/?login=error');

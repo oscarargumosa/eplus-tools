@@ -136,7 +136,55 @@ This link expires in 1 hour. If you didn't request this, ignore this email.`;
   return sendEmail({ to, subject: 'Reset your password — EU Funding School', html, text });
 }
 
+/* ── Alta nueva (regla del ecosistema: correo a la persona + aviso a Óscar) ── */
+function escHtml(v) {
+  return String(v || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+async function sendWelcomeEmail({ to, name }) {
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const url = appUrl();
+  const html = shellTemplate({
+    title: `Te damos la bienvenida${first ? ', ' + escHtml(first) : ''}`,
+    intro: `Tu cuenta de <b>EU Funding Studio</b> ya está creada.<br><br>
+      Desde hoy puedes buscar convocatorias, encontrar socios en el directorio de entidades europeas
+      y diseñar tus proyectos paso a paso, con ayuda en cada sección.<br><br>
+      Nos vemos dentro.`,
+    buttonLabel: 'Entrar en EU Funding Studio',
+    buttonUrl: url,
+    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding School. Si no has sido tú, respóndenos y la cerramos.'
+  }).replace('Or copy this link into your browser:', 'O copia este enlace en tu navegador:').replace('<html lang="en">', '<html lang="es">');
+  const text = `Te damos la bienvenida${first ? ', ' + first : ''}.
+
+Tu cuenta de EU Funding Studio ya está creada. Entra aquí: ${url}
+
+Nos vemos dentro.`;
+  return sendEmail({ to, subject: 'Tu cuenta de EU Funding Studio está lista', html, text });
+}
+
+async function sendNewUserNotice({ user, via }) {
+  const to = process.env.NEW_USER_NOTIFY_EMAIL || 'oscarargumosa@gmail.com';
+  const html = shellTemplate({
+    title: 'Nueva alta en EU Funding Studio',
+    intro: `<b>${escHtml(user.name)}</b> &lt;${escHtml(user.email)}&gt; acaba de crear su cuenta.<br>
+      Vía: ${escHtml(via)}<br>Fecha: ${new Date().toISOString().replace('T', ' ').slice(0, 16)} UTC`
+  }).replace('<html lang="en">', '<html lang="es">');
+  return sendEmail({ to, subject: `Nueva alta en Studio: ${user.name || user.email}`, html,
+    text: `Nueva alta: ${user.name} <${user.email}> (vía ${via})` });
+}
+
+/* Correo de bienvenida + aviso. Nunca lanza: si falla, la cuenta ya está creada. */
+async function onNewUser(user, via) {
+  try { await sendWelcomeEmail({ to: user.email, name: user.name }); }
+  catch (e) { console.warn('[alta] bienvenida no enviada:', e.message); }
+  try { await sendNewUserNotice({ user, via }); }
+  catch (e) { console.warn('[alta] aviso no enviado:', e.message); }
+}
+
 module.exports = {
+  sendWelcomeEmail,
+  sendNewUserNotice,
+  onNewUser,
   sendEmail,
   sendVerificationEmail,
   sendPasswordResetEmail

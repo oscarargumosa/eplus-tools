@@ -68,6 +68,7 @@ const App = (() => {
 
     // Try to restore session from refresh token cookie
     const restored = await Auth.tryRestore();
+    if (restored) welcomeIfNew();
     if (!restored) {
       // Sin sesión → modo anónimo (teaser público), no pantalla de login.
       // El visitante explora las superficies públicas; el muro salta al
@@ -285,8 +286,33 @@ const App = (() => {
   }
 
   function openAuth(tab = 'login') {
+    // En producción el acceso es único (Authentik) y el formulario de registro local
+    // está oculto: «Crear cuenta» va directo al alta de Authentik y vuelve aquí.
+    if (tab === 'register' && document.getElementById('auth-sso-only')) {
+      location.href = '/v1/auth/oidc/login?signup=1&ret=' + encodeURIComponent(location.pathname + location.hash);
+      return;
+    }
     showAuth();
     showAuthTab(tab);
+  }
+
+  /* Alta nueva (regla de altas: correo + mensaje en pantalla). El servidor añade
+     ?bienvenida=1 al volver del alta; se avisa y se limpia la URL. */
+  function welcomeIfNew() {
+    const q = new URLSearchParams(location.search);
+    if (q.get('bienvenida') !== '1') return;
+    q.delete('bienvenida');
+    history.replaceState({}, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash);
+    const box = document.createElement('div');
+    box.setAttribute('role', 'status');
+    box.className = 'fixed top-20 left-1/2 -translate-x-1/2 z-[70] max-w-lg w-[calc(100%-32px)] bg-white border border-secondary-fixed/60 shadow-xl rounded-2xl p-5 flex gap-3 items-start';
+    box.innerHTML = `<span class="material-symbols-outlined text-primary text-3xl">celebration</span>
+      <div class="flex-1"><p class="font-bold text-primary">Tu cuenta está lista</p>
+      <p class="text-sm text-on-surface-variant mt-1">Se ha creado con éxito y te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!</p></div>
+      <button type="button" aria-label="Cerrar" class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined">close</span></button>`;
+    box.querySelector('button').addEventListener('click', () => box.remove());
+    document.body.appendChild(box);
+    setTimeout(() => box.remove(), 15000);
   }
 
   function showLoginWall({ what } = {}) {

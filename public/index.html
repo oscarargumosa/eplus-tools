@@ -162,6 +162,12 @@ tailwind.config = {
                    hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-md shadow-primary/10">
             Iniciar sesión
           </button>
+          <button type="button" id="btn-oidc-signup"
+            onclick="window.location.href='/v1/auth/oidc/login?signup=1'"
+            class="w-full mt-3 py-3 rounded-lg border border-outline-variant/50 bg-white text-on-surface text-sm font-semibold
+                   hover:bg-surface-container-low transition-colors">
+            Crear cuenta gratis
+          </button>
           <p class="text-center text-xs text-on-surface-variant mt-4">
             Un solo acceso para la Academia, las herramientas y la web de EU&nbsp;Funding&nbsp;School.
           </p>

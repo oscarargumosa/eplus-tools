@@ -47,7 +47,7 @@ const User = {
       "INSERT INTO users (id, email, password_hash, name, email_verified) VALUES (?, ?, '', ?, 1)",
       [id, email.toLowerCase().trim(), name.trim()]
     );
-    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free' };
+    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', created: true };
   },
 
   async markEmailVerified(userId) {
