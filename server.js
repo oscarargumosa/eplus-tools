@@ -138,7 +138,8 @@ app.use((req, res, next) => {
   let p = req.path;
   try { p = decodeURIComponent(p); } catch { /* ruta mal codificada: se mira tal cual */ }
   p = path.posix.normalize(p.replace(/\\/g, '/')).toLowerCase();
-  if (/^\/+uploads\/+(documents|research|evaluator)(\/|$)/.test(p)) {
+  // node/private (documentos de reclamación de entidades…) tampoco, nunca.
+  if (/^\/+uploads\/+(documents|research|evaluator|org-claims)(\/|$)/.test(p) || /^\/+(node\/+)?private(\/|$)/.test(p)) {
     return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Not found' } });
   }
   next();
@@ -189,6 +190,8 @@ app.use('/v1/intake',      proyectos, require('./node/src/modules/intake/routes'
 app.use('/v1/calculator',  proyectos, require('./node/src/modules/calculator/routes'));
 // Antes que /v1/admin: «Usuarios y accesos» lleva su propia auditoría.
 app.use('/v1/admin/access', require('./node/src/modules/access/admin.routes'));
+// Entidades reclamadas: revisar documentación y poner el sello «Verificada».
+app.use('/v1/admin/org-claims', require('./node/src/modules/organizations/admin.routes'));
 app.use('/v1/admin', require('./node/src/modules/admin/routes'));
 app.use('/v1/documents',   proyectos, require('./node/src/modules/documents/routes'));
 app.use('/v1/organizations', require('./node/src/modules/organizations/routes'));

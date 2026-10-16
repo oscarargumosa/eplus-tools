@@ -229,7 +229,28 @@ async function sendAreaGrantedEmail({ to, name, areaLabel, path }) {
     text: `Hola${first ? ' ' + first : ''}:\n\nYa tienes acceso a ${areaLabel} en EU Funding Studio. Entra aquí: ${url}` });
 }
 
+/* ── Entidades reclamadas: resultado de la revisión de la documentación ── */
+async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note }) {
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const url = `${appUrl()}/#account-org`;
+  const ok = decision === 'verified';
+  const title = ok ? 'Tu entidad ya está verificada' : 'No hemos podido verificar tu entidad';
+  const intro = `Hola${first ? ' ' + escHtml(first) : ''}:<br><br>` + (ok
+    ? `Hemos revisado la documentación de <b>${escHtml(orgName)}</b>. Su ficha ya lleva el sello <b>«Verificada»</b> en el directorio de EU Funding Studio.`
+    : `Hemos revisado la documentación de <b>${escHtml(orgName)}</b> y no hemos podido verificarla.` +
+      (note ? `<br><br>Motivo: <i>${escHtml(note)}</i>` : '') +
+      '<br><br>Puedes subir otro documento desde «Mi entidad» y lo revisaremos de nuevo.');
+  const html = shellTemplate({
+    title, intro, buttonLabel: 'Ir a Mi entidad', buttonUrl: url,
+    footer: 'Recibes este correo porque reclamaste esta entidad en EU Funding Studio. ¿Dudas? Escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+  });
+  const subject = ok ? `«${orgName}» ya está verificada en EU Funding Studio` : `Revisión de la documentación de «${orgName}»`;
+  return sendEmail({ to, subject, html,
+    text: `${title}: ${orgName}.${!ok && note ? `\nMotivo: ${note}` : ''}\n\n${url}` });
+}
+
 module.exports = {
+  sendOrgClaimReviewEmail,
   sendAccessRequestNotice,
   sendAreaGrantedEmail,
   sendWelcomeEmail,
