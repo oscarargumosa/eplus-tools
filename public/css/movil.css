@@ -111,8 +111,14 @@
   .calc-act { padding: 12px; }
 
   /* ── Objetivos táctiles de al menos 40 px en Diseñar y Escribir ── */
+  /* Altura mínima para todos; anchura mínima solo en botones de icono (un
+     min-width general anularía el mínimo automático de los elementos flex y
+     las pestañas se encogerían montándose unas sobre otras). */
   #panel-intake button, #panel-developer button,
-  #panel-intake select, #panel-developer select { min-width: 40px; min-height: 40px; }
+  #panel-intake select, #panel-developer select { min-height: 40px; }
+  #panel-intake button:has(> .material-symbols-outlined:only-child),
+  #panel-developer button:has(> .material-symbols-outlined:only-child),
+  .calc-act-head > button, .calc-rates button, .calc-staff-del { min-width: 40px; flex-shrink: 0; }
   #panel-intake input[type="checkbox"], #panel-developer input[type="checkbox"],
   #panel-intake input[type="radio"], #panel-developer input[type="radio"] { width: 22px; height: 22px; }
   .voice-btn { width: 40px; height: 40px; top: 4px; right: 4px; }
@@ -140,4 +146,14 @@
   /* Casillas con su etiqueta: la etiqueta entera es la zona de toque (≥ 40 px). */
   #panel-intake label:has(> input[type="checkbox"]), #panel-developer label:has(> input[type="checkbox"]),
   #panel-intake label:has(> input[type="radio"]), #panel-developer label:has(> input[type="radio"]) { min-height: 40px; }
+}
+
+@media (max-width: 767px) {
+  /* Escribir · formulario de WP: tablas de tasks, deliverables y milestones con
+     anchura de trabajo y scroll horizontal propio (columnas legibles). */
+  .wp-form-table { min-width: 640px; }
+  /* Entregables: columnas de mes de la línea temporal y selector de tipo
+     de milestone con zona de toque de 44 px. */
+  #prep-dms-timeline { --tl-min: 44px; }
+  .prep-kind-sel { min-width: 44px; }
 }

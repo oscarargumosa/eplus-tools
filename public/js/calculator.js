@@ -1402,7 +1402,7 @@ const Calculator = (() => {
             </div>
             <div class="text-[10px] font-mono" style="color:${color}">${s.days} days × €${rate} = ${euros(s.days*rate)}</div>
           </div>
-          <button onclick="Calculator._removeMgmtStaff(${wi},${act.id},'${p.id}',${si})" class="text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none">×</button>
+          <button onclick="Calculator._removeMgmtStaff(${wi},${act.id},'${p.id}',${si})" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">×</button>
         </div>`;
       }).join('');
 
@@ -1463,7 +1463,7 @@ const Calculator = (() => {
             </div>
             <div class="text-[10px] font-mono" style="color:${color}">${s.days} days \u00D7 \u20AC${rate} = ${euros(s.days*rate)}</div>
           </div>
-          <button onclick="Calculator._removeIOStaff(${wi},${act.id},'${p.id}',${si})" class="text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none">\u00D7</button>
+          <button onclick="Calculator._removeIOStaff(${wi},${act.id},'${p.id}',${si})" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">\u00D7</button>
         </div>`;
       }).join('');
 

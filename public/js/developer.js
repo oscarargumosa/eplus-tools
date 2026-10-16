@@ -843,9 +843,9 @@ const Developer = (() => {
     const hasText = !!(value && value.trim());
     return `
       <div class="bg-white rounded-2xl border border-outline-variant/20 p-5" data-ai-field="${fieldKey}">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
           <label class="text-xs font-bold text-on-surface-variant">${cfg.label}</label>
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-2">
             ${!hasDraft ? `<button onclick="Developer._genFieldDraft('${fieldKey}')" class="prep-gen-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors" id="prep-gen-${fieldKey}">
               <span class="material-symbols-outlined text-sm">auto_awesome</span> Generar borrador IA
             </button>` : `<button onclick="Developer._startImprove('${fieldKey}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors" id="prep-improve-${fieldKey}">
@@ -2591,10 +2591,10 @@ const Developer = (() => {
         </summary>
         <div class="mt-3 overflow-x-auto">
           <div class="min-w-[800px]">
-            <div class="grid gap-px bg-outline-variant/20" style="grid-template-columns: repeat(${duration}, minmax(28px, 1fr));">
+            <div class="grid gap-px bg-outline-variant/20" style="grid-template-columns: repeat(${duration}, minmax(var(--tl-min, 28px), 1fr));">
               ${months.map(mm => `<div class="bg-surface-container-low text-center text-[9px] py-1 ${mm % 3 === 1 ? 'font-bold' : 'text-on-surface-variant/60'}">M${mm}</div>`).join('')}
             </div>
-            <div class="grid gap-px mt-1" style="grid-template-columns: repeat(${duration}, minmax(28px, 1fr));">
+            <div class="grid gap-px mt-1" style="grid-template-columns: repeat(${duration}, minmax(var(--tl-min, 28px), 1fr));">
               ${months.map(mm => {
                 const items = itemsByMonth[mm] || [];
                 if (!items.length) return '<div class="min-h-[40px]"></div>';
@@ -2711,8 +2711,8 @@ const Developer = (() => {
         <div class="flex items-baseline gap-2 flex-wrap mb-2">
           <input data-prep-m="code" data-id="${esc(m.id)}" value="${esc(m.code || '')}"
                  class="w-14 text-[11px] font-mono font-bold text-secondary px-1 py-0.5 bg-transparent border-0 hover:bg-surface-container focus:bg-white focus:ring-1 focus:ring-primary/30 rounded">
-          <select data-prep-m="kind" data-id="${esc(m.id)}" title="${esc(PREP_KIND_LABEL[m.kind] || 'Tipo')}"
-                  class="text-base px-0.5 py-0.5 border-0 bg-transparent hover:bg-surface-container focus:ring-1 focus:ring-primary/30 rounded">
+          <select data-prep-m="kind" data-id="${esc(m.id)}" title="${esc(PREP_KIND_LABEL[m.kind] || 'Tipo')}" aria-label="Tipo de milestone"
+                  class="prep-kind-sel text-base px-0.5 py-0.5 border-0 bg-transparent hover:bg-surface-container focus:ring-1 focus:ring-primary/30 rounded">
             <option value="" ${!m.kind ? 'selected' : ''}>—</option>
             <option value="kickoff"     ${m.kind === 'kickoff' ? 'selected' : ''}>🚀</option>
             <option value="deliverable" ${m.kind === 'deliverable' ? 'selected' : ''}>🎯</option>
@@ -3675,7 +3675,7 @@ const Developer = (() => {
 
       <div class="mb-3 flex items-center justify-between flex-wrap gap-2">
         <h3 class="font-headline text-sm font-bold text-on-surface">Critical risks and risk-management strategy</h3>
-        <div class="flex items-center gap-2">
+        <div class="flex flex-wrap items-center gap-2">
           <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#3c45a3] bg-secondary-fixed border border-[#3c45a3]/20 hover:bg-secondary-fixed/80 transition-colors">
             <span class="material-symbols-outlined text-sm">auto_awesome</span> Autocompletar con IA
           </button>
@@ -5454,8 +5454,8 @@ const Developer = (() => {
         <span class="material-symbols-outlined text-base text-violet">info</span>
         <span><strong>Líder y participantes</strong> se derivan automáticamente del presupuesto: solo las entidades con importe asignado en este WP pueden liderar o participar en sus tasks. Ajusta el presupuesto en <em>Diseñar</em> para cambiar la elegibilidad.</span>
       </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-xs border-collapse">
+      <div class="overflow-x-auto efs-hscroll">
+        <table class="wp-form-table w-full text-xs border-collapse">
           <thead class="bg-primary/5">
             <tr>
               <th class="text-left p-2 border border-outline-variant/30 w-16">Task No</th>
@@ -5622,8 +5622,8 @@ const Developer = (() => {
         </div>
       </div>
       ${rows.length ? `
-      <div class="overflow-x-auto">
-        <table class="w-full text-xs border-collapse">
+      <div class="overflow-x-auto efs-hscroll">
+        <table class="wp-form-table w-full text-xs border-collapse">
           <thead class="bg-primary/5">
             <tr>
               <th class="text-left p-2 border border-outline-variant/30 w-16">No</th>
@@ -5718,8 +5718,8 @@ const Developer = (() => {
         </div>
       </div>
       ${rows.length ? `
-      <div class="overflow-x-auto">
-        <table class="w-full text-xs border-collapse">
+      <div class="overflow-x-auto efs-hscroll">
+        <table class="wp-form-table w-full text-xs border-collapse">
           <thead class="bg-primary/5">
             <tr>
               <th class="text-left p-2 border border-outline-variant/30 w-20">No</th>
