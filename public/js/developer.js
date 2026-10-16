@@ -15,7 +15,6 @@ const Developer = (() => {
   let phase = 0; // 0=list, 1=context, 2=escribir(cascade), 4=review
   let contextData = null;
   let evalCriteria = [];
-  let _saveTimer = null;
   let _typingTimer = null;
   let prepSubTab = 'consorcio'; // default sub-tab in Prep Studio
   let prepCache = {};          // cached data per sub-tab to avoid re-fetching
@@ -757,12 +756,12 @@ const Developer = (() => {
       if (!ta) return;
       ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px';
       if (typeof VoiceInput !== 'undefined') VoiceInput.attach(ta);
-      let timer;
+      // Esperas vía SaveStatus (save-status.js): se ven en la barra, se fuerzan
+      // al salir y, si fallan, avisa el indicador global.
       ta.addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          API.put('/developer/projects/' + pid + '/interview/consortium_connection', { answer: ta.value }).catch(() => {});
-        }, 1200);
+        SaveStatus.debounce('dev:conn:' + pid, () =>
+          API.put('/developer/projects/' + pid + '/interview/consortium_connection', { answer: ta.value })
+            .catch(e => console.warn('consortium_connection save:', e)), 1200);
       });
     }, 50);
   }
@@ -782,7 +781,8 @@ const Developer = (() => {
         setTimeout(() => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }, 50);
         ta.classList.add('ring-2', 'ring-[#d6e949]');
         setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
-        await API.put('/developer/projects/' + currentProject.id + '/interview/consortium_connection', { answer: data.text }).catch(() => {});
+        SaveStatus.cancel('dev:conn:' + currentProject.id);   // el input de arriba ya lo programó
+        await API.put('/developer/projects/' + currentProject.id + '/interview/consortium_connection', { answer: data.text }).catch(e => console.warn('consortium_connection save:', e));
         Toast.show('Texto mejorado', 'ok');
       }
     } catch (e) {
@@ -1118,23 +1118,31 @@ const Developer = (() => {
     ['prep-rel-problem', 'prep-rel-targets', 'prep-rel-approach'].forEach(id => {
       const ta = document.getElementById(id);
       if (!ta) return;
-      let timer;
       ta.addEventListener('input', () => {
         autoResizeField(id);
-        clearTimeout(timer);
-        timer = setTimeout(() => saveRelContext(), 2000);
+        // Los valores se toman al teclear: si se cambia de pestaña antes de que
+        // salte la espera, los campos ya no existen y antes se guardaban vacíos.
+        const vals = readRelContext();
+        SaveStatus.debounce('dev:relctx:' + currentProject.id, () => saveRelContext(vals), 1500);
       });
     });
   }
 
-  async function saveRelContext() {
-    const problem = document.getElementById('prep-rel-problem')?.value || '';
-    const target_groups = document.getElementById('prep-rel-targets')?.value || '';
-    const approach = document.getElementById('prep-rel-approach')?.value || '';
+  function readRelContext() {
+    return {
+      problem: document.getElementById('prep-rel-problem')?.value || '',
+      target_groups: document.getElementById('prep-rel-targets')?.value || '',
+      approach: document.getElementById('prep-rel-approach')?.value || '',
+    };
+  }
+
+  // «Guardado» / «No se ha guardado» lo dice el indicador global (antes un
+  // toast «Contexto guardado» en cada pausa al escribir).
+  async function saveRelContext(vals) {
+    const body = vals || readRelContext();
     try {
-      await API.put('/developer/projects/' + currentProject.id + '/prep/relevancia/context', { problem, target_groups, approach });
-      Toast.show('Contexto guardado', 'ok');
-    } catch (e) { Toast.show('Error guardando: ' + e.message, 'err'); }
+      await API.put('/developer/projects/' + currentProject.id + '/prep/relevancia/context', body);
+    } catch (e) { console.warn('relevancia context save:', e); }
   }
 
   /* ── Sub-tab: Actividades ─────────────────────────────────────── */
@@ -1248,10 +1256,8 @@ const Developer = (() => {
 
     // Bind autosave for WP summaries
     el.querySelectorAll('.prep-wp-summary').forEach(ta => {
-      let timer;
       ta.addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(async () => {
+        SaveStatus.debounce('dev:wpsum:' + ta.dataset.wpId, async () => {
           try {
             await API.put('/developer/wp/' + ta.dataset.wpId + '/summary', { summary: ta.value });
           } catch (e) { console.error('wp summary save:', e); }
@@ -1261,10 +1267,8 @@ const Developer = (() => {
 
     // Bind autosave for activity descriptions
     el.querySelectorAll('.prep-act-desc').forEach(ta => {
-      let timer;
       ta.addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(async () => {
+        SaveStatus.debounce('dev:actdesc:' + ta.dataset.actId, async () => {
           try {
             await API.put('/developer/activity/' + ta.dataset.actId + '/description', { description: ta.value });
           } catch (e) { console.error('activity desc save:', e); }
@@ -2823,10 +2827,9 @@ const Developer = (() => {
         const dId = cb.dataset.prepDTask;
         const checked = host.querySelectorAll(`[data-prep-d-task="${dId}"]:checked`);
         const ids = Array.from(checked).map(c => c.value);
-        clearTimeout(taskUpdates[dId]);
-        taskUpdates[dId] = setTimeout(async () => {
+        SaveStatus.debounce('dev:dtasks:' + dId, async () => {
           try {
-            await API.patch(`/developer/deliverables/${dId}`, { task_ids: ids });
+            await API.patch(`/developer/deliverables/${dId}`, { task_ids: ids }, { saveKey: 'PATCH deliverable tasks ' + dId });
             _dmsRunValidation(pid, false);
           } catch (err) { console.error(err); }
         }, 600);
@@ -2993,9 +2996,13 @@ const Developer = (() => {
     fd.append('file', file);
     fd.append('title', file.name.replace(/\.[^.]+$/, ''));
     try {
-      await fetch('/v1/developer/projects/' + currentProject.id + '/research-docs', {
+      // Antes decía «subido» aunque el servidor respondiera con error.
+      const json = await SaveStatus.track(() => fetch('/v1/developer/projects/' + currentProject.id + '/research-docs', {
         method: 'POST', headers: { 'Authorization': 'Bearer ' + API.getToken() }, body: fd
-      }).then(r => r.json());
+      }).then(r => r.json().catch(() => ({ ok: false, error: { message: 'Respuesta inesperada del servidor (' + r.status + ')' } })))
+        .then(j => { if (!j || !j.ok) throw (j && j.error) || { message: 'No se ha podido subir' }; return j; }),
+      { key: 'POST research-docs ' + currentProject.id });
+      if (!json) return;
       Toast.show('Documento subido y vectorizando...', 'ok');
       renderPrepStudio(); // Refresh
     } catch (err) { Toast.show('Error: ' + err.message, 'err'); }
@@ -3004,10 +3011,8 @@ const Developer = (() => {
 
   function bindInterviewAutosave() {
     document.querySelectorAll('#prep-interview-list textarea').forEach(ta => {
-      let timer;
       ta.addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(async () => {
+        SaveStatus.debounce('dev:interview:' + ta.dataset.key, async () => {
           const key = ta.dataset.key;
           try {
             await API.put('/developer/projects/' + currentProject.id + '/interview/' + key, { answer: ta.value });
@@ -3467,10 +3472,11 @@ const Developer = (() => {
       autoGrow(textarea);
       textarea.addEventListener('input', () => {
         autoGrow(textarea);
-        clearTimeout(_saveTimer);
         const wcEl = document.getElementById('dev-cascade-wc');
         if (wcEl) wcEl.textContent = wordCount(textarea.value) + ' palabras';
-        _saveTimer = setTimeout(() => {
+        // Una espera por campo: antes era un solo temporizador compartido y
+        // escribir en otra sección antes de 1,5 s cancelaba el guardado anterior.
+        SaveStatus.debounce('dev:field:' + sec.fieldId, () => {
           const newText = textarea.value;
           if (!fieldValues[sec.fieldId]) fieldValues[sec.fieldId] = {};
           fieldValues[sec.fieldId].text = newText;
@@ -3556,8 +3562,7 @@ const Developer = (() => {
         autoGrow(ta);
         const wc = document.getElementById('staff-outside-wc');
         if (wc) wc.textContent = wordCount(ta.value) + ' palabras';
-        clearTimeout(_saveTimer);
-        _saveTimer = setTimeout(() => {
+        SaveStatus.debounce('dev:field:' + sec.fieldId, () => {
           const newText = ta.value;
           if (!fieldValues[sec.fieldId]) fieldValues[sec.fieldId] = {};
           fieldValues[sec.fieldId].text = newText;
@@ -3626,15 +3631,12 @@ const Developer = (() => {
     `;
     // Wire autosave per cell.
     c.querySelectorAll('[data-pps-id]').forEach(input => {
-      let timer = null;
       input.addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          const ppsId = input.getAttribute('data-pps-id');
-          const field = input.getAttribute('data-field');
-          API.patch(`/developer/staff-table/${ppsId}`, { [field]: input.value })
-             .catch(err => console.error('staff-table autosave:', err));
-        }, 800);
+        const ppsId = input.getAttribute('data-pps-id');
+        const field = input.getAttribute('data-field');
+        SaveStatus.debounce('dev:staff:' + ppsId + ':' + field, () =>
+          API.patch(`/developer/staff-table/${ppsId}`, { [field]: input.value }, { saveKey: 'PATCH staff ' + ppsId + ':' + field })
+             .catch(err => console.error('staff-table autosave:', err)), 800);
       });
     });
   }
@@ -3800,15 +3802,12 @@ const Developer = (() => {
     `;
     // Wire autosave per cell.
     c.querySelectorAll('[data-risk-id][data-field]').forEach(input => {
-      let timer = null;
       const handler = () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          const id = input.getAttribute('data-risk-id');
-          const field = input.getAttribute('data-field');
-          API.patch(`/developer/risks/${id}`, { [field]: input.value })
-             .catch(err => console.error('risk autosave:', err));
-        }, 700);
+        const id = input.getAttribute('data-risk-id');
+        const field = input.getAttribute('data-field');
+        SaveStatus.debounce('dev:risk:' + id + ':' + field, () =>
+          API.patch(`/developer/risks/${id}`, { [field]: input.value }, { saveKey: 'PATCH risk ' + id + ':' + field })
+             .catch(err => console.error('risk autosave:', err)), 700);
       };
       input.addEventListener('input', handler);
       input.addEventListener('change', handler);
@@ -3982,8 +3981,12 @@ const Developer = (() => {
     // Flush pending autosave + mark reviewed. WP form sections have no
     // textarea — fall back to whatever text was last persisted (or empty)
     // so the approval still sticks across sessions.
-    clearTimeout(_saveTimer);
-    const textarea = document.getElementById('dev-textarea');
+    // El texto de esta sección se guarda aquí mismo; el resto de esperas, ya.
+    SaveStatus.cancel('dev:field:' + sec.fieldId);
+    SaveStatus.flush();
+    // En la sección de personal el texto vive en «Outside resources» (mismo
+    // field_id): antes se aprobaba con el texto viejo y se perdía lo último.
+    const textarea = document.getElementById('dev-textarea') || document.getElementById('staff-outside-textarea');
     const text = textarea ? textarea.value : (fieldValues[sec.fieldId]?.text || '');
     if (!fieldValues[sec.fieldId]) fieldValues[sec.fieldId] = {};
     fieldValues[sec.fieldId].text = text;
@@ -4605,23 +4608,19 @@ const Developer = (() => {
   }
 
   /* ── Consorcio actions ──────────────────────────────────────── */
-  let _customTextTimer = {};
   async function saveCustomText(partnerId, text) {
-    clearTimeout(_customTextTimer[partnerId]);
-    _customTextTimer[partnerId] = setTimeout(async () => {
+    SaveStatus.debounce('dev:pif:' + partnerId, async () => {
       try {
         await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/custom-text', { custom_text: text });
       } catch (err) { Toast.show('Error saving: ' + err.message, 'err'); }
     }, 500);
   }
 
-  let _staffSkillsTimer = {};
   async function saveStaffSkills(partnerId, staffId, text) {
     const key = partnerId + '_' + staffId;
-    clearTimeout(_staffSkillsTimer[key]);
-    _staffSkillsTimer[key] = setTimeout(async () => {
+    SaveStatus.debounce('dev:skills:' + key, async () => {
       try {
-        await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/staff-skills', { staff_id: staffId, custom_skills: text });
+        await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/staff-skills', { staff_id: staffId, custom_skills: text }, { saveKey: 'PUT staff-skills ' + key });
       } catch (err) { Toast.show('Error saving: ' + err.message, 'err'); }
     }, 500);
   }
@@ -4789,13 +4788,11 @@ const Developer = (() => {
     } catch (err) { Toast.show('Error: ' + err.message, 'err'); }
   }
 
-  let _extraStaffTimer = {};
   function updateExtraStaff(partnerId, staffId, field, value) {
     const key = partnerId + '_' + staffId + '_' + field;
-    clearTimeout(_extraStaffTimer[key]);
-    _extraStaffTimer[key] = setTimeout(async () => {
+    SaveStatus.debounce('dev:extra:' + key, async () => {
       try {
-        await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/extra-staff/' + staffId, { field, value });
+        await API.put('/developer/projects/' + currentProject.id + '/prep/consorcio/' + partnerId + '/extra-staff/' + staffId, { field, value }, { saveKey: 'PUT extra-staff ' + key });
       } catch (err) { Toast.show('Error: ' + err.message, 'err'); }
     }, 500);
   }
