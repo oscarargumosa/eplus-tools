@@ -55,9 +55,7 @@
 @media (max-width: 767px) {
   .print-tab-toolbar .flex { flex-wrap: wrap; }
 
-  /* Red de seguridad: en filas flex, lo que estira (flex-1) puede encoger
-     por debajo de su contenido; los desplegables no pasan del ancho. */
-  #panel-intake .flex-1, #panel-developer .flex-1 { min-width: 0; }
+  /* Los desplegables no pasan del ancho de su caja. */
   #panel-intake select, #panel-developer select { max-width: 100%; }
 
   /* ── Escribir · formulario por secciones ──────────────────────
@@ -101,7 +99,11 @@
 
   /* ── Calculadora (Diseñar · WPs): cabecera de actividad en varias líneas */
   .calc-act-head { flex-wrap: wrap; }
-  .calc-act-head > input { flex: 1 1 10rem; min-width: 0; }
+  .calc-act-head > input { flex: 1 1 100%; min-width: 0; }
+  .calc-act-head > input + button { margin-left: auto; }
+  /* Movilidad: el anfitrión (nombre largo) a lo ancho; viajeros y días debajo. */
+  .calc-mob-grid.calc-mob-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .calc-mob-grid > div:first-child { grid-column: 1 / -1; }
   .calc-act-head > select { max-width: 100%; }
   .calc-act { padding: 12px; }
 

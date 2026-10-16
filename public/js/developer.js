@@ -580,14 +580,14 @@ const Developer = (() => {
 
           return `
           <div class="bg-white rounded-2xl border border-outline-variant/20 p-5">
-            <div class="flex items-center gap-3 mb-3">
+            <div class="flex flex-wrap items-center gap-3 mb-3">
               <span class="w-8 h-8 rounded-full ${i === 0 ? 'bg-primary text-white' : 'bg-outline-variant/20 text-on-surface-variant'} text-xs font-bold flex items-center justify-center">${i + 1}</span>
-              <div class="flex-1">
+              <div class="flex-1 min-w-[10rem]">
                 <div class="text-sm font-bold">${esc(p.name)} ${i === 0 ? '<span class="text-[9px] font-bold uppercase text-primary bg-primary/10 px-1.5 py-0.5 rounded ml-1">Coord.</span>' : ''}</div>
                 <div class="text-xs text-on-surface-variant">${[p.city, p.country].filter(Boolean).join(', ')}</div>
               </div>
               ${linked
-                ? `<span class="inline-flex items-center gap-1 text-[10px] font-bold text-primary bg-primary/10 px-2 py-1 rounded-full"><span class="material-symbols-outlined text-xs">link</span> ${esc(org.organization_name || 'Vinculada')}</span>`
+                ? `<span class="inline-flex items-center gap-1 max-w-full text-[10px] font-bold text-primary bg-primary/10 px-2 py-1 rounded-full"><span class="material-symbols-outlined text-xs">link</span> ${esc(org.organization_name || 'Vinculada')}</span>`
                 : `<button onclick="Developer._linkOrg('${p.id}')" class="inline-flex items-center gap-1 text-[10px] font-bold text-primary bg-secondary-fixed px-2 py-1 rounded-full hover:bg-secondary-fixed-dim transition-colors"><span class="material-symbols-outlined text-xs">link_off</span> Vincular organizacion</button>`
               }
             </div>
