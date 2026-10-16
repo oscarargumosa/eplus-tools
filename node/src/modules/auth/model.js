@@ -75,7 +75,7 @@ const User = {
 
   /* ── Foto de perfil ───────────────────────────────────────────
    * El círculo de «Mi cuenta» muestra, por orden de preferencia:
-   * logo de su entidad → foto del usuario → iniciales (nombre y apellido).
+   * foto del usuario (subida o de Google) → logo de su entidad → iniciales.
    * Tolerante: si falta la columna (BD sin migrar) devuelve iniciales. */
   async getAvatar(userId, name = '') {
     const out = { avatar_url: null, avatar_source: 'initials', user_avatar_url: null, initials: User.initials(name) };
@@ -89,8 +89,9 @@ const User = {
       );
       const [[u]] = await db.query('SELECT avatar_url FROM users WHERE id = ? LIMIT 1', [userId]);
       out.user_avatar_url = (u && u.avatar_url) || null;
-      if (orgs[0]) { out.avatar_url = orgs[0].logo_url; out.avatar_source = 'organization'; }
-      else if (out.user_avatar_url) { out.avatar_url = out.user_avatar_url; out.avatar_source = 'user'; }
+      // Orden (Óscar, 16-oct): foto de la persona → logo de su entidad → iniciales.
+      if (out.user_avatar_url) { out.avatar_url = out.user_avatar_url; out.avatar_source = 'user'; }
+      else if (orgs[0]) { out.avatar_url = orgs[0].logo_url; out.avatar_source = 'organization'; }
     } catch (e) {
       if (!/Unknown column|doesn't exist/i.test(e.message)) throw e;
     }

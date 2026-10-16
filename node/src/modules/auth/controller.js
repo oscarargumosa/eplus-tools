@@ -392,7 +392,7 @@ const AuthController = {
       const hash = await User.getPasswordHash(req.user.id);
       user.has_password = !!(hash && hash.length);
       await withAreas(user);
-      // Círculo de «Mi cuenta»: logo de su entidad → foto → iniciales.
+      // Círculo de «Mi cuenta»: foto → logo de su entidad → iniciales.
       Object.assign(user, await User.getAvatar(user.id, user.name));
       res.json({ ok: true, data: user });
     } catch (err) {
