@@ -12,17 +12,21 @@
 .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: .75rem; }
 .efs-save__icon { display: inline-flex; flex-shrink: 0; color: #d6e949; }
 .efs-save__ico { display: block; }
+.efs-save__txt { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .efs-save__m, .efs-save__s { display: none; }
 .efs-save__s:empty { display: none !important; }
 /* Con el indicador visible, el menú de escritorio se aprieta un poco para que
-   quepa en una línea (8 entradas + indicador + avatar). */
-.efs-topbar__inner:has(.efs-save:not([hidden])) { gap: 1.25rem; }
-.efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__menu { gap: 1.15rem; }
-/* Error o cambios sin guardar (pastilla con botón, más ancha): un poco más. */
-.efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])),
-.efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) { gap: 1rem; }
-.efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])) .efs-topbar__menu,
-.efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) .efs-topbar__menu { gap: .8rem; }
+   quepa en una línea (8 entradas + indicador + avatar). Solo con el menú a la
+   vista (>1024 px): en móvil el hueco entre piezas sigue siendo el de topbar.css. */
+@media (min-width: 1025px) {
+  .efs-topbar__inner:has(.efs-save:not([hidden])) { gap: 1.25rem; }
+  .efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__menu { gap: 1.15rem; }
+  /* Error o cambios sin guardar (pastilla con botón, más ancha): un poco más. */
+  .efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])),
+  .efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) { gap: 1rem; }
+  .efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])) .efs-topbar__menu,
+  .efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) .efs-topbar__menu { gap: .8rem; }
+}
 .efs-save__spin { width: 13px; height: 13px; border-radius: 50%; display: block;
   border: 2px solid rgba(214,233,73,.35); border-top-color: #d6e949;
   animation: efs-save-spin .8s linear infinite; }
@@ -38,7 +42,7 @@
   padding: .3rem .7rem; border-radius: 999px; line-height: 1.2;
   background: #d6e949; color: #222351; transition: transform .12s ease; }
 .efs-save__btn[hidden] { display: none; }
-.efs-save__btnico { display: none; }
+.efs-save__btnico, .efs-save__btnwarn { display: none; flex-shrink: 0; }
 .efs-save[data-state="error"] .efs-save__btn { background: #3c45a3; color: #fff; margin-right: -.45rem; }
 .efs-save[data-state="dirty"] .efs-save__btn { margin-right: -.45rem; }
 .efs-save__btn:active { transform: scale(.97); }
@@ -80,23 +84,48 @@
   .efs-save { padding: 0 .55rem; }
   .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: .4rem; }
 }
-/* Móvil (≤600 px): «Guardando…», «Guardado», y en error o cambios
-   pendientes solo el icono y el botón («Reintentar», «Guardar»). */
+/* Móvil (≤600 px): «Guardando…» y «Guardado» con texto corto. En fallo o
+   cambios sin guardar, el indicador es una sola pieza: el propio botón
+   (⚠ + «Reintentar» claro; disquete + «Guardar» lima), 30 px de alto y una
+   línea. Avatar y menú no encogen nunca: es el indicador el que cede. */
 @media (max-width: 600px) {
-  .efs-save { font-size: 12px; gap: .3rem; padding: 0 .35rem; }
-  .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: 0; }
-  .efs-save[data-state="error"], .efs-save[data-state="dirty"] { padding-left: .5rem; }
+  .efs-save { font-size: 12px; gap: .3rem; padding: 0 .35rem; flex-shrink: 1; }
+  .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: 0; flex-shrink: 0; min-width: 38px; }
+  .efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__toggle { flex-shrink: 0; }
   .efs-save__l, .efs-save__m { display: none; }
   .efs-save__s { display: inline; }
-  .efs-save__btn { padding: .3rem .55rem; font-size: 11px; }
+  .efs-save[data-state="error"], .efs-save[data-state="dirty"] { background: transparent; padding: 0; height: auto; flex-shrink: 0; }
+  .efs-save[data-state="error"] .efs-save__icon,
+  .efs-save[data-state="dirty"] .efs-save__icon,
+  .efs-save[data-state="error"] .efs-save__txt,
+  .efs-save[data-state="dirty"] .efs-save__txt { display: none; }
   .efs-save[data-state="error"] .efs-save__btn,
-  .efs-save[data-state="dirty"] .efs-save__btn { margin-right: -.2rem; }
+  .efs-save[data-state="dirty"] .efs-save__btn {
+    display: inline-flex; align-items: center; gap: .3rem; height: 30px; margin: 0;
+    padding: 0 .6rem 0 .5rem; font-size: 12px; line-height: 1; white-space: nowrap; }
+  .efs-save[data-state="error"] .efs-save__btn { background: #fdf3f1; color: #222351; }
+  .efs-save[data-state="error"] .efs-save__btnwarn { display: block; color: #b3261e; }
+  .efs-save[data-state="dirty"] .efs-save__btnico { display: block; }
+}
+/* Móvil muy estrecho (≤340 px): el botón queda en icono (30×30) con
+   aria-label; la frase completa sigue en title y para lectores de pantalla. */
+@media (max-width: 340px) {
+  .efs-save { padding: 0 .2rem; }
+  /* «Guardando…» no cabe junto al avatar: solo el giro (el texto, en title/sr). */
+  .efs-save[data-state="saving"] .efs-save__txt { display: none; }
+  .efs-save[data-state="error"] .efs-save__btntxt,
+  .efs-save[data-state="dirty"] .efs-save__btntxt { display: none; }
+  .efs-save[data-state="error"] .efs-save__btn,
+  .efs-save[data-state="dirty"] .efs-save__btn { width: 30px; padding: 0; justify-content: center; }
 }
 
 /* Móvil estrecho: el logo cede unos píxeles para que quepan indicador,
    avatar y menú sin montarse (solo cuando el indicador está a la vista). */
 @media (max-width: 420px) {
   .efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__logo { height: 14px; }
+}
+@media (max-width: 340px) {
+  .efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__logo { height: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -203,8 +203,10 @@
     dirty:  '<svg class="efs-save__ico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="5" fill="currentColor"/></svg>'
   };
 
-  // Iconos del botón: solo se ven en escritorio muy justo (save-status.css).
+  // Iconos del botón: según el ancho se ven o no (save-status.css).
   var BTN_ICONS = {
+    // ⚠ dentro del botón: en móvil el fallo es una sola pieza (⚠ + Reintentar).
+    warn: '<svg class="efs-save__btnwarn" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M1 21 12 2l11 19zm11-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-1-3h2v-5h-2z"/></svg>',
     retry: '<svg class="efs-save__btnico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 20q-3.35 0-5.675-2.325T4 12t2.325-5.675T12 4q1.725 0 3.3.713T18 6.75V4h2v7h-7V9h4.2q-.8-1.4-2.187-2.2T12 6Q9.5 6 7.75 7.75T6 12t1.75 4.25T12 18q1.925 0 3.475-1.1T17.65 14h2.1q-.7 2.65-2.85 4.325T12 20"/></svg>',
     save:  '<svg class="efs-save__btnico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M21 7v12q0 .825-.587 1.413T19 21H5q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h12zm-9 11q1.25 0 2.125-.875T15 15t-.875-2.125T12 12t-2.125.875T9 15t.875 2.125T12 18m-6-8h9V6H6z"/></svg>'
   };
@@ -297,7 +299,7 @@
     btn.hidden = !action;
     btn.dataset.action = action;
     btn.setAttribute('aria-label', action === 'retry' ? 'Reintentar guardar' : action === 'save' ? 'Guardar los cambios' : '');
-    btn.innerHTML = (action === 'retry' ? BTN_ICONS.retry : action === 'save' ? BTN_ICONS.save : '') +
+    btn.innerHTML = (action === 'retry' ? BTN_ICONS.warn + BTN_ICONS.retry : action === 'save' ? BTN_ICONS.save : '') +
       '<span class="efs-save__btntxt"></span>';
     btn.lastChild.textContent = btnText;
   }
