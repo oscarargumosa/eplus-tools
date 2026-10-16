@@ -43,7 +43,15 @@ const API = (() => {
       throw { code: 'UNAUTHORIZED', message: 'Sesión caducada, por favor inicia sesión de nuevo' };
     }
 
-    const json = await res.json();
+    // Un proxy que corta por tiempo (502/504) responde HTML, no JSON: se
+    // explica en vez de enseñar «Unexpected token <» (la IA tarda 15-90 s).
+    let json;
+    try { json = await res.json(); }
+    catch {
+      throw (res.status === 502 || res.status === 504)
+        ? { code: 'GATEWAY_TIMEOUT', message: 'El servidor tardó demasiado en responder (las funciones de IA pueden tardar hasta un par de minutos). Inténtalo de nuevo.' }
+        : { code: 'BAD_RESPONSE', message: `Respuesta inesperada del servidor (${res.status}). Inténtalo de nuevo.` };
+    }
     if (!json.ok) {
       // Fase beta: área no concedida → la SPA enseña «Solicitar acceso» (beta-access.js).
       if (json.error && json.error.code === 'AREA_REQUIRED') {
