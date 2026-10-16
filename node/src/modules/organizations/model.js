@@ -21,6 +21,11 @@ const ORG_FIELDS = [
   'is_public','access_mode'
 ];
 
+/* Lo que el usuario puede escribir en su ficha (PUT /organizations/mine).
+   Fuera: is_public (se cambia aparte, solo el dueño reclamado: setPublic)
+   y logo_url (solo por la subida del logo, con su comprobación de tipo). */
+const USER_ORG_FIELDS = ORG_FIELDS.filter(f => !['is_public', 'logo_url'].includes(f));
+
 function pick(data, fields) {
   const out = {};
   for (const f of fields) if (data[f] !== undefined) out[f] = data[f];
@@ -56,7 +61,9 @@ async function getOrgByUserId(userId) {
 
 async function getOrgsByUserId(userId) {
   const [rows] = await pool.query(
-    `SELECT o.id, o.organization_name, o.acronym, o.org_type, o.country, o.city, uo.role, uo.created_at as linked_at
+    `SELECT o.id, o.organization_name, o.acronym, o.org_type, o.country, o.city, o.oid, o.pic, o.logo_url,
+            (o.claimed_by_user_id = uo.user_id) AS is_owner, (o.verified_at IS NOT NULL) AS verified,
+            o.verification_status, uo.role, uo.created_at as linked_at
      FROM user_organizations uo JOIN organizations o ON o.id = uo.organization_id
      WHERE uo.user_id=? ORDER BY uo.created_at ASC`,
     [userId]
@@ -64,8 +71,8 @@ async function getOrgsByUserId(userId) {
   return rows;
 }
 
-async function upsertOrg(data, id) {
-  const vals = pick(data, ORG_FIELDS);
+async function upsertOrg(data, id, fields = ORG_FIELDS) {
+  const vals = pick(data, fields);
   if (id) {
     const sets = Object.keys(vals).map(k => `${k}=?`).join(', ');
     if (sets) await pool.query(`UPDATE organizations SET ${sets} WHERE id=?`, [...Object.values(vals), id]);
@@ -328,12 +335,14 @@ async function upsertFromEntity(oid) {
   }
 
   // category → org_type (best-effort, NULL si no hay mapeo)
+  // Valores = los del <select> de Mi Organización (index.html).
   const orgTypeMap = {
-    hei: 'university', university: 'university',
-    ngo: 'ngo', nonprofit: 'ngo', association: 'ngo',
-    public: 'public_body', government: 'public_body', public_body: 'public_body',
-    business: 'enterprise', company: 'enterprise', sme: 'enterprise',
-    research: 'research',
+    hei: 'University', university: 'University',
+    school: 'School/Institute',
+    ngo: 'NGO', nonprofit: 'NGO', association: 'NGO', foundation: 'Foundation',
+    public: 'Public body', government: 'Public body', public_body: 'Public body',
+    business: 'SME', company: 'SME', sme: 'SME', enterprise: 'SME',
+    research: 'Research Centre',
   };
   const orgType = orgTypeMap[String(entity.category || '').toLowerCase()] || null;
 
@@ -370,8 +379,404 @@ async function upsertFromEntity(oid) {
   };
 }
 
+/* ══ Reclamar una entidad del directorio ═════════════════════════
+   Reglas (decisión de Óscar, 8-oct-2026; revisión de seguridad 16-oct):
+   - Sin verificación previa: el primero que la reclama es su dueño.
+   - UN SOLO dueño por entidad (organizations.claimed_by_user_id),
+     comprobado por OID **y** por PIC: no se puede duplicar una entidad
+     ya reclamada creando otra con su PIC.
+   - Documentación (estatutos, escrituras, acta, poderes) recomendada,
+     no obligatoria. Al subirla la entidad queda «pendiente de revisión»;
+     el sello «Verificada» (verified_at) solo lo pone un admin.
+   - Si otra persona la reclama → conflicto (org_claim_disputes) y se
+     pide la documentación a ambas partes.
+   ─────────────────────────────────────────────────────────────── */
+
+function claimError(msg, status, extra = {}) {
+  const e = new Error(msg);
+  e.status = status;
+  Object.assign(e, extra);
+  return e;
+}
+
+const normId = (v) => (v === null || v === undefined) ? '' : String(v).trim();
+
+/* Entidad ya reclamada por OTRA persona con ese OID o ese PIC.
+   Devuelve { id, oid, pic } de la reclamada o null. */
+async function claimedByOther({ oid, pic }, userId, exceptOrgId = null) {
+  const o = normId(oid);
+  const p = normId(pic);
+  const conds = [];
+  const params = [];
+  if (o && !o.startsWith('local-')) { conds.push('oid = ?'); params.push(o); }
+  if (p) { conds.push('pic = ?'); params.push(p); }
+  if (!conds.length) return null;
+  const [[row]] = await pool.query(
+    `SELECT id, oid, pic FROM organizations
+      WHERE (${conds.join(' OR ')})
+        AND claimed_by_user_id IS NOT NULL AND claimed_by_user_id <> ?
+        AND (? IS NULL OR id <> ?)
+      ORDER BY (verified_at IS NULL), claimed_at ASC LIMIT 1`,
+    [...params, userId, exceptOrgId, exceptOrgId]
+  );
+  return row || null;
+}
+
+/* Compatibilidad con el nombre anterior (solo OID). */
+async function oidOwnedByOther(oid, userId, exceptOrgId = null) {
+  return !!(await claimedByOther({ oid }, userId, exceptOrgId));
+}
+
+/* El usuario es el dueño reclamado (o, en filas antiguas sin dueño
+   reclamado, está enlazado en user_organizations). */
+async function isClaimOwner(userId, orgId) {
+  const [[org]] = await pool.query('SELECT claimed_by_user_id FROM organizations WHERE id = ?', [orgId]);
+  if (!org) return false;
+  if (org.claimed_by_user_id) return org.claimed_by_user_id === userId;
+  return isOrgOwner(userId, orgId);
+}
+
+async function searchClaimable(q, userId) {
+  const term = (q || '').trim();
+  if (term.length < 2) return [];
+  const entitiesBackend = require('../entities/backend');
+  const resp = await entitiesBackend.listEntities({ q: term, limit: 20 });
+  const list = Array.isArray(resp) ? resp
+    : (resp && (resp.rows || resp.results || resp.data)) || [];
+  const real = list.filter(r => r && r.oid);
+  const oids = real.map(r => r.oid).filter(o => !String(o).startsWith('local-'));
+  const pics = real.map(r => normId(r.pic)).filter(Boolean);
+  const byOid = new Map();
+  const byPic = new Map();
+  // Gana la fila del dueño legítimo: verificada primero, luego la primera reclamada.
+  const keep = (map, key, r) => {
+    if (!key) return;
+    const prev = map.get(key);
+    if (!prev || (!prev.claimed_by_user_id && r.claimed_by_user_id)) map.set(key, r);
+  };
+  if (oids.length || pics.length) {
+    const conds = [];
+    const params = [];
+    if (oids.length) { conds.push('oid IN (?)'); params.push(oids); }
+    if (pics.length) { conds.push('pic IN (?)'); params.push(pics); }
+    const [rows] = await pool.query(
+      `SELECT id, oid, pic, claimed_by_user_id, verified_at FROM organizations
+        WHERE ${conds.join(' OR ')}
+        ORDER BY (claimed_by_user_id IS NULL), (verified_at IS NULL), claimed_at ASC`,
+      params
+    );
+    for (const r of rows) { keep(byOid, r.oid, r); keep(byPic, normId(r.pic), r); }
+  }
+  // Orgs solo-locales: el directorio las devuelve con oid sintético "local-<id>".
+  const localIds = real.map(r => String(r.oid)).filter(o => o.startsWith('local-')).map(o => o.slice(6));
+  if (localIds.length) {
+    const [rows] = await pool.query(
+      'SELECT id, claimed_by_user_id, verified_at FROM organizations WHERE id IN (?)', [localIds]
+    );
+    for (const r of rows) byOid.set('local-' + r.id, r);
+  }
+  return real.map(r => {
+    const a = byOid.get(r.oid);
+    const b = byPic.get(normId(r.pic));
+    // Si por OID no hay dueño pero por PIC sí, manda la reclamada por PIC.
+    const local = (a && a.claimed_by_user_id) ? a : (b && b.claimed_by_user_id) ? b : (a || b || null);
+    const owner = local && local.claimed_by_user_id;
+    const mine = !!owner && owner === userId;
+    return {
+      oid:          r.oid,
+      pic:          r.pic || null,
+      name:         r.display_name || r.name || r.legal_name || '(sin nombre)',
+      legal_name:   r.legal_name || null,
+      city:         r.city || null,
+      country_code: r.country_code || r.country || null,
+      website:      r.website || null,
+      category:     r.category || null,
+      claimed:      !!owner,
+      claimed_by_me: mine,
+      verified:     !!(local && local.verified_at),
+      // El id interno solo se da al dueño (para abrir su ficha); nunca de una ajena.
+      org_id:       mine ? local.id : null,
+    };
+  });
+}
+
+async function claimEntity(userId, oid) {
+  oid = normId(oid);
+  if (!oid) throw claimError('oid required', 400);
+  // ¿Ya existe en local? (puede existir sin dueño: añadida como socia)
+  const [rows] = oid.startsWith('local-')
+    ? await pool.query('SELECT id, pic, claimed_by_user_id FROM organizations WHERE id = ?', [oid.slice(6)])
+    : await pool.query(
+      'SELECT id, pic, claimed_by_user_id FROM organizations WHERE oid = ? ORDER BY claimed_by_user_id IS NULL, created_at ASC',
+      [oid]
+    );
+  const owned = rows.find(r => r.claimed_by_user_id);
+  if (owned) {
+    if (owned.claimed_by_user_id === userId) {
+      await linkUserToOrg(userId, owned.id);
+      return { id: owned.id, already_mine: true };
+    }
+    throw claimError('Esta entidad ya tiene dueño', 409);
+  }
+  let orgId;
+  if (rows.length) orgId = rows[0].id;
+  else {
+    try { orgId = (await upsertFromEntity(oid)).id; }
+    catch (e) { throw claimError('Entidad no encontrada en el directorio', 404); }
+  }
+
+  // Dueño único también por PIC: otra fila (con otro OID o sin él) ya reclamada.
+  const [[org]] = await pool.query('SELECT oid, pic FROM organizations WHERE id = ?', [orgId]);
+  if (await claimedByOther({ oid: org && org.oid, pic: org && org.pic }, userId, orgId)) {
+    throw claimError('Esta entidad ya tiene dueño', 409);
+  }
+
+  // Condición en el UPDATE: si dos personas reclaman a la vez, solo una gana.
+  const [r] = await pool.query(
+    `UPDATE organizations
+        SET claimed_by_user_id = ?, claimed_at = NOW(), is_public = 1, owner_user_id = COALESCE(owner_user_id, ?)
+      WHERE id = ? AND (claimed_by_user_id IS NULL OR claimed_by_user_id = ?)`,
+    [userId, userId, orgId, userId]
+  );
+  if (!r.affectedRows) throw claimError('Esta entidad ya tiene dueño', 409);
+  await linkUserToOrg(userId, orgId);
+  return { id: orgId };
+}
+
+/* Conflicto: se identifica la entidad por su OID del directorio (nunca
+   por el id interno de una org ajena). Busca la reclamada por OID o PIC. */
+async function openDispute(userId, oid, message) {
+  oid = normId(oid);
+  if (!oid) throw claimError('oid required', 400);
+  let pic = null;
+  if (oid.startsWith('local-')) {
+    const [[o]] = await pool.query('SELECT pic FROM organizations WHERE id = ?', [oid.slice(6)]);
+    pic = o && o.pic;
+  } else {
+    const [[o]] = await pool.query('SELECT pic FROM organizations WHERE oid = ? AND pic IS NOT NULL LIMIT 1', [oid]);
+    pic = o && o.pic;
+    if (!pic) {
+      try {
+        const e = await require('../entities/backend').getEntityById(oid);
+        pic = e && e.pic;
+      } catch { /* sin directorio: solo por OID */ }
+    }
+  }
+  let org = null;
+  if (oid.startsWith('local-')) {
+    const [[o]] = await pool.query('SELECT id, claimed_by_user_id FROM organizations WHERE id = ? AND claimed_by_user_id IS NOT NULL', [oid.slice(6)]);
+    org = o || null;
+  }
+  if (!org) {
+    const c = await claimedByOther({ oid, pic }, userId);
+    if (c) {
+      const [[o]] = await pool.query('SELECT id, claimed_by_user_id FROM organizations WHERE id = ?', [c.id]);
+      org = o;
+    }
+  }
+  if (!org) throw claimError('Esta entidad no tiene dueño: puedes reclamarla directamente', 404);
+  if (org.claimed_by_user_id === userId) throw claimError('Ya eres el dueño de esta entidad', 400);
+  const [[open]] = await pool.query(
+    "SELECT id FROM org_claim_disputes WHERE organization_id = ? AND claimant_user_id = ? AND status = 'open' LIMIT 1",
+    [org.id, userId]
+  );
+  if (open) return { id: open.id, existing: true };
+  const id = uuid();
+  await pool.query(
+    'INSERT INTO org_claim_disputes (id, organization_id, claimant_user_id, owner_user_id, message) VALUES (?, ?, ?, ?, ?)',
+    [id, org.id, userId, org.claimed_by_user_id || null, (message || '').toString().slice(0, 4000) || null]
+  );
+  return { id, organization_id: org.id };
+}
+
+async function listDisputes(status = 'open') {
+  const [rows] = await pool.query(
+    `SELECT d.id, d.organization_id, o.organization_name, o.oid, o.pic,
+            d.claimant_user_id, cu.name AS claimant_name, cu.email AS claimant_email,
+            d.owner_user_id, ou.name AS owner_name, ou.email AS owner_email,
+            d.message, d.status, d.created_at, d.resolved_at,
+            (SELECT COUNT(*) FROM org_claim_documents cd WHERE cd.organization_id = d.organization_id) AS owner_docs
+       FROM org_claim_disputes d
+       JOIN organizations o ON o.id = d.organization_id
+       LEFT JOIN users cu ON cu.id = d.claimant_user_id
+       LEFT JOIN users ou ON ou.id = d.owner_user_id
+      WHERE d.status = ? ORDER BY d.created_at DESC LIMIT 200`,
+    [status]
+  );
+  return rows;
+}
+
+async function resolveDispute(disputeId) {
+  const [r] = await pool.query(
+    "UPDATE org_claim_disputes SET status = 'resolved', resolved_at = NOW() WHERE id = ? AND status = 'open'",
+    [disputeId]
+  );
+  return r.affectedRows > 0;
+}
+
+// Fuera de /public: se sirven solo por ruta autenticada (dueño o admin).
+// En producción /app/node/private es un volumen (ORG_CLAIM_DOCS_DIR opcional).
+const path = require('path');
+const CLAIM_DOCS_DIR = path.resolve(process.env.ORG_CLAIM_DOCS_DIR
+  || path.join(__dirname, '../../../private/org-claims'));
+
+/* Ruta en disco de un documento; null si el nombre guardado no es seguro. */
+function claimDocPath(storedName) {
+  const name = path.basename(String(storedName || ''));
+  if (!name || name !== storedName || !/^doc-[A-Za-z0-9-]+(\.[a-z0-9]{1,6})?$/.test(name)) return null;
+  return path.join(CLAIM_DOCS_DIR, name);
+}
+
+async function markClaimed(orgId, userId) {
+  await pool.query(
+    'UPDATE organizations SET claimed_by_user_id = ?, claimed_at = NOW() WHERE id = ? AND claimed_by_user_id IS NULL',
+    [userId, orgId]
+  );
+}
+
+const CLAIM_DOC_TYPES = ['estatutos', 'escrituras', 'acta_constitucion', 'poderes', 'otro'];
+
+async function listClaimDocs(orgId) {
+  const [rows] = await pool.query(
+    `SELECT id, doc_type, original_name, mime, size_bytes, created_at
+       FROM org_claim_documents WHERE organization_id = ? ORDER BY created_at ASC`,
+    [orgId]
+  );
+  return rows;
+}
+
+async function getClaimDoc(orgId, docId) {
+  const [[row]] = await pool.query(
+    'SELECT * FROM org_claim_documents WHERE id = ? AND organization_id = ?',
+    [docId, orgId]
+  );
+  return row || null;
+}
+
+/* Estado de la verificación: null (sin documentos) | pending | verified | rejected. */
+async function getVerification(orgId) {
+  const [[row]] = await pool.query(
+    `SELECT verification_status, verified_at, verification_reviewed_at, verification_note
+       FROM organizations WHERE id = ?`, [orgId]
+  );
+  if (!row) return null;
+  return {
+    status:      row.verification_status || null,
+    verified:    !!row.verified_at,
+    verified_at: row.verified_at || null,
+    reviewed_at: row.verification_reviewed_at || null,
+    // La nota del admin solo se enseña si se rechazó (motivo).
+    note:        row.verification_status === 'rejected' ? (row.verification_note || null) : null,
+  };
+}
+
+/* Al subir: «pendiente de revisión» salvo que ya esté verificada.
+   Nunca pone el sello: eso lo hace un admin (reviewClaim). */
+async function addClaimDoc(orgId, userId, docType, file) {
+  const id = uuid();
+  await pool.query(
+    `INSERT INTO org_claim_documents (id, organization_id, user_id, doc_type, original_name, stored_name, mime, size_bytes)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    [id, orgId, userId, CLAIM_DOC_TYPES.includes(docType) ? docType : 'otro',
+     (file.originalname || 'documento').slice(0, 255), file.filename, file.mimetype || null, file.size || null]
+  );
+  await pool.query(
+    `UPDATE organizations SET verification_status = 'pending'
+      WHERE id = ? AND verified_at IS NULL`, [orgId]
+  );
+  return id;
+}
+
+async function deleteClaimDoc(orgId, docId) {
+  const row = await getClaimDoc(orgId, docId);
+  if (!row) return null;
+  await pool.query('DELETE FROM org_claim_documents WHERE id = ?', [docId]);
+  // Sin documentos y sin verificar: ya no hay nada pendiente de revisar.
+  const [[{ n }]] = await pool.query('SELECT COUNT(*) AS n FROM org_claim_documents WHERE organization_id = ?', [orgId]);
+  if (!n) {
+    await pool.query(
+      `UPDATE organizations SET verification_status = NULL
+        WHERE id = ? AND verified_at IS NULL AND verification_status = 'pending'`, [orgId]
+    );
+  }
+  return row;
+}
+
+/* ── Revisión del admin ─────────────────────────────────────── */
+
+async function listClaimsForReview(status = 'pending') {
+  const where = status === 'all'
+    ? "o.verification_status IS NOT NULL OR EXISTS (SELECT 1 FROM org_claim_documents cd WHERE cd.organization_id = o.id)"
+    : 'o.verification_status = ?';
+  const [orgs] = await pool.query(
+    `SELECT o.id, o.organization_name, o.oid, o.pic, o.country, o.city,
+            o.claimed_by_user_id, u.name AS owner_name, u.email AS owner_email,
+            o.claimed_at, o.verification_status, o.verified_at, o.verification_reviewed_at, o.verification_note
+       FROM organizations o
+       LEFT JOIN users u ON u.id = o.claimed_by_user_id
+      WHERE ${where}
+      ORDER BY o.claimed_at DESC LIMIT 200`,
+    status === 'all' ? [] : [status]
+  );
+  if (!orgs.length) return [];
+  const [docs] = await pool.query(
+    `SELECT id, organization_id, doc_type, original_name, mime, size_bytes, created_at
+       FROM org_claim_documents WHERE organization_id IN (?) ORDER BY created_at ASC`,
+    [orgs.map(o => o.id)]
+  );
+  const byOrg = new Map();
+  for (const d of docs) {
+    if (!byOrg.has(d.organization_id)) byOrg.set(d.organization_id, []);
+    byOrg.get(d.organization_id).push(d);
+  }
+  return orgs.map(o => ({ ...o, documents: byOrg.get(o.id) || [] }));
+}
+
+async function countPendingClaims() {
+  const [[{ n }]] = await pool.query("SELECT COUNT(*) AS n FROM organizations WHERE verification_status = 'pending'");
+  return n;
+}
+
+/* decision: 'verified' | 'rejected'. Devuelve la org (con email del dueño) o null. */
+async function reviewClaim(orgId, adminId, decision, note) {
+  if (!['verified', 'rejected'].includes(decision)) throw claimError('Decisión no válida', 400);
+  const [[org]] = await pool.query(
+    `SELECT o.id, o.organization_name, o.claimed_by_user_id, u.email AS owner_email, u.name AS owner_name
+       FROM organizations o LEFT JOIN users u ON u.id = o.claimed_by_user_id WHERE o.id = ?`, [orgId]
+  );
+  if (!org) return null;
+  if (!org.claimed_by_user_id) throw claimError('La entidad no tiene dueño', 400);
+  const cleanNote = note ? String(note).trim().slice(0, 500) || null : null;
+  if (decision === 'verified') {
+    await pool.query(
+      `UPDATE organizations
+          SET verification_status = 'verified', verified_at = NOW(), verified_by = ?,
+              verification_reviewed_at = NOW(), verification_note = ?, claim_status = 'verified'
+        WHERE id = ?`, [adminId, cleanNote, orgId]
+    );
+  } else {
+    await pool.query(
+      `UPDATE organizations
+          SET verification_status = 'rejected', verified_at = NULL, verified_by = ?,
+              verification_reviewed_at = NOW(), verification_note = ?, claim_status = 'claimed_provisional'
+        WHERE id = ?`, [adminId, cleanNote, orgId]
+    );
+  }
+  return org;
+}
+
+/* Poner o quitar la entidad del directorio: solo su dueño o admin
+   (fuera de ORG_FIELDS para que no viaje en cualquier PUT). */
+async function setPublic(orgId, isPublic) {
+  await pool.query('UPDATE organizations SET is_public = ? WHERE id = ?', [isPublic ? 1 : 0, orgId]);
+}
+
 module.exports = {
   getOrgById, getOrgByUserId, getOrgsByUserId, upsertOrg, linkUserToOrg, deleteOrg,
   listOrgs, listChildren, upsertChild, deleteChild, isOrgOwner, getOrgOwnerInfo,
   orsLookup, updateOrgCoords, backfillOidFromPic, upsertFromEntity,
+  searchClaimable, claimEntity, openDispute, listDisputes, resolveDispute, CLAIM_DOC_TYPES, CLAIM_DOCS_DIR,
+  claimDocPath, markClaimed, listClaimDocs, getClaimDoc, addClaimDoc, deleteClaimDoc, oidOwnedByOther,
+  claimedByOther, isClaimOwner, getVerification, listClaimsForReview, countPendingClaims, reviewClaim,
+  setPublic, USER_ORG_FIELDS,
 };

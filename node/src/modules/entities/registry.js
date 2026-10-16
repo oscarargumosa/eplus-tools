@@ -6,7 +6,8 @@
    mostrarla en la ficha pública del Partner Engine.
 
    PRIVACIDAD (regla dura):
-   - Solo aplica si la org existe localmente y `is_public = 1`.
+   - Solo aplica si la org existe localmente, `is_public = 1` y está
+     reclamada (la del dueño legítimo, ver overrides.js).
    - NUNCA se exponen datos personales (nombres/emails de
      representantes, persona de contacto, contactos de stakeholders).
      De las personas solo se expone SU EXISTENCIA (boolean).
@@ -19,6 +20,8 @@
    ═══════════════════════════════════════════════════════════════ */
 
 const pool = require('../../utils/db');
+// Misma ficha que gana en overrides.js: la del dueño reclamado legítimo.
+const { OWNER_WHERE, OWNER_ORDER } = require('./overrides');
 
 const STAKEHOLDER_SAMPLE = 5;
 
@@ -39,7 +42,8 @@ async function getRegistry(oid, pic) {
               legal_rep_first_name, legal_rep_family_name,
               cp_first_name, cp_family_name
          FROM organizations
-        WHERE (${conds.join(' OR ')}) AND is_public = 1
+        WHERE (${conds.join(' OR ')}) AND ${OWNER_WHERE}
+        ${OWNER_ORDER}
         LIMIT 1`,
       params
     );

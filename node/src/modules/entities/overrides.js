@@ -14,8 +14,14 @@
    - Si el override tiene lat/lng, también se actualiza la columna que el
      mapa lee (lat/lng o latitude/longitude según endpoint).
 
-   TODO (Phase 2): claim verification — solo aplicar override si
-   `claim_status = 'verified'`. Por ahora basta `is_public = 1`.
+   Reclamo (oct-2026): solo cuenta la ficha de una entidad RECLAMADA
+   (`claimed_by_user_id`). Si hubiera varias filas con el mismo OID/PIC
+   (filas antiguas o socias añadidas sin dueño), gana la del dueño
+   legítimo: verificada por un admin primero y, si no, la primera que se
+   reclamó. Nunca una duplicada sin dueño ni la reclamada después.
+   Marcas para el directorio:
+   - `is_claimed`  → la entidad tiene dueño en Studio.
+   - `is_verified` → un admin revisó su documentación (organizations.verified_at).
    ═══════════════════════════════════════════════════════════════ */
 
 const pool = require('../../utils/db');
@@ -41,7 +47,11 @@ const FIELD_MAP = [
   ['geocoded_source',   'geocoded_source'],
 ];
 
-const SELECT_COLS = [...new Set(FIELD_MAP.map(([col]) => col))].join(', ');
+const SELECT_COLS = [...new Set(FIELD_MAP.map(([col]) => col)), 'claimed_by_user_id', 'verified_at'].join(', ');
+
+/* Filtro y orden comunes (también los usa registry.js). */
+const OWNER_WHERE = 'is_public = 1 AND claimed_by_user_id IS NOT NULL';
+const OWNER_ORDER = 'ORDER BY (verified_at IS NULL), claimed_at ASC, id ASC';
 
 function isMeaningful(val) {
   if (val === null || val === undefined) return false;
@@ -61,7 +71,8 @@ async function getOverrideByOid(oid, pic = null) {
     const [[row]] = await pool.query(
       `SELECT oid, pic, ${SELECT_COLS}
          FROM organizations
-        WHERE (${conds.join(' OR ')}) AND is_public = 1
+        WHERE (${conds.join(' OR ')}) AND ${OWNER_WHERE}
+        ${OWNER_ORDER}
         LIMIT 1`,
       params
     );
@@ -86,14 +97,16 @@ async function getOverridesByIdentifiers(oids, pics) {
     const [rows] = await pool.query(
       `SELECT oid, pic, ${SELECT_COLS}
          FROM organizations
-        WHERE (${conds.join(' OR ')}) AND is_public = 1`,
+        WHERE (${conds.join(' OR ')}) AND ${OWNER_WHERE}
+        ${OWNER_ORDER}`,
       params
     );
     const byOid = new Map();
     const byPic = new Map();
+    // Filas ya ordenadas: la primera de cada OID/PIC es la del dueño legítimo.
     for (const r of rows) {
-      if (r.oid) byOid.set(r.oid, r);
-      if (r.pic) byPic.set(String(r.pic), r);
+      if (r.oid && !byOid.has(r.oid)) byOid.set(r.oid, r);
+      if (r.pic && !byPic.has(String(r.pic))) byPic.set(String(r.pic), r);
     }
     return { byOid, byPic };
   } catch (e) {
@@ -115,6 +128,8 @@ function mergeOverride(entity, override) {
       touched = true;
     }
   }
+  if (override.claimed_by_user_id) { out.is_claimed = true; touched = true; }
+  if (override.verified_at)        { out.is_verified = true; touched = true; }
   if (touched) out._has_local_override = true;
   return out;
 }
@@ -157,7 +172,7 @@ async function getOwnedMarkers() {
          FROM organizations
         WHERE lat IS NOT NULL
           AND lng IS NOT NULL
-          AND is_public = 1`
+          AND ${OWNER_WHERE}`
     );
     return rows.map(r => ({
       oid:  r.oid || null,
@@ -181,4 +196,6 @@ module.exports = {
   applyToEntity,
   applyToList,
   getOwnedMarkers,
+  OWNER_WHERE,
+  OWNER_ORDER,
 };
