@@ -4211,10 +4211,11 @@ const Developer = (() => {
             Hoy esta tabla se rellena desde <b>Consorcio → Equipo</b> (selección manual + skills propios del proyecto).
           </p>
           <div class="rounded-lg bg-[#f3f8d2] border border-[#d6e949] p-3">
-            <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próxima iteración</div>
+            <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próximamente</div>
             <p class="text-xs text-ink leading-relaxed">
               <b>Evaluar equipo con IA</b> (cobertura, balance entre partners, alineación con tareas) y
-              <b>Refinar skills fila a fila</b> aún no están conectados.
+              <b>refinar skills fila a fila</b> son funciones nuevas que todavía no existen.
+              La IA del resto de secciones funciona con normalidad.
             </p>
           </div>`;
       } else {
@@ -4223,9 +4224,10 @@ const Developer = (() => {
             Cada Work Package tiene su botón "<b>AI fill</b>" en la card (rellena Objectives, Tasks, Milestones y Deliverables).
           </p>
           <div class="rounded-lg bg-[#f3f8d2] border border-[#d6e949] p-3">
-            <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próxima iteración</div>
+            <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próximamente</div>
             <p class="text-xs text-ink leading-relaxed">
-              <b>Evaluar coherencia entre WPs</b> y <b>refinar tasks/MS/D fila a fila</b> aún no están conectados.
+              <b>Evaluar coherencia entre WPs</b> y <b>refinar tareas, hitos y entregables fila a fila</b>
+              son funciones nuevas que todavía no existen. El botón «AI fill» de cada WP sí funciona.
             </p>
           </div>`;
       }
