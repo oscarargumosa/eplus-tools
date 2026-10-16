@@ -127,6 +127,12 @@ Reglas:
       filters.tier = '';
       listing = await m.listEntities(filters);
     }
+    // Si sigue vacío, el texto libre (q) suele ser una frase que no aparece
+    // literal en las fichas («rural young people»): se quita y quedan país/categoría.
+    if (!listing.rows.length && filters.q && (filters.country || filters.category)) {
+      filters.q = '';
+      listing = await m.listEntities(filters);
+    }
 
     ok(res, {
       interpretation: {
@@ -138,6 +144,7 @@ Reglas:
       total_matching: listing.meta.total,
     });
   } catch (e) {
-    err(res, e.message, e.status || 500);
+    // Con la causa, los fallos de la IA (ocupada, lenta, caída) llevan su mensaje claro
+    sendError(res, e.status || 500, { code: e.code, message: e.message }, e);
   }
 };
