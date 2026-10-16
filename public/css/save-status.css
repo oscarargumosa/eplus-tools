@@ -18,6 +18,11 @@
    quepa en una línea (8 entradas + indicador + avatar). */
 .efs-topbar__inner:has(.efs-save:not([hidden])) { gap: 1.25rem; }
 .efs-topbar__inner:has(.efs-save:not([hidden])) .efs-topbar__menu { gap: 1.15rem; }
+/* Error o cambios sin guardar (pastilla con botón, más ancha): un poco más. */
+.efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])),
+.efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) { gap: 1rem; }
+.efs-topbar__inner:has(.efs-save[data-state="error"]:not([hidden])) .efs-topbar__menu,
+.efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) .efs-topbar__menu { gap: .8rem; }
 .efs-save__spin { width: 13px; height: 13px; border-radius: 50%; display: block;
   border: 2px solid rgba(214,233,73,.35); border-top-color: #d6e949;
   animation: efs-save-spin .8s linear infinite; }

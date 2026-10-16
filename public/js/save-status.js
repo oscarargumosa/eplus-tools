@@ -31,6 +31,7 @@
   var lastSaved = null;      // Date del último guardado correcto
   var editing = false;       // la pantalla actual es de edición (lo dice app.js)
 
+  var lastSig = '';
   var el, txt, btn, shownState = 'idle', savingSince = 0, savingTimer = null, settleTimer = null;
 
   /* ── Qué escrituras cuentan como «guardar» ───────────────────── */
@@ -248,38 +249,46 @@
     if (!ensureEl()) return;
     shownState = state;
     el.dataset.state = state;
-    if (state === 'idle') { el.hidden = true; return; }
+    if (state === 'idle') { el.hidden = true; lastSig = ''; return; }
     el.hidden = false;
     var icon = el.querySelector('.efs-save__icon');
     // Tres largos de texto según el ancho (save-status.css): l (normal),
     // m (escritorio con el menú justo) y s (móvil). Los lectores de pantalla
     // leen siempre la frase completa (sr).
-    var l = '', m = '', sm = '', sr = '', title = '', action = '', btnText = '';
+    var l = '', m = '', sm = '', sr = '', title = '', action = '', btnText = '', iconHtml = '';
     var t = lastSaved ? hhmm(lastSaved) : '';
-    if (state === 'saving') { icon.innerHTML = ICONS.saving; l = m = sm = 'Guardando…'; sr = 'Guardando los cambios…'; }
+    if (state === 'saving') { iconHtml = ICONS.saving; l = m = sm = 'Guardando…'; sr = 'Guardando los cambios…'; }
     else if (state === 'saved') {
-      icon.innerHTML = ICONS.saved;
+      iconHtml = ICONS.saved;
       l = m = 'Guardado' + (t ? ' · ' + t : ''); sm = 'Guardado';
       sr = 'Todos los cambios guardados' + (t ? ' a las ' + t : '');
       title = 'Todos los cambios están guardados' + (t ? ' (último guardado a las ' + t + ')' : '');
     }
     else if (state === 'clean') {
-      icon.innerHTML = ICONS.saved; l = m = 'Todo guardado'; sm = 'Guardado';
+      iconHtml = ICONS.saved; l = m = 'Todo guardado'; sm = 'Guardado';
       sr = title = 'No hay cambios pendientes de guardar';
     }
     else if (state === 'dirty') {
-      icon.innerHTML = ICONS.dirty; l = 'Cambios sin guardar'; m = 'Sin guardar'; sm = '';
+      iconHtml = ICONS.dirty; l = 'Cambios sin guardar'; m = 'Sin guardar'; sm = '';
       sr = 'Hay cambios sin guardar';
       var canSave = Array.from(dirty.values()).some(function (d) { return typeof d.save === 'function'; });
       if (canSave) { action = 'save'; btnText = 'Guardar'; }
       title = 'Hay cambios sin guardar' + (canSave ? '. Pulsa Guardar.' : '');
     }
     else if (state === 'error') {
-      icon.innerHTML = ICONS.error; l = 'No se ha guardado'; m = 'No guardado'; sm = '';
+      iconHtml = ICONS.error; l = 'No se ha guardado'; m = 'No guardado'; sm = '';
       var first = failed.values().next().value;
-      sr = title = 'No se ha guardado' + (first && first.message ? ': ' + first.message : '') + '. Pulsa Reintentar.';
+      var why = first && first.message ? ': ' + String(first.message).trim().replace(/[.\s]+$/, '') : '';
+      sr = title = 'No se ha guardado' + why + '. Pulsa Reintentar.';
       action = 'retry'; btnText = 'Reintentar';
     }
+    // Mismo contenido: no se toca el DOM. Si se rehiciera, un clic en
+    // «Guardar» que dispara el change del campo (al perder el foco) perdería
+    // el botón entre mousedown y mouseup y el clic no llegaría.
+    var sig = [state, l, m, sm, sr, title, action, btnText].join('|');
+    if (sig === lastSig) return;
+    lastSig = sig;
+    icon.innerHTML = iconHtml;
     txt.innerHTML = '<span class="efs-save__l" aria-hidden="true"></span><span class="efs-save__m" aria-hidden="true"></span>' +
       '<span class="efs-save__s" aria-hidden="true"></span><span class="efs-sr"></span>';
     txt.children[0].textContent = l; txt.children[1].textContent = m;
