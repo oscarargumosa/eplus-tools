@@ -35,17 +35,21 @@ const Organizations = (() => {
       if (!id) return;
       try {
         myOrg = await API.get(`/organizations/${id}`);
+        rememberOrg(id);
+        renderSwitcher();
         fillForm(myOrg);
+        resetItineraryCounts(myOrg);
         loadAllChildren();
+        loadClaimDocs();
         setTimeout(() => initOrgMap(), 100);
       } catch (e) { Toast.show(e.message || 'Error', 'error'); }
     });
     document.getElementById('myorg-btn-new-org')?.addEventListener('click', () => {
-      openNewOrgModal();
+      openClaimModal();
     });
   }
 
-  /* ── New org modal with ORS prefill search ────────────────── */
+  /* ── Crear entidad desde el registro ORS (si no está en nuestra BD) ── */
   function openNewOrgModal() {
     document.getElementById('org-new-modal')?.remove();
     const overlay = document.createElement('div');
@@ -162,8 +166,9 @@ const Organizations = (() => {
 
   async function createOrgFromData(data) {
     try {
-      await API.put('/organizations/mine', data);
-      Toast.show('Organización creada', 'ok');
+      const res = await API.put('/organizations/mine', { ...data, new_org: true });
+      Toast.show('Entidad creada', 'ok');
+      if (res && res.id) { myOrg = { id: res.id }; rememberOrg(res.id); }
       loadMyOrgs();
     } catch (e) {
       Toast.show(e.message || 'Error', 'error');
@@ -176,19 +181,26 @@ const Organizations = (() => {
       const sel = document.getElementById('myorg-org-select');
       if (!sel) return;
       if (!myOrgs.length) {
-        sel.innerHTML = '<option value="">— Sin organizaciones —</option>';
+        sel.innerHTML = '<option value="">— Sin entidad —</option>';
         myOrg = null;
+        renderSwitcher();
+        showClaimEmptyState();
         return;
       }
+      showEditorState();
       sel.innerHTML = myOrgs.map(o =>
         `<option value="${o.id}">${esc(o.acronym ? o.acronym + ' — ' : '')}${esc(o.organization_name)}</option>`
       ).join('');
-      // Load first org (or previously selected)
-      const targetId = myOrg?.id || myOrgs[0].id;
+      // La elegida antes (en memoria o en este navegador) si sigue siendo suya; si no, la primera.
+      const has = (id) => id && myOrgs.some(o => o.id === id);
+      const targetId = has(myOrg?.id) ? myOrg.id : has(rememberedOrg()) ? rememberedOrg() : myOrgs[0].id;
       sel.value = targetId;
       myOrg = await API.get(`/organizations/${targetId}`);
+      renderSwitcher();
       fillForm(myOrg);
+      resetItineraryCounts(myOrg);
       loadAllChildren();
+      loadClaimDocs();
       setTimeout(() => initOrgMap(), 100);
     } catch (e) {
       console.error('loadMyOrgs', e);
@@ -224,7 +236,8 @@ const Organizations = (() => {
       const form = new FormData();
       form.append('logo', file);
       try {
-        const res = await fetch('/v1/organizations/mine/logo', {
+        const qs = myOrg?.id ? `?org_id=${encodeURIComponent(myOrg.id)}` : '';
+        const res = await fetch('/v1/organizations/mine/logo' + qs, {
           method: 'POST',
           headers: { 'Authorization': 'Bearer ' + API.getToken() },
           body: form
@@ -232,6 +245,9 @@ const Organizations = (() => {
         const json = await res.json();
         if (!json.ok) throw json.error;
         showLogoPreview(json.data.logo_url);
+        if (myOrg) myOrg.logo_url = json.data.logo_url;
+        renderItinerary();
+        if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
         Toast.show('Logo actualizado', 'ok');
       } catch (err) { Toast.show(err.message || 'Error subiendo logo', 'error'); }
     });
@@ -313,11 +329,12 @@ const Organizations = (() => {
   async function saveSection(sectionId) {
     try {
       const data = collectSection(sectionId);
-      const result = await API.put('/organizations/mine', data);
+      const result = await API.put('/organizations/mine', myOrg?.id ? { ...data, org_id: myOrg.id } : data);
       if (!myOrg) myOrg = {};
       Object.assign(myOrg, data);
       if (result.id) myOrg.id = result.id;
       Toast.show('Guardado correctamente', 'ok');
+      renderItinerary();
     } catch (e) {
       Toast.show(e.message || 'Error al guardar', 'error');
     }
@@ -416,6 +433,8 @@ const Organizations = (() => {
     });
 
     _allProjects = unified;
+    _counts['eu-projects'] = unified.length;
+    renderItinerary();
 
     if (badge) badge.textContent = String(unified.length);
 
@@ -875,6 +894,8 @@ const Organizations = (() => {
     try {
       const rows = await API.get(`/organizations/${myOrg.id}/${type}`);
       renderChildTable(type, rows);
+      _counts[type] = (rows || []).length;
+      renderItinerary();
     } catch (e) {
       console.error(`loadChild ${type}`, e);
     }
@@ -1278,6 +1299,510 @@ const Organizations = (() => {
   function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
 
   /* ── Public API ─────────────────────────────────────────────── */
+
+  /* ══════════════════════════════════════════════════════════════
+     RECLAMAR ENTIDAD + ITINERARIO
+     Decisión 8-oct-2026: sin verificación previa, un solo dueño por
+     entidad; documentación legal recomendada → sello «Verificada».
+     ══════════════════════════════════════════════════════════════ */
+
+  let _counts = {};      // filas de las tablas hijas (key-staff, eu-projects…)
+  let _claimDocs = [];   // documentación legal aportada
+  let _verification = null; // { status: null|pending|verified|rejected, verified, note }
+
+  const DOC_TYPES = [
+    ['estatutos',         'Estatutos'],
+    ['escrituras',        'Escrituras'],
+    ['acta_constitucion', 'Acta de constitución'],
+    ['poderes',           'Acreditación de poderes'],
+    ['otro',              'Otro documento'],
+  ];
+
+  function showClaimEmptyState() {
+    document.getElementById('myorg-editor')?.classList.add('hidden');
+    document.getElementById('myorg-itinerary')?.classList.add('hidden');
+    document.getElementById('myorg-org-select')?.classList.add('hidden');
+    document.getElementById('myorg-btn-new-org')?.classList.add('hidden');
+    const host = document.getElementById('myorg-claim-empty');
+    if (!host) return;
+    host.classList.remove('hidden');
+    host.innerHTML = `
+      <div class="bg-white rounded-2xl border border-outline-variant/30 p-6 sm:p-8 max-w-3xl">
+        <div class="flex items-start gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[26px]">apartment</span>
+          </div>
+          <div>
+            <h2 class="font-headline text-xl font-extrabold text-primary">Busca tu entidad y hazla tuya</h2>
+            <p class="text-sm text-on-surface-variant mt-1">Ya tenemos en nuestra base de datos las entidades que han participado en proyectos europeos. Encuentra la tuya, reclámala y te diremos qué le falta paso a paso. Cuanto más completa esté tu ficha, más fácil es que otra entidad te elija como socia.</p>
+          </div>
+        </div>
+        <div id="myorg-claim-search-host"></div>
+      </div>`;
+    renderClaimSearch(document.getElementById('myorg-claim-search-host'), { onDone: () => {} });
+  }
+
+  function showEditorState() {
+    document.getElementById('myorg-claim-empty')?.classList.add('hidden');
+    document.getElementById('myorg-editor')?.classList.remove('hidden');
+    document.getElementById('myorg-itinerary')?.classList.remove('hidden');
+    document.getElementById('myorg-org-select')?.classList.remove('hidden');
+    document.getElementById('myorg-btn-new-org')?.classList.remove('hidden');
+  }
+
+  /* Buscador reutilizable (estado vacío y modal «Otra entidad»). */
+  function renderClaimSearch(host, { onDone }) {
+    if (!host) return;
+    host.innerHTML = `
+      <div class="relative">
+        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+        <input type="text" autocomplete="off" data-claim-input
+          placeholder="Nombre, acrónimo, ciudad, OID o PIC de tu entidad…"
+          class="w-full pl-10 pr-3 py-3 text-sm border border-outline-variant/40 rounded-lg bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none" />
+      </div>
+      <div data-claim-results class="mt-3 max-h-[50vh] overflow-y-auto divide-y divide-outline-variant/20 border border-outline-variant/20 rounded-lg hidden"></div>
+      <div class="mt-4 text-xs text-on-surface-variant">
+        ¿No aparece tu entidad?
+        <button type="button" data-claim-fallback class="text-primary font-semibold hover:underline">Créala desde el registro oficial de la UE o desde cero</button>.
+      </div>`;
+    const input = host.querySelector('[data-claim-input]');
+    const box = host.querySelector('[data-claim-results]');
+    setTimeout(() => input.focus(), 60);
+    host.querySelector('[data-claim-fallback]').addEventListener('click', () => { onDone(); openNewOrgModal(); });
+
+    let rows = [];
+    let seq = 0;
+    input.addEventListener('input', debounce(async () => {
+      const q = input.value.trim();
+      if (q.length < 2) { box.classList.add('hidden'); return; }
+      const my = ++seq;
+      box.classList.remove('hidden');
+      box.innerHTML = '<div class="py-6 text-center text-on-surface-variant text-sm">Buscando…</div>';
+      try {
+        rows = await API.get(`/organizations/claim/search?q=${encodeURIComponent(q)}`) || [];
+        if (my !== seq) return;
+        if (!rows.length) {
+          box.innerHTML = '<div class="py-6 text-center text-on-surface-variant text-sm">Sin resultados. Prueba con el nombre legal, el OID o el PIC.</div>';
+          return;
+        }
+        box.innerHTML = rows.map((r, i) => {
+          let action;
+          if (r.claimed_by_me) {
+            action = `<span class="text-xs font-semibold text-primary inline-flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span>Ya es tuya</span>`;
+          } else if (r.claimed) {
+            action = `<div class="text-right">
+                <div class="text-xs font-semibold text-on-surface-variant">Ya tiene responsable</div>
+                <button type="button" data-dispute="${i}" class="text-[11px] text-primary font-semibold hover:underline">¿Es tu entidad? Pide una revisión</button>
+              </div>`;
+          } else {
+            action = `<button type="button" data-claim="${i}" class="shrink-0 px-3 py-2 rounded-lg text-xs font-bold bg-primary text-white hover:bg-primary/90 transition-colors">Es mi entidad</button>`;
+          }
+          return `
+            <div class="flex items-center gap-3 px-4 py-3">
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-sm text-on-surface truncate">${esc(r.name)}${r.verified ? ' <span class="material-symbols-outlined text-[15px] text-primary align-[-3px]" style="font-variation-settings:\'FILL\' 1" title="Verificada">verified</span>' : ''}</div>
+                <div class="text-xs text-on-surface-variant mt-0.5 truncate">
+                  ${[r.city, r.country_code].filter(Boolean).map(esc).join(', ')}
+                  ${r.oid && !String(r.oid).startsWith('local-') ? ` · <span class="font-mono">${esc(r.oid)}</span>` : ''}
+                  ${r.pic ? ` · PIC <span class="font-mono">${esc(r.pic)}</span>` : ''}
+                </div>
+              </div>
+              ${action}
+            </div>`;
+        }).join('');
+        box.querySelectorAll('[data-claim]').forEach(b => b.addEventListener('click', () => claim(rows[+b.dataset.claim])));
+        box.querySelectorAll('[data-dispute]').forEach(b => b.addEventListener('click', () => dispute(rows[+b.dataset.dispute])));
+      } catch (e) {
+        if (my !== seq) return;
+        box.innerHTML = `<div class="py-6 text-center text-error text-sm">No se pudo buscar: ${esc(e.message || 'error')}</div>`;
+      }
+    }, 300));
+
+    async function claim(r) {
+      const ok = await Modal.confirm(
+        `Vas a ser la persona responsable de «${r.name}» en EU Funding Studio. Cada entidad tiene una sola. ` +
+        '¿Confirmas que trabajas en esta entidad? Después podrás subir sus estatutos, escrituras o tus poderes para que la revisemos.'
+      );
+      if (!ok) return;
+      try {
+        const res = await API.post('/organizations/claim', { oid: r.oid });
+        Toast.show('¡Hecho! La entidad ya es tuya. Ahora completa su ficha.', 'ok');
+        myOrg = { id: res.id };
+        rememberOrg(res.id);
+        onDone();
+        loadMyOrgs();
+        if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
+      } catch (e) {
+        // Ya tiene dueño (por OID o por PIC): ofrecer la revisión.
+        if (e && e.code === 'ALREADY_CLAIMED') return dispute(r);
+        Toast.show(e.message || 'No se pudo reclamar', 'error');
+      }
+    }
+
+    async function dispute(r) {
+      const msg = await Modal.prompt(
+        `«${r.name}» ya tiene una persona responsable en EU Funding Studio. Si crees que debería ser tuya, cuéntanos tu cargo en la entidad: pediremos la documentación a las dos partes.`,
+        '', { placeholder: 'Tu cargo en la entidad' }
+      );
+      if (msg === null) return;
+      try {
+        await API.post('/organizations/claim/dispute', { oid: r.oid, message: msg });
+        Toast.show('Solicitud registrada. Te escribiremos para pedirte la documentación.', 'ok');
+      } catch (e) {
+        Toast.show(e.message || 'No se pudo enviar la solicitud', 'error');
+      }
+    }
+  }
+
+  function openClaimModal() {
+    document.getElementById('org-claim-modal')?.remove();
+    const overlay = document.createElement('div');
+    overlay.id = 'org-claim-modal';
+    overlay.className = 'fixed inset-0 bg-black/40 z-40 flex items-start justify-center pt-16 pb-8 overflow-y-auto';
+    overlay.innerHTML = `
+      <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl mx-4 overflow-hidden">
+        <div class="bg-primary text-white px-6 py-4 flex items-center justify-between">
+          <div>
+            <h2 class="font-headline text-lg font-bold">Añadir otra entidad</h2>
+            <p class="text-white/70 text-xs">Búscala en nuestra base de datos y reclámala.</p>
+          </div>
+          <button class="org-claim-close text-white/70 hover:text-white" aria-label="Cerrar">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="p-5" id="org-claim-modal-body"></div>
+      </div>`;
+    document.body.appendChild(overlay);
+    const close = () => overlay.remove();
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+    overlay.querySelector('.org-claim-close').addEventListener('click', close);
+    renderClaimSearch(overlay.querySelector('#org-claim-modal-body'), { onDone: close });
+  }
+
+  /* ── Itinerario: qué le falta a la ficha ──────────────────────── */
+
+  const ITINERARY = [
+    { key: 'identity', title: 'Identificación', tab: 'general',
+      why: 'Quien te invita como socio necesita tu PIC, tu nombre legal y tu tipo de entidad para la solicitud.',
+      fields: ['organization_name', 'legal_name_national', 'org_type', 'pic', 'national_id', 'foundation_date'] },
+    { key: 'contact', title: 'Ubicación y contacto', tab: 'general',
+      why: 'Para que puedan escribirte y encontrarte en el mapa.',
+      fields: ['country', 'city', 'address', 'post_code', 'website', 'email', 'telephone1'] },
+    { key: 'logo', title: 'Logo', tab: 'general',
+      why: 'Una ficha con logo se reconoce de un vistazo en el directorio.',
+      fields: ['logo_url'] },
+    { key: 'about', title: 'Presentación y especialidad', tab: 'experience',
+      why: 'Es lo primero que lee quien busca socio: a qué os dedicáis y en qué sois buenos.',
+      fields: ['description', 'activities_experience', 'expertise_areas', 'erasmus_roles'] },
+    { key: 'capacity', title: 'Capacidad', tab: 'experience',
+      why: 'Ayuda a saber si podéis asumir un proyecto.',
+      fields: ['staff_size', 'annual_projects'] },
+    { key: 'legal_rep', title: 'Representante legal', tab: 'representatives',
+      why: 'Sin estos datos no se puede firmar el mandato de socio.',
+      fields: ['legal_rep_first_name', 'legal_rep_family_name', 'legal_rep_position', 'legal_rep_email'] },
+    { key: 'contact_person', title: 'Persona de contacto', tab: 'representatives',
+      why: 'La persona a la que escribirán para proponeros un proyecto.',
+      fields: ['cp_first_name', 'cp_family_name', 'cp_email', 'cp_telephone1'] },
+    { key: 'staff', title: 'Personal clave', tab: 'representatives', count: 'key-staff', anchor: 'key-staff',
+      why: 'Los evaluadores puntúan la experiencia del equipo: añade al menos una persona.' },
+    { key: 'projects', title: 'Proyectos europeos', tab: 'experience', count: 'eu-projects', anchor: 'eu-projects',
+      why: 'Tu experiencia previa es lo que más pesa al elegir socio.' },
+    { key: 'docs', title: 'Documentación legal', docs: true, recommended: true,
+      why: 'Estatutos, escrituras, acta de constitución o acreditación de poderes. El equipo la revisa y, si todo está bien, tu entidad lleva el sello «Verificada».' },
+    { key: 'public', title: 'Visible en el directorio', tab: 'general', fields: ['is_public'],
+      why: 'Si no está visible, nadie podrá encontrarte como socio.' },
+    { key: 'accreditations', title: 'Acreditaciones', tab: 'accreditations', count: 'accreditations', anchor: 'accreditations', optional: true,
+      why: 'Carta Erasmus, acreditación KA1… Solo si las tenéis.' },
+  ];
+
+  function resetItineraryCounts(org) {
+    _counts = {
+      'key-staff':      (org?.key_staff || []).length,
+      'eu-projects':    (org?.eu_projects || []).length,
+      'accreditations': (org?.accreditations || []).length,
+    };
+    _claimDocs = [];
+    _verification = null;
+    renderItinerary();
+  }
+
+  function filled(v) {
+    if (v === null || v === undefined) return false;
+    if (typeof v === 'string') return v.trim() !== '';
+    if (typeof v === 'number') return v !== 0;
+    return !!v;
+  }
+
+  function fieldEl(step, f) {
+    // «description» está en dos pestañas: buscar dentro de la del paso.
+    return document.querySelector(`#myorg-tab-${step.tab} [data-field="${f}"]`)
+      || document.querySelector(`#myorg-editor [data-field="${f}"]`);
+  }
+
+  function fieldLabel(step, f) {
+    if (f === 'logo_url') return 'Logo';
+    const el = fieldEl(step, f);
+    // Subir por los ancestros: el dictado por voz envuelve los textarea.
+    let lab = el?.closest('label') || null;
+    for (let n = el?.parentElement; !lab && n && n.id !== 'myorg-editor'; n = n.parentElement) {
+      lab = n.querySelector(':scope > label');
+    }
+    return (lab?.textContent || f).replace('*', '').trim();
+  }
+
+  function stepStatus(step) {
+    if (step.docs) return { done: _claimDocs.length > 0 ? 1 : 0, total: 1, missing: [] };
+    if (step.count) return { done: (_counts[step.count] || 0) > 0 ? 1 : 0, total: 1, missing: [] };
+    const missing = step.fields.filter(f => !filled(myOrg?.[f]));
+    return { done: step.fields.length - missing.length, total: step.fields.length, missing };
+  }
+
+  function renderItinerary() {
+    const host = document.getElementById('myorg-itinerary');
+    if (!host || !myOrg?.id) return;
+    const rows = ITINERARY.map(step => ({ step, st: stepStatus(step) }));
+    const scored = rows.filter(r => !r.step.optional);
+    const pct = Math.round(100 * scored.reduce((a, r) => a + r.st.done / r.st.total, 0) / scored.length);
+    const vstatus = _verification && _verification.verified ? 'verified' : (_verification && _verification.status) || null;
+    const next = rows.find(r => !r.step.optional && r.st.done < r.st.total);
+
+    const stepHtml = rows.map(({ step, st }) => {
+      const complete = st.done >= st.total;
+      const isNext = next && next.step.key === step.key;
+      const tag = step.optional ? 'Opcional' : step.recommended ? 'Recomendado' : '';
+      const missingTxt = st.missing.length && st.missing.length < st.total
+        ? `<div class="text-[11px] text-on-surface-variant mt-1">Falta: ${st.missing.map(f => esc(fieldLabel(step, f))).join(', ')}</div>` : '';
+      return `
+        <li class="flex items-start gap-3 py-3 ${isNext ? 'bg-secondary-fixed/20 -mx-3 px-3 rounded-lg' : ''}">
+          <span class="material-symbols-outlined text-[22px] mt-0.5 ${complete ? 'text-primary' : 'text-on-surface-variant/40'}" ${complete ? 'style="font-variation-settings:\'FILL\' 1"' : ''}>${complete ? 'check_circle' : 'radio_button_unchecked'}</span>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-sm font-semibold ${complete ? 'text-on-surface-variant' : 'text-on-surface'}">${esc(step.title)}</span>
+              ${!step.count && !step.docs && st.total > 1 ? `<span class="text-[11px] text-on-surface-variant">${st.done}/${st.total}</span>` : ''}
+              ${tag ? `<span class="text-[10px] uppercase tracking-wider font-bold text-on-surface-variant/70">${tag}</span>` : ''}
+              ${isNext ? '<span class="text-[10px] uppercase tracking-wider font-bold text-primary">Siguiente paso</span>' : ''}
+            </div>
+            ${complete ? '' : `<div class="text-xs text-on-surface-variant mt-0.5">${esc(step.why)}</div>${missingTxt}`}
+          </div>
+          ${complete ? '' : `<button type="button" data-goto="${step.key}" class="shrink-0 text-xs font-semibold text-primary border border-primary/30 rounded-lg px-3 py-1.5 hover:bg-primary/5">Completar</button>`}
+        </li>`;
+    }).join('');
+
+    host.innerHTML = `
+      <div class="bg-white rounded-2xl border border-outline-variant/30 overflow-hidden">
+        <div class="p-5 sm:p-6 border-b border-outline-variant/20">
+          <div class="flex items-start gap-4 flex-wrap">
+            <div class="flex-1 min-w-[220px]">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-headline text-lg font-extrabold text-primary">Tu ficha está al ${pct} %</h2>
+                ${verificationBadge(vstatus)}
+              </div>
+              <p class="text-xs text-on-surface-variant mt-1">Cuanto más completa esté tu ficha, más fácil es que otra entidad te elija como socia.</p>
+            </div>
+            <button type="button" id="myorg-itinerary-toggle" class="text-xs font-semibold text-primary hover:underline">${_itineraryOpen ? 'Ocultar pasos' : 'Ver pasos'}</button>
+          </div>
+          <div class="mt-4 h-2.5 rounded-full bg-surface-container-low overflow-hidden">
+            <div class="h-full rounded-full bg-primary transition-all duration-500" style="width:${pct}%"></div>
+          </div>
+        </div>
+        <div class="${_itineraryOpen ? '' : 'hidden'}">
+          <ul class="px-5 sm:px-6 divide-y divide-outline-variant/15">${stepHtml}</ul>
+          <div id="myorg-claim-docs" class="px-5 sm:px-6 py-5 border-t border-outline-variant/20 bg-surface-container-low/40">
+            ${renderDocsBox()}
+          </div>
+        </div>
+      </div>`;
+
+    host.querySelector('#myorg-itinerary-toggle')?.addEventListener('click', () => {
+      _itineraryOpen = !_itineraryOpen;
+      renderItinerary();
+    });
+    host.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => gotoStep(b.dataset.goto)));
+    bindDocsBox(host);
+  }
+  let _itineraryOpen = true;
+
+  function gotoStep(key) {
+    const step = ITINERARY.find(s => s.key === key);
+    if (!step) return;
+    if (step.docs) {
+      document.getElementById('myorg-claim-docs')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    document.querySelector(`#myorg-tab-nav [data-tab="${step.tab}"]`)?.click();
+    let target = null;
+    if (step.count) {
+      target = document.querySelector(`#myorg-editor [data-org-add="${step.anchor}"]`);
+    } else {
+      const f = stepStatus(step).missing[0];
+      target = f === 'logo_url'
+        ? document.getElementById('myorg-logo-preview')
+        : fieldEl(step, f);
+    }
+    if (!target) return;
+    setTimeout(() => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (target.matches('input,select,textarea')) target.focus({ preventScroll: true });
+      target.classList.add('ring-2', 'ring-secondary-fixed');
+      setTimeout(() => target.classList.remove('ring-2', 'ring-secondary-fixed'), 2200);
+    }, 80);
+  }
+
+  /* ── Documentación legal (privada: solo tú y el equipo de Studio) ── */
+
+  function renderDocsBox() {
+    const label = Object.fromEntries(DOC_TYPES);
+    const list = _claimDocs.length
+      ? `<ul class="mt-3 space-y-1.5">${_claimDocs.map(d => `
+          <li class="flex items-center gap-2 text-sm bg-white rounded-lg border border-outline-variant/20 px-3 py-2">
+            <span class="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
+            <span class="font-semibold text-xs text-primary shrink-0">${esc(label[d.doc_type] || 'Documento')}</span>
+            <span class="truncate flex-1 text-xs text-on-surface-variant">${esc(d.original_name)}</span>
+            <button type="button" data-doc-dl="${esc(d.id)}" class="text-on-surface-variant hover:text-primary" title="Descargar"><span class="material-symbols-outlined text-[18px]">download</span></button>
+            <button type="button" data-doc-del="${esc(d.id)}" class="text-on-surface-variant hover:text-error" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+          </li>`).join('')}</ul>`
+      : '';
+    return `
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-[22px] text-primary mt-0.5">verified_user</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-on-surface">Acredita tu entidad <span class="text-[10px] uppercase tracking-wider font-bold text-on-surface-variant/70 ml-1">Recomendado</span></div>
+          <p class="text-xs text-on-surface-variant mt-0.5">Sube los estatutos, las escrituras, el acta de constitución o un documento que acredite tus poderes en la entidad. No es obligatorio. El equipo de EU Funding Studio lo revisa y, si todo está bien, tu ficha lleva el sello «Verificada» (te avisamos por correo). Si alguien más reclama tu entidad, te pediremos esta documentación. Solo la ves tú y el equipo de EU Funding Studio.</p>
+          ${verificationNote()}
+          <div class="mt-3 flex flex-wrap items-center gap-2">
+            <select id="myorg-doc-type" class="border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-white">
+              ${DOC_TYPES.map(([v, l]) => `<option value="${v}">${l}</option>`).join('')}
+            </select>
+            <label class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-white bg-primary hover:bg-primary/90 cursor-pointer transition-colors">
+              <span class="material-symbols-outlined text-base">upload</span> Subir documento
+              <input type="file" id="myorg-doc-input" accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx" class="hidden" />
+            </label>
+            <span class="text-[11px] text-on-surface-variant">PDF, imagen o Word · máx. 15 MB</span>
+          </div>
+          ${list}
+        </div>
+      </div>`;
+  }
+
+  function bindDocsBox(host) {
+    host.querySelector('#myorg-doc-input')?.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file || !myOrg?.id) return;
+      if (file.size > 15 * 1024 * 1024) { Toast.show('El archivo pesa más de 15 MB', 'error'); return; }
+      const form = new FormData();
+      form.append('doc_type', host.querySelector('#myorg-doc-type')?.value || 'otro');
+      form.append('file', file);
+      try {
+        const res = await fetch(`/v1/organizations/${encodeURIComponent(myOrg.id)}/claim-docs`, {
+          method: 'POST',
+          headers: { 'Authorization': 'Bearer ' + API.getToken() },
+          body: form,
+        });
+        const json = await res.json();
+        if (!json.ok) throw json.error || new Error('Error');
+        await loadClaimDocs();
+        Toast.show(_verification && _verification.verified
+          ? 'Documento añadido'
+          : 'Documento subido. Queda pendiente de revisión: te avisaremos por correo.', 'ok');
+      } catch (err) { Toast.show(err.message || 'Error subiendo el documento', 'error'); }
+    });
+    host.querySelectorAll('[data-doc-del]').forEach(b => b.addEventListener('click', async () => {
+      if (!await Modal.confirm('¿Eliminar este documento?')) return;
+      try {
+        await API.del(`/organizations/${encodeURIComponent(myOrg.id)}/claim-docs/${encodeURIComponent(b.dataset.docDel)}`);
+        await loadClaimDocs();
+      } catch (err) { Toast.show(err.message || 'Error', 'error'); }
+    }));
+    host.querySelectorAll('[data-doc-dl]').forEach(b => b.addEventListener('click', async () => {
+      try {
+        const doc = _claimDocs.find(d => d.id === b.dataset.docDl);
+        const res = await fetch(`/v1/organizations/${encodeURIComponent(myOrg.id)}/claim-docs/${encodeURIComponent(b.dataset.docDl)}/file`, {
+          headers: { 'Authorization': 'Bearer ' + API.getToken() },
+        });
+        if (!res.ok) throw new Error('No se pudo descargar');
+        const url = URL.createObjectURL(await res.blob());
+        const a = document.createElement('a');
+        a.href = url; a.download = doc?.original_name || 'documento';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 2000);
+      } catch (err) { Toast.show(err.message || 'Error', 'error'); }
+    }));
+  }
+
+  async function loadClaimDocs() {
+    if (!myOrg?.id) return;
+    const id = myOrg.id;
+    try {
+      const out = await API.get(`/organizations/${encodeURIComponent(id)}/claim-docs`) || {};
+      if (myOrg?.id !== id) return;
+      _claimDocs = Array.isArray(out) ? out : (out.documents || []);
+      _verification = out.verification || null;
+    } catch (e) {
+      _claimDocs = [];
+      _verification = null;
+    }
+    renderItinerary();
+  }
+
+  /* Sello de la ficha: solo «Verificada» si un admin la revisó. */
+  function verificationBadge(status) {
+    const pill = 'inline-flex items-center gap-1 rounded-full text-[11px] font-bold px-2.5 py-1';
+    if (status === 'verified') {
+      return `<span class="${pill} bg-[#f3f8d2] text-primary border border-secondary-fixed"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1">verified</span>Verificada</span>`;
+    }
+    if (status === 'pending') {
+      return `<span class="${pill} bg-lavender-soft text-primary border border-lavender/40"><span class="material-symbols-outlined text-[15px]">hourglass_top</span>Pendiente de revisión</span>`;
+    }
+    if (status === 'rejected') {
+      return `<span class="${pill} bg-error-container text-on-error-container border border-error/20"><span class="material-symbols-outlined text-[15px]">gpp_bad</span>No verificada</span>`;
+    }
+    return `<span class="${pill} font-semibold bg-surface-container-low text-on-surface-variant border border-outline-variant/30"><span class="material-symbols-outlined text-[15px]">gpp_maybe</span>Sin verificar</span>`;
+  }
+
+  function verificationNote() {
+    const v = _verification;
+    if (!v) return '';
+    if (v.verified) return '<p class="text-xs text-primary font-semibold mt-2">Documentación revisada: tu entidad lleva el sello «Verificada».</p>';
+    if (v.status === 'pending') return '<p class="text-xs text-primary font-semibold mt-2">Tu documentación está pendiente de revisión. Te avisaremos por correo.</p>';
+    if (v.status === 'rejected') return `<p class="text-xs text-error font-semibold mt-2">No hemos podido verificarla${v.note ? ': ' + esc(v.note) : ''}. Puedes subir otro documento.</p>`;
+    return '';
+  }
+
+  /* Entidad elegida en «Mis entidades» (se recuerda en este navegador). */
+  const MYORG_KEY = 'efs.myorg.selected';
+  function rememberOrg(id) { try { localStorage.setItem(MYORG_KEY, id || ''); } catch { /* sin almacenamiento */ } }
+  function rememberedOrg() { try { return localStorage.getItem(MYORG_KEY) || null; } catch { return null; } }
+
+  /* «Mis entidades»: tarjetas para cambiar de entidad cuando hay más de una. */
+  function renderSwitcher() {
+    const host = document.getElementById('myorg-switcher');
+    if (!host) return;
+    if (myOrgs.length < 2) { host.classList.add('hidden'); host.innerHTML = ''; return; }
+    host.classList.remove('hidden');
+    host.innerHTML = `
+      <h2 class="text-[11px] font-bold uppercase tracking-[.16em] text-on-surface-variant mb-2">Mis entidades <span class="font-semibold">(${myOrgs.length})</span></h2>
+      <div class="flex flex-wrap gap-2" role="radiogroup" aria-label="Mis entidades">
+        ${myOrgs.map(o => {
+          const on = myOrg && myOrg.id === o.id;
+          const name = (o.acronym ? o.acronym + ' — ' : '') + (o.organization_name || '');
+          const mark = Number(o.verified) ? `<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings:'FILL' 1" title="Verificada">verified</span>` : '';
+          const logo = o.logo_url
+            ? `<img src="${esc(o.logo_url)}" alt="" class="w-7 h-7 rounded-full object-contain bg-white border border-outline-variant/30 shrink-0" referrerpolicy="no-referrer">`
+            : `<span class="w-7 h-7 rounded-full bg-primary text-secondary-fixed text-[11px] font-bold inline-flex items-center justify-center shrink-0">${esc((o.acronym || o.organization_name || '?').slice(0, 2).toUpperCase())}</span>`;
+          return `<button type="button" role="radio" aria-checked="${on}" data-switch-org="${esc(o.id)}"
+              class="flex items-center gap-2 max-w-full sm:max-w-[320px] min-w-0 pl-1.5 pr-3 py-1.5 rounded-full border text-sm transition-colors ${on ? 'border-primary bg-primary text-white' : 'border-outline-variant/50 bg-white text-on-surface hover:border-primary/60'}">
+              ${logo}<span class="truncate font-semibold">${esc(name)}</span>${on ? '' : mark}</button>`;
+        }).join('')}
+      </div>`;
+    host.querySelectorAll('[data-switch-org]').forEach(b => b.addEventListener('click', () => {
+      const sel = document.getElementById('myorg-org-select');
+      if (!sel || sel.value === b.dataset.switchOrg) return;
+      sel.value = b.dataset.switchOrg;
+      sel.dispatchEvent(new Event('change'));
+    }));
+  }
+
+
   return {
     initMyOrg, initDirectory, saveSection, addChild, deleteChild,
     editChildInline, viewOrg, dirPrev, dirNext, loadChildTable
