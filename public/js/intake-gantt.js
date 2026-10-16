@@ -127,13 +127,16 @@ const IntakeGantt = (() => {
         <p class="text-on-surface-variant text-sm">Duración: <strong>${totalMonths} meses</strong>. Asigna inicio y fin a cada tarea.</p>
       </div>
 
-      <div class="rounded-2xl border border-outline-variant/20 shadow-sm bg-white overflow-hidden">
+      <!-- En móvil (css/movil.css) el cronograma se desplaza en horizontal dentro de
+           su caja, con la columna de tareas fija a la izquierda. -->
+      <div class="gantt-box rounded-2xl border border-outline-variant/20 shadow-sm bg-white overflow-hidden">
+        <div class="gantt-inner">
         <!-- Ruler -->
         <div class="flex" style="height:28px">
-          <div class="flex-shrink-0 border-r border-outline-variant/20 flex items-center px-2" style="width:300px">
+          <div class="gantt-lbl flex-shrink-0 border-r border-outline-variant/20 flex items-center px-2" style="width:300px">
             <span class="text-[9px] font-bold text-on-surface-variant uppercase tracking-wider">Actividad / Tarea</span>
           </div>
-          <div class="flex-shrink-0 border-r border-outline-variant/20 flex items-center justify-center" style="width:90px">
+          <div class="gantt-dates flex-shrink-0 border-r border-outline-variant/20 flex items-center justify-center" style="width:90px">
             <span class="text-[9px] font-bold text-on-surface-variant">Inicio → Fin</span>
           </div>
           <div class="flex-1 flex relative">
@@ -156,7 +159,7 @@ const IntakeGantt = (() => {
         const c = row.color;
         html += `
           <div class="flex items-center" style="background:${c}06; border-top:1.5px solid ${c}18">
-            <div class="flex-shrink-0 px-2 py-1.5 flex items-center gap-1.5" style="width:300px">
+            <div class="gantt-lbl flex-shrink-0 px-2 py-1.5 flex items-center gap-1.5" style="width:300px">
               <span class="w-5 h-5 rounded flex items-center justify-center text-[8px] font-bold" style="background:${c};color:${wpOn(row.wi)}">W${row.wi+1}</span>
               <span class="text-[10px] font-bold truncate" style="color:${row.ink}">${esc(wp.name || wp.desc || 'WP'+(row.wi+1))}</span>
             </div>
@@ -170,7 +173,7 @@ const IntakeGantt = (() => {
       html += '<div class="py-10 text-center text-xs text-on-surface-variant/50">No hay tareas configuradas.</div>';
     }
 
-    html += '</div>';
+    html += '</div></div>';
 
     // Compact legend
     html += `<div class="flex flex-wrap gap-3 mt-3 text-[9px] text-on-surface-variant">
@@ -276,7 +279,7 @@ const IntakeGantt = (() => {
 
     return `
       <div class="gantt-row flex items-center border-b border-outline-variant/6 hover:bg-primary/[0.02] transition-colors" data-rid="${row.id}">
-        <div class="flex-shrink-0 px-2 py-1.5 border-r border-outline-variant/10 overflow-hidden" style="width:300px">
+        <div class="gantt-lbl flex-shrink-0 px-2 py-1.5 border-r border-outline-variant/10 overflow-hidden" style="width:300px">
           <div class="flex items-start gap-1.5 pl-3">
             <span class="material-symbols-outlined text-[11px] mt-0.5" style="color:${row.ink}">${row.icon}</span>
             <div class="min-w-0 flex-1">
@@ -285,7 +288,7 @@ const IntakeGantt = (() => {
             </div>
           </div>
         </div>
-        <div class="flex-shrink-0 px-2 py-1 border-r border-outline-variant/10 flex items-center gap-1 justify-center" style="width:90px">
+        <div class="gantt-dates flex-shrink-0 px-2 py-1 border-r border-outline-variant/10 flex items-center gap-1 justify-center" style="width:90px">
           <select class="gantt-s gantt-sel" data-rid="${row.id}">${opts(s)}</select>
           <span class="text-[10px] text-on-surface-variant/40">→</span>
           <select class="gantt-e gantt-sel" data-rid="${row.id}">${opts(e)}</select>

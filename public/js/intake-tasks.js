@@ -151,7 +151,7 @@ const IntakeTasks = (() => {
       <!-- WP Header -->
       <div class="flex items-center gap-4 mb-4">
         <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-extrabold text-base shadow-lg" style="background:linear-gradient(135deg,${wpFill(wi)},${wpFill(wi)}cc);color:${wpOn(wi)}">WP${n}</div>
-        <div class="flex-1">
+        <div class="flex-1 min-w-0">
           ${titleSelect}
           <div class="flex items-center gap-3 mt-0.5 text-[11px] text-on-surface-variant">
             <span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="color:${c}">task_alt</span> ${total} tarea${total!==1?'s':''}</span>
@@ -160,7 +160,7 @@ const IntakeTasks = (() => {
         </div>
       </div>
 
-      <div class="ml-7 border-l-3 pl-6 space-y-4" style="border-color:${c}25">`;
+      <div class="tasks-wp-body ml-7 border-l-3 pl-6 space-y-4" style="border-color:${c}25">`;
 
     // Task-code counter: mirrors the seed iteration order (mgmt → activities → custom)
     // so the codes T1.1, T1.2, … line up with wp_tasks when available.
@@ -195,7 +195,7 @@ const IntakeTasks = (() => {
 
     let h = `
       <div class="rounded-2xl overflow-hidden shadow-sm" style="border:1.5px solid ${c}20">
-        <div class="px-5 py-3 flex items-center justify-between" style="background:linear-gradient(135deg,${c}08,${c}03)">
+        <div class="px-5 py-3 flex flex-wrap items-center justify-between gap-2" style="background:linear-gradient(135deg,${c}08,${c}03)">
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-base" style="color:${c}">admin_panel_settings</span>
             <span class="text-xs font-bold" style="color:${c}">Tareas de gestión del proyecto</span>
@@ -368,7 +368,7 @@ const IntakeTasks = (() => {
     return `
       <div class="rounded-2xl overflow-hidden shadow-sm" style="border:1.5px solid ${c}15">
         <!-- Activity badge -->
-        <div class="px-5 py-2.5 flex items-center gap-2.5" style="background:${c}06">
+        <div class="px-5 py-2.5 flex flex-wrap items-center gap-2.5" style="background:${c}06">
           <div class="w-7 h-7 rounded-lg flex items-center justify-center" style="background:${c}15">
             <span class="material-symbols-outlined text-sm" style="color:${c}">${icon}</span>
           </div>
@@ -398,7 +398,7 @@ const IntakeTasks = (() => {
     const tCode = typeof taskIdx === 'number' ? taskCodeFor(wi, taskIdx) : '';
     return `
       <div class="rounded-2xl overflow-hidden shadow-sm group" style="border:1.5px solid ${c}15">
-        <div class="px-5 py-2.5 flex items-center justify-between" style="background:${c}06">
+        <div class="px-5 py-2.5 flex flex-wrap items-center justify-between gap-2" style="background:${c}06">
           <div class="flex items-center gap-2">
             <div class="w-7 h-7 rounded-lg flex items-center justify-center" style="background:${c}15">
               <span class="material-symbols-outlined text-sm" style="color:${c}">edit_note</span>
@@ -406,7 +406,7 @@ const IntakeTasks = (() => {
             ${tCode ? `<span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded" style="background:${c}15;color:${c}">${esc(tCode)}</span>` : ''}
             <span class="text-xs font-bold" style="color:${c}">Tarea personalizada</span>
           </div>
-          <button class="delete-custom w-7 h-7 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 hover:bg-error/10 hover:text-error text-on-surface-variant/30 transition-all" data-wi="${wi}" data-ci="${ci}" data-tid="${task.id}">
+          <button class="delete-custom w-7 h-7 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 hover:bg-error/10 hover:text-error text-on-surface-variant/30 transition-all" data-wi="${wi}" data-ci="${ci}" data-tid="${task.id}" title="Eliminar tarea" aria-label="Eliminar tarea">
             <span class="material-symbols-outlined text-sm">delete</span>
           </button>
         </div>

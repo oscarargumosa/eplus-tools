@@ -454,7 +454,7 @@ const Developer = (() => {
         <div id="budget-phase-content">
           <div class="text-center py-8"><div class="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto"></div><p class="text-sm text-on-surface-variant mt-2">Cargando presupuesto...</p></div>
         </div>
-        <div class="flex justify-between items-center mt-8">
+        <div class="flex flex-wrap justify-between items-center gap-3 mt-8">
           <button onclick="Developer._phase(1)" class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-bold text-primary border border-primary/40 hover:bg-primary/5 transition-colors">
             <span class="material-symbols-outlined text-sm">arrow_back</span> Contexto
           </button>
@@ -482,7 +482,7 @@ const Developer = (() => {
     el.innerHTML = renderPhaseTabs(prepSubTab) + `
       <div class="max-w-4xl">
         <div id="prep-tab-content"></div>
-        <div id="prep-nav-buttons" class="flex justify-between items-center mt-8"></div>
+        <div id="prep-nav-buttons" class="flex flex-wrap justify-between items-center gap-3 mt-8"></div>
       </div>`;
 
     await renderPrepTabContent(prepSubTab);
@@ -510,7 +510,7 @@ const Developer = (() => {
           <span class="material-symbols-outlined text-sm">arrow_back</span> ${t.label}
         </button>`;
       }
-      return `<button onclick="${onclick}" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-violet transition-colors shadow-sm">
+      return `<button onclick="${onclick}" class="ml-auto inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-violet transition-colors shadow-sm">
           ${t.label} <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </button>`;
     }
@@ -632,10 +632,12 @@ const Developer = (() => {
                     const displaySkills = customSkills !== null ? customSkills : (s.skills_summary || '');
                     return `
                     <div class="rounded-lg border p-3 transition-all ${isSelected ? 'bg-primary/5 border-primary/20' : 'bg-surface-container-lowest border-outline-variant/10 opacity-60'}">
-                      <div class="flex items-center gap-2 mb-1.5">
+                      <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                        <label class="inline-flex items-center gap-2 cursor-pointer min-w-0">
                         <input type="checkbox" ${isSelected ? 'checked' : ''} onchange="Developer._toggleStaff('${p.id}','${s.id}',this.checked)" class="accent-primary">
                         <span class="material-symbols-outlined text-sm ${isSelected ? 'text-primary' : 'text-on-surface-variant'}">person</span>
                         <span class="text-xs font-bold">${esc(s.name)}</span>
+                        </label>
                         ${s.role ? `<span class="text-[10px] text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">${esc(s.role)}</span>` : ''}
                         <select class="ml-auto text-[10px] bg-white border border-outline-variant/20 rounded px-1.5 py-0.5 focus:outline-none focus:border-primary ${isSelected ? '' : 'pointer-events-none opacity-40'}" onchange="Developer._setStaffRole('${p.id}','${s.id}',this.value)">
                           <option value="">-- Project role --</option>
@@ -647,7 +649,7 @@ const Developer = (() => {
                   }).join('')}
                   ${extraStaff.map(s => `
                     <div class="bg-lavender-soft/50 rounded-lg border border-lavender/30 p-3">
-                      <div class="flex items-center gap-2 mb-1.5">
+                      <div class="flex flex-wrap items-center gap-2 mb-1.5">
                         <span class="material-symbols-outlined text-sm text-violet">person_add</span>
                         <input type="text" value="${esc(s.name)}" placeholder="Name" class="text-xs font-bold bg-transparent border-b border-outline-variant/20 focus:outline-none focus:border-primary px-1 py-0.5 w-32" onblur="Developer._updateExtraStaff('${p.id}','${s.id}','name',this.value)">
                         <select class="text-[10px] bg-transparent border-b border-outline-variant/20 focus:outline-none focus:border-primary px-1 py-0.5" onchange="Developer._updateExtraStaff('${p.id}','${s.id}','role',this.value)">
@@ -655,7 +657,7 @@ const Developer = (() => {
                           ${workerCategories.map(c => `<option value="${esc(c)}" ${s.role === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}
                         </select>
                         <span class="text-[9px] font-bold text-violet bg-lavender-soft px-1.5 py-0.5 rounded">PROJECT</span>
-                        <button onclick="Developer._removeExtraStaff('${p.id}','${s.id}')" class="ml-auto w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors">
+                        <button onclick="Developer._removeExtraStaff('${p.id}','${s.id}')" title="Quitar" aria-label="Quitar persona" class="ml-auto w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors">
                           <span class="material-symbols-outlined text-sm">close</span>
                         </button>
                       </div>
@@ -1178,7 +1180,7 @@ const Developer = (() => {
             <div class="px-5 pb-5 space-y-3">
               <!-- WP Summary -->
               <div class="bg-primary/5 rounded-xl p-3 border border-primary/10">
-                <div class="flex items-center justify-between mb-1">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
                   <label class="text-[10px] font-bold text-primary uppercase tracking-wider">Resumen del WP</label>
                   <button id="prep-wpbtn-${wp.id}" onclick="Developer.${wpHasDraft ? '_improveWpSummary' : '_genWpSummary'}('${wp.id}')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-[11px] font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
                     <span class="material-symbols-outlined text-sm">${wpHasDraft ? 'psychology' : 'auto_awesome'}</span> ${wpHasDraft ? 'Mejorar propuesta' : 'Generar borrador IA'}
@@ -1207,7 +1209,7 @@ const Developer = (() => {
                 const actHasDraft = !!(act.description && act.description.trim());
                 return `
                 <div class="bg-surface-container-lowest rounded-xl p-3 border border-outline-variant/10">
-                  <div class="flex items-center gap-2 mb-2">
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
                     <span class="text-xs font-bold text-primary">${esc(act.label || act.type)}</span>
                     ${act.subtype ? `<span class="text-[10px] text-on-surface-variant bg-surface-container-low px-1.5 py-0.5 rounded">${esc(act.subtype)}</span>` : ''}
                     ${act.date_start ? `<span class="text-[10px] text-on-surface-variant">${fmtDate(act.date_start)} - ${fmtDate(act.date_end)}</span>` : ''}
@@ -2736,11 +2738,11 @@ const Developer = (() => {
                   style="overflow:hidden" placeholder="Descripción del milestone">${esc(m.description || '')}</textarea>
         <div class="mt-1.5 flex items-start gap-2 text-[10px]">
           <span class="text-on-surface-variant/80 mt-0.5 whitespace-nowrap">✓ Verificación:</span>
-          <div class="flex-1">
+          <div class="flex-1 min-w-0">
             <textarea data-no-voice="1" data-prep-m="verification" data-id="${esc(m.id)}" rows="1"
                       class="w-full px-1 py-0.5 bg-transparent border-0 hover:bg-surface-container focus:bg-white focus:ring-1 focus:ring-primary/30 rounded resize-none"
                       style="overflow:hidden" placeholder="Cómo se demuestra que está completado">${esc(m.verification || '')}</textarea>
-            <select data-prep-m-verif-tpl="${esc(m.id)}" class="mt-0.5 text-[10px] border border-outline-variant/20 rounded text-on-surface-variant bg-surface-container-low">
+            <select data-prep-m-verif-tpl="${esc(m.id)}" class="mt-0.5 max-w-full text-[10px] border border-outline-variant/20 rounded text-on-surface-variant bg-surface-container-low">
               <option value="">— plantilla —</option>
               ${PREP_VERIFY_TEMPLATES.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}
             </select>
@@ -3069,7 +3071,9 @@ const Developer = (() => {
   let _tipTimer = null;
   // Layout state — persisted in localStorage. Sidebar can collapse to icons,
   // AI panel lives in a fixed right drawer triggered by a FAB / Ctrl+I.
-  let _navCollapsed   = localStorage.getItem('developer.navCollapsed') === 'true';
+  // Sin preferencia guardada, en móvil el índice empieza plegado (tira de números).
+  const _navPref      = localStorage.getItem('developer.navCollapsed');
+  let _navCollapsed   = _navPref === null ? window.matchMedia('(max-width: 767px)').matches : _navPref === 'true';
   let _aiDrawerOpen   = localStorage.getItem('developer.aiDrawerOpen') === 'true';
 
   async function renderPhase2() {
@@ -3104,7 +3108,8 @@ const Developer = (() => {
       <!-- TASK-008 · Facts the AI uses (user surface — own data, never prompts) -->
       <div id="dev-facts-panel" class="mb-4"></div>
 
-      <div class="flex gap-0 -mx-4 items-start">
+      <!-- En móvil (css/movil.css) el índice pasa arriba y el editor ocupa todo el ancho -->
+      <div class="dev-cascade-layout flex gap-0 -mx-4 items-start">
         <!-- Left: Section nav (collapsible) -->
         <div class="${navWidth} shrink-0 border-r border-outline-variant/20 py-2 transition-[width] duration-200 relative" id="dev-cascade-nav"></div>
         <!-- Center: Editor (full width when nav collapses or AI is hidden) -->
@@ -3448,7 +3453,7 @@ const Developer = (() => {
       <div id="dev-iteration-tracker" class="mb-4"></div>
 
       <!-- Action buttons -->
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
           <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
@@ -3536,7 +3541,7 @@ const Developer = (() => {
         <div class="text-[11px] text-on-surface-variant mt-1" id="staff-outside-wc">${wordCount(outsideText)} palabras</div>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
           <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
@@ -3596,7 +3601,7 @@ const Developer = (() => {
       return;
     }
     c.innerHTML = `
-      <table class="w-full text-sm">
+      <table class="efs-cardtable w-full text-sm">
         <thead class="bg-surface-container-lowest border-b border-outline-variant/30">
           <tr>
             <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:22%">Name and function</th>
@@ -3608,19 +3613,19 @@ const Developer = (() => {
         <tbody>
           ${_staffTableRows.map(r => `
             <tr class="border-b border-outline-variant/10 align-top">
-              <td class="px-3 py-3">
+              <td class="px-3 py-3" data-label="Name and function">
                 <div class="font-bold text-sm text-on-surface">${esc(r.full_name || '—')}</div>
                 ${r.directory_role ? `<div class="text-xs italic text-on-surface-variant/70">${esc(r.directory_role)}</div>` : ''}
               </td>
-              <td class="px-3 py-3 text-xs text-on-surface-variant">
+              <td class="px-3 py-3 text-xs text-on-surface-variant" data-label="Organisation">
                 ${esc(r.partner_legal_name || r.partner_name || '—')}
                 ${r.partner_role === 'applicant' ? '<div class="text-[10px] mt-1 inline-block px-1.5 py-0.5 rounded bg-primary/10 text-primary font-bold uppercase tracking-wider">Coordinator</div>' : ''}
               </td>
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="Role / tasks">
                 <input type="text" data-pps-id="${r.id}" data-field="project_role" value="${esc(r.project_role || '')}" placeholder="ej. Project Manager — coord WP1, riesgo"
                   class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30">
               </td>
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="Professional profile and expertise">
                 <textarea data-pps-id="${r.id}" data-field="custom_skills" rows="4" placeholder="Skills, experiencia y aporte al proyecto"
                   class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.custom_skills || '')}</textarea>
               </td>
@@ -3684,7 +3689,7 @@ const Developer = (() => {
         <div class="px-4 py-6 text-center text-xs text-on-surface-variant">Cargando…</div>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
           <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
@@ -3759,7 +3764,7 @@ const Developer = (() => {
       .map(w => `<option value="${esc(w.id)}">${esc(w.code || w.title || '')}</option>`)
       .join('');
     c.innerHTML = `
-      <table class="w-full text-sm">
+      <table class="efs-cardtable w-full text-sm">
         <thead class="bg-surface-container-lowest border-b border-outline-variant/30">
           <tr>
             <th class="text-left px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant" style="width:6%">Risk No</th>
@@ -3772,26 +3777,26 @@ const Developer = (() => {
         <tbody>
           ${_risksRows.map(r => `
             <tr class="border-b border-outline-variant/10 align-top" data-risk-id="${esc(r.id)}">
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="Risk No">
                 <input type="text" data-risk-id="${esc(r.id)}" data-field="risk_no" value="${esc(r.risk_no || '')}" placeholder="R1"
                   class="w-full px-2 py-1.5 text-xs font-mono bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30">
               </td>
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="Description">
                 <textarea data-risk-id="${esc(r.id)}" data-field="description" rows="3" placeholder="Describe el riesgo. Indica impacto (low/med/high) y probabilidad."
                   class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.description || '')}</textarea>
               </td>
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="WP">
                 <select data-risk-id="${esc(r.id)}" data-field="wp_id" class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/15">
                   <option value="">(cross)</option>
                   ${wpOptions.replace(`value="${esc(r.wp_id)}"`, `value="${esc(r.wp_id)}" selected`)}
                 </select>
               </td>
-              <td class="px-2 py-2">
+              <td class="px-2 py-2" data-label="Mitigation measures">
                 <textarea data-risk-id="${esc(r.id)}" data-field="mitigation" rows="3" placeholder="Acciones para prevenir o mitigar este riesgo."
                   class="w-full px-2 py-1.5 text-xs bg-surface-container-lowest border border-outline-variant/30 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-snug">${esc(r.mitigation || '')}</textarea>
               </td>
-              <td class="px-1 py-2 text-center">
-                <button data-risk-del="${esc(r.id)}" class="text-on-surface-variant/50 hover:text-red-600 transition-colors" title="Eliminar riesgo">
+              <td class="efs-cardtable__act px-1 py-2 text-center">
+                <button data-risk-del="${esc(r.id)}" aria-label="Eliminar riesgo" class="text-on-surface-variant/50 hover:text-red-600 transition-colors" title="Eliminar riesgo">
                   <span class="material-symbols-outlined text-base">delete</span>
                 </button>
               </td>
@@ -5308,7 +5313,7 @@ const Developer = (() => {
     const isLast = cascadeIndex >= flatSections.length - 1;
 
     main.innerHTML = `
-      <div class="mb-4 flex items-start justify-between gap-3">
+      <div class="dev-sec-head mb-4 flex items-start justify-between gap-3">
         <div class="flex-1 min-w-0">
           <div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 mb-1">${sec.parentNumber ? sec.parentNumber + '. ' + esc(sec.parent) : ''}</div>
           <h2 class="font-headline text-lg font-bold text-on-surface">${sec.number} ${esc(sec.title)}</h2>
@@ -5326,7 +5331,7 @@ const Developer = (() => {
       <div id="wp-card-milestones" class="rounded-xl border border-outline-variant/30 bg-white p-4 mb-4">Cargando milestones…</div>
       <div id="wp-card-budget" class="rounded-xl border border-outline-variant/30 bg-white p-4 mb-6">Cargando budget…</div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-3">
         <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
           <span class="material-symbols-outlined text-lg">check</span> ${isLast ? 'Finalizar borrador' : 'Aprobar y siguiente'}
         </button>
@@ -5390,7 +5395,7 @@ const Developer = (() => {
         </label>
       </div>
       <label class="text-[11px] font-bold text-on-surface-variant block">
-        <div class="flex items-center justify-between mb-1">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
           <span>Objectives <span class="text-on-surface-variant/60 font-normal">(lista de bullets — uno por línea)</span></span>
           ${_wpAiCardBtn('objectives', wpId)}
         </div>
@@ -5430,11 +5435,11 @@ const Developer = (() => {
 
     const wpNum = (wpCode || '').replace(/\D/g, '') || '1';
     host.innerHTML = `
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
         <h3 class="text-sm font-bold text-primary flex items-center gap-1.5">
           <span class="material-symbols-outlined text-base">task_alt</span> Activities and division of work (Tasks)
         </h3>
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           ${_wpAiCardBtn('tasks', wpId)}
           <button onclick="Developer._wpResyncTasks('${esc(wpId)}', '${esc(wpNum)}')" class="text-xs font-bold text-secondary inline-flex items-center gap-1 hover:underline" title="Reemplaza las tasks de este WP por las que vienen de la pestaña Tareas + actividades">
             <span class="material-symbols-outlined text-sm">sync</span> Sincronizar desde Tareas
@@ -5605,11 +5610,11 @@ const Developer = (() => {
     partners = partners || [];
 
     host.innerHTML = `
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
         <h3 class="text-sm font-bold text-primary flex items-center gap-1.5">
           <span class="material-symbols-outlined text-base">flag</span> Milestones
         </h3>
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           ${_wpAiCardBtn('milestones', wpId)}
           <button onclick="Developer._wpAddMs('${esc(wpId)}')" class="text-xs font-bold text-primary inline-flex items-center gap-1 hover:underline">
             <span class="material-symbols-outlined text-sm">add</span> Añadir milestone
@@ -5701,11 +5706,11 @@ const Developer = (() => {
 
     const wpNum = (wpCode || '').replace(/\D/g, '') || '1';
     host.innerHTML = `
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
         <h3 class="text-sm font-bold text-primary flex items-center gap-1.5">
           <span class="material-symbols-outlined text-base">deployed_code</span> Deliverables
         </h3>
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           ${_wpAiCardBtn('deliverables', wpId)}
           <button onclick="Developer._wpAddDl('${esc(wpId)}', '${esc(wpNum)}')" class="text-xs font-bold text-primary inline-flex items-center gap-1 hover:underline">
             <span class="material-symbols-outlined text-sm">add</span> Añadir deliverable
