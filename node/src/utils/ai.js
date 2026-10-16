@@ -29,7 +29,7 @@ function notConfiguredError() {
   const e = new Error('La IA no está configurada en este servidor (falta AI_BRIDGE_URL).');
   e.code = 'AI_NOT_CONFIGURED';
   e.status = 503;
-  return e;
+  return claudeCli.withPublicMessage(e);
 }
 
 function getClient() {
@@ -90,7 +90,7 @@ async function runBridge(prompt, { model, timeoutMs, ctx: ctxOverride, endpoint 
     const e = new Error(`El texto enviado a la IA es demasiado largo (${Math.round(Buffer.byteLength(prompt, 'utf8') / 1024)} KB; máximo ${Math.round(BRIDGE_MAX_PROMPT_BYTES / 1024)} KB).`);
     e.code = 'AI_PROMPT_TOO_LARGE';
     e.status = 413;
-    throw e;
+    throw claudeCli.withPublicMessage(e);
   }
   const ctx = { ...aiContext.get(), ...(ctxOverride || {}) };
   if (endpoint) ctx.endpoint = endpoint;
@@ -107,7 +107,7 @@ async function runBridge(prompt, { model, timeoutMs, ctx: ctxOverride, endpoint 
     logUsage({ ctx, provider: 'ai-bridge', model: cliModel || 'cli-default', usage: null,
       status: err.code === 'AI_BUSY' ? 'busy' : 'error', durationMs: Date.now() - t0 });
     if (!err.status) err.status = err.code === 'AI_BUSY' ? 503 : 502;
-    throw err;
+    throw claudeCli.withPublicMessage(err);
   }
 }
 

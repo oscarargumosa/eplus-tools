@@ -30,14 +30,22 @@ function statusOf(err) {
 
 /** Código por defecto para un status sin code propio. */
 const DEFAULT_CODES = { 400: 'BAD_REQUEST', 401: 'UNAUTHORIZED', 403: 'FORBIDDEN', 404: 'NOT_FOUND', 409: 'CONFLICT', 413: 'PAYLOAD_TOO_LARGE', 429: 'RATE_LIMITED' };
+/* Errores 5xx escritos para el usuario (la IA ocupada, lenta o caída):
+   traen publicMessage, un texto sin detalle interno, y se enseñan tal cual
+   con su code en vez del mensaje genérico. El detalle sigue yendo al log. */
+function isPublic(err) {
+  return !!(err && typeof err.publicMessage === 'string' && err.publicMessage);
+}
+
 function codeFor(status, err) {
-  if (status >= 500) return 'INTERNAL_ERROR';
+  if (status >= 500) return isPublic(err) && typeof err.code === 'string' ? err.code : 'INTERNAL_ERROR';
   if (err && typeof err.code === 'string' && !/^ER_|^E[A-Z]+$/.test(err.code)) return err.code;
   return DEFAULT_CODES[status] || 'BAD_REQUEST';
 }
 
 /** Mensaje apto para el cliente: el propio si es 4xx, el genérico si es 5xx. */
 function publicMessage(err, status = statusOf(err)) {
+  if (isPublic(err)) return err.publicMessage;
   if (status < 500 && err && err.message) return err.message;
   return GENERIC_MESSAGE;
 }
@@ -67,7 +75,8 @@ function sendError(res, status, error, cause) {
     return res.status(status).json({ ok: false, error: GENERIC_MESSAGE, requestId });
   }
   const code = typeof error.code === 'string' && !/^ER_|^E[A-Z]+$/.test(error.code) ? error.code : 'INTERNAL_ERROR';
-  return res.status(status).json({ ok: false, error: { code, message: GENERIC_MESSAGE, requestId } });
+  const message = isPublic(cause) ? cause.publicMessage : GENERIC_MESSAGE;
+  return res.status(status).json({ ok: false, error: { code, message, requestId } });
 }
 
 module.exports = { sendError, publicMessage, statusOf, codeFor, logServerError, GENERIC_MESSAGE };

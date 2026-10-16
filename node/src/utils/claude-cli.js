@@ -128,13 +128,39 @@ async function runViaBridge(prompt, { timeoutMs, model }) {
 
 function bridgeEnabled() { return !!BRIDGE_URL; }
 
+/* Texto para el usuario según el tipo de fallo. El error 5xx general enseña
+   un mensaje genérico; con publicMessage (utils/httpError.js) se enseña este,
+   que dice qué pasa con la IA sin detalle interno.                         */
+const PUBLIC_MESSAGES = {
+  AI_BUSY:             'La IA está ocupada en este momento. Inténtalo de nuevo en un minuto.',
+  AI_TIMEOUT:          'La IA ha tardado demasiado en responder. Inténtalo de nuevo; si se repite, prueba con un texto más corto.',
+  AI_UNAVAILABLE:      'El servicio de IA no responde ahora mismo. Inténtalo de nuevo en unos minutos.',
+  AI_DISABLED:         'La IA no está activada en este servidor.',
+  AI_NOT_CONFIGURED:   'La IA no está activada en este servidor.',
+  AI_PROMPT_TOO_LARGE: 'El texto enviado a la IA es demasiado largo. Prueba con un texto más corto.',
+};
+const PUBLIC_DEFAULT = 'La IA no ha podido responder esta vez. Inténtalo de nuevo en un momento.';
+
+function withPublicMessage(e) {
+  if (e && typeof e === 'object' && !e.publicMessage) {
+    e.publicMessage = PUBLIC_MESSAGES[e.code] || PUBLIC_DEFAULT;
+    if (e.code === 'ENOENT') { e.code = 'AI_UNAVAILABLE'; e.publicMessage = PUBLIC_MESSAGES.AI_UNAVAILABLE; }
+    if (!e.code || !/^AI_/.test(e.code)) e.code = 'AI_ERROR';
+  }
+  return e;
+}
+
 /**
  * Ejecuta un prompt de un solo turno contra el Claude de suscripción.
  * @param {string} prompt  Prompt completo y autocontenido.
  * @param {object} opts     { timeoutMs?, model? }
  * @returns {Promise<string>} Texto de la respuesta (stdout, trim).
  */
-function runSubscription(prompt, { timeoutMs = 180000, model } = {}) {
+function runSubscription(prompt, opts = {}) {
+  return runSubscriptionRaw(prompt, opts).catch((e) => { throw withPublicMessage(e); });
+}
+
+function runSubscriptionRaw(prompt, { timeoutMs = 180000, model } = {}) {
   if (!available()) {
     const e = new Error('claude-cli disabled (VISION_AI_SUBSCRIPTION=off)');
     e.code = 'AI_DISABLED';
@@ -165,4 +191,4 @@ function runSubscription(prompt, { timeoutMs = 180000, model } = {}) {
   });
 }
 
-module.exports = { runSubscription, available, bridgeEnabled };
+module.exports = { runSubscription, available, bridgeEnabled, withPublicMessage, PUBLIC_MESSAGES };
