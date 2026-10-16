@@ -237,13 +237,17 @@ const Organizations = (() => {
       form.append('logo', file);
       try {
         const qs = myOrg?.id ? `?org_id=${encodeURIComponent(myOrg.id)}` : '';
-        const res = await fetch('/v1/organizations/mine/logo' + qs, {
-          method: 'POST',
-          headers: { 'Authorization': 'Bearer ' + API.getToken() },
-          body: form
-        });
-        const json = await res.json();
-        if (!json.ok) throw json.error;
+        // Pasa por el indicador global (Guardando… / No se ha guardado · Reintentar).
+        const json = await SaveStatus.track(async () => {
+          const res = await fetch('/v1/organizations/mine/logo' + qs, {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + API.getToken() },
+            body: form
+          });
+          const j = await res.json().catch(() => ({ ok: false, error: { message: 'Respuesta inesperada del servidor (' + res.status + ')' } }));
+          if (!j.ok) throw j.error || new Error('Error subiendo logo');
+          return j;
+        }, { key: 'POST /organizations/mine/logo' });
         showLogoPreview(json.data.logo_url);
         if (myOrg) myOrg.logo_url = json.data.logo_url;
         renderItinerary();
@@ -254,7 +258,17 @@ const Organizations = (() => {
 
     // Save buttons
     document.querySelectorAll('[data-org-save]').forEach(btn => {
-      btn.addEventListener('click', () => saveSection(btn.dataset.orgSave));
+      const sectionId = btn.dataset.orgSave;
+      btn.addEventListener('click', () => saveSection(sectionId));
+      // Secciones con botón Guardar: al editar, la barra dice «Cambios sin
+      // guardar · Guardar» (y avisa al cerrar) hasta que se guardan.
+      const sec = document.getElementById(sectionId);
+      const markDirty = (e) => {
+        if (!e.target.closest || !e.target.closest('[data-field]')) return;
+        SaveStatus.markDirty('org:' + sectionId, { save: () => saveSection(sectionId) });
+      };
+      sec?.addEventListener('input', markDirty);
+      sec?.addEventListener('change', markDirty);
     });
 
     // Add child buttons
@@ -333,6 +347,7 @@ const Organizations = (() => {
       if (!myOrg) myOrg = {};
       Object.assign(myOrg, data);
       if (result.id) myOrg.id = result.id;
+      SaveStatus.markClean('org:' + sectionId);
       Toast.show('Guardado correctamente', 'ok');
       renderItinerary();
     } catch (e) {

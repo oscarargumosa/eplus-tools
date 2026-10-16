@@ -60,13 +60,17 @@ const Account = (() => {
     const form = new FormData();
     form.append('avatar', file);
     try {
-      const res = await fetch('/v1/auth/me/avatar', {
-        method: 'POST',
-        headers: { 'Authorization': 'Bearer ' + API.getToken() },
-        body: form
-      });
-      const json = await res.json();
-      if (!json.ok) throw json.error || new Error('Error');
+      // Pasa por el indicador global (Guardando… / No se ha guardado · Reintentar).
+      const json = await SaveStatus.track(async () => {
+        const res = await fetch('/v1/auth/me/avatar', {
+          method: 'POST',
+          headers: { 'Authorization': 'Bearer ' + API.getToken() },
+          body: form
+        });
+        const j = await res.json().catch(() => ({ ok: false, error: { message: 'Respuesta inesperada del servidor (' + res.status + ')' } }));
+        if (!j.ok) throw j.error || new Error('Error');
+        return j;
+      }, { key: 'POST /auth/me/avatar' });
       setAvatar(json.data);
       if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
       Toast.show('Foto actualizada', 'ok');
@@ -125,7 +129,7 @@ const Account = (() => {
       me = { ...me, ...updated };
       render();
       if (typeof App !== 'undefined') App.updateCurrentUser({ name: me.name });
-      if (typeof Toast !== 'undefined') Toast.show('Perfil actualizado', 'ok');
+      SaveStatus.markClean('account-profile');
       msg(out, 'Guardado', true);
     } catch (e) {
       msg(out, e.message || 'No se pudo guardar', false);
@@ -168,6 +172,14 @@ const Account = (() => {
     if (wired) return;
     wired = true;
     document.getElementById('account-save-profile')?.addEventListener('click', saveProfile);
+    // Perfil con botón Guardar: al cambiar el nombre, la barra dice «Cambios sin
+    // guardar · Guardar» (y avisa al cerrar) hasta que se guarda.
+    document.getElementById('account-name-input')?.addEventListener('input', e => {
+      if (me && e.target.value.trim() !== (me.name || '')) SaveStatus.markDirty('account-profile', { save: saveProfile });
+      else SaveStatus.markClean('account-profile');
+    });
+    // Enter en el nombre = Guardar.
+    document.getElementById('account-name-input')?.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); saveProfile(); } });
     document.getElementById('account-save-pw')?.addEventListener('click', savePassword);
     document.getElementById('account-avatar-input')?.addEventListener('change', e => { uploadAvatar(e.target.files[0]); e.target.value = ''; });
     document.getElementById('account-avatar-remove')?.addEventListener('click', removeAvatar);
