@@ -212,6 +212,7 @@ const App = (() => {
 
   function onLogout({ expired = false } = {}) {
     currentUser = null;
+    if (window.SaveStatus) SaveStatus.reset();
     clearSessionHint();
     // Cerrar sesión lleva a la portada (landing). Si la sesión caducó a
     // mitad de trabajo, a entrar, para volver a la misma sección.
@@ -373,6 +374,9 @@ const App = (() => {
 
   // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
   const ADMIN_ROUTES = ['analysis'];
+  // Rutas donde la persona escribe o cambia datos (indicador de guardado fijo).
+  const EDIT_ROUTES = ['intake', 'developer', 'calculator', 'budget', 'eu-vision', 'account-profile',
+    'account-org', 'my-org', 'evaluator', 'master', 'diagnose', 'shortlists', 'admin', 'admin-users'];
 
   function updateWorkspace(route) {
     const isEntidades = ENTITY_ROUTES.includes(route);
@@ -424,9 +428,14 @@ const App = (() => {
       if (typeof window.openCreateModal === 'function') window.openCreateModal();
       return;
     }
-    // Aviso si hay cambios sin guardar en Intake
+    // Antes de cambiar de sección: lanzar ya los autoguardados programados
+    // (debounce) mientras los campos siguen en pantalla (save-status.js).
+    if (window.SaveStatus) SaveStatus.flush();
+    // Aviso si hay cambios sin guardar en Intake que no se pueden guardar solos
+    // (p. ej. sin nombre de proyecto). Si ya se está guardando, no hace falta.
     if (currentRoute === 'intake' && route !== 'intake') {
-      if (typeof Intake !== 'undefined' && Intake.hasUnsavedChanges && Intake.hasUnsavedChanges()) {
+      if (typeof Intake !== 'undefined' && Intake.hasUnsavedChanges && Intake.hasUnsavedChanges()
+          && !(window.SaveStatus && SaveStatus.hasUnsaved())) {
         const leave = window.confirm('Tienes cambios sin guardar en Intake. ¿Salir de todos modos?');
         if (!leave) {
           // Revertir hash si lo cambió el usuario
@@ -436,6 +445,8 @@ const App = (() => {
       }
     }
     currentRoute = route;
+    // Pantallas de edición: el indicador de guardado se ve siempre («Todo guardado»).
+    if (window.SaveStatus) SaveStatus.setEditing(EDIT_ROUTES.includes(route));
 
     // Update URL hash
     if (pushHash) location.hash = route;

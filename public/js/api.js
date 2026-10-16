@@ -10,7 +10,21 @@ const API = (() => {
   function getToken()      { return accessToken }
   function clearToken()    { accessToken = null }
 
-  async function request(method, path, body, opts = {}) {
+  // Escrituras de datos del usuario: pasan por el indicador global de
+  // guardado (save-status.js), que dice «Guardando… / Guardado / No se ha
+  // guardado · Reintentar». Reintentar repite esta misma petición.
+  function request(method, path, body, opts = {}) {
+    if (method !== 'GET' && !opts._retried && window.SaveStatus && SaveStatus.shouldTrack(method, path, opts)) {
+      // Clave del recurso: método + ruta (+ campo, si varias escrituras van a la
+      // misma ruta, p. ej. PUT /developer/instances/:id/field con field_id).
+      const sub = body && (body.field_id || body.fieldId || body.section_path);
+      const key = opts.saveKey || (method + ' ' + path.split('?')[0] + (sub ? ' #' + sub : ''));
+      return SaveStatus.track(() => send(method, path, body, opts), { key });
+    }
+    return send(method, path, body, opts);
+  }
+
+  async function send(method, path, body, opts = {}) {
     const url = path.startsWith('http') ? path : `${BASE}${path}`;
     const headers = { 'Content-Type': 'application/json' };
     if (accessToken && !opts.noAuth) {
@@ -37,7 +51,7 @@ const API = (() => {
     // Auto-refresh on 401
     if (res.status === 401 && accessToken && !opts._retried) {
       const refreshed = await tryRefresh();
-      if (refreshed) return request(method, path, body, { ...opts, _retried: true });
+      if (refreshed) return send(method, path, body, { ...opts, _retried: true });
       clearToken();
       window.dispatchEvent(new Event('auth:logout'));
       throw { code: 'UNAUTHORIZED', message: 'Sesión caducada, por favor inicia sesión de nuevo' };

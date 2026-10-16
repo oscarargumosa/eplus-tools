@@ -197,6 +197,8 @@ const Auth = (() => {
 
   async function logout() {
     API.stopAutoRefresh();
+    // Lo que estuviera esperando a guardarse se envía antes de cerrar la sesión.
+    if (window.SaveStatus) { try { await SaveStatus.flush(); } catch { /* el indicador ya avisa */ } }
     try { await API.post('/auth/logout'); } catch { /* ignore */ }
     API.clearToken();
     App.onLogout();

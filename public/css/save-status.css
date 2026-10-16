@@ -1,0 +1,63 @@
+/* ═══════════════════════════════════════════════════════════════
+   Indicador global de guardado (js/save-status.js), en la barra
+   superior azul. Interfaz, no escenografía: densidad alta,
+   movimiento mínimo (solo un giro mientras guarda y un fundido
+   de 160 ms al cambiar de estado).
+   ═══════════════════════════════════════════════════════════════ */
+.efs-save { margin-left: auto; display: inline-flex; align-items: center; gap: .4rem;
+  min-width: 0; height: 32px; padding: 0 .75rem; border-radius: 999px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 500; line-height: 1;
+  color: rgba(255,255,255,.86); white-space: nowrap;
+  transition: background-color .16s ease, color .16s ease; }
+.efs-save[hidden] { display: none; }
+.efs-save:not([hidden]) + .efs-topbar__cta { margin-left: .75rem; }
+.efs-save__icon { display: inline-flex; flex-shrink: 0; color: #d6e949; }
+.efs-save__ico { display: block; }
+.efs-save__txt { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.efs-save__short { display: none; }
+.efs-save__spin { width: 13px; height: 13px; border-radius: 50%; display: block;
+  border: 2px solid rgba(214,233,73,.35); border-top-color: #d6e949;
+  animation: efs-save-spin .8s linear infinite; }
+@keyframes efs-save-spin { to { transform: rotate(360deg); } }
+
+/* Cambios sin guardar: llamada a la acción en lima. */
+.efs-save[data-state="dirty"] { color: #fff; }
+/* Error: pastilla clara sobre el azul, tinta de marca e icono rojo. */
+.efs-save[data-state="error"] { background: #fdf3f1; color: #222351; }
+.efs-save[data-state="error"] .efs-save__icon { color: #b3261e; }
+
+.efs-save__btn { flex-shrink: 0; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 12px;
+  padding: .3rem .7rem; border-radius: 999px; line-height: 1.2;
+  background: #d6e949; color: #222351; transition: transform .12s ease; }
+.efs-save__btn[hidden] { display: none; }
+.efs-save[data-state="error"] .efs-save__btn { background: #3c45a3; color: #fff; margin-right: -.45rem; }
+.efs-save[data-state="dirty"] .efs-save__btn { margin-right: -.45rem; }
+.efs-save__btn:active { transform: scale(.97); }
+.efs-save__btn:focus-visible { outline: 2px solid #d6e949; outline-offset: 2px; }
+.efs-save[data-state="error"] .efs-save__btn:focus-visible { outline-color: #222351; }
+
+@media (hover: hover) and (pointer: fine) {
+  .efs-save__btn:hover { filter: brightness(1.06); }
+}
+
+/* Barra plegada (≤1024 px): menos relleno. Móvil (≤600 px): texto corto
+   («Guardado», «No guardado») y sin hora; el texto completo queda en
+   title y para lectores de pantalla. */
+@media (max-width: 1024px) {
+  .efs-save { padding: 0 .55rem; }
+  .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: .4rem; }
+}
+@media (max-width: 600px) {
+  .efs-save { font-size: 12px; gap: .3rem; padding: 0 .45rem; }
+  .efs-save__long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+  .efs-save__short { display: inline; }
+  .efs-save__btn { padding: .3rem .55rem; font-size: 11px; }
+  /* Error: el botón ya lo dice todo («Reintentar»); se oculta «No guardado» si no cabe. */
+  .efs-save[data-state="error"] .efs-save__short,
+  .efs-save[data-state="dirty"] .efs-save__short { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .efs-save__spin { animation-duration: 2.4s; }
+  .efs-save, .efs-save__btn { transition-duration: .01ms; }
+}
