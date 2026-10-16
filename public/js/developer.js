@@ -296,9 +296,18 @@ const Developer = (() => {
     return PHASE_TABS.filter(t => !t.naOnly || window.__isNaForm);
   }
 
+  // Tira de pestañas con scroll propio (móvil): la activa, centrada a la vista.
+  function _centerDevTab() {
+    const bar = document.querySelector('#developer-content [data-dev-tabs]');
+    if (!bar || bar.scrollWidth <= bar.clientWidth) return;
+    const act = bar.querySelector('button.bg-primary');
+    if (act) bar.scrollLeft = act.offsetLeft - bar.offsetLeft - (bar.clientWidth - act.offsetWidth) / 2;
+  }
+
   function renderPhaseTabs(active) {
+    setTimeout(_centerDevTab, 0);
     return `
-      <div class="flex items-center gap-1 mb-6 border-b border-outline-variant/30 pb-3 overflow-x-auto">
+      <div class="efs-tabstrip flex items-center gap-1 mb-6 border-b border-outline-variant/30 pb-3 overflow-x-auto" data-dev-tabs>
         <button onclick="Developer._back()" class="mr-2 text-on-surface-variant hover:text-primary transition-colors shrink-0" title="Volver a proyectos">
           <span class="material-symbols-outlined text-xl">arrow_back</span>
         </button>

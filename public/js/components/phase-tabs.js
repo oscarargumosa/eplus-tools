@@ -40,6 +40,13 @@ const PhaseTabs = (() => {
     return `<button type="button" data-phase-tab="${esc(t.key)}" class="${cls}">${statusGlyph(t.status)}${icon} ${esc(t.label)}</button>`;
   }
 
+  // Tira con scroll propio (móvil): la pestaña activa, centrada a la vista.
+  function centerActive(bar) {
+    if (!bar || bar.scrollWidth <= bar.clientWidth) return;
+    const act = bar.querySelector('.bg-primary[data-phase-tab], .bg-primary');
+    if (act) bar.scrollLeft = act.offsetLeft - bar.offsetLeft - (bar.clientWidth - act.offsetWidth) / 2;
+  }
+
   function render(containerId, opts) {
     const el = typeof containerId === 'string' ? document.getElementById(containerId) : containerId;
     if (!el) return;
@@ -56,9 +63,10 @@ const PhaseTabs = (() => {
     const tabsHTML = tabs.map(t => tabButtonHTML(t, t.key === activeKey)).join('');
 
     el.innerHTML = `
-      <div class="flex items-center gap-1 mb-6 border-b border-outline-variant/30 pb-3 overflow-x-auto" data-phase-tabs-bar>
+      <div class="efs-tabstrip flex items-center gap-1 mb-6 border-b border-outline-variant/30 pb-3 overflow-x-auto" data-phase-tabs-bar>
         ${backBtn}${projectLabel}${tabsHTML}
       </div>`;
+    centerActive(el.querySelector('[data-phase-tabs-bar]'));
 
     if (typeof onSelect === 'function') {
       el.querySelectorAll('[data-phase-tab]').forEach(btn => {
@@ -78,7 +86,7 @@ const PhaseTabs = (() => {
       btn.className = isActive
         ? 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap bg-primary text-white shadow-md'
         : 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap text-on-surface-variant hover:bg-cream hover:text-primary';
-    });
+    });    centerActive(el.querySelector('[data-phase-tabs-bar]'));
   }
 
   function setStatus(containerId, key, status) {

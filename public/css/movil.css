@@ -30,6 +30,12 @@
   #intake-pt-list > .intake-pt-row .pt-del { width: 40px; height: 40px; min-height: 40px; }
 }
 
+/* ── Tiras de pestañas (fases de Diseñar y Escribir): cada pestaña con su
+   ancho natural; si no caben, la tira se desplaza (overflow-x:auto) en vez
+   de encogerlas hasta que los textos se monten. */
+.efs-tabstrip > * { flex-shrink: 0; }
+.efs-tabstrip { scrollbar-width: thin; }
+
 /* ── Contenedor con scroll horizontal propio (tablas anchas) ─────
    Sombra a la derecha mientras queda tabla por ver (técnica de
    fondos con background-attachment: local). */
