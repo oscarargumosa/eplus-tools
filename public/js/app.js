@@ -252,6 +252,7 @@ const App = (() => {
     if (currentUser.role === 'admin') {
       document.getElementById('admin-users-nav')?.classList.remove('hidden');
       document.getElementById('admin-org-claims-nav')?.classList.remove('hidden');
+      document.getElementById('admin-academia-nav')?.classList.remove('hidden');
       if (typeof AdminOrgClaims !== 'undefined') AdminOrgClaims.refreshCount();
       if (typeof AdminUsers !== 'undefined') AdminUsers.refreshCount();
     }
@@ -362,7 +363,7 @@ const App = (() => {
   // Workspace "Mi Cuenta": el sidebar entero pasa a ser el menú de la
   // cuenta (perfil/seguridad/facturación/…). Todas comparten el panel
   // #panel-account; la ruta decide qué sección se muestra.
-  const ACCOUNT_ROUTES = ['account-profile', 'account-org', 'account-security', 'account-billing', 'account-preferences'];
+  const ACCOUNT_ROUTES = ['account-profile', 'account-org', 'account-courses', 'account-security', 'account-billing', 'account-preferences'];
   // Rutas de cuenta con panel propio (no #panel-account). «Mi entidad» vive
   // en Mi Cuenta y, en segundo plano, también en Entidades (#my-org): las
   // dos rutas muestran el mismo panel.
@@ -480,6 +481,7 @@ const App = (() => {
       dashboard:            'Dashboard',
       'account-profile':     'Perfil',
       'account-org':         'Mi entidad',
+      'account-courses':     'Mis cursos',
       'account-security':    'Seguridad',
       'account-billing':     'Facturación',
       'account-preferences': 'Preferencias',
@@ -519,6 +521,7 @@ const App = (() => {
     // Initialize module when navigating to it
     {
       if (ACCOUNT_ROUTES.includes(route) && !ACCOUNT_OWN_PANEL[route] && typeof Account !== 'undefined') Account.init(route);
+      if (route === 'account-courses' && typeof AccountAcademia !== 'undefined') AccountAcademia.init();
       if (route === 'my-projects' && typeof MyProjects !== 'undefined') MyProjects.init();
       if (route === 'my-evaluations' && typeof MyEvaluations !== 'undefined') MyEvaluations.init();
       if (route === 'create' && typeof CreateProject !== 'undefined') CreateProject.init();

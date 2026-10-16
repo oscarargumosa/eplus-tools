@@ -176,7 +176,7 @@ async function courseDetail(slug, user) {
     enrolled, canEnroll: !!user && (c.access === 'open' || isStaff(user)),
     certificate: cert, certificateReady: !!certPending?.ready, suggestedName: certPending?.suggestedName ?? null,
     next_lesson: next?.slug || null,
-    tests: { total: withTest.length, passed: withTest.filter(l => st.get(l.id)?.passed).length },
+    tests: { total: withTest.length, passed: withTest.filter(l => st.get(l.id)?.passed || st.get(l.id)?.legacy).length },
     modules: mods.map(m => ({
       number: m.number, title: m.title,
       lessons: lessons.filter(l => l.module_id === m.id).map(l => ({

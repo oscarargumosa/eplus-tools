@@ -346,6 +346,8 @@
     let course = course0;
     const L = d.lesson;
     let phases = d.phases;
+    // Estado del test (arriba: paintPhases → paintTestIdle puede llamarse antes de llegar a la sección del test).
+    let attempt = null, answers = [], qi = 0, history = null, lastResult = null;
     document.title = `${L.code} · ${L.title} — Academia`;
     const lessonHref = (s) => `/academia/${esc(course.slug)}/${esc(s)}`;
     const pager = (small) => `<nav class="ac-pager${small ? ' ac-pager--small' : ''}" aria-label="Navegación de lecciones">
@@ -675,7 +677,6 @@
     }
 
     /* ── test (LearningControl.tsx): una pregunta por pantalla ─────── */
-    let attempt = null, answers = [], qi = 0, history = null, lastResult = null;
 
     async function loadHistory() {
       try { history = await API.get(`${lp}/test/history`); } catch { history = null; }
@@ -701,9 +702,11 @@
         </li>`).join('')}</ol>`;
     }
 
-    const helpsNote = () => (phases.helps
-      ? `<p class="ac-help-on">${ms('lightbulb')} <span><b>Ayudas activadas.</b> Ahora verás la explicación de cada opción mientras respondes. Léelas con calma y vuelve a intentarlo.</span></p>`
-      : '');
+    function helpsNote() {
+      return phases.helps && !phases.testPassed
+        ? `<p class="ac-help-on">${ms('lightbulb')} <span><b>Ayudas activadas.</b> Ahora verás la explicación de cada opción mientras respondes. Léelas con calma y vuelve a intentarlo.</span></p>`
+        : '';
+    }
 
     function paintTestIdle() {
       if (attempt) return;
