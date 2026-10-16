@@ -249,7 +249,56 @@ async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note }) {
     text: `${title}: ${orgName}.${!ok && note ? `\nMotivo: ${note}` : ''}\n\n${url}` });
 }
 
+/* ── Academia: alta en un curso y aviso al tutor ──────────────
+   Quién recibe qué y cuándo lo decide node/src/modules/academia/notify.js. */
+async function sendCourseEnrollmentEmail({ to, name, courseTitle, courseUrl, accountUrl }) {
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const html = shellTemplate({
+    title: `Ya estás dentro de «${escHtml(courseTitle)}»`,
+    intro: `Hola${first ? ' ' + escHtml(first) : ''}:<br><br>
+      Te has matriculado en <b>${escHtml(courseTitle)}</b>, en la Academia de EU Funding Studio.<br><br>
+      Cada lección tiene un vídeo, una lectura por hojas y un test. La lección queda completada cuando has visto el vídeo,
+      has terminado la lectura y has aprobado el test. Al completar todas, consigues tu certificado.<br><br>
+      Tu progreso se guarda en tu cuenta: puedes dejarlo y seguir cuando quieras desde «Mis cursos».`,
+    buttonLabel: 'Empezar el curso',
+    buttonUrl: courseUrl,
+    footer: `Tus cursos y certificados están en <a href="${accountUrl}">Mi cuenta → Mis cursos</a>. ¿Dudas? Escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.`,
+  });
+  return sendEmail({ to, subject: `Ya estás dentro de «${courseTitle}»`, html,
+    text: `Hola${first ? ' ' + first : ''}:\n\nTe has matriculado en «${courseTitle}». Empieza aquí: ${courseUrl}\n\nTus cursos: ${accountUrl}` });
+}
+
+async function sendCourseEnrollmentNotice({ to, user, courseTitle, via, adminUrl }) {
+  const html = shellTemplate({
+    title: 'Nueva alta en un curso',
+    intro: `<b>${escHtml(user.name || '(sin nombre)')}</b> &lt;${escHtml(user.email)}&gt; se ha matriculado en <b>${escHtml(courseTitle)}</b>.<br>
+      Cómo: ${escHtml(via)}<br>Fecha: ${new Date().toISOString().replace('T', ' ').slice(0, 16)} UTC`,
+    buttonLabel: 'Ver alumnos del curso',
+    buttonUrl: adminUrl,
+  });
+  return sendEmail({ to, subject: `Nueva alta en «${courseTitle}»: ${user.name || user.email}`, html,
+    text: `Nueva alta en «${courseTitle}»: ${user.name || ''} <${user.email}> (${via})\n\n${adminUrl}` });
+}
+
+async function sendAcademiaTutorNotice({ to, user, courseTitle, lessonTitle, kind, body, shared, lessonUrl, adminUrl }) {
+  const label = kind === 'question' ? 'Pregunta' : 'Comentario';
+  const html = shellTemplate({
+    title: `${label} para el tutor`,
+    intro: `<b>${escHtml(user.name || user.email)}</b> ha escrito al tutor en <b>${escHtml(lessonTitle)}</b> (${escHtml(courseTitle)}).
+      ${shared ? 'Lo ha compartido con el resto del curso.' : 'Es privado: solo lo veis la persona y el equipo docente.'}<br><br>
+      <i>${escHtml(String(body).slice(0, 1500)).replace(/\n/g, '<br>')}</i>`,
+    buttonLabel: 'Responder en la lección',
+    buttonUrl: lessonUrl,
+    footer: `Todas las dudas: <a href="${adminUrl}">panel de la academia → Comentarios</a>.`,
+  });
+  return sendEmail({ to, subject: `${label} para el tutor · ${lessonTitle}`, html,
+    text: `${label} de ${user.name || user.email} en ${lessonTitle}:\n\n${body}\n\nResponder: ${lessonUrl}` });
+}
+
 module.exports = {
+  sendCourseEnrollmentEmail,
+  sendCourseEnrollmentNotice,
+  sendAcademiaTutorNotice,
   sendOrgClaimReviewEmail,
   sendAccessRequestNotice,
   sendAreaGrantedEmail,

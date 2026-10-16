@@ -77,6 +77,12 @@ const hash = v => crypto.createHash('sha256').update(JSON.stringify(stable(v))).
            l.guide_ref || null, l.verify_year || null, l.video_url || null, l.video_poster || null,
            l.video_seconds || null, l.pdf_url || null, JSON.stringify(l.reading || [])]);
 
+        // Esquema e infografía (pestañas de la lectura): solo se tocan si el JSON
+        // los trae, para no borrar los que se hayan cargado aparte.
+        for (const [key, col] of [['mind_map', 'mind_map'], ['infographic', 'infographic']]) {
+          if (key in l) await conn.query(`UPDATE academia_lessons SET \`${col}\` = ? WHERE id = ?`, [l[key] ? JSON.stringify(l[key]) : null, lessonId]);
+        }
+
         if (l.questions?.length) {
           const passing = l.passing_score || course.passing_score || 80;
           const revision = hash({ passing, questions: l.questions });

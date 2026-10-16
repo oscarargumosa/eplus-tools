@@ -9,9 +9,14 @@
      que el vídeo avanza lo que permite el reloj del servidor (≤ 2,5x); un salto
      hacia delante no suma. Tope de muestras por persona, lección y hora.
    - El test se abre con el vídeo visto O la lectura terminada. Preguntas y
-     opciones barajadas por intento; espera entre intentos y máximo en 24 h.
-     Si no aprueba, solo se dice qué preguntas falló (no cuál era la buena).
-   - La lección queda completada al aprobar su test (80 % por defecto).
+     opciones barajadas por intento; intentos sin límite y sin espera. La
+     corrección enseña siempre la respuesta correcta con su explicación (también
+     al suspender). Desde el 3.er suspenso de ese test, ayudas: la explicación de
+     cada opción, durante el intento y en el historial.
+   - La lección queda completada con vídeo visto + lectura terminada + test
+     aprobado (80 % por defecto); lo que la lección no tenga no se exige.
+     Las lecciones completadas con la regla anterior (test aprobado antes de la
+     v2, migración 142) siguen contando: LEGACY_COMPLETED.
    - Con todas las lecciones completadas, la persona confirma su nombre completo
      y se emite el certificado (nunca con el correo como nombre).
    Todo el progreso va a academia_events, que solo crece.                 */
@@ -34,9 +39,7 @@ const envNum = (k, d) => {
   return v !== undefined && v !== '' && Number.isFinite(n) && n >= 0 ? n : d;
 };
 const SAMPLES_PER_HOUR = envNum('ACADEMIA_VIDEO_SAMPLES_PER_HOUR', 360);  // por persona y lección
-const TEST_COOLDOWN_MS = envNum('ACADEMIA_TEST_COOLDOWN_S', 120) * 1000;  // espera tras un suspenso
-const TEST_MAX_PER_DAY = envNum('ACADEMIA_TEST_MAX_PER_DAY', 5);          // entregas en 24 h
-const DAY_MS = 24 * 3600 * 1000;
+const HELP_AFTER_FAILS = 3;            // ayudas desde el 3.er suspenso del mismo test
 
 const isStaff = (user) => !!user && (user.role === 'admin' || user.role === 'scribe');
 const json = (v) => (typeof v === 'string' ? JSON.parse(v) : v);
@@ -59,39 +62,68 @@ async function enrollment(userId, courseId) {
   return e || null;
 }
 
+/* Matrícula. Devuelve true si es nueva (para mandar los correos de alta). */
+async function addEnrollment(user, course, source) {
+  const [r] = await db.query(
+    `INSERT IGNORE INTO academia_enrollments (id, user_id, course_id, source) VALUES (?, ?, ?, ?)`,
+    [uuid(), user.id, course.id, source]);
+  return r.affectedRows === 1;
+}
+
 /* Puede entrar a las lecciones: matriculado, o staff (que se matricula solo). */
 async function requireAccess(course, user) {
   if (!user) throw new HttpError(401, 'UNAUTHORIZED', 'Inicia sesión para entrar al curso');
   if (await enrollment(user.id, course.id)) return;
   if (isStaff(user) || course.access === 'open') {
-    await db.query(
-      `INSERT IGNORE INTO academia_enrollments (id, user_id, course_id, source) VALUES (?, ?, ?, ?)`,
-      [uuid(), user.id, course.id, course.access === 'open' ? 'open' : 'manual']);
+    const fresh = await addEnrollment(user, course, course.access === 'open' && !isStaff(user) ? 'open' : 'manual');
+    // Correos de alta solo para alumnos (el equipo se matricula solo al revisar).
+    if (fresh && !isStaff(user)) require('./notify').enrollment(user.id, course, 'open');
     return;
   }
   throw new HttpError(403, 'NOT_ENROLLED', 'No estás matriculado en este curso');
 }
 
-/* Estado de cada lección del curso para una persona, en dos consultas. */
+/* Qué pide cada lección para darse por completada: vídeo (si tiene), lectura
+   (si tiene hojas además de la portada) y test (si tiene). */
+async function lessonRequirements(courseId) {
+  const [rows] = await db.query(
+    `SELECT l.id,
+            (l.video_url IS NOT NULL AND l.video_seconds > 0) AS has_video,
+            COALESCE(JSON_LENGTH(JSON_EXTRACT(l.reading, '$[*].paragraphs[*]')), 0) AS paragraphs,
+            EXISTS (SELECT 1 FROM academia_controls c WHERE c.lesson_id = l.id) AS has_test
+       FROM academia_lessons l WHERE l.course_id = ?`, [courseId]);
+  return new Map(rows.map(r => [r.id, { video: !!r.has_video, reading: Number(r.paragraphs) > 0, test: !!r.has_test }]));
+}
+
+/* La regla de «lección completada» en un solo sitio. */
+function isCompleted(req, s) {
+  if (s.legacy) return true;
+  if (!s.started && !s.video && !s.reading && !s.passed) return false;
+  return (!req.video || s.video) && (!req.reading || s.reading) && (!req.test || s.passed);
+}
+
+/* Estado de cada lección del curso para una persona, en tres consultas.
+   { started, video, reading, passed, legacy, completed } por lesson_id.     */
 async function lessonStates(userId, courseId) {
   const [ev] = await db.query(
     `SELECT lesson_id, kind FROM academia_events
-      WHERE user_id = ? AND course_id = ? AND kind IN ('LESSON_STARTED','READING_DONE','VIDEO_SEEN')`,
+      WHERE user_id = ? AND course_id = ? AND kind IN ('LESSON_STARTED','READING_DONE','VIDEO_SEEN','LEGACY_COMPLETED')`,
     [userId, courseId]);
   const [passed] = await db.query(
     `SELECT DISTINCT a.lesson_id FROM academia_attempts a JOIN academia_lessons l ON l.id = a.lesson_id
       WHERE a.user_id = ? AND l.course_id = ? AND a.passed = 1`, [userId, courseId]);
+  const reqs = await lessonRequirements(courseId);
+  const KEY = { LESSON_STARTED: 'started', READING_DONE: 'reading', VIDEO_SEEN: 'video', LEGACY_COMPLETED: 'legacy' };
   const st = new Map();
-  for (const e of ev) {
-    const s = st.get(e.lesson_id) || {};
-    s[e.kind] = true;
-    st.set(e.lesson_id, s);
-  }
-  for (const p of passed) st.set(p.lesson_id, { ...(st.get(p.lesson_id) || {}), PASSED: true });
+  const get = (id) => { if (!st.has(id)) st.set(id, {}); return st.get(id); };
+  for (const e of ev) if (e.lesson_id) get(e.lesson_id)[KEY[e.kind]] = true;
+  for (const p of passed) get(p.lesson_id).passed = true;
+  for (const [id, s] of st) s.completed = isCompleted(reqs.get(id) || {}, s);
   return st;
 }
 
-const stateOf = (s) => (s?.PASSED ? 'done' : s ? 'in_progress' : 'pending');
+const stateOf = (s) => (s?.completed ? 'done' : s ? 'in_progress' : 'pending');
+const doneCount = (st) => [...st.values()].filter(s => s.completed).length;
 
 async function listCourses(user) {
   const [rows] = await db.query(
@@ -112,7 +144,7 @@ async function listCourses(user) {
       const enrolled = !!(await enrollment(user.id, c.id));
       const st = enrolled ? await lessonStates(user.id, c.id) : new Map();
       item.enrolled = enrolled;
-      item.done = [...st.values()].filter(s => s.PASSED).length;
+      item.done = doneCount(st);
       const [[cert]] = await db.query('SELECT serial FROM academia_certificates WHERE user_id = ? AND course_id = ?', [user.id, c.id]);
       item.certificate = cert?.serial || null;
     }
@@ -132,20 +164,25 @@ async function courseDetail(slug, user) {
   if (user) {
     const [[r]] = await db.query('SELECT serial, issued_at FROM academia_certificates WHERE user_id = ? AND course_id = ?', [user.id, c.id]);
     cert = r || null;
-    if (!cert && enrolled && lessons.length && lessons.every(l => st.get(l.id)?.PASSED)) certPending = await certificateStatus(user, c);
+    if (!cert && enrolled && lessons.length && lessons.every(l => st.get(l.id)?.completed)) certPending = await certificateStatus(user, c);
   }
-  const next = lessons.find(l => !st.get(l.id)?.PASSED) || lessons[0];
+  const next = lessons.find(l => !st.get(l.id)?.completed) || lessons[0];
+  // «Evaluaciones x/y»: tests aprobados de las lecciones que tienen test.
+  const reqs = await lessonRequirements(c.id);
+  const withTest = lessons.filter(l => reqs.get(l.id)?.test);
   return {
     slug: c.slug, title: c.title, subtitle: c.subtitle, description: c.description, level: c.level,
     cover_url: c.cover_url, hours: c.hours, status: c.status, access: c.access, passing_score: c.passing_score,
     enrolled, canEnroll: !!user && (c.access === 'open' || isStaff(user)),
     certificate: cert, certificateReady: !!certPending?.ready, suggestedName: certPending?.suggestedName ?? null,
     next_lesson: next?.slug || null,
+    tests: { total: withTest.length, passed: withTest.filter(l => st.get(l.id)?.passed).length },
     modules: mods.map(m => ({
       number: m.number, title: m.title,
       lessons: lessons.filter(l => l.module_id === m.id).map(l => ({
         code: l.code, slug: l.slug, title: l.title, minutes: l.video_seconds ? Math.round(l.video_seconds / 60) : null,
         state: stateOf(st.get(l.id)),
+        legacy: !!st.get(l.id)?.legacy,
       })),
     })),
   };
@@ -155,6 +192,33 @@ async function enroll(slug, user) {
   const c = await getCourse(slug, user);
   await requireAccess(c, user);
   return { enrolled: true };
+}
+
+/* «Mis cursos» y «Mis certificados» (Mi cuenta): cursos en los que está
+   matriculada la persona, con su progreso y la lección por la que va.       */
+async function myCourses(user) {
+  const [rows] = await db.query(
+    `SELECT c.*, e.created_at AS enrolled_at FROM academia_enrollments e JOIN academia_courses c ON c.id = e.course_id
+      WHERE e.user_id = ? AND c.status <> 'draft' ${isStaff(user) ? "OR (e.user_id = ? AND c.status = 'draft')" : ''}
+      ORDER BY e.created_at DESC`, isStaff(user) ? [user.id, user.id] : [user.id]);
+  const courses = [];
+  for (const c of rows) {
+    const [lessons] = await db.query('SELECT id, slug, code, title FROM academia_lessons WHERE course_id = ? ORDER BY sort', [c.id]);
+    const st = await lessonStates(user.id, c.id);
+    const done = lessons.filter(l => st.get(l.id)?.completed).length;
+    const next = lessons.find(l => !st.get(l.id)?.completed) || null;
+    const [[cert]] = await db.query('SELECT serial, issued_at FROM academia_certificates WHERE user_id = ? AND course_id = ?', [user.id, c.id]);
+    courses.push({
+      slug: c.slug, title: c.title, subtitle: c.subtitle, cover_url: c.cover_url, lang: c.lang, hours: c.hours,
+      lessons: lessons.length, done, percent: lessons.length ? Math.round((100 * done) / lessons.length) : 0,
+      next: next ? { slug: next.slug, code: next.code, title: next.title } : null,
+      certificate: cert ? { serial: cert.serial, issued_at: cert.issued_at } : null,
+    });
+  }
+  const [certs] = await db.query(
+    `SELECT ce.serial, ce.issued_at, ce.full_name, ce.hours, co.title, co.slug FROM academia_certificates ce
+       JOIN academia_courses co ON co.id = ce.course_id WHERE ce.user_id = ? ORDER BY ce.issued_at DESC`, [user.id]);
+  return { courses, certificates: certs };
 }
 
 /* ── Lección ────────────────────────────────────────────────────────── */
@@ -170,6 +234,28 @@ async function loadLesson(courseSlug, lessonSlug, user) {
 
 const slideCount = (reading) => 1 + reading.reduce((n, s) => n + s.paragraphs.length, 0);
 
+/* Huella estable de una hoja (apartado + texto): FNV-1a de 32 bits en dos
+   pasadas → 16 caracteres hex. La misma que usa el aula de Emociona. Así un
+   corazón sobrevive a reimportar el curso mientras la hoja no cambie.       */
+function slideKey(heading, text) {
+  const fnv = (str, seed) => {
+    let h = seed >>> 0;
+    for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    return h.toString(16).padStart(8, '0');
+  };
+  const s = `${heading || ''}\u0000${text || ''}`;
+  return fnv(s, 0x811c9dc5) + fnv(s, 0x050c5d1f);
+}
+
+/* Hojas de texto de la lectura (sin la portada), en orden, con su huella. */
+function textSlides(reading) {
+  const out = [];
+  reading.forEach((s, si) => s.paragraphs.forEach(p => out.push({
+    key: slideKey(s.heading, p), heading: s.heading || '', html: p, section: si + 1, sections: reading.length,
+  })));
+  return out;
+}
+
 async function currentControl(lessonId) {
   const [[ctl]] = await db.query(
     'SELECT * FROM academia_controls WHERE lesson_id = ? ORDER BY created_at DESC LIMIT 1', [lessonId]);
@@ -179,30 +265,53 @@ async function currentControl(lessonId) {
 async function phaseState(userId, course, lesson) {
   const [ev] = await db.query(
     `SELECT kind, data, TIMESTAMPDIFF(MICROSECOND, created_at, NOW(3)) DIV 1000 AS age_ms
-       FROM academia_events WHERE user_id = ? AND lesson_id = ? ORDER BY id`, [userId, lesson.id]);
+       FROM academia_events WHERE user_id = ? AND lesson_id = ? AND kind <> 'VIDEO_SAMPLE' ORDER BY id`, [userId, lesson.id]);
   const slides = ev.filter(e => e.kind === 'READING_SLIDE').map(e => ({ index: json(e.data).index, age: Number(e.age_ms) }));
   const last = slides.reduce((a, s) => (a && a.index >= s.index ? a : s), null);
   const att = await submittedAttempts(userId, lesson.id);
   const has = k => ev.some(e => e.kind === k);
   const total = slideCount(lesson.reading);
-  const videoSeen = has('VIDEO_SEEN');
-  const readingDone = has('READING_DONE');
-  const testPassed = att.some(a => a.passed);
-  const lim = testLimits(att, testPassed);
+  const ctl = await currentControl(lesson.id);
+  const need = { video: !!(lesson.video_url && lesson.video_seconds > 0), reading: total > 1, test: !!ctl };
+  const s = {
+    started: has('LESSON_STARTED'), video: has('VIDEO_SEEN'), reading: has('READING_DONE'),
+    passed: att.some(a => a.passed), legacy: has('LEGACY_COMPLETED'),
+  };
+  // Valoración: la última que haya dado (null = la quitó).
+  const ratings = ev.filter(e => e.kind === 'LESSON_RATING');
+  const rating = ratings.length ? (json(ratings[ratings.length - 1].data)?.rating ?? null) : null;
+  const [[disc]] = await db.query(
+    'SELECT COUNT(*) AS n FROM academia_comments WHERE user_id = ? AND lesson_id = ? AND withdrawn_at IS NULL', [userId, lesson.id]);
+  const failures = att.filter(a => !a.passed).length;
+  const lastAtt = att.reduce((a, b) => (a && a.age <= b.age ? a : b), null);
   return {
-    started: has('LESSON_STARTED'),
-    videoSeen,
-    readingDone,
-    slides: { total, reached: last ? last.index : -1, waitMs: last && !readingDone ? Math.max(0, SLIDE_MS - last.age) : 0 },
-    testUnlocked: videoSeen || readingDone || !lesson.video_url && total <= 1,
-    testPassed,
+    started: s.started,
+    hasVideo: need.video, hasReading: need.reading, hasTest: need.test,
+    videoSeen: s.video,
+    readingDone: s.reading,
+    slides: { total, reached: last ? last.index : -1, waitMs: last && !s.reading ? Math.max(0, SLIDE_MS - last.age) : 0 },
+    testUnlocked: s.video || s.reading || (!need.video && !need.reading),
+    testPassed: s.passed,
+    testSubmitted: att.length > 0,
+    lastScore: lastAtt ? lastAtt.score : null,
     bestScore: att.length ? Math.max(...att.map(a => a.score)) : null,
     attempts: att.length,
-    testWaitMs: lim.waitMs,          // espera antes de poder empezar otro intento
-    testWaitReason: lim.reason,      // 'cooldown' | 'daily' | null
-    testAttemptsLeft: lim.left,      // intentos que quedan en las últimas 24 h (null si ya aprobó)
-    passingScore: (await currentControl(lesson.id))?.passing_score ?? course.passing_score,
+    failures,
+    helps: failures >= HELP_AFTER_FAILS,
+    passingScore: ctl?.passing_score ?? course.passing_score,
+    completed: isCompleted(need, s),
+    legacyCompleted: s.legacy,
+    rating,
+    discussed: Number(disc.n) > 0,
   };
+}
+
+/* Si la lección acaba de quedar completada, se apunta (solo una vez). */
+async function markCompleted(user, course, lesson, ph) {
+  if (ph.completed && !ph.legacyCompleted) {
+    await addEvent(user, course, lesson, 'LESSON_COMPLETED',
+      { policy: 'VIDEO_READING_TEST_V2', video: ph.videoSeen, reading: ph.readingDone, test: ph.testPassed }, `done2:${lesson.id}`);
+  }
 }
 
 async function lessonDetail(courseSlug, lessonSlug, user) {
@@ -214,6 +323,7 @@ async function lessonDetail(courseSlug, lessonSlug, user) {
   const i = all.findIndex(x => x.slug === lesson.slug);
   const [[note]] = await db.query('SELECT body, revision FROM academia_notes WHERE user_id = ? AND lesson_id = ?', [user.id, lesson.id]);
   const ctl = await currentControl(lesson.id);
+  const [hearts] = await db.query('SELECT slide_key FROM academia_hearts WHERE user_id = ? AND lesson_id = ?', [user.id, lesson.id]);
   return {
     course: { slug: course.slug, title: course.title },
     module: { number: all[i].module, title: all[i].module_title },
@@ -222,7 +332,12 @@ async function lessonDetail(courseSlug, lessonSlug, user) {
       guide_ref: lesson.guide_ref, verify_year: lesson.verify_year, video_url: lesson.video_url,
       video_poster: lesson.video_poster, video_seconds: lesson.video_seconds, pdf_url: lesson.pdf_url,
       reading: lesson.reading, questions: ctl ? json(ctl.questions).length : 0,
+      mind_map: json(lesson.mind_map) || null, infographic: json(lesson.infographic) || null,
+      // Huella de cada hoja de texto (en el orden de las hojas, sin la portada).
+      slide_keys: textSlides(lesson.reading).map(x => x.key),
     },
+    index: i + 1, count: all.length,
+    hearts: hearts.map(h => h.slide_key),
     prev: all[i - 1] ? { slug: all[i - 1].slug, code: all[i - 1].code, title: all[i - 1].title } : null,
     next: all[i + 1] ? { slug: all[i + 1].slug, code: all[i + 1].code, title: all[i + 1].title } : null,
     phases: await phaseState(user.id, course, lesson),
@@ -267,7 +382,9 @@ async function savePhase(courseSlug, lessonSlug, user, body) {
   } else {
     throw new HttpError(400, 'BAD_ACTION', 'Acción no válida');
   }
-  return phaseState(user.id, course, lesson);
+  const after = await phaseState(user.id, course, lesson);
+  if (after.completed && !ph.completed) await markCompleted(user, course, lesson, after);
+  return after;
 }
 
 /* Muestras del vídeo. El cliente manda {watchId, to} (posición actual) cada
@@ -339,31 +456,33 @@ async function submittedAttempts(userId, lessonId) {
   return att.map(a => ({ score: a.score, passed: !!a.passed, age: Number(a.age_ms) }));
 }
 
-/* Espera antes de otro intento: TEST_COOLDOWN tras el último y, si ya hay
-   TEST_MAX_PER_DAY en 24 h, hasta que caduque el más antiguo. Con el test
-   aprobado no hay límites (repetirlo no cambia nada).                       */
-function testLimits(att, passed) {
-  if (passed) return { waitMs: 0, reason: null, left: null };
-  const day = att.filter(a => a.age < DAY_MS);
-  let waitMs = 0, reason = null;
-  if (att.length) {
-    const w = TEST_COOLDOWN_MS - Math.min(...att.map(a => a.age));
-    if (w > 0) { waitMs = w; reason = 'cooldown'; }
-  }
-  if (day.length >= TEST_MAX_PER_DAY) {
-    const w = DAY_MS - Math.max(...day.map(a => a.age));
-    if (w > waitMs) { waitMs = w; reason = 'daily'; }
-  }
-  return { waitMs: Math.max(0, Math.round(waitMs)), reason, left: Math.max(0, TEST_MAX_PER_DAY - day.length) };
+/* Explicación de una opción. Sale del «feedback» de cada opción del banco de
+   preguntas (data/academia/*.json). Si una pregunta no lo trae, un texto
+   genérico que remite a la respuesta correcta.                              */
+function explainOption(q, i) {
+  const fb = String(q.options[i]?.feedback || '').trim();
+  if (fb) return fb;
+  const right = q.options[q.correct]?.text || '';
+  return i === q.correct ? 'Esta es la respuesta correcta.' : `Esta no es la respuesta esperada. La correcta es «${right}».`;
 }
+const explanation = (q) => explainOption(q, q.correct);
 
-function limitError(lim) {
-  return lim.reason === 'daily'
-    ? new HttpError(429, 'TEST_DAILY_LIMIT', `Has llegado al máximo de ${TEST_MAX_PER_DAY} intentos en 24 horas`, { waitMs: lim.waitMs })
-    : new HttpError(429, 'TEST_COOLDOWN', 'Espera un poco antes de volver a intentarlo', { waitMs: lim.waitMs });
+const publicQuestions = (def, helps) => def.questions.map(q => ({
+  id: q.id, question: q.question, options: q.options.map(o => o.text),
+  ...(helps ? { help: q.options.map((_, i) => explainOption(q, i)) } : {}),
+}));
+
+/* Corrección de un intento entregado: siempre con la respuesta correcta y su
+   explicación; con ayudas, además la explicación de cada opción.            */
+function reviewOf(def, answers, helps) {
+  return def.questions.map((q, i) => ({
+    id: q.id, question: q.question, options: q.options.map(o => o.text),
+    chosen: answers[i], correct: q.correct, ok: answers[i] === q.correct,
+    feedback: answers[i] === q.correct ? null : explainOption(q, answers[i]),
+    explanation: explanation(q),
+    ...(helps ? { help: q.options.map((_, k) => explainOption(q, k)) } : {}),
+  }));
 }
-
-const publicQuestions = (def) => def.questions.map(q => ({ id: q.id, question: q.question, options: q.options.map(o => o.text) }));
 
 async function startTest(courseSlug, lessonSlug, user) {
   const { course, lesson } = await loadLesson(courseSlug, lessonSlug, user);
@@ -372,7 +491,7 @@ async function startTest(courseSlug, lessonSlug, user) {
   const ctl = await currentControl(lesson.id);
   if (!ctl) throw new HttpError(404, 'NO_TEST', 'Esta lección no tiene test');
 
-  if (ph.testWaitMs > 0) throw limitError({ waitMs: ph.testWaitMs, reason: ph.testWaitReason });
+  // Intentos sin límite y sin espera (decisión de Óscar, 16-oct-2026).
   // Un intento abierto de la misma revisión se reutiliza (no se baraja otra vez).
   const [[open]] = await db.query(
     `SELECT id, definition FROM academia_attempts
@@ -380,7 +499,7 @@ async function startTest(courseSlug, lessonSlug, user) {
     [user.id, lesson.id, ctl.id]);
   if (open) {
     const def = json(open.definition);
-    return { attemptId: open.id, passingScore: def.passingScore, questions: publicQuestions(def) };
+    return { attemptId: open.id, passingScore: def.passingScore, helps: ph.helps, questions: publicQuestions(def, ph.helps) };
   }
   // Se barajan las preguntas y, dentro de cada una, las opciones.
   const questions = shuffle(json(ctl.questions)).map(q => {
@@ -392,7 +511,7 @@ async function startTest(courseSlug, lessonSlug, user) {
   const id = uuid();
   await db.query('INSERT INTO academia_attempts (id, user_id, lesson_id, control_id, definition) VALUES (?, ?, ?, ?, ?)',
     [id, user.id, lesson.id, ctl.id, JSON.stringify(def)]);
-  return { attemptId: id, passingScore: def.passingScore, questions: publicQuestions(def) };
+  return { attemptId: id, passingScore: def.passingScore, helps: ph.helps, questions: publicQuestions(def, ph.helps) };
 }
 
 async function submitTest(courseSlug, lessonSlug, user, body) {
@@ -401,10 +520,7 @@ async function submitTest(courseSlug, lessonSlug, user, body) {
     'SELECT * FROM academia_attempts WHERE id = ? AND user_id = ? AND lesson_id = ?', [body?.attemptId, user.id, lesson.id]);
   if (!att) throw new HttpError(404, 'NOT_FOUND', 'Intento no encontrado');
   if (att.submitted_at) throw new HttpError(409, 'ALREADY_SUBMITTED', 'Este intento ya se entregó');
-  // Mismos límites al entregar: impide abrir varios intentos a la vez y entregarlos seguidos.
-  const prev = await submittedAttempts(user.id, lesson.id);
-  const lim = testLimits(prev, prev.some(a => a.passed));
-  if (lim.waitMs > 0) throw limitError(lim);
+  const before = await phaseState(user.id, course, lesson);
   const def = json(att.definition);
   const answers = body.answers;
   if (!Array.isArray(answers) || answers.length !== def.questions.length ||
@@ -418,24 +534,34 @@ async function submitTest(courseSlug, lessonSlug, user, body) {
     `UPDATE academia_attempts SET answers = ?, score = ?, passed = ?, submitted_at = NOW(3)
       WHERE id = ? AND submitted_at IS NULL`, [JSON.stringify(answers), score, passed ? 1 : 0, att.id]);
   if (r.affectedRows !== 1) throw new HttpError(409, 'ALREADY_SUBMITTED', 'Este intento ya se entregó');
-  if (passed) {
-    await addEvent(user, course, lesson, 'LESSON_COMPLETED', { attemptId: att.id, score }, `done:${lesson.id}`);
-  }
-  const cert = passed ? await certificateStatus(user, course) : null;
-  const after = testLimits([{ score, passed, age: 0 }, ...prev], passed || prev.some(a => a.passed));
+  await addEvent(user, course, lesson, 'TEST_SUBMITTED', { attemptId: att.id, score, passed }, `test:${att.id}`);
+  const ph = await phaseState(user.id, course, lesson);
+  if (ph.completed && !before.completed) await markCompleted(user, course, lesson, ph);
+  const cert = ph.completed ? await certificateStatus(user, course) : null;
   return {
     score, passed, right, total: def.questions.length, passingScore: def.passingScore,
+    lessonCompleted: ph.completed, failures: ph.failures, helps: ph.helps,
     certificate: cert?.serial || null, certificateReady: !!cert?.ready, suggestedName: cert?.suggestedName ?? null,
-    nextWaitMs: after.waitMs, attemptsLeft: after.left,
-    // Aprobado: corrección completa. Suspenso: solo qué preguntas fallaste, sin la buena.
-    review: def.questions.map((q, i) => {
-      const ok = answers[i] === q.correct;
-      const item = { id: q.id, question: q.question, options: q.options.map(o => o.text), chosen: answers[i], ok };
-      if (passed) {
-        return { ...item, correct: q.correct, feedback: q.options[answers[i]].feedback, correctFeedback: q.options[q.correct].feedback };
-      }
-      return ok ? { ...item, feedback: q.options[answers[i]].feedback } : item;
-    }),
+    // Corrección completa siempre (también al suspender), con la explicación de la correcta.
+    review: reviewOf(def, answers, ph.helps),
+  };
+}
+
+/* Historial de intentos entregados del test de una lección, del último al
+   primero: «Intento N · nota · Superado/Repasar · fecha» y su corrección.   */
+async function testHistory(courseSlug, lessonSlug, user) {
+  const { lesson } = await loadLesson(courseSlug, lessonSlug, user);
+  const [rows] = await db.query(
+    `SELECT id, definition, answers, score, passed, submitted_at FROM academia_attempts
+      WHERE user_id = ? AND lesson_id = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC`, [user.id, lesson.id]);
+  const failures = rows.filter(r => !r.passed).length;
+  const helps = failures >= HELP_AFTER_FAILS;
+  return {
+    failures, helps, helpAfter: HELP_AFTER_FAILS,
+    attempts: rows.map((r, i) => ({
+      n: rows.length - i, id: r.id, date: r.submitted_at, score: r.score, passed: !!r.passed,
+      questions: reviewOf(json(r.definition), json(r.answers), helps),
+    })),
   };
 }
 
@@ -456,7 +582,7 @@ async function certificateStatus(user, course) {
   if (existing) return { serial: existing.serial };
   const [[{ total }]] = await db.query('SELECT COUNT(*) AS total FROM academia_lessons WHERE course_id = ?', [course.id]);
   const st = await lessonStates(user.id, course.id);
-  const done = [...st.values()].filter(s => s.PASSED).length;
+  const done = doneCount(st);
   if (!total || done < Number(total)) return null;
   const [[u]] = await db.query('SELECT name FROM users WHERE id = ?', [user.id]);
   const name = String(u?.name || '').trim();
@@ -525,6 +651,9 @@ async function saveNote(courseSlug, lessonSlug, user, body) {
 }
 
 module.exports = {
-  HttpError, listCourses, courseDetail, enroll, lessonDetail, savePhase, startTest, submitTest, certificate,
-  issueCertificate, saveNote,
+  HttpError, listCourses, courseDetail, enroll, myCourses, lessonDetail, savePhase, startTest, submitTest, testHistory,
+  certificate, issueCertificate, saveNote,
+  // para social.js / admin.js
+  isStaff, json, getCourse, loadLesson, addEvent, addEnrollment, lessonStates, lessonRequirements, phaseState,
+  textSlides, slideKey, currentControl, HELP_AFTER_FAILS,
 };
