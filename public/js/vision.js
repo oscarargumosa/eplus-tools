@@ -488,7 +488,9 @@ const Vision = (() => {
   }
   async function saveComposer(patch) {
     const p = patch || collectComposer();
-    try { V = await API.patch('/vision/' + V.id, p); } catch (e) { /* silencioso */ }
+    if (!patch) SaveStatus.cancel('vision:' + V.id);   // ya se guarda ahora lo escrito
+    // Un fallo lo avisa el indicador global («No se ha guardado · Reintentar»).
+    try { V = await API.patch('/vision/' + V.id, p); } catch (e) { console.warn('[vision] no se guardó', e); }
   }
 
   /* ── VIEW: Ficha ──────────────────────────────────────────────── */
@@ -643,9 +645,20 @@ const Vision = (() => {
   });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
 
-  // Autosave del composer al salir de un campo de texto.
+  // Autosave del composer: con espera mientras se escribe (antes solo al salir
+  // del campo, y al cerrar la pestaña con el cursor dentro se perdía) y al
+  // salir de un campo de texto. Lo de la espera se toma al teclear, con su id.
+  const COMPOSER_FIELDS = ['vz-idea', 'vz-vision', 'vz-title', 'vz-entity', 'vz-budget'];
+  document.addEventListener('input', (e) => {
+    if (!e.target || !COMPOSER_FIELDS.includes(e.target.id) || !V) return;
+    const id = V.id, p = collectComposer();
+    SaveStatus.debounce('vision:' + id, async () => {
+      try { const r = await API.patch('/vision/' + id, p); if (V && V.id === id) V = r; }
+      catch (err) { console.warn('[vision] no se guardó', err); }
+    }, 1200);
+  });
   document.addEventListener('focusout', (e) => {
-    if (e.target && ['vz-idea', 'vz-vision', 'vz-title', 'vz-entity', 'vz-budget'].includes(e.target.id)) saveComposer();
+    if (e.target && COMPOSER_FIELDS.includes(e.target.id)) saveComposer();
   });
 
   // Añadir país desde el input/datalist (Enter o selección del datalist).

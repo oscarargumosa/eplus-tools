@@ -564,8 +564,9 @@ const IntakeTasks = (() => {
   /* ── Save helpers ──────────────────────────────────────────── */
   function debounceTaskSave(inp) {
     const key = `t-${inp.dataset.wi}-${inp.dataset.cat}-${inp.dataset.sub}`;
-    if (saveTimers[key]) clearTimeout(saveTimers[key]);
-    saveTimers[key] = setTimeout(async () => {
+    // Autoguardado con espera vía SaveStatus: «Guardando…» en la barra y se
+    // fuerza al salir de la sección. Los fallos los avisa el indicador.
+    SaveStatus.debounce('tasks:' + key, async () => {
       if (!projectId) return;
       const card = inp.closest('.bg-white');
       const title = card?.querySelector('.task-title-edit')?.value || '';
@@ -585,8 +586,7 @@ const IntakeTasks = (() => {
   }
 
   function debounceCustomSave(tid, inp) {
-    if (saveTimers['c'+tid]) clearTimeout(saveTimers['c'+tid]);
-    saveTimers['c'+tid] = setTimeout(async () => {
+    SaveStatus.debounce('tasks:c' + tid, async () => {
       const card = inp.closest('.bg-white');
       const title = card?.querySelector('.custom-title')?.value || '';
       const desc = card?.querySelector('.custom-desc')?.value || '';
@@ -644,8 +644,7 @@ const IntakeTasks = (() => {
 
   let mgmtTimer = null;
   function saveMgmt() {
-    if (mgmtTimer) clearTimeout(mgmtTimer);
-    mgmtTimer = setTimeout(async () => {
+    SaveStatus.debounce('tasks:mgmt', async () => {
       if (!projectId) return;
       try {
         // Diff against current saved set: only delete deselected items and
@@ -668,7 +667,7 @@ const IntakeTasks = (() => {
         if (toCreate.length) {
           const res = await API.post(`/intake/projects/${projectId}/tasks/generate`, {
             activities: toCreate.map(k => ({ category: 'project_management', subtype: k }))
-          });
+          }, { save: true });   // crea tareas elegidas (no es IA): cuenta como guardar
           (res.data || []).forEach(c => savedTasks.push(c));
         }
       } catch (e) { console.error('[Tasks] saveMgmt:', e); }

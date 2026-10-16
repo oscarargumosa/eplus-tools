@@ -353,7 +353,8 @@ const Budget = (() => {
       benList.querySelectorAll('.ben-del').forEach(btn => {
         btn.addEventListener('click', async () => {
           if (!confirm('¿Eliminar este beneficiario y todos sus costes?')) return;
-          await API.del(`/budget/${current.budget.id}/beneficiaries/${btn.dataset.bid}`);
+          try { await API.del(`/budget/${current.budget.id}/beneficiaries/${btn.dataset.bid}`); }
+          catch (e) { Toast.show('No se ha podido eliminar: ' + (e.message || e), 'err'); return; }
           reload();
         });
       });
@@ -385,7 +386,8 @@ const Budget = (() => {
       wpList.querySelectorAll('.wp-del').forEach(btn => {
         btn.addEventListener('click', async () => {
           if (!confirm('¿Eliminar este WP y todos sus costes?')) return;
-          await API.del(`/budget/${current.budget.id}/work-packages/${btn.dataset.wid}`);
+          try { await API.del(`/budget/${current.budget.id}/work-packages/${btn.dataset.wid}`); }
+          catch (e) { Toast.show('No se ha podido eliminar: ' + (e.message || e), 'err'); return; }
           reload();
         });
       });
@@ -393,11 +395,13 @@ const Budget = (() => {
 
     // Add buttons
     document.getElementById('setup-add-ben')?.addEventListener('click', async () => {
-      await API.post(`/budget/${current.budget.id}/beneficiaries`, { name: '', acronym: '', country: '' });
+      try { await API.post(`/budget/${current.budget.id}/beneficiaries`, { name: '', acronym: '', country: '' }); }
+      catch (e) { Toast.show('No se ha podido añadir: ' + (e.message || e), 'err'); return; }
       reload();
     });
     document.getElementById('setup-add-wp')?.addEventListener('click', async () => {
-      await API.post(`/budget/${current.budget.id}/work-packages`, { label: '' });
+      try { await API.post(`/budget/${current.budget.id}/work-packages`, { label: '' }); }
+      catch (e) { Toast.show('No se ha podido añadir: ' + (e.message || e), 'err'); return; }
       reload();
     });
   }
@@ -635,8 +639,11 @@ const Budget = (() => {
   /* ── Helpers ───────────────────────────────────────────────── */
   function debouncedUpdate(type, id, data) {
     const key = `${type}-${id}`;
-    if (saveTimers[key]) clearTimeout(saveTimers[key]);
-    saveTimers[key] = setTimeout(async () => {
+    // Se acumulan los cambios de la misma fila (nombre y siglas seguidos no se
+    // pisan) y se guardan con espera vía SaveStatus (indicador de la barra).
+    data = saveTimers[key] = Object.assign({}, saveTimers[key], data);
+    SaveStatus.debounce('budget:' + key, async () => {
+      delete saveTimers[key];
       try {
         if (type === 'ben') await API.patch(`/budget/${current.budget.id}/beneficiaries/${id}`, data);
         if (type === 'wp') await API.patch(`/budget/${current.budget.id}/work-packages/${id}`, data);
@@ -650,7 +657,7 @@ const Budget = (() => {
           if (w) Object.assign(w, data);
         }
         renderTabs();
-      } catch (e) { console.error('[Budget] update error:', e); }
+      } catch (e) { console.error('[Budget] update error:', e); /* el indicador global avisa */ }
     }, 500);
   }
 

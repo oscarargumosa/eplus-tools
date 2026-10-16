@@ -563,13 +563,15 @@ const Evaluator = (() => {
 
   /* ── Debounced auto-save ───────────────────────────────────── */
   function debouncedSave(key, value) {
-    if (saveTimers[key]) clearTimeout(saveTimers[key]);
-    saveTimers[key] = setTimeout(async () => {
-      if (!currentInstance) return;
+    // Espera vía SaveStatus: «Guardando…» en la barra, se fuerza al salir y
+    // un fallo se ve («No se ha guardado · Reintentar»), ya no solo en consola.
+    const inst = currentInstance;
+    SaveStatus.debounce('eval:' + key, async () => {
+      if (!inst) return;
       try {
-        await API.put(`/evaluator/instances/${currentInstance.id}/values`, {
+        await API.put(`/evaluator/instances/${inst.id}/values`, {
           values: { [key]: value }
-        });
+        }, { saveKey: 'PUT eval values #' + inst.id + ':' + key });
       } catch (e) {
         console.error('[Evaluator] save error:', e);
       }
