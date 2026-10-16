@@ -90,7 +90,8 @@ exports.exportFormPartBDocx = async (req, res, next) => {
         // No reventamos la descarga si la traducción falla: avisamos por log y
         // devolvemos el doc en idioma original con un header de aviso.
         console.error('[exporter] translation failed:', translateErr.message);
-        res.setHeader('X-Translation-Error', 'translation_failed');
+        // El código (AI_BUSY, AI_TIMEOUT…) deja al front explicar por qué no se tradujo.
+        res.setHeader('X-Translation-Error', /^AI_[A-Z_]+$/.test(translateErr.code || '') ? translateErr.code : 'translation_failed');
       }
     }
 

@@ -4454,10 +4454,20 @@ const Developer = (() => {
         }
       }
       if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+      // Si la traducción con IA falla, el servidor manda el documento en el
+      // idioma original con este aviso: se dice, en vez de llamarlo «_es».
+      const trErr = targetLang ? res.headers.get('X-Translation-Error') : null;
+      if (trErr) {
+        const why = trErr === 'AI_BUSY' ? 'la IA está ocupada en este momento'
+          : trErr === 'AI_TIMEOUT' ? 'la IA tardó demasiado'
+          : trErr === 'AI_UNAVAILABLE' ? 'el servicio de IA no responde ahora mismo'
+          : 'la IA no pudo traducirlo esta vez';
+        Toast.show(`No se ha podido traducir (${why}). Se descarga en el idioma original; inténtalo de nuevo en un rato.`, 'err');
+      }
       const blob = await res.blob();
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      const suffix = targetLang ? `_${targetLang}` : '';
+      const suffix = targetLang && !trErr ? `_${targetLang}` : '';
       a.download = `${(currentProject.name || 'project').replace(/[^a-z0-9._-]/gi, '_')}_FormPartB${suffix}.docx`;
       document.body.appendChild(a);
       a.click();

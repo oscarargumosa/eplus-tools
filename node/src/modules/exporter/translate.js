@@ -220,7 +220,10 @@ async function translateContext(ctx, srcLang, targetLang) {
   const system = buildSystemPrompt(srcLang, targetLang);
   let total = 0;
 
-  for (const chunk of chunks) {
+  // Dos trozos a la vez (lo que admite el ai-bridge): una propuesta larga
+  // tarda la mitad y no choca con el límite de 300 s del proxy. Cola propia
+  // para no esperar en la de utils/claude-cli.js (corta a los 120 s).
+  const doChunk = async (chunk) => {
     const userPrompt = JSON.stringify(chunk, null, 2);
     // max_tokens grande porque la salida es del mismo orden que la entrada.
     // ai.js usa el SDK normal; max 8192 = ~6k palabras por chunk. Suficiente
@@ -231,11 +234,19 @@ async function translateContext(ctx, srcLang, targetLang) {
     const parsed = extractJson(raw);
     if (!parsed || typeof parsed !== 'object') {
       console.warn('[exporter/translate] LLM returned invalid JSON, skipping chunk of', Object.keys(chunk).length, 'keys');
-      continue;
+      return;
     }
     applyTranslations(ctx, parsed);
     total += Object.keys(parsed).length;
-  }
+  };
+  const queue = chunks.slice();
+  let firstError = null;
+  await Promise.all(Array.from({ length: Math.min(2, chunks.length) }, async () => {
+    while (queue.length && !firstError) {
+      try { await doChunk(queue.shift()); } catch (e) { firstError = firstError || e; }
+    }
+  }));
+  if (firstError) throw firstError;
 
   return { translated: total, chunks: chunks.length };
 }
