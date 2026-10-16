@@ -398,7 +398,7 @@
               </div>
             </div>
             <div id="master-chapter-edit-${esc(id)}" class="hidden">
-              <textarea id="master-chapter-textarea-${esc(id)}" class="w-full min-h-[260px] px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-mono">${esc(ch.body || '')}</textarea>
+              <textarea id="master-chapter-textarea-${esc(id)}" oninput="Master._markChapterDirty('${esc(id)}')" class="w-full min-h-[260px] px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-mono">${esc(ch.body || '')}</textarea>
               <div class="mt-2 flex items-center justify-end gap-2">
                 <button onclick="Master._cancelEdit('${esc(id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
                 <button onclick="Master._saveEdit('${esc(id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar cambios</button>
@@ -710,7 +710,12 @@
     document.getElementById('master-chapter-edit-' + chapterId)?.classList.remove('hidden');
     document.getElementById('master-chapter-textarea-' + chapterId)?.focus();
   }
+  // Edición con botón Guardar: «Cambios sin guardar · Guardar» en la barra.
+  function _markChapterDirty(chapterId) {
+    SaveStatus.markDirty('master:ch:' + chapterId, { save: () => _saveEdit(chapterId) });
+  }
   function _cancelEdit(chapterId) {
+    SaveStatus.markClean('master:ch:' + chapterId);
     const ch = (_state.masterDoc?.chapters || []).find(c => c.id === chapterId);
     const ta = document.getElementById('master-chapter-textarea-' + chapterId);
     if (ta && ch) ta.value = ch.body || '';
@@ -1396,6 +1401,7 @@
 
   function _onFormFieldEdit(fieldId, newValue) {
     _state.formFieldEdits[fieldId] = newValue;
+    SaveStatus.markDirty('master:form:' + fieldId, { save: () => _saveFormFieldEdit(fieldId) });
     // Sólo re-render del panel para mostrar los botones Guardar/Descartar
     const main = document.getElementById('form-preview-main');
     if (main && _state.formActiveItemId === fieldId) {
@@ -1434,6 +1440,7 @@
         if (!it.is_filled) it.warnings.push('no_value');
       }
       delete _state.formFieldEdits[fieldId];
+      SaveStatus.markClean('master:form:' + fieldId);
       showToast('Cambios guardados', data.truncated ? 'Se aplicó truncado para no exceder el límite.' : '', 'success');
       // Re-render del tab para refrescar medidor + sidebar
       await showTab('compress');
@@ -1445,6 +1452,7 @@
 
   function _cancelFormFieldEdit(fieldId) {
     delete _state.formFieldEdits[fieldId];
+    SaveStatus.markClean('master:form:' + fieldId);
     const main = document.getElementById('form-preview-main');
     if (main) main.innerHTML = _renderFormFieldPanel(fieldId);
   }
@@ -2145,6 +2153,7 @@
   Master._toggleEdit = _toggleEdit;
   Master._cancelEdit = _cancelEdit;
   Master._saveEdit = _saveEdit;
+  Master._markChapterDirty = _markChapterDirty;
   Master._toggleAskAi = _toggleAskAi;
   Master._cancelAskAi = _cancelAskAi;
   Master._submitAskAi = _submitAskAi;

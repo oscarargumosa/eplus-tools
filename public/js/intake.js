@@ -1140,15 +1140,11 @@ const Intake = (() => {
             // Visual feedback while we adopt the entity → org
             el.classList.add('opacity-50', 'pointer-events-none');
             try {
-              const res = await fetch('/v1/organizations/from-entity', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Authorization': 'Bearer ' + API.getToken(),
-                },
-                body: JSON.stringify({ oid }),
-              }).then(r => r.json());
-              if (!res.ok || !res.data?.id) {
+              // Por API.post (renueva la sesión si caduca y el error se explica).
+              // No cuenta como «guardar»: el socio se guarda justo después.
+              const data = await API.post('/organizations/from-entity', { oid }, { save: false });
+              const res = { ok: true, data };
+              if (!res.data?.id) {
                 throw new Error(res.error?.message || 'No se pudo adoptar la entidad');
               }
               partners[partnerIdx].name = res.data.organization_name || '';

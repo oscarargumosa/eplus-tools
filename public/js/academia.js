@@ -560,27 +560,31 @@
 
     paintPhases();
 
-    /* notas privadas: guardado automático */
+    /* notas privadas: guardado automático.
+       «Guardando… / Guardado / No se ha guardado · Reintentar» lo dice el
+       indicador global de la barra (save-status.js), que también avisa al
+       cerrar; aquí solo queda el aviso especial de conflicto entre pestañas. */
     const ta = $('#ac-note'), st = $('#ac-note-state');
-    let rev = d.note.revision, saved = d.note.body, saveT = null;
-    const save = async () => {
+    let rev = d.note.revision, saved = d.note.body;
+    const doSave = async () => {
       if (ta.value === saved) return;
-      st.textContent = 'Guardando…';
       try {
-        const r = await API.put(`${lp}/note`, { body: ta.value, revision: rev });
-        rev = r.revision; saved = r.body; st.textContent = 'Guardado';
+        const r = await API.put(`${lp}/note`, { body: ta.value, revision: rev }, { save: false });
+        rev = r.revision; saved = r.body; st.textContent = '';
       } catch (e) {
         if (e?.code === 'NOTE_CONFLICT') {
           rev = e.note?.revision || 0; saved = e.note?.body || '';
-          st.textContent = 'La nota se cambió en otra pestaña. Copia tu texto si lo necesitas y recarga la página.';
-        } else st.textContent = 'No se pudo guardar. Se reintentará al seguir escribiendo.';
+          st.textContent = 'La nota se cambió en otra pestaña. Copia tu texto si lo necesitas y recarga la página (Reintentar guarda este texto encima).';
+        }
+        throw e;
       }
     };
-    ta.addEventListener('input', () => { st.textContent = 'Sin guardar'; clearTimeout(saveT); saveT = setTimeout(save, 1200); });
-    ta.addEventListener('blur', save);
-    const warn = (e) => { if (ta.value !== saved) { e.preventDefault(); e.returnValue = ''; } };
-    window.addEventListener('beforeunload', warn);
-    cleanup.push(() => { clearTimeout(saveT); save(); window.removeEventListener('beforeunload', warn); });
+    // Reintentar vuelve a llamar a doSave: lee el texto y la revisión de ahora.
+    const save = () => { SaveStatus.cancel('ac-note'); return SaveStatus.track(doSave, { key: 'ac-note' }).catch(() => {}); };
+    SaveStatus.setEditing(true);
+    ta.addEventListener('input', () => SaveStatus.debounce('ac-note', save, 1200));
+    ta.addEventListener('blur', () => { if (ta.value !== saved) save(); });
+    cleanup.push(() => { SaveStatus.flush(); SaveStatus.setEditing(false); });
   }
 
   restoreSession().then(render);

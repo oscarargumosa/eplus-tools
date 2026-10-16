@@ -660,6 +660,7 @@ const Diagnose = (() => {
       }
       // Discard the dirty edit on the previous section
       delete state.editsMap[state.activeFieldId];
+      SaveStatus.markClean('diagnose');
     }
     state.activeFieldId = fieldId;
     state.activeFindingId = null;
@@ -671,6 +672,10 @@ const Diagnose = (() => {
   function onEditorInput(newText) {
     if (!state.activeFieldId) return;
     state.editsMap[state.activeFieldId] = newText;
+    // Edición con botón Guardar: la barra dice «Cambios sin guardar · Guardar»
+    // y avisa al cerrar la pestaña.
+    if (newText !== state.fieldsMap[state.activeFieldId]) SaveStatus.markDirty('diagnose', { save: saveField });
+    else SaveStatus.markClean('diagnose');
     // Re-render just the small bits (save button + char count) — full render
     // would steal focus. We update DOM in place.
     const wrapper = document.getElementById('diagnose-body');
@@ -708,6 +713,7 @@ const Diagnose = (() => {
       await API.put(`/diagnose/projects/${state.projectId}/fields/${fieldId}`, { value_text: newText });
       state.fieldsMap[fieldId] = newText;
       delete state.editsMap[fieldId];
+      SaveStatus.markClean('diagnose');
       Toast.show?.('Cambios guardados', 'ok');
     } catch (e) {
       alert('No se pudo guardar: ' + (e.message || e));
@@ -720,6 +726,7 @@ const Diagnose = (() => {
     if (!state.activeFieldId) return;
     if (!confirm('¿Descartar tus cambios y volver al texto guardado?')) return;
     delete state.editsMap[state.activeFieldId];
+    SaveStatus.markClean('diagnose');
     render();
   }
   function setFilter(key, value) { state.filter[key] = state.filter[key] === value ? '' : value; if (key === 'severity' && value) state.filter.source = ''; if (key === 'source' && value) state.filter.severity = ''; render(); }
