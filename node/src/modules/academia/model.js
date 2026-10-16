@@ -459,13 +459,19 @@ async function submittedAttempts(userId, lessonId) {
 /* Explicación de una opción. Sale del «feedback» de cada opción del banco de
    preguntas (data/academia/*.json). Si una pregunta no lo trae, un texto
    genérico que remite a la respuesta correcta.                              */
+// Lo que dice el feedback además de «Correcto.» / «No.» (algunas preguntas solo traen eso).
+const fbBody = (fb) => String(fb || '').trim().replace(/^(correcto|correcta|exacto|no)\s*[.,:;!]?\s*/i, '').trim();
 function explainOption(q, i) {
   const fb = String(q.options[i]?.feedback || '').trim();
-  if (fb) return fb;
   const right = q.options[q.correct]?.text || '';
-  return i === q.correct ? 'Esta es la respuesta correcta.' : `Esta no es la respuesta esperada. La correcta es «${right}».`;
+  if (i === q.correct) return fbBody(fb) ? fb : 'Esta es la respuesta correcta.';
+  return fbBody(fb) ? fb : `${fb ? fb.replace(/[.\s]*$/, '. ') : ''}La respuesta correcta es «${right}».`;
 }
-const explanation = (q) => explainOption(q, q.correct);
+/* Por qué la correcta es la correcta (se enseña siempre en la corrección). */
+function explanation(q) {
+  const body = fbBody(q.options[q.correct]?.feedback);
+  return body ? body.charAt(0).toUpperCase() + body.slice(1) : `La respuesta correcta es «${q.options[q.correct]?.text || ''}».`;
+}
 
 const publicQuestions = (def, helps) => def.questions.map(q => ({
   id: q.id, question: q.question, options: q.options.map(o => o.text),
