@@ -18,26 +18,16 @@ const Intake = (() => {
   let _intakeSaveTimer = null;
   let _lastSaveError = null;
 
+  // Autoguardado con espera: pasa por SaveStatus (save-status.js) para que la
+  // barra superior diga «Guardando…», se fuerce al cambiar de sección y se
+  // avise al cerrar. El estado de guardado lo pinta el indicador global.
   function scheduleIntakeSave() {
-    clearTimeout(_intakeSaveTimer);
-    _intakeSaveTimer = setTimeout(() => {
+    const run = () => {
       const name = document.getElementById('intake-f-name')?.value?.trim();
-      if (name) saveToServer(true);
-    }, 3000);
-  }
-
-  function showIntakeSaveStatus(status, msg) {
-    let el = document.getElementById('intake-save-status');
-    if (!el) {
-      el = document.createElement('span');
-      el.id = 'intake-save-status';
-      el.className = 'text-[10px] font-medium ml-2 transition-opacity duration-500';
-      const topbar = document.getElementById('topbar-title');
-      if (topbar) topbar.parentElement.appendChild(el);
-    }
-    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#55577a'; el.style.opacity = '1'; }
-    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#3c45a3'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
-    else if (status === 'error') { el.textContent = 'Error: ' + (msg || 'no se pudo guardar'); el.style.color = '#ba1a1a'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 5000); }
+      if (name) return saveToServer(true);
+    };
+    if (window.SaveStatus) SaveStatus.debounce('intake', run, 1500);
+    else { clearTimeout(_intakeSaveTimer); _intakeSaveTimer = setTimeout(run, 1500); }
   }
 
   /* ── Step configuration (5 steps — contexto, tareas, gantt moved to Writer) */
@@ -264,8 +254,8 @@ const Intake = (() => {
     document.getElementById('intake-file-in')?.addEventListener('change', loadFromFile);
 
     // Server save buttons
-    document.getElementById('intake-btn-save-server')?.addEventListener('click', saveToServer);
-    document.getElementById('intake-btn-save-server-2')?.addEventListener('click', saveToServer);
+    document.getElementById('intake-btn-save-server')?.addEventListener('click', () => saveToServer(false));
+    document.getElementById('intake-btn-save-server-2')?.addEventListener('click', () => saveToServer(false));
 
     // Export wizard
     document.getElementById('intake-btn-export-wizard')?.addEventListener('click', exportWizard);
@@ -403,7 +393,7 @@ const Intake = (() => {
         }
         if (currentProjectId) {
           try { await API.patch('/intake/projects/' + currentProjectId, { eu_grant: selectedBudget }); }
-          catch (e) { console.warn('[intake] no se pudo guardar el presupuesto elegido', e); }
+          catch (e) { console.warn('[intake] no se pudo guardar el presupuesto elegido', e); /* el indicador global ya avisa */ }
         }
       });
     });
@@ -571,11 +561,27 @@ const Intake = (() => {
     }
   }
 
-  async function saveToServer(silent) {
+  // Un guardado cada vez: si llega otro mientras uno está en curso (el
+  // autoguardado y el cambio de paso a la vez), se encola uno solo y lee los
+  // campos al empezar. Antes podían cruzarse y duplicar socios.
+  let _saveRunning = null, _saveQueued = null;
+  function saveToServer(silent) {
+    if (window.SaveStatus) SaveStatus.cancel('intake');
+    silent = silent === true;
+    if (!_saveRunning) {
+      _saveRunning = doSaveToServer(silent).finally(() => { _saveRunning = null; });
+      return _saveRunning;
+    }
+    if (!_saveQueued) {
+      _saveQueued = _saveRunning.then(() => { _saveQueued = null; return saveToServer(silent); });
+    }
+    return _saveQueued;
+  }
+
+  async function doSaveToServer(silent) {
     const name = document.getElementById('intake-f-name').value.trim();
     if (!name) { if (!silent) Toast.show('Escribe un nombre de proyecto', 'err'); return; }
 
-    if (silent) showIntakeSaveStatus('saving');
     try {
       const projectData = {
         name,
@@ -623,7 +629,8 @@ const Intake = (() => {
         // Delete removed partners
         for (const sid of serverIds) {
           if (!localIds.includes(sid)) {
-            partnerOps.push(API.del('/intake/partners/' + sid).catch(() => {}));
+            // Ya borrado (404): es lo que se quería. Cualquier otro error se ve.
+            partnerOps.push(API.del('/intake/partners/' + sid).catch(e => { if (!e || e.code !== 'NOT_FOUND') throw e; }));
           }
         }
         if (partnerOps.length) await Promise.all(partnerOps);
@@ -659,12 +666,14 @@ const Intake = (() => {
         if (!silent) Toast.show('Proyecto guardado en servidor', 'ok');
       }
       _lastSaveError = null;
-      if (silent) showIntakeSaveStatus('saved');
+      if (window.SaveStatus) SaveStatus.ok('intake');
       if (!silent) loadServerProjects();
     } catch (err) {
       _lastSaveError = err;
       console.error('[Intake] saveToServer failed:', err && (err.code || err.status), err && err.message, err);
-      if (silent) showIntakeSaveStatus('error', err && err.message);
+      // «Reintentar» del indicador repite el guardado completo (proyecto + socios)
+      // con lo que haya ahora en pantalla, no la petición suelta que falló.
+      if (window.SaveStatus) SaveStatus.fail('intake', err, () => saveToServer(true), /^(PATCH|POST|DELETE) \/intake\/(projects|partners)\b/);
       if (!silent) Toast.show('Error: ' + (err.message || err), 'err');
     }
   }
@@ -1172,6 +1181,7 @@ const Intake = (() => {
     calcNeedsReinit = true;
     _dirty = true;
     renderPartners();
+    scheduleIntakeSave();   // las filas sin nombre no se envían
   }
 
   /* ── Word counters ───────────────────────────────────────────── */

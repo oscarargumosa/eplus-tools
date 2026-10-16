@@ -40,18 +40,26 @@ const Calculator = (() => {
     };
   }
 
+  // El estado («Guardando… / Guardado / No se ha guardado») lo pinta el
+  // indicador global de la barra superior (save-status.js).
+  let _autoRetried = false;
   async function doSave() {
     if (!currentProjectId || _saving) { _saveQueued = true; return; }
     _saving = true;
-    showSaveStatus('saving');
     try {
       await API.put('/calculator/projects/' + currentProjectId + '/state', serializeState());
-      showSaveStatus('saved');
+      _autoRetried = false;
+      if (window.SaveStatus) SaveStatus.ok('calc');
     } catch (err) {
       console.error('[Calc] autosave error:', err && (err.code || err.status), err && err.message, err);
-      showSaveStatus('error');
-      // Soft retry once after 6s — handles transient 401-after-refresh and brief network blips
-      setTimeout(() => { if (currentProjectId && !_saving) scheduleSave(); }, 6000);
+      // Reintentar (indicador) guarda el estado de ahora, no el cuerpo viejo.
+      if (window.SaveStatus) SaveStatus.fail('calc', err, () => { if (window.SaveStatus) SaveStatus.cancel('calc'); return doSave(); }, /^PUT \/calculator\//);
+      // Un reintento suave a los 6 s (401 tras renovar sesión, cortes breves);
+      // si vuelve a fallar, queda el aviso con «Reintentar».
+      if (!_autoRetried) {
+        _autoRetried = true;
+        setTimeout(() => { if (currentProjectId && !_saving) scheduleSave(); }, 6000);
+      }
     } finally {
       _saving = false;
       if (_saveQueued) { _saveQueued = false; scheduleSave(); }
@@ -63,22 +71,15 @@ const Calculator = (() => {
     // Never autosave against a temporary id — would 403 and risk masking real loads.
     // The save fires only when openProject/loadFromServer has bound a real BD id.
     if (String(currentProjectId).startsWith('intake-temp-')) return;
-    clearTimeout(saveTimer);
-    saveTimer = setTimeout(doSave, 2000);
+    if (window.SaveStatus) SaveStatus.debounce('calc', doSave, 1500);
+    else { clearTimeout(saveTimer); saveTimer = setTimeout(doSave, 1500); }
   }
 
-  function showSaveStatus(status) {
-    let el = document.getElementById('calc-save-status');
-    if (!el) {
-      el = document.createElement('span');
-      el.id = 'calc-save-status';
-      el.className = 'text-[10px] font-medium ml-2 transition-opacity duration-500';
-      const topbar = document.getElementById('topbar-title');
-      if (topbar) topbar.parentElement.appendChild(el);
-    }
-    if (status === 'saving') { el.textContent = 'Guardando...'; el.style.color = '#8a8aa3'; el.style.opacity = '1'; }
-    else if (status === 'saved') { el.textContent = 'Guardado'; el.style.color = '#3c45a3'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
-    else if (status === 'error') { el.textContent = 'Error al guardar — reintentando'; el.style.color = '#ba1a1a'; el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 4000); }
+  // Guardar ya (lanzar el proyecto, salir): cancela la espera y guarda.
+  function forceSave() {
+    if (window.SaveStatus) SaveStatus.cancel('calc');
+    clearTimeout(saveTimer);
+    return doSave();
   }
 
   /* ── Constants ──────────────────────────────────────────────── */
@@ -4319,7 +4320,7 @@ const Calculator = (() => {
     getCalcState,
     getPartnerBudgets,
     isInitialized,
-    forceSave: doSave,
+    forceSave,
     scheduleSave,
     // Exposed for onclick handlers (prefixed with _ to signal internal use)
     _loadProject: loadProject,
