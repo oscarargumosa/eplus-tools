@@ -215,6 +215,14 @@ tailwind.config = {
                      focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
               placeholder="Mín. 8 caracteres, 1 mayúscula, 1 número">
           </div>
+          <div>
+            <label class="block text-xs font-semibold text-on-surface-variant mb-1.5" for="reset-password-confirm">Repite la nueva contraseña</label>
+            <input id="reset-password-confirm" name="password_confirm" type="password" required minlength="8" autocomplete="new-password"
+              data-match="#reset-password"
+              class="w-full px-4 py-3 rounded-xl bg-white border border-outline-variant text-on-surface text-sm
+                     focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+              placeholder="Escríbela otra vez">
+          </div>
           <div id="reset-error" class="hidden text-xs text-error font-semibold"></div>
           <button type="submit" id="btn-reset"
             class="w-full py-3 rounded-full bg-secondary-fixed text-primary text-sm font-bold
@@ -253,6 +261,14 @@ tailwind.config = {
               class="w-full px-4 py-3 rounded-xl bg-white border border-outline-variant text-on-surface text-sm
                      focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
               placeholder="Mín. 8, con mayúscula y número">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-on-surface-variant mb-1.5" for="reg-password-confirm">Repite la contraseña</label>
+            <input id="reg-password-confirm" name="password_confirm" type="password" required aria-required="true" minlength="8" autocomplete="new-password"
+              data-match="#reg-password"
+              class="w-full px-4 py-3 rounded-xl bg-white border border-outline-variant text-on-surface text-sm
+                     focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+              placeholder="Escríbela otra vez">
           </div>
           <!-- Casilla obligatoria de privacidad (el backend exige acepta_privacidad === true) -->
           <div class="flex items-start gap-2.5">
@@ -835,7 +851,7 @@ tailwind.config = {
                     class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-4" />
 
                   <label class="block text-sm font-semibold text-on-surface mb-1.5">Repite la nueva contraseña</label>
-                  <input id="account-confirm-pw" type="password" autocomplete="new-password"
+                  <input id="account-confirm-pw" type="password" autocomplete="new-password" data-match="#account-new-pw"
                     class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary mb-5" />
 
                   <div class="flex items-center gap-3">
@@ -3299,6 +3315,7 @@ tailwind.config = {
 <script src="/js/api.js"></script>
 <script src="/js/beta-access.js"></script>
 <script src="/js/track.js?v=20260627t"></script>
+<script src="/js/password-fields.js"></script>
 <script src="/js/auth.js"></script>
 <script src="/js/components/phase-tabs.js"></script>
 <script src="/js/app.js?v=20261016a"></script>

@@ -46,6 +46,10 @@ const Auth = (() => {
       const name     = document.getElementById('reg-name').value;
       const email    = document.getElementById('reg-email').value;
       const password = document.getElementById('reg-password').value;
+      if (window.PasswordFields && !PasswordFields.matches(document.getElementById('reg-password-confirm'))) {
+        showError('register', 'Las dos contraseñas no coinciden.');
+        return;
+      }
       const acepta_privacidad = !!document.getElementById('reg-privacy')?.checked;
       if (!acepta_privacidad) {
         showError('register', 'Para crear la cuenta tienes que marcar «He leído y acepto la política de privacidad».');
@@ -108,6 +112,10 @@ const Auth = (() => {
     setLoading('btn-reset', true);
     try {
       const password = document.getElementById('reset-password').value;
+      if (window.PasswordFields && !PasswordFields.matches(document.getElementById('reset-password-confirm'))) {
+        showError('reset', 'Las dos contraseñas no coinciden.');
+        return;
+      }
       if (!pendingResetToken) {
         showError('reset', 'Token no encontrado. Vuelve a solicitar un enlace de recuperación.');
         return;
