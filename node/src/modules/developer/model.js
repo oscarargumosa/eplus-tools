@@ -931,12 +931,15 @@ async function getEvalGuidanceForSection(sectionFieldId, programId = null) {
   const formRef = refMap[lookupFieldId];
   if (!formRef) return empty;
 
-  // Get section (program-scoped when programId known, to keep calls independent)
+  // Get section (program-scoped when programId known, to keep calls independent).
+  // Hay convocatorias con form_ref «1», «2.1»… en vez de «sec_1», «sec_2_1» (KA3
+  // European Youth Together): se aceptan las dos, si no sus criterios no llegaban a la IA.
+  const altRef = formRef.replace(/^sec_/, '').replace(/_/g, '.');
   const [sections] = await db.execute(
     programId
-      ? 'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ? AND program_id = ?'
-      : 'SELECT id, title, max_score FROM eval_sections WHERE form_ref = ?',
-    programId ? [formRef, programId] : [formRef]
+      ? 'SELECT id, title, max_score FROM eval_sections WHERE form_ref IN (?, ?) AND program_id = ? ORDER BY form_ref = ? DESC'
+      : 'SELECT id, title, max_score FROM eval_sections WHERE form_ref IN (?, ?) ORDER BY form_ref = ? DESC',
+    programId ? [formRef, altRef, programId, formRef] : [formRef, altRef, formRef]
   );
   if (!sections.length) return empty;
   const sec = sections[0];
