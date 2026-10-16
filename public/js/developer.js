@@ -3307,6 +3307,11 @@ const Developer = (() => {
       }
     }
     nav.innerHTML = html;
+    // Móvil (índice en tira horizontal): la sección actual, a la vista.
+    if (nav.scrollWidth > nav.clientWidth) {
+      const cur = nav.querySelectorAll('button[onclick*="_cascadeGoTo"]')[cascadeIndex];
+      if (cur) nav.scrollLeft = cur.offsetLeft - nav.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2;
+    }
   }
 
   let _cascadeGenerating = false;
