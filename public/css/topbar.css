@@ -32,6 +32,21 @@
 .efs-topbar__toggle { display: none; background: none; border: 0; color: #fff; cursor: pointer;
   padding: .25rem; line-height: 0; }
 .efs-topbar__toggle .material-symbols-outlined { font-size: 26px; }
+/* Escritorio: el menú va siempre en una línea (ninguna entrada parte en dos,
+   «EU Vision» lo hacía entre 1025 y 1100 px) y el logo no encoge. */
+@media (min-width: 1025px) {
+  .efs-topbar__brand { flex-shrink: 0; }
+  .efs-topbar__menu a { white-space: nowrap; }
+}
+/* Escritorio estrecho (1025-1279 px): 8 entradas + logo + avatar (+ indicador
+   de guardado) no caben con las medidas de 1280. Logo, letra y huecos un poco
+   más compactos; medido con y sin indicador en sus cuatro estados. */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .efs-topbar__inner { gap: 1rem; padding: 0 1rem; }
+  .efs-topbar__logo { height: 18px; }
+  .efs-topbar__menu { gap: .9rem; }
+  .efs-topbar__menu a { font-size: 13px; }
+}
 /* Ocho entradas de menú no caben por debajo de ~1024px: antes de que se corten,
    la navegación pasa a plegable. Estaba en 720px y entre 721 y 1000px el menú
    se quedaba cortado por la derecha (Movilidades y EU Vision desaparecían). */
