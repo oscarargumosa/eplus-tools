@@ -6,6 +6,99 @@
 (function () {
   'use strict';
 
+  /* ── Avatar de «Mi cuenta» ───────────────────────────────────
+     Orden: foto del usuario → logo de su entidad → iniciales.
+     data = { avatar_url, avatar_source: 'organization'|'user'|'initials', initials }
+     Si la imagen falla al cargar, se queda con las iniciales. */
+  window.EfsAvatar = {
+    paint: function (el, data) {
+      if (!el) return;
+      data = data || {};
+      var initials = data.initials || '?';
+      el.classList.remove('is-logo');
+      el.textContent = initials;
+      if (!data.avatar_url) return;
+      var img = new Image();
+      img.alt = '';
+      img.referrerPolicy = 'no-referrer';
+      img.onload = function () {
+        el.textContent = '';
+        if (data.avatar_source === 'organization') el.classList.add('is-logo');
+        el.appendChild(img);
+      };
+      img.src = data.avatar_url;
+    },
+    paintAll: function (data) {
+      document.querySelectorAll('[data-efs-avatar]').forEach(function (el) { window.EfsAvatar.paint(el, data); });
+    }
+  };
+
+  /* ── Menú del círculo de usuario ─────────────────────────────
+     Al pulsar el círculo se abre un menú pequeño: Mi cuenta, Mi entidad
+     y Cerrar sesión. Sin JS el enlace lleva a Mi cuenta. */
+  (function accountMenu() {
+    var acct = document.getElementById('topbar-cta-account');
+    if (!acct || document.getElementById('efs-account-menu')) return;
+    var wrap = acct.parentNode;
+    wrap.classList.add('efs-topbar__cta--menu');
+    acct.setAttribute('aria-haspopup', 'menu');
+    acct.setAttribute('aria-expanded', 'false');
+    acct.setAttribute('aria-controls', 'efs-account-menu');
+    var menu = document.createElement('div');
+    menu.id = 'efs-account-menu';
+    menu.className = 'efs-account-menu';
+    menu.setAttribute('role', 'menu');
+    menu.hidden = true;
+    menu.innerHTML =
+      '<p class="efs-account-menu__who" id="efs-account-menu-who"></p>' +
+      '<a role="menuitem" href="/#account-profile">Mi cuenta</a>' +
+      '<a role="menuitem" href="/#account-org">Mi entidad</a>' +
+      '<button type="button" role="menuitem" data-efs-logout>Cerrar sesión</button>';
+    wrap.appendChild(menu);
+    var items = function () { return menu.querySelectorAll('[role="menuitem"]'); };
+    function close(focusBack) {
+      if (menu.hidden) return;
+      menu.hidden = true;
+      acct.setAttribute('aria-expanded', 'false');
+      if (focusBack) acct.focus();
+    }
+    function open() {
+      var n = document.getElementById('topbar-user-name');
+      menu.querySelector('#efs-account-menu-who').textContent = n && n.textContent.trim() !== '…' ? n.textContent.trim() : 'Mi cuenta';
+      menu.hidden = false;
+      acct.setAttribute('aria-expanded', 'true');
+      items()[0].focus();
+    }
+    acct.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (menu.hidden) open(); else close(false);
+    });
+    menu.addEventListener('click', function (e) {
+      var t = e.target.closest('[role="menuitem"]');
+      if (!t) return;
+      close(false);
+      if (t.hasAttribute('data-efs-logout')) {
+        e.preventDefault();
+        // En la app, el cierre de siempre (borra el token y vuelve a la portada).
+        if (window.Auth && typeof window.Auth.logout === 'function') { window.Auth.logout(); return; }
+        fetch('/v1/auth/logout', { method: 'POST', credentials: 'include' })
+          .catch(function () {})
+          .then(function () { location.href = '/'; });
+      }
+    });
+    menu.addEventListener('keydown', function (e) {
+      var list = Array.prototype.slice.call(items());
+      var i = list.indexOf(document.activeElement);
+      if (e.key === 'Escape') { e.preventDefault(); close(true); }
+      else if (e.key === 'ArrowDown') { e.preventDefault(); list[(i + 1) % list.length].focus(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); list[(i - 1 + list.length) % list.length].focus(); }
+      else if (e.key === 'Tab') close(false);
+    });
+    document.addEventListener('click', function (e) {
+      if (!menu.hidden && !menu.contains(e.target) && !acct.contains(e.target)) close(false);
+    });
+  })();
+
   /* ── Menú plegable ───────────────────────────────────────────── */
   (function mobileToggle() {
     var btn = document.getElementById('efs-topbar-toggle');
@@ -74,6 +167,7 @@
           return;
         }
         if (name) name.textContent = data.first_name || 'Mi cuenta';
+        window.EfsAvatar.paintAll(data);
         back.style.display    = 'none';
         account.style.display = '';
         if (Array.isArray(data.areas)) markAreas(data.areas);
