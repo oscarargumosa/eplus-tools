@@ -284,9 +284,12 @@ async function updatePartner(partnerId, userId, updates) {
   const allowedFields = ['name', 'legal_name', 'city', 'country', 'organization_id'];
   const fieldsToUpdate = {};
 
+  // name y country son NOT NULL: si el autoguardado manda null (campo vaciado un
+  // momento), se guarda texto vacío en vez de fallar con 500 y perder el guardado.
+  const notNullText = ['name', 'country'];
   for (const [key, value] of Object.entries(updates)) {
     if (allowedFields.includes(key)) {
-      fieldsToUpdate[key] = value;
+      fieldsToUpdate[key] = (value == null && notNullText.includes(key)) ? '' : value;
     }
   }
 
