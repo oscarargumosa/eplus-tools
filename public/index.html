@@ -82,6 +82,7 @@ tailwind.config = {
       <ul class="efs-topbar__menu">
         <li><a href="/recursos/">Recursos</a></li>
         <li><a href="/academia">Academia</a></li>
+        <li><a href="/comunidad">Comunidad</a></li>
         <li><a href="/mision">Misión</a></li>
         <li class="is-current"><a href="#my-projects">Proyectos</a></li>
         <li><a href="#atlas-stats">Entidades</a></li>
@@ -455,6 +456,14 @@ tailwind.config = {
             class="hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
             <span class="material-symbols-outlined text-[20px]">school</span>
             <span class="flex-1 min-w-0 truncate">Academia</span>
+          </a>
+          <!-- Comunidad: denuncias, aportaciones ocultas y grupos (solo role admin) — js/admin-comunidad.js -->
+          <a href="#admin-community" id="admin-community-nav"
+            class="nav-link hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+            data-route="admin-community">
+            <span class="material-symbols-outlined text-[20px]">diversity_3</span>
+            <span class="flex-1 min-w-0 truncate">Comunidad</span>
+            <span id="admin-community-count" class="hidden min-w-[22px] h-[22px] px-1.5 rounded-full bg-secondary-fixed text-primary text-[11px] font-bold inline-flex items-center justify-center" aria-label="denuncias pendientes"></span>
           </a>
         </div>
       </div>
@@ -2020,6 +2029,9 @@ tailwind.config = {
       <!-- ══ PANEL ADMIN ══════════════════════════════════════════ -->
       <!-- ═══ USUARIOS Y ACCESOS (fase beta, solo admin) — js/admin.js AdminUsers ═══ -->
       <!-- ═══ Entidades reclamadas (solo admin) ═══ -->
+      <!-- ═══ Comunidad (solo admin): lo pinta js/admin-comunidad.js ═══ -->
+      <section id="panel-admin-community" class="panel"></section>
+
       <section id="panel-admin-org-claims" class="panel">
         <div class="max-w-6xl mx-auto py-8 px-4">
           <div class="mb-6">
@@ -2049,7 +2061,7 @@ tailwind.config = {
         <div class="max-w-6xl mx-auto py-8 px-4">
           <div class="mb-6">
             <h1 class="font-headline text-2xl font-extrabold text-primary tracking-tight">Usuarios y accesos</h1>
-            <p class="text-sm text-on-surface-variant mt-1">Fase beta cerrada: abre Proyectos o Academia a cada persona y responde a sus solicitudes. Al conceder un área le llega un correo.</p>
+            <p class="text-sm text-on-surface-variant mt-1">Fase beta cerrada: abre Proyectos, Academia o Comunidad a cada persona y responde a sus solicitudes. Al conceder un área le llega un correo.</p>
           </div>
           <div class="flex flex-wrap gap-3 items-end mb-4">
             <div class="flex-1 min-w-[200px]">
@@ -3341,6 +3353,7 @@ tailwind.config = {
 <script src="/js/intake.js?v=20260627a"></script>
 <script src="/js/admin.js?v=20260627w"></script>
 <script src="/js/admin-org-claims.js?v=20261016a"></script>
+<script src="/js/admin-comunidad.js?v=20261016a"></script>
 <script src="/js/engagement.js?v=20260627t"></script>
 <script src="/js/calculator.js?v=20260627a"></script>
 <script src="/js/organizations.js?v=20261016a"></script>

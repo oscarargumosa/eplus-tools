@@ -20,6 +20,10 @@ const AREAS = {
     label: 'Academia',
     path:  '/academia',
   },
+  comunidad: {
+    label: 'Comunidad',
+    path:  '/comunidad',
+  },
 };
 
 const AREA_KEYS = Object.keys(AREAS);

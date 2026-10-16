@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comunidad — EU Funding Studio</title>
+<meta name="robots" content="noindex">
+<!--
+  Comunidad de Studio (v1, oct-2026): personas y mapa, conversaciones por temas,
+  grupos, conexiones y mensajes privados. Inspirada en la Comunidad de Proyecto
+  Emociona, adaptada a entidades y profesionales de proyectos europeos.
+  Reglas y privacidad: docs/COMUNIDAD.md. API: /v1/community (área beta «comunidad»).
+  Identidad: docs/DESIGN.md. Diales: varianza 2 · movimiento 3 · densidad 6.
+  Rutas: /comunidad, /comunidad/personas/<id>, /comunidad/perfil, /comunidad/conversaciones[/<id>],
+  /comunidad/grupos[/<id>], /comunidad/actividad, /comunidad/mensajes/<conexión>.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="icon" href="/img/marca/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.css">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.js" defer></script>
+<link rel="stylesheet" href="/css/topbar.css">
+<link rel="stylesheet" href="/css/comunidad.css">
+<link rel="stylesheet" href="/css/beta.css">
+</head>
+<body class="efs-has-topbar">
+
+<header class="efs-topbar" role="banner" data-efs-session>
+  <div class="efs-topbar__inner">
+    <a class="efs-topbar__brand" href="/" aria-label="EU Funding Studio — Inicio">
+      <img class="efs-topbar__logo" src="/img/marca/logo-horizontal-blanco.svg" alt="" width="206" height="22">
+    </a>
+    <nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Primary">
+      <ul class="efs-topbar__menu">
+        <li><a href="/recursos/">Recursos</a></li>
+        <li><a href="/academia">Academia</a></li>
+        <li class="is-current"><a href="/comunidad">Comunidad</a></li>
+        <li><a href="/mision">Misión</a></li>
+        <li><a href="/#my-projects">Proyectos</a></li>
+        <li><a href="/#atlas-stats">Entidades</a></li>
+        <li><a href="/#convocatorias">Convocatorias</a></li>
+        <li><a href="/#movilidades">Movilidades</a></li>
+        <li><a href="/#eu-vision">EU Vision</a></li>
+      </ul>
+    </nav>
+    <div class="efs-topbar__cta">
+      <a id="topbar-cta-back" class="efs-topbar__login" href="/">Iniciar sesión</a>
+      <a id="topbar-cta-account" class="efs-topbar__account" href="/#account-profile" style="display:none;" title="Mi cuenta">
+        <span class="efs-avatar" data-efs-avatar aria-hidden="true"></span>
+        <span class="efs-sr">Mi cuenta · <span id="topbar-user-name">…</span></span>
+      </a>
+    </div>
+    <button type="button" class="efs-topbar__toggle" id="efs-topbar-toggle"
+            aria-label="Abrir menú" aria-controls="efs-topbar-nav" aria-expanded="false">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="cm-root" class="cm">
+  <div class="cm-wrap cm-main"><div class="cm-skel cm-skel--map"></div><div class="cm-skel"></div></div>
+</main>
+<div id="cm-live" class="cm-sr" role="status" aria-live="polite"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/topbar.js"></script>
+<script src="/js/beta-access.js"></script>
+<script src="/js/comunidad.js"></script>
+</body>
+</html>

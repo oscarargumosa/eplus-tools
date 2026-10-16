@@ -253,6 +253,8 @@ const App = (() => {
       document.getElementById('admin-users-nav')?.classList.remove('hidden');
       document.getElementById('admin-org-claims-nav')?.classList.remove('hidden');
       document.getElementById('admin-academia-nav')?.classList.remove('hidden');
+      document.getElementById('admin-community-nav')?.classList.remove('hidden');
+      if (typeof AdminCommunity !== 'undefined') AdminCommunity.refreshCount();
       if (typeof AdminOrgClaims !== 'undefined') AdminOrgClaims.refreshCount();
       if (typeof AdminUsers !== 'undefined') AdminUsers.refreshCount();
     }
@@ -406,7 +408,7 @@ const App = (() => {
     // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
     // Sin sesión no se navega por la app: a entrar.
     if (!currentUser) { openAuth('login'); return; }
-    if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')) {
+    if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims', 'admin-community'].includes(route) && currentUser.role !== 'admin')) {
       route = 'my-projects';
       if (pushHash) location.hash = route;
     }
@@ -511,6 +513,7 @@ const App = (() => {
       admin:            'Admin — Data E+',
       'admin-users':    'Usuarios y accesos',
       'admin-org-claims': 'Entidades reclamadas',
+      'admin-community': 'Comunidad',
       engagement:       'Engagement'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
@@ -531,6 +534,7 @@ const App = (() => {
       if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
       if (route === 'admin-users' && typeof AdminUsers !== 'undefined') AdminUsers.init();
       if (route === 'admin-org-claims' && typeof AdminOrgClaims !== 'undefined') AdminOrgClaims.init();
+      if (route === 'admin-community' && typeof AdminCommunity !== 'undefined') AdminCommunity.init();
       if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
       if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
       if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
