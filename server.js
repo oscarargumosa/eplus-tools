@@ -192,6 +192,8 @@ app.use('/v1/calculator',  proyectos, require('./node/src/modules/calculator/rou
 app.use('/v1/admin/access', require('./node/src/modules/access/admin.routes'));
 // Entidades reclamadas: revisar documentación y poner el sello «Verificada».
 app.use('/v1/admin/org-claims', require('./node/src/modules/organizations/admin.routes'));
+// Comunidad (equipo): grupos, denuncias y aportaciones ocultas. Con su propia auditoría.
+app.use('/v1/admin/community', require('./node/src/modules/community/admin.routes'));
 app.use('/v1/admin', require('./node/src/modules/admin/routes'));
 app.use('/v1/documents',   proyectos, require('./node/src/modules/documents/routes'));
 app.use('/v1/organizations', require('./node/src/modules/organizations/routes'));
@@ -220,6 +222,9 @@ app.use('/v1/academy',     require('./node/src/modules/academy/routes'));
 app.use('/v1/academia',    require('./node/src/modules/academia/routes'));
 app.get('/academia/certificado/:serial', require('./node/src/modules/academia/certificate-page'));
 app.get(['/academia', '/academia/*'], (req, res) => res.sendFile(path.join(__dirname, 'public', 'academia.html')));
+// Comunidad: área beta 'comunidad' en toda la API (docs/COMUNIDAD.md).
+app.use('/v1/community',   areaGate('comunidad'), require('./node/src/modules/community/routes'));
+app.get(['/comunidad', '/comunidad/*'], (req, res) => res.sendFile(path.join(__dirname, 'public', 'comunidad.html')));
 
 /* ── SPA fallback — serve index.html for all non-API routes ─── */
 app.get('*', (req, res) => {
