@@ -37,8 +37,9 @@ const VoiceInput = (() => {
         if (!available) document.querySelectorAll('.voice-btn').forEach(markOff);
         return available;
       } catch { return true; }
-      finally { checking = null; }
     })();
+    // Se suelta al terminar (no dentro: sin await, terminaría antes de asignarse)
+    checking.finally(() => { checking = null; });
     return checking;
   }
 
@@ -90,7 +91,14 @@ const VoiceInput = (() => {
     btn.addEventListener('click', () => toggle(textarea, btn));
     wrapper.appendChild(btn);
     if (available === false) markOff(btn);
-    else if (available === null) checkAvailable();
+    else if (available === null) {
+      checkAvailable();
+      // Los textareas de la página existen antes de iniciar sesión: se vuelve a
+      // preguntar al usarlos (ya con sesión).
+      const recheck = () => { if (available === null) checkAvailable(); };
+      textarea.addEventListener('focus', recheck);
+      btn.addEventListener('mouseenter', recheck);
+    }
   }
 
   /* ── Toggle recording ────────────────────────────────────────── */
@@ -228,6 +236,13 @@ const VoiceInput = (() => {
   /* ── Auto-attach to all textareas + watch for new ones ─────────── */
   function init() {
     document.querySelectorAll('textarea').forEach(attach);
+    // Al entrar, el token llega después de DOMContentLoaded: se pregunta en cuanto lo haya.
+    let tries = 0;
+    const poll = setInterval(() => {
+      const hasToken = typeof API !== 'undefined' && API.getToken();
+      if (available !== null || ++tries > 30) return clearInterval(poll);
+      if (hasToken) checkAvailable();
+    }, 2000);
 
     new MutationObserver((mutations) => {
       for (const m of mutations) {
