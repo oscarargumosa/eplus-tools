@@ -44,7 +44,8 @@
     /^\/academia\/courses\/[^/]+\/(enroll|certificate)$/,
     /\/(phase|test|test\/submit)$/,              // progreso de lecciones, no lo escribe la persona
     /(^|\/)(generate|generate-[\w-]+|improve[\w-]*|refine(\/[\w-]+)?|evaluate|ai-[\w-]+|chat|suggest[\w-]*|propose[\w-]*|diagnose|compile-v1|compress[\w-]*|preview[\w-]*|autolink|auto-[\w-]+|apply[\w-]*|regenerate|resync|run|rollback|restore|ors-lookup|lookup|search|parse[\w-]*|paste-proposal|upload[\w-]*|transcribe|import[\w-]*|seed-form-from-master|process-all|download|duplicate|handoff|consortium|smart-shortlist|graduate|seen|claim|dispute|refresh|from-intake)(\/|$)/,
-    /^\/admin\/access\/requests\//
+    /^\/admin\/access\/requests\//,
+    /^\/developer\/projects\/[^/]+\/instance$/      // abrir un proyecto en Escribir crea su formulario
   ];
   function shouldTrack(method, path, opts) {
     if (opts && opts.save === false) return false;
@@ -201,6 +202,12 @@
     dirty:  '<svg class="efs-save__ico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="5" fill="currentColor"/></svg>'
   };
 
+  // Iconos del botón: solo se ven en escritorio muy justo (save-status.css).
+  var BTN_ICONS = {
+    retry: '<svg class="efs-save__btnico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 20q-3.35 0-5.675-2.325T4 12t2.325-5.675T12 4q1.725 0 3.3.713T18 6.75V4h2v7h-7V9h4.2q-.8-1.4-2.187-2.2T12 6Q9.5 6 7.75 7.75T6 12t1.75 4.25T12 18q1.925 0 3.475-1.1T17.65 14h2.1q-.7 2.65-2.85 4.325T12 20"/></svg>',
+    save:  '<svg class="efs-save__btnico" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M21 7v12q0 .825-.587 1.413T19 21H5q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h12zm-9 11q1.25 0 2.125-.875T15 15t-.875-2.125T12 12t-2.125.875T9 15t.875 2.125T12 18m-6-8h9V6H6z"/></svg>'
+  };
+
   function hhmm(d) {
     try { return d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }); }
     catch (e) { return ''; }
@@ -244,31 +251,46 @@
     if (state === 'idle') { el.hidden = true; return; }
     el.hidden = false;
     var icon = el.querySelector('.efs-save__icon');
-    var label = '', short = '', title = '', action = '', btnText = '';
-    if (state === 'saving') { icon.innerHTML = ICONS.saving; label = 'Guardando…'; short = 'Guardando…'; }
+    // Tres largos de texto según el ancho (save-status.css): l (normal),
+    // m (escritorio con el menú justo) y s (móvil). Los lectores de pantalla
+    // leen siempre la frase completa (sr).
+    var l = '', m = '', sm = '', sr = '', title = '', action = '', btnText = '';
+    var t = lastSaved ? hhmm(lastSaved) : '';
+    if (state === 'saving') { icon.innerHTML = ICONS.saving; l = m = sm = 'Guardando…'; sr = 'Guardando los cambios…'; }
     else if (state === 'saved') {
       icon.innerHTML = ICONS.saved;
-      var t = hhmm(lastSaved);
-      label = 'Guardado' + (t ? ' · ' + t : ''); short = 'Guardado';
+      l = m = 'Guardado' + (t ? ' · ' + t : ''); sm = 'Guardado';
+      sr = 'Todos los cambios guardados' + (t ? ' a las ' + t : '');
       title = 'Todos los cambios están guardados' + (t ? ' (último guardado a las ' + t + ')' : '');
     }
-    else if (state === 'clean') { icon.innerHTML = ICONS.saved; label = 'Todo guardado'; short = 'Guardado'; title = 'No hay cambios pendientes de guardar'; }
+    else if (state === 'clean') {
+      icon.innerHTML = ICONS.saved; l = m = 'Todo guardado'; sm = 'Guardado';
+      sr = title = 'No hay cambios pendientes de guardar';
+    }
     else if (state === 'dirty') {
-      icon.innerHTML = ICONS.dirty; label = 'Cambios sin guardar'; short = 'Sin guardar';
+      icon.innerHTML = ICONS.dirty; l = 'Cambios sin guardar'; m = 'Sin guardar'; sm = '';
+      sr = 'Hay cambios sin guardar';
       var canSave = Array.from(dirty.values()).some(function (d) { return typeof d.save === 'function'; });
       if (canSave) { action = 'save'; btnText = 'Guardar'; }
+      title = 'Hay cambios sin guardar' + (canSave ? '. Pulsa Guardar.' : '');
     }
     else if (state === 'error') {
-      icon.innerHTML = ICONS.error; label = 'No se ha guardado'; short = 'No guardado';
+      icon.innerHTML = ICONS.error; l = 'No se ha guardado'; m = 'No guardado'; sm = '';
       var first = failed.values().next().value;
-      title = 'No se ha guardado' + (first && first.message ? ': ' + first.message : '') + '. Pulsa Reintentar.';
+      sr = title = 'No se ha guardado' + (first && first.message ? ': ' + first.message : '') + '. Pulsa Reintentar.';
       action = 'retry'; btnText = 'Reintentar';
     }
-    txt.innerHTML = '<span class="efs-save__long">' + label + '</span><span class="efs-save__short" aria-hidden="true">' + short + '</span>';
+    txt.innerHTML = '<span class="efs-save__l" aria-hidden="true"></span><span class="efs-save__m" aria-hidden="true"></span>' +
+      '<span class="efs-save__s" aria-hidden="true"></span><span class="efs-sr"></span>';
+    txt.children[0].textContent = l; txt.children[1].textContent = m;
+    txt.children[2].textContent = sm; txt.children[3].textContent = sr;
     el.title = title;
     btn.hidden = !action;
     btn.dataset.action = action;
-    btn.textContent = btnText;
+    btn.setAttribute('aria-label', action === 'retry' ? 'Reintentar guardar' : action === 'save' ? 'Guardar los cambios' : '');
+    btn.innerHTML = (action === 'retry' ? BTN_ICONS.retry : action === 'save' ? BTN_ICONS.save : '') +
+      '<span class="efs-save__btntxt"></span>';
+    btn.lastChild.textContent = btnText;
   }
 
   function update() {
