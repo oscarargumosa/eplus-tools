@@ -161,17 +161,50 @@
     }
   }
 
+  /* ── idioma de los cursos (banderas) ────────────────────────── */
+  // El catálogo se filtra por idioma del curso (academia_courses.lang). La
+  // elección se recuerda en este navegador; la primera vez, la del navegador.
+  const LANGS = {
+    es: { label: 'Español', flag: `<svg viewBox="0 0 30 20" width="24" height="16" aria-hidden="true"><rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/></svg>` },
+    en: { label: 'English', flag: `<svg viewBox="0 0 60 30" width="24" height="16" aria-hidden="true"><clipPath id="ac-uk-t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ac-uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>` },
+  };
+  const CATALOG_TXT = {
+    es: { lead: 'Cursos para entender Erasmus+ y diseñar proyectos con criterio, dentro de la misma plataforma en la que los escribes.',
+          courses: 'Cursos en español', empty: 'Todavía no hay cursos publicados en español.',
+          go: 'Ver el curso', cont: 'Continuar', switchTo: 'Ver los cursos en' },
+    en: { lead: 'Courses to understand Erasmus+ and design projects with judgement, inside the same platform where you write them.',
+          courses: 'Courses in English', empty: 'English courses are on their way. In the meantime you can browse the Spanish ones.',
+          go: 'View course', cont: 'Continue', switchTo: 'Show courses in' },
+  };
+  // Elección guardada; si no la hay, la del navegador, pero solo si ya hay
+  // cursos en ese idioma (no se abre la Academia en una lista vacía).
+  function getLang(counts) {
+    try { const v = localStorage.getItem('ac-lang'); if (LANGS[v]) return v; } catch { /* sin almacenamiento */ }
+    const nav = /^es\b/i.test(navigator.language || '') ? 'es' : 'en';
+    return counts[nav] ? nav : (Object.keys(LANGS).find(l => counts[l]) || 'es');
+  }
+  function setLang(l) { try { localStorage.setItem('ac-lang', l); } catch { /* sin almacenamiento */ } }
+  const flagOf = (l) => LANGS[l] || LANGS.es;
+
   /* ── catálogo ───────────────────────────────────────────────── */
   async function viewCatalog() {
     document.title = 'Academia — EU Funding Studio';
-    const courses = await API.get('/academia/courses');
+    const all = await API.get('/academia/courses');
+    const counts = Object.fromEntries(Object.keys(LANGS).map(l => [l, all.filter(c => (c.lang || 'es') === l).length]));
+    const lang = getLang(counts);
+    const t = CATALOG_TXT[lang];
+    document.documentElement.lang = lang;
+    const other = Object.keys(LANGS).find(l => l !== lang && counts[l]);
+    const courses = all.filter(c => (c.lang || 'es') === lang);
     const lead = courses[0];
     const card = (c) => {
       const pct = c.enrolled && c.lessons ? Math.round(100 * c.done / c.lessons) : 0;
+      const f = flagOf(c.lang || 'es');
       return `<a class="ac-course" href="/academia/${esc(c.slug)}" data-nav>
         ${c.cover_url ? `<img src="${esc(c.cover_url)}" alt="" loading="lazy" width="640" height="360">` : ''}
         <div class="ac-course__body">
-          <div>${c.level ? `<span class="ac-pill">${esc(c.level)}</span>` : ''} ${c.status === 'draft' ? '<span class="ac-pill ac-pill--draft">Borrador</span>' : ''}</div>
+          <div class="ac-course__tags"><span class="ac-flag" title="${esc(f.label)}">${f.flag}<span class="efs-sr">${esc(f.label)}</span></span>
+            ${c.level ? `<span class="ac-pill">${esc(c.level)}</span>` : ''} ${c.status === 'draft' ? '<span class="ac-pill ac-pill--draft">Borrador</span>' : ''}</div>
           <h3>${esc(c.title)}</h3>
           <p>${esc(c.subtitle || '')}</p>
           ${c.enrolled ? `<div class="ac-progress" aria-label="Progreso ${pct} %"><span style="width:${pct}%"></span></div>` : ''}
@@ -179,20 +212,29 @@
             <span>${c.certificate ? 'Certificado obtenido' : c.enrolled ? `${c.done}/${c.lessons}` : ''}</span></div>
         </div></a>`;
     };
+    const switcher = `<div class="ac-langs" role="group" aria-label="${esc(t.switchTo)}">
+      ${Object.entries(LANGS).map(([l, v]) => `<button type="button" class="ac-lang${l === lang ? ' is-on' : ''}" data-lang="${l}" aria-pressed="${l === lang}">
+        ${v.flag}<span>${v.label}</span>${counts[l] ? `<small>${counts[l]}</small>` : ''}</button>`).join('')}
+    </div>`;
     root.innerHTML = `<div class="ac-wrap">
       <section class="ac-hero">
         <div>
           <h1>Academia <em>EU Funding Studio</em><span class="ac-icon" aria-hidden="true"></span></h1>
-          <p>Cursos para entender Erasmus+ y diseñar proyectos con criterio, dentro de la misma plataforma en la que los escribes.</p>
-          ${lead ? `<div class="ac-hero__actions"><a class="ac-btn ac-btn--primary" href="/academia/${esc(lead.slug)}" data-nav>${lead.enrolled ? 'Continuar' : 'Ver el curso'}</a></div>` : ''}
+          <p>${esc(t.lead)}</p>
+          ${lead ? `<div class="ac-hero__actions"><a class="ac-btn ac-btn--primary" href="/academia/${esc(lead.slug)}" data-nav>${lead.enrolled ? t.cont : t.go}</a></div>` : ''}
         </div>
         ${lead?.cover_url ? `<img src="${esc(lead.cover_url)}" alt="" width="640" height="400">` : ''}
       </section>
       <section class="ac-section">
-        <h2>Cursos</h2>
+        <div class="ac-section__head"><h2>${esc(t.courses)}</h2>${switcher}</div>
         ${courses.length ? `<div class="ac-courses">${courses.map(card).join('')}</div>`
-          : '<div class="ac-empty">Todavía no hay cursos publicados.</div>'}
+          : `<div class="ac-empty"><p>${esc(t.empty)}</p>${other ? `<button type="button" class="ac-btn ac-btn--ghost ac-lang-go" data-lang="${other}">${flagOf(other).flag} ${esc(t.switchTo)} ${esc(flagOf(other).label)}</button>` : ''}</div>`}
       </section></div>`;
+    root.querySelectorAll('.ac-lang, .ac-lang-go').forEach(b => b.addEventListener('click', () => {
+      if (b.dataset.lang === lang) return;
+      setLang(b.dataset.lang);
+      viewCatalog();
+    }));
   }
 
   /* ── ficha del curso ────────────────────────────────────────── */
