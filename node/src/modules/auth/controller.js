@@ -203,8 +203,9 @@ const AuthController = {
         });
       }
       const user = await User.findOrCreateFromGoogle({
-        email: payload.email,
-        name:  payload.name || payload.email.split('@')[0]
+        email:   payload.email,
+        name:    payload.name || payload.email.split('@')[0],
+        picture: payload.picture || null
       });
 
       const accessToken  = signToken(user);
@@ -391,6 +392,8 @@ const AuthController = {
       const hash = await User.getPasswordHash(req.user.id);
       user.has_password = !!(hash && hash.length);
       await withAreas(user);
+      // Círculo de «Mi cuenta»: logo de su entidad → foto → iniciales.
+      Object.assign(user, await User.getAvatar(user.id, user.name));
       res.json({ ok: true, data: user });
     } catch (err) {
       console.error('[AUTH] Me error:', err.message);
@@ -481,10 +484,42 @@ const AuthController = {
       // Áreas beta: el menú de las páginas públicas marca «Beta» lo cerrado.
       let areas = [];
       try { areas = await getUserAreas(user.id, user.role); } catch { /* sin áreas: todo marcado */ }
-      return res.json({ ok: true, data: { logged_in: true, first_name: firstName, areas } });
+      const av = await User.getAvatar(user.id, user.name).catch(() => ({}));
+      return res.json({ ok: true, data: {
+        logged_in: true, first_name: firstName, areas,
+        avatar_url: av.avatar_url || null, avatar_source: av.avatar_source || 'initials',
+        initials: av.initials || null,
+      } });
     } catch (err) {
       console.error('[AUTH] Session status error:', err.message);
       return res.json({ ok: true, data: { logged_in: false } });
+    }
+  },
+
+  /* ── POST/DELETE /v1/auth/me/avatar — foto de perfil ─────────── */
+  async uploadAvatar(req, res) {
+    try {
+      if (!req.file) return res.status(400).json({ ok: false, error: { code: 'NO_FILE', message: 'No file uploaded' } });
+      const prev = await User.getAvatarUrl(req.user.id);
+      await User.setAvatarUrl(req.user.id, '/uploads/avatars/' + req.file.filename);
+      User.removeAvatarFile(prev);
+      const user = await User.findById(req.user.id);
+      res.json({ ok: true, data: await User.getAvatar(req.user.id, user && user.name) });
+    } catch (err) {
+      console.error('[AUTH] Avatar upload error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo guardar la foto' } });
+    }
+  },
+
+  async deleteAvatar(req, res) {
+    try {
+      const prev = await User.getAvatarUrl(req.user.id);
+      await User.setAvatarUrl(req.user.id, null);
+      User.removeAvatarFile(prev);
+      const user = await User.findById(req.user.id);
+      res.json({ ok: true, data: await User.getAvatar(req.user.id, user && user.name) });
+    } catch (err) {
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo quitar la foto' } });
     }
   },
 

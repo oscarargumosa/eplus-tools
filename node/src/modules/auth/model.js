@@ -33,9 +33,19 @@ const User = {
     return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', email_verified: 0 };
   },
 
-  async findOrCreateFromGoogle({ email, name }) {
+  async findOrCreateFromGoogle({ email, name, picture }) {
     let user = await User.findByEmail(email);
+    // Foto de Google solo si es https de googleusercontent (nada de URLs
+    // arbitrarias en el menú) y solo si la persona no tiene ya una.
+    picture = User.safeGooglePicture(picture);
+    const savePicture = async (id) => {
+      if (!picture) return;
+      try {
+        await db.query('UPDATE users SET avatar_url = ? WHERE id = ? AND (avatar_url IS NULL OR avatar_url = \'\')', [picture, id]);
+      } catch (e) { /* BD sin migrar: sin foto */ }
+    };
     if (user) {
+      await savePicture(user.id);
       // If they already exist via password but never verified, Google login auto-verifies them.
       if (!user.email_verified) {
         await db.query('UPDATE users SET email_verified = 1 WHERE id = ?', [user.id]);
@@ -49,6 +59,7 @@ const User = {
       "INSERT INTO users (id, email, password_hash, name, email_verified, privacy_accepted_at) VALUES (?, ?, '', ?, 1, NOW())",
       [id, email.toLowerCase().trim(), name.trim()]
     );
+    await savePicture(id);
     return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', created: true };
   },
 
@@ -60,6 +71,66 @@ const User = {
 
   async updatePassword(userId, passwordHash) {
     await db.query('UPDATE users SET password_hash = ? WHERE id = ?', [passwordHash, userId]);
+  },
+
+  /* ── Foto de perfil ───────────────────────────────────────────
+   * El círculo de «Mi cuenta» muestra, por orden de preferencia:
+   * logo de su entidad → foto del usuario → iniciales (nombre y apellido).
+   * Tolerante: si falta la columna (BD sin migrar) devuelve iniciales. */
+  async getAvatar(userId, name = '') {
+    const out = { avatar_url: null, avatar_source: 'initials', user_avatar_url: null, initials: User.initials(name) };
+    try {
+      const [orgs] = await db.query(
+        `SELECT o.logo_url FROM user_organizations uo
+           JOIN organizations o ON o.id = uo.organization_id
+          WHERE uo.user_id = ? AND o.logo_url IS NOT NULL AND o.logo_url <> ''
+          ORDER BY (o.claimed_by_user_id = uo.user_id) DESC, uo.created_at ASC LIMIT 1`,
+        [userId]
+      );
+      const [[u]] = await db.query('SELECT avatar_url FROM users WHERE id = ? LIMIT 1', [userId]);
+      out.user_avatar_url = (u && u.avatar_url) || null;
+      if (orgs[0]) { out.avatar_url = orgs[0].logo_url; out.avatar_source = 'organization'; }
+      else if (out.user_avatar_url) { out.avatar_url = out.user_avatar_url; out.avatar_source = 'user'; }
+    } catch (e) {
+      if (!/Unknown column|doesn't exist/i.test(e.message)) throw e;
+    }
+    return out;
+  },
+
+  /* URL de foto de Google aceptable: https y host *.googleusercontent.com. */
+  safeGooglePicture(url) {
+    if (!url || typeof url !== 'string' || url.length > 500) return null;
+    try {
+      const u = new URL(url);
+      if (u.protocol !== 'https:') return null;
+      if (!/(^|\.)googleusercontent\.com$/i.test(u.hostname)) return null;
+      return u.toString();
+    } catch { return null; }
+  },
+
+  /* «Óscar Argumosa Pérez» → «OA». Un solo nombre → sus dos primeras letras. */
+  initials(name) {
+    const parts = String(name || '').trim().split(/\s+/).filter(Boolean);
+    if (!parts.length) return '?';
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[1][0]).toUpperCase();
+  },
+
+  async setAvatarUrl(userId, url) {
+    await db.query('UPDATE users SET avatar_url = ? WHERE id = ?', [url, userId]);
+  },
+
+  async getAvatarUrl(userId) {
+    const [[u]] = await db.query('SELECT avatar_url FROM users WHERE id = ? LIMIT 1', [userId]);
+    return (u && u.avatar_url) || null;
+  },
+
+  /* Borra del disco una foto subida (no las de Google). Nunca lanza. */
+  removeAvatarFile(url) {
+    const m = /^\/uploads\/avatars\/(avatar-[A-Za-z0-9-]+\.(?:jpg|png|webp|gif))$/.exec(url || '');
+    if (!m) return;
+    const file = require('path').join(__dirname, '../../../../public/uploads/avatars', m[1]);
+    require('fs').unlink(file, () => {});
   },
 
   /* Full name update (self-service profile). Returns the fresh safe user. */

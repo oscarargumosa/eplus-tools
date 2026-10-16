@@ -6,6 +6,27 @@ const validate = require('../../middleware/validate');
 
 const router = Router();
 
+/* Foto de perfil: pública como los logos (se ve en el menú).
+   Tipo comprobado por bytes y extensión puesta por el servidor
+   (imageUploadGuard); sin SVG. */
+const path   = require('path');
+const fs     = require('fs');
+const multer = require('multer');
+const { imageUploadGuard } = require('../../utils/image-upload');
+const AVATAR_DIR = path.join(__dirname, '../../../../public/uploads/avatars');
+const uploadAvatar = multer({
+  storage: multer.diskStorage({
+    destination: (req, file, cb) => fs.mkdir(AVATAR_DIR, { recursive: true }, (e) => cb(e || null, AVATAR_DIR)),
+    // Sin extensión del cliente: imageUploadGuard pone la del tipo real
+    filename: (req, file, cb) => cb(null, 'avatar-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8)),
+  }),
+  limits: { fileSize: 2 * 1024 * 1024 },
+  fileFilter: (req, file, cb) => {
+    if (/^image\/(jpeg|png|gif|webp)$/.test(file.mimetype)) cb(null, true);
+    else cb(Object.assign(new Error('Sube una imagen JPG, PNG, WebP o GIF'), { status: 400 }));
+  }
+});
+
 /* ── Rate limiter for auth endpoints (5 req/min per IP) ──────── */
 const authLimiter = rateLimit({
   windowMs: 60 * 1000,
@@ -43,6 +64,8 @@ router.post('/reset-password',        authLimiter, controller.resetPassword);
 router.post('/refresh',  controller.refresh);
 router.get('/me',        requireAuth, controller.me);
 router.patch('/me',      requireAuth, validate({ name: 'required' }), controller.updateMe);
+router.post  ('/me/avatar', requireAuth, uploadAvatar.single('avatar'), imageUploadGuard(), controller.uploadAvatar);
+router.delete('/me/avatar', requireAuth, controller.deleteAvatar);
 router.post('/change-password', authLimiter, requireAuth, controller.changePassword);
 router.get('/session-status', controller.sessionStatus);
 router.post('/logout',   controller.logout);
