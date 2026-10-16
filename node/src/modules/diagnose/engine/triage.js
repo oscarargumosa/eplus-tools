@@ -34,11 +34,14 @@ async function loadCriteriaForProgramme(programmeUuid) {
       `SELECT title, max_score FROM eval_sections WHERE program_id = ? ORDER BY sort_order`,
       [programmeUuid]
     );
-    if (rows.length > 0) {
-      return rows.map(r => ({
+    // Solo las secciones que puntúan (Work plan, Other… van a 0): antes se les
+    // daba 25 a cada una y el total salía sobre 150 o 200 en vez de sobre 100.
+    const scored = rows.filter(r => Number(r.max_score) > 0);
+    if (scored.length > 0) {
+      return scored.map(r => ({
         id: normalizeCriterionId(r.title),
         label: r.title,
-        max: Number(r.max_score) || 25,
+        max: Number(r.max_score),
       }));
     }
   } catch (e) {
