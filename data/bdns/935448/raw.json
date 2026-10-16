@@ -1,0 +1,84 @@
+{
+  "id": 1137009,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALGUEÑA",
+    "nivel3": "AYUNTAMIENTO DE ALGUEÑA"
+  },
+  "sedeElectronica": "https://alguenya.sedelectronica.es/info.0",
+  "codigoBDNS": "935448",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 44902,
+  "mrr": false,
+  "descripcion": "CAMPAÑA DE FOMENTO DEL CONSUMO: BONO-CONSUMO ALGUEÑA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "CAMPAÑA DE FOMENTO DEL CONSUMO: BONO-CONSUMO ALGUEÑA 2026 (Convocatoria y Bases aprobadas mediante Decreto de Alcaldía nº 2026-0489, de fecha: 14/10/2026)",
+  "urlBasesReguladoras": "https://alguenya.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-02",
+  "fechaFinSolicitud": "2026-11-30",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1537252,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261014_Bases CAMPAÑA BONO CONSUMO ALGUEÑA 2026.pdf",
+      "long": 369691,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537256,
+      "descripcion": "Anexo 2",
+      "nombreFic": "ANEXO II_mantenimiento terceros AYTO_ALGUEÑA.pdf",
+      "long": 143616,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537255,
+      "descripcion": "Anexo 1",
+      "nombreFic": "ANEXO I_Solicitud Bono Consumo 2026.docx",
+      "long": 75162,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

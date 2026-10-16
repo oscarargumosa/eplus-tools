@@ -1,0 +1,21 @@
+## Expected Outcome
+
+Humanitarian NGOs that meet the applicable requirements are awarded an EU Humanitarian Partnership certificate, enabling them to become DG ECHO partners and apply for funding for action grants under the Humanitarian Aid Programme.
+
+## Objective
+
+The certificate aims to promote the concept of a long-lasting quality partnership, (based on professionalism, diversity, capacity to respond to humanitarian needs in line with humanitarian principles, adherence to agreed rules and standards) and thereby promote the quality, efficiency and effectiveness of aid, to ensure that EU funded humanitarian aid actions are implemented in the most appropriate, rapid, efficient and effective manner, and achieve the intended results.
+
+## Scope
+
+The EU Humanitarian Partnership certificate is an EU quality certificate for humanitarian non-governmental organisations (NGOs).
+
+The certificate is a prerequisite for NGOs to apply for funding for action grants under the Humanitarian Aid Programme.
+
+The certification procedure consists in validating the status of an NGO as EU humanitarian partner, checking that it is a humanitarian organisation, checking administrative and financial management, operational capacity, financial capacity and certifying compliance with the partnership principles (transparency and accountability, humanitarian principles and ethical standards, compliance and internal control). It will be based on an independent ex ante assessment by an external independent auditor, which is to be provided as part of the application.
+
+The certificates will be valid for HIPs launched until the end of 2034 (and up until the end of projects funded under that period).
+
+Partners will be subject to regular monitoring by DG ECHO. In case of significant changes regarding elements that were part of the assessment (including the relation with implementing partners), the partner must inform DG ECHO.
+
+The certificates may be suspended or withdrawn by DG ECHO, in case a partner no longer complies with the conditions for the certificate or if the partner is suspected to be in material breach of one of the commitments undertaken under the partnership.

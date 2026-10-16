@@ -1,0 +1,64 @@
+{
+  "id": 1137131,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "YECLA",
+    "nivel3": "AYUNTAMIENTO DE YECLA"
+  },
+  "sedeElectronica": "yecla.sedipualba.es",
+  "codigoBDNS": "935570",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES, EN EL ÁMBITO DE LOS PROGRAMAS DE ASOCIACIONISMO Y PARTICIPACIÓN, A LAS ASOCIACIONES Y ENTIDADES JUVENILES SIN ÁNIMO DE LUCRO DE YECLA, EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases para la convocatoria de subvenciones a conceder por el Excmo. Ayuntamiento de Yecla en el ámbito de los programas de asociacionismo y participación a las asociaciones y entidades juveniles sin ánimo de lucro que operan en el municipio de Yecla",
+  "urlBasesReguladoras": "https://yecla.sedipualba.es/firma/documento.aspx?csv=H7AACR32NMUEUXZ3FLFU&modo=abrir",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "20 dias a contar desde el siguiente a publicación del anuncio convocatoria en BORM ",
+  "textFin": "Transcurridos 20 días desde la publicación de la convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1537646,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIJUNTA 13-10-26_ 9º. CONVOCATORIA SUBVENCIONES JUVENTUD... - SEFYCU 4489401.pdf",
+      "long": 435034,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

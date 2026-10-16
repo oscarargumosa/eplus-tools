@@ -1,0 +1,68 @@
+{
+  "id": 1137049,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALMÀSSERA",
+    "nivel3": "AYUNTAMIENTO DE ALMÀSSERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935488",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 26000,
+  "mrr": false,
+  "descripcion": "Resolución 1206/2026,de 15 de octubre sobre convocatoria y aprobación de bases para la concesión de ayudas para la obtención de\nla tarjeta de transporte en metro de FGV destinadas a mayores de 65 años y personas con discapacidad igual o superior al 64%",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES QUE REGIRÁN LA CONCESIÓN DE AYUDAS PARA LA OBTENCIÓN DE LA TARJETA DE TRANSPORTE EN METRO DE FERROCARRILS DE LA GENERALITAT VALENCIANA DESTINADAS PERSONAS MAYORES DE 65 AÑOS Y PERSONAS CON DISCAPACIDAD RECONOCIDA IGUAL O SUPERIOR AL 64%",
+  "urlBasesReguladoras": "https://www.almassera.es/transparencia/bonometro-2026-2027",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP de Valencia",
+  "textFin": "15 días hábiles desde el día siguiente de la publicación",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1537381,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261014_Resolución_DECRETO 2026-1206 [Resolución PR_2026_1404 - Actuación genérica con fiscalización].pdf",
+      "long": 912829,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

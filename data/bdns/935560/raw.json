@@ -1,0 +1,111 @@
+{
+  "id": 1137121,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "nivel3": "DIRECCIÓN GENERAL DE ECONOMÍA CIRCULAR, TRANSICIÓN ENERGÉTICA Y CAMBIO CLIMÁTICO"
+  },
+  "sedeElectronica": "https://www.caib.es/sites/subvencions_residus/ca/convo_economia_circular_entitats_deconomia_social/",
+  "codigoBDNS": "935560",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 840000,
+  "mrr": false,
+  "descripcion": "Bases reguladoras para subvenciones destinadas a financiar inversiones en energía, transición energética, cambio climático, prevención y gestión de residuos y economía circular",
+  "descripcionLeng": "Bases reguladores per a subvencions destinades a finançar inversions en energia, transició energètica, canvi climàtic, prevenció i gestió de residus i economia circular",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Investigación y desarrollo",
+      "codigo": "72"
+    },
+    {
+      "descripcion": "Otras industrias manufactureras",
+      "codigo": "32"
+    },
+    {
+      "descripcion": "Valorización de residuos",
+      "codigo": "38.2"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES53 - ILLES BALEARS"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Ordre 31/2025, d'11 de novembre, del Conseller d'Empresa, Autònoms i Energia per la qual s'estableixen les bases reguladores",
+  "urlBasesReguladoras": "https://www.caib.es/eboibfront/eli/es-ib/o/2025/11/11/31/dof/spa/html",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": "2026-06-26",
+  "fechaFinSolicitud": null,
+  "textInicio": "Termini de presentació: dos mesos des de l'endemà de la publicació de la convocatòria al BOIB.",
+  "textFin": "26.08.2026",
+  "ayudaEstado": "SA.124519",
+  "urlAyudaEstado": "https://competition-cases.ec.europa.eu/cases/SA.124519",
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 651/2014, DE 17 DE JUNIO, de exención de notificación",
+    "orden": null
+  },
+  "objetivos": [
+    {
+      "descripcion": "ART. 25 AYUDAS A PROYECTOS DE INVESTIGACIÓN Y DESARROLLO."
+    },
+    {
+      "descripcion": "ART. 36 AYUDAS A LA INVERSIÓN PARA LA PROTECCIÓN DEL MEDIO AMBIENTE, INCLUIDA LA DESCARBONIZACIÓN."
+    },
+    {
+      "descripcion": "ART. 47 AYUDAS A LA INVERSIÓN PARA LA EFICIENCIA EN EL USO DE LOS RECURSOS Y PARA APOYAR LA TRANSICIÓN HACIA UNA ECONOMÍA CIRCULAR."
+    }
+  ],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1537600,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Document BDNS (castellà).PDF",
+      "long": 361275,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537602,
+      "descripcion": "Document adicional BDNS.PDF",
+      "nombreFic": "Document adicional BDNS.PDF",
+      "long": 612148,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537601,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Document BDNS (català).PDF",
+      "long": 356999,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

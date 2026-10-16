@@ -10,7 +10,7 @@
   "status": "open",
   "statusCode": "31094502",
   "opening": "2026-07-07",
-  "deadline": "2026-10-27",
+  "deadline": "2026-12-01",
   "deadlineModel": "single-stage",
   "actionType": "DIGITAL JU Simple Grants",
   "actionCode": "DIGITAL-JU-SIMPLE",
@@ -155,5 +155,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-15T04:04:57.008Z"
+  "fetchedAt": "2026-10-16T04:03:51.441Z"
 }

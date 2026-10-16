@@ -1,0 +1,136 @@
+{
+  "source": "bdns",
+  "source_id": "935375",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / INSTITUTO DE FOMENTO DE LA REGIÓN DE MURCIA (INFO)",
+  "nuts_codes": [
+    "ES620"
+  ],
+  "nuts_primary": "ES620",
+  "title": "Resolución de 9 de octubre de 2026, del Director del Instituto de Fomento de la Región de Murcia, por delegación, de convocatoria de ayudas a la participación en ferias, eventos y misiones comerciales. Feria Gulfood Dubai 2027.",
+  "title_lang": "es",
+  "summary": "Otras actuaciones de carácter económico",
+  "status": "open",
+  "publication_date": "2026-10-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 147000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "74.1",
+      "descripcion": "Actividades de diseño especializado"
+    },
+    {
+      "codigo": "82.4",
+      "descripcion": "Actividades de intermediación para servicios de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "46",
+      "descripcion": "Comercio al por mayor"
+    },
+    {
+      "codigo": "47.2",
+      "descripcion": "Comercio al por menor de productos alimenticios, bebidas y tabaco"
+    },
+    {
+      "codigo": "47.1",
+      "descripcion": "Comercio al por menor no especializado"
+    },
+    {
+      "codigo": "11",
+      "descripcion": "Fabricación de bebidas"
+    },
+    {
+      "codigo": "20.6",
+      "descripcion": "Fabricación de fibras artificiales y sintéticas"
+    },
+    {
+      "codigo": "28.1",
+      "descripcion": "Fabricación de maquinaria de uso general"
+    },
+    {
+      "codigo": "28.2",
+      "descripcion": "Fabricación de otra maquinaria de uso general"
+    },
+    {
+      "codigo": "27.9",
+      "descripcion": "Fabricación de otro material y equipo eléctrico"
+    },
+    {
+      "codigo": "10",
+      "descripcion": "Industria alimentaria"
+    },
+    {
+      "codigo": "32.9",
+      "descripcion": "Industrias manufactureras n.c.o.p."
+    },
+    {
+      "codigo": "82.3",
+      "descripcion": "Organización de convenciones y ferias de muestras"
+    },
+    {
+      "codigo": "82.9",
+      "descripcion": "Otras actividades de apoyo a las empresas n.c.o.p."
+    },
+    {
+      "codigo": "73.1",
+      "descripcion": "Publicidad"
+    },
+    {
+      "codigo": "33",
+      "descripcion": "Reparación, mantenimiento e instalación de maquinaria y equipos"
+    }
+  ],
+  "apply_url": "https://sede.institutofomentomurcia.es/infodirecto",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935375",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Corrección de errores.",
+      "url": null
+    },
+    {
+      "label": "BB.RR.",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.borm.es/services/anuncio/ano/2024/numero/2148/pdf?id=826601",
+  "text_inicio": "Desde el día siguiente a la publicación en el BORM.",
+  "text_fin": "Hasta 8 días hábiles a partir del siguiente a la publicación de extracto de esta convocatoria.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    }
+  ],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-16T04:07:13.043Z"
+}

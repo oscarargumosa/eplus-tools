@@ -1,0 +1,80 @@
+{
+  "id": 1137016,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ROZAS DE VALDEARROYO, LAS",
+    "nivel3": "AYUNTAMIENTO DE ROZAS DE VALDEARROYO, LAS"
+  },
+  "sedeElectronica": "https://rozasvaldearroyo.sedelectronica.es",
+  "codigoBDNS": "935455",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1933.07,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA LA ADQUISICIÓN DE MATERIALES CURRICULARES, AÑO ACADÉMICO 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES13 - CANTABRIA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Ordenanza por la que se regula la Concesión de Ayudas a los Vecinos de este Municipio para la Adquisición de Materiales Curriculares",
+  "urlBasesReguladoras": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=316912",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de la publicación del extracto en el Boletín Oficial de Cantabria",
+  "textFin": "Diez días hábiles a contar desde el día siguiente al de la publicación del extracto en el Boletín Of",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1537287,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261015_BDNS_Convocatoria_2026-2027_texto_(paginas_4-8_del_Decreto_2026-0057).pdf",
+      "long": 113420,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537292,
+      "descripcion": "Anexo 2 Declaración Responsable",
+      "nombreFic": "20261015_BDNS_Anexo_II_Declaracion_responsable_(pagina_10_del_Decreto_2026-0057).pdf",
+      "long": 94293,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1537291,
+      "descripcion": "Anexo 1 Modelo de Presentación",
+      "nombreFic": "20261015_BDNS_Anexo_I_Solicitud_(pagina_9_del_Decreto_2026-0057).pdf",
+      "long": 94651,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

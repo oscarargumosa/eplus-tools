@@ -1,0 +1,72 @@
+{
+  "id": 1136894,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TERRASSA",
+    "nivel3": "AYUNTAMIENTO DE TERRASSA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935333",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 35041.61,
+  "mrr": false,
+  "descripcion": "Decreto número 28638/2026, del 14 de octubre de 2026, de la Tenencia de Alcaldía de Transición Ecológica, por la que se abre una segunda convocatoria para la concesión de subvenciones, en régimen de concurrencia pública competitiva para la realización d",
+  "descripcionLeng": " Decret número 28638/2026, del 14 d’octubre, de la Tinència d’Alcaldia de Transició Ecològica, pel qual s’obre una segona convocatòria per a la concessió de subvencions, en règim de concurrència pública competitiva, per a la realització de projectes i a",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Ordenança general de subvencions que ha de regir l'atorgament de subvencions per a la realització de projectes, activitats i serveis",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3438822/aprovacio-definitiva-de-l-ordenanca-general-de-subvencions-que-ha-de-regir-l-atorgament-de-subvencions-per-a-la-realitzacio-de-projectes-activitats-i-serveis-ajuntament-de-terrassa",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-27",
+  "textInicio": "A partir del día siguiente de la publicación de esta convocatoria en el BOPB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536960,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BDNS_Convocatoria50cast.pdf",
+      "long": 90196,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    },
+    {
+      "id": 1536959,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BDNS_Convocatoria50cast.pdf",
+      "long": 90196,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-15"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

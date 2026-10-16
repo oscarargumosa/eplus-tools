@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "935550",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALDERRUBIO / AYUNTAMIENTO DE VALDERRUBIO",
+  "nuts_codes": [
+    "ES614"
+  ],
+  "nuts_primary": "ES614",
+  "title": "BASES REGULADORAS Y CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A ASOCIACIONES EN MATERIA DE ACCIÓN SOCIAL, CULTURA, DEPORTES Y FOMENTO ECONÓMICO EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://ayuntamientodevalderrubio.sedelectronica.es/catalog/t/5161fa8d-970e-4b48-a506-b2ac34ceafe5",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935550",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://ayuntamientodevalderrubio.sedelectronica.es/preview-document/5b3f7acb-02fd-4d37-9db0-e475ba9b7840/",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP DE GRANADA",
+  "text_fin": "10 DÍAS NATURALES DESDE LA PUBLICACIÓN DE LA CONVOCATORIA EN EL BOP DE GRANADA",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-16T04:07:13.081Z"
+}

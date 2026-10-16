@@ -1,0 +1,72 @@
+{
+  "source": "bdns",
+  "source_id": "935394",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PONTECESURES / AYUNTAMIENTO DE PONTECESURES",
+  "nuts_codes": [
+    "ES114"
+  ],
+  "nuts_primary": "ES114",
+  "title": "BECAS DE APOYO\nA LA ESCOLARIZACIÓN, CURSO 2026/2027",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 0,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://pontecesures.sedelectronica.gal/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935394",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://pontecesures.sedelectronica.gal/preview-document/c2182699-d7c3-4298-a617-72e84f75d186/",
+  "text_inicio": "15 días hábiles a partir del siguiente a la publicación del extracto de esta convocatoria",
+  "text_fin": " a los 15 días hábiles a partir del siguiente a la publicación del extracto de esta convocatoria",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEDER - FONDO EUROPEO DE DESARROLLO REGIONAL"
+    },
+    {
+      "descripcion": "FSE - FONDO SOCIAL EUROPEO "
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-16T04:07:13.046Z"
+}

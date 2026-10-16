@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "935387",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / CIUDAD AUTÓNOMA DE CEUTA / PROCESA SOCIEDAD DE DESARROLLO DE CEUTA",
+  "nuts_codes": [
+    "ES63"
+  ],
+  "nuts_primary": "ES63",
+  "title": "Ayudas directas para la bonificación parcial del transporte aéreo para no residentes en Ceuta 7ª convocatoria",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-15",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3800000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    },
+    {
+      "codigo": "H",
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935387",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "04-PROPUESTA-CG-7ª-PRORROGA-BNR-JUN-25",
+      "url": null
+    },
+    {
+      "label": "05 CONVOCATORIA Y BASES 7ª PRORROGA BNR JUN 25",
+      "url": null
+    },
+    {
+      "label": "06 ANEXO Nº 1 BASES 7ª PRORROGA BNR JUN 25",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.ceuta.es/ceuta/bocce",
+  "text_inicio": "DIA SIGUIENTE A LA PUBLICACION BOCCE",
+  "text_fin": "FIN DE PRESUPUESTO",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-16T04:07:13.044Z"
+}
