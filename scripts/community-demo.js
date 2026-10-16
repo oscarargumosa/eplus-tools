@@ -132,6 +132,7 @@ async function seed(c) {
     const p4 = await post('eleni', 'presentaciones', 'DEMO · Hola desde Tesalónica',
       'Soy youth worker en una ONG local. Hacemos intercambios juveniles y nos gustaría entrar en un KA2 como socios. (DEMO)', null, null, null, 900);
     await heart(p4, 'marco', 'ines');
+    await c.query('INSERT INTO community_reports (post_id, reporter_id, reason) VALUES (?,?,?)', [p4, ids.mikko, 'Denuncia de prueba para ver la sección del equipo (DEMO).']);
     const p5 = await post('ines', 'convocatorias', 'DEMO · Cuerpo Europeo de Solidaridad: plazo de octubre',
       '¿Alguien más presenta proyecto de voluntariado en la ronda de octubre? Podemos revisar juntos los formularios. (DEMO)', null, null, null, 400);
     await heart(p5, 'eleni');

@@ -32,10 +32,10 @@
 .efs-topbar__toggle { display: none; background: none; border: 0; color: #fff; cursor: pointer;
   padding: .25rem; line-height: 0; }
 .efs-topbar__toggle .material-symbols-outlined { font-size: 26px; }
-/* Ocho entradas de menú no caben por debajo de ~1024px: antes de que se corten,
-   la navegación pasa a plegable. Estaba en 720px y entre 721 y 1000px el menú
-   se quedaba cortado por la derecha (Movilidades y EU Vision desaparecían). */
-@media (max-width: 1024px) {
+/* Nueve entradas de menú (con Comunidad, oct-2026) no caben por debajo de ~1180px:
+   antes de que se corten, la navegación pasa a plegable. Estaba en 1024px con ocho;
+   antes, en 720px, y entre 721 y 1000px el menú se quedaba cortado por la derecha. */
+@media (max-width: 1180px) {
   .efs-topbar__inner { gap: .5rem; padding: 0 .75rem; }
   .efs-topbar__logo { height: 19px; }
   .efs-topbar__toggle { display: inline-flex; align-items: center; flex-shrink: 0; }
@@ -78,7 +78,7 @@
   font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; line-height: 1.6;
   white-space: nowrap; pointer-events: none; }
 .efs-topbar__beta svg { width: 9px; height: 9px; }
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .efs-topbar__beta { position: static; margin-left: 6px; vertical-align: 1px; font-size: 10px; padding: 1px 6px 1px 5px; }
   .efs-topbar__beta svg { width: 10px; height: 10px; }
 }

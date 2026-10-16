@@ -117,10 +117,10 @@
   })();
 
   /* ── Fase beta: «Beta» y candado en las áreas que la persona no tiene ──
-     Proyectos y Academia (lista en node/src/utils/areas.js). La app y la
+     Proyectos, Academia y Comunidad (lista en node/src/utils/areas.js). La app y la
      academia llaman a EfsTopbar.markAreas(areas) con el usuario cargado; las
      páginas públicas lo hacen con /auth/session-status (más abajo). */
-  var AREA_LINKS = { proyectos: /#my-projects$/, academia: /^\/academia\/?$/ };
+  var AREA_LINKS = { proyectos: /#my-projects$/, academia: /^\/academia\/?$/, comunidad: /^\/comunidad\/?$/ };
   var LOCK_SVG = '<svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>';
   function markAreas(areas) {
     var have = areas || [];

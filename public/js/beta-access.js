@@ -1,11 +1,11 @@
 /* ═══════════════════════════════════════════════════════════════
    Fase beta cerrada — áreas por persona (oct-2026)
    ─────────────────────────────────────────────────────────────
-   Proyectos y Academia solo para quien el admin autoriza (servidor:
+   Proyectos, Academia y Comunidad solo para quien el admin autoriza (servidor:
    node/src/utils/areas.js y requireArea → 403 AREA_REQUIRED).
    Aquí: la pantalla/modal «Fase beta» con «Solicitar acceso», las
    etiquetas «Beta» con candado en el menú, y el aviso «Ya tienes
-   acceso a …» (una sola vez). Lo usan index.html y academia.html.
+   acceso a …» (una sola vez). Lo usan index.html, academia.html y comunidad.html.
    ═══════════════════════════════════════════════════════════════ */
 
 const BetaAccess = (() => {
@@ -20,6 +20,11 @@ const BetaAccess = (() => {
       label: 'Academia',
       what:  'Cursos, lecciones, tests y certificados.',
       home:  '/academia',
+    },
+    comunidad: {
+      label: 'Comunidad',
+      what:  'Personas y entidades que preparan proyectos europeos: mapa, búsqueda de socios, conversaciones, grupos y mensajes privados.',
+      home:  '/comunidad',
     },
   };
 
