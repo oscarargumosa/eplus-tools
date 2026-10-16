@@ -1,0 +1,138 @@
+/* ═══════════════════════════════════════════════════════════════
+   Diseñar (intake) y Escribir (developer) en móvil.
+   Objetivo: nada más ancho que la pantalla entre 320 y 767 px.
+   Las reglas de móvil van en @media (max-width: 767px); fuera de
+   ellas solo hay lo que sustituye a estilos en línea (columnas de
+   la tabla de socios), idéntico a lo que había en escritorio.
+   Tablas anchas → contenedor con scroll propio (.efs-hscroll),
+   filas de socios → tarjetas, columnas laterales → debajo.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Tabla de socios (Diseñar · Proyecto) ─────────────────────── */
+.intake-pt-grid { grid-template-columns: 28px minmax(0, 1fr) 100px 110px 32px 80px 32px; }
+
+@media (max-width: 767px) {
+  #panel-intake .intake-pt-head { display: none; }
+  /* Cada socio, una tarjeta: nº + rol + acciones arriba, nombre a lo ancho,
+     ciudad y país debajo. */
+  #intake-pt-list > .intake-pt-row {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 10px 12px; margin-bottom: 10px; border: 1px solid #d6d3dc; border-radius: 12px; background: #fff;
+  }
+  #intake-pt-list > .intake-pt-row .pt-n      { order: 1; min-width: 20px; text-align: left; }
+  #intake-pt-list > .intake-pt-row .pt-role   { order: 2; margin-right: auto; }
+  #intake-pt-list > .intake-pt-row .pt-search { order: 3; }
+  #intake-pt-list > .intake-pt-row .pt-del    { order: 4; }
+  #intake-pt-list > .intake-pt-row .pt-name   { order: 5; flex: 1 1 100%; min-width: 0; }
+  #intake-pt-list > .intake-pt-row .pt-city,
+  #intake-pt-list > .intake-pt-row .pt-country { order: 6; flex: 1 1 0; min-width: 0; }
+  #intake-pt-list > .intake-pt-row .pt-search,
+  #intake-pt-list > .intake-pt-row .pt-del { width: 40px; height: 40px; min-height: 40px; }
+}
+
+/* ── Contenedor con scroll horizontal propio (tablas anchas) ─────
+   Sombra a la derecha mientras queda tabla por ver (técnica de
+   fondos con background-attachment: local). */
+.efs-hscroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;
+  background:
+    linear-gradient(to right, #fff 30%, rgba(255,255,255,0)) left center / 24px 100% no-repeat local,
+    linear-gradient(to left, #fff 30%, rgba(255,255,255,0)) right center / 24px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(34,35,81,.16), rgba(34,35,81,0)) left center / 10px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(34,35,81,.16), rgba(34,35,81,0)) right center / 10px 100% no-repeat scroll; }
+
+@media (max-width: 767px) {
+  /* Textos largos sin espacios (URLs, OIDs, códigos) parten antes que
+     salirse (break-word no encoge cajas: botones y etiquetas no se trocean). */
+  #panel-intake, #panel-developer { overflow-wrap: break-word; }
+
+  /* Pestañas de resultados del presupuesto: en varias líneas. */
+  .calc-res-tabs { flex-wrap: wrap; }
+  .calc-res-tab { padding: 10px 12px; }
+  .print-tab-toolbar { flex-wrap: wrap; gap: 8px; }
+  .print-tab-toolbar > * { min-width: 0; }
+}
+
+@media (max-width: 767px) {
+  .print-tab-toolbar .flex { flex-wrap: wrap; }
+
+  /* Red de seguridad: en filas flex, lo que estira (flex-1) puede encoger
+     por debajo de su contenido; los desplegables no pasan del ancho. */
+  #panel-intake .flex-1, #panel-developer .flex-1 { min-width: 0; }
+  #panel-intake select, #panel-developer select { max-width: 100%; }
+
+  /* ── Escribir · formulario por secciones ──────────────────────
+     Índice arriba (plegado: tira de números con scroll propio;
+     desplegado: lista con altura máxima) y editor a todo el ancho. */
+  #panel-developer .dev-cascade-layout { flex-direction: column; align-items: stretch; margin-left: 0; margin-right: 0; }
+  #panel-developer #dev-cascade-nav { width: 100%; border-right: 0; border-bottom: 1px solid #d6d3dc;
+    padding: 0 0 8px; margin-bottom: 12px; }
+  #panel-developer #dev-cascade-nav.w-56 { max-height: 45vh; overflow-y: auto; }
+  #panel-developer #dev-cascade-nav.w-14 { display: flex; align-items: stretch; gap: 4px; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; }
+  #panel-developer #dev-cascade-nav.w-14 > div { margin: 0; padding: 0; align-items: center; flex-shrink: 0; }
+  #panel-developer #dev-cascade-nav.w-14 > button { width: auto; min-width: 44px; min-height: 44px; flex-shrink: 0;
+    justify-content: center; padding: 4px 6px; scroll-snap-align: start; }
+  #panel-developer #dev-cascade-nav.w-14 > div > button { min-width: 44px; min-height: 44px; }
+  /* Hueco para el botón flotante «Refinar con IA» al final de la sección. */
+  #panel-developer #dev-cascade-main { padding-left: 0; padding-right: 0; padding-bottom: 80px; }
+  #dev-ai-drawer { max-width: 100vw; }
+  /* Cabecera de la sección de WP: el botón «Rellenar con IA» baja bajo el título. */
+  #panel-developer .dev-sec-head { flex-direction: column; align-items: flex-start; }
+}
+
+/* ── Tablas de formulario que en móvil pasan a tarjetas ──────────
+   (riesgos y equipo del Escribir). Cada celda lleva su etiqueta en
+   data-label. */
+@media (max-width: 767px) {
+  .efs-cardtable, .efs-cardtable tbody, .efs-cardtable tr, .efs-cardtable td { display: block; width: 100% !important; }
+  .efs-cardtable thead { display: none; }
+  .efs-cardtable tr { padding: 8px 4px 10px; }
+  .efs-cardtable td { padding: 4px 8px; }
+  .efs-cardtable td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 4px;
+    font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #55577a; }
+  .efs-cardtable td.efs-cardtable__act { text-align: right; }
+
+  /* ── Cronograma (Gantt): scroll horizontal propio, tareas fijas a la izquierda */
+  .gantt-box.gantt-box { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .gantt-inner { min-width: 680px; }
+  .gantt-box .gantt-lbl { width: 150px !important; position: sticky; left: 0; z-index: 2; background: #fff; }
+  .gantt-box .gantt-dates { width: 116px !important; }
+  .gantt-box .gantt-sel { min-width: 46px; }
+
+  /* ── Calculadora (Diseñar · WPs): cabecera de actividad en varias líneas */
+  .calc-act-head { flex-wrap: wrap; }
+  .calc-act-head > input { flex: 1 1 10rem; min-width: 0; }
+  .calc-act-head > select { max-width: 100%; }
+  .calc-act { padding: 12px; }
+
+  /* ── Objetivos táctiles de al menos 40 px en Diseñar y Escribir ── */
+  #panel-intake button, #panel-developer button,
+  #panel-intake select, #panel-developer select { min-width: 40px; min-height: 40px; }
+  #panel-intake input[type="checkbox"], #panel-developer input[type="checkbox"],
+  #panel-intake input[type="radio"], #panel-developer input[type="radio"] { width: 22px; height: 22px; }
+  .voice-btn { width: 40px; height: 40px; top: 4px; right: 4px; }
+  .voice-wrap textarea, .voice-wrap input { padding-right: 48px; }
+}
+
+@media (max-width: 767px) {
+  /* Escribir · Tareas: menos sangría para ganar ancho; borrar tarea visible
+     (en táctil no hay hover que lo descubra). */
+  .tasks-wp-body { margin-left: 6px; padding-left: 12px; }
+  .tasks-wp-body .px-5 { padding-left: 14px; padding-right: 14px; }
+  .delete-custom.delete-custom { opacity: 1; }
+}
+
+@media (max-width: 767px) {
+  /* Diseñar · Tarifas: cada perfil, una fila que se parte (categoría arriba;
+     tarifa, coste/PM y quitar debajo). */
+  .calc-rates, .calc-rates tbody { display: block; width: 100%; }
+  .calc-rates tr { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 8px 10px;
+    border-bottom: 1px solid rgba(138,138,163,.12); }
+  .calc-rates td { display: block; padding: 0; border: 0; width: auto; }
+  .calc-rates td:first-child { flex: 1 1 100%; }
+  .calc-rates td:nth-child(2) { flex: 1 1 auto; text-align: left; }
+  .calc-rates td:last-child { margin-left: auto; }
+  /* Casillas con su etiqueta: la etiqueta entera es la zona de toque (≥ 40 px). */
+  #panel-intake label:has(> input[type="checkbox"]), #panel-developer label:has(> input[type="checkbox"]),
+  #panel-intake label:has(> input[type="radio"]), #panel-developer label:has(> input[type="radio"]) { min-height: 40px; }
+}

@@ -727,13 +727,13 @@ const Calculator = (() => {
           <span class="font-semibold text-sm" style="color:${c}">${p.name || 'Partner '+(pi+1)}</span>
           <span class="text-xs text-on-surface-variant ml-1">${zoneLabel}</span>
         </div>
-        <table class="calc-table">
+        <table class="calc-table calc-rates">
           <tbody>
             ${rates.map(w => { const idJs = String(w.id).replace(/\\/g, '\\\\').replace(/'/g, "\\'"); return `<tr>
               <td class="w-5/12"><input type="text" value="${w.category}" class="w-full px-2 py-1 text-sm border border-outline-variant/30 rounded" onchange="Calculator._setWorkerRate('${idJs}','category',this.value)"></td>
               <td class="text-right"><input type="number" value="${w.rate}" min="0" onchange="Calculator._setWorkerRate('${idJs}','rate',this.value)"><span class="text-[11px] text-on-surface-variant ml-1">\u20AC/day</span></td>
               <td class="text-right"><span class="text-sm font-bold text-primary/70">\u20AC${(w.rate * 22).toLocaleString('en')}</span><span class="text-[10px] text-on-surface-variant/50 ml-1">/PM</span></td>
-              <td class="w-8 text-center"><button onclick="Calculator._removeWorkerRate('${idJs}')" class="text-error hover:text-error-container text-lg leading-none">&times;</button></td>
+              <td class="w-8 text-center"><button onclick="Calculator._removeWorkerRate('${idJs}')" class="text-error hover:text-error-container text-lg leading-none" title="Quitar perfil" aria-label="Quitar perfil">&times;</button></td>
             </tr>`; }).join('')}
           </tbody>
         </table>
@@ -970,12 +970,12 @@ const Calculator = (() => {
 
       return `
       <div class="border border-outline-variant/20 rounded-xl overflow-hidden">
-        <div class="flex items-center gap-3 px-4 py-3 border-b border-outline-variant/10" style="background:${WP_BG[wi%WP_BG.length]}">
+        <div class="flex flex-wrap items-center gap-3 px-4 py-3 border-b border-outline-variant/10" style="background:${WP_BG[wi%WP_BG.length]}">
           <span class="w-8 h-8 rounded-full text-white text-xs font-extrabold flex items-center justify-center shrink-0" style="background:${c}">WP${wi+1}</span>
-          <span class="flex-1 font-headline font-bold text-sm" style="color:${c}">${wp.name || 'WP'+(wi+1)}</span>
-          <div class="flex items-center gap-1 shrink-0">
+          <span class="flex-1 min-w-0 font-headline font-bold text-sm" style="color:${c}">${wp.name || 'WP'+(wi+1)}</span>
+          <div class="flex items-center gap-1 min-w-0 max-w-full">
             <span class="text-[11px] text-on-surface-variant">Leader:</span>
-            <select class="text-xs px-1.5 py-1 border border-outline-variant/20 rounded font-medium" style="color:${c}" onchange="Calculator._setWP(${wi},'leader',this.value)">${leaderOpts}</select>
+            <select class="text-xs px-1.5 py-1 border border-outline-variant/20 rounded font-medium min-w-0 max-w-full" style="color:${c}" onchange="Calculator._setWP(${wi},'leader',this.value)">${leaderOpts}</select>
           </div>
         </div>
         <div class="p-4 bg-surface-container-lowest space-y-3">
@@ -1118,11 +1118,11 @@ const Calculator = (() => {
         <span class="material-symbols-outlined calc-wp-chevron">expand_more</span>
       </div>
       <div class="px-4 py-3 border-b border-outline-variant/10" style="background:${c}10" onclick="event.stopPropagation()">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
           <label class="text-[11px] font-semibold uppercase tracking-wide" style="color:${c}">WP Summary</label>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 min-w-0 max-w-full">
             <span class="text-[11px] text-on-surface-variant font-semibold">Leader:</span>
-            <select class="text-sm px-2.5 py-1.5 border border-outline-variant/20 rounded-lg bg-white font-semibold min-w-[140px]" style="color:${c}" onchange="Calculator._setWPLeader(${wi},this.value)">${leaderOpts}</select>
+            <select class="text-sm px-2.5 py-1.5 border border-outline-variant/20 rounded-lg bg-white font-semibold min-w-[140px] max-w-full" style="color:${c}" onchange="Calculator._setWPLeader(${wi},this.value)">${leaderOpts}</select>
           </div>
         </div>
         <textarea rows="${sumRows}" class="w-full px-3 py-2.5 text-sm border rounded-lg leading-relaxed bg-white focus:ring-2 outline-none transition-all" style="border-color:${c}30;--tw-ring-color:${c}40;min-height:80px" placeholder="Briefly describe the purpose and main activities of this work package..." onchange="Calculator._setWP(${wi},'summary',this.value)" oninput="Calculator._setWP(${wi},'summary',this.value);this.style.height='auto';this.style.height=this.scrollHeight+'px'">${sumVal}</textarea>
@@ -1156,7 +1156,7 @@ const Calculator = (() => {
       </select>` : '';
     return `
     <div class="calc-act" id="calc-act-${act.id}" style="--act-color:${def.color}">
-      <div class="flex items-center gap-2 mb-2">
+      <div class="calc-act-head flex items-center gap-2 mb-2">
         <span class="calc-act-badge" style="background:${def.bg};color:${def.color}">
           <span class="material-symbols-outlined text-[12px] align-middle mr-0.5">${def.icon}</span> ${def.label}
         </span>
@@ -1164,7 +1164,7 @@ const Calculator = (() => {
         <input type="text" value="${act.label}" placeholder="Name..." class="flex-1 bg-transparent border-b border-outline-variant/30 px-1 py-0.5 text-sm font-semibold font-headline focus:outline-none focus:border-primary" onchange="Calculator._setAct(${wi},${act.id},'label',this.value)">
         <button onclick="Calculator._moveAct(${wi},${act.id},-1)" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover arriba"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
         <button onclick="Calculator._moveAct(${wi},${act.id},1)" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover abajo"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
-        <button onclick="Calculator._removeAct(${wi},${act.id})" class="text-error/60 hover:text-error text-lg leading-none ml-1">&times;</button>
+        <button onclick="Calculator._removeAct(${wi},${act.id})" class="text-error/60 hover:text-error text-lg leading-none ml-1" title="Eliminar actividad" aria-label="Eliminar actividad">&times;</button>
       </div>
       <div class="mb-2">
         <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 mb-1 block">Description</label>
@@ -1407,11 +1407,11 @@ const Calculator = (() => {
       }).join('');
 
       return `<div class="rounded-xl border border-outline-variant/20 overflow-hidden mb-2">
-        <div class="flex items-center gap-2 px-3 py-2" style="background:${bg}">
+        <label class="flex items-center gap-2 px-3 py-2 cursor-pointer" style="background:${bg}">
           <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" onchange="Calculator._setMgmtPartnerActive(${wi},${act.id},'${p.id}',this.checked)">
           <span class="text-xs font-bold flex-1" style="color:${color}">${p.name||'P'+(i+1)}</span>
           <span class="text-[10px] font-mono font-semibold" style="color:${color}">${ps.active?euros(pTotal):'—'}</span>
-        </div>
+        </label>
         ${ps.active?`<div class="px-3 py-2">${staffRows}
           <button onclick="Calculator._addMgmtStaff(${wi},${act.id},'${p.id}')" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
         </div>`:''}
@@ -1468,11 +1468,11 @@ const Calculator = (() => {
       }).join('');
 
       return `<div class="rounded-xl border border-outline-variant/20 overflow-hidden mb-2">
-        <div class="flex items-center gap-2 px-3 py-2" style="background:${bg}">
+        <label class="flex items-center gap-2 px-3 py-2 cursor-pointer" style="background:${bg}">
           <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" onchange="Calculator._setIOPartnerActive(${wi},${act.id},'${p.id}',this.checked)">
           <span class="text-xs font-bold flex-1" style="color:${color}">${p.name||'P'+(i+1)}</span>
           <span class="text-[10px] font-mono font-semibold" style="color:${color}">${ps.active?euros(pTotal):'\u2014'}</span>
-        </div>
+        </label>
         ${ps.active?`<div class="px-3 py-2">${staffRows}
           <button onclick="Calculator._addIOStaff(${wi},${act.id},'${p.id}')" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
         </div>`:''}
@@ -1807,7 +1807,7 @@ const Calculator = (() => {
       <div class="rounded-3xl border ${borderColor} overflow-hidden mb-5">
         <!-- Progress bar -->
         <div class="bg-primary text-white p-5">
-          <div class="flex items-end justify-between mb-3">
+          <div class="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 mb-3">
             <div>
               <div class="text-[10px] uppercase tracking-wider opacity-50 mb-1">Budget actual</div>
               <div class="font-headline text-4xl font-light tabular-nums">${euros(subtotal)}</div>
@@ -1830,6 +1830,7 @@ const Calculator = (() => {
 
         <!-- Comparative table -->
         <div class="bg-surface-container-lowest p-5">
+          <div class="efs-hscroll">
           <table class="w-full text-sm">
             <thead>
               <tr class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">
@@ -1874,6 +1875,7 @@ const Calculator = (() => {
               </tr>` : ''}
             </tbody>
           </table>
+          </div>
         </div>
 
         ${!hideCofin ? `
@@ -1893,7 +1895,7 @@ const Calculator = (() => {
       })()}
 
       <!-- Tabs -->
-      <div class="flex gap-0 border-b-2 border-outline-variant/20 mb-5">
+      <div class="calc-res-tabs flex gap-0 border-b-2 border-outline-variant/20 mb-5">
         <button class="calc-res-tab active" onclick="Calculator._switchResTab('partner')">By Partner</button>
         <button class="calc-res-tab" onclick="Calculator._switchResTab('wp')">By WP</button>
         <button class="calc-res-tab" onclick="Calculator._switchResTab('summary')">Summary</button>

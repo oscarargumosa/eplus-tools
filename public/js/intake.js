@@ -959,24 +959,24 @@ const Intake = (() => {
     partners.forEach((p, i) => {
       const isApp = i === 0;
       const row = document.createElement('div');
-      row.className = 'grid gap-2 items-center py-2 border-b border-outline-variant/50 relative';
-      row.style.gridTemplateColumns = '28px 1fr 100px 110px 32px 80px 32px';
+      // Columnas en css/movil.css (.intake-pt-grid): en móvil la fila pasa a tarjeta.
+      row.className = 'intake-pt-grid intake-pt-row grid gap-2 items-center py-2 border-b border-outline-variant/50 relative';
       row.innerHTML = `
-        <span class="text-xs font-bold text-on-surface-variant text-center">${i + 1}</span>
-        <input type="text" placeholder="Organisation name" value="${esc(p.name)}" data-idx="${i}" data-field="name"
-          class="px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
-        <input type="text" placeholder="City" value="${esc(p.city)}" data-idx="${i}" data-field="city"
-          class="px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
-        <input type="text" placeholder="Country" value="${esc(p.country)}" data-idx="${i}" data-field="country"
-          class="px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
-        <button type="button" class="intake-search-entity w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors" data-idx="${i}" title="Buscar entidad">
+        <span class="pt-n text-xs font-bold text-on-surface-variant text-center">${i + 1}</span>
+        <input type="text" placeholder="Organisation name" value="${esc(p.name)}" data-idx="${i}" data-field="name" aria-label="Organisation name"
+          class="pt-name px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
+        <input type="text" placeholder="City" value="${esc(p.city)}" data-idx="${i}" data-field="city" aria-label="City"
+          class="pt-city px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
+        <input type="text" placeholder="Country" value="${esc(p.country)}" data-idx="${i}" data-field="country" aria-label="Country"
+          class="pt-country px-2.5 py-2 rounded-lg bg-white border border-outline-variant text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-secondary-fixed outline-none transition-all">
+        <button type="button" class="intake-search-entity pt-search w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors" data-idx="${i}" title="Buscar entidad" aria-label="Buscar entidad">
           <span class="material-symbols-outlined text-base">search</span>
         </button>
-        <span class="text-[11px] font-bold uppercase tracking-wide px-2 py-1 rounded text-center ${isApp
+        <span class="pt-role text-[11px] font-bold uppercase tracking-wide px-2 py-1 rounded text-center ${isApp
           ? 'bg-secondary-fixed/20 text-primary-container border border-secondary-fixed-dim/40'
           : 'bg-surface-container-low text-on-surface-variant border border-outline-variant'
         }">${isApp ? 'Coord.' : 'Socio'}</span>
-        <button type="button" class="intake-remove-partner w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors ${isApp ? 'opacity-20 pointer-events-none' : ''}" data-idx="${i}">
+        <button type="button" class="intake-remove-partner pt-del w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors ${isApp ? 'opacity-20 pointer-events-none' : ''}" data-idx="${i}" title="Quitar socio" aria-label="Quitar socio">
           <span class="material-symbols-outlined text-base">close</span>
         </button>
       `;
