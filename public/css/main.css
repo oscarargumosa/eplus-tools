@@ -509,6 +509,14 @@ input:focus, select:focus, textarea:focus {
 .voice-btn .material-symbols-outlined {
   font-size: 18px;
 }
+/* Dictado no activado en este servidor: apagado, no roto */
+.voice-btn.voice-off,
+.voice-btn.voice-off:hover {
+  background: transparent;
+  border-color: rgba(138,138,163,.15);
+  color: rgba(85,87,122,.45);
+  cursor: help;
+}
 
 /* Active recording state */
 .voice-btn.voice-active {

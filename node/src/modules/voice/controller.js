@@ -109,7 +109,7 @@ exports.transcribe = async (req, res) => {
   try {
     const mode = whisperMode();
     if (!mode) {
-      return res.status(503).json({ ok: false, error: { code: 'VOICE_UNAVAILABLE', message: 'El dictado por voz no está disponible en este momento. Puedes escribir el texto directamente.' } });
+      return res.status(503).json({ ok: false, error: { code: 'VOICE_UNAVAILABLE', message: 'El dictado por voz todavía no está activado. Escribe el texto directamente: el resto de funciones de IA funcionan con normalidad.' } });
     }
     if (!req.file) {
       return res.status(400).json({ ok: false, error: { code: 'NO_AUDIO', message: 'No audio file provided' } });

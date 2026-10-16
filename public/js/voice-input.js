@@ -13,20 +13,40 @@ const VoiceInput = (() => {
   let chunks    = [];
   // Disponibilidad del dictado en el servidor (null = sin comprobar)
   let available = null;
-  const UNAVAILABLE_MSG = 'El dictado por voz no está disponible en este momento. Puedes escribir el texto directamente.';
+  let checking  = null;
+  // El dictado necesita un servicio de transcripción propio (sin OpenAI); si
+  // el servidor no lo tiene, el micro se ve apagado y lo explica, para que no
+  // parezca que la IA está rota (el resto de la IA va por la suscripción).
+  const UNAVAILABLE_MSG = 'El dictado por voz todavía no está activado. Escribe el texto directamente: el resto de funciones de IA funcionan con normalidad.';
+  const OFF_TITLE = 'Dictado por voz: todavía no está activado';
 
   async function checkAvailable() {
     if (available !== null) return available;
-    try {
-      const token = typeof API !== 'undefined' ? API.getToken() : null;
-      const r = await fetch('/v1/voice/status', {
-        headers: token ? { 'Authorization': `Bearer ${token}` } : {},
-        credentials: 'include',
-      });
-      const j = await r.json();
-      available = r.ok ? !!j.data?.available : true; // ante la duda, dejamos intentar
-    } catch { available = true; }
-    return available;
+    if (checking) return checking;
+    checking = (async () => {
+      try {
+        const token = typeof API !== 'undefined' ? API.getToken() : null;
+        if (!token) return true; // sin sesión no se puede preguntar: no se guarda
+        const r = await fetch('/v1/voice/status', {
+          headers: { 'Authorization': `Bearer ${token}` },
+          credentials: 'include',
+        });
+        if (!r.ok) return true; // ante la duda, dejamos intentar (sin guardar)
+        const j = await r.json();
+        available = !!j.data?.available;
+        if (!available) document.querySelectorAll('.voice-btn').forEach(markOff);
+        return available;
+      } catch { return true; }
+      finally { checking = null; }
+    })();
+    return checking;
+  }
+
+  function markOff(btn) {
+    btn.classList.add('voice-off');
+    btn.title = OFF_TITLE;
+    btn.setAttribute('aria-label', OFF_TITLE);
+    btn.innerHTML = '<span class="material-symbols-outlined">mic_off</span>';
   }
 
   function showUnavailable() {
@@ -69,6 +89,8 @@ const VoiceInput = (() => {
     btn.innerHTML = '<span class="material-symbols-outlined">mic</span>';
     btn.addEventListener('click', () => toggle(textarea, btn));
     wrapper.appendChild(btn);
+    if (available === false) markOff(btn);
+    else if (available === null) checkAvailable();
   }
 
   /* ── Toggle recording ────────────────────────────────────────── */
@@ -131,6 +153,7 @@ const VoiceInput = (() => {
       } finally {
         btn.innerHTML = '<span class="material-symbols-outlined">mic</span>';
         btn.classList.remove('voice-loading');
+        if (available === false) document.querySelectorAll('.voice-btn').forEach(markOff);
       }
     };
 
