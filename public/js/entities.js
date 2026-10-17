@@ -361,7 +361,7 @@ const Entities = (() => {
   function claimBadge(o, big = false) {
     const size = big ? 'text-[11px] px-2.5 py-1' : 'text-[10px] px-2 py-0.5';
     if (o.is_verified) {
-      return `<span title="El equipo de EU Funding Studio ha revisado su documentación legal" class="inline-flex items-center gap-1 rounded-full font-bold ${size} bg-[#f3f8d2] text-primary border border-secondary-fixed">
+      return `<span title="El equipo de EU Funding Studio ha revisado su documentación legal" class="inline-flex items-center gap-1 rounded-full font-bold ${size} bg-[#f8ffd9] text-primary border border-secondary-fixed">
         <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1">verified</span>Verificada</span>`;
     }
     if (o.is_claimed) {
@@ -392,7 +392,7 @@ const Entities = (() => {
     return `
       <button type="button" data-oid="${esc(o.oid)}"
         class="entity-card group bg-white rounded-2xl border border-outline-variant/25 p-5 text-left
-               hover:border-primary/30 hover:shadow-[0_10px_30px_rgba(60,69,163,0.10)]
+               hover:border-primary/30 hover:shadow-[0_10px_30px_rgba(67,18,216,0.10)]
                hover:-translate-y-0.5 transition-all duration-200 flex flex-col gap-4">
 
         <div class="flex items-start gap-3">
@@ -440,7 +440,7 @@ const Entities = (() => {
           <span class="font-bold text-primary tabular-nums">${display}</span>
         </div>
         <span class="col-span-2 block h-1.5 bg-surface-container rounded-full overflow-hidden">
-          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#3c45a3"></span>
+          <span class="block h-full rounded-full transition-all" style="width:${pct}%; background:#4312d8"></span>
         </span>
       </div>
     `;
@@ -799,14 +799,14 @@ const Entities = (() => {
   /* ── Estadística de proyectos (mismo cálculo que Mi Organización) ── */
   // Familias de programa con la paleta de marca (color = relleno sobre azul y blanco; on = icono encima)
   const FICHA_FAMILY_META = {
-    KA1:   { label: 'KA1 · Movilidad',      color: '#d6e949', on: '#3c45a3', icon: 'flight_takeoff' },
-    KA2:   { label: 'KA2 · Cooperación',    color: '#997fc7', on: '#ffffff', icon: 'handshake' },
-    KA3:   { label: 'KA3 · Apoyo político', color: '#e7e1f3', on: '#3c45a3', icon: 'policy' },
-    CB:    { label: 'Capacity Building',    color: '#222351', on: '#ffffff', icon: 'public' },
-    Sport: { label: 'Deporte',              color: '#ffffff', on: '#3c45a3', icon: 'sports_soccer' },
-    ESC:   { label: 'Cuerpo Solidaridad',   color: '#514daa', on: '#ffffff', icon: 'volunteer_activism' },
+    KA1:   { label: 'KA1 · Movilidad',      color: '#e9ff60', on: '#4312d8', icon: 'flight_takeoff' },
+    KA2:   { label: 'KA2 · Cooperación',    color: '#b392f6', on: '#ffffff', icon: 'handshake' },
+    KA3:   { label: 'KA3 · Apoyo político', color: '#efe8fe', on: '#4312d8', icon: 'policy' },
+    CB:    { label: 'Capacity Building',    color: '#1b0759', on: '#ffffff', icon: 'public' },
+    Sport: { label: 'Deporte',              color: '#ffffff', on: '#4312d8', icon: 'sports_soccer' },
+    ESC:   { label: 'Cuerpo Solidaridad',   color: '#7349f0', on: '#ffffff', icon: 'volunteer_activism' },
     JM:    { label: 'Jean Monnet',          color: '#8a8aa3', on: '#ffffff', icon: 'school' },
-    Otros: { label: 'Otros',                color: '#d6d3dc', on: '#222351', icon: 'category' },
+    Otros: { label: 'Otros',                color: '#d6d3dc', on: '#1b0759', icon: 'category' },
   };
   const FICHA_FAMILY_ORDER = ['KA1', 'KA2', 'KA3', 'CB', 'Sport', 'ESC', 'JM', 'Otros'];
 
@@ -856,7 +856,7 @@ const Entities = (() => {
       return `
         <div class="bg-white rounded-xl border border-outline-variant/30 p-3 flex flex-col">
           <div class="flex items-center gap-1.5 mb-1.5">
-            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${m.color};color:${m.on};box-shadow:inset 0 0 0 1px rgba(34,35,81,.12)">${m.icon}</span>
+            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${m.color};color:${m.on};box-shadow:inset 0 0 0 1px rgba(27,7,89,.12)">${m.icon}</span>
             <span class="text-[11px] font-bold text-on-surface leading-tight">${esc(m.label)}</span>
           </div>
           <div class="flex items-baseline gap-1">
@@ -864,12 +864,12 @@ const Entities = (() => {
             <span class="text-[11px] font-semibold text-on-surface-variant">proyecto${f.count === 1 ? '' : 's'}</span>
           </div>
           <div class="text-[12px] font-semibold ${mny ? 'text-on-surface-variant' : 'text-on-surface-variant/40'}">${mny || '—'}</div>
-          <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full" style="width:${barPct}%;background:${m.color};box-shadow:inset 0 0 0 1px rgba(34,35,81,.18)"></div></div>
+          <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full" style="width:${barPct}%;background:${m.color};box-shadow:inset 0 0 0 1px rgba(27,7,89,.18)"></div></div>
         </div>`;
     }).join('');
 
     return `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#514daa,#3c45a3 55%,#222351)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#7349f0,#4312d8 55%,#1b0759)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Experiencia Erasmus+</div>
@@ -877,13 +877,13 @@ const Entities = (() => {
           </div>
           <div class="text-right">
             <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Financiación total movilizada</div>
-            <div class="text-4xl font-light leading-none mt-1" style="color:#d6e949">${money(totalAmount) || '0 €'}</div>
+            <div class="text-4xl font-light leading-none mt-1" style="color:#e9ff60">${money(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
-            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft"><span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador</div>
+            <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft"><span class="material-symbols-outlined text-[15px]" style="color:#e9ff60">military_tech</span> Fondos gestionados como coordinador</div>
             <div class="text-xl font-light leading-tight mt-1">${money(coordAmount) || '0 €'}</div>
             <div class="text-[11px] text-lavender-soft">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
           </div>
@@ -1054,14 +1054,14 @@ const Entities = (() => {
     const chartOpts = {
       chart: { type: 'radialBar', height: 160, sparkline: { enabled: true } },
       series: [pct],
-      colors: ['#3c45a3'],
+      colors: ['#4312d8'],
       plotOptions: {
         radialBar: {
           hollow: { size: '62%' },
-          track: { background: '#e7e1f3', strokeWidth: '90%' },
+          track: { background: '#efe8fe', strokeWidth: '90%' },
           dataLabels: {
             name: { show: true, color: '#55577a', offsetY: 22, fontSize: '11px', fontWeight: 600, fontFamily: 'Poppins' },
-            value: { show: true, color: '#3c45a3', fontSize: isMax10 ? '24px' : '28px', fontWeight: 300, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
+            value: { show: true, color: '#4312d8', fontSize: isMax10 ? '24px' : '28px', fontWeight: 300, fontFamily: 'Poppins', offsetY: -10, formatter: () => valueText },
           },
         },
       },

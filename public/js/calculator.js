@@ -84,8 +84,8 @@ const Calculator = (() => {
 
   /* ── Constants ──────────────────────────────────────────────── */
   // Paleta de WPs: familia de marca (azul, lavanda oscura, tinta, violeta…); todas con texto blanco ≥4,5:1
-  const WP_COLORS = ['#3C45A3','#6C55A6','#222351','#514DAA','#55577A','#2C3380','#7A63B0','#3A3D6B','#4A56B8','#5E4A99','#41436E','#6670B8'];
-  const WP_BG     = ['rgba(60,69,163,.06)','rgba(108,85,166,.06)','rgba(34,35,81,.06)','rgba(81,77,170,.06)','rgba(85,87,122,.06)','rgba(44,51,128,.06)','rgba(122,99,176,.06)','rgba(58,61,107,.06)','rgba(74,86,184,.06)','rgba(94,74,153,.06)','rgba(65,67,110,.06)','rgba(102,112,184,.06)'];
+  const WP_COLORS = ['#4312d8','#6C55A6','#1b0759','#7349f0','#55577A','#2C3380','#7A63B0','#3A3D6B','#4A56B8','#5E4A99','#41436E','#6670B8'];
+  const WP_BG     = ['rgba(67,18,216,.06)','rgba(108,85,166,.06)','rgba(27,7,89,.06)','rgba(115,73,240,.06)','rgba(85,87,122,.06)','rgba(44,51,128,.06)','rgba(122,99,176,.06)','rgba(58,61,107,.06)','rgba(74,86,184,.06)','rgba(94,74,153,.06)','rgba(65,67,110,.06)','rgba(102,112,184,.06)'];
 
   const DISTANCE_BANDS = [
     { min:0,    max:9,    label:'< 10 km',        green:0,    std:0    },
@@ -141,13 +141,13 @@ const Calculator = (() => {
 
   const ACT_TYPES = {
     mgmt:       { label:'Management',           icon:'settings',        color:'#55577A', bg:'rgba(85,87,122,.08)',   mobility:false, descHint:'In your own words, tell us how you plan to coordinate the project. How will you organise internal communication, monitor progress and handle reporting?' },
-    meeting:    { label:'Transnational Meeting', icon:'groups',          color:'#3C45A3', bg:'rgba(60,69,163,.08)', mobility:true,  descHint:'Tell us about this meeting in your own words. What do you want to achieve? Who will be there? What decisions or outcomes do you expect?',
+    meeting:    { label:'Transnational Meeting', icon:'groups',          color:'#4312d8', bg:'rgba(67,18,216,.08)', mobility:true,  descHint:'Tell us about this meeting in your own words. What do you want to achieve? Who will be there? What decisions or outcomes do you expect?',
       subtypes: ['Kick-off meeting','Mid-term meeting','Final meeting','Coordination meeting','Technical working meeting','Strategic planning meeting'] },
-    ltta:       { label:'LTTA / Mobility',       icon:'flight_takeoff',  color:'#514DAA', bg:'rgba(81,77,170,.08)',mobility:true,  descHint:'Describe this mobility in your own words. What will participants learn? What methodology will you use? Who is the target group and what skills will they develop?',
+    ltta:       { label:'LTTA / Mobility',       icon:'flight_takeoff',  color:'#7349f0', bg:'rgba(115,73,240,.08)',mobility:true,  descHint:'Describe this mobility in your own words. What will participants learn? What methodology will you use? Who is the target group and what skills will they develop?',
       subtypes: ['Training mobility','Study visit mobility','Group mobility','Youth exchange mobility','Staff mobility','Job shadowing mobility','Peer learning mobility','Blended mobility','Pilot mobility','Volunteering mobility','Expert mobility','Community immersion mobility'] },
     io:         { label:'Intellectual Output',   icon:'menu_book',       color:'#6C55A6', bg:'rgba(108,85,166,.08)',mobility:false, descHint:'Tell us what you want to create. What kind of product is it (guide, toolkit, platform...)? How will you develop it and who will use it?',
       subtypes: ['Educational manual','Methodological guide','Training course / module','Toolkit','Research report / needs analysis','Digital platform / interactive tool'] },
-    me:         { label:'Multiplier Event',      icon:'campaign',        color:'#222351', bg:'rgba(34,35,81,.08)', mobility:false, descHint:'Describe this event in your own words. What is it about? Who do you want to reach? What format are you thinking (conference, workshop, open day...)?',
+    me:         { label:'Multiplier Event',      icon:'campaign',        color:'#1b0759', bg:'rgba(27,7,89,.08)', mobility:false, descHint:'Describe this event in your own words. What is it about? Who do you want to reach? What format are you thinking (conference, workshop, open day...)?',
       subtypes: ['Launch event','Dissemination conference','Final conference','Stakeholder event','Networking event','Public presentation event'] },
     local_ws:   { label:'Local Workshop',        icon:'school',          color:'#7A63B0', bg:'rgba(122,99,176,.08)',  mobility:false, descHint:'Tell us about this local activity. What topics will you cover? Who will participate? What do you hope they will take away from it?',
       subtypes: ['Training workshop','Participatory workshop','Awareness workshop','Co-creation workshop','Community workshop','Testing / pilot workshop'] },
@@ -165,7 +165,7 @@ const Calculator = (() => {
       subtypes: ['Printed materials','Educational materials','Visibility materials','Workshop materials','Event materials','Participant kits / welcome packs'] },
     consumables:{ label:'Consumables',           icon:'science',         color:'#3A3D6B', bg:'rgba(58,61,107,.08)',mobility:false, depreciation:true, descHint:'What materials or supplies do you need? What are they for and which project activities require them?',
       subtypes: ['Printing consumables','Workshop consumables','Office consumables','Hygiene / cleaning consumables','Catering consumables','Technical consumables'] },
-    fstp:       { label:'Financial Support to Third Parties', icon:'volunteer_activism', color:'#514DAA', bg:'rgba(81,77,170,.08)', mobility:false, depreciation:false, descHint:'Describe the cascade/sub-grant scheme. Who are the third parties, how do they get selected, what amount can each receive, and what activities are funded?',
+    fstp:       { label:'Financial Support to Third Parties', icon:'volunteer_activism', color:'#7349f0', bg:'rgba(115,73,240,.08)', mobility:false, depreciation:false, descHint:'Describe the cascade/sub-grant scheme. Who are the third parties, how do they get selected, what amount can each receive, and what activities are funded?',
       subtypes: ['Cascade funding (open call)','Sub-grants to NGOs / associations','Mini-grants to youth-led initiatives','Re-granting to community groups','Voucher scheme for SMEs','Pilot grants for grassroots actions'] },
     other:      { label:'Other Costs',           icon:'add_circle',      color:'#55577A', bg:'rgba(85,87,122,.08)',mobility:false, depreciation:true, descHint:'Tell us about this cost. What does it cover, why is it needed and how did you estimate the amount?',
       subtypes: ['Translation / interpretation costs','External expert / trainer costs','Venue / space rental costs','Hosting / software / platform costs','Travel / accommodation support costs','Evaluation / administrative support costs'] },
@@ -654,7 +654,7 @@ const Calculator = (() => {
       ${buildRoutesSection()}
 
       <!-- Note: European reference rates -->
-      <div class="flex items-start gap-3 bg-[#f3f8d2] border border-secondary-fixed rounded-2xl p-4 mb-4">
+      <div class="flex items-start gap-3 bg-[#f8ffd9] border border-secondary-fixed rounded-2xl p-4 mb-4">
         <span class="material-symbols-outlined text-primary text-xl mt-0.5">info</span>
         <div>
           <p class="text-sm font-semibold text-primary mb-1">European reference rates</p>
@@ -1047,7 +1047,7 @@ const Calculator = (() => {
     state.wps.forEach((_, wi) => recalcWP(wi));
   }
 
-  const WP_SECTION_BG = ['rgba(60,69,163,.08)','rgba(108,85,166,.08)','rgba(34,35,81,.08)','rgba(81,77,170,.08)','rgba(85,87,122,.08)','rgba(44,51,128,.08)','rgba(122,99,176,.08)','rgba(58,61,107,.08)','rgba(74,86,184,.08)','rgba(94,74,153,.08)','rgba(65,67,110,.08)','rgba(102,112,184,.08)'];
+  const WP_SECTION_BG = ['rgba(67,18,216,.08)','rgba(108,85,166,.08)','rgba(27,7,89,.08)','rgba(115,73,240,.08)','rgba(85,87,122,.08)','rgba(44,51,128,.08)','rgba(122,99,176,.08)','rgba(58,61,107,.08)','rgba(74,86,184,.08)','rgba(94,74,153,.08)','rgba(65,67,110,.08)','rgba(102,112,184,.08)'];
 
   function buildWPTitleOpts(wi, wp) {
     const lastWi = state.wps.length - 1;
@@ -1313,7 +1313,7 @@ const Calculator = (() => {
       <!-- Online toggle -->
       <div class="flex items-center gap-3 mb-3 px-3 py-2.5 rounded-xl ${isOnline ? 'bg-lavender-soft border-2 border-lavender' : 'bg-surface-container-low border border-outline-variant/40'}">
         <label class="flex items-center gap-2 cursor-pointer flex-1">
-          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-[#514daa]" onchange="Calculator._setActOnline(${wi},${act.id},this.checked)">
+          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-[#7349f0]" onchange="Calculator._setActOnline(${wi},${act.id},this.checked)">
           <span class="material-symbols-outlined text-lg ${isOnline ? 'text-violet' : 'text-on-surface-variant/40'}">videocam</span>
           <span class="text-sm font-bold ${isOnline ? 'text-violet' : 'text-on-surface-variant'}">ONLINE</span>
           ${isOnline ? '<span class="text-[10px] text-violet ml-1">No travel or accommodation costs</span>' : '<span class="text-[10px] text-on-surface-variant/50 ml-1">Mark as online to set budget to zero</span>'}
@@ -2425,11 +2425,11 @@ const Calculator = (() => {
     const showToday = today >= ps && today <= pe;
     const todayPct = showToday ? ((today-ps)/totalMs*100).toFixed(3)+'%' : null;
 
-    const stripeCols = cols.map((_,ci) => `<div style="flex:1;border-left:1px solid #e8e4e1;background:${ci%2===0?'transparent':'rgba(0,0,0,.012)'}"></div>`).join('');
-    const headerCols = cols.map((c,ci) => `<div style="flex:1;text-align:center;padding:4px 0;background:${ci%2===0?'#f0edeb':'#e8e4e1'};border-left:1px solid #d6d3dc"><div style="font-size:11px;font-weight:700;color:#222351">${c.label}</div><div style="font-size:9px;color:#55577a">${c.sub}</div></div>`).join('');
+    const stripeCols = cols.map((_,ci) => `<div style="flex:1;border-left:1px solid #e8e8e8;background:${ci%2===0?'transparent':'rgba(0,0,0,.012)'}"></div>`).join('');
+    const headerCols = cols.map((c,ci) => `<div style="flex:1;text-align:center;padding:4px 0;background:${ci%2===0?'#f2f2f2':'#e8e8e8'};border-left:1px solid #d6d3dc"><div style="font-size:11px;font-weight:700;color:#1b0759">${c.label}</div><div style="font-size:9px;color:#55577a">${c.sub}</div></div>`).join('');
 
     let html = `<div style="display:flex;position:sticky;top:0;z-index:30;box-shadow:0 2px 6px rgba(0,0,0,.08)">
-      <div style="width:${LABEL_W}px;flex-shrink:0;background:#222351;display:flex;align-items:center;padding:0 14px"><span style="font-size:11px;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em">Activity</span></div>
+      <div style="width:${LABEL_W}px;flex-shrink:0;background:#1b0759;display:flex;align-items:center;padding:0 14px"><span style="font-size:11px;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em">Activity</span></div>
       <div style="flex:1;display:flex">${headerCols}</div>
     </div>`;
 
@@ -2441,10 +2441,10 @@ const Calculator = (() => {
         <div style="width:${LABEL_W}px;flex-shrink:0;padding:0 10px 0 14px;display:flex;align-items:center;gap:8px;overflow:hidden">
           <span style="font-size:10px;color:${c};font-weight:800">${collapsed?'▶':'▼'}</span>
           <span style="width:10px;height:10px;border-radius:50%;background:${c}"></span>
-          <span style="font-size:12px;font-weight:700;color:#222351;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${wpLabel(wp,wi)}</span>
+          <span style="font-size:12px;font-weight:700;color:#1b0759;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${wpLabel(wp,wi)}</span>
         </div>
         <div style="flex:1;position:relative;display:flex"><div style="position:absolute;inset:0;display:flex">${stripeCols}</div>
-          ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#222351;opacity:.55;z-index:5"></div>`:''}
+          ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#1b0759;opacity:.55;z-index:5"></div>`:''}
         </div>
       </div>`;
 
@@ -2459,13 +2459,13 @@ const Calculator = (() => {
             </div>`;
           }
 
-          html += `<div style="display:flex;align-items:stretch;background:${ai%2===0?'#fff':'#f8f7f5'};border-top:1px solid #e8e4e1;min-height:36px">
+          html += `<div style="display:flex;align-items:stretch;background:${ai%2===0?'#fff':'#f8f8f8'};border-top:1px solid #e8e8e8;min-height:36px">
             <div style="width:${LABEL_W}px;flex-shrink:0;padding:0 8px 0 32px;display:flex;align-items:center;gap:7px;overflow:hidden">
               <span class="material-symbols-outlined" style="font-size:14px;color:${def.color}">${def.icon}</span>
-              <span style="font-size:11px;color:#222351;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${act.label}</span>
+              <span style="font-size:11px;color:#1b0759;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${act.label}</span>
             </div>
             <div style="flex:1;position:relative;display:flex"><div style="position:absolute;inset:0;display:flex">${stripeCols}</div>${bar}
-              ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#222351;opacity:.45;z-index:5"></div>`:''}
+              ${todayPct?`<div style="position:absolute;left:${todayPct};top:0;bottom:0;width:2px;background:#1b0759;opacity:.45;z-index:5"></div>`:''}
             </div>
           </div>`;
         });
@@ -3491,81 +3491,81 @@ const Calculator = (() => {
 
   const PRINT_CSS = `
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif; color: #222351; background: #f8f7f5; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html, body { margin: 0; padding: 0; font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif; color: #1b0759; background: #f8f8f8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     @page { size: A4 landscape; margin: 12mm 10mm; }
     .page { width: 277mm; min-height: 190mm; padding: 10mm 12mm; background: #fff; margin: 8mm auto; box-shadow: 0 2px 12px rgba(0,0,0,0.08); page-break-after: always; display: flex; flex-direction: column; }
     .page:last-child { page-break-after: auto; }
 
     /* ── Cover page ── */
-    .cover-page { background: linear-gradient(135deg, #3c45a3 0%, #514daa 100%); color: #fff; padding: 12mm 14mm; justify-content: space-between; page-break-inside: avoid; overflow: hidden; }
+    .cover-page { background: linear-gradient(135deg, #4312d8 0%, #7349f0 100%); color: #fff; padding: 12mm 14mm; justify-content: space-between; page-break-inside: avoid; overflow: hidden; }
     .cover-header { display: flex; justify-content: space-between; align-items: center; }
-    .cover-logo { font-family: 'Poppins'; font-weight: 900; font-size: 24pt; color: #d6e949; letter-spacing: -2px; line-height: 1; }
+    .cover-logo { font-family: 'Poppins'; font-weight: 900; font-size: 24pt; color: #e9ff60; letter-spacing: -2px; line-height: 1; }
     .cover-date { font-size: 8.5pt; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; }
     .cover-center { text-align: center; padding: 3mm 0 2mm; }
     .cover-label { font-size: 9pt; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; margin-bottom: 3mm; }
-    .cover-title { font-size: 42pt; font-weight: 900; line-height: 1; margin: 0 0 3mm; letter-spacing: -2px; color: #d6e949; }
+    .cover-title { font-size: 42pt; font-weight: 900; line-height: 1; margin: 0 0 3mm; letter-spacing: -2px; color: #e9ff60; }
     .cover-fullname { font-size: 14pt; font-weight: 500; font-style: italic; opacity: 0.95; max-width: 230mm; margin: 0 auto 5mm; line-height: 1.3; }
     .cover-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; max-width: 220mm; margin: 0 auto; }
-    .cover-meta > div { border-left: 2px solid rgba(214,233,73, 0.5); padding-left: 3.5mm; text-align: left; }
+    .cover-meta > div { border-left: 2px solid rgba(233,255,96, 0.5); padding-left: 3.5mm; text-align: left; }
     .cover-meta-label { display: block; font-size: 7.5pt; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; margin-bottom: 1.5mm; }
     .cover-meta-value { display: block; font-size: 13pt; font-weight: 700; line-height: 1.2; }
     .cover-partners { margin-top: 4mm; flex: 1; display: flex; flex-direction: column; min-height: 0; }
-    .cover-partners-title { font-size: 9pt; text-transform: uppercase; letter-spacing: 3px; opacity: 0.7; margin-bottom: 3mm; padding-bottom: 2mm; border-bottom: 1px solid rgba(214,233,73, 0.3); }
+    .cover-partners-title { font-size: 9pt; text-transform: uppercase; letter-spacing: 3px; opacity: 0.7; margin-bottom: 3mm; padding-bottom: 2mm; border-bottom: 1px solid rgba(233,255,96, 0.3); }
     .cover-partners-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 6mm; align-content: start; }
     .cover-partners-list.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
     .cover-partners-list li { display: flex; align-items: center; gap: 3mm; font-size: 9.5pt; padding: 1.3mm 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .cover-partners-list .be { background: #d6e949; color: #3c45a3; font-weight: 800; padding: 0.5mm 2mm; border-radius: 1.5mm; font-size: 7.5pt; flex-shrink: 0; }
+    .cover-partners-list .be { background: #e9ff60; color: #4312d8; font-weight: 800; padding: 0.5mm 2mm; border-radius: 1.5mm; font-size: 7.5pt; flex-shrink: 0; }
     .cover-partners-list .pname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .cover-partners-list .prole { font-size: 7.5pt; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; flex-shrink: 0; }
 
     /* ── Content pages ── */
-    .page-header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 4mm; border-bottom: 2px solid #3c45a3; margin-bottom: 5mm; }
+    .page-header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 4mm; border-bottom: 2px solid #4312d8; margin-bottom: 5mm; }
     .page-header-left { display: flex; align-items: center; gap: 4mm; flex: 1; min-width: 0; }
-    .page-tag { display: inline-flex; align-items: center; justify-content: center; min-width: 14mm; padding: 2mm 3mm; background: #3c45a3; color: #fff; font-weight: 800; font-size: 10pt; border-radius: 2mm; letter-spacing: 0.5px; }
-    .formb-tag { background: #d6e949 !important; color: #3c45a3 !important; }
-    .page-title { font-size: 16pt; font-weight: 800; line-height: 1.2; color: #3c45a3; }
+    .page-tag { display: inline-flex; align-items: center; justify-content: center; min-width: 14mm; padding: 2mm 3mm; background: #4312d8; color: #fff; font-weight: 800; font-size: 10pt; border-radius: 2mm; letter-spacing: 0.5px; }
+    .formb-tag { background: #e9ff60 !important; color: #4312d8 !important; }
+    .page-title { font-size: 16pt; font-weight: 800; line-height: 1.2; color: #4312d8; }
     .page-subtitle { font-size: 9pt; color: #55577a; margin-top: 1mm; }
     .page-header-right { text-align: right; }
     .kpi-label { font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; color: #55577a; }
-    .kpi-value { font-size: 22pt; font-weight: 300; color: #3c45a3; line-height: 1; margin: 1mm 0; }
+    .kpi-value { font-size: 22pt; font-weight: 300; color: #4312d8; line-height: 1; margin: 1mm 0; }
     .kpi-sub { font-size: 8pt; color: #55577a; }
 
-    .badge-coord { display: inline-block; font-size: 8pt; font-weight: 700; background: rgba(60,69,163, 0.1); color: #3c45a3; padding: 0.5mm 2mm; border-radius: 2mm; margin-left: 2mm; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
-    .badge-coord-sm { display: inline-block; font-size: 6.5pt; font-weight: 700; background: rgba(60,69,163, 0.1); color: #3c45a3; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
-    .badge-leader { display: inline-block; font-size: 6.5pt; font-weight: 700; background: #f3f8d2; color: #3c45a3; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
+    .badge-coord { display: inline-block; font-size: 8pt; font-weight: 700; background: rgba(67,18,216, 0.1); color: #4312d8; padding: 0.5mm 2mm; border-radius: 2mm; margin-left: 2mm; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
+    .badge-coord-sm { display: inline-block; font-size: 6.5pt; font-weight: 700; background: rgba(67,18,216, 0.1); color: #4312d8; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
+    .badge-leader { display: inline-block; font-size: 6.5pt; font-weight: 700; background: #f8ffd9; color: #4312d8; padding: 0.2mm 1.2mm; border-radius: 1.5mm; margin-left: 1mm; text-transform: uppercase; letter-spacing: 0.3px; }
 
     .section-title { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 2px; color: #55577a; font-weight: 700; margin: 5mm 0 2mm; }
 
     .eacea-table { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
     .eacea-table.compact { font-size: 8pt; }
-    .eacea-table thead { background: #e7e1f3; }
+    .eacea-table thead { background: #efe8fe; }
     .eacea-table th { padding: 2mm; text-align: right; font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.3px; color: #55577a; white-space: nowrap; }
     .eacea-table th:first-child { text-align: left; }
-    .eacea-table td { padding: 1.8mm 2mm; border-bottom: 1px solid #e8e4e1; }
+    .eacea-table td { padding: 1.8mm 2mm; border-bottom: 1px solid #e8e8e8; }
     .eacea-table td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: 'JetBrains Mono', Consolas, monospace; }
     .eacea-table td.num.small { font-size: 7.5pt; }
     .eacea-table td.zero { color: #b9b5c6; }
-    .eacea-table td.leader { background: rgba(214,233,73, 0.15); font-weight: 700; color: #3c45a3; }
-    .eacea-table td.total-cell { font-weight: 800; color: #3c45a3; }
+    .eacea-table td.leader { background: rgba(233,255,96, 0.15); font-weight: 700; color: #4312d8; }
+    .eacea-table td.total-cell { font-weight: 800; color: #4312d8; }
     .eacea-table td.partner-cell { font-weight: 600; }
-    .eacea-table tr.totals { background: #f0edeb; border-top: 2px solid #3c45a3; font-weight: 700; }
-    .eacea-table tr.totals td:first-child { text-transform: uppercase; font-size: 8pt; letter-spacing: 0.5px; color: #3c45a3; }
+    .eacea-table tr.totals { background: #f2f2f2; border-top: 2px solid #4312d8; font-weight: 700; }
+    .eacea-table tr.totals td:first-child { text-transform: uppercase; font-size: 8pt; letter-spacing: 0.5px; color: #4312d8; }
     .eacea-table td.empty { text-align: center; padding: 6mm 0; color: #8a8aa3; font-style: italic; }
     .wp-cell { white-space: nowrap; }
     .wp-dot { display: inline-block; width: 2.5mm; height: 2.5mm; border-radius: 50%; vertical-align: middle; margin-right: 1.5mm; }
 
     .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 3mm; }
-    .cat-card { background: #f0edeb; border-radius: 2mm; padding: 3mm; border-left: 3px solid #3c45a3; }
+    .cat-card { background: #f2f2f2; border-radius: 2mm; padding: 3mm; border-left: 3px solid #4312d8; }
     .cat-label { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.8px; color: #55577a; font-weight: 600; }
-    .cat-value { font-size: 14pt; font-weight: 300; color: #3c45a3; margin-top: 1mm; font-variant-numeric: tabular-nums; }
+    .cat-value { font-size: 14pt; font-weight: 300; color: #4312d8; margin-top: 1mm; font-variant-numeric: tabular-nums; }
 
-    .page-footer { margin-top: auto; padding-top: 4mm; border-top: 1px solid #e8e4e1; font-size: 7.5pt; color: #8a8aa3; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
+    .page-footer { margin-top: auto; padding-top: 4mm; border-top: 1px solid #e8e8e8; font-size: 7.5pt; color: #8a8aa3; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
 
     @media print {
       body { background: #fff; }
       .page { box-shadow: none; margin: 0; padding: 8mm 10mm; }
     }
-    @media screen { body::before { content: 'Pulsa Ctrl+P · Guardar como PDF'; position: fixed; top: 0; left: 0; right: 0; background: #3c45a3; color: #d6e949; padding: 6px; text-align: center; font-weight: 700; font-size: 11pt; z-index: 1000; }
+    @media screen { body::before { content: 'Pulsa Ctrl+P · Guardar como PDF'; position: fixed; top: 0; left: 0; right: 0; background: #4312d8; color: #e9ff60; padding: 6px; text-align: center; font-weight: 700; font-size: 11pt; z-index: 1000; }
       body { padding-top: 36px; }
     }
   `;
@@ -3718,7 +3718,7 @@ const Calculator = (() => {
               ${rows.map(r => {
                 const roles = Array.isArray(r.by_role) ? r.by_role.filter(x => Number(x.a_personnel) > 0) : [];
                 const mainRow = `<tr class="border-t border-outline-variant/10">
-                <td class="px-1.5 py-1.5 whitespace-nowrap font-semibold">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-[#f3f8d2] text-primary px-1 rounded">leader</span>' : ''}</td>
+                <td class="px-1.5 py-1.5 whitespace-nowrap font-semibold">${escHtml(r.acronym || '?')}${r.is_coordinator ? ' <span class="text-[9px] uppercase bg-primary/10 text-primary px-1 rounded">coord.</span>' : ''}${r.is_leader ? ' <span class="text-[9px] uppercase bg-[#f8ffd9] text-primary px-1 rounded">leader</span>' : ''}</td>
                 <td class="px-1.5 py-1.5 text-right font-mono text-[10.5px] ${(!r.person_months ? 'text-on-surface-variant/40' : (r.is_leader ? 'font-extrabold' : ''))}">${fmtPm(r.person_months)}</td>
                 ${numCell(r.a_personnel)}
                 ${numCell(r.b_subcontracting)}

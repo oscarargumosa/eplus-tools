@@ -19,14 +19,14 @@ const Budget = (() => {
 
   /* ── Paleta de WPs: tonos de marca (azul, violeta, tinta, lavanda oscura, gris azulado) ── */
   const WP_COLORS = [
-    { bg: 'bg-[#3c45a3]/10', border: 'border-[#3c45a3]/30', text: 'text-[#3c45a3]', header: 'bg-[#3c45a3]/10', accent: '#3c45a3' },
-    { bg: 'bg-[#514daa]/10', border: 'border-[#514daa]/30', text: 'text-[#514daa]', header: 'bg-[#514daa]/10', accent: '#514daa' },
-    { bg: 'bg-[#222351]/10', border: 'border-[#222351]/30', text: 'text-[#222351]', header: 'bg-[#222351]/10', accent: '#222351' },
+    { bg: 'bg-[#4312d8]/10', border: 'border-[#4312d8]/30', text: 'text-[#4312d8]', header: 'bg-[#4312d8]/10', accent: '#4312d8' },
+    { bg: 'bg-[#7349f0]/10', border: 'border-[#7349f0]/30', text: 'text-[#7349f0]', header: 'bg-[#7349f0]/10', accent: '#7349f0' },
+    { bg: 'bg-[#1b0759]/10', border: 'border-[#1b0759]/30', text: 'text-[#1b0759]', header: 'bg-[#1b0759]/10', accent: '#1b0759' },
     { bg: 'bg-[#6c55a6]/10', border: 'border-[#6c55a6]/30', text: 'text-[#6c55a6]', header: 'bg-[#6c55a6]/10', accent: '#6c55a6' },
     { bg: 'bg-[#55577a]/10', border: 'border-[#55577a]/30', text: 'text-[#55577a]', header: 'bg-[#55577a]/10', accent: '#55577a' },
-    { bg: 'bg-[#3c45a3]/10', border: 'border-[#3c45a3]/30', text: 'text-[#3c45a3]', header: 'bg-[#3c45a3]/10', accent: '#3c45a3' },
-    { bg: 'bg-[#514daa]/10', border: 'border-[#514daa]/30', text: 'text-[#514daa]', header: 'bg-[#514daa]/10', accent: '#514daa' },
-    { bg: 'bg-[#222351]/10', border: 'border-[#222351]/30', text: 'text-[#222351]', header: 'bg-[#222351]/10', accent: '#222351' },
+    { bg: 'bg-[#4312d8]/10', border: 'border-[#4312d8]/30', text: 'text-[#4312d8]', header: 'bg-[#4312d8]/10', accent: '#4312d8' },
+    { bg: 'bg-[#7349f0]/10', border: 'border-[#7349f0]/30', text: 'text-[#7349f0]', header: 'bg-[#7349f0]/10', accent: '#7349f0' },
+    { bg: 'bg-[#1b0759]/10', border: 'border-[#1b0759]/30', text: 'text-[#1b0759]', header: 'bg-[#1b0759]/10', accent: '#1b0759' },
     { bg: 'bg-[#6c55a6]/10', border: 'border-[#6c55a6]/30', text: 'text-[#6c55a6]', header: 'bg-[#6c55a6]/10', accent: '#6c55a6' },
     { bg: 'bg-[#55577a]/10', border: 'border-[#55577a]/30', text: 'text-[#55577a]', header: 'bg-[#55577a]/10', accent: '#55577a' },
   ];
@@ -97,7 +97,7 @@ const Budget = (() => {
             <div class="font-headline text-sm font-bold text-primary truncate">${esc(b.name)}</div>
             <div class="text-xs text-on-surface-variant mt-0.5">Max grant: ${fmt(b.max_grant)} € — Co-fin: ${b.cofin_pct}%</div>
           </div>
-          <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${b.status === 'complete' ? 'bg-[#f3f8d2] text-ink border-secondary-fixed' : 'bg-lavender-soft text-violet border-lavender/30'}">${esc(b.status)}</span>
+          <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${b.status === 'complete' ? 'bg-[#f8ffd9] text-ink border-secondary-fixed' : 'bg-lavender-soft text-violet border-lavender/30'}">${esc(b.status)}</span>
           <button class="budget-delete w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant/40 hover:bg-error/10 hover:text-error transition-colors opacity-0 group-hover:opacity-100" data-bid="${esc(b.id)}" title="Eliminar">
             <span class="material-symbols-outlined text-base">delete</span>
           </button>
@@ -698,7 +698,7 @@ const Budget = (() => {
     // Inject the editor HTML structure into the container
     containerEl.innerHTML = `
       <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-xl text-[#3c45a3]">receipt_long</span>
+        <span class="material-symbols-outlined text-xl text-[#4312d8]">receipt_long</span>
         <h2 id="budget-title" class="font-headline text-base font-extrabold text-on-surface truncate max-w-md"></h2>
       </div>
       <div id="budget-config" class="flex items-center gap-4 mb-4 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex-wrap"></div>

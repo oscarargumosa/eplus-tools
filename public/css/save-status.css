@@ -10,7 +10,7 @@
   color: rgba(255,255,255,.86); white-space: nowrap; flex-shrink: 0; }
 .efs-save[hidden] { display: none; }
 .efs-save:not([hidden]) + .efs-topbar__cta { margin-left: .75rem; }
-.efs-save__icon { display: inline-flex; flex-shrink: 0; color: #d6e949; }
+.efs-save__icon { display: inline-flex; flex-shrink: 0; color: #e9ff60; }
 .efs-save__ico { display: block; }
 .efs-save__txt { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .efs-save__m, .efs-save__s { display: none; }
@@ -28,30 +28,30 @@
   .efs-topbar__inner:has(.efs-save[data-state="dirty"]:not([hidden])) .efs-topbar__menu { gap: .8rem; }
 }
 .efs-save__spin { width: 13px; height: 13px; border-radius: 50%; display: block;
-  border: 2px solid rgba(214,233,73,.35); border-top-color: #d6e949;
+  border: 2px solid rgba(233,255,96,.35); border-top-color: #e9ff60;
   animation: efs-save-spin .8s linear infinite; }
 @keyframes efs-save-spin { to { transform: rotate(360deg); } }
 
 /* Cambios sin guardar: llamada a la acción en lima. */
 .efs-save[data-state="dirty"] { color: #fff; }
 /* Error: pastilla clara sobre el azul, tinta de marca e icono rojo. */
-.efs-save[data-state="error"] { background: #fdf3f1; color: #222351; }
+.efs-save[data-state="error"] { background: #fdf3f1; color: #1b0759; }
 .efs-save[data-state="error"] .efs-save__icon { color: #b3261e; }
 
 .efs-save__btn { flex-shrink: 0; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 12px;
   padding: .3rem .7rem; border-radius: 999px; line-height: 1.2;
-  background: #d6e949; color: #222351; transition: transform .12s ease; }
+  background: #e9ff60; color: #1b0759; transition: transform .12s ease; }
 .efs-save__btn[hidden] { display: none; }
 .efs-save__btnico, .efs-save__btnwarn { display: none; flex-shrink: 0; }
-.efs-save[data-state="error"] .efs-save__btn { background: #3c45a3; color: #fff; margin-right: -.45rem; }
+.efs-save[data-state="error"] .efs-save__btn { background: #4312d8; color: #fff; margin-right: -.45rem; }
 .efs-save[data-state="dirty"] .efs-save__btn { margin-right: -.45rem; }
 .efs-save__btn:active { transform: scale(.97); }
 /* En táctil, main.css pone 44 px de alto a todos los botones: aquí el botón
    se queda en la pastilla y el área de toque se amplía por fuera. */
 .efs-save__btn { position: relative; min-height: 0 !important; }
 .efs-save__btn::after { content: ''; position: absolute; inset: -8px -4px; }
-.efs-save__btn:focus-visible { outline: 2px solid #d6e949; outline-offset: 2px; }
-.efs-save[data-state="error"] .efs-save__btn:focus-visible { outline-color: #222351; }
+.efs-save__btn:focus-visible { outline: 2px solid #e9ff60; outline-offset: 2px; }
+.efs-save[data-state="error"] .efs-save__btn:focus-visible { outline-color: #1b0759; }
 
 @media (hover: hover) and (pointer: fine) {
   .efs-save__btn:hover { filter: brightness(1.06); }
@@ -103,7 +103,7 @@
   .efs-save[data-state="dirty"] .efs-save__btn {
     display: inline-flex; align-items: center; gap: .3rem; height: 30px; margin: 0;
     padding: 0 .6rem 0 .5rem; font-size: 12px; line-height: 1; white-space: nowrap; }
-  .efs-save[data-state="error"] .efs-save__btn { background: #fdf3f1; color: #222351; }
+  .efs-save[data-state="error"] .efs-save__btn { background: #fdf3f1; color: #1b0759; }
   .efs-save[data-state="error"] .efs-save__btnwarn { display: block; color: #b3261e; }
   .efs-save[data-state="dirty"] .efs-save__btnico { display: block; }
 }

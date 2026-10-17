@@ -228,7 +228,7 @@
             <span>Aprobado con <b>${c.passing_score} %</b> en cada test</span>
           </div>
           <div class="ac-hero__actions">${cta}
-            ${c.enrolled ? `<span class="ac-note-info" style="color:#e7e1f3">${done} de ${total} lecciones completadas</span>` : ''}</div>
+            ${c.enrolled ? `<span class="ac-note-info" style="color:#efe8fe">${done} de ${total} lecciones completadas</span>` : ''}</div>
         </div>
         ${c.cover_url ? `<img src="${esc(c.cover_url)}" alt="" width="640" height="400">` : ''}
       </section>

@@ -15,32 +15,32 @@
 
 :root {
 	/* ---------- Paleta oficial (de oscuro a claro) ---------- */
-	--efs-color-ink:                 #222351;   /* tinta — texto largo, fondos muy oscuros */
-	--efs-color-primary:             #3c45a3;   /* azul de marca — títulos, barras, botones primarios */
-	--efs-color-primary-container:   #3c45a3;   /* mismo azul — barra lateral, botones */
-	--efs-color-violet:              #514daa;   /* hover/activo del azul, degradados */
-	--efs-color-lavender:            #997fc7;   /* acento de apoyo — NO para texto pequeño sobre blanco */
-	--efs-color-lavender-soft:       #e7e1f3;   /* chips, avisos, vacíos; texto secundario sobre azul */
-	--efs-color-secondary-fixed:     #d6e949;   /* lima — CTA, resaltados, protagonista. Nunca texto sobre claro */
-	--efs-color-secondary-fixed-dim: #c3d63a;   /* lima oscuro — hover/active de lo lima */
-	--efs-color-lime-soft:           #f3f8d2;   /* fondo de avisos suaves (borde lima, texto azul/tinta) */
-	--efs-color-cream:               #f0edeb;   /* crema — tarjetas y paneles sobre blanco */
-	--efs-color-accent-warm:         #997fc7;   /* alias histórico de la lavanda */
+	--efs-color-ink:                 #1b0759;   /* tinta — texto largo, fondos muy oscuros */
+	--efs-color-primary:             #4312d8;   /* azul de marca — títulos, barras, botones primarios */
+	--efs-color-primary-container:   #4312d8;   /* mismo azul — barra lateral, botones */
+	--efs-color-violet:              #7349f0;   /* hover/activo del azul, degradados */
+	--efs-color-lavender:            #b392f6;   /* acento de apoyo — NO para texto pequeño sobre blanco */
+	--efs-color-lavender-soft:       #efe8fe;   /* chips, avisos, vacíos; texto secundario sobre azul */
+	--efs-color-secondary-fixed:     #e9ff60;   /* lima — CTA, resaltados, protagonista. Nunca texto sobre claro */
+	--efs-color-secondary-fixed-dim: #d4ec3c;   /* lima oscuro — hover/active de lo lima */
+	--efs-color-lime-soft:           #f8ffd9;   /* fondo de avisos suaves (borde lima, texto azul/tinta) */
+	--efs-color-cream:               #f2f2f2;   /* crema — tarjetas y paneles sobre blanco */
+	--efs-color-accent-warm:         #b392f6;   /* alias histórico de la lavanda */
 
 	/* ---------- Superficies ---------- */
 	--efs-color-bg:                       #ffffff; /* fondo de contenido */
-	--efs-color-surface:                  #f8f7f5; /* fondo general de la app (blanco cálido) */
-	--efs-color-surface-container-low:    #f8f7f5; /* inputs, iconos contenidos */
-	--efs-color-surface-container:        #f0edeb; /* crema — tarjetas/paneles */
-	--efs-color-surface-container-high:   #e8e4e1;
+	--efs-color-surface:                  #f8f8f8; /* fondo general de la app (blanco cálido) */
+	--efs-color-surface-container-low:    #f8f8f8; /* inputs, iconos contenidos */
+	--efs-color-surface-container:        #f2f2f2; /* crema — tarjetas/paneles */
+	--efs-color-surface-container-high:   #e8e8e8;
 	--efs-color-surface-container-lowest: #ffffff; /* tarjetas sobre fondo */
 
 	/* ---------- Texto ---------- */
-	--efs-color-on-surface:           #222351; /* cuerpo */
+	--efs-color-on-surface:           #1b0759; /* cuerpo */
 	--efs-color-on-surface-variant:   #55577a; /* texto secundario, placeholders */
 	--efs-color-on-primary:           #ffffff; /* texto sobre azul */
-	--efs-color-on-primary-container: #e7e1f3; /* texto secundario sobre azul */
-	--efs-color-on-secondary-fixed:   #3c45a3; /* texto sobre lima */
+	--efs-color-on-primary-container: #efe8fe; /* texto secundario sobre azul */
+	--efs-color-on-secondary-fixed:   #4312d8; /* texto sobre lima */
 
 	/* ---------- Líneas ---------- */
 	--efs-color-outline:         #8a8aa3;
@@ -69,8 +69,8 @@
 	--efs-radius-full:    999px;    /* píldora — botones CTA, chips */
 
 	/* ---------- Sombras (teñidas de azul, nunca negro puro) ---------- */
-	--efs-shadow-soft:  0px 24px 48px rgba(60,69,163, 0.06);
-	--efs-shadow-med:   0px 24px 48px rgba(60,69,163, 0.10);
+	--efs-shadow-soft:  0px 24px 48px rgba(67,18,216, 0.06);
+	--efs-shadow-med:   0px 24px 48px rgba(67,18,216, 0.10);
 
 	/* ---------- Maquetación ---------- */
 	--efs-max-w:       720px;

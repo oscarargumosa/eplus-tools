@@ -14,19 +14,19 @@
 
 | Nombre | Hex | Rol |
 |---|---|---|
-| Tinta | `#222351` | Texto largo, fondos muy oscuros, sombras |
-| Azul de marca | `#3C45A3` | Color principal: títulos, barras, botones primarios, fondos de marca |
-| Violeta | `#514DAA` | Hover/activo del azul, degradados, segundo azul |
-| Lavanda | `#997FC7` | Acento de apoyo: bloques de datos, iconos decorativos |
-| Lavanda suave | `#E7E1F3` | Fondos suaves (chips, avisos, vacíos); texto secundario sobre azul |
-| Lima | `#D6E949` | Acento: CTA, resaltados, subrayados, pieza protagonista |
-| Lima oscuro | `#C3D63A` | Hover/active de lo lima |
-| Crema | `#F0EDEB` | Tarjetas y paneles sobre blanco, fondos de sección |
-| Fondo app | `#F8F7F5` | Fondo general (blanco cálido) |
+| Tinta | `#1b0759` | Texto largo, fondos muy oscuros, sombras |
+| Azul de marca | `#4312d8` | Color principal: títulos, barras, botones primarios, fondos de marca |
+| Violeta | `#7349f0` | Hover/activo del azul, degradados, segundo azul |
+| Lavanda | `#b392f6` | Acento de apoyo: bloques de datos, iconos decorativos |
+| Lavanda suave | `#efe8fe` | Fondos suaves (chips, avisos, vacíos); texto secundario sobre azul |
+| Lima | `#e9ff60` | Acento: CTA, resaltados, subrayados, pieza protagonista |
+| Lima oscuro | `#d4ec3c` | Hover/active de lo lima |
+| Crema | `#f2f2f2` | Tarjetas y paneles sobre blanco, fondos de sección |
+| Fondo app | `#f8f8f8` | Fondo general (blanco cálido) |
 | Blanco | `#FFFFFF` | Contenido |
 
 Neutros: texto secundario `#55577A`, contorno `#8A8AA3`, líneas suaves `#D6D3DC`.
-Semánticos: error `#BA1A1A`; verde solo para «correcto/aprobado»; aviso suave `#F3F8D2` + borde lima.
+Semánticos: error `#BA1A1A`; verde solo para «correcto/aprobado»; aviso suave `#f8ffd9` + borde lima.
 
 ## 3. Tipografía
 
@@ -40,7 +40,7 @@ Semánticos: error `#BA1A1A`; verde solo para «correcto/aprobado»; aviso suave
 ## 4. Rasgos de estilo
 
 - **Botones en píldora** para llamadas a la acción. CTA = lima + texto azul. Primario de formulario = azul + texto blanco. Secundario = borde azul + texto azul.
-- **Tarjetas crema** `#F0EDEB` con radios generosos (16–24px) sobre blanco; sobre azul, tarjetas crema o blancas.
+- **Tarjetas crema** `#f2f2f2` con radios generosos (16–24px) sobre blanco; sobre azul, tarjetas crema o blancas.
 - **Icono como device**: el lápiz/«E» puede ir como acento decorativo (lima sobre azul, azul sobre lima o en lavanda suave de fondo).
 - **Marcador lima** detrás de una palabra o nombre (degradado a media altura, no subrayado fino).
 - Un solo elemento protagonista en lima por pantalla o tarjeta.
@@ -49,8 +49,8 @@ Semánticos: error `#BA1A1A`; verde solo para «correcto/aprobado»; aviso suave
 
 - WCAG AA mínimo (4,5:1 texto normal).
 - Lima nunca como texto sobre blanco o crema (1,3:1).
-- Lavanda `#997FC7` nunca como texto pequeño sobre blanco ni como texto sobre azul.
-- Sobre azul: blanco, lima o `#E7E1F3`.
+- Lavanda `#b392f6` nunca como texto pequeño sobre blanco ni como texto sobre azul.
+- Sobre azul: blanco, lima o `#efe8fe`.
 - Azul sobre lima y blanco sobre azul superan 6:1.
 
 ## 6. Qué evitar

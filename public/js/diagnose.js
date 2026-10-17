@@ -313,7 +313,7 @@ const Diagnose = (() => {
 
   function scoreCard(c) {
     const cls = c.on5 >= 4 ? 'bg-green-500/10 text-green-700 border-green-500/30'
-              : c.on5 >= 3 ? 'bg-[#f3f8d2] text-ink border-[#d6e949]'
+              : c.on5 >= 3 ? 'bg-[#f8ffd9] text-ink border-[#e9ff60]'
                            : 'bg-error/10 text-error border-error/30';
     return `
       <div class="border ${cls} rounded-lg px-2 py-1.5">
@@ -420,7 +420,7 @@ const Diagnose = (() => {
       ${showDiff ? renderDiffPanel(activeAction, savedText) : ''}
 
       ${hasUnsaved ? `
-        <div class="bg-[#f3f8d2] border border-[#d6e949] rounded-lg px-3 py-1.5 mb-2 text-xs text-ink">
+        <div class="bg-[#f8ffd9] border border-[#e9ff60] rounded-lg px-3 py-1.5 mb-2 text-xs text-ink">
           <span class="material-symbols-outlined text-xs align-middle">edit</span>
           Estás editando — los cambios no se guardan hasta que pulses "Guardar cambios".
         </div>
@@ -428,7 +428,7 @@ const Diagnose = (() => {
 
       <textarea
         id="diagnose-editor-textarea"
-        class="w-full font-sans text-sm leading-relaxed text-on-surface bg-surface p-4 rounded-lg border ${hasUnsaved ? 'border-[#c3d63a] ring-1 ring-[#d6e949]/60' : 'border-outline-variant/30'} focus:outline-none focus:ring-2 focus:ring-primary/30 resize-vertical"
+        class="w-full font-sans text-sm leading-relaxed text-on-surface bg-surface p-4 rounded-lg border ${hasUnsaved ? 'border-[#d4ec3c] ring-1 ring-[#e9ff60]/60' : 'border-outline-variant/30'} focus:outline-none focus:ring-2 focus:ring-primary/30 resize-vertical"
         style="min-height:400px;"
         oninput="Diagnose.onEditorInput(this.value)"
         spellcheck="false"
@@ -469,7 +469,7 @@ const Diagnose = (() => {
             </div>
           ` : ''}
           ${action.risk ? `
-            <div class="bg-[#f3f8d2] border border-[#d6e949] rounded p-2 text-xs text-ink">
+            <div class="bg-[#f8ffd9] border border-[#e9ff60] rounded p-2 text-xs text-ink">
               <strong>⚠ Riesgo:</strong> ${esc(action.risk)}
             </div>
           ` : ''}
@@ -549,8 +549,8 @@ const Diagnose = (() => {
       critical:    { cls: 'border-error/40 bg-error/5',                  badge: 'bg-error/15 text-error',                lbl: 'Crítico' },
       high:        { cls: 'border-error/30 bg-error/5',                  badge: 'bg-error/10 text-error',                lbl: 'Alto' },
       medium_high: { cls: 'border-lavender/50 bg-lavender-soft/50',      badge: 'bg-lavender-soft text-violet',          lbl: 'Medio-alto' },
-      medium:      { cls: 'border-[#d6e949] bg-[#f3f8d2]/70',            badge: 'bg-secondary-fixed/70 text-primary',    lbl: 'Medio' },
-      medium_low:  { cls: 'border-[#d6e949]/60 bg-[#f3f8d2]/40',         badge: 'bg-[#f3f8d2] text-ink',                 lbl: 'Bajo' },
+      medium:      { cls: 'border-[#e9ff60] bg-[#f8ffd9]/70',            badge: 'bg-secondary-fixed/70 text-primary',    lbl: 'Medio' },
+      medium_low:  { cls: 'border-[#e9ff60]/60 bg-[#f8ffd9]/40',         badge: 'bg-[#f8ffd9] text-ink',                 lbl: 'Bajo' },
       low:         { cls: 'border-outline-variant/40',                   badge: 'bg-on-surface-variant/10 text-on-surface-variant', lbl: 'Bajo' },
     };
     const sev = sevMap[f.severity] || sevMap.medium;

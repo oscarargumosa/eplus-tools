@@ -1,6 +1,6 @@
 :root{
   --bg:#06003E; --bg2:#0a0050; --bg3:#100968;
-  --acc:#c3d63a; --acc2:#F0F4FA;
+  --acc:#d4ec3c; --acc2:#F0F4FA;
   --txt:#fff; --muted:rgba(255,255,255,0.55); --line:rgba(255,255,255,0.10);
   --panel:rgba(255,255,255,0.04); --panel2:rgba(255,255,255,0.07);
 }

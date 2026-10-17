@@ -18,9 +18,9 @@ const IntakeGantt = (() => {
 
   // Colores de WP con la paleta de marca (misma tabla que intake-tasks.js).
   // FILL = barras y muestras; INK = texto/iconos sobre blanco (≥4,5:1); ON = texto sobre FILL.
-  const WP_COLORS = ['#3c45a3','#c3d63a','#997fc7','#222351','#8b93d6','#514daa','#c9b9e3','#8a8aa3'];
-  const WP_INK    = ['#3c45a3','#222351','#6e55a6','#222351','#3c45a3','#514daa','#6e55a6','#55577a'];
-  const WP_ON     = ['#ffffff','#222351','#ffffff','#d6e949','#222351','#ffffff','#222351','#ffffff'];
+  const WP_COLORS = ['#4312d8','#d4ec3c','#b392f6','#1b0759','#8b93d6','#7349f0','#c9b9e3','#8a8aa3'];
+  const WP_INK    = ['#4312d8','#1b0759','#5b2fd6','#1b0759','#4312d8','#7349f0','#5b2fd6','#55577a'];
+  const WP_ON     = ['#ffffff','#1b0759','#ffffff','#e9ff60','#1b0759','#ffffff','#1b0759','#ffffff'];
   function wpColor(i) { return WP_COLORS[i % WP_COLORS.length]; }
   function wpInk(i) { return WP_INK[i % WP_INK.length]; }
   function wpOn(i) { return WP_ON[i % WP_ON.length]; }
@@ -103,8 +103,8 @@ const IntakeGantt = (() => {
           font-size: 11px;
           font-weight: 700;
           text-align: center;
-          color: #3c45a3;
-          background: #f8f7f5;
+          color: #4312d8;
+          background: #f8f8f8;
           border: 1.5px solid #d6d3dc;
           border-radius: 6px;
           cursor: pointer;
@@ -115,11 +115,11 @@ const IntakeGantt = (() => {
           transition: all 0.15s;
         }
         .gantt-sel:focus {
-          border-color: #3c45a3;
+          border-color: #4312d8;
           background: white;
-          box-shadow: 0 0 0 2px rgba(60,69,163,0.12);
+          box-shadow: 0 0 0 2px rgba(67,18,216,0.12);
         }
-        .gantt-sel:hover { border-color: #3c45a3; background: white; }
+        .gantt-sel:hover { border-color: #4312d8; background: white; }
         .gantt-sel option { font-size: 13px; }
       </style>
       <div class="mb-5">
@@ -315,7 +315,7 @@ const IntakeGantt = (() => {
         if (sVal && eVal) {
           const left = ((sVal-1)/totalMonths*100).toFixed(2)+'%';
           const width = ((eVal-sVal+1)/totalMonths*100).toFixed(2)+'%';
-          const color = bar?.style.background || row.querySelector('.material-symbols-outlined')?.style.color || '#3c45a3';
+          const color = bar?.style.background || row.querySelector('.material-symbols-outlined')?.style.color || '#4312d8';
           if (bar) { bar.style.left = left; bar.style.width = width; }
           else barArea.insertAdjacentHTML('beforeend', `<div class="gantt-bar absolute top-1 bottom-1 rounded transition-all duration-300" style="left:${left};width:${width};background:${color};opacity:0.7"></div>`);
         } else if (bar) { bar.remove(); }
@@ -346,7 +346,7 @@ const IntakeGantt = (() => {
         <button data-goto="4" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Tareas
         </button>
-        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        <button data-goto="6" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           Resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>
       </div>`;

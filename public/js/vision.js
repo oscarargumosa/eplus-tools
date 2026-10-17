@@ -694,17 +694,17 @@ const Vision = (() => {
     if (stylesInjected) return; stylesInjected = true;
     const css = `
     /* Tokens del manual de marca: azul, violeta, tinta, lavanda, lima, crema. «green» = estado activo (azul + lima suave) */
-    #vision-root{--vz-navy:#3c45a3;--vz-navy2:#514daa;--vz-ink:#222351;--vz-muted:#55577a;--vz-line:#e7e1f3;--vz-line2:#d6d3dc;--vz-yellow:#d6e949;--vz-lav:#997fc7;--vz-lavsoft:#e7e1f3;--vz-violet:#514daa;--vz-green:#3c45a3;--vz-greensoft:#f3f8d2;--vz-card:#fff;--vz-ground:#f0edeb;color:var(--vz-ink);font-family:inherit}
+    #vision-root{--vz-navy:#4312d8;--vz-navy2:#7349f0;--vz-ink:#1b0759;--vz-muted:#55577a;--vz-line:#efe8fe;--vz-line2:#d6d3dc;--vz-yellow:#e9ff60;--vz-lav:#b392f6;--vz-lavsoft:#efe8fe;--vz-violet:#7349f0;--vz-green:#4312d8;--vz-greensoft:#f8ffd9;--vz-card:#fff;--vz-ground:#f2f2f2;color:var(--vz-ink);font-family:inherit}
     #vision-root h1,#vision-root h2,#vision-root h3,#vision-root h4{margin:0}
     #vision-root .vz-eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--vz-muted)}
     #vision-root .vz-muted{color:var(--vz-muted)} #vision-root .vz-sm{font-size:12.5px}
     #vision-root .vz-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
     #vision-root .vz-h1{font-size:24px;font-weight:600;color:var(--vz-navy);margin-top:4px} #vision-root .vz-lead{color:var(--vz-muted);font-size:13.5px;margin-top:4px;max-width:56ch}
     #vision-root .vz-btn{border:none;border-radius:999px;padding:11px 18px;font-weight:700;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-family:inherit}
-    #vision-root .vz-btn-sm{padding:8px 14px;font-size:12.5px} #vision-root .vz-btn-primary{background:var(--vz-yellow);color:var(--vz-navy)} #vision-root .vz-btn-primary:hover{background:#c3d63a} #vision-root .vz-btn-navy{background:var(--vz-navy);color:#fff} #vision-root .vz-btn-navy:hover{background:var(--vz-violet)}
+    #vision-root .vz-btn-sm{padding:8px 14px;font-size:12.5px} #vision-root .vz-btn-primary{background:var(--vz-yellow);color:var(--vz-navy)} #vision-root .vz-btn-primary:hover{background:#d4ec3c} #vision-root .vz-btn-navy{background:var(--vz-navy);color:#fff} #vision-root .vz-btn-navy:hover{background:var(--vz-violet)}
     #vision-root .vz-btn-ghost{background:transparent;color:var(--vz-navy);border:1px solid var(--vz-navy)}
     #vision-root .vz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
-    #vision-root .vz-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:11px;cursor:pointer;box-shadow:0 8px 24px -14px rgba(60,69,163,.18)}
+    #vision-root .vz-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:11px;cursor:pointer;box-shadow:0 8px 24px -14px rgba(67,18,216,.18)}
     #vision-root .vz-card:hover{border-color:var(--vz-lav)}
     #vision-root .vz-card-new{border-style:dashed;align-items:center;justify-content:center;text-align:center;color:var(--vz-muted);background:transparent;min-height:170px}
     #vision-root .vz-plus{width:42px;height:42px;border-radius:12px;background:var(--vz-lavsoft);color:var(--vz-navy);display:grid;place-items:center;font-size:24px}
@@ -716,7 +716,7 @@ const Vision = (() => {
     #vision-root .vz-callchip b{color:var(--vz-navy)}
     #vision-root .vz-note{background:var(--vz-lavsoft);border:1px solid var(--vz-lav);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--vz-navy);line-height:1.55;display:flex;gap:10px;align-items:flex-start}
     #vision-root .vz-call-list{display:flex;flex-direction:column;gap:11px}
-    #vision-root .vz-callrow{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:18px;padding:15px 17px;display:flex;align-items:center;gap:16px;cursor:pointer;box-shadow:0 8px 24px -16px rgba(60,69,163,.18)}
+    #vision-root .vz-callrow{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:18px;padding:15px 17px;display:flex;align-items:center;gap:16px;cursor:pointer;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
     #vision-root .vz-callrow:hover{border-color:var(--vz-lav)}
     #vision-root .vz-badge{font-size:10px;font-weight:700;letter-spacing:.06em;background:var(--vz-navy);color:#fff;padding:4px 10px;border-radius:999px;white-space:nowrap}
     #vision-root .vz-callrow-main{flex:1;min-width:0} #vision-root .vz-callrow-main h3{font-size:14.5px;color:var(--vz-ink)}
@@ -740,7 +740,7 @@ const Vision = (() => {
     #vision-root .vz-comp-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap;font-size:14px;color:var(--vz-ink)}
     #vision-root .vz-tag-navy{font-size:10px;font-weight:700;letter-spacing:.1em;background:var(--vz-navy);color:#fff;padding:3px 9px;border-radius:999px;margin-right:6px}
     #vision-root .vz-main{display:flex;flex-direction:column;gap:16px}
-    #vision-root .vz-block{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:20px 22px;box-shadow:0 8px 24px -16px rgba(60,69,163,.18)}
+    #vision-root .vz-block{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:20px 22px;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
     #vision-root .vz-block-h{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;color:var(--vz-ink)}
     #vision-root .vz-num-badge{width:24px;height:24px;border-radius:8px;background:var(--vz-navy);color:var(--vz-yellow);display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
     #vision-root .vz-block .vz-help{margin:6px 0 12px}
@@ -749,31 +749,31 @@ const Vision = (() => {
     #vision-root .vz-ref-search .vz-btn{white-space:nowrap}
     #vision-root .vz-num-row{display:flex;align-items:center;gap:12px}
     #vision-root .vz-comp-single{max-width:860px;margin:0 auto}
-    #vision-root .vz-cp-bar{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:12px;margin-bottom:16px;box-shadow:0 8px 24px -18px rgba(60,69,163,.18);overflow:hidden}
+    #vision-root .vz-cp-bar{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:12px;margin-bottom:16px;box-shadow:0 8px 24px -18px rgba(67,18,216,.18);overflow:hidden}
     #vision-root .vz-cp-toggle{width:100%;display:flex;align-items:center;gap:8px;background:transparent;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:var(--vz-ink);padding:12px 16px}
     #vision-root .vz-cp-bar.vz-open .vz-cp-toggle{border-bottom:1px solid var(--vz-line)}
     #vision-root .vz-chev{color:var(--vz-lav);font-size:12px}
     #vision-root .vz-cp-body{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 22px;padding:6px 16px 12px}
     #vision-root .vz-stepper{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
     /* modal IA (fuera de #vision-root) */
-    .vz-modal-ov{position:fixed;inset:0;background:rgba(34,35,81,.5);z-index:70;display:flex;align-items:center;justify-content:center;padding:20px;font-family:inherit}
-    .vz-modal{background:#fff;border-radius:20px;width:min(560px,96vw);max-height:88vh;overflow:auto;box-shadow:0 30px 80px -20px rgba(34,35,81,.6)}
-    .vz-modal-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;font-weight:700;color:#3c45a3;font-size:15px;border-bottom:1px solid #e7e1f3}
-    .vz-modal-x{border:none;background:#f0edeb;width:28px;height:28px;border-radius:999px;cursor:pointer;color:#55577a;font-size:14px}
+    .vz-modal-ov{position:fixed;inset:0;background:rgba(27,7,89,.5);z-index:70;display:flex;align-items:center;justify-content:center;padding:20px;font-family:inherit}
+    .vz-modal{background:#fff;border-radius:20px;width:min(560px,96vw);max-height:88vh;overflow:auto;box-shadow:0 30px 80px -20px rgba(27,7,89,.6)}
+    .vz-modal-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;font-weight:700;color:#4312d8;font-size:15px;border-bottom:1px solid #efe8fe}
+    .vz-modal-x{border:none;background:#f2f2f2;width:28px;height:28px;border-radius:999px;cursor:pointer;color:#55577a;font-size:14px}
     .vz-modal-body{padding:10px 20px 16px}
     .vz-modal-body .vz-help{font-size:13px;color:#55577a}
     .vz-modal-body .vz-lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#55577a;margin-bottom:6px}
-    .vz-modal-body .vz-field{width:100%;border:1.5px solid #d6d3dc;border-radius:12px;padding:11px 13px;font-family:inherit;font-size:14px;color:#222351;background:#f0edeb;resize:vertical;box-sizing:border-box;line-height:1.55}
-    .vz-modal-foot{display:flex;justify-content:flex-end;gap:10px;padding:14px 20px;border-top:1px solid #e7e1f3}
+    .vz-modal-body .vz-field{width:100%;border:1.5px solid #d6d3dc;border-radius:12px;padding:11px 13px;font-family:inherit;font-size:14px;color:#1b0759;background:#f2f2f2;resize:vertical;box-sizing:border-box;line-height:1.55}
+    .vz-modal-foot{display:flex;justify-content:flex-end;gap:10px;padding:14px 20px;border-top:1px solid #efe8fe}
     .vz-modal .vz-btn{border:none;border-radius:999px;padding:10px 16px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
-    .vz-modal .vz-btn-primary{background:#d6e949;color:#3c45a3} .vz-modal .vz-btn-ghost{background:transparent;color:#3c45a3;border:1px solid #3c45a3}
+    .vz-modal .vz-btn-primary{background:#e9ff60;color:#4312d8} .vz-modal .vz-btn-ghost{background:transparent;color:#4312d8;border:1px solid #4312d8}
     #vision-root .vz-step{flex:1;min-width:110px;border-top:3px solid var(--vz-line2);padding-top:9px;cursor:pointer}
     #vision-root .vz-step-n{font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--vz-muted)} #vision-root .vz-step-t{font-size:12.5px;font-weight:600;color:var(--vz-muted)}
     #vision-root .vz-step.vz-done{border-color:var(--vz-green)} #vision-root .vz-step.vz-done .vz-step-n{color:var(--vz-green)}
     #vision-root .vz-step.vz-active{border-color:var(--vz-yellow)} #vision-root .vz-step.vz-active .vz-step-n,#vision-root .vz-step.vz-active .vz-step-t{color:var(--vz-ink)}
     #vision-root .vz-cols{display:grid;grid-template-columns:1.55fr 1fr;gap:20px;align-items:start}
     @media(max-width:900px){#vision-root .vz-cols{grid-template-columns:1fr}}
-    #vision-root .vz-q{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:24px;box-shadow:0 8px 24px -14px rgba(60,69,163,.18)}
+    #vision-root .vz-q{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:24px;box-shadow:0 8px 24px -14px rgba(67,18,216,.18)}
     #vision-root .vz-qn{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--vz-violet);text-transform:uppercase}
     #vision-root .vz-q h2{font-size:21px;font-weight:600;color:var(--vz-navy);margin:8px 0 6px;line-height:1.25} #vision-root .vz-help{font-size:13px;color:var(--vz-muted);margin-bottom:16px}
     #vision-root .vz-lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--vz-muted);margin-bottom:6px}
@@ -788,7 +788,7 @@ const Vision = (() => {
     #vision-root .vz-review{background:var(--vz-ground);border-radius:12px;padding:16px;font-size:13px;color:var(--vz-muted);line-height:1.9}
     #vision-root .vz-btns{display:flex;justify-content:space-between;gap:12px;margin-top:18px}
     #vision-root .vz-rail{display:flex;flex-direction:column;gap:14px;position:sticky;top:16px}
-    #vision-root .vz-rail-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:16px;padding:16px 17px;box-shadow:0 8px 24px -16px rgba(60,69,163,.18)}
+    #vision-root .vz-rail-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:16px;padding:16px 17px;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
     #vision-root .vz-rail-soft{background:var(--vz-lavsoft);border-color:var(--vz-lav)}
     #vision-root .vz-rc-head{display:flex;align-items:center;gap:8px;margin-bottom:10px} #vision-root .vz-dot{width:7px;height:7px;border-radius:50%;background:var(--vz-green)} #vision-root .vz-rc-head h4{font-size:12.5px;color:var(--vz-ink)} #vision-root .vz-locked{margin-left:auto;font-size:10px;font-weight:700;color:var(--vz-muted)}
     #vision-root .vz-rc-item{padding:8px 0;border-top:1px solid var(--vz-line);font-size:12.5px} #vision-root .vz-rc-item:first-of-type{border-top:none}
@@ -796,11 +796,11 @@ const Vision = (() => {
     #vision-root .vz-rc-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px} #vision-root .vz-rc-tag{font-size:11px;background:var(--vz-lavsoft);color:var(--vz-navy);padding:2px 8px;border-radius:6px;font-weight:600}
     #vision-root .vz-simi{margin-top:20px} #vision-root .vz-simi-head{display:flex;align-items:center;gap:8px;margin-bottom:12px} #vision-root .vz-simi-head h3{font-size:15px;color:var(--vz-ink)}
     #vision-root .vz-simi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
-    #vision-root .vz-scard{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:12px;padding:14px;cursor:pointer;box-shadow:0 8px 24px -16px rgba(60,69,163,.18)}
+    #vision-root .vz-scard{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:12px;padding:14px;cursor:pointer;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
     #vision-root .vz-scard:hover{border-color:var(--vz-lav)} #vision-root .vz-score{display:inline-flex;gap:5px;font-size:11px;font-weight:700;color:var(--vz-green);background:var(--vz-greensoft);padding:2px 8px;border-radius:20px}
     #vision-root .vz-scard h4{font-size:13px;color:var(--vz-ink);margin:9px 0 5px;line-height:1.3} #vision-root .vz-add{margin-top:10px;font-size:11.5px;font-weight:700;color:var(--vz-navy)}
     #vision-root .vz-brief-wrap{display:grid;grid-template-columns:1fr 260px;gap:22px;align-items:start} @media(max-width:820px){#vision-root .vz-brief-wrap{grid-template-columns:1fr}}
-    #vision-root .vz-brief{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:24px;overflow:hidden;box-shadow:0 8px 24px -14px rgba(60,69,163,.18)}
+    #vision-root .vz-brief{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:24px;overflow:hidden;box-shadow:0 8px 24px -14px rgba(67,18,216,.18)}
     #vision-root .vz-brief-hero{background:linear-gradient(120deg,var(--vz-navy),var(--vz-navy2));color:#fff;padding:26px 28px} #vision-root .vz-brief-hero h1{font-size:25px;margin:8px 0 12px;color:#fff;line-height:1.2}
     #vision-root .vz-hero-meta{display:flex;gap:8px;flex-wrap:wrap} #vision-root .vz-hm{font-size:11.5px;font-weight:600;background:rgba(255,255,255,.12);padding:5px 12px;border-radius:999px} #vision-root .vz-hm-y{background:var(--vz-yellow);color:var(--vz-navy)}
     #vision-root .vz-brief-body{padding:24px 28px;display:flex;flex-direction:column;gap:22px} #vision-root .vz-bsec p{font-size:14px;color:var(--vz-ink);line-height:1.6;margin-top:7px} #vision-root .vz-euval p{border-left:3px solid var(--vz-yellow);padding-left:14px}
@@ -808,19 +808,19 @@ const Vision = (() => {
     #vision-root .vz-seek-k{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--vz-muted)} #vision-root .vz-seek-v{font-size:13.5px;color:var(--vz-ink);font-weight:600;margin-top:4px;line-height:1.4}
     #vision-root .vz-ref-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:7px} #vision-root .vz-ref{background:var(--vz-ground);border-radius:10px;padding:11px 13px;font-size:12px} #vision-root .vz-ref b{color:var(--vz-ink);display:block;margin-bottom:3px;line-height:1.3} #vision-root .vz-ref span{color:var(--vz-muted)}
     #vision-root .vz-brief-side{display:flex;flex-direction:column;gap:14px;position:sticky;top:16px}
-    #vision-root .vz-toggle-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:16px;padding:17px;box-shadow:0 8px 24px -16px rgba(60,69,163,.18)}
+    #vision-root .vz-toggle-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:16px;padding:17px;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
     #vision-root .vz-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:10px} #vision-root .vz-toggle-row h4{font-size:13.5px;color:var(--vz-ink)}
     #vision-root .vz-switch{width:44px;height:25px;border-radius:20px;background:var(--vz-line2);position:relative;cursor:pointer;flex-shrink:0;transition:background .2s} #vision-root .vz-switch::after{content:"";position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
     #vision-root .vz-switch.vz-on{background:var(--vz-navy)} #vision-root .vz-switch.vz-on::after{left:22px}
     #vision-root .vz-vis-state{font-size:12px;font-weight:700;margin-top:12px;padding:9px 12px;border-radius:9px;text-align:center} #vision-root .vz-vis-priv{background:var(--vz-ground);color:var(--vz-navy)} #vision-root .vz-vis-pub{background:var(--vz-greensoft);color:var(--vz-green)}
     /* drawer (fuera de #vision-root) */
-    .vz-drawer-ov{position:fixed;inset:0;background:rgba(34,35,81,.42);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s} .vz-drawer-ov.vz-on{opacity:1;pointer-events:auto}
-    .vz-drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,92vw);background:#fff;z-index:61;box-shadow:-16px 0 40px -18px rgba(34,35,81,.5);transform:translateX(100%);transition:transform .26s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;font-family:inherit}
+    .vz-drawer-ov{position:fixed;inset:0;background:rgba(27,7,89,.42);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s} .vz-drawer-ov.vz-on{opacity:1;pointer-events:auto}
+    .vz-drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,92vw);background:#fff;z-index:61;box-shadow:-16px 0 40px -18px rgba(27,7,89,.5);transform:translateX(100%);transition:transform .26s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;font-family:inherit}
     .vz-drawer.vz-on{transform:translateX(0)}
-    .vz-dr-top{background:linear-gradient(120deg,#3c45a3,#514daa);color:#fff;padding:20px 22px 18px;position:relative} .vz-dr-close{position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:999px;border:none;background:rgba(255,255,255,.14);color:#fff;font-size:16px;cursor:pointer}
-    .vz-dr-score{display:inline-flex;gap:5px;font-size:11px;font-weight:700;color:#3c45a3;background:#d6e949;padding:3px 9px;border-radius:20px} .vz-dr-top h2{font-size:18px;margin:12px 0 6px;color:#fff;line-height:1.28} .vz-dr-meta{font-size:12px;color:#e7e1f3}
-    .vz-dr-body{padding:20px 22px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:18px} .vz-dr-body .vz-eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#55577a;display:block;margin-bottom:6px} .vz-dr-sec p{font-size:13.5px;color:#222351;line-height:1.62;margin:0}
-    .vz-dr-actions{padding:14px 22px;border-top:1px solid #e7e1f3;display:flex;gap:9px} .vz-drawer .vz-btn{border:none;border-radius:999px;padding:10px 14px;font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit} .vz-drawer .vz-btn-primary{background:#d6e949;color:#3c45a3}
+    .vz-dr-top{background:linear-gradient(120deg,#4312d8,#7349f0);color:#fff;padding:20px 22px 18px;position:relative} .vz-dr-close{position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:999px;border:none;background:rgba(255,255,255,.14);color:#fff;font-size:16px;cursor:pointer}
+    .vz-dr-score{display:inline-flex;gap:5px;font-size:11px;font-weight:700;color:#4312d8;background:#e9ff60;padding:3px 9px;border-radius:20px} .vz-dr-top h2{font-size:18px;margin:12px 0 6px;color:#fff;line-height:1.28} .vz-dr-meta{font-size:12px;color:#efe8fe}
+    .vz-dr-body{padding:20px 22px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:18px} .vz-dr-body .vz-eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#55577a;display:block;margin-bottom:6px} .vz-dr-sec p{font-size:13.5px;color:#1b0759;line-height:1.62;margin:0}
+    .vz-dr-actions{padding:14px 22px;border-top:1px solid #efe8fe;display:flex;gap:9px} .vz-drawer .vz-btn{border:none;border-radius:999px;padding:10px 14px;font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit} .vz-drawer .vz-btn-primary{background:#e9ff60;color:#4312d8}
     `;
     const st = document.createElement('style'); st.id = 'vision-styles'; st.textContent = css; document.head.appendChild(st);
   }

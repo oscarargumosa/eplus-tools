@@ -20,7 +20,7 @@ const AdminOrgClaims = (() => {
   const DOC_LABEL = { estatutos: 'Estatutos', escrituras: 'Escrituras', acta_constitucion: 'Acta de constitución', poderes: 'Acreditación de poderes', otro: 'Otro documento' };
   const STATUS = {
     pending:  ['Pendiente de revisión', 'bg-lavender-soft text-primary'],
-    verified: ['Verificada', 'bg-[#f3f8d2] text-primary border border-secondary-fixed'],
+    verified: ['Verificada', 'bg-[#f8ffd9] text-primary border border-secondary-fixed'],
     rejected: ['Rechazada', 'bg-error-container text-on-error-container'],
   };
   const announce = (msg) => { const el = document.getElementById('aoc-status-live'); if (el) el.textContent = msg; };

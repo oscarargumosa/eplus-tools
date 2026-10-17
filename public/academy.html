@@ -10,11 +10,11 @@
   :root{
     /* Paleta del manual de marca (oct-2026). Los estados de revisión usan
        azul / lima / lavanda / gris; el verde queda solo para «correcto». */
-    --navy:#3c45a3; --violet:#514daa; --yellow:#d6e949; --yellow2:#c3d63a;
-    --lav:#e7e1f3; --lav2:#f8f7f5; --lavanda:#997fc7; --cream:#f0edeb;
+    --navy:#4312d8; --violet:#7349f0; --yellow:#e9ff60; --yellow2:#d4ec3c;
+    --lav:#efe8fe; --lav2:#f8f8f8; --lavanda:#b392f6; --cream:#f2f2f2;
     --green:#1e7d3a; --red:#ba1a1a; --gray:#55577a;
-    --ink:#222351; --soft:#55577a; --line:#d6d3dc;
-    --lima-bg:#f3f8d2; --lima-bg2:#fafcea;
+    --ink:#1b0759; --soft:#55577a; --line:#d6d3dc;
+    --lima-bg:#f8ffd9; --lima-bg2:#fafcea;
   }
   *{box-sizing:border-box}
   body{margin:0;font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--lav2);font-size:14px}
@@ -42,7 +42,7 @@
   .chip:hover{border-color:var(--navy)}
   .chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
   .wrap{padding:0 28px 60px}
-  table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin-top:18px;box-shadow:0 1px 3px rgba(60,69,163,.06)}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin-top:18px;box-shadow:0 1px 3px rgba(67,18,216,.06)}
   th{background:var(--navy);color:#fff;text-align:left;padding:11px 12px;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;position:sticky;top:0}
   td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top;font-size:13px;line-height:1.45}
   tr:hover td{background:var(--lav2)}
@@ -75,7 +75,7 @@
   .cur-note{margin:12px 0 0;font-size:12.5px;color:var(--ink);max-width:960px;line-height:1.55;background:var(--lav2);padding:11px 15px;border-radius:8px;border-left:3px solid var(--navy)}
   .cur-sec{margin:26px 28px 6px;font-size:15.5px;color:var(--navy)}
   .cur-sec small{color:var(--soft);font-weight:400;font-size:12.5px}
-  .modcard{background:#fff;margin:10px 28px;border-radius:12px;border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 3px rgba(60,69,163,.05)}
+  .modcard{background:#fff;margin:10px 28px;border-radius:12px;border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 3px rgba(67,18,216,.05)}
   .modcard h3{margin:0;padding:12px 16px;background:var(--lav2);font-size:14px;color:var(--navy);font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
   .mc-code{background:var(--navy);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
   .mc-bloque{font-size:11px;color:var(--soft);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
@@ -102,7 +102,7 @@
   .ready-flag{background:var(--yellow);color:var(--navy);border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700}
   /* cursos (acordeón) */
   .mc-desc{margin:0;padding:9px 16px;font-size:12.5px;color:var(--soft);background:#fff;border-bottom:1px solid var(--lav2);line-height:1.5}
-  .course{background:#fff;margin:14px 28px;border-radius:14px;border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 3px rgba(60,69,163,.07)}
+  .course{background:#fff;margin:14px 28px;border-radius:14px;border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 3px rgba(67,18,216,.07)}
   .course-head{display:flex;align-items:center;gap:12px;padding:15px 20px;cursor:pointer;background:linear-gradient(90deg,var(--navy),var(--violet));color:#fff;user-select:none}
   .course-head:hover{filter:brightness(1.08)}
   .course-head h2{margin:0;font-size:16.5px;font-weight:600}
@@ -115,9 +115,9 @@
   .course.open .course-body{display:block}
   .course-desc{margin:14px 28px 4px;font-size:12.5px;color:var(--ink);background:var(--lav2);padding:11px 15px;border-radius:8px;border-left:3px solid var(--navy);line-height:1.55}
   /* modal lección */
-  .lmodal{position:fixed;inset:0;background:rgba(34,35,81,.5);display:none;align-items:flex-start;justify-content:center;z-index:100;padding:30px 16px;overflow-y:auto}
+  .lmodal{position:fixed;inset:0;background:rgba(27,7,89,.5);display:none;align-items:flex-start;justify-content:center;z-index:100;padding:30px 16px;overflow-y:auto}
   .lmodal.open{display:flex}
-  .lmodal-box{background:var(--lav2);border-radius:16px;max-width:880px;width:100%;box-shadow:0 20px 60px rgba(34,35,81,.3);margin:auto}
+  .lmodal-box{background:var(--lav2);border-radius:16px;max-width:880px;width:100%;box-shadow:0 20px 60px rgba(27,7,89,.3);margin:auto}
   .lmodal-head{position:sticky;top:0;background:var(--navy);color:#fff;padding:16px 22px;border-radius:16px 16px 0 0;display:flex;align-items:center;gap:14px;z-index:5}
   .lmodal-head .back{background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:8px;padding:7px 14px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
   .lmodal-head .back:hover{background:rgba(255,255,255,.28)}
@@ -148,7 +148,7 @@
   .narr-help{font-size:11.5px;color:var(--soft);margin:0 0 10px}
   .narration-box{white-space:pre-wrap;line-height:1.78;background:var(--lima-bg2);border:1px solid var(--yellow);border-radius:8px;padding:14px 16px;font-size:14.5px}
   mark.hl{background:var(--yellow);color:inherit;border-radius:3px;padding:0 1px;cursor:pointer;box-shadow:inset 0 -2px 0 var(--yellow2)}
-  .sel-note-btn{position:fixed;z-index:300;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:7px 12px;font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;box-shadow:0 4px 14px rgba(34,35,81,.28)}
+  .sel-note-btn{position:fixed;z-index:300;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:7px 12px;font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;box-shadow:0 4px 14px rgba(27,7,89,.28)}
   .sel-note-btn:hover{background:var(--violet)}
   .pending-quote{background:var(--lav);border:1px solid var(--lavanda);border-radius:8px;padding:6px 10px;font-size:12px;color:var(--navy);display:flex;justify-content:space-between;gap:8px;align-items:center}
   .pending-quote button{border:none;background:none;color:var(--navy);font-weight:700;cursor:pointer;font-size:13px}

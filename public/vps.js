@@ -17,7 +17,7 @@ async function api(path, params = {}) {
   const t = getToken();
   const r = await fetch(url, { headers: t ? { Authorization: `Bearer ${t}` } : {} });
   if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.pathname); throw new Error('UNAUTHORIZED'); }
-  if (r.status === 403) { document.body.innerHTML = '<div style="padding:40px;font-family:Manrope;color:#fff;background:#06003E;min-height:100vh"><h1>403 — Solo admin</h1><p>Tu cuenta no tiene rol admin.</p><a style="color:#c3d63a" href="/">Volver</a></div>'; throw new Error('FORBIDDEN'); }
+  if (r.status === 403) { document.body.innerHTML = '<div style="padding:40px;font-family:Manrope;color:#fff;background:#06003E;min-height:100vh"><h1>403 — Solo admin</h1><p>Tu cuenta no tiene rol admin.</p><a style="color:#d4ec3c" href="/">Volver</a></div>'; throw new Error('FORBIDDEN'); }
   const j = await r.json();
   if (!j.ok) throw new Error(j.error?.message || 'API error');
   return j.data;
@@ -78,7 +78,7 @@ function table(target, columns, rows) {
 }
 
 const charts = {};
-function bar(canvasId, labels, dataset, color = '#c3d63a') {
+function bar(canvasId, labels, dataset, color = '#d4ec3c') {
   charts[canvasId]?.destroy();
   const ctx = document.getElementById(canvasId);
   charts[canvasId] = new Chart(ctx, {
@@ -176,7 +176,7 @@ loaders.timeline = async () => {
   const refresh = async () => {
     const rows = await api('/v1/vps/eacea/timeline', { family: fF.value, country: fC.value });
     lines('ch-timeline', rows.map(r => r.funding_year), [
-      { label: 'Proyectos',   data: rows.map(r => +r.projects),       borderColor: '#c3d63a', backgroundColor: 'rgba(231,235,0,0.15)', tension: 0.2, fill: false, yAxisID: 'y' },
+      { label: 'Proyectos',   data: rows.map(r => +r.projects),       borderColor: '#d4ec3c', backgroundColor: 'rgba(231,235,0,0.15)', tension: 0.2, fill: false, yAxisID: 'y' },
       { label: 'Con informe', data: rows.map(r => +r.with_report),    borderColor: '#7d8cff', backgroundColor: 'rgba(125,140,255,0.15)', tension: 0.2, fill: false, yAxisID: 'y' }
     ]);
     table('tbl-timeline', [
@@ -322,7 +322,7 @@ loaders.writing = async () => {
   charts['ch-writing']?.destroy();
   const labels = rows.map(r => fmt.family(r.eacea_family));
   const tags = ['pct_innov','pct_digital','pct_green','pct_inclusion','pct_youth','pct_gender','pct_business'];
-  const colors = ['#c3d63a','#7d8cff','#7df3a3','#ff8ec7','#ffaa66','#a78bfa','#5fd7e0'];
+  const colors = ['#d4ec3c','#7d8cff','#7df3a3','#ff8ec7','#ffaa66','#a78bfa','#5fd7e0'];
   charts['ch-writing'] = new Chart(document.getElementById('ch-writing'), {
     type: 'bar',
     data: {

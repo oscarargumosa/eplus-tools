@@ -124,8 +124,8 @@ const Research = (() => {
       // Failed sources — collapsible section
       if (failed.length) {
         html += `
-          <div class="mt-6 border border-[#d6e949] rounded-xl overflow-hidden">
-            <button id="btn-toggle-failed" class="w-full flex items-center justify-between px-4 py-3 bg-[#f3f8d2] hover:bg-secondary-fixed/40 transition-colors text-left">
+          <div class="mt-6 border border-[#e9ff60] rounded-xl overflow-hidden">
+            <button id="btn-toggle-failed" class="w-full flex items-center justify-between px-4 py-3 bg-[#f8ffd9] hover:bg-secondary-fixed/40 transition-colors text-left">
               <span class="flex items-center gap-2 text-sm text-ink font-medium">
                 <span class="material-symbols-outlined text-[18px]">warning</span>
                 ${failed.length} source${failed.length > 1 ? 's' : ''} could not be downloaded automatically
@@ -133,7 +133,7 @@ const Research = (() => {
               <span class="material-symbols-outlined text-[16px] text-primary toggle-arrow">expand_more</span>
             </button>
             <div id="failed-sources-list" class="hidden">
-              <div class="px-4 py-2 bg-[#f3f8d2]/50 border-b border-[#d6e949]/50">
+              <div class="px-4 py-2 bg-[#f8ffd9]/50 border-b border-[#e9ff60]/50">
                 <p class="text-xs text-ink/80">These papers need to be downloaded manually from the source website and uploaded via "Upload Paper".</p>
               </div>
               ${renderSourceCards(failed, 'failed')}

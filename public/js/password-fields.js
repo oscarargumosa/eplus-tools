@@ -101,8 +101,8 @@
     '.pw-eye{position:absolute;right:.35rem;top:50%;transform:translateY(-50%);width:2.4rem;height:2.4rem;' +
     'display:inline-flex;align-items:center;justify-content:center;border:0;background:transparent;' +
     'border-radius:999px;color:#5b5f7a;cursor:pointer}' +
-    '.pw-eye:hover{background:rgba(60,69,163,.08);color:#3c45a3}' +
-    '.pw-eye:focus-visible{outline:2px solid #3c45a3;outline-offset:1px}' +
+    '.pw-eye:hover{background:rgba(67,18,216,.08);color:#4312d8}' +
+    '.pw-eye:focus-visible{outline:2px solid #4312d8;outline-offset:1px}' +
     '.pw-eye .material-symbols-outlined{font-size:20px}' +
     '.pw-field>input{margin-bottom:0 !important}' +
     '.pw-match{font-size:12px;font-weight:600;margin:.35rem 0 0;min-height:1em}' +

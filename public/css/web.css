@@ -2,17 +2,17 @@
    Web pública — hoja común de las páginas de contenido.
    Diales (criterio de composición del ecosistema): varianza 5,
    movimiento 3, densidad 4. Índice y lectura, no escaparate.
-   Marca (manual oct-2026): azul #3c45a3 · lima #d6e949 · lavanda ·
+   Marca (manual oct-2026): azul #4312d8 · lima #e9ff60 · lavanda ·
    crema. Un solo acento lima por pantalla (aquí, el icono de la cabecera).
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  --navy:      #3c45a3;
-  --violet:    #514daa;
-  --yellow:    #d6e949;       /* lima */
-  --lav:       #997fc7;
-  --lav-soft:  #e7e1f3;
-  --cream:     #f0edeb;
-  --ink:       #222351;
+  --navy:      #4312d8;
+  --violet:    #7349f0;
+  --yellow:    #e9ff60;       /* lima */
+  --lav:       #b392f6;
+  --lav-soft:  #efe8fe;
+  --cream:     #f2f2f2;
+  --ink:       #1b0759;
   --muted:     #55577a;
   --line:      #d6d3dc;
   --surface:   #ffffff;

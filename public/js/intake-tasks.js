@@ -47,9 +47,9 @@ const IntakeTasks = (() => {
 
   // Colores de WP con la paleta de marca (misma tabla que intake-gantt.js).
   // FILL = insignia del WP; INK = texto, iconos y tintes (≥4,5:1 sobre blanco); ON = texto sobre FILL.
-  const WP_COLORS = ['#3c45a3','#c3d63a','#997fc7','#222351','#8b93d6','#514daa','#c9b9e3','#8a8aa3'];
-  const WP_INK    = ['#3c45a3','#222351','#6e55a6','#222351','#3c45a3','#514daa','#6e55a6','#55577a'];
-  const WP_ON     = ['#ffffff','#222351','#ffffff','#d6e949','#222351','#ffffff','#222351','#ffffff'];
+  const WP_COLORS = ['#4312d8','#d4ec3c','#b392f6','#1b0759','#8b93d6','#7349f0','#c9b9e3','#8a8aa3'];
+  const WP_INK    = ['#4312d8','#1b0759','#5b2fd6','#1b0759','#4312d8','#7349f0','#5b2fd6','#55577a'];
+  const WP_ON     = ['#ffffff','#1b0759','#ffffff','#e9ff60','#1b0759','#ffffff','#1b0759','#ffffff'];
   function wpColor(i) { return WP_INK[i % WP_INK.length]; } // aquí el color de trabajo es el INK
   function wpFill(i) { return WP_COLORS[i % WP_COLORS.length]; }
   function wpOn(i) { return WP_ON[i % WP_ON.length]; }
@@ -686,7 +686,7 @@ const IntakeTasks = (() => {
         ${prevStep !== null ? `<button data-goto="${prevStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors">
           <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
         </button>` : '<span></span>'}
-        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
+        ${nextStep !== null ? `<button data-goto="${nextStep}" class="intake-step-nav-btn inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform">
           ${nextLabel || 'Siguiente'} <span class="material-symbols-outlined text-lg">arrow_forward</span>
         </button>` : ''}
       </div>`;

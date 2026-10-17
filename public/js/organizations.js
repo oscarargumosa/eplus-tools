@@ -460,7 +460,7 @@ const Organizations = (() => {
       const hint = /404|not found/i.test(autoError)
         ? 'El servidor todavía no tiene el endpoint /v1/entities/:oid/projects. Reinicia node server.js para que cargue las rutas nuevas.'
         : `Detalle: ${autoError}`;
-      errorBanner = `<tr><td colspan="7" class="px-4 py-3 bg-[#f3f8d2] border-b border-[#d6e949] text-sm text-ink">
+      errorBanner = `<tr><td colspan="7" class="px-4 py-3 bg-[#f8ffd9] border-b border-[#e9ff60] text-sm text-ink">
         <span class="material-symbols-outlined text-[16px] align-middle mr-1">warning</span>
         No se pudo cargar el directorio Erasmus+ para OID ${esc(myOrg.oid)}. ${esc(hint)}
       </td></tr>`;
@@ -555,14 +555,14 @@ const Organizations = (() => {
      a partir del código de acción del contrato (KA153, KA220…) y,
      como fallback, del action_type textual del directorio. */
   const FAMILY_META = {
-    KA1:   { label: 'KA1 · Movilidad',     color: '#d6e949', on: '#3c45a3', icon: 'flight_takeoff' },
-    KA2:   { label: 'KA2 · Cooperación',   color: '#997fc7', on: '#ffffff', icon: 'handshake' },
-    KA3:   { label: 'KA3 · Apoyo político',color: '#e7e1f3', on: '#3c45a3', icon: 'policy' },
-    CB:    { label: 'Capacity Building',   color: '#222351', on: '#ffffff', icon: 'public' },
-    Sport: { label: 'Deporte',             color: '#ffffff', on: '#3c45a3', icon: 'sports_soccer' },
-    ESC:   { label: 'Cuerpo Solidaridad',  color: '#514daa', on: '#ffffff', icon: 'volunteer_activism' },
+    KA1:   { label: 'KA1 · Movilidad',     color: '#e9ff60', on: '#4312d8', icon: 'flight_takeoff' },
+    KA2:   { label: 'KA2 · Cooperación',   color: '#b392f6', on: '#ffffff', icon: 'handshake' },
+    KA3:   { label: 'KA3 · Apoyo político',color: '#efe8fe', on: '#4312d8', icon: 'policy' },
+    CB:    { label: 'Capacity Building',   color: '#1b0759', on: '#ffffff', icon: 'public' },
+    Sport: { label: 'Deporte',             color: '#ffffff', on: '#4312d8', icon: 'sports_soccer' },
+    ESC:   { label: 'Cuerpo Solidaridad',  color: '#7349f0', on: '#ffffff', icon: 'volunteer_activism' },
     JM:    { label: 'Jean Monnet',         color: '#8a8aa3', on: '#ffffff', icon: 'school' },
-    Otros: { label: 'Otros',               color: '#d6d3dc', on: '#222351', icon: 'category' },
+    Otros: { label: 'Otros',               color: '#d6d3dc', on: '#1b0759', icon: 'category' },
   };
   const FAMILY_ORDER = ['KA1', 'KA2', 'KA3', 'CB', 'Sport', 'ESC', 'JM', 'Otros'];
 
@@ -623,7 +623,7 @@ const Organizations = (() => {
       return `
         <div class="bg-white rounded-xl border border-outline-variant/30 p-3 flex flex-col">
           <div class="flex items-center gap-1.5 mb-1.5">
-            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${meta.color};color:${meta.on};box-shadow:inset 0 0 0 1px rgba(34,35,81,.12)">${meta.icon}</span>
+            <span class="material-symbols-outlined text-[16px] rounded-full p-1 leading-none" style="background:${meta.color};color:${meta.on};box-shadow:inset 0 0 0 1px rgba(27,7,89,.12)">${meta.icon}</span>
             <span class="text-[11px] font-bold text-on-surface leading-tight">${esc(meta.label)}</span>
           </div>
           <div class="flex items-baseline gap-1">
@@ -632,13 +632,13 @@ const Organizations = (() => {
           </div>
           <div class="text-[12px] font-semibold ${money ? 'text-on-surface-variant' : 'text-on-surface-variant/40'}">${money || '—'}</div>
           <div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden">
-            <div class="h-full rounded-full" style="width:${barPct}%;background:${meta.color};box-shadow:inset 0 0 0 1px rgba(34,35,81,.18)"></div>
+            <div class="h-full rounded-full" style="width:${barPct}%;background:${meta.color};box-shadow:inset 0 0 0 1px rgba(27,7,89,.18)"></div>
           </div>
         </div>`;
     }).join('');
 
     host.innerHTML = `
-      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#514daa,#3c45a3 55%,#222351)">
+      <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#7349f0,#4312d8 55%,#1b0759)">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Experiencia Erasmus+</div>
@@ -646,14 +646,14 @@ const Organizations = (() => {
           </div>
           <div class="text-right">
             <div class="text-[11px] font-bold uppercase tracking-wider text-lavender-soft">Financiación total movilizada</div>
-            <div class="text-4xl font-light leading-none mt-1" style="color:#d6e949">${fmtMoney(totalAmount) || '0 €'}</div>
+            <div class="text-4xl font-light leading-none mt-1" style="color:#e9ff60">${fmtMoney(totalAmount) || '0 €'}</div>
           </div>
         </div>
         <div class="mt-4 flex h-2.5 rounded-full overflow-hidden bg-white/15">${segments}</div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl bg-white/10 px-3.5 py-2.5">
             <div class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lavender-soft">
-              <span class="material-symbols-outlined text-[15px]" style="color:#d6e949">military_tech</span> Fondos gestionados como coordinador
+              <span class="material-symbols-outlined text-[15px]" style="color:#e9ff60">military_tech</span> Fondos gestionados como coordinador
             </div>
             <div class="text-xl font-light leading-tight mt-1">${fmtMoney(coordAmount) || '0 €'}</div>
             <div class="text-[11px] text-lavender-soft">${coordCount} proyecto${coordCount === 1 ? '' : 's'} liderado${coordCount === 1 ? '' : 's'}</div>
@@ -685,7 +685,7 @@ const Organizations = (() => {
           <div>
             <div class="flex items-center gap-2 flex-wrap mb-2">
               ${role ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${roleClr}">${esc(role)}</span>` : ''}
-              ${r.is_good_practice ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#f3f8d2] text-ink border border-[#d6e949]">★ Good practice</span>` : ''}
+              ${r.is_good_practice ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#f8ffd9] text-ink border border-[#e9ff60]">★ Good practice</span>` : ''}
               ${r.programme ? `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-lavender-soft text-primary border border-lavender/40">${esc(r.programme)}</span>` : ''}
             </div>
             <h2 class="text-xl font-bold text-on-surface leading-tight pr-12">${esc(r.project_title || '')}</h2>
@@ -709,7 +709,7 @@ const Organizations = (() => {
           ${r.project_identifier ? `<div class="pt-3 border-t border-outline-variant/20">
             <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/${encodeURIComponent(r.project_identifier)}"
                target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3c45a3] text-[#d6e949] text-sm font-bold hover:bg-[#514daa] transition-colors">
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#4312d8] text-[#e9ff60] text-sm font-bold hover:bg-[#7349f0] transition-colors">
               <span>Ver detalle completo en Erasmus+ Project Results Platform</span>
               <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
             </a>
@@ -823,8 +823,8 @@ const Organizations = (() => {
       iconSize: [30, 40],
       iconAnchor: [15, 39],
       html: '<svg width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">'
-        + '<path d="M15 1C7.3 1 1 7.2 1 14.9 1 25.3 15 39 15 39s14-13.7 14-24.1C29 7.2 22.7 1 15 1z" fill="#3c45a3" stroke="#222351" stroke-width="1.5"/>'
-        + '<circle cx="15" cy="15" r="5.5" fill="#d6e949"/></svg>',
+        + '<path d="M15 1C7.3 1 1 7.2 1 14.9 1 25.3 15 39 15 39s14-13.7 14-24.1C29 7.2 22.7 1 15 1z" fill="#4312d8" stroke="#1b0759" stroke-width="1.5"/>'
+        + '<circle cx="15" cy="15" r="5.5" fill="#e9ff60"/></svg>',
     });
   }
 
@@ -1763,7 +1763,7 @@ const Organizations = (() => {
   function verificationBadge(status) {
     const pill = 'inline-flex items-center gap-1 rounded-full text-[11px] font-bold px-2.5 py-1';
     if (status === 'verified') {
-      return `<span class="${pill} bg-[#f3f8d2] text-primary border border-secondary-fixed"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1">verified</span>Verificada</span>`;
+      return `<span class="${pill} bg-[#f8ffd9] text-primary border border-secondary-fixed"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1">verified</span>Verificada</span>`;
     }
     if (status === 'pending') {
       return `<span class="${pill} bg-lavender-soft text-primary border border-lavender/40"><span class="material-symbols-outlined text-[15px]">hourglass_top</span>Pendiente de revisión</span>`;

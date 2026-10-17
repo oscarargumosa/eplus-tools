@@ -4,16 +4,16 @@
    ═══════════════════════════════════════════════════════════════ */
 :root {
   /* Paleta del manual de marca (oct-2026) */
-  --ac-navy: #3c45a3;
-  --ac-navy-2: #514daa;      /* violeta: hover del azul */
-  --ac-yellow: #d6e949;      /* lima */
-  --ac-yellow-2: #c3d63a;    /* lima oscuro: hover */
-  --ac-lav: #997fc7;
-  --ac-lav-soft: #e7e1f3;
-  --ac-bg: #f8f7f5;
-  --ac-surface: #f0edeb;     /* crema */
+  --ac-navy: #4312d8;
+  --ac-navy-2: #7349f0;      /* violeta: hover del azul */
+  --ac-yellow: #e9ff60;      /* lima */
+  --ac-yellow-2: #d4ec3c;    /* lima oscuro: hover */
+  --ac-lav: #b392f6;
+  --ac-lav-soft: #efe8fe;
+  --ac-bg: #f8f8f8;
+  --ac-surface: #f2f2f2;     /* crema */
   --ac-card: #ffffff;
-  --ac-ink: #222351;
+  --ac-ink: #1b0759;
   --ac-muted: #55577a;
   --ac-line: #d6d3dc;
   --ac-error: #ba1a1a;
@@ -23,7 +23,7 @@
   --ac-ok: #1e7d3a;
   --ac-r: 20px;
   --ac-r-sm: 8px;
-  --ac-shadow: 0 1px 2px rgba(60,69,163, .06), 0 6px 20px rgba(60,69,163, .06);
+  --ac-shadow: 0 1px 2px rgba(67,18,216, .06), 0 6px 20px rgba(67,18,216, .06);
 }
 
 * { box-sizing: border-box; }
@@ -50,7 +50,7 @@ body { margin: 0; background: var(--ac-bg); color: var(--ac-ink); font-family: '
 .ac-btn:focus-visible, .ac-opt:focus-visible, .ac-syl a:focus-visible { outline: 3px solid var(--ac-navy-2); outline-offset: 2px; }
 
 /* Carga */
-.ac-skel { height: 120px; border-radius: var(--ac-r); background: linear-gradient(90deg, #f0edeb 0%, #f8f7f5 50%, #f0edeb 100%);
+.ac-skel { height: 120px; border-radius: var(--ac-r); background: linear-gradient(90deg, #f2f2f2 0%, #f8f8f8 50%, #f2f2f2 100%);
   background-size: 200% 100%; animation: ac-shimmer 1.4s linear infinite; margin-bottom: 16px; }
 .ac-skel--hero { height: 260px; }
 @keyframes ac-shimmer { to { background-position: -200% 0; } }
@@ -64,13 +64,13 @@ body { margin: 0; background: var(--ac-bg); color: var(--ac-ink); font-family: '
 .ac-hero h1 em { font-weight: 500; }
 .ac-hero h1 .ac-icon { display: inline-block; width: .7em; height: .7em; margin-left: .2em; vertical-align: -.04em;
   background: url('/img/marca/icono-lima.svg') no-repeat center / contain; }
-.ac-hero p { max-width: 58ch; margin: 14px 0 0; color: #e7e1f3; font-size: 16px; }
+.ac-hero p { max-width: 58ch; margin: 14px 0 0; color: #efe8fe; font-size: 16px; }
 .ac-hero img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 16px; display: block; }
 .ac-hero__actions { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .ac-hero .ac-btn--primary { background: var(--ac-yellow); color: var(--ac-navy) !important; }
 .ac-hero .ac-btn--primary:hover { background: var(--ac-yellow-2); }
 .ac-hero .ac-btn--ghost { color: #fff !important; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .35); }
-.ac-facts { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 22px; font-size: 13px; color: #e7e1f3; }
+.ac-facts { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 22px; font-size: 13px; color: #efe8fe; }
 .ac-facts b { color: #fff; font-weight: 600; }
 
 .ac-section { margin-top: 44px; }
@@ -79,7 +79,7 @@ body { margin: 0; background: var(--ac-bg); color: var(--ac-ink); font-family: '
 .ac-courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
 .ac-course { background: var(--ac-card); border-radius: var(--ac-r); box-shadow: var(--ac-shadow); overflow: hidden;
   text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .2s ease, box-shadow .2s ease; }
-.ac-course:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(60,69,163, .08), 0 14px 32px rgba(60,69,163, .1); }
+.ac-course:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(67,18,216, .08), 0 14px 32px rgba(67,18,216, .1); }
 .ac-course img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--ac-surface); }
 .ac-course__body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .ac-course__body h3 { font-size: 19px; font-weight: 700; }

@@ -79,7 +79,7 @@
   // Etiquetas y colores por severidad (renombradas y suavizadas).
   const SEVERITY_LABEL = { info: 'menor', warning: 'a revisar', critical: 'prioritario' };
   // Paleta de marca: menor = lavanda suave, a revisar = lima suave, prioritario = rojo de error suave
-  const SEVERITY_RING  = { info: 'border-lavender/40 bg-lavender-soft/60', warning: 'border-[#d6e949] bg-[#f3f8d2]', critical: 'border-error/25 bg-error-container/40' };
+  const SEVERITY_RING  = { info: 'border-lavender/40 bg-lavender-soft/60', warning: 'border-[#e9ff60] bg-[#f8ffd9]', critical: 'border-error/25 bg-error-container/40' };
   const SEVERITY_BADGE = { info: 'bg-lavender-soft text-primary', warning: 'bg-secondary-fixed text-primary', critical: 'bg-error-container text-on-error-container' };
   function sevLabel(s) { return SEVERITY_LABEL[s] || SEVERITY_LABEL.warning; }
   function sevRing(s)  { return SEVERITY_RING[s]  || SEVERITY_RING.warning; }
@@ -320,7 +320,7 @@
         <span class="material-symbols-outlined text-sm">${hasDiag ? 'refresh' : 'fact_check'}</span>
         ${hasDiag ? 'Re-lanzar diagnóstico' : 'Lanzar diagnóstico'}
       </button>
-      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
+      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
       ${allHandled ? `<button onclick="Master.goToCompress()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">arrow_forward</span>Pasar a Comprimir</button>` : ''}
     `;
   }
@@ -362,7 +362,7 @@
     const id = ch.id;
 
     return `
-      <details id="master-chapter-card-${esc(id)}" class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg mb-2 transition-shadow ${openItems.length ? 'ring-1 ring-[#d6e949]' : ''}" ${startOpen || openItems.length ? 'open' : ''} data-chapter-id="${esc(id)}">
+      <details id="master-chapter-card-${esc(id)}" class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg mb-2 transition-shadow ${openItems.length ? 'ring-1 ring-[#e9ff60]' : ''}" ${startOpen || openItems.length ? 'open' : ''} data-chapter-id="${esc(id)}">
         <summary class="px-4 py-3 cursor-pointer flex items-center justify-between hover:bg-surface-container-low">
           <div class="flex items-center gap-2 min-w-0">
             <span class="text-[10px] font-mono text-on-surface-variant uppercase">${esc(ch.chapter_type)}</span>
@@ -830,9 +830,9 @@
         animation: masterChapterFlash 1.4s ease-out;
       }
       @keyframes masterChapterFlash {
-        0%   { box-shadow: 0 0 0 0 rgba(214,233,73,0); background: rgba(214,233,73,0.30); }
-        20%  { box-shadow: 0 0 0 6px rgba(214,233,73,0.35); background: rgba(214,233,73,0.30); }
-        100% { box-shadow: 0 0 0 0 rgba(214,233,73,0); background: transparent; }
+        0%   { box-shadow: 0 0 0 0 rgba(233,255,96,0); background: rgba(233,255,96,0.30); }
+        20%  { box-shadow: 0 0 0 6px rgba(233,255,96,0.35); background: rgba(233,255,96,0.30); }
+        100% { box-shadow: 0 0 0 0 rgba(233,255,96,0); background: transparent; }
       }
     `;
     document.head.appendChild(s);
@@ -877,7 +877,7 @@
     const pageColor = g.total_pages_estimate > g.target_pages + 10
       ? 'text-red-700 bg-red-50 border-red-200'
       : g.total_pages_estimate > g.target_pages - 5
-        ? 'text-ink bg-[#f3f8d2] border-[#d6e949]'
+        ? 'text-ink bg-[#f8ffd9] border-[#e9ff60]'
         : 'text-primary bg-lavender-soft border-lavender/40';
     const pageBarColor = g.total_pages_estimate > g.target_pages + 10 ? 'bg-red-500'
       : g.total_pages_estimate > g.target_pages - 5 ? 'bg-secondary-fixed-dim' : 'bg-primary';
@@ -925,7 +925,7 @@
                 <option value="tr">Türkçe</option>
               </select>
             </div>
-            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#514daa] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
+            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
           </div>
         </div>
 
@@ -1001,7 +1001,7 @@
         badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-white/80' : 'text-violet'}">warning</span>`;
       }
     } else if (it.is_filled && it.kind !== 'wp' && it.kind !== 'declaration') {
-      badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-[#d6e949]' : 'text-primary'}">check_circle</span>`;
+      badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-[#e9ff60]' : 'text-primary'}">check_circle</span>`;
     }
     return `
       <button onclick="Master._selectFormField('${esc(it.id)}')" class="w-full text-left flex items-start gap-2 px-2 py-1.5 rounded-lg ${cls} mb-0.5 transition-colors">
@@ -1135,7 +1135,7 @@
           <h4 class="font-headline text-lg font-bold text-on-surface">${esc(it.label)}</h4>
           <div class="flex items-center gap-3 mt-1">
             <span class="text-xs ${charColor}"><strong>${it.char_count.toLocaleString('es-ES')}</strong>${it.max_chars ? ` / ${it.max_chars.toLocaleString('es-ES')}` : ''} chars · ~${it.page_estimate} pág</span>
-            ${it.is_filled ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-secondary-fixed text-primary">✓ rellenado</span>` : `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#f3f8d2] text-ink">sin contenido</span>`}
+            ${it.is_filled ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-secondary-fixed text-primary">✓ rellenado</span>` : `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#f8ffd9] text-ink">sin contenido</span>`}
             ${warnings.some(w => w.startsWith('over_limit')) ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-red-100 text-red-700">excede límite</span>` : ''}
           </div>
         </div>
@@ -1181,7 +1181,7 @@
   function _renderInlineTable(it) {
     if (!it.table_rows || !it.table_rows.length) {
       return `
-        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-4">
+        <div class="mt-4 border border-[#e9ff60] bg-[#f8ffd9] rounded-lg p-4">
           <div class="flex items-center gap-2 mb-1">
             <span class="material-symbols-outlined text-primary">warning</span>
             <span class="font-bold text-sm text-primary">Tabla ${esc(it.table_label || '')} vacía</span>
@@ -1245,7 +1245,7 @@
   function _renderWpBudgetTable(budget) {
     if (!budget || !Array.isArray(budget.rows) || !budget.rows.length) {
       return `
-        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+        <div class="mt-4 border border-[#e9ff60] bg-[#f8ffd9] rounded-lg p-3 flex items-center gap-2">
           <span class="material-symbols-outlined text-primary text-base">warning</span>
           <span class="text-xs text-ink"><strong>Sin presupuesto</strong> para este WP. Crea o regenera el budget en <strong>Diseñar / Calculator</strong>.</span>
         </div>
@@ -1255,7 +1255,7 @@
     const rowsWithMoney = budget.rows.filter(r => Number(r.total) > 0 || Number(r.person_months) > 0);
     if (!rowsWithMoney.length) {
       return `
-        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+        <div class="mt-4 border border-[#e9ff60] bg-[#f8ffd9] rounded-lg p-3 flex items-center gap-2">
           <span class="material-symbols-outlined text-primary text-base">warning</span>
           <span class="text-xs text-ink"><strong>Budget vacío</strong> para este WP. Asigna actividades en Calculator.</span>
         </div>
@@ -1361,7 +1361,7 @@
   function _renderWpSubtable(label, rows, columns) {
     if (!rows || !rows.length) {
       return `
-        <div class="mt-4 border border-[#d6e949] bg-[#f3f8d2] rounded-lg p-3 flex items-center gap-2">
+        <div class="mt-4 border border-[#e9ff60] bg-[#f8ffd9] rounded-lg p-3 flex items-center gap-2">
           <span class="material-symbols-outlined text-primary text-base">warning</span>
           <span class="text-xs text-ink"><strong>${esc(label)}</strong> vacío — rellénalo en Escribir → ${esc(label === 'Tasks' ? 'Tareas' : label === 'Milestones' ? 'Entregables (milestones)' : 'Entregables')}.</span>
         </div>
@@ -1392,7 +1392,7 @@
           <h4 class="font-headline text-lg font-bold text-on-surface">${esc(it.label)}</h4>
         </div>
       </div>
-      <div class="p-4 bg-[#f3f8d2] border border-[#d6e949] rounded-lg text-sm text-ink">
+      <div class="p-4 bg-[#f8ffd9] border border-[#e9ff60] rounded-lg text-sm text-ink">
         <p class="font-bold mb-1"><span class="material-symbols-outlined text-base align-middle">info</span> Declaración administrativa</p>
         <p class="text-xs">Las declaraciones de la sección 6 (double funding, FSTP, Seal of Excellence) se rellenan directamente en el portal EACEA al subir el formulario. La IA no las genera.</p>
       </div>
@@ -1636,7 +1636,7 @@
     s.textContent = `
       #master-working-overlay {
         position: fixed; inset: 0; z-index: 9999;
-        background: rgba(34, 35, 81, 0.55);
+        background: rgba(27,7,89, 0.55);
         backdrop-filter: blur(4px);
         display: flex; align-items: center; justify-content: center;
         animation: master-fade-in .25s ease-out;
@@ -1644,26 +1644,26 @@
       @keyframes master-fade-in { from { opacity: 0; } to { opacity: 1; } }
       .master-working-card {
         background: white; border-radius: 24px; padding: 36px 44px;
-        box-shadow: 0 20px 60px rgba(34,35,81,.25);
+        box-shadow: 0 20px 60px rgba(27,7,89,.25);
         max-width: 480px; text-align: center;
-        border: 1px solid rgba(60, 69, 163, .15);
+        border: 1px solid rgba(67,18,216, .15);
       }
       .master-pencil-wrapper { position: relative; width: 96px; height: 96px; margin: 0 auto 20px; }
       .master-pencil-paper {
         position: absolute; inset: 0; border-radius: 12px;
-        background: linear-gradient(180deg, #ffffff, #f8f7f5);
-        border: 1px solid #d6d3dc; box-shadow: 0 4px 12px rgba(34,35,81,.06);
+        background: linear-gradient(180deg, #ffffff, #f8f8f8);
+        border: 1px solid #d6d3dc; box-shadow: 0 4px 12px rgba(27,7,89,.06);
       }
       .master-pencil-paper::before, .master-pencil-paper::after {
         content: ''; position: absolute; left: 14px; right: 14px; height: 2px; border-radius: 2px;
-        background: linear-gradient(90deg, transparent 0%, #997fc7 50%, transparent 100%);
+        background: linear-gradient(90deg, transparent 0%, #b392f6 50%, transparent 100%);
         background-size: 200% 100%; animation: master-line-write 1.4s ease-in-out infinite;
       }
       .master-pencil-paper::before { top: 30px; }
       .master-pencil-paper::after  { top: 50px; animation-delay: .35s; }
       .master-pencil-line-3 {
         position: absolute; left: 14px; right: 32px; top: 70px; height: 2px; border-radius: 2px;
-        background: linear-gradient(90deg, transparent 0%, #997fc7 50%, transparent 100%);
+        background: linear-gradient(90deg, transparent 0%, #b392f6 50%, transparent 100%);
         background-size: 200% 100%; animation: master-line-write 1.4s ease-in-out infinite;
         animation-delay: .7s;
       }
@@ -1675,9 +1675,9 @@
       .master-pencil-icon {
         position: absolute; bottom: -6px; right: -6px;
         width: 40px; height: 40px; border-radius: 50%;
-        background: #3c45a3; color: #d6e949;
+        background: #4312d8; color: #e9ff60;
         display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 12px rgba(60,69,163,.4);
+        box-shadow: 0 4px 12px rgba(67,18,216,.4);
         animation: master-pencil-bounce 1.4s ease-in-out infinite;
       }
       @keyframes master-pencil-bounce {
@@ -1686,29 +1686,29 @@
         50%      { transform: translate(-12px, 0) rotate(0deg); }
         75%      { transform: translate(-6px, 3px) rotate(8deg); }
       }
-      .master-working-title { font-size: 18px; font-weight: 700; color: #3c45a3; margin-bottom: 6px; }
+      .master-working-title { font-size: 18px; font-weight: 700; color: #4312d8; margin-bottom: 6px; }
       .master-working-subtitle { font-size: 13px; color: #55577a; min-height: 20px; transition: opacity .3s; }
       .master-working-elapsed { margin-top: 16px; font-size: 11px; color: #8a8aa3; font-variant-numeric: tabular-nums; }
       .master-working-tip { margin-top: 18px; padding-top: 14px; border-top: 1px solid #d6d3dc; font-size: 11px; color: #55577a; font-style: italic; }
       .master-stream-viewer {
         margin-top: 20px; max-height: 240px; overflow-y: auto;
-        background: #222351; color: #e7e1f3; border-radius: 12px; padding: 14px 16px;
+        background: #1b0759; color: #efe8fe; border-radius: 12px; padding: 14px 16px;
         font-family: ui-monospace, SF Mono, Menlo, monospace; font-size: 11px; line-height: 1.5;
         text-align: left; white-space: pre-wrap; word-break: break-word; scroll-behavior: smooth; position: relative;
       }
-      .master-stream-viewer::after { content: '▋'; color: #d6e949; animation: master-cursor-blink 1s steps(1) infinite; }
+      .master-stream-viewer::after { content: '▋'; color: #e9ff60; animation: master-cursor-blink 1s steps(1) infinite; }
       @keyframes master-cursor-blink { 50% { opacity: 0; } }
-      .master-stream-empty { color: rgba(231,225,243,.7); font-style: italic; }
+      .master-stream-empty { color: rgba(239,232,254,.7); font-style: italic; }
       .master-chapter-list {
         margin-top: 16px; text-align: left; max-height: 200px; overflow-y: auto;
-        background: #f8f7f5; border-radius: 12px; padding: 10px 14px; border: 1px solid #d6d3dc;
+        background: #f8f8f8; border-radius: 12px; padding: 10px 14px; border: 1px solid #d6d3dc;
       }
       .master-chapter-item {
         display: flex; align-items: center; gap: 8px; padding: 4px 0;
         font-size: 11px; color: #55577a; transition: color .25s;
       }
-      .master-chapter-item.done { color: #3c45a3; font-weight: 600; }
-      .master-chapter-item.current { color: #222351; font-weight: 700; }
+      .master-chapter-item.done { color: #4312d8; font-weight: 600; }
+      .master-chapter-item.current { color: #1b0759; font-weight: 700; }
       .master-chapter-item.failed { color: #ba1a1a; }
       .master-chapter-icon { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
       .master-chapter-icon .material-symbols-outlined { font-size: 14px; }
@@ -1982,13 +1982,13 @@
   /* ── Toast ───────────────────────────────────────────────── */
 
   function showToast(title, body, kind = 'info') {
-    const color = kind === 'success' ? '#3c45a3' : kind === 'error' ? '#ba1a1a' : '#514daa';
+    const color = kind === 'success' ? '#4312d8' : kind === 'error' ? '#ba1a1a' : '#7349f0';
     const toast = document.createElement('div');
     toast.style.cssText = `
       position: fixed; top: 24px; right: 24px; z-index: 10000;
       background: white; border-left: 4px solid ${color};
       padding: 14px 18px; border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(34,35,81,.18);
+      box-shadow: 0 10px 30px rgba(27,7,89,.18);
       max-width: 480px;
       animation: master-toast-in .3s ease-out;
     `;

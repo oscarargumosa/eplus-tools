@@ -115,7 +115,7 @@ const MovilidadesUtils = (() => {
 
   function chipClass(status) {
     return ({
-      covered: 'bg-[#f3f8d2] text-ink border-secondary-fixed',
+      covered: 'bg-[#f8ffd9] text-ink border-secondary-fixed',
       partial: 'bg-lavender-soft text-violet border-lavender/40',
       cost:    'bg-white text-primary border-primary/30',
       na:      'bg-cream text-on-surface-variant border-outline-variant',

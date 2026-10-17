@@ -350,7 +350,7 @@ const Developer = (() => {
 
         <div class="space-y-3 mb-8">
           ${checks.map(c => `
-            <div class="flex items-center gap-4 p-4 rounded-xl border ${c.ok ? 'border-green-200 bg-green-50/50' : 'border-[#d6e949] bg-[#f3f8d2]'}">
+            <div class="flex items-center gap-4 p-4 rounded-xl border ${c.ok ? 'border-green-200 bg-green-50/50' : 'border-[#e9ff60] bg-[#f8ffd9]'}">
               <span class="material-symbols-outlined text-xl ${c.ok ? 'text-green-700' : 'text-primary'}">${c.ok ? 'check_circle' : 'warning'}</span>
               <div class="flex-1">
                 <div class="text-sm font-bold text-on-surface">${c.label}</div>
@@ -386,7 +386,7 @@ const Developer = (() => {
         </div>
 
         <div class="flex justify-center">
-          <button onclick="Developer._prepTab('consorcio')" class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#3c45a3] text-[#d6e949] font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.2)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(60,69,163,0.3)] active:scale-95 transition-all ${canGenerate ? '' : 'opacity-40 pointer-events-none'}">
+          <button onclick="Developer._prepTab('consorcio')" class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#4312d8] text-[#e9ff60] font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.2)] hover:scale-[1.03] hover:shadow-[0_28px_56px_rgba(67,18,216,0.3)] active:scale-95 transition-all ${canGenerate ? '' : 'opacity-40 pointer-events-none'}">
             <span class="material-symbols-outlined text-2xl">groups</span> Consorcio
           </button>
         </div>
@@ -404,8 +404,8 @@ const Developer = (() => {
     el.innerHTML = renderPhaseTabs(11) + `
       <div class="max-w-5xl">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-[#3c45a3]/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl text-[#3c45a3]">timeline</span>
+          <div class="w-10 h-10 rounded-xl bg-[#4312d8]/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl text-[#4312d8]">timeline</span>
           </div>
           <div>
             <h2 class="font-headline text-lg font-bold">Cronograma del proyecto</h2>
@@ -434,7 +434,7 @@ const Developer = (() => {
       IntakeGantt.render(document.getElementById('writer-gantt-container'), pid);
     } else {
       document.getElementById('writer-gantt-container').innerHTML = `
-        <div class="bg-[#f3f8d2] rounded-2xl border border-[#d6e949] p-8 text-center">
+        <div class="bg-[#f8ffd9] rounded-2xl border border-[#e9ff60] p-8 text-center">
           <span class="material-symbols-outlined text-4xl text-primary mb-2">timeline</span>
           <h3 class="font-headline text-base font-bold text-primary mb-1">Gantt no disponible</h3>
           <p class="text-sm text-ink">Define Work Packages y actividades en el Intake primero.</p>
@@ -452,8 +452,8 @@ const Developer = (() => {
     el.innerHTML = renderPhaseTabs(12) + `
       <div class="max-w-5xl">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-[#3c45a3]/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl text-[#3c45a3]">account_balance</span>
+          <div class="w-10 h-10 rounded-xl bg-[#4312d8]/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl text-[#4312d8]">account_balance</span>
           </div>
           <div>
             <h2 class="font-headline text-lg font-bold">Presupuesto</h2>
@@ -610,7 +610,7 @@ const Developer = (() => {
                     <span class="material-symbols-outlined text-xs">description</span> Original
                   </button>
                   ${variants.map(v => `
-                    <button onclick="Developer._selectVariant('${p.id}', '${v.id}')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold transition-all ${selectedVariant?.id === v.id ? 'bg-[#3c45a3] text-[#d6e949] shadow-sm' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/20'}">
+                    <button onclick="Developer._selectVariant('${p.id}', '${v.id}')" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold transition-all ${selectedVariant?.id === v.id ? 'bg-[#4312d8] text-[#e9ff60] shadow-sm' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/20'}">
                       <span class="material-symbols-outlined text-xs">auto_awesome</span> ${esc(v.category_label || v.category)}
                     </button>
                   `).join('')}
@@ -736,7 +736,7 @@ const Developer = (() => {
                 </div>
               </details>
             ` : `
-              <div class="bg-[#f3f8d2] border border-[#d6e949] rounded-xl p-3 text-xs text-ink">
+              <div class="bg-[#f8ffd9] border border-[#e9ff60] rounded-xl p-3 text-xs text-ink">
                 <span class="material-symbols-outlined text-sm align-middle mr-1">info</span>
                 Este socio fue creado manualmente. Vinculalo a una organizacion registrada para acceder al PIF completo (descripcion, personal, proyectos, stakeholders).
               </div>
@@ -790,8 +790,8 @@ const Developer = (() => {
         ta.value = data.text;
         ta.dispatchEvent(new Event('input', { bubbles: true }));
         setTimeout(() => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }, 50);
-        ta.classList.add('ring-2', 'ring-[#d6e949]');
-        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+        ta.classList.add('ring-2', 'ring-[#e9ff60]');
+        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
         SaveStatus.cancel('dev:conn:' + currentProject.id);   // el input de arriba ya lo programó
         await API.put('/developer/projects/' + currentProject.id + '/interview/consortium_connection', { answer: data.text }).catch(e => console.warn('consortium_connection save:', e));
         Toast.show('Texto mejorado', 'ok');
@@ -825,7 +825,7 @@ const Developer = (() => {
             <span class="material-symbols-outlined text-4xl text-error mb-2">account_balance</span>
             <h3 class="font-headline text-base font-bold text-on-error-container mb-1">Error generando presupuesto</h3>
             <p class="text-sm text-on-error-container mb-4">${esc(e.message || 'Error desconocido')}</p>
-            <button id="prep-budget-retry" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/80 transition-colors">
+            <button id="prep-budget-retry" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#4312d8]/80 transition-colors">
               <span class="material-symbols-outlined text-sm">refresh</span> Reintentar
             </button>
           </div>`;
@@ -995,8 +995,8 @@ const Developer = (() => {
           ta.value = data.revised_text;
           ta.dispatchEvent(new Event('input', { bubbles: true }));
           setTimeout(() => autoResizeField(FIELD_CFG[fieldKey].id), 50);
-          ta.classList.add('ring-2', 'ring-[#d6e949]');
-          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+          ta.classList.add('ring-2', 'ring-[#e9ff60]');
+          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
         }
         renderFieldChatBubble(fieldKey, 'assistant', 'He mejorado el texto con tus aportaciones. Puedes seguir editandolo directamente.');
         const inputArea = document.getElementById('prep-chat-input-area-' + fieldKey);
@@ -1079,7 +1079,7 @@ const Developer = (() => {
           </div>
 
           <div class="flex items-center gap-3 mb-3">
-            <label class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#3c45a3] text-[#d6e949] cursor-pointer hover:bg-[#3c45a3]/90 transition-colors">
+            <label class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#4312d8] text-[#e9ff60] cursor-pointer hover:bg-[#4312d8]/90 transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Subir documento
               <input type="file" accept=".pdf,.docx,.txt" class="hidden" id="prep-doc-upload">
             </label>
@@ -1257,7 +1257,7 @@ const Developer = (() => {
             </div>
           </details>`;
         }).join('') : `
-          <div class="bg-[#f3f8d2] rounded-2xl border border-[#d6e949] p-8 text-center">
+          <div class="bg-[#f8ffd9] rounded-2xl border border-[#e9ff60] p-8 text-center">
             <span class="material-symbols-outlined text-4xl text-primary mb-2">task_alt</span>
             <h3 class="font-headline text-base font-bold text-primary mb-1">Sin actividades</h3>
             <p class="text-sm text-ink">Define Work Packages y actividades en el Intake primero.</p>
@@ -1311,8 +1311,8 @@ const Developer = (() => {
       if (ta && data.summary) {
         ta.value = data.summary;
         ta.dispatchEvent(new Event('input', { bubbles: true }));
-        ta.classList.add('ring-2', 'ring-[#d6e949]');
-        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+        ta.classList.add('ring-2', 'ring-[#e9ff60]');
+        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
       }
       if (btn) {
         btn.disabled = false;
@@ -1362,8 +1362,8 @@ const Developer = (() => {
         if (ta) {
           ta.value = data.revised_text;
           ta.dispatchEvent(new Event('input', { bubbles: true }));
-          ta.classList.add('ring-2', 'ring-[#d6e949]');
-          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+          ta.classList.add('ring-2', 'ring-[#e9ff60]');
+          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
         }
         renderFieldChatBubble(chatKey, 'assistant', 'He mejorado el texto. Puedes seguir editandolo directamente.');
         const inputArea = document.getElementById('prep-chat-input-area-' + chatKey);
@@ -1389,8 +1389,8 @@ const Developer = (() => {
       if (ta && data.description) {
         ta.value = data.description;
         ta.dispatchEvent(new Event('input', { bubbles: true }));
-        ta.classList.add('ring-2', 'ring-[#d6e949]');
-        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+        ta.classList.add('ring-2', 'ring-[#e9ff60]');
+        setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
       }
       if (btn) {
         btn.disabled = false;
@@ -1440,8 +1440,8 @@ const Developer = (() => {
         if (ta) {
           ta.value = data.revised_text;
           ta.dispatchEvent(new Event('input', { bubbles: true }));
-          ta.classList.add('ring-2', 'ring-[#d6e949]');
-          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#d6e949]'), 2000);
+          ta.classList.add('ring-2', 'ring-[#e9ff60]');
+          setTimeout(() => ta.classList.remove('ring-2', 'ring-[#e9ff60]'), 2000);
         }
         renderFieldChatBubble(chatKey, 'assistant', 'He mejorado el texto. Puedes seguir editandolo directamente.');
         const inputArea = document.getElementById('prep-chat-input-area-' + chatKey);
@@ -1516,7 +1516,7 @@ const Developer = (() => {
       IntakeTasks.render(document.getElementById('prep-tasks-container'), pid, leaderCtx);
     } else {
       el.querySelector('#prep-tasks-container').innerHTML = `
-        <div class="bg-[#f3f8d2] rounded-2xl border border-[#d6e949] p-8 text-center">
+        <div class="bg-[#f8ffd9] rounded-2xl border border-[#e9ff60] p-8 text-center">
           <span class="material-symbols-outlined text-4xl text-primary mb-2">checklist</span>
           <h3 class="font-headline text-base font-bold text-primary mb-1">Tareas no disponibles</h3>
           <p class="text-sm text-ink">Define Work Packages y actividades en el Intake primero.</p>
@@ -1789,7 +1789,7 @@ const Developer = (() => {
     const totalIssues = errors.length + fixes.length;
     const tone = errors.length
       ? 'bg-error/5 border border-error/30'
-      : 'bg-[#f3f8d2] border border-[#d6e949]';
+      : 'bg-[#f8ffd9] border border-[#e9ff60]';
 
     banner.className = `mb-3 rounded-lg ${tone} px-4 py-3 text-xs`;
     banner.innerHTML = `
@@ -2060,23 +2060,23 @@ const Developer = (() => {
   function _promptTargetCount(hasExisting) {
     return new Promise(resolve => {
       const overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(34,35,81,0.45);display:flex;align-items:center;justify-content:center;animation:overlayIn .15s ease;';
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(27,7,89,0.45);display:flex;align-items:center;justify-content:center;animation:overlayIn .15s ease;';
       overlay.innerHTML = `
-        <div style="background:#fff;border-radius:20px;max-width:480px;width:90vw;padding:28px;box-shadow:0 12px 40px rgba(34,35,81,.3);font-family:Poppins,sans-serif;">
-          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#3c45a3;">Plan profesional · Entregables y Milestones</h3>
+        <div style="background:#fff;border-radius:20px;max-width:480px;width:90vw;padding:28px;box-shadow:0 12px 40px rgba(27,7,89,.3);font-family:Poppins,sans-serif;">
+          <h3 style="margin:0 0 8px 0;font-size:18px;font-weight:800;color:#4312d8;">Plan profesional · Entregables y Milestones</h3>
           <p style="margin:0 0 18px 0;font-size:13px;color:#55577a;line-height:1.5;">
             ${hasExisting
               ? 'Esto reemplazará todos los entregables y milestones actuales (se guardará un snapshot reversible).'
               : 'El asistente analiza tareas, actividades y partners y produce un plan completo en ~30–45s.'}
           </p>
-          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#3c45a3;margin-bottom:6px;">Número total de deliverables del proyecto</label>
-          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(60,69,163,.15);border-radius:10px;color:#3c45a3;text-align:center;outline:none;" />
+          <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#4312d8;margin-bottom:6px;">Número total de deliverables del proyecto</label>
+          <input type="number" id="dms-target-input" min="8" max="15" value="15" style="width:100%;padding:12px 14px;font-size:18px;font-weight:700;border:2px solid rgba(67,18,216,.15);border-radius:10px;color:#4312d8;text-align:center;outline:none;" />
           <p style="margin:8px 0 0 0;font-size:11px;color:#55577a;line-height:1.5;">
             <strong>Mín 8</strong> · <strong>Máx 15</strong> (cap absoluto EACEA — superarlo puede llevar a rechazo del proyecto). Se repartirán proporcionalmente entre los WPs según el número de actividades de cada uno. Todas las tareas con financiación quedarán cubiertas por al menos un entregable.
           </p>
           <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:22px;">
-            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:999px;border:1px solid rgba(60,69,163,.4);background:#fff;color:#3c45a3;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
-            <button id="dms-target-ok" style="padding:10px 22px;border-radius:999px;border:0;background:#d6e949;color:#3c45a3;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
+            <button id="dms-target-cancel" style="padding:10px 18px;border-radius:999px;border:1px solid rgba(67,18,216,.4);background:#fff;color:#4312d8;font-size:13px;font-weight:600;cursor:pointer;">Cancelar</button>
+            <button id="dms-target-ok" style="padding:10px 22px;border-radius:999px;border:0;background:#e9ff60;color:#4312d8;font-size:13px;font-weight:800;cursor:pointer;">Generar plan</button>
           </div>
         </div>`;
       document.body.appendChild(overlay);
@@ -2244,7 +2244,7 @@ const Developer = (() => {
     // First-generation flow is plain (white/borderless cards) since "all NEW" is
     // not informative.
     const diffStyles = hasPrior ? {
-      new:        { border: 'border-[#d6e949] border-l-4 border-l-[#c3d63a]', bg: 'bg-[#f3f8d2]',  badge: '<span class="text-[9px] px-1 rounded bg-secondary-fixed text-primary font-bold">NUEVO</span>' },
+      new:        { border: 'border-[#e9ff60] border-l-4 border-l-[#d4ec3c]', bg: 'bg-[#f8ffd9]',  badge: '<span class="text-[9px] px-1 rounded bg-secondary-fixed text-primary font-bold">NUEVO</span>' },
       changed:    { border: 'border-lavender/50 border-l-4 border-l-lavender', bg: 'bg-lavender-soft/50',  badge: '<span class="text-[9px] px-1 rounded bg-lavender-soft text-violet font-bold">MODIFICADO</span>' },
       unchanged:  { border: 'border-outline-variant/30', bg: 'bg-white', badge: '<span class="text-[9px] px-1 rounded bg-surface-container text-on-surface-variant">SIN CAMBIO</span>' },
     } : {
@@ -2361,7 +2361,7 @@ const Developer = (() => {
         const projLang = _dmsState.programme?.proposal_lang || '';
         const langLabel = { es: 'español', en: 'inglés', fr: 'francés', it: 'italiano' }[projLang] || projLang;
         langSweepBanner = `
-          <div class="mb-3 rounded-lg border-l-4 border-l-[#c3d63a] bg-[#f3f8d2] px-3 py-2">
+          <div class="mb-3 rounded-lg border-l-4 border-l-[#d4ec3c] bg-[#f8ffd9] px-3 py-2">
             <p class="text-[11px] font-bold text-ink">⚠ Cambio masivo de contenido detectado</p>
             <p class="text-[11px] text-ink mt-0.5">
               ${titleChanges.length} de ${allCurrent.length} filas cambian su título completo${langLabel ? ` (probablemente reescritura al <strong>${langLabel}</strong>)` : ''}. Esto reemplaza todo el contenido actual.
@@ -2380,7 +2380,7 @@ const Developer = (() => {
     const heroBg = score == null ? 'bg-primary/5'
                 : (parseFloat(score) >= 4.5 ? 'bg-green-50 border-green-300'
                 : (parseFloat(score) >= 4 ? 'bg-green-50/70 border-green-200'
-                : (parseFloat(score) >= 3 ? 'bg-[#f3f8d2] border-[#d6e949]' : 'bg-error/5 border-error/30')));
+                : (parseFloat(score) >= 3 ? 'bg-[#f8ffd9] border-[#e9ff60]' : 'bg-error/5 border-error/30')));
 
     previewBox.innerHTML = `
       <div class="rounded-xl border-2 border-primary/30 bg-primary/5 p-4">
@@ -2558,7 +2558,7 @@ const Developer = (() => {
     // ── Persistent critic panel: shows the last EACEA score above the cards ──
     if (_dmsState.lastScore != null) {
       const sc = _dmsState.lastScore;
-      const tone = sc >= 4.5 ? 'border-green-300 bg-green-50' : (sc >= 4 ? 'border-green-200 bg-green-50/70' : (sc >= 3 ? 'border-[#d6e949] bg-[#f3f8d2]' : 'border-error/30 bg-error/5'));
+      const tone = sc >= 4.5 ? 'border-green-300 bg-green-50' : (sc >= 4 ? 'border-green-200 bg-green-50/70' : (sc >= 3 ? 'border-[#e9ff60] bg-[#f8ffd9]' : 'border-error/30 bg-error/5'));
       const txtColor = sc >= 4 ? 'text-green-700' : (sc >= 3 ? 'text-ink' : 'text-error');
       // Find a representative critic run from ai_history? For now, just show score
       const criticPanel = document.createElement('div');
@@ -2992,7 +2992,7 @@ const Developer = (() => {
       IntakeGantt.render(document.getElementById('prep-gantt-container'), pid);
     } else {
       el.querySelector('#prep-gantt-container').innerHTML = `
-        <div class="bg-[#f3f8d2] rounded-2xl border border-[#d6e949] p-8 text-center">
+        <div class="bg-[#f8ffd9] rounded-2xl border border-[#e9ff60] p-8 text-center">
           <span class="material-symbols-outlined text-4xl text-primary mb-2">timeline</span>
           <h3 class="font-headline text-base font-bold text-primary mb-1">Gantt no disponible</h3>
           <p class="text-sm text-ink">Define Work Packages y actividades en el Intake primero.</p>
@@ -3035,7 +3035,7 @@ const Developer = (() => {
 
   async function genInterview() {
     const btn = document.getElementById('prep-gen-interview-btn');
-    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="animate-spin w-4 h-4 border-2 border-[#d6e949] border-t-transparent rounded-full"></span> Generando preguntas...'; }
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="animate-spin w-4 h-4 border-2 border-[#e9ff60] border-t-transparent rounded-full"></span> Generando preguntas...'; }
     try {
       await API.post('/developer/projects/' + currentProject.id + '/interview/generate', {});
       renderPrepStudio();
@@ -3127,8 +3127,8 @@ const Developer = (() => {
 
       <!-- Floating AI button — pill, opens the drawer -->
       <button id="dev-ai-fab" onclick="Developer._toggleAiDrawer()" title="Refinar con IA (Ctrl+I)"
-        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 pl-4 pr-5 py-3 rounded-full bg-[#3c45a3] hover:bg-[#3c45a3]/90 text-white text-sm font-bold shadow-xl transition-all hover:scale-[1.03]">
-        <span class="material-symbols-outlined text-lg text-[#d6e949]">auto_awesome</span>
+        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 pl-4 pr-5 py-3 rounded-full bg-[#4312d8] hover:bg-[#4312d8]/90 text-white text-sm font-bold shadow-xl transition-all hover:scale-[1.03]">
+        <span class="material-symbols-outlined text-lg text-[#e9ff60]">auto_awesome</span>
         <span>Refinar con IA</span>
       </button>
 
@@ -3372,17 +3372,17 @@ const Developer = (() => {
         </div>
         <div class="flex flex-col items-center py-12">
           <div class="relative w-16 h-16 mb-4">
-            <div class="absolute inset-0 rounded-full bg-[#3c45a3]/10 animate-pulse"></div>
+            <div class="absolute inset-0 rounded-full bg-[#4312d8]/10 animate-pulse"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <span class="material-symbols-outlined text-3xl text-[#3c45a3]" style="animation:writePencil 1.5s ease-in-out infinite">edit_note</span>
+              <span class="material-symbols-outlined text-3xl text-[#4312d8]" style="animation:writePencil 1.5s ease-in-out infinite">edit_note</span>
             </div>
           </div>
-          <p class="text-sm font-bold text-[#3c45a3] mb-1">Generando seccion...</p>
+          <p class="text-sm font-bold text-[#4312d8] mb-1">Generando seccion...</p>
           <p class="text-xs text-on-surface-variant mb-4">La IA escribe con todo el contexto del proyecto</p>
-          <div class="bg-[#3c45a3] rounded-xl p-4 max-w-md shadow-lg">
+          <div class="bg-[#4312d8] rounded-xl p-4 max-w-md shadow-lg">
             <div class="flex items-start gap-2">
-              <span class="material-symbols-outlined text-sm text-[#d6e949] mt-0.5">lightbulb</span>
-              <p class="text-xs text-[#d6e949]/90 leading-relaxed" id="dev-cascade-tip">${TIPS[Math.floor(Math.random() * TIPS.length)]}</p>
+              <span class="material-symbols-outlined text-sm text-[#e9ff60] mt-0.5">lightbulb</span>
+              <p class="text-xs text-[#e9ff60]/90 leading-relaxed" id="dev-cascade-tip">${TIPS[Math.floor(Math.random() * TIPS.length)]}</p>
             </div>
           </div>
         </div>
@@ -3428,11 +3428,11 @@ const Developer = (() => {
           <h3 class="font-headline text-base font-bold text-on-surface mb-1">Esta sección está vacía</h3>
           <p class="text-xs text-on-surface-variant max-w-md mb-5">Cuando pulses "Generar con IA", redactaré una primera propuesta con todo el contexto del proyecto. Después podrás iterar pidiendo mejoras concretas.</p>
           <div class="flex flex-wrap items-center justify-center gap-2">
-            <button onclick="Developer._cascadeGenerate()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] shadow-lg hover:bg-[#3c45a3]/90 transition-all">
-              <span class="material-symbols-outlined text-lg text-[#d6e949]">auto_awesome</span>
+            <button onclick="Developer._cascadeGenerate()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#4312d8] shadow-lg hover:bg-[#4312d8]/90 transition-all">
+              <span class="material-symbols-outlined text-lg text-[#e9ff60]">auto_awesome</span>
               <span class="text-white">Generar con IA</span>
             </button>
-            <button onclick="Developer._cascadeWriteBlank()" class="inline-flex items-center gap-2 px-4 py-3 rounded-full text-xs font-bold text-[#3c45a3] bg-white border border-[#3c45a3]/30 hover:bg-[#3c45a3]/5 transition-colors">
+            <button onclick="Developer._cascadeWriteBlank()" class="inline-flex items-center gap-2 px-4 py-3 rounded-full text-xs font-bold text-[#4312d8] bg-white border border-[#4312d8]/30 hover:bg-[#4312d8]/5 transition-colors">
               <span class="material-symbols-outlined text-sm">edit</span>
               <span>Escribir yo mismo</span>
             </button>
@@ -3469,7 +3469,7 @@ const Developer = (() => {
       <!-- Action buttons -->
       <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -3557,7 +3557,7 @@ const Developer = (() => {
 
       <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -3690,10 +3690,10 @@ const Developer = (() => {
       <div class="mb-3 flex items-center justify-between flex-wrap gap-2">
         <h3 class="font-headline text-sm font-bold text-on-surface">Critical risks and risk-management strategy</h3>
         <div class="flex flex-wrap items-center gap-2">
-          <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#3c45a3] bg-secondary-fixed border border-[#3c45a3]/20 hover:bg-secondary-fixed/80 transition-colors">
+          <button id="risk-ai-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-[#4312d8] bg-secondary-fixed border border-[#4312d8]/20 hover:bg-secondary-fixed/80 transition-colors">
             <span class="material-symbols-outlined text-sm">auto_awesome</span> Autocompletar con IA
           </button>
-          <button id="risk-add-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 transition-colors">
+          <button id="risk-add-btn" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 transition-colors">
             <span class="material-symbols-outlined text-sm">add</span> Añadir riesgo
           </button>
         </div>
@@ -3705,7 +3705,7 @@ const Developer = (() => {
 
       <div class="flex flex-wrap items-center gap-3">
         ${cascadeIndex < flatSections.length - 1 ? `
-          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
+          <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-lg hover:shadow-xl transition-all">
             <span class="material-symbols-outlined text-lg">check</span> Aprobar y siguiente
           </button>
           <button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">
@@ -3879,7 +3879,7 @@ const Developer = (() => {
     const r = _risksReport;
     const scoreColor = r.score >= 8 ? 'text-green-700' : r.score >= 6 ? 'text-violet' : 'text-red-700';
     const sevColor = (sev) => sev === 'high' ? 'text-red-700 bg-red-50 border-red-200'
-                              : sev === 'medium' ? 'text-ink bg-[#f3f8d2] border-[#d6e949]'
+                              : sev === 'medium' ? 'text-ink bg-[#f8ffd9] border-[#e9ff60]'
                               : 'text-primary bg-primary/5 border-primary/20';
     target.innerHTML = `
       <!-- Score + summary -->
@@ -4210,15 +4210,15 @@ const Developer = (() => {
           <div class="space-y-2 mb-4">
             <button onclick="Developer._aiEvaluateRisks()" id="ai-eval-risks-btn"
               class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-primary to-violet hover:from-violet hover:to-violet shadow-sm transition-colors">
-              <span class="material-symbols-outlined text-base text-[#d6e949]">trending_up</span>
+              <span class="material-symbols-outlined text-base text-[#e9ff60]">trending_up</span>
               <div class="text-left">
                 <div>Evaluar tabla con IA</div>
                 <div class="text-[10px] font-normal text-white/80">Diagnóstico + sugerencias por fila</div>
               </div>
             </button>
             <button onclick="document.getElementById('risk-ai-btn')?.click(); Developer._toggleAiDrawer();"
-              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-sm transition-colors">
-              <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
+              class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-sm transition-colors">
+              <span class="material-symbols-outlined text-base text-[#e9ff60]">auto_awesome</span>
               <div class="text-left">
                 <div>Autocompletar con IA</div>
                 <div class="text-[10px] font-normal text-white/75">Regenera ≥8 riesgos desde cero</div>
@@ -4232,7 +4232,7 @@ const Developer = (() => {
           <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
             Hoy esta tabla se rellena desde <b>Consorcio → Equipo</b> (selección manual + skills propios del proyecto).
           </p>
-          <div class="rounded-lg bg-[#f3f8d2] border border-[#d6e949] p-3">
+          <div class="rounded-lg bg-[#f8ffd9] border border-[#e9ff60] p-3">
             <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próximamente</div>
             <p class="text-xs text-ink leading-relaxed">
               <b>Evaluar equipo con IA</b> (cobertura, balance entre partners, alineación con tareas) y
@@ -4245,7 +4245,7 @@ const Developer = (() => {
           <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
             Cada Work Package tiene su botón "<b>AI fill</b>" en la card (rellena Objectives, Tasks, Milestones y Deliverables).
           </p>
-          <div class="rounded-lg bg-[#f3f8d2] border border-[#d6e949] p-3">
+          <div class="rounded-lg bg-[#f8ffd9] border border-[#e9ff60] p-3">
             <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Próximamente</div>
             <p class="text-xs text-ink leading-relaxed">
               <b>Evaluar coherencia entre WPs</b> y <b>refinar tareas, hitos y entregables fila a fila</b>
@@ -4276,15 +4276,15 @@ const Developer = (() => {
 
       <!-- AI actions -->
       <div class="space-y-2">
-        <button onclick="Developer._aiImproveCustom()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-sm transition-colors">
-          <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
+        <button onclick="Developer._aiImproveCustom()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-sm transition-colors">
+          <span class="material-symbols-outlined text-base text-[#e9ff60]">auto_awesome</span>
           <div>
             <div class="text-white">Mejorar con IA</div>
             <div class="text-[10px] font-normal text-white/75">Dile que quieres cambiar (voz o texto)</div>
           </div>
         </button>
         <button onclick="Developer._aiEvaluateAndRefine()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-left text-white bg-gradient-to-r from-primary to-violet hover:from-violet hover:to-violet shadow-sm transition-colors">
-          <span class="material-symbols-outlined text-base text-[#d6e949]">trending_up</span>
+          <span class="material-symbols-outlined text-base text-[#e9ff60]">trending_up</span>
           <div>
             <div class="text-white">Evaluar y refinar con IA</div>
             <div class="text-[10px] font-normal text-white/80">Diagnóstico + arreglo automático</div>
@@ -4559,7 +4559,7 @@ const Developer = (() => {
               <div class="flex items-center gap-2 shrink-0">
                 ${counter}
                 <button onclick="Developer._copyAnswer(this, '${encoded}')" ${hasText ? '' : 'disabled'}
-                  class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold ${hasText ? 'text-[#d6e949] bg-[#3c45a3] hover:bg-[#3c45a3]/85' : 'text-on-surface-variant bg-surface-container-low cursor-not-allowed'} transition-colors">
+                  class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold ${hasText ? 'text-[#e9ff60] bg-[#4312d8] hover:bg-[#4312d8]/85' : 'text-on-surface-variant bg-surface-container-low cursor-not-allowed'} transition-colors">
                   <span class="material-symbols-outlined text-xs">content_copy</span> Copiar
                 </button>
               </div>
@@ -4755,7 +4755,7 @@ const Developer = (() => {
         <div class="px-4 pb-4">
           <div class="flex items-center gap-2">
             <input type="text" placeholder="O escribe una tematica personalizada..." class="pif-custom-input flex-1 px-3 py-2 text-sm border border-outline-variant/20 rounded-lg bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/15">
-            <button class="pif-custom-btn inline-flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold text-[#3c45a3] bg-[#3c45a3]/10 hover:bg-[#3c45a3]/20 transition-colors">
+            <button class="pif-custom-btn inline-flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold text-[#4312d8] bg-[#4312d8]/10 hover:bg-[#4312d8]/20 transition-colors">
               <span class="material-symbols-outlined text-sm">add</span> Crear
             </button>
           </div>
@@ -4848,7 +4848,7 @@ const Developer = (() => {
         text, section_title: sec.number + ' ' + sec.title, criteria: []
       });
       const d = result;
-      const badge = { excellent: 'text-green-700 bg-green-50', good: 'text-primary bg-primary/10', fair: 'text-ink bg-[#f3f8d2]', weak: 'text-red-700 bg-red-50' };
+      const badge = { excellent: 'text-green-700 bg-green-50', good: 'text-primary bg-primary/10', fair: 'text-ink bg-[#f8ffd9]', weak: 'text-red-700 bg-red-50' };
       el.innerHTML = `
         <div class="mb-2"><span class="text-xs font-bold uppercase px-2 py-0.5 rounded ${badge[d.overall] || ''}">${d.overall || '?'}</span> ${d.score_estimate ? '<span class="text-xs text-on-surface-variant ml-1">' + d.score_estimate + '/10</span>' : ''}</div>
         ${(d.strengths || []).map(s => '<div class="text-xs text-green-700 mb-0.5">+ ' + esc(s) + '</div>').join('')}
@@ -5001,7 +5001,7 @@ const Developer = (() => {
             <div class="text-[10px] font-bold uppercase tracking-wider text-red-700 mb-1">Debilidades identificadas</div>
             ${weaknesses.slice(0, 5).map(w => {
               const isTargeted = willTarget.indexOf(w.toLowerCase()) !== -1;
-              return '<div class="text-[11px] mb-0.5 flex gap-1 items-start ' + (isTargeted ? 'bg-[#f3f8d2] border border-[#d6e949] rounded px-1 py-0.5' : '') + '">'
+              return '<div class="text-[11px] mb-0.5 flex gap-1 items-start ' + (isTargeted ? 'bg-[#f8ffd9] border border-[#e9ff60] rounded px-1 py-0.5' : '') + '">'
                 + (isTargeted ? '<span class="material-symbols-outlined text-[14px] text-primary" title="Se atacará si pulsas Refinar">bolt</span>' : '<span class="text-red-500 font-bold">-</span>')
                 + '<span class="text-on-surface-variant">' + esc(w) + '</span></div>';
             }).join('')}
@@ -5016,7 +5016,7 @@ const Developer = (() => {
         ` : ''}
 
         ${ev.skip_reason ? `
-          <div class="text-[11px] text-on-surface-variant p-2 rounded bg-[#f3f8d2] border border-[#d6e949]">${esc(ev.skip_reason)}</div>
+          <div class="text-[11px] text-on-surface-variant p-2 rounded bg-[#f8ffd9] border border-[#e9ff60]">${esc(ev.skip_reason)}</div>
         ` : ''}
 
         <div class="flex items-center gap-2 mt-1">
@@ -5025,7 +5025,7 @@ const Developer = (() => {
           </button>
           ${canRefine ? `
             <button onclick="Developer._refineGo()" class="flex-1 px-3 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-primary to-violet hover:from-violet hover:to-violet flex items-center justify-center gap-1 shadow-sm">
-              <span class="material-symbols-outlined text-sm text-[#d6e949]">bolt</span>
+              <span class="material-symbols-outlined text-sm text-[#e9ff60]">bolt</span>
               <span>Refinar con IA</span>
             </button>
           ` : ''}
@@ -5130,7 +5130,7 @@ const Developer = (() => {
 
     if (result.reverted) {
       el.innerHTML = `
-        <div class="flex flex-col gap-2 p-3 rounded-xl bg-[#f3f8d2] border border-[#d6e949]">
+        <div class="flex flex-col gap-2 p-3 rounded-xl bg-[#f8ffd9] border border-[#e9ff60]">
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-primary">undo</span>
             <div class="text-xs font-bold text-ink">Texto original restaurado</div>
@@ -5237,7 +5237,7 @@ const Developer = (() => {
           : result.delta < 0 ? `<span class="text-red-600 font-bold">${result.delta.toFixed(1)}</span>`
           : `<span class="text-on-surface-variant">±0</span>`)
         : '';
-      const badge = { excellent: 'text-green-700 bg-green-50', good: 'text-primary bg-primary/10', fair: 'text-ink bg-[#f3f8d2]', weak: 'text-red-700 bg-red-50' };
+      const badge = { excellent: 'text-green-700 bg-green-50', good: 'text-primary bg-primary/10', fair: 'text-ink bg-[#f8ffd9]', weak: 'text-red-700 bg-red-50' };
       if (el) {
         if (result.note) {
           el.innerHTML = `<div class="text-xs text-on-surface">${esc(result.note)}</div>`;
@@ -5346,7 +5346,7 @@ const Developer = (() => {
       <div id="wp-card-budget" class="rounded-xl border border-outline-variant/30 bg-white p-4 mb-6">Cargando budget…</div>
 
       <div class="flex flex-wrap items-center gap-3">
-        <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#3c45a3] hover:bg-[#3c45a3]/90 shadow-lg hover:shadow-xl transition-all">
+        <button onclick="Developer._cascadeApprove()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white bg-[#4312d8] hover:bg-[#4312d8]/90 shadow-lg hover:shadow-xl transition-all">
           <span class="material-symbols-outlined text-lg">check</span> ${isLast ? 'Finalizar borrador' : 'Aprobar y siguiente'}
         </button>
         ${!isLast ? '<button onclick="Developer._cascadeSkip()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-on-surface-variant border border-outline-variant/30 hover:bg-surface-container-low transition-colors">Saltar</button>' : ''}
@@ -5998,8 +5998,8 @@ const Developer = (() => {
               <span class="material-symbols-outlined text-base">restart_alt</span>
               <span>Regenerar desde cero</span>
             </button>
-            <button onclick="Developer._submitImproveRequest()" id="improve-submit-btn" class="px-4 py-2 rounded-full text-sm font-bold bg-[#3c45a3] text-white hover:bg-[#3c45a3]/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow">
-              <span class="material-symbols-outlined text-base text-[#d6e949]">auto_awesome</span>
+            <button onclick="Developer._submitImproveRequest()" id="improve-submit-btn" class="px-4 py-2 rounded-full text-sm font-bold bg-[#4312d8] text-white hover:bg-[#4312d8]/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow">
+              <span class="material-symbols-outlined text-base text-[#e9ff60]">auto_awesome</span>
               <span>Mejorar texto</span>
             </button>
           </div>

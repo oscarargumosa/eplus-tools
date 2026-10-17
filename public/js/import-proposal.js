@@ -251,7 +251,7 @@ const ImportProposal = (() => {
       </div>
 
       ${(report.errors || []).length > 0 ? `
-        <div class="bg-[#f3f8d2] border border-[#d6e949] rounded-xl p-4 mb-6">
+        <div class="bg-[#f8ffd9] border border-[#e9ff60] rounded-xl p-4 mb-6">
           <h4 class="text-sm font-bold text-ink mb-2">Avisos del parser (${report.errors.length})</h4>
           <ul class="text-xs text-on-surface-variant space-y-1">
             ${report.errors.slice(0, 5).map(e => `<li>• ${esc(e)}</li>`).join('')}

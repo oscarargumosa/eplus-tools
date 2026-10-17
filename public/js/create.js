@@ -41,7 +41,7 @@ const CreateProject = (() => {
         activeFilter = btn.dataset.filter;
         document.querySelectorAll('.create-filter-btn').forEach(b => {
           b.className = b.dataset.filter === activeFilter
-            ? 'create-filter-btn px-3 py-1 rounded-full text-[10px] font-bold bg-[#3c45a3] text-[#d6e949] border border-[#3c45a3] transition-colors'
+            ? 'create-filter-btn px-3 py-1 rounded-full text-[10px] font-bold bg-[#4312d8] text-[#e9ff60] border border-[#4312d8] transition-colors'
             : 'create-filter-btn px-3 py-1 rounded-full text-[10px] font-bold bg-white text-on-surface-variant border border-outline-variant hover:border-primary/40 transition-colors';
         });
         renderCards();
@@ -58,8 +58,8 @@ const CreateProject = (() => {
     const str = dt.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
     if (diff < 0) return { str, diff, dotColor: '#d6d3dc', badgeBg: 'bg-surface-container-high', badgeText: 'text-on-surface-variant', label: 'Closed' };
     if (diff <= 14) return { str, diff, dotColor: '#ba1a1a', badgeBg: 'bg-red-50', badgeText: 'text-red-700', label: diff + ' days left' };
-    if (diff <= 60) return { str, diff, dotColor: '#997fc7', badgeBg: 'bg-lavender-soft', badgeText: 'text-violet', label: diff + ' days left' };
-    return { str, diff, dotColor: '#3c45a3', badgeBg: 'bg-cream', badgeText: 'text-primary', label: diff + ' days' };
+    if (diff <= 60) return { str, diff, dotColor: '#b392f6', badgeBg: 'bg-lavender-soft', badgeText: 'text-violet', label: diff + ' days left' };
+    return { str, diff, dotColor: '#4312d8', badgeBg: 'bg-cream', badgeText: 'text-primary', label: diff + ' days' };
   }
 
   function renderCards() {
@@ -102,16 +102,16 @@ const CreateProject = (() => {
       const isSelected = selectedProgram && selectedProgram.id === p.id;
 
       return `
-      <div class="create-prog-card group rounded-2xl ${isSelected ? 'bg-[#3c45a3] shadow-lg' : 'bg-white shadow-sm hover:shadow-md'} cursor-pointer transition-all" data-id="${p.id}">
+      <div class="create-prog-card group rounded-2xl ${isSelected ? 'bg-[#4312d8] shadow-lg' : 'bg-white shadow-sm hover:shadow-md'} cursor-pointer transition-all" data-id="${p.id}">
         <div class="flex items-center gap-3 px-4 py-3">
-          <div class="w-5 h-5 rounded-full border-2 ${isSelected ? 'border-[#d6e949] bg-[#d6e949]' : 'border-outline'} flex items-center justify-center flex-shrink-0">
-            ${isSelected ? '<div class="w-2 h-2 rounded-full bg-[#3c45a3]"></div>' : ''}
+          <div class="w-5 h-5 rounded-full border-2 ${isSelected ? 'border-[#e9ff60] bg-[#e9ff60]' : 'border-outline'} flex items-center justify-center flex-shrink-0">
+            ${isSelected ? '<div class="w-2 h-2 rounded-full bg-[#4312d8]"></div>' : ''}
           </div>
           <div class="flex-1 min-w-0">
             <div class="text-sm font-bold ${isSelected ? 'text-white' : 'text-on-surface group-hover:text-primary'} transition-colors truncate">${esc(p.name)}</div>
             <div class="text-[10px] ${isSelected ? 'text-lavender-soft/80' : 'text-on-surface-variant/70'} mt-0.5">${esc(p.action_type || '')}</div>
           </div>
-          ${grant ? `<span class="px-2.5 py-1 rounded-full ${isSelected ? 'bg-white/15 text-[#d6e949]' : 'bg-cream text-primary'} text-[10px] font-extrabold flex-shrink-0">${grant}</span>` : ''}
+          ${grant ? `<span class="px-2.5 py-1 rounded-full ${isSelected ? 'bg-white/15 text-[#e9ff60]' : 'bg-cream text-primary'} text-[10px] font-extrabold flex-shrink-0">${grant}</span>` : ''}
           <div class="flex-shrink-0 px-3 py-1.5 rounded-xl ${isSelected ? 'bg-white/10' : dl.badgeBg}" style="min-width:110px">
             <div class="flex items-center gap-2">
               <div class="w-2.5 h-2.5 rounded-full flex-shrink-0 ${dl.diff !== null && dl.diff >= 0 && dl.diff <= 14 ? 'animate-pulse' : ''}" style="background:${dl.dotColor}"></div>
@@ -222,7 +222,7 @@ const CreateProject = (() => {
             <span class="text-sm font-bold text-on-surface">${esc(data.cover?.project_name || file.name)}</span>
             ${data.cover?.acronym ? '<span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-xs font-bold">' + esc(data.cover.acronym) + '</span>' : ''}
           </div>
-          <button id="create-import-parsed" class="mt-3 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-[#3c45a3] bg-[#d6e949] hover:bg-[#c3d63a] transition-colors w-full justify-center">
+          <button id="create-import-parsed" class="mt-3 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-[#4312d8] bg-[#e9ff60] hover:bg-[#d4ec3c] transition-colors w-full justify-center">
             <span class="material-symbols-outlined text-base">rocket_launch</span> Import and create project
           </button>
         </div>`;

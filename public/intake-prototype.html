@@ -15,19 +15,19 @@ tailwind.config = {
     extend: {
       colors: {
         /* Mismos tokens que public/index.html (manual de marca EU Funding Studio, oct-2026) */
-        "primary":"#3c45a3","primary-container":"#3c45a3",
-        "ink":"#222351","violet":"#514daa","lavender":"#997fc7","lavender-soft":"#e7e1f3","cream":"#f0edeb",
-        "secondary-fixed":"#d6e949","secondary-fixed-dim":"#c3d63a",
-        "accent-warm":"#997fc7",
-        "surface":"#f8f7f5","surface-dim":"#d9d5d1","surface-bright":"#ffffff",
-        "surface-container":"#f0edeb","surface-container-low":"#f8f7f5",
-        "surface-container-high":"#e8e4e1","surface-container-lowest":"#ffffff",
-        "on-surface":"#222351","on-surface-variant":"#55577a",
+        "primary":"#4312d8","primary-container":"#4312d8",
+        "ink":"#1b0759","violet":"#7349f0","lavender":"#b392f6","lavender-soft":"#efe8fe","cream":"#f2f2f2",
+        "secondary-fixed":"#e9ff60","secondary-fixed-dim":"#d4ec3c",
+        "accent-warm":"#b392f6",
+        "surface":"#f8f8f8","surface-dim":"#d9d9d9","surface-bright":"#ffffff",
+        "surface-container":"#f2f2f2","surface-container-low":"#f8f8f8",
+        "surface-container-high":"#e8e8e8","surface-container-lowest":"#ffffff",
+        "on-surface":"#1b0759","on-surface-variant":"#55577a",
         "outline":"#8a8aa3","outline-variant":"#d6d3dc",
         "error":"#ba1a1a","error-container":"#ffdad6",
         "on-error-container":"#93000a",
-        "surface-tint":"#997fc7",
-        "on-primary-container":"#e7e1f3",
+        "surface-tint":"#b392f6",
+        "on-primary-container":"#efe8fe",
       },
       fontFamily: {
         "headline":["Poppins","sans-serif"],
@@ -45,7 +45,7 @@ tailwind.config = {
   /* Grid arquitectónico */
   .arch-grid{
     position:fixed;inset:0;z-index:-1;pointer-events:none;
-    background-image:linear-gradient(#3c45a3 1px,transparent 1px),linear-gradient(90deg,#3c45a3 1px,transparent 1px);
+    background-image:linear-gradient(#4312d8 1px,transparent 1px),linear-gradient(90deg,#4312d8 1px,transparent 1px);
     background-size:60px 60px;opacity:0.03;
   }
 
@@ -58,12 +58,12 @@ tailwind.config = {
   #toast{
     position:fixed;bottom:20px;right:20px;z-index:9999;
     padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;
-    box-shadow:0 4px 20px rgba(34,35,81,.15);
+    box-shadow:0 4px 20px rgba(27,7,89,.15);
     transform:translateY(60px);opacity:0;transition:all .25s cubic-bezier(.34,1.56,.64,1);
     pointer-events:none;font-family:Poppins,sans-serif;
   }
   #toast.show{transform:translateY(0);opacity:1}
-  #toast.ok{background:#3c45a3;color:#fff}
+  #toast.ok{background:#4312d8;color:#fff}
   #toast.err{background:#ba1a1a;color:#fff}
 
   /* Scrollbar sutil */
@@ -225,7 +225,7 @@ tailwind.config = {
 
     <div class="flex justify-between items-center mt-10 pt-5 border-t border-outline-variant">
       <span></span>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -281,7 +281,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Siguiente <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -354,7 +354,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Anterior
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="next()">
         Ver resumen <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </button>
     </div>
@@ -421,7 +421,7 @@ tailwind.config = {
       <button class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-on-surface-variant font-semibold text-sm border border-outline-variant hover:bg-surface-container-low transition-colors" onclick="prev()">
         <span class="material-symbols-outlined text-base">arrow_back</span> Editar
       </button>
-      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(60,69,163,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
+      <button class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-secondary-fixed text-primary-container font-bold text-base shadow-[0_24px_48px_rgba(67,18,216,0.1)] hover:scale-[1.02] active:scale-95 transition-transform" onclick="exportWizard()">
         <span class="material-symbols-outlined text-lg">bolt</span> Exportar para Wizard
       </button>
     </div>
@@ -431,7 +431,7 @@ tailwind.config = {
 
 <!-- ═══ PARTNER DB MODAL ═══════════════════════════════════════════ -->
 <div class="fixed inset-0 z-[400] bg-black/30 items-center justify-center hidden" id="db-modal" onclick="bgClose(event)">
-  <div class="bg-white border border-outline-variant rounded-xl w-[min(620px,95vw)] max-h-[80vh] flex flex-col shadow-[0_20px_60px_rgba(34,35,81,0.15)]" style="animation:panelIn .2s ease">
+  <div class="bg-white border border-outline-variant rounded-xl w-[min(620px,95vw)] max-h-[80vh] flex flex-col shadow-[0_20px_60px_rgba(27,7,89,0.15)]" style="animation:panelIn .2s ease">
     <div class="px-5 pt-5 pb-3 border-b border-outline-variant flex items-start justify-between">
       <div>
         <div class="font-headline text-base font-bold text-primary">Base de datos de socios</div>
@@ -762,14 +762,14 @@ function updateWC(c) {
     b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all';
     f.style.width = '0%'; f.style.background = '#d6d3dc';
   } else if (n < c.min) {
-    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-secondary-fixed bg-[#f3f8d2] text-primary transition-all';
-    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#c3d63a';
+    b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-secondary-fixed bg-[#f8ffd9] text-primary transition-all';
+    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#d4ec3c';
   } else if (n > c.max) {
     b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-error/40 bg-error-container text-on-error-container transition-all';
     f.style.width = '100%'; f.style.background = '#ba1a1a';
   } else {
     b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded-full border border-primary/30 bg-lavender-soft text-primary transition-all';
-    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
+    f.style.width = (n / c.max * 100) + '%'; f.style.background = '#4312d8';
   }
 }
 

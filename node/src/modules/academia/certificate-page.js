@@ -1,8 +1,8 @@
 /* Página pública del certificado: /academia/certificado/:serial
    Sirve para verificarlo (quien tenga el enlace ve que es auténtico) y para
    imprimirlo o guardarlo en PDF desde el navegador. Manual de marca de
-   EU Funding Studio (oct-2026): logo oficial, azul #3C45A3, lima #D6E949,
-   crema #F0EDEB y Poppins. Se imprime en una sola hoja A4 apaisada.        */
+   EU Funding Studio (oct-2026): logo oficial, azul #4312d8, lima #e9ff60,
+   crema #f2f2f2 y Poppins. Se imprime en una sola hoja A4 apaisada.        */
 
 const { certificate } = require('./model');
 
@@ -15,7 +15,7 @@ module.exports = async function certificatePage(req, res) {
   if (!c) {
     return res.status(404).send(`<!doctype html><meta charset="utf-8"><title>Certificado no encontrado</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<body style="margin:0;font-family:Poppins,system-ui,sans-serif;padding:48px;color:#222351;background:#f8f7f5"><img src="/img/marca/logo-horizontal-azul.svg" alt="EU Funding Studio" style="display:block;height:24px;margin-bottom:28px">No existe ningún certificado con el número <b>${esc(req.params.serial)}</b>.</body>`);
+<body style="margin:0;font-family:Poppins,system-ui,sans-serif;padding:48px;color:#1b0759;background:#f8f8f8"><img src="/img/marca/logo-horizontal-azul.svg" alt="EU Funding Studio" style="display:block;height:24px;margin-bottom:28px">No existe ningún certificado con el número <b>${esc(req.params.serial)}</b>.</body>`);
   }
   const fecha = new Date(c.issued_at).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
   res.send(`<!doctype html>
@@ -24,16 +24,16 @@ module.exports = async function certificatePage(req, res) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-  :root{--blue:#3c45a3;--lime:#d6e949;--ink:#222351;--cream:#f0edeb;--soft:#e7e1f3;--muted:#55577a}
+  :root{--blue:#4312d8;--lime:#e9ff60;--ink:#1b0759;--cream:#f2f2f2;--soft:#efe8fe;--muted:#55577a}
   *{box-sizing:border-box}
   /* Que fondos y marcador lima salgan al imprimir aunque el navegador no imprima fondos */
   html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body{margin:0;background:var(--cream);font-family:Poppins,system-ui,sans-serif;color:var(--ink)}
   .bar{max-width:1000px;margin:24px auto 0;display:flex;justify-content:flex-end;gap:10px;padding:0 16px}
   .bar button{background:var(--blue);color:#fff;border:0;border-radius:999px;padding:11px 22px;font:600 14px Poppins,system-ui,sans-serif;cursor:pointer}
-  .bar button:hover{background:#514daa}
+  .bar button:hover{background:#7349f0}
   .cert{max-width:1000px;aspect-ratio:1.414/1;margin:16px auto 40px;background:#fff;position:relative;overflow:hidden;border-radius:20px;
-        display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:6% 7% 5%;box-shadow:0 24px 48px rgba(60,69,163,.10)}
+        display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:6% 7% 5%;box-shadow:0 24px 48px rgba(67,18,216,.10)}
   .cert:before{content:"";position:absolute;inset:0 0 auto 0;height:14px;background:var(--blue)}
   /* Icono de marca (lápiz) como acento decorativo, en lavanda suave */
   .cert:after{content:"";position:absolute;right:-4%;bottom:-8%;width:38%;aspect-ratio:1;background:var(--soft);

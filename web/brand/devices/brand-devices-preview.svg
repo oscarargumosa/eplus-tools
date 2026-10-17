@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1080" font-family="Poppins, sans-serif">
   <style>
-    .num   { font-size: 13px; font-weight: 800; fill: #3c45a3; opacity: 0.55; }
+    .num   { font-size: 13px; font-weight: 800; fill: #4312d8; opacity: 0.55; }
     .label { font-size: 10px; font-weight: 500; fill: #55577a; text-anchor: middle; }
-    .title { font-size: 20px; font-weight: 800; fill: #3c45a3; }
+    .title { font-size: 20px; font-weight: 800; fill: #4312d8; }
     .sub   { font-size: 11px; font-weight: 500; fill: #55577a; }
     .cell  { fill: none; stroke: #d6d3dc; stroke-width: 1; }
-    .stk   { fill: none; stroke: #d6e949; stroke-linecap: round; stroke-linejoin: round; }
-    .fil   { fill: #d6e949; stroke: none; }
+    .stk   { fill: none; stroke: #e9ff60; stroke-linecap: round; stroke-linejoin: round; }
+    .fil   { fill: #e9ff60; stroke: none; }
   </style>
 
   <rect width="1240" height="1080" fill="#ffffff"/>
   <text class="title" x="30" y="38">Brand devices lima — 30 variantes</text>
-  <text class="sub"   x="30" y="58">Color #d6e949 · Dime qué números te gustan y cuáles descartas. Trazo orgánico, no geométrico.</text>
+  <text class="sub"   x="30" y="58">Color #e9ff60 · Dime qué números te gustan y cuáles descartas. Trazo orgánico, no geométrico.</text>
 
   <!-- ═══ ROW 1 ═══ -->
   <!-- 01: Subrayado pincelada recta -->

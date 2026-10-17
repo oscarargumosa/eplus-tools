@@ -27,19 +27,19 @@ const AtlasStats = (() => {
   const TIER_BY_CODE = { 0: 'unenriched', 1: 'premium', 2: 'good', 3: 'acceptable', 4: 'minimal' };
   // Escala de la paleta de marca: lima (destacado) → lavanda → azul → tinta; sin enriquecer = línea suave
   const TIER_COLOR = {
-    premium:    '#d6e949',
-    good:       '#997fc7',
-    acceptable: '#3c45a3',
-    minimal:    '#222351',
+    premium:    '#e9ff60',
+    good:       '#b392f6',
+    acceptable: '#4312d8',
+    minimal:    '#1b0759',
     unenriched: '#d6d3dc',
   };
   // Insignia de la ficha emergente: fondo + texto con contraste AA
   const TIER_BADGE = {
-    premium:    'background:#d6e949;color:#3c45a3',
-    good:       'background:#e7e1f3;color:#514daa',
-    acceptable: 'background:#3c45a3;color:#ffffff',
-    minimal:    'background:#222351;color:#ffffff',
-    unenriched: 'background:#f0edeb;color:#55577a',
+    premium:    'background:#e9ff60;color:#4312d8',
+    good:       'background:#efe8fe;color:#7349f0',
+    acceptable: 'background:#4312d8;color:#ffffff',
+    minimal:    'background:#1b0759;color:#ffffff',
+    unenriched: 'background:#f2f2f2;color:#55577a',
   };
   const TIER_LABEL = {
     premium: 'Premium', good: 'Buena', acceptable: 'Aceptable',
@@ -265,14 +265,14 @@ const AtlasStats = (() => {
     const chart = new ApexCharts(el, {
       chart: { type: 'donut', height: 260, fontFamily: 'Poppins' },
       series, labels: names, colors: cols,
-      legend: { position: 'bottom', fontSize: '12px', fontWeight: 600, labels: { colors: '#3c45a3' } },
+      legend: { position: 'bottom', fontSize: '12px', fontWeight: 600, labels: { colors: '#4312d8' } },
       stroke: { width: 2, colors: ['#ffffff'] },
       dataLabels: { enabled: false },
       plotOptions: {
         pie: { donut: { size: '70%', labels: { show: true,
           total: { show: true, label: 'Total', color: '#55577a', fontSize: '11px', fontWeight: 600,
                    formatter: () => formatNumber(series.reduce((a,b) => a+b, 0)) },
-          value: { color: '#3c45a3', fontSize: '22px', fontWeight: 300 },
+          value: { color: '#4312d8', fontSize: '22px', fontWeight: 300 },
         }}}},
       tooltip: { y: { formatter: (v) => formatNumber(v) + ' entidades' } },
     });
@@ -282,10 +282,10 @@ const AtlasStats = (() => {
   function renderBars() {
     if (typeof ApexCharts === 'undefined') return setTimeout(renderBars, 200);
     // Barras en azul / lavanda alternando (el lima queda para KPIs y premium)
-    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#3c45a3', '#3c45a3');
-    bar('stats-bar-categories', cached.categories.slice(0, 12), 'category', 'count', '#997fc7', '#3c45a3');
-    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#997fc7', '#3c45a3');
-    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#3c45a3', '#3c45a3');
+    bar('stats-bar-countries', cached.countries.slice(0, 15), 'country_code', 'count', '#4312d8', '#4312d8');
+    bar('stats-bar-categories', cached.categories.slice(0, 12), 'category', 'count', '#b392f6', '#4312d8');
+    bar('stats-bar-cms',       cached.cms.slice(0, 12),       'cms', 'count', '#b392f6', '#4312d8');
+    bar('stats-bar-languages', cached.languages.slice(0, 12), 'lang', 'count', '#4312d8', '#4312d8');
   }
   // Tope del eje redondeado (30.000, 75.000…) para que las marcas salgan limpias
   function niceMax(n) {
@@ -306,13 +306,13 @@ const AtlasStats = (() => {
       chart: { type: 'bar', height: Math.max(260, data.length * 26), fontFamily: 'Poppins', toolbar: { show: false } },
       series: [{ name: 'Entidades', data: values }],
       xaxis: { categories: labels, min: 0, max: niceMax(Math.max(...values) * (narrow ? 1.5 : 1.2)), tickAmount: narrow ? 2 : 4, labels: { style: { fontWeight: 600, colors: '#55577a' }, formatter: (v) => formatNumber(Math.round(v)) } },
-      yaxis: { labels: { style: { fontWeight: 600, colors: '#222351' } } },
+      yaxis: { labels: { style: { fontWeight: 600, colors: '#1b0759' } } },
       colors: [fill],
       plotOptions: { bar: { horizontal: true, borderRadius: 6, barHeight: '70%', dataLabels: { position: 'top' } } },
       // Cifra justo fuera del extremo de la barra (hueco extra en el eje para la mayor)
       fill: { opacity: 1 },
       dataLabels: { enabled: true, offsetX: 40, style: { fontWeight: 600, colors: [text] }, formatter: (v) => formatNumber(v) },
-      grid: { borderColor: '#e7e1f3' },
+      grid: { borderColor: '#efe8fe' },
       tooltip: { y: { formatter: (v) => formatNumber(v) } },
     });
     chart.render();
@@ -392,8 +392,8 @@ const AtlasStats = (() => {
       source: 'entities',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#3c45a3',
-        'circle-stroke-color': '#d6e949',
+        'circle-color': '#4312d8',
+        'circle-stroke-color': '#e9ff60',
         'circle-stroke-width': 3,
         'circle-radius': [
           'step', ['get', 'point_count'],
@@ -417,7 +417,7 @@ const AtlasStats = (() => {
         'text-size': 12,
         'text-allow-overlap': true,
       },
-      paint: { 'text-color': '#d6e949' },
+      paint: { 'text-color': '#e9ff60' },
     });
 
     // Individual points colored by tier
@@ -441,7 +441,7 @@ const AtlasStats = (() => {
           'good',    7,
           6,
         ],
-        'circle-stroke-color': '#3c45a3',
+        'circle-stroke-color': '#4312d8',
         'circle-stroke-width': 1.5,
         'circle-opacity': 0.95,
       },

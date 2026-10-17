@@ -320,7 +320,7 @@ const Intake = (() => {
       .map(p => `<option value="${esc(p.id)}">${esc(p.action_type)} — ${esc((p.name || '').trim())}</option>`)
       .join('');
     box.innerHTML = `
-      <select id="intake-f-type-pick" class="w-full px-3 py-2.5 rounded-lg bg-[#f3f8d2] border-2 border-[#c3d63a] text-on-surface font-body text-sm focus:border-primary outline-none">
+      <select id="intake-f-type-pick" class="w-full px-3 py-2.5 rounded-lg bg-[#f8ffd9] border-2 border-[#d4ec3c] text-on-surface font-body text-sm focus:border-primary outline-none">
         <option value="">Elige la convocatoria…</option>${opts}
       </select>
       <p class="text-[11px] text-ink leading-snug">${currentType
@@ -355,7 +355,7 @@ const Intake = (() => {
   }
 
   function budgetOptBtnClass(active) {
-    return `intake-budget-opt px-4 py-2.5 rounded-lg border-2 text-sm font-bold transition-all ${active ? 'border-[#3c45a3] bg-[#d6e949] text-[#3c45a3] shadow-sm' : 'border-outline-variant bg-white text-on-surface hover:border-primary'}`;
+    return `intake-budget-opt px-4 py-2.5 rounded-lg border-2 text-sm font-bold transition-all ${active ? 'border-[#4312d8] bg-[#e9ff60] text-[#4312d8] shadow-sm' : 'border-outline-variant bg-white text-on-surface hover:border-primary'}`;
   }
 
   // Renderiza el selector de presupuesto si la call tiene >1 importe.
@@ -1194,14 +1194,14 @@ const Intake = (() => {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-outline-variant bg-surface-container-low text-on-surface-variant transition-all';
       f.style.width = '0%'; f.style.background = '#d6d3dc';
     } else if (n < c.min) {
-      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-[#c3d63a] bg-[#f3f8d2] text-ink transition-all';
-      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#c3d63a';
+      b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-[#d4ec3c] bg-[#f8ffd9] text-ink transition-all';
+      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#d4ec3c';
     } else if (n > c.max) {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-error/40 bg-error-container text-on-error-container transition-all';
       f.style.width = '100%'; f.style.background = '#ba1a1a';
     } else {
       b.className = 'text-xs font-semibold font-headline px-2.5 py-0.5 rounded border border-green-300 bg-green-50 text-green-800 transition-all';
-      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#3c45a3';
+      f.style.width = (n / c.max * 100) + '%'; f.style.background = '#4312d8';
     }
   }
 

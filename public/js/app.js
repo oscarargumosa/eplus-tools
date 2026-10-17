@@ -178,8 +178,8 @@ const App = (() => {
       const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
       recentEl.innerHTML = list.slice(0, 5).map(p => `
         <div class="flex items-center gap-3 px-4 py-3 bg-white rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all mb-2" onclick="if(typeof Intake!=='undefined'){Intake.openProject('${esc(p.id)}')}">
-          <div class="w-8 h-8 rounded-lg bg-[#3c45a3] flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-[#d6e949] text-base">description</span>
+          <div class="w-8 h-8 rounded-lg bg-[#4312d8] flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[#e9ff60] text-base">description</span>
           </div>
           <div class="flex-1 min-w-0">
             <div class="text-sm font-bold text-on-surface truncate">${esc(p.name || 'Untitled')}</div>
