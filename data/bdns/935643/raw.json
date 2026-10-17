@@ -1,0 +1,64 @@
+{
+  "id": 1137204,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HUMANES DE MADRID",
+    "nivel3": "AYUNTAMIENTO DE HUMANES DE MADRID"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935643",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA DE AYUDAS PARA LA ADQUISICIÓN DE LIBROS DE TEXTO Y MATERIAL ESCOLAR PARA EL CURSO ESCOLAR 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA DE AYUDAS PARA LA ADQUISICIÓN DE LIBROS DE TEXTO Y MATERIAL ESCOLAR PARA EL CURSO ESCOLAR 2026/2027",
+  "urlBasesReguladoras": "https://ayto-humanesdemadrid.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "DIA DESPUES PUBLICACIÓN EN EL BOCM",
+  "textFin": "10 días hábiles a partir de su publicación en el BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538118,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES REGULADORAS.pdf",
+      "long": 335553,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

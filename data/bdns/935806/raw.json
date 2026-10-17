@@ -1,0 +1,84 @@
+{
+  "id": 1137367,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GÜÍMAR",
+    "nivel3": "AYUNTAMIENTO DE GÜÍMAR"
+  },
+  "sedeElectronica": "https://guimar.sedelectronica.es/info.0",
+  "codigoBDNS": "935806",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7425,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE LA CAMPAÑA ANUAL 2026 DEL PROGRAMA DE TURISMO SOCIAL 2025-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de servicios sociales sin alojamiento",
+      "codigo": "88"
+    },
+    {
+      "descripcion": "Servicios personales",
+      "codigo": "96"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES QUE REGIRÁN LA CONVOCATORIA DE LA CAMPAÑA ANUAL\n2026 DEL PROGRAMA DE TURISMO SOCIAL 2025-2027",
+  "urlBasesReguladoras": "https://guimar.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación en el BOP",
+  "textFin": "20 DÍAS NATURALES DESDE PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538582,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ANUNCIO CONVOCATORIA DE LA CAMPAÑA ANUAL 2026 DEL PROGRAMA DE TURISMO SOCIAL 2025- 2027 (bdns) Firmas.pdf",
+      "long": 236498,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538588,
+      "descripcion": "RESOLUCIÓN DE APROBACIÓN DE BASES Y CONVOCATORIA",
+      "nombreFic": "DECRETO 2026-3983 [Decreto Aprobación de las BASES QUE REGIRÁN LA CONVOCATORIA DE LA CAMPAÑA ANUAL 2026 DEL PROGRAMA DE TURISMO SOCIAL 2025-2027 (FI.pdf",
+      "long": 447910,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538585,
+      "descripcion": "BASES Y ANEXOS",
+      "nombreFic": "BASES QUE REGIRÁN LA CONVOCATORIA DE LA CAMPAÑA ANUAL 2026 DEL PROGRAMA DE TURISMO SOCIAL 2025-2027 (Concejal delegado de Servicios Sociales)-1.pdf",
+      "long": 471138,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

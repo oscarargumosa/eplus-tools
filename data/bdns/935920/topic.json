@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "935920",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BARBADÁS / AYUNTAMIENTO DE BARBADÁS",
+  "nuts_codes": [
+    "ES113"
+  ],
+  "nuts_primary": "ES113",
+  "title": "Subvenciones a las asociaciones vecinales inscritas en el registro municipal de asociaciones del ayuntamiento de Barbadás, anualidad 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 16000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://barbadas.sedelectronica.gal",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935920",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://barbadas.sedelectronica.gal/transparency/d38f7ed0-7b8b-4e16-9601-16f45d390ec3/",
+  "text_inicio": "Al día siguiente de la publicación del anuncio en el Boletín Oficial de la Provincia de Ourense",
+  "text_fin": "Décimo día hábil a partir del día siguiente al de la publicación",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.208Z"
+}

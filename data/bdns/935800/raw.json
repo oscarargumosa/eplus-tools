@@ -1,0 +1,86 @@
+{
+  "id": 1137361,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PUERTO REAL",
+    "nivel3": "AYUNTAMIENTO DE PUERTO REAL"
+  },
+  "sedeElectronica": "https://puertoreal.sedelectronica.es/",
+  "codigoBDNS": "935800",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2390,
+  "mrr": false,
+  "descripcion": "Decreto de fecha 5 de octubre de 2026 de la Teniente de Alcaldesa Delegada del Área de Fomento de la Cultura y de Participación Ciudadana, por el que se aprueba el \"XLII Concurso de Belenes de la Navidad 2026-2027\".",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES612 - Cádiz"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases Reguladoras del \"XLII Concurso de Belenes de la Navidad 2026-2027\".",
+  "urlBasesReguladoras": "Pendiente de publicación",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente a la publicación del extracto de la Convocatoria en el BOP ",
+  "textFin": "10 días desde la publicación del Extracto de la Convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538576,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261005_Resolución_DECRETO 2026-2922 [Resolución PR_2026_3439 - Convocatoria].pdf",
+      "long": 662177,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538581,
+      "descripcion": "Decreto Rectificación plazo de inscripción",
+      "nombreFic": "20261015_Resolución_DECRETO 2026-3016 [Resolución PR_2026_3546 - Concesión].pdf",
+      "long": 575228,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538579,
+      "descripcion": "Bases Reguladoras del XLII Concurso de Belenes Navidad 2026-2027",
+      "nombreFic": "20260928_Otros_Bases convocatoria XLII Concurso de belenes (1).pdf",
+      "long": 802219,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

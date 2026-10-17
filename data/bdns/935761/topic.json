@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "935761",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CIUDAD REAL / DIPUTACIÓN PROVINCIAL DE CIUDAD REAL",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "Convocatoria Plan Extraordinario de Obras Municipales 2026 SEGUNDA CONVOCATORIA. ",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "42.9",
+      "descripcion": "Construcción de otros proyectos de ingeniería civil"
+    }
+  ],
+  "apply_url": "https://sede.dipucr.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935761",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dipucr.transparencialocal.gob.es/es_ES/buscar/contenido/articulo/articulo-30519-aprobacion-definitiva-de-modificacion-del-reglamento-regulador-del-plan-de-asistencia-economica-y-cooperacion-municipal",
+  "text_inicio": null,
+  "text_fin": "13/11/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 223091,
+      "titulo": "SUBVENCIONES.- Convocatoria Plan Extraordinario de Obras Municipales 2026 SEGUNDA CONVOCATORIA. ",
+      "tituloLeng": null,
+      "texto": "<p>Extracto del acuerdo de la Junta de Gobierno de la Diputación Provincial de Ciudad Real, de 13 de octubre de 2026, por la que se aprueba la segunda convocatoria del Plan Extraordinario de Obras Municipales 2026.\n</p><p>  \n</p><p>Primero.- Beneficiarios: \n</p><p>\tPodrán acogerse a este Plan todos los Municipios y Eatims de la provincia que lo soliciten, de acuerdo con el contenido de esta convocatoria y del Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal.\n</p><p>\tSegundo.- Objeto\n</p><p>\tEs objeto de la presente convocatoria la concesión de ayudas a los Municipios y Eatims de la provincia para la financiación de inversiones, a fin de que puedan prestar los servicios públicos que permitan satisfacer las necesidades y aspiraciones de la comunidad vecinal en los términos previstos en el artículo 25 de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local.\n</p><p>\t\t\n</p><p>\tDesarrolla, en cuanto a las obras y servicios de competencia municipal lo previsto en el artículo  36.2) de la Ley 7/1985 de 2 de abril, reguladora de las Bases del Régimen Local, y disposiciones concordantes de la Ley 27/2013, de 27 de diciembre, de Racionalización y Sostenibilidad de la Administración Local.\n</p><p>\tTercero.- Bases reguladoras:\t\n</p><p>\tLas bases reguladoras están establecidas en el Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal, aprobado por el Pleno de la Diputación Provincial en sesión de 29 de abril de 2022 y publicado en el Boletín Oficial de la Provincia nº 121, de 24 de junio de 2022.\n</p><p>\tCuarta.- Criterios de adjudicación:\n</p><p>\tLa cuantía máxima que puede obtener cada Municipio o Eatim dentro de la segunda convocatoria Plan Extraordinario de Obras Municipales 2026 figura en el anexo I de esta convocatoria, asignando una  cantida fija por tramos de población, conforme a las últimas cifras oficiales aprobadas por el INE.\n</p><p>\tQuinta.- Plazo de presentación de solicitudes:\n</p><p>\tEl plazo de presentación de las solicitudes finaliza al día 13 de noviembre de 2026.\n</p><p>\tSexto.- Otros datos:\n</p><p>\tLas solicitudes derivadas de esta convocatoria y el resto de trámites que procedan, se habrán de efectuar exclusivamente por vía telemática.\t</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7825896",
+      "cve": "+QPL851jZbLk9oS7UyQC",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.178Z"
+}

@@ -1,0 +1,159 @@
+{
+  "id": 1137458,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "INSTITUT VALENCIÀ DE FINANCES"
+  },
+  "sedeElectronica": "https://prestamos.ivf.es",
+  "codigoBDNS": "935897",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "PRÉSTAMO"
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 12000000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el otorgamiento de PRÉSTAMOS BONIFICADOS IVF PARA LA RECUPERACIÓN Y REACTIVACIÓN DE LAS ZONAS AFECTADAS POR LOS INCENDIOS FORESTALES DE 2026.MINIMIS",
+  "descripcionLeng": "Convocatòria per a l'atorgament de PRÉSTECS BONIFICATS IVF PER A LA RECUPERACIÓ I REACTIVACIÓ DE LES ZONES AFECTADES PELS INCENDIS FORESTALS DE 2026.MINIMIS",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ADMINISTRATIVAS Y SERVICIOS AUXILIARES",
+      "codigo": "O"
+    },
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE EDICIÓN, RADIODIFUSIÓN Y PRODUCCIÓN Y DISTRIBUCIÓN DE CONTENIDOS",
+      "codigo": "J"
+    },
+    {
+      "descripcion": "ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES Y COMO PRODUCTORES DE BIENES Y SERVICIOS NO DIFERENCIADOS PARA USO PROPIO",
+      "codigo": "U"
+    },
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    },
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    },
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    },
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "INDUSTRIA MANUFACTURERA",
+      "codigo": "C"
+    },
+    {
+      "descripcion": "INDUSTRIAS EXTRACTIVAS",
+      "codigo": "B"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "SUMINISTRO DE AGUA, ACTIVIDADES DE SANEAMIENTO, GESTIÓN DE RESIDUOS Y DESCONTAMINACIÓN",
+      "codigo": "E"
+    },
+    {
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO",
+      "codigo": "D"
+    },
+    {
+      "descripcion": "TELECOMUNICACIONES, PROGRAMACIÓN INFORMÁTICA, CONSULTORÍA, INFRAESTRUCTURA INFORMÁTICA Y OTROS SERVICIOS DE INFORMACIÓN",
+      "codigo": "K"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES52 - COMUNIDAD VALENCIANA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Normas Generales aprobadas por el Consejo General del IVF por acuerdo de fecha 23/01/2019 (DOGV núm. 8487, 15/02/2019). Modificado por acuerdo del Consejo General del IVF de fecha 3/10/2019 (DOGV 8681, 20/11/2019)",
+  "urlBasesReguladoras": "//dogv.gva.es/datos/2019/11/20/pdf/2019_10859.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Las solicitudes podrán presentarse desde el día siguiente a la publicación en el DOCV",
+  "textFin": "Se podrán presentar solicitudes hasta el 31 de diciembre de 2026 o hasta que se agote el presupuesto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538824,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2026 10 05 Convocatoria Línea IVF Incendios 2026 vDEF clean CG (anexos OK)_firmado.pdf",
+      "long": 1667477,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538827,
+      "descripcion": "EXTRACTE",
+      "nombreFic": "Extracto Convocatoria préstamos bonificados Incendios 2026_val.pdf",
+      "long": 222223,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538826,
+      "descripcion": "EXTRACTOS",
+      "nombreFic": "Extracto Convocatoria préstamos bonificados Incendios 2026.pdf",
+      "long": 220054,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538825,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "2026 10 05 Convocatoria Línea IVF Incendios 2026 vDEF clean CG (anexos OK) valenciano.pdf",
+      "long": 1561806,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

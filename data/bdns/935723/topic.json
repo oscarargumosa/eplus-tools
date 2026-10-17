@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "935723",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BERIÁIN / AYUNTAMIENTO DE BERIÁIN",
+  "nuts_codes": [
+    "ES220"
+  ],
+  "nuts_primary": "ES220",
+  "title": "CONVOCATORIA ABIERTA DE AYUDAS PARA LA ESCOLARIZACION DE NIÑOS Y NIÑAS EN EDUCACION INFANTIL CICLO 0 A 3 AÑOS, EN BERIAIN CURSO 2026-2027",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 7000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "www.beriain.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935723",
+  "documents": [
+    {
+      "label": "Solicitud",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bon.navarra.es/es/",
+  "text_inicio": "AL DIA SIGUENTE DE LA PUBLICACION EN EL BON",
+  "text_fin": "20 DIAS NATURALES DESDE EL DIA DE LA PUBLICACION EN EL BON",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.173Z"
+}

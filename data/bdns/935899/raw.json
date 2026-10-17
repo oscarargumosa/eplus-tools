@@ -1,0 +1,88 @@
+{
+  "id": 1137460,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARCO DE ÁVILA, EL",
+    "nivel3": "AYUNTAMIENTO DE BARCO DE ÁVILA, EL"
+  },
+  "sedeElectronica": "https://elbarcodeavila.sedelectronica.es/info.0",
+  "codigoBDNS": "935899",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES A LAS PERSONAS FÍSICAS O JURÍDICAS TITULARES DE EXPLOTACIONES AGRARIAS DE GANADO, QUE ACUDAN A LA FERIA DE GANADO SELECTO DE LA VILLA DE EL BARCO DE ÁVILA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES411 - Ávila"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "SUBVENCIONES A LAS PERSONAS FÍSICAS O JURÍDICAS TITULARES DE EXPLOTACIONES AGRARIAS DE GANADO, QUE ACUDAN A LA FERIA DE GANADO SELECTO DE EL BARCO DE AVILA",
+  "urlBasesReguladoras": "https://www.diputacionavila.es/boletin-oficial/2022/11-02-2022.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día después de la publicación de la presente convocatoria",
+  "textFin": "Veinte días hábiles desde la publicación de la presente convocatoria en el BOP de Ávila",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538818,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261016_Publicación_Anuncio_ANUNCIO EXTRACTO CONVOCATORIA.pdf",
+      "long": 222945,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538794,
+      "descripcion": "DECRETO DE CONVOCATORIA",
+      "nombreFic": "20261015_Resolución_Decreto_DECRETO 299_2026.pdf",
+      "long": 1093068,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538767,
+      "descripcion": "BASES DE CONVOCATORIA",
+      "nombreFic": "20261016_Otros_BASES REGULADORAS SUBVENCION GANADO.pdf",
+      "long": 278840,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538763,
+      "descripcion": "MODELO DE SOLICITUD",
+      "nombreFic": "20261016_Otros_ANEXO I SOLICITUD.pdf",
+      "long": 139685,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

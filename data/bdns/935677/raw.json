@@ -1,0 +1,88 @@
+{
+  "id": 1137238,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LLUCMAJOR",
+    "nivel3": "AYUNTAMIENTO DE LLUCMAJOR"
+  },
+  "sedeElectronica": "https://seu.llucmajor.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME",
+  "codigoBDNS": "935677",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 84177.81,
+  "mrr": false,
+  "descripcion": "Subvención para actuaciones dirigidas a la modernización, innovación y digitalización de trabajadores autónomos, microempresas y pequeñas empresas, en el municipio de Llucmajor 2026",
+  "descripcionLeng": "Subvenció per a actuacions dirigides a la modernització, innovació i digitalització de treballadors autònoms, microempreses i petites empreses, en el municipi de Llucmajor 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES532 - Mallorca"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Subvención para actuaciones dirigidas a la modernización, innovación y digitalización de trabajadores autónomos, microempresas y pequeñas empresas, en el municipio de Llucmajor 2026",
+  "urlBasesReguladoras": "https://llucmajor.org/es/anuncios",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente de la publicación en la BDNS y del extracto en el BOIB",
+  "textFin": "10 días hábiles contadores desde la finalización del periodo subvencionable",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538203,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "BASES_CONVOCATORIA_CAT.pdf",
+      "long": 324114,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538205,
+      "descripcion": "Anexos catalán",
+      "nombreFic": "Annexes_CATALA.pdf",
+      "long": 170652,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538204,
+      "descripcion": "Anexos castellano",
+      "nombreFic": "Anexos_CASTELLANO.pdf",
+      "long": 205718,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538202,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "BASES_CONVOCATORIA_CAST.pdf",
+      "long": 322818,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

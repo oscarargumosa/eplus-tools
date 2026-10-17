@@ -1,0 +1,88 @@
+{
+  "id": 1137389,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TAVERNES DE LA VALLDIGNA",
+    "nivel3": "AYUNTAMIENTO DE TAVERNES DE LA VALLDIGNA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935828",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESSIÓN DE LAS AYUDAS ECONÓMICAS PARA FAMILIAS MONOPARENTALES DE TAVERNES DE LA VALLDIGNA PARA EL EJERCICIO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PARA LA CONCESSIÓ D’AJUDES ECONÒMIQUES PER A FAMÍLIES MONOPARENTALS DE TAVERNES DE LA VALLDIGNA PER A L’EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "MODIFICACIÓ DE LES BASES ESPECÍFICAS PARA LA CONCESSIÓN DE LAS AYUDAS ECONÓMICAS PARA FAMILIAS MONOPARENTALES DE TAVERNES DE LA VALLDIGNA",
+  "urlBasesReguladoras": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026/10477&lang=va",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-20",
+  "textInicio": "Día siguiente de la publicación del extracto de la convocatoria en el BOP ",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538618,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "013260151.004 DE Resolución Nº 3397 de 13_10_2026 _Resolució convocatòria_ - SEGRA 1244976.pdf",
+      "long": 487261,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538637,
+      "descripcion": "MODIFICACIÓ DE LES BASES ESPECÍFICAS PARA LA CONCESSIÓN DE LAS AYUDAS ECONÓMICAS PARA FAMILIAS MONOPARENTALES DE TAVERNES DE LA VALLDIGNA",
+      "nombreFic": "013260151.007 ACORD PLE MODIF. BASES 20260803.2.3 - SEFYCU 8496274.pdf",
+      "long": 522038,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538634,
+      "descripcion": "BASES ESPECÍFICAS PARA LA CONCESSIÓN DE LAS AYUDAS ECONÓMICAS PARA FAMILIAS MONOPARENTALES DE TAVERNES DE LA VALLDIGNA",
+      "nombreFic": "013250131.003 DE Resolucion_N_2601_de_14082025_024250118004DEDecret_aprovacio_bases_especifiques_Exp2325062D_-_SEGRA_.pdf",
+      "long": 343209,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538619,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "013260151.004 DE Resolución Nº 3397 de 13_10_2026 _Resolució convocatòria_ - SEGRA 1244976.pdf",
+      "long": 487261,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

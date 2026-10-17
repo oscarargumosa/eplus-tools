@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "935763",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE CIUDAD REAL / DIPUTACIÓN PROVINCIAL DE CIUDAD REAL",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "Convocatoria de Subvenciones Plan de Apoyo a Municipios 2026. Segunda convocatoria.",
+  "title_lang": "es",
+  "summary": "Otras Prestaciones económicas",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 5000000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "84.1",
+      "descripcion": "Administración pública y de la política económica, social y medioambiental"
+    }
+  ],
+  "apply_url": "https://sede.dipucr.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935763",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://dipucr.transparencialocal.gob.es/es_ES/buscar/contenido/articulo/articulo-30519-aprobacion-definitiva-de-modificacion-del-reglamento-regulador-del-plan-de-asistencia-economica-y-cooperacion-municipal",
+  "text_inicio": "A partir del día siguiente al de la publicación de la convocatoria en el BOP",
+  "text_fin": "13 de noviembre de 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 223095,
+      "titulo": "SERVICIO DE SUBVENCIONES.- Convocatoria de Subvenciones Plan de Apoyo a Municipios 2026. Segunda convocatoria.",
+      "tituloLeng": null,
+      "texto": "<p>Extracto del acuerdo de la Junta de Gobierno de la Diputación Provincial de Ciudad Real, de 13 de octubre de 2026, por la que se aprueba la segunda convocatoria del Plan de Apoyo a  Municipios 2026.</p><p>  </p><p>Primero.- Beneficiarios: </p><p>Podrán acogerse a este Plan los Municipios  y Eatims de la provincia, que lo soliciten de acuerdo con el contenido de esta convocatoria y del Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal. </p><p>\tSegundo.- Objeto:</p><p>\tEl objeto de la convocatoria es la concesión de ayudas para la financiación de los gastos corrientes de los Municipios y Eatims de la provincia, contribuyendo de este modo a la financiación y al mantenimiento de los servicios básicos que han de prestar las entidades locales. </p><p>\tTercero.- Bases reguladoras:\t</p><p>\tLas bases reguladoras están establecidas en el Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal, aprobado por el Pleno de la Diputación Provincial en sesión de 29 de abril de 2022 y publicado en el Boletín Oficial de la Provincia  nº 121, de 24 de junio de 2022. </p><p>\tCuarta.- Criterios de adjudicación:</p><p>La cuantía máxima que puede obtener cada municipio y Eatim figura en el anexo I de la convocatoria. Las cantidades asignadas vienen determinadas por criterios objetivos (cantidad fija por tramos de población).</p><p>\tQuinta.- Plazo de presentación de solicitudes:</p><p>\tEl plazo de presentación de las solicitudes finaliza el día 13 de noviembre de 2026.\t</p><p>\tSexto.- Otros datos:</p><p>\tLas solicitudes derivadas de esta convocatoria y el resto de trámites que procedan, se habrán de efectuar exclusivamente por vía telemática.\t</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7825895",
+      "cve": "+QPL851jZbLk9oS7UyQC",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.179Z"
+}

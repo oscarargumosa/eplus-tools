@@ -1,0 +1,126 @@
+{
+  "source": "bdns",
+  "source_id": "935694",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNIDAD DE MADRID / CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA E INTERIOR",
+  "nuts_codes": [
+    "ES3"
+  ],
+  "nuts_primary": "ES3",
+  "title": "FEAGA.INVERSIONES INSTALACIONES TRANSFORMACIÓN E INFRAEST VITIVINÍCOLA 2027",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": "2027-03-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 0.01,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "GRAN EMPRESA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "GRAN EMPRESA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "01.6",
+      "descripcion": "Actividades de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha"
+    },
+    {
+      "codigo": "01.4",
+      "descripcion": "Producción ganadera"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935694",
+  "documents": [
+    {
+      "label": "Modelo de Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexos  Información solicitante",
+      "url": null
+    },
+    {
+      "label": "Anexos  Información comercial",
+      "url": null
+    },
+    {
+      "label": "Anexos  Información Técnica",
+      "url": null
+    },
+    {
+      "label": "Anexos  Resumen de la Operación",
+      "url": null
+    },
+    {
+      "label": "Anexos  Declaración Criterios Priorización",
+      "url": null
+    },
+    {
+      "label": "Anexos  Solicitud de pago",
+      "url": null
+    },
+    {
+      "label": "Anexos  Declaración Viabilidad económico- financiera",
+      "url": null
+    },
+    {
+      "label": "Anexos  Certificación Morosidad",
+      "url": null
+    },
+    {
+      "label": "Anexos  Solicitud visita No Inicio",
+      "url": null
+    },
+    {
+      "label": "Anexos  Anexos de pago",
+      "url": null
+    },
+    {
+      "label": "Anexos  Información Económica y Financiera",
+      "url": null
+    },
+    {
+      "label": "Anexos  moderación de costes",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Anexos  Declaración dimensión empresa",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.boe.es/doue/2021/435/L00001-00186.pdf",
+  "text_inicio": "AL DÍA SIGUIENTE DE LA PUBLICACIÓN DEL EXTRACTO DE LA CONVOCATORIA EN EL BOCM",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAGA - FONDO EUROPEO AGRÍCOLA DE GARANTÍA"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.167Z"
+}

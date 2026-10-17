@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "935690",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILARIÑO DE CONSO / AYUNTAMIENTO DE VILARIÑO DE CONSO",
+  "nuts_codes": [
+    "ES113"
+  ],
+  "nuts_primary": "ES113",
+  "title": "Convocatoria y Bases reguladoras de las ayudas por nacimiento y/o adopción de hijos e hijas durante el año 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": "2026-12-04",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    }
+  ],
+  "apply_url": "https://https://vilarinodeconso.sedelectronica.gal/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935690",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Anexos en castellano",
+      "url": null
+    },
+    {
+      "label": "Bases reguladoras de las ayudas por nacimiento y_o adopción de hijos e hijas durante el año 2026 (castellano)",
+      "url": null
+    },
+    {
+      "label": "Anexos en galego",
+      "url": null
+    },
+    {
+      "label": "Bases reguladoras das axudas por nacemento e_ou adopción de fillos e fillas durante o ano 2026 (galego)",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://https//vilarinodeconso.sedelectronica.gal/info.0",
+  "text_inicio": "A partir del día siguiente a la publicación en el Boletín Oficial de la Provincia de Ourense",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.166Z"
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1137324,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE CIUDAD REAL",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE CIUDAD REAL"
+  },
+  "sedeElectronica": "https://sede.dipucr.es/",
+  "codigoBDNS": "935763",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5000000,
+  "mrr": false,
+  "descripcion": "Convocatoria de Subvenciones Plan de Apoyo a Municipios 2026. Segunda convocatoria.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "SERVICIO DE SUBVENCIONES.- Convocatoria de Subvenciones Plan de Apoyo a Municipios 2026. Segunda convocatoria.",
+  "urlBasesReguladoras": "https://dipucr.transparencialocal.gob.es/es_ES/buscar/contenido/articulo/articulo-30519-aprobacion-definitiva-de-modificacion-del-reglamento-regulador-del-plan-de-asistencia-economica-y-cooperacion-municipal",
+  "sePublicaDiarioOficial": true,
+  "abierto": true,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de la publicación de la convocatoria en el BOP",
+  "textFin": "13 de noviembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538434,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Certificado de acuerdos.pdf",
+      "long": 256695,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 223095,
+      "titulo": "SERVICIO DE SUBVENCIONES.- Convocatoria de Subvenciones Plan de Apoyo a Municipios 2026. Segunda convocatoria.",
+      "tituloLeng": null,
+      "texto": "<p>Extracto del acuerdo de la Junta de Gobierno de la Diputación Provincial de Ciudad Real, de 13 de octubre de 2026, por la que se aprueba la segunda convocatoria del Plan de Apoyo a  Municipios 2026.</p><p>  </p><p>Primero.- Beneficiarios: </p><p>Podrán acogerse a este Plan los Municipios  y Eatims de la provincia, que lo soliciten de acuerdo con el contenido de esta convocatoria y del Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal. </p><p>\tSegundo.- Objeto:</p><p>\tEl objeto de la convocatoria es la concesión de ayudas para la financiación de los gastos corrientes de los Municipios y Eatims de la provincia, contribuyendo de este modo a la financiación y al mantenimiento de los servicios básicos que han de prestar las entidades locales. </p><p>\tTercero.- Bases reguladoras:\t</p><p>\tLas bases reguladoras están establecidas en el Reglamento regulador del Plan de Asistencia Económica y Cooperación Municipal, aprobado por el Pleno de la Diputación Provincial en sesión de 29 de abril de 2022 y publicado en el Boletín Oficial de la Provincia  nº 121, de 24 de junio de 2022. </p><p>\tCuarta.- Criterios de adjudicación:</p><p>La cuantía máxima que puede obtener cada municipio y Eatim figura en el anexo I de la convocatoria. Las cantidades asignadas vienen determinadas por criterios objetivos (cantidad fija por tramos de población).</p><p>\tQuinta.- Plazo de presentación de solicitudes:</p><p>\tEl plazo de presentación de las solicitudes finaliza el día 13 de noviembre de 2026.\t</p><p>\tSexto.- Otros datos:</p><p>\tLas solicitudes derivadas de esta convocatoria y el resto de trámites que procedan, se habrán de efectuar exclusivamente por vía telemática.\t</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7825895",
+      "cve": "+QPL851jZbLk9oS7UyQC",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

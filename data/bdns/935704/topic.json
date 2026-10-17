@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "935704",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GIJÓN / AYUNTAMIENTO DE GIJÓN",
+  "nuts_codes": [
+    "ES120"
+  ],
+  "nuts_primary": "ES120",
+  "title": "Resolución de 28 de julio de 2026 de la Fundación Municipal de Cultura, Educación y Universidad Popular del Ayuntamiento de Gijón/Xixón por la que se convoca el Premio Xixón fala en 3 (edición 2026)",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-16",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://sedeelectronica.gijon.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935704",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ORDENANZA GENERAL DE SUBVENCIONES DEL AYUNTAMIENTO DE GIJÓN/XIXÓN",
+      "url": null
+    },
+    {
+      "label": "RESOLUCIÓN DE MODIFICACIÓN DE LA CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "RESOLUCIÓN DE APROBACIÓN DE LA CONVOCATORIA DEL PREMIO XIXÓN FALA EN 3 (EDICIÓN 2026)",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sedeelectronica.gijon.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=SEDE_NORMATIVA_DETALLE&DBOID=6263930765236991506402&REQID=4&HFC=GJ_HEADER#GJ_FOOTER&SESSION_REQUIRED=false",
+  "text_inicio": "Día siguiente a la publicación del extracto de la presente convocatoria en el BOPA",
+  "text_fin": "23 DE OCTUBRE DE 2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-17T04:05:32.169Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1137230,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASSÀ DE LA SELVA",
+    "nivel3": "AYUNTAMIENTO DE CASSÀ DE LA SELVA"
+  },
+  "sedeElectronica": "www.cassa.cat",
+  "codigoBDNS": "935669",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8000,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 de subvenciones para gastos vivienda habitual dirigida a personas jubiladas y familias monoparentales con rentas bajas",
+  "descripcionLeng": "Convocatòria 2026 de subvencions per a despeses habitatge habitual adreçades a persones jubilades i famílies monoparentals amb rendes baixes",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES512 - Girona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Convocatoria 2026 de subvenciones para gastos vivienda habitual dirigida a personas jubiladas y familias monoparentales con rentas bajas",
+  "urlBasesReguladoras": "https://ssl4.ddgi.cat/bopV1/pdf/2026/193/202619308493.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación del BOP",
+  "textFin": "15 días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538192,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria 2026 de subvencions per a despeses habitatge habitual adreçades a persones jubilades i famílies monoparentals amb rendes baixes.pdf",
+      "long": 474185,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    },
+    {
+      "id": 1538187,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026 de subvenciones para gastos vivienda habitual dirigida a personas jubiladas y familias monoparentales con rentas bajas.pdf",
+      "long": 159920,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

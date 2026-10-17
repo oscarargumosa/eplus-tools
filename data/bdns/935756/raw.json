@@ -1,0 +1,76 @@
+{
+  "id": 1137317,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CASTILLA Y LEÓN",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN"
+  },
+  "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es/web/es/sede-electronica.html",
+  "codigoBDNS": "935756",
+  "fechaRecepcion": "2026-10-16",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 830000,
+  "mrr": false,
+  "descripcion": "Orden de 15 de octubre de 2026, de la Consejería de Educación, por la que se convocan ayudas para el alumnado que curse enseñanzas de Bachillerato, de Formación Profesional del sistema educativo y de determinadas enseñanzas impartidas en centros de CyL",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de los hogares como productores de bienes y servicios para uso propio",
+      "codigo": "98"
+    },
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    },
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    },
+    {
+      "descripcion": "Otra educación",
+      "codigo": "85.5"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES41 - CASTILLA Y LEON"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "ORDEN EDU/596/2025, de 6 de junio, por la que se establecen las BBRR de las ayudas para el alumnado que curse enseñanzas de bachillerato, de FP del sistema educativo y de determinadas enseñanzas de RE impartidas en centros de la Comunidad de CyL",
+  "urlBasesReguladoras": "https://bocyl.jcyl.es/boletines/2025/06/17/pdf/BOCYL-D-17062025-25.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente a la publicación de extracto de la convocatoria",
+  "textFin": "Veinte días hábiles, a contar desde el día siguiente al de la publicación del extracto en el BOCYL",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1538382,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "ORDEN CONVOCATORIA_AYUDAS POSTOBLIGATORIAS para BDNS.pdf",
+      "long": 325903,
+      "datMod": "2026-10-16",
+      "datPublicacion": "2026-10-16"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
