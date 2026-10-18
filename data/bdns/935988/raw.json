@@ -1,0 +1,88 @@
+{
+  "id": 1137549,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DÉNIA",
+    "nivel3": "AYUNTAMIENTO DE DÉNIA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935988",
+  "fechaRecepcion": "2026-10-17",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 12000,
+  "mrr": false,
+  "descripcion": "Bases ajudes vivenda 2026",
+  "descripcionLeng": "Bases ajudes vivenda 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+      "codigo": "88.9"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases ajudes vivenda 2026",
+  "urlBasesReguladoras": "www.ayto-denia.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-26",
+  "fechaFinSolicitud": "2026-11-06",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539031,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "Bases de Convocatoria de Subvenció ajudes habitatge 2026.PDF",
+      "long": 115654,
+      "datMod": "2026-10-17",
+      "datPublicacion": "2026-10-17"
+    },
+    {
+      "id": 1539032,
+      "descripcion": "Bases de Convocatoria de Subvención ayudas vivienda 2026",
+      "nombreFic": "Bases de Convocatoria de Subvención ayudas vivienda 2026.PDF",
+      "long": 115494,
+      "datMod": "2026-10-17",
+      "datPublicacion": "2026-10-17"
+    },
+    {
+      "id": 1539033,
+      "descripcion": "Bases de Convocatoria de Subvenció ajudes habitatge 2026",
+      "nombreFic": "Bases de Convocatoria de Subvenció ajudes habitatge 2026.PDF",
+      "long": 115654,
+      "datMod": "2026-10-17",
+      "datPublicacion": "2026-10-17"
+    },
+    {
+      "id": 1539030,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases de Convocatoria de Subvención ayudas vivienda 2026.PDF",
+      "long": 115494,
+      "datMod": "2026-10-17",
+      "datPublicacion": "2026-10-17"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
