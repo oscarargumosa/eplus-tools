@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "935993",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BENASQUE / AYUNTAMIENTO DE BENASQUE",
+  "nuts_codes": [
+    "ES241"
+  ],
+  "nuts_primary": "ES241",
+  "title": "Convocatoria de concesión de becas destinadas al apoyo educativo y movilidad de estudiantes del municipio de Benasque (Huesca) que cursan estudios superiores en centros fuera del municipio. Curso académico 2025 / 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-18",
+  "open_date": "2026-10-20",
+  "deadline": "2026-11-10",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 25000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://benasque.sedipualba.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935993",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Resolución de la Convocatoria",
+      "url": null
+    },
+    {
+      "label": "Ficha de Terceros",
+      "url": null
+    },
+    {
+      "label": "Modelo de Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo I Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Anuncio publicación BBRR en el BOPH",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://benasque.sedipualba.es",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-19T04:07:45.050Z"
+}
