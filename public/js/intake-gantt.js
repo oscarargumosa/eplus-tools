@@ -68,10 +68,12 @@ const IntakeGantt = (() => {
     if (!container) return;
 
     if (!templates) {
-      try { templates = (await API.get('/intake/task-templates')).data; } catch (e) {}
+      // API.get ya devuelve el campo data: leer solo .data dejaba plantillas y tareas vacías
+      // (no salían las de gestión ni las personalizadas). Mismo criterio que intake-tasks.js.
+      try { const res = await API.get('/intake/task-templates'); templates = res.data || res; } catch (e) {}
     }
     if (projectId) {
-      try { savedTasks = (await API.get(`/intake/projects/${projectId}/tasks`)).data || []; } catch (e) { savedTasks = []; }
+      try { const res = await API.get(`/intake/projects/${projectId}/tasks`); savedTasks = res.data || res || []; } catch (e) { savedTasks = []; }
     }
 
     const cs = (typeof Calculator !== 'undefined' && Calculator.isInitialized()) ? Calculator.getCalcState() : null;
@@ -128,7 +130,7 @@ const IntakeGantt = (() => {
         .gantt-sel.gantt-inh { color: #8a8aa3; font-weight: 500; border-style: dashed; }
       </style>
       <div class="mb-5">
-        <h1 class="font-headline text-3xl font-extrabold tracking-tighter text-primary mb-1">Gantt del Proyecto</h1>
+        ${isInsideWriter() ? '' : '<h1 class="font-headline text-3xl font-extrabold tracking-tighter text-primary mb-1">Gantt del Proyecto</h1>'}
         <p class="text-on-surface-variant text-sm">Duración: <strong>${totalMonths} meses</strong>. Cada actividad lleva debajo su tarea (con el código de la pestaña Tareas). Una tarea sin fechas propias toma las de su actividad.</p>
       </div>
 
