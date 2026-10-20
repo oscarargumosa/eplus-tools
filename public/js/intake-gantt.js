@@ -48,14 +48,18 @@ const IntakeGantt = (() => {
     fstp:'financial_support_third_parties', other:'other_costs',
   };
 
-  function findTaskTitle(category, subtypeLabel) {
+  // Mismo criterio que findTemplate() de intake-tasks.js: así la tarea de cada
+  // actividad es la misma fila de project_tasks que edita la pestaña Tareas.
+  function findTemplate(category, subtypeLabel) {
     if (!templates) return null;
     const cat = templates.find(c => c.category === category);
     if (!cat) return null;
-    if (!subtypeLabel) return cat.subtypes[0]?.title || null;
+    if (!subtypeLabel) return cat.subtypes[0] || null;
     const norm = subtypeLabel.toLowerCase().trim();
-    return (cat.subtypes.find(s => s.label.toLowerCase().trim() === norm) || cat.subtypes[0])?.title || null;
+    return cat.subtypes.find(sub => sub.label.toLowerCase().trim() === norm) || cat.subtypes[0] || null;
   }
+
+  let rowsById = new Map();
 
   /* ── Main ──────────────────────────────────────────────────── */
   async function render(el, pid) {
@@ -121,10 +125,11 @@ const IntakeGantt = (() => {
         }
         .gantt-sel:hover { border-color: #4312d8; background: white; }
         .gantt-sel option { font-size: 13px; }
+        .gantt-sel.gantt-inh { color: #8a8aa3; font-weight: 500; border-style: dashed; }
       </style>
       <div class="mb-5">
         <h1 class="font-headline text-3xl font-extrabold tracking-tighter text-primary mb-1">Gantt del Proyecto</h1>
-        <p class="text-on-surface-variant text-sm">Duración: <strong>${totalMonths} meses</strong>. Asigna inicio y fin a cada tarea.</p>
+        <p class="text-on-surface-variant text-sm">Duración: <strong>${totalMonths} meses</strong>. Cada actividad lleva debajo su tarea (con el código de la pestaña Tareas). Una tarea sin fechas propias toma las de su actividad.</p>
       </div>
 
       <!-- En móvil (css/movil.css) el cronograma se desplaza en horizontal dentro de
@@ -177,6 +182,10 @@ const IntakeGantt = (() => {
 
     // Compact legend
     html += `<div class="flex flex-wrap gap-3 mt-3 text-[9px] text-on-surface-variant">
+      <span class="flex items-center gap-1"><span class="w-5 h-2.5 rounded-sm" style="background:#4312d8;opacity:.7"></span>Actividad</span>
+      <span class="flex items-center gap-1"><span class="w-5 h-2.5 rounded-sm" style="${taskBarBg('#4312d8')};opacity:.6"></span>Tarea</span>
+      <span class="flex items-center gap-1"><span class="w-5 h-2.5 rounded-sm" style="${taskBarBg('#4312d8')};opacity:.25"></span>Tarea con las fechas de su actividad</span>
+      <span class="mx-1 text-outline-variant">·</span>
       ${wps.map((wp, wi) => `<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm" style="background:${wpColor(wi)}"></span>WP${wi+1}</span>`).join('')}
     </div>`;
 
@@ -196,22 +205,26 @@ const IntakeGantt = (() => {
   }
 
   /* ── Build rows from WPs + tasks ───────────────────────────── */
+  // Orden y códigos T<wp>.<n> iguales que en la pestaña Tareas: gestión (WP1) →
+  // cada actividad seguida de su tarea → tareas personalizadas.
   function buildRows(cs) {
     const rows = [];
     const projStart = cs.projectStart;
+    const mgmtOrder = ((templates || []).find(c => c.category === 'project_management')?.subtypes || []).map(x => x.key);
 
     for (let wi = 0; wi < cs.wps.length; wi++) {
       const wp = cs.wps[wi];
       const c = wpColor(wi), ink = wpInk(wi);
+      let n = 0;
+      const nextCode = () => `T${wi + 1}.${++n}`;
 
-      // WP1 management tasks (from checklist in Tareas step)
+      // WP1: tareas de gestión marcadas en Tareas
       if (wi === 0) {
-        const mgmtTasks = savedTasks.filter(x => x.category === 'project_management');
-        mgmtTasks.forEach((t) => {
-          rows.push({ wi, color: c, ink, icon: 'admin_panel_settings',
-            primary: t.title, secondary: 'Management',
-            id: 'mgmt-'+t.id, start: t.start_month||0, end: t.end_month||0, taskId: t.id });
-        });
+        savedTasks.filter(x => x.category === 'project_management')
+          .sort((a, b) => mgmtOrder.indexOf(a.subtype) - mgmtOrder.indexOf(b.subtype))
+          .forEach(t => rows.push({ kind: 'task', wi, color: c, ink, icon: 'admin_panel_settings', code: nextCode(),
+            primary: t.title, secondary: 'Gestión del proyecto',
+            id: 'task-' + t.id, start: t.start_month || 0, end: t.end_month || 0, taskId: t.id }));
       }
 
       for (const act of wp.activities) {
@@ -231,19 +244,38 @@ const IntakeGantt = (() => {
           if (end != null) act._gantt_end = end;
         }
 
-        rows.push({ wi, color: c, ink, icon: ACT_ICONS[act.type]||'task',
+        const actId = 'act-' + act.id;
+        rows.push({ kind: 'act', wi, color: c, ink, icon: ACT_ICONS[act.type] || 'task',
           primary: actLabel,
           secondary: actLabel !== typeName ? typeName : '',
-          id: 'act-'+act.id, start: start||0, end: end||0, actRef: act });
+          id: actId, start: start || 0, end: end || 0, actRef: act });
+
+        // La tarea de esta actividad (pestaña Tareas). Sin fechas propias, hereda las de la actividad.
+        const code = nextCode();
+        const category = TYPE_MAP[act.type];
+        if (!category) continue;
+        const sub = act.subtype || '';
+        const tmpl = findTemplate(category, sub);
+        const subKey = tmpl?.key || (sub ? sub.toLowerCase().replace(/[^a-z0-9]+/g, '_').slice(0, 60) : '');
+        const saved = savedTasks.find(t => t.category === category && t.subtype === subKey && t.wp_id === String(wi));
+        const own = !!(saved && saved.start_month && saved.end_month);
+        const title = saved?.title || tmpl?.title || actLabel;
+        rows.push({ kind: 'task', wi, color: c, ink, icon: 'subdirectory_arrow_right', code,
+          primary: shortTitle(title), secondary: '', fullTitle: title,
+          id: saved ? 'task-' + saved.id : 'new-' + act.id,
+          start: own ? saved.start_month : (start || 0), end: own ? saved.end_month : (end || 0),
+          inherited: !own, parentId: actId, taskId: saved?.id || null,
+          newTask: saved ? null : { category, subtype: subKey, wp_id: String(wi), title, description: tmpl?.description || '' } });
       }
 
-      // Custom tasks
+      // Tareas personalizadas
       for (const t of savedTasks.filter(x => x.category === 'custom' && parseInt(x.subtype) === wi)) {
-        rows.push({ wi, color: c, ink, icon: 'edit_note',
+        rows.push({ kind: 'task', wi, color: c, ink, icon: 'edit_note', code: nextCode(),
           primary: t.title || 'Sin título', secondary: 'Personalizada',
-          id: 'custom-'+t.id, start: t.start_month||0, end: t.end_month||0, taskId: t.id });
+          id: 'task-' + t.id, start: t.start_month || 0, end: t.end_month || 0, taskId: t.id });
       }
     }
+    rowsById = new Map(rows.map(r => [r.id, r]));
     return rows;
   }
 
@@ -254,21 +286,29 @@ const IntakeGantt = (() => {
   }
 
   /* ── Single row ────────────────────────────────────────────── */
+  // Barra de tarea: rayada, para distinguirla de la de su actividad.
+  function taskBarBg(color) {
+    return `background:repeating-linear-gradient(135deg, ${color} 0 5px, ${color}88 5px 10px)`;
+  }
+
+  function barHTML(row, s, e) {
+    if (!(s && e && s <= e)) return '';
+    const left = ((s-1)/totalMonths*100).toFixed(2);
+    const width = ((e-s+1)/totalMonths*100).toFixed(2);
+    const isTask = row.kind === 'task';
+    const bg = isTask ? taskBarBg(row.color) : `background:${row.color}`;
+    const op = isTask ? (row.inherited ? 0.25 : 0.6) : 0.7;
+    return `<div class="gantt-bar absolute ${isTask ? 'top-1.5 bottom-1.5' : 'top-1 bottom-1'} rounded transition-all duration-300" style="left:${left}%;width:${width}%;${bg};opacity:${op}"></div>`;
+  }
+
   function renderRow(row, mw) {
     const s = row.start || 0;
     const e = row.end || 0;
+    const isTask = row.kind === 'task';
 
     const opts = (val) => `<option value="">-</option>` + Array.from({length:totalMonths}, (_,i) =>
       `<option value="${i+1}" ${i+1===val?'selected':''}>${i+1}</option>`
     ).join('');
-
-    // Grid lines + bar
-    let barCSS = '';
-    if (s && e && s <= e) {
-      const left = ((s-1)/totalMonths*100).toFixed(2);
-      const width = ((e-s+1)/totalMonths*100).toFixed(2);
-      barCSS = `<div class="gantt-bar absolute top-1 bottom-1 rounded transition-all duration-300" style="left:${left}%;width:${width}%;background:${row.color};opacity:0.7"></div>`;
-    }
 
     // Vertical grid
     let grid = '';
@@ -277,59 +317,109 @@ const IntakeGantt = (() => {
       else if (m % 6 === 1) grid += `<div class="absolute top-0 bottom-0 border-l border-outline-variant/10" style="left:${((m-1)/totalMonths*100).toFixed(2)}%"></div>`;
     }
 
-    return `
-      <div class="gantt-row flex items-center border-b border-outline-variant/6 hover:bg-primary/[0.02] transition-colors" data-rid="${row.id}">
-        <div class="gantt-lbl flex-shrink-0 px-2 py-1.5 border-r border-outline-variant/10 overflow-hidden" style="width:300px">
-          <div class="flex items-start gap-1.5 pl-3">
+    const inh = isTask && row.inherited;
+    const selCls = 'gantt-sel' + (inh ? ' gantt-inh' : '');
+    const selTitle = inh ? ' title="Toma las fechas de su actividad. Cámbialas para darle fechas propias."' : '';
+    const label = isTask
+      ? `<div class="flex items-start gap-1.5 ${row.parentId ? 'pl-7' : 'pl-3'}">
+            <span class="text-[8px] font-mono font-bold px-1 py-px rounded mt-px flex-shrink-0" style="background:${row.color}18;color:${row.ink}">${esc(row.code || '')}</span>
+            <div class="min-w-0 flex-1">
+              <div class="text-[10px] text-on-surface truncate" title="${esc(row.fullTitle || row.primary)}">${esc(row.primary)}</div>
+              ${row.secondary ? `<div class="text-[9px] text-on-surface-variant/60 truncate">${esc(row.secondary)}</div>` : ''}
+            </div>
+          </div>`
+      : `<div class="flex items-start gap-1.5 pl-3">
             <span class="material-symbols-outlined text-[11px] mt-0.5" style="color:${row.ink}">${row.icon}</span>
             <div class="min-w-0 flex-1">
               <div class="text-[10px] font-bold text-on-surface truncate" title="${esc(row.primary)}">${esc(row.primary)}</div>
               ${row.secondary ? `<div class="text-[9px] text-on-surface-variant/60 truncate" title="${esc(row.secondary)}">↳ ${esc(row.secondary)}</div>` : ''}
             </div>
-          </div>
+          </div>`;
+
+    return `
+      <div class="gantt-row flex items-center border-b border-outline-variant/6 hover:bg-primary/[0.02] transition-colors" data-rid="${row.id}">
+        <div class="gantt-lbl flex-shrink-0 px-2 ${isTask ? 'py-1' : 'py-1.5'} border-r border-outline-variant/10 overflow-hidden" style="width:300px">
+          ${label}
         </div>
         <div class="gantt-dates flex-shrink-0 px-2 py-1 border-r border-outline-variant/10 flex items-center gap-1 justify-center" style="width:90px">
-          <select class="gantt-s gantt-sel" data-rid="${row.id}">${opts(s)}</select>
+          <select class="gantt-s ${selCls}" data-rid="${row.id}"${selTitle}>${opts(s)}</select>
           <span class="text-[10px] text-on-surface-variant/40">→</span>
-          <select class="gantt-e gantt-sel" data-rid="${row.id}">${opts(e)}</select>
+          <select class="gantt-e ${selCls}" data-rid="${row.id}"${selTitle}>${opts(e)}</select>
         </div>
-        <div class="flex-1 relative" style="height:22px">
-          ${grid}${barCSS}
+        <div class="gantt-track flex-1 relative" style="height:${isTask ? 18 : 22}px">
+          ${grid}${barHTML(row, s, e)}
         </div>
       </div>`;
+  }
+
+  // Repinta selects y barra de una fila con sus valores actuales.
+  function paintRow(rowEl, row) {
+    const s = row.start || 0, e = row.end || 0;
+    const inh = row.kind === 'task' && row.inherited;
+    rowEl.querySelectorAll('.gantt-s, .gantt-e').forEach(sel => {
+      sel.value = String((sel.classList.contains('gantt-s') ? s : e) || '');
+      sel.classList.toggle('gantt-inh', inh);
+      if (inh) sel.title = 'Toma las fechas de su actividad. Cámbialas para darle fechas propias.';
+      else sel.removeAttribute('title');
+    });
+    const track = rowEl.querySelector('.gantt-track');
+    track?.querySelector('.gantt-bar')?.remove();
+    if (track) track.insertAdjacentHTML('beforeend', barHTML(row, s, e));
   }
 
   /* ── Events ────────────────────────────────────────────────── */
   function bindEvents(cs) {
     container.querySelectorAll('.gantt-s, .gantt-e').forEach(sel => {
-      sel.addEventListener('change', () => {
-        const row = sel.closest('.gantt-row');
-        const rid = row.dataset.rid;
-        let sVal = parseInt(row.querySelector('.gantt-s').value) || 0;
-        let eVal = parseInt(row.querySelector('.gantt-e').value) || 0;
-        if (sVal && eVal && eVal < sVal) { eVal = sVal; row.querySelector('.gantt-e').value = eVal; }
+      sel.addEventListener('change', async () => {
+        const rowEl = sel.closest('.gantt-row');
+        const row = rowsById.get(rowEl.dataset.rid);
+        if (!row) return;
+        let sVal = parseInt(rowEl.querySelector('.gantt-s').value) || 0;
+        let eVal = parseInt(rowEl.querySelector('.gantt-e').value) || 0;
+        if (sVal && eVal && eVal < sVal) eVal = sVal;
 
-        // Update bar
-        const barArea = row.querySelector('.flex-1.relative');
-        let bar = barArea?.querySelector('.gantt-bar');
-        if (sVal && eVal) {
-          const left = ((sVal-1)/totalMonths*100).toFixed(2)+'%';
-          const width = ((eVal-sVal+1)/totalMonths*100).toFixed(2)+'%';
-          const color = bar?.style.background || row.querySelector('.material-symbols-outlined')?.style.color || '#4312d8';
-          if (bar) { bar.style.left = left; bar.style.width = width; }
-          else barArea.insertAdjacentHTML('beforeend', `<div class="gantt-bar absolute top-1 bottom-1 rounded transition-all duration-300" style="left:${left};width:${width};background:${color};opacity:0.7"></div>`);
-        } else if (bar) { bar.remove(); }
-
-        // Persist
-        if (rid.startsWith('act-')) {
-          const actId = parseInt(rid.replace('act-',''));
-          for (const wp of cs.wps) { const a = wp.activities.find(x=>x.id===actId); if (a) { a._gantt_start=sVal||null; a._gantt_end=eVal||null; break; } }
+        if (row.kind === 'act') {
+          row.start = sVal; row.end = eVal;
+          paintRow(rowEl, row);
+          const act = row.actRef;
+          if (act) { act._gantt_start = sVal || null; act._gantt_end = eVal || null; }
           // Trigger Calculator autosave so gantt months persist to DB
           if (typeof Calculator !== 'undefined' && Calculator.scheduleSave) Calculator.scheduleSave();
-        } else {
-          const tid = rid.replace('mgmt-','').replace('custom-','');
-          if (projectId && tid) API.patch('/intake/tasks/'+tid, { start_month:sVal||null, end_month:eVal||null }).catch(()=>{});
+          // Las tareas que heredan de esta actividad se mueven con ella
+          for (const t of rowsById.values()) {
+            if (t.parentId === row.id && t.inherited) {
+              t.start = sVal; t.end = eVal;
+              const tEl = container.querySelector(`.gantt-row[data-rid="${t.id}"]`);
+              if (tEl) paintRow(tEl, t);
+            }
+          }
+          return;
         }
+
+        // Tarea: elegir un mes le da fechas propias (si falta el otro, se copia el mismo);
+        // vaciar cualquiera de los dos la devuelve a las fechas de su actividad.
+        const cleared = !sel.value;
+        if (!cleared) { if (sVal && !eVal) eVal = sVal; if (eVal && !sVal) sVal = eVal; }
+        const own = !cleared && !!(sVal && eVal);
+        const parent = row.parentId ? rowsById.get(row.parentId) : null;
+        row.inherited = !!parent && !own;
+        row.start = row.inherited ? parent.start : sVal;
+        row.end = row.inherited ? parent.end : eVal;
+        paintRow(rowEl, row);
+        if (!projectId) return;
+        const months = { start_month: own ? sVal : null, end_month: own ? eVal : null };
+        try {
+          if (row.taskId) {
+            await API.patch('/intake/tasks/' + row.taskId, months);
+            const st = savedTasks.find(t => t.id === row.taskId);
+            if (st) Object.assign(st, months);
+          } else if (row.newTask && own) {
+            // La tarea aún no estaba guardada (la pestaña Tareas la propone desde la plantilla)
+            const res = await API.post(`/intake/projects/${projectId}/tasks`, { ...row.newTask, ...months });
+            row.taskId = res?.data?.id || res?.id || null;
+            if (row.taskId) { savedTasks.push({ id: row.taskId, ...row.newTask, ...months }); row.newTask = null; }
+          }
+        } catch (e) { /* el indicador global de guardado avisa y ofrece reintentar */ }
       });
     });
   }

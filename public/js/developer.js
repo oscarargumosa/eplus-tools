@@ -150,7 +150,7 @@ const Developer = (() => {
       // Load eval criteria
       try { evalCriteria = await API.get('/developer/eval-criteria'); } catch (e) { evalCriteria = []; }
 
-      renderGanttPhase();
+      goPrepTab(PHASE_TABS[0].id);
     } catch (err) {
       console.error('Developer.openProject:', err);
       el.innerHTML = '<p class="text-sm text-error py-8 text-center">Error al abrir proyecto: ' + esc(err.message || err) + '</p>';
@@ -279,11 +279,12 @@ const Developer = (() => {
 
   /* ── Phase tabs ────────────────────────────────────────────── */
   const PHASE_TABS = [
-    { id: 11, label: 'Cronograma',   icon: 'timeline' },
     { id: 'consorcio',    label: 'Consorcio',    icon: 'groups' },
     { id: 'relevancia',   label: 'Relevancia',   icon: 'lightbulb' },
     { id: 'actividades',  label: 'Actividades',  icon: 'task_alt' },
     { id: 'tareas',       label: 'Tareas',       icon: 'checklist' },
+    // Después de Tareas: el cronograma pinta las actividades y también sus tareas.
+    { id: 'cronograma',   label: 'Cronograma',   icon: 'timeline' },
     { id: 'entregables',  label: 'Entregables',  icon: 'inventory_2' },
     { id: 2,  label: 'Escribir',     icon: 'edit_note' },
     { id: 4,  label: 'Revisar',      icon: 'fact_check' },
@@ -394,55 +395,6 @@ const Developer = (() => {
   }
 
   /* ══════════════════════════════════════════════════════════════
-     PHASE 1.1: Gantt / Cronograma (standalone top-level tab)
-     ══════════════════════════════════════════════════════════════ */
-  async function renderGanttPhase() {
-    phase = 11;
-    const pid = currentProject.id;
-    const el = document.getElementById('developer-content');
-
-    el.innerHTML = renderPhaseTabs(11) + `
-      <div class="max-w-5xl">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-xl bg-[#4312d8]/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl text-[#4312d8]">timeline</span>
-          </div>
-          <div>
-            <h2 class="font-headline text-lg font-bold">Cronograma del proyecto</h2>
-            <p class="text-xs text-on-surface-variant">Timeline visual de WPs y actividades. Asigna inicio y fin (mes) a cada tarea.</p>
-          </div>
-        </div>
-        <div id="writer-gantt-container" class="min-h-[200px]">
-          <div class="flex items-center justify-center py-16 text-on-surface-variant">
-            <span class="material-symbols-outlined animate-spin mr-2">progress_activity</span> Cargando cronograma...
-          </div>
-        </div>
-      </div>`;
-
-    // Init Calculator with project data and render Gantt
-    if (typeof IntakeGantt !== 'undefined') {
-      if (typeof Calculator !== 'undefined') {
-        try {
-          const projData = await API.get('/intake/projects/' + pid);
-          const partnerList = await API.get('/intake/projects/' + pid + '/partners');
-          console.log('[Writer Gantt] projData:', projData?.id, 'partners:', partnerList?.length);
-          await Calculator.initFromIntake(projData, partnerList || []);
-          const cs = Calculator.getCalcState();
-          console.log('[Writer Gantt] after init — wps:', cs.wps?.length, 'total acts:', cs.wps?.reduce((s,w) => s + w.activities.length, 0));
-        } catch (e) { console.error('[Writer Gantt] calc init failed:', e); }
-      }
-      IntakeGantt.render(document.getElementById('writer-gantt-container'), pid);
-    } else {
-      document.getElementById('writer-gantt-container').innerHTML = `
-        <div class="bg-[#f8ffd9] rounded-2xl border border-[#e9ff60] p-8 text-center">
-          <span class="material-symbols-outlined text-4xl text-primary mb-2">timeline</span>
-          <h3 class="font-headline text-base font-bold text-primary mb-1">Gantt no disponible</h3>
-          <p class="text-sm text-ink">Define Work Packages y actividades en el Intake primero.</p>
-        </div>`;
-    }
-  }
-
-  /* ══════════════════════════════════════════════════════════════
      PHASE 1.2: Budget (standalone, same style as Prep Studio)
      ══════════════════════════════════════════════════════════════ */
   async function renderBudgetPhase() {
@@ -489,7 +441,7 @@ const Developer = (() => {
     const el = document.getElementById('developer-content');
 
     el.innerHTML = renderPhaseTabs(prepSubTab) + `
-      <div class="max-w-4xl">
+      <div class="${prepSubTab === 'cronograma' ? 'max-w-5xl' : 'max-w-4xl'}">
         <div id="prep-tab-content"></div>
         <div id="prep-nav-buttons" class="flex flex-wrap justify-between items-center gap-3 mt-8"></div>
       </div>`;
@@ -2972,7 +2924,7 @@ const Developer = (() => {
         <div class="flex items-center justify-between mb-4">
           <div>
             <h3 class="font-headline text-base font-bold">Cronograma del proyecto</h3>
-            <p class="text-xs text-on-surface-variant">Timeline visual de WPs y actividades. Ajusta fechas arrastrando las barras.</p>
+            <p class="text-xs text-on-surface-variant">Actividades y tareas de cada WP, mes a mes. Las tareas vienen de la pestaña Tareas; elige inicio y fin en cada fila.</p>
           </div>
         </div>
         <div id="prep-gantt-container"></div>
@@ -4504,7 +4456,7 @@ const Developer = (() => {
 
   function goPhase(p) {
     switch (p) {
-      case 11: renderGanttPhase(); break;
+      case 11: goPrepTab('cronograma'); break; // antes era una fase aparte; ahora es la pestaña tras Tareas
       case 2: renderPhase2(); break;
       case 3: renderPhase2(); break; // Phase 3 absorbed into cascade
       case 4: renderPhase4(); break;
