@@ -228,7 +228,8 @@ const Intake = (() => {
 
     // AI Interview — bind all buttons once
     document.getElementById('intake-interview-start')?.addEventListener('click', startInterview);
-    document.getElementById('intake-interview-send')?.addEventListener('click', sendAnswer);
+    document.getElementById('intake-interview-send')?.addEventListener('click', () => sendAnswer());
+    document.getElementById('intake-interview-finish')?.addEventListener('click', finishInterviewNow);
     document.getElementById('intake-interview-reset')?.addEventListener('click', resetInterview);
     document.getElementById('intake-interview-input')?.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendAnswer(); }
@@ -1538,6 +1539,7 @@ const Intake = (() => {
         // Update progress
         const userCount = res.turns.filter(t => t.role === 'user').length;
         updateInterviewProgress(userCount, 6);
+        updateFinishButton(res.completed ? 0 : userCount);
         // If summary exists, populate textarea and show launch section
         if (res.summary) {
           const desc = document.getElementById('intake-f-desc');
@@ -1587,23 +1589,37 @@ const Intake = (() => {
     }
   }
 
-  async function sendAnswer() {
+  // «Terminar y generar el resumen»: cierra la entrevista con lo contado hasta ahora
+  // (y lo que haya escrito en el cuadro) para poder pasar a Escribir sin agotar las preguntas.
+  function finishInterviewNow() { return sendAnswer({ finish: true }); }
+
+  // Se enseña en cuanto hay al menos una respuesta y la entrevista sigue abierta.
+  function updateFinishButton(userAnswers) {
+    const wrap = document.getElementById('intake-interview-finish-wrap');
+    if (wrap) wrap.classList.toggle('hidden', !(userAnswers >= 1));
+  }
+
+  async function sendAnswer(opts) {
     if (interviewLoading) return;
+    const finish = !!(opts && opts.finish === true);
     const inputEl = document.getElementById('intake-interview-input');
     if (!inputEl) return;
     const answer = inputEl.value.trim();
-    if (!answer) return;
+    if (!answer && !finish) return;
 
     // Render user bubble
-    renderInterviewTurn('user', answer);
+    if (answer) renderInterviewTurn('user', answer);
     inputEl.value = '';
     interviewLoading = true;
     const sendBtn = document.getElementById('intake-interview-send');
+    const finishBtn = document.getElementById('intake-interview-finish');
     if (sendBtn) sendBtn.disabled = true;
+    if (finishBtn) finishBtn.disabled = true;
+    if (finish) Toast.show('Escribiendo el resumen del proyecto… puede tardar un minuto', 'ok');
 
     showTypingIndicator();
     try {
-      const res = await API.post('/intake/projects/' + currentProjectId + '/interview/next', { answer });
+      const res = await API.post('/intake/projects/' + currentProjectId + '/interview/next', { answer: answer || null, finish });
       removeTypingIndicator();
 
       if (res.type === 'summary') {
@@ -1627,6 +1643,7 @@ const Intake = (() => {
       } else {
         renderInterviewTurn('assistant', res.content);
         updateInterviewProgress(res.progress || 0, res.total_questions || 6);
+        updateFinishButton(res.progress || 0);
       }
     } catch (e) {
       removeTypingIndicator();
@@ -1634,6 +1651,7 @@ const Intake = (() => {
     }
     interviewLoading = false;
     if (sendBtn) sendBtn.disabled = false;
+    if (finishBtn) finishBtn.disabled = false;
     document.getElementById('intake-interview-input')?.focus();
   }
 
@@ -1733,6 +1751,7 @@ const Intake = (() => {
       const inputArea = document.getElementById('intake-interview-input-area');
       if (inputArea) inputArea.classList.remove('hidden');
       updateInterviewProgress(0, 6);
+      updateFinishButton(0);
       const desc = document.getElementById('intake-f-desc');
       if (desc) { desc.value = ''; desc.dispatchEvent(new Event('input', { bubbles: true })); }
       // Hide post-interview section

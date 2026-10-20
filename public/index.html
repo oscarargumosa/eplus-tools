@@ -1398,7 +1398,14 @@ tailwind.config = {
                   <textarea id="intake-interview-input" rows="3"
                     placeholder="Escribe tu respuesta aqui..."
                     class="w-full px-4 py-3 rounded-xl bg-white border border-outline-variant/30 text-on-surface text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none resize-none leading-relaxed mb-2"></textarea>
-                  <div class="flex justify-end">
+                  <div class="flex flex-wrap items-center justify-end gap-x-3 gap-y-2">
+                    <div id="intake-interview-finish-wrap" class="hidden mr-auto flex flex-wrap items-center gap-x-3 gap-y-1">
+                      <button type="button" id="intake-interview-finish"
+                        class="px-4 py-2 rounded-xl border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/5 transition-colors disabled:opacity-30 disabled:pointer-events-none inline-flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-base">task_alt</span> Terminar y generar el resumen
+                      </button>
+                      <span class="text-xs text-on-surface-variant">Puedes terminar cuando quieras: el resumen se escribe con lo que ya has contado y los datos del proyecto.</span>
+                    </div>
                     <button type="button" id="intake-interview-send"
                       class="px-5 py-2 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors disabled:opacity-30 disabled:pointer-events-none shadow-sm inline-flex items-center gap-1.5">
                       <span class="material-symbols-outlined text-base">send</span> Enviar
@@ -3328,7 +3335,7 @@ tailwind.config = {
 <script src="/js/my-projects.js"></script>
 <script src="/js/my-evaluations.js"></script>
 <script src="/js/create.js"></script>
-<script src="/js/intake.js?v=20261016g"></script>
+<script src="/js/intake.js?v=20261020a"></script>
 <script src="/js/admin.js?v=20260627w"></script>
 <script src="/js/admin-org-claims.js?v=20261016a"></script>
 <script src="/js/engagement.js?v=20260627t"></script>

@@ -513,8 +513,9 @@ INTERVIEW PROTOCOL:
 - ALWAYS provide context, data, or a proposal BEFORE asking
 - Be warm, encouraging, use the coordinator's name or organization name
 - Reference specific project data (partner names, activity types, budget, WP titles)
-- If an answer is weak (<15 words or vague) → rephrase with an example and ask again (does NOT count as a new turn)
-- After the coordinator has answered 5-6 substantive questions, respond with ONLY the token [INTERVIEW_COMPLETE]
+- If an answer is weak (<15 words or vague) → you may rephrase with an example and ask again ONCE. If the next answer is still short, accept it as it is, build on it yourself and move on to the next turn. Never ask the same thing a third time.
+- A short choice ("B", "yes", "all correct") IS an answer: take it, fill in the details yourself from the project data and move on.
+- After the coordinator has answered 5-6 questions, respond with ONLY the token [INTERVIEW_COMPLETE]. The platform ends the interview anyway after 6 answers, and the coordinator can end it at any moment.
 
 QUESTION FLOW (6 turns, adapt based on answers):
 
@@ -623,11 +624,39 @@ async function getInterview(req, res, next) {
   } catch (e) { next(e); }
 }
 
+// Tope de respuestas: al llegar, la entrevista se cierra aunque la IA quiera seguir.
+const INTERVIEW_MAX_ANSWERS = 6;
+
+// Cierra la entrevista y escribe el Project Summary con lo contado hasta ahora
+// (más los datos del proyecto, que van en el contexto).
+async function finishInterview(projectId, userId, turns, context, proposalLang) {
+  await model.saveInterviewTurn(projectId, userId, turns.length, 'assistant', '[INTERVIEW_COMPLETE]');
+
+  const transcript = turns
+    .filter(t => t.content !== '[INTERVIEW_COMPLETE]')
+    .map(t => `${t.role === 'assistant' ? 'Q' : 'A'}: ${t.content}`)
+    .join('\n\n');
+
+  const summaryPrompt = transcript
+    ? `Based on this interview, write the Project Summary:\n\n${transcript}`
+    : 'The coordinator skipped the interview. Write the Project Summary from the project data alone.';
+  const rawSummary = await callClaudeSingle(SUMMARY_SYSTEM(context, proposalLang), summaryPrompt, 2048);
+  const summary = sanitizeSummaryMarkdown(rawSummary);
+
+  await model.saveInterviewSummary(projectId, summary);
+
+  return { type: 'summary', content: summary, progress: INTERVIEW_MAX_ANSWERS, total_questions: INTERVIEW_MAX_ANSWERS };
+}
+
 async function interviewNext(req, res, next) {
   try {
     const projectId = req.params.id;
     const userId = req.user.id;
     const { answer } = req.body;
+    // finish: la persona pulsa «Terminar y generar el resumen». Sin esto la entrevista
+    // solo acababa si la IA decidía cerrarla, y una respuesta corta la hacía repreguntar
+    // sin contar el turno: había quien se quedaba en Resumen sin poder pasar a Escribir.
+    const finish = req.body.finish === true;
 
     // Build context
     const context = await model.buildInterviewContext(projectId, userId);
@@ -642,10 +671,19 @@ async function interviewNext(req, res, next) {
     let turns = await model.getInterviewTurns(projectId);
 
     // Save user answer if provided
-    if (answer !== null && answer !== undefined) {
+    if (answer !== null && answer !== undefined && String(answer).trim()) {
       const nextIdx = turns.length;
       await model.saveInterviewTurn(projectId, userId, nextIdx, 'user', answer);
       turns.push({ turn_index: nextIdx, role: 'user', content: answer });
+    }
+
+    // Count user answers for progress
+    const userAnswers = turns.filter(t => t.role === 'user').length;
+    const totalQuestions = INTERVIEW_MAX_ANSWERS;
+
+    // Cierre forzado: a petición de la persona o al llegar al tope de respuestas.
+    if (finish || userAnswers >= INTERVIEW_MAX_ANSWERS) {
+      return res.json({ ok: true, data: await finishInterview(projectId, userId, turns, context, proposalLang) });
     }
 
     // Build messages array for Claude
@@ -674,32 +712,9 @@ async function interviewNext(req, res, next) {
     const systemPrompt = INTERVIEW_SYSTEM(context, proposalLang);
     const aiResponse = await callClaudeChat(systemPrompt, messages, 1024);
 
-    // Count user answers for progress
-    const userAnswers = turns.filter(t => t.role === 'user').length;
-    const totalQuestions = 6;
-
     // Check if interview is complete
     if (aiResponse.includes('[INTERVIEW_COMPLETE]')) {
-      // Save the complete marker
-      const nextIdx = turns.length;
-      await model.saveInterviewTurn(projectId, userId, nextIdx, 'assistant', '[INTERVIEW_COMPLETE]');
-
-      // Generate summary with a separate call
-      const transcript = turns
-        .filter(t => t.content !== '[INTERVIEW_COMPLETE]')
-        .map(t => `${t.role === 'assistant' ? 'Q' : 'A'}: ${t.content}`)
-        .join('\n\n');
-
-      const summaryPrompt = `Based on this interview, write the Project Summary:\n\n${transcript}`;
-      const rawSummary = await callClaudeSingle(SUMMARY_SYSTEM(context, proposalLang), summaryPrompt, 2048);
-      const summary = sanitizeSummaryMarkdown(rawSummary);
-
-      await model.saveInterviewSummary(projectId, summary);
-
-      return res.json({
-        ok: true,
-        data: { type: 'summary', content: summary, progress: totalQuestions, total_questions: totalQuestions }
-      });
+      return res.json({ ok: true, data: await finishInterview(projectId, userId, turns, context, proposalLang) });
     }
 
     // Save AI response
