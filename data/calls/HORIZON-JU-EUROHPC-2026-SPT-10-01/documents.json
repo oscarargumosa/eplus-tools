@@ -8,10 +8,10 @@
   },
   {
     "section": "2. Eligible countries",
-    "label": "Horizon Europe Programme Guide",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
-    "ext": ".pdf",
-    "is_downloadable": true
+    "label": "Discover EuroHPC JU - The European High Performance Computing Joint Undertaking (EuroHPC JU)",
+    "url": "https://www.eurohpc-ju.europa.eu/about/discover-eurohpc-ju_en",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "5b. Evaluation and award: Submission and evaluation processes",
@@ -127,6 +127,13 @@
   },
   {
     "section": "Application and evaluation forms and model grant agreement (MGA):",
+    "label": "HE Programme Guide",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application and evaluation forms and model grant agreement (MGA):",
     "label": "HE MGA",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
     "ext": ".pdf",
@@ -187,6 +194,13 @@
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-funding-what-do-i-need-to-know_he_en.pdf",
     "ext": ".pdf",
     "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EuroHPC Work Programme 2026 (Decision 22/2026 Amendment No 3)",
+    "url": "https://www.eurohpc-ju.europa.eu/document/download/b759cd90-bacc-4c58-938e-82d6df86b3bd_en?filename=Decision%2022.2026_Amend.%203%20%20to%20Work%20Programme%202026.pdf",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "Additional documents:",

@@ -1,0 +1,72 @@
+{
+  "id": 1137820,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ZALDIBAR",
+    "nivel3": "AYUNTAMIENTO DE ZALDIBAR"
+  },
+  "sedeElectronica": "www.zaldibar.eus",
+  "codigoBDNS": "936259",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 7500,
+  "mrr": false,
+  "descripcion": "SUBVENCIONES PARA EL APOYO AL EMPRENDIMIENTO Y SUCESIÓN DE EMPRESAS",
+  "descripcionLeng": "EKINTZAILETZARI ETA ENPRESEN ONDORENGOTZARI LAGUNTZEKO DIRU-LAGUNTZAK",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES213 - Bizkaia"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases por las que se regula la concesión de subvenciones para el apoyo al emprendimiento y sucesión de empresas.",
+  "urlBasesReguladoras": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/05/09/II-2549_cas.pdf?hash=d1bbae596fbb320f94dffab0fd142c36",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Al día siguiente de la publicación de la convocatoria en el BOB",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539688,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Empresas.cas -2026.docx",
+      "long": 14117,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539690,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Empresas.eus -2026.docx",
+      "long": 14286,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

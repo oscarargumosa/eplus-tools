@@ -1,0 +1,108 @@
+{
+  "identifier": "EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI-NATCH",
+  "ccm2Id": "52805713",
+  "callIdentifier": "EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI",
+  "callTitle": "Call for expression of interest - Cyber Hubs 2027",
+  "title": "National Cyber Hubs",
+  "programme": "EOI",
+  "programmeCode": "52395851",
+  "programmePeriod": "2021 - 2027",
+  "status": "open",
+  "statusCode": "31094502",
+  "opening": "2026-10-15",
+  "deadline": "2027-03-16",
+  "deadlineModel": "single-stage",
+  "actionType": "Call for Expression of Interest",
+  "actionCode": "EOI",
+  "mgaCode": "EOI",
+  "budget": {
+    "total_eur": 6000000,
+    "by_year": {
+      "2026": 6000000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI-NATCH",
+    "EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact: please add a contact e-mail or URL\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and submission to reporting on your on-going project. Valid for all 2021-2027 programmes.",
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/46850?topic=EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI-NATCH",
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EOI-ECCC-2027-DIGITAL-DEPLOY-CYBER-12-CEI-NATCH",
+  "documents": [
+    {
+      "section": "1. Admissibility Conditions: Proposal page limit and layout",
+      "label": "call document",
+      "url": "https://cybersecurity-centre.europa.eu/document/12e23667-39d0-4fb1-85b9-7e5e901ec7ec_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "5. Evaluation and award: Submission and evaluation processes",
+      "label": "Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Cyber Hub Blueprint Architecture",
+      "url": "https://cybersecurity-centre.europa.eu/document/26af44de-c5af-4af3-a400-6a046b58ef0d_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Application Form Part B",
+      "url": "https://cybersecurity-centre.europa.eu/document/1576529e-882c-4d9b-bd87-27d6523ff2e5_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Model hosting and usage agreement",
+      "url": "https://cybersecurity-centre.europa.eu/document/4bff54a2-77bc-4a4e-90ba-e9f11d98dad8_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Commitment letter",
+      "url": "https://cybersecurity-centre.europa.eu/document/492433b4-01d1-43bb-8da3-33a7200d4b22_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "2027 Call for Expression of Interest on National Cyber Hubs",
+      "url": "https://cybersecurity-centre.europa.eu/2027-call-expression-interest-national-cyber-hubs_en",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-10-20T04:05:01.085Z"
+}

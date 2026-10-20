@@ -1,0 +1,100 @@
+{
+  "id": 1137128,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "COMUNITAT VALENCIANA",
+    "nivel3": "SECRETARÍA AUTONÓMICA DE VIVIENDA"
+  },
+  "sedeElectronica": "https://sede.gva.es/es/detall-tramit?id_proc=G112523",
+  "codigoBDNS": "935567",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000000,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN de Vicepr. Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad que apruebam bases reguladoras de subvenciones para  limpieza y reparación  fachadas dañadas DANA 2024 y convocar subvenc 2026",
+  "descripcionLeng": "RESOLUCIÓ de la Vicep. Primera i Conselleria d'Habitatge, Ocupació, Joventut i Igualtat, que aproven bases reguladores de les subvencions per a la neteja i reparació de façanes danyades per la DANA de 2024 i es convoquen les subvenc 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "GRAN EMPRESA"
+    },
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "CONSTRUCCIÓN",
+      "codigo": "F"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    },
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN de Vicepr. Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad que apruebam bases reguladoras de subvenciones para  limpieza y reparación  fachadas dañadas DANA 2024 y convocar subvenc 2026",
+  "urlBasesReguladoras": "https://habitatge.gva.es/es/web/arquitectura/ajudes/2026/f_dana",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día  siguiente de la publicación de la convocatoria",
+  "textFin": "A los dos meses de su publicación.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539698,
+      "descripcion": "EXTRACTO CASTELLANO_F_DANA",
+      "nombreFic": "6. Extracto ayudas_F_DANA_castellano_rev_firmado.pdf",
+      "long": 295745,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539699,
+      "descripcion": "EXTRACTO VALENCIANO_F_DANA",
+      "nombreFic": "7. Extracto ayudas_F_DANA_valenciano_rev_firmado.pdf",
+      "long": 295649,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539696,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "4. BBRR+CONV AYUDAS FACHADAS F_DANA_post SUGS_CAST_rev_firmado.pdf",
+      "long": 449464,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539697,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "5. BBRR+CONV AYUDAS FACHADAS F_DANA_post SUGS_VAL_rev_firmado.pdf",
+      "long": 485899,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

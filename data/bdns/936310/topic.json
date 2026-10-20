@@ -1,0 +1,56 @@
+{
+  "source": "bdns",
+  "source_id": "936310",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BOLO, O / AYUNTAMIENTO DE BOLO, O",
+  "nuts_codes": [
+    "ES113"
+  ],
+  "nuts_primary": "ES113",
+  "title": "Decreto de Alcaldía 2026-0475, de 19 de octubre de 2026, por el que se aprueban las bases reguladoras y la convocatoria de ayudas extraordinarias en especie a las personas o entidades titulares de explotaciones de ganado en el término municipal de O Bolo.",
+  "title_lang": "es",
+  "summary": "Agricultura, Pesca y Alimentación",
+  "status": "open",
+  "publication_date": "2026-10-19",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 6000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "A",
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936310",
+  "documents": [],
+  "bases_reguladoras_url": "https://obolo.sedelectronica.gal/preview-document/2e1e5535-83ba-44de-b9e4-16f9a1a3cc8b/",
+  "text_inicio": "Al día siguiente de la publicación del extracto de la concocatoria en el BOP",
+  "text_fin": "A los quince días hábiles",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-20T04:08:26.195Z"
+}

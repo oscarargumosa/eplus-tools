@@ -8,10 +8,10 @@
   },
   {
     "section": "2. Eligible countries",
-    "label": "Horizon Europe Programme Guide",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
-    "ext": ".pdf",
-    "is_downloadable": true
+    "label": "Discover EuroHPC JU - The European High Performance Computing Joint Undertaking (EuroHPC JU)",
+    "url": "https://www.eurohpc-ju.europa.eu/about/discover-eurohpc-ju_en",
+    "ext": "",
+    "is_downloadable": false
   },
   {
     "section": "5b. Evaluation and award: Submission and evaluation processes",
@@ -122,6 +122,13 @@
     "section": "Application and evaluation forms and model grant agreement (MGA):",
     "label": "Standard evaluation form (HE EIC Accelerator stage 2 - full proposal)",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/ef/ef_he-eic-accelerator_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Application and evaluation forms and model grant agreement (MGA):",
+    "label": "HE Programme Guide",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
     "ext": ".pdf",
     "is_downloadable": true
   },

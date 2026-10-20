@@ -1,0 +1,152 @@
+{
+  "id": 1137823,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VALLADA",
+    "nivel3": "AYUNTAMIENTO DE VALLADA"
+  },
+  "sedeElectronica": "https://vallada.sede.dival.es",
+  "codigoBDNS": "936262",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA DE SUBVENCIONES, EN RÉGIMEN DE\nCONCURRENCIA COMPETITIVA, DESTINADAS A ENTIDADES DEPORTIVAS MUNICIPALES\nDE VALLADA, EXERCICIO 2026",
+  "descripcionLeng": "BASES REGULADORES DE LA CONVOCATÒRIA DE SUBVENCIONS, EN RÈGIM DE\nCONCURRÈNCIA COMPETITIVA, DESTINADES A ENTITATS ESPORTIVES MUNICIPALS\nDE VALLADA, EXERCICI 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Sanidad",
+  "descripcionBasesReguladoras": "La present convocatòria té com a finalitat contribuir al foment, la promoció i la\ndinamització del teixit associatiu i cultural del municipi de Vallada, com a element\nfonamental per a afavorir la participació ciutadana en la vida esportiva de la localitat",
+  "urlBasesReguladoras": "https://vallada.sede.dival.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-20",
+  "fechaFinSolicitud": "2026-11-12",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539683,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Reguladores - Entitats Esportives 2026  - SEFYCU 8705091.pdf",
+      "long": 715839,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539684,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases Reguladores - Entitats Esportives 2026  - SEFYCU 8705091.pdf",
+      "long": 715839,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539691,
+      "descripcion": "ANEXO 4",
+      "nombreFic": "Annex IV. Declaracio? Responsable article 13.2 (Emplenable).pdf",
+      "long": 308005,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539700,
+      "descripcion": "ANEXO 8",
+      "nombreFic": "Annex VIII. Declaracio? Responsable Altres Ingressos (Emplenable).pdf",
+      "long": 262366,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539689,
+      "descripcion": "ANEXO 3",
+      "nombreFic": "Annex III.a. Ampliacio? Activitats (Emplenable).pdf",
+      "long": 319735,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539701,
+      "descripcion": "ANEXO 3. PROYECTO DE ACTIVIDADES",
+      "nombreFic": "Annex III. Projecte d",
+      "long": 437512,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539692,
+      "descripcion": "ANEXO 5",
+      "nombreFic": "Annex V. Resum Documentacio? Justificacio? (Emplenable).pdf",
+      "long": 292804,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539693,
+      "descripcion": "ANEXO 6",
+      "nombreFic": "Annex VI.a. Ampliacio? Activitats Justificatives (Emplenable).pdf",
+      "long": 340883,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539694,
+      "descripcion": "ANEXO 7",
+      "nombreFic": "Annex VII. Compte Justificatiu (Emplenable).pdf",
+      "long": 434534,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539695,
+      "descripcion": "ANEXO 7. MEMORIA JUSTIFICATIVA",
+      "nombreFic": "Annex VI. Memo?ria Justificativa (Emplenable).pdf",
+      "long": 344705,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539687,
+      "descripcion": "ANEXO 2",
+      "nombreFic": "Annex II. Sol·licitud Subvencio? (Emplenable).pdf",
+      "long": 330741,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539686,
+      "descripcion": "ANEXO1",
+      "nombreFic": "Annex I. Resum Documentacio? Sol·licitud (Emplenable).pdf",
+      "long": 293784,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

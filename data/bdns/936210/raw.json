@@ -1,0 +1,64 @@
+{
+  "id": 1137771,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "DIRECCIÓN GENERAL DE ADMINISTRACIÓN LOCAL"
+  },
+  "sedeElectronica": "https://www.juntaex.es/w/0701124",
+  "codigoBDNS": "936210",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 829000,
+  "mrr": false,
+  "descripcion": "Ayudas 2026 a municipios y entidades locales menores para situaciones de EMERGENCIA,  según Resolución de 09 de octubre de 2026 que convoca.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Administración pública y de la política económica, social y medioambiental",
+      "codigo": "84.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Decreto 97/2024, de 28 de agosto,  de bases reguladoras de las subvenciones destinadas a municipios y entidades locales menores de la CA de Extremadura para afrontar situaciones de emergencia, de carácter extraordinario o derivadas de una mayor demanda es",
+  "urlBasesReguladoras": "https://doe.juntaex.es/pdfs/doe/2024/1750o/24040159.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia siguiente al de la publicación de la Resolución de Convocatoria en el DOE",
+  "textFin": "Hasta un mes desde el día siguiente al de su publicación en el DOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539582,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Ayudas 2026 a municipios y entidades locales menores para situaciones de EMERGENCIA,  según Resolución de 09 de octubre de 2026 que convoca_.PDF",
+      "long": 366329,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,87 @@
+{
+  "id": 1137593,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TOMELLOSO",
+    "nivel3": "AYUNTAMIENTO DE TOMELLOSO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936032",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Bases que han de regir el III Concurso de Charangas del Carnaval 2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de creación artística y artes escénicas",
+      "codigo": "90"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES422 - Ciudad Real"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases que han de regir el III Concurso de Charangas del Carnaval 2027",
+  "urlBasesReguladoras": "https://etablon.dipucr.es:4443/eTablon/tablon.jsf?entidad=0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-19",
+  "fechaFinSolicitud": "2027-01-29",
+  "textInicio": null,
+  "textFin": "Hasta las 14 horas",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539127,
+      "descripcion": "Anuncio Tablón Edictos Ayuntamiento de Tomelloso",
+      "nombreFic": "eTablon - Publicación_2590272.pdf",
+      "long": 241642,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539125,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto Directo_2590016.pdf",
+      "long": 190042,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [
+    {
+      "numAnuncio": 223194,
+      "titulo": "Resolución de Alcaldía-Presidencia de fecha 16 de octubre de 2026, por la que se aprueban las Bases que han de regir el III Concurso de Charangas del Carnaval 2027",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios: Podrá participar en el concurso cualquier charanga que esté compuesta por un mínimo de 8 componentes, siendo obligatoria la inscripción. El número máximo de charangas participantes será de 5. En caso de superarse el número de solicitudes, la selección de los participantes se realizará siguiendo el orden de inscripción recibida.</p><p>Segundo.- Objeto: La promoción y desarrollo de las tradiciones y fiestas populares de Tomelloso.</p><p>Tercero.- Bases Reguladora: La presente convocatoria se regirá por las Bases aprobadas mediante resolución de Alcaldía-Presidencia publicada en el tablón de edictos de este Ayuntamiento, con fecha 19 de octubre de 2026.</p><p>Cuarto.- Cuantía: Se otrogarán los siguientes premios:</p><p>Primer premio: 1.300.-€</p><p>Segundo premio: 1.000.-€</p><p>Tercer premio: 700.-€</p><p>Los importes de los premios estarán sujetos a la retención legal correspondiente, siendo abonados mediante trasferencia bancaria.</p><p>Quinto.- El plazo de inscripción en el Concurso de Charangas finaliza a las 14 horas del 29 de enero de 2027.</p><p>Sexto.- Presentación de la inscripción: La inscripción para participar en el concurso se presentará en el Registro de Entrada de este Ayuntamiento o a través de cualquiera de los medios previstos en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7828281",
+      "cve": "9NjNigdUntzPLZPFLZi5",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

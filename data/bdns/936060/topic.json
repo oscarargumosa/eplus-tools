@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "936060",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VALL D'UIXÓ, LA / AYUNTAMIENTO DE VALL D'UIXÓ, LA",
+  "nuts_codes": [
+    "ES522"
+  ],
+  "nuts_primary": "ES522",
+  "title": "Convocatoria para el otorgamiento de las subvenciones para el fomento del consumo local en La Vall d’Uixó, “Campaña Bonos del comercio local Navidad 2026”.",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-19",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47",
+      "descripcion": "Comercio al por menor"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936060",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.lavallduixo.es/sites/L01121264/files/2023-03/MODIFICACI%C3%93N%20DE%20LA%20ORDENANZA%20DEL%20OTORGAMIENTO%20DE%20SUBVENCIONES%20Y%20AYUDAS%20PARA%20ACTIVIDADES%20EN%20DIVERSOS%20%C3%81MBITOS%20.pdf",
+  "text_inicio": "26/10/2026",
+  "text_fin": "30/10/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-20T04:08:26.105Z"
+}

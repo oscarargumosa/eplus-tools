@@ -1,0 +1,56 @@
+{
+  "source": "bdns",
+  "source_id": "936311",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / VILALBA DELS ARCS / AYUNTAMIENTO DE VILALBA DELS ARCS",
+  "nuts_codes": [
+    "ES51"
+  ],
+  "nuts_primary": "ES51",
+  "title": "Convocatoria de las ayudas a los/las estudiantes de Educación Secundaria Obligatoria, Bachillerato, Ciclos formativos o de la Universidad del municipio de Vilalba dels Arcs",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-19",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936311",
+  "documents": [],
+  "bases_reguladoras_url": "https://www.dipta.cat/bopt/web/anunci/167414/modificacio-de-les-bases-reguladores-dels-ajuts-als-les-estudiants-d-eso-batxillerat-cicles-formatius-o-de-la-universitat-del-municipi-aprovacio-definitiva-ajuntament-vilalba-dels-arcs",
+  "text_inicio": "A partir día siguiente hábil al de la publicación del edicto de la convocatoria en el BOPT",
+  "text_fin": "15 días hábiles contados a partir día siguiente hábil al de la publicación del edicto en el BOPT",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-20T04:08:26.196Z"
+}

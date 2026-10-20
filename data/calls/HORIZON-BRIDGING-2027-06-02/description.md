@@ -27,7 +27,7 @@ Proposals must provide financial support to third parties (FSTP) to launch compe
 
 Proposals should demonstrate a gender-sensitive approach that explicitly considers and addresses the structural, cultural and institutional barriers faced by women innovators and entrepreneurs across the innovation ecosystem.
 
-Proposals should benefit from synergies and avoid overlaps with relevant ongoing projects, e.g. funded under topic HORIZON-BRIDGING-2027-01-03, HORIZON-BRIDGING-2027-01-05 and HORIZON-CL4-2026-01-MAT-PROD-48.
+Proposals should benefit from synergies and avoid overlaps with relevant ongoing projects, e.g. funded under topic HORIZON-BRIDGING-2027-04-03, HORIZON-BRIDGING-2027-02-05 and HORIZON-CL4-2026-01-MAT-PROD-48.
 
 [1] Societal Challenges Programme
 

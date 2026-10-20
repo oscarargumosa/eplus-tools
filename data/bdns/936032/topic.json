@@ -1,0 +1,78 @@
+{
+  "source": "bdns",
+  "source_id": "936032",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TOMELLOSO / AYUNTAMIENTO DE TOMELLOSO",
+  "nuts_codes": [
+    "ES422"
+  ],
+  "nuts_primary": "ES422",
+  "title": "Bases que han de regir el III Concurso de Charangas del Carnaval 2027",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-19",
+  "open_date": "2026-10-19",
+  "deadline": "2027-01-29",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 3000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936032",
+  "documents": [
+    {
+      "label": "Anuncio Tablón Edictos Ayuntamiento de Tomelloso",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://etablon.dipucr.es:4443/eTablon/tablon.jsf?entidad=0",
+  "text_inicio": null,
+  "text_fin": "Hasta las 14 horas",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [
+    {
+      "numAnuncio": 223194,
+      "titulo": "Resolución de Alcaldía-Presidencia de fecha 16 de octubre de 2026, por la que se aprueban las Bases que han de regir el III Concurso de Charangas del Carnaval 2027",
+      "tituloLeng": null,
+      "texto": "<p>Primero.- Beneficiarios: Podrá participar en el concurso cualquier charanga que esté compuesta por un mínimo de 8 componentes, siendo obligatoria la inscripción. El número máximo de charangas participantes será de 5. En caso de superarse el número de solicitudes, la selección de los participantes se realizará siguiendo el orden de inscripción recibida.</p><p>Segundo.- Objeto: La promoción y desarrollo de las tradiciones y fiestas populares de Tomelloso.</p><p>Tercero.- Bases Reguladora: La presente convocatoria se regirá por las Bases aprobadas mediante resolución de Alcaldía-Presidencia publicada en el tablón de edictos de este Ayuntamiento, con fecha 19 de octubre de 2026.</p><p>Cuarto.- Cuantía: Se otrogarán los siguientes premios:</p><p>Primer premio: 1.300.-€</p><p>Segundo premio: 1.000.-€</p><p>Tercer premio: 700.-€</p><p>Los importes de los premios estarán sujetos a la retención legal correspondiente, siendo abonados mediante trasferencia bancaria.</p><p>Quinto.- El plazo de inscripción en el Concurso de Charangas finaliza a las 14 horas del 29 de enero de 2027.</p><p>Sexto.- Presentación de la inscripción: La inscripción para participar en el concurso se presentará en el Registro de Entrada de este Ayuntamiento o a través de cualquiera de los medios previstos en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>",
+      "textoLeng": null,
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7828281",
+      "cve": "9NjNigdUntzPLZPFLZi5",
+      "desDiarioOficial": "B.O.P. DE CIUDAD REAL",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-20T04:08:26.095Z"
+}

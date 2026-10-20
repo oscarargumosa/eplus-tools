@@ -1,0 +1,64 @@
+{
+  "id": 1137814,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MEDINA DE LAS TORRES",
+    "nivel3": "AYUNTAMIENTO DE MEDINA DE LAS TORRES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936253",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "BASES ESPECÍFICAS CON CONVOCATORIA REGULADORAS DE SUBVENCIONES DEL AYUNTAMIENTO DE MEDINA DE LAS TORRES DESTINADAS A ASOCIACIONES LOCALES SIN ÁNIMO DE LUCRO EN EL EJERCICIO 2026 EN RÉGIMEN DE CONCURRENCIA COMPETITIVA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS CON CONVOCATORIA REGULADORAS DE SUBVENCIONES DEL AYUNTAMIENTO DE MEDINA DE LAS TORRES DESTINADAS A ASOCIACIONES LOCALES SIN ÁNIMO DE LUCRO EN EL EJERCICIO 2026 EN RÉGIMEN DE CONCURRENCIA COMPETITIVA.",
+  "urlBasesReguladoras": "https://sede.medinadelastorres.es/portal/noEstatica.do?opc_id=268&pes_cod=-1&ent_id=53&idioma=1",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "UN MES a partir del día siguiente a la publicación del extracto de esta convocatoria en el BOP",
+  "textFin": "UN MES a partir del día siguiente a la publicación del extracto de esta convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539670,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio bases que rigen la convocatoria fdo.pdf",
+      "long": 634018,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

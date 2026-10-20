@@ -1,0 +1,96 @@
+{
+  "id": 1137744,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "COLLBATÓ",
+    "nivel3": "AYUNTAMIENTO DE COLLBATÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936183",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA BECAS TRANSPORTE JOVEN 2026",
+  "descripcionLeng": "CONVOCATÒRIA BEQUES TRANSPORT JOVE - 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Otro transporte terrestre de pasajeros",
+      "codigo": "49.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES51 - CATALUÑA"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "BASES REGULADORES BEQUES DE TRANSPORT JOVE EXERCICIS 2025, 2026 I 2027",
+  "urlBasesReguladoras": "https://cido.diba.cat/subvencions/19206328/beques-transport-jove-exercicis-2025-2026-i-2027-ajuntament-de-collbato",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "textFin": "Els sol·licitants podran presentar les peticions en el termini de vint dies comptadors des de l¿ende",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539524,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CONVOCATORIABEQUESTRANSPORTJOVE2026CAST1790343383801.pdf",
+      "long": 271864,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539525,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CONVOCATORIABEQUESTRANSPORTJOVE2026CAT1790343383824.pdf",
+      "long": 285803,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539528,
+      "descripcion": "EXTRACTE CATALA TRANSPORT JOVE 2026",
+      "nombreFic": "EXTRACTECATALATRANSPORTJOVE20261790343383676.pdf",
+      "long": 116634,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539527,
+      "descripcion": "EXTRACTE CASTELLA TRANSPORT JOVE 2026",
+      "nombreFic": "EXTRACTECASTELLATRANSPORTJOVE20261790343383676.pdf",
+      "long": 115679,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539526,
+      "descripcion": "CERTIFICADO JGL CONVOCATORIA BECAS TRANSPORTE",
+      "nombreFic": "CERT._CONVOCATORIA_BEQUES_TRANSPORT_JOVE_2026.pdf",
+      "long": 127713,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

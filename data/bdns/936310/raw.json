@@ -1,0 +1,55 @@
+{
+  "id": 1137871,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BOLO, O",
+    "nivel3": "AYUNTAMIENTO DE BOLO, O"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936310",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 6000,
+  "mrr": false,
+  "descripcion": "Decreto de Alcaldía 2026-0475, de 19 de octubre de 2026, por el que se aprueban las bases reguladoras y la convocatoria de ayudas extraordinarias en especie a las personas o entidades titulares de explotaciones de ganado en el término municipal de O Bolo.",
+  "descripcionLeng": "Decreto da Alcaldía 2026-0475, do 19 de outubro de 2026, polo que se aproban as bases reguladoras específicas e a convocatoria de axudas extraordinarias en especie ás persoas ou entidades titulares de explotacións de gando no término municipal de O Bolo.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES113 - Ourense"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "Decreto de Alcaldía 2026-0475, de 19 de octubre de 2026, por el que se aprueban las bases reguladoras y la convocatoria de ayudas extraordinarias en especie a las personas o entidades titulares de explotaciones de ganado en el término municipal de O Bolo.",
+  "urlBasesReguladoras": "https://obolo.sedelectronica.gal/preview-document/2e1e5535-83ba-44de-b9e4-16f9a1a3cc8b/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Al día siguiente de la publicación del extracto de la concocatoria en el BOP",
+  "textFin": "A los quince días hábiles",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

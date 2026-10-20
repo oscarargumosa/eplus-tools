@@ -1,0 +1,80 @@
+{
+  "id": 1137740,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOLINS DE REI",
+    "nivel3": "AYUNTAMIENTO DE MOLINS DE REI"
+  },
+  "sedeElectronica": "https://molinsderei.cat/tramitsonline/",
+  "codigoBDNS": "936179",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "OTROS INSTRUMENTOS DE AYUDA"
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 42666,
+  "mrr": false,
+  "descripcion": "“CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS COMPLEMENTARIAS DE COMEDOR ESCOLAR DEL AYUNTAMIENTO DE MOLINS DE REI PARA EL CURSO 2026-27",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ D’AJUTS COMPLEMENTARIS DE MENJADOR ESCOLAR DE L’AJUNTAMENT DE MOLINS DE REI PER AL CURS 2026-27",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "bases reguladoras específicas para la concesión de ayudas complementarias de comendor escolar del Ayuntamiento de Molins de Rei",
+  "urlBasesReguladoras": "https://molinsderei.cat/#",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "dia después de la publicación de la convocatoria en el BOPB",
+  "textFin": "30 naturales a partir del dia siguiente a la publicación del BOPB",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539507,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "convo ajuts menjador 26-27 català.pdf",
+      "long": 303784,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    },
+    {
+      "id": 1539506,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "convo ajuts menjador 26-27 castellano.pdf",
+      "long": 317926,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-19"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

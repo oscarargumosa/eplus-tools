@@ -42,10 +42,10 @@
     },
     {
       "section": "2. Eligible countries",
-      "label": "Horizon Europe Programme Guide",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
+      "label": "Discover EuroHPC JU - The European High Performance Computing Joint Undertaking (EuroHPC JU)",
+      "url": "https://www.eurohpc-ju.europa.eu/about/discover-eurohpc-ju_en",
+      "ext": "",
+      "is_downloadable": false
     },
     {
       "section": "5b. Evaluation and award: Submission and evaluation processes",
@@ -161,6 +161,13 @@
     },
     {
       "section": "Application and evaluation forms and model grant agreement (MGA):",
+      "label": "HE Programme Guide",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Application and evaluation forms and model grant agreement (MGA):",
       "label": "HE MGA",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf",
       "ext": ".pdf",
@@ -224,6 +231,13 @@
     },
     {
       "section": "Additional documents:",
+      "label": "EuroHPC Work Programme 2026 (Decision 22/2026 Amendment No 3)",
+      "url": "https://www.eurohpc-ju.europa.eu/document/download/b759cd90-bacc-4c58-938e-82d6df86b3bd_en?filename=Decision%2022.2026_Amend.%203%20%20to%20Work%20Programme%202026.pdf",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Additional documents:",
       "label": "HE Main Work Programme 2026-2027 – 1. General Introduction",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
@@ -231,64 +245,8 @@
     },
     {
       "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 2. Marie Skłodowska-Curie Actions (MSCA)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-2-marie-sklodowska-curie-actions_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 3. Research Infrastructures",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-3-research-infrastructures_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 4. Health",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-4-health_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 5. Culture, Creativity and Inclusive Society",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 6. Civil Security for Society",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-6-civil-security-for-society_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
       "label": "HE Main Work Programme 2026-2027 – 7. Digital, Industry and Space",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 8. Climate, Energy and Mobility",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-8-climate-energy-and-mobility_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 9. Food, Bioeconomy, Natural Resources, Agriculture and Environment",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-9-food-bioeconomy-natural-resources-agriculture-and-environment_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "HE Main Work Programme 2026-2027 – 10. European Innovation Ecosystems (EIE)",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-10-european-innovation-ecosystems_horizon-2026-2027_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -317,20 +275,6 @@
       "section": "Additional documents:",
       "label": "HE Main Work Programme 2026-2027 – 14. Horizontal Activities",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-14-horizontal-activities_horizon-2026-2027_en.pdf",
-      "ext": ".pdf",
-      "is_downloadable": true
-    },
-    {
-      "section": "Additional documents:",
-      "label": "EIC Work Programme 2026",
-      "url": "https://eic.ec.europa.eu/eic-2026-work-programme_en",
-      "ext": "",
-      "is_downloadable": false
-    },
-    {
-      "section": "Additional documents:",
-      "label": "ERC Work Programme 2026",
-      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/wp_horizon-erc-2026_en.pdf",
       "ext": ".pdf",
       "is_downloadable": true
     },
@@ -398,5 +342,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-19T04:04:23.464Z"
+  "fetchedAt": "2026-10-20T04:05:01.244Z"
 }
