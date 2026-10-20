@@ -1508,6 +1508,11 @@ const Intake = (() => {
       }
     }
 
+    // Si el Project Summary ya tiene texto (p. ej. viene de EU Vision), se puede pasar
+    // a Escribir sin hacer la entrevista: antes el botón solo salía al terminarla o al teclear.
+    const descEl = document.getElementById('intake-f-desc');
+    if (descEl && descEl.value.trim().length >= 20) showPostInterview();
+
     initInterview();
   }
 
