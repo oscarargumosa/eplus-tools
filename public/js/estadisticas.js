@@ -291,6 +291,12 @@ const Estadisticas = (() => {
     `;
 
     root.querySelectorAll('.est-tab').forEach(b => b.addEventListener('click', () => irA(b.dataset.vista)));
+    // Barra lateral: app.js anula el clic de los .nav-link sin data-route; aquí
+    // se navega dentro de la sección, conservando los filtros.
+    document.querySelectorAll('#sidebar-group-estadisticas [data-est-vista]').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      irA(a.dataset.estVista);
+    }));
     root.querySelectorAll('[data-periodo]').forEach(b => b.addEventListener('click', () => {
       const [d, h] = b.dataset.periodo.split('-').map(Number);
       S.f.desde = d; S.f.hasta = h; cambiarFiltros();
