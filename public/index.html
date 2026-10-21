@@ -73,6 +73,7 @@ tailwind.config = {
 <!-- Diseñar y Escribir en móvil: sin desborde horizontal (tarjetas, tablas con scroll propio) -->
 <link rel="stylesheet" href="/css/movil.css?v=20261016a">
 <link rel="stylesheet" href="/css/estadisticas.css?v=20261021a">
+<link rel="stylesheet" href="/css/presentaciones.css?v=20261021a">
 </head>
 
 <body class="bg-surface text-on-surface font-body text-sm font-medium tracking-tight min-h-screen">
@@ -455,6 +456,13 @@ tailwind.config = {
             <span class="material-symbols-outlined text-[20px]">verified_user</span>
             <span class="flex-1 min-w-0 truncate">Entidades reclamadas</span>
             <span id="admin-org-claims-count" class="hidden min-w-[22px] h-[22px] px-1.5 rounded-full bg-secondary-fixed text-primary text-[11px] font-bold inline-flex items-center justify-center" aria-label="pendientes de revisión"></span>
+          </a>
+          <!-- Presentaciones de Canva: solo la cuenta dueña (STUDIO_OWNER_EMAIL); el servidor lo comprueba -->
+          <a href="#admin-presentaciones" id="admin-presentaciones-nav"
+            class="nav-link hidden flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+            data-route="admin-presentaciones">
+            <span class="material-symbols-outlined text-[20px]">slideshow</span>
+            <span class="flex-1 min-w-0 truncate">Presentaciones</span>
           </a>
         </div>
       </div>
@@ -1859,6 +1867,17 @@ tailwind.config = {
       <!-- ══ PANEL MOVILIDADES (SALTO European Training Calendar) ══ -->
       <section id="panel-eu-vision" class="panel">
         <div id="vision-root"></div>
+      </section>
+
+      <!-- ═══ ADMIN › PRESENTACIONES (public/js/presentaciones.js) ═══ -->
+      <section id="panel-admin-presentaciones" class="panel">
+        <div class="max-w-7xl mx-auto py-8 px-4">
+          <h1 class="font-headline text-2xl font-bold text-primary flex items-center gap-2 mb-1">
+            <span class="material-symbols-outlined">slideshow</span> Presentaciones
+          </h1>
+          <p class="text-sm text-on-surface-variant mb-5">Solo las ves tú. Se muestran directamente desde Canva: lo que cambies allí aparece aquí.</p>
+          <div id="pres-root"></div>
+        </div>
       </section>
 
       <!-- ═══ ESTADÍSTICAS ERASMUS+ (public/js/estadisticas.js) ═══ -->
@@ -3395,6 +3414,7 @@ tailwind.config = {
 <script src="/js/shortlists.js?v=20260426b"></script>
 <script src="/js/atlas-stats.js?v=20260426k"></script>
 <script src="/js/estadisticas.js?v=20261021d"></script>
+<script src="/js/presentaciones.js?v=20261021a"></script>
 <script src="/js/analysis.js?v=20260627a"></script>
 <script src="/js/documents.js"></script>
 <script src="/js/research.js"></script>
