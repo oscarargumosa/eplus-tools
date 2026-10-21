@@ -372,6 +372,10 @@ const App = (() => {
   // Workspace "EU Vision": el sidebar pasa a ser el menú de visiones.
   const VISION_ROUTES = ['eu-vision'];
 
+  // Workspace "Estadísticas": submenú propio. La ruta admite subvista y
+  // filtros (#estadisticas/lineas?desde=2021…); los lee estadisticas.js.
+  const ESTAD_ROUTES = ['estadisticas'];
+
   // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
   const ADMIN_ROUTES = ['analysis'];
   // Rutas donde la persona escribe o cambia datos (indicador de guardado fijo).
@@ -382,7 +386,9 @@ const App = (() => {
     const isEntidades = ENTITY_ROUTES.includes(route);
     const isAccount   = ACCOUNT_ROUTES.includes(route);
     const isVision    = VISION_ROUTES.includes(route);
-    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades || isAccount || isVision);
+    const isEstad     = ESTAD_ROUTES.includes(route);
+    document.getElementById('sidebar-group-proyectos')?.classList.toggle('hidden', isEntidades || isAccount || isVision || isEstad);
+    document.getElementById('sidebar-group-estadisticas')?.classList.toggle('hidden', !isEstad);
     document.getElementById('sidebar-group-entidades')?.classList.toggle('hidden', !isEntidades);
     document.getElementById('sidebar-group-account')?.classList.toggle('hidden', !isAccount);
     document.getElementById('sidebar-group-vision')?.classList.toggle('hidden', !isVision);
@@ -396,6 +402,7 @@ const App = (() => {
       : isEntidades                           ? '#atlas-stats'
       : route === 'convocatorias'             ? '#convocatorias'
       : route === 'movilidades'               ? '#movilidades'
+      : route === 'estadisticas'              ? '#estadisticas'
       :                                         '#my-projects';
     document.querySelectorAll('#efs-topbar-nav .efs-topbar__menu li').forEach(li => {
       const a = li.querySelector('a');
@@ -409,6 +416,10 @@ const App = (() => {
     // El endpoint también devuelve 403; esto evita además mostrar el panel vacío.
     // Sin sesión no se navega por la app: a entrar.
     if (!currentUser) { openAuth('login'); return; }
+    // Estadísticas: «estadisticas/<vista>?<filtros>» → ruta + subruta.
+    let estSub = null;
+    const estM = /^estadisticas(?:[/?](.*))?$/.exec(route);
+    if (estM) { estSub = estM[1] || ''; route = 'estadisticas'; }
     if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')) {
       route = 'my-projects';
       if (pushHash) location.hash = route;
@@ -449,7 +460,7 @@ const App = (() => {
     if (window.SaveStatus) SaveStatus.setEditing(EDIT_ROUTES.includes(route));
 
     // Update URL hash
-    if (pushHash) location.hash = route;
+    if (pushHash) location.hash = estSub ? `estadisticas/${estSub}` : route;
 
     // Defensive: panel navigation always releases body scroll lock so an
     // orphan drawer (e.g. ficha overlay) can never strand the user with
@@ -511,6 +522,7 @@ const App = (() => {
       research:         'Research',
       movilidades:      'Movilidades',
       convocatorias:    'Convocatorias',
+      estadisticas:     'Estadísticas',
       'eu-vision':      'EU Vision',
       'my-org':         'Mi entidad',
       organizations:    'Directorio',
@@ -550,6 +562,7 @@ const App = (() => {
       if (route === 'research' && typeof Research !== 'undefined') Research.init();
       if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
       if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
+      if (route === 'estadisticas' && typeof Estadisticas !== 'undefined') Estadisticas.init(estSub);
       if (route === 'eu-vision' && typeof Vision !== 'undefined') Vision.init();
       if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
       if (route === 'diagnose' && typeof Diagnose !== 'undefined') Diagnose.init();

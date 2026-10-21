@@ -72,6 +72,7 @@ tailwind.config = {
 <link rel="stylesheet" href="/css/save-status.css?v=20261016g">
 <!-- Diseñar y Escribir en móvil: sin desborde horizontal (tarjetas, tablas con scroll propio) -->
 <link rel="stylesheet" href="/css/movil.css?v=20261016a">
+<link rel="stylesheet" href="/css/estadisticas.css?v=20261021a">
 </head>
 
 <body class="bg-surface text-on-surface font-body text-sm font-medium tracking-tight min-h-screen">
@@ -90,6 +91,7 @@ tailwind.config = {
         <li class="is-current"><a href="#my-projects">Proyectos</a></li>
         <li><a href="#atlas-stats">Entidades</a></li>
         <li><a href="#convocatorias">Convocatorias</a></li>
+        <li><a href="#estadisticas">Estadísticas</a></li>
         <li><a href="#movilidades">Movilidades</a></li>
         <li><a href="#eu-vision">EU Vision</a></li>
       </ul>
@@ -478,6 +480,49 @@ tailwind.config = {
           data-route="my-projects">
           <span class="material-symbols-outlined text-[20px]">folder_shared</span>
           Mis Proyectos
+        </a>
+      </div>
+
+      <!-- ═══ WORKSPACE: ESTADÍSTICAS ═══ -->
+      <div id="sidebar-group-estadisticas" class="hidden">
+        <div class="mt-1 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">Estadísticas</div>
+        <a href="#estadisticas/panorama" data-est-vista="panorama"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">dashboard</span>
+          Panorama
+        </a>
+        <a href="#estadisticas/lineas" data-est-vista="lineas"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">view_list</span>
+          Líneas
+        </a>
+        <a href="#estadisticas/comparar" data-est-vista="comparar"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+          Comparar
+        </a>
+        <a href="#estadisticas/paises" data-est-vista="paises"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">public</span>
+          Países
+        </a>
+        <a href="#estadisticas/tasas" data-est-vista="tasas"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">target</span>
+          Tasas de éxito
+        </a>
+        <div class="mt-3 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">Desde aquí</div>
+        <a href="#convocatorias"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="convocatorias">
+          <span class="material-symbols-outlined text-[20px]">campaign</span>
+          Convocatorias
+        </a>
+        <a href="#atlas-stats"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="atlas-stats">
+          <span class="material-symbols-outlined text-[20px]">insights</span>
+          Entidades
         </a>
       </div>
 
@@ -1814,6 +1859,11 @@ tailwind.config = {
       <!-- ══ PANEL MOVILIDADES (SALTO European Training Calendar) ══ -->
       <section id="panel-eu-vision" class="panel">
         <div id="vision-root"></div>
+      </section>
+
+      <!-- ═══ ESTADÍSTICAS ERASMUS+ (public/js/estadisticas.js) ═══ -->
+      <section id="panel-estadisticas" class="panel">
+        <div id="est-root" class="max-w-7xl mx-auto py-8 px-4"></div>
       </section>
 
       <section id="panel-movilidades" class="panel">
@@ -3344,6 +3394,7 @@ tailwind.config = {
 <script src="/js/entities.js?v=20261016a"></script>
 <script src="/js/shortlists.js?v=20260426b"></script>
 <script src="/js/atlas-stats.js?v=20260426k"></script>
+<script src="/js/estadisticas.js?v=20261021a"></script>
 <script src="/js/analysis.js?v=20260627a"></script>
 <script src="/js/documents.js"></script>
 <script src="/js/research.js"></script>

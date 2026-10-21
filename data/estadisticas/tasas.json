@@ -1,0 +1,17 @@
+{
+  "_nota": "Tasas de éxito (aprobadas / presentadas). La BD de proyectos solo tiene concedidos: estas cifras salen de fuentes externas y se actualizan a mano. Calculadas el 6-oct-2026.",
+  "actualizado": "2026-10-06",
+  "tasas": [
+    { "linea": "KA2 · España (total)", "lineas": [], "convocatoria": 2026, "tasa": 12.5, "aprox": true, "ambito": "España", "fuente": "SEPIE · resolución provisional KA2 (julio 2026) y nota de prensa de solicitudes", "url": "https://www.sepie.es" },
+    { "linea": "KA220 · Asociaciones de cooperación · España", "lineas": ["ka220-sch", "ka220-vet", "ka220-hed", "ka220-adu"], "convocatoria": 2026, "tasa": 9, "rango": "8–10 %", "aprox": true, "ambito": "España", "fuente": "SEPIE · resolución provisional KA2 (julio 2026)", "url": "https://www.sepie.es" },
+    { "linea": "KA210 · Asociaciones a pequeña escala · España", "lineas": ["ka210-sch", "ka210-vet", "ka210-adu"], "convocatoria": 2026, "tasa": 16, "aprox": true, "ambito": "España", "fuente": "SEPIE · resolución provisional KA2 (julio 2026)", "url": "https://www.sepie.es" },
+    { "linea": "CBHE · Capacity Building en educación superior", "lineas": ["cbhe"], "convocatoria": 2025, "tasa": 12.2, "ambito": "Europa", "fuente": "EACEA · selection results 2025", "url": "https://www.eacea.ec.europa.eu" },
+    { "linea": "CB VET · Capacity Building en FP", "lineas": ["cbvet"], "convocatoria": 2025, "tasa": 13, "ambito": "Europa", "fuente": "EACEA · selection results 2025", "url": "https://www.eacea.ec.europa.eu" },
+    { "linea": "CB Youth · Capacity Building en juventud", "lineas": ["cbyouth"], "convocatoria": 2025, "tasa": 7, "aprox": true, "ambito": "Europa", "fuente": "EACEA · selection results 2025", "url": "https://www.eacea.ec.europa.eu" },
+    { "linea": "Deporte (asociaciones y eventos)", "lineas": ["sport-coop", "sport-small", "sport-events"], "convocatoria": 2025, "tasa": 14.6, "ambito": "Europa", "fuente": "EACEA · selection results 2025", "url": "https://www.eacea.ec.europa.eu" }
+  ],
+  "sinDato": [
+    { "linea": "KA2 Juventud en España", "motivo": "No la gestiona el SEPIE sino el INJUVE, que no publica las solicitudes de la misma forma." },
+    { "linea": "European Youth Together (KA3)", "motivo": "La EACEA no publica de forma localizable cuántas solicitudes recibe." }
+  ]
+}

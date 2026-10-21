@@ -198,6 +198,7 @@ app.use('/v1/organizations', require('./node/src/modules/organizations/routes'))
 app.use('/v1/entities', require('./node/src/modules/entities/routes'));
 app.use('/v1/research',    proyectos, require('./node/src/modules/research/routes'));
 app.use('/v1/movilidades', require('./node/src/modules/movilidades/routes'));
+app.use('/v1/estadisticas', require('./node/src/modules/estadisticas/routes'));
 app.use('/v1/convocatorias', require('./node/src/modules/convocatorias/routes'));
 app.use('/v1/vision',        require('./node/src/modules/vision/routes'));
 
