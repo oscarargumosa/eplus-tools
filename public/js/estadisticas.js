@@ -16,10 +16,10 @@ const Estadisticas = (() => {
   const RAMPA = ['#efe8fe', '#cdb9fa', '#a487f5', '#7349f0', '#4312d8', '#2a0b8f', '#1b0759'];
 
   const VISTAS = [
+    { id: 'paises',   nombre: 'Países',          icono: 'public' },
     { id: 'panorama', nombre: 'Panorama',        icono: 'dashboard' },
     { id: 'lineas',   nombre: 'Líneas',          icono: 'view_list' },
     { id: 'comparar', nombre: 'Comparar',        icono: 'compare_arrows' },
-    { id: 'paises',   nombre: 'Países',          icono: 'public' },
     { id: 'tasas',    nombre: 'Tasas de éxito',  icono: 'target' },
   ];
 
@@ -31,7 +31,7 @@ const Estadisticas = (() => {
   let geo = null;
 
   const S = {
-    vista: 'panorama', id: null,
+    vista: 'paises', id: null,
     f: { desde: 2021, hasta: 2025, grupo: '', sector: '', gestion: '', pais: '', rol: 'coord', foco: 'ES' },
     comp: { tipo: 'linea', ids: [] },
     orden: { col: 'importe', dir: -1 }, buscar: '', metrica: 'coord',
@@ -72,7 +72,7 @@ const Estadisticas = (() => {
   function leerHash(sub) {
     const [ruta, qs] = String(sub || '').split('?');
     const partes = ruta.split('/').filter(Boolean);
-    const vista = partes[0] === 'linea' ? 'linea' : (VISTAS.some(v => v.id === partes[0]) ? partes[0] : 'panorama');
+    const vista = partes[0] === 'linea' ? 'linea' : (VISTAS.some(v => v.id === partes[0]) ? partes[0] : 'paises');
     S.vista = vista;
     S.id = vista === 'linea' ? decodeURIComponent(partes[1] || '') : null;
     const q = new URLSearchParams(qs || '');
@@ -374,7 +374,7 @@ const Estadisticas = (() => {
     const n = ++seq;
     const vivo = () => n === seq;
     const vistas = { panorama, lineas, linea: ficha, comparar, paises, tasas };
-    (vistas[S.vista] || panorama)(el, vivo);
+    (vistas[S.vista] || paises)(el, vivo);
   }
 
   /* ═══ PANORAMA ═══════════════════════════════════════════════ */
