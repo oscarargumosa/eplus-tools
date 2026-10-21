@@ -1,0 +1,63 @@
+{
+  "source": "bdns",
+  "source_id": "936483",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOLAR, EL / AYUNTAMIENTO DE MOLAR, EL",
+  "nuts_codes": [],
+  "nuts_primary": null,
+  "title": "CONVOCATORIA SUBVENCIONES A ASOCIACIONES REGISTRADAS EN EL MOLAR PARA LA REALIZACION DE ACTIVIDADES DE INTERES PUBLICO Y SOCIAL PARA EL AÑO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 20400,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    }
+  ],
+  "apply_url": "https://elmolar.sedelectronica.es/info.3",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936483",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://elmolar.sedelectronica.es/preview-document/650b631f-5f1c-480b-8853-f8c34495e2a5/",
+  "text_inicio": "DESDE EL DIA SIGUIENTE A SU PUBLICACION EN BOCM",
+  "text_fin": "10 DIAS DESDE SU PUBLICACION EN BOCM",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.765Z"
+}

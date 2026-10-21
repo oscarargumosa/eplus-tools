@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "936365",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALDEAMAYOR DE SAN MARTÍN / AYUNTAMIENTO DE ALDEAMAYOR DE SAN MARTÍN",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "BASES REGULADORAS DE LA CONVOCATORIA ANUAL PARA LA CONCESIÓN DE SUBVENCIONES DESTINADAS AL DESARROLLO DE PROYECTOS Y ACTIVIDADES CULTURALES Y DEPORTIVAS QUE SE REALICEN EN EL MUNICIPIO DE ALDEAMAYOR DE SAN MARTÍN DURANTE EL EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 25800,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "https://aldeamayordesanmartin.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936365",
+  "documents": [
+    {
+      "label": "Anexo III Declaración Responsable",
+      "url": null
+    },
+    {
+      "label": "Anexo II Autorización",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo VI Relación de Facturas",
+      "url": null
+    },
+    {
+      "label": "Anexo V Justificación de la Ayuda",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo IV Memoria- Proyecto actividad",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://aldeamayordesanmartin.ayuntamientosdevalladolid.es",
+  "text_inicio": "A partir del día siguiente a la publicación en el BOP de Valladolid",
+  "text_fin": "Diez días hábiles, contados a partir del día siguiente a la publicación en el BOP de Valladolid",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.734Z"
+}

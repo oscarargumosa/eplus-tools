@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "936395",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCOLEA DEL PINAR / AYUNTAMIENTO DE ALCOLEA DEL PINAR",
+  "nuts_codes": [
+    "ES42"
+  ],
+  "nuts_primary": "ES42",
+  "title": "subvenciones educativas, culturales y sociales de ayuda a la conciliación familiar conforme al Plan Estratégico de Subvenciones a cargo del Presupuesto 2026 de Alcolea del Pinar.",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": "2026-10-23",
+  "deadline": "2026-11-08",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 8500,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "R",
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES"
+    },
+    {
+      "codigo": "Q",
+      "descripcion": "EDUCACIÓN"
+    }
+  ],
+  "apply_url": "https://alcoleadelpinar.sedelectronica.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936395",
+  "documents": [
+    {
+      "label": "ANEXO II BASES",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://alcoleadelpinar.sedelectronica.es/transparency/954b882b-b27d-41a1-9f07-721b0723f5fd/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAD - FONDO DE AYUDA A LOS MÁS DESFAVORECIDOS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.745Z"
+}

@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "936328",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / COMUNITAT VALENCIANA / INSTITUTO VALENCIANO DE COMPETITIVIDAD EMPRESARIAL (IVACE)",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Resolución de 15 de octubre de 2026, de la presidenta del Instituto Valenciano de Competitividad Empresarial (IVACE), de convocatoria de ayudas del Fondo de Compensación del Plan Eólico de la Comunitat Valenciana 2026.",
+  "title_lang": "es",
+  "summary": "Industria y Energía",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": "2026-10-24",
+  "deadline": "2026-11-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 5683690.2,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    },
+    {
+      "codigo": "84",
+      "descripcion": "Administración pública y defensa; seguridad social obligatoria"
+    },
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    },
+    {
+      "codigo": "35",
+      "descripcion": "Suministro de energía eléctrica, gas, vapor y aire acondicionado"
+    }
+  ],
+  "apply_url": "https://www.ivace.es",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936328",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dogv.gva.es/datos/2017/02/23/pdf/2017_1501.pdf",
+  "text_inicio": "Día siguiente publicación extracto en el DOGV",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.726Z"
+}

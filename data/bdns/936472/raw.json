@@ -1,0 +1,72 @@
+{
+  "id": 1138033,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSTANTÍ",
+    "nivel3": "AYUNTAMIENTO DE CONSTANTÍ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936472",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1800,
+  "mrr": false,
+  "descripcion": "Convocatoria 2026 para la concesión de dos premios destinado a estudios superiores (universitarios o de grado superior).",
+  "descripcionLeng": "Convocatòria 2026 per a la concessió de dos premis destinats a estudios superiors (universitaris o de grau superior)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases para la concesión de dos premios destinados a estudios superiores (universitarios y de grado superior).",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/resultats-cerca?bopb_cerca%5BdataInici%5D=24-10-2016&bopb_cerca%5BdataFinal%5D=24-10-2016&bopb_cerca%5BtipologiaAnunciantBase%5D=238&bopb_cerca%5BtipologiaAnunciant%5D=238",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días hábiles a partir del día siguiente a la publicación de esta convocatoria",
+  "textFin": "10 días hábiles a partir del día siguiente a la publicación de esta convocatoria",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540299,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "DECRET 2026-1644 [Decret aprovació convocatòria milllor expedient acadèmic 2026].pdf",
+      "long": 431703,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540295,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "DECRET 2026-1644 [Decret aprovació convocatòria milllor expedient acadèmic 2026].pdf",
+      "long": 431703,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

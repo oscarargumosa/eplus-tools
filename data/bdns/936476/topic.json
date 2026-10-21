@@ -1,0 +1,74 @@
+{
+  "source": "bdns",
+  "source_id": "936476",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD DE GRANADA",
+  "nuts_codes": [
+    "ES614"
+  ],
+  "nuts_primary": "ES614",
+  "title": "Resolución de la Decana de la Facultad de Bellas Artes por la que se publican las bases reguladoras y se realiza la Segunda Convocatoria Internacional de Residencia y Proyecto Site-Specific. Casa de las Chirimías, Laboratorio de Innovación Expositiva.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": "2026-10-22",
+  "deadline": "2026-11-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 2000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA; PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936476",
+  "documents": [
+    {
+      "label": "Anexo1. Descripción de espacios",
+      "url": null
+    },
+    {
+      "label": "Anexo3. Acceso sede electrónica",
+      "url": null
+    },
+    {
+      "label": "Anexo2. Declaración responsable",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "pendiente de publicación",
+  "text_inicio": null,
+  "text_fin": "La hora en que finaliza el plazo es las 19:00 hora peninsular española",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.763Z"
+}

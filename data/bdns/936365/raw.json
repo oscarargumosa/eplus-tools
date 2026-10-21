@@ -1,0 +1,112 @@
+{
+  "id": 1137926,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALDEAMAYOR DE SAN MARTÍN",
+    "nivel3": "AYUNTAMIENTO DE ALDEAMAYOR DE SAN MARTÍN"
+  },
+  "sedeElectronica": "https://aldeamayordesanmartin.sedelectronica.es/info.0",
+  "codigoBDNS": "936365",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25800,
+  "mrr": false,
+  "descripcion": "BASES REGULADORAS DE LA CONVOCATORIA ANUAL PARA LA CONCESIÓN DE SUBVENCIONES DESTINADAS AL DESARROLLO DE PROYECTOS Y ACTIVIDADES CULTURALES Y DEPORTIVAS QUE SE REALICEN EN EL MUNICIPIO DE ALDEAMAYOR DE SAN MARTÍN DURANTE EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES418 - Valladolid"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LA CONVOCATORIA ANUAL PARA LA CONCESIÓN DE SUBVENCIONES DESTINADAS AL DESARROLLO DE PROYECTOS Y ACTIVIDADES CULTURALES Y DEPORTIVAS QUE SE REALICEN EN EL MUNICIPIO DE ALDEAMAYOR DE SAN MARTÍN DURANTE EL EJERCICIO 2026",
+  "urlBasesReguladoras": "https://aldeamayordesanmartin.ayuntamientosdevalladolid.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación en el BOP de Valladolid",
+  "textFin": "Diez días hábiles, contados a partir del día siguiente a la publicación en el BOP de Valladolid",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540016,
+      "descripcion": "Anexo III Declaración Responsable",
+      "nombreFic": "ANEXO III DECLARACIÓN.pdf",
+      "long": 103909,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540014,
+      "descripcion": "Anexo II Autorización",
+      "nombreFic": "ANEXO II AUTORIZACIÓN.pdf",
+      "long": 127621,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540012,
+      "descripcion": "Anexo I Solicitud",
+      "nombreFic": "ANEXO I.pdf",
+      "long": 85475,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540023,
+      "descripcion": "Anexo VI Relación de Facturas",
+      "nombreFic": "ANEXO VI RELACIÓN DE FACTURAS.pdf",
+      "long": 42772,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540021,
+      "descripcion": "Anexo V Justificación de la Ayuda",
+      "nombreFic": "ANEXO V JUSTIFICACION DE LA AYUDA.pdf",
+      "long": 50498,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540010,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases subvenciones proyectos y actividades culturales 2026.pdf",
+      "long": 201100,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540019,
+      "descripcion": "Anexo IV Memoria- Proyecto actividad",
+      "nombreFic": "ANEXO IV MEMORIA.pdf",
+      "long": 52001,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

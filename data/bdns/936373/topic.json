@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "936373",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / REGIÓN DE MURCIA / FUNDACIÓN SÉNECA (AGENCIA REGIONAL DE CIENCIA Y TECNOLOGÍA)",
+  "nuts_codes": [
+    "ES62"
+  ],
+  "nuts_primary": "ES62",
+  "title": "CONVOCATORIA DE BECAS DE FORMACIÓN PRÁCTICA ASOCIADAS A LA REALIZACIÓN DE PROYECTOS DE INVESTIGACIÓN E INNOVACIÓN DE APLICACIÓN EN LA ASOCIACIÓN EMPRESARIAL DE INVESTIGACIÓN CENTRO TECNOLÓGICO NACIONAL DE LA CONSERVA.",
+  "title_lang": "es",
+  "summary": "Investigación, desarrollo e innovación",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": "2026-10-21",
+  "deadline": "2026-11-04",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 34340,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "N",
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS"
+    }
+  ],
+  "apply_url": "https://www.fseneca.es/web/ayudas-abiertas",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936373",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.fseneca.es/web/ayudas-abiertas",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.736Z"
+}

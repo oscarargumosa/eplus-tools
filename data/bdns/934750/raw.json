@@ -1,0 +1,72 @@
+{
+  "id": 1136311,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ORTIGUEIRA",
+    "nivel3": "AYUNTAMIENTO DE ORTIGUEIRA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "934750",
+  "fechaRecepcion": "2026-10-12",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "Convocatoria para el curso 2026-2027 de las ayudas municipales para la adquisición de material escolar mediante vales nominativos, y se autoriza el gasto correspondiente (Expediente 1280/2026).",
+  "descripcionLeng": "Convocatoria para o curso 2026-2027 das axudas municipais para a adquisición de material escolar mediante vales nominais, e se autoriza o gasto correspondente (Expediente 1280/2026).",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES111 - A Coruña"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS AYUDAS MUNICIPALES PARA LA ADQUISICIÓN DE MATERIAL ESCOLAR DEL AYUNTAMIENTO DE ORTIGUEIRA MEDIANTE VALLES NOMINALES",
+  "urlBasesReguladoras": "https://ortigueira.sedelectronica.es/preview-document/90a5fd38-dc65-48dd-931f-abd5272ca5a1/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el día siguiente a la publicación del extracto en el B.O.P. da Coruña",
+  "textFin": "Al décimo quinto (15) día hábil, contados desde el día siguiente a la publicación del extracto",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1535426,
+      "descripcion": "Anexos solicitud y justificación",
+      "nombreFic": "ANEXOS.docx",
+      "long": 71867,
+      "datMod": "2026-10-12",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1535425,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases reguladoras de axudas escolares curso 26-27 do concello de Ortigueira (Castellano - Gallego) (1).pdf",
+      "long": 772905,
+      "datMod": "2026-10-12",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

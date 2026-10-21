@@ -1,0 +1,64 @@
+{
+  "id": 1137709,
+  "organo": {
+    "nivel1": "ESTADO",
+    "nivel2": "MINISTERIO DE TRANSPORTES Y MOVILIDAD SOSTENIBLE",
+    "nivel3": "DIRECCIÓN GENERAL DEL INSTITUTO GEOGRÁFICO NACIONAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936148",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 282800,
+  "mrr": false,
+  "descripcion": "Resolución, de 5 de octubre de 2026, de la Subsecretaría de Transportes y Movilidad, por la que se hace pública la convocatoria de becas para la formación en el Instituto Geográfico Nacional",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Orden TRM/746/2024, de 7 de julio, por la que se aprueban las bases reguladoras para la concesión de becas por el Instituto Geográfico Nacional",
+  "urlBasesReguladoras": "https://www.boe.es/boe/dias/2024/07/22/pdfs/BOE-A-2024-15073.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "El día siguiente al de la publicación del extracto de la convocatoria en BOE",
+  "textFin": "20 días hábiles ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539406,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución convocatoria_Becas IGN 2026 (firmado).pdf",
+      "long": 777753,
+      "datMod": "2026-10-19",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

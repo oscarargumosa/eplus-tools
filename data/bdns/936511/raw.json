@@ -1,0 +1,88 @@
+{
+  "id": 1138072,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DIPUTACIÓN PROV. DE SORIA",
+    "nivel3": "DIPUTACIÓN PROVINCIAL DE SORIA"
+  },
+  "sedeElectronica": "https://portaltramitador.dipsoria.es/web/inicioWebc.do?opcion=noreg",
+  "codigoBDNS": "936511",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 45000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES APOYO A LAS FARMACIAS RURALES DE LA PROVINCIA DE SORIA 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor de otros artículos, excepto vehículos de motor y motocicletas",
+      "codigo": "47.7"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES417 - Soria"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Ordenanza General reguladora de la concesión de Subvenciones por la Diputación de Soria (BOP nº 147 de 23 de diciembre de 2009).",
+  "urlBasesReguladoras": "http://www.dipsoria.es/sites/dipsoria/files/public/paginas/archivos/ordenanza_general_reguladora_de_la_concesion_de_subvenciones.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el dia de publicacion del extracto de las bases en el BOP",
+  "textFin": "un mes a contar desde el dia de publicación del extracto de las bases en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540413,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "BASES FIRMADAS.pdf",
+      "long": 635240,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540416,
+      "descripcion": "CERTIFICADO JUNTA DE GOBIERNO APROBACIÓN BASES DE LA CONVOCATORIA",
+      "nombreFic": "CERTIFICADO JUNTA DE GOBIERNO APROBACIÓN BASES CONVOCATORIA.pdf",
+      "long": 200513,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540415,
+      "descripcion": "ANEXO JUSTIFICACIÓN",
+      "nombreFic": "ANEXO JUSTIFICACIÓN 2026 FARMACIAS RURALES.pdf",
+      "long": 163437,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540414,
+      "descripcion": "ANEXO SOLICITUD",
+      "nombreFic": "ANEXO SOLICITUD 2026 FARMACIAS.pdf",
+      "long": 171100,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

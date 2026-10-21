@@ -1,0 +1,64 @@
+{
+  "id": 1137934,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "REGIÓN DE MURCIA",
+    "nivel3": "FUNDACIÓN SÉNECA (AGENCIA REGIONAL DE CIENCIA Y TECNOLOGÍA)"
+  },
+  "sedeElectronica": "https://www.fseneca.es/web/ayudas-abiertas",
+  "codigoBDNS": "936373",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 34340,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE BECAS DE FORMACIÓN PRÁCTICA ASOCIADAS A LA REALIZACIÓN DE PROYECTOS DE INVESTIGACIÓN E INNOVACIÓN DE APLICACIÓN EN LA ASOCIACIÓN EMPRESARIAL DE INVESTIGACIÓN CENTRO TECNOLÓGICO NACIONAL DE LA CONSERVA.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS",
+      "codigo": "N"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES62 - REGION DE MURCIA"
+    }
+  ],
+  "descripcionFinalidad": "Investigación, desarrollo e innovación",
+  "descripcionBasesReguladoras": "Convocatoria de becas asociadas a la realización de proyectos de investigación e innovación de aplicación en la Asociación Empresarial de Investigación Centro Tecnológico Nacional de la Conserva.",
+  "urlBasesReguladoras": "https://www.fseneca.es/web/ayudas-abiertas",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-21",
+  "fechaFinSolicitud": "2026-11-04",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540035,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria+CTC+na+2026.pdf",
+      "long": 273473,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

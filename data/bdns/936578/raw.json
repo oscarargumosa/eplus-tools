@@ -1,0 +1,72 @@
+{
+  "id": 1138139,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALBACETE",
+    "nivel3": "AYUNTAMIENTO DE ALBACETE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936578",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "Convocatoria para 2026 de subvenciones para la obtención de permisos de conducción y certificado de aptitud profesionales",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES421 - Albacete"
+    }
+  ],
+  "descripcionFinalidad": "Desempleo",
+  "descripcionBasesReguladoras": "Convocatoria y bases reguladoras para 2026 de subvenciones para la obtención de permisos de conducción y certificado de aptitud profesionales",
+  "urlBasesReguladoras": "https://albacete.sedipualba.es/segex/documentoexpediente.aspx?id=23673995&abrir=True",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-11-25",
+  "textInicio": "Desde el día siguiente a la publicación del extracto en el BOP Albacete",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540614,
+      "descripcion": "TEXTO INTEGRO DE LA CONVOCATORIA",
+      "nombreFic": "CONVOCATORIA.pdf",
+      "long": 470493,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540611,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "33. ACUERDO JGL 1-OCTUBRE-2026 (PROMOC.ECONOMICA)  - SEFYCU 6186889.pdf",
+      "long": 255298,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

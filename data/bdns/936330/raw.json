@@ -1,0 +1,75 @@
+{
+  "id": 1137891,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARCELONA",
+    "nivel3": "AYUNTAMIENTO DE BARCELONA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936330",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5200000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión pública de ayudas para el fomento de la movilidad eléctrica y la sustitución de los ciclomotores de combustión (Pla Clima 2030) correspondiente al período 2026-2028",
+  "descripcionLeng": "Convocatòria per a la concessió d’ajuts per al foment de la mobilitat elèctrica i la substitució dels ciclomotors de combustió (pla clima 2030) corresponent al període 2026-2028",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de ayudas al fomento de la movilidad eléctrica y la sustitución de los ciclomotores de combustión (Pla Clima 2030)",
+  "urlBasesReguladoras": "https://ajuntament.barcelona.cat/sites/default/files/2026-07/3901150.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-09-15",
+  "fechaFinSolicitud": "2028-09-30",
+  "textInicio": "El período de presentación de solicitudes se inicia el 15 de septiembre de 2026",
+  "textFin": "El período de presentación de solicitudes finaliza el 20 de septiembre de 2028",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": {
+    "descripcion": "REG (UE) 2023/2831 de minimis, General",
+    "orden": null
+  },
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539938,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "2 bis CONVOCATÒRIA Ciclomotors versió definitiva-es-ES.pdf",
+      "long": 348837,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1539957,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "14. Publicació BOPB convocatòria.pdf",
+      "long": 274008,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

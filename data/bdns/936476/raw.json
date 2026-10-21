@@ -1,0 +1,91 @@
+{
+  "id": 1138037,
+  "organo": {
+    "nivel1": "OTROS",
+    "nivel2": "UNIVERSIDAD DE GRANADA",
+    "nivel3": null
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936476",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2000,
+  "mrr": false,
+  "descripcion": "Resolución de la Decana de la Facultad de Bellas Artes por la que se publican las bases reguladoras y se realiza la Segunda Convocatoria Internacional de Residencia y Proyecto Site-Specific. Casa de las Chirimías, Laboratorio de Innovación Expositiva.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales",
+      "codigo": "91"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Resolución de la Decana de la Facultad de Bellas Artes por la que se publican las bases reguladoras y se realiza la Segunda Convocatoria Internacional de Residencia y Proyecto Site-Specific. Casa de las Chirimías, Laboratorio de Innovación Expositiva.",
+  "urlBasesReguladoras": "pendiente de publicación",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-22",
+  "fechaFinSolicitud": "2026-11-06",
+  "textInicio": null,
+  "textFin": "La hora en que finaliza el plazo es las 19:00 hora peninsular española",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540522,
+      "descripcion": "Anexo1. Descripción de espacios",
+      "nombreFic": "ANEXO 1. Protocolo de uso responsable de espacios. CASA de las CHIRIMI?AS.pdf",
+      "long": 1810128,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540528,
+      "descripcion": "Anexo3. Acceso sede electrónica",
+      "nombreFic": "ANEXO 3 cuenta temporal.pdf",
+      "long": 1888933,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540524,
+      "descripcion": "Anexo2. Declaración responsable",
+      "nombreFic": "Anexo 2 DECLARACIO?N RESPONSABLE.docx",
+      "long": 40880,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540301,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CONVOCATORIA INTERNACIONAL CHIRIMÍAS FINAL (1).pdf",
+      "long": 1933555,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

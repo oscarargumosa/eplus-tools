@@ -1,0 +1,80 @@
+{
+  "id": 1137904,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCALÁ DEL RÍO",
+    "nivel3": "AYUNTAMIENTO DE ALCALÁ DEL RÍO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936343",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 600,
+  "mrr": false,
+  "descripcion": "Convocatoria de las bases del Concurso de decoración navideña de Fachadas y Balcones 2026 de Alcalá del Rio, San Ignacio del Viar, Esquivel y El Viar.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Convocatoria de las bases del Concurso de decoración navideña de Fachadas y Balcones 2026 de Alcalá del Rio, San Ignacio del Viar, Esquivel y El Viar.",
+  "urlBasesReguladoras": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-del-concurso-de-decoracion-navidena-de-fachadas-y-balcones-de-Alcala-del-Rio-San-Ignacio-del-Viar-Esquivel-y-El-Viar-2026/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-12-11",
+  "textInicio": "día posterior a la publicación del extracto de la convocatoria en BOP",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1539976,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria BDNS Concurso decoración navideña de fachadas y balcones 2026.pdf",
+      "long": 198701,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1539982,
+      "descripcion": "BOP 202 DE 19-10-2026",
+      "nombreFic": "BOP 202 DE 19-10-2026.pdf",
+      "long": 1176406,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1539979,
+      "descripcion": "RESOLUCION 2026-1285 [Bases reguladoras - Concurso de decoración navideña de fachadas y balcones 2026]",
+      "nombreFic": "RESOLUCION 2026-1285 [Bases reguladoras - Concurso de decoración navideña de fachadas y balcones 2026].pdf",
+      "long": 1142456,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

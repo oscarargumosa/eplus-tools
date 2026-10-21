@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "936430",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CÁCERES / AYUNTAMIENTO DE CÁCERES",
+  "nuts_codes": [
+    "ES432"
+  ],
+  "nuts_primary": "ES432",
+  "title": "Bases de la convocatoria de subvenciones correspondiente a la Concejalía de Juventud y Pedanías del Excmo. Ayuntamiento de Cáceres, para proyectos en materia juvenil, desarrollados por entidades juveniles, 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "94",
+      "descripcion": "Actividades asociativas"
+    },
+    {
+      "codigo": "93",
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento"
+    }
+  ],
+  "apply_url": "https://sede.caceres.es/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936430",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "MODELO 505",
+      "url": null
+    },
+    {
+      "label": "Solicitud Modelo 504",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://sede.caceres.es/",
+  "text_inicio": "10 días desde la publicación del extracto de la convocatoria en BOP",
+  "text_fin": "10 días posteriores a su publicación en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.752Z"
+}

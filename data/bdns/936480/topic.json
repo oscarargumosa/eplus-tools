@@ -1,0 +1,81 @@
+{
+  "source": "bdns",
+  "source_id": "936480",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE SORIA / DIPUTACIÓN PROVINCIAL DE SORIA",
+  "nuts_codes": [
+    "ES417"
+  ],
+  "nuts_primary": "ES417",
+  "title": "CONVOCATORIA SUBVENCIONES AYUNTAMIENTOS REHABILITACIÓN DE VIVIENDA MUNICIPAL PLAN SORIA 2026",
+  "title_lang": "es",
+  "summary": "Acceso a la vivienda y fomento de la edificación",
+  "status": "open",
+  "publication_date": "2026-10-20",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 200000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "F",
+      "descripcion": "CONSTRUCCIÓN"
+    }
+  ],
+  "apply_url": "https://portaltramitador.dipsoria.es/web/inicioWebc.do?opcion=noreg",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936480",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "ANEXO II PROYECTO",
+      "url": null
+    },
+    {
+      "label": "ANEXO III JUSTIFICACIÓN",
+      "url": null
+    },
+    {
+      "label": "CERTIFICADO DE LA JUNTA DE GOBIERNO APROBACIÓN BASES DE LA CONVOCATORIA",
+      "url": null
+    },
+    {
+      "label": "ANEXO SOLICITUD",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV CERTFICADO DE OBLIGACIONES Y PAGOS",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.dipsoria.es/sites/dipsoria/files/public/paginas/archivos/ordenanza_general_reguladora_de_la_concesion_de_subvenciones.pdf",
+  "text_inicio": "desde el dia siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "text_fin": "un mes a contar desde el dia siguiente a la publicación del extracto de la convocatoria en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-21T04:09:52.764Z"
+}

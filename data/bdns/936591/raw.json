@@ -1,0 +1,72 @@
+{
+  "id": 1138152,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CABRILLANES",
+    "nivel3": "AYUNTAMIENTO DE CABRILLANES"
+  },
+  "sedeElectronica": "https://aytocabrillanes.sedelectronica.es/info.8",
+  "codigoBDNS": "936591",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3050,
+  "mrr": false,
+  "descripcion": "Acuerdo de la Junta de Gobierno Local del Ayuntamiento de Cabrillanes, de 16 de octubre de 2026, por el que se aprueban las bases reguladoras y convocatoria de subvenciones para la adquisición de libros de texto y material escolar, curso 2026-2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES Y CONVOCATORIA DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA PARA LA ADQUISICIÓN DE LIBROS DE TEXTO Y MATERIAL ESCOLAR EN EL MUNICIPIO DE CABRILLANES, PARA EL CURSO 2026-2027",
+  "urlBasesReguladoras": "https://aytocabrillanes.sedelectronica.es/transparency/9b860aaf-7cdf-40a6-bdb1-9bf066259b38/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día siguiente al de su publicación en BOP",
+  "textFin": "15 días hábilesdesde el siguiente al de su publicación en BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540722,
+      "descripcion": "Modelo de solicitud",
+      "nombreFic": "modelo solicitud.docx",
+      "long": 38587,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540721,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICADO ACUERDO JGL 16OCT2026_aprobación bbrr y convocatoria.pdf",
+      "long": 389465,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

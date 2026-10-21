@@ -1,0 +1,80 @@
+{
+  "id": 1137956,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCOLEA DEL PINAR",
+    "nivel3": "AYUNTAMIENTO DE ALCOLEA DEL PINAR"
+  },
+  "sedeElectronica": "https://alcoleadelpinar.sedelectronica.es/",
+  "codigoBDNS": "936395",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8500,
+  "mrr": false,
+  "descripcion": "subvenciones educativas, culturales y sociales de ayuda a la conciliación familiar conforme al Plan Estratégico de Subvenciones a cargo del Presupuesto 2026 de Alcolea del Pinar.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES42 - CASTILLA LA MANCHA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Anexo II DE Bases reguladoras de subvenciones educativas, culturales y sociales de ayuda a la conciliación familiar conforme al Plan Estratégico de Subvenciones a cargo del Presupuesto 2026 de Alcolea del Pinar.",
+  "urlBasesReguladoras": "https://alcoleadelpinar.sedelectronica.es/transparency/954b882b-b27d-41a1-9f07-721b0723f5fd/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-23",
+  "fechaFinSolicitud": "2026-11-08",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [
+    {
+      "descripcion": "FEAD - FONDO DE AYUDA A LOS MÁS DESFAVORECIDOS"
+    }
+  ],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540106,
+      "descripcion": "ANEXO II BASES",
+      "nombreFic": "20261020_Otros_Bases_20260617_Otros_Anexo II Convocatoria para la Concesión de Subvenciones cultural.pdf",
+      "long": 351377,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540105,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261020_Resolución_DECRETO 2026-0160 [20260617_Acuerdo_Resolución de Alcaldía (1)].pdf",
+      "long": 181143,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

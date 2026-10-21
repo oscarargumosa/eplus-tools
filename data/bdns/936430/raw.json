@@ -1,0 +1,84 @@
+{
+  "id": 1137991,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CÁCERES",
+    "nivel3": "AYUNTAMIENTO DE CÁCERES"
+  },
+  "sedeElectronica": "https://sede.caceres.es/",
+  "codigoBDNS": "936430",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Bases de la convocatoria de subvenciones correspondiente a la Concejalía de Juventud y Pedanías del Excmo. Ayuntamiento de Cáceres, para proyectos en materia juvenil, desarrollados por entidades juveniles, 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades asociativas",
+      "codigo": "94"
+    },
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES432 - Cáceres"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "Bases de la convocatoria de subvenciones correspondiente a la Concejalía de Juventud y Pedanías del Excmo. Ayuntamiento de Cáceres, para proyectos en materia juvenil, desarrollados por entidades juveniles, 2026",
+  "urlBasesReguladoras": "https://sede.caceres.es/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "10 días desde la publicación del extracto de la convocatoria en BOP",
+  "textFin": "10 días posteriores a su publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540176,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Bases Convocatoria (Modificadas).PDF",
+      "long": 369665,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540178,
+      "descripcion": "MODELO 505",
+      "nombreFic": "MODELO 505.PDF",
+      "long": 1864867,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    },
+    {
+      "id": 1540177,
+      "descripcion": "Solicitud Modelo 504",
+      "nombreFic": "Solicitud Modelo 504.PDF",
+      "long": 1477347,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-20"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
