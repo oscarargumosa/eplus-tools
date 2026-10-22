@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "936676",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concesión directa - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / GOLMAYO / AYUNTAMIENTO DE GOLMAYO",
+  "nuts_codes": [
+    "ES417"
+  ],
+  "nuts_primary": "ES417",
+  "title": "CONVOCATORIA DE AYUDAS PARA GASTOS SOCIALES EN EL MUNICIPIO DE GOLMAYO EN EL AÑO 2025",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-21",
+  "open_date": "2026-10-21",
+  "deadline": "2026-11-20",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 9000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "P",
+      "descripcion": "ADMINISTRACIÓN PÚBLICA Y DEFENSA; SEGURIDAD SOCIAL OBLIGATORIA"
+    },
+    {
+      "codigo": "D",
+      "descripcion": "SUMINISTRO DE ENERGIA ELECTRICA, GAS, VAPOR Y AIRE ACONDICIONADO"
+    }
+  ],
+  "apply_url": "https://golmayo.sedelectronica.es/transparency/8d29f69d-3b1c-4b46-a52d-8b76b2fe299d/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936676",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://golmayo.sedelectronica.es/transparency/8d29f69d-3b1c-4b46-a52d-8b76b2fe299d/",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-22T04:05:20.814Z"
+}

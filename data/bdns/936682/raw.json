@@ -1,0 +1,72 @@
+{
+  "id": 1138243,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALLARESOS, ELS",
+    "nivel3": "AYUNTAMIENTO DE PALLARESOS, ELS"
+  },
+  "sedeElectronica": "https://ajuntamentdelspallaresos.eadministracio.cat/transparency/c299b69f-4cb1-42c0-856d-cea25db2bf37/",
+  "codigoBDNS": "936682",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "2A CONVOCATORIA DE AYUDAS A CONCEDER POR EL AYUNTAMIENTO DELS PALLARESOS PARA EL TRANSPORTE ESCOLAR DE LOS ESTUDIANTES DE SECUNDARIA DEL MUNICIPIO-CURSO 2025-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "BASES REGULADORES PREMIOS AL RECONOCIMIENTO ACADÉMICO DEL AYUNTAMIENTO DELS PALLARESOS",
+  "urlBasesReguladoras": "https://ajuntamentdelspallaresos.eadministracio.cat/transparency/c299b69f-4cb1-42c0-856d-cea25db2bf37/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir de la publicación al BOPT",
+  "textFin": "10/11/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541053,
+      "descripcion": "SOL·LICITUD",
+      "nombreFic": "INSTANCIA SOL·LICITUD AJUT TRANSPORT ESCOLAR CURS 25-26.docx",
+      "long": 89687,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541041,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2A Convocatòria ajuts al transport escolar dels estudiants de secundària del muncipi-CURS 25-26.pdf",
+      "long": 173767,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

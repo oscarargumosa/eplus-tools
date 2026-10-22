@@ -1,0 +1,88 @@
+{
+  "id": 1138536,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "TÀRBENA",
+    "nivel3": "AYUNTAMIENTO DE TÀRBENA"
+  },
+  "sedeElectronica": "https://tarbena.sedelectronica.es/preview-document/df22db58-17db-46a5-a03f-d6516be00516/",
+  "codigoBDNS": "936975",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 31300,
+  "mrr": false,
+  "descripcion": "Convocatoria de subvenciones del Ayuntamiento de Tárbena para el ejercicio 2026, destinada al fomento del consumo en los establecimientos comerciales adheridos del municipio mediante la entrega de bonos de comercio de 50 euros a las personas beneficiarias",
+  "descripcionLeng": "Convocatòria de subvencions de l'Ajuntament de Tàrbena per a l'exercici 2026, destinada al foment del consum en els establiments comercials adherits del municipi mitjançant el lliurament de bons de comerç de 50 euros a les persones beneficiàries",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor no especializado",
+      "codigo": "47.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Base 24 de las Bases de Ejecución del Presupuesto de 2026, relativa a subvenciones.",
+  "urlBasesReguladoras": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008038.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-02",
+  "fechaFinSolicitud": "2026-11-13",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541728,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261015_Otros_CONVOCATORIA BONO CONSUMO 2026 TARBENA.pdf",
+      "long": 237423,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541737,
+      "descripcion": "ANEXO III - FICHA DE MANTENIMIENTO DE TERCEROS",
+      "nombreFic": "20260826_Otros_Anexo III Ficha terceros 2026.docx",
+      "long": 21331,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541736,
+      "descripcion": "ANEXO II- DECLARACION RESPONSABLE",
+      "nombreFic": "20261014_Otros_Anexo II Declaracion responsable 2026.docx",
+      "long": 20085,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541733,
+      "descripcion": "ANEXO I - INSTANCIA DE ADHESION EMPRESAS",
+      "nombreFic": "20261005_Otros_Anexo I Instancia 2026.docx",
+      "long": 19308,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

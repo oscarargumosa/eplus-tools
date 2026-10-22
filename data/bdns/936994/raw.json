@@ -1,0 +1,84 @@
+{
+  "id": 1138555,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MOGENTE/MOIXENT",
+    "nivel3": "AYUNTAMIENTO DE MOGENTE/MOIXENT"
+  },
+  "sedeElectronica": "https://moixent.sedelectronica.es/info.10",
+  "codigoBDNS": "936994",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 8375,
+  "mrr": false,
+  "descripcion": "XI Convocatoria premios al rendimiento académico (curso 2025-2026)",
+  "descripcionLeng": "XI Convocatòria premis al rendiment acadèmic (curs 2025-2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación primaria",
+      "codigo": "85.2"
+    },
+    {
+      "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+      "codigo": "85.3"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES523 - Valencia / València"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases XI Convocatoria premios al rendimiento académico (curso 2025-2026)",
+  "urlBasesReguladoras": "https://moixent.sedelectronica.es/transparency/c67973a5-a3f4-4f8f-825a-37932a65aaf7/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde el siguiente al de la publicación del extracto de las bases en el BOP",
+  "textFin": "10 días hábiles a contar desde el siguiente al de la publicación del extracto en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541819,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261021_Uns altres_Decreto de Alcaldía aprovación Bases XI convocatoria premios al rendimiento académico].pdf",
+      "long": 107428,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541822,
+      "descripcion": "INSTANCIA",
+      "nombreFic": "20260923_Uns altres_5.2 Instància (1).pdf",
+      "long": 144417,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541756,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "20261021_Resolució_DECRETO 2026-1646 [Resolució PR_2026_1803 - Decreto de Alcaldia aprovació Bases XI convocàtoria premis al rendiment acadèmic].pdf",
+      "long": 1409656,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

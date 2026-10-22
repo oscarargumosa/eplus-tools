@@ -1,0 +1,120 @@
+{
+  "id": 1138398,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ALCANAR",
+    "nivel3": "AYUNTAMIENTO DE ALCANAR"
+  },
+  "sedeElectronica": "https://alcanar.eadministracio.cat/info.0",
+  "codigoBDNS": "936837",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 25000,
+  "mrr": false,
+  "descripcion": "Anuncio convocatoria concesión de subvenciones a entidades deportivas Alcanar (ejercicio 2026)",
+  "descripcionLeng": "Anunci convocatòria concessió de subvencions a entitats esportives Alcanar (exercici 2026)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES - ESPAÑA "
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ley 38/2003, de 17 de noviembre, General de Subvenciones",
+  "urlBasesReguladoras": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-20977",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Fecha de publicación en el BOPT",
+  "textFin": "15 de noviembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541464,
+      "descripcion": "0. MODEL_SOL·LICITUD_I_JUSTIFICACIO _DE_SUBVENCIONS",
+      "nombreFic": "0. MODEL_SOL·LICITUD_I_JUSTIFICACIO _DE_SUBVENCIONS.pdf",
+      "long": 181880,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541468,
+      "descripcion": "3. MODEL_DECLARACIO _RESPONSABLES_ (ANNEX_III)",
+      "nombreFic": "3. MODEL_DECLARACIO _RESPONSABLES_ (ANNEX_III).pdf",
+      "long": 89584,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541463,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Anunci convocatoria subvencions a entitats esportives exercici 2026.pdf",
+      "long": 432557,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541469,
+      "descripcion": "4. RESUM COMPTABILITAT_(ANNEX IV)",
+      "nombreFic": "4. RESUM COMPTABILITAT_(ANNEX IV).pdf",
+      "long": 155508,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541466,
+      "descripcion": "1. MODEL_MEMORIA_(ANNEX_I)",
+      "nombreFic": "1. MODEL_MEMORIA_(ANNEX_I).pdf",
+      "long": 130836,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541467,
+      "descripcion": "2. MODEL_AUTORITZACIO _AEAT_I_S.SOC_ (ANNEX_II)",
+      "nombreFic": "2. MODEL_AUTORITZACIO _AEAT_I_S.SOC_ (ANNEX_II).pdf",
+      "long": 104825,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541462,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio convocatoria subvenciones a entidades deportivas ejercicio 2026.pdf",
+      "long": 317990,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541470,
+      "descripcion": "5. DADES BANCARIES_ (ANNEX V)",
+      "nombreFic": "5. DADES BANCARIES_ (ANNEX V).pdf",
+      "long": 89855,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

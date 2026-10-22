@@ -7,8 +7,8 @@
   "programme": "Horizon Europe",
   "programmeCode": "43108390",
   "programmePeriod": "2021 - 2027",
-  "status": "open",
-  "statusCode": "31094502",
+  "status": "forthcoming",
+  "statusCode": "31094501",
   "opening": "2026-10-20",
   "deadline": "2027-02-16",
   "deadlineModel": "single-stage",
@@ -360,5 +360,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-21T04:06:29.122Z"
+  "fetchedAt": "2026-10-22T04:01:57.208Z"
 }

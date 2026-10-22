@@ -1,0 +1,73 @@
+{
+  "source": "bdns",
+  "source_id": "936975",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / TÀRBENA / AYUNTAMIENTO DE TÀRBENA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "Convocatoria de subvenciones del Ayuntamiento de Tárbena para el ejercicio 2026, destinada al fomento del consumo en los establecimientos comerciales adheridos del municipio mediante la entrega de bonos de comercio de 50 euros a las personas beneficiarias",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-21",
+  "open_date": "2026-11-02",
+  "deadline": "2026-11-13",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 31300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "47.1",
+      "descripcion": "Comercio al por menor no especializado"
+    }
+  ],
+  "apply_url": "https://tarbena.sedelectronica.es/preview-document/df22db58-17db-46a5-a03f-d6516be00516/",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/936975",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO III - FICHA DE MANTENIMIENTO DE TERCEROS",
+      "url": null
+    },
+    {
+      "label": "ANEXO II- DECLARACION RESPONSABLE",
+      "url": null
+    },
+    {
+      "label": "ANEXO I - INSTANCIA DE ADHESION EMPRESAS",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008038.pdf",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-22T04:05:20.860Z"
+}

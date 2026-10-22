@@ -1,0 +1,64 @@
+{
+  "id": 1138067,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "CIUDAD AUTÓNOMA DE CEUTA",
+    "nivel3": "CONSEJERÍA DE EDUCACIÓN, CULTURA Y JUVENTUD"
+  },
+  "sedeElectronica": "www.ceuta.es",
+  "codigoBDNS": "936506",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 671900,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA EN REGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS Y OTROS DURANTE EL CURSO 2026/2027",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES63 - CIUDAD AUTONOMA DE CEUTA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA EN REGIMEN DE CONCURRENCIA COMPETITIVA DE AYUDAS PARA ESTUDIOS UNIVERSITARIOS Y OTROS DURANTE EL CURSO 2026/2027",
+  "urlBasesReguladoras": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1964-diciembre/23018-bocce-extra67-26-12-2025?Itemid=534",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "día siguiente publicación de la convocatoria en BOCCE",
+  "textFin": "15 días hábiles a partir de la publicación del extracto en BOCCE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540380,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026-2027.pdf",
+      "long": 278673,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,76 @@
+{
+  "id": 1136878,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "ONDA",
+    "nivel3": "AYUNTAMIENTO DE ONDA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "935317",
+  "fechaRecepcion": "2026-10-15",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 700,
+  "mrr": false,
+  "descripcion": "BASES ESPECÍFICAS REGULADORAS DE LA CONVOCATORIA DEL CONCURSO DE ILUSTRACIÓN “DETRÁS DE LA PANTALLA: LA VIOLENCIA TAMBIÉN ESTÁ EN LAS REDES” 25N 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    },
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES522 - Castellón / Castelló"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS REGULADORAS DE LA CONVOCATORIA DEL CONCURSO DE ILUSTRACIÓN “DETRÁS DE LA PANTALLA: LA VIOLENCIA TAMBIÉN ESTÁ EN LAS REDES” 25N 2026",
+  "urlBasesReguladoras": "https://ondasitae.sede.gva.es/sitae/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": "2026-10-30",
+  "textInicio": "el día siguiente a la publicación en el BOP  ",
+  "textFin": "El 30 de octubre a las 12h",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1536936,
+      "descripcion": "ACUERDO JGL",
+      "nombreFic": "ACUERDO_1.19_JGL_20261013.pdf.pdf",
+      "long": 417479,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1536942,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "borrador_bases_concurso_25N_2026 (1).pdf",
+      "long": 932371,
+      "datMod": "2026-10-15",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

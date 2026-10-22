@@ -1,0 +1,72 @@
+{
+  "id": 1138333,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CASTELLBELL I EL VILAR",
+    "nivel3": "AYUNTAMIENTO DE CASTELLBELL I EL VILAR"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936772",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 16500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES EN RÉGIMEN DE CONCURRENCIA COMPETITIVA PARA ACTIVIDADES ORGANIZADAS POR ENTIDADES SIN ÁNIMO DE LUCRO EN CASTELLBELL I EL VILAR 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS EN RÈGIM DE CONCURRÈNCIA COMPETITIVA PER ACTIVITATS ORGANITZADES PER ENTITATS SENSE ÀNIM DE LUCRE A CASTELLBELL I EL VILAR 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas, recreativas y de entretenimiento",
+      "codigo": "93"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones en régimen de concurrencia competitiva para entidades sin ánimo de lucro de Castellbell i el Vilar",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/3825385/bases-reguladores-per-a-la-concessio-de-subvencions-en-regim-de-concurrencia-competitiva-d-ajuts-individuals-de-mobilitat-per-a-alumnat-d-estudis-post-obligatoris-resident-a-castellbell-i-el-vilar-i-subvencions-per-acti",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Dia siguiente a la publicación del extracto en el BOP",
+  "textFin": "10 días hábiles partir del día siguiente del anuncio de la convocatoria en el BOP de Barcelona",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541321,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria 2026.pdf",
+      "long": 245616,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541319,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria 2026 - castellano.pdf",
+      "long": 250140,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

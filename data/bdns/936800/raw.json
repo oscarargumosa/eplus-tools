@@ -1,0 +1,80 @@
+{
+  "id": 1138361,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "SANT ADRIÀ DE BESÒS",
+    "nivel3": "AYUNTAMIENTO DE SANT ADRIÀ DE BESÒS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936800",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 104538.98,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DE SUBVENCIONES FINALISTAS PARA LA PROMOCIÓN DE ENTIDADES DEPORTIVAS DEL MUNICIPIO DE SANT ADRIÀ DE BESÒS, AÑO 2026",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ EN RÈGIM DE CONCURRÈNCIA COMPETITIVA DE SUBVENCIONS FINALISTES PER A LA PROMOCIÓ D’ENTITATS ESPORTIVES DEL  MUNICIPI DE SANT ADRIÀ DE BESÒS, ANY 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN, EN RÉGIMEN DE CONCURRENCIA COMPETITIVA, DE SUBVENCIONES FINALISTAS PARA LA PROMOCIÓN DE ENTIDADES DEPORTIVAS DEL MUNICIPIO DE SANT ADRIÀ DE BESÒS, AÑO 2026",
+  "urlBasesReguladoras": "https://nuvol.sant-adria.cat/s/jTJNSRTy22Rj88B",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "18/06/2026",
+  "textFin": "18/07/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541379,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria_castellano.pdf",
+      "long": 191924,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541381,
+      "descripcion": "Resolució de concessió",
+      "nombreFic": "Resolucio_TAG___regidor_delegat_3_firmas (1).pdf",
+      "long": 422503,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541380,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria_Catala.pdf",
+      "long": 302715,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

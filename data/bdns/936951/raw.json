@@ -1,0 +1,83 @@
+{
+  "id": 1138512,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GÜÍMAR",
+    "nivel3": "AYUNTAMIENTO DE GÜÍMAR"
+  },
+  "sedeElectronica": "https://guimar.sedelectronica.es/info.0",
+  "codigoBDNS": "936951",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 40000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE SUBVENCIONES A LA PRODUCCIÓN DE UVA EN EL MUNICIPIO DE GÜÍMAR PARA LA OBTENCIÓN DE VINO DE CALIDAD AMPARADO POR LA DENOMINACIÓN DE ORIGEN VALLE DE GÜÍMAR. AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "AGRICULTURA, GANADERÍA, SILVICULTURA Y PESCA",
+      "codigo": "A"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES709 - Tenerife"
+    }
+  ],
+  "descripcionFinalidad": "Agricultura, Pesca y Alimentación",
+  "descripcionBasesReguladoras": "BASES ESPECÍFICAS DE SUBVENCIONES A LA PRODUCCIÓN DE UVA EN EL MUNICIPIO DE GÜÍMAR PARA LA OBTENCIÓN DE VINO DE CALIDAD AMPARADO POR LA DENOMINACIÓN DE ORIGEN VALLE DE GÜÍMAR. AÑO 2026",
+  "urlBasesReguladoras": "https://guimar.sedelectronica.es/info.0",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Desde la publicación en el BOP",
+  "textFin": "20 DÍAS NATURALES DESDE PUBLICACIÓN",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541713,
+      "descripcion": "Bases y Anexos",
+      "nombreFic": "BASES ESPECÍFICAS CONVOCATORIA AYUDAS VITICULTORES GUIMAR 2026 (FIRMAS).pdf",
+      "long": 456553,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541714,
+      "descripcion": "Decreto de Alcaldía aprobando Bases y Convocatoria",
+      "nombreFic": "DECRETO 2026-4082 de Aprobación de las Bases de Convocatoria de Ayudas Viticultoras de Güímar 2026.pdf",
+      "long": 527382,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    },
+    {
+      "id": 1541712,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio Convocatoria de Subvenciones de apoyo a los viticultores y viticultoras de Güímar 2026 BDNS.pdf",
+      "long": 230962,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -7,14 +7,14 @@
   "programme": "Creative Europe",
   "programmeCode": "43251814",
   "programmePeriod": "2021 - 2027",
-  "status": "forthcoming",
-  "statusCode": "31094501",
+  "status": "open",
+  "statusCode": "31094502",
   "opening": "2026-10-21",
   "deadline": "2027-01-27",
   "deadlineModel": "single-stage",
   "actionType": "CREA Lump Sum Grants",
-  "actionCode": null,
-  "mgaCode": null,
+  "actionCode": "CREA-LS",
+  "mgaCode": "CREA-AG-LS",
   "budget": {
     "total_eur": 5000000,
     "by_year": {
@@ -54,7 +54,7 @@
     "DigitalAgenda"
   ],
   "supportInfoText": "For help related to this call, please contact the Creative Europe Desks which are in every country participating in the programme to support potential applicants.\n\nFunding & Tenders Portal FAQ – Submission of proposals.\n\nIT Helpdesk – Contact the IT helpdesk for questions such as forgotten passwords, access rights and roles, technical aspects of submission of proposals, etc.\n\nOnline Manual – Step-by-step online guide through the Portal processes from proposal preparation and evaluation to reporting on your ongoing project. Valid for all 2021-2027 programmes.\n\nIn case of technical problems with the Creative Europe Database, please contact EACEA-MEDIA-DB-BOOKS@ec.europa.eu\n\nFor issues unrelated to any of the above, please contact the functional mailbox: EACEA-CREATIVE-EUROPE-TRANSLATIONS@ec.europa.eu",
-  "submissionUrl": null,
+  "submissionUrl": "https://ec.europa.eu/research/participants/submission/manage/screen/submission/create-draft/46989?topic=CREA-CULT-2027-LIT",
   "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-CULT-2027-LIT",
   "documents": [
     {
@@ -149,5 +149,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-21T04:06:27.436Z"
+  "fetchedAt": "2026-10-22T04:01:57.204Z"
 }

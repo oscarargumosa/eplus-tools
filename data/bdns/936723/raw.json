@@ -1,0 +1,64 @@
+{
+  "id": 1138284,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "PALLARESOS, ELS",
+    "nivel3": "AYUNTAMIENTO DE PALLARESOS, ELS"
+  },
+  "sedeElectronica": "https://ajuntamentdelspallaresos.eadministracio.cat/transparency/3a996786-9633-4dce-94fd-8cc124f7f186/",
+  "codigoBDNS": "936723",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA DE AYUDAS A CONCEDER POR EL AYUNTAMIENTO DELS PALLARESOS PARA LA ADQUISICIÓN DE VACUNAS NO CUBIERTAS POR EL SISTEMA DE SALUD PÚBLICA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES SANITARIAS Y DE SERVICIOS SOCIALES",
+      "codigo": "R"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Sanidad",
+  "descripcionBasesReguladoras": "BASES REGULADORES DELS AJUTS A CONCEDIR PER L'AJUNTAMENT DELS PALLARESOS PER A L'ADQUISICIÓ DE VACUNES NO COBERTES PEL SISTEMA DE SALUT PÚBLICA",
+  "urlBasesReguladoras": "https://ajuntamentdelspallaresos.eadministracio.cat/transparency/3a996786-9633-4dce-94fd-8cc124f7f186/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "a partir de la publicación al BOPT",
+  "textFin": "10/11/2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541148,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatòria ajuda adquisició vacunes no cobertes pel sistema de salut pública-2026.pdf",
+      "long": 179388,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-21"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
