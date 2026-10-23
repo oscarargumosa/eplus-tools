@@ -114,7 +114,7 @@ body { margin: 0; background: var(--cm-bg); color: var(--cm-ink); font-family: '
 .cm-chip .ms { font-size: 15px; }
 
 /* ── Filtros + mapa (portada) ─────────────────────────────────── */
-.cm-filters { display: grid; grid-template-columns: minmax(180px, 1.3fr) repeat(3, minmax(140px, 1fr)) auto; gap: 10px; align-items: end; margin-bottom: 14px; }
+.cm-filters { display: grid; grid-template-columns: minmax(180px, 1.3fr) repeat(4, minmax(130px, 1fr)) auto; gap: 10px; align-items: end; margin-bottom: 14px; }
 .cm-field label, .cm-label { display: block; font-size: 12.5px; font-weight: 600; color: var(--cm-muted); margin-bottom: 4px; }
 .cm input[type=text], .cm input[type=search], .cm input[type=url], .cm select, .cm textarea {
   width: 100%; min-width: 0; font: 400 14.5px 'Poppins', sans-serif; color: var(--cm-ink); background: #fff; border: 1.5px solid var(--cm-line);
@@ -322,6 +322,21 @@ body { margin: 0; background: var(--cm-bg); color: var(--cm-ink); font-family: '
   .cm-chat { height: calc(100vh - 64px - 120px); }
   .cm-msg { max-width: 88%; }
 }
+
+/* ── Banderas, roles, sin entidad y marcador del mapa (23-oct) ─── */
+.cm-flag { width: 20px; height: 15px; border-radius: 2px; object-fit: cover; vertical-align: -2px; margin-right: 5px;
+  box-shadow: 0 0 0 1px rgba(34,35,81,.12); }
+.cm-flag-pick { display: flex; align-items: center; gap: 8px; }
+.cm-flag-pick select { flex: 1; min-width: 0; }
+.cm-flag-pick .cm-flag { margin: 0; flex: 0 0 auto; }
+.cm-chip--role { background: var(--cm-soft-ok); color: var(--cm-ink); font-weight: 600; box-shadow: inset 0 0 0 1px var(--cm-lime-2); }
+.cm-org .cm-av .ms { font-size: 22px; color: var(--cm-lav); }
+.cm-noorg { margin-top: 12px; }
+/* Marcador para elegir el punto: chincheta roja como la de Google Maps.
+   La punta queda en el punto exacto (anchor: 'bottom' en el Marker). */
+.cm-redpin { width: 30px; height: 42px; display: block; cursor: grab; filter: drop-shadow(0 2px 2px rgba(0,0,0,.35)); }
+.cm-redpin:active { cursor: grabbing; }
+.cm-loc-hidden { margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: var(--cm-lav-soft); color: var(--cm-navy); font-size: 14px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }

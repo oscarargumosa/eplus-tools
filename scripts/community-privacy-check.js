@@ -67,7 +67,7 @@ async function login(key) {
   // Guardar con precisión aproximada redondea antes de guardar.
   const lenaMe = (await asLena('GET', '/community/me')).data.profile;
   const backup = {
-    visible: true, headline: lenaMe.headline, bio: lenaMe.bio, sectors: lenaMe.sectors, actions: lenaMe.actions, languages: lenaMe.languages,
+    visible: true, headline: lenaMe.headline, bio: lenaMe.bio, sectors: lenaMe.sectors, actions: lenaMe.actions, roles: lenaMe.roles, no_organization: lenaMe.no_organization,
     seeks_partners: lenaMe.seeks_partners, offers_partner: lenaMe.offers_partner, country: lenaMe.country, organization_id: lenaMe.organization_id,
     location_mode: 'manual', lat: lenaMe.own_location.lat, lng: lenaMe.own_location.lng, location_precision: 'approx', location_audience: 'members',
   };

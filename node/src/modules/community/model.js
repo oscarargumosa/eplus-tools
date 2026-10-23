@@ -67,8 +67,8 @@ const IN_COMMUNITY_SQL = `(u.role = 'admin' OR EXISTS (SELECT 1 FROM user_areas 
 // Perfil + entidad (solo si la persona sigue vinculada a ella en «Mi entidad»).
 const PERSON_SELECT = `
   SELECT u.id, u.name, u.avatar_url AS user_avatar,
-         p.visible, p.headline, p.bio, p.sectors, p.actions, p.languages, p.seeks_partners, p.offers_partner,
-         p.organization_id, p.country, p.location_label, p.lat, p.lng, p.location_source,
+         p.visible, p.headline, p.bio, p.roles, p.sectors, p.actions, p.seeks_partners, p.offers_partner,
+         p.organization_id, p.no_organization, p.country, p.location_label, p.lat, p.lng, p.location_source,
          p.location_precision, p.location_audience, p.updated_at,
          o.organization_name AS org_name, o.logo_url AS org_logo, o.city AS org_city,
          (o.verified_at IS NOT NULL) AS org_verified
@@ -118,11 +118,12 @@ function card(row, viewerId, connected) {
     ...avatarOf(row),
     headline: row.headline || null,
     org: row.org_name ? { name: row.org_name, logo_url: row.org_logo || null, city: row.org_city || null, verified: !!row.org_verified } : null,
+    no_organization: !!row.no_organization,
     country: row.country || null,
     country_label: row.country ? (C.COUNTRIES[row.country] || row.country) : null,
+    roles: splitCsv(row.roles, C.ROLES),
     sectors: splitCsv(row.sectors, C.SECTORS),
     actions: splitCsv(row.actions, C.ACTIONS),
-    languages: splitCsv(row.languages, C.LANGUAGES),
     seeks_partners: !!row.seeks_partners,
     offers_partner: !!row.offers_partner,
     location: loc,
@@ -134,7 +135,7 @@ function card(row, viewerId, connected) {
 function catalog() {
   const m = (d) => Object.entries(d).map(([key, v]) => ({ key, label: typeof v === 'string' ? v : v.label }));
   return {
-    sectors: m(C.SECTORS), actions: m(C.ACTIONS), languages: m(C.LANGUAGES),
+    roles: m(C.ROLES), sectors: m(C.SECTORS), actions: m(C.ACTIONS),
     countries: m(C.COUNTRIES).sort((a, b) => a.label.localeCompare(b.label, 'es')),
     topics: Object.entries(C.TOPICS).map(([key, t]) => ({ key, label: t.label, ask: t.ask, link_required: !!t.linkRequired })),
   };
@@ -163,8 +164,8 @@ async function me(user) {
     [user.id, user.id, user.id, user.id]);
   const [[u]] = await db.query('SELECT name, avatar_url FROM users WHERE id = ?', [user.id]);
   const base = row || {
-    id: user.id, name: u.name, user_avatar: u.avatar_url, visible: 0, headline: null, bio: null, sectors: null, actions: null,
-    languages: null, seeks_partners: 0, offers_partner: 0, organization_id: null, country: null, location_label: null,
+    id: user.id, name: u.name, user_avatar: u.avatar_url, visible: 0, headline: null, bio: null, roles: null, sectors: null, actions: null,
+    seeks_partners: 0, offers_partner: 0, organization_id: null, no_organization: 0, country: null, location_label: null,
     lat: null, lng: null, location_source: null, location_precision: 'approx', location_audience: 'members',
   };
   const firstOrg = orgs[0];
@@ -199,12 +200,14 @@ async function saveProfile(user, body) {
   for (const [v, what] of [[headline, 'el cargo'], [bio, 'la presentación'], [label, 'el lugar']]) {
     if (EMAIL_RE.test(v)) fail(400, 'NO_CONTACT', `Quita el correo de ${what}: la comunidad no publica correos. Para hablar en privado, conecta y usa los mensajes.`);
   }
+  const roles = keysFrom(body.roles, C.ROLES);
   const sectors = keysFrom(body.sectors, C.SECTORS);
   const actions = keysFrom(body.actions, C.ACTIONS);
-  const languages = keysFrom(body.languages, C.LANGUAGES);
 
+  // «No pertenezco a ninguna entidad» manda: anula la entidad elegida.
+  const noOrg = !!body.no_organization;
   const orgs = await myOrgs(user.id);
-  let orgId = body.organization_id ? String(body.organization_id) : null;
+  let orgId = !noOrg && body.organization_id ? String(body.organization_id) : null;
   const org = orgId ? orgs.find(o => o.id === orgId) : null;
   if (orgId && !org) fail(400, 'ORG_INVALID', 'Esa entidad no está vinculada a tu cuenta.');
   if (!org) orgId = null;
@@ -240,16 +243,17 @@ async function saveProfile(user, body) {
 
   await db.query(
     `INSERT INTO community_profiles
-       (user_id, visible, headline, bio, sectors, actions, languages, seeks_partners, offers_partner,
-        organization_id, country, location_label, lat, lng, location_source, location_precision, location_audience)
-     VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-     ON DUPLICATE KEY UPDATE visible=VALUES(visible), headline=VALUES(headline), bio=VALUES(bio), sectors=VALUES(sectors),
-       actions=VALUES(actions), languages=VALUES(languages), seeks_partners=VALUES(seeks_partners), offers_partner=VALUES(offers_partner),
-       organization_id=VALUES(organization_id), country=VALUES(country), location_label=VALUES(location_label), lat=VALUES(lat),
+       (user_id, visible, headline, bio, roles, sectors, actions, seeks_partners, offers_partner,
+        organization_id, no_organization, country, location_label, lat, lng, location_source, location_precision, location_audience)
+     VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+     ON DUPLICATE KEY UPDATE visible=VALUES(visible), headline=VALUES(headline), bio=VALUES(bio), roles=VALUES(roles), sectors=VALUES(sectors),
+       actions=VALUES(actions), seeks_partners=VALUES(seeks_partners), offers_partner=VALUES(offers_partner),
+       organization_id=VALUES(organization_id), no_organization=VALUES(no_organization), country=VALUES(country),
+       location_label=VALUES(location_label), lat=VALUES(lat),
        lng=VALUES(lng), location_source=VALUES(location_source), location_precision=VALUES(location_precision),
        location_audience=VALUES(location_audience)`,
-    [user.id, visible ? 1 : 0, headline || null, bio || null, csv(sectors), csv(actions), csv(languages),
-     body.seeks_partners ? 1 : 0, body.offers_partner ? 1 : 0, orgId, country, locLabel, lat, lng, source, precision, audience]);
+    [user.id, visible ? 1 : 0, headline || null, bio || null, csv(roles), csv(sectors), csv(actions),
+     body.seeks_partners ? 1 : 0, body.offers_partner ? 1 : 0, orgId, noOrg ? 1 : 0, country, locLabel, lat, lng, source, precision, audience]);
   return me(user);
 }
 
@@ -257,8 +261,10 @@ async function saveProfile(user, body) {
 async function people(user, q = {}) {
   const where = ['p.visible = 1', IN_COMMUNITY_SQL];
   const params = [];
+  const role = C.ROLES[q.role] ? q.role : null;
   const sector = C.SECTORS[q.sector] ? q.sector : null;
   const action = C.ACTIONS[q.action] ? q.action : null;
+  if (role) { where.push('FIND_IN_SET(?, p.roles)'); params.push(role); }
   const country = q.country && C.COUNTRIES[String(q.country).toUpperCase()] ? String(q.country).toUpperCase() : null;
   if (sector) { where.push('FIND_IN_SET(?, p.sectors)'); params.push(sector); }
   if (action) { where.push('FIND_IN_SET(?, p.actions)'); params.push(action); }

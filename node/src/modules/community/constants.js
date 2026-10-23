@@ -24,6 +24,16 @@ const ACTIONS = {
   life:       'LIFE',
 };
 
+// Qué papel hace la persona en los proyectos (se pueden marcar varios).
+const ROLES = {
+  redactor:  'Redactor/a de proyectos',
+  evaluador: 'Evaluador/a de proyectos',
+  manager:   'Project manager',
+  formador:  'Formador/a',
+  logistica: 'Logística de actividades',
+};
+
+// Ya no se pide ni se muestra (23-oct-2026); queda para leer perfiles antiguos.
 const LANGUAGES = {
   es: 'Español', en: 'Inglés', fr: 'Francés', de: 'Alemán', it: 'Italiano', pt: 'Portugués',
   ca: 'Catalán', eu: 'Euskera', gl: 'Gallego', nl: 'Neerlandés', pl: 'Polaco', ro: 'Rumano',
@@ -85,4 +95,4 @@ const TOPICS = {
   exitos:         { label: 'Éxitos',         ask: '¿Qué ha salido bien? Un proyecto aprobado, una movilidad, un aprendizaje…' },
 };
 
-module.exports = { SECTORS, ACTIONS, LANGUAGES, COUNTRIES, TOPICS, countryCode };
+module.exports = { SECTORS, ACTIONS, ROLES, LANGUAGES, COUNTRIES, TOPICS, countryCode };
