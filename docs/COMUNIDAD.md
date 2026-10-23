@@ -51,7 +51,7 @@ dentro de la app, la pestaña «Mi actividad» lleva un contador con solicitudes
 
 | Tabla | Para qué |
 |---|---|
-| `community_profiles` | Perfil (1 por persona): visible, cargo, presentación, ámbitos, acciones, idiomas, busco/ofrezco socios, entidad, país, ubicación (lat/lng, origen, precisión, audiencia, rótulo). |
+| `community_profiles` | Perfil (1 por persona): visible, cargo, presentación, roles, ámbitos, acciones, busco/ofrezco socios, entidad o «sin entidad» (`no_organization`, migración 146), país, ubicación (lat/lng, origen, precisión, audiencia, rótulo). La columna `languages` ya no se usa (23-oct-2026). |
 | `community_connections` | Una fila por pareja (`user_lo`,`user_hi` únicos): `pending`/`accepted`/`declined`. |
 | `community_messages` | Mensajes de una conexión (CASCADE con la conexión). `read_at` para el contador. |
 | `community_groups`, `community_group_members` | Grupos del equipo y adhesiones. `archived` los saca de la comunidad. |
@@ -61,7 +61,7 @@ dentro de la app, la pestaña «Mi actividad» lleva un contador con solicitudes
 
 Todas con `ON DELETE CASCADE` hacia `users`: borrar una cuenta se lleva lo suyo. La entidad del
 perfil solo se muestra si la persona sigue vinculada a ella en `user_organizations`.
-Ámbitos, acciones, idiomas y países son listas cerradas en `node/src/modules/community/constants.js`
+Roles, ámbitos, acciones y países son listas cerradas en `node/src/modules/community/constants.js`
 (el cliente las recibe en `GET /me` → `catalog`).
 
 ## API
@@ -130,3 +130,11 @@ las entidades y los grupos DEMO.
   ajenos, grupos, corazón propio, enlaces `javascript:`/`data:`, denuncias). Deja los datos como estaban.
 - `/root/scripts-studio/prueba-comunidad-ui.cjs` — interacciones en navegador a 1440 y 390 px.
 - `/root/scripts-studio/captura-comunidad.cjs <email> <clave> <prefijo> [rutas…]` — capturas y aviso de desbordes.
+
+## Cambios del 23-oct-2026
+
+- **Roles** (`constants.ROLES`): redactor/a, evaluador/a, project manager, formador/a y logística de actividades. Se marcan en el perfil, salen en tarjetas y ficha, y filtran la portada (`?rol=`).
+- **Sin entidad**: casilla «No pertenezco a ninguna entidad». Manda sobre la entidad elegida y la tarjeta dice «Sin entidad». Es distinto de tener entidad y elegir «No mostrar ninguna».
+- **Banderas**: PNG en `public/img/banderas/<iso>.png` (y `@2x`), una por país de `constants.COUNTRIES`, descargadas de flagcdn y servidas por Studio. No se usan emoji porque en Windows salen como letras. Si se añade un país, hay que añadir su bandera.
+- **Tu lugar en el mapa**: el punto se elige con una chincheta roja tipo Google Maps (`anchor: 'bottom'`: la punta es el punto). Con el perfil oculto ya no se atenúa la sección (parecía un fallo del mapa): sale un aviso.
+
