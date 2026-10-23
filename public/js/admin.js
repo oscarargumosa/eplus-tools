@@ -5315,6 +5315,7 @@ const AdminUsers = (() => {
     document.getElementById('au-prev')?.addEventListener('click', () => { if (state.page > 1) { state.page--; load(); } });
     document.getElementById('au-next')?.addEventListener('click', () => { if (state.page < state.pages) { state.page++; load(); } });
     document.getElementById('au-tbody')?.addEventListener('click', onClick);
+    document.getElementById('au-tbody')?.addEventListener('change', onChange);
   }
 
   function init() { bind(); load(); }
@@ -5358,6 +5359,29 @@ const AdminUsers = (() => {
       <span class="text-xs" aria-hidden="true">${esc(area.label)}</span></div>`;
   }
 
+  // «De casa»: equipo o cuenta de pruebas. Engagement la aparta de la gente de fuera.
+  function internoHtml(u) {
+    const fixed = u.role !== 'user';
+    return `<label class="inline-flex items-center gap-1.5 mt-1.5 ${fixed ? 'opacity-60' : 'cursor-pointer'}"
+        title="${esc(fixed ? _t('El equipo cuenta siempre como de casa') : _t('Equipo o cuenta de pruebas: Engagement no la cuenta como gente de fuera'))}">
+      <input type="checkbox" data-act="interno" data-user="${esc(u.id)}" ${u.interno ? 'checked' : ''} ${fixed ? 'disabled' : ''}
+        class="accent-primary"> <span>${esc(_t('De casa'))}</span></label>`;
+  }
+
+  async function onChange(e) {
+    const box = e.target.closest('input[data-act="interno"]');
+    if (!box || box.disabled) return;
+    box.disabled = true;
+    try {
+      await API.put(`/admin/access/users/${encodeURIComponent(box.dataset.user)}/interno`, { interno: box.checked });
+      Toast.show(box.checked ? _t('Marcada como de casa') : _t('Ya cuenta como gente de fuera'), 'ok');
+    } catch (err) {
+      box.checked = !box.checked;
+      Toast.show(err.message || 'No se pudo guardar', 'err');
+    }
+    box.disabled = false;
+  }
+
   function pendingHtml(u) {
     if (!u.pending.length) return '<span class="text-on-surface-variant">—</span>';
     return u.pending.map(r => `<div class="mb-2 last:mb-0 min-w-[220px]">
@@ -5382,7 +5406,7 @@ const AdminUsers = (() => {
         </td>
         <td class="p-3">${state.areas.map(a => switchHtml(u, a)).join('')}</td>
         <td class="p-3">${pendingHtml(u)}</td>
-        <td class="p-3 whitespace-nowrap text-xs text-on-surface-variant"><div>Alta: ${fmt(u.created_at)}</div><div>Último acceso: ${fmt(u.last_login, true)}</div></td>
+        <td class="p-3 whitespace-nowrap text-xs text-on-surface-variant"><div>Alta: ${fmt(u.created_at)}</div><div>Último acceso: ${fmt(u.last_login, true)}</div>${internoHtml(u)}</td>
         <td class="p-3 text-right">${u.projects}</td>
       </tr>`).join('');
     }

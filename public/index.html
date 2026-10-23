@@ -1752,17 +1752,27 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL ENGAGEMENT (TASK-009, admin-only) — analítica conductual ══ -->
-      <section id="panel-engagement" class="panel">
+      <section id="panel-engagement" class="panel" data-i18n>
         <div class="max-w-6xl mx-auto py-8 px-4">
-          <div class="flex items-center gap-3 mb-5">
+          <div class="flex items-center gap-3 mb-5 flex-wrap">
             <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
               <span class="material-symbols-outlined text-secondary-fixed text-xl">monitoring</span>
             </div>
-            <div>
+            <div class="flex-1 min-w-[220px]">
               <h1 class="font-headline text-2xl font-extrabold text-primary tracking-tight">Engagement</h1>
-              <p class="text-xs text-on-surface-variant">Conducta de visitantes (first-party). Lo que la gente hace, no lo que dice. Solo administradores.</p>
+              <p class="text-xs text-on-surface-variant">Lo que hacen los visitantes dentro de Studio: lo que la gente hace, no lo que dice. Solo administradores.</p>
+            </div>
+            <div>
+              <label for="eng-origen" class="block text-xs font-semibold text-on-surface-variant mb-1">Mostrar</label>
+              <select id="eng-origen" class="border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-white">
+                <option value="fuera">Gente de fuera</option>
+                <option value="casa">Equipo y pruebas</option>
+                <option value="robot">Robots</option>
+                <option value="todo">Todo</option>
+              </select>
             </div>
           </div>
+          <p id="eng-origins" class="text-xs text-on-surface-variant mb-4"></p>
           <div id="eng-kpis" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6"></div>
           <div class="grid lg:grid-cols-2 gap-6 mb-6">
             <div>
@@ -1794,6 +1804,7 @@ tailwind.config = {
                 <tr>
                   <th class="text-left px-3 py-2">Quién</th>
                   <th class="text-left px-3 py-2">Tipo</th>
+                  <th class="text-left px-3 py-2">Dispositivo</th>
                   <th class="text-right px-3 py-2">Eventos</th>
                   <th class="text-right px-3 py-2">Secciones</th>
                   <th class="text-right px-3 py-2">Tiempo</th>
@@ -3422,9 +3433,9 @@ tailwind.config = {
 <script src="/js/my-evaluations.js"></script>
 <script src="/js/create.js"></script>
 <script src="/js/intake.js?v=20261020a"></script>
-<script src="/js/admin.js?v=20260627w"></script>
+<script src="/js/admin.js?v=20261023e"></script>
 <script src="/js/admin-org-claims.js?v=20261016a"></script>
-<script src="/js/engagement.js?v=20260627t"></script>
+<script src="/js/engagement.js?v=20261023e"></script>
 <script src="/js/calculator.js?v=20261016g"></script>
 <script src="/js/organizations.js?v=20261023a"></script>
 <script src="/js/entities.js?v=20261016a"></script>

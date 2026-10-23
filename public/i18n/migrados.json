@@ -9,7 +9,8 @@
     "public/js/password-fields.js",
     "public/js/beta-access.js",
     "public/js/landing.js",
-    "public/js/save-status.js"
+    "public/js/save-status.js",
+    "public/js/engagement.js"
   ],
   "servidor": [
     "node/src/modules/auth/controller.js",
