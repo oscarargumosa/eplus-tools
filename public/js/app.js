@@ -253,6 +253,8 @@ const App = (() => {
     if (currentUser.role === 'admin') {
       document.getElementById('admin-users-nav')?.classList.remove('hidden');
       document.getElementById('admin-org-claims-nav')?.classList.remove('hidden');
+      // Presentaciones: solo la cuenta dueña (el servidor lo vuelve a comprobar).
+      if (isOwner()) document.getElementById('admin-presentaciones-nav')?.classList.remove('hidden');
       if (typeof AdminOrgClaims !== 'undefined') AdminOrgClaims.refreshCount();
       if (typeof AdminUsers !== 'undefined') AdminUsers.refreshCount();
     }
@@ -420,7 +422,8 @@ const App = (() => {
     let estSub = null;
     const estM = /^estadisticas(?:[/?](.*))?$/.exec(route);
     if (estM) { estSub = estM[1] || ''; route = 'estadisticas'; }
-    if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')) {
+    if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')
+        || (route === 'admin-presentaciones' && !isOwner())) {
       route = 'my-projects';
       if (pushHash) location.hash = route;
     }
@@ -532,6 +535,7 @@ const App = (() => {
       admin:            'Admin — Data E+',
       'admin-users':    'Usuarios y accesos',
       'admin-org-claims': 'Entidades reclamadas',
+      'admin-presentaciones': 'Presentaciones',
       engagement:       'Engagement'
     };
     document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
@@ -551,6 +555,7 @@ const App = (() => {
       if (route === 'admin' && typeof Admin !== 'undefined') Admin.init();
       if (route === 'admin-users' && typeof AdminUsers !== 'undefined') AdminUsers.init();
       if (route === 'admin-org-claims' && typeof AdminOrgClaims !== 'undefined') AdminOrgClaims.init();
+      if (route === 'admin-presentaciones' && typeof Presentaciones !== 'undefined') Presentaciones.init();
       if (route === 'engagement' && typeof Engagement !== 'undefined') Engagement.init();
       if (route === 'calculator' && typeof Calculator !== 'undefined') Calculator.init();
       if (route === 'my-documents' && typeof Documents !== 'undefined') Documents.init();
@@ -599,6 +604,9 @@ const App = (() => {
   function getActiveProject() { return activeProject; }
   function getCurrentUser() { return currentUser; }
   function isAdmin() { return !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'scribe')); }
+  // Cuenta dueña (Admin › Presentaciones). Solo decide si se enseña el enlace;
+  // /v1/presentaciones lo comprueba en el servidor con STUDIO_OWNER_EMAIL.
+  function isOwner() { return !!(currentUser && currentUser.role === 'admin' && String(currentUser.email || '').toLowerCase() === 'oscarargumosa@gmail.com'); }
 
   /* Vuelve a pedir el avatar al servidor (el logo de la entidad pudo cambiar). */
   async function refreshAvatar() {

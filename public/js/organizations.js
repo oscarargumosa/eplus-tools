@@ -60,7 +60,7 @@ const Organizations = (() => {
         <div class="bg-primary text-white px-6 py-4 flex items-center justify-between">
           <div>
             <h2 class="font-headline text-lg font-bold">Nueva organización</h2>
-            <p class="text-white/70 text-xs">Busca en el registro Erasmus+ (ORS) para precargar datos.</p>
+            <p class="text-white/70 text-xs">Busca tu entidad en el registro Erasmus+ para precargar sus datos.</p>
           </div>
           <button class="org-new-close text-white/70 hover:text-white" aria-label="Cerrar">
             <span class="material-symbols-outlined">close</span>
@@ -111,12 +111,22 @@ const Organizations = (() => {
         hint.textContent = 'Escribe al menos 2 caracteres. Si tu entidad no sale, puedes crearla vacía y rellenar los datos a mano.';
         return;
       }
+      search(q, false);
+    }, 350));
+
+    // Primero busca en nuestra copia del registro; remote=true pregunta a la Comisión.
+    async function search(q, remote) {
       resultsBox.classList.remove('hidden');
-      resultsBox.innerHTML = '<div class="py-6 text-center text-on-surface-variant text-sm">Buscando en ORS…</div>';
+      resultsBox.innerHTML = `<div class="py-6 text-center text-on-surface-variant text-sm">${remote ? 'Buscando en el registro de la Comisión…' : 'Buscando…'}</div>`;
       hint.textContent = '';
       try {
-        const rows = await API.post('/organizations/ors-lookup', { q });
-        if (!rows || !rows.length) {
+        const { results: rows = [], source, ors_unavailable } = await API.post('/organizations/ors-lookup', { q, remote }) || {};
+        if (input.value.trim() !== q) return;  // ya se está buscando otra cosa
+        if (ors_unavailable) {
+          resultsBox.innerHTML = '<div class="py-6 px-4 text-center text-on-surface-variant text-sm">El registro de la Comisión Europea no responde ahora mismo. Prueba más tarde o crea la entidad vacía.</div>';
+          return;
+        }
+        if (!rows.length) {
           resultsBox.innerHTML = '<div class="py-6 text-center text-on-surface-variant text-sm">Sin resultados. Prueba con otro término o crea la entidad vacía.</div>';
           return;
         }
@@ -133,11 +143,14 @@ const Organizations = (() => {
               <div class="shrink-0 text-right text-[10px] font-mono leading-tight">
                 ${r.oid ? `<div class="text-primary">${esc(r.oid)}</div>` : ''}
                 ${r.pic ? `<div class="text-on-surface-variant">PIC ${esc(r.pic)}</div>` : ''}
-                ${r.validity_label ? `<div class="${r.validity_label === 'certified' ? 'text-primary font-bold' : 'text-on-surface-variant'} uppercase mt-0.5">${esc(r.validity_label)}</div>` : ''}
+                ${VALIDITY_TEXT[r.validity_label] ? `<div class="${r.validity_label === 'certified' ? 'text-primary font-bold' : 'text-on-surface-variant'} uppercase mt-0.5">${VALIDITY_TEXT[r.validity_label]}</div>` : ''}
               </div>
             </div>
           </button>
-        `).join('');
+        `).join('') + (source === 'local' ? `
+          <div class="px-4 py-3 text-xs text-on-surface-variant bg-surface-container-low/40">
+            ¿No está la tuya? Si se dio de alta hace poco, <button class="org-new-remote text-primary font-semibold hover:underline">búscala en el registro de la Comisión</button>.
+          </div>` : '');
         resultsBox.querySelectorAll('.org-new-pick').forEach(btn => {
           btn.addEventListener('click', async () => {
             const r = rows[parseInt(btn.dataset.idx, 10)];
@@ -145,11 +158,19 @@ const Organizations = (() => {
             close();
           });
         });
+        resultsBox.querySelector('.org-new-remote')?.addEventListener('click', () => search(q, true));
       } catch (e) {
-        resultsBox.innerHTML = `<div class="py-6 text-center text-error text-sm">Error consultando ORS: ${esc(e.message || 'Error')}</div>`;
+        resultsBox.innerHTML = `<div class="py-6 text-center text-error text-sm">No se ha podido buscar: ${esc(e.message || 'Error')}</div>`;
       }
-    }, 350));
+    }
   }
+
+  const VALIDITY_TEXT = {
+    certified: 'Certificada',
+    in_review: 'En revisión',
+    declared:  'Sin confirmar',
+    invalid:   'Anulada',
+  };
 
   function mapOrsToOrg(r) {
     return {

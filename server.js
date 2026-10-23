@@ -69,7 +69,8 @@ app.use(helmet({
       connectSrc:  ["'self'", "https://cdn.jsdelivr.net", "https://accounts.google.com",
                     "https://tiles.openfreemap.org", "https://*.openfreemap.org",
                     "https://*.basemaps.cartocdn.com"],
-      frameSrc:    ["https://accounts.google.com"],
+      // Canva: Admin › Presentaciones incrusta diseños (solo la cuenta dueña)
+      frameSrc:    ["https://accounts.google.com", "https://www.canva.com"],
       // Vídeos de la Academia (MP4 en el CDN de Bunny)
       mediaSrc:    ["'self'", "https://efs-media.b-cdn.net"],
       // MapLibre GL JS usa Web Workers desde un blob para decodificar vector tiles
@@ -199,6 +200,7 @@ app.use('/v1/entities', require('./node/src/modules/entities/routes'));
 app.use('/v1/research',    proyectos, require('./node/src/modules/research/routes'));
 app.use('/v1/movilidades', require('./node/src/modules/movilidades/routes'));
 app.use('/v1/estadisticas', require('./node/src/modules/estadisticas/routes'));
+app.use('/v1/presentaciones', require('./node/src/modules/presentaciones/routes'));
 app.use('/v1/convocatorias', require('./node/src/modules/convocatorias/routes'));
 app.use('/v1/vision',        require('./node/src/modules/vision/routes'));
 
