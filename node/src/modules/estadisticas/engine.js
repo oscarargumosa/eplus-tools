@@ -577,10 +577,12 @@ function baseEntidades(q) {
     const np = new Uint32Array(e.n), nc = new Uint32Array(e.n), din = new Float64Array(e.n), dinC = new Float64Array(e.n);
     forEach(F, i => {
       const g = Math.max(0, P.g[i]);
+      // La coordinadora es la entidad unificada de su organización (si se conoce).
+      const ce = P.co[i] >= 0 ? s.orgs[P.co[i]][3] : -1;
       for (let j = e.off[i]; j < e.off[i + 1]; j++) {
         const x = e.e[j];
         np[x]++; din[x] += g;
-        if (j === e.off[i] && P.co[i] >= 0) { nc[x]++; dinC[x] += g; }
+        if (x === ce) { nc[x]++; dinC[x] += g; }
       }
     }, { ignorarPais: true });
 
