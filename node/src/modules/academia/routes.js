@@ -9,10 +9,12 @@ const { requireAuth, requireArea } = require('../../middleware/auth');
 // «academia». La verificación pública de certificados sigue abierta.
 const gate = [requireAuth, requireArea('academia')];
 const m = require('./model');
+// Portada, pósters y dossieres viven en /media/ (nginx): enlaces firmados.
+const { signMediaUrls } = require('../../utils/media-links');
 
 const h = (fn) => async (req, res) => {
   try {
-    res.json({ ok: true, data: await fn(req) });
+    res.json({ ok: true, data: signMediaUrls(await fn(req)) });
   } catch (err) {
     if (err instanceof m.HttpError) {
       return res.status(err.status).json({ ok: false, error: { code: err.code, message: err.message, ...(err.extra || {}) } });

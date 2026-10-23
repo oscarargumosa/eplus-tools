@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Construye data/academia/ecosistema-erasmus.json a partir del curso 3 del Moodle
+Construye ecosistema-erasmus.json (en ACADEMIA_DATA_DIR, por defecto node/private/seed/academia) a partir del curso 3 del Moodle
 de EFS («El Ecosistema Erasmus+»).
 
 De dónde sale cada cosa:
@@ -25,7 +25,11 @@ import sys
 from html.parser import HTMLParser
 
 FUENTES = '/opt/moodle/ecosistema-erasmus'
-SALIDA = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'academia', 'ecosistema-erasmus.json')
+# Lleva las respuestas correctas de los tests: fuera del repo (es público).
+SALIDA = os.path.join(
+    os.environ.get('ACADEMIA_DATA_DIR')
+    or os.path.join(os.path.dirname(__file__), '..', '..', 'node', 'private', 'seed', 'academia'),
+    'ecosistema-erasmus.json')
 CORTO = 120
 
 

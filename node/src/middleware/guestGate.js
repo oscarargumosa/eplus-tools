@@ -9,8 +9,14 @@
    que se guía por la cookie-pista `studio_sesion` (Path=/), que ponen y
    quitan las rutas de auth junto a la de refresco. Es solo una pista
    de enrutado: la seguridad la da la API, que exige sesión en los datos.
-   Ficheros con extensión (css, js, imágenes, vídeo) pasan siempre.       */
+   Ficheros con extensión: solo se sirven los de las carpetas de
+   STATIC_DIRS (css, js, imágenes, tipografías…), con o sin sesión. Un
+   fichero suelto en public/ o en otra carpeta da 404 aunque haya sesión:
+   así no se publica nada por dejarlo ahí por descuido (pasó con un PDF
+   interno y prototipos, oct-2026). Una ruta con punto que no es fichero
+   sigue como página.                                                     */
 
+const fs   = require('fs');
 const path = require('path');
 
 const PUBLIC_DIR   = path.join(__dirname, '..', '..', '..', 'public');
@@ -23,6 +29,17 @@ const HINT_COOKIE = 'studio_sesion';
 const AUTH_PAGES = new Set(['/entrar', '/crear-cuenta', '/recuperar', '/verify-email', '/reset-password']);
 // Páginas estáticas abiertas a todo el mundo.
 const OPEN_PAGES = new Set(['/privacidad', '/privacidad.html', '/landing.html']);
+// Carpetas de public/ cuyos ficheros puede pedir cualquiera. Un fichero que
+// exista fuera de ellas (p. ej. /uploads/documents/…, /algo.pdf) da 404.
+const STATIC_DIRS = ['/css/', '/js/', '/img/', '/fonts/', '/data/', '/uploads/avatars/', '/uploads/logos/'];
+
+// ¿Existe como fichero en public/ (o public/web)? p ya viene normalizada.
+function isPublicFile(p) {
+  for (const base of [PUBLIC_DIR, path.join(PUBLIC_DIR, 'web')]) {
+    try { if (fs.statSync(path.join(base, p)).isFile()) return true; } catch { /* no existe */ }
+  }
+  return false;
+}
 
 function hasSessionHint(req) {
   return !!(req.cookies && req.cookies[HINT_COOKIE] === '1');
@@ -61,9 +78,13 @@ function guestGate(req, res, next) {
   if (p === '/v1' || p.startsWith('/v1/') || p === '/healthz') return next();
   if (p.startsWith('/academia/certificado/')) return next();
 
-  // Ficheros (assets): pasan. Las páginas no llevan extensión o son .html.
+  // Ficheros (assets): solo los de STATIC_DIRS. Las páginas no llevan
+  // extensión o son .html.
   const ext = path.posix.extname(p).toLowerCase();
-  if (ext && ext !== '.html' && ext !== '.htm') return next();
+  if (ext && ext !== '.html' && ext !== '.htm') {
+    if (STATIC_DIRS.some(d => p.startsWith(d))) return next();
+    if (isPublicFile(p)) return res.status(404).type('text/plain').send('Not found');
+  }
 
   const logged = hasSessionHint(req);
 

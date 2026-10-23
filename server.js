@@ -255,6 +255,10 @@ function checkConfig() {
   if (process.env.NODE_ENV === 'production' && (insecure.includes(refreshSecret) || refreshSecret === jwtSecret)) {
     console.error('[SECURITY] ⚠️⚠️  JWT_REFRESH_SECRET falta o es igual a JWT_SECRET. Configura un secreto propio (32+ bytes aleatorios). Al cambiarlo se cierran las sesiones abiertas.');
   }
+  // Sin él la API no firma los enlaces a /media/ y nginx los rechaza (utils/media-links.js).
+  if (process.env.NODE_ENV === 'production' && !process.env.MEDIA_LINK_SECRET) {
+    console.error('[CONFIG] ⚠️  MEDIA_LINK_SECRET no está configurado: los PDF y pósters de la academia no se verán.');
+  }
   if (!process.env.DB_HOST) {
     console.warn('[CONFIG] DB_HOST no definido, usando localhost por defecto');
   }

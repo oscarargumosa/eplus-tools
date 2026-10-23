@@ -54,3 +54,9 @@ public/academy-media/*.mp4
 data/call_vectors/
 data/call_structured/
 /data/call_vectors_local/
+
+# Datos privados: fuera del repo (es público). Viven en node/private/seed/
+# (volumen /data/eplus-tools/private) o donde digan ACADEMIA_DATA_DIR y
+# EVALUATOR_SEED_DIR. Respuestas de los tests y cartas de EACEA de terceros.
+data/academia/
+data/seed_evaluator_letters/
