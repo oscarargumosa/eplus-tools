@@ -25,20 +25,14 @@ exports.create = async (req, res, next) => {
   } catch (e) { next(e); }
 };
 
-/* GET /:id — ficha (optionalAuth). Privada → solo dueño. Pública → cualquiera. */
+/* GET /:id — la idea completa para editarla (solo el dueño). Los demás la ven
+   con GET /:id/view, que no devuelve los campos internos. */
 exports.getOne = async (req, res, next) => {
   try {
     const v = await model.getById(req.params.id);
-    if (!v) return fail(res, 'NOT_FOUND', 'Visión no encontrada.', 404);
-    const isOwner = !!(req.user && req.user.id === v.user_id);
-    if (v.visibility !== 'public' && !isOwner) {
-      return fail(res, 'NOT_FOUND', 'Visión no encontrada.', 404);
-    }
+    if (!v || !req.user || req.user.id !== v.user_id) return fail(res, 'NOT_FOUND', 'Idea no encontrada.', 404);
     const references = await model.listReferences(v.id);
-    const data = { vision: v, references, is_owner: isOwner };
-    // El interés solo lo ve el dueño; los invitados ni lo ven.
-    if (isOwner) data.interests = await model.listInterest(v.id, req.user.id);
-    res.json({ ok: true, data });
+    res.json({ ok: true, data: { vision: v, references, is_owner: true } });
   } catch (e) { next(e); }
 };
 
@@ -144,23 +138,89 @@ exports.projectFull = async (req, res, next) => {
   }
 };
 
-/* ── Comunidad (v2) ─────────────────────────────────────────────────── */
+/* ── Ideas: tablón y solicitudes para unirse ──────────────────────────
+   Solo con entidad («Mi entidad»); aceptar = avisar y compartir contactos.
+   Los correos nunca bloquean la respuesta. */
+const email = require('../../utils/email');
 
-/* POST /:id/interest — mostrar interés (no invitados) */
-exports.addInterest = async (req, res, next) => {
+/* GET /public — tablón de ideas publicadas (?q=&programme=&call_id=&closed=1) */
+exports.publicList = async (req, res, next) => {
   try {
-    const r = await model.addInterest(req.params.id, req.user.id, req.body || {});
-    if (r.error === 'NOT_AVAILABLE') return fail(res, 'NOT_AVAILABLE', 'Esta visión no está abierta a interés.', 404);
-    if (r.error === 'OWN_VISION') return fail(res, 'OWN_VISION', 'Es tu propia visión.');
-    res.json({ ok: true, data: r });
+    const { q, programme, call_id, closed } = req.query;
+    res.json({ ok: true, data: await model.listPublic(req.user.id, { q, programme, call_id, closed: closed === '1' }) });
   } catch (e) { next(e); }
 };
 
-/* GET /:id/interest — quién mostró interés (solo dueño) */
-exports.listInterest = async (req, res, next) => {
+/* GET /public/counts — ideas públicas por convocatoria */
+exports.publicCounts = async (req, res, next) => {
+  try { res.json({ ok: true, data: await model.countsByCall() }); } catch (e) { next(e); }
+};
+
+/* GET /:id/view — ficha de una idea (pública, o la mía con las solicitudes) */
+exports.view = async (req, res, next) => {
   try {
-    const rows = await model.listInterest(req.params.id, req.user.id);
-    if (rows == null) return fail(res, 'FORBIDDEN', 'Solo el dueño puede ver el interés.', 403);
-    res.json({ ok: true, data: rows });
+    const v = await model.getIdeaView(req.params.id, req.user.id);
+    if (!v) return fail(res, 'NOT_FOUND', 'Idea no encontrada.', 404);
+    res.json({ ok: true, data: v });
   } catch (e) { next(e); }
 };
+
+/* GET /requests/mine — ideas a las que he pedido unirme */
+exports.myRequests = async (req, res, next) => {
+  try { res.json({ ok: true, data: await model.myRequests(req.user.id) }); } catch (e) { next(e); }
+};
+
+/* GET /requests/pending-count — solicitudes pendientes en mis ideas */
+exports.pendingCount = async (req, res, next) => {
+  try { res.json({ ok: true, data: { count: await model.pendingForOwner(req.user.id) } }); } catch (e) { next(e); }
+};
+
+/* POST /:id/requests — { organization_id, role_offered?, message? } */
+exports.createRequest = async (req, res, next) => {
+  try {
+    const r = await model.createRequest(req.params.id, req.user.id, req.body || {});
+    if (r.error === 'NOT_AVAILABLE') return fail(res, 'NOT_AVAILABLE', 'Esta idea no está publicada.', 404);
+    if (r.error === 'OWN_IDEA') return fail(res, 'OWN_IDEA', 'Es tu propia idea.');
+    if (r.error === 'ORG_REQUIRED') return fail(res, 'ORG_REQUIRED', 'Vincula tu entidad para pedir unirte a una idea.');
+    if (r.error === 'ALREADY_ACCEPTED') return fail(res, 'ALREADY_ACCEPTED', 'Ya formas parte de esta idea.', 409);
+    if (r.error === 'REJECTED') return fail(res, 'REJECTED', 'Quien propone la idea ya respondió a tu solicitud.', 409);
+    // Aviso al dueño solo con una solicitud nueva (no al editar una pendiente).
+    if (!r.was_pending) {
+      email.sendIdeaRequestEmail({
+        to: r.idea.email, name: r.idea.name, lang: r.idea.ui_lang,
+        ideaId: r.idea.id, ideaTitle: r.idea.title || '—', orgName: r.org.organization_name,
+        requesterName: req.user.name || req.user.email,
+        roleOffered: req.body?.role_offered, message: req.body?.message,
+      }).catch(err => console.warn('[ideas] correo de solicitud no enviado:', err.message));
+    }
+    res.json({ ok: true, data: await model.getIdeaView(req.params.id, req.user.id) });
+  } catch (e) { next(e); }
+};
+
+/* POST /:id/requests/withdraw — retirar mi solicitud */
+exports.withdrawRequest = async (req, res, next) => {
+  try {
+    const done = await model.withdrawRequest(req.params.id, req.user.id);
+    if (!done) return fail(res, 'NOT_FOUND', 'No tienes una solicitud en esta idea.', 404);
+    res.json({ ok: true, data: await model.getIdeaView(req.params.id, req.user.id) });
+  } catch (e) { next(e); }
+};
+
+/* POST /:id/requests/:reqId/accept | /reject — { note? } (solo el dueño) */
+function decide(decision) {
+  return async (req, res, next) => {
+    try {
+      const r = await model.decideRequest(req.params.id, req.user.id, req.params.reqId, decision, req.body?.note);
+      if (r.error === 'NOT_FOUND') return fail(res, 'NOT_FOUND', 'Idea no encontrada.', 404);
+      if (r.error === 'NOT_PENDING') return fail(res, 'NOT_PENDING', 'Esta solicitud ya estaba respondida.', 409);
+      email.sendIdeaDecisionEmail({
+        to: r.request.user_email, name: r.request.user_name, lang: r.request.ui_lang,
+        ideaId: r.idea.id, ideaTitle: r.idea.title || '—', accepted: r.status === 'accepted',
+        ownerName: r.idea.name, ownerEmail: r.idea.email, note: req.body?.note,
+      }).catch(err => console.warn('[ideas] correo de respuesta no enviado:', err.message));
+      res.json({ ok: true, data: await model.getIdeaView(req.params.id, req.user.id) });
+    } catch (e) { next(e); }
+  };
+}
+exports.acceptRequest = decide('accept');
+exports.rejectRequest = decide('reject');

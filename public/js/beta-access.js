@@ -129,7 +129,7 @@ const BetaAccess = (() => {
         </div>
         <p class="beta-foot">${_t('Mientras tanto ya puedes usar {enlaces}.', { enlaces:
           `<a href="/#my-org">${_t('Entidades')}</a>, <a href="/#convocatorias">${_t('Convocatorias')}</a>, ` +
-          `<a href="/#movilidades">${_t('Movilidades')}</a>, <a href="/#eu-vision">EU Vision</a> ${_t('y')} ` +
+          `<a href="/#movilidades">${_t('Movilidades')}</a>, <a href="/#ideas">${_t('Ideas')}</a> ${_t('y')} ` +
           `<a href="/recursos/">${_t('Recursos')}</a>` })}</p>
       </div>`;
   }

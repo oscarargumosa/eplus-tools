@@ -67,7 +67,7 @@ tailwind.config = {
 <link rel="stylesheet" href="/css/main.css">
 
 <!-- ═══ TOP BAR común (la comparten la app, la academia y las páginas públicas) ═══ -->
-<link rel="stylesheet" href="/css/topbar.css">
+<link rel="stylesheet" href="/css/topbar.css?v=20261023k">
 <!-- Fase beta: pantalla «Solicitar acceso», etiquetas y avisos (js/beta-access.js) -->
 <link rel="stylesheet" href="/css/beta.css">
 <!-- Indicador global «Guardando… / Guardado» (js/save-status.js) -->
@@ -96,7 +96,7 @@ tailwind.config = {
         <li><a href="#convocatorias">Convocatorias</a></li>
         <li><a href="#estadisticas">Estadísticas</a></li>
         <li><a href="#movilidades">Movilidades</a></li>
-        <li><a href="#eu-vision">EU Vision</a></li>
+        <li><a href="#ideas">Ideas<span data-ideas-badge class="hidden efs-topbar__badge" translate="no"></span></a></li>
       </ul>
     </nav>
     <div class="efs-topbar__cta">
@@ -473,14 +473,27 @@ tailwind.config = {
         </div>
       </div>
 
-      <!-- ═══ WORKSPACE: EU VISION ═══ -->
+      <!-- ═══ WORKSPACE: IDEAS (antes EU Vision) — js/vision.js ═══ -->
       <div id="sidebar-group-vision" class="hidden">
-        <div class="mt-1 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">EU Vision</div>
-        <a href="#eu-vision"
+        <div class="mt-1 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">Ideas</div>
+        <a href="#ideas"
           class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
-          data-route="eu-vision">
-          <span class="material-symbols-outlined text-[20px]">explore</span>
-          Mis Visiones
+          data-route="ideas">
+          <span class="material-symbols-outlined text-[20px]">lightbulb</span>
+          Explorar ideas
+        </a>
+        <a href="#ideas/mias"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="ideas/mias">
+          <span class="material-symbols-outlined text-[20px]">edit_note</span>
+          <span class="flex-1">Mis ideas</span>
+          <span data-ideas-badge class="hidden min-w-[22px] h-[22px] px-1.5 rounded-full bg-secondary-fixed text-primary text-[11px] font-bold inline-flex items-center justify-center" translate="no"></span>
+        </a>
+        <a href="#ideas/solicitudes"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="ideas/solicitudes">
+          <span class="material-symbols-outlined text-[20px]">handshake</span>
+          Mis solicitudes
         </a>
         <div class="mt-3 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">Desde aquí</div>
         <a href="#convocatorias"
@@ -1893,7 +1906,7 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL MOVILIDADES (SALTO European Training Calendar) ══ -->
-      <section id="panel-eu-vision" class="panel" data-i18n>
+      <section id="panel-ideas" class="panel" data-i18n>
         <div id="vision-root"></div>
       </section>
 
@@ -3428,7 +3441,7 @@ tailwind.config = {
 <script src="/js/password-fields.js"></script>
 <script src="/js/auth.js?v=20261023i"></script>
 <script src="/js/components/phase-tabs.js"></script>
-<script src="/js/app.js?v=20261023i"></script>
+<script src="/js/app.js?v=20261023k"></script>
 <script src="/js/my-projects.js"></script>
 <script src="/js/my-evaluations.js"></script>
 <script src="/js/create.js"></script>
@@ -3448,8 +3461,8 @@ tailwind.config = {
 <script src="/js/research.js"></script>
 <script src="/js/movilidades-utils.js"></script>
 <script src="/js/movilidades.js?v=20260627t"></script>
-<script src="/js/convocatorias.js?v=20260711b"></script>
-<script src="/js/vision.js?v=20261016g"></script>
+<script src="/js/convocatorias.js?v=20261023k"></script>
+<script src="/js/vision.js?v=20261023k"></script>
 <script src="/js/intake-tasks.js?v=20261016g"></script>
 <script src="/js/intake-gantt.js?v=20261020a"></script>
 <script src="/js/developer.js?v=20261020a"></script>

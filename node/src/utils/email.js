@@ -288,7 +288,63 @@ async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note, lang
     text: `${title}: ${orgName}.${!ok && note ? `\n${tl(L, 'Motivo:')} ${note}` : ''}\n\n${url}` });
 }
 
+/* ── Ideas: solicitud para unirse (al dueño) ───────────────────────── */
+async function sendIdeaRequestEmail({ to, name, ideaId, ideaTitle, orgName, requesterName, roleOffered, message, lang }) {
+  const L = await langForEmail(to, lang);
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const url = `${appUrl()}/#ideas/ver/${encodeURIComponent(ideaId)}`;
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
+  const msg = String(message || '').trim();
+  const html = shellTemplate({
+    lang: L,
+    title: escHtml(tl(L, 'Una entidad quiere unirse a tu idea')),
+    intro: `${escHtml(hola)}:<br><br>
+      ${tl(L, '<b>{entidad}</b> ({persona}) pide unirse a tu idea <b>«{idea}»</b>.', {
+        entidad: escHtml(orgName), persona: escHtml(requesterName), idea: escHtml(ideaTitle) })}
+      ${roleOffered ? `<br><br>${tl(L, 'Lo que ofrece:')} <i>${escHtml(roleOffered)}</i>` : ''}
+      ${msg ? `<br><br>${tl(L, 'Su mensaje:')}<br><i>${escHtml(msg).replace(/\n/g, '<br>')}</i>` : ''}
+      <br><br>${tl(L, 'Acepta o rechaza la solicitud desde la ficha de la idea. Si la aceptas, os compartiremos el contacto.')}`,
+    buttonLabel: escHtml(tl(L, 'Ver la solicitud')),
+    buttonUrl: url,
+    footer: tl(L, 'Recibes este correo porque publicaste esta idea en EU Funding Studio. ¿Dudas? Escríbenos a {correo}.',
+      { correo: '<a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>' })
+  });
+  return sendEmail({ to, subject: tl(L, '{entidad} quiere unirse a «{idea}»', { entidad: orgName, idea: ideaTitle }), html,
+    text: `${hola}:\n\n${tl(L, '{entidad} pide unirse a tu idea «{idea}». Respóndele aquí: {url}', { entidad: orgName, idea: ideaTitle, url })}` });
+}
+
+/* ── Ideas: respuesta a la solicitud (al solicitante) ───────────────── */
+async function sendIdeaDecisionEmail({ to, name, ideaId, ideaTitle, accepted, ownerName, ownerEmail, note, lang }) {
+  const L = await langForEmail(to, lang);
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const url = `${appUrl()}/#ideas/ver/${encodeURIComponent(ideaId)}`;
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
+  const idea = `<b>«${escHtml(ideaTitle)}»</b>`;
+  const title = accepted ? tl(L, 'Te han aceptado en una idea') : tl(L, 'Respuesta a tu solicitud');
+  const intro = `${escHtml(hola)}:<br><br>` + (accepted
+    ? tl(L, 'Tu solicitud para unirte a {idea} ha sido aceptada.', { idea }) + '<br><br>' +
+      tl(L, 'Ponte en contacto con quien la propone: {persona}, {correo}.', {
+        persona: `<b>${escHtml(ownerName)}</b>`, correo: `<a href="mailto:${escHtml(ownerEmail)}">${escHtml(ownerEmail)}</a>` })
+    : tl(L, 'Tu solicitud para unirte a {idea} no ha sido aceptada esta vez.', { idea }))
+    + (note ? `<br><br>${tl(L, 'Su mensaje:')} <i>${escHtml(note)}</i>` : '')
+    + (accepted ? '' : '<br><br>' + tl(L, 'Hay más ideas buscando socios en Studio.'));
+  const html = shellTemplate({
+    lang: L, title, intro,
+    buttonLabel: escHtml(accepted ? tl(L, 'Ver la idea') : tl(L, 'Ver más ideas')),
+    buttonUrl: accepted ? url : `${appUrl()}/#ideas`,
+    footer: tl(L, 'Recibes este correo porque pediste unirte a esta idea en EU Funding Studio. ¿Dudas? Escríbenos a {correo}.',
+      { correo: '<a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>' })
+  });
+  const subject = accepted
+    ? tl(L, 'Te han aceptado en «{idea}»', { idea: ideaTitle })
+    : tl(L, 'Respuesta a tu solicitud para «{idea}»', { idea: ideaTitle });
+  return sendEmail({ to, subject, html,
+    text: `${title}: ${ideaTitle}.${accepted ? `\n${ownerName} <${ownerEmail}>` : ''}\n\n${url}` });
+}
+
 module.exports = {
+  sendIdeaRequestEmail,
+  sendIdeaDecisionEmail,
   sendOrgClaimReviewEmail,
   sendAccessRequestNotice,
   sendAreaGrantedEmail,

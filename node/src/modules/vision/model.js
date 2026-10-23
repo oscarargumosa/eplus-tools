@@ -22,10 +22,17 @@ function isComplete(v) {
 /* ── Create draft ───────────────────────────────────────────────────── */
 async function create(userId, { call_id, call_title, programme, call_deadline, entity_oid } = {}) {
   const id = genUUID();
+  // La idea nace con la primera entidad de «Mi entidad» (se cambia en Detalles).
+  // i18n-no-inicio (consultas SQL)
+  const [[org]] = await db.query(
+    `SELECT o.id, o.oid FROM user_organizations uo JOIN organizations o ON o.id = uo.organization_id
+      WHERE uo.user_id = ? ORDER BY uo.created_at LIMIT 1`, [userId]);
+  // i18n-no-fin
   await db.query(
-    `INSERT INTO visions (id, user_id, entity_oid, call_id, call_title, programme, call_deadline)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    [id, userId, s(entity_oid, 15), s(call_id, 190), s(call_title, 255), s(programme, 80), call_deadline || null]
+    `INSERT INTO visions (id, user_id, organization_id, entity_oid, call_id, call_title, programme, call_deadline)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    [id, userId, org ? org.id : null, s(entity_oid, 15) || (org && org.oid) || null,
+     s(call_id, 190), s(call_title, 255), s(programme, 80), call_deadline || null]
   );
   return getById(id);
 }
@@ -39,7 +46,9 @@ async function getById(id) {
 /* ── List my visions (owner) ────────────────────────────────────────── */
 async function listByUser(userId) {
   const [rows] = await db.query(
-    `SELECT v.*, (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id) AS interest_count
+    `SELECT v.*,
+            (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id AND i.status = 'pending')  AS pending_count,
+            (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id AND i.status = 'accepted') AS partners_count
        FROM visions v
       WHERE v.user_id = ?
       ORDER BY v.updated_at DESC`,
@@ -49,6 +58,7 @@ async function listByUser(userId) {
 }
 
 /* ── Update allowed fields (owner) ──────────────────────────────────── */
+const LOOKING_FOR_KEYS = ['coordinator', 'partners'];
 const EDITABLE = {
   title:            (v) => s(v, 255),
   problem:          (v) => (v == null ? null : String(v).slice(0, 8000)),
@@ -60,16 +70,26 @@ const EDITABLE = {
   duration_months:  (v) => (v == null ? null : Math.max(0, Math.min(600, parseInt(v, 10) || 0))),
   partner_types:    jsonOrNull,
   partner_countries:jsonOrNull,
+  looking_for:      (v) => jsonOrNull(Array.isArray(v) ? v.filter(x => LOOKING_FOR_KEYS.includes(x)) : []),
   themes:           jsonOrNull,
   own_role:         (v) => s(v, 255),
   differentiator:   (v) => (v == null ? null : String(v).slice(0, 4000)),
   entity_oid:       (v) => s(v, 15),
+  organization_id:  (v) => s(v, 36),
   current_step:     (v) => Math.max(1, Math.min(5, parseInt(v, 10) || 1)),
 };
 
 async function update(id, userId, patch = {}) {
   const current = await getById(id);
   if (!current || current.user_id !== userId) return null;
+
+  // Entidad del dueño: solo una de «Mi entidad»; su OID se guarda también.
+  if (Object.prototype.hasOwnProperty.call(patch, 'organization_id')) {
+    const org = patch.organization_id ? await userHasOrg(userId, String(patch.organization_id)) : null;
+    patch = { ...patch };
+    if (org) { patch.organization_id = org.id; patch.entity_oid = org.oid || null; }
+    else if (patch.organization_id) delete patch.organization_id;   // entidad ajena: se ignora
+  }
 
   const sets = [];
   const params = [];
@@ -96,7 +116,7 @@ async function setVisibility(id, userId, visibility) {
   const v = await getById(id);
   if (!v || v.user_id !== userId) return { error: 'NOT_FOUND' };
   if (visibility === 'public') {
-    if (!v.entity_oid) return { error: 'ENTITY_REQUIRED' };
+    if (!v.organization_id && !v.entity_oid) return { error: 'ENTITY_REQUIRED' };
     if (!isComplete(v)) return { error: 'INCOMPLETE' };
     await db.query(
       `UPDATE visions SET visibility = 'public', published_at = COALESCE(published_at, NOW()) WHERE id = ?`,
@@ -174,31 +194,201 @@ async function promote(id, userId, lang = 'es') {
   return { project_id: project.id };
 }
 
-/* ── Interest (community; UI en v2, backend listo) ──────────────────── */
-async function addInterest(visionId, userId, { entity_oid, message } = {}) {
-  const v = await getById(visionId);
-  if (!v || v.visibility !== 'public') return { error: 'NOT_AVAILABLE' };
-  if (v.user_id === userId) return { error: 'OWN_VISION' };
-  const iid = genUUID();
-  await db.query(
-    `INSERT INTO vision_interests (id, vision_id, user_id, entity_oid, message)
-     VALUES (?, ?, ?, ?, ?)
-     ON DUPLICATE KEY UPDATE entity_oid = VALUES(entity_oid), message = VALUES(message)`,
-    [iid, visionId, userId, s(entity_oid, 15), message ? String(message).slice(0, 2000) : null]
-  );
-  return { ok: true };
-}
+/* ── Ideas publicadas: tablón y solicitudes para unirse ────────────────
+   Decisión de Óscar (23-oct-2026): solo se solicita en nombre de una entidad
+   («Mi entidad»); aceptar = avisar y compartir contactos (el socio no entra
+   solo en el consorcio de Diseñar). vision_interests guarda las solicitudes. */
 
-async function listInterest(visionId, userId) {
-  const v = await getById(visionId);
-  if (!v || v.user_id !== userId) return null; // solo el dueño ve quién mostró interés
+// i18n-no-inicio (consultas SQL; los mensajes visibles están en el controlador)
+// Entidad del dueño: la elegida en «Mi entidad» o, en visiones antiguas, la del
+// OID (ficha reclamada o directorio). Subconsultas: un OID puede repetirse.
+const OWNER_ORG_SQL = `
+  COALESCE((SELECT o.organization_name FROM organizations o WHERE o.id = v.organization_id),
+           (SELECT o.organization_name FROM organizations o WHERE o.oid = v.entity_oid ORDER BY o.claimed_by_user_id IS NULL, o.created_at LIMIT 1),
+           (SELECT e.legal_name FROM entities e WHERE e.oid = v.entity_oid LIMIT 1)) AS org_name,
+  COALESCE((SELECT o.country FROM organizations o WHERE o.id = v.organization_id),
+           (SELECT o.country FROM organizations o WHERE o.oid = v.entity_oid ORDER BY o.claimed_by_user_id IS NULL, o.created_at LIMIT 1),
+           (SELECT e.country_code FROM entities e WHERE e.oid = v.entity_oid LIMIT 1)) AS org_country,
+  COALESCE((SELECT o.logo_url FROM organizations o WHERE o.id = v.organization_id),
+           (SELECT o.logo_url FROM organizations o WHERE o.oid = v.entity_oid ORDER BY o.claimed_by_user_id IS NULL, o.created_at LIMIT 1)) AS org_logo`;
+
+const CARD_SQL = `
+  v.id, v.title, v.vision_text, v.programme, v.call_id, v.call_title, v.call_deadline,
+  v.themes, v.partner_types, v.partner_countries, v.looking_for, v.budget_option_eur,
+  v.wp_count, v.duration_months, v.published_at, (v.user_id = ?) AS is_owner,
+  ${OWNER_ORG_SQL},
+  (SELECT COUNT(*) FROM vision_interests i WHERE i.vision_id = v.id AND i.status = 'accepted') AS partners_count,
+  (SELECT i.status FROM vision_interests i WHERE i.vision_id = v.id AND i.user_id = ?) AS my_status`;
+
+/* Tablón: ideas públicas. Por defecto solo las de convocatorias abiertas. */
+async function listPublic(userId, { q, programme, call_id, closed } = {}) {
+  const where = [`v.visibility = 'public'`];
+  const params = [userId, userId];
+  if (!closed) where.push('(v.call_deadline IS NULL OR v.call_deadline >= CURDATE())');
+  if (call_id) { where.push('v.call_id = ?'); params.push(s(call_id, 190)); }
+  if (programme) { where.push('v.programme = ?'); params.push(s(programme, 80)); }
+  const needle = String(q || '').trim().slice(0, 100);
+  if (needle) {
+    const like = '%' + needle.replace(/[\\%_]/g, c => '\\' + c) + '%';
+    where.push('(v.title LIKE ? OR v.vision_text LIKE ? OR v.call_title LIKE ? OR v.programme LIKE ?)');
+    params.push(like, like, like, like);
+  }
   const [rows] = await db.query(
-    `SELECT id, user_id, entity_oid, message, created_at
-       FROM vision_interests WHERE vision_id = ? ORDER BY created_at DESC`,
-    [visionId]
-  );
+    `SELECT ${CARD_SQL} FROM visions v WHERE ${where.join(' AND ')}
+      ORDER BY v.published_at DESC LIMIT 200`, params);
   return rows;
 }
+
+/* Cuántas ideas públicas hay por convocatoria (tarjetas de Convocatorias). */
+async function countsByCall() {
+  const [rows] = await db.query(
+    `SELECT call_id, COUNT(*) AS n FROM visions
+      WHERE visibility = 'public' AND call_id IS NOT NULL GROUP BY call_id`);
+  const out = {};
+  rows.forEach(r => { out[r.call_id] = Number(r.n); });
+  return out;
+}
+
+// Entidad de una solicitud (organizations.id): nombre, país y logo.
+const REQ_ORG_SQL = `
+  o.organization_name AS org_name, o.country AS org_country, o.city AS org_city,
+  o.logo_url AS org_logo, o.oid AS org_oid, o.website AS org_website`;
+
+/* Ficha pública de una idea (o la del dueño, con sus solicitudes). */
+async function getIdeaView(id, userId) {
+  const [[row]] = await db.query(`SELECT ${CARD_SQL}, v.visibility, v.status, v.user_id FROM visions v WHERE v.id = ?`, [userId, userId, id]);
+  if (!row) return null;
+  const isOwner = row.user_id === userId;
+  if (row.visibility !== 'public' && !isOwner) return null;
+  delete row.user_id;
+
+  const [partners] = await db.query(
+    `SELECT i.id, i.role_offered, ${REQ_ORG_SQL}
+       FROM vision_interests i LEFT JOIN organizations o ON o.id = i.organization_id
+      WHERE i.vision_id = ? AND i.status = 'accepted' ORDER BY i.decided_at`, [id]);
+
+  const [[mine]] = await db.query(
+    `SELECT i.id, i.status, i.organization_id, i.role_offered, i.message, i.decision_note, i.created_at, i.decided_at
+       FROM vision_interests i WHERE i.vision_id = ? AND i.user_id = ?`, [id, userId]);
+  const view = { idea: row, partners, my_request: mine || null, is_owner: isOwner };
+
+  // Si me aceptaron, veo el contacto del dueño.
+  if (mine && mine.status === 'accepted') {
+    const [[owner]] = await db.query(
+      `SELECT u.name, u.email FROM visions v JOIN users u ON u.id = v.user_id WHERE v.id = ?`, [id]);
+    view.owner_contact = owner || null;
+  }
+  // El dueño ve las solicitudes; el email del solicitante, solo una vez aceptada.
+  if (isOwner) {
+    const [reqs] = await db.query(
+      `SELECT i.id, i.status, i.role_offered, i.message, i.decision_note, i.created_at, i.decided_at,
+              u.name AS user_name, IF(i.status = 'accepted', u.email, NULL) AS user_email, ${REQ_ORG_SQL}
+         FROM vision_interests i
+         JOIN users u ON u.id = i.user_id
+         LEFT JOIN organizations o ON o.id = i.organization_id
+        WHERE i.vision_id = ? AND i.status <> 'withdrawn'
+        ORDER BY FIELD(i.status, 'pending', 'accepted', 'rejected'), i.created_at DESC`, [id]);
+    view.requests = reqs;
+  }
+  return view;
+}
+
+async function userHasOrg(userId, orgId) {
+  const [[r]] = await db.query(
+    `SELECT o.id, o.organization_name, o.oid FROM user_organizations uo
+       JOIN organizations o ON o.id = uo.organization_id
+      WHERE uo.user_id = ? AND uo.organization_id = ? LIMIT 1`, [userId, orgId]);
+  return r || null;
+}
+
+async function ownerOf(visionId) {
+  const [[r]] = await db.query(
+    `SELECT v.id, v.title, v.visibility, v.user_id, u.name, u.email, u.ui_lang
+       FROM visions v JOIN users u ON u.id = v.user_id WHERE v.id = ?`, [visionId]);
+  return r || null;
+}
+
+/* Pedir unirse. Devuelve { request, idea, owner, org } para avisar al dueño. */
+async function createRequest(visionId, userId, { organization_id, role_offered, message } = {}) {
+  const idea = await ownerOf(visionId);
+  if (!idea || idea.visibility !== 'public') return { error: 'NOT_AVAILABLE' };
+  if (idea.user_id === userId) return { error: 'OWN_IDEA' };
+  const org = organization_id ? await userHasOrg(userId, String(organization_id)) : null;
+  if (!org) return { error: 'ORG_REQUIRED' };
+
+  const [[prev]] = await db.query(
+    `SELECT id, status FROM vision_interests WHERE vision_id = ? AND user_id = ?`, [visionId, userId]);
+  if (prev && prev.status === 'accepted') return { error: 'ALREADY_ACCEPTED' };
+  if (prev && prev.status === 'rejected') return { error: 'REJECTED' };
+  const fields = [org.id, org.oid || null, s(role_offered, 255), message ? String(message).slice(0, 2000) : null];
+  let reqId;
+  if (prev) {
+    reqId = prev.id;
+    await db.query(
+      `UPDATE vision_interests SET organization_id = ?, entity_oid = ?, role_offered = ?, message = ?,
+              status = 'pending', decided_at = NULL, decided_by = NULL, decision_note = NULL
+        WHERE id = ?`, [...fields, reqId]);
+  } else {
+    reqId = genUUID();
+    await db.query(
+      `INSERT INTO vision_interests (id, vision_id, user_id, organization_id, entity_oid, role_offered, message, status)
+       VALUES (?, ?, ?, ?, ?, ?, ?, 'pending')`, [reqId, visionId, userId, ...fields]);
+  }
+  return { request_id: reqId, was_pending: !!(prev && prev.status === 'pending'), idea, org };
+}
+
+/* Retirar mi solicitud (pendiente o aceptada). */
+async function withdrawRequest(visionId, userId) {
+  const [r] = await db.query(
+    `UPDATE vision_interests SET status = 'withdrawn'
+      WHERE vision_id = ? AND user_id = ? AND status IN ('pending', 'accepted')`, [visionId, userId]);
+  return r.affectedRows > 0;
+}
+
+/* El dueño acepta o rechaza una solicitud pendiente. */
+async function decideRequest(visionId, ownerId, requestId, decision, note) {
+  const idea = await ownerOf(visionId);
+  if (!idea || idea.user_id !== ownerId) return { error: 'NOT_FOUND' };
+  const status = decision === 'accept' ? 'accepted' : 'rejected';
+  const [upd] = await db.query(
+    `UPDATE vision_interests SET status = ?, decided_at = NOW(), decided_by = ?, decision_note = ?
+      WHERE id = ? AND vision_id = ? AND status = 'pending'`,
+    [status, ownerId, note ? String(note).slice(0, 1000) : null, requestId, visionId]);
+  if (!upd.affectedRows) return { error: 'NOT_PENDING' };
+  const [[req]] = await db.query(
+    `SELECT i.id, i.status, u.name AS user_name, u.email AS user_email, u.ui_lang, o.organization_name AS org_name
+       FROM vision_interests i JOIN users u ON u.id = i.user_id
+       LEFT JOIN organizations o ON o.id = i.organization_id WHERE i.id = ?`, [requestId]);
+  return { status, idea, request: req };
+}
+
+/* Mis solicitudes (las ideas a las que he pedido unirme). */
+async function myRequests(userId) {
+  const [rows] = await db.query(
+    `SELECT i.id AS request_id, i.status, i.role_offered, i.message, i.decision_note, i.created_at, i.decided_at,
+            o.organization_name AS my_org_name,
+            v.id, v.title, v.programme, v.call_title, v.call_deadline, v.visibility,
+            ${OWNER_ORG_SQL},
+            IF(i.status = 'accepted', u.name, NULL)  AS owner_name,
+            IF(i.status = 'accepted', u.email, NULL) AS owner_email
+       FROM vision_interests i
+       JOIN visions v ON v.id = i.vision_id
+       JOIN users u ON u.id = v.user_id
+       LEFT JOIN organizations o ON o.id = i.organization_id
+      WHERE i.user_id = ? AND i.status <> 'withdrawn'
+      ORDER BY i.updated_at DESC`, [userId]);
+  return rows;
+}
+
+/* Solicitudes pendientes en mis ideas (contador de la pestaña Ideas). */
+async function pendingForOwner(userId) {
+  const [[r]] = await db.query(
+    `SELECT COUNT(*) AS n FROM vision_interests i JOIN visions v ON v.id = i.vision_id
+      WHERE v.user_id = ? AND i.status = 'pending'`, [userId]);
+  return Number(r.n) || 0;
+}
+
+// i18n-no-fin
 
 /* ── Redacción asistida por IA (Claude de suscripción, no API) ────────
    Combina: lo que pide la convocatoria + la idea en bruto del usuario +
@@ -292,6 +482,7 @@ async function generateDraft(id, userId, callContext = {}, lang = 'es') {
 module.exports = {
   create, getById, listByUser, update, setVisibility,
   listReferences, addReference, removeReference,
-  promote, addInterest, listInterest,
+  promote, listPublic, countsByCall, getIdeaView, userHasOrg,
+  createRequest, withdrawRequest, decideRequest, myRequests, pendingForOwner,
   generateDraft,
 };

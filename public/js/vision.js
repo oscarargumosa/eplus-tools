@@ -1,12 +1,21 @@
 /* ═══════════════════════════════════════════════════════════════
-   EU Vision (TASK-012 · F2) — asistente idea → ficha de visión
-   Vive en #vision-root. Vistas internas: list · picker · wizard · brief.
+   Ideas (antes EU Vision, TASK-012) — «Da forma a tu visión».
+   Vive en #vision-root. Rutas: #ideas (explorar) · #ideas/mias ·
+   #ideas/solicitudes · #ideas/nueva · #ideas/ver/<id>.
+   Las entidades publican ideas sobre una convocatoria y otras entidades
+   piden unirse; quien la propone acepta o rechaza (se comparten los
+   contactos, el socio no entra solo en Diseñar).
    Backend: /v1/vision/* · contexto de call: /v1/convocatorias/:id
    ═══════════════════════════════════════════════════════════════ */
 
 const Vision = (() => {
-  let view = 'list';      // list | picker | wizard | brief
-  let visions = [];       // mis visiones
+  let view = 'list';      // explore | list | requests | picker | wizard | idea
+  let visions = [];       // mis ideas
+  let ideas = [];         // tablón (ideas públicas)
+  let filters = { q: '', programme: '', callId: '' };
+  let IV = null;          // ficha abierta (GET /vision/:id/view)
+  let myOrgs = null;      // «Mi entidad» (cache por visita)
+  let lastInit = { sub: null, at: 0 };
   let V = null;           // visión activa
   let refs = [];          // referencias de la visión activa
   let call = null;        // contexto de la convocatoria (solo lectura)
@@ -72,19 +81,57 @@ const Vision = (() => {
   }
 
   /* ── Init ─────────────────────────────────────────────────────── */
-  async function init() {
+  async function init(sub) {
     injectStyles();
-    // Entrada directa desde Convocatorias: arranca una visión sobre esa call.
-    if (pendingCallId) { const id = pendingCallId; pendingCallId = null; await pickCall(id); return; }
-    view = 'list';
-    await loadList();
+    sub = sub || '';
+    // Entrada directa desde Convocatorias: arranca una idea sobre esa call.
+    if (pendingCallId) { const id = pendingCallId; pendingCallId = null; markNav('mias'); await pickCall(id); return; }
+    // El cambio de #hash vuelve a llamar a init con la misma subruta: una vez basta.
+    if (lastInit.sub === sub && Date.now() - lastInit.at < 500) return;
+    lastInit = { sub, at: Date.now() };
+    markNav(sub);
+    refreshBadge();
+    const m = /^ver\/(.+)$/.exec(sub);
+    if (m) return openIdea(decodeURIComponent(m[1]));
+    if (sub === 'mias') return loadList();
+    if (sub === 'solicitudes') return loadRequests();
+    if (sub === 'nueva') return renderPicker();
+    return loadExplore();
   }
 
-  // Llamado desde Convocatorias ("Empezar mi visión"): navega a EU Vision con
+  const go = (sub) => App.navigate(sub ? 'ideas/' + sub : 'ideas');
+
+  // Llamado desde Convocatorias («Proponer una idea»): navega a Ideas con
   // la convocatoria precargada y arranca el asistente.
   function startForCall(callId) {
     pendingCallId = callId;
-    App.navigate('eu-vision');
+    App.navigate('ideas/mias');
+  }
+  // Desde Convocatorias: el tablón filtrado por esa convocatoria.
+  function showForCall(callId) {
+    filters = { q: '', programme: '', callId: String(callId || '') };
+    lastInit = { sub: null, at: 0 };
+    App.navigate('ideas');
+  }
+
+  // Menú lateral: resalta la subsección (app.js solo conoce la ruta «ideas»).
+  function markNav(sub) {
+    const key = sub.startsWith('ver/') ? '' : (sub === 'nueva' ? 'mias' : sub);
+    document.querySelectorAll('#sidebar-group-vision .nav-link[data-route^="ideas"]').forEach(a => {
+      const k = a.dataset.route.replace(/^ideas\/?/, '');
+      a.classList.toggle('active', k === key);
+    });
+  }
+
+  // Contador de solicitudes pendientes en mis ideas (menú superior y lateral).
+  async function refreshBadge() {
+    let n = 0;
+    try { n = (await API.get('/vision/requests/pending-count')).count || 0; } catch (e) { return; }
+    document.querySelectorAll('[data-ideas-badge]').forEach(el => {
+      el.textContent = n > 99 ? '99+' : String(n);
+      el.classList.toggle('hidden', !n);
+      el.setAttribute('aria-label', n === 1 ? _t('1 solicitud pendiente') : _t('{n} solicitudes pendientes', { n }));
+    });
   }
 
   async function loadList() {
@@ -94,45 +141,364 @@ const Vision = (() => {
     renderList();
   }
 
-  /* ── VIEW: Mis Visiones ───────────────────────────────────────── */
+  /* ── Piezas comunes ───────────────────────────────────────────── */
+  const LOOKING = () => ({ coordinator: _t('Coordinador'), partners: _t('Socios') });
+  const initials = (n) => String(n || '?').trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+  // País: código ISO (ES) o nombre ya escrito («Spain»).
+  const country = (c) => !c ? '' : (/^[A-Za-z]{2}$/.test(c) ? cName(c) : c);
+  const orgBadge = (name, logo, cty, big) => `
+    <div class="vz-org ${big ? 'vz-org-big' : ''}">
+      ${logo ? `<img src="${esc(logo)}" alt="" class="vz-org-logo">` : `<span class="vz-org-logo vz-org-ini" aria-hidden="true">${esc(initials(name))}</span>`}
+      <div class="vz-org-txt"><div class="vz-org-name">${esc(name || _t('Entidad sin vincular'))}</div>${cty ? `<div class="vz-muted vz-sm">${esc(country(cty))}</div>` : ''}</div>
+    </div>`;
+  const lookingFor = (lf) => arr(lf).map(k => LOOKING()[k]).filter(Boolean).join(', ');
+  const deadlineTxt = (d) => {
+    if (!d) return '';
+    const n = daysLeft(d);
+    return _t('hasta el {fecha}', { fecha: fmtDate(d) }) + (n != null ? ' · ' + (n === 1 ? _t('queda 1 día') : _t('quedan {n} días', { n })) : ' · ' + _t('cerrada'));
+  };
+  const STATUS = () => ({
+    pending:  { t: _t('Solicitud enviada'), c: 'vz-pill-draft' },
+    accepted: { t: _t('Formas parte'),      c: 'vz-pill-ok' },
+    rejected: { t: _t('No aceptada'),       c: 'vz-pill-priv' },
+  });
+
+  // Cabecera común con pestañas (en móvil el menú lateral queda escondido).
+  function head(active) {
+    const tab = (k, label) => `<a href="#${k ? 'ideas/' + k : 'ideas'}" class="vz-tab ${active === k ? 'vz-tab-on' : ''}">${label}</a>`;
+    return `
+      <div class="vz-head">
+        <div>
+          <div class="vz-eyebrow">${_t('Ideas')}</div>
+          <h1 class="vz-h1">${_t('Da forma a tu visión')}</h1>
+          <p class="vz-lead">${_t('Publica tu idea de proyecto sobre una convocatoria y encuentra socios, o pide unirte a la idea de otra entidad.')}</p>
+        </div>
+        <button class="vz-btn vz-btn-primary" data-act="new">+ ${_t('Nueva idea')}</button>
+      </div>
+      <nav class="vz-tabs" aria-label="${_t('Secciones de Ideas')}">
+        ${tab('', _t('Explorar ideas'))}${tab('mias', _t('Mis ideas'))}${tab('solicitudes', _t('Mis solicitudes'))}
+      </nav>`;
+  }
+
+  /* ── VIEW: Explorar (tablón de ideas publicadas) ─────────────── */
+  async function loadExplore() {
+    view = 'explore';
+    $root().innerHTML = head('') + `<div class="vz-muted vz-sm" style="padding:30px 0;text-align:center">${_t('Cargando…')}</div>`;
+    try {
+      const qs = new URLSearchParams();
+      if (filters.callId) qs.set('call_id', filters.callId);
+      ideas = await API.get('/vision/public' + (qs.toString() ? '?' + qs : ''));
+    } catch (e) { ideas = []; }
+    renderExplore();
+  }
+
+  function ideaCard(v) {
+    const st = v.my_status && STATUS()[v.my_status];
+    const themes = arr(v.themes);
+    const lf = lookingFor(v.looking_for);
+    return `
+      <a class="vz-card vz-idea-card" href="#ideas/ver/${encodeURIComponent(v.id)}">
+        <div class="vz-row-between">
+          ${orgBadge(v.org_name, v.org_logo, v.org_country)}
+          ${Number(v.is_owner) ? `<span class="vz-pill vz-pill-ok">${_t('Tu idea')}</span>` : st ? `<span class="vz-pill ${st.c}">${st.t}</span>` : ''}
+        </div>
+        <h3>${esc(v.title || _t('Idea sin título'))}</h3>
+        ${lf ? `<div class="vz-sm"><span class="vz-muted">${_t('Busca')}</span> <b>${esc(lf)}</b></div>` : ''}
+        <p class="vz-excerpt">${esc(String(v.vision_text || '').replace(/\s+/g, ' ').slice(0, 220))}</p>
+        ${themes.length ? `<div class="vz-chips" style="margin-top:0">${themes.slice(0, 3).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}${themes.length > 3 ? `<span class="vz-rc-tag">+${themes.length - 3}</span>` : ''}</div>` : ''}
+        <div class="vz-card-foot">
+          <span class="vz-callchip">🎯 <b>${esc(v.programme || _t('Convocatoria'))}</b> · ${esc(v.call_title || v.call_id || '')}</span>
+          <div class="vz-row-between vz-sm vz-muted">
+            <span>${esc(deadlineTxt(v.call_deadline))}</span>
+            <span title="${_t('Entidades que ya forman parte')}">👥 ${Number(v.partners_count) || 0}</span>
+          </div>
+        </div>
+      </a>`;
+  }
+
+  function renderExplore() {
+    const progs = [...new Set(ideas.map(v => v.programme).filter(Boolean))].sort();
+    const q = filters.q.toLowerCase();
+    const list = ideas.filter(v => (!filters.programme || v.programme === filters.programme)
+      && (!q || [v.title, v.vision_text, v.call_title, v.org_name, ...arr(v.themes)].join(' ').toLowerCase().includes(q)));
+    const callName = filters.callId ? ((ideas[0] && ideas[0].call_title) || filters.callId) : '';
+    $root().innerHTML = head('') + `
+      ${filters.callId ? `<div class="vz-note vz-sm" style="margin-bottom:14px;align-items:center">
+          <span style="flex:1">${_t('Ideas para la convocatoria {convocatoria}', { convocatoria: `<b>${esc(callName)}</b>` })}</span>
+          <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="clear-call">${_t('Ver todas')}</button></div>` : ''}
+      <div class="vz-call-filters">
+        <input class="vz-input" id="vz-ex-q" type="search" placeholder="${_t('Busca por tema, entidad o convocatoria…')}" value="${esc(filters.q)}" autocomplete="off">
+        ${progs.length > 1 ? `<select class="vz-input" id="vz-ex-prog"><option value="">${_t('Todos los programas')}</option>${progs.map(p => `<option ${p === filters.programme ? 'selected' : ''}>${esc(p)}</option>`).join('')}</select>` : ''}
+      </div>
+      ${list.length ? `<div class="vz-grid">${list.map(ideaCard).join('')}</div>`
+        : `<div class="vz-empty">
+            <div class="vz-plus">💡</div>
+            <h3>${ideas.length ? _t('Ninguna idea coincide con tu búsqueda') : _t('Todavía no hay ideas publicadas')}</h3>
+            <p class="vz-muted vz-sm">${_t('Sé la primera entidad en proponer una: elige una convocatoria, da forma a tu visión y publícala para encontrar socios.')}</p>
+            <button class="vz-btn vz-btn-primary" data-act="new">+ ${_t('Nueva idea')}</button>
+          </div>`}`;
+  }
+
+  /* ── VIEW: Mis ideas ──────────────────────────────────────────── */
   function renderList() {
     view = 'list';
     const cards = visions.map(v => {
       const pub = v.visibility === 'public';
       const complete = v.status === 'complete';
+      const pend = Number(v.pending_count) || 0, part = Number(v.partners_count) || 0;
       return `
         <div class="vz-card" data-act="open" data-id="${v.id}">
           <div class="vz-row-between">
             <span class="vz-pill ${complete ? 'vz-pill-ok' : 'vz-pill-draft'}">${complete ? '✓ ' + _t('Completa') : '● ' + _t('Borrador')}</span>
-            <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 ' + _t('Pública') : '🔒 ' + _t('Privada')}</span>
+            <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 ' + _t('Publicada') : '🔒 ' + _t('Privada')}</span>
           </div>
-          <h3>${esc(v.title || _t('Visión sin título'))}</h3>
+          <h3>${esc(v.title || _t('Idea sin título'))}</h3>
           <span class="vz-callchip">🎯 <b>${esc(v.programme || _t('Convocatoria'))}</b> · ${esc(v.call_title || v.call_id)}</span>
           <div class="vz-muted vz-sm">${complete
             ? (pub
-              ? (Number(v.interest_count) === 1 ? _t('Publicada · 1 interesado') : _t('Publicada · {n} interesados', { n: v.interest_count || 0 }))
+              ? ([pend ? `<b class="vz-new">${pend === 1 ? _t('1 solicitud nueva') : _t('{n} solicitudes nuevas', { n: pend })}</b>` : '',
+                 part ? (part === 1 ? _t('1 entidad se ha unido') : _t('{n} entidades se han unido', { n: part })) : ''].filter(Boolean).join(' · ')
+                 || _t('Publicada, sin solicitudes todavía'))
               : _t('Lista para publicar'))
             : _t('Paso {n} de {total}', { n: v.current_step || 1, total: 5 })}</div>
         </div>`;
     }).join('');
 
-    $root().innerHTML = `
-      <div class="vz-head">
-        <div>
-          <div class="vz-eyebrow">${_t('Paso 0 · antes de diseñar')}</div>
-          <h1 class="vz-h1">${_t('Mis Visiones')}</h1>
-          <p class="vz-lead">${_t('Da forma a tu idea en 5–10 minutos: el reto, a quién buscas y por qué importa a Europa. Compártela con la comunidad y llévala a Diseñar.')}</p>
-        </div>
-        <button class="vz-btn vz-btn-primary" data-act="new">+ ${_t('Nueva visión')}</button>
-      </div>
+    $root().innerHTML = head('mias') + `
       <div class="vz-grid">
         <div class="vz-card vz-card-new" data-act="new">
           <div class="vz-plus">+</div>
-          <h3>${_t('Empezar una visión')}</h3>
+          <h3>${_t('Empezar una idea')}</h3>
           <div class="vz-muted vz-sm">${_t('Elige una convocatoria y te guiamos')}</div>
         </div>
         ${cards}
       </div>`;
+  }
+
+  /* ── VIEW: Mis solicitudes ────────────────────────────────────── */
+  async function loadRequests() {
+    view = 'requests';
+    let rows = [];
+    try { rows = await API.get('/vision/requests/mine'); } catch (e) { rows = []; }
+    const card = (r) => {
+      const st = STATUS()[r.status] || { t: r.status, c: 'vz-pill-priv' };
+      return `
+        <a class="vz-card" href="#ideas/ver/${encodeURIComponent(r.id)}">
+          <div class="vz-row-between">${orgBadge(r.org_name, r.org_logo, r.org_country)}<span class="vz-pill ${st.c}">${st.t}</span></div>
+          <h3>${esc(r.title || _t('Idea sin título'))}</h3>
+          <div class="vz-sm vz-muted">${_t('En nombre de {entidad}', { entidad: `<b>${esc(r.my_org_name || '—')}</b>` })}</div>
+          ${r.status === 'accepted' && r.owner_email ? `<div class="vz-contact vz-sm">✉️ ${_t('Contacto: {persona}', { persona: esc(r.owner_name || '') })} · <span translate="no">${esc(r.owner_email)}</span></div>` : ''}
+          ${r.decision_note ? `<div class="vz-sm"><span class="vz-muted">${_t('Su respuesta:')}</span> <i>${esc(r.decision_note)}</i></div>` : ''}
+          <span class="vz-callchip">🎯 <b>${esc(r.programme || _t('Convocatoria'))}</b> · ${esc(r.call_title || '')}</span>
+        </a>`;
+    };
+    $root().innerHTML = head('solicitudes') + (rows.length
+      ? `<div class="vz-grid">${rows.map(card).join('')}</div>`
+      : `<div class="vz-empty">
+          <div class="vz-plus">🤝</div>
+          <h3>${_t('Aún no has pedido unirte a ninguna idea')}</h3>
+          <p class="vz-muted vz-sm">${_t('Explora las ideas de otras entidades y pide unirte a las que encajen con la tuya.')}</p>
+          <a class="vz-btn vz-btn-primary" href="#ideas">${_t('Explorar ideas')}</a>
+        </div>`);
+  }
+
+  /* ── VIEW: ficha de una idea (como en eucalls) ────────────────── */
+  async function openIdea(id) {
+    view = 'idea';
+    try { IV = await API.get('/vision/' + encodeURIComponent(id) + '/view'); }
+    catch (e) {
+      $root().innerHTML = head('') + `<div class="vz-empty"><h3>${_t('Esta idea no existe o ya no está publicada')}</h3><a class="vz-btn vz-btn-ghost" href="#ideas">${_t('Volver a Ideas')}</a></div>`;
+      return;
+    }
+    renderIdea();
+  }
+
+  function renderIdea() {
+    const v = IV.idea, own = !!IV.is_owner, pub = v.visibility === 'public';
+    const themes = arr(v.themes), lf = lookingFor(v.looking_for);
+    const partners = IV.partners || [];
+    const seek = (k, val) => val ? `<div class="vz-seek"><div class="vz-seek-k">${k}</div><div class="vz-seek-v">${val}</div></div>` : '';
+    const n = Number(v.partners_count) || 0;
+    $root().innerHTML = `
+      <div class="vz-comp-head">
+        <a class="vz-btn vz-btn-ghost vz-btn-sm" href="#${own ? 'ideas/mias' : 'ideas'}">← ${own ? _t('Mis ideas') : _t('Explorar ideas')}</a>
+        ${own ? `<span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 ' + _t('Publicada') : '🔒 ' + _t('Privada · solo tú la ves')}</span>` : ''}
+      </div>
+      <div class="vz-idea-wrap">
+        <article class="vz-idea-main">
+          ${orgBadge(v.org_name, v.org_logo, v.org_country, true)}
+          <h1 class="vz-idea-title">${esc(v.title || _t('Idea sin título'))}</h1>
+          ${lf ? `<div class="vz-sm" style="margin-bottom:12px"><span class="vz-muted">${_t('Busca')}</span> <b>${esc(lf)}</b></div>` : ''}
+          ${themes.length ? `<div class="vz-chips" style="margin:0 0 18px">${themes.map(t => `<span class="vz-chip-static">${esc(t)}</span>`).join('')}</div>` : ''}
+          <div class="vz-bsec vz-euval"><div class="vz-eyebrow">${_t('La idea')}</div><div id="vz-idea-text">${paras(v.vision_text)}</div></div>
+          <div class="vz-bsec" style="margin-top:22px"><div class="vz-eyebrow">${_t('A quién busca')}</div>
+            <div class="vz-seek-grid">
+              ${seek(_t('Busca'), esc(lf))}
+              ${seek(_t('Tipo de socio'), esc(arr(v.partner_types).join(' · ')))}
+              ${seek(_t('Países'), arr(v.partner_countries).map(c => esc(cName(c))).join(' · '))}
+              ${seek(_t('Escala'), [v.budget_option_eur != null ? eur(v.budget_option_eur) : '', v.wp_count ? (Number(v.wp_count) === 1 ? _t('1 paquete de trabajo') : _t('{n} paquetes de trabajo', { n: v.wp_count })) : ''].filter(Boolean).join(' · '))}
+            </div>
+          </div>
+          ${own ? ownerRequestsHtml() : ''}
+        </article>
+        <aside class="vz-idea-side">
+          <div class="vz-side-card">
+            <div class="vz-row-between"><h4>${_t('Entidades en la idea')}</h4><span class="vz-pill vz-pill-draft">👥 ${n + 1}</span></div>
+            <div class="vz-partners">
+              <div class="vz-partner">${orgBadge(v.org_name, v.org_logo, v.org_country)}<span class="vz-muted vz-sm">${_t('Propone')}</span></div>
+              ${partners.map(p => `<div class="vz-partner">${orgBadge(p.org_name, p.org_logo, p.org_country)}${p.role_offered ? `<span class="vz-muted vz-sm">${esc(p.role_offered)}</span>` : ''}</div>`).join('')}
+            </div>
+            ${actionHtml()}
+          </div>
+          <div class="vz-side-card">
+            <h4>${_t('Convocatoria')}</h4>
+            <div class="vz-sm vz-muted" style="margin-top:8px">${esc(v.programme || '')}</div>
+            <div class="vz-side-call">${esc(v.call_title || v.call_id || '')}</div>
+            ${v.call_deadline ? `<div class="vz-sm">🕑 ${esc(deadlineTxt(v.call_deadline))}</div>` : ''}
+            <div style="display:flex;flex-direction:column;gap:6px;margin-top:12px">
+              ${v.call_id ? `<button class="vz-link" data-act="open-call" data-id="${esc(v.call_id)}">${_t('Ver la convocatoria')} →</button>` : ''}
+              ${v.call_id ? `<button class="vz-link" data-act="ideas-call" data-id="${esc(v.call_id)}">${_t('Más ideas para esta convocatoria')} →</button>` : ''}
+            </div>
+          </div>
+        </aside>
+      </div>`;
+    // Botón «Traducir» bajo el texto escrito por otra entidad (no en lo propio).
+    if (!own && window.I18N && I18N.translatable) I18N.translatable(document.getElementById('vz-idea-text'), { text: v.vision_text || '' });
+  }
+
+  // Bloque de acción de la barra lateral según quién mira.
+  function actionHtml() {
+    const v = IV.idea, r = IV.my_request;
+    if (IV.is_owner) {
+      const pub = v.visibility === 'public';
+      return `
+        <div class="vz-side-actions">
+          <button class="vz-btn vz-btn-ghost" data-act="edit-idea">✎ ${_t('Editar la idea')}</button>
+          <button class="vz-btn ${pub ? 'vz-btn-ghost' : 'vz-btn-primary'}" data-act="toggle-vis">${pub ? '🔒 ' + _t('Dejar de publicar') : '🌍 ' + _t('Publicar para buscar socios')}</button>
+          <button class="vz-btn vz-btn-navy" data-act="promote">🏗️ ${_t('Llevar a Diseñar')}${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}</button>
+          <p class="vz-muted vz-sm">${pub ? _t('Otras entidades pueden verla y pedir unirse. Tú decides a quién aceptar.') : _t('Nadie más la ve. Publícala cuando quieras encontrar socios.')}</p>
+        </div>`;
+    }
+    if (!r) return `
+      <div class="vz-side-actions">
+        <button class="vz-btn vz-btn-primary vz-btn-wide" data-act="request-join">🤝 ${_t('Solicitar unirme')}</button>
+        <p class="vz-muted vz-sm">${_t('Pides unirte en nombre de tu entidad. Si te aceptan, os compartimos el contacto.')}</p>
+      </div>`;
+    if (r.status === 'pending') return `
+      <div class="vz-side-actions">
+        <div class="vz-state vz-state-wait">⏳ ${_t('Solicitud enviada. Esperando respuesta.')}</div>
+        <button class="vz-link" data-act="withdraw">${_t('Retirar la solicitud')}</button>
+      </div>`;
+    if (r.status === 'accepted') return `
+      <div class="vz-side-actions">
+        <div class="vz-state vz-state-ok">✓ ${_t('Formas parte de esta idea')}</div>
+        ${IV.owner_contact ? `<div class="vz-contact vz-sm">${_t('Contacto: {persona}', { persona: `<b>${esc(IV.owner_contact.name || '')}</b>` })}<br><a href="mailto:${esc(IV.owner_contact.email)}" translate="no">${esc(IV.owner_contact.email)}</a></div>` : ''}
+        <button class="vz-link" data-act="withdraw">${_t('Salir de la idea')}</button>
+      </div>`;
+    return `
+      <div class="vz-side-actions">
+        <div class="vz-state">${_t('Tu solicitud no fue aceptada.')}</div>
+        ${r.decision_note ? `<div class="vz-sm"><i>${esc(r.decision_note)}</i></div>` : ''}
+        <a class="vz-link" href="#ideas">${_t('Ver otras ideas')} →</a>
+      </div>`;
+  }
+
+  // Solicitudes que recibe el dueño (aceptar / rechazar).
+  function ownerRequestsHtml() {
+    const reqs = IV.requests || [];
+    const pending = reqs.filter(r => r.status === 'pending');
+    const done = reqs.filter(r => r.status !== 'pending');
+    const row = (r) => `
+      <div class="vz-req">
+        <div class="vz-row-between" style="align-items:flex-start;gap:10px">
+          ${orgBadge(r.org_name, r.org_logo, r.org_country)}
+          ${r.status === 'pending' ? '' : `<span class="vz-pill ${r.status === 'accepted' ? 'vz-pill-ok' : 'vz-pill-priv'}">${r.status === 'accepted' ? _t('Aceptada') : _t('Rechazada')}</span>`}
+        </div>
+        <div class="vz-sm" style="margin-top:8px">${_t('Lo pide {persona}', { persona: `<b>${esc(r.user_name || '')}</b>` })}${r.user_email ? ` · <a href="mailto:${esc(r.user_email)}" translate="no">${esc(r.user_email)}</a>` : ''}</div>
+        ${r.role_offered ? `<div class="vz-sm"><span class="vz-muted">${_t('Lo que ofrece:')}</span> ${esc(r.role_offered)}</div>` : ''}
+        ${r.message ? `<p class="vz-req-msg">${esc(r.message)}</p>` : ''}
+        ${r.status === 'pending' ? `<div class="vz-req-btns">
+            <button class="vz-btn vz-btn-primary vz-btn-sm" data-act="req-accept" data-id="${esc(r.id)}">${_t('Aceptar')}</button>
+            <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="req-reject" data-id="${esc(r.id)}">${_t('Rechazar')}</button>
+          </div>` : ''}
+      </div>`;
+    return `
+      <div class="vz-bsec" style="margin-top:26px">
+        <div class="vz-eyebrow">${_t('Solicitudes para unirse')}${pending.length ? ` · <span class="vz-new">${pending.length === 1 ? _t('1 nueva') : _t('{n} nuevas', { n: pending.length })}</span>` : ''}</div>
+        ${reqs.length ? `<div class="vz-reqs">${pending.map(row).join('')}${done.map(row).join('')}</div>`
+          : `<div class="vz-muted vz-sm" style="margin-top:8px">${v_pubHint()}</div>`}
+        <div class="vz-muted vz-sm" style="margin-top:10px">${_t('Al aceptar, le enviamos tu contacto y tú ves el suyo. Si llevas la idea a Diseñar, añade sus entidades en Socios.')}</div>
+      </div>`;
+  }
+  const v_pubHint = () => IV.idea.visibility === 'public'
+    ? _t('Todavía nadie ha pedido unirse. Comparte la idea con las entidades que te interesen.')
+    : _t('Publica la idea para que otras entidades puedan pedir unirse.');
+
+  /* Ventana «Solicitar unirme»: entidad + qué aporta + mensaje. */
+  async function requestJoin() {
+    if (myOrgs == null) { try { myOrgs = await API.get('/organizations/mine/all'); } catch (e) { myOrgs = []; } }
+    const orgs = arr(myOrgs);
+    const ov = document.createElement('div');
+    ov.className = 'vz-modal-ov';
+    ov.innerHTML = `
+      <div class="vz-modal" role="dialog" aria-modal="true" aria-labelledby="vz-join-h">
+        <div class="vz-modal-head"><span id="vz-join-h">${_t('Solicitar unirme a la idea')}</span><button class="vz-modal-x" data-x aria-label="${_t('Cerrar')}">✕</button></div>
+        ${orgs.length ? `
+        <div class="vz-modal-body">
+          <p class="vz-help">${_t('Lo verá {entidad}, que decide si te acepta. Si te acepta, os compartimos el contacto.', { entidad: `<b>${esc(IV.idea.org_name || '')}</b>` })}</p>
+          <label class="vz-lbl" for="vz-join-org">${_t('En nombre de')}</label>
+          <select class="vz-field" id="vz-join-org">${orgs.map(o => `<option value="${esc(o.id)}">${esc(o.organization_name)}${o.country ? ' · ' + esc(country(o.country)) : ''}</option>`).join('')}</select>
+          <label class="vz-lbl" for="vz-join-role" style="margin-top:14px">${_t('Qué aporta tu entidad')}</label>
+          <input class="vz-field" id="vz-join-role" maxlength="255" placeholder="${_t('p. ej. formación de docentes, trabajo con jóvenes rurales…')}">
+          <label class="vz-lbl" for="vz-join-msg" style="margin-top:14px">${_t('Mensaje')} <span style="text-transform:none;font-weight:500">· ${_t('opcional')}</span></label>
+          <textarea class="vz-field" id="vz-join-msg" rows="4" maxlength="2000" placeholder="${_t('Preséntate y cuenta por qué encaja con tu entidad.')}"></textarea>
+        </div>
+        <div class="vz-modal-foot"><button class="vz-btn vz-btn-ghost" data-x>${_t('Cancelar')}</button><button class="vz-btn vz-btn-primary" data-send>${_t('Enviar solicitud')}</button></div>`
+        : `
+        <div class="vz-modal-body">
+          <p class="vz-help">${_t('Para unirte a una idea necesitas tener tu entidad vinculada: la solicitud se hace en su nombre.')}</p>
+        </div>
+        <div class="vz-modal-foot"><button class="vz-btn vz-btn-ghost" data-x>${_t('Cancelar')}</button><a class="vz-btn vz-btn-primary" href="#account-org" data-x>${_t('Vincular mi entidad')}</a></div>`}
+      </div>`;
+    document.body.appendChild(ov);
+    const close = () => ov.remove();
+    ov.addEventListener('click', async (e) => {
+      if (e.target === ov || e.target.closest('[data-x]')) return close();
+      const send = e.target.closest('[data-send]');
+      if (!send) return;
+      send.disabled = true;
+      try {
+        IV = await API.post('/vision/' + IV.idea.id + '/requests', {
+          organization_id: ov.querySelector('#vz-join-org').value,
+          role_offered: ov.querySelector('#vz-join-role').value.trim(),
+          message: ov.querySelector('#vz-join-msg').value.trim(),
+        });
+        close(); renderIdea();
+        Toast.show(_t('Solicitud enviada'), 'ok');
+      } catch (err) { send.disabled = false; Toast.show(err.message || _t('No se pudo enviar'), 'error'); }
+    });
+    ov.querySelector('select, a, button')?.focus();
+  }
+
+  async function withdraw() {
+    const accepted = IV.my_request && IV.my_request.status === 'accepted';
+    if (!confirm(accepted ? _t('¿Salir de esta idea? Quien la propone dejará de verte como socio.') : _t('¿Retirar tu solicitud?'))) return;
+    try { IV = await API.post('/vision/' + IV.idea.id + '/requests/withdraw', {}); renderIdea(); Toast.show(accepted ? _t('Has salido de la idea') : _t('Solicitud retirada'), 'ok'); }
+    catch (e) { Toast.show(e.message || _t('No se pudo guardar'), 'error'); }
+  }
+
+  async function decide(reqId, accept) {
+    let note = '';
+    if (!accept) {
+      const r = prompt(_t('¿Quieres dejarle un mensaje? (opcional)'), '');
+      if (r === null) return;
+      note = r.trim();
+    }
+    try {
+      IV = await API.post('/vision/' + IV.idea.id + '/requests/' + encodeURIComponent(reqId) + (accept ? '/accept' : '/reject'), { note });
+      renderIdea(); refreshBadge();
+      Toast.show(accept ? _t('Solicitud aceptada: le hemos enviado tu contacto') : _t('Solicitud rechazada'), 'ok');
+    } catch (e) { Toast.show(e.message || _t('No se pudo guardar'), 'error'); }
   }
 
   /* ── VIEW: elegir convocatoria ────────────────────────────────── */
@@ -140,9 +506,9 @@ const Vision = (() => {
     view = 'picker';
     $root().innerHTML = `
       <div class="vz-head"><div>
-        <div class="vz-eyebrow">${_t('Nueva visión · paso previo')}</div>
+        <div class="vz-eyebrow">${_t('Nueva idea · paso previo')}</div>
         <h1 class="vz-h1">${_t('¿Sobre qué convocatoria?')}</h1>
-        <p class="vz-lead">${_t('Tu visión se construye sobre una convocatoria concreta: de ella sacamos criterios, presupuesto y tipo de socio, para preguntarte solo lo tuyo.')}</p>
+        <p class="vz-lead">${_t('Tu idea se construye sobre una convocatoria concreta: de ella sacamos criterios, presupuesto y tipo de socio, para preguntarte solo lo tuyo.')}</p>
       </div></div>
       <div class="vz-eyebrow" style="margin:6px 0 10px">${_t('Convocatorias principales · Studio te acompaña de principio a fin')}</div>
       <div id="vz-call-main" class="vz-call-list"><div class="vz-muted vz-sm">${_t('Cargando convocatorias…')}</div></div>
@@ -252,21 +618,21 @@ const Vision = (() => {
       suggestions = [];
       renderComposer();
     } catch (e) {
-      Toast.show(e.message || _t('No se pudo crear la visión'), 'error');
+      Toast.show(e.message || _t('No se pudo crear la idea'), 'error');
     }
   }
 
   /* ── VIEW: asistente ──────────────────────────────────────────── */
-  async function openVision(id) {
+  async function openVision(id, edit) {
     try {
       const d = await API.get('/vision/' + id);
       V = d.vision; refs = d.references || [];
       call = null; suggestions = [];
       // cargar contexto de la call
       if (V.call_id) { try { call = await API.get('/convocatorias/' + encodeURIComponent(V.call_id)); } catch (e) {} }
-      if (V.status === 'complete') { renderBrief(); }
+      if (V.status === 'complete' && !edit) { go('ver/' + V.id); }
       else { renderComposer(); }
-    } catch (e) { Toast.show(e.message || _t('No se pudo abrir la visión'), 'error'); }
+    } catch (e) { Toast.show(e.message || _t('No se pudo abrir la idea'), 'error'); }
   }
 
   /* ══ Composer: TODO en una sola ventana ══════════════════════════
@@ -290,7 +656,7 @@ const Vision = (() => {
       <div class="vz-comp-head">
         <div><span class="vz-tag-navy">${_t('CONVOCATORIA')}</span> <b>${esc(V.call_title || V.call_id)}</b>
           <span class="vz-muted vz-sm"> · ${_t('deadline {fecha}', { fecha: fmtDate(V.call_deadline) || '—' })}${dl != null ? ' · ' + (dl === 1 ? _t('1 día') : _t('{n} días', { n: dl })) : ''}</span></div>
-        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="back-list">← ${_t('Mis visiones')}</button>
+        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="back-list">← ${_t('Mis ideas')}</button>
       </div>
 
       <div id="vz-callpanel-top"></div>
@@ -318,7 +684,7 @@ const Vision = (() => {
             <div class="vz-block-h"><span class="vz-num-badge">3</span> ${_t('Tu visión')} <span class="vz-muted vz-sm"> · ${_t('un solo texto')}</span></div>
             <p class="vz-help">${_t('La IA combina tu idea + lo que pide la convocatoria + los proyectos elegidos en un texto claro para cualquiera. Edítalo a tu gusto.')}</p>
             <button class="vz-btn vz-btn-primary" data-act="ai-generate" style="margin-bottom:10px">✨ ${_t('Generar mi visión con IA')}</button>
-            <input class="vz-field" id="vz-title" placeholder="${_t('Título de la visión')}" value="${esc(V.title || '')}" style="margin-bottom:10px">
+            <input class="vz-field" id="vz-title" placeholder="${_t('Título de la idea')}" value="${esc(V.title || '')}" style="margin-bottom:10px">
             <textarea class="vz-field" id="vz-vision" rows="7" placeholder="${_t('Aquí aparecerá tu visión redactada… (o escríbela tú)')}">${esc(V.vision_text || '')}</textarea>
           </div>
 
@@ -335,7 +701,7 @@ const Vision = (() => {
 
           <div class="vz-btns">
             <span></span>
-            <button class="vz-btn vz-btn-primary" data-act="review">${_t('Revisar ficha')} →</button>
+            <button class="vz-btn vz-btn-primary" data-act="review">${_t('Ver la ficha de la idea')} →</button>
           </div>
       </div>`;
 
@@ -362,16 +728,24 @@ const Vision = (() => {
     host.innerHTML = selected + cards;
   }
 
-  function renderConsorcio() {
+  async function renderConsorcio() {
     const host = document.getElementById('vz-consorcio-area');
     if (!host) return;
+    if (myOrgs == null) { try { myOrgs = await API.get('/organizations/mine/all'); } catch (e) { myOrgs = []; } }
+    const orgs = arr(myOrgs);
+    const lf = arr(V.looking_for);
+    const entityHtml = orgs.length
+      ? `<select class="vz-field" id="vz-org">${!V.organization_id ? `<option value="">${_t('Elige tu entidad…')}</option>` : ''}${orgs.map(o => `<option value="${esc(o.id)}" ${o.id === V.organization_id ? 'selected' : ''}>${esc(o.organization_name)}${o.country ? ' · ' + esc(country(o.country)) : ''}</option>`).join('')}</select>`
+      : `<div class="vz-note vz-sm">${_t('Para publicar la idea y recibir solicitudes necesitas tu entidad vinculada.')} <a href="#account-org" style="font-weight:700;margin-left:auto;white-space:nowrap">${_t('Vincular mi entidad')} →</a></div>`;
     const types = arr(V.partner_types);
     const countries = arr(V.partner_countries);
     const typeList = PARTNER_TYPES.map(t => `<option value="${esc(t)}">`).join('');
     const ctyList = Object.entries(WORLD).map(([c, n]) => `<option value="${esc(n)}">`).join('');
     host.innerHTML = `
-      <label class="vz-lbl">${_t('Tu entidad (OID del directorio — necesario para publicar)')}</label>
-      <input type="text" class="vz-field" id="vz-entity" placeholder="${_t('p. ej. {ejemplo}', { ejemplo: 'E10151149' })}" value="${esc(V.entity_oid || '')}">
+      <label class="vz-lbl" for="vz-org">${_t('Tu entidad (la que propone la idea)')}</label>
+      ${entityHtml}
+      <label class="vz-lbl" style="margin-top:14px">${_t('Qué buscas')}</label>
+      <div class="vz-chips" style="margin-top:0">${Object.entries(LOOKING()).map(([k, l]) => `<span class="vz-chip ${lf.includes(k) ? 'vz-sel' : ''}" data-act="pick-lf" data-v="${k}" role="button" aria-pressed="${lf.includes(k)}">${esc(l)}</span>`).join('')}</div>
       <label class="vz-lbl" style="margin-top:14px">${_t('Tipo de socio que buscas')}</label>
       ${types.length ? `<div class="vz-chips" style="margin-bottom:8px">${types.map(t => `<span class="vz-chip vz-sel" data-act="remove-type" data-v="${esc(t)}" title="${_t('Quitar')}">${esc(t)} ✕</span>`).join('')}</div>` : ''}
       <input type="text" class="vz-field" id="vz-type-input" list="vz-types-list" placeholder="${_t('Escribe o elige un tipo de socio…')}" autocomplete="off">
@@ -503,7 +877,6 @@ const Vision = (() => {
     if (g('vz-idea')) p.problem = g('vz-idea').value.trim();
     if (g('vz-vision')) p.vision_text = g('vz-vision').value.trim();
     if (g('vz-title')) p.title = g('vz-title').value.trim();
-    if (g('vz-entity')) p.entity_oid = g('vz-entity').value.trim() || null;
     if (g('vz-budget')) { const b = g('vz-budget').value; if (b) p.budget_option_eur = Number(b); }
     return p;
   }
@@ -514,76 +887,24 @@ const Vision = (() => {
     try { V = await API.patch('/vision/' + V.id, p); } catch (e) { console.warn('[vision] no se guardó', e); }
   }
 
-  /* ── VIEW: Ficha ──────────────────────────────────────────────── */
+  /* ── Revisar: guarda y abre la ficha de la idea ───────────────── */
   async function review() {
     await saveComposer();
-    if (!V.title) { const t = (V.vision_text || V.problem || _t('Mi visión')).split(/[.\n]/)[0].slice(0, 80); await API.patch('/vision/' + V.id, { title: t }); }
-    V = await API.get('/vision/' + V.id).then(d => { refs = d.references || []; return d.vision; });
-    renderBrief();
-  }
-
-  function renderBrief() {
-    view = 'brief';
-    const pub = V.visibility === 'public';
-    const seek = (k, v) => `<div class="vz-seek"><div class="vz-seek-k">${k}</div><div class="vz-seek-v">${v || '—'}</div></div>`;
-    $root().innerHTML = `
-      <div class="vz-head" style="margin-bottom:16px"><div>
-        <div class="vz-eyebrow">${_t('Ficha de visión')}</div>
-        <h1 class="vz-h1">${_t('Tu visión, lista para compartir')}</h1>
-      </div>
-      <div style="display:flex;gap:10px">
-        <button class="vz-btn vz-btn-ghost" data-act="edit">✎ ${_t('Seguir editando')}</button>
-        <button class="vz-btn vz-btn-ghost" data-act="back-list">${_t('Mis visiones')}</button>
-      </div></div>
-      <div class="vz-brief-wrap">
-        <article class="vz-brief">
-          <div class="vz-brief-hero">
-            <div class="vz-eyebrow" style="color:var(--vz-lavsoft)">${esc(V.programme || _t('Convocatoria'))} · ${pub ? _t('buscando socios') : _t('borrador privado')}</div>
-            <h1>${esc(V.title || _t('Mi visión'))}</h1>
-            <div class="vz-hero-meta">
-              ${V.budget_option_eur != null ? `<span class="vz-hm vz-hm-y">${eur(V.budget_option_eur)}</span>` : ''}
-              ${V.wp_count ? `<span class="vz-hm">${Number(V.wp_count) === 1 ? _t('1 paquete de trabajo') : _t('{n} paquetes de trabajo', { n: V.wp_count })}</span>` : ''}
-              ${V.call_deadline ? `<span class="vz-hm">${_t('Deadline {fecha}', { fecha: fmtDate(V.call_deadline) })}</span>` : ''}
-            </div>
-          </div>
-          <div class="vz-brief-body">
-            <div class="vz-bsec vz-euval"><div class="vz-eyebrow">${_t('La visión')}</div>${paras(V.vision_text || V.problem)}
-              ${arr(V.themes).length ? `<div class="vz-chips" style="margin-top:12px">${arr(V.themes).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}</div>` : ''}
-            </div>
-            <div class="vz-bsec"><div class="vz-eyebrow">${_t('A quién busco')}</div>
-              <div class="vz-seek-grid">
-                ${seek(_t('Tipo de socio'), esc(arr(V.partner_types).join(' · ')))}
-                ${seek(_t('Países'), arr(V.partner_countries).map(c => flag(c) + ' ' + esc(cName(c))).join(' · '))}
-                ${seek(_t('Mi entidad'), esc(V.entity_oid || _t('sin vincular')))}
-              </div>
-            </div>
-          </div>
-        </article>
-        <aside class="vz-brief-side">
-          <div class="vz-toggle-card">
-            <div class="vz-toggle-row">
-              <div><h4>${_t('Visibilidad')}</h4><div class="vz-muted vz-sm" style="max-width:24ch">${_t('Nace privada. Publícala cuando quieras que la comunidad la vea.')}</div></div>
-              <div class="vz-switch ${pub ? 'vz-on' : ''}" data-act="toggle-vis" role="switch" aria-checked="${pub}" aria-label="${_t('Visión pública')}"></div>
-            </div>
-            <div class="vz-vis-state ${pub ? 'vz-vis-pub' : 'vz-vis-priv'}" id="vz-vis-state">${pub ? '🌍 ' + _t('Pública · visible para la comunidad') : '🔒 ' + _t('Privada · solo tú la ves')}</div>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:9px">
-            <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ ${_t('Llevar a Diseñar')}${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}</button>
-          </div>
-          <div class="vz-note vz-sm" style="display:block">${_t('Al publicarla, otras entidades podrán marcar “Me interesa participar”. Los invitados podrán verla, pero no mostrar interés.')}</div>
-        </aside>
-      </div>`;
+    if (!V.title) { const t = (V.vision_text || V.problem || _t('Mi idea')).split(/[.\n]/)[0].slice(0, 80); await API.patch('/vision/' + V.id, { title: t }); }
+    go('ver/' + V.id);
   }
 
   async function toggleVis() {
-    const next = V.visibility === 'public' ? 'private' : 'public';
+    const v = IV.idea;
+    const next = v.visibility === 'public' ? 'private' : 'public';
     try {
-      V = await API.post('/vision/' + V.id + '/publish', { visibility: next });
-      renderBrief();
-      Toast.show(next === 'public' ? _t('Visión publicada') : _t('Visión ahora privada'), 'ok');
+      await API.post('/vision/' + v.id + '/publish', { visibility: next });
+      IV = await API.get('/vision/' + v.id + '/view');
+      renderIdea();
+      Toast.show(next === 'public' ? _t('Idea publicada: ya la ven otras entidades') : _t('La idea ya no está publicada'), 'ok');
     } catch (e) {
-      if (e.code === 'ENTITY_REQUIRED') Toast.show(_t('Vincula tu entidad (OID) antes de publicar: edita el paso Detalles'), 'error');
-      else if (e.code === 'INCOMPLETE') Toast.show(_t('Completa la visión antes de publicar'), 'error');
+      if (e.code === 'ENTITY_REQUIRED') Toast.show(_t('Elige tu entidad antes de publicar: edita la idea, paso Detalles'), 'error');
+      else if (e.code === 'INCOMPLETE') Toast.show(_t('Ponle título y texto a la idea antes de publicarla'), 'error');
       else Toast.show(e.message || _t('No se pudo publicar'), 'error');
     }
   }
@@ -592,7 +913,7 @@ const Vision = (() => {
     // Fase beta: pasar a proyecto pide el área «proyectos» → «Solicitar acceso».
     if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
     try {
-      const r = await API.post('/vision/' + V.id + '/promote', {});
+      const r = await API.post('/vision/' + IV.idea.id + '/promote', {});
       Toast.show(r.already ? _t('Ya estaba en Diseñar — abriendo…') : _t('Proyecto creado en Diseñar'), 'ok');
       if (r.project_id && typeof Intake !== 'undefined') { App.navigate('intake'); Intake.openProject(r.project_id); }
       else App.navigate('my-projects');
@@ -639,11 +960,20 @@ const Vision = (() => {
     if (!inRoot) return;
     const act = t.dataset.act;
     const map = {
-      'new': () => renderPicker(),
+      'new': () => go('nueva'),
       'go-convocatorias': () => App.navigate('convocatorias'),
       'pick-call': () => pickCall(t.dataset.id),
       'open': () => openVision(t.dataset.id),
-      'back-list': () => loadList(),
+      'back-list': () => go('mias'),
+      'clear-call': () => { filters.callId = ''; loadExplore(); },
+      'request-join': () => requestJoin(),
+      'withdraw': () => withdraw(),
+      'req-accept': () => decide(t.dataset.id, true),
+      'req-reject': () => decide(t.dataset.id, false),
+      'edit-idea': () => openVision(IV.idea.id, true),
+      'open-call': () => { if (typeof Convocatorias !== 'undefined' && Convocatorias.openCall) Convocatorias.openCall(t.dataset.id); else App.navigate('convocatorias'); },
+      'ideas-call': () => showForCall(t.dataset.id),
+      'pick-lf': () => { const s = new Set(arr(V.looking_for)); s.has(t.dataset.v) ? s.delete(t.dataset.v) : s.add(t.dataset.v); V.looking_for = [...s]; t.classList.toggle('vz-sel'); saveComposer({ looking_for: V.looking_for }); },
       'suggest': () => doSuggest(),
       'review': () => review(),
       'open-proj': () => openProject(parseInt(t.dataset.i, 10)),
@@ -657,7 +987,6 @@ const Vision = (() => {
       'remove-cty': () => { V.partner_countries = arr(V.partner_countries).filter(c => c !== t.dataset.v); saveComposer({ partner_countries: V.partner_countries }); renderConsorcio(); },
       'remove-type': () => { V.partner_types = arr(V.partner_types).filter(x => x !== t.dataset.v); saveComposer({ partner_types: V.partner_types }); renderConsorcio(); },
       'toggle-theme': () => { const s = new Set(arr(V.themes)); s.has(t.dataset.v) ? s.delete(t.dataset.v) : s.add(t.dataset.v); V.themes = [...s]; t.classList.toggle('vz-sel'); saveComposer({ themes: V.themes }); },
-      'edit': () => renderComposer(),
       'ai-generate': () => genAI(),
       'toggle-vis': () => toggleVis(),
       'promote': () => promote(),
@@ -669,7 +998,7 @@ const Vision = (() => {
   // Autosave del composer: con espera mientras se escribe (antes solo al salir
   // del campo, y al cerrar la pestaña con el cursor dentro se perdía) y al
   // salir de un campo de texto. Lo de la espera se toma al teclear, con su id.
-  const COMPOSER_FIELDS = ['vz-idea', 'vz-vision', 'vz-title', 'vz-entity', 'vz-budget'];
+  const COMPOSER_FIELDS = ['vz-idea', 'vz-vision', 'vz-title', 'vz-budget'];
   document.addEventListener('input', (e) => {
     if (!e.target || !COMPOSER_FIELDS.includes(e.target.id) || !V) return;
     const id = V.id, p = collectComposer();
@@ -707,7 +1036,37 @@ const Vision = (() => {
     else if (el.id === 'vz-type-input') addTypeFromInput(el);
   }
   const INPUT_IDS = new Set(['vz-cty-input', 'vz-type-input']);
-  document.addEventListener('change', (e) => { if (e.target && INPUT_IDS.has(e.target.id)) addFromInput(e.target); });
+  document.addEventListener('change', (e) => {
+    if (e.target && INPUT_IDS.has(e.target.id)) addFromInput(e.target);
+    // Entidad que propone la idea (de «Mi entidad»).
+    if (e.target && e.target.id === 'vz-org' && V) saveComposer({ organization_id: e.target.value || null });
+    // Tablón: filtro por programa.
+    if (e.target && e.target.id === 'vz-ex-prog') { filters.programme = e.target.value; renderExplore(); }
+  });
+  // Logo de entidad que no carga (enlaces viejos): se cambia por las iniciales.
+  document.addEventListener('error', (e) => {
+    const img = e.target;
+    if (!img || img.tagName !== 'IMG' || !img.classList.contains('vz-org-logo')) return;
+    const name = img.closest('.vz-org')?.querySelector('.vz-org-name')?.textContent || '';
+    const span = document.createElement('span');
+    span.className = 'vz-org-logo vz-org-ini';
+    span.setAttribute('aria-hidden', 'true');
+    span.textContent = initials(name);
+    img.replaceWith(span);
+  }, true);
+
+  // Tablón: búsqueda mientras se escribe (sin volver a pedir al servidor).
+  document.addEventListener('input', (e) => {
+    if (!e.target || e.target.id !== 'vz-ex-q') return;
+    filters.q = e.target.value;
+    clearTimeout(window._vzExQ);
+    window._vzExQ = setTimeout(() => {
+      const pos = e.target.selectionStart;
+      renderExplore();
+      const box = document.getElementById('vz-ex-q');
+      if (box) { box.focus(); try { box.setSelectionRange(pos, pos); } catch (_) {} }
+    }, 250);
+  });
   document.addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target && INPUT_IDS.has(e.target.id)) { e.preventDefault(); addFromInput(e.target); } });
 
   /* ── Estilos (scoped, prefijo vz-) ────────────────────────────── */
@@ -731,7 +1090,7 @@ const Vision = (() => {
     #vision-root .vz-plus{width:42px;height:42px;border-radius:12px;background:var(--vz-lavsoft);color:var(--vz-navy);display:grid;place-items:center;font-size:24px}
     #vision-root .vz-card h3{font-size:16px;font-weight:600;color:var(--vz-navy);line-height:1.25}
     #vision-root .vz-row-between{display:flex;justify-content:space-between;align-items:center}
-    #vision-root .vz-pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+    #vision-root .vz-pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap;flex-shrink:0}
     #vision-root .vz-pill-draft{background:var(--vz-lavsoft);color:var(--vz-navy)} #vision-root .vz-pill-ok{background:var(--vz-greensoft);color:var(--vz-green)} #vision-root .vz-pill-priv{background:var(--vz-ground);color:var(--vz-navy)}
     #vision-root .vz-callchip{display:inline-flex;gap:6px;font-size:11.5px;font-weight:600;color:var(--vz-muted);background:var(--vz-lavsoft);border-radius:8px;padding:5px 9px;align-self:flex-start}
     #vision-root .vz-callchip b{color:var(--vz-navy)}
@@ -834,6 +1193,44 @@ const Vision = (() => {
     #vision-root .vz-switch{width:44px;height:25px;border-radius:20px;background:var(--vz-line2);position:relative;cursor:pointer;flex-shrink:0;transition:background .2s} #vision-root .vz-switch::after{content:"";position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
     #vision-root .vz-switch.vz-on{background:var(--vz-navy)} #vision-root .vz-switch.vz-on::after{left:22px}
     #vision-root .vz-vis-state{font-size:12px;font-weight:700;margin-top:12px;padding:9px 12px;border-radius:9px;text-align:center} #vision-root .vz-vis-priv{background:var(--vz-ground);color:var(--vz-navy)} #vision-root .vz-vis-pub{background:var(--vz-greensoft);color:var(--vz-green)}
+    /* Ideas: pestañas, tablón, ficha y solicitudes */
+    #vision-root a.vz-card,#vision-root a.vz-btn{text-decoration:none;color:inherit} #vision-root a.vz-btn-primary{color:var(--vz-navy)}
+    #vision-root .vz-tabs{display:flex;gap:6px;margin:-8px 0 20px;border-bottom:1px solid var(--vz-line2);flex-wrap:wrap}
+    #vision-root .vz-tab{padding:9px 14px;font-size:13.5px;font-weight:600;color:var(--vz-muted);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-1px}
+    #vision-root .vz-tab:hover{color:var(--vz-navy)} #vision-root .vz-tab-on{color:var(--vz-navy);border-bottom-color:var(--vz-navy)}
+    #vision-root .vz-org{display:flex;align-items:center;gap:10px;min-width:0}
+    #vision-root .vz-org-logo{width:34px;height:34px;border-radius:50%;object-fit:contain;background:#fff;border:1px solid var(--vz-line2);flex-shrink:0}
+    #vision-root .vz-org-ini{display:grid;place-items:center;background:var(--vz-lavsoft);color:var(--vz-navy);font-size:12px;font-weight:700;border:none}
+    #vision-root .vz-org-name{font-size:13px;font-weight:600;color:var(--vz-ink);line-height:1.25;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+    #vision-root .vz-org-big .vz-org-logo{width:48px;height:48px} #vision-root .vz-org-big .vz-org-name{font-size:14.5px}
+    #vision-root .vz-idea-card{gap:10px} #vision-root .vz-excerpt{font-size:13px;color:var(--vz-muted);line-height:1.5;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    #vision-root .vz-card-foot{margin-top:auto;display:flex;flex-direction:column;gap:8px;padding-top:10px;border-top:1px solid var(--vz-line)}
+    #vision-root .vz-empty{text-align:center;padding:48px 20px;display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--vz-card);border:1px dashed var(--vz-line2);border-radius:20px}
+    #vision-root .vz-empty p{max-width:52ch;margin:0}
+    #vision-root .vz-new{color:var(--vz-navy);background:var(--vz-yellow);padding:1px 7px;border-radius:999px;font-weight:700}
+    #vision-root .vz-idea-wrap{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;align-items:start} @media(max-width:900px){#vision-root .vz-idea-wrap{grid-template-columns:1fr} #vision-root .vz-idea-side{position:static;order:-1}}
+    #vision-root .vz-idea-main{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:24px;padding:26px 28px;box-shadow:0 8px 24px -14px rgba(67,18,216,.18)}
+    #vision-root .vz-idea-title{font-size:26px;font-weight:700;color:var(--vz-navy);margin:16px 0 10px;line-height:1.2}
+    #vision-root .vz-chip-static{font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--vz-ground);color:var(--vz-ink)}
+    #vision-root .vz-idea-side{display:flex;flex-direction:column;gap:14px;position:sticky;top:16px}
+    #vision-root .vz-side-card{background:var(--vz-card);border:1px solid var(--vz-line);border-radius:20px;padding:18px;box-shadow:0 8px 24px -16px rgba(67,18,216,.18)}
+    #vision-root .vz-side-card h4{font-size:14px;font-weight:700;color:var(--vz-ink)}
+    #vision-root .vz-side-call{font-size:15px;font-weight:600;color:var(--vz-ink);margin:4px 0 8px;line-height:1.3}
+    #vision-root .vz-partners{display:flex;flex-direction:column;gap:10px;margin:14px 0 4px}
+    #vision-root .vz-partner{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    #vision-root .vz-side-actions{display:flex;flex-direction:column;gap:9px;margin-top:14px;padding-top:14px;border-top:1px solid var(--vz-line)}
+    #vision-root .vz-side-actions .vz-btn{justify-content:center} #vision-root .vz-side-actions p{margin:0}
+    #vision-root .vz-btn-wide{width:100%;padding:14px 18px;font-size:14.5px}
+    #vision-root .vz-state{font-size:13px;font-weight:700;padding:10px 12px;border-radius:12px;background:var(--vz-ground);color:var(--vz-navy)}
+    #vision-root .vz-state-wait{background:var(--vz-lavsoft)} #vision-root .vz-state-ok{background:var(--vz-greensoft);border:1px solid var(--vz-yellow)}
+    #vision-root .vz-contact{background:var(--vz-ground);border-radius:12px;padding:10px 12px;line-height:1.5;word-break:break-word}
+    #vision-root .vz-contact a,#vision-root .vz-req a{color:var(--vz-navy);font-weight:600}
+    #vision-root .vz-link{background:none;border:none;padding:0;font:inherit;font-size:13px;font-weight:700;color:var(--vz-navy);cursor:pointer;text-align:left;text-decoration:none}
+    #vision-root .vz-link:hover{text-decoration:underline}
+    #vision-root .vz-reqs{display:flex;flex-direction:column;gap:12px;margin-top:10px}
+    #vision-root .vz-req{border:1px solid var(--vz-line2);border-radius:16px;padding:14px 16px;background:var(--vz-card)}
+    #vision-root .vz-req-msg{font-size:13px;color:var(--vz-ink);background:var(--vz-ground);border-radius:10px;padding:10px 12px;margin:8px 0 0;white-space:pre-line}
+    #vision-root .vz-req-btns{display:flex;gap:8px;margin-top:12px}
     /* drawer (fuera de #vision-root) */
     .vz-drawer-ov{position:fixed;inset:0;background:rgba(27,7,89,.42);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s} .vz-drawer-ov.vz-on{opacity:1;pointer-events:auto}
     .vz-drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,92vw);background:#fff;z-index:61;box-shadow:-16px 0 40px -18px rgba(27,7,89,.5);transform:translateX(100%);transition:transform .26s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;font-family:inherit}
@@ -846,5 +1243,5 @@ const Vision = (() => {
     const st = document.createElement('style'); st.id = 'vision-styles'; st.textContent = css; document.head.appendChild(st);
   }
 
-  return { init, startForCall };
+  return { init, startForCall, showForCall, refreshBadge };
 })();

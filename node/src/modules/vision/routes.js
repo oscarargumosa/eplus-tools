@@ -10,8 +10,11 @@ const ctrl = require('./controller');
 router.post('/suggest-projects', requireAuth, ctrl.suggestProjects);
 router.get('/project/:identifier/full', requireAuth, ctrl.projectFull);
 
-// Tablón público "Explorar visiones" (v2) — antes de /:id.
-// router.get('/public', requireAuth, ctrl.publicList);
+// Ideas: tablón de publicadas y mis solicitudes — antes de /:id.
+router.get('/public', requireAuth, ctrl.publicList);
+router.get('/public/counts', requireAuth, ctrl.publicCounts);
+router.get('/requests/mine', requireAuth, ctrl.myRequests);
+router.get('/requests/pending-count', requireAuth, ctrl.pendingCount);
 
 // Colección
 router.get('/', requireAuth, ctrl.list);
@@ -29,8 +32,11 @@ router.post('/:id/generate', requireAuth, aiLimit, ctrl.generate);
 router.post('/:id/references', requireAuth, ctrl.addReference);
 router.delete('/:id/references/:refId', requireAuth, ctrl.removeReference);
 
-// Comunidad (v2)
-router.post('/:id/interest', requireAuth, ctrl.addInterest);
-router.get('/:id/interest', requireAuth, ctrl.listInterest);
+// Ficha pública y solicitudes para unirse (con entidad).
+router.get('/:id/view', requireAuth, ctrl.view);
+router.post('/:id/requests', requireAuth, ctrl.createRequest);
+router.post('/:id/requests/withdraw', requireAuth, ctrl.withdrawRequest);
+router.post('/:id/requests/:reqId/accept', requireAuth, ctrl.acceptRequest);
+router.post('/:id/requests/:reqId/reject', requireAuth, ctrl.rejectRequest);
 
 module.exports = router;

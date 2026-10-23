@@ -1,5 +1,18 @@
 # EU Vision — Modelo de datos + Plan de implementación
 
+> **23-oct-2026 · AHORA SE LLAMA «IDEAS»** (decisión de Óscar). Subtítulo «Da forma a tu visión».
+> Rutas `#ideas` (explorar), `#ideas/mias`, `#ideas/solicitudes`, `#ideas/nueva`, `#ideas/ver/<id>`;
+> `#eu-vision` redirige a Mis ideas. El código y las tablas siguen llamándose `vision*`.
+> El «Me interesa participar» de la v2 se sustituye por **solicitudes para unirse** (migración 152):
+> - Solo se solicita en nombre de una entidad de «Mi entidad» (`vision_interests.organization_id`).
+> - Estados `pending → accepted | rejected`; el solicitante puede retirarla (`withdrawn`). Tras un rechazo no puede volver a pedirlo.
+> - Aceptar = avisar y compartir contactos (el dueño ve su correo; el solicitante, el del dueño). **No** se añade solo al consorcio de Diseñar.
+> - Correos (`utils/email.js`): `sendIdeaRequestEmail` al dueño, `sendIdeaDecisionEmail` al solicitante. Contador de pendientes en el menú.
+> - API: `GET /public`, `GET /public/counts`, `GET /requests/mine`, `GET /requests/pending-count`, `GET /:id/view`,
+>   `POST /:id/requests`, `POST /:id/requests/withdraw`, `POST /:id/requests/:reqId/accept|reject`. `GET /:id` queda solo para el dueño.
+> - La idea guarda la entidad que la propone (`visions.organization_id`, elegida de «Mi entidad») y qué busca (`visions.looking_for`: coordinator/partners).
+> Lo de abajo es el plan original de julio y se conserva como histórico.
+
 > **Estado:** DISEÑO APROBADO (flujo validado con mockup) · pendiente de arrancar F1
 > **Owner:** Local Claude (eplus-tools)
 > **Fecha:** 2026-07-11

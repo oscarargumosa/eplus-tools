@@ -10,6 +10,8 @@ const Convocatorias = (() => {
   let loaded   = false;
   let bound    = false;
   let isAdmin  = false;  // set on init() based on App.isAdmin()
+  let ideaCounts = {};   // ideas publicadas por convocatoria (módulo Ideas)
+  let pendingOpen = null; // convocatoria que abrir al cargar (desde la ficha de una idea)
   const state  = { q: '', status: '', programme: '', sort: 'deadline', curation: '', availability: '' };
   // curation filter values (admin): '' (all), 'unreviewed', 'reviewed', 'in_efs', 'hidden'
   // availability filter values (public): '' (all), 'efs' (only available in EFS)
@@ -124,6 +126,20 @@ const Convocatorias = (() => {
     populateProgrammes();
     renderAdminToolbar();
     render();
+    loadIdeaCounts();
+    if (pendingOpen) { const id = pendingOpen; pendingOpen = null; openDetail(id); }
+  }
+
+  // Ideas publicadas por convocatoria: chip en la tarjeta y enlace en el detalle.
+  async function loadIdeaCounts() {
+    try { ideaCounts = (await API.get('/vision/public/counts')) || {}; } catch (_) { return; }
+    if (Object.keys(ideaCounts).length) render();
+  }
+
+  // Desde la ficha de una idea: ir a Convocatorias y abrir esa.
+  function openCall(callId) {
+    pendingOpen = callId;
+    App.navigate('convocatorias');
   }
 
   function renderAdminToolbar() {
@@ -247,12 +263,20 @@ const Convocatorias = (() => {
         createProjectFromCall(btn);
         return;
       }
-      // "Visión" en la tarjeta — arranca EU Vision sin abrir el detalle.
+      // «N ideas» en la tarjeta — el tablón de Ideas filtrado por esta convocatoria.
+      const ideasBtn = e.target.closest('.conv-card-ideas');
+      if (ideasBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (typeof Vision !== 'undefined') Vision.showForCall(ideasBtn.dataset.callId);
+        return;
+      }
+      // «Idea» en la tarjeta — arranca una idea sin abrir el detalle.
       const visionBtn = e.target.closest('.conv-card-vision');
       if (visionBtn) {
         e.preventDefault();
         e.stopPropagation();
-        if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: _t('empezar tu visión') })) return;
+        if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: _t('proponer una idea') })) return;
         if (typeof Vision !== 'undefined') Vision.startForCall(visionBtn.dataset.callId);
         return;
       }
@@ -632,9 +656,13 @@ const Convocatorias = (() => {
       <div class="flex items-center justify-between pt-3 border-t border-outline-variant gap-2">
         <span class="text-[11px] text-on-surface-variant truncate font-mono">${escapeHtml(item.source_id || '')}</span>
         <span class="flex items-center gap-3 whitespace-nowrap">
+          ${ideaCounts[item.call_id] ? `<button type="button" class="conv-card-ideas inline-flex items-center gap-1 text-[11px] font-bold text-primary bg-lavender-soft rounded-full px-2 py-0.5"
+            data-call-id="${id}" title="${_t('Ver las ideas de otras entidades para esta convocatoria')}">
+            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">groups</span>${ideaCounts[item.call_id] === 1 ? _t('1 idea') : _t('{n} ideas', { n: ideaCounts[item.call_id] })}
+          </button>` : ''}
           <button type="button" class="conv-card-vision inline-flex items-center gap-1 text-[11px] font-semibold text-on-surface-variant hover:text-primary transition-colors"
-            data-call-id="${id}" title="${_t('Empezar mi visión sobre esta convocatoria')}">
-            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">explore</span>${_t('Visión')}
+            data-call-id="${id}" title="${_t('Proponer una idea sobre esta convocatoria')}">
+            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">lightbulb</span>${_t('Idea')}
           </button>
           ${isInEfs
             ? `<span class="text-[11px] font-bold text-primary">${_t('Ver →')}</span>`
@@ -784,15 +812,21 @@ const Convocatorias = (() => {
     const maxProj   = fmtMoney(item.budget_per_project_max_eur);
     const projRange = (minProj && maxProj && minProj !== maxProj) ? `${minProj} – ${maxProj}` : (maxProj || minProj);
 
-    // "Solicitar" ahora arranca el paso previo: crear tu Visión sobre esta
-    // convocatoria (EU Vision). El enlace al portal oficial queda como
+    // "Solicitar" ahora arranca el paso previo: proponer una idea sobre esta
+    // convocatoria (Ideas). El enlace al portal oficial queda como
     // secundario para quien quiera ir directo a solicitar fuera.
+    const nIdeas = ideaCounts[item.call_id] || 0;
     const apply = `<button type="button" id="conv-start-vision"
             data-call-id="${escapeHtml(item.call_id || '')}"
             class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
-            <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">explore</span>
-            <span>${_t('Empezar mi visión')}</span>
-          </button>`;
+            <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">lightbulb</span>
+            <span>${_t('Proponer una idea')}</span>
+          </button>${nIdeas ? `
+          <button type="button" id="conv-see-ideas" data-call-id="${escapeHtml(item.call_id || '')}"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary text-primary text-sm font-bold hover:bg-lavender-soft transition-colors">
+            <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">groups</span>
+            <span>${nIdeas === 1 ? _t('Ver 1 idea de otras entidades') : _t('Ver {n} ideas de otras entidades', { n: nIdeas })}</span>
+          </button>` : ''}`;
     const applyExternal = item.apply_url
       ? `<a href="${escapeHtml(item.apply_url)}" target="_blank" rel="noopener"
             class="inline-flex items-center gap-1 text-[12px] text-on-surface-variant hover:text-primary hover:underline">
@@ -993,7 +1027,15 @@ const Convocatorias = (() => {
         openChat(btn.dataset.sourceId, btn.dataset.title);
         return;
       }
-      // "Empezar mi visión": cierra el drawer y arranca EU Vision con esta call.
+      // Ideas de otras entidades para esta convocatoria.
+      const si = e.target.closest('#conv-see-ideas');
+      if (si) {
+        e.preventDefault();
+        closeDetail();
+        if (typeof Vision !== 'undefined') Vision.showForCall(si.dataset.callId);
+        return;
+      }
+      // «Proponer una idea»: cierra el drawer y arranca Ideas con esta call.
       const sv = e.target.closest('#conv-start-vision');
       if (sv) {
         e.preventDefault();
@@ -1028,5 +1070,5 @@ const Convocatorias = (() => {
     document.body.style.overflow = '';
   }
 
-  return { init };
+  return { init, openCall };
 })();

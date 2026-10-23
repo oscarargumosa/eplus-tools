@@ -156,3 +156,7 @@ html[lang="en"] .efs-lang a[data-lang="en"] { background: #fff; color: #4312d8; 
 .efs-lang--panel a:hover { color: #4312d8; }
 html[lang="es"] .efs-lang--panel a[data-lang="es"],
 html[lang="en"] .efs-lang--panel a[data-lang="en"] { background: #4312d8; color: #fff; }
+/* Aviso de solicitudes pendientes en «Ideas»: un punto (el número va en el menú lateral) */
+.efs-topbar__badge { display: inline-block; width: 8px; height: 8px; margin-left: 4px; border-radius: 50%; background: #e9ff60;
+  vertical-align: 6px; font-size: 0; overflow: hidden; }
+.efs-topbar__badge.hidden { display: none; }

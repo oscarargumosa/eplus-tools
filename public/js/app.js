@@ -261,6 +261,8 @@ const App = (() => {
       if (typeof AdminUsers !== 'undefined') AdminUsers.refreshCount();
     }
     if (typeof BetaAccess !== 'undefined') BetaAccess.decorate();
+    // Ideas: contador de solicitudes pendientes en mis ideas.
+    if (typeof Vision !== 'undefined') Vision.refreshBadge();
   }
 
   /* ── Auth tab switcher ─────────────────────────────────────── */
@@ -373,8 +375,9 @@ const App = (() => {
   // dos rutas muestran el mismo panel.
   const ACCOUNT_OWN_PANEL = { 'account-org': 'my-org' };
 
-  // Workspace "EU Vision": el sidebar pasa a ser el menú de visiones.
-  const VISION_ROUTES = ['eu-vision'];
+  // Workspace «Ideas» (antes EU Vision): el sidebar pasa a ser el menú de ideas.
+  // La ruta admite subvista: #ideas/mias, #ideas/solicitudes, #ideas/ver/<id>…
+  const VISION_ROUTES = ['ideas'];
 
   // Workspace "Estadísticas": submenú propio. La ruta admite subvista y
   // filtros (#estadisticas/lineas?desde=2021…); los lee estadisticas.js.
@@ -383,7 +386,7 @@ const App = (() => {
   // Rutas restringidas a admin (nav oculto + guardia en navigate + endpoint 403).
   const ADMIN_ROUTES = ['analysis'];
   // Rutas donde la persona escribe o cambia datos (indicador de guardado fijo).
-  const EDIT_ROUTES = ['intake', 'developer', 'calculator', 'budget', 'eu-vision', 'account-profile',
+  const EDIT_ROUTES = ['intake', 'developer', 'calculator', 'budget', 'ideas', 'account-profile',
     'account-org', 'my-org', 'evaluator', 'master', 'diagnose', 'shortlists', 'admin', 'admin-users'];
 
   function updateWorkspace(route) {
@@ -402,7 +405,7 @@ const App = (() => {
   function updateTopbarActive(route, isEntidades, isAccount, isVision) {
     // La cuenta no es una pestaña del menú superior: no resaltamos ninguna.
     const activeHref = isAccount              ? null
-      : isVision                              ? '#eu-vision'
+      : isVision                              ? '#ideas'
       : isEntidades                           ? '#atlas-stats'
       : route === 'convocatorias'             ? '#convocatorias'
       : route === 'movilidades'               ? '#movilidades'
@@ -424,6 +427,11 @@ const App = (() => {
     let estSub = null;
     const estM = /^estadisticas(?:[/?](.*))?$/.exec(route);
     if (estM) { estSub = estM[1] || ''; route = 'estadisticas'; }
+    // Ideas: «ideas/<vista>» → ruta + subruta. #eu-vision (nombre viejo) va a Mis ideas.
+    let ideasSub = null;
+    const ideasM = /^ideas(?:\/(.*))?$/.exec(route);
+    if (ideasM) { ideasSub = ideasM[1] || ''; route = 'ideas'; }
+    else if (route === 'eu-vision') { ideasSub = 'mias'; route = 'ideas'; pushHash = true; }
     if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')
         || (route === 'admin-presentaciones' && !isOwner())) {
       route = 'my-projects';
@@ -465,7 +473,7 @@ const App = (() => {
     if (window.SaveStatus) SaveStatus.setEditing(EDIT_ROUTES.includes(route));
 
     // Update URL hash
-    if (pushHash) location.hash = estSub ? `estadisticas/${estSub}` : route;
+    if (pushHash) location.hash = estSub ? `estadisticas/${estSub}` : ideasSub ? `ideas/${ideasSub}` : route;
 
     // Defensive: panel navigation always releases body scroll lock so an
     // orphan drawer (e.g. ficha overlay) can never strand the user with
@@ -528,7 +536,7 @@ const App = (() => {
       movilidades:      _t('Movilidades'),
       convocatorias:    _t('Convocatorias'),
       estadisticas:     _t('Estadísticas'),
-      'eu-vision':      _t('EU Vision'),
+      ideas:            _t('Ideas'),
       'my-org':         _t('Mi entidad'),
       organizations:    _t('Directorio'),
       shortlists:       _t('Mi Pool'),
@@ -570,7 +578,7 @@ const App = (() => {
       if (route === 'movilidades' && typeof Movilidades !== 'undefined') Movilidades.init();
       if (route === 'convocatorias' && typeof Convocatorias !== 'undefined') Convocatorias.init();
       if (route === 'estadisticas' && typeof Estadisticas !== 'undefined') Estadisticas.init(estSub);
-      if (route === 'eu-vision' && typeof Vision !== 'undefined') Vision.init();
+      if (route === 'ideas' && typeof Vision !== 'undefined') Vision.init(ideasSub);
       if (route === 'developer' && typeof Developer !== 'undefined') Developer.init();
       if (route === 'diagnose' && typeof Diagnose !== 'undefined') Diagnose.init();
       if (route === 'import-proposal' && typeof ImportProposal !== 'undefined') ImportProposal.init();
