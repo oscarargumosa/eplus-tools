@@ -23,16 +23,16 @@ const Auth = (() => {
         const email = document.getElementById('login-email').value;
         App.showAuthInfo({
           icon:  '✉️',
-          title: 'Verifica tu email',
-          body:  'Te hemos enviado un enlace de verificación. Revisa tu bandeja de entrada (y spam) para activar tu cuenta antes de iniciar sesión.',
+          title: _t('Verifica tu email'),
+          body:  _t('Te hemos enviado un enlace de verificación. Revisa tu bandeja de entrada (y spam) para activar tu cuenta antes de iniciar sesión.'),
           actions: [
-            { label: 'Reenviar email', primary: true,  onClick: () => resendVerification(email) },
-            { label: '← Volver al login',                  onClick: () => App.showAuthTab('login') }
+            { label: _t('Reenviar email'), primary: true,  onClick: () => resendVerification(email) },
+            { label: _t('← Volver al login'),                  onClick: () => App.showAuthTab('login') }
           ]
         });
         return;
       }
-      showError('login', err.message || 'Error al iniciar sesión');
+      showError('login', err.message || _t('Error al iniciar sesión'));
     } finally {
       setLoading('btn-login', false);
     }
@@ -47,40 +47,40 @@ const Auth = (() => {
       const email    = document.getElementById('reg-email').value;
       const password = document.getElementById('reg-password').value;
       if (window.PasswordFields && !PasswordFields.matches(document.getElementById('reg-password-confirm'))) {
-        showError('register', 'Las dos contraseñas no coinciden.');
+        showError('register', _t('Las dos contraseñas no coinciden.'));
         return;
       }
       const acepta_privacidad = !!document.getElementById('reg-privacy')?.checked;
       if (!acepta_privacidad) {
-        showError('register', 'Para crear la cuenta tienes que marcar «He leído y acepto la política de privacidad».');
+        showError('register', _t('Para crear la cuenta tienes que marcar «He leído y acepto la política de privacidad».'));
         document.getElementById('reg-privacy')?.focus();
         return;
       }
-      const data = await API.post('/auth/register', { name, email, password, acepta_privacidad }, { noAuth: true });
+      const data = await API.post('/auth/register', { name, email, password, acepta_privacidad, ui_lang: I18N.lang }, { noAuth: true });
       // No auto-login: registration now requires email verification.
       App.showAuthInfo({
         icon:  '📩',
-        title: 'Revisa tu correo para confirmar tu cuenta',
-        body:  `Te hemos enviado un correo a ${data.email || email} para confirmar tu dirección. Abre el enlace del correo para activar tu cuenta (si no lo ves, mira en spam).`,
+        title: _t('Revisa tu correo para confirmar tu cuenta'),
+        body:  _t('Te hemos enviado un correo a {email} para confirmar tu dirección. Abre el enlace del correo para activar tu cuenta (si no lo ves, mira en spam).', { email: data.email || email }),
         actions: [
-          { label: 'Reenviar email', primary: true,  onClick: () => resendVerification(data.email || email) },
-          { label: 'Ir al login',                         onClick: () => App.showAuthTab('login') }
+          { label: _t('Reenviar email'), primary: true,  onClick: () => resendVerification(data.email || email) },
+          { label: _t('Ir al login'),                         onClick: () => App.showAuthTab('login') }
         ]
       });
     } catch (err) {
-      showError('register', err.message || 'Error al registrarse');
+      showError('register', err.message || _t('Error al registrarse'));
     } finally {
       setLoading('btn-register', false);
     }
   }
 
   async function resendVerification(email) {
-    if (!email) return Toast.show('Introduce tu email primero', 'err');
+    if (!email) return Toast.show(_t('Introduce tu email primero'), 'err');
     try {
       await API.post('/auth/resend-verification', { email }, { noAuth: true });
-      Toast.show('Si la cuenta existe y no estaba verificada, te enviamos un nuevo enlace.', 'ok');
+      Toast.show(_t('Si la cuenta existe y no estaba verificada, te enviamos un nuevo enlace.'), 'ok');
     } catch (err) {
-      Toast.show(err.message || 'No se pudo reenviar', 'err');
+      Toast.show(err.message || _t('No se pudo reenviar'), 'err');
     }
   }
 
@@ -93,14 +93,14 @@ const Auth = (() => {
       await API.post('/auth/forgot-password', { email }, { noAuth: true });
       App.showAuthInfo({
         icon:  '🔐',
-        title: 'Revisa tu correo',
-        body:  `Si existe una cuenta con ${email}, te hemos enviado un enlace para restablecer la contraseña. El enlace expira en 1 hora.`,
+        title: _t('Revisa tu correo'),
+        body:  _t('Si existe una cuenta con {email}, te hemos enviado un enlace para restablecer la contraseña. El enlace expira en 1 hora.', { email }),
         actions: [
-          { label: 'Volver al login', primary: true, onClick: () => App.showAuthTab('login') }
+          { label: _t('Volver al login'), primary: true, onClick: () => App.showAuthTab('login') }
         ]
       });
     } catch (err) {
-      showError('forgot', err.message || 'No se pudo enviar');
+      showError('forgot', err.message || _t('No se pudo enviar'));
     } finally {
       setLoading('btn-forgot', false);
     }
@@ -113,11 +113,11 @@ const Auth = (() => {
     try {
       const password = document.getElementById('reset-password').value;
       if (window.PasswordFields && !PasswordFields.matches(document.getElementById('reset-password-confirm'))) {
-        showError('reset', 'Las dos contraseñas no coinciden.');
+        showError('reset', _t('Las dos contraseñas no coinciden.'));
         return;
       }
       if (!pendingResetToken) {
-        showError('reset', 'Token no encontrado. Vuelve a solicitar un enlace de recuperación.');
+        showError('reset', _t('Token no encontrado. Vuelve a solicitar un enlace de recuperación.'));
         return;
       }
       await API.post('/auth/reset-password', { token: pendingResetToken, password }, { noAuth: true });
@@ -126,14 +126,14 @@ const Auth = (() => {
       pendingResetToken = null;
       App.showAuthInfo({
         icon:  '✅',
-        title: 'Contraseña actualizada',
-        body:  'Ya puedes iniciar sesión con tu nueva contraseña.',
+        title: _t('Contraseña actualizada'),
+        body:  _t('Ya puedes iniciar sesión con tu nueva contraseña.'),
         actions: [
-          { label: 'Ir al login', primary: true, onClick: () => App.showAuthTab('login') }
+          { label: _t('Ir al login'), primary: true, onClick: () => App.showAuthTab('login') }
         ]
       });
     } catch (err) {
-      showError('reset', err.message || 'No se pudo cambiar la contraseña');
+      showError('reset', err.message || _t('No se pudo cambiar la contraseña'));
     } finally {
       setLoading('btn-reset', false);
     }
@@ -153,31 +153,31 @@ const Auth = (() => {
         // Primera confirmación = alta completa: el servidor ya ha enviado la bienvenida.
         App.showAuthInfo({
           icon:  '✅',
-          title: 'Email confirmado',
+          title: _t('Email confirmado'),
           body:  json.data?.first_time
-            ? 'Tu cuenta está confirmada. Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!'
-            : 'Tu cuenta ya estaba activa. Ya puedes entrar.',
+            ? _t('Tu cuenta está confirmada. Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!')
+            : _t('Tu cuenta ya estaba activa. Ya puedes entrar.'),
           actions: [
-            { label: 'Entrar', primary: true, onClick: () => App.showAuthTab('login') }
+            { label: _t('Entrar'), primary: true, onClick: () => App.showAuthTab('login') }
           ]
         });
       } else {
         App.showAuthInfo({
           icon:  '⚠️',
-          title: 'Enlace inválido o caducado',
-          body:  json.error?.message || 'Este enlace de verificación no es válido o ha caducado.',
+          title: _t('Enlace inválido o caducado'),
+          body:  json.error?.message || _t('Este enlace de verificación no es válido o ha caducado.'),
           actions: [
-            { label: 'Ir al login', primary: true, onClick: () => App.showAuthTab('login') }
+            { label: _t('Ir al login'), primary: true, onClick: () => App.showAuthTab('login') }
           ]
         });
       }
     } catch {
       App.showAuthInfo({
         icon:  '⚠️',
-        title: 'No se pudo verificar',
-        body:  'Hubo un problema al validar tu enlace. Inténtalo de nuevo más tarde.',
+        title: _t('No se pudo verificar'),
+        body:  _t('Hubo un problema al validar tu enlace. Inténtalo de nuevo más tarde.'),
         actions: [
-          { label: 'Ir al login', primary: true, onClick: () => App.showAuthTab('login') }
+          { label: _t('Ir al login'), primary: true, onClick: () => App.showAuthTab('login') }
         ]
       });
     }
@@ -191,7 +191,7 @@ const Auth = (() => {
       App.onAuth(data.user);
       if (data.created) App.showWelcome();   // alta nueva: mismo mensaje que el registro propio
     } catch (err) {
-      Toast.show(err.message || 'Error al iniciar sesión con Google', 'err');
+      Toast.show(err.message || _t('Error al iniciar sesión con Google'), 'err');
     }
   }
 

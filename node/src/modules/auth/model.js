@@ -17,23 +17,23 @@ const User = {
 
   async findById(id) {
     const [rows] = await db.query(
-      'SELECT id, email, name, role, subscription, email_verified, created_at, updated_at FROM users WHERE id = ? LIMIT 1',
+      'SELECT id, email, name, role, subscription, email_verified, ui_lang, created_at, updated_at FROM users WHERE id = ? LIMIT 1',
       [id]
     );
     return rows[0] || null;
   },
 
-  async create({ email, passwordHash, name }) {
+  async create({ email, passwordHash, name, uiLang = null }) {
     const id = uuid();
     // Solo se llega aquí con la casilla de privacidad marcada (controller.register).
     await db.query(
-      'INSERT INTO users (id, email, password_hash, name, privacy_accepted_at) VALUES (?, ?, ?, ?, NOW())',
-      [id, email.toLowerCase().trim(), passwordHash, name.trim()]
+      'INSERT INTO users (id, email, password_hash, name, privacy_accepted_at, ui_lang) VALUES (?, ?, ?, ?, NOW(), ?)',
+      [id, email.toLowerCase().trim(), passwordHash, name.trim(), uiLang]
     );
-    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', email_verified: 0 };
+    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', email_verified: 0, ui_lang: uiLang };
   },
 
-  async findOrCreateFromGoogle({ email, name, picture }) {
+  async findOrCreateFromGoogle({ email, name, picture, uiLang = null }) {
     let user = await User.findByEmail(email);
     // Foto de Google solo si es https de googleusercontent (nada de URLs
     // arbitrarias en el menú) y solo si la persona no tiene ya una.
@@ -50,17 +50,17 @@ const User = {
       if (!user.email_verified) {
         await db.query('UPDATE users SET email_verified = 1 WHERE id = ?', [user.id]);
       }
-      return { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription, token_version: user.token_version || 0 };
+      return { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription, ui_lang: user.ui_lang || null, token_version: user.token_version || 0 };
     }
 
     const id = uuid();
     // Alta con Google: el botón lleva debajo el aviso «Al continuar aceptas la política de privacidad».
     await db.query(
-      "INSERT INTO users (id, email, password_hash, name, email_verified, privacy_accepted_at) VALUES (?, ?, '', ?, 1, NOW())",
-      [id, email.toLowerCase().trim(), name.trim()]
+      "INSERT INTO users (id, email, password_hash, name, email_verified, privacy_accepted_at, ui_lang) VALUES (?, ?, '', ?, 1, NOW(), ?)",
+      [id, email.toLowerCase().trim(), name.trim(), uiLang]
     );
     await savePicture(id);
-    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', created: true };
+    return { id, email: email.toLowerCase().trim(), name: name.trim(), role: 'user', subscription: 'free', ui_lang: uiLang, created: true };
   },
 
   /* Devuelve true si la cuenta no estaba verificada (alta que se completa ahora). */
@@ -132,6 +132,11 @@ const User = {
     if (!m) return;
     const file = require('path').join(__dirname, '../../../../public/uploads/avatars', m[1]);
     require('fs').unlink(file, () => {});
+  },
+
+  /* Idioma de la interfaz ('es' | 'en'); también el de sus correos. */
+  async setUiLang(userId, lang) {
+    await db.query('UPDATE users SET ui_lang = ? WHERE id = ?', [lang, userId]);
   },
 
   /* Full name update (self-service profile). Returns the fresh safe user. */

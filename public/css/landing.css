@@ -377,3 +377,14 @@ b { font-weight: 600; }
   .js .aparece, .js .revela { opacity: 1; transform: none; }
   .js .aparece-img { clip-path: none; }
 }
+
+/* ── Selector de idioma ES · EN (js/i18n.js) ─────────────────────
+   El activo lo marca <html lang>, que pone el servidor. */
+.efs-lang { display: inline-flex; align-items: center; flex-shrink: 0; padding: 2px;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 999px; }
+.efs-lang a { padding: 4px 10px; border-radius: 999px; color: rgba(255,255,255,.8); text-decoration: none;
+  font-size: 12px; font-weight: 700; letter-spacing: .04em; line-height: 1.4; transition: color .15s, background-color .15s; }
+.efs-lang a:hover { color: #fff; }
+html[lang="es"] .efs-lang a[data-lang="es"],
+html[lang="en"] .efs-lang a[data-lang="en"] { background: #fff; color: var(--azul); }
+@media (max-width: 480px) { .cab__acc { gap: 14px; } .efs-lang a { padding: 4px 8px; font-size: 11px; } }

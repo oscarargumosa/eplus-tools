@@ -11,7 +11,7 @@ function validate(schema) {
       }
     }
     if (errors.length > 0) {
-      return res.status(400).json({ ok: false, error: 'Validation failed', details: errors });
+      return res.status(400).json({ ok: false, error: 'Faltan datos obligatorios', details: errors });
     }
     next();
   };

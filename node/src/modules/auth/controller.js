@@ -6,6 +6,7 @@ const subscribersModel = require('../subscribers/model');
 const { sendVerificationEmail, sendPasswordResetEmail, onNewUser } = require('../../utils/email');
 const { audit } = require('../../utils/audit');
 const { setSessionHint, clearSessionHint } = require('../../middleware/guestGate');
+const i18n = require('../../utils/i18n');
 
 const SALT_ROUNDS = 12;
 
@@ -78,7 +79,7 @@ const AuthController = {
   /* ── POST /v1/auth/register ────────────────────────────────── */
   async register(req, res) {
     try {
-      const { email, password, name, acepta_privacidad } = req.body;
+      const { email, password, name, acepta_privacidad, ui_lang } = req.body;
 
       // Casilla obligatoria «He leído y acepta la política de privacidad».
       if (acepta_privacidad !== true) {
@@ -104,12 +105,14 @@ const AuthController = {
       }
 
       const passwordHash = await bcrypt.hash(password, SALT_ROUNDS);
-      const user = await User.create({ email, passwordHash, name });
+      // Idioma: el de la pantalla en la que se registró (o el de la petición).
+      const uiLang = i18n.isLang(ui_lang) ? ui_lang : req.lang;
+      const user = await User.create({ email, passwordHash, name, uiLang });
       audit(req, 'auth.register', { actor: user, targetType: 'user', targetId: user.id });
 
       // Generate verification token & send email (do NOT auto-login)
       const token = await User.createVerificationToken(user.id);
-      const result = await sendVerificationEmail({ to: user.email, name: user.name, token });
+      const result = await sendVerificationEmail({ to: user.email, name: user.name, token, lang: user.ui_lang });
       if (!result.ok && !result.mock) {
         console.error('[AUTH] Verification email failed:', result.error);
       }
@@ -125,7 +128,7 @@ const AuthController = {
       });
     } catch (err) {
       console.error('[AUTH] Register error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Registration failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido crear la cuenta' } });
     }
   },
 
@@ -158,7 +161,7 @@ const AuthController = {
         });
       }
 
-      const safeUser = { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription };
+      const safeUser = { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription, ui_lang: user.ui_lang || null };
       const tokenUser = { ...safeUser, token_version: user.token_version || 0 };
       const accessToken  = signToken(tokenUser);
       const refreshToken = signRefreshToken(tokenUser);
@@ -173,7 +176,7 @@ const AuthController = {
       });
     } catch (err) {
       console.error('[AUTH] Login error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Login failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido iniciar sesión' } });
     }
   },
 
@@ -183,7 +186,7 @@ const AuthController = {
       const { credential } = req.body;
       if (!credential) {
         return res.status(400).json({
-          ok: false, error: { code: 'BAD_REQUEST', message: 'Google credential is required' }
+          ok: false, error: { code: 'BAD_REQUEST', message: 'Falta la credencial de Google' }
         });
       }
 
@@ -205,7 +208,8 @@ const AuthController = {
       const user = await User.findOrCreateFromGoogle({
         email:   payload.email,
         name:    payload.name || payload.email.split('@')[0],
-        picture: payload.picture || null
+        picture: payload.picture || null,
+        uiLang:  req.lang
       });
 
       const accessToken  = signToken(user);
@@ -218,7 +222,7 @@ const AuthController = {
       // Alta nueva: correo de bienvenida + aviso al dueño; la SPA enseña el mensaje con `created`.
       const created = !!user.created;
       delete user.created;
-      if (created) onNewUser(user, 'Google');
+      if (created) onNewUser(user, 'Google');   // i18n-no (vía del aviso interno)
       await withAreas(user);
       res.json({
         ok: true,
@@ -227,7 +231,7 @@ const AuthController = {
     } catch (err) {
       console.error('[AUTH] Google login error:', err.message);
       res.status(401).json({
-        ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid Google credential' }
+        ok: false, error: { code: 'UNAUTHORIZED', message: 'No se ha podido entrar con Google' }
       });
     }
   },
@@ -236,7 +240,7 @@ const AuthController = {
   async verifyEmail(req, res) {
     try {
       const token = req.query.token || req.body?.token;
-      if (!token) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Token required' } });
+      if (!token) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Falta el enlace de confirmación' } });
 
       const result = await User.consumeVerificationToken(String(token));
       if (!result) {
@@ -246,11 +250,11 @@ const AuthController = {
         });
       }
       // Primera verificación = alta completa: bienvenida a la persona + aviso al dueño.
-      if (result.firstTime) onNewUser({ id: result.userId, email: result.email, name: result.name }, 'Registro propio');
+      if (result.firstTime) onNewUser({ id: result.userId, email: result.email, name: result.name }, 'Registro propio');   // i18n-no (aviso interno)
       res.json({ ok: true, data: { message: 'Email confirmado. Ya puedes entrar.', email: result.email, first_time: !!result.firstTime } });
     } catch (err) {
       console.error('[AUTH] Verify email error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Verification failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido confirmar el email' } });
     }
   },
 
@@ -258,19 +262,19 @@ const AuthController = {
   async resendVerification(req, res) {
     try {
       const { email } = req.body || {};
-      if (!email) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Email required' } });
+      if (!email) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Introduce tu email' } });
 
       const user = await User.findByEmail(email);
       // Always respond with a generic ok to avoid leaking which emails exist
       if (user && !user.email_verified) {
         const token = await User.createVerificationToken(user.id);
-        const result = await sendVerificationEmail({ to: user.email, name: user.name, token });
+        const result = await sendVerificationEmail({ to: user.email, name: user.name, token, lang: user.ui_lang || req.lang });
         if (!result.ok && !result.mock) console.error('[AUTH] Resend verification failed:', result.error);
       }
-      res.json({ ok: true, data: { message: 'If an unverified account exists, a new link has been sent.' } });
+      res.json({ ok: true, data: { message: 'Si la cuenta existe y no estaba verificada, te hemos enviado un enlace nuevo.' } });
     } catch (err) {
       console.error('[AUTH] Resend verification error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Resend failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido reenviar' } });
     }
   },
 
@@ -278,19 +282,19 @@ const AuthController = {
   async forgotPassword(req, res) {
     try {
       const { email } = req.body || {};
-      if (!email) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Email required' } });
+      if (!email) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Introduce tu email' } });
 
       const user = await User.findByEmail(email);
       // Always respond ok (avoid email enumeration)
       if (user) {
         const token = await User.createPasswordResetToken(user.id);
-        const result = await sendPasswordResetEmail({ to: user.email, name: user.name, token });
+        const result = await sendPasswordResetEmail({ to: user.email, name: user.name, token, lang: user.ui_lang || req.lang });
         if (!result.ok && !result.mock) console.error('[AUTH] Reset email failed:', result.error);
       }
-      res.json({ ok: true, data: { message: 'If an account exists with that email, a reset link has been sent.' } });
+      res.json({ ok: true, data: { message: 'Si existe una cuenta con ese email, te hemos enviado un enlace para cambiar la contraseña.' } });
     } catch (err) {
       console.error('[AUTH] Forgot password error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Request failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido enviar' } });
     }
   },
 
@@ -298,7 +302,7 @@ const AuthController = {
   async resetPassword(req, res) {
     try {
       const { token, password } = req.body || {};
-      if (!token) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Token required' } });
+      if (!token) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Falta el enlace para cambiar la contraseña' } });
 
       const pwErr = validatePassword(password);
       if (pwErr) return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: pwErr } });
@@ -318,16 +322,16 @@ const AuthController = {
       // Si la cuenta no estaba verificada, el alta se completa aquí: bienvenida + aviso.
       if (await User.markEmailVerified(result.userId)) {
         const u = await User.findById(result.userId);
-        if (u) onNewUser(u, 'Registro propio');
+        if (u) onNewUser(u, 'Registro propio');   // i18n-no (aviso interno)
       }
       // Cierra todas las sesiones abiertas (p. ej. las de quien robó la cuenta).
       await User.bumpTokenVersion(result.userId);
       audit(req, 'auth.password.reset', { actor: { id: result.userId }, targetType: 'user', targetId: result.userId });
 
-      res.json({ ok: true, data: { message: 'Password updated. You can now sign in.' } });
+      res.json({ ok: true, data: { message: 'Contraseña actualizada. Ya puedes entrar.' } });
     } catch (err) {
       console.error('[AUTH] Reset password error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Reset failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido cambiar la contraseña' } });
     }
   },
 
@@ -338,7 +342,7 @@ const AuthController = {
       if (!token) {
         clearSessionHint(res);
         return res.status(401).json({
-          ok: false, error: { code: 'UNAUTHORIZED', message: 'No refresh token' }
+          ok: false, error: { code: 'UNAUTHORIZED', message: 'No hay sesión' }
         });
       }
 
@@ -348,7 +352,7 @@ const AuthController = {
       } catch {
         clearRefreshCookie(res);
         return res.status(401).json({
-          ok: false, error: { code: 'UNAUTHORIZED', message: 'Invalid refresh token' }
+          ok: false, error: { code: 'UNAUTHORIZED', message: 'La sesión no es válida' }
         });
       }
 
@@ -356,7 +360,7 @@ const AuthController = {
       if (!user) {
         clearRefreshCookie(res);
         return res.status(401).json({
-          ok: false, error: { code: 'UNAUTHORIZED', message: 'User not found' }
+          ok: false, error: { code: 'UNAUTHORIZED', message: 'La cuenta no existe' }
         });
       }
 
@@ -365,7 +369,7 @@ const AuthController = {
       if ((payload.tv || 0) !== tv) {
         clearRefreshCookie(res);
         return res.status(401).json({
-          ok: false, error: { code: 'TOKEN_REVOKED', message: 'Session revoked' }
+          ok: false, error: { code: 'TOKEN_REVOKED', message: 'La sesión se ha cerrado' }
         });
       }
 
@@ -374,7 +378,7 @@ const AuthController = {
       res.json({ ok: true, data: { access_token: accessToken } });
     } catch (err) {
       console.error('[AUTH] Refresh error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Token refresh failed' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido renovar la sesión' } });
     }
   },
 
@@ -384,7 +388,7 @@ const AuthController = {
       const user = await User.findById(req.user.id);
       if (!user) {
         return res.status(404).json({
-          ok: false, error: { code: 'NOT_FOUND', message: 'User not found' }
+          ok: false, error: { code: 'NOT_FOUND', message: 'La cuenta no existe' }
         });
       }
       // Tells the account UI whether to ask for the current password on change
@@ -397,7 +401,7 @@ const AuthController = {
       res.json({ ok: true, data: user });
     } catch (err) {
       console.error('[AUTH] Me error:', err.message);
-      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Failed to get user' } });
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido cargar la cuenta' } });
     }
   },
 
@@ -417,6 +421,24 @@ const AuthController = {
     } catch (err) {
       console.error('[AUTH] Update me error:', err.message);
       res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo actualizar el perfil' } });
+    }
+  },
+
+  /* ── PATCH /v1/auth/me/lang ────────────────────────────────── */
+  /* Idioma de la interfaz que elige la persona (selector ES · EN). Se
+   * guarda en la cuenta (también manda en sus correos) y en la cookie. */
+  async setLang(req, res) {
+    try {
+      const { lang } = req.body || {};
+      if (!i18n.isLang(lang)) {
+        return res.status(400).json({ ok: false, error: { code: 'VALIDATION', message: 'Idioma no disponible' } });
+      }
+      await User.setUiLang(req.user.id, lang);
+      i18n.setLangCookie(res, lang);
+      res.json({ ok: true, data: { ui_lang: lang } });
+    } catch (err) {
+      console.error('[AUTH] Set lang error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se ha podido guardar el idioma' } });
     }
   },
 
@@ -499,7 +521,7 @@ const AuthController = {
   /* ── POST/DELETE /v1/auth/me/avatar — foto de perfil ─────────── */
   async uploadAvatar(req, res) {
     try {
-      if (!req.file) return res.status(400).json({ ok: false, error: { code: 'NO_FILE', message: 'No file uploaded' } });
+      if (!req.file) return res.status(400).json({ ok: false, error: { code: 'NO_FILE', message: 'No has subido ningún archivo' } });
       const prev = await User.getAvatarUrl(req.user.id);
       await User.setAvatarUrl(req.user.id, '/uploads/avatars/' + req.file.filename);
       User.removeAvatarFile(prev);
@@ -526,7 +548,7 @@ const AuthController = {
   /* ── POST /v1/auth/logout ──────────────────────────────────── */
   logout(_req, res) {
     clearRefreshCookie(res);
-    res.json({ ok: true, data: { message: 'Logged out' } });
+    res.json({ ok: true, data: { message: 'Sesión cerrada' } });
   },
 
   /* ── POST /v1/auth/logout-all ──────────────────────────────── */

@@ -112,6 +112,11 @@ Sesión auditando el desajuste Consortium↔Directorio en LIVE. Confirmado contr
 
 ## 2 · Pendientes sin bloqueante (cuando se quiera)
 
+### TASK-013 — Interfaz en inglés: migrar el resto de secciones
+**Status:** fase 1 hecha el 23-oct-2026 (barra superior, entrada y registro, barra lateral, Mi cuenta, fase beta, indicador de guardado, correos de la cuenta, web pública con `/en/`). Doc canónico: `docs/IDIOMAS.md`.
+**Pendiente:** pasar al sistema, sección a sección, Convocatorias, EU Vision, Entidades (Atlas, Directorio, Mi Pool, Mi entidad), Movilidades, Estadísticas, Proyectos (Mis Proyectos, Diseñar, Escribir, Diagnóstico, Evaluar, Presupuesto, Documentos, Research), Academia y Admin. Mientras tanto se ven en español aunque se elija inglés. Lo que se toque por otro motivo se migra en ese mismo cambio.
+**Revisión:** un nativo repasa el inglés una vez al mes (Óscar decide quién).
+
 ### TASK-012 — EU Vision (asistente idea → ficha de visión)
 **Status:** **EN PRODUCCIÓN desde el 7-sep-2026.** F1+F2 implementadas y verificadas E2E el 11-jul, commiteadas en `88da0257a` y mergeadas a `main` el 16-jul — **no estaban "sin commit"**. Lo que faltaba era el deploy: hasta el 7-sep prod corría el commit del 4-jul y el módulo `vision` no existía en el contenedor. Migraciones 123/124/125 aplicadas ya en la BD de prod; `GET /v1/vision` responde 401 (ruta viva). La IA en prod funciona vía **ai-bridge** (ver `docs/AI_BRIDGE.md`): se acabó el 503. Queda F3 pulido + wiring del Libro de Hechos en F4
 **Owner:** Local Claude (eplus-tools)

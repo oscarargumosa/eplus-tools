@@ -1,0 +1,20 @@
+{
+  "_leeme": "Ficheros ya pasados al sistema de idiomas (node/src/utils/i18n.js). En ellos, scripts/i18n-check.js no deja pasar textos en español sin traducción. Al migrar otro fichero, añádelo aquí. Los HTML se comprueban solos: todo lo que esté dentro de una zona data-i18n.",
+  "js": [
+    "public/js/i18n.js",
+    "public/js/topbar.js",
+    "public/js/auth.js",
+    "public/js/app.js",
+    "public/js/account.js",
+    "public/js/password-fields.js",
+    "public/js/beta-access.js",
+    "public/js/landing.js",
+    "public/js/save-status.js"
+  ],
+  "servidor": [
+    "node/src/modules/auth/controller.js",
+    "node/src/modules/auth/routes.js",
+    "node/src/middleware/validate.js",
+    "node/src/utils/email.js"
+  ]
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "migrate": "node scripts/migrate.js"
+    "migrate": "node scripts/migrate.js",
+    "i18n:check": "node scripts/i18n-check.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",

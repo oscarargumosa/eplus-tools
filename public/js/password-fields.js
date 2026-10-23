@@ -26,7 +26,7 @@
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'pw-eye';
-    btn.setAttribute('aria-label', 'Mostrar la contraseña');
+    btn.setAttribute('aria-label', _t('Mostrar la contraseña'));
     btn.setAttribute('aria-pressed', 'false');
     if (input.id) btn.setAttribute('aria-controls', input.id);
     btn.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">visibility</span>';
@@ -34,7 +34,7 @@
       var mostrar = input.type === 'password';
       input.type = mostrar ? 'text' : 'password';
       btn.setAttribute('aria-pressed', String(mostrar));
-      btn.setAttribute('aria-label', mostrar ? 'Ocultar la contraseña' : 'Mostrar la contraseña');
+      btn.setAttribute('aria-label', mostrar ? _t('Ocultar la contraseña') : _t('Mostrar la contraseña'));
       btn.firstChild.textContent = mostrar ? 'visibility_off' : 'visibility';
       input.focus();
     });
@@ -49,7 +49,7 @@
         });
         input.form.querySelectorAll('.pw-eye').forEach(function (b) {
           b.setAttribute('aria-pressed', 'false');
-          b.setAttribute('aria-label', 'Mostrar la contraseña');
+          b.setAttribute('aria-label', _t('Mostrar la contraseña'));
           b.firstChild.textContent = 'visibility';
         });
       });
@@ -72,8 +72,8 @@
     function check() {
       if (!confirm.value) { note.textContent = ''; note.className = 'pw-match'; confirm.setCustomValidity(''); return; }
       var ok = confirm.value === other.value;
-      confirm.setCustomValidity(ok ? '' : 'Las contraseñas no coinciden');
-      note.textContent = ok ? '✓ Las contraseñas coinciden' : 'Las contraseñas no coinciden';
+      confirm.setCustomValidity(ok ? '' : _t('Las contraseñas no coinciden'));
+      note.textContent = ok ? _t('✓ Las contraseñas coinciden') : _t('Las contraseñas no coinciden');
       note.className = 'pw-match ' + (ok ? 'is-ok' : 'is-ko');
     }
     confirm.addEventListener('input', check);

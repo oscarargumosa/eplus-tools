@@ -12,13 +12,13 @@ const BetaAccess = (() => {
   // Etiquetas y textos por área (las claves = utils/areas.js).
   const AREAS = {
     proyectos: {
-      label: 'Proyectos',
-      what:  'Diseñar, escribir, presupuestar, diagnosticar y evaluar tus proyectos, además de tus documentos y tu investigación.',
+      label: _t('Proyectos'),
+      what:  _t('Diseñar, escribir, presupuestar, diagnosticar y evaluar tus proyectos, además de tus documentos y tu investigación.'),
       home:  '/#my-projects',
     },
     academia: {
-      label: 'Academia',
-      what:  'Cursos, lecciones, tests y certificados.',
+      label: _t('Academia'),
+      what:  _t('Cursos, lecciones, tests y certificados.'),
       home:  '/academia',
     },
   };
@@ -42,7 +42,7 @@ const BetaAccess = (() => {
   const label = (area) => (AREAS[area] && AREAS[area].label) || area;
 
   function fmtDate(d) {
-    try { return new Date(d).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }); }
+    try { return new Date(d).toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' }); }
     catch { return ''; }
   }
 
@@ -120,34 +120,34 @@ const BetaAccess = (() => {
     const titleId = `beta-title-${area}-${modal ? 'm' : 'p'}`;
     return `
       <div class="beta-card" ${modal ? `role="dialog" aria-modal="true" aria-labelledby="${titleId}"` : ''}>
-        ${modal ? '<button type="button" class="beta-close" aria-label="Cerrar">&times;</button>' : ''}
-        <span class="beta-eyebrow">${LOCK}Fase beta</span>
-        <h2 id="${titleId}" class="beta-title">Fase beta. ${esc(a.label)} está abierta solo a clientes seleccionados.</h2>
-        <p class="beta-text">${esc(a.what)} Estamos abriéndolo poco a poco para acompañar bien a cada cliente.</p>
+        ${modal ? `<button type="button" class="beta-close" aria-label="${_t('Cerrar')}">&times;</button>` : ''}
+        <span class="beta-eyebrow">${LOCK}${_t('Fase beta')}</span>
+        <h2 id="${titleId}" class="beta-title">${_t('Fase beta. {area} está abierta solo a clientes seleccionados.', { area: esc(a.label) })}</h2>
+        <p class="beta-text">${esc(a.what)} ${_t('Estamos abriéndolo poco a poco para acompañar bien a cada cliente.')}</p>
         <div class="beta-body" data-beta-body>
-          <p class="beta-text beta-muted">Cargando…</p>
+          <p class="beta-text beta-muted">${_t('Cargando…')}</p>
         </div>
-        <p class="beta-foot">Mientras tanto ya puedes usar
-          <a href="/#my-org">Entidades</a>, <a href="/#convocatorias">Convocatorias</a>,
-          <a href="/#movilidades">Movilidades</a>, <a href="/#eu-vision">EU Vision</a> y
-          <a href="/recursos/">Recursos</a>.</p>
+        <p class="beta-foot">${_t('Mientras tanto ya puedes usar {enlaces}.', { enlaces:
+          `<a href="/#my-org">${_t('Entidades')}</a>, <a href="/#convocatorias">${_t('Convocatorias')}</a>, ` +
+          `<a href="/#movilidades">${_t('Movilidades')}</a>, <a href="/#eu-vision">EU Vision</a> ${_t('y')} ` +
+          `<a href="/recursos/">${_t('Recursos')}</a>` })}</p>
       </div>`;
   }
 
   function pendingHtml(r) {
     return `<div class="beta-status" role="status">
-      <strong>Solicitud enviada el ${esc(fmtDate(r.created_at))}.</strong>
-      Te escribiremos en cuanto tengas acceso.</div>`;
+      <strong>${_t('Solicitud enviada el {fecha}.', { fecha: esc(fmtDate(r.created_at)) })}</strong>
+      ${_t('Te escribiremos en cuanto tengas acceso.')}</div>`;
   }
 
   function formHtml(area) {
     const id = `beta-msg-${area}-${Math.random().toString(36).slice(2, 7)}`;
     return `<form class="beta-form" novalidate>
-        <label for="${id}" class="beta-label">Cuéntanos tu proyecto <span class="beta-muted">(opcional)</span></label>
+        <label for="${id}" class="beta-label">${_t('Cuéntanos tu proyecto')} <span class="beta-muted">${_t('(opcional)')}</span></label>
         <textarea id="${id}" name="message" maxlength="500" rows="3"
-          placeholder="Por ejemplo: somos una asociación juvenil y preparamos un KA2 para la próxima convocatoria."></textarea>
+          placeholder="${_t('Por ejemplo: somos una asociación juvenil y preparamos un KA2 para la próxima convocatoria.')}"></textarea>
         <div class="beta-error" role="alert" hidden></div>
-        <button type="submit" class="beta-btn">Solicitar acceso</button>
+        <button type="submit" class="beta-btn">${_t('Solicitar acceso')}</button>
       </form>
       <div class="beta-status" role="status" hidden></div>`;
   }
@@ -173,14 +173,14 @@ const BetaAccess = (() => {
         form.remove();
         status.hidden = false;
         status.innerHTML = d.already
-          ? `<strong>Solicitud enviada el ${esc(fmtDate(d.request && d.request.created_at))}.</strong> Te escribiremos en cuanto tengas acceso.`
-          : '<strong>Solicitud recibida.</strong> Te escribiremos en cuanto tengas acceso.';
+          ? `<strong>${_t('Solicitud enviada el {fecha}.', { fecha: esc(fmtDate(d.request && d.request.created_at)) })}</strong> ${_t('Te escribiremos en cuanto tengas acceso.')}`
+          : `<strong>${_t('Solicitud recibida.')}</strong> ${_t('Te escribiremos en cuanto tengas acceso.')}`;
       } catch (err) {
         btn.disabled = false;
         error.hidden = false;
         error.textContent = err && err.code === 'ALREADY_GRANTED'
-          ? 'Ya tienes acceso. Recarga la página para entrar.'
-          : (err && err.message) || 'No se pudo enviar la solicitud. Prueba de nuevo.';
+          ? _t('Ya tienes acceso. Recarga la página para entrar.')
+          : (err && err.message) || _t('No se pudo enviar la solicitud. Prueba de nuevo.');
       }
     });
   }
@@ -230,13 +230,13 @@ const BetaAccess = (() => {
     const fresh = (user && Array.isArray(user.areas_new) ? user.areas_new : []).filter(a => AREAS[a]);
     if (!fresh.length) return;
     const names = fresh.map(label);
-    const text = names.length > 1 ? names.slice(0, -1).join(', ') + ' y ' + names[names.length - 1] : names[0];
+    const text = names.length > 1 ? names.slice(0, -1).join(', ') + ' ' + _t('y') + ' ' + names[names.length - 1] : names[0];
     const box = document.createElement('div');
     box.className = 'beta-granted';
     box.setAttribute('role', 'status');
-    box.innerHTML = `<div><strong>Ya tienes acceso a ${esc(text)}.</strong>
-      <span>Gracias por probar EU Funding Studio en esta fase beta.</span></div>
-      <button type="button" aria-label="Cerrar">&times;</button>`;
+    box.innerHTML = `<div><strong>${_t('Ya tienes acceso a {area}.', { area: esc(text) })}</strong>
+      <span>${_t('Gracias por probar EU Funding Studio en esta fase beta.')}</span></div>
+      <button type="button" aria-label="${_t('Cerrar')}">&times;</button>`;
     box.querySelector('button').addEventListener('click', () => box.remove());
     document.body.appendChild(box);
     setTimeout(() => box.remove(), 15000);

@@ -33,7 +33,7 @@ const authLimiter = rateLimit({
   max: 5,
   standardHeaders: true,
   legacyHeaders: false,
-  message: { ok: false, error: { code: 'RATE_LIMITED', message: 'Too many attempts. Try again in a minute.' } }
+  message: { ok: false, error: { code: 'RATE_LIMITED', message: 'Demasiados intentos. Prueba dentro de un minuto.' } }
 });
 
 /* ── Límite por email (10 / 15 min), además del de IP ──────────
@@ -66,6 +66,7 @@ router.get('/me',        requireAuth, controller.me);
 router.patch('/me',      requireAuth, validate({ name: 'required' }), controller.updateMe);
 router.post  ('/me/avatar', requireAuth, uploadAvatar.single('avatar'), imageUploadGuard(), controller.uploadAvatar);
 router.delete('/me/avatar', requireAuth, controller.deleteAvatar);
+router.patch('/me/lang', requireAuth, controller.setLang);
 router.post('/change-password', authLimiter, requireAuth, controller.changePassword);
 router.get('/session-status', controller.sessionStatus);
 router.post('/logout',   controller.logout);
