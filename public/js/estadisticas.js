@@ -34,6 +34,8 @@ const Estadisticas = (() => {
     { id: 'entidades', nombre: 'Ranking de entidades', icono: 'leaderboard' },
   ];
 
+  // Periodo por defecto: todo el histórico de la foto (Óscar, 23-oct-2026), como la ficha de cada entidad.
+  const DESDE_DEF = 2014;
   let META = null;
   let built = false;
   let charts = [];
@@ -41,10 +43,10 @@ const Estadisticas = (() => {
 
   const S = {
     vista: 'paises', id: null,
-    f: { desde: 2021, hasta: 2025, grupo: '', sector: '', gestion: '', pais: '', rol: 'coord', foco: 'ES' },
+    f: { desde: DESDE_DEF, hasta: 2025, grupo: '', sector: '', gestion: '', pais: '', rol: 'coord', foco: 'ES' },
     comp: { tipo: 'linea', ids: [] },
     orden: { col: 'importe', dir: -1 }, buscar: '',
-    metrica: 'coord', mapa: 'europa', sel: '', red: false, ver: '', tasa: 0, compVer: 0,
+    metrica: 'coord', mapa: 'europa', sel: '', red: true, ver: '', tasa: 0, compVer: 0,
     ent: { tipo: '', sinUni: false, min: 1, orden: 'proyectos', buscar: '' }, emetrica: 'n',
   };
 
@@ -91,7 +93,7 @@ const Estadisticas = (() => {
     S.id = vista === 'linea' ? decodeURIComponent(partes[1] || '') : null;
     const q = new URLSearchParams(qs || '');
     const f = S.f;
-    f.desde = parseInt(q.get('desde'), 10) || 2021;
+    f.desde = parseInt(q.get('desde'), 10) || DESDE_DEF;
     f.hasta = parseInt(q.get('hasta'), 10) || 2025;
     f.grupo = q.get('grupo') || '';
     f.sector = q.get('sector') || '';
@@ -104,7 +106,7 @@ const Estadisticas = (() => {
     S.metrica = METRICAS[q.get('metrica')] ? q.get('metrica') : 'coord';
     S.mapa = q.get('mapa') === 'mundo' ? 'mundo' : 'europa';
     S.sel = q.get('sel') || '';
-    S.red = q.get('red') === '1';
+    S.red = q.get('red') !== '0';   // activado por defecto; red=0 lo apaga
     S.ver = q.get('ver') || '';
     S.tasa = parseInt(q.get('tasa'), 10) || 0;
     S.ent.tipo = q.get('etipo') || '';
@@ -139,7 +141,7 @@ const Estadisticas = (() => {
     if (S.metrica !== 'coord') extra.metrica = S.metrica;
     if (S.mapa === 'mundo') extra.mapa = 'mundo';
     if (S.vista === 'paises' && S.sel) extra.sel = S.sel;
-    if (S.vista === 'paises' && S.red) extra.red = '1';
+    if (S.vista === 'paises' && !S.red) extra.red = '0';
     if (S.vista === 'lineas' && S.ver) extra.ver = S.ver;
     if (S.vista === 'tasas' && S.tasa) extra.tasa = S.tasa;
     if (S.vista === 'entidades') {
@@ -833,7 +835,7 @@ const Estadisticas = (() => {
     on('#est-pais', e => { if (S.vista === 'paises') { S.sel = e.target.value; S.f.pais = ''; } else S.f.pais = e.target.value; cambiarFiltros(); });
     on('#est-rol', e => { S.f.rol = e.target.value; cambiarFiltros(); });
     $('#est-limpiar').addEventListener('click', () => {
-      Object.assign(S.f, { desde: 2021, hasta: META.años[1], grupo: '', sector: '', gestion: '', pais: '', rol: 'coord' });
+      Object.assign(S.f, { desde: META.años[0], hasta: META.años[1], grupo: '', sector: '', gestion: '', pais: '', rol: 'coord' });
       cambiarFiltros();
     });
     $('#est-enlace').addEventListener('click', async () => {
@@ -881,7 +883,7 @@ const Estadisticas = (() => {
     const catalogo = !['linea', 'tasas'].includes(S.vista);
     ['#est-grupo', '#est-sector', '#est-gestion'].forEach(id => { $(id).closest('.est-filtro').classList.toggle('est-off', !catalogo); });
     $('#est-pais').closest('.est-filtro').classList.toggle('est-off', S.vista === 'tasas');
-    const n = [f.grupo, f.sector, f.gestion, f.pais].filter(Boolean).length + (f.desde !== 2021 || f.hasta !== META.años[1] ? 1 : 0);
+    const n = [f.grupo, f.sector, f.gestion, f.pais].filter(Boolean).length + (f.desde !== META.años[0] || f.hasta !== META.años[1] ? 1 : 0);
     $('#est-limpiar').hidden = !n;
   }
 
@@ -1716,7 +1718,7 @@ const Estadisticas = (() => {
           ${dato('Dinero de sus proyectos', fmtEur(p.dinero), 'subvención total, no lo que recibe cada una')}
           ${dato('Por millón de habitantes', fmtHab(porHab(p, p.n)))}
         </dl>` : ''}
-        <div class="est-panel__bloque"><h4>Las 10 que más ${S.ent.orden === 'coordina' ? 'coordinan' : S.ent.orden === 'dinero' ? 'dinero mueven' : 'proyectos tienen'}</h4><div id="est-ent-top">${'<div class="est-esqueleto est-esqueleto--fino"><span></span><span></span><span></span></div>'}</div></div>`;
+        <div class="est-panel__bloque"><h4>${periodoTxt()} · las 10 que más ${S.ent.orden === 'coordina' ? 'coordinan' : S.ent.orden === 'dinero' ? 'dinero mueven' : 'proyectos tienen'}</h4><div id="est-ent-top">${'<div class="est-esqueleto est-esqueleto--fino"><span></span><span></span><span></span></div>'}</div></div>`;
       enlazarQuitar(panel);
       getMemo('/entidades?' + qsEnt({ epais: S.f.pais, orden: S.ent.orden, limit: 10 })).then(r => {
         if (!vivo()) return;
@@ -1750,9 +1752,10 @@ const Estadisticas = (() => {
         <label class="est-inline">Mínimo <select id="est-emin">${[1, 3, 5, 10, 20].map(v => `<option value="${v}" ${v === S.ent.min ? 'selected' : ''}>${v === 1 ? '1 proyecto' : v + ' proyectos'}</option>`).join('')}</select></label>
         <label class="est-check"><input type="checkbox" id="est-euni" ${S.ent.sinUni ? 'checked' : ''}>Sin universidades</label>
       </div>
+      ${S.f.desde === META.años[0] && S.f.hasta === META.años[1] ? '' : `<p class="est-periodo-aviso"><span class="material-symbols-outlined">date_range</span><span>Cifras de <b>${periodoTxt()}</b>. La ficha de cada entidad cuenta toda su historia (${META.años[0]}–${META.años[1]}), así que allí salen más proyectos.</span><button type="button" class="est-btn est-btn--ghost" id="est-e-todo">Ver ${META.años[0]}–${META.años[1]}</button></p>`}
       <div class="est-tabla-wrap"><table class="est-tabla" id="est-tabla-ent"></table></div>
       <div class="est-mas"><button type="button" id="est-emas" class="est-btn est-btn--ghost" hidden><span class="material-symbols-outlined">expand_more</span>Ver 50 más</button><span id="est-ecuenta" class="est-nota"></span></div>
-      <p class="est-nota mt-2">«Proyectos» cuenta los proyectos en los que está, en cualquier papel; «Coordina», los que encabeza. «Dinero» es la subvención total de esos proyectos, no lo que recibe cada entidad. Las entidades están unificadas: los PIC y OID de una misma organización cuentan juntos.</p>`;
+      <p class="est-nota mt-2">«Proyectos» cuenta los proyectos en los que está, en cualquier papel; «Coordina», los que encabeza. Como en el resto de Estadísticas, las acreditaciones (que no reparten dinero) no cuentan. «Dinero» es la subvención total de esos proyectos, no lo que recibe cada entidad. Las entidades están unificadas: los PIC y OID de una misma organización cuentan juntos.</p>`;
 
     let offset = 0, filas = [];
     const cols = [['pos', '#'], ['nombre', 'Entidad'], ['pais', 'País'], ['proyectos', 'Proyectos'], ['coordina', 'Coordina'], ['dinero', 'Dinero de sus proyectos'], ['dineroCoord', 'Dinero que coordina']];
@@ -1793,6 +1796,7 @@ const Estadisticas = (() => {
     };
     cargar();
     $('#est-emas').addEventListener('click', () => cargar(true));
+    $('#est-e-todo')?.addEventListener('click', () => { S.f.desde = META.años[0]; S.f.hasta = META.años[1]; cambiarFiltros(); });
     let tBuscar = null;
     $('#est-eq').addEventListener('input', e => { S.ent.buscar = e.target.value; clearTimeout(tBuscar); tBuscar = setTimeout(() => cargar(), 250); });
     $('#est-etipo').addEventListener('change', e => { S.ent.tipo = e.target.value; cambiarFiltros(); });
