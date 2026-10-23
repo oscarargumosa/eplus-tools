@@ -123,6 +123,10 @@ app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+/* ── Idioma de la petición: req.lang, req.t y mensajes de la API ──
+   (node/src/utils/i18n.js — español de origen, inglés en public/i18n/en.json) */
+app.use(require('./node/src/utils/i18n').requestLang);
+
 /* ── AI request context (propagates userId/endpoint to ai.js) ── */
 const aiContext = require('./node/src/utils/aiContext');
 app.use((req, _res, next) => {
@@ -148,6 +152,13 @@ app.use((req, res, next) => {
 
 /* ── Puerta de invitados: sin sesión, solo landing, acceso y privacidad.
    Va antes de express.static para que «/» no sirva index.html a cualquiera. */
+/* ── Páginas en dos idiomas: selector ?lang=, versión /en/ de la web
+   pública y diccionario del navegador (middleware/i18nPages.js).
+   Antes de la puerta de invitados: /en/privacidad es pública.        */
+const i18nPages = require('./node/src/middleware/i18nPages');
+app.use(i18nPages.dictScript);
+app.use(i18nPages.i18nPages);
+
 app.use(require('./node/src/middleware/guestGate').guestGate);
 
 /* ── Logos de marca: los correos web los cargan desde otro origen ── */
@@ -229,7 +240,7 @@ app.get('*', (req, res) => {
   if (req.path.startsWith('/v1/')) {
     return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Endpoint not found' } });
   }
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  i18nPages.sendPage(req, res, path.join(__dirname, 'public', 'index.html'));
 });
 
 /* ── Global error handler ─────────────────────────────────────── */

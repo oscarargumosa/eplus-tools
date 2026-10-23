@@ -51,9 +51,9 @@
     menu.hidden = true;
     menu.innerHTML =
       '<p class="efs-account-menu__who" id="efs-account-menu-who"></p>' +
-      '<a role="menuitem" href="/#account-profile">Mi cuenta</a>' +
-      '<a role="menuitem" href="/#account-org">Mi entidad</a>' +
-      '<button type="button" role="menuitem" data-efs-logout>Cerrar sesión</button>';
+      '<a role="menuitem" href="/#account-profile">' + _t('Mi cuenta') + '</a>' +
+      '<a role="menuitem" href="/#account-org">' + _t('Mi entidad') + '</a>' +
+      '<button type="button" role="menuitem" data-efs-logout>' + _t('Cerrar sesión') + '</button>';
     wrap.appendChild(menu);
     var items = function () { return menu.querySelectorAll('[role="menuitem"]'); };
     function close(focusBack) {
@@ -64,7 +64,7 @@
     }
     function open() {
       var n = document.getElementById('topbar-user-name');
-      menu.querySelector('#efs-account-menu-who').textContent = n && n.textContent.trim() !== '…' ? n.textContent.trim() : 'Mi cuenta';
+      menu.querySelector('#efs-account-menu-who').textContent = n && n.textContent.trim() !== '…' ? n.textContent.trim() : _t('Mi cuenta');
       menu.hidden = false;
       acct.setAttribute('aria-expanded', 'true');
       items()[0].focus();
@@ -134,7 +134,7 @@
       if (locked && !tag) {
         a.insertAdjacentHTML('beforeend', ' <span class="efs-topbar__beta">' + LOCK_SVG + 'Beta</span>');
         a.setAttribute('data-beta-locked', area);
-        a.setAttribute('aria-label', a.textContent.replace('Beta', '').trim() + ' (fase beta, acceso restringido)');
+        a.setAttribute('aria-label', _t('{seccion} (fase beta, acceso restringido)', { seccion: a.textContent.replace('Beta', '').trim() }));
       } else if (!locked && tag) {
         tag.remove();
         a.removeAttribute('data-beta-locked');
@@ -166,7 +166,7 @@
           bar.classList.add('efs-topbar--invitado');
           return;
         }
-        if (name) name.textContent = data.first_name || 'Mi cuenta';
+        if (name) name.textContent = data.first_name || _t('Mi cuenta');
         window.EfsAvatar.paintAll(data);
         back.style.display    = 'none';
         account.style.display = '';

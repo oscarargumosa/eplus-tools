@@ -89,8 +89,8 @@
   }
 
   function errorText(err) {
-    if (!err) return 'Error desconocido';
-    if (err.code === 'NETWORK_ERROR') return 'Sin conexión con el servidor';
+    if (!err) return _t('Error desconocido');
+    if (err.code === 'NETWORK_ERROR') return _t('Sin conexión con el servidor');
     return err.message || String(err);
   }
 
@@ -212,7 +212,7 @@
   };
 
   function hhmm(d) {
-    try { return d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }); }
+    try { return d.toLocaleTimeString(I18N.lang === 'en' ? 'en-GB' : 'es-ES', { hour: '2-digit', minute: '2-digit' }); }
     catch (e) { return ''; }
   }
 
@@ -259,30 +259,30 @@
     // leen siempre la frase completa (sr).
     var l = '', m = '', sm = '', sr = '', title = '', action = '', btnText = '', iconHtml = '';
     var t = lastSaved ? hhmm(lastSaved) : '';
-    if (state === 'saving') { iconHtml = ICONS.saving; l = m = sm = 'Guardando…'; sr = 'Guardando los cambios…'; }
+    if (state === 'saving') { iconHtml = ICONS.saving; l = m = sm = _t('Guardando…'); sr = _t('Guardando los cambios…'); }
     else if (state === 'saved') {
       iconHtml = ICONS.saved;
-      l = m = 'Guardado' + (t ? ' · ' + t : ''); sm = 'Guardado';
-      sr = 'Todos los cambios guardados' + (t ? ' a las ' + t : '');
-      title = 'Todos los cambios están guardados' + (t ? ' (último guardado a las ' + t + ')' : '');
+      l = m = _t('Guardado') + (t ? ' · ' + t : ''); sm = _t('Guardado');
+      sr = t ? _t('Todos los cambios guardados a las {hora}', { hora: t }) : _t('Todos los cambios guardados');
+      title = t ? _t('Todos los cambios están guardados (último guardado a las {hora})', { hora: t }) : _t('Todos los cambios están guardados');
     }
     else if (state === 'clean') {
-      iconHtml = ICONS.saved; l = m = 'Todo guardado'; sm = 'Guardado';
-      sr = title = 'No hay cambios pendientes de guardar';
+      iconHtml = ICONS.saved; l = m = _t('Todo guardado'); sm = _t('Guardado');
+      sr = title = _t('No hay cambios pendientes de guardar');
     }
     else if (state === 'dirty') {
-      iconHtml = ICONS.dirty; l = 'Cambios sin guardar'; m = 'Sin guardar'; sm = '';
-      sr = 'Hay cambios sin guardar';
+      iconHtml = ICONS.dirty; l = _t('Cambios sin guardar'); m = _t('Sin guardar'); sm = '';
+      sr = _t('Hay cambios sin guardar');
       var canSave = Array.from(dirty.values()).some(function (d) { return typeof d.save === 'function'; });
-      if (canSave) { action = 'save'; btnText = 'Guardar'; }
-      title = 'Hay cambios sin guardar' + (canSave ? '. Pulsa Guardar.' : '');
+      if (canSave) { action = 'save'; btnText = _t('Guardar'); }
+      title = canSave ? _t('Hay cambios sin guardar. Pulsa Guardar.') : _t('Hay cambios sin guardar');
     }
     else if (state === 'error') {
-      iconHtml = ICONS.error; l = 'No se ha guardado'; m = 'No guardado'; sm = '';
+      iconHtml = ICONS.error; l = _t('No se ha guardado'); m = _t('No guardado'); sm = '';
       var first = failed.values().next().value;
-      var why = first && first.message ? ': ' + String(first.message).trim().replace(/[.\s]+$/, '') : '';
-      sr = title = 'No se ha guardado' + why + '. Pulsa Reintentar.';
-      action = 'retry'; btnText = 'Reintentar';
+      var why = first && first.message ? String(first.message).trim().replace(/[.\s]+$/, '') : '';
+      sr = title = why ? _t('No se ha guardado: {motivo}. Pulsa Reintentar.', { motivo: why }) : _t('No se ha guardado. Pulsa Reintentar.');
+      action = 'retry'; btnText = _t('Reintentar');
     }
     // Mismo contenido: no se toca el DOM. Si se rehiciera, un clic en
     // «Guardar» que dispara el change del campo (al perder el foco) perdería
@@ -298,7 +298,7 @@
     el.title = title;
     btn.hidden = !action;
     btn.dataset.action = action;
-    btn.setAttribute('aria-label', action === 'retry' ? 'Reintentar guardar' : action === 'save' ? 'Guardar los cambios' : '');
+    btn.setAttribute('aria-label', action === 'retry' ? _t('Reintentar guardar') : action === 'save' ? _t('Guardar los cambios') : '');
     btn.innerHTML = (action === 'retry' ? BTN_ICONS.warn + BTN_ICONS.retry : action === 'save' ? BTN_ICONS.save : '') +
       '<span class="efs-save__btntxt"></span>';
     btn.lastChild.textContent = btnText;
@@ -351,7 +351,7 @@
       return track(function () {
         return Promise.resolve(factory()).then(function (res) {
           if (res && res.ok === false) {
-            var err = new Error('El servidor respondió ' + res.status);
+            var err = new Error(_t('El servidor respondió {estado}', { estado: res.status }));
             err.response = res;
             throw err;
           }

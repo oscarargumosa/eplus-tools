@@ -119,3 +119,4 @@ scripts/migrate.js            → Runner de migraciones (tolerante a duplicados)
 - Por defecto, copy de UI y contenido generado por IA en **español**. Derivar el idioma del campo/contexto (ej. campos de NA en Erasmus+ son en español).
 - Si Oscar pide explícitamente otro idioma, respetarlo.
 - Mensajes de error técnicos al usuario también en español; logs internos pueden ir en inglés.
+- **La interfaz es bilingüe (español e inglés) desde el 23-oct-2026.** Todo texto visible nuevo o cambiado lleva su inglés en `public/i18n/en.json` **en el mismo cambio**: en HTML dentro de una zona `data-i18n`, en JS con `_t('…')`, en el servidor en español (la API lo traduce) o con `req.t`/`tl`. Sin eso la imagen no se construye. Antes de commitear: `npm run i18n:check`. Guía completa: `docs/IDIOMAS.md`.
