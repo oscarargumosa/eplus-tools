@@ -93,7 +93,7 @@ async function listUsers({ q = '', filter = 'all', page = 1, limit = 25 } = {}) 
 
   const [[{ total }]] = await db.query(`SELECT COUNT(*) AS total FROM users u WHERE ${whereSql}`, params);
   const [rows] = await db.query(
-    `SELECT u.id, u.name, u.email, u.role, u.email_verified, u.created_at, u.interno,
+    `SELECT u.id, u.name, u.email, u.role, u.email_verified, u.created_at, u.interno, u.phone,
             (SELECT MAX(a.ts) FROM audit_log a
               WHERE a.actor_user_id = u.id AND a.action = 'auth.login') AS last_login,
             (SELECT COUNT(*) FROM projects p WHERE p.user_id = u.id) AS projects,
@@ -117,6 +117,7 @@ async function listUsers({ q = '', filter = 'all', page = 1, limit = 25 } = {}) 
   const items = rows.map(r => ({
     id: r.id, name: r.name, email: r.email, role: r.role,
     email_verified: !!r.email_verified,
+    phone: r.phone || null,   // privado: solo lo ve el equipo
     interno: !!r.interno || r.role !== 'user',
     created_at: r.created_at,
     last_login: r.last_login,

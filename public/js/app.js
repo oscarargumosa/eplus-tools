@@ -162,6 +162,8 @@ const App = (() => {
     loadDashboardRecent();
     // Área recién concedida: «Ya tienes acceso a …» una sola vez.
     if (typeof BetaAccess !== 'undefined') BetaAccess.showGranted();
+    // Perfil incompleto: asistente la primera vez, recordatorio corto después.
+    if (typeof Perfil !== 'undefined') Perfil.start();
   }
 
   /* ── Dashboard: proyectos recientes (solo con el área «proyectos») ── */
@@ -215,6 +217,7 @@ const App = (() => {
   function onLogout({ expired = false } = {}) {
     currentUser = null;
     if (window.SaveStatus) SaveStatus.reset();
+    if (typeof Perfil !== 'undefined') Perfil.reset();
     clearSessionHint();
     // Cerrar sesión lleva a la portada (landing). Si la sesión caducó a
     // mitad de trabajo, a entrar, para volver a la misma sección.

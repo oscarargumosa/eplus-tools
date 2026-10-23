@@ -198,6 +198,7 @@ const proyectos = areaGate('proyectos');
 
 app.use('/v1/auth', require('./node/src/modules/auth/routes'));
 app.use('/v1/access-requests', require('./node/src/modules/access/routes'));
+app.use('/v1/profile', require('./node/src/modules/profile/routes'));
 app.use('/v1/intake',      proyectos, require('./node/src/modules/intake/routes'));
 app.use('/v1/calculator',  proyectos, require('./node/src/modules/calculator/routes'));
 // Antes que /v1/admin: «Usuarios y accesos» lleva su propia auditoría.

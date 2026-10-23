@@ -68,6 +68,7 @@ tailwind.config = {
 
 <!-- ═══ TOP BAR común (la comparten la app, la academia y las páginas públicas) ═══ -->
 <link rel="stylesheet" href="/css/topbar.css">
+<link rel="stylesheet" href="/css/perfil.css?v=20261023a">
 <!-- Fase beta: pantalla «Solicitar acceso», etiquetas y avisos (js/beta-access.js) -->
 <link rel="stylesheet" href="/css/beta.css">
 <!-- Indicador global «Guardando… / Guardado» (js/save-status.js) -->
@@ -681,6 +682,9 @@ tailwind.config = {
           </div>
         </div>
 
+        <!-- Completar el perfil (js/perfil.js): solo si falta algo -->
+        <div id="perfil-home-card" class="hidden mb-10"></div>
+
         <!-- Three phases — Main CTAs -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
 
@@ -894,6 +898,8 @@ tailwind.config = {
                     <span id="account-profile-msg" class="text-sm"></span>
                   </div>
                 </div>
+                <!-- Tu perfil: foto, teléfono, entidad, ubicación y sobre ti (js/perfil.js) -->
+                <div id="perfil-account-card" class="bg-white rounded-xl border border-outline-variant/30 p-6 mt-5"></div>
               </div>
 
               <!-- SECTION: Seguridad -->
@@ -3458,7 +3464,8 @@ tailwind.config = {
 <script src="/js/evaluator.js?v=20261016g"></script>
 <script src="/js/budget.js?v=20261016g"></script>
 <script src="/js/voice-input.js"></script>
-<script src="/js/account.js?v=20261016g"></script>
+<script src="/js/account.js?v=20261023p"></script>
+<script src="/js/perfil.js?v=20261023a"></script>
 <script src="/js/sandbox.js"></script>
 
 <!-- ── Mini modal (reemplaza prompt/confirm nativos) ────────── -->
