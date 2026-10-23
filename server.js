@@ -61,9 +61,18 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc:  ["'self'"],
-      scriptSrc:    ["'self'", "'unsafe-inline'", "https://cdn.tailwindcss.com", "https://cdn.jsdelivr.net", "https://accounts.google.com", "https://apis.google.com"],
-      scriptSrcAttr:["'unsafe-inline'"],
-      styleSrc:    ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://accounts.google.com", "https://cdn.jsdelivr.net"],
+      // Sin 'unsafe-inline': ni <script> en línea ni on*= (eventos con data-action, js/acciones.js).
+      // jsdelivr solo para los paquetes y versiones que se cargan (index.html, vps.html).
+      scriptSrc:    ["'self'", "https://cdn.tailwindcss.com",
+                     "https://cdn.jsdelivr.net/npm/apexcharts@3.49.1/",
+                     "https://cdn.jsdelivr.net/npm/d3@7.9.0/",
+                     "https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/",
+                     "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/",
+                     "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/",
+                     "https://accounts.google.com/gsi/client"],
+      scriptSrcAttr:["'none'"],
+      styleSrc:    ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://accounts.google.com",
+                    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/", "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/"],
       fontSrc:     ["'self'", "https://fonts.gstatic.com"],
       imgSrc:      ["'self'", "data:", "blob:", "https:"],
       connectSrc:  ["'self'", "https://cdn.jsdelivr.net", "https://accounts.google.com",

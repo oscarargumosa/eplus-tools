@@ -75,8 +75,8 @@ const Admin = (() => {
 
   function actionBtns(id, section) {
     return `
-      <button onclick="Admin.openEdit('${section}','${id}')" class="text-primary hover:underline text-xs font-semibold mr-3">Edit</button>
-      <button onclick="Admin.confirmDelete('${section}','${id}')" class="text-on-surface-variant hover:text-red-500 text-xs font-semibold transition-colors">Delete</button>`;
+      <button data-action="Admin.openEdit" data-args="${Acciones.args(String(section), String(id))}" class="text-primary hover:underline text-xs font-semibold mr-3">Edit</button>
+      <button data-action="Admin.confirmDelete" data-args="${Acciones.args(String(section), String(id))}" class="text-on-surface-variant hover:text-red-500 text-xs font-semibold transition-colors">Delete</button>`;
   }
 
   /* ── Inline editor helper ────────────────────────────────────── */
@@ -1320,7 +1320,7 @@ const Admin = (() => {
       const rows = await API.get('/admin/data/programs');
       const tbody = document.getElementById('admin-programs-tbody');
       if (!rows.length) {
-        tbody.innerHTML = '<tr><td colspan="7" class="py-12 text-center"><span class="material-symbols-outlined text-4xl text-outline-variant block mb-2">event_note</span><p class="text-sm text-on-surface-variant mb-3">No hay convocatorias configuradas</p><button onclick="document.getElementById(&apos;btn-add-program&apos;).click()" class="text-xs font-semibold text-primary hover:underline">+ Añadir convocatoria</button></td></tr>';
+        tbody.innerHTML = '<tr><td colspan="7" class="py-12 text-center"><span class="material-symbols-outlined text-4xl text-outline-variant block mb-2">event_note</span><p class="text-sm text-on-surface-variant mb-3">No hay convocatorias configuradas</p><button data-action="pulsar" data-args="[&quot;btn-add-program&quot;]" class="text-xs font-semibold text-primary hover:underline">+ Añadir convocatoria</button></td></tr>';
         return;
       }
       tbody.innerHTML = rows.map(r => `
@@ -1337,7 +1337,7 @@ const Admin = (() => {
       tbody.querySelectorAll('tr[data-id]').forEach(tr => {
         const id = tr.dataset.id;
         const row = rows.find(r => String(r.id) === id);
-        tr.querySelector('[onclick*="openEdit"]')?.addEventListener('click', e => {
+        tr.querySelector('[data-action="Admin.openEdit"]')?.addEventListener('click', e => {
           e.preventDefault(); e.stopImmediatePropagation();
           makeRowEditable(tr, [
             { key: 'name',        type: 'text',   tdIndex: 0, value: row.name },
@@ -1685,7 +1685,7 @@ const Admin = (() => {
       tbody.querySelectorAll('tr[data-id]').forEach(tr => {
         const id = tr.dataset.id;
         const row = rows.find(r => String(r.id) === id);
-        tr.querySelector('[onclick*="openEdit"]')?.addEventListener('click', e => {
+        tr.querySelector('[data-action="Admin.openEdit"]')?.addEventListener('click', e => {
           e.preventDefault(); e.stopImmediatePropagation();
           makeRowEditable(tr, [
             { key: 'name',         type: 'text', tdIndex: 0, value: row.name },
@@ -3078,7 +3078,7 @@ KEY EVALUATOR FOCUS:
               <label id="cd-cofin-title" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant ${prog.hide_cofin ? 'opacity-40' : ''}">Financiado %</label>
               <label class="flex items-center gap-1 text-[9px] text-on-surface-variant cursor-pointer whitespace-nowrap" title="No aplica: se oculta en el diseño">
                 <input type="checkbox" id="cd-hide-cofin" ${prog.hide_cofin ? 'checked' : ''} class="accent-primary"
-                  onchange="const d=this.checked;const i=document.getElementById('cd-cofin');i.disabled=d;i.classList.toggle('opacity-40',d);document.getElementById('cd-cofin-title').classList.toggle('opacity-40',d);">
+                  data-on-change="admin.noAplica" data-args="${Acciones.args('cd-cofin', 'cd-cofin-title')}">
                 No aplica
               </label>
             </div>
@@ -3089,7 +3089,7 @@ KEY EVALUATOR FOCUS:
               <label id="cd-indirect-title" class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant ${prog.hide_indirect ? 'opacity-40' : ''}">Indirect costs %</label>
               <label class="flex items-center gap-1 text-[9px] text-on-surface-variant cursor-pointer whitespace-nowrap" title="No aplica: se oculta en el diseño">
                 <input type="checkbox" id="cd-hide-indirect" ${prog.hide_indirect ? 'checked' : ''} class="accent-primary"
-                  onchange="const d=this.checked;const i=document.getElementById('cd-indirect');i.disabled=d;i.classList.toggle('opacity-40',d);document.getElementById('cd-indirect-title').classList.toggle('opacity-40',d);">
+                  data-on-change="admin.noAplica" data-args="${Acciones.args('cd-indirect', 'cd-indirect-title')}">
                 No aplica
               </label>
             </div>
@@ -5279,6 +5279,19 @@ KEY EVALUATOR FOCUS:
 
   return { init, openEdit, confirmDelete, openConvocatoria };
 })();
+
+/* Botones de las plantillas: data-action="Admin.metodo" y acciones propias (js/acciones.js) */
+Acciones.modulo('Admin', Admin);
+Acciones.registrar({
+  // Casilla «No aplica»: desactiva y atenúa el campo y su título
+  'admin.noAplica': (el, ev, campoId, tituloId) => {
+    const d = el.checked;
+    const i = document.getElementById(campoId);
+    i.disabled = d;
+    i.classList.toggle('opacity-40', d);
+    document.getElementById(tituloId).classList.toggle('opacity-40', d);
+  },
+});
 
 
 /* ═══════════════════════════════════════════════════════════════

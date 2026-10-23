@@ -408,7 +408,7 @@ const Intake = (() => {
       const result = await API.get('/intake/projects');
       const projects = Array.isArray(result) ? result : (result.data || result);
       if (!projects || projects.length === 0) {
-        el.innerHTML = '<div class="py-6 text-center"><span class="material-symbols-outlined text-3xl text-outline-variant block mb-2">folder_open</span><p class="text-xs text-on-surface-variant mb-2">Aún no tienes proyectos guardados</p><button onclick="document.getElementById(&apos;intake-btn-save-server&apos;)?.click()" class="text-xs font-semibold text-primary hover:underline">Guardar el actual</button></div>';
+        el.innerHTML = '<div class="py-6 text-center"><span class="material-symbols-outlined text-3xl text-outline-variant block mb-2">folder_open</span><p class="text-xs text-on-surface-variant mb-2">Aún no tienes proyectos guardados</p><button data-action="pulsar" data-args="[&quot;intake-btn-save-server&quot;]" class="text-xs font-semibold text-primary hover:underline">Guardar el actual</button></div>';
         return;
       }
       el.innerHTML = projects.map(p => `
@@ -1272,7 +1272,7 @@ const Intake = (() => {
         const id = 'bgt-' + Math.random().toString(36).slice(2, 8);
         const hasItems = items.length > 0;
         return `
-          <tr class="border-b border-outline-variant/5 ${hasItems ? 'cursor-pointer hover:bg-surface-container-low' : ''}" ${hasItems ? `onclick="document.querySelectorAll('.${id}').forEach(r=>r.classList.toggle('hidden'))"` : ''}>
+          <tr class="border-b border-outline-variant/5 ${hasItems ? 'cursor-pointer hover:bg-surface-container-low' : ''}" ${hasItems ? `data-action="alternarFilas" data-args="${Acciones.args(id)}"` : ''}>
             <td class="py-1 ${indent}" style="padding-left:${indent === 'pl-10' ? '2.5rem' : '2rem'}">
               ${hasItems ? '<span class="material-symbols-outlined text-[11px] align-middle mr-0.5 text-on-surface-variant">expand_more</span>' : '<span class="inline-block w-3"></span>'}
               ${label}
@@ -1308,8 +1308,8 @@ const Intake = (() => {
 
         <!-- Tabs: Resumen | Por Socio -->
         <div class="flex gap-0 border-b-2 border-outline-variant/20 mb-4">
-          <button class="intake-budget-tab px-4 py-2 text-xs font-bold uppercase tracking-wide border-b-2 -mb-[2px] cursor-pointer transition-colors border-primary text-primary" data-tab="summary" onclick="window._intakeBudgetTab('summary')">Resumen</button>
-          <button class="intake-budget-tab px-4 py-2 text-xs font-bold uppercase tracking-wide border-b-2 -mb-[2px] cursor-pointer transition-colors border-transparent text-on-surface-variant hover:text-primary" data-tab="partners" onclick="window._intakeBudgetTab('partners')">Por Socio</button>
+          <button class="intake-budget-tab px-4 py-2 text-xs font-bold uppercase tracking-wide border-b-2 -mb-[2px] cursor-pointer transition-colors border-primary text-primary" data-tab="summary" data-action="intake.pestanaPresupuesto" data-args="${Acciones.args('summary')}">Resumen</button>
+          <button class="intake-budget-tab px-4 py-2 text-xs font-bold uppercase tracking-wide border-b-2 -mb-[2px] cursor-pointer transition-colors border-transparent text-on-surface-variant hover:text-primary" data-tab="partners" data-action="intake.pestanaPresupuesto" data-args="${Acciones.args('partners')}">Por Socio</button>
         </div>
 
         <!-- Tab: Resumen -->
@@ -1346,7 +1346,7 @@ const Intake = (() => {
             return `
             <div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 mb-4 overflow-hidden" style="border-top:3px solid ${p.color}">
               <!-- Partner header (always visible) -->
-              <div class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.expand-icon').classList.toggle('rotate-180')">
+              <div class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none" data-action="desplegarSiguiente" data-args="${Acciones.args('.expand-icon')}">
                 <span class="w-7 h-7 rounded-full text-white text-[11px] font-bold flex items-center justify-center flex-shrink-0" style="background:${p.color}">BE${String(pi+1).padStart(2,'0')}</span>
                 <div class="flex-1 min-w-0">
                   <div class="font-headline text-sm font-bold truncate">${esc(p.name)}</div>
@@ -2245,3 +2245,9 @@ const Intake = (() => {
 
   return { init, startNew, openProject, getProposalLang, _setProgram, _calcNav: calcNav, _preloadDemo: preloadDemo, _loadProject: loadFromServer, hasUnsavedChanges };
 })();
+
+/* Botones de las plantillas: data-action="Intake.metodo" y acciones propias (js/acciones.js) */
+Acciones.modulo('Intake', Intake);
+Acciones.registrar({
+  'intake.pestanaPresupuesto': (el, ev, tab) => { window._intakeBudgetTab(tab); },
+});

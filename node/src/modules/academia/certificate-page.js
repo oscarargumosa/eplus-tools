@@ -61,9 +61,10 @@ module.exports = async function certificatePage(req, res) {
     h1{font-size:40px}.name{font-size:36px}.course{font-size:20px}
     @page{size:A4 landscape;margin:0}
   }
-</style></head>
+</style>
+<script src="/js/certificado.js" defer></script></head>
 <body>
-<div class="bar"><button onclick="window.print()">Imprimir o guardar en PDF</button></div>
+<div class="bar"><button type="button" id="imprimir">Imprimir o guardar en PDF</button></div>
 <main class="cert">
   <div class="top"><img class="logo" src="/img/marca/logo-horizontal-azul.svg" alt="EU Funding Studio" width="280" height="30"><span class="kicker">Certificado de aprovechamiento</span></div>
   <div>

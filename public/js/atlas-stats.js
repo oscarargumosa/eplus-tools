@@ -546,7 +546,7 @@ const AtlasStats = (() => {
   }
   function buildPopupFull(e, oid, tierName) {
     const logo = e.logo_url
-      ? `<img src="${escAttr(e.logo_url)}" alt="" referrerpolicy="no-referrer" class="w-12 h-12 rounded-lg object-contain bg-white border border-outline-variant/30 shrink-0" onerror="this.style.display='none'">`
+      ? `<img src="${escAttr(e.logo_url)}" alt="" referrerpolicy="no-referrer" class="w-12 h-12 rounded-lg object-contain bg-white border border-outline-variant/30 shrink-0" data-on-error="img.ocultar">`
       : `<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[22px]">apartment</span></div>`;
     const desc = (e.description || '').slice(0, 220);
     const descMore = (e.description || '').length > 220 ? '…' : '';

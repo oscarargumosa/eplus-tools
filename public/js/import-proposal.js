@@ -157,7 +157,7 @@ const ImportProposal = (() => {
           <div class="w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</div>
           <h3 class="font-bold text-on-surface">Selecciona la convocatoria</h3>
         </div>
-        <select id="ip-program" class="w-full border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-surface" onchange="ImportProposal.onProgramChange(this.value)">
+        <select id="ip-program" class="w-full border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-surface" data-on-change="ImportProposal.onProgramChange" data-args="${Acciones.args(Acciones.VALOR)}">
           <option value="">— Cargando convocatorias… —</option>
         </select>
         <p class="text-xs text-on-surface-variant mt-2">El sistema atará tu proyecto a la convocatoria que selecciones. Solo verás las que ya están cargadas en Admin Data E+.</p>
@@ -171,7 +171,7 @@ const ImportProposal = (() => {
         </div>
         <input id="ip-name" type="text" placeholder="ej. RISE re-presentación 2026" value="${esc(state.projectName)}"
           class="w-full border border-outline-variant/40 rounded-lg px-3 py-2 text-sm bg-surface"
-          oninput="ImportProposal.onNameChange(this.value)" />
+          data-on-input="ImportProposal.onNameChange" data-args="${Acciones.args(Acciones.VALOR)}" />
       </div>
 
       <!-- Step 3: upload Word -->
@@ -181,24 +181,23 @@ const ImportProposal = (() => {
           <h3 class="font-bold text-on-surface">Sube el Form Part B (.docx)</h3>
         </div>
         <div id="ip-drop" class="border-2 border-dashed border-outline-variant/40 rounded-xl p-8 text-center cursor-pointer hover:bg-surface-variant/30 transition-colors"
-             ondragover="event.preventDefault(); this.classList.add('bg-primary/5')"
-             ondragleave="this.classList.remove('bg-primary/5')"
-             ondrop="ImportProposal.onDrop(event)"
-             onclick="document.getElementById('ip-file-input').click()">
+             data-on-dragover="arrastre.sobre" data-on-dragleave="arrastre.fuera" data-args="${Acciones.args('bg-primary/5')}"
+             data-on-drop="ImportProposal.onDrop" data-args-drop="${Acciones.args(Acciones.EVENTO)}"
+             data-action="pulsar" data-args-click="${Acciones.args('ip-file-input')}">
           <span class="material-symbols-outlined text-3xl text-on-surface-variant mb-2">cloud_upload</span>
           <p class="text-sm text-on-surface">${state.file ? `<strong>${esc(state.file.name)}</strong> (${(state.file.size/1024).toFixed(0)} KB)` : 'Arrastra tu .docx o haz clic para seleccionar'}</p>
           <p class="text-xs text-on-surface-variant mt-1">Solo plantilla oficial EACEA Form Part B. Tamaño máx: 50 MB.</p>
         </div>
-        <input id="ip-file-input" type="file" accept=".docx" class="hidden" onchange="ImportProposal.onFileSelect(event)" />
+        <input id="ip-file-input" type="file" accept=".docx" class="hidden" data-on-change="ImportProposal.onFileSelect" data-args="${Acciones.args(Acciones.EVENTO)}" />
       </div>
 
       <!-- Actions -->
       <div class="flex items-center gap-3">
-        <button onclick="ImportProposal.upload()" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md disabled:opacity-50">
+        <button data-action="ImportProposal.upload" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md disabled:opacity-50">
           <span class="material-symbols-outlined text-sm align-middle mr-1">arrow_forward</span>
           Subir y diagnosticar
         </button>
-        <button onclick="ImportProposal.togglePaste()" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">
+        <button data-action="ImportProposal.togglePaste" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">
           ¿No tienes el Word? Pegar texto
         </button>
       </div>
@@ -285,15 +284,14 @@ const ImportProposal = (() => {
           </div>
         ` : `
           <div id="ip-letter-drop" class="border-2 border-dashed border-primary/40 rounded-xl p-5 text-center cursor-pointer hover:bg-primary/5 transition-colors"
-               ondragover="event.preventDefault(); this.classList.add('bg-primary/10')"
-               ondragleave="this.classList.remove('bg-primary/10')"
-               ondrop="ImportProposal.onLetterDrop(event)"
-               onclick="document.getElementById('ip-letter-file').click()">
+               data-on-dragover="arrastre.sobre" data-on-dragleave="arrastre.fuera" data-args="${Acciones.args('bg-primary/10')}"
+               data-on-drop="ImportProposal.onLetterDrop" data-args-drop="${Acciones.args(Acciones.EVENTO)}"
+               data-action="pulsar" data-args-click="${Acciones.args('ip-letter-file')}">
             <span class="material-symbols-outlined text-2xl text-primary mb-1">description</span>
             <p class="text-sm text-on-surface">Arrastra el PDF/Word de tu carta EACEA</p>
             <p class="text-[11px] text-on-surface-variant mt-1">Opcional · Calidad premium del diagnóstico</p>
           </div>
-          <input id="ip-letter-file" type="file" accept=".pdf,.docx,.txt" class="hidden" onchange="ImportProposal.onLetterSelect(event)" />
+          <input id="ip-letter-file" type="file" accept=".pdf,.docx,.txt" class="hidden" data-on-change="ImportProposal.onLetterSelect" data-args="${Acciones.args(Acciones.EVENTO)}" />
         `}
 
         ${state.letterError ? `
@@ -302,11 +300,11 @@ const ImportProposal = (() => {
       </div>
 
       <div class="flex gap-3">
-        <button onclick="ImportProposal.goDiagnose('${esc(r.projectId)}')" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
+        <button data-action="ImportProposal.goDiagnose" data-args="${Acciones.args(String(r.projectId ?? ''))}" class="flex-1 px-5 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
           <span class="material-symbols-outlined text-sm align-middle mr-1">monitoring</span>
           Ir al diagnóstico${state.letterUploaded ? ' dirigido' : ''}
         </button>
-        <button onclick="ImportProposal.init()" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium">
+        <button data-action="ImportProposal.init" class="px-5 py-3 bg-surface border border-primary/40 text-primary rounded-full text-sm font-medium">
           Importar otro
         </button>
       </div>
@@ -414,3 +412,6 @@ const ImportProposal = (() => {
     togglePaste,
   };
 })();
+
+// Botones de las plantillas: data-action="ImportProposal.metodo" (js/acciones.js)
+Acciones.modulo('ImportProposal', ImportProposal);

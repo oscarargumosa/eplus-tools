@@ -152,7 +152,7 @@ const Shortlists = (() => {
   function renderShortlistItem(it) {
     if (!it.display_name && !it.oid) return '';
     const logo = it.logo_url
-      ? `<img src="${esc(it.logo_url)}" referrerpolicy="no-referrer" class="w-10 h-10 rounded-lg object-contain bg-white border border-outline-variant/20 shrink-0" onerror="this.style.display='none'">`
+      ? `<img src="${esc(it.logo_url)}" referrerpolicy="no-referrer" class="w-10 h-10 rounded-lg object-contain bg-white border border-outline-variant/20 shrink-0" data-on-error="img.ocultar">`
       : `<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[18px]">apartment</span></div>`;
     return `
       <div class="bg-white rounded-2xl border border-outline-variant/25 p-4 relative">
