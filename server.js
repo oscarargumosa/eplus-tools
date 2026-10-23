@@ -82,6 +82,10 @@ app.use(helmet({
   // (OSM y otros requieren Referer para identificar la fuente). Usamos la política
   // estándar más restrictiva que sí envía origin cross-origin.
   referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
+  // Default helmet pone COOP same-origin: la ventana de «Continuar con Google»
+  // (ux_mode popup) no puede devolver la credencial y se queda en blanco en
+  // accounts.google.com/gsi/transform. Google pide same-origin-allow-popups.
+  crossOriginOpenerPolicy: { policy: 'same-origin-allow-popups' },
 }));
 
 // CORS allow-list: el propio Studio (CORS_ORIGIN y el origen de APP_URL) y local.

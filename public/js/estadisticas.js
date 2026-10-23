@@ -44,7 +44,7 @@ const Estadisticas = (() => {
     f: { desde: 2021, hasta: 2025, grupo: '', sector: '', gestion: '', pais: '', rol: 'coord', foco: 'ES' },
     comp: { tipo: 'linea', ids: [] },
     orden: { col: 'importe', dir: -1 }, buscar: '',
-    metrica: 'coord', mapa: 'europa', sel: '', red: false, ver: '', tasa: 0, compVer: 0,
+    metrica: 'coord', mapa: 'europa', sel: '', red: true, ver: '', tasa: 0, compVer: 0,
     ent: { tipo: '', sinUni: false, min: 1, orden: 'proyectos', buscar: '' }, emetrica: 'n',
   };
 
@@ -104,7 +104,7 @@ const Estadisticas = (() => {
     S.metrica = METRICAS[q.get('metrica')] ? q.get('metrica') : 'coord';
     S.mapa = q.get('mapa') === 'mundo' ? 'mundo' : 'europa';
     S.sel = q.get('sel') || '';
-    S.red = q.get('red') === '1';
+    S.red = q.get('red') !== '0';   // activado por defecto; red=0 lo apaga
     S.ver = q.get('ver') || '';
     S.tasa = parseInt(q.get('tasa'), 10) || 0;
     S.ent.tipo = q.get('etipo') || '';
@@ -139,7 +139,7 @@ const Estadisticas = (() => {
     if (S.metrica !== 'coord') extra.metrica = S.metrica;
     if (S.mapa === 'mundo') extra.mapa = 'mundo';
     if (S.vista === 'paises' && S.sel) extra.sel = S.sel;
-    if (S.vista === 'paises' && S.red) extra.red = '1';
+    if (S.vista === 'paises' && !S.red) extra.red = '0';
     if (S.vista === 'lineas' && S.ver) extra.ver = S.ver;
     if (S.vista === 'tasas' && S.tasa) extra.tasa = S.tasa;
     if (S.vista === 'entidades') {
