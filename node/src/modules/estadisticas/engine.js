@@ -47,6 +47,8 @@ function load() {
   const snap = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(DIR, 'proyectos.json.gz'))));
   const meta = JSON.parse(fs.readFileSync(path.join(DIR, 'lineas.json'), 'utf8'));
   const tasas = JSON.parse(fs.readFileSync(path.join(DIR, 'tasas.json'), 'utf8'));
+  let pob = { poblacion: {} };
+  try { pob = JSON.parse(fs.readFileSync(path.join(DIR, 'poblacion.json'), 'utf8')); } catch { /* sin población: no hay «por habitante» */ }
 
   // Líneas curadas: id → ficha. Los alias y las particiones apuntan a otra ficha.
   const lineas = [];          // fichas finales
@@ -117,6 +119,7 @@ function load() {
     pc: snap.pc, paises: snap.paises, orgs: snap.orgs,
     paisIdx: new Map(snap.paises.map((c, i) => [c, i])),
     tasaPorLinea, ejemplosPorLinea,
+    pob: pob.poblacion, pobFuente: pob.fuente ? `${pob.fuente}, ${pob.año}` : null,
     años: [P.y.reduce((a, b) => Math.min(a, b), 99) + 2000, P.y.reduce((a, b) => Math.max(a, b), 0) + 2000],
   };
   console.log(`[estadisticas] ${N} proyectos, ${usadas.length} líneas en ${Date.now() - t0} ms`);
@@ -188,12 +191,12 @@ function participa(s, i, pais) {
 }
 
 /* Recorre los proyectos que pasan el filtro. */
-function forEach(F, fn, { ignorarPais = false } = {}) {
+function forEach(F, fn, { ignorarPais = false, ignorarAños = false } = {}) {
   const s = load();
   const { L, Y, P, N } = s;
   for (let i = 0; i < N; i++) {
     const y = Y[i];
-    if (y < F.desde || y > F.hasta) continue;
+    if (!ignorarAños && (y < F.desde || y > F.hasta)) continue;
     if (!F.okLinea[L[i]]) continue;
     if (!ignorarPais && F.pais !== null) {
       if (F.rol === 'coord' ? P.c[i] !== F.pais : !participa(s, i, F.pais)) continue;
@@ -220,6 +223,7 @@ function meta() {
   return {
     generado: s.snap.generado,
     fuente: s.snap.fuente,
+    fuentePoblacion: s.pobFuente,
     años: s.años,
     periodoActual: PERIODO_ACTUAL,
     grupos: s.meta.grupos,
@@ -302,32 +306,87 @@ function consulta(q) {
   });
 }
 
-/* Mapa y ranking de países (ignora el filtro de país). */
+/* Mapa y ranking de países (ignora el filtro de país).
+   Además del periodo pedido, devuelve cada país año a año en TODO el
+   rango de la foto: el navegador recalcula el mapa al mover la línea de
+   tiempo o al reproducirla sin pedir nada más. */
 function paises(q) {
   const F = parseFiltros(q);
   return cached('p' + F.clave, () => {
     const s = load();
-    const { P } = s;
+    const { P, Y } = s;
     const n = s.paises.length;
-    const coord = new Float64Array(n), coordG = new Float64Array(n), part = new Float64Array(n), partG = new Float64Array(n);
-    let total = 0;
+    const [a0, a1] = s.años, nA = a1 - a0 + 1;
+    const cY = Array.from({ length: n }, () => new Array(nA).fill(0));
+    const pY = Array.from({ length: n }, () => new Array(nA).fill(0));
+    const iY = Array.from({ length: n }, () => new Array(nA).fill(0));
+    const totalY = new Array(nA).fill(0);
     forEach(F, i => {
-      total++;
-      const g = Math.max(0, P.g[i]);
-      coord[P.c[i]]++; coordG[P.c[i]] += g;
+      const k = Y[i] - a0, g = Math.max(0, P.g[i]);
+      totalY[k]++;
+      cY[P.c[i]][k]++; iY[P.c[i]][k] += g;
       const { off, c } = s.pc;
-      for (let k = off[i]; k < off[i + 1]; k++) { part[c[k]]++; partG[c[k]] += g; }
-    }, { ignorarPais: true });
+      for (let j = off[i]; j < off[i + 1]; j++) pY[c[j]][k]++;
+    }, { ignorarPais: true, ignorarAños: true });
+    const ra = F.desde - a0, rb = F.hasta - a0;
+    const suma = arr => { let t = 0; for (let k = ra; k <= rb; k++) t += arr[k]; return t; };
     const out = [];
     for (let k = 0; k < n; k++) {
-      if (s.paises[k] === '??' || (!coord[k] && !part[k])) continue;
-      out.push({ code: s.paises[k], nombre: nombrePais(s.paises[k]), coord: coord[k], importeCoord: coordG[k], part: part[k], volumenPart: partG[k], ratioCoord: part[k] ? coord[k] / part[k] : 0 });
+      if (s.paises[k] === '??') continue;
+      const coord = suma(cY[k]), part = suma(pY[k]);
+      if (!cY[k].some(Boolean) && !pY[k].some(Boolean)) continue;
+      out.push({
+        code: s.paises[k], nombre: nombrePais(s.paises[k]), pob: s.pob[s.paises[k]] || null,
+        coord, importeCoord: suma(iY[k]), part, ratioCoord: part ? coord / part : 0,
+        cY: cY[k], pY: pY[k], iY: iY[k],
+      });
     }
     out.sort((a, b) => b.coord - a.coord);
     out.forEach((p, k) => { p.rankCoord = k + 1; });
     const conCoord = out.filter(p => p.coord > 0);
     const media = conCoord.length ? conCoord.reduce((a, p) => a + p.coord, 0) / conCoord.length : 0;
-    return { total, mediaCoord: Math.round(media), paises: out };
+    return { total: suma(totalY), años: [a0, a1], totalY, mediaCoord: Math.round(media), paises: out };
+  });
+}
+
+/* Detalle de un país: sus cifras, sus líneas, quién coordina y con qué
+   países trabaja (la red de socios que dibuja el mapa). */
+function pais(code, q) {
+  const s = load();
+  const k = s.paisIdx.get(String(code).toUpperCase());
+  if (k === undefined) return null;
+  const rol = q.rol === 'part' ? 'part' : 'coord';
+  const F = parseFiltros({ ...q, pais: s.paises[k], rol });
+  return cached('d' + F.clave, () => {
+    const { P } = s;
+    const socios = new Map(), orgs = new Map();
+    let n = 0;
+    forEach(F, i => {
+      n++;
+      const { off, c } = s.pc;
+      const vistos = new Set();
+      for (let j = off[i]; j < off[i + 1]; j++) {
+        const o = c[j];
+        if (o === k || vistos.has(o) || s.paises[o] === '??') continue;
+        vistos.add(o);
+        socios.set(o, (socios.get(o) || 0) + 1);
+      }
+      if (P.c[i] === k && P.co[i] >= 0) {
+        let x = orgs.get(P.co[i]);
+        if (!x) orgs.set(P.co[i], x = { n: 0, importe: 0 });
+        x.n++; x.importe += Math.max(0, P.g[i]);
+      }
+    });
+    const c = consulta({ ...q, pais: s.paises[k], rol });
+    return {
+      code: s.paises[k], nombre: nombrePais(s.paises[k]), rol, pob: s.pob[s.paises[k]] || null,
+      kpis: c.kpis, porAño: c.porAño,
+      lineas: c.porLinea.slice(0, 10).map(l => ({ id: l.id, nombre: l.nombre, grupo: l.grupo, proyectos: l.proyectos, importe: l.importe, mediana: l.mediana })),
+      socios: [...socios.entries()].sort((a, b) => b[1] - a[1]).slice(0, 30)
+        .map(([o, v]) => ({ code: s.paises[o], nombre: nombrePais(s.paises[o]), n: v, pct: n ? v / n : 0 })),
+      entidades: [...orgs.entries()].sort((a, b) => b[1].n - a[1].n || b[1].importe - a[1].importe).slice(0, 10)
+        .map(([o, v]) => ({ nombre: s.orgs[o][0], proyectos: v.n, importe: v.importe })),
+    };
   });
 }
 
@@ -459,4 +518,4 @@ function comparar(q) {
 
 function tasas() { return load().tasas; }
 
-module.exports = { load, meta, consulta, paises, linea, comparar, tasas };
+module.exports = { load, meta, consulta, paises, pais, linea, comparar, tasas };

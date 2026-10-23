@@ -1,19 +1,29 @@
 /* ═══════════════════════════════════════════════════════════════
    Estadísticas Erasmus+ — #estadisticas
    ═══════════════════════════════════════════════════════════════
-   Vistas: panorama · lineas · linea/<id> · comparar · paises · tasas
+   El mapa es el centro de todas las vistas: vive en un «escenario»
+   fijo (mapa + línea de tiempo + panel lateral) que no se destruye al
+   cambiar de vista; cada vista decide qué pinta el mapa, qué hace un
+   clic en un país y qué cuenta el panel. Debajo va el detalle.
+
+   Vistas: paises · panorama · lineas · linea/<id> · comparar · tasas
    El estado (vista + filtros) vive en el hash:
      #estadisticas/lineas?desde=2021&hasta=2025&grupo=asociaciones
    Los cambios de filtro usan replaceState (no recargan la sección);
    los cambios de vista, pushState (el botón Atrás vuelve).
-   Datos: /v1/estadisticas/* (node/src/modules/estadisticas).
+   Datos: /v1/estadisticas/* (node/src/modules/estadisticas). /paises
+   trae cada país año a año: la línea de tiempo y la reproducción
+   repintan el mapa sin pedir nada al servidor.
+
+   Diales (web-composicion): varianza 3 · movimiento 5 · densidad 7.
    ═══════════════════════════════════════════════════════════════ */
 
 const Estadisticas = (() => {
   /* ── Paleta (validada con dataviz/validate_palette.js, 4 series) ── */
-  const AZUL = '#4312d8', TINTA = '#1b0759', TEXTO2 = '#55577a', LINEA = '#efe8fe', LAVANDA = '#b392f6';
+  const AZUL = '#4312d8', TINTA = '#1b0759', TEXTO2 = '#55577a', LINEA = '#efe8fe', LAVANDA = '#b392f6', MAGENTA = '#c2408f';
   const SERIES = ['#4312d8', '#c2408f', '#6f8500', '#9b7cf4'];
   const RAMPA = ['#efe8fe', '#cdb9fa', '#a487f5', '#7349f0', '#4312d8', '#2a0b8f', '#1b0759'];
+  const SIN_DATO = '#ebeaf0';
 
   const VISTAS = [
     { id: 'paises',   nombre: 'Países',          icono: 'public' },
@@ -27,14 +37,13 @@ const Estadisticas = (() => {
   let built = false;
   let charts = [];
   let seq = 0;                       // descarta respuestas de peticiones viejas
-  let tablaLineas = null;            // última consulta (para ordenar/buscar sin pedir otra vez)
-  let geo = null;
 
   const S = {
     vista: 'paises', id: null,
     f: { desde: 2021, hasta: 2025, grupo: '', sector: '', gestion: '', pais: '', rol: 'coord', foco: 'ES' },
     comp: { tipo: 'linea', ids: [] },
-    orden: { col: 'importe', dir: -1 }, buscar: '', metrica: 'coord',
+    orden: { col: 'importe', dir: -1 }, buscar: '',
+    metrica: 'coord', mapa: 'europa', sel: '', red: false, ver: '', tasa: 0, compVer: 0,
   };
 
   /* ── Formato ──────────────────────────────────────────────── */
@@ -44,29 +53,32 @@ const Estadisticas = (() => {
   function fmtEur(v, corto = false) {
     if (v == null) return '—';
     const a = Math.abs(v);
-    if (a >= 1e9) return dec1(v / 1e9) + '\u00a0mil\u00a0M€';
-    if (a >= 1e6) return dec1(v / 1e6) + '\u00a0M€';
-    if (corto && a >= 1e4) return nf.format(Math.round(v / 1000)) + 'k\u00a0€';
-    return nf.format(Math.round(v)) + '\u00a0€';
+    if (a >= 1e9) return dec1(v / 1e9) + ' mil M€';
+    if (a >= 1e6) return dec1(v / 1e6) + ' M€';
+    if (corto && a >= 1e4) return nf.format(Math.round(v / 1000)) + 'k €';
+    return nf.format(Math.round(v)) + ' €';
   }
   // «25k–84k €», «1,4–1,5 M€»: una sola unidad al final.
   function rango(a, b) {
     if (a == null || b == null) return '—';
     if (a === b) return fmtEur(a, true);
-    if (b >= 1e6) return `${dec1(a / 1e6)}–${dec1(b / 1e6)}\u00a0M€`;
-    if (b >= 1e4) return `${nf.format(Math.round(a / 1000))}k–${nf.format(Math.round(b / 1000))}k\u00a0€`;
-    return `${nf.format(a)}–${nf.format(b)}\u00a0€`;
+    if (b >= 1e6) return `${dec1(a / 1e6)}–${dec1(b / 1e6)} M€`;
+    if (b >= 1e4) return `${nf.format(Math.round(a / 1000))}k–${nf.format(Math.round(b / 1000))}k €`;
+    return `${nf.format(a)}–${nf.format(b)} €`;
   }
   const pct = (v, d = 0) => (v == null ? '—' : (v * 100).toLocaleString('es-ES', { maximumFractionDigits: d }) + ' %');
+  const fmtHab = v => (v == null ? '—' : v.toLocaleString('es-ES', { maximumFractionDigits: v < 10 ? 1 : 0 }));
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fecha = (iso, sinAño) => iso ? new Date(iso + 'T12:00:00').toLocaleDateString('es-ES', sinAño ? { day: 'numeric', month: 'short' } : { day: 'numeric', month: 'short', year: 'numeric' }) : '—';
   const $ = sel => document.querySelector(sel);
+  const tasaTxt = t => `${t.aprox ? '≈ ' : ''}${t.rango || dec1(t.tasa).replace(',0', '') + ' %'}`;
 
   const nombreGrupo = id => META?.grupos.find(g => g.id === id)?.nombre || id;
   const nombreSector = id => META?.sectores[id] || id;
   const nombrePais = code => META?.paises.find(p => p.code === code)?.nombre || code;
   const lineaMeta = id => META?.lineas.find(l => l.id === id);
   const gestionTxt = g => (g === 'AN' ? 'Agencia Nacional' : g === 'EACEA' ? 'Bruselas (EACEA)' : '—');
+  const periodoTxt = (a = S.f.desde, b = S.f.hasta) => (a === b ? String(a) : `${a}–${b}`);
 
   /* ── Hash ⇄ estado ────────────────────────────────────────── */
   function leerHash(sub) {
@@ -87,7 +99,12 @@ const Estadisticas = (() => {
     f.foco = q.get('foco') || 'ES';
     if (q.get('comparar')) S.comp.ids = q.get('comparar').split(',').filter(Boolean).slice(0, 4);
     if (q.get('tipo')) S.comp.tipo = q.get('tipo') === 'pais' ? 'pais' : 'linea';
-    if (q.get('metrica')) S.metrica = q.get('metrica');
+    S.metrica = METRICAS[q.get('metrica')] ? q.get('metrica') : 'coord';
+    S.mapa = q.get('mapa') === 'mundo' ? 'mundo' : 'europa';
+    S.sel = q.get('sel') || '';
+    S.red = q.get('red') === '1';
+    S.ver = q.get('ver') || '';
+    S.tasa = parseInt(q.get('tasa'), 10) || 0;
   }
 
   function qsFiltros(extra = {}) {
@@ -101,11 +118,23 @@ const Estadisticas = (() => {
     for (const [k, v] of Object.entries(extra)) if (v !== '' && v != null) q.set(k, v);
     return q.toString();
   }
+  // El mapa enseña todos los países: el filtro de país solo lo resalta.
+  function qsSinPais(extra = {}) {
+    const pais = S.f.pais; S.f.pais = '';
+    try { return qsFiltros(extra); } finally { S.f.pais = pais; }
+  }
+  // Solo el periodo: para el mapa de una línea concreta (los filtros de catálogo no aplican).
+  const qsBase = (extra = {}) => new URLSearchParams({ desde: S.f.desde, hasta: S.f.hasta, ...extra }).toString();
 
   function hashActual() {
     const extra = {};
     if (S.vista === 'comparar') { if (S.comp.ids.length) extra.comparar = S.comp.ids.join(','); extra.tipo = S.comp.tipo; }
-    if (S.vista === 'paises' && S.metrica !== 'coord') extra.metrica = S.metrica;
+    if (S.metrica !== 'coord') extra.metrica = S.metrica;
+    if (S.mapa === 'mundo') extra.mapa = 'mundo';
+    if (S.vista === 'paises' && S.sel) extra.sel = S.sel;
+    if (S.vista === 'paises' && S.red) extra.red = '1';
+    if (S.vista === 'lineas' && S.ver) extra.ver = S.ver;
+    if (S.vista === 'tasas' && S.tasa) extra.tasa = S.tasa;
     const ruta = S.vista === 'linea' ? `linea/${encodeURIComponent(S.id)}` : S.vista;
     return `#estadisticas/${ruta}?${qsFiltros(extra)}`;
   }
@@ -118,6 +147,14 @@ const Estadisticas = (() => {
 
   /* ── API ──────────────────────────────────────────────────── */
   const get = path => API.get('/estadisticas' + path);
+  const memo = new Map();
+  function getMemo(path) {
+    if (!memo.has(path)) {
+      memo.set(path, get(path).catch(e => { memo.delete(path); throw e; }));
+      if (memo.size > 80) memo.delete(memo.keys().next().value);
+    }
+    return memo.get(path);
+  }
 
   function esperar(nombre) {
     return new Promise(res => {
@@ -125,6 +162,381 @@ const Estadisticas = (() => {
       t();
     });
   }
+
+  /* ── Métricas del mapa ────────────────────────────────────── */
+  // Cada país trae sus cifras año a año (cY coordina, pY participa, iY dinero
+  // que coordina). ra/rb = índices de año dentro de esos arrays.
+  const suma = (arr, ra, rb) => { let t = 0; for (let k = ra; k <= rb; k++) t += arr[k] || 0; return t; };
+  const METRICAS = {
+    coord: { t: 'Proyectos que coordina', corto: 'Coordina', v: (p, a, b) => suma(p.cY, a, b), fmt: fmtN, rol: 'coord' },
+    part: { t: 'Proyectos en los que participa', corto: 'Participa', v: (p, a, b) => suma(p.pY, a, b), fmt: fmtN, rol: 'part' },
+    importeCoord: { t: 'Dinero de los proyectos que coordina', corto: 'Dinero', v: (p, a, b) => suma(p.iY, a, b), fmt: v => fmtEur(v), fmtCorto: v => fmtEur(v, true), rol: 'coord' },
+    hab: { t: 'Proyectos en los que participa por millón de habitantes', corto: 'Por habitante', v: (p, a, b) => (p.pob ? suma(p.pY, a, b) / (p.pob / 1e6) : null), fmt: fmtHab, rol: 'part', nota: 'Participación en relación con la población del país' },
+    ratio: { t: 'De cada 100 proyectos en los que está, cuántos coordina', corto: 'Coordina / participa', v: (p, a, b) => { const pa = suma(p.pY, a, b); return pa >= 10 ? suma(p.cY, a, b) / pa : null; }, fmt: v => pct(v), rol: 'coord', nota: 'Solo países con 10 o más participaciones' },
+  };
+  const metrica = () => METRICAS[S.metrica] || METRICAS.coord;
+
+  /* ═══ MAPA (persistente) ═════════════════════════════════════ */
+  const Mapa = (() => {
+    const geo = { europa: null, mundo: null };
+    let d3, box, svg, gZoom, gPaises, gMarcas, gArcos, gEtiq, proj, path, zoom, modo = null, W = 0, H = 0, zk = 1;
+    let feats = [], centro = new Map(), cfg = null, porCode = new Map(), colorDe = () => SIN_DATO, ro = null, roBox = null;
+
+    async function cargarGeo(m) {
+      if (!geo[m]) geo[m] = fetch(m === 'mundo' ? '/data/mundo.geo.json?v=20261023' : '/data/europa.geo.json').then(r => r.json());
+      return geo[m];
+    }
+
+    // Polígono más grande de cada país: centra etiquetas y arcos en la
+    // península, no en la Guayana o en Canarias.
+    function mayor(f) {
+      if (f.geometry.type !== 'MultiPolygon') return f;
+      const area = c => { const a = d3.geoArea({ type: 'Polygon', coordinates: c }); return a > 2 * Math.PI ? 4 * Math.PI - a : a; };
+      let best = null, bestA = -1;
+      for (const c of f.geometry.coordinates) { const a = area(c); if (a > bestA) { bestA = a; best = c; } }
+      return { type: 'Feature', geometry: { type: 'Polygon', coordinates: best } };
+    }
+
+    async function montar(m) {
+      d3 = await esperar('d3');
+      box = $('#est-mapa');
+      if (!box) return false;
+      const g = await cargarGeo(m);
+      if (!box.isConnected) return false;
+      if (modo === m && svg && svg.node().isConnected && Math.abs(box.clientWidth - W) < 2) return true;
+      modo = m;
+      W = box.clientWidth || 800; H = box.clientHeight || Math.round(W * 0.62);
+      // Europa: proyección de áreas iguales centrada en el continente;
+      // el encuadre va de Islandia a Chipre, sin Siberia.
+      proj = m === 'mundo'
+        ? d3.geoNaturalEarth1().fitExtent([[8, 8], [W - 8, H - 8]], { type: 'FeatureCollection', features: g.features.filter(f => f.id !== 'GL' && f.id !== 'AQ') })
+        : d3.geoAzimuthalEqualArea().rotate([-12, -52]).fitExtent([[6, 6], [W - 6, H - 6]], { type: 'MultiPoint', coordinates: [[-23, 63], [-10, 36], [35, 34], [44, 41], [33, 70], [-8, 58], [25, 71]] });
+      path = d3.geoPath(proj);
+      feats = g.features;
+      centro = new Map(feats.map(f => [f.id, path.centroid(mayor(f))]));
+
+      box.querySelector('svg')?.remove();
+      svg = d3.select(box).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H)
+        .attr('role', 'img').attr('aria-label', 'Mapa de países');
+      svg.append('rect').attr('width', W).attr('height', H).attr('fill', 'transparent').on('click', () => cfg?.onFondo?.());
+      gZoom = svg.append('g');
+      gPaises = gZoom.append('g').attr('class', 'est-capa-paises');
+      gMarcas = gZoom.append('g').attr('class', 'est-capa-marcas');
+      gArcos = gZoom.append('g').attr('class', 'est-capa-arcos');
+      gEtiq = gZoom.append('g').attr('class', 'est-capa-etiquetas');
+
+      gPaises.selectAll('path').data(feats, f => f.id).join('path')
+        .attr('d', path).attr('data-code', f => f.id).attr('class', 'est-pais').attr('fill', SIN_DATO)
+        .on('mousemove', (ev, f) => tooltip(ev, f.id))
+        .on('mouseleave', () => { $('#est-mapa-tt').hidden = true; })
+        .on('click', (ev, f) => { ev.stopPropagation(); if (porCode.has(f.id)) cfg?.onClick?.(f.id); });
+
+      // Países diminutos (Malta, Luxemburgo, Liechtenstein…): un punto para poder pulsarlos.
+      const peques = feats.filter(f => path.area(f) < 30);
+      gMarcas.selectAll('circle').data(peques, f => f.id).join('circle')
+        .attr('cx', f => centro.get(f.id)[0]).attr('cy', f => centro.get(f.id)[1]).attr('r', 3.6)
+        .attr('data-code', f => f.id).attr('class', 'est-pais est-pais--punto').attr('fill', SIN_DATO)
+        .on('mousemove', (ev, f) => tooltip(ev, f.id))
+        .on('mouseleave', () => { $('#est-mapa-tt').hidden = true; })
+        .on('click', (ev, f) => { ev.stopPropagation(); if (porCode.has(f.id)) cfg?.onClick?.(f.id); });
+
+      // Zoom: botones siempre; rueda solo con Ctrl/⌘ (o pellizco) para no
+      // secuestrar el scroll de la página; arrastrar, solo con el mapa ampliado.
+      zoom = d3.zoom().scaleExtent([1, 10]).translateExtent([[-W * 0.2, -H * 0.2], [W * 1.2, H * 1.2]])
+        .filter(ev => {
+          if (ev.type === 'wheel') {
+            if (ev.ctrlKey || ev.metaKey) return true;
+            avisar('Ctrl + rueda (o los botones +/−) para acercar el mapa', 'zoom');
+            return false;
+          }
+          if (ev.type === 'dblclick') return false;
+          if (ev.type === 'touchstart') return ev.touches.length > 1 || zk > 1.01;
+          return !ev.button && zk > 1.01;
+        })
+        .on('zoom', ev => {
+          zk = ev.transform.k;
+          gZoom.attr('transform', ev.transform);
+          gEtiq.selectAll('text').attr('font-size', 12 / zk).attr('stroke-width', 3 / zk);
+          gMarcas.selectAll('circle').attr('r', 3.6 / Math.sqrt(zk));
+          box.classList.toggle('is-ampliado', zk > 1.01);
+        });
+      svg.call(zoom);
+      zk = 1;
+
+      if (roBox !== box) {
+        ro?.disconnect();
+        let t = null;
+        ro = new ResizeObserver(() => { clearTimeout(t); t = setTimeout(() => { if (box?.isConnected && Math.abs(box.clientWidth - W) > 4 && cfg) { modo = null; pintar(cfg); } }, 180); });
+        ro.observe(box); roBox = box;
+      }
+      return true;
+    }
+
+    function rangoIdx(c, r) {
+      const a0 = c.datos.años[0];
+      const [a, b] = r || c.rango || [S.f.desde, S.f.hasta];
+      return [Math.max(0, a - a0), Math.min(c.datos.años[1], b) - a0];
+    }
+    const valorDe = (p, c, r) => { const [a, b] = rangoIdx(c, r); return (c.valor || metrica().v)(p, a, b); };
+
+    function escalaColor(c) {
+      const visibles = new Set(feats.map(f => f.id));
+      const fn = c.valor || metrica().v;
+      let vals;
+      if (c.anual) {
+        // Reproduciendo: una escala para todos los años, así se ve crecer.
+        vals = [];
+        const n = c.datos.años[1] - c.datos.años[0] + 1;
+        for (const p of c.datos.paises) if (visibles.has(p.code)) for (let k = 0; k < n; k++) { const v = fn(p, k, k); if (v > 0) vals.push(v); }
+      } else {
+        vals = c.datos.paises.filter(p => visibles.has(p.code)).map(p => valorDe(p, c)).filter(v => v > 0);
+      }
+      vals.sort((a, b) => a - b);
+      const cortes = [0.2, 0.4, 0.6, 0.8, 0.93].map(q => d3.quantile(vals, q)).filter((v, i, a) => v != null && (i === 0 || v > a[i - 1]));
+      return { cortes, color: v => (v == null || !(v > 0) ? SIN_DATO : RAMPA[1 + d3.bisectRight(cortes, v)] || RAMPA[6]) };
+    }
+
+    /* cfg: { datos, titulo, rango?, valor?, fmt?, sel?, resaltar?: {code: color}, onClick, onFondo, anual? } */
+    async function pintar(c) {
+      cfg = c;
+      if (!(await montar(S.mapa))) return;
+      if (cfg !== c) return;
+      porCode = new Map(c.datos.paises.map(p => [p.code, p]));
+      const esc_ = escalaColor(c);
+      colorDe = code => { const p = porCode.get(code); return p ? esc_.color(valorDe(p, c)) : SIN_DATO; };
+      const res = c.resaltar || null;
+      const anim = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      gZoom.selectAll('.est-pais')
+        .classed('con', f => porCode.has(f.id))
+        .classed('is-sel', f => f.id === c.sel)
+        .classed('is-res', f => !!(res && res[f.id]))
+        .classed('is-atenuado', f => !!(res && !res[f.id]))
+        .transition().duration(anim ? (c.anual ? 520 : 380) : 0)
+        .attr('fill', f => (res && res[f.id]) || colorDe(f.id));
+      if (c.sel) gZoom.selectAll('.est-pais').filter(f => f.id === c.sel).raise();
+      etiquetas(c);
+      leyenda(esc_.cortes, c);
+      $('#est-mapa-titulo').innerHTML = `<b>${esc(c.titulo || metrica().t)}</b><span>${esc(c.subtitulo || periodoTxt(...(c.rango || [S.f.desde, S.f.hasta])))}</span>`;
+      if (!c.mantenerArcos) arcos(null);
+    }
+
+    function etiquetas(c) {
+      const codes = new Set([...(c.sel ? [c.sel] : []), ...Object.keys(c.resaltar || {})]);
+      const datos = [...codes].filter(code => centro.has(code)).map(code => ({ code, xy: centro.get(code), n: porCode.get(code)?.nombre || nombrePais(code) }));
+      gEtiq.selectAll('text').data(datos, d => d.code).join('text')
+        .attr('x', d => d.xy[0]).attr('y', d => d.xy[1] - 10 / zk)
+        .attr('font-size', 12 / zk).attr('stroke-width', 3 / zk)
+        .attr('class', 'est-etiqueta').text(d => d.n);
+    }
+
+    function leyenda(cortes, c) {
+      const fmt = c.fmtCorto || c.fmt || metrica().fmtCorto || metrica().fmt;
+      const tramos = [0, ...cortes];
+      $('#est-mapa-leyenda').innerHTML = `
+        <span class="est-leyenda__sin"><i style="background:${SIN_DATO}"></i>sin datos</span>
+        ${tramos.map((v, i) => `<span><i style="background:${RAMPA[1 + i]}"></i>${i === 0 ? (cortes[0] != null ? 'hasta ' + esc(fmt(cortes[0])) : 'con datos') : esc(fmt(v)) + (i === tramos.length - 1 ? ' o más' : '')}</span>`).join('')}`;
+    }
+
+    function tooltip(ev, code) {
+      const tt = $('#est-mapa-tt');
+      if (!cfg || !tt) return;
+      const p = porCode.get(code);
+      const M = metrica(), fmt = cfg.fmt || M.fmt;
+      const n = cfg.datos.años[1] - cfg.datos.años[0] + 1;
+      let spark = '';
+      if (p) {
+        const fn = cfg.valor || M.v;
+        const serie = Array.from({ length: n }, (_, k) => fn(p, k, k) || 0);
+        const [ra, rb] = rangoIdx(cfg);
+        spark = sparkSvg(serie, 168, 34, { desde: ra, hasta: rb });
+      }
+      tt.hidden = false;
+      tt.innerHTML = `<b>${esc(p ? p.nombre : (nombrePais(code) || code))}</b>${p ? `<span class="est-tt__v">${esc(fmt(valorDe(p, cfg)))}</span><span class="est-tt__t">${esc(cfg.titulo || M.t)} · ${esc(periodoTxt(...(cfg.rango || [S.f.desde, S.f.hasta])))}</span>${spark}<span class="est-tt__t">${cfg.datos.años[0]}–${cfg.datos.años[1]}, año a año</span>` : '<span class="est-tt__t">Sin proyectos con estos filtros</span>'}`;
+      const r = box.getBoundingClientRect();
+      const x = ev.clientX - r.left, y = ev.clientY - r.top;
+      tt.style.left = Math.min(x + 16, r.width - 200) + 'px';
+      tt.style.top = Math.min(y + 16, r.height - 120) + 'px';
+    }
+
+    function hover(code) {
+      if (!gZoom) return;
+      gZoom.selectAll('.est-pais').classed('is-hover', f => f.id === code);
+      if (code) gZoom.selectAll('.est-pais').filter(f => f.id === code).raise();
+    }
+
+    /* Red de socios: arcos desde un país a sus socios más frecuentes. */
+    function arcos(origen, socios = []) {
+      if (!gArcos) return;
+      if (!origen || !centro.has(origen)) { gArcos.selectAll('*').remove(); return; }
+      const [x0, y0] = centro.get(origen);
+      const top = socios.filter(s => centro.has(s.code)).slice(0, 15);
+      const max = Math.max(...top.map(s => s.n), 1);
+      const curva = s => {
+        const [x1, y1] = centro.get(s.code);
+        const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, dx = x1 - x0, dy = y1 - y0;
+        const k = 0.22, cx = mx - dy * k, cy = my + dx * k;
+        return `M${x0},${y0} Q${cx},${cy} ${x1},${y1}`;
+      };
+      const anim = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const g = gArcos.selectAll('g.est-arco').data(top, s => s.code).join(enter => {
+        const e = enter.append('g').attr('class', 'est-arco');
+        e.append('path').attr('class', 'est-arco__halo');
+        e.append('path').attr('class', 'est-arco__linea');
+        e.append('circle').attr('class', 'est-arco__nodo');
+        return e;
+      });
+      g.select('.est-arco__halo').attr('d', curva).attr('stroke-width', s => 2 + 5 * Math.sqrt(s.n / max));
+      g.select('.est-arco__linea').attr('d', curva).attr('stroke-width', s => 1 + 3.2 * Math.sqrt(s.n / max))
+        .each(function () {
+          if (!anim) return;
+          const L = this.getTotalLength();
+          d3.select(this).attr('stroke-dasharray', `${L} ${L}`).attr('stroke-dashoffset', L)
+            .transition().duration(700).delay((_, i) => i * 40).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0);
+        });
+      g.select('.est-arco__nodo').attr('cx', s => centro.get(s.code)[0]).attr('cy', s => centro.get(s.code)[1])
+        .attr('r', s => (2.5 + 5 * Math.sqrt(s.n / max)) / Math.sqrt(zk));
+      g.selectAll('title').remove();
+      g.append('title').text(s => `${s.nombre}: ${fmtN(s.n)} proyectos en común (${pct(s.pct)})`);
+      gArcos.selectAll('circle.est-arco__origen').data([origen]).join('circle')
+        .attr('class', 'est-arco__origen').attr('cx', x0).attr('cy', y0).attr('r', 5 / Math.sqrt(zk)).raise();
+    }
+
+    function zoomA(code) {
+      const f = feats.find(x => x.id === code);
+      if (!f || !svg) return;
+      const [[x0, y0], [x1, y1]] = path.bounds(mayor(f));
+      const k = Math.max(1, Math.min(6, 0.45 / Math.max((x1 - x0) / W, (y1 - y0) / H)));
+      svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity.translate(W / 2, H / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+    }
+    function zoomPaso(f) { if (svg) svg.transition().duration(300).call(zoom.scaleBy, f); }
+    function zoomReset() { if (svg) svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity); }
+    function cambiarModo() { modo = null; if (cfg) pintar(cfg); }
+    const actual = () => cfg;
+
+    return { pintar, hover, arcos, zoomA, zoomPaso, zoomReset, cambiarModo, actual, valorDe, colorDe: code => colorDe(code) };
+  })();
+
+  /* Mini-mapa estático (Comparar líneas): misma escala para todos. */
+  async function miniMapa(el, datos, valor, color, titulo) {
+    const d3 = await esperar('d3');
+    const g = await fetch('/data/europa.geo.json').then(r => r.json());
+    const W = el.clientWidth || 300, H = Math.round(W * 0.78);
+    const proj = d3.geoAzimuthalEqualArea().rotate([-12, -52]).fitExtent([[4, 4], [W - 4, H - 4]], { type: 'MultiPoint', coordinates: [[-23, 63], [-10, 36], [35, 34], [44, 41], [33, 70]] });
+    const path = d3.geoPath(proj);
+    const por = new Map(datos.paises.map(p => [p.code, p]));
+    const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%');
+    const tt = el.parentElement.querySelector('.est-mini-tt');
+    svg.selectAll('path').data(g.features).join('path').attr('d', path).attr('class', 'est-pais')
+      .attr('fill', f => { const p = por.get(f.id); return p ? color(valor(p)) : SIN_DATO; })
+      .on('mousemove', (ev, f) => {
+        const p = por.get(f.id);
+        tt.hidden = false;
+        tt.innerHTML = `<b>${esc(p ? p.nombre : f.id)}</b><br>${p ? `${pct(valor(p), 1)} de los proyectos de ${esc(titulo)}<br>${fmtN(p.coord)} coordinados` : 'Sin proyectos'}`;
+        const r = el.parentElement.getBoundingClientRect();
+        tt.style.left = Math.min(ev.clientX - r.left + 12, r.width - 170) + 'px';
+        tt.style.top = (ev.clientY - r.top + 12) + 'px';
+      })
+      .on('mouseleave', () => { tt.hidden = true; });
+  }
+
+  /* ── Línea de tiempo (persistente) ────────────────────────── */
+  const Tiempo = (() => {
+    let datos = null, drag = null, play = null;
+    function pintar(d) {
+      datos = d;
+      const el = $('#est-tiempo-barras');
+      if (!el) return;
+      const [a0, a1] = d.años, max = Math.max(...d.totalY, 1);
+      el.innerHTML = d.totalY.map((v, k) => {
+        const y = a0 + k;
+        return `<button type="button" class="est-año" data-y="${y}" title="${y}: ${fmtN(v)} proyectos concedidos">
+          <span class="est-año__bar" style="height:${Math.max(3, v / max * 100).toFixed(1)}%"></span><span class="est-año__txt">${String(y).slice(2)}</span></button>`;
+      }).join('');
+      marcar(S.f.desde, S.f.hasta);
+      el.querySelectorAll('.est-año').forEach(b => b.addEventListener('click', e => {
+        if (e.detail !== 0) return;            // ratón y dedo van por los pointer events
+        const y = +b.dataset.y;
+        if (e.shiftKey) fijar(Math.min(y, S.f.desde), Math.max(y, S.f.hasta)); else fijar(y, y);
+      }));
+      $('#est-tiempo-desc').textContent = `${a0}–${a1}`;
+    }
+    function marcar(a, b) {
+      document.querySelectorAll('#est-tiempo-barras .est-año').forEach(x => { const y = +x.dataset.y; x.classList.toggle('is-on', y >= a && y <= b); });
+      const t = $('#est-tiempo-rango'); if (t) t.textContent = periodoTxt(a, b);
+      document.querySelectorAll('[data-periodo]').forEach(x => x.classList.toggle('is-on', x.dataset.periodo === `${a}-${b}`));
+    }
+    function fijar(a, b) {
+      parar();
+      if (a === S.f.desde && b === S.f.hasta) return;
+      S.f.desde = a; S.f.hasta = b; cambiarFiltros();
+    }
+    function yearAt(ev) {
+      const el = $('#est-tiempo-barras'), r = el.getBoundingClientRect(), n = datos.totalY.length;
+      return datos.años[0] + Math.max(0, Math.min(n - 1, Math.floor((ev.clientX - r.left) / r.width * n)));
+    }
+    function previa(a, b) {
+      marcar(a, b);
+      const c = Mapa.actual();
+      if (c) Mapa.pintar({ ...c, rango: [a, b], mantenerArcos: true });
+    }
+    function enlazar() {
+      const el = $('#est-tiempo-barras');
+      el.addEventListener('pointerdown', ev => {
+        if (!datos || ev.button) return;
+        parar();
+        const y = yearAt(ev);
+        drag = { a: y, b: y, x: ev.clientX, movido: false };
+        el.setPointerCapture(ev.pointerId);
+        ev.preventDefault();
+      });
+      el.addEventListener('pointermove', ev => {
+        if (!drag) return;
+        const y = yearAt(ev);
+        if (Math.abs(ev.clientX - drag.x) > 4) drag.movido = true;
+        if (y !== drag.b) { drag.b = y; previa(Math.min(drag.a, drag.b), Math.max(drag.a, drag.b)); }
+      });
+      const fin = ev => {
+        if (!drag) return;
+        const d = drag; drag = null;
+        let a = Math.min(d.a, d.b), b = Math.max(d.a, d.b);
+        if (!d.movido && ev.shiftKey) { a = Math.min(a, S.f.desde); b = Math.max(b, S.f.hasta); }
+        fijar(a, b);
+        if (a === S.f.desde && b === S.f.hasta) marcar(a, b);
+      };
+      el.addEventListener('pointerup', fin);
+      el.addEventListener('pointercancel', () => { drag = null; marcar(S.f.desde, S.f.hasta); const c = Mapa.actual(); if (c) Mapa.pintar({ ...c, rango: null }); });
+      $('#est-play').addEventListener('click', () => (play ? parar(true) : reproducir()));
+    }
+    function reproducir() {
+      const c = Mapa.actual();
+      if (!c || !datos) return;
+      const [a0, a1] = datos.años;
+      let y = a0;
+      const btn = $('#est-play');
+      btn.classList.add('is-on'); btn.querySelector('.material-symbols-outlined').textContent = 'pause'; btn.setAttribute('aria-label', 'Pausar');
+      const marca = $('#est-mapa-año');
+      const paso = () => {
+        if (y > a1) { parar(true); return; }
+        marcar(y, y);
+        marca.hidden = false; marca.textContent = y;
+        Mapa.pintar({ ...Mapa.actual(), rango: [y, y], anual: true, mantenerArcos: true });
+        y++;
+      };
+      paso();
+      play = setInterval(paso, 1100);
+    }
+    function parar(restaurar) {
+      if (!play) return;
+      clearInterval(play); play = null;
+      const btn = $('#est-play');
+      if (btn) { btn.classList.remove('is-on'); btn.querySelector('.material-symbols-outlined').textContent = 'play_arrow'; btn.setAttribute('aria-label', 'Reproducir año a año'); }
+      const marca = $('#est-mapa-año'); if (marca) marca.hidden = true;
+      marcar(S.f.desde, S.f.hasta);
+      const c = Mapa.actual();
+      if (restaurar && c) Mapa.pintar({ ...c, rango: null, anual: false, mantenerArcos: true });
+    }
+    return { pintar, enlazar, parar, marcar };
+  })();
 
   /* ── Gráficas ─────────────────────────────────────────────── */
   function limpiarGraficas() { charts.forEach(c => { try { c.destroy(); } catch { /* ya destruida */ } }); charts = []; }
@@ -158,7 +570,7 @@ const Estadisticas = (() => {
 
   // Barras horizontales en HTML: el nombre completo cabe (salta de línea) y la
   // cifra va siempre fuera de la barra. Hover = fila resaltada + title.
-  function barrasH(sel, filas, { valor, etiqueta, fmt = fmtN, color = AZUL, colores, onClick, tooltip }) {
+  function barrasH(sel, filas, { valor, etiqueta, fmt = fmtN, color = AZUL, colores, onClick, onHover, tooltip }) {
     const el = typeof sel === 'string' ? $(sel) : sel;
     if (!el) return;
     const max = Math.max(...filas.map(valor), 1);
@@ -170,7 +582,10 @@ const Estadisticas = (() => {
         <span class="est-hbar__track"><span class="est-hbar__bar" style="width:${w.toFixed(2)}%;background:${colores ? colores[i] : color}"></span><span class="est-hbar__val">${esc(fmt(v))}</span></span>
       </${onClick ? 'button' : 'div'}></li>`;
     }).join('')}</ol>`;
-    if (onClick) el.querySelectorAll('.est-hbar__fila').forEach(b => b.addEventListener('click', () => onClick(filas[+b.dataset.i])));
+    el.querySelectorAll('.est-hbar__fila').forEach(b => {
+      if (onClick) b.addEventListener('click', () => onClick(filas[+b.dataset.i]));
+      if (onHover) { b.addEventListener('mouseenter', () => onHover(filas[+b.dataset.i])); b.addEventListener('mouseleave', () => onHover(null)); }
+    });
   }
 
   function barrasV(sel, cats, datos, { nombre, fmt = fmtN, color = AZUL, alto = 240 }) {
@@ -185,12 +600,21 @@ const Estadisticas = (() => {
     });
   }
 
-  function sparkSvg(vals, w = 92, h = 26) {
+  // Sparkline; con {desde, hasta} sombrea el periodo elegido.
+  function sparkSvg(vals, w = 92, h = 26, marca = null) {
     const max = Math.max(...vals, 1);
     const pasos = vals.length - 1 || 1;
-    const pts = vals.map((v, i) => `${(i / pasos * (w - 4) + 2).toFixed(1)},${(h - 3 - v / max * (h - 6)).toFixed(1)}`).join(' ');
+    const X = i => i / pasos * (w - 4) + 2;
+    const pts = vals.map((v, i) => `${X(i).toFixed(1)},${(h - 3 - v / max * (h - 6)).toFixed(1)}`).join(' ');
     const ult = pts.split(' ').pop().split(',');
-    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline fill="none" stroke="${AZUL}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts}"/><circle cx="${ult[0]}" cy="${ult[1]}" r="2.5" fill="${AZUL}"/></svg>`;
+    const banda = marca ? `<rect x="${(X(marca.desde) - 3).toFixed(1)}" y="0" width="${(X(marca.hasta) - X(marca.desde) + 6).toFixed(1)}" height="${h}" rx="3" fill="${LINEA}"/>` : '';
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${banda}<polyline fill="none" stroke="${AZUL}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts}"/><circle cx="${ult[0]}" cy="${ult[1]}" r="2.5" fill="${AZUL}"/></svg>`;
+  }
+
+  // 100 puntos: de cada 100 solicitudes, cuántas salen.
+  function waffle(tasa) {
+    const n = Math.round(tasa);
+    return `<div class="est-waffle" role="img" aria-label="${n} de cada 100 solicitudes aprobadas">${Array.from({ length: 100 }, (_, i) => `<i class="${i < n ? 'is-on' : ''}"></i>`).join('')}</div>`;
   }
 
   /* ── Piezas de interfaz ───────────────────────────────────── */
@@ -207,9 +631,14 @@ const Estadisticas = (() => {
       ${nota ? `<span class="est-kpi__nota">${nota}</span>` : ''}
     </div>`;
 
+  // Cifra del panel lateral: etiqueta y valor en una fila.
+  const dato = (label, valor, nota = '') => `<div class="est-dato"><dt>${label}${nota ? `<small>${nota}</small>` : ''}</dt><dd>${valor}</dd></div>`;
+
   const chip = (txt, cls = '') => `<span class="est-chip ${cls}">${esc(txt)}</span>`;
 
-  function cargando(el) { el.innerHTML = '<div class="est-cargando"><span class="est-spin"></span>Calculando…</div>'; }
+  function cargando(el, filas = 3) {
+    el.innerHTML = `<div class="est-esqueleto" aria-busy="true" aria-label="Calculando">${'<span></span>'.repeat(filas)}</div>`;
+  }
   function error(el, e) { el.innerHTML = `<div class="est-vacio"><span class="material-symbols-outlined">error</span><p>No se han podido cargar los datos.</p><p class="text-xs">${esc(e?.message || '')}</p></div>`; }
 
   function descargarCsv(nombre, filas) {
@@ -227,19 +656,15 @@ const Estadisticas = (() => {
   /* ── Esqueleto (una vez) ──────────────────────────────────── */
   function construir() {
     const root = $('#est-root');
-    const años = []; for (let y = META.años[0]; y <= META.años[1]; y++) años.push(y);
-    const opAños = sel => años.map(y => `<option value="${y}" ${y === sel ? 'selected' : ''}>${y}</option>`).join('');
     const paisesOp = META.paises.filter(p => p.n > 0 || p.code === 'ES').map(p => `<option value="${p.code}">${esc(p.nombre)}</option>`).join('');
 
     root.innerHTML = `
       <header class="est-header">
-        <div>
-          <h1 class="font-headline text-2xl font-bold text-primary flex items-center gap-2">
-            <span class="material-symbols-outlined">monitoring</span> Estadísticas Erasmus+
-          </h1>
-          <p class="text-sm text-on-surface-variant mt-1">Lo que se ha concedido de verdad, línea a línea: cuántos proyectos, cuánto dinero y quién lo consigue.</p>
-          <p class="text-[11px] text-on-surface-variant/80 mt-1">${fmtN(META.lineas.reduce((a, l) => a + l.n, 0))} proyectos concedidos de ${META.años[0]} a ${META.años[1]} · ${esc(META.fuente)} · datos del ${fecha(META.generado.slice(0, 10))}</p>
-        </div>
+        <h1 class="font-headline text-2xl font-bold text-primary flex items-center gap-2">
+          <span class="material-symbols-outlined">monitoring</span> Estadísticas Erasmus+
+        </h1>
+        <p class="text-sm text-on-surface-variant mt-1">Lo que se ha concedido de verdad, país a país y línea a línea: cuántos proyectos, cuánto dinero y quién lo consigue.</p>
+        <p class="text-[11px] text-on-surface-variant/80 mt-1">${fmtN(META.lineas.reduce((a, l) => a + l.n, 0))} proyectos concedidos de ${META.años[0]} a ${META.años[1]} · ${esc(META.fuente)} · datos del ${fecha(META.generado.slice(0, 10))}</p>
       </header>
 
       <nav class="est-tabs" role="tablist" aria-label="Vistas de estadísticas">
@@ -247,19 +672,6 @@ const Estadisticas = (() => {
       </nav>
 
       <section class="est-filtros" aria-label="Filtros">
-        <div class="est-filtro est-filtro--periodo">
-          <label>Periodo</label>
-          <div class="est-seg" role="group" aria-label="Periodo">
-            <button type="button" data-periodo="2021-${META.años[1]}">Programa actual</button>
-            <button type="button" data-periodo="${META.años[0]}-2020">2014-2020</button>
-            <button type="button" data-periodo="${META.años[0]}-${META.años[1]}">Todo</button>
-          </div>
-          <div class="est-años">
-            <select id="est-desde" aria-label="Desde">${opAños(S.f.desde)}</select>
-            <span>a</span>
-            <select id="est-hasta" aria-label="Hasta">${opAños(S.f.hasta)}</select>
-          </div>
-        </div>
         <div class="est-filtro">
           <label for="est-grupo">Tipo de acción</label>
           <select id="est-grupo"><option value="">Todas</option>${META.grupos.map(g => `<option value="${g.id}">${esc(g.nombre)}</option>`).join('')}</select>
@@ -272,7 +684,7 @@ const Estadisticas = (() => {
           <label for="est-gestion">Quién la gestiona</label>
           <select id="est-gestion"><option value="">Todas</option><option value="AN">Agencia Nacional</option><option value="EACEA">Bruselas (EACEA)</option></select>
         </div>
-        <div class="est-filtro">
+        <div class="est-filtro est-filtro--pais">
           <label for="est-pais">País</label>
           <div class="flex gap-1.5">
             <select id="est-pais"><option value="">Todos</option>${paisesOp}</select>
@@ -284,10 +696,55 @@ const Estadisticas = (() => {
           <button type="button" id="est-enlace" class="est-btn est-btn--ghost" title="Copiar un enlace a esta vista con estos filtros"><span class="material-symbols-outlined">link</span>Copiar enlace</button>
         </div>
       </section>
+
+      <section class="est-escenario" aria-label="Mapa">
+        <div class="est-escenario__mapa">
+          <div class="est-mapa-barra">
+            <div class="est-seg est-seg--scroll" role="group" aria-label="Qué mide el mapa" id="est-metricas">
+              ${Object.entries(METRICAS).map(([k, m]) => `<button type="button" data-metrica="${k}" title="${esc(m.t)}">${esc(m.corto)}</button>`).join('')}
+            </div>
+            <div class="est-mapa-barra__dcha">
+              <div class="est-buscar est-buscar--mapa"><span class="material-symbols-outlined">search</span>
+                <input id="est-buscar-pais" type="search" list="est-paises-lista" placeholder="Buscar país" aria-label="Buscar país en el mapa"></div>
+              <datalist id="est-paises-lista">${META.paises.map(p => `<option value="${esc(p.nombre)}">`).join('')}</datalist>
+              <div class="est-seg" role="group" aria-label="Zona del mapa">
+                <button type="button" data-mapa="europa">Europa</button>
+                <button type="button" data-mapa="mundo">Mundo</button>
+              </div>
+            </div>
+          </div>
+          <div class="est-mapa-marco">
+            <div id="est-mapa" class="est-mapa"></div>
+            <div id="est-mapa-titulo" class="est-mapa-titulo"></div>
+            <div id="est-mapa-año" class="est-mapa-año" hidden></div>
+            <div class="est-zoom" role="group" aria-label="Zoom del mapa">
+              <button type="button" data-zoom="mas" aria-label="Acercar"><span class="material-symbols-outlined">add</span></button>
+              <button type="button" data-zoom="menos" aria-label="Alejar"><span class="material-symbols-outlined">remove</span></button>
+              <button type="button" data-zoom="reset" aria-label="Ver todo el mapa"><span class="material-symbols-outlined">fit_screen</span></button>
+            </div>
+            <div id="est-mapa-tt" class="est-tt est-tt--flot" hidden></div>
+            <div id="est-mapa-aviso" class="est-mapa-aviso" hidden></div>
+          </div>
+          <div id="est-mapa-leyenda" class="est-leyenda"></div>
+          <div class="est-tiempo">
+            <button type="button" id="est-play" class="est-play" aria-label="Reproducir año a año" title="Reproducir año a año"><span class="material-symbols-outlined">play_arrow</span></button>
+            <div class="est-tiempo__cuerpo">
+              <div class="est-tiempo__cab"><span>Periodo <b id="est-tiempo-rango"></b></span><small>Arrastra sobre los años para elegir un periodo · <span id="est-tiempo-desc"></span></small></div>
+              <div id="est-tiempo-barras" class="est-tiempo__barras" aria-label="Años"></div>
+            </div>
+            <div class="est-seg est-seg--vertical" role="group" aria-label="Periodos rápidos">
+              <button type="button" data-periodo="2021-${META.años[1]}">Programa actual</button>
+              <button type="button" data-periodo="${META.años[0]}-2020">2014-2020</button>
+              <button type="button" data-periodo="${META.años[0]}-${META.años[1]}">Todo</button>
+            </div>
+          </div>
+        </div>
+        <aside id="est-panel" class="est-panel" aria-live="polite"></aside>
+      </section>
       <p id="est-resumen" class="est-resumen" aria-live="polite"></p>
 
       <div id="est-vista"></div>
-      <p class="est-pie">Solo se publican los proyectos <b>concedidos</b>: no hay datos de solicitudes presentadas, salvo las tasas de éxito que sacamos de las agencias. «Al tope» = proyectos que reciben al menos el 97 % del máximo de su convocatoria. Las cantidades son la subvención total del proyecto, no lo que recibe cada socio.</p>
+      <p class="est-pie">Solo se publican los proyectos <b>concedidos</b>: no hay datos de solicitudes presentadas, salvo las tasas de éxito que sacamos de las agencias. «Al tope» = proyectos que reciben al menos el 97 % del máximo de su convocatoria. Las cantidades son la subvención total del proyecto, no lo que recibe cada socio. «Participa» cuenta los proyectos con al menos una entidad del país en cualquier papel, coordinación incluida.${META.fuentePoblacion ? ` Población: ${esc(META.fuentePoblacion)}.` : ''} Mapa: Natural Earth.</p>
     `;
 
     root.querySelectorAll('.est-tab').forEach(b => b.addEventListener('click', () => irA(b.dataset.vista)));
@@ -299,15 +756,38 @@ const Estadisticas = (() => {
     }));
     root.querySelectorAll('[data-periodo]').forEach(b => b.addEventListener('click', () => {
       const [d, h] = b.dataset.periodo.split('-').map(Number);
-      S.f.desde = d; S.f.hasta = h; cambiarFiltros();
+      Tiempo.parar(); S.f.desde = d; S.f.hasta = h; cambiarFiltros();
     }));
+    root.querySelectorAll('[data-metrica]').forEach(b => b.addEventListener('click', () => {
+      S.metrica = b.dataset.metrica;
+      const r = METRICAS[S.metrica].rol;
+      if (S.f.pais && S.f.rol !== r && S.vista !== 'paises') S.f.rol = r;
+      cambiarFiltros();
+    }));
+    root.querySelectorAll('[data-mapa]').forEach(b => b.addEventListener('click', () => {
+      if (S.mapa === b.dataset.mapa) return;
+      S.mapa = b.dataset.mapa; escribirHash(false); pintarControles(); Mapa.cambiarModo();
+    }));
+    root.querySelectorAll('[data-zoom]').forEach(b => b.addEventListener('click', () => {
+      const z = b.dataset.zoom;
+      if (z === 'mas') Mapa.zoomPaso(1.6); else if (z === 'menos') Mapa.zoomPaso(1 / 1.6); else Mapa.zoomReset();
+    }));
+    $('#est-buscar-pais').addEventListener('change', e => {
+      const t = e.target.value.trim().toLowerCase();
+      if (!t) return;
+      const p = META.paises.find(x => x.nombre.toLowerCase() === t) || META.paises.find(x => x.nombre.toLowerCase().startsWith(t));
+      if (!p) { avisar('No encuentro ese país'); return; }
+      e.target.value = '';
+      e.target.blur();
+      if (S.mapa === 'europa' && !EUROPA.has(p.code)) { S.mapa = 'mundo'; escribirHash(false); pintarControles(); Mapa.cambiarModo(); }
+      setTimeout(() => Mapa.zoomA(p.code), 120);
+      Mapa.actual()?.onClick?.(p.code, { desdeBuscador: true });
+    });
     const on = (id, fn) => $(id).addEventListener('change', fn);
-    on('#est-desde', e => { S.f.desde = +e.target.value; if (S.f.hasta < S.f.desde) S.f.hasta = S.f.desde; cambiarFiltros(); });
-    on('#est-hasta', e => { S.f.hasta = +e.target.value; if (S.f.desde > S.f.hasta) S.f.desde = S.f.hasta; cambiarFiltros(); });
     on('#est-grupo', e => { S.f.grupo = e.target.value; cambiarFiltros(); });
     on('#est-sector', e => { S.f.sector = e.target.value; cambiarFiltros(); });
     on('#est-gestion', e => { S.f.gestion = e.target.value; cambiarFiltros(); });
-    on('#est-pais', e => { S.f.pais = e.target.value; cambiarFiltros(); });
+    on('#est-pais', e => { if (S.vista === 'paises') { S.sel = e.target.value; S.f.pais = ''; } else S.f.pais = e.target.value; cambiarFiltros(); });
     on('#est-rol', e => { S.f.rol = e.target.value; cambiarFiltros(); });
     $('#est-limpiar').addEventListener('click', () => {
       Object.assign(S.f, { desde: 2021, hasta: META.años[1], grupo: '', sector: '', gestion: '', pais: '', rol: 'coord' });
@@ -318,10 +798,22 @@ const Estadisticas = (() => {
       try { await navigator.clipboard.writeText(url); avisar('Enlace copiado'); }
       catch { prompt('Copia este enlace:', url); }
     });
+    Tiempo.enlazar();
     built = true;
   }
 
-  function avisar(txt) {
+  // Países que dibuja el mapa de Europa (si buscas otro, se pasa a Mundo).
+  const EUROPA = new Set('VA JE GG IM UK UA TR TN SY CH SE ES SK SI RS SM RU RO PT PL NO NL MA ME MD MC MT MK LU LT LI LY LB LV XK KZ JO IT IL IE IQ IR IS HU EL DE GE FR AX FI EE GL FO DK CZ CY HR BG BA BE BY AZ AT AM AD DZ AL PS EG'.split(' '));
+
+  let avisoT = {};
+  function avisar(txt, clave) {
+    if (clave === 'zoom') {
+      const a = $('#est-mapa-aviso');
+      if (!a) return;
+      a.textContent = txt; a.hidden = false;
+      clearTimeout(avisoT.zoom); avisoT.zoom = setTimeout(() => { a.hidden = true; }, 1400);
+      return;
+    }
     const b = document.createElement('div');
     b.className = 'est-toast'; b.setAttribute('role', 'status'); b.textContent = txt;
     document.body.appendChild(b);
@@ -330,28 +822,29 @@ const Estadisticas = (() => {
 
   function pintarControles() {
     const f = S.f;
-    $('#est-desde').value = f.desde; $('#est-hasta').value = f.hasta;
     $('#est-grupo').value = f.grupo; $('#est-sector').value = f.sector; $('#est-gestion').value = f.gestion;
-    $('#est-pais').value = f.pais; $('#est-rol').value = f.rol;
-    $('#est-rol').hidden = !f.pais;
-    document.querySelectorAll('[data-periodo]').forEach(b => b.classList.toggle('is-on', b.dataset.periodo === `${f.desde}-${f.hasta}`));
+    $('#est-pais').value = S.vista === 'paises' ? (S.sel || '') : f.pais; $('#est-rol').value = f.rol;
+    $('#est-rol').hidden = !f.pais || S.vista === 'paises';
+    Tiempo.marcar(f.desde, f.hasta);
     const vistaTab = S.vista === 'linea' ? 'lineas' : S.vista;
     document.querySelectorAll('.est-tab').forEach(b => { const on = b.dataset.vista === vistaTab; b.classList.toggle('is-on', on); b.setAttribute('aria-selected', on); });
     document.querySelectorAll('[data-est-vista]').forEach(a => a.classList.toggle('active', a.dataset.estVista === vistaTab));
+    document.querySelectorAll('[data-metrica]').forEach(b => b.classList.toggle('is-on', b.dataset.metrica === S.metrica));
+    document.querySelectorAll('[data-mapa]').forEach(b => b.classList.toggle('is-on', b.dataset.mapa === S.mapa));
     // En la ficha y en Tasas, los filtros de catálogo no aplican.
     const catalogo = !['linea', 'tasas'].includes(S.vista);
     ['#est-grupo', '#est-sector', '#est-gestion'].forEach(id => { $(id).closest('.est-filtro').classList.toggle('est-off', !catalogo); });
-    $('.est-filtros').classList.toggle('est-off-all', S.vista === 'tasas');
+    $('#est-pais').closest('.est-filtro').classList.toggle('est-off', S.vista === 'tasas');
     const n = [f.grupo, f.sector, f.gestion, f.pais].filter(Boolean).length + (f.desde !== 2021 || f.hasta !== META.años[1] ? 1 : 0);
     $('#est-limpiar').hidden = !n;
   }
 
   function frase(total) {
-    const f = S.f, partes = [`${f.desde === f.hasta ? f.desde : `${f.desde}–${f.hasta}`}`];
+    const f = S.f, partes = [periodoTxt()];
     if (f.grupo && !['linea', 'tasas'].includes(S.vista)) partes.push(nombreGrupo(f.grupo));
     if (f.sector && !['linea', 'tasas'].includes(S.vista)) partes.push(nombreSector(f.sector));
     if (f.gestion && !['linea', 'tasas'].includes(S.vista)) partes.push(gestionTxt(f.gestion));
-    if (f.pais) partes.push(`${f.rol === 'coord' ? 'coordinados por' : 'con participación de'} ${nombrePais(f.pais)}`);
+    if (f.pais && S.vista !== 'paises') partes.push(`${f.rol === 'coord' ? 'coordinados por' : 'con participación de'} ${nombrePais(f.pais)}`);
     $('#est-resumen').innerHTML = total == null
       ? (S.vista === 'tasas' ? '' : `Con estos filtros: ${partes.map(esc).join(' · ')}`)
       : `<b>${fmtN(total)}</b> proyectos concedidos · ${partes.map(esc).join(' · ')}`;
@@ -359,32 +852,194 @@ const Estadisticas = (() => {
 
   /* ── Navegación interna ───────────────────────────────────── */
   function irA(vista, id = null) {
+    Tiempo.parar();
+    if (vista !== S.vista) Mapa.zoomReset();
     S.vista = vista; S.id = id;
     escribirHash(true);
     render();
     $('#est-root')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
 
-  function cambiarFiltros() { escribirHash(false); render(); }
+  function cambiarFiltros() { Tiempo.parar(); escribirHash(false); render(); }
 
   function render() {
     pintarControles();
     limpiarGraficas();
-    const el = $('#est-vista');
+    const el = $('#est-vista'), panel = $('#est-panel');
     const n = ++seq;
     const vivo = () => n === seq;
     const vistas = { panorama, lineas, linea: ficha, comparar, paises, tasas };
-    (vistas[S.vista] || paises)(el, vivo);
+    (vistas[S.vista] || paises)(el, panel, vivo);
+  }
+
+  // Clic en el mapa = filtrar por ese país (o quitar el filtro si ya lo era).
+  function filtrarPais(code) {
+    if (S.f.pais === code) S.f.pais = '';
+    else { S.f.pais = code; S.f.rol = metrica().rol; }
+    cambiarFiltros();
+  }
+  const quitarPais = () => `<button type="button" class="est-quitar" id="est-quitar-pais"><span class="material-symbols-outlined">close</span>${esc(nombrePais(S.f.pais))}</button>`;
+  function enlazarQuitar(panel) { panel.querySelector('#est-quitar-pais')?.addEventListener('click', () => { S.f.pais = ''; cambiarFiltros(); }); }
+
+  async function cargarMapa(qs, vivo, extra = {}) {
+    const d = await getMemo('/paises?' + qs);
+    if (!vivo()) return null;
+    Tiempo.pintar(d);
+    await Mapa.pintar({ datos: d, ...extra });
+    return d;
+  }
+
+  /* ═══ PAÍSES (mapa + ranking) ════════════════════════════════ */
+  async function paises(el, panel, vivo) {
+    cargando(el, 6); cargando(panel, 5);
+    const M = metrica();
+    const sel = S.sel || S.f.pais || S.f.foco;
+    let d;
+    try {
+      d = await cargarMapa(qsSinPais(), vivo, {
+        titulo: M.t, sel,
+        onClick: code => { S.sel = code; escribirHash(false); detalle(code); Mapa.pintar({ ...Mapa.actual(), sel: code, mantenerArcos: true }); },
+      });
+    } catch (e) { return vivo() && error(el, e); }
+    if (!d) return;
+    frase(d.total);
+
+    const [ra, rb] = [S.f.desde - d.años[0], S.f.hasta - d.años[0]];
+    const val = p => M.v(p, ra, rb);
+    const conDato = d.paises.filter(p => val(p) > 0);
+    const rankDe = code => { const o = [...conDato].sort((a, b) => val(b) - val(a)); return o.findIndex(p => p.code === code) + 1; };
+
+    // Panel: el país seleccionado
+    async function detalle(code) {
+      const p = d.paises.find(x => x.code === code);
+      if (!p) { panel.innerHTML = `<div class="est-panel__head"><h2>${esc(nombrePais(code))}</h2><p>Sin proyectos con estos filtros.</p></div>`; Mapa.arcos(null); return; }
+      const rol = M.rol;
+      const hab = METRICAS.hab.v(p, ra, rb);
+      const serie = p[rol === 'part' ? 'pY' : 'cY'];
+      panel.innerHTML = `
+        <div class="est-panel__head">
+          <h2>${esc(p.nombre)}</h2>
+          <p>${val(p) > 0 ? `Puesto <b>${rankDe(code)}</b> de ${conDato.length} · ${esc(M.corto.toLowerCase())}` : 'Sin dato para esta medida'}</p>
+        </div>
+        <div class="est-panel__spark">${sparkSvg(serie, 300, 46, { desde: ra, hasta: rb })}<small>Proyectos que ${rol === 'part' ? 'participa' : 'coordina'} por año, ${d.años[0]}–${d.años[1]}</small></div>
+        <dl class="est-datos">
+          ${dato('Coordina', fmtN(p.coord))}
+          ${dato('Participa', fmtN(p.part))}
+          ${dato('Dinero que coordina', fmtEur(p.importeCoord))}
+          ${dato('Por millón de habitantes', fmtHab(hab), 'participación')}
+          ${dato('Coordina de cada 100', p.part ? fmtN(p.coord / p.part * 100) : '—')}
+          ${dato('Frente a la media', d.mediaCoord ? (p.coord / d.mediaCoord).toLocaleString('es-ES', { maximumFractionDigits: 1 }) + ' veces' : '—', 'proyectos coordinados')}
+        </dl>
+        <label class="est-switch"><input type="checkbox" id="est-red" ${S.red ? 'checked' : ''}><span></span>Ver en el mapa con quién trabaja</label>
+        <div id="est-pais-extra">${'<div class="est-esqueleto est-esqueleto--fino"><span></span><span></span></div>'}</div>
+        <div class="est-panel__acciones">
+          <button type="button" class="est-btn est-btn--primary" data-p="panorama"><span class="material-symbols-outlined">dashboard</span>Su panorama</button>
+          <button type="button" class="est-btn est-btn--ghost" data-p="lineas"><span class="material-symbols-outlined">view_list</span>Sus líneas</button>
+          <button type="button" class="est-btn est-btn--ghost" data-p="comparar"><span class="material-symbols-outlined">compare_arrows</span>Comparar</button>
+        </div>`;
+      panel.querySelector('#est-red').addEventListener('change', e => { S.red = e.target.checked; escribirHash(false); pintarRed(); });
+      panel.querySelectorAll('[data-p]').forEach(b => b.addEventListener('click', () => {
+        const a = b.dataset.p;
+        if (a === 'comparar') {
+          const ids = S.comp.tipo === 'pais' ? S.comp.ids.filter(x => x !== p.code) : [];
+          S.comp = { tipo: 'pais', ids: [p.code, ...(ids.length ? ids : [p.code === 'ES' ? 'IT' : 'ES'])].slice(0, 4) };
+        } else { S.f.pais = p.code; S.f.rol = rol; }
+        irA(a);
+      }));
+      document.querySelectorAll('#est-rank tr[data-code]').forEach(tr => tr.classList.toggle('is-sel', tr.dataset.code === code));
+
+      let x;
+      try { x = await getMemo(`/pais/${code}?` + qsSinPais({ rol })); } catch (e) { return; }
+      if (!vivo() || (S.sel || sel) !== code) return;
+      const extra = panel.querySelector('#est-pais-extra');
+      if (!extra) return;
+      extra.innerHTML = `
+        <div class="est-panel__bloque" id="est-socios" ${S.red ? '' : 'hidden'}>
+          <h4>Con quién trabaja más</h4>
+          <p class="est-nota">Países presentes en los proyectos en los que ${rol === 'part' ? 'participa' : 'coordina'} ${esc(p.nombre)}</p>
+          <div id="est-socios-barras"></div>
+        </div>
+        <div class="est-panel__bloque">
+          <h4>Sus líneas principales</h4>
+          <ol class="est-mini est-mini--plano">${x.lineas.slice(0, 5).map(l => `<li><a href="${linkLinea(l.id)}" data-linea="${l.id}"><span class="est-mini__nombre">${esc(l.nombre)}<small>${fmtEur(l.importe)}</small></span><span class="est-mini__valor">${fmtN(l.proyectos)}</span></a></li>`).join('') || '<li class="est-nota">Sin líneas con estos filtros.</li>'}</ol>
+        </div>
+        ${x.entidades.length ? `<div class="est-panel__bloque"><h4>Quién coordina más</h4><ol class="est-mini est-mini--plano est-mini--org">${x.entidades.slice(0, 5).map(o => `<li><span class="est-mini__fila"><span class="est-mini__nombre">${esc(o.nombre || 'Sin nombre')}<small>${fmtEur(o.importe)}</small></span><span class="est-mini__valor">${fmtN(o.proyectos)}</span></span></li>`).join('')}</ol></div>` : ''}`;
+      enlazarLineas(extra);
+      barrasH('#est-socios-barras', x.socios.slice(0, 8), { valor: s => s.n, etiqueta: s => s.nombre, fmt: fmtN, color: MAGENTA, tooltip: 'proyectos en común', onHover: s => Mapa.hover(s ? s.code : null), onClick: s => { S.sel = s.code; escribirHash(false); detalle(s.code); Mapa.pintar({ ...Mapa.actual(), sel: s.code, mantenerArcos: true }); } });
+      pais_ = x;
+      pintarRed();
+    }
+    let pais_ = null;
+    function pintarRed() {
+      const bloque = $('#est-socios');
+      if (bloque) bloque.hidden = !S.red;
+      if (S.red && pais_) Mapa.arcos(pais_.code, pais_.socios);
+      else Mapa.arcos(null);
+    }
+
+    // Debajo: ranking completo
+    el.innerHTML = `
+      ${tarjeta('Ranking de países', `<div class="est-toolbar est-toolbar--tabla"><span class="est-nota">${M.nota ? esc(M.nota) + ' · ' : ''}Pasa el ratón por un país para verlo en el mapa; pulsa para ver su ficha.</span><button type="button" id="est-rank-csv" class="est-btn est-btn--ghost"><span class="material-symbols-outlined">download</span>CSV</button></div><div class="est-tabla-wrap est-tabla-wrap--alta"><table class="est-tabla est-tabla--compacta" id="est-rank"></table></div>`, { sub: `${periodoTxt()} · ordena por cualquier columna` })}`;
+    let orden = { k: 'metrica', dir: -1 };
+    // La columna de la medida del mapa va primero y en negrita; su gemela no se repite.
+    const gemela = { coord: 'coord', part: 'part', importeCoord: 'importeCoord', hab: 'hab', ratio: 'ratioCoord' }[S.metrica];
+    const colsR = [['nombre', 'País', true], ['metrica', M.corto], ['coord', 'Coordina'], ['part', 'Participa'], ['importeCoord', 'Dinero coordinado'], ['hab', 'Por millón hab.'], ['ratioCoord', 'Coord./partic.']].filter(([k]) => k !== gemela);
+    const vk = (p, k) => (k === 'metrica' ? val(p) : k === 'hab' ? METRICAS.hab.v(p, ra, rb) : p[k]);
+    const celda = (p, k) => ({
+      metrica: () => `<b>${esc(M.fmt(val(p)))}</b>`, coord: () => fmtN(p.coord), part: () => fmtN(p.part),
+      importeCoord: () => fmtEur(p.importeCoord), hab: () => fmtHab(METRICAS.hab.v(p, ra, rb)), ratioCoord: () => pct(p.ratioCoord),
+    })[k]();
+    const pintarRank = () => {
+      const filas = [...d.paises].sort((a, b) => {
+        const x = vk(a, orden.k), y = vk(b, orden.k);
+        if (typeof x === 'string') return x.localeCompare(y, 'es') * orden.dir;
+        return ((x ?? -1) - (y ?? -1)) * orden.dir;
+      });
+      const cur = S.sel || sel;
+      $('#est-rank').innerHTML = `<thead><tr><th class="n">#</th>${colsR.map(([k, t, txt]) => `<th class="${txt ? '' : 'n'}"><button type="button" data-k="${k}" class="${orden.k === k ? 'is-on' : ''}">${esc(t)}${orden.k === k ? (orden.dir < 0 ? ' ↓' : ' ↑') : ''}</button></th>`).join('')}</tr></thead>
+        <tbody>${filas.map((p, i) => `<tr data-code="${p.code}" class="${p.code === cur ? 'is-sel' : ''}"><td class="n est-tenue">${i + 1}</td><td><button type="button" class="est-link" data-code="${p.code}"><i class="est-cuadro" style="background:${Mapa.colorDe(p.code)}"></i>${esc(p.nombre)}</button></td>${colsR.slice(1).map(([k]) => `<td class="n">${celda(p, k)}</td>`).join('')}</tr>`).join('')}</tbody>`;
+      $('#est-rank').querySelectorAll('th button').forEach(b => b.addEventListener('click', () => { orden = { k: b.dataset.k, dir: orden.k === b.dataset.k ? -orden.dir : (b.dataset.k === 'nombre' ? 1 : -1) }; pintarRank(); }));
+      $('#est-rank').querySelectorAll('tr[data-code]').forEach(tr => {
+        tr.addEventListener('mouseenter', () => Mapa.hover(tr.dataset.code));
+        tr.addEventListener('mouseleave', () => Mapa.hover(null));
+      });
+      $('#est-rank').querySelectorAll('button[data-code]').forEach(b => b.addEventListener('click', () => {
+        const code = b.dataset.code;
+        if (S.mapa === 'europa' && !EUROPA.has(code)) { S.mapa = 'mundo'; pintarControles(); }
+        S.sel = code; escribirHash(false);
+        Mapa.pintar({ ...Mapa.actual(), sel: code }).then(() => Mapa.zoomA(code));
+        detalle(code);
+        $('.est-escenario')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }));
+    };
+    pintarRank();
+    $('#est-rank-csv').addEventListener('click', () => descargarCsv(`estadisticas-paises-${S.f.desde}-${S.f.hasta}.csv`, [
+      ['País', 'Código', 'Coordina', 'Participa', 'Dinero coordinado (€)', 'Por millón de habitantes', 'Coordina / participa (%)', 'Población'],
+      ...d.paises.map(p => [p.nombre, p.code, p.coord, p.part, Math.round(p.importeCoord), METRICAS.hab.v(p, ra, rb)?.toFixed(1) ?? '', Math.round(p.ratioCoord * 100), p.pob || '']),
+    ]));
+    detalle(sel);
   }
 
   /* ═══ PANORAMA ═══════════════════════════════════════════════ */
-  async function panorama(el, vivo) {
-    cargando(el);
+  async function panorama(el, panel, vivo) {
+    cargando(el, 6); cargando(panel, 6);
+    const M = metrica();
     let d;
-    try { d = await get('/consulta?' + qsFiltros()); } catch (e) { return vivo() && error(el, e); }
+    try {
+      const [, c] = await Promise.all([
+        cargarMapa(qsSinPais(), vivo, { titulo: M.t, sel: S.f.pais, onClick: filtrarPais, onFondo: () => S.f.pais && filtrarPais(S.f.pais) }),
+        get('/consulta?' + qsFiltros()),
+      ]);
+      d = c;
+    } catch (e) { return vivo() && error(el, e); }
     if (!vivo()) return;
     frase(d.kpis.proyectos);
-    if (!d.kpis.proyectos) { el.innerHTML = '<div class="est-vacio"><span class="material-symbols-outlined">search_off</span><p>No hay proyectos con estos filtros.</p></div>'; return; }
+    if (!d.kpis.proyectos) {
+      panel.innerHTML = `<div class="est-panel__head"><h2>Panorama</h2>${S.f.pais ? quitarPais() : ''}</div><p class="est-nota">No hay proyectos con estos filtros.</p>`;
+      enlazarQuitar(panel);
+      el.innerHTML = '<div class="est-vacio"><span class="material-symbols-outlined">search_off</span><p>No hay proyectos con estos filtros.</p></div>';
+      return;
+    }
     const k = d.kpis, foco = d.filtros.foco, nFoco = nombrePais(foco);
     const focoCoord = d.porLinea.reduce((a, l) => a + l.focoCoord, 0);
     const focoPart = d.porLinea.reduce((a, l) => a + l.focoPart, 0);
@@ -402,30 +1057,39 @@ const Estadisticas = (() => {
       !S.f.pais && `${esc(nFoco)} coordina <b>${fmtN(focoCoord)}</b> de estos proyectos (${pct(focoCoord / k.proyectos, 1)}) y participa en <b>${fmtN(focoPart)}</b>.`,
     ].filter(Boolean);
 
-    el.innerHTML = `
-      <div class="est-kpis">
-        ${kpi('Proyectos concedidos', fmtN(k.proyectos), `${fmtN(k.lineas)} líneas`, true)}
-        ${kpi('Dinero concedido', fmtEur(k.importe))}
-        ${kpi('Importe mediano', fmtEur(k.mediana), `la mitad de los proyectos, por debajo`)}
-        ${kpi('Rango habitual', rango(k.p25, k.p75), 'el 50 % central')}
-        ${kpi('Entidades coordinadoras', fmtN(k.coordinadoras), `de ${fmtN(k.paisesCoord)} países`)}
-        ${kpi('Buenas prácticas', fmtN(k.buenasPracticas), 'proyectos destacados por la Comisión')}
+    panel.innerHTML = `
+      <div class="est-panel__head">
+        <h2>${S.f.pais ? `Panorama de ${esc(nombrePais(S.f.pais))}` : 'Panorama general'}</h2>
+        <p>${S.f.pais ? `Proyectos que ${S.f.rol === 'part' ? 'tienen alguna entidad de' : 'coordina'} ${esc(nombrePais(S.f.pais))} · pulsa otro país para cambiar` : 'Pulsa un país en el mapa para ver su panorama'}</p>
+        ${S.f.pais ? quitarPais() : ''}
       </div>
-      <div class="est-esencial"><h3>Lo esencial</h3><ul>${ideas.map(i => `<li>${i}</li>`).join('')}</ul></div>
+      <dl class="est-datos est-datos--grande">
+        ${dato('Proyectos concedidos', fmtN(k.proyectos), `${fmtN(k.lineas)} líneas`)}
+        ${dato('Dinero concedido', fmtEur(k.importe))}
+        ${dato('Importe mediano', fmtEur(k.mediana), 'la mitad, por debajo')}
+        ${dato('Rango habitual', rango(k.p25, k.p75), 'el 50 % central')}
+        ${dato('Entidades coordinadoras', fmtN(k.coordinadoras), `de ${fmtN(k.paisesCoord)} países`)}
+        ${dato('Buenas prácticas', fmtN(k.buenasPracticas), 'destacados por la Comisión')}
+      </dl>
+      <div class="est-esencial est-esencial--panel"><h3>Lo esencial</h3><ul>${ideas.map(i => `<li>${i}</li>`).join('')}</ul></div>`;
+    enlazarQuitar(panel);
+    enlazarLineas(panel);
+
+    el.innerHTML = `
       <div class="est-grid est-grid--2">
         ${tarjeta('Proyectos concedidos por año', '<div id="est-g-año-n"></div>')}
         ${tarjeta('Dinero concedido por año', '<div id="est-g-año-g"></div>')}
       </div>
       <div class="est-grid est-grid--2">
-        ${tarjeta('Dinero por tipo de acción', '<div id="est-g-grupos"></div>', { sub: 'Pulsa una barra para filtrar por ese tipo' })}
+        ${tarjeta('Dinero por tipo de acción', '<div id="est-g-grupos"></div>', { sub: 'Pulsa una barra para filtrar por ese tipo: el mapa cambia con él' })}
         ${tarjeta('Las que más crecen', listaMini(crecen.slice(0, 6), l => `${l.crecimiento > 0 ? '+' : ''}${pct(l.crecimiento)}`, l => `${fmtN(l.spark.find(v => v > 0))} → ${fmtN(l.spark[l.spark.length - 1])} proyectos/año`), { sub: 'Proyectos del primer al último año del periodo (líneas con 25 o más al principio)' })}
       </div>
       <div class="est-grid">
-        ${tarjeta('Las 10 líneas con más dinero', '<div id="est-g-top"></div>', { sub: 'Pulsa una línea para ver su ficha' })}
+        ${tarjeta('Las 10 líneas con más dinero', '<div id="est-g-top"></div>', { sub: 'Pulsa una línea para ver su ficha y su mapa' })}
       </div>
       <div class="est-grid est-grid--2">
         ${tarjeta('Donde se concede al máximo', topes.length ? listaMini(topes.slice(0, 6), l => pct(l.alTope), l => `mediana ${fmtEur(l.mediana)} · tope ${fmtEur(l.max2026)}`) : '<p class="est-nota">Ninguna línea de estos filtros tiene un máximo fijo.</p>', { sub: 'Porcentaje de proyectos con al menos el 97 % del máximo' })}
-        ${tarjeta(`Donde más pesa ${esc(nFoco)}`, focoFuerte.length ? listaMini(focoFuerte.slice(0, 6), l => pct(l.focoCoord / l.proyectos), l => `coordina ${fmtN(l.focoCoord)} de ${fmtN(l.proyectos)} proyectos`) : '<p class="est-nota">Sin datos suficientes con estos filtros.</p>', { sub: `Parte de los proyectos que coordina ${esc(nFoco)} (líneas con 20 o más proyectos)` })}
+        ${tarjeta(`Donde más pesa ${esc(nFoco)}`, focoFuerte.length ? listaMini(focoFuerte.slice(0, 6), l => pct(l.focoCoord / l.proyectos), l => `coordina ${fmtN(l.focoCoord)} de ${fmtN(l.proyectos)} proyectos`) : `<p class="est-nota">${S.f.pais ? 'Quita el filtro de país para ver esta lista.' : 'Sin datos suficientes con estos filtros.'}</p>`, { sub: `Parte de los proyectos que coordina ${esc(nFoco)} (líneas con 20 o más proyectos)` })}
       </div>`;
     enlazarLineas(el);
 
@@ -452,13 +1116,69 @@ const Estadisticas = (() => {
   }
 
   /* ═══ LÍNEAS (catálogo) ══════════════════════════════════════ */
-  async function lineas(el, vivo) {
-    cargando(el);
+  async function lineas(el, panel, vivo) {
+    cargando(el, 8); cargando(panel, 4);
+    const M = metrica();
+    const qsMapa = id => qsSinPais({ linea: id || '' });
+    const cfgMapa = id => ({ titulo: id ? `${M.t} · ${lineaMeta(id)?.nombre || id}` : M.t, sel: S.f.pais, onClick: filtrarPais, onFondo: () => S.f.pais && filtrarPais(S.f.pais) });
     let d;
-    try { d = await get('/consulta?' + qsFiltros()); } catch (e) { return vivo() && error(el, e); }
+    try {
+      const [, c] = await Promise.all([cargarMapa(qsMapa(S.ver), vivo, cfgMapa(S.ver)), get('/consulta?' + qsFiltros())]);
+      d = c;
+    } catch (e) { return vivo() && error(el, e); }
     if (!vivo()) return;
     frase(d.kpis.proyectos);
-    tablaLineas = d;
+
+    // Pasar por una línea = verla en el mapa; pulsar la fila = dejarla fijada.
+    let previaT = null, previaId = null;
+    const verEnMapa = async id => {
+      previaId = id;
+      try {
+        const m = await getMemo('/paises?' + qsMapa(id));
+        if (!vivo() || previaId !== id) return;
+        Tiempo.pintar(m);
+        Mapa.pintar({ datos: m, ...cfgMapa(id) });
+      } catch { /* se queda el mapa anterior */ }
+    };
+    const previa = id => { clearTimeout(previaT); previaT = setTimeout(() => verEnMapa(id || S.ver), id ? 140 : 260); };
+    const fijar = id => { S.ver = S.ver === id ? '' : id; escribirHash(false); pintarPanel(); verEnMapa(S.ver); document.querySelectorAll('#est-tabla-lineas tr[data-id]').forEach(tr => tr.classList.toggle('is-sel', tr.dataset.id === S.ver)); };
+
+    const pintarPanel = () => {
+      const l = d.porLinea.find(x => x.id === S.ver);
+      const cab = `<div class="est-panel__head"><h2>Líneas</h2><p>${fmtN(d.porLinea.length)} líneas con proyectos${S.f.pais ? ` de ${esc(nombrePais(S.f.pais))}` : ''} · ${periodoTxt()}</p>${S.f.pais ? quitarPais() : ''}</div>`;
+      if (!l) {
+        panel.innerHTML = `${cab}
+          <ul class="est-pasos"><li><span class="material-symbols-outlined">ads_click</span>Pasa el ratón por una línea de la tabla para ver en el mapa dónde se concede. Pulsa la fila para dejarla fijada.</li>
+          <li><span class="material-symbols-outlined">public</span>Pulsa un país en el mapa para quedarte con sus líneas.</li></ul>
+          <div class="est-panel__bloque"><h4>Las 5 con más dinero</h4>${listaMini(d.porLinea.slice(0, 5), x => fmtN(x.proyectos), x => fmtEur(x.importe))}</div>`;
+      } else {
+        panel.innerHTML = `${cab}
+          <div class="est-panel__linea">
+            <span class="est-chip">En el mapa</span>
+            <h3>${esc(l.nombre)}</h3>
+            <p class="est-nota">${esc(nombreGrupo(l.grupo))} · ${esc(gestionTxt(l.gestion))}</p>
+          </div>
+          <div class="est-panel__spark">${sparkSvg(l.spark, 300, 46)}<small>Proyectos por año, ${periodoTxt()}</small></div>
+          <dl class="est-datos">
+            ${dato('Proyectos', fmtN(l.proyectos), `${fmtN(l.porAño)} al año`)}
+            ${dato('Dinero', fmtEur(l.importe))}
+            ${dato('Importe mediano', fmtEur(l.mediana))}
+            ${dato('Rango habitual', rango(l.p25, l.p75))}
+            ${l.alTope != null ? dato('Al tope', pct(l.alTope)) : ''}
+            ${l.cierre2026 ? dato('Cierre 2026', fecha(l.cierre2026)) : ''}
+          </dl>
+          <div class="est-panel__acciones">
+            <button type="button" class="est-btn est-btn--primary" id="est-l-ficha"><span class="material-symbols-outlined">open_in_full</span>Abrir su ficha</button>
+            <button type="button" class="est-btn est-btn--ghost" id="est-l-quitar"><span class="material-symbols-outlined">close</span>Quitar del mapa</button>
+          </div>`;
+        panel.querySelector('#est-l-ficha').addEventListener('click', () => irA('linea', l.id));
+        panel.querySelector('#est-l-quitar').addEventListener('click', () => fijar(l.id));
+      }
+      enlazarQuitar(panel);
+      enlazarLineas(panel);
+    };
+    pintarPanel();
+
     const foco = d.filtros.foco;
     const focoOp = META.paises.filter(p => p.n > 0).map(p => `<option value="${p.code}" ${p.code === foco ? 'selected' : ''}>${esc(p.nombre)}</option>`).join('');
     el.innerHTML = `
@@ -503,7 +1223,7 @@ const Estadisticas = (() => {
       $('#est-tabla-lineas').innerHTML = `
         <thead><tr><th class="est-th-check"><span class="sr-only">Comparar</span></th>${cols.map(c => `<th ${c.title ? `title="${esc(c.title)}"` : ''} class="${c.txt ? '' : 'n'}"><button type="button" data-col="${c.k}" class="${col === c.k ? 'is-on' : ''}">${esc(c.t)}${col === c.k ? (dir < 0 ? ' ↓' : ' ↑') : ''}</button></th>`).join('')}</tr></thead>
         <tbody>${filas.map(l => `
-          <tr data-id="${l.id}">
+          <tr data-id="${l.id}" class="est-fila-mapa ${l.id === S.ver ? 'is-sel' : ''}" title="Pulsa para ver esta línea en el mapa">
             <td class="est-th-check"><input type="checkbox" data-comp="${l.id}" ${marcadas.has(l.id) ? 'checked' : ''} aria-label="Comparar ${esc(l.nombre)}"></td>
             <td class="est-td-nombre"><a href="${linkLinea(l.id)}" data-linea="${l.id}">${esc(l.nombre)}</a><span>${esc(nombreGrupo(l.grupo))} · ${esc(gestionTxt(l.gestion))}</span></td>
             <td class="n">${fmtN(l.proyectos)}</td>
@@ -528,6 +1248,15 @@ const Estadisticas = (() => {
         else marcadas.delete(cb.dataset.comp);
         actualizarComp();
       }));
+      $('#est-tabla-lineas').querySelectorAll('tr[data-id]').forEach(tr => {
+        tr.addEventListener('mouseenter', () => previa(tr.dataset.id));
+        tr.addEventListener('mouseleave', () => previa(null));
+        tr.addEventListener('click', e => {
+          if (e.target.closest('a, input')) return;
+          fijar(tr.dataset.id);
+          if (window.matchMedia('(max-width: 1023px)').matches) $('.est-escenario')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        });
+      });
     };
     pintar();
     actualizarComp();
@@ -543,54 +1272,46 @@ const Estadisticas = (() => {
   }
 
   /* ═══ FICHA DE LÍNEA ═════════════════════════════════════════ */
-  async function ficha(el, vivo) {
-    cargando(el);
+  async function ficha(el, panel, vivo) {
+    cargando(el, 6); cargando(panel, 6);
+    const M = metrica();
+    const lm = lineaMeta(S.id);
     let d;
-    try { d = await get(`/linea/${encodeURIComponent(S.id)}?` + qsFiltros()); } catch (e) { return vivo() && error(el, e); }
+    try {
+      const [, x] = await Promise.all([
+        cargarMapa(qsBase({ linea: S.id }), vivo, { titulo: `${M.t} · ${lm?.nombre || S.id}`, sel: S.f.pais, onClick: filtrarPais, onFondo: () => S.f.pais && filtrarPais(S.f.pais) }),
+        get(`/linea/${encodeURIComponent(S.id)}?` + qsFiltros()),
+      ]);
+      d = x;
+    } catch (e) { return vivo() && error(el, e); }
     if (!vivo()) return;
     frase(d.kpis.proyectos);
     const l = d.linea, k = d.kpis, foco = d.filtros.foco, nFoco = nombrePais(foco);
     const añosCon = d.porAño.filter(a => a.proyectos > 0).length || 1;
     const multiEnt = d.consorcio.some(c => c.entidades > 1 && c.n / (k.proyectos || 1) > 0.2);
 
-    el.innerHTML = `
-      <div class="est-ficha-head">
-        <button type="button" class="est-volver" id="est-volver"><span class="material-symbols-outlined">arrow_back</span>Todas las líneas</button>
+    panel.innerHTML = `
+      <button type="button" class="est-volver" id="est-volver"><span class="material-symbols-outlined">arrow_back</span>Todas las líneas</button>
+      <div class="est-panel__head">
         <h2>${esc(l.nombre)}</h2>
         <div class="est-chips">${chip(nombreGrupo(l.grupo))}${chip(gestionTxt(l.gestion))}${chip(nombreSector(l.sector))}${l.financiacion ? chip('Financiación UE ' + l.financiacion) : ''}${chip(`Concedida de ${l.desde} a ${l.hasta}`, 'est-chip--tenue')}</div>
-        ${l.nota ? `<p class="est-aviso"><span class="material-symbols-outlined">info</span>${esc(l.nota)}</p>` : ''}
-        <div class="est-ficha-acciones">
-          <button type="button" class="est-btn est-btn--ghost" id="est-a-comp"><span class="material-symbols-outlined">compare_arrows</span>Comparar con otra línea</button>
-          <button type="button" class="est-btn est-btn--ghost" id="est-a-csv"><span class="material-symbols-outlined">download</span>CSV por año</button>
-        </div>
+        ${S.f.pais ? `<p>Solo proyectos que ${S.f.rol === 'part' ? 'tienen alguna entidad de' : 'coordina'} ${esc(nombrePais(S.f.pais))}</p>${quitarPais()}` : '<p>Pulsa un país para ver solo sus proyectos</p>'}
       </div>
-      ${!k.proyectos ? '<div class="est-vacio"><span class="material-symbols-outlined">search_off</span><p>Esta línea no tiene proyectos con estos filtros. Prueba con otro periodo.</p></div>' : `
-      <div class="est-kpis">
-        ${kpi('Proyectos concedidos', fmtN(k.proyectos), `${fmtN(Math.round(k.proyectos / añosCon))} al año`, true)}
-        ${kpi('Importe mediano', fmtEur(k.mediana), `media ${fmtEur(k.media)}`)}
-        ${kpi('Rango habitual', rango(k.p25, k.p75), 'el 50 % central')}
-        ${kpi('Máximo 2026', l.maxTexto ? esc(l.maxTexto) : fmtEur(l.max2026), k.alTope != null ? `${pct(k.alTope)} de los proyectos, al tope` : '')}
-        ${kpi('Cierre 2026', l.cierre2026 ? (l.cierreAprox ? '≈ ' : '') + fecha(l.cierre2026) : '—', l.cierreAprox ? 'fecha habitual, compruébala en la guía' : '17:00 hora de Bruselas')}
-        ${kpi(`${esc(nFoco)} coordina / participa`, `${fmtN(k.focoCoord)} / ${fmtN(k.focoPart)}`, k.proyectos ? `${pct(k.focoCoord / k.proyectos, 1)} de los proyectos los coordina ${esc(nFoco)}` : '')}
-        ${d.tasa ? kpi('Tasa de éxito', `${d.tasa.aprox ? '≈ ' : ''}${d.tasa.rango || dec1(d.tasa.tasa).replace(',0', '') + ' %'}`, `${esc(d.tasa.ambito)} · convocatoria ${d.tasa.convocatoria}`) : ''}
-      </div>
-      <div class="est-grid est-grid--2">
-        ${tarjeta('Proyectos concedidos por año', '<div id="est-f-n"></div>')}
-        ${tarjeta('Importe por proyecto, año a año', '<div id="est-f-imp"></div>', { sub: 'Mediana y franja del 50 % central' + (d.porAño.some(a => a.tope) ? ' · línea discontinua: máximo de la convocatoria' : '') })}
-      </div>
-      <div class="est-grid est-grid--2">
-        ${tarjeta('Cuánto se concede', '<div id="est-f-dist"></div>', { sub: d.distribucion.tipo === 'tramos' ? 'Proyectos por cantidad fija concedida' : 'Número de proyectos por tramo de importe' })}
-        ${tarjeta('Duración de los proyectos', '<div id="est-f-dur"></div>', { sub: 'Meses' })}
-      </div>
-      <div class="est-grid est-grid--2">
-        ${tarjeta('Qué países coordinan', '<div id="est-f-pc"></div>', { sub: `Proyectos coordinados · ${esc(nFoco)} resaltado` })}
-        ${tarjeta('Qué países participan', '<div id="est-f-pp"></div>', { sub: 'Proyectos con al menos una entidad del país, en cualquier papel' })}
-      </div>
-      ${multiEnt ? `<div class="est-grid est-grid--2">${tarjeta('Tamaño del consorcio', '<div id="est-f-cons"></div>', { sub: 'Entidades por proyecto (20 = 20 o más)' })}${tarjeta('Quién coordina más', tablaCoord(d.coordinadoras))}</div>`
-        : `<div class="est-grid">${tarjeta('Quién coordina más', tablaCoord(d.coordinadoras))}</div>`}
-      ${d.ejemplos.length ? tarjeta('Buenas prácticas de esta línea', `<ul class="est-ejemplos">${d.ejemplos.map(e => `<li>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titulo)}</a>` : esc(e.titulo)}<span>${e.año} · ${esc(e.nombrePais)} · ${fmtEur(e.importe)}</span></li>`).join('')}</ul>`, { sub: 'Proyectos destacados por la Comisión Europea (abre la Plataforma de Resultados)' }) : ''}
-      `}`;
-
+      ${l.nota ? `<p class="est-aviso"><span class="material-symbols-outlined">info</span>${esc(l.nota)}</p>` : ''}
+      ${k.proyectos ? `<dl class="est-datos">
+        ${dato('Proyectos concedidos', fmtN(k.proyectos), `${fmtN(Math.round(k.proyectos / añosCon))} al año`)}
+        ${dato('Importe mediano', fmtEur(k.mediana), `media ${fmtEur(k.media)}`)}
+        ${dato('Rango habitual', rango(k.p25, k.p75), 'el 50 % central')}
+        ${dato('Máximo 2026', l.maxTexto ? esc(l.maxTexto) : fmtEur(l.max2026), k.alTope != null ? `${pct(k.alTope)} al tope` : '')}
+        ${dato('Cierre 2026', l.cierre2026 ? (l.cierreAprox ? '≈ ' : '') + fecha(l.cierre2026) : '—', l.cierreAprox ? 'fecha habitual' : '17:00 Bruselas')}
+        ${S.f.pais ? '' : dato(`${esc(nFoco)} coordina / participa`, `${fmtN(k.focoCoord)} / ${fmtN(k.focoPart)}`)}
+        ${d.tasa ? dato('Tasa de éxito', tasaTxt(d.tasa), `${esc(d.tasa.ambito)} · ${d.tasa.convocatoria}`) : ''}
+      </dl>` : ''}
+      <div class="est-panel__acciones">
+        <button type="button" class="est-btn est-btn--ghost" id="est-a-comp"><span class="material-symbols-outlined">compare_arrows</span>Comparar</button>
+        <button type="button" class="est-btn est-btn--ghost" id="est-a-csv"><span class="material-symbols-outlined">download</span>CSV por año</button>
+      </div>`;
+    enlazarQuitar(panel);
     $('#est-volver').addEventListener('click', () => irA('lineas'));
     $('#est-a-comp').addEventListener('click', () => {
       const ids = S.comp.tipo === 'linea' ? S.comp.ids.filter(x => x !== l.id) : [];
@@ -601,7 +1322,27 @@ const Estadisticas = (() => {
       ['Año', 'Proyectos', 'Dinero (€)', 'Media (€)', 'Mediana (€)', 'P25 (€)', 'P75 (€)', 'Al tope (%)', 'Máximo (€)'],
       ...d.porAño.map(a => [a.año, a.proyectos, a.importe, a.media, a.mediana, a.p25, a.p75, a.alTope == null ? '' : Math.round(a.alTope * 100), a.tope || '']),
     ]));
-    if (!k.proyectos) return;
+
+    if (!k.proyectos) {
+      el.innerHTML = '<div class="est-vacio"><span class="material-symbols-outlined">search_off</span><p>Esta línea no tiene proyectos con estos filtros. Prueba con otro periodo o quita el país.</p></div>';
+      return;
+    }
+    el.innerHTML = `
+      <div class="est-grid est-grid--2">
+        ${tarjeta('Proyectos concedidos por año', '<div id="est-f-n"></div>')}
+        ${tarjeta('Importe por proyecto, año a año', '<div id="est-f-imp"></div>', { sub: 'Mediana y franja del 50 % central' + (d.porAño.some(a => a.tope) ? ' · línea discontinua: máximo de la convocatoria' : '') })}
+      </div>
+      <div class="est-grid est-grid--2">
+        ${tarjeta('Cuánto se concede', '<div id="est-f-dist"></div>', { sub: d.distribucion.tipo === 'tramos' ? 'Proyectos por cantidad fija concedida' : 'Número de proyectos por tramo de importe' })}
+        ${tarjeta('Duración de los proyectos', '<div id="est-f-dur"></div>', { sub: 'Meses' })}
+      </div>
+      <div class="est-grid est-grid--2">
+        ${tarjeta('Qué países coordinan', '<div id="est-f-pc"></div>', { sub: `Proyectos coordinados · ${esc(nFoco)} resaltado · pasa el ratón para verlo en el mapa` })}
+        ${tarjeta('Qué países participan', '<div id="est-f-pp"></div>', { sub: 'Proyectos con al menos una entidad del país, en cualquier papel' })}
+      </div>
+      ${multiEnt ? `<div class="est-grid est-grid--2">${tarjeta('Tamaño del consorcio', '<div id="est-f-cons"></div>', { sub: 'Entidades por proyecto (20 = 20 o más)' })}${tarjeta('Quién coordina más', tablaCoord(d.coordinadoras))}</div>`
+        : `<div class="est-grid">${tarjeta('Quién coordina más', tablaCoord(d.coordinadoras))}</div>`}
+      ${d.ejemplos.length ? tarjeta('Buenas prácticas de esta línea', `<ul class="est-ejemplos">${d.ejemplos.map(e => `<li>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titulo)}</a>` : esc(e.titulo)}<span>${e.año} · ${esc(e.nombrePais)} · ${fmtEur(e.importe)}</span></li>`).join('')}</ul>`, { sub: 'Proyectos destacados por la Comisión Europea (abre la Plataforma de Resultados)' }) : ''}`;
 
     // Solo los años en que la línea existió (sin ceros delante ni detrás).
     const ini = d.porAño.findIndex(a => a.proyectos > 0);
@@ -648,8 +1389,9 @@ const Estadisticas = (() => {
     barrasV('#est-f-dur', d.duracion.map(x => String(x.meses)), d.duracion.map(x => x.n), { nombre: 'Proyectos', color: AZUL });
 
     const resalta = filas => filas.map(p => (p.code === foco ? TINTA : LAVANDA));
-    barrasH('#est-f-pc', d.paisesCoord.slice(0, 12), { valor: p => p.n, etiqueta: p => p.nombre, colores: resalta(d.paisesCoord.slice(0, 12)), tooltip: 'Proyectos' });
-    barrasH('#est-f-pp', d.paisesPart.slice(0, 12), { valor: p => p.n, etiqueta: p => p.nombre, colores: resalta(d.paisesPart.slice(0, 12)), tooltip: 'Proyectos' });
+    const hoverPais = p => Mapa.hover(p ? p.code : null);
+    barrasH('#est-f-pc', d.paisesCoord.slice(0, 12), { valor: p => p.n, etiqueta: p => p.nombre, colores: resalta(d.paisesCoord.slice(0, 12)), tooltip: 'Proyectos', onHover: hoverPais, onClick: p => filtrarPais(p.code) });
+    barrasH('#est-f-pp', d.paisesPart.slice(0, 12), { valor: p => p.n, etiqueta: p => p.nombre, colores: resalta(d.paisesPart.slice(0, 12)), tooltip: 'Proyectos', onHover: hoverPais, onClick: p => filtrarPais(p.code) });
     if (multiEnt) barrasV('#est-f-cons', d.consorcio.map(x => String(x.entidades)), d.consorcio.map(x => x.n), { nombre: 'Proyectos' });
   }
 
@@ -669,8 +1411,10 @@ const Estadisticas = (() => {
     { tipo: 'pais', ids: ['ES', 'PT', 'EL'], t: 'España, Portugal y Grecia' },
   ];
 
-  async function comparar(el, vivo) {
+  async function comparar(el, panel, vivo) {
     const C = S.comp;
+    const M = metrica();
+    if (S.compVer >= C.ids.length) S.compVer = 0;
     const opciones = C.tipo === 'linea'
       ? META.grupos.map(g => {
         const ls = META.lineas.filter(l => l.grupo === g.id && l.modo !== 'acreditacion' && l.hasta >= S.f.desde && l.desde <= S.f.hasta && !C.ids.includes(l.id));
@@ -678,37 +1422,70 @@ const Estadisticas = (() => {
       }).join('')
       : META.paises.filter(p => p.n > 0 && !C.ids.includes(p.code)).map(p => `<option value="${p.code}">${esc(p.nombre)}</option>`).join('');
 
-    el.innerHTML = `
-      <div class="est-comp-barra">
-        <div class="est-seg" role="group" aria-label="Qué comparar">
-          <button type="button" data-ctipo="linea" class="${C.tipo === 'linea' ? 'is-on' : ''}">Líneas</button>
-          <button type="button" data-ctipo="pais" class="${C.tipo === 'pais' ? 'is-on' : ''}">Países</button>
-        </div>
-        <div class="est-comp-sel">
-          ${C.ids.map((id, i) => `<span class="est-comp-chip" style="--c:${SERIES[i]}"><i></i>${esc(C.tipo === 'linea' ? (lineaMeta(id)?.nombre || id) : nombrePais(id))}<button type="button" data-quitar="${esc(id)}" aria-label="Quitar"><span class="material-symbols-outlined">close</span></button></span>`).join('')}
-          ${C.ids.length < 4 ? `<select id="est-comp-add" aria-label="Añadir"><option value="">+ Añadir ${C.tipo === 'linea' ? 'línea' : 'país'}…</option>${opciones}</select>` : ''}
-        </div>
+    const nombreId = id => (C.tipo === 'linea' ? (lineaMeta(id)?.nombre || id) : nombrePais(id));
+    panel.innerHTML = `
+      <div class="est-panel__head">
+        <h2>Comparar</h2>
+        <p>${C.tipo === 'pais' ? 'Pulsa países en el mapa para añadirlos o quitarlos (hasta 4)' : 'Elige hasta 4 líneas; el mapa enseña una y debajo tienes un mapa de cada una'}</p>
       </div>
-      <div id="est-comp-cuerpo"></div>`;
+      <div class="est-seg est-seg--ancho" role="group" aria-label="Qué comparar">
+        <button type="button" data-ctipo="pais" class="${C.tipo === 'pais' ? 'is-on' : ''}">Países</button>
+        <button type="button" data-ctipo="linea" class="${C.tipo === 'linea' ? 'is-on' : ''}">Líneas</button>
+      </div>
+      <ul class="est-comp-lista">
+        ${C.ids.map((id, i) => `<li class="${C.tipo === 'linea' && i === S.compVer ? 'is-on' : ''}" style="--c:${SERIES[i]}">
+          ${C.tipo === 'linea' ? `<button type="button" class="est-comp-lista__ver" data-ver="${i}" title="Ver en el mapa"><i></i><span>${esc(nombreId(id))}</span><span class="material-symbols-outlined">map</span></button>` : `<span class="est-comp-lista__ver"><i></i><span>${esc(nombreId(id))}</span></span>`}
+          <button type="button" data-quitar="${esc(id)}" aria-label="Quitar ${esc(nombreId(id))}"><span class="material-symbols-outlined">close</span></button></li>`).join('')}
+      </ul>
+      ${C.ids.length < 4 ? `<select id="est-comp-add" class="est-select" aria-label="Añadir"><option value="">+ Añadir ${C.tipo === 'linea' ? 'línea' : 'país'}…</option>${opciones}</select>` : ''}
+      ${C.ids.length < 2 ? `<div class="est-panel__bloque"><h4>O empieza por una de estas</h4><div class="est-sug">${SUGERENCIAS.filter(s => s.tipo === C.tipo).map(s => `<button type="button" class="est-btn est-btn--ghost" data-sug="${SUGERENCIAS.indexOf(s)}">${esc(s.t)}</button>`).join('')}</div></div>` : ''}
+      ${C.tipo === 'linea' && C.ids.length ? `<p class="est-nota mt-3">Pulsa un país en el mapa para ver sus cifras en cada línea (ahora: <b>${esc(nombrePais(S.f.foco))}</b>).</p>` : ''}`;
 
-    el.querySelectorAll('[data-ctipo]').forEach(b => b.addEventListener('click', () => {
+    panel.querySelectorAll('[data-ctipo]').forEach(b => b.addEventListener('click', () => {
       if (C.tipo === b.dataset.ctipo) return;
-      S.comp = { tipo: b.dataset.ctipo, ids: [] }; escribirHash(false); render();
+      S.comp = { tipo: b.dataset.ctipo, ids: [] }; S.compVer = 0; escribirHash(false); render();
     }));
-    el.querySelectorAll('[data-quitar]').forEach(b => b.addEventListener('click', () => { C.ids = C.ids.filter(x => x !== b.dataset.quitar); escribirHash(false); render(); }));
-    $('#est-comp-add')?.addEventListener('change', e => { if (e.target.value) { C.ids.push(e.target.value); escribirHash(false); render(); } });
+    panel.querySelectorAll('[data-quitar]').forEach(b => b.addEventListener('click', () => { C.ids = C.ids.filter(x => x !== b.dataset.quitar); escribirHash(false); render(); }));
+    panel.querySelectorAll('[data-ver]').forEach(b => b.addEventListener('click', () => { S.compVer = +b.dataset.ver; render(); }));
+    panel.querySelector('#est-comp-add')?.addEventListener('change', e => { if (e.target.value) { C.ids.push(e.target.value); escribirHash(false); render(); } });
+    panel.querySelectorAll('[data-sug]').forEach(b => b.addEventListener('click', () => { const s = SUGERENCIAS[b.dataset.sug]; S.comp = { tipo: s.tipo, ids: [...s.ids] }; S.compVer = 0; escribirHash(false); render(); }));
 
-    const cuerpo = $('#est-comp-cuerpo');
+    // El mapa
+    const togglePais = code => {
+      if (C.ids.includes(code)) C.ids = C.ids.filter(x => x !== code);
+      else if (C.ids.length >= 4) { avisar('Puedes comparar hasta 4 países'); return; }
+      else C.ids.push(code);
+      escribirHash(false); render();
+    };
+    try {
+      if (C.tipo === 'pais') {
+        await cargarMapa(qsSinPais(), vivo, {
+          titulo: M.t, resaltar: Object.fromEntries(C.ids.map((id, i) => [id, SERIES[i]])), onClick: togglePais,
+          subtitulo: `${periodoTxt()} · color = país comparado`,
+        });
+      } else {
+        const idMapa = C.ids[S.compVer];
+        await cargarMapa(idMapa ? qsBase({ linea: idMapa }) : qsSinPais(), vivo, {
+          titulo: idMapa ? `${M.t} · ${nombreId(idMapa)}` : M.t, sel: S.f.foco,
+          onClick: code => { S.f.foco = code; cambiarFiltros(); },
+        });
+      }
+    } catch (e) { return vivo() && error(el, e); }
+    if (!vivo()) return;
+
     if (C.ids.length < 2) {
       frase(null);
-      cuerpo.innerHTML = `<div class="est-sugerencias"><p>Elige al menos dos ${C.tipo === 'linea' ? 'líneas' : 'países'} arriba, o empieza por una de estas comparaciones:</p>
-        <div>${SUGERENCIAS.map((s, i) => `<button type="button" class="est-btn est-btn--ghost" data-sug="${i}">${esc(s.t)}</button>`).join('')}</div></div>`;
-      cuerpo.querySelectorAll('[data-sug]').forEach(b => b.addEventListener('click', () => { const s = SUGERENCIAS[b.dataset.sug]; S.comp = { tipo: s.tipo, ids: [...s.ids] }; escribirHash(false); render(); }));
+      el.innerHTML = `<div class="est-sugerencias"><p>${C.tipo === 'pais' ? 'Pulsa al menos dos países en el mapa, o elige una comparación en el panel.' : 'Añade al menos dos líneas en el panel de la derecha, o empieza por una sugerencia.'}</p></div>`;
       return;
     }
-    cargando(cuerpo);
-    let d;
-    try { d = await get(`/comparar?tipo=${C.tipo}&ids=${C.ids.join(',')}&` + qsFiltros()); } catch (e) { return vivo() && error(cuerpo, e); }
+    cargando(el, 6);
+    let d, mapas = null;
+    try {
+      [d, mapas] = await Promise.all([
+        get(`/comparar?tipo=${C.tipo}&ids=${C.ids.join(',')}&` + qsFiltros()),
+        C.tipo === 'linea' ? Promise.all(C.ids.map(id => getMemo('/paises?' + qsBase({ linea: id })))) : null,
+      ]);
+    } catch (e) { return vivo() && error(el, e); }
     if (!vivo()) return;
     frase(null);
     const filas = C.tipo === 'linea'
@@ -719,7 +1496,7 @@ const Estadisticas = (() => {
         ['Rango habitual', x => rango(x.kpis.p25, x.kpis.p75)],
         ['Máximo 2026', x => fmtEur(x.max2026)],
         ['Al tope', x => pct(x.kpis.alTope)],
-        ['Tasa de éxito', x => x.tasa ? `${x.tasa.aprox ? '≈ ' : ''}${x.tasa.rango || dec1(x.tasa.tasa).replace(',0', '') + ' %'} (${x.tasa.ambito})` : '—'],
+        ['Tasa de éxito', x => x.tasa ? `${tasaTxt(x.tasa)} (${x.tasa.ambito})` : '—'],
         ['Entidades coordinadoras', x => fmtN(x.kpis.coordinadoras)],
         [`${nombrePais(S.f.foco)} coordina`, x => fmtN(x.kpis.focoCoord)],
         [`${nombrePais(S.f.foco)} participa`, x => fmtN(x.kpis.focoPart)],
@@ -732,7 +1509,8 @@ const Estadisticas = (() => {
         ['Líneas con proyectos', x => fmtN(x.kpis.lineas)],
         ['Buenas prácticas', x => fmtN(x.kpis.buenasPracticas)],
       ];
-    cuerpo.innerHTML = `
+    el.innerHTML = `
+      ${C.tipo === 'linea' ? tarjeta('Dónde se concede cada línea', `<div class="est-minimapas">${d.map((x, i) => `<figure class="est-minimapa"><figcaption><span class="est-dot" style="background:${SERIES[i]}"></span>${esc(x.nombre)}</figcaption><div class="est-minimapa__svg" id="est-mm-${i}"></div><div class="est-tt est-tt--flot est-mini-tt" hidden></div></figure>`).join('')}</div>`, { sub: 'Parte de los proyectos de cada línea que coordina cada país · misma escala de color en todos' }) : ''}
       <div class="est-tabla-wrap"><table class="est-tabla est-tabla--comp">
         <thead><tr><th></th>${d.map((x, i) => `<th class="n"><span class="est-dot" style="background:${SERIES[i]}"></span>${C.tipo === 'linea' ? `<a href="${linkLinea(x.id)}" data-linea="${x.id}">${esc(x.nombre)}</a>` : esc(x.nombre)}</th>`).join('')}</tr></thead>
         <tbody>${filas.map(([t, fn]) => `<tr><th scope="row">${esc(t)}</th>${d.map(x => `<td class="n">${fn(x)}</td>`).join('')}</tr>`).join('')}</tbody>
@@ -744,7 +1522,17 @@ const Estadisticas = (() => {
       </div>
       ${C.tipo === 'linea' ? tarjeta('Cuánto se concede: la mitad central de los proyectos', '<div id="est-c-r"></div>', { sub: 'Barra = del percentil 25 al 75 · marca = mediana' })
         : `<div class="est-grid est-grid--${Math.min(d.length, 4)}">${d.map((x, i) => tarjeta(`<span class="est-dot" style="background:${SERIES[i]}"></span>${esc(x.nombre)}: sus líneas principales`, `<ol class="est-mini est-mini--plano">${x.topLineas.map(l => `<li><a href="${linkLinea(l.id)}" data-linea="${l.id}"><span class="est-mini__nombre">${esc(l.nombre)}<small>${fmtEur(l.importe)}</small></span><span class="est-mini__valor">${fmtN(l.proyectos)}</span></a></li>`).join('')}</ol>`)).join('')}</div>`}`;
-    enlazarLineas(cuerpo);
+    enlazarLineas(el);
+
+    if (mapas) {
+      // Cuota de cada país en cada línea, con una escala común para todas.
+      const d3 = await esperar('d3');
+      const cuota = (datos, p) => (datos.total ? p.coord / datos.total : 0);
+      const vals = mapas.flatMap(m => m.paises.map(p => cuota(m, p)).filter(v => v > 0)).sort((a, b) => a - b);
+      const cortes = [0.2, 0.4, 0.6, 0.8, 0.93].map(q => d3.quantile(vals, q));
+      const color = v => (!(v > 0) ? SIN_DATO : RAMPA[1 + d3.bisectRight(cortes, v)] || RAMPA[6]);
+      mapas.forEach((m, i) => { const box = $(`#est-mm-${i}`); if (box) miniMapa(box, m, p => cuota(m, p), color, d[i].nombre); });
+    }
 
     const años = d[0].porAño.map(a => String(a.año));
     const lineasOpts = (serie, fmt) => ({
@@ -781,138 +1569,52 @@ const Estadisticas = (() => {
     <div class="est-rangos__eje">${marcas.map(m => `<span style="left:${pos(m)}">${esc(fmtEur(m, true))}</span>`).join('')}</div>`;
   }
 
-  /* ═══ PAÍSES (mapa + ranking) ════════════════════════════════ */
-  const METRICAS = {
-    coord: { t: 'Proyectos que coordina', v: p => p.coord, fmt: fmtN },
-    part: { t: 'Proyectos en los que participa', v: p => p.part, fmt: fmtN },
-    importeCoord: { t: 'Dinero de los proyectos que coordina', v: p => p.importeCoord, fmt: v => fmtEur(v) },
-    ratio: { t: 'Coordina / participa', v: p => p.ratioCoord, fmt: v => pct(v), nota: 'De cada 100 proyectos en los que está, cuántos coordina' },
-  };
-
-  async function paises(el, vivo) {
-    cargando(el);
-    let d;
-    try {
-      [d, geo] = await Promise.all([get('/paises?' + qsFiltros()), geo || fetch('/data/europa.geo.json').then(r => r.json())]);
-    } catch (e) { return vivo() && error(el, e); }
-    if (!vivo()) return;
-    frase(d.total);
-    const M = METRICAS[S.metrica] || METRICAS.coord;
-    const sel = S.f.pais || S.f.foco;
-
-    el.innerHTML = `
-      <div class="est-toolbar">
-        <label class="est-inline">Qué mostrar
-          <select id="est-metrica">${Object.entries(METRICAS).map(([k, m]) => `<option value="${k}" ${k === S.metrica ? 'selected' : ''}>${esc(m.t)}</option>`).join('')}</select></label>
-        <span class="est-nota">${M.nota ? esc(M.nota) + ' · ' : ''}El filtro de país de arriba no se aplica aquí: el mapa los muestra todos.</span>
-      </div>
-      <div class="est-grid est-grid--mapa">
-        <div class="est-card est-card--mapa">
-          <div id="est-mapa" class="est-mapa" role="img" aria-label="Mapa de Europa: ${esc(M.t)}"></div>
-          <div id="est-mapa-leyenda" class="est-leyenda"></div>
-          <div id="est-mapa-tt" class="est-tt est-tt--flot" hidden></div>
-        </div>
-        <div class="est-card" id="est-pais-card"></div>
-      </div>
-      ${tarjeta('Ranking de países', `<div class="est-tabla-wrap est-tabla-wrap--alta"><table class="est-tabla est-tabla--compacta" id="est-rank"></table></div>`, { sub: 'Pulsa un país para ver su detalle · ordena por cualquier columna' })}`;
-    $('#est-metrica').addEventListener('change', e => { S.metrica = e.target.value; escribirHash(false); render(); });
-
-    const porCode = new Map(d.paises.map(p => [p.code, p]));
-    const detalle = code => {
-      const p = porCode.get(code);
-      const card = $('#est-pais-card');
-      if (!p) { card.innerHTML = `<div class="est-card__head"><h3>${esc(nombrePais(code))}</h3></div><p class="est-nota">Sin proyectos con estos filtros.</p>`; return; }
-      card.innerHTML = `
-        <div class="est-card__head"><h3>${esc(p.nombre)}</h3><p>Puesto ${p.rankCoord} de ${d.paises.filter(x => x.coord).length} en proyectos coordinados</p></div>
-        <dl class="est-dl">
-          <div><dt>Coordina</dt><dd>${fmtN(p.coord)}</dd></div>
-          <div><dt>Participa</dt><dd>${fmtN(p.part)}</dd></div>
-          <div><dt>Dinero que coordina</dt><dd>${fmtEur(p.importeCoord)}</dd></div>
-          <div><dt>Coordina / participa</dt><dd>${pct(p.ratioCoord)}</dd></div>
-          <div><dt>Frente a la media</dt><dd>${d.mediaCoord ? (p.coord / d.mediaCoord).toLocaleString('es-ES', { maximumFractionDigits: 1 }) + ' veces' : '—'}</dd></div>
-        </dl>
-        <div class="flex flex-wrap gap-2 mt-3">
-          <button type="button" class="est-btn est-btn--primary" data-p-filtrar="${p.code}"><span class="material-symbols-outlined">filter_alt</span>Ver sus líneas</button>
-          <button type="button" class="est-btn est-btn--ghost" data-p-comp="${p.code}"><span class="material-symbols-outlined">compare_arrows</span>Comparar</button>
-        </div>`;
-      card.querySelector('[data-p-filtrar]').addEventListener('click', () => { S.f.pais = p.code; S.f.rol = 'coord'; irA('lineas'); });
-      card.querySelector('[data-p-comp]').addEventListener('click', () => {
-        const ids = S.comp.tipo === 'pais' ? S.comp.ids.filter(x => x !== p.code) : [];
-        S.comp = { tipo: 'pais', ids: [p.code, ...(ids.length ? ids : [p.code === 'ES' ? 'IT' : 'ES'])].slice(0, 4) };
-        irA('comparar');
-      });
-      document.querySelectorAll('#est-mapa path').forEach(pa => pa.classList.toggle('is-sel', pa.dataset.code === code));
-    };
-
-    // Ranking
-    let orden = { k: S.metrica === 'ratio' ? 'ratioCoord' : (S.metrica === 'importeCoord' ? 'importeCoord' : S.metrica), dir: -1 };
-    const colsR = [['nombre', 'País', true], ['coord', 'Coordina'], ['part', 'Participa'], ['importeCoord', 'Dinero coordinado'], ['ratioCoord', 'Coord./partic.']];
-    const pintarRank = () => {
-      const filas = [...d.paises].sort((a, b) => (typeof a[orden.k] === 'string' ? a[orden.k].localeCompare(b[orden.k], 'es') : a[orden.k] - b[orden.k]) * orden.dir);
-      $('#est-rank').innerHTML = `<thead><tr><th class="n">#</th>${colsR.map(([k, t, txt]) => `<th class="${txt ? '' : 'n'}"><button type="button" data-k="${k}" class="${orden.k === k ? 'is-on' : ''}">${t}${orden.k === k ? (orden.dir < 0 ? ' ↓' : ' ↑') : ''}</button></th>`).join('')}</tr></thead>
-        <tbody>${filas.map((p, i) => `<tr data-code="${p.code}" class="${p.code === sel ? 'is-sel' : ''}"><td class="n est-tenue">${i + 1}</td><td><button type="button" class="est-link" data-code="${p.code}">${esc(p.nombre)}</button></td><td class="n">${fmtN(p.coord)}</td><td class="n">${fmtN(p.part)}</td><td class="n">${fmtEur(p.importeCoord)}</td><td class="n">${pct(p.ratioCoord)}</td></tr>`).join('')}</tbody>`;
-      $('#est-rank').querySelectorAll('th button').forEach(b => b.addEventListener('click', () => { orden = { k: b.dataset.k, dir: orden.k === b.dataset.k ? -orden.dir : (b.dataset.k === 'nombre' ? 1 : -1) }; pintarRank(); }));
-      $('#est-rank').querySelectorAll('button[data-code]').forEach(b => b.addEventListener('click', () => detalle(b.dataset.code)));
-    };
-    pintarRank();
-    detalle(sel);
-    await mapa(d, M, detalle, sel);
-  }
-
-  async function mapa(d, M, detalle, sel) {
-    const d3 = await esperar('d3');
-    const box = $('#est-mapa');
-    if (!box) return;
-    const W = box.clientWidth || 640, H = Math.round(W * 0.86);
-    const porCode = new Map(d.paises.map(p => [p.code, p]));
-    // Cortes solo con los países que se ven en el mapa (los de fuera de Europa los sesgarían).
-    const enMapa = new Set(geo.features.map(f => f.id));
-    const vals = d.paises.filter(p => enMapa.has(p.code)).map(p => M.v(p)).filter(v => v > 0).sort((a, b) => a - b);
-    // Escala por cuantiles: con tamaños tan desiguales, una escala lineal deja casi todo en el mismo tono.
-    const cortes = [0.2, 0.4, 0.6, 0.8, 0.92].map(q => d3.quantile(vals, q));
-    const color = v => (!v ? '#f2f2f2' : RAMPA[1 + d3.bisectRight(cortes, v)]);
-    const proj = d3.geoAzimuthalEqualArea().rotate([-11, -53]).translate([W / 2, H * 0.5]).scale(W * 1.02);
-    const path = d3.geoPath(proj);
-    const svg = d3.select(box).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%');
-    const tt = $('#est-mapa-tt');
-    svg.append('g').selectAll('path').data(geo.features).join('path')
-      .attr('d', path).attr('data-code', f => f.id)
-      .attr('fill', f => color(porCode.has(f.id) ? M.v(porCode.get(f.id)) : 0))
-      .attr('class', f => `est-pais ${porCode.has(f.id) ? 'con' : ''} ${f.id === sel ? 'is-sel' : ''}`)
-      .on('mousemove', (ev, f) => {
-        const p = porCode.get(f.id);
-        tt.hidden = false;
-        tt.innerHTML = `<b>${esc(p ? p.nombre : nombrePais(f.id))}</b><br>${p ? `${esc(M.t)}: ${M.fmt(M.v(p))}` : 'Sin proyectos'}`;
-        const r = box.getBoundingClientRect();
-        tt.style.left = Math.min(ev.clientX - r.left + 14, r.width - 180) + 'px';
-        tt.style.top = (ev.clientY - r.top + 14) + 'px';
-      })
-      .on('mouseleave', () => { tt.hidden = true; })
-      .on('click', (ev, f) => detalle(f.id));
-    const leyenda = [0, ...cortes];
-    $('#est-mapa-leyenda').innerHTML = `<span>${esc(M.t)}</span>${leyenda.map((c, i) => `<i style="background:${RAMPA[1 + i] || RAMPA[6]}" title="${i === 0 ? 'hasta ' + M.fmt(cortes[0]) : 'desde ' + M.fmt(c)}"></i>`).join('')}<small>menos → más</small>`;
-  }
-
   /* ═══ TASAS DE ÉXITO ═════════════════════════════════════════ */
-  async function tasas(el, vivo) {
-    cargando(el);
+  async function tasas(el, panel, vivo) {
+    cargando(el, 5); cargando(panel, 6);
+    const M = metrica();
     let d;
-    try { d = await get('/tasas'); } catch (e) { return vivo() && error(el, e); }
+    try { d = await getMemo('/tasas'); } catch (e) { return vivo() && error(el, e); }
     if (!vivo()) return;
     frase(null);
-    const filas = [...d.tasas].sort((a, b) => b.tasa - a.tasa);
+    const filas = d.tasas.map((t, i) => ({ ...t, i })).sort((a, b) => b.tasa - a.tasa);
+    if (S.tasa >= d.tasas.length) S.tasa = 0;
+    const t = d.tasas[S.tasa];
+    // Sin líneas concretas (KA2 España en total) = todas las asociaciones de Agencia Nacional.
+    const qsMapa = t.lineas.length ? qsBase({ linea: t.lineas.join(',') }) : qsBase({ grupo: 'asociaciones', gestion: 'AN' });
+
+    panel.innerHTML = `
+      <div class="est-panel__head"><h2>Tasas de éxito</h2><p>De cada 100 solicitudes, cuántas se aprueban. Elige una línea para ver en el mapa dónde acaban sus proyectos concedidos.</p></div>
+      <div class="est-tasa">
+        <div class="est-tasa__cab"><span class="est-tasa__valor">${esc(tasaTxt(t))}</span><span><b>${esc(t.linea)}</b><small>${esc(t.ambito)} · convocatoria ${t.convocatoria}</small></span></div>
+        ${waffle(t.tasa)}
+        <p class="est-nota">${t.url ? `<a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.fuente)}</a>` : esc(t.fuente)}</p>
+      </div>
+      <ol class="est-tasas-lista">${filas.map(x => `<li><button type="button" data-tasa="${x.i}" class="${x.i === S.tasa ? 'is-on' : ''}"><span>${esc(x.linea)}<small>${esc(x.ambito)} · ${x.convocatoria}</small></span><b>${esc(tasaTxt(x))}</b></button></li>`).join('')}</ol>
+      <p class="est-nota mt-2">El mapa enseña los proyectos <b>concedidos</b>, no la tasa por país: ni el SEPIE ni la EACEA la publican así.</p>`;
+    panel.querySelectorAll('[data-tasa]').forEach(b => b.addEventListener('click', () => { S.tasa = +b.dataset.tasa; escribirHash(false); render(); }));
+
+    try {
+      await cargarMapa(qsMapa, vivo, {
+        titulo: `${M.t} · ${t.linea}`, sel: t.ambito === 'España' ? 'ES' : '',
+        subtitulo: `${periodoTxt()} · proyectos concedidos${t.ambito === 'España' ? ' · la tasa es de España' : ''}`,
+        onClick: () => {},
+      });
+    } catch (e) { return vivo() && error(el, e); }
+    if (!vivo()) return;
+
     el.innerHTML = `
       <div class="est-aviso est-aviso--grande"><span class="material-symbols-outlined">info</span>
         <div><b>De cada 100 solicitudes, cuántas se aprueban.</b> La Comisión solo publica los proyectos concedidos, así que estas cifras salen de las resoluciones del SEPIE y de los resultados de selección de la EACEA. Se actualizan a mano (última revisión: ${fecha(d.actualizado)}). Una cifra con ≈ es aproximada.</div></div>
       <div class="est-grid est-grid--2">
-        ${tarjeta('Tasa de éxito por línea', '<div id="est-t-g"></div>')}
+        ${tarjeta('Tasa de éxito por línea', '<div id="est-t-g"></div>', { sub: 'Pulsa una barra para verla en el mapa' })}
         ${tarjeta('Detalle y fuentes', `<div class="est-tabla-wrap"><table class="est-tabla est-tabla--compacta"><thead><tr><th>Línea</th><th>Ámbito</th><th class="n">Convoc.</th><th class="n">Tasa</th></tr></thead><tbody>
-          ${filas.map(t => `<tr><td>${t.lineas.length === 1 ? `<a href="${linkLinea(t.lineas[0])}" data-linea="${t.lineas[0]}">${esc(t.linea)}</a>` : esc(t.linea)}<span class="est-sub">${t.url ? `<a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.fuente)}</a>` : esc(t.fuente)}</span></td><td>${esc(t.ambito)}</td><td class="n">${t.convocatoria}</td><td class="n"><b>${t.aprox ? '≈ ' : ''}${t.rango || dec1(t.tasa).replace(',0', '') + ' %'}</b></td></tr>`).join('')}
+          ${filas.map(x => `<tr class="${x.i === S.tasa ? 'is-sel' : ''}"><td>${x.lineas.length === 1 ? `<a href="${linkLinea(x.lineas[0])}" data-linea="${x.lineas[0]}">${esc(x.linea)}</a>` : esc(x.linea)}<span class="est-sub">${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fuente)}</a>` : esc(x.fuente)}</span></td><td>${esc(x.ambito)}</td><td class="n">${x.convocatoria}</td><td class="n"><b>${tasaTxt(x)}</b></td></tr>`).join('')}
         </tbody></table></div>`)}
       </div>
       ${d.sinDato?.length ? tarjeta('Sin dato publicado', `<ul class="est-ejemplos">${d.sinDato.map(s => `<li><b>${esc(s.linea)}</b><span>${esc(s.motivo)}</span></li>`).join('')}</ul>`) : ''}`;
     enlazarLineas(el);
-    barrasH('#est-t-g', filas, { valor: t => t.tasa, etiqueta: t => t.linea, fmt: v => dec1(v).replace(',0', '') + ' %', tooltip: 'Tasa de éxito' });
+    barrasH('#est-t-g', filas, { valor: x => x.tasa, etiqueta: x => x.linea, fmt: v => dec1(v).replace(',0', '') + ' %', tooltip: 'Tasa de éxito', colores: filas.map(x => (x.i === S.tasa ? TINTA : AZUL)), onClick: x => { S.tasa = x.i; escribirHash(false); render(); } });
   }
 
   /* ── Entrada desde app.js ─────────────────────────────────── */
@@ -921,7 +1623,7 @@ const Estadisticas = (() => {
     const root = $('#est-root');
     if (!root) return;
     if (!META) {
-      cargando(root);
+      cargando(root, 6);
       try { META = await get('/meta'); } catch (e) { error(root, e); return; }
     }
     if (!built || !$('#est-vista')) construir();
